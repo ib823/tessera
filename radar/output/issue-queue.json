@@ -1,8 +1,8 @@
 [
   {
-    "issue_id": "T4A-2026-618899",
+    "issue_id": "T4A-2026-621664",
     "title": "parliament budget session session opens",
-    "controversy_score": 0.9505,
+    "controversy_score": 0.9507,
     "confidence": 1.0,
     "stream_signals": {
       "silence": {
@@ -18,7 +18,7 @@
       "political"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024133+00:00",
+    "timestamp": "2026-05-01T08:45:37.375397+00:00",
     "priority": "critical",
     "priority_rank": 1,
     "prediction": {
@@ -27,9 +27,9 @@
     }
   },
   {
-    "issue_id": "T4A-2026-618900",
+    "issue_id": "T4A-2026-621665",
     "title": "budget 2027 presentation",
-    "controversy_score": 0.9505,
+    "controversy_score": 0.9507,
     "confidence": 1.0,
     "stream_signals": {
       "silence": {
@@ -45,7 +45,7 @@
       "political"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024137+00:00",
+    "timestamp": "2026-05-01T08:45:37.375399+00:00",
     "priority": "critical",
     "priority_rank": 2,
     "prediction": {
@@ -88,9 +88,9 @@
     }
   },
   {
-    "issue_id": "T4A-2026-618902",
+    "issue_id": "T4A-2026-621667",
     "title": "parliament second session session opens",
-    "controversy_score": 0.9063,
+    "controversy_score": 0.9064,
     "confidence": 1.0,
     "stream_signals": {
       "silence": {
@@ -105,7 +105,7 @@
       "political"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024129+00:00",
+    "timestamp": "2026-05-01T08:45:37.375393+00:00",
     "priority": "critical",
     "priority_rank": 4,
     "prediction": {
@@ -114,18 +114,18 @@
     }
   },
   {
-    "issue_id": "T4A-2026-594239",
+    "issue_id": "T4A-2026-621668",
     "title": "parliament",
     "controversy_score": 0.7747,
     "confidence": 1.0,
     "stream_signals": {
       "volume": {
         "alert": false,
-        "severity": 0.1,
-        "z_score": 0.4
+        "severity": 0.15,
+        "z_score": 0.6
       },
       "cascade": {
-        "n_star": 0.06666666666666667,
+        "n_star": 0.1,
         "alert_level": "normal"
       },
       "silence": {
@@ -140,16 +140,16 @@
       "political"
     ],
     "detection_type": "both",
-    "timestamp": "2026-04-30T12:39:51.939314+00:00",
+    "timestamp": "2026-05-01T08:45:37.375721+00:00",
     "priority": "high",
     "priority_rank": 5,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
-        "STABLE": 0.9956364192394517,
-        "PRE_CONTROVERSY": 0.003936015062197399,
-        "ACTIVE": 6.998326926510833e-07,
-        "POST_CONTROVERSY": 0.0004268658656582218
+        "STABLE": 0.9938672252918651,
+        "PRE_CONTROVERSY": 0.005631581325121093,
+        "ACTIVE": 1.1517787523165118e-06,
+        "POST_CONTROVERSY": 0.000500041604261499
       },
       "escalation_eta_cycles": null
     }
@@ -197,9 +197,9 @@
     }
   },
   {
-    "issue_id": "T4A-2026-618905",
+    "issue_id": "T4A-2026-621670",
     "title": "federal",
-    "controversy_score": 0.7443,
+    "controversy_score": 0.7472,
     "confidence": 1.0,
     "stream_signals": {
       "silence": {
@@ -214,7 +214,7 @@
       "legal"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024456+00:00",
+    "timestamp": "2026-05-01T08:45:37.375702+00:00",
     "priority": "high",
     "priority_rank": 7,
     "prediction": {
@@ -223,9 +223,9 @@
     }
   },
   {
-    "issue_id": "T4A-2026-618906",
+    "issue_id": "T4A-2026-621671",
     "title": "federal court term begins 2026-05-04",
-    "controversy_score": 0.7,
+    "controversy_score": 0.7039,
     "confidence": 1.0,
     "stream_signals": {
       "silence": {
@@ -240,7 +240,7 @@
       "legal"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024145+00:00",
+    "timestamp": "2026-05-01T08:45:37.375406+00:00",
     "priority": "high",
     "priority_rank": 8,
     "prediction": {
@@ -602,6 +602,32 @@
     }
   },
   {
+    "issue_id": "T4A-2026-621673",
+    "title": "sabah",
+    "controversy_score": 0.5018,
+    "confidence": 0.4032,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.8696,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 37,
+        "social_mentions": 23
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375737+00:00",
+    "priority": "medium",
+    "priority_rank": 20,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
     "issue_id": "T4A-2026-322284",
     "title": "malaysia",
     "controversy_score": 0.5017,
@@ -626,7 +652,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-19T00:43:59.991116+00:00",
     "priority": "medium",
-    "priority_rank": 20,
+    "priority_rank": 21,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -653,7 +679,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-19T00:43:59.991120+00:00",
     "priority": "medium",
-    "priority_rank": 21,
+    "priority_rank": 22,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -680,7 +706,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-19T00:43:59.990893+00:00",
     "priority": "medium",
-    "priority_rank": 22,
+    "priority_rank": 23,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -706,7 +732,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-13T05:08:50.051979+00:00",
     "priority": "medium",
-    "priority_rank": 23,
+    "priority_rank": 24,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -733,7 +759,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-18T22:12:08.926213+00:00",
     "priority": "medium",
-    "priority_rank": 24,
+    "priority_rank": 25,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -760,7 +786,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-18T22:12:08.925976+00:00",
     "priority": "medium",
-    "priority_rank": 25,
+    "priority_rank": 26,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -786,32 +812,6 @@
     ],
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-19T00:43:59.990890+00:00",
-    "priority": "medium",
-    "priority_rank": 26,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618908",
-    "title": "sabah",
-    "controversy_score": 0.4847,
-    "confidence": 0.3732,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.863,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 38,
-        "social_mentions": 25
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024501+00:00",
     "priority": "medium",
     "priority_rank": 27,
     "prediction": {
@@ -2369,6 +2369,87 @@
     }
   },
   {
+    "issue_id": "T4A-2026-621675",
+    "title": "sabah passes \u2018long overdue\u2019 reforms to modernise strata management and subsidiary title processes. kota kinabalu, april 30 &mdash; the sabah state legislative assembly today passed two bills aimed at ",
+    "controversy_score": 0.3919,
+    "confidence": 0.24,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9273,
+        "structural_importance": 0.515,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 30,
+        "social_mentions": 18
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375466+00:00",
+    "priority": "low",
+    "priority_rank": 84,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621676",
+    "title": "work-from-home civil servants help cut petrol subsidy bill by rm1.9m since april 15. kluang, april 30 &mdash; the implementation of the work-from-home (wfh) initiative has begun to show a significant ",
+    "controversy_score": 0.3919,
+    "confidence": 0.24,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9444,
+        "structural_importance": 0.53,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 26,
+        "social_mentions": 14
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375476+00:00",
+    "priority": "low",
+    "priority_rank": 85,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621677",
+    "title": "work-from-home",
+    "controversy_score": 0.3919,
+    "confidence": 0.24,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9444,
+        "structural_importance": 0.53,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 26,
+        "social_mentions": 14
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375713+00:00",
+    "priority": "low",
+    "priority_rank": 86,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
     "issue_id": "T4A-2026-309147",
     "title": "zara",
     "controversy_score": 0.3755,
@@ -2388,7 +2469,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-18T10:18:43.657524+00:00",
     "priority": "low",
-    "priority_rank": 84,
+    "priority_rank": 87,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2415,7 +2496,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-06T22:13:49.587860+00:00",
     "priority": "low",
-    "priority_rank": 85,
+    "priority_rank": 88,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2443,7 +2524,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-07T06:37:32.734918+00:00",
     "priority": "low",
-    "priority_rank": 86,
+    "priority_rank": 89,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2470,7 +2551,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-07T06:37:32.735131+00:00",
     "priority": "low",
-    "priority_rank": 87,
+    "priority_rank": 90,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2497,7 +2578,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-10T08:37:31.789696+00:00",
     "priority": "low",
-    "priority_rank": 88,
+    "priority_rank": 91,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2525,7 +2606,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-11T04:42:50.341058+00:00",
     "priority": "low",
-    "priority_rank": 89,
+    "priority_rank": 92,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2552,7 +2633,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-12T05:02:01.355791+00:00",
     "priority": "low",
-    "priority_rank": 90,
+    "priority_rank": 93,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2578,7 +2659,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-14T05:01:50.490191+00:00",
     "priority": "low",
-    "priority_rank": 91,
+    "priority_rank": 94,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2606,7 +2687,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-17T03:10:35.992625+00:00",
     "priority": "low",
-    "priority_rank": 92,
+    "priority_rank": 95,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2634,7 +2715,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-17T03:10:35.992843+00:00",
     "priority": "low",
-    "priority_rank": 93,
+    "priority_rank": 96,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2660,7 +2741,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-19T22:13:07.240103+00:00",
     "priority": "low",
-    "priority_rank": 94,
+    "priority_rank": 97,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2686,7 +2767,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-20T00:43:31.641369+00:00",
     "priority": "low",
-    "priority_rank": 95,
+    "priority_rank": 98,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2714,7 +2795,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-22T03:10:58.706658+00:00",
     "priority": "low",
-    "priority_rank": 96,
+    "priority_rank": 99,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -2741,87 +2822,6 @@
     ],
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-22T03:10:58.706904+00:00",
-    "priority": "low",
-    "priority_rank": 97,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618912",
-    "title": "sabah passes \u2018long overdue\u2019 reforms to modernise strata management and subsidiary title processes. kota kinabalu, april 30 &mdash; the sabah state legislative assembly today passed two bills aimed at ",
-    "controversy_score": 0.375,
-    "confidence": 0.22,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9227,
-        "structural_importance": 0.515,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 31,
-        "social_mentions": 20
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024208+00:00",
-    "priority": "low",
-    "priority_rank": 98,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618913",
-    "title": "work-from-home civil servants help cut petrol subsidy bill by rm1.9m since april 15. kluang, april 30 &mdash; the implementation of the work-from-home (wfh) initiative has begun to show a significant ",
-    "controversy_score": 0.375,
-    "confidence": 0.22,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9375,
-        "structural_importance": 0.53,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 29,
-        "social_mentions": 16
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024218+00:00",
-    "priority": "low",
-    "priority_rank": 99,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618914",
-    "title": "work-from-home",
-    "controversy_score": 0.375,
-    "confidence": 0.22,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9375,
-        "structural_importance": 0.53,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 29,
-        "social_mentions": 16
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024472+00:00",
     "priority": "low",
     "priority_rank": 100,
     "prediction": {
@@ -4997,6 +4997,36 @@
     }
   },
   {
+    "issue_id": "T4A-2026-621680",
+    "title": "negeri",
+    "controversy_score": 0.3151,
+    "confidence": 0.1571,
+    "stream_signals": {
+      "cascade": {
+        "n_star": 0.9017676059328225,
+        "alert_level": "critical"
+      },
+      "silence": {
+        "silence_score": 0.7231,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 39,
+        "social_mentions": 33
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "both",
+    "timestamp": "2026-05-01T08:45:37.375759+00:00",
+    "priority": "low",
+    "priority_rank": 181,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
     "issue_id": "T4A-2026-447009",
     "title": "kdn",
     "controversy_score": 0.3102,
@@ -5016,7 +5046,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999743+00:00",
     "priority": "low",
-    "priority_rank": 181,
+    "priority_rank": 182,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5043,7 +5073,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-03-29T00:40:22.089056+00:00",
     "priority": "low",
-    "priority_rank": 182,
+    "priority_rank": 183,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5070,7 +5100,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-06T00:40:27.938259+00:00",
     "priority": "low",
-    "priority_rank": 183,
+    "priority_rank": 184,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5097,7 +5127,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-06T00:40:27.938011+00:00",
     "priority": "low",
-    "priority_rank": 184,
+    "priority_rank": 185,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5124,7 +5154,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-07T10:26:58.105893+00:00",
     "priority": "low",
-    "priority_rank": 185,
+    "priority_rank": 186,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5151,7 +5181,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-07T10:26:58.106175+00:00",
     "priority": "low",
-    "priority_rank": 186,
+    "priority_rank": 187,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5179,7 +5209,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-08T22:17:53.838381+00:00",
     "priority": "low",
-    "priority_rank": 187,
+    "priority_rank": 188,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5206,7 +5236,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-21T00:44:13.603232+00:00",
     "priority": "low",
-    "priority_rank": 188,
+    "priority_rank": 189,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5234,7 +5264,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044652+00:00",
     "priority": "low",
-    "priority_rank": 189,
+    "priority_rank": 190,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5261,7 +5291,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044952+00:00",
     "priority": "low",
-    "priority_rank": 190,
+    "priority_rank": 191,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5288,7 +5318,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173185+00:00",
     "priority": "low",
-    "priority_rank": 191,
+    "priority_rank": 192,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5314,7 +5344,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173199+00:00",
     "priority": "low",
-    "priority_rank": 192,
+    "priority_rank": 193,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5342,7 +5372,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.110718+00:00",
     "priority": "low",
-    "priority_rank": 193,
+    "priority_rank": 194,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5369,7 +5399,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T22:23:21.275079+00:00",
     "priority": "low",
-    "priority_rank": 194,
+    "priority_rank": 195,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -5395,36 +5425,6 @@
     ],
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T22:23:21.275397+00:00",
-    "priority": "low",
-    "priority_rank": 195,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618915",
-    "title": "negeri",
-    "controversy_score": 0.3045,
-    "confidence": 0.1471,
-    "stream_signals": {
-      "cascade": {
-        "n_star": 0.9017676059328225,
-        "alert_level": "critical"
-      },
-      "silence": {
-        "silence_score": 0.7385,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 37,
-        "social_mentions": 31
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "general"
-    ],
-    "detection_type": "both",
-    "timestamp": "2026-05-01T07:01:41.024523+00:00",
     "priority": "low",
     "priority_rank": 196,
     "prediction": {
@@ -5997,6 +5997,136 @@
     }
   },
   {
+    "issue_id": "T4A-2026-621683",
+    "title": "transport ministry extends madani30 30pc ets, ert discount to may 14 after strong response. kuala lumpur, april 30 &mdash; the 30 per cent discount offered under the madani30 promotional code for kere",
+    "controversy_score": 0.2742,
+    "confidence": 0.12,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.8478,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 49,
+        "social_mentions": 21
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375470+00:00",
+    "priority": "low",
+    "priority_rank": 218,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621684",
+    "title": "igp urges restraint over n. sembilan political crisis, assures public order intact. kuala lumpur, april 30 &mdash; the royal malaysia police (pdrm) has urged for calm and restraint amid an ongoing pol",
+    "controversy_score": 0.2742,
+    "confidence": 0.12,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.8,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 54,
+        "social_mentions": 38
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "ethnic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375472+00:00",
+    "priority": "low",
+    "priority_rank": 219,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621685",
+    "title": "mubarak ordered to vacate sungei ujong undang official residence after 30 years. kuala lumpur, april 30 &mdash; datuk mubarak dohak has been ordered to immediately vacate the official residence at bal",
+    "controversy_score": 0.2742,
+    "confidence": 0.12,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.75,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 47,
+        "social_mentions": 18
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375474+00:00",
+    "priority": "low",
+    "priority_rank": 220,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621686",
+    "title": "igp",
+    "controversy_score": 0.2742,
+    "confidence": 0.12,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.8,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 54,
+        "social_mentions": 38
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "ethnic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375752+00:00",
+    "priority": "low",
+    "priority_rank": 221,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621687",
+    "title": "mubarak",
+    "controversy_score": 0.2742,
+    "confidence": 0.12,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.75,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 47,
+        "social_mentions": 18
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375757+00:00",
+    "priority": "low",
+    "priority_rank": 222,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
     "issue_id": "T4A-2026-470590",
     "title": "\u2018bring the evidence\u2019: anwar dismisses claims of stolen money moved to africa. johor bahru, april 24 &mdash; prime minister anwar ibrahim today rubbished allegations that he had ordered a former offi..",
     "controversy_score": 0.2623,
@@ -6016,7 +6146,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T07:20:52.719016+00:00",
     "priority": "low",
-    "priority_rank": 218,
+    "priority_rank": 223,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6042,7 +6172,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T07:20:52.719322+00:00",
     "priority": "low",
-    "priority_rank": 219,
+    "priority_rank": 224,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6068,7 +6198,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T08:56:26.702403+00:00",
     "priority": "low",
-    "priority_rank": 220,
+    "priority_rank": 225,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6096,7 +6226,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T09:03:27.176435+00:00",
     "priority": "low",
-    "priority_rank": 221,
+    "priority_rank": 226,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6123,7 +6253,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924636+00:00",
     "priority": "low",
-    "priority_rank": 222,
+    "priority_rank": 227,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6151,7 +6281,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924641+00:00",
     "priority": "low",
-    "priority_rank": 223,
+    "priority_rank": 228,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6177,7 +6307,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T03:12:56.437996+00:00",
     "priority": "low",
-    "priority_rank": 224,
+    "priority_rank": 229,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6203,137 +6333,111 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T03:12:56.438282+00:00",
     "priority": "low",
-    "priority_rank": 225,
+    "priority_rank": 230,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618921",
-    "title": "transport ministry extends madani30 30pc ets, ert discount to may 14 after strong response. kuala lumpur, april 30 &mdash; the 30 per cent discount offered under the madani30 promotional code for kere",
+    "issue_id": "T4A-2026-621689",
+    "title": "negeri sembilan drama settles: zahid confirms 14 umno\u2011bn assemblymen staying with unity pact. putrajaya, april 30 &mdash; all 14 assemblymen from umno and barisan nasional (bn) in negeri sembilan have",
     "controversy_score": 0.2623,
     "confidence": 0.11,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.8522,
-        "structural_importance": 0.465,
+        "silence_score": 0.7231,
+        "structural_importance": 0.415,
         "suppression_pattern": "NORMAL",
-        "news_mentions": 48,
-        "social_mentions": 20
+        "news_mentions": 39,
+        "social_mentions": 33
       }
     },
     "bias_dimensions_at_risk": [
       "political"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024212+00:00",
+    "timestamp": "2026-05-01T08:45:37.375457+00:00",
     "priority": "low",
-    "priority_rank": 226,
+    "priority_rank": 231,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618922",
-    "title": "igp urges restraint over n. sembilan political crisis, assures public order intact. kuala lumpur, april 30 &mdash; the royal malaysia police (pdrm) has urged for calm and restraint amid an ongoing pol",
+    "issue_id": "T4A-2026-621690",
+    "title": "magistrate orders ebit lew to enter defence on 11 sexual harassment charges. tenom, april 30 &mdash; the magistrate&rsquo;s court here today ordered preacher ebit irawan lew, or ebit lew, to enter...",
     "controversy_score": 0.2623,
     "confidence": 0.11,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.8087,
+        "silence_score": 0.9,
         "structural_importance": 0.465,
         "suppression_pattern": "NORMAL",
-        "news_mentions": 52,
-        "social_mentions": 36
+        "news_mentions": 29,
+        "social_mentions": 17
       }
     },
     "bias_dimensions_at_risk": [
-      "ethnic"
+      "legal"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024214+00:00",
+    "timestamp": "2026-05-01T08:45:37.375460+00:00",
     "priority": "low",
-    "priority_rank": 227,
+    "priority_rank": 232,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618923",
-    "title": "mubarak ordered to vacate sungei ujong undang official residence after 30 years. kuala lumpur, april 30 &mdash; datuk mubarak dohak has been ordered to immediately vacate the official residence at bal",
+    "issue_id": "T4A-2026-621691",
+    "title": "sabah opposition lawmaker slams government over rejected 40pc revenue motion. kota kinabalu, april 30 &mdash; the sabah government&rsquo;s rejection of a private motion in the state assembly is evid..",
     "controversy_score": 0.2623,
     "confidence": 0.11,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.7462,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 47,
-        "social_mentions": 19
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "general"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024216+00:00",
-    "priority": "low",
-    "priority_rank": 228,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618924",
-    "title": "igp",
-    "controversy_score": 0.2623,
-    "confidence": 0.11,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.8087,
+        "silence_score": 0.8696,
         "structural_importance": 0.465,
         "suppression_pattern": "NORMAL",
-        "news_mentions": 52,
-        "social_mentions": 36
+        "news_mentions": 37,
+        "social_mentions": 23
       }
     },
     "bias_dimensions_at_risk": [
-      "ethnic"
+      "political"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024516+00:00",
+    "timestamp": "2026-05-01T08:45:37.375462+00:00",
     "priority": "low",
-    "priority_rank": 229,
+    "priority_rank": 233,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618925",
-    "title": "mubarak",
+    "issue_id": "T4A-2026-621692",
+    "title": "magistrate",
     "controversy_score": 0.2623,
     "confidence": 0.11,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.7462,
-        "structural_importance": 0.415,
+        "silence_score": 0.9,
+        "structural_importance": 0.465,
         "suppression_pattern": "NORMAL",
-        "news_mentions": 47,
-        "social_mentions": 19
+        "news_mentions": 29,
+        "social_mentions": 17
       }
     },
     "bias_dimensions_at_risk": [
-      "general"
+      "legal"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024522+00:00",
+    "timestamp": "2026-05-01T08:45:37.375731+00:00",
     "priority": "low",
-    "priority_rank": 230,
+    "priority_rank": 234,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6359,7 +6463,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T21:04:55.897510+00:00",
     "priority": "low",
-    "priority_rank": 231,
+    "priority_rank": 235,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6386,7 +6490,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T13:08:31.877004+00:00",
     "priority": "low",
-    "priority_rank": 232,
+    "priority_rank": 236,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6413,7 +6517,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T13:08:31.876697+00:00",
     "priority": "low",
-    "priority_rank": 233,
+    "priority_rank": 237,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6440,7 +6544,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924633+00:00",
     "priority": "low",
-    "priority_rank": 234,
+    "priority_rank": 238,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6467,7 +6571,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924901+00:00",
     "priority": "low",
-    "priority_rank": 235,
+    "priority_rank": 239,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6494,7 +6598,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044673+00:00",
     "priority": "low",
-    "priority_rank": 236,
+    "priority_rank": 240,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -6519,110 +6623,6 @@
     ],
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T03:12:56.437991+00:00",
-    "priority": "low",
-    "priority_rank": 237,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618927",
-    "title": "negeri sembilan drama settles: zahid confirms 14 umno\u2011bn assemblymen staying with unity pact. putrajaya, april 30 &mdash; all 14 assemblymen from umno and barisan nasional (bn) in negeri sembilan have",
-    "controversy_score": 0.25,
-    "confidence": 0.1,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.7385,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 37,
-        "social_mentions": 31
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024198+00:00",
-    "priority": "low",
-    "priority_rank": 238,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618928",
-    "title": "magistrate orders ebit lew to enter defence on 11 sexual harassment charges. tenom, april 30 &mdash; the magistrate&rsquo;s court here today ordered preacher ebit irawan lew, or ebit lew, to enter...",
-    "controversy_score": 0.25,
-    "confidence": 0.1,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.8913,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 31,
-        "social_mentions": 19
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "legal"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024201+00:00",
-    "priority": "low",
-    "priority_rank": 239,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618929",
-    "title": "sabah opposition lawmaker slams government over rejected 40pc revenue motion. kota kinabalu, april 30 &mdash; the sabah government&rsquo;s rejection of a private motion in the state assembly is evid..",
-    "controversy_score": 0.25,
-    "confidence": 0.1,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.863,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 38,
-        "social_mentions": 25
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024204+00:00",
-    "priority": "low",
-    "priority_rank": 240,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618930",
-    "title": "magistrate",
-    "controversy_score": 0.25,
-    "confidence": 0.1,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.8913,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 31,
-        "social_mentions": 19
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "legal"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024498+00:00",
     "priority": "low",
     "priority_rank": 241,
     "prediction": {
@@ -9272,6 +9272,60 @@
     }
   },
   {
+    "issue_id": "T4A-2026-621698",
+    "title": "yen steadies after japan intervention, traders brace for more action. the yen is set for its biggest weekly gain in over two months after japan\u2019s intervention, but analysts question its durability, ci",
+    "controversy_score": 0.1964,
+    "confidence": 0.06,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9621,
+        "structural_importance": 0.515,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 17,
+        "social_mentions": 8
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "ethnic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375447+00:00",
+    "priority": "low",
+    "priority_rank": 340,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621699",
+    "title": "yen",
+    "controversy_score": 0.1964,
+    "confidence": 0.06,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9621,
+        "structural_importance": 0.515,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 17,
+        "social_mentions": 8
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "ethnic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375716+00:00",
+    "priority": "low",
+    "priority_rank": 341,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
     "issue_id": "T4A-2026-489798",
     "title": "himpunan",
     "controversy_score": 0.1907,
@@ -9304,7 +9358,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-25T22:39:32.875997+00:00",
     "priority": "low",
-    "priority_rank": 340,
+    "priority_rank": 342,
     "prediction": {
       "regime": "PRE_CONTROVERSY",
       "probabilities": {
@@ -9317,18 +9371,18 @@
     }
   },
   {
-    "issue_id": "T4A-2026-618934",
+    "issue_id": "T4A-2026-621701",
     "title": "isa",
-    "controversy_score": 0.1854,
-    "confidence": 0.5382,
+    "controversy_score": 0.1895,
+    "confidence": 0.5557,
     "stream_signals": {
       "volume": {
         "alert": true,
-        "severity": 0.85,
-        "z_score": 3.4
+        "severity": 0.7,
+        "z_score": 2.8
       },
       "cascade": {
-        "n_star": 0.5666666666666667,
+        "n_star": 0.4666666666666667,
         "alert_level": "normal"
       }
     },
@@ -9336,16 +9390,16 @@
       "general"
     ],
     "detection_type": "attention_spike",
-    "timestamp": "2026-05-01T07:01:41.023792+00:00",
+    "timestamp": "2026-05-01T08:45:37.374989+00:00",
     "priority": "low",
-    "priority_rank": 341,
+    "priority_rank": 343,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
-        "STABLE": 0.5304595102140014,
-        "PRE_CONTROVERSY": 0.4642997178171632,
-        "ACTIVE": 0.00273379900648859,
-        "POST_CONTROVERSY": 0.0025069729623465736
+        "STABLE": 0.7687289305917346,
+        "PRE_CONTROVERSY": 0.22849745383738754,
+        "ACTIVE": 0.0005255483944965986,
+        "POST_CONTROVERSY": 0.002248067176381279
       },
       "escalation_eta_cycles": null
     }
@@ -9370,7 +9424,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T22:41:12.022472+00:00",
     "priority": "low",
-    "priority_rank": 342,
+    "priority_rank": 344,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9396,7 +9450,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T02:53:00.541869+00:00",
     "priority": "low",
-    "priority_rank": 343,
+    "priority_rank": 345,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9424,7 +9478,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T22:41:12.022174+00:00",
     "priority": "low",
-    "priority_rank": 344,
+    "priority_rank": 346,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9450,7 +9504,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T22:41:12.022180+00:00",
     "priority": "low",
-    "priority_rank": 345,
+    "priority_rank": 347,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9476,7 +9530,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T22:41:12.022184+00:00",
     "priority": "low",
-    "priority_rank": 346,
+    "priority_rank": 348,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9502,7 +9556,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T02:35:41.916697+00:00",
     "priority": "low",
-    "priority_rank": 347,
+    "priority_rank": 349,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9528,7 +9582,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T02:35:41.916968+00:00",
     "priority": "low",
-    "priority_rank": 348,
+    "priority_rank": 350,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9555,7 +9609,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T22:39:32.875702+00:00",
     "priority": "low",
-    "priority_rank": 349,
+    "priority_rank": 351,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9582,7 +9636,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T22:39:32.875706+00:00",
     "priority": "low",
-    "priority_rank": 350,
+    "priority_rank": 352,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9609,7 +9663,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T22:39:32.875707+00:00",
     "priority": "low",
-    "priority_rank": 351,
+    "priority_rank": 353,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9635,7 +9689,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T22:39:32.875994+00:00",
     "priority": "low",
-    "priority_rank": 352,
+    "priority_rank": 354,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9662,7 +9716,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T02:53:00.541571+00:00",
     "priority": "low",
-    "priority_rank": 353,
+    "priority_rank": 355,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9688,7 +9742,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T02:53:00.541582+00:00",
     "priority": "low",
-    "priority_rank": 354,
+    "priority_rank": 356,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9714,7 +9768,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T02:53:00.541862+00:00",
     "priority": "low",
-    "priority_rank": 355,
+    "priority_rank": 357,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9740,7 +9794,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T20:41:12.226161+00:00",
     "priority": "low",
-    "priority_rank": 356,
+    "priority_rank": 358,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9766,7 +9820,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T20:41:12.225886+00:00",
     "priority": "low",
-    "priority_rank": 357,
+    "priority_rank": 359,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9792,7 +9846,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044648+00:00",
     "priority": "low",
-    "priority_rank": 358,
+    "priority_rank": 360,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9818,7 +9872,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044933+00:00",
     "priority": "low",
-    "priority_rank": 359,
+    "priority_rank": 361,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9844,7 +9898,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T21:04:55.897322+00:00",
     "priority": "low",
-    "priority_rank": 360,
+    "priority_rank": 362,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9870,7 +9924,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T21:04:55.897324+00:00",
     "priority": "low",
-    "priority_rank": 361,
+    "priority_rank": 363,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9896,7 +9950,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T21:04:55.897326+00:00",
     "priority": "low",
-    "priority_rank": 362,
+    "priority_rank": 364,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9922,7 +9976,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T21:04:55.897328+00:00",
     "priority": "low",
-    "priority_rank": 363,
+    "priority_rank": 365,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9948,7 +10002,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T21:04:55.897506+00:00",
     "priority": "low",
-    "priority_rank": 364,
+    "priority_rank": 366,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -9974,7 +10028,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173583+00:00",
     "priority": "low",
-    "priority_rank": 365,
+    "priority_rank": 367,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10001,7 +10055,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T22:23:21.275415+00:00",
     "priority": "low",
-    "priority_rank": 366,
+    "priority_rank": 368,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10027,7 +10081,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173190+00:00",
     "priority": "low",
-    "priority_rank": 367,
+    "priority_rank": 369,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10053,7 +10107,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173206+00:00",
     "priority": "low",
-    "priority_rank": 368,
+    "priority_rank": 370,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10079,7 +10133,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173208+00:00",
     "priority": "low",
-    "priority_rank": 369,
+    "priority_rank": 371,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10105,7 +10159,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173211+00:00",
     "priority": "low",
-    "priority_rank": 370,
+    "priority_rank": 372,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10131,7 +10185,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173588+00:00",
     "priority": "low",
-    "priority_rank": 371,
+    "priority_rank": 373,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10157,7 +10211,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173602+00:00",
     "priority": "low",
-    "priority_rank": 372,
+    "priority_rank": 374,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10183,7 +10237,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348425+00:00",
     "priority": "low",
-    "priority_rank": 373,
+    "priority_rank": 375,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10209,7 +10263,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348411+00:00",
     "priority": "low",
-    "priority_rank": 374,
+    "priority_rank": 376,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10235,7 +10289,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348154+00:00",
     "priority": "low",
-    "priority_rank": 375,
+    "priority_rank": 377,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10261,7 +10315,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348158+00:00",
     "priority": "low",
-    "priority_rank": 376,
+    "priority_rank": 378,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10288,7 +10342,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348162+00:00",
     "priority": "low",
-    "priority_rank": 377,
+    "priority_rank": 379,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10314,7 +10368,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348415+00:00",
     "priority": "low",
-    "priority_rank": 378,
+    "priority_rank": 380,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10340,7 +10394,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079674+00:00",
     "priority": "low",
-    "priority_rank": 379,
+    "priority_rank": 381,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10366,7 +10420,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079323+00:00",
     "priority": "low",
-    "priority_rank": 380,
+    "priority_rank": 382,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10392,7 +10446,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.111033+00:00",
     "priority": "low",
-    "priority_rank": 381,
+    "priority_rank": 383,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10418,7 +10472,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.110707+00:00",
     "priority": "low",
-    "priority_rank": 382,
+    "priority_rank": 384,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10444,7 +10498,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.110709+00:00",
     "priority": "low",
-    "priority_rank": 383,
+    "priority_rank": 385,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10470,7 +10524,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.110711+00:00",
     "priority": "low",
-    "priority_rank": 384,
+    "priority_rank": 386,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10497,7 +10551,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.110714+00:00",
     "priority": "low",
-    "priority_rank": 385,
+    "priority_rank": 387,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10523,7 +10577,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T20:29:28.111077+00:00",
     "priority": "low",
-    "priority_rank": 386,
+    "priority_rank": 388,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10550,7 +10604,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T22:23:21.275073+00:00",
     "priority": "low",
-    "priority_rank": 387,
+    "priority_rank": 389,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10576,7 +10630,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T00:52:52.786681+00:00",
     "priority": "low",
-    "priority_rank": 388,
+    "priority_rank": 390,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10602,7 +10656,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T00:52:52.786418+00:00",
     "priority": "low",
-    "priority_rank": 389,
+    "priority_rank": 391,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10629,7 +10683,59 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T00:52:52.786421+00:00",
     "priority": "low",
-    "priority_rank": 390,
+    "priority_rank": 392,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621702",
+    "title": "northern entry points at risk of smuggling should be led by police, says border agency chief. putrajaya, may 1 &mdash;&nbsp;the malaysian border control and protection agency (akps) has proposed that ",
+    "controversy_score": 0.1818,
+    "confidence": 0.05,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9348,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 8,
+        "social_mentions": 22
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "ethnic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375420+00:00",
+    "priority": "low",
+    "priority_rank": 393,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621703",
+    "title": "northern",
+    "controversy_score": 0.1818,
+    "confidence": 0.05,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9348,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 8,
+        "social_mentions": 22
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "ethnic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375728+00:00",
+    "priority": "low",
+    "priority_rank": 394,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10664,7 +10770,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-28T22:57:58.173623+00:00",
     "priority": "low",
-    "priority_rank": 391,
+    "priority_rank": 395,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -10705,7 +10811,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-29T10:07:21.102407+00:00",
     "priority": "low",
-    "priority_rank": 392,
+    "priority_rank": 396,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -10739,7 +10845,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T06:08:19.844450+00:00",
     "priority": "low",
-    "priority_rank": 393,
+    "priority_rank": 397,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -10784,7 +10890,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-28T21:08:59.852397+00:00",
     "priority": "low",
-    "priority_rank": 394,
+    "priority_rank": 398,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -10817,7 +10923,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184388+00:00",
     "priority": "low",
-    "priority_rank": 395,
+    "priority_rank": 399,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10844,7 +10950,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184391+00:00",
     "priority": "low",
-    "priority_rank": 396,
+    "priority_rank": 400,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10871,7 +10977,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184408+00:00",
     "priority": "low",
-    "priority_rank": 397,
+    "priority_rank": 401,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10897,7 +11003,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184425+00:00",
     "priority": "low",
-    "priority_rank": 398,
+    "priority_rank": 402,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10923,7 +11029,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184696+00:00",
     "priority": "low",
-    "priority_rank": 399,
+    "priority_rank": 403,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10950,7 +11056,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T08:56:26.702394+00:00",
     "priority": "low",
-    "priority_rank": 400,
+    "priority_rank": 404,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -10977,7 +11083,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T08:56:26.702396+00:00",
     "priority": "low",
-    "priority_rank": 401,
+    "priority_rank": 405,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11004,7 +11110,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T08:56:26.702637+00:00",
     "priority": "low",
-    "priority_rank": 402,
+    "priority_rank": 406,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11031,7 +11137,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T08:56:26.702646+00:00",
     "priority": "low",
-    "priority_rank": 403,
+    "priority_rank": 407,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11057,7 +11163,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T10:46:54.105021+00:00",
     "priority": "low",
-    "priority_rank": 404,
+    "priority_rank": 408,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11083,7 +11189,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T10:46:54.105505+00:00",
     "priority": "low",
-    "priority_rank": 405,
+    "priority_rank": 409,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11109,7 +11215,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T06:08:19.844826+00:00",
     "priority": "low",
-    "priority_rank": 406,
+    "priority_rank": 410,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11135,7 +11241,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T06:08:19.845137+00:00",
     "priority": "low",
-    "priority_rank": 407,
+    "priority_rank": 411,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11161,7 +11267,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T13:11:02.926023+00:00",
     "priority": "low",
-    "priority_rank": 408,
+    "priority_rank": 412,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11187,7 +11293,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T14:46:23.584267+00:00",
     "priority": "low",
-    "priority_rank": 409,
+    "priority_rank": 413,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11213,7 +11319,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T14:46:23.583987+00:00",
     "priority": "low",
-    "priority_rank": 410,
+    "priority_rank": 414,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11240,7 +11346,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179088+00:00",
     "priority": "low",
-    "priority_rank": 411,
+    "priority_rank": 415,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11267,7 +11373,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179365+00:00",
     "priority": "low",
-    "priority_rank": 412,
+    "priority_rank": 416,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11293,7 +11399,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T13:58:35.950280+00:00",
     "priority": "low",
-    "priority_rank": 413,
+    "priority_rank": 417,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11320,7 +11426,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T14:19:44.612669+00:00",
     "priority": "low",
-    "priority_rank": 414,
+    "priority_rank": 418,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11348,7 +11454,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T14:19:44.612444+00:00",
     "priority": "low",
-    "priority_rank": 415,
+    "priority_rank": 419,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11375,7 +11481,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T21:08:59.852079+00:00",
     "priority": "low",
-    "priority_rank": 416,
+    "priority_rank": 420,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11402,7 +11508,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328872+00:00",
     "priority": "low",
-    "priority_rank": 417,
+    "priority_rank": 421,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11429,7 +11535,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.329204+00:00",
     "priority": "low",
-    "priority_rank": 418,
+    "priority_rank": 422,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11456,7 +11562,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701315+00:00",
     "priority": "low",
-    "priority_rank": 419,
+    "priority_rank": 423,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11482,7 +11588,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T21:08:40.518591+00:00",
     "priority": "low",
-    "priority_rank": 420,
+    "priority_rank": 424,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11508,7 +11614,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T21:08:40.518601+00:00",
     "priority": "low",
-    "priority_rank": 421,
+    "priority_rank": 425,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11534,7 +11640,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348429+00:00",
     "priority": "low",
-    "priority_rank": 422,
+    "priority_rank": 426,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11560,7 +11666,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348140+00:00",
     "priority": "low",
-    "priority_rank": 423,
+    "priority_rank": 427,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11586,7 +11692,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348144+00:00",
     "priority": "low",
-    "priority_rank": 424,
+    "priority_rank": 428,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11612,7 +11718,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348147+00:00",
     "priority": "low",
-    "priority_rank": 425,
+    "priority_rank": 429,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11639,7 +11745,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T05:12:46.097148+00:00",
     "priority": "low",
-    "priority_rank": 426,
+    "priority_rank": 430,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11666,7 +11772,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821459+00:00",
     "priority": "low",
-    "priority_rank": 427,
+    "priority_rank": 431,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11693,7 +11799,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821690+00:00",
     "priority": "low",
-    "priority_rank": 428,
+    "priority_rank": 432,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11719,7 +11825,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551569+00:00",
     "priority": "low",
-    "priority_rank": 429,
+    "priority_rank": 433,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11745,7 +11851,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551195+00:00",
     "priority": "low",
-    "priority_rank": 430,
+    "priority_rank": 434,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11771,7 +11877,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551211+00:00",
     "priority": "low",
-    "priority_rank": 431,
+    "priority_rank": 435,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11797,7 +11903,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551577+00:00",
     "priority": "low",
-    "priority_rank": 432,
+    "priority_rank": 436,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11823,7 +11929,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551520+00:00",
     "priority": "low",
-    "priority_rank": 433,
+    "priority_rank": 437,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11850,7 +11956,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551227+00:00",
     "priority": "low",
-    "priority_rank": 434,
+    "priority_rank": 438,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11877,7 +11983,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079339+00:00",
     "priority": "low",
-    "priority_rank": 435,
+    "priority_rank": 439,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11903,7 +12009,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T22:23:21.275068+00:00",
     "priority": "low",
-    "priority_rank": 436,
+    "priority_rank": 440,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -11929,113 +12035,221 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T22:23:21.275408+00:00",
     "priority": "low",
-    "priority_rank": 437,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618937",
-    "title": "northern entry points at risk of smuggling should be led by police, says border agency chief. putrajaya, may 1 &mdash;&nbsp;the malaysian border control and protection agency (akps) has proposed that ",
-    "controversy_score": 0.1667,
-    "confidence": 0.04,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9239,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 9,
-        "social_mentions": 26
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "ethnic"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024161+00:00",
-    "priority": "low",
-    "priority_rank": 438,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618938",
-    "title": "northern",
-    "controversy_score": 0.1667,
-    "confidence": 0.04,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9239,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 9,
-        "social_mentions": 26
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "ethnic"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024490+00:00",
-    "priority": "low",
-    "priority_rank": 439,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618939",
-    "title": "yen steadies after japan intervention, traders brace for more action. the yen is set for its biggest weekly gain in over two months after japan\u2019s intervention, but analysts question its durability, ci",
-    "controversy_score": 0.1667,
-    "confidence": 0.04,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9652,
-        "structural_importance": 0.515,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 17,
-        "social_mentions": 6
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "ethnic"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024186+00:00",
-    "priority": "low",
-    "priority_rank": 440,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618940",
-    "title": "yen",
-    "controversy_score": 0.1667,
-    "confidence": 0.04,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9652,
-        "structural_importance": 0.515,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 17,
-        "social_mentions": 6
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "ethnic"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024469+00:00",
-    "priority": "low",
     "priority_rank": 441,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621707",
+    "title": "johor police chief: two army personnel arrested over assault that left soldier with fractured skull. &nbsp;mersing, may 1&nbsp;&mdash;&nbsp;police have arrested two army personnel to assist in investi",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.8346,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 13,
+        "social_mentions": 30
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375417+00:00",
+    "priority": "low",
+    "priority_rank": 442,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621708",
+    "title": "karius getting \u2018back to the top\u2019 with promotion-chasing schalke. former liverpool goalkeeper loris karius finds redemption after his error-strewn performance in the 2018 champions league final.",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9652,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 4,
+        "social_mentions": 12
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375453+00:00",
+    "priority": "low",
+    "priority_rank": 443,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621709",
+    "title": "karius",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9652,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 4,
+        "social_mentions": 12
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375724+00:00",
+    "priority": "low",
+    "priority_rank": 444,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621706",
+    "title": "japan",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9909,
+        "structural_importance": 0.515,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 3,
+        "social_mentions": 3
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "institutional"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375709+00:00",
+    "priority": "low",
+    "priority_rank": 445,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621710",
+    "title": "japan and petronas agree to extend contract for urea procurement. japan had previously agreed to import urea, via a petronas subsidiary, for two years.",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9909,
+        "structural_importance": 0.515,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 3,
+        "social_mentions": 3
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "institutional"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375429+00:00",
+    "priority": "low",
+    "priority_rank": 446,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621711",
+    "title": "ex-mp calls for 2% wealth tax amid budget cuts. charles santiago says taxing malaysia's 50 wealthiest individuals could plug a rm10 billion fiscal shortfall.",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9961,
+        "structural_importance": 0.715,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 4,
+        "social_mentions": 9
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "ethnic",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375433+00:00",
+    "priority": "low",
+    "priority_rank": 447,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621712",
+    "title": "pm urges employers to be more compassionate towards workers. anwar ibrahim regrets that major companies that record profits of rm1 billion to rm2 billion still find it difficult to approve even a rm40",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9746,
+        "structural_importance": 0.615,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 13,
+        "social_mentions": 20
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375443+00:00",
+    "priority": "low",
+    "priority_rank": 448,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621713",
+    "title": "ex-mp",
+    "controversy_score": 0.1667,
+    "confidence": 0.04,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9961,
+        "structural_importance": 0.715,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 4,
+        "social_mentions": 9
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "ethnic",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375695+00:00",
+    "priority": "low",
+    "priority_rank": 449,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12071,7 +12285,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-25T22:39:32.876034+00:00",
     "priority": "low",
-    "priority_rank": 442,
+    "priority_rank": 450,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -12117,7 +12331,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-25T22:39:32.876028+00:00",
     "priority": "low",
-    "priority_rank": 443,
+    "priority_rank": 451,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -12163,7 +12377,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-25T10:46:54.105407+00:00",
     "priority": "low",
-    "priority_rank": 444,
+    "priority_rank": 452,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -12195,7 +12409,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T13:28:13.972650+00:00",
     "priority": "low",
-    "priority_rank": 445,
+    "priority_rank": 453,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12221,7 +12435,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T13:28:13.972379+00:00",
     "priority": "low",
-    "priority_rank": 446,
+    "priority_rank": 454,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12247,7 +12461,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T09:03:27.176417+00:00",
     "priority": "low",
-    "priority_rank": 447,
+    "priority_rank": 455,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12274,7 +12488,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T09:03:27.176420+00:00",
     "priority": "low",
-    "priority_rank": 448,
+    "priority_rank": 456,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12300,7 +12514,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T09:03:27.176707+00:00",
     "priority": "low",
-    "priority_rank": 449,
+    "priority_rank": 457,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12326,7 +12540,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924626+00:00",
     "priority": "low",
-    "priority_rank": 450,
+    "priority_rank": 458,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12352,7 +12566,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924876+00:00",
     "priority": "low",
-    "priority_rank": 451,
+    "priority_rank": 459,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12378,7 +12592,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T13:11:02.926019+00:00",
     "priority": "low",
-    "priority_rank": 452,
+    "priority_rank": 460,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12404,7 +12618,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T13:11:02.926021+00:00",
     "priority": "low",
-    "priority_rank": 453,
+    "priority_rank": 461,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12430,7 +12644,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179065+00:00",
     "priority": "low",
-    "priority_rank": 454,
+    "priority_rank": 462,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12456,7 +12670,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179378+00:00",
     "priority": "low",
-    "priority_rank": 455,
+    "priority_rank": 463,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12482,7 +12696,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179078+00:00",
     "priority": "low",
-    "priority_rank": 456,
+    "priority_rank": 464,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12508,7 +12722,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179384+00:00",
     "priority": "low",
-    "priority_rank": 457,
+    "priority_rank": 465,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12535,7 +12749,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922263+00:00",
     "priority": "low",
-    "priority_rank": 458,
+    "priority_rank": 466,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12562,7 +12776,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922549+00:00",
     "priority": "low",
-    "priority_rank": 459,
+    "priority_rank": 467,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12589,7 +12803,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821469+00:00",
     "priority": "low",
-    "priority_rank": 460,
+    "priority_rank": 468,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12616,7 +12830,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821473+00:00",
     "priority": "low",
-    "priority_rank": 461,
+    "priority_rank": 469,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12643,7 +12857,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551235+00:00",
     "priority": "low",
-    "priority_rank": 462,
+    "priority_rank": 470,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12669,7 +12883,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079348+00:00",
     "priority": "low",
-    "priority_rank": 463,
+    "priority_rank": 471,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12695,7 +12909,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079661+00:00",
     "priority": "low",
-    "priority_rank": 464,
+    "priority_rank": 472,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12721,7 +12935,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T12:39:51.939030+00:00",
     "priority": "low",
-    "priority_rank": 465,
+    "priority_rank": 473,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12747,7 +12961,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966685+00:00",
     "priority": "low",
-    "priority_rank": 466,
+    "priority_rank": 474,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12773,7 +12987,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966701+00:00",
     "priority": "low",
-    "priority_rank": 467,
+    "priority_rank": 475,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12799,7 +13013,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966302+00:00",
     "priority": "low",
-    "priority_rank": 468,
+    "priority_rank": 476,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12825,7 +13039,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966303+00:00",
     "priority": "low",
-    "priority_rank": 469,
+    "priority_rank": 477,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12851,7 +13065,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966307+00:00",
     "priority": "low",
-    "priority_rank": 470,
+    "priority_rank": 478,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12878,7 +13092,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966309+00:00",
     "priority": "low",
-    "priority_rank": 471,
+    "priority_rank": 479,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -12904,85 +13118,85 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T14:47:43.966691+00:00",
     "priority": "low",
-    "priority_rank": 472,
+    "priority_rank": 480,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618943",
-    "title": "johor police chief: two army personnel arrested over assault that left soldier with fractured skull. &nbsp;mersing, may 1&nbsp;&mdash;&nbsp;police have arrested two army personnel to assist in investi",
+    "issue_id": "T4A-2026-621715",
+    "title": "fuel subsidies keep lid on transport costs, but tengku zafrul warns supply crunch will test households. kuala lumpur, may 1 &mdash; the impact of the global supply crisis on the cost of living is expe",
     "controversy_score": 0.1509,
     "confidence": 0.03,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.8423,
+        "silence_score": 0.8978,
+        "structural_importance": 0.465,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 35,
+        "social_mentions": 12
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375414+00:00",
+    "priority": "low",
+    "priority_rank": 481,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621716",
+    "title": "psychologist in maradona death trial says star had bipolar disorder, was narcissist. one of seven defendants accused over the death of former argentina captain and coach diego maradona, carlos diaz, f",
+    "controversy_score": 0.1509,
+    "confidence": 0.03,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9385,
         "structural_importance": 0.415,
         "suppression_pattern": "NORMAL",
-        "news_mentions": 13,
-        "social_mentions": 28
+        "news_mentions": 6,
+        "social_mentions": 10
       }
     },
     "bias_dimensions_at_risk": [
       "general"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024157+00:00",
+    "timestamp": "2026-05-01T08:45:37.375449+00:00",
     "priority": "low",
-    "priority_rank": 473,
+    "priority_rank": 482,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618944",
-    "title": "karius getting \u2018back to the top\u2019 with promotion-chasing schalke. former liverpool goalkeeper loris karius finds redemption after his error-strewn performance in the 2018 champions league final.",
+    "issue_id": "T4A-2026-621717",
+    "title": "psychologist",
     "controversy_score": 0.1509,
     "confidence": 0.03,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.963,
-        "structural_importance": 0.465,
+        "silence_score": 0.9385,
+        "structural_importance": 0.415,
         "suppression_pattern": "NORMAL",
         "news_mentions": 6,
-        "social_mentions": 11
+        "social_mentions": 10
       }
     },
     "bias_dimensions_at_risk": [
-      "political"
+      "general"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024194+00:00",
+    "timestamp": "2026-05-01T08:45:37.375749+00:00",
     "priority": "low",
-    "priority_rank": 474,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618945",
-    "title": "karius",
-    "controversy_score": 0.1509,
-    "confidence": 0.03,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.963,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 6,
-        "social_mentions": 11
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024484+00:00",
-    "priority": "low",
-    "priority_rank": 475,
+    "priority_rank": 483,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13010,7 +13224,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T21:04:55.897133+00:00",
     "priority": "low",
-    "priority_rank": 476,
+    "priority_rank": 484,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -13044,7 +13258,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-05-01T05:21:20.558439+00:00",
     "priority": "low",
-    "priority_rank": 477,
+    "priority_rank": 485,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -13076,7 +13290,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701629+00:00",
     "priority": "low",
-    "priority_rank": 478,
+    "priority_rank": 486,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13102,7 +13316,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999474+00:00",
     "priority": "low",
-    "priority_rank": 479,
+    "priority_rank": 487,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13128,7 +13342,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999477+00:00",
     "priority": "low",
-    "priority_rank": 480,
+    "priority_rank": 488,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13154,7 +13368,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999479+00:00",
     "priority": "low",
-    "priority_rank": 481,
+    "priority_rank": 489,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13180,7 +13394,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999482+00:00",
     "priority": "low",
-    "priority_rank": 482,
+    "priority_rank": 490,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13206,7 +13420,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999737+00:00",
     "priority": "low",
-    "priority_rank": 483,
+    "priority_rank": 491,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13232,7 +13446,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999734+00:00",
     "priority": "low",
-    "priority_rank": 484,
+    "priority_rank": 492,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13258,7 +13472,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T09:46:54.999749+00:00",
     "priority": "low",
-    "priority_rank": 485,
+    "priority_rank": 493,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13285,7 +13499,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184414+00:00",
     "priority": "low",
-    "priority_rank": 486,
+    "priority_rank": 494,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13311,7 +13525,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184422+00:00",
     "priority": "low",
-    "priority_rank": 487,
+    "priority_rank": 495,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13337,7 +13551,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T11:08:07.184724+00:00",
     "priority": "low",
-    "priority_rank": 488,
+    "priority_rank": 496,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13363,7 +13577,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T05:50:11.566346+00:00",
     "priority": "low",
-    "priority_rank": 489,
+    "priority_rank": 497,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13389,7 +13603,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T05:50:11.566112+00:00",
     "priority": "low",
-    "priority_rank": 490,
+    "priority_rank": 498,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13416,7 +13630,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T05:50:11.566114+00:00",
     "priority": "low",
-    "priority_rank": 491,
+    "priority_rank": 499,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13442,7 +13656,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T05:50:11.566341+00:00",
     "priority": "low",
-    "priority_rank": 492,
+    "priority_rank": 500,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13468,7 +13682,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T06:08:19.844830+00:00",
     "priority": "low",
-    "priority_rank": 493,
+    "priority_rank": 501,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13494,7 +13708,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T06:08:19.845156+00:00",
     "priority": "low",
-    "priority_rank": 494,
+    "priority_rank": 502,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13520,7 +13734,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T10:48:00.924609+00:00",
     "priority": "low",
-    "priority_rank": 495,
+    "priority_rank": 503,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13546,7 +13760,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T14:46:23.583981+00:00",
     "priority": "low",
-    "priority_rank": 496,
+    "priority_rank": 504,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13572,7 +13786,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517082+00:00",
     "priority": "low",
-    "priority_rank": 497,
+    "priority_rank": 505,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13598,7 +13812,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517084+00:00",
     "priority": "low",
-    "priority_rank": 498,
+    "priority_rank": 506,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13624,7 +13838,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517111+00:00",
     "priority": "low",
-    "priority_rank": 499,
+    "priority_rank": 507,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13650,7 +13864,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517114+00:00",
     "priority": "low",
-    "priority_rank": 500,
+    "priority_rank": 508,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13676,7 +13890,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517375+00:00",
     "priority": "low",
-    "priority_rank": 501,
+    "priority_rank": 509,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13702,7 +13916,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517382+00:00",
     "priority": "low",
-    "priority_rank": 502,
+    "priority_rank": 510,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13728,7 +13942,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517090+00:00",
     "priority": "low",
-    "priority_rank": 503,
+    "priority_rank": 511,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13755,7 +13969,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517100+00:00",
     "priority": "low",
-    "priority_rank": 504,
+    "priority_rank": 512,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13782,7 +13996,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517107+00:00",
     "priority": "low",
-    "priority_rank": 505,
+    "priority_rank": 513,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13808,7 +14022,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517353+00:00",
     "priority": "low",
-    "priority_rank": 506,
+    "priority_rank": 514,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13834,7 +14048,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179400+00:00",
     "priority": "low",
-    "priority_rank": 507,
+    "priority_rank": 515,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13860,7 +14074,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179091+00:00",
     "priority": "low",
-    "priority_rank": 508,
+    "priority_rank": 516,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13886,7 +14100,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179083+00:00",
     "priority": "low",
-    "priority_rank": 509,
+    "priority_rank": 517,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13912,7 +14126,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179341+00:00",
     "priority": "low",
-    "priority_rank": 510,
+    "priority_rank": 518,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13938,7 +14152,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T13:58:35.949981+00:00",
     "priority": "low",
-    "priority_rank": 511,
+    "priority_rank": 519,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13964,7 +14178,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T13:58:35.949990+00:00",
     "priority": "low",
-    "priority_rank": 512,
+    "priority_rank": 520,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -13990,7 +14204,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T13:58:35.949996+00:00",
     "priority": "low",
-    "priority_rank": 513,
+    "priority_rank": 521,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14016,7 +14230,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T13:58:35.950306+00:00",
     "priority": "low",
-    "priority_rank": 514,
+    "priority_rank": 522,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14043,7 +14257,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922257+00:00",
     "priority": "low",
-    "priority_rank": 515,
+    "priority_rank": 523,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14070,7 +14284,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922515+00:00",
     "priority": "low",
-    "priority_rank": 516,
+    "priority_rank": 524,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14096,7 +14310,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462599+00:00",
     "priority": "low",
-    "priority_rank": 517,
+    "priority_rank": 525,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14123,7 +14337,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462210+00:00",
     "priority": "low",
-    "priority_rank": 518,
+    "priority_rank": 526,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14149,7 +14363,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462212+00:00",
     "priority": "low",
-    "priority_rank": 519,
+    "priority_rank": 527,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14175,7 +14389,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462620+00:00",
     "priority": "low",
-    "priority_rank": 520,
+    "priority_rank": 528,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14202,7 +14416,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436887+00:00",
     "priority": "low",
-    "priority_rank": 521,
+    "priority_rank": 529,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14230,7 +14444,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436889+00:00",
     "priority": "low",
-    "priority_rank": 522,
+    "priority_rank": 530,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14258,7 +14472,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462197+00:00",
     "priority": "low",
-    "priority_rank": 523,
+    "priority_rank": 531,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14285,7 +14499,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462201+00:00",
     "priority": "low",
-    "priority_rank": 524,
+    "priority_rank": 532,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14312,7 +14526,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462208+00:00",
     "priority": "low",
-    "priority_rank": 525,
+    "priority_rank": 533,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14339,7 +14553,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462566+00:00",
     "priority": "low",
-    "priority_rank": 526,
+    "priority_rank": 534,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14366,7 +14580,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462587+00:00",
     "priority": "low",
-    "priority_rank": 527,
+    "priority_rank": 535,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14393,7 +14607,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462591+00:00",
     "priority": "low",
-    "priority_rank": 528,
+    "priority_rank": 536,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14420,7 +14634,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T14:19:44.612438+00:00",
     "priority": "low",
-    "priority_rank": 529,
+    "priority_rank": 537,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14446,7 +14660,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T14:19:44.612441+00:00",
     "priority": "low",
-    "priority_rank": 530,
+    "priority_rank": 538,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14472,7 +14686,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T14:19:44.612700+00:00",
     "priority": "low",
-    "priority_rank": 531,
+    "priority_rank": 539,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14498,7 +14712,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328874+00:00",
     "priority": "low",
-    "priority_rank": 532,
+    "priority_rank": 540,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14524,7 +14738,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.329194+00:00",
     "priority": "low",
-    "priority_rank": 533,
+    "priority_rank": 541,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14550,7 +14764,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701318+00:00",
     "priority": "low",
-    "priority_rank": 534,
+    "priority_rank": 542,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14577,7 +14791,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701284+00:00",
     "priority": "low",
-    "priority_rank": 535,
+    "priority_rank": 543,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14605,7 +14819,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701305+00:00",
     "priority": "low",
-    "priority_rank": 536,
+    "priority_rank": 544,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14632,7 +14846,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701618+00:00",
     "priority": "low",
-    "priority_rank": 537,
+    "priority_rank": 545,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14659,7 +14873,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.492722+00:00",
     "priority": "low",
-    "priority_rank": 538,
+    "priority_rank": 546,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14686,7 +14900,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.493061+00:00",
     "priority": "low",
-    "priority_rank": 539,
+    "priority_rank": 547,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14712,7 +14926,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T05:12:46.097434+00:00",
     "priority": "low",
-    "priority_rank": 540,
+    "priority_rank": 548,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14738,7 +14952,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T05:12:46.097151+00:00",
     "priority": "low",
-    "priority_rank": 541,
+    "priority_rank": 549,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14764,7 +14978,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821744+00:00",
     "priority": "low",
-    "priority_rank": 542,
+    "priority_rank": 550,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14791,7 +15005,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821735+00:00",
     "priority": "low",
-    "priority_rank": 543,
+    "priority_rank": 551,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14818,7 +15032,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821448+00:00",
     "priority": "low",
-    "priority_rank": 544,
+    "priority_rank": 552,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14844,7 +15058,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821452+00:00",
     "priority": "low",
-    "priority_rank": 545,
+    "priority_rank": 553,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14870,7 +15084,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821461+00:00",
     "priority": "low",
-    "priority_rank": 546,
+    "priority_rank": 554,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14897,7 +15111,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821465+00:00",
     "priority": "low",
-    "priority_rank": 547,
+    "priority_rank": 555,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14924,7 +15138,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821727+00:00",
     "priority": "low",
-    "priority_rank": 548,
+    "priority_rank": 556,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14950,7 +15164,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551551+00:00",
     "priority": "low",
-    "priority_rank": 549,
+    "priority_rank": 557,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -14976,7 +15190,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551225+00:00",
     "priority": "low",
-    "priority_rank": 550,
+    "priority_rank": 558,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15002,7 +15216,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551230+00:00",
     "priority": "low",
-    "priority_rank": 551,
+    "priority_rank": 559,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15028,7 +15242,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551233+00:00",
     "priority": "low",
-    "priority_rank": 552,
+    "priority_rank": 560,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15054,7 +15268,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T08:52:11.551543+00:00",
     "priority": "low",
-    "priority_rank": 553,
+    "priority_rank": 561,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15080,7 +15294,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079670+00:00",
     "priority": "low",
-    "priority_rank": 554,
+    "priority_rank": 562,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15106,7 +15320,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079644+00:00",
     "priority": "low",
-    "priority_rank": 555,
+    "priority_rank": 563,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15132,7 +15346,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079337+00:00",
     "priority": "low",
-    "priority_rank": 556,
+    "priority_rank": 564,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15158,7 +15372,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079341+00:00",
     "priority": "low",
-    "priority_rank": 557,
+    "priority_rank": 565,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15184,7 +15398,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079345+00:00",
     "priority": "low",
-    "priority_rank": 558,
+    "priority_rank": 566,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15210,7 +15424,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T10:39:39.079657+00:00",
     "priority": "low",
-    "priority_rank": 559,
+    "priority_rank": 567,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15236,7 +15450,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T12:39:51.939021+00:00",
     "priority": "low",
-    "priority_rank": 560,
+    "priority_rank": 568,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15262,7 +15476,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T12:39:51.939026+00:00",
     "priority": "low",
-    "priority_rank": 561,
+    "priority_rank": 569,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15288,7 +15502,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T00:52:52.786384+00:00",
     "priority": "low",
-    "priority_rank": 562,
+    "priority_rank": 570,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15314,7 +15528,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T05:21:20.558791+00:00",
     "priority": "low",
-    "priority_rank": 563,
+    "priority_rank": 571,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15340,221 +15554,222 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T05:21:20.559104+00:00",
     "priority": "low",
-    "priority_rank": 564,
+    "priority_rank": 572,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618958",
-    "title": "fuel subsidies keep lid on transport costs, but tengku zafrul warns supply crunch will test households. kuala lumpur, may 1 &mdash; the impact of the global supply crisis on the cost of living is expe",
+    "issue_id": "T4A-2026-621722",
+    "title": "chow kon yeow announces late fee exemptions as penang land tax review sparks over 10,000 appeals. george town, may 1 &mdash; the penang state government has extended the appeal period for cases arisin",
     "controversy_score": 0.1346,
     "confidence": 0.02,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.9,
+        "silence_score": 0.9045,
+        "structural_importance": 0.46,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 29,
+        "social_mentions": 13
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "legal",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375410+00:00",
+    "priority": "low",
+    "priority_rank": 573,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621723",
+    "title": "iran activates air defences as trump faces congressional deadline. air defences were tested over tehran for about 20 minutes to counter small aircraft and reconnaissance drones before normalcy returne",
+    "controversy_score": 0.1346,
+    "confidence": 0.02,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9462,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 7,
+        "social_mentions": 7
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375431+00:00",
+    "priority": "low",
+    "priority_rank": 574,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621724",
+    "title": "agensi berkaitan diberi 2 minggu kemuka laporan pelaksanaan inisiatif pekerja. perdana menteri anwar ibrahim berkata laporan itu perlu diserahkan kepada menteri terbabit sebelum dibentangkan kepada je",
+    "controversy_score": 0.1346,
+    "confidence": 0.02,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9269,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 10,
+        "social_mentions": 9
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375435+00:00",
+    "priority": "low",
+    "priority_rank": 575,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621725",
+    "title": "toyota to post fourth straight quarterly profit drop as middle east risks, costs mount. toyota is forecast to post a us$5.2 billion q4 operating profit, with middle east tensions driving up aluminium ",
+    "controversy_score": 0.1346,
+    "confidence": 0.02,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9652,
         "structural_importance": 0.465,
         "suppression_pattern": "NORMAL",
-        "news_mentions": 35,
-        "social_mentions": 11
+        "news_mentions": 6,
+        "social_mentions": 10
       }
     },
     "bias_dimensions_at_risk": [
-      "economic"
+      "economic",
+      "political"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024154+00:00",
+    "timestamp": "2026-05-01T08:45:37.375438+00:00",
     "priority": "low",
-    "priority_rank": 565,
+    "priority_rank": 576,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-618959",
-    "title": "psychologist in maradona death trial says star had bipolar disorder, was narcissist. one of seven defendants accused over the death of former argentina captain and coach diego maradona, carlos diaz, f",
+    "issue_id": "T4A-2026-621726",
+    "title": "kerajaan p pinang lanjut tarikh akhir rayuan cukai tanah disemak semula. ketua menteri chow kon yeow berkata mereka yang menjelaskan bayaran selepas tempoh rayuan tidak akan didenda.",
     "controversy_score": 0.1346,
     "confidence": 0.02,
     "stream_signals": {
       "silence": {
-        "silence_score": 0.9346,
-        "structural_importance": 0.415,
+        "silence_score": 0.9636,
+        "structural_importance": 0.46,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 9,
+        "social_mentions": 7
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "legal",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375440+00:00",
+    "priority": "low",
+    "priority_rank": 577,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621727",
+    "title": "toyota",
+    "controversy_score": 0.1346,
+    "confidence": 0.02,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9652,
+        "structural_importance": 0.465,
         "suppression_pattern": "NORMAL",
         "news_mentions": 6,
-        "social_mentions": 11
+        "social_mentions": 10
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375722+00:00",
+    "priority": "low",
+    "priority_rank": 578,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621728",
+    "title": "chow",
+    "controversy_score": 0.1346,
+    "confidence": 0.02,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9045,
+        "structural_importance": 0.46,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 29,
+        "social_mentions": 13
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "economic",
+      "legal",
+      "political"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375735+00:00",
+    "priority": "low",
+    "priority_rank": 579,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621729",
+    "title": "agensi",
+    "controversy_score": 0.1346,
+    "confidence": 0.02,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9269,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 10,
+        "social_mentions": 9
       }
     },
     "bias_dimensions_at_risk": [
       "general"
     ],
     "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024189+00:00",
+    "timestamp": "2026-05-01T08:45:37.375750+00:00",
     "priority": "low",
-    "priority_rank": 566,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618960",
-    "title": "psychologist",
-    "controversy_score": 0.1346,
-    "confidence": 0.02,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9346,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 6,
-        "social_mentions": 11
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "general"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024512+00:00",
-    "priority": "low",
-    "priority_rank": 567,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618957",
-    "title": "japan",
-    "controversy_score": 0.1346,
-    "confidence": 0.02,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9924,
-        "structural_importance": 0.515,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 2,
-        "social_mentions": 3
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "institutional"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024466+00:00",
-    "priority": "low",
-    "priority_rank": 568,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618961",
-    "title": "japan and petronas agree to extend contract for urea procurement. japan had previously agreed to import urea, via a petronas subsidiary, for two years.",
-    "controversy_score": 0.1346,
-    "confidence": 0.02,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9924,
-        "structural_importance": 0.515,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 2,
-        "social_mentions": 3
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "institutional"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024166+00:00",
-    "priority": "low",
-    "priority_rank": 569,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618962",
-    "title": "ex-mp calls for 2% wealth tax amid budget cuts. charles santiago says taxing malaysia's 50 wealthiest individuals could plug a rm10 billion fiscal shortfall.",
-    "controversy_score": 0.1346,
-    "confidence": 0.02,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9961,
-        "structural_importance": 0.715,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 3,
-        "social_mentions": 10
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "ethnic",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024171+00:00",
-    "priority": "low",
-    "priority_rank": 570,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618963",
-    "title": "pm urges employers to be more compassionate towards workers. anwar ibrahim regrets that major companies that record profits of rm1 billion to rm2 billion still find it difficult to approve even a rm40",
-    "controversy_score": 0.1346,
-    "confidence": 0.02,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9777,
-        "structural_importance": 0.615,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 14,
-        "social_mentions": 15
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024182+00:00",
-    "priority": "low",
-    "priority_rank": 571,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618964",
-    "title": "ex-mp",
-    "controversy_score": 0.1346,
-    "confidence": 0.02,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9961,
-        "structural_importance": 0.715,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 3,
-        "social_mentions": 10
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "ethnic",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024450+00:00",
-    "priority": "low",
-    "priority_rank": 572,
+    "priority_rank": 580,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15589,7 +15804,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-30T22:23:21.274699+00:00",
     "priority": "low",
-    "priority_rank": 573,
+    "priority_rank": 581,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -15623,7 +15838,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-05-01T03:12:56.437551+00:00",
     "priority": "low",
-    "priority_rank": 574,
+    "priority_rank": 582,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -15669,7 +15884,7 @@
     "detection_type": "both",
     "timestamp": "2026-05-01T00:52:52.786694+00:00",
     "priority": "low",
-    "priority_rank": 575,
+    "priority_rank": 583,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -15703,7 +15918,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T07:20:52.718975+00:00",
     "priority": "low",
-    "priority_rank": 576,
+    "priority_rank": 584,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15730,7 +15945,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T06:08:19.844793+00:00",
     "priority": "low",
-    "priority_rank": 577,
+    "priority_rank": 585,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15757,7 +15972,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044950+00:00",
     "priority": "low",
-    "priority_rank": 578,
+    "priority_rank": 586,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15783,7 +15998,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044620+00:00",
     "priority": "low",
-    "priority_rank": 579,
+    "priority_rank": 587,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15809,7 +16024,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044625+00:00",
     "priority": "low",
-    "priority_rank": 580,
+    "priority_rank": 588,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15835,7 +16050,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044629+00:00",
     "priority": "low",
-    "priority_rank": 581,
+    "priority_rank": 589,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15862,7 +16077,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044634+00:00",
     "priority": "low",
-    "priority_rank": 582,
+    "priority_rank": 590,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15888,7 +16103,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044943+00:00",
     "priority": "low",
-    "priority_rank": 583,
+    "priority_rank": 591,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15914,7 +16129,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-26T22:41:33.044945+00:00",
     "priority": "low",
-    "priority_rank": 584,
+    "priority_rank": 592,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15940,7 +16155,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.159711+00:00",
     "priority": "low",
-    "priority_rank": 585,
+    "priority_rank": 593,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15966,7 +16181,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.159721+00:00",
     "priority": "low",
-    "priority_rank": 586,
+    "priority_rank": 594,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -15992,7 +16207,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.159727+00:00",
     "priority": "low",
-    "priority_rank": 587,
+    "priority_rank": 595,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16018,7 +16233,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.159732+00:00",
     "priority": "low",
-    "priority_rank": 588,
+    "priority_rank": 596,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16044,7 +16259,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.159735+00:00",
     "priority": "low",
-    "priority_rank": 589,
+    "priority_rank": 597,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16070,7 +16285,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.160046+00:00",
     "priority": "low",
-    "priority_rank": 590,
+    "priority_rank": 598,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16096,7 +16311,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T02:55:49.160052+00:00",
     "priority": "low",
-    "priority_rank": 591,
+    "priority_rank": 599,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16122,7 +16337,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517103+00:00",
     "priority": "low",
-    "priority_rank": 592,
+    "priority_rank": 600,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16148,7 +16363,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517109+00:00",
     "priority": "low",
-    "priority_rank": 593,
+    "priority_rank": 601,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16174,7 +16389,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T06:28:53.517381+00:00",
     "priority": "low",
-    "priority_rank": 594,
+    "priority_rank": 602,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16200,7 +16415,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179074+00:00",
     "priority": "low",
-    "priority_rank": 595,
+    "priority_rank": 603,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16226,7 +16441,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179080+00:00",
     "priority": "low",
-    "priority_rank": 596,
+    "priority_rank": 604,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16252,7 +16467,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179086+00:00",
     "priority": "low",
-    "priority_rank": 597,
+    "priority_rank": 605,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16278,7 +16493,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T10:18:40.179382+00:00",
     "priority": "low",
-    "priority_rank": 598,
+    "priority_rank": 606,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16304,7 +16519,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T22:55:14.781015+00:00",
     "priority": "low",
-    "priority_rank": 599,
+    "priority_rank": 607,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16330,7 +16545,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T22:55:14.781019+00:00",
     "priority": "low",
-    "priority_rank": 600,
+    "priority_rank": 608,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16356,7 +16571,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T22:55:14.781289+00:00",
     "priority": "low",
-    "priority_rank": 601,
+    "priority_rank": 609,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16382,7 +16597,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-27T22:55:14.781294+00:00",
     "priority": "low",
-    "priority_rank": 602,
+    "priority_rank": 610,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16408,7 +16623,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922530+00:00",
     "priority": "low",
-    "priority_rank": 603,
+    "priority_rank": 611,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16434,7 +16649,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922240+00:00",
     "priority": "low",
-    "priority_rank": 604,
+    "priority_rank": 612,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16460,7 +16675,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922242+00:00",
     "priority": "low",
-    "priority_rank": 605,
+    "priority_rank": 613,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16486,7 +16701,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922244+00:00",
     "priority": "low",
-    "priority_rank": 606,
+    "priority_rank": 614,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16513,7 +16728,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922248+00:00",
     "priority": "low",
-    "priority_rank": 607,
+    "priority_rank": 615,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16539,7 +16754,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922251+00:00",
     "priority": "low",
-    "priority_rank": 608,
+    "priority_rank": 616,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16565,7 +16780,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922253+00:00",
     "priority": "low",
-    "priority_rank": 609,
+    "priority_rank": 617,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16591,7 +16806,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922259+00:00",
     "priority": "low",
-    "priority_rank": 610,
+    "priority_rank": 618,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16617,7 +16832,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922534+00:00",
     "priority": "low",
-    "priority_rank": 611,
+    "priority_rank": 619,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16643,7 +16858,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922536+00:00",
     "priority": "low",
-    "priority_rank": 612,
+    "priority_rank": 620,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16669,7 +16884,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922540+00:00",
     "priority": "low",
-    "priority_rank": 613,
+    "priority_rank": 621,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16695,7 +16910,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922546+00:00",
     "priority": "low",
-    "priority_rank": 614,
+    "priority_rank": 622,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16722,7 +16937,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462629+00:00",
     "priority": "low",
-    "priority_rank": 615,
+    "priority_rank": 623,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16748,7 +16963,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436880+00:00",
     "priority": "low",
-    "priority_rank": 616,
+    "priority_rank": 624,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16774,7 +16989,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436884+00:00",
     "priority": "low",
-    "priority_rank": 617,
+    "priority_rank": 625,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16800,7 +17015,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436893+00:00",
     "priority": "low",
-    "priority_rank": 618,
+    "priority_rank": 626,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16826,7 +17041,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436895+00:00",
     "priority": "low",
-    "priority_rank": 619,
+    "priority_rank": 627,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16852,7 +17067,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436899+00:00",
     "priority": "low",
-    "priority_rank": 620,
+    "priority_rank": 628,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16880,7 +17095,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436907+00:00",
     "priority": "low",
-    "priority_rank": 621,
+    "priority_rank": 629,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16906,7 +17121,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.436912+00:00",
     "priority": "low",
-    "priority_rank": 622,
+    "priority_rank": 630,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16932,7 +17147,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462205+00:00",
     "priority": "low",
-    "priority_rank": 623,
+    "priority_rank": 631,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16958,7 +17173,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462614+00:00",
     "priority": "low",
-    "priority_rank": 624,
+    "priority_rank": 632,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -16984,7 +17199,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462618+00:00",
     "priority": "low",
-    "priority_rank": 625,
+    "priority_rank": 633,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17010,7 +17225,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462642+00:00",
     "priority": "low",
-    "priority_rank": 626,
+    "priority_rank": 634,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17036,7 +17251,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068404+00:00",
     "priority": "low",
-    "priority_rank": 627,
+    "priority_rank": 635,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17062,7 +17277,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068137+00:00",
     "priority": "low",
-    "priority_rank": 628,
+    "priority_rank": 636,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17088,7 +17303,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068142+00:00",
     "priority": "low",
-    "priority_rank": 629,
+    "priority_rank": 637,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17114,7 +17329,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068145+00:00",
     "priority": "low",
-    "priority_rank": 630,
+    "priority_rank": 638,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17141,7 +17356,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068147+00:00",
     "priority": "low",
-    "priority_rank": 631,
+    "priority_rank": 639,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17167,7 +17382,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068408+00:00",
     "priority": "low",
-    "priority_rank": 632,
+    "priority_rank": 640,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17193,7 +17408,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T10:16:14.068421+00:00",
     "priority": "low",
-    "priority_rank": 633,
+    "priority_rank": 641,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17219,7 +17434,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173614+00:00",
     "priority": "low",
-    "priority_rank": 634,
+    "priority_rank": 642,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17245,7 +17460,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173578+00:00",
     "priority": "low",
-    "priority_rank": 635,
+    "priority_rank": 643,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17271,7 +17486,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173148+00:00",
     "priority": "low",
-    "priority_rank": 636,
+    "priority_rank": 644,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17297,7 +17512,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173152+00:00",
     "priority": "low",
-    "priority_rank": 637,
+    "priority_rank": 645,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17323,7 +17538,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T22:57:58.173155+00:00",
     "priority": "low",
-    "priority_rank": 638,
+    "priority_rank": 646,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17349,7 +17564,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.329222+00:00",
     "priority": "low",
-    "priority_rank": 639,
+    "priority_rank": 647,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17375,7 +17590,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328863+00:00",
     "priority": "low",
-    "priority_rank": 640,
+    "priority_rank": 648,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17402,7 +17617,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328878+00:00",
     "priority": "low",
-    "priority_rank": 641,
+    "priority_rank": 649,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17428,7 +17643,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328881+00:00",
     "priority": "low",
-    "priority_rank": 642,
+    "priority_rank": 650,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17454,7 +17669,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328885+00:00",
     "priority": "low",
-    "priority_rank": 643,
+    "priority_rank": 651,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17480,7 +17695,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.328887+00:00",
     "priority": "low",
-    "priority_rank": 644,
+    "priority_rank": 652,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17506,7 +17721,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.329210+00:00",
     "priority": "low",
-    "priority_rank": 645,
+    "priority_rank": 653,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17532,7 +17747,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.329212+00:00",
     "priority": "low",
-    "priority_rank": 646,
+    "priority_rank": 654,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17558,7 +17773,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T03:22:24.329213+00:00",
     "priority": "low",
-    "priority_rank": 647,
+    "priority_rank": 655,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17584,7 +17799,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701632+00:00",
     "priority": "low",
-    "priority_rank": 648,
+    "priority_rank": 656,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17610,7 +17825,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701288+00:00",
     "priority": "low",
-    "priority_rank": 649,
+    "priority_rank": 657,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17636,7 +17851,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701291+00:00",
     "priority": "low",
-    "priority_rank": 650,
+    "priority_rank": 658,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17662,7 +17877,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701294+00:00",
     "priority": "low",
-    "priority_rank": 651,
+    "priority_rank": 659,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17688,7 +17903,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701298+00:00",
     "priority": "low",
-    "priority_rank": 652,
+    "priority_rank": 660,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17714,7 +17929,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701302+00:00",
     "priority": "low",
-    "priority_rank": 653,
+    "priority_rank": 661,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17740,7 +17955,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701309+00:00",
     "priority": "low",
-    "priority_rank": 654,
+    "priority_rank": 662,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17768,7 +17983,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701311+00:00",
     "priority": "low",
-    "priority_rank": 655,
+    "priority_rank": 663,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17795,7 +18010,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701626+00:00",
     "priority": "low",
-    "priority_rank": 656,
+    "priority_rank": 664,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17821,7 +18036,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701635+00:00",
     "priority": "low",
-    "priority_rank": 657,
+    "priority_rank": 665,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17847,7 +18062,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701637+00:00",
     "priority": "low",
-    "priority_rank": 658,
+    "priority_rank": 666,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17873,7 +18088,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701642+00:00",
     "priority": "low",
-    "priority_rank": 659,
+    "priority_rank": 667,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17899,7 +18114,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T06:25:13.701644+00:00",
     "priority": "low",
-    "priority_rank": 660,
+    "priority_rank": 668,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17925,7 +18140,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102386+00:00",
     "priority": "low",
-    "priority_rank": 661,
+    "priority_rank": 669,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17951,7 +18166,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102056+00:00",
     "priority": "low",
-    "priority_rank": 662,
+    "priority_rank": 670,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -17978,7 +18193,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102059+00:00",
     "priority": "low",
-    "priority_rank": 663,
+    "priority_rank": 671,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18005,7 +18220,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102067+00:00",
     "priority": "low",
-    "priority_rank": 664,
+    "priority_rank": 672,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18031,7 +18246,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102070+00:00",
     "priority": "low",
-    "priority_rank": 665,
+    "priority_rank": 673,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18057,7 +18272,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102085+00:00",
     "priority": "low",
-    "priority_rank": 666,
+    "priority_rank": 674,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18083,7 +18298,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102088+00:00",
     "priority": "low",
-    "priority_rank": 667,
+    "priority_rank": 675,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18109,7 +18324,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102091+00:00",
     "priority": "low",
-    "priority_rank": 668,
+    "priority_rank": 676,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18135,7 +18350,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102380+00:00",
     "priority": "low",
-    "priority_rank": 669,
+    "priority_rank": 677,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18161,7 +18376,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102389+00:00",
     "priority": "low",
-    "priority_rank": 670,
+    "priority_rank": 678,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18187,7 +18402,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T10:07:21.102392+00:00",
     "priority": "low",
-    "priority_rank": 671,
+    "priority_rank": 679,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18213,7 +18428,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629363+00:00",
     "priority": "low",
-    "priority_rank": 672,
+    "priority_rank": 680,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18239,7 +18454,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629367+00:00",
     "priority": "low",
-    "priority_rank": 673,
+    "priority_rank": 681,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18265,7 +18480,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629080+00:00",
     "priority": "low",
-    "priority_rank": 674,
+    "priority_rank": 682,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18291,7 +18506,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629085+00:00",
     "priority": "low",
-    "priority_rank": 675,
+    "priority_rank": 683,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18317,7 +18532,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629091+00:00",
     "priority": "low",
-    "priority_rank": 676,
+    "priority_rank": 684,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18343,7 +18558,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629096+00:00",
     "priority": "low",
-    "priority_rank": 677,
+    "priority_rank": 685,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18369,7 +18584,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348129+00:00",
     "priority": "low",
-    "priority_rank": 678,
+    "priority_rank": 686,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18396,7 +18611,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348133+00:00",
     "priority": "low",
-    "priority_rank": 679,
+    "priority_rank": 687,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18422,7 +18637,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348137+00:00",
     "priority": "low",
-    "priority_rank": 680,
+    "priority_rank": 688,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18448,7 +18663,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348408+00:00",
     "priority": "low",
-    "priority_rank": 681,
+    "priority_rank": 689,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18474,7 +18689,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348433+00:00",
     "priority": "low",
-    "priority_rank": 682,
+    "priority_rank": 690,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18500,7 +18715,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T22:59:05.348462+00:00",
     "priority": "low",
-    "priority_rank": 683,
+    "priority_rank": 691,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18526,7 +18741,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.493074+00:00",
     "priority": "low",
-    "priority_rank": 684,
+    "priority_rank": 692,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18552,7 +18767,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.492716+00:00",
     "priority": "low",
-    "priority_rank": 685,
+    "priority_rank": 693,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18578,7 +18793,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.492718+00:00",
     "priority": "low",
-    "priority_rank": 686,
+    "priority_rank": 694,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18604,7 +18819,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.492725+00:00",
     "priority": "low",
-    "priority_rank": 687,
+    "priority_rank": 695,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18630,7 +18845,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T03:23:53.493111+00:00",
     "priority": "low",
-    "priority_rank": 688,
+    "priority_rank": 696,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18656,222 +18871,59 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-05-01T00:52:52.786382+00:00",
     "priority": "low",
-    "priority_rank": 689,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618981",
-    "title": "chow kon yeow announces late fee exemptions as penang land tax review sparks over 10,000 appeals. george town, may 1 &mdash; the penang state government has extended the appeal period for cases arisin",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9045,
-        "structural_importance": 0.46,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 29,
-        "social_mentions": 13
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "legal",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024151+00:00",
-    "priority": "low",
-    "priority_rank": 690,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618982",
-    "title": "iran activates air defences as trump faces congressional deadline. air defences were tested over tehran for about 20 minutes to counter small aircraft and reconnaissance drones before normalcy returne",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9423,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 8,
-        "social_mentions": 7
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "general"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024169+00:00",
-    "priority": "low",
-    "priority_rank": 691,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618983",
-    "title": "agensi berkaitan diberi 2 minggu kemuka laporan pelaksanaan inisiatif pekerja. perdana menteri anwar ibrahim berkata laporan itu perlu diserahkan kepada menteri terbabit sebelum dibentangkan kepada je",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9231,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 11,
-        "social_mentions": 9
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024174+00:00",
-    "priority": "low",
-    "priority_rank": 692,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618984",
-    "title": "toyota to post fourth straight quarterly profit drop as middle east risks, costs mount. toyota is forecast to post a us$5.2 billion q4 operating profit, with middle east tensions driving up aluminium ",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9609,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 7,
-        "social_mentions": 11
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024176+00:00",
-    "priority": "low",
-    "priority_rank": 693,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618985",
-    "title": "kerajaan p pinang lanjut tarikh akhir rayuan cukai tanah disemak semula. ketua menteri chow kon yeow berkata mereka yang menjelaskan bayaran selepas tempoh rayuan tidak akan didenda.",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9614,
-        "structural_importance": 0.46,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 10,
-        "social_mentions": 7
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "legal",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024179+00:00",
-    "priority": "low",
-    "priority_rank": 694,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618986",
-    "title": "toyota",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9609,
-        "structural_importance": 0.465,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 7,
-        "social_mentions": 11
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024487+00:00",
-    "priority": "low",
-    "priority_rank": 695,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618987",
-    "title": "chow",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9045,
-        "structural_importance": 0.46,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 29,
-        "social_mentions": 13
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "economic",
-      "legal",
-      "political"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024496+00:00",
-    "priority": "low",
-    "priority_rank": 696,
-    "prediction": {
-      "regime": null,
-      "probabilities": null
-    }
-  },
-  {
-    "issue_id": "T4A-2026-618988",
-    "title": "agensi",
-    "controversy_score": 0.1176,
-    "confidence": 0.01,
-    "stream_signals": {
-      "silence": {
-        "silence_score": 0.9231,
-        "structural_importance": 0.415,
-        "suppression_pattern": "NORMAL",
-        "news_mentions": 11,
-        "social_mentions": 9
-      }
-    },
-    "bias_dimensions_at_risk": [
-      "general"
-    ],
-    "detection_type": "silence_anomaly",
-    "timestamp": "2026-05-01T07:01:41.024514+00:00",
-    "priority": "low",
     "priority_rank": 697,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621749",
+    "title": "activists",
+    "controversy_score": 0.1176,
+    "confidence": 0.01,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9577,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 4,
+        "social_mentions": 7
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375741+00:00",
+    "priority": "low",
+    "priority_rank": 698,
+    "prediction": {
+      "regime": null,
+      "probabilities": null
+    }
+  },
+  {
+    "issue_id": "T4A-2026-621750",
+    "title": "activists on gaza aid flotilla detained by israel disembark in crete. escorted by greek coast guards, some 175 activists were taken in four buses to a town whose name was not disclosed by the authorit",
+    "controversy_score": 0.1176,
+    "confidence": 0.01,
+    "stream_signals": {
+      "silence": {
+        "silence_score": 0.9577,
+        "structural_importance": 0.415,
+        "suppression_pattern": "NORMAL",
+        "news_mentions": 4,
+        "social_mentions": 7
+      }
+    },
+    "bias_dimensions_at_risk": [
+      "general"
+    ],
+    "detection_type": "silence_anomaly",
+    "timestamp": "2026-05-01T08:45:37.375427+00:00",
+    "priority": "low",
+    "priority_rank": 699,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18897,7 +18949,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-29T14:01:45.629390+00:00",
     "priority": "low",
-    "priority_rank": 698,
+    "priority_rank": 700,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18936,7 +18988,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-29T14:01:45.629380+00:00",
     "priority": "low",
-    "priority_rank": 699,
+    "priority_rank": 701,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -18968,7 +19020,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-30T06:59:38.821718+00:00",
     "priority": "low",
-    "priority_rank": 700,
+    "priority_rank": 702,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -18996,7 +19048,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T06:30:43.436387+00:00",
     "priority": "low",
-    "priority_rank": 701,
+    "priority_rank": 703,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19030,7 +19082,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T06:25:13.700917+00:00",
     "priority": "low",
-    "priority_rank": 702,
+    "priority_rank": 704,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19064,7 +19116,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T02:55:49.159250+00:00",
     "priority": "low",
-    "priority_rank": 703,
+    "priority_rank": 705,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19098,7 +19150,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T06:30:43.436448+00:00",
     "priority": "low",
-    "priority_rank": 704,
+    "priority_rank": 706,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19111,10 +19163,10 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621631",
+    "issue_id": "T4A-2026-624397",
     "title": "bangsa",
     "controversy_score": 0.1,
-    "confidence": 0.0001,
+    "confidence": 0.0,
     "stream_signals": {
       "volume": {
         "alert": false,
@@ -19132,7 +19184,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T10:39:39.078839+00:00",
     "priority": "low",
-    "priority_rank": 705,
+    "priority_rank": 707,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19174,7 +19226,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-26T20:41:12.225525+00:00",
     "priority": "low",
-    "priority_rank": 706,
+    "priority_rank": 708,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19187,7 +19239,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619306",
+    "issue_id": "T4A-2026-622062",
     "title": "scandal",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19208,7 +19260,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T22:41:33.044315+00:00",
     "priority": "low",
-    "priority_rank": 707,
+    "priority_rank": 709,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19250,7 +19302,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-28T06:30:43.436509+00:00",
     "priority": "low",
-    "priority_rank": 708,
+    "priority_rank": 710,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19284,7 +19336,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T10:07:21.101816+00:00",
     "priority": "low",
-    "priority_rank": 709,
+    "priority_rank": 711,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19297,7 +19349,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621626",
+    "issue_id": "T4A-2026-624392",
     "title": "undang-undang",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19318,7 +19370,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T03:23:53.492400+00:00",
     "priority": "low",
-    "priority_rank": 710,
+    "priority_rank": 712,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19331,7 +19383,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-620797",
+    "issue_id": "T4A-2026-623555",
     "title": "sedition act",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19352,7 +19404,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T02:53:00.541197+00:00",
     "priority": "low",
-    "priority_rank": 711,
+    "priority_rank": 713,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19365,7 +19417,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621622",
+    "issue_id": "T4A-2026-624388",
     "title": "religion",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19386,7 +19438,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T22:59:05.347750+00:00",
     "priority": "low",
-    "priority_rank": 712,
+    "priority_rank": 714,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19420,7 +19472,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T06:25:13.700957+00:00",
     "priority": "low",
-    "priority_rank": 713,
+    "priority_rank": 715,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19454,7 +19506,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T06:25:13.700953+00:00",
     "priority": "low",
-    "priority_rank": 714,
+    "priority_rank": 716,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19467,7 +19519,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619318",
+    "issue_id": "T4A-2026-622074",
     "title": "accountability",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19488,7 +19540,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T22:41:33.044330+00:00",
     "priority": "low",
-    "priority_rank": 715,
+    "priority_rank": 717,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19501,7 +19553,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621619",
+    "issue_id": "T4A-2026-624385",
     "title": "audit",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19522,7 +19574,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T06:25:13.700933+00:00",
     "priority": "low",
-    "priority_rank": 716,
+    "priority_rank": 718,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19556,7 +19608,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T06:28:53.516786+00:00",
     "priority": "low",
-    "priority_rank": 717,
+    "priority_rank": 719,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19569,7 +19621,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619789",
+    "issue_id": "T4A-2026-622547",
     "title": "court ruling",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19590,7 +19642,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T22:57:58.172705+00:00",
     "priority": "low",
-    "priority_rank": 718,
+    "priority_rank": 720,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19603,7 +19655,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621625",
+    "issue_id": "T4A-2026-624391",
     "title": "1mdb",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19624,7 +19676,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T22:59:05.347866+00:00",
     "priority": "low",
-    "priority_rank": 719,
+    "priority_rank": 721,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19637,7 +19689,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619788",
+    "issue_id": "T4A-2026-622546",
     "title": "detention",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19658,7 +19710,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T03:24:10.921837+00:00",
     "priority": "low",
-    "priority_rank": 720,
+    "priority_rank": 722,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19671,7 +19723,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619215",
+    "issue_id": "T4A-2026-621970",
     "title": "transparency",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19692,7 +19744,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T09:03:27.176019+00:00",
     "priority": "low",
-    "priority_rank": 721,
+    "priority_rank": 723,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19705,7 +19757,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621627",
+    "issue_id": "T4A-2026-624393",
     "title": "parlimen",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19733,7 +19785,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-30T05:12:46.096837+00:00",
     "priority": "low",
-    "priority_rank": 722,
+    "priority_rank": 724,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19767,7 +19819,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-24T13:28:13.972006+00:00",
     "priority": "low",
-    "priority_rank": 723,
+    "priority_rank": 725,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19780,7 +19832,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619337",
+    "issue_id": "T4A-2026-622094",
     "title": "melayu",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19801,7 +19853,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-25T02:35:41.916455+00:00",
     "priority": "low",
-    "priority_rank": 724,
+    "priority_rank": 726,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19814,7 +19866,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621398",
+    "issue_id": "T4A-2026-624158",
     "title": "jakim",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19835,7 +19887,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-25T02:35:41.916447+00:00",
     "priority": "low",
-    "priority_rank": 725,
+    "priority_rank": 727,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19880,7 +19932,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-28T06:30:43.436456+00:00",
     "priority": "low",
-    "priority_rank": 726,
+    "priority_rank": 728,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19914,7 +19966,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-25T20:41:34.785450+00:00",
     "priority": "low",
-    "priority_rank": 727,
+    "priority_rank": 729,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19927,7 +19979,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-620864",
+    "issue_id": "T4A-2026-623622",
     "title": "akta hasutan",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19948,7 +20000,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T10:18:40.178681+00:00",
     "priority": "low",
-    "priority_rank": 728,
+    "priority_rank": 730,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19961,7 +20013,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621445",
+    "issue_id": "T4A-2026-624205",
     "title": "arasu",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -19982,7 +20034,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T09:03:27.175984+00:00",
     "priority": "low",
-    "priority_rank": 729,
+    "priority_rank": 731,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -19995,7 +20047,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619649",
+    "issue_id": "T4A-2026-622406",
     "title": "haram",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20016,7 +20068,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T22:57:58.172744+00:00",
     "priority": "low",
-    "priority_rank": 730,
+    "priority_rank": 732,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20029,10 +20081,10 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621632",
+    "issue_id": "T4A-2026-624398",
     "title": "masjid",
     "controversy_score": 0.1,
-    "confidence": 0.0002,
+    "confidence": 0.0001,
     "stream_signals": {
       "volume": {
         "alert": false,
@@ -20050,7 +20102,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T10:39:39.078947+00:00",
     "priority": "low",
-    "priority_rank": 731,
+    "priority_rank": 733,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20063,7 +20115,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621616",
+    "issue_id": "T4A-2026-622077",
     "title": "gst",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20084,7 +20136,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T03:22:24.328477+00:00",
     "priority": "low",
-    "priority_rank": 732,
+    "priority_rank": 734,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20097,7 +20149,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619708",
+    "issue_id": "T4A-2026-622465",
     "title": "ethnic",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20118,7 +20170,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T22:41:33.044272+00:00",
     "priority": "low",
-    "priority_rank": 733,
+    "priority_rank": 735,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20152,7 +20204,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-26T22:41:33.044319+00:00",
     "priority": "low",
-    "priority_rank": 734,
+    "priority_rank": 736,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20165,7 +20217,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621621",
+    "issue_id": "T4A-2026-624387",
     "title": "protest",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20186,7 +20238,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T22:59:05.347862+00:00",
     "priority": "low",
-    "priority_rank": 735,
+    "priority_rank": 737,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20220,7 +20272,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T10:18:40.178703+00:00",
     "priority": "low",
-    "priority_rank": 736,
+    "priority_rank": 738,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20233,7 +20285,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619296",
+    "issue_id": "T4A-2026-622052",
     "title": "tahanan",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20254,7 +20306,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T10:18:40.178748+00:00",
     "priority": "low",
-    "priority_rank": 737,
+    "priority_rank": 739,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20267,7 +20319,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619536",
+    "issue_id": "T4A-2026-622293",
     "title": "woman",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20286,14 +20338,14 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-24T22:41:12.022454+00:00",
     "priority": "low",
-    "priority_rank": 738,
+    "priority_rank": 740,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-619327",
+    "issue_id": "T4A-2026-622084",
     "title": "quota",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20314,7 +20366,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T03:24:10.921907+00:00",
     "priority": "low",
-    "priority_rank": 739,
+    "priority_rank": 741,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20327,7 +20379,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621623",
+    "issue_id": "T4A-2026-624389",
     "title": "corruption",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20348,7 +20400,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T22:59:05.347885+00:00",
     "priority": "low",
-    "priority_rank": 740,
+    "priority_rank": 742,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20361,7 +20413,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-620008",
+    "issue_id": "T4A-2026-622766",
     "title": "salah guna kuasa",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20382,7 +20434,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-27T22:55:14.780753+00:00",
     "priority": "low",
-    "priority_rank": 741,
+    "priority_rank": 743,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20395,7 +20447,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621615",
+    "issue_id": "T4A-2026-621986",
     "title": "ekonomi",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20416,7 +20468,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T03:22:24.328496+00:00",
     "priority": "low",
-    "priority_rank": 742,
+    "priority_rank": 744,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20429,10 +20481,10 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621630",
+    "issue_id": "T4A-2026-624396",
     "title": "death penalty",
     "controversy_score": 0.1,
-    "confidence": 0.0001,
+    "confidence": 0.0,
     "stream_signals": {
       "volume": {
         "alert": false,
@@ -20450,7 +20502,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T08:52:11.550757+00:00",
     "priority": "low",
-    "priority_rank": 743,
+    "priority_rank": 745,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20463,7 +20515,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-620339",
+    "issue_id": "T4A-2026-623098",
     "title": "syariah",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20484,7 +20536,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-28T06:30:43.436498+00:00",
     "priority": "low",
-    "priority_rank": 744,
+    "priority_rank": 746,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20497,7 +20549,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621614",
+    "issue_id": "T4A-2026-621915",
     "title": "harga",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20522,7 +20574,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T03:22:24.328444+00:00",
     "priority": "low",
-    "priority_rank": 745,
+    "priority_rank": 747,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20535,7 +20587,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621210",
+    "issue_id": "T4A-2026-623970",
     "title": "ukraine",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20554,7 +20606,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-25T22:39:32.876019+00:00",
     "priority": "low",
-    "priority_rank": 746,
+    "priority_rank": 748,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -20582,7 +20634,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T06:25:13.700961+00:00",
     "priority": "low",
-    "priority_rank": 747,
+    "priority_rank": 749,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20595,7 +20647,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621618",
+    "issue_id": "T4A-2026-624384",
     "title": "perikatan",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20623,7 +20675,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-29T03:22:24.328515+00:00",
     "priority": "low",
-    "priority_rank": 748,
+    "priority_rank": 750,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20636,7 +20688,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621620",
+    "issue_id": "T4A-2026-624386",
     "title": "epf",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20657,7 +20709,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-29T22:59:05.347791+00:00",
     "priority": "low",
-    "priority_rank": 749,
+    "priority_rank": 751,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20670,7 +20722,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621624",
+    "issue_id": "T4A-2026-624390",
     "title": "pkr",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20698,7 +20750,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-29T22:59:05.347834+00:00",
     "priority": "low",
-    "priority_rank": 750,
+    "priority_rank": 752,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20739,7 +20791,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-30T05:12:46.096772+00:00",
     "priority": "low",
-    "priority_rank": 751,
+    "priority_rank": 753,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20752,7 +20804,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-619742",
+    "issue_id": "T4A-2026-622499",
     "title": "man",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20771,14 +20823,14 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T06:30:43.462609+00:00",
     "priority": "low",
-    "priority_rank": 752,
+    "priority_rank": 754,
     "prediction": {
       "regime": null,
       "probabilities": null
     }
   },
   {
-    "issue_id": "T4A-2026-621629",
+    "issue_id": "T4A-2026-624395",
     "title": "mosque",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20799,7 +20851,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T06:59:38.821094+00:00",
     "priority": "low",
-    "priority_rank": 753,
+    "priority_rank": 755,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20812,7 +20864,7 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621628",
+    "issue_id": "T4A-2026-624394",
     "title": "unemployment",
     "controversy_score": 0.1,
     "confidence": 0.0,
@@ -20833,7 +20885,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T05:12:46.096747+00:00",
     "priority": "low",
-    "priority_rank": 754,
+    "priority_rank": 756,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20846,10 +20898,10 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621633",
+    "issue_id": "T4A-2026-624399",
     "title": "urimai",
-    "controversy_score": 0.0999,
-    "confidence": 0.0005,
+    "controversy_score": 0.1,
+    "confidence": 0.0002,
     "stream_signals": {
       "volume": {
         "alert": false,
@@ -20867,7 +20919,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T12:39:51.938453+00:00",
     "priority": "low",
-    "priority_rank": 755,
+    "priority_rank": 757,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20880,10 +20932,10 @@
     }
   },
   {
-    "issue_id": "T4A-2026-621635",
+    "issue_id": "T4A-2026-624401",
     "title": "agama",
-    "controversy_score": 0.0995,
-    "confidence": 0.0027,
+    "controversy_score": 0.0998,
+    "confidence": 0.0012,
     "stream_signals": {
       "volume": {
         "alert": false,
@@ -20901,7 +20953,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T16:36:56.125906+00:00",
     "priority": "low",
-    "priority_rank": 756,
+    "priority_rank": 758,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20935,7 +20987,7 @@
     "detection_type": "attention_spike",
     "timestamp": "2026-04-30T12:39:51.938472+00:00",
     "priority": "low",
-    "priority_rank": 757,
+    "priority_rank": 759,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
@@ -20967,7 +21019,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922217+00:00",
     "priority": "low",
-    "priority_rank": 758,
+    "priority_rank": 760,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -20993,7 +21045,7 @@
     "detection_type": "silence_anomaly",
     "timestamp": "2026-04-28T03:24:10.922551+00:00",
     "priority": "low",
-    "priority_rank": 759,
+    "priority_rank": 761,
     "prediction": {
       "regime": null,
       "probabilities": null
@@ -21028,7 +21080,7 @@
     "detection_type": "both",
     "timestamp": "2026-04-28T14:19:44.611856+00:00",
     "priority": "low",
-    "priority_rank": 760,
+    "priority_rank": 762,
     "prediction": {
       "regime": "STABLE",
       "probabilities": {
