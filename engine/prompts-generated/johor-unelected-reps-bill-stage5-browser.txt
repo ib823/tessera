@@ -1,0 +1,221 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "johor-unelected-reps-bill",
+    "issue_id": "1977",
+    "brief": "engine/briefs/johor-unelected-reps-bill.md",
+    "generated_at": "2026-05-10",
+    "discipline": "Process-not-people. The amendment maps cleanly onto party lines (40-16 = exact 2022 BN/non-BN split); the brand discipline is to describe the structural mechanic and the precedent, not to endorse either coalition's framing. 3R caution: the Sultan of Johor is concurrently Yang di-Pertuan Agong; we report only what the amendment says about royal assent, not Istana preferences."
+  },
+  "headline": "Johor Expanded Its Assembly By Exactly The Seats BN Won In 2022",
+  "context": "On 7 May 2026, the Johor State Assembly amended the Undang-undang Tubuh Negeri Johor 1895 to allow up to five appointed assemblymen, raising the assembly's maximum size from 56 to 61. The vote — 40 in favour, 16 against — matched the 2022 state-election seat count for Barisan Nasional and the rest. The next state election is constitutionally due by March 2027.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Johor expanded its assembly by exactly the seats Barisan Nasional won in 2022. Five new members will be appointed, not elected.",
+      "sub": "The 7 May 2026 vote was 40-16 — matching the 2022 election seat count to the digit. BN cleared the two-thirds bar by exactly two votes.",
+      "sources": [
+        "The Star, 7 May 2026, 'Johor assembly approves constitutional amendment to add five nominated assemblymen': https://www.thestar.com.my/news/nation/2026/05/07/johor-assembly-approves-constitutional-amendment-to-add-five-nominated-assemblymen",
+        "Malay Mail, 7 May 2026, 'Johor MB says inclusion of five non-elected assembly seats to widen policy input': https://www.malaymail.com/news/malaysia/2026/05/07/johor-mb-says-inclusion-of-five-non-elected-assembly-seats-to-widen-policy-input/219037",
+        "The Vibes, 7 May 2026, '40 in favour, 16 against': https://www.thevibes.com/index.php/articles/news/122699/johor-assembly-passes-bill-allowing-appointment-of-non-elected-assemblymen",
+        "Malay Mail (EC official tally, 12 Mar 2022) — BN 40 / PH 11 / PN 3 / PKR 1 / MUDA 1: https://www.malaymail.com/news/malaysia/2022/03/12/live-official-perikatan-records-first-win-in-johor-polls-with-endau/2047098"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "The Federal Constitution's Eighth Schedule says state assemblies have 'such number of elected members as State law provides.' It does not, on its face, ban additional appointed members.",
+      "sub": "DAP's Nga Kor Ming calls the amendment unconstitutional. UMNO points out Pahang and Sabah did this first. No Federal Court ruling has tested the question.",
+      "sources": [
+        "Federal Constitution of Malaysia, Eighth Schedule Section 1 (essential provisions), Constitute Project text: https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en",
+        "Free Malaysia Today, 9 May 2026, 'Johor's appointed reps unconstitutional, says DAP's Nga': https://www.freemalaysiatoday.com/category/nation/2026/05/09/johors-appointed-reps-unconstitutional-says-daps-nga",
+        "The Star, 9 May 2026, 'DAP \"consistently inconsistent\" on nominated assemblymen issue, says Dr Wee': https://www.thestar.com.my/news/nation/2026/05/09/dap-consistently-inconsistent-on-nominated-assemblymen-issue-says-dr-wee",
+        "The Malaysian Bar, 'Powers and functions of state rulers' — institutional explainer of Article 71 + Eighth Schedule essential-provisions framework: https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/powers-and-functions-of-state-rulers"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Pahang ran the same playbook in 2024. All five appointed reps were ruling-coalition party officials — not the technocrats the rationale promised.",
+      "sub": "Pahang appointed an UMNO division chief, an MCA division chief, an Amanah state chairman, a PKR deputy state chairman, and a tahfiz-school founder. None were non-aligned experts.",
+      "sources": [
+        "Malay Mail, 13 May 2024, 'Five appointed as Pahang assemblymen, says MB' — names of all five: https://www.malaymail.com/news/malaysia/2024/05/13/five-appointed-as-pahang-assemblymen-says-mb/134150",
+        "The Star, 13 May 2024, 'Pahang State Assembly appoints five new reps': https://www.thestar.com.my/news/nation/2024/05/13/pahang-state-assembly-appoints-five-new-reps",
+        "Free Malaysia Today, 13 May 2024, 'Opposition cries foul after Pahang appoints 5 assemblymen' — confirms party-affiliation profile: https://www.freemalaysiatoday.com/category/nation/2024/05/13/opposition-cries-foul-after-pahang-appoints-5-assemblymen"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Johor's next state election is constitutionally due by March 2027. Onn Hafiz ruled out an immediate snap poll on the same day the amendment passed.",
+      "sub": "Five appointments require seven seconders and a simple majority — a threshold BN clears alone. The Sultan must assent within 30 days, or the Bill becomes law without him.",
+      "sources": [
+        "The Vibes, 7 May 2026, 'Johor MB rules out immediate state polls as assembly approves appointed amendment': https://www.thevibes.com/articles/news/122691/johor-mb-rules-out-immediate-state-polls-as-assembly-approves-appointed-amendment",
+        "The Star, 7 May 2026, on Clauses 15A-15C process (motion ≥7 ADUN → simple majority → Ruler's assent): https://www.thestar.com.my/news/nation/2026/05/07/johor-assembly-approves-constitutional-amendment-to-add-five-nominated-assemblymen",
+        "Federal Constitution, Eighth Schedule — 1994 amendment: Ruler must assent within 30 days, failing which the Bill becomes law: https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en",
+        "Onn Hafiz Ghazi sworn in 15 Mar 2022 — 5-year term sets March 2027 constitutional deadline: https://themalaysianreserve.com/2022/03/16/onn-hafiz-sworn-in-as-johor-mb"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether five appointments will help governance. It is who reshapes the assembly's arithmetic before voters next get a say.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis of: Pahang precedent (2024 appointees were all party officials), Johor 2027 election deadline, the 40-16 vote tracking the 2022 BN majority exactly.",
+        "No primary source frames the issue this way; this is the editorial reframe across the verified facts."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Think of a tenants' association that, before the next election, lets the current chair appoint five new voting members.",
+      "sub": "The new members can vote on rules and budgets but cannot run for chair. The election still happens — but with five extra votes already locked in.",
+      "sources": [
+        "Editorial analogy. Mirrors the Johor amendment's structural features: appointed reps participate and vote (per Pahang precedent), but cannot become MB or join the State Executive Council, while existing electoral schedule remains unchanged."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Four states now allow appointed assemblymen. The test is not whether the rule exists. It is who actually gets appointed — and whether voters notice before March 2027.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Sabah (6 since Dec 2025), Terengganu (up to 4 since 1999), Pahang (5 since May 2024), Johor (up to 5, 7 May 2026). Pahang's 5/5 party-affiliated record is the only filled-out precedent."
+      ]
+    }
+  ],
+  "sources": "The Star, Malay Mail, Free Malaysia Today, The Vibes, New Straits Times, Malaysiakini, The Malaysian Reserve, Constitute Project (Federal Constitution PDF), Malaysian Bar institutional commentary, Wikipedia (Constitution of Johor, Johor State Legislative Assembly, 2022 Johor state election — secondary cross-checks)",
+  "confidence": "High on the vote count (40-16 confirmed by The Star, Malay Mail, The Vibes), the 2022 election seat split (EC official tally via Malay Mail), the Article 15 amendment text and the Clauses 15A-C process (The Star + Malay Mail), the Pahang precedent names and party affiliations (Malay Mail + The Star + FMT all 13 May 2024). High on the constitutional textual reading (Federal Constitution Eighth Schedule Section 1 cited verbatim from Constitute Project PDF, with the explicit caveat that no Federal Court ruling exists on whether appointed members impair the 'essential' elected character). Medium on the assertion that Johor's appointees will have voting rights — we infer from Pahang's identical 2020 amendment template (where appointed reps can vote, debate, sit on committees, but cannot become MB / join EXCO); Stage 3 should verify Johor Clauses 15A-C explicitly grant the same. Medium on Onn Hafiz's stated rationale — 'expertise and experience to strengthen the quality of debates' is what he said; we report it as his rationale, not as the operative motivation. Medium on the political-arithmetic reading of the timing — March 2027 election deadline is hard fact, MB ruled out a snap poll is a hard fact, the inference that pre-election arithmetic-shaping is a motive is editorial framing flagged in the reframe and view cards.",
+  "lenses_used": ["Legal", "Governance", "Political"],
+  "lenses_applicable_but_unused": ["Historical", "Economic", "Social", "Regional"],
+  "needs_verification": [
+    "Exact text of Johor's new Clauses 15A, 15B, 15C — specifically whether appointed reps explicitly receive voting rights, committee rights, and whether the Pahang restrictions (cannot become MB / join EXCO) are mirrored. Stage 3 should pull the gazetted text or the official Hansard of the 7 May 2026 sitting.",
+    "Whether the 'simple majority' approval for each appointment is of all 56 (now potentially 61) members or of those present and voting. The threshold language matters because BN's 40 seats clear either reading, but PH or PN could not block individual appointments under either reading.",
+    "Whether the Sultan of Johor has given any public indication of intent regarding the new Clause 15C role — Stage 3 should check the Istana Pasir Pelangi official site and any post-7 May royal-press releases.",
+    "Whether the Pahang appointed reps' 'cannot become MB / join EXCO' restriction holds or has been softened in any post-2024 amendment — Stage 3 should verify the current gazetted Pahang Constitution.",
+    "Whether the 1894/1895 dating of the Undang-undang Tubuh Negeri Johor is consistent — Wikipedia and academic sources give 14 April 1895; some Bahasa sources reference 1312H which corresponds to 1894-95. We use 1895 throughout."
+  ],
+  "source_notes": "The vote-count framing differs subtly across outlets. The Star: 'two-thirds vote involving 40 of the 56 assemblymen.' The Vibes: 'more than two-thirds support, with 40 assemblymen in favour and 16 opposing it.' Malay Mail: '40 voting for, the remainder against.' All three are consistent with 40-16-0; we use 40-16 throughout. The 'remainder' framing in Malay Mail allows for absentees but no source identifies any. On the constitutional argument: Nga Kor Ming's claim is that Federal Constitution requires assemblymen to 'be elected.' The Eighth Schedule Section 1 text references 'such number of elected members as may be provided by State law' — the textual question of whether additional non-elected members are prohibited is genuinely contested and untested. We report the constitutional question as live and untested, not as decided in either direction. On the 'double standards' line: BN-aligned voices (Wee Ka Siong, Johor UMNO Youth) accuse DAP of inconsistency given Pahang (2020) and Sabah (Dec 2025) precedents; DAP-aligned voices (Nga Kor Ming) treat each as a separate constitutional concern. We do not adopt either side's framing of the other as hypocritical — we report the structural facts (Pahang's appointees were 5/5 party-aligned, including a PKR deputy state chairman that DAP's coalition partner participated in) and let readers judge. On Sabah's number of appointed reps: search results give 6 actually appointed since Dec 2025; we use 6 in the view card. On Terengganu: 1999 amendment under MB Hadi Awang capped at 4, restricted to women and non-Muslim representatives; this gender/religion structure differs from Johor's 'expertise' framing — worth noting in synthesis if Stage 6 needs additional precedent texture.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert the amendment is unconstitutional. We do NOT assert Onn Hafiz's true motivation is pre-2027 arithmetic. We do NOT assert the Sultan will or will not assent. We do NOT assert appointed Johor reps will be party officials — we note the Pahang precedent (5/5) and let the test be Johor's actual appointments. We do NOT assert Johor's Clauses 15A-C grant voting rights — we infer from the Pahang template and flag for Stage 3.",
+    "underclaim_check": "We do not soften the structural finding. The 40-16 vote IS exactly the 2022 seat count. BN's 40-seat majority IS exactly the 2/3 threshold + 2. The Pahang precedent IS 5/5 party-affiliated. None of these are 'critics argue' or 'reportedly' — they are documented facts.",
+    "misleading_framing_check": "Hook leads with the 40-16 / 2022 alignment — this is the verified factual finding. Pahang precedent is foregrounded as the only filled-out precedent. The constitutional argument is reported as live and untested, not as decided. The 'expertise' rationale is reported as Onn Hafiz's framing, not as established fact. The reframe explicitly restructures from 'is this legal?' to 'who picks before voters?' which is the editorial value-add.",
+    "unverified_detail_check": "Every specific number, date, name traces to ≥2 sources. The 40-16 vote, 56-seat assembly, 2022 seat split, Pahang appointees' names and affiliations, Federal Constitution Eighth Schedule text, March 2027 election deadline — all verified across multiple primary or near-primary sources.",
+    "3R_special_caution": "The Sultan of Johor is also Yang di-Pertuan Agong (since 31 Jan 2024). We report only what the amendment requires (royal assent under Clause 15C) and the Eighth Schedule's 30-day rule. We do NOT speculate about His Majesty's preferences, motivations, or likely choice. The view card and reframe carry no royal characterization.",
+    "process_not_people_check": "All sharp claims target the structural mechanic (vote-arithmetic, election-arithmetic, precedent-pattern) and the institution (Johor State Assembly, Pahang precedent), not individuals. Onn Hafiz is named for what he tabled and what he ruled out, not for motive. Nga Kor Ming and Wee Ka Siong are named for the public arguments they made. No person is characterized as bad-faith.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent ('Pahang shows what filled-out appointments look like; Johor is the next test'). Not sadness, not anger-at-people. The reframe and view direct the energy toward a structural question voters can hold the system accountable to before March 2027."
+  },
+  "pa_score": 88,
+  "pa_score_rationale": "Strong: vote count, Pahang precedent names, 2022 election split, Federal Constitution text — all verified across multiple primary sources or constitutional text. Multi-spectrum reporting (independent + BN-affiliated + opposition-aligned outlets converge on the same facts). Slightly capped because: (a) Johor's Clauses 15A-C text is referenced from news reporting, not pulled directly from a gazette/Hansard primary source — Stage 3 should chase this; (b) Pahang's 'cannot become MB / EXCO' restriction is reported but not pulled from gazette text; (c) the analogy card uses an editorial construction rather than a sourced comparison."
+}
