@@ -1,0 +1,230 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "federal-court-2026-term-backlog",
+    "issue_id": "1978",
+    "brief": "engine/briefs/federal-court-2026-term-backlog.md",
+    "generated_at": "2026-05-10",
+    "discipline": "Primary-source-anchored. Editorial spine = CJ Wan Ahmad Farid Wan Salleh's 12 Jan 2026 OLY speech (official PDF on kehakiman.gov.my) for the system-wide statistics, plus the official Federal Court press summary of the Heidy Quah judgment (6 Feb 2026, archived by ARTICLE 19) and multi-outlet primary reporting on the 20 Apr 2026 Ruler's-pleasure leave-denial. Pattern-from-two-cases trap explicitly avoided: we report two case outcomes as factual events, not as evidence of systemic tilt. 3R discipline: 'detained at Ruler's pleasure' is the legal-procedural term used in the statute and by the Federal Court itself; we use it accurately without speculating on royal preferences."
+  },
+  "headline": "Federal Court Term Restarts Into a Backlog the Chief Justice Has Named",
+  "context": "Malaysia's Federal Court resumes sittings in May 2026 into a backlog the new Chief Justice has named — criminal filings up 63% since 2021. Two recent apex-court rulings went against rights-claimants in February and April 2026.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Malaysia's Federal Court resumes sittings this month. The backlog has grown 63% in four years — and the cases that get heard shape rights for everyone.",
+      "sub": "Criminal filings rose from 1.5 million in 2021 to 2.5 million by Nov 2025. Two recent rulings show what happens when those cases land.",
+      "sources": [
+        "Office of the Chief Registrar Federal Court of Malaysia — official Opening of the Legal Year 2026 speech PDF, 12 Jan 2026: https://www.kehakiman.gov.my/sites/default/files/CJ%20SPEECH%20OLY%202026%20%5Bmedia%5D.pdf",
+        "BERNAMA, 12 Jan 2026, OLY 2026 coverage with case-registration stats",
+        "Malay Mail, 12 Jan 2026, 'Malaysia urgently needs more judges as caseloads soar, CJ says': https://www.malaymail.com/news/malaysia/2026/01/12/malaysia-urgently-needs-more-judges-as-caseloads-soar-cj-says/205190"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Heidy Quah won her free-speech case at the Court of Appeal in 2025. The Federal Court reinstated the law she had challenged in February 2026.",
+      "sub": "The words 'offensive' and 'annoy' in CMA Section 233 — used against critics for years — are back. She kept her individual win; the words stayed in the Act.",
+      "sources": [
+        "Federal Court of Malaysia, official press summary 'Government of Malaysia v Heidy Quah Gaik Li', 6 Feb 2026 (archived PDF): https://www.article19.org/wp-content/uploads/2026/02/GOVERNMENT-OF-MALAYSIA-v-HEIDY-QUAH-GAIK-LI_Press_Summary.pdf",
+        "The Star, 7 Feb 2026, 'Two words reinstated in Act': https://www.thestar.com.my/news/nation/2026/02/07/two-words-reinstated-in-act",
+        "Free Malaysia Today, 6 Feb 2026, 'Online speech restrictions constitutional, rules apex court': https://www.freemalaysiatoday.com/category/nation/2026/02/06/online-speech-restrictions-constitutional-rules-apex-court",
+        "ARTICLE 19 statement on the Federal Court decision: https://www.article19.org/resources/malaysia-federal-court-decision-is-a-blow-to-freedom-of-expression/",
+        "LHAG legal analysis, 'The Intent Test: Offensive Online Speech Redefined': https://lh-ag.com/tmt-tech-alert-the-intent-test-offensive-online-speech-redefined/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Rights",
+      "big": "In April 2026, the Federal Court denied seven prisoners leave to challenge their indefinite detention. They had been imprisoned since childhood.",
+      "sub": "Detained at 'Ruler's pleasure' under Section 97(2) Child Act. Aged 14-17 when sentenced; aged 30-35 now. The court said only a royal pardon can release them.",
+      "sources": [
+        "BERNAMA, 20 Apr 2026, 'Court Denies Leave To Seven Prisoners Detained At Ruler's Pleasure, Indefinite Sentences Upheld': https://www.bernama.com/en/crime_courts/news.php?id=2547018",
+        "The Star, 20 Apr 2026: https://www.thestar.com.my/news/nation/2026/04/20/court-denies-leave-to-seven-prisoners-detained-at-ruler039s-pleasure-indefinite-sentences-upheld",
+        "Free Malaysia Today, 20 Apr 2026, '7 held at ruler's pleasure fail in bid for sentence review': https://www.freemalaysiatoday.com/category/nation/2026/04/20/7-held-at-rulers-pleasure-fail-in-bid-for-sentence-review",
+        "Free Malaysia Today, 21 Nov 2025, '7 ex-child prisoners seek review of indefinite detention': https://www.freemalaysiatoday.com/category/nation/2025/11/21/7-ex-child-prisoners-seek-review-of-indefinite-detention",
+        "Free Malaysia Today, 28 Apr 2026, 'Lawyers urge Parliament to address indefinite detention of child offenders': https://www.freemalaysiatoday.com/category/nation/2026/04/28/lawyers-urge-parliament-to-address-indefinite-detention-of-child-offenders"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The Chief Justice has named the crisis. He told judges to deliver on time or take 'a dignified exit.' In April he cancelled their recess.",
+      "sub": "Court vacation is 'not a holiday,' he said. One Johor Bahru High Court judge handles roughly 800 cases — three times the normal load.",
+      "sources": [
+        "Malay Mail, 27 Apr 2026, 'Court recess no time off: Chief Justice tells judges to stay on duty, clear backlog': https://www.malaymail.com/news/malaysia/2026/04/27/court-recess-no-time-off-chief-justice-tells-judges-to-stay-on-duty-clear-backlog/217796",
+        "The Star, 27 Apr 2026, 'CJ: Court vacation is not a holiday': https://www.thestar.com.my/news/nation/2026/04/27/cj-court-vacation-is-not-a-holiday",
+        "BERNAMA, '\"Exit Remains A Dignified Option\" If You Fail To Deliver Timely Written Judgments, CJ Warns': https://www.bernama.com/en/news.php/crime_courts/news.php?id=2521081",
+        "Malay Mail, 12 Jan 2026, '\"Kitchen is open, but the service must be timely\": Chief Justice signals judges with backlogs can resign': https://www.malaymail.com/news/malaysia/2026/01/12/kitchen-is-open-but-the-service-must-be-timely-chief-justice-signals-judges-with-backlogs-can-resign/205151",
+        "Free Malaysia Today, 27 Nov 2025, 'Judicial commissioners to assist courts as backlog mounts, says CJ' — the 800-cases-per-Johor-Bahru-judge example: https://www.freemalaysiatoday.com/category/nation/2025/11/27/judicial-commissioners-to-assist-courts-as-backlog-mounts-says-cj"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether the apex court catches up. It is which cases get heard before a right has aged past its purpose.",
+      "sub": "",
+      "sources": [
+        "Editorial value-restructure across the verified facts: rising case volume + selectivity of leave-grant + speed of disposition all together determine which rights get vindicated when. No primary outlet has framed the issue this way; this is the editorial reframe.",
+        "Anchored to CJ's own 'justice delayed is justice denied' language at OLY 2026 (Malaysiakini, 12 Jan 2026: https://www.malaysiakini.com/news/765399)."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Imagine a hospital that has nearly doubled its admissions but has not doubled its doctors. Some patients are seen quickly. Others wait through their illness.",
+      "sub": "The ones seen first are not always the ones whose case is most urgent. Triage is itself a choice — and someone makes it.",
+      "sources": [
+        "Editorial analogy. Mirrors the verified structural facts: case-registration growth +63%/+60% 2021-Nov 2025 against bench size that has not expanded proportionally; CJ's own characterisation of the load as 'unsustainable'; leave-application mechanism that screens which cases reach merits review."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "The Chief Justice has named the crisis. The harder question is whether the cases that finally reach the apex court are the ones that most needed to.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Verified components: CJ has publicly named the backlog (OLY 2026 speech); CJ has ordered structural responses (judicial commissioners, mediation, circuit courts, cancelled recess); apex-court decisions in Feb and April 2026 produced outcomes against the rights-claimant in both cases."
+      ]
+    }
+  ],
+  "sources": "Office of the Chief Registrar Federal Court of Malaysia (official OLY 2026 speech PDF, official Heidy Quah press summary), BERNAMA, The Star, Malay Mail, Free Malaysia Today, Malaysiakini, ARTICLE 19, IFEX, LHAG legal-analysis publication, SUHAKAM, Wikipedia (Chief Justice, Federal Court, Wan Ahmad Farid biography — secondary cross-checks)",
+  "confidence": "High on all CJ-speech-sourced statistics — primary source is the official OLY 2026 speech PDF on kehakiman.gov.my (criminal filings 1,522,005 → 2,486,567 = +63.37%; civil 303,335 → 483,933 = +59.54%). High on the 800-cases Johor Bahru High Court example (multi-outlet convergence; CJ's own publicly stated number). High on Heidy Quah ruling mechanic (official FC press summary archived by ARTICLE 19 + LHAG legal analysis + The Star + FMT). High on the 20 April 2026 Ruler's-pleasure leave-denial (BERNAMA + The Star + FMT all 20 Apr 2026, plus the 21 Nov 2025 hearing-grant coverage). High on the CJ's 27 April 2026 'court vacation is not a holiday' circular (Malay Mail + The Star same day). Medium on the editorial reframe — the value-restructuring (from speed to selectivity) is not in any primary source; it is editorial framing across the verified facts, flagged in the reframe and view cards.",
+  "lenses_used": ["Legal", "Rights", "Governance"],
+  "lenses_applicable_but_unused": ["Social", "Historical", "Political", "Critical"],
+  "needs_verification": [
+    "Exact total of pending Federal Court (apex) cases — the CJ's published statistics cover system-wide registrations (Magistrates + Sessions + High + Court of Appeal + Federal Court combined), not Federal Court alone. We were careful to say 'apex court' / 'system' depending on context, but Stage 3 should confirm we never conflated the two.",
+    "Whether the Heidy Quah Federal Court bench composition has been officially published in a written judgment (the 6 Feb 2026 ruling was via oral judgment per FC press summary; written grounds may not yet be issued).",
+    "Exact ages of the 7 Ruler's-pleasure detainees at the time of original sentencing — we say '14-17 when sentenced; 30-35 now' based on outlet reporting; if any individual age falls outside that range Stage 3 should correct.",
+    "Whether the 1-12 June 2026 recess dates are confirmed by the official judicial calendar or whether they were paraphrased by Malay Mail. The CJ's April 27 circular is the source we cite.",
+    "Pahang and Sabah High Court analogues to the 800-cases Johor Bahru figure — if the CJ has named other lower-court examples publicly, those could strengthen the system-wide framing. Stage 3 may surface these."
+  ],
+  "source_notes": "The 800-cases statistic refers specifically to a Johor Bahru *High Court* judge per the CJ's November 2025 example — not a Federal Court judge. All four outlets (FMT, The Star, BERNAMA, Malay Mail) correctly attribute the number to the lower court. Our copy says 'Johor Bahru High Court judge' to preserve this attribution. The +63% / +60% case-growth figures are system-wide (all Malaysian courts combined) per the OLY 2026 speech, not Federal Court alone — our copy says 'criminal filings' and 'civil filings' system-wide, not 'apex court caseload.' On Heidy Quah: the Federal Court partly reversed the Court of Appeal — affirmed Heidy Quah's specific prosecution as unwarranted (she won her individual case) but reversed the unconstitutionality finding (the words stay in the Act). Our Card 2 sub says 'She kept her individual win; the words stayed in the Act' — accurate and specific. On the 7 detainees: the Federal Court denied LEAVE — it did not rule on merits. Our Card 3 sub says 'denied leave to challenge' and 'only a royal pardon can release them,' both accurate to the Federal Court's own framing. We do not say the indefinite detention was 'ruled constitutional' — that would be inaccurate.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT characterise the Federal Court as systemically pro-state from a sample of two cases — Card 2 and Card 3 report two factual events; the reframe and view cards pose questions rather than assert systemic tilt. We do NOT claim the Section 233 reversal makes Malaysia worse for free speech without qualifying that Heidy Quah's individual case still won. We do NOT characterise the Ruler's-pleasure detention as unconstitutional — the Federal Court denied leave to argue it, which is procedural not substantive. We do NOT speculate on the Sultan/Agong's preferences.",
+    "underclaim_check": "We do not soften the CJ's primary-source statements. 'Dignified exit' and 'not a holiday' are direct quotes (single quotes used). The +63% growth statistic is given precisely (rounded to '63%' in cards, exact '+63.37%' in brief). The 800-cases example is named with location (Johor Bahru High Court). None of these are 'reports suggest' or 'critics argue.'",
+    "misleading_framing_check": "Hook leads with verified +63% statistic and case-volume context. Card 2 leads with named individual (Heidy Quah) per the identifiable-case rule. Card 3 leads with the action (Federal Court denied seven prisoners leave) — and Card 3's 'seven' / '14-17 when sentenced / 30-35 now' age-arithmetic is the arousal-peak per the playbook. Card 4's CJ directives are sequenced ('January' then 'April') for chronological clarity. Reframe restructures the standard 'speed of justice' frame to 'which cases get heard.' No selective dating, no missing denominators (we say 'criminal filings' not 'cases'), no cherry-picking.",
+    "unverified_detail_check": "Every specific traces. The 63% growth: CJ OLY 2026 speech PDF. The 1.5M → 2.5M numbers: same. The 800 cases: CJ's Nov 2025 public statement, multi-outlet. The Heidy Quah Feb 2026 ruling: official FC press summary archived by ARTICLE 19. The 7 detainees / Section 97(2) Child Act: BERNAMA + The Star + FMT 20 Apr 2026 plus 21 Nov 2025 hearing-grant coverage. The 'dignified exit' quote: CJ's OLY 2026 speech, multiple primary outlets. The 'not a holiday' quote: 27 April 2026 circular, primary outlets.",
+    "3R_special_caution": "Section 97(2) Child Act detention is 'at the pleasure of the Yang di-Pertuan Agong / Ruler.' We use this term — it is the statutory phrase and the Federal Court's own framing. We do NOT speculate on royal preferences or likely commutation outcomes. Card 3 says 'only a royal pardon can release them' — this is the Federal Court's own framing, not an editorial assertion. The Sultan / Agong is not characterised in any card.",
+    "process_not_people_check": "All cards target institutions (Federal Court, Chief Justice as office-holder, Court of Appeal, the Act) and the structural pattern. The CJ Wan Ahmad Farid Wan Salleh is named in source attribution but not characterised personally in card bodies. Heidy Quah and the 7 detainees are named because they are the named parties in published court records — naming them is required by accurate reporting.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent — what does it mean for ordinary Malaysians' rights when the apex court is overloaded AND the cases that do get heard go against rights-claimants? Not sadness (which Berger-Milkman shows reduces sharing). Not anger-at-individuals (Wan Ahmad Farid is treated as the office-holder responding to inherited problem). The reframe and view direct energy toward a structural question voters and lawyers can advocate on."
+  },
+  "pa_score": 90,
+  "pa_score_rationale": "Stronger primary-source backbone than the previous issue (Johor 1977): the CJ's own Opening of the Legal Year 2026 speech PDF is on the official judiciary portal (kehakiman.gov.my), giving us direct primary documentation for every system-wide statistic. The Federal Court's own press summary on Heidy Quah is archived in PDF. Multi-outlet convergence on both 6 Feb 2026 and 20 April 2026 rulings. Stage 1 self-score capped at 90 (not higher) because: (a) the 'arousal peak' middle-fact-card hits arithmetic that depends on outlet-reported ages rather than primary court records; (b) the editorial reframe (from 'speed of justice' to 'selectivity of which cases') is value-restructuring without direct primary-source framing — flagged in reframe and view; (c) the 'pattern from two cases' trap is avoided in copy but the cards do put both cases prominently — a hostile reader could still read pattern-implication into the sequence."
+}
