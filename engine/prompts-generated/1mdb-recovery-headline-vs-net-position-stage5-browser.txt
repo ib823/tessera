@@ -1,0 +1,188 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "MACC's RM31.3B 1MDB recovery headline counts RM6B that Goldman Sachs is still fighting in a London arbitration room",
+      "sub": "Goldman went to the London Court of International Arbitration in October 2023 to argue it owes less. If the arbitrators side with Goldman, the headline drops overnight.",
+      "sources": [
+        "Bloomberg, 11 Oct 2023 — Goldman Sachs 1MDB Settlement Dispute Escalates",
+        "Al Jazeera, 12 Oct 2023 — Why is Goldman Sachs suing Malaysia over 1MDB scandal?",
+        "FMT, 14 Feb 2025 — Putrajaya undeterred in bid to recover 1MDB funds, says Johari",
+        "Malay Mail, 6 May 2026 — MACC chief 1MDB recovery RM31.3B"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Of Goldman's USD3.9B 2020 settlement, only USD2.5B was paid in cash",
+      "s": "The remaining USD1.4 billion (about RM6 billion) is an asset-recovery guarantee, not money in the till. Goldman filed at the London Court of International Arbitration in October 2023; the arbitrators have not ruled.",
+      "d": "Under the 24 July 2020 settlement, Goldman agreed to pay Malaysia USD2.5 billion cash plus a guarantee that Malaysia would receive at least USD1.4 billion in proceeds from related asset seizures. In October 2023 Goldman filed at the LCIA, arguing Malaysia had already recovered enough from third parties to satisfy that guarantee. Malaysia disagrees. As of February 2025 — the most recent public update from Treasury's Datuk Johari Abdul Ghani — the dispute remained under arbitration. The MACC's May 2026 RM31.3 billion figure counts the full Goldman USD3.9 billion settlement, including the disputed USD1.4 billion tranche, as recovered.",
+      "sources": [
+        "SEC Administrative Proceeding 3-20131 (22 Oct 2020) — Goldman Sachs settlement order",
+        "Bloomberg, 11 Oct 2023",
+        "SCMP, 12 Oct 2023",
+        "FMT, 14 Feb 2025 — Johari statement",
+        "Malay Mail, 6 May 2026 — Azam Baki statement"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "Malaysia paid RM43.8B servicing 1MDB debt by March 2023 — more than the cumulative recovery announced this month",
+      "s": "Deputy Finance Minister Ahmad Maslan disclosed the RM43.8B figure in 2023, plus RM9.7B still outstanding. Neither figure has been separately updated since. MACC's May 2026 cumulative recovery is RM31.3B.",
+      "d": "The Ministry of Finance has confirmed, through Deputy Finance Minister Ahmad Maslan, that as of March 2023 the federal government had paid RM43.8 billion servicing 1MDB-related debt — RM24.5 billion in shareholder advances and RM19.3 billion through a trust account — with RM9.7 billion (RM5 billion principal plus RM4.7 billion interest) still owed. Three years on, MOF has not separately broken out the 1MDB-specific component of subsequent debt service in any public document. On the recovery side, MACC's May 2026 cumulative figure is RM31.3 billion. The two are not comparable line-items, but as a fiscal-net check the direction is clear: through March 2023, the public account was at least RM12.5 billion in the hole on 1MDB, before counting the RM6 billion still in arbitration.",
+      "sources": [
+        "MOF press portal — Ahmad Maslan RM43.8B 1MDB debt paid statement",
+        "Malay Mail, 6 May 2026 — Azam Baki RM31.3B"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "MACC's '74.5% recovered' uses 1MDB's total 2015 debt as the denominator, not what the US Justice Department says was stolen",
+      "s": "The RM42B figure is 1MDB's accumulated debts at mid-2015. The DOJ separately established that US$4.5B (about RM21B) was misappropriated between 2009 and 2015. Different denominator, different sentence.",
+      "d": "The phrase 'RM42 billion misappropriated' has hardened into a standard in Malaysian press coverage, but its origin is 1MDB's total debt at the point of the 2015 ratings collapse — including legitimately-issued bonds that funded real (if mismanaged) projects. The US Department of Justice, in its 13 June 2024 release confirming US$1.4 billion total repatriation under the Kleptocracy Asset Recovery Initiative, used a different baseline: 'more than US$4.5 billion in funds' misappropriated by senior officials and associates between 2009 and 2015. Converted at current rates, that is roughly RM21 billion — half the RM42B denominator. Against the DOJ baseline, the RM31.3B headline implies the proven misappropriation has been more than fully recovered. Against the debt baseline, 74.5% remains. Both can be true; only one is being said.",
+      "sources": [
+        "US DOJ, 13 June 2024 — Justice Department Repatriates $1.4B Misappropriated 1MDB Funds",
+        "IRS-CI release (June 2024) — corroborating",
+        "Wikipedia 1MDB scandal — RM42B as mid-2015 accumulated debt",
+        "Malay Mail / Bernama, 6 May 2026 — MACC use of 'RM42B misappropriated' framing"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The question is not how much was recovered. It is which number the next press release counts."
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it like booking a settlement before the cheque clears",
+      "text": "Malaysia put the full RM31.3B on the receipt. RM6 billion of it is a guarantee Goldman is in court trying to reduce. The arbitrators have not signed."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "RM31.3 billion is real money returned to Malaysia and one of the largest financial-crime recoveries on record. But the framing of '74.5% of a settled scandal' does work the underlying ledger cannot yet bear: it counts a Goldman tranche still in arbitration, it uses 2015 total debt rather than DOJ-established misappropriation as the denominator, and it leaves out that taxpayer-funded debt service through March 2023 already exceeded the cumulative recovery. The honest reading is narrower: most of what was provably stolen has been clawed back, the headline figure is partly conditional on an arbitration not yet decided, and the net-fiscal position is still negative. That is a substantial achievement and an incomplete one — and both halves of that sentence matter."
+    }
+  ],
+  "sources": "US DOJ press releases (2021, 2024, 2025); US SEC 3-20131; MOF Malaysia press portal; Bernama; Malay Mail; Malaysiakini; FMT; The Star; The Edge Malaysia; Business Today; Bloomberg; SCMP; Al Jazeera; CNN; CNBC; Transparency International Malaysia; LCIA filings as reported.",
+  "confidence": "High — RM31.3B figure and yearly breakdown directly attributed to MACC Chief Commissioner Azam Baki and reproduced identically across Bernama, Malay Mail, Malaysiakini, FMT, The Star, The Edge. Goldman arbitration confirmed by DOJ-tracking, SEC settlement order, Bloomberg, SCMP, Al Jazeera, and FMT's reporting of Treasury's Feb 2025 statement. RM43.8B debt-paid figure traced to Deputy FM Ahmad Maslan via MOF press portal. DOJ US$4.5B misappropriation baseline traced to DOJ June 2024 press release.",
+  "lenses_used": ["Legal", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Political", "Historical"],
+  "needs_verification": [
+    "Whether MOF has separately updated the 1MDB-specific debt-service total post-March 2023 (Ahmad Maslan's RM43.8B / RM9.7B-outstanding figures). If a newer official total exists, Stage 3 should chase the source and update the Economic fact card.",
+    "Current procedural status of the LCIA arbitration between Goldman Sachs and Malaysia (any rulings, hearings, or amendments since the February 2025 Johari statement). If a final or interim ruling has been issued, the card framing changes materially.",
+    "Whether MACC's RM31.3B figure has been formally itemized in a MACC annual report or auditor-general document, vs. only stated in the May 2026 press conference. If only the press conference, that should be acknowledged."
+  ],
+  "source_notes": "Two recovery figures coexist in current Malaysian government communication and are routinely conflated in press coverage: (a) MOF's RM20.73B (October 2025), which counts settlements from financial institutions only — Goldman ≈RM16.5B, AmBank RM2.83B, JPMorgan Switzerland RM1.4B; and (b) MACC's RM31.3B (May 2026), which adds IPIC/Aabar settlements, Deloitte/KPMG settlements, asset sales (Equanimity yacht ~RM543M, jet, properties), artworks, and DOJ-returned funds. Both are arithmetically defensible for what each counts, but only one is being used as the headline percentage denominator. Both figures count the disputed Goldman USD1.4B guarantee. The internal arithmetic of the MACC yearly breakdown (2019: 1.155B; 2020: 14.257B; 2021: 5.117B; 2022: 0.40038B; 2023: 8.088B; 2024: 0.71595B; 2025: 1.566B) sums to 31.298B and matches the announced RM31.3B headline. A pre-May 2026 figure of 'RM29B' from Business Today (March 2025) is consistent with this trajectory."
+}
