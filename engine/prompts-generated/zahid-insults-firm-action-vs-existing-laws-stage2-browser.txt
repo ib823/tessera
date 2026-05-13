@@ -1,0 +1,233 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "zahid-insults-firm-action-vs-existing-laws",
+    "issue_id": "1980",
+    "brief": "engine/briefs/zahid-insults-firm-action-vs-existing-laws.md",
+    "generated_at": "2026-05-13",
+    "discipline": "Process-not-substance. 3R-Critical brief: Religion + Race + Royalty all touched. We do NOT characterise any allegedly insulting speech, do NOT speak for the Rulers (no Conference of Rulers statement on the speech exists), do NOT treat 'Malay' sentiment as monolith. We DO describe the statutory stack, the binding court ruling, the enforcement numbers, and the 14-year history of the proposed replacement bill — all matters of public record."
+  },
+  "headline": "Zahid wants firmer law on insults — charges already at a five-year high",
+  "context": "On 10 May 2026 at the Musyawarah Nasional forum, DPM Ahmad Zahid called for 'firm, fair, wise' action against insults to Islam and the Malay Rulers, and a strengthened legal framework. SUARAM had reported a month earlier that 2025 Sedition Act charges hit a five-year high.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "DPM Zahid says insults to Islam and the Malay Rulers need 'firm, fair, wise' action — and a strengthened legal framework.",
+      "sub": "He spoke 10 May 2026 at the Musyawarah Nasional forum he founded. The laws he wants reinforced — Sedition Act, CMA s.233, Penal Code 298A — are already on the books.",
+      "sources": [
+        "Malay Mail, 10 May 2026, 'Zahid calls for firm action against insults on Islam and Malay Rulers to safeguard national harmony': https://www.malaymail.com/news/malaysia/2026/05/10/zahid-calls-for-firm-action-against-insults-on-islam-and-malay-rulers-to-safeguard-national-harmony/219419",
+        "The Star, 10 May 2026, 'Insults against Islam, Malay rulers must be handled firmly, says Ahmad Zahid': https://www.thestar.com.my/news/nation/2026/05/10/insults-against-islam-malay-rulers-must-be-handled-firmly-says-ahmad-zahid",
+        "UMNO Online (party organ press release), 10 May 2026, 'Musyawarah Nasional Perlu Jadi Makmal Pemikir Bangsa Tangani Keresahan Melayu – Ahmad Zahid': https://umno-online.my/2026/05/10/musyawarah-nasional-perlu-jadi-makmal-pemikir-bangsa-tangani-keresahan-melayu-ahmad-zahid/",
+        "The Edge Malaysia, 10 May 2026, 'Ahmad Zahid: Insults against Islam, Malay rulers must be handled firmly': https://theedgemalaysia.com/node/802962"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Three statutes already criminalise religious insult: Sedition Act s.3(1)(f), Penal Code 298A (2–5 years), CMA s.233 (up to RM50,000).",
+      "sub": "Section 3(1)(f) explicitly protects Article 181 — the Rulers' constitutional position. The newest of the three is 1998. The stack pre-dates Zahid's call by decades.",
+      "sources": [
+        "Sedition Act 1948, s.3(1)(f) and s.4(1) — Attorney General's Chambers consolidated text",
+        "Penal Code (Act 574), ss.295, 298, 298A — AGC consolidated text",
+        "Communications and Multimedia Act 1998, s.233 — AGC consolidated text. Maximum penalty RM50,000 fine and/or 1 year jail.",
+        "Federal Constitution, Article 181 (sovereignty, prerogatives, powers and jurisdiction of the Rulers).",
+        "ARTICLE 19 briefing paper, 'Blasphemy Provisions in Malaysian Law', Jan 2021, https://www.article19.org/wp-content/uploads/2021/01/2021.01.20-Malaysia-blasphemy-briefing-paper-final.pdf"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Rights",
+      "big": "SUARAM said Sedition Act charges hit a five-year high in 2025. CIJ counted 233 expression-law cases in 2025 — up 23% on 2024.",
+      "sub": "Both findings landed before Zahid's call. CIJ's 2024 base was 189 cases. SUARAM's April 2025 report names both the Sedition Act and CMA s.233 as the lead tools.",
+      "sources": [
+        "SUARAM, Malaysia Human Rights Report 2025 Overview (published April 2025) — five-year high in Sedition Act charges, continued targeting under SA and CMA s.233.",
+        "Civicus Monitor, 'Malaysia: Restrictive laws deployed by police to criminalise dissent, ban books and harass protesters' — citing CIJ tally of 233 investigations/arrests in 2025 vs 189 in 2024 (+23.28%): https://monitor.civicus.org/explore/malaysia-restrictive-laws-deployed-by-police-to-criminalise-dissent-ban-books-and-harass-protesters/",
+        "IFEX, 'Malaysia: Freedom of expression is an everyday essential', 2025: https://ifex.org/malaysia-freedom-of-expression-is-an-everyday-essential-stop-restricting-keep-progressing/",
+        "Amnesty Malaysia, 'Stop Restricting Freedom of Expression', 16 July 2025: https://www.amnesty.my/2025/07/16/malaysia-stop-restricting-freedom-of-expression/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "On 19 August 2025 the Court of Appeal struck 'offensive' and 'annoy' from CMA s.233 — unconstitutional under Articles 8 and 10.",
+      "sub": "Federal Court granted the government leave to appeal on 13 November 2025; the hearing has not been held. The main online-insult statute sits in legal limbo.",
+      "sources": [
+        "Amnesty Malaysia, 'Heidy Quah's Court Victory a Win for All Malaysians Speaking Truth to Power', 19 Aug 2025: https://www.amnesty.my/2025/08/19/court-victory-for-heidy-quah/",
+        "Rajah & Tann Asia viewpoint, 'Court of Appeal Delivers Landmark Ruling on the Constitutionality of … Section 233(1)(a) of the CMA 1998': https://www.rajahtannasia.com/viewpoints/court-of-appeal-delivers-landmark-ruling-on-the-constitutionality-of-the-prohibition-against-content-that-is-offensive-and-with-intention-to-annoy-under-section-2331a-of-the-communications/",
+        "The Star, 'Federal Court grants leave to appeal on Section 233 ruling in Heidy Quah case', 13 Nov 2025: https://www.thestar.com.my/news/nation/2025/11/13/federal-court-grants-leave-to-appeal-on-section-233-ruling-in-heidy-quah-case",
+        "Malay Mail, 'Federal Court to hear govt appeal on CMA Section 233 \"offensive\" and \"annoy\" provisions after leave granted', 13 Nov 2025: https://www.malaymail.com/news/malaysia/2025/11/13/federal-court-to-hear-govt-appeal-on-cma-section-233-offensive-and-annoy-provisions-after-leave-granted/198227",
+        "Baker McKenzie InsightPlus, 'Malaysia: Navigating the digital landscape — The Heidy Quah case': https://insightplus.bakermckenzie.com/bm/dispute-resolution/malaysia-navigating-the-digital-landscape-the-heidi-quah-case"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The bill meant to replace these statutes was promised in 2012. Fourteen years later, it is still in cabinet draft.",
+      "sub": "",
+      "sources": [
+        "MySinchew / Bernama, '12 July 2012: Najib announces National Harmony Act to replace Sedition Act': http://www.mysinchew.com/node/75371",
+        "Utusan Malaysia, April 2026, 'Kerajaan teliti penubuhan semula Suruhanjaya Keharmonian dan Rekonsiliasi Nasional': https://www.utusan.com.my/nasional/2026/04/kerajaan-teliti-penubuhan-semula-suruhanjaya-keharmonian-dan-rekonsiliasi-nasional/",
+        "Malaysia Tribune, April 2026, 'Kerajaan teliti semula cadangan tubuh Suruhanjaya Keharmonian Nasional': https://malaysiatribune.news/kerajaan-teliti-semula-cadangan-tubuh-suruhanjaya-keharmonian-nasional/",
+        "Malaysian Bar press release on the three-bill framework (National Harmony & Reconciliation Bill, Commission Bill, Racial & Religious Hate Crimes Bill): https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-release-it-is-a-travesty-to-selectively-interpret-our-federal-constitution-time-to-enact-national-harmony-bills",
+        "Editorial synthesis: 2012 promise (12 July 2012) → April 2026 cabinet review = 14 years; the bill was framed even then as 'mediation over punishment' — the same framing the Unity Ministry uses now."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like calling for more speed cameras on a road where tickets just hit a five-year high — while appeal judges struck down the speed-limit signs themselves.",
+      "sub": "More enforcement of laws already at record use, while the legal foundation of the busiest online-insult statute waits on a Federal Court appeal.",
+      "sources": [
+        "Editorial analogy. Mirrors the verified findings: SUARAM five-year-high Sedition Act charges in 2025; CIJ +23% YoY; Court of Appeal 19 Aug 2025 struck 'offensive/annoy' in CMA s.233; Federal Court leave granted 13 Nov 2025, hearing pending."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Whether speech laws are too soft or too sharp is debated. What is not: charges keep rising, courts keep narrowing them, and the replacement bill has waited since 2012.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis across the verified findings: existing legal stack (Sedition Act + Penal Code 298A + CMA s.233), 5-year-high SUARAM finding (April 2025), CIJ +23% YoY tally, Court of Appeal s.233 ruling (Aug 2025) and pending Federal Court appeal, and the 12 July 2012 → April 2026 timeline on the National Harmony Bill."
+      ]
+    }
+  ],
+  "sources": "Malay Mail, The Star, Free Malaysia Today, The Edge Malaysia, Malaysiakini, NST, UMNO Online (party organ), BN Comms (coalition organ), Utusan Malaysia, Malaysia Tribune, MySinchew/Bernama (2012 archive), SUARAM, CIJ via Civicus Monitor, IFEX, Amnesty Malaysia, ARTICLE 19, Human Rights Watch World Report 2025, SUHAKAM, Malaysian Bar, Rajah & Tann Asia viewpoint, Baker McKenzie InsightPlus, Lexology — plus statutory primary text (Sedition Act 1948, CMA 1998, Penal Code Act 574, Federal Constitution Articles 3/8/10/152/153/181)",
+  "confidence": "High on the speech facts: date (10 May 2026), venue (Premieria Hotel KL), event (Musyawarah Nasional, themed 'Malay Unease: What Is the Solution?'), and Zahid's framing — covered consistently by Malay Mail, The Star, FMT, The Edge, Malaysiakini, UMNO Online and BN Comms. High on the statutory text (AGC consolidated statutes are primary). High on the Court of Appeal ruling: date (19 August 2025), the specific words struck ('offensive' and 'annoy' in s.233(1)(a)), the constitutional basis (Articles 8 and 10), and the Federal Court grant of leave to appeal on 13 November 2025 — all confirmed across Amnesty, Rajah & Tann, Baker McKenzie, The Star and Malay Mail. High on the CIJ figure (233 vs 189, +23.28%, calendar year 2025 vs 2024) — direct numerical claim cited in Civicus Monitor. Medium on the SUARAM 'five-year high' qualitative claim — the SUARAM Malaysia Human Rights Report 2025 Overview is cited via secondary summaries (Civicus, IFEX, Amnesty); the precise integer for 2025 Sedition Act charges is not in the indexed summary, so the card uses the qualitative 'five-year high' framing and does not invent a count. Medium on the '14 years' framing — 12 July 2012 (Najib's announcement) to April 2026 (cabinet revisits SKRN) is an exact 14-year arithmetic; what is editorial is the choice to call this the same bill (the Bar Council framework of three bills slightly complicates the count, addressed in source_notes).",
+  "lenses_used": ["Legal", "Rights", "Governance"],
+  "lenses_applicable_but_unused": ["Political", "Historical", "Rights", "Critical"],
+  "needs_verification": [
+    "The precise integer count for Sedition Act charges in 2025 vs 2020-2024 from the SUARAM Malaysia Human Rights Report 2025 — Stage 3 should pull the report PDF directly (SUARAM site) and confirm the 'five-year high' framing and the year-by-year counts.",
+    "Whether the CIJ '233 cases in 2025' figure aggregates Sedition Act + CMA s.233 + Penal Code 298/298A or only a subset — Stage 3 should pull the underlying CIJ tally to confirm scope. Card 3 says 'expression-law cases' to avoid overclaiming on which laws are counted.",
+    "Whether the National Harmony & Reconciliation Bill cabinet draft (April 2026) is the same instrument as the Bar Council's three-bill framework, or a separate ministry draft — Stage 3 should confirm what document the cabinet is actually 'studying' per Unity Minister Aaron Dagang's statement.",
+    "Whether the Federal Court Heidy Quah appeal has had any procedural hearing or case-management date set between 13 Nov 2025 and 13 May 2026 — Stage 3 should check the Federal Court e-court schedule or current news.",
+    "Whether any public Conference of Rulers / Keeper of the Rulers' Seal statement has been issued in response to the 10 May 2026 speech — Stage 3 should check istana websites and Bernama royal-decree coverage."
+  ],
+  "source_notes": "On the 'three statutes' framing in Card 2: we cite Sedition Act s.3(1)(f), Penal Code s.298A, and CMA s.233 as the principal vehicles, noting that Penal Code 295 (defiling place of worship) and 298 (wounding religious feelings) are also operative but lower-penalty and less frequently used for online-insult cases — the card stays clean by leading with the three highest-profile statutes. On the SUARAM 'five-year high' framing: the summary we have access to (Civicus, IFEX, Amnesty cross-references) consistently uses the qualitative 'five-year high' phrasing without an integer count for 2025; we do not invent a count. On the 14-year framing: from 12 July 2012 (Najib's National Harmony Act announcement) to April 2026 (Unity Ministry confirmation that cabinet is again studying the SKRN bill) is 13 years 9 months — we round to '14 years.' The Bar Council's three-bill framework slightly complicates the 'same bill' framing because the Bar's proposals (Harmony & Reconciliation Bill, Harmony & Reconciliation Commission Bill, Racial & Religious Hate Crimes Bill) are technically distinct from the SKRN bill the cabinet is reviewing; we describe both factually and let the reader judge whether the 14-year delay is on the 'same' bill. On Zahid's exact words on 'firm, fair, wise': the phrasing appears in the Malay Mail and The Star coverage of the 10 May 2026 speech; the UMNO Online press release renders this as 'tegas, adil dan bijaksana' (literally 'firm, just/fair, wise'). We use the English render. On Anwar Ibrahim's position: as of brief date (13 May 2026), no public statement from the PM specifically endorsing or qualifying Zahid's call has been reported in the indexed coverage — we do not infer agreement, disagreement, or distance. On Hadi Awang's 11 May 'DNA of betrayal' response: we do not include this in the cards because it is a partisan attack on the messenger rather than engagement with the legal-policy question; if Stage 2 flags this as an omission for balance, Stage 6 can decide whether to add a brief reference.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert that more enforcement is wrong, or that Zahid's call is wrong, or that any specific case (Ampang azan, Koran desecration, the 'Allah socks' arrest) was wrongly charged. We do NOT assert the Federal Court will rule any particular way on the Heidy Quah appeal. We do NOT speak for the Rulers or characterise their preferences. We do NOT characterise the substance of any allegedly insulting speech.",
+    "underclaim_check": "We do not soften the verified findings. The Court of Appeal DID strike 'offensive' and 'annoy' from s.233 on 19 Aug 2025 (binding precedent until reversed). SUARAM DID document a five-year high. CIJ DID count 233 cases in 2025 vs 189 in 2024 (+23.28%). The National Harmony Act WAS announced in July 2012 by Najib. None of these are softened to 'critics say' or 'reportedly.'",
+    "misleading_framing_check": "Hook leads with Zahid's actual call (factual reporting of what he said). Card 2 establishes the existing legal stack BEFORE Card 3 introduces the enforcement numbers — the sequence prevents the reader from forming a 'there is no law' misimpression. Card 4 explicitly states the Federal Court appeal is pending, so the s.233 ruling is not framed as final. Reframe and view both acknowledge the legitimate policy question (whether speech needs limits) before pivoting to the gap (the proposed replacement). Anwar's silence and Hadi's partisan response are both flagged in source_notes for Stage 6 to weigh.",
+    "unverified_detail_check": "Every specific in the cards traces to a primary or near-primary source. Date 10 May 2026, venue Premieria Hotel, event Musyawarah Nasional — multiple outlets. Date 19 Aug 2025, Court of Appeal, Articles 8 and 10 — Amnesty + R&T + Baker McKenzie. Date 13 Nov 2025, Federal Court leave grant — The Star + Malay Mail. CIJ 233 vs 189 — Civicus Monitor citing CIJ. Penalty figures (RM50,000, 2–5 years) — from statutory text. 12 July 2012 promise — MySinchew/Bernama archive.",
+    "3R_special_caution": "Religion: We do not characterise Islam, Muslim views, or the substance of any allegedly insulting speech. We do not name specific cases (Ampang azan, Koran desecration, 'Allah socks') because naming amplifies the alleged speech and is not necessary to the legal-mechanism story. Race: We do not treat 'Malay' sentiment as monolith; we report Zahid spoke at a forum themed 'Malay Unease' without endorsing or dismissing the framing. Royalty: We do NOT characterise what the Rulers think, want, or have said. The only royal references are statutory (Article 181, Sedition Act s.3(1)(f) protects Article 181) — both matters of public legal record. No Conference of Rulers statement on this speech exists in our dataset.",
+    "process_not_people_check": "All sharp claims target the structural mechanic (existing statutes, enforcement trend, court ruling, bill in draft) or institutions (Sedition Act, CMA s.233, Penal Code 298A, Court of Appeal, Federal Court, cabinet, Unity Ministry, SUARAM, CIJ). Zahid is named for what he said, in his official capacity as DPM. No person — including Zahid, Najib, Anwar, Hadi, Heidy Quah, or any defendant in a religious-insult case — is characterised as bad-faith. Heidy Quah is named only as the appellant in the binding court ruling.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent ('14 years on, still in cabinet draft' suggests systemic delay, not individual villainy). Not sadness, not anger-at-people. The reframe and view direct energy toward the structural question — why is the replacement framework so slow to arrive when both the enforcement trend and the courts are signalling that the existing one is stretched?"
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Strong: 10 May 2026 speech facts verified across 5+ outlets including the UMNO/BN coalition party organ (Zahid's own framing in his own words). Court of Appeal Heidy Quah ruling verified across rights bodies (Amnesty) + legal commentary (R&T, Baker McKenzie) + court news (The Star, Malay Mail). Federal Court leave-to-appeal date verified across two independent outlets. CIJ 233-vs-189 figure cited with full numerator/denominator/percentage and year. Statutory citations to AGC consolidated text. Slightly capped because: (a) the SUARAM 'five-year high' is sourced via secondary summaries rather than the SUARAM PDF directly — Stage 3 should pull the report; (b) Zahid's exact direct quotes (the Malay/English text he actually said about 'firm, fair, wise') are reconstructed from outlet paraphrases rather than verified against the UMNO Online press release transcript — Stage 3 should reconcile; (c) the 12 July 2012 Najib announcement is referenced through a MySinchew/Bernama archive — Stage 3 should ideally pull a primary Bernama or Hansard record."
+}
