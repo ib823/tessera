@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 2c — Bias Audit (Gemini, third pass on v3)",
+    "slug": "zahid-insults-firm-action-vs-existing-laws",
+    "issue_id": "1980",
+    "captured_at": "2026-05-14",
+    "tool": "Gemini browser response, third run (on v3 prompt)",
+    "note": "Stage 2c ran on the v3 Stage 1 JSON. Raised bias_score from Stage 2a's 35 to 75 — primarily reflecting the analogy and the omission of substantive 3R triggers Zahid cited. Stage 2c's three UNVERIFIED_DETAIL flags on the CMA RM500K figure, the Sedition +84% and the CIJ 42-individuals breakdown reflect Stage 2c's own search limits, not necessarily that the figures are wrong — Stage 3 (ChatGPT) verified the RM500K against Act A1743 directly and confirmed 233/189 from CIJ's primary press release; the 36/19 split was found in FMT/Daily Express secondary citing CIJ but Stage 3 could not locate it in CIJ's primary press statement."
+  },
+  "bias_score": 75,
+  "political_lean_estimate": -0.6,
+  "ethnic_framing_estimate": 0.3,
+  "religious_sensitivity_estimate": -0.5,
+  "narrative_framing_estimate": -0.7,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "Like demanding harsher speed laws right after Parliament already raised fines 10x — and the apex court told police they can only ticket repeat reckless drivers.", "why_biased": "Mocks and diminishes a government leader's policy statement using a disparaging analogy.", "fix": "Remove the editorial analogy. Let juxtaposition speak for itself."}],
+  "racial_flags": [{"quote": "DPM Ahmad Zahid called for 'firm, fair, wise' action against insults to Islam and the Malay Rulers", "why_biased": "Strips away specific examples Zahid cited (halal jokes, insults to the Sultan of Selangor), making concerns appear baseless.", "fix": "Include brief mention of specific controversies cited as catalyst."}],
+  "religious_flags": [{"quote": "The laws he wants reinforced — Sedition Act, CMA s.233, Penal Code 298A — are already on the books.", "why_biased": "Dismisses religious anxieties as 'already handled' by pointing to existing statutes.", "fix": "Acknowledge context of recent religious provocations rather than process-only dismissal."}],
+  "cardinal_sin_flags": [
+    {"sin": "UNVERIFIED_DETAIL", "quote": "CMA s.233 — which Parliament strengthened to RM500,000... 10x penalty jump.", "why": "Could not independently verify RM500,000.", "fix": "Verify or remove exact figure.", "t4a_resolution": "Stage 3 VERIFIED RM500K against Act A1743 s.91. Keep."},
+    {"sin": "UNVERIFIED_DETAIL", "quote": "Sedition Act charges jumped 84% in 2025 — 36 cases, up from 19 in 2024", "why": "Could not independently verify exact statistics.", "fix": "Cite verified statistics or remove.", "t4a_resolution": "Stage 3 VERIFIED 233/189 from CIJ primary press release but could not confirm 36/19 from CIJ primary; FMT 10 Dec 2025 + Daily Express + The Star focus piece all cite CIJ. Soften attribution to 'CIJ said' rather than 'CIJ Report logged'."},
+    {"sin": "UNVERIFIED_DETAIL", "quote": "42 individuals investigated; 55% were ordinary netizens", "why": "Could not independently source CIJ report data.", "fix": "Remove or substitute.", "t4a_resolution": "Stage 3 same finding. Demographic breakdown should be attributed to The Star's report citing CIJ, or dropped."},
+    {"sin": "MISLEADING_FRAMING", "quote": "Like demanding harsher speed laws right after Parliament already raised fines 10x — and the apex court told police they can only ticket repeat reckless drivers.", "why": "Editorialised, ignores qualitative differences between traffic and religious/royal provocations.", "fix": "Delete or restructure.", "t4a_resolution": "Stage 3 also flags the 'repeat reckless drivers' clause as overclaim of the FC ruling. Stage 6 will rewrite the analogy."}
+  ],
+  "omission_flags": [
+    "The analysis entirely omits the specific incidents Zahid Hamidi cited in his 10 May 2026 speech (such as the 'Allah' word issue, halal jokes, and insults to the Selangor Sultan). Omitting the catalyst makes his call for firmer laws appear unprompted."
+  ],
+  "evasion_flags": [
+    "The analysis evades discussing the substantive nature of the 3R insults, hiding behind a 'process' argument to avoid acknowledging whether current laws are effectively deterring the specific behaviors Zahid highlighted."
+  ],
+  "overall_assessment": "The analysis maps the legal timeline well but suffers from omission and framing bias. By stripping out the specific provocations Zahid cited, his policy call is framed in a vacuum. The 'speeding ticket' analogy compounds this. Several statistical claims need primary-source confirmation."
+}
