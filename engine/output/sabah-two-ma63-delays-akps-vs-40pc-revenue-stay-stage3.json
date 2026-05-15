@@ -1,0 +1,225 @@
+{
+  "input_file": "",
+  "factual_accuracy_score": 74,
+  "source_diversity_estimate": 0.56,
+  "claims": [
+    {
+      "claim": "T4A Radar accumulated 7 clustered events between 6 April and 15 May 2026 across Sabah/MA63 streams; silence_score 0.67-0.97 across the cluster, news_mentions 13-54, social_mentions 12-26.",
+      "status": "UNVERIFIED",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 1.0,
+      "source": "No public primary source found. This appears to be internal platform telemetry rather than an externally verifiable public fact.",
+      "correction": "Keep this as internal provenance only. Do not present it as a public factual claim unless the underlying dataset or methodology is disclosed.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "On 13 May 2026, Sabah deferred the federal border agency (AKPS) rollout citing MA63 immigration autonomy.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.03,
+      "m_unknown": 0.07,
+      "source": "Official Sabah Chief Minister press statement, 13 May 2026: https://cm.sabah.gov.my/siaran-media/7017",
+      "correction": "Accurate. The official statement says the Sabah State Government decided to defer the policy and implementation of AKPS in Sabah until assurances are obtained that there will be no erosion of Sabah's special rights and autonomous powers over immigration.",
+      "stale_check": "No later contradictory official source was found within the checked period."
+    },
+    {
+      "claim": "On 6 April 2026, the Court of Appeal granted Putrajaya a stay on the High Court order for Sabah's 40% revenue review.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.03,
+      "m_unknown": 0.07,
+      "source": "Bernama, 6 April 2026: https://www.bernama.com/en/news.php?id=2541421",
+      "correction": "Accurate. Bernama reported that the Court of Appeal allowed the Federal Government's application to stay the High Court order on review of calculation and payment of Sabah's Special Grant entitlement pending appeal.",
+      "stale_check": "No later contradictory source was found."
+    },
+    {
+      "claim": "Both delays invoke the same 1963 agreement.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.3,
+      "source": "Sabah CM press statement, 13 May 2026: https://cm.sabah.gov.my/siaran-media/7017; Federal Constitution Articles 112C and 112D text: https://www.sprm.gov.my/admin/files/sprm/assets/pdf/penguatkuasaan/perlembagaan-persekutuan-bi.pdf; Sabah Law Society judgment summary: https://www.elaw.my/JE/01/JE_2025_46.html",
+      "correction": "Rephrase to: 'Both disputes sit within MA63-linked constitutional arrangements, but the AKPS deferment expressly cites MA63 immigration autonomy, while the Court of Appeal stay was a procedural appellate stay in a case concerning Article 112C/112D revenue rights.' The evidence does not show that the Court of Appeal itself invoked MA63 as the basis for the stay.",
+      "stale_check": "No later change found."
+    },
+    {
+      "claim": "6 April 2026 to 13 May 2026 = 37 days; 'five weeks' is editorial rounding.",
+      "status": "VERIFIED",
+      "m_true": 0.98,
+      "m_false": 0.01,
+      "m_unknown": 0.01,
+      "source": "Calendar arithmetic using the two reported dates.",
+      "correction": "Accurate. 37 days is 5 weeks and 2 days, so '5 weeks earlier' is acceptable editorial rounding.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "The AGC said the formula itself was 'untouched'.",
+      "status": "VERIFIED",
+      "m_true": 0.72,
+      "m_false": 0.08,
+      "m_unknown": 0.2,
+      "source": "Malay Mail, 6 April 2026; The Edge Malaysia, 6 April 2026 (node/798778).",
+      "correction": "Substantively accurate, but the exact word 'untouched' appears to be a newsroom headline formulation. The more directly reported AGC wording is that the appeal was not against the 40% formula itself and did not cover the High Court findings on the 40% entitlement under Article 112C.",
+      "stale_check": "No direct AGC press release was found in the search results."
+    },
+    {
+      "claim": "Judge Mohamed Zaini Mazlan said paying before appeal would create a 'fait accompli'.",
+      "status": "VERIFIED",
+      "m_true": 0.68,
+      "m_false": 0.07,
+      "m_unknown": 0.25,
+      "source": "The Star, 6 April 2026; Sabah Law Society response reported by The Star, 6 April 2026.",
+      "correction": "Likely accurate, but still not fully primary. The Court of Appeal grounds or transcript were not located.",
+      "stale_check": "No later correction found."
+    },
+    {
+      "claim": "The federal government accepts the 40% entitlement but disputes the calculation.",
+      "status": "VERIFIED",
+      "m_true": 0.78,
+      "m_false": 0.05,
+      "m_unknown": 0.17,
+      "source": "Bernama, Malay Mail, The Edge Malaysia (6 April 2026).",
+      "correction": "Accurate in broad terms. Add caveat that AGC also said the appeal relates to constitutional interpretation and findings of abuse of power and breach of constitutional obligations, not merely arithmetic calculation.",
+      "stale_check": "No later contradictory source was found."
+    },
+    {
+      "claim": "On 13 May 2026 Sabah deferred the AKPS rollout, citing clashes between the AKPS Act 2024 and the Immigration Act 1959/63.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.05,
+      "m_unknown": 0.1,
+      "source": "Official Sabah Chief Minister press statement, 13 May 2026.",
+      "correction": "Accurate as a statement of Sabah Government's stated position.",
+      "stale_check": "No later official reversal found."
+    },
+    {
+      "claim": "CM Hajiji Noor said Sabah's immigration autonomy under MA63 is 'non-negotiable'.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.03,
+      "m_unknown": 0.07,
+      "source": "Official Sabah Chief Minister press statement, 13 May 2026.",
+      "correction": "Accurate as reported wording.",
+      "stale_check": "No later contradictory source found."
+    },
+    {
+      "claim": "The state would only have indirect oversight under Section 6(3) of the AKPS Act.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.08,
+      "m_unknown": 0.27,
+      "source": "Official Sabah Chief Minister press statement, 13 May 2026; Borneo Post quoting SLS president Mohamed Nazim Maduarin, 14 May 2026.",
+      "correction": "The claim is verified as Sabah Government and SLS characterisation. Direct statutory text of Act 860 Section 6(3) from AGC was not retrieved.",
+      "stale_check": "No later statutory clarification found."
+    },
+    {
+      "claim": "Malaysian Border Control and Protection Agency Act 2024 (Act 860), Section 6(3) - state oversight of AKPS via the state immigration director.",
+      "status": "UNVERIFIED",
+      "m_true": 0.55,
+      "m_false": 0.05,
+      "m_unknown": 0.4,
+      "source": "Official Sabah CM statement and SLS reporting support the characterisation, but the direct AGC consolidated statutory text of Act 860 Section 6(3) was not located in the accessible search results.",
+      "correction": "Keep as 'Sabah Government and SLS say Section 6(3) channels state authority through the Sabah Immigration Director' until the direct Act 860 text is checked.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "Immigration Act 1959/63 and Article IX provisions reserve immigration powers to Sabah and Sarawak under MA63.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.75,
+      "m_unknown": 0.1,
+      "source": "Agreement Relating to Malaysia text hosted by Sabah AGC: https://sagc.sabah.gov.my/sites/default/files/law/AgreementRelatingToMalaysia.pdf",
+      "correction": "Article IX of the Agreement Relating to Malaysia concerns Common Market and financial arrangements with Singapore, not Sabah/Sarawak immigration powers. Immigration arrangements appear in the Immigration Act 1963 provisions and in MA63 Article V/Annex-related materials. Replace 'Article IX' with the correct legal basis after checking the exact provision intended.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "Within 48 hours the Sabah Law Society, the state immigration officers' union, and ex-CM Salleh Said Keruak all backed the AKPS deferral.",
+      "status": "VERIFIED",
+      "m_true": 0.82,
+      "m_false": 0.05,
+      "m_unknown": 0.13,
+      "source": "Borneo Post (SLS, 14 May), Borneo Post (KPPIS, 14 May), Jesselton Times (Salleh, 14 May).",
+      "correction": "Accurate.",
+      "stale_check": "No later contradiction found."
+    },
+    {
+      "claim": "SLS president Mohamed Nazim called it 'legal foresight'. Salleh called it 'prudent and justified'.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.04,
+      "m_unknown": 0.11,
+      "source": "Borneo Post, 14 May 2026; Jesselton Times, 14 May 2026.",
+      "correction": "Accurate.",
+      "stale_check": "No later correction found."
+    },
+    {
+      "claim": "When Putrajaya pauses a Sabah court order, the Sabah Law Society calls it 'procedural'.",
+      "status": "VERIFIED",
+      "m_true": 0.82,
+      "m_false": 0.05,
+      "m_unknown": 0.13,
+      "source": "The Star and NST, 6 April 2026.",
+      "correction": "Accurate.",
+      "stale_check": "No later correction found."
+    },
+    {
+      "claim": "When Sabah pauses a Putrajaya rollout, federal voices call it 'erosion'.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.75,
+      "m_unknown": 0.15,
+      "source": "Borneo Post on Warisan reps, 13 May 2026; official Sabah CM statement, 13 May 2026.",
+      "correction": "The 'erosion' framing was used by Sabah-side actors, including the Sabah Government and Warisan representatives, not by federal voices. Replace with: 'When Sabah pauses a federal rollout, Sabah-side actors frame it as preventing erosion of state powers.'",
+      "stale_check": "A search found no indexed Federal Government or Home Ministry public response to the AKPS deferment between 13 and 15 May 2026."
+    },
+    {
+      "claim": "Both moves are within process.",
+      "status": "MISLEADING",
+      "m_true": 0.5,
+      "m_false": 0.1,
+      "m_unknown": 0.4,
+      "source": "Court stay verified by Bernama; Sabah deferment verified by official CM statement.",
+      "correction": "The court stay is clearly within appellate procedure. Sabah's deferment is an official state policy/administrative decision, but whether it is legally unassailable or fully 'within process' has not been independently adjudicated. Rephrase to: 'Both are procedural or administrative pauses taken through formal institutions.'",
+      "stale_check": "No litigation outcome on the AKPS deferment was found."
+    },
+    {
+      "claim": "The High Court ruled for Sabah on 17 Oct 2025; payment is frozen on appeal.",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.05,
+      "m_unknown": 0.15,
+      "source": "Bernama, 6 April 2026; eLaw case report for Sabah Law Society v Government of the Federation of Malaysia & Anor: https://www.elaw.my/JE/01/JE_2025_46.html",
+      "correction": "Substantively accurate. For precision, distinguish the reported 17 October 2025 court ruling from the eLaw reported judgment date of 7 November 2025 (likely oral ruling vs written grounds).",
+      "stale_check": "No later appeal outcome found."
+    },
+    {
+      "claim": "The AKPS rollout is frozen pending a joint legal review.",
+      "status": "UNVERIFIED",
+      "m_true": 0.35,
+      "m_false": 0.15,
+      "m_unknown": 0.5,
+      "source": "Official Sabah CM statement; Jesselton Times.",
+      "correction": "The official CM statement says Sabah deferred AKPS until assurances are obtained. The phrase 'joint legal review' appears in Jesselton Times framing, not in the official CM statement retrieved. Rephrase to: 'AKPS implementation is deferred pending assurances and legal/operational clarification.'",
+      "stale_check": "No official joint-review terms of reference were found."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "MISLEADING_FRAMING", "claim": "Both delays invoke the same 1963 agreement.", "why": "The AKPS deferment expressly invokes MA63 immigration autonomy, but the Court of Appeal stay is a procedural stay in a constitutional revenue case. The available sources do not show that the appellate court's stay reasoning itself invoked MA63.", "primary_source": "Sabah CM press statement, 13 May 2026; Bernama Court of Appeal report, 6 April 2026."},
+    {"sin": "INCORRECT", "claim": "When Sabah pauses a Putrajaya rollout, federal voices call it 'erosion'.", "why": "The sourced 'erosion' language is from Sabah-side actors (Sabah Government, Warisan, KPPIS, SLS), not from federal voices. This reverses the attribution and creates a false labelling-asymmetry contrast.", "primary_source": "Sabah CM press statement, 13 May 2026; Borneo Post on Warisan reps, 13 May 2026."},
+    {"sin": "UNVERIFIED_DETAIL", "claim": "Malaysian Border Control and Protection Agency Act 2024 (Act 860), Section 6(3) - state oversight of AKPS via the state immigration director; statutory framing per AGC consolidated text.", "why": "The AGC consolidated Act 860 text was not retrieved.", "primary_source": "Sabah CM press statement, 13 May 2026."},
+    {"sin": "UNVERIFIED_DETAIL", "claim": "Immigration Act 1959/63 (Act 155) and Article IX provisions reserving immigration powers to Sabah and Sarawak under MA63.", "why": "Article IX of the Agreement Relating to Malaysia concerns common market and financial arrangements with Singapore, not immigration.", "primary_source": "Agreement Relating to Malaysia hosted by Sabah AGC."},
+    {"sin": "OVERCLAIM", "claim": "Both moves are within process.", "why": "Sabah's AKPS deferment is an official state decision, but calling it fully 'within process' as a legal conclusion requires more than the sources reviewed.", "primary_source": "Bernama, 6 April 2026; Sabah CM press statement, 13 May 2026."},
+    {"sin": "UNVERIFIED_DETAIL", "claim": "The AKPS rollout is frozen pending a joint legal review.", "why": "The 'joint legal review' phrase appears in media/commentary framing.", "primary_source": "Sabah CM press statement, 13 May 2026."}
+  ],
+  "omitted_facts": [
+    "The 40% entitlement is not 40% of all federal revenue from Sabah. The constitutional formulation concerns two-fifths of the amount by which net revenue derived by the Federation from Sabah exceeds the net revenue that would have been derived in 1963, with relevant deductions.",
+    "The AGC clarification did not only say the formula was untouched. It also said the appeal concerns constitutional interpretation and findings that both Federal and Sabah Governments had abused powers and breached constitutional obligations since 1974.",
+    "The High Court judgment summary says no review took place in 1974 and no review had ever taken place for the 48 'Lost Years' from 1974 to 2021, and that the entitlement remained due and payable for each of those years.",
+    "Date distinction: media reports cite the High Court ruling on 17 October 2025; the eLaw report lists the case judgment date as 7 November 2025 (oral ruling vs written grounds).",
+    "The MA63 Article IX citation is wrong. Article IX of the Agreement Relating to Malaysia concerns common market/financial arrangements with Singapore.",
+    "No indexed Federal Government or Home Ministry public response to Sabah's 13 May 2026 AKPS deferment was found, but the Home Minister had made pre-deferral public statements on AKPS recruitment and security operations in early May (The Star, 5 May and 8 May 2026)."
+  ],
+  "source_assessment": "The analysis uses a relatively broad media range (Bernama, The Star, Malay Mail, The Edge, FMT, Borneo Post, NST, Daily Express, Jesselton Times) plus legal/statutory references. However, the source balance leans Sabah-side and media-heavy. Stronger primary grounding was found for the AKPS deferment through the official Sabah CM statement and for the 40% entitlement through the Federal Constitution and the eLaw-reported High Court judgment. Key gaps remain: no direct AGC press release, no Court of Appeal grounds, Act 860 s.6(3) not directly retrieved from AGC, and no direct Federal Government/Home Ministry response to Sabah's AKPS deferment.",
+  "overall_assessment": "The core event facts are mostly reliable: Sabah did defer AKPS implementation on 13 May 2026, and the Court of Appeal did grant the Federal Government a stay on 6 April 2026. The main factual weakness is not the event chronology but the framing layer. The article overreaches when it says both delays invoke the same 1963 agreement, misattributes the 'erosion' framing to 'federal voices', cites the wrong MA63 Article IX, and presents 'joint legal review' and 'within process' more firmly than the retrieved primary sources support."
+}
