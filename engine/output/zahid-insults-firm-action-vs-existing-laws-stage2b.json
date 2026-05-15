@@ -1,0 +1,45 @@
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 2b — Bias Audit (Gemini, second pass)",
+    "slug": "zahid-insults-firm-action-vs-existing-laws",
+    "issue_id": "1980",
+    "captured_at": "2026-05-14",
+    "tool": "Gemini browser response, second run",
+    "note": "Stage 2b ran on the v1 Stage 1 JSON (the version before Stage 2a's corrections were applied). It correctly flagged a material omission — the Communications and Multimedia (Amendment) Act 2025 (in force 11 Feb 2025, RM50K → RM500K, 'offensive' → 'grossly offensive'). This correction was layered on top of Stage 2a's correction to produce Stage 1 v3. Stage 2b's 'RM1 million' figure is partly wrong: RM1M applies only to commercial-purpose obscene content per the same Amendment Act; the general s.233(1) ceiling is RM500K. Stage 2b's '187 vs 189' nit is reconciled: 187 = Jan-Nov 2024 partial CIJ tally (Malay Mail, 14 Dec 2024); 189 = full-year 2024 figure cited in CIJ's Dec 2025 FoE Report — we keep 189. Stage 2b was unaware of the 6 Feb 2026 Federal Court ruling (it speaks of 'while the pre-amendment version of s.233 is under appeal' as if the appeal had not been decided); Stage 2a covered that and the apex-court correction is reflected in v2 → v3."
+  },
+  "bias_score": 65,
+  "political_lean_estimate": -0.6,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": -0.5,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "The analysis completely omits the February 2025 amendments to the CMA, which replaced the word 'offensive' with 'grossly offensive' and increased the maximum penalty to RM1 million. Ignoring this active legislation falsely props up the narrative that the law is in 'legal limbo'."
+  ],
+  "evasion_flags": [
+    "Dodges the existence of the February 2025 CMA amendments to maintain the narrative that the government relies on outdated or suspended laws."
+  ],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {"sin": "UNVERIFIED_DETAIL", "quote": "CIJ's 2024 base was 189 cases.", "why": "The EWMI report summarizing the CIJ data states there were 187 cases in 2024, not 189.", "fix": "Correct the figure to 187.", "t4a_resolution": "187 is a Jan-Nov 2024 partial figure; 189 is the full-year 2024 figure cited in CIJ's Dec 2025 FoE Report. Keep 189."},
+    {"sin": "MISLEADING_FRAMING", "quote": "The main online-insult statute sits in legal limbo.", "why": "This is factually misleading. While the pre-amendment version of s.233 is under appeal, the February 2025 amendment replacing 'offensive' with 'grossly offensive' is actively in force.", "fix": "Acknowledge the February 2025 CMA amendments and clarify that only the pre-amendment language is under appeal.", "t4a_resolution": "APPLIED in v3. Card 1 now references the Feb 2025 amendment; Card 3 clarifies the FC ruling was on the pre-amendment text."},
+    {"sin": "OVERCLAIM", "quote": "while appeal judges struck down the speed-limit signs themselves.", "why": "The Court of Appeal only struck down two words ('offensive' and 'annoy') from one subsection of the CMA. The rest of the statute, including prohibitions on obscene, menacing, and false communications, remains intact. The analogy exaggerates the ruling's scope.", "fix": "Soften the analogy to reflect that only specific clauses, not the entire law, were invalidated.", "t4a_resolution": "Analogy rewritten in v2 (Stage 2a correction) and again in v3 to reflect the Feb 2025 amendment + Feb 2026 narrowing. The misleading 'struck down the signs' frame is gone."}
+  ],
+  "verification_log": [
+    {"claim": "On 10 May 2026 at the Musyawarah Nasional forum, DPM Ahmad Zahid called for 'firm, fair, wise' action...", "status": "VERIFIED", "primary_source": "Bernama, 'Insults Against Islam, Malay Rulers Must Be Handled Firmly - Ahmad Zahid', 10 May 2026"},
+    {"claim": "SUARAM had reported a month earlier that 2025 Sedition Act charges hit a five-year high.", "status": "VERIFIED", "primary_source": "EWMI summary of SUARAM 2024 Malaysia Human Rights Report (released April 10, 2025)"},
+    {"claim": "CIJ's 2024 base was 189 cases.", "status": "WRONG", "primary_source": "EWMI / Malay Mail, 14 Dec 2024 (187 was partial Jan-Nov tally)", "corrected_value": "187 cases (partial), 189 full-year per Dec 2025 CIJ report"},
+    {"claim": "On 19 August 2025 the Court of Appeal struck 'offensive' and 'annoy' from CMA s.233", "status": "VERIFIED", "primary_source": "Christopher & Lee Ong legal update on Heidy Quah Gaik Li v The Government of Malaysia"},
+    {"claim": "Federal Court granted the government leave to appeal on 13 November 2025", "status": "VERIFIED", "primary_source": "FMT, 'Govt granted leave to appeal in activist Heidy Quah's case', 13 Nov 2025"}
+  ],
+  "overall_assessment": "The analysis is sharply written but suffers from a fatal omission that creates a misleading framing. By focusing entirely on the August 2025 Court of Appeal ruling that struck down the old wording of CMA s.233, it falsely portrays the main online-insult statute as being in 'legal limbo'. It completely ignores the February 2025 parliamentary amendments that formally changed the wording to 'grossly offensive' and drastically increased penalties. This omission allows the analysis to unfairly claim the government is relying on a broken law, when Parliament already updated it. Furthermore, the CIJ 2024 base figure is inaccurate (187, not 189), and the speed-camera analogy overstates the scope of the appellate ruling. The piece leans too heavily into a civil-liberties narrative at the expense of complete statutory accuracy."
+}
