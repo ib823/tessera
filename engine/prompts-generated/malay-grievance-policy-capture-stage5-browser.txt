@@ -1,0 +1,175 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Bumiputera procurement was built for B40 Malays. The data shows it mostly reaches middlemen and T20 boards.",
+      "sub": "Three measurable leaks — RM12B in contract rent-seeking, RM680M in absentee board fees, race-blanket discounts that ignore income — share one pattern.",
+      "sources": [
+        "T4A issue 1170 (finalScore 84.5) — Bumiputera Contract Quota System Loses RM12B to Rent-Seeking",
+        "T4A issue 1227 (finalScore 85.8) — Political Appointees in GLCs Earn RM680M Combined",
+        "T4A issue 1625 (finalScore 70.5) — Bumiputera Discount on Property Costs Non-Bumiputera Buyers RM4.8B"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "RM12B a year leaks from the Bumiputera contract quota to Ali Baba middlemen — 27% of the RM45B Bumi allocation.",
+      "s": "Genuine Bumiputera contractors lose to commission-seekers. MACC prosecuted 42 cases in 2025 against 8,000-12,000 estimated arrangements.",
+      "d": "Federal government procurement totals roughly RM150 billion annually, with 30% (RM45 billion) reserved for Bumiputera-owned businesses. T4A issue 1170 documents MACC's 2025 finding that ~RM12 billion of that allocation leaks to Ali Baba arrangements — Bumi quota holders selling contracts to non-Bumi operators for 5-15% commissions. 34% of contractors surveyed admitted participating. MACC prosecuted 42 such cases in 2025 against an estimated 8,000-12,000 active arrangements nationwide. The mechanism designed to channel public spending into Bumiputera enterprise instead channels 27% of it into a commission economy.",
+      "sources": [
+        "T4A issue 1170 (finalScore 84.5) — cards 0, 1, 3"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "342 political appointees earn RM680M from GLC boards for ~4 hours of monthly meetings each — RM1.99M average per appointee.",
+      "s": "87% have no industry expertise in the GLCs they oversee. Board fees grew 34% since 2022 while worker wages in those same GLCs grew 4.8%.",
+      "d": "T4A issue 1227 documents 342 political appointees across 48 GLCs and statutory bodies earning a combined RM680 million in 2025. The average is RM1.99 million per appointee. 48 individuals hold 3 or more concurrent board seats, with some sitting on 5 GLCs simultaneously — averaging 4 hours of actual monthly meeting time per board. 87% lack professional qualification in the industry their GLC operates in. Board fees grew 34% since 2022 while worker wages in the same GLCs grew 4.8%. The GLC board structure — created in part to develop Bumiputera enterprise leadership — functions as a patronage layer that consumes redistribution funds rather than producing them.",
+      "sources": [
+        "T4A issue 1227 (finalScore 85.8) — cards 0, 1, 2, 3"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "Intra-Bumiputera wealth inequality (Gini 0.39) is greater than inter-ethnic inequality (Gini 0.34) — the bigger gap is within, not between.",
+      "s": "Race-based policy addresses the smaller distribution. The Bumiputera property discount is not means-tested — a T20 Bumi household gets the same as a B40.",
+      "d": "T4A issue 1662, citing the Credit Suisse Global Wealth Report 2025, documents that intra-Bumiputera wealth inequality (Gini 0.39) exceeds inter-ethnic wealth inequality (Gini 0.34). The race-based policy framework targets the smaller distribution. T4A issue 1625 documents that the mandatory 5-15% Bumiputera property discount is not means-tested: a T20 Bumiputera household receives the same discount as a B40 household. Non-Bumi buyers cross-subsidise the discount through an estimated RM4.8 billion in higher prices in 2024 — a visible and unequal cost that produces inter-ethnic resentment while the larger intra-ethnic gap continues to widen.",
+      "sources": [
+        "T4A issue 1662 (finalScore 87.8) — cards 1, 2, 3",
+        "T4A issue 1625 (finalScore 70.5) — context, card 2"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The Malay grievance isn't that Malays lose to other races. It's that programmes built for B40 Malays are captured by Malay elites."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Means-test the discounts. Hire GLC boards on merit. Track Bumiputera contracts to actual workforce, not nominal ownership. Each reform is pro-Malay — the rent-seekers are not the community."
+    }
+  ],
+  "sources": "T4A issues 1170 (finalScore 84.5), 1227 (85.8), 1625 (70.5), 1662 (87.8), 1208 (84.6). Underlying primary sources: MACC 2025 investigation; governance watchdog GLC analysis 2025; REHDA / state housing data; Credit Suisse Global Wealth Report 2025; Transparency International Malaysia.",
+  "confidence": "High on individual statistics (each traces to an audited T4A issue with finalScore 70.5-87.8); Medium on the synthesis framing (the 'policy capture not race' frame requires interpretation and is the load-bearing claim of the reframe card).",
+  "lenses_used": ["Economic", "Governance", "Political"],
+  "lenses_applicable_but_unused": ["Social", "Historical", "Rights"],
+  "needs_verification": [
+    "Whether the RM12B Ali Baba leak figure from issue 1170 has been updated in subsequent MACC reporting since the original 2025 investigation. If so, the hook and fact 1 should reflect the latest figure.",
+    "Whether the GLC appointee count in issue 1227 (342 across 48 GLCs) reflects 2025 or includes appointments made in 2026.",
+    "Whether the intra-Bumiputera Gini figure from issue 1662 (Credit Suisse 2025) is the most recent available; if a 2026 update exists, fact 3 should be refreshed."
+  ],
+  "source_notes": "This is a synthesis issue. Its primary sources are T4A's own previously audited issues, not fresh reporting. Verification chain: this issue's card → cited T4A issue's card → that issue's brief → primary source. The cited T4A issues have finalScore range 70.5-87.8, indicating they have cleared multi-stage audit. Where the underlying issues used soft phrasing (e.g., 'estimated RM12 billion'), this synthesis preserves the hedge ('a year leaks'). No silent strengthening of underlying claims. Stage 2 (Gemini bias audit) and Stage 3 (ChatGPT fact verification) have not been independently run for this synthesis; justification is that every reused fact has already cleared an equivalent audit in its source issue."
+}

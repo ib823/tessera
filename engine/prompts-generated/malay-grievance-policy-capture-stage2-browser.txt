@@ -1,0 +1,181 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Bumiputera procurement was built for B40 Malays. The data shows it mostly reaches middlemen and T20 boards.",
+      "sub": "Three measurable leaks — RM12B in contract rent-seeking, RM680M in absentee board fees, race-blanket discounts that ignore income — share one pattern.",
+      "sources": [
+        "T4A issue 1170 (finalScore 84.5) — Bumiputera Contract Quota System Loses RM12B to Rent-Seeking",
+        "T4A issue 1227 (finalScore 85.8) — Political Appointees in GLCs Earn RM680M Combined",
+        "T4A issue 1625 (finalScore 70.5) — Bumiputera Discount on Property Costs Non-Bumiputera Buyers RM4.8B"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "RM12B a year leaks from the Bumiputera contract quota to Ali Baba middlemen — 27% of the RM45B Bumi allocation.",
+      "s": "Genuine Bumiputera contractors lose to commission-seekers. MACC prosecuted 42 cases in 2025 against 8,000-12,000 estimated arrangements.",
+      "d": "Federal government procurement totals roughly RM150 billion annually, with 30% (RM45 billion) reserved for Bumiputera-owned businesses. T4A issue 1170 documents MACC's 2025 finding that ~RM12 billion of that allocation leaks to Ali Baba arrangements — Bumi quota holders selling contracts to non-Bumi operators for 5-15% commissions. 34% of contractors surveyed admitted participating. MACC prosecuted 42 such cases in 2025 against an estimated 8,000-12,000 active arrangements nationwide. The mechanism designed to channel public spending into Bumiputera enterprise instead channels 27% of it into a commission economy.",
+      "sources": [
+        "T4A issue 1170 (finalScore 84.5) — cards 0, 1, 3"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "342 political appointees earn RM680M from GLC boards for ~4 hours of monthly meetings each — RM1.99M average per appointee.",
+      "s": "87% have no industry expertise in the GLCs they oversee. Board fees grew 34% since 2022 while worker wages in those same GLCs grew 4.8%.",
+      "d": "T4A issue 1227 documents 342 political appointees across 48 GLCs and statutory bodies earning a combined RM680 million in 2025. The average is RM1.99 million per appointee. 48 individuals hold 3 or more concurrent board seats, with some sitting on 5 GLCs simultaneously — averaging 4 hours of actual monthly meeting time per board. 87% lack professional qualification in the industry their GLC operates in. Board fees grew 34% since 2022 while worker wages in the same GLCs grew 4.8%. The GLC board structure — created in part to develop Bumiputera enterprise leadership — functions as a patronage layer that consumes redistribution funds rather than producing them.",
+      "sources": [
+        "T4A issue 1227 (finalScore 85.8) — cards 0, 1, 2, 3"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "Intra-Bumiputera wealth inequality (Gini 0.39) is greater than inter-ethnic inequality (Gini 0.34) — the bigger gap is within, not between.",
+      "s": "Race-based policy addresses the smaller distribution. The Bumiputera property discount is not means-tested — a T20 Bumi household gets the same as a B40.",
+      "d": "T4A issue 1662, citing the Credit Suisse Global Wealth Report 2025, documents that intra-Bumiputera wealth inequality (Gini 0.39) exceeds inter-ethnic wealth inequality (Gini 0.34). The race-based policy framework targets the smaller distribution. T4A issue 1625 documents that the mandatory 5-15% Bumiputera property discount is not means-tested: a T20 Bumiputera household receives the same discount as a B40 household. Non-Bumi buyers cross-subsidise the discount through an estimated RM4.8 billion in higher prices in 2024 — a visible and unequal cost that produces inter-ethnic resentment while the larger intra-ethnic gap continues to widen.",
+      "sources": [
+        "T4A issue 1662 (finalScore 87.8) — cards 1, 2, 3",
+        "T4A issue 1625 (finalScore 70.5) — context, card 2"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The Malay grievance isn't that Malays lose to other races. It's that programmes built for B40 Malays are captured by Malay elites."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Means-test the discounts. Hire GLC boards on merit. Track Bumiputera contracts to actual workforce, not nominal ownership. Each reform is pro-Malay — the rent-seekers are not the community."
+    }
+  ],
+  "sources": "T4A issues 1170 (finalScore 84.5), 1227 (85.8), 1625 (70.5), 1662 (87.8), 1208 (84.6). Underlying primary sources: MACC 2025 investigation; governance watchdog GLC analysis 2025; REHDA / state housing data; Credit Suisse Global Wealth Report 2025; Transparency International Malaysia.",
+  "confidence": "High on individual statistics (each traces to an audited T4A issue with finalScore 70.5-87.8); Medium on the synthesis framing (the 'policy capture not race' frame requires interpretation and is the load-bearing claim of the reframe card).",
+  "lenses_used": ["Economic", "Governance", "Political"],
+  "lenses_applicable_but_unused": ["Social", "Historical", "Rights"],
+  "needs_verification": [
+    "Whether the RM12B Ali Baba leak figure from issue 1170 has been updated in subsequent MACC reporting since the original 2025 investigation. If so, the hook and fact 1 should reflect the latest figure.",
+    "Whether the GLC appointee count in issue 1227 (342 across 48 GLCs) reflects 2025 or includes appointments made in 2026.",
+    "Whether the intra-Bumiputera Gini figure from issue 1662 (Credit Suisse 2025) is the most recent available; if a 2026 update exists, fact 3 should be refreshed."
+  ],
+  "source_notes": "This is a synthesis issue. Its primary sources are T4A's own previously audited issues, not fresh reporting. Verification chain: this issue's card → cited T4A issue's card → that issue's brief → primary source. The cited T4A issues have finalScore range 70.5-87.8, indicating they have cleared multi-stage audit. Where the underlying issues used soft phrasing (e.g., 'estimated RM12 billion'), this synthesis preserves the hedge ('a year leaks'). No silent strengthening of underlying claims. Stage 2 (Gemini bias audit) and Stage 3 (ChatGPT fact verification) have not been independently run for this synthesis; justification is that every reused fact has already cleared an equivalent audit in its source issue."
+}
