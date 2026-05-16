@@ -32,8 +32,10 @@ CALENDAR_PATH = RADAR_DIR / "config" / "malaysia-calendar.json"
 OUTPUT_DIR = RADAR_DIR / "output"
 STATE_PATH = OUTPUT_DIR / "state.json"
 QUEUE_PATH = OUTPUT_DIR / "issue-queue.json"
+FOREIGN_EVENTS_PATH = OUTPUT_DIR / "foreign-events.json"
 LOG_DIR = OUTPUT_DIR / "logs"
 MODELS_DIR = OUTPUT_DIR / "models"
+FOREIGN_EVENTS_WINDOW_HOURS = 24
 
 
 def load_config():
@@ -237,6 +239,61 @@ def write_issue_queue(new_issues):
     log.info(f"{len(merged)} active issues, {new_count} new, {pruned} pruned")
 
 
+def _is_foreign_event(event: dict) -> bool:
+    """Return True for events sourced outside Malaysia's domestic discourse.
+
+    Foreign events feed the Malaysia-impact pass. Sources counted as foreign:
+    - GDELT articles tagged with scope == "malaysia_interest"
+    - News RSS feeds with region in {international, regional, bilateral}
+    """
+    meta = event.get("metadata", {}) or {}
+    platform = event.get("platform", "")
+    if platform == "gdelt" and meta.get("scope") == "malaysia_interest":
+        return True
+    if platform == "news" and meta.get("region") in ("international", "regional", "bilateral"):
+        return True
+    return False
+
+
+def persist_foreign_events(events):
+    """Append foreign events to a rolling 24-hour file for the impact pass.
+
+    Deduplicates by URL where present; falls back to text+timestamp otherwise.
+    Pruned to FOREIGN_EVENTS_WINDOW_HOURS by event timestamp.
+    """
+    log = logger.bind(component="foreign_events")
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    existing = []
+    if FOREIGN_EVENTS_PATH.exists():
+        try:
+            with open(FOREIGN_EVENTS_PATH) as f:
+                existing = json.load(f)
+                if not isinstance(existing, list):
+                    existing = []
+        except (json.JSONDecodeError, ValueError, OSError):
+            existing = []
+
+    seen_keys = set()
+    merged = []
+    for ev in existing + [e for e in events if _is_foreign_event(e)]:
+        url = (ev.get("metadata") or {}).get("url", "")
+        key = url or f"{ev.get('text', '')[:120]}|{ev.get('timestamp', '')}"
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        merged.append(ev)
+
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=FOREIGN_EVENTS_WINDOW_HOURS)).isoformat()
+    pruned = [e for e in merged if e.get("timestamp", "") >= cutoff]
+
+    with open(FOREIGN_EVENTS_PATH, "w") as f:
+        json.dump(pruned, f, indent=2, default=str)
+
+    log.info(f"Foreign events buffer: {len(pruned)} within {FOREIGN_EVENTS_WINDOW_HOURS}h "
+             f"({len(merged) - len(pruned)} pruned)")
+
+
 def write_health(sources, streams, events_count, issues_count):
     """Write health.json for monitoring."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -321,6 +378,14 @@ def run_cycle(sources, streams, fusion, config):
         except Exception as e:
             log.error(f"Source fetch failed: {e}")
     log.info(f"Fetched {len(events)} events")
+
+    # Step 1a: Persist foreign-channel events for the Malaysia-impact pass.
+    # Stored separately because state.json aggregates everything and loses
+    # the raw text the impact pass needs to reason about.
+    try:
+        persist_foreign_events(events)
+    except Exception as e:
+        log.error(f"Foreign-events persistence failed: {e}")
 
     # Step 1b: Register institutional events with silence detector
     sd = streams.get("silence_detector")

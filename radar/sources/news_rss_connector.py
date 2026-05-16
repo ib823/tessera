@@ -27,6 +27,7 @@ class NewsRSSConnector(BaseConnector):
             name = feed_cfg["name"]
             url = feed_cfg["url"]
             lang = feed_cfg.get("language", "english")
+            region = feed_cfg.get("region", "domestic")
 
             try:
                 parsed = feedparser.parse(url)
@@ -67,6 +68,7 @@ class NewsRSSConnector(BaseConnector):
                     source_name=name,
                     url=link,
                     title=title,
+                    region=region,
                 ))
 
         # Prune dedup set if too large

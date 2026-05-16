@@ -46,19 +46,76 @@ sources:
     enabled: true
     poll_interval_minutes: 15
     feeds:
-      # VERIFIED WORKING as of 2026-03-24
+      # === DOMESTIC (Malaysia) — VERIFIED WORKING as of 2026-03-24 ===
       - name: "Free Malaysia Today"
         url: "https://www.freemalaysiatoday.com/feed/"
         language: "english"
+        region: "domestic"
       - name: "The Star"
         url: "https://www.thestar.com.my/rss/News"
         language: "english"
+        region: "domestic"
       - name: "Malay Mail"
         url: "https://www.malaymail.com/feed/rss/malaysia"
         language: "english"
+        region: "domestic"
       # DEAD/BROKEN — removed: Malaysiakini (HTML), NST (404),
       # The Edge (HTML), Astro Awani (HTML), Berita Harian (404),
       # Utusan (broken XML), Sin Chew, Nanyang, Tamil Nesan
+
+      # === INTERNATIONAL — global signals relevant to Malaysia ===
+      # Added 2026-05-16. Feeds with parse errors are caught by the bozo
+      # check in news_rss_connector.py and skipped silently.
+      - name: "BBC World"
+        url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+        language: "english"
+        region: "international"
+      - name: "Al Jazeera English"
+        url: "https://www.aljazeera.com/xml/rss/all.xml"
+        language: "english"
+        region: "international"
+      - name: "The Diplomat"
+        url: "https://thediplomat.com/feed/"
+        language: "english"
+        region: "international"
+      - name: "NHK World"
+        url: "https://www3.nhk.or.jp/nhkworld/en/news/feed/v1/news-major.rss"
+        language: "english"
+        region: "international"
+      # === REGIONAL (Asia-Pacific) ===
+      - name: "Channel News Asia"
+        url: "https://www.channelnewsasia.com/rssfeeds/8395986"
+        language: "english"
+        region: "regional"
+      - name: "Nikkei Asia"
+        url: "https://asia.nikkei.com/rss/feed/nar"
+        language: "english"
+        region: "regional"
+      - name: "South China Morning Post"
+        url: "https://www.scmp.com/rss/91/feed"
+        language: "english"
+        region: "regional"
+      - name: "Caixin Global"
+        url: "https://www.caixinglobal.com/index.rss"
+        language: "english"
+        region: "regional"
+      # === BILATERAL — top trade-partner / diaspora native outlets ===
+      - name: "Jakarta Post"
+        url: "https://www.thejakartapost.com/rss"
+        language: "english"
+        region: "bilateral"
+      - name: "Bangkok Post"
+        url: "https://www.bangkokpost.com/rss/data/topstories.xml"
+        language: "english"
+        region: "bilateral"
+      - name: "The Hindu — International"
+        url: "https://www.thehindu.com/news/international/feeder/default.rss"
+        language: "english"
+        region: "bilateral"
+      - name: "Arab News"
+        url: "https://www.arabnews.com/rss.xml"
+        language: "english"
+        region: "bilateral"
   reddit_rss:
     enabled: true
     feeds:
@@ -80,7 +137,78 @@ sources:
   gdelt:
     enabled: true
     poll_interval_minutes: 30
-    country_filter: "MY"
+    # GDELT shifted 2026-05-16 from a Malaysia-domestic scan (sourcecountry:MY)
+    # to a global Malaysia-interest scan. Domestic coverage now comes from the
+    # MY-region news_rss feeds + reddit_rss. The domestic block remains here as
+    # an opt-in toggle for operators who want to re-enable GDELT-MY alongside.
+    # Events carry metadata.scope = "domestic" | "malaysia_interest".
+    domestic:
+      enabled: false
+      country: "MY"
+      maxrecords: 250
+      timespan: "60min"
+    malaysia_interest:
+      enabled: true
+      maxrecords: 250
+      timespan: "60min"
+      # GKG themes — global articles tagged with any of these are candidates.
+      # See https://blog.gdeltproject.org/ for full taxonomy. Conservative set
+      # chosen for high signal-to-noise on Malaysia-impact channels.
+      themes:
+        - "ECON_TRADE"
+        - "ECON_BOYCOTT"
+        - "ECON_INFLATION"
+        - "ECON_INTEREST_RATES"
+        - "ECON_MONOPOLY"
+        - "SANCTIONS"
+        - "ARMED_CONFLICT"
+        - "MILITARY_ATTACK"
+        - "MARITIME_INCIDENT"
+        - "WB_2455_COMMODITIES"
+        - "WB_2670_TAXATION"
+        - "GENERAL_GOVERNMENT"
+        - "POLITICAL_TURMOIL"
+      # Free-text keywords ORed into the query — Malaysia-adjacent geographies,
+      # sectors, and choke points. Acts as a recall filter on top of themes.
+      keywords:
+        - "Malaysia"
+        - "Indonesia"
+        - "Singapore"
+        - "ASEAN"
+        - "Strait of Malacca"
+        - "Strait of Hormuz"
+        - "South China Sea"
+        - "Taiwan Strait"
+        - "ringgit"
+        - "palm oil"
+        - "semiconductor"
+        - "Penang"
+        - "Petronas"
+        - "LNG"
+        - "rubber"
+        - "halal"
+        - "OPEC"
+        - "Rohingya"
+        - "haj"
+      # Source-country actor codes (ISO 3166-1 alpha-3). GDELT DOC API
+      # supports sourcecountry filter; we OR these with the keyword/theme
+      # query to capture stories *published in* these countries even if the
+      # GKG theme classifier missed them.
+      adjacent_actors:
+        - "MYS"
+        - "IDN"
+        - "SGP"
+        - "CHN"
+        - "IND"
+        - "USA"
+        - "SAU"
+        - "ISR"
+        - "PSE"
+        - "JPN"
+        - "THA"
+        - "VNM"
+        - "PHL"
+        - "AUS"
   google_trends:
     enabled: false   # Disable for now — pytrends rate limiting is aggressive
     poll_interval_minutes: 60
