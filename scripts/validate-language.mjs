@@ -145,37 +145,103 @@ function pass(msg) {
   if (verbose) console.log(`  ✓ ${msg}`);
 }
 
+// Context-aware exclusions for the weak-abstraction category. Each entry maps
+// a flagged phrase to a predicate that returns true when this *specific*
+// occurrence is actually a legitimate use rather than the anti-pattern. The
+// substring scan cannot tell e.g. the verb "addresses" from the noun in "IP
+// addresses", or the verb "considers" from the threshold idiom "considers
+// anything above X" — so we filter at the position level rather than blacklist
+// at the phrase level.
+const WEAK_EXCLUSIONS = {
+  addresses: (text, pos) => {
+    // Treat as noun (skip) when preceded within 2 words by a network-noun
+    // qualifier. "1,200 Malaysian IP addresses" → noun. "Article 12(4) addresses
+    // children's religious education" → verb (no qualifier match).
+    const before = text.slice(Math.max(0, pos - 40), pos).toLowerCase();
+    return /\b(ip|email|e-mail|physical|home|street|office|postal|mailing|web|url|server|mac)\b[^.]{0,15}$/i.test(before);
+  },
+  considers: (text, pos) => {
+    // Threshold-classification idiom: "considers anything above X", "considers
+    // X as Y", "considers more than Z". Verb-of-classification, not weak
+    // thinkpiece "considers".
+    const after = text.slice(pos + 'considers'.length, pos + 'considers'.length + 60).toLowerCase();
+    return /^\s*(anything\s+(above|below|over|under|more|less)|more\s+than|less\s+than|values?\s+(above|below|over|under)|.{1,30}\s+as\s+)/i.test(after);
+  },
+};
+
 function scanPhrases(issueId, field, text, phrases, category, formatMsg) {
   if (!text) return;
   const lower = text.toLowerCase();
   for (const phrase of phrases) {
-    if (lower.includes(phrase)) {
-      warn(issueId, field, category, formatMsg(phrase));
+    let pos = 0;
+    while (pos < lower.length) {
+      const idx = lower.indexOf(phrase, pos);
+      if (idx === -1) break;
+      const excluded = category === 'weak-abstraction' &&
+        WEAK_EXCLUSIONS[phrase] &&
+        WEAK_EXCLUSIONS[phrase](text, idx);
+      if (!excluded) {
+        warn(issueId, field, category, formatMsg(phrase));
+        break; // one warning per phrase per text, matches old behavior
+      }
+      pos = idx + phrase.length;
     }
   }
+}
+
+// Proper-noun guard for hyphenated compounds. "Anti-Corruption Plan" (both
+// halves Title-Cased and followed by another Title-Cased word) is part of an
+// official name (e.g., Malaysia's National Anti-Corruption Plan). Closing
+// the hyphen would rewrite a proper noun. The check is per-occurrence on the
+// original case-preserving text.
+function isProperNounAtPosition(text, idx, phrase) {
+  const occurrence = text.slice(idx, idx + phrase.length);
+  // Both halves of the compound must be capitalized for proper-noun candidacy.
+  const halves = occurrence.split('-');
+  if (halves.length !== 2) return false;
+  if (!/^[A-Z]/.test(halves[0]) || !/^[A-Z]/.test(halves[1])) return false;
+  // Look for a Title-Cased word immediately following (e.g., "Plan",
+  // "Commission", "Court", "Agency", "Act"). This is the proper-noun signal.
+  const after = text.slice(idx + phrase.length);
+  return /^\s+[A-Z][a-z]+/.test(after);
 }
 
 function scanHyphens(issueId, field, text) {
   if (!text) return;
   const lower = text.toLowerCase();
   for (const [bad, good] of Object.entries(HYPHEN_REWRITES)) {
-    if (lower.includes(bad)) {
-      warn(issueId, field, 'hyphenated-compound', `"${bad}" → consider "${good}"`);
+    let pos = 0;
+    while (pos < lower.length) {
+      const idx = lower.indexOf(bad, pos);
+      if (idx === -1) break;
+      if (!isProperNounAtPosition(text, idx, bad)) {
+        warn(issueId, field, 'hyphenated-compound', `"${bad}" → consider "${good}"`);
+        break; // one warning per phrase per text, matches old behavior
+      }
+      pos = idx + bad.length;
     }
   }
 }
 
+// Temporal "by" — "was excised by 2006", "was completed by year-end".
+// These are not agent-introducers; "by" here is a deadline preposition.
+// Detect by checking the word(s) immediately after the matched "by".
+const TEMPORAL_BY_AFTER = /^\s+(\d{4}|now|then|year[- ]end|month[- ]end|the\s+(end|start|beginning|deadline|time))\b/i;
+
 function scanPassive(issueId, field, text) {
   if (!text) return;
   const m = text.match(PASSIVE_BY);
-  if (m) {
-    warn(
-      issueId,
-      field,
-      'agentless-passive',
-      `passive-by construction: "${m[0]}" — consider active voice naming the agent`,
-    );
-  }
+  if (!m) return;
+  // Check what follows the matched "...by". If it's a temporal noun, skip.
+  const matchEnd = m.index + m[0].length;
+  const after = text.slice(matchEnd);
+  if (TEMPORAL_BY_AFTER.test(after)) return;
+  warn(
+    issueId,
+    field,
+    'agentless-passive',
+    `passive-by construction: "${m[0]}" — consider active voice naming the agent`,
+  );
 }
 
 function scanVocab(issueId, field, text) {
