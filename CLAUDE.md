@@ -152,6 +152,31 @@ These rules come from a deep research synthesis (full citations and rationale in
 - No notification frequency above 3/week (Tue/Thu/Sat). Push fatigue is real.
 - Anger at *processes* (no tender, missing audit, ignored petition) is non-partisan. Anger at *people* or *groups* is not. The reframe card is the highest-risk slot for crossing this line.
 
+## Language Quality Standard
+
+T4A's prose is the surface readers actually experience. The full reference — psychology of processing fluency, psychic numbing, arousal-driven sharing, framing, the elevated-vocabulary list, anti-pattern catalog, hyphenated-compound heuristic — lives in [`docs/research/language-quality.md`](docs/research/language-quality.md). Read it before editing any card's wording.
+
+The build runs `node scripts/validate-language.mjs` immediately after `validate-issues`. The scan is **warnings-only** and never blocks the build; treat its output as a list of draft edits. Most warnings are real; the writer's judgement decides which to action.
+
+The validator surfaces:
+1. **Hedges that drain a claim** — `perhaps`, `appears to`, `may have`, `arguably`, etc.
+2. **Weak abstractions** — `explores`, `examines`, `considers`, `addresses`, `tackles`, `delves into`, etc. (extends the hook-engineering list above).
+3. **Bureaucratic dead-weight** — `stakeholders`, `going forward`, `in terms of`, `the fact that`, etc.
+4. **Hyphenated compounds** that should close up (`non-partisan` → `nonpartisan`) or open up (`civil-society` → `civil society`). Some hyphens are correct (`re-export`, `40-year`) and the warning is a prompt, not a verdict.
+5. **Agentless / by-clause passives** — flagged as candidates for active-voice rewrite where the actor is the story.
+6. **Reframe template drift** — warns when the same rhetorical structure (`X is not Y, it is Z`; `The question is not X, it is Y`; `X isn't the scandal, Y is`) appears in 4+ of the last 10 published reframes.
+
+Two posture rules that the validator cannot enforce mechanically — but Stage 6 synthesis is expected to enforce:
+
+- **One elevated word per issue.** Pick one carefully-chosen sophisticated word (from `docs/research/language-quality.md` §6) — typically in the reframe or view — that carries meaning the plain alternative cannot. *Forbearance*, *entrench*, *capture* (regulatory sense), *provenance*, *circumvention*. Used sparingly, these make readers feel smart; used carelessly, they make prose feel performative.
+- **Dominant emotion check on every hook.** Read the hook's `big` field alone. Name the emotion. If it is **sadness** or **generalized concern**, rewrite to **anger-at-process** or **anxiety-of-precedent** (per Berger-Milkman 2012 on what drives sharing). Same facts, different emotion, very different reach.
+
+Both rules are encoded in [`engine/templates/language-quality-preamble.txt`](engine/templates/language-quality-preamble.txt), which Stage 6 synthesis reads after `stage6-preamble.txt`.
+
+### Per-issue invocation
+After editing an issue: `node scripts/validate-language.mjs --issue NNNN` — scoped scan, full warning detail.
+With elevated-vocabulary suggestions: add `--suggest-vocab` (off by default; noisy).
+
 ## Accuracy Standard
 
 T4A's editorial brand is non-partisan trust. A single wrong number, misattributed quote, or overstated claim costs more credibility than ten accurate findings earn. Every published issue must clear this bar.
@@ -197,6 +222,7 @@ The most dangerous overclaims are ones that implicate race, religion, or royalty
 Past audit snapshots live in [`docs/audits/`](docs/audits/) — each is dated and immutable. Before making editorial decisions on any published issue, check whether it appears in a recent audit report. The audit toolchain:
 
 - `node scripts/audit-published.mjs` — main audit (structural, traceability, source quality, anti-pattern scan)
+- `node scripts/validate-language.mjs` — language-quality scan (hedges, abstractions, hyphenated compounds, reframe-template drift); warnings only
 - `node scripts/triage-unauditable.mjs` — categorise zero-artifact issues into FALLBACK / LEGACY / ORPHAN
 - `node scripts/confirm-tier2.mjs` — confirm whether Tier 2 corrections are reflected in current cards
 - `node scripts/view-stage3.mjs <id>` — pretty-print any Stage 3 critique cross-referenced with current cards
@@ -375,6 +401,7 @@ For each stage response:
      - No MISLEADING FRAMING (selection or sequencing distorts the picture a reasonable reader would form)
      - No UNVERIFIED DETAIL (any specific not traced above)
    - [ ] **NO DRIFT FROM STAGE 6**: every wording change introduced during synthesis (Phase 5) was either applied from a stage critique with explicit traceability, or independently re-verified per stage6-preamble. No silent rephrasings that change meaning.
+   - [ ] **LANGUAGE QUALITY**: `node scripts/validate-language.mjs --issue {ID}` — walk every warning and either action it or note why the override stands (e.g. `re-export` for ITAR rules). See `docs/research/language-quality.md` for the rules behind each category.
 4. Present legal + accuracy clearance report to user
 5. Present complete issue object (ready to write to `src/data/issues/{id}.json`)
 
