@@ -1,0 +1,198 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Anwar called Norway's cancellation 'contracts not confetti' and Malaysia is weighing a lawsuit. The first ship those missiles were meant for hasn't been delivered yet.",
+      "sub": "Norway revoked the Naval Strike Missile export permit in March 2026. LCS-1 KD Maharaja Lela — the lead ship that would have mounted them — only began sea trials in January and isn't scheduled for delivery until December. Malaysia had paid ~RM550m, about 95% of the €124m contract.",
+      "sources": [
+        "Malay Mail, 14 May 2026 — Anwar 'contracts not confetti' statement",
+        "USNI News, 14 May 2026 — revocation in March 2026; force majeure",
+        "The Star, 14 May 2026 — Khaled Nordin: ~95% paid (~RM500m+)",
+        "Kongsberg press release, April 2018 — €124m contract value",
+        "Malaysian Defence, 14 May 2026 — LCS-1 sea trials Jan 2026; delivery Dec 2026"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Zero LCS hulls delivered. RM6.083 billion paid to Boustead Naval Shipyard. Zero convictions across 15 years of investigation.",
+      "s": "The 2022 PAC report found the programme ceiling ballooned from RM9b to RM11.145b, advance payment to BNS ran at 136× the Treasury threshold, and RM400m of LCS funds was diverted to retire a prior naval programme's debt. The only criminal charge — RM21.08m CBT against ex-BNS MD Tan Sri Ahmad Ramli — ended in a dementia-grounded discharge in March 2025.",
+      "d": "Parlimen.gov.my PAC media statement 4 Aug 2022; The Star 17 Aug 2022; Malay Mail 5 Feb 2024 & 26 Jul 2024; The Star 13 Mar 2025",
+      "sources": [
+        "Parlimen.gov.my — PAC Chairman Wong Kah Woh media statement 4 Aug 2022 (primary)",
+        "Malaysiakini 17 Aug 2022 — JKSTUPKK declassified findings (primary)",
+        "Malay Mail 5 Feb 2024 — AGC representation rejection (primary, court filing)",
+        "The Star 13 Mar 2025 — Sessions Court DNAA on dementia grounds (primary, judicial)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Norway invoked force majeure — an enumerated contract clause, not a breach. The contract worked exactly as it should when a sovereign exporter revokes a licence.",
+      "s": "Defence-export contracts make export-licence issuance a condition precedent; revocation is not breach by the seller. There is no public precedent of an importer state winning a suit against an exporter state over a revoked arms-export licence — sovereign immunity, the act-of-state doctrine and standard force-majeure clauses combine against such suits.",
+      "d": "USNI News 14 May 2026; SIPRI commentary on politicisation of export controls 2025; EU Council Common Position 2008/944/CFSP; EJIL:Talk! arms exports access to justice",
+      "sources": [
+        "EU Council Common Position 2008/944/CFSP — EUR-Lex CELEX:32008E0944 (primary)",
+        "Wassenaar Arrangement Founding Documents — national-discretion principle (primary)",
+        "USNI News 14 May 2026 — MINDEF Sec-Gen Lokman Hakim Ali confirming force majeure invocation",
+        "SIPRI 2025 commentary on politicisation of export controls"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "h": "On the same day Malaysia was cut off, Australia signed a Strike Missile Family MoU with Norway for local NSM and JSM production.",
+      "s": "Malaysia was the only non-NATO and non-NATO-partner customer in Kongsberg's NSM book — every other operator is NATO or partner. Australia, which recognised Palestine in November 2025, received expanded access the same day Malaysia lost it. The discriminator was alliance classification.",
+      "d": "Army Recognition 14 May 2026 — Australia-Norway Strike Missile Family MoU; Defence Security Asia 14 May 2026; Naval Strike Missile customer list",
+      "sources": [
+        "Army Recognition 14 May 2026 — Strike Missile Family MoU (primary, industry trade)",
+        "Defence Security Asia 14 May 2026 — Australia-Malaysia same-day juxtaposition",
+        "Kongsberg published customer list — NSM operators by country",
+        "Regjeringen.no — Norway Palestine recognition statement, 22 May 2024 (primary)"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The scandal is not Norway revoking an export licence. The scandal is using Oslo to bury 15 years of unaccounted billions on ships the missiles were never going to fit on.",
+      "text": ""
+    },
+    {
+      "t": "analogy",
+      "h": "Like paying 95% upfront for a fitting tailored to a suit that doesn't exist yet — then suing the tailor when his country bans the fabric.",
+      "text": "LCS-1, the lead ship the missiles were meant for, only began sea trials in January 2026 and is scheduled for delivery in December. The revocation arrived in March, eight months before any ship existed to mount them on."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Norway exercised a clause Malaysia agreed to. The real cost is not the missiles — it is 15 years of LCS payments that produced no ships and no convictions across four governments. Future procurement should price licence-revocation risk into every NATO-platform contract. The unfinished accountability cases on the original LCS spending should not disappear in a foreign-policy news cycle."
+    }
+  ],
+  "sources": "Parlimen.gov.my PAC statement 4 Aug 2022 (primary); JKSTUPKK declassified report via Malaysiakini 17 Aug 2022 (primary); AGC filings via Malay Mail Feb–Jul 2024 (primary, judicial); Sessions Court DNAA via The Star Mar 2025 (primary, judicial); Kongsberg press release Apr 2018 (primary, contract); Regjeringen.no Eksportforskriften consolidated text (primary, regulator); Norwegian MFA spokesperson Guri Solberg statement via Reuters/NTB pickup, Breaking Defense, Euronews (primary, government); Regjeringen.no Palestine recognition statement 22 May 2024 (primary, government); EU Council Common Position 2008/944/CFSP (primary, treaty-equivalent); Wassenaar Arrangement Founding Documents (primary); UK Court of Appeal CAAT v Secretary of State [2019] EWCA Civ 1020 (primary, case law); 22 U.S.C. § 2778 (primary, statute); USNI News 14 May 2026; Army Recognition 14 May 2026 (Australia MoU); Naval Today, Naval News, Breaking Defense, Defence Security Asia, Malaysian Defence (specialist defence trade); Malay Mail 14 May 2026; The Star 14 May 2026; NST 14 May 2026; Kosmo Digital 14 May 2026 (BM); Sinar Harian 14 May 2026 (BM); Berita Harian 14 May 2026 (BM); Malaysiakini BM fact-check pieces 14–15 May 2026; C4 Center LCS scandal reporting; The Malaysian Reserve 3 Apr 2024 (Ocean Sunshine takeover); SIPRI 2025 commentary on politicisation of export controls",
+  "confidence": "High — every load-bearing claim in the cards traces to a primary source in the research brief. The PAC report, JKSTUPKK declassified findings, Ramli court rulings, Kongsberg 2018 contract press release, Norwegian MFA spokesperson statement, and Australia-Norway 14 May 2026 MoU are independently verifiable. The single weak link is whether a US-component (ITAR) re-export restriction was the upstream trigger; this is flagged in needs_verification and not asserted in the cards.",
+  "lenses_used": ["Governance", "Legal", "Regional"],
+  "lenses_applicable_but_unused": ["Political", "Economic", "Security", "Historical"],
+  "needs_verification": [
+    "Whether a US-made gyroscope/IMU/GNSS component subject to ITAR re-export restriction was the upstream trigger for Norway's revocation. Sourced via USNI News from an unnamed industry official. Not officially confirmed by Norway or the US. NOT asserted in the cards — but Stage 3 should chase this if any version of it gets introduced.",
+    "Khaled Nordin's 'nearly RM1 billion already paid' aggregate figure vs. 'more than RM500 million' / '95% of €124m' on the 2018 contract. The brief uses RM550m on the 2018 contract; the RM1bn aggregate would also include the 2025 USD 11.19m Lekiu launcher contract and likely Kedah-class retrofit pre-payments. Stage 3 should confirm which figure to use if substituted.",
+    "The exact date of in-person notification at DSA 2026 (the Palestine/3R research agent reported '20 April 2026'; other accounts say 'mid-April'). The cards do not assert a specific date.",
+    "Whether the Norwegian MFA's 'allies and closest partners' formulation has a formally promulgated definition naming country tiers, or remains a policy floor without statutory effect. The research could not locate a formal country-tier list in current Eksportforskriften text.",
+    "The precise number of LCS hulls in the current programme (6 originally; LCS-6 quietly dropped to 5 according to Malaysian Defence reporting). The cards do not assert a hull count."
+  ],
+  "source_notes": "Three contradictions were resolved against the brief's authoritative reading. (1) The 'broke a contract' framing in some Malaysian English coverage is rhetorical; the contractual reality is force-majeure invocation, confirmed by MINDEF Sec-Gen Lokman Hakim Ali (USNI News 14 May 2026). The fact card uses force-majeure language. (2) The 'nearly RM1 billion paid' figure aggregates multiple NSM-related contracts; the cleanly attributable 2018 NSM contract is ~RM550m (95% of €124m per Khaled Nordin, 14 May 2026, The Star). The hook uses ~RM550m. (3) The Palestine-causation theory floated by Murray Hunter (The Vibes opinion) and Lam Choong Wah (Malaysiakini analyst quote) is disproved by the Australia same-day MoU and the negative-evidence check on Israeli press; Norwegian Palestine recognition was framed by FM Eide as 'anti-Hamas' — opposite-signed from Malaysia's Hamas engagement. Cards do not assert any Palestine-causation link; Fact 3 actively uses the Australia parallel to disarm that speculation without naming it. Norwegian-language primary press articles (Dagbladet, VG, Aftenposten, Forsvarets Forum, Dagsavisen) were referenced from search-snippets only; direct WebFetch was 403-blocked. A Norwegian-speaking reviewer should cross-check before any Norwegian outlet is quoted verbatim downstream. The 'PA' score below should be read against this constraint — primary-source coverage on the Norwegian regulator side rests on regjeringen.no English-language documents plus Reuters/NTB wire pickup of the MFA spokesperson's English statement, which is adequate but not redundant."
+}
