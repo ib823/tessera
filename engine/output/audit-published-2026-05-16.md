@@ -10,10 +10,10 @@ Audit of all 100 published issues against the new accuracy + editorial criteria 
 | With full pipeline (≥7 of 8 artifacts) | 25 |
 | Partially audited (1-6 artifacts) | 3 |
 | **Unauditable (zero artifacts)** | **72** |
-| Phase 1 structural flags | 0 issues |
+| Phase 1 structural flags | 5 issues |
 | Phase 3 low-confidence (FAS<70 or m_true<0.7) | 26 issues |
 | Phase 4 anti-pattern hits | 1 hits across 1 issues |
-| Tier 1 review (highest priority) | 1 issues |
+| Tier 1 review (highest priority) | 3 issues |
 | Tier 2 review (low confidence) | 26 issues |
 | Tier 3 review (anti-pattern only) | 0 issues |
 
@@ -21,14 +21,24 @@ Audit of all 100 published issues against the new accuracy + editorial criteria 
 
 Hard-max length violations, concreteness floor, reframe.sub > 80, missing background images.
 
-### Length hard-max violations (0)
-*None.* All published issues respect the hard-max budget.
+### Length hard-max violations (6)
+- **1977** `cards[0]` — 316 chars (max 300)
+- **1984** `context` — 296 chars (max 280)
+- **1984** `cards[1]` — 301 chars (max 300)
+- **1984** `cards[5].big` — 182 chars (max 180)
+- **1985** `cards[1]` — 312 chars (max 300)
+- **1985** `cards[2]` — 303 chars (max 300)
 
 ### Concreteness floor flags (0)
 *None.* All published fact cards have a concrete anchor.
 
-### Reframe.sub > 80 chars (0)
-*None.* All published reframes are clean.
+### Reframe.sub > 80 chars (2)
+- **1973** (154 chars)
+  - big: Malaysian businesses across all communities profit from bonded cheap labour while working-class Malaysians bear the wage suppression.
+  - sub: US$1 billion has been siphoned from Bangladesh. Sabah and Sarawak run a separate crisis with 1 million undocumented migrants outside this system entirely.
+- **1974** (131 chars)
+  - big: The nine dead at Bukit Kukus were foreign workers with no voice in the EIA. Communities near e-waste sites bear health costs no one measures.
+  - sub: B40 and Orang Asli communities live beside unregulated waste with no health monitoring. Every coalition has shielded the regulator.
 
 ### Missing background images (0)
 *None.*
@@ -42,7 +52,7 @@ Per-issue audit of which engine artifacts exist. Issues with zero artifacts cann
 These published issues have no brief, no stage outputs, no reader.json. They predate the pipeline or were fallback-published. **Recommendation:** flag each for editorial decision. Do NOT auto-unpublish.
 
 - **0142** — The Clause Nobody Mentioned in the Amendment
-- **0146** — Gig Workers Got SOCSO in 2025 — Retirement Floor Still Missing
+- **0146** — Gig Workers Got SOCSO in 2025; Retirement Floor Still Missing
 - **0150** — The Highway Contracts You Are Not Allowed to Read
 - **0154** — RM9 Billion for Ships That Do Not Exist
 - **0165** — Every Election. No Rules. No Receipts.
@@ -51,15 +61,15 @@ These published issues have no brief, no stage outputs, no reader.json. They pre
 - **1067** — RM18 billion highway concession terms remain classified for 30 years
 - **1074** — RM23 billion MRT3 project awarded without competitive international tender
 - **1100** — Customs scandal: 47 containers of sanctioned goods cleared without inspection
-- **1102** — Subsidy Rationalisation Targets ~RM8 Billion Annual Savings — Delivery Mechanism Still Untested
-- **1120** — Malaysia's overall governance score dropped 8 points in 3 years — worst in decade
-- **1128** — Gig Workers Bill 2025 Brings ~1.2 Million Into SOCSO — Retirement Coverage Still Missing
+- **1102** — Subsidy Rationalisation Targets ~RM8 Billion Annual Savings; Delivery Mechanism Still Untested
+- **1120** — Malaysia's overall governance score dropped 8 points in 3 years, worst in decade
+- **1128** — Gig Workers Bill 2025 Brings ~1.2 Million Into SOCSO; Retirement Coverage Still Missing
 - **1165** — 1MDB Final Recovery Reaches Only 38% of RM42B Losses
 - **1170** — Bumiputera Contract Quota System Loses RM12B to Rent-Seeking
-- **1181** — Subsidy Bill Reaches RM82B — One-Third of Federal Revenue
+- **1181** — Subsidy Bill Reaches RM82B, One-Third of Federal Revenue
 - **1190** — EPF Flexible Account 3 Withdrawals Reach RM14.79B in 15 Months
-- **1201** — Malaysia's 2024 Deficit Came In at 4.1% — 2025 Forecast Risks Slipping Past the 3.8% Target
-- **1208** — Corruption Costs Malaysia RM47B Annually — 3% of GDP
+- **1201** — Malaysia's 2024 Deficit Came In at 4.1%; 2025 Forecast Risks Slipping Past the 3.8% Target
+- **1208** — Corruption Costs Malaysia RM47B Annually, 3% of GDP
 - **1227** — Political Appointees in GLCs Earn RM680M Combined
 - **1229** — Kampung Baru Master Redevelopment Still Stalled After 40 Years
 - **1239** — Richest 50 Malaysians' Wealth Equals Bottom 12 Million Citizens
@@ -67,22 +77,22 @@ These published issues have no brief, no stage outputs, no reader.json. They pre
 - **1247** — SUHAKAM Estimates Half a Million to One Million Stateless Children in Sabah
 - **1248** — Death penalty moratorium covers 1,337 inmates since 2018
 - **1262** — Syariah-civil jurisdiction clash affects 4,200 families
-- **1265** — Article 15A Citizenship Applications Are Decided Without Published Criteria — Many Wait Years
-- **1267** — Malaysia Has 2.5 Million Documented Migrant Workers — and Persistent Tier 2 Trafficking Concerns
+- **1265** — Article 15A Citizenship Applications Are Decided Without Published Criteria; Many Wait Years
+- **1267** — Malaysia Has 2.5 Million Documented Migrant Workers, and Persistent Tier 2 Trafficking Concerns
 - **1283** — Rohingya community faces 12 hate speech incidents monthly
 - **1288** — Emergency Ordinance detainees exceed 600 under remand
-- **1292** — POCA Allows 2-Year Renewable Detention With No Judicial Review — Decided by an Appointed Board
+- **1292** — POCA Allows 2-Year Renewable Detention With No Judicial Review, Decided by an Appointed Board
 - **1294** — Unilateral child conversion ban enforcement lacking in 6 states
-- **1298** — SOSMA Renewal Cycles Operate With Minimal Public Debate — Section 4(5) Requires It Every 5 Years
+- **1298** — SOSMA Renewal Cycles Operate With Minimal Public Debate; Section 4(5) Requires It Every 5 Years
 - **1315** — National Security Council Act grants PM unchecked emergency powers
 - **1319** — Preventive detention laws total 7 across Malaysian statutes
-- **1325** — Maternal Citizenship Amendment Passed in 2024 — March 2025 Settlement Closed the Pre-Amendment Gap
+- **1325** — Maternal Citizenship Amendment Passed in 2024; March 2025 Settlement Closed the Pre-Amendment Gap
 - **1327** — Sosma Section 4 challenged in Federal Court test case
 - **1364** — Youth Unemployment Rate Doubles National Average at 10.8%
 - **1389** — 17 Schools in Kelantan Flood Zones Damaged for 4th Consecutive Year
 - **1401** — Sijil Kemahiran Malaysia Holders Earn 40% Less Than Degree Holders
 - **1435** — Health Privatization Debate Reignited by 3 Hospital PPP Proposals
-- **1445** — Medical Tourism Hit RM2.72B in 2024, Targeting RM3B in 2025 — While Public Specialists Stretch Thin
+- **1445** — Medical Tourism Hit RM2.72B in 2024, Targeting RM3B in 2025, While Public Specialists Stretch Thin
 - **1471** — Opioid Substitution Therapy Waitlist Grows to 8,500 Patients
 - **1511** — Zoonotic Disease Surveillance Covers Only 35% of Wildlife Markets
 - **1520** — Public Health Budget Transparency Ranks 42nd of 54 Countries Assessed
@@ -94,22 +104,22 @@ These published issues have no brief, no stage outputs, no reader.json. They pre
 - **1626** — Social Contract Concept Has No Single Agreed Definition
 - **1641** — Tamil Schools Receive 2.1% of Education Budget for 5.4% of Students
 - **1662** — Wealth Gap: Top 10% Own 58.4% While Bottom 50% Own 7.6%
-- **1751** — MRT3 Circle Line Capped at RM45 Billion — Down from RM68 Billion in 2018
-- **1805** — LCS Cost Now RM11.2 Billion — First Ship in Sea Trials, Programme Cut From 6 to 5
+- **1751** — MRT3 Circle Line Capped at RM45 Billion, Down from RM68 Billion in 2018
+- **1805** — LCS Cost Now RM11.2 Billion; First Ship in Sea Trials, Programme Cut From 6 to 5
 - **1867** — 1MDB Asset Recovery Has Reached Over RM20.7 Billion
 - **1879** — Malaysia Arrests 3 Suspects in Nuclear Material Smuggling
 - **1940** — Government Surveillance Powers Expanded Without Judicial Oversight
-- **1944** — RM2.27 Billion, 25 Charges, One Verdict — and the Bill Nobody Mentions
+- **1944** — RM2.27 Billion, 25 Charges, One Verdict, and the Bill Nobody Mentions
 - **1950** — Malaysia Passes Comprehensive Online Safety Act 2026
 - **1951** — Seven Ships, One Phone Call, Zero Leverage
-- **1952** — Fuel Quota Cut Hits April 1 — Who Absorbs the 68% Price Jump
-- **1953** — Vegetable Prices May Jump 50% in April — The Fertiliser Link Nobody Explains
-- **1954** — Civil servant WFH — fuel rationing, workplace reform, or both?
-- **1955** — No Raya Open Houses — Symbolic Savings, Real Losses, Honest Questions
-- **1956** — Expat Salary Floor Doubles to RM20K — The Talent Equation Nobody Solves
+- **1952** — Fuel Quota Cut Hits April 1: Who Absorbs the 68% Price Jump
+- **1953** — Vegetable Prices May Jump 50% in April: The Fertiliser Link Nobody Explains
+- **1954** — Civil servant WFH: fuel rationing, workplace reform, or both?
+- **1955** — No Raya Open Houses: Symbolic Savings, Real Losses, Honest Questions
+- **1956** — Expat Salary Floor Doubles to RM20K; The Talent Equation Nobody Solves
 - **1976** — Four Undangs Declared the Ruler Deposed. Three Hold Office. One Does Not.
 - **1981** — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
-- **1982** — Three Investigations on Chinese Platforms — and What They Don't Prove
+- **1982** — Three Investigations on Chinese Platforms, and What They Don't Prove
 - **1984** — E-invoice exemption walked back twice in a month after Sabah loss
 - **1985** — Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
 - **1986** — The Malay grievance, read structurally: capture, not racial competition.
@@ -120,31 +130,31 @@ These have ≥7 of 8 expected artifacts and are fully auditable.
 
 | ID | Slug | Headline |
 |---|---|---|
-| 1043 | gazette-bypass-environmental-requirements | When states override environmental law, the environment has no government — and  |
+| 1043 | gazette-bypass-environmental-requirements | When states override environmental law, the environment has no government; and 4 |
 | 1871 | lahad-datu-security-resolution | Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation |
-| 1957 | byd-miti-tanjung-malim | BYD Blocked, Proton Shielded, B40 Priced Out — Who Wins? |
-| 1958 | klang-dui-amirul-hafiz | One Death, Six Proposals, Zero Data — Malaysia's Drunk Driving Blind Spot |
-| 1960 | landowner-demolition-hate-crime | Temple Demolished on Private Land — Property Right or Religious Hate Crime? |
-| 1961 | macc-chief-watchdog-crisis | MACC Chief Under Probe — But the System Investigating Him Answers to Those Who A |
-| 1962 | military-generals-corruption-prosecution | Generals charged at last — but the 4,679-contract cartel system remains intact |
+| 1957 | byd-miti-tanjung-malim | BYD Blocked, Proton Shielded, B40 Priced Out: Who Wins? |
+| 1958 | klang-dui-amirul-hafiz | One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot |
+| 1960 | landowner-demolition-hate-crime | Temple Demolished on Private Land: Property Right or Religious Hate Crime? |
+| 1961 | macc-chief-watchdog-crisis | MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appoin |
+| 1962 | military-generals-corruption-prosecution | Generals charged at last; the 4,679-contract cartel system remains intact |
 | 1963 | data-center-johor-water-power | Data centres vs Johor's water: a moratorium that exempts the biggest consumers |
 | 1964 | fake-news-crackdown-fuel-critics | Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications |
 | 1965 | us-tariff-semiconductor-gap | US tariff reset after Supreme Court ruling leaves Malaysia worse off |
 | 1966 | refugee-registration-3d-jobs | Refugee registration system launched but work permits remain unissued |
 | 1967 | vernacular-school-choices | Vernacular school choices: the quality crisis nobody wants to name |
-| 1970 | penang-tourism-china-india-asean | Penang's 520% tourism surge — who counts the arrivals and who pays the rent |
-| 1971 | shah-alam-community-forest-ruling | Shah Alam's forest corridor fell to a backdated gazette — courts never asked if  |
-| 1972 | rm82b-local-currency-trade-asean | RM82 billion in local currency trade sounds like de-dollarization — 76% of it is |
-| 1973 | bestinet-migrant-visa-monopoly | Bestinet ran Malaysia's visa system for RM400M — no contract, Interpol arrest re |
-| 1974 | doe-leadership-corruption | DOE chief charged with taking RM100K to bypass an EIA — on a road that killed ni |
-| 1975 | ewallet-consumer-protection-gaps-v2 | E-wallets hit 18.4 billion transactions — none of the balances carry PIDM deposi |
+| 1970 | penang-tourism-china-india-asean | Penang's 520% tourism surge: who counts the arrivals and who pays the rent |
+| 1971 | shah-alam-community-forest-ruling | Shah Alam's forest corridor fell to a backdated gazette; courts never asked if i |
+| 1972 | rm82b-local-currency-trade-asean | RM82 billion in local currency trade sounds like de-dollarization; 76% of it is  |
+| 1973 | bestinet-migrant-visa-monopoly | Bestinet ran Malaysia's visa system for RM400M, no contract, Interpol arrest req |
+| 1974 | doe-leadership-corruption | DOE chief charged with taking RM100K to bypass an EIA, on a road that killed nin |
+| 1975 | ewallet-consumer-protection-gaps-v2 | E-wallets hit 18.4 billion transactions; none of the balances carry PIDM deposit |
 | 1977 | johor-unelected-reps-bill | Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No |
 | 1978 | federal-court-2026-term-backlog | Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis. |
 | 1979 | 1mdb-recovery-headline-vs-net-position | RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration |
-| 1980 | zahid-insults-firm-action-vs-existing-laws | Zahid wants firmer law on insults — sedition cases already up 84% in 2025 |
+| 1980 | zahid-insults-firm-action-vs-existing-laws | Zahid wants firmer law on insults; sedition cases already up 84% in 2025 |
 | 1983 | norway-malaysia-nsm-export-revocation | Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries i |
 | 1987 | malaysia-politics-gerontocracy-no-new-faces | Median MP is 52, citizen 31. Parliament refused PM term limits by two votes. |
-| 1988 | coa-emergency-proclamation-non-justiciable | Court of Appeal: no court can review an emergency call — issuance or refusal |
+| 1988 | coa-emergency-proclamation-non-justiciable | Court of Appeal: no court can review an emergency call, issuance or refusal |
 
 ### Partially-audited issues (3)
 
@@ -209,32 +219,34 @@ Greps published issue text for known anti-patterns from the CLAUDE.md hook engin
 
 Three tiers, ordered by review priority. Tier 1 issues need immediate attention; Tier 3 are minor edits.
 
-### Tier 1 — Unauditable AND has flag (1)
+### Tier 1 — Unauditable AND has flag (3)
 
 These issues have no audit trail AND show structural or anti-pattern flags. Highest priority.
 
 - **1294** [anti-pattern] — Unilateral child conversion ban enforcement lacking in 6 states
+- **1984** [structural] — E-invoice exemption walked back twice in a month after Sabah loss
+- **1985** [structural] — Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
 
 ### Tier 2 — Low Stage 3 confidence (26)
 
 Issues with documented audit trail but Stage 3 flagged factual accuracy concerns.
 
 - **1043** — FAS 54, m_true —, INC 0, MIS 0
-  When states override environmental law, the environment has no government — and 42 are dead
+  When states override environmental law, the environment has no government; and 42 are dead
 - **1146** — FAS 27, m_true —, INC 0, MIS 0
-  18.4 billion e-payment transactions in 2025 — but 48 e-money issuers face very different economics
+  18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
 - **1871** — FAS 57, m_true 0.52, INC 2, MIS 9
   Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
 - **1887** — FAS 24, m_true —, INC 0, MIS 0
-  18.4 billion e-payment transactions in 2025 — but 63% of non-urban Malaysians still use cash daily
+  18.4 billion e-payment transactions in 2025, but 63% of non-urban Malaysians still use cash daily
 - **1958** — FAS 72, m_true 0.58, INC 1, MIS 1
-  One Death, Six Proposals, Zero Data — Malaysia's Drunk Driving Blind Spot
+  One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
 - **1960** — FAS 61, m_true 0.54, INC 5, MIS 3
-  Temple Demolished on Private Land — Property Right or Religious Hate Crime?
+  Temple Demolished on Private Land: Property Right or Religious Hate Crime?
 - **1961** — FAS 74, m_true 0.63, INC 0, MIS 2
-  MACC Chief Under Probe — But the System Investigating Him Answers to Those Who Appointed Him
+  MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
 - **1962** — FAS 72, m_true 0.7, INC 0, MIS 0
-  Generals charged at last — but the 4,679-contract cartel system remains intact
+  Generals charged at last; the 4,679-contract cartel system remains intact
 - **1963** — FAS 74, m_true 0.67, INC 0, MIS 0
   Data centres vs Johor's water: a moratorium that exempts the biggest consumers
 - **1964** — FAS 72, m_true 0.73, INC 0, MIS 1
@@ -246,17 +258,17 @@ Issues with documented audit trail but Stage 3 flagged factual accuracy concerns
 - **1967** — FAS 61, m_true 0.59, INC 1, MIS 4
   Vernacular school choices: the quality crisis nobody wants to name
 - **1970** — FAS 51, m_true 0.55, INC 2, MIS 6
-  Penang's 520% tourism surge — who counts the arrivals and who pays the rent
+  Penang's 520% tourism surge: who counts the arrivals and who pays the rent
 - **1971** — FAS 67, m_true —, INC 0, MIS 0
-  Shah Alam's forest corridor fell to a backdated gazette — courts never asked if it was lawful
+  Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 - **1972** — FAS 68, m_true —, INC 0, MIS 0
-  RM82 billion in local currency trade sounds like de-dollarization — 76% of it is with one country
+  RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
 - **1973** — FAS 66, m_true —, INC 0, MIS 0
-  Bestinet ran Malaysia's visa system for RM400M — no contract, Interpol arrest request
+  Bestinet ran Malaysia's visa system for RM400M, no contract, Interpol arrest request
 - **1974** — FAS 61, m_true —, INC 0, MIS 0
-  DOE chief charged with taking RM100K to bypass an EIA — on a road that killed nine
+  DOE chief charged with taking RM100K to bypass an EIA, on a road that killed nine
 - **1975** — FAS 54, m_true —, INC 0, MIS 0
-  E-wallets hit 18.4 billion transactions — none of the balances carry PIDM deposit insurance
+  E-wallets hit 18.4 billion transactions; none of the balances carry PIDM deposit insurance
 - **1977** — FAS 46, m_true 0.29, INC 3, MIS 7
   Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 - **1978** — FAS 68, m_true 0.53, INC 2, MIS 4
@@ -264,13 +276,13 @@ Issues with documented audit trail but Stage 3 flagged factual accuracy concerns
 - **1979** — FAS 62, m_true 0.52, INC 3, MIS 7
   RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration
 - **1980** — FAS 68, m_true —, INC 0, MIS 0
-  Zahid wants firmer law on insults — sedition cases already up 84% in 2025
+  Zahid wants firmer law on insults; sedition cases already up 84% in 2025
 - **1983** — FAS 67, m_true 0.53, INC 4, MIS 6
   Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 - **1987** — FAS 68, m_true 0.48, INC 3, MIS 9
   Median MP is 52, citizen 31. Parliament refused PM term limits by two votes.
 - **1988** — FAS 82, m_true 0.67, INC 0, MIS 6
-  Court of Appeal: no court can review an emergency call — issuance or refusal
+  Court of Appeal: no court can review an emergency call, issuance or refusal
 
 ### Tier 3 — Anti-pattern only (0)
 
@@ -281,7 +293,7 @@ Issues with no other flags but anti-pattern phrases in copy. Minor copy edits.
 ## Recommendations
 
 1. **Tier 1 first** — these are the highest-leverage fixes (unauditable + at least one mechanical flag).
-2. **For unauditable issues without other flags** (count: 71) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
+2. **For unauditable issues without other flags** (count: 69) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
 3. **Tier 2 issues need source review** — Stage 3 already flagged them. Re-read the Stage 3 output and either correct the cards or hold the issue.
 4. **Tier 3 are copy edits** — fix the flagged phrases in place; no source review needed.
 5. **Going forward** — the new accuracy rules in CLAUDE.md will prevent these gaps from recurring on new issues. This audit covers retroactive content only.
