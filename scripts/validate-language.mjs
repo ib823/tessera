@@ -85,8 +85,14 @@ const BUREAUCRATIC = [
   'in order to',
 ];
 
-// Hyphenated compounds that should close up or open up — see §8.
+// Hyphenated compounds that should close up — see §8.
 // Map: bad form → suggested form.
+// IMPORTANT: this list contains only compounds where modern style closes the
+// hyphen unconditionally. Noun-phrase candidates like `civil-society`,
+// `private-sector`, `public-interest` are EXCLUDED because they are
+// grammatically correct as compound modifiers before a noun ("civil-society
+// petitions", "private-sector firms") and the regex cannot distinguish that
+// use from the noun-phrase use ("in the private sector"). Trust the writer.
 const HYPHEN_REWRITES = {
   'non-partisan': 'nonpartisan',
   'anti-corruption': 'anticorruption',
@@ -96,9 +102,6 @@ const HYPHEN_REWRITES = {
   'decision-making': 'decision making',
   'policy-maker': 'policymaker',
   'well-being': 'wellbeing',
-  'civil-society': 'civil society',
-  'private-sector': 'private sector',
-  'public-interest': 'public interest',
 };
 
 // Reframe template detectors — flag when 4+ of the last 10 reframes share a template.

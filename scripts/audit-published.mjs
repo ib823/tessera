@@ -119,9 +119,12 @@ const ANTIPATTERNS = {
     'in order to',
   ],
   hyphenated_compound: [
+    // Modern style closes these unconditionally. Noun-phrase candidates
+    // (civil-society, private-sector, public-interest) are excluded — they are
+    // correct as compound modifiers before a noun and the substring scan
+    // cannot tell that use apart from noun-phrase use.
     'non-partisan', 'anti-corruption', 'pre-trial', 'co-author', 'multi-stage',
     'decision-making', 'policy-maker', 'well-being',
-    'civil-society', 'private-sector', 'public-interest',
   ],
 };
 

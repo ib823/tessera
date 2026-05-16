@@ -216,17 +216,19 @@ Hyphens in compound words signal one of three things: (1) the right answer, (2) 
 | `policy-maker`       | `policymaker`       | Closed-compound                   |
 | `well-being`         | `wellbeing`         | Same                              |
 
-### Hyphens that should open up (space, not hyphen)
+### Hyphens that depend on grammatical role (writer's judgement, NOT validator-flagged)
 
-| Hyphenated (avoid)    | Open (prefer)         | Note                              |
-| --------------------- | --------------------- | --------------------------------- |
-| `civil-society`       | `civil society`       | Noun phrase, not compound modifier|
-| `private-sector`      | `private sector`      | Same                              |
-| `public-interest`     | `public interest`     | Same                              |
-| `long-term`           | `long term`           | When used as a noun ("in the long term"); keep hyphen as compound modifier ("long-term plan") |
-| `short-term`          | `short term`          | Same                              |
+The following are correct as **compound modifiers before a noun** but should open up as **noun phrases**. A substring scan cannot tell the two uses apart, so the validator does not flag them — trust the writer.
 
-The validator warns; the writer decides. Some genuinely belong hyphenated in T4A's context (e.g. `re-export` for ITAR rules) — the warning is a prompt, not a verdict.
+| Form              | Correct as compound modifier             | Open up as noun phrase                          |
+| ----------------- | ----------------------------------------- | ----------------------------------------------- |
+| `civil-society`   | "civil-society petitions"                 | "in civil society"                              |
+| `private-sector`  | "private-sector firms"                    | "in the private sector"                         |
+| `public-interest` | "public-interest litigation"              | "served the public interest"                    |
+| `long-term`       | "long-term plan"                          | "in the long term"                              |
+| `short-term`      | "short-term fix"                          | "in the short term"                             |
+
+The validator warns; the writer decides. Some genuinely belong hyphenated in T4A's context (e.g. `re-export` for ITAR rules; `civil-society` as a compound modifier) — when a warning fires on the closed-up list above, it is a prompt to confirm, not a verdict to action.
 
 ---
 
