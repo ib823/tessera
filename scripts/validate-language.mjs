@@ -144,6 +144,35 @@ const PASSIVE_BY = /\b(was|were)\s+[a-z]+(?:ed|en)\s+by\b/i;
 //   Numeric ranges "2020—2025"         → en-dash "2020–2025" (still not em-dash)
 const EM_DASH = /—/g;
 
+// Scaffolding discourse markers — sentence-start adverbs that announce a
+// logical move the reader should be able to see for themselves. Strong logic
+// does not need scaffolding. Match only at sentence start (beginning of text
+// OR after .!?  followed by space). The trailing comma is required; without
+// it these words have other valid uses ("crucial evidence", "the moreover
+// motion").
+const SCAFFOLDING_MARKERS = [
+  'however',
+  'moreover',
+  'furthermore',
+  'nevertheless',
+  'additionally',
+  'crucially',
+  'notably',
+  'importantly',
+  'significantly',
+  'that said',
+  'of course',
+  'interestingly',
+  'indeed',
+];
+
+// Auxiliary-verb density — three or more to-be auxiliaries in a single field
+// signals weak verb selection. Words: is, are, was, were, be, been, being.
+// Match as whole words (case-insensitive). Contractions ("it's", "you're")
+// are excluded since they rarely appear in T4A's formal register.
+const TO_BE_AUXILIARIES = /\b(is|are|was|were|be|been|being)\b/gi;
+const TO_BE_THRESHOLD = 3;
+
 // ──────────────────────────────────────────────────────────────────────────
 // COLLECTORS
 // ──────────────────────────────────────────────────────────────────────────
@@ -269,7 +298,46 @@ function scanEmDash(issueId, field, text) {
     issueId,
     field,
     'em-dash',
-    `${count} em-dash${count > 1 ? 'es' : ''} (—) — LLM telltale. Replace with comma, colon, period, or parentheses depending on context. See docs/research/language-quality.md §9.`,
+    `${count} em-dash${count > 1 ? 'es' : ''} (—) — LLM telltale. Replace with comma, colon, period, or parentheses depending on context. See docs/research/language-quality.md §10.`,
+  );
+}
+
+function scanScaffolding(issueId, field, text) {
+  if (!text) return;
+  // Split on sentence boundaries: keep clauses that follow ., !, ? or are at start.
+  // We test each sentence's first word(s) against the marker list.
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  for (const s of sentences) {
+    const trimmed = s.trimStart();
+    for (const marker of SCAFFOLDING_MARKERS) {
+      // Marker must be followed by comma to qualify as a discourse marker
+      // (otherwise the word may be doing other work — "Notable cases include",
+      // "Of course the question is also").
+      const re = new RegExp(`^${marker.replace(/ /g, '\\s+')}\\s*,`, 'i');
+      if (re.test(trimmed)) {
+        warn(
+          issueId,
+          field,
+          'scaffolding-marker',
+          `sentence-start "${marker.charAt(0).toUpperCase() + marker.slice(1)}," — strong logic does not need announcing. See docs/research/language-quality.md §8.`,
+        );
+        break; // one per sentence
+      }
+    }
+  }
+}
+
+function scanAuxiliaryDensity(issueId, field, text) {
+  if (!text) return;
+  const matches = text.match(TO_BE_AUXILIARIES);
+  if (!matches) return;
+  const count = matches.length;
+  if (count < TO_BE_THRESHOLD) return;
+  warn(
+    issueId,
+    field,
+    'auxiliary-density',
+    `${count} to-be auxiliaries (${[...new Set(matches.map((m) => m.toLowerCase()))].join('/')}) — verb-driven prose is stronger. See docs/research/language-quality.md §7.1.`,
   );
 }
 
@@ -331,6 +399,8 @@ for (const issue of targetIssues) {
     scanHyphens(id, field, text);
     scanPassive(id, field, text);
     scanEmDash(id, field, text);
+    scanScaffolding(id, field, text);
+    scanAuxiliaryDensity(id, field, text);
     if (suggestVocab) scanVocab(id, field, text);
   }
 }

@@ -140,9 +140,190 @@ Curated words rarely used in Malaysian English news writing that carry high mean
 - **"The proximate cause is X. The structural cause is Y."** Forces the reader past the surface explanation.
 - **"What is novel is not X. What is novel is Y."** Resets the news frame.
 
+### Cross-language loanwords (any language ever spoken, if it is the *best* word)
+
+English borrows ruthlessly because no single language carries every concept at the precision a careful writer needs. The rule for T4A is unchanged from §5: **one carefully-chosen elevated word per issue.** That word can come from any language on earth, provided three tests pass:
+
+1. **Precision test.** The loanword carries a meaning English does not — or carries it in fewer characters. *Realpolitik* is not "pragmatic politics"; it is pragmatic politics that subordinates principle to power, and the German word names the moral residue plain English elides.
+2. **Register test.** The educated Malaysian reader of TIME, the *Wall Street Journal*, or *The Edge* either already knows the word or can infer its meaning from context. If a Penang lawyer or a KL economist would have to Google it, drop it.
+3. **No-substitute test.** Try the plainest English alternative. If the plain word reads as well or better, use the plain word.
+
+Loanwords that fail any of the three tests are *performance*, not precision. The reader who notices the performance discounts the analysis.
+
+#### Malay and Arabic — the home register
+
+These belong in T4A's native voice. Educated Malaysians read them as fluent local English, not as foreign borrowings.
+
+- **daulat** (Malay, from Arabic *dawlah*) — sovereignty in its sacral sense; the ruler's inviolable authority. *Use when:* the issue touches the Conference of Rulers, royal prerogative, or constitutional monarchy. *Plain alternative does not exist* — "sovereignty" misses the sacral charge.
+- **maruah** (Malay) — dignity, especially honour that can be wounded by procedural slight. *Replaces:* dignity, face. *Use when:* the harm is reputational and the affront is to standing, not safety.
+- **amanah** (Malay/Arabic) — fiduciary trust; a duty held *on behalf of* someone else. *Replaces:* duty, responsibility. *Use when:* the breach is of stewardship, not contract. *Example:* "The pension scheme is *amanah*, not a discretionary fund."
+- **rakyat** (Malay) — the people, in the constitutional sense. *Use sparingly* — overused in political speech to the point of cliché. Reserve for moments where the constitutional relationship is the point.
+- **adat** (Malay) — customary law, especially Sabah and Sarawak native customary rights. *Use when:* the issue involves NCR land, indigenous governance, or pre-statutory custom.
+- **hak** (Malay/Arabic) — right or due, in the legal-moral sense. *Replaces:* right. *Use when:* the entitlement has both legal and moral weight; *hak* carries both, *right* in English skews to legal.
+- **lacuna** (Latin, also used in Malaysian legal writing) — a gap in the law, statute, or record. *Replaces:* gap, omission. *Use when:* the gap is consequential and the writer wants the judicial register.
+- **mens rea** (Latin) — guilty mind; the mental element of a crime. *Use when:* the legal question turns on intent.
+- **prima facie** (Latin) — on first appearance, sufficient unless rebutted. *Replaces:* on the face of it.
+- **ijtihad** (Arabic) — independent reasoning in Islamic jurisprudence. *Use when:* a religious-legal question turns on whether the question is open to fresh reasoning or settled by precedent.
+- **ulama** (Arabic, plural) — religious scholars collectively. *Use when:* naming a class, not a single mufti.
+- **wakaf** (Arabic) — Islamic endowment, perpetual charitable trust. *Use when:* the institution is the legal structure, not the asset.
+- **fatwa** (Arabic) — religious edict. *Use precisely* — a fatwa is not a law; misusing the term as synonym for "ruling" is sloppy.
+
+3R note: every Malay/Arabic loanword here describes a *process or concept*, not a community. Critique of *daulat* as a constitutional doctrine is critique of doctrine; "criticising daulat" framed as criticising the institution of the Rulers crosses the 3R line. The word names the structure; the structure can be examined.
+
+#### German — the structural-failure register
+
+German excels at compound nouns for institutional and political failure. Use one per issue at most.
+
+- **Realpolitik** — politics conducted on practical grounds, subordinating principle to power. *Replaces:* pragmatic politics, hard-nosed diplomacy.
+- **Schadenfreude** — pleasure in another's misfortune. *Use only when:* this is genuinely the political dynamic; usually it is not, and the word reads as sneering.
+- **Putsch** — illegitimate seizure of power, especially by a faction inside the existing institution. *Use when:* describing internal-party coups or attempts to capture an office through procedural manoeuvre. Stronger than "coup" because "coup" implies external force; *Putsch* implies the building turned on itself.
+- **Diktat** — a dictated, non-negotiable instruction issued by a superior power. *Replaces:* directive, order. *Use when:* the recipient had no real choice.
+- **Zeitgeist** — the dominant spirit or temper of an era. *Use only when:* you can name the era and the temper precisely; otherwise it reads as filler.
+- **Anschluss** — political absorption, usually of a smaller polity by a larger one. *Use cautiously* — the WWII echo is loud; reserve for cases where the absorption is the story.
+- **Weltanschauung** — comprehensive worldview, especially as a political-philosophical commitment. *Use rarely* — the plain "worldview" reads better in 90% of cases.
+
+#### French — the diplomatic-register
+
+French gives English its vocabulary for diplomacy, statecraft, and ceremonial procedure. Use sparingly.
+
+- **fait accompli** — a thing already done, with reversal impractical. *Replaces:* done deal. *Use when:* the structural point is that the next move is foreclosed.
+- **volte-face** — an abrupt and complete reversal of position. *Replaces:* U-turn, reversal. *Use when:* the reversal is total and the speed is the story.
+- **détente** — easing of tension between adversaries. *Replaces:* easing, thaw.
+- **bricolage** — improvised construction from whatever is at hand. *Use when:* the policy or institution was patched together rather than designed; the bricolage is the criticism.
+- **doyen** — the most senior member, especially of a profession. *Replaces:* senior figure.
+- **noblesse oblige** — the obligation of those in high position to act with honour. *Use sparingly* and usually ironically when the obligation has been ignored.
+- **laissez-faire** — let-it-be; the policy of non-intervention. *Replaces:* hands-off.
+- **dirigiste** — directed; characterised by strong state intervention in the economy. *Replaces:* state-directed. *Use when:* the contrast with market-led is the analytical point.
+
+#### Latin and Greek — the legal and analytical register
+
+These belong in T4A whenever the issue is legal or analytical. Most are already in Malaysian English newsroom prose.
+
+- **sui generis** — of its own kind; not comparable to anything else. *Use when:* the structural point is that no other case applies.
+- **stare decisis** — let the prior decision stand; the doctrine of binding precedent. *Use when:* the legal question turns on whether a precedent constrains the bench.
+- **inter alia** — among other things. *Replaces:* including. *Use when:* the legal-document register matters.
+- **mutatis mutandis** — with the necessary changes made. *Use when:* a rule applies to a parallel situation with adjustments, and the adjustments are obvious.
+- **status quo ante** — the state of affairs as it was before. *Use when:* the question is whether to restore a prior arrangement.
+- **casus belli** — the trigger that justifies a hostile action. *Use carefully* — outside a literal war context this reads as overblown unless the trigger is genuinely the start of something serious.
+- **quid pro quo** — this for that; an exchange of favours, often with corruption implication. *Use precisely* — the prosecutorial standard for *quid pro quo* corruption is specific; loose use weakens the term.
+- **imprimatur** — official approval; literally "let it be printed." *Replaces:* sanction, blessing. *Use when:* the approval is formal and the formality matters.
+- **modus operandi** — the characteristic method of doing something. *Use when:* the pattern is the story.
+- **ex ante** / **ex post** — beforehand / afterward. *Use in:* analytical writing about whether a rule was set in advance or fitted after the fact.
+- **a priori** — from prior reasoning, without empirical reference. *Use carefully* — often misused for "obvious." Real meaning is closer to "by definition."
+- **prima facie** (also above) — on first appearance.
+- **ex gratia** — as a favour, not legal obligation. *Use when:* a payment is made without admitting liability.
+- **pro tempore** — for the time being; temporary. *Use when:* the temporariness is the point.
+
+#### Other (rare but unmatched)
+
+- **realpolitik** (also above; technically the only Italian/German loanword needed for the political-realism concept)
+- **kafkaesque** (English-via-German) — characterised by surreal bureaucratic absurdity. *Use when:* the bureaucracy is the story; otherwise reads as adolescent.
+- **byzantine** (English-via-Greek) — needlessly complex, with hidden internal politics. *Use when:* the complexity is intentional or politically motivated.
+- **ad hominem** (Latin) — directed at the person, not the argument. *Use precisely.*
+- **ipso facto** (Latin) — by that fact alone.
+
+The discipline: **one** of these per issue, in the slot that earns it (typically reframe or view). Two in one issue and the prose starts to sound like a vocabulary exam. None at all and the issue lacks the precision spike that distinguishes T4A from generic editorial copy.
+
 ---
 
-## 7. The anti-pattern catalog
+## 7. Sentence-level craft — the WSJ / TIME / Medium standard
+
+The elevated vocabulary in §6 supplies the words. This section governs how the sentences are built. These rules are the writer's judgement; only items 3 and 5 are validator-flagged.
+
+### 7.1 Verb diet — the to-be ratio
+
+Strong prose is verb-driven. Weak prose is auxiliary-driven. Count the linking verbs (`is`, `are`, `was`, `were`, `be`, `been`, `being`) in any card. If a card has three or more, rewrite to active verbs.
+
+| Auxiliary-driven (weak)                                                  | Verb-driven (strong)                                       |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| "The contract was a violation of the rule."                              | "The contract violated the rule."                          |
+| "There is significant evidence that the regulator was aware."            | "Bank Negara documents show the regulator knew."           |
+| "The minister was complicit in the decision."                            | "The minister signed the order."                           |
+| "There were three meetings between Cabinet and the firm."                | "Cabinet met the firm three times."                        |
+
+The validator flags fields with ≥3 to-be auxiliaries. The writer judges whether the construction is genuinely needed (sometimes it is — definitions, comparisons, passive-by-design legal statements).
+
+### 7.2 Anglo-Saxon backbone, Latinate spike
+
+Pinker again, sharpened. Build sentences out of Anglo-Saxon verbs (*break, take, hide, hold, give, find, lose, ban*) and place a single Latinate or loanword noun where the analytical weight lands. The reader's eye accelerates over short Saxon words and slows on the long Latinate one — that asymmetry is what makes the precision spike land.
+
+Compare:
+
+> "The committee facilitated the dissemination of information regarding the procurement irregularity."
+
+> "The committee leaked the procurement *lacuna* to the press."
+
+Identical informational content. The second sentence has one elevated word (*lacuna*); every other word is Anglo-Saxon. The reader feels the analytical point without effort.
+
+### 7.3 Sentence rhythm — vary length deliberately
+
+A page of 18-word sentences reads as machine output. A page of seven-word sentences reads as juvenile. The discipline is to alternate.
+
+| Sentence count | Length | Function                                          |
+| -------------- | ------ | ------------------------------------------------- |
+| Most           | 12-20 words | Carry the analytical work                    |
+| One per card   | 4-8 words  | The hammer-down. Land a single point.        |
+| Occasionally   | 25-30 words | One subordinate-clause sentence for weight  |
+
+The short sentence is the most undervalued tool. Use it for the kicker on the view card, for the final clause of the reframe, for the moment where the reader needs to stop and absorb.
+
+> "1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. **Only political checks remain.**" (1988 view card)
+
+Four chronological short sentences, then a five-word kicker. That structure is the reason the card lands.
+
+### 7.4 Show-don't-tell — the specificity floor
+
+Abstraction is the enemy of credibility. Every claim about a structural problem needs a specific particular: a named person, a date, a number with a denominator, a place. The CLAUDE.md "identifiable case leads fact card 1" rule extends here to the whole issue: every card should have at least one specific.
+
+| Telling (weak)                                                  | Showing (strong)                                                                      |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| "The system fails workers."                                      | "Sajjad paid RM23,000 in agent fees for a job that paid RM38 a day."                  |
+| "Corruption is widespread in procurement."                       | "Of 4,679 defence contracts since 2011, one resulted in a conviction. That conviction was reversed on appeal." |
+| "Vulnerable communities are affected disproportionately."        | "All nine killed at Bukit Kukus were foreign workers. The EIA had no Bahasa Indonesia version." |
+| "There has been a lack of transparency."                         | "Parliament asked four times. The Minister cited Section 14(a) each time."             |
+
+The same fact, told differently. The right side carries the *same information* the left side intended, plus a denominator the reader can hold.
+
+### 7.5 The rule of three — tricolon
+
+Three parallel items in sequence are the most memorable structure in English (and in most languages). They are why every great speech contains them: *blood, sweat, and tears*; *life, liberty, and the pursuit of happiness*; *I came, I saw, I conquered.* The third item should be the longest or weightiest.
+
+T4A uses tricolons sparingly — once per issue at most, usually on the view card. They land when the three items map cleanly to a structural point.
+
+> "Norway acted within its rules. The real cost is 15 years of LCS spending: **no delivered ships, one DNAA, no conviction across four governments.**" (1983 view)
+
+Three parallel facts, each named in fewer syllables than the last. The reader walks away with the structure.
+
+### 7.6 The kicker — the final clause
+
+WSJ news features end with a sentence that recasts the story. The kicker is not a summary. It is the line the reader will quote in a WhatsApp group with no commentary.
+
+The discipline for T4A's view cards: the last sentence should pass two tests.
+
+1. **WhatsApp test** — does it stand alone as a sentence a thoughtful reader would paste with no context?
+2. **Subtraction test** — if the reader remembers only this sentence and forgets everything else, has T4A still landed the point?
+
+Examples of kickers that pass both tests:
+
+> "The fix exists. No coalition will accept the disruption." (1973)
+
+> "Only political checks remain." (1988)
+
+> "The infrastructure works. The guardrails do not." (1887, paraphrased)
+
+A kicker that fails both tests is doing scaffolding work — explaining or qualifying — that belongs earlier in the card.
+
+### 7.7 Anaphora — repetition with intent
+
+Repeating the same opening word or phrase across successive sentences builds rhythm and emphasis. The technique is ancient: Lincoln's *we cannot dedicate, we cannot consecrate, we cannot hallow*; Churchill's *we shall fight*. Used once per issue, in the right slot, it makes a card memorable.
+
+> "Same cast since the 1970s. Lim Kit Siang in DAP for 56 years. Anwar in UMNO since 1982. Najib was MP for 46 years until his SRC conviction." (1987 fact[1])
+
+The implied anaphora — *X in Y for Z years* — repeated three times, creates the structural point without stating it.
+
+---
+
+## 8. The anti-pattern catalog
 
 These are the patterns `scripts/validate-language.mjs` flags as warnings. Each has a rewrite path.
 
@@ -171,6 +352,27 @@ These all signal "thinkpiece," not "discovery." The reader's System 1 reads them
 
 Almost always deletable or replaceable with one short word. `in order to` → `to`. `due to the fact that` → `because`. `at this point in time` → `now`.
 
+### Scaffolding discourse markers (sentence-start)
+
+`However,` `Moreover,` `Furthermore,` `Nevertheless,` `Additionally,` `Crucially,` `Notably,` `Importantly,` `Significantly,` `That said,` `Of course,` `Interestingly,` `Indeed,`.
+
+These are scaffolding for an argument that is not yet load-bearing. A strong logical move does not need announcing — the reader can see it.
+
+| Weak                                                          | Strong                                               |
+| -------------------------------------------------------------- | ----------------------------------------------------- |
+| "However, the audit was never published."                      | "The audit was never published."                      |
+| "Crucially, the regulator depends on industry fees."           | "The regulator depends on industry fees."             |
+| "Moreover, three other ministries face the same gap."          | "Three other ministries face the same gap."           |
+| "Importantly, the figure excludes Sabah."                      | "The figure excludes Sabah."                          |
+
+If the logical relationship is genuinely non-obvious, name it specifically: *"despite the disclosure,"* *"in the same week,"* *"by the same body,"* *"under the same Act."* Generic scaffolding adverbs are the prose equivalent of vague stage directions.
+
+The validator flags these when they appear at sentence start in any reader-facing field.
+
+### Auxiliary-verb density (the to-be diet)
+
+Three or more `is / are / was / were / be / been / being` auxiliaries in one card field signals weak verb selection. See §7.1 for the rewrite path. The validator flags fields that cross the threshold.
+
 ### Formulaic reframe templates
 
 A reframe rotates the reader's mental model. The validator flags structural repetition across the last 10 issues. Templates to watch:
@@ -191,7 +393,7 @@ If the validator's running tally shows 4-of-10 in the same template family, the 
 
 ---
 
-## 8. The hyphenated-compound heuristic
+## 9. The hyphenated-compound heuristic
 
 Hyphens in compound words signal one of three things: (1) the right answer, (2) old style waiting to close up, (3) laziness. The validator distinguishes.
 
@@ -232,7 +434,7 @@ The validator warns; the writer decides. Some genuinely belong hyphenated in T4A
 
 ---
 
-## 9. The em-dash test (and other LLM telltales)
+## 10. The em-dash test (and other LLM telltales)
 
 T4A's editorial voice is human, not machine. Mass em-dash use is the single strongest visible signature of LLM-generated prose: generative models default to `—` (U+2014) for parenthetical breaks, appositives, and conclusion-setups where most human writers use commas, colons, periods, or parentheses. Readers who recognise the pattern — and many now do — read the prose as machine-written and discount the whole publication's credibility regardless of how rigorous the underlying analysis is.
 
@@ -273,7 +475,7 @@ These are not always wrong, but every one of them appearing twice in the same is
 
 ---
 
-## 10. Editorial-effort allocation (carried forward from CLAUDE.md)
+## 11. Editorial-effort allocation (carried forward from CLAUDE.md)
 
 Restated here so it sits next to the word-choice rules that shape it. Because 80% of readers only read the hook:
 
@@ -289,20 +491,25 @@ If editing time is being spent in inverse proportion, the issue will land poorly
 
 ---
 
-## 11. TL;DR — the operational checklist
+## 12. TL;DR — the operational checklist
 
 Before publishing an issue, walk this list against headline + hook big + reframe big + view big:
 
-1. **No hedge from §7** present.
-2. **No weak abstraction from §7** present.
-3. **No bureaucratic dead-weight from §7** present.
-4. **No hyphenated compound from §8** present unless it belongs to the "right" category.
-5. **No em-dash from §9** present unless it is the only punctuation that actually works.
-6. **Hook contains one specific number, name, or date** in the first clause.
-7. **Hook's dominant emotion is anger-at-process or anxiety-of-precedent**, not sadness or generalized concern.
-8. **One elevated word from §6** appears somewhere in the issue (typically reframe or view).
-9. **Reframe template differs** from at least 3 of the last 5 reframes.
-10. **Verbs are active**; agentless passives ("mistakes were made") absent.
-11. **Key entities are named once and reused under the same name**: no elegant variation.
+1. **No hedge from §8** present.
+2. **No weak abstraction from §8** present.
+3. **No bureaucratic dead-weight from §8** present.
+4. **No scaffolding discourse marker from §8** present at sentence start (`However,` `Moreover,` `Furthermore,` `Crucially,` `Notably,` `Importantly,` `That said,`).
+5. **No hyphenated compound from §9** present unless it belongs to the "right" category.
+6. **No em-dash from §10** present unless it is the only punctuation that actually works.
+7. **Hook contains one specific number, name, or date** in the first clause.
+8. **Hook's dominant emotion is anger-at-process or anxiety-of-precedent**, not sadness or generalized concern.
+9. **One elevated word from §6** appears somewhere in the issue — and only one. The word may be from any language (English, Malay, Arabic, German, French, Latin, Italian) provided it passes the precision / register / no-substitute test in §6.
+10. **Verb diet (§7.1)** — no card carries three or more `is/are/was/were/be/been/being` auxiliaries unless the construction is genuinely needed.
+11. **Sentence rhythm (§7.3)** — at least one card carries a short hammer-down sentence (4-8 words).
+12. **The view card's last sentence passes the WhatsApp test (§7.6)** — stands alone as a quotable line.
+13. **Specificity floor (§7.4)** — every card has at least one named person, named institution, dated event, or numbered fact with a denominator.
+14. **Reframe template differs (§8)** from at least 3 of the last 5 reframes.
+15. **Verbs are active**; agentless passives ("mistakes were made") absent.
+16. **Key entities are named once and reused under the same name**: no elegant variation.
 
-The validator handles 1-5 and 9 mechanically. 6-8 and 10-11 are the writer's judgement, informed by this document.
+The validator handles 1-6, 10, and 14 mechanically. The rest are the writer's judgement, informed by this document.

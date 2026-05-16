@@ -164,13 +164,23 @@ The validator surfaces:
 3. **Bureaucratic dead-weight** — `stakeholders`, `going forward`, `in terms of`, `the fact that`, etc.
 4. **Hyphenated compounds** that should close up (`non-partisan` → `nonpartisan`) or open up (`civil-society` → `civil society`). Some hyphens are correct (`re-export`, `40-year`) and the warning is a prompt, not a verdict.
 5. **Agentless / by-clause passives** — flagged as candidates for active-voice rewrite where the actor is the story.
-6. **Em-dashes** (`—`, U+2014) — the single strongest visible signature of LLM-generated prose. The validator flags every occurrence in reader-facing surfaces (headline, context, card big, card sub). Replace with commas, colons, periods, or parentheses depending on context. The validator is warnings-only; the writer judges per instance. Aggregate matters more than any single dash: the corpus should not read em-dash-heavy. Full guidance and replacement table in `docs/research/language-quality.md` §9.
-7. **Reframe template drift** — warns when the same rhetorical structure (`X is not Y, it is Z`; `The question is not X, it is Y`; `X isn't the scandal, Y is`) appears in 4+ of the last 10 published reframes.
+6. **Em-dashes** (`—`, U+2014) — the single strongest visible signature of LLM-generated prose. The validator flags every occurrence in reader-facing surfaces (headline, context, card big, card sub). Replace with commas, colons, periods, or parentheses depending on context. Full guidance and replacement table in `docs/research/language-quality.md` §10.
+7. **Scaffolding discourse markers at sentence start** — `However,` `Moreover,` `Furthermore,` `Crucially,` `Notably,` `Importantly,` `That said,` `Of course,` etc. Strong logic does not need announcing; the reader can see the move for themselves. Detail in §8 of the research doc.
+8. **Auxiliary-verb density** — fields with three or more `is/are/was/were/be/been/being` auxiliaries are flagged as weak-verb candidates. Rewrite to verb-driven prose per §7.1.
+9. **Reframe template drift** — warns when the same rhetorical structure (`X is not Y, it is Z`; `The question is not X, it is Y`; `X isn't the scandal, Y is`) appears in 4+ of the last 10 published reframes.
 
-Two posture rules that the validator cannot enforce mechanically — but Stage 6 synthesis is expected to enforce:
+The validator is warnings-only; the writer judges per instance. Aggregate matters more than any single flag: the corpus should not read em-dash-heavy, auxiliary-heavy, or scaffolding-heavy.
 
-- **One elevated word per issue.** Pick one carefully-chosen sophisticated word (from `docs/research/language-quality.md` §6) — typically in the reframe or view — that carries meaning the plain alternative cannot. *Forbearance*, *entrench*, *capture* (regulatory sense), *provenance*, *circumvention*. Used sparingly, these make readers feel smart; used carelessly, they make prose feel performative.
-- **Dominant emotion check on every hook.** Read the hook's `big` field alone. Name the emotion. If it is **sadness** or **generalized concern**, rewrite to **anger-at-process** or **anxiety-of-precedent** (per Berger-Milkman 2012 on what drives sharing). Same facts, different emotion, very different reach.
+Posture rules the validator cannot enforce mechanically — Stage 6 synthesis is expected to enforce them:
+
+- **One elevated word per issue.** Pick one carefully-chosen sophisticated word — typically in the reframe or view — that carries meaning the plain alternative cannot. The word may come from any language ever spoken (English, Malay, Arabic, German, French, Latin, Italian, Greek) provided it passes the three tests in `docs/research/language-quality.md` §6: **precision** (carries meaning English does not), **register** (an educated Malaysian reader of TIME / WSJ / *The Edge* knows or can infer it), **no-substitute** (the plain alternative reads worse). Examples: *forbearance*, *entrench*, *capture* (regulatory sense), *provenance*, *lacuna*, *amanah* (Malay/Arabic — fiduciary trust), *daulat* (sacral sovereignty), *Realpolitik*, *fait accompli*, *sui generis*, *imprimatur*. Used sparingly, these make readers feel smart. Used carelessly — or more than once per issue — they make prose feel performative.
+- **Dominant emotion check on every hook.** Read the hook's `big` field alone. Name the emotion. If it is **sadness** or **generalized concern**, rewrite to **anger-at-process** or **anxiety-of-precedent** (Berger-Milkman 2012). Same facts, different emotion, very different reach.
+- **Sentence-level craft (§7 of the research doc).** Beyond the mechanical validator rules, every published issue should pass:
+  - **Verb diet (§7.1)** — Anglo-Saxon backbone, Latinate spike. Avoid `is/are/was/were` stacking.
+  - **Sentence rhythm (§7.3)** — at least one card carries a short hammer-down sentence (4-8 words). Vary length deliberately.
+  - **Show-don't-tell (§7.4)** — every card has at least one specific (named person, named institution, dated event, numbered fact with denominator).
+  - **The kicker (§7.6)** — the view card's last sentence must pass the WhatsApp test: stand alone as a quotable line, and the subtraction test: if the reader remembers only this sentence, has the issue still landed.
+  - **Tricolons sparingly (§7.5)** — once per issue at most, usually on the view card, with the third item the weightiest.
 
 Both rules are encoded in [`engine/templates/language-quality-preamble.txt`](engine/templates/language-quality-preamble.txt), which Stage 6 synthesis reads after `stage6-preamble.txt`.
 
