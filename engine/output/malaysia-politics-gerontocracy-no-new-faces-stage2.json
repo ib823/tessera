@@ -1,213 +1,100 @@
 {
   "_provenance": {
-    "stage": "Stage 2 — Bias Audit (acting as Gemini)",
+    "stage": "Stage 2 — Bias Audit (Gemini)",
     "slug": "malaysia-politics-gerontocracy-no-new-faces",
     "issue_id": "1983",
     "reviewed": "engine/output/malaysia-politics-gerontocracy-no-new-faces-stage1.json",
-    "generated_at": "2026-05-16",
-    "note": "Reviewer is Claude Opus 4.7 acting as the Stage 2 reviewer in lieu of an external Gemini run. Same preamble (engine/templates/stage2-preamble.txt) and same independence discipline applied — every flag below is supported by an independent web verification, not by training-data assumption."
+    "source": "External Gemini run, response provided by user 2026-05-16. Supersedes the in-Claude Stage 2 review previously saved to this path."
   },
-  "bias_score": 22,
-  "political_lean_estimate": -0.1,
-  "ethnic_framing_estimate": 0.15,
+  "bias_score": 45,
+  "political_lean_estimate": 0.0,
+  "ethnic_framing_estimate": 0.0,
   "religious_sensitivity_estimate": 0.0,
-  "narrative_framing_estimate": -0.2,
-  "geographic_bias_estimate": 0.7,
-  "economic_framing_estimate": 0.3,
-  "gender_agency_estimate": 0.7,
-  "partisan_flags": [
-    {
-      "quote": "Najib: MP for 46 years until prison.",
-      "why_biased": "Najib is the only living named veteran whose tenure is explicitly tagged with a prison-status post-script. Anwar's documented 1998-2004 incarceration on sodomy/corruption charges (later overturned in part) is not paralleled. Muhyiddin's pending Jana Wibawa abuse-of-power and August 2024 sedition charges are not paralleled. The asymmetric tagging implies Najib is a uniquely disqualified figure when the pattern of veteran politicians facing or having faced criminal proceedings is broader.",
-      "fix": "Either drop the 'until prison' qualifier (the 46-year tenure stat alone makes the point) OR add a parallel parenthetical for Anwar (1998-2004 incarceration) and Muhyiddin (active charges) so each named veteran is treated symmetrically."
-    },
-    {
-      "quote": "the bottleneck is party machinery, pensions, and GLC patronage",
-      "why_biased": "The three named structural causes are the ones BERSIH and IDEAS — both broadly in the electoral-reform-civil-society spectrum — emphasise. The structural causes that government-aligned commentators emphasise (e.g., voter conservatism in Malay-majority constituencies, the constitutional residency rule under Article 47, the legitimate primacy of party-coalition discipline) are absent. This is asymmetric framing of the cause set even though the named factors are individually verifiable.",
-      "fix": "Either add 'and constituency-level voter conservatism' to the cause list, OR soften the reframe to: 'The bottleneck is structural, with party machinery, pensions, and patronage among the documented factors' — leaving room for other factors without endorsing or rejecting them."
-    }
-  ],
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.8,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 1.0,
+  "partisan_flags": [],
   "racial_flags": [],
   "religious_flags": [],
   "geographic_flags": [
     {
-      "quote": "The same cast has run politics since the 1970s. Lim Kit Siang: MP for 53 years. Anwar in UMNO since 1982. Najib: MP for 46 years until prison.",
-      "why_biased": "All four named individuals (Lim Kit Siang, Anwar, Najib, plus Hadi Awang in the sub) are Peninsular Malaysian politicians. Sabah and Sarawak's equivalent veteran-dominance patterns are entirely absent — and they are arguably more entrenched. Sarawak's Abang Johari Tun Openg has been Sarawak Premier since January 2017 (9 years and counting); his predecessor Adenan Satem (2014-2017) was a member of the same Taib-extended political family network that has dominated Sarawak GPS politics since the 1980s. Sabah's GRS-led government since 2020 features a continuity of 1980s-era figures (Bung Mokhtar Radin, Salleh Said Keruak). Omitting East Malaysia entirely makes the analysis read as Peninsular-default.",
-      "fix": "Add one sentence to either Card 2 sub or the View card: 'Sarawak has had effectively one political family network at the Premier-level since the 1980s.' Or expand Card 2 to four named individuals plus 'plus Sabah and Sarawak's parallel patterns.'"
-    },
-    {
-      "quote": "France's last two prime ministers took office at 39 and 34. Malaysia's last three: 92, 72, 75.",
-      "why_biased": "European-only comparison set. The reader prompt explicitly contrasted Malaysia with Europe, so the comparison axis is defensible — but Singapore (Lawrence Wong, 51, May 2024), Indonesia (Jokowi, 53 at first election; Prabowo, 73 at election), Japan (Takaichi, 64), India (Modi, 64 at first PM) provide the regional-peer baseline that ordinary Malaysian readers can place themselves against more readily than France or Finland. Editorial value of European cases is the renewal-mechanism contrast, but readers will reasonably ask 'why pick the most extreme cases'.",
-      "fix": "Optional but recommended: keep France/Finland/Austria but add one Asian counter-data-point in Card 4 sub: 'Singapore's PM took office in 2024 at 51; Japan's at 64.' This shows the comparison is not cherry-picked even though the pattern is real."
+      "quote": "Lim Kit Siang: MP for 53 years. Anwar in UMNO since 1982. Najib: MP for 46 years...",
+      "why_biased": "Complete erasure of East Malaysia. Every single politician cited to illustrate the gerontocracy or youth pipeline is from Peninsular Malaysia. Sarawak and Sabah have profound examples of decades-long political incumbency (e.g., Taib Mahmud, Shafie Apdal, Jeffrey Kitingan) that are ignored.",
+      "fix": "Include at least one prominent East Malaysian figure when listing long-tenured politicians to accurately reflect the national scope of the issue."
     }
   ],
-  "economic_flags": [
-    {
-      "quote": "Ministers receive up to RM2 million in gratuity at resignation.",
-      "why_biased": "The 'up to' phrasing is faithful to the source (The Vibes citing MoP Remuneration Act 1980 First Schedule), but the reader will form a misimpression that the typical figure approaches the cap. Most ministers do not receive the maximum because the gratuity formula (1/48 × salary × 12 × period of reckonable service) requires extended cumulative service. The RM2m headline number drives anger but the median ministerial gratuity is materially lower.",
-      "fix": "Card 3 big should keep 'up to RM2 million' but Card 3 sub or View should add a denominator-style clarifier: e.g., 'The maximum applies to ministers with extended cumulative service; the typical exit payment is materially smaller.' Without this, the reader anchors on RM2m as typical."
-    }
-  ],
+  "economic_flags": [],
   "gender_flags": [
     {
-      "quote": "[absent across all 7 cards]",
-      "why_biased": "Women's parallel inclusion deficit (13.5% of MPs in GE15, per the brief's KEY STATISTICS section) is acknowledged in source_notes as 'a parallel inclusion deficit' but does not appear in any card. The named cast in Card 2 is all-male (Lim Kit Siang, Anwar, Najib, Hadi Awang, Lim Guan Eng — five men). The named comparators in Card 4 include three men (Macron, Attal, Kurz) and one woman (Marin) — the woman comes last and is identified by country only, not by name. Amira Aisya, the woman who succeeded Syed Saddiq as MUDA president in March 2026, is in the brief but not named in any card. The gender erasure is structural to the draft.",
-      "fix": "Card 2 or Card 4 should name at least one woman in the contrast: e.g., add 'Amira Aisya became MUDA president at 35 in March 2026' to Card 4 sub, OR add Hannah Yeoh (46, Federal Territories Minister as of Dec 2025 reshuffle) to a Malaysian-women-in-cabinet count. The 13.5% women-MP figure should appear in either the View card or a parenthetical in Card 1."
+      "quote": "Lim Kit Siang... Anwar... Najib... Hadi Awang... Lim Guan Eng... Mahathir... P. Prabakaran... Dr Taufiq Johari...",
+      "why_biased": "Complete erasure of Malaysian women. Every single local politician named in this analysis is male. While foreign women (Marin, Schilling) are mentioned, the analysis fails to include female veterans (e.g., Rafidah Aziz, Azalina Othman) or young female leaders, cementing politics as an exclusively male domain.",
+      "fix": "Diversify the examples of both veteran and young politicians to include Malaysian women."
     }
   ],
   "omission_flags": [
-    "Anwar's 16 December 2025 cabinet reshuffle materially changes the snapshot used in Card 1. The reshuffle elevated Mohammed Taufiq Johari (29) to Minister of Youth and Sports — making him the youngest minister in the Anwar cabinet — and Akmal Nasrullah Nasir (39) to Minister of Economy. Both are verified primary news (Malay Mail 16 Dec 2025; BERNAMA 16 Dec 2025; The Star 17 Dec 2025). The analysis acknowledges this risk in source_notes but does not surface it in cards. Stage 6 must address: either incorporate the counter-data-point in the View card, OR add a caveat to the headline that the snapshot date is GE15 (Nov 2022) not Dec 2025 cabinet. Without one of these, the analysis risks being immediately rebutted by a single news item.",
-    "Sarawak GPS dynastic continuity: Abang Johari Tun Openg has been Sarawak Premier since 13 January 2017 (PBB; predecessor Adenan Satem). Sarawak GPS holds 23 of 31 Sarawak federal seats — the largest cohesive bloc in any Malaysian state. The renewal-failure pattern at the state-Premier level in Sarawak is more entrenched than at federal level, and is entirely absent from the analysis.",
-    "Sabah's December 2025 appointed-assembly-members provision (cited as comparator in the related Johor Unelected Reps brief #1977) — Sabah added 6 nominated members to the GRS-led state assembly. This is a concrete recent example of the SAME structural mechanic the analysis is critiquing, but specific to East Malaysia. The cross-link strengthens the issue and removes the Peninsular-default reading.",
-    "The 2019 Constitution (Amendment) Act lowering candidacy age to 18 was passed UNANIMOUSLY by both Dewan Rakyat and Dewan Negara — the first bill in Malaysian history to receive unanimous bicameral support (per Library of Congress, 18 Jul 2019). This counter-data-point complicates the Reframe's narrative that 'party machinery' blocks renewal: the political class itself voted to remove the constitutional barrier. Either the Reframe should acknowledge this unanimity (strengthening the 'machinery not law' argument), or the analysis should explain why party machinery did not deploy the same support to opening youth candidacies in practice.",
-    "The Dewan Negara minimum age remains 30 (Federal Constitution Article 47(2)) — the 2019 amendment lowered the Dewan Rakyat candidacy floor to 18, but did NOT touch the Senate. Even Taufiq Johari at 29 cannot be a Senator. This asymmetric reform is a sharper structural finding than the Reframe currently makes.",
-    "Orang Asli representation: zero MPs from Orang Asli communities in any Parliament since independence. The under-35 representation gap (5%) is real but the indigenous-peoples representation gap is total. The analysis treats 'youth' as the primary inclusion variable when 'class', 'indigenous status', and 'gender' all show comparable or worse deficits — selecting one without naming the others is itself a framing choice.",
-    "Migrant worker representation: ~2.5 million documented migrant workers (per the brief's tier-A source #14 from the Malaysia 2.5 million migrants brief) and ~500,000 to 1 million undocumented (per SUHAKAM) are entirely without electoral voice. This is comparison-class context that places the under-35 deficit in a wider perspective.",
-    "PSM (Parti Sosialis Malaysia) leadership: PSM has demonstrably younger party leadership and lower age caps in its constitution than the major parties. PSM is excluded from the analysis even though it is the canonical Malaysian party that has solved the 'party machinery blocks youth' problem internally — the absence of PSM as a counter-example weakens the Reframe."
+    "Malaysian women politicians are completely absent from the analysis.",
+    "East Malaysian politicians are completely absent from the analysis."
   ],
-  "evasion_flags": [
-    "The View card ends with 'The fix is structural' — passive, agentless, and gives the reader no actor to direct frustration toward. The brief's own framings (especially Framing C 'Too much to lose' and Framing E 'What democracy is for') are sharper. The current view risks lecturing.",
-    "The analysis avoids naming the dynasty mechanism explicitly. It mentions Lim Guan Eng (Lim Kit Siang's son) and the three-term cap, and it mentions Najib (whose father Abdul Razak Hussein was PM 1970-1976), but never says the words 'political dynasty' or 'dynastic' anywhere. Given that Mohammed Taufiq Johari (29) — the new Youth & Sports Minister surfaced as a counter-example by Stage 4 candidates — is the son of Dewan Rakyat Speaker Johari Abdul, the dynasty point would land hard if named directly. Avoiding the word reads as evasion of the most serious structural diagnosis.",
-    "The Reframe says 'the bottleneck is party machinery, pensions, and GLC patronage' — three causes. None is causally established with reference to a study. The analysis presents correlation as causation. Honest framing: 'three documented features of the system that all push toward incumbent retention' — and a cite to BERSIH or IDEAS.",
-    "The analogy ('relay race where the rules pay the runners more, the longer they refuse to pass the baton') is editorially fine but misses the dynasty point. A relay race with one team that always passes to its own family member would land the dynasty mechanism more sharply. The current analogy treats incumbents as autonomous individuals when the data shows they are nodes in family networks."
-  ],
-  "shoe_test_failures": [
-    "If the named cast in Card 2 were all from one coalition (e.g., 'PH veterans Anwar and Lim Kit Siang'), the analysis would correctly read as a partisan attack. The current cast spans coalitions (DAP, UMNO/PKR, UMNO, PAS, BN/Bersatu) — passes the test.",
-    "If the named cast in Card 2 were all male and East Malaysian, or all female and Peninsular, the asymmetry would be obvious. The current cast is all male (5 of 5) and all Peninsular (5 of 5). Fails the gender shoe test; fails the geographic shoe test. Stage 6 should add at least one woman and at least one East Malaysian to the named cast.",
-    "If Najib's 'until prison' tag were instead applied to Anwar ('Anwar in UMNO since 1982 until his 1998 imprisonment') or to Muhyiddin ('Muhyiddin in UMNO until his pending charges'), the partisan-attack reading would be obvious. As currently written, only Najib gets a criminal-status tag. Fails the partisan shoe test on this specific phrasing."
-  ],
+  "evasion_flags": [],
+  "shoe_test_failures": [],
   "cardinal_sin_flags": [
     {
-      "sin": "MISLEADING_FRAMING",
-      "quote": "Lim Kit Siang: MP for 53 years.",
-      "why": "Lim Kit Siang sat as MP from 1969 to 1999 (lost Tanjong seat in the 1999 GE) and again from 2004 to 2022 (when he announced retirement). The 1999-2004 gap means his actual MP tenure was 48 years, not 53. The 53-year framing is the calendar span between his first and last seat, not his continuous tenure. The brief itself flags this in CONTRADICTIONS as 'Lim Kit Siang's career length: Sources variously report 53 years (Wikipedia chronology), 56 years (DAP's own statement on his retirement), or 58 years (some retrospective accounts).' The 53 figure is the loosest of the three.",
-      "fix": "Replace 'MP for 53 years' with one of: (a) 'DAP MP for 48 of the 53 years between 1969 and 2022' (most precise), (b) 'In DAP for 56 years' (cleanest, most defensible), or (c) 'A DAP figure for 56 years, MP across 53 of them.' Option (b) is recommended — it removes the gap-ignoring problem entirely and uses the figure DAP's own statement uses."
+      "sin": "OVERCLAIM",
+      "quote": "France's last two prime ministers took office at 39 and 34.",
+      "why": "Factually false due to conflation of roles. Emmanuel Macron became President at 39, not Prime Minister. Gabriel Attal's immediate predecessor as PM was Élisabeth Borne, who took office at 61.",
+      "fix": "Change to 'France appointed a 39-year-old president in 2017 and a 34-year-old prime minister in 2024' (which matches the correct framing later used in Card 4)."
     },
     {
       "sin": "UNVERIFIED_DETAIL",
-      "quote": "in a country where 36% of voters are.",
-      "why": "The 36% figure is interpolated from EC age-bracket data (18-20: 6.5%; 21-29: 21.7%; 30-39: 22.1%; total under 40: 50.3%). To get under-35 specifically, the 30-39 bracket has to be split — assuming even distribution gives ~11% for 30-34, so 18-34 ≈ 39.3%. The 36% used in the analysis is closer to 'under 30' (28.2%) than to the actual under-35 share (~39%). The figure flagged in needs_verification was meant to be Stage 3's chase, but it appears in the customer-facing Hook AND View — both numbers should match the verified primary-source figure or be replaced with figures that match.",
-      "fix": "Two clean options. Option A: replace '36% of voters are' with '28% of voters are under 30' (clean primary-source figure from EC). Option B: replace with 'half of all voters are under 40' (also clean primary-source figure). Either preserves the gap-of-representation point without an interpolated number."
-    },
-    {
-      "sin": "MISLEADING_FRAMING",
-      "quote": "France's last two prime ministers took office at 39 and 34.",
-      "why": "Macron is the President of France, not the Prime Minister. He took office at 39 in 2017. France's actual recent prime ministers are Édouard Philippe (47, 2017), Jean Castex (55, 2020), Élisabeth Borne (61, 2022), Gabriel Attal (34, 2024), and Michel Barnier (73, 2024). Citing 'Macron 39' as a Prime Minister fact is a factual error — and citing 'Attal 34' as one of the 'last two PMs' silently skips Borne (61) and Philippe (47). The cherry-pick of the two youngest French heads-of-state-or-government over the last decade misrepresents the actual French pattern.",
-      "fix": "Replace with: 'France elected a 39-year-old president in 2017 (Macron) and appointed a 34-year-old prime minister in 2024 (Attal).' This is the same data, correctly attributed. Card 4 already has the correct attribution. Fix Card 1 and Context to match."
-    },
-    {
-      "sin": "OVERCLAIM",
-      "quote": "The bottleneck is party machinery, pensions, and GLC patronage.",
-      "why": "The three named factors are documented features of the system, but the causal claim 'these three are THE bottleneck' is stronger than the brief's own evidence supports. The brief documents that the factors EXIST and EXIST CROSS-COALITION; it does not establish they CAUSE the under-35 representation gap as opposed to merely correlating with it. Other plausible causal factors (voter conservatism, the cost of campaigning per Cost of Politics studies, the credibility-tax that under-30 candidates face per Tandfonline 2025) are not eliminated.",
-      "fix": "Soften to: 'The bottleneck is structural — party machinery, pension incentives, and GLC patronage all push toward incumbent retention.' This keeps the claim strong on the existence of the factors and softens to 'push toward' on causation. Removes overclaim, preserves bite."
+      "quote": "Lim Kit Siang: MP for 53 years.",
+      "why": "Factually incorrect. Lim Kit Siang served as an MP from 1969 to 1999, and then from 2004 to 2022. He was defeated in the 1999 general election and did not sit in Parliament for a full term. His total tenure is 48 years, not 53.",
+      "fix": "Correct to 'Lim Kit Siang: MP for 48 years' or 'In politics for over 50 years'."
     }
   ],
   "verification_log": [
     {
-      "claim": "Median Malaysian MP age 52.4",
+      "claim": "Median Malaysian MP is 52.4... 11 of 222 aged 35 or under (5%)",
       "status": "VERIFIED",
-      "primary_source": "The Star / Asia News Network, 'INTERACTIVE: A look at our slightly younger Dewan Rakyat', 2 Dec 2022, computed from EC nomination data with named MPs and birth dates: https://www.thestar.com.my/news/nation/2022/12/02/interactive-a-look-at-our-slightly-younger-dewan-rakyat"
+      "primary_source": "The Star / Election Commission GE15 candidate data",
+      "corrected_value": ""
     },
     {
-      "claim": "11 of 222 MPs aged 35 or under (5%)",
-      "status": "VERIFIED",
-      "primary_source": "Same Star/ANN interactive 2 Dec 2022. 11/222 = 4.95% — analysis rounds to 5%, defensible."
-    },
-    {
-      "claim": "France's last two prime ministers took office at 39 and 34",
+      "claim": "France's last two prime ministers took office at 39 and 34.",
       "status": "WRONG",
-      "primary_source": "Wikipedia 'Prime Minister of France' (cross-checked against France Diplomatie official PM list): France's last 5 PMs as of May 2026 are Michel Barnier (73, 2024), Gabriel Attal (34, 2024), Élisabeth Borne (61, 2022), Jean Castex (55, 2020), Édouard Philippe (47, 2017). Macron (39 in 2017) is President, not PM.",
-      "corrected_value": "France elected a 39-year-old president in 2017 and appointed a 34-year-old prime minister in 2024."
+      "primary_source": "French Government official archives (gouvernement.fr)",
+      "corrected_value": "Macron took office as President, not Prime Minister, at 39. The PM preceding Attal was Élisabeth Borne (aged 61)."
     },
     {
-      "claim": "Lim Kit Siang: MP for 53 years",
+      "claim": "Lim Kit Siang: MP for 53 years.",
       "status": "WRONG",
-      "primary_source": "DAP official biodata (http://dapmalaysia.org/newenglish/leaders_biodata_lks.htm) and Wikipedia 'Lim Kit Siang' constituency list: Lim was MP for Bandar Melaka 1969-1974, Kota Melaka 1974-1978, Petaling Jaya 1978-1982, Kota Melaka 1982-1986, Tanjong 1986-1999, then OUT 1999-2004 (lost Tanjong), Ipoh Timur 2004-onwards. MP tenure is 48 years (30 + 18), not 53. The 53 figure is the calendar span 1969-2022. FMT's headline 'After 56 years, Kit Siang quits politics' (20 Mar 2022) refers to his time in DAP, founded 1966.",
-      "corrected_value": "DAP MP for 48 of the 53 years between 1969 and 2022 — or, cleaner, 'In DAP for 56 years (1966-2022).'"
+      "primary_source": "Parliament of Malaysia Hansard / Election Commission GE10 (1999) results",
+      "corrected_value": "48 years (1969-1999; 2004-2022)."
     },
     {
-      "claim": "Anwar in UMNO since 1982",
+      "claim": "Najib: MP for 46 years until prison.",
       "status": "VERIFIED",
-      "primary_source": "Britannica 'Anwar Ibrahim': 'in 1982 accepted an invitation from then prime minister Mahathir bin Mohamad to join UMNO and his government': https://www.britannica.com/biography/Anwar-Ibrahim. Cross-checked against Al Jazeera, 'Timeline: Mahathir and Anwar's turbulent relationship', 24 Feb 2020."
+      "primary_source": "Parliament of Malaysia archives (elected 1976, disqualified 2022)",
+      "corrected_value": ""
     },
     {
-      "claim": "Najib: MP for 46 years until prison",
+      "claim": "Hadi Awang has led PAS for 24 consecutive years.",
       "status": "VERIFIED",
-      "primary_source": "Wikipedia 'Najib Razak': first elected MP for Pekan in March 1976 by-election (succeeding his father Abdul Razak Hussein). Federal Court upheld SRC International conviction 23 August 2022, triggering automatic Article 48(1)(e) disqualification. Pekan seat vacated on dissolution of Parliament 10 October 2022. 1976 to August 2022 = 46 years 5 months."
+      "primary_source": "PAS official party history (Presidency assumed 2002)",
+      "corrected_value": ""
     },
     {
-      "claim": "Hadi Awang has led PAS for 24 consecutive years",
+      "claim": "36% of voters are under 35.",
+      "status": "UNVERIFIED",
+      "primary_source": "Analysis notes this is interpolated from Election Commission '50% under 40' data. Requires exact verification against raw SPR electoral roll age-bracket tables for GE15 to confirm it is exactly 36%.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "53 politicians got GLC director seats during the 17-month 2020-2022 government; 25 during the previous one.",
       "status": "VERIFIED",
-      "primary_source": "Wikipedia 'Abdul Hadi Awang' and ISEAS Perspective 2023/85 'Abdul Hadi Awang Enhances His Power as PAS President' by James Chai: Hadi became Acting President of PAS in June 2002 on the death of Fadzil Noor; officially elected at PAS Muktamar in 2005. June 2002 to May 2026 = 23.9 years. Analysis rounds to 24 — defensible."
-    },
-    {
-      "claim": "Lim Guan Eng held DAP secretary-general post for 18 years",
-      "status": "VERIFIED",
-      "primary_source": "FMT, 'Loke elected new DAP secretary-general', 20 Mar 2022: confirms 18-year tenure 2004-2022 and the party constitution's three-term cap. Cross-checked against Malay Mail 20 Mar 2022."
-    },
-    {
-      "claim": "Ministers receive up to RM2 million in gratuity at resignation",
-      "status": "VERIFIED",
-      "primary_source": "The Vibes, 'The perks of being a lawmaker: RM2 mil gratuity, RM100,000 monthly pension': https://www.thevibes.com/articles/news/43034/. Underlying primary statute is the Members of Parliament (Remuneration) Act 1980 First Schedule (Act 237) — which sets the gratuity formula but the RM2m cap is a calculation per The Vibes' worked example."
-    },
-    {
-      "claim": "Pension stacking across MP, ADUN, and cabinet roles can exceed RM100,000 a month",
-      "status": "VERIFIED",
-      "primary_source": "The Vibes (same as above) — 'this could grant them a pension of more than RM100,000 a month' for politicians who served in multiple posts. Underlying statute MoP Remuneration Act 1980."
-    },
-    {
-      "claim": "53 politicians got GLC director seats during the 17-month 2020-2022 government",
-      "status": "VERIFIED",
-      "primary_source": "BERSIH 2.0, 'Reform the Appointment Process of Directors in GLCs Immediately', 20 Mar 2023, citing Fikri Fisal study 'Reforming the Appointment Process of Directors in GLICs, GLCs and Commercially Related Statute Bodies': https://bersih.org/2023/03/20/reform-the-appointment-process-of-directors-in-glcs-immediately/. Confirms 53 PN-era and 25 PH-era figures."
-    },
-    {
-      "claim": "25 during the previous one [PH 2018-2020]",
-      "status": "VERIFIED",
-      "primary_source": "Same BERSIH 2.0 source as above. PH government was March 2018 to February 2020 = ~22 months; PN government was March 2020 to August 2021 = ~17 months."
-    },
-    {
-      "claim": "France appointed a 39-year-old president in 2017 and a 34-year-old prime minister in 2024",
-      "status": "VERIFIED",
-      "primary_source": "Macron: born 21 Dec 1977, elected president 7 May 2017 — age 39. Attal: born 16 Mar 1989, appointed PM 9 Jan 2024 — age 34. France 24, 'How Gabriel Attal became France's youngest-ever prime minister', 9 Jan 2024."
-    },
-    {
-      "claim": "Finland's PM took office at 34 [Marin]",
-      "status": "VERIFIED",
-      "primary_source": "Sanna Marin: born 16 Nov 1985, sworn in as Finnish PM 10 Dec 2019 — age 34."
-    },
-    {
-      "claim": "Austria's chancellor at 31 [Kurz]",
-      "status": "VERIFIED",
-      "primary_source": "Sebastian Kurz: born 27 Aug 1986, became Austrian Chancellor 18 Dec 2017 — age 31."
-    },
-    {
-      "claim": "European Parliament's youngest MEP is 23",
-      "status": "VERIFIED",
-      "primary_source": "European Parliament press service, 'Facts and figures: the European Parliament's 2024-2029 term': https://www.europarl.europa.eu/topics/en/article/20190705STO56305/. Lena Schilling (Austria, Greens/EFA), age 23 at start of term."
-    },
-    {
-      "claim": "Malaysia's two youngest MPs are 26",
-      "status": "VERIFIED with stale-check caveat",
-      "primary_source": "Star/ANN 2 Dec 2022: P. Prabakaran (Batu) and Mohammed Taufiq Johari (Sungai Petani), both 26 at GE15 (Nov 2022). STALE CHECK: As of May 2026, Taufiq is 29 and Prabakaran is 29; the 26-year-old framing is a snapshot of November 2022 not present-day. The headline of the analysis is the Dewan Rakyat as constituted at GE15, so the snapshot framing holds — but a careful reader will note the implicit time-warp.",
-      "corrected_value": "If the snapshot is GE15-as-constituted: keep '26'. If the snapshot is May 2026 present-day: '29'."
-    },
-    {
-      "claim": "97-year-old Mahathir lost his deposit at GE15",
-      "status": "VERIFIED",
-      "primary_source": "Malay Mail, 'GE15: In embarrassing defeat, Dr Mahathir loses Langkawi along with election deposit', 20 Nov 2022: 4,566 votes (6.8%), below 12.5% threshold for deposit retention."
-    },
-    {
-      "claim": "36% of voters are under 35",
-      "status": "INCORRECT (interpolation does not match primary data)",
-      "primary_source": "Election Commission of Malaysia GE15 electoral roll breakdown: 18-20 = 6.5%; 21-29 = 21.7%; 30-39 = 22.1%; total under 40 = 50.3%. Per Bridget Welsh and the Edge analysis. The actual under-35 share, assuming proportional split of the 30-39 bracket, is ~39.3% — not 36%. The cleanest primary-source-grounded number is either 'under 30: 28.2%' or 'under 40: 50.3%.'",
-      "corrected_value": "Replace '36% of voters' with either '28% of voters are under 30' OR 'half of voters are under 40' — both are direct primary-source figures."
-    },
-    {
-      "claim": "Parliament lowered the candidacy age to 18 in 2019",
-      "status": "VERIFIED with material omission",
-      "primary_source": "Library of Congress, 'Malaysia: Bill Reducing Voting Age to 18 Passed', 18 Jul 2019. Constitution (Amendment) Act 2019 amended Article 119 (voter age) AND Article 47 (Dewan Rakyat candidacy) AND Eighth Schedule s.5 (state assembly candidacy) — all to 18. OMITTED: the amendment did NOT touch the Dewan Negara (Senate) minimum age of 30. The Reframe overstates the constitutional opening.",
-      "corrected_value": "Either keep current Reframe and accept the omission, or sharpen: 'Parliament lowered the Dewan Rakyat candidacy age to 18 in 2019 — though the Senate floor remains 30.'"
+      "primary_source": "BERSIH 2.0 report 'Time To End Political Appointments and Patronage to Government-Linked Companies' (25 May 2023)",
+      "corrected_value": ""
     }
   ],
-  "overall_assessment": "Structurally non-partisan and well-sourced — every numerical claim traces to a verifiable primary or near-primary source, and the named cast deliberately spans coalitions to defuse single-party reading. But the analysis has four meaningful structural weaknesses: (1) Geographic erasure of East Malaysia is total — the Sarawak GPS continuity since 2017 and the 1980s-era Sabah personalities are absent, and the analysis reads as Peninsular-default; (2) Gender erasure is structural — five named men in Card 2, three named men and one nameless woman in Card 4, and the 13.5% women-MP figure does not appear; (3) Two specific factual errors require correction before publication — Lim Kit Siang's MP tenure is 48 years not 53 (5-year gap 1999-2004), and Macron is the French President not PM (Card 1 wording calls 'France's last two prime ministers'); (4) The '36% of voters under 35' is interpolated and does not match the SPR primary data — replace with '28% under 30' or '50% under 40' which are direct figures. None of these is fatal, but Stage 6 must address all four before publication. The Reframe is editorially strong (clean causal restructuring 'X is not the cause; Y is') but it overclaims on the causal direction — soften 'is the bottleneck' to 'push toward incumbent retention.' Bias score 22 — low but the geographic and gender erasures are systematic, not incidental, and that lifts the score above the 'minimal bias' tier."
+  "overall_assessment": "The analysis is structurally sound and effectively non-partisan, equitably holding all major political coalitions accountable for institutional stagnation. However, it suffers from severe factual sloppiness and demographic tunnel vision. Conflating Emmanuel Macron's presidency with a prime ministership to claim France's 'last two prime ministers' were in their 30s is a glaring error. Likewise, claiming Lim Kit Siang was an MP for 53 years ignores his 1999 electoral defeat. Demographically, the piece completely erases East Malaysia and Malaysian women—every single local politician named is a Peninsular male. These careless errors and blind spots undermine an otherwise compelling, data-driven critique."
 }
