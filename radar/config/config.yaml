@@ -137,13 +137,12 @@ sources:
   gdelt:
     enabled: true
     poll_interval_minutes: 30
-    # GDELT shifted 2026-05-16 from a Malaysia-domestic scan (sourcecountry:MY)
-    # to a global Malaysia-interest scan. Domestic coverage now comes from the
-    # MY-region news_rss feeds + reddit_rss. The domestic block remains here as
-    # an opt-in toggle for operators who want to re-enable GDELT-MY alongside.
-    # Events carry metadata.scope = "domestic" | "malaysia_interest".
+    # Two parallel scans: domestic (the original ~1,600-source MY firehose)
+    # plus a global Malaysia-interest scan added 2026-05-16. Events carry
+    # metadata.scope = "domestic" | "malaysia_interest" so the impact pass
+    # only sees foreign events.
     domestic:
-      enabled: false
+      enabled: true
       country: "MY"
       maxrecords: 250
       timespan: "60min"
