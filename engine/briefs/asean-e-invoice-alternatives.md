@@ -1,4 +1,4 @@
-# Brief — ASEAN e-invoice alternatives (sibling to 1981)
+# Brief — ASEAN e-invoice alternatives (sibling to 1984)
 
 ## ISSUE
 Malaysia raised its e-invoicing exemption to RM1m turnover on 6 December 2025 and extended the RM1m-5m phase first to end-2026 (5 Jan 2026) then to end-2027 (20 Apr 2026). India, Singapore, Indonesia, and Thailand chose different paths to bring SMEs into the digital tax trail — higher thresholds, direct subsidies, simplified compliance lanes, or graduated technical tiers. Each path trades visibility against cost burden differently. Malaysia's binary exempt/full-clearance model is one option among several, not the only one.
@@ -28,7 +28,7 @@ Comparative — Indian rule effective 1 Aug 2023; Singapore rollout 2025-2031; I
 
 ## CONTRADICTIONS / Stage 4 corrections applied
 
-The parent issue 1981's Stage 4 reviewer cited two figures that did not survive Stage 6 self-verification:
+The parent issue 1984's Stage 4 reviewer cited two figures that did not survive Stage 6 self-verification:
 - "Singapore free InvoiceNow-Ready solutions until March 2031" — IRAS primary source confirms the FOC packages are available until **31 March 2027**. The 2031 figure refers to the progressive rollout end-date for all existing GST-registered businesses, not the FOC window.
 - "Indonesia exempts e-commerce sellers below IDR 5 billion" — the canonical VAT/e-Faktur threshold is **IDR 4.8 billion** (PMK/MoF-164). The IDR 500 million figure Stage 4 implicitly used belongs to a separate Article 22 WHT exemption for individual e-commerce sellers.
 
@@ -65,4 +65,4 @@ Economic (threshold comparison), Governance (Singapore policy design), Technolog
 12. GentleLawIBL, "Thailand e-Tax invoice and e-Receipt 2025: a compliance checklist for SMEs" (secondary).
 13. LHDN, "e-Invoice Implementation Timeline" (Malaysia PRIMARY).
 14. MDEC, "SME Digitalisation Grant" (Malaysia PRIMARY).
-15. T4A issue 1981, "E-invoice exemption walked back twice in a month after Sabah loss" (parent issue with full Stage 1-6 pipeline).
+15. T4A issue 1984, "E-invoice exemption walked back twice in a month after Sabah loss" (parent issue with full Stage 1-6 pipeline).
