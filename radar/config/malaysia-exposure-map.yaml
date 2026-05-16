@@ -1,0 +1,536 @@
+# Malaysia Exposure Map
+# =====================
+#
+# Each node describes a channel through which a foreign event transmits
+# into Malaysian domestic interest. The Haiku daily-pass scorer loads
+# this file as context when ranking the day's foreign news for
+# Malaysia-impact potential.
+#
+# Schema per node:
+#   id          : kebab-case identifier
+#   cat         : category — one of commodity, trade, choke, macro, labor,
+#                 diplomacy, tech, climate, security, health, culture
+#   note        : 1-2 sentence explanation of Malaysia's exposure on this channel
+#   triggers    : free-text examples of foreign events that activate this channel
+#   targets     : Malaysian sectors/ministries/markets that feel the impact
+#   lag_days    : [min, max] typical days from foreign trigger to MY domestic
+#                 surface mention. Used as a horizon prior, not a hard rule.
+#   confidence  : high | medium | low — strength of the historical evidence
+#                 for this transmission channel
+#
+# Curated 2026-05-16. Edit freely; the impact pass re-reads on every run.
+
+version: 1
+last_updated: "2026-05-16"
+
+nodes:
+
+  # === COMMODITIES ===
+
+  - id: palm-oil
+    cat: commodity
+    note: "Malaysia is #2 world producer (Indonesia #1). ~5% of GDP, exports concentrated in India, China, EU."
+    triggers: ["Indonesia export ban/levy", "EU Deforestation Regulation (EUDR) enforcement", "India import duty change", "China stockpile shift", "Soybean substitution shock"]
+    targets: ["MITI", "MPOB", "plantation equities (Sime Darby, IOI, KLK)", "ringgit", "smallholder politics"]
+    lag_days: [1, 30]
+    confidence: high
+
+  - id: crude-oil
+    cat: commodity
+    note: "Brent/WTI directly drive PETRONAS dividends (~RM30-45B/yr to govt), RON95 subsidy bill, ringgit."
+    triggers: ["OPEC+ production decision", "Middle East escalation", "US shale shock", "Strait of Hormuz incident", "Russia sanctions tightening"]
+    targets: ["PETRONAS", "MOF", "RON95 subsidy", "ringgit", "Petronas Chemicals"]
+    lag_days: [0, 7]
+    confidence: high
+
+  - id: lng-gas
+    cat: commodity
+    note: "Malaysia is a top-5 LNG exporter (Bintulu). Demand swings in Japan, Korea, China move PETRONAS revenue."
+    triggers: ["EU gas crisis", "Japan/Korea winter demand", "Qatar LNG capacity expansion", "Sabah-Sarawak gas agreement disputes"]
+    targets: ["PETRONAS", "Sarawak state revenue", "MOF dividend"]
+    lag_days: [3, 30]
+    confidence: high
+
+  - id: rubber
+    cat: commodity
+    note: "World #3 producer. Smallholder-dependent, politically sensitive in rural Malaysia."
+    triggers: ["Thailand export policy", "China tyre demand", "Vietnam yield shock", "EU EUDR rubber inclusion"]
+    targets: ["RISDA", "smallholders", "Kelantan/Terengganu/Sabah politics"]
+    lag_days: [7, 60]
+    confidence: medium
+
+  - id: tin
+    cat: commodity
+    note: "Historic export; LME tin price moves Perak/Pahang sector. Indonesia is the swing producer."
+    triggers: ["Indonesia tin export ban", "Myanmar Wa State mining disruption", "China electronics demand shift"]
+    targets: ["MSM", "Perak/Pahang economy", "ringgit trade balance"]
+    lag_days: [3, 30]
+    confidence: medium
+
+  - id: semiconductors
+    cat: commodity
+    note: "Penang back-end packaging hosts ~13% of world ATP capacity. US-China chip war funnels through here."
+    triggers: ["US chip export controls (BIS rules)", "China retaliation on rare earths/gallium", "Taiwan Strait escalation", "Intel/Infineon/AMD capacity moves"]
+    targets: ["Penang state economy", "MIDA FDI pipeline", "Malaysian semiconductor SMEs", "USD-MYR via FDI flows"]
+    lag_days: [1, 90]
+    confidence: high
+
+  - id: rare-earths
+    cat: commodity
+    note: "Lynas Kuantan plant is the largest rare-earth processor outside China. Geopolitically critical for the West."
+    triggers: ["China rare-earth export controls", "US-Australia critical minerals partnership shifts", "Pahang environmental approval politics"]
+    targets: ["Lynas Malaysia", "Pahang state politics", "MITI strategic minerals policy"]
+    lag_days: [3, 60]
+    confidence: high
+
+  - id: rice
+    cat: commodity
+    note: "Malaysia imports ~40% of rice consumption (India, Vietnam, Thailand, Pakistan). Subsidy-sensitive."
+    triggers: ["India rice export ban", "Mekong drought", "Thailand harvest failure", "El Niño regional impact"]
+    targets: ["BERNAS", "MOF subsidy", "B40 cost-of-living", "Padiberas politics"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: cooking-fuel
+    cat: commodity
+    note: "LPG subsidy is the politically explosive consumer fuel. Imported component exposes to global LPG prices."
+    triggers: ["Middle East LPG export disruption", "Petronas LPG procurement pricing"]
+    targets: ["KPDN", "MOF subsidy bill", "rural household politics"]
+    lag_days: [3, 30]
+    confidence: medium
+
+  # === TRADE PARTNERS ===
+
+  - id: china-trade
+    cat: trade
+    note: "#1 trading partner (~17% of total trade). E&E imports for re-export, palm oil exports, BRI infrastructure."
+    triggers: ["China property/banking stress", "China stimulus announcement", "Yuan devaluation", "China tech export controls"]
+    targets: ["MITI", "ringgit", "ECRL", "Kuantan Port", "Penang E&E SMEs"]
+    lag_days: [1, 30]
+    confidence: high
+
+  - id: singapore-trade
+    cat: trade
+    note: "#2 partner, deep integration: ringgit-SGD parity politics, Johor-SG causeway, water agreement, capital flows."
+    triggers: ["MAS monetary policy shift", "SGD strengthening", "Johor RTS / High Speed Rail decisions", "Water price renegotiation"]
+    targets: ["BNM", "Johor state economy", "Malaysian diaspora capital", "MAHB Senai"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: us-trade
+    cat: trade
+    note: "Major destination for E&E exports. Tariff regime + Section 301 actions transmit directly into Penang/Selangor factories."
+    triggers: ["US tariff/Section 301 announcements", "USTR action against Malaysian products (forced labor, dumping)", "Fed rate path"]
+    targets: ["MITI", "Penang/Selangor manufacturers", "MIDA FDI", "ringgit"]
+    lag_days: [1, 30]
+    confidence: high
+
+  - id: eu-trade
+    cat: trade
+    note: "Palm oil battleground (EUDR, RED III), plus general goods trade. Regulatory not tariff is the channel."
+    triggers: ["EUDR scope expansion", "EU CBAM coverage", "EU FTA negotiations", "MEP-led palm oil resolutions"]
+    targets: ["MPOB", "MITI", "MFA"]
+    lag_days: [7, 180]
+    confidence: high
+
+  - id: japan-trade
+    cat: trade
+    note: "Long-standing FDI source (auto, electronics). Yen weakness, BoJ shifts, Look East policy hangover."
+    triggers: ["Yen sharp depreciation", "BoJ rate exit", "Japan FDI redirection from China", "Toyota/Honda capacity decisions"]
+    targets: ["MITI", "auto suppliers (Proton supply chain)", "MIDA FDI"]
+    lag_days: [7, 90]
+    confidence: medium
+
+  - id: india-trade
+    cat: trade
+    note: "Largest palm oil buyer some years. Tariff levers move CPO prices within hours."
+    triggers: ["India import duty change on edible oils", "India rice export ban (substitute dynamics)", "India election cycles"]
+    targets: ["MPOB", "CPO futures (Bursa)", "MITI"]
+    lag_days: [0, 7]
+    confidence: high
+
+  - id: indonesia-trade
+    cat: trade
+    note: "Border, palm oil rival, labor source, peat haze. Political proximity high; trade also significant."
+    triggers: ["Indonesia DMO/levy changes on palm oil", "Joko-to-Prabowo transition", "Riau/Sumatra fires", "Indonesia work-pass policy"]
+    targets: ["MPOB", "MITI", "Sabah-Sarawak labor", "AKPS", "MOSHE haze response"]
+    lag_days: [0, 30]
+    confidence: high
+
+  - id: thailand-border
+    cat: trade
+    note: "Northern states + cross-border smuggling, deep south insurgency spillover, drug trafficking."
+    triggers: ["Thai deep south violence escalation", "Thai narcotics action shift", "Thai-Malaysia border policy"]
+    targets: ["KDN", "AKPS", "Kelantan/Perlis politics"]
+    lag_days: [0, 14]
+    confidence: medium
+
+  - id: vietnam-competitor
+    cat: trade
+    note: "FDI competitor for the same manufacturing pool. Vietnam wins/losses recalibrate MIDA pitch."
+    triggers: ["US tariff differential changes", "Apple/Samsung Vietnam capacity moves", "Vietnam tax holiday changes"]
+    targets: ["MIDA", "MITI", "Penang/Johor FDI pipeline"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  - id: south-korea-trade
+    cat: trade
+    note: "FDI in petrochem, steel, EV battery. Korean conglomerate capacity decisions move Pengerang/Kuantan."
+    triggers: ["Samsung/SK On battery plant decisions", "Korea-China tech tensions"]
+    targets: ["MIDA", "Pengerang RAPID downstream", "Kuantan/Pahang"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  # === CHOKE POINTS ===
+
+  - id: strait-of-malacca
+    cat: choke
+    note: "~30% of world trade transits. Closures, piracy, naval incidents, or Singapore tail risk hit MY ports and insurance premia."
+    triggers: ["Vessel grounding/blockage", "Singapore Strait incident", "Piracy surge", "South China Sea spillover"]
+    targets: ["MAHB", "Port Klang/Tanjung Pelepas", "Marine Dept", "MOT"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: strait-of-hormuz
+    cat: choke
+    note: "Closure spikes Brent → MY fuel subsidy bill explodes within days; LNG demand shifts to Bintulu/Kuantan."
+    triggers: ["Iran-Israel escalation", "Yemen Houthi tanker strike", "Iran-US naval incident"]
+    targets: ["MOF subsidy bill", "PETRONAS", "ringgit"]
+    lag_days: [0, 3]
+    confidence: high
+
+  - id: suez-canal
+    cat: choke
+    note: "Closure reroutes around Cape, raising Asia-Europe shipping costs; CPO and E&E exports feel it."
+    triggers: ["Vessel blockage", "Houthi Red Sea attacks", "Egypt political instability"]
+    targets: ["MITI", "Port Klang transhipment", "MPOB export logistics"]
+    lag_days: [1, 30]
+    confidence: high
+
+  - id: taiwan-strait
+    cat: choke
+    note: "Escalation would simultaneously cut chip supply (Penang dependency), bring naval risk to South China Sea, and accelerate semiconductor friend-shoring to Malaysia."
+    triggers: ["PLA blockade exercise", "US-Taiwan policy shifts", "Cross-strait incident"]
+    targets: ["Penang E&E", "Spratly claims", "MFA"]
+    lag_days: [0, 365]
+    confidence: medium
+
+  - id: south-china-sea
+    cat: choke
+    note: "Sabah-Sarawak overlap with China's nine-dash line; oil/gas, fisheries, naval access at stake."
+    triggers: ["China Coast Guard incident", "ASEAN Code of Conduct progress/breakdown", "US FONOPs"]
+    targets: ["MFA", "PETRONAS Kasawari/Jerun fields", "MMEA"]
+    lag_days: [0, 30]
+    confidence: high
+
+  # === CURRENCY & MACRO ===
+
+  - id: fed-rates
+    cat: macro
+    note: "US Fed path drives USD strength, which drives ringgit weakness, which drives import inflation and BNM policy."
+    triggers: ["FOMC decisions", "US PCE/CPI surprises", "Powell speech surprises"]
+    targets: ["BNM", "ringgit", "MOF debt servicing", "household import cost-of-living"]
+    lag_days: [0, 7]
+    confidence: high
+
+  - id: dollar-dxy
+    cat: macro
+    note: "DXY moves above 105 historically correlate with ringgit weakening past psychological RM4.50-4.70 levels."
+    triggers: ["Risk-off global episodes", "EM rotation flows", "Carry trade unwind"]
+    targets: ["BNM intervention", "MOF foreign debt cost", "B40 import inflation"]
+    lag_days: [0, 3]
+    confidence: high
+
+  - id: yuan-cny
+    cat: macro
+    note: "CNY-MYR correlation high; PBoC devaluation pushes ringgit weaker, hurts BNM intervention bill."
+    triggers: ["PBoC fixing changes", "China FX reserves shifts", "Yuan-USD breakouts"]
+    targets: ["BNM", "ringgit", "Chinese-Malaysian importers"]
+    lag_days: [0, 7]
+    confidence: high
+
+  - id: sovereign-rating
+    cat: macro
+    note: "Moody's/S&P/Fitch action moves MGS yields, ringgit, and political narratives in 24h."
+    triggers: ["Rating action on MY or regional peers (IDN, THA, PHL)", "Sovereign downgrades elsewhere triggering EM repricing"]
+    targets: ["MOF debt cost", "BNM", "ringgit", "MGS yields"]
+    lag_days: [0, 7]
+    confidence: high
+
+  - id: capital-flows
+    cat: macro
+    note: "Foreign equity/bond flows (KLCI, MGS) move on EM risk sentiment, often unrelated to Malaysia fundamentals."
+    triggers: ["EM crisis (Turkey, Argentina, Sri Lanka spillover)", "Index rebalancing", "Global risk-off"]
+    targets: ["Bursa Malaysia", "MGS yields", "BNM reserves"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: global-inflation
+    cat: macro
+    note: "Imported inflation through food, fuel, fertilizers — every spike forces BNM/MOF subsidy decisions."
+    triggers: ["Ukraine grain corridor disruption", "Russia fertilizer sanctions", "OPEC+ cut", "Climate-driven food price spikes"]
+    targets: ["BNM rate path", "MOF subsidies", "KPDN price controls"]
+    lag_days: [7, 60]
+    confidence: high
+
+  # === LABOR & MIGRATION ===
+
+  - id: bangladesh-workers
+    cat: labor
+    note: "Largest foreign-worker source country. Recruitment scandals, visa policy shifts shake construction/plantation/services."
+    triggers: ["Dhaka diplomatic incidents", "Recruitment agency cartel scandals", "Bangladesh political turmoil"]
+    targets: ["KSM", "JTKSM", "construction sector", "plantation labor"]
+    lag_days: [0, 30]
+    confidence: high
+
+  - id: indonesia-workers
+    cat: labor
+    note: "Domestic worker, plantation labor source. Indonesian moratoriums and TKI policies hit MY immediately."
+    triggers: ["Indonesia moratorium on domestic worker placement", "BP2MI bilateral MOU shifts"]
+    targets: ["KSM", "plantation sector", "household services"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: nepal-workers
+    cat: labor
+    note: "Security guards, manufacturing operators. Recruitment cartel exposés land in MY parliament."
+    triggers: ["Nepal Supreme Court rulings on worker rights", "Recruitment-fee scandals"]
+    targets: ["KSM", "private security industry"]
+    lag_days: [0, 30]
+    confidence: medium
+
+  - id: myanmar-refugees
+    cat: labor
+    note: "Rohingya stateless population in MY (UNHCR-registered + undocumented). Religiously charged; politically reactive."
+    triggers: ["Rakhine violence flare-up", "Junta crackdowns", "Bay of Bengal boat arrivals"]
+    targets: ["MFA", "KDN", "UNHCR MY", "religious authorities"]
+    lag_days: [0, 30]
+    confidence: high
+
+  - id: philippines-workers
+    cat: labor
+    note: "Sabah Filipino population, security tied to Sulu claim, ESSCOM dynamics."
+    triggers: ["Sulu sultanate award legal moves", "Philippines maritime claims", "Sabah refugee policy debate"]
+    targets: ["ESSCOM", "Sabah state politics", "MFA"]
+    lag_days: [3, 90]
+    confidence: high
+
+  - id: diaspora-capital
+    cat: labor
+    note: "~1.7M Malaysians abroad (Singapore, Australia, UK, US). Brain drain narrative + property/equity flows."
+    triggers: ["Singapore tax/PR policy changes", "Australia/UK skilled visa shifts", "US H-1B changes"]
+    targets: ["MOF remittances/brain-drain narrative", "domestic property market", "political diaspora vote"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  # === DIPLOMACY & RELIGION ===
+
+  - id: saudi-haj
+    cat: diplomacy
+    note: "Annual haj quota decisions shape Tabung Haji + religious affairs politics. Saudi-MY relations sensitive."
+    triggers: ["Saudi quota changes", "Vision 2030 fiscal changes", "Saudi-Iran detente shifts"]
+    targets: ["Tabung Haji", "JAKIM", "MOF subsidy", "PAS political space"]
+    lag_days: [7, 90]
+    confidence: high
+
+  - id: halal-standards
+    cat: diplomacy
+    note: "JAKIM HALAL is global gold standard. Indonesia BPJPH and Saudi GSO challenges threaten the lucrative export brand."
+    triggers: ["Indonesia BPJPH mandatory cert", "Saudi GSO recognition shifts", "Gulf states halal harmonisation"]
+    targets: ["JAKIM", "MITI", "halal industry exporters"]
+    lag_days: [30, 365]
+    confidence: high
+
+  - id: israel-palestine
+    cat: diplomacy
+    note: "No MY-IL diplomatic ties. Gaza dynamics drive parliamentary motions, BDS pressure, FDI scrutiny."
+    triggers: ["Gaza escalation", "ICJ proceedings", "Western corporate boycotts in MY"]
+    targets: ["MFA", "PMO", "MITI FDI screen", "religious authorities"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: iran-oil-sanctions
+    cat: diplomacy
+    note: "US sanctions on Iran indirectly hit Malaysian-flagged tankers, refining, secondary sanctions risk."
+    triggers: ["OFAC actions on tankers in MY waters", "Snapback sanctions", "Iran-Israel direct conflict"]
+    targets: ["MOT", "MFA", "tanker operators"]
+    lag_days: [0, 30]
+    confidence: medium
+
+  - id: oic-diplomacy
+    cat: diplomacy
+    note: "MY positions itself as Muslim-world voice; OIC consensus shifts give political cover or expose isolation."
+    triggers: ["OIC summits and resolutions", "Muslim-world political earthquakes (Saudi-Iran, Erdogan transitions)"]
+    targets: ["MFA", "PMO narrative", "religious authorities"]
+    lag_days: [0, 30]
+    confidence: medium
+
+  - id: asean-unity
+    cat: diplomacy
+    note: "Myanmar/South China Sea exposes ASEAN consensus limits; MY hosts 2025 chair year."
+    triggers: ["ASEAN summit outcomes", "Cambodia/Laos pro-China alignments", "Myanmar Five-Point Consensus stalls"]
+    targets: ["MFA", "MITI", "PMO"]
+    lag_days: [0, 60]
+    confidence: medium
+
+  - id: china-bri
+    cat: diplomacy
+    note: "ECRL, Kuantan, Forest City — BRI exposure connects MY to China's debt-stress + Belt & Road retrenchment."
+    triggers: ["Chinese SOE financial stress", "BRI write-downs elsewhere", "Xi succession signals"]
+    targets: ["MOF", "MITI", "ECRL operator"]
+    lag_days: [30, 365]
+    confidence: medium
+
+  # === TECH & REGULATION ===
+
+  - id: us-chip-controls
+    cat: tech
+    note: "BIS export controls on advanced chips reshape Penang assembly + foundry workload + customer mix."
+    triggers: ["Updated entity list", "Chip export licence regime changes", "Section 1758a expansion"]
+    targets: ["MITI", "Penang manufacturers", "MIDA strategic tech"]
+    lag_days: [7, 90]
+    confidence: high
+
+  - id: eu-dsa-ai-act
+    cat: tech
+    note: "MCMC mimics EU regulatory templates. EU enforcement actions preview MY framework + content control politics."
+    triggers: ["EU DSA major fines", "AI Act implementation milestones", "EU platform liability rulings"]
+    targets: ["MCMC", "KKD", "platforms operating in MY"]
+    lag_days: [30, 365]
+    confidence: medium
+
+  - id: india-data-localization
+    cat: tech
+    note: "India DPDP Act precedents inform MY PDPA amendments and BNM payment-data rules."
+    triggers: ["India DPDP enforcement actions", "RBI data localisation tightening"]
+    targets: ["MCMC", "BNM", "JPDP"]
+    lag_days: [60, 365]
+    confidence: low
+
+  - id: crypto-regulation
+    cat: tech
+    note: "SC/BNM stance on digital assets shifts with US SEC, EU MiCA, Singapore MAS positions."
+    triggers: ["US SEC enforcement", "EU MiCA implementation", "Singapore MAS licence regime"]
+    targets: ["SC", "BNM", "Labuan FSA"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  - id: ai-content-rules
+    cat: tech
+    note: "Global moves on AI-generated content (election deepfakes, watermarking) feed MY's GE16 election prep."
+    triggers: ["Major election deepfake incident", "Platform self-regulation announcements"]
+    targets: ["MCMC", "SPR", "KKD"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  # === CLIMATE & ENVIRONMENT ===
+
+  - id: indonesian-haze
+    cat: climate
+    note: "Riau/Sumatra/Kalimantan peat fires drive transboundary haze; aviation, schools, health load."
+    triggers: ["El Niño onset", "Indonesia peat-fire surge", "ASEAN Transboundary Haze agreement enforcement"]
+    targets: ["DOE", "MOH", "MOSHE", "MAHB"]
+    lag_days: [0, 14]
+    confidence: high
+
+  - id: mekong-drought
+    cat: climate
+    note: "Drought reduces SE Asia rice harvest → India/Vietnam tighten exports → MY rice subsidy bill rises."
+    triggers: ["Mekong River Commission low-flow alerts", "Thailand water restrictions"]
+    targets: ["BERNAS", "MOF", "MAFI"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  - id: monsoon-shifts
+    cat: climate
+    note: "NE monsoon failures or excess hit east-coast Malaysia + agriculture cycle; IOD/ENSO drivers."
+    triggers: ["IOD positive/negative phase", "ENSO transitions", "Bay of Bengal cyclone genesis"]
+    targets: ["MET department", "NADMA", "east-coast politics"]
+    lag_days: [0, 90]
+    confidence: medium
+
+  - id: regional-flooding
+    cat: climate
+    note: "Climate-extreme regional events expose MY infrastructure underinvestment narrative; cross-border refugee flows."
+    triggers: ["Thai/Indonesia mass flooding", "Climate adaptation funding announcements"]
+    targets: ["NADMA", "MOF flood mitigation budget"]
+    lag_days: [0, 60]
+    confidence: medium
+
+  - id: ocean-fisheries
+    cat: climate
+    note: "Fish stock collapse + South China Sea fishing fleet shifts hit east-coast and Sabah communities."
+    triggers: ["Chinese distant-water fleet incidents", "EU IUU yellow/red card actions"]
+    targets: ["MAFI", "MMEA", "east-coast fishing communities"]
+    lag_days: [30, 180]
+    confidence: medium
+
+  # === SECURITY ===
+
+  - id: thai-deep-south
+    cat: security
+    note: "Pattani/Yala/Narathiwat violence spillover risk into Kelantan/Perlis; BRN dynamics."
+    triggers: ["BRN attack waves", "Bangkok-South Thailand peace talks", "Cross-border refugee influx"]
+    targets: ["KDN", "MFA", "Kelantan/Perlis state security"]
+    lag_days: [0, 14]
+    confidence: medium
+
+  - id: myanmar-civil-war
+    cat: security
+    note: "Refugee inflows, drug trafficking spillover, ASEAN credibility crisis."
+    triggers: ["SAC offensive in Rakhine/Chin", "Three Brotherhood Alliance gains", "PDF activity surges"]
+    targets: ["KDN", "MFA", "UNHCR MY"]
+    lag_days: [0, 60]
+    confidence: high
+
+  - id: regional-extremism
+    cat: security
+    note: "JI/Daesh activity in Indonesia/Philippines transmits to MY threat picture; KDN counter-terror operations."
+    triggers: ["Detentions in IDN/PHL", "Daesh/JI propaganda shifts", "Returnee fighter cases"]
+    targets: ["KDN", "Special Branch", "MOSHE"]
+    lag_days: [0, 30]
+    confidence: medium
+
+  - id: arms-trafficking
+    cat: security
+    note: "Sabah-Sulu arms flows; Mindanao spillover."
+    triggers: ["Philippines BARMM political shifts", "ESSCOM incidents"]
+    targets: ["ESSCOM", "MMEA", "Sabah state"]
+    lag_days: [0, 30]
+    confidence: low
+
+  # === HEALTH ===
+
+  - id: china-outbreak
+    cat: health
+    note: "Respiratory/novel pathogen emergence in China → MY airport screening + economic reaction."
+    triggers: ["WHO event alerts", "China CDC unusual cluster reports", "Hong Kong/Taiwan early warning"]
+    targets: ["MOH", "MAHB", "MITI tourism/biz travel"]
+    lag_days: [0, 30]
+    confidence: high
+
+  - id: regional-pandemic
+    cat: health
+    note: "SE Asia avian flu, dengue, Nipah, mpox flare-ups press MOH and border screening."
+    triggers: ["WHO regional alerts", "Indonesia/Vietnam zoonotic case clusters"]
+    targets: ["MOH", "DVS", "MOSHE"]
+    lag_days: [0, 30]
+    confidence: high
+
+  # === CULTURE & SOFT POWER ===
+
+  - id: aff-football
+    cat: culture
+    note: "AFF Cup and FAM dynamics intersect with national-team scandals and royalty patronage."
+    triggers: ["AFF tournament outcomes", "FIFA rulings", "Cross-border player eligibility"]
+    targets: ["FAM", "KBS", "royal patrons"]
+    lag_days: [0, 14]
+    confidence: low
+
+  - id: badminton-world
+    cat: culture
+    note: "BAM and BWF tour dynamics; high media salience around Thomas/Uber Cup, Olympic cycles."
+    triggers: ["BWF major tournaments", "Top-player retirements/injuries"]
+    targets: ["BAM", "KBS"]
+    lag_days: [0, 14]
+    confidence: low

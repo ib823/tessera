@@ -108,3 +108,26 @@ pytest radar/tests/ -v --tb=short
 | Polarization | Esteban-Ray Index | Ethnic opinion splits |
 | Narrative Frag | Jensen-Shannon Divergence | Cross-community framing differences |
 | Network Bridge | HHI-based bridge score | Topics crossing community boundaries |
+
+## Global / Malaysia-Impact Pass
+
+In addition to the domestic-Malaysia scan, the radar pulls a curated
+**global** news stream — international RSS (BBC, Al Jazeera, NHK, The
+Diplomat) plus regional (CNA, Nikkei Asia, SCMP, Caixin) and bilateral
+(Jakarta Post, Bangkok Post, The Hindu, Arab News), and a GDELT
+malaysia-interest query (themes + adjacent-country actors + keyword
+filter). Foreign-channel events are persisted to
+`radar/output/foreign-events.json` on a rolling 24h window.
+
+Once a day, `radar/scripts/malaysia-impact-pass.py` reads that buffer
+plus `radar/config/malaysia-exposure-map.yaml` (~60 hand-curated
+transmission channels — palm oil, ringgit, Strait of Malacca, US chip
+controls, Saudi haj, Indonesian haze, etc.) and asks Claude Haiku to
+score the events for Malaysia downstream impact. Output:
+
+- `radar/output/malaysia-impact-watch.json` — ranked hypotheses
+- `radar/output/malaysia-impact-watch.md` — human briefing
+
+The pass is gated on `ANTHROPIC_API_KEY` — without it, the script
+exits cleanly with no output. GitHub Actions workflow:
+`.github/workflows/malaysia-impact-pass.yml` runs it daily at 22:00 UTC.
