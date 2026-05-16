@@ -189,12 +189,36 @@ function scanPhrases(issueId, field, text, phrases, category, formatMsg) {
   }
 }
 
+// Proper-noun guard for hyphenated compounds. "Anti-Corruption Plan" (both
+// halves Title-Cased and followed by another Title-Cased word) is part of an
+// official name (e.g., Malaysia's National Anti-Corruption Plan). Closing
+// the hyphen would rewrite a proper noun. The check is per-occurrence on the
+// original case-preserving text.
+function isProperNounAtPosition(text, idx, phrase) {
+  const occurrence = text.slice(idx, idx + phrase.length);
+  // Both halves of the compound must be capitalized for proper-noun candidacy.
+  const halves = occurrence.split('-');
+  if (halves.length !== 2) return false;
+  if (!/^[A-Z]/.test(halves[0]) || !/^[A-Z]/.test(halves[1])) return false;
+  // Look for a Title-Cased word immediately following (e.g., "Plan",
+  // "Commission", "Court", "Agency", "Act"). This is the proper-noun signal.
+  const after = text.slice(idx + phrase.length);
+  return /^\s+[A-Z][a-z]+/.test(after);
+}
+
 function scanHyphens(issueId, field, text) {
   if (!text) return;
   const lower = text.toLowerCase();
   for (const [bad, good] of Object.entries(HYPHEN_REWRITES)) {
-    if (lower.includes(bad)) {
-      warn(issueId, field, 'hyphenated-compound', `"${bad}" → consider "${good}"`);
+    let pos = 0;
+    while (pos < lower.length) {
+      const idx = lower.indexOf(bad, pos);
+      if (idx === -1) break;
+      if (!isProperNounAtPosition(text, idx, bad)) {
+        warn(issueId, field, 'hyphenated-compound', `"${bad}" → consider "${good}"`);
+        break; // one warning per phrase per text, matches old behavior
+      }
+      pos = idx + bad.length;
     }
   }
 }
