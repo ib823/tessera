@@ -223,17 +223,25 @@ function scanHyphens(issueId, field, text) {
   }
 }
 
+// Temporal "by" — "was excised by 2006", "was completed by year-end".
+// These are not agent-introducers; "by" here is a deadline preposition.
+// Detect by checking the word(s) immediately after the matched "by".
+const TEMPORAL_BY_AFTER = /^\s+(\d{4}|now|then|year[- ]end|month[- ]end|the\s+(end|start|beginning|deadline|time))\b/i;
+
 function scanPassive(issueId, field, text) {
   if (!text) return;
   const m = text.match(PASSIVE_BY);
-  if (m) {
-    warn(
-      issueId,
-      field,
-      'agentless-passive',
-      `passive-by construction: "${m[0]}" — consider active voice naming the agent`,
-    );
-  }
+  if (!m) return;
+  // Check what follows the matched "...by". If it's a temporal noun, skip.
+  const matchEnd = m.index + m[0].length;
+  const after = text.slice(matchEnd);
+  if (TEMPORAL_BY_AFTER.test(after)) return;
+  warn(
+    issueId,
+    field,
+    'agentless-passive',
+    `passive-by construction: "${m[0]}" — consider active voice naming the agent`,
+  );
 }
 
 function scanVocab(issueId, field, text) {
