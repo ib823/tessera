@@ -1,0 +1,232 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "coa-emergency-proclamation-non-justiciable",
+    "issue_id": "1988",
+    "brief": "engine/briefs/coa-emergency-proclamation-non-justiciable.md",
+    "generated_at": "2026-05-16",
+    "revision_history": [
+      "v1 (2026-05-16): initial draft."
+    ],
+    "discipline": "Process-not-people. 3R-Critical: Royalty is structural to the story. We do NOT characterise the Agong's preferences, motivations, or likely future conduct. We DO report the statutory architecture, the case-law chronology, the historical record of issuances and the one known refusal, and what the 4 May 2026 ruling closed off. The Conference of Rulers reference is to the constitutional body and its documented 25 Oct 2020 meeting — not to any individual ruler's stance."
+  },
+  "headline": "Court of Appeal: no court can review an emergency call — issuance or refusal",
+  "context": "On 4 May 2026 the Court of Appeal dismissed lawyer Syed Iskandar Syed Jaafar's challenge to the Agong's October 2020 refusal of PM Muhyiddin's emergency request. The panel held Article 150(8) — inserted in 1981 — ousts review of both issuance and refusal.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Court of Appeal: the Agong's emergency call — issue it, or refuse it — is final. No court may ask why.",
+      "sub": "The challenge was to a refusal (October 2020). The same architecture covers issuance — including the 2021 Proclamation that suspended Parliament for seven months.",
+      "sources": [
+        "Free Malaysia Today, 'Emergency declarations beyond courts' jurisdiction, rules Court of Appeal', 4 May 2026: https://www.freemalaysiatoday.com/category/nation/2026/05/04/emergency-declarations-beyond-courts-jurisdiction-rules-court-of-appeal",
+        "The Star, 'Appeals court dismisses appeal over King's refusal to declare emergency', 4 May 2026: https://www.thestar.com.my/news/nation/2026/05/04/appeals-court-dismisses-appeal-over-king039s-refusal-to-declare-emergency",
+        "Wikipedia, '2021 Malaysian state of emergency' — 12 January 2021 to 1 August 2021 nationwide (Sarawak extended): https://en.wikipedia.org/wiki/2021_Malaysian_state_of_emergency",
+        "Time, 'Malaysia's King Suspends Parliament for First Time Since 1961 for COVID-19 Emergency', 12 January 2021: https://time.com/5928857/malaysia-king-suspends-parliament/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'",
+      "sub": "Parliament added it in 1981 — a direct reversal of the Privy Council's 1979 Teh Cheng Poh ruling that emergency proclamations were reviewable.",
+      "sources": [
+        "Federal Constitution of Malaysia, Article 150(8) — primary text via Attorney General's Chambers, federal legislation portal: https://lom.agc.gov.my/federal-constitution.php",
+        "Federal Constitution of Malaysia, Part XI (Articles 149–151), CommonLII: https://www.commonlii.org/my/legis/const/1957/11.html",
+        "Teh Cheng Poh alias Char Mer v Public Prosecutor [1979] 2 WLR 623 (PC) — full judgment via Casemine: https://www.casemine.com/judgement/uk/5b2897cf2c94e06b9e19b8fe",
+        "Joshua Wu Kai-Ming, 'Teh Cheng Poh & the Method of Revoking a Proclamation of Emergency and its Ordinances' — explains 1979 PC reviewability holding and the 1981 amendment that overrode it: https://joshuawu.my/teh-cheng-poh-the-method-of-revoking-a-proclamation-of-emergency-and-its-ordinances/",
+        "Malaysian Public Law, 'Challenging a Proclamation of Emergency' — confirms 1981 amendment was Parliament's response to Teh Cheng Poh: https://malaysianpubliclaw.com/challenging-a-proclamation-of-emergency/",
+        "Wikipedia, 'List of amendments to the Constitution of Malaysia' — Constitution (Amendment) Act 1981 inserted Article 150(8): https://en.wikipedia.org/wiki/List_of_amendments_to_the_Constitution_of_Malaysia"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure — and ouster clauses cannot remove it (Indira Gandhi).",
+      "sub": "The 4 May panel accepted the doctrine — but said emergency is 'policy-centric' (security, foreign relations, public order) and outside court competence.",
+      "sources": [
+        "Indira Gandhi Mutho v Pengarah Jabatan Agama Islam Perak & Ors [2018] 1 MLJ 545 (FC) — Federal Court held judicial review is 'essential to the constitutional role of the courts, and inherent in the basic structure of the Constitution'. Analysis: Cambridge Asian Journal of Comparative Law, 'A Contextual Approach to Unconstitutional Constitutional Amendments': https://www.cambridge.org/core/journals/asian-journal-of-comparative-law/article/contextual-approach-to-unconstitutional-constitutional-amendments-judicial-power-and-the-basic-structure-doctrine-in-malaysia/8F559E8EC69189C4AF1998C7D8050862",
+        "Free Malaysia Today, 'Emergency declarations beyond courts' jurisdiction, rules Court of Appeal', 4 May 2026 — Sequerah J characterised 'policy-centric matters such as considerations pertaining to the security of the federation, friendly relations with other countries, public order, and morality' as beyond institutional competence of the judiciary: https://www.freemalaysiatoday.com/category/nation/2026/05/04/emergency-declarations-beyond-courts-jurisdiction-rules-court-of-appeal",
+        "The Star, 4 May 2026 — confirms Sequerah's basic-structure acknowledgement plus the policy-competence carve-out: https://www.thestar.com.my/news/nation/2026/05/04/appeals-court-dismisses-appeal-over-king039s-refusal-to-declare-emergency"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "big": "Five federal emergencies in 60 years (1964, 1966, 1969, 1977, 2021). One known refusal on record: October 2020.",
+      "sub": "That refusal came after the Agong met seven Malay Rulers at Istana Negara on 25 October 2020. With courts now out, it is the only documented check the system has produced.",
+      "sources": [
+        "BERNAMA, 'Chronology of state of emergency in Malaysia' — five federal proclamations: 1964 (Konfrontasi), 1966 (Sarawak), 1969 (May 13), 1977 (Kelantan), 2021 (COVID-19): https://www.bernama.com/en/news.php?id=1921010",
+        "The Vibes, 'Chronology of state of emergency proclamations in Malaysia' — confirms same five: https://www.thevibes.com/articles/news/13515/chronology-of-state-of-emergency-proclamationsin-malaysia",
+        "Malaysiakini, 'Declaration of emergency in our history' — corroborates four pre-2021 emergencies (1964, 1966, 1969, 1977): https://www.malaysiakini.com/news/547827",
+        "Malay Mail, 'Agong says no need for a state of emergency', 25 October 2020 — three-hour Istana Negara meeting with seven other Malay Rulers, Istana statement of refusal: https://www.malaymail.com/news/malaysia/2020/10/25/agong-says-no-need-for-a-state-of-emergency/1916182",
+        "Malay Mail, 'Rulers begin arriving at Istana Negara for meeting on Muhyiddin's alleged emergency bid', 25 October 2020: https://www.malaymail.com/news/malaysia/2020/10/25/rulers-begin-arriving-at-istana-negara-for-meeting-on-muhyiddins-alleged-em/1916123",
+        "BenarNews, 'Malaysian King Rejects PM's Request to Declare Emergency', 25 October 2020: https://www.benarnews.org/english/news/malaysian/king-politics-emergency-10252020092225.html"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "If neither courts nor citizens can question an emergency, the only check the Constitution still funds is the Conference of Rulers.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Established by: (a) Article 150(8) ouster as re-affirmed 4 May 2026 [FMT 4 May 2026; Star 4 May 2026]; (b) the 25 Oct 2020 Istana Negara meeting of the Agong with seven Malay Rulers as the documented mechanism by which Muhyiddin's first request was refused [Malay Mail 25 Oct 2020; BenarNews 25 Oct 2020]; (c) the 1983–84 episode in which the Conference of Rulers mounted opposition to a Mahathir amendment seeking to make the Agong's role wholly mechanical, leading to repeal [Fulcrum.sg 'The Monarchy and Article 150'; Malaysian Public Law 'Challenging a Proclamation of Emergency']."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like a referee whose call and non-call both stand — with no replay rule on either.",
+      "sub": "The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.",
+      "sources": [
+        "Editorial analogy. Mirrors the dual-direction effect of Article 150(8) as re-affirmed 4 May 2026: it ousts review of the Agong's 'satisfaction' that an emergency exists — whether that satisfaction produces issuance (Jan 2021) or refusal (Oct 2020). Sources: Federal Constitution Art. 150(8); FMT 4 May 2026; Star 4 May 2026; Wikipedia '2021 Malaysian state of emergency'; Malay Mail 25 Oct 2020."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. The architecture is sealed.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis tracing the verified chronology: Teh Cheng Poh [1979] 2 WLR 623 (PC) holding emergency proclamations reviewable; Constitution (Amendment) Act 1981 inserting Article 150(8); Indira Gandhi [2018] 1 MLJ 545 (FC) holding judicial review part of the Constitution's basic structure and beyond Parliamentary abrogation; Court of Appeal 4 May 2026 (Sequerah, Supang Lian, Alwi Abdul Wahab JJCA) carving emergency proclamations out of the basic-structure protection as a 'policy-centric' category. Sources: Casemine (Teh Cheng Poh full judgment); Cambridge AJCL (Indira Gandhi analysis); FMT 4 May 2026; Star 4 May 2026."
+      ]
+    }
+  ],
+  "sources": "Free Malaysia Today, The Star, Malay Mail, BenarNews, Time, BERNAMA, Malaysiakini, The Vibes, The Edge — plus primary constitutional and case-law sources (Federal Constitution Article 150 via AGC; Teh Cheng Poh [1979] 2 WLR 623 via Casemine; Indira Gandhi [2018] 1 MLJ 545 via Cambridge AJCL analysis; CommonLII archive of Part XI), academic and practice analysis (Malaysian Public Law, Lee Hishammuddin Allen & Gledhill via Lexology, Fulcrum.sg / ISEAS-Yusof Ishak Institute, Joshua Wu Kai-Ming legal blog, NUS Singapore Journal of Legal Studies 1968 on Stephen Kalong Ningkan)",
+  "confidence": "High on the 4 May 2026 ruling outcome and panel composition (FMT and The Star convergence; Justices Sequerah, Supang Lian, Alwi Abdul Wahab named in FMT). High on Article 150(8) text (Federal Constitution primary text, AGC). High on the 1981 amendment as Parliament's response to Teh Cheng Poh (Malaysian Public Law, Joshua Wu, secondary sources convergent). High on the Indira Gandhi 2018 basic-structure holding (Cambridge AJCL primary academic source). High on the five-emergencies chronology (BERNAMA, The Vibes, Malaysiakini convergent). High on the 25 Oct 2020 Istana Negara meeting structure (8 rulers including Agong; 3 hours; Malay Mail + BenarNews convergent). High on the 2021 emergency dates (12 Jan – 1 Aug 2021 nationwide, Sarawak extended; Wikipedia + Time). Medium on Justice Sequerah's exact quotes — we have paraphrase from FMT and Star but not the full judgment text; the formulation 'policy-centric matters' is consistent across both outlets and used as paraphrase rather than direct quote.",
+  "lenses_used": ["Legal", "Governance", "Historical"],
+  "lenses_applicable_but_unused": ["Political", "Rights"],
+  "needs_verification": [
+    "The full text of the 4 May 2026 Court of Appeal judgment — currently relying on FMT and The Star paraphrase of Justice Sequerah's reasoning. Stage 3 should pull the full judgment from e-Kehakiman if publicly available, to verify the exact phrasing of the 'policy-centric' formulation and the basic-structure carve-out reasoning.",
+    "Whether Syed Iskandar has signalled an intention to seek leave at the Federal Court — not material to the cards as drafted, but useful editorial colour if confirmed.",
+    "Teh Cheng Poh MLJ pagination — the case is reported as [1979] 1 MLJ 50 in some legal databases and [1979] 1 MLJ 150 in others. The WLR citation [1979] 2 WLR 623 is consistent. Stage 3 should reconcile by reference to the official MLJ index.",
+    "Whether the 1981 Constitution (Amendment) Act's Article 150(8) was inserted by Act A514 or A566 — secondary sources note 'Constitution (Amendment) Act 1981' but the Act number was not in the indexed summaries. Stage 3 should reconcile via the AGC consolidated statutes index. (Not material to any card claim as drafted.)",
+    "Whether the High Court judge who dismissed Syed Iskandar's originating summons on 15 Feb 2024 has been publicly named in any source. The Malay Mail and BERNAMA wire reports do not name the judge; not material to any card as drafted, but flagged for completeness."
+  ],
+  "source_notes": "Justice Sequerah quotes: paraphrased from FMT and The Star convergence; not direct-quoted in any card. Panel composition (Sequerah, Supang Lian, Alwi Abdul Wahab) sourced to FMT identification; The Star confirmed a three-judge panel without naming all members. The 'policy-centric matters such as considerations pertaining to the security of the federation, friendly relations with other countries, public order, and morality' formulation appears in both FMT and the search-result aggregation; used as paraphrase. The 1981/1983 amendment distinction kept clear: Article 150(8) is from the Constitution (Amendment) Act 1981 in response to Teh Cheng Poh (1979); a separate 1983 attempt to remove the Agong's discretion under Article 150(1) was repealed in 1984 after Conference of Rulers opposition — that 1983 episode is referenced in the reframe-card source backing but not in the cards' surface text. October 2020 meeting count: 'the Agong met seven other Malay Rulers' (total 8) — Sultans of Johor, Perak, Kedah, Terengganu, Negeri Sembilan, Perlis, Selangor (named in Malay Mail and BenarNews). 2021 emergency: nationwide 12 Jan – 1 Aug 2021; Sarawak extended past 1 Aug to delay the 2022 state election (Wikipedia, Diplomat). No editorial colour added beyond verified facts. Five-emergencies-in-60-years count: 1964, 1966, 1969, 1977, 2021 — three sources convergent (BERNAMA, The Vibes, Malaysiakini); arithmetic 1964 to 2021 = 57 years, 2021 to 2026 (date of writing) = 60-year window. 'One known refusal on record' refers to formally documented refusal; informal or undocumented refusals across the 60 years cannot be ruled out but are not in any indexed source — phrasing 'known refusal' is the verified-harshest accurate framing.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert the ruling is wrong, that emergency proclamations should be reviewable as a normative matter, or that the Agong's October 2020 refusal was right or wrong. We do NOT characterise the panel's motivations. We do NOT predict what the Federal Court will do on any further leave application. We do NOT speculate about future emergencies. We do NOT say the basic-structure doctrine has been 'killed' or 'overruled' — the 2026 ruling formally accepts Indira Gandhi and carves emergency out as a category, which is what the cards say.",
+    "underclaim_check": "We do NOT soften verified findings. The Article 150(8) text is quoted as written. The 1981 amendment was Parliament's reversal of Teh Cheng Poh — secondary sources are convergent on this; we say so without 'reportedly'. The 4 May 2026 panel did acknowledge basic-structure doctrine and did carve emergency out — we say so directly. The five emergencies and one refusal are stated as the historical record, not softened with 'arguably' or 'critics say'.",
+    "misleading_framing_check": "The hook says the architecture covers issuance AND refusal — not just refusal, even though the appeal was about a refusal. This is the accurate scope of 150(8) as confirmed by Khairuddin (2021, on the 2021 issuance) and Syed Iskandar (2026, on the 2020 refusal). Card 4 leads with the five-emergencies count (not just the one refusal) so the reader sees the asymmetry: many issuances, one known refusal. Card 5 (reframe) names the Conference of Rulers as the remaining check — verified by the 25 Oct 2020 meeting as the documented mechanism; no overclaim about whether the Conference acts in other emergencies. Analogy card explicitly notes both directions (issued 2021, refused 2020) to avoid the impression that the ruling only protects refusals.",
+    "unverified_detail_check": "Every specific in v1 cards traces to a primary or near-primary source. Article 150(8) text — Federal Constitution. 1981 amendment date — Wikipedia constitutional-amendments list + Malaysian Public Law + Joshua Wu (three convergent secondary sources on a primary-source legal fact). Teh Cheng Poh 1979 PC holding — Casemine full judgment archive. Indira Gandhi 2018 holding — Cambridge AJCL academic analysis. Five emergencies — BERNAMA + The Vibes + Malaysiakini convergent. 2021 emergency dates — Wikipedia + Time. 25 Oct 2020 Istana meeting (8 rulers, 3 hours) — Malay Mail + BenarNews convergent. 4 May 2026 ruling and panel — FMT + The Star convergent. Justice Sequerah formulation 'policy-centric matters' — FMT + The Star convergent, used as paraphrase not direct quote.",
+    "3R_special_caution": "Royalty: We do NOT characterise the Yang di-Pertuan Agong's preferences, motivations, or expected future conduct. The 25 Oct 2020 meeting is reported as a documented event (Malay Mail + BenarNews) with the Istana's own statement of outcome ('there is no need right now...'). We do NOT speak for any individual Ruler. The Conference of Rulers reference in the reframe card is to the constitutional body and its documented historical role (25 Oct 2020 meeting; 1983–84 opposition to Mahathir's 150(1) amendment). We do NOT predict whether the Conference will or should act in any future emergency. We use the formal title 'Yang di-Pertuan Agong' in card 1 and 'Agong' as the short form elsewhere — both standard usage. Religion and Race: not implicated.",
+    "process_not_people_check": "All sharp claims target the constitutional mechanic (Article 150(8) ouster, basic-structure doctrine, the Teh Cheng Poh → 1981 → Indira Gandhi → 2026 chronology) or institutions (Court of Appeal, Federal Court, Privy Council, Conference of Rulers, Parliament). Muhyiddin is named for the historical fact of his October 2020 request and January 2021 request — both matters of public record. The panel justices are named for the public-record fact of their decision. Syed Iskandar is named as the appellant. No person — including any named justice, Muhyiddin, the Agong, or Syed Iskandar — is characterised as bad-faith or villainous. The dominant emotion target is anxiety-of-precedent (a constitutional check has been formally narrowed), not anger at any individual.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent. The view card's chronological compression (1979 → 1981 → 2018 → 2026, 'architecture sealed') is designed to land the structural shift, not to channel anger at any individual. The reframe is constructive — it names the remaining check rather than declaring the system broken. We avoid framing the Agong, the panel, or Parliament as villains; the verb 'sealed' applies to the architecture, not to any actor's intent."
+  },
+  "pa_score": 87,
+  "pa_score_rationale": "Strong on: (a) 4 May 2026 ruling facts and panel composition (FMT + Star convergence); (b) constitutional text (AGC primary); (c) case-law chronology (Casemine for Teh Cheng Poh, Cambridge AJCL for Indira Gandhi, NUS SJLS for Stephen Kalong Ningkan); (d) emergencies chronology (three convergent secondary sources on what is itself a matter of public legal record); (e) October 2020 Istana meeting (Malay Mail + BenarNews convergent). Capped at 87 because: (i) Justice Sequerah's exact phrasing is paraphrased from secondary reporting — the full judgment text is not in the source set, so the 'policy-centric matters' formulation is treated as paraphrase not quote; (ii) Teh Cheng Poh MLJ pagination (50 vs 150) is unreconciled — only WLR citation is solid; (iii) the High Court judge who first dismissed the matter on 15 Feb 2024 is unnamed in available reporting; (iv) the 1981 amendment Act number (A514 vs A566) is not in the indexed summaries. Items (i)–(iv) are flagged in needs_verification for Stage 3. None of (i)–(iv) materially affects any card's surface claim — the ruling outcome, the ouster text, and the chronology are all primary-source-verifiable."
+}
