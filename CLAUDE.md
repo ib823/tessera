@@ -164,7 +164,8 @@ The validator surfaces:
 3. **Bureaucratic dead-weight** — `stakeholders`, `going forward`, `in terms of`, `the fact that`, etc.
 4. **Hyphenated compounds** that should close up (`non-partisan` → `nonpartisan`) or open up (`civil-society` → `civil society`). Some hyphens are correct (`re-export`, `40-year`) and the warning is a prompt, not a verdict.
 5. **Agentless / by-clause passives** — flagged as candidates for active-voice rewrite where the actor is the story.
-6. **Reframe template drift** — warns when the same rhetorical structure (`X is not Y, it is Z`; `The question is not X, it is Y`; `X isn't the scandal, Y is`) appears in 4+ of the last 10 published reframes.
+6. **Em-dashes** (`—`, U+2014) — the single strongest visible signature of LLM-generated prose. The validator flags every occurrence in reader-facing surfaces (headline, context, card big, card sub). Replace with commas, colons, periods, or parentheses depending on context. The validator is warnings-only; the writer judges per instance. Aggregate matters more than any single dash: the corpus should not read em-dash-heavy. Full guidance and replacement table in `docs/research/language-quality.md` §9.
+7. **Reframe template drift** — warns when the same rhetorical structure (`X is not Y, it is Z`; `The question is not X, it is Y`; `X isn't the scandal, Y is`) appears in 4+ of the last 10 published reframes.
 
 Two posture rules that the validator cannot enforce mechanically — but Stage 6 synthesis is expected to enforce:
 

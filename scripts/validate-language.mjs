@@ -130,6 +130,20 @@ const VOCAB_OPPORTUNITIES = {
 // Conservative: matches only the most common form so false positives stay low.
 const PASSIVE_BY = /\b(was|were)\s+[a-z]+(?:ed|en)\s+by\b/i;
 
+// Em-dash detector — LLM telltale. Generative models default to "—" (U+2014)
+// for parenthetical breaks, appositives, and conclusion-setups where human
+// writers use commas, colons, periods, or parentheses. Mass em-dash use is
+// the single strongest visible signature of LLM-generated prose. T4A's
+// editorial voice is human; flag every occurrence.
+//
+// Replacement guidance (writer judges per instance):
+//   "A — B" (parenthetical / aside)   → "A (B)" or "A, B,"
+//   "A — B." (conclusion-setup)        → "A. B." or "A: B."
+//   "A — B — C" (triple-stack)         → "A, B, C." or split into sentences
+//   "A — and B"                        → "A, and B" or "A. And B."
+//   Numeric ranges "2020—2025"         → en-dash "2020–2025" (still not em-dash)
+const EM_DASH = /—/g;
+
 // ──────────────────────────────────────────────────────────────────────────
 // COLLECTORS
 // ──────────────────────────────────────────────────────────────────────────
@@ -244,6 +258,21 @@ function scanPassive(issueId, field, text) {
   );
 }
 
+function scanEmDash(issueId, field, text) {
+  if (!text) return;
+  const matches = text.match(EM_DASH);
+  if (!matches) return;
+  const count = matches.length;
+  // One warning per field, even if multiple dashes. Includes count in message
+  // so dash-heavy fields are visible at a glance.
+  warn(
+    issueId,
+    field,
+    'em-dash',
+    `${count} em-dash${count > 1 ? 'es' : ''} (—) — LLM telltale. Replace with comma, colon, period, or parentheses depending on context. See docs/research/language-quality.md §9.`,
+  );
+}
+
 function scanVocab(issueId, field, text) {
   if (!text) return;
   const lower = text.toLowerCase();
@@ -301,6 +330,7 @@ for (const issue of targetIssues) {
     );
     scanHyphens(id, field, text);
     scanPassive(id, field, text);
+    scanEmDash(id, field, text);
     if (suggestVocab) scanVocab(id, field, text);
   }
 }

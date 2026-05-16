@@ -232,7 +232,48 @@ The validator warns; the writer decides. Some genuinely belong hyphenated in T4A
 
 ---
 
-## 9. Editorial-effort allocation (carried forward from CLAUDE.md)
+## 9. The em-dash test (and other LLM telltales)
+
+T4A's editorial voice is human, not machine. Mass em-dash use is the single strongest visible signature of LLM-generated prose: generative models default to `—` (U+2014) for parenthetical breaks, appositives, and conclusion-setups where most human writers use commas, colons, periods, or parentheses. Readers who recognise the pattern — and many now do — read the prose as machine-written and discount the whole publication's credibility regardless of how rigorous the underlying analysis is.
+
+The rule for T4A: **prefer the punctuation a careful human writer would actually reach for first.** That is almost never the em-dash. The validator flags every `—` in published cards; the writer judges per instance whether the alternative is genuinely better. Most of the time it is.
+
+### Replacement by context
+
+| Original em-dash use                          | Replace with                                                  |
+| --------------------------------------------- | ------------------------------------------------------------- |
+| Parenthetical aside: `A — short detail — B`   | Parentheses `A (short detail) B` or commas `A, short detail, B` |
+| Setup-then-punchline: `A — B`                 | Period `A. B.` or colon `A: B`                                |
+| Triple stack: `A — B — C`                     | Splits to two sentences, or commas with one parenthetical     |
+| Reframe button: `X — and Y`                   | Period or colon (`X. And Y.` / `X: Y.`)                       |
+| Range between numbers: `2020—2025`            | En-dash `2020–2025` (still not em-dash)                       |
+| Appositive: `Anwar — the PM — said`           | Drop dashes entirely: `Anwar, the PM, said`                   |
+
+### What we are *not* banning
+
+- En-dashes (`–`, U+2013) in numeric ranges or compound modifiers.
+- Hyphens (`-`, U+002D) in compound words.
+- Em-dashes inside direct quotations transcribed verbatim from a source — preserve the source's punctuation.
+- Em-dashes in author-internal documents (CLAUDE.md, audit reports, research docs). The rule is for the *reader-facing* surfaces: headline, context, card big, card sub.
+
+### Why the rule is "warning" not "error"
+
+A small handful of em-dashes across the corpus are genuinely the cleanest punctuation — a quoted phrase that cannot be paraphrased, a numerical span that *only* an em-dash conveys, a literary pause where every alternative reads worse. The validator surfaces every occurrence; the writer applies judgement. The trend that matters is the aggregate: the corpus should not read em-dash-heavy.
+
+### Other LLM telltales to watch (writer's judgement, not validator-flagged)
+
+- `It's worth noting that…`, `Importantly,…`, `It should be noted…` — bureaucratic dead-weight (also §7).
+- Triple parallel structure inside a single sentence (`X, Y, and Z all show that…`) used as a closer.
+- The word `nuanced` as a description of one's own analysis.
+- `Crucially,` and `Notably,` as discourse markers at sentence start when the next clause is not in fact especially crucial or notable.
+- The phrase `at its core` to introduce a reductive summary.
+- `That said,` as a transition into a contradiction.
+
+These are not always wrong, but every one of them appearing twice in the same issue is a signal to rewrite.
+
+---
+
+## 10. Editorial-effort allocation (carried forward from CLAUDE.md)
 
 Restated here so it sits next to the word-choice rules that shape it. Because 80% of readers only read the hook:
 
@@ -248,7 +289,7 @@ If editing time is being spent in inverse proportion, the issue will land poorly
 
 ---
 
-## 10. TL;DR — the operational checklist
+## 11. TL;DR — the operational checklist
 
 Before publishing an issue, walk this list against headline + hook big + reframe big + view big:
 
@@ -256,11 +297,12 @@ Before publishing an issue, walk this list against headline + hook big + reframe
 2. **No weak abstraction from §7** present.
 3. **No bureaucratic dead-weight from §7** present.
 4. **No hyphenated compound from §8** present unless it belongs to the "right" category.
-5. **Hook contains one specific number, name, or date** in the first clause.
-6. **Hook's dominant emotion is anger-at-process or anxiety-of-precedent** — not sadness or generalized concern.
-7. **One elevated word from §6** appears somewhere in the issue (typically reframe or view).
-8. **Reframe template differs** from at least 3 of the last 5 reframes.
-9. **Verbs are active**, agentless passives ("mistakes were made") absent.
-10. **Key entities are named once and reused under the same name** — no elegant variation.
+5. **No em-dash from §9** present unless it is the only punctuation that actually works.
+6. **Hook contains one specific number, name, or date** in the first clause.
+7. **Hook's dominant emotion is anger-at-process or anxiety-of-precedent**, not sadness or generalized concern.
+8. **One elevated word from §6** appears somewhere in the issue (typically reframe or view).
+9. **Reframe template differs** from at least 3 of the last 5 reframes.
+10. **Verbs are active**; agentless passives ("mistakes were made") absent.
+11. **Key entities are named once and reused under the same name**: no elegant variation.
 
-The validator handles 1-4 and 8 mechanically. 5-7 and 9-10 are the writer's judgement, informed by this document.
+The validator handles 1-5 and 9 mechanically. 6-8 and 10-11 are the writer's judgement, informed by this document.
