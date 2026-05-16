@@ -10,10 +10,10 @@ Audit of all 100 published issues against the new accuracy + editorial criteria 
 | With full pipeline (≥7 of 8 artifacts) | 25 |
 | Partially audited (1-6 artifacts) | 3 |
 | **Unauditable (zero artifacts)** | **72** |
-| Phase 1 structural flags | 5 issues |
+| Phase 1 structural flags | 0 issues |
 | Phase 3 low-confidence (FAS<70 or m_true<0.7) | 26 issues |
 | Phase 4 anti-pattern hits | 1 hits across 1 issues |
-| Tier 1 review (highest priority) | 3 issues |
+| Tier 1 review (highest priority) | 1 issues |
 | Tier 2 review (low confidence) | 26 issues |
 | Tier 3 review (anti-pattern only) | 0 issues |
 
@@ -21,24 +21,14 @@ Audit of all 100 published issues against the new accuracy + editorial criteria 
 
 Hard-max length violations, concreteness floor, reframe.sub > 80, missing background images.
 
-### Length hard-max violations (6)
-- **1977** `cards[0]` — 316 chars (max 300)
-- **1984** `context` — 296 chars (max 280)
-- **1984** `cards[1]` — 301 chars (max 300)
-- **1984** `cards[5].big` — 182 chars (max 180)
-- **1985** `cards[1]` — 312 chars (max 300)
-- **1985** `cards[2]` — 303 chars (max 300)
+### Length hard-max violations (0)
+*None.* All published issues respect the hard-max budget.
 
 ### Concreteness floor flags (0)
 *None.* All published fact cards have a concrete anchor.
 
-### Reframe.sub > 80 chars (2)
-- **1973** (154 chars)
-  - big: Malaysian businesses across all communities profit from bonded cheap labour while working-class Malaysians bear the wage suppression.
-  - sub: US$1 billion has been siphoned from Bangladesh. Sabah and Sarawak run a separate crisis with 1 million undocumented migrants outside this system entirely.
-- **1974** (131 chars)
-  - big: The nine dead at Bukit Kukus were foreign workers with no voice in the EIA. Communities near e-waste sites bear health costs no one measures.
-  - sub: B40 and Orang Asli communities live beside unregulated waste with no health monitoring. Every coalition has shielded the regulator.
+### Reframe.sub > 80 chars (0)
+*None.* All published reframes are clean.
 
 ### Missing background images (0)
 *None.*
@@ -219,13 +209,11 @@ Greps published issue text for known anti-patterns from the CLAUDE.md hook engin
 
 Three tiers, ordered by review priority. Tier 1 issues need immediate attention; Tier 3 are minor edits.
 
-### Tier 1 — Unauditable AND has flag (3)
+### Tier 1 — Unauditable AND has flag (1)
 
 These issues have no audit trail AND show structural or anti-pattern flags. Highest priority.
 
 - **1294** [anti-pattern] — Unilateral child conversion ban enforcement lacking in 6 states
-- **1984** [structural] — E-invoice exemption walked back twice in a month after Sabah loss
-- **1985** [structural] — Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
 
 ### Tier 2 — Low Stage 3 confidence (26)
 
@@ -293,7 +281,7 @@ Issues with no other flags but anti-pattern phrases in copy. Minor copy edits.
 ## Recommendations
 
 1. **Tier 1 first** — these are the highest-leverage fixes (unauditable + at least one mechanical flag).
-2. **For unauditable issues without other flags** (count: 69) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
+2. **For unauditable issues without other flags** (count: 71) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
 3. **Tier 2 issues need source review** — Stage 3 already flagged them. Re-read the Stage 3 output and either correct the cards or hold the issue.
 4. **Tier 3 are copy edits** — fix the flagged phrases in place; no source review needed.
 5. **Going forward** — the new accuracy rules in CLAUDE.md will prevent these gaps from recurring on new issues. This audit covers retroactive content only.

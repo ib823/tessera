@@ -1,8 +1,8 @@
 # Em-dash and Auxiliary-Density Overrides
 
-> **Purpose.** Per-instance log of em-dashes intentionally kept across the corpus, and of auxiliary-density (`is/are/was/were/be/been/being` ≥3 per field) constructions intentionally left in place because the construction is structurally needed. Companion to [`language-overrides.md`](language-overrides.md) for the validator-caught categories.
+> **Purpose.** Per-instance log of em-dashes intentionally kept across the published corpus, and of auxiliary-density (`is/are/was/were/be/been/being` ≥3 per field) constructions intentionally left in place because the construction is structurally needed. Companion to [`language-overrides.md`](language-overrides.md) for the older validator-caught categories.
 
-**Last updated:** 2026-05-16 (after the corpus-wide em-dash sweep across all 100 published issues).
+**Last updated:** 2026-05-16 (after the corpus-wide em-dash sweep across all 100 published issues, rebased onto main which added `em-dash` and `auxiliary-density` checks to `scripts/validate-language.mjs` in PR #32).
 
 ---
 
@@ -76,8 +76,13 @@ The list below pairs each flagged field with the structural reason for keeping t
 
 ## Why these two categories live in one file
 
-Both categories surfaced as the dominant non-validator-caught language patterns in the 2026-05-16 corpus pass:
-- **Em-dashes** are an LLM telltale per `docs/research/language-quality.md` §10 (operational checklist). The corpus went from 443 to 0. The brief's target of ≤10 with documented rationale was met with no overrides needed.
-- **Auxiliary density** is one of the writer's-judgement items in §1 (processing fluency) — Anglo-Saxon verbs as the spine. The corpus has 26 flagged fields, of which 17 are the documented reframe template and 9 are structural definition/comparison. The brief's target of ≤5 documented overrides is interpreted here as "document the structural pattern," not "rewrite 21 reframes."
+Both categories were the dominant LLM-telltale and verb-pacing gaps the 2026-05-16 corpus pass closed:
+- **Em-dashes** are an LLM telltale per `docs/research/language-quality.md` §10. The published corpus went from 443 to 0. The brief's target of ≤10 with documented rationale was met with no overrides needed.
+- **Auxiliary density** falls under §7.1 (verb-driven prose) plus §1 (processing fluency — Anglo-Saxon verbs as the spine). The published corpus has 29 flagged fields across 26 issues, of which 17 are the documented reframe template (`X is not Y, it is Z` and its siblings, explicitly built on to-be verbs per `docs/research/bite-size-reading.md`) and 12 are structural definition / comparison / passive-by-design constructions. The brief's target of ≤5 documented overrides is interpreted as "document the structural pattern," not "rewrite 24 reframes that follow the documented template."
 
-Future passes should track new instances against this baseline. The validator does not currently catch either category — both remain writer's-judgement, surfaced by ad-hoc audits.
+The merge of PR #32 added both `em-dash` and `auxiliary-density` checks to `scripts/validate-language.mjs`. Across the 100 published issues the validator now reports:
+- **0 em-dash** warnings (down from ~443 pre-pass).
+- **29 auxiliary-density** warnings (the structural pattern enumerated above).
+- **3 pre-existing validator overrides** (Override 1 §`docs/audits/language-overrides.md` issue 1146 — agentless passive; Override 3 issue 1294 — weak abstraction; Override 4 issue 1871 — agentless passive). Override 2 (issue 1206) sits on an issue that is not currently in the published set, so the validator no longer surfaces it on published-only scans.
+
+Future synthesis should treat a new auxiliary-density flag as actionable only when the construction is **neither** a reframe template **nor** a load-bearing definition/comparison/quote-integrity case enumerated above.
