@@ -152,3 +152,17 @@ coverage.
   high-rank items are *low* news mentions but high *structural*
   importance — that is the queue working as designed, but it also means
   the rank order is not the develop order.
+
+### Silence-watch obligation (Tier S)
+
+Underreported issues accumulate fast. The radar produces an auto-ranked
+`silence-watch.md` each cycle (see `radar/output/silence-watch.md`),
+sorting silence anomalies by `silence × structural importance × age in
+queue`. Items that have been silent for weeks rise above fresh-but-quiet
+items, so genuinely accumulated picks surface.
+
+**Curator rule:** every cycle, at least one Tier A or Tier B pick must
+come from the top 5 of `silence-watch.md`, OR the curator must list each
+of those top 5 in the Skip section below with a one-line reason. This
+prevents silence picks from compounding into a timebomb the radar warned
+about but T4A never developed.

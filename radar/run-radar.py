@@ -185,17 +185,24 @@ def write_issue_queue(new_issues):
         except (json.JSONDecodeError, ValueError):
             existing = []
 
-    # Merge: update existing issues by title, add new ones
+    # Merge: update existing issues by title, add new ones.
+    # Preserve `first_seen` across cycles so silence-watch can measure
+    # how long an underreported item has been accumulating.
     by_title = {i["title"]: i for i in existing}
     new_count = 0
+    cycle_ts = datetime.now(timezone.utc).isoformat()
     for issue in new_issues:
         title = issue.get("title", "")
         if title in by_title:
-            # Update existing — keep higher score, update signals
             old = by_title[title]
+            first_seen = old.get("first_seen") or old.get("timestamp") or cycle_ts
             if issue.get("controversy_score", 0) >= old.get("controversy_score", 0):
+                issue["first_seen"] = first_seen
                 by_title[title] = issue
+            else:
+                old["first_seen"] = first_seen
         else:
+            issue["first_seen"] = issue.get("timestamp") or cycle_ts
             by_title[title] = issue
             new_count += 1
 
@@ -456,6 +463,25 @@ def run_cycle(sources, streams, fusion, config):
     except Exception as e:
         log.error(f"Prediction pipeline failed: {e}")
         pipeline_result = {"error": str(e)}
+
+    # Step 7a: Build silence-watch report so accumulated underreported
+    # issues stay visible. The main queue ranks by controversy potential,
+    # which under-weights items that are silent precisely because nobody
+    # is talking about them — this report re-ranks the silence anomalies
+    # by silence × importance × age so genuinely accumulated picks rise.
+    try:
+        import importlib.util as _ilu
+        _sw_path = RADAR_DIR / "scripts" / "build-silence-watch.py"
+        _spec = _ilu.spec_from_file_location("_sw", _sw_path)
+        _sw = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_sw)
+        sw_result = _sw.build(top_n=25)
+        log.info(
+            f"Silence watch: {sw_result['picks']} picks over threshold "
+            f"(queue={sw_result['queue_size']})"
+        )
+    except Exception as e:
+        log.error(f"Silence watch build failed: {e}")
 
     # Step 7b: Optional in-cycle brief generation with live events.
     # Runs only when config.brief_generator.auto_trigger is enabled. Uses the
