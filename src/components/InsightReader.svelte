@@ -1408,7 +1408,7 @@
     margin: 0 0 6px;
     line-height: 1.32;
     text-wrap: balance;
-    hyphens: auto;
+    hyphens: manual;
   }
 
   .card-area {
@@ -1542,8 +1542,7 @@
     transition: opacity 250ms ease;
     margin: 0;
     overflow-wrap: break-word;
-    word-break: break-word;
-    hyphens: auto;
+    hyphens: manual;
     font-optical-sizing: auto;
     max-width: 65ch;
   }

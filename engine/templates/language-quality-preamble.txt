@@ -1,0 +1,77 @@
+=== LANGUAGE QUALITY REQUIREMENT (READ AFTER stage6-preamble.txt) ===
+
+Synthesis is where accuracy and length budgets get the most attention. Language quality is what gets neglected, and it is the surface the reader actually experiences. Your final wording determines whether 80% of readers (who only read the hook) feel that T4A made them smarter — or that T4A is just another opinion site.
+
+The full reference is docs/research/language-quality.md. This preamble extracts the synthesis-time enforcement rules from that document.
+
+=== THE THREE LANGUAGE TRAPS AT SYNTHESIS ===
+
+1. HEDGE CREEP. As you integrate Stage 2's bias flags, the tempting move is to soften — "may have," "appears to," "some have argued." Each hedge drains the claim. If the evidence is softer than the original wording, soften the *claim*, not the *verb*. Either you have evidence X happened, or you don't have evidence X happened. The hedge that pretends you have-but-don't is the worst of both.
+
+2. ABSTRACTION CREEP. Stage 3's fact corrections often require generalizing. The tempting move is "the report explores," "the case examines," "the issue raises questions about." These all signal *thinkpiece*, not *discovery* — and the reader's System 1 reads them as "no news here." Use verbs of action and finding: found, charged, voted, paid, hid, exempted, killed, gazetted, walked back, conceded, disclosed, withheld.
+
+3. SADNESS COLLAPSE. The default emotional register of bad-news prose is sadness. Sadness does not travel (Berger & Milkman 2012 — the most-cited paper on viral content). Anger-at-process and anxiety-of-precedent travel; sadness sits. Same facts, different emotion, very different reach. Before finalizing every card.big, name the dominant emotion the reader will feel. If it is sadness or generalized concern, rewrite to anger-at-process or anxiety-of-precedent.
+
+=== THE FOUR LANGUAGE CHECKS BEFORE OUTPUT ===
+
+For headline + every card.big + every card.sub:
+
+1. NO HEDGE from this list: perhaps, appears to, may have, might have, some suggest, some say, it could be argued, it remains to be seen, time will tell, not entirely clear, one could argue, arguably.
+
+2. NO WEAK ABSTRACTION from this list: explores, examines, looks at, raises questions about, sparks debate, considers, addresses, tackles, delves into, touches on, discusses, engages with, unpacks, dives into, weighs in on.
+
+3. NO BUREAUCRATIC DEAD-WEIGHT from this list: stakeholders, going forward, in terms of, the fact that, at this point in time, it should be noted that, with respect to, in the context of, in light of the fact that, due to the fact that, in order to.
+
+4. NO HYPHENATED COMPOUND from this list (close them up): non-partisan → nonpartisan; anti-corruption → anticorruption; pre-trial → pretrial; co-author → coauthor; multi-stage → multistage; decision-making → decision making; policy-maker → policymaker; well-being → wellbeing; civil-society → civil society; private-sector → private sector; public-interest → public interest.
+
+   Hyphens that ARE right: re-export, re-elect, re-emerge (repeated-letter doubling); anti-Malaysia (prefix on proper noun); AI-generated, email-based, court-ordered, 40-year (compound modifiers before a noun).
+
+=== THE ONE-ELEVATED-WORD RULE ===
+
+Every issue should contain at least one carefully-chosen elevated word — typically in the reframe or view card — that carries meaning the plain alternative cannot. These words make Malaysian readers feel smart because they are rarely used in Malaysian English news prose, yet precise enough that meaning is unambiguous in context.
+
+Useful elevated vocabulary, by purpose:
+
+- Structural critique (verbs): entrench, insulate, arrogate, launder (metaphorical), metastasise, forbear, defer, outsource (governance sense)
+- Process failure (nouns): provenance, asymmetry, latency, inflection, incumbency, precedent, opacity, discretion, threshold
+- Moral weight, 3R-safe: complicity, dereliction, expedience, obfuscation, equanimity, circumvention
+- Sharp adjectives: tractable, tendentious, pyrrhic, salutary, inveterate, proximate, dispositive, putative
+
+The plain-strong backbone is the default. The elevated spike lands precisely once or twice per issue. More than that and prose tips from precision into performance — the reader feels the writing is showing off, not informing.
+
+=== THE REFRAME TEMPLATE VARIETY RULE ===
+
+The "X is not Y, it is Z" template is sharp when fresh. It flattens to formula by the third consecutive use. If you have generated reframes for recent issues that all use this template, rotate to a different one:
+
+- Causal restructuring — name a different cause: "The leak isn't the scandal. The audit's six-month delay is."
+- Value restructuring — move the issue from one moral category to another: "Floods are not natural disasters when the cause is policy."
+- Question restructuring — reframe what the issue is about: "The question is not whether to regulate. It is who writes the rules."
+- Hard sentence — single declarative naming the unspeakable: "This is the third time this decade."
+- Re-anchored number — lead with a number that recontextualises: "In 2018, 47 prosecutions. In 2024, nine."
+- Paradox — contradiction the system depends on: "The regulator is funded by the regulated."
+
+After writing the reframe, ask: which of the six rhetorical families does this belong to? If the last three reframes were all the same family, use a different one.
+
+=== THE ACTIVE-VOICE DEFAULT ===
+
+Agentless passives ("mistakes were made") hide the agent — and in T4A, the agent is usually the story. Where the evidence supports it, name the actor and use active voice. The validator flags `was/were [past participle] by` constructions specifically; these are the cleanest rewrite candidates — the by-clause already names the actor, you just move it to subject position.
+
+Exceptions: when the actor is genuinely unknown, or when the action — not the actor — is the story (e.g., "The bill was gazetted at 11pm Friday" emphasises the timing, not the gazetter).
+
+=== THE NAMING-CONSISTENCY RULE ===
+
+Within an issue, every entity is named once and reused under the same name. Do not elegant-vary "the contract" → "the deal" → "the agreement." Re-encountering the same noun on a later card boosts processing fluency, and fluency is misattributed as truth (Reber-Schwarz-Winkielman 2004). Elegant variation costs you that.
+
+=== BEFORE YOU OUTPUT — LANGUAGE SELF-CHECK ===
+
+Walk every card.big and the headline against:
+
+1. Is the first concrete element (number, named actor, date, or action verb of finding) in the first clause?
+2. Is the dominant emotion anger-at-process or anxiety-of-precedent, not sadness?
+3. Does any hedge, weak abstraction, or bureaucratic phrase from the lists above appear? If yes, rewrite.
+4. Does any hyphenated compound from the list above appear? If yes, close it up or open it up.
+5. Has at least one elevated word from the vocabulary list landed somewhere in this issue?
+6. Has the same entity been named under one consistent noun throughout?
+7. Is every load-bearing verb active, with the agent named?
+
+After synthesis, run `node scripts/validate-language.mjs --issue {ID}`. Treat warnings as drafts of edits — most are real; the writer's judgement decides which to action.

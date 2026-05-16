@@ -83,7 +83,10 @@ const LIMITS = {
   cardTotal: { target: 240, max: 300 },
 };
 
-// ── Anti-pattern phrases (per CLAUDE.md hook engineering rules) ──
+// ── Anti-pattern phrases (per CLAUDE.md hook engineering rules + Language Quality Standard) ──
+// Hook/underclaim/vague_attribution/reframe_failure: original retrospective signals.
+// hedge/weak_abstraction/bureaucratic/hyphenated_compound: kept in sync with
+// scripts/validate-language.mjs and docs/research/language-quality.md §7-§8.
 const ANTIPATTERNS = {
   hook: [
     'explores', 'examines', 'looks at', 'raises questions', 'sparks debate',
@@ -99,6 +102,26 @@ const ANTIPATTERNS = {
   ],
   reframe_failure: [
     'perhaps the real issue', 'so what now', 'time will tell', 'only time',
+  ],
+  hedge: [
+    'perhaps', 'appears to', 'may have', 'might have', 'some suggest', 'some say',
+    'it could be argued', 'it remains to be seen', 'not entirely clear',
+    'one could argue', 'arguably',
+  ],
+  weak_abstraction: [
+    'considers', 'addresses', 'tackles', 'delves into', 'touches on',
+    'discusses', 'engages with', 'unpacks', 'dives into', 'weighs in on',
+  ],
+  bureaucratic: [
+    'stakeholders', 'going forward', 'in terms of', 'the fact that',
+    'at this point in time', 'it should be noted that', 'with respect to',
+    'in the context of', 'in light of the fact that', 'due to the fact that',
+    'in order to',
+  ],
+  hyphenated_compound: [
+    'non-partisan', 'anti-corruption', 'pre-trial', 'co-author', 'multi-stage',
+    'decision-making', 'policy-maker', 'well-being',
+    'civil-society', 'private-sector', 'public-interest',
   ],
 };
 
