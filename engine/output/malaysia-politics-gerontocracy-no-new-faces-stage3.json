@@ -1,0 +1,242 @@
+{
+  "_provenance": {
+    "stage": "Stage 3 — Fact Verification (ChatGPT)",
+    "slug": "malaysia-politics-gerontocracy-no-new-faces",
+    "issue_id": "1987",
+    "reviewed": "engine/output/malaysia-politics-gerontocracy-no-new-faces-stage1.json",
+    "source": "External ChatGPT run, response provided by user 2026-05-16. Supersedes the in-Claude Stage 3 review previously saved to this path."
+  },
+  "factual_accuracy_score": 68,
+  "source_diversity_estimate": 0.63,
+  "claims": [
+    {
+      "claim": "Median age of Malaysian MPs after GE15 is 52.4, with only 11 of 222 aged 35 or under (5%).",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "The Star / Asia News Network, 'A look at our slightly younger Dewan Rakyat', 2 Dec 2022, https://www.thestar.com.my/news/nation/2022/12/02/interactive-a-look-at-our-slightly-younger-dewan-rakyat and https://asianews.network/a-look-at-our-slightly-younger-dewan-rakyat/",
+      "correction": "The figure is supported by a named news analysis using GE15 candidate data, but I did not find an official SPR table that directly publishes the Dewan Rakyat median age and under-35 MP count. Treat it as verified by authoritative media, not by a primary statistical release.",
+      "stale_check": "The claim is GE15-specific and remains valid for the post-GE15 Dewan Rakyat unless by-elections changed the age distribution materially."
+    },
+    {
+      "claim": "Median Malaysian MP is 52. Median citizen is 30.",
+      "status": "MISLEADING",
+      "m_true": 0.5,
+      "m_false": 0.1,
+      "m_unknown": 0.4,
+      "source": "DOSM, 'Current Population Estimates, Malaysia, 2022', median age 30.4, https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-malaysia-2022; DOSM, 'Current Population Estimates, Malaysia, 2025', median age 31.3, 31 Jul 2025, https://www.dosm.gov.my/uploads/release-content/file_20250821151339.pdf",
+      "correction": "For a GE15-era comparison, 'median population age was 30.4 in 2022' is fair if rounded. For a 2026 article, 'median citizen is 30' is stale or imprecise because DOSM's 2025 estimate gives Malaysia's median population age as 31.3. Also, DOSM's quoted figure is a population median, not clearly a citizen-only median.",
+      "stale_check": "Yes. The 30 figure matches 2022 rounding better than the latest 2025 estimate available before the analysis date."
+    },
+    {
+      "claim": "Only 5% of MPs are under 35 - in a country where 36% of voters are.",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.1,
+      "m_unknown": 0.75,
+      "source": "The Vibes, '[UPDATED] Youth voters form 50% of GE15 electoral roll: EC', 20 Oct 2022, https://www.thevibes.com/articles/news/74747/youth-voters-form-50-of-ge15-electoral-roll-ec; SPR age-table PDF was referenced in search results but not accessible during verification.",
+      "correction": "The 5% MP figure is supported by The Star/ANN. The 36% under-35 voter share was not verified from a primary SPR table. The verified public claim I found is that voters aged 18 to 39 made up 50.3% of the GE15 roll. Replace '36% of voters are under 35' with the directly sourced 18-39 figure, or disclose the calculation method and source table.",
+      "stale_check": "No stale justification found. The analysis itself flags the 36% figure as interpolated and needing verification."
+    },
+    {
+      "claim": "France's last two prime ministers took office at 39 and 34.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.85,
+      "m_unknown": 0.1,
+      "source": "Elysee, 'Nomination de Sebastien Lecornu, Premier ministre', 10 Oct 2025, https://www.elysee.fr/emmanuel-macron/2025/10/10/nomination-de-sebastien-lecornu-premier-ministre; Reuters, 'Macron names loyalist Lecornu as new French PM', 9 Sep 2025; Le Monde, 'Francois Bayrou appointed prime minister', 13 Dec 2024; Al Jazeera, 'Gabriel Attal becomes France's youngest prime minister', 9 Jan 2024",
+      "correction": "As of the 2026 analysis date, France's recent prime ministers were Gabriel Attal, Michel Barnier, Francois Bayrou, and Sebastien Lecornu. The last two before or at the analysis date were not Attal and Lecornu only. Bayrou, appointed in December 2024, was about 73, and Barnier, appointed in September 2024, was also about 73. A safer sentence is: 'France appointed Gabriel Attal as prime minister at 34 in 2024 and Sebastien Lecornu at 39 in 2025, but also appointed Michel Barnier and Francois Bayrou, both in their seventies, in between.'",
+      "stale_check": "This is not stale in favour of the original analysis. The analysis was generated on 2026-05-16, after Barnier, Bayrou, and Lecornu had already served or been appointed."
+    },
+    {
+      "claim": "Malaysia's last three: 92, 72, 75.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.9,
+      "m_unknown": 0.05,
+      "source": "Prime Minister's Office Malaysia, 'ANWAR IBRAHIM SWORN IN AS 10TH PRIME MINISTER OF MALAYSIA', 25 Nov 2022, https://www.pmo.gov.my/2022/11/anwar-ibrahim-sworn-in-as-10th-prime-minister-of-malaysia/; PMO Malaysia, 'PM's Profile', Anwar born 10 Aug 1947, https://www.pmo.gov.my/pm-profile/; Xinhua, 'Muhyiddin sworn in as Malaysian prime minister', 1 Mar 2020; official/public records for Ismail Sabri's swearing-in on 21 Aug 2021 and birth date 18 Jan 1960",
+      "correction": "The sequence omits Ismail Sabri Yaakob. Since 2018, Malaysia's prime ministers took office at about 92 (Mahathir, 2018), 72 (Muhyiddin, 2020), 61 (Ismail Sabri, 2021), and 75 (Anwar, 2022). The last three were therefore about 72, 61, and 75, not 92, 72, and 75.",
+      "stale_check": "No. The omission predates the analysis and is a factual sequencing error."
+    },
+    {
+      "claim": "Malaysia's candidacy age has been 18 since 2019.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.15,
+      "m_unknown": 0.3,
+      "source": "Laws of Malaysia, Constitution (Amendment) Act 2019 [Act A1603], Royal Assent 4 Sep 2019, Gazette 10 Sep 2019, https://lom.agc.gov.my/; Library of Congress Global Legal Monitor, 'Malaysia: Bill Reducing Voting Age to 18 Passed', 18 Jul 2019, https://www.loc.gov/item/global-legal-monitor/2019-07-18/malaysia-bill-reducing-voting-age-to-18-passed/",
+      "correction": "The 2019 constitutional amendment lowered the Dewan Rakyat candidacy age and voting age from 21 to 18. However, implementation and operation dates matter, especially for Undi18, which became operational for voting in December 2021. Use 'the 2019 constitutional amendment lowered the candidacy age to 18' rather than implying every practical effect existed throughout 2019.",
+      "stale_check": "No. This is a legal precision issue, not a stale-data issue."
+    },
+    {
+      "claim": "Lim Kit Siang: MP for 53 years.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "DAP official biodata, Lim Kit Siang first elected MP for Bandar Melaka in 1969, http://dapmalaysia.org/newenglish/leaders_biodata_lks.htm; Lim Kit Siang official site, 'MP from 1969-2022', https://limkitsiang.com/; The Vibes, 'Kit Siang retires from electoral politics, DAP leadership', 20 Mar 2022",
+      "correction": "The accurate formulation is that Lim Kit Siang's parliamentary career spanned 1969 to 2022, about 53 years. It should not be written as 53 continuous years as an MP because he was not an MP between 1999 and 2004, and the early 1969-1971 Parliament period was affected by suspension after the May 1969 emergency.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "Anwar in UMNO since 1982.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Britannica, 'Anwar Ibrahim', https://www.britannica.com/biography/Anwar-Ibrahim; PMO Malaysia profile confirms Anwar's birth date and premiership but did not directly verify UMNO entry date, https://www.pmo.gov.my/pm-profile/",
+      "correction": "The claim is widely reported and likely true, but I did not locate a primary source in reasonable effort that directly confirms the exact UMNO entry date. For strict fact-checking, write 'authoritative biographies report that Anwar joined UMNO in 1982' unless a party record, parliamentary record, or official biography is cited.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "Najib: MP for 46 years until prison.",
+      "status": "MISLEADING",
+      "m_true": 0.5,
+      "m_false": 0.2,
+      "m_unknown": 0.3,
+      "source": "Parliament of Malaysia profile archive for Najib Razak, https://www.parlimen.gov.my/; Federal Court of Malaysia, SRC International appeal judgment, 23 Aug 2022, e.g. https://www.kehakiman.gov.my/; Federal Constitution of Malaysia Article 48 text, https://www.sprm.gov.my/admin/files/sprm/assets/pdf/penguatkuasaan/perlembagaan-persekutuan-bi.pdf",
+      "correction": "Najib was first elected MP for Pekan in 1976 and was imprisoned after the Federal Court affirmed his SRC conviction on 23 Aug 2022. The phrase 'until prison' is editorial shorthand and may blur the technical question of when his parliamentary membership ended, including dissolution and constitutional disqualification mechanics. Safer: 'Pekan MP from 1976 to 2022; imprisoned after the Federal Court affirmed his SRC conviction in August 2022.'",
+      "stale_check": "No."
+    },
+    {
+      "claim": "Hadi Awang has led PAS for 24 consecutive years.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0.05,
+      "m_unknown": 0.2,
+      "source": "PAS leadership references and Bernama/The Sun report that Abdul Hadi Awang was returned unopposed as PAS president for the 2023-2025 term; public leadership histories place his presidency from 2002; The Sun/Bernama, 20 Oct 2023, https://thesun.my/",
+      "correction": "The claim is materially accurate if measured from 2002 to May 2026, which is about 24 years. For precision, state 'since 2002' rather than only '24 years'.",
+      "stale_check": "No. As of May 2026, public reporting still identified Hadi as PAS president."
+    },
+    {
+      "claim": "Lim Guan Eng held DAP's secretary-general post for 18 - the party's three-term cap.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0.05,
+      "m_unknown": 0.2,
+      "source": "Free Malaysia Today, 'Loke elected new DAP secretary-general', 20 Mar 2022, https://www.freemalaysiatoday.com/category/nation/2022/03/20/loke-elected-new-dap-secretary-general/; Channel NewsAsia, 20 Mar 2022, reporting Lim Guan Eng vacated the post after reaching the maximum three terms",
+      "correction": "The figure is rounded. Lim Guan Eng served from 2004 to 2022, roughly 17.5 years. 'About 18 years' is more precise.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "Ministers receive up to RM2 million in gratuity at resignation.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "The Vibes, 'The perks of being a lawmaker: RM2 mil gratuity, RM100,000 monthly pension', 27 Sep 2021, https://www.thevibes.com/articles/news/43034/the-perks-of-being-a-lawmaker-rm2-mil-gratuity-rm100000-monthly-pension; Members of Parliament (Remuneration) Act 1980 (Act 237), Parliament of Malaysia PDF, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf; Consumers Association of Penang, 'Time to Reform the Pension Scheme for Elected Representatives in Malaysia', https://consumer.org.my/time-to-reform-the-pension-scheme-for-elected-representatives-in-malaysia/",
+      "correction": "The Act uses a formula based on salary and reckonable service. The RM2 million figure is reported as an upper-bound allegation or estimate in parliamentary/policy reporting, not a universal entitlement at every resignation. Safer wording: 'Some ministers may qualify for large gratuities, with public reporting citing figures up to around RM2 million depending on service and formula.'",
+      "stale_check": "No recent change found, but the statutory and policy context should be rechecked before publication."
+    },
+    {
+      "claim": "Pension stacking across MP, ADUN, and cabinet roles can exceed RM100,000 a month.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.1,
+      "m_unknown": 0.35,
+      "source": "The Vibes, 'The perks of being a lawmaker: RM2 mil gratuity, RM100,000 monthly pension', 27 Sep 2021, https://www.thevibes.com/articles/news/43034/the-perks-of-being-a-lawmaker-rm2-mil-gratuity-rm100000-monthly-pension; CAP, 'Time to Reform the Pension Scheme for Elected Representatives in Malaysia', https://consumer.org.my/time-to-reform-the-pension-scheme-for-elected-representatives-in-malaysia/; Members of Parliament (Remuneration) Act 1980 (Act 237), https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf",
+      "correction": "The claim is supported by public reporting and policy advocacy, but it should be framed as a possible extreme case under multiple pension streams, not as typical or automatic. The analysis should include that this depends on offices held, tenure, federal and state laws, and applicable pension formulas.",
+      "stale_check": "No recent change found, but no current official consolidated pension calculation was located."
+    },
+    {
+      "claim": "53 politicians got GLC director seats during the 17-month 2020-2022 government; 25 during the previous one.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "BERSIH, 'Time To End Political Appointments and Patronage to Government-Linked Companies', 25 May 2023, https://bersih.org/2023/05/25/time-to-end-political-appointments-and-patronage-to-glc/; C4 Center MyGovt Reform Tracker, 'GLC / Political Appointments', https://c4center.org/mygovtreformtracker/glc-political-appointments/; Malaysiakini, reporting IDEAS 2026 findings on 238 political appointments to federal statutory bodies and GLCs under the Anwar government",
+      "correction": "The 53 and 25 figures appear to be BERSIH-reported NGO figures, not primary government data. The period wording is also problematic: the Muhyiddin PN government ran from March 2020 to August 2021, about 17 months, not '2020-2022'. The preceding PH government ran from May 2018 to February/March 2020, about 21-22 months. Use BERSIH's exact government windows and disclose the source as an NGO study. Also note that newer 2026 reporting on IDEAS indicates a later wave of political appointments under the Anwar government, so the cross-coalition pattern should be updated.",
+      "stale_check": "Yes. The 2023 BERSIH counts are not the latest relevant public information by May 2026."
+    },
+    {
+      "claim": "France appointed a 39-year-old president in 2017 and a 34-year-old prime minister in 2024.",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.05,
+      "m_unknown": 0.15,
+      "source": "Elysee official biography of Emmanuel Macron, born Dec 1977 and elected 7 May 2017, https://www.elysee.fr/emmanuel-macron; Al Jazeera, 'Gabriel Attal becomes France's youngest prime minister', 9 Jan 2024, https://www.aljazeera.com/news/2024/1/9/gabriel-attal-becomes-frances-youngest-prime-minister",
+      "correction": "This specific sentence is accurate. It should not be conflated with the separate incorrect claim that France's last two prime ministers were aged 39 and 34.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "Finland's PM took office at 34. Austria's chancellor at 31.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "UN SDGs profile of Sanna Marin noting appointment as Finnish prime minister on 10 Dec 2019, https://www.un.org/sustainabledevelopment/sdgadvocates/sanna-marin/; Britannica, 'Sanna Marin', reporting she was 34 when she became prime minister; public Austrian records and international reporting show Sebastian Kurz became Austrian chancellor on 18 Dec 2017 at age 31, e.g. https://www.timesofisrael.com/austria-swears-in-europes-youngest-leader-amid-protests-against-far-right/",
+      "correction": "The ages are materially accurate, but the sources are mixed official and authoritative secondary sources rather than two direct national government biographies with age calculations. Keep the claim, but cite official appointment dates and birth dates if publishing.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "The European Parliament's youngest MEP is 23.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.05,
+      "m_unknown": 0.1,
+      "source": "European Parliament, 'Facts and figures: the European Parliament's 2024-2029 term', 22 Jul 2024, https://www.europarl.europa.eu/topics/en/article/20190705STO56305/facts-and-figures-the-european-parliament-s-2024-2029-term; EPRS, 'Average age: Members of the European Parliament 2024-2029', https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/762356/EPRS_ATA(2024)762356_EN.pdf",
+      "correction": "No correction needed for the 2024-2029 European Parliament term.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia's two youngest MPs are 26 - and 97-year-old Mahathir lost his deposit at GE15.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "The Star / Asia News Network, 'A look at our slightly younger Dewan Rakyat', 2 Dec 2022, https://www.thestar.com.my/news/nation/2022/12/02/interactive-a-look-at-our-slightly-younger-dewan-rakyat; BERNAMA, 'GE15: Two candidates aged 23 are the youngest, Dr Mahathir at 97 is the oldest candidate', 5 Nov 2022, https://pru15.bernama.com/news-en.php?id=2135656; Malay Mail, 'GE15: In embarrassing defeat, Dr Mahathir loses Langkawi along with election deposit', 20 Nov 2022, https://www.malaymail.com/news/malaysia/2022/11/20/ge15-in-embarrassing-defeat-dr-mahathir-loses-langkawi-along-with-election-deposit/40741",
+      "correction": "The claim is materially accurate for the immediate post-GE15 composition and GE15 result. The analysis also cites Mahathir's 4,566 votes and 6.8%; I verified the 4,566 figure from election reporting but did not verify the 6.8% denominator from an official SPR result sheet in reasonable effort.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "The bottleneck is not the law. Parliament lowered the candidacy age to 18 in 2019. The bottleneck is party machinery, pensions, and GLC patronage.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.2,
+      "m_unknown": 0.4,
+      "source": "Constitution (Amendment) Act 2019 [Act A1603], https://lom.agc.gov.my/; BERSIH 2023 GLC appointments statement, https://bersih.org/2023/05/25/time-to-end-political-appointments-and-patronage-to-glc/; Members of Parliament (Remuneration) Act 1980, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf",
+      "correction": "It is supported that the formal candidacy-age barrier was lowered and that pensions and GLC appointments may create incentives. However, the sentence moves from evidence to causal diagnosis without direct proof that these are the bottleneck explaining the under-35 MP share. Use 'the bottleneck appears more structural than legal, including party selection processes and political incentives' unless supported by political science research or party nomination data.",
+      "stale_check": "No, but the GLC appointment evidence is stale because newer 2026 reporting exists."
+    },
+    {
+      "claim": "The pattern survives every coalition.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.1,
+      "m_unknown": 0.45,
+      "source": "BERSIH 2023 GLC appointments statement, https://bersih.org/2023/05/25/time-to-end-political-appointments-and-patronage-to-glc/; C4 Center MyGovt Reform Tracker, https://c4center.org/mygovtreformtracker/glc-political-appointments/; Malaysiakini 2026 reporting on IDEAS findings of political appointments under the Anwar government",
+      "correction": "The general cross-coalition pattern is plausible and supported by NGO reporting, but 'every coalition' is stronger than the cited data unless all relevant coalitions and periods are systematically covered. Safer: 'reported across multiple recent governments and coalitions.'",
+      "stale_check": "Yes. The original BERSIH 2023 frame should be updated with 2026 IDEAS reporting before publication."
+    },
+    {
+      "claim": "High on all numerical claims.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.75,
+      "m_unknown": 0.15,
+      "source": "Verification findings above, including DOSM 2025 median age, SPR/EC 18-39 voter share via The Vibes, French PM sequence via Elysee/Reuters/Le Monde, and Malaysian PM sequence via PMO and public records.",
+      "correction": "Confidence should be downgraded. Several numerical claims are unverified or wrong: 36% under-35 voters was not verified; France's 'last two prime ministers' framing is wrong; Malaysia's 'last three PMs' ages omit Ismail Sabri; GLC appointment windows are imprecise; pension/gratuity figures need statutory calculation caveats.",
+      "stale_check": "No. These problems existed at the 2026 generation date."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "UNVERIFIED_DETAIL", "claim": "Only 5% of MPs are under 35 - in a country where 36% of voters are.", "why": "The 5% MP figure is supported by The Star/ANN, but the 36% voter figure was not verified from a primary SPR table. The directly found voter-age figure is 18-39 voters at 50.3%, not under-35 voters at 36%.", "primary_source": "The Vibes citing EC electoral roll release, 20 Oct 2022, https://www.thevibes.com/articles/news/74747/youth-voters-form-50-of-ge15-electoral-roll-ec"},
+    {"sin": "OVERCLAIM", "claim": "France's last two prime ministers took office at 39 and 34.", "why": "This is contradicted by the actual French PM sequence. It omits Michel Barnier and Francois Bayrou, both appointed after Gabriel Attal and before or around Sebastien Lecornu's 2025 appointments.", "primary_source": "Elysee appointment of Sebastien Lecornu, 10 Oct 2025, https://www.elysee.fr/emmanuel-macron/2025/10/10/nomination-de-sebastien-lecornu-premier-ministre; Le Monde reporting Francois Bayrou appointment, 13 Dec 2024"},
+    {"sin": "UNVERIFIED_DETAIL", "claim": "Malaysia's last three: 92, 72, 75.", "why": "The sequence omits Ismail Sabri Yaakob, who became prime minister in 2021 at about age 61. The last three before the 2026 article were Muhyiddin, Ismail Sabri, and Anwar.", "primary_source": "PMO Malaysia, Anwar swearing-in, 25 Nov 2022, https://www.pmo.gov.my/2022/11/anwar-ibrahim-sworn-in-as-10th-prime-minister-of-malaysia/; public swearing-in records for Ismail Sabri, 21 Aug 2021"},
+    {"sin": "MISLEADING_FRAMING", "claim": "Lim Kit Siang: MP for 53 years.", "why": "This is fair only as a 1969-2022 career span. It is misleading if read as continuous parliamentary service because he was not an MP between 1999 and 2004, and the early Parliament period was affected by suspension.", "primary_source": "DAP official biodata, http://dapmalaysia.org/newenglish/leaders_biodata_lks.htm; Lim Kit Siang official site, https://limkitsiang.com/"},
+    {"sin": "OVERCLAIM", "claim": "Ministers receive up to RM2 million in gratuity at resignation.", "why": "The statutory scheme is formula-based and conditional. Public reporting cites an upper-bound figure, but the wording risks implying an automatic entitlement on resignation.", "primary_source": "Members of Parliament (Remuneration) Act 1980, First Schedule, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf"},
+    {"sin": "UNVERIFIED_DETAIL", "claim": "53 politicians got GLC director seats during the 17-month 2020-2022 government; 25 during the previous one.", "why": "The counts appear to come from BERSIH/C4 NGO reporting rather than primary government data, and the period wording is inaccurate. The 17-month PN period is March 2020 to August 2021, not 2020-2022.", "primary_source": "BERSIH statement, 25 May 2023, https://bersih.org/2023/05/25/time-to-end-political-appointments-and-patronage-to-glc/"},
+    {"sin": "MISLEADING_FRAMING", "claim": "The bottleneck is party machinery, pensions, and GLC patronage.", "why": "The evidence supports possible institutional incentives, but does not prove a causal model for why under-35 candidates are only 5% of MPs. It should be framed as a structural hypothesis, not a settled factual cause.", "primary_source": "Constitution (Amendment) Act 2019 [Act A1603], https://lom.agc.gov.my/; Members of Parliament (Remuneration) Act 1980, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf; BERSIH 2023 GLC report"}
+  ],
+  "omitted_facts": [
+    "France's recent prime ministerial sequence weakens the Europe comparison: after Gabriel Attal, France appointed Michel Barnier and Francois Bayrou, both in their seventies, before or around Sebastien Lecornu's 2025 appointments. Sources: Elysee, 10 Oct 2025, https://www.elysee.fr/emmanuel-macron/2025/10/10/nomination-de-sebastien-lecornu-premier-ministre; Reuters, 9 Sep 2025; Le Monde, 13 Dec 2024.",
+    "Malaysia's prime ministerial sequence since 2018 includes Ismail Sabri Yaakob, appointed on 21 Aug 2021 at about age 61. The analysis omits him in the hook's 'last three' comparison.",
+    "DOSM's latest 2025 population estimate before the article date gives Malaysia's median population age as 31.3, not 30. Source: DOSM, Current Population Estimates Malaysia 2025, 31 Jul 2025, https://www.dosm.gov.my/uploads/release-content/file_20250821151339.pdf.",
+    "The directly verified GE15 voter-age statistic is 18-39 voters at 50.3% of the electoral roll, not under-35 voters at 36%. Source: The Vibes citing EC electoral roll release, 20 Oct 2022, https://www.thevibes.com/articles/news/74747/youth-voters-form-50-of-ge15-electoral-roll-ec.",
+    "Newer 2026 reporting citing IDEAS identified 238 political appointments to federal statutory bodies and GLCs under the Anwar government. This should be considered if the article claims the cross-coalition patronage pattern is current as of May 2026.",
+    "Lim Kit Siang's '53 years' should be described as a parliamentary career span from first election to retirement, not continuous years as an MP, because he was out of Parliament from 1999 to 2004."
+  ],
+  "source_assessment": "The original analysis draws on a reasonably wide range of source types: official/statutory material, election-related reporting, mainstream Malaysian media, international media, NGOs, and encyclopedic biographies. However, the quality is uneven. Several high-stakes claims rely on secondary media, Wikipedia-style biography aggregation, or NGO advocacy reports rather than primary tables, party records, gazettes, or official appointment histories. The analysis cites official law for Undi18 and the MP remuneration framework, but not always the exact statutory calculation needed to support the RM2 million and RM100,000 claims. It lacks a primary SPR table for the under-35 voter share, lacks a current official sequence-aware check for French prime ministers, and lacks official or countervailing government/party perspectives on GLC appointments and pensions. Politically, the named examples are cross-coalition, but the source base does not fully represent party, government, opposition, academic, legal, business, and voter perspectives.",
+  "overall_assessment": "The analysis is directionally strong on the broad structural thesis and contains many accurate anchored facts, including the GE15 Dewan Rakyat age profile, Undi18 lowering of the candidacy age, several European young-leader examples, Hadi's long PAS presidency, Lim Guan Eng's DAP secretary-general tenure, and Mahathir's GE15 defeat. However, its factual reliability is materially weakened by two headline-level sequencing errors, namely France's 'last two prime ministers' and Malaysia's 'last three' prime ministers, plus an unverified 36% under-35 voter statistic, imprecise GLC appointment windows, and overconfident pension/gratuity framing. The piece should be revised before publication: keep the structural argument, but downgrade causal certainty, replace unsupported figures with directly sourced ones, correct the France and Malaysia leadership comparisons, and label NGO-derived patronage figures transparently."
+}

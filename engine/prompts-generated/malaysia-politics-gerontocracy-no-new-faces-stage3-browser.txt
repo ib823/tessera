@@ -1,0 +1,243 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "malaysia-politics-gerontocracy-no-new-faces",
+    "issue_id": "1983",
+    "brief": "engine/briefs/malaysia-politics-gerontocracy-no-new-faces.md",
+    "generated_at": "2026-05-16",
+    "revision_history": [
+      "v1 (2026-05-16): initial draft. Reader prompt was a passionate editorial about Malaysian gerontocracy and cult-of-individual politics. Editorial decision per the brief's framing guidance: convert frustration into structural analysis. Critique the rules (Article 47/48/49A, party youth-wing geometry, MoP Remuneration Act 1980, GLC director patronage), not named individuals beyond what their verifiable career-length facts require. Lens spread (Political / Economic / Governance) deliberately wide so the issue surfaces across multiple Today-page topics."
+    ],
+    "discipline": "Process-not-people. Non-partisan: every coalition produced and benefits from these rules. Examples in Fact 1 deliberately span DAP (Lim Kit Siang), PKR/UMNO (Anwar), PAS (Hadi Awang), UMNO (Najib) so no single coalition is targeted. No 3R touchpoints: no royalty, race or religion claims. Age criticism limited to verifiable career-length facts; no characterisation of any individual as too old to govern."
+  },
+  "headline": "Median Malaysian MP is 52. Median citizen is 30. The bottleneck is not the law.",
+  "context": "Median age of Malaysian MPs after GE15 is 52.4, with only 11 of 222 aged 35 or under (5%). France's last two prime ministers took office at 39 and 34. Malaysia's candidacy age has been 18 since 2019 — yet under-35s remain 5% of seats.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Median Malaysian MP is 52. Median citizen is 30. Only 5% of MPs are under 35 — in a country where 36% of voters are.",
+      "sub": "France's last two prime ministers took office at 39 and 34. Malaysia's last three: 92, 72, 75. The constitution is not what is blocking renewal.",
+      "sources": [
+        "The Star / Asia News Network, 'INTERACTIVE: A look at our slightly younger Dewan Rakyat', 2 Dec 2022 — median MP age 52.4 (GE15) and 53.4 (GE14); 11 of 222 MPs aged ≤35 (5.0%); 84 of 222 under 50 (37.8%): https://www.thestar.com.my/news/nation/2022/12/02/interactive-a-look-at-our-slightly-younger-dewan-rakyat",
+        "Election Commission of Malaysia electoral-roll figures via The Vibes, '[UPDATED] Youth voters form 50% of GE15 electoral roll: EC': https://www.thevibes.com/articles/news/74747/youth-voters-form-50-of-ge15-electoral-roll-ec — 50% of GE15 roll is aged 18-40; under-35 share derived as ~36% from age-bracket breakdown.",
+        "France 24, 'How Gabriel Attal became France's youngest-ever prime minister', 9 Jan 2024 — Attal sworn in at 34: https://www.france24.com/en/europe/20240109-how-gabriel-attal-became-france-s-youngest-ever-prime-minister",
+        "Wikipedia, 'Emmanuel Macron' — born 21 Dec 1977, elected president 7 May 2017 at age 39, cross-checked against multiple primary biographies.",
+        "Wikipedia, 'Anwar Ibrahim' — born 10 Aug 1947, sworn in 24 Nov 2022 (age 75); 'Muhyiddin Yassin' — born 15 May 1947, sworn in March 2020 (age 72); 'Mahathir Mohamad' — born 10 Jul 1925, second-term PM May 2018 (age 92). All birth dates cross-checked against Perdana Leadership Foundation biographies.",
+        "Library of Congress Global Legal Monitor, 'Malaysia: Bill Reducing Voting Age to 18 Passed', 18 Jul 2019 — confirms 2019 amendment lowered BOTH voting age (Art 119) and candidacy age (Art 47, Eighth Schedule s.5) to 18: https://www.loc.gov/item/global-legal-monitor/2019-07-18/malaysia-bill-reducing-voting-age-to-18-passed/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Same cast has run politics since the 1970s. Lim Kit Siang: MP for 53 years. Anwar in UMNO since 1982. Najib: MP for 46 years until prison.",
+      "sub": "Hadi Awang has led PAS for 24 consecutive years. Lim Guan Eng held DAP's secretary-general post for 18 — the party's three-term cap.",
+      "sources": [
+        "Wikipedia, 'Lim Kit Siang' — elected MP for Bandar Malacca in 1969 general election; retired from electoral politics announced 20 March 2022. 53-year MP tenure 1969-2022. Cross-checked against DAP official biodata, http://dapmalaysia.org/newenglish/leaders_biodata_lks.htm and The Vibes, 'Kit Siang retires from electoral politics, DAP leadership', 20 Mar 2022.",
+        "Britannica, 'Anwar Ibrahim' — joined UMNO in 1982 at the invitation of then-PM Mahathir Mohamad; became Minister of Culture/Youth/Sports in 1983: https://www.britannica.com/biography/Anwar-Ibrahim. Cross-checked against Wikipedia 'Anwar Ibrahim' and Al Jazeera 'Timeline: Mahathir and Anwar's turbulent relationship', 24 Feb 2020.",
+        "Wikipedia, 'Najib Razak' — first elected MP for Pekan in March 1976 by-election (succeeding his father Abdul Razak Hussein) at age 23. Convicted SRC International case 28 Jul 2020 (12 years jail, RM210m fine); Federal Court upheld 23 Aug 2022. Article 48 disqualification triggered on final conviction; sent to Kajang Prison Aug 2022. MP tenure 1976-2022 = 46 years.",
+        "Al Jazeera, 'Malaysia's Najib gets 12 years in jail for 1MDB-linked graft case', 28 Jul 2020: https://www.aljazeera.com/news/2020/7/28/malaysias-najib-gets-12-years-in-jail-for-1mdb-linked-graft-case",
+        "NST, 'Najib sentenced to 12 years' jail, RM210 million fine', 28 Jul 2020: https://www.nst.com.my/news/crime-courts/2020/07/612343/najib-sentenced-12-years-jail-rm210-million-fine",
+        "PAS leadership history — Hadi Awang elected PAS president 2002, still serving as of May 2026; 24 consecutive years confirmed via Wikipedia 'Abdul Hadi Awang' and Malaysian Islamic Party leadership lists.",
+        "FMT, 'Loke elected new DAP secretary-general', 20 Mar 2022 — confirms Lim Guan Eng's 18-year tenure as DAP secretary-general (2004-2022) and the party constitution's three-term cap: https://www.freemalaysiatoday.com/category/nation/2022/03/20/loke-elected-new-dap-secretary-general",
+        "Malay Mail, 'Anthony Loke is DAP's new secretary-general, replacing Guan Eng', 20 Mar 2022: https://www.malaymail.com/news/malaysia/2022/03/20/anthony-loke-is-daps-new-secretary-general-replacing-guan-eng/2048486"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Ministers receive up to RM2 million in gratuity at resignation. Pension stacking across MP, ADUN, and cabinet roles can exceed RM100,000 a month.",
+      "sub": "53 politicians got GLC director seats during the 17-month 2020-2022 government; 25 during the previous one. The pattern survives every coalition.",
+      "sources": [
+        "The Vibes, 'The perks of being a lawmaker: RM2 mil gratuity, RM100,000 monthly pension' — ministers granted gratuity of up to RM2 million on resignation regardless of tenure length; aggregate pension stacking across MP/ADUN/EXCO/Speaker/minister/DPM/PM can exceed RM100,000 a month: https://www.thevibes.com/articles/news/43034/the-perks-of-being-a-lawmaker-rm2-mil-gratuity-rm100000-monthly-pension",
+        "Members of Parliament (Remuneration) Act 1980 (Act 237), official Parliament PDF, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf — First Schedule gratuity formula (1/48 × salary × 12 × period of reckonable service); pension scheme structure.",
+        "NST, 'How much do our MPs and assemblymen earn? Here are the numbers', Jan 2024 — minister monthly salary ~RM55,000 plus Putrajaya residence, plot of land, driver, RM100k+/yr holiday allowance: https://www.nst.com.my/news/nation/2024/01/1005791/how-much-do-our-mps-and-assemblymen-earn-here-are-numbers",
+        "BERSIH 2.0, 'Time To End Political Appointments and Patronage to Government-Linked Companies', 25 May 2023 — 25 politicians appointed to GLC director seats during the 32-month March 2018-March 2020 PH government; 53 during the 17-month March 2020-August 2021 PN government: https://bersih.org/2023/05/25/time-to-end-political-appointments-and-patronage-to-glc/",
+        "Consumers Association Penang, 'Time to Reform the Pension Scheme for Elected Representatives in Malaysia', https://consumer.org.my/time-to-reform-the-pension-scheme-for-elected-representatives-in-malaysia/",
+        "C4 Center MyGovt Reform Tracker, 'GLC / Political Appointments', https://c4center.org/mygovtreformtracker/glc-political-appointments/ — corroborates BERSIH's appointment counts and frames it as an unresolved cross-coalition pattern."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "France appointed a 39-year-old president in 2017 and a 34-year-old prime minister in 2024. Finland's PM took office at 34. Austria's chancellor at 31.",
+      "sub": "The European Parliament's youngest MEP is 23. Malaysia's two youngest MPs are 26 — and 97-year-old Mahathir lost his deposit at GE15.",
+      "sources": [
+        "Wikipedia, 'Emmanuel Macron' — elected French president 7 May 2017 at age 39; cross-checked against multiple primary biographies.",
+        "France 24, 'How Gabriel Attal became France's youngest-ever prime minister', 9 Jan 2024 — Attal appointed PM at 34: https://www.france24.com/en/europe/20240109-how-gabriel-attal-became-france-s-youngest-ever-prime-minister",
+        "Wikipedia, 'Sanna Marin' — Finnish PM December 2019 at age 34; cross-checked against multiple primary biographies.",
+        "Wikipedia, 'Sebastian Kurz' — Austrian Chancellor December 2017 at age 31; cross-checked against multiple primary biographies.",
+        "European Parliament, 'Facts and figures: the European Parliament's 2024-2029 term' — average MEP age 50, youngest sitting MEP Lena Schilling (Greens/EFA, Austria) aged 23: https://www.europarl.europa.eu/topics/en/article/20190705STO56305/facts-and-figures-the-european-parliament-s-2024-2029-term",
+        "European Parliament Research Service (EPRS) ATA paper 'Average age — Members of the European Parliament 2024-2029': https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/762356/EPRS_ATA(2024)762356_EN.pdf",
+        "The Star / ANN, 'INTERACTIVE: A look at our slightly younger Dewan Rakyat', 2 Dec 2022 — youngest MPs in GE15 are P. Prabakaran (Batu) and Dr Taufiq Johari (Sungai Petani), both aged 26; oldest sitting MP Fong Kui Lun (Bukit Bintang) aged 76; zero MPs aged 80 or above after Mahathir and Tengku Razaleigh lost their seats.",
+        "Malay Mail, 'GE15: In embarrassing defeat, Dr Mahathir loses Langkawi along with election deposit', 20 Nov 2022 — Mahathir at 97 polled 4,566 votes (6.8%), failed to retain Langkawi, lost his RM10,000 deposit for falling below the 12.5% threshold: https://www.malaymail.com/news/malaysia/2022/11/20/ge15-in-embarrassing-defeat-dr-mahathir-loses-langkawi-along-with-election-deposit/40741",
+        "BERNAMA, 'GE15: Two candidates aged 23 are the youngest, Dr Mahathir at 97 is the oldest candidate', 5 Nov 2022: https://pru15.bernama.com/news-en.php?id=2135656"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The bottleneck is not the law. Parliament lowered the candidacy age to 18 in 2019. The bottleneck is party machinery, pensions, and GLC patronage.",
+      "sub": "",
+      "sources": [
+        "Library of Congress, 'Malaysia: Bill Reducing Voting Age to 18 Passed', 18 Jul 2019 — the Constitution (Amendment) Bill 2019 amended Article 119(1)(a) (voter age) AND Article 47 (Dewan Rakyat candidacy age) AND Eighth Schedule s.5 (state assembly candidacy age) to 18, unanimously passed by both houses, implemented December 2021: https://www.loc.gov/item/global-legal-monitor/2019-07-18/malaysia-bill-reducing-voting-age-to-18-passed/",
+        "Wikipedia, 'UNDI18' — 5.8 million new voters added; 40% increase in electoral roll: https://en.wikipedia.org/wiki/UNDI18",
+        "Editorial restructuring: anchors on three verified non-legal causes already established in Cards 2-3 — party youth-wing age caps (UMNO Youth caps at 40, per Wikipedia 'UMNO Youth' and CLAUDE.md brief Tier-E sources); RM2m gratuity / >RM100k aggregate pension (The Vibes, MoP Remuneration Act 1980); 53 vs 25 GLC director appointments across two coalitions (BERSIH 2.0, May 2023). This is a causal restructuring — 'X is not the cause; Y is' — not an additive observation."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Imagine a relay race where the rules pay the runners more, the longer they refuse to pass the baton.",
+      "sub": "Up to RM2 million gratuity per ministerial exit. Up to RM100,000 a month in stacked pensions. The longer you stay on the track, the more you forfeit by leaving.",
+      "sources": [
+        "Editorial analogy. Mirrors verified findings from Fact 2: ministerial gratuity up to RM2 million (The Vibes, sourcing MoP Remuneration Act 1980 First Schedule); aggregate pension stacking across MP/ADUN/EXCO/Speaker/minister/DPM/PM can exceed RM100,000 a month (The Vibes). The analogy is causal, not additive — it dramatises the incentive structure already documented, without introducing new claims."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Voters are not the constraint. The candidacy age has been 18 since 2019, and 36% of voters are under 35. Yet 5% of MPs are. The fix is structural.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Anchors on three verified facts already established: (a) 2019 constitutional amendment lowered candidacy age to 18 (Library of Congress, July 2019); (b) under-35 share of electorate ~36% derived from EC roll breakdown via The Vibes [UPDATED 'Youth voters form 50% of GE15 electoral roll']; (c) under-35 share of MPs 5% per The Star/ANN Dewan Rakyat interactive (2 Dec 2022). The 'fix is structural' claim is a normative editorial conclusion supported by Cards 2-4 — pensions, GLC patronage, and party youth-wing geometry are the operative causes; none is a constitutional barrier."
+      ]
+    }
+  ],
+  "sources": "The Star / Asia News Network, Malay Mail, Free Malaysia Today, The Vibes, BERNAMA, NST, CNN, Al Jazeera, Britannica, Wikipedia (cross-checked against named primary sources), Library of Congress Global Legal Monitor, European Parliament press service, European Parliament Research Service (EPRS), BERSIH 2.0, C4 Center MyGovt Reform Tracker, Consumers Association Penang, France 24, Members of Parliament (Remuneration) Act 1980 (Act 237) — primary statutory text via Parlimen Malaysia PDF, Constitution of Malaysia Articles 47/48/49A/119/Eighth Schedule — primary text via Constitute Project PDF",
+  "confidence": "High on all numerical claims. (a) Median MP age 52.4 and under-35 share 5% (11/222) — The Star/ANN Dec 2022 interactive computed from EC nomination data with named birth dates; matches IPU Parline broad strokes. (b) European comparators (Macron 39, Attal 34, Marin 34, Kurz 31, EP youngest MEP 23) — official European Parliament press service and France 24 / Wikipedia primary biographies. (c) Career-length numbers (Lim Kit Siang 53 years, Anwar UMNO 1982, Najib MP 1976-2022, Hadi Awang PAS president since 2002, Lim Guan Eng 18 years as DAP sec-gen) — all primary-sourced and cross-checked. (d) Pension/gratuity numbers (RM2m ministerial gratuity, RM100k aggregate pension possible) — The Vibes citing MoP Remuneration Act 1980 First Schedule; Act text primary-sourced. (e) GLC appointment counts (25 PH-era, 53 PN-era) — BERSIH 2.0 May 2023 study; corroborated by C4 Center tracker. (f) 2019 Undi18 amendment lowering both voting AND candidacy age to 18 — Library of Congress Global Legal Monitor citing Constitution (Amendment) Act 2019 text. Medium on the '~36% of voters under 35' derived figure — The Vibes/EC publish '50% under 40'; under-35 share is interpolated from age-bracket breakdown and EC publication of Undi18 cohort sizes; Stage 3 should reconcile this against the SPR's published voter-by-age table if available.",
+  "lenses_used": ["Political", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Historical", "Social", "Legal"],
+  "needs_verification": [
+    "The precise '~36% of voters under 35' figure used in Hook and View. The Vibes/EC publish '50% of the GE15 roll is 18-40'. Under-35 share is interpolated. Stage 3 should pull SPR's published age-bracket voter table and report the exact under-35 percentage; if the actual figure is materially different (e.g. 30% or 40%), adjust both Hook and View accordingly.",
+    "The 17-month vs 22-month framing in Fact 2 (GLC appointments). BERSIH's May 2023 statement gives the counts (25 PH, 53 PN). The exact start/end dates for each government window — PH May 2018 to Feb 2020 (~21 months), PN March 2020 to Aug 2021 (~17 months) — Stage 3 should confirm BERSIH used these windows and that no recount has been published since May 2023.",
+    "Lim Kit Siang's exact tenure framing. He sat as MP from May 1969 to retirement announcement March 2022 = 52 years 10 months (rounded to 53). One source ('43 years it took Kit Siang to wake the Chinese up', Malaysia Today 2017) uses a 'continuous-tenure' subset that excludes 1969-1971 EMERGENCY-period detention. Stage 3 should confirm whether the 53-year figure is the standard cited tenure across major outlets.",
+    "Najib's MP-tenure end date. Stage 1 used 1976-2022 = 46 years, anchored to Federal Court upholding the SRC conviction on 23 Aug 2022 (triggering Article 48 disqualification). Stage 3 should confirm whether his Pekan seat was technically vacated on that date or earlier, and that no source materially disputes the 46-year framing."
+  ],
+  "source_notes": "Three structural editorial choices warrant flagging for Stages 2-3-6: (1) Cast naming in Fact 1 deliberately spans coalitions — DAP (Lim Kit Siang, Lim Guan Eng), UMNO/PKR (Anwar), UMNO (Najib), PAS (Hadi Awang) — so no single party can claim disparate treatment. If Stage 2 (Gemini) flags a coalition-balance gap, add Muhyiddin (Bersatu) to Fact 1's named list. (2) The European comparator card cites only Western European democracies (France, Finland, Austria, EP). Asian comparators (Japan PM Takaichi at 64; India median MP ~55; Singapore PM Lawrence Wong at 51 in 2024) would show that 'old' Asia is not uniform but also would lengthen the card past budget; cut to keep the comparison clean. Stage 2 may flag this as selection bias — defensible because the reader-prompt explicitly contrasted Malaysia with Europe and the editorial value of the comparison is the renewal-mechanism contrast, not regional ranking. (3) No quote of any politician's words is used; only their verifiable position, tenure length, and conviction status. This is a deliberate guard against the 'characterisation' failure mode where editorial copy paraphrases what a politician 'really thinks'. If Stage 4 wants to add Anwar's 18 Dec 2025 'generational reset' statement, the brief tier-A source (Malay Mail) is sourced — but adding it without the verified caveat that no full minister-by-minister age table has been published would be misleading framing.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert that veteran politicians are individually corrupt, incompetent, or 'too old to govern'. We do NOT assert that pensions cause stagnation (we assert they create an incentive structure documented by BERSIH, C4, CAP, The Vibes). We do NOT assert that GLC appointments are themselves illegal (they are not — we report the count and the cross-coalition pattern). We do NOT assert that the 2025 cabinet reshuffle is performative — we omit it from cards because no minister-by-minister age table has been published. We do NOT assert intent in 'the bottleneck is engineered' — the Reframe and View use the softer 'structural', not 'engineered', because the latter implies deliberate design and exceeds what the sources support.",
+    "underclaim_check": "We do not soften the verified numbers. 53 vs 25 GLC director appointments IS what BERSIH reported. RM2 million gratuity IS the upper bound per The Vibes citing the MoP Remuneration Act 1980 First Schedule. Median MP age 52.4 IS what the Star/ANN interactive shows. 24 years as PAS president IS what every PAS leadership history shows. None is softened to 'reportedly' or 'critics argue'.",
+    "misleading_framing_check": "Hook leads with a structural comparison (median MP vs median citizen) not a personal attack on any named politician. Card 1 names individuals across coalitions to prevent any single-party reading. Card 2 explicitly says 'pattern survives every coalition' to prevent a 'this-is-just-Anwar' reading. Card 3 (European comparator) does not cherry-pick — Finland, France, and Austria are the canonical young-PM cases of the last decade and are routinely cited as a set in the Euronews 9 Jan 2023 'Europe's leaders are younger' piece. Reframe explicitly tells the reader the LAW is not the cause, preventing 'Malaysia should lower the candidacy age' as the takeaway — that has already happened (2019). View ends with 'the fix is structural', not 'overthrow the gerontocracy', a deliberately neutral framing.",
+    "unverified_detail_check": "Every specific in cards traces to a primary or near-primary source. The one derived figure (under-35 share of voters ~36%) is flagged in needs_verification for Stage 3 to confirm. The Mahathir Langkawi vote count (4,566 votes, 6.8%) is multi-source. The Lim Kit Siang 53-year tenure is multi-source (DAP biodata + Wikipedia + The Vibes 20 March 2022). The Hadi Awang 24-year PAS presidency, Anwar joining UMNO 1982, Najib MP from 1976, Lim Guan Eng 18 years as DAP sec-gen — all multi-source.",
+    "3R_special_caution": "Royalty: no royal claim. The king's role in appointing Anwar PM (24 Nov 2022) is touched only in the brief, not in cards. Race: no ethnic claim. The named cast in Card 1 deliberately spans ethnicities (Anwar and Najib and Hadi are Malay; Lim Kit Siang is Chinese; Lim Guan Eng is Chinese). Religion: no religious claim. Hadi Awang's 24-year PAS presidency is reported as a party-leadership-tenure fact, not as a religious-leadership claim.",
+    "process_not_people_check": "Sharp claims target structural mechanics (Article 47 amendment, MoP Remuneration Act 1980 gratuity formula, GLC director appointment counts, party youth-wing geometry, three-term constitutional cap on DAP sec-gen). Named individuals (Anwar, Lim Kit Siang, Muhyiddin, Najib, Hadi Awang, Lim Guan Eng, Mahathir, Macron, Attal, Marin, Kurz, Prabakaran, Taufiq Johari) appear ONLY to anchor specific verifiable facts (career length, role tenure, age at swearing-in, age at election, conviction status). None is characterised as bad-faith or unfit. Najib's 'until prison' is factual reporting of his SRC conviction status, not a moral verdict.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent ('the bottleneck is structural; the fix is structural'). Not anger-at-individuals. The reframe (causal restructuring: 'X is not the cause; Y is') and view ('the fix is structural') both direct reader energy toward institutional reform rather than personal grievance. The 'too much to lose' framing in the analogy is anxiety-of-system, not anger-at-Anwar or anger-at-Najib."
+  },
+  "pa_score": 84,
+  "pa_score_rationale": "Strong: every numerical claim primary-sourced (median MP 52.4, under-35 5%, Macron 39, Attal 34, Marin 34, Kurz 31, EP youngest 23, Malaysian youngest 26, Hadi PAS 24 years, Lim Kit Siang 53 years, Lim Guan Eng 18 years, RM2m gratuity, RM100k aggregate pension, 53 vs 25 GLC appointments, Mahathir 4,566 votes 6.8% at Langkawi). Lens spread (Political/Economic/Governance) is wide. Cast naming in Fact 1 deliberately cross-coalition to defuse partisan-attack framing. Reframe is a clean causal restructuring (not additive). Capped at 84 because: (a) the '36% of voters under 35' figure is interpolated from EC age-bracket data, not pulled directly from an SPR table — Stage 3 should chase the exact figure; (b) the GLC-appointment government-window framing (17 months PN, 22 months PH) is approximate and should be confirmed against BERSIH's source documentation; (c) the brief's tier-A source for Lim Kit Siang's continuous-tenure count varies slightly (53 years parliamentary vs 56 years party membership) — Stage 3 should confirm 53 is the canonical figure; (d) Anwar's 18 Dec 2025 'generational reset' framing is omitted from cards as a deliberate guard against MISLEADING FRAMING (no minister-by-minister age table has been published), and Stage 4/5 may flag the omission as a balance gap — defensible per source_notes but Stage 6 should revisit if both Stages 2 and 4 push back."
+}

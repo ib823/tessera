@@ -1,0 +1,100 @@
+{
+  "_provenance": {
+    "stage": "Stage 2 — Bias Audit (Gemini)",
+    "slug": "malaysia-politics-gerontocracy-no-new-faces",
+    "issue_id": "1987",
+    "reviewed": "engine/output/malaysia-politics-gerontocracy-no-new-faces-stage1.json",
+    "source": "External Gemini run, response provided by user 2026-05-16. Supersedes the in-Claude Stage 2 review previously saved to this path."
+  },
+  "bias_score": 45,
+  "political_lean_estimate": 0.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.8,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 1.0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [
+    {
+      "quote": "Lim Kit Siang: MP for 53 years. Anwar in UMNO since 1982. Najib: MP for 46 years...",
+      "why_biased": "Complete erasure of East Malaysia. Every single politician cited to illustrate the gerontocracy or youth pipeline is from Peninsular Malaysia. Sarawak and Sabah have profound examples of decades-long political incumbency (e.g., Taib Mahmud, Shafie Apdal, Jeffrey Kitingan) that are ignored.",
+      "fix": "Include at least one prominent East Malaysian figure when listing long-tenured politicians to accurately reflect the national scope of the issue."
+    }
+  ],
+  "economic_flags": [],
+  "gender_flags": [
+    {
+      "quote": "Lim Kit Siang... Anwar... Najib... Hadi Awang... Lim Guan Eng... Mahathir... P. Prabakaran... Dr Taufiq Johari...",
+      "why_biased": "Complete erasure of Malaysian women. Every single local politician named in this analysis is male. While foreign women (Marin, Schilling) are mentioned, the analysis fails to include female veterans (e.g., Rafidah Aziz, Azalina Othman) or young female leaders, cementing politics as an exclusively male domain.",
+      "fix": "Diversify the examples of both veteran and young politicians to include Malaysian women."
+    }
+  ],
+  "omission_flags": [
+    "Malaysian women politicians are completely absent from the analysis.",
+    "East Malaysian politicians are completely absent from the analysis."
+  ],
+  "evasion_flags": [],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "quote": "France's last two prime ministers took office at 39 and 34.",
+      "why": "Factually false due to conflation of roles. Emmanuel Macron became President at 39, not Prime Minister. Gabriel Attal's immediate predecessor as PM was Élisabeth Borne, who took office at 61.",
+      "fix": "Change to 'France appointed a 39-year-old president in 2017 and a 34-year-old prime minister in 2024' (which matches the correct framing later used in Card 4)."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "Lim Kit Siang: MP for 53 years.",
+      "why": "Factually incorrect. Lim Kit Siang served as an MP from 1969 to 1999, and then from 2004 to 2022. He was defeated in the 1999 general election and did not sit in Parliament for a full term. His total tenure is 48 years, not 53.",
+      "fix": "Correct to 'Lim Kit Siang: MP for 48 years' or 'In politics for over 50 years'."
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "Median Malaysian MP is 52.4... 11 of 222 aged 35 or under (5%)",
+      "status": "VERIFIED",
+      "primary_source": "The Star / Election Commission GE15 candidate data",
+      "corrected_value": ""
+    },
+    {
+      "claim": "France's last two prime ministers took office at 39 and 34.",
+      "status": "WRONG",
+      "primary_source": "French Government official archives (gouvernement.fr)",
+      "corrected_value": "Macron took office as President, not Prime Minister, at 39. The PM preceding Attal was Élisabeth Borne (aged 61)."
+    },
+    {
+      "claim": "Lim Kit Siang: MP for 53 years.",
+      "status": "WRONG",
+      "primary_source": "Parliament of Malaysia Hansard / Election Commission GE10 (1999) results",
+      "corrected_value": "48 years (1969-1999; 2004-2022)."
+    },
+    {
+      "claim": "Najib: MP for 46 years until prison.",
+      "status": "VERIFIED",
+      "primary_source": "Parliament of Malaysia archives (elected 1976, disqualified 2022)",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Hadi Awang has led PAS for 24 consecutive years.",
+      "status": "VERIFIED",
+      "primary_source": "PAS official party history (Presidency assumed 2002)",
+      "corrected_value": ""
+    },
+    {
+      "claim": "36% of voters are under 35.",
+      "status": "UNVERIFIED",
+      "primary_source": "Analysis notes this is interpolated from Election Commission '50% under 40' data. Requires exact verification against raw SPR electoral roll age-bracket tables for GE15 to confirm it is exactly 36%.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "53 politicians got GLC director seats during the 17-month 2020-2022 government; 25 during the previous one.",
+      "status": "VERIFIED",
+      "primary_source": "BERSIH 2.0 report 'Time To End Political Appointments and Patronage to Government-Linked Companies' (25 May 2023)",
+      "corrected_value": ""
+    }
+  ],
+  "overall_assessment": "The analysis is structurally sound and effectively non-partisan, equitably holding all major political coalitions accountable for institutional stagnation. However, it suffers from severe factual sloppiness and demographic tunnel vision. Conflating Emmanuel Macron's presidency with a prime ministership to claim France's 'last two prime ministers' were in their 30s is a glaring error. Likewise, claiming Lim Kit Siang was an MP for 53 years ignores his 1999 electoral defeat. Demographically, the piece completely erases East Malaysia and Malaysian women—every single local politician named is a Peninsular male. These careless errors and blind spots undermine an otherwise compelling, data-driven critique."
+}
