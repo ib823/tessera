@@ -1,0 +1,190 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Whether Beijing is propagandising Chinese Malaysians via WeChat is the question journalists keep asking. The primary evidence answers a different one.",
+      "sub": "Citizen Lab, Sinopsis and ISEAS — three independent teams over five years — document what the platforms do, not what readers believe. The two are not the same thing.",
+      "sources": [
+        "Citizen Lab (University of Toronto), 'We Chat, They Watch', May 2020",
+        "Sinopsis (Prague), 'Diving into Pro-Russia Propaganda Targeting Chinese Audiences in Malaysia', Sep 2024",
+        "Wang Zheng, ISEAS Perspective 2025/99, 'RedNote's Success and Beijing's Soft Power in Southeast Asia', Dec 2025",
+        "Asia Fact Check Lab / Radio Free Asia, 19 Jul 2023 — Beijing influences Chinese media, diaspora in Malaysia"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Technology",
+      "h": "WeChat scans files shared between non-China-registered accounts to train its China-side political censorship system",
+      "s": "Citizen Lab at the University of Toronto documented the mechanism in 2020. The same researchers explicitly state there is no evidence linking this to CCP direction.",
+      "d": "Tencent's WeChat performs server-side keyword filtering on messages and uses content shared between users registered outside China, including images and documents, to expand the database that censors China-registered users. Citizen Lab's May 2020 paper 'We Chat, They Watch' is the most-cited technical evidence. The same paper is explicit that the surveillance behaviour is not attributed to direction from the Chinese government — a distinction routinely lost in secondary commentary. ISEAS Perspective 2025/99 separately documents that Xiaohongshu (RedNote) operates a single global version under PRC content rules, with a leaked 2022 internal document listing ten systematically censored categories including CCP and government criticism. Approximately 65–70% of Malaysian RedNote users identify as ethnic Chinese, compared with about 23% of the general population.",
+      "sources": [
+        "Citizen Lab, 'We Chat, They Watch', May 2020 — https://citizenlab.ca/2020/05/we-chat-they-watch/",
+        "Wang Zheng, ISEAS Perspective 2025/99, Dec 2025 — leaked 2022 censorship-category document, p. 5–6"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "Malaysia's January 2025 social media law made WeChat and TikTok the first two platforms cleared under an eight-million-user licensing threshold",
+      "s": "Operating without the licence carries a fine of up to RM500,000 or five years' jail. The Act regulates compliance, not transparency about how the moderation algorithms work.",
+      "d": "On 1 January 2025 Malaysia's Applications Service Provider Class licence regime came into effect under the Communications and Multimedia Act framework, requiring any social media or messaging platform with at least eight million Malaysian users to hold a licence. Tencent's WeChat and ByteDance's TikTok were the first two platforms to obtain it, confirmed by Communications Minister Fahmi Fadzil through MCMC. Penalty for unlicensed operation is up to RM500,000 or imprisonment up to five years or both, with a further RM1,000 per day after conviction. The regime regulates platform presence and takedown compliance, not the content-moderation logic the platforms apply — Malaysian regulators do not see the keyword filters, recommendation weights or category-based moderation rules that shape what Malaysian users of these platforms see. MCMC's April 2026 disclosure of 463 fake-news takedown requests broke down by platform (Facebook 185, TikTok 142, Threads 131) but not by language of content.",
+      "sources": [
+        "SoyaCincau citing MCMC, 1 Jan 2025 — TikTok and WeChat obtain Malaysian social media licence",
+        "PYMNTS, 'Malaysia Grants Licenses to WeChat and TikTok Under New Social Media Law', Jan 2025",
+        "New Straits Times, 'MCMC opens 65 investigations over 463 fake news takedown requests — Fahmi', Apr 2026"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "h": "Malaysian Chinese favourability of China rose from 41% to 67% between 2016 and 2022 — before WeChat and TikTok were licensed",
+      "s": "The joint Merdeka Center and Universiti Malaya China Studies Institute survey is the strongest Malaysian primary-source signal. The platform timeline rules out the simplest causal story.",
+      "d": "Merdeka Center and Universiti Malaya's China Studies Institute jointly surveyed Malaysian-Chinese views of China in 2016 and again in 2022. The favourable share moved from 41% to 67%. This is the strongest Malaysian primary-source signal on Chinese-Malaysian sentiment toward China and was reported by Asia Fact Check Lab in July 2023. The directionally tempting reading — that closed-platform content drove the shift — is not supported by the timing: the move was complete by 2022, before RedNote's Southeast Asian breakthrough documented in ISEAS 2025/99, and before Malaysia's 2025 ASP licensing regime made WeChat and TikTok regulator-recognised mass platforms. Causation runs at least partly in the other direction: a population already favourable to China adopted platforms that fitted its cultural and linguistic preferences. The platform story and the survey number are two facts about the same information environment, not cause and effect. The ISEAS State of Southeast Asia 2024 survey separately found Malaysia's preference for ASEAN alignment with China jumped by 20.3 percentage points in a single year, with Gaza/Israel identified by ISEAS analysts as a major driver across Muslim-majority ASEAN states.",
+      "sources": [
+        "Asia Fact Check Lab / Radio Free Asia, 19 Jul 2023 — citing Merdeka Center + UM China Studies Institute joint survey, 2016 vs 2022",
+        "ISEAS-Yusof Ishak Institute / ASEAN Studies Centre, 'State of Southeast Asia 2024 Survey Report', Apr 2024 — Malaysia +20.3pp alignment shift",
+        "Wang Zheng, ISEAS Perspective 2025/99, Dec 2025 — RedNote Malaysian user composition"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The question is not which Malaysian community believes Beijing. It is what transparency any Malaysian user gets on how their platform moderates news."
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it like a landlord who decides which tenants' mail gets delivered",
+      "text": "The story is not what the tenants believe. It is that the landlord writes the rules, the rules are not public, and Malaysia's regulator licenses the landlord but does not see what the rules are. WeChat, TikTok and RedNote are the landlords; Malaysians of every community are the tenants."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Three independent investigations — Citizen Lab in 2020, Sinopsis in 2024, ISEAS in 2025 — document that closed Chinese-owned platforms apply content rules written under PRC jurisdiction to users worldwide, Malaysians included. The Merdeka Center / UM survey shows Chinese-Malaysian favourability of China rose from 41% to 67% over 2016–2022, before those platforms reached licensed mass scale here. The honest reading is that platform architecture and citizen sentiment are two facts about the same information environment, not one causing the other. Malaysia's 2025 licensing regime regulates the platforms' presence but not their moderation logic. The case for transparency-of-moderation requirements does not depend on assuming any community is being deceived — it rests on the simpler observation that platforms now reaching a third of the country should be auditable to it. The same standard should apply to Malay- and English-language platforms; treating only Chinese-language ones as the problem would be the more dangerous mistake."
+    }
+  ],
+  "sources": "Citizen Lab (University of Toronto); ISEAS-Yusof Ishak Institute Perspectives 2022/41, 2022/90, 2024/46, 2025/99 and State of Southeast Asia 2024; Freedom House Beijing's Global Media Influence 2022; Sinopsis (Prague); Asia Fact Check Lab / Radio Free Asia; Malaysiakini; Merdeka Center + UM China Studies Institute joint survey; SoyaCincau and PYMNTS citing MCMC; New Straits Times; FMT; The Star; China Daily (counter-perspective).",
+  "confidence": "Medium-High. Platform-architecture claims (Citizen Lab on WeChat, ISEAS on RedNote censorship categories, MCMC ASP licensing regime) are documented by primary technical and regulatory sources. Survey claims (41%→67% Merdeka, +20.3pp ISEAS) are reported but the underlying Merdeka Center datasets are not openly published — the citation chain runs through RFA / Asia Fact Check Lab. The brief flagged HOLD pending two prerequisites: at least two Chinese-language Malaysian primary voices to balance the Western-funded watchdog tilt, and a parallel brief on Malay-language closed-platform narratives. This Stage 1 proceeds without those prerequisites met, which is reflected in the lowered confidence rating.",
+  "lenses_used": ["Technology", "Political", "Social"],
+  "lenses_applicable_but_unused": ["Legal", "Regional", "Critical"],
+  "needs_verification": [
+    "Primary source for Merdeka Center + UM China Studies Institute 2016 and 2022 survey numbers (41% / 67%). The figures are reported by Asia Fact Check Lab / RFA in July 2023; the underlying Merdeka Center report or dataset should be obtained directly before any reader publication. If only the RFA reporting can be found, the framing in the Social fact card must be softened.",
+    "Whether MCMC has formally licensed Xiaohongshu (RedNote) under the same January 2025 ASP regime as WeChat and TikTok, or whether RedNote sits below the eight-million-user threshold. If RedNote is unlicensed, the Political fact card needs to make the asymmetry explicit.",
+    "Exact text of the leaked 2022 RedNote internal censorship-category document cited by Wang Zheng (ISEAS 2025/99). The ten-category figure should be traced to a public archive (China Digital Times, GreatFire, or the leaked-document repository ISEAS cited) before any reader publication.",
+    "Whether MCMC publishes takedown-request data disaggregated by language of content. The April 2026 NST report breaks down by platform but not by language. If language-disaggregated data exists, the framing of 'closed Chinese-language channel' versus other-language channels should be updated.",
+    "Whether any Malaysian Chinese-language academic or commentator (Sin Chew columnists, USM/UKM/UM Chinese Studies academics, Dong Zong) has published on the platform-information question. Their absence from the source base is the spectrum gap the brief flagged. Stage 2 (Gemini) and Stage 3 (ChatGPT) bias and fact reviewers should specifically chase this gap.",
+    "Whether the April 2025 MCMC investigations of Sin Chew Daily and Kwong Wah Yit Poh (Jalur Gemilang flag-graphic error) and the January 2026 China Press translation matter have any documented link to platform-information questions, or whether they are unrelated section 233 CMA matters. The brief flagged that bundling them with the propaganda question would be a sequencing sin; this Stage 1 deliberately keeps them out of the cards. Any future stage should not silently re-introduce them."
+  ],
+  "source_notes": "Five source-handling decisions worth flagging for downstream stages:\n\n(1) Citizen Lab's 2020 paper documents WeChat surveillance and censorship architecture but is explicit that no evidence ties this to CCP direction. The Technology fact card preserves that distinction. A common downstream temptation will be to drop the qualifier; do not.\n\n(2) The Merdeka Center + UM survey figures (41%/67%) reach this analysis via Asia Fact Check Lab (RFA) reporting from July 2023. RFA is US-funded but methodologically transparent; even so, the chain is RFA -> Merdeka -> underlying poll, not direct. Stage 3 (ChatGPT, Fact Verification) should attempt to obtain the Merdeka primary report. If unavailable, soften the Social fact card to 'reported by' framing.\n\n(3) The ISEAS State of Southeast Asia 2024 survey's +20.3pp Malaysia shift is well-corroborated across The Diplomat, Al Jazeera, ISEAS's own publication, and Time. The single-driver framing (Gaza/Israel) is ISEAS analysts' own; alternative drivers (economic ties, US tariff policy) are also live in the survey commentary. The Social fact card includes both.\n\n(4) WeChat Malaysian user numbers (~12 million / ~36.8% adoption rate) come from commercial aggregators citing MCMC, not from primary MCMC publications. The Stage 1 cards deliberately do not cite these — too soft for the accuracy bar. Only the licensing facts (which are primary) are used.\n\n(5) The brief recommended HOLD before publishing this issue, pending (a) at least two Chinese-language Malaysian primary voices being added to balance the Western-funded watchdog tilt, and (b) a parallel brief on Malay-language closed-platform narratives. This Stage 1 is being generated under an explicit editorial decision to proceed past the HOLD for analysis purposes only — not for publication. Downstream stages should treat this artifact as a working draft, not as a publication-ready issue.",
+  "pa_score": 80,
+  "pa_score_justification": "Primary sources used directly: Citizen Lab (2020 technical paper), ISEAS Perspective 2025/99 (Wang Zheng), ISEAS State of Southeast Asia 2024 survey, Sinopsis 2024 report, MCMC ASP licensing regime as reported by SoyaCincau / PYMNTS, MCMC April 2026 enforcement disclosure via NST, Merdeka + UM survey via Asia Fact Check Lab. Score reduced from 88-92 to 80 because: (a) the Merdeka survey reaches the analysis via secondary RFA reporting not direct primary access; (b) WeChat / RedNote Malaysian user counts are commercial-aggregator figures and were correctly excluded from cards rather than softened in; (c) the brief's flagged source-spectrum gap — no Chinese-language Malaysian primary voice — is unresolved at this stage. A future Stage 1 done after the brief's HOLD prerequisites are met could plausibly score 88-92."
+}
