@@ -1,0 +1,34 @@
+name = "tfa-social"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# */15 — trend ingest (RSS + GDELT)
+# *    — per-minute coin-flip scheduler
+[triggers]
+crons = ["*/15 * * * *", "* * * * *"]
+
+[[kv_namespaces]]
+binding = "T4A_SOCIAL_KV"
+# Create with: wrangler kv:namespace create T4A_SOCIAL_KV
+# Then paste the returned id here.
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[ai]
+binding = "AI"
+
+[vars]
+SITE_URL = "https://thefourthangle.pages.dev"
+BLUESKY_IDENTIFIER = "4thangle.bsky.social"
+BLUESKY_PDS = "https://bsky.social"
+TARGET_POSTS_PER_DAY = "7"
+COOLDOWN_MINUTES = "75"
+POST_WINDOW_START_HOUR_MYT = "8"
+POST_WINDOW_END_HOUR_MYT = "22"
+TREND_CACHE_TTL_MIN = "60"
+POSTED_CARD_TTL_DAYS = "30"
+ENABLE_X = "false"
+
+# Secrets (set via `wrangler secret put`):
+#   BLUESKY_APP_PASSWORD   — the App Password from Bluesky settings
+#   ADMIN_SECRET           — shared secret for /admin/post-now endpoint

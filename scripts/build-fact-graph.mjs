@@ -16,6 +16,7 @@ import { writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIssues } from './lib/load-issues.mjs';
+import { extractEntities } from './lib/entity-patterns.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -24,90 +25,8 @@ const issues = loadIssues();
 
 const publishedIssues = issues.filter(i => i.published === true);
 
-// ── Entity extraction patterns ──
-
-// Malaysian institutions and agencies
-const INSTITUTIONS = [
-  'MACC', 'SPRM', 'PAC', 'AGC', 'BNM', 'EPF', 'KWSP', 'PETRONAS', 'Khazanah',
-  'MCMC', 'JAKIM', 'NRD', 'JPJ', 'LHDN', 'DOSM', 'MITI', 'MOSTI', 'KKMM',
-  'MOF', 'EPU', 'MOE', 'MOH', 'KBS', 'KPKT', 'EAIC', 'Suhakam', 'EC', 'SPR',
-  'Parliament', 'Senate', 'Dewan Rakyat', 'Dewan Negara', 'Cabinet',
-  'High Court', 'Federal Court', 'Court of Appeal',
-  'Tabung Haji', 'FELDA', 'MARA', 'PNB', 'TH', 'KWAP',
-  'Bursa Malaysia', 'SC', 'Securities Commission',
-  'Home Ministry', 'Education Ministry', 'Health Ministry', 'Finance Ministry',
-  'Attorney General', 'Chief Justice', 'YDPA', 'Agong',
-  'PAS', 'DAP', 'UMNO', 'PKR', 'Bersatu', 'Amanah', 'Warisan', 'GPS',
-  'Perikatan Nasional', 'Pakatan Harapan', 'Barisan Nasional',
-  // Key programmes and bodies
-  '1MDB', 'LCS', 'MRT3', 'ECRL', 'HSR', 'JASA',
-  'Boustead', 'FGV', 'Sapura', 'Prasarana', 'PLUS',
-  'JPA', 'SPA', 'NADMA', 'CIDB', 'SPAN', 'DOE', 'JKR',
-  // Geographic
-  'Sabah', 'Sarawak', 'Penang', 'Johor', 'Kelantan', 'Terengganu',
-  'East Malaysia', 'Borneo',
-];
-
-// Legislation and policies
-const LEGISLATION = [
-  'SOSMA', 'POCA', 'PPPA', 'Sedition Act', 'OSA', 'Official Secrets Act',
-  'MACC Act', 'Companies Act', 'Employment Act', 'Industrial Relations Act',
-  'Child Act', 'Education Act', 'Immigration Act', 'Penal Code',
-  'Federal Constitution', 'Article 10', 'Article 8', 'Article 121', 'Article 153',
-  'Section 4', 'Section 6', 'Section 14A', 'Section 16', 'Section 124B',
-  'ISA', 'Emergency Ordinance', 'NSC Act', 'National Security Council',
-  'Anti-Money Laundering', 'Whistleblower Protection Act',
-  'Prevention of Crime Act', 'Printing Presses',
-  'Communications and Multimedia Act', 'CMA',
-  'Cybersecurity Act', 'Personal Data Protection',
-];
-
-// Stopwords — entities too common to be meaningful connections
-const STOPWORDS = new Set([
-  'Malaysia', 'Malaysian', 'Government', 'Kuala Lumpur', 'Parliament',
-  'PM', 'Prime Minister', 'Federal', 'State', 'Ministry',
-]);
-
-// ── Extract entities from text ──
-function extractEntities(text) {
-  if (!text) return new Set();
-  const found = new Set();
-
-  // Institutions
-  for (const inst of INSTITUTIONS) {
-    // Word-boundary match to avoid partial matches
-    const re = new RegExp(`\\b${inst.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-    if (re.test(text)) {
-      if (!STOPWORDS.has(inst)) found.add(`inst:${inst}`);
-    }
-  }
-
-  // Legislation
-  for (const law of LEGISLATION) {
-    const re = new RegExp(`\\b${law.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-    if (re.test(text)) {
-      found.add(`law:${law}`);
-    }
-  }
-
-  // Monetary figures: RM followed by number + B/billion/M/million
-  const moneyRe = /RM\s?([\d,.]+)\s?(billion|B|million|M)\b/gi;
-  let m;
-  while ((m = moneyRe.exec(text)) !== null) {
-    // Normalize to "RMXb" or "RMXm"
-    const num = m[1].replace(/,/g, '');
-    const unit = m[2].toLowerCase().startsWith('b') ? 'B' : 'M';
-    found.add(`money:RM${num}${unit}`);
-  }
-
-  // Percentage claims: N% followed by keyword
-  const pctRe = /(\d+(?:\.\d+)?)\s?%\s+(Opinion Shift|of\s+\w+|increase|decrease|drop|rise|gap|completion|built|spent|compliance)/gi;
-  while ((m = pctRe.exec(text)) !== null) {
-    // Too common to be useful as connections — skip
-  }
-
-  return found;
-}
+// Entity patterns + extractEntities live in scripts/lib/entity-patterns.mjs so
+// both this graph build and the social-card index build use the same set.
 
 // ── Extract all entities for an issue ──
 function extractIssueEntities(issue) {
