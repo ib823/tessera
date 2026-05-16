@@ -145,12 +145,46 @@ function pass(msg) {
   if (verbose) console.log(`  ✓ ${msg}`);
 }
 
+// Context-aware exclusions for the weak-abstraction category. Each entry maps
+// a flagged phrase to a predicate that returns true when this *specific*
+// occurrence is actually a legitimate use rather than the anti-pattern. The
+// substring scan cannot tell e.g. the verb "addresses" from the noun in "IP
+// addresses", or the verb "considers" from the threshold idiom "considers
+// anything above X" — so we filter at the position level rather than blacklist
+// at the phrase level.
+const WEAK_EXCLUSIONS = {
+  addresses: (text, pos) => {
+    // Treat as noun (skip) when preceded within 2 words by a network-noun
+    // qualifier. "1,200 Malaysian IP addresses" → noun. "Article 12(4) addresses
+    // children's religious education" → verb (no qualifier match).
+    const before = text.slice(Math.max(0, pos - 40), pos).toLowerCase();
+    return /\b(ip|email|e-mail|physical|home|street|office|postal|mailing|web|url|server|mac)\b[^.]{0,15}$/i.test(before);
+  },
+  considers: (text, pos) => {
+    // Threshold-classification idiom: "considers anything above X", "considers
+    // X as Y", "considers more than Z". Verb-of-classification, not weak
+    // thinkpiece "considers".
+    const after = text.slice(pos + 'considers'.length, pos + 'considers'.length + 60).toLowerCase();
+    return /^\s*(anything\s+(above|below|over|under|more|less)|more\s+than|less\s+than|values?\s+(above|below|over|under)|.{1,30}\s+as\s+)/i.test(after);
+  },
+};
+
 function scanPhrases(issueId, field, text, phrases, category, formatMsg) {
   if (!text) return;
   const lower = text.toLowerCase();
   for (const phrase of phrases) {
-    if (lower.includes(phrase)) {
-      warn(issueId, field, category, formatMsg(phrase));
+    let pos = 0;
+    while (pos < lower.length) {
+      const idx = lower.indexOf(phrase, pos);
+      if (idx === -1) break;
+      const excluded = category === 'weak-abstraction' &&
+        WEAK_EXCLUSIONS[phrase] &&
+        WEAK_EXCLUSIONS[phrase](text, idx);
+      if (!excluded) {
+        warn(issueId, field, category, formatMsg(phrase));
+        break; // one warning per phrase per text, matches old behavior
+      }
+      pos = idx + phrase.length;
     }
   }
 }
