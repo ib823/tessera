@@ -1,0 +1,233 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "sabah-two-ma63-delays-akps-vs-40pc-revenue-stay",
+    "issue_id": "1981",
+    "brief": "engine/briefs/sabah-two-ma63-delays-akps-vs-40pc-revenue-stay.md",
+    "generated_at": "2026-05-15",
+    "trigger": "T4A Radar accumulated 7 clustered events between 6 April and 15 May 2026 across Sabah/MA63 streams; silence_score 0.67-0.97 across the cluster, news_mentions 13-54, social_mentions 12-26. Stream signal: cross-thread MA63 reciprocity — the same agreement is being invoked by both sides to pause the other's action within 5 weeks.",
+    "revision_history": [
+      "v1 (2026-05-15): initial draft from radar-accumulated coverage + 33 cited sources. Stage 2 and Stage 3 external review pending."
+    ],
+    "discipline": "Process-not-substance. Both delays examined as procedurally legitimate moves with asymmetric framing. NO assertion that either side is acting in bad faith. NO characterisation of who 'should win' the 40% appeal. NO speaking for the Rulers (none involved). NO ethnic or religious framing — both threads are jurisdictional. Federal silence on AKPS deferral is reported as a factual condition, not interpreted as agreement or disagreement."
+  },
+  "headline": "Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.",
+  "context": "On 13 May 2026, Sabah deferred the federal border agency (AKPS) rollout citing MA63 immigration autonomy. On 6 April 2026, the Court of Appeal granted Putrajaya a stay on the High Court order for Sabah's 40% revenue review. Both delays invoke the same 1963 agreement.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Sabah just paused a federal rollout. Federal courts paused a Sabah ruling 5 weeks earlier. Both sides cite MA63.",
+      "sub": "On 13 May Sabah deferred the AKPS border agency. On 6 April the Court of Appeal stayed the High Court order on Sabah's 40% revenue.",
+      "sources": [
+        "Borneo Post, 13 May 2026, 'Sabah postpones AKPS rollout over immigration autonomy concerns': https://www.theborneopost.com/2026/05/13/sabah-postpones-akps-rollout-over-immigration-autonomy-concerns/",
+        "Malay Mail, 6 April 2026, 'Court of Appeal grants stay to Putrajaya over Sabah 40pc revenue ruling': https://www.malaymail.com/news/malaysia/2026/04/06/court-of-appeal-grants-stay-to-putrajaya-over-sabah-40pc-revenue-ruling/215260",
+        "Date arithmetic: 6 April 2026 to 13 May 2026 = 37 days; 'five weeks' is editorial rounding."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "On 6 April 2026 the Court of Appeal granted Putrajaya's stay on Sabah's 40% revenue ruling. The AGC said the formula itself was 'untouched'.",
+      "sub": "Judge Mohamed Zaini Mazlan said paying before appeal would create a 'fait accompli'. The federal government accepts the 40% entitlement but disputes the calculation.",
+      "sources": [
+        "Bernama (via Borneo Post), 6 April 2026, 'Fed Govt Granted Stay On Sabah Special Grant Review': https://www.bernama.com/en/news.php/crime_courts/news.php?id=2541421",
+        "Malay Mail, 6 April 2026, 'AGC says Sabah 40pc formula untouched as court freezes payment timeline': https://www.malaymail.com/news/malaysia/2026/04/06/putrajaya-says-sabah-40pc-formula-untouched-as-court-freezes-payment-timeline/215322",
+        "The Vibes, 6 April 2026, 'Appeal filed by Federal Government not against 40 pcent Sabah revenue formula - AGC clarifies': https://www.thevibes.com/articles/news/121569/appeal-filed-by-federal-government-not-against-40-pcent-sabah-revenue-formula-agc-clarifies",
+        "The Edge Malaysia, 'AGC: Federal govt's appeal does not affect Sabah's 40% entitlement or its formula': https://theedgemalaysia.com/node/798778",
+        "The Star, 7 April 2026, 'Court of Appeal stays landmark Sabah revenue ruling': https://www.thestar.com.my/news/nation/2026/04/07/court-of-appeal-stays-landmark-sabah-revenue-ruling — quotes Justice Mohamed Zaini's 'fait accompli' reasoning; lists panel (Mohamed Zaini Mazlan, Ismail Brahim, K. Muniandy).",
+        "FMT, 6 April 2026, 'Court grants Putrajaya stay on Sabah 40% revenue ruling': https://www.freemalaysiatoday.com/category/nation/2026/04/06/court-grants-putrajaya-stay-on-sabah-40-revenue-ruling"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "On 13 May 2026 Sabah deferred the AKPS rollout, citing clashes between the AKPS Act 2024 and the Immigration Act 1959/63.",
+      "sub": "CM Hajiji Noor said Sabah's immigration autonomy under MA63 is 'non-negotiable' and that the state would only have indirect oversight under Section 6(3) of the AKPS Act.",
+      "sources": [
+        "The Star, 13 May 2026, 'Sabah seeks assurances on state's special rights before implementing border agency, says Hajiji': https://www.thestar.com.my/news/nation/2026/05/13/sabah-seeks-assurances-on-state039s-special-rights-before-implementing-border-agency-says-hajiji",
+        "FMT, 13 May 2026, 'Sabah defers implementation of border agency, wants safeguards on autonomy': https://www.freemalaysiatoday.com/category/nation/2026/05/13/sabah-defers-implementation-of-border-agency-wants-safeguards-on-autonomy",
+        "Borneo Post, 13 May 2026, 'Sabah postpones AKPS rollout over immigration autonomy concerns': https://www.theborneopost.com/2026/05/13/sabah-postpones-akps-rollout-over-immigration-autonomy-concerns/",
+        "Borneo Post, 13 May 2026 (Warisan response), 'Malaysian Border Control and Protection Agency Act could erode Sabah's special immigration powers, warn Warisan reps': https://www.theborneopost.com/2026/05/13/malaysian-border-control-and-protection-agency-act-could-erode-sabahs-special-immigration-powers-warn-warisan-reps/",
+        "Malaysian Border Control and Protection Agency Act 2024 (Act 860), Section 6(3) — state oversight of AKPS via the state immigration director; statutory framing per AGC consolidated text and multi-outlet reporting of CM Hajiji's statement.",
+        "Immigration Act 1959/63 (Act 155) and Article IX provisions reserving immigration powers to Sabah and Sarawak under MA63."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Within 48 hours the Sabah Law Society, the state immigration officers' union, and ex-CM Salleh Said Keruak all backed the AKPS deferral.",
+      "sub": "SLS president Mohamed Nazim called it 'legal foresight'. Salleh called it 'prudent and justified'. Both said MA63 immigration autonomy is a constitutional condition of Malaysia's formation.",
+      "sources": [
+        "Borneo Post, 14 May 2026, 'AKPS deferment reflects legal foresight, says Sabah Law Society': https://www.theborneopost.com/2026/05/14/akps-deferment-reflects-legal-foresight-says-sabah-law-society/",
+        "The Star, 14 May 2026, 'Preserve Sabah's rights, get border laws in sync before enforcing AKPS, says lawyers group': https://www.thestar.com.my/news/nation/2026/05/14/preserve-sabah039s-rights-get-border-laws-in-sync-before-enforcing-akps-says-lawyers-group",
+        "Borneo Post, 14 May 2026, 'Sabah immigration officers union backs deferment of AKPS rollout, cites protection of MA63 rights': https://www.theborneopost.com/2026/05/14/sabah-immigration-officers-union-backs-deferment-of-akps-rollout-cites-protection-of-ma63-rights/",
+        "FMT, 13 May 2026, 'Ex-CM backs Sabah's move to defer national border agency deployment': https://www.freemalaysiatoday.com/category/nation/2026/05/13/ex-cm-backs-sabahs-move-to-defer-national-border-agency-deployment",
+        "Jesselton Times, 14 May 2026, 'Sabah Reaffirms Position on Immigration Control – Salleh': https://jesseltontimes.com/2026/05/14/sabah-reaffirms-position-on-immigration-control-salleh/",
+        "48-hour interval: arithmetic from publication dates 13-15 May 2026."
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "When Putrajaya pauses a Sabah court order, the Sabah Law Society calls it 'procedural'. When Sabah pauses a Putrajaya rollout, federal voices call it 'erosion'.",
+      "sub": "",
+      "sources": [
+        "Malay Mail, 6 April 2026, 'Sabah Law Society says Putrajaya stay procedural in 40pc revenue case': https://www.malaymail.com/news/malaysia/2026/04/06/sabah-law-society-says-putrajaya-stay-procedural-in-40pc-revenue-case/215272 — SLS's 'procedural' framing of the federal stay.",
+        "The Star, 6 April 2026, 'High Court ruling on 40% rights still stands despite appeals court's stay order, says SLS': https://www.thestar.com.my/news/nation/2026/04/06/high-court-ruling-on-40-rights-still-stands-despite-appeals-court039s-stay-order-says-sls",
+        "Borneo Post, 13 May 2026 — Warisan reps' 'erode Sabah's special immigration powers' wording about Act 860: https://www.theborneopost.com/2026/05/13/malaysian-border-control-and-protection-agency-act-could-erode-sabahs-special-immigration-powers-warn-warisan-reps/",
+        "Editorial framing: the contrast lies in how each side's procedural pause is publicly labelled. The reframe asserts a labelling asymmetry, not bad faith on either side. As of 15 May 2026 there is no indexed federal-government public response to the Sabah Cabinet's 13 May AKPS deferral — Stage 3 should re-check this."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Both moves are within process. The High Court ruled for Sabah on 17 Oct 2025; payment is frozen on appeal. The AKPS rollout is frozen pending a joint legal review.",
+      "sub": "",
+      "sources": [
+        "The Star, 18 Oct 2025, 'Judge: Federal Govt must pay Sabah 40% revenue entitlement': https://www.thestar.com.my/news/nation/2025/10/18/judge-federal-govt-must-pay-sabah-40-revenue-entitlement — confirms 17 Oct 2025 ruling date, Judge Datuk Celestina Stuel Galid, mandamus ordering Article 112D review.",
+        "Jesselton Times, 14 May 2026, 'Sabah defers AKPS rollout; seeks joint legal review to safeguard MA63, immigration and autonomy': https://jesseltontimes.com/2026/05/14/sabah-defers-akps-rollout-seeks-joint-legal-review-to-safeguard-ma63-immigration-and-autonomy/ — confirms the 'joint legal review' framing.",
+        "Editorial synthesis: 'within process' is a factual claim — both moves are within the legal/administrative powers of the actor taking them (federal government applying for a stay; state cabinet exercising its policy implementation discretion)."
+      ]
+    }
+  ],
+  "sources": "Bernama, The Star, FMT, Malay Mail, The Vibes, The Edge Malaysia, DayakDaily, Borneo Post, Daily Express, Sabah Media, Jesselton Times, NST (partial). Statutory primary text: Federal Constitution Articles 112C/112D + Tenth Schedule Part IV; Immigration Act 1959/63 (Act 155); Malaysian Border Control and Protection Agency Act 2024 (Act 860) s.6(3). Court rulings cited via multi-outlet summaries: KK High Court 17 Oct 2025 (Celestina Stuel Galid, 107 pages); Court of Appeal 6 April 2026 (Mohamed Zaini Mazlan, Ismail Brahim, K. Muniandy).",
+  "confidence": "High on event facts: 6 April 2026 stay (multi-outlet including Bernama state news agency); panel composition (The Star, The Vibes); AGC clarification (Malay Mail, The Vibes, The Edge — 3 outlets); 13 May 2026 Sabah Cabinet deferral and Hajiji's 'non-negotiable' framing (The Star, FMT, Borneo Post, Daily Express, Jesselton Times — 5 outlets); 14-15 May SLS, KPPIS, Salleh backings (Borneo Post, The Star, FMT, Jesselton Times — multi-outlet). High on statutory citations (AGC consolidated text is primary). Medium on 'fait accompli' direct quote — sourced via The Star's reporting of the bench's reasoning; Stage 3 should ideally pull the Court of Appeal grounds-of-judgment from Bernama or court e-Kehakiman. Medium on 'untouched' as a verbatim AGC word — Malay Mail headline-quotes it; Stage 3 should confirm against the AGC press release directly. Medium on Section 6(3) characterisation — reported across The Star and Borneo Post via CM Hajiji's statement; Stage 3 should cross-check against Act 860 statutory text. Low on federal-government public response to the AKPS deferral — none indexed across 33 sources reviewed; reframe handled this carefully by attributing the 'erosion' language to Warisan reps' framing rather than to any federal-government voice. Medium on the editorial asymmetry claim — the SLS 'procedural' framing of the federal stay is directly quoted; the 'erosion' framing of the AKPS deferral is from Warisan reps and KPPIS, not from federal-government voices; Stage 2 should examine whether the reframe's labelling-asymmetry claim is tight enough.",
+  "lenses_used": ["Legal", "Governance", "Political"],
+  "lenses_applicable_but_unused": ["Historical", "Rights", "Regional"],
+  "needs_verification": [
+    "Direct text of the Court of Appeal grounds of judgment 6 April 2026 — Stage 3 to pull from Bernama law-report archive or court e-Kehakiman to verify the 'fait accompli' quote and the panel's full reasoning beyond press summaries.",
+    "Direct text of the AGC's 6 April 2026 press release — Stage 3 to confirm 'untouched' is a verbatim AGC word, not a Malay Mail headline paraphrase.",
+    "Direct text of the KK High Court judgment 17 Oct 2025 (Celestina Stuel Galid, 107 pages) — Stage 3 to pull from e-Kehakiman or the Sabah Law Society's case documents to confirm the exact orders and timetable (90 days / 180 days) and the 'lost years' span (1974-2021 inclusive — 48 years).",
+    "Statutory text of Section 6(3) of the Malaysian Border Control and Protection Agency Act 2024 (Act 860) — Stage 3 to confirm whether 'indirect oversight via the state immigration director' is the actual statutory mechanism characterised by CM Hajiji.",
+    "Whether the Federal Government or Home Affairs Ministry has issued any public response to the 13 May Sabah Cabinet deferral between 13 and 15 May 2026 — Stage 3 to re-check Bernama, Home Ministry press releases and NST.",
+    "Whether the SLS's 'procedural' description of the 6 April stay is a verbatim SLS phrase or a Malay Mail paraphrase — Stage 3 to check the SLS press statement directly."
+  ],
+  "source_notes": "Source spectrum: strong Sabah-press representation (Borneo Post, Daily Express, Sabah Media, Jesselton Times); adequate peninsular mainstream (The Star, Malay Mail, NST partial); adequate independent/liberal (FMT); adequate business (The Edge); single Bernama state-agency article; thin Sarawak representation (DayakDaily one article); no international coverage indexed. Federal-aligned-paper voice under-represented — Stage 2 to flag whether the issue's framing leans Sabah-side and how to balance. Federal silence on AKPS deferral is reported as a condition, not interpreted. We do NOT name Anwar Ibrahim, Saifuddin Nasution (Home Minister), or any federal minister in the cards, because no public statement from them on these events has been indexed. The reframe's 'federal voices' phrasing is deliberate — the 'erosion' language is sourced to Warisan reps' Borneo Post coverage of Act 860 risks, not to any federal-government spokesperson.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert that Sabah's 40% appeal will succeed or fail. We do NOT assert that AKPS implementation 'would' erode Sabah's powers — only that the State Cabinet and union flagged that 'could' risk per the AKPS Act's structure. We do NOT assert federal bad faith on the stay (the bench's 'fait accompli' reasoning is treated as legitimate). We do NOT assert state bad faith on the AKPS deferral. The reframe asserts a labelling asymmetry in public discourse, not a substantive bad-faith claim.",
+    "underclaim_check": "We do NOT soften the 48-year non-review finding — the High Court did rule the Federal Government acted unlawfully and the AGC has not contested that legal principle (only the calculation). We do NOT soften Hajiji's 'non-negotiable' framing of MA63 immigration autonomy.",
+    "misleading_framing_check": "Card 1 establishes BOTH delays before the reframe so the reader sees both procedural moves before the labelling-asymmetry claim is made. The view card explicitly states 'both moves are within process' — refusing the temptation to imply either side is acting outside its powers. Card 4 deliberately names the Sabah-side backers of the deferral (SLS, KPPIS, Salleh) rather than implying the federal side has no defenders. Reframe phrases 'federal voices' (not 'the federal government') because the 'erosion' language came from Warisan reps, not from any federal-government spokesperson.",
+    "unverified_detail_check": "Every specific in cards traces to a primary or near-primary source. 6 April 2026 — Bernama + 5 commercial outlets. 13 May 2026 Sabah Cabinet decision — Star + FMT + Borneo Post + Daily Express + Jesselton Times. Court of Appeal panel (Mohamed Zaini Mazlan, Ismail Brahim, K. Muniandy) — The Star. 17 October 2025 High Court judgment — The Star + FMT + Borneo Post. AGC 'untouched' — Malay Mail + The Vibes + Edge Malaysia. Hajiji 'non-negotiable' — The Star + FMT + Borneo Post. Section 6(3) — characterised by CM Hajiji per The Star and Borneo Post; statutory text not directly accessed (flagged for Stage 3). 48 hours — arithmetic from publication dates.",
+    "3R_special_caution": "None of Race, Religion, or Royalty are engaged by this issue. The 40% revenue thread and the AKPS deferral are jurisdictional / constitutional matters between the federal and Sabah state governments. No royal statement on these events has been indexed; no royal claim is made.",
+    "process_not_people_check": "All sharp claims target structural mechanics (the Article 112D review obligation; the AKPS Act's oversight mechanism via Section 6(3); the labelling asymmetry in public discourse) or named institutions (AGC, Court of Appeal, KK High Court, Sabah State Cabinet, SLS, KPPIS). Individuals are named only in their official capacities and only for words/decisions on the public record: Hajiji (CM, 13 May Cabinet decision and 'non-negotiable' framing); Mohamed Zaini Mazlan (CoA panel chair, 'fait accompli' reasoning); Celestina Stuel Galid (HC judge, 107-page judgment); Mohamed Nazim (SLS president, 'legal foresight'); Salleh Said Keruak (ex-CM, 'prudent and justified'). No personal characterisation of any actor.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent — when the same agreement can authorise pauses in either direction, the *labelling* of those pauses matters. Not sadness (no victim card). Not anger-at-people (no actor cast as villain). Berger-Milkman: anxiety-of-precedent is shareable; sadness is not."
+  },
+  "pa_score": 78,
+  "pa_score_rationale": "Cap at 78 (not 90) because: (a) primary court judgment texts (High Court 17 Oct 2025; CoA 6 April 2026) accessed via press summaries only, not directly from e-Kehakiman; (b) AGC press release accessed via newsroom paraphrase, not the AGC website directly; (c) Act 860 Section 6(3) characterised via reportage of CM Hajiji's statement, not from the statutory text directly; (d) federal-government public response to the AKPS deferral has not been searched for systematically beyond the 33 indexed sources — Stage 3 should re-check Bernama, NST, and the Home Ministry's communications for any federal voice between 13 and 15 May 2026. Strong on event facts (multi-outlet corroboration on both events) and on the SLS 'procedural' framing of the federal stay (directly quoted by Malay Mail and The Star). The reframe's editorial assertion (labelling asymmetry between 'procedural' for the federal stay and 'erosion' for the Sabah deferral) is supported by direct quotes on the SLS side but uses 'federal voices' rather than naming a federal spokesperson because no such spokesperson has been indexed — appropriately hedged."
+}
