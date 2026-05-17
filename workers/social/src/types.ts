@@ -56,6 +56,15 @@ export interface TrendSnapshot {
   keywords: Record<string, number>;
 }
 
+export interface RadarSummary {
+  generatedAt: string;
+  selectedCount: number;
+  // max(controversy_score) per entity/keyword across the selected radar items.
+  // Score range 0–1; absence means "no radar signal for this term."
+  entities: Record<string, number>;
+  keywords: Record<string, number>;
+}
+
 export interface BlueskySession {
   accessJwt: string;
   refreshJwt: string;

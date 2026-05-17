@@ -2,16 +2,18 @@
  * Typed KV accessors. Keys:
  *   cards:index          → CardIndex (set out-of-band via wrangler kv:key put)
  *   trends:current       → TrendSnapshot (TTL 60min)
+ *   radar:current        → RadarSummary (TTL 4h; refreshed every 15min tick)
  *   posted:{id}:{n}      → ISO timestamp (TTL 30 days)
  *   posts:log            → PostLogEntry[] (ring buffer, last 50)
  *   auth:session         → BlueskySession (TTL 110min)
  *   last-post-at         → epoch ms (used by scheduler cooldown)
  */
-import type { BlueskySession, CardIndex, Env, PostLogEntry, SocialCard, TrendSnapshot } from './types';
+import type { BlueskySession, CardIndex, Env, PostLogEntry, RadarSummary, SocialCard, TrendSnapshot } from './types';
 
 const KEY = {
   cardsIndex: 'cards:index',
   trendsCurrent: 'trends:current',
+  radarCurrent: 'radar:current',
   postsLog: 'posts:log',
   authSession: 'auth:session',
   lastPostAt: 'last-post-at',
@@ -30,6 +32,19 @@ export async function putTrends(env: Env, snapshot: TrendSnapshot): Promise<void
   const ttlSec = Number(env.TREND_CACHE_TTL_MIN || '60') * 60;
   await env.T4A_SOCIAL_KV.put(KEY.trendsCurrent, JSON.stringify(snapshot), {
     expirationTtl: ttlSec,
+  });
+}
+
+export async function getRadar(env: Env): Promise<RadarSummary | null> {
+  return env.T4A_SOCIAL_KV.get<RadarSummary>(KEY.radarCurrent, 'json');
+}
+
+export async function putRadar(env: Env, summary: RadarSummary): Promise<void> {
+  // Radar refreshes every 2h on GitHub Actions; cache 4h so a missed refresh
+  // doesn't immediately remove the boost. Each 15-min tick re-ingests, so a
+  // healthy schedule keeps this well within TTL.
+  await env.T4A_SOCIAL_KV.put(KEY.radarCurrent, JSON.stringify(summary), {
+    expirationTtl: 4 * 60 * 60,
   });
 }
 

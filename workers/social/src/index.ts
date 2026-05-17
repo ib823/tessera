@@ -21,12 +21,14 @@ import {
   getCardIndex,
   getLastPostAt,
   getPostLog,
+  getRadar,
   getRecentPostedKeys,
   getTrends,
   markCardPosted,
   setLastPostAt,
 } from './kv';
 import { ingestTrends } from './trends';
+import { ingestRadar } from './radar';
 import { pickBestCard } from './scorer';
 import { shouldPostNow } from './scheduler';
 import { postCardToBluesky, type PostResult } from './bluesky';
@@ -47,8 +49,12 @@ async function maybePost(env: Env, force = false): Promise<{ posted: boolean; re
     return { posted: false, reason: 'no-trend-snapshot (waiting for first ingest cycle)' };
   }
 
+  // Radar boost is optional — if not cached, scorer falls back to trends-only
+  // scoring (radar arg becomes null, radarBoost returns 0).
+  const radar = await getRadar(env);
+
   const postedKeys = await getRecentPostedKeys(env, index.cards);
-  const pick = await pickBestCard(env, index.cards, postedKeys, snapshot);
+  const pick = await pickBestCard(env, index.cards, postedKeys, snapshot, radar);
 
   if (!pick.card) {
     return { posted: false, reason: `${pick.reason} (considered=${pick.considered})` };
@@ -102,6 +108,15 @@ export default {
         console.log(`trends ingested: ${snap.headlines.length} headlines, ${Object.keys(snap.entities).length} entities`);
       } catch (err) {
         console.error('ingestTrends failed:', err);
+      }
+      try {
+        const radar = await ingestRadar(env);
+        if (radar) {
+          console.log(`radar ingested: ${radar.selectedCount} items → ${Object.keys(radar.entities).length} entities, ${Object.keys(radar.keywords).length} keywords`);
+        }
+      } catch (err) {
+        // Non-fatal — scorer falls back to trends-only when radar cache is empty.
+        console.error('ingestRadar failed:', err);
       }
     }
     const r = await maybePost(env);

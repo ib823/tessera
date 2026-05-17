@@ -3,15 +3,28 @@
  *   Stage A — lexical pre-filter (zero cost) → top 8 candidates
  *   Stage B — LLM rerank via Workers AI Llama 3.1 8B
  *
+ * Stage A weights overlap against two signals:
+ *   - external trends (RSS + GDELT, refreshed every 15 min)
+ *   - T4A radar's high-priority controversy queue (refreshed every 2h
+ *     on GitHub Actions, slim-extracted to public/radar-summary.json)
+ *
  * Returns the highest-scoring unposted card, or null if no card clears the
  * relevance floor (in which case the scheduler skips this slot).
  */
-import type { Env, SocialCard, TrendSnapshot } from './types';
+import type { Env, RadarSummary, SocialCard, TrendSnapshot } from './types';
 import { isPostableCard } from './cards';
 
 const RELEVANCE_FLOOR = 4; // 0-10; cards scoring below skip the slot
 const SHORTLIST_SIZE = 8;
 const AI_MODEL = '@cf/meta/llama-3.1-8b-instruct';
+
+// Radar boost knobs. radarBoost is summed across matching entities and
+// keywords (keyword matches at half weight), then capped, then multiplied
+// by COEF. With COEF=1.5 and CAP=3.0, max radar contribution is +4.5 —
+// comparable to a strong trend-entity hit (+6 max).
+const RADAR_COEF = 1.5;
+const RADAR_CAP_PER_CARD = 3.0;
+const RADAR_KEYWORD_WEIGHT = 0.5;
 
 interface Scored {
   card: SocialCard;
@@ -26,7 +39,24 @@ function daysBetween(iso: string | null, now: number): number {
   return Math.max(0, (now - t) / 86_400_000);
 }
 
-function lexicalScore(card: SocialCard, snapshot: TrendSnapshot, now: number): number {
+function radarBoost(card: SocialCard, radar: RadarSummary | null): number {
+  if (!radar) return 0;
+  let raw = 0;
+  for (const e of card.entities) {
+    raw += radar.entities[e] ?? 0;
+  }
+  for (const k of card.topicKeywords) {
+    raw += (radar.keywords[k] ?? 0) * RADAR_KEYWORD_WEIGHT;
+  }
+  return Math.min(raw, RADAR_CAP_PER_CARD) * RADAR_COEF;
+}
+
+function lexicalScore(
+  card: SocialCard,
+  snapshot: TrendSnapshot,
+  radar: RadarSummary | null,
+  now: number,
+): number {
   let s = card.weight;
 
   // Entity overlap (weight 2.0 each)
@@ -43,6 +73,9 @@ function lexicalScore(card: SocialCard, snapshot: TrendSnapshot, now: number): n
       if (++kwHits >= 5) break;
     }
   }
+
+  // Radar boost — high-priority controversy queue from radar/ pipeline
+  s += radarBoost(card, radar);
 
   // Age decay: -0.05 per day since the issue's source date
   s -= 0.05 * daysBetween(card.sourceDate, now);
@@ -106,6 +139,7 @@ export async function pickBestCard(
   cards: SocialCard[],
   postedKeys: Set<string>,
   snapshot: TrendSnapshot,
+  radar: RadarSummary | null,
 ): Promise<PickResult> {
   const now = Date.now();
   const candidates: Scored[] = [];
@@ -113,7 +147,7 @@ export async function pickBestCard(
   for (const c of cards) {
     if (!isPostableCard(c)) continue;
     if (postedKeys.has(`${c.issueId}:${c.cardIndex}`)) continue;
-    candidates.push({ card: c, scoreA: lexicalScore(c, snapshot, now) });
+    candidates.push({ card: c, scoreA: lexicalScore(c, snapshot, radar, now) });
   }
 
   if (candidates.length === 0) {
