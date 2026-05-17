@@ -1,0 +1,167 @@
+{
+  "factual_accuracy_score": 32,
+  "source_diversity_estimate": 0,
+  "claims": [
+    {
+      "claim": "Works Ministry confirmed that 21 toll concession agreements remain classified under the Official Secrets Act despite repeated parliamentary questions since 2008.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.7,
+      "m_unknown": 0.2,
+      "source": "Kementerian Kerja Raya, 'Dokumen perjanjian konsesi lebuh raya boleh didapati umum mulai 1 Januari', 18/19 Nov 2008, https://www.kkr.gov.my/ms/node/73098 and https://www.kkr.gov.my/ms/node/73112; The Edge Malaysia report of Dewan Rakyat written reply on PJD Link, 8 Jun 2023, https://theedgemalaysia.com/node/670328",
+      "correction": "The primary official KKR record says all 22 then-operating highway concession companies except Maju Expressway agreed in 2008 to declassify/reclassify the agreements for public access from 1 Jan 2009. A 2023 parliamentary written reply reported that the PJD Link agreement was classified under the OSA and that some concession agreements had been reclassified/downgraded and could be accessed physically at KKR with government and concessionaire permission. I could not verify that exactly 21 current agreements remain classified.",
+      "stale_check": "No evidence this was correct at time of writing on 2026-05-17; the available 2008 and 2023 records contradict the blanket claim."
+    },
+    {
+      "claim": "You pay the toll. You cannot read the contract.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.4,
+      "m_unknown": 0.25,
+      "source": "Kementerian Kerja Raya, 18/19 Nov 2008, https://www.kkr.gov.my/ms/node/73098; The Edge Malaysia citing Works Ministry Dewan Rakyat written reply, 8 Jun 2023, https://theedgemalaysia.com/node/670328",
+      "correction": "Some agreements were made available for physical inspection after 2008, while some newer agreements such as PJD Link were reported classified. The claim should be narrowed to specific still-classified agreements rather than all toll contracts.",
+      "stale_check": "Not stale; overbroad based on available records."
+    },
+    {
+      "claim": "Twenty-one concession agreements. All classified.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "Kementerian Kerja Raya, 'Kesemua 22 syarikat konsesi... kecuali Maju Expressway... bersetuju untuk mendeklasifikasikan', 18 Nov 2008, https://www.kkr.gov.my/ms/node/73098",
+      "correction": "The 2008 official KKR record says 22 concession companies were involved and all except Maju Expressway agreed to declassify/reclassify. The analysis gives no primary source for 21 current agreements all being classified.",
+      "stale_check": "No recent primary source found supporting a later change to '21 all classified'."
+    },
+    {
+      "claim": "Exposed clauses show guaranteed traffic volumes.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "Kementerian Kerja Raya, 'Toll pact review', 8 May 2008, https://www.kkr.gov.my/en/node/96280; KKR/The Star item, 8 May 2008, https://www.kkr.gov.my/ms/node/96278",
+      "correction": "Official KKR-republished reports say traffic volume and threshold levels were factors in toll review mechanisms and that if traffic volume hit certain levels, toll increases could be averted. That supports traffic-volume-linked clauses, but I did not find a primary concession text proving 'guaranteed traffic volumes' as worded across the agreements.",
+      "stale_check": "Not stale; wording overstates the verified source."
+    },
+    {
+      "claim": "Leaked clauses reveal government compensation if traffic falls below targets.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.15,
+      "m_unknown": 0.6,
+      "source": "Kementerian Kerja Raya, 'Toll pact review', 8 May 2008, https://www.kkr.gov.my/en/node/96280; MARC Ratings toll-road sector report, Dec 2025, https://www.marc.com.my/wp-content/uploads/2026/02/Toll-Roads-202512.pdf",
+      "correction": "I verified official statements that government compensation can be paid when toll adjustments are not approved, and non-primary sector material describes minimum traffic support. I could not verify from a primary concession agreement that compensation is specifically triggered when traffic falls below targets.",
+      "stale_check": "Not stale; primary agreement text not found."
+    },
+    {
+      "claim": "Taxpayers pay toll companies when people drive less.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.35,
+      "m_unknown": 0.35,
+      "source": "Kementerian Kerja Raya, 8 May 2008, https://www.kkr.gov.my/en/node/96280; KKR media statement on Deepavali 2025 50% toll discount compensation, 10 Oct 2025, https://www.kkr.gov.my/sites/default/files/kenyataan-media/KM%20YBM%20-%20%20DISKAUN%20TOL%2050%20PERATUS%20SEMPENA%20DEEPAVALI%202025%20%283%29-terbaru.pdf",
+      "correction": "Primary sources support compensation for government decisions such as capping, deferring, or discounting tolls. They do not verify the causal claim that payments occur simply because people drive less.",
+      "stale_check": "Not stale; causal framing is unsupported."
+    },
+    {
+      "claim": "Toll revenue: RM5.1B in 2025.",
+      "status": "UNVERIFIED",
+      "m_true": 0,
+      "m_false": 0.2,
+      "m_unknown": 0.8,
+      "source": "No primary source found. Searches checked official/company and parliamentary sources; PLUS official pages did not provide this figure in the accessible material: https://www.plus.com.my/plus-malaysia-berhad/",
+      "correction": "Add a primary source identifying whether this is total national toll revenue, PLUS revenue, or a subset. As written, the denominator and source are missing.",
+      "stale_check": "Potentially time-sensitive. 2025 financial reports may have been released after year-end, but I could not verify this figure against a primary source."
+    },
+    {
+      "claim": "Government compensation: RM1.2B on top.",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.25,
+      "m_unknown": 0.7,
+      "source": "KKR media statements verified specific 2025 festival-discount compensation of RM19.69m/RM19.86m and 2026 KKR budget figures, but no RM1.2b toll-compensation figure: https://www.kkr.gov.my/sites/default/files/kenyataan-media/KM%20YBM%20-%20%20DISKAUN%20TOL%2050%20PERATUS%20SEMPENA%20DEEPAVALI%202025%20%283%29-terbaru.pdf; https://www.kkr.gov.my/sites/default/files/kenyataan-media/KM%20YBM%20-%20BELANJAWAN%20%28KKR%29%202026%20final.pdf",
+      "correction": "Provide the budget line, parliamentary answer, or audited government account showing RM1.2b and specify whether it is annual toll-rate compensation, festival discounts, restructuring savings, or another category.",
+      "stale_check": "Potentially time-sensitive, but no primary source found as of 2026-05-17."
+    },
+    {
+      "claim": "The public pays twice: at the booth and through taxes.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "Kementerian Kerja Raya, 8 May 2008, https://www.kkr.gov.my/en/node/96280; KKR Deepavali 2025 media statement, 10 Oct 2025, https://www.kkr.gov.my/sites/default/files/kenyataan-media/KM%20YBM%20-%20%20DISKAUN%20TOL%2050%20PERATUS%20SEMPENA%20DEEPAVALI%202025%20%283%29-terbaru.pdf",
+      "correction": "This is broadly plausible when tolls are collected and government compensation is paid, but it depends on the highway, period, and compensation mechanism. It should be tied to verified compensation amounts and affected highways.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "PH promised declassification in 2018.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.65,
+      "m_unknown": 0.25,
+      "source": "Pakatan Harapan 2018 manifesto, page on highway concessions, https://dl.dapmalaysia.org/repository/pakatan_manifesto/2018/en/files/basic-html/page27.html; full PDF mirror, https://dapmalaysia.org/en/wordpress/wp-content/uploads/2022/09/Manifesto_PH_EN.pdf",
+      "correction": "The 2018 PH manifesto section I found promised to review all highway concession agreements, renegotiate, take over concessions with a view to gradual toll abolition, and provide fair compensation. I did not verify a manifesto promise to declassify the agreements.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "PH retracted the declassification promise within 6 months.",
+      "status": "UNVERIFIED",
+      "m_true": 0,
+      "m_false": 0.25,
+      "m_unknown": 0.75,
+      "source": "No primary source found for a 2018 declassification promise or a retraction within six months. PH manifesto source: https://dl.dapmalaysia.org/repository/pakatan_manifesto/2018/en/files/basic-html/page27.html",
+      "correction": "If referring to toll abolition rather than declassification, the claim should be rewritten and sourced to the exact government statement and date. As written, it depends on an unverified premise.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "Taxpayers fund toll roads but are legally barred from reading the contracts that determine the cost.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.4,
+      "m_unknown": 0.25,
+      "source": "Kementerian Kerja Raya, 18 Nov 2008, https://www.kkr.gov.my/ms/node/73098; Kementerian Kerja Raya/Utusan item on physical inspection and no copies, 1 Jun 2008, https://www.kkr.gov.my/en/node/72950; The Edge Malaysia, 8 Jun 2023, https://theedgemalaysia.com/node/670328",
+      "correction": "Some contracts were made available for physical inspection, apparently without copies, while at least some newer agreements were classified. The claim should distinguish between legal classification, confidentiality clauses, and limited physical-access arrangements.",
+      "stale_check": "Not stale."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Works Ministry confirmed that 21 toll concession agreements remain classified under the Official Secrets Act",
+      "why": "The available official KKR records say 22 then-operating agreements were to be reclassified/declassified in 2008, with all companies except Maju Expressway agreeing. A 2023 answer supports classification for PJD Link, not 21 agreements.",
+      "primary_source": "https://www.kkr.gov.my/ms/node/73098"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Toll revenue: RM5.1B in 2025. Government compensation: RM1.2B on top.",
+      "why": "The analysis provides no source, and I could not verify either number from primary sources. The claim also lacks a denominator: national total, PLUS, operating revenue, toll collections, or government budget category.",
+      "primary_source": "No primary source found; related KKR 2025 compensation statement only verifies RM19.86m for Deepavali toll discount: https://www.kkr.gov.my/sites/default/files/kenyataan-media/KM%20YBM%20-%20%20DISKAUN%20TOL%2050%20PERATUS%20SEMPENA%20DEEPAVALI%202025%20%283%29-terbaru.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "PH promised declassification in 2018. Retracted within 6 months.",
+      "why": "The 2018 PH manifesto source I found promises review, renegotiation, takeover, gradual abolition of tolls, and fair compensation, not declassification. No primary retraction source was found.",
+      "primary_source": "https://dl.dapmalaysia.org/repository/pakatan_manifesto/2018/en/files/basic-html/page27.html"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "You pay the toll. You cannot read the contract.",
+      "why": "This is too broad. Official records show some agreements were available for public physical inspection after 2008, while some later agreements may remain classified or restricted.",
+      "primary_source": "https://www.kkr.gov.my/en/node/72950 and https://theedgemalaysia.com/node/670328"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Leaked clauses reveal government compensation if traffic falls below targets.",
+      "why": "I found primary support for traffic-volume-linked review mechanisms and compensation when toll increases are not approved, but not primary concession text proving a traffic-shortfall compensation clause as worded.",
+      "primary_source": "https://www.kkr.gov.my/en/node/96280"
+    }
+  ],
+  "omitted_facts": [
+    "In 2008, KKR announced that all 22 operating highway concession companies except Maju Expressway agreed to declassify/reclassify concession agreements for public access from 1 Jan 2009: https://www.kkr.gov.my/ms/node/73098",
+    "A KKR-republished 2009 report said members of the public could inspect agreements but were not allowed to obtain copies pending fee/order formalities: https://www.kkr.gov.my/en/node/72950",
+    "The 2023 PJD Link parliamentary written reply, as reported by The Edge, said PJD Link was classified under the OSA, but also said some concession agreements had been reclassified/downgraded and could be accessed physically at KKR with permission: https://theedgemalaysia.com/node/670328",
+    "KKR stated in 2008 that the ministry was reviewing all 22 highway concession agreements and that toll adjustments depended on traffic volume, toll fee, concession period, income, operations and maintenance costs: https://www.kkr.gov.my/en/node/96280",
+    "KKR's 2025 Deepavali toll-discount statement estimated RM19.86m in compensation to all toll highway concession companies for that specific 50% discount: https://www.kkr.gov.my/sites/default/files/kenyataan-media/KM%20YBM%20-%20%20DISKAUN%20TOL%2050%20PERATUS%20SEMPENA%20DEEPAVALI%202025%20%283%29-terbaru.pdf"
+  ],
+  "source_assessment": "The original analysis cites zero sources, so its source diversity is effectively nil. It makes legal, financial, and political claims without linking to KKR releases, parliamentary answers, concession documents, budget documents, company filings, or the PH manifesto. The most important missing source types are official ministry/parliamentary documents, primary concession texts or physical-access records, budget/payment records for toll compensation, and audited company/government financial statements. No government, concessionaire, opposition, expert, or user-side documentation is cited in the analysis itself.",
+  "overall_assessment": "The analysis has a real underlying issue: Malaysian toll concession agreements have a history of OSA classification, confidentiality restrictions, limited public access, toll-rate freezes, and government compensation. However, the published cards overstate several core facts. The strongest errors are the unsupported claim that 21 agreements are all currently classified, the unverified RM5.1b and RM1.2b figures, and the incorrect claim that PH promised declassification in 2018. The piece should not be published in this form without replacing broad claims with sourced, date-specific statements."
+}

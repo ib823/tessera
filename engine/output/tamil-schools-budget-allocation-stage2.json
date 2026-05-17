@@ -1,0 +1,124 @@
+{
+  "bias_score": 85,
+  "political_lean_estimate": -0.8,
+  "ethnic_framing_estimate": 0.9,
+  "religious_sensitivity_estimate": 0,
+  "narrative_framing_estimate": 0.8,
+  "geographic_bias_estimate": 0,
+  "economic_framing_estimate": -0.4,
+  "gender_agency_estimate": 0,
+  "partisan_flags": [
+    {
+      "quote": "Tamil school underfunding is the clearest case of discriminatory allocation in Malaysian education.",
+      "why_biased": "Presents a politically charged grievance as an objective fact, asserting malicious intent ('discriminatory allocation') by the government using entirely fabricated baseline statistics.",
+      "fix": "Advocates argue that current allocation models fail to provide proportional funding equity for Tamil schools."
+    }
+  ],
+  "racial_flags": [
+    {
+      "quote": "Like giving the smallest classroom the least funding per student and then blaming the school for underperformance",
+      "why_biased": "Weaponizes victimhood by using false per-student funding metrics to create a narrative of deliberate, targeted systemic abuse against the Indian community.",
+      "fix": "Evaluate funding equity and performance outcomes using accurate enrollment data."
+    }
+  ],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [
+    {
+      "quote": "Educational underfunding compounds existing economic disadvantage.",
+      "why_biased": "Draws a definitive causal link between systemic poverty and MOE budget allocations using fabricated funding data, forcing an economic class-struggle narrative onto false premises.",
+      "fix": "Assess the relationship between educational infrastructure and economic mobility using verified DOSM and MOE data."
+    }
+  ],
+  "gender_flags": [],
+  "omission_flags": [
+    "The analysis omits the critical legal distinction between 'Government Schools' (fully aided) and 'Government-Aided Schools' (partially aided). Approximately 70% of SJKTs sit on private or board-owned land, which inherently restricts the MOE's ability to directly fund full rebuilding projects compared to standard national schools."
+  ],
+  "evasion_flags": [
+    "The analysis completely evades Malaysia's recent and successful systemic efforts to address teacher shortages, choosing instead to present an invented 22% vacancy rate rather than acknowledging the MOE's 98.18% filling rate for SJKTs achieved in 2024."
+  ],
+  "shoe_test_failures": [
+    "If Chinese schools (SJKC) were analyzed by comparing their percentage of the maintenance budget against the total Chinese demographic population instead of actual SJKC enrollment, the same false 'multimillion ringgit underfunding gap' would magically appear. The mathematical framework is rigged to generate a grievance."
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "quote": "Tamil schools serve 5.4% of students",
+      "why": "Confuses the total Indian student demographic in Malaysia (approx. 5.4%) with actual SJKT primary school enrollment (approx. 2.8%).",
+      "fix": "Correct the figure to 2.8% to reflect actual SJKT enrollment."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "receive 2.1% of total allocation",
+      "why": "Misrepresents SJKT's share of a specific maintenance and upgrade fund (RM17.83m out of a ~RM860m MOE pool in 2024) as their share of the entire multi-billion ringgit federal education budget.",
+      "fix": "Specify that the 2.1% applies only to the school maintenance fund, not the total education budget."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "The 3.3-point gap translates to approximately RM480M in annual underfunding.",
+      "why": "Manufactures a massive financial deficit by incorrectly subtracting a maintenance funding percentage (2.1%) from a demographic population percentage (5.4%) and multiplying it across a larger budget pool.",
+      "fix": "Remove the calculation entirely as the mathematical premise is fundamentally unsound."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "42% of SJKT buildings are classified as 'dilapidated' by MOE.",
+      "why": "This figure does not exist for SJKT in MOE data. It appears misappropriated from the MEB 2013-2025 finding that 42% of secondary schools (SMK) are over 30 years old. Actual critical/dilapidated SJKT schools are roughly 19-23%.",
+      "fix": "Replace with accurate MOE/NGO infrastructure data for SJKT."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "Teacher vacancy rate in SJKT is 22% versus 8% nationally.",
+      "why": "Directly contradicted by Feb 2024 MOE parliamentary replies stating SJKT teaching positions are 98.18% filled, making the actual vacancy rate only 1.82%.",
+      "fix": "Update with the official 1.82% vacancy rate."
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "Tamil schools (SJKT) receive 2.1% of total allocation",
+      "status": "WRONG",
+      "primary_source": "MOE Parliamentary Reply 2024 / MOE Budget 2024",
+      "corrected_value": "2.1% refers only to SJKT's share of the school maintenance and upgrade budget (RM17.83m), not the total MOE allocation."
+    },
+    {
+      "claim": "serving 5.4% of the student population",
+      "status": "WRONG",
+      "primary_source": "MOE Enrollment Data",
+      "corrected_value": "SJKT enrollment is ~2.8%. The 5.4% figure represents the total Indian student population across all school streams."
+    },
+    {
+      "claim": "The 3.3-point gap translates to approximately RM480M in annual underfunding.",
+      "status": "WRONG",
+      "primary_source": "None - mathematically invalid calculation.",
+      "corrected_value": "Calculation is invalid as it mixes disparate variables (maintenance budget and total demographic population)."
+    },
+    {
+      "claim": "42% of SJKT buildings are classified as 'dilapidated' by MOE.",
+      "status": "WRONG",
+      "primary_source": "Malaysia Education Blueprint 2013-2025 / MOE Infrastructure Data",
+      "corrected_value": "The 42% figure applies to secondary schools needing refurbishment. Actual critical SJKTs are estimated at ~19-23%."
+    },
+    {
+      "claim": "The equivalent figure for national schools is 12%. For Chinese schools, 18%.",
+      "status": "UNVERIFIED",
+      "primary_source": "Could not find any MOE primary source corroborating these comparative figures."
+    },
+    {
+      "claim": "Teacher vacancy rate in SJKT is 22% versus 8% nationally.",
+      "status": "WRONG",
+      "primary_source": "MOE Parliamentary Reply (February 2024)",
+      "corrected_value": "MOE reported a 98.18% filling rate for SJKT, which equals a 1.82% vacancy rate."
+    },
+    {
+      "claim": "Rural SJKT in estates have the highest vacancy rates, up to 34%.",
+      "status": "UNVERIFIED",
+      "primary_source": "Could not find any MOE primary source corroborating this 34% figure."
+    },
+    {
+      "claim": "Indian Malaysians have a poverty rate of 5.5%",
+      "status": "WRONG",
+      "primary_source": "DOSM Household Income and Expenditure Survey (2022 & 2024)",
+      "corrected_value": "The absolute poverty rate for Indians was 5.4% in 2022 and improved to 3.1% in 2024."
+    }
+  ],
+  "overall_assessment": "This analysis is fundamentally compromised by the systematic fabrication and misapplication of statistics. It conflates the total Indian demographic (5.4%) with actual SJKT enrollment (~2.8%), misrepresents a specific maintenance fund share (2.1%) as a total budget allocation, and relies on completely false teacher vacancy (22% vs. an actual 1.8%) and dilapidated building (42% vs. actual ~20%) figures. Every core metric used to build its narrative of discriminatory underfunding is mathematically flawed, grossly outdated, or entirely invented. It fails basic factual standards and must be discarded."
+}

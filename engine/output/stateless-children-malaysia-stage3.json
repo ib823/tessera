@@ -1,0 +1,190 @@
+{
+  "factual_accuracy_score": 38,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "An estimated 50,000 to 100,000 children born in Malaysia lack citizenship due to gaps in the Federal Constitution, statelessness of parents, or administrative failures.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Malaysia Home Ministry parliamentary replies as reported by Malay Mail, 11 July 2023, state that Malaysia does not record stateless persons: https://www.malaymail.com/news/malaysia/2023/07/11/why-malaysia-has-zero-data-stateless-persons-decoding-the-official-view-through-parliaments-lens/78931; UNHCR Malaysia says there are no recent reliable statistics and observers estimate tens of thousands: https://www.state.gov/report/custom/ecf871b3d2/",
+      "correction": "Do not present 50,000 to 100,000 as a verified national count of Malaysia-born stateless children. A more supportable wording is: Malaysia has no official count of stateless children; observers estimate tens of thousands of stateless persons, with substantial undocumented and potentially stateless child populations in Sabah.",
+      "stale_check": "No recent official dataset found that would make the 50,000 to 100,000 figure current as of 2026-05-17."
+    },
+    {
+      "claim": "Born in Malaysian hospitals. Cannot attend school. Cannot work.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.35,
+      "m_unknown": 0.3,
+      "source": "UNHCR Malaysia, 8 October 2019, says statelessness can mean life without education, medical care or legal employment: https://www.unhcr.org/my/news/news-releases/unhcr-welcomes-renewed-commitment-malaysia-end-statelessness; Education Ministry position reported from Parliament, 21 March 2023, says stateless or undocumented children can enroll if one parent is Malaysian and supporting certification exists: https://malaysia.news.yahoo.com/why-malaysia-zero-data-stateless-230000506.html",
+      "correction": "Replace the absolute wording with: Many stateless or undocumented children face serious barriers to schooling and later legal employment; some children with a Malaysian parent may be admitted to government schools under specified conditions.",
+      "stale_check": "The education claim became more clearly overbroad after the 2023 Education Ministry clarification."
+    },
+    {
+      "claim": "Stateless children have no IC, no access to public education, and no legal path forward.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.65,
+      "m_unknown": 0.2,
+      "source": "National Registration Department lists citizenship application routes under Articles 14, 15A, 15(1), 15(2), 16, 19 and related services: https://www.jpn.gov.my/en/core-business/citizenship; Education Ministry position reported from Parliament, 21 March 2023: https://malaysia.news.yahoo.com/why-malaysia-zero-data-stateless-230000506.html",
+      "correction": "The claim should distinguish documentation barriers from legal pathways. There are legal application routes, but they are discretionary, slow, often opaque, and not guaranteed.",
+      "stale_check": "No stale issue; the claim is too absolute against existing NRD application routes and school admission policy."
+    },
+    {
+      "claim": "Article 14 grants citizenship by birth, but not to all births.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Federal Constitution, Article 14 and Second Schedule Part II, MOHA PDF, current text accessed 2026-05-17: https://www.moha.gov.my/utama/images/Akta%20Perundangan/BAHAGIAN%20PENDAFTARAN%20NEGARA%20DAN%20PERTUBUHAN/PERLEMBAGAAN%20PERSEKUTUAN.pdf",
+      "correction": "Specify that Article 14 grants citizenship by operation of law only to persons meeting qualifications in the Second Schedule, including birth in the Federation with at least one citizen or permanent resident parent, or birth in the Federation where the person is not a citizen of any other country under the constitutional test.",
+      "stale_check": "The Constitution (Amendment) Bill 2024 was passed but commencement was still pending/expected in mid-2026 according to later official and SUHAKAM statements, so current text matters."
+    },
+    {
+      "claim": "Children of Malaysian mothers married to foreign fathers were excluded until the 2024 amendment stalled.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.4,
+      "m_unknown": 0.25,
+      "source": "Federal Constitution Second Schedule Part II before commencement refers to overseas-born children whose father is a citizen: https://www.moha.gov.my/utama/images/Akta%20Perundangan/BAHAGIAN%20PENDAFTARAN%20NEGARA%20DAN%20PERTUBUHAN/PERLEMBAGAAN%20PERSEKUTUAN.pdf; Bernama, 17 October 2024, says Dewan Rakyat passed the Bill: https://www.bernama.com/en/news.php?id=2352948; SUHAKAM/OCC 2026 statement says implementation was expected in June or July 2026: https://suhakam.org.my/wp-content/uploads/2026/01/Media-Statement-No.-01-OCC-_Childrens-Commissioner-Welcomes-Implementation-of-Law-Granting-Automatic-Citizenship-to-Children-Born-Overseas-To-Malaysian-Mothers-In-Mid-2026.pdf",
+      "correction": "This should say overseas-born children of Malaysian mothers and foreign fathers were not entitled to automatic citizenship by operation of law under the pre-amendment text; the 2024 Bill passed Parliament but had not yet commenced as of the latest sources found, with implementation expected in mid-2026.",
+      "stale_check": "If written before October 2024, 'stalled' could refer to delays before passage. In the 2026 reconstructed analysis, it is stale/misleading because the Bill passed Dewan Rakyat in October 2024 and the Senate later approved it, but commencement remained pending."
+    },
+    {
+      "claim": "NRD rejection rates for citizenship applications: estimated over 90%.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "Home Ministry parliamentary reply reported by Malay Mail, 11 July 2023: NRD received 56,792 citizenship applications from persons below 18 from 2013 to 15 February 2022; 19,958 rejected and 6,991 approved: https://www.malaymail.com/news/malaysia/2023/07/11/why-malaysia-has-zero-data-stateless-persons-decoding-the-official-view-through-parliaments-lens/78931",
+      "correction": "Use the available parliamentary figure: for under-18 applications from 2013 to 15 February 2022, about 35% were rejected and 12% approved, with many still pending. I found no primary source supporting an over-90% NRD rejection rate.",
+      "stale_check": "No evidence found that a newer official statistic raises rejection rates above 90%."
+    },
+    {
+      "claim": "Appeals take 5 to 15 years.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "U.S. State Department human rights report excerpt says many stateless adult residents reported five to 10 years elapsed after passing Malay tests without citizenship being granted: https://www.state.gov/report/custom/ecf871b3d2/; Bernama, 17 October 2024, reports Home Minister commitment to decide all pending citizenship applications within 12 months from that date: https://www.bernama.com/en/news.php?id=2352948",
+      "correction": "Do not state 5 to 15 years unless sourced. A supportable version is: applicants have reported waiting five to 10 years in some categories, and in October 2024 the Home Ministry pledged to resolve pending applications within 12 months.",
+      "stale_check": "The 12-month pledge from 17 October 2024 may make older waiting-time descriptions stale unless the article states historical delays."
+    },
+    {
+      "claim": "Children age out of school while waiting.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0.1,
+      "m_unknown": 0.6,
+      "source": "Education Ministry policy reported from Parliament requires citizenship/identity document issues to be settled within two years of enrolment or NRD application-status proof submitted to continue schooling: https://malaysia.news.yahoo.com/why-malaysia-zero-data-stateless-230000506.html; UNICEF, 20 June 2024, says many stateless children lack formal education access: https://www.unicef.org/malaysia/press-releases/unicefs-statement-access-education-refugee-and-stateless-children",
+      "correction": "The general risk is plausible, but the exact 'age out' claim needs case data or official figures. Use: delays can interrupt or limit schooling, especially for children who cannot meet documentation conditions.",
+      "stale_check": "No current primary statistic found."
+    },
+    {
+      "claim": "Sabah alone accounts for an estimated 40,000 stateless children.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.1,
+      "m_unknown": 0.65,
+      "source": "Peer-reviewed article by Catherine Allerton, Tilburg Law Review 2014, discusses statelessness among children of migrants in Sabah but does not verify the 40,000 figure in the accessible excerpt: https://statelessness.uwazi.io/entity/dr7enzocoog; Al Jazeera/Malay Mail 2015 reported at least 50,000 stateless children in Sabah according to a documentary/NGO estimate, not a primary government count: https://www.malaymail.com/news/malaysia/2015/04/30/poor-and-stateless-sabahs-50000-undocumented-children-denied-access-to-educ/887725",
+      "correction": "I could not verify 40,000 from a primary source. If using estimates, attribute them: NGOs and media have reported estimates around 50,000 undocumented or stateless children in Sabah, but Malaysia lacks an official count.",
+      "stale_check": "Older 2015/2016 estimates may be stale and should not be presented as current without updated methodology."
+    },
+    {
+      "claim": "Legacy of the 1990s IC project and undocumented migration creates generational exclusion.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "Royal Commission of Inquiry on Immigrants in Sabah report copy, 2014, via SAPP archive: https://legacy.sapp.org.my/rci/RCI-Eng.pdf; Open Library summary of RCI says the Commission found Project IC more likely than not existed and involved Sabah NRD officers: https://openlibrary.org/books/OL53089641M/The_Royal_Commission_of_Inquiry_%28RCI%29_on_Immigrants_in_Sabah",
+      "correction": "The RCI supports the existence of irregular IC issuance as more likely than not, but the analysis needs a primary causal bridge showing this directly creates today's stateless child population. Better: Sabah's statelessness problem is linked by researchers to migration, documentation gaps, and the politics of recognition; Project IC is part of the wider historical context.",
+      "stale_check": "No recent change; the weakness is causal overreach."
+    },
+    {
+      "claim": "Administrative gaps create invisible citizens who exist physically but not legally.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.2,
+      "m_unknown": 0.4,
+      "source": "SUHAKAM stateless children page says NRD procedural inconsistency and legal reform needs are among causes, and stateless children face discrimination: https://suhakam.org.my/portfolio/stateless-children/",
+      "correction": "Use 'potential citizens' or 'people without recognised citizenship/documentation' rather than 'invisible citizens', because many affected children are not legally citizens and some may have claim to another nationality.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "No child should be stateless in the country of their birth.",
+      "status": "VERIFIED",
+      "m_true": 0.55,
+      "m_false": 0.05,
+      "m_unknown": 0.4,
+      "source": "Federal Constitution Second Schedule Part II section 1(e) provides citizenship by operation of law for every person born in the Federation who at birth is not a citizen of any other country, subject to section 2 limitations: https://www.moha.gov.my/utama/images/Akta%20Perundangan/BAHAGIAN%20PENDAFTARAN%20NEGARA%20DAN%20PERTUBUHAN/PERLEMBAGAAN%20PERSEKUTUAN.pdf",
+      "correction": "This is partly normative. As law, Malaysia has a constitutional safeguard for persons born in the Federation who are not citizens of any other country, but implementation and proof barriers remain.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The Constitution can fix this. The question is whether Parliament will.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.35,
+      "m_unknown": 0.3,
+      "source": "Bernama, 17 October 2024, reports Parliament's Dewan Rakyat passed the Constitution (Amendment) Bill 2024 on citizenship: https://www.bernama.com/en/news.php?id=2352948; Bill text says commencement occurs on a date appointed by the Yang di-Pertuan Agong by Gazette: https://repositori.parlimen.gov.my/bitstream/123456789/1605/18/DR%2013/2024",
+      "correction": "Parliament already acted on part of the issue in 2024. The remaining question is commencement, implementation, retroactivity, administrative discretion, and whether further constitutional or statutory reform covers other stateless categories.",
+      "stale_check": "This framing is stale after the October 2024 parliamentary passage."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "An estimated 50,000 to 100,000 children born in Malaysia lack citizenship",
+      "why": "No primary national statistic was found. Malaysia's government has said it does not record stateless persons, and available estimates vary by population and geography.",
+      "primary_source": "https://www.malaymail.com/news/malaysia/2023/07/11/why-malaysia-has-zero-data-stateless-persons-decoding-the-official-view-through-parliaments-lens/78931"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Cannot attend school",
+      "why": "Some stateless and undocumented children can attend government or government-aided schools if one parent is Malaysian and documentation/certification conditions are met.",
+      "primary_source": "https://malaysia.news.yahoo.com/why-malaysia-zero-data-stateless-230000506.html"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "no legal path forward",
+      "why": "NRD lists multiple citizenship application routes under the Federal Constitution, even if many are discretionary, slow, or uncertain.",
+      "primary_source": "https://www.jpn.gov.my/en/core-business/citizenship"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "NRD rejection rates for citizenship applications: estimated over 90%",
+      "why": "Available parliamentary figures for under-18 applications from 2013 to 15 February 2022 show 35% rejected, 12% approved, and many pending, not over 90% rejected.",
+      "primary_source": "https://www.malaymail.com/news/malaysia/2023/07/11/why-malaysia-has-zero-data-stateless-persons-decoding-the-official-view-through-parliaments-lens/78931"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Appeals take 5 to 15 years",
+      "why": "I found support for reports of five to 10 years in some stateless adult cases, but not a primary source for five to 15 years or for appeals generally.",
+      "primary_source": "https://www.state.gov/report/custom/ecf871b3d2/"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Sabah alone accounts for an estimated 40,000 stateless children.",
+      "why": "No primary source for 40,000 was found. Other NGO/media estimates use 50,000, but those are not official counts.",
+      "primary_source": "https://statelessness.uwazi.io/entity/dr7enzocoog"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Children of Malaysian mothers married to foreign fathers were excluded until the 2024 amendment stalled.",
+      "why": "The relevant issue is overseas-born children, not all children of Malaysian mothers married to foreign fathers. The amendment passed Parliament in 2024 but commencement/implementation remained pending, so 'stalled' is imprecise.",
+      "primary_source": "https://www.bernama.com/en/news.php?id=2352948"
+    }
+  ],
+  "omitted_facts": [
+    "Malaysia's government has said it does not record the number of stateless persons; this is essential context for any numeric estimate. Source: Malay Mail citing Home Ministry parliamentary replies, 11 July 2023, https://www.malaymail.com/news/malaysia/2023/07/11/why-malaysia-has-zero-data-stateless-persons-decoding-the-official-view-through-parliaments-lens/78931",
+    "For under-18 citizenship applications from 2013 to 15 February 2022, NRD records cited in Parliament showed 56,792 applications, 6,991 approvals and 19,958 rejections. Source: https://www.malaymail.com/news/malaysia/2023/07/11/why-malaysia-has-zero-data-stateless-persons-decoding-the-official-view-through-parliaments-lens/78931",
+    "Dewan Rakyat passed the Constitution (Amendment) Bill 2024 on citizenship on 17 October 2024 with 206 MPs supporting, one opposing, 14 absent and one suspended. Source: Bernama, https://www.bernama.com/en/news.php?id=2352948",
+    "The 2024 Bill text contains non-retroactivity/exception clauses: persons born before commencement and pending matters are handled as if the Constitution had not been amended. Source: Parliament Bill D.R. 13/2024, https://repositori.parlimen.gov.my/bitstream/123456789/1605/18/DR%2013/2024",
+    "The Home Minister pledged on 17 October 2024 to resolve all pending citizenship applications within 12 months. Source: Bernama, https://www.bernama.com/en/news.php?id=2352948",
+    "Education access is conditional rather than absolutely unavailable: children without documents can enroll if one parent is Malaysian and certification is supplied, with follow-up documentation requirements. Source: https://malaysia.news.yahoo.com/why-malaysia-zero-data-stateless-230000506.html"
+  ],
+  "source_assessment": "The original analysis cites only two internal T4A related issues and no primary external sources. It does not cite the Federal Constitution, the 2024 Bill text, NRD/JPN application routes, parliamentary replies, SUHAKAM, UNHCR, UNICEF, court rulings, or the Sabah RCI. The source base is therefore circular and extremely narrow, with no government, court, parliamentary, NGO, international-body, academic, community, or opposition perspectives directly represented.",
+  "overall_assessment": "The analysis captures a real public issue but is not publication-ready as a factual account. Its strongest point is the broad claim that Malaysian citizenship law does not cover all births automatically. Its weakest points are unsourced national and Sabah child counts, the unsupported over-90% rejection-rate claim, and absolute statements that stateless children cannot attend school and have no legal path forward. Several claims are stale or misleading after the 2024 citizenship amendment passed Parliament, even though commencement and implementation remained unresolved as of the sources checked."
+}

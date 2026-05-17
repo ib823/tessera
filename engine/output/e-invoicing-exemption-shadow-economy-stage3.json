@@ -1,0 +1,263 @@
+{
+  "factual_accuracy_score": 72,
+  "source_diversity_estimate": 0.42,
+  "claims": [
+    {
+      "claim": "PM Anwar raised the e-invoice exemption to RM1m on 6 December 2025",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.1,
+      "m_unknown": 0.2,
+      "source": "Prime Minister's Office verbatim speech, 'Teks Verbatim: Majlis Sentuhan Madani Bersama Rakyat Negeri Sabah', 6 December 2025, https://www.pmo.gov.my/ms/ucapanterkini/teks-verbatim-majlis-sentuhan-madani-bersama-rakyat-negeri-sabah/",
+      "correction": "The PMO transcript says the RM500,000 threshold was cancelled and raised to RM1,000,000; it does not itself use the phrasing 'exemption to RM1m' in English. LHDN's current FAQ later states qualified MSMEs below RM1 million may be exempted.",
+      "stale_check": "A later change on 5 January 2026 raised the exemption further to RM1.5 million, so RM1 million was superseded after the 6 December 2025 speech."
+    },
+    {
+      "claim": "The RM1m exemption spared 200,000 SMEs from the digital tax trail.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.3,
+      "source": "Bernama, 'Additional 200,000 SMEs To Benefit From New E-invoicing Exemption Threshold -- Samenta', 7 December 2025, https://www.bernama.com/en/news.php?id=2499714; LHDN FAQ, updated 2026, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf",
+      "correction": "SAMENTA said an additional 200,000 SMEs were expected to benefit from the new threshold; this is an industry association estimate, not an official government count. 'Sparing from the digital tax trail' is editorialised and overstates the effect because e-commerce platform obligations, self-billed e-invoices and ordinary tax reporting can still create records.",
+      "stale_check": "Superseded in part by the 5 January 2026 PMO announcement raising the exemption to RM1.5 million."
+    },
+    {
+      "claim": "He cited compliance costs at the Sentuhan Madani Sabah event.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Prime Minister's Office verbatim speech, 6 December 2025, lines on e-invoicing burden and cost, https://www.pmo.gov.my/ms/ucapanterkini/teks-verbatim-majlis-sentuhan-madani-bersama-rakyat-negeri-sabah/",
+      "correction": "No correction needed.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The e-invoice system was originally sold as the lever to narrow Malaysia's shadow economy.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.1,
+      "m_unknown": 0.25,
+      "source": "LHDN SPK 2025 Q&A, 29 October 2025, states e-invoicing helps combat the shadow economy by recording transactions transparently and in real time, https://www.hasil.gov.my/media/azjeuupj/kompilasi-soalan-dan-jawapan-spk-2025-bagi-siri-3-29-oktober-2025-topik-e-invois-persediaan-strategik-ke-arah-pematuhan-mandatori.pdf",
+      "correction": "The claim should say e-invoicing is one tool to reduce the shadow economy, not the sole lever.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "Shadow economy is roughly RM330B.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.1,
+      "m_unknown": 0.3,
+      "source": "UiTM Institutional Repository, Siti Mariam Abdul Halim, 'Shadow Economy in Malaysia: An Introduction', 2025, citing Deputy Finance Minister Ahmad Maslan as reported in The Star, https://ir.uitm.edu.my/131647/1/131647.pdf; LHDN shadow economy education material gives the 21% of GDP basis, https://www.hasil.gov.my/media/kzyjtow2/11-topik-10-ekonomi-bayangan.pdf",
+      "correction": "The RM330B figure was traceable to a cited media report of a government statement, while LHDN's primary material independently verifies about 21% of GDP. Treat RM330B as an estimate, not a current audited figure.",
+      "stale_check": "The figure appears based on earlier GDP estimates and may not be the latest nominal value in 2026."
+    },
+    {
+      "claim": "Annual tax-gap losses are cited at over RM70B.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Bernama, 15 February 2024, says media had reported about RM70 billion annually, while LHDN discussed shadow economy impact on the tax gap, https://www.bernama.com/en/news.php?id=2270577",
+      "correction": "I could not verify the RM70B annual tax-loss estimate from an official government document or methodology. It should be attributed as a media-reported estimate, not stated as a verified annual tax-gap loss.",
+      "stale_check": "No newer official tax-gap estimate was found in the checked sources."
+    },
+    {
+      "claim": "21% of GDP on conservative estimates, with a range 21-25% across methodologies.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "LHDN shadow economy material, 2024/2025, https://www.hasil.gov.my/media/kzyjtow2/11-topik-10-ekonomi-bayangan.pdf; ResearchGate-hosted excerpt of Gamal et al., Economic Analysis and Policy 64 (2019), reports 2003-2012 around 21.96% and historical average 43.94%, https://www.researchgate.net/publication/336270410_A_modified_Currency_Demand_Function_and_the_Malaysian_shadow_economy_Evidence_from_ARDL_bounds_testing_approach",
+      "correction": "21% is verified as a government estimate, but calling it the conservative end of a 21-25% range is not fully supported because some peer-reviewed estimates are much higher depending on period and method.",
+      "stale_check": "Not stale, but method-dependent."
+    },
+    {
+      "claim": "Tax-gap losses are the explicit rationale LHDN gave for e-invoicing.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.1,
+      "m_unknown": 0.3,
+      "source": "LHDN SPK 2025 Q&A, 29 October 2025, https://www.hasil.gov.my/media/azjeuupj/kompilasi-soalan-dan-jawapan-spk-2025-bagi-siri-3-29-oktober-2025-topik-e-invois-persediaan-strategik-ke-arah-pematuhan-mandatori.pdf; LHDN Dewan Siswa article, July 2025, https://www.hasil.gov.my/media/motdnhdm/202507_dewan-siswa-bil072025-ekonomi-bayangan-ancaman-kelestarian-ekonomi-negara.pdf",
+      "correction": "Better phrasing: LHDN described e-invoicing as a measure to strengthen compliance, reduce tax leakage and reduce the space for unreported transactions.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "World Economics puts the informal economy at 25.3% of GDP.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.05,
+      "m_unknown": 0.75,
+      "source": "No primary or authoritative methodological source was found within the checked sources; World Economics is not a government or peer-reviewed primary source for this claim.",
+      "correction": "Either remove this figure or cite a methodological source and date clearly.",
+      "stale_check": "Could vary by year and methodology."
+    },
+    {
+      "claim": "LHDN: 820.5M e-invoices from 111,600 taxpayers as of 22 Dec 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "LHDN media statement HASiL/2025/12/22-96, 22 December 2025, https://www.hasil.gov.my/media/opwnztus/20251222-kenyataan-media-hasil-sesi-libat-urus-hasil-bersama-dengan-persatuan-perdagangan.pdf",
+      "correction": "No correction needed.",
+      "stale_check": "Later figures exist: Astro Awani reported more than one billion transactions involving 200,000 taxpayers on 11 February 2026, so this was accurate as of 22 December 2025 but not latest by May 2026."
+    },
+    {
+      "claim": "Phase 1-2 compliance over 90%; Phase 3 reached 80%.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.03,
+      "m_unknown": 0.12,
+      "source": "LHDN media statement HASiL/2025/12/22-96, 22 December 2025, https://www.hasil.gov.my/media/opwnztus/20251222-kenyataan-media-hasil-sesi-libat-urus-hasil-bersama-dengan-persatuan-perdagangan.pdf",
+      "correction": "Phase 3 was reported as exceeding 80% before the end of December 2025, not necessarily final Phase 3 compliance.",
+      "stale_check": "Likely stale as compliance may have changed after December 2025."
+    },
+    {
+      "claim": "The CEO said the mandate is working where it has been enforced.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.15,
+      "m_unknown": 0.45,
+      "source": "LHDN media statement HASiL/2025/12/22-96, 22 December 2025, https://www.hasil.gov.my/media/opwnztus/20251222-kenyataan-media-hasil-sesi-libat-urus-hasil-bersama-dengan-persatuan-perdagangan.pdf",
+      "correction": "The CEO reported encouraging uptake and compliance; 'the mandate is working' is an analytical characterisation, not a direct quote.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "June 2025 figure was 328M e-invoices; volume more than doubled in six months as Phase 3 came online.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0.05,
+      "m_unknown": 0.2,
+      "source": "Bernama, 'LHDN Receives 328 Million e-Invoices From Nearly 35,000 Taxpayers Since Aug 2024', 12 June 2025, https://www.bernama.com/en/news.php?id=2433343; LHDN statement HASiL/2025/12/22-96, 22 December 2025, https://www.hasil.gov.my/media/opwnztus/20251222-kenyataan-media-hasil-sesi-libat-urus-hasil-bersama-dengan-persatuan-perdagangan.pdf",
+      "correction": "The arithmetic is correct, but the causal phrase 'as Phase 3 came online' is plausible rather than proven by these sources.",
+      "stale_check": "Accurate for June-Dec 2025 comparison."
+    },
+    {
+      "claim": "One month later, on 5 January 2026, Anwar postponed e-invoicing for RM1-5m firms by another year.",
+      "status": "MISLEADING",
+      "m_true": 0.5,
+      "m_false": 0.2,
+      "m_unknown": 0.3,
+      "source": "Prime Minister's Office, 'Ucapan Amanat Tahun Baharu 2026 Perdana Menteri', 5 January 2026, https://www.pmo.gov.my/ms/ucapanterkini/perhimpunan-bulanan-yab-perdana-menteri-bersama-warga-jabatan-perdana-menteri-bagi-bulan-januari-amanat-tahun-2026/; LHDN FAQ, updated 2026, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf",
+      "correction": "The PMO speech says the government agreed to extend the no-penalty transition period for another year for RM1m-RM5m firms, while the LHDN FAQ describes interim relaxation until 31 December 2027 for taxpayers with up to RM5m turnover. This is not simply a one-year postponement of all obligations.",
+      "stale_check": "Current LHDN FAQ as of the checked 2026 version reflects the post-January policy."
+    },
+    {
+      "claim": "In November 2025 LHDN exposed roughly RM70m in alleged tax evasion at a single luxury-car cartel firm.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.15,
+      "m_unknown": 0.3,
+      "source": "LHDN media statement HASiL/2025/11/18-88, 18 November 2025, https://www.hasil.gov.my/media/wxflyqbc/20251118_kenyataan-media-hasil-18-nov-2025-hasil-bongkar-ketidakpatuhan-cukai-kartel-jual-beli-kenderaan-mewah.pdf",
+      "correction": "LHDN said preliminary investigations found undeclared sales transaction income estimated around RM70 million; it did not say RM70 million was the tax evaded. Use 'about RM70 million in undeclared income/sales transactions', not 'RM70m in tax evasion'.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "In July 2025 5,800 individuals were flagged for RM484m undeclared income.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.15,
+      "m_unknown": 0.3,
+      "source": "LHDN media statement HASiL/2025/07/30-64, 30 July 2025, https://www.hasil.gov.my/media/kgvbwbo4/20250730_kenyataan-media-hasil-30-julai-2025_hasil-mengenalpasti-pembayar-cukai-tidak-patuh-berdasarkan-semakan-e-invois.pdf",
+      "correction": "LHDN said 5,800 taxpayers, not necessarily individuals only, were previously non-compliant in submitting tax returns and came forward to report RM484 million in prior-year income. It also reported RM82 million in additional tax revenue.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The 5,800 cases involved online operators, commission earners and luxury-vehicle buyers.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "LHDN media statement HASiL/2025/07/30-64, 30 July 2025, does not specify these categories, https://www.hasil.gov.my/media/kgvbwbo4/20250730_kenyataan-media-hasil-30-julai-2025_hasil-mengenalpasti-pembayar-cukai-tidak-patuh-berdasarkan-semakan-e-invois.pdf",
+      "correction": "Remove the sector list unless a primary LHDN source is found. The official statement only says individuals and companies conducting business transactions through MyInvois data.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The question is not whether small firms can afford e-invoicing; it is whose books stay invisible when the rule is relaxed.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.25,
+      "m_unknown": 0.45,
+      "source": "LHDN FAQ, updated 2026, shows exemptions and continuing obligations such as platform-provider e-invoice obligations and free MyInvois tools, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf",
+      "correction": "This is opinion, but it misleadingly dismisses documented compliance-cost concerns and implies exempted firms' books become invisible. The policy still includes normal tax filings and some transaction records through platform or counterpart self-billing rules.",
+      "stale_check": "Affected by the 5 January 2026 expansion to RM1.5m and transition relaxation."
+    },
+    {
+      "claim": "E-invoicing's promise was that every transaction leaves a trail.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.2,
+      "m_unknown": 0.4,
+      "source": "LHDN SPK 2025 Q&A, 29 October 2025, says e-invoicing helps ensure every business transaction is recorded transparently, but also says e-invoice alone cannot fully eliminate the cash-based shadow economy, https://www.hasil.gov.my/media/azjeuupj/kompilasi-soalan-dan-jawapan-spk-2025-bagi-siri-3-29-oktober-2025-topik-e-invois-persediaan-strategik-ke-arah-pematuhan-mandatori.pdf",
+      "correction": "Use 'more business transactions leave a standardised digital record' rather than 'every transaction leaves a trail'.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The cost relief is real.",
+      "status": "VERIFIED",
+      "m_true": 0.55,
+      "m_false": 0.1,
+      "m_unknown": 0.35,
+      "source": "Prime Minister's Office speech, 6 December 2025, citing burden and cost concerns, https://www.pmo.gov.my/ms/ucapanterkini/teks-verbatim-majlis-sentuhan-madani-bersama-rakyat-negeri-sabah/; Bernama SAMENTA statement, 7 December 2025, https://www.bernama.com/en/news.php?id=2499714",
+      "correction": "This is partly interpretive, but supported by PM and SAMENTA statements about compliance burden.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The policy choice leaves most of the shadow economy unrecorded.",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.25,
+      "m_unknown": 0.6,
+      "source": "LHDN FAQ, updated 2026, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf; LHDN SPK 2025 Q&A, 29 October 2025, https://www.hasil.gov.my/media/azjeuupj/kompilasi-soalan-dan-jawapan-spk-2025-bagi-siri-3-29-oktober-2025-topik-e-invois-persediaan-strategik-ke-arah-pematuhan-mandatori.pdf",
+      "correction": "I found no primary source quantifying what share of the shadow economy is below the exemption threshold. The statement is an unsupported inference and should be removed or reframed as a question.",
+      "stale_check": "Policy changed after 6 December 2025; the 5 January 2026 RM1.5m exemption would increase the concern, but still does not prove 'most'."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "sparing 200,000 SMEs from the digital tax trail",
+      "why": "The 200,000 figure is an SAMENTA estimate of additional SMEs expected to benefit, not an official count; 'digital tax trail' overstates invisibility because other tax and e-invoice mechanisms remain.",
+      "primary_source": "Bernama citing SAMENTA, 7 December 2025, https://www.bernama.com/en/news.php?id=2499714; LHDN FAQ, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "annual tax-gap losses cited at over RM70B",
+      "why": "The figure appears in media-reported summaries, but I could not verify an official tax-gap methodology or primary government document for RM70B annual losses.",
+      "primary_source": "Bernama, 15 February 2024, only says media reported the RM70B figure, https://www.bernama.com/en/news.php?id=2270577"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "One month later, on 5 January 2026, Anwar postponed e-invoicing for RM1-5m firms by another year",
+      "why": "The PMO wording includes a one-year extension of a no-penalty transition period; LHDN's current FAQ describes interim relaxation until 31 December 2027, so it is not a simple one-year postponement of all obligations.",
+      "primary_source": "PMO, 5 January 2026, https://www.pmo.gov.my/ms/ucapanterkini/perhimpunan-bulanan-yab-perdana-menteri-bersama-warga-jabatan-perdana-menteri-bagi-bulan-januari-amanat-tahun-2026/; LHDN FAQ, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "RM70m in alleged tax evasion at a single luxury-car cartel firm",
+      "why": "LHDN said estimated undeclared sales transaction income was around RM70 million. That is not the same as RM70 million in tax evaded.",
+      "primary_source": "LHDN media statement HASiL/2025/11/18-88, https://www.hasil.gov.my/media/wxflyqbc/20251118_kenyataan-media-hasil-18-nov-2025-hasil-bongkar-ketidakpatuhan-cukai-kartel-jual-beli-kenderaan-mewah.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The 5,800 cases involved online operators, commission earners and luxury-vehicle buyers",
+      "why": "The official LHDN statement does not identify these segments for the 5,800 taxpayers.",
+      "primary_source": "LHDN media statement HASiL/2025/07/30-64, https://www.hasil.gov.my/media/kgvbwbo4/20250730_kenyataan-media-hasil-30-julai-2025_hasil-mengenalpasti-pembayar-cukai-tidak-patuh-berdasarkan-semakan-e-invois.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "policy choice to leave most of the shadow economy unrecorded",
+      "why": "No primary source was found quantifying the share of the shadow economy below the exemption threshold, and LHDN notes e-invoice is only one compliance tool.",
+      "primary_source": "LHDN SPK 2025 Q&A, https://www.hasil.gov.my/media/azjeuupj/kompilasi-soalan-dan-jawapan-spk-2025-bagi-siri-3-29-oktober-2025-topik-e-invois-persediaan-strategik-ke-arah-pematuhan-mandatori.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "On 5 January 2026, PM Anwar also said the e-invoice exemption was expanded from RM1 million to RM1.5 million, which supersedes the card's RM1 million framing. Source: PMO, 5 January 2026, https://www.pmo.gov.my/ms/ucapanterkini/perhimpunan-bulanan-yab-perdana-menteri-bersama-warga-jabatan-perdana-menteri-bagi-bulan-januari-amanat-tahun-2026/",
+    "LHDN's current FAQ states taxpayers with up to RM5 million turnover have interim relaxation until 31 December 2027, and during relaxation taxpayers are still required to submit consolidated e-invoices monthly. Source: LHDN FAQ, https://www.hasil.gov.my/media/0xqitc2t/lhdnm-e-invoice-general-faqs.pdf",
+    "LHDN's 30 July 2025 statement says the 5,800 taxpayers reporting RM484 million produced RM82 million in additional tax revenue; the analysis omits the RM82 million outcome. Source: LHDN HASiL/2025/07/30-64, https://www.hasil.gov.my/media/kgvbwbo4/20250730_kenyataan-media-hasil-30-julai-2025_hasil-mengenalpasti-pembayar-cukai-tidak-patuh-berdasarkan-semakan-e-invois.pdf",
+    "LHDN's own Q&A cautions that e-invoice alone cannot fully eliminate the shadow economy or cash-based economy because cash preference, low tax awareness and informal business practices also matter. Source: LHDN SPK 2025 Q&A, https://www.hasil.gov.my/media/azjeuupj/kompilasi-soalan-dan-jawapan-spk-2025-bagi-siri-3-29-oktober-2025-topik-e-invois-persediaan-strategik-ke-arah-pematuhan-mandatori.pdf",
+    "By 11 February 2026, LHDN reportedly said e-invoicing had exceeded one billion transactions and involved 200,000 taxpayers, making the 22 December 2025 figure accurate but no longer the latest. Source: Astro Awani, 11 February 2026, https://www.astroawani.com/berita-malaysia/pelaksanaan-e-invois-catat-lebih-satu-bilion-urus-niaga-libatkan-200000-pembayar-cukai-lhdn"
+  ],
+  "source_assessment": "The original analysis cites many outlets, but most are secondary media or commercial summaries. Primary sources are available and should have been foregrounded: PMO verbatim speeches, LHDN media statements, LHDN FAQ and LHDN education/Q&A materials. The political and business-relief side is represented through PMO and SAMENTA, but there is little independent SME cost data, little tax practitioner analysis, no audited tax-gap methodology, and no primary source quantifying how much shadow-economy activity falls below the exemption threshold. Source diversity is therefore moderate-low despite a long source list.",
+  "overall_assessment": "The analysis gets several core dates and official e-invoice statistics right, especially the 6 December 2025 PM statement, the 22 December 2025 LHDN volume/compliance figures, and the July/November 2025 enforcement numbers. Its reliability drops where it converts estimates into hard findings, treats undeclared income as tax evasion value, and frames exemptions as making books invisible without proving the share of affected shadow-economy activity. The main fix is to replace polemical certainty with precise official wording and to flag the 5 January 2026 policy update."
+}
