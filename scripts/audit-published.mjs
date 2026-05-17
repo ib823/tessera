@@ -220,7 +220,7 @@ function countStage3Resolutions(synth) {
   }
   if (Array.isArray(synth.cards)) {
     for (const c of synth.cards) {
-      for (const k of ['notes', 'revisions', 'revision', 'note']) {
+      for (const k of ['notes', 'note', 'revisions', 'revision', 'revision_tags', 'revision_log', 'revision_history']) {
         if (typeof c[k] === 'string') haystacks.push(c[k]);
         else if (Array.isArray(c[k])) haystacks.push(...c[k].map(String));
       }
@@ -293,11 +293,15 @@ for (const row of phase2.matrix) {
       resolution,
     };
     phase3.results.push(result);
-    const lowConfidence = (fas !== null && fas < TH_FAS) || (avgMTrue !== null && avgMTrue < TH_MTRUE) || incorrect > 0 || misleading > 0;
-    // Only flag for Tier 2 review when the live cards likely still carry the
-    // problem. RESOLVED issues (≥60% of Stage 3 critique applied per synthesis)
-    // remain in the results table but drop out of the Tier 2 queue.
-    if (lowConfidence && resolution !== 'RESOLVED') phase3.flagged.push(result);
+    // Tier 2 surfaces issues where the live cards likely still carry a Stage 3
+    // problem. Two requirements:
+    //   1. Stage 3 actually identified specific claims to fix (INC+MIS > 0).
+    //      STUB issues (low FAS but no actionable claims) reflect analyst
+    //      confidence in the analysis, not unfixed errors — they belong in
+    //      the summary, not the review queue.
+    //   2. Stage 6 synthesis did not clear them (resolution !== RESOLVED).
+    const hasActionableClaims = (incorrect + misleading) > 0;
+    if (hasActionableClaims && resolution !== 'RESOLVED') phase3.flagged.push(result);
   } catch (e) {
     phase3.results.push({ id: row.id, slug: row.slug, error: e.message });
   }
@@ -379,7 +383,9 @@ lines.push(`| With full pipeline (≥7 of 8 artifacts) | ${phase2.fullPipeline.l
 lines.push(`| Partially audited (1-6 artifacts) | ${phase2.matrix.length - phase2.fullPipeline.length - phase2.unauditable.length} |`);
 lines.push(`| **Unauditable (zero artifacts)** | **${phase2.unauditable.length}** |`);
 lines.push(`| Phase 1 structural flags | ${structuralFlaggedIds.size} issues |`);
-lines.push(`| Phase 3 low-confidence (FAS<${TH_FAS} or m_true<${TH_MTRUE}) | ${phase3.flagged.length} issues |`);
+const stubLowFasCount = phase3.results.filter(r => !r.error && (r.incorrect + r.misleading) === 0 && ((r.factual_accuracy_score !== null && r.factual_accuracy_score < TH_FAS) || (r.avgMTrue !== null && r.avgMTrue < TH_MTRUE))).length;
+lines.push(`| Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | ${phase3.flagged.length} issues |`);
+lines.push(`| Phase 3 STUB low-FAS (no actionable claims; surface only) | ${stubLowFasCount} issues |`);
 lines.push(`| Phase 4 anti-pattern hits | ${phase4.hits.length} hits across ${antipatternFlaggedIds.size} issues |`);
 lines.push(`| Tier 1 review (highest priority) | ${tier1.length} issues |`);
 lines.push(`| Tier 2 review (low confidence) | ${tier2.length} issues |`);

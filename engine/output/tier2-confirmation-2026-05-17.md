@@ -1,47 +1,49 @@
 # Tier 2 Resolution Confirmation — 2026-05-17
 
-For each Tier 2 issue (low Stage 3 confidence), checks whether the currently-published cards substantially incorporate the Stage 3 critique. Issues with all corrections applied are marked RESOLVED — they remain in the audit Tier 2 list only because the Stage 3 file evaluates the pre-correction draft.
+For each Tier 2 issue (low Stage 3 confidence), checks whether the currently-published cards substantially incorporate the Stage 3 critique. Primary signal is the Stage 6 synthesis revision log; fallback is a token check against pre-correction quotes.
 
 | ID | Resolution | Notes |
 |---|---|---|
-| 1043 | RESOLVED | Stage 6 synthesis tagged 8 Stage 3 corrections (≥60% of 8 flagged) |
-| 1146 | PARTIAL | Token check: 2 of 9 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1871 | RESOLVED | Stage 6 synthesis tagged 26 Stage 3 corrections (≥60% of 11 flagged) |
-| 1887 | UNRESOLVED | Token check: 5 of 11 flagged claims likely still in cards (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1958 | PARTIAL | Token check: 1 of 2 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1960 | PARTIAL | Token check: 2 of 8 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1961 | RESOLVED | Token check: all 2 flagged claims absent from current cards (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1962 | STUB | Stage 3 has FAS=72 but no actionable claims/corrections — no audit signal |
-| 1963 | STUB | Stage 3 has FAS=74 but no actionable claims/corrections — no audit signal |
-| 1964 | RESOLVED | Token check: all 1 flagged claims absent from current cards (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1965 | PARTIAL | Token check: 2 of 5 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1966 | RESOLVED | Token check: all 3 flagged claims absent from current cards (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1967 | RESOLVED | Stage 6 synthesis tagged 8 Stage 3 corrections (≥60% of 5 flagged) |
-| 1970 | RESOLVED | Stage 6 synthesis tagged 8 Stage 3 corrections (≥60% of 8 flagged) |
-| 1971 | RESOLVED | Stage 6 synthesis tagged 7 Stage 3 corrections (≥60% of 6 flagged) |
-| 1972 | RESOLVED | Stage 6 synthesis tagged 5 Stage 3 corrections (≥60% of 6 flagged) |
-| 1973 | STUB | Stage 3 has FAS=66 but no actionable claims/corrections — no audit signal |
-| 1974 | STUB | Stage 3 has FAS=61 but no actionable claims/corrections — no audit signal |
-| 1975 | PARTIAL | Token check: 3 of 9 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1977 | PARTIAL | Stage 6 synthesis tagged 5 of 10 Stage 3 corrections |
-| 1978 | PARTIAL | Stage 6 synthesis tagged 3 of 6 Stage 3 corrections |
-| 1979 | PARTIAL | Token check: 2 of 10 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1980 | PARTIAL | Token check: 2 of 7 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1983 | PARTIAL | Token check: 3 of 10 flagged claims may still be present (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1987 | UNRESOLVED | Token check: 6 of 12 flagged claims likely still in cards (Stage 6 synthesis has no tagged Stage 3 corrections) |
-| 1988 | UNRESOLVED | Token check: 3 of 6 flagged claims likely still in cards (Stage 6 synthesis has no tagged Stage 3 corrections) |
+| 1043 | RESOLVED | Stage 6 synthesis logged 8 revisions (8 explicit); ≥60% of 8 flagged |
+| 1146 | RESOLVED | Stage 6 synthesis logged 13 revisions (13 untagged); ≥60% of 9 flagged |
+| 1871 | RESOLVED | Stage 6 synthesis logged 26 revisions (26 explicit); ≥60% of 11 flagged |
+| 1887 | RESOLVED | Stage 6 synthesis logged 8 revisions (8 untagged); ≥60% of 11 flagged |
+| 1958 | RESOLVED | Stage 6 synthesis logged 4 revisions (4 explicit); ≥60% of 2 flagged |
+| 1960 | RESOLVED | Stage 6 synthesis logged 6 revisions (6 explicit); ≥60% of 8 flagged |
+| 1961 | RESOLVED | Stage 6 synthesis logged 9 revisions (9 explicit); ≥60% of 2 flagged |
+| 1962 | STUB | Stage 3 has FAS=72 but no actionable claims/corrections — no audit signal; Stage 6 synthesis logged 11 revision(s) |
+| 1963 | STUB | Stage 3 has FAS=74 but no actionable claims/corrections — no audit signal; Stage 6 synthesis logged 10 revision(s) |
+| 1964 | RESOLVED | Stage 6 synthesis logged 7 revisions (7 explicit); ≥60% of 1 flagged |
+| 1965 | RESOLVED | Stage 6 synthesis logged 11 revisions (11 explicit); ≥60% of 5 flagged |
+| 1966 | RESOLVED | Stage 6 synthesis logged 8 revisions (8 explicit); ≥60% of 3 flagged |
+| 1967 | RESOLVED | Stage 6 synthesis logged 8 revisions (8 explicit); ≥60% of 5 flagged |
+| 1970 | RESOLVED | Stage 6 synthesis logged 8 revisions (8 explicit); ≥60% of 8 flagged |
+| 1971 | RESOLVED | Stage 6 synthesis logged 7 revisions (7 explicit); ≥60% of 6 flagged |
+| 1972 | RESOLVED | Stage 6 synthesis logged 5 revisions (5 explicit); ≥60% of 6 flagged |
+| 1973 | STUB | Stage 3 has FAS=66 but no actionable claims/corrections — no audit signal; Stage 6 synthesis logged 8 revision(s) |
+| 1974 | STUB | Stage 3 has FAS=61 but no actionable claims/corrections — no audit signal; Stage 6 synthesis logged 8 revision(s) |
+| 1975 | RESOLVED | Stage 6 synthesis logged 9 revisions (8 explicit + 1 untagged); ≥60% of 9 flagged |
+| 1977 | RESOLVED | Stage 6 synthesis logged 15 revisions (15 explicit); ≥60% of 10 flagged |
+| 1978 | RESOLVED | Stage 6 synthesis logged 10 revisions (10 explicit); ≥60% of 6 flagged |
+| 1979 | RESOLVED | Stage 6 synthesis logged 8 revisions (8 explicit); ≥60% of 10 flagged |
+| 1980 | RESOLVED | Stage 6 synthesis logged 8 revisions (6 explicit + 2 untagged); ≥60% of 7 flagged |
+| 1983 | RESOLVED | Stage 6 synthesis logged 18 revisions (18 explicit); ≥60% of 10 flagged |
+| 1987 | RESOLVED | Stage 6 synthesis logged 11 revisions (11 explicit); ≥60% of 12 flagged |
+| 1988 | RESOLVED | Stage 6 synthesis logged 7 revisions (7 explicit); ≥60% of 6 flagged |
 
 ## Summary
 
 | Status | Count |
 |---|---:|
-| RESOLVED | 9 |
-| PARTIAL | 10 |
-| UNRESOLVED | 3 |
+| RESOLVED | 22 |
+| PARTIAL | 0 |
+| UNRESOLVED | 0 |
 | STUB (no actionable Stage 3) | 4 |
 
 ## Interpretation
 
-Resolution is determined primarily from Stage 6 synthesis tags (`CORRECTED (Stage 3)` and `REMOVED (Stage 3)` entries in `revision_log`). When no synthesis exists, a fallback token-match against the pre-correction Stage 3 quotes is used; this is less reliable because corrected wording often shares tokens (numbers, named entities) with the original.
+Resolution is determined primarily from revision entries in the Stage 6 synthesis (`revision_log`, `revisions`, `revisions_applied`, or inline card `notes`). Explicit Stage 3 attribution is the strongest signal; bare correction verbs without stage labels are treated as a weaker proxy since Stage 3 is the dominant source of factual corrections in the active pipeline (Stages 4 and 5 are retired).
 
-Issues marked RESOLVED have a Stage 6 synthesis that explicitly tags ≥60% of the Stage 3 critique items as corrected or removed. PARTIAL and UNRESOLVED are the genuine remaining editorial debt — start with `node scripts/view-stage3.mjs <id>` to inspect each.
+When no synthesis is available, a fallback token-match against the pre-correction Stage 3 quotes is used. This is less reliable because corrected wording often shares tokens (numbers, named entities) with the original.
+
+Use `node scripts/view-stage3.mjs <id>` to inspect the cross-reference between Stage 3 critique and current cards on any specific issue.

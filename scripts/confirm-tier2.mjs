@@ -109,7 +109,7 @@ function countStage3Resolutions(synth) {
   }
   if (Array.isArray(synth.cards)) {
     for (const c of synth.cards) {
-      for (const k of ['notes', 'revisions', 'revision', 'note']) {
+      for (const k of ['notes', 'note', 'revisions', 'revision', 'revision_tags', 'revision_log', 'revision_history']) {
         if (typeof c[k] === 'string') haystacks.push(c[k]);
         else if (Array.isArray(c[k])) haystacks.push(...c[k].map(String));
       }

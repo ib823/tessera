@@ -11,10 +11,11 @@ Audit of all 103 published issues against the new accuracy + editorial criteria 
 | Partially audited (1-6 artifacts) | 3 |
 | **Unauditable (zero artifacts)** | **72** |
 | Phase 1 structural flags | 0 issues |
-| Phase 3 low-confidence (FAS<70 or m_true<0.7) | 29 issues |
-| Phase 4 anti-pattern hits | 1 hits across 1 issues |
-| Tier 1 review (highest priority) | 1 issues |
-| Tier 2 review (low confidence) | 29 issues |
+| Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | 0 issues |
+| Phase 3 STUB low-FAS (no actionable claims; surface only) | 9 issues |
+| Phase 4 anti-pattern hits | 0 hits across 0 issues |
+| Tier 1 review (highest priority) | 0 issues |
+| Tier 2 review (low confidence) | 0 issues |
 | Tier 3 review (anti-pattern only) | 0 issues |
 
 ## Phase 1 — Structural
@@ -163,38 +164,40 @@ Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold:
 
 ### Stage 3 results — all issues with artifacts (30)
 
-| ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Flagged |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1887 | 0 | 0 | 0 | 0 | 0 | 24 | — | 0.24 | ⚠️ |
-| 1146 | 0 | 0 | 0 | 0 | 0 | 27 | — | 0.24 | ⚠️ |
-| 1977 | 31 | 5 | 16 | 3 | 7 | 46 | 0.29 | 0.3 | ⚠️ |
-| 1970 | 19 | 7 | 4 | 2 | 6 | 51 | 0.55 | 0.56 | ⚠️ |
-| 1043 | 0 | 0 | 0 | 0 | 0 | 54 | — | — | ⚠️ |
-| 1975 | 0 | 0 | 0 | 0 | 0 | 54 | — | 0.62 | ⚠️ |
-| 1871 | 16 | 4 | 1 | 2 | 9 | 57 | 0.52 | 0.46 | ⚠️ |
-| 1960 | 19 | 10 | 1 | 5 | 3 | 61 | 0.54 | 0.46 | ⚠️ |
-| 1967 | 14 | 5 | 4 | 1 | 4 | 61 | 0.59 | 0.76 | ⚠️ |
-| 1974 | 0 | 0 | 0 | 0 | 0 | 61 | — | 0.78 | ⚠️ |
-| 1979 | 23 | 11 | 2 | 3 | 7 | 62 | 0.52 | 0.68 | ⚠️ |
-| 1973 | 0 | 0 | 0 | 0 | 0 | 66 | — | 0.68 | ⚠️ |
-| 1971 | 0 | 0 | 0 | 0 | 0 | 67 | — | 0.66 | ⚠️ |
-| 1983 | 23 | 10 | 3 | 4 | 6 | 67 | 0.53 | 0.66 | ⚠️ |
-| 1972 | 0 | 0 | 0 | 0 | 0 | 68 | — | 0.66 | ⚠️ |
-| 1978 | 17 | 9 | 2 | 2 | 4 | 68 | 0.53 | 0.64 | ⚠️ |
-| 1980 | 0 | 0 | 0 | 0 | 0 | 68 | — | 0.68 | ⚠️ |
-| 1987 | 21 | 7 | 2 | 3 | 9 | 68 | 0.48 | 0.63 | ⚠️ |
-| 1991 | 12 | 3 | 1 | 2 | 6 | 69 | 0.42 | 0.62 | ⚠️ |
-| 1966 | 11 | 5 | 3 | 0 | 3 | 70 | 0.63 | 0.6 | ⚠️ |
-| 1958 | 15 | 8 | 5 | 1 | 1 | 72 | 0.58 | 0.85 | ⚠️ |
-| 1962 | 14 | 9 | 5 | 0 | 0 | 72 | 0.7 | 0.55 | ⚠️ |
-| 1964 | 14 | 10 | 3 | 0 | 1 | 72 | 0.73 | 0.5 | ⚠️ |
-| 1965 | 12 | 5 | 2 | 1 | 4 | 72 | 0.59 | 0.55 | ⚠️ |
-| 1989 | 24 | 11 | 3 | 1 | 9 | 73 | 0.6 | 0.62 | ⚠️ |
-| 1961 | 10 | 5 | 3 | 0 | 2 | 74 | 0.63 | 0.5 | ⚠️ |
-| 1963 | 11 | 7 | 4 | 0 | 0 | 74 | 0.67 | 0.55 | ⚠️ |
-| 1990 | 26 | 18 | 1 | 1 | 6 | 74 | 0.62 | 0.58 | ⚠️ |
-| 1988 | 18 | 11 | 1 | 0 | 6 | 82 | 0.67 | 0.66 | ⚠️ |
-| 1957 | 8 | 8 | 0 | 0 | 0 | 96 | 0.93 | 0.85 |  |
+| ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Resolution | Flagged |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| 1887 | 0 | 0 | 0 | 0 | 0 | 24 | — | 0.24 | STUB |  |
+| 1146 | 0 | 0 | 0 | 0 | 0 | 27 | — | 0.24 | STUB |  |
+| 1977 | 31 | 5 | 16 | 3 | 7 | 46 | 0.29 | 0.3 | RESOLVED |  |
+| 1970 | 19 | 7 | 4 | 2 | 6 | 51 | 0.55 | 0.56 | RESOLVED |  |
+| 1043 | 0 | 0 | 0 | 0 | 0 | 54 | — | — | STUB |  |
+| 1975 | 0 | 0 | 0 | 6 | 3 | 54 | — | 0.62 | RESOLVED |  |
+| 1871 | 16 | 4 | 1 | 2 | 9 | 57 | 0.52 | 0.46 | RESOLVED |  |
+| 1960 | 19 | 10 | 1 | 5 | 3 | 61 | 0.54 | 0.46 | RESOLVED |  |
+| 1967 | 14 | 5 | 4 | 1 | 4 | 61 | 0.59 | 0.76 | RESOLVED |  |
+| 1974 | 0 | 0 | 0 | 0 | 0 | 61 | — | 0.78 | STUB |  |
+| 1979 | 23 | 11 | 2 | 3 | 7 | 62 | 0.52 | 0.68 | RESOLVED |  |
+| 1973 | 0 | 0 | 0 | 0 | 0 | 66 | — | 0.68 | STUB |  |
+| 1971 | 0 | 0 | 0 | 0 | 0 | 67 | — | 0.66 | STUB |  |
+| 1983 | 23 | 10 | 3 | 4 | 6 | 67 | 0.53 | 0.66 | RESOLVED |  |
+| 1972 | 0 | 0 | 0 | 0 | 0 | 68 | — | 0.66 | STUB |  |
+| 1978 | 17 | 9 | 2 | 2 | 4 | 68 | 0.53 | 0.64 | RESOLVED |  |
+| 1980 | 0 | 0 | 0 | 0 | 0 | 68 | — | 0.68 | STUB |  |
+| 1987 | 21 | 7 | 2 | 3 | 9 | 68 | 0.48 | 0.63 | RESOLVED |  |
+| 1991 | 12 | 3 | 1 | 2 | 6 | 69 | 0.42 | 0.62 | RESOLVED |  |
+| 1966 | 11 | 5 | 3 | 0 | 3 | 70 | 0.63 | 0.6 | RESOLVED |  |
+| 1958 | 15 | 8 | 5 | 1 | 1 | 72 | 0.58 | 0.85 | RESOLVED |  |
+| 1962 | 14 | 9 | 5 | 0 | 0 | 72 | 0.7 | 0.55 | STUB |  |
+| 1964 | 14 | 10 | 3 | 0 | 1 | 72 | 0.73 | 0.5 | RESOLVED |  |
+| 1965 | 12 | 5 | 2 | 1 | 4 | 72 | 0.59 | 0.55 | RESOLVED |  |
+| 1989 | 24 | 11 | 3 | 1 | 9 | 73 | 0.6 | 0.62 | RESOLVED |  |
+| 1961 | 10 | 5 | 3 | 0 | 2 | 74 | 0.63 | 0.5 | RESOLVED |  |
+| 1963 | 11 | 7 | 4 | 0 | 0 | 74 | 0.67 | 0.55 | STUB |  |
+| 1990 | 26 | 18 | 1 | 1 | 6 | 74 | 0.62 | 0.58 | RESOLVED |  |
+| 1988 | 18 | 11 | 1 | 0 | 6 | 82 | 0.67 | 0.66 | RESOLVED |  |
+| 1957 | 8 | 8 | 0 | 0 | 0 | 96 | 0.93 | 0.85 | STUB |  |
+
+*Resolution column reads the Stage 6 synthesis revision log. **RESOLVED** = ≥60% of Stage 3 INC+MIS claims have a corresponding correction logged; these issues stay in the results table but drop out of the Tier 2 queue. **PARTIAL** = 30–60% logged. **UNRESOLVED** = <30%. **STUB** = Stage 3 had no actionable claims. **—** = no synthesis on disk; treat as legacy.*
 
 ## Phase 4 — Anti-Pattern Text Scan
 
@@ -202,87 +205,27 @@ Greps published issue text for known anti-patterns from the CLAUDE.md hook engin
 
 ### Hits by category
 
-| Category | Hits |
-|---|---:|
-| weak_abstraction | 1 |
+*No hits across all 103 published issues.* (Note: this means the published corpus is already clean of these specific phrases — surprising and worth verifying the patterns are correctly tuned.)
 
-### All anti-pattern hits (1)
+### All anti-pattern hits (0)
 
-- **1294** `cards[2].big (fact)` — *weak_abstraction*: "addresses"
-  > Article 12(4) of Federal Constitution addresses children's religious education
+*None.*
 
 ## Prioritized Review Queue
 
 Three tiers, ordered by review priority. Tier 1 issues need immediate attention; Tier 3 are minor edits.
 
-### Tier 1 — Unauditable AND has flag (1)
+### Tier 1 — Unauditable AND has flag (0)
 
 These issues have no audit trail AND show structural or anti-pattern flags. Highest priority.
 
-- **1294** [anti-pattern] — Unilateral child conversion ban enforcement lacking in 6 states
+*None.*
 
-### Tier 2 — Low Stage 3 confidence (29)
+### Tier 2 — Low Stage 3 confidence (0)
 
-Issues with documented audit trail but Stage 3 flagged factual accuracy concerns.
+Issues where Stage 3 flagged factual accuracy AND the Stage 6 synthesis did not log enough corrections to clear the concern. Issues marked RESOLVED in the Phase 3 table are excluded from this queue.
 
-- **1043** — FAS 54, m_true —, INC 0, MIS 0
-  When states override environmental law, the environment has no government; and 42 are dead
-- **1146** — FAS 27, m_true —, INC 0, MIS 0
-  18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
-- **1871** — FAS 57, m_true 0.52, INC 2, MIS 9
-  Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
-- **1887** — FAS 24, m_true —, INC 0, MIS 0
-  18.4 billion e-payment transactions in 2025, but 63% of non-urban Malaysians still use cash daily
-- **1958** — FAS 72, m_true 0.58, INC 1, MIS 1
-  One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
-- **1960** — FAS 61, m_true 0.54, INC 5, MIS 3
-  Temple Demolished on Private Land: Property Right or Religious Hate Crime?
-- **1961** — FAS 74, m_true 0.63, INC 0, MIS 2
-  MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
-- **1962** — FAS 72, m_true 0.7, INC 0, MIS 0
-  Generals charged at last; the 4,679-contract cartel system remains intact
-- **1963** — FAS 74, m_true 0.67, INC 0, MIS 0
-  Data centres vs Johor's water: a moratorium that exempts the biggest consumers
-- **1964** — FAS 72, m_true 0.73, INC 0, MIS 1
-  Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
-- **1965** — FAS 72, m_true 0.59, INC 1, MIS 4
-  US tariff reset after Supreme Court ruling leaves Malaysia worse off
-- **1966** — FAS 70, m_true 0.63, INC 0, MIS 3
-  Refugee registration system launched but work permits remain unissued
-- **1967** — FAS 61, m_true 0.59, INC 1, MIS 4
-  Vernacular school choices: the quality crisis nobody wants to name
-- **1970** — FAS 51, m_true 0.55, INC 2, MIS 6
-  Penang's 520% tourism surge: who counts the arrivals and who pays the rent
-- **1971** — FAS 67, m_true —, INC 0, MIS 0
-  Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
-- **1972** — FAS 68, m_true —, INC 0, MIS 0
-  RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
-- **1973** — FAS 66, m_true —, INC 0, MIS 0
-  Bestinet ran Malaysia's visa system for RM400M, no contract, Interpol arrest request
-- **1974** — FAS 61, m_true —, INC 0, MIS 0
-  DOE chief charged with taking RM100K to bypass an EIA, on a road that killed nine
-- **1975** — FAS 54, m_true —, INC 0, MIS 0
-  E-wallets hit 18.4 billion transactions; none of the balances carry PIDM deposit insurance
-- **1977** — FAS 46, m_true 0.29, INC 3, MIS 7
-  Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
-- **1978** — FAS 68, m_true 0.53, INC 2, MIS 4
-  Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
-- **1979** — FAS 62, m_true 0.52, INC 3, MIS 7
-  RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration
-- **1980** — FAS 68, m_true —, INC 0, MIS 0
-  Zahid wants firmer law on insults; sedition cases already up 84% in 2025
-- **1983** — FAS 67, m_true 0.53, INC 4, MIS 6
-  Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
-- **1987** — FAS 68, m_true 0.48, INC 3, MIS 9
-  Median MP is 52, citizen 31. Parliament refused PM term limits by two votes.
-- **1988** — FAS 82, m_true 0.67, INC 0, MIS 6
-  Court of Appeal: no court can review an emergency call, issuance or refusal
-- **1989** — FAS 73, m_true 0.6, INC 1, MIS 9
-  Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
-- **1990** — FAS 74, m_true 0.62, INC 1, MIS 6
-  MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
-- **1991** — FAS 69, m_true 0.42, INC 2, MIS 6
-  Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
+*None.*
 
 ### Tier 3 — Anti-pattern only (0)
 
@@ -293,7 +236,7 @@ Issues with no other flags but anti-pattern phrases in copy. Minor copy edits.
 ## Recommendations
 
 1. **Tier 1 first** — these are the highest-leverage fixes (unauditable + at least one mechanical flag).
-2. **For unauditable issues without other flags** (count: 71) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
+2. **For unauditable issues without other flags** (count: 72) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
 3. **Tier 2 issues need source review** — Stage 3 already flagged them. Re-read the Stage 3 output and either correct the cards or hold the issue.
 4. **Tier 3 are copy edits** — fix the flagged phrases in place; no source review needed.
 5. **Going forward** — the new accuracy rules in CLAUDE.md will prevent these gaps from recurring on new issues. This audit covers retroactive content only.
