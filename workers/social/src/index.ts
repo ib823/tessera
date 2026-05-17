@@ -27,7 +27,7 @@ import {
 import { ingestTrends } from './trends';
 import { pickBestCard } from './scorer';
 import { shouldPostNow } from './scheduler';
-import { postCardToBluesky } from './bluesky';
+import { postCardToBluesky, type PostResult } from './bluesky';
 
 async function maybePost(env: Env, force = false): Promise<{ posted: boolean; reason: string; card?: SocialCard }> {
   if (!force) {
@@ -52,7 +52,7 @@ async function maybePost(env: Env, force = false): Promise<{ posted: boolean; re
     return { posted: false, reason: `${pick.reason} (considered=${pick.considered})` };
   }
 
-  let result;
+  let result: PostResult;
   try {
     result = await postCardToBluesky(env, pick.card);
   } catch (err) {
