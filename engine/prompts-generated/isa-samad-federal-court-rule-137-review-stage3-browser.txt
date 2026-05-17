@@ -1,0 +1,224 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "isa-samad-federal-court-rule-137-review",
+    "issue_id": "1992",
+    "brief": "engine/briefs/isa-samad-federal-court-rule-137-review.md",
+    "generated_at": "2026-05-17",
+    "revision_history": [
+      "v1 (2026-05-17): initial draft after Phase 1 brief approval. Frame rotated from the mainstream 'graft case nearly closed / fresh appeal window' binary to the structural question — when two named officers of the court (DPP and defence counsel) give irreconcilable accounts of what the apex court said in open session, what counts as the record? Verified the Najib SRC Rule 137 4-1 dismissal of 31 March 2023 with the dissenting judge citing breach of natural justice, which provides the historical denominator without characterising any sitting judge."
+    ],
+    "discipline": "Process-not-people. The Rule 137 application is live and pending — case management on 14 May 2026 was scheduled to fix the next substantive hearing date; that date is not in the public reporting at brief drafting. Cards do NOT adjudicate whether the 10 February 2026 bench did or did not invite defence submissions on merits and mitigation; both positions are reported as named on-record assertions by the DPP and the defence counsel. Cards do NOT characterise any sitting judge personally. Cards do NOT re-litigate Isa Samad's guilt — that has been ruled on three times across three courts and the live application is procedural. We DO report (a) the three-court roundtrip on the same nine charges, (b) the natural-justice dispute in the parties' own words, (c) the rarity standard for Rule 137 review with the Najib SRC 4-1 dismissal as denominator, and (d) the court's own order releasing the Court Recording and Transcription (CRT) to both sides."
+  },
+  "headline": "Apex court releases courtroom audio after a dispute over what its bench said.",
+  "context": "On 13 May 2026, the Federal Court adjourned former Felda chairman Isa Samad's conviction review. The defence counsel and the deputy public prosecutor gave conflicting accounts of what happened on 10 February. The bench ordered the courtroom audio released to both sides.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides.",
+      "sub": "The defence says the 10 February bench never invited it to submit on the merits. The prosecution says it did, and the defence declined.",
+      "sources": [
+        "The Star, 13 May 2026, 'Federal Court defers Isa Samad review bid, allows access to court transcripts': https://www.thestar.com.my/news/nation/2026/05/13/federal-court-defers-isa-samad-review-bid-allows-access-to-court-transcripts",
+        "Malay Mail, 13 May 2026, 'Federal Court adjourns Isa Samad's bid to review reinstated corruption conviction': https://www.malaymail.com/news/malaysia/2026/05/13/federal-court-adjourns-isa-samads-bid-to-review-reinstated-corruption-conviction/219771",
+        "Free Malaysia Today, 13 May 2026, 'Federal Court adjourns Isa Samad's bid to overturn conviction': https://www.freemalaysiatoday.com/category/nation/2026/05/13/federal-court-adjourns-isa-samads-bid-to-overturn-conviction",
+        "NST, 13 May 2026, 'Federal Court adjourns Isa Samad's review bid over corruption sentence': https://www.nst.com.my/news/nation/2026/05/1438521/federal-court-adjourns-isa-samads-review-bid-over-corruption-sentence",
+        "The Edge, 13 May 2026, 'Isa's conviction review adjourned over court recordings dispute': https://theedgemalaysia.com/node/803361"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, convict again 2026.",
+      "sub": "Each ruling concerned RM3.09 million in alleged kickbacks tied to Felda's RM160 million purchase of Merdeka Palace Hotel in Kuching in 2015.",
+      "sources": [
+        "Malay Mail, 3 February 2021, 'Former Felda chief Isa Samad convicted of nine corruption charges': https://www.malaymail.com/news/malaysia/2021/02/03/umnos-isa-samad-convicted-of-nine-corruption-charges/1946479",
+        "The Star, 6 March 2024, 'Court of Appeal acquits Mohd Isa Samad of corruption charges': https://www.thestar.com.my/news/nation/2024/03/06/court-of-appeal-acquits-mohd-isa-samad-of-corruption-charges",
+        "Malay Mail, 6 March 2024, 'Appeals Court acquits, discharges Isa Samad of RM3m corruption charges': https://www.malaymail.com/news/malaysia/2024/03/06/appeals-court-acquits-discharges-isa-samad-of-rm3m-corruption-charges/121709",
+        "Bernama, 10 February 2026, 'Federal Court Reinstates Isa Samad's Conviction And Sentence, Issues Warrant Of Committal': https://www.bernama.com/en/news.php?id=2522288",
+        "NST, 10 February 2026, 'Why the Federal Court reinstated Isa Samad's corruption conviction': https://www.nst.com.my/news/nation/2026/02/1375192/why-federal-court-reinstated-isa-samads-corruption-conviction",
+        "BenarNews, 6 March 2024, 'Malaysian court overturns graft conviction of state land agency's former chairman': https://www.benarnews.org/english/news/malaysian/felda-ex-chairman-conviction-overturned-03062024153628.html"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Defence counsel M Athimulan says the bench never invited him to submit on the merits. DPP Afzainizam Abdul Aziz says it did, and Athimulan declined.",
+      "sub": "Both stand on the record. The Chief Judge of Malaya ordered the courtroom audio of 5 and 10 February released to both sides on 13 May.",
+      "sources": [
+        "The Star, 13 May 2026, 'Federal Court defers Isa Samad review bid, allows access to court transcripts': https://www.thestar.com.my/news/nation/2026/05/13/federal-court-defers-isa-samad-review-bid-allows-access-to-court-transcripts",
+        "Malay Mail, 13 May 2026, 'Federal Court adjourns Isa Samad's bid to review reinstated corruption conviction': https://www.malaymail.com/news/malaysia/2026/05/13/federal-court-adjourns-isa-samads-bid-to-review-reinstated-corruption-conviction/219771",
+        "Free Malaysia Today, 13 May 2026, 'Federal Court adjourns Isa Samad's bid to overturn conviction': https://www.freemalaysiatoday.com/category/nation/2026/05/13/federal-court-adjourns-isa-samads-bid-to-overturn-conviction",
+        "NST, 13 May 2026, 'Federal Court adjourns Isa Samad's review bid over corruption sentence': https://www.nst.com.my/news/nation/2026/05/1438521/federal-court-adjourns-isa-samads-review-bid-over-corruption-sentence",
+        "The Edge, 13 May 2026, 'Isa's conviction review adjourned over court recordings dispute': https://theedgemalaysia.com/node/803361",
+        "The Star, 7 March 2026, 'Isa Samad files review against Federal Court's decision restoring corruption conviction, fine and jail term' (Rule 137 filing 4 March 2026, natural-justice ground): https://www.thestar.com.my/news/nation/2026/03/07/isa-samad-files-review-against-federal-court039s-decision-restoring-corruption-conviction-fine-and-jail-term"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "big": "Rule 137 reviews of an apex-court ruling are granted only in rare circumstances: lack of quorum, established bias, or integrity critically undermined.",
+      "sub": "Najib Razak's Rule 137 bid to revisit his SRC conviction was dismissed 4-1 on 31 March 2023. The dissenting judge cited breach of natural justice.",
+      "sources": [
+        "Rules of the Federal Court 1995, Rule 137 (P.U.(A) 376/1995): https://tcclaw.com.my/wp-content/uploads/2025/08/RULES-OF-THE-FEDERAL-COURT-1995.pdf",
+        "Cecil Abraham & Partners / Lexology, 'The Invocation of the Review Jurisdiction of the Federal Court of Malaysia' (rare and exceptional circumstances standard): https://www.lexology.com/library/detail.aspx?g=9edb0e1b-ea8a-4e8e-851d-4d003cbbf917",
+        "Joshua Wu Kai-Ming, '5 Things About The Review of Federal Court Decisions': https://joshuawu.my/5-things-about-the-review-of-federal-court-decisions/",
+        "Malay Mail, 30 March 2023, 'No more way out for Najib as apex court refuses SRC review': https://www.malaymail.com/news/malaysia/2023/03/30/no-more-way-out-for-najib-as-apex-court-refuses-src-review/62356",
+        "The Star, 31 March 2023, 'Najib loses bid to review Federal Court decision' (4-1 split, dissent on natural-justice grounds): https://www.thestar.com.my/news/nation/2023/03/31/najib-loses-bid-to-review-federal-court-decision",
+        "MalaysiaNow, 31 March 2023, 'Najib the author of his own misfortune, apex court says in dismissing bid for review': https://www.malaysianow.com/news/2023/03/31/najib-the-author-of-his-own-misfortune-apex-court-says-in-dismissing-bid-for-review",
+        "The Edge, March 2023, 'Apex court dismisses Najib's bid to review SRC conviction, sentence': https://theedgemalaysia.com/node/661571"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "When two officers of the court give irreconcilable accounts of what the apex court said in open session, the question is not who is right. It is why the routine record is not the record.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis grounded in: (a) the 13 May 2026 Federal Court order releasing the Court Recording and Transcription to both sides because the paper minute could not by itself resolve the dispute between the named DPP and the named defence counsel (sources cited on Card 3, the Governance fact); (b) Federal Constitution Article 5(1) and the audi alteram partem doctrine; (c) Rule 137 jurisprudence on 'rare and exceptional' circumstances including critical undermining of decision integrity (Cecil Abraham & Partners memo cited above)."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like a referee's match report contested by both teams, where the only neutral arbiter left is the video.",
+      "sub": "The Federal Court has now ordered the audio of two earlier hearings released so both sides, and the next bench, can hear what the previous bench said.",
+      "sources": [
+        "Editorial analogy. Anchored to the 13 May 2026 Federal Court order releasing the CRT for 5 February and 10 February to both parties (sources cited on the hook and Card 3, the Governance fact)."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about whether Isa is guilty. It is about whether the third round was heard.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Verified facts: High Court conviction 3 February 2021 (Malay Mail, The Vibes); Court of Appeal acquittal 6 March 2024 (The Star, Malay Mail, BenarNews); Federal Court reinstatement 10 February 2026 (Bernama, NST, FCC Times); Rule 137 review live, adjourned 13 May 2026 (The Star, Malay Mail, FMT, NST, Edge — all 13 May)."
+      ]
+    }
+  ],
+  "sources": "Bernama, NST, The Star, Malay Mail, Free Malaysia Today, The Edge, Malaysiakini, Sinar Daily, The Vibes, BenarNews, FCC Times, MalaysiaNow — plus statutory and procedural primary text (Rules of the Federal Court 1995 Rule 137; MACC Act 2009 Sections 16, 17(a), 50(1); Federal Constitution Articles 5(1), 8(1), 145; Courts of Judicature Act 1964 Sections 87 and 92) and practitioner notes on Rule 137 jurisprudence (Cecil Abraham & Partners via Lexology; Joshua Wu Kai-Ming; Neoh Kai Sheng).",
+  "confidence": "High on the structural facts of all three rulings: High Court conviction 3 February 2021 (6 years jail + RM15.45M fine, nine counts) — confirmed Malay Mail + The Vibes contemporaneous reports; Court of Appeal unanimous acquittal 6 March 2024 (Justice Vazeer Alam Mydin Meera leading panel, prosecutorial-inconsistency reasoning) — confirmed The Star, Malay Mail, BenarNews; Federal Court reinstatement 10 February 2026 (panel chaired by Justice Nordin Hassan, prosecution appeal allowed, warrant of committal issued, MACC Act s.50(1) presumption invoked) — confirmed Bernama, NST, FCC Times, Sinar Daily, The Edge, Malaysiakini. High on the underlying transaction: FICSB purchase of Merdeka Palace Hotel, Kuching, RM160M, August 2015. High on the alleged gratification: RM3.09 million across nine counts (charge particulars). High on the 13 May 2026 review hearing: panel composition (Hashim Hamzah, Azizah Nawawi, Collin Lawrence Sequerah), the named officers' positions (M Athimulan defence, Afzainizam Abdul Aziz prosecution), and the CRT release order — all five 13 May outlets agree. High on the Najib SRC Rule 137 outcome: 4-1 dismissal 31 March 2023 with dissent on natural-justice grounds (RM210M fine, 12-year sentence) — confirmed The Star, Malay Mail, MalaysiaNow, The Edge. Medium on the Rule 137 'rare and exceptional' standard: practitioner notes (Cecil Abraham & Partners; Joshua Wu Kai-Ming; Neoh Kai Sheng) consistent on the doctrinal frame (quorum, bias, integrity critically undermined) — but the formal case-law citations are secondary; the Rules of the Federal Court 1995 text itself is the primary anchor. Medium on the next substantive hearing date: case management was scheduled for 14 May 2026 to fix it; the date is not in the public reporting accessed at brief drafting (17 May 2026).",
+  "lenses_used": ["Legal", "Governance", "Historical"],
+  "lenses_applicable_but_unused": ["Political", "Rights"],
+  "needs_verification": [
+    "Whether the written grounds of judgment for the 10 February 2026 Federal Court ruling are publicly hosted; if so, Stage 3 should retrieve the natural-justice / submission-invitation portion verbatim to compare against the on-record positions of the DPP and defence on 13 May.",
+    "The new substantive hearing date for the Rule 137 review, fixed at the 14 May 2026 case management. Not in the 13 May reporting consulted. Stage 3 should check post-14-May outlets and Bernama for the date.",
+    "Whether the CRT released on 13 May 2026 has subsequently been entered into the public record by either party. The order was to supply both parties; whether the audio or its transcript reaches a public filing depends on what the parties do with it.",
+    "Confirmation of the precise charges section under the MACC Act 2009 — the 13 May reporting and the 10 February Federal Court reasoning both reference MACC Act s.50(1) presumption; the substantive charges have been variously summarised as 'corrupt acceptance' under MACC Act s.16/s.17(a) but Stage 3 should anchor on the original charge sheet language if accessible.",
+    "The specific value composition of the RM15.45M fine — High Court framing reported it as a fine in the order of '5× the gratification amount,' which suggests MACC Act statutory sentencing structure, but the precise formula was not directly cited in any single source accessed."
+  ],
+  "source_notes": "Source spectrum is balanced: government-aligned (Bernama national news agency, NST, The Star) + centrist independent (Malay Mail, FMT, The Edge, Sinar Daily, Malaysiakini, The Vibes) + international (BenarNews, FCC Times) + practitioner (Cecil Abraham & Partners memo via Lexology, Joshua Wu Kai-Ming blog, Neoh Kai Sheng) all in alignment on the structural facts. Three minor contradictions noted in the brief and resolved before drafting: (1) bribery amount rounded variably (RM3M, RM3.09M, RM3.1M) — cards use RM3.09 million, the High Court particulars figure; (2) the 'restored 2018 conviction' phrasing in some Bernama summary lines conflates the 2018 charging date with the 2021 conviction date — cards use 2021; (3) the Rule 137 filing date is 4 March 2026 (per The Star and FMT contemporaneous), with The Star reporting on 7 March — cards refer to the March 2026 filing without disputing the exact day. The single information gap that could meaningfully affect a card claim is the written grounds of the 10 February 2026 ruling, which would establish the apex court's own contemporaneous record of whether defence submissions were invited — Stage 3 should prioritise retrieving these if released."
+}
