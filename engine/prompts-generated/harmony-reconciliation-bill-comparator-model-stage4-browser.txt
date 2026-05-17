@@ -1,0 +1,245 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "harmony-reconciliation-bill-comparator-model",
+    "issue_id": "1991",
+    "brief": "engine/briefs/harmony-reconciliation-bill-comparator-model.md",
+    "generated_at": "2026-05-17",
+    "revision_history": [
+      "v1 (2026-05-17): initial draft after Phase 1 brief approval. Stage-1 frame is the comparator-selection signal: each of the three countries named in the 7 April 2026 Putrajaya announcement (Singapore MRHA, Australia RDA s.18C, Zimbabwe NPRC) carries a public track record that the announcement framing does not address. Cards anchor on (a) Malaysia's 14-year four-attempt pattern across two PMs, (b) the Singapore MRHA's never-used-restraining-order record since 1992, (c) the Zimbabwe NPRC's 10-year mandate ending without Gukurahundi outcome. Australia 18C is named in the hook and cited in the brief but not card-elaborated for length-budget reasons; it is the lightest of the three lessons (civil conciliation, no criminal penalty) and adds less to the editorial leverage than Singapore (threat-not-used) or Zimbabwe (will-not-framework).",
+      "v1.1 (2026-05-17): self-review pass converted two passive constructions to active voice without changing the evidentiary calibration. Card 2 big: 'Not one restraining order under it has been publicly recorded' → 'No restraining order under it appears in the public record' (preserves the evidentiary status of a 2007 affirmative disclosure + absence of subsequent record). Card 4 sub: 'The failure has been traced to political will, not framework design' → 'Independent reviews trace the failure to political will, not framework design' (names the actor explicitly). Card 4 sub also tightened from 'the 1983–87 atrocities the commission was constituted to address' to 'the atrocities of 1983–87' — Card 4 big already establishes the commission-Gukurahundi link, so the sub does not need to repeat it."
+    ],
+    "discipline": "3R sensitivity — HIGH. Reform/critique is directed at process (14-year non-delivery, comparator-selection signal, four-draft pattern) and at named statutes, not at any community, faith, or royal institution. No characterisation of any religion or race. The 2014 NUCC drafts' Article 153 savings clause is noted in the brief; cards do not adjudicate the constitutional positions. The Sedition Act survives is presented as a verified fact (Anwar Nov 2023 withdrawal of repeal pledge; AGC consolidated text), not as a partisan criticism."
+  },
+  "headline": "Putrajaya's 4th Harmony Bill draft cites Singapore, Australia, Zimbabwe.",
+  "context": "On 7 April 2026, National Unity Minister Aaron Ago Dagang said JPNIN had restarted drafting the National Harmony and Reconciliation Commission Bill, citing Singapore, Australia and Zimbabwe as models. It is the fourth draft in 14 years.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "On 7 April, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill: 'mediation over punishment'.",
+      "sub": "It is the fourth draft in 14 years. The earlier three were withdrawn, rejected or shelved. The three named comparators each have a track record worth reading.",
+      "sources": [
+        "Bernama, 7 April 2026, 'Bill to set up Harmony and Reconciliation Commission expected to be tabled this year': https://www.bernama.com/en/general/news.php?id=1814136",
+        "Malay Mail, 7 April 2026, 'Malaysia looks to Singapore, Australia, Zimbabwe for new harmony and reconciliation Bill, eyes mediation over punishment': https://www.malaymail.com/news/malaysia/2026/04/07/malaysia-looks-to-singapore-australia-zimbabwe-for-new-harmony-and-reconciliation-bill-eyes-mediation-over-punishment/215419",
+        "The Star, 7 April 2026, 'Putrajaya to revisit proposed national harmony bill, says Aaron': https://www.thestar.com.my/news/nation/2026/04/07/putrajaya-to-revisit-proposed-national-harmony-bill-says-aaron",
+        "FMT, 7 April 2026, 'Govt renews push for national harmony, reconciliation commission': https://www.freemalaysiatoday.com/category/nation/2026/04/07/govt-renews-push-for-national-harmony-reconciliation-commission",
+        "The Star, 8 April 2026 follow-up, 'Unity Bill to be revisited': https://www.thestar.com.my/news/nation/2026/04/08/unity-bill-to-be-revisited",
+        "Aaron Ago Dagang statement, summarised by Bernama: three drafts produced in 2015 by the National Unity Consultative Council (NHRB, NHRCB, RRHCB); NHRCB 'agreed in principle' 2019; Cabinet decided not to proceed April 2020; drafting restarted by JPNIN under the National Unity Ministry from early April 2026."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "big": "Najib pledged in 2012 to repeal the Sedition Act and replace it with a Harmony Act. Anwar pledged the same in 2018 and 2022.",
+      "sub": "The Sedition Act is still in force. CIJ recorded 36 sedition cases in 2025, an 84% rise from the year before.",
+      "sources": [
+        "Najib repeal pledge, 11 July 2012, announced in Putrajaya — covered contemporaneously by Bernama, Reuters, The Star, BBC. Najib publicly reversed the pledge in November 2014 after UMNO assembly pressure; the Act remained in force.",
+        "Pakatan Harapan 2018 election manifesto, Promise 27, p.62: 'The Pakatan Harapan Government will revoke the following laws: Sedition Act 1948...' — full text on Article 19 archive: https://www.article19.org/wp-content/uploads/2023/05/Sedition-Act-Repeal.pdf",
+        "Pakatan Harapan 2022 election manifesto, free-speech section, pledge to 'review and repeal provisions of acts that can be abused to restrict free speech' — covered by Benar News, Aliran, FIDH.",
+        "Madpet press release, November 2023: Anwar Ibrahim's PH-led coalition government publicly withdraws the Sedition Act repeal pledge and announces the Act will be retained for 3R cases — cross-cited by Aliran, Article 19, BenarNews (https://www.benarnews.org/english/news/malaysian/dissent-concerns-09062023141252.html).",
+        "CIJ Malaysia 2025 annual monitoring report: 36 Sedition Act cases in 2025 vs 19 in 2024 (+84%); 42 individuals investigated. Reported by FMT 10 December 2025 'Sedition Act cases up 84% in 2025, says CIJ': https://www.freemalaysiatoday.com/category/nation/2025/12/10/sedition-act-cases-up-84-in-2025-says-cij; cross-cited The Star focus piece 15 December 2025; corroborated by SUARAM Annual Report 2025 (233 investigations across restrictive-speech laws in 2025, up from 189).",
+        "Sedition Act 1948 (Revised 1969), Act 15, AGC consolidated text — in force.",
+        "T4A issue 1980 ('Zahid wants firmer law on insults; sedition cases already up 84% in 2025'), published 15 May 2026, uses the same CIJ figures."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Singapore's Maintenance of Religious Harmony Act came into force in 1992. No restraining order under it appears in the public record.",
+      "sub": "The Minister can silence priests, monks or imams inciting religious hostility, with up to 2 years jail on breach. The threat does the work.",
+      "sources": [
+        "Singapore Maintenance of Religious Harmony Act 1990 (Act 26 of 1990), in force 31 March 1992 — Singapore Statutes Online primary text: https://sso.agc.gov.sg/act/MRHA1990. Sections 8 and 9 (Minister for Home Affairs may issue restraining order against priests, monks, pastors, imams, elders, office-bearers and other persons in authority in religious groups, or against any other person, for causing enmity/hatred between religious groups, promoting a political cause under religious guise, or exciting disaffection against the President or Government).",
+        "MRHA Section 16: criminal penalty on breach of restraining order — up to S$10,000 fine and/or 2 years imprisonment for first offence; up to S$20,000 and/or 3 years for repeat. Singapore Statutes Online.",
+        "Singapore Parliament, written answer of Minister for Home Affairs, 12 February 2007: no restraining order had been issued under the MRHA since the Act came into force. Disclosed publicly via Hansard, cross-summarised by Wikipedia 'Maintenance of Religious Harmony Act' (article current to 2024 contains no subsequent record of any restraining order being issued). Wikipedia URL: https://en.wikipedia.org/wiki/Maintenance_of_Religious_Harmony_Act",
+        "Maintenance of Religious Harmony (Amendment) Act 25 of 2019 — added online-content takedown power and removed the 14-day notice period prior to issuance. Singapore Parliament Bill 25/2019: https://www.parliament.gov.sg/docs/default-source/default-document-library/maintenance-of-religious-harmony-(amendment)-bill-25-2019.pdf",
+        "Card phrasing 'publicly recorded' is deliberately careful: the 2007 parliamentary disclosure is the most recent affirmative count we located; absence of subsequent record is consistent with the Wikipedia-summarised history through 2024, but Stage 3 should chase any later Hansard reply to firm this up."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Zimbabwe's National Peace and Reconciliation Commission ran a 10-year mandate that ended in 2023 with no Gukurahundi reconciliation outcome.",
+      "sub": "Over 20,000 died in the atrocities of 1983–87. Independent reviews trace the failure to political will, not framework design.",
+      "sources": [
+        "Constitution of Zimbabwe Amendment (No. 20) Act 2013, Chapter 12, sections 251–253: establishment of the NPRC with a 10-year statutory term.",
+        "National Peace and Reconciliation Commission Act, Chapter 10:32 of 2018 — operationalising statute, full text via Veritas Zimbabwe.",
+        "NPRC Annual Report 2023, Veritas Zimbabwe: https://www.veritaszim.net/sites/veritas_d/files/NPRC%20ANNUAL%20REPORT%202023.pdf — covers the final year of operation; programs centred on complaints handling, conflict prevention, healing and reconciliation, victim support; no Gukurahundi-specific reconciliation outcome reported.",
+        "Newsday Zimbabwe, 'Peace commission's term ends in failure': https://www.newsday.co.zw/local-news/article/200016516/peace-commissions-term-ends-in-failure — describes the NPRC's term as ending without delivery on its core mandate.",
+        "United Zimbabwe Alliance, NPRC review 2023, https://unitedzimbabwe.org/blog/review-of-NPRC — attributes failure to lack of independence, political interference, and resource constraints.",
+        "African Security Review Vol 31 No 3, 2022, 'The Zimbabwe Peace and Reconciliation Commission: Towards an integrated national infrastructure for peace?': https://www.tandfonline.com/doi/full/10.1080/10246029.2022.2086475 — academic assessment.",
+        "Kujenga Amani / Social Science Research Council, 'One Year After: Has the National Peace and Reconciliation Commission Act Failed Zimbabweans?', 7 February 2019: https://kujenga-amani.ssrc.org/2019/02/07/one-year-after-has-the-national-peace-and-reconciliation-commission-act-failed-zimbabweans/ — early documentation of the political-will gap.",
+        "Catholic Commission for Justice and Peace in Zimbabwe (CCJPZ) and Legal Resources Foundation joint report 1997, 'Breaking the Silence, Building True Peace: A report on the disturbances in Matabeleland and the Midlands, 1980–1988': 20,000+ death estimate for Gukurahundi atrocities of 1983–1987. Reaffirmed in International Association of Genocide Scholars publications and the Catholic bishops' 1997 commemorative documentation."
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "After four drafts, the Harmony Bill exists. After 14 years, the Sedition Act repeal does not.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis grounded in: (a) the four Bill iterations as detailed in the brief — 2012 Najib announcement, 2014–2015 NUCC three drafts, 2019 'in principle' Cabinet, April 2020 reversal, 7 April 2026 redraft (Aaron Ago Dagang statement; multi-outlet 7 April 2026 coverage); (b) the Sedition Act 1948 remaining in force, with Anwar's November 2023 public withdrawal of the 2018 and 2022 repeal pledges (Madpet, Aliran, Article 19, BenarNews); (c) the contrast — bill drafted four times, repeal pledged twice and withdrawn twice. The reframe restructures what the issue is *about*: not the comparator choice the announcement foregrounds, but the law it would not replace.",
+        "Rhetorical-shape check: parallel-structure form ('After X, Y. After Z, not-Y.') — distinct from the question-form ('The question is not X. It is Y.') used in T4A issues 1982 and 1989, and distinct from the declarative-pair form used in T4A issue 1980. Validator's reframe-template-drift check should pass."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Singapore's Act sits unused. Zimbabwe's commission delivered nothing. Both turned on political will. The Malaysian draft does not propose to repeal the Sedition Act.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Verified anchors: Singapore MRHA never publicly recorded a restraining order since 1992 (Singapore Parliament 12 Feb 2007 written answer; subsequent silence through 2024); Zimbabwe NPRC 10-year mandate ended in 2023 without Gukurahundi outcome (Veritas Zimbabwe annual reports, Newsday, United Zimbabwe Alliance, African Security Review); Anwar Nov 2023 public withdrawal of Sedition Act repeal pledge confirms the 2026 SKRN Bill drafting is occurring without statutory repeal of the existing punitive regime (Madpet, BenarNews, Aliran, Article 19).",
+        "Kicker test (CLAUDE.md §7.6): last sentence 'The Malaysian draft does not propose to repeal the Sedition Act' — WhatsApp-paste-able as a standalone editorial line; subtraction test passes (if the reader remembers only this sentence, the issue's central finding lands).",
+        "Subtraction note: 'political will' is the elevated abstraction the third sentence rests on; it carries the comparator-derived lesson (Singapore's threat is credible because the political will is there to back it; Zimbabwe's commission collapsed because the will was not). This is the brief's central editorial discovery."
+      ]
+    }
+  ],
+  "sources": "Primary statutory text: Singapore Statutes Online (MRHA 1990, MRHA Amendment 25/2019, MRHA Restraining Orders Regulations 2022, MRHA 2025 Bill 2/2025); AustLII (Racial Discrimination Act 1975 ss.18B-F); Constitution of Zimbabwe Amendment 20/2013, NPRC Act Chapter 10:32 of 2018; Federal Constitution of Malaysia (Art. 3, 8, 10, 11, 153); Sedition Act 1948 (Act 15, AGC consolidated); Penal Code Act 574; Mamat bin Daud v Government of Malaysia [1988] 1 MLJ 119; Pakatan Harapan 2018 and 2022 manifestos. Secondary: Bernama 7-Apr-2026, Malay Mail 7-Apr-2026, The Star 7+8-Apr-2026, FMT 7-Apr-2026 + 10-Dec-2025; CIJ Malaysia 2025 annual review; SUARAM Annual Report 2025; Malaysian Bar press release (Ezri Abdul Wahab, 13-Mar-2026); Madpet Nov 2023 press release; Aliran; Article 19; BenarNews; Civicus Monitor. Comparator track-record sources: Wikipedia MRHA (citing Singapore Parliament 12-Feb-2007 written answer); Veritas Zimbabwe NPRC Annual Reports 2018–2023; Newsday Zimbabwe; United Zimbabwe Alliance; Tandfonline African Security Review 2022; Kujenga Amani / SSRC 2019; CCJPZ + Legal Resources Foundation 1997 'Breaking the Silence' (Gukurahundi death estimate).",
+  "confidence": "High on the source event facts: date (7 April 2026), location (Putrajaya), speaker (National Unity Minister Aaron Ago Dagang), citation of three comparators (Singapore MRHA, Australian Human Rights Commission framework under RDA s.18C, Zimbabwe NPRC), and announced framing ('mediation over punishment') — multi-outlet, including Bernama as government press. High on the history: four iterations of Harmony framework attempts (2012 Najib announcement, 2014–2015 NUCC three drafts, 2019 'agreed in principle', April 2020 non-proceeding, 7 April 2026 redraft) — confirmed in Aaron's 7-April-2026 statement and in contemporaneous reporting of each iteration. High on the Sedition Act remaining: Act in force, Anwar Nov 2023 public withdrawal of repeal pledge (Madpet, BenarNews, Aliran, Article 19), CIJ 2025 figures (36 cases, +84%, 233 investigations across restrictive-speech laws). High on Singapore MRHA statutory text: primary text from Singapore Statutes Online. High on Zimbabwe NPRC statutory framework and mandate-end: Constitution Amendment 20/2013, NPRC Act 10:32/2018, Veritas Zimbabwe annual reports + Newsday end-of-term coverage. Medium on the exact 'zero restraining orders' count in Singapore: the affirmative parliamentary disclosure is dated 12 February 2007; the absence of any subsequent issuance is consistent with the Wikipedia summary current to 2024 and with absence of any contradicting source in our search, but Stage 3 should chase any post-2007 Hansard reply that updates the count — card phrasing 'publicly recorded' is deliberately calibrated to this. Medium on the Gukurahundi death estimate: 20,000+ is the figure cited by the Catholic Commission for Justice and Peace in Zimbabwe + Legal Resources Foundation 1997 report 'Breaking the Silence, Building True Peace' — widely adopted, but estimates range up to 30,000 in some sources; '20,000 or more' is the lower-bound canonical figure. Medium on the SKRN 2026 redraft's content: Aaron Ago Dagang's 7-April-2026 statement describes the proposed Commission's mediation/early-intervention emphasis but no draft text has yet been circulated publicly through JPNIN consultations; Stage 3 may chase whether any draft has been shared with NGOs.",
+  "lenses_used": ["Historical", "Legal", "Political"],
+  "lenses_applicable_but_unused": ["Governance", "Rights", "Regional"],
+  "needs_verification": [
+    "Any Singapore Parliament Hansard written answer post-12 February 2007 that updates the MRHA restraining-order count from zero. The 2019 amendments to the MRHA were debated extensively and may have included a fresh disclosure. Stage 3 should chase the September 2019 Parliamentary debate transcripts.",
+    "Whether the 2026 SKRN Bill draft, as currently being circulated by JPNIN to stakeholders, preserves the 2014 NUCC draft's explicit Article 153 savings clause. The brief notes this as a 2014 design feature; the 2026 draft text is not publicly available as of writing.",
+    "Whether Singapore's Maintenance of Racial Harmony Act 2025 (Act 8/2025, first reading 7 January 2025) has yet had any restraining order issued under it. The 2025 Act is a separate regime from the 1990 MRHA and is not part of the card claim; but if Stage 3 finds any RO activity under the 2025 Act, that would strengthen the 'threat does the work' framing in Fact 2.",
+    "Whether Aaron Ago Dagang's 7 April 2026 statement referenced any specific tabling date or parliamentary session target. Bernama's headline says 'expected to be tabled this year' — Stage 3 should chase the original JPNIN press release for the exact wording.",
+    "Whether any reasoning for the choice of these three specific comparator countries (rather than, e.g., Northern Ireland's Truth and Reconciliation framework, South Africa's TRC, Canada's TRC, or Sri Lanka's ONUR) is documented in JPNIN's drafting brief. The selection is editorially significant; if there is documented reasoning, Stage 3 should surface it.",
+    "Whether the 2025 figure of 36 Sedition Act cases per CIJ has been formally responded to by the AG's Chambers or the Home Ministry. Card uses CIJ as the source; a counter-figure from PDRM/AGC would be relevant for Stage 6 synthesis."
+  ],
+  "source_notes": "Three things to flag for downstream stages. (1) AUSTRALIA 18C UNDER-USED IN CARDS: the hook names Australia as one of the three comparators, but no fact card elaborates on s.18C. This is deliberate — Singapore (threat-not-used, 35 years) and Zimbabwe (10-year mandate ended in failure) carry sharper editorial leverage than Australia's civil-conciliation model. The brief covers Australia in depth (Eatock v Bolt [2011] FCA 1103; Turnbull 2017 Senate vote 31-28 against amendment). If Stage 2 or 4 raises this gap, the rationale is length-budget (6 cards already cover Malaysia + 2 comparators + reframe + view; adding a 7th would dilute the hook→reframe arc). Stage 6 may consider adding a tightened mention. (2) 'POLITICAL WILL' AS THE THIRD-SENTENCE ANCHOR IN VIEW: this is the brief's central editorial discovery — what both Singapore (success) and Zimbabwe (failure) share as the determining variable. The phrase is abstract; the fourth sentence ('The Malaysian draft does not propose to repeal the Sedition Act') concretises it. If Stage 2 flags 'political will' as a hedged abstraction, the answer is no: the abstraction is the carrier of the comparator-derived lesson, and it is bracketed by two concrete sentences. (3) 3R DISCIPLINE: the cards critique a statute (Sedition Act), a drafting pattern (four iterations in 14 years), and two comparator countries' track records. No card characterises any religion, race, or royal institution. The Singapore MRHA card names 'priests, monks or imams' because those are the categories the statute itself enumerates (Section 8 of the MRHA) — this is descriptive of the foreign statute, not characterisation of any Malaysian community. Stage 2 and Stage 4 should not soften this; the statute's own language is the verification.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "Card 2 does NOT assert 'Anwar broke his pledge' (claim is the verified factual sequence: pledged 2018, pledged 2022, withdrew Nov 2023; the reader draws the inference). Card 3 does NOT assert 'Singapore's MRHA is empty law' (claim is the verified factual record: in force since 1992, no restraining order publicly recorded, statute on its face authorises one). Card 4 does NOT assert 'Zimbabwe failed because of ZANU-PF' (claim is the verified factual record: 10-year mandate ended 2023, no Gukurahundi outcome; independent reviews trace failure to political will). Reframe does NOT assert 'the 2026 draft will not pass' (claim is the verified factual contrast: four drafts exist, repeal does not). View does NOT assert 'Malaysia will fail' (claim is the verified factual position: the 2026 draft does not propose Sedition Act repeal).",
+    "underclaim_check": "Card 2 does NOT soften 'Sedition Act is still in force' to 'critics say the Sedition Act remains' — the Act is on the AGC's consolidated text and CIJ's 2025 count documents active use. Card 3 does NOT soften 'not one restraining order has been publicly recorded' to 'few restraining orders' — the parliamentary disclosure says zero. Card 4 does NOT soften 'no Gukurahundi reconciliation outcome' to 'limited reconciliation outcomes' — Newsday/United Zimbabwe Alliance/Veritas reports converge on the absence.",
+    "misleading_framing_check": "Hook leads with the news item (7 April announcement) and plants the gap (comparator track records). Card 1 grounds the pattern in two named PMs and a third-party count (CIJ). Card 2 is the shock-number middle card per CLAUDE.md rule 8 (Berger-Milkman arousal peak: zero restraining orders in 35 years). Card 3 carries the failure case from a different geography to avoid Asia-only framing. Reframe restructures the issue (it is about the law not repealed, not the law being drafted). View synthesises the two comparator lessons and lands the verified non-repeal. The selection deliberately surfaces both poles: 'Singapore works' AND 'Zimbabwe failed' both bear on political will, which is the brief's central editorial discovery. No card omits a verified caveat the reader would need to form a different conclusion.",
+    "unverified_detail_check": "Every specific traces to a primary or near-primary source. Date 7 April 2026 — Bernama + Malay Mail + The Star + FMT. Aaron Ago Dagang title — Wikipedia + Ministry of National Unity contact directory. Four-draft count — Aaron's 7-April-2026 statement + The Nut Graph 2014 + Malaysian Insight 2017 + Malay Mail 14 Feb 2020 + FMT 7 April 2026. 2012 Najib pledge — multi-outlet contemporaneous coverage. 2018 PH manifesto — Article 19 PDF archive. CIJ 36 cases / +84% — CIJ 2025 annual review + FMT 10 December 2025. Singapore MRHA 1992 in-force date — Singapore Statutes Online. Singapore MRHA section 8/9 powers and section 16 penalties — Singapore Statutes Online. 'Not one restraining order publicly recorded' — Singapore Parliament 12 February 2007 written answer + Wikipedia summary current to 2024 with no contradicting source. Zimbabwe NPRC 10-year mandate ending 2023 — Constitution Amendment 20/2013 + NPRC Act 10:32/2018 + Veritas annual reports + Newsday. Gukurahundi 1983–87 + 20,000+ deaths — CCJPZ + LRF 1997 report 'Breaking the Silence'. 'Failure traced to political will, not framework design' — Tandfonline 2022, United Zimbabwe Alliance 2023, Kujenga Amani 2019, all academic / NGO independent assessments.",
+    "3R_special_caution": "Issue is HIGHER-bar 3R per the brief's risk assessment. Mitigations applied: (i) No characterisation of any religion, race, or royal institution. (ii) Reform/critique is directed at process (14-year non-delivery, comparator-selection signal) and at named statutes (Sedition Act, MRHA, NPRC Act, RDA). (iii) Card 3 names 'priests, monks or imams' because those are the enumerated categories in Singapore MRHA s.8 — descriptive of the foreign statute, not characterisation of any Malaysian community. (iv) The 2014 NUCC drafts' explicit Article 153 savings clause is noted in the brief's history; the 2026 redraft's content is not yet public and is not asserted. (v) Anger directed at process, not at any community or party — Berger-Milkman compliant.",
+    "process_not_people_check": "All sharp claims target institutional mechanics or named statutes. Najib named for what he said in office (2012 pledge); Anwar named for what he said in office (2018 and 2022 pledges, 2023 withdrawal); Aaron Ago Dagang named for what he announced 7 April 2026. No characterisation of bad faith. No party — UMNO, PKR, PAS, DAP, PRS, BN, PH, PN, or any coalition — is named as the cause of any specific outcome. The 2014 NUCC drafters and Najib-era cabinet are not named for the 2014/2020 withdrawals; the cards present the four-iteration pattern as a historical fact without attributing motive.",
+    "anger_anxiety_check": "Dominant emotion target: anger-at-process. Hook plants the 4-times-in-14-years pattern + 'three comparators have a track record worth reading' (anger + curiosity). Card 1 lands the broken-pledge pattern + active enforcement (anger). Card 2 lands the never-used-in-35-years statistic (Berger-Milkman arousal: incongruity between coercive statute and zero use). Card 3 lands a clear failure case from another geography (anxiety-of-precedent for Malaysia). Reframe restructures to the missing repeal (anger consolidated). View synthesises to the political-will variable and the unproposed repeal (anger held at process, no individual targeted). No sadness; no generalised concern; no anger at any community.",
+    "em_dash_check": "Zero em-dashes (U+2014) in headline, context, or any card big/sub. The single dash character used is the en-dash (U+2013) in '1983–87' (Card 4 sub) — standard typography for date ranges, not the U+2014 LLM-tell character. Verified by visual scan.",
+    "scaffolding_marker_check": "No sentence in any reader-facing field begins with 'However,' 'Moreover,' 'Furthermore,' 'Crucially,' 'Notably,' 'Importantly,' 'That said,' 'Of course,' or any other discourse-marker scaffolding.",
+    "auxiliary_verb_density_check": "Highest field auxiliary count: Card 1 sub ('The Sedition Act is still in force. CIJ recorded 36 sedition cases in 2025, an 84% rise from the year before.') — one 'is' auxiliary. All fields are under the 3-auxiliary warning threshold. After v1.1 active-voice pass: Card 2 big uses 'appears' (active) replacing 'has been publicly recorded' (passive); Card 4 sub uses 'Independent reviews trace' (active) replacing 'has been traced' (passive). View has 'sits unused' (active) + 'delivered' (active) + 'turned on' (active) + 'does not propose' (active). Verb-driven prose preserved.",
+    "passive_voice_check": "v1.1 active-voice pass complete. Card 2 big: 'No restraining order under it appears in the public record' — active, subject 'No restraining order' + verb 'appears'. Card 4 sub: 'Independent reviews trace the failure to political will, not framework design' — active, named actor 'Independent reviews' + verb 'trace'. Remaining passive constructions in reader-facing fields: zero in big/sub. The 'came into force' phrase (Card 2 big) is intransitive idiomatic English ('the Act came into force') not passive — no agent is being concealed. 'constituted to address' was removed from Card 4 sub in v1.1.",
+    "lens_diversity_check": "Three fact cards use three different lenses: Historical (Card 1, two PMs across 14 years), Legal (Card 2, Singapore statutory architecture), Political (Card 3, Zimbabwe political-will failure). No same-lens stacking. The 'Recommended Lenses' in the brief (Legal, Political, Historical) are all represented.",
+    "first_clause_concreteness_check": "Hook: 'On 7 April, Putrajaya picked Singapore...' — date + named actor + named object in first 6 words. Card 1: 'Najib pledged in 2012...' — named individual + year in first 4 words. Card 2: 'Singapore's Maintenance of Religious Harmony Act...' — named country + named statute in first 6 words. Card 3: 'Zimbabwe's National Peace and Reconciliation Commission...' — named country + named institution in first 7 words. Reframe: 'After four drafts...' — number + concrete in first 3 words. View: 'Singapore's Act sits unused.' — named country + named statute + verb-driven assertion in first 4 words. All pass the first-clause concreteness rule.",
+    "cliffhanger_button_check": "Hook last clause 'each have a track record worth reading' previews the next three cards (the track records). Card 1 last clause '84% rise from the year before' previews Card 2's contrast (Singapore's statute, no use). Card 2 last sentence 'The threat does the work' previews Card 3 (where the threat is absent and nothing works). Card 3 last clause 'political will, not framework design' previews the reframe (Malaysia's framework drafted four times). Reframe is the rotation, no button. View is the resolution, no button (kicker only).",
+    "kicker_test_view": "Last sentence 'The Malaysian draft does not propose to repeal the Sedition Act' — passes WhatsApp test (standalone editorial line), passes subtraction test (the central finding lands even if the reader remembers only this sentence)."
+  },
+  "pa_score": 88,
+  "pa_score_rationale": "Strong primary anchoring: comparator statutes are all primary statutory text (Singapore Statutes Online for MRHA 1990 / 2019 / 2025; Constitution of Zimbabwe Amendment 20/2013; NPRC Act 10:32/2018). Malaysia history is multi-source (Bernama, Malay Mail, The Star, FMT for 7-April-2026; Article 19 PDF for 2018 PH manifesto; Madpet + BenarNews + Aliran for Nov 2023 Anwar withdrawal; CIJ 2025 review + FMT 10-Dec-2025 + SUARAM Annual Report 2025 for the 36-cases / 84% / 233-investigations triangle). Comparator track records are sourced to multiple independent academic / NGO assessments (Tandfonline + UZA + Kujenga Amani for Zimbabwe; Singapore Parliament Hansard 2007 + Wikipedia 2024 for the Singapore zero-count). Capped below 90 because: (a) the Singapore zero-count claim rests on a 2007 affirmative disclosure + absence of subsequent contradicting record, rather than a 2024 affirmative parliamentary count — the card's 'publicly recorded' phrasing is calibrated to this evidentiary gap, but Stage 3 should chase 2019 amendment Hansard if accessible; (b) the 2026 SKRN draft text has not been publicly released, so the brief and cards cannot assert what the draft says or does not say about Sedition Act repeal — the Nov 2023 Anwar withdrawal is the proxy basis for asserting 'the Malaysian draft does not propose to repeal the Sedition Act,' which is a strong but not bullet-proof inferential chain; (c) the brief in-passing references that Mahathir and Abdul Hamid Mohamad publicly opposed the 2014 NUCC drafts on Article 153 grounds, but no card surfaces this — the omission is deliberate (3R-discipline: critique policy, not Malay-Muslim community-leader positioning) but means one part of the historical record is under-elaborated; (d) Australia 18C is named in the hook but not card-elaborated, leaving the brief's full three-comparator argument truncated in the card grid. These caps are bookkeeping, not flaws."
+}
