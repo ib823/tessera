@@ -1,0 +1,365 @@
+=================================================================
+T4A DOSSIER D001 — STAGE 3 FACT VERIFICATION (CHATGPT)
+=================================================================
+
+INSTRUCTIONS FOR THE OPERATOR (do not paste this header line):
+- Open a fresh ChatGPT chat. Enable "Browse with Bing" or web tools.
+- Use GPT-4o or later (o1-preview / o1 / GPT-5 if available — long-thinking modes preferred).
+- Copy everything BELOW the next divider line and paste as a single prompt.
+- Save the JSON response to engine/output/dossier-D001-stage3.json
+- This is the most important stage. If ChatGPT stops mid-output, say "continue" and append.
+
+=================================================================
+PASTE STARTS HERE
+=================================================================
+
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong.
+
+=== DOSSIER-SPECIFIC ADDENDA ===
+
+You are reviewing a long-form Malaysian editorial dossier, not a bite-size card issue.
+
+1. The unit of audit is the SECTION, identified by its `id` (e.g. "pivotal-player", "anti-hopping-loophole"). Use the section_id wherever the regular preamble says "card".
+
+2. The dossier contains constitutional text. Verify Article 49A wording directly from the Federal Constitution of Malaysia or the Constitution (Amendment) (No. 3) Act 2022. Do not rely on commentary.
+
+3. The dossier contains numerical claims you must verify with primary sources:
+   - Malapportionment ratio (9-10:1)
+   - Specific constituency voter counts (Bangi ~178k, Damansara ~180k, Putrajaya ~28k, etc.) — pull from the EC voter roll for the most recent delineation.
+   - 56 of 222 federal seats held by Sabah + Sarawak (including Labuan FT)
+   - RM10,000 election deposit and RM200,000 spending cap (verify Election Offences Act sections)
+   - Sarawak SST 5% rate and annual revenue (RM2.7bn-RM4bn) — verify against Sarawak state budget statements
+   - Felda ~112,000 settler households and ~54 parliamentary constituencies — verify against Felda's own communications
+   - GE15 results: PH 82, PN 74, BN 30, GPS 23, GRS 6, Warisan 3, Others 4
+
+4. The dossier contains historical claims you must verify:
+   - 1957 Constitution capped malapportionment at 15%, 1962 amendment removed the cap.
+   - IMP founded 1951 by Onn Jaafar.
+   - Semangat 46 won 8 seats in GE8 (1990), reabsorbed by 1996.
+   - KeADILan founded 1999, won 5 seats GE10 (1999).
+   - Bersatu founded September 2016; toppled BN in GE14 May 2018.
+   - Pejuang founded August 2020; contested 121 seats in GE15; won zero.
+   - GRS formed weeks before September 2020 Sabah state election (PRN16); won.
+
+5. The dossier characterises Operasi Lalang 1987 (106 detentions, three newspapers closed), Sheraton Move 2020, and the 2014 Sabah RCI. Verify each.
+
+6. The dossier references academic theory (Lipset-Rokkan, Shapley-Shubik, Riker minimum-winning coalition, Petrocik issue ownership). Confirm correct attribution.
+
+7. You MUST also verify the FIGURE SPECIFICATIONS. Charts can themselves embed factual errors via misleading scales, wrong numbers, or wrong categories. Treat figures as factual claims.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the dossier is wrong, ALSO check whether the dossier was written before a recent change in real-world conditions (oil prices for Sarawak SST, court rulings, political appointments). If timestamped before a recent shift, note this so synthesis knows whether to correct or to leave the original.
+
+=== THE FOUR CARDINAL SINS ===
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+3. MISLEADING FRAMING — every fact true but the selection or sequencing distorts the picture.
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote the dossier cannot trace to a primary source.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. No loyalty to the original analyst. Verify every factual claim against primary sources.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim:
+1. SPECIFIC NUMBERS — search for the original source, match the number, check the context, check the recency.
+2. LEGAL CITATIONS — verify exact wording, section numbers, scope.
+3. HISTORICAL CLAIMS — verify dates, sequences, actors.
+4. ATTRIBUTION — quotes accurate, positions fairly characterised.
+5. MISSING CONTEXT — technically correct but misleading without additional context.
+6. SOURCE QUALITY — primary or secondary; political spectrum coverage.
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH claim:
+- m_true: belief the claim is TRUE [0–1]
+- m_false: belief the claim is FALSE [0–1]
+- m_unknown: uncertainty [0–1]
+- Must sum to exactly 1.0
+
+Calibration:
+- 2+ independent primary sources: m_true >= 0.8
+- 1 primary source: m_true 0.5–0.7, m_unknown 0.2–0.4
+- Cannot verify: m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3–0.5, tag MISLEADING_FRAMING
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the source range of the dossier:
+- How many unique sources cited?
+- Institutional types (government, opposition, academic, NGO, international, legal, community, business)?
+- Political spectrum coverage?
+- Source gaps?
+
+source_diversity_estimate: 0.0 (echo chamber) to 1.0 (full spectrum).
+
+=== INPUTS TO YOUR REVIEW ===
+
+A. RESEARCH BRIEF
+B. DOSSIER CONTENT (26 sections)
+C. FIGURE SPECIFICATIONS (7 figures + cover)
+
+---
+
+A. RESEARCH BRIEF
+---
+
+DOSSIER: D001 — How New Parties Are Built in Malaysia. Series: Malaysia Political Mechanics (1 of n).
+
+ISSUE: The recurring Malaysian political move of forming a new political vehicle 6–18 months before a national or state election, and the structural conditions that make it rational, repeatable, and overwhelmingly aimed at pivotal-player status rather than majority government.
+
+PERIOD: 1951 through 2024.
+
+KEY CONSTITUTIONAL AND STATUTORY ANCHORS (verify all):
+- Federal Constitution Article 40(2)(a) — YDPA discretion in PM appointment.
+- Federal Constitution Article 49A — anti-hopping (inserted by Constitution (Amendment) (No. 3) Act 2022, Act A1648).
+- Federal Constitution Article 113 — Election Commission and delimitation.
+- Federal Constitution Article 150 — emergency provisions.
+- Societies Act 1966 — political party registration.
+- Election Offences Act 1954 — RM10,000 federal deposit / RM5,000 state; RM200,000 candidate spending cap.
+- Petroleum Development Act 1974.
+- Sarawak Sales Tax (Amendment) Ordinance 2018.
+
+KEY HISTORICAL DATES (verify):
+1951 IMP. 1957 Constitution. 1962 cap removed. 1969 May 13. 1974 PDA. 1987 Operasi Lalang. 1988 Semangat 46. 1990 GE8. 1999 KeADILan / GE10. 2008 GE12. 2014 Sabah RCI. 2016 Bersatu founded September. 2018 Sarawak SST imposed. 2018 GE14 May. 2020 Sheraton Move February-March. 2020 Pejuang founded August. 2020 PRN16 September. 2020 GRS formed weeks before PRN16. 2021 UNDI18 effective. 2022 Article 49A inserted. 2022 GE15 November.
+
+KEY NUMBERS (verify):
+- 9–10:1 malapportionment ratio.
+- Bangi P102 ≈ 178k voters; Damansara P125 ≈ 180k; Putrajaya P125 ≈ 28k; Igan P186 ≈ 19k.
+- 56 of 222 federal seats (Sabah + Sarawak + Labuan).
+- RM10,000 federal deposit; RM2.22m total for 222 seats; RM200,000 cap.
+- Pejuang contested 121 seats in GE15, won zero; deposits forfeited at <12.5%.
+- Sarawak SST 5% rate; RM2.7bn–RM4bn annual revenue range.
+- Felda ~112k original settler households; 317 schemes; ~54 parliamentary constituencies.
+- GE15: PH 82, PN 74, BN 30, GPS 23, GRS 6, Warisan 3, Others 4, total 222.
+- Bersatu: founded Sept 2016, toppled BN in GE14 May 2018 (~20 months).
+
+CONTRADICTIONS NOTED:
+1. Felda settler count varies 94k–122k across sources; dossier uses ~112k.
+2. Civil service total varies 1.5m–1.7m; dossier uses ~1.6m (not in current section list but possible later addition).
+3. Sarawak SST varies by oil price; dossier uses range.
+4. Sabah-Sarawak seat count depends on whether Labuan included; dossier includes it.
+5. Real campaign spend varies by order of magnitude; presented as range.
+6. GRS founding date varies July vs September 2020; dossier uses "weeks before PRN16".
+
+---
+
+B. DOSSIER CONTENT — 26 SECTIONS
+---
+
+SECTION id: cover (type: cover)
+Title: How New Parties Are Built in Malaysia
+Subtitle: A Field Guide to the Launch-and-Pivot Playbook
+What you'll learn:
+- Why a new party appears in Malaysia every election cycle
+- The six structural conditions
+- Sabah laboratory and Sarawak counter-example
+- The exact text of Article 49A and the loophole
+- How a voter should read a launch
+
+---
+
+SECTION id: tldr (type: tldr)
+Bullets:
+1. A new Malaysian party in the 12 months before an election is almost never trying to win the country — it is trying to win the negotiation the morning after the count.
+2. The prize is pivotal-player status: enough seats to be the necessary coalition partner in a fragmented chamber.
+3. Six structural conditions make Malaysia uniquely fertile soil.
+4. Sabah is the laboratory; the state has had eight ruling configurations in forty years. Sarawak's GPS is the stable counter-example because Sarawak's RM3-billion-a-year oil sales tax removes the incentive to fragment.
+5. Most new parties fail. The exceptions — Bersatu, PKR, GRS — share three ingredients: defector with sitting seats, executive office on offer, pre-negotiated coalition slot.
+6. Other democracies block this move with thresholds, public-funding rules, ballot-access barriers, and party-property law. Malaysia has chosen none of these defences.
+7. A voter is not the audience for the launch speech.
+
+---
+
+SECTION id: pivotal-player (type: concept)
+Body: In a chamber where no single bloc commands a majority, the small party with the right number of seats holds bargaining power wildly out of proportion to its vote share. The formal name is the Shapley-Shubik power index. A 30-seat party in an 80-80-30 parliament does not hold 13 per cent of the power. It holds something closer to a third of it, because it is the necessary partner in any winning coalition.
+
+---
+
+SECTION id: base-rates (type: fact, lens: Political)
+Body: Of new federal parties launched between 1988 and 2024, the median first-contest result is roughly 3 per cent of contested seats. Five-year survival sits at around 40 per cent. Within two elections of formation, roughly one in four launches end up in government. That last figure is almost entirely concentrated in launches led by defectors with sitting seats, with an executive office on offer, and a coalition slot pre-negotiated. Personality-only vehicles — IMP in 1951, Pejuang, MUDA's federal contest, GTA — have a historic success rate near zero.
+
+---
+
+SECTION id: launches-timeline (type: timeline)
+Events: IMP 1951 (Onn Jaafar, failed) — DAP/Gerakan 1969 (partial) — Semangat 46 1988 (Razaleigh, 8 seats 1990 then reabsorbed 1996) — KeADILan 1999 (Wan Azizah/Anwar, 5 seats GE10, durable) — Bersatu 2016 (Mahathir/Muhyiddin, pivotal GE14) — Amanah 2017 (PAS progressives, junior PH) — Pejuang 2020 (Mahathir, zero seats GE15) — MUDA 2020 (Syed Saddiq, 1 seat) — GRS 2020 (Hajiji Noor umbrella, won Sabah state) — GTA 2022 (Mahathir, wiped).
+
+---
+
+SECTION id: bersatu-2016 (type: case)
+Body: Parti Pribumi Bersatu Malaysia founded September 2016, registered after months-long ROS process, within twenty months had toppled the Barisan Nasional government. Founders Mahathir Mohamad and Muhyiddin Yassin — former senior UMNO leaders. Grievance was 1MDB. Coalition slot pre-negotiated with PKR, DAP, Amanah inside Pakatan Harapan.
+
+---
+
+SECTION id: pejuang-2020 (type: case)
+Body: Parti Pejuang Tanah Air founded August 2020 after Sheraton Move ejected Mahathir from government. In GE15 November 2022, Pejuang contested 121 seats and won zero. Every candidate forfeited the RM10,000 deposit by polling under 12.5 per cent.
+
+---
+
+SECTION id: reframe-morning-after (type: reframe)
+Body: The launch is not about the voter. The negotiation that decides who governs Malaysia happens in the seventy-two hours after the count. A vote for a small new party is a loan of bargaining chips to be spent later, by leadership the voter must trust on judgement.
+
+---
+
+SECTION id: cleavage-theory (type: concept)
+Body: In 1967, Seymour Martin Lipset and Stein Rokkan argued that party systems freeze around the major social cleavages of a country at the moment of mass enfranchisement. Malaysian voters are sorted along axes that do not collapse into a single left-right line: Malay-Chinese-Indian, Bumiputera-Bornean-non-Malay, urban-rural, secular-Islamist, peninsular-territorial.
+
+---
+
+SECTION id: six-conditions (type: fact, lens: Political)
+Body: First, registration bar administrative not constitutional, under Societies Act 1966. Second, ethnic and territorial cleavages. Third, portable patronage. Fourth, post-electoral coalition formation. Fifth, anti-hopping law closed individual defection but not party-level exits. Sixth, personalist voting.
+
+---
+
+SECTION id: malapportionment (type: diagram)
+Body: The 1957 Federal Constitution capped voter-number deviation between constituencies at fifteen per cent. A 1962 amendment removed the cap. Today the largest parliamentary constituency contains roughly nine times as many voters as the smallest. A vote in suburban Selangor carries roughly one-ninth the weight of a vote in Putrajaya or rural Sarawak.
+
+---
+
+SECTION id: anti-hopping-loophole (type: fact, lens: Legal)
+Body: The Constitution (Amendment) (No. 3) Act 2022 inserted Article 49A, triggering a casual vacancy when an MP resigns from or is expelled from the party. The law restricts the individual, not the party. A whole party can vote internally to leave a coalition and join another, and its MPs keep their seats.
+
+---
+
+SECTION id: article-49a-text (type: quote)
+Source: Federal Constitution of Malaysia, Article 49A, inserted by Act A1648 (2022)
+Body: A Member of the House of Representatives shall cease to be a member of the House of Representatives and his seat shall become vacant immediately on a date a casual vacancy is established… on the date that the Member resigns as a member of the political party for which he stood in the election; or on the date that the Member ceases to be a member of, or is expelled from, the political party for which he stood in the election.
+
+---
+
+SECTION id: sabah-volatility (type: fact, lens: Regional)
+Body: Sabah has cycled through Berjaya, USNO, PBS, BN-controlled, Musa-era BN, Warisan, GRS as ruling configurations with multiple component-party recombinations. Federal-territorial cleavage anchored in Twenty Points and MA63. Bumiputera-non-Malay composition: Kadazan-Dusun-Murut, Sino-Kadazan, Sulu, Bajau.
+
+---
+
+SECTION id: grs-2020 (type: case)
+Body: Gabungan Rakyat Sabah formed weeks immediately before September 2020 Sabah state election. Umbrella for Bersatu Sabah, PAS, STAR, SAPP, and others. Won the state.
+
+---
+
+SECTION id: sarawak-fiscal-lever (type: diagram)
+Body: GPS coalition held Sarawak without major fragmentation since exiting BN in 2018. In 2018 Sarawak imposed a five per cent State Sales Tax on petroleum products produced or imported within the state, generating estimated annual revenue in the two-to-four-billion-ringgit range depending on oil prices. This revenue is structurally independent of Putrajaya.
+
+---
+
+SECTION id: three-launches (type: concept)
+Body: When a new party appears in the twelve months before a vote, it is doing one of three things. Pivot play: defector with sitting seats. Grievance vehicle: real generational dissatisfaction with no existing party owning it. Vanity option: personality registering a vehicle to retain relevance.
+
+---
+
+SECTION id: they-are-all-the-same (type: mistake)
+Claim: They are all the same.
+Correction: Data does not support this. Some launches deliver durable representation; others are vanity.
+
+---
+
+SECTION id: this-one-is-different (type: mistake)
+Claim: This one is the reformer who will fix it.
+Correction: Base rate of reformer-messiah launches delivering reform is low.
+
+---
+
+SECTION id: five-questions (type: concept)
+Body: Five structural questions: who is already inside; who is funding it; what is the coalition slot; what job does this party do that no existing party does; where would they be in five years if this election goes badly.
+
+---
+
+SECTION id: pivotal-from-your-chair (type: concept)
+Body: When a voter casts for a small new party expecting policy X, what the voter delivers is bargaining power, not policy. A vote for a pivot party is a vote of confidence in the negotiating judgement of its leadership.
+
+---
+
+SECTION id: view (type: view)
+Body: A new-party launch should shift your opinion not on the launcher's claims, but on the system that produced the launch. If this new party did not exist, where would your vote go and why. If the answer is to the same coalition, the launch has not changed the math. You are not the audience for the launch speech. You are the resource the launcher needs to be in a room you cannot see.
+
+---
+
+C. FIGURE SPECIFICATIONS — VERIFY THESE TOO
+---
+
+FIGURE id: fig-cover — illustration; single continuous line; four figures at a table with a window showing a faint crowd; T4A signature. No factual content to verify; aesthetic only.
+
+FIGURE id: fig-1 — timeline of 10 launches 1951-2022. Outcome categories: successful, partial, failed. Verify each year and party-founder pairing.
+
+FIGURE id: fig-2 — voters per parliamentary seat. Sample of 10. Numbers approximate per 2018 delineation: Bangi ~178k, Damansara ~180k, Kapar ~144k, Kota Raja ~134k, Klang ~118k, Cameron Highlands ~32k, Putrajaya ~28k, Igan ~19k, Hulu Rajang ~22k, Lawas ~21k. Pull current EC roll and verify each.
+
+FIGURE id: fig-3 — Sarawak SST revenue: 2019 RM2.97bn, 2020 RM2.74bn, 2021 RM3.42bn, 2022 RM4.18bn, 2023 RM3.84bn, 2024 RM3.51bn. Verify against Sarawak state budget statements.
+
+FIGURE id: fig-4 — conceptual diagram showing 80-80-30 chamber, with 30-seat bloc as necessary partner. Arithmetic check.
+
+FIGURE id: fig-5 — brokerage stack: Division Head → Branch chairs (300-500 per division) → JKKK and mosque committees → Felda settler reps → Local contractor networks. Verify the 300-500 branch-chairs figure plausibility.
+
+FIGURE id: fig-6 — anti-hopping loophole: individual blocked, party-level allowed. Verify Article 49A wording matches.
+
+FIGURE id: fig-7 — international comparison table. Verify each cell: Germany 5% threshold; UK no threshold; Indonesia verification thresholds; Israel 3.25% raised from 2% in 2014; Italy variable.
+
+---
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "section_id": "...",
+      "claim": "exact claim from dossier",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "primary_source": "URL with date",
+      "correction": "if needed",
+      "stale_check": "if applicable"
+    }
+  ],
+  "figure_claims": [
+    {
+      "figure_id": "fig-N",
+      "data_point": "e.g. 'Bangi P102 ~178k voters'",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT",
+      "primary_source": "URL",
+      "correction": "if needed"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "section_id": "...", "claim": "exact text", "why": "...", "primary_source": "..."}
+  ],
+  "omitted_facts": [
+    {"fact": "...", "section_id_where_belongs": "...", "primary_source": "URL", "importance": 0.0}
+  ],
+  "source_assessment": "paragraph on source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=================================================================
+PASTE ENDS HERE
+=================================================================
