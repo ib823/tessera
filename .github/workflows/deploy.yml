@@ -144,4 +144,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: workers/social
-          command: kv key put --binding T4A_SOCIAL_KV cards:index --path ../../public/social-card-index.json --remote
+          # `--remote` is the default on wrangler v3 (the runner toolchain
+          # version); the flag itself was only added in wrangler v4 and
+          # errors out with "Unknown argument: remote" on v3.
+          command: kv key put --binding T4A_SOCIAL_KV cards:index --path ../../public/social-card-index.json
