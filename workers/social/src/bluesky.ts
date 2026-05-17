@@ -76,8 +76,10 @@ async function uploadBlob(env: Env, session: BlueskySession, imageBuf: ArrayBuff
 }
 
 function buildPostText(card: SocialCard, siteUrl: string): string {
-  // Image carries the brand attribution; post text is the statement + deep link.
-  return `${card.big}\n\n${siteUrl}/issue/${card.issueId}`;
+  // The image already carries the statement (card.big) and the brand
+  // attribution. Post text is just the deep link so feed readers can click
+  // through without the statement being duplicated in both surfaces.
+  return `${siteUrl}/issue/${card.issueId}`;
 }
 
 function findUrlFacets(text: string): unknown[] {
