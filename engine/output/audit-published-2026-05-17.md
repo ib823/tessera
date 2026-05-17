@@ -131,17 +131,18 @@ These have ≥7 of 8 expected artifacts and are fully auditable.
 | 1887 | issue-1887-v2 | 6/8 | brief, stage1 |
 | 1959 | sabah-philippines-claim | 6/8 | stage3, stage4 |
 | 1985 | e-invoicing-exemption-shadow-economy | 4/8 | stage2, stage3, stage4, stage5 |
-| 1986 | malay-grievance-policy-capture | 5/8 | stage3, stage4, stage5 |
+| 1986 | malay-grievance-policy-capture | 6/8 | stage4, stage5 |
 
 ## Phase 3 — Source Quality
 
 Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold: `factual_accuracy_score < 70` OR `avg m_true < 0.7` OR any INCORRECT/MISLEADING claim.
 
-### Stage 3 results — all issues with artifacts (32)
+### Stage 3 results — all issues with artifacts (33)
 
 | ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Resolution | Flagged |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
 | 1887 | 0 | 0 | 0 | 0 | 0 | 24 | — | 0.24 | STUB |  |
+| 1986 | 27 | 3 | 16 | 2 | 6 | 24 | 0.14 | 0.18 | RESOLVED |  |
 | 1146 | 0 | 0 | 0 | 0 | 0 | 27 | — | 0.24 | STUB |  |
 | 1977 | 31 | 5 | 16 | 3 | 7 | 46 | 0.29 | 0.3 | RESOLVED |  |
 | 1970 | 19 | 7 | 4 | 2 | 6 | 51 | 0.55 | 0.56 | RESOLVED |  |
