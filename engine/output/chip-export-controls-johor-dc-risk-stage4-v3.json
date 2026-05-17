@@ -1,0 +1,58 @@
+{
+  "_runtime": "real_external_llm",
+  "_source": "DeepSeek browser session",
+  "_collected_at": "2026-05-17",
+  "_audit_target": "v3 cards (post-synthesis)",
+  "_note": "Real DeepSeek re-audit on v3. Surfaces strong new facts (ZDATA protest Feb 2026, SPAN water guidelines Sept 2025, MITI 'no STA violation' defense) that v3 missed; the latter is a structural correction the previous DeepSeek pass also did not catch.",
+  "completeness_score": 60,
+  "missing_perspectives": [
+    {"who": "Johor residents (Gelang Patah, Taman Nusantara Prima, Taman Nusa Bayu, Bayu Angkasa Apartments)", "what": "Face dust pollution, water supply disruptions, fear data centres will worsen water shortages. February 2026: >50 protested - first public DC protest in Malaysia.", "why": "Lived experience of local communities bearing environmental costs."},
+    {"who": "Pineapple farmers and agricultural water users in Johor", "what": "Rely on groundwater and drain water; DC water abstraction could threaten livelihoods.", "why": "Resource competition between high-tech FDI and traditional agriculture."},
+    {"who": "Environmental NGOs and water security experts", "what": "Warn unchecked DC expansion risks water stress; call for mandatory water audits and alternative cooling.", "why": "Sustainability and long-term resource management perspectives."},
+    {"who": "Women in Malaysia's tech and DC workforce", "what": "Globally ~8% of workforce; may be excluded from high-skilled jobs promised by boom.", "why": "Benefits may skew male; water shortages disproportionately burden women."},
+    {"who": "B40 and low-income households in Johor", "what": "Most vulnerable to water tariff increases or supply cuts; least likely to gain from high-skilled DC employment.", "why": "Class analysis absent; investment narrative masks regressive distribution."},
+    {"who": "Malaysian semiconductor industry players", "what": "Worry US export controls or secondary sanctions disrupt supply chains even if they comply with MY law.", "why": "Industry's perspective on business risk missing."},
+    {"who": "Sabah state government", "what": "Minister stated July 2025 state cannot support DCs due to water/electricity constraints.", "why": "East Malaysia entirely absent."}
+  ],
+  "alternative_framings": [
+    {"current": "Governance gap: permits exist but no Malaysian operator named.", "alternative": "Resource grab: foreign capital extracts water/electricity while local communities bear environmental costs with weak enforcement.", "evidence": "ZDATA protest Feb 2026, SPAN water guidelines only effective Sept 2025, Johor stop on Tier 1/2 DCs only Nov 2025 after massive approvals.", "primary_source": "https://www.bangkokpost.com/business/general/3192810/malaysia-draws-first-data-centre-protest-over-pollution-water"},
+    {"current": "Singapore charged individuals for fraud; Malaysia imposed a permit.", "alternative": "Singapore case is fraud and false representation, not necessarily MY enforcement failure. Chips were not on MY Strategic Item List until July 2025; no domestic law broken.", "evidence": "MITI: STA 2010 not violated because AI chips were not on the Strategic Item List; US diffusion rule was never formally implemented.", "primary_source": "https://www.thestar.com.my/business/business-news/2025/03/17/no-violation-of-sta-2010-in-recent-nvidia-case"}
+  ],
+  "international_parallels": [
+    {"country": "Singapore", "rule_or_statistic": "2019 moratorium on new DCs; lifted 2022 with strict requirements: PUE ≤1.3, Green Mark Platinum, 100% renewable energy pathway.", "primary_source": "https://datacentremagazine.com/hyperscale/how-data-centres-can-operate-sustainably-in-urban-areas", "lesson": "Adopt mandatory efficiency standards and cap on new approvals linked to water/power availability."},
+    {"country": "Indonesia", "rule_or_statistic": "Law No. 17 of 2019 on Water Resources requires permits for business water use; DCs must be in designated industrial estates.", "primary_source": "https://www.lexology.com/library/detail.aspx?g=444b6c37-6abf-40b8-ba41-1b49e739aab0", "lesson": "Integrate water permitting into DC approval from the start."},
+    {"country": "India", "rule_or_statistic": "Draft National DC Policy 2025: up to 20-year tax exemption for DC developers meeting capacity, PUE, and employment targets.", "primary_source": "https://www.cnbctv18.com/business/information-technology/meitys-draft-20-year-tax-exemption-policy-could-turbocharge-indias-data-centre-growth-say-developers-19679831.htm/amp", "lesson": "Conditional incentives tied to sustainability and local employment."}
+  ],
+  "counter_arguments": [
+    {"to_card": 2, "counter": "DC water consumption figures disputed; some operators use air cooling or recycled water; SPAN guidelines effective Sept 2025 mandate alternative water sources.", "source": "https://www.thevibes.com/articles/uncategorized/116666/ministry-rules-out-domestic-water-tariff-increase-to-support-data-centre-expansion"},
+    {"to_card": 3, "counter": "STA 2010 did not list AI chips as strategic items at time of alleged diversion; no MY law violated. MITI confirmed March 2025.", "source": "https://www.thestar.com.my/business/business-news/2025/03/17/no-violation-of-sta-2010-in-recent-nvidia-case"},
+    {"to_card": 1, "counter": "US Tier 2 label never formally applied to Malaysia; AI Diffusion Rule rescinded before enforcement, never listed Malaysia by name. GAO May 2026 clarified rescission not final but rule remains inoperative.", "source": "https://www.gao.gov/products/b-337935"}
+  ],
+  "missing_facts": [
+    {"fact": "Malaysia's SPAN issued Water Supply Guidelines for Data Centre Developments effective 1 September 2025, mandating alternative water sources and ISO/IEC standards.", "importance": 0.7, "primary_source": "https://www.thevibes.com/articles/uncategorized/116666/ministry-rules-out-domestic-water-tariff-increase-to-support-data-centre-expansion"},
+    {"fact": "On 8 February 2026, >50 residents protested at a ZDATA data centre construction site in Gelang Patah, Johor, over dust pollution and water supply fears - the first public protest against data centres in Malaysia.", "importance": 0.9, "primary_source": "https://www.bangkokpost.com/business/general/3192810/malaysia-draws-first-data-centre-protest-over-pollution-water"},
+    {"fact": "Johor reported 51 approved DC projects created 7,561 high-skilled jobs for local youth, but independent analysts note each DC typically employs only 30-50 permanent staff.", "importance": 0.8, "primary_source": "https://www.thestar.com.my/metro/metro-news/2025/11/26/no-more-low-tier-data-centre-approvals-in-johor"},
+    {"fact": "Sabah's Industrial Development Minister stated July 2025 Sabah not ready for DC investments due to water/electricity constraints.", "importance": 0.5, "primary_source": "https://www.dailyexpress.com.my/news/262133/education/"},
+    {"fact": "US GAO decision B-337935 (12 May 2026) held BIS press release announcing rescission of AI Diffusion Rule is itself a 'rule' under Congressional Review Act; rescission not legally completed.", "importance": 0.6, "primary_source": "https://www.gao.gov/products/b-337935"}
+  ],
+  "gender_gaps": [
+    {"missing": "Analysis treats 'jobs' as gender-neutral. Women ~8-10% of global DC workforce; underrepresented in AI/tech roles. Water shortages disproportionately increase women's unpaid domestic labour.", "why_matters": "Benefits may flow predominantly to men; women bear disproportionate share of resource costs."}
+  ],
+  "economic_gaps": [
+    {"missing": "RM183B investment cited but not distributional impacts. DCs create few permanent jobs relative to capital invested; benefits to foreign investors and local elites; water stress and tariff increases affect B40.", "why_matters": "Class analysis reveals 'economic opportunity' frame masks regressive distributional effects."}
+  ],
+  "geographic_gaps": [
+    {"missing": "Analysis Johor-centric. Sabah and Sarawak absent; Sabah explicitly cannot host DCs due to resource limits.", "why_matters": "Overlooking East Malaysia obscures resource disparities that channel investment to peninsula."}
+  ],
+  "verification_log": [
+    {"my_addition": "ZDATA protest Feb 2026", "primary_source": "https://www.bangkokpost.com/business/general/3192810/malaysia-draws-first-data-centre-protest-over-pollution-water", "status": "VERIFIED"},
+    {"my_addition": "SPAN water guidelines effective 1 Sept 2025", "primary_source": "https://www.thevibes.com/articles/uncategorized/116666/ministry-rules-out-domestic-water-tariff-increase-to-support-data-centre-expansion", "status": "VERIFIED"},
+    {"my_addition": "MITI statement no STA 2010 violation", "primary_source": "https://www.thestar.com.my/business/business-news/2025/03/17/no-violation-of-sta-2010-in-recent-nvidia-case", "status": "VERIFIED"},
+    {"my_addition": "GAO decision B-337935", "primary_source": "https://www.gao.gov/products/b-337935", "status": "VERIFIED"},
+    {"my_addition": "Singapore moratorium and post-2022 requirements", "primary_source": "https://datacentremagazine.com/hyperscale/how-data-centres-can-operate-sustainably-in-urban-areas", "status": "VERIFIED"},
+    {"my_addition": "India draft DC policy 20-year tax exemption", "primary_source": "https://www.cnbctv18.com/business/information-technology/meitys-draft-20-year-tax-exemption-policy-could-turbocharge-indias-data-centre-growth-say-developers-19679831.htm/amp", "status": "VERIFIED"},
+    {"my_addition": "Sabah not ready for DCs", "primary_source": "https://www.dailyexpress.com.my/news/262133/education/", "status": "VERIFIED"},
+    {"my_addition": "Women underrepresentation in DC workforce (global 8% figure)", "primary_source": "https://www.datacenterdynamics.com/en/opinions/data-centers-are-short-staffed-boys-clubs/", "status": "VERIFIED"}
+  ],
+  "overall_assessment": "Strong on legal-regulatory timeline and accountability gap but overlooks human and environmental dimensions. Treats Johor's DC boom as a governance story, missing voices of residents, farmers, workers. Omits first public protest, water guidelines, gendered and classed distribution of costs and benefits. Incorporating these missing perspectives would transform the narrative from a narrow trade-security puzzle into a fuller account of how Malaysia's data centre rush creates winners and losers."
+}
