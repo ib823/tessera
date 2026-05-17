@@ -14,6 +14,9 @@ on:
     paths-ignore:
       - 'docs/**'
       - '*.md'
+  # Manual trigger — useful for re-syncing the social bot card index
+  # to KV after editing an issue without making a code commit.
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -104,3 +107,41 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=thefourthangle --branch=main --commit-message="${{ steps.msg.outputs.subject }}"
+
+      # ── Social bot Worker (workers/social/) ──
+      # Skips cleanly until the operator runs the one-time setup:
+      #   1. cd workers/social && npx wrangler kv namespace create T4A_SOCIAL_KV
+      #   2. paste the returned id into workers/social/wrangler.toml
+      #   3. npx wrangler secret put BLUESKY_APP_PASSWORD
+      #   4. npx wrangler secret put ADMIN_SECRET
+      #   5. commit the updated wrangler.toml
+      # After that, every push to main re-deploys the Worker and uploads the
+      # latest cards:index to KV.
+      - name: Check social Worker configured
+        id: social_check
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          if grep -q "REPLACE_WITH_KV_NAMESPACE_ID" workers/social/wrangler.toml; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::social Worker not yet configured — skipping deploy. See workers/social/wrangler.toml comments."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy social Worker
+        if: steps.social_check.outputs.configured == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: workers/social
+          command: deploy
+
+      - name: Upload cards:index to KV
+        if: steps.social_check.outputs.configured == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: workers/social
+          command: kv key put --binding T4A_SOCIAL_KV cards:index --path ../../public/social-card-index.json --remote
