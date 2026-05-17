@@ -69,17 +69,15 @@ async function uploadBlob(env: Env, session: BlueskySession, imageBuf: ArrayBuff
     method: 'POST',
     headers: {
       authorization: `Bearer ${session.accessJwt}`,
-      'content-type': 'image/jpeg',
+      'content-type': 'image/png',
     },
     body: imageBuf,
   });
 }
 
 function buildPostText(card: SocialCard, siteUrl: string): string {
-  // §15 default: big + URL line. No hashtags.
-  // Bluesky's grapheme cap is 300; card.big maxes at 180 chars, leaving headroom.
-  const url = `${siteUrl}/issue/${card.issueId}`;
-  return `${card.big}\n\n— from issue #${card.issueId}, full analysis: ${url}`;
+  // Image carries the brand attribution; post text is the statement + deep link.
+  return `${card.big}\n\n${siteUrl}/issue/${card.issueId}`;
 }
 
 function findUrlFacets(text: string): unknown[] {
@@ -125,7 +123,7 @@ async function createRecord(
         {
           image: blob,
           alt: altText.slice(0, 1000),
-          aspectRatio: { width: 1200, height: 675 },
+          aspectRatio: { width: 1080, height: 1350 },
         },
       ],
     },
@@ -182,7 +180,9 @@ export async function postCardToBluesky(env: Env, card: SocialCard): Promise<Pos
   }
 
   const text = buildPostText(card, env.SITE_URL);
-  const altText = card.sub ? `${card.big} — ${card.sub}` : card.big;
+  // Alt text mirrors the image content — the statement only, since the image
+  // shows nothing else readable beyond brand attribution.
+  const altText = card.big;
 
   const record = await createRecord(env, session, text, blob.blob, altText);
   return { uri: record.uri, cid: record.cid, did: session.did };
