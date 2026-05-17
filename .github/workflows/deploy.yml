@@ -132,7 +132,7 @@ jobs:
         if: steps.social_check.outputs.configured == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: workers/social
           command: deploy
@@ -141,7 +141,7 @@ jobs:
         if: steps.social_check.outputs.configured == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: workers/social
           command: kv key put --binding T4A_SOCIAL_KV cards:index --path ../../public/social-card-index.json --remote
