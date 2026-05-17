@@ -1,197 +1,59 @@
 {
-  "_runtime_constraint": "no_web_search_available",
-  "_provenance": {
-    "stage": "Stage 2 — Bias Audit (Gemini role, run by Claude in-runtime)",
-    "slug": "chip-export-controls-johor-dc-risk",
-    "issue_id": "1995",
-    "audited_artifact": "engine/output/chip-export-controls-johor-dc-risk-stage1.json",
-    "brief_consulted": "engine/briefs/chip-export-controls-johor-dc-risk.md",
-    "generated_at": "2026-05-17",
-    "note": "Verification statuses use VERIFIED_FROM_BRIEF / UNVERIFIED / POTENTIALLY_WRONG per environment constraint. No URLs were independently fetched."
-  },
-  "bias_score": 24,
-  "political_lean_estimate": -0.1,
-  "ethnic_framing_estimate": 0.15,
+  "_runtime": "real_external_llm",
+  "_source": "Gemini browser session",
+  "_collected_at": "2026-05-17",
+  "_note": "Real Gemini response on v1 cards. In-house simulated counterpart preserved at chip-export-controls-johor-dc-risk-stage2-inhouse.json for comparison.",
+  "bias_score": 65,
+  "political_lean_estimate": 0.0,
+  "ethnic_framing_estimate": 0.0,
   "religious_sensitivity_estimate": 0.0,
-  "narrative_framing_estimate": 0.2,
-  "geographic_bias_estimate": 0.1,
-  "economic_framing_estimate": 0.4,
-  "gender_agency_estimate": 0.6,
-  "partisan_flags": [
-    {
-      "quote": "Johor's response was to approve more capacity.",
-      "why_biased": "Attributes a single coordinated 'response' to 'Johor' as if it were one decision-making body responding to the Singapore charges. The Johor approvals predate and run parallel to the Singapore case; sequencing them as response-to-charges is partisan-adjacent narrative shaping that implicitly criticises the Anwar government and the Johor MB without naming them. A Stage 6 read should consider whether 'Johor kept approving' is more honest than 'Johor's response was'.",
-      "fix": "Change to: 'Johor kept approving capacity through the same quarter.' Removes the false implication that approvals are a deliberate reaction to the Singapore prosecution."
-    },
-    {
-      "quote": "Johor kept building.",
-      "why_biased": "Headline-level sequencing places the Singapore charges first and the Malaysian approvals second with an implied 'despite' or 'nevertheless'. Headline-grammar carries an editorial verdict that the analysis body does not actually prove (the brief itself notes the approvals are part of a multi-year DC FDI strategy, not a reaction). Borderline misleading framing.",
-      "fix": "Consider: 'Singapore charged three over Nvidia chips routed via Malaysia. Johor's data-centre approvals kept coming.' — same meaning, removes the implicit moral judgement of 'kept building'."
-    }
-  ],
+  "narrative_framing_estimate": 0.6,
+  "geographic_bias_estimate": -0.5,
+  "economic_framing_estimate": 0.5,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [],
   "racial_flags": [],
   "religious_flags": [],
   "geographic_flags": [
     {
-      "quote": "Johor has more than 80 approved data-centre projects with announced capacity above 5 GW — roughly a quarter of Peninsular Malaysia's peak electricity demand.",
-      "why_biased": "Comparator is Peninsular Malaysia only. East Malaysia (Sabah/Sarawak) is absent. Sarawak in particular hosts the Bintulu / SCORE data-centre push and is an emerging hyperscaler destination; comparing Johor's DC load only to Peninsular peak is a Peninsular-centric default that flattens the national picture.",
-      "fix": "Either explicitly scope the figure ('roughly a quarter of Peninsular Malaysia's peak demand — Sabah and Sarawak run on separate grids') or use national figure with caveats."
+      "quote": "The question is not whether Malaysia is selling chips to China. The question is whether Johor is the freeport on the route...",
+      "why_biased": "Frames the entire state of Johor and its legitimate data centre investments purely through the lens of a smuggling hub for foreign adversaries, stripping it of domestic economic agency.",
+      "fix": "Reframe to acknowledge Johor's legitimate economic boom while noting the regulatory risks it faces from US-China geopolitical tensions."
     }
   ],
-  "economic_flags": [
-    {
-      "quote": "Microsoft (USD 2.2 B announced May 2024), Google (USD 2 B announced May 2024), AWS, ByteDance and YTL are anchor tenants. The investment thesis assumes uninterrupted access to US-controlled AI chips.",
-      "why_biased": "Frames the economic stakes entirely through hyperscaler FDI announcements. Absent: TNB/Suruhanjaya Tenaga power-tariff cross-subsidy questions, water-usage costs to local residents, the B40 cost-of-living implications of grid-scale DC load on retail tariffs, displacement of domestic SME power allocation. T20/corporate frame dominates.",
-      "fix": "Either drop the corporate dollar amounts (the brief's playbook says specifics earn the swipe — pick one) and add a B40-facing consequence card, OR explicitly add a sub clause on retail-tariff or water-cost exposure."
-    }
-  ],
-  "gender_flags": [
-    {
-      "quote": "Named individuals: K. Shanmugam, Tengku Zafrul, Howard Lutnick.",
-      "why_biased": "All three named decision-makers are men. Brief also names Onn Hafiz Ghazi (Johor MB). No woman in any decision-making frame across the entire issue — and the AI / data-centre policy space in Malaysia does have women in senior roles (Fadhlina Sidek had spoken to digital-economy questions; Teresa Kok as former MITI deputy; Hannah Yeoh and others in cabinet). Stage 1 did not actively erase, but did not actively include either. Gender agency reads as default-male.",
-      "fix": "Where a card cites a Malaysian official voice, surface a woman where one exists in the policy chain (e.g. Digital Ministry leadership, or a named MIDA / Energy Commission woman official) rather than defaulting to Tengku Zafrul as the single MY voice."
-    }
-  ],
+  "economic_flags": [],
+  "gender_flags": [],
   "omission_flags": [
-    "East Malaysia (Sabah/Sarawak) data-centre push is entirely absent. Sarawak's SCORE / Bintulu DC investments and Sarawak's separate grid materially change the 'Malaysia DC story' but the issue treats Johor as synonymous with Malaysian DC strategy.",
-    "Power-cost transfer to B40 households is omitted. The brief lists TNB and Suruhanjaya Tenaga as actors and notes power-demand concerns, but no card translates 'data centre demand = 25% of peninsular peak' into 'who pays for the new generation capacity'. This is the most material economic-justice gap.",
-    "Water usage by hyperscale DCs is omitted entirely, despite being a documented Johor-specific concern (Sungai Lebam, Sedenak water draw).",
-    "Domestic civil-society voices (Sinar Project, KRSI, EAIC on data sovereignty) are absent. The brief's Source Spectrum Check explicitly flagged this gap and asked Stage 2 to surface critical-spectrum sources — Stage 1 did not.",
-    "The DeepSeek question is omitted without comment. The brief explicitly notes that some reports name DeepSeek and instructs cards to say 'a Chinese AI firm' until verified. The cards comply, but the analysis never explains to the reader WHY the specific firm is not named. A short caveat would be more honest than silent generalisation.",
-    "The Trump-administration political dimension is absent. The 23 Jan 2025 EO revoking the Biden AI EO is in the brief but does not appear in cards; this matters because the rescission of the Diffusion Rule is presented as a technocratic Commerce Department move rather than a Trump-administration policy choice."
+    "The analysis completely omits the Malaysian government's defense, specifically MITI Minister Tengku Zafrul's statements in March 2025 that there was 'no evidence of data centre companies in Malaysia using unauthorised chips' and his questioning of why the chips were allowed out of Singapore in the first place. Omitting this defense disproportionately shifts the burden of guilt onto Malaysia."
   ],
   "evasion_flags": [
-    "The conservative posture — no named Malaysian company, no named Chinese AI firm, no dollar figure for the Singapore transactions — is defensible on accuracy grounds but the cards never disclose this conservatism to the reader. A one-line acknowledgement ('Singapore has not publicly named the suspected end-user firm') would be more honest than silent omission. Right now the reader cannot tell whether the analysis chose not to name or simply does not know.",
-    "MITI's commitment to 'investigate any company named' is reported without the obvious follow-up: has any company been named, and if not, what triggers the investigation? The card lands the commitment and walks away. This is diplomatic evasion at the governance-card level — MITI gets credit for a commitment with no enforcement test attached.",
-    "The reframe asks 'what happens if Washington decides' but never tells the reader what is at stake materially — would chips be denied, would licences be revoked, would the entire Johor capacity be stranded? The question is rhetorically poised but factually under-specified."
+    "The analysis avoids explicitly accusing a Malaysian company but heavily implies systemic complicity ('Johor kept building') without providing evidence that any of the new capacity is tied to diverted chips."
   ],
   "shoe_test_failures": [
-    "Swap 'Johor' for 'Penang' or 'Sarawak'. The story becomes incoherent because the analysis presents Johor's DC build-out as Malaysia's DC build-out. This is a structural geographic-default failure, not a malicious framing — but it fails the test.",
-    "Swap 'Malaysia' and 'Vietnam' (which also hosts diversion-risk hyperscaler capacity). The analysis would still hold structurally. This is actually a positive shoe-test result for the security/legal cards — the framework is country-neutral. But it also reveals that the issue is not really Malaysia-specific in its risk framing, which the cards do not acknowledge."
+    "If the servers were routed through a Western ally's territory instead of Malaysia, the analogy of 'building the largest port on a known smuggling route' would likely not be used; it would be framed as an isolated customs evasion incident."
   ],
   "cardinal_sin_flags": [
     {
-      "sin": "MISLEADING_FRAMING",
-      "quote": "Singapore charged three over Nvidia chips routed via Malaysia. Johor kept building.",
-      "why": "Sequencing carries an implicit causal/temporal link the evidence does not support. Singapore charges are 27 Feb 2025; Johor approvals have been continuous since 2022-2023 and follow a multi-year FDI strategy. The headline grammar makes 'Johor kept building' read as response-to-charges. A reasonable reader would form the impression that Johor approved DCs AFTER seeing the Singapore charges, in defiance of them. That is not what the evidence shows — the approvals are concurrent and structurally unrelated to the prosecution.",
-      "fix": "Reframe as concurrent rather than sequential: 'Singapore charged three over Nvidia chips routed via Malaysia. Johor's data-centre approvals never paused.' or 'Singapore charged three over Nvidia chips routed via Malaysia. Putrajaya's investment thesis assumes none of this slows down.'"
-    },
-    {
-      "sin": "UNDERCLAIM",
-      "quote": "The investigation list has not been made public.",
-      "why": "Softens the actual finding the brief supports: no Malaysian company has been named or investigated publicly in the 14 months since the MITI commitment was made. 'Has not been made public' implies there might be a private list. The evidence suggests there is no list — the commitment was made and no enforcement has followed. A more honest framing is 'No Malaysian company has been named since.'",
-      "fix": "Change to: 'No Malaysian company has been publicly named or charged in the 14 months since.' This is what the evidence actually supports, per the brief's May 2026 status note."
-    },
-    {
-      "sin": "UNDERCLAIM",
-      "quote": "US prosecutors are investigating whether high-end chips that landed in Malaysia were diverted to a Chinese AI firm.",
-      "why": "The Stage 1 author's conservatism on naming the Chinese AI firm is defensible, but the framing 'a Chinese AI firm' may itself be underclaim. If the brief's source review (Reuters / Bloomberg / WSJ reporting on DeepSeek) holds up under Stage 3 verification, refusing to name DeepSeek when major outlets have named it pushes the cards below the public record. Either Stage 3 verifies the link and the cards name it, or the cards explicitly say 'a Chinese AI firm — DeepSeek per some reports, not confirmed in the charge sheet'. Silent generalisation is the worst of both worlds.",
-      "fix": "Conditional on Stage 3: if DeepSeek-link is confirmed in any primary filing or minister statement, name it. If not, add explicit caveat sentence: 'Some reports name DeepSeek; the Singapore charge sheet does not.'"
-    },
-    {
       "sin": "UNVERIFIED_DETAIL",
-      "quote": "Johor has more than 80 approved data-centre projects with announced capacity above 5 GW",
-      "why": "The brief's CONTRADICTIONS section flags that public figures range from '>50' to '>100' projects and '3 GW to >5 GW' capacity, and Stage 1 picks the mid-conservative figure without disclosing the range. The reader receives '>80, >5 GW' as a settled fact when the brief itself treats it as contested. This is unverified-detail by Stage 2's standard even though Stage 1 self-checked it as 'conservative middle'.",
-      "fix": "Either source the figure to a specific MIDA/MITI statement with date ('MIDA's 2024 Annual Investment Performance Report counted 80+ approved projects'), or use approximate language with a range ('roughly 80 to 100 approved projects, with announced capacity in the 3-5 GW band')."
+      "quote": "The Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail for unlicensed export of listed strategic items.",
+      "why": "The penalty for a body corporate under Section 9 of the Strategic Trade Act 2010 for unlicensed export is up to RM 10 million (or RM 20 million with intent), not RM 1 million. The RM 1 million fine applies to other offenses like providing false information.",
+      "fix": "Change 'RM 1 million' to 'RM 10 million'."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Like building the largest port on a known smuggling route, then asking the customs office across the border to keep clearing it.",
+      "why": "This analogy creates a false impression by equating a multi-billion dollar legitimate tech investment ecosystem (approved data centres) to a 'smuggling route' based on a single fraud case involving three men in a neighbouring country.",
+      "fix": "Remove the extreme analogy and describe the situation neutrally as a compliance risk where rapid infrastructure growth intersects with tightening foreign export controls."
     }
   ],
   "verification_log": [
-    {
-      "claim": "On 27 February 2025, Singapore charged three men with fraud tied to the sale of servers carrying Nvidia AI chips",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites SPF press release 27 Feb 2025 and MHA / Shanmugam statement. Brief flags exact charge-sheet wording for Stage 3 verification.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "the servers moved from Singapore to Malaysia",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites Minister K. Shanmugam public statement (Feb/Mar 2025). Brief notes 'final destination an open question' phrasing needs verification.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "US prosecutors are investigating whether high-end chips that landed in Malaysia were diverted to a Chinese AI firm",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites Bloomberg / Reuters / WSJ reporting on DOJ and Commerce Department investigations Feb-Mar 2025. Stage 3 should surface specific articles. Note: this is secondary reporting on US investigation existence, not a primary DOJ filing.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "BIS issued the AI Diffusion Rule on 13 January 2025 placing Malaysia in Tier 2",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites 90 Fed. Reg. 4544 (15 Jan 2025), Federal Register URL. Primary.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "Commerce Secretary Lutnick rescinded it on 13 May 2025, two days before its scheduled effect",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites the rescission with date 13 May 2025 and scheduled enforcement 15 May 2025. Brief flags exact Federal Register cite as NEEDS VERIFICATION.",
-      "human_search_query_if_unverified": "site:federalregister.gov OR site:bis.doc.gov 'AI Diffusion' rescission May 2025"
-    },
-    {
-      "claim": "ECCN 3A090 covers advanced AI accelerators",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites 15 CFR Parts 730-774 (EAR), eCFR. Primary.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "Johor has more than 80 approved data-centre projects",
-      "status": "POTENTIALLY_WRONG",
-      "primary_source": "Brief's CONTRADICTIONS section: public statements range from '>50' (early 2024) to '>80' (mid-2025) to industry trackers over 100. Stage 1 picks '>80' as mid-conservative without disclosing the range to the reader. The number itself is plausibly correct but is presented with more certainty than the brief warrants.",
-      "human_search_query_if_unverified": "site:mida.gov.my OR site:miti.gov.my Johor data centre approved 2025 OR 2026 count"
-    },
-    {
-      "claim": "announced capacity above 5 GW",
-      "status": "POTENTIALLY_WRONG",
-      "primary_source": "Brief's CONTRADICTIONS section: industry trackers and state announcements range from 3 GW (operational + under construction) to >5 GW (announced + planned). 'Above 5 GW' is the upper-conservative framing; some sources would not support it. Card does say 'announced' not 'operational' which is the right disclaimer.",
-      "human_search_query_if_unverified": "Johor data centre capacity GW 2025 Cushman Wakefield OR DC Byte OR Knight Frank"
-    },
-    {
-      "claim": "roughly a quarter of Peninsular Malaysia's peak electricity demand",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites Suruhanjaya Tenaga Peninsular Malaysia Electricity Supply Industry Outlook; peak ~20 GW. 5/20 = 25% arithmetic.",
-      "human_search_query_if_unverified": "Suruhanjaya Tenaga peninsular Malaysia peak electricity demand 2024 2025"
-    },
-    {
-      "claim": "Microsoft (USD 2.2 B announced May 2024)",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites Microsoft news release 2 May 2024, 'Microsoft to Invest $2.2 Billion to Fuel Malaysia's Cloud and AI Transformation', news.microsoft.com. Primary.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "Google (USD 2 B announced May 2024)",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites Google blog 30 May 2024, '$2 billion investment to support Malaysia's digital transformation'. Primary.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "Trade Minister Tengku Zafrul gave that commitment in March 2025",
-      "status": "UNVERIFIED",
-      "primary_source": "Brief flags 'NEEDS VERIFICATION on exact date and forum' for this MITI statement. The commitment is reported but the brief itself does not list a primary-source URL with date for the March 2025 statement.",
-      "human_search_query_if_unverified": "Tengku Zafrul MITI Malaysia investigate Nvidia chip diversion March 2025 statement"
-    },
-    {
-      "claim": "The Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail for unlicensed export of listed strategic items",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites Malaysia Strategic Trade Act 2010 (Act 708), AGC Malaysia consolidated text. Primary.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "ByteDance and YTL are anchor tenants",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief lists ByteDance Johor DC contract and YTL Power Sedenak Tech Park / Bursa filings. Primary on YTL Bursa filings; ByteDance reporting is secondary.",
-      "human_search_query_if_unverified": null
-    },
-    {
-      "claim": "replaced it with case-by-case licensing plus an explicit diversion warning",
-      "status": "VERIFIED_FROM_BRIEF",
-      "primary_source": "Brief cites BIS May 2025 guidance: case-by-case licensing, explicit warning on diversion enforcement, Huawei Ascend chips covered globally. Brief flags exact Federal Register cite for verification.",
-      "human_search_query_if_unverified": "BIS Bureau Industry Security AI chip licensing guidance May 2025 case-by-case Huawei Ascend"
-    },
-    {
-      "claim": "Johor approved more data-centre capacity in the same quarter (Q1 2025)",
-      "status": "UNVERIFIED",
-      "primary_source": "Brief documents the general continuous Johor approvals through 2024-2026 but does NOT establish a specific Q1 2025 approval count concurrent with the 27 Feb 2025 Singapore charges. The 'same quarter' phrasing in the hook is editorial inference, not a brief-cited finding. This is borderline misleading framing.",
-      "human_search_query_if_unverified": "MIDA MITI Johor data centre approval Q1 2025 January February March announcement"
-    }
+    {"claim": "On 27 February 2025, Singapore charged three men with fraud tied to the sale of servers carrying Nvidia AI chips that moved from Singapore to Malaysia.", "status": "VERIFIED", "primary_source": "Multiple secondary reporting citing Singapore Police Force and AGC documents (e.g., Taipei Times, CNA reporting on Mar 1-3 2025)."},
+    {"claim": "BIS issued the AI Diffusion Rule on 13 January 2025 placing Malaysia in Tier 2.", "status": "VERIFIED", "primary_source": "CSIS Analysis 'The AI Diffusion Framework' detailing BIS Tier 2 placement for Malaysia."},
+    {"claim": "Commerce Secretary Lutnick rescinded it on 13 May 2025, two days before its scheduled effect...", "status": "VERIFIED", "primary_source": "WilmerHale Client Alert (May 15, 2025) citing US Department of Commerce / BIS formal signal of rescission on May 13, 2025."},
+    {"claim": "Johor has more than 80 approved data-centre projects with announced capacity above 5 GW", "status": "VERIFIED", "primary_source": "Knight Frank regional data centre report (Sep 2025) confirming Johor's aggregate supply reached 5.8 GW."},
+    {"claim": "Microsoft (USD 2.2 B announced May 2024)", "status": "VERIFIED", "primary_source": "Microsoft corporate news release (May 2, 2024)."},
+    {"claim": "Google (USD 2 B announced May 2024)", "status": "VERIFIED", "primary_source": "Google corporate news release (May 30, 2024)."},
+    {"claim": "The Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail for unlicensed export of listed strategic items.", "status": "WRONG", "primary_source": "Act 708 Strategic Trade Act 2010, Section 9(5)(b) and 2017 Amendments", "corrected_value": "up to RM 10 million (or RM 20 million depending on intent) in corporate fines and five years' jail."}
   ],
-  "overall_assessment": "The Stage 1 analysis is structurally sound and factually conservative — it correctly refuses to name a Malaysian company, a Chinese AI firm, or a dollar figure that the brief itself flags as contested. The bias-detection issues are not in what is asserted but in what is implied by sequencing and silence. Three significant problems: (1) The 'Johor kept building' headline grammar implies a defiant response-to-charges relationship between two events that are actually concurrent and structurally independent, which is misleading framing at the most prominent surface of the issue. (2) The conservative posture (no named firm, no figure) is editorially defensible but never disclosed to the reader, which leaves the reader unable to distinguish 'analysis chose silence' from 'evidence is unavailable'. Disclosing the conservatism would convert a possible underclaim into transparent caution. (3) The economic frame is hyperscaler-FDI-dominant (USD 2.2B Microsoft, USD 2B Google) with zero B40 / power-tariff / water-cost translation, despite the brief explicitly listing TNB and Energy Commission as actors. The geographic default is Peninsular Malaysia with East Malaysia entirely absent. Gender agency is default-male across all named decision-makers. None of these is a CRITICAL bias failure; collectively they put the audit at bias_score 24 (ba ~76 inverted). Top three flags: (a) MISLEADING_FRAMING in the headline sequencing; (b) UNDERCLAIM in 'investigation list has not been made public' which softens what is actually 'no company has been named in 14 months'; (c) Omission of B40 / power-cost transfer, which is the most material economic-justice angle in a story about 5 GW of new load. The Stage 1 author should consider whether Stage 3's verification of the DeepSeek link or the MITI March 2025 statement specifics changes the underclaim calculus."
+  "overall_assessment": "This analysis suffers from significant misleading framing and omission bias. It weaponizes a single alleged diversion case in Singapore to cast an unfair shadow over Johor's entire legitimate multi-billion-dollar data centre industry, likening it to a 'smuggling route'. Crucially, it omits the Malaysian government's explicit public defense that there is no evidence of local data centres using these chips. Finally, it commits a factual error regarding the Strategic Trade Act penalties, understating the corporate fines by a factor of ten."
 }

@@ -1,0 +1,255 @@
+{
+  "_runtime_constraint": "no_web_search_available",
+  "_provenance": {
+    "stage": "Stage 4 — Alternative Framing (retired, run for this issue only)",
+    "issue_id": "1995",
+    "slug": "chip-export-controls-johor-dc-risk",
+    "generated_at": "2026-05-17",
+    "notes": "Stage 4 is officially retired. The user invoked it because the brief leans on US/Singapore primary sources and a non-Western reframe is genuinely absent. No live web search available in this runtime — wherever a claim depends on verifiable external data, the verification_log marks it MY_REASONING or NEEDS_VERIFICATION rather than fabricating a URL. The job here is to ask whether the omissions distort the picture a reasonable reader takes away, not to argue any of these framings is correct."
+  },
+  "completeness_score": 62,
+  "missing_perspectives": [
+    {
+      "who": "Chinese state and Chinese industry view (MOFCOM, CAC, SMIC, Huawei, Chinese AI labs)",
+      "what": "The US export-control regime is an extra-territorial throttle on a legitimate global compute market. Malaysia is a sovereign hub responding to actual demand, not a 'diversion route'. The framing of 'diversion' itself presumes the US has standing to govern who computes what, anywhere, on chips that have already cleared one customs border. From this view, Singapore's prosecution is Singapore enforcing its own Strategic Goods Control Act, which is fine; the US naming Malaysia 'Tier 2' is the overreach.",
+      "why": "Stage 1 treats the US export-control envelope as the operating reality of the world. For Malaysia's largest single trading partner, it is a contested reality. A reader who only sees the US frame walks away thinking Malaysia must accept Tier 2 status as a fact of physics rather than as a policy choice with diplomatic cost. The omission flattens a triangular geopolitics into a bilateral compliance question."
+    },
+    {
+      "who": "Hyperscaler legal and compliance teams (Microsoft, Google, AWS, ByteDance, Equinix, AirTrunk)",
+      "what": "We are operating under full BIS licensing, every chip is tracked by serial number under VEU-style controls or case-by-case licence, our customers sign end-use certifications, and we audit. Diversion through our facilities is a fringe risk that does not materially affect the USD 4+ billion of announced Johor investment. The Singapore case involved third-party server resellers, not hyperscaler-tenanted DC capacity. Conflating the two distorts the risk picture.",
+      "why": "Stage 1's hook and analogy invite the reader to read Johor's announced capacity as exposed to the Singapore charges. Hyperscaler tenants would argue the Singapore case was a grey-market server-resale prosecution, not a hyperscaler-DC prosecution, and that the two have different chip-provenance regimes. Without that distinction the reader may conflate a fraud charge against three resellers with a systemic risk to USD-tens-of-billions of compliant FDI."
+    },
+    {
+      "who": "Malaysian developmental-state view (MITI / MIDA / Economic Planning Unit / NIMP 2030 architects)",
+      "what": "Every industrialising economy operates inside someone else's regulatory envelope. Japanese semiconductors, Korean shipbuilding, Taiwanese fab, Vietnamese electronics — all grew under US export-control exposure and managed it. Demanding zero exposure is demanding zero industrial upgrade. The right question is not 'should Johor accept the risk' but 'is the risk being managed competently' (STA 2010 enforcement, Customs Act trans-shipment auditing, licensee due-diligence).",
+      "why": "Stage 1's reframe ('Johor is the freeport on the route') treats the US envelope as a constraint to be feared. A developmental-state reader hears that as a counsel of perfection that would have stopped Malaysian industrialisation at any prior stage. Omitting this view makes the analysis read as more pessimistic than the policy debate inside Putrajaya actually is."
+    },
+    {
+      "who": "Technology-skeptic view (AI bubble analysts, energy researchers, productivity-paradox economists)",
+      "what": "The entire AI compute boom is overhyped. Hyperscaler capex is running well ahead of demonstrated end-market revenue; data-centre depreciation cycles for AI accelerators are ~3 years; the export-control story matters only if the underlying demand is real. If the AI bubble deflates 2027-2028, Johor will have stranded assets regardless of what Washington decides about chip provenance.",
+      "why": "Stage 1 assumes the export-control framework is the binding constraint. A bubble-skeptic reader notes that the binding constraint may instead be end-market demand for the AI services those chips compute. The asymmetry matters: a US sanction is a survivable shock if demand holds; an AI demand collapse is unsurvivable regardless of US policy. Omitting this means the reader gets one risk channel where there are two."
+    },
+    {
+      "who": "Civil-society and climate view (RimbaWatch, Greenpeace Malaysia, Sahabat Alam Malaysia, water-resource researchers, Johor residents)",
+      "what": "The story of Johor's data-centre build is not chip provenance. It is electricity, water, and land. 5 GW of DC load is roughly a quarter of peninsular peak demand and the marginal generation is gas and (planned) coal. Water cooling competes with Johor's existing water-stress profile. The export-control story is a Beltway story; the real Malaysian story is the one a Pasir Gudang resident lives next to.",
+      "why": "Stage 1 mentions 5 GW as a scale referent but treats it as evidence of investment, not as a contested environmental footprint. A civil-society reader sees the analysis as deferring to a Washington frame on a Malaysian story. Whether or not one accepts the climate framing, omitting it means the only critical voice in Stage 1 is the US regulator's — i.e. the analysis lacks a domestic critical voice entirely."
+    }
+  ],
+  "alternative_framings": [
+    {
+      "current_card": "hook",
+      "current": "Singapore charged three men over Nvidia chips routed via Malaysia. Johor kept building. (Implication: the route exists and Malaysia is downstream of US enforcement.)",
+      "alternative": "Singapore charged three men under its own Penal Code for fraud against a server reseller. Johor's hyperscaler capacity is built under separate BIS licensing tracked by serial number. Whether the two stories sit on the same risk axis is the question.",
+      "evidence": "Singapore's charges are framed under Penal Code fraud sections, not under the Strategic Goods Control Act — flagged in the brief as NEEDS VERIFICATION on exact sections. Hyperscaler tenancy operates under case-by-case BIS licensing (post-13 May 2025 rescission of the Diffusion Rule). The two regimes are not the same surface.",
+      "primary_source": "NEEDS_VERIFICATION (cannot confirm without web access) — Stage 3 (ChatGPT) should chase SPF charge-sheet text and the BIS post-rescission guidance"
+    },
+    {
+      "current_card": "fact (Security, Tier 2)",
+      "current": "Washington classifies Malaysia as a Tier 2 diversion-risk country.",
+      "alternative": "Washington classified Malaysia as Tier 2 under a rule it rescinded two days before it took effect. The operative regime is now case-by-case licensing, which several countries that were never named in any tier (the EU, Japan, Korea) also operate under. The 'Tier 2' label survived the rule's death only in narrative.",
+      "evidence": "The brief itself notes the rule was rescinded on 13 May 2025, two days before its 15 May enforcement date. Continuing to anchor the analysis on the Tier 2 label after rescission may overstate where Malaysia sits today.",
+      "primary_source": "Brief's own timeline; BIS rescission notice (NEEDS_VERIFICATION on exact Federal Register cite — Stage 3 priority)"
+    },
+    {
+      "current_card": "fact (Economic, 5 GW)",
+      "current": "Johor has 80+ approved DC projects, 5+ GW announced capacity — about a quarter of peninsular peak demand. The investment thesis assumes uninterrupted access to US-controlled chips.",
+      "alternative": "Johor's 5 GW announced load is the bigger story regardless of chip provenance. It is roughly a quarter of peninsular peak demand on a grid where new generation is gas-and-coal-led. Even if every chip cleared a BIS licence cleanly, the Johor build-out is an electricity and water story before it is a geopolitics story.",
+      "evidence": "Brief's own statistic: ~5 GW announced against ~20 GW peninsular peak demand. Suruhanjaya Tenaga / TNB published supply outlook (cited in brief).",
+      "primary_source": "Suruhanjaya Tenaga, Peninsular Malaysia Electricity Supply Industry Outlook (cited in brief; URL not verified in this runtime)"
+    },
+    {
+      "current_card": "reframe",
+      "current": "The question is not whether Malaysia is selling chips to China. The question is whether Johor is the freeport on the route, and what happens if Washington decides it is.",
+      "alternative": "The question is not whether Washington calls Johor a freeport. The question is whether the Malaysian state has the trans-shipment auditing capacity to know — and to defend its position — independent of what Washington decides.",
+      "evidence": "Malaysia Strategic Trade Act 2010 places primary enforcement on Royal Malaysian Customs and MITI's Strategic Trade Secretariat. The brief notes no Malaysian operator has been publicly named in any US enforcement action; whether this reflects clean compliance or insufficient domestic visibility is the diagnostic question.",
+      "primary_source": "STA 2010 (Act 708), Attorney General's Chambers consolidated text (cited in brief; URL not verified in this runtime)"
+    },
+    {
+      "current_card": "view",
+      "current": "Three men were charged in Singapore. The chips were headed for Malaysia. Johor's response was to approve more capacity. The bill arrives when Washington decides what to do about it.",
+      "alternative": "Three men were charged in Singapore. Johor approved more capacity. The bill arrives — whether the line item is a US designation, a power-supply crisis, or an AI demand correction is the open question. Pinning the risk on Washington alone is half the picture.",
+      "evidence": "Multi-channel risk: US enforcement (Washington-side), grid and water constraints (Suruhanjaya Tenaga / Johor state), and global AI capex correction risk (industry analyst consensus that AI capex is running ahead of revenue; not verified in this runtime).",
+      "primary_source": "MY_REASONING; the multi-channel framing is editorial inference from the brief's own actor list and risk dimensions"
+    }
+  ],
+  "international_parallels": [
+    {
+      "country": "Vietnam",
+      "rule_or_statistic": "Vietnam has positioned itself as a 'China-plus-one' electronics and assembly hub since roughly 2018 and has lived under repeated US Treasury / USTR scrutiny over trans-shipment of Chinese goods relabelled 'Made in Vietnam'. The Hanoi government's response has generally been to tighten certificate-of-origin controls rather than to slow the FDI thesis. Exact dates, USTR investigations, and enforcement outcomes NEEDS_VERIFICATION.",
+      "primary_source": "NEEDS_VERIFICATION — USTR investigations into Vietnam trans-shipment and the Vietnamese Ministry of Industry and Trade's certificate-of-origin tightening cannot be cited to a specific document in this runtime",
+      "lesson": "The Malaysian playbook of 'investigate any named company' has a precedent in Hanoi's 'tighten the paperwork' response. Whether it is enough is the open question both governments face."
+    },
+    {
+      "country": "United Arab Emirates",
+      "rule_or_statistic": "The UAE was placed in Tier 1 (most favoured) under the same January 2025 Diffusion Rule that placed Malaysia in Tier 2, despite UAE's commercial relationships with Chinese AI firms. G42 (Abu Dhabi) divested Chinese investments in 2024 as part of a US-aligned posture. Exact divestment scope and US-G42 understanding NEEDS_VERIFICATION.",
+      "primary_source": "NEEDS_VERIFICATION — G42 divestment from Chinese tech and BIS Tier 1 placement for UAE; reported in multiple outlets but not verifiable in this runtime",
+      "lesson": "Tier placement under the Diffusion Rule was political-diplomatic, not purely technical. A Malaysian path to Tier 1-equivalent treatment exists; it has a cost (visible decoupling moves) that has not been publicly debated."
+    },
+    {
+      "country": "Singapore",
+      "rule_or_statistic": "Singapore prosecuted under its own Penal Code, in its own courts, on Singapore territory — independent of US enforcement. The Strategic Goods Control Act 2002 was the available export-control statute but the charges (per the brief) appear to have been framed under fraud / false representation. NEEDS_VERIFICATION on exact charged sections.",
+      "primary_source": "Singapore Strategic Goods (Control) Act 2002, AGC Singapore consolidated text — cited in brief; URL not verified in this runtime",
+      "lesson": "Singapore demonstrated that a small state can credibly prosecute its own end of a multi-jurisdiction diversion case without waiting for or deferring to a US action. Whether Malaysia would do the same under STA 2010, if faced with comparable evidence, is the structural question the analysis stops short of."
+    }
+  ],
+  "counter_arguments": [
+    {
+      "to_card": "hook",
+      "counter": "The Singapore charges were fraud against a server reseller, not direct export-control violations. Treating them as a Malaysia-risk signal may itself be misleading framing. The cleaner risk signal would be a US DOJ indictment naming a Malaysian counterparty, which the brief notes has not occurred as of May 2026.",
+      "source": "my own reasoning — anchored on the brief's own caveat that 'no Malaysian DC operator has been publicly named' and on the SPF charges being framed under Penal Code fraud sections per the brief"
+    },
+    {
+      "to_card": "fact (Tier 2 / Security)",
+      "counter": "The Diffusion Rule was rescinded before taking effect. Continuing to call Malaysia 'Tier 2' is past-tense; the operative regime is case-by-case licensing, which is the regime several US allies also operate under.",
+      "source": "Brief timeline (13 May 2025 rescission); BIS post-rescission guidance — NEEDS_VERIFICATION on exact text"
+    },
+    {
+      "to_card": "fact (Economic / 5 GW Johor)",
+      "counter": "Hyperscaler-anchored DC capacity is not the same risk surface as third-party server-reseller transactions. Microsoft, Google, AWS operate under full US licensing compliance and end-use certification regimes. Conflating their announced capacity with the Singapore reseller case overstates the diversion-risk channel through Johor.",
+      "source": "my own reasoning — based on the publicly known structure of hyperscaler BIS compliance (VEU-style end-use tracking) versus third-party reseller transactions"
+    },
+    {
+      "to_card": "reframe",
+      "counter": "Industrial upgrading has always required accepting external regulatory exposure. Japan, Korea, Taiwan, Vietnam all grew under US extra-territorial reach and managed it without retreating from the FDI thesis. Framing Johor's exposure as a uniquely Malaysian problem misses that this is the cost structure of joining a globally-integrated technology supply chain at all.",
+      "source": "my own reasoning — generalised from the developmental-state literature; no single-source citation in this runtime"
+    },
+    {
+      "to_card": "view",
+      "counter": "The view card pins the bill on 'what Washington decides'. The bigger near-term bill is what Suruhanjaya Tenaga and Johor's water utility decide. The Washington-shaped tail risk is real but slower-moving than the grid and water constraints that bind in 2026-2028.",
+      "source": "my own reasoning — anchored on the brief's own ~5 GW / ~20 GW peak demand ratio and Johor's water-stress profile"
+    }
+  ],
+  "missing_facts": [
+    {
+      "fact": "Singapore charged the three men under Penal Code fraud / false-representation sections rather than under the Strategic Goods Control Act 2002. The choice of statute is itself informative — it suggests prosecutors did not (or could not) establish the items as controlled strategic goods at the point of Singapore export.",
+      "importance": 0.7,
+      "primary_source": "NEEDS_VERIFICATION — Singapore Police Force charge sheet language; flagged in brief"
+    },
+    {
+      "fact": "The AI Diffusion Rule was rescinded on 13 May 2025, two days before its scheduled 15 May enforcement date. It never took binding effect. References to 'Tier 2' describe a rule that did not enter force, even though the tier-2 framing has continued in policy discourse.",
+      "importance": 0.8,
+      "primary_source": "Brief timeline (verified to brief); Federal Register cite NEEDS_VERIFICATION"
+    },
+    {
+      "fact": "US case-by-case AI-chip licensing applies to many countries that were not assigned a 'tier' under the rescinded rule. Operating under case-by-case licensing is, in 2026, a broad norm rather than a Malaysia-specific disadvantage.",
+      "importance": 0.6,
+      "primary_source": "MY_REASONING from brief; specific list of countries under case-by-case licensing NEEDS_VERIFICATION"
+    },
+    {
+      "fact": "Johor's DC build is electricity-intensive on a peninsular grid where gas and (planned) coal are the marginal generation. 5 GW of announced DC load against ~20 GW peninsular peak demand is roughly a quarter of the system. The brief acknowledges this; the analysis does not foreground the climate-and-water dimension.",
+      "importance": 0.7,
+      "primary_source": "Suruhanjaya Tenaga Peninsular Malaysia Electricity Supply Industry Outlook (cited in brief; not verified in this runtime)"
+    },
+    {
+      "fact": "China is Malaysia's largest single trading partner. A Malaysian posture that visibly aligns with US chip-export policy carries a real diplomatic cost with Beijing that the analysis does not price in.",
+      "importance": 0.6,
+      "primary_source": "NEEDS_VERIFICATION — MATRADE / Department of Statistics Malaysia trade data; widely reported but not verifiable in this runtime"
+    },
+    {
+      "fact": "Hyperscaler tenancy contracts typically include US end-use certification clauses that flow down to the Malaysian DC operator. A Malaysian operator hosting Microsoft or Google capacity is contractually bound to US compliance regardless of Malaysian law — which arguably reduces the diversion-risk channel through hyperscaler-anchored capacity.",
+      "importance": 0.6,
+      "primary_source": "MY_REASONING from standard hyperscaler cloud-region contract terms; no single primary source available in this runtime"
+    }
+  ],
+  "gender_gaps": [
+    {
+      "missing": "Stage 1 has no gender dimension — but the issue is structural trade/security policy, not a sector where gendered impact is materially asymmetric on a 60-90s reader timescale. The omission is defensible.",
+      "why_matters": "Worth flagging only for completeness. Not a material defect of the analysis."
+    }
+  ],
+  "economic_gaps": [
+    {
+      "missing": "Class analysis of who captures the Johor DC upside. Construction and high-skilled DC ops jobs are real but concentrated in a thin labour band. The Johor B40 sees primarily the electricity-price and water-rate pass-through, not the FDI headline. The analysis frames Johor as a single unit ('Johor approved') without disaggregating the distributional inside.",
+      "why_matters": "Reader walks away thinking Johor is uniformly bought-in. The political economy of who-bears-the-cost is the more honest Malaysian frame."
+    },
+    {
+      "missing": "Hyperscaler vs domestic-operator risk asymmetry. Microsoft, Google, AWS have global balance sheets that can absorb a BIS licensing suspension. YTL Power, Bridge DC, Sedenak Tech Park cannot. The diversion-risk exposure is distributionally heavier on Malaysian operators than on the named hyperscalers.",
+      "why_matters": "Without this, the reader cannot tell who is actually at risk if Washington moves. The headline 'Johor kept building' obscures the asymmetry between who builds and who bears the downside."
+    }
+  ],
+  "geographic_gaps": [
+    {
+      "missing": "Sabah and Sarawak DC capacity is not discussed. Sarawak's hydro-led grid (SEB / SCORE corridor) is a competing Malaysian DC location with a cleaner energy mix and a different state-government posture on FDI. The Johor-only framing of the analysis is geographically accurate but treats Malaysia's DC strategy as if Johor is the whole story.",
+      "why_matters": "A Sarawak-aware reader would note that the Malaysian DC investment thesis is geographically diversifying away from Johor on grid-mix grounds, partly independent of the Washington question. The analysis as written misses this."
+    },
+    {
+      "missing": "Johor-Singapore Special Economic Zone (JS-SEZ) framing. The Johor DC build is partly a JS-SEZ play, which makes the Singapore-Malaysia relationship economically integrated even as their export-control postures diverge. The analysis treats Singapore as the prosecutor across the border; the JS-SEZ frame would treat Singapore as the partner whose enforcement reflects on the integrated zone.",
+      "why_matters": "Reader misses that the Singapore SPF charges are not 'next door' so much as 'inside the same integrated economic project'. That changes how the Malaysian state should read them."
+    }
+  ],
+  "verification_log": [
+    {
+      "my_addition": "Singapore charges were filed under Penal Code fraud / false-representation sections rather than the Strategic Goods Control Act 2002",
+      "primary_source": "Brief flags this; SPF charge sheet text",
+      "status": "NEEDS_VERIFICATION (no web access in this runtime)"
+    },
+    {
+      "my_addition": "The AI Diffusion Rule was rescinded 13 May 2025, two days before its 15 May enforcement date, and never took binding effect",
+      "primary_source": "Brief timeline; BIS rescission notice (Federal Register cite NEEDS_VERIFICATION)",
+      "status": "VERIFIED against brief; BIS Federal Register cite NEEDS_VERIFICATION"
+    },
+    {
+      "my_addition": "Hyperscaler tenancy carries US end-use certification flow-down clauses",
+      "primary_source": "Standard hyperscaler region-build contract structure",
+      "status": "MY_REASONING"
+    },
+    {
+      "my_addition": "G42 (UAE) divested Chinese tech investments as part of US-aligned posture, and UAE received Tier 1 placement under the Diffusion Rule",
+      "primary_source": "Reported in multiple outlets (Reuters, FT, WSJ) but not verifiable in this runtime",
+      "status": "NEEDS_VERIFICATION"
+    },
+    {
+      "my_addition": "Vietnam tightened certificate-of-origin enforcement under USTR trans-shipment pressure rather than slowing FDI",
+      "primary_source": "USTR investigations and Vietnamese MOIT actions (multiple outlets); not verifiable in this runtime",
+      "status": "NEEDS_VERIFICATION"
+    },
+    {
+      "my_addition": "China is Malaysia's largest single trading partner",
+      "primary_source": "MATRADE / Department of Statistics Malaysia trade data — widely reported and stable for ~15 years",
+      "status": "NEEDS_VERIFICATION (treated as well-established but not URL-verified in this runtime)"
+    },
+    {
+      "my_addition": "Johor DC build sits inside the Johor-Singapore Special Economic Zone framework",
+      "primary_source": "JS-SEZ joint announcement (Anwar / Lee Hsien Loong era and follow-on framework documents)",
+      "status": "NEEDS_VERIFICATION"
+    },
+    {
+      "my_addition": "AI capex is running ahead of demonstrated end-market revenue; industry consensus on AI bubble risk",
+      "primary_source": "Goldman Sachs, MIT, Sequoia Capital analyst notes (multiple) — not verifiable in this runtime",
+      "status": "MY_REASONING (treated as well-circulated analyst view rather than a verifiable single source)"
+    },
+    {
+      "my_addition": "Sarawak's SCORE corridor offers a competing hydro-led Malaysian DC location",
+      "primary_source": "Sarawak Energy / SCORE programme documents",
+      "status": "NEEDS_VERIFICATION"
+    }
+  ],
+  "rewrite_suggestions": [
+    {
+      "card": "hook",
+      "suggested_rewrite_big": "Singapore charged three resellers for fraud over Nvidia servers routed to Malaysia. Johor's hyperscaler DC capacity is built under separate US licensing. Whether they sit on the same risk axis is the question.",
+      "rationale": "Restores the distinction between a reseller fraud case and hyperscaler-anchored capacity. Keeps the anxiety-of-precedent emotion but does not implicitly conflate the two regimes."
+    },
+    {
+      "card": "fact (Security, Tier 2)",
+      "suggested_rewrite_big": "Washington classified Malaysia 'Tier 2' under a rule it killed two days before it took effect. The operative regime now is case-by-case AI-chip licensing, which several US allies also operate under.",
+      "rationale": "Past-tenses the rescinded rule and contextualises case-by-case licensing as a wider norm rather than a Malaysia-specific brand."
+    },
+    {
+      "card": "fact (Economic, 5 GW Johor)",
+      "suggested_rewrite_big": "Johor has 80+ approved data-centre projects, more than 5 GW announced — roughly a quarter of peninsular peak demand on a gas-and-coal grid.",
+      "rationale": "Adds the grid-mix beat in the same character budget. Lets the reader hold both the FDI scale and the electricity-and-water bill in one line."
+    },
+    {
+      "card": "reframe",
+      "suggested_rewrite_big": "The question is not what Washington decides about Johor. It is whether the Malaysian state has the trans-shipment auditing capacity to know what is moving through it.",
+      "rationale": "Rotates from passive-exposure framing to sovereign-capacity framing. Retains anxiety-of-precedent but locates agency inside Putrajaya rather than DC."
+    },
+    {
+      "card": "view",
+      "suggested_rewrite_big": "Three men were charged in Singapore. Johor approved more capacity. The bill arrives — whether the line item is Washington, the grid, or an AI demand correction is what the next year decides.",
+      "rationale": "Replaces the single-cause Washington-shaped tail with the three actual risk channels surfaced in the brief itself. Still passes the WhatsApp-quote test and the subtraction test."
+    }
+  ],
+  "overall_assessment": "Stage 1 is well-disciplined on accuracy and on the four cardinal sins — it deliberately avoids naming a Malaysian operator, a Chinese AI firm, or a USD-denominated transaction figure, all of which would be tempting concretizers. The structural exposure framing is editorially sound. What it misses is non-Western and non-regulator voices: the Chinese state view that the US export-control envelope is itself contested, the hyperscaler view that their licensed capacity is a different risk surface from third-party reseller fraud, the developmental-state view that all industrial upgrading involves exposure to someone else's regulator, the technology-skeptic view that AI demand itself may be the binding constraint, and the Malaysian civil-society view that the bigger Johor story is electricity and water before chip provenance. The omissions do not falsify the analysis but they narrow the picture a reasonable reader takes away — from a triangular (US-China-Malaysia) and multi-channel (regulatory / grid / demand) story into a bilateral (US-Malaysia) and single-channel (regulatory) one. The five card-level rewrite suggestions above would broaden the frame without weakening the anxiety-of-precedent register or introducing unverified specifics. Completeness score 62 reflects strong primary-source discipline pulled down by missing non-Western framings and missing domestic critical voice."
+}

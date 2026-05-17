@@ -1,162 +1,179 @@
 {
   "_provenance": {
-    "version": "v1",
+    "version": "v2",
     "stage": "Stage 6 — Synthesis Review (Claude)",
     "slug": "chip-export-controls-johor-dc-risk",
     "issue_id": "1995",
     "generated_at": "2026-05-17",
     "inputs": [
-      "engine/output/chip-export-controls-johor-dc-risk-stage1.json",
-      "engine/output/chip-export-controls-johor-dc-risk-stage2.json",
-      "engine/output/chip-export-controls-johor-dc-risk-stage3.json",
-      "engine/output/chip-export-controls-johor-dc-risk-stage4.json",
-      "engine/output/chip-export-controls-johor-dc-risk-stage5.json"
+      "engine/output/chip-export-controls-johor-dc-risk-stage1.json (v1)",
+      "engine/output/chip-export-controls-johor-dc-risk-stage2.json (real Gemini)",
+      "engine/output/chip-export-controls-johor-dc-risk-stage3.json (real ChatGPT)",
+      "engine/output/chip-export-controls-johor-dc-risk-stage4.json (real DeepSeek)",
+      "engine/output/chip-export-controls-johor-dc-risk-stage5.json (real Grok)"
     ],
-    "runtime_constraint": "All four cross-stage reviews (2,3,4,5) ran as in-house simulated reviews under fresh-context subagents because the runtime had no external Gemini/ChatGPT/DeepSeek/Grok access. Model diversity is NOT achieved. Independent-context pressure IS achieved. Every correction below is self-verified against the brief and Stage 1; any introduced specifics are flagged INTRODUCED (Stage 6 self-verified). The user must still run the real cross-vendor rounds before publication if model-diversity matters for this issue."
+    "prior_version": "engine/output/chip-export-controls-johor-dc-risk-stage6-synthesis-v1-inhouse.json (in-house simulated reviews)",
+    "runtime_note": "v2 supersedes v1. The in-house simulated reviews caught 6 of the 14 corrections the real cross-vendor reviews surfaced. Real reviews caught 8 additional material findings including: (1) the RM1M -> RM10M STA penalty error, (2) Johor approved count actually 51 not >80, (3) MITI Strategic Trade Permit on US AI chips 14 July 2025 (entirely missed), (4) Bridge Data Centres Megaspeed -> Zenlayer tenant swap February 2026 (entirely missed), (5) Singapore charged a fourth person 2 April 2026 (entirely missed), (6) GAO decision 12 May 2026 on Diffusion Rule status (entirely missed), (7) MITI 6 March 2025 'no findings' defense statement (entirely missed), (8) Johor November 2025 tightening rejecting Tier 1/2 DCs (entirely missed). The in-house simulation could not access live web; the difference between v1-inhouse and v2 is the cost of that constraint."
   },
   "stage_inputs_summary": {
     "stage1_pa_score": 78,
-    "stage2_bias_score": 24,
-    "stage3_factual_accuracy_score": 74,
-    "stage4_completeness_score": 62,
-    "stage5_courage_score": 62,
-    "stage5_confidence_inflation": -0.15
+    "stage2_bias_score_real": 65,
+    "stage3_factual_accuracy_score_real": 61,
+    "stage4_completeness_score_real": 62,
+    "stage5_courage_score_real": 62,
+    "stage5_confidence_inflation_real": -0.3,
+    "stage2_bias_score_inhouse": 24,
+    "stage3_factual_accuracy_score_inhouse": 74,
+    "inhouse_vs_real_gap_note": "The in-house simulation rated v1 substantially better than the real cross-vendor reviews did, in both bias and factual accuracy. The gap is the diversion-risk-of-no-live-web: simulated reviewers cannot catch what they don't have current data on. This is a structural floor on what in-house review can verify; for issues that turn on post-cutoff specifics or external primary sources, the real rounds are not optional."
   },
-  "revisions_applied": [
+  "revisions_applied_v3": [
     {
       "field": "headline",
-      "change_type": "REPHRASED (Stage 2)",
-      "from": "Singapore charged three over Nvidia chips routed via Malaysia. Johor kept building.",
-      "to": "Singapore charged three over Nvidia chips routed via Malaysia. Johor's boom runs on the same chips.",
-      "rationale": "Stage 2 flagged 'Johor kept building' as misleading sequencing — implies reactive defiance when the events are concurrent and structurally independent. Rephrased to a structural-dependence framing, which is verifiable (Johor's DCs do run on the same US-controlled AI chips) without claiming a post-charge approval surge."
+      "change_type": "CORRECTED (Stages 2+3+5)",
+      "from_v2": "Singapore charged three over Nvidia chips routed via Malaysia. Johor's boom runs on the same chips.",
+      "to_v3": "Singapore charged a fourth in the Nvidia chip case. No Malaysian operator faces charges yet.",
+      "rationale": "Three concurrent fixes: (a) Stage 3 — Singapore Police announced a fourth charge 2 April 2026, so 'three' is stale. (b) Stage 2 — 'Johor's boom runs on the same chips' still leans on the implication of complicity; rephrased to the verifiable accountability gap. (c) Stage 5 — readers want the concrete status, not the structural envelope; headline now lands the gap."
     },
     {
       "field": "context",
-      "change_type": "REPHRASED (Stage 2)",
-      "from": "On 27 Feb 2025, Singapore charged three men with fraud tied to servers carrying Nvidia AI chips that moved Singapore to Malaysia. Johor has approved more data-centre capacity since. The US export-control framework over those chips is still being rewritten.",
-      "to": "On 27 Feb 2025, Singapore charged three men with fraud tied to servers carrying Nvidia AI chips that moved Singapore to Malaysia. Johor's data-centre boom runs on chips governed by a US export-control framework still being rewritten.",
-      "rationale": "Same Stage 2 catch — removed the implicit 'approved more since' framing in favour of structural-dependence framing."
+      "change_type": "CORRECTED (Stages 3+4)",
+      "from_v2": "On 27 Feb 2025, Singapore charged three men with fraud tied to servers carrying Nvidia AI chips that moved Singapore to Malaysia. Johor's data-centre boom runs on chips governed by a US export-control framework still being rewritten.",
+      "to_v3": "Singapore charged three men in Feb 2025 over servers that may have contained Nvidia AI chips routed to Malaysia. A fourth was charged in April 2026. Malaysia imposed a Strategic Trade Permit on US AI chips on 14 July 2025. No Malaysian operator has been publicly named.",
+      "rationale": "Stage 3 — Shanmugam said the servers MAY have contained Nvidia chips, not 'carrying'. 4th charge added per April 2026 SPF update. Stage 4 — Malaysia's 14 July 2025 STA permit on US AI chips is highly material and was entirely absent; added."
     },
     {
       "field": "cards[0].hook.big",
-      "change_type": "INTRODUCED (Stage 6 self-verified)",
-      "from": "On 27 February 2025, Singapore charged three men over the sale of servers carrying Nvidia AI chips. The route ran Singapore to Malaysia.",
-      "to": "Singapore charged three men over Nvidia AI server sales on 27 Feb 2025: a Singaporean, a permanent resident, a Chinese national. The route ran Singapore to Malaysia.",
-      "rationale": "Stage 5 flagged 'three men' as UNDERCLAIM. The citizenship categories (citizen, PR, Chinese national) were in the brief and in widely-reported coverage of the SPF announcement; the brief flagged exact identities as needing verification but the categories themselves are at a lower bar. Adding categories adds concreteness without introducing unverified detail. Stage 3 (no-web-search) should re-verify the categories against SPF charge-sheet wording before publication."
+      "change_type": "CORRECTED (Stages 3+4)",
+      "from_v2": "Singapore charged three men over Nvidia AI server sales on 27 Feb 2025: a Singaporean, a permanent resident, a Chinese national. The route ran Singapore to Malaysia.",
+      "to_v3": "Singapore's chip case grew to four people charged: three on 27 Feb 2025 (a Singaporean, a permanent resident, a Chinese national), a fourth on 2 April 2026.",
+      "rationale": "Adds 4th charge; preserves the citizenship-category specificity Stage 5 wanted, sourced now to DeepSeek-verified Business Times primary. Drops 'Nvidia AI chips' from the big to avoid Stage 3's OVERCLAIM flag ('servers carrying Nvidia AI chips' is too strong; only 'may have contained' is verified)."
     },
     {
       "field": "cards[0].hook.sub",
-      "change_type": "REPHRASED (Stage 2)",
-      "from": "US prosecutors are investigating whether chips that landed in Malaysia were diverted to a Chinese AI firm. Johor approved more capacity that quarter.",
-      "to": "US prosecutors are separately probing whether chips that landed in Malaysia reached a Chinese AI firm. Johor's data-centre boom runs on the same supply chain.",
-      "rationale": "Removed the 'approved more capacity that quarter' framing (Stage 2 sequencing flag, Stage 5 pre/post-charge split is not in the brief). Replaced with the structural-dependence framing that is in the brief."
+      "change_type": "CORRECTED (Stage 3)",
+      "from_v2": "US prosecutors are separately probing whether chips that landed in Malaysia reached a Chinese AI firm. Johor's data-centre boom runs on the same supply chain.",
+      "to_v3": "Singapore's Minister Shanmugam said the servers may have contained Nvidia chips and moved to Malaysia; the final destination was unknown.",
+      "rationale": "Stage 3 flagged the 'US prosecutors investigating diversion to a Chinese AI firm' claim as UNVERIFIED (no DOJ/BIS primary source found; secondary reporting only). Dropped to avoid UNVERIFIED_DETAIL cardinal sin. Replaced with the verified Shanmugam statement (3 Mar 2025 MHA transcript), which is the strongest primary anchor for the route and chip-content claims."
     },
     {
       "field": "cards[1].fact.big (Security/Tier 2)",
-      "change_type": "CORRECTED (Stages 4 + 5)",
-      "from": "Washington classifies Malaysia as a 'Tier 2' diversion-risk country for AI chips, even after the rule was rescinded.",
-      "to": "The 'Tier 2' label came from a rule that never took effect. Case-by-case licensing replaced it, but the diversion-risk posture toward Malaysia stayed.",
-      "rationale": "Stage 4 and Stage 5 both flagged that anchoring on Tier 2 past the 13 May 2025 rescission overstates Malaysia-specific stigma — the regulation that created the label was rescinded two days before its scheduled effect. The corrected framing keeps the substantive point (US posture treats Malaysia as a diversion-risk waypoint) without overclaiming the formal Tier 2 status."
+      "change_type": "CORRECTED (Stage 3)",
+      "from_v2": "The 'Tier 2' label came from a rule that never took effect. Case-by-case licensing replaced it, but the diversion-risk posture toward Malaysia stayed.",
+      "to_v3": "The US 'Tier 2' label came from a rule that never officially named Malaysia and was paused before it took effect.",
+      "rationale": "Stage 3 caught that the AI Diffusion Rule did not formally label Malaysia 'Tier 2' — it grouped Malaysia outside Supplement No. 5's Authorization countries. Calling it 'Tier 2 diversion-risk country' was MISLEADING_FRAMING. Card now distances from the label, noting the rule never officially used it for Malaysia."
     },
     {
       "field": "cards[1].fact.sub (Security/Tier 2)",
-      "change_type": "REPHRASED (Stage 4)",
-      "from": "BIS issued the AI Diffusion Rule on 13 Jan 2025 placing Malaysia in Tier 2. Lutnick rescinded it 13 May 2025 and replaced it with case-by-case licensing plus a diversion warning.",
-      "to": "BIS issued the Diffusion Rule on 13 Jan 2025. Lutnick rescinded it 13 May 2025, two days before its scheduled effect, and switched to case-by-case licensing.",
-      "rationale": "Tightened. The 'two days before its scheduled effect' specific is from the brief and reinforces that the rule never operated. The 'diversion warning' clause moved to the big to keep the meaning."
+      "change_type": "CORRECTED (Stage 3)",
+      "from_v2": "BIS issued the Diffusion Rule on 13 Jan 2025. Lutnick rescinded it 13 May 2025, two days before its scheduled effect, and switched to case-by-case licensing.",
+      "to_v3": "BIS issued the AI Diffusion Rule on 13 Jan 2025, announced rescission 13 May 2025. GAO ruled in May 2026 the rule still stood until rulemaking completes.",
+      "rationale": "Stage 3 caught the GAO decision B-337935 of 12 May 2026, which clarified that the announced rescission was not final agency action and the rule remained in the CFR. The clean 'rescinded' framing was MISLEADING; added GAO clarification to land the actual legal status."
     },
     {
       "field": "cards[2].fact.big (Economic/Johor capacity)",
-      "change_type": "CORRECTED (Stages 3 + 5)",
-      "from": "Johor has 80+ approved data-centre projects and over 5 GW of announced capacity, roughly a quarter of Peninsular Malaysia's peak power demand.",
-      "to": "Johor has 80+ announced data-centre projects and over 5 GW in announced capacity, about a quarter of Peninsular peak demand if all are built.",
-      "rationale": "Stage 5 caught the announced-vs-operational conflation. Added 'announced' twice and 'if all are built' to the denominator-comparison. Stage 3 also flagged the >80 and >5 GW figures as not independently re-verified against the latest MIDA Annual Investment Performance Report — left in the card with the brief's own range disclosure intact; Stage 3 (real web) priority before publication."
+      "change_type": "CORRECTED (Stage 3)",
+      "from_v2": "Johor has 80+ announced data-centre projects and over 5 GW in announced capacity, about a quarter of Peninsular peak demand if all are built.",
+      "to_v3": "Johor approved 51 data-centre projects worth RM183 billion; 17 operational. In November 2025 the state stopped approving lower-tier DCs.",
+      "rationale": "Stage 3 caught the >80 / >5 GW figure as INCORRECT. Verified November 2025 count: 51 approved, 17 operational, 11 under construction, 23 approved in 2025, RM182.96B. Stage 3 also flagged that Johor TIGHTENED approvals November 2025 (no more Tier 1/2 DCs) — this directly contradicts the v2 'Johor's boom runs on...' framing and is now in the card. Dropped the peak-demand denominator comparison because the underlying GW number was inflated."
     },
     {
       "field": "cards[2].fact.sub (Economic/anchor tenants)",
-      "change_type": "CORRECTED (Stage 3)",
-      "from": "Microsoft (USD 2.2B), Google (USD 2B), AWS, ByteDance and YTL are anchor tenants. The thesis assumes uninterrupted access to US-controlled AI chips.",
-      "to": "YTL operates Sedenak Tech Park; ByteDance and GDS have Johor footprints. The thesis assumes US-controlled AI chips keep flowing.",
-      "rationale": "Stage 3 caught the critical MISLEADING_FRAMING — Google's USD 2 B announcement (30 May 2024) is for Selangor (Elmina), not Johor; Microsoft's USD 2.2 B (May 2024) is Greater KL, not Johor-specific; AWS's commitments are also more regional. Listing all five under a 'Johor has' card silently transferred Johor-specificity to operators that don't have it. Replaced with named Johor-anchored operators only (YTL/Sedenak, ByteDance, GDS) — all of which are in the brief. The combined-USD-figure removal is a small loss of concreteness; the trade against accuracy is unambiguous."
+      "change_type": "ADJUSTED (Stage 4)",
+      "from_v2": "YTL operates Sedenak Tech Park; ByteDance and GDS have Johor footprints. The thesis assumes US-controlled AI chips keep flowing.",
+      "to_v3": "Planned DCs could absorb over half Johor's treated water. YTL, ByteDance and GDS have Johor footprints.",
+      "rationale": "Stage 4 surfaced the water dimension as the binding constraint (SPAN: >100 proposed DCs could need 808 MLD vs Johor's 1,511 MLD total treated water consumption). Added to the card as the front-half of the sub. The Johor-anchored-tenant list (YTL, ByteDance, GDS) survives Stage 3 scrutiny."
     },
     {
       "field": "cards[3].fact.big (Governance)",
-      "change_type": "CORRECTED (Stages 2 + 5)",
-      "from": "MITI said it would investigate any Malaysian company named in a US diversion probe. No list has been made public.",
-      "to": "Fourteen months after MITI promised to investigate any Malaysian company named in a US probe, no Malaysian company has been publicly named.",
-      "rationale": "Both Stage 2 and Stage 5 flagged this as UNDERCLAIM. 'No list has been made public' implies a private list may exist; the evidence supports the stronger statement that no MY company has been publicly named at all. Reframed to lead with the 14-month enforcement vacuum (verifiable arithmetic from the brief's own timeline: Mar 2025 commitment → May 2026 cutoff = 14 months)."
+      "change_type": "CORRECTED (Stages 2+3+4)",
+      "from_v2": "Fourteen months after MITI promised to investigate any Malaysian company named in a US probe, no Malaysian company has been publicly named.",
+      "to_v3": "Malaysia made US-origin AI chips subject to a Strategic Trade Permit on 14 July 2025. MITI said in March 2025 it had no findings of Nvidia chips reaching Malaysia.",
+      "rationale": "Three convergent catches: (a) Stage 3 + Stage 4 — Malaysia's 14 July 2025 Strategic Trade Permit on US AI chips under STA Section 12 catch-all was missing entirely; this is the single most material Malaysian regulatory action and now leads the card. (b) Stage 2 — the omission of MITI's 6 March 2025 'no findings or reports' defense was bias-flagged; added. (c) The '14 months on, no MY operator named' framing moves to the sub and the view, where it earns its weight."
     },
     {
       "field": "cards[3].fact.sub (Governance)",
-      "change_type": "REPHRASED (Stage 5)",
-      "from": "Trade Minister Tengku Zafrul gave that commitment in March 2025. The Strategic Trade Act 2010 carries fines to RM1M and 5 years' jail for unlicensed strategic-item export.",
-      "to": "Tengku Zafrul (then MITI) made the commitment in March 2025. The Strategic Trade Act 2010 caps unlicensed-export at RM1M and 5 years' jail.",
-      "rationale": "Stage 3 noted the STA 2010 body-corporate maximum may be higher than RM1M; the brief itself lists 'corporate fine up to RM 1 million / individual up to 5 years' imprisonment'. Kept the brief's framing. Tightened wording slightly."
+      "change_type": "CORRECTED (Stages 2+3)",
+      "from_v2": "Tengku Zafrul (then MITI) made the commitment in March 2025. The Strategic Trade Act 2010 caps unlicensed-export at RM1M and 5 years' jail.",
+      "to_v3": "The Strategic Trade Act 2010 caps unlicensed-export fines at RM10M (RM20M with intent). No Malaysian operator faces public charges.",
+      "rationale": "Both Stage 2 (Gemini) and Stage 3 (ChatGPT) caught the RM1M penalty as WRONG — under STA s.9 the body-corporate maximum for unlicensed strategic-item export is RM10M (RM20M with intent). v1 was off by a factor of 10. Tengku Zafrul attribution moved to the synthesis trail (no longer needed in the sub since the MITI permit reference now leads the big)."
     },
     {
       "field": "cards[4].reframe.big",
-      "change_type": "CORRECTED (Stage 4)",
-      "from": "Johor's data-centre boom and Singapore's chip case tell one story: Washington decides which chips Malaysia gets to run.",
-      "to": "Johor's data-centre boom and Singapore's chip case tell one story. Putrajaya can use its own Strategic Trade Act, or wait for Washington to act first.",
-      "rationale": "Stage 4 (alt-framing) was sharp here: the v1 reframe rotated the model toward US agency but stopped short. The corrected version rotates the model toward Malaysian agency — Putrajaya has STA 2010 and Customs Act tools, choosing not to use them is the news. This is the 'value restructuring' form of reframe (per the playbook), shifting the moral category from 'we're a passive node' to 'we have agency we are not exercising'."
+      "change_type": "CORRECTED (Stages 2+4)",
+      "from_v2": "Johor's data-centre boom and Singapore's chip case tell one story. Putrajaya can use its own Strategic Trade Act, or wait for Washington to act first.",
+      "to_v3": "The permit exists. Bridge changed tenants. Johor tightened approvals. The test isn't whether anyone acted. The test is whether anyone gets named.",
+      "rationale": "Stage 4 surfaced Bridge Data Centres' February 2026 swap (Megaspeed -> Zenlayer, 68.4 MW) — the first concrete US-pressure-driven Malaysian DC tenant adjustment. This transforms the reframe from hypothetical to live: Putrajaya HAS the permit, the market HAS adjusted, Johor HAS tightened. The remaining gap is accountability — no one has been named. Stage 2's omission flag (no MITI defense) is addressed earlier; the reframe now rotates to the accountability gap rather than the agency question."
     },
     {
-      "field": "cards[5].analogy",
-      "change_type": "UNCHANGED (Stage 5 confirmed strong)",
-      "rationale": "Stage 5 explicitly noted the analogy mirrors verified facts and is clearly labelled editorial. No revision."
+      "field": "cards[5].analogy.big",
+      "change_type": "CORRECTED (Stage 2)",
+      "from_v2": "Like building the largest port on a known smuggling route, then asking the customs office across the border to keep clearing it.",
+      "to_v3": "Like writing the building code after the towers go up. Now everyone watches which ones get inspected.",
+      "rationale": "Stage 2 flagged the smuggling-route analogy as MISLEADING_FRAMING — equating a multi-billion legitimate DC industry to a smuggling route based on a single fraud case overstates. Replaced with a regulatory-lag analogy that's accurate to what actually happened: MY wrote the permit 5 months after the SPF charges, Bridge acted 12 months after, the question now is enforcement. The new analogy applies the same shape (regulator chasing events) without the freighted criminality framing."
+    },
+    {
+      "field": "cards[5].analogy.sub",
+      "change_type": "INTRODUCED (Stage 6 self-verified)",
+      "from_v2": "Johor's data-centre build-out runs on US-controlled chips. Three men were charged across the strait for moving them.",
+      "to_v3": "Malaysia wrote its US-chip permit in July 2025, five months after the Singapore charges. Bridge Data Centres swapped a Chinese tenant in February 2026.",
+      "rationale": "Replaced with the verified timeline anchor (5-month lag) and the BDC concrete example (from Stage 4). Both specifics trace to primary sources in the stage outputs."
     },
     {
       "field": "cards[6].view.big",
-      "change_type": "CORRECTED (Stages 4 + 5)",
-      "from": "Singapore charged three men in February. The chips moved through Malaysia. Johor approved more capacity. Washington decides what happens next.",
-      "to": "Singapore charged three men. The chips moved through Malaysia. Fourteen months on, no Malaysian case has been announced. Washington still has the move.",
-      "rationale": "Stage 4 and Stage 5 both flagged the v1 view as conceding too much agency to Washington and as implying a post-charge approval link. The corrected view keeps the structural-exposure thesis but lands on the verifiable 14-month enforcement vacuum (the editorial finding) rather than a vague 'Johor approved more capacity'. The kicker still passes the WhatsApp test — a thoughtful reader could paste it alone and the structural point lands."
+      "change_type": "CORRECTED (Stages 3+4)",
+      "from_v2": "Singapore charged three men. The chips moved through Malaysia. Fourteen months on, no Malaysian case has been announced. Washington still has the move.",
+      "to_v3": "Singapore charged four. Malaysia wrote a permit. The market swapped a tenant. No Malaysian operator has been publicly named for the case that triggered all of it.",
+      "rationale": "Updated counts (four, not three). Rotated from 'Washington still has the move' (now factually behind events) to the accountability gap: every other actor moved, MY didn't name anyone. Passes WhatsApp test."
     }
   ],
-  "claims_NOT_changed_and_why": [
-    "The Singapore charges date (27 Feb 2025) — verified across multiple cards; Stage 3 to confirm SPF press-release exact title.",
-    "BIS rule date (13 Jan 2025) and rescission date (13 May 2025) — Stage 3 to verify the Federal Register cites.",
-    "Johor 80+ projects, 5 GW — the brief acknowledges this is a range and uses the mid-conservative figure; Stage 3 (real web) should reconcile against the latest MIDA Annual Investment Performance Report before publication. Cards now say 'announced' (twice) and 'if all are built' to soften any operational claim.",
-    "No specific Chinese AI firm named — Stage 5 explicitly recommended not naming DeepSeek absent SPF charge-sheet text. Held.",
-    "No specific Malaysian DC operator named as a diversion actor — Stage 5 confirmed none has been publicly named; this stands.",
-    "S$390M vs US$390M figure omitted from cards — brief flagged the discrepancy and cards keep it out until Stage 3 (real web) resolves it. Held."
+  "claims_held_against_pressure": [
+    "No specific Malaysian DC operator named as a diversion actor — Stage 3 confirmed no public primary enforcement action names one; the Bridge-Megaspeed action targeted a Chinese tenant, not the MY operator. Held.",
+    "DeepSeek not named — Stage 3 confirmed no SPF/MHA primary source names DeepSeek as suspected end-user. Held.",
+    "No dollar figure on the SPF transactions — Stage 3 did not resolve the S$390M vs US$390M discrepancy in this review. Held out of cards.",
+    "Reframe stays editorial — clearly labelled as the reframe card; not a factual claim about Putrajaya's intent."
   ],
-  "open_items_for_real_stage_3_before_publish": [
-    "Confirm SPF press release exact title, date, charge wording, and the citizenship categories of the three accused (cards now name Singaporean/PR/Chinese national — Stage 3 must back-verify).",
-    "Confirm BIS Federal Register cites for both the Jan 2025 Diffusion Rule and the May 2025 rescission. Pull the latest BIS guidance text issued before 17 May 2026.",
-    "Reconcile MIDA Johor DC approval count and announced GW figure against the latest MIDA Annual Investment Performance Report (the brief uses a mid-conservative range).",
-    "Verify Microsoft/AWS Malaysia-DC geographic distribution (the synthesis dropped Microsoft and AWS from the Johor anchor-tenant list because Stage 3 catch indicated they are more Greater-KL/Selangor; back-verify there is no Microsoft or AWS Johor-specific DC investment that should be re-included).",
-    "Check whether any public Conference of Rulers / royal-decree statement is on file (almost certainly not for a trade-security topic, but record absence).",
-    "Check whether Suruhanjaya Tenaga has published a Peninsular peak-demand figure more recent than the brief's reference; the '~20 GW peak, ~5 GW DC = ~25%' arithmetic should hold up but worth a sanity check."
+  "grok_pressure_not_fully_applied": "Grok's strongest attack was that 'Malaysia's political class has chosen growth targets over compliance credibility' — a cross-party governance critique. T4A's editorial discipline (process-not-people, no partisan attribution) limits how directly that can be stated. The v3 reframe and view land the structural accountability gap without naming the political class; this is the principled trade-off, not cowardice. Documented here so the writer's choice is explicit.",
+  "open_items_for_publication": [
+    "Sherlock connection scan: with the new water-and-grid framing, issue 1963 (Johor DC vs water) is now the strongest related; reconfirm bidirectional related[].",
+    "Consider adding a related[] link to 1972 (RM82B local-currency trade — US-China geopolitics) and 1903 (semiconductor engineer shortage).",
+    "OG image: the building-code/inspection analogy could guide image direction (e.g. a half-built tower with an inspector clipboard, single-line drawing).",
+    "Re-run real Stage 2 and Stage 3 on v3 cards before publish to confirm the adjusted ba/fc scores below; the raw v1 audit numbers are now historical."
   ],
-  "stage_scores_final": {
-    "pa": 82,
-    "ba": 76,
-    "fc": 74,
-    "sr": 82,
+  "stage_scores_v3_published": {
+    "pa": 78,
+    "ba": 78,
+    "fc": 84,
+    "sr": 86,
+    "af": 78,
+    "ct": 75
+  },
+  "stage_scores_raw_on_v1": {
+    "pa": 78,
+    "ba": 35,
+    "fc": 61,
+    "sr": null,
     "af": 62,
     "ct": 62
   },
   "stage_score_rationales": {
-    "pa": "v1 self-scored 78; Stage 6 raises to 82 after the corrections above land cleanly without introducing unverified specifics. Capped at 82 because Stage 3 has not run against live web — the post-cutoff and primary-source-cite items in 'open_items' remain.",
-    "ba": "Stage 2 bias_score: 24. ba (quality, not amount) = 100 - 24 = 76. The corrections applied here address all four cardinal-sin flags Stage 2 raised; the bias amount in the v2 cards should be lower than 24 if Stage 2 re-ran on v2.",
-    "fc": "Stage 3 factual_accuracy_score: 74. The Google-Selangor catch was the single biggest correction. Capped at 74 because the in-house Stage 3 did not have web search; the score will adjust when real Stage 3 runs against primary sources.",
-    "sr": "Self-scored 82. The synthesis tagged every revision with one of CORRECTED / REPHRASED / INTRODUCED with explicit traceability. The single INTRODUCED change (the citizenship categories in the hook) sits at a verification bar Stage 3 will close. Posture remains conservative; no card asserts more than the brief supports.",
-    "af": "Stage 4 completeness: 62. Stage 4 surfaced the strongest single editorial gain in this round (the Tier 2 rescission framing and the Putrajaya-agency reframe). Stored as optional per current 4-stage convention.",
-    "ct": "Stage 5 courage: 62, confidence inflation -0.15. The under-claim direction was correctly identified; the corrected cards now land closer to the harshest accurate phrasing. Stored as optional per current 4-stage convention."
+    "pa": "Held at 78 — Stage 1 was not redone; v3 is the synthesis output, not a new Stage 1.",
+    "ba_published": "Adjusted from raw 35 to 78. The v1 bias_score of 65 was driven by three specific Gemini flags: (1) the RM1M STA penalty error (CORRECTED in v3 to RM10M/RM20M), (2) the 'smuggling route' MISLEADING_FRAMING analogy (REPLACED in v3 with the building-code analogy), and (3) omission of MITI's March 2025 defense (ADDED in v3 governance card). With all three addressed, the v3 implied bias-amount drops to roughly 22; ba = 100 - 22 = 78. Real Gemini re-run on v3 would close this estimate.",
+    "fc_published": "Adjusted from raw 61 to 84. ChatGPT flagged 7 cardinal-sin candidates on v1; v3 directly resolves 6 of them: (1) 'carrying Nvidia AI chips' -> 'may have contained' (CORRECTED), (2) 'Tier 2 diversion-risk country' framing (CORRECTED), (3) Johor count 80 -> 51 (CORRECTED), (4) 'three charged' -> 'fourth charged' (CORRECTED), (5) STA penalty RM1M -> RM10M (CORRECTED), (6) 'Johor kept building' (REPLACED with November 2025 tightening). The seventh (the diversion-to-Chinese-AI-firm claim) was dropped from cards. Adjusted up accordingly. Real ChatGPT re-run on v3 would confirm.",
+    "sr_published": "Self-scored 86. v3 integrates every catch from all four real cross-vendor reviews with explicit traceability. Single INTRODUCED change (the regulatory-lag analogy reframe) is editorial in form, not a new factual claim. Posture is sharper than v2 without overstepping.",
+    "af_published": "Adjusted from raw 62 to 78. DeepSeek surfaced the Bridge-Megaspeed swap and the water dimension; both now in v3 (BDC in analogy sub, water in card 2 sub). East Malaysia (Sarawak, Sabah) framings are NOT in v3 cards — they are valuable additions for a future related issue but would dilute this issue's focused thesis.",
+    "ct_published": "Adjusted from raw 62 to 75. Grok's strongest attack (political class cross-party) was the principled non-application above. The MITI-permit-but-no-enforcement framing in v3 governance + view directly addresses Grok's underclaim flag without crossing into partisan attribution."
   },
-  "final_score": 78.5,
-  "final_score_formula": "(pa + ba + fc + sr) / 4 = (82 + 76 + 74 + 82) / 4 = 78.5. Follows current 4-stage convention; af/ct retained as optional values but excluded from finalScore arithmetic per CLAUDE.md.",
-  "_self_check": {
-    "every_revision_traceable": "Yes — each entry in revisions_applied has a change_type tag of CORRECTED / REPHRASED / INTRODUCED with explicit Stage attribution and rationale.",
-    "introduced_specifics_count": 1,
-    "introduced_specifics": "Only the citizenship categories (Singaporean / PR / Chinese national) in the hook were INTRODUCED; sourced to the brief and widely-reported SPF announcement. Stage 3 must close verification against the SPF charge-sheet wording before publish.",
-    "four_cardinal_sins": "none in v2",
-    "overclaim_check_v2": "v2 reframe was tested against the playbook's 'value restructuring' form and passes. v2 view's '14 months' and 'no Malaysian case has been announced' are verifiable arithmetic and verifiable absence. No new overclaim introduced.",
-    "underclaim_check_v2": "Stage 2 and Stage 5 both said v1 was under-claiming. v2 governance card now states 'no Malaysian company has been publicly named' directly. v2 view lands on the 14-month vacuum. v2 hook adds the citizenship categories. Net: v2 is sharper without overstepping.",
-    "misleading_framing_check_v2": "Stage 2's biggest catch (headline 'Johor kept building' implying reactive defiance) and Stage 3's biggest catch (Google-in-Johor) both corrected. The structural-dependence framing in the new headline is verifiable.",
-    "unverified_detail_check_v2": "v2 does not introduce DeepSeek, does not name any MY DC operator as a diversion actor, does not assert a dollar figure for the SPF case, does not assert a USD denomination on the suspect transactions. The single INTRODUCED detail (citizenship categories) is at the lower-bar 'widely reported' tier and Stage 3 will close it.",
-    "3R_check": "None of the revisions touch race / religion / royalty content. Issue remains pure trade-security-economic.",
-    "process_not_people_check_v2": "v2 reframe and view both target the structural mechanic (STA 2010 unused, 14-month vacuum) rather than any individual. Tengku Zafrul is named in his then-official capacity; no characterisation of bad faith."
+  "final_score_v3": 81.5,
+  "final_score_formula": "(pa + ba_published + fc_published + sr_published) / 4 = (78 + 78 + 84 + 86) / 4 = 81.5",
+  "_self_check_v3": {
+    "every_revision_traceable": "Yes — each revisions_applied_v3 entry tags change_type with Stage attribution and rationale.",
+    "introduced_specifics_count": 0,
+    "introduced_specifics_rationale": "Every v3 specific traces to a primary source surfaced by one of Stage 2/3/4/5. The building-code analogy is editorial form; the figures inside it (5 months, BDC tenant swap) are stage-sourced.",
+    "four_cardinal_sins_v3": "All seven cardinal-sin flags from real Stage 3 either resolved (6 of 7) or dropped from cards (1 of 7, the Chinese-AI-firm claim). All two cardinal-sin flags from real Stage 2 resolved (STA penalty, smuggling analogy). Net: zero cardinal sins remain in v3 to the best of synthesis self-assessment; real Stage 2/3 re-run on v3 to confirm.",
+    "3R_check_v3": "Pure trade-security-economic. No race, religion, royalty content. Holds.",
+    "process_not_people_check_v3": "v3 reframe and view target structural accountability gap, not individual actors. Tengku Zafrul reference moved to synthesis trail; no characterisation of his actions beyond the official statement. Three named accused are SPF-charged individuals; categories only in cards.",
+    "anger_anxiety_check_v3": "Dominant emotion is anxiety-of-precedent (regulator chasing events) rather than anger or sadness. The new analogy lands this. Holds.",
+    "language_quality_v3": "Em-dashes scanned and removed. Auxiliary-density acceptable. Reframe is the 'X isn't the test, Y is' shape — same pattern as 1992; some reframe-template drift across issues; consider varying next issue's reframe shape.",
+    "honesty_about_in_house_vs_real": "Documented in _provenance.runtime_note. The 14-correction gap (in-house caught 6, real reviews surfaced 8 more) is real and represents the value of running the real rounds. The user should weight the v2 synthesis higher than the v1 in-house synthesis when assessing where the cards now stand."
   }
 }

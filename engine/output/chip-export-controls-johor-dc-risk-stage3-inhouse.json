@@ -1,0 +1,168 @@
+{
+  "_runtime_constraint": "no_web_search_available",
+  "_provenance": {
+    "stage": "Stage 3 — Fact Verification (Claude, runtime-constrained)",
+    "issue_id": "1995",
+    "slug": "chip-export-controls-johor-dc-risk",
+    "generated_at": "2026-05-17",
+    "method": "No live web search available. Verification performed against (a) the research brief's cited primary sources, (b) Claude training data with explicit VERIFIED_FROM_TRAINING flagging, and (c) UNVERIFIED status where neither path yields a primary source. No URLs fabricated."
+  },
+  "factual_accuracy_score": 74,
+  "source_diversity_estimate": 0.65,
+  "claims": [
+    {
+      "claim": "On 27 February 2025, Singapore charged three men with fraud tied to the sale of servers carrying Nvidia AI chips.",
+      "status": "VERIFIED_FROM_BRIEF",
+      "m_true": 0.85,
+      "m_false": 0.0,
+      "m_unknown": 0.15,
+      "source": "Singapore Police Force press release, 27 Feb 2025 (cited in brief §CONTEXT and §SOURCES item 3). Multi-outlet reporting (Reuters, Bloomberg, WSJ) corroborates date and headline facts.",
+      "correction": "None on date or count. Stage 1 correctly avoids naming the accused, which the brief flags as NEEDS VERIFICATION on identities."
+    },
+    {
+      "claim": "The servers moved from Singapore to Malaysia (per Minister K. Shanmugam's statement).",
+      "status": "VERIFIED_FROM_BRIEF",
+      "m_true": 0.8,
+      "m_false": 0.0,
+      "m_unknown": 0.2,
+      "source": "Brief §CONTEXT 27 Feb 2025 entry attributes the route claim to Shanmugam; brief §SOURCES item 4 references the MHA statement.",
+      "correction": "Brief flags exact phrasing for Stage 3 verification. The Stage 1 card paraphrases the route claim without quoting, which is the conservative choice. No correction needed; primary source query: search Singapore Parliament Hansard Feb–Mar 2025 for Shanmugam statement on the chip-server case."
+    },
+    {
+      "claim": "BIS issued the AI Diffusion Rule on 13 January 2025 placing Malaysia in Tier 2; cite 90 Fed. Reg. 4544 (15 January 2025).",
+      "status": "VERIFIED_FROM_BRIEF",
+      "m_true": 0.9,
+      "m_false": 0.0,
+      "m_unknown": 0.1,
+      "source": "Brief §SOURCES item 1, with direct URL to federalregister.gov. Distinction between issue date (13 Jan, BIS press release) and Federal Register publication date (15 Jan, 90 FR 4544) is correct and is a normal regulatory pattern.",
+      "correction": "Stage 1 card text says 'issued the AI Diffusion Rule on 13 January 2025' and sources entry cites '90 Fed. Reg. 4544 (15 January 2025)'. Both are accurate; the 13 Jan vs 15 Jan distinction (BIS announcement vs FR publication) is correctly handled. No correction."
+    },
+    {
+      "claim": "Commerce Secretary Lutnick rescinded the Diffusion Rule on 13 May 2025, two days before its scheduled 15 May effect.",
+      "status": "VERIFIED_FROM_TRAINING",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Training data confirms Lutnick announcement of rescission on 13 May 2025 and that the Diffusion Rule was scheduled to take effect 15 May 2025. Brief §CONTEXT confirms. Federal Register cite for the rescission itself is flagged NEEDS VERIFICATION in both brief and Stage 1.",
+      "correction": "Stage 1 correctly flags the exact Federal Register cite as needing Stage 3 verification. Primary source query: federalregister.gov, search 'Rescission of Framework for Artificial Intelligence Diffusion' filed May 2025; BIS website news releases dated 2025-05-13."
+    },
+    {
+      "claim": "Malaysia has more than 80 approved data-centre projects with announced capacity above 5 GW.",
+      "status": "UNVERIFIED",
+      "m_true": 0.45,
+      "m_false": 0.05,
+      "m_unknown": 0.5,
+      "source": "Brief §KEY STATISTICS uses '>80 projects' as a mid-range figure but flags it as NEEDS VERIFICATION; industry-tracker estimates (Cushman & Wakefield, DC Byte, Knight Frank) cited but disclosed as commercial-interest sources. MIDA Annual Investment Performance Report 2024 is referenced but the specific approval count for Johor is not extracted in the brief.",
+      "correction": "The numbers are plausible mid-range figures aligned with public MITI/MIDA vocabulary, but neither the brief nor training data yields a single authoritative count tied to a specific date. Soften card to 'more than 80' (which Stage 1 already does) and consider adding 'as of 2025' to avoid implying a single-point figure. Primary source query: latest MIDA Annual Investment Performance Report (likely 2025 edition published 2026) for the Johor approved DC project count and announced GW figure."
+    },
+    {
+      "claim": "5 GW is 'roughly a quarter of Peninsular Malaysia's peak electricity demand'.",
+      "status": "VERIFIED_FROM_BRIEF",
+      "m_true": 0.65,
+      "m_false": 0.1,
+      "m_unknown": 0.25,
+      "source": "Brief §KEY STATISTICS uses ~20 GW for Peninsular peak demand, citing Energy Commission. 5/20 = 25% which matches 'roughly a quarter'. Brief flags the latest peak figure as NEEDS VERIFICATION.",
+      "correction": "Math is correct given the brief's denominator. Risk: if Peninsular peak has risen above 20 GW by 2025–2026 (which it likely has given recent demand growth), '5 GW = a quarter' overstates the ratio slightly. Primary source query: Suruhanjaya Tenaga Peninsular Malaysia Electricity Supply Industry Outlook latest edition for FY2024/2025 peak demand. If peak is 21–22 GW, the share is closer to 23–24%; 'roughly a quarter' still holds. Recommend keeping the phrasing as written."
+    },
+    {
+      "claim": "Microsoft announced USD 2.2 B Malaysia investment on 2 May 2024.",
+      "status": "VERIFIED_FROM_TRAINING",
+      "m_true": 0.9,
+      "m_false": 0.0,
+      "m_unknown": 0.1,
+      "source": "Training data confirms Microsoft CEO Satya Nadella's 2 May 2024 announcement in Kuala Lumpur of a USD 2.2 billion four-year investment in cloud and AI infrastructure in Malaysia. Brief §SOURCES item 10 references the Microsoft news release directly.",
+      "correction": "None. Stage 1 figure and date both correct."
+    },
+    {
+      "claim": "Google announced USD 2 B Malaysia investment on 30 May 2024.",
+      "status": "VERIFIED_FROM_TRAINING",
+      "m_true": 0.85,
+      "m_false": 0.0,
+      "m_unknown": 0.15,
+      "source": "Training data confirms Google's 30 May 2024 announcement of USD 2 billion investment in a Malaysia data centre and Google Cloud region in Selangor (Elmina Business Park). Brief §SOURCES item 11 references the Google blog post directly.",
+      "correction": "Minor: Google's investment is in Selangor (Elmina), not Johor specifically. Stage 1 card groups Google with 'Johor anchor tenants' which is technically inaccurate — Google's confirmed Malaysia DC is in Selangor, not Johor. This is a MISLEADING_FRAMING candidate (see cardinal_sin_flags below)."
+    },
+    {
+      "claim": "Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail for unlicensed export of listed strategic items.",
+      "status": "VERIFIED_FROM_TRAINING",
+      "m_true": 0.7,
+      "m_false": 0.1,
+      "m_unknown": 0.2,
+      "source": "Training data: Malaysia Strategic Trade Act 2010 (Act 708) penalties for unlicensed export of strategic items vary by offence type. Section 9 (export without permit) carries fines that can exceed RM 1 million for a body corporate (training-data memory suggests up to RM 5 million in some sections for repeat / aggravated cases, and individual imprisonment up to 5 years). Brief §RELEVANT LAW asserts 'RM 1 million / 5 years' as the headline figure.",
+      "correction": "The RM 1 million / 5 years framing may UNDERSTATE the actual statutory maximum for body corporates under STA 2010 — some sections allow fines up to RM 5 million or higher and longer imprisonment for aggravated offences. Recommend Stage 6 either (a) verify exact penalty section against AGC consolidated text and use the correct maximum, or (b) hedge to 'penalties up to' rather than commit to RM 1 M / 5 years as the cap. Primary source query: AGC Malaysia consolidated text of Act 708, sections on penalties (typically ss. 9–17 cover offences and penalties)."
+    },
+    {
+      "claim": "Tengku Zafrul (then Trade Minister) committed in March 2025 to investigate any Malaysian company named in a US diversion probe.",
+      "status": "UNVERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.05,
+      "m_unknown": 0.35,
+      "source": "Brief §CONTEXT (Mar 2025) and §SOURCES item 7 both flag this as NEEDS VERIFICATION on exact date and forum. Stage 1 likewise flags. The commitment is widely reported in secondary press but the original ministerial statement has not been pinned to a single dated release.",
+      "correction": "Stage 1 conservatively says 'March 2025' without a specific date, which is appropriate. Primary source query: MITI press releases March 2025; Tengku Zafrul Facebook / X posts March 2025; Dewan Rakyat Hansard March 2025 for any parliamentary question on the chip-diversion case."
+    },
+    {
+      "claim": "Stage 1 does NOT name DeepSeek (or any specific Chinese AI firm) as the suspected end-user.",
+      "status": "VERIFIED_FROM_BRIEF",
+      "m_true": 0.95,
+      "m_false": 0.0,
+      "m_unknown": 0.05,
+      "source": "Cards in Stage 1 reference 'a Chinese AI firm' generally. Brief §CONTRADICTIONS explicitly warns: 'Cards should reference a Chinese AI firm unless Stage 3 verifies a direct named link in the indictment.' Stage 1 follows this guidance correctly.",
+      "correction": "None. This is the correct conservative posture given that DeepSeek's connection has been reported in secondary press but the brief notes the SPF charge sheet language has been more cautious. Primary source query: SPF press release 27 Feb 2025 full text + AGC Singapore charge sheets filed against the three accused — search for any named end-user in the indictment."
+    },
+    {
+      "claim": "S$390M vs US$390M currency discrepancy: Stage 1 omits the figure entirely.",
+      "status": "VERIFIED_FROM_BRIEF",
+      "m_true": 0.95,
+      "m_false": 0.0,
+      "m_unknown": 0.05,
+      "source": "Brief §CONTRADICTIONS first item, §KEY STATISTICS second item. Stage 1 cards do not include any dollar figure for the Singapore transactions, which matches the brief's instruction.",
+      "correction": "None. Omission is the right call until the charge sheet currency is verified. Primary source query: SPF / AGC Singapore charge sheets, Singapore court docket for the three-accused case (likely State Courts Singapore)."
+    },
+    {
+      "claim": "ECCN 3A090 covers advanced AI accelerators under 15 CFR Parts 730–774 (EAR).",
+      "status": "VERIFIED_FROM_TRAINING",
+      "m_true": 0.85,
+      "m_false": 0.0,
+      "m_unknown": 0.15,
+      "source": "Training data: ECCN 3A090 was added to the Commerce Control List (15 CFR Part 774 Supplement 1) in October 2022 and revised in October 2023 to cover advanced computing integrated circuits used in AI applications. This is a well-established regulatory classification.",
+      "correction": "None on the citation. Stage 1's sources entry is accurate."
+    },
+    {
+      "claim": "No Malaysian DC operator has been publicly named in a US BIS / DOJ / Commerce enforcement action between Feb 2025 and May 2026.",
+      "status": "UNVERIFIED",
+      "m_true": 0.55,
+      "m_false": 0.1,
+      "m_unknown": 0.35,
+      "source": "Brief §CONTEXT (May 2026 entry) and Stage 1 needs_verification both flag this as the principal post-cutoff item. No primary source available in runtime to confirm status as of May 2026.",
+      "correction": "Stage 1 correctly hedges by not naming any operator. Primary source query (must run before publication): (a) BIS Entity List additions Feb 2025 – May 2026, search 'Malaysia' on bis.doc.gov; (b) DOJ press releases Feb 2025 – May 2026 for any Malaysia-routed chip indictments; (c) OFAC SDN list updates for Malaysian entities. If a Malaysian operator has been named between Stage 1 generation and publication, Stage 6 must update cards. If still no name as of publication date, current Stage 1 framing stands."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Microsoft (USD 2.2 B announced May 2024), Google (USD 2 B announced May 2024), AWS, ByteDance and YTL are anchor tenants [implied: of Johor data centres].",
+      "why": "The fact card frames Microsoft, Google, AWS, ByteDance and YTL as Johor anchor tenants. Google's USD 2 B investment is specifically for a Selangor / Elmina data centre and Cloud region, not Johor. Microsoft's USD 2.2 B is a national cloud/AI investment, not specifically a Johor DC build. Grouping them as Johor-specific anchor tenants overstates Johor specificity. The original brief itself lists Microsoft, Google, AWS, ByteDance, YTL etc. without strictly partitioning Johor vs Selangor in its anchor-tenant list, but Stage 1's card sits inside the 'Johor has more than 80 approved data-centre projects' frame, which transfers Johor specificity to all listed names.",
+      "primary_source": "Google blog 30 May 2024 (announces Selangor / Elmina DC); Microsoft news release 2 May 2024 (announces Malaysia-wide cloud-AI investment, not Johor-specific)."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "More than 80 approved data-centre projects with announced capacity above 5 GW.",
+      "why": "Brief explicitly flags both the project count and the GW figure as NEEDS VERIFICATION against the latest MIDA Annual Investment Performance Report. The numbers are conservative mid-range estimates rather than primary-source-verified figures. Acceptable for publication only if Stage 6 either (a) verifies against the latest MIDA report, or (b) softens phrasing further (e.g., 'public statements describe more than 80 approved projects').",
+      "primary_source": "MIDA Annual Investment Performance Report (latest edition) — not extracted in runtime."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail.",
+      "why": "Candidate overclaim in the opposite direction — the headline penalty figure (RM 1 M / 5 yrs) may UNDERSTATE the statutory maximum for body corporates under STA 2010, which on training-data memory can exceed RM 1 M for aggravated/repeat offences. The risk is presenting the cap as definitive when the section-specific maximum is higher. Stage 6 should verify against AGC consolidated text of Act 708 sections on penalties.",
+      "primary_source": "Strategic Trade Act 2010 (Act 708), AGC Malaysia consolidated text, penalty sections."
+    }
+  ],
+  "omitted_facts": [
+    "Stage 1 does not mention the US Foreign Direct Product Rule (FDPR), which the brief identifies as central to enforcement against diversion through third countries. Including a single line about FDPR would strengthen the security card's structural argument. Source: brief §RELEVANT LAW.",
+    "Stage 1 does not name a specific date for Trump's 23 January 2025 executive order revoking the Biden AI EO, which is part of the policy chain that led to the May 2025 rescission. Brief §CONTEXT 23 Jan 2025 entry. Not essential, but useful context if any card needs expansion.",
+    "Stage 1 does not cite the BIS May 2025 guidance on Huawei Ascend chips being 'covered globally under EAR', which is part of the parallel diversion-enforcement story. Brief §RELEVANT LAW entry on BIS May 2025 guidance.",
+    "Stage 1 does not reference the post-rescission case-by-case licensing framework as the current operative regime in detail — the fact card mentions 'case-by-case licensing' once but does not flag that this regime is what governs Johor's tenants today. Minor; defensible omission given length budget."
+  ],
+  "source_assessment": "Stage 1's source set is strong on the legal/statutory side (EAR, BIS Federal Register, Strategic Trade Act 2010, Singapore Penal Code via brief) and on the corporate announcement side (Microsoft, Google direct press releases). It is weaker on (a) the Singapore charge-sheet specifics (which the brief itself flags as NEEDS VERIFICATION — exact accused identities, exact penal-code section, exact transaction value currency), (b) the current Johor DC approval count (industry-tracker sources have commercial interest), and (c) post-cutoff (Feb 2025 – May 2026) US enforcement actions. Source spectrum is reasonable: US government (BIS), Singapore government (SPF, MHA), Malaysia government (MITI, MIDA), independent press (Reuters / Bloomberg / WSJ), and policy analysis (CSIS). Critical / civil-society sources are thin on the diversion-risk angle, as the brief itself flagged. No echo chamber, but the industry-tracker bias on DC capacity figures is a real gap.",
+  "overall_assessment": "Stage 1 is editorially disciplined and factually conservative. The Stage 1 author correctly anticipated which specifics could not be verified without web search and either omitted them (the S$390M figure, the Chinese AI firm name, the Malaysian recipient company) or flagged them in needs_verification (BIS rescission FR cite, MITI March 2025 statement date, current MIDA approval count). The legal framework citations (EAR, BIS Diffusion Rule, ECCN 3A090, Strategic Trade Act 2010, Customs Act 1967) are sound. The Singapore case date (27 Feb 2025) and route claim are well-supported by the brief. Two real issues for Stage 6 to address before publication: (1) the Google-in-Johor framing is technically a misleading framing because Google's confirmed Malaysia DC is in Selangor, not Johor — Stage 6 should either move Google out of the Johor anchor-tenant list or generalise the claim to 'Malaysian anchor tenants'; (2) the STA 2010 penalty figure should be verified against AGC consolidated text to avoid an underclaim of the statutory maximum. Three claims (current Johor approval count, MITI March 2025 statement, post-cutoff enforcement status) remain UNVERIFIED in this runtime and must be checked by a human before publication. Factual accuracy score 74 reflects: strong on statutory framework and case existence, conservative on operational specifics, with one real misleading-framing candidate (Google/Johor), one underclaim candidate (STA penalty), and three UNVERIFIED items the runtime could not resolve."
+}
