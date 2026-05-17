@@ -1,0 +1,61 @@
+{
+  "_provenance_note": "Stage 2 (Gemini bias audit) v2 — second run, received 2026-05-17. Diverged sharply from v1 (BA 85 / bias_score 15) by scoring bias_score 75 (BA 25). The v1 flagged the hospital-analogy as anti-probe; v2 flags the reframe as pro-Rafizi UNDERCLAIM. Both runs are saved for Phase 5 synthesis; the divergence is itself a signal that the cards are contested from both directions.",
+  "bias_score": 75,
+  "political_lean_estimate": -0.8,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": -0.2,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.2,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [
+    {
+      "quote": "The same coalition designed all three steps.",
+      "why_biased": "It attributes the independent investigative and prosecutorial actions of the MACC and AGC directly to the ruling political coalition, presenting a partisan 'witch-hunt' narrative as absolute fact.",
+      "fix": "Remove the claim that the coalition 'designed' these steps. State instead that the legal process is occurring while the coalition remains in power."
+    }
+  ],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "The analysis completely omits the role of the NGOs that lodged the initial complaints with the MACC, portraying the investigation solely as an elite, intra-government political clash rather than one originating from civil society watchdogs."
+  ],
+  "evasion_flags": [
+    "The analysis evades the actual criminal nature of the recommended charges (abuse of power, cheating, CBT) in its 'reframe' card, dodging the severity of the allegations by pivoting strictly to a sterile administrative debate over 'procurement tracks'."
+  ],
+  "shoe_test_failures": [
+    "If a pro-government figure were facing criminal breach of trust charges, the analysis would likely not dismiss the MACC's probe as a mere 'procurement track' misclassification. The benevolent reframing of criminal statutes into an administrative question reveals a stark double standard."
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "quote": "The same coalition designed all three steps.",
+      "why": "Asserts without evidence that the ruling coalition orchestrated the MACC's charging recommendation and the AGC's impending prosecutorial decision, conflating independent statutory processes with partisan design.",
+      "fix": "Remove 'designed all three steps' and neutrally state the political context without asserting direct orchestration."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Azam Baki announced the recommendation to charge two on 6 May 2026, six days before his tenure as MACC chief ended.",
+      "why": "The deliberate juxtaposition of the charging announcement with the exact countdown to the chief's retirement mathematically guides the reader to infer improper timing or retaliation, violating the 'process-not-people' mandate.",
+      "fix": "Separate the two facts to remove the suggestive 'six days before' causal implication, or provide broader context on the investigation's overall timeline."
+    },
+    {
+      "sin": "UNDERCLAIM",
+      "quote": "The question is not whether to prosecute. It is which procurement track a 10-year, RM1.1 billion IP-licensing deal should have to clear.",
+      "why": "Softens serious criminal allegations under the MACC Act and Penal Code (cheating, CBT) by reducing them to a benign bureaucratic disagreement over 'procurement tracks'.",
+      "fix": "Acknowledge that the core question involves alleged criminal abuse of power and breach of trust, not just administrative procurement classification."
+    }
+  ],
+  "verification_log": [
+    {"claim": "RM1.1 billion Arm Holdings semiconductor deal, signed in March 2025", "status": "VERIFIED", "primary_source": "MIDA media release, corroborated by multiple news reports (The Star, Bernama) confirming the signing and RM1.1B value.", "corrected_value": ""},
+    {"claim": "Akmal Nasrullah, the new Economy Minister, said on 23 February the deal continues", "status": "VERIFIED", "primary_source": "Bernama and Malay Mail articles dated Feb 23, 2026.", "corrected_value": ""},
+    {"claim": "Azam Baki announced the recommendation to charge two on 6 May 2026, six days before his tenure as MACC chief ended.", "status": "VERIFIED", "primary_source": "The Star and FMT articles (May 6, 2026) confirming the announcement and Azam's tenure ending on May 12, 2026.", "corrected_value": ""},
+    {"claim": "abuse of power under MACC Act s.23, cheating under Penal Code s.420, criminal breach of trust under s.409", "status": "VERIFIED", "primary_source": "The Star (May 7, 2026) reporting on Azam Baki's press conference explicitly citing Sections 23, 420, and 409.", "corrected_value": ""},
+    {"claim": "Rafizi resigned in May 2025 after losing the PKR deputy-president race to Anwar's daughter Nurul Izzah, 3,866 votes to 9,803.", "status": "VERIFIED", "primary_source": "Bernama and Sinar Harian reports from May 2025 detailing the exact vote tally (9,803 for Nurul Izzah vs 3,866 for Rafizi) and his resignation.", "corrected_value": ""},
+    {"claim": "The deal keeps delivering chip-design IP access to SkyeChip, Oppstar, and GreatAsic.", "status": "VERIFIED", "primary_source": "FMT and The Edge articles (May 11, 2026) confirming these three firms received Arm's design tokens from the government.", "corrected_value": ""}
+  ],
+  "overall_assessment": "The analysis exhibits significant partisan bias favoring Rafizi Ramli by systematically softening the criminal nature of the MACC probe. It reduces allegations of cheating and criminal breach of trust to a mere administrative dispute over 'procurement tracks', which is a severe underclaim. Furthermore, it overclaims that the ruling coalition 'designed' the independent actions of the MACC and AGC, pushing a political conspiracy narrative as absolute fact. The strategic juxtaposition of the MACC chief's retirement countdown further manipulates the reader into inferring retaliation. While the underlying facts and figures are accurately researched and independently verified, their framing and synthesis construct a highly slanted defense rather than an objective institutional review."
+}
