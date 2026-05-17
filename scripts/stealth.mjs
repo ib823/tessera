@@ -80,6 +80,7 @@ async function main() {
     html = html.replace(/astro-island/g, 'd-island');
     html = html.replace(/astro-slot/g, 'd-slot');
     html = html.replace(/astro-static-slot/g, 'd-ss');
+    html = html.replace(/astro-retry/g, '_r-retry');
 
     // Astro globals and events
     html = html.replace(/self\.Astro/g, 'self._R');
@@ -132,6 +133,7 @@ async function main() {
     js = js.replace(/svelte-trusted-html/g, '_th');
     js = js.replace(/Failed to hydrate/g, 'Load error');
     js = js.replace(/astro-slot/g, 'd-slot');
+    js = js.replace(/astro-retry/g, '_r-retry');
     js = js.replace(/self\.Astro/g, 'self._R');
     js = js.replace(/astro:/g, '_r:');
     js = js.replace(/svelte-[a-z0-9]+/g, (m) => '_' + shortHash(m));
