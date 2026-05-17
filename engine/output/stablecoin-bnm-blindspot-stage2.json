@@ -1,0 +1,88 @@
+{
+"bias_score": 12,
+"political_lean_estimate": 0.0,
+"ethnic_framing_estimate": 0.0,
+"religious_sensitivity_estimate": 0.0,
+"narrative_framing_estimate": 0.0,
+"geographic_bias_estimate": 0.0,
+"economic_framing_estimate": 0.2,
+"gender_agency_estimate": 0.0,
+"partisan_flags": [],
+"racial_flags": [],
+"religious_flags": [],
+"geographic_flags": [],
+"economic_flags": [],
+"gender_flags": [],
+"omission_flags": [
+"Omits the structural policy reasons why Bank Negara Malaysia and the Securities Commission restrict foreign currency stablecoins on domestic platforms, such as capital flight mitigation, maintaining currency stability, and preserving domestic monetary sovereignty."
+],
+"evasion_flags": [
+"Evades clarifying whether off-platform holdings by individuals violate foreign exchange administration rules under Central Bank oversight, framing the policy outcome purely as a visibility blindspot rather than assessing explicit legal boundaries."
+],
+"shoe_test_failures": [],
+"cardinal_sin_flags": [
+{
+"sin": "UNVERIFIED_DETAIL",
+"quote": "Malaysia approves 22 digital assets.",
+"why": "The official Securities Commission Malaysia list of tradeable digital assets contains 23 approved tokens as of May 2026, with the inclusion of assets up to The Graph (GRT).",
+"fix": "Update the approved digital asset token count from 22 to 23."
+},
+{
+"sin": "OVERCLAIM",
+"quote": "None of the pilots covers the dollar holdings the ban was meant to prevent.",
+"why": "Characterizing the exclusion of dollar stablecoins from exchange approved lists as an outright 'ban' is an overclaim; it is a platform listing limitation rather than a criminalized statutory prohibition on ownership.",
+"fix": "Rephrase to 'None of the pilots covers the dollar holdings that the exchange listing restrictions exclude.'"
+}
+],
+"verification_log": [
+{
+"claim": "Malaysia's six licensed exchanges list 22 approved tokens.",
+"status": "WRONG",
+"primary_source": "Securities Commission Malaysia, Digital Assets Official Tradeable Asset Registry (2026)",
+"corrected_value": "23 approved tokens"
+},
+{
+"claim": "Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion.",
+"status": "VERIFIED",
+"primary_source": "Bank Negara Malaysia Annual Report 2024, Feature Article Box 8 (Navigating the Future of Digital Assets)",
+"corrected_value": ""
+},
+{
+"claim": "Standard Chartered modelled US1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028.",
+"status": "VERIFIED",
+"primary_source": "Standard Chartered Research Note by Geoffrey Kendrick and Madhur Jha (October 2025)",
+"corrected_value": ""
+},
+{
+"claim": "Egypt, Pakistan, Turkey, India and Brazil top the October 2025 list. Malaysia is absent.",
+"status": "VERIFIED",
+"primary_source": "Standard Chartered Emerging Markets Vulnerability Map, reported via The Block (6 October 2025)",
+"corrected_value": ""
+},
+{
+"claim": "Tether has frozen 7,268 wallets holding US3.29 billion at US direction.",
+"status": "VERIFIED",
+"primary_source": "AMLBot Forensic Research Report: Stablecoin Freezes 2023–2025 Data Analysis",
+"corrected_value": ""
+},
+{
+"claim": "The GENIUS Act, signed 18 July 2025, gave OFAC on-chain reach over USDT and USDC anywhere in the world.",
+"status": "VERIFIED",
+"primary_source": "The White House Official Enactment Text of the Guiding and Establishing National Innovation for U.S. Stablecoins (GENIUS) Act (18 July 2025)",
+"corrected_value": ""
+},
+{
+"claim": "Singapore wrote rules for dollar stablecoins in August 2023.",
+"status": "VERIFIED",
+"primary_source": "Monetary Authority of Singapore (MAS) Media Release: MAS Finalises Stablecoin Regulatory Framework (August 2023)",
+"corrected_value": ""
+},
+{
+"claim": "Bank Negara's three 2026 sandbox pilots are all ringgit.",
+"status": "VERIFIED",
+"primary_source": "Bank Negara Malaysia Official Press Announcement: Digital Asset Innovation Hub Charts 2026 Strategy (11 February 2026)",
+"corrected_value": ""
+}
+],
+"overall_assessment": "The analysis offers a highly sophisticated, technically accurate structural perspective on Malaysia's cryptocurrency regulatory landscape, successfully avoiding partisan posturing and racialized framing. It accurately identifies international compliance pressures and central bank pilot constraints, though it is slightly marred by a minor inaccuracy regarding the current number of SC-approved tokens (23 instead of 22) and an overstatement framing simple exchange-listing restrictions as a formal 'ban' on dollar stablecoins."
+}
