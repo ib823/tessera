@@ -1,0 +1,203 @@
+{
+  "factual_accuracy_score": 52,
+  "source_diversity_estimate": 0.25,
+  "claims": [
+    {
+      "claim": "Suaram's 2025 report documented 6,892 SOSMA arrests between 2018 and 2023.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.75,
+      "m_unknown": 0.15,
+      "source": "Malaysiakini report on SUARAM 2025 launch, 7 April 2026, https://www.malaysiakini.com/news/772005; SUARAM Human Rights Reports page confirming 2025 report exists, https://www.suaram.net/human-rights-reports",
+      "correction": "The publicly available reporting of SUARAM's 2025 launch says the 6,892 figure is since SOSMA was introduced in 2012, not between 2018 and 2023. I could not access the full SUARAM 2025 report text to independently verify the table behind the number.",
+      "stale_check": "No stale-timing issue found; the discrepancy is in the date range attached to the same figure."
+    },
+    {
+      "claim": "Suaram: 6,892 SOSMA arrests in 5 years, up to 28% released without ever being charged.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.7,
+      "m_unknown": 0.15,
+      "source": "Malaysiakini report on SUARAM 2025 launch, 7 April 2026, https://www.malaysiakini.com/news/772005; The Sun report, 8 April 2026, https://thesun.my/news/malaysia-news/people-issues/thousands-arrested-under-sosma-many-freed-without-charge/",
+      "correction": "The 6,892 figure is reported as since 2012, not in five years. The release-without-charge range is reported as between 20% and 28%, with Malaysiakini also saying approximately 22%. Use 'since 2012' and include the reported range rather than presenting only the upper bound.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "Of arrests under the Security Offences (Special Measures) Act 2012 between 2018 and 2023, roughly one in four did not result in any charge being filed at all.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.7,
+      "m_unknown": 0.15,
+      "source": "Malaysiakini report on SUARAM 2025 launch, 7 April 2026, https://www.malaysiakini.com/news/772005",
+      "correction": "The publicly reported SUARAM figure refers to SOSMA since 2012, not specifically 2018-2023. 'Roughly one in four' is compatible with the reported 20%-28% range, but the time period is wrong.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "Up to 28% were eventually released without being charged.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.1,
+      "m_unknown": 0.3,
+      "source": "The Sun report on SUARAM 2025 report, 8 April 2026, https://thesun.my/news/malaysia-news/people-issues/thousands-arrested-under-sosma-many-freed-without-charge/; Malaysiakini report, 7 April 2026, https://www.malaysiakini.com/news/772005",
+      "correction": "Attribute clearly to SUARAM and preserve the range: 'between 20% and 28%', or note that one report also summarised it as approximately 22%. Full primary table from the SUARAM 2025 report was not accessible in this check.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "SOSMA Section 4 allows 28 days of detention without charge since 2012.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Security Offences (Special Measures) Act 2012, Act 747, section 4(5), official MOHA legislation page last updated 11 September 2025, https://www.moha.gov.my/utama/index.php/en/component/content/article/791-security-offences-special-measures-act-2012?catid=189; text also indexed at https://www.vertic.org/media/National%20Legislation/Malaysia/MY_Security_Offences_Act_2012.pdf",
+      "correction": "More precise wording: Section 4(5) permits a police officer of or above Superintendent rank to extend detention for investigation for not more than 28 days after the initial 24-hour period. It is detention for investigation, not a charging rule by itself.",
+      "stale_check": "Section 4(5) is subject to five-year parliamentary review under section 4(11). MOHA also lists a 2024 amendment act, but the 28-day power remains listed in current official materials."
+    },
+    {
+      "claim": "SOSMA replaced the ISA.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Security Offences (Special Measures) Act 2012, section 32, official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf",
+      "correction": "The Act itself repealed the Internal Security Act 1960 under section 32, so 'replaced' is broadly fair. For legal precision, say SOSMA repealed the ISA and introduced special measures for security offences.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "SOSMA retained preventive-detention powers.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.35,
+      "m_unknown": 0.3,
+      "source": "Security Offences (Special Measures) Act 2012, section 4(5), official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf; section 32 repeal of ISA in same Act",
+      "correction": "SOSMA retains extended pre-charge police detention for investigation, but it is not the same as the ISA's ministerial preventive detention regime. Calling it 'preventive detention powers' without that caveat overstates the legal continuity.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "The 28-day window can be used while authorities decide whether to charge.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.1,
+      "m_unknown": 0.25,
+      "source": "Security Offences (Special Measures) Act 2012, section 4(5), official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf",
+      "correction": "The statutory phrase is detention 'for the purpose of investigation'. It is reasonable to infer that charging decisions may follow investigation, but the law does not phrase the power as a charging-decision window.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "The 28% release-without-charge figure shows how often the answer is 'no'.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.25,
+      "m_unknown": 0.35,
+      "source": "The Sun report on SUARAM 2025 report, 8 April 2026, https://thesun.my/news/malaysia-news/people-issues/thousands-arrested-under-sosma-many-freed-without-charge/; Malaysiakini report, 7 April 2026, https://www.malaysiakini.com/news/772005",
+      "correction": "Use the range 20%-28% and avoid treating the upper bound as the definitive rate. The analysis should also distinguish release without charge from acquittal, discharge, or later outcomes.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "SUHAKAM has run public inquiries into custodial conditions, most recently a 28-day inquiry into torture and death in custody at Taiping Prison.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.35,
+      "m_unknown": 0.3,
+      "source": "SUHAKAM Media Statement No. 22-2025, 23 May 2025, https://suhakam.org.my/2025/05/media-statement-no-22-2025_suhakam-to-conduct-public-inquiry-into-alleged-human-rights-violations-at-taiping-prison/; SUARAM monitoring page on the Taiping inquiry, https://www.suaram.net/suhakam-inquiry",
+      "correction": "SUHAKAM announced a public inquiry into alleged human rights violations connected to a 17 January 2025 Taiping Prison incident that led to an inmate's death. I found no primary source describing it as a '28-day inquiry'; that appears to confuse the inquiry with SOSMA's 28-day detention period. 'Torture' is alleged by civil-society sources but SUHAKAM's own announcement uses the broader phrase alleged human rights violations.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "Custodial-death inquiries provide one of the few public windows into how preventive detention functions in practice.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.3,
+      "m_unknown": 0.4,
+      "source": "SUHAKAM Media Statement No. 22-2025, 23 May 2025, https://suhakam.org.my/2025/05/media-statement-no-22-2025_suhakam-to-conduct-public-inquiry-into-alleged-human-rights-violations-at-taiping-prison/",
+      "correction": "The Taiping inquiry is about prison custody and alleged human rights violations linked to a death. The analysis does not establish that it concerns SOSMA detainees or preventive detention specifically. Rephrase as a general custody-accountability point unless a SOSMA-specific inquiry source is added.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "Suaram's annual reports remain the most consistent civil-society source on SOSMA usage.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "SUARAM Human Rights Reports archive, https://www.suaram.net/human-rights-reports",
+      "correction": "SUARAM does maintain a long-running human-rights report archive, but 'most consistent civil-society source on SOSMA usage' is a comparative claim requiring a survey of other NGOs and datasets. I did not find a primary source establishing that comparative ranking.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "Official Home Ministry figures are not released in disaggregated form.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.15,
+      "m_unknown": 0.6,
+      "source": "Parliament written answer order paper, 30 November 2023, stating PDRM SOSMA statistics from 2012 to September 2023 as 2,444 cases, https://www.parlimen.gov.my/files/jindex/pdf/JBL30112023.pdf; MOHA legislation page, https://www.moha.gov.my/utama/index.php/en/component/content/article/791-security-offences-special-measures-act-2012?catid=189",
+      "correction": "The broad claim could not be verified as written. I found at least some official aggregate parliamentary data, but not enough to prove that disaggregated arrest, duration, charge, and outcome data are never released. Rephrase to a narrower, evidenced claim: official public data appear limited and are not routinely published in a comprehensive disaggregated dataset.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "SOSMA is no longer a rare emergency tool. It is a routine pre-charge detention regime that releases one in four detainees uncharged.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.25,
+      "m_unknown": 0.35,
+      "source": "Malaysiakini report on SUARAM 2025 launch, 7 April 2026, https://www.malaysiakini.com/news/772005; Security Offences (Special Measures) Act 2012, section 4(5), official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf",
+      "correction": "The pre-charge detention point is legally grounded, and 'one in four' is broadly within SUARAM's reported 20%-28% range. However, 'routine' and 'no longer rare emergency tool' are interpretive overclaims unless supported by annual denominators, trends, and comparison with other criminal procedures.",
+      "stale_check": "No stale-timing issue found."
+    },
+    {
+      "claim": "Genuine SOSMA reform requires disaggregated public reporting on arrests, durations, charges and outcomes, not just renewal debates every five years.",
+      "status": "VERIFIED",
+      "m_true": 0.55,
+      "m_false": 0.05,
+      "m_unknown": 0.4,
+      "source": "Security Offences (Special Measures) Act 2012, section 4(11), official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf",
+      "correction": "This is mostly a normative reform prescription, not a factual claim. The factual part is correct that section 4(11) requires five-year review/extension of section 4(5). The claim that disaggregated reporting is required for 'genuine reform' is an argument, not something a primary factual source can verify.",
+      "stale_check": "No stale-timing issue found."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Suaram's 2025 report documented 6,892 SOSMA arrests between 2018 and 2023.",
+      "why": "The exact number appears in public reporting, but the date range attached to it is wrong; reports say since 2012. The full SUARAM report table was not accessible for direct primary verification.",
+      "primary_source": "SUARAM Human Rights Reports page, https://www.suaram.net/human-rights-reports; Malaysiakini reporting of SUARAM launch, https://www.malaysiakini.com/news/772005"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "up to 28% released without ever being charged",
+      "why": "The analysis repeatedly uses the upper end of a reported 20%-28% range as the headline rate and then rounds it to 'one in four'. It should preserve the range and note the approximate 22% figure reported by Malaysiakini.",
+      "primary_source": "Malaysiakini, 7 April 2026, https://www.malaysiakini.com/news/772005; The Sun, 8 April 2026, https://thesun.my/news/malaysia-news/people-issues/thousands-arrested-under-sosma-many-freed-without-charge/"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "replacing the ISA but retaining preventive-detention powers",
+      "why": "SOSMA permits extended pre-charge detention for investigation, but it is not identical to the ISA ministerial preventive detention regime. The wording collapses a legally important distinction.",
+      "primary_source": "Security Offences (Special Measures) Act 2012, sections 4 and 32, official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "most recently a 28-day inquiry into torture and death in custody at Taiping Prison",
+      "why": "SUHAKAM announced a public inquiry into alleged human-rights violations linked to a death at Taiping Prison, but I found no primary source calling it a 28-day inquiry. That detail appears unsupported.",
+      "primary_source": "SUHAKAM Media Statement No. 22-2025, 23 May 2025, https://suhakam.org.my/2025/05/media-statement-no-22-2025_suhakam-to-conduct-public-inquiry-into-alleged-human-rights-violations-at-taiping-prison/"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Custodial-death inquiries provide one of the few public windows into how preventive detention functions in practice.",
+      "why": "The Taiping Prison inquiry is about prison custody and alleged human-rights violations; the analysis does not establish that it concerns SOSMA or preventive detention.",
+      "primary_source": "SUHAKAM Media Statement No. 22-2025, 23 May 2025, https://suhakam.org.my/2025/05/media-statement-no-22-2025_suhakam-to-conduct-public-inquiry-into-alleged-human-rights-violations-at-taiping-prison/"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Official Home Ministry figures are not released in disaggregated form.",
+      "why": "The claim is plausible but too broad. I found some official aggregate parliamentary data, but not enough primary evidence to prove the non-release of all disaggregated data.",
+      "primary_source": "Parliament written answer order paper, 30 November 2023, https://www.parlimen.gov.my/files/jindex/pdf/JBL30112023.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "Section 4(5), not merely Section 4 generally, is the provision that allows detention extension for not more than 28 days for investigation; section 4(11) requires that subsection to be reviewed every five years and extended by both Houses of Parliament. Source: Security Offences (Special Measures) Act 2012, official MOHA PDF, https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/KESALAHAN%20KESELAMATAN/SECURITY%20OFFENCES%20SPECIAL%20MEASURES%20ACT%202012.pdf",
+    "Public reporting of SUARAM's 2025 launch says the 6,892 SOSMA figure is since 2012, not 2018-2023, and gives the release-without-charge share as between 20% and 28%, with another line describing about 22%. Source: Malaysiakini, 7 April 2026, https://www.malaysiakini.com/news/772005",
+    "A 30 November 2023 parliamentary document reported, based on PDRM records, SOSMA statistics from 2012 to September 2023 as 2,444 cases. This appears to be a different metric from SUARAM's 6,892 arrests and should be reconciled before publication. Source: Parliament, https://www.parlimen.gov.my/files/jindex/pdf/JBL30112023.pdf",
+    "SUHAKAM's 2023 SOSMA statement says section 4 permits arrest, detention, and extension of detention without requiring judicial oversight, and documents a 2023 prison visit involving hunger-striking SOSMA detainees. Source: SUHAKAM, 4 August 2023, https://suhakam.org.my/wp-content/uploads/2023/08/Press-Statement-No.-28-2023_-SUHAKAM-Urges-the-Government-to-Abolish-SOSMA.pdf",
+    "MOHA lists an Amendment Act 2024 for SOSMA on its official legislation page. Any current legal description should check the amended text, not only the 2012 principal Act. Source: MOHA legislation page last updated 11 September 2025, https://www.moha.gov.my/utama/index.php/en/component/content/article/791-security-offences-special-measures-act-2012?catid=189"
+  ],
+  "source_assessment": "The original analysis cites only 'T4A related issue 1988', which is circular and not an acceptable primary source. The reconstructed cards appear to rely mainly on SUARAM, with limited use of SUHAKAM and no direct citation to the Act, MOHA, Parliament, courts, police statistics, detainee-family testimony, prosecutorial data, or government response. Political and institutional perspectives are narrow: civil society is represented, but official law text and official aggregate data are not integrated, and there is no disaggregated dataset attached.",
+  "overall_assessment": "The analysis has a sound core concern about SOSMA's 28-day pre-charge detention power and SUARAM's reported release-without-charge figures, but it contains serious precision problems. The biggest factual error is attaching the 6,892 figure to 2018-2023 or 'five years' when public reporting says since 2012. It also overuses the upper bound of a 20%-28% range, blurs SOSMA's investigative detention with ISA-style preventive detention, and imports a Taiping Prison inquiry into the SOSMA frame without proving the connection. Publication should not proceed without correcting the date range, legal wording, and unsupported inquiry/transparency claims."
+}

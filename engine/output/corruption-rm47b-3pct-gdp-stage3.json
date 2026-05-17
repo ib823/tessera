@@ -1,0 +1,248 @@
+{
+  "factual_accuracy_score": 24,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "Transparency International Malaysia estimated that corruption costs the Malaysian economy RM47 billion annually",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.3,
+      "m_unknown": 0.3,
+      "source": "National Anti-Corruption Strategy 2024-2028, Prime Minister's Department/Malaysia Government, p.24, cites a 2017 statement attributed to Dr Wan Azizah and TI-M: https://www.miti.gov.my/miti/resources/Integrity/NACS_2024-2028-ENG.pdf",
+      "correction": "The official NACS says the RM47 billion figure was an approximate GDP loss for 2017, used as a benchmark to estimate 2019-2023 losses. It does not establish a current annual recurring RM47 billion loss.",
+      "stale_check": "The claim may have been derived from an older 2017 estimate, but the 2026 presentation as a current annual figure is not supported."
+    },
+    {
+      "claim": "corruption costs are through procurement leakage, bribery, and regulatory rent-seeking",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No primary source found tying the RM47 billion estimate specifically to those three channels.",
+      "correction": "Remove the mechanism list or source it separately. NACS discusses corruption, leakages, mismanagement, illicit financial flows, crony capitalism and rent-seeking, but does not break the RM47 billion estimate into these categories.",
+      "stale_check": "No recent change found; the detail appears unsourced rather than stale."
+    },
+    {
+      "claim": "RM47 billion is equivalent to 3% of GDP",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "National Anti-Corruption Strategy 2024-2028, p.24: https://www.miti.gov.my/miti/resources/Integrity/NACS_2024-2028-ENG.pdf",
+      "correction": "NACS states RM47 billion was equivalent to 3.4% of GDP in 2017, not 3%. If rounded, disclose that it is based on 2017 GDP, not current GDP.",
+      "stale_check": "This is stale if applied to 2025 or 2026 GDP."
+    },
+    {
+      "claim": "RM47 billion is equivalent to the entire education development budget",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.8,
+      "m_unknown": 0.15,
+      "source": "Malaysia Ministry of Finance Fiscal Outlook 2024 lists education and training development expenditure at RM14.268 billion for 2024: https://belanjawan.mof.gov.my/pdf/belanjawan2024/revenue/fiscal_outlook_2024.pdf; Budget 2024 highlights list Education Ministry allocation at RM58.7 billion: https://www.mof.gov.my/portal/en/news/press-citations/budget-2024-highlights",
+      "correction": "RM47 billion is far above the 2024 education and training development expenditure, but below the Education Ministry's total 2024 allocation of RM58.7 billion. Do not call it the entire education development budget.",
+      "stale_check": "No stale issue; the cited budget figures contradict the claim."
+    },
+    {
+      "claim": "RM47 billion lost to corruption annually: enough to give every B40 household RM15,600 in direct support per year",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.35,
+      "m_unknown": 0.3,
+      "source": "DOSM Household Income Survey Report 2022 gives B40 household count context: https://www.dosm.gov.my/uploads/release-content/file_20231118095531.pdf",
+      "correction": "The arithmetic roughly implies about 3.01 million B40 households. DOSM's 2022 B40 count is commonly reported around 3.16 million households, which would be about RM14,873 per household. The bigger problem is that RM47 billion is not verified as a current annual loss.",
+      "stale_check": "B40 household counts have newer 2024 data; using 2022 figures may be stale."
+    },
+    {
+      "claim": "Malaysia's CPI score of 50/100 ranks 57th globally",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.45,
+      "m_unknown": 0.1,
+      "source": "TI-M CPI 2024 press release, 11 February 2025: https://www.transparency.org.my/pages/news-and-events/press-releases/corruption-perceptions-index-2024-2; Transparency International 2025 country page shows Malaysia 52/100 and rank 54/182: https://www.transparency.org/en/countries/malaysia",
+      "correction": "For CPI 2024, Malaysia scored 50 and ranked 57/180. As of the 2025 CPI published 10 February 2026, Malaysia scores 52 and ranks 54/182. State the year.",
+      "stale_check": "Stale after the CPI 2025 release on 10 February 2026."
+    },
+    {
+      "claim": "Malaysia's CPI score is worse than every advanced Asian economy",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Transparency International CPI country pages provide country scores, but the analysis does not define 'advanced Asian economy': https://www.transparency.org/en/cpi/2025",
+      "correction": "Define the comparator set, for example IMF advanced Asian economies, and list scores for each. Without a defined set, this is not independently verifiable.",
+      "stale_check": "Could change annually with CPI releases."
+    },
+    {
+      "claim": "Government procurement corruption accounts for RM28 billion, 19% of total RM150 billion annual government spending",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.75,
+      "m_unknown": 0.15,
+      "source": "C4 procurement paper estimates poor procurement practices cause losses of up to RM10 billion annually and says government procurement exceeds RM150 billion annually: https://c4center.org/wp-content/uploads/c4_position_paper_-_procurement_as_good_governance_-_web.pdf; The Edge cites C4 on RM150 billion procurement spending: https://theedgemalaysia.com/node/685924",
+      "correction": "The RM150 billion figure refers to annual procurement spending, not total annual government spending. The RM28 billion figure appears to come from an old hypothetical 20% overpayment calculation, not a verified current corruption account.",
+      "stale_check": "The RM28 billion figure appears old and not current."
+    },
+    {
+      "claim": "Average bribery cost for business licences is RM12,000",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.15,
+      "m_unknown": 0.8,
+      "source": "No primary Malaysian source found verifying an RM12,000 average bribery cost for business licences.",
+      "correction": "Remove or replace with a sourced statistic from MACC, DOSM, World Bank Enterprise Surveys, UNODC, or a peer-reviewed study.",
+      "stale_check": "No stale issue found; the number appears unsourced."
+    },
+    {
+      "claim": "Average bribery cost for business licences is effectively a corruption tax that falls hardest on SMEs",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No primary source found supporting the RM12,000 licensing-bribe figure or its distributional impact on SMEs.",
+      "correction": "Frame as analysis only if supported by business survey evidence; otherwise remove.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "78% of Malaysians in 2025 Merdeka Center poll believe corruption has worsened or stayed same despite reform promises",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.1,
+      "m_unknown": 0.75,
+      "source": "Merdeka Center lists a Mid-Term Survey May 2025 report but the accessible public page does not verify this 78% corruption claim: https://merdeka.org/mid-term-survey-may-2025-report-final/",
+      "correction": "Provide the exact Merdeka Center chart/question wording and denominator. The public listing confirms the survey exists, not this statistic.",
+      "stale_check": "Potentially stale if a later Merdeka Center poll changed public opinion."
+    },
+    {
+      "claim": "Perceived corruption cuts voluntary tax payment rates by 12%",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "Peer-reviewed Malaysian tax compliance papers found discuss tax fairness, trust and compliance but no primary source verifying a 12% causal reduction was found. Example: https://doi.org/10.1108/IJLMA-02-2016-0022",
+      "correction": "Replace with a sourced finding and specify whether it is Malaysia-specific, experimental, correlational, or cross-country.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "MACC received 8,400 reports in 2025",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "NST quoting MACC Strategic Communications Division, 11 May 2026, says MACC recorded 40,648 reports/intelligence from 2020 to April 2026 and 1,145 arrests in 2025: https://www.nst.com.my/amp/news/nation/2026/05/1437077/macc-records-over-6600-arrests-anti-corruption-drive; Bernama quoting MACC, 12 June 2025, says 34,819 reports from 2020 to April 2025: https://www.bernama.com/en/news.php?id=2433403",
+      "correction": "I found no primary or MACC-cited source for 8,400 reports in 2025. Available MACC-cited figures are multi-year totals and different enforcement categories.",
+      "stale_check": "No stale issue; claim is not supported by available MACC-cited figures."
+    },
+    {
+      "claim": "MACC initiated prosecution on only 342 cases in 2025, a 4% prosecution rate",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "NST quoting MACC, 11 May 2026, reports 2,843 people charged from 2020-April 2026 and does not support 342 prosecutions in 2025: https://www.nst.com.my/amp/news/nation/2026/05/1437077/macc-records-over-6600-arrests-anti-corruption-drive",
+      "correction": "Do not compute a prosecution rate by dividing prosecutions by raw reports unless MACC defines those as comparable categories. The 342 figure was not verified.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Average time from MACC investigation to court verdict is 4.7 years",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.25,
+      "m_unknown": 0.65,
+      "source": "U4 2022 specialised anti-corruption courts report says Malaysia's average time to final resolution before specialised courts was about 8.5 years, not 4.7: https://www.u4.no/publications/specialised-anti-corruption-courts.pdf",
+      "correction": "No primary source was found for 4.7 years. If using court-delay data, specify the source, period, and whether it measures investigation-to-verdict or charge-to-final-appeal.",
+      "stale_check": "Could be stale if based on older court data, but no matching source was found."
+    },
+    {
+      "claim": "The accused hold office throughout proceedings",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.2,
+      "m_unknown": 0.7,
+      "source": "No primary legal or parliamentary source found establishing that all accused elected officials or civil servants hold office throughout proceedings.",
+      "correction": "This is overbroad. Some accused persons may remain in office; others may resign, be suspended, lose office, or face internal disciplinary rules. Specify the legal class and rule.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Like a household losing 3% of its income to theft every month",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.55,
+      "m_unknown": 0.25,
+      "source": "NACS 2024-2028 says the 2017 estimate was 3.4% of annual GDP, not a monthly income loss: https://www.miti.gov.my/miti/resources/Integrity/NACS_2024-2028-ENG.pdf",
+      "correction": "Use an annual analogy, not monthly. The source benchmark is 3.4% of GDP in 2017.",
+      "stale_check": "Stale if applied to current GDP."
+    },
+    {
+      "claim": "Corruption costs are invisible in budgets but visible in unbuilt infrastructure and underfunded services",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Transparency International CPI 2025 discusses corruption leading to under-funded hospitals and unbuilt flood defences, but this is broad global framing, not Malaysia-specific budget evidence: https://www.transparency.org/en/cpi/2025/index/mys",
+      "correction": "Present as rhetoric or source Malaysia-specific audit/project evidence.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Should Malaysia adopt a guilty-until-proven-innocent standard for unexplained wealth among all elected officials and senior civil servants?",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.4,
+      "m_unknown": 0.4,
+      "source": "MACC Act 2009 section 36 empowers MACC to require property information where there are reasonable grounds connected to an offence: https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/Gazette%20Copy%20-%20Act%20694.pdf; UNODC Malaysia financial disclosure submission cites section 36: https://www.unodc.org/documents/treaties/UNCAC/WorkingGroups/workinggroup2/2023-September-4-8/Submissions/MALAYSIA_financial_disclosure_EN.pdf",
+      "correction": "The framing skips existing legal context. Malaysia already has section 36 asset-information powers tied to suspected MACC Act offences; a general unexplained-wealth reversal for all officials would be a different legal standard requiring careful rights and due-process analysis.",
+      "stale_check": "No stale issue found."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Corruption Costs Malaysia RM47B Annually, 3% of GDP",
+      "why": "The official NACS source ties RM47 billion to a 2017 GDP-loss estimate and 3.4% of GDP, then uses it as a benchmark. The analysis presents it as a current annual fact and rounds down the percentage without context.",
+      "primary_source": "https://www.miti.gov.my/miti/resources/Integrity/NACS_2024-2028-ENG.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Government procurement corruption accounts for RM28 billion, 19% of total RM150 billion annual government spending",
+      "why": "The RM28 billion current procurement-corruption figure was not verified. RM150 billion refers to procurement spending, not total government spending.",
+      "primary_source": "https://c4center.org/wp-content/uploads/c4_position_paper_-_procurement_as_good_governance_-_web.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Average bribery cost for business licences is RM12,000",
+      "why": "No primary source was found for this specific number.",
+      "primary_source": "No primary source found"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "78% of Malaysians in 2025 Merdeka Center poll believe corruption has worsened or stayed same despite reform promises",
+      "why": "The Merdeka Center public page verifies a May 2025 report exists but not the specific 78% corruption statistic.",
+      "primary_source": "https://merdeka.org/mid-term-survey-may-2025-report-final/"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "MACC received 8,400 reports in 2025 but initiated prosecution on only 342 cases, a 4% prosecution rate",
+      "why": "The numbers were not verified against MACC primary statistics and conflict with MACC-cited multi-year figures reported by NST and Bernama.",
+      "primary_source": "https://www.nst.com.my/amp/news/nation/2026/05/1437077/macc-records-over-6600-arrests-anti-corruption-drive"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Like a household losing 3% of its income to theft every month",
+      "why": "The source figure is an annual GDP benchmark, not a monthly household income loss.",
+      "primary_source": "https://www.miti.gov.my/miti/resources/Integrity/NACS_2024-2028-ENG.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The accused hold office throughout proceedings",
+      "why": "This universal statement is unsupported and ignores variation by office, employment status, suspension rules, resignation, and conviction consequences.",
+      "primary_source": "No primary source found"
+    }
+  ],
+  "omitted_facts": [
+    "NACS 2024-2028 states Malaysia's cumulative estimated GDP loss from corruption for 2019-2023 was RM277 billion, derived by applying the 2017 3.4% benchmark, not by directly measuring annual corruption transactions: https://www.miti.gov.my/miti/resources/Integrity/NACS_2024-2028-ENG.pdf",
+    "Transparency International's latest CPI available as of 17 May 2026 is CPI 2025, where Malaysia scores 52/100 and ranks 54/182, not 50/100 and 57/180: https://www.transparency.org/en/countries/malaysia",
+    "Budget 2024 allocated RM58.7 billion to the Education Ministry overall, while education and training development expenditure in the fiscal outlook was RM14.268 billion, undermining the 'entire education development budget' comparison: https://www.mof.gov.my/portal/en/news/press-citations/budget-2024-highlights and https://belanjawan.mof.gov.my/pdf/belanjawan2024/revenue/fiscal_outlook_2024.pdf",
+    "Malaysia's existing MACC Act section 36 already provides asset-information powers where property is believed connected to an offence under the Act; this matters for any unexplained-wealth reform framing: https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/Gazette%20Copy%20-%20Act%20694.pdf"
+  ],
+  "source_assessment": "The original analysis cites only two T4A related issues, which are circular and not primary sources. It does not cite government documents, MACC statistics, Merdeka Center tables, TI CPI pages, budget documents, court records, peer-reviewed studies, business surveys, opposition views, civil society primary reports, or affected community/business voices. The source base is therefore extremely narrow and not publication-grade for numerical claims.",
+  "overall_assessment": "The analysis has a serious reliability problem. The central RM47 billion claim has a real official trace, but it is misdated and over-presented as a current annual loss. Several high-specificity numbers, including RM28 billion procurement corruption, RM12,000 licence bribes, 78% public opinion, 12% tax compliance loss, 8,400 MACC reports, 342 prosecutions, and 4.7 years to verdict, could not be verified from primary sources. The CPI figure is stale as of the 2025 CPI release. This should not be published without major correction and sourcing."
+}

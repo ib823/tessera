@@ -1,0 +1,177 @@
+{
+  "factual_accuracy_score": 52,
+  "source_diversity_estimate": 0,
+  "claims": [
+    {
+      "claim": "Gig workers got SOCSO accident cover in 2025, but still no retirement floor.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.45,
+      "m_unknown": 0.2,
+      "source": "PERKESO, Self-Employed Social Security Scheme page, crawled May 2026, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html; Gig Workers Act 2025 Act 872, gazetted 31 Dec 2025, https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf",
+      "correction": "The 2025 Act makes platform-provider deductions and registration duties mandatory for gig workers under the self-employed social security scheme, but SOCSO/PERKESO self-employed coverage already existed before 2025 for e-hailing and other self-employed sectors. The Act was gazetted in 2025 but came into force on 31 March 2026.",
+      "stale_check": "The published card may predate the 31 March 2026 commencement; as of 17 May 2026, saying workers 'got SOCSO cover in 2025' is stale/misleading."
+    },
+    {
+      "claim": "The Gig Workers Bill 2025 brings ~1.2 million platform riders into SOCSO accident and disability coverage for the first time.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.75,
+      "m_unknown": 0.15,
+      "source": "PERKESO, Self-Employed Social Security Scheme page, crawled May 2026, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html; Bernama, 31 March 2026, https://www.bernama.com/en/news.php?id=2539439",
+      "correction": "Replace with: the Gig Workers Act 2025 provides mandatory platform-based mechanisms for social security registration and contribution deductions. It was expected to benefit about 1.64 million gig-sector individuals when it came into force on 31 March 2026. It was not the first SOCSO/PERKESO coverage for gig or e-hailing workers.",
+      "stale_check": "The 1.2 million figure appears consistent with 2025 passage reporting, but official 2026 implementation reporting used about 1.64 million."
+    },
+    {
+      "claim": "EPF retirement contributions, sick leave, and broader informal-sector coverage remain outside the framework.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.3,
+      "source": "Gig Workers Act 2025 Act 872, sections 81-83 and section 3, gazetted 31 Dec 2025, https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf; PERKESO self-employed benefits page, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html",
+      "correction": "The Act does not create EPF retirement contributions or general paid sick leave. However, PERKESO self-employed coverage includes employment-injury related medical and disablement benefits, so 'sick leave' should be specified as ordinary illness income protection, not accident-related medical leave.",
+      "stale_check": "No recent change found that would make EPF contributions mandatory under Act 872."
+    },
+    {
+      "claim": "Malaysia's i-Saraan voluntary EPF programme covered 10.7% of self-employed workers in 2022, eight years after launch.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.6,
+      "m_unknown": 0.25,
+      "source": "EPF press release, 3 March 2023, https://wip-uat.epf.gov.my/news-3/3/2023; DOSM labour force statistics release document, 2026 data table including 2022 status in employment, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=17369; World Bank, Informal Employment in Malaysia, Feb 2024, https://documents1.worldbank.org/curated/en/099022124104015011/pdf/P1810931e836170db184871b5fe7b37157c.pdf",
+      "correction": "EPF reported 291,743 i-Saraan participants in 2022. DOSM reported 2.8782 million own-account workers and 489,800 unpaid family workers in 2022; 291,743 equals about 10.1% of own-account workers or 8.7% of own-account plus unpaid family workers. The World Bank reported 12.6% of self-employed workers for 2022 using its own definition/data treatment. I could not verify 10.7% from a primary source.",
+      "stale_check": "Not stale; the discrepancy is methodological or calculation-based."
+    },
+    {
+      "claim": "Voluntary opt-in schemes typically struggle to reach the workers most exposed to income shocks.",
+      "status": "UNVERIFIED",
+      "m_true": 0.4,
+      "m_false": 0,
+      "m_unknown": 0.6,
+      "source": "World Bank, Informal Employment in Malaysia, Feb 2024, https://documents1.worldbank.org/curated/en/099022124104015011/pdf/P1810931e836170db184871b5fe7b37157c.pdf",
+      "correction": "This is a broad analytical generalisation. The World Bank supports that Malaysian i-Saraan take-up remained low despite increased access, but the claim as written is wider than the Malaysia-specific evidence checked here.",
+      "stale_check": "No direct stale issue."
+    },
+    {
+      "claim": "Platform companies are not legally employers under the Employment Act.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.45,
+      "m_unknown": 0.2,
+      "source": "Employment Act 1955 Act 265, as at 1 Aug 2023, section 101C, https://www.investmalaysia.gov.my/media/felj30g0/employment-act-1955.pdf",
+      "correction": "The Employment Act is based on a contract of service, but section 101C creates a rebuttable presumption of employee/employer status in offence proceedings where control, tools, integration into business, regular payment, and other factors exist. The analysis overstates a categorical exclusion.",
+      "stale_check": "No stale issue; section 101C has been in force since 1 January 2023."
+    },
+    {
+      "claim": "The 2022 amendment excluded app-based engagement from the employer definition.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.85,
+      "m_unknown": 0.1,
+      "source": "Employment Act 1955 Act 265, section 101C and list of amendments, Act A1651 in force 1 Jan 2023, https://www.investmalaysia.gov.my/media/felj30g0/employment-act-1955.pdf",
+      "correction": "The 2022 amendment added section 101C, a rebuttable presumption as to who is an employee and employer. I found no app-based exclusion in the Employment Act text checked.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "Accident SOCSO is mandatory under the new bill.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.1,
+      "m_unknown": 0.2,
+      "source": "Gig Workers Act 2025 Act 872, sections 81-83, gazetted 31 Dec 2025, https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf",
+      "correction": "More precise wording: platform providers must ensure registration under the Self-Employment Social Security Scheme and implement mandatory contribution deductions in the manner determined by PERKESO.",
+      "stale_check": "The Act came into force on 31 March 2026; calling it a bill is stale after enactment and commencement."
+    },
+    {
+      "claim": "Medical leave and retirement remain unprotected.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.45,
+      "m_unknown": 0.25,
+      "source": "PERKESO self-employed benefits page, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html; JTK Sabah Gig Workers page, crawled May 2026, https://www.jtksabah.gov.my/utama/en/perkhidmatan/pekerja-gig/",
+      "correction": "Retirement through mandatory EPF is not covered by Act 872. Ordinary paid sick leave is not created by the Act. But accident-related medical treatment and temporary disablement/medical leave benefits exist under PERKESO self-employed coverage, so 'medical leave remains unprotected' is too broad.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "The first phase covers workplace injury and disability.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.1,
+      "m_unknown": 0.25,
+      "source": "PERKESO self-employed benefits page, crawled May 2026, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html; Gig Workers Act 2025 Act 872, sections 81-83, https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf",
+      "correction": "The phrase 'first phase' is not clearly traceable in the Act itself. The substance is accurate if referring to the PERKESO self-employed scheme's employment injury and disability protection.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "Income smoothing during illness, and any retirement floor, fall outside the scheme.",
+      "status": "MISLEADING",
+      "m_true": 0.5,
+      "m_false": 0.2,
+      "m_unknown": 0.3,
+      "source": "Gig Workers Act 2025 Act 872, sections 81-83, https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf; PERKESO self-employed benefits page, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html",
+      "correction": "Accurate for retirement and ordinary illness income smoothing, but the Act-linked PERKESO scheme does cover injury-related temporary disablement and medical benefits. Add that caveat.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "The 2025 bill is the first real adaptation.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.35,
+      "m_unknown": 0.4,
+      "source": "PERKESO self-employed scheme, effective 1 June 2017 for taxi/e-hailing/bus drivers and extended from 1 Jan 2020 to 20 sectors, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html; Employment Act 1955 section 101C, https://www.investmalaysia.gov.my/media/felj30g0/employment-act-1955.pdf",
+      "correction": "The Act is Malaysia's first dedicated gig-worker statute, but not the first legal or policy adaptation affecting gig/platform workers; PERKESO self-employed coverage and the Employment Act section 101C predate it.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "It is a floor, not a ceiling.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0,
+      "m_unknown": 0.8,
+      "source": "Gig Workers Act 2025 Act 872, section 7, https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf",
+      "correction": "This is interpretive. Section 7 permits matters not provided under the Act to be included in service agreements or negotiated, but the 'floor, not ceiling' framing should be presented as analysis rather than a verified fact.",
+      "stale_check": "No stale issue."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "brings ~1.2 million platform riders into SOCSO accident and disability coverage for the first time",
+      "why": "PERKESO self-employed social security coverage already applied to taxi/e-hailing/bus drivers from 1 June 2017 and was extended to 20 self-employed sectors from 1 January 2020. The new Act mandates platform-provider registration/deduction mechanics; it is not first-time SOCSO coverage.",
+      "primary_source": "PERKESO, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "i-Saraan voluntary EPF programme covered 10.7% of self-employed workers in 2022",
+      "why": "The checked primary figures do not reproduce 10.7%. EPF reported 291,743 i-Saraan participants in 2022; DOSM reported 2.8782 million own-account workers and 489,800 unpaid family workers. The World Bank reported 12.6%, not 10.7%.",
+      "primary_source": "EPF, https://wip-uat.epf.gov.my/news-3/3/2023; DOSM, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=17369"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The 2022 amendment excluded app-based engagement from the employer definition.",
+      "why": "The checked Employment Act text shows section 101C creates a rebuttable presumption of employee and employer status; it does not exclude app-based engagement.",
+      "primary_source": "Employment Act 1955, https://www.investmalaysia.gov.my/media/felj30g0/employment-act-1955.pdf"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Medical leave and retirement remain unprotected.",
+      "why": "Retirement and ordinary paid sick leave are not created, but PERKESO self-employed protection includes accident-related medical and disability benefits, so the phrasing is too broad.",
+      "primary_source": "PERKESO, https://www.perkeso.gov.my/en/our-services/protection/self-employed.html"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "sources: []",
+      "why": "The analysis gives no cited sources, which makes all specific numbers, legal claims, and dates non-traceable from the original package.",
+      "primary_source": "Not applicable"
+    }
+  ],
+  "omitted_facts": [
+    "The Gig Workers Act 2025 was assented to on 16 December 2025 and published in the Gazette on 31 December 2025: https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf",
+    "The Act came into force on 31 March 2026 according to Bernama/KESUMA implementation reporting, and official reporting used about 1.64 million affected gig workers: https://www.bernama.com/en/news.php?id=2539439",
+    "PERKESO's self-employed scheme began under the Self-Employment Social Security Act 2017 and initially was compulsory for taxi, e-hailing and bus drivers from 1 June 2017; coverage was extended to 20 sectors from 1 January 2020: https://www.perkeso.gov.my/en/our-services/protection/self-employed.html",
+    "Act 872 covers citizens and permanent residents who make service agreements with contracting entities; it excludes contracts of service under the Employment Act, Sabah Labour Ordinance, Sarawak Labour Ordinance, OSHA 1994, and contracts of employment under the Industrial Relations Act: https://jtksm.mohr.gov.my/sites/default/files/2026-01/Akta%20872%20-%20AKTA%20PEKERJA%20GIG%202025.pdf",
+    "The Employment Act 1955 applies only to Peninsular Malaysia and Labuan, not Sabah and Sarawak generally: https://www.investmalaysia.gov.my/media/felj30g0/employment-act-1955.pdf"
+  ],
+  "source_assessment": "The original analysis cites zero sources, so its source diversity is effectively nil. It contains legal, numerical, and policy claims that should have been anchored in the Gig Workers Act 2025, Employment Act 1955, EPF data, DOSM labour force data, and PERKESO material. It also lacks worker, platform, union, and government implementation perspectives.",
+  "overall_assessment": "The core policy intuition is partly right: the new gig-worker framework strengthens social-security mechanics without creating an EPF retirement floor or general paid sick leave. But several specific claims are materially wrong or overbroad, especially the 'first time' SOCSO framing, the Employment Act amendment claim, the 10.7% i-Saraan figure, and the 2025 timing. This should not be published without corrections and primary-source citations."
+}

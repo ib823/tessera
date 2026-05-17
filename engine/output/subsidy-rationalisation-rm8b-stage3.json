@@ -1,0 +1,243 @@
+{
+  "factual_accuracy_score": 52,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "The Anwar government targets approximately RM8 billion in annual savings from electricity, diesel, and the planned RON95 rationalisation.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.45,
+      "m_unknown": 0.3,
+      "source": "Ministry of Finance/Bernama, Budget 2026 report, 10 Oct 2025: https://web11.bernama.com/en/news.php?id=2477089; MoF, BUDI95 allocation/savings, 23 Sep 2025: https://www.mof.gov.my/portal/en/news/press-citations/madani-govt-allocates-rm11-bln-for-budi95-fuel-subsidy-mof",
+      "correction": "The RM8 billion framing is outdated and incomplete. By Budget 2026, Anwar cited overall subsidy rationalisation savings of about RM15.5 billion annually, including average RM6 billion from electricity, RM5 billion from diesel, and at least RM2.5 billion potential savings from BUDI95. Earlier figures of about RM4.1 billion electricity savings and RM4 billion diesel savings can add to roughly RM8 billion, but that does not accurately describe the current overall target including RON95.",
+      "stale_check": "Yes. If written before Sep-Oct 2025, the RM8 billion figure may have reflected earlier electricity plus diesel estimates. As of 17 May 2026, RON95 has been implemented and official figures changed."
+    },
+    {
+      "claim": "The PADU database (~30.4 million profiles) is the targeting backbone.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "MoF/Bernama, 4 Aug 2025: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah; MoF, 22 Oct 2025: https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm5-bln-through-diesel-subsidy-rationalisation---mof",
+      "correction": "PADU had compiled 30.4 million individual profiles as of June 2025, but official wording describes PADU as a reference point or one of the key reference databases for validation, not necessarily the sole targeting backbone. RON95 also uses MyKad, JPJ and JPN data.",
+      "stale_check": "Current as of late 2025, but the role of PADU appears to have evolved from central backbone to key reference database."
+    },
+    {
+      "claim": "No independent audit of delivery accuracy has been published.",
+      "status": "UNVERIFIED",
+      "m_true": 0.45,
+      "m_false": 0,
+      "m_unknown": 0.55,
+      "source": "MoF/Bernama, 4 Aug 2025, mentions a parliamentary question on readiness for periodic independent audits but does not report a published independent audit: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah",
+      "correction": "Phrase more cautiously: I found official ministry reporting on subsidy implementation and parliamentary questions about independent audits, but did not find a published independent audit of targeting accuracy. Absence of a found audit is not proof none exists.",
+      "stale_check": "No recent contrary primary source found within this check."
+    },
+    {
+      "claim": "Targeted subsidy reform aims to save ~RM8 billion a year.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.5,
+      "m_unknown": 0.2,
+      "source": "Bernama, Budget 2026, 10 Oct 2025: https://web11.bernama.com/en/news.php?id=2477089",
+      "correction": "Use the current official figure: overall subsidy rationalisation was said by Anwar to save about RM15.5 billion annually in Budget 2026. If referring only to older electricity and diesel components, specify that limitation.",
+      "stale_check": "Yes. The number is stale after the 2025 BUDI95 rollout and Budget 2026 statement."
+    },
+    {
+      "claim": "No independent audit yet shows whether the targeting actually works.",
+      "status": "UNVERIFIED",
+      "m_true": 0.5,
+      "m_false": 0,
+      "m_unknown": 0.5,
+      "source": "MoF/Bernama, 4 Aug 2025: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah; MoF, 5 Mar 2026, ministry self-report on BUDI95 operation: https://www.mof.gov.my/portal/en/news/press-citations/ron95-subsidy-drops-to-rm1-8-bln-in-4q-2025",
+      "correction": "The claim is directionally plausible but should be caveated. Official sources report implementation metrics and system stability, but I did not find an independent accuracy audit.",
+      "stale_check": "As of 5 Mar 2026, MoF reported the MyKad system was stable and smooth, but that is not an independent audit."
+    },
+    {
+      "claim": "Diesel rationalisation (June 2024) and electricity tariff restructuring contributed the bulk of savings to date.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.1,
+      "m_unknown": 0.2,
+      "source": "MoF, diesel implementation effective 10 Jun 2024: https://www.mof.gov.my/portal/en/news/press-release/government-implements-targeted-diesel-subsidy-for-peninsular-malaysia-effective-10-june-2024; Bernama, Budget 2026, 10 Oct 2025: https://web11.bernama.com/en/news.php?id=2477089",
+      "correction": "Current official breakdown says electricity/tariff restructuring yielded average RM6 billion and diesel RM5 billion, together forming the bulk of the RM15.5 billion annual savings cited in Budget 2026.",
+      "stale_check": "Current figures differ from the analysis' older RM4 billion component estimates."
+    },
+    {
+      "claim": "RON95 targeting begins in the second half of 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.1,
+      "m_unknown": 0.2,
+      "source": "MoF/Bernama, 23 Sep 2025: https://www.mof.gov.my/portal/en/news/press-citations/madani-govt-allocates-rm11-bln-for-budi95-fuel-subsidy-mof",
+      "correction": "Make this specific and current: BUDI95 took effect on 30 Sep 2025. As of May 2026, it should not be described as only planned.",
+      "stale_check": "Yes. The statement was prospective before 30 Sep 2025; by 17 May 2026 it is historical."
+    },
+    {
+      "claim": "PADU (Pangkalan Data Utama) holds about 30.4 million individual profiles.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "MoF/Bernama, 4 Aug 2025: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah; MoF, 3 Nov 2025: https://mof.gov.my/portal/en/component/content/article/govt-to-phase-in-retargeting-of-subsidies-for-essential-goods?Itemid=220&catid=2&layout=blog",
+      "correction": "The official description is 30.4 million profiles of Malaysian citizens and permanent residents, with data from 204 agencies.",
+      "stale_check": "No newer contradictory number found."
+    },
+    {
+      "claim": "PADU is the official targeting backbone.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.3,
+      "m_unknown": 0.35,
+      "source": "MoF/Bernama, 22 Oct 2025: https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm5-bln-through-diesel-subsidy-rationalisation---mof",
+      "correction": "Use official wording: PADU serves as one of the key reference databases for validation by MoF for targeted RON95 distribution.",
+      "stale_check": "Official wording as of Oct 2025 is narrower than 'backbone'."
+    },
+    {
+      "claim": "Public reporting has flagged data-quality and security concerns since launch.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Bernama, 3 Jan 2024, Rafizi acknowledged and said an IC-number password override issue was fixed: https://www.bernama.com/en/news.php?id=2259174; Bernama, 4 Jan 2024, Rafizi responded to LFL's PDPA concern: https://www.bernama.com/en/news.php?id=2259580",
+      "correction": "The claim is supported for security concerns and early technical issues. For 'data-quality' concerns, the strongest primary support found is less direct; it would be safer to say 'security, authentication, legal-protection and technical concerns'.",
+      "stale_check": "The initial issue was reported and fixed in January 2024, but concerns continued in public debate."
+    },
+    {
+      "claim": "Rafizi Ramli, the minister who built PADU, resigned over disagreements about how it would be used.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.8,
+      "m_unknown": 0.15,
+      "source": "Bernama, Rafizi resignation statement, 28 May 2025: https://bernama.com/en/news.php?id=2428360",
+      "correction": "The verified reason in Rafizi's resignation statement was that his defeat in the PKR election meant he no longer had the party mandate to translate PKR's agenda into government programmes. I found no primary source verifying that he resigned over disagreements about how PADU would be used.",
+      "stale_check": "No. The original resignation source contradicts this characterization."
+    },
+    {
+      "claim": "Verified savings figures so far come from electricity (~RM4B) and diesel (~RM4B).",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.4,
+      "m_unknown": 0.15,
+      "source": "MoF/Bernama, electricity RM4.1b for half-year 2023, 21 Mar 2023: https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm4-1-billion-with-implementation-of-targeted-electricity-subsidy-steven-sim; MoF/Bernama, diesel RM5b annually, 22 Oct 2025: https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm5-bln-through-diesel-subsidy-rationalisation---mof",
+      "correction": "Electricity was RM4.1 billion for half-year 2023 in one official statement, but by Budget 2026 Anwar cited average RM6 billion from electricity/tariff restructuring. Diesel was initially described around RM4 billion annually, but MoF later said around RM5 billion annually. The card should use dates and current values.",
+      "stale_check": "Yes. Diesel and electricity figures were updated by 2025."
+    },
+    {
+      "claim": "The Ministry of Finance has cited an ~RM8 billion annual savings target overall.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.45,
+      "m_unknown": 0.45,
+      "source": "Bernama, Budget 2026, 10 Oct 2025: https://web11.bernama.com/en/news.php?id=2477089; MoF/Bernama, 10 Jun 2024 report cites approximately RM10 billion from three targeted subsidy measures: https://www.mof.gov.my/portal/en/news/press-citations/diesel-subsidy-savings-will-be-redirected-through-public-transport-str-pm",
+      "correction": "I did not find a primary MoF source stating an overall RM8 billion annual savings target. Official sources found cite about RM10 billion for three measures in June 2024 and RM15.5 billion annually by Budget 2026.",
+      "stale_check": "Likely stale or internally derived from older component estimates rather than an MoF overall target."
+    },
+    {
+      "claim": "No independent body publishes audited results on whether targeting reaches the right households.",
+      "status": "UNVERIFIED",
+      "m_true": 0.45,
+      "m_false": 0,
+      "m_unknown": 0.55,
+      "source": "National Audit Department search did not surface PADU/targeted subsidy delivery accuracy audit; MoF/Bernama, 4 Aug 2025 mentions parliamentary question on independent audits: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah",
+      "correction": "This is an absence claim and should be written as a finding from available searches, not as certain fact, unless the publication performs a complete audit-report inventory.",
+      "stale_check": "No contrary audit found up to this check."
+    },
+    {
+      "claim": "Subsidy effectiveness reporting is still done by the implementing ministries themselves.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.05,
+      "m_unknown": 0.35,
+      "source": "MoF written-reply reports via MoF/Bernama, 22 Oct 2025: https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm5-bln-through-diesel-subsidy-rationalisation---mof; MoF/Bernama, 5 Mar 2026: https://www.mof.gov.my/portal/en/news/press-citations/ron95-subsidy-drops-to-rm1-8-bln-in-4q-2025",
+      "correction": "The examples found are ministry self-reports in parliamentary replies. However, this does not prove all effectiveness reporting is only by ministries.",
+      "stale_check": "Current through Mar 2026 based on MoF reporting."
+    },
+    {
+      "claim": "Independent evaluation infrastructure remains the gap.",
+      "status": "UNVERIFIED",
+      "m_true": 0.5,
+      "m_false": 0,
+      "m_unknown": 0.5,
+      "source": "MoF/Bernama, 4 Aug 2025, parliamentary question explicitly asked about periodic independent audits: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah",
+      "correction": "This is a reasonable analytical conclusion, but the analysis should distinguish it from a directly verified fact.",
+      "stale_check": "No subsequent independent audit infrastructure source found."
+    },
+    {
+      "claim": "The story is no longer the savings number. It is whether targeting accuracy will ever be measured by anyone other than the ministries delivering it.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.1,
+      "m_unknown": 0.5,
+      "source": "MoF/Bernama, 5 Mar 2026, ministry reported RON95 savings and system stability: https://www.mof.gov.my/portal/en/news/press-citations/ron95-subsidy-drops-to-rm1-8-bln-in-4q-2025",
+      "correction": "This is opinion rather than a pure factual claim. It is defensible to ask for independent accuracy measurement, but it overstates by implying savings numbers are no longer material, especially when official savings figures changed materially after BUDI95 implementation.",
+      "stale_check": "Current issue remains relevant, but the savings number has changed and remains material."
+    },
+    {
+      "claim": "Headline savings mean little until delivery accuracy is independently audited.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.15,
+      "m_unknown": 0.5,
+      "source": "MoF/Bernama, 5 Mar 2026: https://www.mof.gov.my/portal/en/news/press-citations/ron95-subsidy-drops-to-rm1-8-bln-in-4q-2025",
+      "correction": "This is an evaluative statement, not directly verifiable. A more accurate version: headline savings are incomplete evidence of policy success without independent measurement of exclusion errors, inclusion errors, appeals, and household-level outcomes.",
+      "stale_check": "No."
+    },
+    {
+      "claim": "Subsidy rationalisation needs an independent audit body publishing results per cohort, not the implementing ministries grading themselves.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "No primary source found establishing this as a legal or official requirement. Related official source: MoF/Bernama, 4 Aug 2025: https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah",
+      "correction": "Present as policy recommendation, not fact. It is not verified as an existing statutory requirement or official standard.",
+      "stale_check": "No."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The PADU database (~30.4 million profiles) is the targeting backbone.",
+      "why": "Official sources support that PADU is a key reference database/reference point, but not the sole backbone. RON95 implementation also uses MyKad, JPJ and JPN data.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm5-bln-through-diesel-subsidy-rationalisation---mof"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Rafizi Ramli, the minister who built PADU, resigned over disagreements about how it would be used.",
+      "why": "The verified resignation statement attributes the resignation to his PKR election defeat and loss of party mandate, not PADU-use disagreements.",
+      "primary_source": "https://bernama.com/en/news.php?id=2428360"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Verified savings figures so far come from electricity (~RM4B) and diesel (~RM4B).",
+      "why": "The figures are stale. Current official figures cited in Budget 2026 are average RM6 billion for electricity/tariff restructuring and RM5 billion for diesel, with BUDI95 adding at least RM2.5 billion potential savings.",
+      "primary_source": "https://web11.bernama.com/en/news.php?id=2477089"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The Ministry of Finance has cited an ~RM8 billion annual savings target overall.",
+      "why": "I did not find a primary MoF source stating an overall RM8 billion annual target. Official sources found cite about RM10 billion in June 2024 and RM15.5 billion by Budget 2026.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/diesel-subsidy-savings-will-be-redirected-through-public-transport-str-pm; https://web11.bernama.com/en/news.php?id=2477089"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "No independent body publishes audited results on whether targeting reaches the right households.",
+      "why": "The statement may be true, but it is an absence claim. I found no published independent audit, but that is not the same as proving none exists.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/padu-data-to-be-used-for-ron95-targeted-subsidy-mechanism-amir-hamzah"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "RON95 targeting begins in the second half of 2025.",
+      "why": "The statement is true historically but stale in a 2026-published card. It should say BUDI95 took effect on 30 Sep 2025.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/madani-govt-allocates-rm11-bln-for-budi95-fuel-subsidy-mof"
+    }
+  ],
+  "omitted_facts": [
+    "BUDI95 took effect on 30 Sep 2025, with all Malaysian citizens aged 16 and above holding a valid driving licence automatically eligible for up to 300 litres per month. Source: MoF/Bernama, 23 Sep 2025, https://www.mof.gov.my/portal/en/news/press-citations/madani-govt-allocates-rm11-bln-for-budi95-fuel-subsidy-mof",
+    "By Budget 2026, Anwar cited overall subsidy rationalisation savings of about RM15.5 billion annually, including average RM6 billion from electricity/tariff restructuring, RM5 billion from diesel, and at least RM2.5 billion potential savings from BUDI95. Source: Bernama, 10 Oct 2025, https://web11.bernama.com/en/news.php?id=2477089",
+    "MoF reported in March 2026 that RON95 subsidy spending fell from RM3 billion in 4Q 2024 to RM1.8 billion in 4Q 2025, with around RM1.2 billion savings attributed to BUDI95 and lower oil prices. Source: MoF/Bernama, 5 Mar 2026, https://www.mof.gov.my/portal/en/news/press-citations/ron95-subsidy-drops-to-rm1-8-bln-in-4q-2025",
+    "MoF stated in October 2025 that PADU serves as one of the key reference databases for validation by MoF for targeted RON95 distribution, not necessarily the only database. Source: https://www.mof.gov.my/portal/en/news/press-citations/govt-saves-rm5-bln-through-diesel-subsidy-rationalisation---mof",
+    "Rafizi's verified resignation statement says he resigned after losing the PKR deputy presidency and no longer having the party mandate; PADU-use disagreement was not given as the reason. Source: Bernama, 28 May 2025, https://bernama.com/en/news.php?id=2428360"
+  ],
+  "source_assessment": "The original analysis cites only 'T4A related issue 1990', which is circular and not a primary source. It does not cite MoF statements, parliamentary written replies, Budget documents, the National Audit Department, PADU/Economy Ministry materials, opposition questions, civil society critiques, or technical/legal experts. The political and institutional range is therefore extremely narrow. The fact-check found relevant official government and parliamentary-reporting sources, but the original card itself gives readers no way to verify the numbers or contested claims.",
+  "overall_assessment": "The analysis identifies a real accountability issue around independent evaluation of subsidy targeting, but its factual reliability is weakened by stale savings numbers, overstatement of PADU's role, and an incorrect claim about Rafizi's resignation. The strongest verified elements are PADU's 30.4 million profiles, diesel implementation timing, RON95 rollout timing, and the existence of ministry self-reporting. The weakest elements are the RM8 billion overall target, the claim that Rafizi resigned over PADU-use disagreements, and the categorical absence of independent audits."
+}
