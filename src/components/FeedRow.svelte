@@ -75,6 +75,9 @@
       {#if hasReaction}
         <span style="font-size:var(--text-micro);font-weight:700;color:var(--highlight-accent, var(--score-warning));background:var(--highlight-bg, rgba(184,92,0,0.08));padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;">{reactionCount > 0 ? `${reactionCount} saved` : 'Highlighted'}</span>
       {/if}
+      {#if issue.legacyAudit}
+        <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size:var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;letter-spacing:0.02em;">Pre-pipeline</span>
+      {/if}
     </div>
     <span class="balance-title" style="font-size:var(--text-body);font-weight:{headlineWeight};color:{isActive ? 'var(--text-primary)' : headlineColor};line-height:1.28;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px;">{#if searchTerms}{@html highlightText(issue.headline, searchTerms)}{:else}{issue.headline}{/if}</span>
 

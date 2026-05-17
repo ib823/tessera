@@ -179,7 +179,7 @@ const phase2 = { matrix: [], unauditable: [], fullPipeline: [] };
 for (const i of published) {
   const id = i.id;
   const slug = idToSlug[id];
-  const row = { id, headline: i.headline, slug: slug || null, artifacts: {} };
+  const row = { id, headline: i.headline, slug: slug || null, artifacts: {}, legacyAudit: i.legacyAudit === true };
   if (slug) {
     row.artifacts.brief = existsSync(join(engineBriefDir, `${slug}.md`));
     row.artifacts.stage1 = existsSync(join(engineOutDir, `${slug}-stage1.json`));
@@ -198,6 +198,11 @@ for (const i of published) {
   if (presentCount === 0) phase2.unauditable.push(row);
   else if (presentCount >= 7) phase2.fullPipeline.push(row);
 }
+
+// Split unauditable into disclosed (legacyAudit:true → reader-facing badge)
+// vs. undisclosed (still risky — reader sees no caveat).
+const unauditableDisclosed = phase2.unauditable.filter(r => r.legacyAudit);
+const unauditableUndisclosed = phase2.unauditable.filter(r => !r.legacyAudit);
 
 // ── Phase 3: Source quality (only on issues with stage3 file) ──
 const phase3 = { results: [], flagged: [] };
@@ -381,7 +386,8 @@ lines.push(`|---|---:|`);
 lines.push(`| Total published issues | ${published.length} |`);
 lines.push(`| With full pipeline (≥7 of 8 artifacts) | ${phase2.fullPipeline.length} |`);
 lines.push(`| Partially audited (1-6 artifacts) | ${phase2.matrix.length - phase2.fullPipeline.length - phase2.unauditable.length} |`);
-lines.push(`| **Unauditable (zero artifacts)** | **${phase2.unauditable.length}** |`);
+lines.push(`| Unauditable, disclosed (\`legacyAudit:true\` badge on reader) | ${unauditableDisclosed.length} |`);
+lines.push(`| **Unauditable, undisclosed (no badge, no audit trail)** | **${unauditableUndisclosed.length}** |`);
 lines.push(`| Phase 1 structural flags | ${structuralFlaggedIds.size} issues |`);
 const stubLowFasCount = phase3.results.filter(r => !r.error && (r.incorrect + r.misleading) === 0 && ((r.factual_accuracy_score !== null && r.factual_accuracy_score < TH_FAS) || (r.avgMTrue !== null && r.avgMTrue < TH_MTRUE))).length;
 lines.push(`| Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | ${phase3.flagged.length} issues |`);
@@ -446,14 +452,27 @@ lines.push(`Per-issue audit of which engine artifacts exist. Issues with zero ar
 lines.push('');
 lines.push(`### Unauditable issues — zero engine artifacts (${phase2.unauditable.length})`);
 lines.push('');
-lines.push(`These published issues have no brief, no stage outputs, no reader.json. They predate the pipeline or were fallback-published. **Recommendation:** flag each for editorial decision. Do NOT auto-unpublish.`);
+lines.push(`These published issues have no brief, no stage outputs, no reader.json. They predate the pipeline or were fallback-published.`);
 lines.push('');
-if (phase2.unauditable.length === 0) {
-  lines.push(`*None.*`);
-} else {
-  for (const u of phase2.unauditable) {
+lines.push(`Split:`);
+lines.push(`- **${unauditableDisclosed.length} disclosed** — \`legacyAudit:true\` set; reader sees a "Pre-pipeline" badge. Backfill in priority order to remove the flag.`);
+lines.push(`- **${unauditableUndisclosed.length} undisclosed** — no badge yet. These should either get the flag or full pipeline ASAP.`);
+lines.push('');
+if (unauditableUndisclosed.length > 0) {
+  lines.push(`**Undisclosed (highest priority — add legacyAudit flag or backfill):**`);
+  for (const u of unauditableUndisclosed) {
     lines.push(`- **${u.id}** — ${u.headline}`);
   }
+  lines.push('');
+}
+if (unauditableDisclosed.length > 0) {
+  lines.push(`<details><summary><strong>Disclosed legacy (${unauditableDisclosed.length}) — backfill queue</strong></summary>`);
+  lines.push('');
+  for (const u of unauditableDisclosed) {
+    lines.push(`- **${u.id}** — ${u.headline}`);
+  }
+  lines.push('');
+  lines.push(`</details>`);
 }
 lines.push('');
 

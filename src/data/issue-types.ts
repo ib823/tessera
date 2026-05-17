@@ -27,6 +27,13 @@ export interface Issue {
   related?: string[];
   sourceDate?: string;
   published?: boolean;
+  /**
+   * Pre-pipeline content disclosure.
+   * `true` = no Stage 2/3 external review on file; primary-source backfill pending.
+   * Renders a "Pre-pipeline issue" badge on feed + reader. Cleared once the issue
+   * is verified against primary sources (research brief in engine/briefs/{slug}.md).
+   */
+  legacyAudit?: boolean;
 }
 
 export const CARD_TYPES: Record<string, { label: string; color: string; bg: string }> = {

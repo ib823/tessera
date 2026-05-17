@@ -9,7 +9,8 @@ Audit of all 103 published issues against the new accuracy + editorial criteria 
 | Total published issues | 103 |
 | With full pipeline (≥7 of 8 artifacts) | 30 |
 | Partially audited (1-6 artifacts) | 5 |
-| **Unauditable (zero artifacts)** | **68** |
+| Unauditable, disclosed (`legacyAudit:true` badge on reader) | 68 |
+| **Unauditable, undisclosed (no badge, no audit trail)** | **0** |
 | Phase 1 structural flags | 0 issues |
 | Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | 0 issues |
 | Phase 3 STUB low-FAS (no actionable claims; surface only) | 9 issues |
@@ -40,7 +41,13 @@ Per-issue audit of which engine artifacts exist. Issues with zero artifacts cann
 
 ### Unauditable issues — zero engine artifacts (68)
 
-These published issues have no brief, no stage outputs, no reader.json. They predate the pipeline or were fallback-published. **Recommendation:** flag each for editorial decision. Do NOT auto-unpublish.
+These published issues have no brief, no stage outputs, no reader.json. They predate the pipeline or were fallback-published.
+
+Split:
+- **68 disclosed** — `legacyAudit:true` set; reader sees a "Pre-pipeline" badge. Backfill in priority order to remove the flag.
+- **0 undisclosed** — no badge yet. These should either get the flag or full pipeline ASAP.
+
+<details><summary><strong>Disclosed legacy (68) — backfill queue</strong></summary>
 
 - **0142** — The Clause Nobody Mentioned in the Amendment
 - **0146** — Gig Workers Got SOCSO in 2025; Retirement Floor Still Missing
@@ -110,6 +117,8 @@ These published issues have no brief, no stage outputs, no reader.json. They pre
 - **1956** — Expat Salary Floor Doubles to RM20K; The Talent Equation Nobody Solves
 - **1976** — Four Undangs Declared the Ruler Deposed. Three Hold Office. One Does Not.
 - **1984** — E-invoice exemption walked back twice in a month after Sabah loss
+
+</details>
 
 ### Full-pipeline issues (30)
 

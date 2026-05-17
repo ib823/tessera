@@ -19,6 +19,7 @@ export interface IssueSummary {
   hasImage?: boolean;
   sourceDate?: string;
   cards: Array<{ t: string; lens?: string }>;
+  legacyAudit?: boolean;
 }
 
 // --- Feed summaries cache ---

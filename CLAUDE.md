@@ -241,6 +241,16 @@ Past audit snapshots live in [`docs/audits/`](docs/audits/) — each is dated an
 
 The pipeline preambles in `engine/templates/stage{1-6}-preamble.txt` enforce this Accuracy Standard at every stage of generation and review. Future Claude sessions running the publishing pipeline must read the relevant preamble before generating that stage.
 
+### `legacyAudit` flag — transparency for pre-pipeline content
+
+Some published issues predate the current 4-stage pipeline or were manually injected without a saved audit trail. These cannot be retroactively verified without research. Rather than silently presenting them as the same editorial product as fresh pipeline-vetted issues, T4A marks them with `"legacyAudit": true` in `src/data/issues/{id}.json`. The flag causes:
+
+- A "Pre-pipeline" badge to render on the feed card (mobile and desktop).
+- A caveat block under the headline on the reader page: *"Pre-pipeline issue — primary sources for the claims below are not on file yet."*
+- `audit-published.mjs` to count them as **disclosed legacy** rather than **undisclosed unauditable**. The summary surfaces both counts; only the undisclosed count is a quality-bar concern.
+
+Clearing the flag is the backfill protocol: research the topic against primary sources, write a brief at `engine/briefs/{slug}.md` meeting the standard above (≥8 primary sources, spectrum coverage, contradictions noted), patch or drop any cards the brief contradicts, then set `legacyAudit: false` (or remove the field). Backfill priority: 3R-adjacent first, then FALLBACK (auto-rotated content), then ORPHAN, then LEGACY.
+
 ## Content Rules
 - NO references to AI, models, Claude, GPT, or any AI provider
 - Use "4 independent review stages" (or "multi-stage editorial review") not "AI models"
