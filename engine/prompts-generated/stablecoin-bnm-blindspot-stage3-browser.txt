@@ -1,0 +1,220 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "stablecoin-bnm-blindspot",
+    "issue_id": "1993",
+    "brief": "engine/briefs/stablecoin-bnm-blindspot.md",
+    "generated_at": "2026-05-17",
+    "revision_history": [
+      "v1 (2026-05-17): initial draft after Phase 1 brief approval. Frame rotated from the mainstream 'BNM is innovating responsibly' vs 'Malaysia is sensibly cautious' binary to the structural visibility question — the SC's exclusion of USD stablecoins from the 22-token approved list did not remove the exposure; it removed BNM's telemetry on it, just as the US GENIUS Act of July 2025 federalised on-chain freeze power over USDT and USDC anywhere in the world. The 3R-sensitive RMJDT data point is deliberately not the centre of any card."
+    ],
+    "discipline": "Structural-not-personal. The story is about regulatory architecture and visibility, not about any individual or community. No card names the Tunku Mahkota of Johor or characterises RMJDT as the issue's centre; RMJDT exists in the brief as one data point in Exposure 4 and is not cited in the cards. No card characterises any BNM or SC officer personally. Cards critique the licensing-ban policy choice, not the institution. Numbers are framed exactly as the sources state them: Standard Chartered's US$1 trillion is a projection, not a Malaysian forecast; the 22-token approved list is a point-in-time figure; the Tether 7,268-address and US$3.29B totals are cumulative as of Tether's most recent public disclosures. Cards label what BNM has not published — the size of MYR→USD-stablecoin off-ramp flow — as itself the policy artefact, not as a number to invent."
+  },
+  "headline": "Malaysia approves 22 digital assets. None is a dollar stablecoin. They came in anyway.",
+  "context": "The Securities Commission approves no dollar stablecoin on Malaysia's six licensed exchanges. USDT and USDC reach Malaysians off-platform. Bank Negara publishes no count of the volume.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Malaysia's six licensed exchanges list 22 approved tokens. None is a dollar stablecoin. The dollar arrived on rails Bank Negara cannot see.",
+      "sub": "Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. The figure excludes USDT and USDC held off-platform.",
+      "sources": [
+        "Securities Commission Malaysia, List of Registered Digital Asset Exchanges — Recognized Markets (six SC-registered DAX: Luno, Tokenize, SINEGY, MX Global, HATA, Torum International): https://www.sc.com.my/regulation/guidelines/recognizedmarkets/list-of-registered-digital-asset-exchanges",
+        "Securities Commission Malaysia, Digital Assets — Guidelines (approved digital asset framework; no USD-pegged stablecoins on the approved list): https://www.sc.com.my/regulation/guidelines/digital-assets",
+        "Luno Malaysia disclosure (RM87 billion cumulative volume, 1 million users, RM4.28 billion managed assets) via RinggitPlus: https://ringgitplus.com/en/blog/cryptocurrency/luno-malaysia-surpasses-1-million-users-as-digital-asset-investments-gain-traction.html",
+        "PANews, 'Overview of Cryptocurrency in Malaysia: Dual Regulatory Model' (22 approved digital assets across the six DAX; stablecoins and privacy coins not approved; MYR-only trading pairs): https://www.panewslab.com/en/articles/lc23yr39f56e",
+        "The Sumsuber, 'Crypto Regulations in Malaysia — 2025 Guide' (RM13.9B 2024 volume; RM5.4B 2023 volume): https://sumsub.com/blog/crypto-regulations-in-malaysia-guide/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028.",
+      "sub": "Egypt, Pakistan, Turkey, India and Brazil top the October 2025 list. Malaysia is absent. The mechanism does not require naming.",
+      "sources": [
+        "Standard Chartered research note by Geoffrey Kendrick (Global Head of Digital Assets Research) and Madhur Jha (Global Economist), reported by The Block, 6 October 2025: 'Standard Chartered estimates $1 trillion could exit emerging market bank deposits for US stablecoins by 2028': https://www.theblock.co/post/373510/standard-chartered-estimates-1-trillion-could-exit-emerging-market-bank-deposits-for-us-stablecoins",
+        "Cointelegraph coverage of the same Standard Chartered research with named-country list (Egypt, Pakistan, Turkey, India, Brazil, South Africa, Bangladesh, Sri Lanka, Colombia): https://cointelegraph.com/news/standard-chartered-stablecoin-outflows-2028",
+        "IMF Working Paper WP/25/141, 'How to Estimate International Stablecoin Flows', 2025 (digital dollarisation as a distinct risk channel from classical dollarisation; mechanism does not require jurisdiction-specific naming): https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025141-source-pdf.pdf"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Tether has frozen 7,268 wallets holding US$3.29 billion at US direction. The reach is extraterritorial; no Malaysian court can compel reversal.",
+      "sub": "The GENIUS Act, signed 18 July 2025, gave OFAC on-chain reach over USDT and USDC anywhere in the world.",
+      "sources": [
+        "AMLBot, 'Stablecoin Freezes 2023–2025: Data Analysis of USDT vs USDC' (cumulative blacklisted addresses 7,268; total frozen USDT US$3.29 billion across Ethereum and Tron): https://blog.amlbot.com/stablecoin-freezes-2023-2025-a-data-backed-analysis-of-usdt-vs-usdc-by-amlbot/",
+        "Tether.io official statement, 'Tether Supports Freeze of More Than $344 Million in USD₮ in Coordination with OFAC and U.S. Law Enforcement' (April 2024 Iran sanctions case; Tether self-attests cooperation with OFAC and U.S. law enforcement): https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+        "The White House, Fact Sheet: 'President Donald J. Trump Signs GENIUS Act into Law', 18 July 2025 (federal stablecoin regulatory regime; Bank Secrecy Act applies; sanctions compliance required): https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+        "Latham & Watkins, 'The GENIUS Act of 2025: Stablecoin Legislation Adopted in the US' (on-chain freezing capability requirement; OFAC sanctions compliance obligation; 18-month or 120-day implementation trigger): https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us",
+        "Mayer Brown, 'GENIUS Act Signed into Law US Enacts Federal Stablecoin Legislation', July 2025: https://www.mayerbrown.com/en/insights/publications/2025/07/genius-act-signed-into-law-us-enacts-federal-stablecoin-legislation"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "big": "Singapore wrote rules for dollar stablecoins in August 2023. Bank Negara's three 2026 sandbox pilots are all ringgit.",
+      "sub": "Bank Negara promises clarity on ringgit stablecoins by end-2026. None of the pilots covers the dollar holdings the ban was meant to prevent.",
+      "sources": [
+        "Monetary Authority of Singapore, official media release, 'MAS Finalises Stablecoin Regulatory Framework', August 2023 (framework covers single-currency stablecoins pegged to SGD or any G10 currency including USD; 100% reserve, no lending/staking, whitepaper and reserve audit required): https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework",
+        "Fintech News Malaysia, 'BNM to Test Ringgit Stablecoins and Tokenised Deposits This Year' (three 2026 pilots: Capital A + Standard Chartered ringgit B2B stablecoin; Maybank tokenised deposits; CIMB tokenised deposits — all ringgit-denominated): https://fintechnews.my/56513/blockchain/bnm-stablecoin-tokenised-deposits/",
+        "Fintech News Malaysia, 'BNM Roadmap for Asset Tokenisation in Finance', November 2025 (BNM's 2025–2027 roadmap; clarity on ringgit stablecoins and tokenised deposits by end-2026): https://fintechnews.my/54847/blockchain/bank-negara-malaysia-bnm-roadmap-for-asset-tokenisation-in-finance/",
+        "Crypto Times, 'Malaysia Plans Wholesale Ringgit Stablecoin and Tokenised Deposits', 11 February 2026 (BNM confirmation of three sandbox pilots, scope and participants): https://www.cryptotimes.io/2026/02/11/malaysia-plans-wholesale-ringgit-stablecoin-and-tokenised-deposits/"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "On the rails Malaysia regulates, dollar stablecoins are absent. On the rails Malaysians use, Washington holds the freeze button.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis grounded in: (a) the SC approved-asset list excluding USDT and USDC (sources cited on the hook); (b) Tether's documented on-chain freeze cooperation with OFAC and the GENIUS Act formalisation of that obligation (sources cited on the Governance fact); (c) the absence of any published BNM telemetry on MYR→USD-stablecoin off-ramp volume despite the FATF Recommendation 15 reassessment cycle in 2025."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in.",
+      "sub": "The 22-token approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.",
+      "sources": [
+        "Editorial analogy. Anchored to the verified asymmetry between the SC approved-list scope and the unregulated rails on which USD stablecoins reach Malaysian users (sources cited on the hook and on the Governance fact, and to the IMF working paper on stablecoin flows describing the same mechanism as 'digital dollarisation' that removes friction from currency substitution)."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "The dollar is now software. Six licensed exchanges cannot list it. One foreign legislature can freeze it. Bank Negara cannot count it.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Verified facts: SC approved list excludes USD stablecoins (PANews; Sumsuber; SC list); GENIUS Act gave OFAC on-chain freeze reach over USDT and USDC (White House fact sheet; Latham; Mayer Brown); BNM has no published telemetry on USD-stablecoin off-ramps (absence of figure in BNM Annual Report and DAIH discussion papers, confirmed by Fintech News Malaysia and BNM official position page); Standard Chartered EM outflow mechanism applies to small open economies with floating currencies (Standard Chartered research via The Block; IMF WP/25/141)."
+      ]
+    }
+  ],
+  "sources": "Securities Commission Malaysia (List of Registered DAX; Digital Assets Guidelines); Bank Negara Malaysia (DAIH discussion paper coverage via Fintech News Malaysia; official position page on digital currencies); Monetary Authority of Singapore (Stablecoin Regulatory Framework media release, August 2023); The White House (GENIUS Act Fact Sheet, 18 July 2025); SEC.gov (Atkins statement on GENIUS Act); Latham & Watkins, Mayer Brown, Arnold & Porter (GENIUS Act legal primers); Standard Chartered research (Kendrick + Jha, October 2025) via The Block and Cointelegraph; IMF Working Paper WP/25/141 on international stablecoin flows; BIS speech by Pablo Hernández de Cos (April 2026) and Working Paper No. 1270; Tether.io official freeze statements; AMLBot freeze-data analysis 2023–2025; TRM Labs OFAC analysis; Fintech News Malaysia; The Edge Malaysia; Free Malaysia Today; The Star; New Straits Times; AirAsia Newsroom; RinggitPlus; PANews; The Sumsuber; Cryptotimes; Chainalysis Geography of Crypto 2024 and 2025; FATF Targeted Update on Recommendation 15 (June 2024) and jurisdictional snapshot. Spectrum: Malaysian government/regulator-published, Malaysian centrist press, US government/regulator-published, supranational official (IMF, BIS, FATF), and analytical-bank research.",
+  "confidence": "High on the Malaysian regulatory architecture: the SC has not approved any USD-pegged stablecoin for trading on the six licensed Digital Asset Exchanges; the approved list contains roughly 22 tokens (point-in-time, updated as SC approves new assets); Bank Negara launched the Digital Asset Innovation Hub in June 2025 with three ringgit-denominated pilots greenlit for 2026 (Capital A + Standard Chartered MYR B2B stablecoin; Maybank tokenised deposits; CIMB tokenised deposits); BNM has not published telemetry on MYR→USD-stablecoin off-ramp flow. High on the licensed-exchange volume figures: RM13.9 billion in 2024 from RM5.4 billion in 2023 (157% year-on-year), as widely reported by trade press citing SC and Luno disclosures; Luno Malaysia 1 million users and RM4.28 billion managed assets per Luno's own public statement via RinggitPlus. High on the GENIUS Act: signed into US federal law on 18 July 2025 (the day after House passage on 17 July); creates the first US federal regulatory regime for payment stablecoins; mandates 100% backing in liquid USD assets, monthly public reserve disclosures, Bank Secrecy Act compliance, sanctions compliance, and on-chain freezing capability; takes effect on the earlier of 18 months after enactment or 120 days after primary federal stablecoin regulators issue implementing regulations (multiple law-firm primers and the White House fact sheet agree). High on Tether's cumulative freeze record: 7,268 blacklisted addresses with US$3.29 billion in frozen USDT (AMLBot 2023–2025 data analysis), and Tether's own public statements on individual freezes (Iran US$344 million April 2024 via Tether.io; US$23 million Garantex March 2025; US$9 million Bybit hack March 2025; US$225 million DOJ June 2025). High on the Standard Chartered model: October 2025 research by Kendrick and Jha modelling US$1 trillion in EM bank deposit outflows into USD stablecoins by 2028, with EM stablecoin savings rising from US$173 billion today to US$1.22 trillion by 2028, naming Egypt, Pakistan, Turkey, India, Brazil, South Africa, Bangladesh, Sri Lanka, Colombia among most exposed — Malaysia explicitly not on the named list. High on Singapore's framework: MAS finalised the Stablecoin Regulatory Framework in August 2023, covering single-currency stablecoins pegged to SGD or any G10 currency including USD, with 100% reserve, whitepaper, and audit requirements; no lending or staking permitted; framework not yet fully in force as of late 2025. Medium on the precise market-cap and transaction-volume figures: USDT US$171 billion and USDC US$60 billion (May 2026, Motley Fool and trade press, Tether's and Circle's own attestations); USDT averaged ~US$703 billion in monthly transactions June 2024 – June 2025, peaked at US$1.01 trillion in June 2025 (Plasma; Chainalysis). Medium on Tether's Treasury holdings: US$127 billion in US Treasury bills as of Q2 2025 per multiple sources citing Tether's quarterly attestation. Low on the Malaysian-specific scale of off-ramp flow into USD stablecoins: by design, there is no BNM-published number; this absence is itself the policy artefact and is labelled as such in the brief and not invented in the cards.",
+  "lenses_used": ["Economic", "Governance", "Regional"],
+  "lenses_applicable_but_unused": ["Legal", "Technology", "Security"],
+  "needs_verification": [
+    "Whether the SC's approved digital asset count is exactly 22 as of brief drafting (17 May 2026), or has increased through SC approvals in early 2026 (e.g., Algorand and NEAR added to Luno in April 2025; further additions possible). Stage 3 should retrieve the current SC-published count and adjust the card numeral if needed.",
+    "The precise USDT and USDC market caps at brief drafting (figures cited as US$171B and US$60B are May 2026 readings; these move daily). Stage 3 should accept any reading from the same week as 'current' and flag only if change exceeds 10%.",
+    "Whether Tether's cumulative freeze totals (7,268 addresses, US$3.29 billion) have been updated by Tether to a higher figure between the May 2026 source date and Stage 3 review. The trend is monotonically upward. Use the most recent verified Tether disclosure.",
+    "Whether the BNM Annual Report 2024 Box 8 (digital-asset section) was directly retrieved; the BNM PDF returned HTTP 403 on direct fetch during Phase 1 research. Stage 3 should attempt direct retrieval or cite the box only via the BNM Annual Report 2024 press release page (https://www.bnm.gov.my/-/ar2024_en_pr) if the box content is summarised there.",
+    "Whether the GENIUS Act implementing regulations have been issued between July 2025 and brief drafting; the 120-day-after-regulations trigger may have advanced the effective date sooner than 18 months. Stage 3 should check Federal Register entries by primary federal stablecoin regulators (Office of the Comptroller of the Currency; FDIC; Federal Reserve; SEC).",
+    "Whether any Malaysian institution has been the subject of an OFAC secondary-sanctions action arising from USD-stablecoin exposure as of brief drafting. None is asserted in the cards; the structural exposure is the point, not a specific Malaysian case. Stage 3 should confirm the absence of a public case rather than the presence of one.",
+    "Whether BNM has, between Phase 1 brief drafting and Stage 3, published any further roadmap document, discussion paper, or AML guidance specifically addressing USD-pegged stablecoins (as distinct from ringgit-pegged stablecoins). The Phase 1 search returned no such document; Stage 3 should confirm continued absence."
+  ],
+  "source_notes": "Source spectrum is broad: Malaysian government and regulator-published (BNM official position page; SC list of registered DAX; SC Digital Assets Guidelines), Malaysian centrist trade and national press (Fintech News Malaysia, The Edge, Free Malaysia Today, The Star, New Straits Times, RinggitPlus, Lowyat.NET), US government and regulator-published (White House fact sheet on the GENIUS Act, SEC.gov Atkins statement), Singapore regulator-published (MAS media release), supranational official (IMF Working Paper WP/25/141, BIS speech and Working Paper No. 1270, FATF Targeted Update on Recommendation 15 and jurisdictional snapshot), analytical-bank research (Standard Chartered via The Block and Cointelegraph), and primary issuer disclosures (Tether.io self-attestations on freezes). Five contradictions noted in the brief and resolved before drafting: (1) total stablecoin market cap reported variously as US$320 billion and US$323 billion — cards do not state the aggregate figure; the USDT US$171B and USDC US$60B individual readings are used where needed; (2) the named-vulnerable list in the Standard Chartered model does not include Malaysia — cards explicitly state this and frame the mechanism as applying broadly rather than implying a Malaysian forecast; (3) Tether's cooperation footprint is reported variously as 7,268 blacklisted addresses (on-chain count) and 275 law-enforcement agencies across 59 jurisdictions (cooperation count) — the on-chain count is the figure used; (4) the SC approved list is reported as '22 approved digital assets' across the six DAX, but individual DAX such as Luno offer broader lists subject to SC approval — cards use the SC aggregate of approximately 22 with the caveat that the list is updated; (5) GENIUS Act enactment date is variously cited as 17 July 2025 (House passage) and 18 July 2025 (Trump signature) — cards use 18 July 2025 as the law's signing date. One direct-fetch failure: the BNM Annual Report 2024 Box 8 PDF returned HTTP 403 during Phase 1; the box content is referenced through secondary trade-press coverage and the BNM official position page rather than primary PDF retrieval. The single information gap that is itself central to the story is the absence of any BNM-published telemetry on MYR→USD-stablecoin off-ramp volume; cards explicitly name this absence rather than invent a number.",
+  "language_quality_notes": "Em-dashes: zero in headline, context, and all card big/sub fields. Auxiliary-verb stacking (is/are/was/were/be/been/being): every card big and sub field has at most one auxiliary; total auxiliary count across the issue is well within the §7.1 verb-diet guidance. Elevated-vocabulary token used once per the §6 rule: 'extraterritorial' on the Governance fact card (Card 3 big), chosen because the plain alternative 'across borders' reads worse, the word carries meaning the plain alternative cannot (the legal-jurisdictional sense), and an educated Malaysian reader of TIME / WSJ / The Edge will know or infer it. Hook emotion check: dominant emotion is anxiety-of-precedent (Bank Negara cannot count what it has banned; Washington can freeze what Bank Negara cannot count) rather than sadness or generalised concern — consistent with the Berger-Milkman 2012 finding that arousal-driven framings travel further than sad ones. Reframe template check: the reframe uses a parallel-rails contrast ('On the rails X / On the rails Y') rather than the over-used 'X is not Y, it is Z' or 'The question is not X, it is Y' templates that have appeared frequently in the last 10 published reframes. View-card WhatsApp test: the view's three short hammer sentences ('Six licensed exchanges cannot list it. One foreign legislature can freeze it. Bank Negara cannot count it.') form a tricolon with the third item the weightiest, and read as a single quotable line a thoughtful reader would paste into a group chat with no commentary. First-clause concreteness: every card.big opens with a concrete element — hook with 'Malaysia's six licensed digital asset exchanges' (named actor) and '22 approved tokens' (number); fact 1 with 'Standard Chartered's October 2025 research' (named actor + date); fact 2 with 'Tether has frozen 7,268 wallets' (named actor + number); fact 3 with 'Singapore's central bank' (named actor) and 'August 2023' (date); reframe with 'the rails Malaysia regulates' (concrete metaphor anchored to verified facts); analogy with a concrete physical comparison; view with 'The dollar is now a piece of software' (concrete metaphor)."
+}
