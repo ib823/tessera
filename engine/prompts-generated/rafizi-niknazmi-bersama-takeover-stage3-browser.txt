@@ -1,0 +1,234 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "rafizi-niknazmi-bersama-takeover",
+    "issue_id": "1993",
+    "brief": "engine/briefs/rafizi-niknazmi-bersama-takeover.md",
+    "generated_at": "2026-05-17",
+    "revision_history": [
+      "v1 (2026-05-17): initial draft. Structural angle: the no-by-election carve-out in Article 54(3) of the Federal Constitution as the buried fact; the Article 49A / Article 51 sequencing and the PKR RM10M bond as the legal-mechanics fact; the 6-months-to-2-years amendment of the carve-out as the historical fact."
+    ],
+    "discipline": "Process-not-people. Both protagonists are named (Rafizi, Nik Nazmi) only for what they did in public — quit PKR, vacate seats, take over PBM. No characterisation of motives, no conflation with the separate MACC ARM probe (Issue 1990). The MACC probe is referenced only in source_notes as cross-issue context for Stage 6's Sherlock scan. PKR's internal leadership dispute (Anwar/Nurul Izzah vs Rafizi/Nik Nazmi) is not editorialised. The target of sharp claims is the constitutional carve-out, not any individual."
+  },
+  "headline": "Rafizi and Nik Nazmi quit. Pandan and Setiawangsa stay empty until GE16.",
+  "context": "On 17 May 2026, ex-ministers Rafizi Ramli and Nik Nazmi Nik Ahmad announced they would quit PKR, vacate Pandan and Setiawangsa, and take over Parti Bersama Malaysia. Article 54(3) of the Federal Constitution lets both seats stay empty until the next general election.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Two ex-ministers quit PKR and took over a dormant 2016 party. The buried line: their two seats can lawfully stay empty until GE16.",
+      "sub": "Transport Minister Anthony Loke confirmed it on 17 May: 'no necessity to have a by-election.' Article 54(3) of the Federal Constitution permits it.",
+      "sources": [
+        "The Star, 17 May 2026, 'Speaker to decide on Pandan, Setiawangsa seats, by-elections unlikely after three-year mark, says Loke': https://www.thestar.com.my/news/nation/2026/05/17/speaker-to-decide-on-pandan-setiawangsa-seats-by-elections-unlikely-after-three-year-mark-says-loke",
+        "New Straits Times, 17 May 2026, '[UPDATED] Rafizi, Nik Nazmi take over Parti Bersama Malaysia': https://www.nst.com.my/news/nation/2026/05/1441564/updated-rafizi-nik-nazmi-take-over-parti-bersama-malaysia-watch",
+        "Malaysiakini, 17 May 2026, 'Rafizi and Nik Nazmi quitting PKR, vacating seats, to head Bersama party': https://www.malaysiakini.com/news/775373",
+        "US News / AP wire, 17 May 2026, 'Two Former Malaysian Ministers Announce Resignations from Parliament Seats': https://www.usnews.com/news/world/articles/2026-05-17/two-former-malaysian-ministers-announce-resignations-from-parliament-seats",
+        "Federal Constitution of Malaysia, Article 54 (Casual Vacancies). Subsection (1) sets the 60-day general rule 'save as provided under Clause (3)'; subsection (3) is the carve-out."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Pandan and Setiawangsa go vacant 18 May. Article 54(3) lets seats sit empty when fewer than two years remain in Parliament's mandate.",
+      "sub": "GE15 was 19 November 2022. The 13th Parliament's five-year clock runs to late 2027. The two-year carve-out window opened in November 2025; the two seats sit inside it.",
+      "sources": [
+        "Federal Constitution of Malaysia, Article 54(1) and Article 54(3). Article 54(1): 'Save as provided under Clause (3) ... such vacancy shall be filled within sixty days from the date on which it is established by the Election Commission.' Article 54(3): no by-election required when vacancy arises less than two years before Parliament's mandate expires under Article 55(3).",
+        "Federal Constitution of Malaysia, Article 55(3): Parliament's life is five years from the first sitting unless dissolved earlier. 13th Parliament first sat 19 December 2022.",
+        "Election Commission of Malaysia (SPR), GE15 polling date 19 November 2022. Cross-referenced via electiondata.my and The Star, 'GE15: Rafizi secures huge win in Pandan', 20 November 2022.",
+        "The Star, 17 May 2026, Loke statement: 'It has already passed the three year mark and even if asked to vacate, there is no necessity to have a by-election.'"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Resign the seat first, leave the party second. That sequence avoids Article 49A, and may also defeat PKR's RM10 million anti-defection bond.",
+      "sub": "In December 2024 the Court of Appeal had already cut former PKR VP Zuraida Kamaruddin's bond from RM10 million to RM100,000, holding MPs cannot contract away their right to choose a party.",
+      "sources": [
+        "Federal Constitution of Malaysia, Article 49A (Loss of Membership of House of Representatives on Party Hopping). Inserted by the Constitution (Amendment) (No. 3) Act 2022, in force 5 October 2022. 49A(1)(a) triggers vacancy if a member resigns from or ceases to be a member of their political party. Expulsion under 49A(2)(c) is carved out. Voluntary resignation of the seat under Article 51 sits outside 49A.",
+        "Federal Constitution of Malaysia, Article 51 (Resignation of Members) — a member may resign their seat by writing under their hand addressed to the Speaker.",
+        "FMT, 17 May 2026, 'Rafizi, Nik Nazmi say quitting seats to avoid anti-hopping law implications': https://www.freemalaysiatoday.com/category/nation/2026/05/17/rafizi-nik-nazmi-say-quitting-party-to-avoid-anti-hopping-law-implications",
+        "PKR internal undertaking: members agree to pay RM10 million within seven days if they resign from PKR, join another party, or become independent after winning on the PKR ticket. (Cited in The Edge Malaysia coverage of PKR v Zuraida appeal.)",
+        "Court of Appeal, 11 December 2024, *PKR v Zuraida Kamaruddin*, three-member panel led by Datuk See Mee Chun JCA: reduced the bond from RM10 million to RM100,000 on constitutional-right-to-association grounds. Reported in Sinar Daily, 'COA reduces Zuraida's payment: No room for representatives to consider party-hopping' and The Edge Malaysia, 'PKR files 12 questions of law' (Federal Court appeal pending).",
+        "Rahmat Lim & Partners, 'Anti-party hopping laws introduced in Federal Constitution of Malaysia': https://www.rahmatlim.com/publication/articles/22605/",
+        "Fulcrum (ISEAS), 'Malaysia's Anti-hopping Law: Some Loopholes to Mull Over'."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "big": "The carve-out used to be six months. A constitutional amendment expanded it to two years. The Malaysian Bar has called that change regrettable.",
+      "sub": "After the three-year mark of any five-year parliament, an MP can now resign and the seat stays empty until the next general election. Pandan and Setiawangsa emptied inside that window.",
+      "sources": [
+        "Malaysian Bar, 'By-elections and the Constitution': 'If a casual vacancy arises at a date which is less than two years from the date on which Parliament's five-year mandate is expiring under Article 55(3), no by-election needs to be held. Previously, this period was six months but regrettably the Constitution was amended.' (Exact year of amendment flagged for Stage 3 verification.)",
+        "Federal Constitution of Malaysia, Article 54(3) — current text. CommonLII / WIPO Lex / AGC consolidated reprints.",
+        "Refworld archive, 'Constitution of Malaysia (as amended up to 2009)': earlier text with six-month proviso visible in pre-amendment versions of Article 54."
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The anti-hopping law was sold as protecting the voter's mandate. Voluntary resignation, executed in sequence, defeats it without breaking a single word.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis of: Constitution (Amendment) (No. 3) Act 2022 (Article 49A); Federal Constitution Articles 51 and 54(3); the legal-commentary consensus on the loophole catalogue (Rahmat Lim & Partners; Fulcrum ISEAS; Thomas Philip Advocates) that anti-hopping under Article 49A is engaged only by resignation from or cessation of party membership, not by voluntary resignation of the seat.",
+        "FMT, 17 May 2026, on the sequencing: 'Rafizi, Nik Nazmi say quitting seats to avoid anti-hopping law implications'."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like a residents' association chairman resigning 18 months before the AGM, with the by-laws blocking any replacement until then. The chair stays empty.",
+      "sub": "Pandan and Setiawangsa just emptied two MP chairs the same way. The Federal Constitution permits it explicitly.",
+      "sources": [
+        "Editorial analogy. Mirrors verified findings: Article 54(3) Federal Constitution; GE15 polled 19 November 2022; 13th Parliament's five-year life expires late 2027; seats vacated 18 May 2026 fall inside the two-year no-by-election window."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Two Klang Valley seats sit empty until the next general election because the Constitution permits it. Parliament wrote that rule; only Parliament can revisit it.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis: Federal Constitution Article 54(3) was amended by Parliament to expand the no-by-election window from six months to two years (Malaysian Bar commentary). The same Parliament could narrow it back."
+      ]
+    }
+  ],
+  "sources": "The Star; New Straits Times; Malay Mail; Malaysiakini; Free Malaysia Today (FMT); The Edge Malaysia; The Vibes; Borneo Post; Berita Harian; Harian Metro; Scoop; The Rakyat Post; Bloomberg; US News / AP wire — plus primary text of the Federal Constitution (Articles 49A, 51, 54(1), 54(3), 55(3)); Constitution (Amendment) (No. 3) Act 2022; Election Commission GE15 results; Court of Appeal ruling in PKR v Zuraida Kamaruddin (December 2024); Registrar of Societies registration record for Parti Bersama Malaysia (2 December 2016); Malaysian Bar 'By-elections and the Constitution' commentary; Rahmat Lim & Partners; Thomas Philip Advocates; Fulcrum (ISEAS) commentary on anti-hopping loopholes.",
+  "confidence": "High on the announcement facts: date (17 May 2026), venue (PJ Performing Arts Centre), the takeover of Parti Bersama Malaysia, the seat vacation effective 18 May, and the official PBM joining on 19 May — covered consistently by The Star, NST, FMT, Malaysiakini, Malay Mail, AP wire and Berita Harian. High on the constitutional analysis: Articles 49A, 51, 54(1), 54(3), 55(3) are matters of public statutory text; the Constitution (Amendment) (No. 3) Act 2022 (Article 49A) is gazetted. High on the GE15 Pandan figure (Rafizi's 48,296 majority from The Star, 20 Nov 2022). High on the Zuraida Kamaruddin Court of Appeal ruling (December 2024, RM10M reduced to RM100,000; Sinar Daily and Edge coverage). High on the PBM 2016 registration (NST cross-referenced with Wikipedia Malaysian United Party article and Tan Gin Theam's on-stage handover). High on Loke's statement (The Star, 17 May 2026). Medium on the precise Setiawangsa majority (Wikipedia gives 12,614 sourced from EC results; not yet pulled from the EC primary record). Medium on the precise year of the Article 54 six-months-to-two-years amendment (Malaysian Bar confirms the amendment happened but the indexed page does not state the year). Medium on whether the Article 54(3) speaker-discretion override could be triggered here: the override requires the Speaker to notify the Election Commission that the 'numerical strength of the ruling party or coalition is being affected,' and given PH's supermajority in the Unity Government, the political likelihood of this override being exercised is low — but the legal possibility remains.",
+  "lenses_used": ["Governance", "Legal", "Historical"],
+  "lenses_applicable_but_unused": ["Political", "Rights", "Critical"],
+  "needs_verification": [
+    "The precise year of the constitutional amendment that expanded the Article 54(3) no-by-election window from six months to two years. Malaysian Bar confirms it happened ('regrettably the Constitution was amended') but the indexed commentary page does not name the year. Stage 3 should pull AGC's consolidated reprint with marginal notes, or the List of Amendments to the Constitution of Malaysia on Wikipedia cross-referenced with the relevant Federal Gazette.",
+    "The Setiawangsa GE15 majority figure (12,614 per Wikipedia / niknazmi.com). Stage 3 should pull the EC SPR official GE15 results to confirm the exact number — if the official record gives a different figure, Card 6 should not name a specific count.",
+    "The exact text of Article 54(3) — we have a paraphrase from the Malaysian Bar commentary and a partial quote from the search index. Stage 3 should pull the full primary text from AGC's Federal Constitution consolidated reprint to confirm the wording of the speaker-discretion override (the 'numerical strength' clause).",
+    "Whether the PKR RM10M bond can legally be defeated by the resign-seat-first sequencing. There is no reported court ruling on this specific sequencing. Zuraida did not resign her seat first; she crossed the floor while holding the seat (which is the textbook Article 49A scenario the 2022 amendment was meant to prevent). The seat-first route is legally untested. Stage 3 should flag this distinction and search for any law-commentary discussion of it.",
+    "Whether the Speaker (Tan Sri Johari Abdul) has formally acknowledged the resignation letters, and whether the Election Commission has formally established the vacancy. As of 17 May the announcement is made; the formal mechanics are downstream events on 18 May and after. Stage 3 should look for post-18-May coverage if available.",
+    "Whether the Registrar of Societies has formally approved the leadership transfer of Parti Bersama Malaysia. Tan Gin Theam handed over the registration certificate on stage, but the RoS administrative process for changing party president and constitution may not yet be complete. Stage 3 should check."
+  ],
+  "source_notes": "Loke's 'three-year mark' phrasing is colloquial — he is referring to the fact that the 13th Parliament has passed the midpoint of its five-year mandate (the three-year mark from GE15 was 19 November 2025), which placed Parliament inside the Article 54(3) two-year window. The constitutional anchor is two years before mandate expiry, not three years after GE. The cards use the precise constitutional framing (Article 54(3), two-year window) while citing Loke as the political confirmation. Rafizi's separate MACC investigation over the RM1.1B ARM Holdings deal (T4A Issue 1990) is deliberately not cross-referenced in the cards — conflating the party move with the MACC probe would be misleading framing. The MACC probe is acknowledged here as cross-issue context for Phase 7 Sherlock scanning only. Nurul Izzah Anwar (PKR deputy president; PM Anwar's daughter) defeated Rafizi at PKR internal elections in 2025; this is the immediate trigger for the party move per multiple sources, but the cards do not editorialise on the PKR family-dynamics angle because the structural story is stronger and less partisan. No public statement from PM Anwar specifically on the takeover has been indexed as of brief date. Hadi Awang (PAS) and other opposition figures have not been indexed responding to this specific announcement either. Tan Gin Theam's motives in handing over PBM are not characterised — the public fact is that the certificate was handed over on stage at PJPAC. The 'second kamikaze' framing is Rafizi's own description (he was the 'first kamikaze' when he resigned the PKR vice-presidency in 2018); the cards do not repeat this framing because it is partisan self-description, not a structural finding.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert that no by-election will be held — only that Article 54(3) permits the seats to stay empty and that Loke has publicly stated by-elections are 'not necessary.' The Speaker retains discretion under the numerical-strength override. We do NOT assert that Rafizi or Nik Nazmi will succeed in their new political venture; we report only the takeover of PBM as a public fact. We do NOT assert that the RM10 million bond WILL be defeated — we say it 'may also be defeated' because the seat-first sequencing is legally untested. We do NOT characterise the MACC ARM probe (Issue 1990) as having any connection to this move. We do NOT speak for PKR, for Anwar, for Nurul Izzah, or for the Pandan and Setiawangsa electorates.",
+    "underclaim_check": "We do not soften verified findings. Article 54(3) DOES permit the no-by-election outcome. Anthony Loke DID publicly confirm 'no necessity to have a by-election' on 17 May 2026. The Court of Appeal DID reduce Zuraida Kamaruddin's bond from RM10M to RM100,000 in December 2024. Article 49A IS engaged only by resignation from or cessation of party membership, not by voluntary seat resignation under Article 51. The six-months-to-two-years amendment to Article 54(3) DID happen (Malaysian Bar confirms). None of these are softened to 'critics say' or 'reportedly.'",
+    "misleading_framing_check": "Card 1 leads with the surface claim (mainstream coverage) and then names the buried line, allowing the reader to register the gap. Card 2 establishes the constitutional carve-out with the date math (GE15, 5-year clock, 2-year window) so the reader can verify the framing. Card 3 introduces the anti-hopping sequencing AND the Zuraida precedent (which softens the RM10M bond), so the reader sees both sides of the legal-mechanics picture. Card 4 names the amendment as the structural cause, attributing the 'regrettable' characterisation to the Bar Council (not editorial voice). Reframe rotates the issue from personality to structure. View is balanced: Parliament wrote the rule; Parliament can revisit it (not a directive). The MACC ARM probe is deliberately excluded from the cards to avoid the misleading impression that the party move is itself a flight from investigation.",
+    "unverified_detail_check": "Every specific in v1 cards traces to a primary or near-primary source. Date 17 May 2026 (Sun) — multi-outlet. PJPAC venue, 2,000+ supporters, Tan Gin Theam handover — NST. Effective 18 May vacancy date — multi-outlet. Article 54(3) carve-out — Federal Constitution + Malaysian Bar. GE15 polling date 19 Nov 2022 — EC. Article 49A — Constitution (Amendment) (No. 3) Act 2022, in force 5 Oct 2022 — gazetted. PKR RM10M bond and Zuraida court ruling — Sinar Daily, Edge, Court of Appeal record. Loke statement — The Star direct quote. Setiawangsa precise majority is flagged in needs_verification. Year of the 6-months-to-2-years amendment is flagged in needs_verification.",
+    "3R_special_caution": "Religion: not applicable — no religious dimension. Race: not applicable — both MPs are Malay, both seats are mixed urban Klang Valley constituencies, no ethnic angle is implicated. Royalty: not applicable — no royal involvement, no Conference of Rulers angle.",
+    "process_not_people_check": "Sharp claims target the structural mechanic (Article 54(3), Article 49A, the 6-months-to-2-years amendment, the RM10M bond, the Court of Appeal precedent). The two protagonists (Rafizi, Nik Nazmi) are named only for what they publicly did in their official capacity. Loke is named for his public confirmation. Tan Gin Theam is named only for the documentary fact of the certificate handover. Zuraida Kamaruddin is named only as the named appellant in the binding Court of Appeal precedent. No person is characterised as bad-faith. The 'second kamikaze' line (Rafizi's own self-description) is not repeated in cards because it is partisan and unhelpful.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent. The cards land on the structural fact that a constitutional carve-out, written by Parliament, permits two constituencies to lose elected representation for ~18 months — and that the same mechanism can repeat anywhere any MP resigns inside the two-year window. This is not sad (no victim narrative) and not anger-at-people (Rafizi and Nik Nazmi acted within the rules). It is anger-at-process: at the carve-out itself, and at the silent absence of public debate over a rule that affects every parliamentary term's final two years."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Strong: 17 May 2026 announcement facts verified across The Star, NST, FMT, Malaysiakini, Malay Mail, AP wire, Berita Harian and Harian Metro. Constitutional citations (Articles 49A, 51, 54(1), 54(3), 55(3)) are matters of public statutory text. Constitution (Amendment) (No. 3) Act 2022 is gazetted (5 October 2022). GE15 Pandan majority of 48,296 from The Star and EC. Court of Appeal Zuraida ruling (December 2024, RM10M → RM100,000) from Sinar Daily and The Edge Malaysia. PBM 2016 registration from NST and corroborated by Wikipedia Malaysian United Party. Loke's statement is a direct quote in The Star, 17 May 2026. Capped at 86 because: (a) the exact year of the Article 54(3) six-months-to-two-years amendment is not yet confirmed against AGC's consolidated reprint or the Federal Gazette — Malaysian Bar confirms it happened but does not name the year on the indexed page; (b) the Setiawangsa GE15 majority (12,614 per Wikipedia / niknazmi.com) is not yet pulled from the EC SPR primary record; (c) the speaker-discretion override in Article 54(3) (the 'numerical strength' clause) is paraphrased from the Bar Council commentary and a partial search-index quote — Stage 3 should pull the full primary text; (d) whether the seat-first sequencing legally defeats the PKR RM10M bond is untested in court — we have hedged this to 'may also defeat,' which is the correct softening, but Stage 3 should flag this as untested precedent."
+}
