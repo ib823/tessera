@@ -1,0 +1,177 @@
+{
+  "factual_accuracy_score": 18,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "Parliament passed the Communications Amendment on 20 March 2026 with 148-32 votes.",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.9,
+      "m_unknown": 0.08,
+      "source": "Parliament of Malaysia, Communications and Multimedia (Amendment) Bill 2024, D.R. 51/2024, https://repositori.parlimen.gov.my/bitstream/123456789/1605/55/DR%2051/2024; contemporaneous reports citing Dewan Rakyat division 59-40-1-122 on 9 Dec 2024, e.g. Malaysia Gazette, 9 Dec 2024, https://malaysiagazette.com/2024/12/09/pindaan-akta-komunikasi-dan-multimedia-2024-lulus/",
+      "correction": "The Communications and Multimedia (Amendment) Bill 2024 was passed by the Dewan Rakyat on 9 December 2024 by 59 votes for, 40 against, one abstention, and 122 absent, and was subsequently passed by the Dewan Negara on 16 December 2024. I found no primary support for a 20 March 2026 passage or a 148-32 vote.",
+      "stale_check": "Not a stale-data issue. The claimed date and vote count appear to be wrong, not superseded."
+    },
+    {
+      "claim": "Buried in Section 14A: platforms become liable for user content.",
+      "status": "INCORRECT",
+      "m_true": 0.03,
+      "m_false": 0.85,
+      "m_unknown": 0.12,
+      "source": "Parliament of Malaysia, D.R. 51/2024 Communications and Multimedia (Amendment) Bill 2024, https://repositori.parlimen.gov.my/bitstream/123456789/1605/55/DR%2051/2024; Laws of Malaysia Act 866, Online Safety Act 2025, gazetted 22 May 2025, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+      "correction": "D.R. 51/2024 does not contain a Section 14A. Act 866 Section 14 is a duty to issue user guidelines; Section 13 requires measures specified in a code to mitigate exposure to harmful content; Sections 21-26 deal with reporting and making harmful content inaccessible. The law creates duties for licensed providers but does not simply state that platforms are liable for all user content.",
+      "stale_check": "Not stale. The published bill and Act text contradict the claim."
+    },
+    {
+      "claim": "Bipartisan support for the Communications Amendment.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.45,
+      "m_unknown": 0.3,
+      "source": "Dewan Rakyat vote reported as 59 for, 40 against, one abstention and 122 absent on 9 Dec 2024; Malaysia Gazette, 9 Dec 2024, citing the Speaker’s vote announcement, https://malaysiagazette.com/2024/12/09/pindaan-akta-komunikasi-dan-multimedia-2024-lulus/",
+      "correction": "The vote was contested and passed by a narrow attended majority after an opposition-requested division. Characterising this as broad bipartisan support overstates the evidence unless a verified roll-call shows cross-opposition support.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "Nobody is talking about Section 14A on page 34, which redefines who is responsible for what you post.",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.85,
+      "m_unknown": 0.13,
+      "source": "Parliament of Malaysia, D.R. 51/2024, pages around page 34, https://repositori.parlimen.gov.my/bitstream/123456789/1605/55/DR%2051/2024",
+      "correction": "Page 34 of D.R. 51/2024 concerns amendments around content applications service provider suspension and network security provisions, not a Section 14A imposing platform liability for user posts. The bill text contains no Section 14A.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The term 'reasonable steps' is never defined.",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.25,
+      "m_unknown": 0.6,
+      "source": "Parliament of Malaysia, D.R. 51/2024, https://repositori.parlimen.gov.my/bitstream/123456789/1605/55/DR%2051/2024; Laws of Malaysia Act 866, Online Safety Act 2025, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+      "correction": "I could not verify the exact phrase 'reasonable steps' in D.R. 51/2024 or Act 866. Act 866 instead uses concepts such as measures specified in a code, alternative measures approved by the Commission, and 'reasonable grounds'. The analysis should identify the exact statutory phrase and section.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "MCMC decides what platforms must do, without publishing any standard.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.4,
+      "m_unknown": 0.25,
+      "source": "Laws of Malaysia Act 866, Sections 13, 30, 37-39, 80, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf; MCMC public consultation statement on draft Code of Conduct, 22 Oct 2024, https://mcmc.gov.my/skmmgovmy/media/General/PressRelease/MS_Public_Consultation_on_the_draft_Code_of_Conduct_-Best-Practice-MCMC.pdf",
+      "correction": "MCMC has substantial powers and Act 866 allows it to issue directions, notices and codes, but the Act expressly contemplates codes and guidelines. MCMC also published public consultations for related draft codes. The claim overstates by saying no standard is published.",
+      "stale_check": "May have become more stale after further MCMC consultations in 2026 for Online Safety Plan and codes."
+    },
+    {
+      "claim": "Three previous actions overturned by High Court.",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.35,
+      "m_unknown": 0.6,
+      "source": "Search found contrary examples: Bernama, 23 Jan 2025, High Court dismissed legal challenge against MCMC, https://www.bernama.com/en/news.php?id=2386051; The Star, 29 Apr 2024, High Court dismissed application to initiate judicial review on phone line restriction, https://www.thestar.com.my/news/nation/2024/04/29/application-to-initiate-judicial-review-on-phone-line-restriction-dismissed",
+      "correction": "I found no primary or court-text support for three MCMC actions overturned by the High Court. The closest prominent Section 233 development was a Court of Appeal ruling later partly reversed by the Federal Court, not three High Court reversals.",
+      "stale_check": "A later Federal Court ruling on 6 February 2026 partly reversed the Court of Appeal decision on Section 233, so any analysis relying on the Court of Appeal position must be updated."
+    },
+    {
+      "claim": "Indonesia passed the same law. Takedowns rose 43%.",
+      "status": "UNVERIFIED",
+      "m_true": 0.02,
+      "m_false": 0.35,
+      "m_unknown": 0.63,
+      "source": "Search found Indonesia content-takedown reporting but not the claimed same-law or 43% figure; e.g. Bernama, 11 Mar 2025, on 1.3 million harmful sites/content removed in Indonesia, https://www.bernama.com/en/news.php?id=2401208",
+      "correction": "The analysis needs a primary Indonesian statute/regulation and official takedown statistics. I could not verify the 'same law' comparison or the 43% increase.",
+      "stale_check": "Not determined."
+    },
+    {
+      "claim": "Malaysia's bill bypassed the standard 30-day consultation.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.2,
+      "m_unknown": 0.45,
+      "source": "Malaysia National Policy on Good Regulatory Practice, MITI/MPC, stating consultation minimum period of 30 days, https://www.miti.gov.my/miti/resources/NPGRP/3._National_Policy_on_Good_Regulatory_Practice_.pdf; MCMC consultation on draft Code of Conduct ran 22 Oct-5 Nov 2024, https://mcmc.gov.my/skmmgovmy/media/General/PressRelease/MS_Public_Consultation_on_the_draft_Code_of_Conduct_-Best-Practice-MCMC.pdf",
+      "correction": "Malaysia’s GRP policy supports a 30-day consultation norm, and one related MCMC code consultation ran about 14 days. But I could not verify from primary sources that the specific Communications and Multimedia Amendment Bill itself was legally required to undergo, and bypassed, a 30-day consultation.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "PAS voted yes. DAP voted yes. Bersatu voted no.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.65,
+      "m_unknown": 0.25,
+      "source": "Vote context: Malaysia Gazette, 9 Dec 2024, says the division was requested by Ahmad Fadhli Shaari (PN-Pasir Mas) after the minister wound up debate and resulted 59 for, 40 against, one abstention, 122 absent, https://malaysiagazette.com/2024/12/09/pindaan-akta-komunikasi-dan-multimedia-2024-lulus/; Ahmad Fadhli is PAS per MyMP profile, https://mymp.org.my/p/ahmad-fadhli-bin-shaari?locale=en",
+      "correction": "The 'PAS voted yes' part is contradicted by the available vote context: a PAS/PN MP requested the division to oppose the bill, and the opposition bloc was reported as voting against. DAP support is plausible as part of the government bloc; Bersatu opposition is plausible, but the claim as a three-party statement is not verified by primary roll-call in this review.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "This cuts along religious-secular lines, not coalition lines.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "Dewan Rakyat vote context from Malaysia Gazette, 9 Dec 2024, https://malaysiagazette.com/2024/12/09/pindaan-akta-komunikasi-dan-multimedia-2024-lulus/",
+      "correction": "The available evidence points to a government-versus-opposition division, not a religious-secular split. The claim depends on the already incorrect claim that PAS voted yes.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "Platform liability without clear definitions gives regulators blank-cheque enforcement power.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.4,
+      "m_unknown": 0.3,
+      "source": "Laws of Malaysia Act 866, Sections 13, 19, 21-28, 30, 37-40 and 70, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+      "correction": "The Act does give MCMC significant regulatory and enforcement powers, but it also specifies duties, codes, notices, an Appeal Tribunal, and judicial review after internal remedies. 'Blank-cheque' is an overclaim unless framed as opinion and tied to specific sections.",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "Good regulation needs clear rules, independent enforcement, and judicial review. This bill provides the third but not the first two.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.3,
+      "source": "Laws of Malaysia Act 866, Section 70 judicial review, Section 40 Appeal Tribunal, Section 30 MCMC directions, Section 80 codes/guidelines, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+      "correction": "Judicial review is explicitly provided in Section 70 after exhaustion of remedies. The claim that the bill provides neither clear rules nor independent enforcement is partly evaluative and should acknowledge the existence of statutory duties, codes/guidelines, an Appeal Tribunal chaired by a High Court judge, and MCMC’s role as regulator.",
+      "stale_check": "Not stale."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Parliament passed the Communications Amendment on 20 March 2026 with 148-32 votes.",
+      "why": "The date and vote count could not be verified and are contradicted by the known Dewan Rakyat vote on 9 December 2024 of 59-40 with one abstention and 122 absent.",
+      "primary_source": "Parliament bill text D.R. 51/2024, https://repositori.parlimen.gov.my/bitstream/123456789/1605/55/DR%2051/2024"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Buried in Section 14A: platforms become liable for user content.",
+      "why": "No Section 14A was found in the Communications and Multimedia Amendment Bill. Act 866 imposes specific duties on licensed providers, not blanket liability for user content.",
+      "primary_source": "Act 866 Online Safety Act 2025, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Three previous actions overturned by High Court.",
+      "why": "No primary court source was found for three High Court reversals of MCMC actions. Available searched cases included dismissed challenges and an appellate constitutional case later affected by the Federal Court.",
+      "primary_source": "No primary source found; contrary examples include Bernama 23 Jan 2025, https://www.bernama.com/en/news.php?id=2386051"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Indonesia passed the same law. Takedowns rose 43%.",
+      "why": "No primary Indonesian law/statistics source verified either the 'same law' comparison or the 43% takedown increase.",
+      "primary_source": "No primary source found"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "PAS voted yes. DAP voted yes. Bersatu voted no. This cuts along religious-secular lines, not coalition lines.",
+      "why": "The framing depends on PAS voting yes, which is contradicted by the reported opposition-requested division led by a PAS/PN MP. Available evidence indicates coalition alignment rather than a religious-secular divide.",
+      "primary_source": "Primary roll-call not retrieved; vote context reported from Dewan proceedings by Malaysia Gazette, 9 Dec 2024, https://malaysiagazette.com/2024/12/09/pindaan-akta-komunikasi-dan-multimedia-2024-lulus/"
+    }
+  ],
+  "omitted_facts": [
+    "The Communications and Multimedia (Amendment) Bill 2024 was D.R. 51/2024 and contains 121 clauses amending Act 588, not a 2026 bill with Section 14A. Source: Parliament of Malaysia, https://repositori.parlimen.gov.my/bitstream/123456789/1605/55/DR%2051/2024",
+    "The Online Safety Act 2025, Act 866, was assented to on 6 May 2025 and published in the Gazette on 22 May 2025. Source: Laws of Malaysia Act 866, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+    "Act 866 expressly excludes private messaging features from its application. Source: Act 866 Section 2(2), https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+    "Act 866 Section 13(3) says measures implemented to mitigate harmful content exposure shall not unreasonably or disproportionately limit a user’s expression. Source: Act 866, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf",
+    "Act 866 provides an Online Safety Appeal Tribunal and judicial review after other remedies are exhausted. Source: Act 866 Sections 40 and 70, https://www.zulrafique.com.my/ckfinder/userfiles/files/legislation%20update/Act866-OnlineSafetyAct2025.pdf"
+  ],
+  "source_assessment": "The original analysis cites only two internal T4A related issues and no primary sources, creating a near-circular source base. It does not cite the bill text, the gazetted Act, Hansard, MCMC consultation papers, court judgments, Malaysian GRP policy, or Indonesian official statistics. Government/legal primary sources are absent, opposition/civil society perspectives are absent except by implication, and no platform, legal expert, user/community, or independent technical source is represented.",
+  "overall_assessment": "The analysis is factually unreliable. Its central scaffold appears wrong: the date, vote count, Section 14A reference, platform-liability characterisation, Indonesia comparison, and party-vote framing either contradict available primary/legal materials or could not be verified. Some broad concerns about regulator power and judicial review have a basis in Act 866, but they are mixed with invented or unsupported specifics and should not be published without substantial correction and primary sourcing."
+}

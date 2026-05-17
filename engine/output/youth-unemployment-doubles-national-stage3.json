@@ -1,0 +1,163 @@
+{
+  "factual_accuracy_score": 24,
+  "source_diversity_estimate": 0,
+  "claims": [
+    {
+      "claim": "Youth Unemployment Rate Doubles National Average at 10.8%",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.85,
+      "m_unknown": 0.1,
+      "source": "Department of Statistics Malaysia, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, released 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+      "correction": "DOSM reported the overall unemployment rate at 2.9% in Q4 2025 and the youth unemployment rate for ages 15-24 at 10.1% in December 2025, not 10.8%. Youth unemployment was about 3.5 times the national rate, not double. The 5.2% national rate is not supported by the DOSM Q4 2025 release.",
+      "stale_check": "The analysis was derived on 2026-05-17, after the DOSM Q4 2025 release on 2026-02-11, so this is not explained by staleness."
+    },
+    {
+      "claim": "DOSM reported 10.8% unemployment among 15-24 year olds in Q4 2025, compared to 5.2% nationally.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.9,
+      "m_unknown": 0.05,
+      "source": "Department of Statistics Malaysia, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, released 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+      "correction": "The DOSM Q4 2025 release states the overall Q4 unemployment rate was 2.9%. It separately states that in December 2025 the unemployment rate among youths aged 15-24 was 10.1%, with 298.7 thousand unemployed youths. I found no DOSM support for 10.8% or 5.2% in this context.",
+      "stale_check": "Not stale; the correct primary source predates the reconstructed analysis."
+    },
+    {
+      "claim": "388,000 young Malaysians are actively seeking but unable to find work",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.55,
+      "m_unknown": 0.2,
+      "source": "Department of Statistics Malaysia, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, released 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+      "correction": "DOSM reported 298.7 thousand unemployed youths aged 15-24 in December 2025 and 396.9 thousand unemployed youths aged 15-30. The 388,000 figure is not supported by the cited age group and should not be presented as 15-24 youth unemployment.",
+      "stale_check": "Not stale; DOSM December/Q4 2025 data were available before 2026-05-17."
+    },
+    {
+      "claim": "Gig economy absorbs 42% of working youth but with no EPF or SOCSO coverage",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.65,
+      "m_unknown": 0.3,
+      "source": "PERKESO, Self-Employment Social Security Scheme (Lindung Kendiri), accessed May 2026, https://www.perkeso.gov.my/perkhidmatan-kami/perlindungan/pekerjaan-sendiri.html; Malaysia Government Portal, Self-Employment Social Security Scheme, accessed May 2026, https://www.malaysia.gov.my/en/topics/self-employment-social-security-scheme-lindung-kendiri",
+      "correction": "I could not verify the 42% figure from a primary source. The absolute claim of no SOCSO coverage is wrong: PERKESO has a self-employment scheme intended to extend protection to self-employed and gig workers. A more defensible claim would distinguish between lack of automatic employer-style EPF/SOCSO coverage and actual voluntary or statutory self-employed coverage rates.",
+      "stale_check": "Not stale; PERKESO self-employed coverage existed before this analysis."
+    },
+    {
+      "claim": "Underemployment disguises the true extent of youth economic precarity",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Department of Statistics Malaysia, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, released 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+      "correction": "DOSM does report underemployment measures, including Q4 2025 time-related underemployment of 129.8 thousand persons and a skill-related underemployment rate of 35.3%, but the claim that this disguises the true extent of youth precarity is an interpretation not verified by the cited cards.",
+      "stale_check": "No stale issue identified."
+    },
+    {
+      "claim": "Minimum wage of RM1,500 has not changed since May 2022 despite 12% cumulative inflation",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.9,
+      "m_unknown": 0.05,
+      "source": "Minimum Wages Order 2024, P.U. (A) 376, made 2 December 2024, https://www.jtkswk.gov.my/v2/wp-content/uploads/2025/01/PERINTAH-GAJI-MINIMUM-2024.pdf; DOSM Consumer Price Index Malaysia May 2022, released 24 June 2022, https://www.dosm.gov.my/portal-main/release-content/consumer-price-index-malaysia-may-2022; DOSM Consumer Price Index Malaysia December 2025, released 20 January 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18500",
+      "correction": "The Minimum Wages Order 2024 set RM1,700 from 1 February 2025 for employers with five or more employees and professional activities, and from 1 August 2025 for smaller employers. CPI rose from 126.6 in May 2022 to 135.5 in December 2025, about 7.0%, not 12%.",
+      "stale_check": "If written before 1 February 2025, the wage part may have been partly current for some employers, but the reconstructed analysis is dated 2026-05-17, after the RM1,700 order was in force."
+    },
+    {
+      "claim": "Real purchasing power of entry-level wages continues to erode",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.4,
+      "m_unknown": 0.3,
+      "source": "Minimum Wages Order 2024, P.U. (A) 376, made 2 December 2024, https://www.jtkswk.gov.my/v2/wp-content/uploads/2025/01/PERINTAH-GAJI-MINIMUM-2024.pdf; DOSM Consumer Price Index Malaysia December 2025, released 20 January 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18500",
+      "correction": "For the statutory minimum wage, the nominal rise from RM1,500 to RM1,700 is about 13.3%, which exceeds the approximately 7.0% CPI increase from May 2022 to December 2025. The broader claim about entry-level wages may be true for some occupations, but it needs wage data, not the minimum-wage claim supplied here.",
+      "stale_check": "Not stale for the reconstructed analysis date."
+    },
+    {
+      "claim": "ILO reports Malaysia has highest youth NEET rate in ASEAN at 11.3% for 2025",
+      "status": "INCORRECT",
+      "m_true": 0.2,
+      "m_false": 0.65,
+      "m_unknown": 0.15,
+      "source": "World Bank Data, Share of youth not in education, employment or training, total (% of youth population), modeled ILO estimate, Malaysia, accessed May 2026, https://data.worldbank.org/indicator/SL.UEM.NEET.ME.ZS?locations=MY; ILO, Asia and the Pacific Brief GET Youth 2024, August 2024, https://www.ilo.org/sites/default/files/2024-08/Asia%20and%20the%20Pacific%20Brief%20GET%20Youth%202024.pdf",
+      "correction": "The Malaysia 2025 modeled ILO NEET figure appears to be 11.3%, but the claim that it is the highest in ASEAN is contradicted by ILO regional data showing ASEAN at 16.3% in 2025, which implies at least one ASEAN country is above 11.3%. The statement should remove 'highest in ASEAN' unless a full country comparison from ILOSTAT supports it.",
+      "stale_check": "Not stale; the cited ILO/World Bank series covers 2025."
+    },
+    {
+      "claim": "Not in employment education or training is a leading indicator of social exclusion",
+      "status": "UNVERIFIED",
+      "m_true": 0.35,
+      "m_false": 0.05,
+      "m_unknown": 0.6,
+      "source": "International Labour Organization, Measuring what matters: NEET vs youth unemployment, 12 August 2025, https://www.ilo.org/resource/article/measuring-what-matters-neet-vs-youth-unemployment",
+      "correction": "ILO describes the NEET rate as an indicator of barriers young people face in entering the labour market, but I did not verify the exact claim that it is a 'leading indicator of social exclusion' from a primary source.",
+      "stale_check": "No stale issue identified."
+    },
+    {
+      "claim": "A generation locked out of stable work will not build the families and businesses Malaysia needs",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No primary source found for this causal/projection claim.",
+      "correction": "This is a normative and predictive claim. It should either be framed clearly as opinion or supported with demographic, business formation, and labour-market evidence.",
+      "stale_check": "No stale issue identified."
+    },
+    {
+      "claim": "The graduates accumulate, but the jobs to absorb them do not exist at the same rate.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Department of Statistics Malaysia, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, released 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+      "correction": "DOSM reports skill-related underemployment at 35.3% in Q4 2025, but the specific graduate pipeline and job-creation-rate comparison is not verified in the analysis.",
+      "stale_check": "No stale issue identified."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Youth unemployment at 10.8% is double the national rate of 5.2% in Q4 2025",
+      "why": "The cited national rate is wrong; DOSM gives 2.9% for Q4 2025. The youth figure found in DOSM is 10.1% for December 2025, not 10.8%. The 'double' framing is therefore mathematically and factually wrong.",
+      "primary_source": "DOSM, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "388,000 young Malaysians are actively seeking but unable to find work",
+      "why": "DOSM reports 298.7 thousand unemployed youths aged 15-24 and 396.9 thousand aged 15-30 in December 2025; 388,000 was not verified.",
+      "primary_source": "DOSM, Labour Force Statistics, Malaysia, December and Fourth Quarter 2025, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Gig economy absorbs 42% of working youth",
+      "why": "No primary source was found for the 42% share. It is a specific quantitative claim and should not be published without sourcing.",
+      "primary_source": "No primary source found."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "with no EPF or SOCSO coverage",
+      "why": "The absolute 'no SOCSO coverage' claim is contradicted by PERKESO's self-employment social security scheme for self-employed and gig workers.",
+      "primary_source": "PERKESO, Self-Employment Social Security Scheme, https://www.perkeso.gov.my/perkhidmatan-kami/perlindungan/pekerjaan-sendiri.html"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Minimum wage of RM1,500 has not changed since May 2022 despite 12% cumulative inflation",
+      "why": "The minimum wage changed to RM1,700 in 2025 under the Minimum Wages Order 2024. The CPI change from May 2022 to December 2025 is about 7.0%, not 12%, using DOSM CPI index points.",
+      "primary_source": "Minimum Wages Order 2024, P.U. (A) 376, https://www.jtkswk.gov.my/v2/wp-content/uploads/2025/01/PERINTAH-GAJI-MINIMUM-2024.pdf; DOSM CPI May 2022 and December 2025 releases."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "ILO reports Malaysia has highest youth NEET rate in ASEAN at 11.3% for 2025",
+      "why": "The 11.3% Malaysia figure is plausible from modeled ILO data, but the 'highest in ASEAN' superlative is not supported and is contradicted by ILO ASEAN aggregate data of 16.3% for 2025.",
+      "primary_source": "World Bank/ILO modeled estimate for Malaysia, https://data.worldbank.org/indicator/SL.UEM.NEET.ME.ZS?locations=MY; ILO Asia and the Pacific Brief GET Youth 2024, https://www.ilo.org/sites/default/files/2024-08/Asia%20and%20the%20Pacific%20Brief%20GET%20Youth%202024.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "DOSM reported Malaysia's Q4 2025 overall unemployment rate fell to 2.9%, the lowest since Q2 2014, with 517.9 thousand unemployed persons. Source: DOSM, 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+    "DOSM reported the December 2025 youth unemployment rate for ages 15-24 at 10.1%, with 298.7 thousand unemployed youths, and the rate for ages 15-30 at 6.1%, with 396.9 thousand unemployed youths. Source: DOSM, 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+    "The Minimum Wages Order 2024 raised the monthly minimum wage to RM1,700, with staged commencement on 1 February 2025 and 1 August 2025 depending on employer category. Source: P.U. (A) 376, https://www.jtkswk.gov.my/v2/wp-content/uploads/2025/01/PERINTAH-GAJI-MINIMUM-2024.pdf",
+    "DOSM reported skill-related underemployment at 1.9565 million persons and 35.3% in Q4 2025, which is relevant to youth job-quality framing but is not youth-specific in the card. Source: DOSM, 11 February 2026, https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=18752",
+    "PERKESO operates the Self-Employment Social Security Scheme to extend social security protection to self-employed persons, including informal-sector and gig-economy workers. Source: Malaysia Government Portal, https://www.malaysia.gov.my/en/topics/self-employment-social-security-scheme-lindung-kendiri"
+  ],
+  "source_assessment": "The original analysis lists zero sources. It relies on unsourced figures and superlatives across labour statistics, wages, inflation, gig work, and NEET rates. There is no visible institutional diversity: no DOSM release, gazette, ILOSTAT table, PERKESO source, academic source, employer/worker source, or policy source is cited. The source base is therefore an echo chamber of unsourced assertions rather than a spectrum of primary evidence.",
+  "overall_assessment": "The analysis is factually unreliable. Its central headline is wrong, the national unemployment comparator is wrong, the minimum-wage card is outdated for 2026 and contradicted by the 2024 gazette, the inflation figure is overstated against DOSM CPI index points, and the ASEAN NEET superlative is unsupported. Several claims may point toward real issues, such as youth unemployment, underemployment, and social protection gaps among gig workers, but the published cards use incorrect or unverified numbers and overstate what primary sources support."
+}

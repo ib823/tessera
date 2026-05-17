@@ -1,0 +1,205 @@
+{
+  "factual_accuracy_score": 32,
+  "source_diversity_estimate": 0,
+  "claims": [
+    {
+      "claim": "Forbes Malaysia 2025 list showed that the combined wealth of Malaysia's 50 richest individuals at RM412 billion equals the total net worth of the bottom 12 million Malaysian adults",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.5,
+      "m_unknown": 0.3,
+      "source": "Forbes, 'Robert Kuok Retains No. 1 Spot On 2025 Forbes List of Malaysia’s 50 Richest', 2025-04-16, https://www.forbes.com/sites/forbespr/2025/04/16/robert-kuok-retains-no-1-spot-on-2025-forbes-list-of-malaysias-50-richest/ ; UBS Global Wealth Report 2025, 2025-06-18, https://www.ubs.com/global/en/wealthmanagement/insights/global-wealth-report.html",
+      "correction": "Forbes reported the 2025 collective wealth as US$90 billion, not RM412 billion. The claim that this equals the bottom 12 million Malaysian adults' net worth could not be verified from a primary wealth-distribution source. The latest Forbes list found during verification is 2026, at US$116 billion.",
+      "stale_check": "Yes. The analysis is dated 2026-05-17, after Forbes released the 2026 Malaysia rich list on 2026-04-16, so using 2025 as the current list is stale."
+    },
+    {
+      "claim": "50 people own as much as 12 million.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.2,
+      "m_unknown": 0.7,
+      "source": "Forbes 2025 Malaysia Rich List, 2025-04-16, https://www.forbes.com/lists/malaysia-billionaires/ ; WID homepage identifies Malaysia as covered but no directly verified bottom-12-million calculation was found, https://wid.world/",
+      "correction": "This requires a transparent calculation using a primary wealth-distribution dataset, including adult population, bottom-percentile wealth share, exchange rate, and year. No such calculation is cited or verifiable in the analysis.",
+      "stale_check": "Potentially stale because Forbes 2026 updated the top-50 figure after the 2025 list."
+    },
+    {
+      "claim": "Robert Kuok's RM82 billion alone exceeds the combined net worth of 3 million poorest Malaysians",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.3,
+      "m_unknown": 0.6,
+      "source": "Forbes reported Robert Kuok's 2025 net worth as US$11.4 billion, 2025-04-16, https://www.forbes.com/sites/forbespr/2025/04/16/robert-kuok-retains-no-1-spot-on-2025-forbes-list-of-malaysias-50-richest/",
+      "correction": "Forbes gives US$11.4 billion for 2025, which is materially below RM82 billion at ordinary 2025 exchange rates. The comparison with the poorest 3 million Malaysians is not verified from a primary distribution source.",
+      "stale_check": "Yes. Forbes 2026 later reported Kuok at US$13.6 billion."
+    },
+    {
+      "claim": "Wealth concentration increased 18% since 2020.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.4,
+      "m_unknown": 0.3,
+      "source": "Forbes 2020 reported US$79 billion, 2020-03-04, https://www.forbes.com/sites/forbespr/2020/03/04/wealth-of-tycoons-on-2020-forbes-malaysia-rich-list-falls-for-second-consecutive-year/ ; Forbes 2025 reported US$90 billion, 2025-04-16, https://www.forbes.com/sites/forbespr/2025/04/16/robert-kuok-retains-no-1-spot-on-2025-forbes-list-of-malaysias-50-richest/",
+      "correction": "Forbes figures imply the top-50 collective wealth rose from US$79 billion in 2020 to US$90 billion in 2025, about 13.9%, not 18%. Calling this 'wealth concentration' is also an overclaim unless measured as a share of national wealth or GDP.",
+      "stale_check": "Yes. Forbes 2026 reports US$116 billion, which would be about 46.8% above 2020."
+    },
+    {
+      "claim": "The pandemic created 8 new billionaires while 600,000 families fell into B40.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.3,
+      "m_unknown": 0.3,
+      "source": "Forbes 2021 said four new Malaysian billionaires joined Forbes' 2021 billionaires list, 2021-04-06, https://www.forbes.com/sites/chasewithorn/2021/04/06/nearly-500-people-have-become-billionaires-during-the-pandemic-year/ ; Twelfth Malaysia Plan FAQ citing DOSM Household Income Estimates 2020 says about 20% or approximately 600,000 M40 households fell into B40, https://rmke12.ekonomi.gov.my/en/information/faq/social",
+      "correction": "The 600,000-household portion is supported by Malaysian government material citing DOSM. The '8 new billionaires' portion was not verified; Forbes material found refers to four new Malaysians on the 2021 global billionaires list, while Malaysia's rich-list membership differs from global-billionaire status.",
+      "stale_check": "No recent change affects the 2020 pandemic income estimate, but the billionaire count depends on which Forbes list and date are used."
+    },
+    {
+      "claim": "Top 50's RM412 billion equals 25.6% of GDP.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.8,
+      "m_unknown": 0.1,
+      "source": "DOSM Gross Domestic Product 2025 reported Malaysia's GDP at current prices as about RM2.02 trillion/RM2.03 trillion, 2026-02-13 and 2026-05-15, https://www.statistics.gov.my/portal-main/release-content/gross-domestic-product-q42025 ; Forbes 2025 reported US$90 billion, https://www.forbes.com/sites/forbespr/2025/04/16/robert-kuok-retains-no-1-spot-on-2025-forbes-list-of-malaysias-50-richest/",
+      "correction": "RM412 billion divided by RM2.02 trillion is about 20.4%, not 25.6%. If using Forbes' US$90 billion converted to ringgit, the percentage depends on exchange rate but still does not support 25.6% against 2025 GDP.",
+      "stale_check": "GDP 2025 full-year figures were published after the 2025 Forbes list; the analysis dated 2026-05-17 should have used the latest DOSM figure."
+    },
+    {
+      "claim": "No inheritance tax, estate duty, or capital gains tax constrains accumulation.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "JPPH says estate duty enactments were repealed effective 1991-11-01, https://www.jpph.gov.my/v3/?lang=en&page_id=9684 ; LHDN Real Property Gains Tax Act 1976, updated online version, https://www.hasil.gov.my/media/wvygbsuh/20230601-real-property-gains-tax-act-1976-act-169.pdf",
+      "correction": "Malaysia has no estate duty/inheritance tax, but it does have Real Property Gains Tax on disposals of chargeable real property and shares in real property companies. The blanket 'no capital gains tax' framing is inaccurate unless limited to many non-property assets, and even that needs caveats for newer tax rules.",
+      "stale_check": "Tax rules changed recently in relation to dividend taxation from YA2025."
+    },
+    {
+      "claim": "Average B40 household net worth at RM14,200 hasn't grown in real terms for 15 years.",
+      "status": "UNVERIFIED",
+      "m_true": 0,
+      "m_false": 0.2,
+      "m_unknown": 0.8,
+      "source": "DOSM Household Income and Basic Amenities Survey material located covers income, not B40 household net worth; IHSN catalogue for DOSM HIES 2019, https://catalog.ihsn.org/catalog/study/MYS_2019_HIES-BA_v01_M",
+      "correction": "No primary source was found for RM14,200 average B40 household net worth or for the 15-year real-terms stagnation claim. Replace with a sourced income or wealth statistic, or omit.",
+      "stale_check": "Unknown."
+    },
+    {
+      "claim": "Social mobility index ranking fell from 42nd to 58th globally.",
+      "status": "INCORRECT",
+      "m_true": 0,
+      "m_false": 0.8,
+      "m_unknown": 0.2,
+      "source": "World Economic Forum, Global Social Mobility Report 2020, published 2020-01-19, reports Malaysia ranked 43rd out of 82, https://www.weforum.org/reports/global-social-mobility-index-2020-why-economies-benefit-from-fixing-inequality ; PDF copy line showing Malaysia 43rd, https://www3.weforum.org/docs/Global_Social_Mobility_Report.pdf",
+      "correction": "The WEF Global Social Mobility Index 2020 ranks Malaysia 43rd out of 82. I found no primary source for a fall from 42nd to 58th globally.",
+      "stale_check": "No newer WEF Global Social Mobility Index ranking was found in this verification."
+    },
+    {
+      "claim": "Children born poor in Malaysia increasingly stay poor.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "World Economic Forum Global Social Mobility Report 2020 provides comparative social mobility indicators but not the specific longitudinal claim as worded, https://www3.weforum.org/docs/Global_Social_Mobility_Report.pdf",
+      "correction": "This is a broad trend claim requiring longitudinal mobility evidence. The analysis provides no primary source, and the WEF ranking alone does not prove that children born poor increasingly stay poor.",
+      "stale_check": "Unknown."
+    },
+    {
+      "claim": "Malaysia has zero wealth redistribution mechanisms: no inheritance tax (abolished in 1991), no capital gains tax on non-property assets.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "JPPH estate duty repeal effective 1991-11-01, https://www.jpph.gov.my/v3/?lang=en&page_id=9684 ; LHDN Real Property Gains Tax Act 1976, https://www.hasil.gov.my/media/wvygbsuh/20230601-real-property-gains-tax-act-1976-act-169.pdf ; Ministry of Finance Budget 2025 dividend tax press citation, 2024-10-29, https://www.mof.gov.my/portal/en/news/press-citations/dividend-tax-reduced-to-2-pct-in-response-to-msme-appeals-pm-anwar",
+      "correction": "The inheritance-tax element is supported. 'Zero wealth redistribution mechanisms' is an overclaim: Malaysia has progressive income tax, RPGT, transfers and subsidies, and from YA2025 a 2% tax on certain dividend income above RM100,000. The narrower claim about no general capital gains tax on non-property assets needs legal caveats.",
+      "stale_check": "Yes. The YA2025 dividend-tax change is directly relevant and predates the analysis date."
+    },
+    {
+      "claim": "Progressive income tax tops at 30%, but dividend income, capital gains, and inheritance flow untaxed.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.5,
+      "m_unknown": 0.1,
+      "source": "MOF Budget 2023 tax measure appendix gives resident individual rate up to 30%, https://belanjawan.mof.gov.my/pdf/belanjawan2023/ucapan/tax-measure.pdf ; MOF Budget 2025 dividend tax statement, 2024-10-29, https://www.mof.gov.my/portal/en/news/press-citations/dividend-tax-reduced-to-2-pct-in-response-to-msme-appeals-pm-anwar ; LHDN RPGT Act 1976, https://www.hasil.gov.my/media/wvygbsuh/20230601-real-property-gains-tax-act-1976-act-169.pdf",
+      "correction": "The top individual income tax rate of 30% is supported. But dividend income above RM100,000 for individuals is subject to a 2% tax from YA2025, real-property gains are taxed under RPGT, and only inheritance/estate duty is broadly absent. The sentence should be rewritten with these caveats.",
+      "stale_check": "Yes. Dividend taxation changed for YA2025 before the analysis date."
+    },
+    {
+      "claim": "The system taxes effort, not wealth.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.3,
+      "m_unknown": 0.4,
+      "source": "MOF and LHDN sources on income tax, dividend tax and RPGT: https://belanjawan.mof.gov.my/pdf/belanjawan2023/ucapan/tax-measure.pdf ; https://www.mof.gov.my/portal/en/news/press-citations/dividend-tax-reduced-to-2-pct-in-response-to-msme-appeals-pm-anwar ; https://www.hasil.gov.my/media/wvygbsuh/20230601-real-property-gains-tax-act-1976-act-169.pdf",
+      "correction": "This is an interpretive framing, but as factual shorthand it overstates the case because Malaysia does tax some investment-related income/gains and property gains, while lacking a broad net wealth or inheritance tax.",
+      "stale_check": "Yes, because YA2025 dividend tax weakens the claim."
+    },
+    {
+      "claim": "Should Malaysia reintroduce estate duties on inheritances above RM10 million to fund universal social protection for B40 households?",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0,
+      "m_unknown": 0.8,
+      "source": "JPPH confirms estate duty repeal effective 1991-11-01, https://www.jpph.gov.my/v3/?lang=en&page_id=9684",
+      "correction": "The premise that estate duties would be a 'reintroduction' is supported. The RM10 million threshold and ability to fund universal social protection for B40 households are policy assumptions not verified in the analysis.",
+      "stale_check": "No."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Forbes Malaysia 2025 list showed that the combined wealth of Malaysia's 50 richest individuals at RM412 billion equals the total net worth of the bottom 12 million Malaysian adults",
+      "why": "The RM412 billion conversion and bottom-12-million equality are not sourced to Forbes or a primary wealth-distribution dataset.",
+      "primary_source": "Forbes 2025 reported US$90 billion: https://www.forbes.com/sites/forbespr/2025/04/16/robert-kuok-retains-no-1-spot-on-2025-forbes-list-of-malaysias-50-richest/"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Wealth concentration increased 18% since 2020.",
+      "why": "Forbes top-50 wealth rose from US$79 billion in 2020 to US$90 billion in 2025, about 13.9%, and this is not itself a concentration measure.",
+      "primary_source": "Forbes 2020 and 2025: https://www.forbes.com/sites/forbespr/2020/03/04/wealth-of-tycoons-on-2020-forbes-malaysia-rich-list-falls-for-second-consecutive-year/ ; https://www.forbes.com/sites/forbespr/2025/04/16/robert-kuok-retains-no-1-spot-on-2025-forbes-list-of-malaysias-50-richest/"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The pandemic created 8 new billionaires",
+      "why": "The verified Forbes material found supports four new Malaysians on the 2021 global billionaires list, not eight.",
+      "primary_source": "Forbes 2021 global billionaires coverage: https://www.forbes.com/sites/chasewithorn/2021/04/06/nearly-500-people-have-become-billionaires-during-the-pandemic-year/"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Top 50's RM412 billion equals 25.6% of GDP.",
+      "why": "Using DOSM's 2025 GDP at about RM2.02 trillion, RM412 billion is about 20.4%, not 25.6%.",
+      "primary_source": "DOSM GDP 2025: https://www.statistics.gov.my/portal-main/release-content/gross-domestic-product-q42025"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Average B40 household net worth at RM14,200 hasn't grown in real terms for 15 years.",
+      "why": "No primary source was found for the RM14,200 B40 net-worth figure or the 15-year real stagnation claim.",
+      "primary_source": "No primary source found; DOSM HIES catalogue covers income/expenditure, not this claim: https://catalog.ihsn.org/catalog/study/MYS_2019_HIES-BA_v01_M"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Social mobility index ranking fell from 42nd to 58th globally.",
+      "why": "The primary WEF Global Social Mobility Report 2020 ranks Malaysia 43rd out of 82; no primary evidence of 42nd to 58th was found.",
+      "primary_source": "WEF Global Social Mobility Report 2020: https://www3.weforum.org/docs/Global_Social_Mobility_Report.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Malaysia has zero wealth redistribution mechanisms",
+      "why": "This ignores progressive income tax, RPGT, cash transfers/subsidies, and YA2025 dividend tax, even though Malaysia lacks an inheritance tax and broad net wealth tax.",
+      "primary_source": "MOF dividend tax statement: https://www.mof.gov.my/portal/en/news/press-citations/dividend-tax-reduced-to-2-pct-in-response-to-msme-appeals-pm-anwar ; LHDN RPGT Act: https://www.hasil.gov.my/media/wvygbsuh/20230601-real-property-gains-tax-act-1976-act-169.pdf"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "dividend income, capital gains, and inheritance flow untaxed",
+      "why": "Dividend income above RM100,000 is taxed at 2% from YA2025, real-property gains are taxed under RPGT, while inheritance/estate duty is absent. Grouping all three as untaxed is misleading.",
+      "primary_source": "MOF Budget 2025 dividend tax statement: https://www.mof.gov.my/portal/en/news/press-citations/dividend-tax-reduced-to-2-pct-in-response-to-msme-appeals-pm-anwar ; LHDN RPGT Act: https://www.hasil.gov.my/media/wvygbsuh/20230601-real-property-gains-tax-act-1976-act-169.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "Forbes released a newer 2026 Malaysia 50 Richest list on 2026-04-16: collective wealth rose nearly 30% to US$116 billion, and Robert Kuok was US$13.6 billion. Source: Forbes, https://www.forbes.com/sites/forbespr/2026/04/15/wealth-of-malaysias-50-richest-on-2026-forbes-list-jumps-nearly-30-to-us116-billion/",
+    "DOSM reported Malaysia's 2025 GDP at current prices around RM2.02 trillion/RM2.03 trillion, which changes the GDP-share calculation. Source: DOSM, https://www.statistics.gov.my/portal-main/release-content/gross-domestic-product-q42025",
+    "Malaysia introduced a 2% tax on annual dividend income exceeding RM100,000 for individual shareholders from YA2025, contradicting the blanket claim that dividend income flows untaxed. Source: MOF, https://www.mof.gov.my/portal/en/news/press-citations/dividend-tax-reduced-to-2-pct-in-response-to-msme-appeals-pm-anwar",
+    "Estate duty enactments were repealed effective 1991-11-01, which supports the inheritance-tax absence claim. Source: JPPH, https://www.jpph.gov.my/v3/?lang=en&page_id=9684",
+    "The WEF Global Social Mobility Index 2020 ranks Malaysia 43rd out of 82, not 58th. Source: WEF, https://www3.weforum.org/docs/Global_Social_Mobility_Report.pdf"
+  ],
+  "source_assessment": "The original analysis lists zero sources. Its factual scaffolding appears to require Forbes, DOSM, WEF, LHDN/MOF/JPPH, and a wealth-distribution dataset such as UBS or WID, but none are cited. Institutional perspectives are absent: no government statistics, tax-law sources, academic work, civil-society analysis, business/tax expert commentary, or community voices are included. Source diversity is therefore effectively nonexistent.",
+  "overall_assessment": "The analysis has a serious reliability problem. Some broad premises are directionally plausible, such as high wealth concentration and the absence of inheritance tax, but many specific figures are unsupported, stale, arithmetically wrong, or framed beyond what primary sources show. The most consequential errors are the unsupported bottom-12-million comparison, the stale 2025 Forbes baseline despite a 2026 list, the incorrect GDP percentage, the unverified B40 net-worth figure, the wrong social-mobility ranking, and the omission of YA2025 dividend tax and RPGT caveats."
+}

@@ -12,11 +12,11 @@ Audit of all 69 published issues against the new accuracy + editorial criteria f
 | Unauditable, disclosed (`legacyAudit:true` badge on reader) | 34 |
 | **Unauditable, undisclosed (no badge, no audit trail)** | **0** |
 | Phase 1 structural flags | 0 issues |
-| Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | 0 issues |
+| Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | 1 issues |
 | Phase 3 STUB low-FAS (no actionable claims; surface only) | 9 issues |
 | Phase 4 anti-pattern hits | 0 hits across 0 issues |
 | Tier 1 review (highest priority) | 0 issues |
-| Tier 2 review (low confidence) | 0 issues |
+| Tier 2 review (low confidence) | 1 issues |
 | Tier 3 review (anti-pattern only) | 0 issues |
 
 ## Phase 1 — Structural
@@ -130,14 +130,14 @@ These have ≥7 of 8 expected artifacts and are fully auditable.
 | 1146 | issue-1146-v2 | 6/8 | brief, stage1 |
 | 1887 | issue-1887-v2 | 6/8 | brief, stage1 |
 | 1959 | sabah-philippines-claim | 6/8 | stage3, stage4 |
-| 1985 | e-invoicing-exemption-shadow-economy | 4/8 | stage2, stage3, stage4, stage5 |
+| 1985 | e-invoicing-exemption-shadow-economy | 6/8 | stage4, stage5 |
 | 1986 | malay-grievance-policy-capture | 6/8 | stage4, stage5 |
 
 ## Phase 3 — Source Quality
 
 Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold: `factual_accuracy_score < 70` OR `avg m_true < 0.7` OR any INCORRECT/MISLEADING claim.
 
-### Stage 3 results — all issues with artifacts (33)
+### Stage 3 results — all issues with artifacts (34)
 
 | ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Resolution | Flagged |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
@@ -167,6 +167,7 @@ Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold:
 | 1962 | 14 | 9 | 5 | 0 | 0 | 72 | 0.7 | 0.55 | STUB |  |
 | 1964 | 14 | 10 | 3 | 0 | 1 | 72 | 0.73 | 0.5 | RESOLVED |  |
 | 1965 | 12 | 5 | 2 | 1 | 4 | 72 | 0.59 | 0.55 | RESOLVED |  |
+| 1985 | 21 | 9 | 4 | 0 | 8 | 72 | 0.5 | 0.42 | — | ⚠️ |
 | 1989 | 24 | 11 | 3 | 1 | 9 | 73 | 0.6 | 0.62 | RESOLVED |  |
 | 1961 | 10 | 5 | 3 | 0 | 2 | 74 | 0.63 | 0.5 | RESOLVED |  |
 | 1963 | 11 | 7 | 4 | 0 | 0 | 74 | 0.67 | 0.55 | STUB |  |
@@ -199,11 +200,12 @@ These issues have no audit trail AND show structural or anti-pattern flags. High
 
 *None.*
 
-### Tier 2 — Low Stage 3 confidence (0)
+### Tier 2 — Low Stage 3 confidence (1)
 
 Issues where Stage 3 flagged factual accuracy AND the Stage 6 synthesis did not log enough corrections to clear the concern. Issues marked RESOLVED in the Phase 3 table are excluded from this queue.
 
-*None.*
+- **1985** — FAS 72, m_true 0.5, INC 0, MIS 8
+  Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
 
 ### Tier 3 — Anti-pattern only (0)
 
