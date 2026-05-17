@@ -204,6 +204,57 @@ const phase3 = { results: [], flagged: [] };
 const TH_FAS = 70; // factual_accuracy_score threshold
 const TH_MTRUE = 0.7; // average m_true threshold
 
+// Count Stage 3 revisions logged in a Stage 6 synthesis. Stage 3's pre-
+// correction critique is stored on disk forever, but the synthesizer's
+// `revision_log` (also `revisions`, `revisions_made`, etc. across pipeline
+// editions) records what was actually applied. Counting revisions is far
+// more reliable than substring-matching pre-correction quotes against the
+// post-correction live cards — corrected wording often shares tokens with
+// the original (numbers, named entities).
+function countStage3Resolutions(synth) {
+  if (!synth) return { explicit: 0, bare: 0 };
+  const haystacks = [];
+  for (const k of ['revision_log', 'revisions', 'revisions_made', 'revisions_applied', 'revision_history', 'revision_notes', 'synthesis_notes']) {
+    if (Array.isArray(synth[k])) haystacks.push(...synth[k].map(String));
+    else if (typeof synth[k] === 'string') haystacks.push(synth[k]);
+  }
+  if (Array.isArray(synth.cards)) {
+    for (const c of synth.cards) {
+      for (const k of ['notes', 'revisions', 'revision', 'note']) {
+        if (typeof c[k] === 'string') haystacks.push(c[k]);
+        else if (Array.isArray(c[k])) haystacks.push(...c[k].map(String));
+      }
+    }
+  }
+  const VERB = '(?:CORRECTED|REMOVED|REPLACED|REPHRASED|REVISED)';
+  const explicitRe = new RegExp(`\\b${VERB}\\b[\\s\\S]{0,80}?\\bStage\\s*3\\b`, 'gi');
+  const otherStageRe = /\bStage\s*[2456]\b/i;
+  const bareRe = new RegExp(`\\b${VERB}\\b`, 'i');
+  let explicit = 0;
+  let bare = 0;
+  for (const h of haystacks) {
+    const ex = h.match(explicitRe);
+    if (ex && ex.length > 0) {
+      explicit += ex.length;
+      continue;
+    }
+    if (bareRe.test(h) && !otherStageRe.test(h)) bare++;
+  }
+  return { explicit, bare };
+}
+
+function resolutionStatus(corrections, synth) {
+  if (corrections === 0) return 'STUB';
+  if (!synth) return null;
+  const { explicit, bare } = countStage3Resolutions(synth);
+  const total = explicit + bare;
+  if (total === 0) return null;
+  const ratio = total / corrections;
+  if (ratio >= 0.6) return 'RESOLVED';
+  if (ratio >= 0.3) return 'PARTIAL';
+  return 'UNRESOLVED';
+}
+
 for (const row of phase2.matrix) {
   if (!row.artifacts.stage3 || !row.slug) continue;
   try {
@@ -221,7 +272,17 @@ for (const row of phase2.matrix) {
       else if (status === 'INCORRECT') incorrect++;
       else if (status === 'MISLEADING') misleading++;
     }
+    // Stage 3 schemas also use key_incorrect/key_misleading on synthesis-style critiques
+    if (Array.isArray(stage3.key_incorrect)) incorrect += stage3.key_incorrect.length;
+    if (Array.isArray(stage3.key_misleading)) misleading += stage3.key_misleading.length;
     const avgMTrue = mTrueCount > 0 ? totalMTrue / mTrueCount : null;
+    // Resolution check: read Stage 6 synthesis if it exists
+    let synth = null;
+    const synthPath = join(engineOutDir, `${row.slug}-stage6-synthesis.json`);
+    if (existsSync(synthPath)) {
+      try { synth = JSON.parse(readFileSync(synthPath, 'utf8')); } catch (_) {}
+    }
+    const resolution = resolutionStatus(incorrect + misleading, synth);
     const result = {
       id: row.id, slug: row.slug,
       claimCount: claims.length,
@@ -229,10 +290,14 @@ for (const row of phase2.matrix) {
       factual_accuracy_score: fas,
       source_diversity_estimate: sde,
       avgMTrue: avgMTrue !== null ? Math.round(avgMTrue * 100) / 100 : null,
+      resolution,
     };
     phase3.results.push(result);
-    const flagged = (fas !== null && fas < TH_FAS) || (avgMTrue !== null && avgMTrue < TH_MTRUE) || incorrect > 0 || misleading > 0;
-    if (flagged) phase3.flagged.push(result);
+    const lowConfidence = (fas !== null && fas < TH_FAS) || (avgMTrue !== null && avgMTrue < TH_MTRUE) || incorrect > 0 || misleading > 0;
+    // Only flag for Tier 2 review when the live cards likely still carry the
+    // problem. RESOLVED issues (≥60% of Stage 3 critique applied per synthesis)
+    // remain in the results table but drop out of the Tier 2 queue.
+    if (lowConfidence && resolution !== 'RESOLVED') phase3.flagged.push(result);
   } catch (e) {
     phase3.results.push({ id: row.id, slug: row.slug, error: e.message });
   }
@@ -426,17 +491,20 @@ lines.push('');
 if (phase3.results.length === 0) {
   lines.push(`*No Stage 3 outputs found on disk.*`);
 } else {
-  lines.push(`| ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Flagged |`);
-  lines.push(`|---|---:|---:|---:|---:|---:|---:|---:|---:|---|`);
+  lines.push(`| ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Resolution | Flagged |`);
+  lines.push(`|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|`);
   const sorted = [...phase3.results].sort((a, b) => (a.factual_accuracy_score ?? 100) - (b.factual_accuracy_score ?? 100));
   for (const r of sorted) {
     if (r.error) {
-      lines.push(`| ${r.id} | ERROR | | | | | | | | parse: ${r.error} |`);
+      lines.push(`| ${r.id} | ERROR | | | | | | | | | parse: ${r.error} |`);
       continue;
     }
     const flagged = phase3FlaggedIds.has(r.id) ? '⚠️' : '';
-    lines.push(`| ${r.id} | ${r.claimCount} | ${r.verified} | ${r.unverified} | ${r.incorrect} | ${r.misleading} | ${r.factual_accuracy_score ?? '—'} | ${r.avgMTrue ?? '—'} | ${r.source_diversity_estimate ?? '—'} | ${flagged} |`);
+    const resCell = r.resolution ?? '—';
+    lines.push(`| ${r.id} | ${r.claimCount} | ${r.verified} | ${r.unverified} | ${r.incorrect} | ${r.misleading} | ${r.factual_accuracy_score ?? '—'} | ${r.avgMTrue ?? '—'} | ${r.source_diversity_estimate ?? '—'} | ${resCell} | ${flagged} |`);
   }
+  lines.push('');
+  lines.push(`*Resolution column reads the Stage 6 synthesis revision log. **RESOLVED** = ≥60% of Stage 3 INC+MIS claims have a corresponding correction logged; these issues stay in the results table but drop out of the Tier 2 queue. **PARTIAL** = 30–60% logged. **UNRESOLVED** = <30%. **STUB** = Stage 3 had no actionable claims. **—** = no synthesis on disk; treat as legacy.*`);
 }
 lines.push('');
 
@@ -498,7 +566,7 @@ lines.push('');
 
 lines.push(`### Tier 2 — Low Stage 3 confidence (${tier2.length})`);
 lines.push('');
-lines.push(`Issues with documented audit trail but Stage 3 flagged factual accuracy concerns.`);
+lines.push(`Issues where Stage 3 flagged factual accuracy AND the Stage 6 synthesis did not log enough corrections to clear the concern. Issues marked RESOLVED in the Phase 3 table are excluded from this queue.`);
 lines.push('');
 if (tier2.length === 0) {
   lines.push(`*None.*`);
