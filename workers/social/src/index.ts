@@ -1,9 +1,11 @@
 /**
  * T4A Social Worker
  *
- * Two crons:
- *   - every 15 min  → ingestTrends(): pulls Malaysian RSS + GDELT, caches snapshot
- *   - every minute  → maybePost(): coin-flip → pick → post to Bluesky
+ * One cron (`* * * * *`):
+ *   - every minute → maybePost(): coin-flip → pick → post to Bluesky
+ *   - on minutes where scheduled-minute % 15 === 0, ingestTrends() runs first
+ *     (RSS + GDELT snapshot). Consolidated from a separate every-15-min
+ *     cron to stay within Cloudflare's 5-cron-per-account free-plan limit.
  *
  * HTTP endpoints (gated by ADMIN_SECRET):
  *   - GET  /health           → public; ops snapshot
@@ -93,24 +95,20 @@ function checkAdmin(request: Request, env: Env): boolean {
 
 export default {
   async scheduled(controller: ScheduledController, env: Env): Promise<void> {
-    const cron = controller.cron;
-    if (cron === '*/15 * * * *') {
+    const minute = new Date(controller.scheduledTime).getUTCMinutes();
+    if (minute % 15 === 0) {
       try {
         const snap = await ingestTrends(env);
         console.log(`trends ingested: ${snap.headlines.length} headlines, ${Object.keys(snap.entities).length} entities`);
       } catch (err) {
         console.error('ingestTrends failed:', err);
       }
-      return;
     }
-    if (cron === '* * * * *') {
-      const r = await maybePost(env);
-      if (r.posted) console.log(`posted: ${r.reason}`);
-      // Suppress noisy non-post messages — only log when we attempt and fail.
-      else if (!r.reason.startsWith('outside-window') && !r.reason.startsWith('cooldown') && !r.reason.startsWith('roll')) {
-        console.log(`skip: ${r.reason}`);
-      }
-      return;
+    const r = await maybePost(env);
+    if (r.posted) console.log(`posted: ${r.reason}`);
+    // Suppress noisy non-post messages — only log when we attempt and fail.
+    else if (!r.reason.startsWith('outside-window') && !r.reason.startsWith('cooldown') && !r.reason.startsWith('roll')) {
+      console.log(`skip: ${r.reason}`);
     }
   },
 

@@ -3,10 +3,12 @@ main = "src/index.ts"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 
-# */15 — trend ingest (RSS + GDELT)
-# *    — per-minute coin-flip scheduler
+# Single per-minute cron. The handler runs maybePost() every minute and
+# folds in ingestTrends() whenever the scheduled minute is a multiple of 15.
+# Consolidated to one trigger to stay within Cloudflare's 5-cron-per-account
+# free-plan limit (notify worker uses 4, leaving 1 slot for social).
 [triggers]
-crons = ["*/15 * * * *", "* * * * *"]
+crons = ["* * * * *"]
 
 [[kv_namespaces]]
 binding = "T4A_SOCIAL_KV"

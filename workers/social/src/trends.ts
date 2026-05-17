@@ -2,8 +2,9 @@
  * Trend ingest — pull Malaysian news from GDELT + 5 RSS feeds, extract
  * entities and keywords, write to KV with 60-min TTL.
  *
- * Runs on the every-15-min cron. Per-source failures are isolated; one slow/down
- * outlet never stalls a cycle.
+ * Called from the per-minute scheduled handler whenever the scheduled
+ * minute is a multiple of 15. Per-source failures are isolated; one
+ * slow/down outlet never stalls a cycle.
  */
 import type { Env, TrendHeadline, TrendSnapshot } from './types';
 import { putTrends } from './kv';
