@@ -1,7 +1,7 @@
 # The Fourth Angle — Claude Code Instructions
 
 ## What This Is
-Non-partisan Malaysian issues analysis platform. Every issue goes through a 4-stage editorial pipeline (Stages 1+2+3+6 — see `engine/templates/publish-playbook.md`), scored for neutrality and opinion shift. Stages 4 (DeepSeek Alt-Framing) and 5 (Grok Contrarian Stress-Test) are retired; legacy issues retain their `af`/`ct` scores. Static site on Cloudflare Pages.
+Non-partisan Malaysian issues analysis platform. Every issue goes through a 4-stage editorial pipeline (Stages 1+2+3+6 — see `engine/templates/publish-playbook.md`), scored for neutrality and opinion shift. Stages 4 (DeepSeek Alt-Framing) and 5 (Grok Contrarian Stress-Test) are retired by default; legacy issues retain their `af`/`ct` scores. **Stage 5 escalation:** re-enable Stage 5 (Grok Contrarian) for any issue whose brief marks Religion / Ethnic / Royalty risk HIGH or CRITICAL, marks Political risk CRITICAL with a sharp editorial take, or where Stage 3's `source_diversity_estimate` < 0.4. See `docs/adr/0004-retire-stages-4-and-5.md` for the full rationale. Static site on Cloudflare Pages.
 
 ## Publishing Workflow
 
