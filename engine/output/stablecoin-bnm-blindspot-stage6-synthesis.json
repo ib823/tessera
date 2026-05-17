@@ -1,0 +1,145 @@
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 6 — Synthesis (Claude)",
+    "slug": "stablecoin-bnm-blindspot",
+    "issue_id": "1993",
+    "brief": "engine/briefs/stablecoin-bnm-blindspot.md",
+    "stage1": "engine/output/stablecoin-bnm-blindspot-stage1.json (PA=87)",
+    "stage2": "engine/output/stablecoin-bnm-blindspot-stage2.json (Gemini, bias_score 12, two cardinal-sin flags: '22 tokens' UNVERIFIED_DETAIL and 'ban' OVERCLAIM)",
+    "stage3": "engine/output/stablecoin-bnm-blindspot-stage3.json (ChatGPT, factual_accuracy 68, eight cardinal-sin flags actioned)",
+    "stage4": "engine/output/stablecoin-bnm-blindspot-stage4.json (DeepSeek alt-framing, completeness 54; RNI structural cause and Thailand ASEAN parallel integrated; community-perspective expansion declined per scope)",
+    "stage5": "not run — retired per CLAUDE.md; not collected for this issue. Stage 4 missing-perspective and counter-argument work absorbed in this synthesis.",
+    "generated_at": "2026-05-17",
+    "revision_history": [
+      "v1 (2026-05-17): 4-stage synthesis (PA + BA + FC + SR). Stage 3 corrections applied across every card: (a) '22 approved tokens' dropped — Stage 3 confirmed the current SC tradeable-asset list contains 23 assets and Stage 4 noted Luno alone now lists 51 SC-approved tokens; cards now refer to 'the approved list' without a count to avoid staleness; (b) 'banned' / 'ban' softened to 'approve no' / 'exclusion' per Stage 2 OVERCLAIM and Stage 3 MISLEADING_FRAMING; (c) Tether freeze figures updated from the AMLBot-sourced 7,268 wallets / US$3.29 billion to Tether's own 23 April 2026 disclosure of US$4.4 billion globally / US$2.1 billion at US-authority direction; (d) 'at US direction' softened to 'at US-authority direction' per Stage 3 OVERCLAIM; (e) 'gave OFAC on-chain reach over USDT and USDC anywhere in the world' rewritten to 'made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers' per Stage 3 OVERCLAIM; (f) 'Bank Negara cannot count it' softened to 'Bank Negara has not published the count' per Stage 3 MISLEADING_FRAMING; (g) 'One foreign legislature can freeze it' rewritten to 'US sanctions can freeze it' per Stage 3 INCORRECT flag (legislature does not press a button); (h) reframe rotated from 'rails / freeze button' parallel to a 1998-vs-2026 RNI rotation per Stage 4 alternative_framing #1 (ringgit non-internationalisation is the binding structural constraint, not an oversight). Stage 4 additions integrated: Thailand SEC approval of USDT/USDC on regulated exchanges (16 March 2025) added to Fact 3 alongside Singapore. Stage 4 RNI structural-cause framing absorbed into the reframe. Stage 4 community-perspective expansion (migrant workers, B40, women, East Malaysia, refugees, Chinese SME) declined for scope — see synthesis_notes."
+    ],
+    "discipline": "Structural-not-personal; policy-not-personality; 3R-clean. The story is about the regulatory architecture and the ringgit non-internationalisation framework that the architecture serves, not about any individual or community. No card names the Tunku Mahkota of Johor or characterises RMJDT as the issue's centre; RMJDT remains a data point in the brief, not in any card. No card characterises any BNM or SC officer personally. Cards critique the policy choice and its second-order effects, not the institution. Numbers are framed exactly as the sources state them: Standard Chartered's US$1 trillion is a projection, not a Malaysian forecast; Tether's US$4.4 billion is cumulative as of its own 23 April 2026 disclosure; the SC approved list is referred to without a count to avoid staleness. Where the original draft had 'Bank Negara cannot count it,' the synthesis now says 'has not published the count' — the verified statement is about disclosure, not about internal data capability. 'Washington holds the freeze button' has been replaced with 'US sanctions can freeze it' because the freeze mechanism is sanctions law plus issuer compliance, not a single legislative button."
+  },
+  "headline": "Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.",
+  "context": "The Securities Commission approves no dollar stablecoin on Malaysia's six licensed exchanges. USDT and USDC reach Malaysians off-platform. Bank Negara has published no count.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted.",
+      "sub": "Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.",
+      "revision_tags": [
+        "CORRECTED (Stage 3 + Stage 2): dropped specific count '22 approved tokens' — current SC list is 23 and Luno alone now lists 51 SC-approved tokens; the specific numeral was stale and not load-bearing for the structural point.",
+        "CORRECTED (Stage 3): 'rails Bank Negara cannot see' → 'rails Bank Negara has not publicly counted' — 'cannot see' overstates the evidence; the verified statement is about non-disclosure, not data capability."
+      ],
+      "sources": [
+        "Securities Commission Malaysia, List of Registered Digital Asset Exchanges — six SC-registered DAX (Luno Malaysia, Kinetic DAX i.e. Tokenize, MX Global, SINEGY, HATA, Torum International), accessed 2026-05-18: https://www.sc.com.my/regulation/guidelines/recognizedmarkets/list-of-registered-digital-asset-exchanges",
+        "Securities Commission Malaysia, Digital Assets official page and tradeable-asset list (USDT and USDC not approved), accessed 2026-05-18: https://www.sc.com.my/digital-assets",
+        "Securities Commission Malaysia, Public Consultation Paper No. 3/2025 on Proposed Regulatory Framework for Digital Asset Intermediaries — explicit acknowledgement of offshore and unregulated platforms competing with licensed DAX: https://www.sc.com.my/api/documentms/download.ashx?id=ce90b551-9111-427b-b8e5-30be7eaa974f",
+        "Bank Negara Malaysia, Annual Report 2024 Box 8 'Navigating the Future of Digital Assets' (RM13.9 billion 2024 trading volume; RM5.4 billion 2023): https://www.bnm.gov.my/documents/20124/17493532/ar2024_en_box8.pdf",
+        "The Sumsuber, 'Crypto Regulations in Malaysia — 2025 Guide' (volume figures secondary citation): https://sumsub.com/blog/crypto-regulations-in-malaysia-guide/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028.",
+      "sub": "Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.",
+      "revision_tags": [
+        "CORRECTED (Stage 3): sub 'top the October 2025 list' → 'are among the high-risk emerging markets named' — Stage 3 confirmed the Standard Chartered report names high-risk countries but does not necessarily rank a 'top' list; the broader Reuters list also includes Bangladesh, Sri Lanka, Morocco, Kenya, China, South Africa."
+      ],
+      "sources": [
+        "Standard Chartered, 'Stablecoins and EM: the next big FX trend?', October 2025, primary research note: https://www.sc.com/en/uploads/sites/66/content/docs/SC-CIB-Stablecoins-and-EM.pdf",
+        "Reuters, 'Stablecoins could siphon $1 trillion from emerging-market bank deposits', 6 October 2025: https://www.reuters.com/markets/currencies/stablecoins-could-siphon-1-trillion-emerging-market-bank-deposits-2025-10-06/",
+        "IMF Working Paper WP/25/141, 'How to Estimate International Stablecoin Flows', 2025: https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025141-source-pdf.pdf",
+        "IMF Departmental Paper, 'The Use of Stablecoins in Emerging Market and Developing Economies', 2025: https://www.imf.org/-/media/files/publications/dp/2025/english/usea.pdf"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial.",
+      "sub": "The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.",
+      "revision_tags": [
+        "CORRECTED (Stage 3): freeze totals updated from AMLBot-sourced 7,268 wallets / US$3.29 billion to Tether's own 23 April 2026 disclosure (US$4.4 billion global / US$2.1 billion at US-authority direction). The primary issuer disclosure supersedes the secondary aggregator figure.",
+        "CORRECTED (Stage 3): 'at US direction' → 'at US-authority direction' — AMLBot did not establish that every freeze was directed by US authorities; Tether's own framing is 'in coordination with' US law enforcement.",
+        "CORRECTED (Stage 3): dropped 'no Malaysian court can compel reversal' — Stage 3 noted this categorical wording was UNVERIFIED; the practical concern remains valid but the absolute form is unsupported.",
+        "CORRECTED (Stage 3): sub 'gave OFAC on-chain reach over USDT and USDC anywhere in the world' → 'made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers' — Stage 3 flagged the original as OVERCLAIM. The Act creates the framework; freezes happen through issuer compliance with US sanctions, not direct OFAC action on any wallet.",
+        "CORRECTED (Stage 3): sub Tether source date 'April 2024' → 23 April 2026 — the cited Tether statement is from 2026, not 2024."
+      ],
+      "sources": [
+        "Tether, official statement, 23 April 2026, 'Tether Supports Freeze of More Than $344 Million in USD₮ in Coordination with OFAC and U.S. Law Enforcement' (cumulative global freeze totals and US-authority-coordinated freezes): https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+        "The White House, Fact Sheet, 'President Donald J. Trump Signs GENIUS Act into Law', 18 July 2025: https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+        "Latham & Watkins, 'The GENIUS Act of 2025: Stablecoin Legislation Adopted in the US' (federal payment-stablecoin framework; AML and sanctions compliance for permitted issuers; on-chain freezing capability): https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us",
+        "U.S. Treasury, GENIUS Act Illicit Finance Innovation Congressional Report, March 2026: https://home.treasury.gov/system/files/246/GENIUS-Act-Illicit-Finance-Innovation-Congressional-Report-March-2026.pdf",
+        "Federal Register, FinCEN/OFAC proposed rule on permitted payment stablecoin issuer AML/CFT obligations, 10 April 2026: https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "big": "Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit.",
+      "sub": "BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.",
+      "revision_tags": [
+        "ADDED (Stage 4): Thailand SEC approval of USDT and USDC on licensed exchanges effective 16 March 2025 — Stage 4 identified this as the most directly relevant ASEAN comparator and the original draft omitted it. Including the Thai precedent forecloses the 'no ASEAN peer has done it' reading without overstating the case.",
+        "REPHRASED (Stage 2 bias + Stage 3): 'None of the pilots covers the dollar holdings the ban was meant to prevent' → 'The pilots do not address the dollar demand' — drops 'ban' (Stage 2 OVERCLAIM) and drops 'meant to prevent' (Stage 3 MISLEADING — not verified that prevention was the explicit policy intent)."
+      ],
+      "sources": [
+        "Lexology, 'Thailand SEC adds USDT and USDC to approved cryptocurrencies for trading pairs, effective 16 March 2025': https://www.lexology.com/library/detail.aspx?g=a5c1923f-b93f-4f5c-8517-6daa2c05a034",
+        "Monetary Authority of Singapore, official media release, 'MAS Finalises Stablecoin Regulatory Framework', August 2023 (single-currency stablecoins pegged to SGD or any G10 currency including USD): https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework",
+        "Bank Negara Malaysia, Digital Asset Innovation Hub update: https://www.bnm.gov.my/-/daih-upd",
+        "Maybank official news, 'Maybank to pilot ringgit tokenised deposits and cross-border blockchain payments', 11 February 2026: https://www.maybank.com/en/news/2026/02/11-maybank-pilot-ringgit-tokenised-deposits-and-cross-border-blockchain-payments.page",
+        "Fintech News Malaysia, 'BNM to Test Ringgit Stablecoins and Tokenised Deposits This Year' (three 2026 pilots: Capital A + Standard Chartered ringgit B2B stablecoin; Maybank tokenised deposits; CIMB tokenised deposits — all ringgit-denominated): https://fintechnews.my/56513/blockchain/bnm-stablecoin-tokenised-deposits/"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.",
+      "sub": "",
+      "revision_tags": [
+        "ADDED (Stage 4): reframe rotated from the 'rails Malaysia regulates / rails Malaysians use / Washington's freeze button' parallel to a 1998-vs-2026 rotation that names the binding structural constraint — the ringgit non-internationalisation policy adopted in the wake of the Asian Financial Crisis. Stage 4 alternative_framing #1 identified RNI as the real cause of the SC's stablecoin exclusion (not an SC oversight but a downstream effect of BNM's 1998 settlement). The new reframe puts the historical anchor in the first clause and the contemporary tension in the second.",
+        "CORRECTED (Stage 3): 'Washington holds the freeze button' → 'US sanctions decide who keeps it' — Stage 3 flagged the original as MISLEADING (a legislature does not press a freeze button); the freeze mechanism is US sanctions law plus issuer compliance."
+      ],
+      "sources": [
+        "The Edge Malaysia, 18 November 2025, BNM Assistant Governor Adnan Zaylani statement: 'The ringgit being non-internationalised is one protection that we have and that would already prevent the kind of destabilising forex market that we had in 1998': https://theedgemalaysia.com/article/bnm-says-definitely-no-capital-controls",
+        "Bank Negara Malaysia, Foreign Exchange Administration policy (Ringgit Non-Internationalisation, since 1998): https://www.bnm.gov.my/-/foreign-exchange-administration",
+        "Tether, official statement on freeze cooperation with US authorities, 23 April 2026 (sources cited on the Governance fact)",
+        "Editorial synthesis: connecting BNM's 1998 ringgit non-internationalisation policy to the contemporary mechanism by which US sanctions law plus issuer on-chain compliance can freeze USD stablecoin balances anywhere — see synthesis_notes."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in.",
+      "sub": "The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.",
+      "revision_tags": [
+        "CORRECTED (Stage 3): sub '22-token approved list' → 'SC approved list' — drops the stale numeral while preserving the analogy."
+      ],
+      "sources": [
+        "Editorial analogy. Anchored to the verified asymmetry between the SC approved-list scope (Securities Commission Malaysia, Digital Assets page, accessed 2026-05-18: https://www.sc.com.my/digital-assets) and offshore / unregulated rails (Securities Commission Malaysia, Public Consultation Paper No. 3/2025: https://www.sc.com.my/api/documentms/download.ashx?id=ce90b551-9111-427b-b8e5-30be7eaa974f). IMF Working Paper WP/25/141 frames the same mechanism as 'digital dollarisation' — friction removed from currency substitution."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.",
+      "sub": "",
+      "revision_tags": [
+        "CORRECTED (Stage 3): 'Six licensed exchanges cannot list it' → 'do not list it' — Stage 3 noted the SC framework permits new assets to be submitted for concurrence; the verified fact is current non-listing, not permanent impossibility.",
+        "CORRECTED (Stage 3): 'One foreign legislature can freeze it' → 'US sanctions can freeze it' — Stage 3 flagged the original as INCORRECT (a legislature does not press a freeze button); the freeze mechanism is US sanctions law plus issuer compliance.",
+        "CORRECTED (Stage 3): 'Bank Negara cannot count it' → 'Bank Negara has not published the count' — Stage 3 flagged the original as MISLEADING_FRAMING (absence of public figure does not establish absence of internal data)."
+      ],
+      "sources": [
+        "Editorial synthesis. Verified facts: SC approved list excludes USDT and USDC (sources cited on the hook); GENIUS Act and Tether disclosures support 'US sanctions can freeze it' (sources cited on the Governance fact); no BNM-published count located (Bank Negara Malaysia official site searched 2026-05-18, https://www.bnm.gov.my/). The view's tricolon preserves the WhatsApp-quote rhythm of the draft while replacing each clause with the verified, narrower formulation."
+      ]
+    }
+  ],
+  "introduced_claims": [
+    {
+      "claim": "Malaysia walled off the ringgit in 1998. (Reframe.)",
+      "verification": "Verified against BNM Assistant Governor Adnan Zaylani's 18 November 2025 statement that 'the ringgit being non-internationalised is one protection that we have and that would already prevent the kind of destabilising forex market that we had in 1998.' The 1998 anchor matches BNM's own framing of the policy origin; 'walled off' is a fair English gloss on 'non-internationalisation.' Source: The Edge Malaysia, 18 November 2025."
+    },
+    {
+      "claim": "The dollar now arrives as software, and US sanctions decide who keeps it. (Reframe.)",
+      "verification": "Verified by combining Stage 3-verified GENIUS Act framework facts with Tether's own 23 April 2026 disclosure of US$2.1 billion frozen at US-authority direction. 'Software' is a fair gloss on tokenised USD claims; 'US sanctions decide who keeps it' is the most accurate one-line description of the mechanism — sanctions law plus issuer compliance — that survives Stage 3's correction of 'Washington holds the freeze button.'"
+    },
+    {
+      "claim": "Thailand approved USDT and USDC on its licensed exchanges in March 2025. (Fact 3.)",
+      "verification": "Added per Stage 4 international_parallel; verified against Lexology coverage citing Thailand SEC's effective-date 16 March 2025 approval of USDT and USDC for trading pairs. Primary source URL on Stage 4 verification log."
+    }
+  ],
+  "synthesis_notes": "Three deliberate scope decisions and three over-integration declines.\n\nINTEGRATION DECISIONS:\n\n(1) Stage 4 alternative_framing #1 — the ringgit non-internationalisation policy (RNI) as binding structural constraint — was integrated and elevated to the reframe. Rationale: this is the single most important addition because it changes what the issue is about. The original reframe ('on the rails Malaysia regulates, dollar stablecoins are absent; on the rails Malaysians use, Washington holds the freeze button') treated the SC's exclusion as a policy gap of choice. Stage 4 correctly observed that the SC's exclusion is functionally downstream from BNM's 1998 RNI commitment: permitting USD/MYR trading pairs on licensed exchanges would create an onshore USD/MYR market that subverts RNI. The new reframe — 'Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it' — names the binding constraint and the contemporary tension in fourteen words and twenty-two words respectively. It is harder for a defender of the status quo to dismiss because it credits the original policy.\n\n(2) Stage 4 international_parallel — Thailand SEC's 16 March 2025 approval of USDT and USDC on licensed exchanges — was integrated into Fact 3 alongside Singapore. Rationale: Thailand is the more directly relevant ASEAN comparator than Singapore. Singapore is a global financial centre that actively internationalises the SGD; the MAS framework, while it nominally covers USD-pegged stablecoins, sits inside a different structural context. Thailand is a regional middle-income peer with capital-account restrictions broadly comparable to Malaysia's, and its SEC has nevertheless permitted USDT and USDC trading. Including Thailand forecloses the 'no peer has done it' reading without overstating the case (Thailand still prohibits crypto for payments, the same dual-track Turkey uses).\n\n(3) Stage 3's eight cardinal-sin flags were applied verbatim across the cards. The full revision-tag list on each card documents which flag drove which change. Two flags drove the most consequential rewrites: the OFAC / GENIUS Act overclaim (now 'made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers') and the 'cannot count it' / 'cannot see' MISLEADING_FRAMING (now 'has not published the count'). Neither rewrite weakens the substantive point — the contrast between the regulated perimeter and the rails Malaysians actually use survives precisely because it no longer depends on inflated claims.\n\nDECLINED INTEGRATIONS:\n\n(1) Stage 4 community-perspective expansion (migrant workers, B40, women, East Malaysia, refugees, Chinese SME) — all real and important angles, all declined for this issue. Rationale: integrating any single one would require demoting either the GENIUS Act fact (Card 2 carries the central asymmetric-sovereignty finding) or the regional comparator (Card 3 anchors the foregone-policy-alternatives). Integrating all of them would expand the issue beyond seven cards and beyond the bite-size budget. The brief explicitly chose a structural-policy frame, and the cards on the structural register are the ones with the under-covered insight. The welfare and distributional angles deserve their own future T4A issue on migrant-worker remittance corridors; that issue would centre Stage 4's strongest observation (that B40 Malaysians and migrant workers are the dominant real users of off-platform USDT). For this issue, the welfare angle remains as a brief note in the synthesis rather than as a card.\n\n(2) Stage 4 counter_argument #2 (the Standard Chartered EM-deposit-flight model does not project Malaysia because BNM's institutional credibility and reserves are intact) — partially integrated, not as a softening but as a sharpening. Fact 1 already states explicitly that Malaysia is not on the named list and that the mechanism does not require being named. This is the editorially right place — readers see the limit of the claim on the same card that makes it. The full Stage 4 counter-argument (Malaysia is structurally less exposed) is not added as a separate sentence because it would over-defend the status quo within the card frame; the structural reframe in Card 4 carries the same idea more honestly.\n\n(3) Stage 4 counter_argument #3 (the GENIUS Act on-chain freeze is a consumer-protection feature, not merely a sovereignty concern) — declined. Rationale: the freeze capability is dual-use, but the editorial point of Fact 2 is the asymmetric jurisdictional reach. A Malaysian user defrauded inside Malaysia cannot invoke OFAC; the consumer-protection benefit Stage 4 describes accrues only when US authorities take an interest in the case. Recasting the GENIUS Act framework as consumer protection would soften an accurate finding into a hedged one. This is the Stage 6 'over-integration' failure mode the preamble warns about — averaging two positions when one is right and one is wrong about this specific claim.\n\nCOMPRESSION DECISIONS:\n\nThe approved-token count was dropped entirely from the cards. Stage 2 said the figure should be updated from 22 to 23; Stage 4 said Luno alone now lists 51; Stage 3 noted the SC list is dynamic. Three different point-in-time counts is the signal that the specific number is not the load-bearing fact — the load-bearing fact is that the list excludes USDT and USDC. Dropping the count avoids re-introducing the same staleness in three months. The analogy sub still references 'the SC approved list is the permit' which preserves the structural point.\n\nLENS CHOICE:\n\nLenses retained: Economic, Governance, Regional. The original Stage 1 lens diversity holds up: each fact card carries a structurally distinct frame, none duplicates another's primary risk dimension. Stage 4 surfaced strong material that could justify a Security lens (sanctions / extraterritorial freeze) or a Technology lens (on-chain compliance), but the Governance lens already captures the GENIUS Act / Tether finding without requiring a re-lens.\n\nSCORE:\n\nSR (Synthesis Review): 84. Justification: every Stage 2 and Stage 3 cardinal-sin flag actioned; the highest-value Stage 4 contribution (RNI structural cause) was integrated and elevated to the reframe; the second-highest Stage 4 contribution (Thailand parallel) was integrated into Fact 3; declined integrations have explicit reasoning. The deduction from 90 is for two unresolved tensions: (a) Stage 4 is correct that the welfare / distributional dimension is missing from the published cards; this issue would be stronger if it could carry both the structural-policy frame and the welfare frame, but the bite-size budget forces a choice; (b) Stage 3's source_diversity_estimate of 0.72 indicates one source-gap area — Malaysian primary telemetry on USD-stablecoin off-ramp flow — that the synthesis cannot close because the gap itself is the policy artefact at issue."
+}
