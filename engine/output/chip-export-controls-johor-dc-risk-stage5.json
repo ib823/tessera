@@ -1,0 +1,205 @@
+{
+  "_runtime_constraint": "no_web_search_available",
+  "_provenance": {
+    "stage": "Stage 5 — Contrarian Stress-Test (retired stage, re-run for issue 1995)",
+    "slug": "chip-export-controls-johor-dc-risk",
+    "issue_id": "1995",
+    "reviewer_role": "Contrarian critic. Attack cowardice, hedging, false balance, and unverified concretizers in the Stage 1 analysis.",
+    "constraint_note": "Live web search not available in this runtime. Every 'hard truth' below is therefore labelled VERIFIED (from the brief or stage1 itself, traceable to a public primary source) or MY_OPINION (analytical claim by this reviewer, not independently verified)."
+  },
+  "courage_score": 62,
+  "courage_score_rationale": "Stage 1 is technically careful — every numeric and named claim is traceable, the four-cardinal-sins self-check is honest, and the no-Malaysian-company-named posture is principled. But carefulness is not courage. The cards stop at structural exposure and refuse to name the most uncomfortable specifics on the public record (the SPF charge sheet's named accused, the DeepSeek angle reported across Reuters/Bloomberg/WSJ even with caveats). Three of the seven cards are abstractions (reframe, analogy, view). The hook leads with what Singapore did, not with what Malaysia did or did not do. A T4A audience asks: 'what is Malaysia actually doing about this?' and the cards mostly answer with structural framing. 62 reflects 'careful and accurate, but ducked the harder version that the brief itself flagged as available'.",
+  "confidence_inflation_estimate": -0.15,
+  "confidence_inflation_rationale": "Net under-claim, not over-claim. Stage 1 says 'Washington classifies Malaysia as Tier 2 ... even after the rule was rescinded' — this is the closest thing to over-claim in the cards and is genuinely defensible because BIS post-rescission guidance still treats Malaysia as a diversion-risk jurisdiction and the case-by-case licensing posture is functionally Tier-2-equivalent for advanced AI accelerators. But the brief itself notes 'no Malaysian DC operator has been publicly named' and the cards faithfully preserve that — they do not over-claim. The pull is in the other direction: the cards refuse to assert the DeepSeek end-user link that multiple primary-citing secondary outlets have published (with caveats), refuse to name the three accused even though their identities are on the public SPF charge sheet, and refuse to commit to a currency for the ~390M figure even though Singapore-government communications use S$. That is hedging where the evidence supports a sharper line.",
+  "sentiment_volatility_estimate": 0.18,
+  "sentiment_volatility_rationale": "Tone is consistent across cards — anxious, structural, controlled. The hook is matter-of-fact (charge sheet); the reframe and analogy carry a single rhetorical rise; the view returns to flat declarative. No wild swings, no manipulation. The volatility comes from the analogy card ('largest port on a known smuggling route') which is the one place the analyst stops describing and starts characterising — defensible because the analogy is clearly labelled editorial, but it is the spike in an otherwise flat curve.",
+  "cowardice_flags": [
+    {
+      "card": 1,
+      "card_type": "hook",
+      "avoided": "The hook describes 'three men charged' as a count, not as identifiable people. The brief notes the SPF release named a Singapore citizen, a permanent resident, and a Chinese national. The brief itself flags this as available on the public record.",
+      "should_say": "Name the categories at minimum ('a Singapore citizen, a permanent resident, and a Chinese national') even if not the individuals. Identifiable-case effect (Small/Loewenstein/Slovic 2007) is the entire reason fact card 1 should lead with the named instance — the hook is doing the opposite by reducing three people to an integer.",
+      "primary_source": "Singapore Police Force press release, 27 Feb 2025 (referenced in brief Section ACTORS and stage1 hook sources). Stage 3 to confirm exact wording before any naming in cards.",
+      "severity": "MEDIUM",
+      "verification_status": "PARTIALLY_VERIFIED — brief asserts the SPF release named the three categories; this reviewer has not independently re-opened the release."
+    },
+    {
+      "card": 1,
+      "card_type": "hook",
+      "avoided": "The DeepSeek end-user angle. Reuters, Bloomberg, and WSJ reporting (per brief Section CONTEXT line 10) have named DeepSeek as the suspected ultimate recipient. Stage 1 declines to name any Chinese AI firm.",
+      "should_say": "A defensible middle: 'Multiple outlets including Reuters, Bloomberg, and WSJ have linked the diverted chips to DeepSeek; Singapore prosecutors have not yet confirmed an end-user in the charge sheet.' This is more accurate than silence because the absence creates a softer story than the public record actually supports. Note: if Stage 3 cannot independently verify the Reuters/Bloomberg/WSJ headlines, dropping the DeepSeek angle remains the safe call.",
+      "primary_source": "Brief Section CONTEXT bullet 10; Reuters / Bloomberg / WSJ reporting (Stage 3 to surface exact articles). Not independently re-verified by this reviewer.",
+      "severity": "MEDIUM-HIGH",
+      "verification_status": "FLAGGED — the brief asserts these outlets named DeepSeek; this reviewer has not independently confirmed."
+    },
+    {
+      "card": 4,
+      "card_type": "fact (Governance)",
+      "avoided": "'The investigation list has not been made public.' This is accurate but soft. The harder version: as of the brief's May 2026 cutoff, MITI has produced no public finding fourteen months after Tengku Zafrul's commitment. That is not 'has not been made public' — that is 'has produced nothing visible'.",
+      "should_say": "'Fourteen months on, MITI has published no findings, no named company, no enforcement action under the Strategic Trade Act 2010.' This is a verifiable absence — the absence of a public record is itself a primary-source observation.",
+      "primary_source": "Brief Section CONTEXT bullet 15 explicitly notes 'No US designation of any Malaysian data-centre operator as a sanctioned diversion hub has been published as of the date of this brief' and Section CONTEXT bullet 11 notes 'no findings released to date' for the MITI commitment. The 14-month gap is a calculation from the brief's own dates (March 2025 commitment, May 2026 cutoff).",
+      "severity": "MEDIUM",
+      "verification_status": "VERIFIED via the brief's own timeline; the absence is the finding."
+    },
+    {
+      "card": 7,
+      "card_type": "view",
+      "avoided": "'The bill arrives when Washington decides what to do about it.' This phrasing concedes Malaysian agency to Washington in a way that is too clean. Malaysia has the Strategic Trade Act 2010 (already on the cards) and could enforce domestically without waiting for a BIS designation. The view as written treats Malaysia as a price-taker.",
+      "should_say": "'The bill arrives when Washington decides — or when Putrajaya enforces the Strategic Trade Act it already passed.' This both raises domestic agency and makes the inaction visible as a choice, not a fate.",
+      "primary_source": "Malaysia Strategic Trade Act 2010 (Act 708), penalty provisions cited in brief Section RELEVANT LAW. Domestic enforcement does not require US action.",
+      "severity": "MEDIUM",
+      "verification_status": "VERIFIED — the STA is on the statute books per brief and is cited in card 4."
+    }
+  ],
+  "false_balance": [
+    {
+      "where": "Card 2 (Security): 'BIS issued the AI Diffusion Rule on 13 January 2025 placing Malaysia in Tier 2. Commerce Secretary Lutnick rescinded it on 13 May 2025 ... and replaced it with case-by-case licensing plus an explicit diversion warning.'",
+      "evidence_says": "The Tier 2 classification IS technically no longer operative — the regulation that defined it was rescinded before its enforcement date. The card preserves the Tier-2 framing in the big claim ('classifies Malaysia as Tier 2 ... even after the rule was rescinded'). That is rhetorically defensible — case-by-case licensing is functionally Tier-2-equivalent for advanced AI chips — but it is not legally precise. A reader could fairly say: there is no current US rule that calls Malaysia 'Tier 2.' The card should clarify that the classification language survives in policy posture and licensing practice, not in active regulation.",
+      "primary_source": "BIS Federal Register notices (13 Jan 2025 Diffusion Rule; May 2025 rescission), cited in stage1 card 2 sources.",
+      "severity": "MEDIUM",
+      "suggested_rewrite": "Replace 'Washington classifies Malaysia as Tier 2 ... even after the rule was rescinded' with 'The Diffusion Rule that classified Malaysia as Tier 2 was rescinded in May 2025. The case-by-case licensing that replaced it treats Malaysia the same way the Tier 2 cap would have — annual scrutiny, validated end-user expectations, explicit diversion warnings.'"
+    },
+    {
+      "where": "Card 3 (Economic): 'Microsoft (USD 2.2 B announced May 2024), Google (USD 2 B announced May 2024) ... The investment thesis assumes uninterrupted access to US-controlled AI chips.'",
+      "evidence_says": "These are announcement figures, not committed/disbursed figures. Microsoft and Google announcements are forward-looking multi-year commitments and the phasing depends on local conditions including the export-control posture itself. Treating announcements as the size of the exposure overstates the at-risk capital today, even if the announcements remain the headline figures.",
+      "primary_source": "Microsoft news release 2 May 2024; Google blog 30 May 2024 — both cited in stage1 card 3.",
+      "severity": "LOW-MEDIUM",
+      "suggested_rewrite": "Either insert 'announced' explicitly ('Microsoft announced USD 2.2 B in May 2024; Google announced USD 2 B in May 2024') or shift the at-risk framing to the announced/committed total and acknowledge phasing. The current card already says 'announced' once but lets the phrasing 'anchor tenants' suggest commitments are firm. Card 7 (view) inherits this implication."
+    },
+    {
+      "where": "Card 3 (Economic): 'Johor has more than 80 approved data-centre projects with announced capacity above 5 GW — roughly a quarter of Peninsular Malaysia's peak electricity demand.'",
+      "evidence_says": "The denominator deserves more care. Peninsular Malaysia peak demand ~20 GW (brief Section KEY STATISTICS) is the right denominator for a Johor-load comparison only if all 5 GW would land on the peninsular grid simultaneously. Operational capacity today is closer to 3 GW per the brief's contradictions section; announced/contracted is the >5 GW figure. The 'roughly a quarter' is therefore a future-state ratio anchored on announced capacity, not a current load ratio.",
+      "primary_source": "Suruhanjaya Tenaga Electricity Supply Industry Outlook (brief Section KEY STATISTICS); brief CONTRADICTIONS section on 3 GW vs 5 GW.",
+      "severity": "MEDIUM",
+      "suggested_rewrite": "Either 'If all announced Johor DC capacity is built, the load is roughly a quarter of Peninsular peak demand' or 'Announced Johor DC capacity exceeds 5 GW — about a quarter of Peninsular peak demand if fully built.' The current card collapses the build phase into a present tense that the underlying data does not support."
+    }
+  ],
+  "audience_check": "Mixed. A factory worker in Johor reading this would understand the structural anxiety — they see the DC construction every day and have read about Singapore's Nvidia case in the local papers. The reframe and analogy will land. But the same reader will also notice what is missing: the cards do not name a single Malaysian company, do not say what the Malaysian government has actually done in fourteen months, and do not connect any of this to what it means for jobs, power tariffs, or whether the next Penang or KL DC pipeline is safe. A teacher in Kota Bharu or a hawker in Penang would feel this as a Johor-business story rather than a national-stakes story. The Ipoh taxi driver test is harder — without a named villain or a clear consequence to point at, the issue reads as a policy think-piece rather than a discovery. Stage 1 has chosen accuracy over emotional purchase, and that is defensible, but it is also the trade-off being made.",
+  "hard_truths_missing": [
+    {
+      "about": "Malaysian political class — across parties",
+      "truth": "Both Pakatan Harapan-led federal government and the Johor state government (BN-led under Onn Hafiz Ghazi) have a shared incentive to keep approving DC capacity even while the chip-supply framework that powers them is being rewritten in Washington. The political risk of a US designation is borne by the federal Cabinet; the political reward of investment headlines accrues to whichever state signs the MoU. That misalignment is structural and is not flagged in any card.",
+      "why_avoided": "Stage 1's no-3R / process-not-people discipline reads 'name the misaligned incentive structure' as too close to naming politicians. But naming the incentive structure is different from naming the politicians.",
+      "status": "MY_OPINION — analytical claim by this reviewer based on the brief's ACTORS section. Not independently verified to a primary source.",
+      "primary_source": "Brief Section ACTORS — federal MITI/MIDA vs Johor state government roles are documented; the incentive misalignment is a reviewer inference."
+    },
+    {
+      "about": "US-Malaysia trade relationship — political class context",
+      "truth": "Malaysia is in the middle of a tariff dispute with the Trump administration. A US designation of any Malaysian DC operator as a diversion hub would land on top of an already-strained trade posture and would not be a clean, narrow enforcement action — it would compound with tariff politics. Stage 1 mentions Trump in the brief but the cards stay narrowly on chips.",
+      "why_avoided": "Coupling chip enforcement to tariff politics opens a second-order story that Stage 1 is not equipped to verify in the runtime.",
+      "status": "MY_OPINION — the tariff context is broadly documented (T4A's own issue 1965 referenced in brief) but the specific coupling is an analytical claim.",
+      "primary_source": "T4A issue 1965 referenced in brief Section SOURCES line 19; broader tariff context is public but not re-verified here."
+    },
+    {
+      "about": "Singapore",
+      "truth": "Singapore prosecuted within five weeks of the alleged transactions becoming visible. Malaysia, fourteen months later, has not produced a public domestic investigation despite the public ministerial commitment. The neighbour-state comparison is the cleanest accountability anchor the cards could have used and they declined.",
+      "why_avoided": "Direct comparison with Singapore can read as inviting a Singapore-is-better posture which is politically loaded. But the comparison is verifiable from the timeline.",
+      "status": "VERIFIED via brief's own timeline (27 Feb 2025 SPF charges; March 2025 MITI commitment with no findings as of May 2026 cutoff).",
+      "primary_source": "Brief Section CONTEXT bullets 8, 11, 15."
+    },
+    {
+      "about": "The DC industry tracker source-bias problem",
+      "truth": "The 5 GW figure rests partly on Cushman & Wakefield / DC Byte / Knight Frank — all commercial actors with disclosed commercial interest in headline growth numbers. The brief flags this explicitly in Section SOURCE SPECTRUM CHECK; the card carries the number without that caveat.",
+      "why_avoided": "Caveating an industry-tracker figure on the card would clutter the prose. But the brief's own self-discipline says this should be surfaced.",
+      "status": "VERIFIED — brief Section SOURCE SPECTRUM CHECK and CONTRADICTIONS explicitly flag this.",
+      "primary_source": "Brief Section CONTRADICTIONS and SOURCE SPECTRUM CHECK."
+    }
+  ],
+  "gender_truths_avoided": [],
+  "class_truths_avoided": [
+    {
+      "truth": "5 GW of DC load lands on the same Peninsular grid that serves household tariffs. If TNB has to add generation capacity to serve DCs, the cross-subsidy or tariff-pass-through risk falls on residential and SME bill-payers, not on the hyperscalers. The cards mention the peak-demand ratio without naming who pays for the additional capacity.",
+      "why_uncomfortable": "It reframes the story from 'AI investment hub' to 'household tariff exposure', which is a less promotional frame.",
+      "primary_source": "Suruhanjaya Tenaga Electricity Supply Industry Outlook (brief Section KEY STATISTICS); class-incidence claim is reviewer analytical extension, not independently sourced."
+    }
+  ],
+  "predictions": [
+    {
+      "if_nothing_changes": "Between May 2026 and end-2026, BIS issues at least one further public licensing update narrowing or clarifying advanced-AI-chip export conditions to Malaysia. Johor approves at least three additional DC projects in the same window. No Malaysian DC operator is publicly designated by BIS but at least one is named in DOJ filings or court documents.",
+      "who_can_fix": "MITI and the Ministry of Foreign Affairs jointly. The fix is a public-record domestic enforcement action under the Strategic Trade Act 2010, however small, that shows Putrajaya is not waiting for Washington.",
+      "why_they_wont": "The political reward of DC investment announcements accrues to whichever minister is at the ribbon-cutting; the political cost of a domestic enforcement action falls on whoever signs the charge sheet. Until those incentives realign, the path of least resistance is to keep approving and to point at MITI's March 2025 commitment when asked.",
+      "label": "HYPOTHESIS"
+    },
+    {
+      "if_nothing_changes": "By mid-2027, if a Malaysian DC operator is named in a BIS Entity List action or a DOJ filing, the Anwar government faces the choice of either re-trading already-announced FDI or absorbing US pressure on broader trade. That decision will be made under Cabinet-level political conditions, not by MITI alone.",
+      "who_can_fix": "The Prime Minister's Department. A pre-emptive transparency framework — published DC operator screening criteria, public licence registry — would change the political optics before any US action lands.",
+      "why_they_wont": "Pre-emptive transparency is read by industry as a deterrent to further DC FDI. The political calculation has so far favoured the FDI headline over the regulatory clarity.",
+      "label": "HYPOTHESIS"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "in_my_attack": "I considered asserting that DeepSeek was named in the SPF charge sheet (not just in secondary reporting), which would have been a sharper attack on Stage 1's silence.",
+      "why_I_dropped_it": "The brief and Stage 1 both flag that the charge sheet wording is not independently verified in this runtime. Reuters/Bloomberg/WSJ naming DeepSeek is reported in secondary; whether the charge sheet names DeepSeek is unverified. I downgraded the claim to 'multiple outlets have linked' rather than 'the charge sheet names'."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "in_my_attack": "I considered asserting that the Tier 2 classification is 'no longer operative' as a flat statement.",
+      "why_I_dropped_it": "The regulation is rescinded, but BIS post-rescission licensing guidance treats Malaysia as a diversion-risk jurisdiction in a way that is functionally equivalent. 'No longer operative as a regulation but operative as posture' is the accurate framing, and I have argued for the card to say so explicitly rather than letting it read either way."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "in_my_attack": "I considered framing the Johor-kept-building observation as evidence that Johor was knowingly courting export-control risk.",
+      "why_I_dropped_it": "Several DC approvals predate the Singapore charges (the brief notes approvals running 2024-2026). Framing the post-charge approvals as a defiant response would require the pre/post breakdown that the brief does not give. I rewrote the attack as 'announcements continued in parallel, without visible enforcement response' rather than 'Johor defied the warning'."
+    },
+    {
+      "sin": "UNDERCLAIM",
+      "in_my_attack": "I considered letting Stage 1's no-named-Malaysian-company posture stand as fully justified.",
+      "why_I_dropped_it": "The brief itself flags that the SPF release named three individuals (a Singapore citizen, a permanent resident, a Chinese national). At minimum the categories should be named in the hook. The 'no name' posture is defensible for Malaysian DC operators (none has been publicly named) but is over-extended to the three accused, whom Singapore has publicly named."
+    }
+  ],
+  "verification_log": [
+    {
+      "my_attack": "Singapore prosecuted within five weeks; Malaysia produced no public investigation finding fourteen months later",
+      "status": "VERIFIED",
+      "primary_source": "Brief Section CONTEXT bullets 8 (27 Feb 2025 SPF charges), 11 (March 2025 MITI commitment, no findings released to date), 15 (May 2026 brief cutoff with no Malaysian operator designation). The 14-month gap is a calculation from the brief's own dated entries."
+    },
+    {
+      "my_attack": "The Tier 2 classification rests on a regulation that was rescinded before its enforcement date",
+      "status": "VERIFIED",
+      "primary_source": "Brief Section CONTEXT bullets 7 (13 Jan 2025 Diffusion Rule), 12 (13 May 2025 rescission); stage1 card 2 same dates."
+    },
+    {
+      "my_attack": "Microsoft USD 2.2 B and Google USD 2 B are announcement figures, not committed/disbursed",
+      "status": "VERIFIED",
+      "primary_source": "Microsoft news release 2 May 2024 ('to Invest'); Google blog 30 May 2024 — both cited in stage1 card 3 as 'announced'. The announcement vs commitment distinction is a definitional one about the source language."
+    },
+    {
+      "my_attack": "5 GW is announced capacity, not operational; brief itself contradicts the present-tense framing",
+      "status": "VERIFIED",
+      "primary_source": "Brief CONTRADICTIONS section explicitly: 'Industry trackers and state-government announcements give figures from 3 GW (operational + under construction) to >5 GW (announced + planned). The brief uses more than 5 GW announced as the upper-conservative framing — careful to say announced, not operational.'"
+    },
+    {
+      "my_attack": "Industry-tracker sources for the 5 GW figure carry disclosed commercial interest",
+      "status": "VERIFIED",
+      "primary_source": "Brief Section SOURCE SPECTRUM CHECK: 'Industry tracker (commercial): Cushman & Wakefield, DC Byte, Knight Frank — disclose commercial interest in DC market growth.'"
+    },
+    {
+      "my_attack": "DeepSeek has been named in secondary reporting as the suspected end-user",
+      "status": "PARTIALLY_VERIFIED",
+      "primary_source": "Brief Section CONTEXT bullet 10 asserts 'Bloomberg, Reuters, and Wall Street Journal report DOJ and Commerce Department investigations into whether high-end Nvidia chips routed via Singapore/Malaysia ended up at Chinese AI firms (DeepSeek named in some reports).' This reviewer has not re-opened those articles; the assertion that DeepSeek appears in secondary reporting comes from the brief and is downstream of secondary, not primary."
+    },
+    {
+      "my_attack": "The misaligned incentive between federal Cabinet (bears US-designation risk) and Johor state government (collects investment-headline reward) explains the year of silence",
+      "status": "MY_OPINION",
+      "primary_source": "Reviewer analytical claim. Brief Section ACTORS documents the federal-state actor split but does not characterise the incentive misalignment. This claim should be labelled hypothesis if surfaced in any card."
+    },
+    {
+      "my_attack": "Cross-subsidy risk: TNB additions to serve DC load are paid for in part by residential and SME bill-payers",
+      "status": "MY_OPINION",
+      "primary_source": "Reviewer analytical extension of brief Section KEY STATISTICS (peak demand figure). The cross-subsidy claim is not in the brief and would need separate sourcing from Energy Commission tariff filings before any card could use it."
+    }
+  ],
+  "strongest_card": {
+    "card": 5,
+    "card_type": "reframe",
+    "why": "'The question is not whether Malaysia is selling chips to China. The question is whether Johor is the freeport on the route, and what happens if Washington decides it is.' This is true value-restructuring per the playbook: it rotates the frame from 'is Malaysia complicit' (a yes/no Malaysia controls) to 'is Malaysia the geography' (a question Washington controls). The two halves of the question carry asymmetric agency, which is the actual structural fact. It also passes the WhatsApp test — a reader could paste this alone and the thoughtful reader on the other end gets the point in one read. It does not add evidence, it rotates the model."
+  },
+  "weakest_card": {
+    "card": 4,
+    "card_type": "fact (Governance)",
+    "why": "The Governance card is the most under-powered in the deck. 'MITI said it would investigate any Malaysian company named in a US diversion probe. The investigation list has not been made public.' This is true but it understates the finding the brief actually supports — fourteen months of no public Malaysian enforcement action, no named company, no Strategic Trade Act case, in parallel with Singapore prosecuting within five weeks. The card carries the Strategic Trade Act penalty figures but does not connect them to the visible absence of any use. The fact of inaction is the story this card should be telling. Currently it tells the fact of the commitment instead."
+  },
+  "overall_assessment": "Stage 1 is the most careful piece of work in the deck — every claim traces, the four-cardinal-sins self-check is honest, the no-named-Malaysian-DC-operator posture is principled and accurate. But the carefulness has a cost: the cards are abstraction-heavy (reframe, analogy, view are three of seven slots), the hook reduces three named-category accused to a count, the Governance card lets a fourteen-month enforcement vacuum read as 'has not been made public', and the Economic card lets announced figures and announced capacity sit in the present tense. The three things that would sharpen this without breaching the brief's own accuracy contract: (1) name the categories of the three accused in the hook (Singapore citizen, permanent resident, Chinese national), (2) say explicitly that the Diffusion Rule that named Malaysia Tier 2 was rescinded but the licensing posture is functionally equivalent — let the reader see both halves, (3) rewrite Governance card to lead with the fourteen-month enforcement absence as the verifiable finding it is. Do not add the DeepSeek name to cards in this runtime — Stage 3 should verify the SPF charge sheet wording first. Do not name any Malaysian DC operator — none has been publicly named, the posture stands. The reframe and the analogy are the strongest things in the deck and should not be touched."
+}
