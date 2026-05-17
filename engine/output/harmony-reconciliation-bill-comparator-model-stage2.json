@@ -1,0 +1,51 @@
+{
+  "_provenance": {
+    "stage": "Stage 2 — Bias Audit (Gemini)",
+    "slug": "harmony-reconciliation-bill-comparator-model",
+    "issue_id": "1991",
+    "received_at": "2026-05-17"
+  },
+  "bias_score": 25,
+  "political_lean_estimate": -0.1,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.7,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [
+    {
+      "quote": "On 7 April, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill",
+      "why_biased": "The analysis frames the legislative impact strictly from a federal, Putrajaya-centric perspective. It omits the unique demographic and religious context of East Malaysia (Sabah and Sarawak), where Sedition laws have historically been weaponised differently (e.g., against secessionist sentiments) and religious harmony dynamics differ significantly from the Peninsula.",
+      "fix": "Include context on how the Sedition Act and the proposed Harmony Bill intersect with East Malaysian dynamics."
+    }
+  ],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "East Malaysia (Sabah and Sarawak) perspectives and the unique application of sedition laws to their regional issues are completely absent.",
+    "The analysis does not discuss the role of the Rulers (Royalty) who are central to the 3R (Race, Religion, Royalty) framing used by the current administration to justify retaining the Sedition Act."
+  ],
+  "evasion_flags": [
+    "The analysis dodges directly attributing the 'political will' failure in Malaysia to specific contemporary political constraints (e.g., reliance on conservative Malay-Muslim votes or pressure from the Royalty), keeping the critique safely abstract at the level of 'four drafts in 14 years'."
+  ],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "CIJ recorded 36 sedition cases in 2025, an 84% rise from the year before.",
+      "why": "Gemini could not independently verify the 2025 CIJ statistic. Searches for the CIJ 2025 report or the purported FMT article from December 10, 2025, yielded no primary source or corroborating secondary coverage.",
+      "fix": "Remove the 2025 statistic unless a primary source can be cited, or revert to the latest verifiable historical data."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "quote": "Anwar pledged the same in 2018 and 2022.",
+      "why": "Pakatan Harapan's 2018 and 2022 manifestos pledged repeal — these are coalition pledges, not personal Anwar pledges as framed in parallel with Najib's 2012 personal announcement.",
+      "fix": "Change 'Anwar pledged' to 'Pakatan Harapan pledged' or 'Anwar's coalition pledged'."
+    }
+  ],
+  "overall_assessment": "The analysis presents a structurally sound, process-focused critique of Malaysia's failure to repeal the Sedition Act and enact the Harmony Bill over 14 years. It successfully avoids overt partisan or racial bias by grounding its arguments in comparative statutory law and historical track records. However, it relies on unverified 2025 statistics (CIJ 36 sedition cases) which Gemini could not validate against primary sources. Furthermore, it exhibits geographic bias by centering entirely on Putrajaya's federal framing, omitting the critical East Malaysian context and the role of the Royalty, where Sedition Act application and religious harmony dynamics play out very differently."
+}
