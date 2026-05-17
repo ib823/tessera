@@ -1,0 +1,234 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "macc-rm1-1b-rafizi-28-pages",
+    "issue_id": "1990",
+    "brief": "engine/briefs/macc-rm1-1b-rafizi-28-pages.md",
+    "generated_at": "2026-05-17",
+    "revision_history": [
+      "v1 (2026-05-17): initial draft after Phase 1 brief approval. Radar-curator framing was reversed during research: Rafizi is the SUBJECT of the probe (signed the deal as Economy Minister), not a whistleblower. Cards rotate the reader from the binary 'guilty / witch-hunt' frame to the procedural question — what procurement track should a 10-year, RM1.1 billion IP-licensing deal have cleared, and what is the institutional propriety of an outgoing MACC chief announcing a charging recommendation six days before his tenure ended."
+    ],
+    "discipline": "Process-not-people. The two MACC has recommended for charges are unnamed; speculation centres on Rafizi and his ex-aide James Chai, but neither is named by the MACC, neither has been charged, and the AGC holds the charging decision under Federal Constitution Article 145. Cards do NOT collapse speculation into fact, do NOT characterise Rafizi as guilty, and do NOT characterise the probe as politically motivated. We DO report what each named institution said and did, the statutes invoked, and the timing arithmetic the reader can verify."
+  },
+  "headline": "MACC moved to charge two over RM1.1B Arm deal. Putrajaya continues.",
+  "context": "On 6 May 2026, the MACC's outgoing chief said the agency would seek charges over Malaysia's RM1.1 billion Arm Holdings semiconductor deal, signed in March 2025. The new Economy Minister says the deal continues. On 14 May, former minister Rafizi added 28 pages of his own evidence.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Rafizi handed MACC 28 pages and a USB drive on 14 May, eight days after the agency moved to charge two over the RM1.1 billion Arm Holdings deal his ministry signed.",
+      "sub": "He was Economy Minister at the signing on 5 March 2025. MACC has not named the two it recommends for charges.",
+      "sources": [
+        "Malay Mail, 14 May 2026, 'Rafizi returns to MACC, hands in 28 pages of evidence to MACC in RM1.1b government contract probe': https://www.malaymail.com/news/malaysia/2026/05/14/rafizi-returns-to-macc-hands-in-28-pages-of-evidence-to-macc-in-rm11b-government-contract-probe/219891",
+        "NST, 14 May 2026, 'Rafizi back at MACC over RM1.1bil Arm probe, submits 28-page file': https://www.nst.com.my/news/nation/2026/05/1439223/rafizi-back-macc-over-rm11bil-arm-probe-submits-28-page-file",
+        "The Star, 14 May 2026, 'Rafizi returns to MACC on his own with new evidence in RM1.1bil probe': https://www.thestar.com.my/news/nation/2026/05/14/rafizi-returns-to-macc-on-his-own-with-039new-evidence039-in-rm11bil-probe",
+        "The Edge, 14 May 2026, 'Rafizi voluntarily returns to MACC with additional evidence in RM1.1 bil probe': https://theedgemalaysia.com/node/803538",
+        "MIDA media release, 5 March 2025, 'MIDA and ARM Limited Forge Agreement to Boost Malaysia's Semiconductor Industry': https://www.mida.gov.my/media-release/mida-and-arm-limited-forge-agreement-to-boost-malaysias-semiconductor-industry/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Akmal Nasrullah, the new Economy Minister, said on 23 February the deal continues, even as the MACC paper moves forward.",
+      "sub": "His reason: a 10-year structural commitment to shift Malaysia's chip industry from back-end assembly to front-end design. The probe runs in parallel.",
+      "sources": [
+        "Bernama, 23 February 2026, 'Govt Seeks Continuity Of Arm Holdings Deal Amid MACC Probe — Akmal Nasrullah': https://www.bernama.com/en/news.php?id=2526806",
+        "Malay Mail, 23 February 2026, 'Putrajaya aims to press on with Arm Holdings deal amid MACC probe, says economy minister': https://www.malaymail.com/news/malaysia/2026/02/23/putrajaya-aims-to-press-on-with-arm-holdings-deal-amid-macc-probe-says-economy-minister/210152",
+        "The Edge, 23 February 2026, 'Deal with UK chip design firm Arm still in force, says Economy Minister amid MACC probe': https://theedgemalaysia.com/node/793687",
+        "The Sun, 23 February 2026, 'Malaysia seeks to continue Arm Holdings deal despite MACC probe': https://thesun.my/news/malaysia-news/people-issues/malaysia-seeks-to-continue-arm-holdings-deal-despite-macc-probe/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Azam Baki announced the recommendation to charge two on 6 May 2026, six days before his tenure as MACC chief ended.",
+      "sub": "The offences cited: abuse of power under MACC Act s.23, cheating under Penal Code s.420, criminal breach of trust under s.409. The Attorney-General's Chambers holds the charging decision.",
+      "sources": [
+        "The Star, 6 May 2026, 'MACC to propose charges against two over RM1.1bil chip deal, says Azam': https://www.thestar.com.my/news/nation/2026/05/06/macc-to-propose-charging-two-involved-in-rm11bil-semiconductor-deal-says-azam",
+        "Malay Mail, 6 May 2026, 'Azam Baki: MACC recommends charges against two in Arm Holdings chip probe': https://www.malaymail.com/news/malaysia/2026/05/06/azam-baki-macc-recommends-charges-against-two-in-arm-holdings-chip-probe/218915",
+        "Free Malaysia Today, 6 May 2026, 'MACC recommends charges against 2 in Arm Holdings case': https://www.freemalaysiatoday.com/category/nation/2026/05/06/macc-recommends-charges-against-2-in-arm-holdings-case",
+        "The Edge, 6 May 2026, 'Arm probe: MACC recommends two to be charged': https://theedgemalaysia.com/node/802481",
+        "The Edge, 'Six years at MACC's helm: Azam Baki's record and controversies' (Azam tenure end date 12 May 2026): https://theedgemalaysia.com/node/803132",
+        "MACC Act 2009 Section 23 (Suruhanjaya Pencegahan Rasuah Malaysia consolidated text)",
+        "Penal Code (Act 574) Sections 409 and 420, AGC consolidated text",
+        "Federal Constitution of Malaysia, Article 145 (Attorney-General's prosecutorial discretion)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Rafizi resigned in May 2025 after losing the PKR deputy-president race to Anwar's daughter Nurul Izzah, 3,866 votes to 9,803.",
+      "sub": "He has been openly critical of the Madani government since. Ex-minister Nik Nazmi, who resigned the same week, has called the probe 'political conspiracy.'",
+      "sources": [
+        "Malay Mail, 28 May 2025, 'Rafizi quits as economy minister after losing PKR party election, says no longer has mandate for reform': https://www.malaymail.com/news/malaysia/2025/05/28/rafizi-quits-as-economy-minister-says-he-no-longer-has-mandate-for-reform/178458",
+        "The Star, 28 May 2025, 'Rafizi: I've submitted my resignation as Economy Minister': https://www.thestar.com.my/news/nation/2025/05/28/rafizi-ive-submitted-my-resignation-as-economy-minister",
+        "Mothership, 28 May 2025, 'M'sia's Economy Minister Rafizi Ramli keeps promise to resign after losing PKR Deputy Presidency': https://mothership.sg/2025/05/malaysia-economy-minister-rafizi-ramli-resigns/",
+        "SCMP, May 2025, 'Malaysia's Rafizi Ramli resigns as minister after bruising loss in ruling party election': https://www.scmp.com/week-asia/politics/article/3312100/malaysias-rafizi-ramli-resigns-minister-after-bruising-loss-ruling-party-election",
+        "Focus Malaysia, 'Portraying Rafizi's ex-aide as Jho Low 2.0 reeks of witch-hunt, makes mockery of Madani's reform agenda': https://focusmalaysia.my/portraying-rafizis-ex-aide-as-jho-low-2-0-reeks-of-witch-hunt-makes-mockery-of-madanis-reform-agenda/",
+        "The Independent, 'Malaysia risks big with witch-hunt of ex-minister: Pakatan strongman' (Nik Nazmi quote): https://theindependent.sg/malaysia-risks-big-with-witch-hunt-of-ex-minister-pakatan-strongman/"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether to prosecute. It is which procurement track a 10-year, RM1.1 billion IP-licensing deal should have to clear.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis grounded in: (a) Government Procurement Act 2023, which raises transparency standards for large-value contracts; (b) the Arm deal's hybrid nature as an IP licence + 10-year payment commitment + strategic partnership, sitting at the seam of Treasury Instructions for IP procurement, MoU-with-payment instruments, and contract-without-tender exceptions; (c) the public reporting (NGO complaints to MACC alleging 'rushed and one-sided' agreement) that the procurement-track question is the substantive complaint."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like a hospital ordering a criminal review of how it hired its surgeon, while the surgeon's patients stay on the schedule.",
+      "sub": "The deal keeps delivering chip-design IP access to SkyeChip, Oppstar, and GreatAsic. The MACC paper sits with the Attorney-General.",
+      "sources": [
+        "Editorial analogy. Anchored to: The Star, 11 May 2026, 'Three local firms to create microchips in new Arm partnership' (SkyeChip / Oppstar / GreatAsic named as first IP-access recipients): https://www.thestar.com.my/news/nation/2026/05/11/three-local-firms-to-create-microchips-in-new-arm-partnership; Bernama 23 Feb 2026 (deal continues per Akmal Nasrullah); MACC 6 May 2026 (paper to AGC per Azam Baki, sources cited above)."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "The deal continues. The MACC moved to charge. The AGC will decide. The same coalition designed all three steps.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Verified facts: deal continues (Akmal Nasrullah, 23 Feb 2026, sources above); MACC recommendation (Azam Baki, 6 May 2026, sources above); AGC discretion (Federal Constitution Art. 145); coalition continuity (Pakatan Harapan-led unity government from Nov 2022, in office throughout signing, probe, and recommendation)."
+      ]
+    }
+  ],
+  "sources": "Bernama, MIDA media release, NST, The Star, Malay Mail, The Edge, Free Malaysia Today, The Sun, The Vibes, Reuters/Yahoo Finance, AFP/SpaceDaily, TechCrunch, Fortune Asia, SCMP, Bloomberg, Mothership, Focus Malaysia, The Independent (Singapore), New Malaysia Herald — plus statutory primary text (MACC Act 2009 s.23, Penal Code Act 574 ss.420 and 409, Federal Constitution Art. 145, Government Procurement Act 2023).",
+  "confidence": "High on the deal facts: signing date (5 Mar 2025), value (US$250M / RM1.11B over 10 years), counterparty (Arm Holdings UK, SoftBank-owned), signatories (MIDA + Arm Limited), and witness (PM Anwar + Arm CEO Rene Haas) — covered consistently by MIDA's own release plus Reuters, AFP, TechCrunch, Fortune, Bernama, Malay Mail, The Star, Edge. High on the resignation timeline: Rafizi loss to Nurul Izzah on 23 May 2025 (3,866 vs 9,803), resignation submitted 28 May 2025, effective 17 Jun 2025 — multi-outlet. High on the probe timeline: NGO complaint receipt confirmed 11 Feb 2026 (Ahmad Khusairi Yahaya, MACC deputy commissioner); Akmal Nasrullah 'deal continues' on 23 Feb 2026 (Bernama, four outlets); James Chai public search notice 4 Mar 2026 (Malay Mail, FMT, Edge); Chai statement 28 Apr; Rafizi summons 1 May; Rafizi statements 4-7 May (131 pages); Azam recommendation 6 May; Azam tenure end 12 May (Edge profile); Rafizi 28-page return 14 May. High on the statutes: MACC Act s.23, Penal Code s.420 + s.409, Federal Constitution Art. 145 — all primary text. Medium on the precise procurement track used: the public reporting describes the deal as a 'strategic partnership agreement' and an 'MoU with payment commitment,' but no source we accessed itemises which Treasury Instructions section the deal cleared, or whether it was tendered. The reframe is deliberately worded as a question for this reason. Medium on the identities of the two recommended-for-charges individuals: Azam did NOT name them; SCMP, The Edge, FMT, and Malay Mail all flag speculation around Rafizi + Chai but none confirm; cards do not name them.",
+  "lenses_used": ["Governance", "Legal", "Political"],
+  "lenses_applicable_but_unused": ["Economic", "Technology", "Historical"],
+  "needs_verification": [
+    "The exact procurement track classification used for the Arm Holdings deal — whether it cleared the Government Procurement Act 2023 thresholds as a strategic-partnership instrument, an IP-licensing arrangement under Treasury Instructions, or a contract-without-tender exception. Stage 3 should pull the public-tender record (or its absence) from MOF e-Perolehan if accessible.",
+    "The identities of the three NGOs that filed the complaint with MACC on or before 11 February 2026. Public reporting consistently says 'three NGOs' but does not name them. Stage 3 should check MACC media releases and Sinar Project / Bersih trackers.",
+    "Whether the AGC has issued any public statement on receiving the MACC charging recommendation, or set a timeline. Stage 3 should check AGC bulletins and parliamentary written answers.",
+    "Whether Akmal Nasrullah's 'deal continues' position is a formal Cabinet decision (with minute) or ministerial commentary. Stage 3 should check Cabinet Office releases and any parliamentary written answer.",
+    "The full text of the MACC's 6 May 2026 statement by Azam Baki (the SPRM official press release rather than the Edge / Star summaries) and the AGC's response if any."
+  ],
+  "source_notes": "Three things to flag explicitly. (1) ARMY-CHIEF CONFLATION: Tom's Hardware, Yahoo Finance, and startupnews.fyi bundled headlines about a separate January 2026 MACC probe involving an ex-army-chief and defence procurement (RM11.4M in seized assets per The Star + OCCRP + Nikkei Asia) into the Arm Holdings probe story. The two cases are unrelated; the army-chief thread is not cited in any card and the RM11.4M / US$1.27M safehouse number must not appear. If Stage 2 or Stage 3 flags it, this note is the trace. (2) INVESTIGATION-OPENING DATE: one stream of reporting gives 16 February 2026 as the date the MACC investigation paper opened, another gives 4 March 2026 as the formal first-summons round. T4A position used here: 11 Feb (complaints received per Ahmad Khusairi); 16 Feb (internal paper); 23 Feb (Akmal 'deal continues'); 4 Mar (public summons round with Chai notice). Cards do not state the bare 'when the probe opened' to avoid the contradiction surfacing as ambiguity. (3) 'TWO UNNAMED': Azam Baki's 6 May announcement did not name the two recommended for charges. Speculation centres on Rafizi + Chai across SCMP, The Edge, Malay Mail. Cards say 'two' and 'MACC has not named the two' — they do not adopt the speculation. If Stage 2 or 3 pushes to name, the rule is no — until AGC files.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "Cards do NOT assert Rafizi or Chai are the two recommended for charges (MACC did not name them). Cards do NOT assert the deal was unlawful or improperly procured (the procurement-track question is exactly what is being investigated; the reframe poses it as a question, not a finding). Cards do NOT assert Azam's 6 May timing was improper (the six-day-before-tenure-end is reported as a fact; the reader draws the inference). Cards do NOT assert the probe is or is not politically motivated.",
+    "underclaim_check": "Cards do NOT soften the verified findings. MACC DID move to recommend charges (Azam, 6 May; multi-outlet). The deal IS continuing (Akmal, 23 Feb; multi-outlet). Rafizi DID resign after losing PKR DP (multi-outlet, vote count exact). Nik Nazmi DID call the probe 'political conspiracy' (verified quote). None of these are softened to 'reportedly' or 'critics say.'",
+    "misleading_framing_check": "Hook leads with the news item every Malaysian reader saw last week (Rafizi + 28 pages). Card 2 immediately introduces the institutional counterweight (deal continues). Card 3 puts the MACC chief's timing on the table without judgement. Card 4 names the political context (PKR internal loss + Madani-critical posture + Nik Nazmi quote) so the reader has both poles. Reframe rotates to the procedural question — not 'Rafizi did it' or 'this is a witch-hunt.' View is a four-step institutional summary that any reader can verify line-by-line. The selection deliberately surfaces all three competing positions (probe-as-reform / probe-as-witch-hunt / structural-procurement-question) before settling on the structural one.",
+    "unverified_detail_check": "Every specific in cards traces to a primary or near-primary source. Deal value (RM1.1B / US$250M / 10 years) — MIDA release + Reuters + AFP + Fortune. Signing date (5 March 2025) — MIDA release + multi-outlet. MACC paper handoff — Bernama, Malay Mail, Edge, The Sun for Akmal's 23 Feb statement; The Star, Malay Mail, FMT, Edge for Azam's 6 May statement. Statutory citations — AGC consolidated text. Azam tenure end (12 May 2026) — Edge profile piece. Resignation vote count (3,866 vs 9,803) — multi-outlet. Nik Nazmi 'political conspiracy' quote — The Independent (Singapore).",
+    "3R_special_caution": "Not a 3R issue. No religion, race, or royalty angle. Standard verification bar applies, met.",
+    "process_not_people_check": "All sharp claims target institutional mechanics or named public actors acting in official capacities. MACC (the institution), AGC (Article 145 role), Ministry of Economy (Akmal in office), PKR (party-internal vote), Arm Holdings (counterparty, no allegation). Rafizi is named for what he did in office (signing) and what he is doing now (submitting evidence). Azam is named for what he announced. Nik Nazmi is named for what he said. No one — including Rafizi, Chai, Azam, Akmal, Nik Nazmi, or Anwar — is characterised as acting in bad faith. The two recommended for charges remain unnamed.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent. The hook plants a procedural oddity (ex-minister submitting evidence about a deal his ministry signed, eight days after a charging recommendation). Card 3 plants a second oddity (charging recommendation six days before chief's tenure ends). Reframe converts these to a structural anxiety about the procurement-and-enforcement architecture. The view is institutional-architectural, not personal. No sadness; no generalised concern; no anger directed at any individual or community. The energy is directed at process and timing — which are public-record facts.",
+    "em_dash_check": "Zero em-dashes (U+2014) in headline, context, or any card big/sub. Verified by manual scan.",
+    "scaffolding_marker_check": "No sentence in any reader-facing field begins with 'However,' 'Moreover,' 'Furthermore,' 'Crucially,' 'Notably,' 'Importantly,' 'That said,' or 'Of course.'",
+    "auxiliary_verb_density_check": "Highest field auxiliary count is 2 ('is') in the reframe, which uses the question-form 'The question is not X. It is Y.' All other fields are under the 3-auxiliary warning threshold."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Strong primary anchoring: MIDA release for deal facts, Bernama for ministerial 'deal continues' position, multi-outlet coverage for both the 6 May Azam announcement and the 14 May Rafizi submission, statutory primary text (MACC Act, Penal Code, Federal Constitution) for legal exposure. Multi-outlet (4+ each) for both Azam's recommendation and Rafizi's submission. Vote count and resignation timeline exact across multiple outlets. Capped below 90 because: (a) the procurement-track classification (the heart of the reframe) is described in the brief and cards as 'a question,' not 'a finding,' because no source we accessed itemised which Treasury Instructions section or strategic-partnership instrument the deal actually cleared — Stage 3 should pull e-Perolehan and Cabinet Office records if accessible; (b) the three NGO complainants are not named in any source we found, so the 'NGO voice' is structurally absent from the cards (acknowledged in source_notes); (c) the AGC's public position on the MACC recommendation is not in our source set — Stage 3 should check AGC bulletins. The army-chief / safehouse conflation in tech-outlet coverage is flagged and excluded; if any Stage 2/3 reviewer raises it, the source_notes paragraph holds the trace."
+}
