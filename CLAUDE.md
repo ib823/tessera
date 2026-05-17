@@ -429,20 +429,40 @@ For each stage response:
 6. If any connected issue is unpublished, flag it for user decision
 
 **Image Prompt:**
-Generate and present to user:
+
+The OG image prompt is generated from the **canonical T4A image template** below. The wording is fixed except for the single `[INSERT YOUR SUBJECT DESCRIPTION HERE]` placeholder, which is the only per-issue customisation. Every other line lands a specific consistency requirement (background colour exactly #0f0f23, stroke colour #FFFFFF, single-gesture rule, T4A cursive signature integration, negative space on the right, 1.91:1 wide landscape). Do not paraphrase, abbreviate, or skip lines — the template is enforced verbatim so successive issues sit together as a single visual series.
+
+Generate and present to the user as a single copy-paste block (header line + prompt + save path):
+
 ```
 === ISSUE {ID}: {HEADLINE} ===
 
-Single continuous line art drawing on deep dark navy background (#0f0f23).
-One unbroken white line (#FFFFFF, stroke weight 3px) depicting:
-[METAPHORICAL DESCRIPTION — one symbolic visual that captures the issue's tension]
-Style: minimalist single-line illustration, Pablo Picasso continuous line drawing.
-No fill, no shading, no color other than white line on navy.
-Elegant, contemplative, editorial. Ample negative space.
-No text, no logos, no watermarks.
-Aspect ratio exactly 1.91:1 wide landscape format. 2400x1260 pixels.
+Create a minimalist Pablo Picasso single continuous line drawing on a deep dark navy background exactly #0f0f23. Use one single unbroken bold white line (#FFFFFF) with perfectly consistent stroke weight throughout. The entire drawing must be created as one continuous gesture without the pen ever lifting from the canvas.
+
+Draw [INSERT YOUR SUBJECT DESCRIPTION HERE] as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
+
+At the bottom right corner, seamlessly continue the exact same continuous line into a natural hand-drawn cursive "T4A" signature as the ending tail of the stroke. The T4A signature must feel like an organic part of the single unbroken line, not added separately.
+
+Style: elegant minimalist single-line illustration, contemplative, editorial. No fill, no shading, no extra lines, and no unnecessary details. Keep the composition clean with generous negative space, especially toward the right side of the frame.
+
+Aspect ratio 1.91:1 wide landscape. Ensure the final result matches the clean, consistent quality of previous T4A single continuous line images.
 
 Save as: public/og/backgrounds/issue-{ID}-bg.png
+```
+
+Rules when filling in the subject description:
+
+1. **One unbroken stroke must be plausible.** Reject metaphors that need disjoint elements (e.g. "three separate scrolls"). Choose a single figure, a single object, or a single gesture that the eye reads as one continuous line.
+2. **Composition rule of thumb.** Subject sits centre-left; the right side carries negative space so the T4A signature lands cleanly in the bottom-right corner as the tail of the same stroke.
+3. **Anger-at-process or anxiety-of-precedent, not sadness.** Match the issue's hook emotion. A drooping or weeping figure breaks the editorial register; a poised, contemplative, or active figure holds it.
+4. **3R discipline.** No depiction of religious symbols, royal regalia, or community-identifying features (turban, kippah, songkok, etc.). Suit-and-tie or abstract figures only.
+5. **Borrowed pose attribution.** If a pose or composition is borrowed from another artist (Picasso reference, photojournalism still), include a small visible attribution line in the image as a further extension of the same stroke. This overrides the no-text-in-image default.
+6. **Cropping fallback.** If the generator produces a non-1.91:1 image, `sharp(input).resize({width:1200, height:630, fit:'cover'}).png().toFile(out)` from `npm install sharp --no-save` is the standard rescue. Final file is **1200 × 630 PNG** per the Image Requirements section below.
+
+Example of a complete filled prompt (man in suit shrugging — used as the reference shape for line quality and signature integration in other issues):
+
+```
+Draw a man in a suit shown from the chest up in a shrugging pose — arms extended outward with palms turned upward, head slightly tilted — as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
 ```
 
 **WAIT** for user to:
