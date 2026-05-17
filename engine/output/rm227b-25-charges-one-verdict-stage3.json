@@ -1,0 +1,217 @@
+{
+  "factual_accuracy_score": 61,
+  "source_diversity_estimate": 0.1,
+  "claims": [
+    {
+      "claim": "Najib Razak convicted on all 25 charges over RM2.27 billion from 1MDB on Dec 26, 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "BERNAMA, Dec 26 2025, reported High Court conviction on four abuse of power charges and 21 money laundering counts involving RM2.3 billion: https://www.bernama.com/en/news.php?id=2506361 ; Judiciary press summary at end of prosecution case confirms four Section 23(1) MACC charges: https://www.kehakiman.gov.my/sites/default/files/2024-10/PRESS_SUMMARY_DSN_END_OF_PROSECUTION_CASE_edited_30_10_2024_0.pdf",
+      "correction": "Use RM2.28 billion or RM2.3 billion unless citing a document that gives RM2.27 billion exactly. The final judgment text was not found, so the verdict is verified through contemporaneous court reporting rather than the judgment itself.",
+      "stale_check": "No stale issue found; event date is Dec 26, 2025."
+    },
+    {
+      "claim": "15 years jail, RM11.38 billion fine.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.15,
+      "m_unknown": 0.3,
+      "source": "Malay Mail, Dec 26 2025, reported 15 years imprisonment and minimum statutory fine totalling RM11,387,888,067.05: https://www.malaymail.com/news/malaysia/2025/12/26/ex-pm-najib-razak-gets-concurrent-15-year-jail-terms-rm113b-fine-over-1mdb-scandal/203359 ; AP, Dec 26 2025, reported 15 years and RM13.5 billion in fines and assets: https://apnews.com/article/c10c6edf4af838327052206628a57da1",
+      "correction": "State the fine precisely as RM11.3879 billion for the four abuse-of-power charges, and note that some reports describe a larger RM13.5 billion package including fines/assets. The analysis should explain the discrepancy.",
+      "stale_check": "No stale issue found; reports are from the verdict date."
+    },
+    {
+      "claim": "RM24.46 billion 1MDB debt still outstanding.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "BERNAMA, Nov 27 2025, citing Ministry of Finance written parliamentary reply: https://bernama.com/en/news.php?id=2496226",
+      "correction": "Clarify that the RM24.46 billion refers to outstanding 1MDB debt obligations as of Sept 30, 2025 and includes RM9.02 billion sukuk plus RM15.44 billion shareholder advances.",
+      "stale_check": "Potentially stale after Sept 30, 2025 if newer MOF figures are issued."
+    },
+    {
+      "claim": "The trial heard 76 witnesses.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Search found secondary references only, including Ground News summary of court reporting: https://ground.news/article/former-malaysian-leader-najib-razak-sentenced-to-15-years-and-hefty-fine-in-1mdb-corruption-trial_184ea9",
+      "correction": "Do not state 76 witnesses unless the final judgment, court transcript, or official judiciary summary is cited. The judiciary press summary found does not independently verify this count.",
+      "stale_check": "No stale issue; verification gap is source quality."
+    },
+    {
+      "claim": "The trial rejected four forged Saudi letters.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.05,
+      "m_unknown": 0.35,
+      "source": "AP, Dec 26 2025, reported the judge said four letters purportedly from the Saudi donor were forged: https://apnews.com/article/c10c6edf4af838327052206628a57da1 ; Malaysiakini court report, Dec 26 2025: https://www.malaysiakini.com/news/764306",
+      "correction": "Better wording: the High Court ruled the four purported Saudi donation letters were forgeries. Full judgment text was not found.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The appeal was filed four days later.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.3,
+      "source": "New Straits Times, Dec 30 2025, reported Najib's legal team filed notice of appeal 'yesterday' against conviction, sentence and fine: https://www.nst.com.my/amp/news/nation/2025/12/1346988/najibs-legal-team-files-appeal-against-1mdb-conviction",
+      "correction": "If counting from Dec 26 to filing on Dec 29, it is three calendar days later; if reporting publication date Dec 30, it appears four days later. State exact date: notice of appeal was reportedly filed on Dec 29, 2025.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The response missed the RM42 billion debt.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "MOF appendix states total remaining 1MDB debts to be paid till maturity were RM39.80174 billion in an earlier schedule: https://www.mof.gov.my/portal/pdf/news-media/Appendix-1MDB.pdf ; BERNAMA, Aug 13 2025, citing MOF, says RM42.17 billion had been channelled to 1MDB for debt repayments and commitments as of July 31, 2025: https://www.bernama.com/en/news.php?id=2456412",
+      "correction": "Clarify whether referring to original 1MDB debt, remaining debt, or funds already channelled. The current card mixes RM42 billion paid/serviced with debt outstanding.",
+      "stale_check": "Figures changed over time; older RM39.8 billion and newer RM42.17 billion refer to different measurements."
+    },
+    {
+      "claim": "RM42 billion paid in 1MDB debt servicing.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "BERNAMA, Aug 13 2025, citing MOF parliamentary reply, reported RM42.17 billion channelled to 1MDB for debt repayments and company commitments as of July 31, 2025: https://www.bernama.com/en/news.php?id=2456412",
+      "correction": "Use the more precise wording 'RM42.17 billion channelled to finance debt repayments and company commitments', not simply 'paid in debt servicing'.",
+      "stale_check": "Potentially stale after July 31, 2025."
+    },
+    {
+      "claim": "B40 women-led households feel it in shrinking social safety nets.",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.1,
+      "m_unknown": 0.75,
+      "source": "World Bank Malaysia social assistance report page, using HIS 2019 and 2022, finds STR reached 83.9% of B40 households in 2022: https://www.worldbank.org/en/country/malaysia/publication/social-assistance-in-malaysia-who-benefits-and-who-misses-out ; UN Malaysia/UNICEF, July 2024, identifies vulnerability among female-headed households: https://malaysia.un.org/en/273736-living-edge-increased-cost-living-adds-pressure-low-income-urban-families",
+      "correction": "The vulnerability of female-headed low-income households is supported, but the causal link from 1MDB debt to shrinking social safety nets for B40 women-led households was not verified.",
+      "stale_check": "No stale issue; causal claim lacks evidence."
+    },
+    {
+      "claim": "RM9.02 billion in sukuk runs to 2039.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "BERNAMA, Nov 27 2025, citing MOF written parliamentary reply: https://bernama.com/en/news.php?id=2496226 ; MOF appendix lists Sukuk IMTN principal in 2039: https://www.mof.gov.my/portal/pdf/news-media/Appendix-1MDB.pdf",
+      "correction": "State that RM9.02 billion comprises RM5 billion principal and RM4.02 billion interest on IMTN sukuk obligations up to 2039.",
+      "stale_check": "Potentially stale if MOF updates debt repayment schedule."
+    },
+    {
+      "claim": "More than a third of the 2026 education budget.",
+      "status": "VERIFIED",
+      "m_true": 0.55,
+      "m_false": 0.1,
+      "m_unknown": 0.35,
+      "source": "Supply Act 2026 lists Ministry of Education operating allocation at RM59.884 billion: https://www.mof.gov.my/portal/pdf/budget/A1781_SUPPLY_ACT_2026.pdf ; The Star, Oct 10 2025, reported total Education Ministry allocation RM66.2 billion: https://www.thestar.com.my/news/nation/2025/10/10/budget-2026-education-ministry-receives-largest-allocation-of-rm642bil",
+      "correction": "Clarify the denominator. RM24.46 billion is more than one-third of RM66.2 billion, but RM9.02 billion is not. The sentence structure currently risks implying the sukuk amount is more than a third.",
+      "stale_check": "No stale issue after Supply Act 2026 gazettement on Dec 31, 2025."
+    },
+    {
+      "claim": "PH, BN, PN, GPS, GRS: every major coalition runs on patronage.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "IDEAS media statement, May 27 2025, calls for Malaysia to shift away from patronage culture in public appointments: https://www.ideas.org.my/wp-content/uploads/2025/05/27052025_PoliticalAppointments_MediaStatement.docx.pdf ; UNIMAS repository article abstract discusses regional coalitions aided by patronage: https://ir.unimas.my/id/eprint/42178/",
+      "correction": "This is an analytical generalisation, not a verified factual claim. Narrow it to documented practices such as political appointments, GLC/FSB appointments, or constituency allocations, and cite evidence by coalition.",
+      "stale_check": "No stale issue; claim is overbroad."
+    },
+    {
+      "claim": "None will dismantle it voluntarily.",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.1,
+      "m_unknown": 0.85,
+      "source": "No primary source can verify future intent of all coalitions. IDEAS April 2026 statement says no clear legislative timeline, no draft bill and no indication when political financing bill will be tabled: https://theedgemalaysia.com/node/798592",
+      "correction": "Frame as opinion or inference, not fact. Example: 'No major coalition has yet enacted a comprehensive political financing law.'",
+      "stale_check": "Could change if a bill is tabled or enacted."
+    },
+    {
+      "claim": "A draft political financing bill has sat since 2022.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "IDEAS, July 21 2022, says APPG submitted a motion to table a Private Member's Bill on Political Financing on July 13, 2022: https://www.ideas.org.my/for-media/appg-on-political-financing-submitted-private-members-bill-on-political-financing-on-13-july-2022/ ; Malay Mail, Sept 24 2022, reported minister said proposed law would be tabled in November: https://www.malaymail.com/news/malaysia/2022/09/24/law-minister-political-donation-law-to-be-tabled-in-parliament-in-november/29899",
+      "correction": "Specify which draft: an APPG/private member's draft was submitted in July 2022; earlier PH-era drafts also existed but were not tabled. 'Has sat since 2022' is vague.",
+      "stale_check": "No stale issue; the bill still appeared untabled as of April 2026 reporting."
+    },
+    {
+      "claim": "Anwar's unity government has not tabled it.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.05,
+      "m_unknown": 0.35,
+      "source": "The Star, Nov 18 2025, reported Anwar said the Political Financing Bill was still undergoing stakeholder engagement before finalisation and tabling: https://www.thestar.com.my/news/nation/2025/11/18/political-financing-law-among-key-institutional-reform-bills-undergoing-stakeholder-engagement-says-anwar/ ; The Edge, Apr 3 2026, reported no clear legislative timeline, no draft bill and no indication when it will be tabled: https://theedgemalaysia.com/node/798592",
+      "correction": "State 'as of April 3, 2026, it had not been tabled' unless checking Parliament bill records directly.",
+      "stale_check": "High stale risk; this should be rechecked before publication because tabling could occur after Apr 3, 2026."
+    },
+    {
+      "claim": "Najib is convicted. Political financing reform is still unpassed.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0.05,
+      "m_unknown": 0.35,
+      "source": "BERNAMA, Dec 26 2025, for conviction: https://www.bernama.com/en/news.php?id=2506361 ; The Edge, Apr 3 2026, for political financing bill not tabled: https://theedgemalaysia.com/node/798592",
+      "correction": "Add dates: Najib was convicted on Dec 26, 2025; political financing legislation remained untabled as reported on Apr 3, 2026.",
+      "stale_check": "Political financing status may become stale if Parliament tables or passes a bill."
+    },
+    {
+      "claim": "Connected elites across communities benefit. Vulnerable households, many women-led, carry the cost.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.05,
+      "m_unknown": 0.75,
+      "source": "UN Malaysia/UNICEF, July 2024, supports vulnerability of female-headed households but not the full causal allocation of 1MDB costs: https://malaysia.un.org/en/273736-living-edge-increased-cost-living-adds-pressure-low-income-urban-families",
+      "correction": "Separate the supported vulnerability claim from the unverified causal claim that women-led households carry the fiscal cost of 1MDB debt.",
+      "stale_check": "No stale issue; evidence gap remains."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The trial heard 76 witnesses",
+      "why": "The witness count was not traced to a final judgment, transcript, or official judiciary document.",
+      "primary_source": "No primary source found; secondary reference only: https://ground.news/article/former-malaysian-leader-najib-razak-sentenced-to-15-years-and-hefty-fine-in-1mdb-corruption-trial_184ea9"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "RM42 billion paid in 1MDB debt servicing",
+      "why": "MOF reporting says RM42.17 billion was channelled for debt repayments and company commitments, not purely 'debt servicing'.",
+      "primary_source": "BERNAMA citing MOF parliamentary reply, Aug 13 2025: https://www.bernama.com/en/news.php?id=2456412"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "RM24.46 billion still outstanding; RM9.02 billion in sukuk runs to 2039. More than a third of the 2026 education budget.",
+      "why": "The 'more than a third' comparison is only true for RM24.46 billion against the education allocation, not for RM9.02 billion; the sentence risks attaching the comparison to the wrong number.",
+      "primary_source": "Supply Act 2026: https://www.mof.gov.my/portal/pdf/budget/A1781_SUPPLY_ACT_2026.pdf ; BERNAMA/MOF debt figure: https://bernama.com/en/news.php?id=2496226"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "PH, BN, PN, GPS, GRS: every major coalition runs on patronage. None will dismantle it voluntarily.",
+      "why": "This is a sweeping claim about all major coalitions and future intent. Sources support concerns about political appointments and patronage culture, but not this universal factual conclusion.",
+      "primary_source": "IDEAS statement on political appointments: https://www.ideas.org.my/wp-content/uploads/2025/05/27052025_PoliticalAppointments_MediaStatement.docx.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "B40 women-led households feel it in shrinking social safety nets.",
+      "why": "Female-headed household vulnerability is supported, but the direct causal link from 1MDB debt servicing to shrinking safety nets for this group was not verified.",
+      "primary_source": "World Bank Malaysia social assistance page: https://www.worldbank.org/en/country/malaysia/publication/social-assistance-in-malaysia-who-benefits-and-who-misses-out ; UN Malaysia/UNICEF: https://malaysia.un.org/en/273736-living-edge-increased-cost-living-adds-pressure-low-income-urban-families"
+    }
+  ],
+  "omitted_facts": [
+    "MOF said RM31.2 billion related to 1MDB and SRC had been recovered as of Sept 30, 2025, and AA MKA funds were used only to repay debts and meet existing commitments: https://bernama.com/en/news.php?id=2496226",
+    "MOF said the RM24.46 billion outstanding figure includes RM15.44 billion in shareholder advances from MOF and Minister of Finance Incorporated, not only market debt: https://bernama.com/en/news.php?id=2496226",
+    "MOF said RM42.17 billion channelled to 1MDB as of July 31, 2025 comprised RM28.93 billion principal repayment and RM13.24 billion interest payments and company commitments: https://www.bernama.com/en/news.php?id=2456412",
+    "Supply Act 2026 was gazetted Dec 31, 2025, with Ministry of Education operating allocation of RM59.884 billion; headline reports of RM66.2 billion include broader budget allocation: https://www.mof.gov.my/portal/pdf/budget/A1781_SUPPLY_ACT_2026.pdf",
+    "Anwar said in November 2025 that the Political Financing Bill was still undergoing stakeholder engagement, alongside Ombudsman and FOI bills: https://www.thestar.com.my/news/nation/2025/11/18/political-financing-law-among-key-institutional-reform-bills-undergoing-stakeholder-engagement-says-anwar/"
+  ],
+  "source_assessment": "The original analysis cites only related T4A issues, which are not primary sources and create circular sourcing. It does not cite the High Court judgment, judiciary press summaries, MOF parliamentary replies, the Supply Act 2026, Parliament bill records, or independent social protection evidence. Institutional range is very narrow: no primary court document for the final verdict, no direct Parliament record for the political financing bill, no opposition or coalition responses, and no community or gender-focused evidence for the B40 women-led household claim.",
+  "overall_assessment": "The core legal and fiscal storyline is broadly plausible and mostly supported by contemporaneous court reporting and MOF-linked figures, but the analysis needs tighter sourcing and wording. The strongest facts are the conviction, 25 charges, statutory fine logic, and 1MDB debt figures. The weakest parts are causal social claims, the universal patronage claim, the witness count, and ambiguous comparisons involving RM42 billion, RM24.46 billion, RM9.02 billion and the education budget. Publication should add primary-source citations and soften or remove unsupported causal and universal claims."
+}

@@ -1,0 +1,283 @@
+{
+  "factual_accuracy_score": 48,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "The monthly subsidised RON95 quota under BUDI95 drops from 300 to 200 litres on 1 April 2026.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Malaysia Ministry of Finance press citation, 26 March 2026, https://www.mof.gov.my/portal/en/news/press-citations/subsidies-under-ron95-budi-diesel-hit-rm4-bln-monthly-mof",
+      "correction": "Accurate, but should state the measure was announced as temporary.",
+      "stale_check": "No stale issue for the April 1 implementation; as of 27 April 2026 Bernama reported the 200-litre quota was still maintained."
+    },
+    {
+      "claim": "Government says 90% of users consume under 200 litres.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0,
+      "m_unknown": 0.35,
+      "source": "Malaysia Ministry of Finance press release, 26 March 2026, https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter",
+      "correction": "MOF said nearly 90% of eligible users consume less than 200 litres per month and average use is around 100 litres. The statement does not publish the underlying dataset or method.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Subsidised price stays at RM1.99/litre.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0,
+      "m_unknown": 0.25,
+      "source": "Malaysia Ministry of Finance press citation, 26 March 2026, https://www.mof.gov.my/portal/en/news/press-citations/subsidies-under-ron95-budi-diesel-hit-rm4-bln-monthly-mof; MOF price update, 15 April 2026, https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen",
+      "correction": "Accurate for BUDI95 eligible subsidised RON95 through the checked MOF updates.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Above-quota purchases cost market rate.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0,
+      "m_unknown": 0.35,
+      "source": "BUDI95 individual FAQ, updated 28 September 2025, https://www.budi95.gov.my/assets/pdfs/FAQ_BUDI95_Individu.pdf",
+      "correction": "The official FAQ says purchases after the BUDI95 balance is exhausted are charged at pump price, and unsubsidised RON95 is set by MOF using the Automatic Pricing Mechanism.",
+      "stale_check": "The FAQ predates the April 2026 quota cut from 300 to 200 litres, but the above-quota pricing mechanism remains consistent with later MOF price updates."
+    },
+    {
+      "claim": "The subsidy bill has reached RM4 billion per month.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "Malaysia Ministry of Finance press citation, 26 March 2026, https://www.mof.gov.my/portal/en/news/press-citations/subsidies-under-ron95-budi-diesel-hit-rm4-bln-monthly-mof; MOF price update, 15 April 2026, https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen",
+      "correction": "On 26 March MOF estimated petrol and diesel subsidies could rise to around RM4 billion per month. By 15 April MOF estimated total subsidies at about RM7 billion per month, with RON95 alone about RM4 billion and diesel about RM3 billion. The analysis should specify date, scope, and that these were estimates.",
+      "stale_check": "Yes. A 15 April 2026 MOF update superseded the 26 March RM4 billion petrol-and-diesel estimate."
+    },
+    {
+      "claim": "RON95 stays at RM1.99. The government says 90% of users won't notice.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0,
+      "m_unknown": 0.35,
+      "source": "Malaysia Ministry of Finance press release, 26 March 2026, https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter",
+      "correction": "Use MOF's narrower wording: nearly 90% of eligible users consume less than 200 litres per month and will not be affected by the ceiling change.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The 90% figure has no published methodology, sample period, or source. It is a government assertion, not a verified statistic.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0,
+      "m_unknown": 0.4,
+      "source": "Malaysia Ministry of Finance press release, 26 March 2026, https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter; MOF statement, 7 April 2026, https://mof.gov.my/portal/ms/berita/siaran-media/dakwaan-permohonan-tambahan-budi95-tidak-benar-had-200-liter-kekal",
+      "correction": "The claim is fair based on the checked MOF releases: they cite 'data' but do not publish methodology, sample period, denominator, or dataset.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Above-quota fuel costs 68% more.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "Malaysia Ministry of Finance price update, 25 March 2026, https://www.mof.gov.my/portal/en/news/press-citations/ron97-unsubsidised-ron95-retail-prices-rise-by-60-sen-peninsular-diesel-up-80-sen-mof; MOF price update, 15 April 2026, https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen",
+      "correction": "From 26 March to 1 April 2026, unsubsidised RON95 was RM3.87 versus RM1.99, about 94.5% higher. From 16 to 22 April 2026, unsubsidised RON95 was RM4.02, about 102% higher. I could not verify a 68% premium from MOF price notices.",
+      "stale_check": "No. The 68% figure is not supported by the checked MOF price updates around implementation."
+    },
+    {
+      "claim": "The burden falls on those who drive farthest with the fewest alternatives.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "No primary source found that directly quantifies burden by distance driven and transport alternatives under the April 2026 quota cut.",
+      "correction": "Frame as analysis or hypothesis unless supported by travel-distance, income, location, and vehicle-use data.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "Rural B40 commuters, plantation workers and gig riders have no public-transport fallback.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.35,
+      "m_unknown": 0.4,
+      "source": "Malaysia Ministry of Transport bus services page, https://www.mot.gov.my/en/land/infrastructure/bus-services; MOT land programmes page, https://www.mot.gov.my/en/land/programmes",
+      "correction": "The absolute claim 'no public-transport fallback' is too broad. MOT says bus services remain a main public transport mode and that the Interim Stage Bus Support Fund exists especially to prevent bus services in rural areas from terminating. A narrower claim about weak, uneven, or inadequate coverage would need local route and frequency data.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "T20 with larger cars benefit most.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.15,
+      "m_unknown": 0.5,
+      "source": "World Bank Malaysia discussion, https://blogs.worldbank.org/en/eastasiapacific/will-rising-tide-lift-all-boats; IMF fuel subsidy topic page, https://www.imf.org/en/Topics/climate-change/energy-subsidies",
+      "correction": "Primary/authoritative sources support the broader proposition that fuel subsidies disproportionately benefit higher-income households, but the analysis does not verify the specific 'larger cars' mechanism or whether T20 benefit most under the capped BUDI95 design.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Indonesia paired identical subsidy cuts with direct cash transfers.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.65,
+      "m_unknown": 0.25,
+      "source": "Indonesia Cabinet Secretariat, 4 July 2022, https://setkab.go.id/en/house-of-representatives-approves-adjustment-of-subsidy-compensation-for-energy-sector/; Indonesia Ministry of Social Affairs, 2 September 2022, https://kemensos.go.id/en/latest-news/social-minister/increasing-purchasing-power-of-poor-families-ministry-of-social-affairs-distributes-blt-bbm",
+      "correction": "Indonesia did use direct cash assistance connected to fuel-subsidy reform, including BLT BBM. I could not verify that the cuts were 'identical' to Malaysia's BUDI95 monthly quota cut; that word should be removed.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia offers no transitional support.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.35,
+      "m_unknown": 0.35,
+      "source": "BUDI95 FAQ, updated 28 September 2025, https://www.budi95.gov.my/assets/pdfs/FAQ_BUDI95_Individu.pdf; MOF price update, 15 April 2026, https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen",
+      "correction": "For BUDI95 individual RON95 users, I found no direct transitional cash compensation. But Malaysia retained an 800-litre e-hailing quota and increased BUDI Diesel cash assistance to RM400 for April 2026. The claim should be narrowed to 'no direct transitional cash support for ordinary BUDI95 RON95 users was identified.'",
+      "stale_check": "Yes. The 15 April 2026 MOF update added relevant context on increased BUDI Diesel assistance."
+    },
+    {
+      "claim": "India targeted LPG via direct transfers.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0,
+      "m_unknown": 0.25,
+      "source": "Government of India Press Information Bureau, 2 January 2019, https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1557897",
+      "correction": "Accurate: India's PAHAL/DBTL scheme transfers authorised LPG subsidy directly to consumers' bank accounts.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Thailand stabilised diesel.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0,
+      "m_unknown": 0.4,
+      "source": "International Energy Agency policy database on Thailand consumer support package, https://www.iea.org/policies/16710-consumer-support-package; Thailand EPPO Annual Report 2022, https://www.eppo.go.th/images/Infromation_service/EppoAnnualReport/EppoAnnualReport2022.pdf",
+      "correction": "Broadly accurate, but should specify mechanism and period: Thailand used diesel price caps, excise-tax reductions, and the Oil Fuel Fund during the 2022 fuel-price shock.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia's cut arrives two days after Hari Raya price controls end.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "Bernama report citing KPDN, 12 March 2026, https://www.bernama.com/en/news.php/general/news.php?id=2533631; The Vibes report on KPDN scheme, 14 March 2026, https://www.thevibes.com/articles/news/120701/ministry-enforces-festive-price-control-scheme-for-2026-hari-raya-aidilfitri-season",
+      "correction": "The Hari Raya Aidilfitri 2026 festive maximum price scheme was reported as running from 14 to 28 March 2026. The BUDI95 cut began on 1 April 2026, four calendar days after 28 March, not two days after.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Sixty years of car-centric planning left rural and East Malaysia with zero public transport.",
+      "status": "INCORRECT",
+      "m_true": 0,
+      "m_false": 0.75,
+      "m_unknown": 0.25,
+      "source": "Malaysia Ministry of Transport, Malaysia Transportation Statistics 2023, https://www.mot.gov.my/en/Statistik%20Tahunan%20Pengangkutan/Transport%20Statistics%20Malaysia%202023.pdf; MOT bus services page, https://www.mot.gov.my/en/land/infrastructure/bus-services",
+      "correction": "The 'zero public transport' claim is false as an absolute statement. MOT statistics include rural air services in Sabah and Sarawak, and MOT/APAD recognise bus services and rural bus-support programmes. A defensible claim would need to say service is limited, uneven, or inadequate in many areas, with route/frequency evidence.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Outside the Klang Valley: no buses, no trains, no alternatives.",
+      "status": "INCORRECT",
+      "m_true": 0,
+      "m_false": 0.85,
+      "m_unknown": 0.15,
+      "source": "Malaysia Ministry of Transport bus services page, https://www.mot.gov.my/en/land/infrastructure/bus-services; MOT ongoing rail projects page, https://www.mot.gov.my/en/land/development/ongoing-rail-project; APAD terminal licensing page, https://www.apad.gov.my/index.php?id=225&option=com_sppagebuilder&view=page",
+      "correction": "This is plainly overbroad. Malaysia has bus services and terminals outside the Klang Valley, Rapid Penang, intercity express buses, rail services, and ongoing rail projects. The analysis should replace this with a geographically specific access claim.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Women absorb shocks through trip rationing invisible in consumption data.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0,
+      "m_unknown": 0.9,
+      "source": "No primary Malaysian source found verifying this specific gendered effect for the BUDI95 April 2026 quota cut.",
+      "correction": "Treat as a hypothesis requiring survey, time-use, mobility, or qualitative evidence. Do not state as fact without sourcing.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "A country with no rural public transport can cut fuel access without first building alternatives.",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.4,
+      "m_unknown": 0.4,
+      "source": "Malaysia Ministry of Transport land programmes page, https://www.mot.gov.my/en/land/programmes; MOT bus services page, https://www.mot.gov.my/en/land/infrastructure/bus-services",
+      "correction": "The policy argument is legitimate, but the factual premise 'no rural public transport' is unsupported and contradicted by official material showing rural bus support and public bus services. Use 'limited rural public transport' only with supporting coverage data.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Reform without compensation, alternatives or a published basis for the '90% unaffected' claim is not reform. It is cost-shifting to those with the least voice.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.15,
+      "m_unknown": 0.5,
+      "source": "Malaysia Ministry of Finance press release, 26 March 2026, https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter; BUDI95 FAQ, https://www.budi95.gov.my/assets/pdfs/FAQ_BUDI95_Individu.pdf",
+      "correction": "The statement mixes opinion with factual premises. It is accurate that MOF did not publish the 90% methodology in the checked releases. It is too broad to say there are no alternatives or no compensation without specifying ordinary BUDI95 RON95 users and acknowledging e-hailing quota and BUDI Diesel cash support.",
+      "stale_check": "No stale issue found."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Above-quota fuel costs 68% more.",
+      "why": "The checked MOF prices imply about 94.5% more from 26 March to 1 April 2026 and about 102% more from 16 to 22 April 2026, not 68%.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/ron97-unsubsidised-ron95-retail-prices-rise-by-60-sen-peninsular-diesel-up-80-sen-mof"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Indonesia paired identical subsidy cuts with direct cash transfers.",
+      "why": "Indonesia used fuel-related cash assistance, but I found no primary source showing an identical monthly quota cut comparable to BUDI95.",
+      "primary_source": "https://kemensos.go.id/en/latest-news/social-minister/increasing-purchasing-power-of-poor-families-ministry-of-social-affairs-distributes-blt-bbm"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Malaysia offers no transitional support.",
+      "why": "No direct BUDI95 cash support for ordinary RON95 users was found, but the framing omits e-hailing's retained 800-litre quota and increased BUDI Diesel cash assistance.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Rural B40 commuters, plantation workers and gig riders have no public-transport fallback.",
+      "why": "This is a specific population-impact claim without primary evidence in the analysis and is too absolute.",
+      "primary_source": "https://www.mot.gov.my/en/land/programmes"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Sixty years of car-centric planning left rural and East Malaysia with zero public transport.",
+      "why": "Official transport sources contradict the absolute 'zero public transport' claim.",
+      "primary_source": "https://www.mot.gov.my/en/Statistik%20Tahunan%20Pengangkutan/Transport%20Statistics%20Malaysia%202023.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Outside the Klang Valley: no buses, no trains, no alternatives.",
+      "why": "This is factually overbroad; official MOT/APAD sources document bus services, terminals, and rail/public transport outside the Klang Valley.",
+      "primary_source": "https://www.mot.gov.my/en/land/infrastructure/bus-services"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Women absorb shocks through trip rationing invisible in consumption data.",
+      "why": "No primary source was found verifying this specific gendered effect for the April 2026 BUDI95 quota cut.",
+      "primary_source": "No primary source found"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "The subsidy bill has reached RM4 billion per month.",
+      "why": "The March 26 RM4 billion figure was an estimate for petrol and diesel subsidies; by April 15 MOF estimated total subsidies at about RM7 billion per month, with RON95 alone about RM4 billion.",
+      "primary_source": "https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "T4A related issue 1951; T4A related issue 1953; T4A related issue 1954; T4A related issue 1964",
+      "why": "The analysis cites only internal T4A related issues, which are circular and not primary sources for publication-grade fact checking.",
+      "primary_source": "Not applicable"
+    }
+  ],
+  "omitted_facts": [
+    "MOF described the 200-litre adjustment as a temporary measure until global supply conditions stabilise: https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter",
+    "MOF said the additional quota cap for e-hailing operators would remain at 800 litres per month: https://www.mof.gov.my/portal/en/news/press-citations/subsidies-under-ron95-budi-diesel-hit-rm4-bln-monthly-mof",
+    "MOF said BUDI Diesel cash assistance was increased to RM400 per month for April 2026, with additional allocation of RM35 million: https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen",
+    "MOF's 15 April 2026 update estimated total subsidies at about RM7 billion per month, with RON95 about RM4 billion and diesel about RM3 billion: https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen",
+    "The official BUDI95 FAQ says purchases after the BUDI95 balance is exhausted are charged at pump price and that unsubsidised RON95 follows the Automatic Pricing Mechanism: https://www.budi95.gov.my/assets/pdfs/FAQ_BUDI95_Individu.pdf",
+    "MOT states bus services are a main public transport mode in Malaysia and identifies six bus categories, contradicting claims of no buses outside Klang Valley: https://www.mot.gov.my/en/land/infrastructure/bus-services",
+    "MOT says the Interim Stage Bus Support Fund was established especially so bus companies, including in rural areas, do not terminate services because of costs and low passengers: https://www.mot.gov.my/en/land/programmes"
+  ],
+  "source_assessment": "The original analysis cites only four internal T4A related issues and no primary sources. That is circular sourcing and does not meet publication-grade verification. The checked claims required MOF, BUDI95 FAQ, MOT/APAD, Government of India PIB, Indonesia Cabinet Secretariat/Ministry of Social Affairs, and IEA/Thailand official material. The analysis also lacks community voices, transport-access datasets, rural route evidence, gendered mobility evidence, and opposition or civil-society perspectives. Its source diversity is therefore extremely weak.",
+  "overall_assessment": "The core policy facts are partly right: BUDI95 was temporarily cut from 300 to 200 litres from 1 April 2026, RM1.99 was retained for subsidised RON95, and MOF asserted nearly 90% of eligible users consume under 200 litres. However, several high-impact claims are inaccurate or overclaimed, especially the 68% price jump, 'zero public transport', 'no buses, no trains, no alternatives', 'identical' Indonesia comparison, and the simplified 'no transitional support' framing. The piece is usable only after substantial correction, narrowing of claims, and addition of primary sources."
+}

@@ -1,0 +1,229 @@
+{
+  "factual_accuracy_score": 62,
+  "source_diversity_estimate": 0.1,
+  "claims": [
+    {
+      "claim": "The Littoral Combat Ship programme's total cost rose from RM6 billion to RM11.22 billion.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "Malaysia Ministry of Defence, 28 Jan 2026, states total LCS project value is RM11.2 billion: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1 ; Boustead media release, 17 Jul 2014, states RM9 billion contract and 16 Dec 2011 LOA: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/ ; PAC DR.13/2022 states RM9.128 billion contract: https://parlimen.gov.my/pac/review/docs-257-312.pdf",
+      "correction": "Primary sources verify RM9 billion/RM9.128 billion as the signed contract figure and RM11.2/RM11.22 billion as the later project value. The RM6 billion starting point appears in secondary reporting and political statements, but I could not independently verify it from a primary document within reasonable effort. Safer wording: 'The signed contract was RM9 billion/RM9.128 billion and later rose to about RM11.2/RM11.22 billion; some reports cite an earlier RM6 billion allocation.'",
+      "stale_check": "No stale-change issue found; latest official figure checked on 2026-05-17 remains about RM11.2 billion."
+    },
+    {
+      "claim": "Maharaja Lela began sea trials in January 2026.",
+      "status": "MISLEADING",
+      "m_true": 0.5,
+      "m_false": 0.2,
+      "m_unknown": 0.3,
+      "source": "Malaysia Ministry of Defence, 28 Jan 2026: shipyard-level sea trials began 20 Jan 2026 and first sea-going was scheduled for 28 Jan 2026; full sea trials involving combat systems were reported by the minister as starting April 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "Distinguish 'shipyard-level sea trials began on 20 Jan 2026', 'first sea-going on 28 Jan 2026', and full combat-system sea trials expected in April 2026.",
+      "stale_check": "No stale issue; this was a January 2026 update."
+    },
+    {
+      "claim": "Maharaja Lela began sea trials on 28 January 2026.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.45,
+      "m_unknown": 0.2,
+      "source": "Malaysia Ministry of Defence, 28 Jan 2026: shipyard-level sea trials began 20 Jan 2026; first sea-going scheduled 28 Jan 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "Use 'first sea-going on 28 Jan 2026' rather than saying sea trials began that day.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "First delivery is now scheduled for December 2026.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Malaysia Ministry of Defence, 28 Jan 2026: LCS 1 handover revised to December 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "",
+      "stale_check": "No later primary update found changing the December 2026 target."
+    },
+    {
+      "claim": "The programme was reduced from six ships to five.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "PAC media statement, 9 Oct 2023, states government decided to reduce LCS from six to five because LCS 6 block construction had not started and purchased equipment could be used on other LCS: https://www.parlimen.gov.my/images/webuser/Pac/kenyataan%20media/2023/BM/Kenyataan%20Media%20PAC%2009102023.doc.pdf ; CNA reported RMN agreed to reduction, 30 Jan 2023: https://www.channelnewsasia.com/asia/malaysia-navy-vessels-order-reduced-five-units-warship-procurement-defence-3241096",
+      "correction": "",
+      "stale_check": "No later primary update found reversing the reduction."
+    },
+    {
+      "claim": "LCS cost has reached RM11.22 billion, and delivery is finally arriving, more than a decade late.",
+      "status": "INCORRECT",
+      "m_true": 0.25,
+      "m_false": 0.55,
+      "m_unknown": 0.2,
+      "source": "PAC DR.13/2022 lists original contractual LCS1 delivery as April 2019; Ministry of Defence says revised delivery is December 2026: https://parlimen.gov.my/pac/review/docs-257-312.pdf ; https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "From the contractual April 2019 delivery date to December 2026, the first ship is about 7 years and 8 months late, not more than a decade late. It is about 15 years after the 16 Dec 2011 LOA, but that is elapsed programme time, not lateness against the delivery deadline.",
+      "stale_check": "No stale issue; December 2026 is the current target checked."
+    },
+    {
+      "claim": "Original 2011 budget was RM6 billion; the ceiling escalated to RM9 billion late that year and finally to RM11.22 billion.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "Boustead, 17 Jul 2014, confirms RM9 billion contract and 16 Dec 2011 LOA: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/ ; PAC DR.13/2022 gives contract value RM9.128 billion: https://parlimen.gov.my/pac/review/docs-257-312.pdf ; Ministry of Defence, 28 Jan 2026, gives RM11.2 billion total project value: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "The RM9 billion/RM9.128 billion and RM11.2/RM11.22 billion figures are supported. The RM6 billion 'original 2011 budget' needs a primary source or should be caveated.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "PAC's 2022 report documented severe mismanagement and financial issues at Boustead Naval Shipyard.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "PAC DR.13/2022, tabled 4 Aug 2022, states no LCS had been completed despite RM6.083 billion paid, records direct negotiation, contractual delays, and cost-overrun issues: https://parlimen.gov.my/pac/review/docs-257-312.pdf ; PAC press statement, 4 Aug 2022: https://www.parlimen.gov.my/images/webuser/Pac/kenyataan%20media/2022/BI/Kenyataan%20Media%20YB%20Pengerusi%20PAC%2004%20Ogos%20%28Pembentangan%20Laporan%20Perolehan%20Kapal%20LCS%20TLDM%29%20_%20eng.pdf",
+      "correction": "The phrase 'severe mismanagement' is a fair characterization only if tied to the PAC's concrete findings: no ships delivered, RM6.083 billion paid, delays, direct negotiation, design/procurement governance failures, and cost overrun.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "MOF Inc acquired and renamed Boustead Naval Shipyard as Lumut Naval Shipyard in 2024.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0.05,
+      "m_unknown": 0.2,
+      "source": "Lumut Naval Shipyard official About Us page says as of January 2024 it became owned by Ocean Sunshine Berhad, a wholly owned entity under MOF Inc, and adopted the name Lumut Naval Shipyard: https://www.mylunas.com.my/about-us/ ; PAC media statement, 29 Feb 2024, says BNS acquisition by Ocean Sunshine and rename to LUNAS: https://parlimen.gov.my/images/webuser/Pac/kenyataan%20media/2024/BI/29.02.2024.pdf",
+      "correction": "More precise wording: 'BNS was acquired via MOF Inc-linked Ocean Sunshine Berhad and rebranded as Lumut Naval Shipyard/LUNAS.'",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "Multiple senior officers and former Boustead directors have faced MACC investigation and criminal proceedings.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.45,
+      "m_unknown": 0.25,
+      "source": "MACC statement reported 11 Aug 2022 said investigation papers involving several individuals were submitted to AGC with recommendations for charges: https://www.thestar.com.my/news/nation/2022/08/11/macc-investigation-papers-on-lcs-case-submitted-to-agc ; Bernama, 16 Aug 2022, confirms one former BNS managing director and former RMN chief, Ahmad Ramli Mohd Nor, was charged: https://www.bernama.com/en/news.php?id=2111345",
+      "correction": "Primary/near-primary reporting verifies MACC investigations involving several individuals, but only one named LCS-linked criminal proceeding was verified: Ahmad Ramli Mohd Nor, former BNS managing director and former navy chief. 'Multiple ... criminal proceedings' is not supported.",
+      "stale_check": "The criminal case later received a DNAA on 12 Mar 2025 because the accused was found unfit for trial; the analysis should reflect that if written after that date."
+    },
+    {
+      "claim": "The 2022 PAC findings and subsequent referrals form the basis for ongoing accountability cases.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.35,
+      "m_unknown": 0.4,
+      "source": "PAC DR.13/2022 tabled findings on 4 Aug 2022: https://parlimen.gov.my/pac/review/docs-257-312.pdf ; Bernama, 16 Aug 2022, reports charges against Ahmad Ramli; Astro Awani, 12 Mar 2025, reports DNAA: https://www.bernama.com/en/news.php?id=2111345 ; https://www.astroawani.com/berita-malaysia/projek-lcs-bekas-pengarah-urusan-bns-lepas-tanpa-bebas-tuduhan-pecah-amanah-rm21-juta-512128",
+      "correction": "The analysis should not imply PAC findings legally caused or form the basis of cases unless sourced. It can say PAC findings preceded MACC/AGC action and one former BNS MD/former navy chief was charged, later receiving a DNAA.",
+      "stale_check": "Important stale issue: as of 12 Mar 2025 the named prosecution had a discharge not amounting to acquittal, so describing it as simply ongoing is outdated unless a later reinstatement is verified."
+    },
+    {
+      "claim": "Even with first delivery imminent, the Royal Malaysian Navy has spent more than a decade waiting for vessels Singapore and Indonesia commissioned years ago.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "Boustead confirms LOA dated 16 Dec 2011 and RMN LCS contract: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/ ; Singapore MINDEF speech, 16 Jan 2009, at commissioning of RSS Stalwart and RSS Supreme: https://www.mindef.gov.sg/news-and-events/latest-releases/2009jan16-speeches-00214/ ; Indonesian KRI Raden Eddy Martadinata commissioned 7 Apr 2017 is supported by Indonesian defence/naval reporting but I did not locate a clean Indonesian official primary page within reasonable effort.",
+      "correction": "The Singapore comparison is verified. The Indonesia comparison is plausible and widely reported, but should be sourced to an Indonesian official or defence ministry/navy page. Also 'first delivery imminent' is subjective; as of 17 May 2026, delivery was still scheduled for December 2026.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The capability gap during the delay forms the most damaging legacy of the procurement failure.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0,
+      "m_unknown": 0.8,
+      "source": "No primary source found ranking this as the 'most damaging legacy'. PAC DR.13/2022 documents delay and non-delivery but does not establish this comparative judgment: https://parlimen.gov.my/pac/review/docs-257-312.pdf",
+      "correction": "Frame as analysis or opinion, not fact: 'The delay created a capability gap for RMN.'",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "The programme is no longer 'zero ships'.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.25,
+      "m_unknown": 0.35,
+      "source": "Ministry of Defence, 28 Jan 2026, says LCS1 has been launched and is in installation/integration and testing phase, but delivery remains December 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "If 'zero ships' means delivered/commissioned ships, the programme was still zero delivered ships as of the Jan 2026 update. Safer: 'The programme is no longer static: LCS1 is afloat and testing, but no ship has yet been delivered.'",
+      "stale_check": "No later primary delivery confirmation found by 2026-05-17."
+    },
+    {
+      "claim": "It is 'first ship 15 years late at twice the budget'.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.7,
+      "m_unknown": 0.15,
+      "source": "Boustead says LOA was 16 Dec 2011 and contract signed 17 Jul 2014 for RM9 billion; PAC says contractual first delivery was April 2019; Ministry of Defence says revised delivery December 2026 and total project value RM11.2 billion: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/ ; https://parlimen.gov.my/pac/review/docs-257-312.pdf ; https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+      "correction": "The first ship is about 7 years and 8 months late against the contractual April 2019 delivery date. RM11.2 billion is about 1.23 times RM9.128 billion and about 1.87 times RM6 billion, not cleanly 'twice' unless the RM6 billion baseline is proven and rounded.",
+      "stale_check": "No stale issue."
+    },
+    {
+      "claim": "The accountability test is whether the 2022 PAC findings produce convictions.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.25,
+      "m_unknown": 0.45,
+      "source": "Bernama, 16 Aug 2022, reports Ahmad Ramli charged and pleaded not guilty; Astro Awani, 12 Mar 2025, reports DNAA because he was unfit for trial: https://www.bernama.com/en/news.php?id=2111345 ; https://www.astroawani.com/berita-malaysia/projek-lcs-bekas-pengarah-urusan-bns-lepas-tanpa-bebas-tuduhan-pecah-amanah-rm21-juta-512128",
+      "correction": "This is a normative claim, but factual context should add that the only named LCS-linked prosecution I verified had a DNAA in March 2025, not a conviction.",
+      "stale_check": "If written after 12 Mar 2025, it is missing a material legal development."
+    },
+    {
+      "claim": "RM11.22 billion and 15 years for the first hull is the real benchmark.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.25,
+      "m_unknown": 0.35,
+      "source": "Ministry of Defence gives RM11.2 billion and December 2026 delivery; Boustead confirms LOA dated 16 Dec 2011: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1 ; https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/",
+      "correction": "It is about 15 years from LOA to scheduled first delivery, but the signed contract was in July 2014 and the original contractual first delivery was April 2019. Avoid implying the ship is 15 years late.",
+      "stale_check": "No stale issue."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "delivery is finally arriving, more than a decade late",
+      "why": "Against the contractual April 2019 delivery date, December 2026 is about 7 years and 8 months late, not more than a decade late.",
+      "primary_source": "PAC DR.13/2022: https://parlimen.gov.my/pac/review/docs-257-312.pdf ; Ministry of Defence 28 Jan 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Original 2011 budget was RM6 billion",
+      "why": "I found secondary reports citing RM6 billion, but not a primary government or contract document verifying it. Primary sources found verify RM9 billion/RM9.128 billion as the contract figure.",
+      "primary_source": "Boustead 17 Jul 2014: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/ ; PAC DR.13/2022: https://parlimen.gov.my/pac/review/docs-257-312.pdf"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Maharaja Lela began sea trials on 28 January 2026",
+      "why": "Official wording separates shipyard-level sea trials beginning 20 Jan 2026 from first sea-going on 28 Jan 2026, and later full sea trials involving combat systems.",
+      "primary_source": "Ministry of Defence 28 Jan 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Multiple senior officers and former Boustead directors have faced MACC investigation and criminal proceedings.",
+      "why": "MACC investigations involving several individuals are supported, but I verified only one named criminal proceeding tied to the LCS case: Ahmad Ramli Mohd Nor. The plural 'criminal proceedings' overstates the verified record.",
+      "primary_source": "MACC investigation reported 11 Aug 2022: https://www.thestar.com.my/news/nation/2022/08/11/macc-investigation-papers-on-lcs-case-submitted-to-agc ; Bernama court report 16 Aug 2022: https://www.bernama.com/en/news.php?id=2111345"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "The programme is no longer 'zero ships'.",
+      "why": "The first ship is afloat and testing, but official sources still place delivery in December 2026. If measuring ships delivered to RMN, the programme remained zero delivered ships at the time of the cited update.",
+      "primary_source": "Ministry of Defence 28 Jan 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "first ship 15 years late at twice the budget",
+      "why": "The first ship is not 15 years late against the contractual delivery schedule, and RM11.2 billion is not exactly twice the verified RM9/RM9.128 billion contract value. It is only approximately twice an unverified RM6 billion baseline.",
+      "primary_source": "Boustead 17 Jul 2014: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/ ; PAC DR.13/2022: https://parlimen.gov.my/pac/review/docs-257-312.pdf ; Ministry of Defence 28 Jan 2026: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The capability gap during the delay forms the most damaging legacy of the procurement failure.",
+      "why": "The delay and capability implications are supportable, but no primary source was found ranking this as the most damaging legacy.",
+      "primary_source": "PAC DR.13/2022: https://parlimen.gov.my/pac/review/docs-257-312.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "The Ministry of Defence said that as of 25 Dec 2025 the overall LCS project was 75.75% complete against 81.57% planned, and LCS1 was 82.9% complete. Source: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+    "The Ministry of Defence said current spending was about RM8.3 billion, or 74% of the RM11.2 billion contract value. Source: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+    "The official January 2026 update says shipyard-level sea trials began 20 Jan 2026, first sea-going was scheduled 28 Jan 2026, and delivery was delayed by about four months to December 2026. Source: https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1",
+    "The signed LCS contract was announced by Boustead on 17 Jul 2014 as RM9 billion for six vessels; the LOA was dated 16 Dec 2011. Source: https://boustead.com.my/boustead-naval-shipyard-signs-lcs-contract/",
+    "The named LCS-linked criminal case against former BNS managing director and former RMN chief Ahmad Ramli Mohd Nor reportedly received a discharge not amounting to acquittal on 12 Mar 2025 because he was found unfit for trial. Source: https://www.astroawani.com/berita-malaysia/projek-lcs-bekas-pengarah-urusan-bns-lepas-tanpa-bebas-tuduhan-pecah-amanah-rm21-juta-512128"
+  ],
+  "source_assessment": "The original analysis cites only two T4A related issues, which is circular and not an acceptable source base for publication-grade verification. It does not cite the Ministry of Defence, PAC report, PAC media statements, Boustead/BHIC corporate disclosures, LUNAS, MACC/AGC/court documents, or official Singapore/Indonesian naval sources. Political, legal, contractor, defence-user, and accountability perspectives are largely absent. Source diversity is therefore very low.",
+  "overall_assessment": "The analysis captures the broad story correctly: the LCS programme was delayed, reduced from six to five ships, rose to about RM11.2/RM11.22 billion, and LCS1 was moving into testing with delivery targeted for December 2026. However, it contains several publication-relevant accuracy problems: the RM6 billion baseline is not primary-verified, the sea-trial date is imprecise, 'more than a decade late' and '15 years late' are incorrect against the contractual delivery schedule, 'twice the budget' is overstated, and the accountability section omits the March 2025 DNAA in the named prosecution. It should be revised before publication."
+}
