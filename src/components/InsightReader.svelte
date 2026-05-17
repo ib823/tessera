@@ -31,6 +31,7 @@
     cards: Card[];
     stageScores?: { pa: number; ba: number; fc: number; sr: number; af?: number; ct?: number };
     finalScore?: number;
+    legacyAudit?: boolean;
   }
 
   interface Connection {
@@ -1079,6 +1080,12 @@
   <!-- Headline -->
   <div class="headline-area">
     <h1 class="headline">{issue.headline}</h1>
+    {#if issue.legacyAudit}
+      <div class="legacy-caveat" role="note" aria-label="Pre-pipeline issue notice">
+        <span class="legacy-caveat__icon" aria-hidden="true">&#9432;</span>
+        <span class="legacy-caveat__text">Pre-pipeline issue — primary sources for the claims below are not on file yet. The editorial review trail predates the current 4-stage pipeline. <a href="/disclaimer" class="legacy-caveat__link">Read more</a>.</span>
+      </div>
+    {/if}
   </div>
 
   <!-- Hero image -->
@@ -1410,6 +1417,32 @@
     text-wrap: balance;
     hyphens: manual;
   }
+
+  .legacy-caveat {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 4px 0 8px;
+    padding: 8px 10px;
+    background: var(--bg-sunken);
+    border-left: 3px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-micro);
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+  .legacy-caveat__icon {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--text-tertiary);
+  }
+  .legacy-caveat__text { flex: 1; }
+  .legacy-caveat__link {
+    color: var(--text-muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .legacy-caveat__link:hover { color: var(--text-secondary); }
 
   .card-area {
     flex: 1;

@@ -93,6 +93,9 @@
     {#if hasReaction}
       <span style="font-size:var(--text-micro);font-weight:700;color:var(--highlight-accent);background:var(--highlight-bg);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;">Highlighted</span>
     {/if}
+    {#if issue.legacyAudit}
+      <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size:var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;letter-spacing:0.02em;">Pre-pipeline</span>
+    {/if}
     <div style="flex:1;"></div>
   </div>
 

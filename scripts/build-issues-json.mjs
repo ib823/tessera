@@ -33,6 +33,7 @@ const feedSummaries = publishedIssues.map(issue => {
     sourceDate: issue.sourceDate || null,
     // Keep card structure for category derivation and card count, but strip body text
     cards: issue.cards.map(c => ({ t: c.t, lens: c.lens })),
+    legacyAudit: issue.legacyAudit === true ? true : undefined,
   };
 });
 

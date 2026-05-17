@@ -318,6 +318,12 @@
         </button>
       </div>
     </div>
+    {#if issue.legacyAudit}
+      <div role="note" aria-label="Pre-pipeline issue notice" style="display:flex;align-items:flex-start;gap:8px;margin:14px 0 0;padding:10px 12px;background:var(--bg-sunken);border-left:3px solid var(--border-subtle);border-radius:var(--radius-sm);font-size:var(--text-sm);line-height:1.5;color:var(--text-muted);max-width:62ch;">
+        <span aria-hidden="true" style="flex-shrink:0;font-weight:700;color:var(--text-tertiary);">&#9432;</span>
+        <span style="flex:1;">Pre-pipeline issue &mdash; primary sources for the claims below are not on file yet. The editorial review trail predates the current 4-stage pipeline. <a href="/disclaimer" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:2px;">Read more</a>.</span>
+      </div>
+    {/if}
     <p style="font-size: var(--text-reading-lg);color:var(--text-secondary);font-weight: 400;line-height:1.65;margin:16px 0 0;max-width:62ch;">{issue.context}</p>
 
     <div style="margin:24px -24px 0;overflow:hidden;background:var(--bg-sunken);border-radius: var(--radius-xl);">
