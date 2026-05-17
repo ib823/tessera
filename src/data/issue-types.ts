@@ -34,6 +34,20 @@ export interface Issue {
    * is verified against primary sources (research brief in engine/briefs/{slug}.md).
    */
   legacyAudit?: boolean;
+  /**
+   * Permanent retirement.
+   * `true` = the editorial premise was found to be factually false (e.g. claim
+   * direction reversed, fabricated institution, fabricated study). The issue
+   * cannot be rewritten — only retired. Retired issues are excluded from the
+   * build entirely: no entry in public/issues-feed.json, no public/issues/{id}.json,
+   * /issue/{id} returns 404. Always paired with `published: false`.
+   */
+  retired?: boolean;
+  /**
+   * Human-readable rationale for retirement. Surfaced only in source-of-truth
+   * (src/data/issues/{id}.json); not exposed to readers.
+   */
+  retiredReason?: string;
 }
 
 export const CARD_TYPES: Record<string, { label: string; color: string; bg: string }> = {

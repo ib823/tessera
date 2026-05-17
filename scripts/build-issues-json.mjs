@@ -14,7 +14,15 @@ const root = join(__dirname, '..');
 const issues = loadIssues();
 
 // --- Filter to published issues only for the feed ---
-const publishedIssues = issues.filter(i => i.published === true);
+// Retired issues (retired:true) are excluded entirely — no feed entry, no
+// per-issue JSON. /issue/{id} returns 404 because the reader fetch finds
+// no JSON. Retired implies the editorial premise was factually wrong and
+// the issue cannot be rewritten (e.g. claim reversal, fabricated study).
+const retiredIssues = issues.filter(i => i.retired === true);
+if (retiredIssues.length > 0) {
+  console.log(`Retired (excluded from build): ${retiredIssues.length} — ${retiredIssues.map(i => i.id).join(', ')}`);
+}
+const publishedIssues = issues.filter(i => i.published === true && i.retired !== true);
 console.log(`Issues: ${issues.length} total, ${publishedIssues.length} published`);
 
 // --- Feed summaries: strip card big/sub text ---
