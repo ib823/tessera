@@ -1,4 +1,4 @@
-# ISSUE 1993 — Malaysia's USD-Stablecoin Blind Spot: How Banning USDT On Licensed Exchanges Hid The Exposure Instead Of Removing It
+# ISSUE 1994 — Malaysia's USD-Stablecoin Blind Spot: How Banning USDT On Licensed Exchanges Hid The Exposure Instead Of Removing It
 
 ## ISSUE
 The Securities Commission Malaysia does not approve any USD-pegged
