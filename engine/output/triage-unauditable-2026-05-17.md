@@ -1,6 +1,6 @@
 # Unauditable Published Issue Triage — 2026-05-17
 
-Classifies the 72 published issues with zero engine artifacts into FALLBACK / LEGACY / ORPHAN categories, with per-category action recommendations.
+Classifies the 68 published issues with zero engine artifacts into FALLBACK / LEGACY / ORPHAN categories, with per-category action recommendations.
 
 ## Summary
 
@@ -8,8 +8,8 @@ Classifies the 72 published issues with zero engine artifacts into FALLBACK / LE
 |---|---:|---|
 | FALLBACK  | 34 | Keep — intentional content |
 | LEGACY    | 1 | Review — pre-pipeline content |
-| ORPHAN    | 37 | Investigate — unexpected state |
-| **Total** | **72** | |
+| ORPHAN    | 33 | Investigate — unexpected state |
+| **Total** | **68** | |
 
 ## FALLBACK (34)
 
@@ -60,7 +60,7 @@ Classifies the 72 published issues with zero engine artifacts into FALLBACK / LE
 |---|---|---|
 | 0146 | 2026-04-08 | Gig Workers Got SOCSO in 2025; Retirement Floor Still Missing |
 
-## ORPHAN (37)
+## ORPHAN (33)
 
 > INVESTIGATE. Published but in neither fallback rotation nor pipeline. Likely manually injected — needs verification. Options: (a) backfill artifacts, (b) unpublish pending review.
 
@@ -68,28 +68,28 @@ Classifies the 72 published issues with zero engine artifacts into FALLBACK / LE
 |---|---|---|
 | 1102 | 2026-04-08 | Subsidy Rationalisation Targets ~RM8 Billion Annual Savings; Delivery Mechanism Still Untested |
 | 1128 | 2026-04-08 | Gig Workers Bill 2025 Brings ~1.2 Million Into SOCSO; Retirement Coverage Still Missing |
-| 1181 | — | Subsidy Bill Reaches RM82B, One-Third of Federal Revenue |
+| 1181 | 2026-05-17 | Subsidy Bill Reaches RM82B, One-Third of Federal Revenue |
 | 1190 | 2026-04-08 | EPF Flexible Account 3 Withdrawals Reach RM14.79B in 15 Months |
 | 1201 | 2026-04-08 | Malaysia's 2024 Deficit Came In at 4.1%; 2025 Forecast Risks Slipping Past the 3.8% Target |
-| 1208 | — | Corruption Costs Malaysia RM47B Annually, 3% of GDP |
+| 1208 | 2026-05-17 | Corruption Costs Malaysia RM47B Annually, 3% of GDP |
 | 1229 | 2026-04-08 | Kampung Baru Master Redevelopment Still Stalled After 40 Years |
 | 1241 | 2026-04-08 | Suaram: Up to 28% of SOSMA Detainees Released Without Charge, From Nearly 7,000 Arrests Since 2018 |
 | 1247 | 2026-04-08 | SUHAKAM Estimates Half a Million to One Million Stateless Children in Sabah |
 | 1265 | 2026-04-08 | Article 15A Citizenship Applications Are Decided Without Published Criteria; Many Wait Years |
 | 1267 | 2026-04-08 | Malaysia Has 2.5 Million Documented Migrant Workers, and Persistent Tier 2 Trafficking Concerns |
 | 1292 | 2026-04-08 | POCA Allows 2-Year Renewable Detention With No Judicial Review, Decided by an Appointed Board |
-| 1294 | — | Unilateral child conversion ban enforcement lacking in 6 states |
+| 1294 | 2026-05-17 | Unilateral child conversion ban enforcement lacking in 6 states |
 | 1298 | 2026-04-08 | SOSMA Renewal Cycles Operate With Minimal Public Debate; Section 4(5) Requires It Every 5 Years |
-| 1319 | — | Preventive detention laws total 7 across Malaysian statutes |
+| 1319 | 2026-05-17 | Preventive detention laws total 7 across Malaysian statutes |
 | 1325 | 2026-04-08 | Maternal Citizenship Amendment Passed in 2024; March 2025 Settlement Closed the Pre-Amendment Gap |
 | 1445 | 2026-04-08 | Medical Tourism Hit RM2.72B in 2024, Targeting RM3B in 2025, While Public Specialists Stretch Thin |
 | 1618 | 2026-04-08 | Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia |
-| 1625 | — | Bumiputera Discount on Property Costs Non-Bumiputera Buyers RM4.8B |
-| 1626 | — | Social Contract Concept Has No Single Agreed Definition |
+| 1625 | 2026-05-17 | Bumiputera Discount on Property Costs Non-Bumiputera Buyers RM4.8B |
+| 1626 | 2026-05-17 | Social Contract Concept Has No Single Agreed Definition |
 | 1751 | 2026-04-08 | MRT3 Circle Line Capped at RM45 Billion, Down from RM68 Billion in 2018 |
 | 1805 | 2026-04-08 | LCS Cost Now RM11.2 Billion; First Ship in Sea Trials, Programme Cut From 6 to 5 |
 | 1867 | 2026-04-08 | 1MDB Asset Recovery Has Reached Over RM20.7 Billion |
-| 1940 | — | Government Surveillance Powers Expanded Without Judicial Oversight |
+| 1940 | 2026-05-17 | Government Surveillance Powers Expanded Without Judicial Oversight |
 | 1944 | 2026-04-20 | RM2.27 Billion, 25 Charges, One Verdict, and the Bill Nobody Mentions |
 | 1951 | 2026-03-30 | Seven Ships, One Phone Call, Zero Leverage |
 | 1952 | 2026-03-30 | Fuel Quota Cut Hits April 1: Who Absorbs the 68% Price Jump |
@@ -98,15 +98,11 @@ Classifies the 72 published issues with zero engine artifacts into FALLBACK / LE
 | 1955 | 2026-03-30 | No Raya Open Houses: Symbolic Savings, Real Losses, Honest Questions |
 | 1956 | 2026-03-30 | Expat Salary Floor Doubles to RM20K; The Talent Equation Nobody Solves |
 | 1976 | 2026-04-20 | Four Undangs Declared the Ruler Deposed. Three Hold Office. One Does Not. |
-| 1981 | 2026-05-15 | Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout. |
-| 1982 | 2026-05-15 | Three Investigations on Chinese Platforms, and What They Don't Prove |
 | 1984 | 2026-05-16 | E-invoice exemption walked back twice in a month after Sabah loss |
-| 1985 | 2026-05-16 | Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold. |
-| 1986 | 2026-05-16 | The Malay grievance, read structurally: capture, not racial competition. |
 
 ## Recommended Action Order
 
-1. **ORPHAN first** (37 issues) — these are the most anomalous. Each needs individual investigation: was the issue manually injected, accidentally published, or did it lose its engine artifacts? Decide per issue: backfill or unpublish.
+1. **ORPHAN first** (33 issues) — these are the most anomalous. Each needs individual investigation: was the issue manually injected, accidentally published, or did it lose its engine artifacts? Decide per issue: backfill or unpublish.
 2. **LEGACY content review** (1 issues) — bulk editorial review against the Accuracy Standard. Can be batched: open each, read cards, mark for keep / disclaim / unpublish. Do not auto-act.
 3. **FALLBACK content** (34 issues) — lowest priority because these are intentionally chosen. Optional: backfill research briefs over time to raise audit confidence. Until then, they are acceptable legacy content.
 

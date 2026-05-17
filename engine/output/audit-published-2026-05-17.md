@@ -7,9 +7,9 @@ Audit of all 103 published issues against the new accuracy + editorial criteria 
 | Metric | Value |
 |---|---:|
 | Total published issues | 103 |
-| With full pipeline (≥7 of 8 artifacts) | 28 |
-| Partially audited (1-6 artifacts) | 3 |
-| **Unauditable (zero artifacts)** | **72** |
+| With full pipeline (≥7 of 8 artifacts) | 30 |
+| Partially audited (1-6 artifacts) | 5 |
+| **Unauditable (zero artifacts)** | **68** |
 | Phase 1 structural flags | 0 issues |
 | Phase 3 actionable low-confidence (INC+MIS>0 AND not RESOLVED) | 0 issues |
 | Phase 3 STUB low-FAS (no actionable claims; surface only) | 9 issues |
@@ -38,7 +38,7 @@ Hard-max length violations, concreteness floor, reframe.sub > 80, missing backgr
 
 Per-issue audit of which engine artifacts exist. Issues with zero artifacts cannot be retroactively audited for accuracy and need editorial decision (review, backfill, or unpublish).
 
-### Unauditable issues — zero engine artifacts (72)
+### Unauditable issues — zero engine artifacts (68)
 
 These published issues have no brief, no stage outputs, no reader.json. They predate the pipeline or were fallback-published. **Recommendation:** flag each for editorial decision. Do NOT auto-unpublish.
 
@@ -109,13 +109,9 @@ These published issues have no brief, no stage outputs, no reader.json. They pre
 - **1955** — No Raya Open Houses: Symbolic Savings, Real Losses, Honest Questions
 - **1956** — Expat Salary Floor Doubles to RM20K; The Talent Equation Nobody Solves
 - **1976** — Four Undangs Declared the Ruler Deposed. Three Hold Office. One Does Not.
-- **1981** — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
-- **1982** — Three Investigations on Chinese Platforms, and What They Don't Prove
 - **1984** — E-invoice exemption walked back twice in a month after Sabah loss
-- **1985** — Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
-- **1986** — The Malay grievance, read structurally: capture, not racial competition.
 
-### Full-pipeline issues (28)
+### Full-pipeline issues (30)
 
 These have ≥7 of 8 expected artifacts and are fully auditable.
 
@@ -143,6 +139,8 @@ These have ≥7 of 8 expected artifacts and are fully auditable.
 | 1978 | federal-court-2026-term-backlog | Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis. |
 | 1979 | 1mdb-recovery-headline-vs-net-position | RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration |
 | 1980 | zahid-insults-firm-action-vs-existing-laws | Zahid wants firmer law on insults; sedition cases already up 84% in 2025 |
+| 1981 | sabah-two-ma63-delays-akps-vs-40pc-revenue-stay | Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout. |
+| 1982 | china-narratives-chinese-malaysian-platforms | Three Investigations on Chinese Platforms, and What They Don't Prove |
 | 1983 | norway-malaysia-nsm-export-revocation | Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries i |
 | 1987 | malaysia-politics-gerontocracy-no-new-faces | Median MP is 52, citizen 31. Parliament refused PM term limits by two votes. |
 | 1988 | coa-emergency-proclamation-non-justiciable | Court of Appeal: no court can review an emergency call, issuance or refusal |
@@ -150,19 +148,21 @@ These have ≥7 of 8 expected artifacts and are fully auditable.
 | 1990 | macc-rm1-1b-rafizi-28-pages | MACC recommended charges over the RM1.1B ARM chip deal. The deal continues. |
 | 1991 | harmony-reconciliation-bill-comparator-model | Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbab |
 
-### Partially-audited issues (3)
+### Partially-audited issues (5)
 
 | ID | Slug | Artifacts | Missing |
 |---|---|---:|---|
 | 1146 | issue-1146-v2 | 6/8 | brief, stage1 |
 | 1887 | issue-1887-v2 | 6/8 | brief, stage1 |
 | 1959 | sabah-philippines-claim | 6/8 | stage3, stage4 |
+| 1985 | e-invoicing-exemption-shadow-economy | 4/8 | stage2, stage3, stage4, stage5 |
+| 1986 | malay-grievance-policy-capture | 5/8 | stage3, stage4, stage5 |
 
 ## Phase 3 — Source Quality
 
 Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold: `factual_accuracy_score < 70` OR `avg m_true < 0.7` OR any INCORRECT/MISLEADING claim.
 
-### Stage 3 results — all issues with artifacts (30)
+### Stage 3 results — all issues with artifacts (32)
 
 | ID | Claims | VER | UNV | INC | MIS | FAS | avg m_true | SDE | Resolution | Flagged |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
@@ -183,6 +183,7 @@ Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold:
 | 1972 | 0 | 0 | 0 | 0 | 0 | 68 | — | 0.66 | STUB |  |
 | 1978 | 17 | 9 | 2 | 2 | 4 | 68 | 0.53 | 0.64 | RESOLVED |  |
 | 1980 | 0 | 0 | 0 | 0 | 0 | 68 | — | 0.68 | STUB |  |
+| 1982 | 21 | 7 | 8 | 0 | 6 | 68 | 0.45 | 0.55 | RESOLVED |  |
 | 1987 | 21 | 7 | 2 | 3 | 9 | 68 | 0.48 | 0.63 | RESOLVED |  |
 | 1991 | 12 | 3 | 1 | 2 | 6 | 69 | 0.42 | 0.62 | RESOLVED |  |
 | 1966 | 11 | 5 | 3 | 0 | 3 | 70 | 0.63 | 0.6 | RESOLVED |  |
@@ -193,6 +194,7 @@ Parsed Stage 3 (Fact Verification) outputs for issues with artifacts. Threshold:
 | 1989 | 24 | 11 | 3 | 1 | 9 | 73 | 0.6 | 0.62 | RESOLVED |  |
 | 1961 | 10 | 5 | 3 | 0 | 2 | 74 | 0.63 | 0.5 | RESOLVED |  |
 | 1963 | 11 | 7 | 4 | 0 | 0 | 74 | 0.67 | 0.55 | STUB |  |
+| 1981 | 20 | 13 | 3 | 2 | 2 | 74 | 0.64 | 0.56 | RESOLVED |  |
 | 1990 | 26 | 18 | 1 | 1 | 6 | 74 | 0.62 | 0.58 | RESOLVED |  |
 | 1988 | 18 | 11 | 1 | 0 | 6 | 82 | 0.67 | 0.66 | RESOLVED |  |
 | 1957 | 8 | 8 | 0 | 0 | 0 | 96 | 0.93 | 0.85 | STUB |  |
@@ -236,7 +238,7 @@ Issues with no other flags but anti-pattern phrases in copy. Minor copy edits.
 ## Recommendations
 
 1. **Tier 1 first** — these are the highest-leverage fixes (unauditable + at least one mechanical flag).
-2. **For unauditable issues without other flags** (count: 72) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
+2. **For unauditable issues without other flags** (count: 68) — editorial decision per issue: backfill audit trail (re-run pipeline), keep as legacy with disclaimer, or unpublish. Do NOT auto-act.
 3. **Tier 2 issues need source review** — Stage 3 already flagged them. Re-read the Stage 3 output and either correct the cards or hold the issue.
 4. **Tier 3 are copy edits** — fix the flagged phrases in place; no source review needed.
 5. **Going forward** — the new accuracy rules in CLAUDE.md will prevent these gaps from recurring on new issues. This audit covers retroactive content only.
