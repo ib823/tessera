@@ -1,101 +1,55 @@
 {
-  "_provenance_note": "Stage 5 (Grok contrarian) response received 2026-05-17. Grok explicitly stated 'the specific analysis text was not supplied in the query' and 'the missing analysis text weakens the ability to tie them directly to specific evasions.' Grok appears to have inferred the topic from the slug and supplemented with web search (it cites the Malay Mail and NST 14 May 2026 articles on Rafizi 28-page submission correctly). The critiques therefore target the topic and likely T4A framing pattern, NOT the specific Stage 1 cards. Stage 6 synthesis must weight this accordingly: the cowardice_flags and false_balance comments are generic-to-topic, not card-specific.",
-  "courage_score": 35,
-  "confidence_inflation_estimate": -0.6,
-  "sentiment_volatility_estimate": 0.25,
+  "_provenance_note": "Stage 5 (Grok contrarian) v2 — full read after re-upload of stage5 prompt file. This replaces the v1 partial saved earlier (which had a caveat that Grok inferred from slug only). v2 explicitly engages with the embedded Stage 1 cards. courage_score 57, confidence_inflation -0.32. Core critique: reframe is 'intellectual off-ramp' — analysis records political rupture, resignation numbers, Nik Nazmi quote, six-day timing and eight-day response, then refuses to connect them, retreating to a technocratic procurement question.",
+  "courage_score": 57,
+  "confidence_inflation_estimate": -0.32,
+  "sentiment_volatility_estimate": 0.07,
   "cowardice_flags": [
     {
-      "card": 1,
-      "avoided": "The analysis frames the MACC probe as a routine accountability exercise without noting that Malaysian Anti-Corruption Commission investigations into high-profile politicians from the ruling coalition or its former members have repeatedly shown patterns of selective timing and political utility.",
-      "should_say": "MACC remains structurally under the Prime Minister's Department, and its track record includes both aggressive pursuit of certain figures and conspicuous inaction on others aligned with the current power centre; treating this probe as neutral process ignores that history.",
-      "primary_source": "https://www.malaymail.com/news/malaysia/2026/05/14/rafizi-returns-to-macc-hands-in-28-pages-of-evidence-to-macc-in-rm11b-government-contract-probe/219891"
+      "card": 4,
+      "avoided": "The political card reports Rafizi's May 2025 resignation after losing the PKR deputy presidency to Nurul Izzah (3,866 vs 9,803 votes) and Nik Nazmi's description of the probe as a 'political conspiracy,' but isolates these facts without synthesizing them with the MACC charging recommendation timeline as evidence of intra-coalition institutional leverage.",
+      "should_say": "Rafizi's bruising loss to the Prime Minister's daughter, his immediate resignation and subsequent public criticism of the Madani government, followed eight months later by an outgoing MACC chief recommending charges on a deal Rafizi signed as minister, creates a documented sequence that aligns with longstanding patterns of Malaysian enforcement actions coinciding with factional political ruptures inside the ruling coalition.",
+      "primary_source": "Malay Mail, 28 May 2025, 'Rafizi quits as economy minister after losing PKR party election'; The Independent (Singapore), May 2025, Nik Nazmi quote on 'political conspiracy'; The Star/Malay Mail/The Edge, 6 May and 14 May 2026 timelines for Azam announcement and Rafizi 28-page submission."
     },
     {
-      "card": 1,
-      "avoided": "It tiptoes around Rafizi's own submission of 28 pages and videos as potentially self-serving narrative management rather than pure cooperation.",
-      "should_say": "Submitting additional evidence after being called in does not automatically equal transparency; it can also be a calculated move to shape the public record in an ongoing political contest.",
-      "primary_source": "https://www.nst.com.my/news/nation/2026/05/1439223/rafizi-back-macc-over-rm11bil-arm-probe-submits-28-page-file"
+      "card": 5,
+      "avoided": "The reframe pivots entirely to the narrow procedural question of 'which procurement track a 10-year, RM1.1 billion IP-licensing deal should have cleared' while treating the political context and timing anomalies as background rather than foreground.",
+      "should_say": "The dominant public and political reality is that this enforcement action occurs against the backdrop of a documented personal and factional break between Rafizi and the Anwar-led PKR leadership; the procurement classification question is real but secondary to whether state institutions are being deployed in intra-coalition score-settling.",
+      "primary_source": "Analysis's own card 4 sources plus MIDA media release 5 March 2025 and Bernama 23 Feb 2026 on deal continuity under the same coalition."
     }
   ],
   "false_balance": [
     {
-      "where": "Portraying the semiconductor investment probe as equally likely to be legitimate scrutiny or pure political weaponisation without weighting the evidence on rushed one-sided agreements.",
-      "evidence_says": "Multiple NGOs complained the RM1.1b Arm deal was rushed and one-sided; the probe was triggered by those complaints, not invented by MACC out of thin air.",
-      "primary_source": "https://www.nst.com.my/news/nation/2026/05/1439223/rafizi-back-macc-over-rm11bil-arm-probe-submits-28-page-file"
+      "where": "reframe and view cards",
+      "evidence_says": "The compressed timeline (Azam recommendation 6 days before his 12 May 2026 tenure end; Rafizi voluntary 28-page submission 8 days later) combined with Rafizi's May 2025 political rupture inside PKR makes the political dimension the primary driver of the story for any reader following Malaysian politics. Elevating the technical procurement-track question to 'the' substantive issue while presenting the political facts as mere context imposes artificial symmetry on an episode where one frame clearly dominates public perception and institutional behavior.",
+      "primary_source": "The Edge profile on Azam Baki tenure end (cited in analysis); Malay Mail 28 May 2025 resignation/vote details; multi-outlet coverage of Azam 6 May 2026 and Rafizi 14 May 2026 actions; Nik Nazmi statements."
     }
   ],
-  "audience_check": "A taxi driver in Ipoh or hawker in Penang would likely roll their eyes and tune out. The piece reads like it was written for English-speaking urban professionals and Twitter activists who already follow the script of 'MACC is weaponised when it touches my side'. It lectures about due process without acknowledging that ordinary Malaysians have seen the same institutions used against whoever falls out of favour, regardless of which coalition is in power. They would share the memes, not this analysis.",
+  "audience_check": "A taxi driver in Ipoh, teacher in Kota Bharu, hawker in Penang, farmer in Sabah or factory worker in Johor would roll their eyes, share screenshots mockingly, or ignore it entirely. The piece reads as an elite procedural memo written for other political insiders and policy analysts. It lectures on MACC Act sections, Federal Constitution Article 145, Treasury Instructions and 'institutional propriety' without ever explaining why ordinary Malaysians should care about a RM1.1 billion deal or an ex-minister trading evidence with the anti-corruption agency. It speaks down to the rakyat about process while the lived experience is repeated high-profile dramas that change nothing about accountability or daily costs.",
   "hard_truths_missing": [
-    {
-      "about": "the political class (ALL parties)",
-      "truth": "Large government technology and investment contracts in Malaysia have long been vehicles for political patronage and rushed decisions across administrations; the RM1.1b Arm deal fits a pattern visible under both BN and PH governments where speed and connected parties often trump rigorous public tender scrutiny.",
-      "why_avoided": "Naming the pattern implicates figures from the current ruling coalition and its recent predecessors, breaking the convenient narrative that only one side plays dirty.",
-      "status": "VERIFIED",
-      "primary_source": "https://www.malaymail.com/news/malaysia/2026/05/14/rafizi-returns-to-macc-hands-in-28-pages-of-evidence-to-macc-in-rm11b-government-contract-probe/219891"
-    },
-    {
-      "about": "the political class (ALL parties)",
-      "truth": "Rafizi publicly calling for the Prime Minister to be questioned first is standard opposition theatre repurposed by a former insider; it does not prove innocence or guilt but does illustrate how quickly yesterday's government colleague becomes today's accountability target when factions shift.",
-      "why_avoided": "It complicates the clean hero/villain framing many analyses prefer when discussing PH figures under MACC scrutiny.",
-      "status": "VERIFIED",
-      "primary_source": "https://www.facebook.com/TheStarOnline/posts/rafizi-said-the-date-was-set-by-the-macc-itself-after-submitting-evidence-over-t/1448288244000363/"
-    },
-    {
-      "about": "Islam in Malaysia",
-      "truth": "Religious and racial framing is routinely layered onto corruption probes by all sides to mobilise support or deflect; this case has so far stayed technocratic, which itself reveals that when the numbers are big enough and foreign partners involved, race/religion cards are sometimes held in reserve rather than played immediately.",
-      "why_avoided": "Discussing the selective deployment of identity politics in corruption cases would require admitting that both 'defenders of Islam' and 'progressive' camps weaponise it when convenient.",
-      "status": "MY_OPINION",
-      "primary_source": ""
-    }
+    {"about": "the political class (ALL parties)", "truth": "Enforcement bodies in Malaysia have a recurring pattern of high-profile actions whose timing aligns with intra-coalition or intra-party power struggles rather than neutral legal calendars; this episode's sequence fits that pattern too closely to be treated as coincidental without comment.", "why_avoided": "The self-imposed 'process-not-people' and 'no bad faith characterisation' rules prevent the analysis from connecting the verified timeline and political rupture into even a circumstantial observation about institutional weaponization.", "status": "MY_OPINION", "primary_source": ""},
+    {"about": "the political class (ALL parties)", "truth": "When the same ruling coalition both continues a major strategic contract and advances criminal recommendations against those who signed it, the gap between 'reform' rhetoric and actual power preservation becomes visible; the analysis notes the coalition continuity but declines to name the resulting credibility problem.", "why_avoided": "Naming it would require acknowledging that institutional 'maturity' claims sit uneasily with the observable reality of factional enforcement inside the unity government.", "status": "MY_OPINION", "primary_source": ""}
   ],
   "gender_truths_avoided": [
-    {
-      "truth": "No evident gender dimension in this specific probe; the principals are male and the deal is framed in purely technocratic and power terms. The absence itself is unremarkable rather than avoided.",
-      "why_uncomfortable": "Forcing a gender lens here would be performative.",
-      "primary_source": ""
-    }
+    {"truth": "No observable hard truths about differential effects on men versus women are present in the public record of this procurement-and-enforcement episode; the analysis correctly omits any gendered framing.", "why_uncomfortable": "N/A — the issue has no evident gender dimension. Including one would have been forced and performative.", "primary_source": ""}
   ],
   "class_truths_avoided": [
-    {
-      "truth": "The RM1.1b semiconductor investment is pitched as nation-building high-tech development, yet the beneficiaries are likely to be a narrow class of well-connected contractors, consultants, and foreign partners rather than broad-based Malaysian workers or SMEs; ordinary taxpayers bear the risk if the deal underperforms.",
-      "why_uncomfortable": "Admitting that large 'strategic' projects disproportionately enrich the politically connected class (across races) undermines the developmentalist rhetoric used by both government and opposition figures.",
-      "primary_source": "https://bernama.com/en/news.php//sports/business/news.php?id=2556808"
-    }
+    {"truth": "A RM1.1 billion, 10-year public commitment to foreign IP licensing constitutes a material claim on national resources and taxpayer funds at a time when large segments of the Malaysian population face persistent cost-of-living pressures and limited wage growth; treating the controversy as a narrow question of bureaucratic classification obscures who ultimately bears the fiscal and opportunity-cost risk.", "why_uncomfortable": "It would shift attention from elegant institutional mechanics to the distributive consequences of elite-driven strategic projects and require acknowledging that both the previous and current governments share responsibility for the fiscal exposure.", "primary_source": "MY_OPINION — scale taken from MIDA release and consistent multi-outlet reporting; no deal-specific fiscal incidence study was located."}
   ],
   "predictions": [
-    {
-      "if_nothing_changes": "The investigation will continue for 12-24 months with periodic leaks and counter-leaks timed to political cycles; no senior political figure from the current administration will face equivalent scrutiny for comparable or larger projects.",
-      "who_can_fix": "Structural reform of MACC's reporting line away from the Prime Minister's Department plus mandatory public tender rules with independent oversight for projects above RM500m.",
-      "why_they_wont": "Both major coalitions benefit from retaining discretionary power over big-ticket projects and from keeping MACC as a useful pressure valve; genuine independence would constrain their own future manoeuvres.",
-      "label": "HYPOTHESIS"
-    }
+    {"if_nothing_changes": "Within six months the AGC will most likely decline to file charges or will pursue only peripheral process offences, the deal will continue with cosmetic adjustments, and public attention will dissipate while another layer of institutional cynicism hardens.", "who_can_fix": "A post-Azam MACC leadership willing to publish full investigation papers or a parliamentary committee with real subpoena power over e-Perolehan and Cabinet records could force transparency on the procurement track.", "why_they_wont": "The ruling coalition has clear incentives to shield ongoing semiconductor narrative and avoid precedent that could be used against its own future contracts; internal discipline and fear of destabilising 'unity' will override demands for full disclosure.", "label": "HYPOTHESIS"},
+    {"if_nothing_changes": "In two years the episode will be remembered as another data point proving that high-level accountability in Malaysia remains selective and timing-dependent, further eroding whatever residual trust exists in enforcement institutions across all political persuasions.", "who_can_fix": "Sustained, document-based scrutiny by independent media and civil society could keep pressure on procurement transparency, but only if they obtain primary records the government has no obligation to release proactively.", "why_they_wont": "Fragmented civil society capacity and the technical nature of procurement issues make sustained public mobilisation extremely difficult compared with more emotive scandals.", "label": "HYPOTHESIS"}
   ],
   "cardinal_sin_flags": [
-    {
-      "sin": "UNDERCLAIM",
-      "in_my_attack": "I initially considered calling the analysis 'soft' on MACC independence but toned it down because the specific analysis text was not supplied in the query.",
-      "why_I_dropped_it": "Without the exact passages, I cannot quote and attack specific cowardice; overclaiming on an unseen text would itself be a cardinal sin."
-    }
+    {"sin": "OVERCLAIM", "in_my_attack": "Asserting that the analysis 'whitewashes political motivation' or that the probe is proven to be a witch-hunt.", "why_I_dropped_it": "No primary source establishes intent or conspiracy. The timeline and political context are strongly suggestive but remain circumstantial. Making the stronger claim would itself violate the accuracy rules I am enforcing."},
+    {"sin": "UNDERCLAIM", "in_my_attack": "Initially treating the analysis as merely 'cautious' rather than actively evasive in its refusal to synthesise.", "why_I_dropped_it": "After mapping the cards against the documented timeline, the pattern of isolation (political facts in one card, timing in another, reframe in a third) is too consistent to describe as neutral discipline. The underclaim was corrected in the final flags."}
   ],
   "verification_log": [
-    {
-      "my_attack": "MACC structurally under PM's Department and history of selective enforcement",
-      "status": "VERIFIED",
-      "primary_source": "https://www.malaymail.com/news/malaysia/2026/05/14/rafizi-returns-to-macc-hands-in-28-pages-of-evidence-to-macc-in-rm11b-government-contract-probe/219891"
-    },
-    {
-      "my_attack": "NGO complaints triggered the RM1.1b Arm probe over rushed one-sided terms",
-      "status": "VERIFIED",
-      "primary_source": "https://www.nst.com.my/news/nation/2026/05/1439223/rafizi-back-macc-over-rm11bil-arm-probe-submits-28-page-file"
-    }
+    {"my_attack": "Rafizi lost PKR deputy presidency to Nurul Izzah 3,866 to 9,803 votes and resigned in May 2025.", "status": "VERIFIED", "primary_source": "Malay Mail, 28 May 2025; The Star, 28 May 2025; Mothership, 28 May 2025."},
+    {"my_attack": "Azam Baki announced charging recommendation on 6 May 2026, six days before his tenure ended around 12 May 2026.", "status": "VERIFIED", "primary_source": "The Edge Malaysia profile on Azam Baki (cited in analysis); The Star and Malay Mail, 6 May 2026."},
+    {"my_attack": "The deal continues under the current Economy Minister as of February 2026 while the MACC paper proceeds.", "status": "VERIFIED", "primary_source": "Bernama, 23 February 2026; Malay Mail, 23 February 2026; The Edge, 23 February 2026."},
+    {"my_attack": "Rafizi submitted 28 pages and USB on 14 May 2026, eight days after the MACC recommendation.", "status": "VERIFIED", "primary_source": "Malay Mail, NST, The Star, The Edge — all 14 May 2026."}
   ],
-  "strongest_card": {
-    "card": 3,
-    "why": "The audience reality check lands cleanly: most working-class Malaysians have seen enough politicised institutions to dismiss sanitised 'due process' narratives that ignore power realities."
-  },
-  "weakest_card": {
-    "card": 5,
-    "why": "Testable predictions rely on pattern extrapolation rather than ironclad proof of future behaviour; they are hypotheses, not certainties, and the missing analysis text weakens the ability to tie them directly to specific evasions."
-  },
-  "overall_assessment": "The analysis (to the extent inferable from context around the Rafizi/MACC RM1.1b probe) performs the classic Malaysian political commentary dance: it gestures at accountability while refusing to state plainly that the institutions tasked with it are structurally compromised and that every major coalition has participated in the same ecosystem of rushed big-ticket deals. It prefers procedural language over the observable pattern that MACC probes intensify when political utility aligns. Without the actual text, some attacks remain provisional, but the genre itself consistently fails the taxi driver test."
+  "strongest_card": {"card": 3, "why": "The legal fact card on Azam Baki's 6 May announcement is the strongest because it places a precise, verifiable institutional timing anomaly on the record with statutory references and without softening language or false equivalence. It is the only card that forces the reader to confront an uncomfortable procedural fact directly."},
+  "weakest_card": {"card": 5, "why": "The reframe card is the weakest because it uses a legitimate but narrow procedural question as an intellectual off-ramp. After documenting the political rupture and the suspicious timing, it pivots to 'the question is which procurement track' in a way that feels like deliberate de-escalation rather than honest prioritisation of what actually drives the story."},
+  "overall_assessment": "The analysis is technically rigorous and self-disciplined to a fault. It correctly refuses to name uncharged individuals and anchors every claim to verifiable sources. Its cowardice is not in fabrication but in synthesis: it records the political rupture, the resignation numbers, the Nik Nazmi quote, the six-day timing and the eight-day response, then refuses to connect them, retreating instead to a technocratic procurement question that most readers will recognise as secondary. The result is a piece that performs neutrality while leaving the clearest inference — that this is intra-elite combat conducted through state institutions — for the reader to draw alone. For anyone outside the political class it will feel like another sophisticated document that explains the machine without addressing why it so reliably produces outcomes that look rigged. Strong on facts, weak on courage to name the pattern its own facts reveal."
 }
