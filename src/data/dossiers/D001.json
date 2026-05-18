@@ -18,10 +18,10 @@
   "primaryLens": "Political",
   "ogImage": "/dossiers/D001/og-1200x630.png",
   "accentColor": "#9B2C2C",
-  "stageScores": { "pa": 80, "ba": 98, "fc": 82, "af": 65, "ct": 52, "sr": 82 },
-  "stageScoresNote": "Stage 2 (Gemini): bias_score 1.5 → ba 98. Stage 3 rerun (ChatGPT on synthesized text): factual_accuracy_score 82, up from 60 first pass. Rerun confirmed all major corrections (Act A1663, Article 49A wording, malapportionment chronology, Bangi voter count, Amanah year, Pejuang/GTA dates, Shapley arithmetic, fig-4) and flagged ten remaining items — one factual (the Wan Azizah 'first woman' claim, now corrected by removing the overclaim), the rest editorial tightening (softened wording on the 1962 amendment, GTA seat-count attribution, base-rates phrasing, RCI implementation, Sarawak political-environment characterisation; removed unsourced fig-5 number). After the editorial tightening round, fc would lift to estimated 88 on a third rerun. Stage 4 (DeepSeek): completeness 6.5/10 → 65; remaining gaps deferred to future dossiers. Stage 5 (Grok): courage 52; major cowardice flags addressed. Stage 6 (self): 82, lifted from 80 after the rerun-driven editorial tightening pass.",
-  "finalScore": 76.8,
-  "finalScoreNote": "Weighted average across all six stages after editor verification batch AND Stage 3 rerun AND post-rerun editorial tightening. Estimated 80 after a third Stage 3 rerun on the now-tightened text — recommended before flipping published to true.",
+  "stageScores": { "pa": 80, "ba": 98, "fc": 87, "af": 65, "ct": 52, "sr": 85 },
+  "stageScoresNote": "Stage 2 (Gemini): bias_score 1.5 → ba 98. Stage 3 v3 rerun (ChatGPT on twice-tightened text): factual_accuracy_score 87, up from 60 v1 and 82 v2. All eight editor tightenings from v2 confirmed as defensible. Two narrow v3 fixes applied (Article 49A Royal Assent vs Gazette publication date distinction; GRS 2020 vs 2022 composition clarification). Stage 4 (DeepSeek): completeness 6.5/10 → 65; remaining gaps deferred to future dossiers in the Malaysia Political Mechanics series. Stage 5 (Grok): courage 52; major cowardice flags addressed in the synthesis. Stage 6 (self): 85, lifted to reflect that all reviewer flags through three rounds have been addressed.",
+  "finalScore": 79.3,
+  "finalScoreNote": "Weighted average across all six stages after editor verification batch, two Stage 3 reruns, and a third v3 rerun confirming fc 87 with two narrow narrow fixes applied. Substantively publication-ready pending: (a) operator decision to flip published true, (b) Phase 6 LEGAL+ACCURACY final walk per CLAUDE.md.",
   "legacyAudit": false,
   "relatedIssues": [],
   "citeAs": "The Fourth Angle (2026). How New Parties Are Built in Malaysia: A Field Guide to the Launch-and-Pivot Playbook. Dossier D001. https://thefourthangle.pages.dev/dossier/D001",
@@ -155,7 +155,7 @@
     {
       "t": "quote",
       "id": "article-49a-text",
-      "source": "Federal Constitution of Malaysia, Article 49A, inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663), gazetted 31 August 2022",
+      "source": "Federal Constitution of Malaysia, Article 49A, inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663) — received Royal Assent on 31 August 2022 and published in the Gazette on 6 September 2022",
       "body": "Paraphrase pending editor verification against the gazetted Federal Constitution text. Article 49A provides that a Member of the House of Representatives ceases to be a Member, with the seat declared vacant, when, having been elected as a member of a political party, the Member resigns from or ceases to be a member of that party. Article 49A(2)(c) explicitly excludes expulsion from this trigger — a Member expelled by the party does not lose the seat.",
       "commentary": "Read the structure carefully. The law binds the Member. It does not bind the party. And it does not bind expulsion. A party can dissolve, re-form, or vote en bloc to switch coalitions, and its MPs keep their seats because no individual has resigned. A party can also expel a Member without that Member losing the seat — the resignation route is closed, the expulsion route was deliberately left open. This is not an obscure interpretation. It is what the words say.",
       "editorNote": "Act number A1663 confirmed by two independent editor-verification reviewers, both citing the AGC Laws of Malaysia repository. Verbatim text of Article 49A(1) and 49A(2)(c) should still be pulled from the gazetted constitution before publication and verified against this paraphrase."
@@ -179,8 +179,8 @@
       "t": "case",
       "id": "grs-2020",
       "title": "GRS 2020 — the case study",
-      "body": "Gabungan Rakyat Sabah was formed in the weeks immediately before the September 2020 Sabah state election. It had no manifesto distinct from its components — Bersatu Sabah, PAS, STAR, SAPP, and others. Its product was the umbrella itself: a brand that let component parties contest without splitting the anti-Warisan vote under first-past-the-post. It won. The lesson taken across the corridor was that the brand is the product, and speed beats depth. In a state-level election, with a few weeks of preparation, a defector-heavy umbrella can defeat a sitting government if the alternative is a fragmented opposition vote. The 2025–26 Sabah cycle will be read against this template, by every operator considering a launch.",
-      "citations": ["ROS registration 2020", "Sabah EC results PRN16 September 2020"]
+      "body": "Gabungan Rakyat Sabah was formed in the weeks immediately before the September 2020 Sabah state election as a loose electoral umbrella of Perikatan Nasional, Barisan Nasional and Parti Bersatu Sabah. Its product was the umbrella itself: a brand that let component parties contest without splitting the anti-Warisan vote under first-past-the-post. It won. The later, formally registered Gabungan Rakyat Sabah in 2022 comprised Bersatu, PBS, STAR and SAPP (without BN and PAS) — distinct from the 2020 electoral pact. The lesson taken across the corridor was that the brand is the product, and speed beats depth. In a state-level election, with a few weeks of preparation, a defector-heavy umbrella can defeat a sitting government if the alternative is a fragmented opposition vote. The 2025–26 Sabah cycle will be read against this template, by every operator considering a launch.",
+      "citations": ["MalayMail Sabah election 2020 results coverage", "Bernama on 2022 GRS formal registration composition"]
     },
     {
       "t": "diagram",

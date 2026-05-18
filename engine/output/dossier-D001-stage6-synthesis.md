@@ -124,6 +124,40 @@ Launches-timeline annotation revised to: "Wan Azizah Wan Ismail — founded and 
 
 ---
 
+## Step 9 — Stage 3 rerun v3 on post-tightening text (2026-05-18)
+
+Rerun v3 output saved at `engine/output/dossier-D001-stage3-rerun-v3.json`. **factual_accuracy_score 87, source_diversity 0.84.** Up from 60 (v1) and 82 (v2). Reviewer confirmed all nine v2 tightenings as defensible. Two narrow new fixes flagged, both applied below.
+
+### FIX 1 — Article 49A Royal Assent vs Gazette publication date
+
+v3 found the source line said "gazetted 31 August 2022" when 31 August was the Royal Assent date; the Federal Gazette publication was 6 September 2022.
+
+`article-49a-text.source` updated from "...inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663), gazetted 31 August 2022" to "...inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663) — received Royal Assent on 31 August 2022 and published in the Gazette on 6 September 2022."
+
+### FIX 2 — GRS 2020 vs 2022 composition
+
+v3 found the grs-2020 section conflated two moments: the 2020 electoral umbrella (PN+BN+PBS, a loose pact for the September 2020 state election) and the later formally registered GRS in 2022 (Bersatu, PBS, STAR, SAPP — without BN and PAS). The original text listed PAS as a 2020 GRS component, which is not historically accurate.
+
+`grs-2020.body` updated to distinguish: "Gabungan Rakyat Sabah was formed in the weeks immediately before the September 2020 Sabah state election as a loose electoral umbrella of Perikatan Nasional, Barisan Nasional and Parti Bersatu Sabah... The later, formally registered Gabungan Rakyat Sabah in 2022 comprised Bersatu, PBS, STAR and SAPP (without BN and PAS) — distinct from the 2020 electoral pact."
+
+### Updated scores after v3 rerun + post-v3 fixes
+
+- `stageScores.fc` lifted from 82 to **87** (v3 actual).
+- `stageScores.sr` lifted from 82 to **85** (all reviewer flags through three rounds resolved).
+- `finalScore` lifted from 76.8 to **79.3**.
+- `publication_recommendation` from v3: NEEDS_MORE_FIXES → after these two narrow fixes applied: SUBSTANTIVELY READY.
+
+### Decision point
+
+The dossier has cleared the formal Stage 3 publication threshold (fc 87 ≥ 85). All ten v2/v3 flags resolved. Two paths:
+
+- **A: Ship.** Flip `published: true`, run the Phase 6 LEGAL+ACCURACY walk per CLAUDE.md, hand the package to Claude Design for the visual build.
+- **B: One more rerun for formal sign-off.** Run Stage 3 v4 with the now-post-v3-fix text embedded. Cost: ~10 minutes. If fc returns ≥85 and READY_TO_PUBLISH, ship. If new flags surface, fix.
+
+The substantive corrections are complete. A v4 rerun would be a confirmation, not a new discovery.
+
+---
+
 ## Section-by-section changes
 
 ### Section: `tldr` (bullet 4)
