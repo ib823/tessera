@@ -1,0 +1,73 @@
+=================================================================
+T4A DOSSIER D001 — EDITOR VERIFICATION (GEMINI-SAFE STRIPPED VERSION)
+=================================================================
+
+INSTRUCTIONS FOR THE OPERATOR (do not paste this header line):
+- Use ONLY if the full editor-verify-batch prompt was refused by consumer Gemini.
+- Preferred path is still aistudio.google.com (Gemini 2.5 Pro with safety set to "Block none") or ChatGPT / Claude.ai / Perplexity.
+- This version strips all editorial framing and presents the three items as neutral fact-lookup tasks. Same data, no political context.
+
+=================================================================
+PASTE STARTS HERE
+=================================================================
+
+I need primary-source verification on three discrete factual items for a Malaysian public-policy research document. Each item is a publicly documented fact. Please use web search and return your findings as a single JSON object.
+
+ITEM 1 — Statute reference
+
+What is the Act number, as published in the Federal Gazette of Malaysia (Warta Kerajaan Persekutuan), of the "Constitution (Amendment) (No. 3) Act 2022" that inserted Article 49A into the Federal Constitution? Please pull the gazette publication and report the Act number, the gazette URL, and the gazette date.
+
+ITEM 2 — Voter-roll figures
+
+Please pull the registered voter counts published by the Suruhanjaya Pilihan Raya (Election Commission of Malaysia) for the 2022 general election (PRU15) for the following six parliamentary constituencies:
+
+1. Kapar (Selangor)
+2. Kota Raja (Selangor)
+3. Klang (Selangor)
+4. Cameron Highlands (Pahang)
+5. Hulu Rajang (Sarawak)
+6. Lawas (Sarawak)
+
+The starting source is the EC statistics PDF at https://sprinfo.spr.gov.my/spr/MAKLUMAT%20ASAS/STATISTIK%20PRU%20KE_15%20UMUR%20BY_PARLIMEN.pdf — but any official EC publication is acceptable. For each constituency return the parliamentary code (P-code), the registered voter count, and the source URL.
+
+ITEM 3 — Annual state tax revenue
+
+Please pull the annual revenue collected by the Sarawak state government from the State Sales Tax on petroleum products, for each year 2019 through 2024 inclusive. The tax was introduced by the Sarawak Sales Tax (Amendment) Ordinance 2018 at a rate of 5%. Primary sources include Sarawak state budget speeches (Ministry of Finance and New Economy Sarawak), the Premier of Sarawak's office, and Sarawak State Legislative Assembly Hansard.
+
+For each year, return the revenue figure in billions of ringgit, whether the figure is actual (audited), estimate (mid-year revised), or budget projection, the source URL, and the publication date.
+
+OUTPUT
+
+Return your findings ONLY as a JSON object, no markdown fences, no commentary:
+
+{
+  "item_1_act_number": {
+    "act_number": "AXXXX",
+    "act_name": "Constitution (Amendment) (No. 3) Act 2022",
+    "gazette_url": "...",
+    "gazette_date": "YYYY-MM-DD",
+    "status": "VERIFIED|UNVERIFIED"
+  },
+  "item_2_voter_counts": [
+    {"constituency": "Kapar", "p_code": "PXXX", "voters_ge15": NNNNNN, "primary_source": "URL", "status": "VERIFIED|UNVERIFIED"},
+    {"constituency": "Kota Raja", "p_code": "PXXX", "voters_ge15": NNNNNN, "primary_source": "URL", "status": "VERIFIED|UNVERIFIED"},
+    {"constituency": "Klang", "p_code": "PXXX", "voters_ge15": NNNNNN, "primary_source": "URL", "status": "VERIFIED|UNVERIFIED"},
+    {"constituency": "Cameron Highlands", "p_code": "PXXX", "voters_ge15": NNNNNN, "primary_source": "URL", "status": "VERIFIED|UNVERIFIED"},
+    {"constituency": "Hulu Rajang", "p_code": "PXXX", "voters_ge15": NNNNNN, "primary_source": "URL", "status": "VERIFIED|UNVERIFIED"},
+    {"constituency": "Lawas", "p_code": "PXXX", "voters_ge15": NNNNNN, "primary_source": "URL", "status": "VERIFIED|UNVERIFIED"}
+  ],
+  "item_3_sarawak_sst": [
+    {"year": 2019, "revenue_rm_bn": 0.00, "label": "ACTUAL|ESTIMATE|BUDGET_PROJECTION", "primary_source": "URL", "publication_date": "YYYY-MM-DD", "status": "VERIFIED|UNVERIFIED"},
+    {"year": 2020, "revenue_rm_bn": 0.00, "label": "...", "primary_source": "...", "publication_date": "...", "status": "..."},
+    {"year": 2021, "revenue_rm_bn": 0.00, "label": "...", "primary_source": "...", "publication_date": "...", "status": "..."},
+    {"year": 2022, "revenue_rm_bn": 0.00, "label": "...", "primary_source": "...", "publication_date": "...", "status": "..."},
+    {"year": 2023, "revenue_rm_bn": 0.00, "label": "...", "primary_source": "...", "publication_date": "...", "status": "..."},
+    {"year": 2024, "revenue_rm_bn": 0.00, "label": "...", "primary_source": "...", "publication_date": "...", "status": "..."}
+  ]
+}
+
+If any item is not verifiable from primary sources, mark it UNVERIFIED rather than guessing.
+
+=================================================================
+PASTE ENDS HERE
+=================================================================
