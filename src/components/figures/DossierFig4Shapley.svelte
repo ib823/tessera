@@ -107,7 +107,7 @@
 
   <!-- Divider -->
   <line x1="200" y1="450" x2="1000" y2="450" stroke="#3F1212" stroke-width="1" />
-  <text x="600" y="470" text-anchor="middle"
+  <text x="600" y="438" text-anchor="middle"
         font-family="Inter, system-ui, sans-serif"
         font-size="10" font-weight="600"
         letter-spacing="0.22em" fill="#9B2C2C">
@@ -116,10 +116,13 @@
 
   <!-- =============== Lower panel: grand coalition =============== -->
 
-  <!-- Grand-coalition arc connecting left to right directly -->
+  <!-- Grand-coalition arc connecting left to right directly. Peaks around
+       y=480 (Bezier control at y=450 with endpoints y=510). The label
+       sits above the arc at y=465; the kicker sits above the label at
+       y=438 with clear vertical separation. -->
   <path d="M 320 510 Q 600 450 880 510"
         fill="none" stroke="#9B2C2C" stroke-width="1.6" opacity="0.7" />
-  <text x="600" y="468" text-anchor="middle"
+  <text x="600" y="465" text-anchor="middle"
         font-family="Spectral, Georgia, serif" font-style="italic"
         font-size="14" fill="#9B2C2C">
     Grand coalition: 160 — pivot evaporates

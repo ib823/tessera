@@ -585,8 +585,7 @@ a { color: inherit; text-decoration: none; }
 /* -------- Reframe (pull quote) -------- */
 .reframe {
   margin: 96px 0;
-  padding: 40px 0 40px 48px;
-  border-left: 3px solid var(--accent);
+  padding: 40px 0;
   font-family: var(--font-body);
   font-style: italic;
   font-weight: 300;
@@ -600,7 +599,7 @@ a { color: inherit; text-decoration: none; }
 .reframe::before {
   content: 'REFRAME';
   position: absolute;
-  top: 0; left: 48px;
+  top: 0; left: 0;
   transform: translateY(-100%);
   font-family: var(--font-ui);
   font-style: normal;
@@ -1184,8 +1183,8 @@ a { color: inherit; text-decoration: none; }
   .tldr { padding: 28px 22px 30px; }
   .chapter { grid-template-columns: 1fr; gap: 0; margin-top: 80px; padding: 40px 0 24px; }
   .chapter__numeral { font-size: 80px; margin-bottom: 8px; }
-  .reframe { padding-left: 24px; font-size: 21px; }
-  .reframe::before { left: 24px; }
+  .reframe { padding: 32px 0; font-size: 21px; }
+  .reframe::before { left: 0; }
   .quote__body { padding-left: 24px; font-size: 19px; }
   .cite-as { padding: 24px 22px; }
 }

@@ -295,7 +295,6 @@
           <h2 id="featured-dossiers-heading" class="sr-only">Featured Dossier</h2>
           {#each featuredDossiers as d (d.id)}
             <a class="dossier-card" href={d.href} data-dossier-id={d.id} aria-label="Dossier {d.id}: {d.title} — {d.subtitle}">
-              <span class="dossier-card__edge" aria-hidden="true"></span>
               <div class="dossier-card__body">
                 <div class="dossier-card__top">
                   <span class="dossier-card__pill">DOSSIER · {d.id}</span>
@@ -1307,14 +1306,8 @@
     transform: translateY(-1px);
     box-shadow: 0 16px 36px -16px rgba(0, 0, 0, 0.5);
   }
-  .dossier-card__edge {
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: 5px;
-    background: #9B2C2C;
-  }
   .dossier-card__body {
-    padding: 22px 24px 20px 32px;
+    padding: 22px 24px 20px 24px;
   }
   .dossier-card__top {
     display: flex;
@@ -1374,7 +1367,7 @@
   .dossier-card__meta .dot { color: #3F1212; }
 
   @media (max-width: 560px) {
-    .dossier-card__body { padding: 18px 18px 18px 20px; }
+    .dossier-card__body { padding: 18px 18px 18px 18px; }
     .dossier-card__top { margin-bottom: 12px; }
     .dossier-card__title { font-size: 21px; }
     .dossier-card__subtitle { font-size: 14px; }
