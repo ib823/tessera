@@ -3,7 +3,10 @@
  *   cards:index          → CardIndex (set out-of-band via wrangler kv:key put)
  *   trends:current       → TrendSnapshot (TTL 60min)
  *   radar:current        → RadarSummary (TTL 4h; refreshed every 15min tick)
- *   posted:{id}:{n}      → ISO timestamp (TTL 30 days)
+ *   posted:{id}:{n}      → ISO timestamp (TTL 30 days) — per-card cooldown
+ *   issue-posted:{id}    → ISO timestamp (TTL ISSUE_COOLDOWN_HOURS) — per-issue
+ *                          cooldown to prevent back-to-back posts from the
+ *                          same issue when its topic dominates today's signals
  *   posts:log            → PostLogEntry[] (ring buffer, last 50)
  *   auth:session         → BlueskySession (TTL 110min)
  *   last-post-at         → epoch ms (used by scheduler cooldown)
@@ -18,6 +21,7 @@ const KEY = {
   authSession: 'auth:session',
   lastPostAt: 'last-post-at',
   postedCard: (id: string, n: number) => `posted:${id}:${n}`,
+  postedIssue: (id: string) => `issue-posted:${id}`,
 };
 
 export async function getCardIndex(env: Env): Promise<CardIndex | null> {
@@ -54,12 +58,18 @@ export async function isCardPosted(env: Env, card: SocialCard): Promise<boolean>
 }
 
 export async function markCardPosted(env: Env, card: SocialCard): Promise<void> {
-  const ttlSec = Number(env.POSTED_CARD_TTL_DAYS || '30') * 86400;
-  await env.T4A_SOCIAL_KV.put(
-    KEY.postedCard(card.issueId, card.cardIndex),
-    new Date().toISOString(),
-    { expirationTtl: ttlSec },
-  );
+  const cardTtlSec = Number(env.POSTED_CARD_TTL_DAYS || '30') * 86400;
+  const issueTtlSec = Number(env.ISSUE_COOLDOWN_HOURS || '12') * 3600;
+  const nowIso = new Date().toISOString();
+  // Per-card + per-issue cooldown written together. Both keys auto-expire.
+  await Promise.all([
+    env.T4A_SOCIAL_KV.put(KEY.postedCard(card.issueId, card.cardIndex), nowIso, {
+      expirationTtl: cardTtlSec,
+    }),
+    env.T4A_SOCIAL_KV.put(KEY.postedIssue(card.issueId), nowIso, {
+      expirationTtl: issueTtlSec,
+    }),
+  ]);
 }
 
 export async function getRecentPostedKeys(env: Env, cards: SocialCard[]): Promise<Set<string>> {
@@ -73,6 +83,24 @@ export async function getRecentPostedKeys(env: Env, cards: SocialCard[]): Promis
     );
     for (let j = 0; j < batch.length; j++) {
       if (results[j] !== null) out.add(`${batch[j].issueId}:${batch[j].cardIndex}`);
+    }
+  }
+  return out;
+}
+
+export async function getRecentPostedIssueIds(env: Env, cards: SocialCard[]): Promise<Set<string>> {
+  // Batch-check issue cooldown. Deduplicate issueIds first since many cards
+  // share the same issue.
+  const issueIds = [...new Set(cards.map((c) => c.issueId))];
+  const out = new Set<string>();
+  const CONCURRENCY = 20;
+  for (let i = 0; i < issueIds.length; i += CONCURRENCY) {
+    const batch = issueIds.slice(i, i + CONCURRENCY);
+    const results = await Promise.all(
+      batch.map((id) => env.T4A_SOCIAL_KV.get(KEY.postedIssue(id))),
+    );
+    for (let j = 0; j < batch.length; j++) {
+      if (results[j] !== null) out.add(batch[j]);
     }
   }
   return out;

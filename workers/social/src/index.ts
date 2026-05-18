@@ -22,6 +22,7 @@ import {
   getLastPostAt,
   getPostLog,
   getRadar,
+  getRecentPostedIssueIds,
   getRecentPostedKeys,
   getTrends,
   markCardPosted,
@@ -52,8 +53,11 @@ async function maybePost(env: Env, force = false): Promise<{ posted: boolean; re
   // scoring (radar arg becomes null, radarBoost returns 0).
   const radar = await getRadar(env);
 
-  const postedKeys = await getRecentPostedKeys(env, index.cards);
-  const pick = await pickBestCard(env, index.cards, postedKeys, snapshot, radar);
+  const [postedKeys, postedIssueIds] = await Promise.all([
+    getRecentPostedKeys(env, index.cards),
+    getRecentPostedIssueIds(env, index.cards),
+  ]);
+  const pick = await pickBestCard(env, index.cards, postedKeys, postedIssueIds, snapshot, radar);
 
   if (!pick.card) {
     return { posted: false, reason: `${pick.reason} (considered=${pick.considered})` };
