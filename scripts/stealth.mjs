@@ -211,10 +211,17 @@ async function main() {
   }
 
   // ── PHASE 8: Verification scan ──
-  // Word-boundary patterns to avoid false positives like "astronaut"
+  // Word-boundary patterns to avoid false positives like "astronaut".
+  //
+  // The "astro" check also ignores "Astro Awani" / "Astro Malaysia"
+  // / "Astro Holdings" / "Astro Berhad" — "Astro" is the parent name of
+  // the Malaysian media group and is a legitimate editorial citation
+  // (e.g. dossier source lists reference Astro Awani news coverage).
+  // The framework "Astro" never appears followed by these tokens, so a
+  // single negative-lookahead suffix is sufficient.
   const DANGEROUS = [
     // Framework identifiers
-    { term: 'astro', regex: /\bastro\b(?!naut|nom|logy|phys)/gi },
+    { term: 'astro', regex: /\bastro\b(?!naut|nom|logy|phys|\s+(?:Awani|Malaysia|Holdings|Berhad|Group))/gi },
     { term: 'svelte', regex: /\bsvelte\b/gi },
     { term: 'vercel', regex: /\bvercel\b/gi },
     { term: 'thefourthangle.vercel', regex: /thefourthangle\.vercel/gi },
