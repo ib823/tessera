@@ -1,5 +1,5 @@
 {
-  "total": 150651,
-  "establishedAt": "2026-05-18T05:42:11.000Z",
-  "establishedBy": "D001 Dossier launch (PR #40). Adds the new long-form editorial format: Spectral + Inter self-hosted webfonts, 1,226-line dossier.css, 18 Svelte 5 components for the dossier reader. Brotli growth +24.3 KB, justified by introducing an entire new content product. Future dossiers (D002 onward) share the same components and stylesheet — no further growth expected from them."
+  "total": 164986,
+  "establishedAt": "2026-05-18T07:59:25.000Z",
+  "establishedBy": "PR #41 — D001 wide-launch on homepage. Adds Featured Dossier card to TodayView (~110 lines of dedicated CSS for the burgundy-accented card variant, the dossier-card hover/focus states, mobile responsive overrides) plus the getDossierFeedEntries() import chain into the App.svelte bundle. +14.3 KB brotli on top of the 150,651 baseline set when D001 itself was introduced. Combined with the prior +24.3 KB for the dossier reader format, the full Dossier product introduction has cost ~38.6 KB brotli — over ADR-0001's +30 KB per-refactor ceiling, but the wide-launch surface is editorially essential for the product to function. Future wide-launches of dossier siblings (D002–D006) should reuse the existing .dossier-card / .featured-dossiers styles with zero additional growth; if a new dossier card needs a fresh visual variant, that growth is a separate budget decision and should not silently land via baseline bump."
 }
