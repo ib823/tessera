@@ -282,8 +282,21 @@
               {#if fig}
                 <div style:margin-top="56px">
                   <DossierFigure figure={fig} caption={fig.caption} sourceLine={fig.sourceLine} onZoom={openLightbox}>
+                    {@const isRaster = /\.(png|jpe?g|webp|avif|gif)$/i.test(fig.src ?? '')}
                     {@const Comp = FIGURE_COMPONENTS[fig.id]}
-                    {#if Comp}
+                    {#if isRaster && fig.src}
+                      <img
+                        src={fig.src}
+                        alt={fig.alt}
+                        loading="eager"
+                        decoding="async"
+                        width="1200"
+                        height="630"
+                        style:width="100%"
+                        style:height="auto"
+                        style:display="block"
+                      />
+                    {:else if Comp}
                       <Comp />
                     {/if}
                   </DossierFigure>
@@ -549,7 +562,22 @@
   onClose={closeLightbox}
 >
   {#if lightboxFigure && FIGURE_COMPONENTS[lightboxFigure.id]}
+    {@const isRasterLB = /\.(png|jpe?g|webp|avif|gif)$/i.test(lightboxFigure.src ?? '')}
     {@const Comp = FIGURE_COMPONENTS[lightboxFigure.id]}
-    <Comp />
+    {#if isRasterLB && lightboxFigure.src}
+      <img
+        src={lightboxFigure.src}
+        alt={lightboxFigure.alt}
+        loading="eager"
+        decoding="async"
+        style:width="100%"
+        style:height="auto"
+        style:max-height="92vh"
+        style:object-fit="contain"
+        style:display="block"
+      />
+    {:else}
+      <Comp />
+    {/if}
   {/if}
 </DossierLightbox>

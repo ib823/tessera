@@ -70,7 +70,7 @@ export function getDossiersInSeries(seriesId: string): Dossier[] {
  * the corresponding render path.
  * ---------------------------------------------------------------- */
 
-export const SHOW_DOSSIERS_IN_FEED: boolean = false;
+export const SHOW_DOSSIERS_IN_FEED: boolean = true;
 
 /** A minimal projection for the feed row. Keep aligned with whatever
  *  shape FeedRow.svelte currently consumes for an Issue — augment
