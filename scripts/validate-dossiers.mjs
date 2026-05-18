@@ -72,6 +72,54 @@ const REGISTER_WARNINGS = [
   /\bfurthermore\b/i,
 ];
 
+// Em-dash detector. Per CLAUDE.md §10 / docs/research/language-quality.md,
+// the em-dash (—, U+2014) is the single strongest visible signature of
+// LLM-generated prose. T4A's editorial voice is human; em-dashes must be
+// replaced with commas, colons, periods, or parentheses on every
+// reader-facing field. This is an ERROR, not a warning — em-dashes do not
+// ship.
+const EM_DASH = /—/g;
+
+// AI-tell vocabulary. These phrases are vanishingly rare in human editorial
+// writing but ubiquitous in LLM output. Flagged as warnings (soft) so a
+// writer can override on rare legitimate uses (e.g. "navigate" in literal
+// nautical sense, "robust" of a statistical method). Aggregate matters
+// more than any single flag.
+const LLM_TELL_WARNINGS = [
+  { name: 'delve / delving',           re: /\bdelv(e|ing|ed|es)\b/i },
+  { name: 'realm',                     re: /\brealm\b/i },
+  { name: 'tapestry',                  re: /\btapestry\b/i },
+  { name: 'multifaceted',              re: /\bmultifaceted\b/i },
+  { name: 'navigate (metaphorical)',   re: /\bnavigat(e|ing|ed)\b/i },
+  { name: 'leverage (verb)',           re: /\bleverag(e|ing|ed)\b/i },
+  { name: 'underscores / underscore',  re: /\bunderscores?\b/i },
+  { name: 'profound',                  re: /\bprofound(ly)?\b/i },
+  { name: 'robust',                    re: /\brobust\b/i },
+  { name: 'seamless',                  re: /\bseamless(ly)?\b/i },
+  { name: 'crucial',                   re: /\bcrucial(ly)?\b/i },
+  { name: 'cutting-edge',              re: /\bcutting[- ]edge\b/i },
+  { name: 'testament to',              re: /\ba testament to\b/i },
+  { name: 'embark on (journey)',       re: /\bembark on\b/i },
+  { name: 'in the realm of',           re: /\bin the realm of\b/i },
+  { name: 'it is worth noting',        re: /\bit is worth noting\b/i },
+  { name: "it's important to note",    re: /\bit'?s important to note\b/i },
+  { name: 'in conclusion',             re: /\bin conclusion[,\s]/i },
+  { name: 'in summary',                re: /\bin summary[,\s]/i },
+  { name: 'However, (sentence-start)', re: /(^|[.!?]\s+)However,/ },
+  { name: 'Notably, (sentence-start)', re: /(^|[.!?]\s+)Notably,/ },
+  { name: 'Importantly, (sentence-start)', re: /(^|[.!?]\s+)Importantly,/ },
+  { name: 'Crucially, (sentence-start)', re: /(^|[.!?]\s+)Crucially,/ },
+];
+
+// Reader-facing field paths within a section. The em-dash and LLM-tell
+// scans run ONLY on these — not on metadata (stageScoresNote, etc.) and
+// not on accessibility fields (alt text) where em-dashes are acceptable.
+const READER_FACING_FIELDS = [
+  'title', 'subtitle', 'intro', 'body', 'commentary', 'correction',
+  'claim', 'caption', 'sourceLine',
+];
+const READER_FACING_ARRAYS = ['bullets', 'whatYoullLearn'];
+
 let errors = [];
 let warnings = [];
 
@@ -221,7 +269,48 @@ function validateDossier(path) {
     }
     for (const re of REGISTER_WARNINGS) {
       if (re.test(allText)) {
-        warn(`${at}: register flag — soft word matched ${re} (consider rewording)`);
+        warn(`${at}: register flag, soft word matched ${re} (consider rewording)`);
+      }
+    }
+
+    /* ---------- 7b. em-dash and LLM-tell scan (reader-facing only) ---------- */
+    const readerFacingStrings = [];
+    for (const f of READER_FACING_FIELDS) {
+      if (typeof s[f] === 'string') readerFacingStrings.push([f, s[f]]);
+    }
+    for (const f of READER_FACING_ARRAYS) {
+      if (Array.isArray(s[f])) {
+        s[f].forEach((v, i) => {
+          if (typeof v === 'string') readerFacingStrings.push([`${f}[${i}]`, v]);
+        });
+      }
+    }
+    // timeline events
+    if (Array.isArray(s.events)) {
+      s.events.forEach((ev, i) => {
+        for (const k of ['label', 'outcome', 'founder']) {
+          if (typeof ev[k] === 'string') readerFacingStrings.push([`events[${i}].${k}`, ev[k]]);
+        }
+      });
+    }
+    // further_reading items
+    if (Array.isArray(s.items)) {
+      s.items.forEach((it, i) => {
+        for (const k of ['title', 'note', 'category']) {
+          if (typeof it[k] === 'string') readerFacingStrings.push([`items[${i}].${k}`, it[k]]);
+        }
+      });
+    }
+
+    for (const [field, val] of readerFacingStrings) {
+      const matches = val.match(EM_DASH);
+      if (matches) {
+        err(`${at}.${field}: ${matches.length} em-dash(es) detected. Em-dashes are the strongest LLM-prose signature (CLAUDE.md §10). Replace with comma, colon, period, or parentheses.`);
+      }
+      for (const tell of LLM_TELL_WARNINGS) {
+        if (tell.re.test(val)) {
+          warn(`${at}.${field}: LLM-tell phrase "${tell.name}" matched. Consider rewording.`);
+        }
       }
     }
   }
@@ -244,6 +333,17 @@ function validateDossier(path) {
       if (!f.id) err(`figure missing id`);
       if (!f.alt) err(`figure ${f.id}: missing alt text (required for a11y)`);
       if (!f.src) err(`figure ${f.id}: missing src`);
+      // Em-dash scan on reader-facing figure fields (title, caption, sourceLine).
+      // alt is excluded — accessibility text doesn't render visually and
+      // em-dashes in alt are read aloud as "dash" by screen readers.
+      for (const k of ['title', 'caption', 'sourceLine']) {
+        if (typeof f[k] === 'string') {
+          const m = f[k].match(EM_DASH);
+          if (m) {
+            err(`figure ${f.id}.${k}: ${m.length} em-dash(es) — replace with comma, colon, period, or parentheses (CLAUDE.md §10).`);
+          }
+        }
+      }
       // Only check files for external assets (PNG/JPG/SVG on disk),
       // not for code-rendered figures (handled by Svelte components).
       const isExternalAsset = /\.(png|jpe?g|gif|webp)$/i.test(f.src || '');
