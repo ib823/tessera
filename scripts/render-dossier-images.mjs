@@ -55,19 +55,20 @@ for (const dossierId of readdirSync(DOSSIERS_ROOT)) {
     const pngName = file.replace(/\.svg$/, '.png');
     const pngPath = join(DOSSIERS_ROOT, dossierId, pngName);
 
-    // Skip if PNG is newer than source SVG
-    try {
-      const svgStat = statSync(svgPath);
-      if (existsSync(pngPath)) {
-        const pngStat = statSync(pngPath);
-        if (pngStat.mtimeMs > svgStat.mtimeMs) {
-          console.log(`  ${file} → ${pngName} (up-to-date, skipped)`);
-          skipped++;
-          continue;
-        }
-      }
-    } catch (e) {
-      // fall through and re-render
+    // Skip if a PNG already exists at the target path. Two reasons:
+    //   1. mtime checks are unreliable: `git clone` resets all timestamps,
+    //      so on a fresh CI checkout, SVG and PNG always look "same age"
+    //      and an mtime-based comparison would re-render every time.
+    //   2. Externally-generated PNGs (e.g. the canonical Picasso cover
+    //      pulled from an image model, then committed at the target path)
+    //      MUST NOT be overwritten by an SVG fallback. If the editor wants
+    //      the SVG to be re-rendered, they explicitly delete the PNG.
+    // The SVG source stays in /sources/ as a recovery fallback; the build
+    // honours whatever PNG is committed at the canonical location.
+    if (existsSync(pngPath)) {
+      console.log(`  ${file} → ${pngName} (PNG exists, skipped)`);
+      skipped++;
+      continue;
     }
 
     try {
