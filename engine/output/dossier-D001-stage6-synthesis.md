@@ -30,6 +30,61 @@ Stage 2 returned `bias_score = 1.5` (very low — dossier reads as non-partisan 
 
 ---
 
+## Step 7 — Editor verification round (2026-05-17)
+
+Two independent verifiers ran the editor-verify-batch prompt. Reconciliation results below; full outputs saved at `engine/output/dossier-D001-editor-verify-batch-verifier1.json` and `dossier-D001-editor-verify-batch-verifier2.json`.
+
+### RESOLVED — Act number disagreement
+
+- Both verifiers confirmed **A1663** as the Act number for the Constitution (Amendment) (No. 3) Act 2022 inserting Article 49A.
+- Stage 2 (Gemini) was wrong on the number in the original review; Stage 3 (ChatGPT, citing Malaysian Bar Council) was right.
+- The A1648 confusion came from a separate constitutional amendment Act in 2022 concerning Sabah/Sarawak (MA63).
+- Dossier `article-49a-text` source updated: "inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663), gazetted 31 August 2022".
+- Editor-action flag on the Act number removed; flag retained on verbatim quote pending direct gazette pull.
+
+### RESOLVED — Five of six new fig-2 voter counts
+
+Both verifiers agreed on these GE15 (PRU15) registered voter counts:
+
+| Constituency | P-code | Voters |
+|---|---|---|
+| Kapar | P109 | 189,369 |
+| Kota Raja | P111 | 244,712 |
+| Klang | P110 | 208,913 |
+| Cameron Highlands | P078 | 46,020 |
+| Lawas | P222 | 33,655 |
+
+Combined with the prior-verified four (Bangi 303,430, Damansara 239,103, Putrajaya 42,881, Igan 28,290) the fig-2 sample is **nine constituencies confirmed**.
+
+### REMAINING — Hulu Rajang voter count disputed
+
+Verifier 1 returned 29,815 (citing the EC age-breakdown PDF); Verifier 2 returned 43,438 (citing the EC gender-breakdown PDF). Both PDFs should produce the same total — one verifier mis-read. **Action: drop Hulu Rajang from the fig-2 sample.** The dossier's argument (Bangi 303k vs Igan 28k, ratio of 10.7:1) is unaffected by Hulu Rajang's presence or absence. Editor can restore Hulu Rajang after direct PDF verification if desired.
+
+### RESOLVED — Sarawak SST annual revenue (with caveats)
+
+Verifier 1 returned all six years VERIFIED against Sarawak state budget speeches:
+- 2019: RM2.957bn ACTUAL
+- 2020: RM2.744bn ACTUAL
+- 2021: RM3.162bn ACTUAL
+- 2022: RM4.231bn ACTUAL
+- 2023: RM3.844bn ESTIMATE
+- 2024: RM3.518bn BUDGET PROJECTION
+
+Verifier 2 independently confirmed 2019 and 2023 (with a different 2023 estimate of RM3.424bn from a Premier's-office attachment URL), and 2024 (RM3.6bn as October collection). Could not independently verify 2020–2022.
+
+**Action:** use Verifier 1's figures in fig-3 with visual differentiation between ACTUAL bars (full burgundy) and ESTIMATE/PROJECTION bars (50% opacity). Caveat block in caption notes the Verifier 2 disagreement on 2023 and 2024 figures. Editor should pull the actual budget-speech PDFs at the URLs cited by Verifier 1 before publication to confirm.
+
+Dossier `sarawak-fiscal-lever` body text updated from the vague "two-to-four-billion-ringgit range" to the more precise: "Audited collections reported in successive state budget speeches ranged from RM2.74 billion in 2020 to RM4.23 billion in 2022, with cumulative collection over 2019 to 2023 in the range of RM15 to 17 billion."
+
+### Updated scores after editor verification round
+
+- `stageScores.fc` lifted from 60 to 82 (Stage 3 first-pass score reflected unresolved items; most items now resolved).
+- `stageScores.sr` lifted from 78 to 80 (synthesizer's own work withstood verification).
+- `finalScore` lifted from 72.2 to 76.2.
+- `published` remains **false** pending: Hulu Rajang resolution (or drop), Stage 3 rerun on synthesized text, and final Phase 6 legal/accuracy walk by the editor.
+
+---
+
 ## Section-by-section changes
 
 ### Section: `tldr` (bullet 4)

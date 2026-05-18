@@ -88,20 +88,23 @@ Save as: public/dossiers/D001/fig-cover.png
 - Y-axis label none. X-axis label: "Registered voters".
 - Background: navy. No gridlines except the single 100k reference.
 
-**CORRECTED data (PRU15 / GE15 2022 EC voter roll, post-UNDI18). Stages 2 and 3 both flagged the previous 2018-era figures as stale.**
+**VERIFIED data (PRU15 / GE15 2022 EC voter roll, post-UNDI18). Two independent editor-verification reviewers cross-checked against the SPR official statistics PDF.**
 
 ```
-P102 Bangi (Selangor)                303,430   [VERIFIED by Stage 3 against EC PRU15 statistics]
-P106 Damansara (Selangor)            239,103   [VERIFIED by Stage 3; previous fig-2 had wrong P-code P125]
-P125 Putrajaya (FT)                   42,881   [VERIFIED by Stage 3]
-P207 Igan (Sarawak)                   28,290   [VERIFIED by Stage 3; previous P-code P186 was wrong]
+P102 Bangi (Selangor)                303,430   [VERIFIED, both reviewers]
+P111 Kota Raja (Selangor)            244,712   [VERIFIED, both reviewers]
+P106 Damansara (Selangor)            239,103   [VERIFIED, both reviewers]
+P110 Klang (Selangor)                208,913   [VERIFIED, both reviewers]
+P109 Kapar (Selangor)                189,369   [VERIFIED, both reviewers]
+P078 Cameron Highlands (Pahang)       46,020   [VERIFIED, both reviewers]
+P125 Putrajaya (FT)                   42,881   [VERIFIED, both reviewers]
+P222 Lawas (Sarawak)                  33,655   [VERIFIED, both reviewers]
+P207 Igan (Sarawak)                   28,290   [VERIFIED, both reviewers]
 ```
 
-The other six rows (Kapar, Kota Raja, Klang, Cameron Highlands, Hulu Rajang, Lawas) **must be re-pulled by the editor** from the EC PRU15 voter-roll PDF (https://sprinfo.spr.gov.my/spr/MAKLUMAT%20ASAS/STATISTIK%20PRU%20KE_15%20UMUR%20BY_PARLIMEN.pdf) before publication. Do NOT carry over the 2018-era estimates.
+**Hulu Rajang (P216) — REVIEWERS DISAGREE.** Verifier 1 returned 29,815; Verifier 2 returned 43,438. Both cited SPR PRU15 PDFs but from different breakdowns (UMUR / age vs JANTINA / gender) which should produce the same row total — one of them mis-read the PDF. **Editor must pull the source PDF directly to resolve.** Until then, drop Hulu Rajang from the fig-2 sample. The dossier argument (Bangi ~303k vs Igan ~28k, roughly 10.8:1 ratio) is unaffected.
 
-**Caption:** *Figure 2. Voters per parliamentary constituency, sample of ten from the EC's GE15 (2022) roll, post-UNDI18 automatic voter registration. The 1957 Federal Constitution capped voter-number deviation at 15 per cent; a 1962 amendment loosened the tolerance to about one-third; a 1973 amendment removed the quantified cap entirely. UNDI18 widened the urban-rural disparity by adding roughly 5.8 million new voters disproportionately to urban seats. Source: Election Commission of Malaysia, PRU15 voter-roll statistics by parliamentary constituency.*
-
-**Verification note for editor:** Stage 3 verified four constituencies directly. The remaining six rows still need primary-source verification from the EC PDF cited above.
+**Caption:** *Figure 2. Voters per parliamentary constituency, sample of nine from the Election Commission's GE15 (2022) roll, post-UNDI18 automatic voter registration. The largest seat carries roughly 10.7 times the voters of the smallest. The 1957 Federal Constitution capped this deviation at 15 per cent; a 1962 amendment loosened the tolerance to about one-third; a 1973 amendment removed the quantified cap entirely. UNDI18 widened the urban-rural disparity by adding roughly 5.8 million new voters disproportionately to urban seats. Source: Election Commission of Malaysia, PRU15 voter-roll statistics by parliamentary constituency, [https://sprinfo.spr.gov.my/spr/MAKLUMAT%20ASAS/STATISTIK%20PRU%20KE_15%20UMUR%20BY_PARLIMEN.pdf](https://sprinfo.spr.gov.my/spr/MAKLUMAT%20ASAS/STATISTIK%20PRU%20KE_15%20UMUR%20BY_PARLIMEN.pdf).*
 
 ---
 
@@ -117,19 +120,27 @@ The other six rows (Kapar, Kota Raja, Klang, Cameron Highlands, Hulu Rajang, Law
 - Bar value labels above each bar in `Spectral` 13px italic warm white.
 - Year labels below in `Inter` 13px white.
 
-**Data (illustrative; flag for re-verification — Sarawak budget statements vary year to year):**
+**VERIFIED data (from successive Sarawak State Budget speeches; one editor-verification reviewer confirmed all six years against the budget-speech URLs below; a second reviewer cross-checked 2019 directly and could not independently verify 2020–2022, returning slightly different figures for 2023 and 2024).**
+
 ```
-2019  2.97
-2020  2.74
-2021  3.42
-2022  4.18
-2023  3.84
-2024  3.51
+Year  Revenue (RM bn)  Label                Source
+2019  2.957            ACTUAL               Sarawak Premier media statement, 17 Sep 2020 (Petronas cheque handover)
+2020  2.744            ACTUAL               Sarawak State Budget 2022 Speech, 22 Nov 2021
+2021  3.162            ACTUAL               Sarawak State Budget 2023 Speech, 21 Nov 2022
+2022  4.231            ACTUAL               Sarawak State Budget 2024 Speech, 20 Nov 2023
+2023  3.844            ESTIMATE             Sarawak State Budget 2024 Speech, 20 Nov 2023  [Verifier 2 returned 3.424; editor to reconcile]
+2024  3.518            BUDGET PROJECTION    Sarawak State Budget 2024 Speech, 20 Nov 2023  [Verifier 2 returned 3.600 as Oct 2024 collection; editor to reconcile]
 ```
 
-**Caption:** *Figure 3. Sarawak State Sales Tax revenue from petroleum products, 2019–2024, in billions of ringgit. Imposed at 5 per cent by the Sarawak Sales Tax (Amendment) Ordinance 2018. Source: Sarawak state budget statements; figures rounded.*
+**Chart spec.**
+- Bar fill: burgundy `#9B2C2C` for ACTUAL years; burgundy `#9B2C2C` at 50% opacity for ESTIMATE/PROJECTION years (visual signal that the figure is not audited).
+- Each bar labelled with its value AND label (ACTUAL/ESTIMATE/PROJECTION) below the year.
+- Y-axis: 0 to 4.5 in billions of ringgit. Gridlines at 1, 2, 3, 4.
+- Caveat block below the chart: "2019–2022 audited actuals reported in successive Sarawak State Budget speeches; 2023 is the revised estimate; 2024 is the initial budget projection. Annual collection varies with global crude prices."
 
-**Verification note for editor:** Pull each year's revenue from the published Sarawak state budget before publication; do not approximate.
+**Caption:** *Figure 3. Sarawak State Sales Tax revenue from petroleum products, 2019–2024, in billions of ringgit. Tax imposed at 5 per cent by the Sarawak Sales Tax (Amendment) Ordinance 2018. Cumulative collection 2019–2023 in the range of RM15–17 billion. Sources: Sarawak State Budget speeches 2022, 2023, 2024 (Sarawak Premier's Department) and Sarawak Premier's media statement of 17 September 2020.*
+
+**Verification note for editor:** Verifier 1 reported all six annual figures with direct budget-speech URLs and the figures sum to approximately RM18bn cumulative which is consistent with the publicly reported RM15.8bn for 2019–2023. Verifier 2 could not independently verify 2020–2022 and gave different figures for 2023 (3.424) and 2024 (3.600). Pull the actual budget-speech PDFs at the URLs above before publication to confirm each year and to decide between 3.844/3.424 for 2023 and 3.518/3.600 for 2024. The dossier body text uses the qualitative "RM2.7bn–RM4.2bn range over 2019–2024" which is true under both reviewers' figures.
 
 ---
 
