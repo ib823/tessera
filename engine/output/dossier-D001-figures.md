@@ -88,23 +88,20 @@ Save as: public/dossiers/D001/fig-cover.png
 - Y-axis label none. X-axis label: "Registered voters".
 - Background: navy. No gridlines except the single 100k reference.
 
-**Data (approximate, per 2018 delineation; flag for re-verification before publication):**
+**CORRECTED data (PRU15 / GE15 2022 EC voter roll, post-UNDI18). Stages 2 and 3 both flagged the previous 2018-era figures as stale.**
+
 ```
-P102 Bangi (Selangor)               ~178,000
-P125 Damansara (Selangor)           ~180,000
-P114 Kapar (Selangor)               ~144,000
-P109 Kota Raja (Selangor)           ~134,000
-P108 Klang (Selangor)               ~118,000
-P084 Cameron Highlands (Pahang)     ~32,000
-P125 Putrajaya (FT)                 ~28,000
-P186 Igan (Sarawak)                 ~19,000
-P176 Hulu Rajang (Sarawak)          ~22,000
-P191 Lawas (Sarawak)                ~21,000
+P102 Bangi (Selangor)                303,430   [VERIFIED by Stage 3 against EC PRU15 statistics]
+P106 Damansara (Selangor)            239,103   [VERIFIED by Stage 3; previous fig-2 had wrong P-code P125]
+P125 Putrajaya (FT)                   42,881   [VERIFIED by Stage 3]
+P207 Igan (Sarawak)                   28,290   [VERIFIED by Stage 3; previous P-code P186 was wrong]
 ```
 
-**Caption:** *Figure 2. Voters per parliamentary constituency, sample of ten from the 2018 delineation. The 1957 Federal Constitution capped this deviation at 15 per cent; the cap was removed in 1962. Source: Election Commission of Malaysia voter roll, T4A selection.*
+The other six rows (Kapar, Kota Raja, Klang, Cameron Highlands, Hulu Rajang, Lawas) **must be re-pulled by the editor** from the EC PRU15 voter-roll PDF (https://sprinfo.spr.gov.my/spr/MAKLUMAT%20ASAS/STATISTIK%20PRU%20KE_15%20UMUR%20BY_PARLIMEN.pdf) before publication. Do NOT carry over the 2018-era estimates.
 
-**Verification note for editor:** Numbers approximate; pull current EC roll before publication.
+**Caption:** *Figure 2. Voters per parliamentary constituency, sample of ten from the EC's GE15 (2022) roll, post-UNDI18 automatic voter registration. The 1957 Federal Constitution capped voter-number deviation at 15 per cent; a 1962 amendment loosened the tolerance to about one-third; a 1973 amendment removed the quantified cap entirely. UNDI18 widened the urban-rural disparity by adding roughly 5.8 million new voters disproportionately to urban seats. Source: Election Commission of Malaysia, PRU15 voter-roll statistics by parliamentary constituency.*
+
+**Verification note for editor:** Stage 3 verified four constituencies directly. The remaining six rows still need primary-source verification from the EC PDF cited above.
 
 ---
 
@@ -143,11 +140,12 @@ P191 Lawas (Sarawak)                ~21,000
 **Spec.**
 - A horizontal arrangement of three nodes representing parliamentary blocs in a hung chamber: left bloc 80, centre bloc 30, right bloc 80.
 - Each bloc rendered as a stylised cluster of dots representing seats, with total in `Spectral` 24px italic warm white below.
-- Two curved arcs above the diagram connecting (left + centre) → "Majority A 110" and (right + centre) → "Majority B 110", both drawn in burgundy `#9B2C2C`.
-- The centre bloc is the only one that appears in both possible majorities. This is marked with a thin burgundy ring around it.
-- A small annotation in `Inter` 11px warm white below the centre: "Necessary partner in either coalition".
+- Two curved arcs above the diagram connecting (left + centre) → "Majority A: 110" and (right + centre) → "Majority B: 110", both drawn in burgundy `#9B2C2C`.
+- The centre bloc is the only one that appears in both possible two-bloc majorities. Mark it with a thin burgundy ring.
+- A small annotation in `Inter` 11px warm white below the centre: "Necessary partner in either two-bloc majority. 30 of 190 seats = ~16% of seats but ~33% of Shapley-Shubik bargaining power."
+- **Stage 2 flag:** add a small secondary panel or footnote below the main diagram showing a third configuration: "Grand coalition: 80 + 80 = 160, no pivot value for the 30-seat bloc. The pivot premium evaporates whenever the two large blocs choose to govern together."
 
-**Caption:** *Figure 4. The pivotal player in a hung chamber. The 30-seat bloc holds bargaining power disproportionate to its vote share because it is the necessary partner in either feasible majority. Formal name: Shapley–Shubik power index.*
+**Caption:** *Figure 4. The pivotal player in a hung chamber, and the case where the pivot evaporates. The 30-seat bloc holds bargaining power disproportionate to its seat share when neither large bloc has a majority alone — formally, the Shapley–Shubik power index makes the 30-seat bloc roughly one-third of the bargaining power on about one-sixth of the seats. The exception: when the two large blocs form a grand coalition (the live alternative in Malaysian unity-government arithmetic), the pivot premium vanishes. New launches play this game; grand coalitions break it.*
 
 **Optional image-generation alternative (canonical T4A line-art style):** draw three figures, two larger flanking and one smaller centre, with two curved bridges connecting the smaller centre to each of the larger ones — as a single continuous white line on navy. T4A signature continues the stroke. This version reads more emotionally; the schematic SVG reads more analytically. Recommend SVG.
 

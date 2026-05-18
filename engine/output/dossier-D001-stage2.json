@@ -1,0 +1,84 @@
+{
+  "bias_score": 1.5,
+  "political_lean_estimate": 0.0,
+  "ethnic_framing_estimate": 0.2,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.2,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.8,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [],
+  "gender_flags": [
+    {
+      "section_id": "launches-timeline",
+      "quote": "KeADILan 1999 (Wan Azizah/Anwar, 5 seats, durable)",
+      "why_biased": "Gender erasure/tokenisation. While Dr. Wan Azizah Wan Ismail was the foundational president who kept the party alive during Anwar's incarceration, her agency is collapsed immediately into 'Wan Azizah/Anwar' without exploring the specific structural dynamics of female leadership during the Reformasi movement.",
+      "fix": "Acknowledge Wan Azizah's distinct institutional role as the pivotal driver and primary registration vehicle for the party during the 1999 cycle."
+    }
+  ],
+  "omission_flags": [
+    "The analysis completely omits any representation or impact of youth voters (UNDI18) on these structural openings, despite the fact that the massive influx of young voters fundamentally altered the denominator of rural vs urban seats."
+  ],
+  "evasion_flags": [],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "WRONG",
+      "section_id": "article-49a-text",
+      "quote": "or on the date that the Member ceases to be a member of, or is expelled from, the political party for which he stood in the election.",
+      "why": "The text provided misquotes Article 49A. The actual gazetted text of Article 49A(1)(a) states: '(i) he resigns as a member of the political party; or (ii) he ceases to be a member of the political party;'. The explicit phrase 'or is expelled from' does not exist in 49A(1)(a)(ii); expulsion is legally captured under 'ceases to be a member'.",
+      "fix": "Revert the quote to the exact constitutional text from the Constitution (Amendment) (No. 3) Act 2022."
+    },
+    {
+      "sin": "UNDERCLAIM",
+      "section_id": "malapportionment",
+      "quote": "Bangi P102 ≈ 178,000 voters",
+      "why": "Pre-UNDI18 data (2018 delineation cycle). In GE15, following automatic voter registration, Bangi's electorate ballooned to 303,430 voters. Using 178k underclaims the actual severity of malapportionment today.",
+      "fix": "Update Bangi to ~303,000 to reflect post-GE15 reality."
+    }
+  ],
+  "figure_flags": [
+    {
+      "figure_id": "fig-2",
+      "concern": "Mixed, outdated 2018-cycle figures rather than GE15 EC roll. Damansara had over 239,000 voters and Bangi over 303,000 voters in GE15, making the visual scale misleading.",
+      "fix": "Re-plot using GE15 (2022) EC data."
+    },
+    {
+      "figure_id": "fig-4",
+      "concern": "The conceptual model assumes absolute pivot logic where the 30-seat bloc is strictly necessary. It fails to account for the live alternative used in modern Malaysian politics: a grand unity coalition or cross-bench confidence-and-supply agreement that completely bypasses the minor pivot player.",
+      "fix": "Add a visual variant or note demonstrating how a grand coalition between the two 80-seat blocs breaks the Shapley value of the 30-seat vehicle."
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "Federal Constitution Article 49A anti-hopping provisions",
+      "status": "VERIFIED",
+      "primary_source": "Constitution (Amendment) (No. 3) Act 2022 (Act A1648), Parliament of Malaysia Official Gazette",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Bangi P102 ≈ 178,000 voters; Putrajaya P125 ≈ 28,000 voters; Igan P186 ≈ 19,000 voters",
+      "status": "WRONG",
+      "primary_source": "Election Commission of Malaysia GE15 Electorate Roll Statistics",
+      "corrected_value": "Bangi P102: 303,430 voters; Putrajaya P125: 42,881 voters; Igan P186: 28,290 voters."
+    },
+    {
+      "claim": "GE15 results: PH 82, PN 74, BN 30, GPS 23, GRS 6, Warisan 3, Others 4",
+      "status": "VERIFIED",
+      "primary_source": "EC Dec 2022 Final Declared Results (including Padang Serai and Baram delayed polls)",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Sarawak State Sales Tax revenue of RM2.7bn–RM4bn per year",
+      "status": "VERIFIED",
+      "primary_source": "Sarawak State Budget Speeches (2019-2024)",
+      "corrected_value": ""
+    }
+  ],
+  "overall_assessment": "The dossier provides an exceptionally sharp, non-partisan, structural breakdown of Malaysian political mechanics that avoids superficial cheerleading or ideological bias. However, its accuracy is significantly undermined by its reliance on pre-UNDI18 (2018) constituency data, which severely understates the current reality of malapportionment, alongside an altered, imprecise quote of Article 49A. Fixing these factual components will transform this into an authoritative, publication-ready editorial masterpiece.",
+  "stage2_vs_stage3_disagreement_note": "Stage 2 (Gemini) reports the Act number as A1648; Stage 3 (ChatGPT, citing Malaysian Bar Council) reports A1663. The two reviewers disagree on the precise Act citation. The editor must resolve this by pulling the gazetted Act directly before publication. The Act NAME ('Constitution (Amendment) (No. 3) Act 2022') is uncontested by both reviewers and is safe to use; the Act NUMBER is currently flagged in the dossier with an editor-verification note."
+}
