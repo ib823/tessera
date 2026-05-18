@@ -40,6 +40,11 @@
   function fmt(n: number): string {
     return n.toLocaleString('en-MY');
   }
+
+  // Pre-computed reference-line x-coordinate (the 100k tick).
+  // Inlined here because top-level `{@const}` is not legal in Svelte 5
+  // template scope — only inside {#if}, {#each}, {:then}, {:catch} blocks.
+  const refX = PLOT.x + scale(100_000);
 </script>
 
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -58,10 +63,9 @@
   </g>
 
   <!-- 100k reference line (subtle) -->
-  {@const ref = PLOT.x + scale(100_000)}
-  <line x1={ref} y1={PLOT.y - 8} x2={ref} y2={PLOT.y + PLOT.h + 6}
+  <line x1={refX} y1={PLOT.y - 8} x2={refX} y2={PLOT.y + PLOT.h + 6}
         stroke="#3F1212" stroke-width="1" stroke-dasharray="2 4" />
-  <text x={ref} y={PLOT.y + PLOT.h + 24} text-anchor="middle"
+  <text x={refX} y={PLOT.y + PLOT.h + 24} text-anchor="middle"
         font-family="Inter, system-ui, sans-serif" font-size="11"
         fill="#9CA3AF" letter-spacing="0.04em">100,000</text>
 
