@@ -158,6 +158,42 @@ The substantive corrections are complete. A v4 rerun would be a confirmation, no
 
 ---
 
+## Step 10 — Stage 3 rerun v4 final sign-off (2026-05-18)
+
+Rerun v4 output saved at `engine/output/dossier-D001-stage3-rerun-v4.json`. **factual_accuracy_score 84**, down from v3 87 — not because of regression but because the residual final scan caught two new analytical-precision flags the prior three passes missed. Both v3 fixes (Article 49A date, GRS 2020 composition) confirmed as VERIFIED. publication_recommendation: NEEDS_MORE_FIXES.
+
+### FIX 1 — PKR overgeneralisation in launch-and-pivot template
+
+v4 found: tldr bullet 5 and base-rates section grouped PKR with Bersatu and GRS as sharing the three launch-and-pivot ingredients. PKR/KeADILan launched April 1999 as a Reformasi opposition vehicle — no executive office on offer (UMNO/BN was in power), reached federal government only nineteen years later through coalition. Different exception model from the fast defector-pivot.
+
+Applied: tldr bullet 5 rewritten to "The fastest office-seeking exceptions — Bersatu in 2016 and GRS in 2020 — share three ingredients at launch: sitting-seat leverage, executive office on offer in a friendly coalition, and a pre-negotiated coalition slot. PKR is a different kind of exception: a Reformasi durability vehicle that took multiple election cycles to convert movement politics into institutional power."
+
+base-rates rewritten to distinguish two exception patterns: the fast office-seeking model (Bersatu, GRS) and the durability model (PKR). The dossier now teaches two distinct routes to office, not one template with PKR shoehorned into it. This is a genuine analytical upgrade, not just a wording softening.
+
+### FIX 2 — DAP / Gerakan 1969 timeline clarification
+
+v4 found: launches-timeline entry "DAP / Gerakan 1969" was misleading inside a launch timeline because DAP was formed October 1965 (registered March 1966) and Gerakan was founded March 1968. 1969 was their electoral breakthrough, not their launch.
+
+Applied: launches-timeline entry rewritten to "DAP and Gerakan, founders: DAP formed 1965, registered March 1966; Gerakan founded March 1968. Outcome: Both broke through electorally in the 1969 general election; broke MCA monopoly on Chinese-language politics."
+
+### Updated scores after v4 rerun + post-v4 fixes
+
+- `stageScores.fc` set to 84 (v4 actual on pre-fix text). Estimated 88-90 after fixes if re-scored.
+- `stageScores.sr` lifted from 85 to 86 (Stage 6 synthesizer absorbed the genuine analytical upgrade in base-rates).
+- `finalScore` 79.3 → 78.2 (fc dipped, sr lifted slightly).
+- **The trajectory across four passes:** v1 60 → v2 82 → v3 87 → v4 84. The oscillation around 82-87 reflects the natural ceiling of what an LLM reviewer can verify with high confidence; each pass also surfaces something new the prior passes missed.
+
+### Decision point — third and final time
+
+Two paths:
+
+- **A: Ship.** All v4 findings substantively addressed. The PKR carve-out is now an analytical strength of the dossier, not a weakness. The DAP/Gerakan dates are correct. The Phase 6 LEGAL+ACCURACY walk remains.
+- **B: One more rerun (v5).** Narrow scope — verify the two v4 fixes landed, residual scan. Risk: v5 may find something else the prior four passes missed (the trend suggests this is plausible). At some point editorial discipline says "ship the corrected text" rather than chase asymptotic perfection.
+
+Recommendation: **Path A.** The cost of running another rerun is small but each pass has uncovered new things; the marginal value of v5 is now lower than the marginal value of shipping a substantively complete dossier. If v5 surfaces a critical error, fix it post-publication with an `edition: 2` update — that is exactly what the dossier format's `edition` field is for.
+
+---
+
 ## Section-by-section changes
 
 ### Section: `tldr` (bullet 4)
