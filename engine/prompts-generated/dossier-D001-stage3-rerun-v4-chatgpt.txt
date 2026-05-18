@@ -1,0 +1,140 @@
+=================================================================
+T4A DOSSIER D001 — STAGE 3 RERUN v4 FINAL SIGN-OFF (CHATGPT)
+=================================================================
+
+INSTRUCTIONS FOR THE OPERATOR (do not paste this header line):
+- Open a FRESH ChatGPT chat (do NOT reuse v2 or v3 chats).
+- Enable Browse with Bing.
+- Use GPT-4o or later with the longest-thinking mode available.
+- Copy everything BELOW the next divider line and paste as a single prompt.
+- Save the JSON response to engine/output/dossier-D001-stage3-rerun-v4.json
+- This is the FINAL sign-off. If READY_TO_PUBLISH, the dossier ships.
+
+=================================================================
+PASTE STARTS HERE
+=================================================================
+
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+This is the FOURTH and final pass of Stage 3 fact verification on a Malaysian editorial dossier (D001). Prior scores: v1 60, v2 82, v3 87. v3 verdict was NEEDS_MORE_FIXES because of two narrow errors that the editor has now applied per your exact suggested wording. Your task is to verify both fixes landed correctly, do a final residual-error scan, and return either READY_TO_PUBLISH or a specific list of remaining blockers.
+
+=== ACCURACY REQUIREMENT ===
+
+For every fact you check, you MUST independently verify it using web search against a primary source.
+
+PRIMARY SOURCE = government document, gazette, court ruling, peer-reviewed paper, or named authoritative outlet citing a separately-checked primary.
+
+=== WHAT v3 FLAGGED, AND HOW IT WAS FIXED ===
+
+v3 score: 87. publication_recommendation: NEEDS_MORE_FIXES. Two narrow new errors:
+
+FIX 1 — Article 49A Royal Assent vs Gazette publication date.
+
+v3 found: "Act A1663, gazetted 31 August 2022" — 31 August was Royal Assent; Gazette publication was 6 September 2022.
+
+EDITOR APPLIED (per your suggested wording): the article-49a-text section's `source` field now reads:
+
+"Federal Constitution of Malaysia, Article 49A, inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663) — received Royal Assent on 31 August 2022 and published in the Gazette on 6 September 2022"
+
+VERIFY: Is this distinction now correctly captured?
+
+FIX 2 — GRS 2020 vs 2022 composition.
+
+v3 found: "Umbrella for Bersatu Sabah, PAS, STAR, SAPP" conflated the 2020 election umbrella (PN+BN+PBS) with the 2022 formal GRS registration (Bersatu, PBS, STAR, SAPP — without BN and PAS).
+
+EDITOR APPLIED (per your suggested wording): the grs-2020 section body now reads:
+
+"Gabungan Rakyat Sabah was formed in the weeks immediately before the September 2020 Sabah state election as a loose electoral umbrella of Perikatan Nasional, Barisan Nasional and Parti Bersatu Sabah. Its product was the umbrella itself: a brand that let component parties contest without splitting the anti-Warisan vote under first-past-the-post. It won. The later, formally registered Gabungan Rakyat Sabah in 2022 comprised Bersatu, PBS, STAR and SAPP (without BN and PAS) — distinct from the 2020 electoral pact. The lesson taken across the corridor was that the brand is the product, and speed beats depth..."
+
+VERIFY: Does this now correctly distinguish the 2020 electoral pact from the 2022 registered GRS?
+
+All nine v2 tightenings were confirmed as defensible in v3. No re-verification needed on those.
+
+=== YOUR TASK ===
+
+1. Verify FIX 1: the Article 49A source line correctly distinguishes Royal Assent (31 Aug 2022) from Gazette publication (6 Sep 2022).
+2. Verify FIX 2: the grs-2020 body correctly distinguishes the 2020 electoral umbrella from the 2022 registered GRS.
+3. Final residual scan: walk the full text below for any error the prior three passes might have missed.
+4. Re-score factual_accuracy_score.
+5. Return publication_recommendation: READY_TO_PUBLISH if score >= 85 AND no remaining cardinal sins. Otherwise NEEDS_MORE_FIXES with a specific list.
+
+=== SYNTHESIZED DOSSIER TEXT (post-v3-fix, FINAL) ===
+
+[Section: cover] Title: How New Parties Are Built in Malaysia. Subtitle: A Field Guide to the Launch-and-Pivot Playbook. 22-min read.
+
+[Section: tldr] Bullets:
+1. A new Malaysian party in the 12 months before an election is almost never trying to win the country — it is trying to win the negotiation the morning after the count.
+2. The prize is pivotal-player status: enough seats to be the necessary coalition partner in a fragmented chamber.
+3. Six structural conditions make Malaysia uniquely fertile soil: low registration bar, ethnic cleavages, portable patronage, post-electoral coalition formation, the 2022 anti-hopping law's party-level loophole, and personalist politics.
+4. Sabah is the laboratory; the state has had eight ruling configurations in forty years. Sarawak's GPS is the stable counter-example — fiscally anchored by petroleum sales-tax revenue of roughly RM3 to RM4 billion a year, in a state assembly where opposition representation has shrunk from six members to two of eighty-two as of April 2024.
+5. Most new parties fail. The exceptions — Bersatu, PKR, GRS — share three ingredients: defector with sitting seats, executive office on offer, pre-negotiated coalition slot.
+6. Other democracies block this move with thresholds, public-funding rules, ballot-access barriers, and party-property law. Malaysia has chosen none of these defences.
+7. A voter is not the audience for the launch speech. A voter is the resource the launcher needs to be in a room the voter cannot see. Vote by judging who will be in that room — and push, where you can, for that room to be opened to outside scrutiny.
+
+[Section: pivotal-player] In a chamber where no single bloc commands a majority, the small party with the right number of seats holds bargaining power wildly out of proportion to its seat share. The formal name is the Shapley-Shubik power index. A 30-seat bloc in an 80-80-30 chamber holds about 16 per cent of the seats — and under the Shapley-Shubik index, roughly a third of the bargaining power, because it is the necessary partner in either feasible majority.
+
+[Section: base-rates] The available examples suggest a clear pattern. Across new federal parties launched in Malaysia between 1988 and 2024, the typical first-contest result is a single-digit fraction of the seats they choose to contest. Many do not survive five years; they are deregistered, dormant, or absorbed. The minority that reach government within two elections of formation are almost entirely defector-led launches with the three structural ingredients above: sitting MPs in the launch party, an executive office on offer in a friendly coalition, and a pre-negotiated slot at the table. Personality-only vehicles — IMP in 1951, Mahathir's Pejuang and the GTA umbrella in 2022, MUDA at federal level — have rarely converted to office.
+
+[Section: launches-timeline] IMP 1951 (Onn Jaafar, failed) — DAP/Gerakan 1969 — Semangat 46 1988 (Razaleigh, 8 seats 1990, reabsorbed 1996) — KeADILan 1999 (Wan Azizah Wan Ismail — founded and led Parti Keadilan Nasional through Anwar Ibrahim's incarceration; party president 1999 to 2018; later Malaysia's first female Deputy Prime Minister; 5 seats at first contest; durable spine of PKR) — Amanah 2015 (PAS progressives; durable junior PH partner since GE14) — Bersatu 2016 (Mahathir/Muhyiddin; pivotal GE14) — Pejuang 2020 announced / 2021 registered (Mahathir; zero seats GE15) — MUDA 2020 (Syed Saddiq; 1 seat) — GRS 2020 (Hajiji Noor umbrella; won Sabah state) — GTA 2022 (Mahathir umbrella; wiped GE15).
+
+[Section: bersatu-2016] Parti Pribumi Bersatu Malaysia approved by ROS September 2016; within twenty months toppled BN in GE14 May 2018. Founders Mahathir Mohamad and Muhyiddin Yassin — former senior UMNO leaders with portable patronage. Grievance: 1MDB. Coalition slot pre-negotiated with PKR, DAP, Amanah inside PH umbrella. Personal incentives — cabinet posts, GLC control, ministerial portfolios — distributed to the defectors. Same logic ran through the 2020 Sheraton Move.
+
+[Section: pejuang-2020] Mahathir announced a new party in August 2020 after the Sheraton Move ejected him from government; Parti Pejuang Tanah Air was formally registered in July 2021. In GE15 in November 2022, Mahathir's Gerakan Tanah Air (GTA) umbrella — with Pejuang as principal vehicle — announced 121 parliamentary candidates and contested seats in nearly every state. The bloc won zero seats; Mahathir himself lost his Langkawi seat, and a large share of GTA candidates including the founder forfeited the RM10,000 deposit by polling under one-eighth of the valid votes cast.
+
+[Section: reframe-morning-after] The launch is not about the voter. The voter is the input the launcher needs to reach a table the voter is not at. The negotiation that decides who governs Malaysia happens in the seventy-two hours after the count.
+
+[Section: cleavage-theory] Lipset & Rokkan (1967) applied to Malaysian multi-axis cleavages: Malay-Chinese-Indian, Bumiputera-Bornean-non-Malay, urban-rural, secular-Islamist, peninsular-territorial.
+
+[Section: six-conditions] Six structural conditions: Societies Act 1966 registration; ethnic and territorial cleavages; portable patronage; post-electoral coalition formation; the 2022 anti-hopping law's party-level loophole; personalist voting.
+
+[Section: malapportionment] The original 1957 Federal Constitution capped voter-number deviation between constituencies at fifteen per cent. A 1962 amendment repealed that rule and moved apportionment principles into the Thirteenth Schedule. A 1973 amendment removed the quantified national deviation cap entirely from the current text. Today, by the Election Commission's own published voter roll for the GE15 (PRU15) delineation cycle, the largest parliamentary constituency contains roughly ten to eleven times as many voters as the smallest — Bangi in suburban Selangor at about 303,000 registered voters, Igan in rural Sarawak at about 28,000. A vote cast in Bangi carries roughly one-tenth the weight of a vote cast in Igan. The UNDI18 reform of 2021 added roughly 5.8 million new voters through automatic registration, and the post-UNDI18 roll shows the disparity remains severe rather than narrowing.
+
+[Section: anti-hopping-loophole] The Constitution (Amendment) (No. 3) Act 2022 (Act A1663) inserted Article 49A into the Federal Constitution, triggering a casual vacancy whenever an MP resigns from the party they were elected under, or otherwise ceases to be a member of that party. Two loopholes survive inside the text. First, expulsion: under Article 49A(2)(c), an MP who is expelled by the party — rather than resigning — does not lose the seat. Second, party-level: the law restricts the individual, not the party as a corporate body. A whole party can vote internally to leave one coalition and join another, and its MPs keep their seats.
+
+[Section: article-49a-text] **POST-v3-FIX:** Source: Federal Constitution of Malaysia, Article 49A, inserted by the Constitution (Amendment) (No. 3) Act 2022 (Act A1663) — received Royal Assent on 31 August 2022 and published in the Gazette on 6 September 2022. Paraphrase: Article 49A provides that a Member of the House of Representatives ceases to be a Member, with the seat declared vacant, when, having been elected as a member of a political party, the Member resigns from or ceases to be a member of that party. Article 49A(2)(c) explicitly excludes expulsion from this trigger.
+
+[Section: sabah-volatility] Sabah has cycled through Berjaya, USNO, PBS, BN-controlled, Musa-era BN, Warisan, GRS. Three cleavage reasons: Twenty Points/MA63; Bumiputera-non-Malay ethnic composition; Putrajaya patronage-dependence-and-resentment. The 2014 Royal Commission of Inquiry on illegal immigrants in Sabah documented illegal or irregular issuance of Malaysian identity documents and evidence linking some recipients to the electoral roll. As of late 2021, opposition MPs and civil-society critics reported that the RCI's core recommendations remained largely unimplemented; no comprehensive government implementation status report has since been published.
+
+[Section: grs-2020] **POST-v3-FIX:** Gabungan Rakyat Sabah was formed in the weeks immediately before the September 2020 Sabah state election as a loose electoral umbrella of Perikatan Nasional, Barisan Nasional and Parti Bersatu Sabah. Its product was the umbrella itself: a brand that let component parties contest without splitting the anti-Warisan vote under first-past-the-post. It won. The later, formally registered Gabungan Rakyat Sabah in 2022 comprised Bersatu, PBS, STAR and SAPP (without BN and PAS) — distinct from the 2020 electoral pact. The lesson taken across the corridor was that the brand is the product, and speed beats depth.
+
+[Section: sarawak-fiscal-lever] If Sabah is the laboratory of volatility, Sarawak is the laboratory of stability. In 2018 Sarawak imposed a 5% State Sales Tax on petroleum products. Audited collections reported in successive state budget speeches ranged from RM2.74 billion in 2020 to RM4.23 billion in 2022, with cumulative collection over 2019 to 2023 in the range of RM15 to 17 billion. DAP and other opposition representatives have publicly stated that opposition-held constituencies receive lower state development allocations, and opposition representation in the eighty-two-seat state assembly has shrunk from six members post-2021 to two as of April 2024, after the dissolution of Parti Sarawak Bersatu and the realignment of former PSB assemblymen.
+
+[Section: three-launches] Three things a launch is probably doing: pivot play, grievance vehicle, vanity option.
+
+[Section: they-are-all-the-same] Cynicism as lazy abdication.
+
+[Section: this-one-is-different] Naïveté as mark.
+
+[Section: five-questions] Five structural questions: who's inside, who funds, what slot, what job, where in five years.
+
+[Section: pivotal-from-your-chair] Voter loans bargaining chips, not policy purchase.
+
+[Section: view] Vote by judging who will be in the room. APPENDED B40 reality check: for many Malaysian voters (Felda settlers, plantation workers, kepala kampung), the calculation is "which vote is safe given who already controls my livelihood." For those voters the pivot-player framework is theoretical until campaign finance, voter-roll integrity, and patronage allocation are themselves opened to outside scrutiny.
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0,
+  "source_diversity_estimate": 0.0,
+  "delta_from_prior_review": {
+    "v3_score": 87,
+    "v4_score": 0,
+    "v3_fix1_status": "VERIFIED|STILL_INADEQUATE",
+    "v3_fix1_note": "...",
+    "v3_fix2_status": "VERIFIED|STILL_INADEQUATE",
+    "v3_fix2_note": "...",
+    "new_errors_found_in_v4": ["any error the prior three passes missed"]
+  },
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "section_id": "...", "claim": "exact text", "why": "...", "primary_source": "..."}
+  ],
+  "publication_recommendation": "READY_TO_PUBLISH|NEEDS_MORE_FIXES|MAJOR_REWRITE",
+  "items_still_blocking_publication": ["specific things that still need to be done, if any"],
+  "overall_assessment": "one paragraph: is this dossier now factually publication-ready?"
+}
+
+=================================================================
+PASTE ENDS HERE
+=================================================================
