@@ -1,0 +1,313 @@
+{
+  "factual_accuracy_score": 48,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "Phased work-from-home for non-critical civil servants was announced on 26 March 2026.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.3,
+      "source": "BERNAMA, 26 March 2026, https://www.bernama.com/en/news.php?id=2537964; BERNAMA, 1 April 2026, https://bernama.com/en/news.php?id=2539957",
+      "correction": "On 26 March 2026, Anwar said the government was fine-tuning phased flexible/WFH arrangements. The actual implementation announcement with an effective date of 15 April was reported on 1 April 2026.",
+      "stale_check": "Not stale relative to 17 May 2026; the context should distinguish proposal/fine-tuning on 26 March from implementation announcement on 1 April."
+    },
+    {
+      "claim": "The WFH announcement was on the same day as the RON95 quota cut.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "Prime Minister's Office verbatim special address, 26 March 2026, https://www.pmo.gov.my/ms/verbatim-ms/teks-ucapan-verbatim-yab-perdana-menteri-perutusan-khas/; BERNAMA, 26 March 2026, https://www.bernama.com/en/news.php?id=2537964",
+      "correction": "The RON95 quota cut from 300 to 200 litres was announced in the 26 March PMO speech. WFH was reported the same day as being fine-tuned, not yet as a final implementation scheme.",
+      "stale_check": "No recent change reverses this; later details were published in April."
+    },
+    {
+      "claim": "The RON95 quota cut reduced the BUDI95 quota from 300 litres to 200 litres beginning 1 April 2026.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "Prime Minister's Office verbatim special address, 26 March 2026, lines 90-92, https://www.pmo.gov.my/ms/verbatim-ms/teks-ucapan-verbatim-yab-perdana-menteri-perutusan-khas/",
+      "correction": "",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The WFH policy was bundled with Raya open-house cancellations and minister travel bans.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No primary source found within reasonable search effort.",
+      "correction": "Remove unless supported by an official announcement or circular identifying these measures together.",
+      "stale_check": "No stale-check resolution found."
+    },
+    {
+      "claim": "The trigger is fuel conservation amid the Hormuz crisis.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "BERNAMA, 1 April 2026, https://bernama.com/en/news.php?id=2539957; BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "More precise wording: the government described the WFH measure as a response to the global energy crisis and West Asia conflict to reduce fuel consumption and safeguard energy supply.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Frontline services are excluded.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "BERNAMA, 14 April 2026, lines 132-134, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "Specify excluded sectors: security and defence services, health-sector critical services including nurses, and education officers involved in school sessions.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "No implementation details, timelines or productivity metrics have been published.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.8,
+      "m_unknown": 0.15,
+      "source": "BERNAMA, 14 April 2026, lines 124-151, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "By 14 April 2026, published details included the 15 April start date, eligible locations, 8 km commute threshold, WFH days, exclusions, SPOT-Me geolocation attendance, output monitoring, and KPI requirements. If this line was written before 2-14 April, it may have been true then, but it is false as of 17 May 2026.",
+      "stale_check": "Likely stale if drafted immediately after 26 March; not valid by 17 May 2026."
+    },
+    {
+      "claim": "Frontline workers excluded include nurses, teachers, and police.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "BERNAMA, 14 April 2026, lines 132-134, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "Teachers should be described more precisely as education officers involved in school sessions; police are part of the broader security and defence exclusions.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Excluded frontline workers are disproportionately female, rural, and the longest commuters.",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.1,
+      "m_unknown": 0.75,
+      "source": "Partial gender context only: DOSM Statistics on Women Empowerment, Malaysia 2025, Table 4.10, https://v2.dosm.gov.my/portal-main/release-document-log?release_document_id=17516; no primary commute/rural evidence found.",
+      "correction": "The analysis needs primary evidence for the rural and longest-commuter claims. Gender cannot be established from the cited WFH exclusion alone without occupational gender breakdowns for nurses, teachers, police and affected locations.",
+      "stale_check": "No stale-check resolution found."
+    },
+    {
+      "claim": "Senior Grade 41+ administrative officers gain flexibility.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "BERNAMA, 14 April 2026, lines 125 and 141, https://www.bernama.com/en/general/news.php?id=2544811; DOSM Statistics on Women Empowerment, Malaysia 2025, Table 4.10, https://v2.dosm.gov.my/portal-main/release-document-log?release_document_id=17516",
+      "correction": "Eligibility was not stated as all Grade 41+ administrative officers. Published criteria included federal public servants in specified locations/state capitals with a one-way commute over 8 km, subject to department-head approval and operational needs.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Grade 41+ administrative officers are more urban and male-dominated at the top.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.1,
+      "m_unknown": 0.5,
+      "source": "DOSM Statistics on Women Empowerment, Malaysia 2025, Table 4.10, https://v2.dosm.gov.my/portal-main/release-document-log?release_document_id=17516",
+      "correction": "The top management part is supported: in 2024, top management JUSA C and above was 60.7% male. But Grade 41-54 management and professional officers were 67.9% female, so the broader 'Grade 41+' category is not male-dominated. The 'more urban' claim needs separate primary evidence.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "The fuel-saving logic is undermined by its own targeting.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "No primary-source analysis found proving the targeting undermines fuel savings.",
+      "correction": "Frame as analysis or hypothesis unless supported by commute, modal-share, eligibility, and fuel-use data.",
+      "stale_check": "No stale-check resolution found."
+    },
+    {
+      "claim": "Malaysia has 1.7 million civil servants for 33 million people.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.45,
+      "m_unknown": 0.2,
+      "source": "World Bank Malaysia Economic Monitor June 2019, https://documents1.worldbank.org/curated/en/430511561571109623/pdf/Malaysia-Economic-Monitor-Re-Energizing-the-Public-Service.pdf; The Star citing parliamentary written reply/HRMIS, 6 November 2025, https://www.thestar.com.my/news/nation/2025/11/06/zaliha-malaysia-has-over-13-million-civil-servants; DOSM Q1 2026 population release, https://www.dosm.gov.my/portal-main/release-content/demographic-statistic-malaysia-q12026",
+      "correction": "The 1.7 million figure is an older broad public-service figure including armed forces and police from the 2019 World Bank report. A 2025 parliamentary written reply reported 1,305,976 civil-service personnel excluding police and armed forces. DOSM estimated Malaysia's Q1 2026 population at 34.4 million, not 33 million.",
+      "stale_check": "The 1.7m/32m framing comes from 2019 and is stale for 2026."
+    },
+    {
+      "claim": "Malaysia has one of the highest civil-servant-to-population ratios globally.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.2,
+      "m_unknown": 0.45,
+      "source": "World Bank Malaysia Economic Monitor June 2019, lines 3427-3436 and 3484-3490, https://documents1.worldbank.org/curated/en/430511561571109623/pdf/Malaysia-Economic-Monitor-Re-Energizing-the-Public-Service.pdf; Asian Productivity Organization, Strategic approaches in rightsizing and restructuring initiatives in the public sector, 2025, https://www.apo-tokyo.org/wp-content/uploads/2025/07/Strategic-approaches-in-rightsizing-and-restructuring-initiatives-in-the-public-sector_PUB.pdf",
+      "correction": "An APO 2025 publication says Malaysia's bureaucracy ranks among the largest worldwide, but the World Bank warns cross-country comparisons are difficult and says Malaysia's wage bill as a share of GDP tracked just below comparative averages in 2018. The claim needs caveating and a defined denominator.",
+      "stale_check": "Partly based on older 2019 figures; later 2025 HRMIS data changes the numerator if police and armed forces are excluded."
+    },
+    {
+      "claim": "COVID-era WFH failed when supervisors couldn't manage remotely.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No Malaysian government audit, official evaluation, or peer-reviewed primary source found confirming this specific failure claim.",
+      "correction": "Replace with a narrower sourced claim, such as that WFH was used during COVID and current rules require department heads to set outputs and monitor KPIs, unless a primary evaluation of COVID-era failure is found.",
+      "stale_check": "No stale-check resolution found."
+    },
+    {
+      "claim": "Wage bill exceeds RM41B plus RM23B in pensions.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.85,
+      "m_unknown": 0.1,
+      "source": "Ministry of Finance, Fiscal Outlook and Federal Government Revenue Estimates 2026, Table 3.1, https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+      "correction": "Budget 2026 estimates emoluments at RM109.366 billion and retirement charges at RM42.801 billion. The RM41B/RM23B figures are not current federal Budget 2026 figures.",
+      "stale_check": "Not valid for 2026; appears stale or from a narrower/older category not identified in the analysis."
+    },
+    {
+      "claim": "Digital infrastructure outside Putrajaya is patchy.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.05,
+      "m_unknown": 0.75,
+      "source": "No primary source found in the analysis or search tying this claim to civil-service WFH implementation outside Putrajaya.",
+      "correction": "Needs primary data on broadband availability, public-service system uptime, SPOT-Me reliability, or official implementation problems by region.",
+      "stale_check": "No stale-check resolution found."
+    },
+    {
+      "claim": "Without metrics, WFH risks the COVID pattern.",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.45,
+      "m_unknown": 0.35,
+      "source": "BERNAMA, 14 April 2026, lines 141-151, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "The premise 'without metrics' is false as of April 2026 because published rules require output identification, periodic review, attendance geolocation, and KPIs. The comparison to a 'COVID pattern' is unverified.",
+      "stale_check": "Likely stale if written before the April circular details were reported; false by 17 May 2026."
+    },
+    {
+      "claim": "The UK runs a mature hybrid model with attendance targets.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "UK Cabinet Office, 24 October 2024, https://www.gov.uk/government/news/civil-service-continues-commitment-to-minimum-60-office-attendance",
+      "correction": "The UK source verifies a 60% minimum office attendance expectation for most civil servants. 'Mature' is interpretive and should be presented as analysis rather than fact.",
+      "stale_check": "No newer contradictory official source found."
+    },
+    {
+      "claim": "Singapore mandates flexible-work request rights.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "Singapore Ministry of Manpower, Tripartite Guidelines on Flexible Work Arrangement Requests, last updated 24 February 2026, https://www.mom.gov.sg/employment-practices/good-work-practices/flexible-work-arrangements",
+      "correction": "More precise wording: Singapore's Tripartite Guidelines took effect on 1 December 2024 and set a process for formal FWA requests and employer consideration; they do not require employers to approve all requests.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia has published nothing.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.85,
+      "m_unknown": 0.1,
+      "source": "BERNAMA, 14 April 2026, lines 124-151, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "Malaysia had published or had publicly reported implementation details by 14 April 2026, including a PSD circular dated 2 April 2026.",
+      "stale_check": "Could have been true before early April; false by the 17 May 2026 derived date."
+    },
+    {
+      "claim": "Melaka, Penang and Sarawak want to act but have no federal framework.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.7,
+      "m_unknown": 0.25,
+      "source": "BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811; The Star, 1 April 2026, https://www.thestar.com.my/news/nation/2026/04/01/no-wfh-for-penang-civil-servants-for-now-says-cm; Sarawak Tribune, 2 April 2026, https://www.sarawaktribune.com/no-work-from-home-directive-issued-by-state-government-yet/",
+      "correction": "A federal framework/circular was reported. Penang decided not to implement WFH for state civil servants for now; Sarawak reported no state directive yet. I found no primary support that Melaka, Penang and Sarawak all 'want to act'.",
+      "stale_check": "False after the federal circular was reported in April 2026."
+    },
+    {
+      "claim": "A Putrajaya guideline won't fit Kapit.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.05,
+      "m_unknown": 0.75,
+      "source": "No primary source found addressing Kapit-specific WFH feasibility under the federal circular.",
+      "correction": "Treat as commentary unless supported by Sarawak/Kapit-specific administrative, commute, connectivity, or service-delivery evidence.",
+      "stale_check": "No stale-check resolution found."
+    },
+    {
+      "claim": "Malaysia announced a crisis response wearing reform's clothes, not targets, infrastructure and honest communication.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.35,
+      "m_unknown": 0.4,
+      "source": "BERNAMA, 14 April 2026, lines 141-151, https://www.bernama.com/en/general/news.php?id=2544811",
+      "correction": "This is an opinion, but the factual premise that there are no targets is contradicted by published output, KPI and monitoring requirements. The infrastructure and communication elements need separate sourcing.",
+      "stale_check": "Likely stale after April publication of implementation details."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "bundled with Raya open-house cancellations and minister travel bans",
+      "why": "Specific measures are asserted without a primary source found.",
+      "primary_source": "No primary source found."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "No implementation details, timelines or productivity metrics have been published.",
+      "why": "Published reporting of the PSD circular included start date, eligibility, exclusions, SPOT-Me attendance, output monitoring and KPIs.",
+      "primary_source": "BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "disproportionately female, rural, and the longest commuters",
+      "why": "The analysis provides no primary evidence for rurality or commute length of excluded groups.",
+      "primary_source": "Partial gender context only from DOSM, https://v2.dosm.gov.my/portal-main/release-document-log?release_document_id=17516"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Senior Grade 41+ administrative officers (more urban, male-dominated at the top) gain flexibility.",
+      "why": "Eligibility was not defined simply by Grade 41+, and DOSM data show Grade 41-54 officers are majority female while only top management is male-majority.",
+      "primary_source": "DOSM Statistics on Women Empowerment, Malaysia 2025, Table 4.10, https://v2.dosm.gov.my/portal-main/release-document-log?release_document_id=17516; BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "1.7 million civil servants for 33 million people: one of the highest ratios globally.",
+      "why": "The 1.7m figure is older and broader than the current 2025 HRMIS civil-service figure excluding police and armed forces; the population is 34.4m in Q1 2026; cross-country definitions vary materially.",
+      "primary_source": "World Bank 2019, https://documents1.worldbank.org/curated/en/430511561571109623/pdf/Malaysia-Economic-Monitor-Re-Energizing-the-Public-Service.pdf; The Star citing parliamentary written reply, https://www.thestar.com.my/news/nation/2025/11/06/zaliha-malaysia-has-over-13-million-civil-servants; DOSM Q1 2026, https://www.dosm.gov.my/portal-main/release-content/demographic-statistic-malaysia-q12026"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "COVID-era WFH failed when supervisors couldn't manage remotely.",
+      "why": "No primary Malaysian evaluation was found supporting this causal explanation.",
+      "primary_source": "No primary source found."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Wage bill exceeds RM41B plus RM23B in pensions.",
+      "why": "Budget 2026 figures are much higher: emoluments RM109.366b and retirement charges RM42.801b.",
+      "primary_source": "Ministry of Finance Fiscal Outlook 2026, https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Malaysia has published nothing.",
+      "why": "Implementation details were publicly reported by BERNAMA, including the existence of a 2 April PSD circular.",
+      "primary_source": "BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Melaka, Penang and Sarawak want to act but have no federal framework.",
+      "why": "A federal circular/framework was reported, Penang chose not to implement for now, and no primary support was found for Melaka/Penang/Sarawak all wanting to act.",
+      "primary_source": "BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811; The Star, 1 April 2026, https://www.thestar.com.my/news/nation/2026/04/01/no-wfh-for-penang-civil-servants-for-now-says-cm"
+    }
+  ],
+  "omitted_facts": [
+    "The WFH arrangement officially began on 15 April 2026 for eligible federal public servants in Kuala Lumpur, Putrajaya, Selangor and all state capitals with a one-way commute over 8 km. Source: BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811",
+    "WFH days differ by state rest day: Tuesday to Thursday for Sunday-rest states and Monday to Wednesday for Friday-rest states. Source: BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811",
+    "The April 2026 circular reportedly required SPOT-Me electronic attendance with hourly geolocation tracking and department-head monitoring of output. Source: BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811",
+    "Chief Secretary Shamsul Azri Abu Bakar said output and productivity must be at least the same, and preferably better, than office work. Source: BERNAMA, 14 April 2026, https://www.bernama.com/en/general/news.php?id=2544811",
+    "A 2025 parliamentary written reply reported 1,305,976 civil-service personnel as of 24 September 2025, excluding police and armed forces, with Education and Health making up large shares. Source: The Star citing parliamentary written reply, 6 November 2025, https://www.thestar.com.my/news/nation/2025/11/06/zaliha-malaysia-has-over-13-million-civil-servants",
+    "DOSM estimated Malaysia's total population at 34.4 million in Q1 2026, not 33 million. Source: DOSM, 14 May 2026, https://www.dosm.gov.my/portal-main/release-content/demographic-statistic-malaysia-q12026",
+    "Budget 2026 estimates federal emoluments at RM109.366 billion and retirement charges at RM42.801 billion. Source: Ministry of Finance Fiscal Outlook 2026, https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf"
+  ],
+  "source_assessment": "The original analysis cites only three related T4A issues and no primary sources, creating circular sourcing. It does not cite the PMO verbatim speech, PSD circular, BERNAMA implementation report, DOSM population/gender data, Ministry of Finance budget tables, UK Cabinet Office guidance, or Singapore MOM guidelines. Institutional perspectives are narrow: no official federal circular text, no state government primary statements, no labour union view, no public-service management data, no rural/connectivity evidence, and no commute/fuel-use modelling. Political spectrum and affected-worker perspectives are essentially absent.",
+  "overall_assessment": "The analysis contains a few correct core facts: the RON95 quota cut, the energy-crisis rationale, frontline exclusions, and the existence of UK/Singapore comparator policies. However, several central claims are stale, unsupported, or wrong as of 17 May 2026, especially the claim that Malaysia published no details or metrics, the wage/pension figures, the current civil-service/population framing, and the Grade 41+/gender targeting argument. It should not be published without substantial correction and primary sourcing."
+}

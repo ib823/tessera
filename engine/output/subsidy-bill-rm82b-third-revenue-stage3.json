@@ -1,0 +1,234 @@
+{
+  "factual_accuracy_score": 24,
+  "source_diversity_estimate": 0,
+  "claims": [
+    {
+      "claim": "The Finance Ministry disclosed that total subsidies, incentives, and social assistance reached RM82 billion in 2025",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.8,
+      "m_unknown": 0.15,
+      "source": "Ministry of Finance Malaysia, Fiscal Outlook 2026, Table 3.1, published October 2025: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf; MOF table states 2025 revised subsidies and social assistance at RM57,062 million.",
+      "correction": "Replace RM82 billion with the official 2025 revised estimate of RM57.1 billion for 'subsidies and social assistance'. If 'incentives' are being added from other line items, the analysis must itemise them and cite the budget lines.",
+      "stale_check": "The analysis is dated 2026-05-17. The 2025 revised estimate was already available in the October 2025 Fiscal Outlook 2026, so this is not explained by a later change."
+    },
+    {
+      "claim": "RM82 billion in subsidies consumed 33% of federal revenue",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.9,
+      "m_unknown": 0.08,
+      "source": "Ministry of Finance Malaysia, Fiscal Outlook 2026, Table 3.1, published October 2025: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf; Bernama citing MOF 2025 Fiscal Outlook, 18 October 2024: https://www.bernama.com/en/news.php?id=2353375",
+      "correction": "Using official figures, RM57.1 billion divided by revised 2025 federal revenue of about RM334.1 billion is about 17.1%. Using the original 2025 revenue estimate of RM339.7 billion, it is about 16.8%. RM82 billion would be about 24.1% of RM339.7 billion, not 33%.",
+      "stale_check": "No. The official budget and revised figures contradict the 33% framing."
+    },
+    {
+      "claim": "Subsidies crowded out development spending on infrastructure, education, and healthcare",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "Ministry of Finance Malaysia, Fiscal Outlook 2026, Table 3.1 and Budget 2025 expenditure reporting: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf; Bernama citing MOF, 18 October 2024: https://www.bernama.com/en/news.php?id=2353263",
+      "correction": "It is fair to discuss fiscal opportunity cost, but the causal claim that subsidies specifically 'crowded out' infrastructure, education and healthcare is not directly established by the cited budget figures. Budget 2025 allocated RM86 billion for development expenditure, and the 2025 revised development estimate was about RM80 billion, both higher than the official subsidies and social assistance figure of RM57.1 billion.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Malaysia spends more propping up prices than building roads, schools, and hospitals combined",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.85,
+      "m_unknown": 0.1,
+      "source": "Ministry of Finance Malaysia, Fiscal Outlook 2026, Table 3.1: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf; Bernama citing MOF Budget 2025 allocation, 18 October 2024: https://www.bernama.com/en/news.php?id=2353263",
+      "correction": "Official 2025 subsidies and social assistance were RM57.1 billion revised, while Budget 2025 development expenditure was RM86 billion originally and RM80 billion revised. The claim reverses the official comparison.",
+      "stale_check": "No. Official figures available before 2026-05-17 contradict it."
+    },
+    {
+      "claim": "Development expenditure at RM72 billion is RM10 billion less than the subsidy bill for the first time",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.9,
+      "m_unknown": 0.08,
+      "source": "Bernama citing MOF Budget 2025 allocation, 18 October 2024: https://www.bernama.com/en/news.php?id=2353263; Ministry of Finance Malaysia, Fiscal Outlook 2026: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+      "correction": "Budget 2025 development expenditure was RM86 billion, not RM72 billion. The 2025 revised estimate reported in Budget 2026 summaries was about RM80 billion. Official subsidies and social assistance were RM57.1 billion revised, so development expenditure was not RM10 billion lower than the subsidy bill.",
+      "stale_check": "No. The RM72 billion figure appears to refer to other years or commentary, not Budget 2025."
+    },
+    {
+      "claim": "Fuel subsidies at RM38 billion account for 46% of total subsidies",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.45,
+      "m_unknown": 0.3,
+      "source": "Bernama opinion article, 7 October 2025, citing Malaysia fuel subsidies reached RM38 billion in 2023: https://www.bernama.com/en/thoughts/news.php?id=2475645; Ministry of Finance Malaysia Fiscal Outlook 2026, Table 3.1: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+      "correction": "RM38 billion is verifiable only as a 2023 fuel subsidy figure from cited commentary, not as a 2025 figure. For 2025, official subsidies and social assistance were RM57.1 billion, and diesel subsidy expenditure was later reported by MOF at RM6.2 billion for 2025. The 46% calculation depends on the unsupported RM82 billion denominator.",
+      "stale_check": "No. The claim mixes a 2023 fuel-subsidy number with a 2025 total."
+    },
+    {
+      "claim": "T20 households capture 42% of fuel subsidy benefits",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.1,
+      "m_unknown": 0.35,
+      "source": "Bank Negara Malaysia Annual Report 2014, 'Price Reforms: Motivation, Impact and Mitigating Measures': https://library.wou.edu.my/pubs/bnar2014.pdf",
+      "correction": "The 42% figure is supported by BNM estimates based on older household expenditure/income data, not as a current 2025 distribution. It should be framed as a historical BNM estimate, not necessarily the current incidence after diesel and RON95 retargeting measures.",
+      "stale_check": "Yes. The underlying BNM estimate predates later subsidy reforms, including diesel retargeting from June 2024 and BUDI95 in September 2025."
+    },
+    {
+      "claim": "Malaysia's subsidy-to-GDP ratio at 5.1% exceeds Indonesia's 1.8% and Thailand's 1.2% after their reforms",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.25,
+      "m_unknown": 0.7,
+      "source": "No primary source found for this exact cross-country ratio. Thailand National Statistical Office Statistical Yearbook 2025 reports GFS subsidies in the FY2025 budget at 67,455.9 million baht, 1.8% of budget appropriation, not GDP: https://www.nso.go.th/public/e-book/Statistical-Yearbook/SYB-2025/572/",
+      "correction": "Do not publish this comparison unless the methodology and primary sources are identified. At minimum, clarify whether the denominator is GDP, budget expenditure, operating expenditure, or fossil-fuel subsidy estimates.",
+      "stale_check": "No clear stale issue; the issue is lack of source and denominator confusion."
+    },
+    {
+      "claim": "RM82 billion could fund 328,000 affordable homes",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Bernama, 6 February 2026, citing Deputy Housing and Local Government Minister on the National Affordable Housing Policy ceiling price of RM300,000: https://www.bernama.com/en/news.php?id=2517298",
+      "correction": "The arithmetic implies RM250,000 per home. Some Malaysian affordable-housing schemes use price bands around RM250,000-RM300,000, but the analysis provides no primary source for the RM250,000 unit cost or whether public fiscal cost equals sale price.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "RM82 billion could fund 14,000 rural clinics",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.1,
+      "m_unknown": 0.85,
+      "source": "No primary source found for a Malaysian rural clinic unit cost of about RM5.86 million or for the 14,000-clinic conversion.",
+      "correction": "Provide a Ministry of Health or Public Works Department construction-cost benchmark. Otherwise remove the number.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Opportunity cost is invisible. Malaysians don't see the hospitals that were never built because subsidies consumed the budget.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.25,
+      "m_unknown": 0.5,
+      "source": "Ministry of Finance Malaysia Fiscal Outlook 2026, Table 3.1: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+      "correction": "This is an argumentative framing, not a directly evidenced factual claim. It should be softened unless specific cancelled or deferred hospital projects are identified and linked to subsidy expenditure decisions.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "No single ministry tracks total subsidy expenditure",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No primary source found. MOF publishes aggregate subsidies and social assistance in Fiscal Outlook tables, including Fiscal Outlook 2026 Table 3.1: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+      "correction": "The claim conflicts with the fact that MOF publishes aggregate budget figures. If the intended claim is that no ministry tracks all explicit and implicit subsidies across government-linked mechanisms, define that scope and cite an audit or parliamentary answer.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Figure compiled from 8 separate budget line items across 6 ministries",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.05,
+      "m_unknown": 0.9,
+      "source": "No primary source found. Budget 2025 expenditure documents list ministries and line items but the analysis provides no reconciliation table: https://belanjawan.mof.gov.my/en/2025/expenditure",
+      "correction": "Provide the eight exact line items, six ministries, vote codes, and amounts. Without that reconciliation this is an unverifiable detail.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Subsidy Rationalisation Unit promised in 2023 still not operational",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.05,
+      "m_unknown": 0.9,
+      "source": "No primary government source found confirming a 2023 promise to create a body named 'Subsidy Rationalisation Unit' or its operational status.",
+      "correction": "Do not publish without a Cabinet, MOF, parliamentary, or gazette source identifying the unit and its status.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Reform constantly deferred before elections",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.15,
+      "m_unknown": 0.65,
+      "source": "No primary source found establishing a pattern of subsidy reform deferral specifically before elections.",
+      "correction": "This is a political-causation claim. It requires a dated timeline of announced reforms, election dates, and official postponement reasons.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Spending RM82 billion to keep prices low while infrastructure crumbles is borrowing from the future to subsidise the present",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.45,
+      "m_unknown": 0.35,
+      "source": "Ministry of Finance Malaysia Fiscal Outlook 2026, Table 3.1: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+      "correction": "The RM82 billion premise is unsupported for 2025. The phrase 'infrastructure crumbles' is not evidenced by the analysis and should be tied to specific official infrastructure-condition data if retained.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Subsidising consumption at the expense of infrastructure investment creates compounding long-term costs",
+      "status": "UNVERIFIED",
+      "m_true": 0.35,
+      "m_false": 0.1,
+      "m_unknown": 0.55,
+      "source": "No primary source found in the analysis establishing Malaysia-specific compounding long-term costs from 2025 subsidies.",
+      "correction": "This is plausible economic reasoning but should be labelled as analysis, not presented as a verified factual conclusion, unless supported by a government, IMF, World Bank, or peer-reviewed model.",
+      "stale_check": "No clear stale issue."
+    },
+    {
+      "claim": "Malaysia should consider legislating a subsidy cap at 20% of revenue with mandatory phase-down schedules for each subsidy category",
+      "status": "UNVERIFIED",
+      "m_true": 0,
+      "m_false": 0,
+      "m_unknown": 1,
+      "source": "Normative policy question; no factual source required except if implying existing legal feasibility or precedent, which was not sourced.",
+      "correction": "As a policy question this is acceptable, but it should not depend on the incorrect claim that 2025 subsidies consumed 33% of revenue.",
+      "stale_check": "Not applicable."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The Finance Ministry disclosed that total subsidies, incentives, and social assistance reached RM82 billion in 2025",
+      "why": "The official MOF 2025 revised figure for subsidies and social assistance is RM57.1 billion. The analysis gives a higher total without itemising 'incentives' or citing budget lines.",
+      "primary_source": "MOF Fiscal Outlook 2026, Table 3.1: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "consuming 33% of federal revenue",
+      "why": "Official 2025 subsidies and social assistance were about 17% of federal revenue, not 33%. Even RM82 billion would not be 33% of the official 2025 revenue estimate.",
+      "primary_source": "MOF Fiscal Outlook 2026: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf; Bernama citing MOF revenue estimate: https://www.bernama.com/en/news.php?id=2353375"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Malaysia spends more propping up prices than building roads, schools, and hospitals combined.",
+      "why": "Official development expenditure for 2025 was higher than official subsidies and social assistance. The comparison is framed around an unsupported RM82 billion subsidy figure and a wrong RM72 billion development figure.",
+      "primary_source": "Bernama citing MOF Budget 2025: https://www.bernama.com/en/news.php?id=2353263; MOF Fiscal Outlook 2026: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "figure compiled from 8 separate budget line items across 6 ministries",
+      "why": "The analysis supplies no line-item reconciliation, vote codes, ministry names, or primary source.",
+      "primary_source": "Budget 2025 expenditure portal only provides the source documents, not the claimed reconciliation: https://belanjawan.mof.gov.my/en/2025/expenditure"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Subsidy Rationalisation Unit promised in 2023 still not operational",
+      "why": "No primary source was found confirming a 2023 promise to establish a unit with this exact name or its operational status.",
+      "primary_source": "No primary source found."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "T20 households capture 42% of fuel subsidy benefits",
+      "why": "The 42% number is from a historical BNM estimate based on older data, not a verified 2025 distribution after subsequent subsidy reforms.",
+      "primary_source": "BNM Annual Report 2014: https://library.wou.edu.my/pubs/bnar2014.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "MOF Fiscal Outlook 2026 reports 2025 revised 'subsidies and social assistance' at RM57.062 billion, down 15.3% from RM67.360 billion in 2024: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+    "Budget 2025 originally allocated RM86 billion for development expenditure, not RM72 billion: https://www.bernama.com/en/news.php?id=2353263",
+    "Federal government revenue for 2025 was originally estimated by MOF at RM339.7 billion: https://www.bernama.com/en/news.php?id=2353375",
+    "MOF Fiscal Outlook 2026 states subsidies and social assistance declined mainly due to fuel subsidy rationalisation and lower global oil prices, and cites diesel subsidy retargeting savings of up to RM600 million a month: https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/fiscal_outlook_2026.pdf",
+    "MOF later reported actual diesel subsidy expenditure fell to RM6.2 billion in 2025 from RM10.1 billion in 2024, saving about RM4 billion: https://www.bernama.com/en/news.php?id=2530062",
+    "The 42% T20 fuel subsidy benefit figure is historical: BNM Annual Report 2014 estimated the bottom 20% received 4% and richest 20% received 42% of fuel subsidy benefits: https://library.wou.edu.my/pubs/bnar2014.pdf"
+  ],
+  "source_assessment": "The original analysis lists zero sources, so the source diversity is effectively nil. It contains precise budget numbers, cross-country comparisons, governance claims, and policy-history assertions without citations. The verifiable primary-source base should have included MOF Fiscal Outlook 2025 and 2026, Budget 2025 expenditure estimates, BNM material for subsidy incidence, parliamentary answers for programme status, and official budget or statistical sources for Indonesia and Thailand. No opposition, civil society, academic, business, community, or legal perspectives are represented.",
+  "overall_assessment": "The analysis is not reliable as published. Its central factual premise, RM82 billion in 2025 subsidies consuming one-third of federal revenue and exceeding development expenditure, is contradicted by official MOF figures. Some subsidiary claims use real but stale figures, such as the BNM 42% T20 subsidy-incidence estimate, without dating or caveating them. Several specific governance and opportunity-cost details are entirely unsourced. The piece may be directionally about a real fiscal policy issue, but the published numbers and comparisons require substantial correction before use."
+}

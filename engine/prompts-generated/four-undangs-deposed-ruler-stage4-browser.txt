@@ -1,0 +1,196 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "stage": "Stage 1 — derived from live cards for retroactive Stage 2/3 verification",
+    "issue_id": "1976",
+    "slug": "four-undangs-deposed-ruler",
+    "derived_from": "src/data/issues/1976.json",
+    "derived_at": "2026-05-17",
+    "note": "This Stage 1 JSON was reconstructed from the currently-published cards so external Stage 2 (Gemini bias) and Stage 3 (Codex fact-check) reviews can verify what readers see. It is not the original analysis — the original pipeline was not run on this issue."
+  },
+  "headline": "Four Undangs Declared the Ruler Deposed. Three Hold Office. One Does Not.",
+  "context": "On 19 April 2026, the four Undangs of Negeri Sembilan declared Tuanku Muhriz deposed and named Tunku Nadzaruddin the proposed 12th Ruler. State government rejects it: one Undang was dismissed in May 2025.",
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Four Undangs declared Tuanku Muhriz deposed and named Tunku Nadzaruddin the 12th Ruler. Three hold office; one was dismissed 11 months earlier.",
+      "sub": "State government rejects the declaration. The same Undang who proclaimed Muhriz in 2008 (since removed for 33 offences) signed this one too."
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "The constitution lets the Undangs collectively call the Ruler to withdraw. Whether three alone (without the dismissed fourth) suffice is untested.",
+      "s": "BERNAMA and Malay Mail cite Articles 10-12; The Star cites 10-13. All agree: rejection rests on Mubarak no longer holding office.",
+      "d": "The constitution lets the Undangs collectively call the Ruler to withdraw. Whether three alone (without the dismissed fourth) suffice is untested. BERNAMA and Malay Mail cite Articles 10-12; The Star cites 10-13. All agree: rejection rests on Mubarak no longer holding office."
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "h": "The same Undang who read the deposal on 19 April 2026 had proclaimed Tuanku Muhriz as 11th Ruler on 29 December 2008.",
+      "s": "In 1967, the Undang bypassed Muhriz for the throne at 19, electing his uncle Tuanku Ja'afar. Tunku Nadzaruddin (Ja'afar's son) is now the proposed successor.",
+      "d": "The same Undang who read the deposal on 19 April 2026 had proclaimed Tuanku Muhriz as 11th Ruler on 29 December 2008. In 1967, the Undang bypassed Muhriz for the throne at 19, electing his uncle Tuanku Ja'afar. Tunku Nadzaruddin (Ja'afar's son) is now the proposed successor."
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Mubarak was dismissed 13 May 2025 for 33 offences against Telaga Undang custom. The DKU ratified the dismissal two days before he signed the declaration.",
+      "s": "The DKU sat 17 April 2026, presided by Tuanku Muhriz. Ibu Soko Klana Hulu and Anak Waris Klana Hulu declined to give Mubarak a mandate.",
+      "d": "Mubarak was dismissed 13 May 2025 for 33 offences against Telaga Undang custom. The DKU ratified the dismissal two days before he signed the declaration. The DKU sat 17 April 2026, presided by Tuanku Muhriz. Ibu Soko Klana Hulu and Anak Waris Klana Hulu declined to give Mubarak a mandate."
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "Undangs cited alleged royal misconduct from a 5 March inquiry. Institutions called the act menderhaka; JAIS and police were notified.",
+      "s": "No state, customary, or judicial body has publicly addressed the misconduct claim itself. Daulat was defended before the underlying allegation was examined.",
+      "d": "Undangs cited alleged royal misconduct from a 5 March inquiry. Institutions called the act menderhaka; JAIS and police were notified. No state, customary, or judicial body has publicly addressed the misconduct claim itself. Daulat was defended before the underlying allegation was examined."
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The real question is not whether one dismissed Undang can act. It is whether three Undangs alone can invoke a provision designed for four."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "A constitution built on the collective authority of four Undangs is being tested by three. No court has ruled, and the institutions have defended the throne first."
+    }
+  ],
+  "sources": [
+    "T4A related issue 1626",
+    "T4A related issue 1977"
+  ],
+  "confidence": "Low — derived from published cards, original brief not on disk; submit for retroactive Stage 2/3 verification",
+  "lenses_used": [
+    "Legal",
+    "Historical",
+    "Governance",
+    "Political"
+  ],
+  "lenses_applicable_but_unused": [
+    "Rights",
+    "Economic",
+    "Technology",
+    "Social",
+    "Health",
+    "Environmental",
+    "Regional",
+    "Critical",
+    "Theological",
+    "Security"
+  ]
+}

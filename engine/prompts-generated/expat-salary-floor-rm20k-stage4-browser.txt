@@ -1,0 +1,188 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "stage": "Stage 1 — derived from live cards for retroactive Stage 2/3 verification",
+    "issue_id": "1956",
+    "slug": "expat-salary-floor-rm20k",
+    "derived_from": "src/data/issues/1956.json",
+    "derived_at": "2026-05-17",
+    "note": "This Stage 1 JSON was reconstructed from the currently-published cards so external Stage 2 (Gemini bias) and Stage 3 (Codex fact-check) reviews can verify what readers see. It is not the original analysis — the original pipeline was not run on this issue."
+  },
+  "headline": "Expat Salary Floor Doubles to RM20K; The Talent Equation Nobody Solves",
+  "context": "From 1 June 2026, Employment Pass Category I minimum rises from RM10,000 to RM20,000. Category III capped at 5 years with mandatory succession planning. The policy aims to prioritise local talent, but the talent pipeline, brain drain, and enforcement gaps remain unaddressed.",
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia doubles the expat salary floor to RM20,000. The message: hire Malaysians first.",
+      "sub": "RM10,000 was too low and undercut locals. A higher floor can attract quality investment and force knowledge transfer. But is the system ready?"
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "Semiconductor target: 60,000 workers by 2030. Pipeline: 3,000 graduates/year. Many leave for Singapore within five years.",
+      "s": "Malaysia loses skilled professionals to neighbours offering higher pay and clearer meritocracy. Raising the price of foreign replacements doesn't fix why Malaysians leave.",
+      "d": "Semiconductor target: 60,000 workers by 2030. Pipeline: 3,000 graduates/year. Many leave for Singapore within five years. Malaysia loses skilled professionals to neighbours offering higher pay and clearer meritocracy. Raising the price of foreign replacements doesn't fix why Malaysians leave."
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "GLCs and MNCs absorb the RM20K floor easily. SMEs and startups (the actual growth engine) cannot.",
+      "s": "A Penang semiconductor startup now faces double the floor for a foreign engineer. Succession planning is mandatory on paper but rarely enforced. The burden falls hardest on firms least able to bear it.",
+      "d": "GLCs and MNCs absorb the RM20K floor easily. SMEs and startups (the actual growth engine) cannot. A Penang semiconductor startup now faces double the floor for a foreign engineer. Succession planning is mandatory on paper but rarely enforced. The burden falls hardest on firms least able to bear it."
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "h": "Malaysia's new RM20K floor exceeds Singapore's EP minimum of SGD5,000 (~RM16,600).",
+      "s": "Multinationals choosing between Penang and Batam now see Malaysia as the more expensive jurisdiction. Thailand and Vietnam offer alternatives with lower barriers.",
+      "d": "Malaysia's new RM20K floor exceeds Singapore's EP minimum of SGD5,000 (~RM16,600). Multinationals choosing between Penang and Batam now see Malaysia as the more expensive jurisdiction. Thailand and Vietnam offer alternatives with lower barriers."
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The real talent equation: pipeline quality, brain drain, and enforcement. This policy moves none. It adjusts the price tag on a problem that is not about price."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Protecting Malaysian jobs is right. But protection without pipeline investment produces paper compliance, not specialists. The ladder must come before the bar."
+    }
+  ],
+  "sources": [
+    "T4A related issue 1965"
+  ],
+  "confidence": "Low — derived from published cards, original brief not on disk; submit for retroactive Stage 2/3 verification",
+  "lenses_used": [
+    "Economic",
+    "Governance",
+    "Regional"
+  ],
+  "lenses_applicable_but_unused": [
+    "Legal",
+    "Rights",
+    "Technology",
+    "Social",
+    "Political",
+    "Health",
+    "Environmental",
+    "Historical",
+    "Critical",
+    "Theological",
+    "Security"
+  ]
+}

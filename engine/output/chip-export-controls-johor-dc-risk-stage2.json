@@ -1,0 +1,59 @@
+{
+  "_runtime": "real_external_llm",
+  "_source": "Gemini browser session",
+  "_collected_at": "2026-05-17",
+  "_note": "Real Gemini response on v1 cards. In-house simulated counterpart preserved at chip-export-controls-johor-dc-risk-stage2-inhouse.json for comparison.",
+  "bias_score": 65,
+  "political_lean_estimate": 0.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.6,
+  "geographic_bias_estimate": -0.5,
+  "economic_framing_estimate": 0.5,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [
+    {
+      "quote": "The question is not whether Malaysia is selling chips to China. The question is whether Johor is the freeport on the route...",
+      "why_biased": "Frames the entire state of Johor and its legitimate data centre investments purely through the lens of a smuggling hub for foreign adversaries, stripping it of domestic economic agency.",
+      "fix": "Reframe to acknowledge Johor's legitimate economic boom while noting the regulatory risks it faces from US-China geopolitical tensions."
+    }
+  ],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "The analysis completely omits the Malaysian government's defense, specifically MITI Minister Tengku Zafrul's statements in March 2025 that there was 'no evidence of data centre companies in Malaysia using unauthorised chips' and his questioning of why the chips were allowed out of Singapore in the first place. Omitting this defense disproportionately shifts the burden of guilt onto Malaysia."
+  ],
+  "evasion_flags": [
+    "The analysis avoids explicitly accusing a Malaysian company but heavily implies systemic complicity ('Johor kept building') without providing evidence that any of the new capacity is tied to diverted chips."
+  ],
+  "shoe_test_failures": [
+    "If the servers were routed through a Western ally's territory instead of Malaysia, the analogy of 'building the largest port on a known smuggling route' would likely not be used; it would be framed as an isolated customs evasion incident."
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "The Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail for unlicensed export of listed strategic items.",
+      "why": "The penalty for a body corporate under Section 9 of the Strategic Trade Act 2010 for unlicensed export is up to RM 10 million (or RM 20 million with intent), not RM 1 million. The RM 1 million fine applies to other offenses like providing false information.",
+      "fix": "Change 'RM 1 million' to 'RM 10 million'."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Like building the largest port on a known smuggling route, then asking the customs office across the border to keep clearing it.",
+      "why": "This analogy creates a false impression by equating a multi-billion dollar legitimate tech investment ecosystem (approved data centres) to a 'smuggling route' based on a single fraud case involving three men in a neighbouring country.",
+      "fix": "Remove the extreme analogy and describe the situation neutrally as a compliance risk where rapid infrastructure growth intersects with tightening foreign export controls."
+    }
+  ],
+  "verification_log": [
+    {"claim": "On 27 February 2025, Singapore charged three men with fraud tied to the sale of servers carrying Nvidia AI chips that moved from Singapore to Malaysia.", "status": "VERIFIED", "primary_source": "Multiple secondary reporting citing Singapore Police Force and AGC documents (e.g., Taipei Times, CNA reporting on Mar 1-3 2025)."},
+    {"claim": "BIS issued the AI Diffusion Rule on 13 January 2025 placing Malaysia in Tier 2.", "status": "VERIFIED", "primary_source": "CSIS Analysis 'The AI Diffusion Framework' detailing BIS Tier 2 placement for Malaysia."},
+    {"claim": "Commerce Secretary Lutnick rescinded it on 13 May 2025, two days before its scheduled effect...", "status": "VERIFIED", "primary_source": "WilmerHale Client Alert (May 15, 2025) citing US Department of Commerce / BIS formal signal of rescission on May 13, 2025."},
+    {"claim": "Johor has more than 80 approved data-centre projects with announced capacity above 5 GW", "status": "VERIFIED", "primary_source": "Knight Frank regional data centre report (Sep 2025) confirming Johor's aggregate supply reached 5.8 GW."},
+    {"claim": "Microsoft (USD 2.2 B announced May 2024)", "status": "VERIFIED", "primary_source": "Microsoft corporate news release (May 2, 2024)."},
+    {"claim": "Google (USD 2 B announced May 2024)", "status": "VERIFIED", "primary_source": "Google corporate news release (May 30, 2024)."},
+    {"claim": "The Strategic Trade Act 2010 carries up to RM 1 million in corporate fines and five years' jail for unlicensed export of listed strategic items.", "status": "WRONG", "primary_source": "Act 708 Strategic Trade Act 2010, Section 9(5)(b) and 2017 Amendments", "corrected_value": "up to RM 10 million (or RM 20 million depending on intent) in corporate fines and five years' jail."}
+  ],
+  "overall_assessment": "This analysis suffers from significant misleading framing and omission bias. It weaponizes a single alleged diversion case in Singapore to cast an unfair shadow over Johor's entire legitimate multi-billion-dollar data centre industry, likening it to a 'smuggling route'. Crucially, it omits the Malaysian government's explicit public defense that there is no evidence of local data centres using these chips. Finally, it commits a factual error regarding the Strategic Trade Act penalties, understating the corporate fines by a factor of ten."
+}

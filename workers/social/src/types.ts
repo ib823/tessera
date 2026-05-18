@@ -14,6 +14,7 @@ export interface Env {
   POST_WINDOW_END_HOUR_MYT: string;
   TREND_CACHE_TTL_MIN: string;
   POSTED_CARD_TTL_DAYS: string;
+  ISSUE_COOLDOWN_HOURS: string;
   ENABLE_X: string;
   BLUESKY_APP_PASSWORD: string;
   ADMIN_SECRET: string;

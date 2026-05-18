@@ -1,0 +1,84 @@
+{
+  "bias_score": 35,
+  "political_lean_estimate": 0,
+  "ethnic_framing_estimate": 0,
+  "religious_sensitivity_estimate": 0,
+  "narrative_framing_estimate": 0,
+  "geographic_bias_estimate": 0.3,
+  "economic_framing_estimate": 0.6,
+  "gender_agency_estimate": 0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [
+    {
+      "quote": "...",
+      "why_biased": "The analysis focuses exclusively on high-level financial settlements and Ministry of Finance reports, which is typical for national-level economic analysis but lacks any mention of local impacts or grassroots sentiment regarding the recovered funds.",
+      "fix": "Mention how these funds are being used to service debt that impacts the national budget and public services for all Malaysians."
+    }
+  ],
+  "economic_flags": [
+    {
+      "quote": "RM20.7 billion is the largest financial-crime recovery in Malaysian history.",
+      "why_biased": "By focusing on the 'headline number' of recoveries without balancing it against the total remaining debt liabilities (RM 50 billion as of late 2025), it creates a more optimistic economic picture than the reality of the net fiscal position.",
+      "fix": "Note that while recoveries are historic, they are still significantly lower than the total liabilities and interest being paid by the government."
+    }
+  ],
+  "gender_flags": [],
+  "omission_flags": [
+    "Omission of the total recovery figure as of early 2026 (RM 31.3 billion), which makes the RM 20.7 billion headline an underclaim.",
+    "Omission of the ongoing legal arbitration with Goldman Sachs over the $1.4 billion guarantee, which is a critical detail for the 'Legal' and 'Governance' lenses.",
+    "Omission of the RM 50 billion in remaining 1MDB liabilities cited by the Prime Minister in December 2025."
+  ],
+  "evasion_flags": [
+    "The analysis dodges the complexity of the Goldman Sachs 'guarantee' by presenting it as a settled return, rather than a currently disputed figure in international arbitration."
+  ],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNDERCLAIM",
+      "quote": "1MDB Asset Recovery Has Reached Over RM20.7 Billion",
+      "why": "As of May 2026, the total recovery has reached RM 31.3 billion. Citing RM 20.7 billion (a subset representing only specific bank settlements) as the primary headline figure significantly understates the total progress.",
+      "fix": "Update the figure to RM 31.3 billion as of May 2026."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "recovered more than RM20.73 billion through settlements with financial institutions",
+      "why": "The figure 'RM 20.73 billion' appears to be a factual error possibly cross-contaminated from an unrelated water asset debt figure (PAAB) or TNB investment figure. Official 1MDB tallies for the three major bank settlements total approximately RM 20.71 billion, not 20.73 billion.",
+      "fix": "Use RM 20.71 billion for bank settlements or the total recovery figure of RM 31.3 billion."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "The settlement included a USD2.5 billion cash payment plus a guarantee to help recover at least USD1.4 billion in misappropriated assets.",
+      "why": "Presenting the USD 1.4 billion guarantee without mentioning the current arbitration and dispute over its payment (as of May 2026) suggests a certainty that does not exist.",
+      "fix": "Add a note that the USD 1.4 billion guarantee is currently subject to arbitration in London."
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "1MDB asset recovery has reached over RM20.7 billion (MOF reported in Oct 2025)",
+      "status": "WRONG",
+      "primary_source": "Ministry of Finance/MACC Reports Oct 2025",
+      "corrected_value": "RM 20.71 billion (bank settlements) or RM 26.73 billion (recovery proceeds as of July 2025). The figure RM 20.73 billion is associated with PAAB water assets."
+    },
+    {
+      "claim": "Goldman Sachs paid USD3.9 billion in 2020",
+      "status": "VERIFIED",
+      "primary_source": "Malaysian Ministry of Finance Statement (July 24, 2020)",
+      "corrected_value": ""
+    },
+    {
+      "claim": "US DOJ has separately recovered and returned about USD1.4 billion in assets to Malaysia by mid-2024",
+      "status": "VERIFIED",
+      "primary_source": "US Department of Justice / US Embassy in Malaysia (June 13, 2024)",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Total scandal losses remain disputed. Figures cited range from USD4.5 billion (DOJ) up to RM30+ billion",
+      "status": "VERIFIED",
+      "primary_source": "US DOJ Asset Forfeiture Complaints / MACC Estimates (RM 42B)",
+      "corrected_value": ""
+    }
+  ],
+  "overall_assessment": "The analysis is factually sloppy and outdated for its May 2026 publication date. It uses a headline figure (RM 20.7 billion) that is technically an underclaim of the total recovery (RM 31.3 billion) and appears to have imported a specific decimal figure (RM 20.73 billion) from unrelated water infrastructure data. Most critically, it fails to mention that the Goldman Sachs guarantee it cites is currently the subject of a major international arbitration dispute, which significantly changes the 'Governance' and 'Legal' narrative."
+}

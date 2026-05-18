@@ -1,0 +1,216 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+
+=== THE ANALYSIS TO FACT-CHECK (v3 — post real cross-vendor synthesis) ===
+
+{
+  "_provenance": {
+    "version": "v3",
+    "stage": "Stage 1 — Primary Analysis (Claude), v3 derived from Stage 6 synthesis",
+    "slug": "chip-export-controls-johor-dc-risk",
+    "issue_id": "1995",
+    "brief": "engine/briefs/chip-export-controls-johor-dc-risk.md",
+    "generated_at": "2026-05-17",
+    "note": "This file is a synthesis-derived restatement of Stage 1 for the purpose of regenerating Stage 2-5 browser prompts against the v3 cards. The original v1 Stage 1 is preserved at chip-export-controls-johor-dc-risk-stage1.json. The transformation history from v1 to v3 lives in chip-export-controls-johor-dc-risk-stage6-synthesis.json under revisions_applied_v3.",
+    "discipline": "Process-not-substance. No 3R content. Pure trade-security-economic-governance story."
+  },
+  "headline": "Singapore charged a fourth in the Nvidia chip case. No Malaysian operator faces charges yet.",
+  "context": "Singapore charged three men in Feb 2025 over servers that, per the Home Affairs Minister, possibly carried Nvidia AI chips routed to Malaysia. A fourth was charged in April 2026. Malaysia imposed a Strategic Trade Permit on US AI chips on 14 July 2025. No Malaysian operator has been publicly named.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Singapore's chip case grew to four people charged: three on 27 Feb 2025 (a Singaporean, a permanent resident, a Chinese national), a fourth on 2 April 2026.",
+      "sub": "Singapore's Minister Shanmugam said the servers possibly carried Nvidia chips and moved to Malaysia; the final destination was unknown.",
+      "sources": [
+        "Singapore Police Force, 'Three Men To Be Charged For Fraud By False Representation', 27 Feb 2025 [PRIMARY]",
+        "Singapore Police Force, 'Fourth Individual Charged in Relation to the Case Involving Fraud by False Representation', 2 Apr 2026 [PRIMARY]",
+        "Singapore Ministry of Home Affairs, Minister K. Shanmugam transcript, 3 Mar 2025 [PRIMARY]",
+        "Business Times Singapore reporting on the case, naming Aaron Woon Guo Jie (41), Alan Wei Zhaolun (49), Li Ming (51) [SECONDARY VERIFIED]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "big": "The US 'Tier 2' label came from a rule that never officially named Malaysia and was paused before it took effect.",
+      "sub": "BIS issued the AI Diffusion Rule on 13 Jan 2025, announced rescission 13 May 2025. GAO ruled in May 2026 the rule still stood until rulemaking completes.",
+      "sources": [
+        "BIS, 'Framework for Artificial Intelligence Diffusion,' 90 Fed. Reg. 4544 (15 Jan 2025) [PRIMARY]",
+        "BIS press release announcing rescission, 13 May 2025 [PRIMARY]",
+        "US GAO decision B-337935, 12 May 2026 — clarifying that the announced rescission was not final agency action and the rule remained in the CFR [PRIMARY]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Johor approved 51 data-centre projects worth RM183 billion; 17 operational. In November 2025 the state stopped approving lower-tier DCs.",
+      "sub": "Planned DCs could absorb over half Johor's treated water. YTL, ByteDance and GDS have Johor footprints.",
+      "sources": [
+        "Johor state government statement reported in MWA/NST, 26 November 2025 — 51 approved DC projects, RM182.96 billion, 17 operational [PRIMARY/NEAR-PRIMARY]",
+        "SPAN (National Water Services Commission) — proposed DC water demand of 808 MLD against Johor treated water consumption 1,511 MLD [PRIMARY]",
+        "Industry-tracker data and MIDA records on YTL Sedenak, ByteDance and GDS Johor presence [SECONDARY]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Malaysia made US-origin AI chips subject to a Strategic Trade Permit on 14 July 2025. MITI said in March 2025 it had no findings of Nvidia chips reaching Malaysia.",
+      "sub": "The Strategic Trade Act 2010 caps unlicensed-export fines at RM10M (RM20M with intent). No Malaysian operator faces public charges.",
+      "sources": [
+        "MITI media statement, 14 July 2025, 'Malaysia Regulates Trade of US AI Chips' — imposes Strategic Trade Permit under STA 2010 Section 12 catch-all control [PRIMARY]",
+        "Minister Tengku Zafrul statement in Dewan Negara, 6 March 2025 — 'no findings or reports indicating that Nvidia AI chips in servers were transferred to Malaysia from Singapore as claimed' [PRIMARY]",
+        "Strategic Trade Act 2010 (Act 708), Section 9 — corporate fine up to RM10 million for unlicensed export of listed strategic items; up to RM20 million for export with intent [PRIMARY]"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The permit exists. Bridge changed tenants. Johor tightened approvals. The test isn't whether anyone acted. The test is whether anyone gets named.",
+      "sub": "",
+      "sources": [
+        "Editorial reframe. Rotates the model from 'will Washington act' (now factually behind events) to the accountability gap: every other actor moved, no Malaysian operator has been publicly named. Anchored on MITI 14 Jul 2025 permit, BDC Feb 2026 tenant swap, Johor Nov 2025 tightening."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like writing the building code after the towers go up. Now everyone watches which ones get inspected.",
+      "sub": "Malaysia wrote its US-chip permit in July 2025, five months after the Singapore charges. Bridge Data Centres swapped a Chinese tenant in February 2026.",
+      "sources": [
+        "Editorial analogy. Mirrors verified findings: 27 Feb 2025 SPF charges; 14 July 2025 MITI STA permit; Feb 2026 BDC removal of Megaspeed International from its Malaysian computing hub, replacing 68.4 MW with Zenlayer."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Singapore charged four. Malaysia wrote a permit. The market swapped a tenant. No Malaysian operator has been publicly named for the case that triggered all of it.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Anchors: SPF 27 Feb 2025 + 2 Apr 2026 charges; MITI 14 Jul 2025 permit; BDC Feb 2026 swap; null state of public MY enforcement action against any DC operator as of 17 May 2026."
+      ]
+    }
+  ],
+  "sources": "Singapore Police Force, Singapore Ministry of Home Affairs (Shanmugam), Business Times Singapore, BIS Federal Register (90 Fed. Reg. 4544 and 13 May 2025 rescission release), US GAO B-337935 (12 May 2026), MITI 14 Jul 2025 media statement on US AI chips, MITI 6 Mar 2025 Dewan Negara statement, Strategic Trade Act 2010 (Act 708), Johor state government via MWA/NST 26 Nov 2025, SPAN, MIDA records, MWA/NST/Bernama secondary coverage",
+  "confidence": "High on legal/statutory framework (EAR, BIS Diffusion Rule, GAO decision, STA 2010 penalties). High on Singapore case existence and route claim (multi-outlet plus minister transcript). High on the 14 July 2025 MITI permit and the 6 March 2025 MITI defense (primary sources). High on the November 2025 Johor approval count (51) and the November 2025 tightening (primary near-primary). High on the February 2026 BDC tenant swap. Medium on the water-demand figure (SPAN data via secondary coverage). Low on whether any non-public Malaysian enforcement action exists.",
+  "lenses_used": ["Security", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Technology", "Political", "Regional"],
+  "needs_verification": [
+    "The exact dollar figure of the SPF transactions (S$390M vs US$390M discrepancy across secondary reporting) — kept out of cards.",
+    "Whether the SPF charge sheet or AGC Singapore filing names any specific Chinese AI firm — not in cards.",
+    "Whether any non-public Malaysian enforcement action exists; the current claim is the absence of public naming, which is verifiable against MITI, PDRM, Customs releases."
+  ],
+  "source_notes": "v3 supersedes the v1 cards. All revisions tagged in engine/output/chip-export-controls-johor-dc-risk-stage6-synthesis.json. The v1 cards (and the in-house simulated reviews that informed v1's first round of revisions) are preserved in their original files.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Every numeric and named claim in v3 cards traces to a primary or near-primary source in the brief or in one of stage 2/3/4/5 outputs. Specifically: BDC tenant swap (Stage 4 source: theedgemalaysia.com); MITI 14 July 2025 permit (Stage 3 source: miti.gov.my); Johor 51 projects (Stage 3 source: thestar.com.my/MWA-NST); SPF 4th charge (Stage 3 source: police.gov.sg); STA RM10M penalty (Stage 3 source: agc.gov.my and miti.gov.my); GAO decision (Stage 3 source: gao.gov).",
+    "four_cardinal_sins": "none in v3 (real Stage 2/3 re-run on v3 would close the verification loop)",
+    "3R_check": "No race, religion, or royalty content.",
+    "process_not_people_check": "v3 names Shanmugam (Singapore minister, official capacity), Tengku Zafrul (then MITI minister, official capacity). The three accused are described by citizenship category, not by name in cards. No characterisation of bad faith."
+  }
+}

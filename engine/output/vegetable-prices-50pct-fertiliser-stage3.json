@@ -1,0 +1,290 @@
+{
+  "factual_accuracy_score": 42,
+  "source_diversity_estimate": 0.05,
+  "claims": [
+    {
+      "claim": "One-third of global fertiliser shipments transit the Strait of Hormuz.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UNCTAD brief, originally published 11 Mar 2026, via EU Knowledge4Policy: https://knowledge4policy.ec.europa.eu/node/85089_ga",
+      "correction": "Use 'one third of global seaborne trade in fertilizers passed through the Strait of Hormuz in 2024' rather than all 'shipments'.",
+      "stale_check": "No stale issue found; source is 11 Mar 2026 and describes 2024 trade exposure."
+    },
+    {
+      "claim": "With the waterway blocked since February 2026",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "UNCTAD brief, 11 Mar 2026: ship transits fell from 129/day in 1-27 Feb to 4/day as of 10 Mar 2026: https://knowledge4policy.ec.europa.eu/node/85089_ga; Le Monde, 5 May 2026, reported about 10 vessels/day vs 120-150 before conflict: https://www.lemonde.fr/en/international/article/2026/05/05/us-and-iran-escalate-double-blockade-of-the-strait-of-hormuz_6753138_4.html",
+      "correction": "Say maritime traffic through Hormuz sharply collapsed after the late-February conflict; do not imply a total continuous blockade from February through publication.",
+      "stale_check": "Yes. Later reporting by 5 May 2026 indicated limited daily passage, so any total-blockade wording became more misleading over time."
+    },
+    {
+      "claim": "fertiliser raw materials surged 100-150%",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.35,
+      "m_unknown": 0.5,
+      "source": "World Bank Commodity Markets Outlook, Apr 2026, shows fertilizer prices spiked during the first month of the conflict but the chart scale indicates roughly 60%, not 100-150% for a broad fertilizer/raw-material basket: https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/original/CMO-April-2026.pdf",
+      "correction": "Either cite a specific primary price series for a named raw material or replace with World Bank's more general finding that fertilizer prices spiked sharply in March 2026.",
+      "stale_check": "No stale issue found; the claim appears over-specific relative to available primary data."
+    },
+    {
+      "claim": "Hari Raya price controls on 12 vegetables ended 28 March.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "KPDN was reported by Scoop/Bernama on 10 Mar 2026 as implementing SHMMP Aidilfitri from 14-28 Mar 2026 covering 27 items, including some vegetables: https://www.scoop.my/news/283899/kpdn-to-enforce-hari-raya-price-controls-from-march-14-to-28/; Malay Mail, 28 Mar 2026: https://www.malaymail.com/amp/news/malaysia/2026/03/28/why-farmers-and-traders-malaysia-are-bracing-for-a-veg-price-crunch-this-april-whats-behind-the-hormuz-strait-connection/214149",
+      "correction": "The verified reporting supports a 14-28 Mar 2026 festive maximum price scheme covering 27 essential items, including several vegetables; I could not verify '12 vegetables' from a primary KPDN document.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Farmers warn 30-50% price hikes in April.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0,
+      "m_unknown": 0.4,
+      "source": "Malay Mail, 24 Mar 2026, quoting Cameron Highlands Malay Farmers Association chairman Syed Abd Rahman Syed Abd Rashid via Berita Harian: https://www.malaymail.com/amp/news/malaysia/2026/03/24/your-shopping-bill-is-about-to-get-more-expensive-farmers-say-veggie-prices-could-rise-50pc-in-april/213633; CodeBlue, 24 Mar 2026: https://codeblue.galencentre.org/2026/03/fruit-and-vegetable-prices-in-malaysia-set-to-rise-farmers/",
+      "correction": "Attribute this as a warning/forecast by farmers' groups, not an observed price increase.",
+      "stale_check": "Potentially stale: by 5 Apr 2026 NST reported some vegetable prices were 10-30% lower after Hari Raya, while 10-13 Apr reports still cited cost pressure."
+    },
+    {
+      "claim": "Food prices are rising because of the Middle East conflict.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.1,
+      "m_unknown": 0.5,
+      "source": "World Bank Commodity Markets Outlook, Apr 2026, found global food prices rose 3% in March 2026 and fertilizer/energy shocks added pressure, but also said futures reactions were limited and effects depend on disruption duration: https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/original/CMO-April-2026.pdf",
+      "correction": "Causality should be qualified: the Middle East conflict contributed to global energy, transport, and fertilizer pressure, but Malaysia vegetable prices also reflected diesel, weather, supply-demand, and price-control effects.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia has no stockpile and no domestic production.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.75,
+      "m_unknown": 0.2,
+      "source": "RSIS commentary, 20 Mar 2026, says Malaysia domestic fertiliser production can meet 39% of annual use: https://rsis.edu.sg/wp-content/uploads/2026/03/CO26053.pdf; NST, 27 Apr 2026, quotes NAFAS saying domestic fertiliser stocks remained adequate: https://www.nst.com.my/amp/business/economy/2026/04/1426916/malaysia-buffers-fertiliser-shock-pressure-may-hit-shelves-months",
+      "correction": "Replace with: Malaysia is import-dependent and lacks a clearly documented strategic national fertiliser reserve comparable to oil stocks, but it has some domestic production and reported domestic stocks.",
+      "stale_check": "Yes. By 27 Apr 2026, NAFAS stated domestic availability was stable and sufficient for current planting needs."
+    },
+    {
+      "claim": "23 fertiliser vessels blocked at Hormuz.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "Kpler blog, 11 Mar 2026, reported 23 vessels in the Gulf either loading or laden with fertiliser, with transit status uncertain, not necessarily all 'blocked': https://www.kpler.com/blog/fertiliser-loadings-persist-as-vessels-look-to-navigate-the-strait-of-hormuz",
+      "correction": "Say 'Kpler observed 23 fertiliser-related vessels in the Gulf either loading or laden, with Hormuz transit uncertain.'",
+      "stale_check": "Likely stale by April/May as partial transits resumed."
+    },
+    {
+      "claim": "Nitrogen fertiliser jumped from RM240 to RM305/25kg in two weeks, projected RM350 by mid-April.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "I found only secondary/blog references repeating RM305 and RM350; no primary price list, official commodity data, invoice evidence, or named supplier source verifying RM240, the two-week interval, or mid-April projection.",
+      "correction": "Use verified broader figures: Malay Mail quoted Federation of Vegetable Farmers Association secretary Tan Chee Kiong saying fertiliser prices were expected to rise from RM3,800/tonne to RM4,100/tonne in April.",
+      "stale_check": "No reliable primary time series found."
+    },
+    {
+      "claim": "Wholesaler margins already extract 30-50%.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.1,
+      "m_unknown": 0.8,
+      "source": "No primary Malaysian agriculture supply-chain source found verifying a 30-50% wholesaler margin for vegetables.",
+      "correction": "Remove or replace with a sourced farmgate-to-retail spread for a named vegetable and date.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "A farmer sells kangkung at 30 sen/kg; you pay RM3.",
+      "status": "UNVERIFIED",
+      "m_true": 0.05,
+      "m_false": 0.1,
+      "m_unknown": 0.85,
+      "source": "No primary source found for this exact kangkung farmgate and retail price comparison.",
+      "correction": "Remove unless supported by a dated market-price dataset or direct primary farmgate/retail price evidence.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "B40 spend 40%+ of income on food; T20 about 15%.",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.75,
+      "m_unknown": 0.15,
+      "source": "DOSM Household Expenditure Survey 2024 reports Food & Beverages at 15.7% of total household consumption expenditure nationally: https://www.dosm.gov.my/portal-main/release-content/household-expenditure-survey-report--malaysia--states; DOSM HES 2019 key findings reported B40 food expenditure composition at 24.2%, M40 18.0%, T20 12.6%.",
+      "correction": "Use DOSM expenditure shares. If combining food at home plus restaurants/hotels, state the exact categories and year; do not call it 'income' unless using an income-denominator source.",
+      "stale_check": "The latest DOSM 2024 release is newer than the 2019 B40/T20 breakdown surfaced in search results."
+    },
+    {
+      "claim": "A 50% vegetable hike is a rounding error for one group, a skipped meal for the other.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.25,
+      "m_unknown": 0.5,
+      "source": "DOSM confirms lower-income households allocate a larger food share than high-income households, but no primary source verifies the 'rounding error' or 'skipped meal' outcome for a 50% vegetable-price shock: https://www.dosm.gov.my/portal-main/release-content/household-expenditure-survey-report--malaysia--states",
+      "correction": "Frame as an inference, not a fact: lower-income households are more exposed to food price increases; meal-skipping requires separate evidence.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Women manage 80% of household food purchases.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.15,
+      "m_unknown": 0.75,
+      "source": "I found a Pew Research Center figure that 80% of mothers in U.S. married/cohabiting-parent households say they are primary grocery shoppers, but no Malaysian primary source for this claim: https://www.pewresearch.org/short-reads/2019/09/24/among-u-s-couples-women-do-more-cooking-and-grocery-shopping-than-men/",
+      "correction": "Do not use this as a Malaysia fact unless a Malaysian survey is cited. At most, say women often shoulder household food management, with a Malaysia-specific source.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Invisible in inflation stats, visible in child nutrition.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.1,
+      "m_unknown": 0.55,
+      "source": "DOSM CPI captures food categories; MOH/DOSM SDG reporting cites NHMS 2022 child stunting at 21.2% of children under 5: https://www.dosm.gov.my/uploads/release-content/file_20241205124050.pdf",
+      "correction": "Food shocks are not 'invisible' in inflation stats; distributional harm may be obscured by aggregate CPI. Child nutrition links need cautious wording and specific indicators.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Indonesia stockpiles fertiliser via Pupuk Indonesia.",
+      "status": "VERIFIED",
+      "m_true": 0.6,
+      "m_false": 0,
+      "m_unknown": 0.4,
+      "source": "ANTARA, 15 May 2026, quoting PT Pupuk Indonesia: national fertiliser stockpiles stood at 1.1 million tons as of 11 May 2026: https://en.antaranews.com/amp/news/415856/pupuk-indonesias-fertilizer-sales-jump-36-percent-in-early-may",
+      "correction": "Attribute the stockpile figure and date; avoid implying a strategic reserve unless the policy mechanism is documented.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Vietnam's price law covers fertilisers.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0,
+      "m_unknown": 0.25,
+      "source": "Vietnam Domestic Market Management portal, 11 Jun 2024, summarising Price Law No. 16/2023/QH15 effective 1 Jul 2024 and listing nitrogen, DAP and NPK fertilisers for price stabilization: https://dms.gov.vn/tin-chi-tiet/-/chi-tiet/danh-muc-hang-hoa-dich-vu-binh-on-gia-tu-ngay-01-7-2024-80923-3.html",
+      "correction": "Specify nitrogen, DAP and NPK fertilisers under the price-stabilisation list.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Thailand declared fertiliser a controlled good with monitored reserves.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Thai Government PRD, 8 Mar 2026: chemical fertilizers are regulated commodities under price law; importers, manufacturers, and distributors must report volumes and stocks; Jan 2026 stock about 1.52 million tons: https://thailand.prd.go.th/en/content/category/detail/id/48/iid/483294",
+      "correction": "Use 'regulated commodities' and specify the reporting obligation and stock figures.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia imports nearly all fertiliser.",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.65,
+      "m_unknown": 0.2,
+      "source": "RSIS commentary, 20 Mar 2026, says Malaysia domestic fertiliser production can meet 39% of annual use, implying import dependence of about 61%, not 'nearly all': https://rsis.edu.sg/wp-content/uploads/2026/03/CO26053.pdf",
+      "correction": "Replace with 'Malaysia imports over 60% of its mineral fertiliser requirements' if using the Malay Mail/RSIS framing.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "Malaysia holds no strategic stock and has no stabilisation framework.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.2,
+      "m_unknown": 0.55,
+      "source": "No official Malaysian law or policy source found proving the absence of any strategic fertiliser reserve or stabilisation framework. NST, 27 Apr 2026, reported NAFAS saying domestic stocks remained adequate: https://www.nst.com.my/amp/business/economy/2026/04/1426916/malaysia-buffers-fertiliser-shock-pressure-may-hit-shelves-months",
+      "correction": "Say 'I found no evidence of a Vietnam-style fertilizer price-stabilisation list or Thailand-style public stock reporting mechanism for Malaysia' rather than asserting absolute absence.",
+      "stale_check": "Yes. Later reporting indicated adequate domestic stocks, weakening the 'no stock' framing."
+    },
+    {
+      "claim": "a country that knew Hormuz was a chokepoint for fertiliser never stockpiled a single bag.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.7,
+      "m_unknown": 0.25,
+      "source": "NST, 27 Apr 2026, reported industry players said domestic fertiliser stocks remained adequate and NAFAS said availability was stable: https://www.nst.com.my/amp/business/economy/2026/04/1426916/malaysia-buffers-fertiliser-shock-pressure-may-hit-shelves-months; Bernama, 25 Sep 2024, reported NAFAS increased padi fertiliser stockpile by 30,000 tonnes: https://www.bernama.com/en/news.php?id=2343391",
+      "correction": "Remove 'never stockpiled a single bag'. If the intended point is lack of strategic national reserve, state that specifically and cite evidence.",
+      "stale_check": "Yes. Public reporting by Apr 2026 directly undermined the literal wording."
+    },
+    {
+      "claim": "Hormuz exposed the fragility, but home built it: palm-oil priorities, no fertiliser reserves, middlemen taking more than farmers.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.2,
+      "m_unknown": 0.6,
+      "source": "No primary source found verifying the causal chain that palm-oil priorities caused Malaysia's fertiliser vulnerability or that middlemen generally take more than farmers for the cited vegetable supply chain.",
+      "correction": "Separate evidence-backed points: Malaysia is fertiliser import-dependent; some farmers warned of input-cost pressure; farmgate-to-retail margins require commodity-specific evidence.",
+      "stale_check": "No stale issue found."
+    },
+    {
+      "claim": "War made it visible; policy made it inevitable.",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.2,
+      "m_unknown": 0.6,
+      "source": "World Bank confirms the Middle East conflict can transmit through energy, transport and fertilizer costs, but no primary source establishes policy inevitability for Malaysia vegetable price increases: https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/original/CMO-April-2026.pdf",
+      "correction": "Present as argument/opinion, not a factual conclusion.",
+      "stale_check": "No stale issue found."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Malaysia has neither. Thailand declared fertiliser a controlled good with monitored reserves. Malaysia imports nearly all fertiliser, holds no strategic stock and has no stabilisation framework.",
+      "why": "The wording overstates import dependence and asserts total absence of stock. RSIS indicates domestic production meets 39% of use, and Malaysian reporting later said domestic stocks were adequate.",
+      "primary_source": "RSIS, 20 Mar 2026: https://rsis.edu.sg/wp-content/uploads/2026/03/CO26053.pdf; NST, 27 Apr 2026: https://www.nst.com.my/amp/business/economy/2026/04/1426916/malaysia-buffers-fertiliser-shock-pressure-may-hit-shelves-months"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Nitrogen fertiliser jumped from RM240 to RM305/25kg in two weeks, projected RM350 by mid-April.",
+      "why": "No primary source found for the RM240 baseline, RM305 current price, two-week interval, or RM350 mid-April projection.",
+      "primary_source": "No primary source found."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Wholesaler margins already extract 30-50%. A farmer sells kangkung at 30 sen/kg; you pay RM3.",
+      "why": "No primary market-price or farmgate dataset found for these exact margins and prices.",
+      "primary_source": "No primary source found."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "B40 spend 40%+ of income on food; T20 about 15%.",
+      "why": "DOSM expenditure data do not support this wording. Available figures are expenditure composition, not income shares, and the B40 food-at-home figure found was 24.2% in 2019.",
+      "primary_source": "DOSM HES 2024: https://www.dosm.gov.my/portal-main/release-content/household-expenditure-survey-report--malaysia--states"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Women manage 80% of household food purchases",
+      "why": "The 80% figure found applies to U.S. mothers in Pew/ATUS analysis, not Malaysia.",
+      "primary_source": "Pew Research Center, 24 Sep 2019: https://www.pewresearch.org/short-reads/2019/09/24/among-u-s-couples-women-do-more-cooking-and-grocery-shopping-than-men/"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "With the waterway blocked since February 2026",
+      "why": "Traffic collapsed severely, but UNCTAD recorded 4 ships/day as of 10 Mar and later reporting gave around 10/day in May, so 'blocked since February' implies a total continuing closure stronger than the evidence.",
+      "primary_source": "UNCTAD/EU Knowledge4Policy, 11 Mar 2026: https://knowledge4policy.ec.europa.eu/node/85089_ga"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "never stockpiled a single bag",
+      "why": "This absolute claim is contradicted by reports of adequate domestic stocks and earlier NAFAS padi fertiliser stockpile increases.",
+      "primary_source": "NST, 27 Apr 2026: https://www.nst.com.my/amp/business/economy/2026/04/1426916/malaysia-buffers-fertiliser-shock-pressure-may-hit-shelves-months"
+    }
+  ],
+  "omitted_facts": [
+    "UNCTAD reported total ship transits through Hormuz fell from 129/day in 1-27 Feb 2026 to 4/day as of 10 Mar 2026, a 97% fall, which is more precise than saying simply 'blocked': https://knowledge4policy.ec.europa.eu/node/85089_ga",
+    "World Bank's Apr 2026 outlook said food prices rose 3% in March 2026, below the 11% jump after Russia's 2022 invasion of Ukraine, despite larger energy and fertilizer price spikes: https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/original/CMO-April-2026.pdf",
+    "NST reported on 27 Apr 2026 that Malaysian domestic fertiliser stocks remained adequate and distribution channels were functioning, adding important counterweight to the crisis framing: https://www.nst.com.my/amp/business/economy/2026/04/1426916/malaysia-buffers-fertiliser-shock-pressure-may-hit-shelves-months",
+    "Thailand's official PRD reported chemical fertiliser stock of about 1.52 million tons as of Jan 2026 and urea stock of about 0.32 million tons, with mandatory reporting by importers, manufacturers and distributors: https://thailand.prd.go.th/en/content/category/detail/id/48/iid/483294",
+    "Vietnam's 2023 Price Law price-stabilisation list specifically includes nitrogen, DAP and NPK fertilisers, not all fertilisers generically: https://dms.gov.vn/tin-chi-tiet/-/chi-tiet/danh-muc-hang-hoa-dich-vu-binh-on-gia-tu-ngay-01-7-2024-80923-3.html",
+    "DOSM's latest 2024 HES release reports national Food & Beverages expenditure at 15.7% of household consumption expenditure, a necessary context for the B40/T20 food-spending claim: https://www.dosm.gov.my/portal-main/release-content/household-expenditure-survey-report--malaysia--states"
+  ],
+  "source_assessment": "The original analysis cites only 'T4A related issue 1951' and 'T4A related issue 1952', which are circular and not primary sources. It gives no direct government, court, regulator, official statistics, industry data, academic, farmer association, market-price dataset, or consumer voice citations. The fact-check found some support from UNCTAD, World Bank, DOSM, Thai government PRD, Vietnam official legal summaries, and reported farmer-association quotes, but the published cards themselves do not expose those sources. Major gaps include Malaysian official fertiliser stock policy, primary retail/farmgate vegetable price data, primary fertiliser price series, and gendered household purchasing data for Malaysia.",
+  "overall_assessment": "The analysis has a real evidentiary core: Hormuz is a major fertiliser chokepoint, traffic collapsed after the late-February 2026 conflict, farmers warned of April vegetable-price pressure, Vietnam and Thailand have clearer fertiliser price/stock controls, and lower-income households are more exposed to food costs. But it repeatedly turns plausible vulnerability into unsupported absolutes: 'no domestic production', 'never stockpiled a single bag', 40%+ B40 food-income share, exact fertiliser bag prices, and kangkung farmgate-retail spreads are wrong or unverified. The piece should be treated as rhetorically forceful but factually unreliable until rewritten with primary sourcing and stronger caveats."
+}

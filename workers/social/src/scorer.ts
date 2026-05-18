@@ -138,6 +138,7 @@ export async function pickBestCard(
   env: Env,
   cards: SocialCard[],
   postedKeys: Set<string>,
+  postedIssueIds: Set<string>,
   snapshot: TrendSnapshot,
   radar: RadarSummary | null,
 ): Promise<PickResult> {
@@ -147,6 +148,10 @@ export async function pickBestCard(
   for (const c of cards) {
     if (!isPostableCard(c)) continue;
     if (postedKeys.has(`${c.issueId}:${c.cardIndex}`)) continue;
+    // Issue-level cooldown: skip every card from an issue that already had
+    // a post in the last ISSUE_COOLDOWN_HOURS. Prevents same-issue clustering
+    // when one issue's topic dominates today's trend + radar signals.
+    if (postedIssueIds.has(c.issueId)) continue;
     candidates.push({ card: c, scoreA: lexicalScore(c, snapshot, radar, now) });
   }
 

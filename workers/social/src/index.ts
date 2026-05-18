@@ -22,13 +22,13 @@ import {
   getLastPostAt,
   getPostLog,
   getRadar,
+  getRecentPostedIssueIds,
   getRecentPostedKeys,
   getTrends,
   markCardPosted,
   setLastPostAt,
 } from './kv';
 import { ingestTrends } from './trends';
-import { ingestRadar } from './radar';
 import { pickBestCard } from './scorer';
 import { shouldPostNow } from './scheduler';
 import { postCardToBluesky, type PostResult } from './bluesky';
@@ -53,8 +53,11 @@ async function maybePost(env: Env, force = false): Promise<{ posted: boolean; re
   // scoring (radar arg becomes null, radarBoost returns 0).
   const radar = await getRadar(env);
 
-  const postedKeys = await getRecentPostedKeys(env, index.cards);
-  const pick = await pickBestCard(env, index.cards, postedKeys, snapshot, radar);
+  const [postedKeys, postedIssueIds] = await Promise.all([
+    getRecentPostedKeys(env, index.cards),
+    getRecentPostedIssueIds(env, index.cards),
+  ]);
+  const pick = await pickBestCard(env, index.cards, postedKeys, postedIssueIds, snapshot, radar);
 
   if (!pick.card) {
     return { posted: false, reason: `${pick.reason} (considered=${pick.considered})` };
@@ -109,15 +112,8 @@ export default {
       } catch (err) {
         console.error('ingestTrends failed:', err);
       }
-      try {
-        const radar = await ingestRadar(env);
-        if (radar) {
-          console.log(`radar ingested: ${radar.selectedCount} items → ${Object.keys(radar.entities).length} entities, ${Object.keys(radar.keywords).length} keywords`);
-        }
-      } catch (err) {
-        // Non-fatal — scorer falls back to trends-only when radar cache is empty.
-        console.error('ingestRadar failed:', err);
-      }
+      // Radar is uploaded to KV directly by CI (radar:current) — no worker
+      // fetch needed. Scorer reads it via getRadar() at post-decision time.
     }
     const r = await maybePost(env);
     if (r.posted) console.log(`posted: ${r.reason}`);
@@ -131,6 +127,13 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === '/health') {
+      // Gated: an unauthenticated probe gets 404 (not 401) so the endpoint
+      // is indistinguishable from a non-existent route and doesn't advertise
+      // that the bot exists. The ops-monitoring curl needs to pass
+      // x-admin-secret to get the full snapshot.
+      if (!checkAdmin(request, env)) {
+        return new Response('not found', { status: 404 });
+      }
       const [snapshot, lastPostAt, log] = await Promise.all([
         getTrends(env),
         getLastPostAt(env),

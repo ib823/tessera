@@ -27,6 +27,11 @@ POST_WINDOW_START_HOUR_MYT = "8"
 POST_WINDOW_END_HOUR_MYT = "22"
 TREND_CACHE_TTL_MIN = "60"
 POSTED_CARD_TTL_DAYS = "30"
+# Per-issue cooldown — after posting any card from issue X, no other card
+# from X is eligible for this many hours. Prevents same-issue clustering
+# when one issue dominates today's trend/radar signals. Per-card 30-day
+# cooldown still applies on top.
+ISSUE_COOLDOWN_HOURS = "12"
 ENABLE_X = "false"
 
 # Secrets (set via `wrangler secret put`):

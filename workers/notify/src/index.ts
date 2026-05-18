@@ -530,7 +530,7 @@ async function sendWeeklyDigest(env: Env): Promise<void> {
   const topIssue = recentIssues.reduce((a, b) => a.opinionShift > b.opinionShift ? a : b);
   const payload = digestPayload(topIssue.headline, recentIssues.length - 1);
 
-  for (const { key, sub } of subs) {
+  for (const { sub } of subs) {
     await sendPush(sub, payload, env, 'low', 'weekly-digest');
   }
 }
