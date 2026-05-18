@@ -85,6 +85,45 @@ Dossier `sarawak-fiscal-lever` body text updated from the vague "two-to-four-bil
 
 ---
 
+## Step 8 — Stage 3 rerun on synthesized text (2026-05-17, evening)
+
+Rerun output saved at `engine/output/dossier-D001-stage3-rerun.json`. **factual_accuracy_score: 82** (up from 60); **publication_recommendation: NEEDS_MORE_FIXES**. One factual error introduced during synthesis, plus six editorial tightening items.
+
+### CORRECTED — Wan Azizah "first woman" overclaim
+
+Stage 3 rerun caught a factual error I introduced when integrating Stage 4's gender-erasure flag. **Ganga Nayar founded and led the Malaysian Workers' Party in 1978**, so Wan Azizah was not the first woman to found and lead a Malaysian political party.
+
+Launches-timeline annotation revised to: "Wan Azizah Wan Ismail — founded and led Parti Keadilan Nasional through Anwar Ibrahim's incarceration; party president 1999 to 2018; later Malaysia's first female Deputy Prime Minister." The verified facts (founding PKN, presidency 1999–2018, first female DPM) are preserved; the unverified "first in history" claim is removed.
+
+### TIGHTENED — six editorial items
+
+1. **Malapportionment 1962 amendment.** Removed unverified "one-third tolerance" specific. New wording: "A 1962 amendment repealed that rule and moved apportionment principles into the Thirteenth Schedule. A 1973 amendment removed the quantified national deviation cap entirely from the current text."
+2. **UNDI18 framing.** Removed unverified causal claim about "urban constituencies absorbed most of the youth-cohort expansion." Now: "the post-UNDI18 roll shows the disparity remains severe rather than narrowing."
+3. **GTA / Pejuang seats.** Distinguished announced from contested. Now: "announced 121 parliamentary candidates and contested seats in nearly every state. The bloc won zero seats; Mahathir himself lost his Langkawi seat, and a large share of GTA candidates including the founder forfeited the RM10,000 deposit."
+4. **Base rates softening.** "Most" replaced with "The available examples suggest a clear pattern. Across new federal parties launched in Malaysia between 1988 and 2024, the typical first-contest result..." Marked as interpretation, not dataset claim.
+5. **Sabah RCI implementation.** "None substantively implemented" softened with attribution: "As of late 2021, opposition MPs and civil-society critics reported that the RCI's core recommendations remained largely unimplemented; no comprehensive government implementation status report has since been published."
+6. **Sarawak suppression framing.** "Active suppression of opposition voice" removed from both tldr and sarawak-fiscal-lever body. tldr now: "fiscally anchored by petroleum sales-tax revenue of roughly RM3 to RM4 billion a year, in a state assembly where opposition representation has shrunk from six members to two of eighty-two as of April 2024." Body now: "DAP and other opposition representatives have publicly stated that opposition-held constituencies receive lower state development allocations" (attributed) plus the verified seat-count shrinkage with dated qualifier.
+
+### DROPPED — fig-5 unsourced branch-chair count
+
+"300–500 branch chairs per division" removed pending citation to a party constitution or registrar record. Layer now reads "Branch chairs and party membership networks" without a specific number.
+
+### Updated scores after rerun + editorial tightening
+
+- `stageScores.fc` set to 82 (Stage 3 rerun actual).
+- `stageScores.sr` lifted from 80 to 82.
+- `finalScore` 76.8.
+- Estimated `fc` on a third Stage 3 rerun: ~88.
+- `published` remains **false** pending: optional third Stage 3 rerun confirming fc above 85, AND final Phase 6 legal/accuracy walk by the editor.
+
+### Items NOT addressed in this round (deferred)
+
+- Building a reproducible base-rates dataset (Stage 3 still flags this; the qualitative softening is the editor's stop-gap; a future companion brief should publish the dataset).
+- Pulling verbatim Article 49A(1) and 49A(2)(c) text from the gazette to replace the paraphrase (low risk because both ChatGPT and the Bar Council have confirmed the paraphrase's accuracy).
+- Re-running the editor verification batch on the Hulu Rajang count (the constituency was dropped from fig-2 in Step 7, so this is no longer publication-blocking).
+
+---
+
 ## Section-by-section changes
 
 ### Section: `tldr` (bullet 4)

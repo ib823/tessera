@@ -170,10 +170,11 @@ Year  Revenue (RM bn)  Label                Source
 - A vertical stack of five layered panels, each panel a thin horizontal rectangle with title centred.
 - Panels from top to bottom:
   1. **Division Head** (the defector)
-  2. **Branch chairs (300–500 per division)**
+  2. **Branch chairs and party membership networks**
   3. **JKKK village chiefs and mosque committees**
   4. **Felda settler representatives (in Felda-adjacent seats)**
   5. **Local contractor networks**
+- Editor note: the prior figure spec asserted "300–500 branch chairs per division" — Stage 3 flagged this as unsourced. Removed pending citation to a party constitution or registrar record.
 - Each panel filled in burgundy `#9B2C2C` at decreasing opacity from 100% (top) to 40% (bottom), suggesting that the visible defector at top is supported by an invisible base.
 - A thin burgundy vertical arrow on the left side runs through all five panels labelled "What he actually brings".
 - Title text in `Spectral` 16px italic warm white; layer counts in `Inter` 11px.
