@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cover illustration for Dossier D001.
+
+  Visual idea: "the room you cannot see" — four figures at a table,
+  a window at the back through which a faint crowd is suggested.
+
+  This is a refined SVG fallback. The CANONICAL version should be
+  produced via external image pipeline (Midjourney / DALL-E / Sora)
+  using the Picasso continuous-line prompt in:
+    engine/output/dossier-D001-figures.md
+
+  This SVG is intentionally polished enough to ship if the external
+  pipeline isn't run, but the real artefact will be hand-drawn by the
+  image model and carry far more expressive line quality.
+
+  Render: cairosvg → PNG 1200×630.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f0f23"/>
+
+  <!-- ============================ COMPOSITION ============================ -->
+  <!--
+    Negative space on the right ~30% (where the T4A signature lands).
+    Centre-left: the table and figures, the visual subject.
+    Upper-right: a window with a faint crowd suggestion.
+  -->
+
+  <!-- Window at rear, defines the room's back wall -->
+  <g fill="none" stroke="#F4F1EB" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+    <rect x="640" y="140" width="220" height="180" rx="0"/>
+    <line x1="750" y1="140" x2="750" y2="320"/>
+    <line x1="640" y1="230" x2="860" y2="230"/>
+  </g>
+
+  <!-- Distant crowd, suggested as a wavering horizon line through the window -->
+  <g fill="none" stroke="#F4F1EB" stroke-width="1.5"
+     stroke-linecap="round" stroke-linejoin="round" opacity="0.38">
+    <path d="M 655 268
+             q 8 -6 16 0 q 8 -8 16 0 q 8 -6 16 0 q 8 -8 16 0
+             q 8 -6 16 0 q 8 -8 16 0 q 8 -6 16 0 q 8 -8 16 0
+             q 8 -6 16 0 q 8 -8 16 0 q 8 -6 16 0 q 8 -8 16 0"/>
+    <path d="M 655 290
+             q 8 -5 16 0 q 8 -7 16 0 q 8 -5 16 0 q 8 -7 16 0
+             q 8 -5 16 0 q 8 -7 16 0 q 8 -5 16 0 q 8 -7 16 0
+             q 8 -5 16 0 q 8 -7 16 0 q 8 -5 16 0 q 8 -7 16 0"/>
+  </g>
+
+  <!-- ============================ THE FOUR FIGURES + TABLE ============================ -->
+  <!--
+    Single-weight white line. Drawn as one composition (visually, not as
+    one SVG path — but the eye reads it as one continuous gesture).
+    Four figures seated around a long table from a three-quarter angle.
+  -->
+
+  <g fill="none" stroke="#F4F1EB" stroke-width="2.6"
+     stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Table: a long oval seen from three-quarter angle -->
+    <ellipse cx="380" cy="430" rx="290" ry="38"/>
+
+    <!-- Table inner line (hint of depth) -->
+    <path d="M 110 432 q 270 -22 540 0" opacity="0.55"/>
+
+    <!-- Figure 1 — far left -->
+    <g>
+      <!-- Head -->
+      <circle cx="165" cy="338" r="22"/>
+      <!-- Shoulders and torso -->
+      <path d="M 130 408 q 35 -50 70 0"/>
+      <!-- Suit lapel hint -->
+      <path d="M 165 380 l 0 25" opacity="0.6"/>
+    </g>
+
+    <!-- Figure 2 — centre-left -->
+    <g>
+      <circle cx="295" cy="320" r="24"/>
+      <path d="M 256 396 q 39 -54 78 0"/>
+      <path d="M 295 360 l 0 28" opacity="0.6"/>
+    </g>
+
+    <!-- Figure 3 — centre-right -->
+    <g>
+      <circle cx="445" cy="320" r="24"/>
+      <path d="M 406 396 q 39 -54 78 0"/>
+      <path d="M 445 360 l 0 28" opacity="0.6"/>
+    </g>
+
+    <!-- Figure 4 — far right of the four (still in the seated row) -->
+    <g>
+      <circle cx="585" cy="338" r="22"/>
+      <path d="M 550 408 q 35 -50 70 0"/>
+      <path d="M 585 380 l 0 25" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- ============================ T4A CONTINUATION SIGNATURE ============================ -->
+  <!--
+    A cursive T4A in the lower right, continuing the single-line aesthetic.
+    Drawn with care; the curves echo the figures' shoulders above.
+  -->
+  <g transform="translate(990, 540)" fill="none" stroke="#F4F1EB"
+     stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- T -->
+    <path d="M 0 0 L 30 0 M 15 0 L 15 38"/>
+    <!-- 4 -->
+    <path d="M 50 0 L 50 22 L 78 22 M 78 0 L 78 38"/>
+    <!-- A -->
+    <path d="M 92 38 L 108 0 L 124 38 M 100 24 L 116 24"/>
+  </g>
+
+  <!-- ============================ EDITORIAL FRAME ============================ -->
+
+  <!-- Thin burgundy edge frame, subtle -->
+  <rect x="32" y="32" width="1136" height="566" rx="0"
+        fill="none" stroke="#9B2C2C" stroke-width="1" opacity="0.4"/>
+
+  <!-- Series mark in lower-left, very small, defines this as part of the dossier -->
+  <text x="64" y="588"
+        font-family="Inter, Helvetica, sans-serif"
+        font-size="10" font-weight="500" letter-spacing="2.4"
+        fill="#9CA3AF" opacity="0.85">D001 · MALAYSIA POLITICAL MECHANICS</text>
+
+</svg>
