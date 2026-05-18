@@ -5,6 +5,13 @@
 
   import type { IssueSummary } from '../lib/issues-loader';
   import type { FeedSection } from '../lib/feed-sections';
+  import { getDossierFeedEntries } from '../data/dossiers';
+
+  // Featured dossiers — surfaces the new long-form product on the
+  // homepage with a distinctive burgundy-accented card. The list is
+  // gated on SHOW_DOSSIERS_IN_FEED inside getDossierFeedEntries(); when
+  // the flag is false, this returns [] and the banner does not render.
+  const featuredDossiers = getDossierFeedEntries();
 
   interface Props {
     issueCount?: number;
@@ -281,6 +288,32 @@
           </div>
         </button>
         </article>
+      {/if}
+
+      {#if featuredDossiers.length > 0}
+        <section class="featured-dossiers" aria-labelledby="featured-dossiers-heading">
+          <h2 id="featured-dossiers-heading" class="sr-only">Featured Dossier</h2>
+          {#each featuredDossiers as d (d.id)}
+            <a class="dossier-card" href={d.href} data-dossier-id={d.id} aria-label="Dossier {d.id}: {d.title} — {d.subtitle}">
+              <span class="dossier-card__edge" aria-hidden="true"></span>
+              <div class="dossier-card__body">
+                <div class="dossier-card__top">
+                  <span class="dossier-card__pill">DOSSIER · {d.id}</span>
+                  <span class="dossier-card__series">{d.series.name}</span>
+                </div>
+                <div class="dossier-card__title">{d.title}</div>
+                <div class="dossier-card__subtitle">{d.subtitle}</div>
+                <div class="dossier-card__meta">
+                  <span>{d.estReadMinutes} min read</span>
+                  <span class="dot">·</span>
+                  <span>Long-form editorial</span>
+                  <span class="dot">·</span>
+                  <span>{d.primaryLens} lens</span>
+                </div>
+              </div>
+            </a>
+          {/each}
+        </section>
       {/if}
 
       <div class="today-grid">
@@ -1244,5 +1277,106 @@
     .today-quote {
       color: var(--text-muted);
     }
+  }
+
+  /* ----------------------------------------------------------------
+   * Featured Dossier card — surfaces the long-form editorial product
+   * on the homepage. Distinctive burgundy edge bar + serif title to
+   * mark it as different from regular bite-size issues.
+   * ---------------------------------------------------------------- */
+  .featured-dossiers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 28px 0 32px;
+  }
+  .dossier-card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #0f0f23;
+    border: 1px solid rgba(155, 44, 44, 0.35);
+    border-radius: var(--radius-md, 6px);
+    overflow: hidden;
+    transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+  }
+  .dossier-card:hover,
+  .dossier-card:focus-visible {
+    border-color: rgba(155, 44, 44, 0.7);
+    transform: translateY(-1px);
+    box-shadow: 0 16px 36px -16px rgba(0, 0, 0, 0.5);
+  }
+  .dossier-card__edge {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 5px;
+    background: #9B2C2C;
+  }
+  .dossier-card__body {
+    padding: 22px 24px 20px 32px;
+  }
+  .dossier-card__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .dossier-card__pill {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #F4F1EB;
+    background: #9B2C2C;
+    padding: 4px 10px;
+    border-radius: 2px;
+  }
+  .dossier-card__series {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #9CA3AF;
+  }
+  .dossier-card__title {
+    font-family: 'Spectral', 'Source Serif Pro', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #F4F1EB;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .dossier-card__subtitle {
+    font-family: 'Spectral', 'Source Serif Pro', Georgia, serif;
+    font-size: 15px;
+    color: #F4F1EB;
+    opacity: 0.78;
+    line-height: 1.5;
+    margin: 0 0 14px;
+    text-wrap: pretty;
+  }
+  .dossier-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 12px;
+    color: #9CA3AF;
+    letter-spacing: 0.04em;
+  }
+  .dossier-card__meta .dot { color: #3F1212; }
+
+  @media (max-width: 560px) {
+    .dossier-card__body { padding: 18px 18px 18px 20px; }
+    .dossier-card__top { margin-bottom: 12px; }
+    .dossier-card__title { font-size: 21px; }
+    .dossier-card__subtitle { font-size: 14px; }
   }
 </style>
