@@ -3,7 +3,7 @@
  * Slim radar-summary for the social bot.
  *
  * Reads radar/output/issue-queue.json (large; ~2 MB; runs every 2h via
- * .github/workflows/radar-scan.yml). Emits public/radar-summary.json
+ * .github/workflows/radar-scan.yml). Emits engine/private/radar-summary.json
  * containing only the fields the social bot's scorer needs:
  *
  *   { generatedAt, selectedCount, entities: {id: maxScore}, keywords: {token: maxScore} }
@@ -12,11 +12,15 @@
  * The map values are max(controversy_score) across all selected items that
  * contained the entity/keyword. Range 0–1.
  *
+ * Output is written to engine/private/ (gitignored) and uploaded to KV by CI
+ * as `radar:current` — it is NOT served on the public site, so the bot's
+ * topic-surfacing signal stays out of view.
+ *
  * If radar/output/issue-queue.json is missing (no radar scan yet), an
  * empty summary is emitted — the worker treats this as "no boost," which
  * is the correct degraded behaviour.
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { extractEntities } from './lib/entity-patterns.mjs';
@@ -39,9 +43,11 @@ const STOPWORDS = new Set([
 ]);
 
 const inputPath = join(root, 'radar/output/issue-queue.json');
-const outputPath = join(root, 'public/radar-summary.json');
+const outputDir = join(root, 'engine/private');
+const outputPath = join(outputDir, 'radar-summary.json');
 
 function emit(summary) {
+  mkdirSync(outputDir, { recursive: true });
   writeFileSync(outputPath, JSON.stringify(summary, null, 2));
 }
 
@@ -95,5 +101,5 @@ emit({
 });
 
 console.log(
-  `✓ radar-summary.json (${selected.length} items → ${Object.keys(entities).length} entities, ${Object.keys(keywords).length} keywords)`,
+  `✓ engine/private/radar-summary.json (${selected.length} items → ${Object.keys(entities).length} entities, ${Object.keys(keywords).length} keywords)`,
 );
