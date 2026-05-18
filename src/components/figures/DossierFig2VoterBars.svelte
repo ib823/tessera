@@ -28,8 +28,12 @@
     { name: 'P207 Igan',              state: 'Sarawak',        voters:  28_290 },
   ];
 
+  // PLOT.w is sized so the longest bar plus its value label clears the
+  // ratio-annotation column at x=900. Bangi (303,430) ≈ MAX, so its bar
+  // ends at PLOT.x + PLOT.w ≈ 800; the italic value label past the bar
+  // adds ~70px, landing under x=870 — a 30px gap before the ratio line.
   const MAX = 305_000;
-  const PLOT = { x: 290, y: 80, w: 760, h: 430 };
+  const PLOT = { x: 290, y: 80, w: 510, h: 430 };
   const ROW_H = PLOT.h / DATA.length;
   const BAR_H = 26;
 
