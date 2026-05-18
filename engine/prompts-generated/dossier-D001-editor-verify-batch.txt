@@ -1,0 +1,135 @@
+=================================================================
+T4A DOSSIER D001 — EDITOR VERIFICATION BATCH (3 ITEMS IN 1 PROMPT)
+=================================================================
+
+INSTRUCTIONS FOR THE OPERATOR (do not paste this header line):
+- Open a fresh chat in EITHER Gemini 2.5 Pro Thinking OR ChatGPT (GPT-4o or later with browse).
+- Enable web search / browse mode. Required.
+- Paste everything below the next divider line as a single prompt.
+- Save the JSON response to engine/output/dossier-D001-editor-verify-batch.json
+- Run this in BOTH Gemini and ChatGPT independently and compare results. Where they agree, the answer is solid; where they disagree (as happened with Act A1648 vs A1663 the first time), use the conflict to drive deeper editor verification.
+
+=================================================================
+PASTE STARTS HERE
+=================================================================
+
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+You are a fact-verification reviewer for a non-partisan Malaysian editorial publication. You are doing targeted primary-source verification on three specific factual items. For each item, you MUST verify using web search against a primary source. Do not rely on memory or training data.
+
+PRIMARY SOURCE = one of:
+- Official government document, gazette, or regulator publication
+- Court ruling or judgment text
+- Peer-reviewed paper
+- Named authoritative news outlet citing a primary source you have separately checked
+
+If you cannot find a primary source for an item, return status "UNVERIFIED" with an explanation of what you searched.
+
+=== ITEM 1: Article 49A Act number disagreement ===
+
+Two prior reviewers disagreed on the Act number that inserted Article 49A (the anti-hopping provision) into the Federal Constitution of Malaysia in 2022:
+
+- Reviewer A (Gemini): claimed Act A1648
+- Reviewer B (ChatGPT, citing Malaysian Bar Council): claimed Act A1663
+
+Both reviewers agreed on the Act NAME: "Constitution (Amendment) (No. 3) Act 2022".
+
+Your task: pull the official Federal Gazette publication of this Amendment Act and report the correct Act number. The authoritative source is the Federal Gazette of Malaysia (Warta Kerajaan Persekutuan). Acceptable secondary primary sources include the Attorney General's Chambers (AGC) Malaysia repository, Parliament of Malaysia official publications, and the Constitution of Malaysia as published by AGC.
+
+Provide: the correct Act number, the gazette URL or AGC URL, the gazette date, and a one-line explanation of how the disagreement arose if you can determine it.
+
+=== ITEM 2: Six remaining voter counts from the GE15 (PRU15, 2022) EC voter roll ===
+
+The dossier needs the post-UNDI18 voter counts for the following six parliamentary constituencies, as published by the Election Commission of Malaysia (Suruhanjaya Pilihan Raya, SPR) for the GE15 / PRU15 cycle in 2022.
+
+The starting source is the EC's published statistics PDF:
+https://sprinfo.spr.gov.my/spr/MAKLUMAT%20ASAS/STATISTIK%20PRU%20KE_15%20UMUR%20BY_PARLIMEN.pdf
+
+The constituencies and approximate older figures (which are WRONG and need replacing):
+
+1. Kapar — old approximate 144,000 (Selangor)
+2. Kota Raja — old approximate 134,000 (Selangor)
+3. Klang — old approximate 118,000 (Selangor)
+4. Cameron Highlands — old approximate 32,000 (Pahang)
+5. Hulu Rajang — old approximate 22,000 (Sarawak)
+6. Lawas — old approximate 21,000 (Sarawak)
+
+For each, return: the current P-code (e.g. P109), the verified GE15 registered voter count, and the primary source URL.
+
+For reference, four constituencies were already verified by a prior reviewer:
+- Bangi P102: 303,430 voters (verified)
+- Damansara P106: 239,103 voters (verified — note prior dossier had wrong P-code P125)
+- Putrajaya P125: 42,881 voters (verified)
+- Igan P207: 28,290 voters (verified — note prior dossier had wrong P-code P186)
+
+Confirm or correct these four as well if your search finds different figures.
+
+=== ITEM 3: Sarawak State Sales Tax (SST) on petroleum products — annual revenue by year ===
+
+The dossier needs annual revenue figures for the Sarawak State Sales Tax on petroleum products, by year, for 2019 through 2024. The tax was imposed at 5% by the Sarawak Sales Tax (Amendment) Ordinance 2018.
+
+Authoritative sources:
+- Sarawak State Budget speeches (published annually by the Premier of Sarawak's office / Ministry of Finance and New Economy Sarawak)
+- Sarawak State Legislative Assembly Hansard
+- Sarawak Premier's Department official statements
+- Petronas official media releases (for cross-check, since Petronas is the principal payer)
+
+For each year 2019 through 2024, return:
+- The revenue figure in billions of ringgit (RMxbn)
+- The LABEL: ACTUAL (audited/reported figure), ESTIMATE (mid-year revised estimate), or BUDGET PROJECTION (set at the start of the year)
+- The primary source URL with the title of the document and page or section number
+- Date of publication
+
+The prior dossier figure spec used these illustrative numbers (which are NOT verified and must be replaced):
+- 2019: RM2.97bn
+- 2020: RM2.74bn
+- 2021: RM3.42bn
+- 2022: RM4.18bn
+- 2023: RM3.84bn
+- 2024: RM3.51bn
+
+The cumulative 2019-2023 figure of approximately RM15.8 billion has been reported in news sources; if you can find a year-by-year breakdown that sums to that cumulative, use it.
+
+If only some years are independently verifiable, return VERIFIED for those years and UNVERIFIED for the others. Do not interpolate.
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "item_1_act_number": {
+    "status": "VERIFIED|UNVERIFIED|CONFLICT_UNRESOLVED",
+    "correct_act_number": "AXXXX",
+    "act_name": "Constitution (Amendment) (No. 3) Act 2022",
+    "gazette_url": "...",
+    "gazette_date": "YYYY-MM-DD",
+    "explanation_of_prior_disagreement": "one sentence on how A1648 vs A1663 arose, if known"
+  },
+  "item_2_voter_counts": [
+    {"constituency": "Kapar", "p_code": "PXXX", "voters_ge15": NNNNNN, "status": "VERIFIED|UNVERIFIED", "primary_source": "URL"},
+    {"constituency": "Kota Raja", "p_code": "PXXX", "voters_ge15": NNNNNN, "status": "VERIFIED|UNVERIFIED", "primary_source": "URL"},
+    {"constituency": "Klang", "p_code": "PXXX", "voters_ge15": NNNNNN, "status": "VERIFIED|UNVERIFIED", "primary_source": "URL"},
+    {"constituency": "Cameron Highlands", "p_code": "PXXX", "voters_ge15": NNNNNN, "status": "VERIFIED|UNVERIFIED", "primary_source": "URL"},
+    {"constituency": "Hulu Rajang", "p_code": "PXXX", "voters_ge15": NNNNNN, "status": "VERIFIED|UNVERIFIED", "primary_source": "URL"},
+    {"constituency": "Lawas", "p_code": "PXXX", "voters_ge15": NNNNNN, "status": "VERIFIED|UNVERIFIED", "primary_source": "URL"}
+  ],
+  "item_2_confirmations_of_prior_four": [
+    {"constituency": "Bangi", "p_code": "P102", "prior_value": 303430, "status": "CONFIRMED|REVISED", "current_value": NNNNNN, "primary_source": "URL"},
+    {"constituency": "Damansara", "p_code": "P106", "prior_value": 239103, "status": "CONFIRMED|REVISED", "current_value": NNNNNN, "primary_source": "URL"},
+    {"constituency": "Putrajaya", "p_code": "P125", "prior_value": 42881, "status": "CONFIRMED|REVISED", "current_value": NNNNNN, "primary_source": "URL"},
+    {"constituency": "Igan", "p_code": "P207", "prior_value": 28290, "status": "CONFIRMED|REVISED", "current_value": NNNNNN, "primary_source": "URL"}
+  ],
+  "item_3_sarawak_sst": [
+    {"year": 2019, "revenue_rm_bn": 0.00, "label": "ACTUAL|ESTIMATE|BUDGET_PROJECTION", "status": "VERIFIED|UNVERIFIED", "primary_source": "URL", "document_title": "...", "publication_date": "YYYY-MM-DD"},
+    {"year": 2020, "revenue_rm_bn": 0.00, "label": "...", "status": "...", "primary_source": "...", "document_title": "...", "publication_date": "..."},
+    {"year": 2021, "revenue_rm_bn": 0.00, "label": "...", "status": "...", "primary_source": "...", "document_title": "...", "publication_date": "..."},
+    {"year": 2022, "revenue_rm_bn": 0.00, "label": "...", "status": "...", "primary_source": "...", "document_title": "...", "publication_date": "..."},
+    {"year": 2023, "revenue_rm_bn": 0.00, "label": "...", "status": "...", "primary_source": "...", "document_title": "...", "publication_date": "..."},
+    {"year": 2024, "revenue_rm_bn": 0.00, "label": "...", "status": "...", "primary_source": "...", "document_title": "...", "publication_date": "..."}
+  ],
+  "overall_notes": "any cross-cutting notes — e.g. if cumulative figures don't reconcile with annual breakdowns, or if EC PDF was unreachable, or if Sarawak state budgets used different fiscal years"
+}
+
+=================================================================
+PASTE ENDS HERE
+=================================================================
