@@ -296,7 +296,7 @@ export default {
       }
 
       return corsResponse(request, JSON.stringify({ error: 'Not found' }), 404);
-    } catch (err) {
+    } catch (_err) {
       return corsResponse(request, JSON.stringify({ error: 'Internal error' }), 500);
     }
   },
