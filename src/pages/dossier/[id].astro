@@ -1,0 +1,142 @@
+---
+/*
+ * /dossier/[id] — Dossier reading route
+ * ----------------------------------------------------------------
+ * Builds a static page per published dossier at compile time via
+ * getStaticPaths. Matches the pattern of src/pages/issue/[id].astro
+ * (keep the two parallel — if the issue route changes its head
+ * shape, mirror the changes here).
+ *
+ * Head metadata:
+ *  • Canonical URL
+ *  • Open Graph + Twitter Card with the burgundy DOSSIER-stamped
+ *    1200×630 PNG (built by scripts/build-dossier-og.mjs)
+ *  • JSON-LD ScholarlyArticle schema with citeAs as `citation`
+ *
+ * Privacy posture:
+ *  • Fonts self-hosted from /fonts/ — no Google Fonts CDN.
+ *  • No analytics, no trackers, no third-party scripts.
+ *  • Only inline JSON-LD (which is data, not a tracker).
+ */
+
+import type { GetStaticPaths } from 'astro';
+import DossierReader from '../../components/DossierReader.svelte';
+import { getAllDossiers, getDossierById } from '../../data/dossiers';
+import '../../styles/dossier.css';
+
+export const getStaticPaths = (() => {
+  return getAllDossiers().map((d) => ({
+    params: { id: d.id },
+    props: { dossier: d },
+  }));
+}) satisfies GetStaticPaths;
+
+const { dossier } = Astro.props;
+
+// Defensive — should never trigger because getStaticPaths only
+// emits published dossiers, but keep the runtime guard.
+if (!dossier) {
+  return Astro.redirect('/', 302);
+}
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://thefourthangle.pages.dev';
+const canonical = `${site}/dossier/${dossier.id}`;
+const ogImage = `${site}${dossier.ogImage}`;
+const description = dossier.subtitle;
+const publishedISO = new Date(dossier.sourceDate).toISOString();
+
+// JSON-LD structured data — read by search engines and crawlers.
+// Note: deliberately uses "multi-stage editorial review" rather than
+// any reference to automated review, per editorial guardrails.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ScholarlyArticle',
+  headline: dossier.title,
+  alternativeHeadline: dossier.subtitle,
+  url: canonical,
+  identifier: dossier.id,
+  datePublished: publishedISO,
+  dateModified: publishedISO,
+  inLanguage: 'en-MY',
+  isPartOf: {
+    '@type': 'Series',
+    name: dossier.series.name,
+    position: dossier.series.ordinal,
+  },
+  author: {
+    '@type': 'Organization',
+    name: 'The Fourth Angle',
+    url: site,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'The Fourth Angle',
+    url: site,
+  },
+  image: ogImage,
+  wordCount: dossier.wordCount,
+  timeRequired: `PT${dossier.estReadMinutes}M`,
+  citation: dossier.citeAs,
+  about: dossier.figures.map((f) => f.title),
+};
+---
+
+<!doctype html>
+<html lang="en-MY">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{dossier.title} — Dossier {dossier.id} — The Fourth Angle</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content={dossier.designTokens.background} />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="The Fourth Angle" />
+    <meta property="og:title" content={`${dossier.title} — Dossier ${dossier.id}`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`Dossier ${dossier.id} cover: ${dossier.title}`} />
+    <meta property="og:locale" content="en_MY" />
+    <meta property="article:published_time" content={publishedISO} />
+    <meta property="article:section" content={dossier.primaryLens} />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${dossier.title} — Dossier ${dossier.id}`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={`Dossier ${dossier.id} cover`} />
+
+    <!-- Self-hosted font preload (only the two faces above the fold) -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/spectral-300-italic.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-500.woff2"
+      crossorigin
+    />
+
+    <!-- Structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+  </head>
+
+  <body>
+    <DossierReader dossier={dossier} client:load />
+  </body>
+</html>

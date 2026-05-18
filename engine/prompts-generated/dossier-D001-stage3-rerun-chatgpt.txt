@@ -1,0 +1,180 @@
+=================================================================
+T4A DOSSIER D001 — STAGE 3 RE-RUN ON SYNTHESIZED TEXT (CHATGPT)
+=================================================================
+
+INSTRUCTIONS FOR THE OPERATOR (do not paste this header line):
+- Open a fresh ChatGPT chat. Enable "Browse with Bing" or web tools.
+- Use GPT-4o or later. Long-thinking modes preferred.
+- Copy everything BELOW the next divider line and paste as a single prompt.
+- Save the JSON response to engine/output/dossier-D001-stage3-rerun.json
+- If output truncates, say "continue" and append.
+- Compare the new factual_accuracy_score against the prior Stage 3 score of 60. Target: above 85.
+
+=================================================================
+PASTE STARTS HERE
+=================================================================
+
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+This is a RE-RUN of Stage 3 fact verification on a Malaysian editorial dossier. The first Stage 3 review scored 60/100 and flagged several factual errors. Those errors have been corrected during synthesis. Your task is to re-verify the corrected text and assess whether the corrections were sufficient. The target score is above 85.
+
+=== ACCURACY REQUIREMENT ===
+
+For every fact you check, you MUST independently verify it using web search against a primary source. Do not rely on memory.
+
+PRIMARY SOURCE = government document, gazette, court ruling, peer-reviewed paper, or named authoritative outlet citing a separately-checked primary.
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, AI summaries, your training data.
+
+If you cannot verify, label UNVERIFIED with m_unknown >= 0.7. If contradictory sources, report all and identify the most authoritative.
+
+=== WHAT THE FIRST STAGE 3 PASS FOUND (to focus your re-verification) ===
+
+Prior Stage 3 identified these errors which have been CORRECTED in the synthesized text below. Verify the corrections:
+
+1. **Article 49A Act number**: original said A1648; corrected to A1663 (per Malaysian Bar Council source). NOTE: Stage 2 reviewer separately claimed A1648 was correct. **CRITICAL: pull the Federal Gazette directly to resolve.** Whichever is right, flag the disagreement.
+2. **Article 49A wording**: original quote falsely included "or is expelled from" as a vacancy trigger; corrected to paraphrase noting that Article 49A(2)(c) EXPLICITLY EXCLUDES expulsion. Verify the gazetted text.
+3. **Malapportionment history**: original said 1962 amendment removed the cap; corrected to "1962 loosened to ~one-third; 1973 removed the quantified cap." Verify.
+4. **Bangi voter count**: original ~178,000; corrected to ~303,000 (PRU15 EC roll). Verify.
+5. **Amanah founding year**: original 2017; corrected to 2015. Verify.
+6. **Pejuang/GE15 121 seats**: corrected to attribute the 121 seats to GTA (with Pejuang as principal vehicle), not Pejuang alone. Verify.
+7. **Pejuang registration**: corrected to "announced August 2020, registered July 2021." Verify.
+8. **Shapley arithmetic**: corrected from "13%" to "about 16% of seats". Verify the math: 30 / (80+80+30) = 30/190 = 15.79%.
+9. **Base rates**: original had specific 3%/40%/25% figures without dataset; replaced with qualitative language ("modest seat shares", "many do not survive five years"). Verify that the qualitative framing is defensible without specific percentages.
+
+Items where the dossier intentionally retains a [VERIFY] flag, pending separate editor verification batch (do not re-verify here, but note status):
+- Six fig-2 voter counts (Kapar, Kota Raja, Klang, Cameron Highlands, Hulu Rajang, Lawas) — being verified in a separate batch.
+- Sarawak SST annual revenue figures for fig-3 — being verified in a separate batch.
+- Article 49A Act number (A1648 vs A1663) — being verified in a separate batch.
+
+=== THE FOUR CARDINAL SINS ===
+
+1. OVERCLAIM — stronger than the source supports.
+2. UNDERCLAIM — softer than the evidence supports.
+3. MISLEADING FRAMING — facts true but framing distorts.
+4. UNVERIFIED DETAIL — specific not traced to a primary source.
+
+=== INPUTS ===
+
+A. CONTEXT — what changed between original and synthesized text (above, in the "what first Stage 3 found" section).
+B. SYNTHESIZED DOSSIER CONTENT (full 26 sections below).
+C. FIGURE SPECIFICATIONS (corrected figure data below).
+
+---
+
+B. SYNTHESIZED DOSSIER CONTENT — 26 SECTIONS
+---
+
+SECTION id: cover — Title: How New Parties Are Built in Malaysia. Subtitle: A Field Guide to the Launch-and-Pivot Playbook. 22-min read. Five learning objectives.
+
+SECTION id: tldr — 7 bullets summarising the framework. Bullet 4 corrected: "Sarawak's GPS is the stable counter-example — held together by the state's roughly RM3-billion-a-year oil sales tax and by active suppression of opposition voice (only two of eighty-two state assembly members are now opposition)." Bullet 7 strengthened: "...push, where you can, for that room to be opened to outside scrutiny."
+
+SECTION id: pivotal-player — CORRECTED Body: "In a chamber where no single bloc commands a majority, the small party with the right number of seats holds bargaining power wildly out of proportion to its seat share. The formal name is the Shapley-Shubik power index, and its arithmetic is unforgiving. A 30-seat bloc in an 80-80-30 chamber holds about 16 per cent of the seats — and under the Shapley-Shubik index, roughly a third of the bargaining power, because it is the necessary partner in either feasible majority. This is the structural prize every successful new Malaysian party has aimed at: not to govern, but to be necessary. Once you see the chamber this way, the launches stop looking irrational. They look like a rational play by people who have done the math."
+
+SECTION id: base-rates — CORRECTED Body: "Of new federal parties launched between 1988 and 2024, most secure only modest seat shares on first contest — typically a single-digit fraction of the seats they choose to contest. Many do not survive five years; they are deregistered, dormant, or absorbed. The minority that reach government within two elections of formation are almost entirely defector-led launches with the three structural ingredients above: sitting MPs in the launch party, an executive office on offer in a friendly coalition, and a pre-negotiated slot at the table. Personality-only vehicles — IMP in 1951, Mahathir's Pejuang and the GTA umbrella in 2022, MUDA at federal level — have rarely converted to office. Brand without machine and without generational grievance does not convert. The empirical lesson is not that the move always works. It is that the move works under three specific conditions and fails reliably without them."
+
+SECTION id: launches-timeline — Events list with Amanah corrected to 2015, Wan Azizah annotation expanded: "Wan Azizah Wan Ismail — first woman in Malaysian history to found and lead a political party; held the party together during Anwar Ibrahim's incarceration and served as president from 1999 to 2018. Outcome: 5 seats at first contest; durable spine of PKR through 2018; became Malaysia's first female Deputy Prime Minister."
+
+SECTION id: bersatu-2016 — Body unchanged on Bersatu structural argument. APPENDED: "The structural ingredients explain why the move was possible. Personal incentives — cabinet posts, control of state-linked corporations, and ministerial portfolios distributed to the defectors — explain why the move was attractive to each individual operator. The same logic ran through the 2020 Sheraton Move that ejected Mahathir from government: senior posts, GLC access, and titles distributed within weeks of the defection."
+
+SECTION id: pejuang-2020 — CORRECTED: "Three years after Bersatu's triumph, Mahathir announced a new party in August 2020 after the Sheraton Move ejected him from government; Parti Pejuang Tanah Air was formally registered in July 2021. In GE15 in November 2022, Mahathir's Gerakan Tanah Air (GTA) umbrella — with Pejuang as principal vehicle — contested 121 parliamentary seats and won zero. Almost every candidate forfeited the RM10,000 deposit by polling under one-eighth of the valid votes cast..."
+
+SECTION id: cleavage-theory — Body unchanged. Lipset-Rokkan 1967 attribution.
+
+SECTION id: six-conditions — Body unchanged. Six structural conditions for Malaysian launches.
+
+SECTION id: malapportionment — CORRECTED: "The original 1957 Federal Constitution capped voter-number deviation between constituencies at fifteen per cent. A 1962 amendment loosened the tolerance to roughly one-third deviation. A 1973 amendment removed the quantified cap entirely. Today, by the Election Commission's own published voter roll for the GE15 (PRU15) delineation cycle, the largest parliamentary constituency contains roughly ten to eleven times as many voters as the smallest — Bangi in suburban Selangor at about 303,000 registered voters, Igan in rural Sarawak at about 28,000. A vote cast in Bangi carries roughly one-tenth the weight of a vote cast in Igan. This is not a slogan. This is arithmetic on the EC's own roll. The UNDI18 reform of 2021, which automatically registered roughly 5.8 million new voters, amplified the urban-rural disparity rather than narrowing it because urban constituencies absorbed most of the youth-cohort expansion..."
+
+SECTION id: anti-hopping-loophole — CORRECTED: "The Constitution (Amendment) (No. 3) Act 2022 (Act A1663) inserted Article 49A into the Federal Constitution, triggering a casual vacancy whenever an MP resigns from the party they were elected under, or otherwise ceases to be a member of that party. It was sold as the end of frog politics, and on that narrow ground it has worked. Two loopholes survive inside the text. First, expulsion: under Article 49A(2)(c), an MP who is expelled by the party — rather than resigning — does not lose the seat. Second, party-level: the law restricts the individual, not the party as a corporate body. A whole party can vote internally to leave one coalition and join another, and its MPs keep their seats. A party that is dissolved or deregistered also produces no casual vacancy. The structural incentive to form a vehicle in advance of a coalition move has therefore gone up, not down. Malaysia made individual resignation illegal, left expulsion as an unintended escape route, and made buying the whole pond entirely legal." [VERIFY Act number — Stage 2 says A1648, Stage 3 first pass said A1663; flag in your review]
+
+SECTION id: article-49a-text — REWRITTEN as labelled paraphrase: "Article 49A provides that a Member of the House of Representatives ceases to be a Member, with the seat declared vacant, when, having been elected as a member of a political party, the Member resigns from or ceases to be a member of that party. Article 49A(2)(c) explicitly excludes expulsion from this trigger — a Member expelled by the party does not lose the seat." Editor note: pending verification against gazetted text.
+
+SECTION id: sabah-volatility — APPENDED: "A fourth structural factor sits in the background... The 2014 Royal Commission of Inquiry on illegal immigrants in Sabah, established under royal warrant, documented systematic issuance of identity cards to undocumented migrants over decades and their subsequent registration as voters. None of the RCI's recommendations have been substantively implemented since the report was tabled..."
+
+SECTION id: grs-2020 — Body unchanged. GRS formed weeks before September 2020 Sabah election.
+
+SECTION id: sarawak-fiscal-lever — APPENDED: "Two things at once. The fiscal lever explains why GPS does not need to fragment to extract from Putrajaya. The political instrument explains why fragmentation would not be allowed to succeed even if a faction tried. Opposition-held constituencies report systematic denial of state development funds; opposition representation in the eighty-two-seat state assembly has shrunk from six members post-2021 to two today..."
+
+SECTION id: three-launches — Body unchanged.
+
+SECTION id: they-are-all-the-same — Body unchanged.
+
+SECTION id: this-one-is-different — Body unchanged.
+
+SECTION id: five-questions — Body unchanged.
+
+SECTION id: pivotal-from-your-chair — Body unchanged.
+
+SECTION id: view — APPENDED: "One honesty test before you close the dossier. The framework above assumes the voter has a meaningful choice about which room to send a representative to. For many Malaysian voters — the rural Felda settler whose JKKK head determines welfare access, the plantation worker whose contractor depends on the ruling coalition's allocations, the village kepala kampung whose appointment is the government's gift — the calculation is not 'which leader do I trust to negotiate', it is 'which vote is safe given who already controls my livelihood'. For those voters, the pivot-player framework is theoretical until campaign finance, voter-roll integrity, and patronage allocation are themselves opened to outside scrutiny. The deepest reform is not which new party launches next. It is whether the room becomes one that outside witnesses can audit."
+
+SECTION id: further-reading — Bibliography. Added Royal Commission of Inquiry on Illegal Immigrants in Sabah, Final Report (2014). Added Mudde & Kaltwasser, Populism: A Very Short Introduction.
+
+SECTION id: cite-as — Citation block.
+
+---
+
+C. FIGURE SPECIFICATIONS (corrected data)
+---
+
+fig-cover: hero illustration. No factual content.
+
+fig-1: timeline 1951-2022. Amanah corrected to 2015. Other dates unchanged.
+
+fig-2: voter counts per parliamentary seat. Four corrected: Bangi P102 303,430; Damansara P106 239,103; Putrajaya P125 42,881; Igan P207 28,290. Six pending separate editor verification.
+
+fig-3: Sarawak SST revenue 2019-2024. All annual figures pending separate editor verification.
+
+fig-4: Shapley pivot diagram. ARITHMETIC CORRECTED: 30 of 190 = ~16% of seats, ~33% of Shapley-Shubik bargaining power. Stage 2 also added a grand-coalition variant noting that when the two 80-seat blocs unite, the pivot premium evaporates.
+
+fig-5: brokerage stack. Branch-chair count of 300-500 per division still requires sourcing.
+
+fig-6: anti-hopping loophole. Verify Article 49A wording matches gazetted text and that expulsion exclusion is correctly depicted.
+
+fig-7: international comparison table. Verify each cell — Germany 5% Sperrklausel, UK no threshold, Indonesia verification, Israel 3.25% raised from 2% in 2014, Italy variable.
+
+---
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0,
+  "source_diversity_estimate": 0.0,
+  "delta_from_prior_review": {
+    "prior_score": 60,
+    "new_score": 0,
+    "corrections_verified": ["list of section_ids where corrections successfully addressed prior errors"],
+    "corrections_still_inadequate": ["list of section_ids where corrections did not fully resolve the prior issue, with reason"],
+    "new_errors_introduced_during_synthesis": ["any new factual errors introduced when synthesizing — section_id and what is wrong"]
+  },
+  "claims": [
+    {
+      "section_id": "...",
+      "claim": "exact claim from synthesized dossier",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "primary_source": "URL with date",
+      "correction": "if needed",
+      "stale_check": "if applicable"
+    }
+  ],
+  "act_number_resolution": {
+    "your_finding": "A1648|A1663|other",
+    "primary_source": "URL of gazette or AGC repository",
+    "confidence": "HIGH|MEDIUM|LOW",
+    "notes": "explanation of how you resolved the Stage 2 vs Stage 3 conflict"
+  },
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "section_id": "...", "claim": "exact text", "why": "...", "primary_source": "..."}
+  ],
+  "publication_recommendation": "READY_TO_PUBLISH|NEEDS_MORE_FIXES|MAJOR_REWRITE",
+  "items_still_blocking_publication": ["specific things that still need to be done before publication"],
+  "overall_assessment": "one paragraph on whether the synthesized dossier is now factually publication-ready"
+}
+
+=================================================================
+PASTE ENDS HERE
+=================================================================

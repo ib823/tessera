@@ -1,0 +1,435 @@
+=================================================================
+T4A DOSSIER D001 — STAGE 2 BIAS AUDIT (GEMINI)
+=================================================================
+
+INSTRUCTIONS FOR THE OPERATOR (do not paste this header line):
+- Open a fresh Gemini chat. Enable web search / Search Grounding.
+- Use Gemini 2.5 Pro (Thinking mode) if available.
+- Copy everything BELOW the next divider line and paste as a single prompt.
+- Save the JSON response to engine/output/dossier-D001-stage2.json
+
+=================================================================
+PASTE STARTS HERE
+=================================================================
+
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim.
+
+=== DOSSIER-SPECIFIC ADDENDA ===
+
+You are reviewing a long-form Malaysian editorial dossier, not a bite-size card issue. Specific differences from your usual T4A review:
+
+1. The unit of audit is the SECTION, identified by its `id` field (e.g. "pivotal-player", "anti-hopping-loophole", "grs-2020"). Use the section id wherever the regular preamble says "card".
+
+2. You MUST also audit the FIGURE SPECIFICATIONS at the bottom of this prompt. Figures can themselves commit the four cardinal sins through misleading scales, omitted denominators, selective time windows, or undefined categories. Treat each figure spec as a section for audit purposes.
+
+3. The dossier covers Malaysian electoral mechanics, party formation history 1951-2024, Sabah/Sarawak political economy, and the 2022 anti-hopping law. Verify constitutional articles, statute names, EC results, and historical dates with primary sources where possible.
+
+4. The dossier is non-partisan by editorial intent. The bias audit is testing whether the execution matches the intent. Treat all coalitions symmetrically: UMNO/BN, PH (PKR/DAP/Amanah), PN (Bersatu/PAS), GPS, GRS, Warisan, MUDA. Asymmetric treatment of any of these is a flag.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the dossier was written. Before flagging a claim as wrong, check the latest data. A figure that was right six months ago may now be wrong; one that was wrong may now be right.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+1. OVERCLAIM — the dossier states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the dossier softens a finding the evidence actually supports.
+3. MISLEADING FRAMING — every individual fact true, but the selection or sequencing creates a false impression.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote the dossier does not source.
+
+These four are equally serious.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer for a non-partisan Malaysian editorial brand. No loyalty to the original analyst. If the dossier is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE — framings that favour any Malaysian party. Both directions count.
+2. RACIAL FRAMING — blame or victimhood disproportionately assigned to one community; monolith treatment ("the Malays want X", "the Chinese think Y") flagged.
+3. RELIGIOUS BIAS — one religion's perspective treated as more legitimate than another.
+4. OMISSION BIAS — what is not said. Is East Malaysia missing? Are Orang Asli missing? Women? Youth? B40?
+5. EMOTIONAL MANIPULATION — selective emotive details, sympathy accumulation toward one actor.
+6. DIPLOMATIC EVASION — carefully balanced to the point of saying nothing.
+7. GEOGRAPHIC BIAS — KL/Peninsular as default, Sabah/Sarawak as footnote.
+8. ECONOMIC MASKING — race narratives substituted for what is actually class analysis.
+9. GENDER ERASURE — women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal. Justify.
+ETHNIC FRAMING: 0.0 (all groups equal agency) to 1.0 (one group dominates).
+RELIGIOUS SENSITIVITY: -1.0 (dismissive) to +1.0 (uncritically amplifying).
+NARRATIVE FRAMING: -1.0 (opposition active voice) to +1.0 (govt active voice).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL-centric).
+ECONOMIC FRAMING: -1.0 (B40 dominates) to +1.0 (T20/corporate dominates).
+GENDER AGENCY: 0.0 (equal) to 1.0 (highly unequal).
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim, log:
+- VERIFIED + primary source
+- UNVERIFIED + what you searched
+- WRONG + primary source + corrected value
+
+=== INPUTS TO YOUR REVIEW ===
+
+You will receive three inputs below:
+
+A. RESEARCH BRIEF — context and sources the analyst worked from.
+B. DOSSIER CONTENT — the 26 sections you are auditing.
+C. FIGURE SPECIFICATIONS — the 7 figures you are also auditing.
+
+---
+
+A. RESEARCH BRIEF
+---
+
+DOSSIER: D001 — How New Parties Are Built in Malaysia
+SERIES: Malaysia Political Mechanics (1 of n)
+
+ISSUE: The recurring Malaysian political move of forming a new political vehicle 6–18 months before a national or state election, and the structural conditions that make it rational, repeatable, and overwhelmingly aimed at pivotal-player status rather than majority government.
+
+PERIOD: 1951 through 2024.
+
+KEY CONSTITUTIONAL AND STATUTORY ANCHORS:
+- Federal Constitution Article 40(2)(a) — YDPA discretion in PM appointment.
+- Federal Constitution Article 49A — anti-hopping (inserted 2022 via Constitution (Amendment) (No. 3) Act 2022).
+- Federal Constitution Article 113 — Election Commission and delimitation.
+- Federal Constitution Article 150 — emergency provisions.
+- Societies Act 1966 — political party registration.
+- Election Offences Act 1954 — election deposit (RM10,000 federal, RM5,000 state) and campaign expenditure cap (RM200,000 per parliamentary candidate).
+- Petroleum Development Act 1974.
+- Sarawak Sales Tax (Amendment) Ordinance 2018 — 5% on petroleum products.
+
+KEY HISTORICAL DATES IN THE DOSSIER:
+1951 IMP founded by Onn Jaafar.
+1957 Federal Constitution adopted with 15% malapportionment cap.
+1962 Cap removed via Constitution (Amendment) Act 1962.
+1969 May 13 emergency under Article 150.
+1974 PDA enacted.
+1987 Operasi Lalang.
+1988 Semangat 46 founded by Tengku Razaleigh.
+1990 GE8 Semangat 46 wins 8 seats.
+1999 KeADILan founded after Anwar's sacking.
+2008 GE12 BN loses two-thirds.
+2014 Sabah RCI on illegal immigrants.
+2016 Bersatu founded.
+2018 Sarawak SST imposed.
+2018 GE14 PH wins federal.
+2020 Sheraton Move.
+2020 GRS formed weeks before PRN16.
+2020 PRN16 Sabah state election.
+2021 UNDI18 effective.
+2022 Anti-hopping Article 49A inserted.
+2022 GE15 hung parliament (PH 82, PN 74, BN 30, GPS 23, GRS 6, Warisan 3, Others 4).
+
+KEY NUMBERS IN THE DOSSIER (verify each):
+- 9–10:1 malapportionment ratio between largest and smallest parliamentary seats.
+- Bangi P102 ≈ 178,000 voters; Putrajaya P125 ≈ 28,000 voters; Igan P186 ≈ 19,000 voters.
+- 56 of 222 federal seats held by Sabah + Sarawak (~25.2%).
+- RM10,000 election deposit per parliamentary seat.
+- RM2.22 million in total deposits for 222 seats.
+- RM200,000 legal spending cap per parliamentary candidate.
+- Sarawak SST revenue RM2.7bn–RM4bn per year, oil-price dependent.
+- Felda ~112,000 original settler households across 317 schemes.
+- Felda settler population in ~54 parliamentary constituencies.
+- GE15 results: PH 82, PN 74, BN 30, GPS 23, GRS 6, Warisan 3, Others 4, total 222.
+
+REFERENCED ACADEMICS: Lipset & Rokkan, Duverger, Riker, Petrocik, Strom, Golder, Katz & Mair, Shapley & Shubik, Schelling, Spence, Crawford & Sobel, Kim & Mauborgne, Christensen, Porter, Gomez & Jomo, Case, Weiss, Welsh, Wong Chin Huat, Chin, Khoo Boo Teik, Hazis.
+
+REFERENCED LAUNCHES AND OUTCOMES (verify each timing and outcome):
+1951 IMP — Onn Jaafar — failed.
+1969 DAP/Gerakan emergence.
+1988 Semangat 46 — Tengku Razaleigh — won 8 seats 1990, reabsorbed 1996.
+1999 KeADILan — Wan Azizah/Anwar — 5 seats GE10, durable.
+2016 Bersatu — Mahathir/Muhyiddin — pivotal, flipped GE14.
+2017 Amanah — PAS progressives — durable junior PH partner.
+2020 Pejuang — Mahathir — zero seats GE15.
+2020 MUDA — Syed Saddiq — 1 seat GE15.
+2020 GRS — Hajiji Noor umbrella — won PRN16 Sabah.
+2022 GTA — Mahathir umbrella — wiped GE15.
+
+INTERNATIONAL PARALLELS REFERENCED (verify each):
+Italy 1994 — Forza Italia, Berlusconi.
+France 2016 — La République En Marche, Macron.
+Israel 2005 — Kadima, Sharon.
+Israel 2019 — Blue and White, Gantz.
+Thailand 1998 — Thai Rak Thai, Thaksin.
+Thailand 2018 — Future Forward, Thanathorn.
+Ukraine 2018 — Servant of the People, Zelensky.
+Indonesia 2008 — Gerindra, Prabowo.
+Spain 2014 — Podemos.
+Germany 5% Sperrklausel threshold.
+Indonesia verification thresholds.
+UK short money.
+Australia preferential voting.
+
+CONTRADICTIONS NOTED IN THE BRIEF:
+1. Felda settler count — figures vary 94k–122k. Dossier uses ~112k.
+2. Civil service total — figures vary 1.5m–1.7m. Dossier uses ~1.6m.
+3. Sarawak SST revenue — Dossier uses RM2.7bn–RM4bn range to honour variance.
+4. Sabah-Sarawak seat count — includes Labuan FT, gives 56/222.
+5. Real campaign spend per seat — Dossier presents as range, attributes to Gomez and Bersih.
+6. GRS founding date — Dossier uses "weeks before PRN16" to honour July/September variance.
+
+---
+
+B. DOSSIER CONTENT — 26 SECTIONS
+---
+
+SECTION id: cover (type: cover)
+Title: How New Parties Are Built in Malaysia
+Subtitle: A Field Guide to the Launch-and-Pivot Playbook
+What you'll learn:
+- Why a new party appears in Malaysia every election cycle, and what the launcher is actually trying to win
+- The six structural conditions that make the move repeatable here and uneconomic almost everywhere else
+- Sabah's role as the laboratory and Sarawak's role as the structural counter-example
+- The exact text of the 2022 anti-hopping law and the loophole hiding inside it
+- How a voter should read a launch without falling for either cynicism or naïveté
+
+---
+
+SECTION id: tldr (type: tldr)
+Bullets:
+1. A new Malaysian party in the 12 months before an election is almost never trying to win the country — it is trying to win the negotiation the morning after the count.
+2. The prize is pivotal-player status: enough seats to be the necessary coalition partner in a fragmented chamber.
+3. Six structural conditions make Malaysia uniquely fertile soil: low registration bar, ethnic cleavages, portable patronage, post-electoral coalition formation, the 2022 anti-hopping law's party-level loophole, and personalist politics.
+4. Sabah is the laboratory; the state has had eight ruling configurations in forty years. Sarawak's GPS is the stable counter-example because Sarawak's RM3-billion-a-year oil sales tax removes the incentive to fragment.
+5. Most new parties fail. The exceptions — Bersatu, PKR, GRS — share three ingredients: defector with sitting seats, executive office on offer, pre-negotiated coalition slot.
+6. Other democracies block this move with thresholds, public-funding rules, ballot-access barriers, and party-property law. Malaysia has chosen none of these defences.
+7. A voter is not the audience for the launch speech. A voter is the resource the launcher needs to be in a room the voter cannot see. Vote by judging who will be in that room.
+
+---
+
+SECTION id: part-one-the-move (type: chapter)
+Title: Part One — The Move
+
+---
+
+SECTION id: pivotal-player (type: concept)
+Title: What pivotal-player status actually means
+Body: In a chamber where no single bloc commands a majority, the small party with the right number of seats holds bargaining power wildly out of proportion to its vote share. The formal name is the Shapley-Shubik power index, and its arithmetic is unforgiving. A 30-seat party in an 80-80-30 parliament does not hold 13 per cent of the power. It holds something closer to a third of it, because it is the necessary partner in any winning coalition. This is the structural prize every successful new Malaysian party has aimed at: not to govern, but to be necessary. Once you see the chamber this way, the launches stop looking irrational. They look like a rational play by people who have done the math.
+
+---
+
+SECTION id: base-rates (type: fact, lens: Political)
+Title: What the base rates actually say
+Body: Of new federal parties launched between 1988 and 2024, the median first-contest result is roughly 3 per cent of contested seats. Five-year survival sits at around 40 per cent. Within two elections of formation, roughly one in four launches end up in government. That last figure is almost entirely concentrated in launches led by defectors with sitting seats, with an executive office on offer, and a coalition slot pre-negotiated. Personality-only vehicles — IMP in 1951, Pejuang, MUDA's federal contest, GTA — have a historic success rate near zero. Brand without machine and without grievance does not convert. The empirical lesson is not that the move always works. It is that the move works under three specific conditions and fails reliably without them.
+
+---
+
+SECTION id: launches-timeline (type: timeline)
+Intro: The chain matters because each iteration tightens the playbook. The 2026-27 cycle is being read by every operator through this seventy-year arc.
+Events: IMP 1951 (Onn Jaafar, failed) — DAP/Gerakan 1969 — Semangat 46 1988 (Razaleigh, 8 seats 1990 then reabsorbed) — KeADILan 1999 (Wan Azizah/Anwar, 5 seats, durable) — Bersatu 2016 (Mahathir/Muhyiddin, pivotal in GE14) — Amanah 2017 (PAS progressives, junior PH) — Pejuang 2020 (Mahathir, zero seats GE15) — MUDA 2020 (Syed Saddiq, 1 seat) — GRS 2020 (Hajiji Noor umbrella, won Sabah state) — GTA 2022 (Mahathir, wiped).
+
+---
+
+SECTION id: bersatu-2016 (type: case)
+Title: Bersatu 2016 — the textbook successful launch
+Body: The Malaysian United Indigenous Party (Parti Pribumi Bersatu Malaysia) was founded in September 2016, registered after a months-long ROS process, and within twenty months had toppled the Barisan Nasional government that had run Malaysia since independence. Look closely at why it worked. The launchers were Mahathir Mohamad and Muhyiddin Yassin — two former senior UMNO leaders with portable patronage, decades of branch-network credibility in the rural Malay heartland, and immediate sitting-MP defections at formation. The grievance was 1MDB — a generational anti-corruption frame that UMNO structurally could not respond to without attacking its own leadership. The coalition slot was pre-negotiated with PKR, DAP, and Amanah inside the Pakatan Harapan umbrella. The three ingredients — defector with seats, grievance with civic infrastructure, pre-negotiated slot — were all present simultaneously. That alignment is rare. When it happens, the rest of the system bends.
+
+---
+
+SECTION id: pejuang-2020 (type: case)
+Title: Pejuang 2020 — the textbook failed launch
+Body: Three years after Bersatu's triumph, Mahathir founded another party — Parti Pejuang Tanah Air, registered August 2020 after the Sheraton Move ejected him from government. By GE15 in late 2022, Pejuang contested 121 seats and won zero. Every single candidate forfeited the RM10,000 deposit by polling under 12.5 per cent. The contrast with Bersatu is the field test of the framework above. The launcher was the same. The skill was the same. What was missing was the three ingredients. Sitting MPs had already chosen their vehicles (PN, BN, PH). The grievance — anti-Bersatu, anti-Anwar — was personal, not generational. No coalition slot had been pre-negotiated; the GTA umbrella was a thin afterthought. Same operator, different ingredients, opposite result. The base rates do not bend for legendary founders. They bend for the three ingredients.
+
+---
+
+SECTION id: reframe-morning-after (type: reframe)
+Body: The launch is not about the voter. The voter is the input the launcher needs to reach a table the voter is not at. The negotiation that decides who governs Malaysia happens in the seventy-two hours after the count, between coalition leaders, royal advisors, and party whips. The voter's role is upstream of that room. A vote for a small new party is not a purchase of policy. It is a loan of bargaining chips to be spent later, by leadership the voter must trust on judgement.
+
+---
+
+SECTION id: part-two-why-malaysia (type: chapter)
+Title: Part Two — Why Malaysia
+
+---
+
+SECTION id: cleavage-theory (type: concept)
+Title: Lipset-Rokkan cleavages, applied locally
+Body: In 1967, two political sociologists named Seymour Martin Lipset and Stein Rokkan argued that party systems freeze around the major social cleavages of a country at the moment of mass enfranchisement: class against capital, region against centre, religion against secular state. Their insight, transported to Malaysia, predicts exactly the pattern we see. Malaysian voters are sorted along multiple axes that do not collapse into a single left-right line: Malay-Chinese-Indian, Bumiputera-Bornean-non-Malay, urban-rural, secular-Islamist, peninsular-territorial. Each axis is a potential niche for a new entrant. This is why the same first-past-the-post electoral system that produces two-party politics in the United Kingdom produces a fragmented multi-party landscape here. The mechanical incentive runs one way; the sociology runs another, and wins.
+
+---
+
+SECTION id: six-conditions (type: fact, lens: Political)
+Title: The six structural conditions that make this Malaysian
+Body: First, the registration bar is administrative, not constitutional. Parties register under the Societies Act 1966, the same statute that governs sports clubs. Second, ethnic and territorial cleavages create defensible niches. Third, patronage is portable, not ideological — a district chief who switches parties brings the branch chairs and contractor networks with him. Fourth, coalitions in Malaysia are increasingly negotiated after the count, not before. Fifth, the 2022 anti-hopping law closed individual defection but not party-level coalition exits. Sixth, voters in many seats vote the candidate, not the manifesto, which lowers ideological friction for any re-branding. Remove any two of these and the launch playbook becomes uneconomic. Together they create a market opening that rational operators have learned to exploit.
+
+---
+
+SECTION id: malapportionment (type: diagram)
+Title: One vote is not one vote
+Body: The single most decisive, least-discussed feature of Malaysian elections is malapportionment. The original 1957 Federal Constitution capped voter-number deviation between constituencies at fifteen per cent. A 1962 amendment removed the cap. Today, by the Election Commission's own published voter roll, the largest parliamentary constituency contains roughly nine times as many voters as the smallest. A vote cast in suburban Selangor carries roughly one-ninth the weight of a vote cast in Putrajaya or rural Sarawak. This is not a slogan. This is arithmetic on the EC's own roll. Strategic consequence: any new party building an urban-peninsular base must win roughly one and a half times its target seat share in votes. Bornean and rural-Malay seats are the cheapest votes per seat won; this is why every coalition that has formed federal government since 2008 has been built around them.
+
+---
+
+SECTION id: anti-hopping-loophole (type: fact, lens: Legal)
+Title: The anti-hopping law and the loophole hiding inside it
+Body: The Constitution (Amendment) (No. 3) Act 2022 inserted Article 49A into the Federal Constitution, triggering a casual vacancy whenever an MP resigns from or is expelled from the party they were elected under. It was sold as the end of frog politics, and on that narrow ground it has worked. But the law restricts the individual, not the party. A whole party can vote internally to leave one coalition and join another, and its MPs keep their seats. A party that is dissolved or deregistered also produces no casual vacancy. The structural incentive to form a vehicle in advance of a coalition move has therefore gone up, not down. Malaysia made individual frogs illegal. It made buying the whole pond entirely legal.
+
+---
+
+SECTION id: article-49a-text (type: quote)
+Source: Federal Constitution of Malaysia, Article 49A, inserted by Act A1648 (2022)
+Body: A Member of the House of Representatives shall cease to be a member of the House of Representatives and his seat shall become vacant immediately on a date a casual vacancy is established… on the date that the Member resigns as a member of the political party for which he stood in the election; or on the date that the Member ceases to be a member of, or is expelled from, the political party for which he stood in the election.
+Commentary: Read the text twice. It binds the Member. It does not bind the party. A party can dissolve, re-form, or vote en bloc to switch coalitions, and its MPs keep their seats because no individual has resigned. This is not an obscure interpretation. It is what the words say.
+
+---
+
+SECTION id: part-three-sabah (type: chapter)
+Title: Part Three — Sabah, the Laboratory
+
+---
+
+SECTION id: sabah-volatility (type: fact, lens: Regional)
+Title: Eight ruling configurations in forty years
+Body: Sabah is where the launch-and-pivot play has been refined into an art form. Since the late 1970s the state has cycled through Berjaya, USNO, PBS, BN-controlled, Musa-era BN, Warisan, and GRS as ruling configurations, with multiple component-party recombinations in between. The three structural reasons are visible. First, the federal-territorial cleavage anchored in the Twenty Points and MA63 gives Sabah a permanent grievance frame no peninsular party can fully own. Second, the Bumiputera-non-Malay ethnic composition — Kadazan-Dusun-Murut, Sino-Kadazan, Sulu, Bajau — does not map onto peninsular categories, so niche space is large. Third, the dependence on Putrajaya for federal allocations combined with resentment of Putrajaya produces stable demand for vehicles that can negotiate with and signal against the centre simultaneously. Every new Sabah party is sold as that vehicle.
+
+---
+
+SECTION id: grs-2020 (type: case)
+Title: GRS 2020 — the case study
+Body: Gabungan Rakyat Sabah was formed in the weeks immediately before the September 2020 Sabah state election. It had no manifesto distinct from its components — Bersatu Sabah, PAS, STAR, SAPP, and others. Its product was the umbrella itself: a brand that let component parties contest without splitting the anti-Warisan vote under first-past-the-post. It won. The lesson taken across the corridor was that the brand is the product, and speed beats depth. In a state-level election, with a few weeks of preparation, a defector-heavy umbrella can defeat a sitting government if the alternative is a fragmented opposition vote. The 2025-26 Sabah cycle will be read against this template, by every operator considering a launch.
+
+---
+
+SECTION id: sarawak-fiscal-lever (type: diagram)
+Title: Sarawak's structural counter-example
+Body: If Sabah is the laboratory of volatility, Sarawak is the laboratory of stability. The Gabungan Parti Sarawak coalition has held the state without major fragmentation since exiting Barisan Nasional in 2018, while every other peninsular and Sabah configuration has churned. The reason is fiscal. In 2018 the Sarawak state government imposed a five per cent State Sales Tax on petroleum products produced or imported within the state, generating estimated annual revenue in the two-to-four-billion-ringgit range depending on oil prices. This revenue is structurally independent of Putrajaya. It does not require federal goodwill; it cannot be withheld; it does not depend on coalition arithmetic. With that fiscal floor in place, GPS does not need to fragment to extract resources from the centre. Sabah does not have an equivalent revenue lever. Neither does any peninsular state. This is the structural reason Sarawak does not run the launch-and-pivot play. The incentive to fragment is removed because the rent is internalised.
+
+---
+
+SECTION id: part-four-voter (type: chapter)
+Title: Part Four — Reading It as a Voter
+
+---
+
+SECTION id: three-launches (type: concept)
+Title: The three things a launch is probably doing
+Body: When a new party appears in the twelve months before a vote, the prior probability — given the base rates above — is that it is doing one of three things. The pivot play: a defector with sitting seats is positioning to be the kingmaker in a hung parliament. Tell — existing MPs join early, coalition slot is hinted before manifesto. The grievance vehicle: a real generational dissatisfaction has no party that owns it, and the launch is the channel. Tell — civil-society figures involved, manifesto precedes machine, ideology coherent. The vanity option: a personality, often older, registering a vehicle to retain relevance or future-option a return. Tell — founder-centric naming, thin bench, no clear coalition slot, no defining issue. The first two can be voted on rationally. The third is almost always a wasted vote.
+
+---
+
+SECTION id: they-are-all-the-same (type: mistake)
+Claim: They are all the same
+Correction: The data does not support this. Some launches deliver durable representation; others are vanity. Treating them as identical surrenders the discriminating power the vote actually has. Cynicism feels sophisticated and is in fact lazy. It is the cheapest way to opt out of judgement while feeling smart for doing so.
+
+---
+
+SECTION id: this-one-is-different (type: mistake)
+Claim: This one is the reformer who will fix it
+Correction: The base rate of reformer-messiah launches delivering reform is low. The probability that a founder is exactly what he says he is, the same week he is selling it, is small. Naïveté feels engaged and is in fact a mark for the operator. The discriminating posture is structural scepticism — trust the answers to the five structural questions below more than the speeches.
+
+---
+
+SECTION id: five-questions (type: concept)
+Title: Five structural questions to ask before voting
+Body: Forget the speeches. The answers to these five questions are public information and they discriminate. One: who is already inside? Sitting MPs or assemblypersons at launch indicate a pivot or grievance play. None of them indicates a vanity option. Two: who is funding it? Campaign-finance disclosure is weak, but rally logistics and advertising spend leak the answer. A new party with national visibility and no obvious patron has a hidden one. Three: what is the coalition slot? Has the leadership named who it would work with? A party that refuses to answer is reserving the right to sell the answer after you vote. Four: what job does this party do that no existing party does? If the honest answer is the same job UMNO or PKR or PAS does, just with this person leading, the product is a personality, not a service. Five: where would they be in five years if this election goes badly? Real grievance vehicles survive bad results. Vanity vehicles disappear.
+
+---
+
+SECTION id: pivotal-from-your-chair (type: concept)
+Title: The pivotal-player problem from the voter's chair
+Body: The most uncomfortable insight in this dossier is this: when a voter casts for a small new party expecting it to deliver policy X, what the voter usually delivers is bargaining power, not policy. The Shapley-value logic that makes the launch rational from the operator's side cuts the same way from the voter's side. A vote for a pivot party is a vote of confidence in the negotiating judgement of its leadership, not a purchase of the policies on the manifesto. That is a coherent thing to vote for. But it is a different vote from the one most launch campaigns describe. If you would not trust this leadership to negotiate on your behalf in a closed room you cannot enter, voting for them on policy grounds is a category error.
+
+---
+
+SECTION id: view (type: view)
+Body: A new-party launch should shift your opinion not on the launcher's claims, but on the system that produced the launch. The honest question is not whether this person is trustworthy. It is what failure of the existing parties created the opening this launch is exploiting. That question puts you back in command. The launcher is responding to a market gap; your job is to see the gap clearly. Then ask the simpler test before voting: if this new party did not exist, where would my vote go and why? If the answer is to the same coalition, the launch has not changed the math. If the answer is I would not vote, the launch is doing real work. You are not the audience for the launch speech. You are the resource the launcher needs to be in a room you cannot see, where the deal you will live under is decided. Vote accordingly — by judging who will be in that room, not by judging the speech.
+
+---
+
+C. FIGURE SPECIFICATIONS — AUDIT THESE TOO
+---
+
+FIGURE id: fig-cover (illustration)
+Subject: Four figures in suits seated around a rectangular table from three-quarter angle, with a single window at the rear showing a faint distant crowd. Single continuous white line on navy background. T4A signature continues the stroke at bottom right.
+Audit for: composition implying a partisan room? Faces resembling identifiable politicians? Any depiction of religious symbols, royal regalia, or community-identifying features? It should be politically and ethnically neutral.
+
+FIGURE id: fig-1 (timeline)
+Data: 10 launches from 1951 IMP through 2022 GTA. Marker colour by outcome: filled burgundy = successful; outline burgundy = partial; faded = failed.
+Audit for: outcome classifications. Is "successful" applied consistently? Are any timings off by more than a year? Are any party names mis-spelled or wrong? Verify each: IMP 1951, DAP/Gerakan 1969, Semangat 46 1988, KeADILan 1999, Bersatu 2016, Amanah 2017, Pejuang 2020, MUDA 2020, GRS 2020, GTA 2022.
+
+FIGURE id: fig-2 (bar chart, voters per seat)
+Data: 10 constituencies with voter counts. Bangi ~178k, Damansara ~180k, Kapar ~144k, Kota Raja ~134k, Klang ~118k, Cameron Highlands ~32k, Putrajaya ~28k, Igan ~19k, Hulu Rajang ~22k, Lawas ~21k.
+Audit for: are these numbers within reasonable bounds of the most recent published EC roll? Is the sample selection fair (i.e., not cherry-picked to maximise the ratio)? Should the chart specify which delineation cycle it represents (2018 vs current)?
+
+FIGURE id: fig-3 (bar chart, Sarawak SST revenue)
+Data: 2019 RM2.97bn, 2020 RM2.74bn, 2021 RM3.42bn, 2022 RM4.18bn, 2023 RM3.84bn, 2024 RM3.51bn.
+Audit for: each year's figure should be checked against published Sarawak state budget statements. The dossier text uses RM2.7bn-RM4bn as a range; do the chart figures fall inside the range? Are any years overstated?
+
+FIGURE id: fig-4 (conceptual diagram of Shapley pivot)
+Composition: 80-80-30 seat chamber, with the 30-seat bloc shown as necessary in either 110-seat majority.
+Audit for: arithmetic (80+30=110, 80+30=110, both correct). Is the framing "necessary in either majority" accurate? Could a 80+80 majority form without the 30, breaking the pivot logic? (In Malaysian context, a 80-80 majority would imply a unity government that is the live alternative; the diagram should not falsely claim the 30 is always necessary.)
+
+FIGURE id: fig-5 (brokerage stack)
+Layers: Division Head → Branch chairs (300-500 per division) → JKKK village chiefs and mosque committees → Felda settler representatives → Local contractor networks.
+Audit for: branch-chair count plausibility (UMNO has ~21,000 branches across ~190+ divisions, so 300-500 per division is approximately correct; verify). Are JKKK village chiefs accurately characterised? Is the Felda layer accurate (only applies in Felda-adjacent seats)?
+
+FIGURE id: fig-6 (anti-hopping loophole comparison)
+Left panel: individual MP defection blocked under Article 49A.
+Right panel: party-level coalition exit allowed.
+Audit for: is the legal characterisation accurate? Article 49A text should be verified. Is there any case law (since 2022) that has tested the party-level loophole?
+
+FIGURE id: fig-7 (international comparison table)
+Rows: Malaysia, Germany, UK, Indonesia, Israel, Italy.
+Columns: threshold, public party funding, anti-hop rule, real-world frequency of launches.
+Audit for: each cell. Germany 5% Sperrklausel — correct. UK no threshold — correct. Indonesia verification thresholds — verify specifics. Israel 3.25% — correct (raised from 2% in 2014). Italy variable — correct. Check the "real-world frequency" column for bias.
+
+---
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0,
+  "political_lean_estimate": 0.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"section_id": "...", "quote": "exact text from dossier", "why_biased": "...", "fix": "..."}],
+  "racial_flags": [{"section_id": "...", "quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"section_id": "...", "quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"section_id": "...", "quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"section_id": "...", "quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"section_id": "...", "quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["..."],
+  "evasion_flags": ["..."],
+  "shoe_test_failures": ["..."],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "section_id": "...", "quote": "exact text", "why": "...", "fix": "..."}
+  ],
+  "figure_flags": [
+    {"figure_id": "fig-1|fig-2|...|fig-cover", "concern": "what is wrong or risky with this figure", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from dossier", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "URL", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=================================================================
+PASTE ENDS HERE
+=================================================================
