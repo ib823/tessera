@@ -1,0 +1,234 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "matrade-west-asia-trade-paradox-q1-2026",
+    "issue_id": "1996",
+    "brief": "engine/briefs/matrade-west-asia-trade-paradox-q1-2026.md",
+    "generated_at": "2026-05-19",
+    "revision_history": [
+      "v1 (2026-05-19): initial draft. Anchors the framing paradox: same MATRADE briefing on 21 April 2026 produced both the +9.3% March aggregate (RM272.95B) and the −30.4% Q1 West Asia collapse (RM21.41B at 2.7% of total). Three fact cards: aggregate arithmetic; bilateral asymmetry (UAE CEPA growing vs Iran palm oil −86.1% to RM90M); exporter survey gap (63.9% anticipated impact). Reframe rotates from 'how bad is the collapse' to 'who counts as a lost market when the aggregate doesn't notice'. 3R-Religion discipline: Iran drop framed as war/sanctions buyer-side collapse, NOT Malaysian moral disengagement; UAE corridor explicitly named as the Muslim-majority partner where trade is growing under CEPA."
+    ],
+    "discipline": "Process-not-people. 3R-Religion MEDIUM brief: cards critique a framing mechanic of a statutory body, not MATRADE staff and not the chairman personally. We do NOT frame the Iran trade collapse as Malaysian moral or religious disengagement — the data shows it is buyer-side war/sanctions collapse while the Muslim-majority UAE corridor is GROWING under CEPA. No allegation of bad faith; both numbers were publicly disclosed by the chairman in the same briefing — the point is exactly that the disclosure happened and that mainstream coverage filed the two numbers as parallel stories instead of one."
+  },
+  "headline": "MATRADE briefed +9.3% trade and −30.4% West Asia in the same room. Press filed two stories.",
+  "context": "On 21 April 2026, MATRADE chairman Reezal Merican told the same media briefing that March 2026 trade hit RM272.95 billion (+9.3% YoY) and Q1 Malaysia–West Asia trade fell to RM21.41 billion (−30.4% YoY).",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "MATRADE briefed two numbers from one release on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion.",
+      "sub": "Malay Mail, NST, The Edge and Bernama filed two separate stories. The internal contradiction never made the news. West Asia is only 2.7% of total trade.",
+      "sources": [
+        "Malay Mail, 21 April 2026, 'Matrade chairman: Malaysia's trade shrugs off global jitters, posts 9.3pc growth in March': https://www.malaymail.com/news/malaysia/2026/04/21/matrade-chairman-malaysias-trade-shrugs-off-global-jitters-posts-93pc-growth-in-march/217124",
+        "Malay Mail, 21 April 2026, 'Geopolitical tensions slash Malaysia's West Asia trade by 30.4pc, says Matrade chief': https://www.malaymail.com/news/malaysia/2026/04/21/geopolitical-tensions-slash-malaysias-west-asia-trade-by-304pc-says-matrade-chief/217127",
+        "The Edge Malaysia, 21 April 2026, 'Weak demand from Iran weighs on palm oil sector, says Matrade chairman': https://theedgemalaysia.com/node/800701",
+        "Bernama TV, 21 April 2026, 'MATRADE Maintains 2026 Trade Growth Forecast At 3-5 Pct Despite Geopolitical Risks': https://www.bernama.com/tv/news.php?id=2547454",
+        "DOSM External Trade Statistics Bulletin, March 2026, released 20 April 2026 1200hrs: https://storage.dosm.gov.my/trade/trade_2026-03_headline_en.pdf"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia collapse is 2.7% of that: a 30% drop in a sliver the aggregate barely registers.",
+      "sub": "Q1 exports hit a near-record RM426.53 billion (+12.7% YoY) on E&E demand. The trade surplus extended its 71st straight month.",
+      "sources": [
+        "DOSM External Trade Statistics Bulletin, March 2026, released 20 April 2026 1200hrs: https://storage.dosm.gov.my/trade/trade_2026-03_headline_en.pdf",
+        "The Edge Malaysia, 20 April 2026, 'Malaysia's trade expands 10.4% to RM789.85 bil in 1Q 2026 despite global uncertainties — Miti': https://theedgemalaysia.com/node/800475",
+        "Malay Mail, 20 April 2026, 'Miti: Malaysia's trade up 10.4pc in Q1 2026, exports hit near-record levels despite global uncertainty': https://www.malaymail.com/amp/news/money/2026/04/20/miti-malaysias-trade-up-104pc-in-q1-2026-exports-hit-near-record-levels-despite-global-uncertainty/216991",
+        "Malay Mail, 21 April 2026, 'Geopolitical tensions slash Malaysia's West Asia trade by 30.4pc, says Matrade chief': https://www.malaymail.com/news/malaysia/2026/04/21/geopolitical-tensions-slash-malaysias-west-asia-trade-by-304pc-says-matrade-chief/217127",
+        "Arithmetic: RM21.41B / RM789.85B = 2.71%, matching the 2.7% share-of-total figure stated by the chairman."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "big": "Inside that number: palm oil to Iran collapsed 86.1% to RM90 million, while the UAE corridor is opening under a CEPA in force since 1 October 2025.",
+      "sub": "Palm products were 62.4% of Malaysia's exports to Iran. The UAE deal targets US$13.5 billion non-oil trade by 2032, roughly doubling 2024.",
+      "sources": [
+        "The Edge Malaysia, 21 April 2026, 'Weak demand from Iran weighs on palm oil sector, says Matrade chairman': https://theedgemalaysia.com/node/800701",
+        "Malay Mail, 21 April 2026, 'Geopolitical tensions slash Malaysia's West Asia trade by 30.4pc, says Matrade chief': https://www.malaymail.com/news/malaysia/2026/04/21/geopolitical-tensions-slash-malaysias-west-asia-trade-by-304pc-says-matrade-chief/217127",
+        "Economy Middle East, October 2025, 'UAE-Malaysia CEPA enters into force, targeting $13.5 billion non-oil trade increase by 2032': https://economymiddleeast.com/news/uae-malaysia-cepa-enters-into-force-targeting-13-5-billion-non-oil-trade-increase-by-2032/",
+        "UAE Ministry of Economy and Tourism, 'UAE-Malaysia Comprehensive Economic Partnership Agreement' official page: https://www.moet.gov.ae/en/uae-malaysia-comprehensive-economic-partnership-agreement",
+        "Fastmarkets cargo surveyor, April 2026: palm oil shipments Iran 0 tonnes (from 61,000 prior month); UAE 3,000 tonnes (from 40,000); Saudi Arabia 6,300 tonnes (from 0): https://www.fastmarkets.com/insights/malaysias-palm-oil-exports-fall-in-first-half-of-april-weighed-by-lower-shipments-to-the-middle-east-cargo-surveyor/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "MATRADE's own March survey found 63.9% of Malaysian exporters anticipated West Asia impact. The 21 April briefing led with +9.3% growth.",
+      "sub": "The affected firms outnumber what a 2.7% share-of-trade headline implies. Many are MSMEs in palm oil, petroleum products and electrical & electronics.",
+      "sources": [
+        "The Star, 5 March 2026, 'Matrade takes mitigation steps to safeguard Malaysian exports amid West Asia conflicts' (cites the 63.9% survey figure): https://www.thestar.com.my/business/business-news/2026/03/05/matrade-takes-mitigation-steps-to-safeguard-malaysian-exports-amid-west-asia-conflicts",
+        "Business Today, 5 March 2026, 'MATRADE Launches Mitigation Plan To Protect Exporters From Middle East Logistics Blockade': https://www.businesstoday.com.my/2026/03/05/matrade-launches-mitigation-plan-to-protect-exporters-from-middle-east-logistics-blockade/",
+        "The Star, 21 April 2026, 'Matrade: RM5bil guarantee initiative to help sustain MSMEs export momentum' — RM5B MSME export-guarantee, indicating MSME exposure: https://www.thestar.com.my/business/business-news/2026/04/21/matrade-rm5bil-guarantee-initiative-to-help-sustain-msmes-export-momentum",
+        "Malay Mail, 21 April 2026, 'Geopolitical tensions slash Malaysia's West Asia trade by 30.4pc' — lead export categories of decline: palm oil, petroleum products, E&E goods: https://www.malaymail.com/news/malaysia/2026/04/21/geopolitical-tensions-slash-malaysias-west-asia-trade-by-304pc-says-matrade-chief/217127"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "When 2.7% of trade can collapse 30% without the headline noticing, the question is not how bad the collapse is. It is who counts as a lost market when the aggregate does not.",
+      "sub": "",
+      "sources": [
+        "Editorial reframe synthesising the brief's arithmetic finding: RM21.41B is 2.71% of RM789.85B (Q1 2026 total trade), a 30% drop in a 2.7% sliver mathematically costs ~0.8% of the aggregate. Sources: DOSM bulletin (March 2026) + MATRADE chairman's 21 April briefing (Malay Mail, Edge, Bernama).",
+        "Question-restructuring reframe per CLAUDE.md Rule 5: shifts the issue from 'magnitude of collapse' to 'whose collapse the aggregate erases'."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both numbers are true. The city map decides which one is news.",
+      "sub": "MATRADE published both. Press filed two stories. The choice to brief them as parallel narratives is itself the framing.",
+      "sources": [
+        "Editorial analogy. Maps onto verified figures: total trade +9.3% YoY in March 2026 (DOSM, 20 April 2026) and West Asia trade −30.4% YoY in Q1 2026 (MATRADE chairman, 21 April 2026). Parallel filing of the two stories by Malay Mail (separate 21 April articles), NST, The Edge, Bernama TV, Pocket News and Business Today is the documented coverage pattern."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Both numbers are true. The diversification worked. The exporters who lost the channel are not in the headline.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis. Anchored on: 2.7% West Asia share absorbed by aggregate +9.3% growth (DOSM + MATRADE 21 April); 63.9% of exporters anticipated West Asia impact (MATRADE survey, 5 March 2026 via The Star); Iran palm oil −86.1% to RM90M (Edge Malaysia, 21 April); UAE CEPA in force 1 October 2025 (UAE MoET official page)."
+      ]
+    }
+  ],
+  "sources": "DOSM External Trade Statistics Bulletin (primary, March 2026), BNM Quarterly Bulletin 1Q 2026 (primary, 7 May 2026), MATRADE chairman 21 April 2026 briefing, UAE Ministry of Economy and Tourism CEPA page (primary), MITI Q1 2026 announcement, Malay Mail (parallel 21 April stories), The Edge Malaysia (Iran palm oil 21 April, Q1 trade 20 April), The Star (5 March mitigation, 21 April RM5B guarantee, 20 April March trade), New Straits Times, Bernama TV, Business Today, Pocket News, Fastmarkets cargo surveyor (April 2026), Economy Middle East (CEPA in-force), Arabian Business, ISIS Malaysia Hormuz brief (30 March 2026), paultan.org (PETRONAS supply), Fortune Asia (oil shortage), UK Commons Library briefing CBP-10521 (Iran war context), InvestMalaysia/MIDA, ARIC ADB FTA tracker, Saudi Press Agency (GCC FTA launch)",
+  "confidence": "High on the MATRADE-stated numbers — 9.3%, RM272.95B, 30.4%, RM21.41B, 2.7%, 23.6%, RM9.87B, 86.1%, RM90M, 62.4% — all from the chairman's 21 April spoken briefing as reported identically by Malay Mail, NST, The Edge, Bernama TV, Pocket News, and Business Today. High on the DOSM aggregates (Q1 RM789.85B, March RM272.95B, 71st month of surplus) — primary bulletin PDF located. High on UAE-Malaysia CEPA in-force date (1 October 2025) and the US$13.5B 2032 target — verified against UAE MoET official page and Economy Middle East coverage. High on the 63.9% exporter survey figure — MATRADE-issued, reported by The Star 5 March 2026 and Business Today. Medium on the share arithmetic anchoring (2.7% = RM21.41B / RM789.85B = 2.71%) — checks out exactly. Medium on the framing characterisation (mainstream press filed two stories rather than one): we have the parallel-filed Malay Mail pair (217124 and 217127) plus separately datelined Edge and Bernama pieces, but a formal media-monitoring survey of every outlet has not been done. Cards stick to what is verifiable: that two separate stories from the same room can be cited.",
+  "lenses_used": ["Economic", "Regional", "Governance"],
+  "lenses_applicable_but_unused": ["Political", "Historical", "Security"],
+  "needs_verification": [
+    "The exact Q1 2025 Malaysia–West Asia bilateral trade baseline that yields the −30.4% YoY (back-calculation: RM21.41B / 0.696 ≈ RM30.76B Q1 2025). Stage 3 should pull MATRADE 2025 trade-performance press releases and DOSM country-level Q1 2025 tables to confirm.",
+    "Whether Q1 2026 Malaysia–UAE bilateral trade is in fact 'growing' or merely 'a paper agreement in force' — the brief flags this as an information gap. Cards intentionally describe the UAE CEPA as 'opening under' an in-force agreement rather than asserting Q1 2026 UAE corridor growth. Stage 3 should look for DOSM country-level Q1 2026 figures or a MATRADE country-level breakdown.",
+    "The Q1 2025 Malaysia–Iran palm oil baseline that yields the 86.1% drop to RM90M (back-calculation: ~RM647M Q1 2025). Stage 3 should verify against MATRADE 2025 palm oil trade data or MPOC/MPOB reports.",
+    "Whether mainstream Malaysian coverage uniformly filed two separate stories on 21 April. We have the Malay Mail pair (217124 and 217127), separately datelined Edge pieces (800475 on Q1 trade, 800701 on Iran palm oil), and Bernama TV (2547454). Stage 3 could check whether NST, FMT, Malaysiakini, or Sin Chew published an integrated piece joining the two numbers.",
+    "Whether the 63.9% exporter survey was Q1 2026 or 2025 vintage and whether the question was specifically about the post-28-February-2026 escalation phase or general West Asia conflict. Stage 3 should chase the MATRADE survey methodology note if available."
+  ],
+  "source_notes": "Two genuine source-spectrum strengths: primary DOSM bulletin (RM789.85B Q1 total, RM272.95B March total, +9.3%) + primary UAE Ministry of Economy and Tourism CEPA page + BNM Quarterly Bulletin 1Q 2026 anchor every aggregate figure to a primary source. The West Asia / Iran specifics come from the chairman's spoken briefing as reported by multiple independent outlets (Malay Mail, NST, Edge, Bernama, Pocket News, Business Today) — chairman-statement-derived rather than DOSM-tabular-derived, but confirmed across more than four independent secondary outlets, satisfying the brief's confidence threshold. Two contradictions handled per brief: (1) RM272.95B vs RM273.0B March trade is a RM50M rounding — we use RM272.95B (granular chairman figure) in the hook to match the MATRADE briefing wording. (2) The brief flags that the RM21.41B period was ambiguously reported in some snippets but confirms Q1 2026 cumulative — cards consistently say 'Q1' for the West Asia number and 'March' for the +9.3% growth, naming the period asymmetry as part of the paradox. Single-source reliance: the 62.4% palm oil share of exports to Iran is from The Edge Malaysia's 21 April Iran-specific story citing the chairman; we present it as a chairman figure. The 63.9% exporter survey appears across The Star and Business Today on 5 March 2026 from the same MATRADE press release — treated as MATRADE-issued rather than independently surveyed. The brief explicitly warns against framing the Iran drop as Malaysian moral/religious disengagement; cards comply — Iran's collapse is attributed to demand/war/sanctions on the buyer side, and the UAE corridor (Muslim-majority partner under CEPA) is explicitly named in the same fact card to break any misreading.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert MATRADE hid anything, lied, or acted in bad faith — both numbers were publicly stated by the chairman in the same briefing. We do NOT assert that mainstream press misled readers — the parallel-filing is documented, not characterised as deception. We do NOT assert that the UAE corridor is 'growing' in Q1 2026 — we say it 'opened under a CEPA that took force on 1 October 2025', which is what the primary source supports. We do NOT assert the Iran collapse is the result of Malaysian policy choice — the framing attributes it to war/sanctions/buyer-side demand collapse per the brief. We do NOT extrapolate from 63.9% to assert that 63.9% of exporters were actually hit — only that they anticipated impact (the survey question's wording).",
+    "underclaim_check": "We do NOT soften that mainstream press filed two stories rather than one — the brief documents this pattern across at least four outlets and the cards state it. We do NOT hedge the 9.3% growth or the 30.4% collapse with 'reportedly' — both numbers are on the public record from the chairman's briefing. We do NOT soften the 86.1% Iran palm oil figure or the 2.7% share-of-total figure — both are chairman-stated and arithmetically consistent.",
+    "misleading_framing_check": "Card sequence: hook plants the paradox (both numbers, same room); fact 1 establishes the arithmetic (2.7% sliver, RM21.41B in RM789.85B); fact 2 names the asymmetry inside West Asia (Iran palm oil −86.1%, UAE under CEPA); fact 3 introduces the exporter-side gap (63.9% anticipated impact). Crucially, fact 2 deliberately pairs Iran (collapsing) with UAE (Muslim-majority partner with CEPA opening) in the same card — preventing any reader from forming the misimpression that 'Malaysia is disengaging from Muslim trade partners'. The 9.3% / 30.4% gap is named as a real framing choice, not as deception. The reframe rotates the question rather than adding a new accusation. Period asymmetry (March-only for 9.3%, Q1 for 30.4%) is acknowledged in source_notes and the cards consistently label periods.",
+    "unverified_detail_check": "Every specific in the cards traces to a primary or near-primary source. Aggregate figures (RM272.95B, RM789.85B, RM426.53B, +9.3%, +12.7%, 71st month) trace to DOSM bulletin (primary) and MITI Q1 announcement. West Asia figures (RM21.41B, −30.4%, 2.7%) trace to the chairman's 21 April briefing as reported across Malay Mail, NST, Edge, Bernama. Iran palm oil figures (RM90M, −86.1%, 62.4% pre-collapse share) trace to The Edge Malaysia's 21 April Iran-specific story. UAE CEPA date (1 October 2025 in-force) and US$13.5B target trace to UAE Ministry of Economy and Tourism and Economy Middle East. The 63.9% exporter survey traces to The Star and Business Today coverage of MATRADE's 5 March 2026 mitigation plan announcement.",
+    "3R_special_caution": "Religion (MEDIUM in brief): Iran is Shia-majority and the largest Iran-specific collapse driver. Cards explicitly attribute the Iran drop to war/sanctions/buyer-side demand collapse — NOT to Malaysian moral or religious disengagement. Fact 2 deliberately pairs Iran (collapse) with UAE (Muslim-majority partner with CEPA opening) in the same card, so the cards cannot be read as 'Malaysia retreating from Muslim trade partners' — that reading is broken on its face by naming the UAE corridor as the regional anchor going forward. We do NOT use phrases like 'Muslim solidarity', 'Palestinian boycott', 'Muslim-bloc'. We do NOT name Israel or Gaza in cards (the brief notes those are background, not the proximate cause of the West Asia trade collapse). Race: not implicated. Royalty: not implicated.",
+    "process_not_people_check": "All sharp claims target a structural mechanic: how a statutory body briefed two numbers from one release, how mainstream press filed them as parallel stories, how a 2.7% share absorbs a 30% drop, how the 63.9% exporter-anticipation figure relates to the 2.7% share-of-trade figure. MATRADE chairman Reezal Merican is named once in the context and once in the hook, in his official capacity as the speaker at the 21 April briefing. No allegation of bad faith. No characterisation of MATRADE staff, MITI, or Tengku Zafrul. The critique is of a communication choice, not of any person.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent and structural curiosity, NOT sadness. The hook plants the gap between two coexisting facts; the reframe asks who counts as a lost market when the aggregate doesn't notice; the view holds 'both numbers are true' before naming who is missing from the headline. Reader is not invited to feel sad for exporters but to notice the structural pattern of which exporters get heard. Not 'Malaysia is losing' — 'the headline obscures who is bearing the cost'."
+  },
+  "pa_score": 87,
+  "pa_score_rationale": "Strong: every aggregate figure traces to DOSM's primary bulletin or BNM's Quarterly Bulletin; the UAE CEPA in-force date is verified against the UAE Ministry of Economy and Tourism's own page; all chairman-stated West Asia numbers (RM21.41B, 30.4%, RM9.87B, 23.6%, RM90M, 86.1%, 62.4%, 2.7%) are confirmed across at least four independent secondary outlets covering the same 21 April briefing; share arithmetic (RM21.41B / RM789.85B = 2.71%) checks out exactly. The 3R-Religion discipline is held cleanly: Iran's collapse is attributed to war/sanctions/buyer-side demand, and fact 2 deliberately pairs Iran (collapsing) with UAE (Muslim-majority partner with CEPA in force) to make the 'Malaysia retreating from Muslim partners' misreading structurally impossible. The framing-paradox reframe is structural (question-restructuring per CLAUDE.md Rule 5), not partisan. Held below 90 because: (a) the −30.4% YoY baseline (implied Q1 2025 ≈ RM30.76B) is not separately verified against MATRADE's 2025 country-level press release — Stage 3 should chase; (b) we describe the UAE corridor as 'opening under CEPA' rather than asserting Q1 2026 UAE bilateral growth because the brief flags the country-level Q1 2026 breakdown as not on file — softer framing matches the evidence but leaves the asymmetry less vivid than the brief's underlying story suggests; (c) the claim that mainstream press filed two parallel stories rather than one integrated story is supported by the Malay Mail pair, Edge pieces, Bernama TV and Pocket News, but no formal media-monitoring sweep; (d) the 63.9% exporter survey methodology (sample size, recency, question wording) is not in our dataset — cards stay close to the wording the source uses ('anticipated impact') rather than overclaiming actual loss exposure."
+}

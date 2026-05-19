@@ -1,0 +1,155 @@
+{
+  "_provenance": {
+    "stage": "Stage 3 — Fact Verification (ChatGPT)",
+    "slug": "flood-loss-counter-trend-nadma-2024-2025",
+    "issue_id": "1998",
+    "generated_at": "2026-05-19",
+    "model": "ChatGPT (web-search enabled)",
+    "input_file": "engine/prompts-generated/flood-loss-counter-trend-nadma-2024-2025-stage3-browser.txt"
+  },
+  "factual_accuracy_score": 91,
+  "source_diversity_estimate": 0.7,
+  "claims": [
+    {
+      "claim": "Malaysia's flood bill fell from RM933.4M in 2024 to RM636.9M in 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.92,
+      "m_false": 0.01,
+      "m_unknown": 0.07,
+      "source": "DOSM 2025 flood impact infographic: overall losses RM636.9M (2025) and RM933.4M (2024). Bernama and The Edge reported the same figures.",
+      "correction": "No correction required.",
+      "stale_check": "No later DOSM revision found."
+    },
+    {
+      "claim": "Total flood losses fell 31.8% in 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.02,
+      "m_unknown": 0.1,
+      "source": "Arithmetic from DOSM figures: (933.4 - 636.9) / 933.4 = 31.76%.",
+      "correction": "No correction required.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "Public-asset damage rose 25.3% to RM380.2M in 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.92,
+      "m_false": 0.01,
+      "m_unknown": 0.07,
+      "source": "DOSM: public assets and infrastructure losses RM380.2M (2025) vs RM303.4M (2024); increase 25.3%.",
+      "correction": "No correction required.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "Household losses fell 50.6% to RM183.8M.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.01,
+      "m_unknown": 0.09,
+      "source": "DOSM: living quarters losses RM183.8M (2025) vs RM372.2M (2024); decline 50.6%.",
+      "correction": "No correction required.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "Public infrastructure now carries 60% of the bill; in 2024 it carried 33%.",
+      "status": "VERIFIED",
+      "m_true": 0.86,
+      "m_false": 0.02,
+      "m_unknown": 0.12,
+      "source": "Arithmetic from DOSM: RM380.2M / RM636.9M = 59.7% (rounded 60%); RM303.4M / RM933.4M = 32.5% (rounded 33%).",
+      "correction": "No correction required, but use 'about 60%' in formal copy.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "The State's share of a shrinking flood bill grew by RM77 million in one year.",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.02,
+      "m_unknown": 0.1,
+      "source": "Arithmetic from DOSM: RM380.2M - RM303.4M = RM76.8M.",
+      "correction": "Use 'about RM77M' or 'RM76.8M' depending on tone.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "DOSM reported the 2025 figure as equivalent to 0.03% of nominal GDP.",
+      "status": "VERIFIED",
+      "m_true": 0.82,
+      "m_false": 0.02,
+      "m_unknown": 0.16,
+      "source": "The Edge and NADMA's reposted Malay Mail item report DOSM's 0.03% of nominal GDP figure for RM636.9M losses in 2025.",
+      "correction": "No correction required, though primary DOSM media statement would be better than reposted press coverage for final sourcing.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "The DOSM figure covers direct, surveyed damage across calendar 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.72,
+      "m_false": 0.04,
+      "m_unknown": 0.24,
+      "source": "DOSM's flood-impact material states total losses by categories with notes that agriculture and public assets use government agency data. 2023 DOSM page states similar methodology using a January-December period.",
+      "correction": "Say 'direct damage categories captured by DOSM's flood loss survey and government agency data' rather than over-defining methodology unless the full 2025 methodology annex is attached.",
+      "stale_check": "No later methodology revision found."
+    },
+    {
+      "claim": "Business interruption, productivity loss, deaths and prolonged displacement sit outside the DOSM number.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0.05,
+      "m_unknown": 0.25,
+      "source": "DOSM's categories are direct damage categories; World Bank/BNM separately models broader macroeconomic and business impacts.",
+      "correction": "Keep, but phrase as methodological inference from listed categories unless the full DOSM methodology annex explicitly says 'excludes'.",
+      "stale_check": "No later methodology revision found."
+    },
+    {
+      "claim": "A 2024 World Bank and Bank Negara study estimates floods could cost up to 4.1% of GDP by 2030.",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.02,
+      "m_unknown": 0.1,
+      "source": "World Bank: a hypothetical 1-in-20-year flood can cost Malaysia up to 4.1% of GDP in 2030.",
+      "correction": "Clarify that this is a hypothetical 1-in-20-year flood scenario, not a forecast of annual average flood losses.",
+      "stale_check": "No later replacement study found."
+    },
+    {
+      "claim": "Budget 2026 set aside RM2.2 billion for 43 flood mitigation projects.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.01,
+      "m_unknown": 0.09,
+      "source": "Budget 2026: RM2.2B under the Flood Risk Reduction Programme through 43 high-priority RTB projects and 12 new RTB projects. Bernama corroborated.",
+      "correction": "No correction required.",
+      "stale_check": "No later budget amendment found."
+    },
+    {
+      "claim": "Households and businesses paid less. The public works budget paid more.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.15,
+      "m_unknown": 0.3,
+      "source": "DOSM verifies lower household / agriculture / business losses and higher public-asset losses. However, 'paid' is a fiscal inference; DOSM measures losses, not actual budget outlays or payer identity.",
+      "correction": "Use: 'Household and business damage fell. Public assets and infrastructure damage rose.'",
+      "stale_check": "Wording precision."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Households and businesses paid less. The public works budget paid more.",
+      "why": "The underlying direction is supported, but DOSM reports damage/loss values, not who ultimately paid cash or which public works budgets absorbed the costs.",
+      "primary_source": "DOSM flood impact 2025 infographic."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The figure covers direct, surveyed damage across calendar 2025, including Cyclone Senyar in late November and the December displacement peak of 14,905 people.",
+      "why": "Direct damage categories and calendar-year framing are broadly supported, but the Senyar and displacement references were not necessary to the core argument and were not fully verified in this run.",
+      "primary_source": "DOSM flood impact 2025 infographic confirms categories, not the specific Senyar/displacement framing."
+    }
+  ],
+  "omitted_facts": [
+    "DOSM's infographic shows agriculture losses also fell sharply, from RM185.2M in 2024 to RM52.6M in 2025, reinforcing that the mix-shift is specifically public-assets-driven rather than across all sectors.",
+    "The highest total state losses in 2025 shown by DOSM were Terengganu RM89.2M, Kelantan RM88.5M and Johor RM72.1M.",
+    "World Bank's 4.1% GDP figure is explicitly a hypothetical 1-in-20-year flood scenario and should not be compared directly against DOSM's RM636.9M direct loss number."
+  ],
+  "source_assessment": "The dossier is well grounded in DOSM, Budget 2026 materials, World Bank/BNM and reputable news reports. The core arithmetic is independently reproducible from DOSM figures. The main weakness is that the full 2025 methodology annex was not retrieved, so exclusion claims should be phrased as methodological inference from listed categories unless the full report explicitly states them.",
+  "overall_assessment": "This is the strongest of the three runs. The central counter-narrative is factually sound: total flood losses fell, but public assets and infrastructure rose in both value and share. The main edits needed are wording precision: use 'damage' or 'losses' rather than 'paid', and avoid unnecessary Senyar/displacement details unless separately verified."
+}

@@ -1,0 +1,145 @@
+{
+  "_provenance": {
+    "stage": "Stage 3 — Fact Verification (ChatGPT)",
+    "slug": "matrade-west-asia-trade-paradox-q1-2026",
+    "issue_id": "1996",
+    "generated_at": "2026-05-19",
+    "model": "ChatGPT (web-search enabled)",
+    "input_file": "engine/prompts-generated/matrade-west-asia-trade-paradox-q1-2026-stage3-browser.txt"
+  },
+  "factual_accuracy_score": 88,
+  "source_diversity_estimate": 0.68,
+  "claims": [
+    {
+      "claim": "On 21 April 2026, MATRADE chairman Reezal Merican told the same media briefing that March 2026 trade hit RM272.95 billion (+9.3% YoY).",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.02,
+      "m_unknown": 0.1,
+      "source": "MATRADE's official March/Q1 2026 trade performance release states March trade rose 9.3% y-o-y to RM272.95 billion. DOSM's bulletin gives the rounded RM273.0 billion figure.",
+      "correction": "No correction required. RM272.95B is the more granular MATRADE figure; DOSM rounds to RM273.0B.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "Q1 Malaysia-West Asia trade fell to RM21.41 billion (-30.4% YoY).",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.03,
+      "m_unknown": 0.17,
+      "source": "Malay Mail and The Edge reported Reezal Merican's 21 April 2026 briefing.",
+      "correction": "No correction required, but label it as a MATRADE chairman briefing figure unless official country/region tables are attached.",
+      "stale_check": "No newer MATRADE regional table was found."
+    },
+    {
+      "claim": "West Asia accounted for only 2.7% of Malaysia's total trade.",
+      "status": "VERIFIED",
+      "m_true": 0.82,
+      "m_false": 0.03,
+      "m_unknown": 0.15,
+      "source": "Malay Mail quotes Reezal saying West Asia accounted for about 2.7% (RM21.41B) of Malaysia's total trade. Arithmetic RM21.41B / RM789.85B = ~2.71%.",
+      "correction": "No correction required.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "DOSM put Q1 2026 total trade at RM789.85 billion.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.01,
+      "m_unknown": 0.09,
+      "source": "MATRADE's official release: Q1 trade expanded 10.4% to RM789.85 billion.",
+      "correction": "No correction required.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "Q1 exports hit RM426.53 billion (+12.7% YoY) and the trade surplus extended its 71st straight month.",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.02,
+      "m_unknown": 0.1,
+      "source": "MATRADE states Q1 exports rose 12.7% to RM426.53B and March 2026 trade surplus sustained 71 consecutive months of surplus since May 2020.",
+      "correction": "No correction required.",
+      "stale_check": "No later revision found."
+    },
+    {
+      "claim": "Palm oil and palm-based products exports to Iran collapsed 86.1% to RM90 million in Q1 2026.",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.03,
+      "m_unknown": 0.17,
+      "source": "The Edge reported Reezal Merican's briefing.",
+      "correction": "No correction required, but treat it as a MATRADE chairman statement unless matched to MPOB/MATRADE country-product tables.",
+      "stale_check": "No newer country-product table was found."
+    },
+    {
+      "claim": "Palm products were 62.4% of Malaysia's exports to Iran during the period.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "m_false": 0.03,
+      "m_unknown": 0.22,
+      "source": "The Edge reported that palm oil and palm-based products accounted for 62.4% of Malaysia's total exports to Iran during Q1 2026.",
+      "correction": "No correction required, but source as chairman-statement-derived rather than independently tabulated.",
+      "stale_check": "No newer country-product table was found."
+    },
+    {
+      "claim": "The UAE-Malaysia CEPA came into force on 1 October 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.01,
+      "m_unknown": 0.09,
+      "source": "UAE Ministry of Economy and Tourism; WAM also reported the 1 October 2025 entry into force.",
+      "correction": "No correction required.",
+      "stale_check": "No later contradiction found."
+    },
+    {
+      "claim": "The UAE deal targets US$13.5 billion non-oil trade by 2032, roughly doubling 2024.",
+      "status": "VERIFIED",
+      "m_true": 0.83,
+      "m_false": 0.02,
+      "m_unknown": 0.15,
+      "source": "WAM reported target of US$13.5B by 2032 and that the CEPA is projected to more than double bilateral trade from US$5.5B in 2024.",
+      "correction": "No correction required.",
+      "stale_check": "No later contradiction found."
+    },
+    {
+      "claim": "MATRADE's own March survey found 63.9% of Malaysian exporters anticipated West Asia impact.",
+      "status": "UNVERIFIED",
+      "m_true": 0.45,
+      "m_false": 0.05,
+      "m_unknown": 0.5,
+      "source": "Cited by The Star and BusinessToday, but the underlying MATRADE survey methodology or official survey release was not retrieved.",
+      "correction": "Retain only as 'reported by The Star/BusinessToday as a MATRADE figure' unless the MATRADE survey release is attached.",
+      "stale_check": "Survey methodology could materially affect the interpretation."
+    },
+    {
+      "claim": "The internal contradiction never made the news.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.25,
+      "m_unknown": 0.4,
+      "source": "The two figures are different units and periods: March total trade versus Q1 regional trade. The evidence supports a framing gap, not a mathematical contradiction.",
+      "correction": "Replace 'internal contradiction' with 'framing tension' or 'period-and-scale asymmetry'.",
+      "stale_check": "Not a stale issue; it is an editorial precision issue."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "The internal contradiction never made the news.",
+      "why": "March total trade growth and Q1 West Asia contraction are not internally contradictory. They are compatible facts at different scales and periods. The stronger and safer claim is that the coverage did not integrate the two into one framing question.",
+      "primary_source": "MATRADE March/Q1 release and Malay Mail West Asia report."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "MATRADE's own March survey found 63.9% of Malaysian exporters anticipated West Asia impact.",
+      "why": "The number may be correct, but the underlying survey instrument, sample size, date and question wording were not retrieved.",
+      "primary_source": "Not retrieved in this run."
+    }
+  ],
+  "omitted_facts": [
+    "Malay Mail's West Asia report includes Reezal's caveat that the direct impact remained limited but indirect effects such as higher goods prices, freight costs and war-risk premiums could weaken competitiveness.",
+    "BusinessToday reported a separate MATRADE claim that 90.5% of manufacturers were affected by raw material costs and shipping constraints.",
+    "WAM reported that Malaysia-UAE bilateral trade reached US$3.3B in H1 2025, up 30.9% y-o-y."
+  ],
+  "source_assessment": "The aggregate trade numbers are strongly grounded in official MATRADE and DOSM material. The West Asia and Iran-specific figures are credible but mainly depend on Reezal Merican's 21 April briefing as reported by media outlets rather than raw country-product tables. The UAE CEPA details are well grounded in official UAE sources and WAM. The weakest source point is the 63.9% exporter survey, where methodology was not retrieved.",
+  "overall_assessment": "This dossier is largely accurate, with one important editorial correction. The facts support a strong story about scale, masking and market-specific pain inside a positive aggregate. However, calling the two figures an 'internal contradiction' is imprecise. Use 'framing tension' instead. Also qualify the 63.9% survey figure unless the MATRADE survey source is attached."
+}
