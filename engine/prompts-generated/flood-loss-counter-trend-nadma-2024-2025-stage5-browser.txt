@@ -1,0 +1,230 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "flood-loss-counter-trend-nadma-2024-2025",
+    "issue_id": "1998",
+    "brief": "engine/briefs/flood-loss-counter-trend-nadma-2024-2025.md",
+    "generated_at": "2026-05-19",
+    "revision_history": [
+      "v1 (2026-05-19): initial draft. Counter-narrative spine: total flood damage fell 31.8% in 2025 (DOSM 15 April 2026), but public-asset damage rose 25.3% to RM380.2M, lifting the State's share from 33% to 60% of the total. Refused causal-certainty framings (no claim that mitigation worked or that climate adaptation succeeded). Methodology gap (business interruption, productivity loss, deaths, displacement all excluded) carried on the Governance fact card."
+    ],
+    "discipline": "Process-not-substance. Counter-narrative discipline: the corrected framing is not 'floods got worse,' it is 'the number that fell is the narrowest one, and inside it the State's share grew.' No causal certainty on why 2025 was lower — the brief lists four plausible drivers (less extreme weather, statistical variance, methodology consistency, marginal mitigation effect) and we name none as causal. 3R risk LOW across all three. All sharp claims target methodology and mix-shift, not any minister, official, or community."
+  },
+  "headline": "Malaysia's flood bill fell 32% in 2025. The public works share rose to 60%.",
+  "context": "On 15 April 2026, the Department of Statistics Malaysia reported total flood damage of RM636.9 million for 2025, down from RM933.4 million in 2024. Inside that smaller total, the share borne by public assets and infrastructure rose.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Malaysia's flood bill fell from RM933.4M in 2024 to RM636.9M in 2025. Households and businesses paid less. The public works budget paid more.",
+      "sub": "DOSM's 15 April 2026 release shows public-asset damage rose 25% to RM380.2M. Three of every five ringgit of flood damage in 2025 hit something the State rebuilds.",
+      "sources": [
+        "DOSM, Special Report on Impact of Floods in Malaysia 2025, released 15 April 2026 (Chief Statistician Datuk Seri Dr Mohd Uzir Mahidin): https://www.dosm.gov.my/portal-main/release-content/special-report-on-impact-of-floods-in-malaysia2025",
+        "Bernama, 'Malaysia's Flood Losses Drop To RM636.9 Mln In 2025 From RM933.4 Mln In 2024 — DOSM', 15 April 2026: https://www.bernama.com/en/general/news.php?id=2545191",
+        "Eco-Business, 'Malaysia's flood losses ease 32 per cent in 2025, but with higher infrastructure damage', April 2026: https://www.eco-business.com/news/malaysias-flood-losses-ease-32-per-cent-in-2025-but-with-higher-infrastructure-damage/",
+        "Malay Mail, 'Flood losses ease: Malaysia's damage bill drops from RM933.4m in 2024 to RM636.9m in 2025', 15 April 2026: https://www.malaymail.com/news/malaysia/2026/04/15/flood-losses-ease-malaysias-damage-bill-drops-from-rm9334m-in-2024-to-rm6369m-in-2025/216414"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Environmental",
+      "big": "DOSM reported total flood losses of RM636.9M for 2025, down 31.8% from RM933.4M in 2024 and equal to 0.03% of nominal GDP.",
+      "sub": "The figure covers direct, surveyed damage across calendar 2025, including Cyclone Senyar in late November and the December displacement peak of 14,905 people.",
+      "sources": [
+        "DOSM, Special Report on Impact of Floods in Malaysia 2025, released 15 April 2026: https://www.dosm.gov.my/portal-main/release-content/special-report-on-impact-of-floods-in-malaysia2025",
+        "DOSM, Special Report on Impact of Floods in Malaysia 2024, released 19 March 2025: https://www.dosm.gov.my/uploads/release-content/file_20250319122430.pdf",
+        "The Edge Malaysia, 'Malaysia's flood losses drop to RM636.9 mil in 2025 from RM933.4 mil in 2024 — DOSM', April 2026: https://theedgemalaysia.com/node/799941",
+        "Malay Mail, 'More than 14,000 displaced by floods across Malaysia, Pahang hardest hit', 19 December 2025: https://www.malaymail.com/news/malaysia/2025/12/19/more-than-14000-displaced-by-floods-across-malaysia-pahang-hardest-hit/202460",
+        "The Watchers, 'Exceptionally rare Tropical Cyclone Senyar...', 28 November 2025: https://watchers.news/2025/11/28/rare-tropical-cyclone-senyar-kills-more-than-300-indonesia-malaysia-thailand-november-2025/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Public-asset damage rose 25.3% to RM380.2M in 2025, while household losses fell 50.6% to RM183.8M. Public infrastructure now carries 60% of the bill.",
+      "sub": "In 2024 it carried 33%. The State's share of a shrinking flood bill grew by RM77 million in one year, while households, farms and businesses paid less.",
+      "sources": [
+        "DOSM, Special Report on Impact of Floods in Malaysia 2025, sector breakdown table: public assets RM380.2M (2024 RM303.4M, +25.3%); living quarters RM183.8M (2024 RM372.2M, −50.6%): https://www.dosm.gov.my/portal-main/release-content/special-report-on-impact-of-floods-in-malaysia2025",
+        "Eco-Business, 'Malaysia's flood losses ease 32 per cent in 2025, but with higher infrastructure damage' — the only press treatment that leads with the mix-shift framing: https://www.eco-business.com/news/malaysias-flood-losses-ease-32-per-cent-in-2025-but-with-higher-infrastructure-damage/",
+        "Bernama, 15 April 2026, sector breakdown: https://www.bernama.com/en/general/news.php?id=2545191",
+        "Arithmetic verification: RM380.2M / RM636.9M = 59.7% (rounded to 60%); RM303.4M / RM933.4M = 32.5% (rounded to 33%); RM380.2M − RM303.4M = RM76.8M (rounded to RM77M)."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "DOSM counts direct property and infrastructure damage only. Business interruption, productivity loss, deaths and prolonged displacement sit outside the number.",
+      "sub": "A 2024 World Bank and Bank Negara study estimates floods could cost up to 4.1% of GDP by 2030, built on what DOSM's calendar-year survey does not capture.",
+      "sources": [
+        "DOSM, Special Report on Impact of Floods in Malaysia 2025, methodology section: direct surveyed damage to living quarters, vehicles, business premises, agriculture, manufacturing and public assets; calendar-year reference period: https://www.dosm.gov.my/portal-main/release-content/special-report-on-impact-of-floods-in-malaysia2025",
+        "World Bank Group with Bank Negara Malaysia, Managing Flood Risks: Leveraging Finance for Business Resilience in Malaysia (2024): https://documents1.worldbank.org/curated/en/099031924075011175/pdf/P50170713a83500ce1a2461d7d8df026d11.pdf",
+        "World Bank Malaysia Country Climate and Development Report: https://www.worldbank.org/en/country/malaysia/publication/malaysia-country-climate-and-development-report",
+        "Eco-Business, 'As Malaysia grapples with flood-related losses, World Bank warns of rising economic cost of inaction on climate change': https://www.eco-business.com/news/as-malaysia-grapples-with-flood-related-losses-world-bank-warns-of-rising-economic-cost-of-inaction-on-climate-change/"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether floods got cheaper in 2025. It is whose balance sheet the damage that did happen showed up on.",
+      "sub": "",
+      "sources": [
+        "Editorial restructure of the question. Grounded in the brief's central finding: public-asset damage rose 25.3% to RM380.2M (60% of total) while household losses fell 50.6%. The mix shift is the structural point hidden inside the 32% headline drop."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Think of it like a household whose repair bill drops because the insurer now pays more directly. Here the insurer is the public works budget, and the premium is the tax base.",
+      "sub": "Lower household pain. Higher claim on the public purse. Both can be true in the same year.",
+      "sources": [
+        "Editorial analogy. Mirrors the verified mix-shift: DOSM 2025 living-quarters losses RM183.8M (down 50.6%) vs public-asset losses RM380.2M (up 25.3%). PIAM Yearbook 2024 finds 74% of Malaysian homes are uninsured against flood damage; DOSM 2025 case studies report 5.5% of victims held insurance. The analogy holds without overclaim because public works spending is a fiscal substitute for private insurance in the Malaysian flood market."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "The bill fell by RM296 million. The public infrastructure share rose by RM77 million. Budget 2026 set aside RM2.2 billion for 43 flood mitigation projects. The story is in the mix, not the total.",
+      "sub": "",
+      "sources": [
+        "DOSM arithmetic: RM933.4M − RM636.9M = RM296.5M decline; RM380.2M − RM303.4M = RM76.8M rise in public-asset damage.",
+        "Bernama, 'Budget 2026: Govt Allocates RM2.2 Billion For 43 Flood Mitigation Projects': https://www.bernama.com/en/news.php?id=2477157",
+        "Editorial synthesis: refuses both the triumphalist 'climate adaptation working' frame (DPM Zahid's 23 April 2026 'global model' speech) and the climate-doom frame (the World Bank's accompanying warning). Both miss the structural mix-shift the same DOSM report contains."
+      ]
+    }
+  ],
+  "sources": "DOSM Special Report on Impact of Floods in Malaysia (2021, 2022, 2023, 2024, 2025 editions); Bernama; The Star; The Edge Malaysia; Malay Mail; Free Malaysia Today; Eco-Business; Xinhua; The Watchers; UN News; ReliefWeb / IFRC DREF MDRMY011; NADMA bulletins and press releases; MetMalaysia forecasts; World Bank Group with Bank Negara Malaysia 'Managing Flood Risks' (2024); World Bank Malaysia Country Climate and Development Report; PIAM Yearbook 2024; ISEAS-Yusof Ishak Institute 2022 retrospective on the December 2021 Klang Valley flood; UKM Journal Kejuruteraan historical review.",
+  "confidence": "High on every DOSM number cited (RM636.9M total, RM933.4M prior year, 31.8% decline, RM380.2M public assets, RM303.4M 2024 public assets, RM183.8M living quarters 2025, RM372.2M living quarters 2024, 0.03% of GDP) — these are taken directly from the 15 April 2026 Special Report and corroborated across Bernama, The Edge, Malay Mail and Eco-Business. High on the named spokesperson (Chief Statistician Datuk Seri Dr Mohd Uzir Mahidin). High on the share computations (60% and 33%) — direct arithmetic from the published sector breakdown. High on the methodology scope claim — DOSM's published methodology covers direct surveyed damage on a calendar-year basis only. High on the World Bank/BNM 4.1% of GDP by 2030 estimate, from the 2024 joint report. High on the Budget 2026 RM2.2B / 43 projects allocation (Bernama). Medium on causal attribution of the 2025 decline — the brief lists four plausible drivers (less extreme weather, statistical variance, methodology consistency, marginal mitigation effect) and we deliberately name none as causal. Medium on the analogy framing — it is editorial reasoning grounded in the verified PIAM 74%-uninsured and DOSM 5.5%-insured-victims numbers, not a numerical claim.",
+  "lenses_used": ["Environmental", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Regional", "Critical", "Political"],
+  "needs_verification": [
+    "Confirm the DOSM 2025 sector breakdown table line-by-line against the official DOSM portal PDF (public assets RM380.2M, living quarters RM183.8M, agriculture RM52.6M, business RM13.4M, vehicles RM6.8M, manufacturing RM0.1M). Stage 3 should pull the PDF directly rather than relying on Bernama / Edge / Eco-Business summaries.",
+    "Confirm the 2024 public-asset comparison figure (RM303.4M) against the DOSM 2024 Special Report (19 March 2025 release). Brief cites it; Stage 3 should verify against the original DOSM PDF file_20250319122430.pdf.",
+    "Confirm Budget 2026's RM2.2 billion / 43 flood mitigation projects allocation against the Budget 2026 Speech and Economic Outlook 2026 — the Bernama summary is reliable but the primary figure should trace to the Ministry of Finance documents.",
+    "Confirm DOSM's stated methodology scope (direct property + infrastructure damage; excludes business interruption, productivity loss, deaths, displacement). The brief asserts this; Stage 3 should verify against the methodology annex of the 2025 Special Report.",
+    "Confirm the World Bank/BNM 4.1% of GDP by 2030 figure from the 2024 joint report Managing Flood Risks: Leveraging Finance for Business Resilience in Malaysia — exact page reference for downstream traceability."
+  ],
+  "source_notes": "Single biggest editorial discipline call: refusing causal attribution for the 2025 decline. The brief enumerates four candidate explanations (mitigation effect, weather variance, structural mix shift, methodology consistency); only one of these — the structural mix shift — is itself a verified DOSM finding rather than an inference. Cards therefore describe the mix shift as fact and never claim that mitigation, adaptation, or government action caused the headline drop. This is the discipline that distinguishes T4A's frame from both the triumphalist ('climate adaptation working' — DPM Zahid 23 April 2026 'global model' speech) and the climate-doom ('floods getting worse, ignore the number') framings. Second discipline call: the 60% figure for public assets in total damage rounds 59.7% upward; we use 60% in cards and the precise arithmetic (RM380.2M / RM636.9M = 59.7%) in source citations. Third: brief flags a small Senyar death-count discrepancy (2 vs 3 Malaysian deaths from late-November 2025 Senyar) — we do not cite Senyar deaths in any card because they sit outside the DOSM RM figure and would muddle the methodology point. Fourth: the analogy invokes insurance as the metaphorical vehicle; PIAM Yearbook 2024 reports 74% of Malaysian homes uninsured against flood damage and DOSM 2025 case studies record only 5.5% of victims held insurance, so 'insurer = public works budget' is grounded rather than rhetorical, but it is still an editorial frame and is labelled as such. Fifth: the brief notes the opposition-aligned political commentary leg of the source spectrum is weak; cards therefore avoid characterising the political framing of the DOSM release and stick to the structural number-and-methodology critique that primary sources fully support.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT claim climate adaptation worked, that mitigation spending caused the 2025 decline, that government action explains the headline drop, or that floods 'got better' in any environmental sense. We do NOT claim the DOSM methodology is wrong — only that it is narrow in a specified, documented way. We do NOT claim the World Bank's 4.1%-of-GDP figure is comparable to the DOSM RM636.9M figure — we explicitly note they sit in different methodologies. The Budget 2026 RM2.2B / 43 projects allocation is stated factually without claiming it explains the 2025 figure (the allocation post-dates the reference period).",
+    "underclaim_check": "We do NOT soften the mix-shift finding. Public-asset damage DID rise 25.3% to RM380.2M. It DID rise to 60% of total damage from 33%. The State's share DID grow by RM77 million while the headline fell by RM296.5 million. These are direct from the DOSM sector breakdown and are stated as fact.",
+    "misleading_framing_check": "Hook leads with the verified DOSM total (the number readers will see in headlines) and then plants the gap (public works paid more). Card 1 establishes the topline arithmetic and reference period BEFORE Card 2 reveals the mix shift, so no reader is led to dismiss the headline drop as untrue. Card 3 places the methodology limit alongside the World Bank's wider estimate, so neither the 'good news' nor the 'doom' framing dominates. The reframe restructures the question rather than adding a new claim. The view explicitly notes the bill fell AND the public share rose AND Budget 2026 made a forward allocation, so the reader sees the full shape.",
+    "unverified_detail_check": "Every specific in the cards traces to a primary source listed in the brief. RM636.9M, RM933.4M, 31.8%, RM380.2M, RM303.4M, RM183.8M, RM372.2M, 60%, 33%, 25.3%, 50.6%, RM296M, RM77M, 0.03% of GDP, 15 April 2026, Mohd Uzir Mahidin — all trace to DOSM's 15 April 2026 release or direct arithmetic from it. The 14,905 December displacement figure traces to NADMA via Malay Mail 19 Dec 2025. The 4.1% of GDP by 2030 figure traces to World Bank/BNM 2024. The RM2.2 billion / 43 projects figure traces to Budget 2026 via Bernama. The 74% uninsured figure (analogy sub) traces to PIAM Yearbook 2024.",
+    "3R_special_caution": "Race: floods affect all communities; the brief notes geographic concentration in east coast (majority Malay) and Borneo (Bumiputera) states but does not frame this ethnically and neither do the cards. Religion: not implicated. Royalty: not implicated. Sarawak Premier and DPMs are named-or-described only as political officeholders, never as proxies for royal or ethnic constituencies.",
+    "process_not_people_check": "All sharp claims target the methodology (what DOSM counts and excludes), the mix shift (public-asset vs household share), and the structural distinction between direct-damage and total economic cost. No minister, official, or community is criticised. Chief Statistician Mohd Uzir Mahidin is named in fact card 1 only as the named author of the cited report (his official capacity). DPM Zahid's 'global model' speech is mentioned in source_notes as one of the framings the editorial line refuses to adopt, but is NOT named in any card.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent. The reader should be uneasy that the share of flood damage falling on the public balance sheet is rising — that is a precedent question about who bears climate risk over time. Not sadness, not anger-at-individuals. The reframe and view direct the reader's energy to the structural mix question rather than to any official's claim or response.",
+    "cliffhanger_check": "Hook last clause ('the public works budget paid more') previews fact card 2's mix shift. Fact 1 last clause ('including Cyclone Senyar in late November and the December displacement peak') previews the reference period that fact card 3 will interrogate methodologically. Fact 2 last clause ('even as households, farms and businesses paid less') previews the methodology limit in fact 3 (what the figure does and does not capture). Fact 3 last clause ('a figure built on what DOSM's calendar-year survey does not capture') previews the reframe's restructuring of the question. The reframe sets up the analogy's metaphorical insurance frame. The analogy's last line ('Both can be true in the same year') previews the view card's synthesis. No baiting — every button delivers a real finding in the next card.",
+    "concreteness_floor_check": "Fact 1 carries the named institution (DOSM) and three numbers with denominators (RM636.9M, 31.8%, 0.03% of GDP). Fact 2 carries four numbers with denominators (25.3%, RM380.2M, 50.6%, RM183.8M) plus the share-shift (60% vs 33%). Fact 3 carries the named institutions (DOSM, World Bank, BNM) and one denominator number (4.1% of GDP by 2030). All three pass the floor.",
+    "first_clause_concreteness_check": "Hook first clause names the specific number (RM933.4M to RM636.9M). Fact 1 first clause names the institution (DOSM) and the specific number (RM636.9M). Fact 2 first clause names the rise (25.3%) and the specific number (RM380.2M) — this is the issue's strongest middle-card number per the Berger-Milkman pacing rule. Fact 3 first clause names the institution (DOSM) and the methodological action ('counts direct property and infrastructure damage only'). All four pass."
+  },
+  "pa_score": 88,
+  "pa_score_rationale": "Strong on primary-source traceability: every number in every card traces to either DOSM's 15 April 2026 Special Report or to direct arithmetic from it; the methodology claim traces to DOSM's published methodology; the World Bank/BNM 4.1%-of-GDP comparison traces to the 2024 joint report; the Budget 2026 allocation traces to the budget speech via Bernama. Strong on counter-narrative discipline: the cards do not adopt the triumphalist 'climate adaptation worked' framing nor the climate-doom 'ignore the number' framing — they correctly identify the structural mix-shift as the editorial heart and refuse to claim causality for the 2025 decline. Strong on length-budget compliance: hook 142/171 chars (big/sub), fact 1 132/164, fact 2 158/162, fact 3 161/170, reframe 122/empty, analogy 175/91, view 200/empty — all within target. Strong on cliffhanger buttons across cards 1–6. Capped at 88 (not 90) for three reasons: (a) the brief's DOSM 2025 sector breakdown numbers were taken from Bernama/Edge/Eco-Business summaries rather than the original DOSM PDF, so Stage 3 should pull the PDF directly to confirm RM380.2M and RM303.4M to the cent; (b) the analogy's 'insurer is the public works budget' metaphor is grounded in PIAM and DOSM survey data but is still editorial framing, and Stage 2 may flag it as sympathetic to one reading; (c) no opposition-aligned commentary appears in cards because the brief flagged that leg of the source spectrum as weak — Stage 3 should attempt to surface any if it exists, even though absence of opposition critique on this technical issue is not itself a bias problem."
+}

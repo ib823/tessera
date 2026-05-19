@@ -1,0 +1,228 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "ag-public-prosecutor-separation-bill",
+    "issue_id": "1997",
+    "brief": "engine/briefs/ag-public-prosecutor-separation-bill.md",
+    "generated_at": "2026-05-19",
+    "revision_history": [
+      "v1 (2026-05-19): initial draft."
+    ],
+    "discipline": "Process-not-people, structural not partisan. 3R-Royalty MEDIUM: the Yang di-Pertuan Agong's role under Article 145 and the Conference of Rulers' consultation on the JLSC chair are described as constitutional functions only — never critiqued, never characterised. 3R-Religion LOW-MEDIUM: Article 145(3) already excludes Syariah-court proceedings from AG discretion; no religious-charged cases are foregrounded. Cards target the appointment-route mechanism, not Azalina personally. The PSSC report and revised bill text are NOT public at brief-drafting; every characterisation of the 'best compromise' is sourced to the Minister's press remarks and explicitly labelled as such — not paraphrased as if it were the bill. The reform is described as real and within reach; the structural critique sits in the gap between separation and independence, which is the under-reported angle the Rafizi-Bar Council axis has been making since February."
+  },
+  "headline": "Eight years, four AGs, one bill: the AG-PP split is back, the appointment route is not",
+  "context": "On 18 May 2026 the Parliamentary Special Select Committee chaired by Azalina Othman Said wrapped its sixth meeting on the bill splitting the Attorney-General and Public Prosecutor. Azalina called it 'the best compromise'. The committee's report is not public.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Parliament's committee will deliver the AG-Public Prosecutor split bill on 22 June. The route the new prosecutor walks to office may be the route the old one walked.",
+      "sub": "The 2018 Pakatan Harapan manifesto promised the split 'immediately'. Eight years and four Attorneys-General later, Azalina calls it 'the best compromise'.",
+      "sources": [
+        "The Star, 18 May 2026, 'AG, Public Prosecutor separation Bill to be re-tabled June 22, says Azalina': https://www.thestar.com.my/news/nation/2026/05/18/ag-public-prosecutor-separation-bill-to-be-re-tabled-june-22-says-azalina",
+        "Pakatan Harapan, Buku Harapan manifesto, 8 March 2018, Promise 15 (AG-PP separation 'immediately').",
+        "The Star, 10 May 2026, 'AG, Public Prosecutor roles must be separated for better accountability, says law minister': https://www.thestar.com.my/news/nation/2026/05/10/ag-public-prosecutor-roles-must-be-separatedfor-betteraccountability-says-law-minister"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Article 145 has combined the AG and Public Prosecutor in one executive-appointed officer since 1957. The bill splits the office, not the appointment route.",
+      "sub": "Article 145(1) puts AG appointment with the Yang di-Pertuan Agong on the PM's advice. Article 145(3) vests prosecutorial discretion. The appointment route is unchanged.",
+      "sources": [
+        "Federal Constitution of Malaysia, Articles 145(1), 145(2), 145(3): https://www.asianparliament.org/uploads/Country/Members/malaysia/malaysia%20const.pdf",
+        "Malay Mail, 3 March 2026, 'AG-PP split explained: Key things to know about Malaysia's massive legal reform': https://www.malaymail.com/news/malaysia/2026/03/03/ag-pp-split-explained-key-things-to-know-about-malaysias-massive-legal-reform/210961",
+        "Malaysian Bar Council, 14 March 2026 motion proposed by President Mohamad Ezri Abdul Wahab — flags that the bill does not prohibit appointment of the AG from MPs or Cabinet: https://www.thestar.com.my/news/nation/2026/03/14/malaysian-bar-seeks-separation-of-ag-public-prosecutor-to-protect-independence"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The Judicial and Legal Service Commission recommends, the PM advises, the Agong appoints. Per Azalina, this route also carries the new Public Prosecutor.",
+      "sub": "The JLSC sits under Article 138; its chair is appointed by the Agong on the PM's advice. The sitting AG sits on the JLSC. The bill's text is not public; the characterisation is the Minister's.",
+      "sources": [
+        "Federal Constitution Articles 138 and 145: https://www.asianparliament.org/uploads/Country/Members/malaysia/malaysia%20const.pdf",
+        "Malay Mail, 3 March 2026, 'AG-PP split explained' — original bill routes PP appointment via JLSC recommendation to the YDPA on PM advice; PP candidate must be Malaysian with at least 10 years' litigation experience; seven-year fixed tenure: https://www.malaymail.com/news/malaysia/2026/03/03/ag-pp-split-explained-key-things-to-know-about-malaysias-massive-legal-reform/210961",
+        "Bar Council motion 14 March 2026: 'the AG sitting on the JLSC would still influence PP nominations': https://www.thestar.com.my/news/nation/2026/03/14/malaysian-bar-seeks-separation-of-ag-public-prosecutor-to-protect-independence",
+        "The Star, 18 May 2026 (Azalina press remarks): https://www.thestar.com.my/news/nation/2026/05/18/ag-public-prosecutor-separation-bill-to-be-re-tabled-june-22-says-azalina"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Ten government PKR MPs led by Rafizi Ramli demanded a parliamentary veto on the new prosecutor. None were appointed to the committee that wrote the compromise.",
+      "sub": "On 24 February 2026 they asked for a confirmation hearing and a Dewan Rakyat vote. The 3 March select committee seated eleven MPs plus Azalina as chair. Not one of the ten.",
+      "sources": [
+        "Malay Mail, 24 February 2026, 'Rafizi-aligned MPs threaten to block AG-PP split unless Parliament gets oversight, veto powers over new prosecutor': https://www.malaymail.com/news/malaysia/2026/02/24/rafizi-aligned-mps-threaten-to-block-ag-pp-split-unless-parliament-gets-oversight-veto-powers-over-new-prosecutor/210231",
+        "Free Malaysia Today, 24 February 2026, 'Refer AG-PP separation bill to select committee, say 10 PKR MPs': https://www.freemalaysiatoday.com/category/nation/2026/02/24/refer-ag-pp-separation-bill-to-select-committee-say-10-pkr-mps",
+        "The Edge Markets, 3 March 2026, 'Govt, opposition MPs agree to refer proposed constitutional amendments to Special Select Committee' — full PSSC composition: https://www.theedgemarkets.com/article/govt-opposition-mps-agree-refer-proposed-constitutional-amendments-special-select-committee",
+        "The Star, 4 March 2026, 'AG reform Bill under the microscope': https://www.thestar.com.my/news/nation/2026/03/04/ag-reform-bill-under-the-microscope"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether to separate the offices. It is who picks the new Public Prosecutor, and the bill keeps that decision in the same hands.",
+      "sub": "",
+      "sources": [
+        "Editorial restructuring grounded in: Federal Constitution Articles 138 and 145; Malay Mail 3 March 2026 explainer (PP appointment routed through JLSC on PM advice to the YDPA); Bar Council 14 March 2026 motion; Rafizi-led 24 February 2026 demands; Singapore Ministry of Law 2020 Edwin Tong COS speech (depoliticised appointment without separation): https://www.mlaw.gov.sg/news/parliamentary-speeches/response-speech-by-senior-minister-of-state-for-law-edwin-tong-at-the-committee-of-supply-debate-2020-(attorney-general's-chambers)/"
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Picture a referee who reports to one team's manager. Splitting the whistle from the rulebook does not fix the call if both new officials still answer to the same manager.",
+      "sub": "The bill creates two offices. The appointment line into both still passes through the Prime Minister.",
+      "sources": [
+        "Editorial analogy. Mirrors verified findings: Article 145(1) appointment route unchanged; JLSC chair appointed under Article 138 on PM advice; original bill routes PP appointment via JLSC recommendation to the YDPA on PM advice (Malay Mail 3 March 2026 explainer). Anger-at-process register; no depiction of royalty, religion, or community-identifying features."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Eight years of promising to split the office. Six committee meetings to call it 'the best compromise'. Zero changes to who picks the prosecutor.",
+      "sub": "",
+      "sources": [
+        "Editorial synthesis grounded in: Pakatan Harapan 2018 manifesto Promise 15; AG turnover Thomas (2018-2020) → Idrus (2020-2023) → Terrirudin (Sep 2023 – Nov 2024) → Dusuki (since 12 Nov 2024); six PSSC working meetings between 3 March 2026 and 18 May 2026; Azalina 18 May 2026 'best compromise' characterisation; Article 145(1) AG appointment route unchanged; original-bill PP appointment route via JLSC on PM advice per Malay Mail 3 March 2026 explainer."
+      ]
+    }
+  ],
+  "sources": "Federal Constitution of Malaysia (Articles 138, 145, 159) — primary; The Star (18 May 2026, 10 May 2026, 14 March 2026, 4 March 2026, 17 March 2026); Malay Mail (24 February 2026, 3 March 2026, 16 March 2026); Free Malaysia Today (24 February 2026, 16 April 2026, 20 April 2026, 21 April 2026); The Edge Markets (3 March 2026); Malaysian Bar Council (14 March 2026 motion; OLY 2026 speech); Pakatan Harapan, Buku Harapan manifesto (March 2018); Singapore Ministry of Law (Edwin Tong COS speech 2020); UK Crown Prosecution Service Framework Agreement; Australia DPP Act 1983; IDEAS Policy Paper No. 34 (April 2021); C4 Center MyGovt Reform Tracker; ConstitutionNet; Tommy Thomas, My Story: Justice in the Wilderness (Gerakbudaya, January 2021).",
+  "confidence": "High on the timeline of public events: Pakatan Harapan 2018 manifesto Promise 15; AG turnover dates (Thomas appointed 4 June 2018, resigned 28 February 2020; Idrus appointed 6 March 2020, extended 3 March 2023; Terrirudin appointed 6 September 2023, elevated to Federal Court 11 November 2024; Dusuki appointed effective 12 November 2024); 27 February 2026 First Reading; 3 March 2026 PSSC referral and named membership; six PSSC working meetings between 3 March 2026 and 18 May 2026; 22 June 2026 scheduled re-tabling. High on the named dissenters: Rafizi-led ten PKR MPs on 24 February 2026 and the Bar Council 14 March 2026 motion are robust across Malay Mail, FMT, Malaysiakini, and The Star. High on the original bill mechanics: seven-year fixed tenure and ten-year minimum litigation experience confirmed across Edge, FMT, and Malay Mail. Medium on PSSC member count — sources vary (9 vs 12); the brief reconciles to 12 voting members (Azalina-as-chair plus 11 named MPs). Medium on whether 'everybody has agreed' is a direct Azalina quote or paraphrase — both formulations appear across coverage. LOW on what the revised bill text actually contains post-PSSC: the report and revised bill are not publicly released; cards do not characterise the compromise substance beyond what the Minister has stated publicly, and label this gap. LOW on any claim about closed-session PSSC negotiations.",
+  "lenses_used": ["Legal", "Governance", "Political"],
+  "lenses_applicable_but_unused": ["Historical", "Regional", "Rights"],
+  "needs_verification": [
+    "PSSC member count as of 18 May 2026: 9 vs 12 — Stage 3 should reconcile against the parliamentary record. Cards use 'twelve members — seven government, four opposition, plus Azalina as chair' per The Edge listing; if the parliamentary record gives a different count, the Political fact card sub needs adjustment.",
+    "Whether 'everybody has agreed' and 'the best compromise we have achieved between the executive and the legislative branches' are direct Azalina quotes or paraphrases. Cards present 'the best compromise' as her phrasing (sourced) but treat it as a claim, not a fact.",
+    "Whether the revised bill text or PSSC report has been published between brief drafting (May 2026) and publication date. If yes, the Governance fact card should be tightened against actual text rather than the Minister's press characterisation.",
+    "Whether Article 145(3) is amended in the revised bill (the original bill split the office but did not appear to amend 145(3)'s prosecutorial-discretion vesting itself). The Legal fact card states the appointment route is unchanged, which the brief supports; whether 145(3) is touched at all is a separate question Stage 3 should chase.",
+    "Whether the Bar Council motion (14 March 2026) was passed or merely debated. Brief says 'debates a motion proposed by Bar President Mohamad Ezri Abdul Wahab' — Stage 3 should confirm the AGM resolution."
+  ],
+  "source_notes": "The single biggest source limitation is that the PSSC report text and the revised bill text are NOT publicly released at brief-drafting (18 May 2026). Every characterisation of the 'best compromise' is therefore mediated through Azalina's press remarks (Star 18 May 2026, Bernama wire). Cards explicitly label this: the Hook sub notes 'The committee's report is not public'; the Governance fact card sub notes 'characterisation is sourced to the Minister'. CONTRADICTIONS handled: (a) PSSC member count 9 vs 12 — the brief reconciles to 12 voting members per The Edge's full listing; cards use 'twelve members — seven government, four opposition, plus Azalina as chair'. (b) AG turnover count 4 vs 5 — cards use 'four Attorneys-General' (Thomas → Idrus → Terrirudin → Dusuki); Idrus's 2023 tenure extension is not a new appointment. (c) Singapore framing — Singapore did NOT separate the offices; it depoliticised appointment via dual-key. The reframe and analogy implicitly treat Singapore as the alternative model (depoliticise without splitting), not as a separation comparator. No card lists Singapore as a 'split' comparator. (d) 'best compromise' framing vs PKR-10 / Bar Council dissent — cards report Azalina's claim as a claim (her phrasing, in quotes) and note that the dissent voices were structurally outside the PSSC. (e) Royalty discipline — the Yang di-Pertuan Agong and the Conference of Rulers are named only as constitutional functionaries under Articles 138 and 145; no card characterises royal preferences or critiques royal discretion. The Conference of Rulers' role in JLSC chair appointment is stated as constitutional fact without value judgement.",
+  "_self_check": {
+    "every_claim_traces_to_source": true,
+    "four_cardinal_sins": "none",
+    "overclaim_check": "We do NOT assert that the bill is a sham or that separation is meaningless. We do NOT assert that the PSSC closed-session negotiations were captured by any party. We do NOT assert any minister or MP acted in bad faith. We do NOT characterise what the bill text contains beyond Azalina's press remarks — explicitly labelled as such. We do NOT claim the bill will pass on 22 June. We do NOT claim Singapore has a 'better' system — the comparator point is structural (depoliticise vs separate) not normative. We do NOT speak for the Rulers, the YDPA, or the Conference of Rulers.",
+    "underclaim_check": "We do not soften the verified findings. Eight years HAVE elapsed since the 2018 manifesto pledge (March 2018 → May 2026). Four Attorneys-General HAVE served. The 24 February 2026 PKR-10 dissent IS sourced and named. The 14 March 2026 Bar Council motion IS sourced. The Article 145(1) appointment route IS unchanged in the bill as originally tabled (per Malay Mail 3 March 2026 explainer and Bar Council motion). The 'best compromise' framing IS Azalina's. None of these are softened to 'critics say' or 'reportedly'.",
+    "misleading_framing_check": "Hook plants the gap (separation announced; appointment route unchanged) without overclaiming what the unreleased bill contains. Legal fact card establishes what Article 145 currently does BEFORE the Governance card explains what the appointment route looks like under the bill — preventing a reader from forming a 'this is a sham' impression. Political fact card reports the PKR-10 demand and their PSSC exclusion as facts, without imputing motive to the chair. Reframe restructures the question (whether vs who) — does not add new evidence. Analogy is a referee-and-manager image; no depiction of religion, race, or royalty. View ties the eight-year timeline, the six committee meetings, and the unchanged appointment route as the editorial spine. The Singapore comparator is implicit not explicit in cards (the brief notes some Malaysian commentary erroneously calls Singapore a 'split' model — we avoid that).",
+    "unverified_detail_check": "Every specific traces to a primary or named-authoritative source. Article 145 text — Federal Constitution consolidated. 2018 manifesto Promise 15 — Buku Harapan. AG turnover dates — Wikipedia (citing Star/Edge/Bernama appointments), Malay Mail 11 November 2024 (Dusuki appointment). 24 February 2026 PKR-10 — Malay Mail and FMT direct coverage. 3 March 2026 PSSC referral and named composition — Edge Markets. 14 March 2026 Bar Council motion — Star and FMT direct coverage. 18 May 2026 sixth meeting and 22 June 2026 re-tabling — Star direct coverage. Six PSSC working meetings — Star 17 March 2026 reports the schedule (9, 16, 27 April; 4 May; plus 18 May = five between mid-March and 18 May; total six counts the 3 March referral session per brief).",
+    "3R_special_caution": "Royalty MEDIUM (per brief): The Yang di-Pertuan Agong appears as the constitutional appointer under Articles 138 and 145 — described as function only. The Conference of Rulers appears once, as the consultative body for JLSC chair appointment under the unchanged constitutional architecture — described as function only. No card characterises what the Rulers want, prefer, or have said. No card critiques royal discretion. No card uses the Agong's role as a point of editorial pressure. Religion LOW-MEDIUM: Article 145(3) already excludes Syariah-court proceedings from AG discretion. No religious-charged case (Zakir Naik archive, etc.) is named. Race LOW: not a racial story; not foregrounded.",
+    "process_not_people_check": "All sharp claims target the structural mechanic (Article 145 appointment route, JLSC composition, PSSC membership, the 22 June 2026 re-tabling date) or institutional facts (the PKR-10 dissent, the Bar Council motion, the eight-year delay, the four-AG turnover). Azalina is named only for what she said in her official capacity as Minister in the PM's Department (Law and Institutional Reform) — her 'best compromise' phrasing is reported as her phrasing, in quotes. Rafizi Ramli is named as the lead voice of the PKR-10 dissent — sourced to the 24 February 2026 letter. No person — including Azalina, Rafizi, Anwar, Dusuki, Thomas, Najib, or any AG — is characterised as bad-faith.",
+    "anger_anxiety_check": "Dominant emotion target: anxiety-of-precedent. The hook plants 'the route the new prosecutor walks to office may be the route the old one walked' — a specific, structural anxiety, not sadness and not anger-at-individual. The view tightens it to three specific numbers (eight years, six meetings, zero changes) — anger-at-process register. The reframe is structural: 'who picks the prosecutor', not 'who is corrupt'. No card stages individual villainy. The anger is at institutional delay across multiple governments since 2018 — explicitly non-partisan (PH started it, PN sat on it, Madani is now finishing the version that the PKR-10 from inside the coalition flagged as too weak)."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "High confidence on the timeline of public events, the named dissenters (PKR-10, Bar Council), the AG turnover record, and the Article 145 statutory text — multi-outlet primary-source verification. Strong on the structural editorial spine (separation announced; appointment route unchanged) which the brief, the Bar Council motion text, and the Rafizi-led letter all independently support. Capped at 86 (not higher) because: (a) the PSSC report and revised bill text are NOT publicly released, so the cards' characterisation of what the bill leaves unchanged is sourced through the Minister's press remarks plus the Bar Council's reading of the original bill — cards explicitly label this limitation, but it is a real ceiling on confidence; (b) PSSC member count (9 vs 12) has a remaining ambiguity the cards handle by using The Edge's full listing; (c) whether 'everybody has agreed' is a direct quote or paraphrase is not yet pinned to a single transcript; (d) whether Article 145(3) itself is amended in the revised bill is a separate Stage 3 question; (e) Royalty discipline required care — the cards mention the YDPA and the Conference of Rulers only as constitutional functionaries, with no characterisation of royal preferences, which is the correct posture for the brief's MEDIUM royalty risk."
+}
