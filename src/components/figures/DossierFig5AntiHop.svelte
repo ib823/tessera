@@ -23,8 +23,8 @@
 <div class="fig5">
   <img
     class="fig5__img"
-    src="/dossiers/D001/fig-5-bg.png"
-    alt="Continuous-line illustration. Left: closed door with three burgundy strokes near the handle. Right: open archway with no door. A contemplative figure in a suit stands to the right of the arch, hand gesturing palm-up toward it."
+    src="/dossiers/D001/fig-5-bg.jpg"
+    alt="Continuous-line illustration. Left: a single figure in a suit standing in front of a closed door with a padlock, three burgundy strokes flaring around the lock. Caption beneath: INDIVIDUAL ROUTE. Right: an open archway with three figures in suits walking through it together. Caption beneath: COORDINATED PARTY-LEVEL ROUTE."
     loading="lazy"
     decoding="async"
     width="1200"
@@ -35,20 +35,21 @@
     <div class="fig5__caption fig5__caption--left">
       <p class="fig5__kind">INDIVIDUAL DEFECTION</p>
       <p class="fig5__verdict">Blocked.</p>
-      <p class="fig5__cite">Article 49A(1)(a)–(b), Federal Constitution.</p>
+      <p class="fig5__cite">Article 49A(1)(a)-(b), Federal Constitution.</p>
       <p class="fig5__detail">
-        Inserted 2022. Triggers a casual vacancy when an MP resigns from or
+        Inserted in 2022. Triggers a casual vacancy when an MP resigns from or
         ceases to be a member of the party they were elected under.
       </p>
     </div>
 
     <div class="fig5__caption fig5__caption--right">
-      <p class="fig5__kind">PARTY-LEVEL EXIT</p>
-      <p class="fig5__verdict">Allowed.</p>
+      <p class="fig5__kind">COORDINATED PARTY-LEVEL MOVE</p>
+      <p class="fig5__verdict">Left open.</p>
       <p class="fig5__cite">Article 49A does not bind the party as a corporate body.</p>
       <p class="fig5__detail">
-        The resignation route is closed. The party-vote, dissolution, and
-        expulsion routes were deliberately left open.
+        The structural incentive to act through a coordinated party-level move
+        has therefore increased, not decreased. The resignation, dissolution,
+        and expulsion routes were deliberately left open.
       </p>
     </div>
   </div>
