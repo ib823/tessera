@@ -127,6 +127,7 @@ export interface DossierTimelineEvent {
   label: string;
   founder: string;
   outcome: string;
+  note?: string;
 }
 
 export interface DossierTimelineSection extends DossierSectionBase {
@@ -181,6 +182,7 @@ export interface DossierFurtherReadingItem {
   category: string;
   title: string;
   note: string;
+  url?: string;
 }
 
 export interface DossierFurtherReadingSection extends DossierSectionBase {

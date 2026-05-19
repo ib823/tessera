@@ -10,7 +10,7 @@
   prose for sections that carry a `figure` ref; figure id maps to
   the right SVG component via FIGURE_COMPONENTS.
 
-  Editorial note: fig-7 (international comparisons) does NOT have
+  Editorial note: fig-6 (international comparisons) does NOT have
   a textual anchor section in the D001 content — it sits as a
   freestanding comparative figure at the end of Part Two, after
   the Article 49A quote and before the Part Three chapter break.
@@ -48,32 +48,32 @@
 
   // Figure components
   import DossierFigCover from './figures/DossierFigCover.svelte';
-  import DossierFig2VoterBars from './figures/DossierFig2VoterBars.svelte';
-  import DossierFig3Sarawak from './figures/DossierFig3Sarawak.svelte';
-  import DossierFig4Shapley from './figures/DossierFig4Shapley.svelte';
-  import DossierFig5Brokerage from './figures/DossierFig5Brokerage.svelte';
-  import DossierFig6AntiHop from './figures/DossierFig6AntiHop.svelte';
+  import DossierFig1Shapley from './figures/DossierFig1Shapley.svelte';
+  import DossierFig3Brokerage from './figures/DossierFig3Brokerage.svelte';
+  import DossierFig4VoterBars from './figures/DossierFig4VoterBars.svelte';
+  import DossierFig5AntiHop from './figures/DossierFig5AntiHop.svelte';
+  import DossierFig7Sarawak from './figures/DossierFig7Sarawak.svelte';
 
   // Map figure-id → Svelte SVG component (for inline render & lightbox).
-  // fig-1 is rendered by DossierTimeline directly (the timeline IS fig-1).
-  // fig-7 is rendered by DossierTable using FIG7_DATA below.
+  // fig-2 is rendered by DossierTimeline directly (the timeline IS fig-2).
+  // fig-6 is rendered by DossierTable using FIG6_DATA below.
   const FIGURE_COMPONENTS: Record<string, any> = {
     'fig-cover': DossierFigCover,
-    'fig-2': DossierFig2VoterBars,
-    'fig-3': DossierFig3Sarawak,
-    'fig-4': DossierFig4Shapley,
-    'fig-5': DossierFig5Brokerage,
-    'fig-6': DossierFig6AntiHop,
+    'fig-1': DossierFig1Shapley,
+    'fig-3': DossierFig3Brokerage,
+    'fig-4': DossierFig4VoterBars,
+    'fig-5': DossierFig5AntiHop,
+    'fig-7': DossierFig7Sarawak,
   };
 
-  const FIG7_HEADERS = [
+  const FIG6_HEADERS = [
     'Country',
     'Electoral threshold',
     'Public party funding',
     'Anti-hop rule',
     'New-party launches',
   ];
-  const FIG7_ROWS: string[][] = [
+  const FIG6_ROWS: string[][] = [
     ['Malaysia', 'None (FPTP)', 'None', 'Individual-only (2022)', 'High — every cycle'],
     ['Germany', '5% national', 'Yes, vote-share tied', 'Floor-crossing free', 'Rare — Greens 1980, AfD 2013'],
     ['United Kingdom', 'None (FPTP)', '"Short money" — opposition only', 'Floor-crossing free', 'Rare — SDP 1981, Reform 2018+'],
@@ -92,6 +92,13 @@
 
   function figureById(id: string): FigureRecord | null {
     return dossier.figures.find((f) => f.id === id) ?? null;
+  }
+
+  // Split a body string on blank lines into discrete paragraphs.
+  // Enables rhythm-varied prose — short hammer sentences alongside
+  // longer argumentative blocks — without changing the data shape.
+  function splitParagraphs(body: string): string[] {
+    return body.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
   }
 
   /* ---------------------- counted-section index --------------------- */
@@ -349,7 +356,9 @@
             {#if section.t === 'fact'}<span class="lens">{section.lens}</span>{/if}
             <h2 class="section__title">{section.title}</h2>
             <div class="section__body drop-cap-allowed">
-              <p>{section.body}</p>
+              {#each splitParagraphs(section.body) as para}
+                <p>{para}</p>
+              {/each}
             </div>
 
             {#if section.citations && section.citations.length}
@@ -372,7 +381,7 @@
             {/if}
           </section>
 
-        <!-- TIMELINE — renders fig-1 inline as part of the section markup. -->
+        <!-- TIMELINE — renders fig-2 inline as part of the section markup. -->
         {:else if section.t === 'timeline'}
           <div data-section-anchor={section.id}>
             <DossierTimeline section={section} n={n} />
@@ -410,7 +419,9 @@
             {/if}
 
             <div class="section__body">
-              <p>{section.body}</p>
+              {#each splitParagraphs(section.body) as para}
+                <p>{para}</p>
+              {/each}
             </div>
 
             {#if section.citations && section.citations.length}
@@ -430,30 +441,30 @@
           </div>
 
           <!-- ────────────────────────────────────────────────────────
-               fig-7 (international comparison) has no textual anchor
+               fig-6 (international comparison) has no textual anchor
                in the editorial content. Inserted here as a freestanding
                comparative reference, immediately after the Article 49A
                quote — thematic adjacency to the legal-context block.
                If the editorial layout changes, move this insert too.
                ──────────────────────────────────────────────────────── -->
           {#if section.id === 'article-49a-text'}
-            {@const fig7 = figureById('fig-7')}
-            {#if fig7}
-              <figure class="figure" id="fig-7">
+            {@const fig6 = figureById('fig-6')}
+            {#if fig6}
+              <figure class="figure" id="fig-6">
                 <div class="figure__frame" style:cursor="default" style:padding="20px 22px">
-                  <p class="section__kind" style:margin-bottom="6px">Figure 7 · International comparison</p>
+                  <p class="section__kind" style:margin-bottom="6px">Figure 6 · International comparison</p>
                   <DossierTable
-                    headers={FIG7_HEADERS}
-                    rows={FIG7_ROWS}
-                    caption={fig7.alt}
+                    headers={FIG6_HEADERS}
+                    rows={FIG6_ROWS}
+                    caption={fig6.alt}
                   />
                 </div>
                 <figcaption class="figure__caption">
-                  <strong>{fig7.title}</strong>
-                  {fig7.caption}
+                  <strong>{fig6.title}</strong>
+                  {fig6.caption}
                 </figcaption>
-                {#if fig7.sourceLine}
-                  <p class="figure__source">{fig7.sourceLine}</p>
+                {#if fig6.sourceLine}
+                  <p class="figure__source">{fig6.sourceLine}</p>
                 {/if}
               </figure>
             {/if}
@@ -500,7 +511,13 @@
                 <ul class="further-reading__list">
                   {#each section.items.filter((i) => i.category === cat) as item}
                     <li>
-                      <div class="further-reading__title">{item.title}</div>
+                      <div class="further-reading__title">
+                        {#if item.url}
+                          <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                        {:else}
+                          {item.title}
+                        {/if}
+                      </div>
                       <div class="further-reading__note">{item.note}</div>
                     </li>
                   {/each}

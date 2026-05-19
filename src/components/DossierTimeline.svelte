@@ -65,6 +65,9 @@
             <div class="timeline__founder">{ev.founder}</div>
           {/if}
           <div class="timeline__outcome">{ev.outcome}</div>
+          {#if ev.note}
+            <div class="timeline__note">{ev.note}</div>
+          {/if}
         </div>
       </li>
     {/each}
