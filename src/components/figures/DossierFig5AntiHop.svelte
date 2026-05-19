@@ -1,170 +1,128 @@
 <!--
-  DossierFig6AntiHop.svelte
+  DossierFig5AntiHop.svelte
   ---------------------------------------------------------------
-  Figure 6 — The Article 49A anti-hopping loophole.
+  Figure 5 — The Article 49A anti-hopping loophole.
 
-  Two-panel comparison.
-  Left:  individual defection — blocked. MP walking between parties
-         is intercepted by a burgundy slash. Seat becomes vacant.
-  Right: party-level exit — allowed. A whole party with five members
-         moves cleanly to a new coalition. Seats retained.
+  Renders the canonical T4A continuous-line illustration as the
+  figure body, with the two legal-text caption blocks overlaid as
+  HTML beneath the image. Two-column layout maps to the metaphor
+  in the illustration: closed bolted door on the left (individual
+  defection blocked) versus open arch on the right (party-level
+  exit allowed).
 
-  The visual makes the loophole legible in a glance. The legal text
-  (Article 49A) is in the quote section directly preceding this
-  figure in the dossier.
+  The illustration carries the metaphor; the captions carry the
+  legal precision. Text lives outside the PNG so screen readers
+  can reach it, dark-mode and future-translation work cleanly,
+  and the layout can adapt to narrow viewports.
 -->
 <script lang="ts">
-  // Stick figure helper — a small SVG silhouette
-  // (head + shoulders + body — single colour, scaled by cx,cy,h).
+  // No props — the figure record on the dossier holds title / alt /
+  // caption; this component renders the visual body only.
 </script>
 
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img"
-  aria-label="Two-panel diagram. Left: individual MP defection between parties is blocked by Article 49A — seat becomes vacant. Right: party-level exit to a new coalition is allowed — seats retained."
->
-  <rect width="1200" height="630" fill="#0f0f23" />
+<div class="fig5">
+  <img
+    class="fig5__img"
+    src="/dossiers/D001/fig-5-bg.png"
+    alt="Continuous-line illustration. Left: closed door with three burgundy strokes near the handle. Right: open archway with no door. A contemplative figure in a suit stands to the right of the arch, hand gesturing palm-up toward it."
+    loading="lazy"
+    decoding="async"
+    width="1200"
+    height="630"
+  />
 
-  <!-- Vertical divider between panels -->
-  <line x1="600" y1="60" x2="600" y2="570"
-        stroke="#9B2C2C" stroke-width="1" stroke-dasharray="2 6" />
+  <div class="fig5__captions">
+    <div class="fig5__caption fig5__caption--left">
+      <p class="fig5__kind">INDIVIDUAL DEFECTION</p>
+      <p class="fig5__verdict">Blocked.</p>
+      <p class="fig5__cite">Article 49A(1)(a)–(b), Federal Constitution.</p>
+      <p class="fig5__detail">
+        Inserted 2022. Triggers a casual vacancy when an MP resigns from or
+        ceases to be a member of the party they were elected under.
+      </p>
+    </div>
 
-  <!-- ============================ LEFT PANEL ============================ -->
-  <g>
-    <text x="60" y="60"
-          font-family="Inter, system-ui, sans-serif" font-size="10"
-          font-weight="600" letter-spacing="0.22em" fill="#9B2C2C">
-      INDIVIDUAL DEFECTION
-    </text>
-    <text x="60" y="92"
-          font-family="Spectral, Georgia, serif" font-style="italic"
-          font-size="26" fill="#F4F1EB">
-      Blocked.
-    </text>
+    <div class="fig5__caption fig5__caption--right">
+      <p class="fig5__kind">PARTY-LEVEL EXIT</p>
+      <p class="fig5__verdict">Allowed.</p>
+      <p class="fig5__cite">Article 49A does not bind the party as a corporate body.</p>
+      <p class="fig5__detail">
+        The resignation route is closed. The party-vote, dissolution, and
+        expulsion routes were deliberately left open.
+      </p>
+    </div>
+  </div>
+</div>
 
-    <!-- Party A box -->
-    <rect x="80" y="220" width="160" height="140"
-          fill="none" stroke="#F4F1EB" stroke-width="1.5" opacity="0.7" />
-    <text x="160" y="200" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif" font-size="13"
-          fill="#F4F1EB" letter-spacing="0.04em">Party A</text>
+<style>
+  .fig5 {
+    display: block;
+    width: 100%;
+  }
 
-    <!-- Party B box -->
-    <rect x="360" y="220" width="160" height="140"
-          fill="none" stroke="#F4F1EB" stroke-width="1.5" opacity="0.7" />
-    <text x="440" y="200" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif" font-size="13"
-          fill="#F4F1EB" letter-spacing="0.04em">Party B</text>
+  .fig5__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    background: #0f0f23;
+  }
 
-    <!-- MP walking from Party A toward Party B -->
-    <g transform="translate(290, 268)" stroke="#F4F1EB" stroke-width="1.6"
-       fill="none" stroke-linecap="round">
-      <circle cx="0" cy="-22" r="9" />
-      <line x1="0" y1="-13" x2="0" y2="14" />
-      <line x1="0" y1="-3" x2="-12" y2="6" />
-      <line x1="0" y1="-3" x2="12" y2="6" />
-      <line x1="0" y1="14" x2="-8" y2="34" />
-      <line x1="0" y1="14" x2="10" y2="34" />
-    </g>
-    <text x="290" y="328" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif" font-size="10"
-          fill="#9CA3AF" letter-spacing="0.16em">MP</text>
+  .fig5__captions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    padding: 24px 22px 4px;
+    border-top: 1px dashed rgba(155, 44, 44, 0.55);
+    margin-top: 6px;
+  }
 
-    <!-- Arrow A → B -->
-    <line x1="250" y1="290" x2="350" y2="290"
-          stroke="#F4F1EB" stroke-width="1.4" opacity="0.5"
-          stroke-dasharray="3 5" />
+  .fig5__caption {
+    min-width: 0;
+  }
 
-    <!-- Burgundy NO circle with slash -->
-    <g transform="translate(300, 290)">
-      <circle cx="0" cy="0" r="38" fill="none" stroke="#9B2C2C" stroke-width="3" />
-      <line x1="-28" y1="-28" x2="28" y2="28" stroke="#9B2C2C" stroke-width="3" />
-    </g>
+  .fig5__kind {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: var(--accent);
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
 
-    <!-- Caption -->
-    <g font-family="Inter, system-ui, sans-serif" fill="#F4F1EB">
-      <text x="60" y="450" font-size="14" font-weight="500" letter-spacing="0.04em">
-        Seat becomes vacant.
-      </text>
-      <text x="60" y="476" font-size="13" fill="#9CA3AF" letter-spacing="0.02em">
-        Article 49A(1)(a)–(b), Federal Constitution.
-      </text>
-      <text x="60" y="514" font-size="12" fill="#9CA3AF" font-style="italic"
-            letter-spacing="0.02em">
-        Inserted 2022. Triggers a casual vacancy when an MP resigns from
-      </text>
-      <text x="60" y="532" font-size="12" fill="#9CA3AF" font-style="italic"
-            letter-spacing="0.02em">
-        or ceases to be a member of the party they were elected under.
-      </text>
-    </g>
-  </g>
+  .fig5__verdict {
+    font-family: var(--font-body, var(--font-display));
+    font-style: italic;
+    font-size: 24px;
+    color: var(--body);
+    margin: 0 0 10px;
+    line-height: 1.1;
+  }
 
-  <!-- ============================ RIGHT PANEL ============================ -->
-  <g>
-    <text x="660" y="60"
-          font-family="Inter, system-ui, sans-serif" font-size="10"
-          font-weight="600" letter-spacing="0.22em" fill="#9B2C2C">
-      PARTY-LEVEL EXIT
-    </text>
-    <text x="660" y="92"
-          font-family="Spectral, Georgia, serif" font-style="italic"
-          font-size="26" fill="#F4F1EB">
-      Allowed.
-    </text>
+  .fig5__cite {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    color: var(--body);
+    letter-spacing: 0.02em;
+    margin: 0 0 8px;
+    line-height: 1.45;
+  }
 
-    <!-- Party A box with five small figures inside -->
-    <rect x="660" y="200" width="200" height="180"
-          fill="rgba(155, 44, 44, 0.10)" stroke="#9B2C2C" stroke-width="1.5" />
-    <text x="760" y="186" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif" font-size="13"
-          fill="#F4F1EB" letter-spacing="0.04em">Party A (whole)</text>
+  .fig5__detail {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-style: italic;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    margin: 0;
+    line-height: 1.5;
+  }
 
-    {#each [0,1,2,3,4] as i}
-      {@const x = 685 + (i % 3) * 60}
-      {@const y = 240 + Math.floor(i / 3) * 70}
-      <g transform="translate({x}, {y})" stroke="#F4F1EB" stroke-width="1.4"
-         fill="none" stroke-linecap="round" opacity="0.92">
-        <circle cx="0" cy="-12" r="7" />
-        <line x1="0" y1="-5" x2="0" y2="14" />
-        <line x1="0" y1="0" x2="-8" y2="6" />
-        <line x1="0" y1="0" x2="8" y2="6" />
-        <line x1="0" y1="14" x2="-6" y2="28" />
-        <line x1="0" y1="14" x2="7" y2="28" />
-      </g>
-    {/each}
-
-    <!-- Big arrow Party A → New Coalition -->
-    <g>
-      <line x1="870" y1="290" x2="1000" y2="290"
-            stroke="#9B2C2C" stroke-width="2.5" />
-      <path d="M 990 282 L 1010 290 L 990 298 Z" fill="#9B2C2C" />
-    </g>
-
-    <!-- New Coalition box -->
-    <rect x="1020" y="240" width="140" height="100"
-          fill="none" stroke="#9B2C2C" stroke-width="1.5" stroke-dasharray="2 4" />
-    <text x="1090" y="232" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif" font-size="13"
-          fill="#9B2C2C" letter-spacing="0.04em">New Coalition</text>
-    <text x="1090" y="296" text-anchor="middle"
-          font-family="Spectral, Georgia, serif" font-style="italic"
-          font-size="14" fill="#F4F1EB">en bloc</text>
-
-    <!-- Caption -->
-    <g font-family="Inter, system-ui, sans-serif" fill="#F4F1EB">
-      <text x="660" y="450" font-size="14" font-weight="500" letter-spacing="0.04em">
-        Seats retained.
-      </text>
-      <text x="660" y="476" font-size="13" fill="#9CA3AF" letter-spacing="0.02em">
-        Article 49A does not bind the party as a corporate body.
-      </text>
-      <text x="660" y="514" font-size="12" fill="#9CA3AF" font-style="italic"
-            letter-spacing="0.02em">
-        The resignation route is closed. The party-vote, dissolution,
-      </text>
-      <text x="660" y="532" font-size="12" fill="#9CA3AF" font-style="italic"
-            letter-spacing="0.02em">
-        and expulsion routes were deliberately left open.
-      </text>
-    </g>
-  </g>
-</svg>
+  @media (max-width: 640px) {
+    .fig5__captions {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+</style>

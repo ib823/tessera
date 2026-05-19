@@ -47,18 +47,23 @@
   import DossierTable from './DossierTable.svelte';
 
   // Figure components
-  import DossierFigCover from './figures/DossierFigCover.svelte';
+  // fig-cover used to have a placeholder Svelte (DossierFigCover); it's
+  // removed now that the real PNG is in place and routed via <img>.
   import DossierFig1Shapley from './figures/DossierFig1Shapley.svelte';
   import DossierFig3Brokerage from './figures/DossierFig3Brokerage.svelte';
   import DossierFig4VoterBars from './figures/DossierFig4VoterBars.svelte';
   import DossierFig5AntiHop from './figures/DossierFig5AntiHop.svelte';
   import DossierFig7Sarawak from './figures/DossierFig7Sarawak.svelte';
 
-  // Map figure-id → Svelte SVG component (for inline render & lightbox).
+  // Map figure-id → Svelte component (for inline render & lightbox).
+  // When a figure has both a registered component AND a raster src, the
+  // component wins — components that load their own raster (e.g. fig-5
+  // which mounts /dossiers/D001/fig-5-bg.png internally and overlays
+  // captions) need to render the wrapper, not the bare <img>.
   // fig-2 is rendered by DossierTimeline directly (the timeline IS fig-2).
   // fig-6 is rendered by DossierTable using FIG6_DATA below.
+  // fig-cover has no entry — it routes to the raster <img> branch.
   const FIGURE_COMPONENTS: Record<string, any> = {
-    'fig-cover': DossierFigCover,
     'fig-1': DossierFig1Shapley,
     'fig-3': DossierFig3Brokerage,
     'fig-4': DossierFig4VoterBars,
@@ -289,9 +294,11 @@
               {#if fig}
                 <div style:margin-top="56px">
                   <DossierFigure figure={fig} caption={fig.caption} sourceLine={fig.sourceLine} onZoom={openLightbox}>
-                    {@const isRaster = /\.(png|jpe?g|webp|avif|gif)$/i.test(fig.src ?? '')}
                     {@const Comp = FIGURE_COMPONENTS[fig.id]}
-                    {#if isRaster && fig.src}
+                    {@const isRaster = /\.(png|jpe?g|webp|avif|gif)$/i.test(fig.src ?? '')}
+                    {#if Comp}
+                      <Comp />
+                    {:else if isRaster && fig.src}
                       <img
                         src={fig.src}
                         alt={fig.alt}
@@ -303,8 +310,6 @@
                         style:height="auto"
                         style:display="block"
                       />
-                    {:else if Comp}
-                      <Comp />
                     {/if}
                   </DossierFigure>
                 </div>
@@ -578,10 +583,12 @@
   open={lightboxOpen}
   onClose={closeLightbox}
 >
-  {#if lightboxFigure && FIGURE_COMPONENTS[lightboxFigure.id]}
-    {@const isRasterLB = /\.(png|jpe?g|webp|avif|gif)$/i.test(lightboxFigure.src ?? '')}
+  {#if lightboxFigure}
     {@const Comp = FIGURE_COMPONENTS[lightboxFigure.id]}
-    {#if isRasterLB && lightboxFigure.src}
+    {@const isRasterLB = /\.(png|jpe?g|webp|avif|gif)$/i.test(lightboxFigure.src ?? '')}
+    {#if Comp}
+      <Comp />
+    {:else if isRasterLB && lightboxFigure.src}
       <img
         src={lightboxFigure.src}
         alt={lightboxFigure.alt}
@@ -593,8 +600,6 @@
         style:object-fit="contain"
         style:display="block"
       />
-    {:else}
-      <Comp />
     {/if}
   {/if}
 </DossierLightbox>
