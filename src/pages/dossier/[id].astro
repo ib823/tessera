@@ -42,6 +42,9 @@ if (!dossier) {
 const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://thefourthangle.pages.dev';
 const canonical = `${site}/dossier/${dossier.id}`;
 const ogImage = `${site}${dossier.ogImage}`;
+const ogImageSquare = dossier.ogImageSquare ? `${site}${dossier.ogImageSquare}` : null;
+const ogImagePortrait = dossier.ogImagePortrait ? `${site}${dossier.ogImagePortrait}` : null;
+const ogImageStory = dossier.ogImageStory ? `${site}${dossier.ogImageStory}` : null;
 const description = dossier.subtitle;
 const publishedISO = new Date(dossier.sourceDate).toISOString();
 
@@ -111,6 +114,30 @@ const jsonLd = {
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={`Dossier ${dossier.id} cover: ${dossier.title}`} />
+    {ogImageSquare && (
+      <>
+        <meta property="og:image" content={ogImageSquare} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta property="og:image:alt" content={`Dossier ${dossier.id} cover (square)`} />
+      </>
+    )}
+    {ogImagePortrait && (
+      <>
+        <meta property="og:image" content={ogImagePortrait} />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="1350" />
+        <meta property="og:image:alt" content={`Dossier ${dossier.id} cover (portrait)`} />
+      </>
+    )}
+    {ogImageStory && (
+      <>
+        <meta property="og:image" content={ogImageStory} />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="1920" />
+        <meta property="og:image:alt" content={`Dossier ${dossier.id} cover (story)`} />
+      </>
+    )}
     <meta property="og:locale" content="en_MY" />
     <meta property="article:published_time" content={publishedISO} />
     <meta property="article:section" content={dossier.primaryLens} />

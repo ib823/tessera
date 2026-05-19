@@ -231,6 +231,9 @@ export interface Dossier {
   status: DossierStatus;
   primaryLens: DossierLens;
   ogImage: string; // '/dossiers/D001/og-1200x630.png'
+  ogImageSquare?: string; // '/dossiers/D001/og-square-1200.png' (1:1, chat thumbs)
+  ogImagePortrait?: string; // '/dossiers/D001/og-portrait-1080x1350.png' (4:5, IG feed)
+  ogImageStory?: string; // '/dossiers/D001/og-story-1080x1920.png' (9:16, IG/TikTok story)
   accentColor: string; // hex — falls back to designTokens.accent
   stageScores: DossierStageScores;
   stageScoresNote?: string;
