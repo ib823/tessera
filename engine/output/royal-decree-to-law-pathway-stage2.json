@@ -1,0 +1,87 @@
+{
+  "bias_score": 85,
+  "political_lean_estimate": 0.8,
+  "ethnic_framing_estimate": 0.9,
+  "religious_sensitivity_estimate": 0.8,
+  "narrative_framing_estimate": 0.9,
+  "geographic_bias_estimate": 0.4,
+  "economic_framing_estimate": 0.5,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [
+    {
+      "quote": "The architecture is not arrangement — it is design, and on this case the design held.",
+      "why_biased": "Applauds a right-wing, PAS/UMNO-led push for detention without trial and a royal decree banning an industry as a victory for constitutional procedure, demonstrating a strong conservative/establishment bias that validates authoritarian outcomes if they follow procedural steps.",
+      "fix": "Remove the editorial praise. State the political and legal outcomes neutrally without characterizing them as a triumph of constitutional design."
+    }
+  ],
+  "racial_flags": [
+    {
+      "quote": "The Sultan of Selangor's pig-farming ban took effect not on his decree date but on 12 February 2026...",
+      "why_biased": "The text discusses a policy explicitly targeting a minority-dominated industry without once mentioning the affected community's views, the economic destruction of Chinese-owned farms, or the racial friction driving the ban. The affected minority is entirely stripped of agency.",
+      "fix": "Explicitly note that the ban targets an industry primarily operated by and serving the Chinese/non-Muslim minority and was driven by Malay-majority objections in Tanjong Sepat and Bukit Tagar."
+    }
+  ],
+  "religious_flags": [
+    {
+      "quote": "The Selangor pig-farming sequence honoured both halves...",
+      "why_biased": "Treats the total eradication of an agricultural sector to appease majority religious sensitivities as an unquestioned, harmonious good, ignoring the severe marginalization of non-Muslim rights.",
+      "fix": "Address the tension between upholding majority religious sensitivities and protecting minority economic and cultural practices."
+    }
+  ],
+  "geographic_flags": [
+    {
+      "quote": "The Selangor case ran the route end to end.",
+      "why_biased": "While appropriate for a Selangor-focused card, it assumes the Selangor precedent of royal intervention into state economic planning is a neat template, without considering how this affects federal food security or other states.",
+      "fix": "Note the broader implications for federal food supply chains since Selangor will now rely 100% on imports."
+    }
+  ],
+  "economic_flags": [
+    {
+      "quote": "...revised on 10 February 2026 to a total state ban with pork imports as the alternative;",
+      "why_biased": "Gloss over the massive economic destruction of local businesses and the supply chain impact of forcing a state to rely entirely on imports for a staple protein.",
+      "fix": "Include the economic cost to the Tanjong Sepat farmers whose operations and investments are being forcibly shut down."
+    }
+  ],
+  "gender_flags": [],
+  "omission_flags": [
+    "The text completely omits the perspective, economic impact, or political voice of the pig farmers and the non-Muslim communities affected by the ban, reducing them to passive subjects of state regulation.",
+    "The text fails to mention the vocal opposition by DAP/Pakatan Harapan state representatives (such as Wong Siew Ki and Ronnie Liu) who defended the farmers, which was the actual catalyst for the PAS/UMNO 'Daulat Tuanku' rally."
+  ],
+  "evasion_flags": [
+    "The text uses a sanitized, procedural tone to describe Ibrahim Ali's proposal, calling it a 'board-vote item' while burying the fact that it is an extremely draconian call for detention without trial reminiscent of the repealed Internal Security Act (ISA).",
+    "The text evades the question of whether a complete state-wide ban on pig farming via royal decree contradicts fundamental liberties or federal jurisdiction, treating the Exco adoption as the end of the legal discussion."
+  ],
+  "shoe_test_failures": [
+    "If a non-Muslim NGO proposed 2-year preventive detention without trial for insulting a minority religion, the analysis would not sanitize it as merely a 'board-vote item properly addressed to Parliament'."
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "quote": "Think of it like a corporate chairman whose signature alone runs the day-to-day under the company's charter...",
+      "why": "The Federal Constitution (Article 71 and Eighth Schedule) explicitly requires the Ruler to act 'on the advice' of the Executive Council. The assertion that a constitutional monarch runs the day-to-day by 'signature alone' legally misrepresents Malaysian constitutional law.",
+      "fix": "Adjust the analogy to reflect the mandatory requirement for executive advice; the Sultan acts on the advice of the Exco, not by unilateral signature."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "The Akta Kedaulatan Raja proposal would sit within this comparator landscape rather than create a category Malaysian law currently lacks.",
+      "why": "The proposed Akta includes preventive detention without trial for up to two years. The cited international comparators (Thailand s.112, Spain, Denmark) are penal codes that require criminal trials. A law allowing detention without trial for speech is an extraordinary category that Malaysia *does* lack since the ISA's repeal, making this comparison deeply false.",
+      "fix": "Explicitly distinguish between standard penal lèse-majesté laws and preventive detention without trial, noting that the latter bypasses the judicial system entirely and represents a return to ISA-style powers."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "The architecture is not arrangement — it is design, and on this case the design held.",
+      "why": "Characterizing a racialized total ban on a minority agricultural sector and the proposal of an authoritarian detention law as the triumphant holding of constitutional 'design' applies a thick coat of establishment bias to highly contentious, rights-infringing developments.",
+      "fix": "Delete the editorializing. Present the legal mechanics without praising them as an elegant constitutional victory."
+    }
+  ],
+  "verification_log": [
+    {"claim": "The Sultan of Selangor's pig-farming ban took effect not on his decree date but on 12 February 2026, when the State Executive Council formally adopted it.", "status": "VERIFIED", "primary_source": "CodeBlue (12 Feb 2026) quoting MB Amirudin Shari announcing the MMKN formal decision to cease licence issuance."},
+    {"claim": "Sultan Sharafuddin issued three escalating decrees from 12 January to 7 May 2026.", "status": "VERIFIED", "primary_source": "Scoop (12 Jan 2026), CodeBlue (10 Feb 2026), The Star (8 May 2026 citing 7 May Royal Office statement)."},
+    {"claim": "On 16 May 2026 about 5,000 attended a Daulat Tuanku rally in Shah Alam.", "status": "VERIFIED", "primary_source": "RTM News / Berita RTM (16 May 2026) '5,000 sertai himpunan Daulat Tuanku'."},
+    {"claim": "PUTRA's Ibrahim Ali publicly proposed an Akta Kedaulatan Raja. Reported provisions include detention without warrant for up to two weeks and preventive detention up to two years, plus a Royal Sovereignty Council.", "status": "VERIFIED", "primary_source": "Harakahdaily (17 May 2026) and Dhomir (13 May 2026) publishing Ibrahim Ali's exact press release detailing '14 hari tanpa waran mahkamah' and 'tahan selama 2 tahun tanpa bicara'."},
+    {"claim": "The Centre for Independent Journalism recorded 233 arrests and investigations under expression-restricting laws in 2025, up from 189 in 2024.", "status": "VERIFIED", "primary_source": "CIJ 'Report on the State of Freedom of Expression in Malaysia 2025' (12 Dec 2025)."},
+    {"claim": "Lèse-majesté statutes exist in Thailand (Penal Code s.112, 3 to 15 years)...", "status": "VERIFIED", "primary_source": "Thai Penal Code Section 112."},
+    {"claim": "Selangor PAS Commissioner Ab Halim Tamuri and Selangor UMNO chief Megat Zulkarnain Omardin attended.", "status": "VERIFIED", "primary_source": "Utusan Malaysia (16 May 2026) 'Pemuda Pas Selangor tubuh Gerakan Daulat' explicitly naming both leaders."}
+  ],
+  "overall_assessment": "The analysis exhibits severe procedural masking, using dry constitutional language to sanitize two highly controversial, racially charged developments. By framing the total eradication of Selangor's pig farming industry and a proposed ISA-style detention-without-trial law as elegant triumphs of 'constitutional design,' the author commits grave omission and evasion biases. The text completely erases the non-Muslim minority affected by the ban, ignores the political opposition that sparked the 'Daulat Tuanku' rally, and falsely equates an authoritarian preventive detention proposal with standard European lèse-majesté penal codes. Furthermore, the corporate chairman analogy legally misrepresents the Federal Constitution by claiming the Ruler can run state affairs 'by signature alone' without Exco advice."
+}

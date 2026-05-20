@@ -1,0 +1,200 @@
+{
+  "factual_accuracy_score": 68,
+  "source_diversity_estimate": 0.62,
+  "claims": [
+    {
+      "claim": "The Sultan of Selangor's pig-farming ban took effect not on his decree date but on 12 February 2026, when the State Executive Council formally adopted it.",
+      "status": "MISLEADING",
+      "m_true": 0.30,
+      "m_false": 0.50,
+      "m_unknown": 0.20,
+      "source": "Sinar Harian, 12 Feb 2026, 'Mesyuarat MMKN: Selangor import sepenuhnya daging babi'; CodeBlue, 12 Feb 2026",
+      "correction": "The State Executive Council decision was reported on 12 February 2026 and appears to have operationalised or confirmed the state government's position to fully import pork and discontinue pig farming. However, reported sources say Selangor had already stopped issuing pig-farming licences since January 2026. No official MMKN minute or gazette entry was found to verify 12 February as the legal effective date. Recast as: 'The 12 February MMKN decision formally confirmed the state government's implementation position; licensing had reportedly already stopped since January.'",
+      "stale_check": "Not stale. The problem is evidentiary precision, not later change."
+    },
+    {
+      "claim": "Article 71 of the Federal Constitution vests state executive authority in the Ruler.",
+      "status": "INCORRECT",
+      "m_true": 0.20,
+      "m_false": 0.70,
+      "m_unknown": 0.10,
+      "source": "Federal Constitution, Article 71 and Eighth Schedule, AGC; SPRM-hosted PDF",
+      "correction": "Article 71 guarantees each Ruler's constitutional rights and privileges under the State Constitution and enables Parliament to enforce essential state-constitution provisions if missing or inconsistent. It does not itself vest state executive authority. The cleaner formulation is: 'Article 71 protects the state constitutional structure; the Eighth Schedule sets essential provisions including acting on Executive Council advice; Article 50 of the Selangor Constitution vests state executive authority in the Sultan.'",
+      "stale_check": "Not stale."
+    },
+    {
+      "claim": "The MMKN's adoption was the lawful conversion from titah to operative state policy.",
+      "status": "UNVERIFIED",
+      "m_true": 0.35,
+      "m_false": 0.10,
+      "m_unknown": 0.55,
+      "source": "Sinar Harian, 12 Feb 2026; CodeBlue, 12 Feb 2026",
+      "correction": "Sources verify a reported MMKN decision and MB statement, but not the formal legal instrument, MMKN minute, gazette, licence directive, or administrative order. Use less definitive wording unless the official MMKN record is obtained."
+    },
+    {
+      "claim": "Article 71 and the Eighth Schedule require every state constitution to vest the Ruler with executive authority.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.30,
+      "correction": "Article 71 requires state constitutions to contain the Eighth Schedule's essential provisions. The Eighth Schedule expressly covers the Ruler acting on advice and discretionary functions. The actual vesting of Selangor executive authority is in Article 50 of the Selangor Constitution. Avoid saying Article 71 itself vests executive authority."
+    },
+    {
+      "claim": "Article 50 of the Laws of the Constitution of Selangor 1959 implements this directly.",
+      "status": "VERIFIED",
+      "m_true": 0.70,
+      "m_false": 0.00,
+      "m_unknown": 0.30,
+      "source": "Laws of the Constitution of Selangor 1959, Article 50",
+      "correction": "Article 50 vests the executive authority of the State in the Sultan and allows it to be exercised by the Sultan, the State Executive Council, or an authorised member, subject to the Constitution."
+    },
+    {
+      "claim": "Sultan Sharafuddin issued three escalating decrees from 12 January to 7 May 2026.",
+      "status": "MISLEADING",
+      "m_true": 0.50,
+      "m_false": 0.25,
+      "m_unknown": 0.25,
+      "source": "Bernama, 10 Jan 2026, 'Selangor Sultan Expresses Disappointment With Proposed Large-Scale Pig Farming In Tanjong Sepat'; CodeBlue, 10 Feb 2026; Malay Mail, 7 May 2026",
+      "correction": "February and May statements are well supported. The January framing needs care: Bernama's 10 January report says the Sultan disagreed with Tanjong Sepat as a temporary large-scale pig-farming site but also said he did not outright reject the project pending further study. Cite 12 January source directly and avoid implying the January position was already the final statewide ban."
+    },
+    {
+      "claim": "State Exco adopted the ban on 12 February. Licensing stopped that day.",
+      "status": "INCORRECT",
+      "m_true": 0.25,
+      "m_false": 0.65,
+      "m_unknown": 0.10,
+      "correction": "The MMKN decision was reported on 12 February 2026, but reporting says the state had already stopped issuing pig-farming licences since January 2026 and that the last renewal due in January did not proceed. Replace 'Licensing stopped that day' with 'By 12 February, the state said licence issuance had already stopped since January.'"
+    },
+    {
+      "claim": "The pathway is what the constitution prescribes for a State List matter, including land use and licensing of trades.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.30,
+      "source": "Federal Constitution, Article 80 and Ninth Schedule",
+      "correction": "The State List clearly includes land, agriculture and forestry, and local government heads including obnoxious trades and public nuisances in local authority areas. Animal husbandry and veterinary services appear in the Concurrent List. The phrase 'licensing of trades' is too broad. Recast with the exact heads of legislative power and acknowledge concurrent-list dimensions where relevant."
+    },
+    {
+      "claim": "On 16 May 2026 about 5,000 attended a Daulat Tuanku rally in Shah Alam.",
+      "status": "VERIFIED",
+      "m_true": 0.75,
+      "source": "Bernama, 16 May 2026, 'Govt Urged To Enact Special Bill To Address Insults Against Royal Institution'; FMT, 16 May 2026; Malaysiakini, 16 May 2026, '3000 turun demo Himpunan Daulat Tuanku'",
+      "correction": "Keep the 5,000 figure only with explicit variance: Bernama and FMT report more than or about 5,000, while Malaysiakini reports nearly or more than 3,000. The safest phrasing is 'estimates ranged from about 3,000 to more than 5,000.'"
+    },
+    {
+      "claim": "The rally was organised by PAS Selangor Youth and involved PAS, UMNO, Bersatu, Pejuang, PUTRA, PERKASA, and about 300 Malay NGOs; Ab Halim Tamuri and Megat Zulkarnain Omardin attended.",
+      "status": "UNVERIFIED",
+      "m_true": 0.45,
+      "m_unknown": 0.50,
+      "correction": "PAS Selangor Youth organisation point and several party names are supported by reporting, but the full coalition list, 'about 300 Malay NGOs', and named attendees need direct citation. Split into separately sourced claims."
+    },
+    {
+      "claim": "The same day, PUTRA's Ibrahim Ali publicly proposed an Akta Kedaulatan Raja.",
+      "status": "VERIFIED",
+      "m_true": 0.80,
+      "source": "Bernama, 16 May 2026; MalaysiaGazette, 16 May 2026"
+    },
+    {
+      "claim": "Reported provisions include detention without warrant for up to two weeks and preventive detention up to two years, plus a Royal Sovereignty Council.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_unknown": 0.50,
+      "source": "Bernama, 16 May 2026; MalaysiaGazette, 16 May 2026",
+      "correction": "Bernama verifies the proposed ISA-like detention by a senior police officer for up to two weeks without court warrant for investigation. Could not verify, from an official draft or primary statement within the checked sources, the two-year preventive detention period or the Royal Sovereignty Council detail. Phrase as: 'Bernama reported a proposed two-week detention power; other reported elements such as two-year detention and a council require verification against the original declaration or draft text.'"
+    },
+    {
+      "claim": "The proposal is addressed to government; it is not a Cabinet bill.",
+      "status": "VERIFIED",
+      "m_true": 0.60,
+      "m_unknown": 0.40,
+      "correction": "Bernama verifies Ibrahim Ali urged the government to enact a special bill. No public Cabinet endorsement or official bill text found in the checked sources; absence claims are inherently provisional."
+    },
+    {
+      "claim": "Article 181 of the Federal Constitution already preserves the Rulers' sovereignty, prerogatives, powers and jurisdiction.",
+      "status": "VERIFIED",
+      "m_true": 0.80,
+      "correction": "Add the constitutional caveat: Article 181 is expressly subject to the other provisions of the Federal Constitution and includes the Special Court qualification for personal-capacity proceedings."
+    },
+    {
+      "claim": "Sedition Act Section 3(1)(f) makes questioning Article 181 a seditious tendency, and Section 4(1) penalty is up to RM5,000 fine or three years' jail.",
+      "status": "UNVERIFIED",
+      "m_true": 0.55,
+      "m_unknown": 0.40,
+      "correction": "Claim is consistent with known statutory text, but exact section wording not verified from an accessible official statute PDF or gazette during this review. Before publication, obtain the official AGC/Federal Gazette text."
+    },
+    {
+      "claim": "The Communications and Multimedia Act Section 233(1)(a), the Penal Code's Section 504 and Sections 298 and 298A complete the existing protective stack.",
+      "status": "MISLEADING",
+      "m_true": 0.40,
+      "correction": "These provisions may be adjacent legal tools, but 'complete the existing protective stack' is an analytical overclaim. Sections 298 and 298A relate to religion/religious feelings or harmony, Section 504 concerns intentional insult likely to provoke breach of peace, and Section 233 concerns improper network-facility use. They are not all monarchy-specific protections. Recast as 'additional adjacent provisions sometimes relevant to insult, religious-harmony or online-speech cases.'"
+    },
+    {
+      "claim": "The Centre for Independent Journalism recorded 233 arrests and investigations under expression-restricting laws in 2025, up from 189 in 2024.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "source": "IFEX 12 Dec 2025 citing CIJ; FMT 10 Dec 2025; NST 10 Dec 2025"
+    },
+    {
+      "claim": "Thailand's Penal Code Section 112 provides three to fifteen years for defaming the King, Queen, Heir-apparent or Regent.",
+      "status": "VERIFIED",
+      "m_true": 0.75
+    },
+    {
+      "claim": "Spain, Denmark, the Netherlands and Cambodia maintain comparable lèse-majesté provisions.",
+      "status": "MISLEADING",
+      "m_true": 0.40,
+      "m_false": 0.30,
+      "correction": "The comparator sentence is too broad. Spain and Cambodia have identifiable monarchy-insult provisions. Denmark is usually described as enhancing penalty for offences against the monarch rather than a Thailand-style lèse-majesté law. The Netherlands abolished its separate insulting-the-monarch offence as of 1 January 2020 and moved monarch insult closer to ordinary public-official insult treatment, so saying it 'maintains comparable provisions' without caveat is misleading. Recast with country-specific caveats.",
+      "stale_check": "Potential stale problem. Older comparator surveys may predate the Netherlands' 2020 change."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Article 71 of the Federal Constitution vests state executive authority in the Ruler.",
+      "why": "Article 71 guarantees Rulers' constitutional rights and the integrity of essential state constitutional provisions. It does not itself vest state executive authority. The direct Selangor vesting provision is Article 50 of the Selangor Constitution."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "The Sultan of Selangor's pig-farming ban took effect not on his decree date but on 12 February 2026, when the State Executive Council formally adopted it.",
+      "why": "The 12 February MMKN decision is reported, but sources say licence issuance had already stopped since January. No official MMKN minute or gazette was found to establish 12 February as the legal effective date."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Licensing stopped that day.",
+      "why": "Checked sources state that Selangor had already stopped issuing pig-farming licences since January 2026. The claim that licensing stopped specifically on 12 February is contradicted by available reporting."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Reported provisions include detention without warrant for up to two weeks and preventive detention up to two years, plus a Royal Sovereignty Council.",
+      "why": "The two-week detention-for-investigation element is verified by Bernama. The two-year preventive detention and Royal Sovereignty Council elements were not verified against an official draft or original declaration in the checked sources."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The Communications and Multimedia Act Section 233(1)(a), the Penal Code's Section 504 and Sections 298 and 298A complete the existing protective stack.",
+      "why": "The listed provisions are adjacent legal tools, but they are not all monarchy-specific and 'complete' is an analytical overclaim."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Bernama records the Sultan's three policy directives as primary government wire.",
+      "why": "Bernama's January report says the Sultan did not outright reject the project pending further study, which complicates the 'three escalating decrees' framing."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "The architecture is not arrangement — it is design, and on this case the design held.",
+      "why": "This conclusion is rhetorically stronger than the verified evidence allows because key legal steps, especially official MMKN adoption text and licence enforcement instrument, were not found. Rights, governance and affected-community perspectives are also largely absent."
+    }
+  ],
+  "omitted_facts": [
+    "Bernama's 10 January 2026 report says the Sultan disagreed with the proposed large-scale pig-farming site in Tanjong Sepat but also said he did not outright reject the project and wanted a thorough market study before a final decision.",
+    "The available 12 February reporting says Selangor had already stopped issuing pig-farming licences since January 2026.",
+    "The Ninth Schedule position is more complex than 'State List matter'. State List heads include land, agriculture and local government, while animal husbandry and veterinary services appear in the Concurrent List.",
+    "Rally attendance estimates vary materially. Bernama and FMT reported about 5,000; Malaysiakini reported nearly or more than 3,000.",
+    "Bernama reported that Selangor police had received 307 reports regarding social media content deemed insulting, a fact that helps explain the political context of the proposed law but is absent from the cards.",
+    "No official draft text of the proposed Akta Kedaulatan Raja was found in the checked sources.",
+    "No official MMKN minute, state gazette entry, licence circular or administrative enforcement instrument for the 12 February decision was found in the checked sources.",
+    "The Netherlands comparator is potentially stale: separate Dutch lèse-majesté provisions were reportedly abolished from 1 January 2020."
+  ],
+  "source_assessment": "Broad media spread including Bernama, The Star, Malay Mail, FMT, Malaysiakini, CodeBlue, Business Today, Kosmo, Harakah Daily, Sinar Harian, NST, MalaysiaNow and civil-society sources (CIJ/Civicus, ARTICLE 19). Politically: government-linked reporting, mainstream commercial media, opposition-leaning/independent media, and PAS-aligned media. However, several decisive claims depend on secondary news summaries rather than primary legal or administrative instruments. Major gaps: the official MMKN minute or gazette, the licensing enforcement directive, the original Royal Office statements in full, any DVS or local-authority administrative record, the official draft or declaration text for Akta Kedaulatan Raja, police attendance estimate, and voices from affected farmers, pork consumers, local residents, animal-health regulators and rights lawyers. Source diversity is moderate but not publication-grade for the strongest legal conclusions.",
+  "overall_assessment": "The analysis is directionally grounded in real events and identifies an important constitutional distinction between royal statements, state executive implementation and federal legislation. However, it overstates several legal mechanics. The most serious problems are the incorrect Article 71 formulation, the unsupported 12 February 'effective date' framing, the false or contradicted claim that licensing stopped that day, and the unverified details of the proposed Akta Kedaulatan Raja. The piece can be made publishable if it softens constitutional conclusions, separates verified facts from reported provisions, states the rally attendance range, fixes the State List wording, and obtains or acknowledges the absence of primary MMKN and draft-bill documents."
+}
