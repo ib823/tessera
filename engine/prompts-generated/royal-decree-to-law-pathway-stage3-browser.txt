@@ -1,0 +1,207 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "The Sultan of Selangor's pig-farming ban took effect not on his decree date but on 12 February 2026, when the State Executive Council formally adopted it.",
+      "sub": "Article 71 of the Federal Constitution vests state executive authority in the Ruler. The MMKN's adoption was the lawful conversion from titah to operative state policy.",
+      "sources": [
+        "Federal Constitution Article 71 + Eighth Schedule (AGC reprint, 1 Nov 2010)",
+        "Laws of the Constitution of Selangor 1959, Article 50",
+        "Bernama, Sultan Of Selangor Sets Three Policy Directives For State Pig Farming Operations",
+        "Business Today, 12 Feb 2026, Selangor Decides To Stop Issuing Pig Farm Licences",
+        "CodeBlue, Feb 2026, MB: Selangor To Completely Import Pork, Ban Pig Farming"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Article 71 and the Eighth Schedule require every state constitution to vest the Ruler with executive authority. The Selangor case ran the route end to end.",
+      "s": "Sultan Sharafuddin issued three escalating decrees from 12 January to 7 May 2026. State Exco adopted the ban on 12 February. Licensing stopped that day.",
+      "d": "Article 71 of the Federal Constitution guarantees each Ruler the constitutional rights and privileges of Ruler of his state, and the Eighth Schedule's 'essential provisions' require every state constitution to vest the state's executive authority in the Ruler, exercisable on Executive Council advice for non-discretionary matters. Article 50 of the Laws of the Constitution of Selangor 1959 implements this directly. The pig-farming sequence ran through the route in three steps: the Sultan's decree of 12 January 2026 (no more pig farming in Tanjong Sepat, relocation to Bukit Tagar), revised on 10 February 2026 to a total state ban with pork imports as the alternative; the State Executive Council's formal adoption on 12 February 2026, which also stopped licence issuance; and the 7 May 2026 Royal Office reaffirmation framed as a 'full stop' to debate. Bernama records the Sultan's three policy directives as primary government wire. The pathway is what the constitution prescribes for a State List matter (Ninth Schedule items including land use and licensing of trades).",
+      "sources": [
+        "Federal Constitution Article 71 + Eighth Schedule",
+        "Laws of the Constitution of Selangor 1959, Article 50",
+        "The Star, 12 Jan 2026, No more pig farms in Tanjong Sepat, decrees Selangor Ruler",
+        "Malay Mail, 10 Feb 2026, Sultan Sharafuddin says no to pig farming in Selangor",
+        "Bernama, Sultan Of Selangor Sets Three Policy Directives",
+        "Business Today, 12 Feb 2026, Selangor Decides To Stop Issuing Pig Farm Licences",
+        "Malay Mail, 7 May 2026, Selangor Royal Office: Sultan decrees 'full stop'"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "On 16 May 2026 about 5,000 attended a Daulat Tuanku rally in Shah Alam. The same day, PUTRA's Ibrahim Ali publicly proposed an Akta Kedaulatan Raja.",
+      "s": "Reported provisions include detention without warrant for up to two weeks and preventive detention up to two years, plus a Royal Sovereignty Council. The proposal is addressed to government; it is not a Cabinet bill.",
+      "d": "The rally, organised by PAS Selangor Youth, drew an FMT-reported 5,000 attendees (Malaysiakini headline reports 3,000+) at the Sultan Salahuddin Abdul Aziz Shah Mosque before marching to the Selangor State Secretariat. Coalition: PAS, UMNO, Bersatu, Pejuang, PUTRA, PERKASA, and about 300 Malay NGOs. Selangor PAS Commissioner Ab Halim Tamuri and Selangor UMNO chief Megat Zulkarnain Omardin attended. On the same day, PUTRA party president Ibrahim Ali proposed the Akta Kedaulatan Raja (Royal Sovereignty Act) in public statements covered by FMT, Malaysiakini, Kosmo, Harakah Daily and Sinar Harian. The stated rationale: existing laws are inadequate against insults, treason and provocation against the royal institution and the position of Islam. The proposal would supplement, not replace, the existing protective stack — Sedition Act 1948 s.3(1)(f), Communications and Multimedia Act 1998 s.233, Penal Code ss.298, 298A, 504. The bill is at proposal stage only; no draft text exists, the Cabinet has not endorsed it, and the Conference of Rulers has not issued a public statement on it as of brief close.",
+      "sources": [
+        "FMT, 16 May 2026, Some 5,000 attend rally in solidarity with Selangor sultan",
+        "FMT (bahasa), 16 May 2026, 5,000 sertai Himpunan Daulat Tuanku di Shah Alam",
+        "Malaysiakini, 16 May 2026, Daulat Tuanku rally: Reject DAP in GE16",
+        "FMT, 16 May 2026, Ibrahim Ali calls for ISA-like law to protect royalty from insults",
+        "Malaysiakini, 16 May 2026, Putra moots harsher than ISA law to defend royal institution",
+        "Harakah Daily, 17 May 2026, PUTRA Selangor gesa RUU Akta Kedaulatan Raja digubal",
+        "Kosmo Digital, 16 May 2026, Gubal RUU Akta Kedaulatan Raja hukum pihak cemar institusi Diraja"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "h": "Article 181 of the Federal Constitution already preserves the Rulers' sovereignty, and Sedition Act Section 3(1)(f) makes questioning it a seditious tendency.",
+      "s": "Lèse-majesté statutes exist in Thailand (Penal Code s.112, 3 to 15 years), Spain, Denmark, the Netherlands and Cambodia. Each constitutional monarchy strikes the balance with free expression differently.",
+      "d": "Article 181 of the Federal Constitution states that the sovereignty, prerogatives, powers and jurisdiction of the Rulers within their respective territories 'as hitherto had and enjoyed shall remain unaffected,' subject to the rest of the constitution. The Sedition Act 1948 Section 3(1)(f) directly anchors in this article, treating it as seditious to question Article 181 matters. Penalty under Section 4(1) is up to RM5,000 fine or three years' jail. The Communications and Multimedia Act Section 233(1)(a), the Penal Code's Section 504 (insult with intent to provoke breach of peace) and Sections 298 and 298A (religious feelings, disharmony) complete the existing protective stack. The Centre for Independent Journalism recorded 233 arrests and investigations under expression-restricting laws in 2025, up from 189 in 2024. Internationally, Thailand's Penal Code Section 112 provides three to fifteen years for defaming the King, Queen, Heir-apparent or Regent. Spain (Penal Code articles 490 to 491), Denmark (Section 115, interpreted alongside the European Convention's expression clause), the Netherlands and Cambodia maintain comparable provisions. The Akta Kedaulatan Raja proposal would sit within this comparator landscape rather than create a category Malaysian law currently lacks.",
+      "sources": [
+        "Federal Constitution Article 181 (AGC reprint)",
+        "Sedition Act 1948, ss.3(1)(f) and 4(1) (Federal Gazette)",
+        "Communications and Multimedia Act 1998, s.233 (Federal Gazette)",
+        "Penal Code (Act 574), ss.298, 298A, 504",
+        "Civicus Monitor, 2025 CIJ tally — 233 investigations and arrests",
+        "LawShun, Global Lèse Majesté Laws survey",
+        "Thai Penal Code s.112",
+        "ARTICLE 19, How lèse-majesté laws are eroding free speech in Southeast Asia"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "The question is not whether a royal decree becomes law. It is which constitutional pathway applies — Sultan-in-Council on a state matter, Parliament with Conference of Rulers concurrence on entrenched-article amendments, Cabinet and Agong on federal bills."
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it like a corporate chairman whose signature alone runs the day-to-day under the company's charter, but who needs the board's vote in writing to change the charter itself.",
+      "text": "The Selangor case is the chairman's signature on a chartered matter. The Akta Kedaulatan Raja proposal is a board-vote item, properly addressed to the board rather than imposed by signature."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Malaysia's constitution assigns royal authority a real sphere and elected institutions another. The Selangor pig-farming sequence honoured both halves: the Sultan acted within his Article 71 state-executive authority on a State List matter, his Exco adopted the decree on 12 February under Article 50 of the Selangor Constitution, and the licensing authority enforced. The same day the rally pressed for a new federal statute, the proposal was addressed to Parliament rather than imposed by titah. The architecture is not arrangement — it is design, and on this case the design held."
+    }
+  ],
+  "sources": "Federal Constitution (AGC reprint, 1 Nov 2010); Laws of the Constitution of Selangor 1959; Sedition Act 1948; Communications and Multimedia Act 1998; Penal Code (Act 574); Child Act 2001; ISA Repeal Act 2012; Bernama; Selangor Royal Office statements 7 May and 19 May 2026; The Star; Malay Mail; FMT; Malaysiakini; CodeBlue; Business Today; NST; Kosmo Digital; Harakah Daily; Sinar Harian; The Vibes; MalaysiaNow; TRP; Buletin Mutiara; Malaysia Gazette; Civicus Monitor (CIJ data); LawShun lèse-majesté survey; ARTICLE 19 Southeast Asia analysis; Foreign Policy Association on Thai Penal Code s.112; The Malaysian Bar 'Powers and functions of state rulers'; Constitute Project Malaysia constitution; T4A brief 1980 (Zahid speech) and brief harmony-reconciliation-bill-comparator-model.md.",
+  "confidence": "High — the constitutional mechanism (Article 71, Eighth Schedule, Article 50 Selangor) is primary statutory text verifiable against the AGC reprint and the Selangor state gazette. The Selangor pig-farming timeline (12 Jan, 10 Feb, 12 Feb MMKN adoption, 7 May Royal Office statement, 19 May Rukun Negara directive) is corroborated across Bernama (government wire), The Star, Malay Mail, FMT, CodeBlue, Business Today. The Daulat Tuanku rally count of 5,000 is from FMT with a Malaysiakini variance of 3,000+ noted. The Akta Kedaulatan Raja proposer (Ibrahim Ali, PUTRA) is confirmed across FMT, Malaysiakini, Harakah Daily and Kosmo; the reported provisions (detention windows, Royal Sovereignty Council) come from secondary summaries — flagged for Stage 3.",
+  "lenses_used": ["Legal", "Political", "Historical"],
+  "lenses_applicable_but_unused": ["Governance", "Rights"],
+  "needs_verification": [
+    "The exact reported provisions of the proposed Akta Kedaulatan Raja — detention without warrant for two weeks, preventive detention up to two years, Royal Sovereignty Council. Source variance across FMT, Malaysiakini, Kosmo, Harakah Daily. No draft text exists. Stage 3 should confirm the proposer's stated parameters against the Harakah Daily original (PAS organ closest to PUTRA/Ibrahim Ali) and flag any provision that comes only from secondary characterisation.",
+    "Whether the Conference of Rulers has issued any public statement on the Akta Kedaulatan Raja proposal between 16 May and the editorial close. Per T4A 3R standard, no inference is made about the Conference's view; verify the public-statement absence.",
+    "Whether any Cabinet member has publicly addressed the Akta Kedaulatan Raja proposal between 16 May and editorial close. PM Anwar's 8 May 'on hold first' framing on Bukit Tagar predates the proposal. If a Cabinet response emerges, the political-card framing needs updating.",
+    "The MMKN minute of 12 February 2026 formal adoption — Business Today and CodeBlue characterise it, but the formal MMKN release or state gazette entry would be the primary source. Stage 3 to chase if available.",
+    "Rally attendance — FMT 5,000 vs Malaysiakini 3,000+. Stage 3 should check Selangor police estimate if any was issued, and note the variance explicitly in the reader output."
+  ],
+  "source_notes": "Three source-discrepancy notes for Stage 3. (1) Rally attendance: FMT reported ~5,000; Malaysiakini headline 3,000+. Card uses FMT figure with variance footnoted in the detail. (2) Akta Kedaulatan Raja provisions: characterisations across outlets describe an ISA-like template with the specific windows (2-week investigation, 2-year preventive) attributed to Ibrahim Ali's statements; the bill has no draft text in the public domain. Card phrases as 'reported provisions' and 'addressed to government, not a Cabinet bill' — both verified from multiple independent outlets including the PAS-aligned Harakah Daily. (3) Whether the Sultan's decree had legal effect on its own or only via MMKN: the brief's framing — and the cards' — is that both are true. The Sultan acted within his Article 50 / Article 71 state-executive authority; the MMKN formally adopted the position on 12 February 2026. The Sultan-in-Council mechanism is the operative state-executive pathway. The constitution does not treat these as alternatives but as the same pathway in two procedural moments. Stage 3 should confirm this is the cleanest characterisation against Malaysian Bar scholarly commentary and not over-attribute legal effect to either pole alone."
+}
