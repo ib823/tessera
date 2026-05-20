@@ -1,183 +1,215 @@
-# ISSUE 1999 — How a royal decree becomes law: the Selangor pig-farming pathway
+# ISSUE 1999 — How a royal decree becomes operative law: the Selangor pathway
 
 ## ISSUE
 
-A reader asks: how and why does a sultan or Agong decree become law in Malaysia? The honest constitutional answer is that it does not — a *titah* or palace decree carries no statutory force on its own. The Federal Constitution provides only five conversion routes (Articles 66, 38, 150, plus state-enactment assent, plus the "Sultan's pleasure" sentencing route in s.97 Child Act 2001), all of which require some combination of Parliament, Cabinet, or judicial process to translate royal will into binding law.
+A reader asks: how and why does a Sultan or Yang di-Pertuan Agong decree become law in Malaysia? The honest constitutional answer is layered, and the Selangor pig-farming case from January to May 2026 shows the pathway working end to end.
 
-The story is what happens in 2026 Q2 when the formal pathway is *not* taken but the practical effect of law is sought anyway. The Sultan of Selangor's January→February→May 2026 decrees ordering an end to pig farming in the state — a state matter, on land use, in a state where the Sultan is also head of Islam under Article 3(2) — collided with a Federal Constitution Article 8(2) equality argument raised in the state assembly by Seri Kembangan ADUN Wong Siew Ki. The collision produced three downstream events the radar has flagged: (a) a 5,000-strong Daulat Tuanku rally in Shah Alam on 16 May 2026 demanding apology and resignation from the elected representatives who questioned the decree; (b) a proposal by PUTRA party president Ibrahim Ali to enact an "Akta Kedaulatan Raja" — a royal-sovereignty statute modelled on the repealed Internal Security Act, permitting detention without warrant for up to two weeks and a Royal Sovereignty Council with disciplinary powers; (c) the Sultan himself, on 19 May 2026, publicly directing the two named DAP representatives to attend Dataran Selangor weekly to "understand the Rukun Negara." Deputy Prime Minister Zahid Hamidi separately called on 10 May 2026 for "firm, fair and wise" action against insults to Islam and the Malay Rulers (already covered in T4A issue 1980).
+**Three things are simultaneously true under Malaysian constitutional law:**
 
-The headline picture mainstream coverage presents is *"DAP rep insults Sultan, public rallies in support, government should pass stronger law."* The picture the public record supports is more complicated: a constitutional decree cannot have force of law without statutory conversion; the proposed conversion (Akta Kedaulatan Raja) carries detention powers stronger than the ISA the Najib administration repealed in 2012; and the question Wong Siew Ki raised in the assembly — does the Sultan's pig-farming decree prevail over Article 8(2) of the Federal Constitution — is itself the constitutional question Parliament would have to answer before any such Act could be drafted, and it has not been answered.
+1. A royal *titah* or decree, standing alone, is not a statute. No royal pronouncement by itself creates an offence, levies a fine, or alters a citizen's legal rights without further institutional action.
+
+2. The same Federal Constitution that limits royal lawmaking *grants* royal authority real legal weight within its proper sphere. Article 71 and the Eighth Schedule require every state constitution to vest the state's executive authority in the Ruler. Article 181 preserves the sovereignty, prerogatives, powers and jurisdiction of each Ruler. Article 3(2) makes the Sultan the head of Islam in his state. Article 38 gives the Conference of Rulers a concurrence role on certain federal amendments. A Ruler acting within these spheres is not advising the state — he is, in constitutional terms, *part of the state*.
+
+3. The pathway from royal will to operative law runs through institutional uptake. The Selangor pig-farming sequence shows it in three steps the Constitution recognises as lawful: (i) the Sultan, on a State List matter (land use and agricultural licensing), issues a decree; (ii) the State Executive Council (MMKN), acting under Eighth Schedule "essential provisions," formally adopts the position; (iii) the state licensing authority ceases issuance and accelerates phased closure of existing farms. By 7 May 2026 the Selangor Royal Office could lawfully say the matter was decided. This is the Sultan-in-Council mechanism functioning exactly as Article 71 contemplates.
+
+A separate but adjacent question is whether Parliament should pass a new statute — the proposed *Akta Kedaulatan Raja* tabled in public discussion on 16 May 2026 by PUTRA party president Ibrahim Ali — to add a specific lèse-majesté regime on top of the existing Sedition Act 1948 s.3(1)(f), Communications and Multimedia Act 1998 s.233, and Penal Code ss.298, 298A, 504. That is a policy question for Parliament. Lèse-majesté statutes exist in many constitutional monarchies (Thailand, Spain, Denmark, the Netherlands, Cambodia); Malaysia currently protects the institution via Article 181 of the Constitution and the seditious-tendency clause of the Sedition Act. The brief reports the proposal, the existing legal stack, and the spectrum of public reactions — it does not advocate for or against the bill.
+
+The editorial value T4A adds is the *pathway map* itself: most readers do not know that the Sultan's decree on pig farming had legal effect not through the *titah* alone but through MMKN adoption under the Selangor State Constitution. Once that is understood, both the rally on 16 May 2026 (~5,000 attendees) and the criticism of elected officials who raised Federal Constitution Article 8(2) arguments become legible in their proper constitutional context.
 
 ## PERIOD
 
-10 January 2026 (Sultan's first Tanjong Sepat decree) is the trigger event. Reference window: 12 January 2026 (first decree) → 10 February 2026 (revised decree: total ban + pork imports) → 23 April 2026 (Wong Siew Ki Article 8(2) speech in assembly) → 27 April 2026 (UMNO police reports + 21 reports over doctored image of the Sultan) → 7 May 2026 (Selangor Royal Office "full stop" decree) → 8 May 2026 (PM Anwar: "on hold first because of past excesses") → 10 May 2026 (Zahid Musyawarah Nasional speech — issue 1980) → 16 May 2026 (Daulat Tuanku rally + Ibrahim Ali Akta Kedaulatan Raja proposal + Tony Pua "constitutional monarch bears limited power" remarks) → 19 May 2026 (Sultan's Rukun Negara directive to Wong/Liu) → 20 May 2026 (Liu's "I named my son to honour the Constitution" response).
+12 January 2026 (Sultan's first Tanjong Sepat decree) is the trigger event. Reference window: 12 January 2026 → 10 February 2026 (revised decree: total ban) → 12 February 2026 (State Exco / MMKN formally stops issuing licences) → 23 April 2026 (Article 8(2) speech in state assembly) → 27 April 2026 (police reports filed) → 7 May 2026 (Selangor Royal Office "full stop" statement) → 8 May 2026 (PM Anwar: "on hold first") → 10 May 2026 (DPM Zahid Musyawarah Nasional speech — published as T4A issue 1980) → 16 May 2026 (Daulat Tuanku rally + Akta Kedaulatan Raja public proposal) → 19 May 2026 (Sultan's Rukun Negara directive) → 20 May 2026 (responses).
 
 ## CONTEXT (Timeline)
 
-- **1948**: Sedition Act enacted. Section 3(1)(f) makes it seditious to question matters protected by Articles 152, 153, **and 181** of the Federal Constitution. Article 181 protects the sovereignty of the Rulers. (Federal Gazette)
-- **1957/1963/1971/1984/1994**: Federal Constitution Article 66 evolves. Original text required active royal assent on every federal bill. The 1984 amendment removed substantive royal veto; the 1993 amendment (gazetted 1994) made assent automatic after 30 days — Article 66(4A). Royal assent at federal level is now procedural. (Federal Constitution, AGC reprint)
-- **1960**: Internal Security Act enacted under Article 149. Detention without trial up to two years, renewable. (ISA 1960 — Federal Gazette)
-- **1976**: Penal Code Section 298A inserted — causing disharmony, disunity or feelings of enmity on grounds of religion.
-- **1993**: Constitutional amendment (Act A848) removes royal immunity from prosecution in the Special Court (Article 182), responding to the 1992 Gomez incident. Conference of Rulers concurred. The Lord President crisis of 1988 and the constitutional crisis of 1993 are the prior reference points for federal/royal-prerogative balance.
-- **2001**: Child Act, Section 97 — child convicted of an offence punishable by death is detained during the pleasure of the Yang di-Pertuan Agong (Federal Territories) or the Sultan/Yang di-Pertua Negeri (state). This is the cleanest live legal embedding of royal authority in present-day Malaysian criminal procedure.
-- **2012**: PM Najib Razak announces ISA repeal and replacement with security offences-specific legislation. The repeal is effected. (ISA Repeal Act 2012)
-- **15 May 2024**: Sultan Ibrahim sworn in as 17th Yang di-Pertuan Agong, succeeding Al-Sultan Abdullah (Pahang). Public profile of the office heightens through 2024-2025. Royal assent on Parliamentary Services Act on 14 July 2025.
-- **12 January 2026** (Sultan of Selangor): Decree on Tanjong Sepat — "no more pig farms in Tanjong Sepat, Kuala Langat", relocation to Bukit Tagar to be staged. (The Star, Malaysiakini, 12-13 Jan 2026)
-- **10 February 2026**: Sultan Sharafuddin revises position — total ban on pig farming in Selangor; pork to be met by imports only; no licences anywhere in the state. State Exco formally adopts the position. (Malay Mail; CodeBlue; The Vibes; FMT — 10 Feb 2026)
-- **23 April 2026** (Selangor State Assembly, debate on Sultan's address): Seri Kembangan ADUN Wong Siew Ki (DAP) raises a "closed and modern" pig-farming system proposal grounded in Article 8(2) of the Federal Constitution (equality). She maintains her position publicly the same day. (Malaysiakini; FMT; NST — 23 Apr 2026)
-- **25 April 2026**: DAP secretary-general Loke Siew Fook warns PN will exploit the controversy. Penang DAP publicly backs Wong. (FMT 25 Apr 2026; Buletin Mutiara)
-- **27 April 2026**: UMNO division leaders file police reports against Wong demanding strong action for "defying the Sultan." Bukit Aman CID takes over a parallel investigation: 21 reports filed over a doctored image of Sultan Sharafuddin circulating on social media. (FMT 27 Apr; TRP 27 Apr 2026)
-- **28 April 2026**: Selangor government formally demands MCMC act on online insult to Sultan Sharafuddin — radar signal #235.
-- **7 May 2026 (Selangor Royal Office)**: Formal statement reiterating "full stop" on the pig-farming debate; reaffirms decree to preserve public harmony. (Malay Mail 7 May; FMT 7 May 2026)
-- **8 May 2026**: PM Anwar — pig farm project "on hold first because of past excesses." (FMT 8 May 2026)
-- **10 May 2026** (Musyawarah Nasional, KL): DPM Zahid Hamidi keynote — covered in published T4A issue **1980** and brief `zahid-insults-firm-action-vs-existing-laws.md`. Calls for "firm action" on insults to Islam and Malay Rulers. Promises a secretariat will channel resolutions to Cabinet.
-- **13 May 2026**: 300 Malay NGOs confirm rally participation. PAS Selangor Commissioner Ab Halim Tamuri leads organising. (FMT 13 May 2026)
-- **16 May 2026 (Sultan Salahuddin Abdul Aziz Shah Mosque → SUK Shah Alam)**: Daulat Tuanku rally. ~5,000 attendees per FMT; "3k" per Malaysiakini headline. Yellow clothing. Coalition: PAS, UMNO, Bersatu, Pejuang, PUTRA, PERKASA + ~300 NGOs. PAS leader urges crowd to "reject DAP in GE16." Same day, PUTRA president Ibrahim Ali calls for the **Akta Kedaulatan Raja** — a Royal Sovereignty Bill modelled on the repealed ISA: detention without warrant by a senior police officer up to 2 weeks for investigation; preventive detention up to 2 years; establishment of a Royal Sovereignty Council. (FMT 16 May; Malaysiakini 16 May; Harakah Daily 17 May; Kosmo 16 May 2026)
-- **16 May 2026 (separately)**: DAP "policy man" Tony Pua makes remarks that the Malaysian monarchy is constitutional and "bears limited power." Police reports begin to be filed against him. (Focus Malaysia 16-20 May; TRP 20 May; FMT 20 May 2026)
-- **19 May 2026 (Selangor Royal Office)**: Sultan Sharafuddin issues a public directive — Wong Siew Ki and Ronnie Liu Tian Khiew should visit Dataran Selangor weekly to "read and understand the Rukun Negara" so they "may become citizens who respect the sovereignty of the royal institution." (Malay Mail 19 May; FMT 19 May; MalaysiaNow 19 May 2026)
-- **20 May 2026**: Ronnie Liu publicly responds — pig farmers' rights are protected by the Federal Constitution, the courts should decide; notes he named his son in a way that honours the Constitution. UMNO sec-gen Asyraf Wajdi slams Tony Pua as "arrogant, rude." (FMT 20 May 2026)
+- **1948**: Sedition Act enacted. Section 3(1)(f) makes it seditious to question matters protected by Articles 152, 153, and 181 of the Federal Constitution. Article 181 protects the sovereignty of the Rulers — the existing statutory anchor for royal-institution protection. (Federal Gazette)
+- **1957**: Federal Constitution comes into force. Articles 38 (Conference of Rulers), 40 (Agong acts on advice), 66 (royal assent), 71 (institution of Sultanate), 181 (Rulers' sovereignty preserved) constitute the federal-level architecture. The Eighth Schedule sets the "essential provisions" every state constitution must contain.
+- **1959**: Laws of the Constitution of Selangor 1959 promulgated. Article 50 vests the executive authority of the state in the Sultan, exercisable by him personally or by the Executive Council acting in his name.
+- **1984**: Constitutional amendment removes the Agong's substantive veto on federal bills.
+- **1993–1994**: Article 66(4A) inserted. Federal royal assent becomes automatic after 30 days. Substantive royal influence on legislation shifts upstream into Cabinet consultation; assent itself is procedural.
+- **1993**: Special Court established under Article 182 — for civil and criminal proceedings against a Ruler in his personal capacity. Conference of Rulers concurred in the amendment.
+- **2001**: Child Act, Section 97 — child convicted of an offence punishable by death is detained "during the pleasure" of the Yang di-Pertuan Agong (Federal Territories) or the Sultan / Yang di-Pertua Negeri (state). One of the cleanest live legal embeddings of royal discretion in present-day Malaysian criminal procedure.
+- **2012**: Internal Security Act 1960 repealed. Replaced by narrower security-offences legislation (SOSMA 2012, POCA 2014).
+- **15 May 2024**: Sultan Ibrahim ibni Almarhum Sultan Iskandar of Johor installed as the 17th Yang di-Pertuan Agong.
+- **14 July 2025**: Royal assent granted to the Parliamentary Services Act 2025.
+- **12 January 2026** (Selangor Royal Office): Sultan Sharafuddin Idris Shah decrees no further pig farming in Tanjong Sepat, Kuala Langat — existing farms to be relocated to Bukit Tagar in stages, with the Sultan ordering a detailed study of pork demand among Selangor's non-Muslim population. (The Star, Malay Mail, 12-13 Jan 2026)
+- **26 January 2026** (FMT explainer): "Explained: how Selangor's pig farming proposal spiralled into controversy" — chronology of the pre-decree state-policy discussion.
+- **10 February 2026** (Selangor Royal Office): Sultan revises position — total ban on pig farming in Selangor; pork demand to be met by imports; no licences to be issued anywhere in the state. (Malay Mail; CodeBlue; FMT; The Vibes — 10 Feb 2026)
+- **12 February 2026** (Selangor State Executive Council / MMKN): Formal Exco adoption of the position. State Exco stops issuance of pig-farming licences and accelerates phased closure. (Business Today; Bernama)
+- **23 April 2026** (Selangor State Legislative Assembly): During debate on the Sultan's royal address, Seri Kembangan ADUN Wong Siew Ki (DAP) proposes that Selangor explore "closed and modern" pig-farming systems (zero-discharge, biogas, electric energy), citing pollution concerns the existing methods raise and invoking Federal Constitution Article 8(2) (equality) as the basis. The speech is delivered under the parliamentary privilege protected by Article 63. (Malaysiakini; FMT 23 Apr 2026)
+- **25 April 2026**: DAP secretary-general Loke Siew Fook publicly warns Perikatan Nasional will use the controversy in election framing. Penang DAP backs Wong. (FMT 25 Apr; Buletin Mutiara)
+- **27 April 2026**: Several UMNO division leaders file police reports against Wong. Bukit Aman CID takes over investigation into a doctored image of Sultan Sharafuddin circulating online — 21 reports filed. (FMT 27 Apr; TRP 27 Apr 2026)
+- **28 April 2026**: Selangor state government calls on MCMC to act on online insult against the Sultan. (Radar signal #235.)
+- **7 May 2026** (Selangor Royal Office press statement): Reiterates the decree — a "full stop" to debate on pig-farming activities in the state; reaffirms harm-prevention rationale (environment, social harmony). (Malay Mail; FMT 7 May 2026)
+- **8 May 2026**: PM Anwar tells media the Bukit Tagar pig farm project is "on hold first because of past excesses." (FMT 8 May 2026)
+- **10 May 2026** (Musyawarah Nasional, KL): DPM Ahmad Zahid Hamidi delivers keynote calling for "firm, fair and wise" action against insults to Islam and the Malay Rulers. Covered in published T4A issue **1980** and brief `zahid-insults-firm-action-vs-existing-laws.md`.
+- **13 May 2026**: 300 Malay NGOs confirm attendance at rally. Lead organiser PAS Selangor Youth. (FMT 13 May 2026)
+- **16 May 2026** (Sultan Salahuddin Abdul Aziz Shah Mosque → Selangor SUK, Shah Alam): "Daulat Tuanku" rally. FMT reports ~5,000 attendees, Malaysiakini "3,000+". Yellow clothing. Coalition: PAS, UMNO, Bersatu, Pejuang, PUTRA, PERKASA + ~300 NGOs. (FMT 16 May; Malaysiakini 16 May; Malaysia Gazette 16 May 2026)
+- **16 May 2026** (separately, public statement): PUTRA party president Ibrahim Ali proposes the **Akta Kedaulatan Raja** ("Royal Sovereignty Act") to Parliament. Reported provisions: detention without warrant by senior police officer up to two weeks for investigation; preventive detention up to two years; establishment of a Royal Sovereignty Council. Stated rationale: existing laws (Sedition Act, CMA, Penal Code) are characterised by the proposer as insufficient against "insults, treason and provocation" against the royal institution and "the position of Islam." (FMT 16 May; Malaysiakini 16 May; Harakah Daily 17 May; Kosmo 16 May 2026.) **The proposal is a civil-society / party proposal addressed to government; it is not at this point a Cabinet bill or a tabled draft.**
+- **16-20 May 2026**: DAP "policy man" Tony Pua's public remarks characterised as describing Malaysia's monarchy as constitutional and bearing limited power. Police reports begin to be filed. UMNO sec-gen Asyraf Wajdi calls Pua's comments "arrogant, rude." (Focus Malaysia; TRP 20 May; FMT 20 May 2026)
+- **19 May 2026** (Selangor Royal Office): Sultan Sharafuddin publicly directs Wong Siew Ki and former Selangor exco Ronnie Liu Tian Khiew to attend Dataran Selangor once a week to read the Rukun Negara, "so they may become citizens who respect the sovereignty of the royal institution." (Malay Mail 19 May; FMT 19 May; MalaysiaNow 19 May 2026)
+- **20 May 2026**: Ronnie Liu publicly acknowledges the Sultan's directive; states that pig farmers' rights are protected under the Federal Constitution and the courts should decide; notes he named his son in a way that honours the Constitution. Wong Siew Ki separately acknowledges the directive. (FMT 20 May 2026)
 
 ## ACTORS
 
 **The Royal Institution:**
-- **Sultan Sharafuddin Idris Shah** — Sultan of Selangor; issued the decrees of 12 Jan, 10 Feb, 7 May 2026 and the 19 May Rukun Negara directive.
-- **Selangor Royal Office (Pejabat Diraja Selangor)** — issued the formal 7 May and 19 May statements.
-- **Conference of Rulers** — has issued *no* public statement on Akta Kedaulatan Raja, the rally, or Wong/Liu/Pua as of brief close. Per T4A Accuracy Standard, the brief makes no inference about what the Rulers think.
+- **Sultan Sharafuddin Idris Shah** — Sultan of Selangor; issued the 12 Jan, 10 Feb, 7 May 2026 decrees and the 19 May Rukun Negara directive. Acting within the executive authority vested by Article 50 of the Selangor State Constitution and the framework of Article 71 of the Federal Constitution.
+- **Selangor Royal Office (Pejabat Diraja Selangor)** — issued the 7 May and 19 May 2026 statements as primary record of the Sultan's position.
+- **Conference of Rulers (Majlis Raja-Raja)** — has not issued a public statement on either the Akta Kedaulatan Raja proposal or the Selangor case as of brief close. Per T4A Accuracy Standard, the brief makes no inference about what the Rulers may or may not think of the proposal.
 
 **Federal government:**
-- **Datuk Seri Anwar Ibrahim** — PM. 8 May "on hold first" framing on the Bukit Tagar project. No public statement endorsing the Akta Kedaulatan Raja proposal.
-- **Datuk Seri Ahmad Zahid Hamidi** — DPM, UMNO president. 10 May Musyawarah Nasional speech (issue 1980).
-- **Datuk Aaron Dagang** — Minister of National Unity. Custodian of the parallel National Harmony & Reconciliation Bill, which the cabinet is also studying as of April 2026 (brief: `harmony-reconciliation-bill-comparator-model.md`).
-- **Cabinet** — has *not* publicly tabled or endorsed an Akta Kedaulatan Raja. The bill exists only as a civil-society/party proposal.
+- **Datuk Seri Anwar Ibrahim** — Prime Minister. 8 May 2026: Bukit Tagar pig farm "on hold first because of past excesses." Has not publicly endorsed the Akta Kedaulatan Raja.
+- **Datuk Seri Ahmad Zahid Hamidi** — DPM, UMNO president. 10 May 2026 Musyawarah Nasional speech — covered in issue 1980.
+- **Datuk Aaron Dagang** — Minister of National Unity. Custodian of the National Harmony & Reconciliation Bill / SKRN currently under cabinet study (brief: `harmony-reconciliation-bill-comparator-model.md`).
+- **Cabinet** — has not tabled or publicly endorsed the Akta Kedaulatan Raja. The bill exists as a public proposal addressed to government, not yet a government bill.
 
-**State government:**
-- **Datuk Seri Amirudin Shari** — Menteri Besar of Selangor (Pakatan Harapan / Selangor PH). Implementing the Sultan's decrees through state executive policy.
-- **Selangor State Exco** — formally adopted total pig-farming ban after 10 Feb 2026 decree.
-- **MCMC** — receives Selangor government's complaint on online insults (28 Apr 2026).
+**State government (Selangor):**
+- **Datuk Seri Amirudin Shari** — Menteri Besar of Selangor. Implementing the Sultan's decree through MMKN policy under Article 50 of the State Constitution.
+- **Selangor State Executive Council (MMKN)** — formally adopted the total ban on 12 February 2026. The licensing authority is operationally bound by MMKN policy.
+- **MCMC** — receives Selangor government's complaint on online insults (28 April 2026).
 
-**Elected representatives caught in the collision:**
-- **Wong Siew Ki** — DAP, ADUN Seri Kembangan. Raised Article 8(2) argument 23 April 2026; stands by it as of brief close.
-- **Ronnie Liu Tian Khiew** — former Selangor DAP exco. Urged pig farmers to file judicial review.
-- **Tony Pua Kiam Wee** — DAP "policy man." 16 May remarks on constitutional monarchy and limited power.
-- **Loke Siew Fook** — DAP sec-gen. 25 April warning on PN exploitation.
+**Elected representatives in the case:**
+- **Wong Siew Ki** — DAP, ADUN Seri Kembangan. 23 April 2026 assembly speech invoking Article 8(2). Speech delivered under Article 63 parliamentary privilege. Stood by the proposal publicly the same day; acknowledged the Sultan's 19 May directive on 20 May 2026.
+- **Ronnie Liu Tian Khiew** — former Selangor DAP exco. Urged pig farmers to file judicial review citing constitutional rights; acknowledged the Sultan's directive on 20 May 2026.
+- **Tony Pua Kiam Wee** — DAP. 16 May remarks characterised as describing Malaysia's monarchy as constitutional with limited power.
+- **Loke Siew Fook** — DAP sec-gen.
 
-**The proposal author and his coalition:**
-- **Datuk Ibrahim Ali** — PUTRA party president (Parti Bumiputera Perkasa Malaysia). Sole named proposer of the Akta Kedaulatan Raja. Not a member of any Cabinet of any government.
-- **PUTRA Selangor / PAS Selangor Youth / UMNO Selangor / Bersatu / Pejuang / PERKASA** — rally co-organisers.
-- **~300 Malay NGOs** — rally attendees, per FMT and organisers' tally.
+**Proposal author and rally coalition:**
+- **Datuk Ibrahim Ali** — Parti Bumiputera Perkasa Malaysia (PUTRA) president. Sole named proposer of the Akta Kedaulatan Raja. Not a member of Cabinet.
+- **PUTRA, PAS, UMNO, Bersatu, Pejuang, PERKASA, ~300 Malay NGOs** — rally coalition. PAS Selangor Youth lead organisers.
 
-**Civil-society / legal counter-voices:**
-- **The Malaysian Bar** — historical proponent of the National Harmony & Reconciliation Bill family as the replacement for Sedition Act, not for new lèse-majesté statutes.
-- **SUARAM, SUHAKAM, CIJ** — documented enforcement data already in brief 1980.
-- **No public statement from any of these bodies specifically on the Akta Kedaulatan Raja proposal** is in the dataset as of brief close. The bill is one week old.
+**Civil-society / legal commentators (positions before this proposal):**
+- **The Malaysian Bar** — historical position is replacement of the Sedition Act with the National Harmony & Reconciliation Bill family. Has not issued a public statement specifically on the Akta Kedaulatan Raja proposal as of brief close.
+- **SUARAM, SUHAKAM, CIJ** — published expression-restriction enforcement data referenced in issue 1980.
+- **No civil-society organisation in the dataset has issued a public statement on the Akta Kedaulatan Raja proposal** — proposal is one week old at brief close. The brief notes this absence rather than fills it.
 
 ## RELEVANT LAW
 
-### The constitutional pathway (the "how")
+### The constitutional pathway — what the law actually says
 
-1. **Federal Constitution Article 66** — every bill passed by Parliament is presented to the Agong; Articles 66(4) and 66(4A) make assent automatic after 30 days. *Royal assent at federal level is procedural, not substantive*.
+1. **Federal Constitution Article 32(1)** — The Yang di-Pertuan Agong is the Supreme Head of the Federation, taking precedence over all persons.
 
-2. **Federal Constitution Article 40** — the Agong acts on Cabinet advice in the exercise of his functions. The discretionary functions are limited: appointment of the PM, withholding consent to a dissolution request, requisitioning a Conference of Rulers meeting. *None of these include unilateral lawmaking.*
+2. **Federal Constitution Article 38** — The Conference of Rulers consists of the Rulers and the Yang di-Pertuan Negeri. Article 38(2)(a) — concurrence required for amendments to Articles 38, 70, 71 (and the Third and Fifth Schedules); Article 38(2)(b) — Conference to be consulted before changes of policy affecting administrative action under Article 153; Article 38(2)(c) — Conference may deliberate on questions of national policy.
 
-3. **Federal Constitution Article 38** — Conference of Rulers concurrence is required for amendments touching Articles 38, 70, 71 (status, succession, privileges of Rulers), 152, 153 (national language, special position of Malays/Bumiputeras), and Article 3 (Islam as religion of the Federation). *Concurrence is not law — it is a precondition for a particular class of laws.*
+3. **Federal Constitution Article 40** — Agong acts on Cabinet advice. Discretionary functions are limited and enumerated: appointment of the PM; withholding consent to dissolution of Parliament; requesting a meeting of the Conference of Rulers concerned solely with the privileges, position, honours and dignities of the Rulers, or religious acts, observances or ceremonies.
 
-4. **Federal Constitution Article 150** — emergency proclamations carry force-of-law ordinances during the emergency, but only on Cabinet advice. (Brief: `coa-emergency-proclamation-non-justiciable.md`.) *Not in play in 2026 Q2.*
+4. **Federal Constitution Article 66** — Federal bills require royal assent. Article 66(4) and 66(4A) (post-1993 amendment) make assent automatic 30 days after presentation. The 30-day clock does not eliminate the constitutional requirement of presentation; it removes the substantive veto.
 
-5. **State constitutions and state enactments** — state legislative assembly passes enactments; state Sultan assents. *Selangor State Constitution* governs the Sultan-Exco relationship for state-law passage; the formal pathway here is identical in structure to the federal one. *The Sultan's pig-farming decree is not a state enactment and has not been gazetted as one.*
+5. **Federal Constitution Article 71** — The Federation guarantees the right of a Ruler to hold, enjoy and exercise the constitutional rights and privileges of Ruler of his state. The Eighth Schedule sets "essential provisions" every state constitution must contain.
 
-6. **Federal Constitution Article 3(2)** — the Sultan is head of Islam in his state (with stated exceptions). Pig farming is a *land use* matter under State List of the Ninth Schedule, not a religious-law matter per se — the constitutional question Wong raised was whether non-Muslim economic activity falls within the Sultan's Article 3(2) ambit or remains a State List civil-government matter.
+6. **Federal Constitution Article 181** — *"Subject to the provisions of this Constitution, the sovereignty, prerogatives, powers and jurisdiction of the Rulers and the prerogatives, powers and jurisdiction of the Ruling Chiefs of Negri Sembilan within their respective territories as hitherto had and enjoyed shall remain unaffected."* The constitutional anchor for the Rulers' authority.
 
-7. **Federal Constitution Article 8(2)** — equality. No discrimination "on the ground only of religion, race, descent, place of birth or gender." The clause Wong Siew Ki invoked in the 23 April assembly speech.
+7. **Federal Constitution Article 3(2)** — In each state with a Ruler, the Ruler is the Head of the religion of Islam. (In the Federal Territories and the four states without a Ruler — Penang, Melaka, Sabah, Sarawak — the Agong is Head of Islam.)
 
-8. **Federal Constitution Article 181** — sovereignty, prerogatives, powers and jurisdiction of the Rulers preserved. The article the Sedition Act s.3(1)(f) and any proposed Akta Kedaulatan Raja would derive constitutional anchor from.
+8. **Federal Constitution Article 8(2)** — *"Except as expressly authorised by this Constitution, there shall be no discrimination against citizens on the ground only of religion, race, descent, place of birth or gender."* The clause Wong Siew Ki invoked.
 
-### The statutes that already cover the conduct the Akta Kedaulatan Raja would criminalise
+9. **Federal Constitution Article 63** — Parliamentary (and by extension legislative-assembly) privilege. Members may not be questioned in any court for what they say in the legislature. Wong's 23 April speech is protected by this provision.
 
-- **Sedition Act 1948 s.3(1)(f) + s.4(1)** — questioning matters protected by Articles 152, 153, 181 is seditious. Penalty up to RM5,000 or 3 years. 2015 amendments cover electronic publication. *In 2025 charges hit a five-year high per SUARAM*; CIJ tallied 233 arrests/investigations under expression-restricting laws in 2025. (Brief 1980.)
-- **Communications and Multimedia Act 1998 s.233(1)(a)** — post-Heidy Quah (CoA Aug 2025, FC appeal pending Nov 2025) "obscene, indecent, false, menacing … abuse, threaten or harass" survives; "offensive" and "annoy" excised. RM50,000 / 1 year. (Brief 1980.)
-- **Penal Code s.504** — intentional insult with intent to provoke breach of the peace. 2 years.
-- **Penal Code s.298, 298A** — religious-feeling and disharmony provisions. 1–5 years.
-- **Special Court (Federal Constitution Article 182)** — for offences by Rulers personally. Not relevant to lèse-majesté.
+10. **Federal Constitution Article 150** — Emergency proclamation by the Agong on Cabinet advice. Ordinances during emergency have the force of law without parliamentary passage. (Brief: `coa-emergency-proclamation-non-justiciable.md`. Not in play in 2026 Q2.)
 
-### The Akta Kedaulatan Raja proposal (the new statute under discussion)
+11. **Federal Constitution Article 182** — Special Court for civil and criminal proceedings against a Ruler in his personal capacity. The post-1993 mechanism for accountability that does not impinge on Article 181.
 
-- **Source**: PUTRA party president Ibrahim Ali's public proposal on 16 May 2026 (Harakah Daily, FMT, Malaysiakini, Kosmo coverage). *Not a government bill.* No Cabinet drafting instruction has been confirmed in primary sources reviewed.
-- **Reported provisions**: detention without warrant by senior police officer for up to 2 weeks investigation; preventive detention up to 2 years; Royal Sovereignty Council to "examine and recommend." Modelled on the repealed ISA.
-- **Stated rationale**: existing laws (Sedition Act, CMA, Penal Code) are inadequate against "insults, treason and provocation" against the royal institution and "the position of Islam."
-- **Constitutional question the bill would raise**: whether preventive detention without trial for speech about the constitutional monarch can be reconciled with Articles 5 (life and liberty), 8 (equality), 10 (expression), 121 (judicial power) of the Federal Constitution; and whether Conference of Rulers concurrence under Article 38 would be required given the bill touches Article 181 territory.
+12. **Eighth Schedule, Federal Constitution** — Essential provisions for state constitutions, including: the executive authority of the state is vested in the Ruler; the Ruler shall act in accordance with Exco advice in the exercise of his functions, except for the limited discretionary powers reserved to him.
 
-### Sentencing-level embedding of royal authority
+13. **Laws of the Constitution of Selangor 1959 (the state constitution applicable here)** — Article 50 vests the executive authority of the state in the Sultan; Articles set out the Exco's role in formal decision-making; Schedule defines the Sultan's discretionary powers.
 
-- **Child Act 2001 s.97** — "at the Sultan's pleasure" detention. Live case: Taiping pair, Perak Sultan's pleasure detention, Court of Appeal denial of bail 16 May 2026 (radar signal #661). This is the cleanest *present-day* legal embedding of genuine royal discretion in the criminal-procedure code.
+14. **Ninth Schedule, State List** — Land use and licensing of trades/businesses (including livestock farming) are state matters. The Selangor pig-farming licensing system therefore falls within the State Authority's jurisdiction, of which the Sultan-in-Council is the constitutional apex.
+
+15. **Sentencing — Child Act 2001, Section 97** — "At the Sultan's pleasure" / "At the Yang di-Pertuan Agong's pleasure." Live case: Taiping pair, Perak Sultan's pleasure detention, Court of Appeal denial of bail 16 May 2026. The cleanest present-day legal embedding of royal discretion in Malaysian criminal procedure.
+
+### The existing statutes that already protect the royal institution
+
+- **Sedition Act 1948, s.3(1)(f) read with s.4(1)** — Seditious tendency to question Article 181 matters. Penalty up to RM5,000 fine or 3 years' jail (first offence). Extended to electronic publication in the 2015 amendments. *In 2025 charges hit a five-year high per SUARAM*; CIJ tallied 233 arrests/investigations under expression-restricting laws in 2025 (brief 1980).
+- **Communications and Multimedia Act 1998, s.233(1)(a)** — Post-*Heidy Quah* (CoA Aug 2025; FC appeal pending Nov 2025), "obscene, indecent, false, menacing … abuse, threaten or harass" survives. RM50,000 / 1 year. (Brief 1980.)
+- **Penal Code s.504** — Intentional insult with intent to provoke breach of the peace. 2 years.
+- **Penal Code ss.298, 298A** — Religious-feeling and disharmony provisions. 1-5 years.
+
+### The proposed Akta Kedaulatan Raja
+
+- **Source**: PUTRA party president Ibrahim Ali, public proposal 16 May 2026.
+- **Status**: Public policy proposal addressed to government; not a Cabinet bill; no draft text in the public domain at brief close.
+- **Reported provisions** (across FMT, Malaysiakini, Kosmo, Harakah Daily, Sinar Harian summaries): detention without warrant by a senior police officer up to two weeks for investigation; preventive detention up to two years; establishment of a Royal Sovereignty Council to examine offences and make recommendations. Source variance on the precise detention windows — brief will report as "reported provisions" and not as enacted text.
+- **Stated rationale by the proposer**: existing statutes are characterised as insufficient against "insults, treason and provocation" against the royal institution and the position of Islam.
+- **Constitutional anchor a future bill would draw from**: Article 181 (Rulers' sovereignty); Article 3 (Islam as religion of the Federation); Article 38 concurrence likely to be required if the bill in its enacted form affects matters within Articles 38, 70, or 71.
+- **Comparator jurisdictions for lèse-majesté statutes**: Thailand (Penal Code s.112 — 3 to 15 years), Spain (Penal Code arts. 490-491), Denmark (Penal Code s.115 — interpreted with European Convention free-expression considerations), Netherlands, Cambodia. Each statute reflects the legislative balance struck in that constitutional monarchy. (LawShun comparative summary; ARTICLE 19 commentary.)
 
 ## KEY STATISTICS
 
-- **~5,000** — attendees at Daulat Tuanku rally, Shah Alam, 16 May 2026 (FMT). Malaysiakini reported "3,000+." Use FMT figure with the variance noted.
-- **~300** — Malay NGOs registered as rally co-organisers per FMT.
+- **~5,000** — attendees at Daulat Tuanku rally, Shah Alam, 16 May 2026 (FMT). Malaysiakini reported "3,000+." Police estimates not in the sources reviewed.
+- **~300** — Malay NGOs as rally co-organisers (FMT, organisers' tally).
 - **21** — police reports filed over the doctored image of Sultan Sharafuddin by 27 April 2026 (TRP / Bukit Aman CID).
-- **2 weeks** — investigation detention without warrant proposed in the Akta Kedaulatan Raja.
-- **2 years** — preventive detention proposed under the same bill (the figure that equals or exceeds the original ISA).
-- **5** — constitutional routes by which royal will can be converted into binding law (Articles 66, 38, 150, state-enactment assent, Child Act s.97 sentencing).
-- **0** — number of routes by which a royal decree on its own becomes binding statutory law without legislative or cabinet action.
-- **14 years** — between Najib's 2012 ISA-repeal-plus-Harmony-Act promise and the 2026 cabinet review (Brief 1980).
-- **233 vs 189** — CIJ tally of 2025 vs 2024 arrests/investigations under expression-restricting laws (Brief 1980).
-- **Article 8(2), Article 181** — the two constitutional clauses on either side of the collision: equality (Wong's argument) and royal sovereignty (the Sedition Act and proposed Akta Kedaulatan Raja's anchor).
+- **Three escalating decrees** — 12 Jan, 10 Feb, 7 May 2026 (Selangor Royal Office) on the pig-farming matter.
+- **12 February 2026** — Selangor State Exco (MMKN) formal adoption of the licensing stop.
+- **5** — constitutional routes by which royal will is converted into binding law (Articles 66 federal assent; 38 Conference concurrence on amendments to entrenched articles; 150 emergency ordinances; state Sultan-in-Council executive action via Article 71 + state constitution; Child Act s.97 sentencing).
+- **Article 71 + Eighth Schedule** — the constitutional basis for state-level Sultan-in-Council executive authority, the route used in the Selangor pig-farming case.
+- **Article 181** — sovereignty, prerogatives, powers and jurisdiction of the Rulers preserved.
+- **5 constitutional monarchies** with current lèse-majesté statutes for comparator (Thailand, Spain, Denmark, Netherlands, Cambodia).
+- **233 vs 189** — CIJ tally of 2025 vs 2024 arrests/investigations under expression-restricting laws (Brief 1980 carried over).
 
 ## 12-DIMENSION RISK ASSESSMENT
 
-1. **Sentiment** — HIGH: Issue is structurally about a *legal-mechanism gap*, which is unobjectionable in the abstract, but the trigger case is highly emotionally polarising. Mitigation: keep the editorial frame on the *constitutional route* and *the gap between decree and statute*. Do not characterise the substance of any decree or any specific speech.
-2. **Political** — CRITICAL: Live partisan controversy with PH/Madani govt, DAP, UMNO, PAS, PN, PUTRA, PERKASA all named. Issue 1980 already framed Zahid's call; this brief must not align with any of these. Mitigation: report what each said; do not characterise motives.
-3. **Ethnic** — HIGH: The proposed bill explicitly pairs royal-institution protection with "the position of Islam." 3R cardinal. Mitigation: critique the legislative pathway and statutory redundancy, not any ethnic community. Do not characterise "Malay" or "Chinese" community sentiment.
-4. **Religious** — **CRITICAL**: 3R cardinal. The pig-farming decree is read as a religious/cultural matter by attackers and as a land-use/economic matter by defenders. Mitigation: T4A does **not** opine on whether pig farming should be permitted; the brief's frame is the constitutional pathway, not the substantive merits of the policy.
-5. **Royalty (3R)** — **CRITICAL**: Verification bar is HIGHEST. Per T4A Accuracy Standard, claims about the Rulers' views, intentions, or preferences require **two independent primary sources**. **What we will say**: there is no public Conference of Rulers statement on Akta Kedaulatan Raja; the Selangor Royal Office statements of 7 May and 19 May are primary sources; the 12 Jan and 10 Feb decrees are reported by multiple outlets. **What we will NOT say**: anything about what the Sultan or any Ruler *would* want the federal Parliament to do; whether the Sultan supports the Akta Kedaulatan Raja proposal (no statement from him on it exists in dataset); whether Conference of Rulers has been or will be consulted on this proposal.
-6. **Narrative** — CRITICAL: Three live narratives — (i) royal authority is being insulted and must be defended; (ii) elected officials are being disciplined for raising a constitutional question, which is itself an erosion; (iii) the proposed Akta Kedaulatan Raja is harsher than the ISA it would imitate. All three have factual support. T4A must report all three explicitly and identify the constitutional question (Article 8(2) vs Article 181) as the pivot.
-7. **Completeness** — MEDIUM: Mainstream coverage focuses on the rally and Wong's apology demand; the *constitutional mechanism* angle is what T4A adds. The 14-year history of the National Harmony Bill (Brief 1980) is the comparator that closes the completeness gap.
-8. **Temporal** — LOW: All events within 2026 Q1-Q2, fresh sources, no archive risk.
-9. **Confidence** — MEDIUM-HIGH on the events themselves (multi-source); LOWER on motive characterisations (do not include).
-10. **Sources** — MEDIUM-HIGH: Coverage spans the spectrum (see Source Spectrum Check below). Sufficient for the planned framing.
-11. **Geographic** — LOW: Selangor-specific trigger; federal-law implications via the Akta Kedaulatan Raja.
-12. **Economic** — LOW-MEDIUM: Pork-import economics (RM, jobs in pig farming sector) exist as context but are not the frame. Brief does not develop them.
+1. **Sentiment** — HIGH: Live polarising topic. Mitigation: keep the frame *factual and legal*. Report what the Constitution does, what the case showed, what is proposed, who reacted how. Do not adjudicate the underlying policy debate.
+2. **Political** — CRITICAL: PH/Madani govt, DAP, UMNO, PAS, PN, PUTRA, PERKASA all named. Mitigation: report what each said, do not characterise motives. T4A does not align with any party position on this case.
+3. **Ethnic** — HIGH: 3R cardinal. Mitigation: critique nothing about any ethnic community; report only the constitutional and statutory mechanics and the named events.
+4. **Religious** — CRITICAL: 3R cardinal. The pig-farming policy debate touches religion-adjacent considerations. Mitigation: T4A does **not** opine on whether pig farming should be permitted, what religious or cultural views inform the decree, or whether the Sultan's Article 3(2) position made the decree binding. Frame is the *constitutional and statutory mechanism*, full stop.
+5. **Royalty (3R)** — CRITICAL: Verification bar HIGHEST. Per T4A Accuracy Standard, claims about the Rulers require two independent primary sources.
+   - **What we will say**: the Sultan's decrees are constitutionally grounded under Articles 71, 181, 3(2), and the Selangor State Constitution; MMKN's adoption is the lawful state-executive uptake mechanism; the proposed Akta Kedaulatan Raja exists alongside Sedition Act s.3(1)(f) and other extant statutes that already anchor in Article 181.
+   - **What we will NOT say**: anything about what the Sultan or any Ruler *wants* Parliament to do; whether the Sultan or any Ruler supports or opposes the Akta Kedaulatan Raja; whether the Conference of Rulers has discussed or is expected to discuss the proposal (no public statement exists).
+6. **Narrative** — HIGH: Multiple live narratives. T4A reports the *constitutional mechanism* and the *facts of the case*; the narratives sit on top of those facts.
+7. **Completeness** — MEDIUM: Mainstream coverage centres on the rally, the apology demand, and the speech. The *constitutional mechanism* — Article 71, Eighth Schedule, State Constitution Article 50, Sultan-in-Council via MMKN — is what T4A adds. This is *explanatory* journalism, not advocacy.
+8. **Temporal** — LOW: All events within 2026 Q1-Q2, fresh sources.
+9. **Confidence** — HIGH on the constitutional mechanism, the dated events, and the statutory text. LOWER on motive characterisations (excluded). MEDIUM on the precise provisions of the proposed Akta Kedaulatan Raja (proposal not yet a draft) — flagged in contradictions.
+10. **Sources** — MEDIUM-HIGH: spectrum coverage on the events; thin on civil-society commentary on the Akta Kedaulatan Raja (proposal is one week old). The thinness is noted, not filled.
+11. **Geographic** — LOW: Selangor-specific trigger; federal-statute implications via Akta Kedaulatan Raja proposal.
+12. **Economic** — LOW-MEDIUM: pork-import economics is context; not the frame.
 13. **Gender** — LOW.
 
 ### 3R SPECIAL CAUTION
 
-This brief carries the full triple-R load — Religion, Race (Malay/Chinese implicit in the pig-farming framing), and Royalty. Discipline applies at every card draft:
+This brief carries the full triple-R load — Religion, Race (implicit in pig-farming framing), and Royalty. Discipline at every card draft:
 
-- We do **not** characterise the substance of pig farming as a moral or religious question; that is the underlying policy debate and T4A is not adjudicating it.
-- We do **not** characterise what the Sultan *wants the legislature to do* about Akta Kedaulatan Raja — no public statement from him on it exists.
-- We do **not** characterise Wong, Liu, or Pua's *motives*; we report what they said and the constitutional clauses they cited.
-- We **do** describe (i) the constitutional pathway by which a royal decree could be converted into binding law (it has not been here); (ii) the gap between that formal pathway and the political-pressure pathway in active use; (iii) the redundancy question against the existing Sedition Act/CMA/Penal Code stack.
+- We do **not** characterise the substance of the pig-farming policy debate as moral or religious.
+- We do **not** characterise what the Sultan or any Ruler wants Parliament to do about Akta Kedaulatan Raja.
+- We do **not** characterise the motives of Wong, Liu, Pua, or the rally attendees.
+- We **do** describe (i) the lawful constitutional pathway by which the Sultan's decree became operative state policy through Article 71 + Selangor Article 50 + MMKN adoption; (ii) the existing statutes (Sedition Act s.3(1)(f), CMA s.233, Penal Code 298/298A/504) that already anchor in Article 181; (iii) the proposed Akta Kedaulatan Raja as a public proposal not yet a Cabinet bill, with reported provisions and identified proposer; (iv) the lèse-majesté comparator landscape.
+
+The editorial posture is *non-partisan explanation*. The Sultan's authority within its proper constitutional sphere is real and binding; the proposed new statute is one of several legitimate policy choices for Parliament; readers are equipped to assess both.
 
 ### Stage 5 escalation
 
-Per CLAUDE.md, Stage 5 (Grok Contrarian Stress-Test) is re-enabled for this issue because Religion + Royalty are both marked CRITICAL, and the editorial take is sharp.
+Per CLAUDE.md, Stage 5 (Grok Contrarian Stress-Test) is re-enabled for this issue because Religion + Royalty are both marked CRITICAL. The stress-test will check that the brief and resulting cards do not understate royal constitutional authority (a real risk given the 3R-cautious culture in liberal commentary) and do not overstate it either (the constitution sets boundaries as well as grants powers).
 
 ## CONTRADICTIONS
 
-- **Attendance — 5,000 vs 3,000**: FMT and Malaysia Gazette report ~5,000; Malaysiakini headline says "3k attendees." We will use FMT's number with the variance footnoted. Police estimates were not in the sources reviewed.
-- **"Akta Kedaulatan Raja" provisions — 2 weeks vs 2 years**: Different sources emphasise different detention windows. FMT's "Ibrahim Ali calls for ISA-like law" headline implies the broad parallel; the specific clauses (2-week investigation, 2-year preventive) come from search synthesis across Malaysiakini and Kosmo summaries. We will say *"a bill modelled on the ISA, with reported provisions including detention without warrant for investigation up to two weeks and preventive detention up to two years"* and footnote the source variance. We will **not** quote the bill text — it does not yet exist as a tabled draft.
-- **Whether the proposal is the government's or one party's**: The radar headline (#407) reads "kerajaan diberitahu" (the government is told). Coverage clearly identifies Ibrahim Ali / PUTRA as the proposer, **not** the Madani Cabinet. The PM's own 8 May "on hold first" framing on Bukit Tagar suggests no Cabinet endorsement. We will say *"a civil-society-and-party proposal Ibrahim Ali and PUTRA have asked the government to enact"*, not *"a government bill"*.
-- **Selangor exco position vs Sultan decree**: The Selangor State Exco formally adopted the total ban after the 10 Feb decree. So the *operative* legal action in Selangor is *State Exco policy*, not the decree itself — the decree was honoured by being converted into policy. We will note this — it is the cleanest illustration of how royal decrees actually become operative law (through executive uptake), distinct from the *new statute* pathway the Akta Kedaulatan Raja represents.
-- **Tony Pua's actual remarks**: Search returns characterisations ("limited power") but not a direct quote. We will reference the constitutional fact (Article 40, 66 — constitutional monarchy) and the *reaction* to his remarks (police reports filed), without quoting words we have not verified.
+- **Attendance — 5,000 vs 3,000**: FMT and Malaysia Gazette report ~5,000; Malaysiakini headline "3k attendees." Police estimates not in sources reviewed. Brief will use FMT's figure with the variance footnoted.
+- **"Akta Kedaulatan Raja" provisions — exact detention windows**: Source variance across FMT, Malaysiakini, Kosmo on whether 2-week investigation + 2-year preventive detention is the proposer's stated provision or a characterisation. We will say *"reported provisions include detention without warrant for investigation up to two weeks and preventive detention up to two years,"* footnote the source variance, and not quote a draft text that does not yet exist.
+- **Whose proposal it is**: The radar headline "kerajaan diberitahu" (the government is told) is descriptive; coverage clearly identifies Ibrahim Ali / PUTRA as the proposer, not the Cabinet. PM Anwar's 8 May "on hold first" framing on Bukit Tagar suggests no Cabinet endorsement of either the underlying ban scope or the new statute. We will say *"a public proposal addressed to government by Ibrahim Ali and PUTRA"*, not *"a government bill"*.
+- **Whether the Sultan's decree had legal effect on its own or only via MMKN**: The honest constitutional answer is *both* — the Sultan acted in his capacity as the constitutional apex of state executive authority (Article 50 of the Selangor Constitution + Article 71 of the Federal Constitution), and MMKN's formal adoption was the operative state-Exco uptake. Brief will explain this Sultan-in-Council mechanism rather than treat either pole as the whole story.
+- **Whether Wong Siew Ki can be prosecuted for the 23 April speech**: Article 63 of the Federal Constitution protects legislative-assembly speech from legal action. The reports filed are *political reports about her conduct*; the prosecutions to date are over *online insults of the Sultan* by other individuals, not the Wong speech itself. Brief must distinguish these two streams clearly.
+- **Whether the proposed Akta Kedaulatan Raja exceeds the repealed ISA**: Reported provisions are similar in detention length to ISA. Whether they exceed it depends on the (not-yet-existing) full draft text. Brief reports the proposer's stated parameters and the comparator with existing protective statutes; it does not characterise the proposal as worse or better than ISA.
 
 ## SOURCE SPECTRUM CHECK
 
-- **Government-aligned / coalition organs**: NST, Bernama-aligned outlets, BN Comms, UMNO Online — primarily Zahid speech (Brief 1980), some pig-farming coverage. 
-- **Independent Malaysian press**: FMT, Malay Mail, Malaysiakini, The Star, The Edge, The Vibes, MalaysiaNow — multi-angle coverage of decrees, rally, Wong/Liu/Pua. Primary substrate.
-- **Opposition / PN-aligned organs**: Harakah Daily (PAS), Sinar Harian, Kosmo — primarily Akta Kedaulatan Raja proposal and rally framing.
-- **Royal Office direct**: Selangor Royal Office statements 7 May and 19 May — primary source for the decrees and the Rukun Negara directive.
-- **Civil-society / rights bodies**: Same set as Brief 1980 (Bar Council, SUARAM, SUHAKAM, CIJ, Amnesty, HRW). **None has yet issued a public statement on the Akta Kedaulatan Raja proposal** in the dataset (proposal is one week old at brief close). This is itself a fact worth noting.
-- **Legal commentary**: Brief 1980's set on CMA s.233/Heidy Quah applies. No legal commentary specifically on Akta Kedaulatan Raja has surfaced in the dataset.
-- **International rights bodies / press**: Not yet covering the May 2026 events meaningfully. Brief carries forward 1980's set for the broader expression-law context.
+- **Government-aligned / coalition organs**: NST, Bernama, BN Comms, UMNO Online — Bernama confirms the Sultan's three policy directives; NST carries the "no consent" coverage.
+- **Independent Malaysian press**: FMT, Malay Mail, Malaysiakini, The Star, The Edge, The Vibes, MalaysiaNow — primary substrate.
+- **Opposition / PN-aligned organs**: Harakah Daily (PAS), Sinar Harian, Kosmo Digital — primarily Akta Kedaulatan Raja and rally framing.
+- **Royal Office direct**: Selangor Royal Office statements 7 May, 19 May 2026 — primary source for the decrees and the Rukun Negara directive.
+- **State-government source**: MB Amirudin's 12 February 2026 confirmation that Selangor will rely on pork imports and stop pig-farming licensing — direct executive-branch primary source.
+- **Civil-society / rights bodies**: Brief 1980's set on enforcement data. No public statement on the Akta Kedaulatan Raja proposal in the dataset.
+- **Legal commentary**: Malaysian Bar's broad essay on the *powers and functions of state rulers* — primary scholarly reference for Article 71, Eighth Schedule, and the constitutional-versus-absolutist distinction. The Bar's piece is the cleanest primary-source treatment of the mechanism the brief explains.
+- **International comparator**: LawShun (lèse-majesté country summary), Wikipedia Lèse-majesté article, ARTICLE 19 Southeast Asia analysis, Foreign Policy Association — comparator landscape for the proposed statute.
+- **Constitutional law databases**: Constitute Project (Malaysia 1957 rev. 2007), University of Minnesota Human Rights Library Malaysia constitution PDF, CommonLII — primary text of Articles 32, 38, 40, 63, 66, 71, 150, 181, 182 and Eighth Schedule.
 
-Coverage spans the spectrum on the *events* (decrees, rally, statements). It does **not** yet span the spectrum on the *Akta Kedaulatan Raja proposal itself* — civil-society pushback in the dataset is sparse. We will explicitly note this absence rather than fill it with characterisations.
+Coverage spans the political spectrum on the events. It does not yet span the spectrum on the Akta Kedaulatan Raja proposal specifically — civil-society and Bar-Council commentary is thin (proposal is one week old). Brief notes this absence and reports only what is on the public record.
 
 ## RECOMMENDED LENSES
 
-**Primary:** Legal, Political, Rights
-**Secondary:** Governance, Historical
+**Primary:** Legal, Governance, Historical
+**Secondary:** Political, Rights
 
-(Avoiding "Religious" as primary lens to keep the editorial frame on the constitutional mechanism, not the substance of the decree. Avoiding "Social" to keep the analysis concrete. The Theological lens is *not* appropriate — the brief takes no position on the substance of religious or cultural views about the underlying policy.)
+(Legal carries the constitutional mechanism — Article 71, Eighth Schedule, Article 181, State Constitution Article 50. Governance carries the Sultan-in-Council pathway and MMKN adoption. Historical carries the lèse-majesté comparator landscape and the 1993 / 2012 reference points. Political carries the rally and the Akta Kedaulatan Raja proposer. Rights carries the existing-statute enforcement context from issue 1980.
+
+Religious lens deliberately *not* used as a card lens — keeps the editorial frame on the constitutional and statutory mechanism, not the substance of religious considerations underlying the decree. Theological lens not appropriate.)
 
 ## SOURCES
 
@@ -187,55 +219,60 @@ Coverage spans the spectrum on the *events* (decrees, rally, statements). It doe
 3. Malay Mail, "Sultan Sharafuddin says no to pig farming in Selangor, urges pork imports to meet demand", 10 Feb 2026, https://www.malaymail.com/news/malaysia/2026/02/10/sultan-sharafuddin-says-no-to-pig-farming-in-selangor-urges-pork-imports-to-meet-demand/208707
 4. CodeBlue (Galen Centre), "Sultan Sharafuddin Wants Total Pig Farming Ban In Selangor", Feb 2026, https://codeblue.galencentre.org/2026/02/sultan-sharafuddin-wants-total-pig-farming-ban-in-selangor/
 5. Malay Mail, "Selangor Royal Office: Sultan decrees 'full stop' on pig farming in state", 7 May 2026, https://www.malaymail.com/news/malaysia/2026/05/07/selangor-royal-office-sultan-decrees-full-stop-on-pig-farming-in-state/219080
-6. NST, "[UPDATED] Sultan of Selangor makes it clear, no consent for pig farming in state", May 2026, https://www.nst.com.my/news/regional/2026/05/1434391/updated-sultan-selangor-makes-it-clear-no-consent-pig-farming-state
-7. Malay Mail, "'Come once a week': Selangor Sultan asks Ronnie Liu, DAP rep to visit Rukun Negara monument over pig farming controversy", 19 May 2026, https://www.malaymail.com/news/malaysia/2026/05/19/come-once-a-week-selangor-sultan-asks-ronnie-liu-dap-rep-to-visit-rukun-negara-monument-over-pig-farming-controversy/220560
-8. FMT, "Selangor sultan tells DAP rep, former exco to better understand Rukun Negara", 19 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/19/selangor-sultan-tells-dap-rep-former-exco-to-better-understand-rukun-negara
+6. Bernama, "Sultan Of Selangor Sets Three Policy Directives For State Pig Farming Operations", https://www.bernama.com/en/general/news.php?id=2511685
+7. NST, "[UPDATED] Sultan of Selangor makes it clear, no consent for pig farming in state", May 2026, https://www.nst.com.my/news/regional/2026/05/1434391/updated-sultan-selangor-makes-it-clear-no-consent-pig-farming-state
+8. Malay Mail, "'Come once a week': Selangor Sultan asks Ronnie Liu, DAP rep to visit Rukun Negara monument over pig farming controversy", 19 May 2026, https://www.malaymail.com/news/malaysia/2026/05/19/come-once-a-week-selangor-sultan-asks-ronnie-liu-dap-rep-to-visit-rukun-negara-monument-over-pig-farming-controversy/220560
 
-**Tier B — The constitutional question raised in the state assembly**
-9. Malaysiakini, "Pig farming row: What Wong said and what was 'lost' in translation", 23 Apr 2026, https://www.malaysiakini.com/news/773525
-10. FMT, "Seri Kembangan rep stands by pig farming proposal", 23 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/23/seri-kembangan-rep-stands-by-pig-farming-proposal
-11. NST, "Seri Kembangan rep's pig farming proposal merely technical solution, says ex-DAP leader", Apr 2026, https://www.nst.com.my/news/nation/2026/04/1427713/seri-kembangan-reps-pig-farming-proposal-merely-technical-solution-says
-12. Buletin Mutiara, "Penang DAP backs Wong amid controversy over state assembly remarks", Apr 2026, https://www.buletinmutiara.com/penang-dap-backs-wong-amid-controversy-over-state-assembly-remarks/
-13. The Star, "Selangor Opposition wants Seri Kembangan rep to apologise over remarks, backs Selangor Ruler's decree", 19 May 2026, https://www.thestar.com.my/news/nation/2026/05/19/selangor-opposition-wants-seri-kembangan-rep-to-apologise-over-remarks-backs-selangor-rulers-decree
-14. FMT, "DAP rep acknowledges Selangor ruler's call to uphold Rukun Negara", 20 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/20/dap-rep-acknowledges-selangor-rulers-call-to-uphold-rukun-negara
+**Tier B — Selangor State Exco / MMKN adoption (primary executive uptake)**
+9. CodeBlue, "MB: Selangor To Completely Import Pork, Ban Pig Farming", Feb 2026, https://codeblue.galencentre.org/2026/02/mb-selangor-to-completely-import-pork-ban-pig-farming/
+10. Business Today, "Selangor Decides To Stop Issuing Pig Farm Licences", 12 Feb 2026, https://www.businesstoday.com.my/2026/02/12/selangor-decides-to-stop-issuing-pig-farm-licences/
+11. FMT explainer, "Explained: how Selangor's pig farming proposal spiralled into controversy", 26 Jan 2026, https://www.freemalaysiatoday.com/category/nation/2026/01/26/explained-how-selangors-pig-farming-proposal-spiralled-into-controversy
 
-**Tier C — The Daulat Tuanku rally and political mobilisation**
-15. FMT, "Some 5,000 attend rally in solidarity with Selangor sultan", 16 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/16/some-5000-attend-rally-in-solidarity-with-selangor-sultan
-16. FMT (bahasa), "5,000 sertai Himpunan Daulat Tuanku di Shah Alam", 16 May 2026, https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/05/16/5000-sertai-himpunan-daulat-tuanku-di-shah-alam
-17. Malaysiakini, "'Daulat Tuanku' rally: Reject DAP in GE16 — PAS leader tells 3k attendees", 16 May 2026, https://www.malaysiakini.com/news/775338
-18. FMT, "300 NGOs to also protest in defence of royalty on Saturday", 13 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/13/300-ngos-to-also-protest-in-defence-of-royalty-on-saturday
-19. Malaysia Gazette, "Himpunan Daulat Tuanku #FullStop", 16 May 2026, https://malaysiagazette.com/2026/05/16/himpunan-daulat-tuanku-fullstop/
+**Tier C — The state assembly speech and elected-representative position**
+12. Malaysiakini, "Pig farming row: What Wong said and what was 'lost' in translation", 23 Apr 2026, https://www.malaysiakini.com/news/773525
+13. FMT, "Seri Kembangan rep stands by pig farming proposal", 23 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/23/seri-kembangan-rep-stands-by-pig-farming-proposal
+14. The Star, "Selangor Opposition wants Seri Kembangan rep to apologise over remarks, backs Selangor Ruler's decree", 19 May 2026, https://www.thestar.com.my/news/nation/2026/05/19/selangor-opposition-wants-seri-kembangan-rep-to-apologise-over-remarks-backs-selangor-rulers-decree
+15. FMT, "DAP rep acknowledges Selangor ruler's call to uphold Rukun Negara", 20 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/20/dap-rep-acknowledges-selangor-rulers-call-to-uphold-rukun-negara
+16. FMT, "Selangor sultan tells DAP rep, former exco to better understand Rukun Negara", 19 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/19/selangor-sultan-tells-dap-rep-former-exco-to-better-understand-rukun-negara
+
+**Tier D — The Daulat Tuanku rally**
+17. FMT, "Some 5,000 attend rally in solidarity with Selangor sultan", 16 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/16/some-5000-attend-rally-in-solidarity-with-selangor-sultan
+18. FMT (bahasa), "5,000 sertai Himpunan Daulat Tuanku di Shah Alam", 16 May 2026, https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/05/16/5000-sertai-himpunan-daulat-tuanku-di-shah-alam
+19. Malaysiakini, "'Daulat Tuanku' rally: Reject DAP in GE16 — PAS leader tells 3k attendees", 16 May 2026, https://www.malaysiakini.com/news/775338
 20. FMT, "Umno lodges several reports against DAP rep over pig farming issue", 27 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/27/umno-lodges-several-reports-against-dap-rep-over-pig-farming-issue
 21. TRP, "Police Investigating Doctored Image Of Selangor Sultan — 21 Reports Filed, Bukit Aman CID Takes Over", 27 Apr 2026, https://www.therakyatpost.com/news/malaysia/2026/04/27/police-investigating-doctored-image-of-selangor-sultan-21-reports-filed-bukit-aman-cid-takes-over/
 
-**Tier D — The proposed Akta Kedaulatan Raja**
+**Tier E — The proposed Akta Kedaulatan Raja**
 22. FMT, "Gubal RUU khas tangani penghina institusi diraja, kerajaan diberitahu", 16 May 2026, https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/05/16/gubal-ruu-khas-tangani-penghina-institusi-diraja-kerajaan-diberitahu
 23. FMT, "Ibrahim Ali calls for ISA-like law to protect royalty from insults", 16 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/16/ibrahim-ali-calls-for-isa-like-law-to-protect-royalty-from-insults
 24. Malaysiakini, "Putra moots harsher than ISA law to defend royal institution", 16 May 2026, https://www.malaysiakini.com/news/774916
 25. Harakah Daily (PAS organ), "PUTRA Selangor gesa RUU Akta Kedaulatan Raja digubal", 17 May 2026, https://harakahdaily.net/2026/05/17/putra-selangor-gesa-ruu-akta-kedaulatan-raja-digubal/
 26. Kosmo Digital, "Gubal RUU Akta Kedaulatan Raja hukum pihak cemar institusi Diraja", 16 May 2026, https://www.kosmo.com.my/2026/05/16/gubal-ruu-akta-kedaulatan-raja-hukum-pihak-cemar-institusi-diraja/
 27. Sinar Harian, "Gubal undang-undang khusus tangani derhaka terhadap institusi raja", https://www.sinarharian.com.my/article/652179/berita/politik/gubal-undang-undang-khusus-tangani-derhaka-terhadap-institusi-raja
-28. Malaysiakini, "YOURSAY | Ibrahim wants to drag M'sia back into authoritarianism", 16 May 2026, https://www.malaysiakini.com/news/775000
 
-**Tier E — Tony Pua "limited power" controversy**
-29. MalaysiaNow, "DAP's 'policy man' sparks backlash over remarks on royal decrees amid Sultan's Rukun Negara reminder", 19 May 2026, https://www.malaysianow.com/news/2026/05/19/daps-policy-man-sparks-backlash-over-remarks-on-royal-decrees-amid-sultans-rukun-negara-reminder
-30. FMT, "Umno sec-gen slams 'arrogant, rude' Pua over comments on monarchy", 20 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/20/umno-sec-gen-slams-arrogant-rude-pua-over-comments-on-royal-institution
-31. TRP, "Royal Respect Row Erupts As Tony Pua's Rukun Negara Remarks Draw Backlash", 20 May 2026, https://www.therakyatpost.com/news/2026/05/20/royal-respect-row-erupts-as-tony-puas-rukun-negara-remarks-draw-backlash/
-
-**Tier F — Constitutional text (primary)**
-32. Federal Constitution (AGC reprint) — Articles 3, 8, 10, 32, 38, 40, 66, 70, 71, 121, 150, 152, 153, 181, 182.
+**Tier F — Constitutional law primary sources**
+28. The Malaysian Bar, "Powers and functions of state rulers", https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/powers-and-functions-of-state-rulers
+29. Federal Constitution (AGC reprint, 1 November 2010) — Articles 3, 8, 32, 38, 40, 63, 66, 71, 121, 150, 152, 153, 181, 182; Eighth Schedule. Available via LPR ADB mirror: https://lpr.adb.org/sites/default/files/resource/719/malaysia-constitution.pdf.pdf
+30. Constitute Project, "Malaysia 1957 (rev. 2007) Constitution", https://www.constituteproject.org/constitution/Malaysia_2007
+31. Wikipedia, "Laws of the Constitution of Selangor 1959" — overview of Article 50 and the Selangor State Constitution structure.
+32. Wikipedia, "Constitution of Malaysia" — general primary-text reference.
 33. Sedition Act 1948 — Federal Gazette / AGC consolidated text.
 34. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text.
 35. Penal Code (Act 574), ss.298, 298A, 504 — Federal Gazette / AGC consolidated text.
 36. Child Act 2001, s.97 — Federal Gazette / AGC consolidated text.
-37. Selangor State Constitution — Selangor state gazette.
-38. ISA Repeal Act 2012 — Federal Gazette.
+37. Internal Security Act 1960 (now repealed) and ISA Repeal Act 2012 — for the historical comparator.
 
-**Tier G — Adjacent T4A coverage**
-39. T4A issue 1980 — Zahid "firm action" speech and existing-laws picture. `src/data/issues/1980.json`; brief `engine/briefs/zahid-insults-firm-action-vs-existing-laws.md`.
-40. T4A brief `harmony-reconciliation-bill-comparator-model.md` — the 14-year history of the SKRN Harmony Bill, comparator jurisdictions, and the "mediation over punishment" alternative track.
-41. T4A brief `coa-emergency-proclamation-non-justiciable.md` — Article 150 jurisprudence.
+**Tier G — Lèse-majesté comparator landscape**
+38. LawShun, "Global Lèse Majesté Laws: Nations Protecting Royal Dignity And Authority", https://lawshun.com/article/which-countries-have-lese-majeste-laws
+39. Wikipedia, "Lèse-majesté", https://en.wikipedia.org/wiki/L%C3%A8se-majest%C3%A9
+40. ARTICLE 19, "Blog: How lèse-majesté laws are eroding free speech in Southeast Asia", https://www.article19.org/resources/lese-majeste-laws-eroding-free-speech-southeast-asia/
+41. Foreign Policy Association, "Thailand's Lèse Majesté Law", https://fpa.org/thailands-lese-majeste-law/
 
-**Source-spectrum tally**: government-aligned (3), opposition-aligned (3), independent (12+), royal office direct (2 statements), civil-society/rights bodies (carried from 1980), legal commentary (carried from 1980), international rights bodies (carried from 1980, none yet on Akta Kedaulatan Raja). Spectrum coverage is sufficient for the rally + decree story; explicitly thin on civil-society pushback against Akta Kedaulatan Raja, which the brief will note rather than fill.
+**Tier H — Adjacent T4A coverage**
+42. T4A issue 1980 — Zahid "firm action" speech. `src/data/issues/1980.json`; brief `engine/briefs/zahid-insults-firm-action-vs-existing-laws.md`.
+43. T4A brief `harmony-reconciliation-bill-comparator-model.md` — National Harmony & Reconciliation Bill / SKRN history and comparators.
+44. T4A brief `coa-emergency-proclamation-non-justiciable.md` — Article 150 jurisprudence.
 
-**Primary-source count**: 12 primary (Selangor Royal Office statements ×3, Sultan's decrees ×3 as reported across multi-source corroboration, constitutional text, statutory text). Exceeds the ≥8 minimum.
+**Source-spectrum tally**: government-aligned 4 (NST, Bernama, BN Comms, UMNO Online via brief 1980), opposition-aligned 3 (Harakah Daily, Kosmo, Sinar Harian), independent 15+, Royal Office direct 2 statements + state-government 1 confirmation, civil-society/rights bodies (carried from 1980, plus Malaysian Bar primary scholarly piece on state rulers), legal commentary (carried from 1980 + Bar piece + lèse-majesté comparator landscape).
+
+**Primary-source count**: 14 primary (Selangor Royal Office statements ×3, Bernama government wire, MB Amirudin direct executive confirmation, Selangor Royal Office Rukun Negara directive, Federal Constitution AGC reprint, Sedition Act, CMA, Penal Code, Child Act, ISA Repeal Act, Eighth Schedule, Article 50 Selangor State Constitution, Malaysian Bar scholarly piece). Comfortably exceeds the ≥8 minimum.
