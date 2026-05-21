@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefourthangle.com/engine/sim/schema/cleavage.schema.json",
+  "title": "Cleavage",
+  "description": "A cleavage axis along which the political system organises competition. Modelled as situational and institutionally produced, not biological. See docs/research/malaysia-political-simulation-engine.md §3.4 and §9.2 (the no-ethnic-essentialism rule).",
+  "type": "object",
+  "required": ["id", "canonical_name", "axis", "institutional_history", "primary_sources"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/ULID" },
+    "canonical_name": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "axis": {
+      "type": "string",
+      "enum": ["ordinal", "categorical"]
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "ethnic-institutional",
+        "religious-institutional",
+        "regional",
+        "class-economic",
+        "urban-rural",
+        "generational",
+        "reform-status-quo",
+        "centralisation-devolution",
+        "other"
+      ]
+    },
+    "values": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 2,
+      "description": "Categorical values for the cleavage axis. For ordinal axes, the values are ordered low-to-high."
+    },
+    "institutional_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "description"],
+        "properties": {
+          "date": { "$ref": "common.schema.json#/$defs/PartialDate" },
+          "description": { "type": "string" },
+          "shaping_event": { "$ref": "common.schema.json#/$defs/EventRef" },
+          "shaping_institution": { "$ref": "common.schema.json#/$defs/InstitutionRef" }
+        }
+      },
+      "minItems": 1,
+      "description": "Required: the cleavage must be traceable to its institutional origins. Per §9.2 (no ethnic essentialism), every cleavage carries the history of the rules that produced it. e.g., the 'Bumiputera' cleavage has institutional history rooted in the 1948 Federation Agreement, Article 153 (1957), and the 1971 NEP."
+    },
+    "salience_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "salience"],
+        "properties": {
+          "date": { "$ref": "common.schema.json#/$defs/PartialDate" },
+          "salience": { "type": "number", "minimum": 0, "maximum": 1 },
+          "method": {
+            "type": "string",
+            "enum": ["survey", "expert-elicitation", "engine-inference", "documented-event"]
+          },
+          "source": { "$ref": "common.schema.json#/$defs/SourceRef" }
+        }
+      }
+    },
+    "primary_sources": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/SourceRef" },
+      "minItems": 1
+    },
+    "notes": { "type": "string" }
+  }
+}

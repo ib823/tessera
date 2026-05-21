@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefourthangle.com/engine/sim/schema/common.schema.json",
+  "title": "Common types for the simulation engine",
+  "description": "Shared definitions referenced by actor, event, institution, cleavage, and resource schemas. See docs/research/malaysia-political-simulation-engine.md §3.",
+  "$defs": {
+    "ULID": {
+      "type": "string",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "description": "Universally unique, lexicographically sortable identifier. 26 chars, Crockford's base32."
+    },
+    "ActorRef": {
+      "type": "string",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "description": "Reference to an Actor by ULID."
+    },
+    "EventRef": {
+      "type": "string",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "description": "Reference to an Event by ULID."
+    },
+    "InstitutionRef": {
+      "type": "string",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "description": "Reference to an Institution by ULID."
+    },
+    "CleavageRef": {
+      "type": "string",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "description": "Reference to a Cleavage by ULID."
+    },
+    "PartialDate": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+      "description": "ISO 8601 year (YYYY), year-month (YYYY-MM), or full date (YYYY-MM-DD). Partial dates allowed for pre-modern events where day-precision is unknown."
+    },
+    "Period": {
+      "type": "string",
+      "enum": ["P1", "P2", "P3", "P4", "P5", "P6", "P7"],
+      "description": "Regime period per malaysia-political-simulation-engine.md §1. P1 Sultanate (≈1400-1786), P2 Colonial (1786-1957), P3 Alliance (1957-1969), P4 NEP/BN (1969-1998), P5 Reformasi (1998-2008), P6 Tipping (2008-2018), P7 Hybrid (2018-present)."
+    },
+    "Confidence": {
+      "type": "string",
+      "enum": ["HIGH", "MED", "LOW"],
+      "description": "Source-and-corroboration confidence. HIGH = primary-source documented; MED = widely-reported, multiple sources; LOW = estimate or inference."
+    },
+    "SourceTier": {
+      "type": "integer",
+      "enum": [1, 2, 3, 4],
+      "description": "1 = primary (gazette, court ruling, EC record, Hansard, royal proclamation, audit, regulator filing). 2 = authoritative secondary (wire-service citing Tier 1, peer-reviewed, INSAP/IDEAS/ISIS). 3 = corroborative press, memoir. 4 = background commentary, social media. Per ADR-0005."
+    },
+    "SourceRef": {
+      "type": "object",
+      "required": ["tier", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "tier": { "$ref": "#/$defs/SourceTier" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "gazette",
+            "court-ruling",
+            "ec-record",
+            "hansard",
+            "royal-proclamation",
+            "audit-report",
+            "regulator-filing",
+            "treaty-text",
+            "constitution-text",
+            "statute-text",
+            "wire-service",
+            "peer-reviewed",
+            "thinktank-paper",
+            "press-mainstream",
+            "press-alternative",
+            "memoir",
+            "interview",
+            "social-media",
+            "other"
+          ]
+        },
+        "identifier": { "type": "string", "description": "Case number, gazette ref, statute citation, etc." },
+        "title": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "page_or_section": { "type": "string" },
+        "publication_date": { "$ref": "#/$defs/PartialDate" },
+        "access_date": { "$ref": "#/$defs/PartialDate" },
+        "publisher": { "type": "string" },
+        "author": { "type": "string" }
+      }
+    },
+    "LegitimacyDelta": {
+      "type": "object",
+      "description": "Signed change in legitimacy for one or more institutions, keyed by InstitutionRef. Range [-1, 1]; convention: positive = legitimacy gained, negative = legitimacy lost.",
+      "patternProperties": {
+        "^[0-9A-HJKMNP-TV-Z]{26}$": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "CleavageActivation": {
+      "type": "object",
+      "required": ["cleavage_id", "salience_delta"],
+      "additionalProperties": false,
+      "properties": {
+        "cleavage_id": { "$ref": "#/$defs/CleavageRef" },
+        "salience_delta": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1,
+          "description": "Signed change in salience for this cleavage caused by the event."
+        }
+      }
+    },
+    "Money": {
+      "type": "object",
+      "required": ["amount", "currency"],
+      "additionalProperties": false,
+      "properties": {
+        "amount": { "type": "number" },
+        "currency": {
+          "type": "string",
+          "enum": ["MYR", "USD", "SGD", "GBP", "EUR", "JPY", "CNY", "HKD", "OTHER"]
+        },
+        "year_basis": {
+          "type": "integer",
+          "minimum": 1786,
+          "description": "Nominal-year basis. If real-value normalisation is applied, this field records the deflator-base year."
+        },
+        "real_basis_year": {
+          "type": "integer",
+          "minimum": 1786,
+          "description": "If present, amount is in real terms relative to this year. If absent, amount is nominal."
+        }
+      }
+    }
+  }
+}

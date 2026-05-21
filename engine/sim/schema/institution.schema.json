@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefourthangle.com/engine/sim/schema/institution.schema.json",
+  "title": "Institution",
+  "description": "An institution is a rule-set with enforcement. Distinct from an InstitutionalActor, which is the agent that acts through the rules. See docs/research/malaysia-political-simulation-engine.md §3.3.",
+  "type": "object",
+  "required": ["id", "canonical_name", "rule_set", "primary_sources"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/ULID" },
+    "canonical_name": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "institution_category": {
+      "type": "string",
+      "enum": [
+        "constitutional",
+        "legislative",
+        "executive",
+        "judicial",
+        "regulatory",
+        "monarchical",
+        "religious-official",
+        "electoral",
+        "audit",
+        "anti-corruption",
+        "security",
+        "monetary",
+        "fiscal-corporate",
+        "education",
+        "communal-customary"
+      ]
+    },
+    "established": { "$ref": "common.schema.json#/$defs/PartialDate" },
+    "dissolved": { "$ref": "common.schema.json#/$defs/PartialDate" },
+    "statutory_basis": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Federal Constitution articles, Acts of Parliament, or treaties establishing the institution."
+    },
+    "rule_set": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Rule" },
+      "minItems": 1
+    },
+    "legitimacy_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "value"],
+        "properties": {
+          "date": { "$ref": "common.schema.json#/$defs/PartialDate" },
+          "value": { "type": "number", "minimum": 0, "maximum": 1 },
+          "method": {
+            "type": "string",
+            "enum": ["survey", "expert-elicitation", "engine-inference", "documented-event"]
+          },
+          "source": { "$ref": "common.schema.json#/$defs/SourceRef" }
+        }
+      },
+      "description": "Time series of legitimacy index for the institution."
+    },
+    "primary_sources": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/SourceRef" },
+      "minItems": 1
+    },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "Rule": {
+      "type": "object",
+      "required": ["id", "type", "text_or_description", "legal_source"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/ULID" },
+        "type": {
+          "type": "string",
+          "enum": ["formal", "informal", "convention", "case-law-derived"]
+        },
+        "text_or_description": { "type": "string" },
+        "legal_source": {
+          "type": "string",
+          "description": "Constitutional article, statute citation, case citation, or convention description."
+        },
+        "enforcement_mechanism": { "type": "string" },
+        "observed_compliance_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Empirical estimate of compliance, where applicable. LOW confidence by default."
+        },
+        "compliance_confidence": { "$ref": "common.schema.json#/$defs/Confidence" },
+        "active_from": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "active_to": { "$ref": "common.schema.json#/$defs/PartialDate" }
+      }
+    }
+  }
+}
