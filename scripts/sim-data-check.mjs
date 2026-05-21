@@ -155,6 +155,7 @@ for (const file of files) {
     continue;
   }
   const rel = file.replace(ROOT, "");
+  if (rel.startsWith("staging/")) continue; // candidates are pre-promotion; skip
   if (rel.startsWith("actors/")) checkActor(file, obj);
   else if (rel.startsWith("events/")) checkEvent(file, obj);
   else if (rel.startsWith("institutions/")) checkInstitution(file, obj);

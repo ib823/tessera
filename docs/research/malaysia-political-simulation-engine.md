@@ -562,7 +562,7 @@ engine/sim/
 │   ├── cleavage.schema.json
 │   └── resource.schema.json
 ├── data/                      # encoded historical record
-│   ├── actors/{period}/*.json
+│   ├── actors/{ulid}.json     # flat — period lives in role_history[].regime_period
 │   ├── events/{year}/*.json
 │   ├── institutions/*.json
 │   └── cleavages/*.json
@@ -751,6 +751,8 @@ This document is **Phase 0**. The implementation roadmap:
 **Phase 1 — Data schemas (1 week).** Write the JSON schemas in `engine/sim/schema/`. Define encoding standards. ADR for each non-obvious choice. (See ADR-0005 on event taxonomy.)
 
 **Phase 2 — Historical event encoding, per ADR-0006 priority (4 weeks).** Block A (2008–2026, ≈800 events) plus Block B (pre-2008 boundary set, ≈80 events). Block C (full pre-2008) deferred to Phase 8. Each event encoded must satisfy the ADR-0005 source-tier requirement.
+
+Workflow: run `node scripts/sim-extract-events.mjs` to generate candidate event records from the T4A issue corpus into `engine/sim/data/staging/` (gitignored). For each candidate the reviewer (a) verifies event type, (b) adds primary_sources from the issue's underlying citations (the T4A issue is NOT a primary source), (c) sets confidence (HIGH/MED), legitimacy_delta, and cleavages_activated by editorial judgement, (d) drops the `_extractor_*` and `_status` fields, (e) moves the file to `engine/sim/data/events/YYYY/{ulid}.json`. Run `node scripts/sim-data-check.mjs --strict` to verify each promotion.
 
 **Phase 3 — Actor profiles (2 weeks).** Encode ≈200 individual actors (federal politicians 2008–2026, key bureaucrats, Sultans, Conference of Rulers members, civil-society figures, business actors). Cross-reference with `malaysia-political-intelligence.md`.
 
