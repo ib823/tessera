@@ -328,6 +328,7 @@ When the user provides a topic (e.g., "Add new issue: [topic]"), execute this 10
      - For every quantitative claim: exact source URL, document title, page or section number, and publication date. *"BNM 2024"* is not a citation; *"BNM Annual Report 2024, Table 3.2, p. 47, https://..."* is.
    - **CONTRADICTIONS** — any time two reputable sources gave different numbers, dates, or characterizations of the same fact, list both with citations and identify which you judged authoritative and why. Never silently choose the most favorable number.
    - **SOURCE SPECTRUM CHECK** — note explicitly which side of the political spectrum each major source comes from; flag if all sources are from one side.
+   - **OPTIONAL — ENGINE CONTEXT** for system-level stories (coalition arithmetic, electoral mechanics, royal arbitration, patronage flow, hung-parliament dynamics): paste output of `node scripts/sim-brief-context.mjs --scenario <name>` between CONTEXT and ACTORS sections. See `engine/templates/publish-playbook.md` Phase 1 for usage and the design doc (`docs/research/malaysia-political-simulation-engine.md`) for what the engine models. Engine output is system-context for the writer's reasoning ONLY; never publish numerical claims from it (design doc §8.3).
 3. Save to `engine/briefs/{slug}.md`
 4. Present brief summary to user. **WAIT** for approval before proceeding.
 
