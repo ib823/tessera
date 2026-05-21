@@ -1,0 +1,621 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefourthangle.com/engine/sim/schema/event.schema.json",
+  "title": "Event",
+  "description": "A discrete political event. Exactly one of 16 types per ADR-0005. See docs/research/malaysia-political-simulation-engine.md §3.2.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "date_start",
+    "period",
+    "confidence",
+    "primary_sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/ULID" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Election",
+        "LegislativeVote",
+        "ConstitutionalAmendment",
+        "RoyalIntervention",
+        "CoupOrAttempt",
+        "Protest",
+        "TrialVerdict",
+        "PolicyAnnouncement",
+        "ScandalRevelation",
+        "ResourceTransfer",
+        "DiscursiveEvent",
+        "DemographicShift",
+        "ElitePersonnelChange",
+        "InstitutionalCreation",
+        "CoalitionFormation",
+        "ExogenousShock"
+      ]
+    },
+    "date_start": { "$ref": "common.schema.json#/$defs/PartialDate" },
+    "date_end": { "$ref": "common.schema.json#/$defs/PartialDate" },
+    "period": { "$ref": "common.schema.json#/$defs/Period" },
+    "confidence": { "$ref": "common.schema.json#/$defs/Confidence" },
+    "primary_sources": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/SourceRef" },
+      "minItems": 1
+    },
+    "actors_involved": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/ActorRef" }
+    },
+    "cleavages_activated": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/CleavageActivation" }
+    },
+    "legitimacy_delta": { "$ref": "common.schema.json#/$defs/LegitimacyDelta" },
+    "related_events": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/EventRef" }
+    },
+    "t4a_issue_refs": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[0-9]{4}$" },
+      "description": "T4A issue IDs that report on or contextualise this event."
+    },
+    "notes": { "type": "string" },
+    "election_type": true,
+    "jurisdiction": true,
+    "total_seats": true,
+    "contested_seats": true,
+    "turnout_percent": true,
+    "results_by_coalition": true,
+    "boundary_delimitation_year": true,
+    "bill_id": true,
+    "bill_title": true,
+    "legislature": true,
+    "reading_number": true,
+    "vote_distribution": true,
+    "vote_outcome": true,
+    "articles_affected": true,
+    "amendment_text_change": true,
+    "two_thirds_threshold_met": true,
+    "intervener_actor": true,
+    "constitutional_basis": true,
+    "intervention_mechanism": true,
+    "target_actor": true,
+    "intervention_outcome": true,
+    "attempting_actors": true,
+    "coup_mechanism": true,
+    "target_government": true,
+    "coup_outcome": true,
+    "location": true,
+    "estimated_participants": true,
+    "organising_actors": true,
+    "demands": true,
+    "state_response": true,
+    "casualties": true,
+    "defendant_actor": true,
+    "charges": true,
+    "court": true,
+    "verdict_outcome": true,
+    "sentence_summary": true,
+    "appeal_path": true,
+    "announcing_actor": true,
+    "policy_content_summary": true,
+    "implementation_status": true,
+    "subject_actor": true,
+    "allegation_summary": true,
+    "evidence_type": true,
+    "evidence_quality": true,
+    "revealer_actor": true,
+    "from_actor": true,
+    "to_actor": true,
+    "amount": true,
+    "transfer_mechanism": true,
+    "legality": true,
+    "beneficial_owner_actor": true,
+    "speaker_actor": true,
+    "frame_invoked": true,
+    "audience_segment": true,
+    "reach_estimate": true,
+    "channel": true,
+    "population_group": true,
+    "demographic_attribute": true,
+    "shift_magnitude": true,
+    "source_dataset": true,
+    "change_type": true,
+    "affected_actor": true,
+    "from_role": true,
+    "to_role": true,
+    "decider_actor": true,
+    "institution_affected": true,
+    "creation_or_dissolution": true,
+    "statutory_basis": true,
+    "institutional_scope": true,
+    "coalition_actor": true,
+    "formation_or_dissolution": true,
+    "member_actors": true,
+    "formateur_actor": true,
+    "portfolio_allocation_summary": true,
+    "expected_duration_months": true,
+    "shock_type": true,
+    "magnitude_estimate": true,
+    "origin": true
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "Election" } }, "required": ["type"] },
+      "then": {
+        "required": ["election_type", "jurisdiction"],
+        "properties": {
+          "election_type": {
+            "type": "string",
+            "enum": ["federal", "state", "by-election", "local"]
+          },
+          "jurisdiction": {
+            "type": "string",
+            "description": "Geographic scope: 'federal', state name, or constituency identifier."
+          },
+          "total_seats": { "type": "integer", "minimum": 1 },
+          "contested_seats": { "type": "integer", "minimum": 1 },
+          "turnout_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+          "results_by_coalition": {
+            "type": "object",
+            "additionalProperties": { "type": "integer", "minimum": 0 },
+            "description": "Coalition or party identifier → seats won. Use canonical names (BN, PH, PN, Unity-Govt, GRS, GPS, Warisan, etc.)."
+          },
+          "boundary_delimitation_year": { "type": "integer", "minimum": 1957 }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "LegislativeVote" } }, "required": ["type"] },
+      "then": {
+        "required": ["bill_title", "legislature", "vote_outcome"],
+        "properties": {
+          "bill_id": { "type": "string" },
+          "bill_title": { "type": "string" },
+          "legislature": {
+            "type": "string",
+            "enum": [
+              "Dewan-Rakyat",
+              "Dewan-Negara",
+              "Johor-Assembly",
+              "Kedah-Assembly",
+              "Kelantan-Assembly",
+              "Melaka-Assembly",
+              "Negeri-Sembilan-Assembly",
+              "Pahang-Assembly",
+              "Penang-Assembly",
+              "Perak-Assembly",
+              "Perlis-Assembly",
+              "Sabah-Assembly",
+              "Sarawak-Assembly",
+              "Selangor-Assembly",
+              "Terengganu-Assembly"
+            ]
+          },
+          "reading_number": { "type": "integer", "enum": [1, 2, 3] },
+          "vote_distribution": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "yea": { "type": "integer", "minimum": 0 },
+                "nay": { "type": "integer", "minimum": 0 },
+                "abstain": { "type": "integer", "minimum": 0 },
+                "absent": { "type": "integer", "minimum": 0 }
+              }
+            }
+          },
+          "vote_outcome": {
+            "type": "string",
+            "enum": ["passed", "failed", "withdrawn", "deferred"]
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "ConstitutionalAmendment" } }, "required": ["type"] },
+      "then": {
+        "required": ["articles_affected", "vote_outcome"],
+        "properties": {
+          "articles_affected": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Articles or schedules of the Federal Constitution or a State Constitution. e.g., 'FC-Article-153', 'FC-Article-121', 'FC-Eighth-Schedule', 'Johor-State-Const-Article-X'."
+          },
+          "amendment_text_change": {
+            "type": "object",
+            "properties": {
+              "before": { "type": "string" },
+              "after": { "type": "string" }
+            }
+          },
+          "two_thirds_threshold_met": { "type": "boolean" },
+          "vote_distribution": {
+            "type": "object",
+            "additionalProperties": { "type": "integer" }
+          },
+          "vote_outcome": {
+            "type": "string",
+            "enum": ["passed", "failed", "withdrawn"]
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "RoyalIntervention" } }, "required": ["type"] },
+      "then": {
+        "required": ["intervener_actor", "constitutional_basis", "intervention_mechanism"],
+        "properties": {
+          "intervener_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "constitutional_basis": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Articles invoked or implied. e.g., 'FC-Article-32', 'FC-Article-40', 'FC-Article-42', 'FC-Article-150', 'FC-Article-181'."
+          },
+          "intervention_mechanism": {
+            "type": "string",
+            "enum": [
+              "advice",
+              "convene-Conference-of-Rulers",
+              "consent-given",
+              "consent-withheld",
+              "consent-delayed",
+              "appointment",
+              "dismissal-request",
+              "pardon-full",
+              "pardon-partial",
+              "commutation",
+              "dissolution-granted",
+              "dissolution-refused",
+              "emergency-proclamation",
+              "decree-state-constitution",
+              "public-statement",
+              "private-counsel-reported"
+            ]
+          },
+          "target_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "intervention_outcome": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "CoupOrAttempt" } }, "required": ["type"] },
+      "then": {
+        "required": ["attempting_actors", "coup_mechanism", "coup_outcome"],
+        "properties": {
+          "attempting_actors": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/$defs/ActorRef" },
+            "minItems": 1
+          },
+          "coup_mechanism": {
+            "type": "string",
+            "enum": [
+              "mass-defection",
+              "parliamentary-no-confidence",
+              "extra-parliamentary-mobilisation",
+              "military-action",
+              "judicial-coup",
+              "royal-displacement",
+              "other"
+            ]
+          },
+          "target_government": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "coup_outcome": {
+            "type": "string",
+            "enum": ["succeeded", "failed", "partial", "averted"]
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "Protest" } }, "required": ["type"] },
+      "then": {
+        "required": ["location", "demands"],
+        "properties": {
+          "location": { "type": "string" },
+          "estimated_participants": {
+            "type": "object",
+            "properties": {
+              "low": { "type": "integer", "minimum": 0 },
+              "central": { "type": "integer", "minimum": 0 },
+              "high": { "type": "integer", "minimum": 0 },
+              "source_for_estimate": { "type": "string" }
+            },
+            "description": "Participant counts are contested by source. Record range and source."
+          },
+          "organising_actors": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/$defs/ActorRef" }
+          },
+          "demands": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "state_response": {
+            "type": "string",
+            "enum": ["none", "permitted", "monitored", "dispersed", "arrests", "violence", "fatal"]
+          },
+          "casualties": {
+            "type": "object",
+            "properties": {
+              "killed": { "type": "integer", "minimum": 0 },
+              "injured": { "type": "integer", "minimum": 0 },
+              "arrested": { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "TrialVerdict" } }, "required": ["type"] },
+      "then": {
+        "required": ["defendant_actor", "charges", "court", "verdict_outcome"],
+        "properties": {
+          "defendant_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "charges": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "court": {
+            "type": "string",
+            "enum": [
+              "Magistrate",
+              "Sessions",
+              "High-Court",
+              "Court-of-Appeal",
+              "Federal-Court",
+              "Syariah-Lower",
+              "Syariah-High",
+              "Syariah-Appeal",
+              "Native-Court",
+              "Industrial-Court",
+              "Tribunal-other"
+            ]
+          },
+          "verdict_outcome": {
+            "type": "string",
+            "enum": ["convicted", "acquitted", "DNAA", "withdrawn", "remanded", "appeal-pending", "ongoing"]
+          },
+          "sentence_summary": { "type": "string" },
+          "appeal_path": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/$defs/EventRef" }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "PolicyAnnouncement" } }, "required": ["type"] },
+      "then": {
+        "required": ["announcing_actor", "policy_content_summary", "implementation_status"],
+        "properties": {
+          "announcing_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "policy_content_summary": { "type": "string" },
+          "implementation_status": {
+            "type": "string",
+            "enum": ["announced", "drafted", "tabled", "passed", "implemented", "partial", "abandoned"]
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "ScandalRevelation" } }, "required": ["type"] },
+      "then": {
+        "required": ["subject_actor", "allegation_summary", "evidence_type"],
+        "properties": {
+          "subject_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "allegation_summary": { "type": "string" },
+          "evidence_type": {
+            "type": "string",
+            "enum": [
+              "audit-finding",
+              "leaked-document",
+              "whistleblower-testimony",
+              "court-filing",
+              "regulator-investigation",
+              "parliamentary-question",
+              "MACC-investigation",
+              "PAC-inquiry",
+              "investigative-journalism",
+              "foreign-prosecution",
+              "other"
+            ]
+          },
+          "evidence_quality": {
+            "type": "string",
+            "enum": ["primary-documented", "corroborated", "single-source", "rumour"]
+          },
+          "revealer_actor": { "$ref": "common.schema.json#/$defs/ActorRef" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "ResourceTransfer" } }, "required": ["type"] },
+      "then": {
+        "required": ["from_actor", "to_actor", "amount", "transfer_mechanism", "legality"],
+        "properties": {
+          "from_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "to_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "amount": { "$ref": "common.schema.json#/$defs/Money" },
+          "transfer_mechanism": {
+            "type": "string",
+            "enum": [
+              "federal-contract",
+              "state-contract",
+              "direct-negotiation",
+              "concession",
+              "grant",
+              "subsidy",
+              "loan",
+              "guarantee",
+              "equity-injection",
+              "GLC-disbursement",
+              "donation-political",
+              "donation-other",
+              "bribe-alleged",
+              "kickback-alleged",
+              "settlement",
+              "fine",
+              "other"
+            ]
+          },
+          "legality": {
+            "type": "string",
+            "enum": ["legal", "illicit", "contested", "unknown"]
+          },
+          "beneficial_owner_actor": { "$ref": "common.schema.json#/$defs/ActorRef" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "DiscursiveEvent" } }, "required": ["type"] },
+      "then": {
+        "required": ["speaker_actor", "frame_invoked", "channel"],
+        "properties": {
+          "speaker_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "frame_invoked": {
+            "type": "string",
+            "description": "Frame identifier from the frame registry. e.g., 'social-contract', 'daulat-tuanku', 'reform-vs-status-quo', 'Borneo-First'."
+          },
+          "audience_segment": { "type": "string" },
+          "reach_estimate": {
+            "type": "object",
+            "properties": {
+              "direct_audience": { "type": "integer", "minimum": 0 },
+              "media_reach": { "type": "integer", "minimum": 0 },
+              "estimate_basis": { "type": "string" }
+            }
+          },
+          "channel": {
+            "type": "string",
+            "enum": ["parliament", "cabinet", "rally", "press-conference", "broadcast", "social-media", "interview", "academic-forum", "private-leaked", "other"]
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "DemographicShift" } }, "required": ["type"] },
+      "then": {
+        "required": ["population_group", "demographic_attribute", "shift_magnitude", "source_dataset"],
+        "properties": {
+          "population_group": {
+            "type": "string",
+            "description": "Group label (institutionally defined, not biological). e.g., 'Peninsular-Urban-Bumiputera-Malay', 'East-Malaysian-Bumiputera-non-Malay', 'Chinese-Selangor'."
+          },
+          "demographic_attribute": {
+            "type": "string",
+            "enum": ["urbanisation-share", "median-age", "total-fertility-rate", "interstate-migration", "international-migration", "labour-force-participation", "tertiary-education-share", "population-share"]
+          },
+          "shift_magnitude": {
+            "type": "object",
+            "properties": {
+              "from_value": { "type": "number" },
+              "to_value": { "type": "number" },
+              "unit": { "type": "string" },
+              "period_covered_from": { "$ref": "common.schema.json#/$defs/PartialDate" },
+              "period_covered_to": { "$ref": "common.schema.json#/$defs/PartialDate" }
+            }
+          },
+          "source_dataset": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "ElitePersonnelChange" } }, "required": ["type"] },
+      "then": {
+        "required": ["change_type", "affected_actor"],
+        "properties": {
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "appointment",
+              "reappointment",
+              "dismissal",
+              "resignation",
+              "retirement",
+              "death-in-office",
+              "party-defection",
+              "party-expulsion",
+              "party-foundation",
+              "promotion",
+              "demotion"
+            ]
+          },
+          "affected_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "from_role": { "type": "string" },
+          "to_role": { "type": "string" },
+          "decider_actor": { "$ref": "common.schema.json#/$defs/ActorRef" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "InstitutionalCreation" } }, "required": ["type"] },
+      "then": {
+        "required": ["institution_affected", "creation_or_dissolution", "statutory_basis"],
+        "properties": {
+          "institution_affected": { "$ref": "common.schema.json#/$defs/InstitutionRef" },
+          "creation_or_dissolution": {
+            "type": "string",
+            "enum": ["created", "dissolved", "restructured", "renamed", "merged", "split"]
+          },
+          "statutory_basis": { "type": "string", "description": "Act number, gazette reference, or constitutional article." },
+          "institutional_scope": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "CoalitionFormation" } }, "required": ["type"] },
+      "then": {
+        "required": ["coalition_actor", "formation_or_dissolution", "member_actors"],
+        "properties": {
+          "coalition_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "formation_or_dissolution": {
+            "type": "string",
+            "enum": ["formed", "dissolved", "expanded", "contracted", "renamed", "re-aligned"]
+          },
+          "member_actors": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/$defs/ActorRef" }
+          },
+          "formateur_actor": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "portfolio_allocation_summary": { "type": "string" },
+          "expected_duration_months": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "ExogenousShock" } }, "required": ["type"] },
+      "then": {
+        "required": ["shock_type", "magnitude_estimate"],
+        "properties": {
+          "shock_type": {
+            "type": "string",
+            "enum": [
+              "foreign-policy",
+              "economic-global",
+              "economic-regional",
+              "currency",
+              "commodity-price",
+              "climate-disaster",
+              "pandemic",
+              "technological-disruption",
+              "diaspora",
+              "other"
+            ]
+          },
+          "magnitude_estimate": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "extreme"]
+          },
+          "origin": { "type": "string", "description": "Country, region, or system of origin." }
+        }
+      }
+    }
+  ]
+}

@@ -250,21 +250,13 @@ Event (abstract) {
   cleavages_activated: CleavageRef[],
   legitimacy_delta: { institution_id: ±delta }   // signed change
 }
-
-Election extends Event { type, constituencies, results, turnout, ... }
-LegislativeVote extends Event { bill_id, vote_distribution, outcome }
-RoyalIntervention extends Event { intervener, target, mechanism, outcome }
-CoupOrAttempt extends Event { ... }
-Protest extends Event { location, participants, demands, response, casualties }
-TrialVerdict extends Event { defendant, charges, outcome }
-PolicyAnnouncement extends Event { actor, content, implementation_status }
-ScandalRevelation extends Event { actor, allegation, evidence_quality }
-ResourceTransfer extends Event { from, to, amount, mechanism, beneficiary }
-DiscursiveEvent extends Event { speaker, frame_invoked, audience, reach_estimate }
-ExogenousShock extends Event { type: foreign | economic | climate | pandemic, magnitude }
 ```
 
-The taxonomy is **closed**: any historical event must fit one of these eleven types. If it doesn't, the taxonomy is wrong and gets updated (with ADR documenting why).
+The taxonomy is **closed**. Any historical event must fit one of 16 types, specified in **ADR-0005**:
+
+`Election`, `LegislativeVote`, `ConstitutionalAmendment`, `RoyalIntervention`, `CoupOrAttempt`, `Protest`, `TrialVerdict`, `PolicyAnnouncement`, `ScandalRevelation`, `ResourceTransfer`, `DiscursiveEvent`, `DemographicShift`, `ElitePersonnelChange`, `InstitutionalCreation`, `CoalitionFormation`, `ExogenousShock`.
+
+If an event does not fit any of the 16, the taxonomy is wrong and gets updated by a new ADR. See ADR-0005 for the rationale on the additions beyond the original 11.
 
 ### 3.3 Institutions and rules
 
@@ -756,9 +748,9 @@ The engine produces representations, not reality. Outputs are model outputs. The
 
 This document is **Phase 0**. The implementation roadmap:
 
-**Phase 1 — Data schemas (1 week).** Write the JSON schemas in `engine/sim/schema/`. Define encoding standards. ADR for each non-obvious choice.
+**Phase 1 — Data schemas (1 week).** Write the JSON schemas in `engine/sim/schema/`. Define encoding standards. ADR for each non-obvious choice. (See ADR-0005 on event taxonomy.)
 
-**Phase 2 — Historical event encoding, P6+P7 first (4 weeks).** Encode the 2008–2026 period (where T4A's existing corpus already covers most events). Each event encoded must have ≥1 Tier 1 source. Target: ≈800 events.
+**Phase 2 — Historical event encoding, per ADR-0006 priority (4 weeks).** Block A (2008–2026, ≈800 events) plus Block B (pre-2008 boundary set, ≈80 events). Block C (full pre-2008) deferred to Phase 8. Each event encoded must satisfy the ADR-0005 source-tier requirement.
 
 **Phase 3 — Actor profiles (2 weeks).** Encode ≈200 individual actors (federal politicians 2008–2026, key bureaucrats, Sultans, Conference of Rulers members, civil-society figures, business actors). Cross-reference with `malaysia-political-intelligence.md`.
 

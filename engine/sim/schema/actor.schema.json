@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefourthangle.com/engine/sim/schema/actor.schema.json",
+  "title": "Actor",
+  "description": "A political actor in the simulation. Exactly one of three classes: IndividualActor, CollectiveActor, or InstitutionalActor. See docs/research/malaysia-political-simulation-engine.md §3.1.",
+  "type": "object",
+  "required": ["id", "actor_class", "canonical_name", "primary_sources"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/ULID" },
+    "actor_class": {
+      "type": "string",
+      "enum": ["individual", "collective", "institutional"]
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Primary name used for display and disambiguation."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternative names, spellings, nicknames, titles."
+    },
+    "primary_sources": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/SourceRef" },
+      "minItems": 1,
+      "description": "At least one source establishing the actor's existence and identity per ADR-0005 source-tier requirement."
+    },
+    "notes": { "type": "string" }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/IndividualActor" },
+    { "$ref": "#/$defs/CollectiveActor" },
+    { "$ref": "#/$defs/InstitutionalActor" }
+  ],
+  "$defs": {
+    "IndividualActor": {
+      "type": "object",
+      "required": ["actor_class"],
+      "properties": {
+        "actor_class": { "const": "individual" },
+        "born": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "died": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "cleavage_attributes": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Situational cleavage attributes. Modelled as institutionally produced, not biological. Carry an explanation when used in mechanism calibration.",
+          "properties": {
+            "ethnic_bloc": {
+              "type": "string",
+              "description": "Bumiputera-Malay, Bumiputera-EastMalaysian, Bumiputera-OrangAsli, Chinese, Indian, Other. Bloc as institutionally defined (post-1971 'Bumiputera' is an institutional category, not biological)."
+            },
+            "religious_bloc": { "type": "string" },
+            "regional_origin": { "type": "string" },
+            "class_origin": {
+              "type": "string",
+              "enum": ["working", "B40-equivalent", "M40-equivalent", "T20-equivalent", "elite-business", "elite-political", "elite-royal", "unknown"]
+            },
+            "generation": {
+              "type": "integer",
+              "description": "Birth decade. Used for generational-turnover analysis."
+            }
+          }
+        },
+        "role_history": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/RoleTenure" }
+        },
+        "network_edges": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/NetworkEdge" }
+        },
+        "estimated_preferences": { "$ref": "#/$defs/PreferenceWeights" }
+      }
+    },
+    "CollectiveActor": {
+      "type": "object",
+      "required": ["actor_class", "collective_type"],
+      "properties": {
+        "actor_class": { "const": "collective" },
+        "collective_type": {
+          "type": "string",
+          "enum": [
+            "party",
+            "coalition",
+            "communal-bloc",
+            "royal-household",
+            "civil-society-organisation",
+            "business-grouping",
+            "foreign-state",
+            "media-organisation",
+            "trade-union",
+            "religious-organisation"
+          ]
+        },
+        "founded": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "dissolved": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "member_ids": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "description": "Constituent actors. For a party, individual members; for a coalition, member parties."
+        },
+        "doctrinal_position": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "minimum": -1, "maximum": 1 },
+          "description": "Vector in ideology space. Keys are ideology-axis identifiers. Values in [-1, 1]. Treat as point estimate with documented uncertainty."
+        },
+        "cohesion_index": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Historical-fact summary: 1 = no splits or defections; 0 = fragmented every election."
+        },
+        "estimated_preferences": { "$ref": "#/$defs/PreferenceWeights" }
+      }
+    },
+    "InstitutionalActor": {
+      "type": "object",
+      "required": ["actor_class", "institution_id"],
+      "properties": {
+        "actor_class": { "const": "institutional" },
+        "institution_id": {
+          "$ref": "common.schema.json#/$defs/InstitutionRef",
+          "description": "Reference to the Institution record. Institutional actors are the *agents* through which institutions act; the Institution holds the rules."
+        },
+        "period_active": {
+          "type": "object",
+          "properties": {
+            "from": { "$ref": "common.schema.json#/$defs/PartialDate" },
+            "to": { "$ref": "common.schema.json#/$defs/PartialDate" }
+          }
+        },
+        "current_legitimacy_index": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Most recent estimated legitimacy. Time-varying — see Institution record for history."
+        }
+      }
+    },
+    "RoleTenure": {
+      "type": "object",
+      "required": ["office", "from"],
+      "additionalProperties": false,
+      "properties": {
+        "office": {
+          "type": "string",
+          "description": "Office or position held. Use canonical identifiers (e.g., 'PM-Malaysia', 'MP-P125-Damansara', 'CJ-Federal-Court', 'Chairman-Khazanah')."
+        },
+        "from": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "to": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "regime_period": { "$ref": "common.schema.json#/$defs/Period" },
+        "appointed_by": { "$ref": "common.schema.json#/$defs/ActorRef" },
+        "ended_by_event": { "$ref": "common.schema.json#/$defs/EventRef" }
+      }
+    },
+    "NetworkEdge": {
+      "type": "object",
+      "required": ["other_id", "edge_type"],
+      "additionalProperties": false,
+      "properties": {
+        "other_id": { "$ref": "common.schema.json#/$defs/ActorRef" },
+        "edge_type": {
+          "type": "string",
+          "enum": [
+            "family-blood",
+            "family-marriage",
+            "patron-of",
+            "client-of",
+            "ally",
+            "rival",
+            "factional-ally",
+            "factional-rival",
+            "educational-cohort",
+            "business-partner",
+            "co-director",
+            "mentor",
+            "mentee"
+          ]
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Strength of tie. 1 = strongest documented; 0 = vanishingly weak."
+        },
+        "period": { "$ref": "common.schema.json#/$defs/Period" },
+        "active_from": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "active_to": { "$ref": "common.schema.json#/$defs/PartialDate" },
+        "source_event": { "$ref": "common.schema.json#/$defs/EventRef" }
+      }
+    },
+    "PreferenceWeights": {
+      "type": "object",
+      "description": "Bounded-rationality utility weights summing to 1. Estimated from documented behavior, not stated preferences. Treat as point estimate with wide uncertainty.",
+      "additionalProperties": false,
+      "properties": {
+        "survival_weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "coalition_weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "ideology_weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "legacy_weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "material_weight": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}

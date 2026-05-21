@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefourthangle.com/engine/sim/schema/resource.schema.json",
+  "title": "ResourceSnapshot",
+  "description": "A point-in-time snapshot of resource distribution across actors. Five resource categories: votes, money, force, legitimacy, information. See docs/research/malaysia-political-simulation-engine.md §3.5.",
+  "type": "object",
+  "required": ["id", "snapshot_date", "primary_sources"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/ULID" },
+    "snapshot_date": { "$ref": "common.schema.json#/$defs/PartialDate" },
+    "period": { "$ref": "common.schema.json#/$defs/Period" },
+    "votes": {
+      "type": "object",
+      "description": "Vote distribution at the snapshot. Keyed by constituency identifier, value is per-coalition tally.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "money": {
+      "type": "array",
+      "description": "Money holdings or controllable budgets by actor. Tracks four sub-categories separately.",
+      "items": {
+        "type": "object",
+        "required": ["actor_id", "category", "amount"],
+        "additionalProperties": false,
+        "properties": {
+          "actor_id": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "category": {
+            "type": "string",
+            "enum": ["federal-budget-controlled", "state-budget-controlled", "GLC-assets-controlled", "patronage-flow-estimated", "illicit-estimated"]
+          },
+          "amount": { "$ref": "common.schema.json#/$defs/Money" },
+          "estimation_method": { "type": "string" },
+          "confidence": { "$ref": "common.schema.json#/$defs/Confidence" }
+        }
+      }
+    },
+    "force": {
+      "type": "array",
+      "description": "Coercive resources by actor. Includes military, police, paramilitary, private security where documented.",
+      "items": {
+        "type": "object",
+        "required": ["actor_id", "category"],
+        "additionalProperties": false,
+        "properties": {
+          "actor_id": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "category": {
+            "type": "string",
+            "enum": ["army", "navy", "air-force", "police-PDRM", "police-Special-Branch", "paramilitary-RELA", "private-security", "other"]
+          },
+          "personnel_count": { "type": "integer", "minimum": 0 },
+          "confidence": { "$ref": "common.schema.json#/$defs/Confidence" }
+        }
+      }
+    },
+    "legitimacy": {
+      "type": "array",
+      "description": "Legitimacy sources by actor, [0,1] per source.",
+      "items": {
+        "type": "object",
+        "required": ["actor_id", "source", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "actor_id": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "source": {
+            "type": "string",
+            "enum": ["royal-endorsement", "religious-authority", "electoral-mandate", "procedural-compliance", "performance-output", "civil-society-recognition", "international-recognition"]
+          },
+          "value": { "type": "number", "minimum": 0, "maximum": 1 },
+          "method": {
+            "type": "string",
+            "enum": ["survey", "expert-elicitation", "engine-inference", "documented-event"]
+          },
+          "confidence": { "$ref": "common.schema.json#/$defs/Confidence" }
+        }
+      }
+    },
+    "information": {
+      "type": "array",
+      "description": "Media reach and information-control capacity by actor.",
+      "items": {
+        "type": "object",
+        "required": ["actor_id", "channel"],
+        "additionalProperties": false,
+        "properties": {
+          "actor_id": { "$ref": "common.schema.json#/$defs/ActorRef" },
+          "channel": {
+            "type": "string",
+            "enum": ["print-mainstream", "tv-broadcast", "radio", "online-news", "social-media", "private-messaging", "religious-pulpit", "ceramah"]
+          },
+          "reach_estimate": { "type": "integer", "minimum": 0 },
+          "estimation_method": { "type": "string" },
+          "confidence": { "$ref": "common.schema.json#/$defs/Confidence" }
+        }
+      }
+    },
+    "primary_sources": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/SourceRef" },
+      "minItems": 1
+    },
+    "notes": { "type": "string" }
+  }
+}
