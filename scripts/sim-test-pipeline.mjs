@@ -176,8 +176,18 @@ const result = runPipeline(initialState, {
   },
 });
 
-const electoralState = result.trajectory[1];
-const coalitionState = result.trajectory[2];
+// Look up state after a named mechanism in the trace. With the new
+// 5-mechanism pipeline (outbidding -> electoral -> coalition ->
+// patronage -> royal), indices shifted, so we resolve by name.
+function stateAfter(mechanismName) {
+  for (let i = result.trajectory.length - 1; i >= 0; i--) {
+    if (result.trajectory[i].lastMechanism === mechanismName) return result.trajectory[i];
+  }
+  return null;
+}
+
+const electoralState = stateAfter("electoral");
+const coalitionState = stateAfter("coalition");
 const finalState = result.finalState;
 
 // --------------------------------------------------------------------------
@@ -218,8 +228,8 @@ checks.push({
   pass: finalState.royalIntervention !== null,
 });
 checks.push({
-  name: "Integration: trace records all three mechanisms in order",
-  pass: finalState.trace.map(t => t.mechanism).join(",") === "electoral,coalition,royal",
+  name: "Integration: trace records all five mechanisms in order",
+  pass: finalState.trace.map(t => t.mechanism).join(",") === "outbidding,electoral,coalition,patronage,royal",
 });
 
 // STRUCTURAL CHECKS — the pipeline output has the right SHAPE for GE15.

@@ -25,6 +25,8 @@
 
 import { electoralMechanism } from "../mechanisms/electoral.mjs";
 import { royalMechanism } from "../mechanisms/royal.mjs";
+import { patronageMechanism } from "../mechanisms/patronage.mjs";
+import { outbiddingMechanism } from "../mechanisms/outbidding.mjs";
 import { formCoalition } from "../mechanisms/coalition.mjs";
 import { updateState } from "./state.mjs";
 
@@ -64,9 +66,31 @@ export function coalitionMechanism(state, options = {}) {
   );
 }
 
+/**
+ * Default pipeline order. Rationale:
+ *
+ *   outbidding -> electoral
+ *     Outbidding shifts party positions BEFORE votes are translated to
+ *     seats. (For backtests with observed vote shares, outbidding is a
+ *     no-op-equivalent — positions affect downstream coalition
+ *     compatibility but not the input vote shares themselves.)
+ *
+ *   electoral -> coalition
+ *     Seats are the coalition mechanism's input.
+ *
+ *   coalition -> patronage
+ *     Patronage operates on the natural coalition: allocates ledger
+ *     by Gamson + cabinet premium, and adds legal-exposure entrants.
+ *
+ *   patronage -> royal
+ *     Royal arbitration operates last, broadening for stability if
+ *     the patronage-adjusted coalition still has a thin margin.
+ */
 const DEFAULT_STEPS = [
+  { name: "outbidding", fn: outbiddingMechanism },
   { name: "electoral", fn: electoralMechanism },
   { name: "coalition", fn: coalitionMechanism },
+  { name: "patronage", fn: patronageMechanism },
   { name: "royal", fn: royalMechanism },
 ];
 
