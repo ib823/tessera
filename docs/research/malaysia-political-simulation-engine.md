@@ -766,6 +766,8 @@ Workflow: run `node scripts/sim-extract-events.mjs` to generate candidate event 
 
 **Phase 7 — Editorial integration (1 week).** Hook into Phase 1 brief generation and Phase 5 synthesis check.
 
+**Phase 7 status:** v0 implemented. `scripts/sim-brief-context.mjs` produces a markdown `ENGINE CONTEXT` block for Phase 1 brief authors, given a built-in scenario or custom vote-shares/seats. The block goes between `CONTEXT` and `ACTORS` in the brief. `engine/templates/publish-playbook.md` Phase 1 documents when to invoke; `CLAUDE.md` §PHASE 1 references it. Worked example at `docs/research/sim-engine-brief-integration-example.md` shows the full integration flow on a GE15-actual scenario. Engine output is system-context only — never published as numerical claims (§8.3). Phase 5 synthesis-check integration deferred to Phase 7 v1.
+
 **Phase 8 — Extend backward (open-ended).** P3-P5 (1957–2008), P2 (colonial, where data permits), P1 (sultanate, narrative-only for context).
 
 Total realistic timeline: 4-6 months for Phases 1–7. Each phase produces a deliverable that is usable on its own — the engine is useful even before all mechanisms are implemented (a coalition-formation-only engine is already informative).

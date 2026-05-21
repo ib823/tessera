@@ -37,6 +37,28 @@ RESEARCH":
 - `SOURCES` — ≥15, at least 8 primary, multi-spectrum
 - `CONTRADICTIONS` section, `SOURCE SPECTRUM CHECK`
 
+**Optional — ENGINE CONTEXT.** If the issue turns on coalition arithmetic,
+electoral mechanics, royal arbitration, or any system-level question the
+simulation engine can model, paste an `ENGINE CONTEXT` block into the brief
+between `CONTEXT` and `ACTORS`. Generate it with:
+
+```
+node scripts/sim-brief-context.mjs --list-scenarios                 # see built-ins
+node scripts/sim-brief-context.mjs --scenario ge15-actual           # built-in
+node scripts/sim-brief-context.mjs --seats "PH:82,PN:74,..." --formateur PH
+node scripts/sim-brief-context.mjs --vote-shares "PH:0.374,..." --formateur PH
+```
+
+Engine output is **system-context only**, never published as numerical
+claims (design doc §8.3). Calibration limits (GE12-15 mean MAPE 30.3%) are
+inline; trust the qualitative coalition family over specific seat counts.
+
+When to invoke: stories turning on coalition arithmetic (e.g., 1701, 1944,
+1993), royal arbitration (1092, 1999), patronage flow (1023, 1973, 1990),
+or hung-parliament dynamics. When NOT to invoke: 3R community-impact
+stories, single-actor scandals, or demographic shifts unconnected to
+coalition formation.
+
 **Gate:** present brief summary to user, wait for approval.
 
 When done:
