@@ -246,7 +246,13 @@ export function formCoalition(parties, options = {}) {
   const winning = subsets.filter(s => {
     if (s.length === 0) return false;
     const sum = s.reduce((acc, p) => acc + p.seats, 0);
-    return sum > required && !isBlocked(s, blockedPairs);
+    if (sum <= required) return false;
+    if (isBlocked(s, blockedPairs)) return false;
+    // Hard constraint: when formateurId is named, coalition must contain it.
+    // (Per Riker: formateur leads negotiation; coalitions without formateur
+    // are pursued by a different formateur in a separate run.)
+    if (options.formateurId && !s.find(p => p.id === options.formateurId)) return false;
+    return true;
   });
 
   const formateur = options.formateurId
