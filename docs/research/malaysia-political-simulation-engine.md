@@ -758,6 +758,8 @@ Workflow: run `node scripts/sim-extract-events.mjs` to generate candidate event 
 
 **Phase 4 — Mechanism modules (one at a time, 1–2 weeks each).** Order: electoral → coalition → patronage → outbidding → drift → royal → cascade. Each module validated independently before composition.
 
+**Phase 4 status:** Coalition-formation module is the first implemented (`engine/sim/mechanisms/coalition.mjs`). Implements a tractable Laver-Shepsle + Riker + Gamson composition: enumerate winning coalitions, score on four components (coherence, minimum-winning, connectedness, formateur-fit), sample top-K by softmax. Calibration script `scripts/sim-test-coalition.mjs` validates against GE15 federal 2022 and 17th Sabah state election 2025 — both scenarios pass with the documented natural coalition in top-K. The GE15 actual outcome (Unity Govt with BN added) is correctly outside the coalition-module's top picks, surfacing the dependence on mechanisms §5.3 (patronage) and §5.4 (royal arbitration) to explain the BN inclusion.
+
 **Phase 5 — Core (state, Monte Carlo, Bayes, DAG, Markov; 3 weeks).**
 
 **Phase 6 — Validation suite (2 weeks).** Backtests on critical junctures, calibration plots, sensitivity analyses.
