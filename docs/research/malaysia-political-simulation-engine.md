@@ -758,7 +758,19 @@ Workflow: run `node scripts/sim-extract-events.mjs` to generate candidate event 
 
 **Phase 4 — Mechanism modules (one at a time, 1–2 weeks each).** Order: electoral → coalition → patronage → outbidding → drift → royal → cascade. Each module validated independently before composition.
 
-**Phase 4 status:** Coalition-formation module is the first implemented (`engine/sim/mechanisms/coalition.mjs`). Implements a tractable Laver-Shepsle + Riker + Gamson composition: enumerate winning coalitions, score on four components (coherence, minimum-winning, connectedness, formateur-fit), sample top-K by softmax. Calibration script `scripts/sim-test-coalition.mjs` validates against GE15 federal 2022 and 17th Sabah state election 2025 — both scenarios pass with the documented natural coalition in top-K. The GE15 actual outcome (Unity Govt with BN added) is correctly outside the coalition-module's top picks, surfacing the dependence on mechanisms §5.3 (patronage) and §5.4 (royal arbitration) to explain the BN inclusion.
+**Phase 4 status:** **All 7 mechanisms implemented.**
+
+- §5.1 Coalition (`mechanisms/coalition.mjs`) — Laver-Shepsle + Riker + Gamson; formateur hard constraint.
+- §5.2 Outbidding (`mechanisms/outbidding.mjs`) — Horowitz ethnic-position competition with multi-ethnic-coalition damper.
+- §5.3 Patronage (`mechanisms/patronage.mjs`) — Gamson ledger + Court Cluster legal-exposure entry.
+- §5.4 Royal (`mechanisms/royal.mjs`) — crisis-triggered broadening to stability buffer.
+- §5.5 Drift (`mechanisms/drift.mjs`) — cumulative constitutional drift across 7 axes from encoded events.
+- §5.6 Electoral (`mechanisms/electoral.mjs`) — two-parameter (rural-bias + regional-concentration) model with largest-remainder apportionment.
+- §5.7 Cascade (`mechanisms/cascade.mjs`) — logistic cascade probability from stressor × fragility; identifies at-risk parties.
+
+**Calibration:** GE15 backtest MAPE 12.8% (within tolerance); GE12-14 MAPE 28-49% (qualitative reading only, per-coalition parameter limits documented). Pipeline reproduces GE15 Unity Government within 3 seats from documented seat distribution. The "Unity-Government coalition family is structurally over-determined" finding is the engine's signature analytical output.
+
+**Capstone analysis at `docs/research/sim-engine-capstone-ge16-cards.md`** runs all 7 mechanisms over the eight "cards available to the unity government" scenarios from the session's opening political question; finding the engine surfaced is that BN appears in the final coalition for 8/8 cards, and the Najib-pardon card is less decisive than the dominant narrative implies (real effect is longer-run via legal-exposure parameter shift).
 
 **Phase 5 — Core (state, Monte Carlo, Bayes, DAG, Markov; 3 weeks).**
 

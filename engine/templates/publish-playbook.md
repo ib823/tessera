@@ -132,6 +132,20 @@ Tag every change with `CORRECTED (Stage 3)`, `REPHRASED (Stage 2)`, or
 `INTRODUCED (Stage 6 self-verified)`. If you cannot tag a change with one of
 those three, you have introduced something you should not have.
 
+**Optional — engine cross-check.** If the issue used `ENGINE CONTEXT` in
+Phase 1 (coalition arithmetic / royal arbitration / patronage), run the
+Stage 6 synthesis cross-check before finalizing cards:
+
+```
+node scripts/sim-stage6-check.mjs --scenario <name>
+node scripts/sim-stage6-check.mjs --scenario <name> --synthesis engine/output/{slug}-stage6-synthesis.json
+```
+
+The output flags disagreements between your synthesis claims and the
+engine's structural reading on coalition arithmetic, royal role, and
+patronage. Resolve disagreements either by primary-source evidence the
+engine doesn't capture, or by revising the claim.
+
 Save synthesis to `engine/output/{slug}-stage6-synthesis.json`. Score **SR**.
 
 ```
