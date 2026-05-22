@@ -21,17 +21,20 @@ that should drive whatever gets built next.
 | Seed records (30 actors, 4 cleavages, 4 institutions, 18 events) | Done | `engine/sim/data/` |
 | Event-extractor (745 candidates queued) | Done | `scripts/sim-extract-events.mjs` |
 | Coalition mechanism §5.1 | Done | `engine/sim/mechanisms/coalition.mjs` |
-| Electoral mechanism §5.6 | Done | `engine/sim/mechanisms/electoral.mjs` |
+| Electoral mechanism §5.6 | Done (rural-bias + regional-concentration v1) | `engine/sim/mechanisms/electoral.mjs` |
 | Royal mechanism §5.4 | Done | `engine/sim/mechanisms/royal.mjs` |
 | Patronage mechanism §5.3 | Done | `engine/sim/mechanisms/patronage.mjs` |
 | Outbidding mechanism §5.2 | Done | `engine/sim/mechanisms/outbidding.mjs` |
-| Drift mechanism §5.5 | **Not built** | — |
-| Cascade mechanism §5.7 | **Not built** | — |
+| Drift mechanism §5.5 | Done | `engine/sim/mechanisms/drift.mjs` |
+| Cascade mechanism §5.7 | Done | `engine/sim/mechanisms/cascade.mjs` |
 | State + composer (Phase 5 v0) | Done | `engine/sim/core/` |
 | 4-election backtest (Phase 6 v0) | Done | `scripts/sim-backtest-elections.mjs` |
-| Calibration tightening (Phase 6 v1) | **Not started** | — |
+| Calibration tightening (Phase 6 v1) | Done (concentration param added; per-coalition-period limit documented) | `mechanisms/electoral.mjs` |
 | Brief-integration query | Done | `scripts/sim-brief-context.mjs` |
-| Stage-6 synthesis-check integration | **Not built** | — |
+| Stage-6 synthesis-check integration | Done | `scripts/sim-stage6-check.mjs` |
+| Capstone analysis (GE16 cards) | Done | `scripts/sim-government-cards.mjs`, `docs/research/sim-engine-capstone-ge16-cards.md` |
+
+**All 7 mechanism modules implemented.** Both editorial integration points wired (Phase 1 brief + Stage 6 synthesis cross-check). Capstone document generates the engine's first complete analytic answer to the original session question.
 
 **Real-world use count:** 0. The engine has not yet been invoked on a live
 publishing run. The next user closes that gap.
@@ -72,6 +75,24 @@ node scripts/sim-data-check.mjs --strict       # data integrity
 
 If any of those exits non-zero after future edits, the change broke
 something. Diagnose before continuing.
+
+**(d) Stage 6 synthesis cross-check (before finalizing cards).**
+
+```
+node scripts/sim-stage6-check.mjs --scenario ge15-actual
+node scripts/sim-stage6-check.mjs --scenario ge16-najib-pardon --synthesis engine/output/{slug}-stage6-synthesis.json
+```
+
+**(e) Full engine capstone — run all mechanisms across the eight "cards
+available" scenarios.**
+
+```
+node scripts/sim-government-cards.mjs > /tmp/capstone-fresh.md
+diff docs/research/sim-engine-capstone-ge16-cards.md /tmp/capstone-fresh.md
+```
+
+Run after any mechanism-parameter change to confirm the capstone's
+qualitative findings haven't moved.
 
 ---
 
