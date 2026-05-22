@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-05-22 13:00 UTC. Queue size: 849. Picks shown: 25.
+Scan: 2026-05-22 15:09 UTC. Queue size: 843. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 51.6 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 51.7 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 0.935 (silence=0.91 × importance=0.52 × age_factor)
 
-- **Age in queue:** 58.1 days (source date: 2026-03-25, first seen: 2026-03-25)
+- **Age in queue:** 58.2 days (source date: 2026-03-25, first seen: 2026-03-25)
 
 - **Coverage:** 50 news, 11 social — pattern: _below-expected coverage_
 
@@ -42,9 +42,9 @@ developed.
 
 ### S3. suhaili gagal cabar tindakan bersatu tamat keahlian. panel mahkamah rayuan sebulat suara tolak rayuan ahli ...
 
-- **Rank score:** 0.878 (silence=0.99 × importance=0.51 × age_factor)
+- **Rank score:** 0.879 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 22.7 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 22.8 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -53,9 +53,9 @@ developed.
 
 ### S4. kkm akan kemuka cadangan jimat kos tanpa jejas perkhidmatan penting. ia susulan keputusan kerajaan memperti...
 
-- **Rank score:** 0.807 (silence=1.00 × importance=0.51 × age_factor)
+- **Rank score:** 0.808 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 17.7 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 17.8 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -64,9 +64,9 @@ developed.
 
 ### S5. selepas dap, pemuda mca umum sertai himpunan anti-azam baki. jawatankuasa pusat kata sudah tiba masa keraja...
 
-- **Rank score:** 0.778 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.780 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 28.7 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 28.8 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -75,20 +75,20 @@ developed.
 
 ### S6. budget 2027 presentation
 
-- **Rank score:** 0.650 (silence=1.00 × importance=0.54 × age_factor)
+- **Rank score:** 0.651 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-05-22, first seen: 2026-05-16)
+- **Age in queue:** 6.2 days (source date: 2026-05-22, first seen: 2026-05-16)
 
-- **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
+- **Coverage:** 0 news, 1 social — pattern: _social only — no news_
 
 - **Dimensions at risk:** economic, political
 
 
 ### S7. selesai disoal 9 jam, rafizi beredar dari sprm. ahli parlimen pandan itu tiba di ibu pejabat sprm pada 9.30...
 
-- **Rank score:** 0.637 (silence=0.98 × importance=0.41 × age_factor)
+- **Rank score:** 0.638 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 17.6 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 17.7 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -97,9 +97,9 @@ developed.
 
 ### S8. parliament budget session session opens
 
-- **Rank score:** 0.613 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.615 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-05-22, first seen: 2026-05-16)
+- **Age in queue:** 6.2 days (source date: 2026-05-22, first seen: 2026-05-16)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -108,9 +108,9 @@ developed.
 
 ### S9. mahkamah kekal penjara 30 tahun, 16 sebatan lelaki ukraine edar dadah. mahkamah persekutuan tolak rayuan ak...
 
-- **Rank score:** 0.601 (silence=1.00 × importance=0.56 × age_factor)
+- **Rank score:** 0.603 (silence=1.00 × importance=0.56 × age_factor)
 
-- **Age in queue:** 2.1 days (source date: 2026-05-20, first seen: 2026-05-20)
+- **Age in queue:** 2.2 days (source date: 2026-05-20, first seen: 2026-05-20)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
@@ -119,9 +119,9 @@ developed.
 
 ### S10. rayuan anggota rela tembak rakan baik ditolak, penjara 30 tahun kekal. mahkamah persekutuan tolak rayuan on...
 
-- **Rank score:** 0.595 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.597 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 1.9 days (source date: 2026-05-20, first seen: 2026-05-20)
+- **Age in queue:** 2.0 days (source date: 2026-05-20, first seen: 2026-05-20)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
@@ -130,9 +130,9 @@ developed.
 
 ### S11. rancang bubar kerajaan perpaduan lepas bn johor gerak solo, tony pua beritahu ph. bekas ahli parlimen daman...
 
-- **Rank score:** 0.575 (silence=0.95 × importance=0.52 × age_factor)
+- **Rank score:** 0.576 (silence=0.95 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.2 days (source date: 2026-05-17, first seen: 2026-05-17)
+- **Age in queue:** 5.3 days (source date: 2026-05-17, first seen: 2026-05-17)
 
 - **Coverage:** 23 news, 10 social — pattern: _below-expected coverage_
 
@@ -141,9 +141,9 @@ developed.
 
 ### S12. caj pusat data mungkin naik susulan lonjakan harga diesel, kata ahli akademik. chen zhiyuan dari university...
 
-- **Rank score:** 0.573 (silence=0.97 × importance=0.52 × age_factor)
+- **Rank score:** 0.574 (silence=0.97 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.5 days (source date: 2026-05-18, first seen: 2026-05-18)
+- **Age in queue:** 4.6 days (source date: 2026-05-18, first seen: 2026-05-18)
 
 - **Coverage:** 11 news, 11 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed.
 
 ### S13. mbi selangor nafi terlibat projek bernam maritime, bernam shipyard. ia memaklumkan tidak pernah memberikan ...
 
-- **Rank score:** 0.563 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.565 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 3.2 days (source date: 2026-05-19, first seen: 2026-05-19)
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. 23 lelaki ‘geng 24 hung-hung’ dituduh anggotai kumpulan jenayah terancang. tiada pengakuan direkod kerana k...
 
-- **Rank score:** 0.561 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.563 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-05-15, first seen: 2026-05-15)
+- **Age in queue:** 6.7 days (source date: 2026-05-15, first seen: 2026-05-15)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. wan saiful dakwa pn sukar serang isu uec kerana pendirian azmin. ahli parlimen tasek gelugor itu berkata ti...
 
-- **Rank score:** 0.560 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.561 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-05-15, first seen: 2026-05-15)
+- **Age in queue:** 6.7 days (source date: 2026-05-15, first seen: 2026-05-15)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -185,29 +185,40 @@ developed.
 
 ### S16. ex-ranger nabbed for having body parts of protected wildlife. among the items seized were 55 pairs of antle...
 
-- **Rank score:** 0.559 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.561 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-05-16, first seen: 2026-05-16)
+- **Age in queue:** 6.5 days (source date: 2026-05-16, first seen: 2026-05-16)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S17. parliament second session session opens
+### S17. sabitan kes rasuah: mahkamah tetap 26 jun dengar permohonan isa samad. mahkamah persekutuan akan dengar per...
 
-- **Rank score:** 0.551 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.560 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-05-22, first seen: 2026-05-16)
+- **Age in queue:** 0.0 days (source date: 2026-05-22, first seen: 2026-05-22)
+
+- **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### S18. parliament second session session opens
+
+- **Rank score:** 0.552 (silence=0.98 × importance=0.47 × age_factor)
+
+- **Age in queue:** 6.2 days (source date: 2026-05-22, first seen: 2026-05-16)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S18. gubal ruu khas tangani penghina institusi diraja, kerajaan diberitahu. akta itu perlu sebagai langkah tegas...
+### S19. gubal ruu khas tangani penghina institusi diraja, kerajaan diberitahu. akta itu perlu sebagai langkah tegas...
 
-- **Rank score:** 0.546 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.548 (silence=0.98 × importance=0.47 × age_factor)
 
 - **Age in queue:** 5.9 days (source date: 2026-05-17, first seen: 2026-05-16)
 
@@ -216,31 +227,31 @@ developed.
 - **Dimensions at risk:** political
 
 
-### S19. 50,000 lepasan pondok persendirian berpeluang ke ipta. timbalan menteri pendidikan tinggi berkata ia susula...
+### S20. 50,000 lepasan pondok persendirian berpeluang ke ipta. timbalan menteri pendidikan tinggi berkata ia susula...
 
-- **Rank score:** 0.543 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.544 (silence=0.97 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-05-16, first seen: 2026-05-16)
+- **Age in queue:** 6.1 days (source date: 2026-05-16, first seen: 2026-05-16)
 
 - **Coverage:** 7 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S20. mesyuarat pkr kuala selangor kecoh kerana usul undi tak percaya. ketua cabang m sivabalan berkata mesyuarat...
+### S21. mesyuarat pkr kuala selangor kecoh kerana usul undi tak percaya. ketua cabang m sivabalan berkata mesyuarat...
 
-- **Rank score:** 0.533 (silence=0.95 × importance=0.47 × age_factor)
+- **Rank score:** 0.534 (silence=0.95 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-05-16, first seen: 2026-05-16)
+- **Age in queue:** 6.2 days (source date: 2026-05-16, first seen: 2026-05-16)
 
 - **Coverage:** 12 news, 10 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S21. jawatankuasa khas pn akan rangka terma pakatan pilihan raya. setiausaha agung pn berkata, gabungan pembangk...
+### S22. jawatankuasa khas pn akan rangka terma pakatan pilihan raya. setiausaha agung pn berkata, gabungan pembangk...
 
-- **Rank score:** 0.531 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.532 (silence=0.98 × importance=0.47 × age_factor)
 
 - **Age in queue:** 4.9 days (source date: 2026-05-18, first seen: 2026-05-17)
 
@@ -249,48 +260,37 @@ developed.
 - **Dimensions at risk:** political
 
 
-### S22. sprm mohon bantuan 2 negara dalam siasatan pelaburan rm1.1 bilion. ketua pesuruhjaya sprm abd halim aman be...
+### S23. sprm mohon bantuan 2 negara dalam siasatan pelaburan rm1.1 bilion. ketua pesuruhjaya sprm abd halim aman be...
 
-- **Rank score:** 0.529 (silence=0.97 × importance=0.51 × age_factor)
+- **Rank score:** 0.530 (silence=0.97 × importance=0.51 × age_factor)
 
-- **Age in queue:** 1.9 days (source date: 2026-05-20, first seen: 2026-05-20)
+- **Age in queue:** 2.0 days (source date: 2026-05-20, first seen: 2026-05-20)
 
 - **Coverage:** 7 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** institutional, political
 
 
-### S23. sprm akan rayu keputusan mahkamah tolak perintah larangan akses rm548 juta. sprm kata notis rayuan akan dif...
+### S24. sprm akan rayu keputusan mahkamah tolak perintah larangan akses rm548 juta. sprm kata notis rayuan akan dif...
 
 - **Rank score:** 0.529 (silence=0.98 × importance=0.54 × age_factor)
 
-- **Age in queue:** 0.0 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 0.1 days (source date: 2026-05-22, first seen: 2026-05-22)
 
-- **Coverage:** 6 news, 6 social — pattern: _below-expected coverage_
+- **Coverage:** 10 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** institutional, legal
 
 
-### S24. khlir tak berhasrat sertai umno, hadir program atas jemputan. ahli parlimen ketereh itu berkata beliau hadi...
+### S25. khlir tak berhasrat sertai umno, hadir program atas jemputan. ahli parlimen ketereh itu berkata beliau hadi...
 
-- **Rank score:** 0.524 (silence=0.96 × importance=0.47 × age_factor)
+- **Rank score:** 0.525 (silence=0.96 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.2 days (source date: 2026-05-17, first seen: 2026-05-17)
+- **Age in queue:** 5.3 days (source date: 2026-05-17, first seen: 2026-05-17)
 
 - **Coverage:** 11 news, 8 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
-
-
-### S25. kerajaan kekal bantuan budi madani diesel rm300 sebulan, interim rm100. menteri ekonomi berkata, langkah it...
-
-- **Rank score:** 0.523 (silence=0.99 × importance=0.48 × age_factor)
-
-- **Age in queue:** 3.2 days (source date: 2026-05-19, first seen: 2026-05-19)
-
-- **Coverage:** 6 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, political
 
 
 ---
