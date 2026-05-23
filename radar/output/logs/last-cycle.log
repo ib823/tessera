@@ -1,57 +1,58 @@
-[32m2026-05-23 13:28:31[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-05-23 13:28:31[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-05-23 13:28:31[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [national_policy] "May 13 Anniversary" importance=0.40
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 4035 topics from state
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-05-23 13:28:32[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-05-23T13:28:32.899298+00:00
-[32m2026-05-23 13:28:41[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-05-23 13:28:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-05-23 13:28:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-05-23 13:28:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-05-23 13:28:47[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-05-23 13:28:47[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
-[32m2026-05-23 13:28:51[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 125 events
-[32m2026-05-23 13:29:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT domestic request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-05-23 13:29:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-05-23 13:29:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-05-23 13:29:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-05-23 13:29:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-05-23 13:30:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-05-23 13:30:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-05-23 13:30:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-05-23 13:30:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-05-23 13:31:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-05-23 13:31:04[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 1 events
-[32m2026-05-23 13:31:06[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 581 events from 5 sources
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 581 events
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 405 within 24h (125 pruned)
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "PAS set for crunch talks on Bersatu cooperation ahead of Aidiladha, says party sec-gen. KUALA LUMPUR, May 23 &mdash; PAS is expected to hold a meeting within the next few days to decide its next cours" importance=0.41
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Rafizi-linked Bersama forms Johor pro-tem committee, eyes all 56 seats in state polls. JOHOR BAHRU, May 22 &mdash; Johor has become the first state to set up a pro-tem committee for the Malaysian Unit" importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Pusat beli-belah di Putrajaya dinaiki air akibat hujan lebat. Bomba turut memantau kawasan perumahan lain susulan hujan lebat yang melanda sekitar Putrajaya bermula 3 petang tadi." importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "PH P Pinang bentuk 3 jawatankuasa hadapi PRU16. Tiga jawatankuasa kecil diketuai pemimpin PH negeri itu merangkumi manifesto, komunikasi, dan mobilisasi." importance=0.41
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Penang PH gears up for GE16 with formation of election committee. State coalition chairman Chow Kon Yeow also announces minor changes to the leadership committee." importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Perlis MB says state assembly will be dissolved if PAS reps table no-confidence motion in June. KUALA LUMPUR, May 23 &mdash; Perlis Menteri Besar Abu Bakar Hamzah said he would dissolve the state asse" importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Hotel tissue raid in Kota Kinabalu lands 56‑year‑old with RM50 fine. KOTA KINABALU, May 23 &mdash; A 56-year-old man was fined RM50 or one day&rsquo;s jail by the Magistrate&rsquo;s Court f..." importance=0.38
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Mesyuarat bincang hubungan PAS-Bersatu dalam masa terdekat. Mesyuarat menyusuli amaran Presiden Hadi Awang bahawa kesabaran PAS 'ada batas'." importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "MACC to appeal High Court ruling dismissing bid to freeze RM548m Singapore funds linked to Na’imah and son. KUALA LUMPUR, May 23 &mdash; The Malaysian Anti-Corruption Commission (MACC) will file a not" importance=0.47
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Pope Leo decries ‘dizzying’ profits earned by companies that pollute. The pontiff also urged the world to reject power and wealth driven by practices harming the environment and society." importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "PAS’ Tuan Ibrahim says Bersatu actions weakening Perikatan, warns against repeating history. KUALA LUMPUR, May 23 &mdash; PAS deputy president Datuk Seri Tuan Ibrahim Tuan Man has publicly rebuked Par" importance=0.41
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "I’ll dissolve state assembly if no confidence motion is tabled, says Perlis MB. Abu Bakar Hamzah says such a move by any party would leave him with no other option at the upcoming sitting." importance=0.46
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [federal_court_ruling] "Federal Court fixes June 26 to hear Isa Samad’s conviction‑review application. PUTRAJAYA, May 22 &mdash; The Federal Court has fixed June 26 to hear former Felda chairman Tan Sri Mohd Isa Abdul Samad." importance=0.56
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 66), ('india', 43), ('pas', 40), ('minister', 35), ('chinese', 28), ('government', 27), ('indian', 20), ('prime minister', 19), ('isa', 18), ('bersatu', 11)]
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 4040 active topics
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36moutput              [0m | 831 active issues, 3215 new, 3209 pruned
-[32m2026-05-23 13:31:09[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-05-23 13:31:30[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=32  hmm=OK/77  cox=RT/831  sarima=RT/831
-[32m2026-05-23 13:31:30[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=831)
-[32m2026-05-23 13:31:30[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 4040 active topics. Top: parliament budget session session opens (score: 0.97)
+[32m2026-05-23 15:02:02[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-05-23 15:02:02[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-05-23 15:02:02[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [national_policy] "May 13 Anniversary" importance=0.40
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 4040 topics from state
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-05-23 15:02:03[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-05-23T15:02:03.281830+00:00
+[32m2026-05-23 15:02:05[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-05-23 15:02:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-05-23 15:02:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-05-23 15:02:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-05-23 15:02:11[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-05-23 15:02:11[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 443 events
+[32m2026-05-23 15:02:15[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 125 events
+[32m2026-05-23 15:02:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-05-23 15:02:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:02:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:02:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:02:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:03:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:03:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:03:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-05-23 15:03:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:03:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:03:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-05-23 15:03:36[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-05-23 15:03:39[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 581 events from 5 sources
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 581 events
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 396 within 24h (115 pruned)
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "PAS set for crunch talks on Bersatu cooperation ahead of Aidiladha, says party sec-gen. KUALA LUMPUR, May 23 &mdash; PAS is expected to hold a meeting within the next few days to decide its next cours" importance=0.41
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Don’t drag us into DAP’s internal conflict, Rafizi tells Pua. Rafizi Ramli says Tony Pua's recent tirade against PKR MPs aligned with him reflects a factional split within DAP." importance=0.41
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Rafizi-linked Bersama forms Johor pro-tem committee, eyes all 56 seats in state polls. JOHOR BAHRU, May 22 &mdash; Johor has become the first state to set up a pro-tem committee for the Malaysian Unit" importance=0.46
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Pusat beli-belah di Putrajaya dinaiki air akibat hujan lebat. Bomba turut memantau kawasan perumahan lain susulan hujan lebat yang melanda sekitar Putrajaya bermula 3 petang tadi." importance=0.46
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "PH P Pinang bentuk 3 jawatankuasa hadapi PRU16. Tiga jawatankuasa kecil diketuai pemimpin PH negeri itu merangkumi manifesto, komunikasi, dan mobilisasi." importance=0.41
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Penang PH gears up for GE16 with formation of election committee. State coalition chairman Chow Kon Yeow also announces minor changes to the leadership committee." importance=0.46
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Perlis MB says state assembly will be dissolved if PAS reps table no-confidence motion in June. KUALA LUMPUR, May 23 &mdash; Perlis Menteri Besar Abu Bakar Hamzah said he would dissolve the state asse" importance=0.46
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Hotel tissue raid in Kota Kinabalu lands 56‑year‑old with RM50 fine. KOTA KINABALU, May 23 &mdash; A 56-year-old man was fined RM50 or one day&rsquo;s jail by the Magistrate&rsquo;s Court f..." importance=0.38
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Mesyuarat bincang hubungan PAS-Bersatu dalam masa terdekat. Mesyuarat menyusuli amaran Presiden Hadi Awang bahawa kesabaran PAS 'ada batas'." importance=0.46
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "MACC to appeal High Court ruling dismissing bid to freeze RM548m Singapore funds linked to Na’imah and son. KUALA LUMPUR, May 23 &mdash; The Malaysian Anti-Corruption Commission (MACC) will file a not" importance=0.47
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Pope Leo decries ‘dizzying’ profits earned by companies that pollute. The pontiff also urged the world to reject power and wealth driven by practices harming the environment and society." importance=0.46
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "PAS’ Tuan Ibrahim says Bersatu actions weakening Perikatan, warns against repeating history. KUALA LUMPUR, May 23 &mdash; PAS deputy president Datuk Seri Tuan Ibrahim Tuan Man has publicly rebuked Par" importance=0.41
+[32m2026-05-23 15:03:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [federal_court_ruling] "Federal Court fixes June 26 to hear Isa Samad’s conviction‑review application. PUTRAJAYA, May 22 &mdash; The Federal Court has fixed June 26 to hear former Felda chairman Tan Sri Mohd Isa Abdul Samad." importance=0.56
+[32m2026-05-23 15:03:44[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-05-23 15:03:44[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 64), ('india', 40), ('minister', 38), ('pas', 38), ('government', 29), ('chinese', 27), ('prime minister', 20), ('indian', 19), ('isa', 16), ('price', 12)]
+[32m2026-05-23 15:03:44[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
+[32m2026-05-23 15:03:44[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 4041 active topics
+[32m2026-05-23 15:03:44[0m | [1mINFO    [0m | [36moutput              [0m | 828 active issues, 3210 new, 3213 pruned
+[32m2026-05-23 15:03:44[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-05-23 15:04:01[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=33  hmm=OK/77  cox=RT/828  sarima=RT/828
+[32m2026-05-23 15:04:01[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=828)
+[32m2026-05-23 15:04:01[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 4041 active topics. Top: parliament budget session session opens (score: 0.97)
