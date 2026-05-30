@@ -30,8 +30,8 @@ I checked each curated Tier A/B pick against published issues 1992–2000 and th
 
 | Pick | Topic | Current status |
 |------|-------|----------------|
-| A1 | Federal Court stay on Isa Samad corruption set-aside | **In flight** — brief `isa-samad-federal-court-rule-137-review.md` exists; not yet published |
-| A2 | Penang Islamic Dept halts Chinese temple's open house | **Available** — no brief, not published (verify against temple-adjacent 1717/1865 first) |
+| A1 | Federal Court stay on Isa Samad corruption set-aside | **In flight** — brief `isa-samad-federal-court-rule-137-review.md` exists; not yet published. Note: issue **1992** (apex-court courtroom-audio dispute) is Isa-Samad-adjacent — the A1 angle must differentiate from it |
+| A2 | Penang Islamic Dept halts Chinese temple's open house | **Available** — no brief, not published (verify against temple-adjacent issues 1604/1639/1955/1960 first) |
 | A3 | Federal agency CEO arrested over RM1m bribe | **Available** — no brief, not published |
 | A4 | Court of Appeal upholds Bersatu termination of Suhaili (Art. 49A) | **Published as issue 2000** — remove from develop list |
 | A5 | PDRM CCID: investment-fraud losses RM1.47B in 2025 | **Available** — no brief, not published |
@@ -71,7 +71,7 @@ Hold for guardrails rather than slotting by default:
   Develop only with **Stage 5 re-enabled** and every specific traced to **two
   independent primary sources** (JHEAIPP order text first, not news
   characterisation). If that bar is not met, hold the issue. Confirm it is not
-  already covered by temple-adjacent issues 1717/1865.
+  already covered by temple-adjacent issues 1604/1639/1955/1960.
 - **B5 (ILO/Bestinet correction)** — good "what they said / what we found"
   follow-up with a `related[]` hook to the existing Bestinet issue; promote to a
   slot if any Tier A pick is blocked.
