@@ -30,7 +30,7 @@ I checked each curated Tier A/B pick against published issues 1992–2000 and th
 
 | Pick | Topic | Current status |
 |------|-------|----------------|
-| A1 | Federal Court stay on Isa Samad corruption set-aside | **In flight** — brief `isa-samad-federal-court-rule-137-review.md` exists; not yet published. Note: issue **1992** (apex-court courtroom-audio dispute) is Isa-Samad-adjacent — the A1 angle must differentiate from it |
+| A1 | Federal Court stay on Isa Samad corruption set-aside | **Already covered — published as issue 1992** ("apex court releases courtroom audio"), same 13 May 2026 Federal Court sitting. A redundant brief (`isa-samad-federal-court-rule-137-review.md`) also exists. **Drop** unless a genuinely new development (the actual stay/set-aside ruling) lands |
 | A2 | Penang Islamic Dept halts Chinese temple's open house | **Available** — no brief, not published (verify against temple-adjacent issues 1604/1639/1955/1960 first) |
 | A3 | Federal agency CEO arrested over RM1m bribe | **Available** — no brief, not published |
 | A4 | Court of Appeal upholds Bersatu termination of Suhaili (Art. 49A) | **Published as issue 2000** — remove from develop list |
@@ -58,13 +58,17 @@ I checked each curated Tier A/B pick against published issues 1992–2000 and th
    the "show, don't tell" standard.
 2. **A3 — Federal agency CEO RM1m bribe.** Fresh, low 3R (charges filed =
    low defamation risk), Governance lens. Pairs via `related[]` with the
-   corruption-accountability arc (1990 Rafizi RM1.1B, plus A1 once it ships).
-3. **A1 — Isa Samad Federal Court stay.** Already has a brief — the next action
-   is to **finish the pipeline on the existing brief**, not re-develop. Legal
-   lens; strong arc pairing with A3.
+   corruption-accountability arc (1990 Rafizi RM1.1B, and 1992 Isa Samad).
+3. **B5 — ILO denies endorsing Bestinet system.** Clean "what they said / what
+   we found" correction with a ready `related[]` hook to the prior Bestinet
+   issue. Social/Governance lens for spread.
 
-This keeps lens diversity (Economic → Governance → Legal) and avoids two
+This keeps lens diversity (Economic → Governance → Social) and avoids two
 corruption pieces running back-to-back by leading with A5.
+
+**A1 (Isa Samad) is dropped from the develop order** — it is already published
+as issue 1992 (same hearing). The remaining `isa-samad-...` brief should be
+parked, not pushed, unless the actual set-aside/stay ruling (a new event) lands.
 
 Hold for guardrails rather than slotting by default:
 - **A2 (Penang temple)** — high leverage but **HIGH 3R (ethnic + religious)**.
