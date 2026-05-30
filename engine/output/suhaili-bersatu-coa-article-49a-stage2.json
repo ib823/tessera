@@ -1,0 +1,89 @@
+{
+  "bias_score": 45,
+  "political_lean_estimate": 0.6,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.1,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [
+    {
+      "quote": "A Labuan MP's appeal against Bersatu's expulsion was dismissed at the Court of Appeal this month.",
+      "why_biased": "The analysis uses the word 'expulsion' instead of 'cessation' of membership. In the context of Malaysia's anti-hopping law, this terminology is highly partisan. Pro-government/Madani aligned MPs (like Suhaili) claim they were 'expelled' in order to keep their seats under the Article 49A(2)(c) exemption. Bersatu argues their membership automatically 'ceased' under the party constitution. By stating it was an 'expulsion' as a matter of fact, the analyst uncritically adopts the government-friendly narrative.",
+      "fix": "Replace 'Bersatu's expulsion' with 'the cessation of his Bersatu membership'."
+    }
+  ],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "The analysis ignores Section 18C of the Societies Act 1966. The reason the courts have not provided a substantive judicial interpretation of the Article 49A carve-out is largely because Section 18C prevents courts from hearing party membership disputes. Failing to mention this makes the lack of judicial interpretation seem like an anomaly rather than a deliberate statutory roadblock."
+  ],
+  "evasion_flags": [
+    "The analysis dodges explaining exactly HOW Suhaili's case was dismissed. The Court of Appeal dismissed it on April 29, 2026, precisely because Section 18C of the Societies Act ousts the court's jurisdiction over party affairs. Leaving this out evades the core legal reason the constitutional question remains unanswered."
+  ],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "quote": "ruling that representatives cannot contract away their constitutional right to choose a party.",
+      "why": "This completely misstates the December 2024 Court of Appeal ruling. The panel led by Justice See Mee Chun actually UPHELD the High Court's ruling that Zuraida breached the bond, meaning the contract was legally valid. They only reduced the damages from RM10 million to RM100,000 on the grounds that the original amount was disproportionate and unreasonable under the Contracts Act, not because the contract itself was unconstitutional.",
+      "fix": "Change to: 'ruling that while she breached a valid contract, the RM10 million penalty was disproportionate and unreasonable, reducing it to RM100,000.'"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "A Labuan MP's appeal against Bersatu's expulsion was dismissed",
+      "why": "Calling the disciplinary action an 'expulsion' misrepresents the legal facts. Bersatu did not formally expel Suhaili; their constitution automatically 'ceased' his membership. Because Article 49A(2)(c) protects expelled MPs but not those whose membership ceases, the analyst's choice of word preemptively answers the constitutional question they claim is untested.",
+      "fix": "Change to: 'A Labuan MP's appeal against the cessation of his Bersatu membership was dismissed'"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Anti-hopping protection sidestepped without judicial test.",
+      "why": "By voluntarily vacating their seats under Article 51 before leaving the party, Rafizi and Nik Nazmi triggered the exact outcome the anti-hopping law intends: returning the mandate to the voters. Framing this as 'sidestepping' the law's protection implies the MPs evaded accountability, when in fact they proactively submitted to the law's ultimate penalty (losing their seats).",
+      "fix": "Change to: 'Anti-hopping consequences accepted voluntarily, preempting any judicial test of Article 49A.'"
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "A Labuan MP's appeal against Bersatu's expulsion was dismissed at the Court of Appeal this month.",
+      "status": "WRONG",
+      "primary_source": "FMT / The Star reports on Court of Appeal judgment, 29 April 2026",
+      "corrected_value": "The appeal was against the cessation of his membership, not an expulsion."
+    },
+    {
+      "claim": "Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022, in force 5 October 2022.",
+      "status": "VERIFIED",
+      "primary_source": "Journal of the Malaysian Parliament Vol 3 (2023) / Federal Gazette Act A1664"
+    },
+    {
+      "claim": "Article 49A(2)(c), the expulsion carve-out, has been on the books 3 years 7 months.",
+      "status": "VERIFIED",
+      "primary_source": "Date calculation: October 5, 2022 to May 2026"
+    },
+    {
+      "claim": "Subsection (2)(c) exempts expulsion from triggering loss of MP status.",
+      "status": "VERIFIED",
+      "primary_source": "Federal Constitution Article 49A(2)(c)"
+    },
+    {
+      "claim": "Zuraida Kamaruddin's case (Court of Appeal December 2024) was decided on contracts law, not Article 49A.",
+      "status": "VERIFIED",
+      "primary_source": "Court of Appeal judgment summary by Justice See Mee Chun, 11 Dec 2024"
+    },
+    {
+      "claim": "The court reduced PKR's RM10 million anti-defection bond to RM100,000, ruling that representatives cannot contract away their constitutional right to choose a party.",
+      "status": "WRONG",
+      "primary_source": "Court of Appeal judgment by Justice See Mee Chun, 11 Dec 2024",
+      "corrected_value": "The court reduced the amount because it was disproportionate under the Contracts Act, but upheld the finding that she was liable for breaching the binding bond."
+    },
+    {
+      "claim": "Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate their seats before leaving PKR.",
+      "status": "VERIFIED",
+      "primary_source": "NST / Sabah Media reporting, 17-19 May 2026"
+    }
+  ],
+  "overall_assessment": "The analysis correctly identifies a genuine constitutional gray area but commits two severe factual and framing errors that ruin its legal credibility. First, it completely mischaracterises the Court of Appeal's ruling in Zuraida Kamaruddin's bond case, falsely claiming the court ruled MPs cannot contract away their rights; in reality, the court upheld the contract's validity but merely reduced the financial penalty due to proportionality. Second, it adopts partisan framing by describing Suhaili Abdul Rahman's removal from Bersatu as an 'expulsion'—the exact term the government-aligned MP uses to claim constitutional protection—when the party's legal argument explicitly relies on the 'cessation' of his membership. These errors turn an otherwise insightful governance brief into a legally flawed and subtly biased document."
+}
