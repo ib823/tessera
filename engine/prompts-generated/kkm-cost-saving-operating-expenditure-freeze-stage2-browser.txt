@@ -1,0 +1,212 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "kkm-cost-saving-operating-expenditure-freeze",
+    "issue_id": "2001",
+    "brief": "engine/briefs/kkm-cost-saving-operating-expenditure-freeze.md",
+    "generated_at": "2026-05-30",
+    "revision_history": [
+      "v1 (2026-05-30): initial draft after Phase 1 brief approval. Radar origin: silence-watch S3 (silence=0.995). Frame rotates the reader from the reassurance binary ('cuts WILL / WON'T hit essential services') to the structural arithmetic: when ~62% of the operating budget is fixed salaries and core clinical care is ring-fenced, a multi-billion cut has nowhere to land except the services-and-supplies base that clinicians say is also essential. Process-not-people: the critique is of the Treasury arithmetic and the 'non-essential' framing, not of any official."
+    ],
+    "discipline": "Process-not-people, and proposal-not-fact. As of source date the cut is a PROPOSAL under re-evaluation, not a gazetted decision; cards say 'proposed'. The cut figure is contested (RM3.06b Treasury / RM3.04b minister's framing / ~RM4.65b his 10% expectation) and cards report it as a proposal range, never a settled number. Cards do NOT claim services have been cut, do NOT claim patients have been harmed, and do NOT attribute bad faith to any official. They DO report the verified budget composition and the framing gap between 'savings without affecting essential services' and clinicians' position that the residual base is essential."
+  },
+  "headline": "Putrajaya promised health savings without touching essential services. Salaries are 62% of the budget.",
+  "context": "In late April 2026, the Treasury proposed cutting RM3.06 billion (6.6%) from the Health Ministry's RM46.5 billion budget, part of a RM10 billion across-the-board savings drive as the subsidy bill ballooned toward RM58.4 billion. The ministry says it can save without affecting essential services. The arithmetic is tight.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Putrajaya says it can cut billions from the health budget without touching essential services. About 62% of that budget is staff salaries it cannot easily touch.",
+      "sub": "The Treasury proposed shaving RM3.06 billion off the Health Ministry's RM46.5 billion for 2026. Where a cut that size actually lands is the question.",
+      "sources": [
+        "Free Malaysia Today, 29 April 2026, 'Treasury suggests RM5.4bil budget cuts for health, higher edu ministries': https://www.freemalaysiatoday.com/category/nation/2026/04/29/treasury-suggests-rm5-4bil-budget-cuts-for-health-higher-edu-ministries",
+        "CodeBlue (Galen Centre), May 2026, 'Dzulkefly Expects 10% Cut To Health Ministry's Budget': https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The Treasury proposed a RM3.06 billion cut, 6.6% of the ministry's RM46.5 billion. That would leave it RM43.4 billion, below its RM45.3 billion budget the year before.",
+      "sub": "It is part of a RM10 billion savings drive across ministries, triggered by the subsidy bill climbing from RM15 billion budgeted toward a projected RM58.4 billion.",
+      "sources": [
+        "Free Malaysia Today, 29 April 2026, 'Treasury suggests RM5.4bil budget cuts for health, higher edu ministries': https://www.freemalaysiatoday.com/category/nation/2026/04/29/treasury-suggests-rm5-4bil-budget-cuts-for-health-higher-edu-ministries",
+        "New Straits Times, 29 April 2026, 'Treasury proposes RM5.45 billion budget cuts for health, higher education': https://www.nst.com.my/news/nation/2026/04/1429258/treasury-proposes-rm545-billion-budget-cuts-health-higher-education",
+        "Galen Centre, 29 April 2026, 'Proposed RM3.06 Billion Cut Risks Deepening Malaysia's Healthcare Crisis': https://galencentre.org/2026/04/29/proposed-rm3-06-billion-cut-risks-deepening-malaysias-healthcare-crisis/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Of the ministry's RM39.8 billion operating budget, RM24.8 billion (about 62%) is staff salaries. A cut cannot realistically reach payroll, so it lands on what is left.",
+      "sub": "Services and supplies make up RM13.9 billion of the rest. Strip out protected medicine and core care, and the base the cut must fall on is far smaller than the cut itself.",
+      "sources": [
+        "CodeBlue (Galen Centre), May 2026, 'Dzulkefly Expects 10% Cut To Health Ministry's Budget' (RM39.8b operating / RM6.7b development; emoluments ~62% = RM24.8b; services and supplies RM13.9b): https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/",
+        "data.gov.my, Annual Budget Allocation for the Ministry of Health: https://data.gov.my/data-catalogue/federal_budget_moh"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Health",
+      "big": "Clinicians say the leftover base is not optional. Cleaning prevents infection, maintenance keeps equipment running, and supplies mean medicine, gloves, oxygen, and dialysis lines.",
+      "sub": "Doctor groups warned the cut would delay surgeries, lengthen waiting times, and strain staffing. The minister has pledged to protect basic care, emergency care, and drug supply.",
+      "sources": [
+        "CodeBlue (Galen Centre), April 2026, 'Health Spending Cut Will Worsen Patient Outcomes, Strain Health Workers: Doctor Groups': https://codeblue.galencentre.org/2026/04/health-spending-cut-will-worsen-patient-outcomes-strain-health-workers-doctor-groups/",
+        "The Star, 2 May 2026, 'Health Ministry to submit counter-proposal to protect non-negotiable core services from budget cut': https://www.thestar.com.my/news/nation/2026/05/02/health-ministry-to-submit-counter-proposal-to-protect-non-negotiable-core-services-from-budget-cut",
+        "CodeBlue (Galen Centre), May 2026, 'Dzulkefly Expects 10% Cut To Health Ministry's Budget': https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether the cut spares essential services. It is whether, once salaries and core care are ring-fenced, 'non-essential' is a real category or an accounting fiction.",
+      "sub": "",
+      "sources": [
+        "Derived reframe — no new factual claim. Rests on the verified budget composition in the Economic and Health fact cards."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "It is like being told to cut household spending without touching rent or food. What is left is the lightbulbs, and you are assured the dark won't matter.",
+      "sub": "",
+      "sources": [
+        "Illustrative analogy — no factual claim. Mirrors the fixed-cost structure (salaries as rent, core care as food) established in the fact cards."
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "big": "A budget that is 62% salaries cannot be trimmed by billions without the cut landing where patients feel it. The honest debate is which harm to accept, not whether harm occurs.",
+      "sub": "",
+      "sources": [
+        "Synthesis of verified figures — no new factual claim."
+      ]
+    }
+  ],
+  "sources": "Free Malaysia Today (29 Apr, 4 May 2026), New Straits Times (29 Apr 2026), Galen Centre / CodeBlue (Apr-May 2026), The Star (2 May 2026), Bernama (4 May 2026), data.gov.my federal_budget_moh",
+  "confidence": "Medium-High. The structural facts (RM46.5b allocation, RM39.8b/RM6.7b opex-dev split, ~62% emoluments = RM24.8b, RM13.9b services and supplies, RM45.3b prior year, RM10b drive, RM58.4b subsidy projection) are consistent across multiple outlets including a specialist health-policy source (CodeBlue/Galen) and the official data.gov.my series. Medium on the final cut figure, which was a moving proposal (RM3.06b / RM3.04b / ~RM4.65b) and not gazetted as of source date.",
+  "lenses_used": ["Governance", "Economic", "Health"],
+  "lenses_applicable_but_unused": ["Political", "Social"],
+  "needs_verification": [
+    "Exact RM24.8 billion emoluments figure and the ~62% share of the RM39.8b operating budget — confirm against data.gov.my federal_budget_moh or the Budget 2026 ministerial allocation document, not only CodeBlue's reporting.",
+    "RM39.8b operating / RM6.7b development split of the RM46.5b — confirm against the primary budget document.",
+    "RM45.3 billion 2025 KKM budget (the 'below last year' comparison) — confirm against data.gov.my series.",
+    "Whether the final cut was decided/gazetted after the 15 May 2026 National Budget Office submission deadline — re-check at Stage 3 for any figure more recent than the source-date proposal.",
+    "RM13.9 billion services-and-supplies figure — confirm against primary budget breakdown."
+  ],
+  "source_notes": "CONTRADICTION ON CUT SIZE: The Treasury-proposed figure is reported as RM3.06 billion (6.6%) by FMT, NST and Galen Centre, with a RM10b across-the-board breakdown (RM3.06b health + RM2.39b higher education). Health Minister Dzulkefly framed it as RM3.04 billion 'proposed by the Treasury secretary-general,' and SEPARATELY said he expects a cut of about 10% (~RM4.65 billion). These are not all the same quantity: RM3.06b is the specific Treasury line-item proposal; RM3.04b is the minister's near-identical framing of it; ~RM4.65b is his later expectation of where it may settle. Cards use RM3.06b as 'what the Treasury proposed' (best-sourced, multi-outlet, with breakdown) and do NOT present any figure as the final decided cut, because as of 30 May 2026 the cut remained a proposal under re-evaluation following KKM's counter-proposal. STATUS: 'proposed,' not 'decided' — PM Anwar reportedly acknowledged KKM's appeal to prevent the cut 'as originally planned.' The '62% salaries' structural point is independent of which cut figure prevails and holds across the range. WEBFETCH NOTE: several outlets (CodeBlue, FMT, NST, The Star, Bernama, The Edge) returned HTTP 403 to automated fetch; figures were taken from search-result summaries and are cross-consistent across 6+ outlets, but Stage 3 should confirm the budget-composition numbers against the primary data.gov.my series and the Budget 2026 allocation document directly."
+}

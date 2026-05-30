@@ -1,0 +1,212 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "kkm-cost-saving-operating-expenditure-freeze",
+    "issue_id": "2001",
+    "brief": "engine/briefs/kkm-cost-saving-operating-expenditure-freeze.md",
+    "generated_at": "2026-05-30",
+    "revision_history": [
+      "v1 (2026-05-30): initial draft after Phase 1 brief approval. Radar origin: silence-watch S3 (silence=0.995). Frame rotates the reader from the reassurance binary ('cuts WILL / WON'T hit essential services') to the structural arithmetic: when ~62% of the operating budget is fixed salaries and core clinical care is ring-fenced, a multi-billion cut has nowhere to land except the services-and-supplies base that clinicians say is also essential. Process-not-people: the critique is of the Treasury arithmetic and the 'non-essential' framing, not of any official."
+    ],
+    "discipline": "Process-not-people, and proposal-not-fact. As of source date the cut is a PROPOSAL under re-evaluation, not a gazetted decision; cards say 'proposed'. The cut figure is contested (RM3.06b Treasury / RM3.04b minister's framing / ~RM4.65b his 10% expectation) and cards report it as a proposal range, never a settled number. Cards do NOT claim services have been cut, do NOT claim patients have been harmed, and do NOT attribute bad faith to any official. They DO report the verified budget composition and the framing gap between 'savings without affecting essential services' and clinicians' position that the residual base is essential."
+  },
+  "headline": "Putrajaya promised health savings without touching essential services. Salaries are 62% of the budget.",
+  "context": "In late April 2026, the Treasury proposed cutting RM3.06 billion (6.6%) from the Health Ministry's RM46.5 billion budget, part of a RM10 billion across-the-board savings drive as the subsidy bill ballooned toward RM58.4 billion. The ministry says it can save without affecting essential services. The arithmetic is tight.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Putrajaya says it can cut billions from the health budget without touching essential services. About 62% of that budget is staff salaries it cannot easily touch.",
+      "sub": "The Treasury proposed shaving RM3.06 billion off the Health Ministry's RM46.5 billion for 2026. Where a cut that size actually lands is the question.",
+      "sources": [
+        "Free Malaysia Today, 29 April 2026, 'Treasury suggests RM5.4bil budget cuts for health, higher edu ministries': https://www.freemalaysiatoday.com/category/nation/2026/04/29/treasury-suggests-rm5-4bil-budget-cuts-for-health-higher-edu-ministries",
+        "CodeBlue (Galen Centre), May 2026, 'Dzulkefly Expects 10% Cut To Health Ministry's Budget': https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The Treasury proposed a RM3.06 billion cut, 6.6% of the ministry's RM46.5 billion. That would leave it RM43.4 billion, below its RM45.3 billion budget the year before.",
+      "sub": "It is part of a RM10 billion savings drive across ministries, triggered by the subsidy bill climbing from RM15 billion budgeted toward a projected RM58.4 billion.",
+      "sources": [
+        "Free Malaysia Today, 29 April 2026, 'Treasury suggests RM5.4bil budget cuts for health, higher edu ministries': https://www.freemalaysiatoday.com/category/nation/2026/04/29/treasury-suggests-rm5-4bil-budget-cuts-for-health-higher-edu-ministries",
+        "New Straits Times, 29 April 2026, 'Treasury proposes RM5.45 billion budget cuts for health, higher education': https://www.nst.com.my/news/nation/2026/04/1429258/treasury-proposes-rm545-billion-budget-cuts-health-higher-education",
+        "Galen Centre, 29 April 2026, 'Proposed RM3.06 Billion Cut Risks Deepening Malaysia's Healthcare Crisis': https://galencentre.org/2026/04/29/proposed-rm3-06-billion-cut-risks-deepening-malaysias-healthcare-crisis/"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Of the ministry's RM39.8 billion operating budget, RM24.8 billion (about 62%) is staff salaries. A cut cannot realistically reach payroll, so it lands on what is left.",
+      "sub": "Services and supplies make up RM13.9 billion of the rest. Strip out protected medicine and core care, and the base the cut must fall on is far smaller than the cut itself.",
+      "sources": [
+        "CodeBlue (Galen Centre), May 2026, 'Dzulkefly Expects 10% Cut To Health Ministry's Budget' (RM39.8b operating / RM6.7b development; emoluments ~62% = RM24.8b; services and supplies RM13.9b): https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/",
+        "data.gov.my, Annual Budget Allocation for the Ministry of Health: https://data.gov.my/data-catalogue/federal_budget_moh"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Health",
+      "big": "Clinicians say the leftover base is not optional. Cleaning prevents infection, maintenance keeps equipment running, and supplies mean medicine, gloves, oxygen, and dialysis lines.",
+      "sub": "Doctor groups warned the cut would delay surgeries, lengthen waiting times, and strain staffing. The minister has pledged to protect basic care, emergency care, and drug supply.",
+      "sources": [
+        "CodeBlue (Galen Centre), April 2026, 'Health Spending Cut Will Worsen Patient Outcomes, Strain Health Workers: Doctor Groups': https://codeblue.galencentre.org/2026/04/health-spending-cut-will-worsen-patient-outcomes-strain-health-workers-doctor-groups/",
+        "The Star, 2 May 2026, 'Health Ministry to submit counter-proposal to protect non-negotiable core services from budget cut': https://www.thestar.com.my/news/nation/2026/05/02/health-ministry-to-submit-counter-proposal-to-protect-non-negotiable-core-services-from-budget-cut",
+        "CodeBlue (Galen Centre), May 2026, 'Dzulkefly Expects 10% Cut To Health Ministry's Budget': https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether the cut spares essential services. It is whether, once salaries and core care are ring-fenced, 'non-essential' is a real category or an accounting fiction.",
+      "sub": "",
+      "sources": [
+        "Derived reframe — no new factual claim. Rests on the verified budget composition in the Economic and Health fact cards."
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "It is like being told to cut household spending without touching rent or food. What is left is the lightbulbs, and you are assured the dark won't matter.",
+      "sub": "",
+      "sources": [
+        "Illustrative analogy — no factual claim. Mirrors the fixed-cost structure (salaries as rent, core care as food) established in the fact cards."
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "big": "A budget that is 62% salaries cannot be trimmed by billions without the cut landing where patients feel it. The honest debate is which harm to accept, not whether harm occurs.",
+      "sub": "",
+      "sources": [
+        "Synthesis of verified figures — no new factual claim."
+      ]
+    }
+  ],
+  "sources": "Free Malaysia Today (29 Apr, 4 May 2026), New Straits Times (29 Apr 2026), Galen Centre / CodeBlue (Apr-May 2026), The Star (2 May 2026), Bernama (4 May 2026), data.gov.my federal_budget_moh",
+  "confidence": "Medium-High. The structural facts (RM46.5b allocation, RM39.8b/RM6.7b opex-dev split, ~62% emoluments = RM24.8b, RM13.9b services and supplies, RM45.3b prior year, RM10b drive, RM58.4b subsidy projection) are consistent across multiple outlets including a specialist health-policy source (CodeBlue/Galen) and the official data.gov.my series. Medium on the final cut figure, which was a moving proposal (RM3.06b / RM3.04b / ~RM4.65b) and not gazetted as of source date.",
+  "lenses_used": ["Governance", "Economic", "Health"],
+  "lenses_applicable_but_unused": ["Political", "Social"],
+  "needs_verification": [
+    "Exact RM24.8 billion emoluments figure and the ~62% share of the RM39.8b operating budget — confirm against data.gov.my federal_budget_moh or the Budget 2026 ministerial allocation document, not only CodeBlue's reporting.",
+    "RM39.8b operating / RM6.7b development split of the RM46.5b — confirm against the primary budget document.",
+    "RM45.3 billion 2025 KKM budget (the 'below last year' comparison) — confirm against data.gov.my series.",
+    "Whether the final cut was decided/gazetted after the 15 May 2026 National Budget Office submission deadline — re-check at Stage 3 for any figure more recent than the source-date proposal.",
+    "RM13.9 billion services-and-supplies figure — confirm against primary budget breakdown."
+  ],
+  "source_notes": "CONTRADICTION ON CUT SIZE: The Treasury-proposed figure is reported as RM3.06 billion (6.6%) by FMT, NST and Galen Centre, with a RM10b across-the-board breakdown (RM3.06b health + RM2.39b higher education). Health Minister Dzulkefly framed it as RM3.04 billion 'proposed by the Treasury secretary-general,' and SEPARATELY said he expects a cut of about 10% (~RM4.65 billion). These are not all the same quantity: RM3.06b is the specific Treasury line-item proposal; RM3.04b is the minister's near-identical framing of it; ~RM4.65b is his later expectation of where it may settle. Cards use RM3.06b as 'what the Treasury proposed' (best-sourced, multi-outlet, with breakdown) and do NOT present any figure as the final decided cut, because as of 30 May 2026 the cut remained a proposal under re-evaluation following KKM's counter-proposal. STATUS: 'proposed,' not 'decided' — PM Anwar reportedly acknowledged KKM's appeal to prevent the cut 'as originally planned.' The '62% salaries' structural point is independent of which cut figure prevails and holds across the range. WEBFETCH NOTE: several outlets (CodeBlue, FMT, NST, The Star, Bernama, The Edge) returned HTTP 403 to automated fetch; figures were taken from search-result summaries and are cross-consistent across 6+ outlets, but Stage 3 should confirm the budget-composition numbers against the primary data.gov.my series and the Budget 2026 allocation document directly."
+}
