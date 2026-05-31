@@ -1,0 +1,38 @@
+{
+  "dossier": "D002",
+  "slug": "the-uncapped-ledger",
+  "stage": 6,
+  "review_method": "CLAUDE SELF-VERIFICATION via web search against primary/authoritative sources. The external Stage 2 (Gemini Bias Audit) and Stage 3 (ChatGPT Fact Verification) prompts were generated (engine/prompts-generated/the-uncapped-ledger-stage{2,3}-browser.txt) but were NOT run in an external browser tool for this dossier. Per the Stage 6 preamble, claims not checked by an external stage must be verified by the synthesizer; that is what was done here. This is NOT a substitute for independent external review and is recorded honestly as self-verification.",
+  "synthesis_date": "2026-05-31",
+  "verification_log": [
+    {"claim": "Statutory debt 63.5%, total federal debt 64.7% (RM1.304 trillion), total debt + liabilities 84.1% (RM1.69 trillion) of GDP, end-June 2025", "status": "VERIFIED", "source": "MOF, via Malay Mail 10 Oct 2025 (https://www.malaymail.com/news/malaysia/2025/10/10/govts-total-debt-and-liabilities-at-841pc-of-gdp-as-at-end-june-2025-says-mof/194123); MOF Fiscal Outlook 2026 Section 4 (https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/section4.pdf). UPGRADE: primary MOF source now confirmed (was 403 to automated fetch at draft time)."},
+    {"claim": "Guarantees RM424.7 billion = 21.1% of GDP, below the 25% Act 850 cap; stress test ~97% if all called", "status": "VERIFIED", "source": "MOF / BERNAMA 10 Oct 2025 (https://www.bernama.com/lite/news.php?id=2477034); The Edge MOF stress test (https://theedgemalaysia.com/node/773515)."},
+    {"claim": "Deficit 4.1% (2024, beat 4.3% target), 3.8% (2025), 3.5% (2026), 3.0% by 2028; FRA Act 850 caps 3% deficit / 60% debt medium-term", "status": "VERIFIED", "source": "IMF Article IV 2026 (https://www.imf.org/en/news/articles/2026/02/26/pr-26065-malaysia-imf-executive-board-concludes-2026-article-iv-consultation); IMF 2026 mission statement (.../2025/12/18/pr-25430)."},
+    {"claim": "Debt service 16.3% of revenue in 2025", "status": "VERIFIED", "source": "MOF via Malay Mail 10 Oct 2025 (https://www.malaymail.com/news/malaysia/2025/10/10/mof-debt-servicing-to-take-up-163pc-of-govt-revenue-in-2025-amid-fiscal-tightening/194126); BERNAMA (id=2477036)."},
+    {"claim": "Pension spend RM26.39B / 859,422 pensioners (2020) to RM32.01B / 931,707 (2023); projected RM46.36B (2030), RM120B (2040)", "status": "VERIFIED", "source": "Dewan Rakyat answers via The Star 14 Mar 2024 (https://www.thestar.com.my/news/nation/2024/03/14/govt-spent-rm1167bil-on-pensions-from-2020-to-2023-dewan-rakyat-told)."},
+    {"claim": "Old-age dependency ratio 12.6 (2022) projected to 21.7 (2040); from 7.4 (2010)", "status": "VERIFIED", "source": "DOSM Population Projection 2010-2040; PMC Healthy Ageing in Malaysia review (https://pmc.ncbi.nlm.nih.gov/articles/PMC11376998/). NOTE: support-ratio framing (7.9 -> 4.6 working-age per elderly) is the reciprocal 100/OADR, an arithmetic restatement, not a separate claim."},
+    {"claim": "RON95/BUDI95 savings: pre-reform ~RM8B/year, revised to RM2.5-4B; World Bank questions the RM2.5B; 300L/month at RM1.99 from 30 Sept 2025", "status": "VERIFIED", "source": "The Edge (https://theedgemalaysia.com/node/773877, /node/771081); The Vibes (RM4B Senate); BusinessToday 11 Feb 2026 (RM2.5B realised)."},
+    {"claim": "Debt-ceiling history: 55% (2009), 60% (2020 COVID-19 Act), 65% (2021)", "status": "VERIFIED", "source": "MIDF thematic report; CNBC 14 Sept 2021; MOF press release on Temporary Measures Act."},
+    {"claim": "DanaInfra largest guaranteed entity (RM82.68B end-2022), PTPTN RM42.15B", "status": "VERIFIED", "source": "The Edge / MOF guarantee breakdown end-2022."}
+  ],
+  "projections_method_check": [
+    {"projection": "Debt-to-GDP fork: consolidation -> 58.5% by 2035; stalled -> 73.7% by 2035 (breach by 2026)", "assessment": "METHOD SOUND. Standard debt-dynamics recursion b_t = b_(t-1)(1+r)/(1+g) + primary deficit, r=4.2% (= debt service / debt stock). Independent corroboration: an analyst projection cited by FMT (24 Jul 2025) put debt at 65.8% by 2026 under a weak-growth scenario, consistent with the dossier's stalled path crossing the ceiling early. Labelled as T4A projection in the dossier, not as fact. NO CHANGE."},
+    {"projection": "Pension log-linear fit RM50.8B (2030) / RM98B (2040), bracketing official RM46.36B / RM120B", "assessment": "METHOD SOUND. CAGR 8.6% on the 2010-2023 series; the fit straddles the government's own projection, presented as cross-check not rival truth. NO CHANGE."}
+  ],
+  "changes": [
+    {"field": "stageScoresNote", "tag": "INTRODUCED (Stage 6 self-verified)", "from": "DRAFT... External Stage 2/3 not yet run... must be confirmed against the primary PDFs before publication.", "to": "Self-verified note (see file): all reader-facing actuals verified against primary/authoritative sources incl. MOF Fiscal Outlook 2026 and IMF Article IV 2026; external Stage 2/3 cross-LLM review not run; projections labelled as such.", "reason": "The draft caveat said primary PDFs were unconfirmed (403 at build time). Self-verification has now confirmed them, so the caveat is updated to reflect the true state, while remaining honest that external review did not occur."},
+    {"field": "finalScoreNote", "tag": "INTRODUCED (Stage 6 self-verified)", "reason": "Updated to state actuals are now primary-source-confirmed and projections remain labelled extrapolations."}
+  ],
+  "cards_changed": "NONE. No reader-facing wording in any section required correction; every figure verified as-stated. The dossier's actual-vs-projection tagging already satisfies the cardinal-sins check (no overclaim: 84.1% framed as exposure not 'the debt'; guarantees framed contingent; projections labelled).",
+  "scores": {
+    "pa": 82,
+    "ba": 80,
+    "ba_note": "Self-assessed, NOT from an external bias audit. Held at the conservative draft value; no partisan/3R framing found in self-review (the dossier critiques fiscal-narrative framing, applies to any government).",
+    "fc": 88,
+    "fc_note": "Raised from draft 84 to 88: every actual independently verified against primary/authoritative sources, several upgraded from secondary to primary. Not 100 because review was self-verification, not independent external fact-check.",
+    "sr": 84,
+    "finalScore": 83.5,
+    "finalScore_derivation": "mean(pa 82, ba 80, fc 88, sr 84) = 83.5"
+  },
+  "publish_recommendation": "Accuracy gate is CLEAR on self-verification: all actuals confirmed against primary sources, projections sound and labelled, no card corrections needed, 3R/legal/stealth clean. The one honest gap vs issue 2002: D002 has NOT had independent external Stage 2/3 review (Gemini/ChatGPT) — only Claude self-verification. Decision for the user: publish on self-verification (defensible, all facts primary-sourced), or hold for an external review pass first. Recommend the user's explicit call before flipping published:true, given this is the flagship special edition."
+}
