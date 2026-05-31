@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T10:19:34.474Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T13:49:05.563Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (75)
+## ⏳ TO POST (76)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -288,6 +288,43 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2003-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2003`
+
+**1/7** _(hook — attach image, NO link)_ · 172 chars
+```
+Malaysia targets 80% rice self-sufficiency by 2030. The actual rate fell to 52.9% in 2024. That is down from 56.2% a year earlier, moving away from the goal, not toward it.
+```
+**2/7** _(fact)_ · 219 chars
+```
+Rice self-sufficiency is sliding: 56.2% in 2023, then 52.9% in 2024. The competition regulator traces a longer fall from about 70% in 2017. The gap to the 80% target is now about 27 points, with five years left to 2030.
+```
+**3/7** _(fact)_ · 252 chars
+```
+Malaysia imports nearly half its rice, tying the staple to other governments' export decisions. When India, the world's largest rice exporter, banned non-basmati white rice exports in July 2023, importing nations faced tighter supply and higher prices.
+```
+**4/7** _(fact)_ · 210 chars
+```
+The national food import bill nearly doubled in a decade, from RM42.6 billion in 2014 to RM78.8 billion in 2023. Food exports trailed at RM46.5 billion that year, leaving a food trade deficit of RM32.3 billion.
+```
+**5/7** _(reframe)_ · 139 chars
+```
+The target climbs on paper while the rate falls in the field. A gap that widens each year is not closed by raising the number written down.
+```
+**6/7** _(analogy)_ · 178 chars
+```
+Setting a higher self-sufficiency target while output drops is like lifting your savings goal as your income shrinks. The number on paper rises; the balance in the account falls.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+A government can set a target but not guarantee a harvest. Rice security is decided in the paddy field, not the policy document.
+
+https://thefourthangle.pages.dev/issue/2003
 ```
 
 ### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
