@@ -377,11 +377,28 @@
 
             {#if section.figure}
               {@const fig = figureById(section.figure)}
-              {#if fig && FIGURE_COMPONENTS[fig.id]}
+              {#if fig}
                 {@const Comp = FIGURE_COMPONENTS[fig.id]}
-                <DossierFigure figure={fig} caption={fig.caption} sourceLine={fig.sourceLine} onZoom={openLightbox}>
-                  <Comp />
-                </DossierFigure>
+                {@const isRaster = /\.(png|jpe?g|webp|avif|gif)$/i.test(fig.src ?? '')}
+                {#if Comp || (isRaster && fig.src)}
+                  <DossierFigure figure={fig} caption={fig.caption} sourceLine={fig.sourceLine} onZoom={openLightbox}>
+                    {#if Comp}
+                      <Comp />
+                    {:else}
+                      <img
+                        src={fig.src}
+                        alt={fig.alt}
+                        loading="lazy"
+                        decoding="async"
+                        width="1200"
+                        height="675"
+                        style:width="100%"
+                        style:height="auto"
+                        style:display="block"
+                      />
+                    {/if}
+                  </DossierFigure>
+                {/if}
               {/if}
             {/if}
           </section>
@@ -416,11 +433,28 @@
             <p class="section__kind">{fig ? fig.title.replace(/\s+—.*$/, '') : 'Figure'}</p>
             <h2 class="section__title">{section.title}</h2>
 
-            {#if fig && FIGURE_COMPONENTS[fig.id]}
+            {#if fig}
               {@const Comp = FIGURE_COMPONENTS[fig.id]}
-              <DossierFigure figure={fig} caption={fig.caption} sourceLine={fig.sourceLine} onZoom={openLightbox}>
-                <Comp />
-              </DossierFigure>
+              {@const isRaster = /\.(png|jpe?g|webp|avif|gif)$/i.test(fig.src ?? '')}
+              {#if Comp || (isRaster && fig.src)}
+                <DossierFigure figure={fig} caption={fig.caption} sourceLine={fig.sourceLine} onZoom={openLightbox}>
+                  {#if Comp}
+                    <Comp />
+                  {:else}
+                    <img
+                      src={fig.src}
+                      alt={fig.alt}
+                      loading="lazy"
+                      decoding="async"
+                      width="1200"
+                      height="675"
+                      style:width="100%"
+                      style:height="auto"
+                      style:display="block"
+                    />
+                  {/if}
+                </DossierFigure>
+              {/if}
             {/if}
 
             <div class="section__body">
