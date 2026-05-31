@@ -1,0 +1,204 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "investment-fraud-rm1-47b-2025-ccid",
+    "issue_id": "2004",
+    "brief": "engine/briefs/investment-fraud-rm1-47b-2025-ccid.md",
+    "generated_at": "2026-05-31",
+    "revision_history": [
+      "v1 (2026-05-31): initial draft after Phase 1 brief. Radar pick A5 (queue #104). Frame rotated from 'scams are rising' to 'every control point is downstream of the loss': police take the report after the money is gone, and the recruitment channel (social platforms) carries no domestic liability. RM1.47B/9,603 is the 2025 CCID full-year figure superseding the interim RM1.3B (Jan 2026)."
+    ],
+    "discipline": "Process-not-victim. Cards do NOT blame victims for being defrauded; they locate the failure at the post-loss control architecture and the unpriced platform-recruitment channel. The RM1.47B investment-only figure is kept distinct from the larger all-category scam totals (RM2.7B+)."
+  },
+  "headline": "Investment-scam losses jumped to RM1.47B in 2025; every control point sits after the money is gone",
+  "context": "Bukit Aman's Commercial Crime Investigation Department reported that non-existent-investment scams cost Malaysians RM1.47 billion across 9,603 cases in 2025, up from RM848.6 million across 6,337 cases in 2024.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Police logged RM1.47 billion lost to fake investments in 2025, up from RM848.6 million a year earlier.",
+      "sub": "CCID director Rusdi Mohd Isa gave the figure on 18 April 2026: 9,603 cases, against 6,337 in 2024.",
+      "sources": ["S1", "S2", "S3"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "The second hit lands after the 'profit': victims see fake gains, then pay 'fees' to withdraw money that was never there.",
+      "sub": "CCID's funnel: lure on Facebook or Instagram, move to WhatsApp or Telegram, show fabricated dashboard profits, then charge processing fees, taxes and other charges to release them.",
+      "sources": ["S1", "S4"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Losses rose about 73% in one year while cases rose about 52%, so the average victim lost more, not just more victims losing.",
+      "sub": "RM1.47B over 9,603 cases is roughly RM153,000 per case, against roughly RM134,000 in 2024 (RM848.6M over 6,337).",
+      "sources": ["S2", "S5"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The regulator that licenses real investments lists offenders by the dozen; the police count victims by the thousand.",
+      "sub": "The Securities Commission's enforcement records held about 111 unregulated entities and 26 cease-and-desist orders by mid-2025, against 9,603 police fraud cases over the year.",
+      "sources": ["S7", "S8", "S2"]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not why people keep falling for scams. It is why every defence the state runs activates only after the money has already left.",
+      "sub": "",
+      "sources": ["S1", "S2"]
+    },
+    {
+      "t": "analogy",
+      "big": "It is a fire service with no building code: superb at counting the ashes, with no power over the wiring that keeps catching.",
+      "sub": "The recruitment wiring is the social platform; no Malaysian law makes the host liable for the loss it carries.",
+      "sources": ["S1", "S10"]
+    },
+    {
+      "t": "view",
+      "big": "Awareness campaigns ask the victim to be smarter; the money still moves through platforms and mule accounts the law treats as bystanders.",
+      "sub": "",
+      "sources": ["S1", "S2", "S8"]
+    }
+  ],
+  "sources": "S1 Malay Mail 18 Apr 2026; S2 Bernama 18 Apr 2026; S3 The Sun 18 Apr 2026; S4 The Star 19 Apr 2026; S5 Sinar Daily 18 Apr 2026; S6 The Edge 18 Apr 2026; S7 SC Investor Alert List; S8 SC Enforcement Actions 2025; S10 Malay Mail 24 Feb 2026",
+  "confidence": "High — headline figures (RM1.47B / 9,603 / RM848.6M / 6,337) appear consistently across Bernama (government newswire), Malay Mail, The Sun, The Star and Sinar Daily, all attributing CCID director Rusdi Mohd Isa, 18 Apr 2026. Medium on the SC-bandwidth comparison: different agency, different remit, framed as illustrative order-of-magnitude, not as a finding against the SC.",
+  "lenses_used": ["Social", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Technology", "Security"],
+  "needs_verification": [
+    "SC mid-2025 enforcement tallies (~111 unregulated entities, 26 cease-and-desist) — Stage 3 to confirm against SC enforcement pages and lock the as-of date; if the exact count cannot be pinned, soften card 4 to 'dozens of entities' without the numeral.",
+    "Per-case averages (RM153k / RM134k) are Stage 1 arithmetic from CCID totals, not figures CCID published. Labelled as 'roughly' in copy; Stage 3 to confirm the division is fair and not misleading given unknown case-size distribution.",
+    "The 73% / 52% YoY deltas are computed from CCID figures; confirm arithmetic (1.47B/848.6M = 1.732; 9603/6337 = 1.515)."
+  ],
+  "source_notes": "CONTRADICTION: an interim CCID statement (FMT, 4 Jan 2026) put 2025 fake-investment losses at 'over RM1.3 billion'; the 18 Apr 2026 full-year briefing gives RM1.47B. The April full-year figure is later and more authoritative and is used; the interim figure is noted, not used. SUPERSET CAUTION: all-category scam losses ran ~RM2.7B as of Nov 2025 — a larger superset that must not be conflated with the RM1.47B investment-only figure.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. RM1.47B/9,603/RM848.6M/6,337, the five-method funnel, and the 31-50 victim band all trace to CCID via S1-S6. SC tallies trace to S7-S8 and are flagged in needs_verification. Per-case averages are labelled as derived arithmetic.",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. YoY deltas use 'about 73%'/'about 52%' not false precision. Card 4 does not say the SC failed; it contrasts remits. Analogy does not claim platforms are legally liable — card and view state the opposite (no law attaches liability).",
+    "underclaim_check": "Avoided. Police figures are stated as the authoritative count, not 'some have alleged.'",
+    "misleading_framing_check": "Denominators kept explicit (cases vs losses; investment-only vs all-category superset noted in source_notes). The SC-vs-police comparison is framed as remit difference, not a like-for-like scoreboard.",
+    "unverified_detail_check": "No individual victims named. No causal claim that platforms caused the loss; only that they carry the recruitment channel without liability.",
+    "3R_special_caution": "Not 3R-adjacent. No race, religion or royalty content.",
+    "process_not_people_check": "Pass. No victim-blaming; failure located at control architecture and unpriced platform channel.",
+    "anger_anxiety_check": "Hook emotion is anger-at-process (defences fire only after the loss), not sadness for victims.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field. Colons and commas used.",
+    "scaffolding_marker_check": "No 'However,'/'Moreover,'/'Notably,' sentence openers.",
+    "auxiliary_verb_density_check": "Verb-driven: jumped, logged, lured, charge, rose, lost, moves. No field stacks three+ is/are/was."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Headline figures are multiply-sourced to a government newswire plus four independents citing the same named CCID director and date. Primary regulator data (SC) used for the governance contrast. Points held back: SC tallies are secondary-aggregated (flagged for Stage 3), and per-case averages are Stage 1 arithmetic rather than published figures, so not a clean 90+."
+}

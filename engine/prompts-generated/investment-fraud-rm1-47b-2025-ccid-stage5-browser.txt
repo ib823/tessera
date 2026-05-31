@@ -1,0 +1,199 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "investment-fraud-rm1-47b-2025-ccid",
+    "issue_id": "2004",
+    "brief": "engine/briefs/investment-fraud-rm1-47b-2025-ccid.md",
+    "generated_at": "2026-05-31",
+    "revision_history": [
+      "v1 (2026-05-31): initial draft after Phase 1 brief. Radar pick A5 (queue #104). Frame rotated from 'scams are rising' to 'every control point is downstream of the loss': police take the report after the money is gone, and the recruitment channel (social platforms) carries no domestic liability. RM1.47B/9,603 is the 2025 CCID full-year figure superseding the interim RM1.3B (Jan 2026)."
+    ],
+    "discipline": "Process-not-victim. Cards do NOT blame victims for being defrauded; they locate the failure at the post-loss control architecture and the unpriced platform-recruitment channel. The RM1.47B investment-only figure is kept distinct from the larger all-category scam totals (RM2.7B+)."
+  },
+  "headline": "Investment-scam losses jumped to RM1.47B in 2025; every control point sits after the money is gone",
+  "context": "Bukit Aman's Commercial Crime Investigation Department reported that non-existent-investment scams cost Malaysians RM1.47 billion across 9,603 cases in 2025, up from RM848.6 million across 6,337 cases in 2024.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Police logged RM1.47 billion lost to fake investments in 2025, up from RM848.6 million a year earlier.",
+      "sub": "CCID director Rusdi Mohd Isa gave the figure on 18 April 2026: 9,603 cases, against 6,337 in 2024.",
+      "sources": ["S1", "S2", "S3"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "The second hit lands after the 'profit': victims see fake gains, then pay 'fees' to withdraw money that was never there.",
+      "sub": "CCID's funnel: lure on Facebook or Instagram, move to WhatsApp or Telegram, show fabricated dashboard profits, then charge processing fees, taxes and other charges to release them.",
+      "sources": ["S1", "S4"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Losses rose about 73% in one year while cases rose about 52%, so the average victim lost more, not just more victims losing.",
+      "sub": "RM1.47B over 9,603 cases is roughly RM153,000 per case, against roughly RM134,000 in 2024 (RM848.6M over 6,337).",
+      "sources": ["S2", "S5"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The regulator that licenses real investments lists offenders by the dozen; the police count victims by the thousand.",
+      "sub": "The Securities Commission's enforcement records held about 111 unregulated entities and 26 cease-and-desist orders by mid-2025, against 9,603 police fraud cases over the year.",
+      "sources": ["S7", "S8", "S2"]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not why people keep falling for scams. It is why every defence the state runs activates only after the money has already left.",
+      "sub": "",
+      "sources": ["S1", "S2"]
+    },
+    {
+      "t": "analogy",
+      "big": "It is a fire service with no building code: superb at counting the ashes, with no power over the wiring that keeps catching.",
+      "sub": "The recruitment wiring is the social platform; no Malaysian law makes the host liable for the loss it carries.",
+      "sources": ["S1", "S10"]
+    },
+    {
+      "t": "view",
+      "big": "Awareness campaigns ask the victim to be smarter; the money still moves through platforms and mule accounts the law treats as bystanders.",
+      "sub": "",
+      "sources": ["S1", "S2", "S8"]
+    }
+  ],
+  "sources": "S1 Malay Mail 18 Apr 2026; S2 Bernama 18 Apr 2026; S3 The Sun 18 Apr 2026; S4 The Star 19 Apr 2026; S5 Sinar Daily 18 Apr 2026; S6 The Edge 18 Apr 2026; S7 SC Investor Alert List; S8 SC Enforcement Actions 2025; S10 Malay Mail 24 Feb 2026",
+  "confidence": "High — headline figures (RM1.47B / 9,603 / RM848.6M / 6,337) appear consistently across Bernama (government newswire), Malay Mail, The Sun, The Star and Sinar Daily, all attributing CCID director Rusdi Mohd Isa, 18 Apr 2026. Medium on the SC-bandwidth comparison: different agency, different remit, framed as illustrative order-of-magnitude, not as a finding against the SC.",
+  "lenses_used": ["Social", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Technology", "Security"],
+  "needs_verification": [
+    "SC mid-2025 enforcement tallies (~111 unregulated entities, 26 cease-and-desist) — Stage 3 to confirm against SC enforcement pages and lock the as-of date; if the exact count cannot be pinned, soften card 4 to 'dozens of entities' without the numeral.",
+    "Per-case averages (RM153k / RM134k) are Stage 1 arithmetic from CCID totals, not figures CCID published. Labelled as 'roughly' in copy; Stage 3 to confirm the division is fair and not misleading given unknown case-size distribution.",
+    "The 73% / 52% YoY deltas are computed from CCID figures; confirm arithmetic (1.47B/848.6M = 1.732; 9603/6337 = 1.515)."
+  ],
+  "source_notes": "CONTRADICTION: an interim CCID statement (FMT, 4 Jan 2026) put 2025 fake-investment losses at 'over RM1.3 billion'; the 18 Apr 2026 full-year briefing gives RM1.47B. The April full-year figure is later and more authoritative and is used; the interim figure is noted, not used. SUPERSET CAUTION: all-category scam losses ran ~RM2.7B as of Nov 2025 — a larger superset that must not be conflated with the RM1.47B investment-only figure.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. RM1.47B/9,603/RM848.6M/6,337, the five-method funnel, and the 31-50 victim band all trace to CCID via S1-S6. SC tallies trace to S7-S8 and are flagged in needs_verification. Per-case averages are labelled as derived arithmetic.",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. YoY deltas use 'about 73%'/'about 52%' not false precision. Card 4 does not say the SC failed; it contrasts remits. Analogy does not claim platforms are legally liable — card and view state the opposite (no law attaches liability).",
+    "underclaim_check": "Avoided. Police figures are stated as the authoritative count, not 'some have alleged.'",
+    "misleading_framing_check": "Denominators kept explicit (cases vs losses; investment-only vs all-category superset noted in source_notes). The SC-vs-police comparison is framed as remit difference, not a like-for-like scoreboard.",
+    "unverified_detail_check": "No individual victims named. No causal claim that platforms caused the loss; only that they carry the recruitment channel without liability.",
+    "3R_special_caution": "Not 3R-adjacent. No race, religion or royalty content.",
+    "process_not_people_check": "Pass. No victim-blaming; failure located at control architecture and unpriced platform channel.",
+    "anger_anxiety_check": "Hook emotion is anger-at-process (defences fire only after the loss), not sadness for victims.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field. Colons and commas used.",
+    "scaffolding_marker_check": "No 'However,'/'Moreover,'/'Notably,' sentence openers.",
+    "auxiliary_verb_density_check": "Verb-driven: jumped, logged, lured, charge, rose, lost, moves. No field stacks three+ is/are/was."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Headline figures are multiply-sourced to a government newswire plus four independents citing the same named CCID director and date. Primary regulator data (SC) used for the governance contrast. Points held back: SC tallies are secondary-aggregated (flagged for Stage 3), and per-case averages are Stage 1 arithmetic rather than published figures, so not a clean 90+."
+}

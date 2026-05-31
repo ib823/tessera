@@ -1,0 +1,205 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "investment-fraud-rm1-47b-2025-ccid",
+    "issue_id": "2004",
+    "brief": "engine/briefs/investment-fraud-rm1-47b-2025-ccid.md",
+    "generated_at": "2026-05-31",
+    "revision_history": [
+      "v1 (2026-05-31): initial draft after Phase 1 brief. Radar pick A5 (queue #104). Frame rotated from 'scams are rising' to 'every control point is downstream of the loss': police take the report after the money is gone, and the recruitment channel (social platforms) carries no domestic liability. RM1.47B/9,603 is the 2025 CCID full-year figure superseding the interim RM1.3B (Jan 2026)."
+    ],
+    "discipline": "Process-not-victim. Cards do NOT blame victims for being defrauded; they locate the failure at the post-loss control architecture and the unpriced platform-recruitment channel. The RM1.47B investment-only figure is kept distinct from the larger all-category scam totals (RM2.7B+)."
+  },
+  "headline": "Investment-scam losses jumped to RM1.47B in 2025; every control point sits after the money is gone",
+  "context": "Bukit Aman's Commercial Crime Investigation Department reported that non-existent-investment scams cost Malaysians RM1.47 billion across 9,603 cases in 2025, up from RM848.6 million across 6,337 cases in 2024.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Police logged RM1.47 billion lost to fake investments in 2025, up from RM848.6 million a year earlier.",
+      "sub": "CCID director Rusdi Mohd Isa gave the figure on 18 April 2026: 9,603 cases, against 6,337 in 2024.",
+      "sources": ["S1", "S2", "S3"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "The second hit lands after the 'profit': victims see fake gains, then pay 'fees' to withdraw money that was never there.",
+      "sub": "CCID's funnel: lure on Facebook or Instagram, move to WhatsApp or Telegram, show fabricated dashboard profits, then charge processing fees, taxes and other charges to release them.",
+      "sources": ["S1", "S4"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Losses rose about 73% in one year while cases rose about 52%, so the average victim lost more, not just more victims losing.",
+      "sub": "RM1.47B over 9,603 cases is roughly RM153,000 per case, against roughly RM134,000 in 2024 (RM848.6M over 6,337).",
+      "sources": ["S2", "S5"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The regulator that licenses real investments lists offenders by the dozen; the police count victims by the thousand.",
+      "sub": "The Securities Commission's enforcement records held about 111 unregulated entities and 26 cease-and-desist orders by mid-2025, against 9,603 police fraud cases over the year.",
+      "sources": ["S7", "S8", "S2"]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not why people keep falling for scams. It is why every defence the state runs activates only after the money has already left.",
+      "sub": "",
+      "sources": ["S1", "S2"]
+    },
+    {
+      "t": "analogy",
+      "big": "It is a fire service with no building code: superb at counting the ashes, with no power over the wiring that keeps catching.",
+      "sub": "The recruitment wiring is the social platform; no Malaysian law makes the host liable for the loss it carries.",
+      "sources": ["S1", "S10"]
+    },
+    {
+      "t": "view",
+      "big": "Awareness campaigns ask the victim to be smarter; the money still moves through platforms and mule accounts the law treats as bystanders.",
+      "sub": "",
+      "sources": ["S1", "S2", "S8"]
+    }
+  ],
+  "sources": "S1 Malay Mail 18 Apr 2026; S2 Bernama 18 Apr 2026; S3 The Sun 18 Apr 2026; S4 The Star 19 Apr 2026; S5 Sinar Daily 18 Apr 2026; S6 The Edge 18 Apr 2026; S7 SC Investor Alert List; S8 SC Enforcement Actions 2025; S10 Malay Mail 24 Feb 2026",
+  "confidence": "High — headline figures (RM1.47B / 9,603 / RM848.6M / 6,337) appear consistently across Bernama (government newswire), Malay Mail, The Sun, The Star and Sinar Daily, all attributing CCID director Rusdi Mohd Isa, 18 Apr 2026. Medium on the SC-bandwidth comparison: different agency, different remit, framed as illustrative order-of-magnitude, not as a finding against the SC.",
+  "lenses_used": ["Social", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Technology", "Security"],
+  "needs_verification": [
+    "SC mid-2025 enforcement tallies (~111 unregulated entities, 26 cease-and-desist) — Stage 3 to confirm against SC enforcement pages and lock the as-of date; if the exact count cannot be pinned, soften card 4 to 'dozens of entities' without the numeral.",
+    "Per-case averages (RM153k / RM134k) are Stage 1 arithmetic from CCID totals, not figures CCID published. Labelled as 'roughly' in copy; Stage 3 to confirm the division is fair and not misleading given unknown case-size distribution.",
+    "The 73% / 52% YoY deltas are computed from CCID figures; confirm arithmetic (1.47B/848.6M = 1.732; 9603/6337 = 1.515)."
+  ],
+  "source_notes": "CONTRADICTION: an interim CCID statement (FMT, 4 Jan 2026) put 2025 fake-investment losses at 'over RM1.3 billion'; the 18 Apr 2026 full-year briefing gives RM1.47B. The April full-year figure is later and more authoritative and is used; the interim figure is noted, not used. SUPERSET CAUTION: all-category scam losses ran ~RM2.7B as of Nov 2025 — a larger superset that must not be conflated with the RM1.47B investment-only figure.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. RM1.47B/9,603/RM848.6M/6,337, the five-method funnel, and the 31-50 victim band all trace to CCID via S1-S6. SC tallies trace to S7-S8 and are flagged in needs_verification. Per-case averages are labelled as derived arithmetic.",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. YoY deltas use 'about 73%'/'about 52%' not false precision. Card 4 does not say the SC failed; it contrasts remits. Analogy does not claim platforms are legally liable — card and view state the opposite (no law attaches liability).",
+    "underclaim_check": "Avoided. Police figures are stated as the authoritative count, not 'some have alleged.'",
+    "misleading_framing_check": "Denominators kept explicit (cases vs losses; investment-only vs all-category superset noted in source_notes). The SC-vs-police comparison is framed as remit difference, not a like-for-like scoreboard.",
+    "unverified_detail_check": "No individual victims named. No causal claim that platforms caused the loss; only that they carry the recruitment channel without liability.",
+    "3R_special_caution": "Not 3R-adjacent. No race, religion or royalty content.",
+    "process_not_people_check": "Pass. No victim-blaming; failure located at control architecture and unpriced platform channel.",
+    "anger_anxiety_check": "Hook emotion is anger-at-process (defences fire only after the loss), not sadness for victims.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field. Colons and commas used.",
+    "scaffolding_marker_check": "No 'However,'/'Moreover,'/'Notably,' sentence openers.",
+    "auxiliary_verb_density_check": "Verb-driven: jumped, logged, lured, charge, rose, lost, moves. No field stacks three+ is/are/was."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Headline figures are multiply-sourced to a government newswire plus four independents citing the same named CCID director and date. Primary regulator data (SC) used for the governance contrast. Points held back: SC tallies are secondary-aggregated (flagged for Stage 3), and per-case averages are Stage 1 arithmetic rather than published figures, so not a clean 90+."
+}
