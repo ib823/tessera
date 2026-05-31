@@ -62,12 +62,15 @@ exporter exposure).
 7. Khazanah Research Institute, "Securing Malaysia's Rice Bowl" — https://www.krinstitute.org/
 
 ## CONNECTIONS (Sherlock)
-- 1962 "Food Import Bill Hits RM63B as Local Agriculture Output Stagnates" — strongest (food import bill +
-  agriculture). NOTE figure discrepancy: 1962 cites RM63B, this issue RM78.8B (2023); different reference
-  years. Both unpublished drafts.
-- 1485 "Padi Subsidy Reaches RM2.4B But Farmer Income Stays Below Poverty Line" — the production/farmer side
-  of the same staple. (1450 is a duplicate of 1485; linked 1485 as canonical.)
-- Bidirectional related[] added to 1962 and 1485.
+A first substring scan produced two FALSE matches (1485 "Contraceptive Access", 1962 "Generals charged...
+cartel") that have nothing to do with rice; those links were reverted. The genuine rice connections, all
+currently unpublished drafts, are:
+- 1213 "Import Permit System for Rice Generates RM800M in Rent-Seeking" — the import side of the same staple
+  (Malaysia buys ~44% of its rice abroad; the permit regime governs that flow). Strongest connection.
+- 1155 "Paddy Farmers Protest RM1,200 Per Tonne Price Cap" — the producer-incentive side of low SSR.
+- 1555 "Kedah Rice Fields Lose 8,400 Hectares to Development Since 2015" — padi-land loss, a named driver of
+  the falling self-sufficiency rate.
+- Bidirectional related[] added to 1213, 1155, 1555.
 
 ## PRE-PUBLISH CHECKLIST
 - Open DOSM SUA 2024 PDF manually, confirm 56.2% and the year it attaches to.
