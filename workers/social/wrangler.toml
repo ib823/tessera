@@ -33,7 +33,12 @@ POSTED_CARD_TTL_DAYS = "30"
 # cooldown still applies on top.
 ISSUE_COOLDOWN_HOURS = "12"
 ENABLE_X = "false"
+# Mastodon: free secondary channel (no API metering). Flip to "true" after
+# setting MASTODON_INSTANCE here and MASTODON_ACCESS_TOKEN as a secret.
+ENABLE_MASTODON = "false"
+MASTODON_INSTANCE = "https://mastodon.social"
 
 # Secrets (set via `wrangler secret put`):
 #   BLUESKY_APP_PASSWORD   — the App Password from Bluesky settings
+#   MASTODON_ACCESS_TOKEN  — access token from your Mastodon app (Development → your app)
 #   ADMIN_SECRET           — shared secret for /admin/post-now endpoint
