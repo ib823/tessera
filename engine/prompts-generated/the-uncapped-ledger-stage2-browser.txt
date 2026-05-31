@@ -1,0 +1,316 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT (T4A DOSSIER D002 — The Uncapped Ledger) ===
+
+{
+  "doc_type": "dossier",
+  "id": "D002",
+  "title": "The Uncapped Ledger",
+  "subtitle": "How Malaysia's Real Fiscal Exposure Hides Outside the Number Everyone Argues About",
+  "figures": [
+    {
+      "id": "fig-cover",
+      "title": "The visible debt and the part below the waterline",
+      "caption": "Federal debt is the part above the waterline. Guarantees and committed liabilities lift the total to 84.1% of GDP.",
+      "sourceLine": "Source: MOF Fiscal Outlook 2026 (end-June 2025); stress figure per MOF guarantee stress test."
+    },
+    {
+      "id": "fig-1",
+      "title": "Three debt numbers, one ceiling",
+      "caption": "Only statutory debt is bound by the 65% ceiling. The other measures face no statutory limit.",
+      "sourceLine": "Source: MOF Fiscal Outlook 2026 (end-June 2025)."
+    },
+    {
+      "id": "fig-2",
+      "title": "Target beaten, law still missed",
+      "caption": "The 2024 deficit beat its annual target. The Act 850 benchmark of 3% now slips to 2028.",
+      "sourceLine": "Source: MOF; IMF Article IV 2026."
+    },
+    {
+      "id": "fig-3",
+      "title": "Two paths from 64.7%",
+      "caption": "On a consolidation path debt drifts below the ceiling. On a stalled path it breaches the statutory measure by 2026.",
+      "sourceLine": "T4A projection using the standard debt-dynamics recursion, effective interest rate 4.2%."
+    },
+    {
+      "id": "fig-4",
+      "title": "The pension bill that answers to no ceiling",
+      "caption": "Pension spending roughly triples by 2040, and sits entirely outside the debt ceiling.",
+      "sourceLine": "Source: Dewan Rakyat answers (2020 to 2023 actuals); T4A projection brackets the official RM120B (2040)."
+    }
+  ],
+  "sections": [
+    {
+      "t": "tldr",
+      "title": "The dossier in 7 lines",
+      "bullets": [
+        "Malaysia reports three nested debt figures: statutory debt 63.5%, total federal debt 64.7%, and total debt plus liabilities 84.1% of GDP (end-June 2025).",
+        "Only statutory debt is bound by the 65% ceiling. The other two carry no statutory limit.",
+        "The 2024 deficit came in at 4.1%, beating the annual target, yet the Fiscal Responsibility Act benchmarks of 3% deficit and 60% debt are both still being missed.",
+        "Government guarantees stand at RM424.7 billion (21.1% of GDP). If they were all called, the stress test puts exposure near 97% of GDP.",
+        "Civil-service pensions cost RM32 billion in 2023 and are on track toward RM100 billion or more by 2040, none of it counted against the debt ceiling.",
+        "The number of working-age adults behind each retiree falls from about 7.9 in 2022 to about 4.6 by 2040.",
+        "The fiscal debate fixates on one reassuring figure. The exposure that matters sits about twenty points higher, and growing."
+      ]
+    },
+    {
+      "t": "concept",
+      "lens": "",
+      "title": "Three debt numbers, one ceiling",
+      "text": "Ask how indebted Malaysia is and you can get three honest answers. Statutory debt, the measure of Malaysian Government Securities, Government Investment Issues and Treasury bills, stood at 63.5% of GDP at end-June 2025. Total federal government debt, which adds other instruments, was 64.7%. Total debt and liabilities, which adds committed guarantees and public-private partnership obligations, reached 84.1%, about RM1.69 trillion.\n\nThe distinction is not pedantry. The 65% ceiling written into law in 2021 binds only the first measure. The second and third face no statutory limit at all. When coverage reports that debt is 64% and still under the ceiling, it quietly swaps the capped number for the uncapped one, and reassures on the wrong basis.",
+      "citations": []
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "title": "Beat the target, missed the law",
+      "text": "The 2024 fiscal deficit came in at 4.1% of GDP, inside the 4.3% target the government had set for the year. That was reported, fairly, as a win. The targets for 2025 and 2026 are 3.8% and 3.5%.\n\nThe quieter fact: the Public Finance and Fiscal Responsibility Act 2023 sets a medium-term benchmark of a deficit no greater than 3% and debt no greater than 60% of GDP. Both are still being missed. The IMF, in its 2026 Article IV review, endorsed the consolidation path while noting that reaching 3% within five years is not assured. Beating a discretionary annual target and meeting a statutory benchmark are different achievements, and only one of them has happened.",
+      "citations": [
+        "MOF, Malaysia Exceeds GDP and Fiscal Deficit Targets for 2024",
+        "MOF Fiscal Outlook 2026, fiscal balance section",
+        "IMF Article IV Consultation 2026, Executive Board conclusion",
+        "Public Finance and Fiscal Responsibility Act 2023 (Act 850)"
+      ]
+    },
+    {
+      "t": "reframe",
+      "lens": "",
+      "title": "",
+      "text": "The headline is not wrong. It is the wrong number. The figure that is legally capped, statutory debt, is the one chosen to look reassuring. The figure that captures real exposure, the all-in 84.1%, is the one no ceiling touches.",
+      "citations": []
+    },
+    {
+      "t": "diagram",
+      "lens": "",
+      "title": "Two paths from 64.7%",
+      "text": "Debt dynamics are governed by a simple recursion: this year's debt ratio equals last year's, scaled by interest and growth, plus the primary deficit. With an effective interest rate near 4.2% on the federal stock, two assumptions decide everything: how fast nominal GDP grows, and whether the primary deficit keeps shrinking.\n\nHold to the consolidation glide-path, with nominal growth near 6% and the primary deficit falling toward balance, and the ratio drifts down to about 58.5% by 2035. Let growth slip to 4.5% and the primary deficit stick near 1.1%, and the same starting point climbs to about 73.7%, breaching the statutory measure as early as 2026. The gap between the two lines is not luck. It is policy.",
+      "citations": []
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "title": "What bends the path",
+      "text": "Three levers move the trajectory. The first is the subsidy bill: the RON95 rationalisation launched in September 2025 was meant to save up to RM8 billion a year, a target since revised down toward RM2.5 to RM4 billion, with the World Bank publicly questioning even that. The second is debt service, already 16.3% of revenue in 2025 and rising toward 17% in 2026. The third is growth itself, the denominator that flatters or punishes every ratio. None of the three is locked in, which is precisely why the fork stays open.",
+      "citations": [
+        "MOF Fiscal Outlook 2026, expenditure and debt service sections",
+        "MOF press citation, RON95 subsidy fourth quarter 2025",
+        "The Edge, World Bank questions RON95 savings estimate"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "title": "Four hundred billion in guarantees",
+      "text": "Beyond the debt sits RM424.7 billion in committed government guarantees, about 21.1% of GDP, below the 25% cap that Act 850 does place on guarantees. The largest single exposure is DanaInfra Nasional, followed by Prasarana, the public-sector home-financing body, and the student-loan fund PTPTN. Public-private partnership commitments add a further RM112 billion. The MOF's own stress test is blunt: if every guarantee were called, debt could reach about 97% of GDP. These are contingent, not certain. But they are real, and they move with infrastructure and patronage decisions that rarely reach the fiscal headlines.",
+      "citations": [
+        "MOF Fiscal Outlook 2026, debt and liabilities section",
+        "The Star, combined debt and liabilities touch 84.1% of GDP",
+        "The Edge, guarantee stress test near 97%"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "title": "The pension bill that answers to no ceiling",
+      "text": "Civil-service pension spending rose from RM26.4 billion in 2020 to RM32 billion in 2023, with the number of pensioners climbing toward one million. On an 8.6% compound trend, and on the government's own projections, the bill reaches roughly RM46 billion by 2030 and RM120 billion by 2040. An independent log-linear fit lands in the same place, between RM98 billion and RM130 billion by 2040.\n\nEmoluments and pensions together already absorb about 45% of operating expenditure. The unfunded pension liability, put variously at RM483 billion, RM800 billion, or RM1.3 trillion depending on method, sits entirely off the debt-to-GDP ratio and outside any statutory cap.",
+      "citations": [
+        "Dewan Rakyat answers on pension expenditure and pensioner headcount",
+        "MOF Fiscal Outlook 2026, emoluments and retirement charges",
+        "The Star, the RM1.3 trillion pension liability problem"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "title": "Fewer shoulders under each retiree",
+      "text": "The pension promise is paid largely as you go, out of current revenue, so the base of working-age taxpayers matters as much as the bill itself. In 2022 about 7.9 working-age adults stood behind each Malaysian aged 65 and over. On the official cohort-component projection, that falls to about 4.6 by 2040 as the old-age dependency ratio rises from 12.6 to 21.7 per hundred. A rising obligation, met by a shrinking base, is the part of the pension story the annual figures never show.",
+      "citations": [
+        "DOSM Population Projections 2020 to 2060",
+        "DOSM Current Population Estimates 2024"
+      ]
+    },
+    {
+      "t": "concept",
+      "lens": "",
+      "title": "Why none of it is capped",
+      "text": "The Fiscal Responsibility Act disciplines three things: statutory debt, the headline deficit, and guarantees. It says nothing about total liabilities, nothing about the pension obligation, and nothing about the support base that funds it. The result is a ledger where the most disciplined number is also the least complete, and the largest exposures grow in the space the law does not reach. This is not hidden in the sense of concealed. It is published, in tables one page away from the figure that gets quoted.",
+      "citations": []
+    },
+    {
+      "t": "mistake",
+      "claim": "Malaysia's debt is 64% of GDP and safely under the 65% ceiling, so the fiscal position is sound.",
+      "correction": "64.7% is total federal debt, which the ceiling does not bind; the capped measure is statutory debt at 63.5%. Add guarantees and committed liabilities and the figure is 84.1%, with a stress case near 97%. The ceiling governs the most flattering of three numbers."
+    },
+    {
+      "t": "quote",
+      "source": "Public Finance and Fiscal Responsibility Act 2023 (Act 850), fiscal objectives",
+      "text": "The medium-term fiscal objective is a deficit not exceeding 3% of GDP and federal government debt not exceeding 60% of GDP.",
+      "commentary": "Both thresholds are written in statute. Both are currently exceeded, with the 3% goal now targeted for 2028, two years past the original window."
+    },
+    {
+      "t": "timeline",
+      "title": "How the ceiling moved",
+      "events": [
+        {
+          "year": 2009,
+          "label": "Ceiling set at 55%",
+          "outcome": "The statutory limit on debt to GDP is fixed at 55%."
+        },
+        {
+          "year": 2020,
+          "label": "Raised to 60%",
+          "outcome": "Pandemic borrowing lifts the ceiling to 60% of GDP."
+        },
+        {
+          "year": 2021,
+          "label": "Raised to 65%",
+          "outcome": "The current 65% statutory ceiling is set."
+        },
+        {
+          "year": 2023,
+          "label": "Act 850 benchmarks",
+          "outcome": "The Fiscal Responsibility Act sets medium-term goals of 3% deficit and 60% debt."
+        },
+        {
+          "year": 2024,
+          "label": "Deficit 4.1%",
+          "outcome": "The annual target is beaten while the statutory benchmark is missed."
+        }
+      ]
+    },
+    {
+      "t": "reframe",
+      "lens": "",
+      "title": "",
+      "text": "A ceiling that rises to meet the debt is not a constraint on the debt. It is a record of it.",
+      "citations": []
+    },
+    {
+      "t": "concept",
+      "lens": "",
+      "title": "What to watch, in order",
+      "text": "Four signals tell you which path Malaysia is on, well before the annual budget does. Watch debt service as a share of revenue: once it passes a sixth of every ringgit collected, the room to consolidate narrows. Watch the realised subsidy savings against the RM8 billion that was promised. Watch nominal growth, the denominator that does the quiet work. And watch whether the next budget caps anything beyond statutory debt. The headline ratio will be the last thing to move, not the first.",
+      "citations": []
+    },
+    {
+      "t": "view",
+      "lens": "",
+      "title": "",
+      "text": "Malaysia's fiscal managers are not reckless, and the consolidation since 2023 is real. The danger is narrative, not arithmetic: a debate anchored on the one number the law happens to cap, while the exposures that carry no ceiling, guarantees, pensions, and a thinning tax base, compound out of view. A government can beat a target it sets itself. It cannot, for long, outgrow the obligations it does not count.",
+      "citations": []
+    }
+  ],
+  "note_to_reviewer": "This is a long-form DOSSIER, not a 7-card issue. Fact-check every number, date, named actor, and law citation against primary sources. CRITICAL: distinguish ACTUALS (debt 64.7%, 63.5%, 84.1%; deficit 4.1%; guarantees RM424.7B; pensions RM26.39B-RM32.01B; SSR figures) from T4A PROJECTIONS (the 2035 debt-path scenarios 58.5%/73.7%; pension RM50.8B/RM98B by 2030/2040). Projections are labelled as such and must NOT be fact-checked as observed facts; instead check whether the stated method and inputs are reasonable. Several MOF Fiscal Outlook 2026 figures were sourced via secondary outlets because the primary PDFs returned HTTP 403; please confirm against belanjawan.mof.gov.my, the IMF Article IV 2026, and Act 850 directly."
+}

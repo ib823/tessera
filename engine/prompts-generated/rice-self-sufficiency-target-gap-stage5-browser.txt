@@ -1,0 +1,167 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia raised its rice self-sufficiency target to 80% by 2030, up from the previous 75%.",
+      "sub": "The rate it is raising from sits at 56.2%, and it has not been climbing toward the goal.",
+      "sources": ["The Edge (target 80% by 2030, up from 75%); Malay Mail/BERNAMA/The Star (SSR 56.2%, Oct/Nov 2024)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "The actual self-sufficiency rate is 56.2%. The target rose to 80%; the harvest did not.",
+      "s": "Closing a gap of nearly 24 points by 2030 needs the rate to climb about four points a year. It has been broadly flat.",
+      "d": "The actual self-sufficiency rate is 56.2%. The target rose to 80%; the harvest did not. Closing a gap of nearly 24 points by 2030 needs the rate to climb about four points a year. It has been broadly flat.",
+      "sources": ["DOSM SUA 2020-2024; Agriculture Minister Mohamad Sabu, Oct/Nov 2024 (BERNAMA, The Star, Malay Mail)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "h": "Malaysia buys roughly 44% of its rice abroad, tying the staple to other governments' export decisions.",
+      "s": "When India, the world's largest rice exporter, curbed shipments in 2023, importing nations including Malaysia faced tighter supply and higher prices.",
+      "d": "Malaysia buys roughly 44% of its rice abroad, tying the staple to other governments' export decisions. When India, the world's largest rice exporter, curbed shipments in 2023, importing nations including Malaysia faced tighter supply and higher prices.",
+      "sources": ["Import dependence = 100 - SSR 56.2%; India non-basmati white rice export ban, July 2023 (widely documented)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "The national food import bill nearly doubled in a decade, from RM42.6 billion in 2014 to RM78.8 billion in 2023.",
+      "s": "That is the gross import bill, not the net food trade deficit of about RM31 billion. Both widened as the ringgit weakened.",
+      "d": "The national food import bill nearly doubled in a decade, from RM42.6 billion in 2014 to RM78.8 billion in 2023. That is the gross import bill, not the net food trade deficit of about RM31 billion. Both widened as the ringgit weakened.",
+      "sources": ["DOSM External Trade (RM42.64B 2014, RM78.80B 2023); The Malaysian Reserve (net deficit ~RM31B, 2022)"]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "Raising the self-sufficiency target raises the ambition, not the harvest. The 24-point gap is closed in the paddy field, not the policy document.",
+      "sources": ["Editorial synthesis"]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "Raising a self-sufficiency target without raising output is like lifting your savings goal without lifting your income. The number on paper changes; the balance in the account does not.",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "A government can legislate a target but not a harvest. Rice security is won in the granary, not the gazette.",
+      "sources": []
+    }
+  ],
+  "sources": "DOSM Supply and Utilisation Accounts 2020-2024; Agriculture Ministry (Mohamad Sabu) Oct/Nov 2024; The Edge; Malay Mail; BERNAMA; NST; DOSM External Trade. See engine/briefs/rice-self-sufficiency-target-gap.md.",
+  "confidence": "Medium-High. The 56.2% SSR and the 80%-by-2030 (raised from 75%) target are corroborated across multiple outlets citing the minister and DOSM. NOTE: the 62.6% (2022) to 56.2% (2023) drop is partly a methodology change (FAO-aligned, counting only clean padi) plus a real 4.7% production fall; the cards deliberately avoid claiming 'fell 6.4 points' and rest only on the target-vs-actual gap, which holds regardless of method. Primary DOSM SUA PDF 403 to automated fetch; open manually before publishing.",
+  "lenses_used": ["Economic", "Regional"],
+  "lenses_applicable_but_unused": ["Environmental", "Political"],
+  "verification_notes": "Stage 2 (Bias) and Stage 3 (Fact) reviewers: please (a) confirm SSR 56.2% and the exact year it attaches to against DOSM SUA 2020-2024; (b) confirm the 80%-by-2030 target was raised from 75% and attribute correctly; (c) confirm food import bill RM42.64B (2014) and RM78.80B (2023) against DOSM External Trade; (d) verify the India July 2023 export-restriction framing is not overclaimed for Malaysia specifically. Flag if the methodology-change context (FAO recalculation) needs to appear in a card to avoid misleading framing."
+}
