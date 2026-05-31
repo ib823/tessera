@@ -581,7 +581,7 @@
         <!-- CITE AS -->
         {:else if section.t === 'cite_as'}
           <div data-section-anchor={section.id}>
-            <DossierCiteAs section={section} />
+            <DossierCiteAs section={section} url={dossier.citeAs?.url} />
           </div>
         {/if}
       {/each}
