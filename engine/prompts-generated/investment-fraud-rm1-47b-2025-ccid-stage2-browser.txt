@@ -1,0 +1,205 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "investment-fraud-rm1-47b-2025-ccid",
+    "issue_id": "2004",
+    "brief": "engine/briefs/investment-fraud-rm1-47b-2025-ccid.md",
+    "generated_at": "2026-05-31",
+    "revision_history": [
+      "v1 (2026-05-31): initial draft after Phase 1 brief. Radar pick A5 (queue #104). Frame rotated from 'scams are rising' to 'every control point is downstream of the loss': police take the report after the money is gone, and the recruitment channel (social platforms) carries no domestic liability. RM1.47B/9,603 is the 2025 CCID full-year figure superseding the interim RM1.3B (Jan 2026)."
+    ],
+    "discipline": "Process-not-victim. Cards do NOT blame victims for being defrauded; they locate the failure at the post-loss control architecture and the unpriced platform-recruitment channel. The RM1.47B investment-only figure is kept distinct from the larger all-category scam totals (RM2.7B+)."
+  },
+  "headline": "Investment-scam losses jumped to RM1.47B in 2025; every control point sits after the money is gone",
+  "context": "Bukit Aman's Commercial Crime Investigation Department reported that non-existent-investment scams cost Malaysians RM1.47 billion across 9,603 cases in 2025, up from RM848.6 million across 6,337 cases in 2024.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Police logged RM1.47 billion lost to fake investments in 2025, up from RM848.6 million a year earlier.",
+      "sub": "CCID director Rusdi Mohd Isa gave the figure on 18 April 2026: 9,603 cases, against 6,337 in 2024.",
+      "sources": ["S1", "S2", "S3"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "The second hit lands after the 'profit': victims see fake gains, then pay 'fees' to withdraw money that was never there.",
+      "sub": "CCID's funnel: lure on Facebook or Instagram, move to WhatsApp or Telegram, show fabricated dashboard profits, then charge processing fees, taxes and other charges to release them.",
+      "sources": ["S1", "S4"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Losses rose about 73% in one year while cases rose about 52%, so the average victim lost more, not just more victims losing.",
+      "sub": "RM1.47B over 9,603 cases is roughly RM153,000 per case, against roughly RM134,000 in 2024 (RM848.6M over 6,337).",
+      "sources": ["S2", "S5"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The regulator that licenses real investments lists offenders by the dozen; the police count victims by the thousand.",
+      "sub": "The Securities Commission's enforcement records held about 111 unregulated entities and 26 cease-and-desist orders by mid-2025, against 9,603 police fraud cases over the year.",
+      "sources": ["S7", "S8", "S2"]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not why people keep falling for scams. It is why every defence the state runs activates only after the money has already left.",
+      "sub": "",
+      "sources": ["S1", "S2"]
+    },
+    {
+      "t": "analogy",
+      "big": "It is a fire service with no building code: superb at counting the ashes, with no power over the wiring that keeps catching.",
+      "sub": "The recruitment wiring is the social platform; no Malaysian law makes the host liable for the loss it carries.",
+      "sources": ["S1", "S10"]
+    },
+    {
+      "t": "view",
+      "big": "Awareness campaigns ask the victim to be smarter; the money still moves through platforms and mule accounts the law treats as bystanders.",
+      "sub": "",
+      "sources": ["S1", "S2", "S8"]
+    }
+  ],
+  "sources": "S1 Malay Mail 18 Apr 2026; S2 Bernama 18 Apr 2026; S3 The Sun 18 Apr 2026; S4 The Star 19 Apr 2026; S5 Sinar Daily 18 Apr 2026; S6 The Edge 18 Apr 2026; S7 SC Investor Alert List; S8 SC Enforcement Actions 2025; S10 Malay Mail 24 Feb 2026",
+  "confidence": "High — headline figures (RM1.47B / 9,603 / RM848.6M / 6,337) appear consistently across Bernama (government newswire), Malay Mail, The Sun, The Star and Sinar Daily, all attributing CCID director Rusdi Mohd Isa, 18 Apr 2026. Medium on the SC-bandwidth comparison: different agency, different remit, framed as illustrative order-of-magnitude, not as a finding against the SC.",
+  "lenses_used": ["Social", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Technology", "Security"],
+  "needs_verification": [
+    "SC mid-2025 enforcement tallies (~111 unregulated entities, 26 cease-and-desist) — Stage 3 to confirm against SC enforcement pages and lock the as-of date; if the exact count cannot be pinned, soften card 4 to 'dozens of entities' without the numeral.",
+    "Per-case averages (RM153k / RM134k) are Stage 1 arithmetic from CCID totals, not figures CCID published. Labelled as 'roughly' in copy; Stage 3 to confirm the division is fair and not misleading given unknown case-size distribution.",
+    "The 73% / 52% YoY deltas are computed from CCID figures; confirm arithmetic (1.47B/848.6M = 1.732; 9603/6337 = 1.515)."
+  ],
+  "source_notes": "CONTRADICTION: an interim CCID statement (FMT, 4 Jan 2026) put 2025 fake-investment losses at 'over RM1.3 billion'; the 18 Apr 2026 full-year briefing gives RM1.47B. The April full-year figure is later and more authoritative and is used; the interim figure is noted, not used. SUPERSET CAUTION: all-category scam losses ran ~RM2.7B as of Nov 2025 — a larger superset that must not be conflated with the RM1.47B investment-only figure.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. RM1.47B/9,603/RM848.6M/6,337, the five-method funnel, and the 31-50 victim band all trace to CCID via S1-S6. SC tallies trace to S7-S8 and are flagged in needs_verification. Per-case averages are labelled as derived arithmetic.",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. YoY deltas use 'about 73%'/'about 52%' not false precision. Card 4 does not say the SC failed; it contrasts remits. Analogy does not claim platforms are legally liable — card and view state the opposite (no law attaches liability).",
+    "underclaim_check": "Avoided. Police figures are stated as the authoritative count, not 'some have alleged.'",
+    "misleading_framing_check": "Denominators kept explicit (cases vs losses; investment-only vs all-category superset noted in source_notes). The SC-vs-police comparison is framed as remit difference, not a like-for-like scoreboard.",
+    "unverified_detail_check": "No individual victims named. No causal claim that platforms caused the loss; only that they carry the recruitment channel without liability.",
+    "3R_special_caution": "Not 3R-adjacent. No race, religion or royalty content.",
+    "process_not_people_check": "Pass. No victim-blaming; failure located at control architecture and unpriced platform channel.",
+    "anger_anxiety_check": "Hook emotion is anger-at-process (defences fire only after the loss), not sadness for victims.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field. Colons and commas used.",
+    "scaffolding_marker_check": "No 'However,'/'Moreover,'/'Notably,' sentence openers.",
+    "auxiliary_verb_density_check": "Verb-driven: jumped, logged, lured, charge, rose, lost, moves. No field stacks three+ is/are/was."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Headline figures are multiply-sourced to a government newswire plus four independents citing the same named CCID director and date. Primary regulator data (SC) used for the governance contrast. Points held back: SC tallies are secondary-aggregated (flagged for Stage 3), and per-case averages are Stage 1 arithmetic rather than published figures, so not a clean 90+."
+}
