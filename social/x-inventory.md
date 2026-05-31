@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T06:13:05.565Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T07:53:01.451Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (74)
+## ⏳ TO POST (75)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -42,40 +42,6 @@ Like a residents' association chairman resigning 18 months before the AGM, with 
 Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
 
 https://thefourthangle.pages.dev/issue/1993
-```
-
-### Issue 1966 — Refugee registration system launched but work permits remain unissued
-
-> ⚡ **Reactive: topic is live in the radar** (thailand tarik diri, malaysia juara regu berpasukan piala dunia sepak takraw. skuad thaila). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
-
-**1/6** _(hook — attach image, NO link)_ · 128 chars
-```
-Malaysia's first refugee registration system is live. Work permits are announced but unissued. Thailand has already moved ahead.
-```
-**2/6** _(fact)_ · 264 chars
-```
-A 2019 study estimated RM3B in GDP gains, but B40 workers of all races face real wage competition. Employers want documented workers in shortage sectors. Registration risks labour-broker capture. Centres exist only in major cities; rural refugees can't reach them.
-```
-**3/6** _(fact)_ · 129 chars
-```
-21,000+ detained, including 3,200 children. Case law extends the Employment Act to refugees; the Immigration Act has not changed.
-```
-**4/6** _(fact)_ · 134 chars
-```
-Sabah has 50,000+ refugees but DPP rollout faces state objections. Political Islam drives selective sympathy for Muslim refugees only.
-```
-**5/6** _(reframe)_ · 138 chars
-```
-Registration serves the state and employers first. No coalition will expand beyond this. The DPP is likely both the floor and the ceiling.
-```
-**6/6** _(view — ONLY post with the link)_ · 191 chars
-```
-The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
-
-https://thefourthangle.pages.dev/issue/1966
 ```
 
 ### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
@@ -322,6 +288,43 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
+
+**1/7** _(hook — attach image, NO link)_ · 197 chars
+```
+Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
+```
+**2/7** _(fact)_ · 210 chars
+```
+Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
+```
+**3/7** _(fact)_ · 231 chars
+```
+Two in five Malaysians with diabetes do not know they have it. Among those aged 18 to 29 with diabetes, about 84% are unaware. The 15.6% already includes people a survey blood test caught unaware, not only those formally diagnosed.
+```
+**4/7** _(fact)_ · 189 chars
+```
+One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
+```
+**5/7** _(reframe)_ · 119 chars
+```
+One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
+```
+**6/7** _(analogy)_ · 178 chars
+```
+Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
+```
+**7/7** _(view — ONLY post with the link)_ · 127 chars
+```
+One better year in the diabetes data does not reverse a decade of getting heavier.
+
+https://thefourthangle.pages.dev/issue/2002
 ```
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
@@ -1392,6 +1395,39 @@ The real question: what specifically is driving parents away, governance rigidit
 Stop debating whether vernacular schools should exist. Start asking why national schools keep losing the families they serve.
 
 https://thefourthangle.pages.dev/issue/1967
+```
+
+### Issue 1966 — Refugee registration system launched but work permits remain unissued
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
+
+**1/6** _(hook — attach image, NO link)_ · 128 chars
+```
+Malaysia's first refugee registration system is live. Work permits are announced but unissued. Thailand has already moved ahead.
+```
+**2/6** _(fact)_ · 264 chars
+```
+A 2019 study estimated RM3B in GDP gains, but B40 workers of all races face real wage competition. Employers want documented workers in shortage sectors. Registration risks labour-broker capture. Centres exist only in major cities; rural refugees can't reach them.
+```
+**3/6** _(fact)_ · 129 chars
+```
+21,000+ detained, including 3,200 children. Case law extends the Employment Act to refugees; the Immigration Act has not changed.
+```
+**4/6** _(fact)_ · 134 chars
+```
+Sabah has 50,000+ refugees but DPP rollout faces state objections. Political Islam drives selective sympathy for Muslim refugees only.
+```
+**5/6** _(reframe)_ · 138 chars
+```
+Registration serves the state and employers first. No coalition will expand beyond this. The DPP is likely both the floor and the ceiling.
+```
+**6/6** _(view — ONLY post with the link)_ · 191 chars
+```
+The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
+
+https://thefourthangle.pages.dev/issue/1966
 ```
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
