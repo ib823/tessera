@@ -1,4 +1,4 @@
-# Next steps — underreporting series (issues 2001, 2002 + Dossier D002)
+# Next steps — underreporting series (issues 2002, 2003 + Dossier D002)
 
 This branch (`claude/malaysia-underreporting-analysis-PBO9F`) holds three review-ready DRAFTS plus the
 source research. None is published. This file is the operator checklist to take them live, in order.
@@ -8,11 +8,11 @@ source research. None is published. This file is the operator checklist to take 
 | Artifact | File | Published | Validators |
 |---|---|---|---|
 | Research report | `docs/research/malaysia-underreported-data-forecasts.md` | n/a | n/a |
-| Issue 2001 — diabetes/obesity | `src/data/issues/2001.json` | false | issues ✓, language 0 warns |
-| Issue 2002 — rice target gap | `src/data/issues/2002.json` | false | issues ✓, language 0 warns |
+| Issue 2002 — diabetes/obesity | `src/data/issues/2002.json` | false | issues ✓, language 0 warns |
+| Issue 2003 — rice target gap | `src/data/issues/2003.json` | false | issues ✓, language 0 warns |
 | Dossier D002 — Uncapped Ledger | `src/data/dossiers/D002.json` | false | dossiers ✓, astro check ✓ |
 
-Charts: `public/og/backgrounds/issue-2001-bg.png`, `issue-2002-bg.png`, `public/dossiers/D002/fig-*.png`.
+Charts: `public/og/backgrounds/issue-2002-bg.png`, `issue-2003-bg.png`, `public/dossiers/D002/fig-*.png`.
 Briefs: `engine/briefs/{diabetes-obesity-nhms-signal,rice-self-sufficiency-target-gap,the-uncapped-ledger}.md`.
 
 ## Why these are drafts (the gate)
@@ -25,7 +25,7 @@ independent stage. Two blockers remain on all three:
    confirmed before publish. The per-issue briefs list exactly which numbers need this.
 
 One claim was already DROPPED at the gate: the diabetes "the 2019 decline was a changed measurement
-definition" framing could not be verified, so issue 2001 makes no such claim. Do not reintroduce it without
+definition" framing could not be verified, so issue 2002 makes no such claim. Do not reintroduce it without
 a primary source.
 
 ## STEP 1 — Run the cross-LLM review (per artifact)
@@ -33,13 +33,13 @@ a primary source.
 Stages 4 and 5 are retired by default (see `docs/adr/0004-retire-stages-4-and-5.md`); only run 2 and 3.
 Paste each file's contents into the named tool, then save the JSON reply.
 
-**Issue 2001 (diabetes/obesity):**
+**Issue 2002 (diabetes/obesity):**
 - Stage 2 → Gemini: `engine/prompts-generated/diabetes-obesity-nhms-signal-stage2-browser.txt`
   → save reply to `engine/output/diabetes-obesity-nhms-signal-stage2.json`
 - Stage 3 → ChatGPT: `engine/prompts-generated/diabetes-obesity-nhms-signal-stage3-browser.txt`
   → save reply to `engine/output/diabetes-obesity-nhms-signal-stage3.json`
 
-**Issue 2002 (rice):**
+**Issue 2003 (rice):**
 - Stage 2 → Gemini: `engine/prompts-generated/rice-self-sufficiency-target-gap-stage2-browser.txt`
   → save to `engine/output/rice-self-sufficiency-target-gap-stage2.json`
 - Stage 3 → ChatGPT: `engine/prompts-generated/rice-self-sufficiency-target-gap-stage3-browser.txt`
@@ -87,8 +87,8 @@ Open these and confirm the named figures (briefs list table/page targets):
 ## Sequencing recommendation
 
 Ship in this order, matching the agreed radar priority and effort:
-1. **Issue 2001** (diabetes) — highest signal, lowest risk, one chart. Quick win.
-2. **Issue 2002** (rice) — clean target-vs-actual story.
+1. **Issue 2002** (diabetes) — highest signal, lowest risk, one chart. Quick win.
+2. **Issue 2003** (rice) — clean target-vs-actual story.
 3. **Dossier D002** (fiscal) — the flagship; most exhibits, most primary-PDF confirmation, so it benefits
    from going last once the lighter two have exercised the review loop.
 

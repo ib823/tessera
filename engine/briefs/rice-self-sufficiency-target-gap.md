@@ -1,4 +1,4 @@
-# Brief — Issue 2002: Malaysia's rice self-sufficiency target vs the actual rate
+# Brief — Issue 2003: Malaysia's rice self-sufficiency target vs the actual rate
 
 **Slug:** rice-self-sufficiency-target-gap
 **Status:** DRAFT (`published: false`). Stage 1 + Stage 6 done; independent verification done.

@@ -1,6 +1,6 @@
 # Brief — Malaysia's diabetes dip vs the obesity climb (NHMS 2011–2023)
 
-**Issue ID:** 2001
+**Issue ID:** 2002
 **Slug:** diabetes-obesity-nhms-signal
 **Status:** DRAFT (`published: false`). Stage 1 (Primary Analysis) and Stage 6 (Synthesis) done by
 Claude; independent verification done. **External Stage 2 (Bias Audit / Gemini) and Stage 3 (Fact
@@ -69,7 +69,7 @@ Primary **Health**; secondary **Social** (undiagnosed youth, sedentary behaviour
 7. "Rising Obesity in Malaysia (1990–2023)…", PMC12900780 — confirms the long-run obesity climb.
 8. Sinar Daily, "Malaysia's obesity crisis: 11 million adults affected"
 
-## CARD MAP (as published in 2001.json)
+## CARD MAP (as published in 2002.json)
 hook → diabetes fell, reported as relief, but one survey is not a trend.
 fact (Health) → overweight+obese climbed every survey to 54.4% / ~11M.
 fact (Health) → the undiagnosed iceberg: 2 in 5 unaware; 84% of 18–29s with diabetes don't know.
