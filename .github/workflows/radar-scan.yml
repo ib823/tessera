@@ -65,6 +65,13 @@ jobs:
               print('No issue-queue.json yet')
           "
 
+      - name: Refresh X posting inventory
+        if: always()
+        run: |
+          # Regenerates social/x-inventory.{json,md} from published issues +
+          # fresh radar signals. Preserves POSTED status. Plain Node, no deps.
+          node scripts/build-x-inventory.mjs || echo "x-inventory build skipped"
+
       - name: Commit updated state and results
         if: success()
         run: |
@@ -79,6 +86,9 @@ jobs:
           git add radar/output/silence-watch.json || true
           git add radar/output/silence-watch.md || true
           git add radar/output/logs/last-cycle.log || true
+          # X posting inventory (refreshed each scan)
+          git add social/x-inventory.json || true
+          git add social/x-inventory.md || true
 
           # Only commit if there are changes
           git diff --staged --quiet || git commit -m "radar: scan $(date -u +'%Y-%m-%d %H:%M UTC')"

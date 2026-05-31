@@ -75,6 +75,32 @@ GET https://<worker-host>/admin/x-draft?id=2001&secret=<ADMIN_SECRET>&format=tex
 Then: open X, paste post 1 (attach the image), add each subsequent post as a reply,
 put the link only on the final (view) post. Done.
 
+## The posting inventory (always-current, status-tracked)
+
+`social/x-inventory.md` is the live to-do list — a ready-to-paste thread for every
+published issue, split into **TO POST** and **POSTED**. It is auto-maintained:
+
+- **Every radar scan (2-hourly)** and **every deploy** regenerate it from the
+  published issues + fresh radar signals. POSTED status is preserved across runs,
+  so it accumulates rather than resets.
+- **Reactive flag:** when an issue's topic matches a hot item in the radar
+  silence-watch, it is marked ⚡ and sorted to the top — "post now, skip the slot."
+- **Per-issue voice:** `social/x-overrides.json` lets you replace the auto closer
+  (or hook) with a more human line. Issue 2001 already overrides the closer.
+
+**Daily use:** open `social/x-inventory.md`, take the top item, paste the thread,
+attach the image. Then mark it done so it leaves the queue:
+
+```
+node scripts/mark-x-posted.mjs 2001            # posted to X
+node scripts/mark-x-posted.mjs 2001 x,bluesky  # record platforms
+node scripts/mark-x-posted.mjs 2001 --undo     # revert if mis-marked
+```
+
+Commit the change (the radar job also commits inventory refreshes automatically).
+This is the single source of truth for "what still needs posting" at any moment —
+in the Claude Code app, after publishing a new issue, or between radar cycles.
+
 ---
 
 ## OpSec — non-negotiable for manual X (and any Meta channel, if ever added)
