@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T15:19:53.837Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T17:09:27.153Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (76)
+## ⏳ TO POST (78)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -288,6 +288,76 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
+
+**1/6** _(hook — attach image, NO link)_ · 263 chars
+```
+MACC's allegation was not that a chief rigged a contract. It was that he charged to release payment on one already running. The squash-court project was worth RM7 million. The suspect, a man in his 40s, was held at a Bukit Jalil shopping complex on 13 April 2026.
+```
+**2/6** _(fact)_ · 264 chars
+```
+The alleged ask was RM1 million to approve the contractor's payment claims; about RM600,000 is said to have changed hands. MACC's account: RM500,000 before Hari Raya as an advance, then RM100,000 in cash at the arrest. No report says the full RM1 million was paid.
+```
+**3/6** _(fact)_ · 245 chars
+```
+He was remanded five days to assist the probe. No charge has been reported. Magistrate Ezrene Zakaria issued the order in Putrajaya on 14 April 2026, running to 18 April. A remand allows detention for investigation; it is not a finding of guilt.
+```
+**4/6** _(fact)_ · 269 chars
+```
+An alleged RM1 million skims 14% off a RM7 million job, charged simply to sign what the contractor had already earned. MACC has said public-procurement complaints often centre on approving claims, including for work not properly done, rather than on the original award.
+```
+**5/6** _(reframe)_ · 119 chars
+```
+Watchdogs guard the tender. The bigger leak may sit one step later, at the desk that signs off the contractor's claims.
+```
+**6/6** _(view — ONLY post with the link)_ · 178 chars
+```
+Whether charges follow or not, the lesson is the payment desk: scrutiny that stops at the award misses where the cash actually moves.
+
+https://thefourthangle.pages.dev/issue/2005
+```
+
+### Issue 2004 — Bank Negara blocked 162,642 mule accounts in 2025; investment-scam losses still rose 73%
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2004-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2004`
+
+**1/7** _(hook — attach image, NO link)_ · 193 chars
+```
+Investment-scam losses hit RM1.47 billion in 2025, up 73% from RM848.6 million a year earlier. CCID director Rusdi Mohd Isa gave the figure on 18 April 2026: 9,603 cases, against 6,337 in 2024.
+```
+**2/7** _(fact)_ · 268 chars
+```
+The second hit lands after the 'profit': victims see fake gains, then pay 'fees' to withdraw money that never existed. CCID's funnel: lure on Facebook or Instagram, shift to WhatsApp or Telegram, show fake dashboard profits, then demand fees and taxes to release them.
+```
+**3/7** _(fact)_ · 256 chars
+```
+The state was not idle: Bank Negara stopped 162,642 suspected mule accounts in 2025. The losses still rose. The Securities Commission added 249 entities to its investor-alert list and blocked 175 scam websites the same year. The money kept finding a route.
+```
+**4/7** _(fact)_ · 229 chars
+```
+It is not only more victims. The average case lost more: about RM153,000, up from RM134,000 a year earlier. RM1.47 billion over 9,603 cases, against RM848.6 million over 6,337 in 2024. Cases rose about 52%; losses rose about 73%.
+```
+**5/7** _(reframe)_ · 119 chars
+```
+Malaysia's 2026 online-safety law forces platforms to pull scam content faster. It still makes no one repay the victim.
+```
+**6/7** _(analogy)_ · 201 chars
+```
+It is a fire service that finally inspects the wiring but still owes nothing when the house burns down. The wiring is the platform and the payment rail. The new code demands risk checks, not repayment.
+```
+**7/7** _(view — ONLY post with the link)_ · 161 chars
+```
+Warnings are cheap. The question Malaysia still ducks: who pays when the money clears every checkpoint and vanishes?
+
+https://thefourthangle.pages.dev/issue/2004
 ```
 
 ### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
