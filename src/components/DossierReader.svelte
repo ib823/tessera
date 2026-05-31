@@ -63,7 +63,13 @@
   // fig-2 is rendered by DossierTimeline directly (the timeline IS fig-2).
   // fig-6 is rendered by DossierTable using FIG6_DATA below.
   // fig-cover has no entry — it routes to the raster <img> branch.
-  const FIGURE_COMPONENTS: Record<string, any> = {
+  //
+  // IMPORTANT: these components are bespoke to dossier D001 (the political-
+  // mechanics piece). Figure ids like 'fig-1' are NOT globally unique across
+  // dossiers — D002 also has a 'fig-1' that is a plain raster chart. The map
+  // is therefore scoped to D001 so other dossiers' same-named figures fall
+  // through to the raster <img> branch instead of rendering D001's diagrams.
+  const D001_FIGURE_COMPONENTS: Record<string, any> = {
     'fig-1': DossierFig1Shapley,
     'fig-3': DossierFig3Brokerage,
     'fig-4': DossierFig4VoterBars,
@@ -92,6 +98,13 @@
   }
 
   let { dossier }: Props = $props();
+
+  // Per-dossier component registry. Figure ids (fig-1, fig-3, ...) are NOT
+  // globally unique across dossiers, so the bespoke D001 components must be
+  // scoped to D001. Dossiers absent from this map render every figure as a
+  // raster <img> from figure.src. Defined after $props so `dossier` is bound.
+  const FIGURE_COMPONENTS: Record<string, any> =
+    dossier.id === 'D001' ? D001_FIGURE_COMPONENTS : {};
 
   /* ---------------------------- helpers ---------------------------- */
 
