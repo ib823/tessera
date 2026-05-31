@@ -1,0 +1,34 @@
+{
+  "factual_accuracy_score": 76,
+  "source_diversity_estimate": 0.62,
+  "claims": [
+    {"claim": "Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019.", "status": "VERIFIED", "m_true": 0.9, "m_false": 0.02, "m_unknown": 0.08, "source": "IKU MOH NHMS 2023 Fact Sheet https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf ; NHMS 2019 Fact Sheet ; Mat Rifin et al., Scientific Reports 2025 https://doi.org/10.1038/s41598-025-08311-9", "correction": "Avoid implying long-term easing; safer: reported at 15.6% in NHMS 2023, lower than 18.3% in 2019.", "stale_check": "No stale issue; 2025 paper still reports 15.6% (2023) and 18.3% (2019)."},
+    {"claim": "Headlines called it the epidemic easing.", "status": "UNVERIFIED", "m_true": 0.1, "m_false": 0.1, "m_unknown": 0.8, "source": "No primary source found for a headline/official claim that the epidemic was easing.", "correction": "Remove or rephrase as interpretation, not a media characterisation.", "stale_check": "Not applicable."},
+    {"claim": "The headline rate counts the diagnosed.", "status": "INCORRECT", "m_true": 0.03, "m_false": 0.87, "m_unknown": 0.1, "source": "NHMS 2023 Fact Sheet: 15.6% = known diabetes 9.7% + raised blood glucose among not-known 5.9%.", "correction": "Replace with: the rate includes both known diabetes and survey-detected raised blood glucose among people not known to have diabetes.", "stale_check": "No stale issue."},
+    {"claim": "About 11 million people now carry excess weight.", "status": "UNVERIFIED", "m_true": 0.2, "m_false": 0.1, "m_unknown": 0.7, "source": "No primary NHMS/MOH source; Sinar Daily (secondary) reported 11 million, 4 June 2024.", "correction": "Remove the figure or cite as secondary; safer: more than half of adults, 54.4%, are overweight or obese.", "stale_check": "No stale issue."},
+    {"claim": "Excess weight is the strongest driver of type 2 diabetes.", "status": "MISLEADING", "m_true": 0.45, "m_false": 0.1, "m_unknown": 0.45, "source": "WHO and NIDDK list overweight as a major risk factor among several (inactivity, genetics, age).", "correction": "Replace 'strongest driver' with 'a major modifiable risk factor'.", "stale_check": "No stale issue."},
+    {"claim": "Two in five Malaysians with diabetes do not know they have it.", "status": "VERIFIED", "m_true": 0.9, "m_false": 0.02, "m_unknown": 0.08, "source": "NHMS 2023 Key Findings, Decoding diabetes page.", "correction": "Specify: two in five adults with diabetes detected in NHMS 2023 did not know they had it.", "stale_check": "No stale issue."},
+    {"claim": "Among those aged 18 to 29, about 84% are unaware.", "status": "VERIFIED", "m_true": 0.88, "m_false": 0.02, "m_unknown": 0.1, "source": "NHMS 2023 Key Findings: 84% of adults aged 18-29 with diabetes do not know they have it.", "correction": "Specify the denominator: among adults aged 18-29 who have diabetes.", "stale_check": "No stale issue."},
+    {"claim": "One in two adults lead sedentary lives.", "status": "VERIFIED", "m_true": 0.9, "m_false": 0.02, "m_unknown": 0.08, "source": "NHMS 2023 Fact Sheet sedentary behaviour 49.9%; Key Findings: 1 in 2 adults sedentary.", "correction": "Keep.", "stale_check": "No stale issue."},
+    {"claim": "About 84% take part in no sport, fitness or leisure activity.", "status": "VERIFIED", "m_true": 0.88, "m_false": 0.02, "m_unknown": 0.1, "source": "NHMS 2023 Key Findings: 84% not active in sports, fitness and leisure.", "correction": "Use official phrasing.", "stale_check": "No stale issue."},
+    {"claim": "The unverified changed-measurement-definition claim was dropped; no card asserts why the 2019 to 2023 figure fell.", "status": "VERIFIED", "m_true": 0.82, "m_false": 0.03, "m_unknown": 0.15, "source": "Cards assert no cause. NHMS 2019 reanalysed 2011/2015 to a new cut-off, but no card claims a 2019-2023 definition change.", "correction": "Keep the omission; do not introduce a cause unless the NHMS 2023 technical report supports it.", "stale_check": "No stale issue."}
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "UNVERIFIED_DETAIL", "claim": "Headlines called it the epidemic easing.", "why": "No source shows headlines framed the epidemic as easing.", "primary_source": "No primary source found."},
+    {"sin": "INCORRECT", "claim": "The headline rate counts the diagnosed.", "why": "15.6% = known 9.7% + raised blood glucose among not-known 5.9%; not diagnosed-only.", "primary_source": "NHMS 2023 Fact Sheet."},
+    {"sin": "UNVERIFIED_DETAIL", "claim": "about 11 million people", "why": "Not in primary NHMS/MOH material; secondary media only.", "primary_source": "No primary source found."},
+    {"sin": "OVERCLAIM", "claim": "the strongest driver of type 2 diabetes", "why": "'Strongest driver' overstates the ranking the cited sources support.", "primary_source": "WHO; NIDDK."},
+    {"sin": "MISLEADING_FRAMING", "claim": "it skews young", "why": "Unawareness is high among young diabetics, but prevalence increases with age.", "primary_source": "NHMS 2023 Key Findings."},
+    {"sin": "OVERCLAIM", "claim": "A health system can lower a diabetes number for a year.", "why": "Implies a causal explanation not established by NHMS.", "primary_source": "NHMS 2023 Fact Sheet."},
+    {"sin": "MISLEADING_FRAMING", "claim": "it sits upstream of every clinic visit.", "why": "'Every clinic visit' is unsupported and overbroad.", "primary_source": "NHMS 2023 Fact Sheet; WHO."}
+  ],
+  "omitted_facts": [
+    "NHMS 2023 15.6% includes known diabetes 9.7% and raised blood glucose among not-known 5.9%. Source: NHMS 2023 Fact Sheet.",
+    "NHMS 2019 used fasting blood glucose 7.0 mmol/L and reanalysed 2011/2015 to the new cut-off. Source: NHMS 2019 Fact Sheet.",
+    "84% refers to adults aged 18-29 who have diabetes, not 84% of all 18-29s. Source: NHMS 2023 Key Findings.",
+    "The 84% 'not active in sports/fitness/leisure' differs from 'physically inactive' (29.9%). Source: NHMS 2023.",
+    "Sedentary behaviour is 49.9%, not exactly 50%; 'one in two' is acceptable rounding. Source: NHMS 2023 Fact Sheet."
+  ],
+  "source_assessment": "Relies primarily on NHMS/MOH/IKU, appropriate for the main statistics, with secondary media (CodeBlue, FMT, The Vibes, Sinar Daily) for context. Adequate for a health-data explainer; light on independent epidemiological interpretation, clinician and patient voice, and policy-implementation evidence.",
+  "overall_assessment": "Core numerical backbone mostly reliable (2023 and 2019 diabetes, overweight/obesity series, sedentary figure, 84% young-adult unawareness). Publication-significant problems: incorrectly says the headline rate counts only the diagnosed; includes an unverified 11 million estimate; overstates excess weight as the strongest driver; uses causal/rhetorical framing NHMS does not prove. Publishable after tightening diagnosed/undiagnosed language, removing or sourcing 11 million, and softening deterministic claims."
+}

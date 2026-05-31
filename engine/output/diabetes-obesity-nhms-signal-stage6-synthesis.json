@@ -1,0 +1,36 @@
+{
+  "issue": "2001",
+  "slug": "diabetes-obesity-nhms-signal",
+  "stage": 6,
+  "synthesis_date": "2026-05-31",
+  "scores_applied": {
+    "pa": 84,
+    "ba": 85,
+    "ba_derivation": "100 - bias_score(15) per pipeline inversion",
+    "fc": 76,
+    "fc_derivation": "Stage 3 factual_accuracy_score, as returned (reflects pre-correction errors found; not re-inflated)",
+    "sr": 85,
+    "finalScore": 82.5,
+    "finalScore_derivation": "mean(pa 84, ba 85, fc 76, sr 85) = 82.5"
+  },
+  "changes": [
+    {"field": "context", "tag": "REPHRASED (Stage 3)", "from": "...down from 18.3% in 2019, and coverage read it as relief.", "to": "...down from 18.3% in 2019. In the same survey, the share of adults overweight or obese rose again to 54.4%...", "reason": "Stage 3 UNVERIFIED: no primary source shows coverage/headlines framed it as relief. Removed the media-characterisation claim; the headline carries the 'looks like relief' framing instead."},
+    {"field": "cards[0].hook.big", "tag": "REPHRASED (Stage 3)", "from": "...and headlines called it the epidemic easing.", "to": "...and the drop looks like good news.", "reason": "Stage 3 UNVERIFIED_DETAIL: 'headlines called it the epidemic easing' has no source. Reframed as the reader's likely interpretation, not an asserted media fact."},
+    {"field": "cards[0].hook.sub", "tag": "REPHRASED (Stage 3)", "from": "...The number that sets tomorrow's diabetes moved the other way.", "to": "...The risk factor that drives future diabetes moved the opposite way.", "reason": "Stage 3 MISLEADING: 'the number that sets tomorrow's diabetes' is too strong/causal. Softened to 'risk factor that drives', which the sources support."},
+    {"field": "cards[1].fact.sub", "tag": "CORRECTED (Stage 2+3)", "from": "More than one in two adults, about 11 million people, now carry excess weight, the strongest driver of type 2 diabetes.", "to": "More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.", "reason": "Both stages flagged '11 million' as unverified/inconsistent (Stage 2 math: ~12.5M; Stage 3: secondary media only). Dropped the figure rather than substitute an extrapolation. 'strongest driver' -> 'a major modifiable driver' per Stage 3 OVERCLAIM (WHO/NIDDK list several risk factors)."},
+    {"field": "cards[2].fact.big", "tag": "CORRECTED (Stage 3)", "from": "...Among those aged 18 to 29, about 84% are unaware.", "to": "...Among those aged 18 to 29 with diabetes, about 84% are unaware.", "reason": "Stage 3 denominator fix: 84% is of 18-29-year-olds WHO HAVE diabetes, not all 18-29s."},
+    {"field": "cards[2].fact.sub", "tag": "CORRECTED (Stage 3)", "from": "The headline rate counts the diagnosed. The real burden hides in the undiagnosed, and it skews young.", "to": "The 15.6% already includes people a survey blood test caught unaware, not only those formally diagnosed.", "reason": "Stage 3 INCORRECT (m_false 0.87): the 15.6% is NOT diagnosed-only; it is known diabetes 9.7% + survey-detected raised blood glucose 5.9%. Rewrote to state this accurately. Also removed 'skews young' (Stage 3 MISLEADING: prevalence rises with age; only unawareness skews young, already covered in big)."},
+    {"field": "cards[3].fact.sub", "tag": "REPHRASED (Stage 3)", "from": "Physical inactivity is the modifiable input feeding the weight curve, and it sits upstream of every clinic visit.", "to": "Physical inactivity is a modifiable risk factor that feeds the rising weight trend.", "reason": "Stage 3 MISLEADING: 'every clinic visit' is unsupported/overbroad. Removed; kept the supported risk-factor point."},
+    {"field": "cards[4].reframe.big", "tag": "REPHRASED (Stage 3)", "from": "Diabetes is the lagging indicator. Body weight is the leading one, and it has risen at every survey since 2011.", "to": "One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.", "reason": "Stage 3 rated leading/lagging as analytical framing (m_true 0.65). Replaced technical leading/lagging language with plainer, defensible wording; 'major modifiable driver' aligns with the corrected fact-1 claim."},
+    {"field": "cards[5].analogy", "tag": "REPHRASED (Stage 3)", "from": "...The waterline that decides the next decade...", "to": "...The waterline that shapes future risk...", "reason": "Stage 3: 'decides the next decade' overclaims; 'shapes future risk' is supported. Analogy accepted as editorial framing (m_true 0.78)."},
+    {"field": "cards[6].view.big", "tag": "REPHRASED (Stage 2+3)", "from": "A health system can lower a diabetes number for a year. It cannot outrun a population that grows heavier at every survey.", "to": "One better year in the diabetes data does not reverse a decade of getting heavier.", "reason": "Both stages flagged the original as causal/deterministic (Stage 2 MISLEADING_FRAMING; Stage 3 OVERCLAIM: implies the system caused the dip). Rewrote to a non-causal kicker that states only what the data shows. Passes WhatsApp + subtraction test."}
+  ],
+  "rejected_flags": [
+    {"flag": "Gemini omission/evasion: 'does not explain why diabetes fell'", "decision": "REJECTED", "reason": "Per the T4A Accuracy Standard and confirmed by Stage 3 (claim verified, m_true 0.82: keep the omission), no primary source establishes a cause for the 2019->2023 fall. Introducing a cause would be the exact overclaim the standard forbids. The issue deliberately makes no causal claim."}
+  ],
+  "residual_notes": [
+    "fc held at 76 (not re-inflated) to reflect that real errors existed at review time. The errors are now corrected; a re-run would likely score higher, but the recorded stage score is the one returned.",
+    "Primary IKU PDFs (fact sheet + key findings) were opened and cited by Stage 3, satisfying the manual primary-source confirmation step for the NHMS figures used.",
+    "Issue remains published:false pending explicit publish instruction (PHASE 8 of the playbook)."
+  ]
+}

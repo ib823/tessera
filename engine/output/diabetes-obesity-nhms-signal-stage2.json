@@ -1,0 +1,47 @@
+{
+  "bias_score": 15,
+  "political_lean_estimate": -0.2,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": -0.4,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "The analysis omits any medical or demographic exploration of why the diabetes rate fell, choosing instead to treat the finding as a lagging indicator."
+  ],
+  "evasion_flags": [
+    "Does not address a possible cause of the diabetes decline, pivoting to obesity."
+  ],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "A health system can lower a diabetes number for a year. It cannot outrun a population that grows heavier at every survey.",
+      "why": "Implies a one-year artificial lowering without evidence the rate was suppressed.",
+      "fix": "While the diabetes rate has shown a decline, the rising obesity rate indicates the underlying risk factors remain unaddressed."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "about 11 million people",
+      "why": "If 15.6% of adults equals 3.6 million (per NHMS 2023), the adult baseline is roughly 23 million; 54.4% of 23 million is 12.5 million, so 11 million is inconsistent.",
+      "fix": "over 12.5 million people"
+    }
+  ],
+  "verification_log": [
+    {"claim": "Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019", "status": "VERIFIED", "primary_source": "NHMS 2023 Key Findings / MOH Press Release 16 May 2024"},
+    {"claim": "Overweight and obesity climbed to 54.4% (2023), up from 50.1% (2019), 47.7% (2015), 44.5% (2011)", "status": "VERIFIED", "primary_source": "NHMS 2023 Key Findings Report"},
+    {"claim": "about 11 million people", "status": "WRONG", "primary_source": "NHMS 2023 Key Findings (extrapolated)", "corrected_value": "approximately 12.5 million people"},
+    {"claim": "Two in five Malaysians with diabetes do not know they have it", "status": "VERIFIED", "primary_source": "NHMS 2023 Key Findings"},
+    {"claim": "Among those aged 18 to 29, about 84% are unaware", "status": "VERIFIED", "primary_source": "NHMS 2023 Key Findings"},
+    {"claim": "One in two adults lead sedentary lives", "status": "VERIFIED", "primary_source": "NHMS 2023 Key Findings"},
+    {"claim": "about 84% take part in no sport, fitness or leisure activity", "status": "VERIFIED", "primary_source": "NHMS 2023 Key Findings"}
+  ],
+  "overall_assessment": "Bias score 15. NHMS core data points are accurate; the 11 million obesity figure is mathematically inconsistent with the adult population baseline and should be corrected or dropped."
+}
