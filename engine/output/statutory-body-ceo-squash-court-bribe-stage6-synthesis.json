@@ -1,0 +1,72 @@
+{
+  "_provenance": {
+    "version": "v2",
+    "stage": "Stage 6 — Synthesis (Claude)",
+    "slug": "statutory-body-ceo-squash-court-bribe",
+    "issue_id": "2005",
+    "brief": "engine/briefs/statutory-body-ceo-squash-court-bribe.md",
+    "generated_at": "2026-05-31",
+    "inputs": ["stage1", "stage2 (bias 15)", "stage3 (fc 79, source_div 0.35)"],
+    "naming_decision": "User-approved: stay unnamed (body and individual), mirroring Bernama/The Star. One outlet (Scoop) named Perbadanan Stadium Malaysia; the public KBS page lists its CEO. We do not name either, given the suspect is uncharged. Copy notes only that the main MACC reports did not name the body."
+  },
+  "headline": "MACC says a CEO took bribes to release payment, not to win the contract",
+  "context": "On 13 April 2026, MACC detained the chief executive of a federal statutory body over an alleged bribe tied to a RM7 million squash-court project. The main MACC reports did not name the body. The suspect was remanded for five days; no charge has been reported.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "MACC's allegation was not that a chief rigged a contract. It was that he charged to release payment on one already running.",
+      "sub": "The squash-court project was worth RM7 million. The suspect, a man in his 40s, was held at a Bukit Jalil shopping complex on 13 April 2026."
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The alleged ask was RM1 million to approve the contractor's payment claims; about RM600,000 is said to have changed hands.",
+      "sub": "MACC's account: RM500,000 before Hari Raya as an advance, then RM100,000 in cash at the arrest. No report says the full RM1 million was paid."
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "He was remanded five days to assist the probe. No charge has been reported.",
+      "sub": "Magistrate Ezrene Zakaria issued the order in Putrajaya on 14 April 2026, running to 18 April. A remand allows detention for investigation; it is not a finding of guilt."
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "An alleged RM1 million on a RM7 million job is not a rounding error: it is a 14% cut to sign what was already owed.",
+      "sub": "MACC has said public-procurement complaints often centre on approving claims, including for work not properly done, rather than on the original award."
+    },
+    {
+      "t": "reframe",
+      "big": "Watchdogs guard the tender. The bigger leak may sit one step later, at the desk that signs off the contractor's claims.",
+      "sub": ""
+    },
+    {
+      "t": "view",
+      "big": "Whether charges follow or not, the lesson is the payment desk: scrutiny that stops at the award misses where the cash actually moves.",
+      "sub": ""
+    }
+  ],
+  "sources": "Bernama 14 Apr 2026; The Star 14 Apr 2026; Malay Mail 14 Apr 2026; FMT 14 Apr 2026; The Edge 14 Apr 2026; The Vibes 14 Apr 2026; The Sun/Bernama 8 Aug 2024 (MACC on procurement-claim complaints); CPC Act 593 s.28/s.117 (remand)",
+  "stageScores": { "pa": 82, "ba": 85, "fc": 79, "sr": 84 },
+  "synthesis_notes": [
+    "CORRECTED (Stage 2 + Stage 3): removed 'single signatory' / 'single signature' from hook, fact-4, and reframe (UNVERIFIED_DETAIL — no primary source on this body's payment-control SOPs). Reframe now says 'the desk that signs off the contractor's claims' without asserting one-person control.",
+    "CORRECTED (Stage 3): 'A CEO was arrested not for rigging a contract' (OVERCLAIM — proves a negative) rewritten to 'MACC's allegation was not that a chief rigged a contract. It was that he charged to release payment' — attributes the framing to MACC's stated allegation.",
+    "CORRECTED (Stage 3): 'has not been charged' time-qualified to 'No charge has been reported' (rechecked: no charge found through late May 2026).",
+    "CORRECTED (Stage 3): 'Whether this charge ever lands' (implies a charge exists) changed to 'Whether charges follow or not'.",
+    "REPHRASED (Stage 2): dropped 'The headline sum is small' (MISLEADING_FRAMING — minimizes a ~14% kickback). Economic card now states the 14% proportion as the point.",
+    "INTRODUCED (Stage 6 self-verified): the '14% cut' figure is RM1M/RM7M = 14.3%, derived arithmetic from two MACC-stated figures; labelled '14%'.",
+    "INTRODUCED (Stage 6 self-verified): 'context' notes 'the main MACC reports did not name the body' — accurate per Bernama/The Star; avoids implying no public source named it (Scoop did). Body and individual stay unnamed per user decision.",
+    "OVER-INTEGRATION NOTE: Stage 1 leaned harder on the structural-vulnerability claim; both Stage 2 and Stage 3 independently flagged the single-signatory specifics as unverified. Did not average — removed the unverified specific entirely and kept only the MACC-supported 'approval of payment claims' frame.",
+    "Headline 71 chars (within 75 target). Context 247 chars (under 280). Dropped to 6 cards (no analogy) — the pre-charge sensitivity favours fewer, tighter claims."
+  ],
+  "legal_accuracy_check": {
+    "3R": "Clear — not 3R-adjacent.",
+    "defamation": "Body and individual UNNAMED (mirrors Bernama/The Star); 'alleged'/'MACC's account'/'no charge reported' throughout; remand explicitly distinguished from guilt; denied MP-link allegation excluded. Lowest-risk framing for a pre-charge matter.",
+    "stealth": "Clear — no banned terms.",
+    "fact_trace": "Every specific (13 Apr 2026, RM7M, RM1M, RM500k, RM100k, 5-day remand, Ezrene Zakaria, Putrajaya, 40s, Bukit Jalil, 14%) traces to The Star/Bernama 14 Apr 2026 or is labelled derived arithmetic.",
+    "four_sins": "All Stage 2/3 overclaim/unverified/misleading flags actioned; no remaining unverified structural claim.",
+    "recheck_required": "Charging status must be re-confirmed immediately before any merge-to-main, per Stage 3."
+  },
+  "opinionShift": 62,
+  "finalScore": 82.5
+}
