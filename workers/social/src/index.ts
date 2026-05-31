@@ -32,6 +32,7 @@ import { ingestTrends } from './trends';
 import { pickBestCard } from './scorer';
 import { shouldPostNow } from './scheduler';
 import { postCardToBluesky, type PostResult } from './bluesky';
+import { postCardToMastodon } from './mastodon';
 
 async function maybePost(env: Env, force = false): Promise<{ posted: boolean; reason: string; card?: SocialCard }> {
   if (!force) {
@@ -69,6 +70,18 @@ async function maybePost(env: Env, force = false): Promise<{ posted: boolean; re
   } catch (err) {
     console.error('Bluesky post failed:', err);
     return { posted: false, reason: `post-error: ${(err as Error).message}` };
+  }
+
+  // Mastodon is a best-effort secondary channel. A failure here must never
+  // affect the Bluesky post or the cooldown bookkeeping below — the card is
+  // already live on Bluesky, so we log and move on.
+  if (env.ENABLE_MASTODON === 'true') {
+    try {
+      const m = await postCardToMastodon(env, pick.card);
+      console.log(`mastodon posted: ${m.url}`);
+    } catch (err) {
+      console.error('Mastodon post failed (non-fatal):', (err as Error).message);
+    }
   }
 
   await markCardPosted(env, pick.card);

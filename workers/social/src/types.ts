@@ -16,7 +16,10 @@ export interface Env {
   POSTED_CARD_TTL_DAYS: string;
   ISSUE_COOLDOWN_HOURS: string;
   ENABLE_X: string;
+  ENABLE_MASTODON: string;
+  MASTODON_INSTANCE: string;
   BLUESKY_APP_PASSWORD: string;
+  MASTODON_ACCESS_TOKEN: string;
   ADMIN_SECRET: string;
 }
 
