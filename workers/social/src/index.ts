@@ -33,6 +33,7 @@ import { pickBestCard } from './scorer';
 import { shouldPostNow } from './scheduler';
 import { postCardToBluesky, type PostResult } from './bluesky';
 import { postCardToMastodon } from './mastodon';
+import { buildXThread, postingWindowAdviceMYT } from './x-thread';
 
 async function maybePost(env: Env, force = false): Promise<{ posted: boolean; reason: string; card?: SocialCard }> {
   if (!force) {
@@ -179,6 +180,27 @@ export default {
       } catch (err) {
         return json({ ok: false, error: (err as Error).message }, 500);
       }
+    }
+
+    if (url.pathname === '/admin/x-draft' && request.method === 'GET') {
+      // Manual-X helper: returns a ready-to-paste thread for one issue, plus
+      // posting-time advice. No API call to X — the operator pastes it by hand.
+      if (!checkAdmin(request, env)) return unauthorized();
+      const id = url.searchParams.get('id');
+      if (!id) return json({ error: 'pass ?id=NNNN' }, 400);
+      const index = await getCardIndex(env);
+      if (!index) return json({ error: 'no-card-index' }, 503);
+      const thread = buildXThread(index.cards, id, env.SITE_URL);
+      if (!thread) return json({ error: `no cards for issue ${id}` }, 404);
+      const timing = postingWindowAdviceMYT(new Date());
+      // Plain text first so it is trivially copyable from a phone browser.
+      const wantsText = url.searchParams.get('format') === 'text';
+      if (wantsText) {
+        return new Response(`${thread.plainText}\n\n— attach image: ${env.SITE_URL}${thread.imageToAttach}\n— timing: ${timing.window} — ${timing.advice}`, {
+          headers: { 'content-type': 'text/plain; charset=utf-8' },
+        });
+      }
+      return json({ issueId: thread.issueId, imageToAttach: `${env.SITE_URL}${thread.imageToAttach}`, timing, posts: thread.posts, copyPaste: thread.plainText });
     }
 
     if (url.pathname === '/admin/log' && request.method === 'GET') {
