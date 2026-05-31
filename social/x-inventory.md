@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T05:14:15.514Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-05-31T06:13:05.565Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (75)
+## ⏳ TO POST (74)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -322,43 +322,6 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
 
 https://thefourthangle.pages.dev/issue/1267
-```
-
-### Issue 2001 — Health savings promised without cutting essential services. 62% of the operating budget is salaries.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2001-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2001`
-
-**1/7** _(hook — attach image, NO link)_ · 158 chars
-```
-Putrajaya says it can save billions from the health budget without cutting essential services. But 62% of its operating budget is pay it cannot quickly touch.
-```
-**2/7** _(fact)_ · 159 chars
-```
-The reported RM3.06 billion cut is 6.6% of the RM46.5 billion budget. It would leave RM43.4 billion, below the RM45.3 billion the ministry got the year before.
-```
-**3/7** _(fact)_ · 159 chars
-```
-Of the RM39.8 billion operating budget, RM24.8 billion (62%) is staff salaries, the largest fixed cost. The rest, where a cut can move quickly, is far smaller.
-```
-**4/7** _(fact)_ · 158 chars
-```
-Clinicians warn the leftover base is not spare change. Cleaning prevents infection, maintenance keeps equipment alive, supplies mean medicine, gloves, oxygen.
-```
-**5/7** _(reframe)_ · 163 chars
-```
-The real question is not whether the cut spares essential services. It is how much shrinks into 'non-essential' once salaries and core care are both off the table.
-```
-**6/7** _(analogy)_ · 143 chars
-```
-Picture trimming a household budget without touching rent or food. What remains to cut: the lightbulbs, and you are told the dark won't matter.
-```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
-```
-You can't cut salaries. You can't cut emergency care. So where does a RM3 billion health cut actually go? Medicine, cleaning, machines... Be honest about it.
-
-https://thefourthangle.pages.dev/issue/2001
 ```
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
@@ -2652,5 +2615,6 @@ https://thefourthangle.pages.dev/issue/0146
 
 ---
 
-## ✅ POSTED (0)
+## ✅ POSTED (1)
 
+- **2001** — Health savings promised without cutting essential services. 62% of the operating budget is salaries.  _(2026-05-31T06:13:05.471Z, x)_
