@@ -1,0 +1,38 @@
+{
+  "issue": "2003",
+  "slug": "rice-self-sufficiency-target-gap",
+  "stage": 6,
+  "synthesis_date": "2026-05-31",
+  "review_method": "External Stage 2 (Gemini bias) + Stage 3 (ChatGPT fact) run by operator and returned. Stage 6 self-verified the new lead figures (52.9% 2024) against primary/ministerial sources.",
+  "scores_returned": {
+    "stage2_bias_score": 5,
+    "ba": 95,
+    "stage3_factual_accuracy_score": 72,
+    "fc": 72
+  },
+  "headline_finding": "The central statistic was STALE. The issue was built on rice SSR 56.2% (2023); DOSM's 2020-2024 SUA (released 15 Dec 2025) reports 52.9% for 2024. This STRENGTHENS the story: the rate is falling, not flat. Restructured the whole issue around the verified decline.",
+  "changes": [
+    {"field": "headline + context + hook", "tag": "CORRECTED (Stage 3 STALE/MISLEADING)", "from": "Raised target to 80% from 75%; actual rate 56.2%; gap 24 points 'not narrowing'.", "to": "Targets 80% by 2030 (DAN 2.0, 75% interim); rate FELL to 52.9% in 2024 from 56.2% in 2023; gap ~27 points.", "reason": "Stage 3: 56.2% is the 2023 figure; latest DOSM (15 Dec 2025) reports 52.9% for 2024. Self-verified: confirmed across DOSM PDF existence + The Star (5 Feb 2026, Minister Mat Sabu calls it 'stagnant at 52%') + multiple outlets. Leading with the decline is both accurate and a stronger story."},
+    {"field": "hook + fact-1 + reframe", "tag": "CORRECTED (Stage 2+3 UNDERCLAIM)", "from": "'It has been broadly flat.' / 'gap nearly 24 points'", "to": "'sliding: 56.2% in 2023, then 52.9% in 2024 ... longer fall from about 70% in 2017' / 'gap is now about 27 points'", "reason": "Both reviewers: 'broadly flat' UNDERCLAIMS a real decline. MyCC 2026 public report traces ~70% (2017) -> 56.2% (2023); DOSM 52.9% (2024). Reframed as a decline with the MyCC long-arc attribution."},
+    {"field": "hook + context", "tag": "CORRECTED (Stage 2+3 OVERCLAIM)", "from": "'raised its rice self-sufficiency target to 80% by 2030, up from the previous 75%'", "to": "'targets 80% rice self-sufficiency by 2030, with a 75% interim mark' (DAN 2.0)", "reason": "Both reviewers: the 75%/80% are phased DAN 2.0 (2021-2030) milestones (75% interim, 80% by 2030), not a target that was 'raised'. Removed the false policy-shift implication."},
+    {"field": "fact-3 sub", "tag": "CORRECTED (Stage 3 MISLEADING year-mismatch)", "from": "'not the net food trade deficit of about RM31 billion. Both widened as the ringgit weakened.'", "to": "'Food exports trailed at RM46.5 billion that year, leaving a food trade deficit of RM32.3 billion.'", "reason": "Stage 3: the ~RM31B deficit is 2022, paired with the 2023 import bill (year-mismatch); the 2023 deficit is RM32.3B (imports RM78.8B - exports RM46.5B, DOSM). Also dropped 'ringgit weakened' as an unsupported causal OVERCLAIM."},
+    {"field": "fact-2 big", "tag": "REPHRASED (Stage 3)", "from": "'buys roughly 44% of its rice abroad'", "to": "'imports nearly half its rice'", "reason": "Stage 3: 100 - SSR is the self-sufficiency gap, not the exact import share; 'nearly half' is defensible against both the 2023 and 2024 SSR without overprecision."},
+    {"field": "fact-2 sub", "tag": "CORRECTED (Stage 3)", "from": "'curbed shipments in 2023'", "to": "'banned non-basmati white rice exports in July 2023'", "reason": "Stage 3: precise wording per DGFT Notification 20/2023 (20 July 2023)."},
+    {"field": "view big", "tag": "REPHRASED (Stage 3 UNVERIFIED_DETAIL)", "from": "'A government can legislate a target but not a harvest. Rice security is won in the granary, not the gazette.'", "to": "'A government can set a target but not guarantee a harvest. Rice security is decided in the paddy field, not the policy document.'", "reason": "Stage 3: 'legislate/gazette' implies a statutory/gazetted target; it is a policy target under DAN 2.0. Removed the false legal framing while keeping the kicker."}
+  ],
+  "rejected_or_held_flags": [
+    {"flag": "FAO/clean-padi methodology + 4.7% production fall explanation", "decision": "HELD OUT (not published)", "reason": "Stage 3 marked this UNVERIFIED (could not confirm the exact FAO-alignment, clean-padi, or 4.7% figure from primary). Per the Accuracy Standard, kept entirely out of the cards. The decline framing (56.2% -> 52.9%) does not depend on it. Note: this resolves the Stage 2 'apples-to-oranges' concern differently than Stage 2 proposed (Stage 2 wanted the methodology IN the text; Stage 3 says it is unverifiable) -- by leading with the same-methodology 2023->2024 decline, the comparison is now like-for-like and the methodology caveat is unnecessary."}
+  ],
+  "scores": {
+    "pa": 84,
+    "ba": 95,
+    "ba_note": "100 - bias_score(5); near-zero bias, no partisan/communal/gender framing.",
+    "fc": 72,
+    "fc_note": "Stage 3 score as returned; reflects the stale-figure and framing errors found at review time. Corrected (incl. self-verified 52.9%), not re-inflated.",
+    "sr": 85,
+    "finalScore": 84.0,
+    "finalScore_derivation": "mean(pa 84, ba 95, fc 72, sr 85) = 84.0"
+  },
+  "chart": "Regenerated issue-2003-bg.png: now shows the 52.9% (2024) actual and the falling trend vs the 80% target, replacing the stale 56.2%/24-point version.",
+  "publish_status": "Corrected and self-verified. Still published:false pending instruction."
+}
