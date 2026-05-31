@@ -1,0 +1,77 @@
+{
+  "_provenance": {
+    "version": "v2",
+    "stage": "Stage 6 — Synthesis (Claude)",
+    "slug": "investment-fraud-rm1-47b-2025-ccid",
+    "issue_id": "2004",
+    "brief": "engine/briefs/investment-fraud-rm1-47b-2025-ccid.md",
+    "generated_at": "2026-05-31",
+    "inputs": ["stage1", "stage2 (bias 15)", "stage3 (fc 76, source_div 0.46)"],
+    "restructure": "Spine rotated per Stage 2 + Stage 3. Original thesis ('every control point sits after the money is gone' / 'no law makes the host liable') was OVERCLAIM/MISLEADING: BNM stopped 162,642 mule accounts in 2025, SC made 249 investor-alert listings + 175 website blocks in 2025, and the Online Safety Act 2025 (in force 1 Jan 2026) makes financial-fraud content priority harmful content. New spine (user-approved 'defences-rose-anyway'): Malaysia built the upstream defences and losses still rose 73%; the narrow remaining gap is that none of it repays the victim."
+  },
+  "headline": "Bank Negara blocked 162,642 mule accounts in 2025; investment-scam losses still rose 73%",
+  "context": "Bukit Aman's Commercial Crime Investigation Department reported that non-existent-investment scams cost Malaysians RM1.47 billion across 9,603 cases in 2025, up from RM848.6 million across 6,337 in 2024, even as the state disrupted record numbers of mule accounts.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Investment-scam losses hit RM1.47 billion in 2025, up 73% from RM848.6 million a year earlier.",
+      "sub": "CCID director Rusdi Mohd Isa gave the figure on 18 April 2026: 9,603 cases, against 6,337 in 2024.",
+      "lens": "Economic"
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "The second hit lands after the 'profit': victims see fake gains, then pay 'fees' to withdraw money that never existed.",
+      "sub": "CCID's funnel: lure on Facebook or Instagram, move to WhatsApp or Telegram, show a fabricated dashboard, then demand processing fees and taxes to release it."
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The state was not idle: Bank Negara stopped 162,642 suspected mule accounts in 2025. The losses still rose.",
+      "sub": "The Securities Commission added 249 entities to its investor-alert list and blocked 175 scam websites the same year. The money kept finding a route."
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "It is not only more victims. The average case lost more: roughly RM153,000, against about RM134,000 a year earlier.",
+      "sub": "RM1.47 billion over 9,603 cases, against RM848.6 million over 6,337 in 2024. Cases rose about 52%; losses rose about 73%."
+    },
+    {
+      "t": "reframe",
+      "big": "Malaysia's 2026 online-safety law forces platforms to pull scam content faster. It still makes no one repay the victim.",
+      "sub": ""
+    },
+    {
+      "t": "analogy",
+      "big": "It is a fire service that finally inspects the wiring but still owes nothing when the house burns down.",
+      "sub": "The wiring is the platform and the payment rail. The new code demands risk checks, not repayment."
+    },
+    {
+      "t": "view",
+      "big": "Warnings are cheap. The question Malaysia still ducks: who pays when the money clears every checkpoint and vanishes?",
+      "sub": ""
+    }
+  ],
+  "sources": "Bernama 18 Apr 2026 (CCID dir Rusdi Mohd Isa); Malay Mail 18 Apr 2026; The Sun 18 Apr 2026; The Star 19 Apr 2026; Sinar Daily 18 Apr 2026; BNM Annual Report 2025 (162,642 mule accounts); SC Annual Report 2025 Part 2 Table 17 (249 alert listings, 175 website blocks); Online Safety Act 2025 (in force 1 Jan 2026); MCMC Risk Mitigation Code (effective 1 Jun 2026)",
+  "stageScores": { "pa": 86, "ba": 85, "fc": 76, "sr": 87 },
+  "synthesis_notes": [
+    "CORRECTED (Stage 3): removed 'every control point sits after the money is gone' (OVERCLAIM). Replaced with the verified upstream-defences contrast (BNM 162,642 mule accounts; SC 249 alerts + 175 blocks, 2025).",
+    "CORRECTED (Stage 3): removed the unverifiable '111 unregulated entities / 26 cease-and-desist' figures. Substituted SC Annual Report 2025 verified figures (249 investor-alert listings, 175 website blocks).",
+    "CORRECTED (Stage 3): removed 'no law makes the host liable' (OVERCLAIM, ignores Online Safety Act 2025). Reframe now distinguishes content-takedown duty (which exists) from victim reimbursement (which does not).",
+    "REPHRASED (Stage 2): dropped 'lists offenders by the dozen' ('offenders' overstates legal status of the non-exhaustive SC alert list); governance card now states verified counts without the offender label.",
+    "REPHRASED (Stage 2): replaced the 'no power over the wiring' analogy with 'inspects the wiring but owes nothing' — acknowledges MCMC/OSA power while keeping the no-reimbursement point.",
+    "CORRECTED (Stage 3): per-case averages kept as 'per case', not 'per victim'; 'roughly/about' retained.",
+    "INTRODUCED (Stage 6 self-verified): headline leads with BNM's 162,642 mule-account figure (BNM Annual Report 2025) paired with the verified 73% loss rise — both verified specifics.",
+    "INTRODUCED (Stage 6 self-verified): source_notes all-category figure corrected to RM2.77B full-year 2025 (Bernama 16 May 2026, Teo Nie Ching), not '~RM2.7B as of Nov 2025'.",
+    "Headline 87 chars (over 75 target, under 100 hard cap) — kept because the paradox needs both the number and the delta. Context 247 chars (under 280)."
+  ],
+  "legal_accuracy_check": {
+    "3R": "Clear — not 3R-adjacent.",
+    "defamation": "Clear — no individual named adversely; CCID/BNM/SC are institutions reporting their own data.",
+    "stealth": "Clear — no banned AI/provider terms.",
+    "fact_trace": "Every specific (RM1.47B, 9,603, RM848.6M, 6,337, 73%, RM153k/RM134k, 162,642 mule accounts, 249 alerts, 175 blocks, OSA 2025) traces to a primary or named-newswire source.",
+    "four_sins": "Overclaim/misleading-framing flags from Stage 2/3 all actioned; no remaining absolute claims."
+  },
+  "opinionShift": 68,
+  "finalScore": 83.5
+}
