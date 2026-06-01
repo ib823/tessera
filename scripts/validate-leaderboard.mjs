@@ -58,7 +58,7 @@ const BANNED_PATTERNS = [
 
 const VALID_STATUS = new Set([
   'declared', 'not-declared', 'charged', 'convicted',
-  'acquitted', 'discharged', 'ongoing', 'none-on-record',
+  'acquitted', 'discharged', 'pardoned', 'ongoing', 'none-on-record',
 ]);
 
 // ══════════════════════════════════════════════

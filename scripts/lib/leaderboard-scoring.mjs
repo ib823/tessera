@@ -18,6 +18,9 @@ export const DEFAULT_STATUS_SCALAR = {
   'none-on-record': 1.0,
   acquitted: 1.0,
   discharged: 0.85,
+  pardoned: 0.7, // convicted then granted clemency: matter finally resolved in the
+  //               subject's favour, but a conviction historically occurred, so it
+  //               sits below a DNAA (no conviction entered) and above unresolved states.
   ongoing: 0.6,
   charged: 0.5,
   'not-declared': 0.25,
