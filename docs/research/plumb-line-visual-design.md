@@ -92,6 +92,13 @@ unlocked only after the independent Layer B coder panel clears the bias gates.
 - Islands hydrate `client:load`; everything reuses T4A design tokens
   (`tokens.css`) so it adapts to light/dark automatically.
 - The board offers a Cards ↔ Matrix toggle; the Field sits above both.
+- Tier 4 lives at `src/pages/plumb-line-why.astro` (`PlumbLineExplainer.svelte`):
+  a scroll-driven methodology explainer with the rank-range-collapse animation;
+  its leaders are illustrative (A–F), never real subjects.
+- **Browserless stills:** `node scripts/render-plumb-line-preview.mjs [outdir]`
+  rasterises all four tiers to PNG via sharp (no Chromium needed), for docs,
+  social, and review in CI/sandboxes. Output is gitignored (`*.png`); run
+  `npm run build-leaderboard` first.
 
 ## 5. Open decisions (carried from the methodology work)
 
