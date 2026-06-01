@@ -78,3 +78,25 @@ A third finding falls out of this: **BN (30 seats) holds exactly the same power 
 **State after step 2:** coverage rises to 2 covered dimensions each (A5 + C1) — 18% for ministers (of 11), 25% for Hamzah (of 8), 15% for the benchmark (of 13, no exclusions). All still **on file, not ranked**: reaching 50% needs roughly four more objective dimensions (A1 legislative, A3 pledge, A4 fiscal, C2 governance) and/or the Layer B panel. Build green, badge withheld, everything `published: false`.
 
 **Remaining work on the path to a first published rank:** A4 (Auditor-General per-ministry findings), A1 (bills piloted, Hansard), C2 (domain-scoped governance per portfolio), A3 (manifesto pledge coding), and the ≥3-coder Layer B panel. Each is a separate, carefully-sourced step — no living-minister score will be rushed to force a ranking.
+
+---
+
+## Step 3 (2026-06-01): A4 fiscal stewardship — attempted, deliberately deferred (a finding)
+
+A4 was researched against the primary source (Auditor-General's Report, "sick" / critically-delayed 12MP projects, Treasury Circular PK 4.5 definition). It is **not** being scored this step, on accuracy grounds. Three blockers, in order of importance:
+
+1. **Raw counts are not comparable across heterogeneous portfolios (misleading-framing risk).** The AG measure is a project count. Capital-intensive portfolios (Works, Rural Development, Transport) run hundreds of physical projects; a Communications ministry runs almost none. Scoring raw sick-project counts would penalise infrastructure ministers and flatter low-capital ones for reasons that have nothing to do with stewardship. That is cardinal sin #3 (misleading framing). A fair A4 needs a **size-normalised** measure — sick *rate* (sick ÷ the ministry's total 12MP projects) or sick-project *value* ÷ development allocation.
+2. **The fair denominator is not cleanly sourceable.** The public breakdown gives counts only for the worst few ministries (Education 46, KKDW/Rural Development 34, Petra 12, KPKT 11 of 157 total across 18 ministries). Per-ministry *total* project counts — needed for a rate — are not in the available reporting; the headline totals themselves disagree (157 "sick" vs "3.6% of 9,355" ≈ 337), an unresolved contradiction.
+3. **Partial population would be asymmetric and partisan.** The only cohort figure cleanly available is Zahid's KKDW (34). Recording an adverse A4 for the one minister who is already the A5 outlier, while the other four stay blank, would single him out on thin, non-comparable data. The symmetry gate exists to prevent exactly this.
+
+**Decision:** A4 deferred until a size-normalised, symmetric measure (sick rate or execution rate per ministry) can be sourced for all five. The finding is recorded; nothing is scored.
+
+### The larger finding this exposes — role class is too coarse for capital-intensity-sensitive dimensions
+
+A single `cabinet-minister` class lumps a Works minister with a Communications minister. For conduct/structural dimensions (A5, C1, Layer B) that is fine. For **delivery dimensions sensitive to portfolio capital-intensity (A4, and partly A1 legislative volume and C2 governance scope)** it is not: the portfolios are not like-for-like, and normalisation corrects scale, not portfolio *type*. Options for M2/M3, for the user to weigh:
+
+- **(a) Size-normalise the metric** (preferred for A4: sick rate, execution rate) — keeps one class, fixes the specific dimension.
+- **(b) Portfolio-aware sub-comparability** — compare delivery dimensions only within capital-intensity bands, not across the whole class.
+- **(c) Scope the dimension** — mark A4 applicable only where a comparable fiscal-delivery measure exists, N/A otherwise (disclosed like the jurisdiction gaps).
+
+This does not block the conduct/structural spine (A5, C1, and a future Layer B), which remain comparable across the whole class.
