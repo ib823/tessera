@@ -53,6 +53,12 @@ const statusScalars = methodology.statusScalars ?? DEFAULT_STATUS_SCALAR;
 const dims = methodology.dimensions;
 const layers = methodology.layers;
 
+// Validity thresholds (v0.2.0): the instrument refuses to publish a misleading
+// score rather than emit a false-precise one. See methodology.validity.
+const validity = methodology.validity ?? {};
+const MIN_PEER = validity.minPeerSetSize ?? 1;
+const MIN_COVERAGE = validity.minCoverageToRank ?? 0;
+
 /* ---------- helpers ---------- */
 
 function periodDays(p) {
@@ -103,13 +109,33 @@ for (const dim of dims) {
 
 // normalized[dimId] = Map(slug → 0..100 | null), normalized within the
 // applicable peer set (leaders for whom the dim applies AND have a value).
+// A dimension whose peer set has fewer than MIN_PEER defined values cannot be
+// normalized meaningfully (a lone value rank-normalizes to 0), so it is left
+// null and flagged insufficient — never scored as zero.
 const normalized = {};
+const peerSetSize = {};
 for (const dim of dims) {
   const slugs = leaders.filter((l) => applicableToLeader(l, dim)).map((l) => l.slug);
   const series = slugs.map((s) => raw[dim.id].get(s));
-  const norm = normalizeWithinPool(series, { higherIsBetter: dim.higherIsBetter });
+  peerSetSize[dim.id] = series.filter((v) => v != null).length;
   normalized[dim.id] = new Map();
+  if (peerSetSize[dim.id] < MIN_PEER) {
+    slugs.forEach((s) => normalized[dim.id].set(s, null));
+    continue;
+  }
+  const norm = normalizeWithinPool(series, { higherIsBetter: dim.higherIsBetter });
   slugs.forEach((s, i) => normalized[dim.id].set(s, norm[i]));
+}
+
+/** The recorded metric object (value + citation + justification) for a
+ *  leader+dimension, for transparent display even when not normalized. */
+function leaderDimensionMetric(leader, dim) {
+  for (const period of leader.periods) {
+    if (!dim.appliesToRoles.includes(period.role)) continue;
+    const m = (period.metrics ?? []).find((x) => x.dimension === dim.id);
+    if (m && m.value != null && !m.notApplicable) return m;
+  }
+  return null;
 }
 
 /* ---------- 3 + 4 + 5: per-leader layer + composite scores ---------- */
@@ -135,19 +161,49 @@ function buildEntry(leader) {
       layer: id,
       name: layers[id].name,
       score: roundScore(ls.score, decimals),
-      dimensions: ls.dims.map((d) => ({
-        dimension: d.id,
-        layer: id,
-        name: d.name,
-        score: roundScore(normalized[d.id]?.get(leader.slug) ?? null, decimals),
-        covered: (normalized[d.id]?.get(leader.slug) ?? null) != null,
-      })),
+      dimensions: ls.dims.map((d) => {
+        const score = normalized[d.id]?.get(leader.slug) ?? null;
+        const m = leaderDimensionMetric(leader, d);
+        return {
+          dimension: d.id,
+          layer: id,
+          name: d.name,
+          score: roundScore(score, decimals),
+          covered: score != null,
+          peerSetSize: peerSetSize[d.id] ?? 0,
+          // Transparent record of the cited raw datum, shown even when the
+          // dimension cannot yet be normalized (peer set too small).
+          recorded: m ? { value: m.value, justification: m.justification, citation: m.citation } : null,
+          status:
+            score != null
+              ? 'scored'
+              : m
+                ? peerSetSize[d.id] < MIN_PEER
+                  ? 'on-file-insufficient-peer-set'
+                  : 'on-file'
+                : 'no-data',
+        };
+      }),
     };
   });
 
   const applicable = dims.filter((d) => applicableToLeader(leader, d));
   const covered = applicable.filter((d) => (normalized[d.id]?.get(leader.slug) ?? null) != null);
   const coverage = applicable.length ? (covered.length / applicable.length) * 100 : 0;
+  const recordedCount = applicable.filter((d) => leaderDimensionMetric(leader, d) != null).length;
+
+  const composite = compositeFor(leader, ['A', 'B', 'C']);
+  const ranked = coverage / 100 >= MIN_COVERAGE && composite != null;
+  let notRankedReason = null;
+  if (!ranked) {
+    if (recordedCount === 0) {
+      notRankedReason = 'No metrics on file yet.';
+    } else if (coverage === 0) {
+      notRankedReason = `On file with ${recordedCount} cited metric(s), but no dimension yet has a peer set of ${MIN_PEER}+ comparable subjects, so none can be normalized. Awaiting a comparable cohort.`;
+    } else {
+      notRankedReason = `Coverage ${Math.round(coverage)}% is below the ${Math.round(MIN_COVERAGE * 100)}% minimum required to publish a rank.`;
+    }
+  }
 
   return {
     slug: leader.slug,
@@ -156,11 +212,14 @@ function buildEntry(leader) {
     country: leader.country,
     affiliation: leader.affiliation,
     comparabilityClass: cls,
-    composite: roundScore(compositeFor(leader, ['A', 'B', 'C']), decimals),
-    compositeObjectiveOnly: roundScore(compositeFor(leader, ['A', 'C']), decimals),
+    ranked,
+    notRankedReason,
+    composite: ranked ? roundScore(composite, decimals) : null,
+    compositeObjectiveOnly: ranked ? roundScore(compositeFor(leader, ['A', 'C']), decimals) : null,
     coverage: roundScore(coverage, decimals),
-    rank: 0, // filled after sort
-    rankRange: [0, 0], // filled by sensitivity pass
+    recordedCount,
+    rank: null, // filled after sort, ranked entries only
+    rankRange: null, // filled by sensitivity pass, ranked entries only
     layers: scoredLayers,
     relatedIssues: leader.relatedIssues ?? [],
   };
@@ -176,17 +235,20 @@ function rankBy(entries, scoreFn) {
     .map((e, i) => [e.slug, i + 1]);
 }
 
+// Only ranked entries (coverage + peer set cleared) receive a published rank.
+const rankable = allEntries.filter((e) => e.ranked);
+
 // Point rank by composite.
-const pointRank = new Map(rankBy(allEntries, (e) => e.composite));
+const pointRank = new Map(rankBy(rankable, (e) => e.composite));
 
 // Sensitivity: perturb the cross-layer param within ±perturbation and record
 // the best/worst rank each leader can take (Saisana/Saltelli weight perturbation).
 const pert = methodology.audit?.gates?.find((g) => g.id === 'rank-robustness')?.perturbation ?? 0.1;
 const baseParam = methodology.aggregation.crossLayerParam ?? 0.5;
-const rankSpread = new Map(allEntries.map((e) => [e.slug, [Infinity, -Infinity]]));
+const rankSpread = new Map(rankable.map((e) => [e.slug, [Infinity, -Infinity]]));
 for (const p of [baseParam - pert, baseParam, baseParam + pert]) {
   const param = Math.max(0, Math.min(1, p));
-  const recomputed = allEntries.map((e) => {
+  const recomputed = rankable.map((e) => {
     const lead = leaders.find((l) => l.slug === e.slug);
     return { slug: e.slug, c: weakestLinkAggregate(
       ['A', 'B', 'C'].map((id) => layerScore(lead, id).score),
@@ -204,6 +266,7 @@ for (const p of [baseParam - pert, baseParam, baseParam + pert]) {
 }
 
 for (const e of allEntries) {
+  if (!e.ranked) continue; // rank/rankRange stay null
   e.rank = pointRank.get(e.slug) ?? 0;
   const sp = rankSpread.get(e.slug);
   e.rankRange = sp && sp[0] !== Infinity ? [sp[0], sp[1]] : [e.rank, e.rank];
@@ -211,14 +274,27 @@ for (const e of allEntries) {
 
 /* ---------- assemble + write ---------- */
 
-const entries = allEntries.filter((e) => !e.benchmark).sort((a, b) => b.composite - a.composite);
-const benchmarks = allEntries.filter((e) => e.benchmark).sort((a, b) => b.composite - a.composite);
+// Ranked first (by composite), then on-file subjects (by recorded-metric count).
+const order = (a, b) => {
+  if (a.ranked !== b.ranked) return a.ranked ? -1 : 1;
+  if (a.ranked) return (b.composite ?? -1) - (a.composite ?? -1);
+  return (b.recordedCount ?? 0) - (a.recordedCount ?? 0);
+};
+const entries = allEntries.filter((e) => !e.benchmark).sort(order);
+const benchmarks = allEntries.filter((e) => e.benchmark).sort(order);
 
 const board = {
   methodologyVersion: methodology.version,
   status: methodology.status,
   generatedAt: new Date().toISOString().slice(0, 10), // date only → deterministic per day
   biasAudited: false, // set true only by a passing audit (audit-scoreboard.mjs)
+  validity: { minPeerSetSize: MIN_PEER, minCoverageToRank: MIN_COVERAGE },
+  counts: {
+    leaders: entries.length,
+    benchmarks: benchmarks.length,
+    ranked: allEntries.filter((e) => e.ranked).length,
+    onFile: allEntries.filter((e) => !e.ranked && e.recordedCount > 0).length,
+  },
   entries,
   benchmarks,
 };
@@ -237,6 +313,14 @@ for (const e of allEntries) {
 console.log(
   `  ✓ leaderboard built (${methodology.status}): ${entries.length} leaders, ${benchmarks.length} benchmarks → public/leaderboard.json`,
 );
-if (methodology.status === 'framework') {
+console.log(
+  `    ranked: ${board.counts.ranked}  ·  on file (not yet rankable): ${board.counts.onFile}`,
+);
+if (board.counts.ranked === 0 && board.counts.onFile > 0) {
+  console.log(
+    `    M1 dry-run — subjects on file with cited data, but below ranking validity (peer set < ${MIN_PEER}). No composite or rank published. Badge withheld.`,
+  );
+}
+if (methodology.status === 'framework' && board.counts.onFile === 0 && board.counts.ranked === 0) {
   console.log('    Framework mode — no subjects scored yet (M0). Badge withheld until audit passes.');
 }

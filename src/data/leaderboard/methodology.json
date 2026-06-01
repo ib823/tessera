@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "framework",
   "name": "The Plumb Line",
   "subtitle": "Malaysia Leader Accountability Index",
@@ -8,7 +8,7 @@
   "docOfRecord": "docs/research/leader-accountability-index.md",
   "adr": "docs/adr/0007-leader-accountability-index.md",
   "scale": { "min": 0, "max": 100, "decimals": 0 },
-  "_comment_status": "status=framework means NO leader is scored yet (Milestone M0). The instrument, weights, and audit gates are published for scrutiny before any person is graded. status flips to 'live' only at M2 once the bias audit passes on the first scored cohort.",
+  "_comment_status": "status=framework means NO leader is RANKED yet. M0 published the instrument with zero subjects; M1 (v0.2.0) ingested the first real cited subjects but they remain below ranking validity (see `validity`), so no composite or rank is published. status flips to 'live' only at M2 once a comparable peer set clears the validity thresholds and the bias audit passes.",
 
   "firewall": {
     "rule": "Every input is a RECORDED PUBLIC FACT or a standard index computed on recorded public facts. No figure may originate from the Malaysia political simulation engine's predictions or any model inference.",
@@ -98,7 +98,8 @@
       "sourceType": ["Gazette", "Court cause-list", "Official asset declaration"],
       "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
       "higherIsBetter": true,
-      "guardrail": "3R-adjacent and integrity claims require two independent primary sources (CLAUDE.md Accuracy Standard). A claim that cannot meet this bar is dropped, not softened."
+      "guardrail": "3R-adjacent and integrity claims require two independent primary sources (CLAUDE.md Accuracy Standard). A claim that cannot meet this bar is dropped, not softened.",
+      "attributionRule": "Added v0.2.0 after the M1 dry-run. A5 records the SUBJECT'S OWN status only. A court matter involving the leader's staff, family member, business associate, or party colleague is NOT the leader's status and is never recorded against them — guilt by association is an overclaim and a defamation risk. The default status for a leader with no personal matter of record is 'none-on-record', scored identically to 'declared/acquitted' (no penalty for the absence of wrongdoing)."
     },
 
     {
@@ -240,6 +241,15 @@
     "missingData": "exclude-and-shrink-denominator",
     "missingDataRationale": "A metric with no public record is N/A. Imputing 0 or the mean would smuggle in a hidden judgement. Per-leader coverage % is published.",
     "reference": "oecd-jrc-handbook"
+  },
+
+  "validity": {
+    "_comment": "Added in v0.2.0 after the M1 dry-run on the first real subjects. These thresholds make the instrument REFUSE to publish a misleading score rather than produce a false-precise one. A leader can be on file (data ingested, cited, displayed) without being ranked.",
+    "minPeerSetSize": 3,
+    "minPeerSetRationale": "A dimension is only normalized when its applicable peer set has at least this many defined values. Min-max or rank normalization on one or two points is meaningless: a lone value rank-normalizes to 0, so Singapore's 100th-percentile governance would display as 0. Below the floor the dimension is marked 'insufficient-peer-set' and excluded from the composite — not scored as zero.",
+    "minCoverageToRank": 0.50,
+    "minCoverageRationale": "A leader receives a published composite and rank only when at least half their applicable dimensions carry a valid (peer-normalized) score. Below the floor the leader is listed as 'on file, not yet rankable', their cited raw metrics shown for transparency, but no composite or rank asserted. This is what prevents a governing-centric index from emitting a misleadingly low number for an opposition figure whose applicable dimensions are mostly uncovered.",
+    "notRankedDisplay": "Leaders below either threshold appear in an 'On file, awaiting a comparable cohort' section with their recorded, cited metrics visible and an explicit reason, never with a composite or rank."
   },
 
   "aggregation": {

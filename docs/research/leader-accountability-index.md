@@ -1,6 +1,6 @@
 # The Plumb Line — Malaysia Leader Accountability Index
 
-*Methodology of record. Version 0.1.0 (framework). Last reviewed 2026-06-01.*
+*Methodology of record. Version 0.2.0 (framework). Last reviewed 2026-06-01.*
 
 > A builder's plumb line is the non-partisan reference of true vertical. You hang it, you read it, and the wall is either straight or it is not. This instrument is the same idea applied to public office: one fixed yardstick, applied identically to every leader, built only from recorded public facts, and declared unbiased only once the bias audit proves it.
 
@@ -102,6 +102,15 @@ A backbencher has no budget-execution record; an opposition member cannot enact 
 - **Period-based scoring** handles mid-term role changes (a minister who returns to the backbench is scored per period under each applicable class, then time-weighted).
 - **Foreign benchmarks** run through the identical instrument, role classes, and normalization. They are calibration anchors, not competitors. A benchmark that scores badly on a dimension is shown honestly, which is itself part of the non-partisanship proof.
 
+### 3.2 Validity thresholds — the instrument refuses to mislead (v0.2.0)
+
+The M1 dry-run (`docs/audits/2026-06-01-plumb-line-m1-dry-run.md`) proved that real data can break naive scoring in two ways, so v0.2.0 adds two floors. Below either, a leader is *on file, not yet rankable*: their cited raw metrics are stored and displayed, but no composite or rank is asserted.
+
+- **`minPeerSetSize` (3).** A dimension is normalized only when its applicable peer set holds at least three defined values. Min-max or rank normalization on one or two points is meaningless — a lone value rank-normalizes to 0, so a 100th-percentile governance score would display as 0. Below the floor the dimension is `insufficient-peer-set` and excluded from the composite, never scored as zero.
+- **`minCoverageToRank` (0.50).** A leader receives a published composite and rank only when at least half their applicable dimensions carry a valid normalized score. This stops a governing-centric index from emitting a misleadingly low number for an opposition figure whose applicable dimensions are mostly uncovered.
+
+This is why a two-person, two-class cohort produces zero ranked leaders: that is the correct answer, not a failure. The same logic guarantees the board never shows false precision before a comparable cohort exists.
+
 ---
 
 ## 4. The bias audit: prove it, then declare it
@@ -132,9 +141,9 @@ The audit report is signed alongside the rest of T4A's content and is verifiable
 
 ## 6. Milestones
 
-- **M0 (this document).** Methodology, config, validator, builder, and audit, all running in framework mode with no leaders scored. Published for scrutiny before anyone is graded.
-- **M1.** One Malaysian leader and one benchmark scored end-to-end with every metric cited; the audit run for real. Measures the true labour cost per leader.
-- **M2.** The static board: top-five Malaysian leaders plus two or three benchmarks, signed audit, badge, and the `/scoreboard` page.
+- **M0 — done.** Methodology, config, validator, builder, and audit, all running in framework mode with no leaders scored. Published for scrutiny before anyone is graded.
+- **M1 — done (v0.2.0).** One opposition frontbencher (Hamzah Zainudin) and one benchmark (Lee Hsien Loong) ingested end-to-end with every metric cited; the audit run for real. Outcome: both *on file, not yet rankable* — the correct result for a two-person, two-class cohort. The dry-run added the two validity floors (§3.2) and the A5 guilt-by-association rule, and measured the labour cost (verification-bound, ~half a day per subject, mostly producing honest N/As). Full record: `docs/audits/2026-06-01-plumb-line-m1-dry-run.md`.
+- **M2.** The static board: a full comparability class (≥5 within one role class) plus two or three benchmarks so peer sets clear `minPeerSetSize`; signed audit, badge, and the `/scoreboard` page. Opposition-appropriate dimensions and a ≥3-coder Layer B panel land here.
 - **M3.** Roster to ten, more benchmarks, per-leader detail pages, fact-graph linking to issues.
 - **M4.** Weekly cadence: dated snapshots, trend lines, and a documented manual-curation protocol. Any automation gathers candidate data only; every published figure still routes through a human citation.
 
