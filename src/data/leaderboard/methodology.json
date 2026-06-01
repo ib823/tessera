@@ -1,0 +1,311 @@
+{
+  "version": "0.1.0",
+  "status": "framework",
+  "name": "The Plumb Line",
+  "subtitle": "Malaysia Leader Accountability Index",
+  "tagline": "One yardstick. Every leader. Recorded facts only.",
+  "lastReviewed": "2026-06-01",
+  "docOfRecord": "docs/research/leader-accountability-index.md",
+  "adr": "docs/adr/0007-leader-accountability-index.md",
+  "scale": { "min": 0, "max": 100, "decimals": 0 },
+  "_comment_status": "status=framework means NO leader is scored yet (Milestone M0). The instrument, weights, and audit gates are published for scrutiny before any person is graded. status flips to 'live' only at M2 once the bias audit passes on the first scored cohort.",
+
+  "firewall": {
+    "rule": "Every input is a RECORDED PUBLIC FACT or a standard index computed on recorded public facts. No figure may originate from the Malaysia political simulation engine's predictions or any model inference.",
+    "reference": "docs/research/malaysia-political-simulation-engine.md §8.3",
+    "enforcedBy": "scripts/validate-leaderboard.mjs (every metric must carry a primary-source citation object) and scripts/build-leaderboard.mjs (no engine imports)."
+  },
+
+  "layers": {
+    "A": {
+      "id": "A",
+      "name": "Public Record",
+      "kind": "objective",
+      "weight": 0.50,
+      "summary": "Recorded public facts. No judgement. Every value traces to a primary source.",
+      "groundedIn": ["volden-wiseman-les", "thomson-pledge", "ipu-indicators", "worldbank-oversight"]
+    },
+    "B": {
+      "id": "B",
+      "name": "Editorial Panel",
+      "kind": "rubric",
+      "weight": 0.20,
+      "summary": "A fixed, published rubric for conduct records cannot capture. Anchored 0-4 ordinal scales. Every score carries a cited justification. Always shown WITH and WITHOUT this layer.",
+      "groundedIn": ["vdem-ordinal", "krippendorff-alpha", "thomson-pledge"]
+    },
+    "C": {
+      "id": "C",
+      "name": "Composite Political-Science",
+      "kind": "index",
+      "weight": 0.30,
+      "summary": "Established indices applied symmetrically, computed on public facts only.",
+      "groundedIn": ["shapley-shubik", "vdem-ordinal", "oecd-jrc-handbook"]
+    }
+  },
+
+  "dimensions": [
+    {
+      "id": "A1",
+      "layer": "A",
+      "name": "Legislative output",
+      "weightWithinLayer": 0.28,
+      "description": "Bills, motions, and parliamentary questions sponsored and advanced through the legislative process, weighted by significance and normalized to the applicable peer mean.",
+      "method": "Volden-Wiseman Legislative Effectiveness Score: fraction of items at each of five stages (introduced, committee, beyond committee, passed chamber, enacted), significance-weighted alpha=1 (commemorative) / beta=5 (substantive) / gamma=10 (substantive and significant), normalized so the applicable peer set averages 1.0, then mapped to 0-100.",
+      "sourceType": ["Hansard", "Order Paper", "Gazette"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "A2",
+      "layer": "A",
+      "name": "Presence and participation",
+      "weightWithinLayer": 0.18,
+      "description": "Attendance, division (vote) participation, and substantive debate contributions in the relevant chamber.",
+      "method": "IPU Indicators for Democratic Parliaments and the Mzalendo report-card model: attendance rate, share of divisions voted, count of substantive Hansard interventions, each normalized within the applicable peer set.",
+      "sourceType": ["Hansard", "Attendance register"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "A3",
+      "layer": "A",
+      "name": "Pledge fulfilment",
+      "weightWithinLayer": 0.24,
+      "description": "Manifesto and portfolio commitments coded fully / partially / not fulfilled, against the denominator the leader was actually positioned to deliver.",
+      "method": "Thomson et al. (2017) comparative pledge methodology. Each pledge independently coded full / partial / not. Government and opposition are scored against different applicable denominators (an opposition member cannot enact a government pledge); the asymmetry is explicit, not hidden. Score = weighted fulfilment rate within applicable denominator.",
+      "sourceType": ["Manifesto", "Gazette", "Ministry record"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "A4",
+      "layer": "A",
+      "name": "Fiscal stewardship",
+      "weightWithinLayer": 0.16,
+      "description": "Budget execution and audited cost performance for portfolios or governments under the leader's responsibility.",
+      "method": "World Bank and IPU oversight frameworks. Budget execution rate and audited cost-overrun findings under the leader's portfolio, normalized within the applicable peer set. Applies only to those with executive budget authority.",
+      "sourceType": ["Auditor-General Annual Report", "Treasury / budget document"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "A5",
+      "layer": "A",
+      "name": "Integrity and transparency record",
+      "weightWithinLayer": 0.14,
+      "description": "Asset-declaration compliance, register-of-interests completeness, and the factual STATUS of any court or anti-corruption matters of public record.",
+      "method": "Parliamentary codes-of-conduct standards. Records the factual status only (declared / not declared; charged / convicted / acquitted / discharged). NEVER an editorial verdict on guilt. An unresolved or dropped matter is recorded as such, not as a finding.",
+      "sourceType": ["Gazette", "Court cause-list", "Official asset declaration"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true,
+      "guardrail": "3R-adjacent and integrity claims require two independent primary sources (CLAUDE.md Accuracy Standard). A claim that cannot meet this bar is dropped, not softened."
+    },
+
+    {
+      "id": "B1",
+      "layer": "B",
+      "name": "Crisis handling",
+      "weightWithinLayer": 0.22,
+      "description": "Demonstrated handling of a discrete public crisis within the leader's remit.",
+      "method": "Anchored 0-4 ordinal scale with published descriptors. Each score cites the specific dated event it rests on.",
+      "ordinalAnchors": {
+        "0": "Worsened the crisis or evaded responsibility on the public record.",
+        "2": "Adequate, documented response with mixed outcomes.",
+        "4": "Documented, decisive response with measurable resolution."
+      },
+      "sourceType": ["Hansard", "Official statement", "Auditor-General Annual Report", "Named outlet citing a primary source"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "B2",
+      "layer": "B",
+      "name": "Reform delivered vs promised",
+      "weightWithinLayer": 0.24,
+      "description": "Whether structural reforms the leader championed were enacted, diluted, or abandoned.",
+      "method": "Anchored 0-4 ordinal scale. Distinct from A3 pledge fulfilment: this scores the SUBSTANCE and durability of a reform, not the binary of a pledge. Every score cites the gazetted instrument or its absence.",
+      "ordinalAnchors": {
+        "0": "Championed reform then abandoned or reversed it.",
+        "2": "Partial reform enacted with material dilution.",
+        "4": "Reform gazetted and operative as promised."
+      },
+      "sourceType": ["Gazette", "Hansard", "Official policy document"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "B3",
+      "layer": "B",
+      "name": "Consensus and institution-building",
+      "weightWithinLayer": 0.18,
+      "description": "Documented work to build cross-bench, federal, or institutional consensus rather than zero-sum capture.",
+      "method": "Anchored 0-4 ordinal scale. Scores documented process behaviour (joint committees formed, bipartisan instruments co-signed), never the leader's political alignment.",
+      "ordinalAnchors": {
+        "0": "Documented institutional capture or norm erosion.",
+        "2": "Worked within institutions without strengthening them.",
+        "4": "Documented strengthening of an institution or cross-bench instrument."
+      },
+      "sourceType": ["Hansard", "Official record", "Gazette"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "B4",
+      "layer": "B",
+      "name": "Candor on reversals",
+      "weightWithinLayer": 0.18,
+      "description": "Honesty when reversing a stated position: acknowledged and explained, or denied and obscured.",
+      "method": "Anchored 0-4 ordinal scale. Scores transparency of the reversal, not the reversal itself (changing course on evidence is legitimate).",
+      "ordinalAnchors": {
+        "0": "Reversed a position while denying the reversal on the record.",
+        "2": "Reversed without explanation.",
+        "4": "Reversed and explained the reasons on the public record."
+      },
+      "sourceType": ["Hansard", "Official statement"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "B5",
+      "layer": "B",
+      "name": "Process discipline (restraint from 3R-baiting)",
+      "weightWithinLayer": 0.18,
+      "description": "Restraint from inflaming Race, Religion, or Royalty for political advantage on the public record.",
+      "method": "Anchored 0-4 ordinal scale measuring PROCESS conduct, never belief or identity. Scores documented instances of de-escalation versus documented incitement findings. This is the only place 3R enters the instrument, and it enters as a discipline metric applied identically to all.",
+      "ordinalAnchors": {
+        "0": "Documented finding of inflaming 3R for advantage.",
+        "2": "No documented instances either way.",
+        "4": "Documented, dated act of de-escalating a 3R flashpoint."
+      },
+      "sourceType": ["Hansard", "Official statement", "Court or regulator finding"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true,
+      "guardrail": "Scores the act, never the actor's community or belief. A negative score requires a documented regulator/court finding, not commentary."
+    },
+
+    {
+      "id": "C1",
+      "layer": "C",
+      "name": "Pivotality",
+      "weightWithinLayer": 0.40,
+      "description": "Structural voting power in the leader's coalition or chamber.",
+      "method": "Shapley-Shubik power index computed from ACTUAL seat counts (public record). Already used in dossier D001. Measures structural weight, not popularity.",
+      "sourceType": ["Election Commission result", "Official seat allocation"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true,
+      "neutralityNote": "Pivotality is descriptive, not normative. High structural power is neither good nor bad; it contextualizes how much the other dimensions matter."
+    },
+    {
+      "id": "C2",
+      "layer": "C",
+      "name": "Governance indicators (domain-scoped)",
+      "weightWithinLayer": 0.32,
+      "description": "V-Dem-style governance indicators, scoped strictly to the components the leader's office actually touches.",
+      "method": "Only the V-Dem-style indicators within the leader's actual remit are scored (e.g. an electoral-affairs portfolio is scored on clean-election indicators; a justice portfolio on judicial-constraint indicators). Out-of-remit indicators are N/A, never imputed.",
+      "sourceType": ["Official regulator publication", "Gazette", "Peer-reviewed index"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "sub-national-executive"],
+      "higherIsBetter": true
+    },
+    {
+      "id": "C3",
+      "layer": "C",
+      "name": "Legislative-network centrality",
+      "weightWithinLayer": 0.28,
+      "description": "Co-sponsorship and coalition-voting centrality in the public division record.",
+      "method": "Network centrality computed from public co-sponsorship and division-voting records. Measures collaborative reach, normalized within the applicable peer set.",
+      "sourceType": ["Hansard", "Division record"],
+      "appliesToRoles": ["head-of-government", "cabinet-minister", "opposition-frontbench", "backbencher", "sub-national-executive"],
+      "higherIsBetter": true
+    }
+  ],
+
+  "roleClasses": [
+    { "id": "head-of-government", "name": "Head of government", "note": "PM or equivalent." },
+    { "id": "cabinet-minister", "name": "Cabinet minister", "note": "Federal portfolio holder." },
+    { "id": "opposition-frontbench", "name": "Opposition frontbencher", "note": "Shadow or opposition leadership." },
+    { "id": "backbencher", "name": "Backbencher", "note": "MP without executive or frontbench office." },
+    { "id": "sub-national-executive", "name": "Sub-national executive", "note": "State Premier / Menteri Besar / Chief Minister." }
+  ],
+
+  "comparability": {
+    "rule": "Each leader is scored only on dimensions applicable to their role(s) over the scored period, normalized WITHIN their applicable peer set, then mapped to the common 0-100 scale. Readers compare like-with-like via the role class; the headline index stays cross-comparable via normalization.",
+    "periodBasedScoring": "A leader whose role changes mid-period is scored per-period under each applicable class (e.g. Economy Minister period, then backbencher period), then time-weighted.",
+    "benchmarks": "Foreign benchmark leaders run through the identical instrument, role classes, and normalization. They are labelled calibration anchors, not competitors. A benchmark scoring badly on a dimension is shown honestly."
+  },
+
+  "normalization": {
+    "method": "min-max",
+    "fallback": "rank-based when peer set < 5",
+    "pool": "applicable-peer-set",
+    "missingData": "exclude-and-shrink-denominator",
+    "missingDataRationale": "A metric with no public record is N/A. Imputing 0 or the mean would smuggle in a hidden judgement. Per-leader coverage % is published.",
+    "reference": "oecd-jrc-handbook"
+  },
+
+  "aggregation": {
+    "withinLayer": "weighted-mean",
+    "crossLayer": "weakest-link-half",
+    "crossLayerParam": 0.5,
+    "crossLayerRationale": "Cross-layer score is the mean of (a) the weighted arithmetic mean of layer scores and (b) their weighted geometric mean. This halfway form follows the V-Dem electoral-democracy aggregation: it allows partial compensation between layers but punishes a catastrophic failure in any one, so strong legislative output cannot fully buy back an integrity collapse.",
+    "reference": ["vdem-ordinal", "oecd-jrc-handbook"]
+  },
+
+  "audit": {
+    "summary": "Five gates, all standard composite-indicator quality assurance. The Bias-Audited badge renders only when all pass. The audit report is signed and reader-verifiable.",
+    "gates": [
+      {
+        "id": "symmetry",
+        "name": "Symmetry",
+        "test": "Identical metric set, weights, and normalization config applied to all subjects. Zero per-leader overrides.",
+        "fails": "Any per-leader special-casing detected."
+      },
+      {
+        "id": "source-coverage",
+        "name": "Source coverage",
+        "test": "Every non-N/A metric value carries a primary-source citation object.",
+        "fails": "Any uncited number."
+      },
+      {
+        "id": "partisan-signal",
+        "name": "Partisan-signal test",
+        "test": "Whether Layer B adds party/coalition-correlated variance beyond Layer A. Computed as the correlation between coalition affiliation and the (Layer B minus Layer A) residual.",
+        "threshold": 0.30,
+        "fails": "Residual-coalition correlation exceeds the threshold. The panel is leaking bias."
+      },
+      {
+        "id": "rank-robustness",
+        "name": "Rank robustness",
+        "test": "Saisana/Saltelli sensitivity analysis: perturb weights across reasonable ranges and record rank stability. Unstable ranks are published as uncertainty INTERVALS, never false-precise integers.",
+        "perturbation": 0.10,
+        "fails": "Never fails the build; converts unstable point ranks into published rank ranges."
+      },
+      {
+        "id": "intercoder-reliability",
+        "name": "Inter-coder reliability",
+        "test": "Krippendorff's alpha on Layer B ordinal scores across coders.",
+        "threshold": 0.667,
+        "fails": "A Layer B criterion below the alpha threshold is demoted to 'insufficient agreement' and excluded, not averaged."
+      }
+    ]
+  },
+
+  "exclusions": [
+    { "id": "3r", "name": "Race, Religion, Royalty", "rationale": "Excluded by design. The only adjacency is B5, which scores PROCESS restraint, never belief or identity." },
+    { "id": "popularity", "name": "Popularity, polls, social-media following, charisma", "rationale": "Popularity is not accountability. Excluded entirely." },
+    { "id": "ideology", "name": "Policy direction or ideology", "rationale": "We never reward or punish a political position. We score only delivery against the leader's OWN stated commitments and the integrity of conduct. This is the core non-partisanship guarantee." },
+    { "id": "unverified", "name": "Rumor, unproven allegation, anonymous sourcing", "rationale": "Fails the Accuracy Standard. Dropped, not softened." },
+    { "id": "private-life", "name": "Private life", "rationale": "Out of scope. Only public conduct in public office is measured." }
+  ],
+
+  "citations": [
+    { "id": "volden-wiseman-les", "title": "Legislative Effectiveness in the United States Congress", "authors": "Volden, C. & Wiseman, A.", "year": 2014, "publisher": "Cambridge University Press", "url": "https://thelawmakers.org/methodology", "usedFor": "A1 legislative output: 15-metric, 5-stage, significance-weighted effectiveness score normalized to peer mean." },
+    { "id": "thomson-pledge", "title": "The Fulfillment of Parties' Election Pledges: A Comparative Study on the Impact of Power Sharing", "authors": "Thomson, R. et al.", "year": 2017, "publisher": "American Journal of Political Science", "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12313", "usedFor": "A3 pledge fulfilment: full/partial/not coding, government-vs-opposition denominator asymmetry, inter-coder agreement standard." },
+    { "id": "vdem-ordinal", "title": "Measuring Electoral Democracy with V-Dem Data: Introducing a New Polyarchy Index", "authors": "Teorell, J., Coppedge, M., Skaaning, S-E. & Lindberg, S.", "year": 2016, "publisher": "V-Dem Institute", "url": "https://v-dem.net/media/publications/v-dem_working_paper_2016_25_edited.pdf", "usedFor": "B anchored ordinal scales; cross-layer weakest-link aggregation form; C2 domain-scoped governance indicators." },
+    { "id": "oecd-jrc-handbook", "title": "Handbook on Constructing Composite Indicators: Methodology and User Guide", "authors": "OECD & JRC (Nardo, Saisana, Saltelli, Tarantola et al.)", "year": 2008, "publisher": "OECD Publishing", "url": "https://www.oecd.org/en/publications/handbook-on-constructing-composite-indicators-methodology-and-user-guide_9789264043466-en.html", "usedFor": "Normalization, weighting, aggregation, and mandatory uncertainty/sensitivity analysis." },
+    { "id": "saisana-sensitivity", "title": "Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators", "authors": "Saisana, M., Saltelli, A. & Tarantola, S.", "year": 2005, "publisher": "Journal of the Royal Statistical Society Series A", "url": "https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-985X.2005.00350.x", "usedFor": "Audit gate 4: rank robustness via weight perturbation." },
+    { "id": "krippendorff-alpha", "title": "Content Analysis: An Introduction to Its Methodology (Krippendorff's alpha)", "authors": "Krippendorff, K.", "year": 2018, "publisher": "SAGE", "url": "https://en.wikipedia.org/wiki/Krippendorff's_alpha", "usedFor": "Audit gate 5: inter-coder reliability on Layer B ordinal scores." },
+    { "id": "shapley-shubik", "title": "A Method for Evaluating the Distribution of Power in a Committee System", "authors": "Shapley, L. & Shubik, M.", "year": 1954, "publisher": "American Political Science Review", "url": "https://www.cambridge.org/core/journals/american-political-science-review", "usedFor": "C1 pivotality, computed on actual seat counts. Already applied in dossier D001." },
+    { "id": "ipu-indicators", "title": "Indicators for Democratic Parliaments", "authors": "Inter-Parliamentary Union", "year": 2022, "publisher": "IPU", "url": "https://www.ipu.org/impact/democracy-and-strong-parliaments/ipu-standards/indicators-democratic-parliaments", "usedFor": "A2 presence and participation framework." },
+    { "id": "worldbank-oversight", "title": "Benchmarking and Self-Assessment for Parliaments (budget and oversight)", "authors": "World Bank", "year": 2015, "publisher": "World Bank", "url": "https://documents1.worldbank.org/curated/en/595271468178774510/pdf/104283-PUB-Box394877B-PUBLIC.pdf", "usedFor": "A4 fiscal stewardship and oversight metrics." }
+  ]
+}
