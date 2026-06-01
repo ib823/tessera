@@ -18,12 +18,15 @@
  * Run after build-leaderboard + audit. Override out path with argv[2].
  */
 import sharp from 'sharp';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = process.argv[2] || join(ROOT, 'public/og/plumb-line-poster.png');
+// Single-line T4A portraits for the world-leader anchors live here (one per slug,
+// square navy-on-white line art). Optional: missing → generic silhouette fallback.
+const ANCHOR_ART = join(ROOT, 'public/og/anchors');
 const board = JSON.parse(readFileSync(join(ROOT, 'public/leaderboard.json'), 'utf8'));
 const PREVIEW = process.env.PLUMB_PREVIEW === '1';
 
@@ -88,6 +91,24 @@ function avatar(cx, cy, r, fill, bg) {
     `<circle cx="${cx}" cy="${headCy}" r="${headR}" fill="${fill}"/>` +
     `<ellipse cx="${cx}" cy="${cy + r * 0.92}" rx="${r * 0.74}" ry="${r * 0.82}" fill="${fill}"/>` +
     `</g>` +
+    `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${fill}" stroke-width="2.5" opacity="0.55"/>`
+  );
+}
+
+// Anchor portrait medallion: a square T4A single-line portrait clipped into the
+// circle when one exists for the slug, otherwise the generic silhouette.
+function portrait(slug, cx, cy, r, fill, bg) {
+  const candidates = ['png', 'jpg', 'jpeg', 'webp'].map((ext) => join(ANCHOR_ART, `${slug}-line.${ext}`));
+  const file = candidates.find((f) => existsSync(f));
+  if (!file) return avatar(cx, cy, r, fill, bg);
+  const ext = file.split('.').pop().toLowerCase();
+  const mime = ext === 'jpg' ? 'jpeg' : ext;
+  const data = readFileSync(file).toString('base64');
+  const id = `pt${avatarId++}`;
+  return (
+    `<clipPath id="${id}"><circle cx="${cx}" cy="${cy}" r="${r}"/></clipPath>` +
+    `<image x="${cx - r}" y="${cy - r}" width="${r * 2}" height="${r * 2}" preserveAspectRatio="xMidYMid slice" ` +
+    `clip-path="url(#${id})" href="data:image/${mime};base64,${data}"/>` +
     `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${fill}" stroke-width="2.5" opacity="0.55"/>`
   );
 }
@@ -198,8 +219,8 @@ benches.forEach((e, i) => {
   const x = MARGIN + i * (bw + 14);
   const cx = x + bw / 2;
   body += `<rect x="${x}" y="${y}" width="${bw}" height="${bcH}" rx="12" fill="${BENCH.tint}"/>`;
-  // silhouette medallion
-  body += avatar(cx, y + 44, 30, BENCH.solid, '#fff');
+  // T4A single-line portrait medallion (silhouette fallback until art exists)
+  body += portrait(e.slug, cx, y + 44, 32, BENCH.solid, '#fff');
   // name (centered, may wrap to a short single line)
   body += T(cx, y + 98, shortName(e.name), { ff: SANS, fs: 15, fw: 700, fill: ink, an: 'middle', style: 'italic' });
   // country code + score
