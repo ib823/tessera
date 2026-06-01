@@ -1,0 +1,33 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../layouts/Base.astro';
+import UtilityHeader from '../components/UtilityHeader.astro';
+import PlumbLineBoard from '../components/PlumbLineBoard.svelte';
+
+// Built by scripts/build-leaderboard.mjs (runs before astro build). Read at build
+// time from the repo root (process.cwd()), which is reliable under Astro's bundler.
+let board: any = null;
+try {
+  board = JSON.parse(readFileSync(join(process.cwd(), 'public/leaderboard.json'), 'utf8'));
+} catch {
+  board = null;
+}
+---
+<Base title="The Plumb Line — preview (unpublished)" noindex={true}>
+  <UtilityHeader />
+  <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">
+    <p style="max-width:1100px;margin:0 auto;padding:8px 16px;font-family:var(--font-body);font-size:var(--text-xs);color:var(--score-warning);line-height:1.5;">
+      <strong>Internal preview — unpublished.</strong> The accountability scores below are provisional single-coder drafts; no leader is ranked and the bias-audited badge is withheld. This page is not indexed and not linked from the site. Not an electoral endorsement.
+    </p>
+  </div>
+  <main style="padding-top:8px;">
+    {board
+      ? <PlumbLineBoard board={board} client:load />
+      : (
+        <p style="max-width:640px;margin:40px auto;padding:0 18px;font-family:var(--font-body);color:var(--text-secondary);">
+          Leaderboard data not found. Run <code>npm run build-leaderboard</code> to generate <code>public/leaderboard.json</code>, then reload.
+        </p>
+      )}
+  </main>
+</Base>

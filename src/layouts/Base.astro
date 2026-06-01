@@ -4,9 +4,10 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
-const { title = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.' } = Astro.props;
+const { title = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.', noindex = false } = Astro.props;
 const siteUrl = Astro.site?.origin || 'https://thefourthangle.pages.dev';
 const canonicalPath = Astro.url.pathname
   .replace(/index\.html$/, '')
@@ -27,6 +28,7 @@ const ogImage = `${siteUrl}/og-image.png?v=${encodeURIComponent(buildId)}`;
   <meta name="theme-color" content="#1A1A1A" media="(prefers-color-scheme: dark)" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
   {/*
     Phase 4: preload one critical weight per family. Both files are latin
     subsets (~25 KB and ~31 KB) sitting well under the 60 KB brotli budget
