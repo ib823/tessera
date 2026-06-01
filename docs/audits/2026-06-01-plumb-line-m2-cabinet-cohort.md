@@ -172,3 +172,25 @@ Completed the comparability class: all **31 full ministers** of the Anwar unity 
 Government blocs span just 2.25–2.65 and the opposition sits at the 2.00 neutral baseline — the variation is narrow and tracks *documented delivery*, not party. A governing-vs-opposition or BN-vs-DAP tilt would show here; none does.
 
 **State after step 7:** 167/167 recorded metrics carry a tier 1–3 citation; both data-dependent audit gates **Pending**; badge withheld; **all 33 on file, not ranked** (no conduct track clears the coverage floor on a single coder). The instrument now has a complete, fairly-built, fully-cited cabinet class awaiting the one remaining step to a published rank: ≥2 further independent coders on the Layer B panel. `published: false` throughout.
+
+---
+
+## Step 8 (2026-06-01): regional benchmarks added — 35 subjects
+
+Added two ASEAN-peer reference heads of government beside Lee Hsien Loong, so the benchmark set brackets the scale rather than resting on a single high anchor: **Joko Widodo** (Indonesia, 2014–2024) and **Ferdinand Marcos Jr** (Philippines, 2022–). Each carries A5 + a provisional first-coder Layer B; C1/C2 are left unrecorded (jurisdiction-specific structural dimensions not computed without each chamber's seat math). `benchmark: true`, not part of the ranked Malaysian class.
+
+The benchmarks now span the range honestly:
+
+| Benchmark | A5 | Layer B (provisional) |
+|---|---|---|
+| Lee Hsien Loong (SG) | none-on-record | B1 3, B2 4, B3 3, B4 3, B5 4 |
+| Joko Widodo (ID) | none-on-record | B1 2, B2 3, **B3 1**, B4 2 |
+| Ferdinand Marcos Jr (PH) | **convicted** | B1 2, B2 3, B3 2, B4 2 |
+
+Two firsts for the instrument, both well-sourced and intended:
+- **First sub-2 Layer B score** — Jokowi B3 = 1, on the uncontested, tier-1-documented institutional erosion (the 2019 KPK-law gutting; the 2023 Constitutional Court manoeuvre for which the Chief Justice was officially found guilty of an ethics violation). The instrument can register a documented negative, not only cluster at 2–3.
+- **First `convicted` A5** — Marcos Jr, on his final 1995 tax-non-filing conviction (a fine, COMELEC-ruled non-disqualifying), recorded as factual status with the nature stated.
+
+**Methodology observation worth flagging:** the A5 scalar is severity-blind — `convicted` is 0.0 regardless of offence, so Marcos's minor tax-filing conviction (0.0) scores *below* Zahid's 47-charge corruption DNAA (`discharged`, 0.85). That ordering is internally consistent (a final conviction is a heavier adjudicated status than dropped-without-conviction charges), but it can mislead on apparent severity. A future refinement could weight `convicted` by offence class; for now the justification text carries the nuance the scalar cannot.
+
+**State after step 8:** 35 subjects (32 entries + 3 benchmarks); 177/177 recorded metrics carry a tier 1–3 citation; both data-dependent gates Pending; badge withheld; all 35 on file, not ranked. `published: false` throughout.
