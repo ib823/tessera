@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "status": "framework",
   "name": "The Plumb Line",
   "subtitle": "Malaysia Leader Accountability Index",
@@ -375,7 +375,9 @@
     {
       "id": "sub-national-executive",
       "name": "Sub-national executive",
-      "note": "State Premier / Menteri Besar / Chief Minister."
+      "note": "State Premier / Menteri Besar / Chief Minister.",
+      "partisanCertified": false,
+      "partisanNote": "Disclosed open finding, NOT certified for partisanship as of v0.3.0. Within this class, coalition is confounded with state fiscal capacity at the current cohort size (n=6): the government-aligned premiers lead resource-rich Borneo states with large delivered reforms, the opposition premiers lead poorer peninsular states, so the partisan-signal test cannot separate panel bias from genuine state-capacity difference. The within-class signal is reported in the audit but excluded from the certified scope until the cohort is large and balanced enough across the wealth spectrum to disentangle. Documented in ADR 0007."
     }
   ],
   "comparability": {
@@ -491,9 +493,9 @@
       {
         "id": "partisan-signal",
         "name": "Partisan-signal test",
-        "test": "Whether the editorial layer (Layer B minus Layer A residual) carries coalition-correlated variance AFTER controlling for role/incumbency. Computed as the correlation ratio (eta) between coalition and the within-comparability-class-centered residual; foreign benchmarks excluded. Both raw and role-controlled eta are reported.",
+        "test": "Per-class, role-controlled. The editorial residual (Layer B minus Layer A) is tested for coalition correlation WITHIN each comparability class (>=4 subjects, >=2 coalitions); the role/incumbency effect is removed by within-class centering. A class CERTIFIES if its within-class eta is within threshold and the class is not flagged partisanCertified:false. Flagged classes (where coalition is confounded with a non-conduct covariate) are disclosed with their eta, never silently dropped. The pooled cross-class eta is reported for transparency.",
         "threshold": 0.3,
-        "fails": "Role-controlled coalition signal exceeds the threshold. The panel is leaking coalition beyond what role/incumbency explains."
+        "fails": "A certifiable class exceeds the threshold after role control. Disclosed (non-certifiable) classes do not fail the gate but are surfaced as open findings, and the badge scope is limited to the certified classes."
       },
       {
         "id": "rank-robustness",

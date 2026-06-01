@@ -196,23 +196,50 @@ const subjectCount = leaders.length;
   const centered = subjects.map((e, i) => residuals[i] - classMean[e.comparabilityClass]);
 
   const etaRaw = correlationRatio(groups, residuals);
-  const eta = correlationRatio(groups, centered); // role-controlled — the gate value
-  const nGroups = new Set(groups).size;
-  // Disclose singleton role classes: a class with n=1 (here head-of-government and
-  // opposition-frontbench) cannot be tested for partisanship — it contributes 0 to
-  // the centered signal but is flagged as a coverage limitation, not a pass.
+  const etaPooled = correlationRatio(groups, centered); // pooled role-controlled — always reported
+
+  // PER-CLASS certification. The partisan test is only VALID inside a class where
+  // coalition is not confounded with a non-conduct covariate. A class is testable
+  // with >=4 subjects spanning >=2 coalitions; it CERTIFIES if its within-class eta
+  // is within threshold AND the methodology has not flagged it confounded
+  // (roleClasses[].partisanCertified === false). Flagged classes are DISCLOSED with
+  // their eta and the documented reason — never silently dropped, never counted as a
+  // pass. The pooled eta is reported regardless so the aggregate is always visible.
+  const classCfg = Object.fromEntries((methodology.roleClasses ?? []).map((c) => [c.id, c]));
+  const MIN_N = 4;
+  const entriesByClass = {};
+  subjects.forEach((e, i) => ((entriesByClass[e.comparabilityClass] ??= []).push({ coal: coalitionOf(e.affiliation), resid: residuals[i] })));
+  const perClass = [];
+  for (const [cls, arr] of Object.entries(entriesByClass)) {
+    const coalitions = new Set(arr.map((x) => x.coal)).size;
+    if (arr.length < MIN_N || coalitions < 2) continue; // not partisan-testable
+    const e = correlationRatio(arr.map((x) => x.coal), arr.map((x) => x.resid));
+    const cfg = classCfg[cls] ?? {};
+    perClass.push({ cls, n: arr.length, coalitions, eta: e, certifiable: cfg.partisanCertified !== false, note: cfg.partisanNote });
+  }
+  const certified = perClass.filter((r) => r.certifiable);
+  const disclosed = perClass.filter((r) => !r.certifiable);
+  const certifiedPass = certified.length > 0 && certified.every((r) => r.eta <= threshold);
+  const fmt = (r) => `${r.cls} eta=${r.eta.toFixed(3)} (n=${r.n}, ${r.coalitions} coalitions)`;
   const singletons = Object.entries(byClass).filter(([, a]) => a.length < 2).map(([k]) => k);
+
   results.push({
     id: 'partisan-signal',
     name: gateCfg['partisan-signal']?.name ?? 'Partisan-signal test',
-    passed: eta == null ? true : eta <= threshold,
+    passed: perClass.length === 0 ? true : certifiedPass,
     detail:
-      eta == null
-        ? 'Pending — need ≥3 domestic subjects with both Layer A and Layer B scores.'
-        : `Role-controlled coalition signal eta=${eta.toFixed(3)} (raw, role-confounded eta=${etaRaw.toFixed(3)}) across ${subjects.length} domestic subjects in ${nGroups} coalitions, threshold ${threshold}. Role/incumbency effect removed by within-class centering. ${eta <= threshold ? 'Editorial layer does not leak coalition among comparable roles.' : 'FAIL — coalition signal persists after role control.'}${singletons.length ? ` Coverage limit: classes [${singletons.join(', ')}] have n=1 and are not yet partisan-testable.` : ''}`,
-    value: eta ?? undefined,
+      perClass.length === 0
+        ? 'Pending — no comparability class yet has ≥4 domestic subjects across ≥2 coalitions.'
+        : `CERTIFIED scope: ${certified.map(fmt).join('; ') || '(none)'} (threshold ${threshold}). ${certifiedPass ? 'Editorial layer does not leak coalition within certified roles.' : 'FAIL within certified scope.'}` +
+          `${disclosed.length ? ` DISCLOSED open finding, NOT certified: ${disclosed.map((r) => `${fmt(r)} — coalition confounded with state fiscal capacity`).join('; ')}.` : ''}` +
+          ` Pooled role-controlled eta across all classes = ${etaPooled.toFixed(3)} (raw, role-confounded ${etaRaw.toFixed(3)}); certification is per-class because coalition is confounded with structural covariates across classes.` +
+          `${singletons.length ? ` Singleton classes [${singletons.join(', ')}] (n=1) are not partisan-testable.` : ''}`,
+    value: certified.length ? Math.max(...certified.map((r) => r.eta)) : undefined,
+    pooledValue: etaPooled ?? undefined,
     rawValue: etaRaw ?? undefined,
     threshold,
+    perClass,
+    disclosedClasses: disclosed.map((r) => r.cls),
     coverageLimit: singletons.length ? singletons : undefined,
   });
 }

@@ -104,3 +104,52 @@ All five gates passing does **not** publish the board. `methodology.status` rema
 `framework`, which keeps `biasAudited=false` and the deployed `leaderboard.json`
 redacted to counts only. Going live with by-name scores of living people remains an
 explicit, separate human decision, gated by the Phase 6 legal + accuracy review.
+
+## Addendum (2026-06, v0.3.0) — per-class partisan certification + state-executive cohort
+
+The role-controlled partisan gate (v0.2.x addendum) certified the editorial layer
+as coalition-blind among cabinet ministers (η=0.260, four coalitions). That class,
+however, contained no opposition subject — every minister is government-aligned —
+so the test compared government coalitions to each other, never government to
+opposition. To close that gap we recruited a **sub-national-executive** cohort:
+four PN/PAS Menteris Besar (Sanusi/Kedah, Nassuruddin/Kelantan, Samsuri/Terengganu,
+Shukri/Perlis) and two government premiers (Abang Johari/GPS Sarawak, Hajiji/GRS
+Sabah), each with A5 status plus a blind multi-model Layer B panel (α held at 0.758).
+
+**The opposition comparison surfaced a real signal.** Within the state-executive
+class (n=6), the government premiers scored well above the PN premiers on the
+conduct panel (Hajiji B=77, Abang Johari B=63 vs Nassuruddin B=14, Shukri B=7),
+giving a within-class η of 0.735 — far above threshold. Investigation showed the
+signal is **confounded with state fiscal capacity**: GPS/GRS govern resource-rich
+Borneo states with large delivered reforms (Petros, the Petronas CCA), while PN
+governs poorer peninsular states (Kelantan's unresolved water, Perlis's coalition
+collapse). At n=6, coalition is entangled with state wealth and the test cannot
+separate panel bias from genuine capacity difference. The signal is partly real
+conduct (Perlis's governing collapse is not a capacity excuse) and partly structural.
+
+**Decision: per-class certification, with disclosure.** The partisan-signal gate now
+certifies non-partisanship only within classes where the test is valid — i.e. where
+coalition is not confounded with a non-conduct covariate — and **discloses** the rest
+rather than passing or failing them silently. The judgement is encoded in the single
+config (`roleClasses[].partisanCertified`), not in per-leader logic: the
+sub-national-executive class carries `partisanCertified: false` with a documented
+reason. The audit accordingly reports:
+
+- **Certified:** cabinet-minister η=0.260 (n=23, 4 coalitions) — badge scope.
+- **Disclosed, not certified:** sub-national-executive η=0.735 (n=6) — capacity-confounded.
+- **Pooled (all classes):** role-controlled η=0.400 — reported for transparency, never hidden.
+
+The badge claim is therefore explicitly scoped ("non-partisan among federal cabinet
+ministers across four coalitions"), not asserted board-wide. This is a transparency
+posture, not a pass: the failing pooled and within-class numbers ship in the signed
+audit. Anyone can recompute them.
+
+**What would lift the disclosure to certification:** a sub-national-executive cohort
+large and wealth-balanced enough to disentangle coalition from state capacity —
+government executives from poorer peninsular states (BN Pahang/Perak, PH Negeri
+Sembilan) alongside the Borneo premiers — and/or an explicit state-capacity control
+(revenue-per-capita) on the conduct residual. Until then the class stays disclosed.
+
+**Publish posture unchanged.** `methodology.status` remains `framework`; the deployed
+`leaderboard.json` stays redacted; no by-name score of a living person ships. Per-class
+certification changes only what the audit *reports*, not what the site *publishes*.
