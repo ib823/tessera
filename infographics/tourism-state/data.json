@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "How dependent is each Malaysian state on tourism?",
+    "subtitle": "Domestic tourism receipts as % of state GDP",
+    "metric": "Domestic tourism receipts (RM) divided by nominal state GDP (RM), 2024",
+    "year": 2024,
+    "status": "DRAFT — figures pending verification against DOSM primary sources",
+    "caveats": [
+      "DOMESTIC tourism only. Malaysia does not publish international tourism receipts by state; international arrivals are counted by entry point, not destination state. This is therefore NOT comparable to the country-level 'international tourism receipts as % of GDP' chart.",
+      "DERIVED ratio. DOSM does not publish this percentage directly; it is computed here as domestic tourism receipts divided by nominal state GDP, both for 2024.",
+      "Numerator (receipts) and denominator (GDP) come from two different DOSM products; treat the ratio as indicative, not an official statistic."
+    ],
+    "sources": [
+      {
+        "name": "Domestic Tourism Survey (States) 2024",
+        "publisher": "Department of Statistics Malaysia (DOSM)",
+        "field": "receipts_rm_b",
+        "url": "https://www.dosm.gov.my/portal-main/release-content/domestic-tourism-survey-states-2024",
+        "license": "CC-BY 4.0",
+        "accessed": "2026-06-01"
+      },
+      {
+        "name": "Gross Domestic Product (GDP) by State, 2024 (released 1 July 2025)",
+        "publisher": "Department of Statistics Malaysia (DOSM)",
+        "field": "gdp_rm_b",
+        "note": "Nominal / current prices",
+        "url": "https://www.dosm.gov.my/portal-main/release-content/gross-domestic-product-gdp-by-state-2024",
+        "license": "CC-BY 4.0",
+        "accessed": "2026-06-01"
+      }
+    ]
+  },
+  "bands": [
+    { "max": 1,    "label": "< 1%",    "color": "#3a3a7a" },
+    { "max": 2,    "label": "1 - 2%",  "color": "#2f6fb0" },
+    { "max": 5,    "label": "2 - 5%",  "color": "#2e9e7e" },
+    { "max": 10,   "label": "5 - 10%", "color": "#f2c043" },
+    { "max": 20,   "label": "10 - 20%","color": "#ef8a3c" },
+    { "max": 1000, "label": "> 20%",   "color": "#e0483f" }
+  ],
+  "states": [
+    { "state": "Perlis",          "code": "PLS", "region": "peninsular", "grid": { "r": 0, "c": 1 }, "gdp_rm_b": null,  "receipts_rm_b": null, "gdp_confidence": "pending", "receipts_confidence": "pending" },
+    { "state": "Penang",          "code": "PNG", "region": "peninsular", "grid": { "r": 1, "c": 0 }, "gdp_rm_b": 121.5, "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Kedah",           "code": "KDH", "region": "peninsular", "grid": { "r": 1, "c": 1 }, "gdp_rm_b": 54.0,  "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Kelantan",        "code": "KTN", "region": "peninsular", "grid": { "r": 1, "c": 2 }, "gdp_rm_b": 28.7,  "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Perak",           "code": "PRK", "region": "peninsular", "grid": { "r": 2, "c": 0 }, "gdp_rm_b": 86.2,  "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Pahang",          "code": "PHG", "region": "peninsular", "grid": { "r": 2, "c": 2 }, "gdp_rm_b": 68.7,  "receipts_rm_b": 8.7,  "gdp_confidence": "search-unverified", "receipts_confidence": "search-unverified" },
+    { "state": "Terengganu",      "code": "TRG", "region": "peninsular", "grid": { "r": 2, "c": 3 }, "gdp_rm_b": 39.9,  "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Selangor",        "code": "SGR", "region": "peninsular", "grid": { "r": 3, "c": 0 }, "gdp_rm_b": null,  "receipts_rm_b": 14.2, "gdp_confidence": "pending", "receipts_confidence": "search-unverified" },
+    { "state": "Kuala Lumpur",    "code": "KUL", "region": "peninsular", "grid": { "r": 3, "c": 1 }, "gdp_rm_b": 265.8, "receipts_rm_b": 14.1, "gdp_confidence": "search-unverified", "receipts_confidence": "search-unverified", "ft": true },
+    { "state": "Negeri Sembilan", "code": "NSN", "region": "peninsular", "grid": { "r": 4, "c": 0 }, "gdp_rm_b": 54.3,  "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Putrajaya",       "code": "PJY", "region": "peninsular", "grid": { "r": 4, "c": 1 }, "gdp_rm_b": null,  "receipts_rm_b": null, "gdp_confidence": "pending", "receipts_confidence": "pending", "ft": true },
+    { "state": "Melaka",          "code": "MLK", "region": "peninsular", "grid": { "r": 5, "c": 0 }, "gdp_rm_b": 48.9,  "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Johor",           "code": "JHR", "region": "peninsular", "grid": { "r": 5, "c": 1 }, "gdp_rm_b": 158.0, "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" },
+    { "state": "Labuan",          "code": "LBN", "region": "east",       "grid": { "r": 1, "c": 5 }, "gdp_rm_b": 8.6,   "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending", "ft": true },
+    { "state": "Sabah",           "code": "SBH", "region": "east",       "grid": { "r": 1, "c": 6 }, "gdp_rm_b": 84.3,  "receipts_rm_b": 8.6,  "gdp_confidence": "search-unverified", "receipts_confidence": "search-unverified" },
+    { "state": "Sarawak",         "code": "SWK", "region": "east",       "grid": { "r": 2, "c": 5 }, "gdp_rm_b": 148.2, "receipts_rm_b": null, "gdp_confidence": "search-unverified", "receipts_confidence": "pending" }
+  ]
+}
