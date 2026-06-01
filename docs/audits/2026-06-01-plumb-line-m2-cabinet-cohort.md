@@ -143,3 +143,32 @@ Expanded the cohort with the Prime Minister and four senior portfolio ministers 
 **Attribution discipline held on the new A5s.** Three ministers (Saifuddin, Fadhlina, Dzulkefly) have defamation matters — Saifuddin a civil loss from political speech (under appeal), the other two as plaintiffs who won retractions. None is a corruption/integrity matter, so all are `none-on-record` with the court matter disclosed as context, never scored against them. Khaled is the *responding* minister in the military-procurement probe, not a subject — guilt by association excluded.
 
 **Neutrality across 12 subjects.** Coder-1 Layer B anchors track documented delivery and tenure, not coalition: PH spans 2.0–2.8 (Anwar and Saifuddin highest, on gazetted reforms), BN 2.25–2.5, GPS 2.25, PN opposition a flat 2.0, the SG benchmark highest at 3.4. The only 4s sit on tier-1 primary-sourced delivery (Anwar's three fiscal reforms; the benchmark's). No coalition is advantaged; the opposition figure sits at the neutral baseline, not below it.
+
+---
+
+## Step 7 (2026-06-01): full federal cabinet completed — 33 subjects
+
+Completed the comparability class: all **31 full ministers** of the Anwar unity government are now on file, alongside the opposition leader and the Singapore benchmark (**33 subjects**). Built in three waves off a verified current roster (which surfaced the 16–17 Dec 2025 reshuffle):
+
+- **Waves A / B (long-serving, full pass):** Fadillah (PETRA), Mohamad Hasan (Foreign), Zambry (Higher Ed), Gobind (Digital), Nga (Housing), Azalina (Law), Tiong (Tourism), Steven Sim (Human Resources), Johari (Plantation), Hannah Yeoh (Youth), Armizan (Domestic Trade), Chang (MOSTI), Nancy Shukri (Women), Aaron Dagang (Unity) — objective spine + provisional first-coder Layer B, same method and discipline as the earlier cohort. Ministers moved in the Dec 2025 reshuffle were assessed in their substantial prior portfolio.
+- **Wave C (Dec-2025 newcomers, spine only):** Akmal (Economy), Arthur Kurop (NRES), Noraini (Plantation), Ramanan (Human Resources), Taufiq Johari (Youth), Mustapha Sakmud (Sabah/Sarawak Affairs), Zulkifli Hasan (Religious Affairs) — A5 + C1 only, **Layer B deferred**: each has held the portfolio ~5 months, too short for a fair conduct record, so manufacturing conduct scores would be dishonest.
+
+**Edge cases handled honestly:** A5 stayed `none-on-record` wherever the matter belonged to a predecessor's deal (Akmal/Arm), a subordinate (Arthur/DOE officials), a family member or associate, or was a civil/plaintiff matter (Ramanan's NFA'd civil suit; Hannah Yeoh's MACC-cleared spousal contract; several plaintiff defamation suits) — never guilt by association. **Zulkifli Hasan** is a non-partisan technocrat Senator with no party bloc, so C1 (coalition pivotality) is *undefined* and left unrecorded rather than imputed.
+
+**Neutrality across all 33 (the decisive test):** mean provisional Layer-B score by coalition —
+
+| Bloc | n | mean B |
+|---|--:|--:|
+| DAP (PH) | 5 | 2.65 |
+| UMNO (BN) | 6 | 2.53 |
+| PKR (PH) | 5 | 2.40 |
+| AMANAH (PH) | 2 | 2.38 |
+| PDP (GPS) | 1 | 2.33 |
+| PBB (GPS) | 4 | 2.25 |
+| GRS | 1 | 2.25 |
+| PN (opposition) | 1 | 2.00 |
+| PAP (SG benchmark) | 1 | 3.40 |
+
+Government blocs span just 2.25–2.65 and the opposition sits at the 2.00 neutral baseline — the variation is narrow and tracks *documented delivery*, not party. A governing-vs-opposition or BN-vs-DAP tilt would show here; none does.
+
+**State after step 7:** 167/167 recorded metrics carry a tier 1–3 citation; both data-dependent audit gates **Pending**; badge withheld; **all 33 on file, not ranked** (no conduct track clears the coverage floor on a single coder). The instrument now has a complete, fairly-built, fully-cited cabinet class awaiting the one remaining step to a published rank: ≥2 further independent coders on the Layer B panel. `published: false` throughout.
