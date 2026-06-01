@@ -111,6 +111,15 @@ The M1 dry-run (`docs/audits/2026-06-01-plumb-line-m1-dry-run.md`) proved that r
 
 This is why a two-person, two-class cohort produces zero ranked leaders: that is the correct answer, not a failure. The same logic guarantees the board never shows false precision before a comparable cohort exists.
 
+### 3.3 Two-track scoring — the instrument's distinguishing feature (v0.2.0)
+
+Every league table blends incomparable things into one number; a Works minister and a Communications minister cannot be ranked on raw project delivery without the comparison being a portfolio artefact rather than a measure of the person. The M2 A4 dry-run made this concrete (see `docs/audits/2026-06-01-plumb-line-m2-cabinet-cohort.md`). The Plumb Line resolves it by splitting the dimensions into two tracks:
+
+- **Conduct & Structure (headline).** Integrity (A5), parliamentary conduct (A2, B1–B5), and structural position (C1, C3). These compare fairly across *any* portfolio because they measure how a leader behaves and where they sit, not portfolio-dependent output. **This track alone carries the published rank**, normalised across the whole role-class peer set, and the coverage floor is measured against it.
+- **Delivery (portfolio-relative).** Output dimensions confounded by portfolio capital-intensity and scope (A1 legislative volume, A3 pledges, A4 fiscal, C2 governance). Shown *beside* the headline, normalised **only within portfolio bands** (infrastructure / economic / social / administrative) and with size-normalised measures preferred (rate, not raw count). Delivery never folds into the headline, so portfolio type can never masquerade as merit.
+
+Layers (A/B/C — the evidence *kind*) and tracks (conduct/delivery — the *comparability class*) are orthogonal: every dimension has both. The headline composite is the weakest-link aggregate over the conduct-track dimensions; the delivery composite is reported separately and may be absent without affecting the rank. This is the same honesty as showing scores "with and without Layer B" — extended to the axis that actually threatens fair comparison.
+
 ---
 
 ## 4. The bias audit: prove it, then declare it

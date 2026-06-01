@@ -100,3 +100,18 @@ A single `cabinet-minister` class lumps a Works minister with a Communications m
 - **(c) Scope the dimension** — mark A4 applicable only where a comparable fiscal-delivery measure exists, N/A otherwise (disclosed like the jurisdiction gaps).
 
 This does not block the conduct/structural spine (A5, C1, and a future Layer B), which remain comparable across the whole class.
+
+---
+
+## Step 4 (2026-06-01): the resolution — two-track scoring (the exceptional design)
+
+Asked to choose the approach that makes the instrument exceptional rather than merely adequate, the answer is to do what no league table does: **refuse to blend incomparable things into one number.** Dimensions are split into two tracks (methodology `tracks`, builder, validator all updated):
+
+- **Conduct & Structure (headline):** A2, A5, B1–B5, C1, C3 — comparable across any portfolio; carries the published rank; normalised across the whole role-class; the coverage floor is measured here.
+- **Delivery (portfolio-relative):** A1, A3, A4, C2 — normalised only within portfolio bands (infrastructure / economic / social / administrative), size-normalised measures preferred; shown beside the headline, never folded in.
+
+This simultaneously resolves all three earlier decisions: it adopts size-normalisation *and* portfolio-aware comparison for delivery (decision 1), it complements the jurisdiction-aware applicable set (decision 2), and it sidesteps the A4 unfairness without dropping the dimension. The A4 sick-project count, when sourced fairly as a rate, now has a principled home: the delivery track, compared only among infrastructure-band ministers.
+
+**State after step 4:** the headline rank keys on conduct-track coverage. Cohort conduct coverage is 22–33% (A5 + C1 of 7–9 applicable), so all still **on file, not ranked** — correct. The clear path to the first published rank is now narrow and fair: **the Layer B conduct panel (B1–B5)**, which is cross-portfolio comparable and would take each minister from 2/7 to 7/7 conduct coverage. Build green, badge withheld, `published: false` throughout.
+
+**The Layer B path, done the T4A way.** Layer B is subjective, so its integrity rests on the bias audit's two gates: inter-coder reliability (Krippendorff ≥ 0.667) and the partisan-signal test (coalition must not explain the editorial residual). These need **genuinely independent coders** — a single author cannot manufacture inter-coder reliability. The honest sequence: (i) write each B1–B5 score against a specific dated event with a citation (a first-coder pass), then (ii) obtain ≥2 further independent coders before the gate computes and any Layer B score is published. No Layer B score ships until that audit passes; until then the badge stays withheld and the conduct rank is reported on A5 + C1 + whatever Layer B has cleared.

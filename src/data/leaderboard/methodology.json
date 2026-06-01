@@ -259,6 +259,32 @@
     }
   },
 
+  "tracks": {
+    "_comment": "Two-track scoring (M2 design decision, 2026-06-01), the instrument's distinguishing feature. Most league tables blend incomparable things into one number; The Plumb Line refuses to. Dimensions split by whether they compare FAIRLY across any portfolio. The headline rank is the conduct track ONLY. Delivery is shown beside it, portfolio-relative, never folded into the headline where portfolio type could masquerade as merit. Layers (A/B/C, the evidence KIND) and tracks (conduct/delivery, the COMPARABILITY class) are orthogonal; a dimension has both a layer and a track.",
+    "conduct": {
+      "name": "Conduct & Structure",
+      "isHeadline": true,
+      "summary": "Integrity, parliamentary conduct, and structural position. These compare fairly across ANY portfolio because they measure how a leader behaves and where they sit, not portfolio-dependent output. This track carries the published rank, and it is normalized across the whole role-class peer set.",
+      "dimensions": ["A2", "A5", "B1", "B2", "B3", "B4", "B5", "C1", "C3"],
+      "peerSet": "whole-role-class"
+    },
+    "delivery": {
+      "name": "Delivery (portfolio-relative)",
+      "isHeadline": false,
+      "summary": "Output dimensions confounded by portfolio capital-intensity and scope (a Works ministry runs hundreds of physical projects; a Communications ministry almost none). Shown beside the headline, never blended into it. Normalized ONLY within portfolio bands, so like is compared with like, and size-normalized measures are preferred (rate, not raw count). The M2 A4 dry-run is why this track exists — see docs/audits/2026-06-01-plumb-line-m2-cabinet-cohort.md.",
+      "dimensions": ["A1", "A3", "A4", "C2"],
+      "peerSet": "within-portfolio-band"
+    },
+    "portfolioBands": [
+      { "id": "infrastructure", "note": "Capital-intensive physical delivery: Works, Transport, Energy/Utilities, Housing, Rural Development." },
+      { "id": "economic", "note": "Fiscal/economic management: Finance, Economy, Investment-Trade-Industry, Plantation/Commodities." },
+      { "id": "social", "note": "Human-services delivery: Education, Health, Agriculture/Food, Human Resources, Women/Family." },
+      { "id": "administrative", "note": "Coordination/regulation with low physical-project load: Communications, Digital, Home, Foreign, Legal/PMD." }
+    ],
+    "rankingTrack": "conduct",
+    "rankingRule": "A leader is ranked on the conduct-track composite, and the coverage floor (validity.minCoverageToRank) is measured against conduct-track applicable dimensions only. Delivery is reported as a separate portfolio-relative figure and never affects the rank. This is what lets a Works minister and a Communications minister share one fair headline."
+  },
+
   "aggregation": {
     "withinLayer": "weighted-mean",
     "crossLayer": "weakest-link-half",

@@ -59,6 +59,14 @@ const validity = methodology.validity ?? {};
 const MIN_PEER = validity.minPeerSetSize ?? 1;
 const MIN_COVERAGE = validity.minCoverageToRank ?? 0;
 
+// Two-track model: the headline rank is the CONDUCT track (comparable across
+// any portfolio); the DELIVERY track is portfolio-relative and shown beside it.
+const tracksCfg = methodology.tracks ?? {};
+const conductDims = new Set(tracksCfg.conduct?.dimensions ?? dims.map((d) => d.id));
+const deliveryDims = new Set(tracksCfg.delivery?.dimensions ?? []);
+const inConduct = (id) => conductDims.has(id);
+const inDelivery = (id) => deliveryDims.has(id);
+
 /* ---------- helpers ---------- */
 
 function periodDays(p) {
@@ -128,15 +136,29 @@ const normalized = {};
 const peerSetSize = {};
 for (const dim of dims) {
   const slugs = leaders.filter((l) => applicableToLeader(l, dim)).map((l) => l.slug);
-  const series = slugs.map((s) => raw[dim.id].get(s));
-  peerSetSize[dim.id] = series.filter((v) => v != null).length;
   normalized[dim.id] = new Map();
-  if (peerSetSize[dim.id] < MIN_PEER) {
-    slugs.forEach((s) => normalized[dim.id].set(s, null));
-    continue;
+  // Peer-set grouping: delivery-track dims normalize WITHIN portfolio band (so
+  // a Works minister is compared with other infrastructure ministers, never a
+  // Communications one); conduct-track dims normalize across the whole class.
+  const groups = new Map();
+  for (const s of slugs) {
+    const lead = leaders.find((l) => l.slug === s);
+    const key = inDelivery(dim.id) ? (lead.portfolioBand ?? 'unbanded') : 'all';
+    (groups.get(key) ?? groups.set(key, []).get(key)).push(s);
   }
-  const norm = normalizeWithinPool(series, { higherIsBetter: dim.higherIsBetter });
-  slugs.forEach((s, i) => normalized[dim.id].set(s, norm[i]));
+  let definedTotal = 0;
+  for (const gslugs of groups.values()) {
+    const series = gslugs.map((s) => raw[dim.id].get(s));
+    const defined = series.filter((v) => v != null).length;
+    definedTotal += defined;
+    if (defined < MIN_PEER) {
+      gslugs.forEach((s) => normalized[dim.id].set(s, null));
+      continue;
+    }
+    const norm = normalizeWithinPool(series, { higherIsBetter: dim.higherIsBetter });
+    gslugs.forEach((s, i) => normalized[dim.id].set(s, norm[i]));
+  }
+  peerSetSize[dim.id] = definedTotal;
 }
 
 /** The recorded metric object (value + citation + justification) for a
@@ -159,10 +181,24 @@ function layerScore(leader, layerId) {
   return { score: weightedArithmeticMean(scores, weights), dims: layerDims, scores };
 }
 
-function compositeFor(leader, layerIds) {
-  const ls = layerIds.map((id) => layerScore(leader, id).score);
-  const lw = layerIds.map((id) => layers[id].weight);
-  return weakestLinkAggregate(ls, lw, methodology.aggregation.crossLayerParam ?? 0.5);
+const BASE_PARAM = methodology.aggregation.crossLayerParam ?? 0.5;
+
+/** Layer score restricted to one track's dimensions (conduct or delivery). */
+function layerScoreTrack(leader, layerId, trackFilter) {
+  const ds = dims.filter((d) => d.layer === layerId && applicableToLeader(leader, d) && trackFilter(d.id));
+  const scores = ds.map((d) => normalized[d.id]?.get(leader.slug) ?? null);
+  const weights = ds.map((d) => d.weightWithinLayer);
+  return weightedArithmeticMean(scores, weights);
+}
+
+/** Track composite: weakest-link across the layers that hold this track's dims. */
+function compositeForTrack(leader, layerIds, trackFilter, param = BASE_PARAM) {
+  const present = layerIds.filter((id) =>
+    dims.some((d) => d.layer === id && applicableToLeader(leader, d) && trackFilter(d.id)),
+  );
+  const ls = present.map((id) => layerScoreTrack(leader, id, trackFilter));
+  const lw = present.map((id) => layers[id].weight);
+  return weakestLinkAggregate(ls, lw, param);
 }
 
 function buildEntry(leader) {
@@ -206,20 +242,28 @@ function buildEntry(leader) {
   });
 
   const applicable = dims.filter((d) => applicableToLeader(leader, d));
-  const covered = applicable.filter((d) => (normalized[d.id]?.get(leader.slug) ?? null) != null);
-  const coverage = applicable.length ? (covered.length / applicable.length) * 100 : 0;
   const recordedCount = applicable.filter((d) => leaderDimensionMetric(leader, d) != null).length;
+  const coverageOf = (filter) => {
+    const appl = applicable.filter((d) => filter(d.id));
+    const cov = appl.filter((d) => (normalized[d.id]?.get(leader.slug) ?? null) != null);
+    return { applicable: appl.length, covered: cov.length, pct: appl.length ? (cov.length / appl.length) * 100 : 0 };
+  };
+  const overall = coverageOf(() => true);
+  const conductCov = coverageOf(inConduct);
+  const deliveryCov = coverageOf(inDelivery);
 
-  const composite = compositeFor(leader, ['A', 'B', 'C']);
-  const ranked = coverage / 100 >= MIN_COVERAGE && composite != null;
+  // Headline rank rests on the CONDUCT track only (comparable across portfolios).
+  const conductComposite = compositeForTrack(leader, ['A', 'B', 'C'], inConduct);
+  const deliveryComposite = compositeForTrack(leader, ['A', 'B', 'C'], inDelivery);
+  const ranked = conductCov.pct / 100 >= MIN_COVERAGE && conductComposite != null;
   let notRankedReason = null;
   if (!ranked) {
     if (recordedCount === 0) {
       notRankedReason = 'No metrics on file yet.';
-    } else if (coverage === 0) {
-      notRankedReason = `On file with ${recordedCount} cited metric(s), but no dimension yet has a peer set of ${MIN_PEER}+ comparable subjects, so none can be normalized. Awaiting a comparable cohort.`;
+    } else if (conductCov.covered === 0) {
+      notRankedReason = `On file with ${recordedCount} cited metric(s), but no conduct-track dimension yet has a peer set of ${MIN_PEER}+ comparable subjects. Awaiting a comparable cohort.`;
     } else {
-      notRankedReason = `Coverage ${Math.round(coverage)}% is below the ${Math.round(MIN_COVERAGE * 100)}% minimum required to publish a rank.`;
+      notRankedReason = `Conduct-track coverage ${Math.round(conductCov.pct)}% is below the ${Math.round(MIN_COVERAGE * 100)}% minimum required to publish a rank.`;
     }
   }
 
@@ -232,9 +276,14 @@ function buildEntry(leader) {
     comparabilityClass: cls,
     ranked,
     notRankedReason,
-    composite: ranked ? roundScore(composite, decimals) : null,
-    compositeObjectiveOnly: ranked ? roundScore(compositeFor(leader, ['A', 'C']), decimals) : null,
-    coverage: roundScore(coverage, decimals),
+    // Headline = conduct track. Delivery is portfolio-relative context, shown
+    // regardless of rank, never blended into the headline.
+    composite: ranked ? roundScore(conductComposite, decimals) : null,
+    compositeObjectiveOnly: ranked ? roundScore(compositeForTrack(leader, ['A', 'C'], inConduct), decimals) : null,
+    deliveryComposite: roundScore(deliveryComposite, decimals),
+    coverage: roundScore(overall.pct, decimals),
+    conductCoverage: roundScore(conductCov.pct, decimals),
+    deliveryCoverage: roundScore(deliveryCov.pct, decimals),
     recordedCount,
     rank: null, // filled after sort, ranked entries only
     rankRange: null, // filled by sensitivity pass, ranked entries only
@@ -268,11 +317,8 @@ for (const p of [baseParam - pert, baseParam, baseParam + pert]) {
   const param = Math.max(0, Math.min(1, p));
   const recomputed = rankable.map((e) => {
     const lead = leaders.find((l) => l.slug === e.slug);
-    return { slug: e.slug, c: weakestLinkAggregate(
-      ['A', 'B', 'C'].map((id) => layerScore(lead, id).score),
-      ['A', 'B', 'C'].map((id) => layers[id].weight),
-      param,
-    ) };
+    // Perturb the headline (conduct-track) composite — the figure leaders are ranked on.
+    return { slug: e.slug, c: compositeForTrack(lead, ['A', 'B', 'C'], inConduct, param) };
   });
   const r = new Map(
     [...recomputed].sort((a, b) => (b.c ?? -1) - (a.c ?? -1)).map((e, i) => [e.slug, i + 1]),
@@ -307,6 +353,11 @@ const board = {
   generatedAt: new Date().toISOString().slice(0, 10), // date only → deterministic per day
   biasAudited: false, // set true only by a passing audit (audit-scoreboard.mjs)
   validity: { minPeerSetSize: MIN_PEER, minCoverageToRank: MIN_COVERAGE },
+  tracks: {
+    headline: tracksCfg.rankingTrack ?? 'conduct',
+    conduct: { name: tracksCfg.conduct?.name ?? 'Conduct & Structure', dimensions: [...conductDims] },
+    delivery: { name: tracksCfg.delivery?.name ?? 'Delivery', dimensions: [...deliveryDims] },
+  },
   counts: {
     leaders: entries.length,
     benchmarks: benchmarks.length,

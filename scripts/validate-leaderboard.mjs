@@ -125,6 +125,30 @@ for (const l of Object.values(methodology.layers ?? {})) {
   }
 }
 
+// 4b. tracks — every dimension belongs to exactly one track (conduct | delivery)
+{
+  const tcfg = methodology.tracks ?? {};
+  const conduct = new Set(tcfg.conduct?.dimensions ?? []);
+  const delivery = new Set(tcfg.delivery?.dimensions ?? []);
+  if (conduct.size || delivery.size) {
+    for (const d of methodology.dimensions ?? []) {
+      const inC = conduct.has(d.id);
+      const inD = delivery.has(d.id);
+      if (inC && inD) err('tracks', `dimension ${d.id} is in both conduct and delivery tracks`);
+      if (!inC && !inD) err('tracks', `dimension ${d.id} is in no track (must be conduct or delivery)`);
+    }
+    for (const id of [...conduct, ...delivery]) {
+      if (!methodology.dimensions?.some((d) => d.id === id)) {
+        err('tracks', `track references unknown dimension "${id}"`);
+      }
+    }
+    if (!(tcfg.rankingTrack === 'conduct' || tcfg.rankingTrack === 'delivery')) {
+      err('tracks', `rankingTrack must be "conduct" or "delivery"`);
+    }
+    if (!errors.some((e) => e.scope === 'tracks')) pass('Every dimension belongs to exactly one track; rankingTrack valid');
+  }
+}
+
 // 5. audit gates
 const REQUIRED_GATES = ['symmetry', 'source-coverage', 'partisan-signal', 'rank-robustness', 'intercoder-reliability'];
 const gateIds = new Set((methodology.audit?.gates ?? []).map((g) => g.id));
