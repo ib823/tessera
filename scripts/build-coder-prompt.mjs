@@ -16,6 +16,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LEADERS = join(ROOT, 'src/data/leaders');
 const OUT = process.argv[2] || join(ROOT, 'coder-packets');
 mkdirSync(OUT, { recursive: true });
+// Optional: restrict to a comma-separated slug list, e.g. PLUMB_ONLY=abang-johari-openg,hajiji-noor
+const ONLY = (process.env.PLUMB_ONLY || '').split(',').map((s) => s.trim()).filter(Boolean);
 
 const BDIMS = ['B1', 'B2', 'B3', 'B4', 'B5'];
 const NAMES = { B1: 'Crisis handling', B2: 'Reform delivered vs promised', B3: 'Consensus & institution-building', B4: 'Candor on reversals', B5: 'Process discipline (restraint from inflaming Race/Religion/Royalty)' };
@@ -39,6 +41,7 @@ let body = '';
 let n = 0;
 for (const f of readdirSync(LEADERS).filter((x) => x.endsWith('.json'))) {
   const l = JSON.parse(readFileSync(join(LEADERS, f), 'utf8'));
+  if (ONLY.length && !ONLY.includes(l.slug)) continue;
   const metrics = (l.periods ?? []).flatMap((p) => p.metrics ?? []);
   const bm = metrics.filter((m) => BDIMS.includes(m.dimension));
   if (bm.length === 0) continue;
