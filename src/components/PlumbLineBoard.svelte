@@ -58,7 +58,7 @@
     </div>
 
     <div class="pl__why">
-      <strong>Why nobody is ranked yet.</strong> Every subject is on file with cited data, but the conduct panel is a single-coder draft. A rank is published only once an independent panel of {board.validity.minPeerSetSize}+ coders has scored each item and two bias gates clear (inter-coder reliability and the partisan-signal test). Until then the badge is <em>withheld</em> — by design, not omission.
+      <strong>Why nobody is ranked yet.</strong> Every subject is on file with cited data, but the conduct panel is a single-coder draft. A rank is published only once an independent panel of {board.validity.minPeerSetSize}+ coders has scored each item and two bias gates clear (inter-coder reliability and the partisan-signal test). Until then the badge is <em>withheld</em> — by design, not omission. <a class="pl__whylink" href="/plumb-line-why">Walk through the methodology →</a>
     </div>
 
     <div class="pl__tracks">
@@ -132,6 +132,8 @@
   .pl__stat--key b { color: var(--score-warning); }
   .pl__why { font-size: var(--text-body); line-height: 1.6; color: var(--text-secondary); background: var(--amber-bg); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 12px 14px; margin-bottom: 14px; }
   .pl__why strong { color: var(--text-primary); }
+  .pl__whylink { color: var(--card-fact-color); font-weight: 700; white-space: nowrap; text-decoration: none; }
+  .pl__whylink:hover { text-decoration: underline; }
   .pl__tracks { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; align-items: center; margin-bottom: 12px; }
   .pl__tk { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; padding: 2px 9px; border-radius: var(--radius-pill); justify-self: start; }
   .pl__tk--conduct { color: var(--card-fact-color); background: var(--card-fact-bg); }

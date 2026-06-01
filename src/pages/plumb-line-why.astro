@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import UtilityHeader from '../components/UtilityHeader.astro';
+import PlumbLineExplainer from '../components/PlumbLineExplainer.svelte';
+---
+<Base title="The Plumb Line — why nobody is ranked yet (preview)" noindex={true}>
+  <UtilityHeader />
+  <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">
+    <p style="max-width:1100px;margin:0 auto;padding:8px 16px;font-family:var(--font-body);font-size:var(--text-xs);color:var(--score-warning);line-height:1.5;">
+      <strong>Internal preview — unpublished.</strong> A methodology explainer for the accountability index. The leaders shown in the animation are illustrative (A–F), not real subjects; no real leader is ranked. Not indexed; not linked from the site.
+    </p>
+  </div>
+  <main style="max-width:1100px;margin:0 auto;padding:16px 18px 40px;">
+    <PlumbLineExplainer client:load />
+    <p style="margin:8px 0 0;font-family:var(--font-body);font-size:var(--text-xs);color:var(--text-tertiary);">
+      ← back to <a href="/plumb-line" style="color:var(--text-secondary);">the board</a>
+    </p>
+  </main>
+</Base>
