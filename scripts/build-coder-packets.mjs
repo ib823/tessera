@@ -37,6 +37,7 @@ for (const f of readdirSync(LEADERS).filter((x) => x.endsWith('.json'))) {
   if (bm.length === 0) continue; // no Layer B (e.g. Dec-2025 newcomers) — nothing to score yet
   const period = l.periods?.[0] ?? {};
   let md = `# Coder packet — ${l.name}\n\n`;
+  md += `**Slug (enter this in the submission form):** \`${l.slug}\`  \n`;
   md += `**Role:** ${(period.office || period.role || '').toString()}  \n`;
   md += `**Tenure from:** ${period.from || '—'}  ·  **Country:** ${l.country}\n\n`;
   md += `Score each dimension as an integer **0–4** (or \`no qualifying event\`). Open the cited\n`;
