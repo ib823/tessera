@@ -20,11 +20,11 @@ mkdirSync(OUT, { recursive: true });
 const BDIMS = ['B1', 'B2', 'B3', 'B4', 'B5'];
 const NAMES = { B1: 'Crisis handling', B2: 'Reform delivered vs promised', B3: 'Consensus & institution-building', B4: 'Candor on reversals', B5: 'Process discipline (restraint from inflaming Race/Religion/Royalty)' };
 const ANCHORS = {
-  B1: '0 worsened/evaded · 2 adequate, mixed outcomes · 4 decisive, measurable resolution',
-  B2: '0 championed then abandoned/reversed · 2 partial with material dilution · 4 gazetted and operative as promised',
-  B3: '0 institutional capture / norm erosion · 2 worked within without strengthening · 4 documented strengthening / cross-bench instrument',
-  B4: '0 reversed while denying · 2 reversed without explanation · 4 reversed and explained on the record',
-  B5: '0 documented inflaming of 3R for advantage · 2 no documented instances · 4 documented dated 3R de-escalation',
+  B1: '0 worsened/evaded · 1 weak, mostly reactive · 2 adequate, mixed outcomes · 3 mostly effective, some gaps · 4 decisive, measurable resolution',
+  B2: '0 championed then abandoned/reversed · 1 mostly stalled · 2 partial with material dilution · 3 largely delivered, minor dilution · 4 gazetted and operative as promised',
+  B3: '0 institutional capture / norm erosion · 1 net-negative for norms · 2 worked within without strengthening · 3 some documented strengthening · 4 documented strengthening / cross-bench instrument',
+  B4: '0 reversed while denying · 1 reversed, minimal acknowledgement · 2 reversed without explanation · 3 reversed, partial explanation · 4 reversed and explained on the record',
+  B5: '0 documented inflaming of 3R for advantage · 1 contested rhetoric, leaning inflame · 2 no documented instances · 3 a documented de-escalation · 4 documented dated 3R de-escalation',
 };
 // Strip the prior reviewer's score (anchor) AND, to reduce leading, a trailing
 // evaluative sentence (one with no date/number). Coders score the facts.
@@ -61,7 +61,13 @@ dimensions. This is a blind, solo task: do not look up how anyone else scored, a
 apply EXACTLY the same standard to a government minister, an opposition figure, and an
 international benchmark. You have no stake in any coalition; score conduct, not party.
 
-For each leader, score B1–B5 as an INTEGER 0–4 (whole numbers only), using the anchors:
+For each leader, score B1–B5 as an INTEGER 0–4 (whole numbers only). Use the FULL
+five-point scale: 1 and 3 are first-class scores, not rounding errors. Most real
+records fall BETWEEN the textbook anchors — when a record is better than the "2"
+anchor but short of the "4", score it 3; when worse than "2" but not a clean "0",
+score it 1. Do NOT default to even numbers {0,2,4}; a panel that only uses even
+scores destroys inter-coder reliability. Reserve 0 and 4 for clear, uncontested cases.
+Anchors:
   B1 ${ANCHORS.B1}
   B2 ${ANCHORS.B2}
   B3 ${ANCHORS.B3}
