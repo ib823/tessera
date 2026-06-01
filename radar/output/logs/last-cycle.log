@@ -1,63 +1,62 @@
-[32m2026-06-01 11:37:25[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-01 11:37:26[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-01 11:37:26[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 4406 topics from state
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-01 11:37:27[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-01T11:37:27.100791+00:00
-[32m2026-06-01 11:37:27[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-01 11:37:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-01 11:37:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-01 11:37:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-01 11:37:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-01 11:37:34[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 445 events
-[32m2026-06-01 11:37:37[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 125 events
-[32m2026-06-01 11:37:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-01 11:37:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:37:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:37:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:38:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:38:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-01 11:38:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:38:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:38:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:38:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-01 11:38:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-01 11:38:33[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-01 11:38:34[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 11 events
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 8 events
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 589 events from 5 sources
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 589 events
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 379 within 24h (195 pruned)
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [statutory_instrument] "Johor DAP: Marina Ibrahim not offered GLC post, but position with statutory body involved in welfare. JOHOR BAHRU, June 1 &mdash; Johor DAP has clarified that the party had offered to appoint incumben" importance=0.26
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "BN at 52: Zahid Hamidi rallies coalition for unity, renewal and resilience ahead polls. KUALA LUMPUR, June 1 &mdash; Barisan Nasional (BN) chairman Datuk Seri Dr Ahmad Zahid Hamidi has called for matu" importance=0.31
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Taxpayers can now file assessment appeals online through MyTax and track status in real time, says IRB. PUTRAJAYA, June 1 &mdash; Taxpayers can now file assessment appeals or apply for an extension of" importance=0.41
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "King confers posthumous award on Survey and Mapping Dept officer who died on duty at Malaysia–Brunei border. KUALA LUMPUR, June 1 &mdash; A Malaysian Survey and Mapping Department (JUPEM) personnel, D" importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "DPMs Fadillah, Zahid convey congratulations to King on official birthday. KUALA LUMPUR, June 1 &mdash; Deputy Prime Minister Datuk Seri Fadillah Yusof has extended his congratulations to His Maj..." importance=0.31
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "King: Politicians must watch their words, avoid misuse of free speech. KUALA LUMPUR, June 1 &mdash; His Majesty Sultan Ibrahim, King of Malaysia, today ordered all political leaders to uphold..." importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "France seizes Russia-linked oil tanker with ties to Iranian magnate. Prosecutors said the Tagor was detained on Sunday morning in international waters after its Russian captain repeatedly refused to c" importance=0.41
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Profesionalisme warga TUDM cermin keupayaan pertahanan udara negara, kata TPM. Timbalan Perdana Menteri Zahid Hamidi berkata selama 68 tahun penubuhan TUDM terus kekal sebagai benteng utama pertahanan" importance=0.31
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Macron announces €93bil in ‘Choose France’ investments. Emmanuel Macron said the pledges include €45 billion from Japanese tech investor SoftBank, which would be spent by 2031 on data centres in north" importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Fadhlina urges parents, community to play active role in ensuring success of Malaysian Education Blueprint 2026–2035. KUALA LUMPUR, June 1 &mdash; The involvement of all parties, including parents and" importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Johor bubar DUN, buka laluan PRN. PRN akan perlu diadakan dalam tempoh 60 hari akan datang, susulan pembubaran." importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Lindung 24 Jam extends round‑the‑clock protection to over nine million Malaysian workers, says minister. KUALA LUMPUR, June 1 &mdash; More than nine million contributors under the Employees&rsquo; Soc" importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Prosecution seeks heavier sentence in ex-Sabah water dept director’s case. MACC says the prosecution is also appealing against the discharge and acquittals of Ag Tahir Ag Talib’s wife, Fauziah Piut, a" importance=0.41
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Zahid urges BN to close ranks as GE16 ‘just around the corner’. The Barisan Nasional chairman says coalition members must remain united if it hopes to gain a stronger mandate." importance=0.31
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [statutory_instrument] "Umno leader urges DAP to disclose GLC appointments. Supreme Council member Puad Zarkashi says the alleged offer for Skudai assemblyman Marina Ibrahim to lead a statutory body, revealed in a letter yes" importance=0.30
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "Rakyat mahu politik matang, kata Zahid. Presiden Umno berkata BN mesti terus bergerak ke hadapan dengan semangat pembaharuan, berpaksikan pengalaman dan sedia menyesuaikan diri dengan tuntutan masa de" importance=0.31
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "SoftBank overtakes Toyota as Japan’s most valuable company. Tech investor SoftBank Group soared more than 11% in afternoon trading after its founder announced a US$87.5 billion investment in AI infras" importance=0.46
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [bill_reading] "China patrols waters east of Taiwan after Japan-Philippines maritime talks. Japan and the Philippines plan to launch maritime border delimitation talks, in areas that overlap with claims by China." importance=0.41
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0022 [high_court_ruling] "Two Syrians on trial in Austria over torture allegations. An ex-Syrian general and a former senior Syrian police officer have been accused of torturing opponents of the now-deposed regime of Bashar al" importance=0.31
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 53), ('minister', 32), ('chinese', 27), ('india', 25), ('government', 24), ('dap', 20), ('pas', 19), ('election', 18), ('isa', 17), ('assembly', 17)]
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 4418 active topics
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36moutput              [0m | 718 active issues, 3698 new, 3700 pruned
-[32m2026-06-01 11:38:37[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-01 11:38:48[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=41  hmm=OK/70  cox=RT/718  sarima=RT/718
-[32m2026-06-01 11:38:48[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=718)
-[32m2026-06-01 11:38:48[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 4418 active topics. Top: parliament budget session session opens (score: 0.97)
+[32m2026-06-01 17:42:48[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-01 17:42:48[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-01 17:42:48[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 4418 topics from state
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-01 17:42:49[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-01T17:42:49.527990+00:00
+[32m2026-06-01 17:42:50[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-01 17:42:53[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-01 17:42:56[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-01 17:42:56[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-01 17:42:59[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-01 17:42:59[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 445 events
+[32m2026-06-01 17:43:02[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 125 events
+[32m2026-06-01 17:43:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-01 17:43:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-01 17:43:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-01 17:43:56[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-06-01 17:43:58[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 588 events from 5 sources
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 588 events
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 385 within 24h (191 pruned)
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [statutory_instrument] "Johor DAP: Marina Ibrahim not offered GLC post, but position with statutory body involved in welfare. JOHOR BAHRU, June 1 &mdash; Johor DAP has clarified that the party had offered to appoint incumben" importance=0.26
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "BN at 52: Zahid Hamidi rallies coalition for unity, renewal and resilience ahead polls. KUALA LUMPUR, June 1 &mdash; Barisan Nasional (BN) chairman Datuk Seri Dr Ahmad Zahid Hamidi has called for matu" importance=0.31
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [statutory_instrument] "Ronnie Liu questions DAP over statutory body offer to Marina. The former Selangor executive councillor asks where the party learnt such a ‘self-serving’ approach." importance=0.26
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Taxpayers can now file assessment appeals online through MyTax and track status in real time, says IRB. PUTRAJAYA, June 1 &mdash; Taxpayers can now file assessment appeals or apply for an extension of" importance=0.41
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Philippine senator Estrada surrenders after arrest order in plunder case. Jinggoy Estrada said he would not seek Senate custody, adding that he was ready to defend himself before the court." importance=0.46
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Philippine senator Estrada surrenders after arrest order in plunder case. Jinggoy Estrada said he would not seek Senate custody, adding that he was ready to defend himself before the court." importance=0.36
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "King confers posthumous award on Survey and Mapping Dept officer who died on duty at Malaysia–Brunei border. KUALA LUMPUR, June 1 &mdash; A Malaysian Survey and Mapping Department (JUPEM) personnel, D" importance=0.46
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "AFC proposes 94 new articles in FAM statutes. Among the proposed changes is the reduction of FAM’s executive committee from 17 members to 11." importance=0.41
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "DPMs Fadillah, Zahid convey congratulations to King on official birthday. KUALA LUMPUR, June 1 &mdash; Deputy Prime Minister Datuk Seri Fadillah Yusof has extended his congratulations to His Maj..." importance=0.31
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Hungary’s Magyar threatens legal action if president refuses to resign. Peter Magyar has repeatedly called on president Tamas Sulyok to step down, accusing him of failing to represent national unity o" importance=0.41
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Vietnam’s agriculture exports up 9% in Jan-May, surplus hits US$8.4bil. The exports generated nearly US$30.7 billion, enabling the sector to post the trade surplus despite stronger import growth." importance=0.51
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "King: Politicians must watch their words, avoid misuse of free speech. KUALA LUMPUR, June 1 &mdash; His Majesty Sultan Ibrahim, King of Malaysia, today ordered all political leaders to uphold..." importance=0.46
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "France seizes Russia-linked oil tanker with ties to Iranian magnate. Prosecutors said the Tagor was detained on Sunday morning in international waters after its Russian captain repeatedly refused to c" importance=0.41
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Profesionalisme warga TUDM cermin keupayaan pertahanan udara negara, kata TPM. Timbalan Perdana Menteri Zahid Hamidi berkata selama 68 tahun penubuhan TUDM terus kekal sebagai benteng utama pertahanan" importance=0.31
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Macron announces €93bil in ‘Choose France’ investments. Emmanuel Macron said the pledges include €45 billion from Japanese tech investor SoftBank, which would be spent by 2031 on data centres in north" importance=0.46
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Fadhlina urges parents, community to play active role in ensuring success of Malaysian Education Blueprint 2026–2035. KUALA LUMPUR, June 1 &mdash; The involvement of all parties, including parents and" importance=0.46
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "Johor bubar DUN, buka laluan PRN. PRN akan perlu diadakan dalam tempoh 60 hari akan datang, susulan pembubaran." importance=0.46
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [high_court_ruling] "Prosecution seeks heavier sentence in ex-Sabah water dept director’s case. MACC says the prosecution is also appealing against the discharge and acquittals of Ag Tahir Ag Talib’s wife, Fauziah Piut, a" importance=0.41
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 48), ('minister', 30), ('india', 28), ('chinese', 26), ('pas', 25), ('government', 23), ('election', 21), ('assembly', 20), ('dap', 16), ('isa', 15)]
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 15 events monitored, 15 flagged
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 4424 active topics
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36moutput              [0m | 716 active issues, 3706 new, 3708 pruned
+[32m2026-06-01 17:44:01[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-01 17:44:18[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=42  hmm=OK/71  cox=RT/716  sarima=RT/716
+[32m2026-06-01 17:44:19[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=716)
+[32m2026-06-01 17:44:19[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 4424 active topics. Top: parliament budget session session opens (score: 0.97)
