@@ -175,22 +175,26 @@ Government blocs span just 2.25–2.65 and the opposition sits at the 2.00 neutr
 
 ---
 
-## Step 8 (2026-06-01): regional benchmarks added — 35 subjects
+## Step 8 (2026-06-01): regional + global benchmarks — 37 subjects
 
-Added two ASEAN-peer reference heads of government beside Lee Hsien Loong, so the benchmark set brackets the scale rather than resting on a single high anchor: **Joko Widodo** (Indonesia, 2014–2024) and **Ferdinand Marcos Jr** (Philippines, 2022–). Each carries A5 + a provisional first-coder Layer B; C1/C2 are left unrecorded (jurisdiction-specific structural dimensions not computed without each chamber's seat math). `benchmark: true`, not part of the ranked Malaysian class.
+Added four reference heads of government beside Lee Hsien Loong so the benchmark set brackets the scale across governance models rather than resting on a single high anchor: **Joko Widodo** (Indonesia), **Ferdinand Marcos Jr** (Philippines), **Ursula von der Leyen** (European Commission, the EU executive), and **Donald Trump** (United States). Each carries A5 + a provisional first-coder Layer B; C1/C2 are left unrecorded (jurisdiction-specific structural dimensions not computed without each chamber's seat math). `benchmark: true`, not part of the ranked Malaysian class.
 
-The benchmarks now span the range honestly:
+The benchmarks span the range honestly:
 
 | Benchmark | A5 | Layer B (provisional) |
 |---|---|---|
 | Lee Hsien Loong (SG) | none-on-record | B1 3, B2 4, B3 3, B4 3, B5 4 |
-| Joko Widodo (ID) | none-on-record | B1 2, B2 3, **B3 1**, B4 2 |
+| Ursula von der Leyen (EU) | none-on-record | B1 3, B2 3, B3 3, B4 3 |
+| Donald Trump (US) | **convicted** | B1 2, B2 3, B3 3, B4 3 |
 | Ferdinand Marcos Jr (PH) | **convicted** | B1 2, B2 3, B3 2, B4 2 |
+| Joko Widodo (ID) | none-on-record | B1 2, B2 3, **B3 1**, B4 2 |
 
 Two firsts for the instrument, both well-sourced and intended:
-- **First sub-2 Layer B score** — Jokowi B3 = 1, on the uncontested, tier-1-documented institutional erosion (the 2019 KPK-law gutting; the 2023 Constitutional Court manoeuvre for which the Chief Justice was officially found guilty of an ethics violation). The instrument can register a documented negative, not only cluster at 2–3.
-- **First `convicted` A5** — Marcos Jr, on his final 1995 tax-non-filing conviction (a fine, COMELEC-ruled non-disqualifying), recorded as factual status with the nature stated.
+- **First sub-2 Layer B score** — Jokowi B3 = 1, on the uncontested, tier-1-documented institutional erosion (the 2019 KPK-law gutting; the 2023 Constitutional Court manoeuvre for which the Chief Justice was officially found guilty of an ethics violation).
+- **First `convicted` A5** — Marcos Jr (1995 tax-non-filing conviction) and Trump (34-count New York felony conviction, 30 May 2024, appeal pending), recorded as factual status with the nature stated.
 
-**Methodology observation worth flagging:** the A5 scalar is severity-blind — `convicted` is 0.0 regardless of offence, so Marcos's minor tax-filing conviction (0.0) scores *below* Zahid's 47-charge corruption DNAA (`discharged`, 0.85). That ordering is internally consistent (a final conviction is a heavier adjudicated status than dropped-without-conviction charges), but it can mislead on apparent severity. A future refinement could weight `convicted` by offence class; for now the justification text carries the nuance the scalar cannot.
+**The Trump test of non-partisanship.** The single most polarizing subject was scored on exactly the rule applied to everyone: score documented, uncontested events; never import contested characterizations. That yields A5 `convicted` (a hard court fact) but Layer B of 2/3/3/3 on documented delivery (TCJA, USMCA, the bipartisan First Step Act) and a candid on-record reversal (the 90-day tariff pause). The principled asymmetry with Jokowi is instructive: Jokowi's B3 = 1 rests on an *uncontested official ethics finding*, whereas Trump's institutional controversies were acquitted, dismissed, or upheld — so the same rule, applied identically, does not score them down. Scoring the contested items either way would have been the partisan act; the discipline is to record only what an official body adjudicated.
 
-**State after step 8:** 35 subjects (32 entries + 3 benchmarks); 177/177 recorded metrics carry a tier 1–3 citation; both data-dependent gates Pending; badge withheld; all 35 on file, not ranked. `published: false` throughout.
+**Methodology observation worth flagging:** the A5 scalar is severity-blind — `convicted` is 0.0 regardless of offence, so a minor tax-filing conviction scores level with a grave one and *below* Zahid's 47-charge corruption DNAA (`discharged`, 0.85). Internally consistent (a final conviction is a heavier adjudicated status than dropped-without-conviction charges), but it can mislead on apparent severity; a future refinement could weight `convicted` by offence class. For now the justification text carries the nuance.
+
+**State after step 8:** 37 subjects (32 entries + 5 benchmarks); 187/187 recorded metrics carry a tier 1–3 citation; both data-dependent gates Pending; badge withheld; all 37 on file, not ranked. `published: false` throughout.
