@@ -318,7 +318,7 @@ console.log(
 );
 if (board.counts.ranked === 0 && board.counts.onFile > 0) {
   console.log(
-    `    M1 dry-run — subjects on file with cited data, but below ranking validity (peer set < ${MIN_PEER}). No composite or rank published. Badge withheld.`,
+    `    Subjects on file with cited data, but below ranking validity (coverage < ${Math.round(MIN_COVERAGE * 100)}% and/or peer set < ${MIN_PEER}). No composite or rank published. Badge withheld.`,
   );
 }
 if (methodology.status === 'framework' && board.counts.onFile === 0 && board.counts.ranked === 0) {
