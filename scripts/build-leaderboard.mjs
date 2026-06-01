@@ -58,6 +58,15 @@ const layers = methodology.layers;
 const validity = methodology.validity ?? {};
 const MIN_PEER = validity.minPeerSetSize ?? 1;
 const MIN_COVERAGE = validity.minCoverageToRank ?? 0;
+const MIN_CODERS = validity.minCodersToScore ?? 2;
+
+// A Layer B (Editorial Panel) ordinal score only counts toward scoring once an
+// independent panel of MIN_CODERS has rated it. A single-coder draft is recorded
+// and displayed (provisional), but never normalized or ranked — one author cannot
+// manufacture the inter-coder reliability the audit gate demands.
+function layerBUnderpaneled(metric, dim) {
+  return dim.layer === 'B' && metric != null && (metric.coderScores?.length ?? 0) < MIN_CODERS;
+}
 
 // Two-track model: the headline rank is the CONDUCT track (comparable across
 // any portfolio); the DELIVERY track is portfolio-relative and shown beside it.
@@ -82,6 +91,7 @@ function leaderDimensionRaw(leader, dim) {
   for (const period of leader.periods) {
     if (!dim.appliesToRoles.includes(period.role)) continue;
     const metric = (period.metrics ?? []).find((m) => m.dimension === dim.id);
+    if (layerBUnderpaneled(metric, dim)) continue; // provisional single-coder: on file, not scored
     const r = rawScore(metric, dim.layer, statusScalars);
     if (r == null) continue;
     const days = periodDays(period);
@@ -225,17 +235,29 @@ function buildEntry(leader) {
           peerSetSize: peerSetSize[d.id] ?? 0,
           // Transparent record of the cited raw datum, shown even when the
           // dimension cannot yet be normalized (peer set too small).
-          recorded: m ? { value: m.value, justification: m.justification, citation: m.citation } : null,
+          recorded: m
+            ? {
+                value: m.value,
+                justification: m.justification,
+                citation: m.citation,
+                ...(m.coderScores ? { coderScores: m.coderScores } : {}),
+              }
+            : null,
           status: excluded
             ? 'excluded-jurisdiction'
             : score != null
               ? 'scored'
-              : m
-                ? peerSetSize[d.id] < MIN_PEER
-                  ? 'on-file-insufficient-peer-set'
-                  : 'on-file'
-                : 'no-data',
+              : layerBUnderpaneled(m, d)
+                ? 'on-file-provisional-single-coder'
+                : m
+                  ? peerSetSize[d.id] < MIN_PEER
+                    ? 'on-file-insufficient-peer-set'
+                    : 'on-file'
+                  : 'no-data',
           ...(excluded ? { excludedReason: jurisdictionGaps[leader.country]?.reason ?? null } : {}),
+          ...(layerBUnderpaneled(m, d)
+            ? { codersOnFile: m.coderScores?.length ?? 0, codersNeeded: MIN_CODERS }
+            : {}),
         };
       }),
     };
