@@ -6,6 +6,8 @@
    * There is deliberately no ranking, no podium, no single grade.
    */
   import LeaderFingerprint from './LeaderFingerprint.svelte';
+  import PlumbLineField from './PlumbLineField.svelte';
+  import PlumbLineHeatmap from './PlumbLineHeatmap.svelte';
 
   interface Entry {
     name: string; country: string; affiliation: string; benchmark: boolean; ranked: boolean;
@@ -39,6 +41,8 @@
 
   const total = board.entries.length + board.benchmarks.length;
   const rankedCount = [...board.entries, ...board.benchmarks].filter((e) => e.ranked).length;
+
+  let view = $state<'cards' | 'matrix'>('cards');
 </script>
 
 <div class="pl">
@@ -71,29 +75,44 @@
     </div>
   </header>
 
-  <nav class="pl__filter" aria-label="Filter by coalition">
-    {#each coalitions as c (c)}
-      <button class="pl__chip" class:pl__chip--on={filter === c} onclick={() => (filter = c)}>{c}</button>
-    {/each}
-  </nav>
+  <PlumbLineField subjects={[...board.entries, ...board.benchmarks]} />
 
-  <section class="pl__sec">
-    <h2 class="pl__seclabel">Malaysian cabinet &amp; opposition · on file, not ranked</h2>
-    <div class="pl__grid">
-      {#each shown as e (e.name)}
-        <LeaderFingerprint entry={e} tracks={board.tracks} />
+  <div class="pl__controls">
+    <nav class="pl__filter" aria-label="Filter by coalition">
+      {#each coalitions as c (c)}
+        <button class="pl__chip" class:pl__chip--on={filter === c} onclick={() => (filter = c)}>{c}</button>
       {/each}
+    </nav>
+    <div class="pl__views" role="tablist" aria-label="View">
+      <button class="pl__view" class:pl__view--on={view === 'cards'} onclick={() => (view = 'cards')} role="tab" aria-selected={view === 'cards'}>Cards</button>
+      <button class="pl__view" class:pl__view--on={view === 'matrix'} onclick={() => (view = 'matrix')} role="tab" aria-selected={view === 'matrix'}>Matrix</button>
     </div>
-  </section>
+  </div>
 
-  <section class="pl__sec">
-    <h2 class="pl__seclabel">International benchmarks · reference points (bracket the scale)</h2>
-    <div class="pl__grid">
-      {#each board.benchmarks as e (e.name)}
-        <LeaderFingerprint entry={e} tracks={board.tracks} />
-      {/each}
-    </div>
-  </section>
+  {#if view === 'cards'}
+    <section class="pl__sec">
+      <h2 class="pl__seclabel">Malaysian cabinet &amp; opposition · on file, not ranked</h2>
+      <div class="pl__grid">
+        {#each shown as e (e.name)}
+          <LeaderFingerprint entry={e} tracks={board.tracks} />
+        {/each}
+      </div>
+    </section>
+
+    <section class="pl__sec">
+      <h2 class="pl__seclabel">International benchmarks · reference points (bracket the scale)</h2>
+      <div class="pl__grid">
+        {#each board.benchmarks as e (e.name)}
+          <LeaderFingerprint entry={e} tracks={board.tracks} />
+        {/each}
+      </div>
+    </section>
+  {:else}
+    <section class="pl__sec">
+      <h2 class="pl__seclabel">Cohort matrix · subjects × dimensions ({filter === 'All' ? 'all' : filter}, with benchmarks)</h2>
+      <PlumbLineHeatmap subjects={[...shown, ...board.benchmarks]} />
+    </section>
+  {/if}
 
   <footer class="pl__foot">
     Methodology {board.methodologyVersion} · generated {board.generatedAt} · bias-audited badge: <b>{board.biasAudited ? 'granted' : 'withheld'}</b>.
@@ -123,9 +142,13 @@
   .lg--scored { background: var(--card-fact-color); }
   .lg--prov { background: var(--card-fact-color); opacity: 0.45; background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.55) 0 3px, transparent 3px 6px); }
   .lg--none { background: var(--bg-sunken); }
-  .pl__filter { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 2; }
+  .pl__controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 18px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 2; }
+  .pl__filter { display: flex; flex-wrap: wrap; gap: 6px; }
   .pl__chip { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; color: var(--text-secondary); background: var(--card); border: 1px solid var(--border-light); border-radius: var(--radius-pill); padding: 5px 12px; cursor: pointer; }
   .pl__chip--on { color: var(--bg); background: var(--text-primary); border-color: var(--text-primary); }
+  .pl__views { display: inline-flex; border: 1px solid var(--border-light); border-radius: var(--radius-pill); overflow: hidden; flex-shrink: 0; }
+  .pl__view { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; color: var(--text-secondary); background: var(--card); border: 0; padding: 6px 14px; cursor: pointer; }
+  .pl__view--on { color: var(--bg); background: var(--text-primary); }
   .pl__sec { margin-bottom: 28px; }
   .pl__seclabel { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-tertiary); margin: 0 0 12px; }
   .pl__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
