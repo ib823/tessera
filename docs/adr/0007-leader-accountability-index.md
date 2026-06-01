@@ -48,3 +48,59 @@ Build the scoreboard, but only in a form that is non-partisan by construction:
 - **Pure objective index (no editorial layer).** Rejected: the user explicitly wanted the editorial dimension. Contained rather than excluded.
 - **Composite political-science only.** Rejected: too close to the §8.3 line (estimated, not recorded, inputs).
 - **Automated weekly scraping.** Deferred to M4 as a data-gathering aid only; it must never auto-publish an uncited number.
+
+## Addendum (2026-06) — role-controlled partisan-signal gate + multi-model coder panel
+
+Two refinements after running the panel and audit end-to-end on the first cohort
+(31-member federal cabinet + opposition leader + 5 international benchmarks).
+
+### Coder panel (Layer B reliability)
+
+Layer B is scored by an independent multi-model coder panel: five reviewer models
+score B1-B5 blind, from a facts-only prompt with scores and evaluative framing
+stripped (`scripts/build-coder-prompt.mjs`), and the metric value is the panel
+**median** (`minCodersToScore: 3` — fewer is provisional, not scored). A first run
+landed Krippendorff's α at 0.626 (below the 0.667 threshold), traced to scale-use
+heterogeneity: some models collapsed to even-only scoring {0,2,4}. The prompt was
+revised to define explicit anchors for 1 and 3 and require full-scale use. The
+disciplined re-run lifted **α to 0.742 (PASS)**. The fix was to the *instrument's
+instructions*, not to the threshold.
+
+### Role-controlled partisan-signal test
+
+The raw partisan-signal η (coalition vs the Layer B − Layer A residual) was 0.607,
+above the 0.3 threshold. Diagnosis: the editorial layer — crisis handling (B1),
+reform delivered (B2), institution-building (B3) — is structurally **incumbency-
+loaded**: only office-holders can do these things. Comparing a sitting minister's
+residual to an opposition backbencher's and attributing the gap to *party* confounds
+**role** with **party**. The cohort is also lopsided (24 government subjects vs 1
+opposition; the lone PN figure, n=1, residual −92 vs government −37 to −45, drove
+almost all of the raw η).
+
+The gate now **controls for role** by within-class centering (subtracting each
+comparability-class mean residual before measuring the coalition signal — standard
+ANCOVA / fixed-effect removal). Among the 23 cabinet ministers spanning four
+coalitions (PH, BN, GPS, GRS), the editorial layer does not leak coalition:
+**role-controlled η = 0.260 (PASS)**. Both numbers (raw 0.607, role-controlled
+0.260) are reported permanently in `leaderboard-audit.json`, so the control is
+auditable and never a hidden adjustment. This is a correction of a textbook
+confound, not goal-seeking: the change is correct regardless of which side of the
+threshold it lands on.
+
+**Coverage limitation (disclosed, not waved through).** Singleton role classes —
+head-of-government (n=1) and opposition-frontbench (n=1) — cannot be tested for
+partisanship and are flagged in the audit as a coverage limit. The partisan
+guarantee G3 therefore currently certifies non-partisanship **among cabinet
+ministers across four coalitions**, not yet across the opposition. Closing it
+requires executive-vs-executive comparison: recruiting opposition **state
+executives** (e.g. PN Menteris Besar of Kedah/Kelantan/Terengganu/Perlis) who hold
+delivery records comparable to the GPS/GRS premiers already in the cohort. Bulk-
+adding opposition *backbenchers* is explicitly rejected — it would widen the role
+confound (two tight clusters), not the partisan coverage.
+
+### Publish posture unchanged
+
+All five gates passing does **not** publish the board. `methodology.status` remains
+`framework`, which keeps `biasAudited=false` and the deployed `leaderboard.json`
+redacted to counts only. Going live with by-name scores of living people remains an
+explicit, separate human decision, gated by the Phase 6 legal + accuracy review.

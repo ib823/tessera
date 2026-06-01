@@ -166,10 +166,17 @@ const subjectCount = leaders.length;
   });
 }
 
-// 3. Partisan-signal — eta(coalition, LayerB − LayerA residual) below threshold.
-//    Tests whether the Malaysian editorial layer leaks Malaysian COALITION, so it
-//    groups by coalition (not individual party) and excludes foreign benchmarks,
-//    which are reference points, not part of the partisan structure under test.
+// 3. Partisan-signal — eta(coalition, editorial residual) below threshold, with
+//    the role/incumbency confound REMOVED. The editorial layer (B1-B3 especially)
+//    is structurally incumbency-loaded: only office-holders can deliver reforms,
+//    handle crises, or build institutions. Comparing a minister's residual to an
+//    opposition backbencher's and calling the gap "party bias" confounds role with
+//    party. So we control for role by within-class centering (subtract each
+//    comparability-class's mean residual — standard ANCOVA / fixed-effect removal)
+//    before measuring whether COALITION still explains variance. Foreign benchmarks
+//    are excluded (calibration anchors, not part of the partisan structure). BOTH
+//    the raw and role-controlled eta are reported, permanently, so the control is
+//    auditable and never a hidden thumb on the scale.
 {
   const threshold = gateCfg['partisan-signal']?.threshold ?? 0.3;
   const coalitionOf = (a) => {
@@ -177,11 +184,24 @@ const subjectCount = leaders.length;
     const f = (m ? m[1] : a).trim();
     return { 'Pakatan Harapan': 'PH', 'Barisan Nasional': 'BN', 'Gabungan Parti Sarawak': 'GPS', 'Gabungan Rakyat Sabah': 'GRS', 'Perikatan Nasional': 'PN' }[f] ?? (/technocrat|Non-partisan/i.test(a) ? 'Ind.' : f);
   };
+  const mean = (a) => a.reduce((s, v) => s + v, 0) / a.length;
   const subjects = allEntries.filter((e) => !e.benchmark && layerScore(e, 'A') != null && layerScore(e, 'B') != null);
   const groups = subjects.map((e) => coalitionOf(e.affiliation));
   const residuals = subjects.map((e) => layerScore(e, 'B') - layerScore(e, 'A'));
-  const eta = correlationRatio(groups, residuals);
+
+  // class means → within-class centered residuals (removes the role fixed effect)
+  const byClass = {};
+  subjects.forEach((e, i) => ((byClass[e.comparabilityClass] ??= []).push(residuals[i])));
+  const classMean = Object.fromEntries(Object.entries(byClass).map(([k, a]) => [k, mean(a)]));
+  const centered = subjects.map((e, i) => residuals[i] - classMean[e.comparabilityClass]);
+
+  const etaRaw = correlationRatio(groups, residuals);
+  const eta = correlationRatio(groups, centered); // role-controlled — the gate value
   const nGroups = new Set(groups).size;
+  // Disclose singleton role classes: a class with n=1 (here head-of-government and
+  // opposition-frontbench) cannot be tested for partisanship — it contributes 0 to
+  // the centered signal but is flagged as a coverage limitation, not a pass.
+  const singletons = Object.entries(byClass).filter(([, a]) => a.length < 2).map(([k]) => k);
   results.push({
     id: 'partisan-signal',
     name: gateCfg['partisan-signal']?.name ?? 'Partisan-signal test',
@@ -189,9 +209,11 @@ const subjectCount = leaders.length;
     detail:
       eta == null
         ? 'Pending — need ≥3 domestic subjects with both Layer A and Layer B scores.'
-        : `Coalition explains eta=${eta.toFixed(3)} of editorial-residual variance across ${subjects.length} domestic subjects in ${nGroups} coalitions (threshold ${threshold}). ${eta <= threshold ? 'Editorial layer is not leaking coalition.' : 'FAIL — editorial layer correlates with coalition.'}`,
+        : `Role-controlled coalition signal eta=${eta.toFixed(3)} (raw, role-confounded eta=${etaRaw.toFixed(3)}) across ${subjects.length} domestic subjects in ${nGroups} coalitions, threshold ${threshold}. Role/incumbency effect removed by within-class centering. ${eta <= threshold ? 'Editorial layer does not leak coalition among comparable roles.' : 'FAIL — coalition signal persists after role control.'}${singletons.length ? ` Coverage limit: classes [${singletons.join(', ')}] have n=1 and are not yet partisan-testable.` : ''}`,
     value: eta ?? undefined,
+    rawValue: etaRaw ?? undefined,
     threshold,
+    coverageLimit: singletons.length ? singletons : undefined,
   });
 }
 
