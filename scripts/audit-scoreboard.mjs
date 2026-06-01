@@ -241,10 +241,34 @@ const report = {
 };
 writeFileSync(join(PUBLIC, 'leaderboard-audit.json'), `${JSON.stringify(report, null, 2)}\n`);
 
-// Patch the board's badge flag.
+// Patch the board's badge flag — and GATE the deployed asset. Until the badge is
+// granted, the public leaderboard.json is REDACTED to counts + methodology only:
+// no names, no scores, no provisional conduct on living people ever ships before
+// the bias panel clears. PLUMB_PREVIEW=1 keeps the full file for internal review.
+const PREVIEW = process.env.PLUMB_PREVIEW === '1';
 if (board) {
   board.biasAudited = biasAudited;
-  writeFileSync(BOARD_PATH, `${JSON.stringify(board, null, 2)}\n`);
+  if (biasAudited || PREVIEW) {
+    writeFileSync(BOARD_PATH, `${JSON.stringify(board, null, 2)}\n`);
+  } else {
+    const redacted = {
+      methodologyVersion: board.methodologyVersion,
+      status: board.status,
+      generatedAt: board.generatedAt,
+      biasAudited: false,
+      redacted: true,
+      validity: board.validity,
+      tracks: board.tracks,
+      counts: {
+        total: board.entries.length + board.benchmarks.length,
+        ranked: [...board.entries, ...board.benchmarks].filter((e) => e.ranked).length,
+        cabinet: board.entries.length,
+        benchmarks: board.benchmarks.length,
+      },
+    };
+    writeFileSync(BOARD_PATH, `${JSON.stringify(redacted, null, 2)}\n`);
+    console.log('  ⚿ leaderboard.json REDACTED for deploy (badge withheld; set PLUMB_PREVIEW=1 for full).');
+  }
 }
 
 console.log('\n  The Plumb Line — bias audit');

@@ -5,29 +5,47 @@ import Base from '../layouts/Base.astro';
 import UtilityHeader from '../components/UtilityHeader.astro';
 import PlumbLineBoard from '../components/PlumbLineBoard.svelte';
 
-// Built by scripts/build-leaderboard.mjs (runs before astro build). Read at build
-// time from the repo root (process.cwd()), which is reliable under Astro's bundler.
+// Built by scripts/build-leaderboard.mjs; GATED by scripts/audit-scoreboard.mjs.
+// In production (badge withheld) the file on disk is REDACTED to counts only, so
+// no provisional scores on living people are ever read into this page or shipped.
 let board: any = null;
 try {
   board = JSON.parse(readFileSync(join(process.cwd(), 'public/leaderboard.json'), 'utf8'));
 } catch {
   board = null;
 }
+const showFull = !!board && board.redacted !== true && Array.isArray(board.entries);
+const isPreview = showFull && board.biasAudited !== true; // full data, badge not yet granted = internal review
+const counts = board?.counts ?? { total: 37, ranked: 0 };
 ---
-<Base title="The Plumb Line — preview (unpublished)" noindex={true}>
+<Base title="The Plumb Line — accountability index" noindex={true}>
   <UtilityHeader />
-  <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">
-    <p style="max-width:1100px;margin:0 auto;padding:8px 16px;font-family:var(--font-body);font-size:var(--text-xs);color:var(--score-warning);line-height:1.5;">
-      <strong>Internal preview — unpublished.</strong> The accountability scores below are provisional single-coder drafts; no leader is ranked and the bias-audited badge is withheld. This page is not indexed and not linked from the site. Not an electoral endorsement.
-    </p>
-  </div>
-  <main style="padding-top:8px;">
-    {board
-      ? <PlumbLineBoard board={board} client:load />
-      : (
-        <p style="max-width:640px;margin:40px auto;padding:0 18px;font-family:var(--font-body);color:var(--text-secondary);">
-          Leaderboard data not found. Run <code>npm run build-leaderboard</code> to generate <code>public/leaderboard.json</code>, then reload.
-        </p>
-      )}
-  </main>
+  {isPreview && (
+    <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">
+      <p style="max-width:1100px;margin:0 auto;padding:8px 16px;font-family:var(--font-body);font-size:var(--text-xs);color:var(--score-warning);line-height:1.5;">
+        <strong>Internal preview (PLUMB_PREVIEW) — unpublished.</strong> Provisional single-coder drafts; no leader is ranked; badge withheld. The public build redacts this to counts only. Not an electoral endorsement.
+      </p>
+    </div>
+  )}
+  {showFull ? (
+    <main style="padding-top:8px;"><PlumbLineBoard board={board} client:load /></main>
+  ) : (
+    <main style="max-width:680px;margin:0 auto;padding:40px 18px 80px;font-family:var(--font-body);">
+      <h1 style="font-family:var(--font-display);font-size:var(--text-title-lg,2rem);font-weight:800;letter-spacing:-0.04em;color:var(--text-primary);margin:0 0 8px;">The Plumb Line</h1>
+      <p style="font-size:var(--text-reading);line-height:1.55;color:var(--text-secondary);margin:0 0 20px;">A non-partisan accountability instrument for Malaysian leaders. It measures conduct and structure, not popularity — and it will not publish a rank it cannot yet defend.</p>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
+        <div style="background:var(--card);border:1px solid var(--border-light);border-radius:var(--radius-md);padding:10px 14px;"><b style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--text-primary);">{counts.total}</b><div style="font-size:var(--text-micro);color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">subjects on file</div></div>
+        <div style="background:var(--card);border:1px solid var(--border-light);border-radius:var(--radius-md);padding:10px 14px;"><b style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--score-warning);">{counts.ranked}</b><div style="font-size:var(--text-micro);color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">ranked</div></div>
+        <div style="background:var(--amber-bg);border:1px solid var(--border-light);border-radius:var(--radius-md);padding:10px 14px;display:flex;align-items:center;"><span style="font-family:var(--font-display);font-size:var(--text-xs);font-weight:700;color:var(--score-warning);letter-spacing:0.06em;">BIAS-AUDITED BADGE · WITHHELD</span></div>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:18px;">
+        <p style="font-size:var(--text-body);line-height:1.65;color:var(--text-secondary);margin:0 0 12px;"><strong style="color:var(--text-primary);">The board is in audit.</strong> Every subject is on file with cited data, but the conduct panel is a single-coder draft. A rank publishes only once an independent panel of coders has scored each item and two bias gates clear — inter-coder reliability and the partisan-signal test. Until then the badge is withheld, by design, and no scores are shown here.</p>
+        <p style="font-size:var(--text-body);line-height:1.65;color:var(--text-secondary);margin:0;">A blank rank column is not an omission. It is the point.</p>
+      </div>
+
+      <p style="margin:20px 0 0;font-size:var(--text-reading);"><a href="/plumb-line-why" style="color:var(--card-fact-color);font-weight:700;text-decoration:none;">How the index works, and why nobody is ranked yet →</a></p>
+    </main>
+  )}
 </Base>

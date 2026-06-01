@@ -110,11 +110,20 @@ unlocked only after the independent Layer B coder panel clears the bias gates.
 
 ## 6. Ethics gate for go-live
 
-The viz may be built and reviewed now, but **must not go live** (merge to
-`main`, which auto-deploys) until the independent Layer B coder panel clears the
-inter-coder-reliability and partisan-signal gates — the same discipline as
-`published: false` on the underlying data. Publishing provisional conduct scores
-on named living leaders before the panel would breach the Accuracy Standard.
+The viz may be built and reviewed now, but **must not go live** until the
+independent Layer B coder panel clears the inter-coder-reliability and
+partisan-signal gates — the same discipline as `published: false` on the
+underlying data. Publishing provisional conduct scores on named living leaders
+before the panel would breach the Accuracy Standard.
+
+**This is now enforced in code, so `main` can carry the feature safely.** Until
+`biasAudited` is granted: `scripts/audit-scoreboard.mjs` redacts the deployed
+`public/leaderboard.json` to counts + methodology only (no names, no scores),
+and `src/pages/plumb-line.astro` renders an "in audit" hold view. Both the JSON
+asset and the page were verified to leak zero living-people scores in a
+production build. The full board (and, later, the ranked range-board) auto-reveal
+the moment the badge is granted — launch is a data event, not a deploy.
+`PLUMB_PREVIEW=1` keeps the full data for internal review only.
 
 Sources: [V-Dem](https://www.v-dem.net/data_analysis/CountryGraph/) ·
 [Wilke, *Visualizing Uncertainty*](https://clauswilke.com/dataviz/visualizing-uncertainty.html) ·
