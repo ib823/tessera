@@ -249,7 +249,14 @@
     "minPeerSetRationale": "A dimension is only normalized when its applicable peer set has at least this many defined values. Min-max or rank normalization on one or two points is meaningless: a lone value rank-normalizes to 0, so Singapore's 100th-percentile governance would display as 0. Below the floor the dimension is marked 'insufficient-peer-set' and excluded from the composite — not scored as zero.",
     "minCoverageToRank": 0.50,
     "minCoverageRationale": "A leader receives a published composite and rank only when at least half their applicable dimensions carry a valid (peer-normalized) score. Below the floor the leader is listed as 'on file, not yet rankable', their cited raw metrics shown for transparency, but no composite or rank asserted. This is what prevents a governing-centric index from emitting a misleadingly low number for an opposition figure whose applicable dimensions are mostly uncovered.",
-    "notRankedDisplay": "Leaders below either threshold appear in an 'On file, awaiting a comparable cohort' section with their recorded, cited metrics visible and an explicit reason, never with a composite or rank."
+    "notRankedDisplay": "Leaders below either threshold appear in an 'On file, awaiting a comparable cohort' section with their recorded, cited metrics visible and an explicit reason, never with a composite or rank.",
+    "jurisdictionDataGaps": {
+      "_comment": "Jurisdiction-aware applicability (M2 decision, 2026-06-01). A dimension listed here is one the jurisdiction does not publish the source data for AT ALL — it is applicable to the role but unsourceable for any subject of that country. Such a dimension is excluded from BOTH scoring and the coverage denominator for that country's subjects, and is DISCLOSED on every affected leader's detail as 'excluded — jurisdiction data gap', never silently dropped. This stops a transparency gap in the source country from permanently barring otherwise-documented leaders from ranking, without imputing a fabricated value. Each exclusion is reviewed and removed the moment the data becomes available. Excluding a dimension a leader simply lacks a record on (vs. one the whole jurisdiction never publishes) is NOT permitted here — that remains an honest coverage gap.",
+      "MY": {
+        "dimensions": ["A2", "C3"],
+        "reason": "The Malaysian Parliament does not publish per-member attendance or division (vote) records (A2), and no machine-readable co-sponsorship / division-network dataset exists (C3). Both are applicable to the role but structurally unsourceable for any Malaysian subject as of 2026-06-01."
+      }
+    }
   },
 
   "aggregation": {

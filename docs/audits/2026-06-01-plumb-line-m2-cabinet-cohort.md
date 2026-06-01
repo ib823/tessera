@@ -55,3 +55,26 @@ The open questions for you:
 3. **Adopt the absolute-scalar fix** for A5 and Layer B before any score is published?
 
 Nothing flips to live until these are settled and you approve. The cohort and the A5 spine are committed as reviewable groundwork.
+
+---
+
+## Step 2 (2026-06-01, same day): decisions actioned — jurisdiction-aware applicability + C1 pivotality
+
+Following the three decisions (path: build both in parallel; coverage: jurisdiction-aware applicable set; scalar fix: decide later), two were actioned immediately:
+
+**Jurisdiction-aware applicability (decision 2).** `methodology.validity.jurisdictionDataGaps` now lists, per country, the dimensions that jurisdiction never publishes data for. For Malaysia: **A2** (no per-member attendance/division records) and **C3** (no machine-readable division network). These are excluded from scoring AND the coverage denominator for Malaysian subjects, but **disclosed** on every affected leader's detail (`status: "excluded-jurisdiction"` with the reason), never silently dropped. Malaysian cabinet applicable dimensions drop from 13 to 11; the Singapore benchmark is unaffected. The guardrail in the config is explicit: only dimensions the *whole jurisdiction* never publishes qualify — a leader simply lacking a record stays an honest coverage gap.
+
+**C1 pivotality (objective layer, the safe first step on the data path).** Computed by the committed, reproducible `scripts/compute-pivotality.mjs`: Shapley-Shubik over the seven Dewan Rakyat blocs (GE15, quota 112/222). Coalition-level, because coalition totals are unambiguous whereas per-party tallies carry a 1–2 seat contradiction immaterial to the index. Contradiction noted and resolved: PH was 81 on polling night (Padang Serai postponed), 82 after the 7 Dec 2022 by-election; we use 82, the figure that held through the scored period.
+
+| Bloc | Seats | SS index | Cohort member(s) |
+|---|---:|---:|---|
+| PH | 82 | 0.4048 | Loke, Fahmi, Mohamad Sabu |
+| PN | 74 | 0.2214 | (Hamzah, opposition) |
+| BN | 30 | 0.2214 | Zahid |
+| GPS | 23 | 0.0714 | Nanta |
+
+A third finding falls out of this: **BN (30 seats) holds exactly the same power index as PN (74 seats)** — 0.2214. Pivotal power is not seat count. This is precisely why C1 is a distinct dimension and is flagged non-normative in the methodology.
+
+**State after step 2:** coverage rises to 2 covered dimensions each (A5 + C1) — 18% for ministers (of 11), 25% for Hamzah (of 8), 15% for the benchmark (of 13, no exclusions). All still **on file, not ranked**: reaching 50% needs roughly four more objective dimensions (A1 legislative, A3 pledge, A4 fiscal, C2 governance) and/or the Layer B panel. Build green, badge withheld, everything `published: false`.
+
+**Remaining work on the path to a first published rank:** A4 (Auditor-General per-ministry findings), A1 (bills piloted, Hansard), C2 (domain-scoped governance per portfolio), A3 (manifesto pledge coding), and the ≥3-coder Layer B panel. Each is a separate, carefully-sourced step — no living-minister score will be rushed to force a ranking.

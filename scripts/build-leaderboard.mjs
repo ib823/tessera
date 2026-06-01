@@ -91,9 +91,21 @@ function comparabilityClass(leader) {
   return sorted[0]?.role ?? null;
 }
 
-/** Is a dimension applicable to a leader in any of their periods? */
-function applicableToLeader(leader, dim) {
+/** Does the dimension apply to any role the leader held (role test only)? */
+function roleApplies(leader, dim) {
   return leader.periods.some((p) => dim.appliesToRoles.includes(p.role));
+}
+
+// Jurisdiction-aware applicability: dimensions a country never publishes data
+// for are excluded from scoring + the coverage denominator, but disclosed.
+const jurisdictionGaps = validity.jurisdictionDataGaps ?? {};
+function jurisdictionExcluded(leader, dim) {
+  return (jurisdictionGaps[leader.country]?.dimensions ?? []).includes(dim.id);
+}
+
+/** Applicable for SCORING + coverage: role applies AND not a jurisdiction gap. */
+function applicableToLeader(leader, dim) {
+  return roleApplies(leader, dim) && !jurisdictionExcluded(leader, dim);
 }
 
 /* ---------- 1 + 2: raw values, then normalize per dimension within peer pool ---------- */
@@ -157,13 +169,17 @@ function buildEntry(leader) {
   const cls = comparabilityClass(leader);
   const scoredLayers = ['A', 'B', 'C'].map((id) => {
     const ls = layerScore(leader, id);
+    // Display all role-applicable dims, including jurisdiction-excluded ones
+    // (disclosed, never silently dropped). Scoring/coverage use applicableToLeader.
+    const displayDims = dims.filter((d) => d.layer === id && roleApplies(leader, d));
     return {
       layer: id,
       name: layers[id].name,
       score: roundScore(ls.score, decimals),
-      dimensions: ls.dims.map((d) => {
-        const score = normalized[d.id]?.get(leader.slug) ?? null;
-        const m = leaderDimensionMetric(leader, d);
+      dimensions: displayDims.map((d) => {
+        const excluded = jurisdictionExcluded(leader, d);
+        const score = excluded ? null : normalized[d.id]?.get(leader.slug) ?? null;
+        const m = excluded ? null : leaderDimensionMetric(leader, d);
         return {
           dimension: d.id,
           layer: id,
@@ -174,14 +190,16 @@ function buildEntry(leader) {
           // Transparent record of the cited raw datum, shown even when the
           // dimension cannot yet be normalized (peer set too small).
           recorded: m ? { value: m.value, justification: m.justification, citation: m.citation } : null,
-          status:
-            score != null
+          status: excluded
+            ? 'excluded-jurisdiction'
+            : score != null
               ? 'scored'
               : m
                 ? peerSetSize[d.id] < MIN_PEER
                   ? 'on-file-insufficient-peer-set'
                   : 'on-file'
                 : 'no-data',
+          ...(excluded ? { excludedReason: jurisdictionGaps[leader.country]?.reason ?? null } : {}),
         };
       }),
     };
