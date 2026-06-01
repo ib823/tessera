@@ -73,6 +73,24 @@ const T = (x, y, s, o = {}) =>
   `<text x="${x}" y="${y}" font-family="${o.ff || SANS}" font-size="${o.fs || 24}" font-weight="${o.fw || 400}" fill="${o.fill || ink}" text-anchor="${o.an || 'start'}"${o.ls ? ` letter-spacing="${o.ls}"` : ''}${o.style ? ` font-style="${o.style}"` : ''}>${esc(s)}</text>`;
 
 const W = 1240, MARGIN = 56;
+
+// Generic head-and-shoulders silhouette medallion. Deliberately NOT a likeness:
+// a neutral exemplar mark, so no portrait-rights or 3R exposure — identity comes
+// from the name and country beneath it.
+let avatarId = 0;
+function avatar(cx, cy, r, fill, bg) {
+  const id = `av${avatarId++}`;
+  const headR = r * 0.36, headCy = cy - r * 0.24;
+  return (
+    `<clipPath id="${id}"><circle cx="${cx}" cy="${cy}" r="${r}"/></clipPath>` +
+    `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${bg}"/>` +
+    `<g clip-path="url(#${id})">` +
+    `<circle cx="${cx}" cy="${headCy}" r="${headR}" fill="${fill}"/>` +
+    `<ellipse cx="${cx}" cy="${cy + r * 0.92}" rx="${r * 0.74}" ry="${r * 0.82}" fill="${fill}"/>` +
+    `</g>` +
+    `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${fill}" stroke-width="2.5" opacity="0.55"/>`
+  );
+}
 const shortName = (n) => {
   // Drop honorific tails, keep the recognizable name short for the row.
   let s = n.replace(/\s+(Chee Keong|Bin .*|Binti .*)$/i, '').trim();
@@ -173,16 +191,22 @@ body += `<line x1="${MARGIN}" y1="${y}" x2="${W - MARGIN}" y2="${y}" stroke="${h
 y += 22;
 body += T(MARGIN, y, 'INTERNATIONAL CALIBRATION ANCHORS', { ff: SANS, fs: 13, fw: 800, fill: BENCH.solid, ls: 1.2 });
 body += T(W - MARGIN, y, 'references, not competitors', { ff: SANS, fs: 14, fill: sub, an: 'end', style: 'italic' });
-y += 12;
+y += 18;
 const bw = (W - MARGIN * 2 - (benches.length - 1) * 14) / benches.length;
+const bcH = 150;
 benches.forEach((e, i) => {
   const x = MARGIN + i * (bw + 14);
-  body += `<rect x="${x}" y="${y}" width="${bw}" height="56" rx="9" fill="${BENCH.tint}"/>`;
-  body += T(x + 14, y + 26, shortName(e.name), { ff: SANS, fs: 15, fw: 700, fill: ink, style: 'italic' });
-  body += T(x + 14, y + 45, e.country, { ff: SANS, fs: 12, fw: 600, fill: sub });
-  body += T(x + bw - 12, y + 38, String(e.composite ?? '—'), { ff: SERIF, fs: 26, fw: 700, fill: BENCH.solid, an: 'end' });
+  const cx = x + bw / 2;
+  body += `<rect x="${x}" y="${y}" width="${bw}" height="${bcH}" rx="12" fill="${BENCH.tint}"/>`;
+  // silhouette medallion
+  body += avatar(cx, y + 44, 30, BENCH.solid, '#fff');
+  // name (centered, may wrap to a short single line)
+  body += T(cx, y + 98, shortName(e.name), { ff: SANS, fs: 15, fw: 700, fill: ink, an: 'middle', style: 'italic' });
+  // country code + score
+  body += T(cx, y + 118, e.country, { ff: SANS, fs: 12, fw: 700, fill: sub, an: 'middle', ls: 0.5 });
+  body += T(cx, y + 142, String(e.composite ?? '—'), { ff: SERIF, fs: 30, fw: 700, fill: BENCH.solid, an: 'middle' });
 });
-y += 56 + 22;
+y += bcH + 26;
 
 // footer
 body += `<line x1="${MARGIN}" y1="${y}" x2="${W - MARGIN}" y2="${y}" stroke="${ink}" stroke-width="1.5"/>`;
