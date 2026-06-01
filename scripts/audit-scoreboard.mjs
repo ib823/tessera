@@ -167,20 +167,29 @@ const subjectCount = leaders.length;
 }
 
 // 3. Partisan-signal — eta(coalition, LayerB − LayerA residual) below threshold.
+//    Tests whether the Malaysian editorial layer leaks Malaysian COALITION, so it
+//    groups by coalition (not individual party) and excludes foreign benchmarks,
+//    which are reference points, not part of the partisan structure under test.
 {
   const threshold = gateCfg['partisan-signal']?.threshold ?? 0.3;
-  const subjects = allEntries.filter((e) => layerScore(e, 'A') != null && layerScore(e, 'B') != null);
-  const groups = subjects.map((e) => e.affiliation);
+  const coalitionOf = (a) => {
+    const m = a.match(/\(([^)]+)\)/);
+    const f = (m ? m[1] : a).trim();
+    return { 'Pakatan Harapan': 'PH', 'Barisan Nasional': 'BN', 'Gabungan Parti Sarawak': 'GPS', 'Gabungan Rakyat Sabah': 'GRS', 'Perikatan Nasional': 'PN' }[f] ?? (/technocrat|Non-partisan/i.test(a) ? 'Ind.' : f);
+  };
+  const subjects = allEntries.filter((e) => !e.benchmark && layerScore(e, 'A') != null && layerScore(e, 'B') != null);
+  const groups = subjects.map((e) => coalitionOf(e.affiliation));
   const residuals = subjects.map((e) => layerScore(e, 'B') - layerScore(e, 'A'));
   const eta = correlationRatio(groups, residuals);
+  const nGroups = new Set(groups).size;
   results.push({
     id: 'partisan-signal',
     name: gateCfg['partisan-signal']?.name ?? 'Partisan-signal test',
     passed: eta == null ? true : eta <= threshold,
     detail:
       eta == null
-        ? 'Pending — need ≥3 subjects with both Layer A and Layer B scores.'
-        : `Coalition explains eta=${eta.toFixed(3)} of editorial-residual variance (threshold ${threshold}). ${eta <= threshold ? 'Editorial layer is not leaking party.' : 'FAIL — editorial layer correlates with coalition.'}`,
+        ? 'Pending — need ≥3 domestic subjects with both Layer A and Layer B scores.'
+        : `Coalition explains eta=${eta.toFixed(3)} of editorial-residual variance across ${subjects.length} domestic subjects in ${nGroups} coalitions (threshold ${threshold}). ${eta <= threshold ? 'Editorial layer is not leaking coalition.' : 'FAIL — editorial layer correlates with coalition.'}`,
     value: eta ?? undefined,
     threshold,
   });
