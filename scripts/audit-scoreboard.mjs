@@ -304,10 +304,33 @@ writeFileSync(join(PUBLIC, 'leaderboard-audit.json'), `${JSON.stringify(report, 
 // no names, no scores, no provisional conduct on living people ever ships before
 // the bias panel clears. PLUMB_PREVIEW=1 keeps the full file for internal review.
 const PREVIEW = process.env.PLUMB_PREVIEW === '1';
+// Classes that publish on a LIVE build. Only the partisan-certified federal cohort
+// ships publicly; classes disclosed-but-not-certified (state executives) and
+// untestable singletons (opposition frontbench) are withheld from the public board
+// and surfaced as disclosed counts. Benchmarks (foreign references) always ship.
+const PUBLISH_SCOPE = methodology.publishScope ?? ['head-of-government', 'cabinet-minister'];
 if (board) {
   board.biasAudited = biasAudited;
-  if (biasAudited || PREVIEW) {
+  if (PREVIEW) {
     writeFileSync(BOARD_PATH, `${JSON.stringify(board, null, 2)}\n`);
+  } else if (biasAudited) {
+    // SCOPED PUBLISH: ship only in-scope classes + benchmarks; withhold the rest.
+    const publicEntries = board.entries.filter((e) => PUBLISH_SCOPE.includes(e.comparabilityClass));
+    const withheld = board.entries.filter((e) => !PUBLISH_SCOPE.includes(e.comparabilityClass));
+    const withheldByClass = {};
+    for (const e of withheld) withheldByClass[e.comparabilityClass] = (withheldByClass[e.comparabilityClass] ?? 0) + 1;
+    const scoped = {
+      ...board,
+      entries: publicEntries,
+      publishScope: PUBLISH_SCOPE,
+      withheld: {
+        total: withheld.length,
+        byClass: withheldByClass,
+        reason: 'These cohorts are scored and disclosed in the signed audit, but withheld from the public board because the partisan-signal test cannot yet certify them (coalition is confounded with state structural capacity). The published board is the bias-certified federal cohort only.',
+      },
+    };
+    writeFileSync(BOARD_PATH, `${JSON.stringify(scoped, null, 2)}\n`);
+    console.log(`  ◐ leaderboard.json SCOPED PUBLISH: ${publicEntries.length} certified entries shipped, ${withheld.length} withheld (disclosed).`);
   } else {
     const redacted = {
       methodologyVersion: board.methodologyVersion,
