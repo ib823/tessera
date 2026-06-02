@@ -45,7 +45,7 @@ Target the two A-dimensions whose `appliesToRoles` already include
 
 | Dim | Name | Feasibility | Primary source |
 |---|---|---|---|
-| **A4** | Fiscal stewardship | **Tractable** — uniform source, do first | Jabatan Audit Negara, *Laporan Ketua Audit Negara* (state series) + state budget execution |
+| **A4** | Fiscal stewardship | **Source unreachable in-env — see §8 pilot** | Jabatan Audit Negara, *Laporan Ketua Audit Negara* (state series) + state budget execution |
 | **A3** | Pledge fulfilment | **Hard** — uneven manifestos, needs coder panel | State-election manifesto of each governing coalition + delivery record |
 
 Out of scope: **A2** (structurally excluded for MY) and **A1** (state assemblies/DUN
@@ -122,3 +122,46 @@ Decide the rule **before** seeing the recomputed η (same discipline as the GDP/
 
 **Recommendation:** start with the A4 pilot before committing to all 13 — it is the
 tractable, uniform-source half and proves the pipeline cheaply.
+
+## 8. Pilot findings (2026-06-02) — A4 on Johor / Selangor / Kedah
+
+Ran the recommended A4 pilot. It de-risked the central assumption and **falsified the
+"cheap, uniform, automatable" framing** for this environment. Findings:
+
+**Reachability (egress constraint).** This environment's egress proxy fails TLS
+certificate verification for the audit/parliament hosts, so the graduated source is
+**not fetchable here**:
+
+| Host | Result |
+|---|---|
+| `storage.dosm.gov.my` (DOSM) | ✅ reachable (GDP/capita data pulled fine) |
+| `lkan.audit.gov.my` (LKAN portal) | ❌ WAF reject ("requested URL was rejected") |
+| `agdashboard.audit.gov.my` (public dashboard) | ❌ HTTP 503 |
+| `parlimen.gov.my` (parliament-hosted LKAN PDF) | ❌ 503 — `CERTIFICATE_VERIFY_FAILED` at proxy |
+
+**Audit opinion is accessible but low-variance.** Via news/LKAN summaries, **all 13
+states received *unqualified* FY2024 opinions**: 4 without an other-matters paragraph
+(Melaka, Pahang, Pulau Pinang, Terengganu) and 9 with (Johor, Selangor, Kedah, Perak,
+Kelantan, Sarawak, Sabah, Negeri Sembilan, Perlis). A 2-level split barely de-saturates
+Layer A — it is **not** sufficient on its own.
+
+**The discriminating data is PDF-locked.** Development-expenditure execution rate,
+financial-management star rating (AKB), and per-state RM irregularities live in the
+full per-state LKAN volumes on `audit.gov.my` — unreachable here. DOSM (reachable)
+publishes per-state government *revenue* by source, but **not** expenditure execution;
+revenue ≠ stewardship, so it is a weak proxy.
+
+**Revised conclusion.** A4 is conceptually sound and primary-sourced, but in this
+environment it is **not automatable**. The uniform part (opinion) is low-value; the
+high-value part (execution / ratings / findings) requires a human to download the
+13 state LKAN PDFs from `audit.gov.my` in a browser. That manual fetch is the real
+cost — consistent with the publishing pipeline's existing human-in-the-loop steps,
+but it is **not** the cheap automated half the original §2 framing assumed.
+
+**Decision put to maintainer (next step):**
+1. **Manual PDF provision** — maintainer downloads the state LKAN volumes (or specific
+   state *Penyata Kewangan*) and drops them in; the agent extracts execution/findings.
+2. **Per-state assembly portals** — some states (e.g. Selangor's Dewan Negeri) self-publish
+   financial statements; non-uniform, partial coverage, variable reachability.
+3. **Pause A4** — record the categorical audit opinion as a thin A4 (de-saturates only
+   marginally), accept Layer A stays near-saturated, keep the cohort disclosed.
