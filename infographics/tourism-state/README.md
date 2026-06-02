@@ -24,28 +24,30 @@ This artifact lives **outside** the T4A editorial issue pipeline. It is not a pu
   - Domestic tourism receipts → *Domestic Tourism Survey (States) 2024*
   - Nominal state GDP → *GDP by State, 2024* (released 1 July 2025)
 
-### Verification status
-The hosting environment blocks DOSM/data.gov.my (allowlist), so figures could not be pulled
-from the primary PDFs here. Values currently in `data.json` are either `pending` (null) or
-`search-unverified`. **Before this ships as final**, every `gdp_rm_b` and `receipts_rm_b` must
-be set from the DOSM releases and its `*_confidence` flag changed to `verified`. The render
-script watermarks the image "DRAFT — PENDING DOSM VERIFICATION" while any value is missing.
+### Verification status — FINAL
+All 16 states are `verified`. Nominal GDP comes from the *GDP by State 2024* workbook
+(Table 43, current prices, `2024p`); domestic tourism receipts come from each state's
+*Domestic Tourism Survey 2024* report ("Jumlah Terimaan", 2024 column). The per-state receipts
+sum to RM106.7b, matching the published national total — see `SOURCES.md` for the full table
+and reconciliation. The DRAFT watermark is therefore off.
 
-To finalize: open the two DOSM releases above (or `data@dosm.gov.my` on request), transcribe
-the 2024 per-state receipts and nominal GDP into `data.json`, flip the confidence flags, then
-re-render.
+Putrajaya is merged into Kuala Lumpur: DOSM reports no standalone Putrajaya GDP (it sits inside
+W.P. Kuala Lumpur), so the KL tile combines KL + Putrajaya receipts (RM14.08b + RM0.94b) over
+KL GDP. 15 tiles render; the dependency ratio is honest for every one.
 
 ## Render
 ```
-npm install sharp          # already a project dependency
+npm install sharp qrcode      # sharp already a project dependency
 node infographics/tourism-state/render.mjs
 ```
-Writes `tourism-state.png` (1200×1700 logical, rasterised at 2×). The script:
+Writes `tourism-state.png` (1240×1500 logical, rasterised at 2×). The script:
 - computes `pct = receipts ÷ gdp × 100` per state and buckets it into the legend bands,
-- draws a **tile-grid cartogram** (schematic, not a true boundary map — peninsula on the left,
-  Borneo on the right; `●` marks federal territories),
-- draws a ranked dependency table and a sources/caveats footer,
+- draws a **true geographic choropleth** from `malaysia-states.geojson` (equirectangular
+  projection; peninsula left, Borneo right; Putrajaya shaded with KL),
+- renders a boarding-pass header (with a QR to the writeup at
+  `thefourthangle.pages.dev/infographics/tourism-state`), banded legend, and two ranked panels
+  (most tourism-dependent states; largest state economies), on a light paper theme,
 - shows the DRAFT watermark until all 16 values are present.
 
-No map library, GeoJSON, or headless browser is used — only `sharp` for SVG→PNG. The script is
-**not** part of `npm run build` and does not touch the site build or deploy.
+Only `sharp` (SVG→PNG) and a local GeoJSON are used — no map library or headless browser. The
+script is **not** part of `npm run build` and does not touch the site build or deploy.
