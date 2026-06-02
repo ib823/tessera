@@ -18,7 +18,7 @@ const showFull = !!board && board.redacted !== true && Array.isArray(board.entri
 const isPreview = showFull && board.biasAudited !== true; // full data, badge not yet granted = internal review
 const counts = board?.counts ?? { total: 37, ranked: 0 };
 ---
-<Base title="The Plumb Line — accountability index" noindex={true}>
+<Base title="The Plumb Line — accountability index" noindex={true} image="/og/plumb-line-og.png">
   <UtilityHeader />
   {isPreview && (
     <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">

@@ -272,3 +272,8 @@ if (!CERTIFIED) {
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="${cream}"/>${watermark}${body}</svg>`;
 await sharp(Buffer.from(svg)).png().toFile(OUT);
 console.log(`  ✓ Plumb Line poster → ${OUT}  (${W}×${H}, ${ranked.length} ranked + ${benches.length} anchors${CERTIFIED ? '' : ', PREVIEW'})`);
+
+// 1200×630 OG card: the title-bearing top of the poster, for social sharing.
+const OG_OUT = join(ROOT, 'public/og/plumb-line-og.png');
+await sharp(Buffer.from(svg)).resize({ width: 1200 }).extract({ left: 0, top: 0, width: 1200, height: 630 }).png().toFile(OG_OUT);
+console.log(`  ✓ Plumb Line OG card → ${OG_OUT}  (1200×630)`);
