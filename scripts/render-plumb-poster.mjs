@@ -174,7 +174,9 @@ y += 20;
 // title (serif, two lines) on the left; methodology box on the right
 body += T(MARGIN, y + 52, "MALAYSIA'S LEADERS,", { ff: SERIF, fs: 50, fw: 700, fill: ink });
 body += T(MARGIN, y + 108, 'ON THE LEVEL', { ff: SERIF, fs: 50, fw: 700, fill: ink });
-body += T(MARGIN, y + 150, 'Malaysian leaders measured on the public record, and against world benchmarks on the same scale.', { ff: SANS, fs: 16.5, fill: sub });
+// subline wrapped to two lines so the methodology box (x=760) never overlaps it
+body += T(MARGIN, y + 146, 'Malaysian leaders measured on the public record,', { ff: SANS, fs: 16.5, fill: sub });
+body += T(MARGIN, y + 168, 'and against world benchmarks on the same scale.', { ff: SANS, fs: 16.5, fill: sub });
 
 // methodology box
 const mbX = 760, mbW = W - MARGIN - mbX;
