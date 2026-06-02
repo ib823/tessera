@@ -1,14 +1,18 @@
 #!/usr/bin/env node
 // Renders the "tourism dependency by Malaysian state" infographic.
 //
-// Reads data.json, draws a tile-grid cartogram (one rounded tile per state,
-// arranged in an approximate geographic grid — peninsula on the left, Borneo
-// on the right) plus a ranked dependency table, then rasterises the SVG to PNG
-// with sharp (already a project dependency; no map library / headless browser).
+// Draws a true geographic choropleth of Malaysia's 16 states (domestic tourism
+// receipts as % of state GDP, 2024) plus a legend and two ranked panels, then
+// rasterises the SVG to PNG with sharp. Inspired by the country-level
+// "how dependent are countries on tourism" infographic: light paper theme,
+// boarding-pass header, banded colours, ranked tables.
 //
 //   node infographics/tourism-state/render.mjs
 //
 // Output: infographics/tourism-state/tourism-state.png
+//
+// Boundaries: malaysia-states.geojson (DOSM open data, dosm-malaysia/data-open,
+// administrative_1_state — simplified to 3-decimal coords). Offline/reproducible.
 
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -17,189 +21,303 @@ import sharp from "sharp";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(await readFile(join(HERE, "data.json"), "utf8"));
+const geo = JSON.parse(await readFile(join(HERE, "malaysia-states.geojson"), "utf8"));
 
-// ---- canvas geometry (logical units; rasterised at 2x for crispness) ----
-const W = 1200;
-const H = 1700;
+// ---- canvas ----
+const W = 1240;
+const H = 1500;
 const SCALE = 2;
 
-const BG = "#0f0f23";        // T4A deep navy
-const PANEL = "#1c1c4d";
-const PANEL_SOFT = "#15153a";
-const INK = "#f4f4ff";
-const MUTE = "#9aa0c8";
-const NA = "#5b6078";
+// light paper palette
+const PAPER = "#efe7d6";
+const INK = "#2c2b38";
+const MUTE = "#6f6a5d";
+const BANNER = "#3b3b76";
+const BANNER2 = "#2c2c5c";
+const CREAM = "#f6f1e6";
+const PANEL = "#fbf7ee";
+const PANEL_LINE = "#e3d9c4";
+const NA = "#b9b2a3";
 
-// ---- helpers ----
 const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const fmt = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(n < 10 ? 2 : 1));
 
+// ---- model ----
 function pctOf(s) {
   if (s.gdp_rm_b == null || s.receipts_rm_b == null) return null;
   return (s.receipts_rm_b / s.gdp_rm_b) * 100;
 }
-
 function bandColor(pct) {
   if (pct == null) return NA;
   for (const b of data.bands) if (pct < b.max) return b.color;
   return data.bands[data.bands.length - 1].color;
 }
-
-// Enrich states with computed percentage + colour.
 const states = data.states.map((s) => {
   const pct = pctOf(s);
   return { ...s, pct, color: bandColor(pct) };
 });
+const byName = new Map(states.map((s) => [s.state, s]));
 const anyPending = states.some((s) => s.pct == null);
 
-// ---- cartogram grid ----
-const COLS = 7;
-const ROWS = 6;
-const TILE = 110;
-const GAP = 12;
-const gridW = COLS * TILE + (COLS - 1) * GAP;
-const gridH = ROWS * TILE + (ROWS - 1) * GAP;
-const ORIGIN_X = (W - gridW) / 2;
-const ORIGIN_Y = 320;
+// geojson name -> data.json name (Putrajaya folds into Kuala Lumpur)
+const NAME_MAP = {
+  "Pulau Pinang": "Penang",
+  "W.P. Kuala Lumpur": "Kuala Lumpur",
+  "W.P. Labuan": "Labuan",
+  "W.P. Putrajaya": "Kuala Lumpur",
+};
+const dataName = (gn) => NAME_MAP[gn] || gn;
 
-function tile(s) {
-  const x = ORIGIN_X + s.grid.c * (TILE + GAP);
-  const y = ORIGIN_Y + s.grid.r * (TILE + GAP);
-  const valTxt = s.pct == null ? "n/a" : `${s.pct.toFixed(1)}%`;
-  const valColor = s.pct == null ? MUTE : "#0f0f23";
-  // dark bands need light value text for contrast
-  const darkBand = s.pct == null || s.pct < 2;
-  const vCol = darkBand ? INK : valColor;
-  const ftMark = s.ft
-    ? `<circle cx="${x + TILE - 16}" cy="${y + 16}" r="5" fill="${INK}" opacity="0.7"/>`
-    : "";
-  return `
-    <g>
-      <rect x="${x}" y="${y}" width="${TILE}" height="${TILE}" rx="12"
-            fill="${s.color}" stroke="${BG}" stroke-width="2"/>
-      ${ftMark}
-      <text x="${x + TILE / 2}" y="${y + 44}" text-anchor="middle"
-            font-family="Arial, sans-serif" font-size="22" font-weight="700"
-            fill="${darkBand ? INK : "#0f0f23"}">${esc(s.code)}</text>
-      <text x="${x + TILE / 2}" y="${y + 74}" text-anchor="middle"
-            font-family="Arial, sans-serif" font-size="20" font-weight="700"
-            fill="${vCol}">${valTxt}</text>
-    </g>`;
+// ---- projection (equirectangular, fit to map box) ----
+const MX = 36, MY = 372, MW = W - 72, MH = 486;
+let minLon = 1e9, maxLon = -1e9, minLat = 1e9, maxLat = -1e9;
+const walk = (c, f) => {
+  if (typeof c[0] === "number") f(c[0], c[1]);
+  else for (const cc of c) walk(cc, f);
+};
+for (const ft of geo.features)
+  walk(ft.geometry.coordinates, (lon, lat) => {
+    minLon = Math.min(minLon, lon); maxLon = Math.max(maxLon, lon);
+    minLat = Math.min(minLat, lat); maxLat = Math.max(maxLat, lat);
+  });
+const k = Math.min(MW / (maxLon - minLon), MH / (maxLat - minLat));
+const usedW = (maxLon - minLon) * k, usedH = (maxLat - minLat) * k;
+const offX = MX + (MW - usedW) / 2, offY = MY + (MH - usedH) / 2;
+const px = (lon) => offX + (lon - minLon) * k;
+const py = (lat) => offY + (maxLat - lat) * k;
+
+const ringPath = (ring) =>
+  ring.map((p, i) => `${i ? "L" : "M"}${px(p[0]).toFixed(1)} ${py(p[1]).toFixed(1)}`).join("") + "Z";
+function polysOf(geom) {
+  return geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
+}
+// shoelace area + centroid (projected) of a ring
+function ringStats(ring) {
+  let a = 0, cx = 0, cy = 0;
+  for (let i = 0; i < ring.length - 1; i++) {
+    const x0 = px(ring[i][0]), y0 = py(ring[i][1]);
+    const x1 = px(ring[i + 1][0]), y1 = py(ring[i + 1][1]);
+    const cr = x0 * y1 - x1 * y0;
+    a += cr; cx += (x0 + x1) * cr; cy += (y0 + y1) * cr;
+  }
+  a *= 0.5;
+  if (Math.abs(a) < 1e-6) return { area: 0, cx: px(ring[0][0]), cy: py(ring[0][1]) };
+  return { area: Math.abs(a), cx: cx / (6 * a), cy: cy / (6 * a) };
 }
 
-// ---- legend ----
-function legend() {
-  const chipH = 38;
-  const y = 250;
-  let x = ORIGIN_X;
-  const parts = data.bands
-    .map((b) => {
-      const w = 24 + b.label.length * 11 + 26;
-      const g = `
-        <g>
-          <rect x="${x}" y="${y}" width="${w}" height="${chipH}" rx="19" fill="${b.color}"/>
-          <text x="${x + w / 2}" y="${y + 25}" text-anchor="middle"
-                font-family="Arial, sans-serif" font-size="18" font-weight="700"
-                fill="${b.max <= 2 ? INK : "#0f0f23"}">${esc(b.label)}</text>
-        </g>`;
-      x += w + 10;
-      return g;
+// build per-feature render info
+const shapes = geo.features.map((ft) => {
+  const s = byName.get(dataName(ft.properties.state));
+  const polys = polysOf(ft.geometry);
+  let big = null;
+  let d = "";
+  for (const poly of polys) {
+    d += poly.map(ringPath).join(""); // outer + holes (fill-rule evenodd)
+    const st = ringStats(poly[0]);
+    if (!big || st.area > big.area) big = st;
+  }
+  return {
+    name: ft.properties.state,
+    d,
+    color: s ? s.color : NA,
+    pct: s ? s.pct : null,
+    area: big.area,
+    cx: big.cx,
+    cy: big.cy,
+  };
+});
+// draw large areas first, small enclaves (KL/Putrajaya) last so they sit on top
+shapes.sort((a, b) => b.area - a.area);
+
+function mapSvg() {
+  const paths = shapes
+    .map(
+      (s) =>
+        `<path d="${s.d}" fill="${s.color}" fill-rule="evenodd" stroke="${PAPER}" stroke-width="1.1" stroke-linejoin="round"/>`,
+    )
+    .join("");
+  // on-map % labels for states with enough area (skip tiny enclaves; panels cover them)
+  const labels = shapes
+    .filter((s) => s.pct != null && s.area > 2600 && s.name !== "W.P. Putrajaya" && s.name !== "W.P. Kuala Lumpur")
+    .map((s) => {
+      const dark = s.pct == null || s.pct < 2;
+      const fill = dark ? "#ffffff" : "#1d1c26";
+      const t = `${s.pct.toFixed(1)}%`;
+      return `<text x="${s.cx.toFixed(1)}" y="${(s.cy + 4).toFixed(1)}" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="15" font-weight="800"
+        fill="${fill}" stroke="${dark ? "#00000055" : "#ffffffcc"}" stroke-width="2.4"
+        paint-order="stroke">${t}</text>`;
     })
     .join("");
-  return parts;
-}
-
-// ---- ranking table ----
-function ranking() {
-  const ranked = states
-    .filter((s) => s.pct != null)
-    .sort((a, b) => b.pct - a.pct);
-  const pending = states.filter((s) => s.pct == null);
-
-  const tx = ORIGIN_X;
-  const ty = 1110;
-  const rowH = 46;
-  const colW = gridW;
-
-  let rows = "";
-  ranked.forEach((s, i) => {
-    const ry = ty + 52 + i * rowH;
-    rows += `
-      <rect x="${tx}" y="${ry - 32}" width="${colW}" height="${rowH - 6}" rx="8"
-            fill="${i % 2 ? PANEL_SOFT : PANEL}"/>
-      <circle cx="${tx + 28}" cy="${ry - 9}" r="11" fill="${s.color}"/>
-      <text x="${tx + 56}" y="${ry - 2}" font-family="Arial, sans-serif"
-            font-size="24" font-weight="600" fill="${INK}">${esc(s.state)}</text>
-      <text x="${tx + colW - 130}" y="${ry - 2}" text-anchor="end"
-            font-family="Arial, sans-serif" font-size="17" fill="${MUTE}">RM${s.receipts_rm_b}b / RM${s.gdp_rm_b}b</text>
-      <text x="${tx + colW - 16}" y="${ry - 2}" text-anchor="end"
-            font-family="Arial, sans-serif" font-size="24" font-weight="700"
-            fill="${INK}">${s.pct.toFixed(1)}%</text>`;
-  });
-
-  let pendingNote = "";
-  if (pending.length) {
-    const names = pending.map((s) => s.state);
-    const perLine = 6;
-    const lines = [];
-    for (let i = 0; i < names.length; i += perLine)
-      lines.push(names.slice(i, i + perLine).join(", "));
-    const baseY = ty + 60 + ranked.length * rowH + 16;
-    pendingNote =
-      `<text x="${tx}" y="${baseY}" font-family="Arial, sans-serif" font-size="18"
-             font-weight="700" fill="${MUTE}">Awaiting DOSM figures (${pending.length}):</text>` +
-      lines
-        .map(
-          (ln, i) =>
-            `<text x="${tx}" y="${baseY + 28 + i * 26}" font-family="Arial, sans-serif"
-                   font-size="18" fill="${MUTE}">${esc(ln)}</text>`,
-        )
-        .join("");
+  // KL callout (federal-territory cluster is too small to label in place)
+  const kl = byName.get("Kuala Lumpur");
+  const klShape = shapes.find((s) => s.name === "W.P. Kuala Lumpur");
+  let callout = "";
+  if (kl && klShape) {
+    const lx = klShape.cx, ly = klShape.cy;
+    const bx = Math.min(lx, MX + 150), by = MY + MH - 26;
+    callout = `
+      <line x1="${lx.toFixed(1)}" y1="${ly.toFixed(1)}" x2="${bx.toFixed(1)}" y2="${(by - 9).toFixed(1)}"
+            stroke="${INK}" stroke-width="1" opacity="0.55"/>
+      <circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="2.6" fill="${INK}"/>
+      <text x="${bx.toFixed(1)}" y="${by.toFixed(1)}" text-anchor="middle"
+            font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="${INK}">
+        KL + Putrajaya ${kl.pct.toFixed(1)}%</text>`;
   }
-
-  return `
-    <text x="${tx}" y="${ty}" font-family="Arial, sans-serif" font-size="28"
-          font-weight="700" fill="${INK}">States ranked by domestic tourism dependency</text>
-    ${rows}
-    ${pendingNote}`;
+  return paths + labels + callout;
 }
 
-// ---- draft watermark ----
+// ---- legend pills ----
+function legend(y) {
+  let x = 0;
+  const items = data.bands.map((b) => {
+    const w = 30 + b.label.length * 10;
+    const g = { x, w, b };
+    x += w + 12;
+    return g;
+  });
+  const total = x - 12;
+  const startX = (W - total) / 2;
+  return items
+    .map(({ x, w, b }) => {
+      const cx = startX + x;
+      const light = b.max <= 2;
+      return `<g>
+        <rect x="${cx}" y="${y}" width="${w}" height="34" rx="17" fill="${b.color}"/>
+        <text x="${cx + w / 2}" y="${y + 23}" text-anchor="middle" font-family="Arial, sans-serif"
+              font-size="16" font-weight="800" fill="${light ? "#ffffff" : "#1d1c26"}">${esc(b.label)}</text>
+      </g>`;
+    })
+    .join("");
+}
+
+// ---- ranked panel ----
+function panel(x, y, w, title, rows) {
+  const rowH = 40;
+  const bodyTop = y + 74;
+  const h = 74 + rows.length * rowH + 12;
+  let out = `
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="16" fill="${PANEL}" stroke="${PANEL_LINE}" stroke-width="1.5"/>
+    <rect x="${x}" y="${y}" width="${w}" height="40" rx="16" fill="${BANNER}"/>
+    <rect x="${x}" y="${y + 22}" width="${w}" height="18" fill="${BANNER}"/>
+    <text x="${x + 18}" y="${y + 26}" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="${CREAM}">${esc(title)}</text>`;
+  rows.forEach((r, i) => {
+    const ry = bodyTop + i * rowH;
+    if (i % 2)
+      out += `<rect x="${x + 8}" y="${ry - 26}" width="${w - 16}" height="${rowH - 6}" rx="8" fill="#00000008"/>`;
+    out += `
+      <circle cx="${x + 30}" cy="${ry - 8}" r="13" fill="${r.color}"/>
+      <text x="${x + 30}" y="${ry - 3}" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="${r.color === NA || r.dark ? "#fff" : "#1d1c26"}">${i + 1}</text>
+      <text x="${x + 52}" y="${ry - 3}" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="${INK}">${esc(r.name)}</text>
+      <text x="${x + w - 96}" y="${ry - 3}" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="${MUTE}">${esc(r.meta)}</text>
+      <text x="${x + w - 16}" y="${ry - 3}" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="${r.color === NA ? MUTE : r.color}">${esc(r.val)}</text>`;
+  });
+  return out;
+}
+
+const ranked = states.filter((s) => s.pct != null);
+const depRows = [...ranked]
+  .sort((a, b) => b.pct - a.pct)
+  .slice(0, 8)
+  .map((s) => ({
+    name: s.state,
+    color: s.color,
+    dark: s.pct < 2,
+    val: `${s.pct.toFixed(1)}%`,
+    meta: `RM${fmt(s.receipts_rm_b)}b`,
+  }));
+const gdpRows = [...ranked]
+  .sort((a, b) => b.gdp_rm_b - a.gdp_rm_b)
+  .slice(0, 8)
+  .map((s) => ({
+    name: s.state,
+    color: s.color,
+    dark: s.pct < 2,
+    val: `${s.pct.toFixed(1)}%`,
+    meta: `RM${fmt(s.gdp_rm_b)}b GDP`,
+  }));
+
+// ---- header (boarding-pass style) ----
+function header() {
+  const x = 36, y = 36, w = W - 72, h = 250;
+  // barcode
+  let bars = "";
+  let bx = x + 26;
+  const seed = [3, 2, 5, 2, 3, 4, 2, 6, 2, 3, 2, 5, 3, 2, 4, 2, 3, 5, 2, 3, 2, 4];
+  for (let i = 0; i < seed.length; i++) {
+    bars += `<rect x="${bx}" y="${y + 150}" width="${seed[i]}" height="64" fill="${CREAM}" opacity="0.92"/>`;
+    bx += seed[i] + 3;
+  }
+  return `
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" fill="${BANNER}"/>
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" fill="url(#bannerGrad)"/>
+    <line x1="${x + w - 360}" y1="${y + 18}" x2="${x + w - 360}" y2="${y + h - 18}"
+          stroke="${CREAM}" stroke-width="2" stroke-dasharray="2 7" opacity="0.5"/>
+    <text x="${x + 28}" y="${y + 58}" font-family="Arial, sans-serif" font-size="15" font-weight="700"
+          fill="${CREAM}" opacity="0.85" letter-spacing="3">DOMESTIC TOURISM · MALAYSIA · 2024</text>
+    <text x="${x + 26}" y="${y + 108}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">How tourism-dependent</text>
+    <text x="${x + 26}" y="${y + 150}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">is each Malaysian state?</text>
+    ${bars}
+    <text x="${x + w - 330}" y="${y + 64}" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="${CREAM}">✈  BOARDING</text>
+    <text x="${x + w - 330}" y="${y + 104}" font-family="Arial, sans-serif" font-size="17" fill="${CREAM}" opacity="0.92">Domestic tourism receipts</text>
+    <text x="${x + w - 330}" y="${y + 130}" font-family="Arial, sans-serif" font-size="17" fill="${CREAM}" opacity="0.92">as % of state GDP</text>
+    <text x="${x + w - 330}" y="${y + 196}" font-family="Arial, sans-serif" font-size="13" fill="${CREAM}" opacity="0.7">Derived ratio · not comparable to</text>
+    <text x="${x + w - 330}" y="${y + 214}" font-family="Arial, sans-serif" font-size="13" fill="${CREAM}" opacity="0.7">international-receipts charts</text>`;
+}
+
 function watermark() {
   if (!anyPending) return "";
-  return `
-    <g transform="translate(${W / 2}, ${H / 2}) rotate(-24)">
-      <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif"
-            font-size="74" font-weight="800" fill="#ffffff" opacity="0.10">
-        DRAFT — PENDING DOSM VERIFICATION</text>
-    </g>`;
+  return `<g transform="translate(${W / 2}, ${H / 2}) rotate(-24)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="74" font-weight="800"
+          fill="#000000" opacity="0.10">DRAFT — PENDING DOSM VERIFICATION</text></g>`;
 }
 
+const panelsY = 880;
+const colW = (W - 72 - 24) / 2;
+
 const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="${W * SCALE}" height="${H * SCALE}"
-     viewBox="0 0 ${W} ${H}">
-  <rect width="${W}" height="${H}" fill="${BG}"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="${W * SCALE}" height="${H * SCALE}" viewBox="0 0 ${W} ${H}">
+  <defs>
+    <linearGradient id="bannerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${BANNER}"/>
+      <stop offset="1" stop-color="${BANNER2}"/>
+    </linearGradient>
+    <radialGradient id="vign" cx="50%" cy="42%" r="75%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.06"/>
+    </radialGradient>
+    <pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="${PAPER}"/>
+      <circle cx="1" cy="1" r="0.5" fill="#000000" opacity="0.03"/>
+      <circle cx="4" cy="3" r="0.5" fill="#ffffff" opacity="0.05"/>
+      <circle cx="2.5" cy="5" r="0.5" fill="#000000" opacity="0.025"/>
+    </pattern>
+  </defs>
 
-  <!-- header -->
-  <rect x="40" y="40" width="${W - 80}" height="170" rx="18" fill="${PANEL}"/>
-  <text x="70" y="110" font-family="Arial, sans-serif" font-size="46" font-weight="800"
-        fill="${INK}">How tourism-dependent is each state?</text>
-  <text x="70" y="158" font-family="Arial, sans-serif" font-size="26" fill="${MUTE}">
-    Domestic tourism receipts as % of state GDP · Malaysia · 2024</text>
-  <text x="70" y="190" font-family="Arial, sans-serif" font-size="18" fill="${MUTE}">
-    Derived ratio · domestic tourism only (not comparable to international receipts charts)</text>
+  <rect width="${W}" height="${H}" fill="${PAPER}"/>
+  <rect width="${W}" height="${H}" fill="url(#grain)"/>
+  <rect width="${W}" height="${H}" fill="url(#vign)"/>
 
-  ${legend()}
-  ${states.map(tile).join("")}
-  ${ranking()}
+  ${header()}
+  ${legend(308)}
+
+  <text x="${W / 2}" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="13"
+        font-weight="700" fill="${MUTE}" letter-spacing="1.5">SHARE OF EACH STATE'S GDP THAT COMES FROM DOMESTIC TOURISM</text>
+  ${mapSvg()}
+
+  <text x="36" y="${panelsY - 14}" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="${INK}">The rankings</text>
+  ${panel(36, panelsY, colW, "Most tourism-dependent states", depRows)}
+  ${panel(36 + colW + 24, panelsY, colW, "Largest state economies (by GDP)", gdpRows)}
+
   ${watermark()}
 
-  <!-- footer -->
-  <line x1="40" y1="${H - 96}" x2="${W - 40}" y2="${H - 96}" stroke="${PANEL}" stroke-width="2"/>
-  <text x="40" y="${H - 64}" font-family="Arial, sans-serif" font-size="17" fill="${MUTE}">
-    Source: Department of Statistics Malaysia (DOSM) — Domestic Tourism Survey (States) 2024 &amp; GDP by State 2024. CC-BY 4.0.</text>
-  <text x="40" y="${H - 40}" font-family="Arial, sans-serif" font-size="17" fill="${MUTE}">
-    Metric = domestic tourism receipts ÷ nominal state GDP (derived; both 2024). ● = federal territory.</text>
+  <line x1="36" y1="${H - 78}" x2="${W - 36}" y2="${H - 78}" stroke="${PANEL_LINE}" stroke-width="1.5"/>
+  <text x="36" y="${H - 50}" font-family="Arial, sans-serif" font-size="14" fill="${MUTE}">
+    Source: Department of Statistics Malaysia — Domestic Tourism Survey (States) 2024 &amp; GDP by State 2024 (current prices). CC-BY 4.0.</text>
+  <text x="36" y="${H - 28}" font-family="Arial, sans-serif" font-size="14" fill="${MUTE}">
+    Metric = domestic tourism receipts ÷ nominal state GDP (derived; both 2024). KL tile includes Putrajaya. Boundaries: DOSM open data.</text>
+  <text x="${W - 36}" y="${H - 28}" text-anchor="end" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="${BANNER}">The Fourth Angle</text>
 </svg>`;
 
 const out = join(HERE, "tourism-state.png");

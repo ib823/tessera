@@ -40,12 +40,13 @@ KL GDP. 15 tiles render; the dependency ratio is honest for every one.
 npm install sharp          # already a project dependency
 node infographics/tourism-state/render.mjs
 ```
-Writes `tourism-state.png` (1200×1700 logical, rasterised at 2×). The script:
+Writes `tourism-state.png` (1240×1500 logical, rasterised at 2×). The script:
 - computes `pct = receipts ÷ gdp × 100` per state and buckets it into the legend bands,
-- draws a **tile-grid cartogram** (schematic, not a true boundary map — peninsula on the left,
-  Borneo on the right; `●` marks federal territories),
-- draws a ranked dependency table and a sources/caveats footer,
+- draws a **true geographic choropleth** from `malaysia-states.geojson` (equirectangular
+  projection; peninsula left, Borneo right; Putrajaya shaded with KL),
+- renders a boarding-pass header, banded legend, and two ranked panels (most tourism-dependent
+  states; largest state economies), on a light paper theme,
 - shows the DRAFT watermark until all 16 values are present.
 
-No map library, GeoJSON, or headless browser is used — only `sharp` for SVG→PNG. The script is
-**not** part of `npm run build` and does not touch the site build or deploy.
+Only `sharp` (SVG→PNG) and a local GeoJSON are used — no map library or headless browser. The
+script is **not** part of `npm run build` and does not touch the site build or deploy.

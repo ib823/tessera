@@ -12,10 +12,11 @@ Machine-readable GDP catalogue (parquet/CSV, no API key):
 `https://storage.dosm.gov.my/gdp/...` (nominal counterpart for the denominator).
 
 ## Map asset
-No external boundary file is used. The cartogram is a **hand-coded tile grid** (one tile per
-state) defined by the `grid` field in `data.json`, so there is no third-party map licence to
-track. This sidesteps GADM's non-commercial restriction and the network block on GeoJSON
-downloads in this environment.
+The choropleth uses real state boundaries from **DOSM open data** (`dosm-malaysia/data-open`,
+`datasets/geodata/administrative_1_state.geojson`), simplified to 3-decimal coordinates and
+stored locally as `malaysia-states.geojson` so the render is offline-reproducible. Same
+publisher as the statistics (DOSM), CC-BY 4.0 — no GADM non-commercial restriction. The earlier
+hand-coded tile grid is retired. The `grid` field is still present in `data.json` but unused.
 
 ## Confidence flags (in data.json)
 - `verified` — transcribed from the DOSM primary release listed above. **All 16 states are now `verified`.**
