@@ -186,7 +186,7 @@ let y = 64;
 
 // masthead
 body += T(MARGIN, y + 6, 'THE PLUMB LINE', { ff: SANS, fs: 19, fw: 800, fill: ink, ls: 5 });
-body += T(MARGIN, y + 30, 'A non-partisan accountability index · The Fourth Angle', { ff: SANS, fs: 16, fill: sub });
+body += T(MARGIN, y + 30, 'Accountability index · The Fourth Angle', { ff: SANS, fs: 16, fill: sub });
 y += 70;
 body += `<line x1="${MARGIN}" y1="${y}" x2="${W - MARGIN}" y2="${y}" stroke="${ink}" stroke-width="2"/>`;
 y += 20;
@@ -194,7 +194,7 @@ y += 20;
 // title (serif, two lines) on the left; methodology box on the right
 body += T(MARGIN, y + 52, "MALAYSIA'S LEADERS,", { ff: SERIF, fs: 50, fw: 700, fill: ink });
 body += T(MARGIN, y + 108, 'ON THE LEVEL', { ff: SERIF, fs: 50, fw: 700, fill: ink });
-body += T(MARGIN, y + 150, `${ranked.length} leaders, one fixed yardstick. World benchmarks on the same scale.`, { ff: SANS, fs: 16.5, fill: sub });
+body += T(MARGIN, y + 150, 'Malaysian leaders measured on the public record, and against world benchmarks on the same scale.', { ff: SANS, fs: 16.5, fill: sub });
 
 // methodology box
 const mbX = 760, mbW = W - MARGIN - mbX;
@@ -269,11 +269,10 @@ y += bcH + 26;
 // footer
 body += `<line x1="${MARGIN}" y1="${y}" x2="${W - MARGIN}" y2="${y}" stroke="${ink}" stroke-width="1.5"/>`;
 y += 22;
-body += T(MARGIN, y, 'Sources: Hansard, federal gazettes, Auditor-General reports, court-record status, asset declarations. Same instrument, every leader.', { ff: SANS, fs: 14, fill: '#33333f' });
+body += T(MARGIN, y, 'Every number comes from the public record and is individually cited: Hansard, gazettes, Auditor-General reports, court records and asset declarations.', { ff: SANS, fs: 14, fill: '#33333f' });
 y += 20;
-body += T(MARGIN, y, 'Rank is a range where conduct bands overlap. Color encodes party of record, a public fact — it is never an input to the score.', { ff: SANS, fs: 14, fill: '#33333f' });
-y += 20;
-body += T(MARGIN, y, CERTIFIED ? 'Bias-audited: passed.' : 'Bias panel: not yet certified on this cohort. Provisional — not published.', { ff: SANS, fs: 14, fw: 700, fill: CERTIFIED ? COAL.GPS.solid : COAL.BN.solid });
+body += T(MARGIN, y, "Colour shows a leader's party, never their score. Where two leaders are too close to rank apart, the position is shown as a range.", { ff: SANS, fs: 14, fill: '#33333f' });
+y += 24;
 body += T(W - MARGIN, y, 'thefourthangle.pages.dev/plumb-line', { ff: SANS, fs: 14, fw: 700, fill: ink, an: 'end' });
 y += 36;
 
