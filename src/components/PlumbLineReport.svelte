@@ -83,8 +83,6 @@
       <p>Deliberately left out: race, religion and royalty as subjects; popularity, polls and social-media following; and political direction itself. The board never rewards or penalises a political position. It measures what a leader did in office, and whether they kept their word.</p>
 
       <p>The principle is simple: prove it, then publish it. A cohort is marked bias-audited only after five checks pass: a consistent method, full sourcing, reviewer agreement, stable ranks, and no link between score and party. Where that last check cannot yet be made cleanly, as with the state premiers, the result is shown openly as an unresolved finding rather than presented as certified.</p>
-
-      <p class="pl__more"><a href="/plumb-line-why">Read the full methodology, and why certification is done group by group →</a></p>
     </section>
   {:else if tab === 'dataset'}
     <section class="pl__body pl__data">
@@ -120,7 +118,7 @@
   {:else}
     <section class="pl__body pl__src">
       <h2>How it is measured</h2>
-      <p>Three layers, every input citable: Public Record (objective, ~50%), Editorial Panel (a fixed 0–4 rubric, ~20%, multi-coder), and Composite political-science indices (~30%). Methodology of record: <a href="/plumb-line-why">the methodology explainer</a>. Version {board?.methodologyVersion ?? ''}.</p>
+      <p>Three layers, every input citable: Public Record (objective, ~50%), Editorial Panel (a fixed 0–4 rubric, ~20%, multi-coder), and Composite political-science indices (~30%). Version {board?.methodologyVersion ?? ''}.</p>
 
       <h2>Bias audit: the five gates</h2>
       <ul class="pl__gates">

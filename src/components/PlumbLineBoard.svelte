@@ -58,7 +58,7 @@
     </div>
 
     <div class="pl__why">
-      <strong>Why nobody is ranked yet.</strong> Every subject is on file with cited data, but the conduct panel is a single-coder draft. A rank is published only once an independent panel of {board.validity.minPeerSetSize}+ coders has scored each item and two bias gates clear (inter-coder reliability and the partisan-signal test). Until then the badge is <em>withheld</em> — by design, not omission. <a class="pl__whylink" href="/plumb-line-why">Walk through the methodology →</a>
+      <strong>Why nobody is ranked yet.</strong> Every subject is on file with cited data, but the conduct panel is a single-coder draft. A rank is published only once an independent panel of {board.validity.minPeerSetSize}+ coders has scored each item and two bias gates clear (inter-coder reliability and the partisan-signal test). Until then the badge is <em>withheld</em> — by design, not omission.
     </div>
 
     <div class="pl__tracks">
