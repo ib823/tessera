@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-01T23:29:31.208Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-02T04:08:59.795Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (77)
+## ⏳ TO POST (78)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -148,40 +148,6 @@ Penalties already exist. The real question is whether Malaysia detects drunk dri
 Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
 
 https://thefourthangle.pages.dev/issue/1958
-```
-
-### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
-
-> ⚡ **Reactive: topic is live in the radar** (pelaksanaan bdr jimat rm4.22 juta subsidi petrol, kata ksn. kerajaan melaksanakan inisiati). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
-
-**1/6** _(hook — attach image, NO link)_ · 112 chars
-```
-Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
-```
-**2/6** _(fact)_ · 138 chars
-```
-Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
-```
-**3/6** _(fact)_ · 255 chars
-```
-Lower-income households are more exposed to food price rises as a share of expenditure. DOSM shows food's larger weight in B40 budgets. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
-```
-**4/6** _(fact)_ · 263 chars
-```
-Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves. Malaysia imports over 60% of mineral-fertiliser needs. No Vietnam-style stabilisation list or Thailand-style public-stock mechanism was found.
-```
-**5/6** _(reframe)_ · 171 chars
-```
-The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
-```
-**6/6** _(view — ONLY post with the link)_ · 201 chars
-```
-Hormuz raised the cost of input dependency. Malaysia lacks the buffers Indonesia, Vietnam and Thailand built; until that changes, shocks hit the wet market.
-
-https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
@@ -502,6 +468,43 @@ Think of a household whose repair bill drops because the dam meant to protect it
 The bill fell. The bill was ten times larger four years ago. The infrastructure meant to prevent the next one cost RM129 million and works 5.6% of the time.
 
 https://thefourthangle.pages.dev/issue/1998
+```
+
+### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1997-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1997`
+
+**1/7** _(hook — attach image, NO link)_ · 250 chars
+```
+Malaysia will split the Attorney-General and Public Prosecutor for the first time since 1957. The 2018 manifesto promised it 'immediately'. Eight years and four AGs later, splitting the office is the easy part. Who confirms the new prosecutor is not.
+```
+**2/7** _(fact)_ · 151 chars
+```
+Article 145 has placed prosecution and the government's legal advice in one executive-appointed officer since 1957. The bill finally separates the two.
+```
+**3/7** _(fact)_ · 159 chars
+```
+Ten government MPs led by Rafizi Ramli demanded a Dewan Rakyat vote to confirm the new prosecutor. None were named to the committee that shaped the compromise.
+```
+**4/7** _(fact)_ · 173 chars
+```
+The new prosecutor would be recommended by the Judicial and Legal Service Commission, the body the Attorney-General sits on. As tabled, the bill added no parliamentary vote.
+```
+**5/7** _(reframe)_ · 168 chars
+```
+Separation is not independence. The office split has consensus; the vote to let Parliament confirm the prosecutor does not, and its backers were kept off the committee.
+```
+**6/7** _(analogy)_ · 263 chars
+```
+Picture giving the umpire his own office, then still choosing him through a panel the team captain sits on, with no open vote on the pick. The bill creates a standalone prosecutor. The commission that recommends the prosecutor still includes the Attorney-General.
+```
+**7/7** _(view — ONLY post with the link)_ · 193 chars
+```
+Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
+
+https://thefourthangle.pages.dev/issue/1997
 ```
 
 ### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
@@ -1803,6 +1806,39 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
+```
+
+### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
+
+**1/6** _(hook — attach image, NO link)_ · 112 chars
+```
+Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
+```
+**2/6** _(fact)_ · 138 chars
+```
+Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
+```
+**3/6** _(fact)_ · 255 chars
+```
+Lower-income households are more exposed to food price rises as a share of expenditure. DOSM shows food's larger weight in B40 budgets. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
+```
+**4/6** _(fact)_ · 263 chars
+```
+Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves. Malaysia imports over 60% of mineral-fertiliser needs. No Vietnam-style stabilisation list or Thailand-style public-stock mechanism was found.
+```
+**5/6** _(reframe)_ · 171 chars
+```
+The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
+```
+**6/6** _(view — ONLY post with the link)_ · 201 chars
+```
+Hormuz raised the cost of input dependency. Malaysia lacks the buffers Indonesia, Vietnam and Thailand built; until that changes, shocks hit the wet market.
+
+https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1952 — RON95 Quota Cut April 1: 90% 'Unaffected' Figure Has No Published Basis
