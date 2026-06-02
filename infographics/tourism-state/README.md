@@ -24,16 +24,16 @@ This artifact lives **outside** the T4A editorial issue pipeline. It is not a pu
   - Domestic tourism receipts → *Domestic Tourism Survey (States) 2024*
   - Nominal state GDP → *GDP by State, 2024* (released 1 July 2025)
 
-### Verification status
-The hosting environment blocks DOSM/data.gov.my (allowlist), so figures could not be pulled
-from the primary PDFs here. Values currently in `data.json` are either `pending` (null) or
-`search-unverified`. **Before this ships as final**, every `gdp_rm_b` and `receipts_rm_b` must
-be set from the DOSM releases and its `*_confidence` flag changed to `verified`. The render
-script watermarks the image "DRAFT — PENDING DOSM VERIFICATION" while any value is missing.
+### Verification status — FINAL
+All 16 states are `verified`. Nominal GDP comes from the *GDP by State 2024* workbook
+(Table 43, current prices, `2024p`); domestic tourism receipts come from each state's
+*Domestic Tourism Survey 2024* report ("Jumlah Terimaan", 2024 column). The per-state receipts
+sum to RM106.7b, matching the published national total — see `SOURCES.md` for the full table
+and reconciliation. The DRAFT watermark is therefore off.
 
-To finalize: open the two DOSM releases above (or `data@dosm.gov.my` on request), transcribe
-the 2024 per-state receipts and nominal GDP into `data.json`, flip the confidence flags, then
-re-render.
+Putrajaya is merged into Kuala Lumpur: DOSM reports no standalone Putrajaya GDP (it sits inside
+W.P. Kuala Lumpur), so the KL tile combines KL + Putrajaya receipts (RM14.08b + RM0.94b) over
+KL GDP. 15 tiles render; the dependency ratio is honest for every one.
 
 ## Render
 ```

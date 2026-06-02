@@ -18,15 +18,36 @@ track. This sidesteps GADM's non-commercial restriction and the network block on
 downloads in this environment.
 
 ## Confidence flags (in data.json)
-- `verified` — transcribed from the DOSM primary release listed above.
-- `search-unverified` — sourced from web-search summaries of DOSM reporting; **must** be
-  reconfirmed against the primary PDF before publishing.
-- `pending` — not yet obtained.
+- `verified` — transcribed from the DOSM primary release listed above. **All 16 states are now `verified`.**
+- `search-unverified` — sourced from web-search summaries of DOSM reporting (no longer used).
+- `pending` — not yet obtained (no longer used).
 
-## Firmly-reported 2024 figures (from DOSM release reporting; reconfirm before final)
-- Domestic tourism receipts: Selangor RM14.2b · Kuala Lumpur RM14.1b · Pahang RM8.7b · Sabah RM8.6b.
-- Most-visited by domestic visitors: Selangor 34.5m · Kuala Lumpur 27.0m · Perak 21.8m.
+## Verified 2024 figures (final)
 
-## Known contradiction to resolve at finalization
-- Selangor domestic receipts appear as **RM13.2b** in some 2023-vintage reporting and
-  **RM14.2b** for 2024. Use the 2024 figure and cite the 2024 release explicitly.
+**Nominal GDP** — *GDP by State 2024*, Table 43 "GDP by state at current prices", column `2024p`
+(workbook `https://storage.dosm.gov.my/gdp/gdp_state_2024.xlsx`). DOSM reports no standalone
+Putrajaya GDP; it is folded into W.P. Kuala Lumpur (RM298.3b).
+
+**Domestic tourism receipts** — each state's *Domestic Tourism Survey 2024* report, "Jumlah
+Terimaan / Total Receipts (RM million)", 2024 column of the Key Statistics table (RM b):
+
+| State | Receipts | State | Receipts |
+|---|--:|---|--:|
+| Selangor | 14.23 | Sarawak | 7.96 |
+| Kuala Lumpur | 14.08 | Negeri Sembilan | 5.87 |
+| Pahang | 8.71 | Terengganu | 5.17 |
+| Sabah | 8.63 | Kedah | 4.96 |
+| Melaka | 7.93 | Kelantan | 4.54 |
+| Johor | 7.81 | Perlis | 1.00 |
+| Pulau Pinang | 7.42 | Putrajaya | 0.94 |
+| Perak | 7.22 | Labuan | 0.26 |
+
+**Reconciliation:** these sum to RM106,746 million ≈ **RM106.7b**, exactly the published
+national domestic-tourism receipts total for 2024 — confirming the per-state transcription.
+
+**Putrajaya merge:** the infographic folds Putrajaya receipts (RM0.94b) into the Kuala Lumpur
+tile (combined RM15.02b), because KL's nominal GDP already includes Putrajaya.
+
+## Resolved contradiction
+- Selangor 2024 domestic receipts confirmed at **RM14.23b** (RM14,226m) from the DTS 2024
+  Selangor report — superseding the RM13.2b figure seen in older 2023-vintage reporting.
