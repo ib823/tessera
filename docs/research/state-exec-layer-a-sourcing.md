@@ -165,3 +165,46 @@ but it is **not** the cheap automated half the original §2 framing assumed.
    financial statements; non-uniform, partial coverage, variable reachability.
 3. **Pause A4** — record the categorical audit opinion as a thin A4 (de-saturates only
    marginally), accept Layer A stays near-saturated, keep the cohort disclosed.
+
+### §8.1 Per-state portal probe (follow-up, maintainer chose "try per-state portals")
+
+Tested whether state-government portals self-publish the audited actuals the LKAN
+volumes would otherwise carry. Result: **partially viable for budget *plans*, not for
+audited *outcomes*, and not uniform.**
+
+**Reachability is host-specific** (same egress proxy, different per-host outcomes):
+
+| Reachable (HTTP 200) | Blocked |
+|---|---|
+| `johor.gov.my`, `kedah.gov.my` | `selangor.gov.my` (000), `dewan.selangor.gov.my` (503) |
+| `ikit.kedah.gov.my`, `pkpk.kedah.gov.my` (Kedah finance) | `pnj.johor.gov.my` (Johor treasury, 403) |
+| `mediadigitaljohor.gov.my`, `belanjawan.mof.gov.my`, `mof.gov.my` | `treasury.gov.my` (403), `audit.gov.my`, `parlimen.gov.my` |
+
+**What is extractable from reachable portals = budget *estimates* (anggaran), not
+audited actuals.** Concrete data pulled in the probe (cited, budget-plan figures):
+
+- **Kedah, Belanjawan 2024:** total RM1.24 b; *budgeted* deficit 13.92% (RM104.1 m);
+  operating RM852.1 m; State Development Fund RM211.77 m; Water Supply Fund RM263.58 m;
+  Forest Development RM14.75 m; revenue RM748 m (tax RM354.23 m = 47.36%).
+  (Utusan / MOF state budget coverage, 2023-11.)
+- **Johor, Belanjawan 2024:** *budgeted* surplus RM4.21 m (second consecutive surplus
+  budget). (Kosmo / Utusan, 2023-11-23.)
+
+**The audited actuals are not on the reachable portals.** The Kedah finance portal
+(`pkpk.kedah.gov.my`) exposes payment systems (iSPEKS/iBayaq/iHasil) and notices, but
+no *Penyata Kewangan* with actual `perbelanjaan pembangunan`. The audited actuals remain
+in the LKAN / state *Penyata Kewangan* PDFs on the unreachable hosts.
+
+**Narrowed implication.** In-environment, A4 can only be built as a **budget-plan proxy**
+(e.g. development-expenditure share of budget, own-tax-revenue ratio, or budgeted
+surplus/deficit) — which is a *design* signal, partly endogenous to the leader's own
+choices, **not** the audited *execution/outcome* the A4 method specifies. It would also
+be non-uniform (Selangor portal unreachable). The audited-execution A4 still requires
+manual provision of the LKAN / Penyata Kewangan PDFs.
+
+**Decision narrowed to:**
+- **(i) Budget-plan proxy A4** — automatable for reachable states, fast, but a weaker
+  design-not-outcome measure needing an explicit methodology caveat and partial coverage.
+- **(ii) Manual PDF provision** — maintainer supplies the audited *Penyata Kewangan* /
+  LKAN volumes; the agent extracts true execution rates. Full coverage, method-faithful.
+- **(iii) Pause** — keep the cohort disclosed on the existing (honest) basis.
