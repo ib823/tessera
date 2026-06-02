@@ -1,0 +1,44 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../layouts/Base.astro';
+import UtilityHeader from '../components/UtilityHeader.astro';
+import PlumbLineReport from '../components/PlumbLineReport.svelte';
+
+// GATED. In production the on-disk board is REDACTED to counts only (badge
+// withheld), so no provisional scores on living people are read into this page.
+// PLUMB_PREVIEW=1 builds keep the full data for internal review.
+let board: any = null;
+let audit: any = null;
+try { board = JSON.parse(readFileSync(join(process.cwd(), 'public/leaderboard.json'), 'utf8')); } catch { board = null; }
+try { audit = JSON.parse(readFileSync(join(process.cwd(), 'public/leaderboard-audit.json'), 'utf8')); } catch { audit = null; }
+
+const showFull = !!board && board.redacted !== true && Array.isArray(board.entries);
+const isPreview = showFull && board.biasAudited !== true;
+const counts = board?.counts ?? { total: 0, ranked: 0 };
+// Poster hero exists only on non-redacted builds (rendered by render-plumb-poster.mjs).
+const poster = showFull ? '/og/plumb-line-poster.png' : undefined;
+---
+<Base title="The Plumb Line — Ranked: Malaysia's Leaders" noindex={true}>
+  <UtilityHeader />
+  {isPreview && (
+    <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">
+      <p style="max-width:720px;margin:0 auto;padding:8px 16px;font-family:var(--font-body);font-size:var(--text-xs);color:var(--score-warning);line-height:1.5;">
+        <strong>Internal preview (PLUMB_PREVIEW) — unpublished.</strong> The public build redacts this to counts only. Not an electoral endorsement.
+      </p>
+    </div>
+  )}
+  {showFull ? (
+    <main><PlumbLineReport board={board} audit={audit} poster={poster} client:load /></main>
+  ) : (
+    <main style="max-width:680px;margin:0 auto;padding:40px 18px 80px;font-family:var(--font-body);">
+      <h1 style="font-family:var(--font-display);font-size:var(--text-title-lg,2rem);font-weight:800;letter-spacing:-0.04em;color:var(--text-primary);margin:0 0 8px;">The Plumb Line</h1>
+      <p style="font-size:var(--text-reading);line-height:1.55;color:var(--text-secondary);margin:0 0 20px;">A non-partisan accountability instrument for Malaysian leaders. It measures conduct and structure, not popularity — and it will not publish a rank it cannot yet defend.</p>
+      <div style="background:var(--card);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:18px;">
+        <p style="font-size:var(--text-body);line-height:1.65;color:var(--text-secondary);margin:0 0 12px;"><strong style="color:var(--text-primary);">The board is in audit.</strong> {counts.total} subjects are on file with cited data. A rank publishes only once an independent coder panel scores each item and the bias gates clear. Until then the badge is withheld and no scores are shown here.</p>
+        <p style="font-size:var(--text-body);line-height:1.65;color:var(--text-secondary);margin:0;">A blank rank column is not an omission. It is the point.</p>
+      </div>
+      <p style="margin:20px 0 0;font-size:var(--text-reading);"><a href="/plumb-line-why" style="color:var(--card-fact-color);font-weight:700;text-decoration:none;">How the index works →</a></p>
+    </main>
+  )}
+</Base>
