@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-02T04:08:59.795Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-02T10:27:55.321Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (78)
+## ⏳ TO POST (79)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -254,6 +254,43 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
+
+**1/7** _(hook — attach image, NO link)_ · 269 chars
+```
+A former senior political secretary to the Prime Minister faces five graft charges over alleged payments tied to Sabah mineral-licence approvals. He pleaded not guilty in December 2025. The law meant to overhaul that licensing passed in 1999, and was never switched on.
+```
+**2/7** _(fact)_ · 129 chars
+```
+Shamsul Iskandar pleaded not guilty in December 2025 to five counts under MACC Act section 17(a). The case has not gone to trial.
+```
+**3/7** _(fact)_ · 160 chars
+```
+Sabah still licenses mining under a 1960 ordinance. The Director grants prospecting licences with the Minister's approval; mining leases need the State Cabinet.
+```
+**4/7** _(fact)_ · 145 chars
+```
+The alleged giver, businessman Albert Tei, was charged in June 2025 in a separate RM350,000 mineral-licence case alongside two Sabah assemblymen.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+A courtroom can weigh what a person did. It cannot enact the law Sabah wrote in 1999 to replace the framework these licences run on.
+```
+**6/7** _(analogy)_ · 235 chars
+```
+Sabah passed a new rulebook in 1999, then kept running the 1960 one because the new one's start date was never appointed. The replacement law exists on paper. Until a minister gazettes its commencement, the old ordinance still governs.
+```
+**7/7** _(view — ONLY post with the link)_ · 222 chars
+```
+The charges will be settled in court. The 1999 law that would overhaul Sabah's mineral licensing will not be, and until a minister gazettes it, the 1960 ordinance still governs.
+
+https://thefourthangle.pages.dev/issue/2006
 ```
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
