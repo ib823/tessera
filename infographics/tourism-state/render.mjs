@@ -65,6 +65,7 @@ const states = data.states.map((s) => {
 });
 const byName = new Map(states.map((s) => [s.state, s]));
 const anyPending = states.some((s) => s.pct == null);
+const totalReceipts = states.reduce((a, s) => a + (s.receipts_rm_b || 0), 0);
 
 // geojson name -> data.json name (Putrajaya folds into Kuala Lumpur)
 const NAME_MAP = {
@@ -266,29 +267,74 @@ function qrCard(x, y, size) {
   return `<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="10" fill="#ffffff"/>${mods}`;
 }
 
-// ---- header (boarding-pass style, QR stub) ----
+// small paper-plane icon (the ✈ glyph renders as tofu in this font, so draw it)
+function plane(cx, cy, s, color, rot = 0) {
+  return `<path transform="translate(${(cx - 12 * s).toFixed(1)},${(cy - 12 * s).toFixed(1)}) scale(${s}) rotate(${rot} 12 12)"
+    d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="${color}"/>`;
+}
+
+// ---- header (airline boarding-pass) ----
 function header() {
   const x = 36, y = 36, w = W - 72, h = 250;
-  const perf = x + w - 372;        // perforation line
-  const stubCx = perf + (x + w - perf) / 2; // centre of right stub
-  const qrSize = 118;
+  const bot = y + h;
+  const perf = x + w - 372;            // perforation between main ticket + stub
+  const stubCx = perf + (x + w - perf) / 2;
+  const qrSize = 112;
+  const lx = x + 28;                    // left content margin
+
+  // ticket data fields (boarding-pass style label/value pairs)
+  const fields = [
+    { k: "CLASS", v: "Domestic" },
+    { k: "COVERAGE", v: "16 states & FTs" },
+    { k: "TOTAL RECEIPTS", v: `RM${totalReceipts.toFixed(1)}b` },
+  ];
+  const fieldXs = [lx, lx + 250, lx + 510];
+  const fieldSvg = fields
+    .map(
+      (f, i) => `
+      <text x="${fieldXs[i]}" y="${y + 214}" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="${CREAM}" opacity="0.6" letter-spacing="1.5">${esc(f.k)}</text>
+      <text x="${fieldXs[i]}" y="${y + 236}" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#ffffff">${esc(f.v)}</text>`,
+    )
+    .join("");
+
+  // little flight route in the upper-right of the main ticket
+  const r1x = lx + 470, r2x = perf - 40, ry = y + 88;
+  const route = `
+    <text x="${r1x}" y="${ry - 12}" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="${CREAM}" opacity="0.7" letter-spacing="1">HOME</text>
+    <text x="${r2x}" y="${ry - 12}" text-anchor="end" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="${CREAM}" opacity="0.7" letter-spacing="1">16 STATES</text>
+    <circle cx="${r1x}" cy="${ry}" r="3.5" fill="${CREAM}"/>
+    <line x1="${r1x + 8}" y1="${ry}" x2="${r2x - 22}" y2="${ry}" stroke="${CREAM}" stroke-width="1.4" stroke-dasharray="2 5" opacity="0.7"/>
+    <circle cx="${r2x}" cy="${ry}" r="3.5" fill="${CREAM}"/>
+    ${plane(r2x - 12, ry, 0.8, "#ffffff", -8)}`;
+
   return `
     <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" fill="${BANNER}"/>
     <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" fill="url(#bannerGrad)"/>
-    <line x1="${perf}" y1="${y + 18}" x2="${perf}" y2="${y + h - 18}"
-          stroke="${CREAM}" stroke-width="2" stroke-dasharray="2 7" opacity="0.5"/>
 
-    <text x="${x + 28}" y="${y + 58}" font-family="Arial, sans-serif" font-size="15" font-weight="700"
-          fill="${CREAM}" opacity="0.85" letter-spacing="3">DOMESTIC TOURISM · MALAYSIA · 2024</text>
-    <text x="${x + 26}" y="${y + 116}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">How tourism-dependent</text>
-    <text x="${x + 26}" y="${y + 162}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">is each Malaysian state?</text>
-    <text x="${x + 28}" y="${y + 204}" font-family="Arial, sans-serif" font-size="18" fill="${CREAM}" opacity="0.9">Domestic tourism receipts as % of state GDP · derived ratio, 2024</text>
+    <!-- perforation + punch notches (ticket cut-outs) -->
+    <line x1="${perf}" y1="${y + 20}" x2="${perf}" y2="${bot - 20}" stroke="${CREAM}" stroke-width="2" stroke-dasharray="2 7" opacity="0.55"/>
+    <circle cx="${perf}" cy="${y}" r="13" fill="${PAPER}"/>
+    <circle cx="${perf}" cy="${bot}" r="13" fill="${PAPER}"/>
 
-    <text x="${stubCx}" y="${y + 42}" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800"
-          fill="${CREAM}" letter-spacing="2">✈ SCAN FOR THE WRITEUP</text>
-    ${qrCard(stubCx - qrSize / 2, y + 54, qrSize)}
-    <text x="${stubCx}" y="${y + 196}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" fill="${CREAM}" opacity="0.92">${esc(QR_LABEL)}</text>
-    <text x="${stubCx}" y="${y + 222}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="${CREAM}" opacity="0.62">Full data, sources &amp; method</text>`;
+    <!-- eyebrow (boarding-pass label) -->
+    ${plane(lx + 6, y + 38, 0.7, CREAM)}
+    <text x="${lx + 22}" y="${y + 43}" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="${CREAM}" opacity="0.85" letter-spacing="2.5">BOARDING PASS · DOMESTIC TOURISM · MALAYSIA</text>
+
+    <!-- title -->
+    <text x="${lx - 2}" y="${y + 100}" font-family="Arial, sans-serif" font-size="37" font-weight="800" fill="#ffffff">How tourism-dependent</text>
+    <text x="${lx - 2}" y="${y + 140}" font-family="Arial, sans-serif" font-size="37" font-weight="800" fill="#ffffff">is each Malaysian state?</text>
+    <text x="${lx}" y="${y + 174}" font-family="Arial, sans-serif" font-size="16" fill="${CREAM}" opacity="0.9">Domestic tourism receipts as % of state GDP (derived ratio)</text>
+    ${route}
+
+    <!-- divider + ticket fields -->
+    <line x1="${lx}" y1="${y + 190}" x2="${perf - 28}" y2="${y + 190}" stroke="${CREAM}" stroke-width="1" stroke-dasharray="1 5" opacity="0.35"/>
+    ${fieldSvg}
+
+    <!-- stub: e-ticket QR -->
+    <text x="${stubCx}" y="${y + 42}" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="${CREAM}" letter-spacing="2">SCAN FOR THE WRITEUP</text>
+    ${qrCard(stubCx - qrSize / 2, y + 56, qrSize)}
+    <text x="${stubCx}" y="${y + 192}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="${CREAM}" opacity="0.92">${esc(QR_LABEL)}</text>
+    <text x="${stubCx}" y="${y + 216}" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="${CREAM}" opacity="0.6" letter-spacing="1">E-TICKET · FULL DATA &amp; SOURCES</text>`;
 }
 
 function watermark() {
