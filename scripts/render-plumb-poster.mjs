@@ -53,40 +53,20 @@ const COAL = {
 };
 const BENCH = { solid: '#334155', tint: '#e7eaef' };
 
-// Simplified, recognizable national/EU flags drawn into a rounded rect (no image
-// assets). Identity is name + flag; these are schematic, not heraldically exact.
+// Accurate national/EU flags from lipis/flag-icons (assets/flags/<cc>.svg, 4:3),
+// embedded as a clipped image so the renderer stays a single SVG → PNG pass.
+const FLAG_DIR = join(ROOT, 'assets/flags');
 let flagId = 0;
 function flag(country, x, y, w, h) {
   const id = `fl${flagId++}`;
-  const clip = `<clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4"/></clipPath>`;
-  let inner = '';
-  const star = (cx, cy, r, fill) => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}"/>`;
-  switch (country) {
-    case 'ID': // Indonesia: red over white
-      inner = `<rect x="${x}" y="${y}" width="${w}" height="${h / 2}" fill="#e1112d"/><rect x="${x}" y="${y + h / 2}" width="${w}" height="${h / 2}" fill="#fff"/>`;
-      break;
-    case 'SG': // Singapore: red over white, crescent + stars
-      inner = `<rect x="${x}" y="${y}" width="${w}" height="${h / 2}" fill="#ed2939"/><rect x="${x}" y="${y + h / 2}" width="${w}" height="${h / 2}" fill="#fff"/>` +
-        `<circle cx="${x + w * 0.22}" cy="${y + h * 0.27}" r="${h * 0.17}" fill="#fff"/><circle cx="${x + w * 0.30}" cy="${y + h * 0.27}" r="${h * 0.15}" fill="#ed2939"/>` +
-        [0, 1, 2, 3, 4].map((i) => star(x + w * (0.34 + 0.07 * i), y + h * 0.22, h * 0.035, '#fff')).join('');
-      break;
-    case 'US': // United States: stripes + blue canton
-      inner = [0, 1, 2, 3, 4, 5, 6].map((i) => `<rect x="${x}" y="${y + (h / 7) * i}" width="${w}" height="${h / 7}" fill="${i % 2 ? '#fff' : '#b22234'}"/>`).join('') +
-        `<rect x="${x}" y="${y}" width="${w * 0.42}" height="${h * 4 / 7}" fill="#3c3b6e"/>` +
-        [0, 1, 2, 3, 4, 5].map((i) => star(x + w * (0.08 + 0.12 * (i % 3)), y + h * (0.12 + 0.18 * Math.floor(i / 3)), h * 0.03, '#fff')).join('');
-      break;
-    case 'EU': // European Union: blue field, ring of stars
-      inner = `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#003399"/>` +
-        Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * 2 * Math.PI - Math.PI / 2; return star(x + w / 2 + Math.cos(a) * w * 0.26, y + h / 2 + Math.sin(a) * h * 0.30, h * 0.045, '#ffcc00'); }).join('');
-      break;
-    case 'PH': // Philippines: blue over red, white triangle + sun
-      inner = `<rect x="${x}" y="${y}" width="${w}" height="${h / 2}" fill="#0038a8"/><rect x="${x}" y="${y + h / 2}" width="${w}" height="${h / 2}" fill="#ce1126"/>` +
-        `<polygon points="${x},${y} ${x + w * 0.42},${y + h / 2} ${x},${y + h}" fill="#fff"/>` + star(x + w * 0.12, y + h / 2, h * 0.08, '#fcd116');
-      break;
-    default:
-      inner = `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${BENCH.solid}"/>`;
-  }
-  return `${clip}<g clip-path="url(#${id})">${inner}</g><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="none" stroke="rgba(0,0,0,0.18)"/>`;
+  const file = join(FLAG_DIR, `${String(country).toLowerCase()}.svg`);
+  if (!existsSync(file)) return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="${BENCH.solid}"/>`;
+  const data = readFileSync(file).toString('base64');
+  return (
+    `<clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4"/></clipPath>` +
+    `<image x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet" clip-path="url(#${id})" href="data:image/svg+xml;base64,${data}"/>` +
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="none" stroke="rgba(0,0,0,0.18)"/>`
+  );
 }
 
 const coalOf = (a) => {
@@ -255,8 +235,8 @@ benches.forEach((e, i) => {
   const x = MARGIN + i * (bw + 14);
   const cx = x + bw / 2;
   body += `<rect x="${x}" y="${y}" width="${bw}" height="${bcH}" rx="12" fill="${BENCH.tint}"/>`;
-  // flag (replaces the silhouette): name + flag identifies the anchor
-  const fw = 58, fh = 38;
+  // flag (replaces the silhouette): name + flag identifies the anchor (true 4:3)
+  const fw = 52, fh = 39;
   body += flag(e.country, cx - fw / 2, y + 18, fw, fh);
   // name (centered, may wrap to a short single line)
   body += T(cx, y + 84, shortName(e.name), { ff: SANS, fs: 15, fw: 700, fill: ink, an: 'middle', style: 'italic' });

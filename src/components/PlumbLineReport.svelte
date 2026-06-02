@@ -30,9 +30,9 @@
   const benchRanked = [...benches].filter((e: any) => e.composite != null).sort((a: any, b: any) => b.composite - a.composite);
 
   const bands = [
-    { id: 'federal', title: 'Federal cabinet & Prime Minister', tag: 'Bias-audited', tagKind: 'ok', rows: federal, note: 'The editorial layer is certified coalition-blind across this cohort (partisan signal η = 0.26 across four coalitions).' },
-    { id: 'state', title: 'State executives', tag: 'Disclosed · not certified', tagKind: 'warn', rows: stateExec, note: 'Shown for completeness. At this cohort size coalition is confounded with state fiscal capacity, so the partisan test cannot yet certify this class. An open finding, not a hidden one.' },
-    { id: 'opp', title: 'Opposition leadership', tag: 'n = 1', tagKind: 'muted', rows: opp, note: 'A single subject cannot yet be tested for partisanship; scored on the identical instrument.' },
+    { id: 'federal', title: 'Federal cabinet & Prime Minister', tag: 'Bias-audited', tagKind: 'ok', rows: federal, note: 'For this group, tests show the scoring does not track party across the four coalitions represented.' },
+    { id: 'state', title: 'State executives', tag: 'Disclosed · not certified', tagKind: 'warn', rows: stateExec, note: 'Shown for completeness. Here a party and a state’s wealth move together, so the test cannot yet tell genuine performance apart from any party effect. An open finding, not a hidden one.' },
+    { id: 'opp', title: 'Opposition leadership', tag: 'shown for reference', tagKind: 'muted', rows: opp, note: 'Too few subjects in this group to test for party effect yet; scored on the same measures as everyone else.' },
     { id: 'bench', title: 'International calibration anchors', tag: 'reference', tagKind: 'muted', rows: benchRanked, note: 'World leaders scored on the identical instrument. References, not competitors.' },
   ].filter((b) => b.rows.length);
 
@@ -52,7 +52,7 @@
 </script>
 
 <article class="pl">
-  {#if poster}<img class="pl__hero" src={poster} alt="The Plumb Line — Malaysia leader accountability index" loading="eager" />{/if}
+  {#if poster}<img class="pl__hero" src={poster} alt="The Plumb Line: Malaysia leader accountability index" loading="eager" />{/if}
 
   <header class="pl__head">
     <h1>Ranked: Malaysia's Leaders, On the Level</h1>
@@ -69,22 +69,22 @@
     <section class="pl__body">
       <h2>Key takeaways</h2>
       <ul class="pl__take">
-        <li>The Plumb Line scores Malaysian leaders on <b>recorded public conduct</b>, not popularity or ideology — the same yardstick applied to a minister, an opposition figure, and a world benchmark.</li>
-        <li>Across <b>23 federal cabinet ministers from four coalitions</b>, the editorial layer is provably coalition-blind: the partisan-signal test reads <b>η = 0.26</b>, below the 0.3 bar. That cohort is <b>bias-audited</b>.</li>
-        <li>The multi-reviewer conduct panel clears inter-coder reliability at <b>Krippendorff's α = 0.76</b>.</li>
-        <li>State premiers are shown but <b>not yet certified</b>: at this cohort size, coalition is entangled with state fiscal capacity, so the test cannot separate bias from a real capacity gap. We disclose it rather than bury it.</li>
-        <li>No rank ships until its bias gates clear. A blank or disclosed cell is not an omission — it is the point.</li>
+        <li>The Plumb Line scores Malaysian leaders on what is <b>on the public record</b>, not on popularity or political views. The same measures apply to a federal minister, an opposition figure, and a world leader.</li>
+        <li>Across the <b>23 federal cabinet ministers</b>, drawn from four coalitions, the scoring shows <b>no link to party</b>. That cohort has passed the bias audit.</li>
+        <li>Independent reviewers scored each leader's conduct, and their scores <b>agree at a level treated as reliable</b>.</li>
+        <li>State premiers are shown but <b>not yet certified</b>. In the states involved, a party and a state's wealth move together, so the test cannot yet separate genuine performance from any party effect. We show this openly rather than hide it.</li>
+        <li>No leader is ranked until the checks behind that ranking pass. A withheld or disclosed row is the point, not an oversight.</li>
       </ul>
 
-      <p>This board ranks Malaysian leaders against a fixed, public-record yardstick built from Hansard, federal and state gazettes, Auditor-General reports, asset declarations, and court-record status. Every number traces to a primary source; nothing is drawn from a model's prediction. The instrument scores the <b>integrity of conduct</b> and the <b>delivery of a leader's own stated commitments</b> — never the direction of their politics.</p>
+      <p>This board measures Malaysian leaders against a fixed set of public-record measures: Hansard, federal and state gazettes, Auditor-General reports, asset declarations, and court records. Every figure traces to a primary source. The board scores the integrity of a leader's conduct and the delivery of their own stated commitments, never the direction of their politics.</p>
 
-      <p>Scores run on three harmonized layers: a Public Record layer (objective facts), an Editorial Panel layer (a fixed 0–4 rubric for things records cannot capture — crisis handling, reform delivered, institution-building, candor on reversals, and restraint from inflaming Race, Religion or Royalty), and a Composite layer of established political-science indices. The headline number reports <b>Conduct &amp; Structure</b>; portfolio-relative delivery is tracked separately and never folded in.</p>
+      <p>Scores combine three layers: the public record (objective facts), an editorial panel (a fixed 0 to 4 rubric for crisis handling, reform delivered, institution-building, candour on reversals, and restraint on matters of race, religion and royalty), and a layer of established political-science measures. The headline figure is <b>Conduct and Structure</b>. Portfolio-specific delivery is reported separately and never folded into it.</p>
 
-      <p>What is deliberately excluded: race, religion and royalty as subjects; popularity, polls and social-media following; and policy direction itself. The board never rewards or punishes a political position — only what a leader did with the office, and whether they kept their word.</p>
+      <p>Deliberately left out: race, religion and royalty as subjects; popularity, polls and social-media following; and political direction itself. The board never rewards or penalises a political position. It measures what a leader did in office, and whether they kept their word.</p>
 
-      <p>The promise is "prove it, then declare it." A rank earns the <b>Bias-Audited</b> badge only when five gates pass — symmetry, source coverage, inter-coder reliability, rank robustness, and the partisan-signal test. Where the test cannot yet isolate partisanship, as with the state executives, the result is disclosed as an open finding instead of certified. That honesty is the product.</p>
+      <p>The principle is simple: prove it, then publish it. A cohort is marked bias-audited only after five checks pass: a consistent method, full sourcing, reviewer agreement, stable ranks, and no link between score and party. Where that last check cannot yet be made cleanly, as with the state premiers, the result is shown openly as an unresolved finding rather than presented as certified.</p>
 
-      <p class="pl__more"><a href="/plumb-line-why">Read the full methodology, and why certification is per-class →</a></p>
+      <p class="pl__more"><a href="/plumb-line-why">Read the full methodology, and why certification is done group by group →</a></p>
     </section>
   {:else if tab === 'dataset'}
     <section class="pl__body pl__data">
@@ -115,14 +115,14 @@
           </table>
         </div>
       {/each}
-      <p class="pl__fine">Score = Conduct &amp; Structure track (0–100). Ranks are within class: a state premier and a federal minister are scored on the same instrument but ranked among their own kind, because their applicable dimensions differ. Where ranks are weight-sensitive the published board shows them as ranges.</p>
+      <p class="pl__fine">Scores run from 0 to 100 on the Conduct and Structure measure. Leaders are ranked within their own group, because a state premier and a federal minister are measured on different applicable items. Where two scores are too close to separate, the position is shown as a range.</p>
     </section>
   {:else}
     <section class="pl__body pl__src">
       <h2>How it is measured</h2>
       <p>Three layers, every input citable: Public Record (objective, ~50%), Editorial Panel (a fixed 0–4 rubric, ~20%, multi-coder), and Composite political-science indices (~30%). Methodology of record: <a href="/plumb-line-why">the methodology explainer</a>. Version {board?.methodologyVersion ?? ''}.</p>
 
-      <h2>Bias audit — the five gates</h2>
+      <h2>Bias audit: the five gates</h2>
       <ul class="pl__gates">
         {#each (audit?.gates ?? []) as g (g.id)}
           <li class:fail={g.passed === false}>
