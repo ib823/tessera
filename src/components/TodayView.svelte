@@ -315,6 +315,26 @@
         </section>
       {/if}
 
+      <section class="featured-dossiers" aria-label="The Plumb Line">
+        <a class="dossier-card" href="/plumb-line-report" aria-label="The Plumb Line: Malaysia leader accountability index">
+          <div class="dossier-card__body">
+            <div class="dossier-card__top">
+              <span class="dossier-card__pill">ACCOUNTABILITY INDEX</span>
+              <span class="dossier-card__series">The Plumb Line</span>
+            </div>
+            <div class="dossier-card__title">How Malaysia's leaders score on the public record.</div>
+            <div class="dossier-card__subtitle">Conduct and delivery measured on one fixed set of public-record tests, every figure cited, and the scoring checked for party bias.</div>
+            <div class="dossier-card__meta">
+              <span>Federal cabinet</span>
+              <span class="dot">·</span>
+              <span>World benchmarks</span>
+              <span class="dot">·</span>
+              <span>Open methodology</span>
+            </div>
+          </div>
+        </a>
+      </section>
+
       <div class="today-grid">
         {#if continueIssue && onOpenIssue}
         <section class="today-panel" aria-labelledby="continue-reading-heading">
@@ -397,8 +417,6 @@
           <a href="/disclaimer">Disclaimer</a>
           <span class="footer-dot" aria-hidden="true">&middot;</span>
           <a href="/verify">Verify Content</a>
-          <span class="footer-dot" aria-hidden="true">&middot;</span>
-          <a href="/plumb-line-report">The Plumb Line</a>
         </nav>
       </footer>
     {:else}
