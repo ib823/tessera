@@ -153,3 +153,23 @@ Sembilan) alongside the Borneo premiers — and/or an explicit state-capacity co
 **Publish posture unchanged.** `methodology.status` remains `framework`; the deployed
 `leaderboard.json` stays redacted; no by-name score of a living person ships. Per-class
 certification changes only what the audit *reports*, not what the site *publishes*.
+
+## Addendum (2026-06-02) — full 13-state cohort confirms the disclosure (not a small-n artifact)
+
+The sub-national-executive class was completed to all 13 state heads (PN 4, BN 4,
+PH 3, GPS 1, GRS 1; 5 coalitions, n=13), each with a blind 4-coder Layer B panel
+(α held at 0.768). The hypothesis was that adding BN and PH executives across the
+wealth spectrum would break the coalition-capacity confound and let the class
+certify. It did not: the within-class partisan η held at ~0.64.
+
+The within-class mean conduct scores: GRS 81, BN 73, PH 60, GPS 54, PN 39. Two
+readings follow. First, the signal is robust, not an n=6 artifact. Second, it is
+NOT a clean government-vs-opposition or rich-vs-poor gap — government-aligned GPS
+(rich Sarawak) scored below government BN and PH, and the η is driven mainly by
+two genuinely weak PN records (Kelantan's unresolved water; Perlis's 2025 governing
+collapse, its MB under an open MACC matter). So it is not demonstrable partisan
+bias. But coalition stays confounded with state structural capacity because, in
+Malaysia's actual political geography, the opposition governs the lowest-delivery
+states — a confound more subjects cannot remove. The disclosed-not-certified
+posture for this class is therefore treated as the standing decision, not a
+pending one, and the bias-audited badge scope remains the federal cabinet.
