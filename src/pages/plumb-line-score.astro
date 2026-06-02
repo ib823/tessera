@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import UtilityHeader from '../components/UtilityHeader.astro';
+import CoderSubmission from '../components/CoderSubmission.svelte';
+---
+<Base title="The Plumb Line — coder submission tool" noindex={true}>
+  <UtilityHeader />
+  <div style="background:var(--amber-bg);border-bottom:1px solid var(--border-light);">
+    <p style="max-width:760px;margin:0 auto;padding:8px 16px;font-family:var(--font-body);font-size:var(--text-xs);color:var(--score-warning);line-height:1.5;">
+      <strong>Coder tool — for recruited reviewers.</strong> Score blind, from your evidence packet only. Do not confer with other coders or look up existing scores. See the protocol before scoring.
+    </p>
+  </div>
+  <main style="max-width:760px;margin:0 auto;padding:24px 18px 80px;font-family:var(--font-body);">
+    <h1 style="font-family:var(--font-display);font-size:var(--text-title-lg,2rem);font-weight:800;letter-spacing:-0.04em;color:var(--text-primary);margin:0 0 6px;">Layer B submission</h1>
+    <p style="font-size:var(--text-body);line-height:1.6;color:var(--text-secondary);margin:0 0 18px;">For each leader in your packet, score B1–B5 as an integer 0–4 (or “no qualifying event”), with one dated line of why. Download the JSON and send it to the panel coordinator. Anchors and rules are in the <a href="/plumb-line-why" style="color:var(--card-fact-color);font-weight:700;">methodology explainer</a>.</p>
+    <CoderSubmission client:load />
+  </main>
+</Base>
