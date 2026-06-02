@@ -18,10 +18,16 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import sharp from "sharp";
+import QRCode from "qrcode";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(await readFile(join(HERE, "data.json"), "utf8"));
 const geo = JSON.parse(await readFile(join(HERE, "malaysia-states.geojson"), "utf8"));
+
+// QR -> canonical T4A page for this infographic + writeup
+const QR_URL = "https://thefourthangle.pages.dev/infographics/tourism-state";
+const QR_LABEL = "thefourthangle.pages.dev/infographics/tourism-state";
+const qr = QRCode.create(QR_URL, { errorCorrectionLevel: "M" });
 
 // ---- canvas ----
 const W = 1240;
@@ -238,32 +244,51 @@ const gdpRows = [...ranked]
     meta: `RM${fmt(s.gdp_rm_b)}b GDP`,
   }));
 
-// ---- header (boarding-pass style) ----
+// ---- QR card (white rounded card + dark modules, row-run merged) ----
+function qrCard(x, y, size) {
+  const n = qr.modules.size;
+  const d = qr.modules.data;
+  const pad = size * 0.1;
+  const inner = size - pad * 2;
+  const m = inner / n;
+  let mods = "";
+  for (let r = 0; r < n; r++) {
+    let c = 0;
+    while (c < n) {
+      if (d[r * n + c]) {
+        let c2 = c;
+        while (c2 < n && d[r * n + c2]) c2++;
+        mods += `<rect x="${(x + pad + c * m).toFixed(2)}" y="${(y + pad + r * m).toFixed(2)}" width="${((c2 - c) * m + 0.35).toFixed(2)}" height="${(m + 0.35).toFixed(2)}" fill="#1d1c26"/>`;
+        c = c2;
+      } else c++;
+    }
+  }
+  return `<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="10" fill="#ffffff"/>${mods}`;
+}
+
+// ---- header (boarding-pass style, QR stub) ----
 function header() {
   const x = 36, y = 36, w = W - 72, h = 250;
-  // barcode
-  let bars = "";
-  let bx = x + 26;
-  const seed = [3, 2, 5, 2, 3, 4, 2, 6, 2, 3, 2, 5, 3, 2, 4, 2, 3, 5, 2, 3, 2, 4];
-  for (let i = 0; i < seed.length; i++) {
-    bars += `<rect x="${bx}" y="${y + 150}" width="${seed[i]}" height="64" fill="${CREAM}" opacity="0.92"/>`;
-    bx += seed[i] + 3;
-  }
+  const perf = x + w - 372;        // perforation line
+  const stubCx = perf + (x + w - perf) / 2; // centre of right stub
+  const qrSize = 118;
   return `
     <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" fill="${BANNER}"/>
     <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="20" fill="url(#bannerGrad)"/>
-    <line x1="${x + w - 360}" y1="${y + 18}" x2="${x + w - 360}" y2="${y + h - 18}"
+    <line x1="${perf}" y1="${y + 18}" x2="${perf}" y2="${y + h - 18}"
           stroke="${CREAM}" stroke-width="2" stroke-dasharray="2 7" opacity="0.5"/>
+
     <text x="${x + 28}" y="${y + 58}" font-family="Arial, sans-serif" font-size="15" font-weight="700"
           fill="${CREAM}" opacity="0.85" letter-spacing="3">DOMESTIC TOURISM · MALAYSIA · 2024</text>
-    <text x="${x + 26}" y="${y + 108}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">How tourism-dependent</text>
-    <text x="${x + 26}" y="${y + 150}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">is each Malaysian state?</text>
-    ${bars}
-    <text x="${x + w - 330}" y="${y + 64}" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="${CREAM}">✈  BOARDING</text>
-    <text x="${x + w - 330}" y="${y + 104}" font-family="Arial, sans-serif" font-size="17" fill="${CREAM}" opacity="0.92">Domestic tourism receipts</text>
-    <text x="${x + w - 330}" y="${y + 130}" font-family="Arial, sans-serif" font-size="17" fill="${CREAM}" opacity="0.92">as % of state GDP</text>
-    <text x="${x + w - 330}" y="${y + 196}" font-family="Arial, sans-serif" font-size="13" fill="${CREAM}" opacity="0.7">Derived ratio · not comparable to</text>
-    <text x="${x + w - 330}" y="${y + 214}" font-family="Arial, sans-serif" font-size="13" fill="${CREAM}" opacity="0.7">international-receipts charts</text>`;
+    <text x="${x + 26}" y="${y + 116}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">How tourism-dependent</text>
+    <text x="${x + 26}" y="${y + 162}" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">is each Malaysian state?</text>
+    <text x="${x + 28}" y="${y + 204}" font-family="Arial, sans-serif" font-size="18" fill="${CREAM}" opacity="0.9">Domestic tourism receipts as % of state GDP · derived ratio, 2024</text>
+
+    <text x="${stubCx}" y="${y + 42}" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800"
+          fill="${CREAM}" letter-spacing="2">✈ SCAN FOR THE WRITEUP</text>
+    ${qrCard(stubCx - qrSize / 2, y + 54, qrSize)}
+    <text x="${stubCx}" y="${y + 196}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" fill="${CREAM}" opacity="0.92">${esc(QR_LABEL)}</text>
+    <text x="${stubCx}" y="${y + 222}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="${CREAM}" opacity="0.62">Full data, sources &amp; method</text>`;
 }
 
 function watermark() {
