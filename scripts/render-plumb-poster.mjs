@@ -275,5 +275,7 @@ console.log(`  ✓ Plumb Line poster → ${OUT}  (${W}×${H}, ${ranked.length} r
 
 // 1200×630 OG card: the title-bearing top of the poster, for social sharing.
 const OG_OUT = join(ROOT, 'public/og/plumb-line-og.png');
-await sharp(Buffer.from(svg)).resize({ width: 1200 }).extract({ left: 0, top: 0, width: 1200, height: 630 }).png().toFile(OG_OUT);
+// flatten onto the cream base so the PNG ships without an alpha channel —
+// WhatsApp/Facebook refuse to render OG images that carry transparency.
+await sharp(Buffer.from(svg)).resize({ width: 1200 }).extract({ left: 0, top: 0, width: 1200, height: 630 }).flatten({ background: cream }).png().toFile(OG_OUT);
 console.log(`  ✓ Plumb Line OG card → ${OG_OUT}  (1200×630)`);
