@@ -174,7 +174,9 @@ y += 20;
 // title (serif, two lines) on the left; methodology box on the right
 body += T(MARGIN, y + 52, "MALAYSIA'S LEADERS,", { ff: SERIF, fs: 50, fw: 700, fill: ink });
 body += T(MARGIN, y + 108, 'ON THE LEVEL', { ff: SERIF, fs: 50, fw: 700, fill: ink });
-body += T(MARGIN, y + 150, 'Malaysian leaders measured on the public record, and against world benchmarks on the same scale.', { ff: SANS, fs: 16.5, fill: sub });
+// subline wrapped to two lines so the methodology box (x=760) never overlaps it
+body += T(MARGIN, y + 146, 'Malaysian leaders measured on the public record,', { ff: SANS, fs: 16.5, fill: sub });
+body += T(MARGIN, y + 168, 'and against world benchmarks on the same scale.', { ff: SANS, fs: 16.5, fill: sub });
 
 // methodology box
 const mbX = 760, mbW = W - MARGIN - mbX;
@@ -270,3 +272,8 @@ if (!CERTIFIED) {
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="${cream}"/>${watermark}${body}</svg>`;
 await sharp(Buffer.from(svg)).png().toFile(OUT);
 console.log(`  ✓ Plumb Line poster → ${OUT}  (${W}×${H}, ${ranked.length} ranked + ${benches.length} anchors${CERTIFIED ? '' : ', PREVIEW'})`);
+
+// 1200×630 OG card: the title-bearing top of the poster, for social sharing.
+const OG_OUT = join(ROOT, 'public/og/plumb-line-og.png');
+await sharp(Buffer.from(svg)).resize({ width: 1200 }).extract({ left: 0, top: 0, width: 1200, height: 630 }).png().toFile(OG_OUT);
+console.log(`  ✓ Plumb Line OG card → ${OG_OUT}  (1200×630)`);

@@ -5,16 +5,18 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  image?: string;
 }
 
-const { title = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.', noindex = false } = Astro.props;
+const { title = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.', noindex = false, image } = Astro.props;
 const siteUrl = Astro.site?.origin || 'https://thefourthangle.pages.dev';
 const canonicalPath = Astro.url.pathname
   .replace(/index\.html$/, '')
   .replace(/\.html$/, '') || '/';
 const canonicalUrl = `${siteUrl}${canonicalPath === '/' ? '/' : canonicalPath}`;
 const buildId = typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : new Date().toISOString();
-const ogImage = `${siteUrl}/og-image.png?v=${encodeURIComponent(buildId)}`;
+// Per-page OG image override (1200×630 cards); falls back to the site card.
+const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-image.png?v=${encodeURIComponent(buildId)}`;
 ---
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
