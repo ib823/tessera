@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-04T12:50:18.664Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-04T16:57:24.616Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (79)
+## ⏳ TO POST (80)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -254,6 +254,43 @@ The recovery story is no longer 'how little came back'. It is whether the recove
 RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
 
 https://thefourthangle.pages.dev/issue/1867
+```
+
+### Issue 2007 — High Court refused MACC's bid to freeze RM548m linked to Na'imah in Singapore
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2007-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2007`
+
+**1/7** _(hook — attach image, NO link)_ · 175 chars
+```
+MACC's hunt for assets linked to Daim Zainuddin's family looked sweeping: RM3 billion traced across 11 countries, Ilham Tower seized, accounts chased from London to Singapore.
+```
+**2/7** _(fact)_ · 158 chars
+```
+High Court judge Mohd Arief Emran Arifin dismissed the bid, ruling the prosecution had not met the threshold Section 53 of the anti-money-laundering act sets.
+```
+**3/7** _(fact)_ · 267 chars
+```
+Malaysia's drive to lock down the overseas money keeps meeting court limits: London granted a £132m freeze in June 2025, then stayed it; Singapore refused outright. Each check leaves the assets under no Malaysian freeze while MACC litigates. It has 14 days to appeal.
+```
+**4/7** _(fact)_ · 138 chars
+```
+Announced scope and proven guilt are different things. Daim was discharged and acquitted after his death; the wider case remains unproven.
+```
+**5/7** _(reframe)_ · 149 chars
+```
+A seizure announced is not money recovered. Between the press conference and the recovered ringgit sits a proof threshold the state has yet to clear.
+```
+**6/7** _(analogy)_ · 155 chars
+```
+Think of it as tracing money you suspect is tainted, then being told you have not shown enough to stop the account holders touching it while the case runs.
+```
+**7/7** _(view — ONLY post with the link)_ · 219 chars
+```
+Asset recovery turns on proving provenance to the law's threshold, not the size of the number announced. The appeal decides whether the money can be frozen, not who keeps it.
+
+https://thefourthangle.pages.dev/issue/2007
 ```
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
