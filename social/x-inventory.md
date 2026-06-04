@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-04T04:12:55.159Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-04T09:59:24.480Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -44,42 +44,114 @@ Two Klang Valley seats may sit empty until the next general election because the
 https://thefourthangle.pages.dev/issue/1993
 ```
 
-### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
+### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia perlu lebih selektif lulus projek pusat data. pakar industri muhammad hazim mohd ). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia perhebat promosi di china, sasar pelancongan berpendapatan tinggi. malaysia menya). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
 
-**1/7** _(hook — attach image, NO link)_ · 231 chars
+**1/7** _(hook — attach image, NO link)_ · 100 chars
 ```
-Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. 11,000MW in applications still dwarf the grid. Johor has RM182.96B approved.
+Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on 210,000 smallholders
 ```
-**2/7** _(fact)_ · 106 chars
+**2/7** _(fact)_ · 103 chars
 ```
-11,000MW applied vs ~7.5GW real demand. The moratorium exempts AI centres, the most power-hungry category.
+Palm oil traded USD120 a tonne above soybean oil at one point in 2025, and Chinese refiners shifted mix
 ```
-**3/7** _(fact)_ · 260 chars
+**3/7** _(fact)_ · 269 chars
 ```
-The moratorium cited water too, but no public data exists on actual water use per data centre in Johor. Johor set a WUE threshold of 1.8 and planned four treatment plants worth RM1.41B. Orang Asli communities near proposed sites were absent from consultations.
+China signed an oilseed deal with Brazil worth more than US$10 billion in November 2025 COFCO inked agreements reported at roughly 20 million tonnes of soybeans, soybean oil and palm oil with ADM, Bunge, Cargill and Louis Dreyfus. Signed contracts, not delivered cargo.
 ```
-**4/7** _(fact)_ · 240 chars
+**4/7** _(fact)_ · 96 chars
 ```
-RM182.96B is approved in Johor alone, yet the pause shields hyperscalers while local operators face shutdown. Microsoft, Google and ByteDance structured investments as AI-focused, bypassing the pause. Smaller Malaysian firms cannot relabel.
+Greer announced the deal. China's foreign ministry said working teams were still in consultation
 ```
-**5/7** _(reframe)_ · 114 chars
+**5/7** _(fact)_ · 264 chars
 ```
-The real filter is not sustainability. It is lobbying power. The ceiling has a hole sized for the biggest players.
+When CPO falls, the corporate listcos hedge. Smallholders absorb it About 210,000 smallholders cultivate ~15% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. The Oct 2025 US-Malaysia trade deal exempted palm oil. April oleochemicals rose 23.83%.
 ```
-**6/7** _(analogy)_ · 205 chars
+**6/7** _(reframe)_ · 114 chars
 ```
-Like installing a water meter in every house but exempting the swimming pools. A moratorium with exemptions for the largest consumers signals sustainability as a constraint for the small, not the powerful.
+The question is not whether Trump shook palm oil. It is whether Malaysian rerouting outpaces the smallholder cost.
 ```
-**7/7** _(view — ONLY post with the link)_ · 172 chars
+**7/7** _(view — ONLY post with the link)_ · 138 chars
 ```
-The ambition is not wrong. It is ungoverned. Residents should not have to protest to trigger what the numbers already demanded.
+The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before Trump met Xi
 
-https://thefourthangle.pages.dev/issue/1963
+https://thefourthangle.pages.dev/issue/1989
+```
+
+### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia perhebat promosi di china, sasar pelancongan berpendapatan tinggi. malaysia menya). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
+
+**1/7** _(hook — attach image, NO link)_ · 152 chars
+```
+Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
+```
+**2/7** _(fact)_ · 112 chars
+```
+WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
+```
+**3/7** _(fact)_ · 121 chars
+```
+Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
+```
+**4/7** _(fact)_ · 108 chars
+```
+Chinese-Malaysian favourability of China rose 41% to 67%; Malay favourability fell 33% to 28% (2016 to 2022)
+```
+**5/7** _(reframe)_ · 175 chars
+```
+The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Think of it like a landlord who decides which tenants' mail gets delivered The landlord writes the rules, the rules are not public, and Malaysia's regulator licenses the landlord without seeing the rules. WeChat, TikTok, RedNote, Facebook, Telegram are all landlords.
+```
+**7/7** _(view — ONLY post with the link)_ · 164 chars
+```
+PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence, not moderation logic
+
+https://thefourthangle.pages.dev/issue/1982
+```
+
+### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia perhebat promosi di china, sasar pelancongan berpendapatan tinggi. malaysia menya). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
+
+**1/6** _(hook — attach image, NO link)_ · 91 chars
+```
+520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
+```
+**2/6** _(fact)_ · 112 chars
+```
+China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
+```
+**3/6** _(fact)_ · 259 chars
+```
+George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
+```
+**4/6** _(fact)_ · 259 chars
+```
+Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
+```
+**5/6** _(reframe)_ · 104 chars
+```
+This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
+```
+**6/6** _(view — ONLY post with the link)_ · 142 chars
+```
+Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
+
+https://thefourthangle.pages.dev/issue/1970
 ```
 
 ### Issue 1961 — MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
@@ -114,40 +186,6 @@ The question is not whether Azam Baki is guilty. It is whether any institution c
 The fix is a permanent independent oversight body for MACC, as UNCAC recommended. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
-```
-
-### Issue 1958 — One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia perlu lebih selektif lulus projek pusat data. pakar industri muhammad hazim mohd ). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1958-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1958`
-
-**1/6** _(hook — attach image, NO link)_ · 125 chars
-```
-A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
-```
-**2/6** _(fact)_ · 269 chars
-```
-149 DUI crash cases prosecuted in three years. 1,261 DUI convictions in one year. Different laws, same silence. 149 covers Section 44 only (injury/death). The 1,261 spans all DUI sections. Malaysia publishes no data on breath tests administered or roadblocks conducted.
-```
-**3/6** _(fact)_ · 265 chars
-```
-12 DUI fatalities per year, 0.2% of crashes. Testing is discretionary. The real number is unknown. Police test on 'reasonable cause' only. Australia mandates blood-testing of all fatal-crash drivers; Malaysia does not. The 0.2% measures enforcement, not prevalence.
-```
-**4/6** _(fact)_ · 134 chars
-```
-4,340 motorcyclists killed in 2025. 13.7% of accidents, 66.4% of deaths. The gig economy's youngest workers on the deadliest vehicles.
-```
-**5/6** _(reframe)_ · 164 chars
-```
-Penalties already exist. The real question is whether Malaysia detects drunk drivers before they kill, and whether alcohol is even the main killer of motorcyclists.
-```
-**6/6** _(view — ONLY post with the link)_ · 224 chars
-```
-Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
-
-https://thefourthangle.pages.dev/issue/1958
 ```
 
 ### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
@@ -216,44 +254,6 @@ The recovery story is no longer 'how little came back'. It is whether the recove
 RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
 
 https://thefourthangle.pages.dev/issue/1867
-```
-
-### Issue 1267 — Malaysia Hosts 2.5 Million Documented Migrant Workers, Persistent Tier 2 Trafficking Concerns
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia perlu lebih selektif lulus projek pusat data. pakar industri muhammad hazim mohd ). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
-
-**1/7** _(hook — attach image, NO link)_ · 268 chars
-```
-Malaysia hosts ~2.5 million documented migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. Malaysia retained Tier 2 in the 2025 TIP Report, with the State Department citing weak prosecution in palm oil and disposable-glove manufacturing.
-```
-**2/7** _(fact)_ · 144 chars
-```
-Employment Act 1955 amendments took effect 1 January 2023, extending core protections to all private-sector employees including foreign workers.
-```
-**3/7** _(fact)_ · 261 chars
-```
-The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. The 2025 report noted fewer trafficker convictions and no labour-trafficking prosecutions in palm oil or glove manufacturing despite ongoing reports.
-```
-**4/7** _(fact)_ · 109 chars
-```
-Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services.
-```
-**5/7** _(reframe)_ · 141 chars
-```
-Tier 2 is not a passing grade. Malaysia was Tier 3 in 2014; the trajectory has not reached structural compliance with TVPA minimum standards.
-```
-**6/7** _(analogy)_ · 200 chars
-```
-Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
-
-https://thefourthangle.pages.dev/issue/1267
 ```
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
@@ -758,43 +758,6 @@ The deal continues. MACC recommended charges. The AGC will decide. The same coal
 https://thefourthangle.pages.dev/issue/1990
 ```
 
-### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
-
-**1/7** _(hook — attach image, NO link)_ · 100 chars
-```
-Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on 210,000 smallholders
-```
-**2/7** _(fact)_ · 103 chars
-```
-Palm oil traded USD120 a tonne above soybean oil at one point in 2025, and Chinese refiners shifted mix
-```
-**3/7** _(fact)_ · 269 chars
-```
-China signed an oilseed deal with Brazil worth more than US$10 billion in November 2025 COFCO inked agreements reported at roughly 20 million tonnes of soybeans, soybean oil and palm oil with ADM, Bunge, Cargill and Louis Dreyfus. Signed contracts, not delivered cargo.
-```
-**4/7** _(fact)_ · 96 chars
-```
-Greer announced the deal. China's foreign ministry said working teams were still in consultation
-```
-**5/7** _(fact)_ · 264 chars
-```
-When CPO falls, the corporate listcos hedge. Smallholders absorb it About 210,000 smallholders cultivate ~15% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. The Oct 2025 US-Malaysia trade deal exempted palm oil. April oleochemicals rose 23.83%.
-```
-**6/7** _(reframe)_ · 114 chars
-```
-The question is not whether Trump shook palm oil. It is whether Malaysian rerouting outpaces the smallholder cost.
-```
-**7/7** _(view — ONLY post with the link)_ · 138 chars
-```
-The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before Trump met Xi
-
-https://thefourthangle.pages.dev/issue/1989
-```
-
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
 
 - **Status:** PENDING
@@ -1007,43 +970,6 @@ Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then 
 Norway acted within its rules. The real cost is 15 years of LCS spending: no delivered ships, one DNAA as the only criminal endpoint across four governments.
 
 https://thefourthangle.pages.dev/issue/1983
-```
-
-### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
-
-**1/7** _(hook — attach image, NO link)_ · 152 chars
-```
-Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
-```
-**2/7** _(fact)_ · 112 chars
-```
-WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
-```
-**3/7** _(fact)_ · 121 chars
-```
-Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
-```
-**4/7** _(fact)_ · 108 chars
-```
-Chinese-Malaysian favourability of China rose 41% to 67%; Malay favourability fell 33% to 28% (2016 to 2022)
-```
-**5/7** _(reframe)_ · 175 chars
-```
-The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Think of it like a landlord who decides which tenants' mail gets delivered The landlord writes the rules, the rules are not public, and Malaysia's regulator licenses the landlord without seeing the rules. WeChat, TikTok, RedNote, Facebook, Telegram are all landlords.
-```
-**7/7** _(view — ONLY post with the link)_ · 164 chars
-```
-PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence, not moderation logic
-
-https://thefourthangle.pages.dev/issue/1982
 ```
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
@@ -1441,39 +1367,6 @@ Tie standing rules to gazette publication date, enforce Section 12 replacement l
 https://thefourthangle.pages.dev/issue/1971
 ```
 
-### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
-
-**1/6** _(hook — attach image, NO link)_ · 91 chars
-```
-520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
-```
-**2/6** _(fact)_ · 112 chars
-```
-China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
-```
-**3/6** _(fact)_ · 259 chars
-```
-George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
-```
-**4/6** _(fact)_ · 259 chars
-```
-Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
-```
-**5/6** _(reframe)_ · 104 chars
-```
-This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
-```
-**6/6** _(view — ONLY post with the link)_ · 142 chars
-```
-Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
-
-https://thefourthangle.pages.dev/issue/1970
-```
-
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
 
 - **Status:** PENDING
@@ -1606,6 +1499,43 @@ Fabricated graphics deserve investigation. But when only 8 of 96 flagged posts a
 https://thefourthangle.pages.dev/issue/1964
 ```
 
+### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
+
+**1/7** _(hook — attach image, NO link)_ · 231 chars
+```
+Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. 11,000MW in applications still dwarf the grid. Johor has RM182.96B approved.
+```
+**2/7** _(fact)_ · 106 chars
+```
+11,000MW applied vs ~7.5GW real demand. The moratorium exempts AI centres, the most power-hungry category.
+```
+**3/7** _(fact)_ · 260 chars
+```
+The moratorium cited water too, but no public data exists on actual water use per data centre in Johor. Johor set a WUE threshold of 1.8 and planned four treatment plants worth RM1.41B. Orang Asli communities near proposed sites were absent from consultations.
+```
+**4/7** _(fact)_ · 240 chars
+```
+RM182.96B is approved in Johor alone, yet the pause shields hyperscalers while local operators face shutdown. Microsoft, Google and ByteDance structured investments as AI-focused, bypassing the pause. Smaller Malaysian firms cannot relabel.
+```
+**5/7** _(reframe)_ · 114 chars
+```
+The real filter is not sustainability. It is lobbying power. The ceiling has a hole sized for the biggest players.
+```
+**6/7** _(analogy)_ · 205 chars
+```
+Like installing a water meter in every house but exempting the swimming pools. A moratorium with exemptions for the largest consumers signals sustainability as a constraint for the small, not the powerful.
+```
+**7/7** _(view — ONLY post with the link)_ · 172 chars
+```
+The ambition is not wrong. It is ungoverned. Residents should not have to protest to trigger what the numbers already demanded.
+
+https://thefourthangle.pages.dev/issue/1963
+```
+
 ### Issue 1962 — Generals charged at last; the 4,679-contract cartel system remains intact
 
 - **Status:** PENDING
@@ -1707,6 +1637,39 @@ The real question is not who owns Sabah. Self-determination and 63 years of stat
 Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
 
 https://thefourthangle.pages.dev/issue/1959
+```
+
+### Issue 1958 — One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1958-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1958`
+
+**1/6** _(hook — attach image, NO link)_ · 125 chars
+```
+A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
+```
+**2/6** _(fact)_ · 269 chars
+```
+149 DUI crash cases prosecuted in three years. 1,261 DUI convictions in one year. Different laws, same silence. 149 covers Section 44 only (injury/death). The 1,261 spans all DUI sections. Malaysia publishes no data on breath tests administered or roadblocks conducted.
+```
+**3/6** _(fact)_ · 265 chars
+```
+12 DUI fatalities per year, 0.2% of crashes. Testing is discretionary. The real number is unknown. Police test on 'reasonable cause' only. Australia mandates blood-testing of all fatal-crash drivers; Malaysia does not. The 0.2% measures enforcement, not prevalence.
+```
+**4/6** _(fact)_ · 134 chars
+```
+4,340 motorcyclists killed in 2025. 13.7% of accidents, 66.4% of deaths. The gig economy's youngest workers on the deadliest vehicles.
+```
+**5/6** _(reframe)_ · 164 chars
+```
+Penalties already exist. The real question is whether Malaysia detects drunk drivers before they kill, and whether alcohol is even the main killer of motorcyclists.
+```
+**6/6** _(view — ONLY post with the link)_ · 224 chars
+```
+Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
+
+https://thefourthangle.pages.dev/issue/1958
 ```
 
 ### Issue 1957 — BYD Blocked, Proton Shielded, B40 Priced Out: Who Wins?
@@ -2358,6 +2321,43 @@ Like a registered-person watchlist decided by an appointed committee, with deten
 SUHAKAM and the Bar Council have urged restoring judicial review of Board decisions and publishing disaggregated outcome data. Both proposals remain unenacted.
 
 https://thefourthangle.pages.dev/issue/1292
+```
+
+### Issue 1267 — Malaysia Hosts 2.5 Million Documented Migrant Workers, Persistent Tier 2 Trafficking Concerns
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
+
+**1/7** _(hook — attach image, NO link)_ · 268 chars
+```
+Malaysia hosts ~2.5 million documented migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. Malaysia retained Tier 2 in the 2025 TIP Report, with the State Department citing weak prosecution in palm oil and disposable-glove manufacturing.
+```
+**2/7** _(fact)_ · 144 chars
+```
+Employment Act 1955 amendments took effect 1 January 2023, extending core protections to all private-sector employees including foreign workers.
+```
+**3/7** _(fact)_ · 261 chars
+```
+The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. The 2025 report noted fewer trafficker convictions and no labour-trafficking prosecutions in palm oil or glove manufacturing despite ongoing reports.
+```
+**4/7** _(fact)_ · 109 chars
+```
+Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services.
+```
+**5/7** _(reframe)_ · 141 chars
+```
+Tier 2 is not a passing grade. Malaysia was Tier 3 in 2014; the trajectory has not reached structural compliance with TVPA minimum standards.
+```
+**6/7** _(analogy)_ · 200 chars
+```
+Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
+
+https://thefourthangle.pages.dev/issue/1267
 ```
 
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
