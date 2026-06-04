@@ -1,255 +1,200 @@
 # Radar — Top Issues to Develop
 
-Scan: 2026-05-17 (refresh of 2026-05-16 list). Queue size: 787. Latest
-published ID: 1991.
+Scan: 2026-06-04 04:12 UTC. Queue size: 721. Latest published ID: 2006.
 
 Curated from `radar/output/issue-queue.json` and
-`radar/output/silence-watch.md`. Already-published items (Norway-NSM
-1983, e-invoice 1984/1985, Malay grievance 1986, gerontocracy 1987,
-CoA emergency proclamations 1988, palm-oil-to-China -39% 1989, MACC
-RM1.1B Rafizi 1990, Harmony and Reconciliation Bill 1991, Zahid
-insults 1980, Sabah 40% 1981, RedNote 1982, 1MDB recovery 1979) and
-items already in flight under `engine/briefs/` (26 in-flight slugs,
-including subsidy-rationalisation, POCA detention, SOSMA renewal,
-Petronas-vs-Petros, PM term-limit, NRD citizenship integrity, LCS
-RM11.2B, MRT3 RM45B, Najib Tanore, etc.) are excluded.
+`radar/output/silence-watch.md` (both regenerated 2026-06-04 04:12 UTC).
+This is the `editorial review` step in the documented flow:
+`radar scan → issue-queue.json + silence-watch.md → top-issues-to-develop.md
+→ editorial review → publish pipeline`. The radar does not write issues;
+this list curates which candidates enter the 10-phase publish flow.
 
-Picks are ordered by editorial leverage, not raw radar score — the
-queue ranks by controversy-potential, but T4A picks should be
-high-leverage *and* primary-source verifiable *and* not already
-saturated in mainstream coverage.
+Already-published items and items in flight under `engine/briefs/` are
+excluded. Since the previous curation (2026-05-17 scan), five radar picks
+shipped and are removed from contention:
 
-Three of yesterday's top five Tier A picks shipped (1988, 1990, 1991).
-The remaining two (Penang temple, federal CEO bribe) carry forward as
-A2 and A3. Three new Tier A picks are added — two from the silence-watch
-top 5 to honor the curator rule, one upgraded from B2.
+- `2000` Suhaili / Bersatu Art. 49A expulsion (= silence S2)
+- `2001` KKM cost-saving under expenditure freeze (= silence S1)
+- `2004` investment-scam losses / BNM mule-account blocks (= prior A5, CCID RM1.47B)
+- `2005` statutory-body CEO squash-court bribe (= prior A3)
+- `2006` Sabah mining-licence graft (= `shamsul-iskandar-sabah-mining-bribery` brief)
+
+Picks are ordered by editorial leverage, not raw radar score — the queue
+ranks by controversy-potential, but T4A picks must be high-leverage *and*
+primary-source verifiable *and* not already saturated in mainstream
+coverage. The raw queue's top 30 this cycle is again dominated by
+single-word and calendar stubs ("budget 2027 presentation", "parliament
+session opens", "malay", "federal", "macc", "pas", "umno") — attention
+noise-floors, not developable. Rank order is not develop order.
 
 ---
 
 ## Tier A — develop next (this week)
 
-### A1. Federal Court grants stay on Isa Samad corruption conviction set-aside
-- **Radar:** silence-watch S5, silence=0.99, importance=0.56, [legal, political]
-- **Date:** 13 May 2026 (Putrajaya)
-- **Why develop:** Isa Samad's RM3M bribery conviction (Felda Investment
-  Corporation, Merdeka Palace Hotel) was the cleanest political-corruption
-  scalp of the post-1MDB era. The apex court granting a stay to re-open
-  the set-aside application reopens a settled accountability story.
-  Mainstream coverage will report it as a procedural development; the
-  T4A angle is the precedent — what does a re-litigated conviction at the
-  Federal Court level signal about the durability of corruption
-  prosecutions once a defendant survives long enough to appeal again.
-- **Verification path:** Federal Court order, original High Court
-  conviction text (FIC/Merdeka Palace case), Court of Appeal ruling,
-  MACC charge sheet, prior Apex Court rulings on similar set-aside
-  applications.
-- **Lenses:** Legal, Governance, Historical.
-- **Risk flags:** none material — court ruling, public record. Treat
-  the defendant by name and charge only, no character framing.
-- **Adjacency:** pair via `related[]` with A3 (federal CEO bribe) and
-  with 1990 (MACC Rafizi RM1.1B) for the corruption-accountability arc.
+### A1. MACC to appeal court order refusing to freeze access to RM548m
+- **Radar:** silence-watch S8, silence=0.99, importance=0.54, age=12.6d, [institutional, legal]
+- **Date:** 22 May 2026 (first seen)
+- **Why develop:** The cleanest fresh pick this cycle. A court rejected a
+  MACC application to block access to RM548 million; MACC says it will
+  file an appeal. No brief, not published, low defamation risk (the story
+  is a court record and a stated appeal, not an allegation against a named
+  person). The T4A angle is the asset-preservation gap: when the
+  commission cannot ring-fence disputed funds during an investigation,
+  what happens to recoverability by the time a case concludes? Pairs into
+  the corruption-accountability arc T4A is already tracking.
+- **Verification path:** the court ruling text (KL High Court), MACC's
+  appeal notice / statement, the underlying freezing-order provisions
+  (MACC Act / AMLA forfeiture sections), prior set-aside outcomes on
+  comparable freezing orders.
+- **Lenses:** Governance, Legal, Economic.
+- **Risk flags:** none material — court record. Treat by case and stated
+  appeal only; no character framing of any party.
+- **Adjacency:** pair via `related[]` with `2005` (CEO bribe), `1990`
+  (MACC RM1.1B Rafizi), `1992` (Isa Samad Federal Court). NOTE: the
+  RM548m figure here is distinct from the "548" strings in the
+  isa-samad / stablecoin / investment-fraud briefs (those are URL
+  fragments) — confirm in Phase 1.
 
-### A2. Penang Islamic Dept halts Chinese temple's Hari Raya open house
-- **Radar:** queue #19 (Penang cluster), p72=1.00, [ethnic, religious, legal]
-- **Date:** 8 April 2026 (George Town)
-- **Why develop (carried from 2026-05-16):** A jurisdictional question
-  with a long shadow — does a state Islamic department have authority to
-  order a non-Muslim place of worship to cancel an event branded as a
-  religious celebration? The factual story is small; the precedent is
-  large. Falls inside the highest-bar 3R verification standard, so
-  source the JHEAIPP letter directly, not just news characterisations.
-- **Verification path:** JHEAIPP order/statement, temple representative's
-  response, Federal Constitution Art. 11/3, AGC guidance on inter-faith
-  events.
-- **Lenses:** Rights, Legal, Religious (carefully — critique the
-  jurisdictional reach, not the faith).
-- **Risk flags:** 3R-sensitive. Hold the issue if any specific cannot be
-  traced to two independent primary sources.
-
-### A3. Federal agency CEO arrested over RM1m bribe — squash court project
-- **Radar:** queue #10 (MACC cluster), p72=0.96, [institutional, legal]
-- **Date:** 14 April 2026
-- **Why develop (carried from 2026-05-16):** Specific, recent, verifiable,
-  low-defamation-risk (charges already filed). Ties into the broader
-  institutional-corruption arc T4A is tracking. Strong second-card pairing
-  with A1 (Isa Samad) and 1990 (Rafizi RM1.1B) for a "small grift,
-  big pattern" piece on contract-without-tender vulnerabilities at
-  federal statutory bodies.
-- **Verification path:** MACC statement, court charge sheet, statutory
-  body annual report, MOF e-Perolehan contract metadata if accessible.
-- **Lenses:** Governance, Economic, Legal.
-
-### A4. Court of Appeal: Bersatu membership termination of Suhaili stands
-- **Radar:** silence-watch S2, silence=0.99, importance=0.51, [legal, political]
-- **Date:** 29 April 2026 (Putrajaya)
-- **Why develop:** The party-hopping amendment to the Federal
-  Constitution (Article 49A, enacted October 2022) was supposed to make
-  defection legally enforceable. The Court of Appeal unanimously
-  upholding Bersatu's termination of Suhaili — and his loss of MP status
-  by consequence — is the cleanest precedent yet on whether the
-  enforcement mechanism actually works. Mainstream coverage will treat
-  it as an internal-party dispute; the T4A angle is the constitutional
-  question of whether parties can now expel MPs at will, and what that
-  does to the original anti-hopping intent (protect voter mandate vs
-  enforce party discipline).
-- **Verification path:** Court of Appeal judgment text, Federal
-  Constitution Art. 49A, Bersatu constitution clauses on membership
-  termination, Election Commission's by-election trigger procedure.
-- **Lenses:** Legal, Political, Historical.
-
-### A5. PDRM CCID: investment fraud losses hit RM1.47B in 2025
-- **Radar:** queue #92 (upgraded from prior B2), p72=0.29, [economic, political]
-- **Date:** 18 April 2026
-- **Why develop (upgraded from B2):** Concrete, denominator-friendly,
-  PDRM data — exactly the kind of "scam economy" finding that lands well
-  inside the language-quality "show, don't tell" rule. The T4A angle is
-  the gap between SC enforcement bandwidth (≤200 enforcement actions/yr)
-  and the volume of cases reported to CCID (tens of thousands). A
-  systemic-capacity reframe, not a moral-panic one.
-- **Verification path:** PDRM CCID 2025 annual statement, SC enforcement
-  bulletins (full year 2025), BNM Financial Stability Review 2024/2025,
-  Semakmule public-domain data, MyChecker registration counts.
-- **Lenses:** Economic, Governance, Social.
+### A2. JAS logs 5,000+ environmental inspections, RM4.59m in fines
+- **Radar:** silence-watch S11, silence=0.97, importance=0.56, age=6.8d, [environmental, political]
+- **Date:** 28 May 2026 (first seen)
+- **Why develop:** Denominator-rich, low 3R, and exactly the kind of
+  "show, don't tell" enforcement data the language-quality standard
+  rewards: 5,000+ inspections, 3,149 enforcement actions, RM4.59m in
+  fines. Picks up lens diversity the recent run is starving — issues
+  2001–2006 are Health / Economic / Governance-heavy with no
+  Environmental slot. The T4A angle is the enforcement-yield question:
+  what does RM4.59m across 3,149 actions imply about per-case deterrence,
+  and how does it compare to the scale of the breaches? Can pair with the
+  carried-over Terengganu oil-spill EQA-enforcement angle (see Tier B).
+- **Verification path:** the JAS statement / release (full figures, not
+  press summary), Environmental Quality Act s.27 penalty schedule,
+  Auditor-General prior reports on DOE/JAS enforcement yield, historical
+  conviction-rate data.
+- **Lenses:** Environmental, Governance, Legal.
+- **Risk flags:** none material.
 
 ---
 
 ## Tier B — develop if Tier A blocked
 
-### B1. Bukit Kayu Hitam shooting → border agency now armed with pistols/tasers
-- **Radar:** queue #37, p72=0.48, [institutional, political]
-- **Date:** 17 April 2026
-- **Frame:** Border use-of-force escalation. Pair with queue #86
-  (Bukit Kayu Hitam passport rejections) for the wider AKPS governance
-  picture. The relevant primary source is the IGP / Home Ministry
-  arming order, not the incident report alone.
+### B1. Sabah 40% revenue entitlement — stay-application ruling (finish or retire)
+- **Radar:** silence-watch S3, silence=0.99, importance=0.51, age=64.2d, [legal, political]
+- **Date:** stay-application decision expected (per source) the Monday after 31 May 2026
+- **Status:** in-flight brief `sabah-two-ma63-delays-akps-vs-40pc-revenue-stay.md`
+  exists. Highest live silence×importance score in the queue, BUT issue
+  `1981` already framed the 6 April Court of Appeal stay and the AKPS
+  deferral. Develop the in-flight brief **only if the stay-application
+  ruling lands as a genuinely new outcome**; otherwise formally retire the
+  brief so the silence-watch stops re-surfacing a covered case
+  indefinitely. MEDIUM 3R — frame as federalism / MA63 process, not
+  ethnicity.
+- **Verification path:** the Court of Appeal ruling on the stay
+  application, MA63 revenue-entitlement provisions, the High Court
+  judgment `1981` referenced, the federal government's application text.
+- **Lenses:** Governance, Legal, Historical.
 
-### B2. KKM cost-saving proposal under govt operating-expenditure freeze
-- **Radar:** silence-watch S3, silence=1.00, importance=0.51, [political]
-- **Date:** 4 May 2026
-- **Frame:** When the Treasury freezes operating expenditure across
-  ministries and the Health Ministry responds with a "cost-saving
-  without affecting essential services" promise, the question is what
-  exactly gets reclassified as non-essential. Verify against the actual
-  KKM circular (not press conference summary) and the parallel Treasury
-  guidance. Pair this with the broader fiscal-rule arc.
-- **Verification path:** KKM internal circular, Ministry of Finance
-  expenditure-freeze circular (if gazetted), Auditor-General prior
-  reports on KKM operational deficits.
+### B2. MACC investigates two individuals over IJM takeover (hold for charges)
+- **Radar:** silence-watch S17, silence=0.95, importance=0.41, age=14.5d, [institutional, political]
+- **Date:** 21 May 2026 (first seen)
+- **Frame:** New and unbriefed, but an **open investigation** with no
+  charges — develop only once charges are filed, and even then name only
+  what is on the public record. Until then the defamation exposure is too
+  high for the T4A standard. Hold.
+- **Verification path:** MACC statement, any charge sheet once filed,
+  Bursa/SC disclosure on the IJM transaction, company announcements.
 
-### B3. Terengganu DOE — 3km Pantai Teluk Kalong oil spill, vessel identified
-- **Radar:** queue #70, p72=0.29, [environmental, political]
-- **Date:** 17 April 2026
-- **Frame:** Environmental Quality Act enforcement test — does the
-  identified vessel actually face penalty under EQA s.27, and what is
-  the historical conviction rate? Strong fact-card story when paired
-  with DOE prosecution-rate data.
-
-### B4. Geopolitical tensions — Malaysia–West Asia trade −30.4%
-- **Radar:** queue #94, p72=0.63, [economic, political]
-- **Date:** 21 April 2026
-- **Frame:** MATRADE figures translate the regional conflict into
-  domestic export terms. Useful affordability/economy piece if paired
-  with the RON95 subsidy data. Verify with MATRADE Q1 2026 release
-  and DOSM trade tables, not press summaries.
-
-### B5. ILO denies endorsing Bestinet foreign-worker system
-- **Radar:** silence-watch S11, silence=0.99, importance=0.52, [ethnic, political]
-- **Date:** 12 May 2026
-- **Frame:** Follow-up to the published Bestinet migrant-visa monopoly
-  issue. The Ministry of Human Resources had publicly cited ILO
-  involvement as a system endorsement; the ILO statement walking that
-  back is a clean factual correction — the kind of issue T4A's "what
-  they said / what we found" structure is built for. Already has the
-  prior-issue connection ready for `related[]`.
-- **Verification path:** ILO statement (Geneva office), Ministry of
-  Human Resources prior press releases, Bestinet's contract scope of
-  work, prior T4A bestinet brief.
+### B3. Terengganu DOE — Pantai Teluk Kalong oil spill, EQA enforcement test (carry-over)
+- **Frame:** Carried from the prior cycle (was B3). Not surfaced in this
+  cycle's top-25 silence-watch, so demoted to a watch item: develop only
+  if paired with A2 (JAS enforcement) as a combined EQA-enforcement piece,
+  or if a penalty under EQA s.27 is actually imposed on the identified
+  vessel. Verify against DOE prosecution-rate data, not the incident
+  report alone.
 
 ---
 
-## Skip — already covered or deferred
+## Skip — already covered, stubs, or deferred
 
-### Published since 2026-05-16 scan
-- Prior A1 Court of Appeal emergency proclamations → published 1988
-- Prior A4 MACC RM1.1B Rafizi 28 pages → published 1990
-- Prior A2 Harmony and Reconciliation Bill → published 1991
-- Trump–Xi soybean deal vs Malaysia palm oil → published 1989
+### Published since the 2026-05-17 scan (silence-watch echoes)
+- S1 (KKM cost-saving) → published `2001`
+- S2 (Suhaili / Bersatu Art. 49A) → published `2000`
+- S6 (Rafizi 9-hour MACC questioning) → collapses into published `1990`
+- Prior A5 (CCID RM1.47B investment fraud) → published `2004`
+- Prior A3 (statutory-body CEO bribe) → published `2005`
+- Prior B4 (Malaysia–West Asia trade −30.4%) → published `1996`
 
-### Already covered or in-flight
-- silence-watch S1 (Sabah 40% revenue stay) → published 1981
-- silence-watch S4 (MCA Youth anti-Azam Baki rally) → adjacent to
-  published `macc-chief-watchdog-crisis` arc; rally itself does not
-  carry standalone editorial leverage beyond what the watchdog-crisis
-  issue already framed. Defer unless the MKT board does substantively
-  act on the call.
-- silence-watch S7 (Norway permit regret response) → already framed
-  inside published 1983 (Norway NSM export revocation)
-- silence-watch S6 / S9 / S10 (RON95 subsidy variants) → subsidy
-  rationalisation brief in flight; subsidiary signals not
-  independently developable.
-- silence-watch S15 (Rafizi 9-hour MACC questioning) → directly
-  collapses into published 1990; no new finding.
-- silence-watch S13 (Jho Low Trump pardon) → developable in principle
-  but verification path is US-side; hold for primary court / DoJ
-  filing rather than WSJ characterisation.
-- silence-watch S14 (NGO Islam police report against Zawawi) → 3R-
-  sensitive religious-speech complaint; hold unless AGC opens charges
-  with a public statement.
-- silence-watch S18 (Saifuddin denies China citizenship rumour) →
-  collapses into in-flight `nrd-citizenship-integrity-fam-cas` brief.
-- silence-watch S19 (Daud Bakar Islamic finance CBT) → developable
-  in principle but 3R-adjacent; hold until two independent primary
-  sources (charge sheet + SC enforcement) are both available in full
-  text.
-- silence-watch S25 (trader association rent reduction proposal) →
-  policy advocacy without a binding decision; not yet developable.
+### Calendar / single-word stubs in queue and silence-watch
+- S4 "budget 2027 presentation", S5 "parliament budget session opens",
+  S9 "parliament second session opens" — scheduled-event placeholders
+  (0–1 social mentions), not developable findings. Track as noise floors.
+- Queue ranks #1–#17 ("malay", "federal", "india", "chinese", "macc",
+  "johor", "police", "pas", "umno", "minister", "price", "rafizi",
+  "penang", "umno") — topic-level attention, not candidate stories.
 
-### Single-word or stub titles in queue
-Queue items #1-8 ("parliament", "budget 2027 presentation", "malay",
-"federal", "police", "pas", "umno") are signal of attention, not of
-a developable issue. They are tracked as topic-level noise floors,
-not as candidate stories.
+### Adjacent to an existing brief or published arc
+- S7 (Pemuda MCA anti-Azam Baki) and S18 (Syahredzan vs ex-MACC chief)
+  → adjacent to `macc-chief-watchdog-crisis` brief; no standalone
+  leverage beyond it. Defer unless a board substantively acts.
+- S10 (data-centre approval selectivity) → adjacent to
+  `data-center-johor-water-power` / `chip-export-controls-johor-dc-risk`.
+- S16 (tourism — high-income China segment) → adjacent to
+  `penang-tourism-china-india-asean`.
+- Prior A2 (Penang temple open-house halt) → still uncovered (1604 / 1639
+  / 1955 / 1960 are temple-adjacent, not this story) but NOT surfaced in
+  this cycle's silence-watch. Carry as a 3R-gated watch item only —
+  develop with Stage 5 re-enabled and two independent primary sources
+  (JHEAIPP order text first), or hold.
 
-### Prior Skip carry-overs (still valid)
-- #25 / #80 Fuel subsidies → in-flight via
-  `subsidy-rationalisation-targets-rm8-billion-annual` brief
-- #32 1MDB recovery → published 1979 (and in-flight asset-recovery brief)
-- #60 Shah Alam community forest → reader output already produced
-- #77 RM82B local-currency trade → reader output already produced
-- Prior A5 federal CEO RM1m bribe → carried forward as new A3 above
+### 3R-sensitive — hold behind the higher verification bar
+- S19 (300 detained incl. 12 alleged deviant-teaching leaders) → HIGH
+  religious. Hold unless two independent primary sources (police statement
+  + any charge) are both available in full text, and critique process
+  (detention authority, due process), not belief.
+- S15 (Wesak drone / firecracker policing, Penang) → religious-adjacent,
+  low leverage. Skip.
+
+### Low-leverage / punditry / foreign
+- S12 (Saifuddin "konsensus nasional baharu"), S20 (judge-security call),
+  S22 (Bersatu "magnet" analyst), S24 (Rayer on public shooting),
+  S25 (Syed Hussin PRU16 speculation) → reaction/punditry, no decision to
+  anchor a fact card.
+- S13 (insurer ordered to pay RM1.245m to one car owner), S14 (APAD
+  enforcement after operators halt KL routes) → single-instance, low
+  structural leverage.
+- S21 (Zara Qairina inquest audio) → sensitive (minor's death), and at
+  18 news / 15 social not genuinely silent (silence=0.86). Hold.
+- S23 (Blue Origin rocket explosion) → foreign, no Malaysia transmission
+  channel. Skip.
 
 ---
 
 ## Methodology notes
 
-- "Already covered" check ran against `src/data/issues/*.json`
-  headlines and contexts plus `engine/briefs/*.md` filenames. The 26
-  in-flight briefs (Stage 1 done, no reader output yet) are also
-  excluded — see in-flight list under `engine/briefs/` directory
-  listing for the full set.
+- "Already covered" check ran against `src/data/issues/*.json` headlines
+  and contexts plus `engine/briefs/*.md` filenames (84 in-flight briefs
+  excluded).
 - "Saturated" means mainstream coverage already supplies the missing
-  context T4A would otherwise add. Picks below privilege issues where
-  Stages 2/3 will likely surface a real factual or framing gap.
-- Single-word and stub titles (e.g. "anwar", "umno", "police") were
-  excluded — they are signal of attention, not of a developable issue.
-- The `silence_anomaly` detection bias in the queue (≈87%) means many
-  high-rank items are *low* news mentions but high *structural*
-  importance — that is the queue working as designed, but it also
-  means the rank order is not the develop order.
+  context T4A would otherwise add.
+- The `silence_anomaly` bias in the queue means many high-rank items are
+  *low* news mentions but high *structural* importance — the queue working
+  as designed, but rank order is not develop order.
 
 ### Silence-watch obligation (Tier S) — status
 
-Curator rule: each cycle, at least one Tier A or Tier B pick must
-come from the top 5 of `silence-watch.md`, OR each of those top 5
-must appear in Skip with a one-line reason.
+Curator rule: each cycle, at least one Tier A or Tier B pick must come
+from the top 5 of `silence-watch.md`, OR each of those top 5 must appear
+in Skip with a one-line reason.
 
-This cycle satisfies the rule comfortably:
-- S1 → published 1981 (Skip section)
-- S2 → picked as new A4 (Bersatu/Suhaili appeal)
-- S3 → picked as new B2 (KKM cost-saving)
-- S4 → Skip with reason (adjacent to macc-chief-watchdog-crisis)
-- S5 → picked as new A1 (Isa Samad Federal Court stay)
+This cycle satisfies the rule:
+- S1 → Skip (published `2001`)
+- S2 → Skip (published `2000`)
+- S3 → picked as B1 (Sabah 40% — finish-or-retire)
+- S4 → Skip (calendar stub)
+- S5 → Skip (calendar stub)
 
-Three of the top five silence picks are developed in this cycle,
-one is already published, one is deferred with stated reason —
-no silence pick is left unaccounted for.
+One top-5 silence pick is developed; the rest are accounted for with
+stated reasons — no silence pick is left dangling.
+
+_Refreshed 2026-06-04 against the same-day raw scan; supersede on the
+next curator refresh._
