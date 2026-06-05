@@ -6,8 +6,9 @@
     "generated_at": "2026-06-05"
   },
   "input_file": "engine/output/pdpa-admp-government-exemption-stage1.json",
-  "factual_accuracy_score": 87,
-  "source_diversity_estimate": 0.7,
+  "factual_accuracy_score": 88,
+  "source_diversity_estimate": 0.74,
+  "_v2_note": "Augmented after an external deep-research report (50 cited sources) surfaced an INCORRECT claim ('Malaysia passed no equivalent') and new material (Cyber Security Act 2024, Data Sharing Act 2025, PADU Analytics-as-a-Service). Each new fact was independently primary-verified (Act 854, Act 864, The Star/Malay Mail/FMT) before integration. Score reflects the corrected final, which is more accurate and better-sourced than the draft.",
   "claims": [
     {
       "claim": "On 30 April 2026 JPDP adopted three guidelines: DPIA, Data Protection by Design, and Automated Decision-Making & Profiling (v1.0).",
@@ -80,6 +81,38 @@
       "source": "PDPA (Amendment) Act 2024 (Act A1727); DLA Piper / Hogan Lovells / Mayer Brown on Jun 2025 in-force phase.",
       "correction": "Accurate. Used in the brief; not asserted as a card number, so low exposure.",
       "stale_check": "In force."
+    },
+    {
+      "claim": "Malaysia passed no public-sector data law equivalent to Singapore's PSGA (Stage 1 draft fact-Governance).",
+      "status": "INCORRECT",
+      "m_true": 0.1, "m_false": 0.85, "m_unknown": 0.05,
+      "source": "Cyber Security Act 2024 (Act 854), nacsa.gov.my/act854.php; Data Sharing Act 2025 (Act 864), jdn.gov.my/wp-content/uploads/2025/06/Act-864.pdf.",
+      "correction": "WRONG as drafted. Malaysia has the Cyber Security Act 2024 (NCII incl. Government) and the Data Sharing Act 2025 (binds Federal Government; s.18: up to RM1m / 5 years for officer misuse/disclosure). The accurate gap is narrower: these laws protect data security and punish leaking officers but grant NO data-subject algorithmic-accountability right. Card corrected; Singapore dropped.",
+      "stale_check": "Both Acts in force (Aug 2024 and Apr 2025)."
+    },
+    {
+      "claim": "Data Sharing Act 2025 (Act 864) binds the Federal Government; s.18 imposes up to RM1 million / 5 years on officers who misuse or disclose shared data.",
+      "status": "VERIFIED",
+      "m_true": 0.95, "m_false": 0.02, "m_unknown": 0.03,
+      "source": "Act 864 PDF (jdn.gov.my); Royal Assent 5 Feb 2025, in force 28 Apr 2025; Hogan Lovells public-sector data-sharing note.",
+      "correction": "Accurate.",
+      "stale_check": "In force 28 Apr 2025."
+    },
+    {
+      "claim": "Cyber Security Act 2024 (Act 854) in force 26 Aug 2024; classifies 11 NCII sectors including Government, with mandatory risk assessments, audits and incident notification.",
+      "status": "VERIFIED",
+      "m_true": 0.95, "m_false": 0.02, "m_unknown": 0.03,
+      "source": "Act 854 (nacsa.gov.my/act854.php); Mayer Brown / PwC summaries.",
+      "correction": "Accurate.",
+      "stale_check": "In force 26 Aug 2024."
+    },
+    {
+      "claim": "Since May 2026 PADU offers 'Analytics-as-a-Service' to 26 government agencies; uses include scoring a borrower's capability to repay a government loan; PADU holds 30.7 million profiles as of April 2026.",
+      "status": "VERIFIED",
+      "m_true": 0.88, "m_false": 0.04, "m_unknown": 0.08,
+      "source": "The Star 20 Apr 2026 (26 agencies); Malay Mail / FMT 20 Apr 2026 (Analytics-as-a-Service, loan-repayment scoring); SAYS (30.7m). Economy Minister Akmal Nasrullah.",
+      "correction": "Accurate. Establishes PADU as an active automated-profiling engine. '26 agencies' and the loan-repayment use case are ministerial statements carried by named outlets.",
+      "stale_check": "Current as of Apr-May 2026."
     }
   ],
   "cardinal_sin_flags": [

@@ -69,7 +69,21 @@ under.
 - **JPDP Guidelines (30 Apr 2026)** — DPIA, Data Protection by Design, ADMP.
   These are *guidelines* (operational guidance), not standalone statute; the
   DPIA obligation derives from the amended Act, the guidelines specify when and
-  how. [S3][S4][S5]
+  how. [S3][S4][S5] PDP Commissioner: Shariffah Rashidah Syed Othman. ADMP adds
+  a data-subject "Right to Refuse" solely-automated decisions with significant
+  effect, and bars profiling of children for marketing. [S16]
+- **Malaysia's public-sector data laws (the state is NOT lawless on data):**
+  - **Cyber Security Act 2024 (Act 854)** — in force 26 Aug 2024; NACSA; 11
+    NCII sectors including "Government"; mandatory risk assessments, audits,
+    incident notification. Protects state systems from cyber threats. [S17]
+  - **Data Sharing Act 2025 (Act 864)** — Royal Assent 5 Feb 2025, in force 28
+    Apr 2025; binds Federal Government agencies and federal statutory bodies;
+    National Data Sharing Committee; **Section 18: up to RM1 million / 5 years**
+    for officers who misuse or disclose shared data without authority. [S18]
+  These laws guard data security and punish leaking officers; **neither grants a
+  data subject any right to an algorithmic impact assessment, an explanation, or
+  to refuse an automated state decision.** That individual-recourse gap is the
+  issue, not a claim that the government is unregulated.
 - **Comparators:**
   - **Singapore** — PDPA excludes the public sector, BUT the Public Sector
     (Governance) Act 2018 (PSGA) governs it with criminal penalties for
@@ -81,8 +95,14 @@ under.
 
 ## KEY STATISTICS (each with primary-leaning citation)
 
-- **30.7 million** individuals covered by PADU; **600+** integrated data points;
-  **39** fields individuals self-verify. [S9 — The Edge, citing Rafizi/Economy Ministry; S10]
+- **30.7 million** socio-economic profiles in PADU as of April 2026 (citizens +
+  PRs), integrating data from **200+** agencies; **600+** integrated data points;
+  **39** fields individuals self-verify. [S9; S15 SAYS citing Economy Ministry; S10]
+- **PADU "Analytics-as-a-Service"** rolled out from **May 2026** to **26**
+  government agencies; use cases stated by Economy Minister Akmal Nasrullah
+  include scoring a borrower's **capability to repay a government loan** and
+  ageing-population targeting. PADU is, by function, an automated-profiling
+  engine. [S19 The Star / S20 Malay Mail / FMT, 20-21 Apr 2026]
 - **52.6%** (11.55 million) of citizens 18+ actively registered/updated PADU by
   the 31 Mar 2024 deadline; Rafizi later cited **17.65 million** profiles
   updated by 1 Apr 2024. CONTRADICTION noted below. [S9]
@@ -146,6 +166,24 @@ the recourse gap = Rights; the Section 3 / Cabinet decision = Governance.)
   is the *absence of PDPA recourse against any agency*, which holds regardless
   of source. Do not assert NRD was the source.
 
+## CORRECTION (post-draft, external deep-research report, primary-verified)
+
+- **"Malaysia passed no equivalent" was WRONG.** The Stage 1 draft's Governance
+  card said Singapore pairs its public-sector exemption with an accountability
+  law while "Malaysia passed no equivalent." Malaysia DOES have public-sector
+  data statutes: the **Cyber Security Act 2024** and the **Data Sharing Act
+  2025** (the latter binds the Federal Government with RM1m / 5-year officer
+  penalties under s.18). Corrected the card to the accurate gap: those laws
+  guard data security and punish leaking officers, but **none gives a citizen an
+  algorithmic-accountability right** (DPIA on state systems, explanation, or a
+  right to refuse an automated state decision). Verified against Act 864 [S18]
+  and Act 854 [S17] primary texts.
+- **Singapore comparator weakened and dropped from the card.** Singapore also
+  exempts its public sector and handles public-sector algorithms via internal AI
+  governance, not statutory DPIAs, so it is not a clean "did it right" foil.
+  Kept in the brief for context; removed from the reader card to avoid a
+  misleading contrast.
+
 ## SOURCE SPECTRUM CHECK
 
 - Government-aligned: PMO PADU statement [S14], Gobind statement [S8], JPDP
@@ -179,7 +217,15 @@ SECONDARY / INTERPRETIVE:
 - [S9] The Edge Malaysia — PADU 30.7m individuals / 600+ data points; analytics use. theedgemalaysia.com.
 - [S10] Malay Mail / Lowyat / The Star — PADU launch, 39 fields, 18+ registration.
 - [S12] FMT — "Why shouldn't PDPA apply to government, asks expert" (7 Oct 2023): Cabinet rejected removal of Section 3; international firms' surprise. freemalaysiatoday.com.
-- Law-firm advisories (DPIA thresholds, ADMP trigger, 2024 amendment phases): Baker McKenzie, Rahmat Lim, Mayer Brown, DLA Piper, Hogan Lovells, InCorp — used only to interpret the primary instruments, every quantitative claim cross-checked to [S1-S5].
+- Law-firm advisories (DPIA thresholds, ADMP trigger, 2024 amendment phases): Baker McKenzie, Rahmat Lim, Mayer Brown, DLA Piper, Hogan Lovells, InCorp, Christopher & Lee Ong, Skrine — used only to interpret the primary instruments, every quantitative claim cross-checked to [S1-S5].
+
+ADDED post-draft (external deep-research report, each primary-verified before use):
+- [S15] SAYS — "PADU Has Data On 30.7 Million Malaysians" (citing Economy Ministry). Named outlet citing primary.
+- [S16] JPDP ADMP Guideline PDF — pdp.gov.my/.../Automated-Decision-Making-And-Profiling-Guideline-ADMP.pdf (Right to Refuse; child-marketing bar). PRIMARY (regulator).
+- [S17] Cyber Security Act 2024 (Act 854) — nacsa.gov.my/act854.php; in force 26 Aug 2024; NCII incl. Government. PRIMARY (statute).
+- [S18] Data Sharing Act 2025 (Act 864) — jdn.gov.my Act-864.pdf; in force 28 Apr 2025; binds Federal Government; s.18 RM1m / 5y officer penalty. PRIMARY (statute).
+- [S19] The Star, 20 Apr 2026 — "Padu shifts gear, now backend powerhouse for 26 govt agencies, says Akmal Nasrullah."
+- [S20] Malay Mail / FMT, 20 Apr 2026 — PADU Analytics-as-a-Service; loan-repayment-capability scoring; ageing-population targeting.
 
 ## THE T4A ANGLE (for Stage 1)
 
