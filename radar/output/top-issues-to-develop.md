@@ -27,7 +27,11 @@ coverage. The raw queue's top 30 this cycle is again dominated by
 single-word and calendar stubs ("budget 2027 presentation", "parliament
 budget session opens", "malay", "federal", "india", "chinese", "budget")
 — attention noise-floors, not developable. Rank order is not develop order.
-The developable signal lives in `silence-watch.md`, scanned below.
+The developable signal lives in `silence-watch.md`, scanned below — plus,
+this cycle, a manual pass over Digital Policy Alert
+(`digitalpolicyalert.org`), which surfaces regulator guidelines and
+gazette-level digital-policy moves that carry near-zero domestic press and
+so never register in the news-volume queue. That pass produced pick A3.
 
 ---
 
@@ -87,6 +91,52 @@ The developable signal lives in `silence-watch.md`, scanned below.
   doctrine, not the man.
 - **Adjacency:** `1997` (AG-prosecutor split), `ag-public-prosecutor-separation-bill`,
   `zahid-insults-firm-action-vs-existing-laws`, `najib-1mdb-tanore`.
+
+### A3. Malaysia's first algorithmic-accountability rulebook exempts its biggest profiler — the state
+- **Source channel:** Digital Policy Alert pass (`digitalpolicyalert.org`),
+  not the domestic-news radar. This is the kind of silent structural item
+  the news-volume queue cannot see: a regulator guideline with near-zero
+  press. DPA events `/change/13812`, `/change/13810`, `/change/19244`.
+- **Date:** 30 April 2026 (three guidelines adopted, v1.0)
+- **Why develop:** The single most "silent" high-leverage pick on file this
+  cycle, and it lands a Technology / Rights lens the run has never carried.
+  On 30 April the Department of Personal Data Protection (JPDP), under the
+  Digital Ministry, adopted Malaysia's first guidelines on Data Protection
+  Impact Assessment, Data Protection by Design, and Automated Decision-
+  Making & Profiling (ADMP v1.0). The framework is strict on its face: any
+  automated decision-making or profiling now triggers a mandatory DPIA
+  regardless of volume — no minimum-numbers exemption. The silent gap is
+  the scope: the guidelines sit under the Personal Data Protection Act 2010
+  (Act 709), whose Section 3 excludes the Federal and State Governments
+  entirely — a blanket carve-out reportedly unique to Malaysia and
+  Singapore. So the largest automated profiler of Malaysians — PADU, the
+  central database holding a record on every citizen and PR aged 18+, which
+  the Digital Minister confirmed in July 2024 is not bound by Act 709 — sits
+  outside the very rulebook now imposed on every private firm that scores a
+  customer. As the state pushes an "AI-driven nation by 2030" and a national
+  data-sharing policy, the automated decisions that most affect citizens
+  (subsidy eligibility, welfare targeting, policing, immigration) are
+  precisely the ones the new accountability regime cannot reach.
+- **Verification path:** the three JPDP guideline texts (pdp.gov.my), Act
+  709 Section 3 (non-application to Federal/State Government), the Personal
+  Data Protection (Amendment) Act 2024 (the DPIA-mandate basis), the
+  Digital Minister's July 2024 statement on PADU's exemption, the DPA event
+  records, and a comparator (GDPR Art. 22 ADM safeguards; Singapore PDPA's
+  parallel public-sector carve-out and its separate PSGA regime).
+- **Lenses:** Technology, Rights, Governance.
+- **Risk flags:** low 3R, low defamation — critique the statutory scope and
+  the design choice, not any named official. Note the binding/advisory line
+  carefully: the DPIA *obligation* flows from the amended Act, but the three
+  documents are *guidelines*; do not overclaim them as hard law. Confirm
+  PADU's current legal footing at Phase 1 (the exemption is a ministerial
+  position grounded in s.3, not a separate statute) and do not claim PADU
+  data has been misused — the issue is the absence of a statutory check, an
+  anxiety-of-precedent frame, not an allegation of abuse.
+- **Adjacency:** `1454` (MySejahtera health-data governance), `1884` (PDPA
+  reform stall), `1259` (PDPA enforcement — 8 penalties), `1285` (privacy
+  complaints +67%), `cimb-data-breach-denial`, `data-center-johor-water-power`,
+  and the cycle's A1 (MyIMMs) — the government's own data systems are the
+  through-line.
 
 ---
 
@@ -248,6 +298,16 @@ The developable signal lives in `silence-watch.md`, scanned below.
 - Every Tier A/B pick this cycle was confirmed against live primary-leaning
   sources (court grounds, regulator statements, ministry directives) before
   listing; URLs go into the Phase 1 brief, not here.
+- Pick A3 came from a Digital Policy Alert pass rather than the domestic
+  news/social radar. DPA tracked seven Malaysia digital-policy events in
+  2026 (the OSA Child Protection + Risk Mitigation codes in force 1 June, a
+  MCMC content-removal notice on royal-institution posts, a Quality-of-
+  Service determination, and the three 30 April JPDP data-governance
+  guidelines). Of these the ADMP/profiling guideline is the silent
+  structural pick; the OSA age-verification code is a secondary candidate
+  (held — age-verification is globally live and better developed once the
+  code's enforcement record exists), and the royal-institution removal
+  notice is 3R (royalty) and held behind the higher verification bar.
 
 ### Silence-watch obligation (Tier S) — status
 
