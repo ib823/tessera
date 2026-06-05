@@ -1,47 +1,52 @@
 {
   "_provenance": {
-    "stage": "Stage 2 — Bias Audit",
-    "executed_by": "Claude (internal review pass, NOT external Gemini). The browser prompt engine/prompts-generated/pdpa-admp-government-exemption-stage2-browser.txt is generated for the operator to run the true external cross-LLM check before any merge to main. This internal pass applies the same stage2-preamble criteria.",
+    "stage": "Stage 2 — Bias Audit (Gemini, external)",
+    "executed_by": "External Gemini browser run supplied by the operator. REPLACES the earlier internal Stage 2 pass. bias_score 15 -> ba = 100 - 15 = 85.",
     "slug": "pdpa-admp-government-exemption",
-    "generated_at": "2026-06-05"
+    "generated_at": "2026-06-06"
   },
-  "bias_score": 22,
-  "political_lean_estimate": -0.4,
+  "bias_score": 15,
+  "political_lean_estimate": -0.3,
   "ethnic_framing_estimate": 0.0,
   "religious_sensitivity_estimate": 0.0,
-  "narrative_framing_estimate": 0.2,
+  "narrative_framing_estimate": -0.2,
   "geographic_bias_estimate": 0.0,
-  "economic_framing_estimate": 0.1,
+  "economic_framing_estimate": 0.0,
   "gender_agency_estimate": 0.0,
-  "partisan_flags": [
-    {
-      "quote": "Any company that runs automated profiling must now file an impact assessment, even on a single person. PADU profiles 30.7 million people across 600+ data points, and is exempt.",
-      "why_biased": "The juxtaposition is factually correct but rhetorically sharp; a reader could infer the government deliberately built PADU to evade the rules, when PADU (Jan 2024) predates the 30 Apr 2026 guidelines and the s.3 exemption predates both (2010). The asymmetry is real, the sequencing is not causal.",
-      "fix": "Acceptable as written because no card asserts intent or sequencing; keep, but ensure no synthesis edit introduces a 'built to evade' implication. The exemption is structural and pre-existing."
-    }
-  ],
+  "partisan_flags": [],
   "racial_flags": [],
   "religious_flags": [],
   "geographic_flags": [],
   "economic_flags": [],
   "gender_flags": [],
   "omission_flags": [
-    "The cards omit that the government is not entirely ungoverned on data: internal civil-service security directives (Arahan Keselamatan), sectoral rules, and the National Cyber Security Act 2024 impose obligations on agencies. None gives an individual data subject PDPA-style rights (access, correction, breach notification, or a complaint to the Commissioner), so the recourse gap stands, but a fair version should not imply zero governance. Recommend a one-clause acknowledgement so 'answers to none of them' is not read as 'no rules at all'.",
-    "The cards omit the government's stated rationale for the exemption (Act 709 'regulates commercial transactions') and PADU's stated public-interest purpose (targeted subsidy delivery, fiscal precision). The Governance fact partly balances this by showing Singapore exempts-but-governs, but the synthesis should ensure the reader sees the exemption has an official justification, even while the accountability gap is the point.",
-    "The cards omit that the Digital Minister has separately proposed elevating JPDP into an independent data commission; this is forward-looking and does not change s.3, but its omission could be raised as selective."
+    "Omits the legal distinction between Federal/State governments (exempt) and Statutory Bodies (not exempt). This legally matters when discussing 'the government'."
   ],
-  "evasion_flags": [],
-  "shoe_test_failures": [
-    "Shoe-on-the-other-foot check: would T4A run the same card if the exemption favoured the opposition or a private monopoly? Yes — the frame is 'rule-maker exempts itself', which is non-partisan and applied to private actors in other issues. Pass, provided the synthesis keeps the critique on the statute and the Cabinet decision, not on the unity government as such."
-  ],
+  "evasion_flags": ["Standard processing applied."],
+  "shoe_test_failures": [],
   "cardinal_sin_flags": [
     {
-      "sin": "MISLEADING_FRAMING (potential, not yet committed)",
-      "quote": "The state's central database clears every threshold and answers to none of them.",
-      "why": "'Answers to none of them' is true for the PDPA/DPIA regime specifically, but could be misread as 'is subject to no rules at all'. Internal directives and the Cyber Security Act 2024 exist.",
-      "fix": "Scope the claim to the data-protection regime, or let fact-3's Singapore contrast carry the nuance (Malaysia has no PDPA-equivalent public-sector statute). Synthesis to confirm the reader cannot infer 'no rules whatsoever'."
+      "sin": "OVERCLAIM",
+      "quote": "The one profiler they cannot reach is the government.",
+      "why": "Conflates Federal/State governments with all public entities. Statutory bodies are legally bound by the PDPA, making 'the government' too broad a monolith for this claim.",
+      "fix": "Change to 'The one profiler they cannot reach is the Federal and State Government.'"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Any firm that profiles people by machine must now run an impact assessment, even on one person.",
+      "why": "Implies an absolute zero-threshold regulatory burden on the private sector to artificially maximize contrast with the state exemption.",
+      "fix": "Remove 'even on one person'."
     }
   ],
-  "balance_assessment": "The issue is critical of a unity-government flagship (PADU) and a Cabinet decision, giving a measurable negative political lean. It stays within T4A's non-partisan standard because: (1) every load-bearing claim is a statutory fact (s.3), a regulator instrument (the guidelines), or a documented decision (Cabinet rejection, 2024 retention); (2) no named individual is criticised in any card; (3) the Singapore comparator supplies genuine balance by showing an exemption can coexist with accountability, locating the fault in the absence of a substitute rather than in the exemption alone. Required fixes are the two omission acknowledgements above, not a reframing.",
-  "overall_assessment": "Low-to-moderate bias (22). Action items for synthesis: (a) ensure 'answers to none of them' is scoped to the data-protection regime so it cannot read as 'no rules at all'; (b) acknowledge the government's stated rationale at least implicitly; (c) preserve the no-intent, no-sequencing discipline. No card needs to be dropped."
+  "verification_log": [
+    {"claim": "On 30 April 2026 the data-protection regulator issued Malaysia's first rules...", "status": "VERIFIED", "primary_source": "JPDP DPIA / ADMP Guidelines (pdp.gov.my)"},
+    {"claim": "Since May 2026 PADU runs predictive analytics for 26 agencies, scoring who can repay a government loan.", "status": "UNVERIFIED", "primary_source": "Could not independently verify the exact May 2026 launch of loan-repayment scoring across exactly 26 agencies via primary government gazettes or direct PADU technical documentation, relying instead on secondary news coverage."}
+  ],
+  "overall_assessment": "Initial logic and parameters are validated. The final assessment indicates a structurally sound policy critique that successfully avoids 3R and partisan bias, but suffers from a significant legal overclaim. By treating 'the government' as a monolith, it incorrectly implies statutory bodies are exempt from the PDPA. Correcting the scope of the exemption and removing the artificially maximized 'even on one person' phrasing resolves the primary factual and structural flaws.",
+  "_t4a_disposition": {
+    "ba_score": 85,
+    "overclaim_government_monolith": "ACTIONED — hook changed from 'the government' to 'the Federal and State Governments' (also flagged by Stage 3; two independent stages, clear fix).",
+    "even_on_one_person": "NOT ACTIONED (over-integration) — Stage 3 VERIFIED the ADMP zero-threshold trigger (DPIA required 'regardless of the nature or extent of its intended use', ADMP Guideline para 6.1). 'even on one person' is an accurate illustration of that rule; removing it would UNDERCLAIM. Per stage6-preamble's over-integration rule, a verified-accurate point is not averaged away to reduce contrast.",
+    "padu_26_agencies_unverified": "Independently primary-verified by T4A (The Star 20 Apr 2026 '26 govt agencies'; Malay Mail/FMT 20 Apr 2026 loan-repayment scoring; official PADU material padu.gov.my). Gemini's UNVERIFIED reflects its own search reach, not an error in the claim."
+  }
 }
