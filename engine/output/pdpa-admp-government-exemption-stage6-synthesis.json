@@ -1,0 +1,73 @@
+{
+  "_provenance": {
+    "stage": "Stage 6 — Synthesis (Claude)",
+    "slug": "pdpa-admp-government-exemption",
+    "issue_id": "2008",
+    "generated_at": "2026-06-05",
+    "inputs": [
+      "stage1 (Claude primary analysis)",
+      "stage2 (bias audit — internal pass)",
+      "stage3 (fact verification — internal pass, live primary-source web search)"
+    ],
+    "note": "Stages 4 and 5 retired (see docs/adr/0004). No 3R HIGH/CRITICAL and political risk not CRITICAL, so no Stage 5 re-enable. External Gemini/ChatGPT prompts are generated under engine/prompts-generated/ for the operator to run the true cross-LLM check before merge to main."
+  },
+  "headline": "Malaysia's new rules make firms vet their algorithms. The state's own are exempt.",
+  "context": "On 30 April 2026 the data-protection regulator adopted Malaysia's first rules on automated profiling, making private firms vet any system that profiles people. The rules rest on a 2010 law that exempts the Federal and State Governments, on the basis it governs commercial dealings.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "On 30 April Malaysia adopted its first rules forcing any firm that profiles you to run an impact check first. The one profiler they cannot reach is the government.",
+      "sub": "They sit under a 2010 law that exempts the Federal and State Governments. PADU, the state database on more than 30 million people, falls outside them."
+    },
+    {
+      "t": "fact",
+      "lens": "Rights",
+      "big": "When 22.5 million Malaysians' MyKad details were put up for sale in 2022, no one had recourse under the data-protection law against any government agency.",
+      "sub": "Section 3 says the Act 'shall not apply to the Federal Government and State Governments.' The minister denied it came from the registration department."
+    },
+    {
+      "t": "fact",
+      "lens": "Technology",
+      "big": "Any firm that profiles people by machine must now file an impact assessment, even on one person. PADU holds more than 30 million people on 600+ data points, and is exempt.",
+      "sub": "The assessment is mandatory above 20,000 people, or 10,000 with sensitive data. PADU clears every threshold; the Act that sets them cannot bind it."
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The carve-out is a choice, not an oversight: a proposal to delete Section 3 was rejected, and the 2024 reform left it standing.",
+      "sub": "Singapore exempts its public sector too, then governs it by a separate 2018 law with criminal penalties for officers. Malaysia passed no equivalent."
+    },
+    {
+      "t": "reframe",
+      "big": "The government now demands of every business an amanah it refuses to place on itself.",
+      "sub": ""
+    },
+    {
+      "t": "analogy",
+      "big": "It reads like a fire code every shop must follow, while the largest building in town, the one the council owns, is written out of the rules.",
+      "sub": "Private firms must vet their profiling systems. PADU and other government databases need not."
+    },
+    {
+      "t": "mature",
+      "big": "Malaysia wrote rules to hold algorithms accountable to people, then exempted the algorithms that decide who gets help, who gets watched, and who gets missed.",
+      "sub": ""
+    }
+  ],
+  "revisions": [
+    "REPHRASED (Stage 2 bias): fact-Technology sub 'clears every threshold and answers to none of them' → 'clears every threshold; the Act that sets them cannot bind it' — scopes the claim to the data-protection Act so it cannot be misread as 'subject to no rules at all' (internal directives and the Cyber Security Act 2024 exist, but grant no data-subject recourse).",
+    "REPHRASED (Stage 2 bias): added the government's stated rationale to the context ('on the basis it governs commercial dealings') so the exemption's official justification is visible, per the omission flag.",
+    "CORRECTED (Stage 3): PADU figure changed from '30.7 million' to 'more than 30 million' to reconcile The Edge's 30.7m with T4A's own published issue 1102 ('30.4 million profiles by June 2025'); 'more than 30 million' is true under both and avoids false precision and an internal corpus inconsistency.",
+    "REPHRASED (Stage 3 conservatism): fact-Governance big 'the Cabinet rejected a proposal' → 'a proposal to delete Section 3 was rejected' — the 'Cabinet' attribution is single-sourced and second-hand (FMT); the retention in the 2024 Act independently supports 'left it standing'.",
+    "INTRODUCED (Stage 6 self-verified): reframe rewritten from the validator-flagged 'The question is not X, it is Y' template to a hard declarative ('The government now demands of every business an amanah it refuses to place on itself'). Verified: the asymmetry (private-sector DPIA duty vs s.3 government exemption) traces to Act 709 s.3 and the JPDP DPIA guideline. 'amanah' (Malay/Arabic: fiduciary trust) is the single elevated word.",
+    "INTRODUCED (Stage 6 self-verified): hook/fact-1 lengths trimmed to keep big+sub within the ~300 combined cap; no factual content dropped (verified each trimmed line still traces to s.1/s.3 sources)."
+  ],
+  "introduced_claims": [
+    {
+      "claim": "The private-sector DPIA/profiling duty and the s.3 government exemption are the two sides of one asymmetry (reframe).",
+      "source": "Act 709 s.3 (exemption) + JPDP DPIA Guideline 30 Apr 2026 (any-profiling trigger). Both in brief S1/S3."
+    }
+  ],
+  "synthesis_notes": "No over-integration conflicts: Stage 2 (soften the 'answers to none' line) and Stage 3 (keep alleged/denied 2022 framing; soften 'Cabinet') pointed the same direction, toward conservatism, and both were applied without averaging away the core asymmetry. The load-bearing claim — that the new accountability regime binds the private sector while the state's own profiling sits outside the Act — survives every fix intact because it is statutory, not interpretive. Compression preserved every qualifier: 'put up for sale' (not 'leaked by'), 'denied it came from', 'a proposal ... was rejected', 'more than 30 million'. Dominant hook emotion: anxiety-of-precedent / anger-at-process (the rule-maker exempts itself), not sadness. Reframe rotated off the flagged template family. One elevated word only ('amanah').",
+  "sr_score": 86,
+  "sr_score_rationale": "Clean synthesis: a statutory spine that no fix could dislodge, two bias/accuracy softenings applied without diluting the finding, an internal-corpus number reconciliation (vs issue 1102), and a reframe rotated off the drift template while keeping the single elevated word. Held at 86, not higher, because two specifics (exact DPIA thresholds; the 'v1.0/adopted' wording) still rest on advisories pending confirmation against the published guideline PDFs, and the external Gemini/ChatGPT cross-checks remain to be run before going live to main."
+}

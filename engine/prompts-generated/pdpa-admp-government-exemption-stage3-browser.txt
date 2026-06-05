@@ -1,0 +1,209 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "pdpa-admp-government-exemption",
+    "issue_id": "2008",
+    "brief": "engine/briefs/pdpa-admp-government-exemption.md",
+    "generated_at": "2026-06-05",
+    "revision_history": [
+      "v1 (2026-06-05): initial draft after Phase 1 brief. Source channel: Digital Policy Alert silent-issue pass (not domestic news/social radar). Frame: the scope gap, not surveillance-conspiracy. On 30 Apr 2026 JPDP adopted DPIA + Data Protection by Design + ADMP guidelines; ADMP/any-profiling triggers a mandatory DPIA on the private sector, while PDPA s.3 exempts Federal/State Government, and PADU (30.7m people, 600+ data points) sits outside the Act. Anchor: anger-at-process / anxiety-of-precedent."
+    ],
+    "discipline": "Critique the statutory design and a documented Cabinet decision, NOT persons and NOT any community. No claim that PADU data has been misused or leaked; the 2022 breach is framed as an *alleged* leak the government *denied* came from NRD, used only to establish the absence of PDPA recourse against any agency. Guidelines are 'guidelines' (operational guidance); the DPIA *obligation* flows from the amended Act, so cards do not call the guidelines 'law'. Not 3R-adjacent → standard 4-stage pipeline, no Stage 5 escalation."
+  },
+  "headline": "Malaysia's new rules make firms vet their algorithms. The state's own are exempt.",
+  "context": "On 30 April 2026 the Personal Data Protection Department adopted Malaysia's first guidelines on automated decision-making and profiling, forcing private firms to assess any system that profiles people. The guidelines rest on a 2010 law whose Section 3 exempts the Federal and State Governments.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "On 30 April Malaysia adopted its first rules forcing any firm that profiles you to run a privacy impact check first. The one profiler the rules cannot reach is the government.",
+      "sub": "They sit under a 2010 law whose Section 3 exempts the Federal and State Governments. PADU, the state database on 30.7 million people, falls outside them.",
+      "sources": ["S0", "S3", "S4", "S1", "S9"]
+    },
+    {
+      "t": "fact",
+      "lens": "Rights",
+      "big": "When 22.5 million Malaysians' MyKad details were offered for sale in 2022, no one had recourse under the data-protection law against any government agency.",
+      "sub": "Section 3 states the Act 'shall not apply to the Federal Government and State Governments.' The Home Minister denied the data came from the registration department.",
+      "sources": ["S7", "S1", "S11"]
+    },
+    {
+      "t": "fact",
+      "lens": "Technology",
+      "big": "Any company that runs automated profiling must now file an impact assessment, even on a single person. PADU profiles 30.7 million people across 600+ data points, and is exempt.",
+      "sub": "The assessment is also mandatory above 20,000 people, or 10,000 with sensitive data. The state's central database clears every threshold and answers to none of them.",
+      "sources": ["S3", "S4", "S9", "S1"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The carve-out is a choice, not an oversight: the Cabinet rejected a proposal to delete Section 3, and the 2024 reform left it standing.",
+      "sub": "Singapore exempts its public sector too, then governs it by a separate 2018 law with criminal penalties for officers. Malaysia passed no equivalent.",
+      "sources": ["S12", "S2", "S6"]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether algorithms should answer to people. It is whether the state will hold itself to the amanah it now demands of everyone else who holds your data.",
+      "sub": "",
+      "sources": ["S1", "S3", "S12"]
+    },
+    {
+      "t": "analogy",
+      "big": "It reads like a fire code every shop must follow, while the largest building in town, the one the council owns, is written out of the rules.",
+      "sub": "Private firms must vet their profiling systems. PADU and other government databases need not.",
+      "sources": ["S1", "S3", "S9"]
+    },
+    {
+      "t": "mature",
+      "big": "Malaysia wrote rules to hold algorithms accountable to people, then exempted the algorithms that decide who gets help, who gets watched, and who gets missed.",
+      "sub": "",
+      "sources": ["S1", "S3", "S4", "S9"]
+    }
+  ],
+  "sources": "S0 Digital Policy Alert — MY events /change/13812 (ADMP), /change/13810 (DPIA), /change/19244 (Data Protection by Design); S1 PDPA 2010 (Act 709) s.3 'non-application' (pdp.gov.my; full text mohre.um.edu.my); S2 PDPA (Amendment) Act 2024 (Act A1727), pdp.gov.my PDF (DPO, s.12B 72h breach notice, portability; s.3 retained); S3 JPDP DPIA Guideline 30 Apr 2026 + PCP 1/2025 (pdp.gov.my): >20,000 subjects / >10,000 sensitive / any ADMP, valid 2y; S4 JPDP ADMP Guideline 30 Apr 2026 + PCP 3/2025; S5 JPDP Data Protection by Design Guideline 30 Apr 2026; S6 Singapore PSGA 2018 + Jan 2026 amendment (Baker McKenzie; MDDI parliamentary answer); S7 Malay Mail/SoyaCincau 18 May 2022 (22.5m records alleged via JPN MyIdentity API; Home Minister Hamzah denies NRD source); S8 Malay Mail 17 Jul 2024 (Gobind: PADU not bound by Act 709); S9 The Edge (PADU 30.7m individuals, 600+ data points); S10 The Star/Lowyat (PADU launch, 39 fields, 18+); S11 Malaysian Bar press statement (public-trust deficit, no PDPA recourse vs agencies); S12 FMT 7 Oct 2023 (Cabinet rejected removal of s.3); S13 GDPR Art.22 official text (gdpr-info.eu); S14 PMO statement on PADU (pmo.gov.my)",
+  "confidence": "High. Section 3 wording, the 30 Apr 2026 adoption of all three guidelines, the ADMP/DPIA trigger logic and thresholds, PADU's 30.7m/600+ scale, the 2022 22.5m alleged-leak figure with ministerial denial, the Cabinet's rejection of removal, and the Singapore PSGA comparator are each carried by a primary instrument or a named authority. The only soft spots are flagged in needs_verification.",
+  "lenses_used": ["Rights", "Technology", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Political", "Economic"],
+  "needs_verification": [
+    "Section 3 verbatim: confirm 'This Act shall not apply to the Federal Government and State Governments' is exact against Act 709 as amended (the wording is quoted in fact-1 sub). Source S1 — statute text.",
+    "ADMP-triggers-DPIA-regardless-of-volume and the 20,000 / 10,000-sensitive thresholds: confirm against the ADOPTED 30 Apr 2026 DPIA + ADMP guideline texts (S3/S4), not only the PCP drafts and law-firm summaries.",
+    "PADU scale: confirm 30.7 million individuals and 600+ integrated data points against an Economy Ministry / PADU primary statement (S9 is The Edge citing the ministry); the 39 self-verify fields is distinct and not used as the headline number.",
+    "Gobind exemption statement (S8): confirm PADU's exemption is stated as grounded in s.3 / 'commercial transactions' scope, not a separate statute. Cards rely on the s.3 statutory exemption, not on the minister's words, so this is corroborating only.",
+    "2022 breach (S7): keep as ALLEGED leak of 22.5m that the Home Minister DENIED originated from NRD. The load-bearing claim is the absence of PDPA recourse against any agency (flows from s.3), which holds regardless of source. Do not assert NRD was the source.",
+    "Cabinet rejection of s.3 removal (S12): FMT reports an official told an expert the Cabinet rejected the proposal. Confirm no later official reversal; if only single-sourced, soften fact-3 big from 'the Cabinet rejected' to 'a proposal to remove it was rejected' — but the retention in the 2024 Act (S2) independently supports 'left it standing.'",
+    "Singapore PSGA criminal penalties (S6): confirm the PSGA imposes criminal liability on public officers and that Malaysia has no equivalent public-sector data statute."
+  ],
+  "source_notes": "CONTRADICTION (PADU registration): 11.55m/52.6% of adults actively registered by 31 Mar 2024 vs Rafizi's 17.65m profiles updated by 1 Apr 2024 — different measures (citizen-verified vs profiles touched). Cards deliberately use NEITHER as the scale; they use the system-COVERAGE figure (30.7m individuals integrated), because PADU is pre-populated from existing government data regardless of citizen log-in. CONTRADICTION (2022 breach source): hackers claimed JPN MyIdentity API; Home Minister denied NRD origin. Cards render it as an alleged leak the government denied came from NRD; the point is the recourse gap, not the source. GUIDELINE vs LAW: the three 30 Apr documents are guidelines; the DPIA obligation derives from the amended Act 709 — cards say 'rules/guidelines', never 'a new law'. BINDING ASYMMETRY: the 72h breach duty and DPIA duty bind the private sector; the government is outside the Act entirely, so the asymmetry is statutory, not discretionary.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. 30 Apr adoption (S0/S3/S4/S5); s.3 wording (S1); ADMP/DPIA trigger + thresholds (S3/S4); PADU 30.7m/600+ (S9); 22.5m alleged leak + ministerial denial (S7); Cabinet rejection + 2024 retention (S12/S2); Singapore PSGA (S6). Reframe/analogy/view are interpretive framing built only on these verified facts.",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. Guidelines not called 'law'; 2022 leak 'alleged' and 'offered for sale', with the ministerial denial included; no claim PADU data was misused or leaked; 'exempt' is the literal statutory position (s.3), not a characterisation.",
+    "underclaim_check": "Avoided. The exemption is stated plainly as the Act not applying to government, not softened to 'critics say the government may not be fully covered'. The Cabinet's rejection of removal is stated as the documented choice it was.",
+    "misleading_framing_check": "The private-sector duties (DPIA trigger, thresholds, 72h notice) are set beside the government's total exclusion so the asymmetry is the point; Singapore is included so the reader sees an exemption CAN be paired with a separate accountability law, i.e. Malaysia's gap is not the exemption alone but the absence of any substitute.",
+    "unverified_detail_check": "Section 3 quote and thresholds flagged for Stage 3 against the adopted texts; PADU scale attributed; breach framed as alleged/denied.",
+    "3R_special_caution": "Not 3R-adjacent. No race/religion/royalty content.",
+    "process_not_people_check": "Pass — subject is Section 3, the guideline scope, and a Cabinet decision; no named individual is criticised in any card (Gobind/Rafizi appear only in the brief, not the cards).",
+    "anger_anxiety_check": "Hook emotion is anxiety-of-precedent / anger-at-process (the rule-maker exempts itself), not sadness and not personal vilification.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field. Commas, periods, colons only.",
+    "scaffolding_marker_check": "No scaffolding openers (However/Moreover/Notably/Crucially).",
+    "auxiliary_verb_density_check": "Verb-driven: adopted, forcing, profiles, run, reach, falls, offered, had, states, denied, file, clears, answers, rejected, left, exempts, governs, passed, decide, gets, wrote, exempted. No reader field stacks 3+ auxiliaries.",
+    "elevated_word": "One only: 'amanah' (reframe) — Malay/Arabic for fiduciary trust; precise for data the state holds on behalf of citizens, where the plain 'duty/trust' loses the custodial sense. Passes precision/register/no-substitute."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Strong primary spine: a verbatim statutory exemption (s.3), three regulator guidelines with a documented adoption date and trigger logic, a flagship database with a stated 30.7m/600+ scale, and a comparative jurisdiction (Singapore PSGA) that sharpens the gap without overclaiming. Held at 86, not higher, because two specifics rest on the adopted guideline texts and the FMT-reported Cabinet decision that Stage 3 should confirm against primary documents, and the 2022 breach is deliberately framed conservatively (alleged/denied) to avoid any overclaim on a defamation- and trust-sensitive point."
+}

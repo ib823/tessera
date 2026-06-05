@@ -1,0 +1,47 @@
+{
+  "_provenance": {
+    "stage": "Stage 2 — Bias Audit",
+    "executed_by": "Claude (internal review pass, NOT external Gemini). The browser prompt engine/prompts-generated/pdpa-admp-government-exemption-stage2-browser.txt is generated for the operator to run the true external cross-LLM check before any merge to main. This internal pass applies the same stage2-preamble criteria.",
+    "slug": "pdpa-admp-government-exemption",
+    "generated_at": "2026-06-05"
+  },
+  "bias_score": 22,
+  "political_lean_estimate": -0.4,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.2,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.1,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [
+    {
+      "quote": "Any company that runs automated profiling must now file an impact assessment, even on a single person. PADU profiles 30.7 million people across 600+ data points, and is exempt.",
+      "why_biased": "The juxtaposition is factually correct but rhetorically sharp; a reader could infer the government deliberately built PADU to evade the rules, when PADU (Jan 2024) predates the 30 Apr 2026 guidelines and the s.3 exemption predates both (2010). The asymmetry is real, the sequencing is not causal.",
+      "fix": "Acceptable as written because no card asserts intent or sequencing; keep, but ensure no synthesis edit introduces a 'built to evade' implication. The exemption is structural and pre-existing."
+    }
+  ],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [],
+  "economic_flags": [],
+  "gender_flags": [],
+  "omission_flags": [
+    "The cards omit that the government is not entirely ungoverned on data: internal civil-service security directives (Arahan Keselamatan), sectoral rules, and the National Cyber Security Act 2024 impose obligations on agencies. None gives an individual data subject PDPA-style rights (access, correction, breach notification, or a complaint to the Commissioner), so the recourse gap stands, but a fair version should not imply zero governance. Recommend a one-clause acknowledgement so 'answers to none of them' is not read as 'no rules at all'.",
+    "The cards omit the government's stated rationale for the exemption (Act 709 'regulates commercial transactions') and PADU's stated public-interest purpose (targeted subsidy delivery, fiscal precision). The Governance fact partly balances this by showing Singapore exempts-but-governs, but the synthesis should ensure the reader sees the exemption has an official justification, even while the accountability gap is the point.",
+    "The cards omit that the Digital Minister has separately proposed elevating JPDP into an independent data commission; this is forward-looking and does not change s.3, but its omission could be raised as selective."
+  ],
+  "evasion_flags": [],
+  "shoe_test_failures": [
+    "Shoe-on-the-other-foot check: would T4A run the same card if the exemption favoured the opposition or a private monopoly? Yes — the frame is 'rule-maker exempts itself', which is non-partisan and applied to private actors in other issues. Pass, provided the synthesis keeps the critique on the statute and the Cabinet decision, not on the unity government as such."
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING (potential, not yet committed)",
+      "quote": "The state's central database clears every threshold and answers to none of them.",
+      "why": "'Answers to none of them' is true for the PDPA/DPIA regime specifically, but could be misread as 'is subject to no rules at all'. Internal directives and the Cyber Security Act 2024 exist.",
+      "fix": "Scope the claim to the data-protection regime, or let fact-3's Singapore contrast carry the nuance (Malaysia has no PDPA-equivalent public-sector statute). Synthesis to confirm the reader cannot infer 'no rules whatsoever'."
+    }
+  ],
+  "balance_assessment": "The issue is critical of a unity-government flagship (PADU) and a Cabinet decision, giving a measurable negative political lean. It stays within T4A's non-partisan standard because: (1) every load-bearing claim is a statutory fact (s.3), a regulator instrument (the guidelines), or a documented decision (Cabinet rejection, 2024 retention); (2) no named individual is criticised in any card; (3) the Singapore comparator supplies genuine balance by showing an exemption can coexist with accountability, locating the fault in the absence of a substitute rather than in the exemption alone. Required fixes are the two omission acknowledgements above, not a reframing.",
+  "overall_assessment": "Low-to-moderate bias (22). Action items for synthesis: (a) ensure 'answers to none of them' is scoped to the data-protection regime so it cannot read as 'no rules at all'; (b) acknowledge the government's stated rationale at least implicitly; (c) preserve the no-intent, no-sequencing discipline. No card needs to be dropped."
+}

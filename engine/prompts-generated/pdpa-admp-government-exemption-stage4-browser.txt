@@ -1,0 +1,210 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "pdpa-admp-government-exemption",
+    "issue_id": "2008",
+    "brief": "engine/briefs/pdpa-admp-government-exemption.md",
+    "generated_at": "2026-06-05",
+    "revision_history": [
+      "v1 (2026-06-05): initial draft after Phase 1 brief. Source channel: Digital Policy Alert silent-issue pass (not domestic news/social radar). Frame: the scope gap, not surveillance-conspiracy. On 30 Apr 2026 JPDP adopted DPIA + Data Protection by Design + ADMP guidelines; ADMP/any-profiling triggers a mandatory DPIA on the private sector, while PDPA s.3 exempts Federal/State Government, and PADU (30.7m people, 600+ data points) sits outside the Act. Anchor: anger-at-process / anxiety-of-precedent."
+    ],
+    "discipline": "Critique the statutory design and a documented Cabinet decision, NOT persons and NOT any community. No claim that PADU data has been misused or leaked; the 2022 breach is framed as an *alleged* leak the government *denied* came from NRD, used only to establish the absence of PDPA recourse against any agency. Guidelines are 'guidelines' (operational guidance); the DPIA *obligation* flows from the amended Act, so cards do not call the guidelines 'law'. Not 3R-adjacent → standard 4-stage pipeline, no Stage 5 escalation."
+  },
+  "headline": "Malaysia's new rules make firms vet their algorithms. The state's own are exempt.",
+  "context": "On 30 April 2026 the Personal Data Protection Department adopted Malaysia's first guidelines on automated decision-making and profiling, forcing private firms to assess any system that profiles people. The guidelines rest on a 2010 law whose Section 3 exempts the Federal and State Governments.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "On 30 April Malaysia adopted its first rules forcing any firm that profiles you to run a privacy impact check first. The one profiler the rules cannot reach is the government.",
+      "sub": "They sit under a 2010 law whose Section 3 exempts the Federal and State Governments. PADU, the state database on 30.7 million people, falls outside them.",
+      "sources": ["S0", "S3", "S4", "S1", "S9"]
+    },
+    {
+      "t": "fact",
+      "lens": "Rights",
+      "big": "When 22.5 million Malaysians' MyKad details were offered for sale in 2022, no one had recourse under the data-protection law against any government agency.",
+      "sub": "Section 3 states the Act 'shall not apply to the Federal Government and State Governments.' The Home Minister denied the data came from the registration department.",
+      "sources": ["S7", "S1", "S11"]
+    },
+    {
+      "t": "fact",
+      "lens": "Technology",
+      "big": "Any company that runs automated profiling must now file an impact assessment, even on a single person. PADU profiles 30.7 million people across 600+ data points, and is exempt.",
+      "sub": "The assessment is also mandatory above 20,000 people, or 10,000 with sensitive data. The state's central database clears every threshold and answers to none of them.",
+      "sources": ["S3", "S4", "S9", "S1"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The carve-out is a choice, not an oversight: the Cabinet rejected a proposal to delete Section 3, and the 2024 reform left it standing.",
+      "sub": "Singapore exempts its public sector too, then governs it by a separate 2018 law with criminal penalties for officers. Malaysia passed no equivalent.",
+      "sources": ["S12", "S2", "S6"]
+    },
+    {
+      "t": "reframe",
+      "big": "The question is not whether algorithms should answer to people. It is whether the state will hold itself to the amanah it now demands of everyone else who holds your data.",
+      "sub": "",
+      "sources": ["S1", "S3", "S12"]
+    },
+    {
+      "t": "analogy",
+      "big": "It reads like a fire code every shop must follow, while the largest building in town, the one the council owns, is written out of the rules.",
+      "sub": "Private firms must vet their profiling systems. PADU and other government databases need not.",
+      "sources": ["S1", "S3", "S9"]
+    },
+    {
+      "t": "mature",
+      "big": "Malaysia wrote rules to hold algorithms accountable to people, then exempted the algorithms that decide who gets help, who gets watched, and who gets missed.",
+      "sub": "",
+      "sources": ["S1", "S3", "S4", "S9"]
+    }
+  ],
+  "sources": "S0 Digital Policy Alert — MY events /change/13812 (ADMP), /change/13810 (DPIA), /change/19244 (Data Protection by Design); S1 PDPA 2010 (Act 709) s.3 'non-application' (pdp.gov.my; full text mohre.um.edu.my); S2 PDPA (Amendment) Act 2024 (Act A1727), pdp.gov.my PDF (DPO, s.12B 72h breach notice, portability; s.3 retained); S3 JPDP DPIA Guideline 30 Apr 2026 + PCP 1/2025 (pdp.gov.my): >20,000 subjects / >10,000 sensitive / any ADMP, valid 2y; S4 JPDP ADMP Guideline 30 Apr 2026 + PCP 3/2025; S5 JPDP Data Protection by Design Guideline 30 Apr 2026; S6 Singapore PSGA 2018 + Jan 2026 amendment (Baker McKenzie; MDDI parliamentary answer); S7 Malay Mail/SoyaCincau 18 May 2022 (22.5m records alleged via JPN MyIdentity API; Home Minister Hamzah denies NRD source); S8 Malay Mail 17 Jul 2024 (Gobind: PADU not bound by Act 709); S9 The Edge (PADU 30.7m individuals, 600+ data points); S10 The Star/Lowyat (PADU launch, 39 fields, 18+); S11 Malaysian Bar press statement (public-trust deficit, no PDPA recourse vs agencies); S12 FMT 7 Oct 2023 (Cabinet rejected removal of s.3); S13 GDPR Art.22 official text (gdpr-info.eu); S14 PMO statement on PADU (pmo.gov.my)",
+  "confidence": "High. Section 3 wording, the 30 Apr 2026 adoption of all three guidelines, the ADMP/DPIA trigger logic and thresholds, PADU's 30.7m/600+ scale, the 2022 22.5m alleged-leak figure with ministerial denial, the Cabinet's rejection of removal, and the Singapore PSGA comparator are each carried by a primary instrument or a named authority. The only soft spots are flagged in needs_verification.",
+  "lenses_used": ["Rights", "Technology", "Governance"],
+  "lenses_applicable_but_unused": ["Legal", "Political", "Economic"],
+  "needs_verification": [
+    "Section 3 verbatim: confirm 'This Act shall not apply to the Federal Government and State Governments' is exact against Act 709 as amended (the wording is quoted in fact-1 sub). Source S1 — statute text.",
+    "ADMP-triggers-DPIA-regardless-of-volume and the 20,000 / 10,000-sensitive thresholds: confirm against the ADOPTED 30 Apr 2026 DPIA + ADMP guideline texts (S3/S4), not only the PCP drafts and law-firm summaries.",
+    "PADU scale: confirm 30.7 million individuals and 600+ integrated data points against an Economy Ministry / PADU primary statement (S9 is The Edge citing the ministry); the 39 self-verify fields is distinct and not used as the headline number.",
+    "Gobind exemption statement (S8): confirm PADU's exemption is stated as grounded in s.3 / 'commercial transactions' scope, not a separate statute. Cards rely on the s.3 statutory exemption, not on the minister's words, so this is corroborating only.",
+    "2022 breach (S7): keep as ALLEGED leak of 22.5m that the Home Minister DENIED originated from NRD. The load-bearing claim is the absence of PDPA recourse against any agency (flows from s.3), which holds regardless of source. Do not assert NRD was the source.",
+    "Cabinet rejection of s.3 removal (S12): FMT reports an official told an expert the Cabinet rejected the proposal. Confirm no later official reversal; if only single-sourced, soften fact-3 big from 'the Cabinet rejected' to 'a proposal to remove it was rejected' — but the retention in the 2024 Act (S2) independently supports 'left it standing.'",
+    "Singapore PSGA criminal penalties (S6): confirm the PSGA imposes criminal liability on public officers and that Malaysia has no equivalent public-sector data statute."
+  ],
+  "source_notes": "CONTRADICTION (PADU registration): 11.55m/52.6% of adults actively registered by 31 Mar 2024 vs Rafizi's 17.65m profiles updated by 1 Apr 2024 — different measures (citizen-verified vs profiles touched). Cards deliberately use NEITHER as the scale; they use the system-COVERAGE figure (30.7m individuals integrated), because PADU is pre-populated from existing government data regardless of citizen log-in. CONTRADICTION (2022 breach source): hackers claimed JPN MyIdentity API; Home Minister denied NRD origin. Cards render it as an alleged leak the government denied came from NRD; the point is the recourse gap, not the source. GUIDELINE vs LAW: the three 30 Apr documents are guidelines; the DPIA obligation derives from the amended Act 709 — cards say 'rules/guidelines', never 'a new law'. BINDING ASYMMETRY: the 72h breach duty and DPIA duty bind the private sector; the government is outside the Act entirely, so the asymmetry is statutory, not discretionary.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. 30 Apr adoption (S0/S3/S4/S5); s.3 wording (S1); ADMP/DPIA trigger + thresholds (S3/S4); PADU 30.7m/600+ (S9); 22.5m alleged leak + ministerial denial (S7); Cabinet rejection + 2024 retention (S12/S2); Singapore PSGA (S6). Reframe/analogy/view are interpretive framing built only on these verified facts.",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. Guidelines not called 'law'; 2022 leak 'alleged' and 'offered for sale', with the ministerial denial included; no claim PADU data was misused or leaked; 'exempt' is the literal statutory position (s.3), not a characterisation.",
+    "underclaim_check": "Avoided. The exemption is stated plainly as the Act not applying to government, not softened to 'critics say the government may not be fully covered'. The Cabinet's rejection of removal is stated as the documented choice it was.",
+    "misleading_framing_check": "The private-sector duties (DPIA trigger, thresholds, 72h notice) are set beside the government's total exclusion so the asymmetry is the point; Singapore is included so the reader sees an exemption CAN be paired with a separate accountability law, i.e. Malaysia's gap is not the exemption alone but the absence of any substitute.",
+    "unverified_detail_check": "Section 3 quote and thresholds flagged for Stage 3 against the adopted texts; PADU scale attributed; breach framed as alleged/denied.",
+    "3R_special_caution": "Not 3R-adjacent. No race/religion/royalty content.",
+    "process_not_people_check": "Pass — subject is Section 3, the guideline scope, and a Cabinet decision; no named individual is criticised in any card (Gobind/Rafizi appear only in the brief, not the cards).",
+    "anger_anxiety_check": "Hook emotion is anxiety-of-precedent / anger-at-process (the rule-maker exempts itself), not sadness and not personal vilification.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field. Commas, periods, colons only.",
+    "scaffolding_marker_check": "No scaffolding openers (However/Moreover/Notably/Crucially).",
+    "auxiliary_verb_density_check": "Verb-driven: adopted, forcing, profiles, run, reach, falls, offered, had, states, denied, file, clears, answers, rejected, left, exempts, governs, passed, decide, gets, wrote, exempted. No reader field stacks 3+ auxiliaries.",
+    "elevated_word": "One only: 'amanah' (reframe) — Malay/Arabic for fiduciary trust; precise for data the state holds on behalf of citizens, where the plain 'duty/trust' loses the custodial sense. Passes precision/register/no-substitute."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Strong primary spine: a verbatim statutory exemption (s.3), three regulator guidelines with a documented adoption date and trigger logic, a flagship database with a stated 30.7m/600+ scale, and a comparative jurisdiction (Singapore PSGA) that sharpens the gap without overclaiming. Held at 86, not higher, because two specifics rest on the adopted guideline texts and the FMT-reported Cabinet decision that Stage 3 should confirm against primary documents, and the 2022 breach is deliberately framed conservatively (alleged/denied) to avoid any overclaim on a defamation- and trust-sensitive point."
+}

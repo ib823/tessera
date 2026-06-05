@@ -1,0 +1,100 @@
+{
+  "_provenance": {
+    "stage": "Stage 3 — Fact Verification",
+    "executed_by": "Claude (internal review pass via live web search against primary/named-authority sources, NOT external ChatGPT). The browser prompt engine/prompts-generated/pdpa-admp-government-exemption-stage3-browser.txt is generated for the operator to run the true external cross-LLM check before any merge to main.",
+    "slug": "pdpa-admp-government-exemption",
+    "generated_at": "2026-06-05"
+  },
+  "input_file": "engine/output/pdpa-admp-government-exemption-stage1.json",
+  "factual_accuracy_score": 87,
+  "source_diversity_estimate": 0.7,
+  "claims": [
+    {
+      "claim": "On 30 April 2026 JPDP adopted three guidelines: DPIA, Data Protection by Design, and Automated Decision-Making & Profiling (v1.0).",
+      "status": "VERIFIED",
+      "m_true": 0.9, "m_false": 0.02, "m_unknown": 0.08,
+      "source": "Digital Policy Alert MY events /change/13812, /13810, /19244; Lexology / Baker McKenzie / Rahmat Lim advisories dated 30 Apr 2026.",
+      "correction": "Accurate. Confirm 'v1.0' and 'adopted' (vs 'issued') against the pdp.gov.my published guideline cover pages when accessible.",
+      "stale_check": "No later withdrawal found."
+    },
+    {
+      "claim": "Section 3 PDPA: 'This Act shall not apply to the Federal Government and State Governments.'",
+      "status": "VERIFIED",
+      "m_true": 0.95, "m_false": 0.02, "m_unknown": 0.03,
+      "source": "Act 709 full text (mohre.um.edu.my mirror; pdp.gov.my 'Non-application of Act'); FMT 7 Oct 2023 quotes the same wording.",
+      "correction": "Accurate verbatim. Keep in quotation marks as a statutory quote.",
+      "stale_check": "2024 Amendment (Act A1727) did not alter s.3."
+    },
+    {
+      "claim": "ADMP/any profiling triggers a mandatory DPIA regardless of volume; DPIA also mandatory above 20,000 data subjects or 10,000 with sensitive data; valid 2 years.",
+      "status": "VERIFIED",
+      "m_true": 0.85, "m_false": 0.03, "m_unknown": 0.12,
+      "source": "InCorp Malaysia DPIA guide; multiple law-firm summaries of the JPDP DPIA Guideline (PCP 1/2025 and adopted version).",
+      "correction": "Substantively accurate and consistent across independent advisories. Confirm the exact threshold numbers against the ADOPTED guideline text (S3) before publish; the cards already attribute the trigger logic to the guideline, not to statute.",
+      "stale_check": "Thresholds stable from PCP to adoption per advisories."
+    },
+    {
+      "claim": "PADU covers 30.7 million individuals and integrates 600+ data points.",
+      "status": "VERIFIED",
+      "m_true": 0.82, "m_false": 0.05, "m_unknown": 0.13,
+      "source": "The Edge Malaysia (node/800458) citing the Economy Ministry; corroborated by analysis pieces.",
+      "correction": "Accurate as the system-coverage figure. Distinct from the 39 self-verify fields and from the 11.55m/17.65m active-registration figures (correctly NOT used in the cards). Ideally cite a PADU/Economy Ministry primary release for 30.7m.",
+      "stale_check": "No later official restatement contradicts 30.7m."
+    },
+    {
+      "claim": "PADU is not bound by Act 709 (Digital Minister Gobind, Jul 2024).",
+      "status": "VERIFIED",
+      "m_true": 0.9, "m_false": 0.03, "m_unknown": 0.07,
+      "source": "Malay Mail 17 Jul 2024 quoting Gobind Singh Deo.",
+      "correction": "Accurate. Corroborating only; the cards rely on the s.3 statutory exemption itself, which is the stronger basis.",
+      "stale_check": "No reversal found."
+    },
+    {
+      "claim": "In 2022, 22.5 million Malaysians' details were offered for sale; no PDPA recourse against any government agency.",
+      "status": "VERIFIED",
+      "m_true": 0.85, "m_false": 0.05, "m_unknown": 0.1,
+      "source": "Malay Mail / SoyaCincau 18 May 2022 (Home Minister Hamzah denied NRD source); Malaysian Bar press statement (no PDPA recourse vs agencies, flows from s.3).",
+      "correction": "Keep framed as an ALLEGED leak the government DENIED came from NRD. The recourse-gap claim is correct and independent of the source. Do not state NRD was the source.",
+      "stale_check": "No official attribution of source has since been published."
+    },
+    {
+      "claim": "The Cabinet rejected a proposal to remove Section 3; the 2024 reform retained it.",
+      "status": "VERIFIED",
+      "m_true": 0.75, "m_false": 0.07, "m_unknown": 0.18,
+      "source": "FMT 7 Oct 2023 (official told an expert the Cabinet rejected removal of s.3); retention independently confirmed by the text of Act A1727 (s.3 unamended).",
+      "correction": "The 'Cabinet rejected' detail is single-sourced (FMT) and second-hand (an official's account to an expert). The RETENTION in the 2024 Act is hard-verified. Acceptable as written because fact-3 pairs 'Cabinet rejected a proposal to delete' WITH 'the 2024 reform left it standing'; if a reviewer wants maximum conservatism, soften to 'a proposal to delete Section 3 was rejected'. Recommend retaining but flagging.",
+      "stale_check": "No later reversal; s.3 still in force."
+    },
+    {
+      "claim": "Singapore exempts its public sector from the PDPA but governs it via the Public Sector (Governance) Act 2018 with criminal penalties for officers; Malaysia has no equivalent.",
+      "status": "VERIFIED",
+      "m_true": 0.88, "m_false": 0.03, "m_unknown": 0.09,
+      "source": "Singapore MDDI parliamentary answer; Baker McKenzie (PSGA amended Jan 2026); PSGA imposes criminal liability on public officers for unauthorised disclosure / misuse / re-identification.",
+      "correction": "Accurate. 'No equivalent' for Malaysia is correct as of publish: Malaysia has no public-sector data-protection statute granting data-subject rights; internal directives and the Cyber Security Act 2024 are not equivalents (no individual recourse).",
+      "stale_check": "Current as of Jun 2026."
+    },
+    {
+      "claim": "The 72-hour breach-notification duty (s.12B) and DPO duty bind the private sector from Jun 2025; the government is outside the Act.",
+      "status": "VERIFIED",
+      "m_true": 0.9, "m_false": 0.03, "m_unknown": 0.07,
+      "source": "PDPA (Amendment) Act 2024 (Act A1727); DLA Piper / Hogan Lovells / Mayer Brown on Jun 2025 in-force phase.",
+      "correction": "Accurate. Used in the brief; not asserted as a card number, so low exposure.",
+      "stale_check": "In force."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "WATCH — MISLEADING_FRAMING (not committed)",
+      "claim": "answers to none of them",
+      "why": "Scope to the data-protection regime; the government is subject to internal directives and the Cyber Security Act 2024, none of which give data-subject recourse.",
+      "primary_source": "Act 709 s.3; Cyber Security Act 2024."
+    }
+  ],
+  "omitted_facts": [
+    "The government's stated rationale: Act 709 'regulates commercial transactions' (Gobind, Jul 2024) — the official basis for the exemption.",
+    "Internal civil-service security directives and the National Cyber Security Act 2024 impose duties on agencies but grant individuals no PDPA-style rights or recourse.",
+    "A proposal to elevate JPDP into an independent data commission has been floated but does not amend s.3."
+  ],
+  "source_assessment": "Spectrum is good: statute (Act 709, A1727, GDPR), regulator (JPDP guidelines/PCPs), government (Gobind, PMO, MDvSingapore), independent press (FMT, The Edge, Malay Mail), civil society (Malaysian Bar), comparative (Singapore PSGA). Weakest links are the FMT-only 'Cabinet rejected' detail (mitigated by the hard-verified 2024 retention) and reliance on law-firm summaries for the exact DPIA thresholds (recommend confirming against the adopted guideline PDF).",
+  "overall_assessment": "High accuracy (87). The event chronology, the statutory exemption, the private-sector trigger logic, PADU's scale, the alleged-leak/no-recourse point, and the Singapore comparator are all reliably grounded. Two pre-publish actions: (1) confirm the DPIA threshold numbers and 'v1.0/adopted' against the pdp.gov.my guideline texts; (2) keep the 2022 leak framed as alleged-and-denied. No claim requires removal."
+}
