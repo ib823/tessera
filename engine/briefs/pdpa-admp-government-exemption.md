@@ -187,15 +187,26 @@ the recourse gap = Rights; the Section 3 / Cabinet decision = Governance.)
 ## SOURCE SPECTRUM CHECK
 
 - Government-aligned: PMO PADU statement [S14], Gobind statement [S8], JPDP
-  guidelines [S3-S5], Amendment Act [S2].
+  guidelines [S3-S5], Amendment Act [S2], official PADU material [S25].
 - Independent: FMT [S12], The Edge [S9], Malay Mail [S8/S10], Digital Policy
   Alert [S0].
-- Civil society / profession: Malaysian Bar press statement [S11].
+- Civil society / profession: Malaysian Bar press statement [S11]; ARTICLE 19 +
+  9 NGOs memorandum to the Law/Institutional-Reform Minister, 23 Jan 2024 [S22].
+- Academic / expert: Prof. Abu Bakar Munir (UM), adviser on the original PDPA
+  drafting, who argued to remove the government exclusion; peer-reviewed paper
+  "Malaysian PDPA, a Mysterious Application" (Alibeigi & Munir) [S21].
+- Parliamentary / primary process: PDPA (Amendment) Bill 2024 Dewan Rakyat /
+  Dewan Negara passage, 16 & 31 Jul 2024 [S23]; JPDP Public Consultation Paper,
+  Review of Act 709, item on extending the Act to government [S24].
 - International / comparative: Singapore PSGA via Baker McKenzie/MDDI [S6],
   GDPR Art. 22 official text [S13].
 - Business/legal (secondary, for interpretation only): Baker McKenzie, Rahmat
   Lim, Mayer Brown, DLA Piper advisories.
-Not single-spectrum. No CRITICAL on sources.
+Spans government, independent press, civil society, academia, parliamentary
+record, and comparative jurisdictions. The prior T4A issue 1102 is NOT used for
+verification (circular); PADU's 30.7m figure now rests on the official PADU
+material [S25]. No CRITICAL on sources; source_diversity materially improved
+from the Stage 3 estimate of 0.58.
 
 ## SOURCES
 
@@ -214,9 +225,9 @@ PRIMARY (official document / regulator / statute / court / named authority citin
 
 SECONDARY / INTERPRETIVE:
 - [S6] Singapore PSGA 2018 + Jan 2026 amendment — Baker McKenzie insight; MDDI parliamentary answer on public-agency PDPA exemption. mddi.gov.sg.
-- [S9] The Edge Malaysia — PADU 30.7m individuals / 600+ data points; analytics use. theedgemalaysia.com.
+- [S9] The Edge Malaysia — PADU analytics use. theedgemalaysia.com. NOTE: the "600+ data points" figure traces only to secondary reporting (Stage 3 UNVERIFIED); dropped from the cards. PADU scale anchored on official material [S25] instead.
 - [S10] Malay Mail / Lowyat / The Star — PADU launch, 39 fields, 18+ registration.
-- [S12] FMT — "Why shouldn't PDPA apply to government, asks expert" (7 Oct 2023): Cabinet rejected removal of Section 3; international firms' surprise. freemalaysiatoday.com.
+- [S12] FMT / Daily Express — "Why shouldn't PDPA apply to government, asks expert" (7 Oct 2023): Prof. Abu Bakar Munir's account that a removal of Section 3 was resisted at Cabinet level; international firms' surprise. freemalaysiatoday.com. NOTE: the "Cabinet rejected" detail is second-hand and lacks a primary record (Stage 3 UNVERIFIED); the cards now state only the primary-verified version (2020 review considered extension; 2024 reform left s.3 untouched [S24][S2]).
 - Law-firm advisories (DPIA thresholds, ADMP trigger, 2024 amendment phases): Baker McKenzie, Rahmat Lim, Mayer Brown, DLA Piper, Hogan Lovells, InCorp, Christopher & Lee Ong, Skrine — used only to interpret the primary instruments, every quantitative claim cross-checked to [S1-S5].
 
 ADDED post-draft (external deep-research report, each primary-verified before use):
@@ -227,16 +238,27 @@ ADDED post-draft (external deep-research report, each primary-verified before us
 - [S19] The Star, 20 Apr 2026 — "Padu shifts gear, now backend powerhouse for 26 govt agencies, says Akmal Nasrullah."
 - [S20] Malay Mail / FMT, 20 Apr 2026 — PADU Analytics-as-a-Service; loan-repayment-capability scoring; ageing-population targeting.
 
+ADDED — spectrum broadening (Stage 3 follow-up; each primary-verified):
+- [S21] **Academic / expert.** Prof. Abu Bakar Munir (Faculty of Law, Universiti Malaya), adviser on the original PDPA drafting: argued the government exclusion should be removed (state holds the largest data bank; accountability and investor confidence); notes Malaysia and Singapore are the only states with such a clause, and that Indonesia and Saudi Arabia omitted it on his advice. Per FMT/Daily Express 7 Oct 2023. Peer-reviewed: Ali Alibeigi & Abu Bakar Munir, "Malaysian Personal Data Protection Act, a Mysterious Application," Bologna Law Review / SSRN 3792672. **Academic + named expert.**
+- [S22] **Civil society / rights group.** ARTICLE 19 with nine human-rights NGOs — memorandum submitted to Minister Azalina Othman Said (Law and Institutional Reform), 23 Jan 2024, proposing PDPA reforms (alongside OSA and Penal Code s.203A) in the RTI-reform context; read by the deep-research report as proposing to narrow/remove the s.3(1) public-sector exemption. article19.org. **Primary submission (rights group).**
+- [S23] **Parliamentary record.** PDPA (Amendment) Bill 2024: Cabinet approval announced 4 Jul 2024; first reading 10 Jul 2024; passed Dewan Rakyat 16 Jul 2024; passed Dewan Negara 31 Jul 2024 (Hansard). **PRIMARY (parliamentary).**
+- [S24] **Primary regulator consultation.** JPDP Public Consultation Paper, "Review of Personal Data Protection Act 2010" — expressly considered extending Act 709 to the Federal and State Governments, and noted statutory bodies are not automatically exempt. pdp.gov.my (Public-Consultation-Paper-on-Review-of-Act-709). **PRIMARY (regulator).** Replaces the FMT-second-hand "Cabinet rejected" framing.
+- [S25] **Official PADU material**, 20 Apr 2026 — padu.gov.my/mediagambar/20-04-2026-hala-tuju-padu.pdf: 30.7 million socio-economic profiles; 26 agencies approved (Jan-Mar 2026) for decision-making/analytics. **PRIMARY (government).** Anchors PADU scale without circular reliance on prior T4A issue 1102.
+
 ## THE T4A ANGLE (for Stage 1)
 
-Malaysia just wrote its first rulebook holding algorithms accountable for
-decisions about people — and pointed it only at the private sector. The state's
-own automated decisions (subsidy eligibility, welfare targeting, profiling
-across 600+ data points on 30.7 million people in PADU) sit outside the Act the
-rulebook is built on, because Section 3 excludes the government and the Cabinet
-chose to keep it that way. Singapore drew the same exemption but built a
-separate public-sector law with criminal penalties; Malaysia did not. When 22.5
-million records leaked in 2022, no one had PDPA recourse against any agency.
-Emotion: anger-at-process / anxiety-of-precedent — not the leak, the rulebook
-that exempts the biggest decision-maker from the rules it imposes on everyone
-else.
+Malaysia just issued its first rulebook holding algorithms accountable for
+decisions about people, and pointed it only at the private sector. The state's
+own automated decisions (subsidy eligibility, welfare targeting, and from May
+2026 the loan-repayment scoring PADU runs for 26 agencies over 30.7 million
+profiles) sit outside the Act the rulebook is built on, because Section 3
+excludes the Federal and State Governments. The exemption is no oversight: JPDP's
+2020 review weighed extending the Act to government, and the 2024 reform still
+left Section 3 untouched. Malaysia is NOT lawless on state data, the Cyber
+Security Act 2024 and Data Sharing Act 2025 guard it (the latter jails officers
+who leak it), but none gives a citizen an algorithmic-accountability right: no
+DPIA on state systems, no explanation, no right to refuse. After 22.5 million
+records were put up for sale in 2022, no one had a data-protection remedy against
+any agency, whoever the source. Emotion: anger-at-process / anxiety-of-precedent,
+not the leak, the rulebook that exempts the biggest profiler from the rules it
+imposes on everyone else.
