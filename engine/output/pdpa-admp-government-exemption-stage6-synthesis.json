@@ -12,29 +12,29 @@
     "note": "Stages 4 and 5 retired (see docs/adr/0004). No 3R HIGH/CRITICAL and political risk not CRITICAL, so no Stage 5 re-enable. External Gemini/ChatGPT prompts are generated under engine/prompts-generated/ for the operator to run the true cross-LLM check before merge to main."
   },
   "headline": "Malaysia's new rules make firms vet their algorithms. The state's own are exempt.",
-  "context": "On 30 April 2026 the data-protection regulator adopted Malaysia's first rules on automated profiling, making private firms vet any system that profiles people. The rules rest on a 2010 law that exempts the Federal and State Governments, on the basis it governs commercial dealings.",
+  "context": "On 30 April 2026 the data-protection regulator issued Malaysia's first rules on automated profiling, making firms vet any system that profiles people. The rules rest on a 2010 law that exempts the Federal and State Governments, which the minister says was built for commercial dealings.",
   "cards": [
     {
       "t": "hook",
-      "big": "On 30 April Malaysia adopted its first rules forcing any firm that profiles you to run an impact check first. The one profiler they cannot reach is the government.",
+      "big": "On 30 April Malaysia issued its first rules forcing any firm that profiles you to run an impact check first. The one profiler they cannot reach is the government.",
       "sub": "They sit under a 2010 law that exempts the Federal and State Governments. PADU, the state database on 30.7 million people, falls outside them."
     },
     {
       "t": "fact",
       "lens": "Rights",
-      "big": "When 22.5 million Malaysians' MyKad details were put up for sale in 2022, no one had recourse under the data-protection law against any government agency.",
+      "big": "After 22.5 million Malaysians' MyKad details were put up for sale in 2022, the data-protection law gave no remedy against a government agency, whoever leaked them.",
       "sub": "Section 3 says the Act 'shall not apply to the Federal Government and State Governments.' The minister denied it came from the registration department."
     },
     {
       "t": "fact",
       "lens": "Technology",
-      "big": "Any firm that profiles people by machine must now file an impact assessment, even on one person. PADU holds 30.7 million people on 600+ data points, and is exempt.",
+      "big": "Any firm that profiles people by machine must now run an impact assessment, even on one person. PADU holds 30.7 million socio-economic profiles, and is exempt.",
       "sub": "Since May 2026 PADU runs predictive analytics for 26 agencies, scoring who can repay a government loan. No law makes it run that check."
     },
     {
       "t": "fact",
       "lens": "Governance",
-      "big": "The carve-out is a choice, not an oversight: a proposal to delete Section 3 was rejected, and the 2024 reform left it standing.",
+      "big": "The carve-out is no oversight: a 2020 review weighed extending the Act to the government, and the 2024 reform still left Section 3 untouched.",
       "sub": "Two newer laws guard state data from hackers and jail officers who leak it. Neither lets a citizen see, question, or refuse how a government system profiled them."
     },
     {
@@ -63,7 +63,17 @@
     "CORRECTED (external deep-research report, primary-verified): fact-Governance sub 'Singapore... Malaysia passed no equivalent' was factually wrong. Malaysia HAS public-sector data statutes — Cyber Security Act 2024 (Act 854, in force 26 Aug 2024) and Data Sharing Act 2025 (Act 864, in force 28 Apr 2025; s.18 RM1m/5y officer penalty, verified jdn.gov.my/nacsa.gov.my). Rewrote to the accurate gap: those laws guard data security and punish leaking officers, but none grants a citizen an algorithmic-accountability right. Singapore dropped from the card (it also exempts its public sector and uses internal AI governance, so it is not a clean foil).",
     "STRENGTHENED (external deep-research report, primary-verified): fact-Technology sub now carries PADU's May 2026 'Analytics-as-a-Service' pivot (26 agencies; scoring loan-repayment capability) instead of restating the threshold numbers — establishes PADU as an ACTIVE automated-profiling engine, not a static database, closing the 'PADU is just storage' rebuttal. Verified The Star/Malay Mail/FMT 20 Apr 2026.",
     "CORRECTED (primary-verified): PADU figure set to '30.7 million' (current April 2026 figure, multiply-sourced incl. SAYS/Malay Mail/FMT) — distinct date from issue 1102's 30.4m (Jun 2025), so no contradiction; chose the concrete current number over 'more than 30 million'.",
-    "REPHRASED (overclaim guard): view 'who gets watched' to 'who gets flagged' — PADU's documented function is subsidy/loan/welfare targeting (incl. loan-repayment flagging), not surveillance; 'flagged' avoids a surveillance overclaim and is supported by the repayment-scoring use case."
+    "REPHRASED (overclaim guard): view 'who gets watched' to 'who gets flagged' — PADU's documented function is subsidy/loan/welfare targeting (incl. loan-repayment flagging), not surveillance; 'flagged' avoids a surveillance overclaim and is supported by the repayment-scoring use case.",
+    "CORRECTED (Stage 3, external ChatGPT): 'adopted' to 'issued' (hook + context) — the guideline PDFs say 'issued'; the 30 April date is a launch (JPDP X post + reporting), not an 'adoption' stamped on the texts.",
+    "CORRECTED (Stage 3, external ChatGPT): fact-Technology 'file an impact assessment' to 'run an impact assessment' — ADMP triggers carrying OUT a DPIA regardless of volume, but no primary duty to FILE/submit every DPIA to the Commissioner (submission only on high residual risk).",
+    "CORRECTED (Stage 3, external ChatGPT): dropped '600+ data points' — not traceable to a PADU/Economy Ministry primary document (only secondary reporting). Kept the primary-verified '30.7 million socio-economic profiles' (official PADU material, 20 Apr 2026).",
+    "CORRECTED (Stage 3, external ChatGPT): fact-Governance 'a proposal to delete Section 3 was rejected' to 'a 2020 review weighed extending the Act to the government, and the 2024 reform still left Section 3 untouched' — the Cabinet-rejection detail (FMT, second-hand) lacked a primary record; both replacement clauses are primary-verified (JPDP 2020 PCP item 12; Act A1727 leaves s.3).",
+    "CORRECTED (Stage 3, external ChatGPT): fact-Rights reframed with 'whoever leaked them' — the 2022 breach origin was disputed (minister denied NRD), so the no-remedy point is now stated as the general statutory consequence rather than implying a specific government agency caused the leak. 'no recourse' softened to 'no remedy' given the JPDP FAQ (Act 709 remedies are complaint/criminal, no specific damages right).",
+    "CORRECTED (Stage 3, external ChatGPT): context causal 'on the basis it governs commercial dealings' to 'which the digital minister says was built only for commercial dealings' — the commercial-transactions rationale is the minister's stated justification, not a statutory statement of cause."
+  ],
+  "stage3_flags_not_actioned": [
+    "Statutory-bodies nuance (s.3 exempts Federal/State Governments, but statutory bodies are NOT automatically exempt): the hook/reframe say 'the government', which is accurate for PADU (run by the Ministry of Economy, a federal-government body, and therefore exempt). No card claims ALL public bodies are exempt; the bite-size budget does not permit a statutory-body caveat, and the named profiler (PADU) is squarely within the exemption. Logged, not actioned.",
+    "View card flagged UNVERIFIED/opinion: the 'considered view' card is explicitly editorial synthesis. 'who gets help / flagged / missed' is now grounded in PADU's verified use cases (subsidy eligibility; loan-repayment scoring; targeting that can miss people). Retained as labelled editorial synthesis, not a factual claim."
   ],
   "introduced_claims": [
     {
