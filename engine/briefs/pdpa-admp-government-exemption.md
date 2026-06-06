@@ -263,4 +263,4 @@ any agency, whoever the source. Emotion: anger-at-process / anxiety-of-precedent
 not the leak, the rulebook that exempts the biggest profiler from the rules it
 imposes on everyone else.
 
-<!-- Published: issue 2008 merged to main 2026-06-06; deploy re-triggered after a transient Actions startup failure on run 27046326673. -->
+<!-- Published: issue 2008 merged to main 2026-06-06; deploy re-triggered (retry 2) after Actions runner-allocation failures on runs 27046326673 / 27046461025. -->
