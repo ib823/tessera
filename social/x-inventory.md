@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-05T21:39:46.944Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-06T03:39:29.062Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (80)
+## ⏳ TO POST (81)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -254,6 +254,43 @@ The recovery story is no longer 'how little came back'. It is whether the recove
 RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
 
 https://thefourthangle.pages.dev/issue/1867
+```
+
+### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2008-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2008`
+
+**1/7** _(hook — attach image, NO link)_ · 175 chars
+```
+On 30 April Malaysia issued its first rules forcing any firm that profiles you to run an impact check. The one profiler they cannot reach is the Federal and State Governments.
+```
+**2/7** _(fact)_ · 163 chars
+```
+After 22.5 million Malaysians' MyKad details were put up for sale in 2022, the data-protection law gave no remedy against a government agency, whoever leaked them.
+```
+**3/7** _(fact)_ · 159 chars
+```
+Any firm that profiles people by machine must now run an impact assessment, even on one person. PADU holds 30.7 million socio-economic profiles, and is exempt.
+```
+**4/7** _(fact)_ · 141 chars
+```
+The carve-out is no oversight: a 2020 review weighed extending the Act to the government, and the 2024 reform still left Section 3 untouched.
+```
+**5/7** _(reframe)_ · 85 chars
+```
+The government now demands of every business an amanah it refuses to place on itself.
+```
+**6/7** _(analogy)_ · 234 chars
+```
+It reads like a fire code every shop must follow, while the largest building in town, the one the council owns, is written out of the rules. Private firms must vet their profiling systems. PADU and other government databases need not.
+```
+**7/7** _(view — ONLY post with the link)_ · 202 chars
+```
+Malaysia wrote rules to hold algorithms accountable to people, then exempted the algorithms that decide who gets help, who gets flagged, and who gets missed.
+
+https://thefourthangle.pages.dev/issue/2008
 ```
 
 ### Issue 2007 — High Court refused MACC's bid to freeze RM548m linked to Na'imah in Singapore
