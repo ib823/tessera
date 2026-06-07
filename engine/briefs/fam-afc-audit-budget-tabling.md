@@ -69,8 +69,14 @@ that must NOT be collapsed.
 - **AFC (Asian Football Confederation)** — conducted the "quality audit" / Capability
   Maturity Assessment; proposed the 94 statute articles. Audit attributed to **Vahid
   Kardany**, AFC deputy secretary-general.
-- **Hamidin Mohd Amin** — former / outgoing FAM president (verify current title at
-  1.5); made the "negligence" and "time to move on" remarks.
+- **Hamidin Mohd Amin** — FAM **Honorary President** (Presiden Kehormat, appointed by
+  Congress 30 Jun 2025; he is the *former* president, not the current one) [CORRECTED
+  1.5]; made the "negligence/oversight" and "time to move on" remarks at the 4 Jun
+  congress.
+- **Vahid Kardany** — AFC Deputy Secretary-General; delivered the audit presentation.
+- **Windsor Paul John** — AFC Secretary-General; stated the presentation did not cover
+  the entirety of the findings and the full report goes to FAM's secretariat privately
+  [ADDED 1.5 — corroborates the "only part presented" point beyond the MP].
 - **Mohd Yusoff Mahadi** — FAM deputy president (the post the reforms abolish); cited
   on NTC funding in 2025. (Verify he held the post at audit date.)
 - **Ramkarpal Singh** — Bukit Gelugor MP (DAP); calling for full audit release.
@@ -241,3 +247,68 @@ CONFIRMED (1.5) / CORRECTED (1.5) / CONTESTED (1.5). Priority order:
   reform should be able to show the audit that demanded it.
 - **One elevated word candidate:** *amanah* (fiduciary trust) — fits a governance/
   public-money story; use once, in reframe or view, only if it earns its place.
+
+---
+
+## STAGE 1.5 RECONCILIATION (multi-engine: Copilot + GPT + Gemini)
+
+Run 2026-06-07. Three independent deep-research engines. Convergence was high;
+each engine return was treated as a lead and reconciled against the primary source
+it pointed to. Tags: CONFIRMED / CORRECTED / CONTESTED.
+
+1. **Budget vs audited accounts** — **CONFIRMED + sharpened.** AFC finding =
+   FAM did not table its annual **budget** for **Congress approval** since 2016. FAM
+   "denied… inaccurate and misleading" the separate claim it failed to table **audited
+   accounts**, saying audited financial statements were presented at every annual
+   congress (incl. FY2025 at the 4 Jun EGM). New, source-backed nuance: FAM says
+   **2020–2022 budgets were not required** at congress (no statute provision then),
+   statutes **amended 2023 on FIFA advice** to require it, and FAM admits "shortcomings
+   / kekhilafan" for **2023–2025**. → Cards frame strictly as budget-for-approval; never
+   "hid accounts." Sources: Bernama (FAM statement, 5 Jun), Scoop/Hamidin (5 Jun), NST.
+2. **Audit scores** — **CONFIRMED (congress-presentation reporting; AFC PDF withheld).**
+   Finance, Business Information & Risk **1.2**; Governance & Legal **1.3**; Admin,
+   Logistics & IT **1.6**; People & Culture **1.4**; Infrastructure & Facilities **1.4**;
+   highest Communications & Media **~2.0**. Scale = **five-tier (out of 5)**, Level 2 =
+   Pre-Intermediate. Presenter: Vahid Kardany. Sources: Media Selangor/Bernama, NST
+   ("near-failing grades"), The Star ("1.2 out of five").
+3. **"Since 2016"** — **CORRECTED → soften.** No engine verified a year-by-year
+   primary sequence, and FAM contests 2020–22. Use **"for most years since 2016"**;
+   attribute the "10 straight years" framing to Hamidin/FMT, do not assert it flatly.
+4. **Statute changes adopted 4 Jun** — **CONFIRMED.** 18 affiliates unanimous. Exco
+   **17→11** (baseline 17 confirmed against the *primary* 2023 FAM Statutes),
+   deputy-president post **abolished**, VP **4→3**, Super League clubs get automatic
+   affiliate status + congress vote if independent of state FAs. No consolidated
+   post-4-Jun statute text public yet. Sources: Malay Mail/Bernama, Scoop, FMT;
+   baseline = 2023 FAM Statutes (primary).
+5. **CHF 350,000 fine + CAS** — **CONFIRMED (PRIMARY, triple-sourced).** FIFA
+   Disciplinary Committee imposed CHF 350,000 on FAM + CHF 2,000 and 12-month bans on
+   7 players (late Sep 2025; FIFA release dated 26 Sep, one engine cited 25 Sep — minor,
+   anchor on the FIFA **Appeal Committee** confirmation **3 Nov 2025** which upheld the
+   sanctions "in its entirety"). CAS media release **5 Mar 2026**: FAM's appeal
+   **dismissed**, "the CHF 350,000 (~RM1.8m) fine… remains in place"; players' bans
+   narrowed to **official matches only**. CAS hearing 26 Feb 2026, panel chaired by
+   Lars Hilliger; operative decision only — full reasoned award to follow. Sources:
+   inside.fifa.com (26 Sep & 3 Nov 2025), CAS media release / Bernama (5 Mar 2026).
+6. **"Only part of the audit presented"** — **CORRECTED → upgraded from MP-only.**
+   Beyond Ramkarpal Singh's claim, NST reports AFC sec-gen **Windsor Paul John** said
+   the presentation did not cover the entirety of the findings and the full report goes
+   to FAM's secretariat privately. → May state more firmly, attributing to AFC + MP.
+7. **Hamidin quote + title** — **CORRECTED.** Exact: "Boleh jadi ada kecuaian" /
+   "It is possible there was some negligence or oversight in the process" (Buletin TV3
+   4 Jun; Scoop 4 Jun). Title = **Honorary President** (since 30 Jun 2025), not loosely
+   "former/outgoing president." Fixed in ACTORS.
+8. **RM15m → RM30m** — **CONFIRMED.** Budget 2025 RM15m for football dev doubled to
+   RM30m (RM15m private-sector). Sources: NST 12 Jan 2025, Bernama 13 Jan 2025. Per
+   accuracy rule, cards use the headline doubling as context only; the public/private
+   split is sourced but kept light.
+
+**CONTESTED / open (carry to Stage 3):** none blocking. Minor: exact FIFA original-
+decision date (25 vs 26 Sep 2025) — sidestepped by anchoring on the 3 Nov Appeal
+Committee confirmation. The AFC audit PDF and the full CAS reasoned award remain
+non-public; all audit-score figures rest on congress-presentation reporting, disclosed
+as such in-copy.
+
+**Primary sources reached (lifts the brief above the secondary layer):** FIFA Judicial
+Bodies releases (26 Sep & 3 Nov 2025), CAS media release (5 Mar 2026), FAM Statutes
+2023 (exco/VP/president structure), FAM official statement (5 Jun 2026), FAM Honorary-
+President appointment record (30 Jun 2025).
