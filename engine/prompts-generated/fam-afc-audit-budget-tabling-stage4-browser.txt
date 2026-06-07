@@ -1,0 +1,208 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "fam-afc-audit-budget-tabling",
+    "issue_id": "2009",
+    "brief": "engine/briefs/fam-afc-audit-budget-tabling.md",
+    "generated_at": "2026-06-07",
+    "revision_history": [
+      "v1 (2026-06-07): initial draft after Phase 1 brief + Stage 1.5 multi-engine reconciliation (Copilot + GPT + Gemini). Radar pick A1 (silence-watch S11). Frame: the budget is the members' instrument of oversight; an AFC audit (shown only in part) found it rarely reached a Congress vote since 2016, on a body already carrying a FIFA forgery fine CAS refused to cut."
+    ],
+    "discipline": "Process-not-people. The subject is FAM the institution, not individuals; Hamidin is named only for his own on-record 'negligence' quote and current title (Honorary President). THE accuracy line: AFC finding = annual BUDGET not tabled for CONGRESS APPROVAL; FAM DENIES the separate audited-accounts claim. Cards never say 'hid accounts'. '10 straight years' is attributed framing, not asserted; cards use 'most years since 2016' and carry FAM's 2020-2022 statute carve-out. Audit scores rest on congress-presentation reporting (the AFC report is withheld) and are disclosed as such. No 3R: no royal patron named, no race/foreigner framing of the naturalisation matter."
+  },
+  "headline": "AFC audit grades FAM finance 1.2 of 5; budget rarely reached a Congress vote since 2016",
+  "context": "An AFC governance audit, shown only in part at FAM's 4 June 2026 congress, graded most of the body 'pre-intermediate' and found its annual budget rarely reached a Congress vote since 2016. FAM disputes a separate claim that it failed to table audited accounts.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "FAM cleared 94 governance reforms and called it a fresh start.",
+      "sub": "The AFC audit that forced them graded its finances 1.2 out of 5, and only part of the report ever reached the congress floor.",
+      "sources": ["A8", "A5", "A10"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "FAM did not put its annual budget to a Congress vote for most years since 2016.",
+      "sub": "Honorary president Hamidin Mohd Amin said it may have been negligence. FAM says that for some of those years its own statutes did not require the vote.",
+      "sources": ["A1", "A2", "A3"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "The audit graded FAM's finance function 1.2 out of 5, and rated most of the body 'pre-intermediate.'",
+      "sub": "This sits on a body steering tens of millions in public football money and still carrying a CHF 350,000 FIFA fine, about RM1.8 million, that arbitration refused to cut.",
+      "sources": ["A5", "A6", "A7", "A12"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "Only part of the audit reached the congress floor; the AFC said the full report stays with FAM.",
+      "sub": "Bukit Gelugor MP Ramkarpal Singh says withholding it invites 'an adverse inference', and he will raise it in Parliament this month.",
+      "sources": ["A10", "A6"]
+    },
+    {
+      "t": "reframe",
+      "big": "Reform is the easy part. The harder question is who was watching while the budget members are meant to approve quietly went missing for years.",
+      "sub": "",
+      "sources": ["A1", "A2"]
+    },
+    {
+      "t": "analogy",
+      "big": "Picture a condo management that skips tabling its budget to owners for years, then passes a whole new constitution in a single meeting.",
+      "sub": "",
+      "sources": ["A1", "A8"]
+    },
+    {
+      "t": "view",
+      "big": "Public money is an amanah, and reform you cannot inspect is only a promise. The test is whether FAM will show the audit in full, not whether it can vote one through.",
+      "sub": "",
+      "sources": ["A10", "A5"]
+    }
+  ],
+  "sources": "A1 Scoop 'AFC audit reveals FAM failed to table annual budgets for congress approval since 2016'; A2 FMT 'You don't forget budgets for 10 straight years' 6 Jun 2026; A3 FMT 'FAM denies it failed to table audited accounts since 2016' 5 Jun 2026; A4 Bernama FAM statement 5 Jun 2026; A5 Media Selangor/Bernama 'AFC audit flags most FAM operations below intermediate level' (scores) 3 Jun 2026; A6 NST 'FAM gets near-failing grades in AFC audit' 3 Jun 2026; A7 The Star 5 Jun 2026; A8 Malay Mail/Bernama 'FAM affiliates give unanimous backing to AFC-proposed statute changes' 4 Jun 2026; A9 Scoop 'FAM approves sweeping constitutional overhaul' 4 Jun 2026; A10 NST/FMT 'Release AFC's audit report in full, MP urges FAM' 6 Jun 2026; A11 inside.fifa.com 'Appeal Committee confirms sanctions on FAM and seven players' 3 Nov 2025; A12 CAS media release / Bernama 5 Mar 2026; A13 Buletin TV3 Hamidin quote 4 Jun 2026; A14 NST/Bernama 'Govt doubles Harimau Malaya development budget to RM30m' Jan 2025",
+  "confidence": "High on the spine. Budget-vs-accounts distinction, the 'only part presented' point, statute changes, and the CHF 350,000 fine + CAS dismissal are confirmed across three independent deep-research engines and, for the fine and the 2023 statute baseline, against PRIMARY records (FIFA Judicial Bodies releases, CAS media release, 2023 FAM Statutes). Audit scores (1.2 / 1.3 / 1.6, five-tier scale) rest on congress-presentation reporting because the AFC audit report itself is not public; this is disclosed in-copy via 'shown only in part'.",
+  "lenses_used": ["Governance", "Economic", "Social"],
+  "lenses_applicable_but_unused": ["Legal", "Political"],
+  "needs_verification": [
+    "Card 3 'tens of millions in public football money' — confirm FAM is the steward of the cited allocations (RM30m development, RM65m NTC) rather than the money being channelled wholly via the ministry; soften to 'public football funding' generically if FAM stewardship of a specific sum cannot be cleanly stated.",
+    "Card 4 — confirm Parliament is sitting this month and that Ramkarpal's raise is still pending at publish date; if he has already raised or withdrawn it, update tense.",
+    "Card 4 — confirm the exact 'adverse inference' wording is Ramkarpal's (per A10) and attributed as his, not asserted by T4A.",
+    "Card 2 — confirm the 2020-2022 statute carve-out wording (FAM statement, A4) reads as 'no statute provision then', not as a blanket denial; the sub must not overstate FAM's defence."
+  ],
+  "source_notes": "BUDGET vs ACCOUNTS (cardinal): AFC = budget not tabled for Congress APPROVAL since 2016; FAM denies the audited-ACCOUNTS claim (A3, A4) and says accounts were tabled every congress incl. FY2025. Cards say 'budget … to a Congress vote', never 'accounts'. SINCE 2016: softened to 'most years' — no engine verified a year-by-year primary sequence and FAM contests 2020-2022. FINE: CHF 350,000 ~ RM1.8m per CAS/Bernama (A12); CAS dismissed FAM's appeal, fine 'remains in place'; players' bans narrowed to official matches only (not used in cards). 'ONLY PART PRESENTED': corroborated beyond the MP by AFC sec-gen Windsor Paul John (per A6/NST); card 4 attributes the 'adverse inference' line to the MP and the 'full report stays with FAM' point to the AFC. SCORES: AFC report withheld; figures are congress-presentation reporting, disclosed in-copy.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. 1.2/5 and 'pre-intermediate' (A5/A6/A7); budget-not-voted-since-2016 + Hamidin negligence + 2020-22 carve-out (A1/A2/A3/A4); CHF 350,000 + CAS refusal (A11/A12); 'only part presented' + adverse inference (A10/A6); 94 reforms (A8/A9).",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. 'most years since 2016' not 'every year' / '10 straight years'; 'finance function 1.2 of 5' not 'FAM scored 1.2'; fine 'arbitration refused to cut' (true) not 'lost everything'. Budget never rendered as 'accounts'.",
+    "underclaim_check": "Avoided. The audit grades and the budget-vote gap are stated plainly, not hedged to 'some concerns'.",
+    "misleading_framing_check": "FAM's 2020-2022 statute defence is carried in card 2 sub so the reader is not left with a false 'ten flat years' impression. Audit scores disclosed as the part-shown report.",
+    "unverified_detail_check": "No royal patron named; players unnamed; naturalisation matter framed as a forgery/governance fine, not race.",
+    "3R_special_caution": "Royalty WATCH from brief honoured — no club/royal patron named in the power-concentration angle. No religion/race.",
+    "process_not_people_check": "Pass — the institution and the missing budget vote, not individuals. Hamidin named only for his own quote and title.",
+    "anger_anxiety_check": "Hook + reframe land anger-at-process / anxiety-of-precedent (oversight switch off, audit half-shown), not sadness.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field; commas, colons, periods only.",
+    "scaffolding_marker_check": "No 'However/Moreover/Notably' sentence openers.",
+    "auxiliary_verb_density_check": "Verb-driven: cleared, graded, forced, reached, put, said, steering, carrying, refused, stays, withholding, invites, raise, went missing, skips, passes, show, vote. No field stacks three+ auxiliaries.",
+    "elevated_word_check": "One: 'amanah' (fiduciary trust), in the view card — fits public-money governance, no plain substitute reads as well.",
+    "reframe_shape_check": "Question-restructuring form ('the harder question is who was watching…'), varied from the recent 'X is not Y, it is Z' template."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Spine is primary-source-backed (FIFA/CAS releases, 2023 FAM Statutes, FAM's own statement) and triangulated across three deep-research engines at Stage 1.5, with the cardinal budget-vs-accounts trap resolved on the correct side. Held below 90 because the headline audit scores rest on congress-presentation reporting (the AFC report is withheld, not yet a primary document) and card 3's 'tens of millions' stewardship claim is flagged for Stage 3."
+}

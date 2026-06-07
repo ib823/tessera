@@ -1,0 +1,207 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "fam-afc-audit-budget-tabling",
+    "issue_id": "2009",
+    "brief": "engine/briefs/fam-afc-audit-budget-tabling.md",
+    "generated_at": "2026-06-07",
+    "revision_history": [
+      "v1 (2026-06-07): initial draft after Phase 1 brief + Stage 1.5 multi-engine reconciliation (Copilot + GPT + Gemini). Radar pick A1 (silence-watch S11). Frame: the budget is the members' instrument of oversight; an AFC audit (shown only in part) found it rarely reached a Congress vote since 2016, on a body already carrying a FIFA forgery fine CAS refused to cut."
+    ],
+    "discipline": "Process-not-people. The subject is FAM the institution, not individuals; Hamidin is named only for his own on-record 'negligence' quote and current title (Honorary President). THE accuracy line: AFC finding = annual BUDGET not tabled for CONGRESS APPROVAL; FAM DENIES the separate audited-accounts claim. Cards never say 'hid accounts'. '10 straight years' is attributed framing, not asserted; cards use 'most years since 2016' and carry FAM's 2020-2022 statute carve-out. Audit scores rest on congress-presentation reporting (the AFC report is withheld) and are disclosed as such. No 3R: no royal patron named, no race/foreigner framing of the naturalisation matter."
+  },
+  "headline": "AFC audit grades FAM finance 1.2 of 5; budget rarely reached a Congress vote since 2016",
+  "context": "An AFC governance audit, shown only in part at FAM's 4 June 2026 congress, graded most of the body 'pre-intermediate' and found its annual budget rarely reached a Congress vote since 2016. FAM disputes a separate claim that it failed to table audited accounts.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "FAM cleared 94 governance reforms and called it a fresh start.",
+      "sub": "The AFC audit that forced them graded its finances 1.2 out of 5, and only part of the report ever reached the congress floor.",
+      "sources": ["A8", "A5", "A10"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "FAM did not put its annual budget to a Congress vote for most years since 2016.",
+      "sub": "Honorary president Hamidin Mohd Amin said it may have been negligence. FAM says that for some of those years its own statutes did not require the vote.",
+      "sources": ["A1", "A2", "A3"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "The audit graded FAM's finance function 1.2 out of 5, and rated most of the body 'pre-intermediate.'",
+      "sub": "This sits on a body steering tens of millions in public football money and still carrying a CHF 350,000 FIFA fine, about RM1.8 million, that arbitration refused to cut.",
+      "sources": ["A5", "A6", "A7", "A12"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "big": "Only part of the audit reached the congress floor; the AFC said the full report stays with FAM.",
+      "sub": "Bukit Gelugor MP Ramkarpal Singh says withholding it invites 'an adverse inference', and he will raise it in Parliament this month.",
+      "sources": ["A10", "A6"]
+    },
+    {
+      "t": "reframe",
+      "big": "Reform is the easy part. The harder question is who was watching while the budget members are meant to approve quietly went missing for years.",
+      "sub": "",
+      "sources": ["A1", "A2"]
+    },
+    {
+      "t": "analogy",
+      "big": "Picture a condo management that skips tabling its budget to owners for years, then passes a whole new constitution in a single meeting.",
+      "sub": "",
+      "sources": ["A1", "A8"]
+    },
+    {
+      "t": "view",
+      "big": "Public money is an amanah, and reform you cannot inspect is only a promise. The test is whether FAM will show the audit in full, not whether it can vote one through.",
+      "sub": "",
+      "sources": ["A10", "A5"]
+    }
+  ],
+  "sources": "A1 Scoop 'AFC audit reveals FAM failed to table annual budgets for congress approval since 2016'; A2 FMT 'You don't forget budgets for 10 straight years' 6 Jun 2026; A3 FMT 'FAM denies it failed to table audited accounts since 2016' 5 Jun 2026; A4 Bernama FAM statement 5 Jun 2026; A5 Media Selangor/Bernama 'AFC audit flags most FAM operations below intermediate level' (scores) 3 Jun 2026; A6 NST 'FAM gets near-failing grades in AFC audit' 3 Jun 2026; A7 The Star 5 Jun 2026; A8 Malay Mail/Bernama 'FAM affiliates give unanimous backing to AFC-proposed statute changes' 4 Jun 2026; A9 Scoop 'FAM approves sweeping constitutional overhaul' 4 Jun 2026; A10 NST/FMT 'Release AFC's audit report in full, MP urges FAM' 6 Jun 2026; A11 inside.fifa.com 'Appeal Committee confirms sanctions on FAM and seven players' 3 Nov 2025; A12 CAS media release / Bernama 5 Mar 2026; A13 Buletin TV3 Hamidin quote 4 Jun 2026; A14 NST/Bernama 'Govt doubles Harimau Malaya development budget to RM30m' Jan 2025",
+  "confidence": "High on the spine. Budget-vs-accounts distinction, the 'only part presented' point, statute changes, and the CHF 350,000 fine + CAS dismissal are confirmed across three independent deep-research engines and, for the fine and the 2023 statute baseline, against PRIMARY records (FIFA Judicial Bodies releases, CAS media release, 2023 FAM Statutes). Audit scores (1.2 / 1.3 / 1.6, five-tier scale) rest on congress-presentation reporting because the AFC audit report itself is not public; this is disclosed in-copy via 'shown only in part'.",
+  "lenses_used": ["Governance", "Economic", "Social"],
+  "lenses_applicable_but_unused": ["Legal", "Political"],
+  "needs_verification": [
+    "Card 3 'tens of millions in public football money' — confirm FAM is the steward of the cited allocations (RM30m development, RM65m NTC) rather than the money being channelled wholly via the ministry; soften to 'public football funding' generically if FAM stewardship of a specific sum cannot be cleanly stated.",
+    "Card 4 — confirm Parliament is sitting this month and that Ramkarpal's raise is still pending at publish date; if he has already raised or withdrawn it, update tense.",
+    "Card 4 — confirm the exact 'adverse inference' wording is Ramkarpal's (per A10) and attributed as his, not asserted by T4A.",
+    "Card 2 — confirm the 2020-2022 statute carve-out wording (FAM statement, A4) reads as 'no statute provision then', not as a blanket denial; the sub must not overstate FAM's defence."
+  ],
+  "source_notes": "BUDGET vs ACCOUNTS (cardinal): AFC = budget not tabled for Congress APPROVAL since 2016; FAM denies the audited-ACCOUNTS claim (A3, A4) and says accounts were tabled every congress incl. FY2025. Cards say 'budget … to a Congress vote', never 'accounts'. SINCE 2016: softened to 'most years' — no engine verified a year-by-year primary sequence and FAM contests 2020-2022. FINE: CHF 350,000 ~ RM1.8m per CAS/Bernama (A12); CAS dismissed FAM's appeal, fine 'remains in place'; players' bans narrowed to official matches only (not used in cards). 'ONLY PART PRESENTED': corroborated beyond the MP by AFC sec-gen Windsor Paul John (per A6/NST); card 4 attributes the 'adverse inference' line to the MP and the 'full report stays with FAM' point to the AFC. SCORES: AFC report withheld; figures are congress-presentation reporting, disclosed in-copy.",
+  "_self_check": {
+    "every_claim_traces_to_source": "Yes. 1.2/5 and 'pre-intermediate' (A5/A6/A7); budget-not-voted-since-2016 + Hamidin negligence + 2020-22 carve-out (A1/A2/A3/A4); CHF 350,000 + CAS refusal (A11/A12); 'only part presented' + adverse inference (A10/A6); 94 reforms (A8/A9).",
+    "four_cardinal_sins": "Checked.",
+    "overclaim_check": "Avoided. 'most years since 2016' not 'every year' / '10 straight years'; 'finance function 1.2 of 5' not 'FAM scored 1.2'; fine 'arbitration refused to cut' (true) not 'lost everything'. Budget never rendered as 'accounts'.",
+    "underclaim_check": "Avoided. The audit grades and the budget-vote gap are stated plainly, not hedged to 'some concerns'.",
+    "misleading_framing_check": "FAM's 2020-2022 statute defence is carried in card 2 sub so the reader is not left with a false 'ten flat years' impression. Audit scores disclosed as the part-shown report.",
+    "unverified_detail_check": "No royal patron named; players unnamed; naturalisation matter framed as a forgery/governance fine, not race.",
+    "3R_special_caution": "Royalty WATCH from brief honoured — no club/royal patron named in the power-concentration angle. No religion/race.",
+    "process_not_people_check": "Pass — the institution and the missing budget vote, not individuals. Hamidin named only for his own quote and title.",
+    "anger_anxiety_check": "Hook + reframe land anger-at-process / anxiety-of-precedent (oversight switch off, audit half-shown), not sadness.",
+    "em_dash_check": "No U+2014 em-dashes in any reader-facing field; commas, colons, periods only.",
+    "scaffolding_marker_check": "No 'However/Moreover/Notably' sentence openers.",
+    "auxiliary_verb_density_check": "Verb-driven: cleared, graded, forced, reached, put, said, steering, carrying, refused, stays, withholding, invites, raise, went missing, skips, passes, show, vote. No field stacks three+ auxiliaries.",
+    "elevated_word_check": "One: 'amanah' (fiduciary trust), in the view card — fits public-money governance, no plain substitute reads as well.",
+    "reframe_shape_check": "Question-restructuring form ('the harder question is who was watching…'), varied from the recent 'X is not Y, it is Z' template."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Spine is primary-source-backed (FIFA/CAS releases, 2023 FAM Statutes, FAM's own statement) and triangulated across three deep-research engines at Stage 1.5, with the cardinal budget-vs-accounts trap resolved on the correct side. Held below 90 because the headline audit scores rest on congress-presentation reporting (the AFC report is withheld, not yet a primary document) and card 3's 'tens of millions' stewardship claim is flagged for Stage 3."
+}
