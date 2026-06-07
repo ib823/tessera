@@ -1,0 +1,63 @@
+=== STAGE 1.5 — DEEP-RESEARCH VERIFICATION (multi-engine) ===
+
+Purpose: an independent, wide-net factual verification pass run in PARALLEL across
+external deep-research engines (e.g. Gemini, GPT, Copilot) AFTER the Stage 1 research
+brief is written and BEFORE the cross-LLM review stages (Stage 2 Bias Audit, Stage 3
+Fact Verification). Stage 1.5 is NOT a framing or bias pass (that is Stage 2) and NOT a
+single-engine fact-check (that is Stage 3). It is a redundancy layer: catch factual
+errors and surface missing PRIMARY sources while the facts are still soft — before they
+harden into cards. Verification responsibility is shared across all stages (see
+CLAUDE.md Accuracy Standard); Stage 1.5 widens that net at the cheapest point to fix.
+
+This preamble is read by the human operator who runs the external engines, and by the
+Claude session that reconciles their returns. It does not block the build.
+
+--- WHAT TO HAND THE ENGINES ---
+
+Give each engine the same scoped task:
+  1. The brief's "STAGE 1.5 — DEEP-RESEARCH VERIFICATION TARGETS" list (the prioritised
+     claims that most need triangulation). If the brief has no such list, hand over every
+     number, date, named actor, law/section, court case, and direct quote in the brief.
+  2. This instruction: "For each item, find the PRIMARY source (official document,
+     gazette, regulator publication, court/tribunal ruling, statute text, peer-reviewed
+     paper, or a named authoritative outlet that cites and links such a source). Return
+     the source, the exact figure/wording it supports, its date, and a direct link.
+     If you cannot find a primary source, say so explicitly. Do not fill gaps from
+     memory. Flag any claim where reputable sources disagree, and give both."
+
+Run the engines independently. Do not let one engine see another's answer — the value is
+in disagreement surfacing.
+
+--- HOW CLAUDE RECONCILES THE RETURNS ---
+
+For every claim in the brief, after reading all engine returns, tag it with exactly one:
+
+  CONFIRMED (1.5)   — at least one engine traced it to a primary (or
+                      primary-citing) source that matches the brief. Record the source.
+  CORRECTED (1.5)   — an engine found the brief's figure/date/wording is wrong.
+                      Replace it in the brief, note the old → new, cite the source.
+  CONTESTED (1.5)   — engines or sources disagree, or none reached a primary source.
+                      Keep the claim flagged; either soften it, attribute it, drop it,
+                      or hand it to Stage 3 as a priority chase. Never publish a
+                      CONTESTED specific as a bare fact.
+
+Rules:
+  - A claim only graduates to a card on CONFIRMED, or on CORRECTED with its corrected
+    value re-confirmed. CONTESTED specifics must be softened, attributed, or dropped.
+  - Engine output is itself a SECONDARY source until you open the primary it points to.
+    An engine "confirming" a number is a lead, not a verification — follow the link.
+  - The four cardinal sins still govern (overclaim, underclaim, misleading framing,
+    unverified detail). Stage 1.5's job is to kill the fourth before it spreads.
+  - Where the brief already flags a known accuracy trap (e.g. two claims that must not
+    be collapsed), Stage 1.5 must explicitly resolve which side of the line each source
+    supports — that trap is the highest-priority target.
+  - 3R claims (Race, Religion, Royalty) carry the higher bar: require TWO independent
+    primary sources or drop, regardless of how many engines "confirm" from secondary
+    material.
+
+--- OUTPUT ---
+
+Append a "## STAGE 1.5 RECONCILIATION" section to the brief listing each target claim,
+its tag, the primary source found (or "no primary found"), and any correction applied.
+This becomes the audit trail Phase 6 (Legal + Accuracy Check) walks against the final
+text. Carry CONTESTED items forward as the priority queue for Stage 3.
