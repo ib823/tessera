@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-06T22:28:06.425Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-07T01:04:15.548Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -44,114 +44,42 @@ Two Klang Valley seats may sit empty until the next general election because the
 https://thefourthangle.pages.dev/issue/1993
 ```
 
-### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
+### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia perhebat promosi di china, sasar pelancongan berpendapatan tinggi. malaysia menya). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may ). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
 
-**1/7** _(hook — attach image, NO link)_ · 100 chars
+**1/7** _(hook — attach image, NO link)_ · 265 chars
 ```
-Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on 210,000 smallholders
+On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
 ```
-**2/7** _(fact)_ · 103 chars
+**2/7** _(fact)_ · 133 chars
 ```
-Palm oil traded USD120 a tonne above soybean oil at one point in 2025, and Chinese refiners shifted mix
+Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
 ```
-**3/7** _(fact)_ · 269 chars
+**3/7** _(fact)_ · 155 chars
 ```
-China signed an oilseed deal with Brazil worth more than US$10 billion in November 2025 COFCO inked agreements reported at roughly 20 million tonnes of soybeans, soybean oil and palm oil with ADM, Bunge, Cargill and Louis Dreyfus. Signed contracts, not delivered cargo.
+M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
 ```
-**4/7** _(fact)_ · 96 chars
+**4/7** _(fact)_ · 151 chars
 ```
-Greer announced the deal. China's foreign ministry said working teams were still in consultation
+Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
 ```
-**5/7** _(fact)_ · 264 chars
+**5/7** _(reframe)_ · 176 chars
 ```
-When CPO falls, the corporate listcos hedge. Smallholders absorb it About 210,000 smallholders cultivate ~15% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. The Oct 2025 US-Malaysia trade deal exempted palm oil. April oleochemicals rose 23.83%.
+When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
 ```
-**6/7** _(reframe)_ · 114 chars
+**6/7** _(analogy)_ · 233 chars
 ```
-The question is not whether Trump shook palm oil. It is whether Malaysian rerouting outpaces the smallholder cost.
+Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
 ```
-**7/7** _(view — ONLY post with the link)_ · 138 chars
+**7/7** _(view — ONLY post with the link)_ · 222 chars
 ```
-The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before Trump met Xi
+Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
 
-https://thefourthangle.pages.dev/issue/1989
-```
-
-### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia perhebat promosi di china, sasar pelancongan berpendapatan tinggi. malaysia menya). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
-
-**1/7** _(hook — attach image, NO link)_ · 152 chars
-```
-Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
-```
-**2/7** _(fact)_ · 112 chars
-```
-WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
-```
-**3/7** _(fact)_ · 121 chars
-```
-Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
-```
-**4/7** _(fact)_ · 108 chars
-```
-Chinese-Malaysian favourability of China rose 41% to 67%; Malay favourability fell 33% to 28% (2016 to 2022)
-```
-**5/7** _(reframe)_ · 175 chars
-```
-The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Think of it like a landlord who decides which tenants' mail gets delivered The landlord writes the rules, the rules are not public, and Malaysia's regulator licenses the landlord without seeing the rules. WeChat, TikTok, RedNote, Facebook, Telegram are all landlords.
-```
-**7/7** _(view — ONLY post with the link)_ · 164 chars
-```
-PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence, not moderation logic
-
-https://thefourthangle.pages.dev/issue/1982
-```
-
-### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia perhebat promosi di china, sasar pelancongan berpendapatan tinggi. malaysia menya). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
-
-**1/6** _(hook — attach image, NO link)_ · 91 chars
-```
-520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
-```
-**2/6** _(fact)_ · 112 chars
-```
-China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
-```
-**3/6** _(fact)_ · 259 chars
-```
-George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
-```
-**4/6** _(fact)_ · 259 chars
-```
-Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
-```
-**5/6** _(reframe)_ · 104 chars
-```
-This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
-```
-**6/6** _(view — ONLY post with the link)_ · 142 chars
-```
-Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
-
-https://thefourthangle.pages.dev/issue/1970
+https://thefourthangle.pages.dev/issue/1992
 ```
 
 ### Issue 1961 — MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
@@ -729,43 +657,6 @@ The dollar is now software. Six licensed exchanges do not list it. US sanctions 
 https://thefourthangle.pages.dev/issue/1994
 ```
 
-### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
-
-**1/7** _(hook — attach image, NO link)_ · 265 chars
-```
-On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
-```
-**2/7** _(fact)_ · 133 chars
-```
-Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
-```
-**3/7** _(fact)_ · 155 chars
-```
-M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
-```
-**4/7** _(fact)_ · 151 chars
-```
-Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
-```
-**6/7** _(analogy)_ · 233 chars
-```
-Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
-```
-**7/7** _(view — ONLY post with the link)_ · 222 chars
-```
-Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
-
-https://thefourthangle.pages.dev/issue/1992
-```
-
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
 
 - **Status:** PENDING
@@ -830,6 +721,43 @@ MACC recommended charges against the signers. The same government defends the de
 The deal continues. MACC recommended charges. The AGC will decide. The same coalition has been in office for all three.
 
 https://thefourthangle.pages.dev/issue/1990
+```
+
+### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
+
+**1/7** _(hook — attach image, NO link)_ · 100 chars
+```
+Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on 210,000 smallholders
+```
+**2/7** _(fact)_ · 103 chars
+```
+Palm oil traded USD120 a tonne above soybean oil at one point in 2025, and Chinese refiners shifted mix
+```
+**3/7** _(fact)_ · 269 chars
+```
+China signed an oilseed deal with Brazil worth more than US$10 billion in November 2025 COFCO inked agreements reported at roughly 20 million tonnes of soybeans, soybean oil and palm oil with ADM, Bunge, Cargill and Louis Dreyfus. Signed contracts, not delivered cargo.
+```
+**4/7** _(fact)_ · 96 chars
+```
+Greer announced the deal. China's foreign ministry said working teams were still in consultation
+```
+**5/7** _(fact)_ · 264 chars
+```
+When CPO falls, the corporate listcos hedge. Smallholders absorb it About 210,000 smallholders cultivate ~15% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. The Oct 2025 US-Malaysia trade deal exempted palm oil. April oleochemicals rose 23.83%.
+```
+**6/7** _(reframe)_ · 114 chars
+```
+The question is not whether Trump shook palm oil. It is whether Malaysian rerouting outpaces the smallholder cost.
+```
+**7/7** _(view — ONLY post with the link)_ · 138 chars
+```
+The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before Trump met Xi
+
+https://thefourthangle.pages.dev/issue/1989
 ```
 
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
@@ -1044,6 +972,43 @@ Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then 
 Norway acted within its rules. The real cost is 15 years of LCS spending: no delivered ships, one DNAA as the only criminal endpoint across four governments.
 
 https://thefourthangle.pages.dev/issue/1983
+```
+
+### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
+
+**1/7** _(hook — attach image, NO link)_ · 152 chars
+```
+Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
+```
+**2/7** _(fact)_ · 112 chars
+```
+WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
+```
+**3/7** _(fact)_ · 121 chars
+```
+Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
+```
+**4/7** _(fact)_ · 108 chars
+```
+Chinese-Malaysian favourability of China rose 41% to 67%; Malay favourability fell 33% to 28% (2016 to 2022)
+```
+**5/7** _(reframe)_ · 175 chars
+```
+The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Think of it like a landlord who decides which tenants' mail gets delivered The landlord writes the rules, the rules are not public, and Malaysia's regulator licenses the landlord without seeing the rules. WeChat, TikTok, RedNote, Facebook, Telegram are all landlords.
+```
+**7/7** _(view — ONLY post with the link)_ · 164 chars
+```
+PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence, not moderation logic
+
+https://thefourthangle.pages.dev/issue/1982
 ```
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
@@ -1439,6 +1404,39 @@ This isn't one government's hypocrisy. It's a structural failure where states pr
 Tie standing rules to gazette publication date, enforce Section 12 replacement land, and adopt the NFA 2022 amendment across all states
 
 https://thefourthangle.pages.dev/issue/1971
+```
+
+### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
+
+**1/6** _(hook — attach image, NO link)_ · 91 chars
+```
+520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
+```
+**2/6** _(fact)_ · 112 chars
+```
+China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
+```
+**3/6** _(fact)_ · 259 chars
+```
+George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
+```
+**4/6** _(fact)_ · 259 chars
+```
+Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
+```
+**5/6** _(reframe)_ · 104 chars
+```
+This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
+```
+**6/6** _(view — ONLY post with the link)_ · 142 chars
+```
+Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
+
+https://thefourthangle.pages.dev/issue/1970
 ```
 
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
