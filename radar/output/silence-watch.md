@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-06-11 19:08 UTC. Queue size: 822. Picks shown: 25.
+Scan: 2026-06-11 20:55 UTC. Queue size: 816. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 37.9 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 38.0 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -31,7 +31,7 @@ developed.
 
 ### S2. budget 2027 presentation
 
-- **Rank score:** 1.013 (silence=1.00 × importance=0.54 × age_factor)
+- **Rank score:** 1.014 (silence=1.00 × importance=0.54 × age_factor)
 
 - **Age in queue:** 26.4 days (source date: 2026-06-11, first seen: 2026-05-16)
 
@@ -44,7 +44,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 42.9 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 43.0 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -64,7 +64,7 @@ developed.
 
 ### S5. parliament budget session session opens
 
-- **Rank score:** 0.966 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.967 (silence=1.00 × importance=0.52 × age_factor)
 
 - **Age in queue:** 26.4 days (source date: 2026-06-11, first seen: 2026-05-16)
 
@@ -75,7 +75,7 @@ developed.
 
 ### S6. sprm akan rayu keputusan mahkamah tolak perintah larangan akses rm548 juta. sprm kata notis rayuan akan dif...
 
-- **Rank score:** 0.888 (silence=0.99 × importance=0.54 × age_factor)
+- **Rank score:** 0.890 (silence=0.99 × importance=0.54 × age_factor)
 
 - **Age in queue:** 20.3 days (source date: 2026-05-22, first seen: 2026-05-22)
 
@@ -86,7 +86,7 @@ developed.
 
 ### S7. parliament second session session opens
 
-- **Rank score:** 0.872 (silence=1.00 × importance=0.47 × age_factor)
+- **Rank score:** 0.873 (silence=1.00 × importance=0.47 × age_factor)
 
 - **Age in queue:** 26.4 days (source date: 2026-06-11, first seen: 2026-05-16)
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 48.9 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 49.0 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -119,9 +119,9 @@ developed.
 
 ### S10. sukar ‘terlupa’ bentang belanjawan 10 tahun berturut-turut. audit afc mendapati fam gagal membentangkan bel...
 
-- **Rank score:** 0.729 (silence=1.00 × importance=0.61 × age_factor)
+- **Rank score:** 0.731 (silence=1.00 × importance=0.61 × age_factor)
 
-- **Age in queue:** 5.6 days (source date: 2026-06-06, first seen: 2026-06-06)
+- **Age in queue:** 5.7 days (source date: 2026-06-06, first seen: 2026-06-06)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -130,9 +130,9 @@ developed.
 
 ### S11. syahredzan bidas bekas bos sprm, syor pertuduhan sebelum selesai siasat. ahli parlimen bangi berkata kenyat...
 
-- **Rank score:** 0.680 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.681 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 21.2 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 21.3 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -141,9 +141,9 @@ developed.
 
 ### S12. sprm siasat 2 individu berkait pengambilalihan ijm. ketua pesuruhjaya sprm abd halim aman berkata siasatan ...
 
-- **Rank score:** 0.679 (silence=0.95 × importance=0.41 × age_factor)
+- **Rank score:** 0.680 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 22.1 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 22.2 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed.
 
 ### S13. ag mahu batal keputusan benarkan majlis peguam cabar dnaa zahid. peguam negara dusuki mokhtar kemuka dua pe...
 
-- **Rank score:** 0.670 (silence=0.98 × importance=0.56 × age_factor)
+- **Rank score:** 0.672 (silence=0.98 × importance=0.56 × age_factor)
 
 - **Age in queue:** 6.3 days (source date: 2026-06-05, first seen: 2026-06-05)
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. pemuda pas bangi lulus usul putus hubungan dengan bersatu. sayap itu juga gesa kepimpinan pas dan pemuda pa...
 
-- **Rank score:** 0.662 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.664 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 5.4 days (source date: 2026-06-06, first seen: 2026-06-06)
+- **Age in queue:** 5.5 days (source date: 2026-06-06, first seen: 2026-06-06)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. warga emas antara ditahan bersama dadah rm57.15 juta. polis syak bekalan dadah mahu diseludup ke negara jir...
 
-- **Rank score:** 0.645 (silence=0.99 × importance=0.55 × age_factor)
+- **Rank score:** 0.646 (silence=0.99 × importance=0.55 × age_factor)
 
-- **Age in queue:** 5.4 days (source date: 2026-06-06, first seen: 2026-06-06)
+- **Age in queue:** 5.5 days (source date: 2026-06-06, first seen: 2026-06-06)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may 18 &mdash; the co...
 
-- **Rank score:** 0.639 (silence=0.86 × importance=0.41 × age_factor)
+- **Rank score:** 0.640 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 24.2 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 24.3 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -196,7 +196,7 @@ developed.
 
 ### S17. pm arah isu kelayakan pharmd lulusan universiti alexandria diselesai segera. kementerian pendidikan tinggi ...
 
-- **Rank score:** 0.621 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.622 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 6.5 days (source date: 2026-06-05, first seen: 2026-06-05)
 
@@ -207,7 +207,7 @@ developed.
 
 ### S18. bentang laporan penuh audit afc, ahli parlimen seru fam. ramkarpal singh berkata orang awam ada hak tahu se...
 
-- **Rank score:** 0.594 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.595 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 5.3 days (source date: 2026-06-06, first seen: 2026-06-06)
 
@@ -218,7 +218,7 @@ developed.
 
 ### S19. gegaran dirasai di sabah susulan gempa bumi kuat di mindanao. met malaysia melaporkan gegaran dirasai di ta...
 
-- **Rank score:** 0.564 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.565 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 3.7 days (source date: 2026-06-08, first seen: 2026-06-08)
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. ahli parlimen cadang badan baharu urus persempadanan pilihan raya. saifuddin abdullah berkata spr tidak waj...
 
-- **Rank score:** 0.562 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.563 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-06-05, first seen: 2026-06-05)
+- **Age in queue:** 6.7 days (source date: 2026-06-05, first seen: 2026-06-05)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -240,7 +240,7 @@ developed.
 
 ### S21. kampus taylor’s university dikosongkan susulan ‘insiden keselamatan’. institusi pengajian tinggi swasta itu...
 
-- **Rank score:** 0.558 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.559 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.5 days (source date: 2026-06-05, first seen: 2026-06-05)
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. fam sangkal dakwaan gagal bentang laporan audit sejak 2016. setiap laporan kewangan yang telah diaudit sent...
 
-- **Rank score:** 0.554 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.555 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-06-06, first seen: 2026-06-05)
+- **Age in queue:** 6.2 days (source date: 2026-06-06, first seen: 2026-06-05)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. reset bukan untuk selamatkan karier politik, kata saifuddin. ahli parlimen indera mahkota berkata gerakan d...
 
-- **Rank score:** 0.549 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.550 (silence=0.97 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-06-05, first seen: 2026-06-05)
+- **Age in queue:** 6.7 days (source date: 2026-06-05, first seen: 2026-06-05)
 
 - **Coverage:** 9 news, 6 social — pattern: _below-expected coverage_
 
@@ -273,7 +273,7 @@ developed.
 
 ### S24. pengisytiharan tak sah ancam ketenteraman awam. pertikaian adat tidak boleh dijadikan alasan mengetepikan p...
 
-- **Rank score:** 0.548 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.549 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 5.6 days (source date: 2026-06-06, first seen: 2026-06-06)
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. sprm kesan penyelewengan rm9 juta program daya kerjaya 2.0. ketua pesuruhjaya sprm abd halim aman berkata 1...
 
-- **Rank score:** 0.525 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.526 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-06-07, first seen: 2026-06-07)
+- **Age in queue:** 4.4 days (source date: 2026-06-07, first seen: 2026-06-07)
 
 - **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
 
