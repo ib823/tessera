@@ -1,61 +1,65 @@
-[32m2026-06-11 01:01:25[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-11 01:01:26[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 4875 topics from state
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-11 01:01:26[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-11T01:01:26.761738+00:00
-[32m2026-06-11 01:01:27[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-11 01:01:29[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-11 01:01:30[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-11 01:01:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-11 01:01:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-11 01:01:34[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 462 events
-[32m2026-06-11 01:01:37[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 125 events
-[32m2026-06-11 01:01:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-11 01:01:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:02:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:02:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:02:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-11 01:02:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:02:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:02:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:03:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:03:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-11 01:03:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-11 01:03:29[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-11 01:03:31[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 9 events
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 604 events from 5 sources
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 604 events
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 509 within 24h (181 pruned)
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Why some workers are embracing ‘job-dropping’. From turning down promotions to stepping back from management, many employees are redefining what career success means." importance=0.46
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Canada moves to ban under-16s from social media, regulate AI. The proposed ‘Digital Safety Act’ requires AI chatbot services to limit harmful content by mandating companies to mitigate risk." importance=0.41
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "JPJ to haul extreme bike modifiers to court under tougher enforcement push. KUALA LUMPUR, June 10 &mdash; Following a rising trend in extreme motorcycle modifications, the Road Transport Departmen..." importance=0.36
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Gold bullion forfeiture challenge linked to ex-army chief’s wife set for July 31. KUALA LUMPUR, June 10 &mdash; The Sessions Court here today allowed the government&rsquo;s application to issue a thir" importance=0.41
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "High Court in KL upholds RM60,000 award against man who shared ex-girlfriend’s intimate photos online. PUTRAJAYA, June 10 &mdash; The Kuala Lumpur High Court today upheld a Tribunal for Anti-Sexual Ha" importance=0.38
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Govt’s RON95, diesel subsidy bill estimated to hit RM3.5b a month, says Finance Ministry. KUALA LUMPUR, June 10 &mdash; The government&rsquo;s subsidy bill for RON95 petrol and diesel is projected to " importance=0.53
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Zahid: Malaysian envoys play key role in strengthening bilateral ties abroad. KUALA LUMPUR, June 10 &mdash; Malaysian heads of mission representing the country abroad shoulder a significant responsi.." importance=0.36
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "High Court orders return of Daim’s daughter’s passport, finds ‘no merit’ in holding it. KUALA LUMPUR, June 10 &mdash; The High Court today granted the daughter of the late former Finance Minister Tun " importance=0.46
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "High Court orders return of Daim’s daughter’s passport, finds ‘no merit’ in holding it. KUALA LUMPUR, June 10 &mdash; The High Court today granted the daughter of the late former Finance Minister Tun " importance=0.36
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Digitally active Malaysians have good financial literacy but security remains elusive for many, study finds. KUALA LUMPUR, June 10 &mdash; Digitally engaged Malaysians have relatively strong financial" importance=0.46
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Bekas pegawai Muhyddin dedah Bersatu sedia penuhi syarat PAS. Marzuki Mohamad menceritakan rentetan peristiwa sebelum kepimpinan PAS membuat keputusan, termasuk perancangan pertemuan antara Muhyiddin " importance=0.31
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "JB Sentral closure: KTMB activates bus transfers amid RTS Link project works from June 11. KUALA LUMPUR, June 10 &mdash; Train services at JB Sentral Station will be temporarily suspended starting tom" importance=0.41
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Ex-CFO of Malaysian condom maker Karex claims trial to insider trading over 150,000 shares. KUALA LUMPUR, June 10 &mdash; A former chief financial officer of Karex Berhad pleaded not guilty in the Ses" importance=0.41
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Waran tangkap Singapura terhadap Jho Low masih berkuat kuasa. Pihak berkuasa Singapura berkata beberapa aset yang dikaitkan dengan 1MDB masih disita di negara itu, termasuk aset yang berkaitan dengan " importance=0.31
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Action against Rohingya settlement ongoing since 2016, says Selangor MB. Amirudin Shari says authorities have carried out repeated enforcement operations, including issuing notices and compounds, and " importance=0.41
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "Jho Low still wanted by Singapore police amid US clemency efforts. Singapore authorities said several 1MDB-linked assets also remain seized in the city-state, including those tied to Low Taek Jho and " importance=0.31
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "Received an LHDN email demanding action in 72 hours? Here’s how to spot if it’s a scam. KUALA LUMPUR, June 10 &mdash; Have you received any emails claiming to be from the Inland Revenue Board of Malay" importance=0.46
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 61), ('government', 37), ('pas', 32), ('india', 32), ('isa', 23), ('minister', 19), ('chinese', 18), ('price', 18), ('election', 13), ('protest', 12)]
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 13 events monitored, 13 flagged
-[32m2026-06-11 01:03:34[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 4877 active topics
-[32m2026-06-11 01:03:35[0m | [1mINFO    [0m | [36moutput              [0m | 797 active issues, 4070 new, 4080 pruned
-[32m2026-06-11 01:03:35[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-11 01:03:46[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=51  hmm=OK/68  cox=RT/797  sarima=RT/797
-[32m2026-06-11 01:03:46[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=797)
-[32m2026-06-11 01:03:46[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 4877 active topics. Top: parliament budget session session opens (score: 0.97)
+[32m2026-06-11 03:13:12[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-11 03:13:12[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-11 03:13:12[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 4877 topics from state
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-11 03:13:13[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-11T03:13:13.662620+00:00
+[32m2026-06-11 03:13:14[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-11 03:13:16[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-11 03:13:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-11 03:13:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-11 03:13:21[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-11 03:13:21[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 462 events
+[32m2026-06-11 03:13:24[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 125 events
+[32m2026-06-11 03:13:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-11 03:13:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-11 03:13:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:13:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:13:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:14:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-11 03:14:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:14:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:14:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:14:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-11 03:14:37[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 3 events
+[32m2026-06-11 03:14:40[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 9 events
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 608 events from 5 sources
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 608 events
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 515 within 24h (162 pruned)
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Pakatan not eyeing post-poll pact with BN in Johor and Negeri Sembilan, says Amanah sec-gen. KUALA LUMPUR, June 11 &mdash; Amanah secretary-general Muhammad Faiz Fadzil has reportedly said Pakatan Har" importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Selangor MB says enforcement on illegal Rohingya flats in Hulu Langat dates back to 2016. SHAH ALAM, June 11 &mdash; Various actions have been taken by government agencies since 2016 to address issues" importance=0.46
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Agong revokes Isa Samad’s ‘Tan Sri’ title. The prime minister’s department says the title was revoked as the former politician is currently serving a prison sentence after he was convicted of an offen" importance=0.36
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Watchdog says MACC asset declaration rule should cover spouses, dependants. Malaysian Corruption Watch says asset declarations by MACC personnel alone may not be enough to address the increasingly com" importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Luas arahan isytihar harta warga SPRM kepada pasangan, tanggungan. Pemerhati rasuah berkata langkah itu perlu disusuli semakan silang dengan rekod hartanah, syarikat, akaun kewangan dan gaya hidup." importance=0.51
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Luas arahan isytihar harta warga SPRM kepada pasangan, tanggungan. Pemerhati rasuah berkata langkah itu perlu disusuli semakan silang dengan rekod hartanah, syarikat, akaun kewangan dan gaya hidup." importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Why some workers are embracing ‘job-dropping’. From turning down promotions to stepping back from management, many employees are redefining what career success means." importance=0.46
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Canada moves to ban under-16s from social media, regulate AI. The proposed ‘Digital Safety Act’ requires AI chatbot services to limit harmful content by mandating companies to mitigate risk." importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "JPJ to haul extreme bike modifiers to court under tougher enforcement push. KUALA LUMPUR, June 10 &mdash; Following a rising trend in extreme motorcycle modifications, the Road Transport Departmen..." importance=0.36
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Gold bullion forfeiture challenge linked to ex-army chief’s wife set for July 31. KUALA LUMPUR, June 10 &mdash; The Sessions Court here today allowed the government&rsquo;s application to issue a thir" importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "High Court in KL upholds RM60,000 award against man who shared ex-girlfriend’s intimate photos online. PUTRAJAYA, June 10 &mdash; The Kuala Lumpur High Court today upheld a Tribunal for Anti-Sexual Ha" importance=0.38
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Govt’s RON95, diesel subsidy bill estimated to hit RM3.5b a month, says Finance Ministry. KUALA LUMPUR, June 10 &mdash; The government&rsquo;s subsidy bill for RON95 petrol and diesel is projected to " importance=0.53
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Zahid: Malaysian envoys play key role in strengthening bilateral ties abroad. KUALA LUMPUR, June 10 &mdash; Malaysian heads of mission representing the country abroad shoulder a significant responsi.." importance=0.36
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "High Court orders return of Daim’s daughter’s passport, finds ‘no merit’ in holding it. KUALA LUMPUR, June 10 &mdash; The High Court today granted the daughter of the late former Finance Minister Tun " importance=0.46
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "High Court orders return of Daim’s daughter’s passport, finds ‘no merit’ in holding it. KUALA LUMPUR, June 10 &mdash; The High Court today granted the daughter of the late former Finance Minister Tun " importance=0.36
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Digitally active Malaysians have good financial literacy but security remains elusive for many, study finds. KUALA LUMPUR, June 10 &mdash; Digitally engaged Malaysians have relatively strong financial" importance=0.46
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "JB Sentral closure: KTMB activates bus transfers amid RTS Link project works from June 11. KUALA LUMPUR, June 10 &mdash; Train services at JB Sentral Station will be temporarily suspended starting tom" importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [high_court_ruling] "Ex-CFO of Malaysian condom maker Karex claims trial to insider trading over 150,000 shares. KUALA LUMPUR, June 10 &mdash; A former chief financial officer of Karex Berhad pleaded not guilty in the Ses" importance=0.41
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'volume_monitor': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 62), ('government', 40), ('pas', 33), ('india', 30), ('isa', 26), ('minister', 21), ('price', 18), ('chinese', 17), ('election', 16), ('unity', 15)]
+/home/runner/work/tessera/tessera/radar/streams/polarization.py:55: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skewness = float(sp_stats.skew(data))
+/home/runner/work/tessera/tessera/radar/streams/polarization.py:56: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  kurtosis = float(sp_stats.kurtosis(data, fisher=True))  # Excess kurtosis
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 4882 active topics
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36moutput              [0m | 806 active issues, 4085 new, 4076 pruned
+[32m2026-06-11 03:14:43[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-11 03:15:03[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=51  hmm=OK/72  cox=RT/806  sarima=RT/806
+[32m2026-06-11 03:15:03[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=806)
+[32m2026-06-11 03:15:03[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 4882 active topics. Top: parliament budget session session opens (score: 0.97)
