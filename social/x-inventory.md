@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-13T12:44:37.074Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-13T14:49:50.858Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -114,6 +114,40 @@ The question is not whether Azam Baki is guilty. It is whether any institution c
 The fix is a permanent independent oversight body for MACC, as UNCAC recommended. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
+```
+
+### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
+
+> ⚡ **Reactive: topic is live in the radar** (gegaran dirasai di sabah susulan gempa bumi kuat di mindanao. met malaysia melaporkan gega). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
+
+**1/6** _(hook — attach image, NO link)_ · 122 chars
+```
+The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
+```
+**2/6** _(fact)_ · 253 chars
+```
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
+```
+**3/6** _(fact)_ · 268 chars
+```
+In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
+```
+**4/6** _(fact)_ · 135 chars
+```
+Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
+```
+**6/6** _(view — ONLY post with the link)_ · 186 chars
+```
+Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
+
+https://thefourthangle.pages.dev/issue/1959
 ```
 
 ### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
@@ -1676,39 +1710,6 @@ Like a squatter settlement where every government promises land titles but nobod
 Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
 
 https://thefourthangle.pages.dev/issue/1960
-```
-
-### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
-
-**1/6** _(hook — attach image, NO link)_ · 122 chars
-```
-The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
-```
-**2/6** _(fact)_ · 253 chars
-```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
-```
-**3/6** _(fact)_ · 268 chars
-```
-In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
-```
-**4/6** _(fact)_ · 135 chars
-```
-Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
-```
-**6/6** _(view — ONLY post with the link)_ · 186 chars
-```
-Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
-
-https://thefourthangle.pages.dev/issue/1959
 ```
 
 ### Issue 1958 — One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
