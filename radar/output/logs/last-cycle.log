@@ -1,62 +1,58 @@
-[32m2026-06-14 01:04:04[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-14 01:04:05[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-14 01:04:05[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5047 topics from state
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-14 01:04:06[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-14T01:04:06.595757+00:00
-[32m2026-06-14 01:04:09[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-14 01:04:10[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-14 01:04:12[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-14 01:04:12[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-14 01:04:15[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-14 01:04:15[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
-[32m2026-06-14 01:04:16[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-06-14 01:04:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-14 01:04:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-14 01:04:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:04:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:04:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:05:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-14 01:05:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:05:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:05:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:05:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 01:05:57[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-14 01:05:59[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 13 events
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 479 events from 5 sources
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 479 events
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 355 within 24h (173 pruned)
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Sabah CM: Accuracy of media reports must not be compromised in AI era. KOTA KINABALU, June 14 &mdash; Media practitioners must continue to uphold the accuracy and authenticity of facts, even..." importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Vegetable wedding favours are the latest trend to take root. Stocked with cucumbers, chillies, okra and more, 'veggie bars' are allowing guests to bring home things they can actually use." importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Local film ‘Chelot’ earns MBR recognition with 5-minute action sequence. Director Adrian Teh's upcoming thriller features an unbroken 1.9km shot filmed with a single camera." importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Ahli politik lama berkhidmat normal di Sarawak, kata penganalisis. Pengundi Sarawak dilihat cenderung kepada kestabilan dan pengalaman di sebalik kritikan terhadap hasrat Richard Riot Jaem bertanding " importance=0.46
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "At this Perlis art studio, painting has become a form of therapy. Founded during the pandemic, Abdul Azim's creative space attracts healthcare workers, educators and families seeking a place to unwind" importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Thousands turn out for anti-racism rally after Belfast unrest. The city saw two nights of disorder after video of Monday night's knife attack went viral across social media platforms." importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Dr Wan Azizah urges women facing emotional distress to seek help through Talian Kasih and HEAL. &nbsp;JOHOR BAHRU, June 13 &mdash; Women facing emotional distress or personal challenges are encouraged" importance=0.46
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Anwar orders swift rollout of RM250,000 aid for Sipitang schools, rejects project delays. &nbsp;SIPITANG, June 13 &mdash;&nbsp;Prime Minister Datuk Seri Anwar Ibrahim today approved an immediate speci" importance=0.43
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Zahid defends Umno’s solo bid in Negeri Sembilan, rejects betrayal claims. KUALA LUMPUR, June 13 &mdash; Umno has rejected allegations of betrayal levelled by Negeri Sembilan caretaker Menteri Be..." importance=0.31
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [government_appointment] "Hadi acting like PN’s supreme leader, says Muhyiddin’s ex-aide. Marzuki Mohamad claims the PN Supreme Council did not discuss the reappointment of Hamzah Zainudin as opposition leader, in effect 'sack" importance=0.31
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Zahid calls on Muslim scholars to turn ideas into policies and solutions for the ummah. &nbsp;KUALA LUMPUR, June 13 &mdash;&nbsp;Deputy Prime Minister Datuk Seri&nbsp;Ahmad Zahid Hamidi has called on " importance=0.31
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Saifuddin Nasution says Poisons Act updates must keep pace with emerging synthetic drugs. JOHOR BAHRU, June 13 &mdash; Authorities and regulators face a growing challenge to fast-track the scheduling " importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Kelantan records highest drug abuse rate in 2025 as border states remain most affected, says AADK. KUALA NERUS, June 13 &mdash; Four states located near or along the country&rsquo;s borders continued " importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Daing Malek nafi kaitan dengan pembelian hartanah USD13 juta didakwa ‘dibiayai Rosmah’. Ahli perniagaan berkata, semua dakwaan tersebar di media sosial itu tidak benar, tidak berasas dan mengelirukan." importance=0.31
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "RM8mil project to repair historic tunnel at former tin mining town. The project, to begin next year, is expected to boost Sungai Lembing's appeal as a tourist destination, says a deputy minister." importance=0.46
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "Ciri-ciri Hadi ‘supreme leader’ terbukti, kata bekas pegawai Muhyiddin. Marzuki Mohamad kata pengumuman Hadi Awang berhubung Hamzah Zainudin dan Wawasan adalah keputusan yang tidak dibuat dalam MT PN." importance=0.31
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [high_court_ruling] "Ghana protests to Canada after player Partey denied visa for World Cup. Ghana’s foreign minister called it 'highhanded and extremely unfair' to reject a visa application by Thomas Partey, who is facin" importance=0.31
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [bill_reading] "‘Dipelawa’ naik komuter, Onn Hafiz tunggu undangan rasmi Kementerian Pengangkutan. MB interim Johor berkata beliau akan lapangkan jadual untuk hadir pelancaran KTM Komuter Selatan Selasa ini susulan '" importance=0.46
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0022 [bill_reading] "Education minister: Schools told to act fast on sexual misconduct complaints. &nbsp;GEORGE TOWN, June 13 &mdash;&nbsp;School administrators, district education offices (PPD), and state education dep.." importance=0.41
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 35), ('india', 30), ('chinese', 24), ('malay', 23), ('government', 20), ('pas', 16), ('prime minister', 15), ('isa', 13), ('indian', 10), ('protest', 9)]
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5053 active topics
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36moutput              [0m | 844 active issues, 4216 new, 4209 pruned
-[32m2026-06-14 01:06:05[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-14 01:06:24[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=54  hmm=OK/77  cox=RT/844  sarima=RT/844
-[32m2026-06-14 01:06:24[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=844)
-[32m2026-06-14 01:06:24[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5053 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-06-14 03:16:35[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-14 03:16:36[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-14 03:16:36[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5053 topics from state
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-14 03:16:37[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-14T03:16:37.598626+00:00
+[32m2026-06-14 03:16:39[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-14 03:16:41[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-14 03:16:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-14 03:16:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-14 03:16:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-14 03:16:44[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
+[32m2026-06-14 03:16:46[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-06-14 03:16:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-14 03:16:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:10[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-14 03:17:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-14 03:17:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 03:17:50[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-06-14 03:17:52[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 2 events
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 474 events from 5 sources
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 474 events
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 365 within 24h (152 pruned)
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Sabah CM: Accuracy of media reports must not be compromised in AI era. KOTA KINABALU, June 14 &mdash; Media practitioners must continue to uphold the accuracy and authenticity of facts, even..." importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Tiada pencemaran selepas ujian air di lokasi dekat tumpahan asid hidroklorik. JAS berkata ujian itu dilakukan di tiga lokasi di kawasan paya bakau sebelum memasuki Sungai Cherating dan mendapati bacaa" importance=0.46
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Vegetable wedding favours are the latest trend to take root. Stocked with cucumbers, chillies, okra and more, 'veggie bars' are allowing guests to bring home things they can actually use." importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Local film ‘Chelot’ earns MBR recognition with 5-minute action sequence. Director Adrian Teh's upcoming thriller features an unbroken 1.9km shot filmed with a single camera." importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Ahli politik lama berkhidmat normal di Sarawak, kata penganalisis. Pengundi Sarawak dilihat cenderung kepada kestabilan dan pengalaman di sebalik kritikan terhadap hasrat Richard Riot Jaem bertanding " importance=0.46
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "At this Perlis art studio, painting has become a form of therapy. Founded during the pandemic, Abdul Azim's creative space attracts healthcare workers, educators and families seeking a place to unwind" importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Thousands turn out for anti-racism rally after Belfast unrest. The city saw two nights of disorder after video of Monday night's knife attack went viral across social media platforms." importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Dr Wan Azizah urges women facing emotional distress to seek help through Talian Kasih and HEAL. &nbsp;JOHOR BAHRU, June 13 &mdash; Women facing emotional distress or personal challenges are encouraged" importance=0.46
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Anwar orders swift rollout of RM250,000 aid for Sipitang schools, rejects project delays. &nbsp;SIPITANG, June 13 &mdash;&nbsp;Prime Minister Datuk Seri Anwar Ibrahim today approved an immediate speci" importance=0.43
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Zahid defends Umno’s solo bid in Negeri Sembilan, rejects betrayal claims. KUALA LUMPUR, June 13 &mdash; Umno has rejected allegations of betrayal levelled by Negeri Sembilan caretaker Menteri Be..." importance=0.31
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [government_appointment] "Hadi acting like PN’s supreme leader, says Muhyiddin’s ex-aide. Marzuki Mohamad claims the PN Supreme Council did not discuss the reappointment of Hamzah Zainudin as opposition leader, in effect 'sack" importance=0.31
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Zahid calls on Muslim scholars to turn ideas into policies and solutions for the ummah. &nbsp;KUALA LUMPUR, June 13 &mdash;&nbsp;Deputy Prime Minister Datuk Seri&nbsp;Ahmad Zahid Hamidi has called on " importance=0.31
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Saifuddin Nasution says Poisons Act updates must keep pace with emerging synthetic drugs. JOHOR BAHRU, June 13 &mdash; Authorities and regulators face a growing challenge to fast-track the scheduling " importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Kelantan records highest drug abuse rate in 2025 as border states remain most affected, says AADK. KUALA NERUS, June 13 &mdash; Four states located near or along the country&rsquo;s borders continued " importance=0.41
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 30), ('minister', 27), ('chinese', 26), ('malay', 23), ('pas', 20), ('government', 19), ('prime minister', 16), ('isa', 11), ('indian', 10), ('election', 9)]
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5054 active topics
+[32m2026-06-14 03:17:54[0m | [1mINFO    [0m | [36moutput              [0m | 840 active issues, 4210 new, 4214 pruned
+[32m2026-06-14 03:17:55[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-14 03:18:13[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=54  hmm=OK/76  cox=RT/840  sarima=RT/840
+[32m2026-06-14 03:18:13[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=840)
+[32m2026-06-14 03:18:13[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5054 active topics. Top: parliament budget session session opens (score: 0.98)
