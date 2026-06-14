@@ -1,61 +1,61 @@
-[32m2026-06-14 18:36:01[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-14 18:36:01[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-14 18:36:01[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5081 topics from state
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-14 18:36:02[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-14T18:36:02.154310+00:00
-[32m2026-06-14 18:36:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-14 18:36:04[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-14 18:36:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-14 18:36:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-14 18:36:09[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-14 18:36:09[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 433 events
-[32m2026-06-14 18:36:10[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-06-14 18:36:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-14 18:36:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:36:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:36:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:36:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-14 18:36:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-14 18:36:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:37:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:37:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:37:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:37:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-14 18:37:22[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-14 18:37:24[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 475 events from 5 sources
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 475 events
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 330 within 24h (145 pruned)
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Drone classrooms could be key to Malaysia’s STEM push, says science minister. TANJONG MALIM, June 14 &mdash; Drone technology has unique advantages that can attract students to pursue studies in Sci.." importance=0.46
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Jakim confirms fake halal cert in chicken seizure at Bukit Kayu Hitam. BUKIT KAYU HITAM, June 14 &mdash; The Malaysian Border Control and Protection Agency (AKPS) seized 26,040 kilogrammes of..." importance=0.51
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "PTPTN allocates RM3b for higher education financing this year. TASEK GELUGOR, June 14 &mdash; The National Higher Education Fund Corporation (PTPTN) has allocated about RM3 billion th..." importance=0.61
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "See-To and J-Kom chief trade blows and legal challenges. Eric See-To challenges Hisyamuddin Ghazali to sue him in court, after Hisyamuddin said he would send Eric See-To a letter of demand over accusa" importance=0.41
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Drones more effective than boat patrols along Sungai Golok, say Kelantan police. KOTA BHARU, June 14 &mdash; The use of drones is more effective than conventional boat patrols in curbing smuggling act" importance=0.41
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Court ruling clears way for Highland Towers demolition before year end, says MPAJ. KUALA LUMPUR, June 14 &mdash; The remaining blocks of the Highland Towers condominium in Hulu Kelang are expected to " importance=0.36
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Obama says Trump’s Iran deal will not improve on his 2015 pact. The former president suggests it is better to negotiate a deal that falls short of all of Washington's requirements in order to avoid an" importance=0.41
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Zahid says new Malay parties must unite, not divide. KUALA LUMPUR, June 14 &mdash; Deputy Prime Minister Datuk Seri Ahmad Zahid Hamidi said new Malay-based political parties..." importance=0.36
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Rosmah denies role in alleged US$13m property deal, lodges police report over online claims. KUALA LUMPUR, June 14 &mdash; Datin Seri Rosmah Mansor has denied allegations linking her and her family to" importance=0.31
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Job seekers line street, drawn by factory’s RM3,500 starting salary. Melaka executive councillor Ngwe Hee Sem says an electronics factory in Batu Berendam is seeking to fill 300 to 500 vacancies for p" importance=0.48
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Allianz said to lead bidding for HSBC’s Singapore insurance unit. HSBC is seeking a valuation of as much as US$2 billion for the business and is finalising details of a transaction that could be annou" importance=0.46
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "UK anti-Islam activist Robinson briefly detained under terrorism laws. Tommy Robinson was detained at Heathrow Airport after a week of posting heavily online about racist and anti-immigrant riots in N" importance=0.46
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "26 tonnes of frozen chicken seized over fake halal certs. The border protection agency says the details on the halal certificate submitted did not match the information in the system." importance=0.46
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Sabah CM: Accuracy of media reports must not be compromised in AI era. KOTA KINABALU, June 14 &mdash; Media practitioners must continue to uphold the accuracy and authenticity of facts, even..." importance=0.41
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [new_act] "Akta Mara baharu dibentang di Parlimen tahun ini, kata Asyraf. Pengerusi Mara itu berkata kertas dasar berkaitan pindaan akta itu sudah diluluskan Jemaah Menteri." importance=0.56
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [amendment_act] "Mara Act amendments to be tabled in Parliament this year. Mara chairman Asyraf Wajdi Dusuki says he has been instructed by deputy prime minister Ahmad Zahid Hamidi to ensure that the process goes acco" importance=0.42
-[32m2026-06-14 18:37:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [high_court_ruling] "Mara Act amendments to be tabled in Parliament this year. Mara chairman Asyraf Wajdi Dusuki says he has been instructed by deputy prime minister Ahmad Zahid Hamidi to ensure that the process goes acco" importance=0.36
-[32m2026-06-14 18:37:27[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-14 18:37:27[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 36), ('malay', 29), ('india', 28), ('government', 23), ('pas', 21), ('chinese', 20), ('prime minister', 19), ('isa', 11), ('indian', 10), ('race', 9)]
-[32m2026-06-14 18:37:27[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
-[32m2026-06-14 18:37:27[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5081 active topics
-[32m2026-06-14 18:37:27[0m | [1mINFO    [0m | [36moutput              [0m | 862 active issues, 4219 new, 4219 pruned
-[32m2026-06-14 18:37:27[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-14 18:37:44[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=55  hmm=OK/78  cox=RT/862  sarima=RT/862
-[32m2026-06-14 18:37:44[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=862)
-[32m2026-06-14 18:37:44[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5081 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-06-14 20:33:21[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-14 20:33:22[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-14 20:33:22[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5081 topics from state
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-14 20:33:23[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-14T20:33:23.099917+00:00
+[32m2026-06-14 20:33:29[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-14 20:33:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-14 20:33:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-14 20:33:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-14 20:33:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-14 20:33:36[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 433 events
+[32m2026-06-14 20:33:37[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-06-14 20:33:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-14 20:33:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:33:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:34:10[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:34:18[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-14 20:34:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:34:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:34:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:34:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-14 20:34:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-14 20:34:52[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-06-14 20:34:53[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 475 events from 5 sources
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 475 events
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 341 within 24h (145 pruned)
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Drone classrooms could be key to Malaysia’s STEM push, says science minister. TANJONG MALIM, June 14 &mdash; Drone technology has unique advantages that can attract students to pursue studies in Sci.." importance=0.46
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Jakim confirms fake halal cert in chicken seizure at Bukit Kayu Hitam. BUKIT KAYU HITAM, June 14 &mdash; The Malaysian Border Control and Protection Agency (AKPS) seized 26,040 kilogrammes of..." importance=0.51
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "PTPTN allocates RM3b for higher education financing this year. TASEK GELUGOR, June 14 &mdash; The National Higher Education Fund Corporation (PTPTN) has allocated about RM3 billion th..." importance=0.61
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "See-To and J-Kom chief trade blows and legal challenges. Eric See-To challenges Hisyamuddin Ghazali to sue him in court, after Hisyamuddin said he would send Eric See-To a letter of demand over accusa" importance=0.41
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Drones more effective than boat patrols along Sungai Golok, say Kelantan police. KOTA BHARU, June 14 &mdash; The use of drones is more effective than conventional boat patrols in curbing smuggling act" importance=0.41
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Court ruling clears way for Highland Towers demolition before year end, says MPAJ. KUALA LUMPUR, June 14 &mdash; The remaining blocks of the Highland Towers condominium in Hulu Kelang are expected to " importance=0.36
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Obama says Trump’s Iran deal will not improve on his 2015 pact. The former president suggests it is better to negotiate a deal that falls short of all of Washington's requirements in order to avoid an" importance=0.41
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Zahid says new Malay parties must unite, not divide. KUALA LUMPUR, June 14 &mdash; Deputy Prime Minister Datuk Seri Ahmad Zahid Hamidi said new Malay-based political parties..." importance=0.36
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Rosmah denies role in alleged US$13m property deal, lodges police report over online claims. KUALA LUMPUR, June 14 &mdash; Datin Seri Rosmah Mansor has denied allegations linking her and her family to" importance=0.31
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Job seekers line street, drawn by factory’s RM3,500 starting salary. Melaka executive councillor Ngwe Hee Sem says an electronics factory in Batu Berendam is seeking to fill 300 to 500 vacancies for p" importance=0.48
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Allianz said to lead bidding for HSBC’s Singapore insurance unit. HSBC is seeking a valuation of as much as US$2 billion for the business and is finalising details of a transaction that could be annou" importance=0.46
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "UK anti-Islam activist Robinson briefly detained under terrorism laws. Tommy Robinson was detained at Heathrow Airport after a week of posting heavily online about racist and anti-immigrant riots in N" importance=0.46
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "26 tonnes of frozen chicken seized over fake halal certs. The border protection agency says the details on the halal certificate submitted did not match the information in the system." importance=0.46
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Sabah CM: Accuracy of media reports must not be compromised in AI era. KOTA KINABALU, June 14 &mdash; Media practitioners must continue to uphold the accuracy and authenticity of facts, even..." importance=0.41
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [new_act] "Akta Mara baharu dibentang di Parlimen tahun ini, kata Asyraf. Pengerusi Mara itu berkata kertas dasar berkaitan pindaan akta itu sudah diluluskan Jemaah Menteri." importance=0.56
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [amendment_act] "Mara Act amendments to be tabled in Parliament this year. Mara chairman Asyraf Wajdi Dusuki says he has been instructed by deputy prime minister Ahmad Zahid Hamidi to ensure that the process goes acco" importance=0.42
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [high_court_ruling] "Mara Act amendments to be tabled in Parliament this year. Mara chairman Asyraf Wajdi Dusuki says he has been instructed by deputy prime minister Ahmad Zahid Hamidi to ensure that the process goes acco" importance=0.36
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'narrative_fragmentation': 'ok', 'volume_monitor': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 35), ('malay', 29), ('india', 28), ('pas', 21), ('government', 20), ('chinese', 19), ('prime minister', 18), ('race', 11), ('isa', 11), ('protest', 10)]
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5080 active topics
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36moutput              [0m | 859 active issues, 4219 new, 4222 pruned
+[32m2026-06-14 20:34:57[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-14 20:35:18[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=55  hmm=OK/78  cox=RT/859  sarima=RT/859
+[32m2026-06-14 20:35:18[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=859)
+[32m2026-06-14 20:35:19[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5080 active topics. Top: parliament budget session session opens (score: 0.98)
