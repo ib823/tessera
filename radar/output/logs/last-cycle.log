@@ -1,67 +1,56 @@
-[32m2026-06-17 22:38:01[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-17 22:38:01[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-17 22:38:01[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5249 topics from state
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-17 22:38:02[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-17T22:38:02.428344+00:00
-[32m2026-06-17 22:38:09[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-17 22:38:12[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-17 22:38:14[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-17 22:38:15[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-17 22:38:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-17 22:38:18[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
-[32m2026-06-17 22:38:20[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-06-17 22:38:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-17 22:38:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:38:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:38:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:39:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-17 22:39:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:39:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:39:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-17 22:39:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-17 22:39:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:39:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-17 22:39:56[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-17 22:39:59[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 18 events
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 490 events from 5 sources
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 490 events
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 590 within 24h (126 pruned)
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Iran to dilute its enriched uranium under accord with US to end Middle East war. Washington has pledged to waive some sanctions and help release a US$300 billion reconstruction fund for Iran if a fina" importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Tehran says considering plan for Iran’s and US presidents to sign deal. Tehran previously stated that US vice president JD Vance and Iran's parliament speaker Mohammad Bagher Ghalibaf would represent " importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Ronaldo fails to shine as DR Congo earn historic World Cup point. The Portuguese forward struggled to make an impact in the 1-1 draw, unlike rival Lionel Messi’s hattrick display against Algeria." importance=0.41
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "‘Not chicken feed’: 1MDB judge says Najib’s reaction to US$681m deposits not that of a reasonable man. KUALA LUMPUR, June 17 &mdash; The US$681 million (or RM2.08 billion) that then-prime minister Dat" importance=0.61
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "‘Not chicken feed’: 1MDB judge says Najib’s reaction to US$681m deposits not that of a reasonable man. KUALA LUMPUR, June 17 &mdash; The US$681 million (or RM2.08 billion) that then-prime minister Dat" importance=0.51
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Nanta confirms he will remain politically active, laughs off speculation on next move. KUCHING, June 17 &mdash; Gabungan Parti Sarawak (GPS) secretary-general Datuk Seri Alexander Nanta Linggi remaine" importance=0.41
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Kelantan police say petrol smuggling at Malaysia‑Thailand border remains low, controlled despite West Asia tensions. KOTA BHARU, June 17 &mdash; Petrol smuggling activities along the Malaysia-Thailand" importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Parti baharu dah daftar cuma tukar nama, kata Hamzah. Ahli Parlimen Larut berkata tak berbangkit isu Parti Wawasan Negara (Wawasan) tidak berdaftar dengan JPPM." importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Mesyuarat HQ PAS tak bincang singkir Bersatu, kata Rosol. Wakil rakyat ditemui bercakap tentang kempen PN menghadapi PRN Johor dan Negeri Sembilan, kedudukan ketua pembangkang, dan persiapan untuk Par" importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Spanish ex-PM Zapatero defends ‘honesty’ after graft hearing. Former Spanish prime minister Jose Luis Rodriguez Zapatero was placed under investigation for alleged influence peddling in connection wit" importance=0.36
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Malaysian Army chief orders immediate halt to grenade drills after deadly accident in Kedah. KUALA LUMPUR, June 17 &mdash; The Malaysian Army has halted all grenade technique exercises with immediate " importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "PRN Johor penentu naratif menuju PRU16. Ahli Parlimen Segamat, Yuneswaran Ramaraj, kata retorik tanpa pelaksanaan semakin hilang nilai ketika era kerja, keberhasilan dan penyelesaian sedang ambil temp" importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "BBC eyes compulsory redundancies in cost-cutting drive. The broadcaster revealed earlier this year that it planned to save £500 million from its roughly £5 billion annual budget over the next three ye" importance=0.51
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Hamzah among opposition MPs seen at PAS HQ for meeting. The gathering comes amid heightened political activity within PN, which was sparked by PAS cutting ties with Bersatu last week" importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Works minister says rising construction material costs still manageable, contractors able to absorb increases. KUCHING, June 17 &mdash; The increase in the cost of construction materials following the" importance=0.41
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Nanta silent on political future, but says he will remain active. The GPS secretary-general refuses to confirm whether he will defend his Kapit parliamentary seat or transition to state politics." importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [high_court_ruling] "PAS bersidang ketika nasib Bersatu jadi persoalan. Seorang pemimpin tolak dakwaan mesyuarat PAS akan menentukan kedudukan Bersatu dalam PN, memandangkan hal itu perlu keputusan bersama parti komponen." importance=0.31
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [bill_reading] "Trump threatens ‘dropping bombs’ if Iran doesn’t ‘behave’. US President Donald Trump said he was ready to resume military action if Tehran did not abide by its obligations under the US-Iran agreement." importance=0.41
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0022 [bill_reading] "Op Drain: MACC nabs 13 including govt agency director over ‘contract cartel’ scandal. IPOH, June 17 &mdash; The Malaysian Anti-Corruption Commission (MACC) has secured remand orders for 13 individuals" importance=0.51
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0023 [high_court_ruling] "Op Drain: MACC nabs 13 including govt agency director over ‘contract cartel’ scandal. IPOH, June 17 &mdash; The Malaysian Anti-Corruption Commission (MACC) has secured remand orders for 13 individuals" importance=0.41
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0024 [bill_reading] "Under-fire UK PM Starmer makes offer to potential rival Burnham. Andy Burnham is widely predicted to oust UK Prime Minister Keir Starmer if he wins a crunch by-election for the parliamentary seat of M" importance=0.46
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0025 [bill_reading] "Judge: Najib’s lack of remorse, role in siphoning 1MDB money were factors when deciding his jail, RM13b sentence. KUALA LUMPUR, June 16 &mdash;&nbsp;How did the High Court decide on how many years to " importance=0.48
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0026 [high_court_ruling] "Judge: Najib’s lack of remorse, role in siphoning 1MDB money were factors when deciding his jail, RM13b sentence. KUALA LUMPUR, June 16 &mdash;&nbsp;How did the High Court decide on how many years to " importance=0.38
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 38), ('malay', 37), ('pas', 33), ('india', 30), ('prime minister', 23), ('chinese', 22), ('government', 17), ('isa', 15), ('bersatu', 13), ('price', 12)]
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 23 events monitored, 23 flagged
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5254 active topics
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36moutput              [0m | 856 active issues, 4400 new, 4398 pruned
-[32m2026-06-17 22:40:02[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-17 22:40:24[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=58  hmm=OK/76  cox=RT/856  sarima=RT/856
-[32m2026-06-17 22:40:24[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=856)
-[32m2026-06-17 22:40:25[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5254 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-06-18 01:03:36[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-18 01:03:36[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-18 01:03:36[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5254 topics from state
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-18 01:03:37[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-18T01:03:37.207123+00:00
+[32m2026-06-18 01:03:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-18 01:03:45[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-18 01:03:46[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-18 01:03:46[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-18 01:03:49[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-18 01:03:49[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
+[32m2026-06-18 01:03:50[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-06-18 01:03:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-18 01:04:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:04:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:04:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:04:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:04:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:04:59[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:05:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:05:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:05:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:05:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-18 01:05:47[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-06-18 01:05:54[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 2 events
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 479 events from 5 sources
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 479 events
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 572 within 24h (160 pruned)
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Iran to dilute its enriched uranium under accord with US to end Middle East war. Washington has pledged to waive some sanctions and help release a US$300 billion reconstruction fund for Iran if a fina" importance=0.46
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Tehran says considering plan for Iran’s and US presidents to sign deal. Tehran previously stated that US vice president JD Vance and Iran's parliament speaker Mohammad Bagher Ghalibaf would represent " importance=0.46
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Ronaldo fails to shine as DR Congo earn historic World Cup point. The Portuguese forward struggled to make an impact in the 1-1 draw, unlike rival Lionel Messi’s hattrick display against Algeria." importance=0.41
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "‘Not chicken feed’: 1MDB judge says Najib’s reaction to US$681m deposits not that of a reasonable man. KUALA LUMPUR, June 17 &mdash; The US$681 million (or RM2.08 billion) that then-prime minister Dat" importance=0.61
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "‘Not chicken feed’: 1MDB judge says Najib’s reaction to US$681m deposits not that of a reasonable man. KUALA LUMPUR, June 17 &mdash; The US$681 million (or RM2.08 billion) that then-prime minister Dat" importance=0.51
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Nanta confirms he will remain politically active, laughs off speculation on next move. KUCHING, June 17 &mdash; Gabungan Parti Sarawak (GPS) secretary-general Datuk Seri Alexander Nanta Linggi remaine" importance=0.41
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Kelantan police say petrol smuggling at Malaysia‑Thailand border remains low, controlled despite West Asia tensions. KOTA BHARU, June 17 &mdash; Petrol smuggling activities along the Malaysia-Thailand" importance=0.46
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Parti baharu dah daftar cuma tukar nama, kata Hamzah. Ahli Parlimen Larut berkata tak berbangkit isu Parti Wawasan Negara (Wawasan) tidak berdaftar dengan JPPM." importance=0.46
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Malaysian Army chief orders immediate halt to grenade drills after deadly accident in Kedah. KUALA LUMPUR, June 17 &mdash; The Malaysian Army has halted all grenade technique exercises with immediate " importance=0.46
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Works minister says rising construction material costs still manageable, contractors able to absorb increases. KUCHING, June 17 &mdash; The increase in the cost of construction materials following the" importance=0.41
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Op Drain: MACC nabs 13 including govt agency director over ‘contract cartel’ scandal. IPOH, June 17 &mdash; The Malaysian Anti-Corruption Commission (MACC) has secured remand orders for 13 individuals" importance=0.51
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Op Drain: MACC nabs 13 including govt agency director over ‘contract cartel’ scandal. IPOH, June 17 &mdash; The Malaysian Anti-Corruption Commission (MACC) has secured remand orders for 13 individuals" importance=0.41
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 42), ('minister', 35), ('india', 25), ('pas', 23), ('prime minister', 22), ('chinese', 21), ('government', 17), ('isa', 15), ('price', 11), ('election', 10)]
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 15 events monitored, 15 flagged
+[32m2026-06-18 01:05:59[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5254 active topics
+[32m2026-06-18 01:06:00[0m | [1mINFO    [0m | [36moutput              [0m | 843 active issues, 4398 new, 4411 pruned
+[32m2026-06-18 01:06:00[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-18 01:06:16[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=58  hmm=OK/73  cox=RT/843  sarima=RT/843
+[32m2026-06-18 01:06:16[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=843)
+[32m2026-06-18 01:06:16[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5254 active topics. Top: parliament budget session session opens (score: 0.98)
