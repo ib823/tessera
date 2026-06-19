@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-06-19 05:50 UTC. Queue size: 839. Picks shown: 25.
+Scan: 2026-06-19 08:03 UTC. Queue size: 834. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -20,11 +20,11 @@ developed.
 
 ### S1. budget 2027 presentation
 
-- **Rank score:** 1.079 (silence=1.00 × importance=0.54 × age_factor)
+- **Rank score:** 1.080 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 33.8 days (source date: 2026-06-19, first seen: 2026-05-16)
+- **Age in queue:** 33.9 days (source date: 2026-06-19, first seen: 2026-05-16)
 
-- **Coverage:** 0 news, 1 social — pattern: _social only — no news_
+- **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
 
 - **Dimensions at risk:** economic, political
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.024 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 33.8 days (source date: 2026-06-19, first seen: 2026-05-16)
+- **Age in queue:** 33.9 days (source date: 2026-06-19, first seen: 2026-05-16)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -42,9 +42,9 @@ developed.
 
 ### S3. sprm akan rayu keputusan mahkamah tolak perintah larangan akses rm548 juta. sprm kata notis rayuan akan dif...
 
-- **Rank score:** 1.020 (silence=0.99 × importance=0.54 × age_factor)
+- **Rank score:** 1.022 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 27.7 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 27.8 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 45.4 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 45.5 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 50.4 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 50.5 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 79.3 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 79.4 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.922 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 33.8 days (source date: 2026-06-19, first seen: 2026-05-16)
+- **Age in queue:** 33.9 days (source date: 2026-06-19, first seen: 2026-05-16)
 
 - **Coverage:** 3 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 45.3 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 45.4 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 56.4 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 56.5 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -119,9 +119,9 @@ developed.
 
 ### S10. syahredzan bidas bekas bos sprm, syor pertuduhan sebelum selesai siasat. ahli parlimen bangi berkata kenyat...
 
-- **Rank score:** 0.779 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.780 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 28.7 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 28.8 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -130,9 +130,9 @@ developed.
 
 ### S11. sprm siasat 2 individu berkait pengambilalihan ijm. ketua pesuruhjaya sprm abd halim aman berkata siasatan ...
 
-- **Rank score:** 0.776 (silence=0.95 × importance=0.41 × age_factor)
+- **Rank score:** 0.777 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 29.5 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 29.6 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -141,9 +141,9 @@ developed.
 
 ### S12. bekas hakim mahkamah persekutuan dilantik pengerusi majlis media malaysia. majlis berkata pelantikan nallin...
 
-- **Rank score:** 0.749 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.751 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 4.0 days (source date: 2026-06-15, first seen: 2026-06-15)
+- **Age in queue:** 4.1 days (source date: 2026-06-15, first seen: 2026-06-15)
 
 - **Coverage:** 6 news, 7 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 31.7 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 31.8 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. akta mara baharu dibentang di parlimen tahun ini, kata asyraf. pengerusi mara itu berkata kertas dasar berk...
 
-- **Rank score:** 0.650 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.651 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 4.9 days (source date: 2026-06-14, first seen: 2026-06-14)
+- **Age in queue:** 5.0 days (source date: 2026-06-14, first seen: 2026-06-14)
 
 - **Coverage:** 8 news, 1 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. ketua pembangkang dipilih ahli parlimen, bukan pn. ahli parlimen indera mahkota saifuddin abdullah dan timb...
 
-- **Rank score:** 0.596 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.598 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.0 days (source date: 2026-06-14, first seen: 2026-06-14)
+- **Age in queue:** 5.1 days (source date: 2026-06-14, first seen: 2026-06-14)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. smk kuala perlis sekolah pertama terima pengiktirafan google for education. pengiktirafan itu susulan pelak...
 
-- **Rank score:** 0.570 (silence=1.00 × importance=0.47 × age_factor)
+- **Rank score:** 0.571 (silence=1.00 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-06-12, first seen: 2026-06-12)
+- **Age in queue:** 7.0 days (source date: 2026-06-12, first seen: 2026-06-12)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. mahkamah cyprus perintah sita vila mewah jho low. mahkamah daerah nicosia keluar susulan permohonan bersama...
 
-- **Rank score:** 0.566 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.567 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 7.7 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 7.8 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -207,90 +207,90 @@ developed.
 
 ### S18. fahmi kesal lee letak jawatan mpp. ketua penerangan pkr berkata, ahli parlimen pj sepatutnya guna mpp sebag...
 
-- **Rank score:** 0.565 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.566 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-06-12, first seen: 2026-06-12)
+- **Age in queue:** 6.9 days (source date: 2026-06-12, first seen: 2026-06-12)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S19. tertangguh 3 tahun, bicara kes bunuh nhaveen disambung. mahkamah persekutuan batal rayuan pendakwaan terhad...
+### S19. thomas gagal heret idrus dalam saman bekas ahli parlimen. hakim berkata kerajaan akan turut bertanggungjawa...
 
-- **Rank score:** 0.564 (silence=1.00 × importance=0.56 × age_factor)
+- **Rank score:** 0.565 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 0.0 days (source date: 2026-06-19, first seen: 2026-06-19)
-
-- **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S20. thomas gagal heret idrus dalam saman bekas ahli parlimen. hakim berkata kerajaan akan turut bertanggungjawa...
-
-- **Rank score:** 0.564 (silence=0.98 × importance=0.47 × age_factor)
-
-- **Age in queue:** 6.9 days (source date: 2026-06-12, first seen: 2026-06-12)
+- **Age in queue:** 7.0 days (source date: 2026-06-12, first seen: 2026-06-12)
 
 - **Coverage:** 5 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S21. ahli parlimen pj letak jawatan pimpinan pusat pkr. lee chean chung berkata beliau kekal sebagai ahli pkr da...
+### S20. tertangguh 3 tahun, bicara kes bunuh nhaveen disambung. mahkamah persekutuan batal rayuan pendakwaan terhad...
 
-- **Rank score:** 0.559 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.564 (silence=1.00 × importance=0.56 × age_factor)
 
-- **Age in queue:** 7.1 days (source date: 2026-06-12, first seen: 2026-06-12)
+- **Age in queue:** 0.1 days (source date: 2026-06-19, first seen: 2026-06-19)
 
-- **Coverage:** 8 news, 5 social — pattern: _below-expected coverage_
+- **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
-- **Dimensions at risk:** political
+- **Dimensions at risk:** legal, political
 
 
-### S22. ulama pas sehati sejiwa, nafi ada 2 kem. ketua dewan ulama ahmad yahaya nafi berlaku perpecahan dalam kalan...
+### S21. ulama pas sehati sejiwa, nafi ada 2 kem. ketua dewan ulama ahmad yahaya nafi berlaku perpecahan dalam kalan...
 
-- **Rank score:** 0.554 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.555 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.2 days (source date: 2026-06-13, first seen: 2026-06-13)
+- **Age in queue:** 6.3 days (source date: 2026-06-13, first seen: 2026-06-13)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political, religious
 
 
-### S23. polis tukar taktik susulan sindiket ‘intip’ jadual rondaan sempadan. polis kelantan berkata kumpulan sindik...
+### S22. polis tukar taktik susulan sindiket ‘intip’ jadual rondaan sempadan. polis kelantan berkata kumpulan sindik...
 
-- **Rank score:** 0.552 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.554 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.9 days (source date: 2026-06-13, first seen: 2026-06-13)
+- **Age in queue:** 6.0 days (source date: 2026-06-13, first seen: 2026-06-13)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S24. 19 ditahan di mexico city susulan protes pembukaan piala dunia. seramai 11 pegawai polis cedera ketika demo...
+### S23. 19 ditahan di mexico city susulan protes pembukaan piala dunia. seramai 11 pegawai polis cedera ketika demo...
 
-- **Rank score:** 0.550 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.551 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-06-13, first seen: 2026-06-13)
+- **Age in queue:** 6.1 days (source date: 2026-06-13, first seen: 2026-06-13)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S25. tiada pencemaran selepas ujian air di lokasi dekat tumpahan asid hidroklorik. jas berkata ujian itu dilakuk...
+### S24. tiada pencemaran selepas ujian air di lokasi dekat tumpahan asid hidroklorik. jas berkata ujian itu dilakuk...
 
-- **Rank score:** 0.541 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.542 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-06-14, first seen: 2026-06-14)
+- **Age in queue:** 5.2 days (source date: 2026-06-14, first seen: 2026-06-14)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
+
+
+### S25. disyaki dera amah, 2 pasangan suami isteri direman. polis berkata empat suspek berusia 30 hingga 34 tahun d...
+
+- **Rank score:** 0.535 (silence=0.98 × importance=0.47 × age_factor)
+
+- **Age in queue:** 5.1 days (source date: 2026-06-14, first seen: 2026-06-14)
+
+- **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
 
 
 ---
