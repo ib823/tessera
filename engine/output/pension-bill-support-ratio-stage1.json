@@ -1,0 +1,65 @@
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia argues over a 65% debt ceiling. The civil-service pension bill, heading for RM120 billion a year, answers to no ceiling at all.",
+      "sub": "Pensions are a promise to nearly a million retirees, paid from each year's revenue, and counted against no cap.",
+      "sources": ["MOF Fiscal Outlook 2026 (retirement charges); govt 2040 pension projection ~RM120B; statutory debt ceiling 65% of GDP"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "The 2026 pension bill is set at RM42.8 billion, the fourth-largest item in federal spending, up from about RM11 billion in 2010.",
+      "s": "On the government's own projection it reaches roughly RM120 billion a year by 2040.",
+      "d": "The 2026 pension bill is set at RM42.8 billion, the fourth-largest item in federal spending, up from about RM11 billion in 2010. On the government's own projection it reaches roughly RM120 billion a year by 2040.",
+      "sources": ["MOF Fiscal Outlook 2026 (retirement charges RM42.8B 2026, RM40.06B 2025); The Edge (Budget 2026); govt projection ~RM120B by 2040 (Malay Mail/Dewan Rakyat)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "The debt everyone watches is capped at 65% of GDP. The pension promise behind it, put between RM483 billion and RM1.3 trillion, has no cap and no fund.",
+      "s": "No single audited figure exists; the estimates range that far because the liability was never fully provisioned.",
+      "d": "The debt everyone watches is capped at 65% of GDP. The pension promise behind it, put between RM483 billion and RM1.3 trillion, has no cap and no fund. No single audited figure exists; the estimates range that far because the liability was never fully provisioned.",
+      "sources": ["Unfunded actuarial liability estimates: RM483B (2017) / ~RM800B / RM1.3T; research doc Section C contradiction register; statutory debt ceiling 65%"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "h": "In 2022 about eight working-age Malaysians stood behind each person over 65. By 2040 it is fewer than five.",
+      "s": "And 3.45 million informal workers will reach old age largely outside the EPF, the savings system meant to catch them.",
+      "d": "In 2022 about eight working-age Malaysians stood behind each person over 65. By 2040 it is fewer than five. And 3.45 million informal workers will reach old age largely outside the EPF, the savings system meant to catch them.",
+      "sources": ["DOSM Population Projections (old-age dependency 12.6 in 2022 to 21.7 by 2040; support ratio ~7.9 to ~4.6); DOSM Informal Sector Survey 2023 (3.45M informal workers)"]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "The ceiling caps the debt that is easy to count. The pension promise is harder to count, impossible to recall, and far larger.",
+      "sources": ["Editorial synthesis"]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "Like watching the credit-card limit while a far larger mortgage, signed decades ago, falls due a little more every year.",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "A pension is an amanah: promised in good faith, owed in full. The honest question is not whether to pay it, but whether a shrinking workforce was ever told what it had been signed up to fund.",
+      "sources": []
+    }
+  ],
+  "sources": "MOF Fiscal Outlook and Revenue Estimates 2026; The Edge (Budget 2026 emoluments); Malay Mail (pension projection); BERNAMA (SSPA Phase 2); DOSM Population Projections 2020-2060; DOSM Informal Sector Survey 2023; Dewan Rakyat Hansard (pension series); KWAP; docs/research/malaysia-underreported-data-forecasts.md (Sections B.1, B.4, C). See engine/briefs/pension-bill-support-ratio.md.",
+  "confidence": "High on annual pension spend (RM42.8B 2026, RM40.06B 2025) and on the ageing series (7% in 2021, 14% by ~2048). High on the government's ~RM120B-by-2040 projection. Medium on the unfunded actuarial liability, deliberately given as a range (RM483B-RM1.3T) because no single audited figure exists. Medium on the exact 2040 support ratio pending the DOSM projection PDF.",
+  "lenses_used": ["Economic", "Governance", "Social"],
+  "lenses_applicable_but_unused": ["Political", "Historical"],
+  "needs_verification": [
+    "Retirement charges RM42.8B (2026) and RM40.06B (2025) against the MOF Fiscal Outlook 2026 table.",
+    "Government projection of ~RM120B/yr pension spend by 2040 (and ~RM46.4B by 2030) against the primary parliamentary/MOF source.",
+    "Support ratio ~7.9 (2022) to ~4.6 (2040) and old-age dependency 12.6 to 21.7 against the DOSM Population Projections; confirm the working-age definition (65+ per 100 aged 20-59).",
+    "3.45 million informal workers (2023) against the DOSM Informal Sector Survey.",
+    "Latest pensioner count (nearing 1,000,000 in 2025) against a Dewan Rakyat answer or KWAP."
+  ],
+  "source_notes": "CRITICAL distinction maintained: annual pension SPEND (RM42.8B 2026, ~RM120B 2040) is a flow; the RM483B-RM1.3T is the actuarial liability STOCK. Some secondary coverage conflates them (e.g. describing 'liabilities ... RM46.36B by 2030', which is actually the 2030 annual-spend projection). Cards never merge flow and stock. The unfunded liability is reported as a range, never a single number. Did not reuse the 'emoluments+pensions ~45% of opex' framing to avoid colliding with existing issues on the salary share.",
+  "verification_notes": "DEEP-RESEARCH REVIEWERS (Gemini Stage 2 / GPT-5.5 Stage 3): independently re-derive each figure from primary sources (MOF Fiscal Outlook 2026; DOSM Population Projections; DOSM Informal Sector Survey; Dewan Rakyat Hansard). Triangulate especially: (a) the RM42.8B 2026 / RM40.06B 2025 retirement charges and whether 'fourth-largest spending item' is accurate; (b) the ~RM120B-by-2040 projection and its provenance; (c) the support ratio 7.9->4.6 and old-age dependency 12.6->21.7 with the exact definition; (d) the RM483B-RM1.3T liability range and whether any audited figure now exists; (e) the 3.45M informal-worker figure and EPF coverage. FLAG any value where your research concludes differently, with the primary source and the corrected number. Watch specifically for the flow-vs-stock conflation noted above and confirm the cards keep them distinct."
+}
