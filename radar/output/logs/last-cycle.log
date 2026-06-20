@@ -1,56 +1,55 @@
-[32m2026-06-20 00:59:15[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-20 00:59:15[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-20 00:59:15[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5351 topics from state
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-20 00:59:16[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-20T00:59:16.878091+00:00
-[32m2026-06-20 00:59:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-20 00:59:20[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-20 00:59:22[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-20 00:59:22[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-20 00:59:25[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-20 00:59:25[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 453 events
-[32m2026-06-20 00:59:26[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-06-20 00:59:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 00:59:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 00:59:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 00:59:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 00:59:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 01:00:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-06-20 01:00:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 01:00:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 01:01:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-20 01:01:09[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-20 01:01:11[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 7 events
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 492 events from 5 sources
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 492 events
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 496 within 24h (171 pruned)
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Jawi hidup semula melalui Nirnama. Penulis Hilal Asyraf Abd Razak berkata tidak banyak bahan bacaan Jawi menggunakan pendekatan santai untuk menarik minat masyarakat menguasai semula tulisan itu." importance=0.41
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Lorry lane change triggers East Coast pile-up near Maran involving Zahid’s aides and driver. KUANTAN, June 19 &mdash; Seven individuals, including a driver and three media officers to Deputy Prime Min" importance=0.31
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "What to do when Muslim fathers in Malaysia don’t pay child support? Single mothers’ group proposes blanket sums for quick court relief. ARA DAMANSARA, June 19 &mdash; How can Malaysia solve the long-s" importance=0.46
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [federal_court_ruling] "After five failed attempts, prosecution bid to revive Penang teen Nhaveen’s murder case ends at Federal Court. PUTRAJAYA, June 19 &mdash; The Federal Court today struck out the prosecution&rsquo;s app" importance=0.56
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "High Court sets aside subpoena for Anwar to testify in RM30m civil suit against businessman and wife. KUALA LUMPUR, June 19 &mdash; The High Court here has set aside a subpoena requiring Prime Ministe" importance=0.38
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Court sentences grandfather to 33 years jail, 14 strokes for raping and sexually assaulting his granddaughters. KUALA LUMPUR, June 19 &mdash; A 67-year-old man was sentenced to 33 years&rsquo; jail an" importance=0.36
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Rundingan Bersatu-Muda di Johor capai 80%, kata Sahruddin. Ketua Bersatu Johor berkata parti itu lihat Muda dan Pejuang sebagai rakan sehaluan, susulan tiada lagi kerjasama politik Bersatu dan PAS." importance=0.46
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Immigration DG: Actual number of refugees in Malaysia higher than UNHCR’s 200,000 figure. KUALA LUMPUR, June 19 &mdash; The Immigration Department today said the actual number of refugees in Malaysia " importance=0.46
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "US-Iran peace deal will have positive impact on oil prices, says PM’s aide. However, Kamil Munim says the recovery period for oil supply is expected to take some time and must consider all the costs i" importance=0.41
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "As pigeon-munching croc settles near Kuching floating mosque, Sarawak minister urges forestry agency to act. KUCHING, June 19 &mdash; Dato Sri Abdul Karim Rahman Hamzah has called on the Sarawak Fores" importance=0.46
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Selangor expands RM100m financing scheme to help contractors weather supply crunch. SHAH ALAM, June 19 &mdash; The Selangor state government plans to expand its Selangor Advance (SA500) programme to s" importance=0.48
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Cabinet approves National Tahfiz Council, Zahid to chair new body. KUANTAN, June 19 &mdash; The federal government has approved the establishment of the National Tahfiz Council, marking a..." importance=0.36
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Police corporal charged with possessing meth in Kota Bharu court lock-up, claims trial. KOTA BHARU, June 19 &mdash; A police corporal pleaded not guilty at the Magistrate&rsquo;s Court here yesterday " importance=0.36
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "GRS aims to contest all 25 Sabah parliamentary seats in coming general election. KOTA KINABALU, June 26 &mdash; Gabungan Rakyat Sabah (GRS) has set its sights on contesting all 25 parliamentary seats " importance=0.46
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 35), ('malay', 35), ('india', 25), ('chinese', 23), ('pas', 19), ('government', 17), ('prime minister', 16), ('election', 14), ('isa', 11), ('unity', 7)]
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
-[32m2026-06-20 01:01:13[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5353 active topics
-[32m2026-06-20 01:01:14[0m | [1mINFO    [0m | [36moutput              [0m | 820 active issues, 4531 new, 4533 pruned
-[32m2026-06-20 01:01:14[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-20 01:01:31[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=60  hmm=OK/69  cox=RT/820  sarima=RT/820
-[32m2026-06-20 01:01:31[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=820)
-[32m2026-06-20 01:01:31[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5353 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-06-20 03:14:09[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-20 03:14:09[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-20 03:14:09[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament second session session opens" importance=0.46
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5353 topics from state
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-20 03:14:10[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-20T03:14:10.750912+00:00
+[32m2026-06-20 03:14:13[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-20 03:14:14[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-20 03:14:17[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-20 03:14:17[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-20 03:14:20[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-20 03:14:20[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 453 events
+[32m2026-06-20 03:14:21[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-06-20 03:14:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-20 03:14:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:14:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-20 03:14:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:14:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:14:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:15:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:15:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:15:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:15:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-20 03:15:36[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-06-20 03:15:38[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 7 events
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 490 events from 5 sources
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 490 events
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 492 within 24h (156 pruned)
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "RM150 unlimited travel: Rapid KL opens digital monthly pass to all passengers. KUALA LUMPUR, June 20 &mdash; Rapid KL has introduced a digital Rapid Monthly Pass, allowing users to purchase and activ." importance=0.43
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [constitutional_amendment] "New cybercrime, anti-racing Bills to join two constitutional amendments when Parliament resumes Monday. KUALA LUMPUR, June 20 &mdash; The Second Meeting of the Fifth Session of the 15th Parliament wil" importance=0.71
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Over 1,000 media practitioners gather at PICCA Arena Butterworth for HAWANA 2026 finale. BUTTERWORTH, June 20 &mdash; The National Journalists&rsquo; Day (HAWANA) 2026 grand finale will be celebrated " importance=0.41
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Jawi hidup semula melalui Nirnama. Penulis Hilal Asyraf Abd Razak berkata tidak banyak bahan bacaan Jawi menggunakan pendekatan santai untuk menarik minat masyarakat menguasai semula tulisan itu." importance=0.41
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Lorry lane change triggers East Coast pile-up near Maran involving Zahid’s aides and driver. KUANTAN, June 19 &mdash; Seven individuals, including a driver and three media officers to Deputy Prime Min" importance=0.31
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "What to do when Muslim fathers in Malaysia don’t pay child support? Single mothers’ group proposes blanket sums for quick court relief. ARA DAMANSARA, June 19 &mdash; How can Malaysia solve the long-s" importance=0.46
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [federal_court_ruling] "After five failed attempts, prosecution bid to revive Penang teen Nhaveen’s murder case ends at Federal Court. PUTRAJAYA, June 19 &mdash; The Federal Court today struck out the prosecution&rsquo;s app" importance=0.56
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "High Court sets aside subpoena for Anwar to testify in RM30m civil suit against businessman and wife. KUALA LUMPUR, June 19 &mdash; The High Court here has set aside a subpoena requiring Prime Ministe" importance=0.38
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Court sentences grandfather to 33 years jail, 14 strokes for raping and sexually assaulting his granddaughters. KUALA LUMPUR, June 19 &mdash; A 67-year-old man was sentenced to 33 years&rsquo; jail an" importance=0.36
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Immigration DG: Actual number of refugees in Malaysia higher than UNHCR’s 200,000 figure. KUALA LUMPUR, June 19 &mdash; The Immigration Department today said the actual number of refugees in Malaysia " importance=0.46
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "As pigeon-munching croc settles near Kuching floating mosque, Sarawak minister urges forestry agency to act. KUCHING, June 19 &mdash; Dato Sri Abdul Karim Rahman Hamzah has called on the Sarawak Fores" importance=0.46
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Selangor expands RM100m financing scheme to help contractors weather supply crunch. SHAH ALAM, June 19 &mdash; The Selangor state government plans to expand its Selangor Advance (SA500) programme to s" importance=0.48
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 33), ('malay', 30), ('chinese', 27), ('india', 25), ('pas', 23), ('government', 16), ('prime minister', 14), ('election', 13), ('isa', 11), ('indian', 7)]
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5357 active topics
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36moutput              [0m | 821 active issues, 4537 new, 4536 pruned
+[32m2026-06-20 03:15:40[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-20 03:16:00[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=60  hmm=OK/72  cox=RT/821  sarima=RT/821
+[32m2026-06-20 03:16:00[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=821)
+[32m2026-06-20 03:16:00[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5357 active topics. Top: parliament budget session session opens (score: 0.98)
