@@ -1,0 +1,142 @@
+{
+  "factual_accuracy_score": 72,
+  "source_diversity_estimate": 0.84,
+  "claims": [
+    {
+      "claim": "For 40 years Malaysia waived taxes to win factories.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.25,
+      "m_unknown": 0.30,
+      "source": "Promotion of Investments Act 1986 official text hosted by InvestMalaysia, accessed via official PDF dated 1 Jan 2022, https://www.investmalaysia.gov.my/media/f1rpmx14/promotions-of-investment-act-1986.pdf; IRBM Public Ruling No. 10/2023 Pioneer Status Incentive, 29 Dec 2023, https://www.hasil.gov.my/media/wrqhhbta/pr-10-2023-pioneer-status-incentive.pdf; MITI speech at SEMICON Southeast Asia 2024 saying Malaysia has over five decades in semiconductors, 28 May 2024, https://www.miti.gov.my/miti/resources/Speech/%5BFINAL%5D_YB_MITI_SPEECH_Official_Opening_SEMICON_SEA_2024-05-28.pdf",
+      "correction": "Malaysia has used investment tax incentives for decades, and the current core incentive law is the Promotion of Investments Act 1986. But the factory-attraction strategy predates 1986, including the Investment Incentives Act 1968 and Free Trade Zone policies. \"40 years\" is a rounded shorthand, not a precise origin date, and \"waived taxes\" overstates what were usually partial or full exemptions for specified periods and activities.",
+      "stale_check": "Not a stale-data issue; this is mainly a historical precision issue."
+    },
+    {
+      "claim": "A global 15% floor, in force since January 2025, means the tax it skips is now collected abroad.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.45,
+      "m_unknown": 0.20,
+      "source": "IRBM Guidelines on the Implementation of Global Minimum Tax in Malaysia, 2 Dec 2024, https://www.hasil.gov.my/media/zzzivm2x/guidelines-on-the-implementation-of-global-minimum-tax-in-malaysia_2122024.pdf; OECD Minimum Tax Implementation Handbook (Pillar Two), 2023, https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/minimum-tax-implementation-handbook-pillar-two.pdf; OECD central record page for jurisdiction-specific legislation, https://www.oecd.org/en/topics/sub-issues/global-minimum-tax/central-record-of-legislation-with-transitional-qualified-status.html",
+      "correction": "For Malaysia, the DTT and MTT apply for financial years beginning on or after 1 January 2025. But Pillar Two is not a single globally uniform rule that universally switched on everywhere on that date; OECD describes it as a common approach with jurisdiction-by-jurisdiction implementation. Also, low-taxed Malaysian profit is only collected abroad if Malaysia does not collect it domestically and another jurisdiction has an applicable rule to collect it.",
+      "stale_check": "As of 20 Jun 2026, implementation remains staggered by jurisdiction; the hook overstates global uniformity."
+    },
+    {
+      "claim": "A firm taxed below 15% in Malaysia now owes a top-up to reach it. If Putrajaya does not collect that gap, the company's home country can.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.25,
+      "m_unknown": 0.20,
+      "source": "Finance (No. 2) Act 2023 [Act 851], sections 158-161, published in Gazette 29 Dec 2023, official PDF at https://mysst.customs.gov.my/assets/document/SST%20Act/Finance%20%28No.%202%29%20Act%202023.pdf; OECD Minimum Tax Implementation Handbook (Pillar Two), 2023, https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/minimum-tax-implementation-handbook-pillar-two.pdf",
+      "correction": "For in-scope MNE groups, a top-up mechanism applies when the jurisdictional ETR falls below 15%. But saying the company's \"home country can\" is too simplified. Under the OECD rule order, the low-tax jurisdiction has the primary right through a QDMTT/DTT; if it does not, collection may arise under a Qualified IIR in the UPE jurisdiction or another parent jurisdiction, and more broadly under the GloBE system via backstop rules. It is not always literally the home country and not automatically so.",
+      "stale_check": "No material stale issue; this is a rule-order precision issue."
+    },
+    {
+      "claim": "The Finance Act 2023 brought in a domestic top-up tax (QDMTT) from 1 January 2025, so Malaysia keeps the difference rather than gifting it overseas.",
+      "status": "VERIFIED",
+      "m_true": 0.87,
+      "m_false": 0.05,
+      "m_unknown": 0.08,
+      "source": "Finance (No. 2) Act 2023 [Act 851], published in Gazette 29 Dec 2023, official PDF at https://mysst.customs.gov.my/assets/document/SST%20Act/Finance%20%28No.%202%29%20Act%202023.pdf; IRBM Guideline: The Implementation of Domestic Top-up Tax in Malaysia, 3 Feb 2026, https://www.hasil.gov.my/media/llke0zf0/domestic-topup-tax-guidelines.pdf; OECD Minimum Tax Implementation Handbook (Pillar Two), 2023, https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/minimum-tax-implementation-handbook-pillar-two.pdf",
+      "correction": "The statute is Finance (No. 2) Act 2023, not simply \"Finance Act 2023.\" The Malaysian law introduces Domestic Top-up Tax and Multinational Top-up Tax in Part XI of the Income Tax Act 1967, with effect for financial years beginning on or after 1 January 2025. IRBM's 2026 DTT guideline says the DTT aligns with the OECD QDMTT framework and allows Malaysia to retain taxing rights over low-taxed domestic profits.",
+      "stale_check": "Still current as of 20 Jun 2026."
+    },
+    {
+      "claim": "Penang's electronics and semiconductor cluster was built substantially on tax holidays that pushed effective rates far below the 24% headline.",
+      "status": "VERIFIED",
+      "m_true": 0.74,
+      "m_false": 0.10,
+      "m_unknown": 0.16,
+      "source": "MOF Malaysia, Fiscal Outlook 2025, Section 2 Federal Government Revenue, feature article 'Malaysia's Approach to Implementing the Global Minimum Tax: An Overview', posted with Budget 2025 documents, https://belanjawan.mof.gov.my/pdf/belanjawan2025/revenue/section2.pdf; MIDA incentives page, https://www.mida.gov.my/setting-up-content/incentives/; MOF incentive summary under Promotion of Investments Act 1986, updated 6 Jan 2020, https://www.mof.gov.my/portal/pdf/cukai/insentif-cukai/promotion-of-Investment-act-1986.pdf; ERIA Case Studies of Firms in E&E Sector of Penang Cluster, 2010, https://www.eria.org/uploads/media/Research-Project-Report/RPR_FY2009_7-4_Chapter_3.pdf; IRBM Tax Rate of Company page showing 24% headline company tax, https://www.hasil.gov.my/en/company/tax-rate-of-company/",
+      "correction": "This is broadly supported, but the primary sources show tax incentives were one major pillar among others such as free industrial zones, infrastructure, government promotion, and talent development. Official MOF text says Pioneer Status and Investment Tax Allowance under the PIA 1986 result in a much lower effective tax rate, and MIDA/MOF documents show exemptions of 70% to 100% of statutory income or ITA offsets that can reduce tax far below the 24% headline rate.",
+      "stale_check": "No material stale issue."
+    },
+    {
+      "claim": "The 15% floor blunts that lure just as the US-China chip reshuffle makes Malaysia attractive for other reasons.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.20,
+      "m_unknown": 0.35,
+      "source": "MOF Malaysia, Fiscal Outlook 2025 feature article on GMT, https://belanjawan.mof.gov.my/pdf/belanjawan2025/revenue/section2.pdf; MITI speech at SEMICON Southeast Asia 2024, 28 May 2024, https://www.miti.gov.my/miti/resources/Speech/%5BFINAL%5D_YB_MITI_SPEECH_Official_Opening_SEMICON_SEA_2024-05-28.pdf",
+      "correction": "The first half is a fair inference: if low effective tax rates were part of the attraction, a 15% minimum blunts that specific advantage for in-scope groups. But the second half is not directly established in the primary materials using the phrase \"US-China chip reshuffle.\" Official MITI sources instead cite geopolitical neutrality, world-class facilities, R&D centres, skilled workforce, incentives, rule of law, infrastructure, and location as reasons Malaysia is attractive.",
+      "stale_check": "No direct stale problem; this is mainly a framing and sourcing problem."
+    },
+    {
+      "claim": "Malaysia's answer is a New Incentive Framework that pays for results, not size, replacing profit-based holidays from 1 March 2026.",
+      "status": "INCORRECT",
+      "m_true": 0.20,
+      "m_false": 0.70,
+      "m_unknown": 0.10,
+      "source": "MITI New Incentive Framework portal, updated 22 May 2026, https://www.miti.gov.my/NIF; MITI FAQ on NIF, updated 19 Jan 2026, https://www.miti.gov.my/miti/resources/NIF/NIF_FAQ-1.pdf; MIDA Guideline Tax Incentive NIF Manufacturing Only, as at 15 Jan 2026, https://www.mida.gov.my/wp-content/uploads/2026/01/Guideline-Tax-Incentive-NIF_Manufacturing-Only.pdf; MIDA media release, 30 Jan 2026, https://www.mida.gov.my/media-release/mida-stands-ready-to-implement-new-outcome-based-incentive-framework-from-1-march/",
+      "correction": "What is correct is that the NIF is outcome-based and, for manufacturing, applies from 1 March 2026. What is incorrect is the implication that it broadly replaces profit-based holidays across the board. Official sources say: manufacturing applications under the PIA 1986 are no longer accepted after 28 February 2026; existing approvals remain valid; services follow later; and the NIF still offers tax incentives, specifically the Special Tax Rate or Investment Tax Allowance. The framework is not described as paying for results \"not size\" in the sense used here; it is a tiered, outcome-based tax incentive regime.",
+      "stale_check": "As of 20 Jun 2026, manufacturing is in force from 1 Mar 2026; services-sector implementation date is still separate."
+    },
+    {
+      "claim": "Grants now hinge on jobs, technology transfer, and supply-chain depth, scored on a national scorecard, a 40-year shift made with little public debate.",
+      "status": "INCORRECT",
+      "m_true": 0.25,
+      "m_false": 0.60,
+      "m_unknown": 0.15,
+      "source": "MITI New Incentive Framework portal, updated 22 May 2026, https://www.miti.gov.my/NIF; MIDA Guideline Tax Incentive NIF Manufacturing Only, as at 15 Jan 2026, https://www.mida.gov.my/wp-content/uploads/2026/01/Guideline-Tax-Incentive-NIF_Manufacturing-Only.pdf; MITI FAQ on NIF, updated 19 Jan 2026, https://www.miti.gov.my/miti/resources/NIF/NIF_FAQ-1.pdf",
+      "correction": "The national scorecard point is correct: the NIA Scorecard measures outcomes including high-valued job opportunities, local talent development, technology transfer-type collaboration, domestic linkages, local sourcing, vendor development, and sustainability. But official documents describe tax incentives, not grants. The 'little public debate' part is not supported by the primary materials I found; MITI states a task force was established and lists official consultation/engagement structures and guidance documents. The '40-year shift' is rhetorical rather than a verified official description.",
+      "stale_check": "No clear stale issue; the problem is mischaracterisation and unsupported commentary."
+    },
+    {
+      "claim": "High on mechanism and dates (GMT effective FY from 1 Jan 2025; 15% ETR; EUR 750M threshold; QDMTT + IIR; NIF effective 1 March 2026).",
+      "status": "VERIFIED",
+      "m_true": 0.92,
+      "m_false": 0.03,
+      "m_unknown": 0.05,
+      "source": "Finance (No. 2) Act 2023 [Act 851], sections 158-161 and related Part XI provisions, https://mysst.customs.gov.my/assets/document/SST%20Act/Finance%20%28No.%202%29%20Act%202023.pdf; IRBM Guidelines on the Implementation of Global Minimum Tax in Malaysia, 2 Dec 2024, https://www.hasil.gov.my/media/zzzivm2x/guidelines-on-the-implementation-of-global-minimum-tax-in-malaysia_2122024.pdf; IRBM DTT guideline, 3 Feb 2026, https://www.hasil.gov.my/media/llke0zf0/domestic-topup-tax-guidelines.pdf; MITI NIF portal, https://www.miti.gov.my/NIF; MIDA NIF guideline, https://www.mida.gov.my/wp-content/uploads/2026/01/Guideline-Tax-Incentive-NIF_Manufacturing-Only.pdf",
+      "correction": "The substance is correct. The only wording caveat is that Malaysian legislation uses Domestic Top-up Tax and Multinational Top-up Tax, with the DTT aligned to the OECD QDMTT framework and Chapter 4 of Part XI setting out the Income Inclusion Rule mechanics. Also, the NIF effective date of 1 March 2026 currently applies to the manufacturing sector.",
+      "stale_check": "Still current as of 20 Jun 2026."
+    },
+    {
+      "claim": "Scale of impact deliberately not quantified: no official QDMTT-revenue or forgone-revenue figure found.",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.10,
+      "m_unknown": 0.75,
+      "source": "MOF Malaysia Fiscal Outlook 2025 and Fiscal Outlook 2026 revenue sections reviewed at https://belanjawan.mof.gov.my/pdf/belanjawan2025/revenue/section2.pdf and https://belanjawan.mof.gov.my/pdf/belanjawan2026/revenue/section2.pdf; MOF portal economic and fiscal documents at https://www.mof.gov.my/portal/en/; IRBM GMT pages and guidelines at https://www.hasil.gov.my/en/international/global-minimum-tax-gmt/ and linked guideline PDFs",
+      "correction": "In the primary official materials I reviewed, I did not locate a disaggregated ringgit estimate for expected DTT/QDMTT revenue or a published tax-expenditure figure for incentives specifically at risk under GMT. However, absence claims are inherently hard to prove exhaustively, so this should be phrased as 'not located in the official materials reviewed' rather than as a categorical claim that no official figure exists anywhere.",
+      "stale_check": "As of 20 Jun 2026 I still did not locate a disaggregated official figure in the reviewed MOF/IRBM materials."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "A global 15% floor, in force since January 2025, means the tax it skips is now collected abroad.",
+      "why": "The primary sources support Malaysia's 1 January 2025 commencement, not a universally synchronized global commencement. OECD describes Pillar Two as a common approach with jurisdiction-by-jurisdiction implementation, and cross-border collection depends on rule order and whether another jurisdiction has an applicable rule.",
+      "primary_source": "OECD Minimum Tax Implementation Handbook (Pillar Two), 2023, https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/minimum-tax-implementation-handbook-pillar-two.pdf; IRBM GMT guideline, 2 Dec 2024, https://www.hasil.gov.my/media/zzzivm2x/guidelines-on-the-implementation-of-global-minimum-tax-in-malaysia_2122024.pdf"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "If Putrajaya does not collect that gap, the company's home country can.",
+      "why": "This collapses OECD rule order into an oversimple 'home country' narrative. The primary sources show the low-tax jurisdiction has the primary right through DTT/QDMTT, then collection may arise under a Qualified IIR in the UPE jurisdiction or another parent jurisdiction, with the broader GloBE framework including backstop rules.",
+      "primary_source": "Finance (No. 2) Act 2023 [Act 851], sections 159-161, https://mysst.customs.gov.my/assets/document/SST%20Act/Finance%20%28No.%202%29%20Act%202023.pdf; OECD Minimum Tax Implementation Handbook (Pillar Two), 2023, https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/minimum-tax-implementation-handbook-pillar-two.pdf"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Malaysia's answer is a New Incentive Framework that pays for results, not size, replacing profit-based holidays from 1 March 2026.",
+      "why": "Official NIF documents say the framework is outcome-based and manufacturing starts on 1 March 2026, but new incentives remain tax incentives (Special Tax Rate or Investment Tax Allowance), services follow later, and existing approvals remain valid. The claim overstates breadth and implies a complete replacement that the primary sources do not support.",
+      "primary_source": "MITI NIF portal, https://www.miti.gov.my/NIF; MITI NIF FAQ, https://www.miti.gov.my/miti/resources/NIF/NIF_FAQ-1.pdf; MIDA NIF guideline, https://www.mida.gov.my/wp-content/uploads/2026/01/Guideline-Tax-Incentive-NIF_Manufacturing-Only.pdf"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Grants now hinge on jobs, technology transfer, and supply-chain depth, scored on a national scorecard, a 40-year shift made with little public debate.",
+      "why": "The scorecard and criteria are official, but the primary sources describe tax incentives, not grants. The 'little public debate' detail is not traceable to a primary source and is weakened by official evidence of a task force, FAQs, guidelines, and engagement with industry associations and chambers.",
+      "primary_source": "MITI NIF portal, https://www.miti.gov.my/NIF; MIDA NIF guideline, https://www.mida.gov.my/wp-content/uploads/2026/01/Guideline-Tax-Incentive-NIF_Manufacturing-Only.pdf"
+    }
+  ],
+  "omitted_facts": [
+    "Malaysia's legal scope test is specific: Part XI of the Income Tax Act 1967 applies to MNE groups with annual revenue of EUR750 million or more in at least two of the four consecutive financial years immediately preceding the tested year, with proportional adjustment where a relevant year is not 12 months. Source: Finance (No. 2) Act 2023 [Act 851], section 158, https://mysst.customs.gov.my/assets/document/SST%20Act/Finance%20%28No.%202%29%20Act%202023.pdf",
+    "Official MITI documents say the NIF does not abolish incentives; it offers two mutually exclusive tax incentives, the Special Tax Rate and the Investment Tax Allowance, and existing approvals remain valid. The manufacturing-sector cut-off under the old PIA regime was 28 February 2026, while the services-sector implementation date is to be announced separately. Sources: MITI NIF portal, https://www.miti.gov.my/NIF; MITI FAQ, https://www.miti.gov.my/miti/resources/NIF/NIF_FAQ-1.pdf",
+    "Malaysia's own Fiscal Outlook 2025 explicitly states that Pioneer Status and Investment Tax Allowance under the Promotion of Investments Act 1986 'result in much lower effective tax rate.' That is the strongest official wording I found supporting the analysis's characterization of low effective rates. Source: MOF Fiscal Outlook 2025, Section 2 Federal Government Revenue, https://belanjawan.mof.gov.my/pdf/belanjawan2025/revenue/section2.pdf",
+    "The official DTT guideline states that Malaysia's Domestic Top-up Tax 'allows Malaysia to retain taxing rights over low-taxed domestic profits, aligning with the OECD's Qualified Domestic Minimum Top-up Tax (QDMTT) Framework.' This is a stronger and more precise official statement than the analysis's shorthand. Source: IRBM DTT guideline, 3 Feb 2026, https://www.hasil.gov.my/media/llke0zf0/domestic-topup-tax-guidelines.pdf",
+    "MITI's official semiconductor speech lists the non-tax components of Malaysia's semiconductor value proposition: world-class manufacturing facilities, innovative R&D centres, a highly skilled workforce, attractive incentives, rule of law, modern infrastructure, a strategic earthquake-free location, and geopolitical neutrality. Source: MITI speech at SEMICON Southeast Asia 2024, 28 May 2024, https://www.miti.gov.my/miti/resources/Speech/%5BFINAL%5D_YB_MITI_SPEECH_Official_Opening_SEMICON_SEA_2024-05-28.pdf",
+    "For a 12-month FY2025 transition year, IRBM's official implementation timeline points to the first GIR and Top-up Tax Return/payment deadline of 30 June 2027. Source: MOF Fiscal Outlook 2025 GMT implementation timeline and IRBM guidance, https://belanjawan.mof.gov.my/pdf/belanjawan2025/revenue/section2.pdf and https://www.hasil.gov.my/media/zzzivm2x/guidelines-on-the-implementation-of-global-minimum-tax-in-malaysia_2122024.pdf"
+  ],
+  "source_assessment": "The source base is strong on the core mechanism because it relies mainly on primary materials: the Finance (No. 2) Act 2023, IRBM GMT and DTT guidelines, MOF Fiscal Outlook documents, and MITI/MIDA NIF pages, FAQs, and guidelines. OECD primary materials were used for Pillar Two rule order and scope. The main gap is historical attribution for Penang's cluster, where there is no single official document quantifying how much of cluster formation was due to tax holidays versus free zones, infrastructure, promotion, and skills institutions; for that point I triangulated official incentive materials with an ERIA research report and official MITI speeches. I did not locate a disaggregated official QDMTT-revenue or explicit forgone-revenue estimate in the MOF/IRBM materials reviewed. One caution: not all official materials are equally precise. For example, some official explainers are broader or less exact than the statute itself, so the legislation and IRBM guidance were treated as more authoritative than narrative summaries.",
+  "overall_assessment": "The analysis is directionally strong on the core Malaysia-Pillar Two mechanism: 15% minimum ETR, EUR750 million scope threshold, Finance (No. 2) Act 2023, DTT/MTT effective for financial years beginning on or after 1 January 2025, and the strategic logic of collecting top-up tax domestically rather than allowing it to be collected elsewhere. The largest weaknesses are framing and precision. The hook overstates global simultaneity; the 'home country can collect' shorthand compresses the OECD rule order too much; and the NIF section materially misstates the policy by calling it grants and implying a broader replacement than the official documents support. In short: the mechanism and dates are mostly right, but several headline phrasings should be rewritten to avoid overclaim and to reflect the official NIF design more accurately."
+}

@@ -1,0 +1,216 @@
+=== DEEP RESEARCH MODE — READ FIRST ===
+
+Run this task using your DEEP RESEARCH / web-browsing capability, not from memory. The goal is independent
+triangulation: a separate analyst drafted the analysis at the bottom of this prompt, and we need you to
+re-derive its facts from scratch so the final issue is uncontested. Reaching the same data and concluding
+differently is exactly what we want to surface.
+
+HOW TO WORK:
+1. For EVERY load-bearing fact in the analysis (every number, date, named actor, law/section, percentage,
+   projection, and threshold), independently search for the ORIGINAL PRIMARY source. Do NOT trust the
+   analysis's own citations — find the document yourself (official government release, gazette, regulator
+   publication, court ruling, EU/OECD legal text, peer-reviewed paper, or a named outlet that quotes and
+   links such a document you have separately opened).
+2. Open the primary document. Read the actual table, clause, or paragraph. Record the exact figure, its
+   units, its year, and its definition (e.g. which debt aggregate, which age band, which planted-area base).
+3. TRIANGULATE against the analysis. For each fact, decide one of:
+     - CONFIRMED (your primary source matches the analysis),
+     - DIVERGENT (your research yields a different value, date, scope, or definition), or
+     - UNVERIFIABLE (no primary source found within reasonable effort).
+   For every DIVERGENT or UNVERIFIABLE item, state the analysis's value, YOUR value, the primary source URL,
+   and which you judge more authoritative and why. Divergences are the most valuable output here — do not
+   smooth them over.
+4. Where two reputable sources disagree, report BOTH and name the more authoritative one (closest to
+   primary, most recent, best methodology). Never silently pick the convenient number.
+5. Check the analysis for the four cardinal sins (overclaim, underclaim, misleading framing, unverified
+   detail) and for any fact it OMITS that a primary source makes material.
+
+OUTPUT:
+After the research, return the structured JSON exactly as the stage instructions below specify (and nothing
+but that JSON as your final block, so it can be saved directly). Put your divergence findings into the
+verification_log / claims and cardinal_sin_flags fields. If your research changes a headline number, say so
+plainly with the primary source. Accuracy beats agreement; if the original analyst got it wrong, prove it.
+
+The stage-specific instructions and the analysis to review follow this line.
+----------------------------------------------------------------------------------------------------------
+
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia stopped replacing itself in 2013. 2024 brought the fewest babies in over 40 years, and the official projection has the population shrinking from 2059.",
+      "sub": "The yearly birth drop is reported as a surprise. The decade-long trend, and the peak just ahead, rarely are.",
+      "sources": ["DOSM (TFR below 2.1 since 2013; population peak 2059); DOSM Vital Statistics 2024 (fewest births in 40+ years)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "h": "The fertility rate was 1.6 in 2024, below the 2.1 needed to hold a population steady, and it has stayed below that line every year since 2013.",
+      "s": "About 414,918 babies were born in 2024, the fewest in more than four decades.",
+      "d": "The fertility rate was 1.6 in 2024, below the 2.1 needed to hold a population steady, and it has stayed below that line every year since 2013. About 414,918 babies were born in 2024, the fewest in more than four decades.",
+      "sources": ["DOSM Vital Statistics Malaysia 2024 / Current Population Estimates 2025 (TFR 1.6; below replacement since 2013; live births ~414,918)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "The statistics department's own projection has the population peaking at 42.38 million in 2059, then declining to 41.43 million by 2070.",
+      "s": "Public debate still assumes a forever-growing Malaysia; the official numbers already mark the turn.",
+      "d": "The statistics department's own projection has the population peaking at 42.38 million in 2059, then declining to 41.43 million by 2070. Public debate still assumes a forever-growing Malaysia; the official numbers already mark the turn.",
+      "sources": ["DOSM Population Projections Malaysia (peak 42.38M in 2059; 41.43M by 2070), reported via Malay Mail, 11 Jul 2025"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "Fewer births now means fewer workers later. The same trend drives a fast-ageing population: those 65 and older passed 7% in 2021 and head for 14% by about 2048.",
+      "s": "A smaller working base must support a larger retired one, the squeeze behind the pension and healthcare bills.",
+      "d": "Fewer births now means fewer workers later. The same trend drives a fast-ageing population: those 65 and older passed 7% in 2021 and head for 14% by about 2048. A smaller working base must support a larger retired one, the squeeze behind the pension and healthcare bills.",
+      "sources": ["DOSM (65+ crossed 7% in 2021; 14% 'aged nation' by ~2048, band 2044-2048); links to the support-ratio analysis"]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "Malaysia debates how to raise the birth rate. The fact already set for the next 30 years, the year the population turns down, is the one nobody plans for.",
+      "sources": ["Editorial synthesis"]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "It is like a reservoir whose inflow fell below its outflow years ago. The level still looks high, but the date it starts to drop is already fixed.",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "A country can plan for a smaller, older population or be surprised by one. Malaysia's own statisticians have already named the year; the harder task is saying the forecast out loud.",
+      "sources": []
+    }
+  ],
+  "sources": "DOSM Population Projections Malaysia (peak 42.38M in 2059); DOSM Current Population Estimates 2025; DOSM Vital Statistics Malaysia 2024 (TFR 1.6; births ~414,918); Malay Mail (11 Jul 2025, citing DOSM); LPPKN/Malaysia Population Research Hub; World Bank Open Data; docs/research/malaysia-underreported-data-forecasts.md (Sections B.3, C). See engine/briefs/fertility-below-replacement-2059-peak.md.",
+  "confidence": "High on the population peak (42.38M in 2059, declining to 41.43M by 2070) and the continuous below-replacement run since 2013, both from DOSM. Medium on the precise TFR 1.6 (2024) and live births 414,918 (2024) pending direct confirmation against the DOSM Vital Statistics PDF (the long decline and the 2059 peak are independently corroborated).",
+  "lenses_used": ["Social", "Governance", "Economic"],
+  "lenses_applicable_but_unused": ["Health", "Historical"],
+  "needs_verification": [
+    "Population peak 42.38M in 2059 and decline to 41.43M by 2070, and the projection base year, against the DOSM Population Projections release.",
+    "TFR 1.6 in 2024 and that it has been below 2.1 continuously since 2013, against DOSM Vital Statistics 2024.",
+    "Live births ~414,918 in 2024 and 'fewest in 40+ years' against DOSM Vital Statistics 2024.",
+    "65+ crossed 7% in 2021 and reaches 14% by ~2048 (carry the 2044-2048 band)."
+  ],
+  "source_notes": "3R HANDLING: DOSM's data includes divergent fertility by community and a projected ethnic-Chinese share falling under 15%. This is factual and openly reported, but per T4A 3R discipline (and the lesson of issue 1986, structural not racial framing) the CARDS stay national and do NOT single out any community. Ethnic risk is MEDIUM precisely because the cards avoid the ethnic breakdown; any ethnic-specific card would raise it to HIGH and require Stage 5 (Contrarian) escalation. Fertility is framed via structural drivers, not women's individual choices. The 2059 peak is DOSM's OFFICIAL projection, presented as a projection, not an observed fact.",
+  "verification_notes": "DEEP-RESEARCH REVIEWERS (Gemini Stage 2 / GPT-5.5 Stage 3): independently re-derive from DOSM primary releases (Population Projections; Vital Statistics 2024; Current Population Estimates 2025) and LPPKN. Triangulate: (a) the 42.38M-in-2059 peak and 41.43M-by-2070 decline; (b) TFR 1.6 (2024) and the continuous below-2.1 run since 2013; (c) live births ~414,918 (2024) and the 'fewest in 40+ years' claim; (d) the ageing thresholds (7% in 2021, 14% by ~2048). FLAG any value where your research concludes differently, with the primary source. BIAS CHECK (Gemini): confirm the national framing does not inadvertently carry a racial subtext, and assess whether omitting the per-community fertility data is the right non-partisan call or an omission that should be disclosed; advise explicitly."
+}

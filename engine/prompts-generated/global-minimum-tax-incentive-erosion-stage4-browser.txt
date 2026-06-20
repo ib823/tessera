@@ -1,0 +1,179 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "For 40 years Malaysia waived taxes to win factories. A global 15% floor, in force since January 2025, means the tax it skips is now collected abroad.",
+      "sub": "When a company's Malaysian rate falls below 15%, a top-up is owed somewhere. Malaysia rewrote its law to claim it before another country could.",
+      "sources": ["MIDA, Implementation of GMT in Malaysia (FY from 1 Jan 2025; 15% ETR); OECD Pillar Two GloBE Model Rules"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "A firm taxed below 15% in Malaysia now owes a top-up to reach it. If Putrajaya does not collect that gap, the company's home country can.",
+      "s": "The Finance Act 2023 brought in a domestic top-up tax from 1 January 2025, so Malaysia keeps the difference rather than gifting it overseas.",
+      "d": "A firm taxed below 15% in Malaysia now owes a top-up to reach it. If Putrajaya does not collect that gap, the company's home country can. The Finance Act 2023 brought in a domestic top-up tax (QDMTT) from 1 January 2025, so Malaysia keeps the difference rather than gifting it overseas.",
+      "sources": ["MIDA GMT page (QDMTT + IIR from 1 Jan 2025); HASIL Guidelines on the Implementation of GMT in Malaysia (Dec 2024); Finance Act (No. 2) 2023"]
+    },
+    {
+      "t": "fact",
+      "lens": "Technology",
+      "h": "Penang's electronics and semiconductor cluster was built substantially on tax holidays that pushed effective rates far below the 24% headline.",
+      "s": "The 15% floor blunts that lure just as the US-China chip reshuffle makes Malaysia attractive for other reasons.",
+      "d": "Penang's electronics and semiconductor cluster was built substantially on tax holidays that pushed effective rates far below the 24% headline corporate rate. The 15% floor blunts that lure just as the US-China chip reshuffle makes Malaysia attractive for other reasons.",
+      "sources": ["MIDA incentive record (pioneer status / Investment Tax Allowance); Malaysia headline corporate rate 24%; Penang electronics FDI history"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Malaysia's answer is a New Incentive Framework that pays for results, not size, replacing profit-based holidays from 1 March 2026.",
+      "s": "Grants now hinge on jobs, technology transfer, and supply-chain depth, scored on a national scorecard, a 40-year shift made with little public debate.",
+      "d": "Malaysia's answer is a New Incentive Framework that pays for results, not size, replacing profit-based holidays from 1 March 2026. Grants now hinge on jobs, technology transfer, and supply-chain depth, scored on a national scorecard, a 40-year shift made with little public debate.",
+      "sources": ["MITI New Incentive Framework (effective 1 March 2026, NIA scorecard, STR/ITA); MIDA media release; KPMG NIF briefing"]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "The question is no longer how low Malaysia can set its tax rate. It is what the country offers once it no longer can.",
+      "sources": ["Editorial synthesis"]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "It is like a duty-free shop that wakes to find the same tax now charged at the gate. The saving that pulled in the crowd is collected down the corridor instead.",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Tax holidays were a race to the bottom that Malaysia could at least win. The floor ends that race and forces a harder question: whether the country competes on talent, power, and ports, or has nothing left to bid.",
+      "sources": []
+    }
+  ],
+  "sources": "MIDA (Implementation of GMT in Malaysia; New Incentive Framework media release); HASIL Guidelines on the Implementation of GMT in Malaysia (Dec 2024) + What is QDMTT; Finance Act (No. 2) 2023; MITI New Incentive Framework; OECD Pillar Two GloBE Model Rules; Crowe Malaysia; PwC Malaysia; US-ASEAN Business Council. See engine/briefs/global-minimum-tax-incentive-erosion.md.",
+  "confidence": "High on mechanism and dates (GMT effective FY from 1 Jan 2025; 15% ETR; EUR 750M threshold; QDMTT + IIR; NIF effective 1 March 2026), all confirmed against the regulator/agency. Medium on the SCALE of impact, which is deliberately not quantified: no official figure for expected QDMTT revenue or for incentive-related forgone revenue was found, so no ringgit magnitude is asserted.",
+  "lenses_used": ["Economic", "Technology", "Governance"],
+  "lenses_applicable_but_unused": ["Regional", "Political"],
+  "needs_verification": [
+    "Finance Act (No. 2) 2023 gazette citation (29 Dec 2023) and the exact QDMTT/IIR provisions and effective date.",
+    "That pioneer status / Investment Tax Allowance historically pushed effective rates 'far below' 24% toward near-zero for favoured firms (characterisation, not a single number).",
+    "Whether a sourced forgone-revenue or tax-expenditure figure exists (MOF Economic Report / tax-expenditure statement) that could be added without overclaim."
+  ],
+  "source_notes": "No official GMT revenue estimate was located; the cards therefore assert no ringgit magnitude. Effective rates under pioneer status vary by tier (70-100% income-tax exemption bands) and firm; the cards say 'far below the 24% headline' rather than a single figure. The US-China 'chip reshuffle' framing is general context, stated softly ('for other reasons').",
+  "verification_notes": "DEEP-RESEARCH REVIEWERS (Gemini Stage 2 / GPT-5.5 Stage 3): independently re-derive, do NOT trust this analysis's own citations. Triangulate each of: (a) GMT effective date for Malaysia (FY beginning on/after 1 Jan 2025) and the statutory instrument (Finance Act (No. 2) 2023 / Income Tax Act amendments); (b) the 15% ETR and EUR 750M consolidated-revenue threshold; (c) that Malaysia adopted BOTH QDMTT and IIR effective 1 Jan 2025, and confirm the QDMTT 'keeps the top-up onshore' characterisation; (d) the New Incentive Framework effective date (1 March 2026 manufacturing) and that it is outcome-based via the NIA scorecard; (e) Malaysia's 24% headline corporate rate. FLAG EXPLICITLY any figure where your own research concludes a different value, date, or scope than stated above, with your primary source. If you can find an OFFICIAL forgone-revenue or expected-QDMTT-revenue figure, report it in omitted_facts with the primary source."
+}

@@ -1,0 +1,181 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia argues over a 65% debt ceiling. The civil-service pension bill, heading for RM120 billion a year, answers to no ceiling at all.",
+      "sub": "Pensions are a promise to nearly a million retirees, paid from each year's revenue, and counted against no cap.",
+      "sources": ["MOF Fiscal Outlook 2026 (retirement charges); govt 2040 pension projection ~RM120B; statutory debt ceiling 65% of GDP"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "The 2026 pension bill is set at RM42.8 billion, the fourth-largest item in federal spending, up from about RM11 billion in 2010.",
+      "s": "On the government's own projection it reaches roughly RM120 billion a year by 2040.",
+      "d": "The 2026 pension bill is set at RM42.8 billion, the fourth-largest item in federal spending, up from about RM11 billion in 2010. On the government's own projection it reaches roughly RM120 billion a year by 2040.",
+      "sources": ["MOF Fiscal Outlook 2026 (retirement charges RM42.8B 2026, RM40.06B 2025); The Edge (Budget 2026); govt projection ~RM120B by 2040 (Malay Mail/Dewan Rakyat)"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "The debt everyone watches is capped at 65% of GDP. The pension promise behind it, put between RM483 billion and RM1.3 trillion, has no cap and no fund.",
+      "s": "No single audited figure exists; the estimates range that far because the liability was never fully provisioned.",
+      "d": "The debt everyone watches is capped at 65% of GDP. The pension promise behind it, put between RM483 billion and RM1.3 trillion, has no cap and no fund. No single audited figure exists; the estimates range that far because the liability was never fully provisioned.",
+      "sources": ["Unfunded actuarial liability estimates: RM483B (2017) / ~RM800B / RM1.3T; research doc Section C contradiction register; statutory debt ceiling 65%"]
+    },
+    {
+      "t": "fact",
+      "lens": "Social",
+      "h": "In 2022 about eight working-age Malaysians stood behind each person over 65. By 2040 it is fewer than five.",
+      "s": "And 3.45 million informal workers will reach old age largely outside the EPF, the savings system meant to catch them.",
+      "d": "In 2022 about eight working-age Malaysians stood behind each person over 65. By 2040 it is fewer than five. And 3.45 million informal workers will reach old age largely outside the EPF, the savings system meant to catch them.",
+      "sources": ["DOSM Population Projections (old-age dependency 12.6 in 2022 to 21.7 by 2040; support ratio ~7.9 to ~4.6); DOSM Informal Sector Survey 2023 (3.45M informal workers)"]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "The ceiling caps the debt that is easy to count. The pension promise is harder to count, impossible to recall, and far larger.",
+      "sources": ["Editorial synthesis"]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "Like watching the credit-card limit while a far larger mortgage, signed decades ago, falls due a little more every year.",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "A pension is an amanah: promised in good faith, owed in full. The honest question is not whether to pay it, but whether a shrinking workforce was ever told what it had been signed up to fund.",
+      "sources": []
+    }
+  ],
+  "sources": "MOF Fiscal Outlook and Revenue Estimates 2026; The Edge (Budget 2026 emoluments); Malay Mail (pension projection); BERNAMA (SSPA Phase 2); DOSM Population Projections 2020-2060; DOSM Informal Sector Survey 2023; Dewan Rakyat Hansard (pension series); KWAP; docs/research/malaysia-underreported-data-forecasts.md (Sections B.1, B.4, C). See engine/briefs/pension-bill-support-ratio.md.",
+  "confidence": "High on annual pension spend (RM42.8B 2026, RM40.06B 2025) and on the ageing series (7% in 2021, 14% by ~2048). High on the government's ~RM120B-by-2040 projection. Medium on the unfunded actuarial liability, deliberately given as a range (RM483B-RM1.3T) because no single audited figure exists. Medium on the exact 2040 support ratio pending the DOSM projection PDF.",
+  "lenses_used": ["Economic", "Governance", "Social"],
+  "lenses_applicable_but_unused": ["Political", "Historical"],
+  "needs_verification": [
+    "Retirement charges RM42.8B (2026) and RM40.06B (2025) against the MOF Fiscal Outlook 2026 table.",
+    "Government projection of ~RM120B/yr pension spend by 2040 (and ~RM46.4B by 2030) against the primary parliamentary/MOF source.",
+    "Support ratio ~7.9 (2022) to ~4.6 (2040) and old-age dependency 12.6 to 21.7 against the DOSM Population Projections; confirm the working-age definition (65+ per 100 aged 20-59).",
+    "3.45 million informal workers (2023) against the DOSM Informal Sector Survey.",
+    "Latest pensioner count (nearing 1,000,000 in 2025) against a Dewan Rakyat answer or KWAP."
+  ],
+  "source_notes": "CRITICAL distinction maintained: annual pension SPEND (RM42.8B 2026, ~RM120B 2040) is a flow; the RM483B-RM1.3T is the actuarial liability STOCK. Some secondary coverage conflates them (e.g. describing 'liabilities ... RM46.36B by 2030', which is actually the 2030 annual-spend projection). Cards never merge flow and stock. The unfunded liability is reported as a range, never a single number. Did not reuse the 'emoluments+pensions ~45% of opex' framing to avoid colliding with existing issues on the salary share.",
+  "verification_notes": "DEEP-RESEARCH REVIEWERS (Gemini Stage 2 / GPT-5.5 Stage 3): independently re-derive each figure from primary sources (MOF Fiscal Outlook 2026; DOSM Population Projections; DOSM Informal Sector Survey; Dewan Rakyat Hansard). Triangulate especially: (a) the RM42.8B 2026 / RM40.06B 2025 retirement charges and whether 'fourth-largest spending item' is accurate; (b) the ~RM120B-by-2040 projection and its provenance; (c) the support ratio 7.9->4.6 and old-age dependency 12.6->21.7 with the exact definition; (d) the RM483B-RM1.3T liability range and whether any audited figure now exists; (e) the 3.45M informal-worker figure and EPF coverage. FLAG any value where your research concludes differently, with the primary source and the corrected number. Watch specifically for the flow-vs-stock conflation noted above and confirm the cards keep them distinct."
+}

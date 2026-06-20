@@ -1,0 +1,35 @@
+=== DEEP RESEARCH MODE — READ FIRST ===
+
+Run this task using your DEEP RESEARCH / web-browsing capability, not from memory. The goal is independent
+triangulation: a separate analyst drafted the analysis at the bottom of this prompt, and we need you to
+re-derive its facts from scratch so the final issue is uncontested. Reaching the same data and concluding
+differently is exactly what we want to surface.
+
+HOW TO WORK:
+1. For EVERY load-bearing fact in the analysis (every number, date, named actor, law/section, percentage,
+   projection, and threshold), independently search for the ORIGINAL PRIMARY source. Do NOT trust the
+   analysis's own citations — find the document yourself (official government release, gazette, regulator
+   publication, court ruling, EU/OECD legal text, peer-reviewed paper, or a named outlet that quotes and
+   links such a document you have separately opened).
+2. Open the primary document. Read the actual table, clause, or paragraph. Record the exact figure, its
+   units, its year, and its definition (e.g. which debt aggregate, which age band, which planted-area base).
+3. TRIANGULATE against the analysis. For each fact, decide one of:
+     - CONFIRMED (your primary source matches the analysis),
+     - DIVERGENT (your research yields a different value, date, scope, or definition), or
+     - UNVERIFIABLE (no primary source found within reasonable effort).
+   For every DIVERGENT or UNVERIFIABLE item, state the analysis's value, YOUR value, the primary source URL,
+   and which you judge more authoritative and why. Divergences are the most valuable output here — do not
+   smooth them over.
+4. Where two reputable sources disagree, report BOTH and name the more authoritative one (closest to
+   primary, most recent, best methodology). Never silently pick the convenient number.
+5. Check the analysis for the four cardinal sins (overclaim, underclaim, misleading framing, unverified
+   detail) and for any fact it OMITS that a primary source makes material.
+
+OUTPUT:
+After the research, return the structured JSON exactly as the stage instructions below specify (and nothing
+but that JSON as your final block, so it can be saved directly). Put your divergence findings into the
+verification_log / claims and cardinal_sin_flags fields. If your research changes a headline number, say so
+plainly with the primary source. Accuracy beats agreement; if the original analyst got it wrong, prove it.
+
+The stage-specific instructions and the analysis to review follow this line.
+----------------------------------------------------------------------------------------------------------
