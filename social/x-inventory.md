@@ -1,48 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-22T05:57:52.195Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-22T08:18:07.616Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
 ## ⏳ TO POST (81)
-
-### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
-
-> ⚡ **Reactive: topic is live in the radar** (bekas hakim mahkamah persekutuan dilantik pengerusi majlis media malaysia. majlis berkata ). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
-
-**1/7** _(hook — attach image, NO link)_ · 145 chars
-```
-MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion.
-```
-**2/7** _(fact)_ · 156 chars
-```
-DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia drop is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
-```
-**3/7** _(fact)_ · 173 chars
-```
-Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. UAE bilateral trade hit US$3.3 billion in H1 2025, up 30.9% under a CEPA in force since 1 October 2025.
-```
-**4/7** _(fact)_ · 158 chars
-```
-Reezal added a caveat: direct West Asia exposure stayed limited, but indirect costs (freight, war-risk premiums, goods prices) could weigh on competitiveness.
-```
-**5/7** _(reframe)_ · 171 chars
-```
-When 2.7% of trade can fall 30% without moving the headline, the question is not how bad the collapse looks. It is who counts as a lost market when the aggregate does not.
-```
-**6/7** _(analogy)_ · 161 chars
-```
-A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
-```
-**7/7** _(view — ONLY post with the link)_ · 155 chars
-```
-Both figures are true. The diversification worked. The exporters who lost the channel are not in the headline.
-
-https://thefourthangle.pages.dev/issue/1996
-```
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -582,6 +544,43 @@ Picture giving the umpire his own office, then still choosing him through a pane
 Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
 
 https://thefourthangle.pages.dev/issue/1997
+```
+
+### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
+
+**1/7** _(hook — attach image, NO link)_ · 145 chars
+```
+MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion.
+```
+**2/7** _(fact)_ · 156 chars
+```
+DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia drop is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
+```
+**3/7** _(fact)_ · 173 chars
+```
+Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. UAE bilateral trade hit US$3.3 billion in H1 2025, up 30.9% under a CEPA in force since 1 October 2025.
+```
+**4/7** _(fact)_ · 158 chars
+```
+Reezal added a caveat: direct West Asia exposure stayed limited, but indirect costs (freight, war-risk premiums, goods prices) could weigh on competitiveness.
+```
+**5/7** _(reframe)_ · 171 chars
+```
+When 2.7% of trade can fall 30% without moving the headline, the question is not how bad the collapse looks. It is who counts as a lost market when the aggregate does not.
+```
+**6/7** _(analogy)_ · 161 chars
+```
+A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
+```
+**7/7** _(view — ONLY post with the link)_ · 155 chars
+```
+Both figures are true. The diversification worked. The exporters who lost the channel are not in the headline.
+
+https://thefourthangle.pages.dev/issue/1996
 ```
 
 ### Issue 1995 — Singapore charged a fourth in the Nvidia chip case. No Malaysian operator faces charges yet.
