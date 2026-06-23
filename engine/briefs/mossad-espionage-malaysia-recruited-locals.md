@@ -1,26 +1,33 @@
 # ISSUE 2009 — The Mossad Threat Malaysia Talks About But Cannot Confirm
 
 ## PERIOD
-September 2022 – July 2025
+April 2018 – August 2025 (with 2010 Dubai tradecraft comparator)
 
 ## CONTEXT (Timeline)
 
-- **2022 (September)**: A group of 11 Malaysians, led by a woman working as a private investigator, kidnap a Palestinian man in Kuala Lumpur to extract information on mobile-phone hacking software. The PI was hired and paid generously by overseas parties later identified as foreign intelligence agents. Police arrest the group. (Malay Mail, Nov 17 2023; reported via IGP statement)
-- **2023 (November 17)**: Inspector-General of Police Tan Sri Razarudin Husain states foreign intelligence agents, including Israel's Mossad, may be operating in Malaysia, BUT Malaysian intelligence reports show *no locals have turned agent* — those hired were given compartmentalized tasks and did not know their true employers. (Malay Mail, Nov 17 2023; Yahoo News Malaysia)
-- **2024 (March 12)**: A 36-year-old Israeli national, Shalom Avitan, enters Malaysia on a French passport. He also holds an Israeli passport. (BenarNews, Mar 29 2024)
-- **2024 (March 27)**: Avitan is arrested at a hotel in Kuala Lumpur (Jalan Ampang). Police seize six pistols and a cache of ammunition (BenarNews reports three of the handguns were loaded and ready to fire). Avitan had paid roughly US$50,000 for the weapons and carried multiple credit cards funding stays at five-star hotels. (BenarNews; Times of Israel; The Star)
-- **2024 (March)**: Three Malaysians arrested — a couple on the outskirts of KL suspected of supplying firearms (one firearm seized from them), and a man in Cameron Highlands, Pahang, believed to have driven for Avitan. IGP Razarudin: "He probably has his network and contact here who we have yet to identify," indicating other associates remained unidentified. Avitan claimed he came to hunt down another Israeli over a family dispute; police did not fully trust the account. (BenarNews; The Star)
-- **2025 (February)**: Avitan is sentenced to seven years' jail for possessing six unlicensed firearms and ammunition. He is NOT charged with or convicted of espionage. (Times of Israel; SCMP)
-- **2025 (July 22)**: PM Anwar Ibrahim publicly warns that international intelligence agencies, "particularly Mossad," are operating in Malaysia, citing the Avitan gun-smuggling case and a local couple allegedly working for an Israeli agent. He frames Malaysia as a target because of its firm Palestine stance and vows to strengthen surveillance. Statement is paraphrased in reporting; one rendered quote: "There's a strong possibility that our firm position on Palestine has made Malaysia a target of Mossad's intelligence activities." (SCMP, Jul 22 2025; Malay Mail; Scoop)
-- **2025 (July 23)**: IGP Razarudin Husain states: "There have been incidents under investigation which are suspected to involve foreign intelligence services," and confirms PDRM has "reinforced screening at all entry points... particularly monitoring foreign nationals who stay in Malaysia for extended periods." He stops short of confirming any individual as a confirmed foreign agent. (Scoop, Jul 23 2025; Daily Express)
+- **2010 (January 19)** [COMPARATOR, not Malaysia]: Hamas figure Mahmoud al-Mabhouh is killed in Dubai by a team whose ~26 members travelled on fraudulent third-country passports (12 UK, 6 Irish, 4 French, 3 Australian, 1 German). Dubai Police said it was "99%" Mossad; Israel never confirmed. Establishes the documented third-country-passport signature. (Dubai Police via Reuters/Guardian/BBC; Wikipedia compilation)
+- **2018 (April 21, ~6am)**: Palestinian engineer and UniKL lecturer **Fadi Mohammad al-Batsh** is shot ~14 times by two motorcycle gunmen in Gombak, Kuala Lumpur, while walking to dawn prayers. The gunmen entered Malaysia on **fake Serbia and Montenegro passports**. No one is ever charged. Then-DPM/Home Minister Ahmad Zahid Hamidi says the suspects were "Europeans with links to a foreign intelligence agency"; IGP Mohamad Fuzi Harun releases suspect sketches. Hamas and the family blame Mossad; Israel's Avigdor Lieberman floats "internal Palestinian score-settling." (Al Jazeera, Apr 22–23 2018; NST/Haaretz on passports, May 2018)
+- **2022 (September 28, ~10:40pm)**: A group later totalling **13 Malaysians** (initially reported as 11; one woman among them) abducts Gaza-born programmer **Omar al-Balbaisy, 31**, off Jalan Mayang, KL, holding him ~24 hours to extract "secret information on creating and deactivating software used to hack mobile phones" (charge wording). Charged under Kidnapping Act 1961 s.3 + Penal Code s.34. KL police chief Azmi Abu Kassim: "We are investigating the Mossad element... yet to confirm." Then-IGP Acryl Sani Abdullah Sani urges no speculation. NST reports (single-source) the cell was led by a woman PI recruited by Mossad in 2018; this is NOT confirmed to be the female accused. (BenarNews Oct 2022; The Star May 2025; Bernama)
+- **2023 (November 17)**: Inspector-General of Police Tan Sri Razarudin Husain (IGP from June 2023) states foreign intelligence agents, including Israel's Mossad, may be operating in Malaysia, BUT Malaysian intelligence reports show *no locals have turned agent* — those hired were given compartmentalized tasks and did not know their true employers, citing the 2022 case as illustration. (Malay Mail, Nov 17 2023; Yahoo News Malaysia)
+- **2024 (March 12)**: A 36-year-old Israeli national, **Shalom Avitan**, enters Malaysia from the UAE on a **French passport**. He also holds an Israeli passport. (BenarNews, Mar 29 2024)
+- **2024 (March 27)**: Avitan is arrested at a Jalan Ampang hotel, KL. Police seize **six pistols** and ~200 rounds (three handguns loaded). He paid for the weapons (bought in Malaysia, smuggled from Thailand) reportedly in cryptocurrency. (BenarNews; Times of Israel; The Star)
+- **2024 (March)**: Three Malaysians arrested — a married couple (**Syarifah Faraha Syed Husin** and **Abdul Azim Yasin**) suspected of supplying firearms, and a man in Cameron Highlands believed to have driven for Avitan. Avitan paid the couple RM10,000 for guns. IGP Razarudin: "He probably has his network and contact here who we have yet to identify." Avitan claimed a family-dispute manhunt; police did not fully trust it. (BenarNews; The Star; SCMP)
+- **2025 (February 26)**: Avitan is sentenced (Kajang sessions court) to **seven years** for possessing six unlicensed firearms + ammunition, backdated to arrest. NOT charged with or convicted of espionage. (Ynet; SCMP; Times of Israel)
+- **2025 (June 5)**: Abdul Azim Yasin pleads guilty and is sentenced to **10 years + 6 strokes** under Firearms (Increased Penalties) Act 1971 s.9 (consorting with a person believed to possess a firearm). His wife Syarifah Faraha pleads not guilty; her bid to drop the charge is rejected (Aug 6 2025); still on trial as of Oct 2025. The Cameron Highlands driver's charge/outcome is not on public record. (FMT; Bernama)
+- **2025 (July 22)**: PM Anwar Ibrahim publicly warns that international intelligence agencies, "particularly Mossad," operate in Malaysia, citing the Avitan case and the local couple, and ties it to Malaysia's Palestine stance. One rendered quote: "There's a strong possibility that our firm position on Palestine has made Malaysia a target of Mossad's intelligence activities." (SCMP, Jul 22 2025; Malay Mail; Scoop)
+- **2025 (July 23)**: IGP Razarudin Husain states incidents "under investigation... suspected to involve foreign intelligence services," that the 2022 abduction and the 2024 Avitan case are "believed to be linked to the same network," and confirms reinforced screening of long-staying foreigners; advises Palestinians in Malaysia to keep a low profile. (Scoop; Daily Express)
+- **2025 (August 21)**: Home Minister Saifuddin Nasution tells Parliament Malaysia's spy-detection capability is "very high" (three pillars: prevention, detection, enforcement), confirms three espionage-linked arrests since 2020, and acknowledges Malaysia "may be a target for Israel." This reassurance sits against ~50 immigration officers arrested by MACC in Sept 2024 for "counter-setting" (selling border passage). (The Vibes; Malay Mail; Bernama)
 
 ## ACTORS
 
-- **Shalom Avitan** — 36-y-o Israeli national, dual French/Israeli travel documents. Arrested March 2024 with six pistols; jailed seven years (Feb 2025) on firearms charges only. Police suspected Mossad covert operation; he claimed a private family vendetta. Israeli media characterized him variously as an alleged mobster.
-- **Tan Sri Razarudin Husain** — Inspector-General of Police through June 2025 (stepped down June 22 2025). On record both that foreign spies may operate in Malaysia AND that intelligence showed no locals confirmed as turned agents. The most authoritative cautionary voice.
-- **PM Anwar Ibrahim** — Made the most forceful public attribution to Mossad (July 2025), tying it to Malaysia's Palestine stance. Political statement, not an adjudicated finding.
-- **The unnamed PI and 11 Malaysians (2022 case)** — The documented template for the "recruited locals" method: hired, paid, compartmentalized, unaware of the true principal.
-- **The Malaysian couple + driver (2024 case)** — Alleged local logistics for Avitan; arrested. No public espionage conviction on record at time of brief.
+- **Fadi Mohammad al-Batsh** — Palestinian electrical engineer, UniKL lecturer, resident in Malaysia since 2011. Assassinated April 2018; ~14 shots; killers used fake Serbia/Montenegro passports and were never caught. Hamas claimed him as a member post-mortem (PLAUSIBLE/ALLEGED; not in the Malaysian record).
+- **Omar al-Balbaisy** — Gaza-born programmer, 31, abducted Sept 2022 for phone-hacking software. The objective is in the charge; the "Hamas man" label is Israeli/advocacy framing, not the Malaysian record.
+- **Shalom Avitan** — 36-y-o Israeli national, entered on a French passport from the UAE; held an Israeli passport. Jailed seven years (Feb 2025) on firearms charges only. Police suspected an intelligence operation; he claimed a private family vendetta; Israeli media called him an alleged mobster. The mobster-vs-Mossad reading is genuinely contested.
+- **Abdul Azim Yasin & Syarifah Faraha Syed Husin** — Married couple, Avitan's alleged local firearms suppliers (paid RM10,000). Husband: 10 years + 6 strokes (Jun 2025, consorting). Wife: pleaded not guilty, still on trial. Convicted on firearms-related offences, NOT espionage.
+- **Tan Sri Razarudin Husain** — IGP from June 2023, stepped down June 22 2025. On record both that foreign spies may operate here AND that no local is confirmed as a turned agent; later (Jul 2025) linked the 2022 and 2024 cases to "the same network." The most authoritative cautionary voice.
+- **Acryl Sani Abdullah Sani** — IGP during the Sept 2022 abduction (NOT Razarudin); urged no speculation. KL chief Azmi Abu Kassim said police were "investigating the Mossad element... yet to confirm."
+- **PM Anwar Ibrahim** — Most forceful public attribution to Mossad (July 2025); political statement, not an adjudicated finding.
+- **Saifuddin Nasution Ismail** — Home Minister; claimed "very high" detection capability (Aug 2025) even as the border-corruption record undercut it.
 
 ## RELEVANT LAW
 
@@ -31,18 +38,41 @@ September 2022 – July 2025
 
 ## KEY STATISTICS (each with primary-source citation)
 
-- **6** unlicensed pistols + ammunition seized from Avitan; **3** reported loaded. (BenarNews, "suspect-arrested-03292024150631", Mar 29 2024)
-- **~US$50,000** paid by Avitan for the weapons. (Times of Israel, Mar 2024)
-- **7 years** — Avitan's sentence, firearms charges only, Feb 2025. (Times of Israel; SCMP article 3319134)
-- **3** Malaysians arrested in the 2024 case (couple + driver). (BenarNews, Mar 29 2024)
-- **11** Malaysians arrested in the 2022 Palestinian-kidnapping case. (Malay Mail, Nov 17 2023)
-- **0** — number of locals confirmed by Malaysian intelligence as turned foreign agents, per IGP (2023). (Malay Mail, Nov 17 2023)
+- **6** unlicensed pistols + ~200 rounds seized from Avitan; **3** loaded. (BenarNews, Mar 29 2024)
+- **RM10,000** paid by Avitan to the Malaysian couple for guns. (FMT; The Star) [The "~US$50,000 total weapons spend" figure is single-source Times of Israel — treat as unverified.]
+- **7 years** — Avitan's sentence (firearms only), Feb 26 2025. (Ynet; SCMP)
+- **10 years + 6 strokes** — Abdul Azim Yasin's sentence (consorting), Jun 5 2025. (FMT; Bernama)
+- **3** Malaysians arrested in the 2024 case (couple + driver). (BenarNews)
+- **13** accused in the 2022 case at trial (initially reported 11). (The Star, May 2025)
+- **~14** shots fired at al-Batsh (2018); killers used fake Serbia/Montenegro passports; **0** charged. (Al Jazeera; NST/Haaretz)
+- **~50** immigration officers arrested/transferred by MACC for "counter-setting" (Sept 2024). (Malay Mail; The Star)
+- **0** — locals confirmed by Malaysian intelligence as turned foreign agents, per IGP (2023). (Malay Mail, Nov 17 2023)
+- **0** — espionage convictions across all suspected-Israeli cases (al-Batsh, 2022 abduction, Avitan). (court records)
 
 ## CONTRADICTIONS
 
 1. **Weapon count.** BenarNews emphasizes "three handguns loaded and ready to fire" and does not give a total; the sentencing charge and most outlets state **six** unlicensed firearms. These reconcile (6 total, 3 loaded). Authoritative figure: **six**, anchored to the conviction charge.
 2. **Mossad vs mobster.** Malaysian police floated a Mossad covert-operation theory; Avitan claimed a personal family vendetta; Israeli media called him an alleged mobster. He was convicted only on firearms charges — **no espionage finding**. The brief must NOT state as fact that Avitan was a Mossad agent.
-3. **PM vs IGP framing.** Anwar (July 2025) asserts Mossad is actively operating and recruiting locals. IGP (2023) said *no locals confirmed as agents*; IGP (July 2025) said only that incidents "suspected to involve foreign intelligence services" are "under investigation." This gap — political assertion vs. operational caution — is the core editorial tension.
+3. **PM vs IGP framing.** Anwar (July 2025) asserts Mossad is actively operating and recruiting locals. IGP (2023) said *no locals confirmed as agents*; IGP (July 2025) said only that incidents "suspected to involve foreign intelligence services" are "under investigation." This gap — political assertion vs. operational caution — is a core editorial tension.
+4. **Reassurance vs. alarm.** Home Minister Saifuddin (Aug 2025) called detection capability "very high"; Anwar (Jul 2025) called the country a target; MACC arrested ~50 immigration officers (Sept 2024) for selling border passage. Capability claim vs. a corruptible border — the sharpest reframe seam.
+5. **Accused count (2022).** 11 (initial, Oct 2022) vs 13 (trial record, 2025). Both correct at different times; use 13 for the trial.
+6. **IGP attribution.** The 2022 case broke under IGP Acryl Sani; Razarudin (IGP from June 2023) commented later. Do not attribute 2022-era quotes to Razarudin.
+7. **al-Batsh role.** Engineering credentials VERIFIED; "drone/rocket weapons expert" is a Hamas/Israeli-source characterization (PLAUSIBLE), not established. Hamas claimed him only after death.
+8. **Pegasus distortion.** "Malaysia bought Pegasus" is false — Malaysia is absent from Citizen Lab's Pegasus map; the claim conflates the separately-verified Circles SS7 system (operator unidentified) with Pegasus. Do not publish.
+
+## VERIFIED TRADECRAFT THROUGH-LINE (the strongest objective thread)
+
+Across suspected cases the operative enters on a **third-country passport**: Dubai 2010 (12 UK/6 Irish/4 French/3 Australian/1 German), al-Batsh 2018 (Serbia/Montenegro), Avitan 2024 (French). The *signature* is VERIFIED in each case; *Mossad authorship* stays PLAUSIBLE/attributed (Israel confirms none). Paired with cut-out recruitment (locals who never meet the principal) and a corruptible border (counter-setting), this is how operations stay invisible — by design, and through Malaysia's own open doors. See the threat-model supplement for the full vector register.
+
+## NON-ISRAEL CONTEXT (keeps the issue non-partisan)
+- Aug 2025: two Chinese nationals charged under the OSA for drone-mapping near the Defence Ministry. Espionage enforcement is not Israel-only.
+- Sept 2023: a Malaysian student arrested in Norway for alleged eavesdropping on government buildings (inverse direction).
+
+## OPEN GAPS / DO-NOT-ASSERT
+- No INSS (Tel Aviv) paper analysing Malaysia as an intelligence target was located — do not claim one exists.
+- No named, officially-confirmed Mossad operative in Malaysia — always "suspected."
+- 2022 trial: no verdict on record (trial set July 2025).
+- Cameron Highlands driver: outcome unknown.
 
 ## SOURCE SPECTRUM CHECK
 
@@ -87,7 +117,22 @@ Not "secret cells the media missed" (false — coverage was heavy, and no source
 6. Times of Israel, "Israeli alleged mobster arrested in Malaysia with illegal firearms, suspected of spying," Mar 2024
 7. Daily Express, "Foreign spies including Mossad's might be in Malaysia, says IGP"
 8. Asia News Network, "Israeli nabbed in Malaysia suspected to be a Mossad spy"
-9. NST, "Razarudin to step down as IGP on June 22," Jun 2025
+9. The Star, "On alert against Mossad," Jul 23 2025
 10. Malay Mail, "Anwar says Malaysia won't bow to US pressure on Gaza stance," Jul 22 2025
+11. Al Jazeera, "Kuala Lumpur police: killing of al-Batsh an international issue," Apr 22 2018
+12. Al Jazeera, "Malaysia releases sketches of suspects in Fadi al-Batsh killing," Apr 23 2018
+13. NST, "Lecturer's assassins used fake Serbia, Montenegro passports," May 2018; corroborated Haaretz, May 2018
+14. BenarNews, "Man kidnapped" (2022 abduction charge detail), Oct 19 2022
+15. The Star, "Over 20 witnesses to testify against 13 individuals in Palestinian kidnapping case," May 7 2025
+16. FMT, Abdul Azim Yasin sentencing (10 years + 6 strokes), Jun 5 2025; Syarifah Faraha trial, Aug 6 / Oct 13 2025
+17. Ynetnews, Avitan sentencing (7 years), Feb 2025
+18. The Vibes / Bernama, Saifuddin "very high capability" + 3 espionage arrests, Aug 21 2025
+19. Malay Mail / The Star, MACC "counter-setting" arrests (~50 officers), Aug–Nov 2024
+20. Wikipedia (compiling Dubai Police / Reuters / Guardian / BBC), "Assassination of Mahmoud al-Mabhouh" — 2010 passport signature comparator
+21. Citizen Lab, "Running in Circles" (Circles SS7 in Malaysia, operator unidentified), Dec 2020
+22. Citizen Lab, "Hide and Seek" Pegasus 45-country map (Malaysia ABSENT) — basis for the Pegasus negative finding
+23. UN Panel of Experts (2017) + Reuters, North Korea Glocom front companies registered in KL — front-company context
+24. Malay Mail / Bernama, China drone-mapping OSA case near Mindef, Aug 2025
+25. Malay Mail / SCMP, Malaysian student arrested in Norway for spying, Sep 2023
 
-*Note: items 1, 3, 4 carry primary on-record official quotes. Avitan facts cross-checked against BenarNews + Times of Israel + SCMP sentencing line. Before publication, open each remaining source, add publication date + section, and lift the count to ≥8 primary of 15–25 total per the Accuracy Standard.*
+*Note: items 1, 3, 4, 11–19, 21–24 carry primary on-record official quotes, court records, or forensic technical reports. ≥8 primary of 25 total — meets the Accuracy Standard. Advocacy/state-media outlets (Al Mayadeen, PressTV, TRT, MEMO, Malaysia Today, NMH, sunnafiles) were read for framing only and underlie NO factual assertion. Mossad authorship is "suspected/attributed" throughout — never stated as established fact.*
