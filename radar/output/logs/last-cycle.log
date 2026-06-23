@@ -1,63 +1,59 @@
-[32m2026-06-23 00:55:31[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-23 00:55:32[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-23 00:55:32[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-23 00:55:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-23 00:55:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-23 00:55:32[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-23 00:55:32[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-23 00:55:33[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5456 topics from state
-[32m2026-06-23 00:55:33[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-23 00:55:33[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-23T00:55:33.006066+00:00
-[32m2026-06-23 00:55:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-23 00:55:35[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-23 00:55:37[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-23 00:55:37[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-23 00:55:40[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-23 00:55:40[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 460 events
-[32m2026-06-23 00:55:41[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-06-23 00:55:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-23 00:55:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:56:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-23 00:56:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:56:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-23 00:56:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:56:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:56:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:56:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-23 00:56:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:57:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-23 00:57:03[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-23 00:57:07[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 13 events
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 504 events from 5 sources
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 504 events
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 530 within 24h (149 pruned)
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Lelaki disyaki rogol adik kandung sejak usia 10 tahun ditahan polis. Ketua Polis Kuala Terengganu Azli Mohd Noor berkata suspek ditahan susulan laporan polis dibuat oleh mangsa tengah malam tadi." importance=0.46
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Trump signs executive orders to boost US quantum computing. Leading US tech firms IBM, Microsoft and Google aim to deliver the first large-scale commercial quantum computer by 2029." importance=0.41
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Clive Davis, the starmaker behind decades of music superstardom. From Janis Joplin to Earth, Wind &#038; Fire, Aerosmith to Billy Joel, Patti Smith to Alicia Keys, Clive Davis built an empire of artis" importance=0.46
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Former Bayern stalwart Demichelis takes over at RB Leipzig. The 45-year-old signed a two-season contract, replacing Ole Werner, who was sacked on Wednesday after just one season in charge of the Saxon" importance=0.41
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Lorry driver in FRU crash cleared of stolen cow case but still faces trial over deadly accident. TELUK INTAN, June 22 &mdash; The lorry driver facing a charge of dangerous driving that caused the deat" importance=0.31
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Two couples plead not guilty in Johor Bahru to charges of abusing and intimidating maids. JOHOR BAHRU, June 22 &mdash; Two married couples claimed trial in the Magistrates&rsquo; Court here today to c" importance=0.36
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Dennis Lim takes charge as Penang’s new police chief, vows peace, order and stronger community ties. GEORGE TOWN, June 22 &mdash; Datuk Dennis Lim Kwang Keng, who was appointed new Penang police chief" importance=0.41
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Coroner sets Oct 23 as final date for Sabah schoolgirl Zara Qairina inquest hearing. KOTA KINABALU, June 22 &mdash; The Coroner&rsquo;s Court here has set Oct 23 as the final date for the inquest hear" importance=0.36
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Govt tables Cybercrime Bill in Parliament to replace outdated computer crimes law, cover AI offences. KUALA LUMPUR, June 22 &mdash; The Cybercrime Bill 2026, which seeks to repeal the Computer Crimes " importance=0.46
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "High Court reschedules ex-Youth and Sports official’s graft appeal to September amid defence application. KUALA LUMPUR, June 22 &mdash; The appeal hearing of former Youth and Sports Ministry (KBS) fin" importance=0.36
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [new_act] "Wawasan, Pejuang diterima masuk PN. Mesyuarat MT PN meluluskan permohonan dua parti baharu untuk menjadi parti komponen." importance=0.52
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Court in Ipoh sets July 1 for case involving woman accused of attacking Sultan Nazrin Shah. IPOH, June 22 &mdash; The Magistrate&rsquo;s Court here has set July 1 for case management involving a woman" importance=0.36
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Azalina sets out seven reforms to separate powers and tighten Public Prosecutor accountability. KUALA LUMPUR, June 22 &mdash; A parliamentary committee has unveiled seven concrete proposals to reshape" importance=0.51
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Three elephants, RM53m allegations and a graft probe: MACC looks into Dara, Amoi and Kelat transfer from Taiping Zoo to Japan. KUALA LUMPUR, June 22 &mdash; The Malaysian Anti-Corruption Commission (M" importance=0.42
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Government studying new Bar Course as possible replacement for CLP, Kulasegaran tells Dewan Rakyat. KUALA LUMPUR, June 22 &mdash; The government plans to replace the Certificate in Legal Practice (CLP" importance=0.46
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Eight Bills receive royal assent from King, Speaker Johari announces in Dewan Rakyat. KUALA LUMPUR, June 22 &mdash; His Majesty Sultan Ibrahim, King of Malaysia has granted royal assent to eight bills" importance=0.51
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Dewan Rakyat Speaker confirms Hamzah’s return as Opposition Leader. KUALA LUMPUR, June 22 &mdash; Larut MP Datuk Seri Hamzah Zainudin reportedly resumed his duties as Opposition Leader in..." importance=0.46
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "In Dewan Rakyat today: Parliament kicks off with Hormuz crisis queries, Haj reforms and AI safeguard. KUALA LUMPUR, June 22 &mdash; The economic impact of trade disruptions in the Strait of Hormuz and" importance=0.51
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [bill_reading] "From RM500 to over RM6,000? Association warns of 13-fold fee hike if Selangor reclassifies kids’ playlands. KUALA LUMPUR, June 21 &mdash; The Malaysian Association of Theme Parks and Family Attraction" importance=0.48
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 41), ('minister', 37), ('india', 32), ('chinese', 22), ('government', 21), ('prime minister', 18), ('pas', 17), ('indian', 16), ('election', 15), ('isa', 15)]
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5457 active topics
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36moutput              [0m | 773 active issues, 4678 new, 4685 pruned
-[32m2026-06-23 00:57:09[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-23 00:57:27[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=63  hmm=RT/67  cox=RT/773  sarima=RT/773
-[32m2026-06-23 00:57:27[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=773)
-[32m2026-06-23 00:57:27[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5457 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-06-23 03:13:27[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-23 03:13:27[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-23 03:13:27[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5457 topics from state
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-23 03:13:28[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-23T03:13:28.830595+00:00
+[32m2026-06-23 03:13:30[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-23 03:13:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-23 03:13:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-23 03:13:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-23 03:13:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-23 03:13:36[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 463 events
+[32m2026-06-23 03:13:37[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-06-23 03:13:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-23 03:13:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:13:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-23 03:14:00[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:14:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:14:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:14:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-23 03:14:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:14:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:14:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-23 03:14:47[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 6 events
+[32m2026-06-23 03:14:49[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-06-23 03:14:52[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 8 events
+[32m2026-06-23 03:14:52[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 511 events from 5 sources
+[32m2026-06-23 03:14:52[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 511 events
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 550 within 24h (160 pruned)
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Environment Ministry says it will not shield anyone from MACC probe into Japan elephant transfer. PUTRAJAYA, June 23 &mdash; The Ministry of Natural Resources and Environmental Sustainability (NRES) w" importance=0.41
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Admissions based on merit, not money, says public varsity chiefs. PUTRAJAYA, June 23 &mdash; The Committee of Vice-Chancellors and Rectors of Public Universities (JKNCR) yesterday stress..." importance=0.41
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Over RM6mil worth of items seized in raid on e-waste processing factory. A local man has also been detained for failing to produce documents for the items stored on the premises." importance=0.46
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Polis siasat lelaki berpakaian ala tentera di Kepong. Ketua Polis Gombak, Ibrahim Husin berkata siasatan dibuat ikut Seksyen 140 Kanun Keseksaan dan Seksyen 36 Akta Senjata 1960." importance=0.41
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "NRES sedia kerjasama penuh siasatan SPRM isu pindah gajah ke Jepun, kata menteri. Menterinya Arthur Joseph Kurup berkata pihaknya tidak berkompromi atau melindungi mana-mana pihak sekiranya terbukti w" importance=0.36
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Lorry driver in FRU crash cleared of stolen cow case but still faces trial over deadly accident. TELUK INTAN, June 22 &mdash; The lorry driver facing a charge of dangerous driving that caused the deat" importance=0.31
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Two couples plead not guilty in Johor Bahru to charges of abusing and intimidating maids. JOHOR BAHRU, June 22 &mdash; Two married couples claimed trial in the Magistrates&rsquo; Court here today to c" importance=0.36
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Dennis Lim takes charge as Penang’s new police chief, vows peace, order and stronger community ties. GEORGE TOWN, June 22 &mdash; Datuk Dennis Lim Kwang Keng, who was appointed new Penang police chief" importance=0.41
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Coroner sets Oct 23 as final date for Sabah schoolgirl Zara Qairina inquest hearing. KOTA KINABALU, June 22 &mdash; The Coroner&rsquo;s Court here has set Oct 23 as the final date for the inquest hear" importance=0.36
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Govt tables Cybercrime Bill in Parliament to replace outdated computer crimes law, cover AI offences. KUALA LUMPUR, June 22 &mdash; The Cybercrime Bill 2026, which seeks to repeal the Computer Crimes " importance=0.46
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "High Court reschedules ex-Youth and Sports official’s graft appeal to September amid defence application. KUALA LUMPUR, June 22 &mdash; The appeal hearing of former Youth and Sports Ministry (KBS) fin" importance=0.36
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Court in Ipoh sets July 1 for case involving woman accused of attacking Sultan Nazrin Shah. IPOH, June 22 &mdash; The Magistrate&rsquo;s Court here has set July 1 for case management involving a woman" importance=0.36
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Azalina sets out seven reforms to separate powers and tighten Public Prosecutor accountability. KUALA LUMPUR, June 22 &mdash; A parliamentary committee has unveiled seven concrete proposals to reshape" importance=0.51
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Three elephants, RM53m allegations and a graft probe: MACC looks into Dara, Amoi and Kelat transfer from Taiping Zoo to Japan. KUALA LUMPUR, June 22 &mdash; The Malaysian Anti-Corruption Commission (M" importance=0.42
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Government studying new Bar Course as possible replacement for CLP, Kulasegaran tells Dewan Rakyat. KUALA LUMPUR, June 22 &mdash; The government plans to replace the Certificate in Legal Practice (CLP" importance=0.46
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Eight Bills receive royal assent from King, Speaker Johari announces in Dewan Rakyat. KUALA LUMPUR, June 22 &mdash; His Majesty Sultan Ibrahim, King of Malaysia has granted royal assent to eight bills" importance=0.51
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Dewan Rakyat Speaker confirms Hamzah’s return as Opposition Leader. KUALA LUMPUR, June 22 &mdash; Larut MP Datuk Seri Hamzah Zainudin reportedly resumed his duties as Opposition Leader in..." importance=0.46
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 38), ('minister', 38), ('india', 31), ('government', 26), ('chinese', 26), ('pas', 21), ('election', 18), ('prime minister', 16), ('indian', 14), ('isa', 14)]
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 13 events monitored, 13 flagged
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5463 active topics
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36moutput              [0m | 775 active issues, 4690 new, 4688 pruned
+[32m2026-06-23 03:14:53[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-23 03:15:10[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=63  hmm=OK/67  cox=RT/775  sarima=RT/775
+[32m2026-06-23 03:15:10[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=775)
+[32m2026-06-23 03:15:11[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5463 active topics. Top: parliament budget session session opens (score: 0.98)
