@@ -1,0 +1,204 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "The suspected Israeli operations in Malaysia share one signature: the operative always enters on another country's passport.",
+      "sub": "The 2018 assassins of a Palestinian lecturer carried Serbian and Montenegrin passports; the 2024 gunman flew in French. It is the method Dubai documented in 2010.",
+      "sources": [
+        "Al Jazeera, 22-23 Apr 2018 (al-Batsh, suspect passports/sketches)",
+        "BenarNews, 29 Mar 2024 (Avitan French passport)",
+        "Dubai Police via Reuters/Guardian, 2010 (al-Mabhouh passport signature)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "h": "Fadi al-Batsh, a university lecturer, was shot about 14 times walking to dawn prayers in Kuala Lumpur.",
+      "s": "Two motorcycle gunmen who entered on fake Serbia and Montenegro passports killed him in April 2018 and vanished. No one was ever charged; the deputy prime minister said they had links to a foreign intelligence agency.",
+      "sources": [
+        "Al Jazeera, 22-23 Apr 2018",
+        "NST / Haaretz, May 2018 (fake Serbia/Montenegro passports, IGP Fuzi Harun)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "In 2022, thirteen Malaysians were paid to abduct a Gaza programmer for his phone-hacking software.",
+      "s": "Police later said that kidnapping and the 2024 gun-smuggling case were linked to the same network. The recruits got single tasks and never met who paid them, so not one has been confirmed as an agent.",
+      "sources": [
+        "The Star, 7 May 2025 (13 accused, charge wording)",
+        "Scoop, 23 Jul 2025 (IGP: 'same network')",
+        "Malay Mail, 17 Nov 2023 (compartmentalized recruitment; no local confirmed as agent)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Every conviction has been for guns, not spying: seven years for the Israeli, ten years and six strokes for his Malaysian supplier.",
+      "s": "Espionage has never been proven in a Malaysian court. Yet in 2024 roughly fifty immigration officers were arrested for 'counter-setting', selling foreigners passage through the border the government calls well guarded.",
+      "sources": [
+        "Ynet/SCMP, Feb 2025 (Avitan 7 years); FMT/Bernama, 5 Jun 2025 (Abdul Azim Yasin 10 years + 6 strokes)",
+        "Malay Mail/The Star, 2024 (~50 immigration officers, MACC counter-setting)",
+        "The Vibes/Bernama, 21 Aug 2025 (Saifuddin 'very high' detection capability)"
+      ]
+    },
+    {
+      "t": "reframe",
+      "text": "The real exposure is not a secret cell. It is a border that can be bought and recruits who never meet the boss.",
+      "sources": [
+        "Malay Mail, 17 Nov 2023 (cut-out method); MACC counter-setting arrests, 2024"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of a burglar who never picks a lock.",
+      "text": "He pays the doorman, hires local kids who never see his face, and leaves on a passport borrowed from a tourist. Nothing in the police report says burglary.",
+      "sources": [
+        "Composite illustration of the verified method (passport signature + cut-outs + counter-setting)"
+      ]
+    },
+    {
+      "t": "view",
+      "text": "Malaysia's danger was never that it cannot imagine spies. It is that the cheapest way in, a bought border and deniable hands, is the door the country left open. Suspicion is loud; proof, by design, stays quiet.",
+      "sources": [
+        "Synthesis of al-Batsh (2018), 2022 abduction, Avitan (2024-25), MACC 2024, Anwar/IGP/Saifuddin 2025"
+      ]
+    }
+  ],
+  "sources": "Al Jazeera 22-23 Apr 2018; NST/Haaretz May 2018; BenarNews 29 Mar 2024; The Star 7 May 2025 + 23 Jul 2025; Scoop 23 Jul 2025; Malay Mail 17 Nov 2023; Ynet/SCMP Feb 2025; FMT/Bernama 5 Jun 2025; The Vibes/Bernama 21 Aug 2025; MACC counter-setting reporting 2024; Dubai Police via Reuters 2010",
+  "confidence": "Medium-High — the tradecraft signature (third-country passports), the convictions (firearms only), the cut-out method, the 'same network' link, and the counter-setting arrests are all primary-sourced. Mossad authorship is stated as suspected/attributed throughout, never as established fact.",
+  "lenses_used": [
+    "Security",
+    "Political",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Legal",
+    "Regional"
+  ],
+  "needs_verification": [
+    "Exact wording/venue of Anwar's 22 Jul 2025 statement (paraphrased across outlets; one rendered quote). Confirm verbatim vs a primary transcript/Bernama.",
+    "The Cameron Highlands driver's charge and outcome — arrest verified, downstream record cold; cards avoid asserting one.",
+    "al-Batsh shot count: ~14 hits is authoritative (post-mortem/markers); 'at least 20 rounds fired' is a secondary total. Card says 'about 14'.",
+    "2022 trial verdict — none on record as of July 2025 trial date; cards do not assert a verdict.",
+    "MACC counter-setting officer count: ~50 arrested/transferred (Sept 2024); confirm exact figure and split (arrested vs transferred) before publication."
+  ],
+  "source_notes": "Reframed from the v1 draft to foreground the VERIFIED invisible-mechanism (third-country passport + local cut-outs + corruptible border) per editor direction. CONTRADICTIONS carried: (1) Mossad-vs-mobster on Avitan — convicted on firearms only; no card states he was a Mossad agent. (2) PM-vs-IGP and reassurance-vs-alarm — surfaced in fact 3 + reframe, not smoothed. (3) 11-vs-13 accused — card uses 13 (trial record). (4) Pegasus distortion excluded entirely (Malaysia absent from Citizen Lab's Pegasus map). 3R discipline: all framing targets the state, the method, and Malaysia's own border corruption — never a people or a faith. al-Batsh's 'dawn prayers' is a verified circumstance of the killing (conveys brazenness/impunity, anger-at-process), not a religious claim. The Dubai 2010 comparator is labelled as the documented signature, with authorship 'suspected'. No INSS-on-Malaysia source asserted (not located). Front-company (North Korea/Glocom) and spyware (Circles/Hacking Team/FinFisher) material deliberately kept OUT of the cards: it shows Malaysia is permissive ground but is mostly NOT Mossad-linked, and including it would overclaim.",
+  "issue_id": "2009",
+  "issue_headline": "How Spies Walk Into Malaysia, and Walk Out Uncharged"
+}

@@ -1,0 +1,205 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "The suspected Israeli operations in Malaysia share one signature: the operative always enters on another country's passport.",
+      "sub": "The 2018 assassins of a Palestinian lecturer carried Serbian and Montenegrin passports; the 2024 gunman flew in French. It is the method Dubai documented in 2010.",
+      "sources": [
+        "Al Jazeera, 22-23 Apr 2018 (al-Batsh, suspect passports/sketches)",
+        "BenarNews, 29 Mar 2024 (Avitan French passport)",
+        "Dubai Police via Reuters/Guardian, 2010 (al-Mabhouh passport signature)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "h": "Fadi al-Batsh, a university lecturer, was shot about 14 times walking to dawn prayers in Kuala Lumpur.",
+      "s": "Two motorcycle gunmen who entered on fake Serbia and Montenegro passports killed him in April 2018 and vanished. No one was ever charged; the deputy prime minister said they had links to a foreign intelligence agency.",
+      "sources": [
+        "Al Jazeera, 22-23 Apr 2018",
+        "NST / Haaretz, May 2018 (fake Serbia/Montenegro passports, IGP Fuzi Harun)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "In 2022, thirteen Malaysians were paid to abduct a Gaza programmer for his phone-hacking software.",
+      "s": "Police later said that kidnapping and the 2024 gun-smuggling case were linked to the same network. The recruits got single tasks and never met who paid them, so not one has been confirmed as an agent.",
+      "sources": [
+        "The Star, 7 May 2025 (13 accused, charge wording)",
+        "Scoop, 23 Jul 2025 (IGP: 'same network')",
+        "Malay Mail, 17 Nov 2023 (compartmentalized recruitment; no local confirmed as agent)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Every conviction has been for guns, not spying: seven years for the Israeli, ten years and six strokes for his Malaysian supplier.",
+      "s": "Espionage has never been proven in a Malaysian court. Yet in 2024 roughly fifty immigration officers were arrested for 'counter-setting', selling foreigners passage through the border the government calls well guarded.",
+      "sources": [
+        "Ynet/SCMP, Feb 2025 (Avitan 7 years); FMT/Bernama, 5 Jun 2025 (Abdul Azim Yasin 10 years + 6 strokes)",
+        "Malay Mail/The Star, 2024 (~50 immigration officers, MACC counter-setting)",
+        "The Vibes/Bernama, 21 Aug 2025 (Saifuddin 'very high' detection capability)"
+      ]
+    },
+    {
+      "t": "reframe",
+      "text": "The real exposure is not a secret cell. It is a border that can be bought and recruits who never meet the boss.",
+      "sources": [
+        "Malay Mail, 17 Nov 2023 (cut-out method); MACC counter-setting arrests, 2024"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of a burglar who never picks a lock.",
+      "text": "He pays the doorman, hires local kids who never see his face, and leaves on a passport borrowed from a tourist. Nothing in the police report says burglary.",
+      "sources": [
+        "Composite illustration of the verified method (passport signature + cut-outs + counter-setting)"
+      ]
+    },
+    {
+      "t": "view",
+      "text": "Malaysia's danger was never that it cannot imagine spies. It is that the cheapest way in, a bought border and deniable hands, is the door the country left open. Suspicion is loud; proof, by design, stays quiet.",
+      "sources": [
+        "Synthesis of al-Batsh (2018), 2022 abduction, Avitan (2024-25), MACC 2024, Anwar/IGP/Saifuddin 2025"
+      ]
+    }
+  ],
+  "sources": "Al Jazeera 22-23 Apr 2018; NST/Haaretz May 2018; BenarNews 29 Mar 2024; The Star 7 May 2025 + 23 Jul 2025; Scoop 23 Jul 2025; Malay Mail 17 Nov 2023; Ynet/SCMP Feb 2025; FMT/Bernama 5 Jun 2025; The Vibes/Bernama 21 Aug 2025; MACC counter-setting reporting 2024; Dubai Police via Reuters 2010",
+  "confidence": "Medium-High — the tradecraft signature (third-country passports), the convictions (firearms only), the cut-out method, the 'same network' link, and the counter-setting arrests are all primary-sourced. Mossad authorship is stated as suspected/attributed throughout, never as established fact.",
+  "lenses_used": [
+    "Security",
+    "Political",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Legal",
+    "Regional"
+  ],
+  "needs_verification": [
+    "Exact wording/venue of Anwar's 22 Jul 2025 statement (paraphrased across outlets; one rendered quote). Confirm verbatim vs a primary transcript/Bernama.",
+    "The Cameron Highlands driver's charge and outcome — arrest verified, downstream record cold; cards avoid asserting one.",
+    "al-Batsh shot count: ~14 hits is authoritative (post-mortem/markers); 'at least 20 rounds fired' is a secondary total. Card says 'about 14'.",
+    "2022 trial verdict — none on record as of July 2025 trial date; cards do not assert a verdict.",
+    "MACC counter-setting officer count: ~50 arrested/transferred (Sept 2024); confirm exact figure and split (arrested vs transferred) before publication."
+  ],
+  "source_notes": "Reframed from the v1 draft to foreground the VERIFIED invisible-mechanism (third-country passport + local cut-outs + corruptible border) per editor direction. CONTRADICTIONS carried: (1) Mossad-vs-mobster on Avitan — convicted on firearms only; no card states he was a Mossad agent. (2) PM-vs-IGP and reassurance-vs-alarm — surfaced in fact 3 + reframe, not smoothed. (3) 11-vs-13 accused — card uses 13 (trial record). (4) Pegasus distortion excluded entirely (Malaysia absent from Citizen Lab's Pegasus map). 3R discipline: all framing targets the state, the method, and Malaysia's own border corruption — never a people or a faith. al-Batsh's 'dawn prayers' is a verified circumstance of the killing (conveys brazenness/impunity, anger-at-process), not a religious claim. The Dubai 2010 comparator is labelled as the documented signature, with authorship 'suspected'. No INSS-on-Malaysia source asserted (not located). Front-company (North Korea/Glocom) and spyware (Circles/Hacking Team/FinFisher) material deliberately kept OUT of the cards: it shows Malaysia is permissive ground but is mostly NOT Mossad-linked, and including it would overclaim.",
+  "issue_id": "2009",
+  "issue_headline": "How Spies Walk Into Malaysia, and Walk Out Uncharged"
+}
