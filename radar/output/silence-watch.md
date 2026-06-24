@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-06-24 09:15 UTC. Queue size: 791. Picks shown: 25.
+Scan: 2026-06-24 11:07 UTC. Queue size: 804. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 1.080 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 38.9 days (source date: 2026-06-24, first seen: 2026-05-16)
+- **Age in queue:** 39.0 days (source date: 2026-06-24, first seen: 2026-05-16)
 
 - **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 32.8 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 32.9 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -44,7 +44,7 @@ developed.
 
 - **Rank score:** 1.030 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 38.9 days (source date: 2026-06-24, first seen: 2026-05-16)
+- **Age in queue:** 39.0 days (source date: 2026-06-24, first seen: 2026-05-16)
 
 - **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 50.5 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 50.6 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 55.5 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 55.6 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 38.9 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 39.0 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 61.5 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 61.6 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 33.8 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 33.9 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 36.8 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 36.9 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -152,9 +152,9 @@ developed.
 
 ### S13. tertangguh 3 tahun, bicara kes bunuh nhaveen disambung. mahkamah persekutuan batal rayuan pendakwaan terhad...
 
-- **Rank score:** 0.656 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.658 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 5.2 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. mahkamah cyprus perintah sita vila mewah jho low. mahkamah daerah nicosia keluar susulan permohonan bersama...
 
-- **Rank score:** 0.643 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.644 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 12.8 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 12.9 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. putrajaya lulus rm22 juta untuk senjata akps. menteri dalam negeri berkata langkah itu diputuskan selepas s...
 
-- **Rank score:** 0.598 (silence=0.99 × importance=0.58 × age_factor)
+- **Rank score:** 0.599 (silence=0.99 × importance=0.58 × age_factor)
 
-- **Age in queue:** 1.1 days (source date: 2026-06-23, first seen: 2026-06-23)
+- **Age in queue:** 1.2 days (source date: 2026-06-23, first seen: 2026-06-23)
 
 - **Coverage:** 4 news, 2 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed.
 
 ### S16. dakwaan siasatan niat jahat: sprm berjaya rayu ketepi saman pengarah syarikat. mahkamah rayuan putuskan mah...
 
-- **Rank score:** 0.581 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.582 (silence=0.98 × importance=0.51 × age_factor)
 
 - **Age in queue:** 5.1 days (source date: 2026-06-19, first seen: 2026-06-19)
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. 854 pengamal perubatan kelulusan luar negara didaftar sebagai pakar. majlis perubatan malaysia mendaftarkan...
 
-- **Rank score:** 0.578 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.579 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 0.9 days (source date: 2026-06-23, first seen: 2026-06-23)
+- **Age in queue:** 1.0 days (source date: 2026-06-23, first seen: 2026-06-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -207,7 +207,7 @@ developed.
 
 ### S18. 1,638 syarikat dikait tuntutan palsu rm45 juta daya kerjaya 2.0. sprm membuka 63 kertas siasatan dan menaha...
 
-- **Rank score:** 0.576 (silence=0.98 × importance=0.49 × age_factor)
+- **Rank score:** 0.578 (silence=0.98 × importance=0.49 × age_factor)
 
 - **Age in queue:** 6.1 days (source date: 2026-06-18, first seen: 2026-06-18)
 
@@ -218,7 +218,7 @@ developed.
 
 ### S19. ahli parlimen selar jabatan penjara cuba ‘elak’ dapatan suhakam. wakil rakyat dap lim lip eng kecewa tiada ...
 
-- **Rank score:** 0.568 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.569 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 7.1 days (source date: 2026-06-17, first seen: 2026-06-17)
 
@@ -229,7 +229,7 @@ developed.
 
 ### S20. 3r issues risk giving malay voters ’emotional fatigue’, says analyst. awang azman pawi of universiti malaya...
 
-- **Rank score:** 0.566 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.568 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 3.8 days (source date: 2026-06-20, first seen: 2026-06-20)
 
@@ -238,20 +238,9 @@ developed.
 - **Dimensions at risk:** ethnic, political
 
 
-### S21. hujan lebat dipercayai punca ribuan ikan mati di tasik taman danau kota. dbkl berkata siasatan awal dan pem...
+### S21. keputusan terhadap muhyiddin kekal, ganti rugi dikurangkan. mahkamah rayuan mengurangkan ganti rugi am kepa...
 
-- **Rank score:** 0.566 (silence=0.98 × importance=0.47 × age_factor)
-
-- **Age in queue:** 7.1 days (source date: 2026-06-17, first seen: 2026-06-17)
-
-- **Coverage:** 5 news, 2 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S22. keputusan terhadap muhyiddin kekal, ganti rugi dikurangkan. mahkamah rayuan mengurangkan ganti rugi am kepa...
-
-- **Rank score:** 0.563 (silence=1.00 × importance=0.47 × age_factor)
+- **Rank score:** 0.564 (silence=1.00 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.1 days (source date: 2026-06-18, first seen: 2026-06-18)
 
@@ -260,9 +249,9 @@ developed.
 - **Dimensions at risk:** legal, political
 
 
-### S23. prn johor penentu naratif menuju pru16. ahli parlimen segamat, yuneswaran ramaraj, kata retorik tanpa pelak...
+### S22. prn johor penentu naratif menuju pru16. ahli parlimen segamat, yuneswaran ramaraj, kata retorik tanpa pelak...
 
-- **Rank score:** 0.561 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.562 (silence=0.98 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-06-17, first seen: 2026-06-17)
 
@@ -271,24 +260,35 @@ developed.
 - **Dimensions at risk:** political
 
 
-### S24. pindaan akta pengangkutan jalan dibentang isnin ini. menteri pengangkutan, loke siew fook berkata antara pi...
+### S23. pindaan akta pengangkutan jalan dibentang isnin ini. menteri pengangkutan, loke siew fook berkata antara pi...
 
-- **Rank score:** 0.561 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.562 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.9 days (source date: 2026-06-18, first seen: 2026-06-18)
+- **Age in queue:** 6.0 days (source date: 2026-06-18, first seen: 2026-06-18)
 
 - **Coverage:** 5 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political, religious
 
 
-### S25. parti baharu dah daftar cuma tukar nama, kata hamzah. ahli parlimen larut berkata tak berbangkit isu parti ...
+### S24. parti baharu dah daftar cuma tukar nama, kata hamzah. ahli parlimen larut berkata tak berbangkit isu parti ...
 
-- **Rank score:** 0.557 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.558 (silence=0.98 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.7 days (source date: 2026-06-18, first seen: 2026-06-17)
 
 - **Coverage:** 8 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S25. speaker ada kuasa sahkan siapa ketua pembangkang, kata kiandee. ahli parlimen beluran berkata kedudukan ham...
+
+- **Rank score:** 0.554 (silence=0.97 × importance=0.47 × age_factor)
+
+- **Age in queue:** 7.0 days (source date: 2026-06-17, first seen: 2026-06-17)
+
+- **Coverage:** 10 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
