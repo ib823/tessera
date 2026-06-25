@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-24T22:34:25.939Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-25T00:59:20.869Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (81)
+## ⏳ TO POST (82)
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -182,6 +182,43 @@ The recovery story is no longer 'how little came back'. It is whether the recove
 RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
 
 https://thefourthangle.pages.dev/issue/1867
+```
+
+### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2009-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2009`
+
+**1/7** _(hook — attach image, NO link)_ · 262 chars
+```
+Suspected Israeli operations in Malaysia share a signature: the operative enters on another country's passport. The 2018 assassins of a Palestinian lecturer used Serbian and Montenegrin papers; the 2024 gunman flew in French. Dubai's 2010 hit squad did the same.
+```
+**2/7** _(fact)_ · 91 chars
+```
+Fadi al-Batsh, a lecturer, was shot about 14 times walking to dawn prayers in Kuala Lumpur.
+```
+**3/7** _(fact)_ · 105 chars
+```
+In 2022, more than a dozen Malaysians abducted a Gaza programmer to force out his phone-hacking software.
+```
+**4/7** _(fact)_ · 253 chars
+```
+Every conviction so far is for guns or kidnapping, never spying. Seven years for the Israeli, ten and six strokes for his arms supplier, five each for six abductors. Yet about 50 immigration officers were arrested in 2024 for selling foreigners passage.
+```
+**5/7** _(reframe)_ · 101 chars
+```
+The danger never lay in a hidden cell. It lies in a border for sale and locals hired at arm's length.
+```
+**6/7** _(analogy)_ · 205 chars
+```
+Think of a burglar who never picks a lock. He pays the doorman, hires local hands who never see his face, and leaves on a passport borrowed from a tourist. The police report says trespassing, not burglary.
+```
+**7/7** _(view — ONLY post with the link)_ · 207 chars
+```
+Ministers now name spies in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
+
+https://thefourthangle.pages.dev/issue/2009
 ```
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
