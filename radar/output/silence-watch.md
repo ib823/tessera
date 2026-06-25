@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-06-25 20:46 UTC. Queue size: 805. Picks shown: 25.
+Scan: 2026-06-25 22:37 UTC. Queue size: 806. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 1.080 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 40.4 days (source date: 2026-06-25, first seen: 2026-05-16)
+- **Age in queue:** 40.5 days (source date: 2026-06-25, first seen: 2026-05-16)
 
 - **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 34.3 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 34.4 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -44,7 +44,7 @@ developed.
 
 - **Rank score:** 1.024 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 40.4 days (source date: 2026-06-25, first seen: 2026-05-16)
+- **Age in queue:** 40.5 days (source date: 2026-06-25, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 52.0 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 52.1 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 57.0 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 57.1 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 85.9 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 86.0 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 40.4 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 40.5 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 51.9 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 52.0 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 63.0 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 63.1 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 35.3 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 35.4 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 36.1 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 36.2 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 38.3 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 38.4 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -152,9 +152,9 @@ developed.
 
 ### S13. tertangguh 3 tahun, bicara kes bunuh nhaveen disambung. mahkamah persekutuan batal rayuan pendakwaan terhad...
 
-- **Rank score:** 0.684 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.686 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 6.7 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. mahkamah cyprus perintah sita vila mewah jho low. mahkamah daerah nicosia keluar susulan permohonan bersama...
 
-- **Rank score:** 0.665 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.667 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 14.3 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 14.4 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -174,7 +174,7 @@ developed.
 
 ### S15. putrajaya lulus rm22 juta untuk senjata akps. menteri dalam negeri berkata langkah itu diputuskan selepas s...
 
-- **Rank score:** 0.626 (silence=0.99 × importance=0.58 × age_factor)
+- **Rank score:** 0.628 (silence=0.99 × importance=0.58 × age_factor)
 
 - **Age in queue:** 2.6 days (source date: 2026-06-23, first seen: 2026-06-23)
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. 854 pengamal perubatan kelulusan luar negara didaftar sebagai pakar. majlis perubatan malaysia mendaftarkan...
 
-- **Rank score:** 0.605 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.607 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 2.4 days (source date: 2026-06-23, first seen: 2026-06-23)
+- **Age in queue:** 2.5 days (source date: 2026-06-23, first seen: 2026-06-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. dakwaan siasatan niat jahat: sprm berjaya rayu ketepi saman pengarah syarikat. mahkamah rayuan putuskan mah...
 
-- **Rank score:** 0.605 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.606 (silence=0.98 × importance=0.51 × age_factor)
 
-- **Age in queue:** 6.5 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 6.6 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. 3r issues risk giving malay voters ’emotional fatigue’, says analyst. awang azman pawi of universiti malaya...
 
-- **Rank score:** 0.591 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.593 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.2 days (source date: 2026-06-20, first seen: 2026-06-20)
+- **Age in queue:** 5.3 days (source date: 2026-06-20, first seen: 2026-06-20)
 
 - **Coverage:** 10 news, 5 social — pattern: _below-expected coverage_
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. wawasan, pejuang diterima masuk pn. mesyuarat mt pn meluluskan permohonan dua parti baharu untuk menjadi pa...
 
-- **Rank score:** 0.565 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.567 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.1 days (source date: 2026-06-23, first seen: 2026-06-22)
+- **Age in queue:** 3.2 days (source date: 2026-06-23, first seen: 2026-06-22)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. goodbye rob friend, hello questions. he arrived as harimau malaya’s ceo, promising transformation. he leave...
 
-- **Rank score:** 0.564 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.566 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 6.9 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
 
@@ -240,9 +240,9 @@ developed.
 
 ### S21. kisah tragis claude fable, ai paling berkuasa pernah dicipta. ai paling canggih pernah dibuka kepada orang ...
 
-- **Rank score:** 0.564 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.566 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 6.9 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. nancy shukri, keluarga hargai sokongan moral, penghormatan terakhir. kehadiran serta tanda ingatan menjadi ...
 
-- **Rank score:** 0.555 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.557 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 6.5 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 5 news, 2 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. sprm siasat dakwaan ketirisan rm53 juta pindah dara, amoi dan kelat ke jepun. dakwaan ketirisan jutaan ring...
 
-- **Rank score:** 0.546 (silence=0.99 × importance=0.49 × age_factor)
+- **Rank score:** 0.547 (silence=0.99 × importance=0.49 × age_factor)
 
-- **Age in queue:** 3.6 days (source date: 2026-06-22, first seen: 2026-06-22)
+- **Age in queue:** 3.7 days (source date: 2026-06-22, first seen: 2026-06-22)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -273,7 +273,7 @@ developed.
 
 ### S24. rundingan bersatu-muda di johor capai 80%, kata sahruddin. ketua bersatu johor berkata parti itu lihat muda...
 
-- **Rank score:** 0.542 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.543 (silence=0.97 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.2 days (source date: 2026-06-20, first seen: 2026-06-19)
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. ahli parlimen jasin, isteri terlibat kemalangan. zulkifli ismail cedera ringan manakala isterinya sakit dad...
 
-- **Rank score:** 0.542 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.543 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.4 days (source date: 2026-06-20, first seen: 2026-06-20)
+- **Age in queue:** 5.5 days (source date: 2026-06-20, first seen: 2026-06-20)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
