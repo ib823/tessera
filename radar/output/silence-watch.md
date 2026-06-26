@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-06-26 07:28 UTC. Queue size: 827. Picks shown: 25.
+Scan: 2026-06-26 09:15 UTC. Queue size: 834. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -42,11 +42,11 @@ developed.
 
 ### S3. parliament budget session session opens
 
-- **Rank score:** 1.028 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 1.025 (silence=1.00 × importance=0.52 × age_factor)
 
 - **Age in queue:** 40.9 days (source date: 2026-06-26, first seen: 2026-05-16)
 
-- **Coverage:** 1 news, 0 social — pattern: _news only — no social_
+- **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 57.4 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 57.5 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 86.4 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 86.5 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 52.4 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 52.5 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 63.4 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 63.5 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 36.6 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 36.7 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed.
 
 ### S13. tertangguh 3 tahun, bicara kes bunuh nhaveen disambung. mahkamah persekutuan batal rayuan pendakwaan terhad...
 
-- **Rank score:** 0.692 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.694 (silence=0.99 × importance=0.56 × age_factor)
 
 - **Age in queue:** 7.1 days (source date: 2026-06-19, first seen: 2026-06-19)
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. mahkamah cyprus perintah sita vila mewah jho low. mahkamah daerah nicosia keluar susulan permohonan bersama...
 
-- **Rank score:** 0.672 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.673 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 14.7 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 14.8 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. putrajaya lulus rm22 juta untuk senjata akps. menteri dalam negeri berkata langkah itu diputuskan selepas s...
 
-- **Rank score:** 0.635 (silence=0.99 × importance=0.58 × age_factor)
+- **Rank score:** 0.636 (silence=0.99 × importance=0.58 × age_factor)
 
-- **Age in queue:** 3.0 days (source date: 2026-06-23, first seen: 2026-06-23)
+- **Age in queue:** 3.1 days (source date: 2026-06-23, first seen: 2026-06-23)
 
 - **Coverage:** 4 news, 2 social — pattern: _below-expected coverage_
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. 854 pengamal perubatan kelulusan luar negara didaftar sebagai pakar. majlis perubatan malaysia mendaftarkan...
 
-- **Rank score:** 0.614 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.615 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 2.8 days (source date: 2026-06-23, first seen: 2026-06-23)
+- **Age in queue:** 2.9 days (source date: 2026-06-23, first seen: 2026-06-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. dakwaan siasatan niat jahat: sprm berjaya rayu ketepi saman pengarah syarikat. mahkamah rayuan putuskan mah...
 
-- **Rank score:** 0.612 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.614 (silence=0.98 × importance=0.51 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 7.1 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. 3r issues risk giving malay voters ’emotional fatigue’, says analyst. awang azman pawi of universiti malaya...
 
-- **Rank score:** 0.599 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.600 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.7 days (source date: 2026-06-20, first seen: 2026-06-20)
+- **Age in queue:** 5.8 days (source date: 2026-06-20, first seen: 2026-06-20)
 
 - **Coverage:** 10 news, 5 social — pattern: _below-expected coverage_
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. wawasan, pejuang diterima masuk pn. mesyuarat mt pn meluluskan permohonan dua parti baharu untuk menjadi pa...
 
-- **Rank score:** 0.573 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.574 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.6 days (source date: 2026-06-23, first seen: 2026-06-22)
+- **Age in queue:** 3.7 days (source date: 2026-06-23, first seen: 2026-06-22)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -229,29 +229,40 @@ developed.
 
 ### S20. nancy shukri, keluarga hargai sokongan moral, penghormatan terakhir. kehadiran serta tanda ingatan menjadi ...
 
-- **Rank score:** 0.562 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.563 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-06-19, first seen: 2026-06-19)
+- **Age in queue:** 6.9 days (source date: 2026-06-19, first seen: 2026-06-19)
 
 - **Coverage:** 5 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S21. isa dinafi hak berhujah bela diri sebelum sabitan dikembali, mahkamah diberitahu. panel semakan mahkamah pe...
+### S21. isa samad gagal rayuan akhir, pengampunan diraja pilihan terakhir. panel tiga hakim mahkamah persekutuan pu...
 
 - **Rank score:** 0.562 (silence=0.99 × importance=0.56 × age_factor)
 
 - **Age in queue:** 0.0 days (source date: 2026-06-26, first seen: 2026-06-26)
 
-- **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
+- **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### S22. sprm siasat dakwaan ketirisan rm53 juta pindah dara, amoi dan kelat ke jepun. dakwaan ketirisan jutaan ring...
+### S22. isa dinafi hak berhujah bela diri sebelum sabitan dikembali, mahkamah diberitahu. panel semakan mahkamah pe...
 
-- **Rank score:** 0.553 (silence=0.99 × importance=0.49 × age_factor)
+- **Rank score:** 0.561 (silence=0.99 × importance=0.56 × age_factor)
+
+- **Age in queue:** 0.1 days (source date: 2026-06-26, first seen: 2026-06-26)
+
+- **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### S23. sprm siasat dakwaan ketirisan rm53 juta pindah dara, amoi dan kelat ke jepun. dakwaan ketirisan jutaan ring...
+
+- **Rank score:** 0.554 (silence=0.99 × importance=0.49 × age_factor)
 
 - **Age in queue:** 4.1 days (source date: 2026-06-22, first seen: 2026-06-22)
 
@@ -260,37 +271,26 @@ developed.
 - **Dimensions at risk:** economic, ethnic, institutional
 
 
-### S23. rundingan bersatu-muda di johor capai 80%, kata sahruddin. ketua bersatu johor berkata parti itu lihat muda...
+### S24. rundingan bersatu-muda di johor capai 80%, kata sahruddin. ketua bersatu johor berkata parti itu lihat muda...
 
-- **Rank score:** 0.549 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.550 (silence=0.97 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-06-20, first seen: 2026-06-19)
+- **Age in queue:** 6.7 days (source date: 2026-06-20, first seen: 2026-06-19)
 
 - **Coverage:** 13 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S24. ahli parlimen jasin, isteri terlibat kemalangan. zulkifli ismail cedera ringan manakala isterinya sakit dad...
+### S25. ahli parlimen jasin, isteri terlibat kemalangan. zulkifli ismail cedera ringan manakala isterinya sakit dad...
 
-- **Rank score:** 0.549 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.550 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 5.9 days (source date: 2026-06-20, first seen: 2026-06-20)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
-
-
-### S25. lahir di malaysia belum cukup untuk peroleh kewarganegaraan, putus mahkamah rayuan. mahkamah rayuan memutus...
-
-- **Rank score:** 0.548 (silence=0.99 × importance=0.51 × age_factor)
-
-- **Age in queue:** 2.8 days (source date: 2026-06-23, first seen: 2026-06-23)
-
-- **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, legal
 
 
 ---
