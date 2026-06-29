@@ -1,58 +1,59 @@
-[32m2026-06-29 01:00:21[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-06-29 01:00:21[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-06-29 01:00:21[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5745 topics from state
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-06-29 01:00:22[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-29T01:00:22.615294+00:00
-[32m2026-06-29 01:00:27[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-06-29 01:00:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-06-29 01:00:30[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-06-29 01:00:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-06-29 01:00:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-06-29 01:00:33[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
-[32m2026-06-29 01:00:34[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-06-29 01:00:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-06-29 01:01:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-29 01:01:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-29 01:01:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-29 01:01:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-29 01:02:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-29 01:02:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-29 01:02:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-29 01:02:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-06-29 01:02:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-06-29 01:02:47[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-06-29 01:02:49[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 475 events from 5 sources
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 475 events
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 394 within 24h (155 pruned)
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Long wait over: LRT3 finally rolls into Shah Alam, bringing relief for commuters. SHAH ALAM, June 29 &mdash; As station staff counted down from 10 before the shutters rolled open at exactly 6am, 27-ye" importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Brazil strike confident tone ahead of Japan World Cup clash. Defender Marquinhos says the squad are improving under experienced coach Carlo Ancelotti, crediting his stability and tactical nous." importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "US migrants on temporary status told to seek permanent residence or leave. The US Supreme Court last week allowed hundreds of thousands of immigrants to be stripped of humanitarian protections against" importance=0.36
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Raducanu withdraws from Wimbledon through injury. Scans reveal a stress fracture in the British No 1’s lower right leg, denting home hopes for the grass-court Grand Slam." importance=0.46
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Raducanu withdraws from Wimbledon through injury. Scans reveal a stress fracture in the British No 1’s lower right leg, denting home hopes for the grass-court Grand Slam." importance=0.36
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Why hasn’t the economy collapsed?. The threat of a slowdown in overall economic growth due to the impact of the Middle East crisis has significantly receded as conventional economics has not proven re" importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "England’s stars shine but flaws remain before DR Congo showdown. Despite dominating possession, the Three Lions were often short of ideas and creativity against a compact defence." importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Sarawak JPJ backs Julau licence aid initiative as rural motorcyclists embrace legal riding and cheaper fuel. SARIKEI, June 28 &mdash; Participants from rural areas of the Julau parliamentary constitue" importance=0.51
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Anwar appeals to Johor voters, urges five‑year mandate for Pakatan candidates. KUALA LUMPUR, June 28 &mdash; Pakatan Harapan (PH) chairman Datuk Seri Anwar Ibrahim has appealed to the people of Johor." importance=0.36
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Zahid says Johor must remain BN stronghold, brushes off Puad’s recycled‑candidates criticism. BATU PAHAT, June 28 &mdash; Johor must remain a Barisan Nasional (BN) stronghold and continue to serve as " importance=0.31
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Pakatan files police report after party flag burned in Kota Tinggi. JOHOR BAHRU, June 28 &mdash; Pakatan Harapan (PH) has expressed its regret over the alleged act of sabotage by certain p..." importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "DPM Fadillah: Proposal for 17 new Sarawak seats unlikely this year as EC procedures ongoing. KUCHING, June 28 &mdash; The proposal to add 17 new seats to the Sarawak Legislative Assembly is unlikely t" importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Police arrest four men, seize roosters and gambling items in Mukah cockfighting raid. MUKAH, June 28 &mdash; Four local men were arrested for allegedly involved in cockfighting activities during a pol" importance=0.41
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Johor election: Zahid pledges full support for federal unity government if BN wins. PONTIAN, June 27 &mdash; BN chairman Datuk Seri Dr Ahmad Zahid Hamidi has assured that he will ensure that the Johor" importance=0.36
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Jais raids Petaling Jaya premise over Shiite activities — 226 foreign nationals questioned. SHAH ALAM, June 27 &mdash; The Selangor Islamic Religious Department (Jais) raided a premise at Jalan Pusat " importance=0.46
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 31), ('pas', 26), ('minister', 26), ('malay', 22), ('chinese', 22), ('government', 21), ('election', 16), ('race', 11), ('isa', 11), ('indian', 11)]
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5752 active topics
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36moutput              [0m | 851 active issues, 4904 new, 4902 pruned
-[32m2026-06-29 01:02:52[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-06-29 01:03:14[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=69  hmm=OK/68  cox=RT/851  sarima=RT/851
-[32m2026-06-29 01:03:14[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=851)
-[32m2026-06-29 01:03:14[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5752 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-06-29 03:16:55[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-06-29 03:16:55[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-06-29 03:16:55[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 5752 topics from state
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-06-29 03:16:56[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-06-29T03:16:56.815363+00:00
+[32m2026-06-29 03:16:58[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-06-29 03:16:59[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-06-29 03:17:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-06-29 03:17:01[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-06-29 03:17:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-06-29 03:17:03[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
+[32m2026-06-29 03:17:04[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-06-29 03:17:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-06-29 03:17:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:17:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-29 03:17:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:17:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:17:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:17:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:18:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-29 03:18:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:18:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-06-29 03:18:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-06-29 03:18:28[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-06-29 03:18:31[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 4 events
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 476 events from 5 sources
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 476 events
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 401 within 24h (160 pruned)
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Selangor religious council vows action after family ordeal over delayed burial at Ukay Perdana Muslim Cemetery. SHAH ALAM, June 29 &mdash; The Selangor Islamic Religious Council (Mais) has directed th" importance=0.46
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [federal_court_ruling] "‘I’ve done my job’: Lead prosecutor leaves Syed Saddiq’s fate to Federal Court. KUALA LUMPUR, June 29 &mdash; &ldquo;I have done my job to the best of my ability in the pursuit of justice. I leave any" importance=0.56
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Penang police bust two World Cup betting call centres in Gelugor and Butterworth, nine arrested. GEORGE TOWN, June 29 &mdash; Penang police have busted two call centres involved in football betting ac" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "In Dewan Rakyat today: Tourism fallout from West Asia conflict and Langkawi’s border security readiness. KUALA LUMPUR, June 29 &mdash; The impact of the West Asian conflict on foreign tourist arrivals" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Long wait over: LRT3 finally rolls into Shah Alam, bringing relief for commuters. SHAH ALAM, June 29 &mdash; As station staff counted down from 10 before the shutters rolled open at exactly 6am, 27-ye" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "PH sasar pengundi Bersatu di Larkin susulan pergolakan PN. Calon PH DUN Larkin Suhaizan Kaiat berkata pergolakan buka peluang untuk menang sokongan bekas penyokong PN di kawasan bandar." importance=0.46
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Singapore’s opposition retains Singh as party chief despite court conviction. The Workers’ Party voted to support Pritam Singh after he spoke and answered members’ questions on the charges against him" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Mere denial of ‘secret pact’ with PAS not enough, BN told. Analyst Mazlan Ali sees PAS's decision not to contest multiple seats in Johor as a political investment in its future relationship with Umno." importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Pakistan says carried out new strikes in Afghanistan targeting militants. The overnight operations were in response to an attack in Karachi that killed three paramilitary troops and recent border viol" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Critical rescue window closing in Venezuela as quake death toll nears 1,500. Tens of thousands of people remain missing as the critical 72-hour window for rescuing survivors has passed." importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Sarawak JPJ backs Julau licence aid initiative as rural motorcyclists embrace legal riding and cheaper fuel. SARIKEI, June 28 &mdash; Participants from rural areas of the Julau parliamentary constitue" importance=0.51
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Anwar appeals to Johor voters, urges five‑year mandate for Pakatan candidates. KUALA LUMPUR, June 28 &mdash; Pakatan Harapan (PH) chairman Datuk Seri Anwar Ibrahim has appealed to the people of Johor." importance=0.36
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Zahid says Johor must remain BN stronghold, brushes off Puad’s recycled‑candidates criticism. BATU PAHAT, June 28 &mdash; Johor must remain a Barisan Nasional (BN) stronghold and continue to serve as " importance=0.31
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Pakatan files police report after party flag burned in Kota Tinggi. JOHOR BAHRU, June 28 &mdash; Pakatan Harapan (PH) has expressed its regret over the alleged act of sabotage by certain p..." importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "DPM Fadillah: Proposal for 17 new Sarawak seats unlikely this year as EC procedures ongoing. KUCHING, June 28 &mdash; The proposal to add 17 new seats to the Sarawak Legislative Assembly is unlikely t" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Police arrest four men, seize roosters and gambling items in Mukah cockfighting raid. MUKAH, June 28 &mdash; Four local men were arrested for allegedly involved in cockfighting activities during a pol" importance=0.41
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'silence_detector': 'ok'}
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 30), ('pas', 28), ('minister', 24), ('malay', 19), ('government', 19), ('chinese', 17), ('election', 13), ('vote', 13), ('policy', 12), ('isa', 10)]
+[32m2026-06-29 03:18:42[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
+[32m2026-06-29 03:18:43[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 5765 active topics
+[32m2026-06-29 03:18:43[0m | [1mINFO    [0m | [36moutput              [0m | 864 active issues, 4914 new, 4901 pruned
+[32m2026-06-29 03:18:43[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-06-29 03:19:05[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=69  hmm=OK/68  cox=RT/864  sarima=RT/864
+[32m2026-06-29 03:19:05[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=864)
+[32m2026-06-29 03:19:05[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 5765 active topics. Top: parliament budget session session opens (score: 0.98)
