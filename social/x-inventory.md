@@ -1,48 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-30T20:45:34.354Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-06-30T22:34:08.788Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
 ## ⏳ TO POST (82)
-
-### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
-
-> ⚡ **Reactive: topic is live in the radar** (854 pengamal perubatan kelulusan luar negara didaftar sebagai pakar. majlis perubatan mala). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
-
-**1/7** _(hook — attach image, NO link)_ · 263 chars
-```
-Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
-```
-**2/7** _(fact)_ · 256 chars
-```
-Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
-```
-**3/7** _(fact)_ · 262 chars
-```
-Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
-```
-**4/7** _(fact)_ · 268 chars
-```
-Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
-```
-**5/7** _(reframe)_ · 114 chars
-```
-Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
-```
-**6/7** _(analogy)_ · 227 chars
-```
-Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
-```
-**7/7** _(view — ONLY post with the link)_ · 180 chars
-```
-The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
-
-https://thefourthangle.pages.dev/issue/1994
-```
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
@@ -220,44 +182,6 @@ The recovery story is no longer 'how little came back'. It is whether the recove
 RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
 
 https://thefourthangle.pages.dev/issue/1867
-```
-
-### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
-
-> ⚡ **Reactive: topic is live in the radar** (854 pengamal perubatan kelulusan luar negara didaftar sebagai pakar. majlis perubatan mala). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
-
-**1/7** _(hook — attach image, NO link)_ · 132 chars
-```
-Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
-```
-**2/7** _(fact)_ · 124 chars
-```
-Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
-```
-**3/7** _(fact)_ · 236 chars
-```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed. Voluntary i-Saraan covered ~10.7% of self-employed workers by 2022. The new mandatory scheme does not extend to retirement.
-```
-**4/7** _(fact)_ · 135 chars
-```
-DOSM Q1 2025: 17.23 million labour force, 16.70 million employed, 3.45 million informal. Gig workers fall inside the informal universe.
-```
-**5/7** _(reframe)_ · 137 chars
-```
-The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
-```
-**6/7** _(analogy)_ · 269 chars
-```
-Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
-```
-**7/7** _(view — ONLY post with the link)_ · 207 chars
-```
-Phase 1 establishes mandatory platform-collected SOCSO deductions. The open Phase 2 question is whether retirement-savings coverage follows, and on what timeline.
-
-https://thefourthangle.pages.dev/issue/1128
 ```
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
@@ -731,6 +655,43 @@ Like writing the building code after the towers go up. Now everyone watches whic
 Singapore charged four. Malaysia wrote a permit. Bridge swapped a tenant. Fifteen months later, no Malaysian operator has been publicly named.
 
 https://thefourthangle.pages.dev/issue/1995
+```
+
+### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
+
+**1/7** _(hook — attach image, NO link)_ · 263 chars
+```
+Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
+```
+**2/7** _(fact)_ · 256 chars
+```
+Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
+```
+**3/7** _(fact)_ · 262 chars
+```
+Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
+```
+**4/7** _(fact)_ · 268 chars
+```
+Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
+```
+**5/7** _(reframe)_ · 114 chars
+```
+Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
+```
+**6/7** _(analogy)_ · 227 chars
+```
+Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
+```
+**7/7** _(view — ONLY post with the link)_ · 180 chars
+```
+The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
+
+https://thefourthangle.pages.dev/issue/1994
 ```
 
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
@@ -2753,6 +2714,43 @@ The interoperability question is already half-answered: DuitNow QR is the nation
 Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
 
 https://thefourthangle.pages.dev/issue/1146
+```
+
+### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
+
+**1/7** _(hook — attach image, NO link)_ · 132 chars
+```
+Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
+```
+**2/7** _(fact)_ · 124 chars
+```
+Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
+```
+**3/7** _(fact)_ · 236 chars
+```
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed. Voluntary i-Saraan covered ~10.7% of self-employed workers by 2022. The new mandatory scheme does not extend to retirement.
+```
+**4/7** _(fact)_ · 135 chars
+```
+DOSM Q1 2025: 17.23 million labour force, 16.70 million employed, 3.45 million informal. Gig workers fall inside the informal universe.
+```
+**5/7** _(reframe)_ · 137 chars
+```
+The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
+```
+**6/7** _(analogy)_ · 269 chars
+```
+Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
+```
+**7/7** _(view — ONLY post with the link)_ · 207 chars
+```
+Phase 1 establishes mandatory platform-collected SOCSO deductions. The open Phase 2 question is whether retirement-savings coverage follows, and on what timeline.
+
+https://thefourthangle.pages.dev/issue/1128
 ```
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
