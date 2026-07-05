@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-05 14:37 UTC. Queue size: 903. Picks shown: 25.
+Scan: 2026-07-05 16:28 UTC. Queue size: 895. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 66.7 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 66.8 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 95.7 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 95.8 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -97,9 +97,9 @@ developed.
 
 ### S8. mansuh undang-undang lantik wakil rakyat tidak dipilih jadi keutamaan muda. amira aisya sifatkan ruu pindaa...
 
-- **Rank score:** 0.818 (silence=1.00 × importance=0.66 × age_factor)
+- **Rank score:** 0.820 (silence=1.00 × importance=0.66 × age_factor)
 
-- **Age in queue:** 7.2 days (source date: 2026-06-28, first seen: 2026-06-28)
+- **Age in queue:** 7.3 days (source date: 2026-06-28, first seen: 2026-06-28)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -108,9 +108,9 @@ developed.
 
 ### S9. mahkamah cyprus perintah sita vila mewah jho low. mahkamah daerah nicosia keluar susulan permohonan bersama...
 
-- **Rank score:** 0.812 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.813 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 24.0 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 24.1 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 61.7 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 61.8 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 72.7 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 72.8 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 45.9 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 46.0 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -163,16 +163,27 @@ developed.
 
 ### S14. kakitangan um, guru gagal cabar program vaksin covid-19 kerajaan. mahkamah persekutuan memutuskan mereka ga...
 
-- **Rank score:** 0.723 (silence=1.00 × importance=0.61 × age_factor)
+- **Rank score:** 0.724 (silence=1.00 × importance=0.61 × age_factor)
 
-- **Age in queue:** 5.4 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 5.5 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S15. zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may 18 &mdash; the co...
+### S15. syed saddiq tak sertai kempen prn johor. ahli parlimen muar itu berkata beliau mahu fokus kes mahkamahnya s...
+
+- **Rank score:** 0.707 (silence=0.97 × importance=0.61 × age_factor)
+
+- **Age in queue:** 5.5 days (source date: 2026-06-30, first seen: 2026-06-30)
+
+- **Coverage:** 24 news, 11 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, political
+
+
+### S16. zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may 18 &mdash; the co...
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
@@ -183,97 +194,75 @@ developed.
 - **Dimensions at risk:** legal, political
 
 
-### S16. syed saddiq tak sertai kempen prn johor. ahli parlimen muar itu berkata beliau mahu fokus kes mahkamahnya s...
+### S17. pengumuman projek kpkt di johor tak langgar peraturan spr, kata anwar. perdana menteri berkata projek itu b...
 
-- **Rank score:** 0.706 (silence=0.97 × importance=0.61 × age_factor)
+- **Rank score:** 0.655 (silence=0.98 × importance=0.56 × age_factor)
 
-- **Age in queue:** 5.4 days (source date: 2026-06-30, first seen: 2026-06-30)
-
-- **Coverage:** 24 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S17. 17 dun baharu mungkin tak sempat tambah sebelum prn sarawak. timbalan perdana menteri fadillah yusof berkat...
-
-- **Rank score:** 0.698 (silence=0.99 × importance=0.56 × age_factor)
-
-- **Age in queue:** 7.3 days (source date: 2026-06-28, first seen: 2026-06-28)
-
-- **Coverage:** 5 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S18. pengumuman projek kpkt di johor tak langgar peraturan spr, kata anwar. perdana menteri berkata projek itu b...
-
-- **Rank score:** 0.654 (silence=0.98 × importance=0.56 × age_factor)
-
-- **Age in queue:** 5.4 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 5.5 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S19. ruu kebebasan maklumat mesti berkesan, bukan sekadar lulus, kata pegawai bheuu. punitha silivarajoo berkata...
+### S18. ruu kebebasan maklumat mesti berkesan, bukan sekadar lulus, kata pegawai bheuu. punitha silivarajoo berkata...
 
-- **Rank score:** 0.608 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.609 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.9 days (source date: 2026-06-29, first seen: 2026-06-29)
+- **Age in queue:** 6.0 days (source date: 2026-06-29, first seen: 2026-06-29)
 
 - **Coverage:** 7 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** general
 
 
-### S20. ahli parlimen segamat guna kelebihan 4 bahasa bantu kempen ph. r yuneswaran berkata beliau dapat berkomunik...
+### S19. ahli parlimen segamat guna kelebihan 4 bahasa bantu kempen ph. r yuneswaran berkata beliau dapat berkomunik...
 
-- **Rank score:** 0.579 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.580 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-07-01, first seen: 2026-07-01)
+- **Age in queue:** 4.4 days (source date: 2026-07-01, first seen: 2026-07-01)
 
 - **Coverage:** 6 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### S21. samun kebun durian, 4 ditahan. suspek ditaham dalam empat serbuan berasingan susulan kes di bemban, melaka.
+### S20. samun kebun durian, 4 ditahan. suspek ditaham dalam empat serbuan berasingan susulan kes di bemban, melaka.
 
-- **Rank score:** 0.570 (silence=1.00 × importance=0.47 × age_factor)
+- **Rank score:** 0.571 (silence=1.00 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-06-28, first seen: 2026-06-28)
+- **Age in queue:** 7.0 days (source date: 2026-06-28, first seen: 2026-06-28)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S22. ‘jangan asyik tekan snooze’, wan fayhsal gesa percepat jana kuasa nuklear. ahli parlimen machang beri amara...
+### S21. ‘jangan asyik tekan snooze’, wan fayhsal gesa percepat jana kuasa nuklear. ahli parlimen machang beri amara...
 
-- **Rank score:** 0.557 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.559 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.3 days (source date: 2026-06-29, first seen: 2026-06-29)
+- **Age in queue:** 6.4 days (source date: 2026-06-29, first seen: 2026-06-29)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S23. kekang pemangsa seksual, ahli parlimen gesa tambah bajet forensik digital polis. dr zulkafperi hanapi gesa ...
+### S22. kekang pemangsa seksual, ahli parlimen gesa tambah bajet forensik digital polis. dr zulkafperi hanapi gesa ...
 
-- **Rank score:** 0.557 (silence=1.00 × importance=0.47 × age_factor)
+- **Rank score:** 0.559 (silence=1.00 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-06-29, first seen: 2026-06-29)
+- **Age in queue:** 6.2 days (source date: 2026-06-29, first seen: 2026-06-29)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S24. ph sasar pengundi bersatu di larkin susulan pergolakan pn. calon ph dun larkin suhaizan kaiat berkata pergo...
+### S23. ph sasar pengundi bersatu di larkin susulan pergolakan pn. calon ph dun larkin suhaizan kaiat berkata pergo...
 
-- **Rank score:** 0.555 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.557 (silence=0.98 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.5 days (source date: 2026-06-29, first seen: 2026-06-29)
 
@@ -282,15 +271,26 @@ developed.
 - **Dimensions at risk:** political
 
 
-### S25. mahkamah batal sekatan perjalanan 7 tahun bekas pengarah isu hutang gst. mahkamah tinggi berkata jabatan ka...
+### S24. mahkamah batal sekatan perjalanan 7 tahun bekas pengarah isu hutang gst. mahkamah tinggi berkata jabatan ka...
 
-- **Rank score:** 0.550 (silence=0.99 × importance=0.46 × age_factor)
+- **Rank score:** 0.551 (silence=0.99 × importance=0.46 × age_factor)
 
-- **Age in queue:** 6.3 days (source date: 2026-06-29, first seen: 2026-06-29)
+- **Age in queue:** 6.4 days (source date: 2026-06-29, first seen: 2026-06-29)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, ethnic, legal
+
+
+### S25. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
+
+- **Rank score:** 0.549 (silence=0.97 × importance=0.41 × age_factor)
+
+- **Age in queue:** 11.2 days (source date: 2026-06-24, first seen: 2026-06-24)
+
+- **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, political
 
 
 ---
