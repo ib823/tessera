@@ -1,58 +1,56 @@
-[32m2026-07-05 00:48:30[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-07-05 00:48:30[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-07-05 00:48:30[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6087 topics from state
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-07-05 00:48:31[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-05T00:48:31.163615+00:00
-[32m2026-07-05 00:48:32[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-07-05 00:48:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-07-05 00:48:35[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-07-05 00:48:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-07-05 00:48:38[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-07-05 00:48:38[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
-[32m2026-07-05 00:48:39[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-07-05 00:48:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-07-05 00:48:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:48:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-05 00:49:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-05 00:49:54[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 1 events
-[32m2026-07-05 00:49:57[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 7 events
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 9 events
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 477 events from 5 sources
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 477 events
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 371 within 24h (165 pruned)
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [court_of_appeal_ruling] "Penang South reclamation ruling explained. The Court of Appeal ruling raises questions over who controls areas that are still sea but are being reclaimed into land." importance=0.46
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Swiatek dumped out of Wimbledon by Eala, Serena withdraws from doubles. Iga Swiatek slipped to a 7-6 (11/9), 6-2 defeat on Centre Court as 29th seed Alexandra Eala reached the last 16 of a Grand Slam " importance=0.36
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Food security drive: DPM Zahid vows 50pc import reduction by 2050, phased cuts already stabilising chicken prices. KOTA TINGGI, July 4 &mdash; The Ministry of Rural and Regional Development (KKDW) aim" importance=0.31
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "PM Anwar declares war on support letters, says crony loans destroy agencies and entrepreneurs. PUTRAJAYA, July 4 &mdash; Prime Minister Datuk Seri Anwar Ibrahim stressed that the practice of using let" importance=0.41
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Apa kena mengena PRN Johor dengan pengampunan Najib, soal Muhyiddin. Presiden bersatu itu berkata Najib Razak sudah didapati bersalah dan dipenjarakan." importance=0.31
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "World Cup players face growing pattern of racist abuse. Global players’ union FIFPRO called for collective action to protect players from increasing abuse linked to media scrutiny and match fallout." importance=0.41
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "What has Johor election got to do with Najib’s release, says Muhyiddin. The Bersatu president says Najib Razak has already been convicted." importance=0.36
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Egypt sentences ex-doctor to prison over hospital abuse claims. Omnia Swaydan was convicted over a Facebook post alleging cases of abuse at Al-Shatby University Hospital, where she trained in 2020." importance=0.36
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "BN-Pakatan cooperation remains intact despite Johor campaign heat, says Zahid. &nbsp;KOTA TINGGI, July 4 &mdash;&nbsp;Barisan Nasional (BN) enjoys a very good relationship with Pakatan Harapan (PH) a." importance=0.41
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "BN-Pakatan cooperation remains intact despite Johor campaign heat, says Zahid. &nbsp;KOTA TINGGI, July 4 &mdash;&nbsp;Barisan Nasional (BN) enjoys a very good relationship with Pakatan Harapan (PH) a." importance=0.31
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Egypt expects €1.5bil from EU aid package in coming days, says minister. Foreign minister Badr Abdelatty says Egypt expects to receive the first of two remaining tranches of a €5 billion macro-financi" importance=0.46
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "College worker with prior child sex convictions arrested in Shah Alam after teenage boys allege assaults. SHAH ALAM, July 4 &mdash; Police have arrested a man suspected of sexually assaulting two 15‑y" importance=0.36
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Factory worker, 23, survives 30‑foot fall at Ipoh cement plant, suffers minor injuries. IPOH, July 4 &mdash; A factory worker survived after falling 30 feet (9.144 metres) from a cement factory buildi" importance=0.41
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Healthy, active, and gaining weight: Taiping council says Malaysia’s three elephants envoys living the good life in Japan’s Tennoji Zoo. IPOH, July 3 &mdash; Three female elephants, Dara, Amoi and Kel" importance=0.46
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "BN vs Pakatan: Here’s what Ahmad Zahid thinks of his rival’s Johor election promises. JOHOR BAHRU, July 3 &mdash; Barisan Nasional (BN) respects Pakatan Harapan&rsquo;s (PH) manifesto for the Johor st" importance=0.36
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Home Ministry: Foreign begging cases may involve syndicates, 42 detained in KL operations. KUALA LUMPUR, July 3 &mdash; Begging activities involving foreigners, especially children, may involve organi" importance=0.41
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'silence_detector': 'ok'}
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 32), ('government', 24), ('india', 23), ('chinese', 20), ('isa', 19), ('minister', 17), ('pas', 14), ('policy', 13), ('pakatan', 13), ('election', 12)]
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 10 events monitored, 10 flagged
-[32m2026-07-05 00:50:00[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6088 active topics
-[32m2026-07-05 00:50:01[0m | [1mINFO    [0m | [36moutput              [0m | 888 active issues, 5198 new, 5200 pruned
-[32m2026-07-05 00:50:01[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-05 00:50:22[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=75  hmm=OK/68  cox=RT/888  sarima=RT/888
-[32m2026-07-05 00:50:22[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=888)
-[32m2026-07-05 00:50:23[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6088 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-07-05 03:10:53[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-07-05 03:10:54[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6088 topics from state
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-07-05 03:10:54[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-05T03:10:54.964651+00:00
+[32m2026-07-05 03:10:56[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-07-05 03:10:57[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-07-05 03:10:59[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-07-05 03:11:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-07-05 03:11:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-07-05 03:11:03[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
+[32m2026-07-05 03:11:04[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-07-05 03:11:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-07-05 03:11:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:11:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:11:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:11:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:11:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:12:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:12:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:12:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-05 03:12:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-05 03:12:35[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 3 events
+[32m2026-07-05 03:12:37[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 7 events
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 476 events from 5 sources
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 476 events
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 371 within 24h (160 pruned)
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Anwar says federal govt saddled with Felda’s nearly RM1b annual debt. JOHOR BAHRU, July 5 &mdash; The federal government is now saddled with Felda&rsquo;s nearly RM1 billion annual debt, as..." importance=0.61
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Pakistan, Turkey pledge stronger economic ties during Shehbaz’s Istanbul visit. The two sides affirmed their goal of US$5 billion annual trade and explored cooperation in areas such as energy, transpo" importance=0.51
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "BN tak khianati sesiapa, cuma pertahan Johor, kata Zahid. Pengerusi BN berkata pentadbiran Johor dikuasai BN telah ditubuhkan sebelum kerajaan perpaduan peringkat persekutuan tertubuh pasca PRU15." importance=0.36
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Don’t penalise compliant manufacturers, FMM urges US. The Federation of Malaysian Manufacturing calls for a periodic review mechanism following proposed Section 301 action over alleged forced labour." importance=0.51
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "England can write new Azteca history by meeting Mexico challenge, says Tuchel. Thomas Tuchel said the excitement and emotion made it feel instantly like a true World Cup match ahead of tomorrow’s game" importance=0.46
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [court_of_appeal_ruling] "Penang South reclamation ruling explained. The Court of Appeal ruling raises questions over who controls areas that are still sea but are being reclaimed into land." importance=0.46
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Swiatek dumped out of Wimbledon by Eala, Serena withdraws from doubles. Iga Swiatek slipped to a 7-6 (11/9), 6-2 defeat on Centre Court as 29th seed Alexandra Eala reached the last 16 of a Grand Slam " importance=0.36
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Food security drive: DPM Zahid vows 50pc import reduction by 2050, phased cuts already stabilising chicken prices. KOTA TINGGI, July 4 &mdash; The Ministry of Rural and Regional Development (KKDW) aim" importance=0.31
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "PM Anwar declares war on support letters, says crony loans destroy agencies and entrepreneurs. PUTRAJAYA, July 4 &mdash; Prime Minister Datuk Seri Anwar Ibrahim stressed that the practice of using let" importance=0.41
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "BN-Pakatan cooperation remains intact despite Johor campaign heat, says Zahid. &nbsp;KOTA TINGGI, July 4 &mdash;&nbsp;Barisan Nasional (BN) enjoys a very good relationship with Pakatan Harapan (PH) a." importance=0.41
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "BN-Pakatan cooperation remains intact despite Johor campaign heat, says Zahid. &nbsp;KOTA TINGGI, July 4 &mdash;&nbsp;Barisan Nasional (BN) enjoys a very good relationship with Pakatan Harapan (PH) a." importance=0.31
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "College worker with prior child sex convictions arrested in Shah Alam after teenage boys allege assaults. SHAH ALAM, July 4 &mdash; Police have arrested a man suspected of sexually assaulting two 15‑y" importance=0.36
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Factory worker, 23, survives 30‑foot fall at Ipoh cement plant, suffers minor injuries. IPOH, July 4 &mdash; A factory worker survived after falling 30 feet (9.144 metres) from a cement factory buildi" importance=0.41
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 32), ('government', 25), ('india', 22), ('chinese', 21), ('minister', 17), ('pas', 17), ('isa', 15), ('policy', 13), ('pakatan', 12), ('prime minister', 11)]
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 10 events monitored, 10 flagged
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6092 active topics
+[32m2026-07-05 03:12:40[0m | [1mINFO    [0m | [36moutput              [0m | 887 active issues, 5205 new, 5206 pruned
+[32m2026-07-05 03:12:41[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-05 03:12:59[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=75  hmm=OK/68  cox=RT/887  sarima=RT/887
+[32m2026-07-05 03:12:59[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=887)
+[32m2026-07-05 03:12:59[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6092 active topics. Top: parliament budget session session opens (score: 0.98)
