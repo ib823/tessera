@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-07 11:07 UTC. Queue size: 890. Picks shown: 25.
+Scan: 2026-07-07 12:57 UTC. Queue size: 893. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -20,11 +20,11 @@ developed.
 
 ### S1. budget 2027 presentation
 
-- **Rank score:** 1.076 (silence=1.00 × importance=0.54 × age_factor)
+- **Rank score:** 1.077 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 52.0 days (source date: 2026-07-07, first seen: 2026-05-16)
+- **Age in queue:** 52.1 days (source date: 2026-07-07, first seen: 2026-05-16)
 
-- **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
+- **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 45.9 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 46.0 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -42,11 +42,11 @@ developed.
 
 ### S3. parliament budget session session opens
 
-- **Rank score:** 1.027 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 1.028 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 52.0 days (source date: 2026-07-07, first seen: 2026-05-16)
+- **Age in queue:** 52.1 days (source date: 2026-07-07, first seen: 2026-05-16)
 
-- **Coverage:** 2 news, 0 social — pattern: _news only — no social_
+- **Coverage:** 1 news, 0 social — pattern: _news only — no social_
 
 - **Dimensions at risk:** economic, political
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 63.6 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 63.7 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 68.6 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 68.7 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 97.5 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 97.6 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 52.0 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 52.1 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -97,9 +97,9 @@ developed.
 
 ### S8. mahkamah cyprus perintah sita vila mewah jho low. mahkamah daerah nicosia keluar susulan permohonan bersama...
 
-- **Rank score:** 0.840 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.841 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 25.9 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 26.0 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 63.5 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 63.6 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 74.6 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 74.7 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 46.9 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 47.0 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 47.7 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 47.8 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 49.9 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 50.0 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. js-sez inisiatif putrajaya, kata tengku zafrul. penasihat politik kanan perdana menteri berkata hampir rm77...
 
-- **Rank score:** 0.667 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.668 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 0.2 days (source date: 2026-07-07, first seen: 2026-07-07)
+- **Age in queue:** 0.3 days (source date: 2026-07-07, first seen: 2026-07-07)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. ahli parlimen segamat guna kelebihan 4 bahasa bantu kempen ph. r yuneswaran berkata beliau dapat berkomunik...
 
-- **Rank score:** 0.610 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.611 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-07-01, first seen: 2026-07-01)
+- **Age in queue:** 6.2 days (source date: 2026-07-01, first seen: 2026-07-01)
 
 - **Coverage:** 6 news, 5 social — pattern: _below-expected coverage_
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. dewan rakyat lulus ruu pinda suruhanjaya persaingan, perkasa peranan mycc. menteri kpdn berkata, ruu babit ...
 
-- **Rank score:** 0.580 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.581 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 1.0 days (source date: 2026-07-06, first seen: 2026-07-06)
+- **Age in queue:** 1.1 days (source date: 2026-07-06, first seen: 2026-07-06)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.573 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.574 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 13.0 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 13.1 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. suri rumah sebabkan kematian anak angkat dipenjara 17 tahun. siti subrina imran yang mengaku bersalah terha...
 
-- **Rank score:** 0.567 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.568 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 7.1 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 7.2 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. jangan hukum pengilang patuh syarat buruh, fmm gesa as. persekutuan pekilang-pekilang malaysia mahu mekanis...
 
-- **Rank score:** 0.551 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.552 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 2.2 days (source date: 2026-07-05, first seen: 2026-07-05)
+- **Age in queue:** 2.3 days (source date: 2026-07-05, first seen: 2026-07-05)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. kerajaan teliti pinda akta benar suhakam jana pendapatan sendiri. timbalan menteri undang-undang dan reform...
 
-- **Rank score:** 0.551 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.552 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.2 days (source date: 2026-07-01, first seen: 2026-07-01)
+- **Age in queue:** 6.3 days (source date: 2026-07-01, first seen: 2026-07-01)
 
 - **Coverage:** 6 news, 3 social — pattern: _below-expected coverage_
 
@@ -240,9 +240,9 @@ developed.
 
 ### S21. cara data peribadi dikendali perlu jelas dalam ruu jenayah siber, kata ahli parlimen. afnan hamimi taib aza...
 
-- **Rank score:** 0.544 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.546 (silence=0.97 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-07-01, first seen: 2026-07-01)
+- **Age in queue:** 6.2 days (source date: 2026-07-01, first seen: 2026-07-01)
 
 - **Coverage:** 8 news, 5 social — pattern: _below-expected coverage_
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. ahli parlimen mahu hukuman sebat ke atas dalang ‘deepfake’ lucah. ahli parlimen gesa hukuman lebih berat da...
 
-- **Rank score:** 0.541 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.542 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-07-01, first seen: 2026-07-01)
+- **Age in queue:** 6.2 days (source date: 2026-07-01, first seen: 2026-07-01)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. ahli parlimen desak diskaun penalti syarikat langgar peraturan dihad 20%. wakil rakyat kepong, lim lip eng ...
 
-- **Rank score:** 0.540 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.541 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-07-02, first seen: 2026-07-02)
+- **Age in queue:** 5.2 days (source date: 2026-07-02, first seen: 2026-07-02)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -273,9 +273,9 @@ developed.
 
 ### S24. prn sarawak tanding 82 dun jika kerusi baru belum dimuktamad, kata abang jo. dun sarawak lulus tambahan 17 ...
 
-- **Rank score:** 0.539 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.540 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 1.9 days (source date: 2026-07-05, first seen: 2026-07-05)
+- **Age in queue:** 2.0 days (source date: 2026-07-05, first seen: 2026-07-05)
 
 - **Coverage:** 6 news, 5 social — pattern: _below-expected coverage_
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. rayuan rosmah dalam kes rasuah projek solar tangguh september. mahkamah rayuan memberi amaran tiada lagi pe...
 
-- **Rank score:** 0.539 (silence=0.98 × importance=0.46 × age_factor)
+- **Rank score:** 0.540 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 6.2 days (source date: 2026-07-01, first seen: 2026-07-01)
+- **Age in queue:** 6.3 days (source date: 2026-07-01, first seen: 2026-07-01)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
