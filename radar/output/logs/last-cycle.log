@@ -1,57 +1,56 @@
-[32m2026-07-11 08:37:35[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-07-11 08:37:36[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-07-11 08:37:36[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6422 topics from state
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-07-11 08:37:37[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-11T08:37:37.086882+00:00
-[32m2026-07-11 08:37:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-07-11 08:37:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-07-11 08:37:46[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-07-11 08:37:46[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-07-11 08:37:49[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-07-11 08:37:49[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 433 events
-[32m2026-07-11 08:37:50[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-07-11 08:38:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT domestic request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-11 08:38:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-11 08:38:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-11 08:38:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-11 08:39:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-11 08:39:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-11 08:39:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-11 08:39:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-11 08:39:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-11 08:39:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-11 08:40:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-11 08:40:06[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-07-11 08:40:09[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 472 events from 5 sources
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 472 events
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 450 within 24h (134 pruned)
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "New Bukit Kayu Hitam-Sadao route opens to ease Malaysia-Thailand border congestion. &nbsp;BUKIT KAYU HITAM, July 11 &mdash;&nbsp;The new road linking the Bukit Kayu Hitam Immigration, Customs, Quarant" importance=0.46
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "MACC freezes 14 bank accounts, seizes RM1.4m assets in foreign affairs syndicate probe. &nbsp;KUALA LUMPUR, July 11 &mdash;&nbsp;The Malaysian Anti-Corruption Commission (MACC) has frozen 14 bank acco" importance=0.42
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Zahid assures Johor polls outcome will not affect federal govt stability. &nbsp;KULAI, July 11 &mdash; Barisan Nasional (BN) has given an assurance that whatever the outcome of the 16th Johor St..." importance=0.31
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Indonesia’s anti-graft prosecutor quits after police seize gold, cash. Assistant attorney general for special crimes Febrie Adriansyah stepped down following raids on at least 12 locations, including " importance=0.41
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Smooth traffic flow at both Singapore-Malaysia entry points, says minister. Saifuddin Nasution posts a 29-second video showing conditions at the BSI and KSAB land border crossings in Johor." importance=0.46
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "New Zealand, India form ‘strategic partnership’. The pact encompasses tighter defence cooperation, including with naval exercises, as well as stronger ties in trade, diplomacy, culture, sport and scie" importance=0.51
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Cops probing if boy who chased schoolmate with box cutter was bullied. The Melaka education department has ordered schools in the state to conduct surprise inspections to look for sharp objects." importance=0.41
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "US-Canada bridge threatened by Trump to open July 27. The US$4.7 billion bridge, which connects Detroit and Windsor, Ontario, has been under construction since 2018." importance=0.46
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Anwar tells Johor election rivals to stop using Najib’s imprisonment as campaign issue. KULAI, July 10 &mdash;&nbsp;Prime Minister Datuk Seri Anwar Ibrahim has reminded parties contesting in the Johor" importance=0.36
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Blogger fined RM11,000 over offensive TikTok post targeting Ismail Sabri, Umno. &nbsp;KUALA LUMPUR, July 10 &mdash;&nbsp;The Sessions Court here fined blogger Jufazli Shi Ahmad RM11,000 today after fi" importance=0.38
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Couple linked to ‘Ah Long’ activities charged over petrol bomb attacks in Ipoh. &nbsp;IPOH, July 10 &mdash;&nbsp;A married couple pleaded not guilty at the Sessions Court here today to three charges o" importance=0.46
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Couple linked to ‘Ah Long’ activities charged over petrol bomb attacks in Ipoh. &nbsp;IPOH, July 10 &mdash;&nbsp;A married couple pleaded not guilty at the Sessions Court here today to three charges o" importance=0.36
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Fire Dept: Ammonia leak at Ipoh ice factory caused by unsecured cylinder; Hazmat team contains spill. IPOH, July 10 &mdash; A 400-litre ammonia gas cylinder, which was believed to have not been proper" importance=0.41
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Firefighters battle Kuching ice cream factory blaze spreading to neighbouring premises, all workers safe. KUCHING, July 10 &mdash; A fire broke out at an ice cream factory and spread to a neighbouring" importance=0.41
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 36), ('minister', 35), ('vote', 28), ('government', 28), ('malay', 25), ('election', 22), ('pas', 21), ('prime minister', 20), ('chinese', 19), ('undi', 17)]
-[32m2026-07-11 08:40:11[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
-[32m2026-07-11 08:40:12[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6424 active topics
-[32m2026-07-11 08:40:12[0m | [1mINFO    [0m | [36moutput              [0m | 910 active issues, 5511 new, 5514 pruned
-[32m2026-07-11 08:40:12[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-11 08:40:31[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=81  hmm=OK/66  cox=RT/910  sarima=RT/910
-[32m2026-07-11 08:40:31[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=910)
-[32m2026-07-11 08:40:31[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6424 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-07-11 10:29:00[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-07-11 10:29:00[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-07-11 10:29:00[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6424 topics from state
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-07-11 10:29:01[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-11T10:29:01.683774+00:00
+[32m2026-07-11 10:29:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-07-11 10:29:07[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-07-11 10:29:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-07-11 10:29:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-07-11 10:29:10[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-07-11 10:29:10[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
+[32m2026-07-11 10:29:12[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-07-11 10:29:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-07-11 10:29:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-11 10:29:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-11 10:30:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-11 10:30:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-07-11 10:30:59[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-07-11 10:31:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-07-11 10:31:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-11 10:31:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-11 10:31:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-11 10:31:56[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-07-11 10:32:02[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 473 events from 5 sources
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 473 events
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 438 within 24h (143 pruned)
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "New Bukit Kayu Hitam-Sadao route opens to ease Malaysia-Thailand border congestion. &nbsp;BUKIT KAYU HITAM, July 11 &mdash;&nbsp;The new road linking the Bukit Kayu Hitam Immigration, Customs, Quarant" importance=0.46
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Ex-DAP MP claims BN’s Skudai candidate flouted election laws. Kasthuri Patto wants action taken after a vehicle displaying election stickers, allegedly belonging to Nicole Tan, was parked outside a po" importance=0.46
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "MACC freezes 14 bank accounts, seizes RM1.4m assets in foreign affairs syndicate probe. &nbsp;KUALA LUMPUR, July 11 &mdash;&nbsp;The Malaysian Anti-Corruption Commission (MACC) has frozen 14 bank acco" importance=0.42
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Zahid assures Johor polls outcome will not affect federal govt stability. &nbsp;KULAI, July 11 &mdash; Barisan Nasional (BN) has given an assurance that whatever the outcome of the 16th Johor St..." importance=0.31
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Pemimpin DAP dakwa calon BN Skudai langgar peraturan pilihan raya. Kasthuri Patto mendakwa kenderaan milik Nicole Tan Hiang Kee diletakkan di hadapan sebuah pusat mengundi dengan mempamerkan pelekat b" importance=0.41
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Indonesia’s anti-graft prosecutor quits after police seize gold, cash. Assistant attorney general for special crimes Febrie Adriansyah stepped down following raids on at least 12 locations, including " importance=0.41
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Smooth traffic flow at both Singapore-Malaysia entry points, says minister. Saifuddin Nasution posts a 29-second video showing conditions at the BSI and KSAB land border crossings in Johor." importance=0.46
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "New Zealand, India form ‘strategic partnership’. The pact encompasses tighter defence cooperation, including with naval exercises, as well as stronger ties in trade, diplomacy, culture, sport and scie" importance=0.51
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Anwar tells Johor election rivals to stop using Najib’s imprisonment as campaign issue. KULAI, July 10 &mdash;&nbsp;Prime Minister Datuk Seri Anwar Ibrahim has reminded parties contesting in the Johor" importance=0.36
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Blogger fined RM11,000 over offensive TikTok post targeting Ismail Sabri, Umno. &nbsp;KUALA LUMPUR, July 10 &mdash;&nbsp;The Sessions Court here fined blogger Jufazli Shi Ahmad RM11,000 today after fi" importance=0.38
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Couple linked to ‘Ah Long’ activities charged over petrol bomb attacks in Ipoh. &nbsp;IPOH, July 10 &mdash;&nbsp;A married couple pleaded not guilty at the Sessions Court here today to three charges o" importance=0.46
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Couple linked to ‘Ah Long’ activities charged over petrol bomb attacks in Ipoh. &nbsp;IPOH, July 10 &mdash;&nbsp;A married couple pleaded not guilty at the Sessions Court here today to three charges o" importance=0.36
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Fire Dept: Ammonia leak at Ipoh ice factory caused by unsecured cylinder; Hazmat team contains spill. IPOH, July 10 &mdash; A 400-litre ammonia gas cylinder, which was believed to have not been proper" importance=0.41
+[32m2026-07-11 10:32:12[0m | [31m[1mERROR   [0m | [36mcycle               [0m | Stream cascade_tracker failed: index -3 is out of bounds for axis 0 with size 2
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'cascade_tracker': 'error', 'narrative_fragmentation': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 40), ('minister', 36), ('government', 27), ('vote', 26), ('election', 25), ('malay', 25), ('pas', 20), ('chinese', 20), ('prime minister', 20), ('undi', 17)]
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6427 active topics
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36moutput              [0m | 911 active issues, 5517 new, 5516 pruned
+[32m2026-07-11 10:32:12[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-11 10:32:33[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=81  hmm=OK/66  cox=RT/911  sarima=RT/911
+[32m2026-07-11 10:32:34[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=911)
+[32m2026-07-11 10:32:34[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6427 active topics. Top: parliament budget session session opens (score: 0.98)
