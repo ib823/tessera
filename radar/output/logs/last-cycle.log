@@ -1,53 +1,56 @@
-[32m2026-07-12 03:08:24[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-07-12 03:08:24[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-07-12 03:08:24[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6441 topics from state
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-07-12 03:08:25[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-12T03:08:25.579377+00:00
-[32m2026-07-12 03:08:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-07-12 03:08:29[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-07-12 03:08:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-07-12 03:08:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-07-12 03:08:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-07-12 03:08:34[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
-[32m2026-07-12 03:08:35[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-07-12 03:09:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:09:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-12 03:09:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:09:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-12 03:09:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:09:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:10:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:10:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:10:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-12 03:10:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 03:10:46[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 2 events
-[32m2026-07-12 03:10:50[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 6 events
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 4 events
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 478 events from 5 sources
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 478 events
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 360 within 24h (157 pruned)
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "EC satisfied with smooth Johor election, says no untoward incidents reported. &nbsp;JOHOR BAHRU, July 12 &mdash; The Election Commission (EC) has expressed satisfaction with the overall conduct of t.." importance=0.46
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [statutory_instrument] "Wartawan veteran jangka keputusan PRN Johor akan pengaruhi tempoh PRU16. A Kadir Jasin berkata 'talian hayat' kerajaan Madani kepada Zahid Hamidi, yang dilantik timbalan perdana menteri pada November " importance=0.30
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Wartawan veteran jangka keputusan PRN Johor akan pengaruhi tempoh PRU16. A Kadir Jasin berkata 'talian hayat' kerajaan Madani kepada Zahid Hamidi, yang dilantik timbalan perdana menteri pada November " importance=0.36
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Veteran newsman expects Johor result to affect GE16 timing. A Kadir Jasin says the Madani government's 'lifeline' to Ahmad Zahid Hamidi, who was appointed deputy prime minister in November 2022, has m" importance=0.36
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Why you might need a holiday after your holiday. From delayed flights to family disagreements, travel can test your emotional resilience as much as your patience." importance=0.46
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Bellingham heroics edge England past Norway and into World Cup semis. Jude Bellingham scores twice as England stage an extra-time escape act to defeat Norway 2-1." importance=0.41
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Teaching confidence beyond the classroom in rural Sarawak. Volunteers with Kolej Yayasan UEM's Initiative Club use games, teamwork and interactive workshops to help children build esteem and life skil" importance=0.41
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "New Bukit Kayu Hitam-Sadao route opens to ease Malaysia-Thailand border congestion. &nbsp;BUKIT KAYU HITAM, July 11 &mdash;&nbsp;The new road linking the Bukit Kayu Hitam Immigration, Customs, Quarant" importance=0.46
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "MCA menang 8 kerusi di Johor, atasi DAP. Selepas lebih sedekad tewas di banyak kerusi bandar majoriti Cina kepada DAP, keputusan PRN Johor dilihat mampu meredakan desakan supaya MCA meninggalkan BN." importance=0.36
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "MACC freezes 14 bank accounts, seizes RM1.4m assets in foreign affairs syndicate probe. &nbsp;KUALA LUMPUR, July 11 &mdash;&nbsp;The Malaysian Anti-Corruption Commission (MACC) has frozen 14 bank acco" importance=0.42
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 41), ('pas', 38), ('election', 33), ('government', 29), ('malay', 26), ('vote', 26), ('isa', 23), ('minister', 23), ('chinese', 21), ('indian', 16)]
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 8 events monitored, 8 flagged
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6440 active topics
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36moutput              [0m | 915 active issues, 5522 new, 5526 pruned
-[32m2026-07-12 03:10:53[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-12 03:11:11[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=82  hmm=OK/66  cox=RT/915  sarima=RT/915
-[32m2026-07-12 03:11:12[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=915)
-[32m2026-07-12 03:11:12[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6440 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-07-12 05:07:40[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-07-12 05:07:40[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-07-12 05:07:40[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6440 topics from state
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-07-12 05:07:41[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-12T05:07:41.260640+00:00
+[32m2026-07-12 05:07:49[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-07-12 05:07:50[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-07-12 05:07:51[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-07-12 05:07:52[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-07-12 05:07:55[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-07-12 05:07:55[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
+[32m2026-07-12 05:07:56[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-07-12 05:08:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-07-12 05:08:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-12 05:08:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-07-12 05:08:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-07-12 05:09:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-07-12 05:09:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-12 05:09:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-12 05:09:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-12 05:10:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-12 05:10:18[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-12 05:10:18[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 1 events
+[32m2026-07-12 05:10:22[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 481 events from 5 sources
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 481 events
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 352 within 24h (154 pruned)
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Syed Saddiq to learn fate Monday as Federal Court delivers verdict on prosecution appeal. &nbsp;KUALA LUMPUR, July 12 &mdash;&nbsp;Muar Member of Parliament &nbsp;Syed Saddiq Syed Abdul Rahman will le" importance=0.51
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [federal_court_ruling] "Syed Saddiq to learn fate Monday as Federal Court delivers verdict on prosecution appeal. &nbsp;KUALA LUMPUR, July 12 &mdash;&nbsp;Muar Member of Parliament &nbsp;Syed Saddiq Syed Abdul Rahman will le" importance=0.61
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "EC satisfied with smooth Johor election, says no untoward incidents reported. &nbsp;JOHOR BAHRU, July 12 &mdash; The Election Commission (EC) has expressed satisfaction with the overall conduct of t.." importance=0.46
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "‘Blok progresif’ Muda-PSM terus gagal raih sokongan. Keputusan PRN Johor mungkin menyebabkan dua parti itu terpaksa pertimbangkan semula strategi pilihan raya mereka." importance=0.31
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Bersama’s debut ends seatless, but not impactless. Rafizi Ramli and Nik Nazmi Nik Ahmad's party failed to win any of the 15 seats it contested, but may have influenced several closely fought contests." importance=0.41
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Muda-PSM ‘progressive block’ draws blanks, again. The outcome of the Johor polls may force the two parties to rethink their election strategies, possibly placing more urgency on reaching pacts with gr" importance=0.46
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Kes buli di Rawang, JPN Selangor beri jaminan tak lindungi pelaku. Jabatan itu berkata insiden itu dalam perhatian polis dan ia akan pastikan pihak bertanggungjawab dikenakan tindakan atas 'salah laku" importance=0.31
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "S’gor education dept vows stern action on bullying case. The department says police are investigating the case and that it will not compromise with any form of 'misconduct'." importance=0.41
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [statutory_instrument] "Wartawan veteran jangka keputusan PRN Johor akan pengaruhi tempoh PRU16. A Kadir Jasin berkata 'talian hayat' kerajaan Madani kepada Zahid Hamidi, yang dilantik timbalan perdana menteri pada November " importance=0.30
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Wartawan veteran jangka keputusan PRN Johor akan pengaruhi tempoh PRU16. A Kadir Jasin berkata 'talian hayat' kerajaan Madani kepada Zahid Hamidi, yang dilantik timbalan perdana menteri pada November " importance=0.36
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Veteran newsman expects Johor result to affect GE16 timing. A Kadir Jasin says the Madani government's 'lifeline' to Ahmad Zahid Hamidi, who was appointed deputy prime minister in November 2022, has m" importance=0.36
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Why you might need a holiday after your holiday. From delayed flights to family disagreements, travel can test your emotional resilience as much as your patience." importance=0.46
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Bellingham heroics edge England past Norway and into World Cup semis. Jude Bellingham scores twice as England stage an extra-time escape act to defeat Norway 2-1." importance=0.41
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "New Bukit Kayu Hitam-Sadao route opens to ease Malaysia-Thailand border congestion. &nbsp;BUKIT KAYU HITAM, July 11 &mdash;&nbsp;The new road linking the Bukit Kayu Hitam Immigration, Customs, Quarant" importance=0.46
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'polarization': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 41), ('pas', 38), ('election', 35), ('government', 30), ('malay', 24), ('isa', 23), ('vote', 23), ('chinese', 22), ('minister', 21), ('indian', 16)]
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6447 active topics
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36moutput              [0m | 922 active issues, 5533 new, 5526 pruned
+[32m2026-07-12 05:10:25[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-12 05:10:47[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=82  hmm=OK/66  cox=RT/922  sarima=RT/922
+[32m2026-07-12 05:10:48[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=922)
+[32m2026-07-12 05:10:48[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6447 active topics. Top: parliament budget session session opens (score: 0.98)
