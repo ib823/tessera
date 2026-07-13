@@ -1,57 +1,57 @@
-[32m2026-07-12 22:19:38[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-07-12 22:19:38[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-07-12 22:19:38[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6456 topics from state
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-07-12 22:19:39[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-12T22:19:39.739451+00:00
-[32m2026-07-12 22:19:40[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-07-12 22:19:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-07-12 22:19:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-07-12 22:19:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-07-12 22:19:47[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-07-12 22:19:47[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 439 events
-[32m2026-07-12 22:19:48[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-07-12 22:19:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-07-12 22:20:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:20:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:20:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:20:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:21:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-12 22:21:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:21:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:21:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:21:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:21:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-12 22:21:58[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-07-12 22:22:02[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 478 events from 5 sources
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 478 events
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 370 within 24h (149 pruned)
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Aung Sang Suu Kyi in good health, Myanmar tells Asean. However, the Asean special envoy to Myanmar said Aung Sang Suu Kyi's exact whereabouts remain unknown." importance=0.41
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Fresh attacks hit Iran, Kuwait as Tehran and US square off over Hormuz. Iran reports strikes on two of its southern islands while Kuwait says border posts and an offshore oil platform have been attack" importance=0.41
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Nga Kor Ming stands by pledge to resign over Najib issue as Puad challenges him to quit Cabinet. &nbsp;KUALA LUMPUR, July 12 &mdash; Housing and Local Government Minister Nga Kor Ming today stood by h" importance=0.36
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Selangor JPN vows strict action in Rawang bullying case, pledges full cooperation with police. SHAH ALAM, July 12 &mdash; The Selangor State Education Department (JPN) is extending full cooperation in" importance=0.41
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Ukraine’s Zelensky orders govt reshuffle, proposes new PM. President Volodymyr Zelensky is proposing the replacement of prime minister Yulia Svyrydenko and the heads of several law enforcement agencie" importance=0.41
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "King meets Zahid and Onn Hafiz at Istana Pasir Pelangi following BN’s sweeping Johor victory. JOHOR BAHRU, July 12 &mdash; The King, His Majesty Sultan Ibrahim, granted an audience to Barisan Nasional" importance=0.31
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [new_act] "P Pinang akan beri tempoh akhir projek tapak lupus sampah, tambak laut. Ketua Menteri Chow Kon Yeow berkata projek itu tidak akan diteruskan dengan syarikat sedia ada, jika gagal mendapat kelulusan EI" importance=0.52
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Syed Saddiq to learn fate Monday as Federal Court delivers verdict on prosecution appeal. &nbsp;KUALA LUMPUR, July 12 &mdash;&nbsp;Muar Member of Parliament &nbsp;Syed Saddiq Syed Abdul Rahman will le" importance=0.51
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [federal_court_ruling] "Syed Saddiq to learn fate Monday as Federal Court delivers verdict on prosecution appeal. &nbsp;KUALA LUMPUR, July 12 &mdash;&nbsp;Muar Member of Parliament &nbsp;Syed Saddiq Syed Abdul Rahman will le" importance=0.61
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Joint statement says China’s South China Sea claims have no legal basis. The Philippines won the 2016 case at the Permanent Court of Arbitration that found China's sweeping claim of sovereignty in the" importance=0.36
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Tak tepat dakwa Bersatu punca PN tewas di Johor, kata pemimpin. Dr Sahruddin Jamal berkata setiap parti komponen pikul tanggungjawab bersama terhadap sebarang keputusan pilihan raya, manakala R Sri Sa" importance=0.31
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "PH tiada strategi jelas untuk PRN Johor, kata bekas Ahli Parlimen Amanah. Hanipa Maidin berkata gabungan itu terlalu bergantung kepada model kempen lapuk seperti ceramah besar-besaran." importance=0.46
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "EC satisfied with smooth Johor election, says no untoward incidents reported. &nbsp;JOHOR BAHRU, July 12 &mdash; The Election Commission (EC) has expressed satisfaction with the overall conduct of t.." importance=0.46
-[32m2026-07-12 22:22:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "New Bukit Kayu Hitam-Sadao route opens to ease Malaysia-Thailand border congestion. &nbsp;BUKIT KAYU HITAM, July 11 &mdash;&nbsp;The new road linking the Bukit Kayu Hitam Immigration, Customs, Quarant" importance=0.46
-[32m2026-07-12 22:22:07[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'silence_detector': 'ok'}
-[32m2026-07-12 22:22:07[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 37), ('minister', 33), ('government', 32), ('election', 26), ('isa', 23), ('pas', 21), ('malay', 21), ('prime minister', 17), ('chinese', 17), ('vote', 16)]
-[32m2026-07-12 22:22:07[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
-[32m2026-07-12 22:22:07[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6460 active topics
-[32m2026-07-12 22:22:07[0m | [1mINFO    [0m | [36moutput              [0m | 915 active issues, 5544 new, 5545 pruned
-[32m2026-07-12 22:22:07[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-12 22:22:30[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=83  hmm=OK/64  cox=RT/915  sarima=RT/915
-[32m2026-07-12 22:22:30[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=915)
-[32m2026-07-12 22:22:30[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6460 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-07-13 00:41:51[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-07-13 00:41:52[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6460 topics from state
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-07-13 00:41:52[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-13T00:41:52.935236+00:00
+[32m2026-07-13 00:41:54[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-07-13 00:41:55[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-07-13 00:41:57[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-07-13 00:41:59[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-07-13 00:42:01[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-07-13 00:42:01[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
+[32m2026-07-13 00:42:02[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-07-13 00:42:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-07-13 00:42:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:42:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:42:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:43:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:43:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:43:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:43:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:43:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-13 00:44:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-13 00:44:07[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-07-13 00:44:08[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 482 events from 5 sources
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 482 events
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 374 within 24h (157 pruned)
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "In Dewan Rakyat today: MPs to grill govt on UN reform, food crisis plans and military readiness. KUALA LUMPUR, July 13 &mdash; Malaysia&rsquo;s stance on the imbalance created by the veto power among " importance=0.46
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Pok Ku keeps a dying craft alive, one coffin at a time. One of Kelantan's last traditional Chinese coffin makers hopes a centuries-old practice won't end with his generation." importance=0.46
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "‘Progressive bloc’ seen to have potential despite Johor drubbing. Analysts say Muda and PSM can boost their relevance by selecting better candidates, improving their grassroots organisation, as well a" importance=0.41
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "The auxiliary cop who became known as UPM’s ‘Uncle Sri’. Through simple acts of kindness beyond the call of duty, Sri Kantharao Sani Babu left a lasting impression on generations of students and staff" importance=0.41
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "The main candidates facing Netanyahu in Israel’s elections. Israel's parliament announced on Sunday that a general election will be held on Oct 27." importance=0.46
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Aung Sang Suu Kyi in good health, Myanmar tells Asean. However, the Asean special envoy to Myanmar said Aung Sang Suu Kyi's exact whereabouts remain unknown." importance=0.41
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Fresh attacks hit Iran, Kuwait as Tehran and US square off over Hormuz. Iran reports strikes on two of its southern islands while Kuwait says border posts and an offshore oil platform have been attack" importance=0.41
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Nga Kor Ming stands by pledge to resign over Najib issue as Puad challenges him to quit Cabinet. &nbsp;KUALA LUMPUR, July 12 &mdash; Housing and Local Government Minister Nga Kor Ming today stood by h" importance=0.36
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Selangor JPN vows strict action in Rawang bullying case, pledges full cooperation with police. SHAH ALAM, July 12 &mdash; The Selangor State Education Department (JPN) is extending full cooperation in" importance=0.41
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Ukraine’s Zelensky orders govt reshuffle, proposes new PM. President Volodymyr Zelensky is proposing the replacement of prime minister Yulia Svyrydenko and the heads of several law enforcement agencie" importance=0.41
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "King meets Zahid and Onn Hafiz at Istana Pasir Pelangi following BN’s sweeping Johor victory. JOHOR BAHRU, July 12 &mdash; The King, His Majesty Sultan Ibrahim, granted an audience to Barisan Nasional" importance=0.31
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Syed Saddiq to learn fate Monday as Federal Court delivers verdict on prosecution appeal. &nbsp;KUALA LUMPUR, July 12 &mdash;&nbsp;Muar Member of Parliament &nbsp;Syed Saddiq Syed Abdul Rahman will le" importance=0.51
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [federal_court_ruling] "Syed Saddiq to learn fate Monday as Federal Court delivers verdict on prosecution appeal. &nbsp;KUALA LUMPUR, July 12 &mdash;&nbsp;Muar Member of Parliament &nbsp;Syed Saddiq Syed Abdul Rahman will le" importance=0.61
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "EC satisfied with smooth Johor election, says no untoward incidents reported. &nbsp;JOHOR BAHRU, July 12 &mdash; The Election Commission (EC) has expressed satisfaction with the overall conduct of t.." importance=0.46
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "New Bukit Kayu Hitam-Sadao route opens to ease Malaysia-Thailand border congestion. &nbsp;BUKIT KAYU HITAM, July 11 &mdash;&nbsp;The new road linking the Bukit Kayu Hitam Immigration, Customs, Quarant" importance=0.46
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 38), ('government', 30), ('minister', 30), ('election', 27), ('isa', 25), ('malay', 21), ('pas', 20), ('chinese', 19), ('vote', 14), ('indian', 14)]
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 15 events monitored, 15 flagged
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6467 active topics
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36moutput              [0m | 917 active issues, 5552 new, 5550 pruned
+[32m2026-07-13 00:44:11[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-13 00:44:34[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=83  hmm=OK/64  cox=RT/917  sarima=RT/917
+[32m2026-07-13 00:44:34[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=917)
+[32m2026-07-13 00:44:35[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6467 active topics. Top: parliament budget session session opens (score: 0.98)
