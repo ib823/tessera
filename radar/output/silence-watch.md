@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-13 16:53 UTC. Queue size: 950. Picks shown: 25.
+Scan: 2026-07-13 18:39 UTC. Queue size: 950. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 69.8 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 69.9 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 74.8 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 74.9 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 103.8 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 103.9 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 32.1 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 32.2 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -108,7 +108,7 @@ developed.
 
 ### S9. pelaburan rm110 bilion johor: apa maknanya kepada rakyat?. angka itu mencerminkan minat pelabur, kelulusan ...
 
-- **Rank score:** 0.850 (silence=1.00 × importance=0.71 × age_factor)
+- **Rank score:** 0.851 (silence=1.00 × importance=0.71 × age_factor)
 
 - **Age in queue:** 5.7 days (source date: 2026-07-08, first seen: 2026-07-08)
 
@@ -119,9 +119,9 @@ developed.
 
 ### S10. js-sez inisiatif putrajaya, kata tengku zafrul. penasihat politik kanan perdana menteri berkata hampir rm77...
 
-- **Rank score:** 0.804 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.806 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 6.5 days (source date: 2026-07-07, first seen: 2026-07-07)
+- **Age in queue:** 6.6 days (source date: 2026-07-07, first seen: 2026-07-07)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 80.8 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 80.9 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 53.1 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 53.2 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -165,7 +165,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 54.0 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 54.1 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -176,7 +176,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 56.1 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 56.2 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. dewan rakyat lulus ruu pinda suruhanjaya persaingan, perkasa peranan mycc. menteri kpdn berkata, ruu babit ...
 
-- **Rank score:** 0.697 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.698 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 7.2 days (source date: 2026-07-06, first seen: 2026-07-06)
+- **Age in queue:** 7.3 days (source date: 2026-07-06, first seen: 2026-07-06)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. 6 tahun bertarung kuatkan keyakinan saya terhadap kehakiman, kata syed saddiq. ahli parlimen muar berkata t...
 
-- **Rank score:** 0.665 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.667 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 0.4 days (source date: 2026-07-13, first seen: 2026-07-13)
+- **Age in queue:** 0.5 days (source date: 2026-07-13, first seen: 2026-07-13)
 
 - **Coverage:** 17 news, 13 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.656 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.657 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 19.2 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 19.3 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -218,7 +218,7 @@ developed.
 
 ### S19. catatan minit muhyiddin arahan perlu pertimbangkan, kata tengku zafrul. bagaimanapun, bekas menteri kewanga...
 
-- **Rank score:** 0.645 (silence=0.97 × importance=0.56 × age_factor)
+- **Rank score:** 0.647 (silence=0.97 × importance=0.56 × age_factor)
 
 - **Age in queue:** 5.2 days (source date: 2026-07-08, first seen: 2026-07-08)
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. kerajaan gaza bubar badan pentadbiran bagi permudah peralihan kuasa. gaza selepas ini akan ditadbir jawatan...
 
-- **Rank score:** 0.636 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.637 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 7.1 days (source date: 2026-07-06, first seen: 2026-07-06)
+- **Age in queue:** 7.2 days (source date: 2026-07-06, first seen: 2026-07-06)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -240,7 +240,7 @@ developed.
 
 ### S21. jppm dah lulus tukar nama, logo wawasan, kata hamzah. presiden parti wawasan negara berkata pindaan undang-...
 
-- **Rank score:** 0.635 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.636 (silence=0.99 × importance=0.56 × age_factor)
 
 - **Age in queue:** 4.2 days (source date: 2026-07-09, first seen: 2026-07-09)
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. bmw berperisai bukan kenderaan rasmi baharu anwar, kata jpm. aset itu sudah tersedia milik bahagian istiada...
 
-- **Rank score:** 0.630 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.631 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-07-06, first seen: 2026-07-06)
+- **Age in queue:** 7.1 days (source date: 2026-07-06, first seen: 2026-07-06)
 
 - **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. tangguh keputusan kerana hakim sakit bukan tak pernah berlaku, kata mahkamah persekutuan. pengerusi panel m...
 
-- **Rank score:** 0.615 (silence=0.99 × importance=0.61 × age_factor)
+- **Rank score:** 0.616 (silence=0.99 × importance=0.61 × age_factor)
 
-- **Age in queue:** 0.3 days (source date: 2026-07-13, first seen: 2026-07-13)
+- **Age in queue:** 0.4 days (source date: 2026-07-13, first seen: 2026-07-13)
 
 - **Coverage:** 6 news, 8 social — pattern: _below-expected coverage_
 
@@ -273,7 +273,7 @@ developed.
 
 ### S24. mahkamah persekutuan kekal keputusan pembebasan syed saddiq. dalam keputusan belah bahagi, mahkamah terting...
 
-- **Rank score:** 0.615 (silence=0.98 × importance=0.61 × age_factor)
+- **Rank score:** 0.616 (silence=0.98 × importance=0.61 × age_factor)
 
 - **Age in queue:** 0.6 days (source date: 2026-07-13, first seen: 2026-07-13)
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. dakwaan bekas menteri rasuah rm53 juta tak berasas, kata sprm. hak asasi hidupan liar malaysia mendakwa rm5...
 
-- **Rank score:** 0.610 (silence=0.98 × importance=0.54 × age_factor)
+- **Rank score:** 0.612 (silence=0.98 × importance=0.54 × age_factor)
 
-- **Age in queue:** 4.4 days (source date: 2026-07-09, first seen: 2026-07-09)
+- **Age in queue:** 4.5 days (source date: 2026-07-09, first seen: 2026-07-09)
 
 - **Coverage:** 9 news, 4 social — pattern: _below-expected coverage_
 
