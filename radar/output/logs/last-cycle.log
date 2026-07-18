@@ -1,60 +1,54 @@
-[32m2026-07-18 05:00:28[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-07-18 05:00:28[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-07-18 05:00:28[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-07-18 05:00:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-07-18 05:00:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-07-18 05:00:29[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-07-18 05:00:30[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-18 05:00:30[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6852 topics from state
-[32m2026-07-18 05:00:30[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-07-18 05:00:30[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-18T05:00:30.018200+00:00
-[32m2026-07-18 05:00:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-07-18 05:00:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-07-18 05:00:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-07-18 05:00:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-07-18 05:00:38[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-07-18 05:00:38[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 450 events
-[32m2026-07-18 05:00:40[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-07-18 05:00:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-07-18 05:01:10[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-18 05:01:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-18 05:01:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-18 05:01:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-18 05:02:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-18 05:02:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-18 05:02:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-18 05:02:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-18 05:03:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-07-18 05:03:18[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-18 05:03:18[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-07-18 05:03:20[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 491 events from 5 sources
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 491 events
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 486 within 24h (145 pruned)
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Sarawak ministry warns public over fake local purchase orders issued under its name. KUCHING, July 18 &mdash; The Sarawak Ministry of Public Health, Housing and Local Government (MPHLG) has issued a p" importance=0.46
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "BN big guns rally behind candidates as Negeri Sembilan race begins. REMBAU, July 18 &mdash; Barisan Nasional (BN) chairman Datuk Seri Dr Ahmad Zahid Hamidi accompanied his deputy, Datuk Se..." importance=0.36
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "NUTP backs Teachers’ Protection Act, says lawsuits and online backlash leave educators afraid to discipline students. KUALA LUMPUR, July 18 &mdash; Teachers are increasingly reluctant to discipline st" importance=0.41
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Indian activist moved to hospital after 20-day hunger strike. Sonam Wangchuk has been fasting to demand the resignation of education minister Dharmendra Pradhan over alleged medical exam irregularitie" importance=0.46
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "BN’s Jalaluddin faces 2 challengers in Pertang. Pertang falls under the Jelebu parliamentary constituency, which the Negeri Sembilan BN chief has represented in Parliament since 2018." importance=0.46
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "DAP nafi guna ‘gelombang hijau’ timbul kebimbangan terhadap PAS. Ahli Parlimen Kepong Lim Lip Eng berkata presiden PAS yang kali pertama guna istilah itu masa kempen PRU14 di Perak." importance=0.46
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Oscar-winner Brenda Fricker dies aged 81. The first Irish actress to win an Oscar, she built a decades-long career across theatre, British television and Hollywood." importance=0.41
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Hukuman jel 5 tahun atas cubaan gugur kandungan cermin kegagalan sistem. Pusat Galen bagi Dasar Kesihatan dan Sosial mempersoalkan sama ada tertuduh diberi akses kepada nasihat guaman kerana dia tidak" importance=0.36
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Hadi, Umno sec-gen accompany BN-PN candidates in Jempol. The two coalitions are contesting in the Negeri Sembilan polls under an electoral pact." importance=0.41
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Experience a bird’s-eye view of Kedah’s rice bowl. An unconventional hilltop attraction rewards thrill-seekers with panoramic views of paddy fields and more." importance=0.41
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Couple arrested for trying to smuggle tobacco into Melaka prison using drone. Melaka police chief says the activity was believed to have been carried out in collusion with an inmate." importance=0.41
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Egyptian stars bring ‘Mr VIP’ to Malaysian shores. Actors Karim Abdel Aziz and Yasmine Sabri filmed their new comedy around the Klang Valley and Genting Highlands." importance=0.46
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Coroner’s Court hears Zara Qairina distressed yet conscious, psychiatrist says she sought psychological safety. KOTA KINABALU, July 17 &mdash; The Coroner&rsquo;s Court here heard that the late Zara Q" importance=0.36
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Bandar Utama school stabbing trial to hear evidence from three child witnesses under special safeguards. KUALA LUMPUR, July 17 &mdash; Three child witnesses are expected to give evidence under special" importance=0.36
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Former PM Najib to undergo heart procedure at Serdang Hospital next week. KUALA LUMPUR, July 17 &mdash; Former prime minister Datuk Seri Najib Razak will undergo a heart procedure at Serdang Hos..." importance=0.31
-[32m2026-07-18 05:03:22[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [court_of_appeal_ruling] "Malaysian Bar president says regulator not a busybody as court allows intervention in MACC appeal. PUTRAJAYA, July 17 &mdash; The Court of Appeal today allowed the Malaysian Bar to intervene in a lawy" importance=0.55
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 38), ('india', 35), ('minister', 32), ('government', 31), ('election', 27), ('chinese', 26), ('isa', 25), ('pas', 25), ('prime minister', 19), ('protest', 11)]
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 13 events monitored, 13 flagged
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6857 active topics
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36moutput              [0m | 1037 active issues, 5822 new, 5821 pruned
-[32m2026-07-18 05:03:23[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-18 05:03:46[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=88  hmm=OK/58  cox=RT/1037  sarima=RT/1037
-[32m2026-07-18 05:03:46[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1037)
-[32m2026-07-18 05:03:46[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6857 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-07-18 06:44:16[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-07-18 06:44:16[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-07-18 06:44:16[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 6857 topics from state
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-07-18 06:44:17[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-18T06:44:17.512200+00:00
+[32m2026-07-18 06:44:21[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-07-18 06:44:23[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-07-18 06:44:25[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-07-18 06:44:26[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-07-18 06:44:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-07-18 06:44:28[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 443 events
+[32m2026-07-18 06:44:29[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-07-18 06:44:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:45:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:45:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-18 06:45:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:46:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:46:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:46:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:46:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:46:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-18 06:46:56[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 13 events
+[32m2026-07-18 06:46:58[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 494 events from 5 sources
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 494 events
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 464 within 24h (156 pruned)
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "A ‘50-50 seat’: Anthony Loke banks on Pakatan’s track record as he fights to retain mixed-majority Chennah. JELEBU, July 18 &mdash; The Chennah state seat is among the four most crucial constituencies" importance=0.46
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Zahid says BN-Perikatan tie-up is ‘understanding’, not pact, as coalition eyes Negeri Sembilan comeback. KUALA LUMPUR, July 18 &mdash; Barisan Nasional (BN) chairman Datuk Seri Ahmad Zahid Hamidi toda" importance=0.41
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Zahid says BN-Perikatan tie-up is ‘understanding’, not pact, as coalition eyes Negeri Sembilan comeback. KUALA LUMPUR, July 18 &mdash; Barisan Nasional (BN) chairman Datuk Seri Ahmad Zahid Hamidi toda" importance=0.31
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Sarawak ministry warns public over fake local purchase orders issued under its name. KUCHING, July 18 &mdash; The Sarawak Ministry of Public Health, Housing and Local Government (MPHLG) has issued a p" importance=0.46
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "BN big guns rally behind candidates as Negeri Sembilan race begins. REMBAU, July 18 &mdash; Barisan Nasional (BN) chairman Datuk Seri Dr Ahmad Zahid Hamidi accompanied his deputy, Datuk Se..." importance=0.36
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "NUTP backs Teachers’ Protection Act, says lawsuits and online backlash leave educators afraid to discipline students. KUALA LUMPUR, July 18 &mdash; Teachers are increasingly reluctant to discipline st" importance=0.41
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "MCA Youth sec-gen told to skip Negeri Sembilan campaign. Saw Yee Fung had questioned BN's decision to reach a pact with PAS-led PN, asking if the MCA top leadership endorsed this." importance=0.41
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Indian activist moved to hospital after 20-day hunger strike. Sonam Wangchuk has been fasting to demand the resignation of education minister Dharmendra Pradhan over alleged medical exam irregularitie" importance=0.46
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "BN’s Jalaluddin faces 2 challengers in Pertang. Pertang falls under the Jelebu parliamentary constituency, which the Negeri Sembilan BN chief has represented in Parliament since 2018." importance=0.46
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "DAP nafi guna ‘gelombang hijau’ timbul kebimbangan terhadap PAS. Ahli Parlimen Kepong Lim Lip Eng berkata presiden PAS yang kali pertama guna istilah itu masa kempen PRU14 di Perak." importance=0.46
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Oscar-winner Brenda Fricker dies aged 81. The first Irish actress to win an Oscar, she built a decades-long career across theatre, British television and Hollywood." importance=0.41
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Hukuman jel 5 tahun atas cubaan gugur kandungan cermin kegagalan sistem. Pusat Galen bagi Dasar Kesihatan dan Sosial mempersoalkan sama ada tertuduh diberi akses kepada nasihat guaman kerana dia tidak" importance=0.36
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Hadi, Umno sec-gen accompany BN-PN candidates in Jempol. The two coalitions are contesting in the Negeri Sembilan polls under an electoral pact." importance=0.41
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'polarization': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 35), ('election', 31), ('government', 30), ('isa', 29), ('pas', 28), ('malay', 28), ('minister', 27), ('chinese', 25), ('prime minister', 16), ('unity', 11)]
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 6861 active topics
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36moutput              [0m | 1034 active issues, 5824 new, 5827 pruned
+[32m2026-07-18 06:47:01[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-18 06:47:24[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=88  hmm=OK/58  cox=RT/1034  sarima=RT/1034
+[32m2026-07-18 06:47:24[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1034)
+[32m2026-07-18 06:47:24[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 6861 active topics. Top: parliament budget session session opens (score: 0.98)
