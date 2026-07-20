@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-07-20T11:06:57.054Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-07-20T12:50:33.224Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -42,6 +42,44 @@ Like a residents' association chairman resigning 18 months before the AGM, with 
 Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
 
 https://thefourthangle.pages.dev/issue/1993
+```
+
+### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
+
+> ⚡ **Reactive: topic is live in the radar** (zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
+
+**1/7** _(hook — attach image, NO link)_ · 265 chars
+```
+On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
+```
+**2/7** _(fact)_ · 133 chars
+```
+Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
+```
+**3/7** _(fact)_ · 155 chars
+```
+M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
+```
+**4/7** _(fact)_ · 151 chars
+```
+Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
+```
+**6/7** _(analogy)_ · 233 chars
+```
+Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
+```
+**7/7** _(view — ONLY post with the link)_ · 222 chars
+```
+Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
+
+https://thefourthangle.pages.dev/issue/1992
 ```
 
 ### Issue 1961 — MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
@@ -654,43 +692,6 @@ Like checking permits at the front door while every window is open. The permit l
 The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
 
 https://thefourthangle.pages.dev/issue/1994
-```
-
-### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
-
-**1/7** _(hook — attach image, NO link)_ · 265 chars
-```
-On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
-```
-**2/7** _(fact)_ · 133 chars
-```
-Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
-```
-**3/7** _(fact)_ · 155 chars
-```
-M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
-```
-**4/7** _(fact)_ · 151 chars
-```
-Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
-```
-**6/7** _(analogy)_ · 233 chars
-```
-Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
-```
-**7/7** _(view — ONLY post with the link)_ · 222 chars
-```
-Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
-
-https://thefourthangle.pages.dev/issue/1992
 ```
 
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
