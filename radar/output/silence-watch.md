@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-20 02:21 UTC. Queue size: 1052. Picks shown: 25.
+Scan: 2026-07-20 03:12 UTC. Queue size: 1064. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -42,11 +42,11 @@ developed.
 
 ### S3. parliament budget session session opens
 
-- **Rank score:** 1.028 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 1.025 (silence=1.00 × importance=0.52 × age_factor)
 
 - **Age in queue:** 64.7 days (source date: 2026-07-20, first seen: 2026-05-16)
 
-- **Coverage:** 1 news, 0 social — pattern: _news only — no social_
+- **Coverage:** 3 news, 0 social — pattern: _news only — no social_
 
 - **Dimensions at risk:** economic, political
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 76.2 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 76.3 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 81.2 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 81.3 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 38.5 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 38.6 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -108,7 +108,7 @@ developed.
 
 ### S9. 6 tahun bertarung kuatkan keyakinan saya terhadap kehakiman, kata syed saddiq. ahli parlimen muar berkata t...
 
-- **Rank score:** 0.805 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.806 (silence=0.99 × importance=0.67 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-07-13, first seen: 2026-07-13)
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 87.2 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 87.3 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 59.5 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 59.6 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed.
 
 ### S13. dun melaka lulus pindaan perlembagaan berkait adun lantikan. mengikut laporan media, dap dijangka mengumumk...
 
-- **Rank score:** 0.784 (silence=1.00 × importance=0.66 × age_factor)
+- **Rank score:** 0.785 (silence=1.00 × importance=0.66 × age_factor)
 
 - **Age in queue:** 5.8 days (source date: 2026-07-14, first seen: 2026-07-14)
 
@@ -174,7 +174,7 @@ developed.
 
 ### S15. tangguh keputusan kerana hakim sakit bukan tak pernah berlaku, kata mahkamah persekutuan. pengerusi panel m...
 
-- **Rank score:** 0.744 (silence=0.99 × importance=0.61 × age_factor)
+- **Rank score:** 0.745 (silence=0.99 × importance=0.61 × age_factor)
 
 - **Age in queue:** 6.7 days (source date: 2026-07-13, first seen: 2026-07-13)
 
@@ -185,7 +185,7 @@ developed.
 
 ### S16. mahkamah persekutuan kekal keputusan pembebasan syed saddiq. dalam keputusan belah bahagi, mahkamah terting...
 
-- **Rank score:** 0.743 (silence=0.98 × importance=0.61 × age_factor)
+- **Rank score:** 0.744 (silence=0.98 × importance=0.61 × age_factor)
 
 - **Age in queue:** 7.0 days (source date: 2026-07-13, first seen: 2026-07-13)
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.741 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.742 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 25.6 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 25.7 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -209,7 +209,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 62.5 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 62.6 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -229,7 +229,7 @@ developed.
 
 ### S20. wawasan sah jadi parti komponen pn. gabungan pembangkang berkata, parti itu sah jadi anggotanya selepas jpp...
 
-- **Rank score:** 0.665 (silence=1.00 × importance=0.56 × age_factor)
+- **Rank score:** 0.666 (silence=1.00 × importance=0.56 × age_factor)
 
 - **Age in queue:** 5.5 days (source date: 2026-07-14, first seen: 2026-07-14)
 
@@ -240,7 +240,7 @@ developed.
 
 ### S21. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.659 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.660 (silence=0.97 × importance=0.41 × age_factor)
 
 - **Age in queue:** 19.5 days (source date: 2026-06-30, first seen: 2026-06-30)
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. libat urus bersama mof teliti mekanisme subsidi diesel bersasar, kata hajiji. ketua menteri sabah berkata, ...
 
-- **Rank score:** 0.585 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.586 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.7 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 4.8 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
@@ -273,7 +273,7 @@ developed.
 
 ### S24. pemimpin pemuda mahu tahu adakah mca lulus kerjasama bn-pas. saw yee fung soal sama ada kepimpinan mca melu...
 
-- **Rank score:** 0.572 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.573 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 3.8 days (source date: 2026-07-16, first seen: 2026-07-16)
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. saya beri kebenaran rundingan pn-bn, dr sam beritahu muhyiddin. pengerusi pn berkata rundingan dengan bn di...
 
-- **Rank score:** 0.570 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.571 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.7 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 3.8 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
