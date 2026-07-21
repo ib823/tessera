@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-21 05:10 UTC. Queue size: 1078. Picks shown: 25.
+Scan: 2026-07-21 06:59 UTC. Queue size: 1086. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 1.077 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 65.8 days (source date: 2026-07-21, first seen: 2026-05-16)
+- **Age in queue:** 65.9 days (source date: 2026-07-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 0 social — pattern: _news only — no social_
 
@@ -44,7 +44,7 @@ developed.
 
 - **Rank score:** 1.030 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 65.8 days (source date: 2026-07-21, first seen: 2026-05-16)
+- **Age in queue:** 65.9 days (source date: 2026-07-21, first seen: 2026-05-16)
 
 - **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 82.3 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 82.4 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 111.3 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 111.4 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 65.8 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 65.9 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -108,9 +108,9 @@ developed.
 
 ### S9. dun melaka lulus pindaan perlembagaan berkait adun lantikan. mengikut laporan media, dap dijangka mengumumk...
 
-- **Rank score:** 0.809 (silence=1.00 × importance=0.66 × age_factor)
+- **Rank score:** 0.810 (silence=1.00 × importance=0.66 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-07-14, first seen: 2026-07-14)
+- **Age in queue:** 7.0 days (source date: 2026-07-14, first seen: 2026-07-14)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 77.3 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 77.4 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 88.3 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 88.4 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 61.5 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 61.6 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -163,7 +163,7 @@ developed.
 
 ### S14. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.756 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.757 (silence=0.97 × importance=0.41 × age_factor)
 
 - **Age in queue:** 26.8 days (source date: 2026-06-24, first seen: 2026-06-24)
 
@@ -183,114 +183,114 @@ developed.
 - **Dimensions at risk:** legal, political
 
 
-### S16. bekas kpn gagal rayu keputusan saman fitnah hannah. mahkamah persekutuan putus sembilan persoalan undang-un...
+### S16. wawasan sah jadi parti komponen pn. gabungan pembangkang berkata, parti itu sah jadi anggotanya selepas jpp...
 
-- **Rank score:** 0.686 (silence=0.98 × importance=0.56 × age_factor)
+- **Rank score:** 0.688 (silence=1.00 × importance=0.56 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-07-14, first seen: 2026-07-14)
-
-- **Coverage:** 6 news, 7 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal
-
-
-### S17. wawasan sah jadi parti komponen pn. gabungan pembangkang berkata, parti itu sah jadi anggotanya selepas jpp...
-
-- **Rank score:** 0.686 (silence=1.00 × importance=0.56 × age_factor)
-
-- **Age in queue:** 6.6 days (source date: 2026-07-14, first seen: 2026-07-14)
+- **Age in queue:** 6.7 days (source date: 2026-07-14, first seen: 2026-07-14)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S18. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
+### S17. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.674 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.675 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 20.6 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 20.7 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S19. libat urus bersama mof teliti mekanisme subsidi diesel bersasar, kata hajiji. ketua menteri sabah berkata, ...
+### S18. libat urus bersama mof teliti mekanisme subsidi diesel bersasar, kata hajiji. ketua menteri sabah berkata, ...
 
-- **Rank score:** 0.604 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.605 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.8 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 5.9 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S20. bukan semua perjanjian antara suami, isteri boleh dikuatkuasa,  kata mahkamah. mahkamah rayuan mengiktiraf ...
+### S19. bukan semua perjanjian antara suami, isteri boleh dikuatkuasa,  kata mahkamah. mahkamah rayuan mengiktiraf ...
 
-- **Rank score:** 0.599 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.601 (silence=0.98 × importance=0.51 × age_factor)
 
-- **Age in queue:** 6.2 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 6.3 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 7 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, legal
 
 
-### S21. pemimpin pemuda mahu tahu adakah mca lulus kerjasama bn-pas. saw yee fung soal sama ada kepimpinan mca melu...
+### S20. pemimpin pemuda mahu tahu adakah mca lulus kerjasama bn-pas. saw yee fung soal sama ada kepimpinan mca melu...
 
-- **Rank score:** 0.591 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.593 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.9 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 5.0 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 6 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S22. saya beri kebenaran rundingan pn-bn, dr sam beritahu muhyiddin. pengerusi pn berkata rundingan dengan bn di...
+### S21. saya beri kebenaran rundingan pn-bn, dr sam beritahu muhyiddin. pengerusi pn berkata rundingan dengan bn di...
 
-- **Rank score:** 0.589 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.590 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.8 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 4.9 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** general
 
 
-### S23. mahkamah rayuan kekal larangan terhadap mentega terbang. panel tiga hakim dapati tindakan menteri kdn haram...
+### S22. mahkamah rayuan kekal larangan terhadap mentega terbang. panel tiga hakim dapati tindakan menteri kdn haram...
 
-- **Rank score:** 0.579 (silence=0.99 × importance=0.51 × age_factor)
+- **Rank score:** 0.580 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 4.8 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 4.9 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 3 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political, religious
 
 
-### S24. ahli parlimen perlu kemuka laporan kesihatan sebelum 30 okt. langkah itu penting supaya parlimen mempunyai ...
+### S23. ahli parlimen perlu kemuka laporan kesihatan sebelum 30 okt. langkah itu penting supaya parlimen mempunyai ...
 
-- **Rank score:** 0.570 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.571 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-07-14, first seen: 2026-07-14)
+- **Age in queue:** 7.1 days (source date: 2026-07-14, first seen: 2026-07-14)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S25. polis patah sindiket permit kerja, kad unchr palsu. polis mematahkan kegiatan yang didalangi warga asing su...
+### S24. polis patah sindiket permit kerja, kad unchr palsu. polis mematahkan kegiatan yang didalangi warga asing su...
 
-- **Rank score:** 0.566 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.567 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-07-14, first seen: 2026-07-14)
+- **Age in queue:** 6.9 days (source date: 2026-07-14, first seen: 2026-07-14)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
+
+
+### S25. harga minyak cecah rekod tertinggi susulan serangan as. harga minyak melonjak melebihi usd85 setong, menuru...
+
+- **Rank score:** 0.567 (silence=0.99 × importance=0.47 × age_factor)
+
+- **Age in queue:** 6.9 days (source date: 2026-07-14, first seen: 2026-07-14)
+
+- **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
 
 
 ---
