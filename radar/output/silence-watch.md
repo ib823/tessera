@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-21 10:48 UTC. Queue size: 1071. Picks shown: 25.
+Scan: 2026-07-21 12:39 UTC. Queue size: 1068. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 1.076 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 66.0 days (source date: 2026-07-21, first seen: 2026-05-16)
+- **Age in queue:** 66.1 days (source date: 2026-07-21, first seen: 2026-05-16)
 
 - **Coverage:** 3 news, 0 social — pattern: _news only — no social_
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 59.9 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 60.0 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -44,7 +44,7 @@ developed.
 
 - **Rank score:** 1.030 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 66.0 days (source date: 2026-07-21, first seen: 2026-05-16)
+- **Age in queue:** 66.1 days (source date: 2026-07-21, first seen: 2026-05-16)
 
 - **Coverage:** 0 news, 0 social — pattern: _zero news, zero social_
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 77.6 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 77.7 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 111.5 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 111.6 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 66.0 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 66.1 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 39.9 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 40.0 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 77.5 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 77.6 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 88.6 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 88.7 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 60.9 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 61.0 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 61.7 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 61.8 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -152,9 +152,9 @@ developed.
 
 ### S13. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.759 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.760 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 27.0 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 27.1 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -165,7 +165,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 63.9 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 64.0 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -174,9 +174,9 @@ developed.
 
 ### S15. wawasan sah jadi parti komponen pn. gabungan pembangkang berkata, parti itu sah jadi anggotanya selepas jpp...
 
-- **Rank score:** 0.691 (silence=1.00 × importance=0.56 × age_factor)
+- **Rank score:** 0.692 (silence=1.00 × importance=0.56 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-07-14, first seen: 2026-07-14)
+- **Age in queue:** 6.9 days (source date: 2026-07-14, first seen: 2026-07-14)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -185,9 +185,9 @@ developed.
 
 ### S16. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.677 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.678 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 20.8 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 20.9 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. libat urus bersama mof teliti mekanisme subsidi diesel bersasar, kata hajiji. ketua menteri sabah berkata, ...
 
-- **Rank score:** 0.608 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.609 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 6.2 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. bukan semua perjanjian antara suami, isteri boleh dikuatkuasa,  kata mahkamah. mahkamah rayuan mengiktiraf ...
 
-- **Rank score:** 0.603 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.605 (silence=0.98 × importance=0.51 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 6.5 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 7 news, 3 social — pattern: _below-expected coverage_
 
@@ -218,7 +218,7 @@ developed.
 
 ### S19. pemimpin pemuda mahu tahu adakah mca lulus kerjasama bn-pas. saw yee fung soal sama ada kepimpinan mca melu...
 
-- **Rank score:** 0.595 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.597 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 5.2 days (source date: 2026-07-16, first seen: 2026-07-16)
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. saya beri kebenaran rundingan pn-bn, dr sam beritahu muhyiddin. pengerusi pn berkata rundingan dengan bn di...
 
-- **Rank score:** 0.593 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.594 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 5.2 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
@@ -240,55 +240,55 @@ developed.
 
 ### S21. mahkamah rayuan kekal larangan terhadap mentega terbang. panel tiga hakim dapati tindakan menteri kdn haram...
 
-- **Rank score:** 0.583 (silence=0.99 × importance=0.51 × age_factor)
+- **Rank score:** 0.584 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 5.2 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 3 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political, religious
 
 
-### S22. saksi pakar dalam inkues zara qairina tak berdaftar. mahkamah koroner diberitahu menjadi kesalahan guna jaw...
+### S22. nga juga ‘poster boy’ bn pada prn johor, kata kian ming. bekas ahli parlimen berkata, kenyataan kontroversi...
 
-- **Rank score:** 0.564 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.560 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-07-14, first seen: 2026-07-14)
-
-- **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal
-
-
-### S23. nga juga ‘poster boy’ bn pada prn johor, kata kian ming. bekas ahli parlimen berkata, kenyataan kontroversi...
-
-- **Rank score:** 0.559 (silence=0.98 × importance=0.47 × age_factor)
-
-- **Age in queue:** 6.8 days (source date: 2026-07-14, first seen: 2026-07-14)
+- **Age in queue:** 6.9 days (source date: 2026-07-14, first seen: 2026-07-14)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S24. ph antara pilihan muhyiddin untuk kekal kompetitif di pagoh. penganalisis mazlan ali berkata bersatu memerl...
+### S23. ph antara pilihan muhyiddin untuk kekal kompetitif di pagoh. penganalisis mazlan ali berkata bersatu memerl...
 
-- **Rank score:** 0.554 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.555 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 6.5 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 6 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S25. shahidan, teo tikam lidah isu lantik ahli politik dalam skmm. ahli parlimen pembangkang label sekatan lanti...
+### S24. shahidan, teo tikam lidah isu lantik ahli politik dalam skmm. ahli parlimen pembangkang label sekatan lanti...
 
-- **Rank score:** 0.552 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.553 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-07-15, first seen: 2026-07-15)
+- **Age in queue:** 6.1 days (source date: 2026-07-15, first seen: 2026-07-15)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S25. 8 pelajar direman 2 hari kes gaduh sebar gambar, video seks ai. siasatan awal mendapati pergaduhan dipercay...
+
+- **Rank score:** 0.551 (silence=0.98 × importance=0.47 × age_factor)
+
+- **Age in queue:** 6.2 days (source date: 2026-07-15, first seen: 2026-07-15)
+
+- **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
