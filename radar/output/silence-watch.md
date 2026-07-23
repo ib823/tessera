@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-23 08:59 UTC. Queue size: 1014. Picks shown: 25.
+Scan: 2026-07-23 10:49 UTC. Queue size: 1022. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -20,11 +20,11 @@ developed.
 
 ### S1. budget 2027 presentation
 
-- **Rank score:** 1.077 (silence=1.00 × importance=0.54 × age_factor)
+- **Rank score:** 1.079 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 67.9 days (source date: 2026-07-23, first seen: 2026-05-16)
+- **Age in queue:** 68.0 days (source date: 2026-07-23, first seen: 2026-05-16)
 
-- **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
+- **Coverage:** 1 news, 0 social — pattern: _news only — no social_
 
 - **Dimensions at risk:** economic, political
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 61.8 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 61.9 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -42,11 +42,11 @@ developed.
 
 ### S3. parliament budget session session opens
 
-- **Rank score:** 1.027 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 1.028 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 67.9 days (source date: 2026-07-23, first seen: 2026-05-16)
+- **Age in queue:** 68.0 days (source date: 2026-07-23, first seen: 2026-05-16)
 
-- **Coverage:** 2 news, 0 social — pattern: _news only — no social_
+- **Coverage:** 1 news, 0 social — pattern: _news only — no social_
 
 - **Dimensions at risk:** economic, political
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 79.5 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 79.6 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 84.5 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 84.6 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 113.4 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 113.5 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 67.9 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 68.0 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 41.8 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 41.9 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 79.4 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 79.5 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 90.5 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 90.6 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 62.8 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 62.9 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -141,9 +141,9 @@ developed.
 
 ### S12. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.785 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.786 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 28.9 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 29.0 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -165,7 +165,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 65.8 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 65.9 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -174,51 +174,40 @@ developed.
 
 ### S15. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.703 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.704 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 22.7 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 22.8 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S16. saya beri kebenaran rundingan pn-bn, dr sam beritahu muhyiddin. pengerusi pn berkata rundingan dengan bn di...
+### S16. mahkamah rayuan kekal larangan terhadap mentega terbang. panel tiga hakim dapati tindakan menteri kdn haram...
 
-- **Rank score:** 0.626 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.616 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-07-16, first seen: 2026-07-16)
-
-- **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** general
-
-
-### S17. mahkamah rayuan kekal larangan terhadap mentega terbang. panel tiga hakim dapati tindakan menteri kdn haram...
-
-- **Rank score:** 0.615 (silence=0.99 × importance=0.51 × age_factor)
-
-- **Age in queue:** 7.0 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 7.1 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 3 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political, religious
 
 
-### S18. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
+### S17. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.569 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.570 (silence=0.93 × importance=0.41 × age_factor)
 
-- **Age in queue:** 14.8 days (source date: 2026-07-08, first seen: 2026-07-08)
+- **Age in queue:** 14.9 days (source date: 2026-07-08, first seen: 2026-07-08)
 
 - **Coverage:** 10 news, 7 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S19. sprm batal perintah beku akaun bank cropmate, anak syarikat. syarikat itu jelas, tiada pengarah, pegawai, k...
+### S18. sprm batal perintah beku akaun bank cropmate, anak syarikat. syarikat itu jelas, tiada pengarah, pegawai, k...
 
-- **Rank score:** 0.562 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.564 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-07-16, first seen: 2026-07-16)
 
@@ -227,20 +216,20 @@ developed.
 - **Dimensions at risk:** institutional
 
 
-### S20. network school tangguh rancangan pelaburan susulan kontroversi warga israel. pengasasnya balaji srinivasan ...
+### S19. network school tangguh rancangan pelaburan susulan kontroversi warga israel. pengasasnya balaji srinivasan ...
 
-- **Rank score:** 0.555 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.556 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.7 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 6.8 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 7 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S21. dewan negara lulus ruu jenayah siber. ruu jenayah siber bertujuan memperkukuh kerangka perundangan dalam me...
+### S20. dewan negara lulus ruu jenayah siber. ruu jenayah siber bertujuan memperkukuh kerangka perundangan dalam me...
 
-- **Rank score:** 0.555 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.556 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 2.8 days (source date: 2026-07-20, first seen: 2026-07-20)
 
@@ -249,20 +238,20 @@ developed.
 - **Dimensions at risk:** general
 
 
-### S22. kerajaan tak wajibkan calon lembaga kwan inc ditapis parlimen, kata liew. timbalan menteri kewangan berkata...
+### S21. kerajaan tak wajibkan calon lembaga kwan inc ditapis parlimen, kata liew. timbalan menteri kewangan berkata...
 
-- **Rank score:** 0.550 (silence=0.96 × importance=0.47 × age_factor)
+- **Rank score:** 0.551 (silence=0.96 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-07-16, first seen: 2026-07-16)
+- **Age in queue:** 7.0 days (source date: 2026-07-16, first seen: 2026-07-16)
 
 - **Coverage:** 10 news, 8 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S23. pampasan pesalah jalan raya bukan ganti tuntutan sivil atau perundangan, kata loke. menteri pengangkutan be...
+### S22. pampasan pesalah jalan raya bukan ganti tuntutan sivil atau perundangan, kata loke. menteri pengangkutan be...
 
-- **Rank score:** 0.549 (silence=0.96 × importance=0.47 × age_factor)
+- **Rank score:** 0.550 (silence=0.96 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-07-16, first seen: 2026-07-16)
 
@@ -271,24 +260,35 @@ developed.
 - **Dimensions at risk:** political
 
 
-### S24. sprm siasat kerugian rm200 juta kwap dalam efishery. ketua pesuruhjaya abd halim aman berkata siasatan suda...
+### S23. sprm siasat kerugian rm200 juta kwap dalam efishery. ketua pesuruhjaya abd halim aman berkata siasatan suda...
 
-- **Rank score:** 0.541 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.542 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.0 days (source date: 2026-07-18, first seen: 2026-07-18)
+- **Age in queue:** 5.1 days (source date: 2026-07-18, first seen: 2026-07-18)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** institutional
 
 
-### S25. dap nafi guna ‘gelombang hijau’ timbul kebimbangan terhadap pas. ahli parlimen kepong lim lip eng berkata p...
+### S24. dap nafi guna ‘gelombang hijau’ timbul kebimbangan terhadap pas. ahli parlimen kepong lim lip eng berkata p...
 
-- **Rank score:** 0.539 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.540 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 5.2 days (source date: 2026-07-18, first seen: 2026-07-18)
 
 - **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S25. dap pemacu reformasi kerajaan perpaduan, kata syahredzan. ahli parlimen bangi itu berkata kerajaan madani b...
+
+- **Rank score:** 0.540 (silence=0.97 × importance=0.47 × age_factor)
+
+- **Age in queue:** 5.8 days (source date: 2026-07-18, first seen: 2026-07-17)
+
+- **Coverage:** 10 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
