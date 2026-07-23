@@ -1,55 +1,59 @@
-[32m2026-07-23 06:56:02[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-07-23 06:56:02[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-07-23 06:56:02[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 7140 topics from state
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-07-23 06:56:03[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-23T06:56:03.745223+00:00
-[32m2026-07-23 06:56:04[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-07-23 06:56:07[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-07-23 06:56:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-07-23 06:56:09[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-07-23 06:56:11[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-07-23 06:56:11[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 436 events
-[32m2026-07-23 06:56:12[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-07-23 06:56:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-07-23 06:56:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:56:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:56:59[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:57:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:57:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:57:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:57:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:58:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-07-23 06:58:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-07-23 06:58:19[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 4 events
-[32m2026-07-23 06:58:20[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 6 events
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 478 events from 5 sources
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 478 events
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 519 within 24h (158 pruned)
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Sabah NGO president claims trial to MACC charge over RM2m Rungus cultural hall project. KOTA KINABALU, July 23 &mdash; Pertubuhan Rungus Bersatu Sabah (PRBS) president Makinsos Nawai pleaded not guilt" importance=0.38
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "MBI debunks viral image showing Chinese characters added to ‘IPOH’ hill sign. IPOH, July 23 &mdash;&nbsp;Ipoh City Council (MBI) has confirmed that a viral image depicting Chinese characters install.." importance=0.46
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Appeals court reserves ruling in Firdaus Wong constitutional rights case. The appeal centres on whether private individuals can be sued for allegedly violating another person's constitutional rights u" importance=0.36
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Modi vows punishment for exam fraud fuelling India protests. Indian prime minister Narendra Modi promised to set up fast-track courts to prosecute those behind the question paper leaks that sparked wi" importance=0.41
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Govt orders temporary halt to UNHCR refugee registrations. This is to allow for the restructuring of the country's refugee management system, says deputy foreign minister Lukanisman Awang Sauni." importance=0.41
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "PAS gesa siasatan diteruskan susulan penutupan Network School. Siasatan perlu diteruskan Kementerian Dalam Negeri, Jabatan Imigresen, polis dan agensi berkaitan bagi memastikan semua dakwaan disiasat " importance=0.46
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "US Senate panel approves bill cracking down on Chinese vehicle sales. The bill will ban companies with more than 15% ownership by Chinese entities, potentially barring Mercedes-Benz from selling vehic" importance=0.51
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Sabah NGO president claims trial to abusing position over RM2mil hall. Makinsos Nawai is accused of using his position as president of the Sabah United Rungus Organisation to secure funds for the Rung" importance=0.34
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "SPRM peroleh dokumen berkait pelaburan KWAP dalam eFishery. Dokumen termasuk perjanjian pelaburan itu diperolehi di selepas pasukan penyiasat dikerahkan ke Ibu Pejabat KWAP di Cyberjaya." importance=0.36
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "MACC reviewing KWAP documents on eFishery investment loss. This follows a visit by investigators to KWAP's headquarters in Cyberjaya earlier this week." importance=0.41
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Turn GovTech report into immediate action, public service told. PUTRAJAYA, July 22 &mdash; Heads of Departments, agency leaders and secretaries-general of ministries were today urged t..." importance=0.41
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Perak man loses citizenship appeal despite having Malaysian aunt, uncles; as pre-Merdeka-born mother’s status undecided. KUALA LUMPUR, July 22 &mdash; Velmurugan, a 38-year-old man who was born in an " importance=0.41
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Woman dies after losing contact with group during Pulau Tioman dive. &nbsp;KUANTAN, July 22 &mdash;&nbsp;A local woman died while diving in the waters off Kampung Salang, Pulau Tioman, last..." importance=0.41
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 43), ('india', 38), ('chinese', 32), ('pas', 27), ('malay', 26), ('government', 24), ('prime minister', 24), ('protest', 20), ('indian', 17), ('isa', 15)]
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 7143 active topics
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36moutput              [0m | 1022 active issues, 6109 new, 6121 pruned
-[32m2026-07-23 06:58:23[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-07-23 06:58:47[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=93  hmm=OK/63  cox=RT/1022  sarima=RT/1022
-[32m2026-07-23 06:58:47[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1022)
-[32m2026-07-23 06:58:47[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 7143 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-07-23 08:57:15[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-07-23 08:57:15[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-07-23 08:57:15[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 7143 topics from state
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-07-23 08:57:16[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-07-23T08:57:16.485166+00:00
+[32m2026-07-23 08:57:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-07-23 08:57:20[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-07-23 08:57:21[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-07-23 08:57:22[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-07-23 08:57:24[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-07-23 08:57:24[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 437 events
+[32m2026-07-23 08:57:25[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-07-23 08:57:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-07-23 08:57:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:57:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:58:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:58:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-07-23 08:58:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:58:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:58:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:59:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:59:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-07-23 08:59:12[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-07-23 08:59:14[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 6 events
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 11 events
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 479 events from 5 sources
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 479 events
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 512 within 24h (153 pruned)
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "‘No Bangkok Move, no Dubai Move’: Zahid says BN committed to unity govt until end of Parliament. GEORGE TOWN, July 23 &mdash; Barisan Nasional (BN) remains committed to the Unity Government until the " importance=0.46
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "‘No Bangkok Move, no Dubai Move’: Zahid says BN committed to unity govt until end of Parliament. GEORGE TOWN, July 23 &mdash; Barisan Nasional (BN) remains committed to the Unity Government until the " importance=0.36
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Former e-hailing driver claims trial to 12 charges in Klang over armed robbery, fraud, theft. KUALA LUMPUR, July 23 &mdash; A former e-hailing driver was charged in separate courts in Klang today with" importance=0.36
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Sabah assemblyman questions delay in action against hospital director over sexual harassment claims. &nbsp;KOTA KINABALU, July 23 &mdash; An opposition assemblyman today questioned why a hospital dire" importance=0.46
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Five, including teens, plead guilty over Johor restaurant brawl during World Cup screening. &nbsp;JOHOR BAHRU, July 23 &mdash; Five men, including two teenagers, pleaded guilty in the Magistrate&rsquo" importance=0.36
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Sabah NGO president claims trial to MACC charge over RM2m Rungus cultural hall project. KOTA KINABALU, July 23 &mdash; Pertubuhan Rungus Bersatu Sabah (PRBS) president Makinsos Nawai pleaded not guilt" importance=0.38
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "MBI debunks viral image showing Chinese characters added to ‘IPOH’ hill sign. IPOH, July 23 &mdash;&nbsp;Ipoh City Council (MBI) has confirmed that a viral image depicting Chinese characters install.." importance=0.46
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [court_of_appeal_ruling] "Mahkamah Rayuan tangguh keputusan kes Firdaus Wong berkait hak perlembagaan. Rayuan itu tertumpu sama ada individu boleh saman individu lain kerana langgar hak di bawah Perlembagaan Persekutuan." importance=0.46
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Zahid responds to Anwar’s poem with verse of his own. The deputy prime minister and Barisan Nasional chairman also stresses that BN remains committed to the unity government until the end of its term." importance=0.36
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Appeals court reserves ruling in Firdaus Wong constitutional rights case. The appeal centres on whether private individuals can be sued for allegedly violating another person's constitutional rights u" importance=0.36
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Modi vows punishment for exam fraud fuelling India protests. Indian prime minister Narendra Modi promised to set up fast-track courts to prosecute those behind the question paper leaks that sparked wi" importance=0.41
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Govt orders temporary halt to UNHCR refugee registrations. This is to allow for the restructuring of the country's refugee management system, says deputy foreign minister Lukanisman Awang Sauni." importance=0.41
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "PAS gesa siasatan diteruskan susulan penutupan Network School. Siasatan perlu diteruskan Kementerian Dalam Negeri, Jabatan Imigresen, polis dan agensi berkaitan bagi memastikan semua dakwaan disiasat " importance=0.46
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "US Senate panel approves bill cracking down on Chinese vehicle sales. The bill will ban companies with more than 15% ownership by Chinese entities, potentially barring Mercedes-Benz from selling vehic" importance=0.51
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Sabah NGO president claims trial to abusing position over RM2mil hall. Makinsos Nawai is accused of using his position as president of the Sabah United Rungus Organisation to secure funds for the Rung" importance=0.34
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "SPRM peroleh dokumen berkait pelaburan KWAP dalam eFishery. Dokumen termasuk perjanjian pelaburan itu diperolehi di selepas pasukan penyiasat dikerahkan ke Ibu Pejabat KWAP di Cyberjaya." importance=0.36
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "MACC reviewing KWAP documents on eFishery investment loss. This follows a visit by investigators to KWAP's headquarters in Cyberjaya earlier this week." importance=0.41
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'silence_detector': 'ok'}
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 44), ('india', 44), ('chinese', 30), ('government', 29), ('pas', 25), ('malay', 22), ('prime minister', 21), ('isa', 20), ('protest', 20), ('indian', 19)]
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 7146 active topics
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36moutput              [0m | 1014 active issues, 6124 new, 6132 pruned
+[32m2026-07-23 08:59:18[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-07-23 08:59:38[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=93  hmm=OK/63  cox=RT/1014  sarima=RT/1014
+[32m2026-07-23 08:59:38[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1014)
+[32m2026-07-23 08:59:38[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 7146 active topics. Top: parliament budget session session opens (score: 0.98)
