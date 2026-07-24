@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-24 06:59 UTC. Queue size: 1025. Picks shown: 25.
+Scan: 2026-07-24 08:58 UTC. Queue size: 1025. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 62.7 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 62.8 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 80.4 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 80.5 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 85.4 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 85.5 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 42.7 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 42.8 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -119,9 +119,9 @@ developed.
 
 ### S10. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
-- **Rank score:** 0.797 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.798 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 29.8 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 29.9 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 91.4 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 91.5 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 63.7 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 63.8 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 64.6 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 64.7 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -163,7 +163,7 @@ developed.
 
 ### S14. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.715 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.716 (silence=0.97 × importance=0.41 × age_factor)
 
 - **Age in queue:** 23.7 days (source date: 2026-06-30, first seen: 2026-06-30)
 
@@ -176,7 +176,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 66.7 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 66.8 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed.
 
 ### S16. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.581 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.582 (silence=0.93 × importance=0.41 × age_factor)
 
 - **Age in queue:** 15.8 days (source date: 2026-07-08, first seen: 2026-07-08)
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. dewan negara lulus ruu jenayah siber. ruu jenayah siber bertujuan memperkukuh kerangka perundangan dalam me...
 
-- **Rank score:** 0.570 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.572 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.7 days (source date: 2026-07-20, first seen: 2026-07-20)
+- **Age in queue:** 3.8 days (source date: 2026-07-20, first seen: 2026-07-20)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. sprm siasat kerugian rm200 juta kwap dalam efishery. ketua pesuruhjaya abd halim aman berkata siasatan suda...
 
-- **Rank score:** 0.555 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.556 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 5.9 days (source date: 2026-07-18, first seen: 2026-07-18)
+- **Age in queue:** 6.0 days (source date: 2026-07-18, first seen: 2026-07-18)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. kerajaan tarik balik rayuan terakhir kes pemecatan guru. keputusan itu menamatkan pertikaian undang-undang ...
 
-- **Rank score:** 0.554 (silence=1.00 × importance=0.51 × age_factor)
+- **Rank score:** 0.555 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 3.0 days (source date: 2026-07-21, first seen: 2026-07-21)
+- **Age in queue:** 3.1 days (source date: 2026-07-21, first seen: 2026-07-21)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. dap nafi guna ‘gelombang hijau’ timbul kebimbangan terhadap pas. ahli parlimen kepong lim lip eng berkata p...
 
-- **Rank score:** 0.553 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.554 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.1 days (source date: 2026-07-18, first seen: 2026-07-18)
+- **Age in queue:** 6.2 days (source date: 2026-07-18, first seen: 2026-07-18)
 
 - **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
 
@@ -240,9 +240,9 @@ developed.
 
 ### S21. dap pemacu reformasi kerajaan perpaduan, kata syahredzan. ahli parlimen bangi itu berkata kerajaan madani b...
 
-- **Rank score:** 0.552 (silence=0.97 × importance=0.47 × age_factor)
+- **Rank score:** 0.554 (silence=0.97 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.7 days (source date: 2026-07-18, first seen: 2026-07-17)
+- **Age in queue:** 6.8 days (source date: 2026-07-18, first seen: 2026-07-17)
 
 - **Coverage:** 10 news, 3 social — pattern: _below-expected coverage_
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. syed saddiq janji rm650,959 kutipan larian kesyukuran 100% untuk rakyat. ahli parlimen muar berjanji tidak ...
 
-- **Rank score:** 0.549 (silence=0.98 × importance=0.48 × age_factor)
+- **Rank score:** 0.550 (silence=0.98 × importance=0.48 × age_factor)
 
-- **Age in queue:** 4.9 days (source date: 2026-07-19, first seen: 2026-07-19)
+- **Age in queue:** 5.0 days (source date: 2026-07-19, first seen: 2026-07-19)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. trump lulus perjanjian nuklear bersejarah dengan saudi. menurut pegawai as, perjanjian itu dijangka berkuat...
 
-- **Rank score:** 0.546 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.547 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 2.0 days (source date: 2026-07-22, first seen: 2026-07-22)
+- **Age in queue:** 2.1 days (source date: 2026-07-22, first seen: 2026-07-22)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -273,9 +273,9 @@ developed.
 
 ### S24. kes perdagang orang di berapit: sim gesa pihak berkuasa siasat menyeluruh. ahli parlimen bukit mertajam min...
 
-- **Rank score:** 0.530 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.531 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 4.8 days (source date: 2026-07-19, first seen: 2026-07-19)
+- **Age in queue:** 4.9 days (source date: 2026-07-19, first seen: 2026-07-19)
 
 - **Coverage:** 5 news, 4 social — pattern: _below-expected coverage_
 
@@ -284,11 +284,11 @@ developed.
 
 ### S25. kastam gagal cubaan seludup rokok rm9.14 juta. aktiviti terbongkar susulan pemeriksaan pada 24 jun ke atas ...
 
-- **Rank score:** 0.519 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.522 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 0.0 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 0.1 days (source date: 2026-07-24, first seen: 2026-07-24)
 
-- **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
+- **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
