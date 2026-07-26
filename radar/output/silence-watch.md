@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-26 07:02 UTC. Queue size: 1013. Picks shown: 25.
+Scan: 2026-07-26 08:53 UTC. Queue size: 1018. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 82.4 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 82.5 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 87.4 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 87.5 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 44.7 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 44.8 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 31.8 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 31.9 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 93.4 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 93.5 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 65.7 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 65.8 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 66.6 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 66.7 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -163,7 +163,7 @@ developed.
 
 ### S14. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.742 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.743 (silence=0.97 × importance=0.41 × age_factor)
 
 - **Age in queue:** 25.7 days (source date: 2026-06-30, first seen: 2026-06-30)
 
@@ -176,7 +176,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 68.7 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 68.8 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed.
 
 ### S16. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.607 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.608 (silence=0.93 × importance=0.41 × age_factor)
 
 - **Age in queue:** 17.8 days (source date: 2026-07-08, first seen: 2026-07-08)
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. dewan negara lulus ruu jenayah siber. ruu jenayah siber bertujuan memperkukuh kerangka perundangan dalam me...
 
-- **Rank score:** 0.604 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.605 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.7 days (source date: 2026-07-20, first seen: 2026-07-20)
+- **Age in queue:** 5.8 days (source date: 2026-07-20, first seen: 2026-07-20)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. kerajaan tarik balik rayuan terakhir kes pemecatan guru. keputusan itu menamatkan pertikaian undang-undang ...
 
-- **Rank score:** 0.587 (silence=1.00 × importance=0.51 × age_factor)
+- **Rank score:** 0.589 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 5.0 days (source date: 2026-07-21, first seen: 2026-07-21)
+- **Age in queue:** 5.1 days (source date: 2026-07-21, first seen: 2026-07-21)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. syed saddiq janji rm650,959 kutipan larian kesyukuran 100% untuk rakyat. ahli parlimen muar berjanji tidak ...
 
-- **Rank score:** 0.581 (silence=0.98 × importance=0.48 × age_factor)
+- **Rank score:** 0.582 (silence=0.98 × importance=0.48 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-07-19, first seen: 2026-07-19)
+- **Age in queue:** 7.0 days (source date: 2026-07-19, first seen: 2026-07-19)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. trump lulus perjanjian nuklear bersejarah dengan saudi. menurut pegawai as, perjanjian itu dijangka berkuat...
 
-- **Rank score:** 0.580 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.581 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.0 days (source date: 2026-07-22, first seen: 2026-07-22)
+- **Age in queue:** 4.1 days (source date: 2026-07-22, first seen: 2026-07-22)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -240,7 +240,7 @@ developed.
 
 ### S21. kes perdagang orang di berapit: sim gesa pihak berkuasa siasat menyeluruh. ahli parlimen bukit mertajam min...
 
-- **Rank score:** 0.560 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.561 (silence=0.98 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.9 days (source date: 2026-07-19, first seen: 2026-07-19)
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. kastam gagal cubaan seludup rokok rm9.14 juta. aktiviti terbongkar susulan pemeriksaan pada 24 jun ke atas ...
 
-- **Rank score:** 0.555 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.557 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 2.0 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 2.1 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -262,7 +262,7 @@ developed.
 
 ### S23. ‘the odyssey’ lives up to its epic ambitions. christopher nolan brings homer's timeless epic to life in a v...
 
-- **Rank score:** 0.544 (silence=1.00 × importance=0.47 × age_factor)
+- **Rank score:** 0.545 (silence=1.00 × importance=0.47 × age_factor)
 
 - **Age in queue:** 5.3 days (source date: 2026-07-21, first seen: 2026-07-21)
 
@@ -273,9 +273,9 @@ developed.
 
 ### S24. timbalan tiada kuasa buat keputusan bagi pihak exco, kata onn hafiz. 10 timbalan exco juga tidak hadir mmkn...
 
-- **Rank score:** 0.541 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.543 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 1.9 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 2.0 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
 
@@ -284,7 +284,7 @@ developed.
 
 ### S25. as laksana tarif tambahan 10% terhadap malaysia atas dakwaan buruh paksa. washington berkata langkah itu di...
 
-- **Rank score:** 0.540 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.541 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 2.2 days (source date: 2026-07-24, first seen: 2026-07-24)
 
