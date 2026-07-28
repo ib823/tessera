@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-28 07:00 UTC. Queue size: 1012. Picks shown: 25.
+Scan: 2026-07-28 09:03 UTC. Queue size: 1000. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 84.4 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 84.5 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 89.4 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 89.5 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 118.4 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 118.5 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 46.7 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 46.8 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 33.8 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 33.9 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 95.4 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 95.5 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 67.7 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 67.8 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 68.6 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 68.7 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -163,9 +163,9 @@ developed.
 
 ### S14. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.768 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.770 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 27.7 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 27.8 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -176,7 +176,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 70.7 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 70.8 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed.
 
 ### S16. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.632 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.633 (silence=0.93 × importance=0.41 × age_factor)
 
 - **Age in queue:** 19.8 days (source date: 2026-07-08, first seen: 2026-07-08)
 
@@ -194,53 +194,42 @@ developed.
 - **Dimensions at risk:** legal, political
 
 
-### S17. kerajaan tarik balik rayuan terakhir kes pemecatan guru. keputusan itu menamatkan pertikaian undang-undang ...
+### S17. trump lulus perjanjian nuklear bersejarah dengan saudi. menurut pegawai as, perjanjian itu dijangka berkuat...
 
-- **Rank score:** 0.621 (silence=1.00 × importance=0.51 × age_factor)
+- **Rank score:** 0.616 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-07-21, first seen: 2026-07-21)
-
-- **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S18. trump lulus perjanjian nuklear bersejarah dengan saudi. menurut pegawai as, perjanjian itu dijangka berkuat...
-
-- **Rank score:** 0.614 (silence=0.99 × importance=0.52 × age_factor)
-
-- **Age in queue:** 6.0 days (source date: 2026-07-22, first seen: 2026-07-22)
+- **Age in queue:** 6.1 days (source date: 2026-07-22, first seen: 2026-07-22)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** general
 
 
-### S19. kastam gagal cubaan seludup rokok rm9.14 juta. aktiviti terbongkar susulan pemeriksaan pada 24 jun ke atas ...
+### S18. kastam gagal cubaan seludup rokok rm9.14 juta. aktiviti terbongkar susulan pemeriksaan pada 24 jun ke atas ...
 
-- **Rank score:** 0.590 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.591 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.0 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 4.1 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S20. timbalan tiada kuasa buat keputusan bagi pihak exco, kata onn hafiz. 10 timbalan exco juga tidak hadir mmkn...
+### S19. timbalan tiada kuasa buat keputusan bagi pihak exco, kata onn hafiz. 10 timbalan exco juga tidak hadir mmkn...
 
-- **Rank score:** 0.575 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.577 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.9 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 4.0 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** general
 
 
-### S21. as laksana tarif tambahan 10% terhadap malaysia atas dakwaan buruh paksa. washington berkata langkah itu di...
+### S20. as laksana tarif tambahan 10% terhadap malaysia atas dakwaan buruh paksa. washington berkata langkah itu di...
 
-- **Rank score:** 0.573 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.575 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 4.2 days (source date: 2026-07-24, first seen: 2026-07-24)
 
@@ -249,20 +238,20 @@ developed.
 - **Dimensions at risk:** ethnic, political
 
 
-### S22. siasat sanusi lepas pertikai kesetiaan orang cina, india, kata ahli parlimen. chong zhemin berkata dakwaan ...
+### S21. siasat sanusi lepas pertikai kesetiaan orang cina, india, kata ahli parlimen. chong zhemin berkata dakwaan ...
 
-- **Rank score:** 0.569 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.571 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.8 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 3.9 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 7 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### S23. ramkarpal selar sanusi, bimbang cetus ketegangan. ahli parlimen dap itu turut bidas umno kerana tidak meneg...
+### S22. ramkarpal selar sanusi, bimbang cetus ketegangan. ahli parlimen dap itu turut bidas umno kerana tidak meneg...
 
-- **Rank score:** 0.561 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.562 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 3.2 days (source date: 2026-07-25, first seen: 2026-07-25)
 
@@ -271,26 +260,37 @@ developed.
 - **Dimensions at risk:** ethnic, political
 
 
-### S24. saya tiada kaitan syarikat adik dapat kontrak rm178 juta, kata azam. bekas ketua pesuruhjaya sprm berkata t...
+### S23. saya tiada kaitan syarikat adik dapat kontrak rm178 juta, kata azam. bekas ketua pesuruhjaya sprm berkata t...
 
-- **Rank score:** 0.553 (silence=0.96 × importance=0.47 × age_factor)
+- **Rank score:** 0.554 (silence=0.96 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-07-21, first seen: 2026-07-21)
+- **Age in queue:** 6.9 days (source date: 2026-07-21, first seen: 2026-07-21)
 
 - **Coverage:** 13 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** institutional, political
 
 
-### S25. keputusan dedah laporan rci tabung haji akan dibincang jemaah menteri. menteri agama berkata ia susulan ter...
+### S24. keputusan dedah laporan rci tabung haji akan dibincang jemaah menteri. menteri agama berkata ia susulan ter...
 
-- **Rank score:** 0.551 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.552 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-07-22, first seen: 2026-07-22)
+- **Age in queue:** 6.1 days (source date: 2026-07-22, first seen: 2026-07-22)
 
 - **Coverage:** 4 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political, religious
+
+
+### S25. isu kwap: anwar tak perlu letak jawatan menteri kewangan. ahli parlimen dap berkata tuntutan ketua pemuda p...
+
+- **Rank score:** 0.552 (silence=0.98 × importance=0.47 × age_factor)
+
+- **Age in queue:** 6.2 days (source date: 2026-07-22, first seen: 2026-07-22)
+
+- **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
 
 
 ---
