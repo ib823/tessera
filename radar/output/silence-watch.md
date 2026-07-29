@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-07-29 10:57 UTC. Queue size: 1021. Picks shown: 25.
+Scan: 2026-07-29 12:48 UTC. Queue size: 1009. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -22,7 +22,7 @@ developed.
 
 - **Rank score:** 1.077 (silence=1.00 × importance=0.54 × age_factor)
 
-- **Age in queue:** 74.0 days (source date: 2026-07-29, first seen: 2026-05-16)
+- **Age in queue:** 74.1 days (source date: 2026-07-29, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 0 social — pattern: _news only — no social_
 
@@ -33,7 +33,7 @@ developed.
 
 - **Rank score:** 1.061 (silence=0.99 × importance=0.54 × age_factor)
 
-- **Age in queue:** 67.9 days (source date: 2026-05-22, first seen: 2026-05-22)
+- **Age in queue:** 68.0 days (source date: 2026-05-22, first seen: 2026-05-22)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -44,7 +44,7 @@ developed.
 
 - **Rank score:** 1.027 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 74.0 days (source date: 2026-07-29, first seen: 2026-05-16)
+- **Age in queue:** 74.1 days (source date: 2026-07-29, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 0 social — pattern: _news only — no social_
 
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 85.6 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 85.7 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 90.6 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 90.7 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 119.5 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 119.6 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -88,7 +88,7 @@ developed.
 
 - **Rank score:** 0.924 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 74.0 days (source date: 2026-06-21, first seen: 2026-05-16)
+- **Age in queue:** 74.1 days (source date: 2026-06-21, first seen: 2026-05-16)
 
 - **Coverage:** 2 news, 1 social — pattern: _24h+ silence then rising_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 47.9 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 48.0 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -110,7 +110,7 @@ developed.
 
 - **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
 
-- **Age in queue:** 85.5 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 85.6 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
 
@@ -121,7 +121,7 @@ developed.
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 35.0 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 35.1 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 96.6 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 96.7 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 68.9 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 69.0 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -152,9 +152,9 @@ developed.
 
 ### S13. kerajaan p pinang tiada kuasa lulus penambakan, kata mahkamah. mahkamah kata dasar laut dan subtanah bawah ...
 
-- **Rank score:** 0.784 (silence=0.97 × importance=0.41 × age_factor)
+- **Rank score:** 0.785 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 28.8 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 28.9 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -165,40 +165,40 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 69.7 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 69.8 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** institutional, political
 
 
-### S15. zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may 18 &mdash; the co...
+### S15. sindiket godam sistem pas pekerja asing, 7 penjawat awam antara 12 ditahan. kerajaan dianggarkan rugi rm2.4...
 
-- **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
+- **Rank score:** 0.707 (silence=1.00 × importance=0.70 × age_factor)
 
-- **Age in queue:** 71.9 days (source date: 2026-05-19, first seen: 2026-05-18)
-
-- **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S16. sindiket godam sistem pas pekerja asing, 7 penjawat awam antara 12 ditahan. kerajaan dianggarkan rugi rm2.4...
-
-- **Rank score:** 0.706 (silence=1.00 × importance=0.70 × age_factor)
-
-- **Age in queue:** 0.3 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 0.4 days (source date: 2026-07-29, first seen: 2026-07-29)
 
 - **Coverage:** 2 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, ethnic, political
 
 
+### S16. zara qairina inquest hears emotional mother-daughter audio recordings. kota kinabalu, may 18 &mdash; the co...
+
+- **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
+
+- **Age in queue:** 72.0 days (source date: 2026-05-19, first seen: 2026-05-18)
+
+- **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, political
+
+
 ### S17. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.647 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.648 (silence=0.93 × importance=0.41 × age_factor)
 
-- **Age in queue:** 20.9 days (source date: 2026-07-08, first seen: 2026-07-08)
+- **Age in queue:** 21.0 days (source date: 2026-07-08, first seen: 2026-07-08)
 
 - **Coverage:** 10 news, 7 social — pattern: _below-expected coverage_
 
@@ -207,7 +207,7 @@ developed.
 
 ### S18. kastam gagal cubaan seludup rokok rm9.14 juta. aktiviti terbongkar susulan pemeriksaan pada 24 jun ke atas ...
 
-- **Rank score:** 0.610 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.612 (silence=1.00 × importance=0.52 × age_factor)
 
 - **Age in queue:** 5.2 days (source date: 2026-07-24, first seen: 2026-07-24)
 
@@ -218,20 +218,20 @@ developed.
 
 ### S19. tiada bicara semula kes rasuah rosmah rm1.25 bilion projek solar hibrid. mahkamah rayuan kini akan dengar r...
 
-- **Rank score:** 0.597 (silence=0.99 × importance=0.60 × age_factor)
+- **Rank score:** 0.600 (silence=0.99 × importance=0.60 × age_factor)
 
-- **Age in queue:** 0.0 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 0.1 days (source date: 2026-07-29, first seen: 2026-07-29)
 
-- **Coverage:** 9 news, 6 social — pattern: _below-expected coverage_
+- **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
 ### S20. timbalan tiada kuasa buat keputusan bagi pihak exco, kata onn hafiz. 10 timbalan exco juga tidak hadir mmkn...
 
-- **Rank score:** 0.595 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.596 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 5.2 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
 
@@ -240,9 +240,9 @@ developed.
 
 ### S21. as laksana tarif tambahan 10% terhadap malaysia atas dakwaan buruh paksa. washington berkata langkah itu di...
 
-- **Rank score:** 0.593 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.594 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.3 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 5.4 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 9 news, 6 social — pattern: _below-expected coverage_
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. siasat sanusi lepas pertikai kesetiaan orang cina, india, kata ahli parlimen. chong zhemin berkata dakwaan ...
 
-- **Rank score:** 0.589 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.590 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.9 days (source date: 2026-07-24, first seen: 2026-07-24)
+- **Age in queue:** 5.0 days (source date: 2026-07-24, first seen: 2026-07-24)
 
 - **Coverage:** 7 news, 5 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. ramkarpal selar sanusi, bimbang cetus ketegangan. ahli parlimen dap itu turut bidas umno kerana tidak meneg...
 
-- **Rank score:** 0.580 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.582 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-07-25, first seen: 2026-07-25)
+- **Age in queue:** 4.4 days (source date: 2026-07-25, first seen: 2026-07-25)
 
 - **Coverage:** 8 news, 2 social — pattern: _below-expected coverage_
 
@@ -273,7 +273,7 @@ developed.
 
 ### S24. keluarga pastor koh gagal batalkan penangguhan penghakiman rm37 juta. mahkamah rayuan memutuskan mahkamah t...
 
-- **Rank score:** 0.575 (silence=0.99 × importance=0.58 × age_factor)
+- **Rank score:** 0.577 (silence=0.99 × importance=0.58 × age_factor)
 
 - **Age in queue:** 0.2 days (source date: 2026-07-29, first seen: 2026-07-29)
 
@@ -284,7 +284,7 @@ developed.
 
 ### S25. dap perlu berubah atau kekal bergantung pengundi cina, kata ong. bekas ahli parlimen bangi ong kian ming be...
 
-- **Rank score:** 0.556 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.558 (silence=0.98 × importance=0.52 × age_factor)
 
 - **Age in queue:** 3.2 days (source date: 2026-07-26, first seen: 2026-07-26)
 
