@@ -74,6 +74,8 @@ workers/**/.wrangler/
 radar/output/logs/*.log
 !radar/output/logs/last-cycle.log
 radar/output/archive/
+# Refitted each cycle from state.json; the CI workflow never commits them
+radar/output/models/
 __pycache__/
 *.pyc
 .pytest_cache/
