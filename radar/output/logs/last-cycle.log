@@ -1,62 +1,56 @@
-[32m2026-08-01 06:54:38[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-08-01 06:54:38[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-08-01 06:54:38[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 7654 topics from state
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-08-01 06:54:39[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-01T06:54:39.791798+00:00
-[32m2026-08-01 06:54:40[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-08-01 06:54:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-08-01 06:54:44[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-08-01 06:54:45[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-08-01 06:54:49[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-08-01 06:54:49[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
-[32m2026-08-01 06:54:50[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-08-01 06:55:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-08-01 06:55:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:55:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:55:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:55:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:56:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:56:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-01 06:56:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:56:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:57:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-01 06:57:01[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 3 events
-[32m2026-08-01 06:57:03[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 8 events
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 489 events from 5 sources
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 489 events
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 481 within 24h (167 pruned)
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Licensed hunter urges cooperation as Sibu crocodile chase draws roadside crowds, sparks traffic chaos. SIBU, Aug 1 &mdash; Licensed crocodile hunter Jeferry Siew has appealed for public cooperation af" importance=0.36
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Siblings lose mother, youngest brother in Gua Musang crash a year after father's death. GUA MUSANG, Aug 1 &mdash; Exactly one year after losing their father, three siblings have been dealt another dev" importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Veterinary Services Department denies involvement in government order documents, fake supply. PUTRAJAYA, Aug 1 &mdash;The Department of Veterinary Services (DVS) categorically denies the department&rs" importance=0.46
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Employment agent survives 33rd‑floor fall in Brickfields, semi‑conscious with fractures as police investigate. KUALA LUMPUR, Aug 1 &mdash; A man was seriously injured after reportedly falling from the" importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "AFC chief welcome’s Fifa decision to scrap World Cup sell-off plan. The head of the Asian Football Confederation stresses the need to discuss initiatives that could impact global football more transpa" importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "BN denies plans for MB swearing-in ceremony today. Negeri Sembilan Barisan Nasional chief Mohamad Hasan said the coalition's rivals should be convincing the people of what they can deliver, instead of" importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Cops seek e-hailing driver to identify man in video insulting Islam. The case is being investigated for sedition, wounding religious feelings, and transmitting offensive content." importance=0.36
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Peru’s former president Humala walks free after conviction quashed. Ollanta Humala is released from prison after his 15-year money laundering sentence linked to a massive graft scandal was overturned." importance=0.36
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Aminuddin questions EC’s pilot voter verification system. The Negeri Sembilan PH chairman says the trial, carried out at one polling station, should have been discussed with the candidates beforehand." importance=0.31
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "EU gets new powers over AI from Sunday. The bloc adopted a sweeping AI law known as the 'AI Act' in 2024, but its rules have been introduced in stages." importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Probe Rocky’s death independently, don’t blame owner, says Santiago. Former Klang MP Charles Santiago says labelling the owner 'aggressive' distracts from the main issue of the dog’s death during an e" importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Siasat kematian Rocky secara bebas, jangan salahkan pemilik, kata Santiago. Bekas Ahli Parlimen Klang Charles Santiago berkata menggambarkan pemiliknya sebagai 'agresif' hanya mengalih perhatian darip" importance=0.46
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Fifa scraps private investment plan after backlash. The world football governing body proposed the plan to allow private investment in flagship events on Tuesday, saying it could raise up to US$4.2 bi" importance=0.46
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Malaysia records 2,001 factory fires, RM4.21b losses since 2020, says Fire Dept D-G. PUTRAJAYA, July 31 &mdash; A total of 2,001 factory fire cases with losses amounting to RM4.21 billion have been re" importance=0.66
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Anwar appeals to Tunisian president for release of opposition leader Ghannouchi on humanitarian grounds. KUALA LUMPUR, July 31 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has sent a letter to Tuni" importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "High Court allows prosecution appeal, sets aside Papagomo’s acquittal in sedition case. KUALA LUMPUR, July 31 &mdash; The High Court today set aside the sessions court&rsquo;s acquittal of political i" importance=0.36
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Chong Chieng Jen files appeal against ‘black hole’ ruling permitting govt defamation suits, says decision against public interest. KUCHING, July 31 &mdash; Sarawak Democratic Action Party (DAP) chairm" importance=0.46
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [high_court_ruling] "Chong Chieng Jen files appeal against ‘black hole’ ruling permitting govt defamation suits, says decision against public interest. KUCHING, July 31 &mdash; Sarawak Democratic Action Party (DAP) chairm" importance=0.36
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [high_court_ruling] "‘Let you die here’: Plumber gets eight years’ jail for attempted murder of 16‑year‑old girl in Penampang. KOTA KINABALU, July 31 &mdash; A plumber was sentenced to eight years in prison by the Session" importance=0.36
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0022 [bill_reading] "Anwar says Tabung Haji RCI report released in full, without redactions. SEREMBAN, July 31 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today said the full Royal Commission of Inquiry (RCI)..." importance=0.41
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 35), ('minister', 28), ('india', 28), ('isa', 27), ('government', 26), ('vote', 20), ('pas', 20), ('chinese', 19), ('election', 18), ('prime minister', 15)]
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 15 events monitored, 15 flagged
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 7655 active topics
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36moutput              [0m | 1102 active issues, 6555 new, 6554 pruned
-[32m2026-08-01 06:57:05[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-01 06:57:28[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=102  hmm=OK/69  cox=RT/1102  sarima=RT/1102
-[32m2026-08-01 06:57:28[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1102)
-[32m2026-08-01 06:57:28[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 7655 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-08-01 08:50:08[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-08-01 08:50:09[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-08-01 08:50:09[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-08-01 08:50:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-08-01 08:50:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-08-01 08:50:09[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-08-01 08:50:10[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-01 08:50:10[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 7655 topics from state
+[32m2026-08-01 08:50:10[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-08-01 08:50:10[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-01T08:50:10.016613+00:00
+[32m2026-08-01 08:50:10[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-08-01 08:50:12[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-08-01 08:50:13[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-08-01 08:50:14[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-08-01 08:50:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-08-01 08:50:18[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
+[32m2026-08-01 08:50:19[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-08-01 08:50:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-08-01 08:50:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:50:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:51:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:51:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:51:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:52:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:52:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-08-01 08:52:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-01 08:52:32[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 10 events
+[32m2026-08-01 08:52:33[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 491 events from 5 sources
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 491 events
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 467 within 24h (165 pruned)
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Licensed hunter urges cooperation as Sibu crocodile chase draws roadside crowds, sparks traffic chaos. SIBU, Aug 1 &mdash; Licensed crocodile hunter Jeferry Siew has appealed for public cooperation af" importance=0.36
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Siblings lose mother, youngest brother in Gua Musang crash a year after father's death. GUA MUSANG, Aug 1 &mdash; Exactly one year after losing their father, three siblings have been dealt another dev" importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Veterinary Services Department denies involvement in government order documents, fake supply. PUTRAJAYA, Aug 1 &mdash;The Department of Veterinary Services (DVS) categorically denies the department&rs" importance=0.46
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Employment agent survives 33rd‑floor fall in Brickfields, semi‑conscious with fractures as police investigate. KUALA LUMPUR, Aug 1 &mdash; A man was seriously injured after reportedly falling from the" importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Search resumes for missing climbers from Pakistan avalanche. The avalanche struck on Thursday, cutting off contact with the ten-member international expedition led by renowned British-Nepali climber N" importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Security at Negeri Sembilan palace, Wisma Negeri to be beefed up. IGP does not dismiss possibility that certain parties may try to cause a ruckus out of dissatisfaction over election results." importance=0.46
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "AFC chief welcomes Fifa’s decision to scrap World Cup sell-off plan. The head of the Asian Football Confederation stresses the need to discuss initiatives that could impact global football more transp" importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "BN denies plans for MB swearing-in ceremony today. Negeri Sembilan Barisan Nasional chief Mohamad Hasan said the coalition's rivals should be convincing the people of what they can deliver, instead of" importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Cops seek e-hailing driver to identify man in video insulting Islam. The case is being investigated for sedition, wounding religious feelings, and transmitting offensive content." importance=0.36
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Peru’s former president Humala walks free after conviction quashed. Ollanta Humala is released from prison after his 15-year money laundering sentence linked to a massive graft scandal was overturned." importance=0.36
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Aminuddin questions EC’s pilot voter verification system. The Negeri Sembilan PH chairman says the trial, carried out at one polling station, should have been discussed with the candidates beforehand." importance=0.31
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "EU gets new powers over AI from Sunday. The bloc adopted a sweeping AI law known as the 'AI Act' in 2024, but its rules have been introduced in stages." importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Malaysia records 2,001 factory fires, RM4.21b losses since 2020, says Fire Dept D-G. PUTRAJAYA, July 31 &mdash; A total of 2,001 factory fire cases with losses amounting to RM4.21 billion have been re" importance=0.66
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Anwar appeals to Tunisian president for release of opposition leader Ghannouchi on humanitarian grounds. KUALA LUMPUR, July 31 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has sent a letter to Tuni" importance=0.41
+[32m2026-08-01 08:52:35[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "High Court allows prosecution appeal, sets aside Papagomo’s acquittal in sedition case. KUALA LUMPUR, July 31 &mdash; The High Court today set aside the sessions court&rsquo;s acquittal of political i" importance=0.36
+[32m2026-08-01 08:52:36[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'polarization': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-08-01 08:52:36[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('india', 31), ('malay', 29), ('government', 26), ('isa', 26), ('minister', 24), ('vote', 23), ('election', 19), ('pas', 19), ('undi', 18), ('chinese', 16)]
+[32m2026-08-01 08:52:36[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-08-01 08:52:36[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 7658 active topics
+[32m2026-08-01 08:52:36[0m | [1mINFO    [0m | [36moutput              [0m | 1104 active issues, 6557 new, 6555 pruned
+[32m2026-08-01 08:52:36[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-01 08:53:04[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=102  hmm=OK/69  cox=RT/1104  sarima=RT/1104
+[32m2026-08-01 08:53:04[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1104)
+[32m2026-08-01 08:53:04[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 7658 active topics. Top: parliament budget session session opens (score: 0.98)
