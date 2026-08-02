@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-08-02 14:36 UTC. Queue size: 1123. Picks shown: 25.
+Scan: 2026-08-02 16:25 UTC. Queue size: 1129. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 94.7 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 94.8 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 123.7 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 123.8 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -99,40 +99,40 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 52.0 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 52.1 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political, religious
 
 
-### S9. selesai disoal 9 jam, rafizi beredar dari sprm. ahli parlimen pandan itu tiba di ibu pejabat sprm pada 9.30...
+### S9. sindiket godam sistem pas pekerja asing, 7 penjawat awam antara 12 ditahan. kerajaan dianggarkan rugi rm2.4...
 
-- **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
+- **Rank score:** 0.804 (silence=1.00 × importance=0.70 × age_factor)
 
-- **Age in queue:** 89.7 days (source date: 2026-05-04, first seen: 2026-05-04)
-
-- **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** institutional, political
-
-
-### S10. sindiket godam sistem pas pekerja asing, 7 penjawat awam antara 12 ditahan. kerajaan dianggarkan rugi rm2.4...
-
-- **Rank score:** 0.802 (silence=1.00 × importance=0.70 × age_factor)
-
-- **Age in queue:** 4.5 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 4.6 days (source date: 2026-07-29, first seen: 2026-07-29)
 
 - **Coverage:** 2 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, ethnic, political
 
 
+### S10. selesai disoal 9 jam, rafizi beredar dari sprm. ahli parlimen pandan itu tiba di ibu pejabat sprm pada 9.30...
+
+- **Rank score:** 0.803 (silence=0.98 × importance=0.41 × age_factor)
+
+- **Age in queue:** 89.8 days (source date: 2026-05-04, first seen: 2026-05-04)
+
+- **Coverage:** 2 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** institutional, political
+
+
 ### S11. pm, kerajaan fail permohonan batal saman pemula ahli parlimen berkait art. lima ahli parlimen pembangkang s...
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 39.1 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 39.2 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 33.0 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 33.1 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 100.7 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 100.8 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -176,7 +176,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 73.9 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 74.0 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -187,7 +187,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 76.0 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 76.1 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -196,9 +196,9 @@ developed.
 
 ### S17. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.699 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.700 (silence=0.93 × importance=0.41 × age_factor)
 
-- **Age in queue:** 25.1 days (source date: 2026-07-08, first seen: 2026-07-08)
+- **Age in queue:** 25.2 days (source date: 2026-07-08, first seen: 2026-07-08)
 
 - **Coverage:** 10 news, 7 social — pattern: _below-expected coverage_
 
@@ -207,7 +207,7 @@ developed.
 
 ### S18. tiada bicara semula kes rasuah rosmah rm1.25 bilion projek solar hibrid. mahkamah rayuan kini akan dengar r...
 
-- **Rank score:** 0.683 (silence=0.99 × importance=0.60 × age_factor)
+- **Rank score:** 0.685 (silence=0.99 × importance=0.60 × age_factor)
 
 - **Age in queue:** 4.2 days (source date: 2026-07-29, first seen: 2026-07-29)
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. keluarga pastor koh gagal batalkan penangguhan penghakiman rm37 juta. mahkamah rayuan memutuskan mahkamah t...
 
-- **Rank score:** 0.654 (silence=0.99 × importance=0.58 × age_factor)
+- **Rank score:** 0.656 (silence=0.99 × importance=0.58 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 4.4 days (source date: 2026-07-29, first seen: 2026-07-29)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. mahkamah kekal hak wanita mualaf warisi harta bapa bukan islam. mahkamah rayuan kekal keputusan mahkamah ti...
 
-- **Rank score:** 0.607 (silence=1.00 × importance=0.51 × age_factor)
+- **Rank score:** 0.608 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 6.2 days (source date: 2026-07-27, first seen: 2026-07-27)
+- **Age in queue:** 6.3 days (source date: 2026-07-27, first seen: 2026-07-27)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -240,9 +240,9 @@ developed.
 
 ### S21. mahkamah tolak permohonan bekas doktor tentera semak sabitan bunuh kevin morais. mahkamah persekutuan menol...
 
-- **Rank score:** 0.603 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.604 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 2.3 days (source date: 2026-07-31, first seen: 2026-07-31)
+- **Age in queue:** 2.4 days (source date: 2026-07-31, first seen: 2026-07-31)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
@@ -251,9 +251,9 @@ developed.
 
 ### S22. tuntutan rm40.67 juta anak syarikat mah sing berkait kecacatan bangunan ditolak. pemaju diperintahkan bayar...
 
-- **Rank score:** 0.591 (silence=0.99 × importance=0.49 × age_factor)
+- **Rank score:** 0.593 (silence=0.99 × importance=0.49 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-07-27, first seen: 2026-07-27)
+- **Age in queue:** 6.5 days (source date: 2026-07-27, first seen: 2026-07-27)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -262,9 +262,9 @@ developed.
 
 ### S23. pru16: undi ph atau zahid pm, kata pua. bekas ahli parlimen damansara berkata tindakan undi parti 'pengacau...
 
-- **Rank score:** 0.591 (silence=0.94 × importance=0.41 × age_factor)
+- **Rank score:** 0.592 (silence=0.94 × importance=0.41 × age_factor)
 
-- **Age in queue:** 15.9 days (source date: 2026-07-18, first seen: 2026-07-17)
+- **Age in queue:** 16.0 days (source date: 2026-07-18, first seen: 2026-07-17)
 
 - **Coverage:** 9 news, 5 social — pattern: _below-expected coverage_
 
@@ -273,9 +273,9 @@ developed.
 
 ### S24. as takkan salur dana kepada who melalui gavi. kenyataan itu dibuat ketika washington mengumumkan pelepasan ...
 
-- **Rank score:** 0.570 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.572 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.5 days (source date: 2026-07-30, first seen: 2026-07-30)
+- **Age in queue:** 3.6 days (source date: 2026-07-30, first seen: 2026-07-30)
 
 - **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. berjaya hills, pemilik tanah gagal batal semakan kadar cukai tanah pahang. mahkamah rayuan berkata majlis t...
 
-- **Rank score:** 0.568 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.569 (silence=0.98 × importance=0.51 × age_factor)
 
-- **Age in queue:** 4.5 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 4.6 days (source date: 2026-07-29, first seen: 2026-07-29)
 
 - **Coverage:** 6 news, 7 social — pattern: _below-expected coverage_
 
