@@ -57,11 +57,12 @@ once their brief exists. Identify a pick by its title, not its rank.
 - **Radar:** silence-watch F7 (fresh track) at the 09:15 scan — silence=0.92,
   importance=0.62, age=4.3d, 73 news / 27 social, [political]. **Now correctly
   filtered out of the list as in-flight**, since `engine/briefs/tabung-haji-rci-2017-restatement.md`
-  exists (Phase 1 complete, awaiting approval). At the 13:10 scan a **different**
-  Tabung Haji RCI article re-entered the fresh track at F15 (Syed Saddiq, that
-  the RCI does not exonerate previous leadership). Same story, distinct headline,
-  so the coverage filter does not catch it. It is not a second pick — treat it as
-  a source for A1, not a new Tier entry.
+  exists (Phase 1 complete, awaiting approval). Other Tabung Haji RCI articles
+  surface and vanish at the bottom of the fresh track between scans as coverage
+  volume shifts (at 13:10 a Syed Saddiq piece on the RCI not exonerating previous
+  leadership held F15; by 15:07 it had dropped off). Distinct headlines on the
+  same story, so the in-flight filter does not catch them. None is a second pick —
+  treat any of them as a source for A1, not a new Tier entry.
 - **Date:** 30 July 2026 (RCI findings reported); 31 July 2026 (Act
   amendments said to be under way); 1 August 2026 (call for a special
   Dewan sitting)
@@ -128,7 +129,8 @@ once their brief exists. Identify a pick by its title, not its rank.
   outside the accountability regime), `1089` (immigration corruption index).
 
 ### A3. 2,001 factory fires and RM4.21b in losses since 2020
-- **Radar:** silence-watch F3 (fresh track), silence=0.96, importance=0.67,
+- **Radar:** silence-watch F3 (fresh track) at the 09:15 scan, F4 at 15:07 after
+  a Sabah trade item entered above it — silence=0.96, importance=0.67,
   age=2.9d, 75 news / 10 social, [ethnic, political]
 - **Date:** 31 July 2026 (Fire and Rescue Department director-general)
 - **Why develop:** Denominator-rich, zero 3R load, and it restores the
@@ -156,7 +158,8 @@ once their brief exists. Identify a pick by its title, not its rank.
 ## Tier B — develop if Tier A blocks
 
 ### B1. A council loses at the apex court over failing to act — and local-government liability moves
-- **Radar:** silence-watch F11 at the 09:15 scan (F10 after the Tabung Haji pick left the list), silence=0.98, importance=0.57, age=3.8d,
+- **Radar:** silence-watch F11 at the 09:15 scan (F10 at 13:10 after the Tabung
+  Haji pick left the list, back to F11 at 15:07), silence=0.98, importance=0.57, age=3.8d,
   13 news / 4 social, [legal]
 - **Date:** 30 July 2026 (Federal Court dismisses Langkawi municipal
   council's application for leave)
