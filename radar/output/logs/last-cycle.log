@@ -1,58 +1,62 @@
-[32m2026-08-03 00:42:01[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-08-03 00:42:01[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-08-03 00:42:01[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 7709 topics from state
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-08-03 00:42:02[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-03T00:42:02.454679+00:00
-[32m2026-08-03 00:42:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-08-03 00:42:04[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-08-03 00:42:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-08-03 00:42:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-08-03 00:42:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-08-03 00:42:08[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
-[32m2026-08-03 00:42:09[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-08-03 00:42:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-03 00:42:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-03 00:43:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-08-03 00:43:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-03 00:43:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-03 00:43:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-03 00:43:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-03 00:44:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-03 00:44:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-03 00:44:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-03 00:44:26[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 12 events
-[32m2026-08-03 00:44:27[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 11 events
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 488 events from 5 sources
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 488 events
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 321 within 24h (161 pruned)
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Apa mesej keputusan PRN Nismilan yang sebenarnya?. Keputusan PRN Negeri Sembilan tunjuk politik identiti Melayu-Islam lebih pengaruhi pengundi berbanding rekod tadbir urus PH." importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Wimbledon champ Noskova ready for ‘new opportunity’. Linda Noskova looks to return to action at Toronto WTA 1000 after the whirlwind that followed her first Grand Slam title." importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Hundreds flee Ethiopia’s Tigray into Sudan after border fighting. The influx comes as Sudan itself remains engulfed in a brutal war between the army and the paramilitary Rapid Support Forces." importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Show evidence suspects fled to Malaysia, Kelantan police tell Thai authorities amid 90km border fence plan. KOTA BHARU, Aug 2 &mdash; The Kelantan police have requested the Thai authorities to provide" importance=0.46
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Susulan kekalahan PH, Sim cadang kemuka usul ubah dasar kepada Anwar. Ketua DAP Pulau Pinang berkata, beliau juga akan bincang dasar kerajaan negeri dengan Ketua Menteri Chow Kon Yeow." importance=0.46
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Juventus sign young Bosnian winger Alajbegovic. The 18-year-old Kerim Alajbegovic, who scored 13 goals in 44 appearances across all competitions, has signed a five-year contract with Juve." importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "‘Spider-Man: Brand New Day’ opens to a huge US$355 million in US, Canada. The film, which marks actor Tom Holland's fourth outing as the web-slinging superhero, depicts Peter Parker fighting crime in " importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "BN-PN pact a threat to PH’s hold on power, says Chow. The Penang chief minister says DAP must review its election strategy as the new alliance could threaten its position in Penang." importance=0.51
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Former IOC marketing chief questions Infantino’s future in Fifa. A former International Olympic Committee (IOC) official and a former World Cup branding and marketing strategist say Gianni Infantino's" importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Negeri Sembilan exco lineup to be discussed with Zahid, finalised by Friday, says new MB. SEREMBAN, Aug 2 &mdash; Newly sworn-in Negeri Sembilan Menteri Besar Datuk Ismail Lasim said today that the co" importance=0.31
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "JPJ to meet bike rally organisers following reports of frequent accidents. The director-general of road transport says all participants at motoring events are required to comply with traffic laws and " importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Zahid: BN submits three names for Negeri Sembilan menteri besar post. SEREMBAN, Aug 2 &mdash; Barisan Nasional (BN) chairman Datuk Seri Ahmad Zahid Hamidi said that the coalition has submitt..." importance=0.31
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Pakatan blames ‘racial politics’ after defeat to BN-Perikatan pact in Negeri Sembilan. SEREMBAN, Aug 1 &mdash; Pakatan Harapan (PH) has attributed its dismal performance in today&rsquo;s Negeri Sembil" importance=0.41
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Zahid: BN and Perikatan will partner to establish Negeri Sembilan administration. SEREMBAN, Aug 1 &mdash; Barisan Nasional (BN) and Perikatan Nasional (PN) will form the new Negeri Sembilan government" importance=0.36
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "(Unofficial) Negeri Sembilan polls: ‘PBN’ to form state govt, sets sights on Melaka next. KUALA LUMPUR, Aug 1 &mdash; Barisan Nasional chairman Datuk Seri Ahmad Zahid has thanked voters and supporters" importance=0.31
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [amendment_act] "Stakeholder feedback crucial in Tabung Haji Act amendments, says minister. KUALA LUMPUR, Aug 1&mdash;Engagement sessions with stakeholders are currently underway to gather feedback on the propose..." importance=0.42
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('government', 31), ('india', 27), ('minister', 24), ('isa', 24), ('malay', 22), ('election', 19), ('chinese', 19), ('pas', 17), ('menteri', 15), ('vote', 14)]
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
-[32m2026-08-03 00:44:29[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 7710 active topics
-[32m2026-08-03 00:44:30[0m | [1mINFO    [0m | [36moutput              [0m | 1131 active issues, 6577 new, 6579 pruned
-[32m2026-08-03 00:44:30[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-03 00:44:59[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=104  hmm=OK/67  cox=RT/1131  sarima=RT/1131
-[32m2026-08-03 00:44:59[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1131)
-[32m2026-08-03 00:44:59[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 7710 active topics. Top: parliament budget session session opens (score: 0.98)
+[32m2026-08-03 03:08:32[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-08-03 03:08:32[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-08-03 03:08:32[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 7710 topics from state
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-08-03 03:08:33[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-03T03:08:33.437522+00:00
+[32m2026-08-03 03:08:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-08-03 03:08:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-08-03 03:08:38[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-08-03 03:08:38[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-08-03 03:08:41[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-08-03 03:08:41[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 435 events
+[32m2026-08-03 03:08:42[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-08-03 03:08:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-08-03 03:09:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-08-03 03:09:18[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:09:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:09:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:09:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-08-03 03:10:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:10:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:10:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:10:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-03 03:11:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-08-03 03:11:02[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-08-03 03:11:04[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 479 events from 5 sources
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 479 events
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 330 within 24h (161 pruned)
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Melaka Opposition leader expects BN-Perikatan talks soon on state election pact. KUALA LUMPUR, Aug 3 &mdash; Barisan Nasional (BN) and Perikatan Nasional (PN) leaders are expected to hold talks soon o" importance=0.46
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "About 60,000 ordered to evacuate from fires in Spokane, Washington. Wildfires have destroyed 600 buildings, including homes and businesses, as the governor declares a statewide emergency." importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Rosmah seeks to adduce fresh evidence in solar hybrid project graft appeal. She also claims that prosecution witness Rayyan Radzwill Abdullah was pressured into giving incriminating evidence against h" importance=0.36
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Southeast Asia’s factory activity bounces back from 11-month low. All Asean economies posted expansionary manufacturing PMI readings in July except Myanmar." importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Uefa threatens legal action, demands Infantino preserve records. Reports say the planned commercial rights sale would have raised the Fifa president's annual salary from €3 million to €30 million." importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Trial begins of former Australian radio host Alan Jones over alleged sexual assaults. The alleged offences took place between 2003 and 2020 and involved six men, including one who was 17 at the time." importance=0.31
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Yen leaps after intervention, leaving the dollar bruised. Bank of Japan data also showed Japan may have bought as much as US$58.97 billion worth of yen on Thursday." importance=0.46
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Undi PH di PRN N Sembilan merosot 5% banding PRU15, kata Kian Ming. Bekas Ahli Parlimen Bangi itu berkata PH dapat 39.7% undi di PRN N Sembilan berbanding 33.4% pada PRU 2022." importance=0.46
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Oil slumps on hopes of Iran deal, yen spikes suddenly after intervention. The US-Japan intervention to support the yen is unlikely to reverse the broader dollar-yen trend, as structural factors remain" importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Commonwealth Games faces uncertain future ahead of centenary edition. Experience shows even successful host bids can fail to materialise, while a lack of appeal to athletes was highlighted by Glasgow " importance=0.36
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Bessent ready to repeat joint yen intervention, urges bigger Fed backstop. The US Treasury chief praises Tokyo for countering 'disorderly yen moves' after the currency hit a 40-year low against the do" importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Ringgit opens higher against US dollar ahead of key US economic data. The US manufacturing PMI is due tonight and is expected to edge up from June, says analyst." importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "PH mahu jadi reformis atau konservatif, soal penganalisis. Gabungan itu perlu ambil kira kedudukannya makin terancam di Selangor, Kuala Lumpur, dan Pulau Pinang susulan PRN Negeri Sembilan." importance=0.46
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Apa mesej keputusan PRN Nismilan yang sebenarnya?. Keputusan PRN Negeri Sembilan tunjuk politik identiti Melayu-Islam lebih pengaruhi pengundi berbanding rekod tadbir urus PH." importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Show evidence suspects fled to Malaysia, Kelantan police tell Thai authorities amid 90km border fence plan. KOTA BHARU, Aug 2 &mdash; The Kelantan police have requested the Thai authorities to provide" importance=0.46
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "Negeri Sembilan exco lineup to be discussed with Zahid, finalised by Friday, says new MB. SEREMBAN, Aug 2 &mdash; Newly sworn-in Negeri Sembilan Menteri Besar Datuk Ismail Lasim said today that the co" importance=0.31
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "Zahid: BN submits three names for Negeri Sembilan menteri besar post. SEREMBAN, Aug 2 &mdash; Barisan Nasional (BN) chairman Datuk Seri Ahmad Zahid Hamidi said that the coalition has submitt..." importance=0.31
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "Pakatan blames ‘racial politics’ after defeat to BN-Perikatan pact in Negeri Sembilan. SEREMBAN, Aug 1 &mdash; Pakatan Harapan (PH) has attributed its dismal performance in today&rsquo;s Negeri Sembil" importance=0.41
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [high_court_ruling] "Zahid: BN and Perikatan will partner to establish Negeri Sembilan administration. SEREMBAN, Aug 1 &mdash; Barisan Nasional (BN) and Perikatan Nasional (PN) will form the new Negeri Sembilan government" importance=0.36
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('government', 28), ('india', 26), ('isa', 23), ('minister', 22), ('malay', 22), ('chinese', 22), ('election', 19), ('pas', 17), ('menteri', 12), ('protest', 10)]
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 15 events monitored, 15 flagged
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 7722 active topics
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36moutput              [0m | 1138 active issues, 6591 new, 6584 pruned
+[32m2026-08-03 03:11:06[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-03 03:11:23[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=104  hmm=OK/67  cox=RT/1138  sarima=RT/1138
+[32m2026-08-03 03:11:23[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1138)
+[32m2026-08-03 03:11:23[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 7722 active topics. Top: parliament budget session session opens (score: 0.98)
