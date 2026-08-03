@@ -350,11 +350,18 @@ depositor voice is exactly the omission T4A exists to correct.
    read in the commission's own words, not through press summaries. Also confirms: the six
    commissioners' names, the submission date, the exact recommendation count and wording, and
    whether the commission characterises the s.22 issue as a breach.
-   **Attempted 2026-08-03, third and fourth failures.** `www.islam.gov.my` returned 503 to the
-   fetcher and failed the TCP connect from curl; `jakim.gov.my` returned a 502 CONNECT
-   failure. This is a host-level outage or block, not a wrong URL — the announcement page is
-   still in the search index at the path recorded under [P1]. No mirror of the PDF has been
-   located. **Retry before Stage 1; do not substitute press summaries.**
+   **Retry log.** 2026-08-03 ~11:30 (Phase 1, two attempts, 503); ~17:00 (503 to the fetcher,
+   TCP connect failure from curl on `www.islam.gov.my`, 502 CONNECT on `jakim.gov.my`);
+   ~21:10 (both hosts still unreachable, announcement page still 503). Six failures across
+   roughly ten hours. This is a host-level outage or block, not a wrong URL — the announcement
+   page remains in the search index at the path recorded under [P1]. No mirror of the PDF has
+   been located.
+
+   **Status: the issue is HELD**, per this brief's closing rule, on the user's explicit
+   decision of 2026-08-03. Retry on each session check-in; begin Stage 1 the moment the PDF
+   opens. Do not substitute press summaries, and note that several search results purporting
+   to summarise the report's contents are AI-authored social posts — non-primary under the
+   Accuracy Standard and not usable even as corroboration.
 2. **[CLOSED 2026-08-03] Extract s.22(3)(a) verbatim from the AGC reprint [P2].** Done — full
    text of s.22(1) and s.22(3)(a)-(b) is now quoted in RELEVANT LAW above, pulled from the
    Act 535 PDF at `lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/`. The extraction corrected
