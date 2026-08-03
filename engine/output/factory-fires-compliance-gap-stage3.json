@@ -1,0 +1,333 @@
+{
+  "factual_accuracy_score": 61,
+  "source_diversity_estimate": 0.28,
+  "claims": [
+    {
+      "claim": "Malaysia's fire department counted 2,001 factory fires and RM4.21 billion in losses over the past six years, then pledged to strengthen enforcement.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "Bernama, 31 July 2026, directly attributes the figures and enforcement pledge to JBPM Director-General Datuk Seri Nor Hisham Mohammad: https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754. The underlying JBPM dataset or speech transcript was not located.",
+      "correction": "Phrase this as 'JBPM's director-general reported 2,001 factory fires and RM4.21 billion in losses over the previous six years.' The figures are verified as an official public statement, not independently reconciled to a raw JBPM statistical table.",
+      "stale_check": "No later primary statistical release was located as of 4 August 2026."
+    },
+    {
+      "claim": "Its own figures show 2025 was the worst of those years: 463 factory fires, up 28.6 per cent, with RM770.69 million in losses.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.03,
+      "m_unknown": 0.72,
+      "source": "Sinar Harian, 31 July 2026, reports 463 cases, a 28.6% increase and RM770.69 million in losses while attributing them to JBPM: https://www.sinarharian.com.my/article/790230/berita/semasa/2001-kes-kebakaran-kilang-kerugian-cecah-rm421-bilion-sejak-2021---jbpm. No raw JBPM table, official release, annual report or transcript containing this 2025 series was found.",
+      "correction": "Retain only with explicit attribution to Sinar Harian's report of the JBPM statement, or remove until the original JBPM six-year table is obtained.",
+      "stale_check": "No indication that a subsequent change makes the historical 2025 figures stale; the issue is source verification."
+    },
+    {
+      "claim": "JBPM inspected 1,878 factories in 2025, up from 1,563 in 2024, and issued 1,191 Fire Hazard Elimination Notices, up from 706.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "Bernama's 31 July 2026 report and Bernama syndications attribute these figures to the JBPM director-general: https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754. No underlying inspection register was located.",
+      "correction": "State that these are figures reported by the JBPM director-general, rather than independently audited totals.",
+      "stale_check": "These are historical 2024-2025 figures and are not affected by a later policy change."
+    },
+    {
+      "claim": "Inspections rose 20.2 per cent from 1,563 to 1,878.",
+      "status": "VERIFIED",
+      "m_true": 0.95,
+      "m_false": 0.01,
+      "m_unknown": 0.04,
+      "source": "The reported inputs are 1,563 and 1,878; (1,878-1,563)/1,563 x 100 = 20.1536%, which rounds to 20.2%. Inputs are reported in Bernama syndications (Astro Awani).",
+      "correction": "",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "Fire Hazard Elimination Notices rose 68.6 per cent from 706 to 1,191.",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.96,
+      "m_unknown": 0.02,
+      "source": "The reported inputs are 706 and 1,191. The increase is (1,191-706)/706 x 100 = 68.6969%, which rounds to 68.7%, not 68.6% (Astro Awani).",
+      "correction": "Change 68.6 per cent to 68.7 per cent, or say 'about 68.7 per cent.'",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "The 1,191 hazard notices were a record and represented unprecedented enforcement output.",
+      "status": "MISLEADING",
+      "m_true": 0.25,
+      "m_false": 0.35,
+      "m_unknown": 0.4,
+      "source": "The located report establishes only that notices rose from 706 in 2024 to 1,191 in 2025. It does not provide a longer notice series or call 1,191 an all-time or six-year record.",
+      "correction": "Replace 'record' and 'unprecedented' with 'the highest of the two years compared' unless a longer official notice series is produced.",
+      "stale_check": "No later change resolves the missing historical comparison."
+    },
+    {
+      "claim": "The department has not offered a causal account of the 2025 peak, and causation should not be inferred from inspections, notices and fires moving in the same direction.",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.03,
+      "m_unknown": 0.17,
+      "source": "The cited reports present counts and enforcement intentions but no causal analysis linking more inspections or notices to the fire count. The caution against inferring causation is methodologically sound.",
+      "correction": "Keep the non-causation caveat, but remove the unsupported words 'record' and 'unprecedented' surrounding it.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "JBPM recorded 16,111 fires nationally in 2025, costing RM2.09 billion, with 98 deaths and RM6.44 billion in property saved.",
+      "status": "MISLEADING",
+      "m_true": 0.48,
+      "m_false": 0.12,
+      "m_unknown": 0.4,
+      "source": "The official NADMA portal reproduces the reported JBPM statement as 16,111 fires involving structures and vehicles: 12,292 structural and 3,819 vehicle fires, with RM2.09 billion losses, 98 deaths and RM6.44 billion saved. It does not describe 16,111 as every category of fire attended nationally. https://www.nadma.gov.my/bm/media-2/berita/6052-rm2-09-bilion-kerugian-harta-benda-akibat-kebakaran-struktur-dan-kenderaan-sepanjang-2025",
+      "correction": "Write 'JBPM reported 16,111 structure and vehicle fires in 2025, with RM2.09 billion in losses, 98 deaths and RM6.44 billion in property saved.' Do not call this an all-fire denominator without the complete JBPM classification table.",
+      "stale_check": "The figures are historical; the correction concerns category scope."
+    },
+    {
+      "claim": "Factory fires were 2.9 per cent of Malaysia's fires in 2025 and 36.9 per cent of the money lost.",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.2,
+      "m_unknown": 0.35,
+      "source": "The arithmetic is correct for the stated inputs: 463/16,111 = 2.8739% and RM770.69m/RM2.09bn = 36.875%. However, the 16,111 and RM2.09bn denominator is explicitly for structure and vehicle fires, while the 463 and RM770.69m factory numerator remains unverified against a primary JBPM table.",
+      "correction": "Say 'On the reported figures, factories represented about 2.9% of the 16,111 structure-and-vehicle incidents and about 36.9% of the corresponding reported losses.' Add that the factory numerator is sourced to a media report of JBPM's statement.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "Section 28 of the Fire Services Act 1988 requires a fire certificate for designated premises and renewal annually.",
+      "status": "VERIFIED",
+      "m_true": 0.92,
+      "m_false": 0.02,
+      "m_unknown": 0.06,
+      "source": "Fire Services Act 1988, sections 27 and 28: the Director General designates premises under section 27; section 28 prohibits use without a fire certificate and requires annual renewal. Official JBPM Act PDF: https://www.bomba.gov.my/images/05-penerbitan/akta-perkhidmatan/Act_341_Fire_services_act_1988.pdf. The statutory pages were visually checked.",
+      "correction": "Add 'designated premises'; section 28 does not apply indiscriminately to every factory.",
+      "stale_check": "The 2025 amendment did not repeal the annual renewal requirement."
+    },
+    {
+      "claim": "The annual fire-certificate duty applies to factories generally.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.55,
+      "m_unknown": 0.15,
+      "source": "Section 28 applies only to 'designated premises.' The official Fire Services (Designated Premises) Order lists factory thresholds, including floor-area and storey criteria; therefore not every factory is designated. Official JBPM order: https://www.bomba.gov.my/images/05-penerbitan/garis-panduan/12.PERINTAH-PERKHIDMATAN-BOMBA-PREMIS-DITETAPKAN-1998.pdf and current JBPM guidance.",
+      "correction": "Use 'a factory that falls within the designated-premises thresholds' throughout the legal card, reframe and analogy.",
+      "stale_check": "The official JBPM page dated 29 April 2026 still frames the obligation around designated premises."
+    },
+    {
+      "claim": "Since 1 January 2026, an annual fire-safety check on a factory can be signed by an officer the factory employs.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Bernama reported on 4 August 2025 that accredited Fire Safety Managers or Fire Safety Officers would conduct internal inspections and submit technical reports for renewal without annual JBPM physical inspection, with full implementation the following year. The commencement notification P.U. (B) 238/2025 brought specified provisions of Act A1764 into force on 1 January 2026, but the located statutory material does not itself establish that every designated factory's employee 'signs the inspection,' and no post-commencement JBPM directive confirming operational implementation was located.",
+      "correction": "Write: 'JBPM announced that, from 2026, accredited Fire Safety Managers or Officers would conduct internal inspections and submit technical reports supporting renewal, while JBPM retained approval and periodic audit.' Qualify this as an announced implementation unless the governing directive or current JBPM procedure is obtained.",
+      "stale_check": "The analysis was written after the stated commencement date, so future-tense reporting from August 2025 is insufficient by itself to establish current implementation."
+    },
+    {
+      "claim": "JBPM now accepts an accredited in-house officer's report in place of its own yearly inspection and audits every two to three years.",
+      "status": "UNVERIFIED",
+      "m_true": 0.28,
+      "m_false": 0.07,
+      "m_unknown": 0.65,
+      "source": "The two-to-three-year audit cycle and removal of annual physical JBPM inspections were explicitly announced by the director-general in Bernama on 4 August 2025. No current JBPM circular, standing order, gazetted regulation or 2026 procedure proving implementation was located.",
+      "correction": "Attribute this to the August 2025 announcement and avoid the unqualified present tense 'now accepts' until a current operational instrument is cited.",
+      "stale_check": "This is precisely where a stale-critique check matters: the announcement preceded commencement by five months, while the analysis was published seven months after the proposed start."
+    },
+    {
+      "claim": "The officer is an employee of the factory.",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.3,
+      "m_unknown": 0.35,
+      "source": "The 2020 Fire Certificate regulations require the owner, occupier or person managing a designated premise to establish a fire safety organization containing a registered Fire Safety Manager and Fire Safety Officers. The official form does not establish that every such person must be a direct employee. Official P.U. (A) 290/2020: https://www.bomba.gov.my/wp-content/uploads/2021/07/PUA290.pdf",
+      "correction": "Use 'a registered or accredited officer appointed within the premises' fire safety organization' rather than 'an officer the factory employs' unless employment status is documented.",
+      "stale_check": "The fire safety organization and reporting framework existed before 2026 under the 2020 regulations."
+    },
+    {
+      "claim": "Section 33 makes operating designated premises without a fire certificate punishable by a fine up to RM50,000, imprisonment up to five years, or both.",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.02,
+      "m_unknown": 0.1,
+      "source": "Section 33 creates the offence; section 15 of the Fire Services (Amendment) Act 2018 inserted the RM50,000/five-year maximum penalty. The official JBPM Act PDF search extract carries the current penalty text; the amendment text is also reproduced in Act A1568.",
+      "correction": "Retain, while specifying that the premise must be designated and the person must use it without a fire certificate.",
+      "stale_check": "No 2025 amendment located changes section 33's stated maximum penalty."
+    },
+    {
+      "claim": "JBPM can revoke accreditation and impose fines on accredited officers who breach standards.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0.05,
+      "m_unknown": 0.65,
+      "source": "The director-general said in August 2025 that accreditation could be revoked and fines imposed under the Fire Services Act. Act A1764 creates registration and disciplinary mechanisms for several categories of fire-safety actors, but the exact provision applying to the announced Fire Safety Manager/Officer attestation regime was not identified in a primary instrument.",
+      "correction": "Cite the exact statutory section and regulation governing revocation and penalties for Fire Safety Managers/Officers before stating this as settled law.",
+      "stale_check": "The relevant A1764 provisions commenced in phases, including specified sections on 1 January 2026, but the exact linkage remains unresolved."
+    },
+    {
+      "claim": "More than 600 people had registered for training with HRD Corp and the Department of Skills Development.",
+      "status": "VERIFIED",
+      "m_true": 0.62,
+      "m_false": 0.03,
+      "m_unknown": 0.35,
+      "source": "Bernama directly quotes the JBPM director-general saying more than 600 people had registered and that training/accreditation involved HRD Corp and the Department of Skills Development. No programme registry was independently obtained.",
+      "correction": "Attribute the number to the director-general's 4 August 2025 statement.",
+      "stale_check": "This is a point-in-time registration count from August 2025."
+    },
+    {
+      "claim": "The first half of 2026 recorded 222 factory fires.",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "Bernama's 31 July 2026 report attributes 222 factory fires through June 2026 to the JBPM director-general. No underlying monthly table was located.",
+      "correction": "Phrase as 'JBPM's director-general reported 222 factory fires from January through June 2026.'",
+      "stale_check": "No later full-year 2026 total existed as of 4 August 2026."
+    },
+    {
+      "claim": "The self-attestation regime was seven months old by 31 July 2026.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "P.U. (B) 238/2025 supports a 1 January 2026 commencement for specified A1764 provisions, but no primary operational instrument was found confirming that the announced replacement of annual physical inspections began comprehensively on that date (Skrine legal update).",
+      "correction": "Remove 'the regime is seven months old' or qualify it: 'If implemented as announced from 1 January 2026, the arrangement had been in force for seven months.'",
+      "stale_check": "A post-commencement verification was required because the available detailed description was a pre-commencement announcement."
+    },
+    {
+      "claim": "The question is not whether factories get inspected every year; it is who signs the inspection.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.45,
+      "m_unknown": 0.25,
+      "source": "Section 28 concerns annual renewal of the fire certificate, not an express statutory requirement for JBPM to conduct a physical inspection every year. Bernama says the accredited officer conducts internal tests and submits a technical report; JBPM remains the renewal authority and retains audits.",
+      "correction": "Reframe as: 'The governance question is who performs the annual internal tests and supplies the evidence on which JBPM renews the certificate, and how JBPM independently audits that evidence.'",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "The arrangement is like a restaurant grading its own hygiene and hanging the certificate in the window, with the inspector returning within three years.",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.5,
+      "m_unknown": 0.3,
+      "source": "The analogy omits that JBPM remains the statutory certificate authority, prescribes standards, receives the report, and announced periodic audits. It also generalizes from designated premises to factories broadly.",
+      "correction": "A closer analogy is an establishment using a certified internal safety officer to prepare annual compliance evidence, while the regulator renews the certificate and performs risk-based periodic audits.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "JBPM published every number here, including the ones that flatter it least.",
+      "status": "INCORRECT",
+      "m_true": 0.2,
+      "m_false": 0.6,
+      "m_unknown": 0.2,
+      "source": "The analysis cites media reports of oral statements and an official statute. A raw JBPM statistical release or table containing every figure, particularly the 463 cases, 28.6% increase and RM770.69 million loss, was not located.",
+      "correction": "Change to 'JBPM officials publicly stated most of these figures through media reports.'",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "A department short of inspectors has to ration them somehow.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0.05,
+      "m_unknown": 0.85,
+      "source": "No cited source provides inspector headcount, vacancies, workload ratios, budget constraints or an official statement that inspector scarcity motivated the policy. The August 2025 statement says the system reduces dependence on direct government supervision, which is not equivalent to proving a shortage.",
+      "correction": "Remove the staffing-shortage assertion or support it with JBPM establishment, vacancy and workload data plus an official policy rationale.",
+      "stale_check": "No relevant primary staffing evidence was located as of 4 August 2026."
+    },
+    {
+      "claim": "The regime reports more notices every year and more fires every year.",
+      "status": "UNVERIFIED",
+      "m_true": 0.18,
+      "m_false": 0.22,
+      "m_unknown": 0.6,
+      "source": "The located notice series compares only 2024 and 2025. The factory-fire report gives selected totals and says 2025 increased, but no complete annual sequence was found establishing that both measures rose in every year of the six-year window.",
+      "correction": "Say only that both reported measures increased from 2024 to 2025. Do not use 'every year' without the complete annual series.",
+      "stale_check": "Not applicable."
+    },
+    {
+      "claim": "The regime is measuring its own activity, not its effect.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0.1,
+      "m_unknown": 0.6,
+      "source": "Inspection and notice counts are activity/output measures; fire incidence and losses are outcome measures. However, the available sources do not provide an evaluation design capable of determining the regime's causal effect, positive or negative.",
+      "correction": "Present this as an analytical limitation: 'The published series show enforcement activity and fire outcomes, but do not establish the effect of enforcement.'",
+      "stale_check": "A future evaluation could change this assessment; no such evaluation was found."
+    },
+    {
+      "claim": "The 2026 fire figures are the first written under self-attestation.",
+      "status": "MISLEADING",
+      "m_true": 0.2,
+      "m_false": 0.4,
+      "m_unknown": 0.4,
+      "source": "Fire incident counts are recorded by JBPM and are not themselves 'self-attested.' At most, 2026 may be the first period in which some certificate renewals relied on accredited internal reports, if implementation occurred as announced.",
+      "correction": "Replace with: 'The 2026 figures will be the first fire-outcome data covering the period after the announced change in certificate-renewal inspections, subject to confirmation that the change was implemented as stated.'",
+      "stale_check": "Post-commencement implementation was not independently established."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "against a record 1,191 hazard notices issued / a year of unprecedented enforcement output",
+      "why": "The evidence compares 2025 only with 2024. It does not establish an all-time or six-year record for notices.",
+      "primary_source": "Best available official-attribution report: Bernama, 31 July 2026, https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Factory fires were 2.9 per cent of Malaysia's fires in 2025 and 36.9 per cent of the money lost",
+      "why": "The denominator source expressly covers structure and vehicle fires, not necessarily every fire category nationally. The arithmetic is correct, but the label broadens the denominator.",
+      "primary_source": "NADMA official portal, 21 January 2026, https://www.nadma.gov.my/bm/media-2/berita/6052-rm2-09-bilion-kerugian-harta-benda-akibat-kebakaran-struktur-dan-kenderaan-sepanjang-2025"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Since 1 January 2026 the annual fire-safety check on a factory can be signed by an officer the factory employs",
+      "why": "The evidence concerns designated premises, internal inspections and technical reports supporting JBPM renewal. It does not establish that every factory is covered, that the officer must be an employee, or that the officer issues or signs the statutory certificate.",
+      "primary_source": "Fire Services Act 1988 sections 27-29 and official designated-premises order; Bernama's 4 August 2025 announcement."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The question is not whether factories get inspected every year. It is who signs the inspection.",
+      "why": "This compresses several legally distinct acts: internal testing, preparation of a technical report, JBPM's renewal decision and periodic regulatory audit. The accredited officer does not thereby become the statutory certificate issuer.",
+      "primary_source": "Fire Services Act 1988 section 28 and Bernama, 4 August 2025."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "A restaurant that grades its own hygiene and hangs the certificate in the window, with the inspector due back sometime in the next three years.",
+      "why": "The analogy suggests unilateral self-certification. The announced process still has JBPM as certificate authority, with prescribed standards, submitted reports and periodic audits.",
+      "primary_source": "Bernama, 4 August 2025; Fire Services Act 1988 section 28."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "a department short of inspectors has to ration them somehow",
+      "why": "No inspector staffing, vacancy, workload or budget evidence is cited or located, and no official source was found saying inspector scarcity caused the policy.",
+      "primary_source": "No primary source found. The closest source says the policy reduces reliance on direct government supervision, which is not proof of an inspector shortage."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "a regime that reports more notices every year and more fires every year",
+      "why": "The evidence establishes a 2024-to-2025 increase, not an uninterrupted annual rise across the whole six-year period.",
+      "primary_source": "Bernama and Sinar Harian reports of the JBPM statement; no complete primary annual series found."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The regime is seven months old and the 2026 figures will be the first written under self-attestation",
+      "why": "The relevant Act provisions had a 1 January 2026 commencement date, but no current operational instrument was found proving comprehensive implementation of the announced inspection substitution. Fire incident statistics are also not themselves self-attested.",
+      "primary_source": "P.U. (B) 238/2025 as described in Skrine's legal update and Bernama's pre-commencement announcement."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "2025 was the worst of those years: 463 factory fires, up 28.6 per cent, and RM770.69 million lost",
+      "why": "These precise figures were found only in a secondary report attributing them to JBPM; no raw JBPM table, official release or transcript containing the complete 2025 series was located.",
+      "primary_source": "No separately checked primary source found. Best available report: Sinar Harian, 31 July 2026, https://www.sinarharian.com.my/article/790230/berita/semasa/2001-kes-kebakaran-kilang-kerugian-cecah-rm421-bilion-sejak-2021---jbpm"
+    }
+  ],
+  "omitted_facts": [
+    "The annual certificate obligation is limited to designated premises. The official designated-premises order applies factory thresholds based on floor area, number of storeys and specified industrial uses; it does not cover every factory. Official JBPM order: https://www.bomba.gov.my/images/05-penerbitan/garis-panduan/12.PERINTAH-PERKHIDMATAN-BOMBA-PREMIS-DITETAPKAN-1998.pdf",
+    "Malaysia's 2020 Fire Certificate amendments already required a fire safety organization, a registered Fire Safety Manager and Fire Safety Officers, and a Fire Safety Report in the certificate process. This means the internal organization/reporting architecture predates 2026; the announced 2026 change concerns the extent of JBPM's annual physical inspection and the reliance placed on internal reports. Official P.U. (A) 290/2020: https://www.bomba.gov.my/wp-content/uploads/2021/07/PUA290.pdf",
+    "P.U. (B) 238/2025 phased the commencement of Act A1764: specified provisions commenced on 1 July 2025 and others on 1 January 2026. The analysis should identify which exact provision or subsidiary instrument authorizes the inspection/report arrangement instead of treating the whole amendment as a single self-attestation rule.",
+    "The 16,111-case denominator comprises 12,292 structural fires and 3,819 vehicle fires. The source title and text expressly say 'structure and vehicle' fires.",
+    "The notice increase from 706 to 1,191 is 68.6969%, which rounds to 68.7%, not 68.6%.",
+    "The six-year start year remains unresolved in the cited reporting: Bernama says 'the past six years,' Sinar Harian says since 2021, and Malay Mail says since 2020. The analysis correctly avoids putting a start year in the cards, but this discrepancy should remain explicit rather than be silently resolved.",
+    "Section 28 creates an annual certificate-renewal duty. The strongest governance question is not merely who 'signs an inspection,' but who performs the tests, who prepares the evidence, who approves renewal, what is independently sampled during audit, and what enforcement follows false or deficient reporting."
+  ],
+  "source_assessment": "The original analysis names six source items, but the effective evidence base is much narrower: three Bernama reports or syndications of JBPM officials, two other media reports covering substantially the same official statement, and the Fire Services Act. It contains government/regulator and mainstream-media perspectives but no raw JBPM statistical tables, commencement gazette in the cited packet, current operational circular, independent fire-safety academic, insurer, industry, worker, union or community evidence. Political-spectrum diversity is not the central issue here; institutional independence and methodological diversity are. The analysis itself candidly identifies most of these verification gaps, including the unresolved 2025 series, designated-premises scope, commencement mechanism and six-year start date.",
+  "overall_assessment": "The numerical backbone is plausible and several figures are accurately attributed to JBPM officials, but the piece is not publication-ready as written. The 20.2% calculation is correct, while the notice increase should be 68.7%. The economic card uses a denominator that is narrower than 'all Malaysia fires.' The legal card has the most consequential defects: it generalizes from designated premises to factories, converts a pre-commencement announcement into an unqualified statement of current practice, equates preparation of an internal technical report with signing or issuing the statutory certificate, and does not identify the exact post-commencement instrument governing implementation. The analogy and considered-view card then amplify those uncertainties into a self-grading narrative and an unsupported inspector-shortage rationale. A defensible revision would preserve the official-attribution statistics, correct the arithmetic and denominator, confine the legal scope to designated premises, attribute the 2026 process to JBPM's announcement unless a current directive is obtained, and remove the record, every-year, inspector-shortage and unilateral-self-certification language."
+}
