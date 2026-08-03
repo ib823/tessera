@@ -218,6 +218,58 @@ cross-check on RM4.21b. **A story about who verifies factory safety, told only t
 regulator's own statistics, is exactly the omission bias Stage 2 exists to catch.** Fill at
 least the industry and worker voices before publication.
 
+### POST-STAGE-2 ADDITION (2026-08-03): the independent voice, and the parallel withdrawal
+
+Stage 2 returned `bias_score` 15 (BA 85) with two omission flags — institutional monoculture
+and **absent human cost** — plus an evasion flag for dodging the conflict of interest in
+self-regulation. Searching against those flags surfaced a source that answers all three, and
+that materially changes what this issue is about.
+
+**[S7] Malay Mail, 13 July 2026** — *"Worker deaths come at a price: Occupational safety group
+calls for workplace inspections to return after Klang factory fire"* —
+https://www.malaymail.com/news/malaysia/2026/07/13/worker-deaths-come-at-a-price-occupational-safety-group-calls-for-workplace-inspections-to-return-after-klang-factory-fire/227428
+**OPENED.** The **Malaysian Society for Occupational Safety and Health (MSOSH)**, a
+professional body outside government, through president Datuk Wira Ahmad Fakhrul Anuar
+Ismail:
+
+- Urges the Ministry of Human Resources to **review the need for periodic workplace
+  inspections**, describing them as "an important check-and-balance mechanism".
+- States that mandatory workplace inspections under the **Factories and Machinery Act 1967
+  have been removed**, and that many industries "were still not ready to rely solely on
+  **self-regulation**".
+- On how self-regulation fails in practice: "procedures exist but are not followed, audits are
+  conducted without effective follow-up, and risks are identified but left unmanaged until
+  tragedy strikes."
+- Notes that **over 90 per cent of Malaysian businesses are SMEs** that may lack internal
+  compliance discipline.
+- Occasion: a **foreign worker died in a boiler fire at an iron processing plant in Klang on
+  Friday 12 July 2026**.
+
+**Why this matters more than filling a gap.** The issue as drafted through Stage 1 v2 was one
+regulator moving annual verification in-house. MSOSH describes a **second, separate
+withdrawal of periodic inspection by a different regulator** — DOSH under the Ministry of
+Human Resources — in the same period, and says the industrial base is not ready for it. Two
+inspection regimes stepping back at once is a materially stronger and better-evidenced story
+than one, and it comes with an independent professional body on the record against it, which
+is precisely the voice the sourcing lacked.
+
+**Handle with care.** JBPM's fire-certificate regime and DOSH's Factories and Machinery Act
+inspections are **different statutes, different ministries, different duties**. Do not merge
+them into a single "the inspectors left" claim. The defensible framing is that two separate
+verification regimes moved toward self-regulation over the same period, attributed to MSOSH
+for the DOSH half.
+
+**[S8] DOSH / DOSM occupational injury statistics, 2023** (most recent located): 38,950
+occupational injury cases nationally, up 13.8 per cent on 2022; 324 fatal occupational
+injuries; manufacturing 10,335 injuries and **66 fatalities**, second only to construction.
+Not fire-specific and three years stale, so usable only as scale context, never as a
+factory-fire casualty figure.
+
+**Still missing after this addition:** an FMM or manufacturer response, a union/MTUC voice,
+an insurer's independent loss series, and any JBPM or DOSH figure for **deaths or injuries in
+factory fires specifically**. Stage 2 is right that the human cost is absent; this addition
+supplies one named death and a sector-level fatality count, not the series.
+
 ## SOURCES
 
 **Primary** (opened and read)
@@ -307,7 +359,18 @@ backfilled.
 5. **Resolve the start year** (CONTRADICTIONS 1) or permanently avoid stating one.
 6. **Fill two spectrum gaps: industry (FMM or a manufacturer) and workers (union/MTUC).**
    A regulator-only sourcing base on a question about who verifies safety is a Stage 2 bias
-   flag waiting to happen.
+   flag waiting to happen. **Partly closed 2026-08-03** by the MSOSH source [S7] above, which
+   supplies an independent professional-body voice and one named worker death. Industry,
+   union and insurer voices remain open.
+7. **[NEW, from the MSOSH addition] Verify independently that mandatory workplace inspections
+   under the Factories and Machinery Act 1967 have in fact been removed**, and when. This is
+   currently a claim by MSOSH's president reported in Malay Mail, not a gazette. The FMA 1967
+   has been undergoing repeal and absorption into the OSHA framework, so the precise state of
+   the inspection duty must be traced to the amending instrument before any card asserts it.
+   This is now the highest-value open item: the parallel-withdrawal framing rests on it.
+8. **[NEW] Obtain a factory-fire casualty series** (deaths and injuries) from JBPM or DOSH.
+   Stage 2 flagged the absent human cost and it is a fair hit. The 2023 DOSH manufacturing
+   figures [S8] are sector-wide, not fire-specific, and three years old.
 
 **Source floor:** the Accuracy Standard requires ≥8 primary sources of 15–25 total. This brief
 has **5 opened primary of 14 total**. Gaps 1–3 would bring it to 8. **The brief does not
