@@ -46,11 +46,18 @@ card, and drop any specific that cannot be traced.
 
 ---
 
+**On the F/S numbers below:** they are ranks in the 2026-08-03 09:15 scan.
+The radar rescans every two hours and the list is regenerated each time, so
+ranks drift and picks that enter the pipeline drop out of the list entirely
+once their brief exists. Identify a pick by its title, not its rank.
+
 ## Tier A — develop next (this week)
 
 ### A1. A royal commission says Tabung Haji's 2017 profit was really a RM1.4b loss
-- **Radar:** silence-watch F7 (fresh track), silence=0.92, importance=0.62,
-  age=4.3d, 73 news / 27 social, [political]
+- **Radar:** silence-watch F7 (fresh track) at the 09:15 scan — silence=0.92,
+  importance=0.62, age=4.3d, 73 news / 27 social, [political]. **Now correctly
+  filtered out of the list as in-flight**, since `engine/briefs/tabung-haji-rci-2017-restatement.md`
+  exists (Phase 1 complete, awaiting approval).
 - **Date:** 30 July 2026 (RCI findings reported); 31 July 2026 (Act
   amendments said to be under way); 1 August 2026 (call for a special
   Dewan sitting)
@@ -145,7 +152,7 @@ card, and drop any specific that cannot be traced.
 ## Tier B — develop if Tier A blocks
 
 ### B1. A council loses at the apex court over failing to act — and local-government liability moves
-- **Radar:** silence-watch F11, silence=0.98, importance=0.57, age=3.8d,
+- **Radar:** silence-watch F11 at the 09:15 scan (F10 after the Tabung Haji pick left the list), silence=0.98, importance=0.57, age=3.8d,
   13 news / 4 social, [legal]
 - **Date:** 30 July 2026 (Federal Court dismisses Langkawi municipal
   council's application for leave)
@@ -242,12 +249,12 @@ Confirmed this cycle as neither published nor briefed:
   RM970m fine is listed for September 2026. Hold for the ruling; the
   procedural step alone is not a T4A issue.
 - **Kevin Morais — Federal Court upholds conviction and death sentence**
-  (F10/F14, 47 news). Only developable through the mandatory-death-penalty
+  (F10/F14 at the 09:15 scan, 47 news). Only developable through the mandatory-death-penalty
   reform lens, which needs its own brief.
 
 ### 3R-sensitive — hold behind the higher verification bar
 - **Pastor Koh family fails to quash the stay on a RM37m judgment**
-  (F6/F8). Adjacent to unpublished draft `1278`. HIGH religious. Any
+  (F6/F8 at the 09:15 scan). Adjacent to unpublished draft `1278`. HIGH religious. Any
   development must be strictly about **enforcement of a judgment against
   the state** and the stay mechanism, never about the underlying religious
   dimension, and needs two independent primary sources (the Court of Appeal
@@ -313,7 +320,7 @@ Curator rule: each cycle, at least one Tier A or Tier B pick must come from
 the top of `silence-watch.md`, or each top pick must appear in Skip with a
 one-line reason. Extended this cycle to cover **both tracks**.
 
-- Fresh track: F1 → **A2**, F3 → **A3**, F7 → **A1**, F11 → **B1**.
+- Fresh track: F1 → **A2**, F3 → **A3**, F7 → **A1** (now in flight), F11 → **B1**.
   F2, F4/F5, F6/F8, F9, F10, F12, F13, F14, F15 → all in Skip with reasons.
 - Accumulated track: S1 → **B2**, S5 → **B3**, S6/S11/S12 → **B4**.
   S3, S4, S7, S10 → in Skip with reasons.
