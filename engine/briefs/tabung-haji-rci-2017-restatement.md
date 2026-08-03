@@ -108,10 +108,51 @@ them as officeholders is factual, naming them as culpable is not.
 
 ## RELEVANT LAW
 
-- **Tabung Haji Act 1995 (Act 535), s.22(3)(a)** — the Fund's assets must not be less than
-  its total liabilities (amounts payable to depositors computed as if immediately payable)
-  before a bonus may be declared and paid; a second limb requires distributable profit.
-  *Verbatim reprint text still to be extracted from the AGC reprint — see gaps.*
+- **Tabung Haji Act 1995 (Act 535), s.22 "Declaration of distributable profit"** —
+  **verbatim, extracted 2026-08-03 from the AGC reprint [P2]** (Laws of Malaysia, online
+  version of updated text of reprint, as at 1 December 2011, pp. 21-22):
+
+  > **22.** (1) Subject to this section, the Lembaga may at its absolute discretion determine
+  > at any time whether it is prudent to declare a sum as distributable profit in respect of
+  > any particular period or year of the Fund and if it determines to so declare, the Lembaga
+  > shall, with the approval of the Minister, declare a sum as distributable profit in respect
+  > of any particular period or year of the Fund.
+  >
+  > (3) No distributable profit shall be declared unless the Lembaga has first established a
+  > Reserve Fund, and no distributable profit shall be declared in any year unless at the end
+  > of that year—
+  >
+  > (a) the assets of the Fund were not less than the aggregate liabilities of the Fund,
+  > amounts due to depositors being calculated as if immediately payable; and
+  >
+  > (b) the assets of the Reserve Fund were not less than such percentage of the amounts
+  > actually standing to the credit of the depositors as at the end of that year including the
+  > distributable profit, as the Treasury may approve.
+
+  **Three corrections to the earlier paraphrase in this brief, all load-bearing:**
+
+  1. **The statutory term is "distributable profit", not "bonus".** Nothing in s.22 uses
+     "bonus" or "hibah". Cards must not put the word "bonus" inside a description of the
+     statutory test. The hibah is what TH declared; "distributable profit" is what the Act
+     gates. Keep them distinct.
+  2. **Limb (b) is a Reserve Fund adequacy test, not a profitability test.** The earlier
+     paraphrase ("a second limb requires distributable profit") was wrong. (a) and (b) are
+     conjunctive — both must hold. Press coverage and the reported RCI finding both centre on
+     (a); (b) is an independent gate that this brief has seen no reporting on. **Do not assert
+     the commission ignored (b)** — that requires reading P1. It is a question for Stage 3,
+     not a claim for Stage 1.
+  3. **There is a threshold precondition before either limb:** a Reserve Fund must first have
+     been established.
+
+  Also note s.22(1): a declaration requires **the Minister's approval**. That places the
+  religious affairs minister of the day inside the approval chain as a matter of statute —
+  relevant to the RCI's finding on ministerial powers, and to be handled with the naming
+  discipline in ACCURACY POSTURE above.
+
+  **Residual caveat:** the AGC online text is stated as updated to **1 December 2011**. No
+  later reprint is listed on the act-detail page (reprints: 1995 gazette, 2002, 2006, 2011).
+  Whether any amendment act between 2011 and FY2017 altered s.22 is **not yet confirmed** —
+  check before any card asserts this was the wording in force in 2017.
 - **Tabung Haji Act 1995 generally** — the RCI finds it confers broad ministerial powers
   over haj operations, funds and investments, and recommends amendment.
 - **Malaysian Financial Reporting Standards / FRS 140** — impairment assessment and fair
@@ -238,9 +279,13 @@ depositor voice is exactly the omission T4A exists to correct.
   29 July 2026. Announcement:
   https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-...
   **NOT YET OPENED** — the JAKIM portal returned 503 on two attempts. Blocking for Phase 2.
-- **[P2] Tabung Haji Act 1995 (Act 535)**, Laws of Malaysia reprint, Attorney General's
-  Chambers — https://lom.agc.gov.my/act-detail.php?language=BI&act=535. Located; s.22(3)(a)
-  verbatim text **not yet extracted** (portal serves a PDF the fetcher could not render).
+- **[P2] Tabung Haji Act 1995 (Act 535)**, Laws of Malaysia, online version of updated text
+  of reprint, as at 1 December 2011, Attorney General's Chambers — landing page
+  https://lom.agc.gov.my/act-detail.php?language=BI&act=535; PDF at
+  `https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%20535%20-%20Tabung%20Haji%20Act%201995.pdf`
+  (43 pp; s.22 at pp. 21-22). **OPENED 2026-08-03**; s.22(1) and s.22(3) quoted verbatim in
+  RELEVANT LAW. The landing page embeds the PDF in a pdf.js viewer, which is why the earlier
+  fetch attempt returned metadata only — request the `/ilims/` path directly.
 - **[P3] Tabung Haji annual reports and statistics** —
   https://www.tabunghaji.gov.my/laporan-tahunan-dan-statistik. FY2017 report required for the
   declared profit and distribution rates. **Not yet opened.**
@@ -301,12 +346,20 @@ depositor voice is exactly the omission T4A exists to correct.
 
 ## VERIFICATION GAPS — must close before Stage 1
 
-1. **Open the RCI report PDF [P1].** Every headline figure should be read in the
-   commission's own words, not through press summaries. Also confirms: the six commissioners'
-   names, the submission date, the exact recommendation count and wording, and whether the
-   commission characterises the s.22 issue as a breach.
-2. **Extract s.22(3)(a) verbatim from the AGC reprint [P2].** The provision is the spine of
-   the issue. Do not paraphrase a statute from press descriptions.
+1. **[STILL OPEN — BLOCKING] Open the RCI report PDF [P1].** Every headline figure should be
+   read in the commission's own words, not through press summaries. Also confirms: the six
+   commissioners' names, the submission date, the exact recommendation count and wording, and
+   whether the commission characterises the s.22 issue as a breach.
+   **Attempted 2026-08-03, third and fourth failures.** `www.islam.gov.my` returned 503 to the
+   fetcher and failed the TCP connect from curl; `jakim.gov.my` returned a 502 CONNECT
+   failure. This is a host-level outage or block, not a wrong URL — the announcement page is
+   still in the search index at the path recorded under [P1]. No mirror of the PDF has been
+   located. **Retry before Stage 1; do not substitute press summaries.**
+2. **[CLOSED 2026-08-03] Extract s.22(3)(a) verbatim from the AGC reprint [P2].** Done — full
+   text of s.22(1) and s.22(3)(a)-(b) is now quoted in RELEVANT LAW above, pulled from the
+   Act 535 PDF at `lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/`. The extraction corrected
+   three errors in this brief's earlier paraphrase; see that section. One residual: confirm no
+   post-2011 amendment altered s.22 before FY2017.
 3. **Pull TH's FY2017 annual report [P3]** for the reported profit and the declared rates.
 4. **Confirm the PwC 2017 asset/liability figures [S12]** against a primary source, or drop
    them and rely on the restatement alone.
