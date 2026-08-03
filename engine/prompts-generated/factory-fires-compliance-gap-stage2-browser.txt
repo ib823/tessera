@@ -1,0 +1,203 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia's fire department counted 2,001 factory fires and RM4.21 billion lost, then pledged to strengthen enforcement",
+      "sub": "Its own figures show 2025 was the worst of those years: 463 factory fires, up 28.6 per cent, against a record 1,191 hazard notices issued.",
+      "sources": [
+        "Bernama (BM), 31 Jul 2026, '2,001 Kes Kebakaran Kilang Dengan Kerugian RM4.21 Bilion Direkodkan Sejak Enam Tahun Lepas' - https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754",
+        "Malay Mail, 31 Jul 2026, 'Malaysia records 2,001 factory fires, RM4.21b losses since 2020, says Fire Dept D-G' - https://www.malaymail.com/news/malaysia/2026/07/31/malaysia-records-2001-factory-fires-rm421b-losses-since-2020-says-fire-dept-d-g/229793",
+        "Sinar Harian, 31 Jul 2026, '2,001 kes kebakaran kilang, kerugian cecah RM4.21 bilion sejak 2021 - JBPM' - https://www.sinarharian.com.my/article/790230/berita/semasa/2001-kes-kebakaran-kilang-kerugian-cecah-rm421-bilion-sejak-2021---jbpm"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "JBPM inspected more factories in 2025 than in 2024 and issued 68.6 per cent more hazard notices. Fires rose too",
+      "s": "Inspections went from 1,563 to 1,878. Fire Hazard Elimination Notices went from 706 to 1,191. Factory fires hit 463, the highest of the six years reported.",
+      "d": "The Fire and Rescue Department's director-general, Datuk Seri Nor Hisham Mohammad, released both series in Putrajaya on 31 July 2026. Enforcement activity and fire incidence moved in the same direction in 2025: a 20.2 per cent rise in premises inspected, a 68.6 per cent rise in notices issued, and a 28.6 per cent rise in factory fires to 463 cases. The department has not offered a causal account of the 2025 peak, and none should be inferred from two series moving together. What the pairing does establish is that a year of unprecedented enforcement output was also the worst year on the record JBPM published.",
+      "sources": [
+        "Bernama (BM), 31 Jul 2026 - https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754",
+        "Sinar Harian, 31 Jul 2026 - https://www.sinarharian.com.my/article/790230/berita/semasa/2001-kes-kebakaran-kilang-kerugian-cecah-rm421-bilion-sejak-2021---jbpm"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "Factory fires were 2.9 per cent of Malaysia's fires in 2025 and 36.9 per cent of the money lost",
+      "s": "JBPM recorded 16,111 fires nationally that year, costing RM2.09 billion. Factories accounted for 463 of those cases and RM770.69 million of the losses.",
+      "d": "Both figures are the department's own and cover the same calendar year. The national total was given by deputy director-general (operations) Datuk Ahmad Izram Osman on 20 January 2026: 16,111 fires, RM2.09 billion in losses, 98 deaths, and RM6.44 billion in property saved. The factory subset, 463 cases and RM770.69 million, was reported on 31 July 2026. Dividing one into the other gives 2.9 per cent of cases and 36.9 per cent of losses. Fewer than three factory fires in every hundred fires, and better than a third of the national loss. The concentration is the point: this is where the money burns.",
+      "sources": [
+        "Bernama (BM), 20 Jan 2026, '16,111 Kes Kebakaran Direkod Sepanjang 2025, Kerugian Cecah RM2.09 Bilion' - https://bernama.com/bm/news.php?id=2514748",
+        "Sinar Harian, 31 Jul 2026 - https://www.sinarharian.com.my/article/790230/berita/semasa/2001-kes-kebakaran-kilang-kerugian-cecah-rm421-bilion-sejak-2021---jbpm"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Since 1 January 2026 the annual fire-safety check on a factory can be signed by an officer the factory employs",
+      "s": "Section 28 of the Fire Services Act 1988 requires a fire certificate, renewable annually. JBPM now accepts an accredited in-house officer's report in place of its own yearly inspection, auditing every two to three years.",
+      "d": "Nor Hisham announced the change on 4 August 2025 at the Southern Zone Industry Lead Body Seminar, with effect from 1 January 2026. Accredited fire safety managers or officers conduct the internal testing and file the technical report for certificate renewal; JBPM retains an audit cycle of two to three years and can revoke accreditation and impose fines. More than 600 people had registered for training with HRD Corp and the Department of Skills Development. The statutory duty is unchanged: section 28 requires the annual certificate, and section 33 makes operating designated premises without one an offence carrying a fine up to RM50,000, up to five years' imprisonment, or both. What moved is the attestation, from the department to the premises. The regime is seven months old and the first half of 2026 recorded 222 factory fires.",
+      "sources": [
+        "Fire Services Act 1988 (Act 341), AGC Laws of Malaysia clean draft 7 Mar 2019, ss.28, 33 - https://lom.agc.gov.my/act-detail.php?language=BI&act=341",
+        "Bernama, 4 Aug 2025, 'Accredited Fire Safety Officers To Be Granted Full Authority To Conduct Inspections' - https://bernama.com/en/news.php?id=2453029",
+        "Bernama (BM), 31 Jul 2026 (222 cases, Jan-Jun 2026) - https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "The question is not whether factories get inspected every year. It is who signs the inspection.",
+      "sources": [
+        "Fire Services Act 1988 (Act 341), s.28 - https://lom.agc.gov.my/act-detail.php?language=BI&act=341",
+        "Bernama, 4 Aug 2025 - https://bernama.com/en/news.php?id=2453029"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "A restaurant that grades its own hygiene and hangs the certificate in the window, with the inspector due back sometime in the next three years.",
+      "sources": [
+        "Bernama, 4 Aug 2025 (accredited officer files the renewal report; JBPM audits every two to three years) - https://bernama.com/en/news.php?id=2453029"
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "JBPM published every number here, including the ones that flatter it least, and a department short of inspectors has to ration them somehow. But a regime that reports more notices every year and more fires every year is measuring its own activity, not its effect. The 2026 figures will be the first written under self-attestation, and they are the ones worth waiting for.",
+      "sources": [
+        "Bernama (BM), 31 Jul 2026 - https://www.bernama.com/bm/jenayah_mahkamah/news.php?id=2588754",
+        "Bernama (BM), 20 Jan 2026 - https://bernama.com/bm/news.php?id=2514748",
+        "Bernama, 4 Aug 2025 - https://bernama.com/en/news.php?id=2453029"
+      ]
+    }
+  ],
+  "sources": "Bernama (BM) 31 Jul 2026; Bernama (BM) 20 Jan 2026; Bernama (EN) 4 Aug 2025; Fire Services Act 1988 (Act 341) AGC reprint clean draft 7 Mar 2019; Malay Mail 31 Jul 2026; Sinar Harian 31 Jul 2026",
+  "confidence": "Medium-High - The 2025 and 2026-H1 case, loss and enforcement figures come from the state news agency reporting the department's own director-general, and the statutory text was read verbatim from the AGC reprint. Confidence is held below High for three reasons: the 463 / 28.6% / RM770.69m series for 2025 is single-sourced to Sinar Harian; the Fire Services (Amendment) Act 2025 gazette text was not opened, so the accreditation mechanism rests on Bernama reporting a spoken announcement; and the six-year window's start year is reported inconsistently across outlets, so no start year is stated anywhere in these cards.",
+  "lenses_used": ["Governance", "Economic", "Legal"],
+  "lenses_applicable_but_unused": ["Environmental", "Social", "Technology"],
+  "needs_verification": [
+    "The 1 January 2026 commencement date and the exact mechanism of the accredited-officer regime. Sourced to Bernama reporting the JBPM director-general on 4 Aug 2025, five months before commencement. The Fire Services (Amendment) Act 2025 (Act A1764) PDF on bomba.gov.my returned 503 and a direct fetch was reset. Stage 3 must open the gazette and confirm: commencement date, what the accredited officer certifies, what JBPM retains, and the audit interval. If the gazette contradicts the Bernama account, the Legal fact card and the analogy card both fall.",
+    "That factories are 'designated premises' under s.27 of Act 341, and therefore that the s.28 annual certificate duty applies to them. The designation order was not located. Every secondary description of the scope traces to fire-safety consultancy marketing pages, which were excluded as non-sources. The Legal fact card's framing depends on this.",
+    "The 2025 factory series: 463 cases, +28.6 per cent, RM770.69 million. Single-sourced to Sinar Harian. Every other outlet reported only the six-year lump. This is the base of the denominator claim in fact card 2 and of the peak claim in the hook.",
+    "That 'kilang' (factory, 463 cases in 2025) is a subset of 'industri' (industrial, 9.2 per cent of 12,292 structural fires, roughly 1,131 cases in 2025). Almost certainly true but unverified. No card mixes the two series, and the 2.9/36.9 per cent denominator compares factory cases against the all-fires total, which does not depend on this. Flagged so Stage 3 does not introduce the mixture while editing.",
+    "The start year of the six-year window. Malay Mail says 2020, Sinar Harian says 2021, Bernama says only 'the past six years'. No card states a start year. If Stage 3 resolves it against JBPM's annual statistics series, the hook may gain a year; until then it must not."
+  ],
+  "source_notes": "Five discrepancies were handled rather than resolved silently. (1) Start year: three outlets reporting the same spoken statement give 2020, 2021, and no year. None is more authoritative than the others, so no card states a start year. (2) Case count: Bernama and Malay Mail give 2,001; Harian Metro's headline gives 2,002. The cards use 2,001, the state-wire figure carried by the majority. (3) The 2024 factory case count is nowhere reported. Dividing 463 by 1.286 implies roughly 360, but no source states it, so no card uses a 2024 case figure. The 2024 enforcement figures, 1,563 inspections and 706 notices, are reported directly and are used. (4) Category mismatch between 'factory' and 'industrial' is documented above and avoided in the copy. (5) RM4.21 billion over six years averages roughly RM702 million a year while 2025 alone was RM770.69 million, above that average. Because only two years are separately known, no card characterises the loss curve as flat, rising or falling. Two further notes on posture. The correlation between the 1 January 2026 accreditation switch and factory fire counts is not asserted as causal anywhere, and cannot be: the switch post-dates the 2025 peak. The view card states plainly that the 2026 figures are the first test. Unpublished T4A draft 1769 covers adjacent ground (58 per cent commercial-building fire-safety compliance) but has no brief or pipeline artifacts, and a previous T4A issue is not a primary source, so nothing from it was used."
+}
