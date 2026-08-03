@@ -57,7 +57,11 @@ once their brief exists. Identify a pick by its title, not its rank.
 - **Radar:** silence-watch F7 (fresh track) at the 09:15 scan — silence=0.92,
   importance=0.62, age=4.3d, 73 news / 27 social, [political]. **Now correctly
   filtered out of the list as in-flight**, since `engine/briefs/tabung-haji-rci-2017-restatement.md`
-  exists (Phase 1 complete, awaiting approval).
+  exists (Phase 1 complete, awaiting approval). At the 13:10 scan a **different**
+  Tabung Haji RCI article re-entered the fresh track at F15 (Syed Saddiq, that
+  the RCI does not exonerate previous leadership). Same story, distinct headline,
+  so the coverage filter does not catch it. It is not a second pick — treat it as
+  a source for A1, not a new Tier entry.
 - **Date:** 30 July 2026 (RCI findings reported); 31 July 2026 (Act
   amendments said to be under way); 1 August 2026 (call for a special
   Dewan sitting)
