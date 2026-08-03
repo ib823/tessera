@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-08-03 16:54 UTC. Queue size: 1132. Picks shown: 25.
+Scan: 2026-08-03 18:41 UTC. Queue size: 1131. Picks shown: 25.
 
 These are structurally important events that have accumulated in the
 radar queue with unexpectedly low coverage. Rank score combines
@@ -55,7 +55,7 @@ developed.
 
 - **Rank score:** 1.015 (silence=1.00 × importance=0.51 × age_factor)
 
-- **Age in queue:** 90.8 days (source date: 2026-05-04, first seen: 2026-05-04)
+- **Age in queue:** 90.9 days (source date: 2026-05-04, first seen: 2026-05-04)
 
 - **Coverage:** 1 news, 2 social — pattern: _below-expected coverage_
 
@@ -66,7 +66,7 @@ developed.
 
 - **Rank score:** 1.000 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 95.8 days (source date: 2026-04-29, first seen: 2026-04-29)
+- **Age in queue:** 95.9 days (source date: 2026-04-29, first seen: 2026-04-29)
 
 - **Coverage:** 2 news, 4 social — pattern: _below-expected coverage_
 
@@ -77,7 +77,7 @@ developed.
 
 - **Rank score:** 0.997 (silence=0.99 × importance=0.51 × age_factor)
 
-- **Age in queue:** 124.8 days (source date: 2026-03-31, first seen: 2026-03-31)
+- **Age in queue:** 124.9 days (source date: 2026-03-31, first seen: 2026-03-31)
 
 - **Coverage:** 2 news, 6 social — pattern: _below-expected coverage_
 
@@ -99,7 +99,7 @@ developed.
 
 - **Rank score:** 0.901 (silence=0.98 × importance=0.46 × age_factor)
 
-- **Age in queue:** 53.1 days (source date: 2026-06-11, first seen: 2026-06-11)
+- **Age in queue:** 53.2 days (source date: 2026-06-11, first seen: 2026-06-11)
 
 - **Coverage:** 3 news, 6 social — pattern: _below-expected coverage_
 
@@ -108,7 +108,7 @@ developed.
 
 ### S9. sindiket godam sistem pas pekerja asing, 7 penjawat awam antara 12 ditahan. kerajaan dianggarkan rugi rm2.4...
 
-- **Rank score:** 0.828 (silence=1.00 × importance=0.70 × age_factor)
+- **Rank score:** 0.830 (silence=1.00 × importance=0.70 × age_factor)
 
 - **Age in queue:** 5.6 days (source date: 2026-07-29, first seen: 2026-07-29)
 
@@ -132,7 +132,7 @@ developed.
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 40.2 days (source date: 2026-06-24, first seen: 2026-06-24)
+- **Age in queue:** 40.3 days (source date: 2026-06-24, first seen: 2026-06-24)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -143,7 +143,7 @@ developed.
 
 - **Rank score:** 0.799 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 34.1 days (source date: 2026-06-30, first seen: 2026-06-30)
+- **Age in queue:** 34.2 days (source date: 2026-06-30, first seen: 2026-06-30)
 
 - **Coverage:** 3 news, 3 social — pattern: _below-expected coverage_
 
@@ -154,7 +154,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 101.8 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 101.9 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
@@ -165,7 +165,7 @@ developed.
 
 - **Rank score:** 0.796 (silence=0.97 × importance=0.41 × age_factor)
 
-- **Age in queue:** 74.1 days (source date: 2026-05-21, first seen: 2026-05-21)
+- **Age in queue:** 74.2 days (source date: 2026-05-21, first seen: 2026-05-21)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -176,7 +176,7 @@ developed.
 
 - **Rank score:** 0.782 (silence=0.95 × importance=0.41 × age_factor)
 
-- **Age in queue:** 75.0 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 75.1 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 5 news, 6 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed.
 
 ### S16. ahli parlimen mungkin dibenar tonton rakaman ‘rusuhan’ penjara taiping. m kulasegaran berkata kebenaran jem...
 
-- **Rank score:** 0.713 (silence=0.93 × importance=0.41 × age_factor)
+- **Rank score:** 0.714 (silence=0.93 × importance=0.41 × age_factor)
 
 - **Age in queue:** 26.2 days (source date: 2026-07-08, first seen: 2026-07-08)
 
@@ -198,7 +198,7 @@ developed.
 
 - **Rank score:** 0.707 (silence=0.86 × importance=0.41 × age_factor)
 
-- **Age in queue:** 77.1 days (source date: 2026-05-19, first seen: 2026-05-18)
+- **Age in queue:** 77.2 days (source date: 2026-05-19, first seen: 2026-05-18)
 
 - **Coverage:** 18 news, 15 social — pattern: _below-expected coverage_
 
@@ -207,9 +207,9 @@ developed.
 
 ### S18. tiada bicara semula kes rasuah rosmah rm1.25 bilion projek solar hibrid. mahkamah rayuan kini akan dengar r...
 
-- **Rank score:** 0.705 (silence=0.99 × importance=0.60 × age_factor)
+- **Rank score:** 0.706 (silence=0.99 × importance=0.60 × age_factor)
 
-- **Age in queue:** 5.2 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 5.3 days (source date: 2026-07-29, first seen: 2026-07-29)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -218,9 +218,9 @@ developed.
 
 ### S19. keluarga pastor koh gagal batalkan penangguhan penghakiman rm37 juta. mahkamah rayuan memutuskan mahkamah t...
 
-- **Rank score:** 0.675 (silence=0.99 × importance=0.58 × age_factor)
+- **Rank score:** 0.677 (silence=0.99 × importance=0.58 × age_factor)
 
-- **Age in queue:** 5.4 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 5.5 days (source date: 2026-07-29, first seen: 2026-07-29)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
@@ -229,9 +229,9 @@ developed.
 
 ### S20. mahkamah tolak permohonan bekas doktor tentera semak sabitan bunuh kevin morais. mahkamah persekutuan menol...
 
-- **Rank score:** 0.623 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.625 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 3.4 days (source date: 2026-07-31, first seen: 2026-07-31)
+- **Age in queue:** 3.5 days (source date: 2026-07-31, first seen: 2026-07-31)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
@@ -240,9 +240,9 @@ developed.
 
 ### S21. pru16: undi ph atau zahid pm, kata pua. bekas ahli parlimen damansara berkata tindakan undi parti 'pengacau...
 
-- **Rank score:** 0.605 (silence=0.94 × importance=0.41 × age_factor)
+- **Rank score:** 0.606 (silence=0.94 × importance=0.41 × age_factor)
 
-- **Age in queue:** 17.0 days (source date: 2026-07-18, first seen: 2026-07-17)
+- **Age in queue:** 17.1 days (source date: 2026-07-18, first seen: 2026-07-17)
 
 - **Coverage:** 9 news, 5 social — pattern: _below-expected coverage_
 
@@ -251,7 +251,7 @@ developed.
 
 ### S22. as takkan salur dana kepada who melalui gavi. kenyataan itu dibuat ketika washington mengumumkan pelepasan ...
 
-- **Rank score:** 0.589 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.590 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 4.6 days (source date: 2026-07-30, first seen: 2026-07-30)
 
@@ -262,7 +262,7 @@ developed.
 
 ### S23. berjaya hills, pemilik tanah gagal batal semakan kadar cukai tanah pahang. mahkamah rayuan berkata majlis t...
 
-- **Rank score:** 0.586 (silence=0.98 × importance=0.51 × age_factor)
+- **Rank score:** 0.587 (silence=0.98 × importance=0.51 × age_factor)
 
 - **Age in queue:** 5.6 days (source date: 2026-07-29, first seen: 2026-07-29)
 
@@ -273,9 +273,9 @@ developed.
 
 ### S24. mahkamah arah pengasas myairline bayar balik rm67.5 juta kepada pelabur. mahkamah tinggi kl putuskan goh hw...
 
-- **Rank score:** 0.586 (silence=0.98 × importance=0.50 × age_factor)
+- **Rank score:** 0.587 (silence=0.98 × importance=0.50 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-07-29, first seen: 2026-07-28)
+- **Age in queue:** 6.1 days (source date: 2026-07-29, first seen: 2026-07-28)
 
 - **Coverage:** 7 news, 6 social — pattern: _below-expected coverage_
 
@@ -284,9 +284,9 @@ developed.
 
 ### S25. tiada ‘sakau’ dalam rci th tak sucikan pemimpin terdahulu, kata syed saddiq. ahli parlimen muar itu juga me...
 
-- **Rank score:** 0.579 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.580 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.9 days (source date: 2026-07-31, first seen: 2026-07-30)
+- **Age in queue:** 4.0 days (source date: 2026-07-31, first seen: 2026-07-30)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
