@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-08-04 05:13 UTC. Queue size: 1107. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-08-04 05:35 UTC. Queue size: 1116. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -53,7 +53,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.644 (silence=0.97 × importance=0.67, no age weighting)
 
-- **Age in queue:** 6.8 days (source date: 2026-07-29, first seen: 2026-07-28)
+- **Age in queue:** 6.9 days (source date: 2026-07-29, first seen: 2026-07-28)
 
 - **Coverage:** 64 news, 10 social — pattern: _below-expected coverage_
 
@@ -174,7 +174,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.525 (silence=0.93 × importance=0.56, no age weighting)
 
-- **Age in queue:** 3.8 days (source date: 2026-08-01, first seen: 2026-07-31)
+- **Age in queue:** 3.9 days (source date: 2026-08-01, first seen: 2026-07-31)
 
 - **Coverage:** 47 news, 14 social — pattern: _below-expected coverage_
 
@@ -257,7 +257,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.189 (silence=0.97 × importance=0.61 × age_factor)
 
-- **Age in queue:** 65.0 days (source date: 2026-06-01, first seen: 2026-05-31)
+- **Age in queue:** 65.1 days (source date: 2026-06-01, first seen: 2026-05-31)
 
 - **Coverage:** 37 news, 6 social — pattern: _24h+ silence then rising_
 
