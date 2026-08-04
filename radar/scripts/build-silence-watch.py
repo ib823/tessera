@@ -46,6 +46,7 @@ Usage:
 
 import argparse
 import json
+import math
 import re
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -71,6 +72,19 @@ STOPWORDS = {
 # A title must share this many *distinctive* significant words with a single
 # published issue or in-flight brief before it counts as already covered.
 COVERAGE_THRESHOLD = 3
+
+# Share of a title's distinctive words that must land inside one brief before
+# it counts as in flight. Guards the size asymmetry described in
+# `_covered_by_any`. Swept against a hand-labelled probe set on the 2026-08-04
+# queue (632 candidate titles, 87 briefs): 0.30 admitted 6 of 10 known-bad
+# matches, 0.40 lost 3 of 14 known-good ones, and 0.35 was the widest setting
+# that held every known-bad out.
+INFLIGHT_OVERLAP_RATIO = 0.35
+
+# How much of a brief counts as its topic. Enough to carry the title and the
+# opening statement of what the brief is about, short of the CONTEXT timeline
+# and the bibliography — see `_brief_topic_text`.
+BRIEF_TOPIC_CHARS = 1000
 
 # Words this common across the corpus carry no topical signal — "billion",
 # "malaysia", "minister", "government" recur in hundreds of issues, so three
@@ -149,13 +163,42 @@ def load_published_docs() -> list[set[str]]:
     return docs
 
 
+def _brief_topic_text(path: Path) -> str:
+    """Slug plus the brief's opening prose — what the brief is *about*.
+
+    Matching on the slug alone under-matched badly, because a slug names the
+    angle the writer chose rather than the words a newswire uses.
+    `factory-fires-compliance-gap` shares two significant words with its own
+    radar headline, and `tabung-haji-rci-2017-restatement` shares none with
+    "tiada 'sakau' dalam RCI TH" — so both briefs' topics kept resurfacing as
+    undeveloped picks while the work was already at Stage 3.
+
+    The opening slice rather than the whole file, because briefs carry a
+    CONTEXT timeline and a 15-25 entry bibliography. Matching against those
+    would suppress any candidate that merely shares a citation with an
+    in-flight brief, which is the opposite and worse failure. Briefs use at
+    least three header conventions (`# BRIEF — x`, `# ISSUE 1973 — x`, a bare
+    `ISSUE: x` first line), so this takes the opening prose instead of parsing
+    for a section that only 52 of 87 briefs actually have.
+
+    Front-matter boilerplate ("slug", "radar provenance", "brief status")
+    recurs across every brief and is dropped by `common_words` downstream.
+    """
+    stem = path.stem.replace("-", " ")
+    try:
+        head = path.read_text()[:BRIEF_TOPIC_CHARS]
+    except OSError:
+        return stem
+    return f"{stem} {head}"
+
+
 def load_inflight_docs() -> list[set[str]]:
-    """Significant words per in-flight brief filename — one word-set per brief."""
+    """Significant words per in-flight brief — one word-set per brief."""
     docs: list[set[str]] = []
     if not BRIEFS_DIR.exists():
         return docs
     for path in BRIEFS_DIR.glob("*.md"):
-        words = _significant_words(path.stem.replace("-", " "))
+        words = _significant_words(_brief_topic_text(path))
         if words:
             docs.append(words)
     return docs
@@ -178,6 +221,7 @@ def _covered_by_any(
     docs: list[set[str]],
     stopset: set[str] | None = None,
     threshold: int = COVERAGE_THRESHOLD,
+    min_ratio: float = 0.0,
 ) -> bool:
     """True when the title shares `threshold` distinctive words with one document.
 
@@ -187,6 +231,15 @@ def _covered_by_any(
     are excluded for the same reason at a smaller scale — "RM4.21b in factory
     fire losses" and a 2024 flood-cost issue share billion/losses/malaysia
     while having nothing to do with each other.
+
+    `min_ratio` additionally requires that the overlap account for a given
+    share of the title's own distinctive words. An absolute count is only
+    meaningful when the two sides are of comparable size: a published issue is
+    a headline plus context (~20 significant words), but a brief's topic text
+    runs to ~77, and against a document that large a long news lede clears
+    three shared words by coincidence alone. Measured on the 2026-08-04 queue,
+    coincidental matches land at 0.17-0.25 of the title while genuine ones land
+    at 0.36-0.56, so the ratio separates them where the raw count cannot.
     """
     words = _significant_words(title)
     if not words or not docs:
@@ -195,7 +248,8 @@ def _covered_by_any(
         words = words - stopset
     if len(words) < threshold:
         return False
-    return any(len(words & doc) >= threshold for doc in docs)
+    floor = max(threshold, math.ceil(min_ratio * len(words)))
+    return any(len(words & doc) >= floor for doc in docs)
 
 
 def _is_stub(title: str) -> bool:
@@ -231,7 +285,9 @@ def collect_candidates(queue: list[dict], now: datetime) -> list[dict]:
             continue
         if _covered_by_any(title, published_docs, published_common):
             continue
-        if _covered_by_any(title, inflight_docs, inflight_common):
+        if _covered_by_any(
+            title, inflight_docs, inflight_common, min_ratio=INFLIGHT_OVERLAP_RATIO
+        ):
             continue
 
         days = _age_days(item, now)

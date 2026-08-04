@@ -101,6 +101,89 @@ class TestCommonWords:
         assert sw.common_words([]) == set()
 
 
+class TestInflightBriefMatching:
+    """A brief's topic is its content, not the slug its author happened to pick."""
+
+    BRIEF = """# BRIEF — RCI: Tabung Haji's declared RM3.4b profit for 2017 was a RM1.4b loss
+
+**Slug:** tabung-haji-rci-2017-restatement
+
+## ISSUE
+
+The commission found that for financial year 2017 the pilgrimage fund reported
+a RM3.4 billion profit when the accounting standards would have produced a
+RM1.4 billion net loss, and that the distribution breached section 22.
+"""
+
+    def _briefs(self, tmp_path, monkeypatch, **files):
+        for name, body in files.items():
+            (tmp_path / f"{name}.md").write_text(body)
+        monkeypatch.setattr(sw, "BRIEFS_DIR", tmp_path)
+        return sw.load_inflight_docs()
+
+    def test_body_words_absent_from_the_slug_are_picked_up(self, tmp_path, monkeypatch):
+        docs = self._briefs(
+            tmp_path, monkeypatch, **{"tabung-haji-rci-2017-restatement": self.BRIEF}
+        )
+        assert "pilgrimage" in docs[0]
+        assert "commission" in docs[0]
+        # The slug still contributes, so nothing that matched before stops matching.
+        assert "restatement" in docs[0]
+
+    def test_headline_sharing_no_slug_words_is_still_covered(self, tmp_path, monkeypatch):
+        docs = self._briefs(
+            tmp_path, monkeypatch, **{"tabung-haji-rci-2017-restatement": self.BRIEF}
+        )
+        # Shares nothing with the slug; shares the story with the brief body.
+        title = "commission finds pilgrimage fund breached section 22 distribution rules"
+        assert sw._covered_by_any(title, [sw._significant_words(sw._brief_topic_text(p))
+                                          for p in tmp_path.glob("*.md")]) is True
+        assert sw._covered_by_any(title, docs) is True
+
+    def test_slug_only_matching_would_have_missed_it(self, tmp_path, monkeypatch):
+        # Pins the defect this replaced: the slug alone shares no significant
+        # word with the headline above, so the pick resurfaced as undeveloped
+        # while the brief was already at Stage 3.
+        slug_words = sw._significant_words("tabung haji rci 2017 restatement")
+        title = "commission finds pilgrimage fund breached section 22 distribution rules"
+        assert sw._covered_by_any(title, [slug_words]) is False
+
+    def test_ratio_guard_rejects_coincidental_overlap(self, tmp_path, monkeypatch):
+        docs = self._briefs(
+            tmp_path, monkeypatch, **{"tabung-haji-rci-2017-restatement": self.BRIEF}
+        )
+        # A long unrelated lede that clips three of the brief's words in
+        # passing. Three is enough on a headline-sized document and far too
+        # little against a brief.
+        title = (
+            "bolivian prosecutor orders arrest of former leader over protest "
+            "deaths, commission reports billion in damages from the standards "
+            "dispute across seven regions this year"
+        )
+        assert sw._covered_by_any(title, docs, threshold=3) is True
+        assert sw._covered_by_any(
+            title, docs, threshold=3, min_ratio=sw.INFLIGHT_OVERLAP_RATIO
+        ) is False
+
+    def test_ratio_default_leaves_published_matching_unchanged(self):
+        docs = [{"commission", "report", "profit", "fund", "loss"}]
+        title = "commission report finds fund 2017 profit should have been a loss"
+        assert sw._covered_by_any(title, docs) is True
+
+    def test_brief_without_h1_or_sections_falls_back_to_slug(self, tmp_path, monkeypatch):
+        docs = self._briefs(tmp_path, monkeypatch, **{"byd-miti-tanjung-malim": ""})
+        assert docs and "tanjung" in docs[0]
+
+    def test_bibliography_is_out_of_range(self, tmp_path, monkeypatch):
+        # Sources sit far past the topic window, so a candidate that merely
+        # shares a citation with an in-flight brief is not suppressed.
+        body = "# BRIEF — a narrow topic\n\n" + ("filler word here. " * 200)
+        body += "\n## SOURCES\n1. Bolivian prosecutor orders arrest of Morales\n"
+        docs = self._briefs(tmp_path, monkeypatch, **{"narrow-topic": body})
+        assert "bolivian" not in docs[0]
+        assert "morales" not in docs[0]
+
+
 class TestStubFilter:
     def test_single_word_topic_is_a_stub(self):
         assert sw._is_stub("malay") is True
