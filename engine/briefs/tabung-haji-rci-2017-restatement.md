@@ -367,6 +367,18 @@ depositor voice is exactly the omission T4A exists to correct.
    individual timestamps in this log are approximate and the interval between the ~21:10 entry
    and the present one is longer than the earlier stamps suggest. Gap 1 remains open and the
    issue remains held.
+   2026-08-06, 11:33 to 21:04: five further retries across the day, twenty consecutive failures
+   in total, both signatures unchanged at every attempt. Twenty attempts spread over three days
+   against two separate hosts, with the failure mode stable rather than intermittent, is enough
+   to treat this as a standing condition rather than an outage that will clear on its own —
+   further hourly retries are not an efficient use of a session. Whoever picks this up next
+   should retry once at the start of the session and, if it still fails, spend the effort on
+   the Hansard route instead: a special Dewan Rakyat sitting to debate the RCI report was set
+   for 11 Aug 2026, and the official report of proceedings is a primary source under the
+   Accuracy Standard that does not depend on the JAKIM hosts being reachable. It would not
+   close gap 1 on its own terms — the commission's own words in the PDF are what gap 1 asks
+   for — but it can independently establish several of the same specifics. Gap 1 remains open
+   and the issue remains held.
 
    **Status: the issue is HELD**, per this brief's closing rule, on the user's explicit
    decision of 2026-08-03. Retry on each session check-in; begin Stage 1 the moment the PDF
