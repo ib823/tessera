@@ -356,6 +356,17 @@ depositor voice is exactly the omission T4A exists to correct.
    roughly ten hours. This is a host-level outage or block, not a wrong URL — the announcement
    page remains in the search index at the path recorded under [P1]. No mirror of the PDF has
    been located.
+   2026-08-04 through 2026-08-06 11:33: retried on every session check-in, nine further
+   failures, fifteen consecutive in total. The failure has settled into two distinct and
+   unchanging signatures: `www.islam.gov.my` fails TLS certificate verification through the
+   session proxy and does so even when curl is given the proxy CA bundle explicitly
+   (`--cacert /root/.ccr/ca-bundle.crt`), while `jakim.gov.my` is refused at the proxy gateway
+   with a 502 on the CONNECT tunnel. The proxy's own status endpoint reports zero recent relay
+   failures throughout, so it is not a reliable indicator here; the live request is. Note that
+   the session container's clock lagged real time by up to two days during this window, so
+   individual timestamps in this log are approximate and the interval between the ~21:10 entry
+   and the present one is longer than the earlier stamps suggest. Gap 1 remains open and the
+   issue remains held.
 
    **Status: the issue is HELD**, per this brief's closing rule, on the user's explicit
    decision of 2026-08-03. Retry on each session check-in; begin Stage 1 the moment the PDF

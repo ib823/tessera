@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-08-04 17:17 UTC. Queue size: 1139. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-08-06 11:34 UTC. Queue size: 1117. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -27,169 +27,169 @@ developed, and the develop list drifts into old news.
 ## Fresh signal — first seen in the last 7 days
 
 
-### F1. sindiket godam sistem pas pekerja asing, 7 penjawat awam antara 12 ditahan. kerajaan dianggarkan rugi rm2.4...
-
-- **Fresh score:** 0.698 (silence=1.00 × importance=0.70, no age weighting)
-
-- **Age in queue:** 6.6 days (source date: 2026-07-29, first seen: 2026-07-29)
-
-- **Coverage:** 2 news, 5 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** environmental, ethnic, political
-
-
-### F2. sabah’s 2025 trade hits rm105.5bil. total trade crossed the rm100 billion mark for the fourth consecutive y...
+### F1. sabah’s 2025 trade hits rm105.5bil. total trade crossed the rm100 billion mark for the fourth consecutive y...
 
 - **Fresh score:** 0.662 (silence=1.00 × importance=0.67, no age weighting)
 
-- **Age in queue:** 1.1 days (source date: 2026-08-04, first seen: 2026-08-03)
+- **Age in queue:** 2.9 days (source date: 2026-08-04, first seen: 2026-08-03)
 
 - **Coverage:** 8 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### F3. tiada bicara semula kes rasuah rosmah rm1.25 bilion projek solar hibrid. mahkamah rayuan kini akan dengar r...
+### F2. pemiutang boleh tuntut semula rm50 juta walau pinjaman tak sah. mahkamah persekutuan putus perjanjian pinja...
 
-- **Fresh score:** 0.600 (silence=0.99 × importance=0.60, no age weighting)
+- **Fresh score:** 0.643 (silence=1.00 × importance=0.65, no age weighting)
 
-- **Age in queue:** 6.3 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 0.0 days (source date: 2026-08-06, first seen: 2026-08-06)
 
-- **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
+- **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### F4. no retrial for rosmah in rm1.25bil solar hybrid project graft case. the court of appeal will now hear rosma...
+### F3. federal court says lender can recover rm50mil despite invalid loan. court says a defective moneylending agr...
 
-- **Fresh score:** 0.586 (silence=0.97 × importance=0.60, no age weighting)
+- **Fresh score:** 0.641 (silence=0.99 × importance=0.65, no age weighting)
 
-- **Age in queue:** 6.3 days (source date: 2026-07-29, first seen: 2026-07-29)
+- **Age in queue:** 0.1 days (source date: 2026-08-06, first seen: 2026-08-06)
 
-- **Coverage:** 23 news, 12 social — pattern: _below-expected coverage_
+- **Coverage:** 9 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F5. keluarga pastor koh gagal batalkan penangguhan penghakiman rm37 juta. mahkamah rayuan memutuskan mahkamah t...
-
-- **Fresh score:** 0.572 (silence=0.99 × importance=0.58, no age weighting)
-
-- **Age in queue:** 6.4 days (source date: 2026-07-29, first seen: 2026-07-29)
-
-- **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### F6. 5 pegawai imigresen direman, disyaki godam myimms lulus plks. mereka disiasat kerana dipercayai bersubahat ...
+### F4. 5 pegawai imigresen direman, disyaki godam myimms lulus plks. mereka disiasat kerana dipercayai bersubahat ...
 
 - **Fresh score:** 0.563 (silence=1.00 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.3 days (source date: 2026-08-04, first seen: 2026-08-04)
+- **Age in queue:** 2.1 days (source date: 2026-08-04, first seen: 2026-08-04)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
 
-### F7. pastor koh’s family fails to quash suspension of rm37mil judgment sum. court of appeal holds that the lower...
-
-- **Fresh score:** 0.561 (silence=0.97 × importance=0.58, no age weighting)
-
-- **Age in queue:** 6.4 days (source date: 2026-07-29, first seen: 2026-07-29)
-
-- **Coverage:** 17 news, 10 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### F8. mahkamah tolak permohonan bekas doktor tentera semak sabitan bunuh kevin morais. mahkamah persekutuan menol...
+### F5. mahkamah tolak permohonan bekas doktor tentera semak sabitan bunuh kevin morais. mahkamah persekutuan menol...
 
 - **Fresh score:** 0.560 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 4.4 days (source date: 2026-07-31, first seen: 2026-07-31)
+- **Age in queue:** 6.2 days (source date: 2026-07-31, first seen: 2026-07-31)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F9. apex court dismisses langkawi council’s bid to challenge landmark ruling. the federal court rules that the ...
+### F6. federal court commutes ex-soldier’s death sentence to 40 years’ jail. majority bench upholds murder convict...
+
+- **Fresh score:** 0.558 (silence=0.99 × importance=0.56, no age weighting)
+
+- **Age in queue:** 0.2 days (source date: 2026-08-06, first seen: 2026-08-06)
+
+- **Coverage:** 8 news, 2 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### F7. apex court dismisses langkawi council’s bid to challenge landmark ruling. the federal court rules that the ...
 
 - **Fresh score:** 0.554 (silence=0.98 × importance=0.56, no age weighting)
 
-- **Age in queue:** 5.1 days (source date: 2026-07-30, first seen: 2026-07-30)
+- **Age in queue:** 6.9 days (source date: 2026-07-30, first seen: 2026-07-30)
 
 - **Coverage:** 13 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F10. ex-military doctor fails in bid to review conviction for kevin morais’s murder. federal court rules that it...
+### F8. mahkamah persekutuan tolak permohonan bekas eksekutif seacera untuk merayu. mahkamah tertinggi berkata empa...
+
+- **Fresh score:** 0.553 (silence=0.98 × importance=0.56, no age weighting)
+
+- **Age in queue:** 1.2 days (source date: 2026-08-05, first seen: 2026-08-05)
+
+- **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### F9. ex-military doctor fails in bid to review conviction for kevin morais’s murder. federal court rules that it...
 
 - **Fresh score:** 0.551 (silence=0.98 × importance=0.56, no age weighting)
 
-- **Age in queue:** 4.4 days (source date: 2026-07-31, first seen: 2026-07-31)
+- **Age in queue:** 6.2 days (source date: 2026-07-31, first seen: 2026-07-31)
 
 - **Coverage:** 18 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
+### F10. mrcb, theta edge awarded rm3bil system turnkey contract for penang lrt. mrt corp is also evaluating tenders...
+
+- **Fresh score:** 0.551 (silence=0.97 × importance=0.56, no age weighting)
+
+- **Age in queue:** 0.5 days (source date: 2026-08-06, first seen: 2026-08-06)
+
+- **Coverage:** 17 news, 5 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** general
+
+
 ### F11. pua nafi terbabit kontrak rm4.5 juta th kepada syarikat. bekas ahli parlimen damansara itu berkata beliau m...
 
 - **Fresh score:** 0.547 (silence=0.98 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.3 days (source date: 2026-08-04, first seen: 2026-08-04)
+- **Age in queue:** 2.0 days (source date: 2026-08-04, first seen: 2026-08-04)
 
 - **Coverage:** 8 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
 
-### F12. bukit aman tumpas 3 sindiket, rampas vape dadah sintetik rm45.6 juta. jsjn bukit aman bertindak susulan kes...
-
-- **Fresh score:** 0.539 (silence=0.99 × importance=0.54, no age weighting)
-
-- **Age in queue:** 6.3 days (source date: 2026-07-29, first seen: 2026-07-29)
-
-- **Coverage:** 4 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### F13. 25 prisoners seek federal court review of commuted death sentences. they urge the apex court to depart from...
+### F12. 25 prisoners seek federal court review of commuted death sentences. they urge the apex court to depart from...
 
 - **Fresh score:** 0.538 (silence=0.95 × importance=0.56, no age weighting)
 
-- **Age in queue:** 1.2 days (source date: 2026-08-03, first seen: 2026-08-03)
+- **Age in queue:** 2.9 days (source date: 2026-08-03, first seen: 2026-08-03)
 
 - **Coverage:** 35 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F14. votes from indian community may prove crucial. in the negeri sembilan election this weekend, the temple row...
-
-- **Fresh score:** 0.531 (silence=0.94 × importance=0.56, no age weighting)
-
-- **Age in queue:** 6.6 days (source date: 2026-07-29, first seen: 2026-07-29)
-
-- **Coverage:** 45 news, 7 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, political, religious
-
-
-### F15. death sentence stands for former army pathologist kunaseegaran convicted of killing dpp kevin morais. putra...
+### F13. death sentence stands for former army pathologist kunaseegaran convicted of killing dpp kevin morais. putra...
 
 - **Fresh score:** 0.525 (silence=0.93 × importance=0.56, no age weighting)
 
-- **Age in queue:** 4.3 days (source date: 2026-08-01, first seen: 2026-07-31)
+- **Age in queue:** 6.1 days (source date: 2026-08-01, first seen: 2026-07-31)
 
 - **Coverage:** 47 news, 14 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
+
+
+### F14. naimah berjaya batal tuntutan cukai lhdn rm313.8 juta. mahkamah tinggi memutuskan lhdn bertindak melampaui ...
+
+- **Fresh score:** 0.520 (silence=0.99 × importance=0.53, no age weighting)
+
+- **Age in queue:** 0.1 days (source date: 2026-08-06, first seen: 2026-08-06)
+
+- **Coverage:** 3 news, 4 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, legal
+
+
+### F15. deputy minister says social work council coming once new act officially takes effect. butterworth, aug 3 &m...
+
+- **Fresh score:** 0.515 (silence=0.91 × importance=0.56, no age weighting)
+
+- **Age in queue:** 3.1 days (source date: 2026-08-05, first seen: 2026-08-03)
+
+- **Coverage:** 66 news, 10 social — pattern: _24h+ silence then rising_
+
+- **Dimensions at risk:** ethnic, political
 
 
 ---
@@ -202,7 +202,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.410 (silence=0.99 × importance=0.71 × age_factor)
 
-- **Age in queue:** 81.6 days (source date: 2026-05-15, first seen: 2026-05-15)
+- **Age in queue:** 83.3 days (source date: 2026-05-15, first seen: 2026-05-15)
 
 - **Coverage:** 32 news, 14 social — pattern: _below-expected coverage_
 
@@ -213,7 +213,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.390 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 45.6 days (source date: 2026-06-21, first seen: 2026-06-20)
+- **Age in queue:** 47.3 days (source date: 2026-06-21, first seen: 2026-06-20)
 
 - **Coverage:** 57 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -224,7 +224,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.304 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 90.4 days (source date: 2026-05-06, first seen: 2026-05-06)
+- **Age in queue:** 92.2 days (source date: 2026-05-06, first seen: 2026-05-06)
 
 - **Coverage:** 21 news, 24 social — pattern: _below-expected coverage_
 
@@ -235,7 +235,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 102.5 days (source date: 2026-04-24, first seen: 2026-04-24)
+- **Age in queue:** 104.2 days (source date: 2026-04-24, first seen: 2026-04-24)
 
 - **Coverage:** 55 news, 20 social — pattern: _below-expected coverage_
 
@@ -246,84 +246,84 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.232 (silence=0.96 × importance=0.64 × age_factor)
 
-- **Age in queue:** 34.5 days (source date: 2026-07-02, first seen: 2026-07-01)
+- **Age in queue:** 36.2 days (source date: 2026-07-02, first seen: 2026-07-01)
 
 - **Coverage:** 52 news, 15 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, ethnic, institutional, legal, political
 
 
-### S6. hajiji welcomes rm1.5b interim special grant for sabah, wants swift disbursement. kota kinabalu, may 31 &md...
+### S6. melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no ‘back door’ to p...
 
-- **Rank score:** 1.189 (silence=0.97 × importance=0.61 × age_factor)
+- **Rank score:** 1.215 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 65.6 days (source date: 2026-06-01, first seen: 2026-05-31)
-
-- **Coverage:** 37 news, 6 social — pattern: _24h+ silence then rising_
-
-- **Dimensions at risk:** political
-
-
-### S7. federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengganu temple. putraj...
-
-- **Rank score:** 1.186 (silence=0.96 × importance=0.61 × age_factor)
-
-- **Age in queue:** 76.2 days (source date: 2026-05-21, first seen: 2026-05-20)
-
-- **Coverage:** 35 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, religious
-
-
-### S8. sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sarawak is projecti...
-
-- **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
-
-- **Age in queue:** 76.3 days (source date: 2026-05-21, first seen: 2026-05-20)
-
-- **Coverage:** 41 news, 8 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S9. guan eng: bank profits surged rm6.5b, time to help struggling msmes with relief package. kuala lumpur, may ...
-
-- **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
-
-- **Age in queue:** 87.8 days (source date: 2026-05-08, first seen: 2026-05-08)
-
-- **Coverage:** 34 news, 15 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S10. um staff fail in final bid to challenge compulsory covid-19 vaccination circular. putrajaya, june 30 &mdash...
-
-- **Rank score:** 1.183 (silence=0.96 × importance=0.61 × age_factor)
-
-- **Age in queue:** 35.3 days (source date: 2026-07-01, first seen: 2026-06-30)
-
-- **Coverage:** 42 news, 8 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, legal
-
-
-### S11. melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no ‘back door’ to p...
-
-- **Rank score:** 1.174 (silence=0.97 × importance=0.71 × age_factor)
-
-- **Age in queue:** 21.2 days (source date: 2026-07-15, first seen: 2026-07-14)
+- **Age in queue:** 23.0 days (source date: 2026-07-15, first seen: 2026-07-14)
 
 - **Coverage:** 74 news, 25 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
+### S7. hajiji welcomes rm1.5b interim special grant for sabah, wants swift disbursement. kota kinabalu, may 31 &md...
+
+- **Rank score:** 1.189 (silence=0.97 × importance=0.61 × age_factor)
+
+- **Age in queue:** 67.3 days (source date: 2026-06-01, first seen: 2026-05-31)
+
+- **Coverage:** 37 news, 6 social — pattern: _24h+ silence then rising_
+
+- **Dimensions at risk:** political
+
+
+### S8. federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengganu temple. putraj...
+
+- **Rank score:** 1.186 (silence=0.96 × importance=0.61 × age_factor)
+
+- **Age in queue:** 77.9 days (source date: 2026-05-21, first seen: 2026-05-20)
+
+- **Coverage:** 35 news, 11 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, religious
+
+
+### S9. sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sarawak is projecti...
+
+- **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
+
+- **Age in queue:** 78.1 days (source date: 2026-05-21, first seen: 2026-05-20)
+
+- **Coverage:** 41 news, 8 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S10. guan eng: bank profits surged rm6.5b, time to help struggling msmes with relief package. kuala lumpur, may ...
+
+- **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
+
+- **Age in queue:** 89.5 days (source date: 2026-05-08, first seen: 2026-05-08)
+
+- **Coverage:** 34 news, 15 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S11. um staff fail in final bid to challenge compulsory covid-19 vaccination circular. putrajaya, june 30 &mdash...
+
+- **Rank score:** 1.183 (silence=0.96 × importance=0.61 × age_factor)
+
+- **Age in queue:** 37.1 days (source date: 2026-07-01, first seen: 2026-06-30)
+
+- **Coverage:** 42 news, 8 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, legal
+
+
 ### S12. minister says rm1.5b sabah interim grant shows federal government is listening. kota kinabalu, may 30 &mdas...
 
 - **Rank score:** 1.170 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 66.3 days (source date: 2026-05-31, first seen: 2026-05-30)
+- **Age in queue:** 68.1 days (source date: 2026-05-31, first seen: 2026-05-30)
 
 - **Coverage:** 50 news, 13 social — pattern: _24h+ silence then rising_
 
@@ -334,7 +334,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.169 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 106.8 days (source date: 2026-04-19, first seen: 2026-04-19)
+- **Age in queue:** 108.6 days (source date: 2026-04-19, first seen: 2026-04-19)
 
 - **Coverage:** 53 news, 11 social — pattern: _below-expected coverage_
 
@@ -345,7 +345,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.166 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 130.5 days (source date: 2026-03-27, first seen: 2026-03-27)
+- **Age in queue:** 132.3 days (source date: 2026-03-27, first seen: 2026-03-27)
 
 - **Coverage:** 52 news, 16 social — pattern: _below-expected coverage_
 
@@ -356,7 +356,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.161 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 112.3 days (source date: 2026-04-14, first seen: 2026-04-14)
+- **Age in queue:** 114.0 days (source date: 2026-04-14, first seen: 2026-04-14)
 
 - **Coverage:** 51 news, 22 social — pattern: _24h+ silence then rising_
 
@@ -367,7 +367,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.160 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 51.3 days (source date: 2026-06-15, first seen: 2026-06-14)
+- **Age in queue:** 53.1 days (source date: 2026-06-15, first seen: 2026-06-14)
 
 - **Coverage:** 65 news, 9 social — pattern: _below-expected coverage_
 
@@ -378,95 +378,95 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.154 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 103.6 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 105.4 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 51 news, 29 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S18. former federal court judge nallini says judicial experience will help safeguard media council’s independenc...
+### S18. anwar: govt approved rm6b in loans, guarantees to help smes cope with war fallout. kuala lumpur, july 7 &md...
 
-- **Rank score:** 1.152 (silence=0.94 × importance=0.61 × age_factor)
+- **Rank score:** 1.153 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 45.2 days (source date: 2026-06-22, first seen: 2026-06-20)
-
-- **Coverage:** 70 news, 13 social — pattern: _24h+ silence then rising_
-
-- **Dimensions at risk:** ethnic, legal
-
-
-### S19. deputy communications minister backs former federal court judge nallini for malaysia media council chair, c...
-
-- **Rank score:** 1.150 (silence=0.93 × importance=0.61 × age_factor)
-
-- **Age in queue:** 47.6 days (source date: 2026-06-19, first seen: 2026-06-18)
-
-- **Coverage:** 62 news, 23 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, legal, political
-
-
-### S20. syed saddiq to skip johor election campaign after federal court ruling postponed. kuala lumpur, june 30 &md...
-
-- **Rank score:** 1.141 (silence=0.93 × importance=0.61 × age_factor)
-
-- **Age in queue:** 35.5 days (source date: 2026-07-01, first seen: 2026-06-30)
-
-- **Coverage:** 79 news, 15 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S21. will like choke brickfields? residents, religious leaders seek answers on rm2.3b proposed highway. kuala lu...
-
-- **Rank score:** 1.136 (silence=0.92 × importance=0.61 × age_factor)
-
-- **Age in queue:** 53.6 days (source date: 2026-06-13, first seen: 2026-06-12)
-
-- **Coverage:** 80 news, 19 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S22. anwar says federal govt saddled with felda’s nearly rm1b annual debt. johor bahru, july 5 &mdash; the feder...
-
-- **Rank score:** 1.130 (silence=0.92 × importance=0.61 × age_factor)
-
-- **Age in queue:** 30.6 days (source date: 2026-07-05, first seen: 2026-07-05)
-
-- **Coverage:** 87 news, 19 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S23. federal court term begins 2026-05-04
-
-- **Rank score:** 1.129 (silence=1.00 × importance=0.56 × age_factor)
-
-- **Age in queue:** 85.8 days (source date: 2026-05-10, first seen: 2026-05-10)
-
-- **Coverage:** 0 news, 1 social — pattern: _social only — no news_
-
-- **Dimensions at risk:** legal
-
-
-### S24. anwar: govt approved rm6b in loans, guarantees to help smes cope with war fallout. kuala lumpur, july 7 &md...
-
-- **Rank score:** 1.124 (silence=0.94 × importance=0.61 × age_factor)
-
-- **Age in queue:** 28.5 days (source date: 2026-07-07, first seen: 2026-07-07)
+- **Age in queue:** 30.3 days (source date: 2026-07-07, first seen: 2026-07-07)
 
 - **Coverage:** 63 news, 18 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
+### S19. former federal court judge nallini says judicial experience will help safeguard media council’s independenc...
+
+- **Rank score:** 1.152 (silence=0.94 × importance=0.61 × age_factor)
+
+- **Age in queue:** 47.0 days (source date: 2026-06-22, first seen: 2026-06-20)
+
+- **Coverage:** 70 news, 13 social — pattern: _24h+ silence then rising_
+
+- **Dimensions at risk:** ethnic, legal
+
+
+### S20. deputy communications minister backs former federal court judge nallini for malaysia media council chair, c...
+
+- **Rank score:** 1.150 (silence=0.93 × importance=0.61 × age_factor)
+
+- **Age in queue:** 49.3 days (source date: 2026-06-19, first seen: 2026-06-18)
+
+- **Coverage:** 62 news, 23 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, legal, political
+
+
+### S21. syed saddiq to skip johor election campaign after federal court ruling postponed. kuala lumpur, june 30 &md...
+
+- **Rank score:** 1.141 (silence=0.93 × importance=0.61 × age_factor)
+
+- **Age in queue:** 37.3 days (source date: 2026-07-01, first seen: 2026-06-30)
+
+- **Coverage:** 79 news, 15 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, political
+
+
+### S22. will like choke brickfields? residents, religious leaders seek answers on rm2.3b proposed highway. kuala lu...
+
+- **Rank score:** 1.136 (silence=0.92 × importance=0.61 × age_factor)
+
+- **Age in queue:** 55.3 days (source date: 2026-06-13, first seen: 2026-06-12)
+
+- **Coverage:** 80 news, 19 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S23. anwar says federal govt saddled with felda’s nearly rm1b annual debt. johor bahru, july 5 &mdash; the feder...
+
+- **Rank score:** 1.130 (silence=0.92 × importance=0.61 × age_factor)
+
+- **Age in queue:** 32.3 days (source date: 2026-07-05, first seen: 2026-07-05)
+
+- **Coverage:** 87 news, 19 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S24. federal court term begins 2026-05-04
+
+- **Rank score:** 1.129 (silence=1.00 × importance=0.56 × age_factor)
+
+- **Age in queue:** 87.6 days (source date: 2026-05-10, first seen: 2026-05-10)
+
+- **Coverage:** 0 news, 1 social — pattern: _social only — no news_
+
+- **Dimensions at risk:** legal
+
+
 ### S25. sabah chief minister says rural water projects to benefit from rm4b federal allocation. tongod, may 20 &mda...
 
 - **Rank score:** 1.116 (silence=0.91 × importance=0.61 × age_factor)
 
-- **Age in queue:** 76.3 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 78.0 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 95 news, 25 social — pattern: _below-expected coverage_
 
