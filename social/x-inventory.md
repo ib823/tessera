@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-07T04:43:46.001Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-07T06:30:58.386Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -308,7 +308,7 @@ https://thefourthangle.pages.dev/issue/1998
 
 ### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
 
-> ⚡ **Reactive: topic is live in the radar** (pac urges stricter procurement safeguards at mahb in early review of privatisation. &nbsp;). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1997-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1997`
@@ -1676,7 +1676,7 @@ https://thefourthangle.pages.dev/issue/1325
 
 ### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
 
-> ⚡ **Reactive: topic is live in the radar** (pac urges stricter procurement safeguards at mahb in early review of privatisation. &nbsp;). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1298-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1298`
