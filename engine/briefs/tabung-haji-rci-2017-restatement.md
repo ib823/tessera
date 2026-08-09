@@ -187,7 +187,8 @@ called **Dana Haji**, kept inside LTH but regulated by the **Securities Commissi
 with the board having **no power to direct its investments** (4.4.23, p. 198; 3.18.3–3.18.8,
 pp. 184–185); keep LTH out of high-risk and "strategic" investments (4.4.24, p. 198); limit
 large withdrawals with one month's notice and restrict haj subsidy to those who need it
-(4.4.20, p. 198); raise the Muassasah registration minimum from **RM1,300** to the current
+(p. 198; the recommendation's number runs back to the previous page and was not read — cite
+the page, not the paragraph number, until confirmed); raise the Muassasah registration minimum from **RM1,300** to the current
 **RM12,980**, which the commission says would cut the haj waiting time from **130 years to 33
 years** (4.4.22, p. 198); and strengthen governance "**tanpa campur tangan politik**" (4.4.25,
 p. 199).
@@ -335,7 +336,7 @@ reason for withholding it from them.
 - **RM3.4 billion** — profit reported by TH for FY2017. [S1, S2, S3]
 - **RM1.4 billion** — net loss the RCI says FY2017 should have shown under full MFRS. [S1, S3, P6]
 - **RM3.324 billion** — cost of the FY2017 distribution, from the commission's own reproduction
-  of the PwC table at paras 3.9.2 (p. 74) and 3.13.7 (p. 109). ✅ **CORRECTION:** the earlier
+  of the PwC table at para 3.13.7 (p. 109). ✅ **CORRECTION:** the earlier
   draft of this brief carried **RM2.75 billion** for the FY2017 distribution, sourced to press
   reporting [S5, S9]. The report does not support it. **Do not publish RM2.75 billion.** The
   distribution series in the report reads (RM'million): 2013 **2,632**, 2014 **3,237**, 2015
