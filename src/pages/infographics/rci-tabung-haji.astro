@@ -1,0 +1,686 @@
+---
+import Base from '../../layouts/Base.astro';
+import UtilityHeader from '../../components/UtilityHeader.astro';
+
+/*
+  RCI Tabung Haji — data graphic.
+
+  Design record: docs/research/rci-tabung-haji-infographic-design.md
+  Source of record: engine/briefs/tabung-haji-rci-2017-restatement.md
+
+  Every figure below carries a paragraph and page reference to the published
+  report, or says explicitly that it reached us through reporting on the report.
+  The MFRS restatement is a counterfactual and is hatched everywhere it appears
+  so it is never read as an observed outcome. No chart truncates an axis, no
+  chart carries a second y-scale, no figure is divided by the number of
+  depositors, and the five loss measures are never summed.
+*/
+
+// ---- Figure 1: the PwC reconciliation (RM million) -------------------------
+const bridge = [
+  { label: 'Reported profit', value: 3412, kind: 'observed',
+    note: 'The figure depositors were told, and the figure the 2017 distribution was declared on.' },
+  { label: 'Equity write-downs', value: -4258, kind: 'counterfactual',
+    note: 'Available-for-sale shareholdings carried above what they were worth. Larger than the reported profit on its own.' },
+  { label: 'Debt instruments', value: -7, kind: 'counterfactual',
+    note: 'Fixed-income holdings. Shown at a minimum visible height so it does not disappear.' },
+  { label: 'Other adjustments', value: -580, kind: 'counterfactual',
+    note: 'Property fair-value losses and income recognised but not received.' },
+  { label: 'Restated loss', value: -1433, kind: 'counterfactual',
+    note: 'A swing of RM4.8 billion inside one financial year, produced entirely by accounting choices.' },
+];
+
+// ---- Figure 3: PwC asset/liability position, 2013–2017 (RM million) --------
+const position = [
+  { year: 2013, assets: 48778, liabilities: 43696, pre: 5082, dist: -2632, post: 2450 },
+  { year: 2014, assets: 54751, liabilities: 51866, pre: 2885, dist: -3237, post: -352 },
+  { year: 2015, assets: 60196, liabilities: 60062, pre: 134, dist: -3220, post: -3086 },
+  { year: 2016, assets: 64321, liabilities: 65581, pre: -1260, dist: -2871, post: -4131 },
+  { year: 2017, assets: 70317, liabilities: 71086, pre: -769, dist: -3324, post: -4093 },
+];
+
+// ---- Figure 4: distribution declared, 2014–2020 ----------------------------
+// Runs to 2020 because the commission's table does. Stopping at the 2018 trough
+// would be a time-range truncation of the same class as a truncated axis.
+const hibah = [
+  { year: 2014, rate: '6.25 + 2.00', pct: 8.25, amount: 3237196 },
+  { year: 2015, rate: '5.00 + 3.00', pct: 8.0, amount: 3220374 },
+  { year: 2016, rate: '4.25 + 1.50', pct: 5.75, amount: 2870822 },
+  { year: 2017, rate: '4.50 + 1.75', pct: 6.25, amount: 3323741 },
+  { year: 2018, rate: '1.25', pct: 1.25, amount: 922959 },
+  { year: 2019, rate: '3.05', pct: 3.05, amount: 2140538 },
+  { year: 2020, rate: '3.10', pct: 3.1, amount: 2242141 },
+];
+
+// ---- Figure 5: projected cost of haj per pilgrim (RM) ----------------------
+const hajCost = [
+  { year: 2022, cost: 25540 }, { year: 2023, cost: 26280 }, { year: 2024, cost: 28160 },
+  { year: 2025, cost: 29570 }, { year: 2026, cost: 31040 }, { year: 2027, cost: 32592 },
+  { year: 2028, cost: 34221 }, { year: 2029, cost: 35932 }, { year: 2030, cost: 37729 },
+];
+
+const measures = [
+  { label: 'Restated FY2017 net loss', by: 'PwC · counterfactual', v: 1.4, hatched: true },
+  { label: '2017 shortfall after distribution', by: 'PwC · balance-sheet position', v: 4.1, hatched: false },
+  { label: 'Accumulated losses at 31 Dec 2017', by: 'PwC · cumulative', v: 4.7, hatched: false },
+  { label: 'Losses at the point of rescue, 2018', by: 'PwC, via the commission', v: 10, hatched: false },
+  { label: 'Investment losses TH says it has addressed', by: 'Tabung Haji · to end-2025', v: 12.6, hatched: false },
+];
+
+const conditions = [
+  {
+    n: 1, head: 'The board had no competence requirement',
+    body: 'Act 535 required a board member to be a Muslim Malaysian citizen and set no financial or investment expertise criterion. The minister could revoke an appointment at any time without stating a reason. A chairman and several board members appointed between 2014 and 2018 were active politicians.',
+    cite: 'Act 535 s.6(2) · executive summary ¶11–¶15, pp.xiv–xv',
+  },
+  {
+    n: 2, head: 'The distribution test ran on a value management chose',
+    body: 'Section 22 permits a distribution only where assets are not less than liabilities. Management applied that test using realisable asset value rather than the audited accounts. The commission held that hibah paid on that basis between 2014 and 2017 was not in line with section 22, because realisable asset value is not a computation compliant with recognised accounting standards.',
+    cite: 'Act 535 s.22 · ¶3.11.9, p.93',
+  },
+  {
+    n: 3, head: 'Depositors’ funds sat on the wrong side of the balance sheet',
+    body: 'Depositors’ savings had been classified as equity rather than as a liability since 2010 — a misrepresentation, in the commission’s words. Combined with impairment that was not recognised, this made assets appear to exceed liabilities, which is what allowed the distribution to be declared under section 22(3)(a).',
+    cite: '¶3.11.12–¶3.11.13, p.94',
+  },
+  {
+    n: 4, head: 'The audit gate cleared',
+    body: 'The National Audit Department certified the accounts. The commission concluded the 2017 statements should not have been given a clean audit certificate, and that the matters recorded as an Emphasis of Matter should have been stated as serious non-compliance.',
+    cite: '¶3.11.14, p.94',
+  },
+];
+
+const recommendations = [
+  { maps: 'Condition 1', text: 'Amend Act 535 to set competence criteria for board members, bar active politicians from serving as chairman or member of the board and of subsidiaries, and require a stated reason before any appointment is revoked.', cite: '¶4.4.1, p.192' },
+  { maps: 'Condition 2', text: 'Calculate distributions from audited annual accounts rather than proforma figures, and amend section 22 so the basis of computation is explicit.', cite: '¶3.11.18, p.97' },
+  { maps: 'Condition 3', text: 'Carve the investment function out as a department — Dana Haji — kept inside Tabung Haji but regulated by the Securities Commission, with the board holding no power to direct its investments.', cite: '¶4.4.23, p.198 · ¶3.18.3–¶3.18.8, pp.184–185' },
+  { maps: 'Condition 4', text: 'Amend section 26 to exempt Tabung Haji from Act 240 so a private accounting firm can audit its statements, and run a forensic review of past investment decisions.', cite: '¶3.11.17, p.97 · ¶3.14.6, p.139' },
+];
+
+const timeline = [
+  { when: '20 Jan 2022', what: 'Commission appointed by the Yang di-Pertuan Agong, chaired by former Chief Justice Tun Md Raus Sharif, with five other commissioners.', cite: 'Title page' },
+  { when: '30 Aug 2022', what: 'Report presented to the Yang di-Pertuan Agong. Classified on submission. At ¶4.6 the commission asks the Government to consider publishing it.', cite: 'Title page · ¶4.6, p.199' },
+  { when: '3 yr 11 mo', what: 'The report is not published. The reason given later by the Prime Minister is that release while the fund was still fragile risked undermining depositor confidence and triggering withdrawals — the same risk the commission had set out to justify the 2018 rescue.', cite: 'Reported, 24 July 2026', gap: true },
+  { when: '29 Jul 2026', what: 'Cabinet reclassifies the report as OPEN under section 2C of the Official Secrets Act 1972 and directs JAKIM to publish it.', cite: 'JAKIM announcement' },
+  { when: '30 Jul 2026', what: 'The Attorney General’s Chambers begins reviewing the findings; MACC forms a task force.', cite: 'Reported' },
+];
+
+// Dataset table. `src` is the report reference, or an explicit note that the
+// figure reached us through reporting rather than through the report itself.
+const dataset = [
+  ['Reported net profit, FY2017', '3,412', 'TH financial statements', '¶3.13.11, p.111'],
+  ['Adjustment — AFS equity impairment', '(4,258)', 'PwC', '¶3.13.11, p.111'],
+  ['Adjustment — AFS debt instruments', '(7)', 'PwC', '¶3.13.11, p.111'],
+  ['Adjustment — other', '(580)', 'PwC', '¶3.13.11, p.111'],
+  ['Restated net loss, FY2017 · counterfactual', '(1,433)', 'PwC, via the commission', '¶3.13.11, p.111'],
+  ['Accumulated loss at 31 Dec 2017, adjusted', '(4,683)', 'PwC, via the commission', '¶3.13.11, p.111'],
+  ['Total assets, 2013 → 2017', '48,778 → 70,317', 'PwC', '¶3.13.7, p.109'],
+  ['Total liabilities incl. depositors’ fund, 2013 → 2017', '(43,696) → (71,086)', 'PwC', '¶3.13.7, p.109'],
+  ['Shortfall after distribution, 2017', '(4,093)', 'PwC', '¶3.13.7, p.109'],
+  ['Total liabilities at 31 Dec 2017, audit basis', '(74,409)', 'National Audit Department', '¶3.11.11, pp.93–94'],
+  ['Distribution declared, 2017', '(3,324)', 'PwC', '¶3.13.7, p.109'],
+  ['Hibah paid, 2017 (annual 3,042,184k + haj 281,557k)', '3,323,741 (RM’000)', 'The commission', '¶3.11.7, p.92'],
+  ['Hibah paid, 2018', '922,959 (RM’000)', 'The commission', '¶3.11.7, p.92'],
+  ['Impairment charge if trigger at −70%', '1,313', 'PwC sensitivity', '¶3.13.8–¶3.13.9, p.110'],
+  ['Impairment charge if trigger at −85%', '171', 'PwC sensitivity', '¶3.13.8–¶3.13.9, p.110'],
+  ['Impairment charge if trigger at −90%', '1', 'PwC sensitivity', '¶3.13.8–¶3.13.9, p.110'],
+  ['Impairment TH actually recorded, FY2017', '1.0', 'TH, via the commission', '¶3.13.8–¶3.13.9, p.110'],
+  ['Unrecognised impairment, 3 subsidiaries + 3 associates', '227.81', 'National Audit Department', '¶3.13.5, p.108'],
+  ['— of which TH Heavy Engineering Berhad', '164.58', 'National Audit Department', '¶3.13.5, p.108'],
+  ['2014 staff bonus allocation (up to 13 months’ salary)', '74', 'The commission', '¶3.12.9, p.100'],
+  ['Special bonuses, TH Properties — 2017', '1.1484', 'The commission', '¶3.12.19, p.103'],
+  ['Special bonuses, TH Properties — 2018', '1.045', 'The commission', '¶3.12.19, p.103'],
+  ['Unrealised loss on FGV holding', '1,058.94', 'The commission', '¶3.14.6 series, p.155'],
+  ['Police reports made by TH management', '4', 'The commission', '¶3.15.1, p.155'],
+  ['Matters reported to MACC', '6', 'The commission', '¶3.15.21, pp.163–164'],
+  ['Cost of haj per pilgrim, 2003', '15,555 (RM)', 'The commission', '¶3.16.1, p.165'],
+  ['Cost of haj per pilgrim, 2022 → 2030 (projected)', '25,540 → 37,729 (RM)', 'TH, via the commission', '¶3.16.2, p.165'],
+  ['Hibah distributed since 1966', '37,520', 'The commission', '¶4.2, p.191'],
+  ['HAFIS subsidy provided since 2001', '2,020', 'The commission', '¶4.2, p.191'],
+  ['Pilgrims taken on haj, 1963–2021', '1.46m', 'The commission', '¶4.2, p.191'],
+  ['Depositors at 22 July 2022', '8.6m', 'The commission', '¶4.2, p.191'],
+  ['Deposits at the time of the report', '88,000', 'The commission', '¶3.18.7, p.185'],
+];
+
+// ---- geometry helpers ------------------------------------------------------
+const fmt = (n: number) => n.toLocaleString('en-US');
+
+// Bridge: cumulative running total, drawn against a visible zero baseline.
+const bMax = 3600, bMin = -1600;
+const bH = 260, bW = 700, bPad = 28;
+const bScale = (v: number) => bPad + ((bMax - v) / (bMax - bMin)) * (bH - bPad * 2);
+const bZero = bScale(0);
+let running = 0;
+const bridgeBars = bridge.map((d, i) => {
+  const isTotal = i === 0 || i === bridge.length - 1;
+  const from = isTotal ? 0 : running;
+  const to = isTotal ? d.value : running + d.value;
+  if (!isTotal) running = to;
+  else running = d.value;
+  const yA = bScale(Math.max(from, to));
+  const yB = bScale(Math.min(from, to));
+  return { ...d, x: bPad + i * ((bW - bPad * 2) / bridge.length) + 8, y: yA,
+    h: Math.max(Math.abs(yB - yA), 3), w: (bW - bPad * 2) / bridge.length - 22 };
+});
+
+// Position: post-distribution line against zero.
+const pMax = 6000, pMin = -5000;
+const pH = 230, pW = 700, pPad = 30;
+const pX = (i: number) => pPad + 46 + i * ((pW - pPad * 2 - 46) / (position.length - 1));
+const pY = (v: number) => pPad + ((pMax - v) / (pMax - pMin)) * (pH - pPad * 2);
+const prePath = position.map((d, i) => `${i ? 'L' : 'M'}${pX(i).toFixed(1)},${pY(d.pre).toFixed(1)}`).join('');
+const postPath = position.map((d, i) => `${i ? 'L' : 'M'}${pX(i).toFixed(1)},${pY(d.post).toFixed(1)}`).join('');
+
+// Hibah: column heights.
+const hMax = 3400;
+const hH = 190, hW = 700, hPad = 24;
+const hBarW = (hW - hPad * 2) / hibah.length - 16;
+const hY = (v: number) => hPad + ((hMax - v / 1000) / hMax) * (hH - hPad * 2);
+
+// Haj cost: line.
+const cMax = 40000, cMin = 24000;
+const cH = 170, cW = 700, cPad = 24;
+const cX = (i: number) => cPad + 40 + i * ((cW - cPad * 2 - 40) / (hajCost.length - 1));
+const cY = (v: number) => cPad + ((cMax - v) / (cMax - cMin)) * (cH - cPad * 2);
+const costPath = hajCost.map((d, i) => `${i ? 'L' : 'M'}${cX(i).toFixed(1)},${cY(d.cost).toFixed(1)}`).join('');
+
+const measureMax = 13;
+---
+<Base
+  title="What the commission found in Tabung Haji's 2017 accounts — The Fourth Angle"
+  description="A reading of the Royal Commission of Inquiry into Lembaga Tabung Haji, 2014–2020. Every figure attributed to whoever computed it, with paragraph and page references to the published report."
+  image="/infographics/rci-tabung-haji-og.png"
+>
+  <UtilityHeader />
+  <main class="rci">
+    <p class="kicker">Data graphic · not an editorial issue</p>
+    <h1>What the commission found in Tabung Haji's 2017 accounts</h1>
+    <p class="standfirst">
+      Its central finding is not that money went missing. It is that a holding bought for
+      RM1,000 stayed in the accounts at RM1,000 until it was worth RM100 — and that four
+      separate gates, any one of which could have stopped it, did not.
+    </p>
+    <p class="dek">
+      A reading of the Royal Commission of Inquiry into the management and operations of
+      Lembaga Tabung Haji, 2014–2020: a report presented to the Yang di-Pertuan Agong on
+      30 August 2022 and published by JAKIM on 29 July 2026. Every figure below carries the
+      name of whoever computed it — the National Audit Department, PwC, Tabung Haji, or the
+      commission itself.
+    </p>
+
+    <div class="tiles">
+      <div class="tile">
+        <span class="tile-k">Reported · FY2017</span>
+        <span class="tile-v">RM3.41b</span>
+        <p class="tile-b">Net profit shown in the audited 2017 financial statements. The National Audit Department certified them without qualification.</p>
+        <p class="cite">TH financial statements, via the commission · ¶3.13.11, p.111</p>
+      </div>
+      <div class="tile hatched">
+        <span class="tile-k">Restated · counterfactual</span>
+        <span class="tile-v">−RM1.43b</span>
+        <p class="tile-b">What the accounts would have shown under full application of the Malaysian Financial Reporting Standards. A reconstruction, not an observed outcome — hence the hatch, used for every counterfactual figure here.</p>
+        <p class="cite">PwC reconciliation, via the commission · ¶3.13.11, p.111</p>
+      </div>
+    </div>
+
+    <section class="card">
+      <h2>The one-line version</h2>
+      <p>A savings fund holding the money of more than nine million Malaysians paid out on a
+      profit that a subsequent review says was not there. The accounting choices that produced
+      it were disclosed, certified, and to date nobody has been charged.</p>
+    </section>
+
+    <section class="card">
+      <h2>What this is, and what it is not</h2>
+      <p class="muted">On this topic the caveats are load-bearing, so they come before the charts rather than after them.</p>
+      <div class="quad">
+        <div><h3>It is</h3><p>An accounting-standards finding. The published 2017 accounts did not show the fund's real position, and distributions between 2014 and 2017 exceeded what it could afford.</p></div>
+        <div><h3>It is not</h3><p>A finding of theft. The gap was produced by valuation choices, an impairment policy and income recognition — each one signed off.</p></div>
+        <div><h3>Nobody has been charged</h3><p>Management made four police reports and six referrals to MACC over the period (¶3.15.1, p.155; ¶3.15.21, pp.163–164). None has produced a charge. No individual is named as a wrongdoer here.</p></div>
+        <div><h3>Depositors were paid</h3><p>No depositor lost their savings. The hibah was paid and the 2018 restructuring closed the gap. Dividing any loss figure by the number of depositors would describe a loss that did not happen.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Where the fund is now</h2>
+      <p class="muted">Tabung Haji's own position, stated on and after 29 July 2026. We have not independently verified these figures.</p>
+      <div class="kpis">
+        <div><b>3.50%</b><span>distribution declared for 2025, against the record low of 1.25% for 2018</span></div>
+        <div><b>~75%</b><span>of the 25 recommendations implemented, according to TH</span></div>
+        <div><b>2022</b><span>the year from which TH says distributions have run on audited results</span></div>
+        <div><b>0</b><span>charges brought at the date of publication. Investigations are open.</span></div>
+      </div>
+    </section>
+
+    <!-- Figure 1 -->
+    <figure class="fig">
+      <figcaption class="fig-head">
+        <span class="fig-n">Figure 1</span>
+        <h2>How a reported profit becomes a restated loss</h2>
+        <p>PwC's reconciliation. The first bar is the reported figure; the three middle bars are
+        adjustments full MFRS would have required; the last is where that leaves the year. The
+        adjustments and the closing bar are hatched because they are a restatement.</p>
+      </figcaption>
+      <div class="scroller">
+        <svg viewBox={`0 0 ${bW} ${bH}`} class="chart" role="img"
+          aria-label="Waterfall chart. Reported 2017 profit of RM3,412 million, less equity write-downs of RM4,258 million, debt instruments of RM7 million and other adjustments of RM580 million, giving a restated loss of RM1,433 million.">
+          <defs>
+            <pattern id="hatchA" width="6" height="6" patternTransform="rotate(135)" patternUnits="userSpaceOnUse">
+              <rect width="6" height="6" fill="var(--rci-mark-bg)"></rect>
+              <line x1="0" y1="0" x2="0" y2="6" stroke="var(--rci-mark)" stroke-width="2.4"></line>
+            </pattern>
+          </defs>
+          <line x1={bPad} y1={bZero} x2={bW - bPad} y2={bZero} class="axis" />
+          <text x={bPad} y={bZero - 6} class="axis-t">RM0</text>
+          {bridgeBars.map((b) => (
+            <g>
+              <rect x={b.x} y={b.y} width={b.w} height={b.h} rx="3"
+                fill={b.kind === 'observed' ? 'var(--rci-mark)' : 'url(#hatchA)'}
+                stroke={b.kind === 'observed' ? 'none' : 'var(--rci-mark)'} stroke-width="1" />
+              <text x={b.x + b.w / 2} y={b.value > 0 ? b.y - 7 : b.y + b.h + 15} class="val">
+                {b.value > 0 ? '+' : ''}{fmt(b.value)}
+              </text>
+            </g>
+          ))}
+        </svg>
+      </div>
+      <ol class="steps">
+        {bridge.map((d) => (<li><b>{d.label}</b> {d.note}</li>))}
+      </ol>
+      <p class="cite">RM million. Computed by PwC, reproduced by the commission · ¶3.13.11, p.111. Zero baseline shown. Hatched marks are counterfactual.</p>
+    </figure>
+
+    <!-- Figure 2 -->
+    <figure class="fig">
+      <figcaption class="fig-head">
+        <span class="fig-n">Figure 2</span>
+        <h2>The point at which a loss counted as a loss</h2>
+        <p>The commission's own illustration. Tabung Haji wrote a holding down only after it had
+        fallen 70% below cost. Inside the 2017 financial year that trigger moved twice — to 85%,
+        then to 90%.</p>
+      </figcaption>
+      <div class="dial">
+        {[
+          { v: 'RM1,000', k: 'what it cost', on: false },
+          { v: 'RM300', k: '−70% · the trigger entering 2017', on: true },
+          { v: 'RM150', k: '−85% · first revision', on: true },
+          { v: 'RM100', k: '−90% · the trigger by year-end', on: true },
+        ].map((s) => (
+          <div class={s.on ? 'dial-s on' : 'dial-s'}><b>{s.v}</b><span>{s.k}</span></div>
+        ))}
+      </div>
+      <p class="pull">In the commission's words: a holding bought for RM1,000 was written down only once it was worth RM100.</p>
+      <div class="kpis four">
+        <div><b>1,313</b><span>charge if the trigger had stayed at −70%</span></div>
+        <div><b>171</b><span>charge at −85%</span></div>
+        <div><b>1</b><span>charge at −90%</span></div>
+        <div><b>1.0</b><span>what TH recorded for FY2017</span></div>
+      </div>
+      <p class="muted small">These span three orders of magnitude, which is why they are set as text rather than bars: on a linear axis the third would be invisible, and on a log axis most readers would misjudge the ratio.</p>
+      <p class="cite">RM million. Sensitivity computed by PwC · ¶3.13.8–¶3.13.9, p.110. Trigger policy and the RM1,000 illustration recorded by the commission · ¶3.9.8, p.77.</p>
+    </figure>
+
+    <!-- Figure 3 -->
+    <figure class="fig">
+      <figcaption class="fig-head">
+        <span class="fig-n">Figure 3</span>
+        <h2>The gap, and what the distribution did to it</h2>
+        <p>PwC's five-year table. In 2013 the fund was in surplus. 2014 is the year the position
+        after distribution turns negative and does not come back. In every year from 2014 the
+        distribution is larger than the surplus available to pay it.</p>
+      </figcaption>
+      <div class="scroller">
+        <svg viewBox={`0 0 ${pW} ${pH}`} class="chart" role="img"
+          aria-label="Line chart, 2013 to 2017. Position before distribution falls from a surplus of RM5,082 million in 2013 to a shortfall of RM769 million in 2017. Position after distribution falls from a surplus of RM2,450 million in 2013 to a shortfall of RM4,093 million in 2017.">
+          <line x1={pPad + 30} y1={pY(0)} x2={pW - pPad} y2={pY(0)} class="axis" />
+          <text x={pPad} y={pY(0) + 4} class="axis-t">RM0</text>
+          <path d={prePath} class="line-ctx" />
+          <path d={postPath} class="line-key" />
+          {position.map((d, i) => (
+            <g>
+              <circle cx={pX(i)} cy={pY(d.pre)} r="3.5" class="dot-ctx" />
+              <circle cx={pX(i)} cy={pY(d.post)} r="4.5" class="dot-key" />
+              <text x={pX(i)} y={pH - 8} class="axis-t mid">{d.year}</text>
+            </g>
+          ))}
+          <text x={pX(0)} y={pY(position[0].post) - 12} class="val mid">{fmt(position[0].post)}</text>
+          <text x={pX(4)} y={pY(position[4].post) + 18} class="val mid">{fmt(position[4].post)}</text>
+        </svg>
+      </div>
+      <p class="legend">
+        <span class="sw key"></span> after the distribution is paid
+        <span class="sw ctx"></span> before the distribution
+      </p>
+      <div class="scroller">
+        <table class="mini">
+          <thead><tr><th>RM million</th>{position.map((d) => (<th class="num">{d.year}</th>))}</tr></thead>
+          <tbody>
+            <tr><td>Total assets</td>{position.map((d) => (<td class="num">{fmt(d.assets)}</td>))}</tr>
+            <tr><td>Total liabilities incl. depositors' fund</td>{position.map((d) => (<td class="num">({fmt(d.liabilities)})</td>))}</tr>
+            <tr><td>Position before distribution</td>{position.map((d) => (<td class="num">{d.pre < 0 ? `(${fmt(-d.pre)})` : fmt(d.pre)}</td>))}</tr>
+            <tr><td>Distribution declared</td>{position.map((d) => (<td class="num">({fmt(-d.dist)})</td>))}</tr>
+            <tr class="em"><td>Position after distribution</td>{position.map((d) => (<td class="num">{d.post < 0 ? `(${fmt(-d.post)})` : fmt(d.post)}</td>))}</tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small"><b>Two bases, same year.</b> The National Audit Department put 2017 liabilities at RM74,409 million against the same RM70,317 million of assets — a wider gap on a different basis (¶3.11.11, pp.93–94). Both belong here; neither is the "true" number.</p>
+      <p class="muted small"><b>A figure in circulation that the report contradicts.</b> Coverage put the 2017 hibah at RM2.75 billion. The commission's own table gives annual hibah of RM3,042,184k plus haj hibah of RM281,557k — RM3,323,741 thousand, matching PwC's RM3,324 million (¶3.11.7, p.92). RM2.75 billion does not appear in the report. We use the report's figure.</p>
+      <p class="cite">RM million, at 31 December. Computed by PwC, reproduced by the commission · ¶3.13.7, p.109. One linear scale, zero baseline shown.</p>
+    </figure>
+
+    <!-- Five measures -->
+    <section class="card">
+      <h2>Five different measures of the loss</h2>
+      <p class="muted">These circulate interchangeably. They measure different things over different periods, they overlap, and adding them produces a number that does not exist.</p>
+      {measures.map((m) => (
+        <div class="mrow">
+          <div class="mlab"><b>{m.label}</b><span>{m.by}</span></div>
+          <div class="mbar"><i class={m.hatched ? 'hatched' : ''} style={`width:${(m.v / measureMax) * 100}%`}></i></div>
+          <div class="mval">{m.v}b</div>
+        </div>
+      ))}
+      <p class="muted small">Two are annual, two are cumulative, one is a recovery-plan total. One shared scale, five separate rows, no total — that is the only honest way to put them side by side.</p>
+    </section>
+
+    <!-- Figure 4 -->
+    <figure class="fig">
+      <figcaption class="fig-head">
+        <span class="fig-n">Figure 4</span>
+        <h2>What depositors actually felt</h2>
+        <p>None of the accounting above was visible from a passbook. This was. The series runs to
+        2020 because the commission's table does — stopping at the 2018 trough would be a
+        truncation of the same kind as a cut axis.</p>
+      </figcaption>
+      <div class="scroller">
+        <svg viewBox={`0 0 ${hW} ${hH}`} class="chart" role="img"
+          aria-label="Column chart of distributions declared, 2014 to 2020, in RM million: 3,237 in 2014, 3,220 in 2015, 2,871 in 2016, 3,324 in 2017, 923 in 2018, 2,141 in 2019 and 2,242 in 2020.">
+          <line x1={hPad} y1={hY(0)} x2={hW - hPad} y2={hY(0)} class="axis" />
+          {hibah.map((d, i) => (
+            <g>
+              <rect x={hPad + i * ((hW - hPad * 2) / hibah.length) + 8} y={hY(d.amount)}
+                width={hBarW} height={hY(0) - hY(d.amount)} rx="3"
+                class={d.year === 2018 ? 'bar key' : 'bar'} />
+              <text x={hPad + i * ((hW - hPad * 2) / hibah.length) + 8 + hBarW / 2} y={hY(d.amount) - 6} class="val mid">{d.pct}%</text>
+              <text x={hPad + i * ((hW - hPad * 2) / hibah.length) + 8 + hBarW / 2} y={hH - 6} class="axis-t mid">{d.year}</text>
+            </g>
+          ))}
+        </svg>
+      </div>
+      <p class="pull">−72% — the fall in cash distributed between 2017 and 2018, from RM3,324m to RM923m. Not a market event: the 2017 figure was the one that should not have been declared.</p>
+      <p class="muted small">By 2019 and 2020 the rate had recovered to 3.05% and 3.10%. Tabung Haji declared 3.50% for 2025, its highest in eight years.</p>
+      <p class="cite">Rates and amounts from the commission's hibah table · ¶3.11.7, p.92. Percentages are the annual and haj rates combined. One linear scale from zero.</p>
+    </figure>
+
+    <!-- Conditions -->
+    <section class="card">
+      <h2>How it was possible</h2>
+      <p class="muted">Four conditions in sequence. None of them requires anyone to have broken a rule for the outcome to follow.</p>
+      {conditions.map((c) => (
+        <div class="cond">
+          <span class="cond-n">{c.n}</span>
+          <div><h3>{c.head}</h3><p>{c.body}</p><p class="cite">{c.cite}</p></div>
+        </div>
+      ))}
+    </section>
+
+    <!-- Counterweight -->
+    <section class="card">
+      <h2>What the commission also said</h2>
+      <p class="muted">A page carrying only the accounting failure would misrepresent the report. Two of its conclusions cut the other way.</p>
+      <div class="kpis">
+        <div><b>1.46m</b><span>Malaysians taken on haj by the institution, 1963–2021</span></div>
+        <div><b>RM37.52b</b><span>distributed as hibah to depositors since 1966</span></div>
+        <div><b>RM2.02b</b><span>subsidised through the HAFIS haj assistance scheme</span></div>
+      </div>
+      <p><b>It rejected breaking the fund up.</b> The commission recommended that Tabung Haji remain a single institution, holding that the weaknesses it found could be fixed through governance reform rather than structural change (¶4.3, pp.191–192).</p>
+      <p><b>And it took the rescue seriously.</b> Without a distribution the commission set out the risk of a loss of confidence across more than 9.2 million depositors, uncontrolled withdrawals, forced sales into falling markets, and activation of the government guarantee under section 24, with the sovereign exposure that implies (¶3.13.13–¶3.13.17, pp.112–114).</p>
+      <p class="cite">¶4.1–¶4.2, p.191</p>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="card">
+      <h2>Of the 25 recommendations, four carry the finding</h2>
+      <p class="muted">Each maps onto one of the four conditions above.</p>
+      {recommendations.map((r) => (
+        <div class="rec"><span class="maps">→ {r.maps}</span><p>{r.text}</p><p class="cite">{r.cite}</p></div>
+      ))}
+    </section>
+
+    <!-- Figure 5 -->
+    <figure class="fig">
+      <figcaption class="fig-head">
+        <span class="fig-n">Figure 5</span>
+        <h2>Why the governance question is not historical</h2>
+        <p>The commission's other finding is arithmetic that has not gone away: the cost of haj
+        per pilgrim. It rose from RM15,555 in 2003 to RM25,540 in 2022, and Tabung Haji's own
+        projection carries it to RM37,729 by 2030. Whatever the fund earns has to keep pace
+        with this line.</p>
+      </figcaption>
+      <div class="scroller">
+        <svg viewBox={`0 0 ${cW} ${cH}`} class="chart" role="img"
+          aria-label="Line chart of projected cost of haj per pilgrim, rising from RM25,540 in 2022 to RM37,729 in 2030.">
+          <path d={costPath} class="line-key" />
+          {hajCost.map((d, i) => (
+            <g>
+              <circle cx={cX(i)} cy={cY(d.cost)} r="3.5" class="dot-key" />
+              <text x={cX(i)} y={cH - 6} class="axis-t mid">{d.year}</text>
+            </g>
+          ))}
+          <text x={cX(0)} y={cY(hajCost[0].cost) + 18} class="val mid">{fmt(hajCost[0].cost)}</text>
+          <text x={cX(8)} y={cY(hajCost[8].cost) - 10} class="val mid">{fmt(hajCost[8].cost)}</text>
+        </svg>
+      </div>
+      <p class="muted small">The commission's prose puts the 2030 figure at "up to RM35,000" while the table it reproduces gives RM37,729. We use the table and note the difference. It also projects RM50,000 by 2050.</p>
+      <p class="muted small">This is the trade-off inside the recommendation to raise the minimum registration deposit from RM1,300 to RM12,980: the commission's own arithmetic cuts the notional waiting queue from about 130 years to 33, by admitting fewer people to it. A 130-year queue is a register on which most names never come up.</p>
+      <p class="cite">RM per pilgrim. TH projection recorded by the commission · ¶3.16.1–¶3.16.2, p.165. Scale starts at RM24,000 and is labelled; this figure shows a projection, not an outcome.</p>
+    </figure>
+
+    <!-- Timeline -->
+    <section class="card">
+      <h2>Three years, eleven months</h2>
+      <p class="muted">The period spans three administrations, so no step below is coloured by government. The commission itself asked that the report be published. These are the dates; the conclusion is the reader's.</p>
+      {timeline.map((t) => (
+        <div class={t.gap ? 'tl gap' : 'tl'}>
+          <span class="tl-w">{t.when}</span>
+          <div><p>{t.what}</p><p class="cite">{t.cite}</p></div>
+        </div>
+      ))}
+    </section>
+
+    <!-- Dataset -->
+    <h2 class="h2-loose">Every figure on this page</h2>
+    <p class="muted">The non-visual equivalent of the whole page. Where a paragraph and page reference exists, it is given.</p>
+    <div class="scroller">
+      <table class="data">
+        <thead><tr><th>Measure</th><th class="num">Value</th><th>Computed by</th><th>Reference</th></tr></thead>
+        <tbody>
+          {dataset.map((r) => (
+            <tr><td>{r[0]}</td><td class="num">{r[1]}</td><td>{r[2]}</td><td class="ref">{r[3]}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">RM million unless stated. Figures in brackets are negative. References are to the published report.</p>
+
+    <section class="card">
+      <h2>Method</h2>
+      <p>The primary source is the commission's published report. Every figure is attributed to
+      whoever computed it: the commission largely recorded and assessed work done by others —
+      the National Audit Department's audit findings, PwC's financial review, and reviews by
+      Ernst &amp; Young and Roland Berger. "The commission found RM70.3b in assets" would be
+      wrong; it recorded PwC's figure.</p>
+      <p>The restatement is a counterfactual — what the accounts would have shown under a
+      different standard — and is hatched throughout so it is never mistaken for an observed
+      result. The hatch is also the secondary encoding for colour-blind readers and for
+      printing in black and white.</p>
+      <p>No chart truncates an axis or carries a second y-scale. No figure is divided by the
+      number of depositors, and the five loss measures are never summed. No individual is
+      described as a wrongdoer: at the date of publication no charge has been brought.</p>
+      <p class="muted small">Deferred: a scroll-driven reveal on Figure 1, and per-figure share
+      images. Both are additive and neither changes a number.</p>
+    </section>
+
+    <section class="card">
+      <h2>Sources</h2>
+      <p><b>Primary.</b> <i>Laporan Suruhanjaya Siasatan Diraja bagi Menyiasat Isu Pengurusan dan
+      Operasi Lembaga Tabung Haji dari Tahun 2014 hingga 2020</i> — presented to the Yang
+      di-Pertuan Agong 30 August 2022; reclassified OPEN under s.2C of the Official Secrets Act
+      1972 and published by JAKIM, 29 July 2026.
+      <a href="https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022">JAKIM announcement</a> ·
+      <a href="https://online.fliphtml5.com/kaxni/WJD22-0447-Laporan-Suruhanjaya-RCI-1f93/">the report</a>.</p>
+      <p><b>Statute.</b> Tabung Haji Act 1995 (Act 535), ss.6, 22, 24, 26 —
+      <a href="https://lom.agc.gov.my/act-detail.php?language=BI&act=535">Attorney General's Chambers</a>.</p>
+      <p class="muted small">Where a figure on this page reached us through reporting on the
+      report rather than through the report itself, the dataset table says so.</p>
+    </section>
+
+    <p class="foot">Compiled by The Fourth Angle from the published report. Figures are the
+    commission's and those of the reviewers it records; the presentation is ours.</p>
+  </main>
+</Base>
+
+<style>
+  .rci {
+    /* Page-local encoding tokens. Light values on :root, redefined for both
+       dark paths so the explicit toggle and the OS preference agree. */
+    --rci-mark: #A8432A;          /* 5.9:1 on --card in light */
+    --rci-mark-bg: transparent;
+    --rci-ctx: #6B6558;
+    --rci-rule: var(--border-divider);
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 18px 96px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) .rci { --rci-mark: #D9755A; --rci-ctx: #9AA7B0; }
+  }
+  :root[data-theme='dark'] .rci { --rci-mark: #D9755A; --rci-ctx: #9AA7B0; }
+
+  .kicker {
+    font-family: var(--font-display); font-size: var(--text-xs); font-weight: 600;
+    color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 12px;
+  }
+  h1 {
+    font-family: var(--font-display); font-size: var(--text-issue-title-fluid); font-weight: 700;
+    color: var(--text-primary); letter-spacing: -0.04em; line-height: 1.05; margin: 0 0 16px;
+  }
+  .standfirst {
+    font-family: var(--font-body); font-size: var(--text-reading-lg); line-height: 1.6;
+    color: var(--text-primary); margin: 0 0 14px; border-left: 3px solid var(--rci-mark);
+    padding-left: 14px;
+  }
+  .dek { font-family: var(--font-body); font-size: var(--text-body); line-height: 1.65; color: var(--text-tertiary); margin: 0 0 28px; }
+
+  h2 { font-family: var(--font-display); font-size: var(--text-reading-lg); font-weight: 700; color: var(--text-primary); letter-spacing: -0.03em; margin: 0 0 10px; }
+  .h2-loose { margin-top: 34px; }
+  h3 { font-family: var(--font-display); font-size: var(--text-body-lg); font-weight: 700; color: var(--text-primary); margin: 0 0 6px; }
+  p { font-family: var(--font-body); font-size: var(--text-body); line-height: 1.72; color: var(--text-secondary); margin: 0 0 12px; }
+  .muted { color: var(--text-tertiary); }
+  .small { font-size: var(--text-ui); line-height: 1.6; }
+  .cite { font-family: var(--font-body); font-size: var(--text-xs); line-height: 1.5; color: var(--text-muted); margin: 6px 0 0; }
+  a { color: var(--rci-mark); }
+
+  .card, .fig {
+    background: var(--card); border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg); padding: 20px; margin: 0 0 16px;
+  }
+  .fig { margin: 0 0 16px; }
+  .fig-head { margin: 0 0 14px; }
+  .fig-n { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; color: var(--rci-mark); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .tiles, .quad { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .tiles { margin: 0 0 16px; }
+  .tile { background: var(--card); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 18px; }
+  .tile.hatched {
+    background-image: repeating-linear-gradient(135deg, transparent 0 5px, color-mix(in srgb, var(--rci-mark) 12%, transparent) 5px 7px);
+  }
+  .tile-k { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-tertiary); }
+  .tile-v { display: block; font-family: var(--font-display); font-size: var(--text-hero); font-weight: 700; color: var(--rci-mark); letter-spacing: -0.03em; margin: 4px 0 8px; }
+  .tile-b { font-size: var(--text-ui); line-height: 1.6; margin: 0; }
+
+  .quad > div { border-top: 2px solid var(--rci-rule); padding-top: 10px; }
+  .quad p { font-size: var(--text-ui); line-height: 1.62; margin: 0; }
+
+  .kpis { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 4px 0 12px; }
+  .kpis > div { border-top: 2px solid var(--rci-rule); padding-top: 8px; }
+  .kpis b { display: block; font-family: var(--font-display); font-size: var(--text-title); font-weight: 700; color: var(--rci-mark); letter-spacing: -0.03em; }
+  .kpis span { font-family: var(--font-body); font-size: var(--text-xs); line-height: 1.5; color: var(--text-tertiary); }
+
+  .scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 0 10px; }
+  .chart { display: block; width: 100%; min-width: 460px; height: auto; }
+  .axis { stroke: var(--text-faint); stroke-width: 1; }
+  .axis-t { font-family: var(--font-body); font-size: 11px; fill: var(--text-muted); }
+  .val { font-family: var(--font-body); font-size: 11.5px; font-weight: 700; fill: var(--text-secondary); }
+  .mid { text-anchor: middle; }
+  .line-key { fill: none; stroke: var(--rci-mark); stroke-width: 2; }
+  .line-ctx { fill: none; stroke: var(--rci-ctx); stroke-width: 2; stroke-dasharray: 0; opacity: 0.45; }
+  .dot-key { fill: var(--rci-mark); }
+  .dot-ctx { fill: var(--rci-ctx); opacity: 0.55; }
+  .bar { fill: var(--rci-ctx); opacity: 0.5; }
+  .bar.key { fill: var(--rci-mark); opacity: 1; }
+
+  .legend { font-family: var(--font-body); font-size: var(--text-xs); color: var(--text-tertiary); margin: 0 0 12px; }
+  .sw { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin: 0 6px 0 14px; vertical-align: middle; }
+  .sw:first-child { margin-left: 0; }
+  .sw.key { background: var(--rci-mark); }
+  .sw.ctx { background: var(--rci-ctx); opacity: 0.45; }
+
+  .steps { margin: 4px 0 8px; padding-left: 18px; }
+  .steps li { font-family: var(--font-body); font-size: var(--text-ui); line-height: 1.6; color: var(--text-secondary); margin-bottom: 6px; }
+  .steps b { color: var(--text-primary); }
+
+  .dial { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin: 4px 0 12px; }
+  .dial-s { border-top: 2px solid var(--rci-rule); padding-top: 8px; }
+  .dial-s.on { border-top-color: var(--rci-mark); }
+  .dial-s b { display: block; font-family: var(--font-display); font-size: var(--text-subtitle); font-weight: 700; color: var(--text-primary); letter-spacing: -0.03em; }
+  .dial-s.on b { color: var(--rci-mark); }
+  .dial-s span { font-family: var(--font-body); font-size: var(--text-xs); line-height: 1.45; color: var(--text-tertiary); }
+
+  .pull { font-family: var(--font-display); font-size: var(--text-body-lg); line-height: 1.5; color: var(--text-primary); border-left: 3px solid var(--rci-mark); padding-left: 14px; margin: 12px 0; }
+
+  .mrow { display: grid; grid-template-columns: minmax(150px, 1.4fr) 2fr auto; gap: 12px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--border-light); }
+  .mlab b { display: block; font-family: var(--font-body); font-size: var(--text-ui); font-weight: 700; color: var(--text-primary); line-height: 1.35; }
+  .mlab span { font-family: var(--font-body); font-size: var(--text-xs); color: var(--text-muted); }
+  .mbar { background: var(--bg-sunken); border-radius: 3px; height: 12px; overflow: hidden; }
+  .mbar i { display: block; height: 100%; background: var(--rci-mark); border-radius: 3px; }
+  .mbar i.hatched { background-image: repeating-linear-gradient(135deg, transparent 0 4px, color-mix(in srgb, var(--card) 70%, transparent) 4px 6px); }
+  .mval { font-family: var(--font-display); font-size: var(--text-body-lg); font-weight: 700; color: var(--text-primary); }
+
+  .cond, .tl { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid var(--border-light); }
+  .cond-n { font-family: var(--font-display); font-size: var(--text-title); font-weight: 700; color: var(--rci-mark); line-height: 1; }
+  .cond p, .tl p { font-size: var(--text-ui); line-height: 1.62; margin: 0 0 4px; }
+  .tl { grid-template-columns: 96px 1fr; }
+  .tl-w { font-family: var(--font-display); font-size: var(--text-ui); font-weight: 700; color: var(--text-primary); }
+  .tl.gap { background: var(--bg-sunken); border-radius: var(--radius-md, 8px); padding: 14px 12px; }
+  .tl.gap .tl-w { color: var(--rci-mark); }
+
+  .rec { border-top: 1px solid var(--border-light); padding: 12px 0 4px; }
+  .maps { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rci-mark); }
+  .rec p { font-size: var(--text-ui); line-height: 1.62; margin: 6px 0 0; }
+
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-body); font-size: var(--text-ui); }
+  table.data, table.mini { min-width: 620px; }
+  th { text-align: left; padding: 8px 6px; color: var(--text-tertiary); font-weight: 700; border-bottom: 2px solid var(--border-divider); }
+  td { padding: 7px 6px; color: var(--text-secondary); border-bottom: 1px solid var(--border-light); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .ref { color: var(--text-muted); font-size: var(--text-xs); white-space: nowrap; }
+  tr.em td { font-weight: 700; color: var(--text-primary); }
+
+  .foot { font-size: var(--text-ui); color: var(--text-tertiary); font-style: italic; margin-top: 26px; }
+
+  @media (max-width: 560px) {
+    .rci { padding: 18px 14px 72px; }
+    .card, .fig, .tile { padding: 16px; }
+    .mrow { grid-template-columns: 1fr auto; }
+    .mrow .mbar { grid-column: 1 / -1; }
+    .cond, .tl { grid-template-columns: 32px 1fr; gap: 10px; }
+    .tl { grid-template-columns: 78px 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+  @media print {
+    .card, .fig, .tile { break-inside: avoid; border-color: #999; }
+    .scroller { overflow: visible; }
+  }
+</style>

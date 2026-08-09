@@ -197,6 +197,69 @@ The commission **rejected** proposals to break LTH up into separate entities, ho
 institution should be kept as it is and the weaknesses fixed without major structural change
 (para 4.3, pp. 191–192).
 
+### Sections 3.12 and 3.14–3.16 — read 2026-08-09, gap 7 closed ✅
+
+Every claim below had been press-sourced in earlier drafts and is now paragraph-cited.
+
+- **Bonuses — "up to 13 months' salary" and RM74 million confirmed (para 3.12.9, p. 100).**
+  The 2014 extraordinary bonus proposal ran at **one to eleven months' salary** as annual
+  bonus **plus two months** as a special bonus, "dengan jumlah keseluruhan boleh mencecah
+  **tiga belas bulan gaji**", involving an allocation of **RM74 juta**. The same paragraph
+  records that bonus approval passed through **three levels — the Board, the Minister of
+  Religious Affairs, and MOF** — and that the two ministers routinely approved what
+  management and the Board proposed.
+- **Why the bonuses were large (para 3.12.13, p. 102).** The commission ties them directly to
+  the RAV valuation: high bonuses followed because LTH valued its assets on RAV, which showed
+  large profits. This is the same mechanism as the hibah, applied to staff pay.
+- **Balancing fact (para 3.12.14, p. 102).** From financial year 2018 onward, bonuses have been
+  controlled against LTH's financial capacity. Carry this wherever the bonus figure is used.
+- **RM2.19 million resolved (para 3.12.19, p. 103).** The figure is the **sum of two years** of
+  *bonus istimewa* to selected individuals: **RM1,148,400 (2017) + RM1,045,000 (2018) =
+  RM2,193,400**. It is not a single payment. The 2017 award was approved at a TH Properties
+  Exco meeting of **12 April 2017**; four attendees are named in the report. **Do not name
+  them** — no charges exist.
+- **Problem investments (paras 3.14.1–3.14.6, pp. 138–139).** The commission found
+  "**transaksi yang mencurigakan dan penyembunyian maklumat**" — suspicious transactions and
+  concealment of information. Investment decision-making was disorderly with no coordination
+  between the CIO, corporate finance head, chief property officer and treasury head; the
+  Investment Panel did not scrutinise proposals adequately; and its chairman **Dato' Mohzani**
+  admitted the panel was not firm enough. Ministers relied entirely on Board memos, and every
+  document showed "dipersetujui seperti dicadangkan". At **para 3.14.6 (p. 139)** the
+  commission recommends a **forensic review**, then enumerates the investments needing one,
+  beginning "(1) PT TH Indo Plantations". **The widely reported count of "14" is NOT
+  confirmed** — the list runs to about p. 155 and has not been counted. Do not publish 14.
+- **FGV (p. 155).** Unrealised loss of **RM1,058,937,380**. UJSB took over 283,710,100 FGV
+  shares at cost RM4.62/unit (RM1,310,020,819) when the market price was about RM0.69 (Feb
+  2022); without that, LTH would have borne roughly **RM1.1 billion**.
+- **Accountability (para 3.14.7, p. 155).** The commission's view is that every board member,
+  subsidiary director, manager and staff member involved **should be held accountable** for the
+  losses. Strong language, and notable given no charges have followed.
+- **Four police reports confirmed (para 3.15.1, p. 155).** LTH management began an internal
+  investigation in mid-2018 and made **four police reports**.
+- **Six MACC matters confirmed (para 3.15.21, pp. 163–164).** The list runs (a) to (f):
+  alleged corruption in TH Plantation's purchase of Ladang Weida Bhd; alleged misappropriation
+  and abuse of power in the leasing of Restoran Opah at KL Sentral; the same for Restoran Nasi
+  Dalca at LTH headquarters; alleged misappropriation and corruption by a former Chief
+  Operating Officer over renovations; alleged falsification of rubber-seedling supply documents
+  at Ladang TH-Usia Jatimas, Sandakan; and alleged misconduct by officers of THP Bina and THP
+  Timur. **Para 3.15.22:** MACC investigations were still ongoing and the commission said MACC
+  should be given room to complete them.
+- **Haj cost — the forward-looking finding (paras 3.16.1–3.16.2, p. 165).** Cost per pilgrim
+  rose from **RM15,555 (2003)** to **RM25,540 (2022)**. TH's projection, reproduced by the
+  commission: 2022 **25,540**, 2023 **26,280**, 2024 **28,160**, 2025 **29,570**, 2026
+  **31,040**, 2027 **32,592**, 2028 **34,221**, 2029 **35,932**, 2030 **37,729**; and up to
+  **RM50,000 by 2050**. ⚠️ **Internal inconsistency in the report:** the prose at 3.16.1 says
+  the 2030 cost will reach "sehingga RM35,000" while the table at 3.16.2 gives RM37,729. Use
+  the table and disclose the difference.
+- **Private auditor recommendation confirmed (para 3.11.17, p. 97).** The commission
+  recommends amending **s.26 of Act 535** to exempt LTH from the **Statutory Bodies (Accounts
+  and Annual Reports) Act 1980 [Act 240]**, so that LTH may appoint a **private accounting
+  firm** to audit its financial statements. Phrase it that way — "replace the Auditor-General"
+  is a press paraphrase of a statutory-exemption recommendation.
+- **Section 22 amendment (para 3.11.18, p. 97).** Amend s.22 so the computation of distributable
+  profit is explicit, because the present wording "boleh disalahtafsirkan" and was used to
+  justify distributions without regard to LTH's financial capacity.
+
 ### The finding the coverage has largely missed ✅ (para 4.6, p. 199)
 
 > "Suruhanjaya berharap Kerajaan akan menimbang supaya laporan Suruhanjaya ini **diumumkan
@@ -617,10 +680,14 @@ depositor voice is exactly the omission T4A exists to correct.
 6. **[STILL OPEN] Fill two spectrum gaps:** an opposition-bloc response and a depositor or
    pilgrim-association voice. Neither is blocking, but a fund story with no depositor voice is
    exactly the omission T4A exists to correct — fill before Stage 1 if practical.
-7. **[NEW, OPTIONAL] Section 3.14–3.16 not yet read.** Problem investments, staff bonuses
-   (3.12), and the HAFIS subsidy liability (3.16) were sampled but not read end to end. The
-   bonus-recovery recommendation is confirmed at para 3.12.29 (p. 107); the "up to 13 months'
-   salary" detail is still press-sourced [S6] and must be traced to the report before use.
+7. **[CLOSED 2026-08-09] Sections 3.12 and 3.14–3.16.** Read; see the section above. All
+   previously press-sourced claims are now paragraph-cited, with two corrections: RM2.19m is
+   the **sum of two years** of special bonuses, and "replace the Auditor-General" is more
+   precisely a recommendation to exempt LTH from Act 240 so a private firm may audit.
+8. **[STILL OPEN] The "14 problematic investments" count.** The enumerated list begins at para
+   3.14.6 (p. 139) and runs to about p. 155, but has not been counted. **Do not publish the
+   number 14** until someone counts the list. The forensic-review recommendation itself is
+   confirmed.
 
 **Status: the issue is no longer held.** Gaps 1, 4 and 5 are closed against the primary
 document; gap 2 was closed on 2026-08-03. Stage 1 may begin on the user's approval. The
