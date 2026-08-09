@@ -341,6 +341,24 @@ reason for withholding it from them.
   reporting [S5, S9]. The report does not support it. **Do not publish RM2.75 billion.** The
   distribution series in the report reads (RM'million): 2013 **2,632**, 2014 **3,237**, 2015
   **3,220**, 2016 **2,871**, 2017 **3,324**.
+
+  ✅ **RESOLVED 2026-08-09 (second pass).** The commission's own hibah table at **para 3.11.7,
+  p. 92** settles it. For 2017 it gives rate **4.50 + 1.75**, annual hibah **RM3,042,184k**,
+  haj hibah **RM281,557k**, **total RM3,323,741k** — i.e. RM3.32 billion, matching PwC's
+  RM3,324m. **RM2.75 billion appears nowhere in the report's table.** It is a press figure
+  that the commission's own arithmetic contradicts, and it must not be attributed to the
+  commission. Full table (rate %, total RM'000): 2014 **6.25+2.00 → 3,237,196**; 2015
+  **5.00+3.00 → 3,220,374**; 2016 **4.25+1.50 → 2,870,822**; 2017 **4.50+1.75 → 3,323,741**;
+  2018 **1.25 → 922,959**; 2019 **3.05 → 2,140,538**; 2020 **3.10 → 2,242,141**. The
+  **2017 → 2018 fall of 72%** is the sharpest single fact in the series.
+- **The full PwC five-year position is available** and was read in full at para 3.13.7
+  (p. 109) — it is not a single-year snapshot. RM'million, 2013 → 2017. Assets: 48,778 /
+  54,751 / 60,196 / 64,321 / 70,317. Liabilities incl. depositors' saving fund: (43,696) /
+  (51,866) / (60,062) / (65,581) / (71,086). Shortfall/(surplus) pre-distribution: 5,082 /
+  2,885 / 134 / (1,260) / (769). Distribution declared: (2,632) / (3,237) / (3,220) /
+  (2,871) / (3,324). Post-distribution: 2,450 / (352) / (3,086) / (4,131) / (4,093). ✅
+  **2013 is in surplus and 2014 is the crossover year** — the series carries the finding far
+  better than the 2017 column alone.
 - **RM70.317 billion assets vs RM74.409 billion liabilities** — the 2017 position, and
   ✅ **attribution corrected**: these are **KAN's audit findings** as recorded by the commission
   at para 3.11.11 (pp. 93–94), not PwC's. PwC's own table (3.13.7, p. 109) states 2017 assets
