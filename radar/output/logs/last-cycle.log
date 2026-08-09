@@ -1,60 +1,58 @@
-[32m2026-08-09 20:09:26[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-08-09 20:09:26[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-08-09 20:09:26[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 8097 topics from state
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-08-09 20:09:27[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-09T20:09:27.439252+00:00
-[32m2026-08-09 20:09:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-08-09 20:09:29[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-08-09 20:09:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-08-09 20:09:32[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-08-09 20:09:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-08-09 20:09:34[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
-[32m2026-08-09 20:09:36[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-08-09 20:09:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-08-09 20:09:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-09 20:10:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-09 20:10:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-09 20:10:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-09 20:10:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-09 20:10:59[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-09 20:11:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-09 20:11:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-09 20:11:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-09 20:11:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-09 20:11:46[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-08-09 20:11:47[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 14 events
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 483 events from 5 sources
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 483 events
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 379 within 24h (161 pruned)
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Infantino’s era is over, says La Liga boss as pressure mounts on Fifa. Fifa president Gianni Infantino faced criticism after his plan to attract private investment and sell stakes in the World Cup fai" importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "All federal funds will go directly to the people, says Hajiji. The Sabah chief minister says the RM1.5 billion special grant would go towards more paved roads, bridges, and water and electricity proje" importance=0.61
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Umno‑PAS pact not for Sabah, Salleh Keruak says politics driven by autonomy rights. KOTA KINABALU, Aug 9 &mdash; Any political understanding between Umno and PAS that may work in Peninsular Malaysia m" importance=0.46
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Fire in southwestern Spain remains active as 470 evacuated. Authorities expressed optimism that they are managing to control a blaze which has so far affected some 8,000 hectares." importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Sarawak haze thickens, Serian tops API at 170 as Kuching, Bintulu readings hit 155. KUCHING, Aug 9 &mdash; Miri and Sarikei recorded unhealthy Air Pollutant Index (API) readings as of 1pm today.Accord" importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Malaysia awaits US response on excess capacity after concluding forced-labour tariff talks, says Johari Ghani. SHAH ALAM, Aug 9 &mdash; Malaysia is awaiting Washington&rsquo;s response on concerns ove" importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Tiada usul jual hotel Felda ketika saya pengerusi, kata Shabery. Shabery Cheek berkata, Felda memiliki 4 hartanah di London, dan tiada satu pun dibeli secara tunggal pada harga £160 juta." importance=0.46
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Too costly to raise a family? Sarawak’s young couples face quandary. Sarawak premier Abang Johari Openg says financial commitments were among the factors that young couples take into account before st" importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Warisan, STAR dan KDM bincang PRU16. Presiden Warisan kata parti-parti Sabah harus memastikan 25 kerusi Parlimen di negeri itu dikuasai oleh parti tempatan." importance=0.46
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Perlis Umno gears up to contest all seats solo at next election. ARAU, Aug 9 &mdash; Perlis Umno is preparing its machinery to contest all 15 state seats and three parliamentary constit..." importance=0.46
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Five Sarawak areas record unhealthy API levels amid transboundary haze. KUCHING, Aug 9 &mdash; Five areas in Sarawak continued to record unhealthy Air Pollutant Index (API) readings due to tra..." importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Warisan in talks with STAR, KDM on GE16 pact. Shafie Apdal says cooperation among Sabah-based parties could ensure more of the state’s 25 parliamentary seats are held by local parties." importance=0.46
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Taiwan’s 2027 defence spending to rise 16%. The proposed budget of more than US$31 billion, to be unveiled on Aug 20, includes funding for the coast guard, veterans and special projects." importance=0.51
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Now Terengganu Bersatu No 2 quits post. Khazan Che Mat follows in Razali Idris' footsteps instead of taking over as acting Terengganu Bersatu chief." importance=0.41
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Seat swaps possible in Melaka, Zahid says negotiations must remain fair and principled. KUDAT, Aug 8 &mdash; Barisan Nasional (BN) remains open to negotiations on seat allocations for the Melaka State" importance=0.31
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "MACC, police and IRB ramp up investigations into alleged Tabung Haji irregularities after RCI report. &nbsp;KUALA LUMPUR, Aug 8 &mdash; Enforcement agencies have stepped up action following the releas" importance=0.46
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "MACC, police and IRB ramp up investigations into alleged Tabung Haji irregularities after RCI report. &nbsp;KUALA LUMPUR, Aug 8 &mdash; Enforcement agencies have stepped up action following the releas" importance=0.36
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'cascade_tracker': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 33), ('india', 30), ('minister', 29), ('isa', 27), ('government', 25), ('pas', 22), ('prime minister', 17), ('chinese', 17), ('election', 17), ('unity', 11)]
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 17 events monitored, 17 flagged
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 8098 active topics
-[32m2026-08-09 20:11:49[0m | [1mINFO    [0m | [36moutput              [0m | 1107 active issues, 6991 new, 6991 pruned
-[32m2026-08-09 20:11:50[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-09 20:12:06[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=111  hmm=OK/64  cox=RT/1107  sarima=RT/1107
-[32m2026-08-09 20:12:06[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1107)
-[32m2026-08-09 20:12:07[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 8098 active topics. Top: parliament budget session session opens (score: 0.99)
+[32m2026-08-09 22:09:13[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-08-09 22:09:13[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-08-09 22:09:13[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 8098 topics from state
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-08-09 22:09:15[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-09T22:09:15.144340+00:00
+[32m2026-08-09 22:09:16[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-08-09 22:09:17[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-08-09 22:09:18[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-08-09 22:09:19[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-08-09 22:09:23[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-08-09 22:09:23[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
+[32m2026-08-09 22:09:24[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-08-09 22:09:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:09:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:10:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:10:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:10:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:11:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:11:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:11:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:11:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-09 22:11:37[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-08-09 22:11:39[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 13 events
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 483 events from 5 sources
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 483 events
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 361 within 24h (160 pruned)
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Infantino’s era is over, says La Liga boss as pressure mounts on Fifa. Fifa president Gianni Infantino faced criticism after his plan to attract private investment and sell stakes in the World Cup fai" importance=0.41
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "All federal funds will go directly to the people, says Hajiji. The Sabah chief minister says the RM1.5 billion special grant would go towards more paved roads, bridges, and water and electricity proje" importance=0.61
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Umno‑PAS pact not for Sabah, Salleh Keruak says politics driven by autonomy rights. KOTA KINABALU, Aug 9 &mdash; Any political understanding between Umno and PAS that may work in Peninsular Malaysia m" importance=0.46
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Fire in southwestern Spain remains active as 470 evacuated. Authorities expressed optimism that they are managing to control a blaze which has so far affected some 8,000 hectares." importance=0.41
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Sarawak haze thickens, Serian tops API at 170 as Kuching, Bintulu readings hit 155. KUCHING, Aug 9 &mdash; Miri and Sarikei recorded unhealthy Air Pollutant Index (API) readings as of 1pm today.Accord" importance=0.41
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Malaysia awaits US response on excess capacity after concluding forced-labour tariff talks, says Johari Ghani. SHAH ALAM, Aug 9 &mdash; Malaysia is awaiting Washington&rsquo;s response on concerns ove" importance=0.41
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Tiada usul jual hotel Felda ketika saya pengerusi, kata Shabery. Shabery Cheek berkata, Felda memiliki 4 hartanah di London, dan tiada satu pun dibeli secara tunggal pada harga £160 juta." importance=0.46
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Too costly to raise a family? Sarawak’s young couples face quandary. Sarawak premier Abang Johari Openg says financial commitments were among the factors that young couples take into account before st" importance=0.41
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Warisan, STAR dan KDM bincang PRU16. Presiden Warisan kata parti-parti Sabah harus memastikan 25 kerusi Parlimen di negeri itu dikuasai oleh parti tempatan." importance=0.46
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Perlis Umno gears up to contest all seats solo at next election. ARAU, Aug 9 &mdash; Perlis Umno is preparing its machinery to contest all 15 state seats and three parliamentary constit..." importance=0.46
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Five Sarawak areas record unhealthy API levels amid transboundary haze. KUCHING, Aug 9 &mdash; Five areas in Sarawak continued to record unhealthy Air Pollutant Index (API) readings due to tra..." importance=0.41
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Warisan in talks with STAR, KDM on GE16 pact. Shafie Apdal says cooperation among Sabah-based parties could ensure more of the state’s 25 parliamentary seats are held by local parties." importance=0.46
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Taiwan’s 2027 defence spending to rise 16%. The proposed budget of more than US$31 billion, to be unveiled on Aug 20, includes funding for the coast guard, veterans and special projects." importance=0.51
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Seat swaps possible in Melaka, Zahid says negotiations must remain fair and principled. KUDAT, Aug 8 &mdash; Barisan Nasional (BN) remains open to negotiations on seat allocations for the Melaka State" importance=0.31
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "MACC, police and IRB ramp up investigations into alleged Tabung Haji irregularities after RCI report. &nbsp;KUALA LUMPUR, Aug 8 &mdash; Enforcement agencies have stepped up action following the releas" importance=0.46
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "MACC, police and IRB ramp up investigations into alleged Tabung Haji irregularities after RCI report. &nbsp;KUALA LUMPUR, Aug 8 &mdash; Enforcement agencies have stepped up action following the releas" importance=0.36
+[32m2026-08-09 22:11:40[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
+[32m2026-08-09 22:11:41[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 33), ('india', 30), ('minister', 29), ('isa', 27), ('government', 25), ('pas', 20), ('chinese', 17), ('prime minister', 16), ('election', 16), ('unity', 10)]
+[32m2026-08-09 22:11:41[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
+[32m2026-08-09 22:11:41[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
+[32m2026-08-09 22:11:41[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 8097 active topics
+[32m2026-08-09 22:11:41[0m | [1mINFO    [0m | [36moutput              [0m | 1107 active issues, 6991 new, 6991 pruned
+[32m2026-08-09 22:11:41[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-09 22:12:07[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=111  hmm=OK/64  cox=RT/1107  sarima=RT/1107
+[32m2026-08-09 22:12:07[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1107)
+[32m2026-08-09 22:12:08[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 8097 active topics. Top: parliament budget session session opens (score: 0.99)
