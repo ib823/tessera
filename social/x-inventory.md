@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-09T18:13:41.855Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-09T20:12:07.537Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -228,6 +228,44 @@ Setting a higher self-sufficiency target while output drops is like lifting your
 A government can set a target but not guarantee a harvest. Rice security is decided in the paddy field, not the policy document.
 
 https://thefourthangle.pages.dev/issue/2003
+```
+
+### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
+
+> ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
+
+**1/7** _(hook — attach image, NO link)_ · 197 chars
+```
+Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
+```
+**2/7** _(fact)_ · 210 chars
+```
+Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
+```
+**3/7** _(fact)_ · 231 chars
+```
+Two in five Malaysians with diabetes do not know they have it. Among those aged 18 to 29 with diabetes, about 84% are unaware. The 15.6% already includes people a survey blood test caught unaware, not only those formally diagnosed.
+```
+**4/7** _(fact)_ · 189 chars
+```
+One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
+```
+**5/7** _(reframe)_ · 119 chars
+```
+One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
+```
+**6/7** _(analogy)_ · 178 chars
+```
+Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
+```
+**7/7** _(view — ONLY post with the link)_ · 127 chars
+```
+One better year in the diabetes data does not reverse a decade of getting heavier.
+
+https://thefourthangle.pages.dev/issue/2002
 ```
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
@@ -1116,6 +1154,40 @@ The court victory was a trap. Every government since Mahathir 1.0 chose procurem
 The vulnerability is real but leverage is underestimated. Malaysia lacks not options but political will to convert CPTPP, RCEP, and the NSSP into actual strategy.
 
 https://thefourthangle.pages.dev/issue/1965
+```
+
+### Issue 1964 — Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
+
+> ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1964-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1964`
+
+**1/6** _(hook — attach image, NO link)_ · 245 chars
+```
+The government is cracking down on fake news about fuel and electricity prices to protect Malaysians from misinformation. MCMC investigated 17 individuals and flagged 96 posts. Only 8 involved fabricated graphics. 88 were reposts or speculation.
+```
+**2/6** _(fact)_ · 114 chars
+```
+Section 233 penalties jumped to RM500K and 2 years, yet MCMC's conviction rate is 3.8% across 1,243 investigations
+```
+**3/6** _(fact)_ · 250 chars
+```
+Every PM (Mahathir, Badawi, Najib, Muhyiddin, Ismail Sabri, Anwar) has used these laws against critics. The pattern is systemic. PAS and PN turn cost-of-living anger into ethnic grievance. No ruling party voluntarily narrows tools it may itself need.
+```
+**4/6** _(fact)_ · 118 chars
+```
+The fuel subsidy hit RM4 billion per month. The public's anxiety is rational, but so is the government's fiscal alarm.
+```
+**5/6** _(reframe)_ · 178 chars
+```
+A government that signals fuel prices must rise cannot criminally investigate citizens for saying the same thing. That is not fighting fake news. It is punishing premature truth.
+```
+**6/6** _(view — ONLY post with the link)_ · 206 chars
+```
+Fabricated graphics deserve investigation. But when only 8 of 96 flagged posts are fabrications, enforcement has become suppression, a pattern every PM inherits.
+
+https://thefourthangle.pages.dev/issue/1964
 ```
 
 ### Issue 1961 — MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
@@ -2114,43 +2186,6 @@ Accountability did happen: PAC reports, declassification, MACC charges, contract
 https://thefourthangle.pages.dev/issue/0154
 ```
 
-### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
-
-**1/7** _(hook — attach image, NO link)_ · 197 chars
-```
-Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
-```
-**2/7** _(fact)_ · 210 chars
-```
-Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
-```
-**3/7** _(fact)_ · 231 chars
-```
-Two in five Malaysians with diabetes do not know they have it. Among those aged 18 to 29 with diabetes, about 84% are unaware. The 15.6% already includes people a survey blood test caught unaware, not only those formally diagnosed.
-```
-**4/7** _(fact)_ · 189 chars
-```
-One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
-```
-**5/7** _(reframe)_ · 119 chars
-```
-One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
-```
-**6/7** _(analogy)_ · 178 chars
-```
-Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
-```
-**7/7** _(view — ONLY post with the link)_ · 127 chars
-```
-One better year in the diabetes data does not reverse a decade of getting heavier.
-
-https://thefourthangle.pages.dev/issue/2002
-```
-
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
 
 - **Status:** PENDING
@@ -2495,39 +2530,6 @@ Registration serves the state and employers first. No coalition will expand beyo
 The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
 
 https://thefourthangle.pages.dev/issue/1966
-```
-
-### Issue 1964 — Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1964-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1964`
-
-**1/6** _(hook — attach image, NO link)_ · 245 chars
-```
-The government is cracking down on fake news about fuel and electricity prices to protect Malaysians from misinformation. MCMC investigated 17 individuals and flagged 96 posts. Only 8 involved fabricated graphics. 88 were reposts or speculation.
-```
-**2/6** _(fact)_ · 114 chars
-```
-Section 233 penalties jumped to RM500K and 2 years, yet MCMC's conviction rate is 3.8% across 1,243 investigations
-```
-**3/6** _(fact)_ · 250 chars
-```
-Every PM (Mahathir, Badawi, Najib, Muhyiddin, Ismail Sabri, Anwar) has used these laws against critics. The pattern is systemic. PAS and PN turn cost-of-living anger into ethnic grievance. No ruling party voluntarily narrows tools it may itself need.
-```
-**4/6** _(fact)_ · 118 chars
-```
-The fuel subsidy hit RM4 billion per month. The public's anxiety is rational, but so is the government's fiscal alarm.
-```
-**5/6** _(reframe)_ · 178 chars
-```
-A government that signals fuel prices must rise cannot criminally investigate citizens for saying the same thing. That is not fighting fake news. It is punishing premature truth.
-```
-**6/6** _(view — ONLY post with the link)_ · 206 chars
-```
-Fabricated graphics deserve investigation. But when only 8 of 96 flagged posts are fabrications, enforcement has become suppression, a pattern every PM inherits.
-
-https://thefourthangle.pages.dev/issue/1964
 ```
 
 ### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
