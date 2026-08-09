@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-09T14:17:39.191Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-09T16:12:31.000Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -904,7 +904,7 @@ https://thefourthangle.pages.dev/issue/1977
 
 ### Issue 1976 — Four Undangs Purported to Depose the Ruler. State Government Says One Was No Longer in Office.
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1976-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1976`
@@ -1642,7 +1642,7 @@ https://thefourthangle.pages.dev/issue/1445
 
 ### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
