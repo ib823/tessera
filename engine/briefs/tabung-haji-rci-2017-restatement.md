@@ -684,10 +684,20 @@ depositor voice is exactly the omission T4A exists to correct.
    previously press-sourced claims are now paragraph-cited, with two corrections: RM2.19m is
    the **sum of two years** of special bonuses, and "replace the Auditor-General" is more
    precisely a recommendation to exempt LTH from Act 240 so a private firm may audit.
-8. **[STILL OPEN] The "14 problematic investments" count.** The enumerated list begins at para
-   3.14.6 (p. 139) and runs to about p. 155, but has not been counted. **Do not publish the
-   number 14** until someone counts the list. The forensic-review recommendation itself is
-   confirmed.
+8. **[CLOSED 2026-08-10] The "14 problematic investments" count — confirmed at 14.** ✅ The
+   enumerated list at para 3.14.6 runs **(1) PT TH Indo Plantations (p. 139)** through
+   **(14) FGV Berhad (p. 154)**, and §3.14 closes with the commission's view at para 3.14.7
+   (p. 155), so (14) is the last. Entries confirmed by direct reading at four points across
+   the range: (1) p. 139, **(4) Deru Semangat Sdn. Bhd.** p. 142, **(12) Alam Maritim
+   Resources / TH Marine** p. 152, (14) p. 154 — roughly one per page, consistent with
+   contiguous numbering. **The press figure of 14 is correct and may now be published**, cited
+   to para 3.14.6, pp. 139–155.
+   Also captured from that range: **(4)** RM526.16m approved for a Pahang oil-palm joint
+   venture, of which RM257m had been paid out by January 2021; **(12)** RM334m in TH Marine;
+   the Al-Rawda hotel leases in Makkah and Madinah at SR1,426m with SR560.7m of rent in
+   arrears by end-2021; and at p. 152 the RM2.2m of special bonuses paid in 2017–2018 to TH
+   Properties management and board **without LTH's approval as principal shareholder**, which
+   TH Properties' own board resolved on 12 August 2020 to recover.
 
 **Status: the issue is no longer held.** Gaps 1, 4 and 5 are closed against the primary
 document; gap 2 was closed on 2026-08-03. Stage 1 may begin on the user's approval. The

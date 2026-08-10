@@ -16,70 +16,24 @@
 // pointed at it for this process. Falls back to the generic sans stack if that
 // fails, which changes the look but not the content.
 
-import { mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
+import { mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { execFileSync } from 'node:child_process';
-// NOTE: sharp is imported *after* fontconfig is configured, further down.
-// Importing it here initialises fontconfig before FONTCONFIG_FILE is set, and
-// the brand font then silently falls back to a serif while still reporting
-// success. Keep this dynamic.
+import { setupBrandFont, PALETTE, esc, ROOT } from './_brand.mjs';
 
-const HERE = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(HERE, '..', '..');
 const OUT = join(ROOT, 'public', 'infographics', 'rci-tabung-haji-og.png');
-const FONTDIR = '/tmp/t4a-og-fonts';
 
-// --- brand type, best effort ------------------------------------------------
-// @fontsource subsets every Manrope weight from the variable source, and each
-// resulting face reports the family name "Manrope ExtraLight" whatever its
-// weight. Asking fontconfig for plain "Manrope" therefore misses and lands on a
-// system serif. We ask for the name the files actually carry; the weight axis
-// still resolves correctly (bold -> Manrope-Bold.ttf, weight 200).
-const BRAND_FAMILY = 'Manrope ExtraLight';
-let family = BRAND_FAMILY;
-try {
-  const { decompress } = await import('wawoff2');
-  mkdirSync(FONTDIR, { recursive: true });
-  for (const [weight, name] of [[700, 'Bold'], [500, 'Medium'], [400, 'Regular']]) {
-    const src = join(ROOT, `node_modules/@fontsource/manrope/files/manrope-latin-${weight}-normal.woff2`);
-    const dst = join(FONTDIR, `Manrope-${name}.ttf`);
-    if (existsSync(src) && !existsSync(dst)) {
-      writeFileSync(dst, Buffer.from(await decompress(readFileSync(src))));
-    }
-  }
-  const conf = join(FONTDIR, 'fonts.conf');
-  writeFileSync(conf, `<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd">
-<fontconfig><dir>${FONTDIR}</dir><dir>/usr/share/fonts</dir><cachedir>${FONTDIR}/cache</cachedir></fontconfig>`);
-  process.env.FONTCONFIG_FILE = conf;
-  mkdirSync(join(FONTDIR, 'cache'), { recursive: true });
-  try { execFileSync('fc-cache', ['-f', FONTDIR], { stdio: 'ignore' }); } catch { /* cache is optional */ }
-
-  // Verify rather than assume. fc-match reports what fontconfig would actually
-  // hand to librsvg; if it does not name a Manrope face, the render would come
-  // out in whatever serif the system defaults to.
-  const matched = execFileSync('fc-match', ['-f', '%{file}', `${BRAND_FAMILY}:bold`], {
-    env: process.env, encoding: 'utf8',
-  });
-  if (!matched.startsWith(FONTDIR)) {
-    throw new Error(`fontconfig resolved "${BRAND_FAMILY}:bold" to "${matched}"`);
-  }
-} catch (e) {
-  console.warn(`Brand font unavailable (${e.message}); falling back to the generic sans stack.`);
-  family = 'DejaVu Sans';
-}
-
+// sharp must be imported only after fontconfig is configured — see _brand.mjs.
+const family = await setupBrandFont();
 const sharp = (await import('sharp')).default;
 
 // --- palette, matching the page --------------------------------------------
-const PAPER = '#FFFDF9';
-const INK = '#16150F';
-const MUTED = '#78725F';
-const RULE = '#DDD6C6';
-const MARK = '#A8432A';
+const PAPER = PALETTE.paper;
+const INK = PALETTE.ink;
+const MUTED = PALETTE.muted;
+const RULE = PALETTE.rule;
+const MARK = PALETTE.mark;
 
 const W = 1200, H = 630;
-const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>

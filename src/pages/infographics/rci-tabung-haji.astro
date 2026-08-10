@@ -16,56 +16,21 @@ import UtilityHeader from '../../components/UtilityHeader.astro';
   depositors, and the five loss measures are never summed.
 */
 
-// ---- Figure 1: the PwC reconciliation (RM million) -------------------------
-const bridge = [
-  { label: 'Reported profit', value: 3412, kind: 'observed',
-    note: 'The figure depositors were told, and the figure the 2017 distribution was declared on.' },
-  { label: 'Equity write-downs', value: -4258, kind: 'counterfactual',
-    note: 'Available-for-sale shareholdings carried above what they were worth. Larger than the reported profit on its own.' },
-  { label: 'Debt instruments', value: -7, kind: 'counterfactual',
-    note: 'Fixed-income holdings. Shown at a minimum visible height so it does not disappear.' },
-  { label: 'Other adjustments', value: -580, kind: 'counterfactual',
-    note: 'Property fair-value losses and income recognised but not received.' },
-  { label: 'Restated loss', value: -1433, kind: 'counterfactual',
-    note: 'A swing of RM4.8 billion inside one financial year, produced entirely by accounting choices.' },
-];
+// Figures, the loss measures and the source references all come from
+// infographics/rci-tabung-haji/data.json, which the render scripts in that
+// directory read too — so the page and the share cards cannot drift apart.
+import figures from '../../../infographics/rci-tabung-haji/data.json';
 
-// ---- Figure 3: PwC asset/liability position, 2013–2017 (RM million) --------
-const position = [
-  { year: 2013, assets: 48778, liabilities: 43696, pre: 5082, dist: -2632, post: 2450 },
-  { year: 2014, assets: 54751, liabilities: 51866, pre: 2885, dist: -3237, post: -352 },
-  { year: 2015, assets: 60196, liabilities: 60062, pre: 134, dist: -3220, post: -3086 },
-  { year: 2016, assets: 64321, liabilities: 65581, pre: -1260, dist: -2871, post: -4131 },
-  { year: 2017, assets: 70317, liabilities: 71086, pre: -769, dist: -3324, post: -4093 },
-];
+const bridge = figures.bridge.steps;
+const position = figures.position.years;
+const hibah = figures.hibah.years;
+const hajCost = figures.hajCost.years;
+const measures = figures.measures;
+const investmentCount = figures.problemInvestments.count;
 
-// ---- Figure 4: distribution declared, 2014–2020 ----------------------------
-// Runs to 2020 because the commission's table does. Stopping at the 2018 trough
-// would be a time-range truncation of the same class as a truncated axis.
-const hibah = [
-  { year: 2014, rate: '6.25 + 2.00', pct: 8.25, amount: 3237196 },
-  { year: 2015, rate: '5.00 + 3.00', pct: 8.0, amount: 3220374 },
-  { year: 2016, rate: '4.25 + 1.50', pct: 5.75, amount: 2870822 },
-  { year: 2017, rate: '4.50 + 1.75', pct: 6.25, amount: 3323741 },
-  { year: 2018, rate: '1.25', pct: 1.25, amount: 922959 },
-  { year: 2019, rate: '3.05', pct: 3.05, amount: 2140538 },
-  { year: 2020, rate: '3.10', pct: 3.1, amount: 2242141 },
-];
-
-// ---- Figure 5: projected cost of haj per pilgrim (RM) ----------------------
-const hajCost = [
-  { year: 2022, cost: 25540 }, { year: 2023, cost: 26280 }, { year: 2024, cost: 28160 },
-  { year: 2025, cost: 29570 }, { year: 2026, cost: 31040 }, { year: 2027, cost: 32592 },
-  { year: 2028, cost: 34221 }, { year: 2029, cost: 35932 }, { year: 2030, cost: 37729 },
-];
-
-const measures = [
-  { label: 'Restated FY2017 net loss', by: 'PwC · counterfactual', v: 1.4, hatched: true },
-  { label: '2017 shortfall after distribution', by: 'PwC · balance-sheet position', v: 4.1, hatched: false },
-  { label: 'Accumulated losses at 31 Dec 2017', by: 'PwC · cumulative', v: 4.7, hatched: false },
-  { label: 'Losses at the point of rescue, 2018', by: 'PwC, via the commission', v: 10, hatched: false },
-  { label: 'Investment losses TH says it has addressed', by: 'Tabung Haji · to end-2025', v: 12.6, hatched: false },
-];
+// Per-figure share cards, rendered by render-shares.mjs. WhatsApp shares
+// images, not links, so a figure that cannot leave the page does not travel.
+const share = (n: number) => `/infographics/share/rci-tabung-haji-fig${n}.png`;
 
 const conditions = [
   {
@@ -94,7 +59,7 @@ const recommendations = [
   { maps: 'Condition 1', text: 'Amend Act 535 to set competence criteria for board members, bar active politicians from serving as chairman or member of the board and of subsidiaries, and require a stated reason before any appointment is revoked.', cite: '¶4.4.1, p.192' },
   { maps: 'Condition 2', text: 'Calculate distributions from audited annual accounts rather than proforma figures, and amend section 22 so the basis of computation is explicit.', cite: '¶3.11.18, p.97' },
   { maps: 'Condition 3', text: 'Carve the investment function out as a department — Dana Haji — kept inside Tabung Haji but regulated by the Securities Commission, with the board holding no power to direct its investments.', cite: '¶4.4.23, p.198 · ¶3.18.3–¶3.18.8, pp.184–185' },
-  { maps: 'Condition 4', text: 'Amend section 26 to exempt Tabung Haji from Act 240 so a private accounting firm can audit its statements, and run a forensic review of past investment decisions.', cite: '¶3.11.17, p.97 · ¶3.14.6, p.139' },
+  { maps: 'Condition 4', text: `Amend section 26 to exempt Tabung Haji from Act 240 so a private accounting firm can audit its statements, and run a forensic review of the ${investmentCount} problematic investments the commission enumerates.`, cite: '¶3.11.17, p.97 · ¶3.14.6, pp.139–155' },
 ];
 
 const timeline = [
@@ -131,6 +96,7 @@ const dataset = [
   ['Special bonuses, TH Properties — 2017', '1.1484', 'The commission', '¶3.12.19, p.103'],
   ['Special bonuses, TH Properties — 2018', '1.045', 'The commission', '¶3.12.19, p.103'],
   ['Unrealised loss on FGV holding', '1,058.94', 'The commission', '¶3.14.6 series, p.155'],
+  ['Problematic investments requiring a forensic review', String(investmentCount), 'The commission', '¶3.14.6, pp.139–155'],
   ['Police reports made by TH management', '4', 'The commission', '¶3.15.1, p.155'],
   ['Matters reported to MACC', '6', 'The commission', '¶3.15.21, pp.163–164'],
   ['Cost of haj per pilgrim, 2003', '15,555 (RM)', 'The commission', '¶3.16.1, p.165'],
@@ -288,6 +254,7 @@ const measureMax = 13;
         {bridge.map((d) => (<li><b>{d.label}</b> {d.note}</li>))}
       </ol>
       <p class="cite">RM million. Computed by PwC, reproduced by the commission · ¶3.13.11, p.111. Zero baseline shown. Hatched marks are counterfactual.</p>
+      <p class="sharebar"><a href={share(1)} download>Share this figure (PNG)</a></p>
     </figure>
 
     <!-- Figure 2 -->
@@ -318,6 +285,7 @@ const measureMax = 13;
       </div>
       <p class="muted small">These span three orders of magnitude, which is why they are set as text rather than bars: on a linear axis the third would be invisible, and on a log axis most readers would misjudge the ratio.</p>
       <p class="cite">RM million. Sensitivity computed by PwC · ¶3.13.8–¶3.13.9, p.110. Trigger policy and the RM1,000 illustration recorded by the commission · ¶3.9.8, p.77.</p>
+      <p class="sharebar"><a href={share(2)} download>Share this figure (PNG)</a></p>
     </figure>
 
     <!-- Figure 3 -->
@@ -366,6 +334,7 @@ const measureMax = 13;
       <p class="muted small"><b>Two bases, same year.</b> The National Audit Department put 2017 liabilities at RM74,409 million against the same RM70,317 million of assets — a wider gap on a different basis (¶3.11.11, pp.93–94). Both belong here; neither is the "true" number.</p>
       <p class="muted small"><b>A figure in circulation that the report contradicts.</b> Coverage put the 2017 hibah at RM2.75 billion. The commission's own table gives annual hibah of RM3,042,184k plus haj hibah of RM281,557k — RM3,323,741 thousand, matching PwC's RM3,324 million (¶3.11.7, p.92). RM2.75 billion does not appear in the report. We use the report's figure.</p>
       <p class="cite">RM million, at 31 December. Computed by PwC, reproduced by the commission · ¶3.13.7, p.109. One linear scale, zero baseline shown.</p>
+      <p class="sharebar"><a href={share(3)} download>Share this figure (PNG)</a></p>
     </figure>
 
     <!-- Five measures -->
@@ -409,6 +378,7 @@ const measureMax = 13;
       <p class="pull">−72% — the fall in cash distributed between 2017 and 2018, from RM3,324m to RM923m. Not a market event: the 2017 figure was the one that should not have been declared.</p>
       <p class="muted small">By 2019 and 2020 the rate had recovered to 3.05% and 3.10%. Tabung Haji declared 3.50% for 2025, its highest in eight years.</p>
       <p class="cite">Rates and amounts from the commission's hibah table · ¶3.11.7, p.92. Percentages are the annual and haj rates combined. One linear scale from zero.</p>
+      <p class="sharebar"><a href={share(4)} download>Share this figure (PNG)</a></p>
     </figure>
 
     <!-- Conditions -->
@@ -473,6 +443,7 @@ const measureMax = 13;
       <p class="muted small">The commission's prose puts the 2030 figure at "up to RM35,000" while the table it reproduces gives RM37,729. We use the table and note the difference. It also projects RM50,000 by 2050.</p>
       <p class="muted small">This is the trade-off inside the recommendation to raise the minimum registration deposit from RM1,300 to RM12,980: the commission's own arithmetic cuts the notional waiting queue from about 130 years to 33, by admitting fewer people to it. A 130-year queue is a register on which most names never come up.</p>
       <p class="cite">RM per pilgrim. TH projection recorded by the commission · ¶3.16.1–¶3.16.2, p.165. Scale starts at RM24,000 and is labelled; this figure shows a projection, not an outcome.</p>
+      <p class="sharebar"><a href={share(5)} download>Share this figure (PNG)</a></p>
     </figure>
 
     <!-- Timeline -->
@@ -665,6 +636,17 @@ const measureMax = 13;
   .num { text-align: right; font-variant-numeric: tabular-nums; }
   .ref { color: var(--text-muted); font-size: var(--text-xs); white-space: nowrap; }
   tr.em td { font-weight: 700; color: var(--text-primary); }
+
+  /* Per-figure share card. A plain download link: no JS, and it works the same
+     whether the reader saves the image or long-presses it on a phone. */
+  .sharebar { margin: 10px 0 0; }
+  .sharebar a {
+    display: inline-block; font-family: var(--font-display); font-size: var(--text-xs);
+    font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--rci-mark); text-decoration: none;
+    border: 1px solid var(--rci-mark); border-radius: 999px; padding: 6px 14px;
+  }
+  .sharebar a:hover, .sharebar a:focus-visible { background: var(--rci-mark); color: var(--card); }
 
   .foot { font-size: var(--text-ui); color: var(--text-tertiary); font-style: italic; margin-top: 26px; }
 
