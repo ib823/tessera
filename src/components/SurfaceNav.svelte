@@ -27,6 +27,17 @@
     <span>Library</span>
     {#if libraryCount > 0}<span class="surface-badge" aria-label={`${libraryCount} items in your library`}>{libraryCount}</span>{/if}
   </button>
+
+  <!--
+    Graphics is a link, not a surface toggle: it leaves the app for /infographics.
+    It sits here rather than in the footer trust row because that row is where a
+    reader checks who we are, not where they look for something to read — three
+    data graphics existed and none was reachable from anywhere a reader looks.
+  -->
+  <a class="surface-button surface-button--graphics" href="/infographics">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"></path><rect x="5" y="11" width="3.6" height="7" rx="1"></rect><rect x="10.2" y="6" width="3.6" height="12" rx="1"></rect><rect x="15.4" y="14" width="3.6" height="4" rx="1"></rect></svg>
+    <span>Graphics</span>
+  </a>
 </nav>
 
 <style>
@@ -77,6 +88,12 @@
 
   .surface-button--library {
     color: var(--score-warning);
+  }
+
+  /* Rendered as an <a>, so it needs the link defaults reset to match the buttons. */
+  .surface-button--graphics {
+    text-decoration: none;
+    color: var(--text-secondary);
   }
 
   .surface-badge {

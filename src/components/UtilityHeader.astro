@@ -1,6 +1,6 @@
 ---
 interface Props {
-  current?: 'about' | 'verify' | 'disclaimer';
+  current?: 'about' | 'verify' | 'disclaimer' | 'infographics';
 }
 
 const { current } = Astro.props;
@@ -35,6 +35,13 @@ const { current } = Astro.props;
 
     <nav class="utility-nav" aria-label="Main navigation">
       <a href="/" class="utility-nav-link">Today</a>
+      <a
+        href="/infographics"
+        class={`utility-nav-link${current === 'infographics' ? ' utility-nav-link--active' : ''}`}
+        aria-current={current === 'infographics' ? 'page' : undefined}
+      >
+        Data Graphics
+      </a>
       <a
         href="/about"
         class={`utility-nav-link${current === 'about' ? ' utility-nav-link--active' : ''}`}
