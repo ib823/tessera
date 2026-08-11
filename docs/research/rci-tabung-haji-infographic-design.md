@@ -5,8 +5,11 @@ Inquiry into Lembaga Tabung Haji (2014–2020), published 29 July 2026. Companio
 to `engine/briefs/tabung-haji-rci-2017-restatement.md`, which holds the
 primary-source findings and page citations.
 
-**Nothing here is built yet.** This document decides *what* to build and *why*,
-so the build is an execution step rather than a series of taste calls.
+This document decided *what* to build and *why*, so the build was an execution
+step rather than a series of taste calls. **It has since been built** — see §9
+for what shipped, what was deferred, and which of the open questions the report
+reading closed. Where the built page departs from this plan, the page is right
+and the departure is recorded in §9.
 
 ## 0. The brief, restated
 
@@ -421,17 +424,37 @@ page number from the report.
 6. Dataset table, method, sources.
 7. `render.mjs` for OG/print, then register in the hub.
 
-## 9. Open decisions for the editor
+## 9. Decisions
 
-1. **Ship before or after issue 2010?** (§7 argues before; it is a judgement call.)
-2. **English-only with Malay terms glossed, or a full BM version?** A full
+1. **Ship before or after issue 2010? — DECIDED 2026-08-10: before.** The graphic
+   publishes first, ahead of the editorial issue. It carries no opinion score and
+   does not enter the 4-stage pipeline; it is bound by the Accuracy Standard,
+   which the brief satisfies. Putting the primary-source record out while the
+   editorial take is still in review is the more honest order, and it means the
+   issue can later link to a published record rather than assert its figures
+   unaided.
+2. **[OPEN] English-only with Malay terms glossed, or a full BM version?** A full
    translation doubles the surface and the maintenance, but this story's most
-   affected audience reads Malay first.
-3. **How prominent is the withholding?** It is the strongest reframe and the
-   highest political risk. Options: a section (recommended), a single timeline
-   row, or the hero. The hero would be an editorial verdict.
-4. **Does sections 3.14–3.16 reading change the page?** Problem investments, staff
-   bonuses, and the HAFIS liability are still only sampled in the brief.
+   affected audience reads Malay first. Shipping in English does not foreclose it.
+3. **[OPEN] How prominent is the withholding?** Currently a timeline section,
+   which is where it shipped. Promoting it to the hero would be an editorial
+   verdict rather than a presentation choice.
+4. **[CLOSED] Sections 3.12 and 3.14–3.16 read 2026-08-09.** They changed the
+   page: the bonus, police-report and MACC-referral claims moved from press
+   sourcing to paragraph citations, the RM2.19m figure was corrected to a
+   two-year sum, "replace the Auditor-General" was corrected to a statutory
+   exemption under Act 240, and the haj-cost projection became Figure 5.
+5. **[CLOSED] The count of problematic investments is 14**, counted from the
+   report (¶3.14.6, pp.139–155) rather than inherited from coverage.
+
+### Shipped, and what was deferred
+
+Shipped: the page at `/infographics/rci-tabung-haji`, five inline SVG figures,
+the full dataset table, an OG card, and a per-figure share card for each figure.
+Zero client JavaScript, no external hosts, theme-aware through `tokens.css`.
+
+Deferred deliberately, neither changing a number: the scroll-driven reveal on
+Figure 1, and a Bahasa Malaysia edition.
 
 ## 10. Sources
 
