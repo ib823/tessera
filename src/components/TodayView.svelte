@@ -397,8 +397,6 @@
           <a href="/disclaimer">Disclaimer</a>
           <span class="footer-dot" aria-hidden="true">&middot;</span>
           <a href="/verify">Verify Content</a>
-          <span class="footer-dot" aria-hidden="true">&middot;</span>
-          <a href="/infographics">Data Graphics</a>
         </nav>
       </footer>
     {:else}
