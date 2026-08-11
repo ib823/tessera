@@ -4,10 +4,11 @@
 **Proposed issue ID:** 2010
 **Radar provenance:** silence-watch fresh-track F7 (silence 0.92, structural importance 0.62,
 first seen 2026-07-30); develop-list pick A1, 2026-08-03 curation
-**Source date:** 2026-08-03
-**Brief status:** Phase 1 complete, awaiting approval. Two primary documents are
-**identified but not yet opened** (see VERIFICATION GAPS) — no card may quote them until
-they are.
+**Source date:** 2026-08-09 (was 2026-08-03; refreshed when the report itself was opened)
+**Brief status:** Phase 1 complete. **The blocking gap is closed** — the RCI report [P1] was
+retrieved and read on 2026-08-09 after twenty-one failed attempts across three sessions. The
+findings below marked ✅ are now quoted from the commission's own text with page citations.
+Stage 1 may begin. Awaiting user approval to proceed.
 
 ## ISSUE
 
@@ -48,6 +49,233 @@ while identifying breaches of Act 535. T4A must mirror that: no naming of indivi
 wrongdoers, no assertion of criminality, "alleged" and "the commission found" throughout.
 The three religious affairs ministers named by Bernama held office during the period; naming
 them as officeholders is factual, naming them as culpable is not.
+
+## PRIMARY SOURCE — READ 2026-08-09 ✅
+
+**How it was retrieved (record this; the next session should not have to rediscover it).**
+The twenty-one prior failures were not an outage, a block, or a wrong URL. `www.islam.gov.my`
+serves a leaf certificate issued by **GlobalSign ECC OV SSL CA 2018** but sends the **RSA**
+intermediate in its chain — a server misconfiguration. Every fetcher correctly rejected it
+with "unable to get local issuer certificate", which reads like a proxy trust failure and is
+not one. Fix: pull the correct intermediate named in the leaf's AIA extension
+(`http://secure.globalsign.com/cacert/gseccovsslca2018.crt`), append it to the session CA
+bundle, and pass that as `--cacert`. The origin then answers, though it 403s a default curl
+UA — send a browser `User-Agent`. `jakim.gov.my` remains denied at the egress gateway (502 on
+CONNECT); `www.islam.gov.my` is the reachable host.
+
+**Where the report actually lives.** JAKIM published no PDF. The announcement page's only
+document link is a FlipHTML5 flipbook, **linked from the government's own page** as
+"📖 Baca Laporan RCI Tabung Haji", uploaded by **"UNIT KOMUNIKASI KORPORAT (ISLAM)"** —
+JAKIM's corporate communications unit. The flipbook is therefore the official publication
+channel, not a third-party mirror. Its page manifest is obfuscated; it decodes with
+FlipHTML5's own `deString.js` WASM module (`_DeString`), yielding 252 page images at
+`files/large/<md5>.webp`. Report page N = flipbook image N+38.
+
+**Front matter, verified.** Title: *Laporan Suruhanjaya Siasatan Diraja bagi Menyiasat Isu
+Pengurusan dan Operasi Lembaga Tabung Haji dari Tahun 2014 hingga 2020*. **Presented to the
+Yang di-Pertuan Agong Al-Sultan Abdullah on 30 Ogos 2022** (title page). Six commissioners:
+**Tun Md Raus bin Sharif (Pengerusi)**, Tan Sri Samsudin bin Osman, Tan Sri Abdul Rashid bin
+Hussain, Tan Sri Dr. Mohd. Munir bin Abdul Majid, Profesor Dr. Asmadi bin Mohamed Naim,
+Norsyahrin bin Hamidon. Secretary: Datuk Hajah Hakimah binti Mohd Yusoff (now JAKIM
+Director-General) (p. ix). Structure: Ringkasan Eksekutif (p. xi), four chapters, exhibit
+list; **25 recommendations at 4.4.1–4.4.25**.
+
+### The restatement, in the commission's own words ✅ (para 3.13.11, p. 111)
+
+> "…bagi tahun kewangan 2017, sekiranya piawaian MFRS digunapakai secara sepenuhnya, LTH
+> sepatutnya merekodkan **kerugian bersih RM1.4 bilion**, berbanding keuntungan sebanyak
+> **RM3.4 bilion** seperti yang direkodkan dalam Penyata Kewangan 2017."
+
+The same paragraph reproduces PwC's reconciliation verbatim (RM'million): profit for 2017
+**3,412**; less impairment on AFS equity investments **(4,258)**; less impairment on AFS debt
+securities **(7)**; less other adjustments **(580)**; total **(4,845)**; **adjusted loss
+(1,433)**. And: retained earnings at 31.12.2017 **162**, less adjustments **(4,845)**,
+**adjusted accumulated loss 4,683**. Both headline numbers are now traced to the primary
+document, not to press summaries.
+
+### The mechanism — better than the RAV story the brief was built on ✅
+
+1. **The impairment-policy switch (paras 3.9.8 p. 77, 3.13.8–3.13.9 p. 110).** LTH recognised
+   impairment only when an investment's market value had fallen **70%** below cost. In
+   financial year 2017 that threshold was moved to **85%**, then to **90%** — the report notes
+   the changes happened **twice in one year**. The commission reproduces PwC's sensitivity:
+   at the >70%/>24-month test the impairment charge would have been **RM1,313 million**; at
+   >85% it was **RM171 million**; at >90% it was **RM1 million**. LTH recorded **RM1.0
+   million**. The report's own illustration: a RM1,000 shareholding was impaired only once it
+   fell to **RM100**.
+2. **The equity/liability misclassification (para 3.11.12, p. 94).** Depositors' funds
+   (Kumpulan Wang Pendeposit) had been classified as **equity** in the financial statements
+   **since 2010**. The commission calls this "satu representasi salah" — a misrepresentation —
+   and says it should have been classified as a **liability**.
+3. **Why that mattered (para 3.11.13, p. 94).** Because depositors' funds sat in equity *and*
+   impairment was insufficient, the annual statements showed assets exceeding liabilities,
+   "dan dengan itu membolehkan keuntungan (hibah) diisytiharkan mengikut **seksyen 22(3)(a)
+   Akta 535**." The statutory gate was cleared by the presentation of the accounts, not by the
+   condition the section actually tests.
+4. **The RAV finding (para 3.11.9, p. 93).** The commission holds that hibah paid 2014–2017 on
+   the basis of realisable asset value "adalah tidak selaras dengan kehendak seksyen 22 Akta
+   535", because RAV is not a computation compliant with generally accepted accounting
+   standards.
+5. **The distribution-basis switch (para 3.9.9, p. 77).** For 2017 the hibah calculation was
+   changed from monthly average balance to annual average balance, announced **7 February
+   2018**, then **withdrawn after negative depositor reaction**; the monthly basis was
+   reinstated. Effect: LTH paid out **RM600 million more** than it otherwise would have.
+   Corroborated at 3.11.10 (p. 93) by JAN Deputy Director of Financial Audit **Mona binti
+   Othman**: capacity was **RM2.70 billion** (4%, annual minimum balance); the board moved to
+   monthly minimum balance at **6.25%**, paying **RM3.31 billion** — exceeding capacity by
+   **RM0.61 billion (22.5%)**.
+
+### The auditor thread, confirmed and sharper than the brief assumed ✅
+
+- **Para 3.11.11 (pp. 93–94):** KAN found that the 2017 statements showed **assets RM70.317
+  billion against liabilities RM74.409 billion**, "situasi yang sama juga ditunjukkan pada
+  tahun 2015 dan 2016, tetapi LTH masih mengisytiharkan agihan keuntungan (hibah) walaupun
+  syarat yang diperuntukkan di bawah seksyen 22 Akta 535 tidak dipenuhi."
+- **Para 3.11.14 (p. 94):** the commission states flatly that the 2017 financial statements
+  **"tidak seharusnya diberikan Sijil Audit Bersih"** — should not have been given a clean
+  audit certificate — and that the matters recorded as an *Emphasis of Matter* should have
+  been stated by JAN as **serious non-compliance**.
+- **Para 3.13.5 (p. 108)** quotes the KAN Emphasis of Matter of **16 July 2018** verbatim:
+  impairment policy inconsistent, changed twice in FY2017; **RM227.81 million** of impairment
+  not recorded across 3 subsidiaries and 3 associates, of which **RM164.58 million** relates
+  to **TH Heavy Engineering Berhad**.
+
+This is stronger than the brief's earlier framing. The auditor did not merely lack firmness:
+the commission says the certificate itself was wrong.
+
+### Systemic risk — the argument for the 2018 rescue ✅ (paras 3.13.13–3.13.17, pp. 112–114)
+
+The commission sets out why the deficit had to be closed before 31 December 2018: without a
+hibah, LTH faced a possible **bank run** across then **9.2–9.3 million depositors**, forcing
+fire-sales that would hit the banking system, bond market, equity market and property market;
+failing that, the **section 24 government guarantee** would have to be activated, becoming a
+first charge on the Fund and a debt to the Government, with a stated risk to the **sovereign
+credit rating**. Deposits are put at **RM88 billion**, expected to reach RM100 billion within
+two years (paras 3.13.16 p. 114, 3.18.7 p. 185). Cabinet approved the recovery plan on
+**7 December 2018**; the PM approved the transfer on **19 December 2018**; **UJSB was
+incorporated on 14 December 2018** (para 3.13.1–3.13.2, p. 107). The commission records that
+losses had grown to **RM10 billion**, forcing the Government to act "dengan kadar segera"
+(para 3.13.12, p. 111).
+
+### Political interference — the commission's own characterisation ✅ (Ringkasan Eksekutif, paras 9–17, pp. xiii–xv)
+
+- Act 535 gives the Minister broad powers over haj operations, funds and investments. The
+  responsible minister is the Minister in the Prime Minister's Department (Religious Affairs);
+  the commission found the expertise of **all three** religious affairs ministers across the
+  period was **confined to religious affairs**, leaving the minister "bergantung sepenuhnya"
+  on management's proposals on fund and investment matters. It recommends the supervisory
+  power be **shared with the Minister of Finance** (para 10, pp. xiii–xiv).
+- **Section 6(2)** requires only that a board member be **Muslim and a Malaysian citizen** —
+  no competence criterion. On that latitude, "**pelantikan seorang Pengerusi LTH dan beberapa
+  anggota Lembaga yang dilantik dalam kalangan ahli politik bagi tempoh 2014 hingga 2018**"
+  followed (para 12, p. xiv).
+- **Para 13 (p. xiv):** decisions including **hibah payments, haj fare setting, and HAFIS**
+  were "**didorong oleh unsur-unsur politik**" — driven by political elements.
+- The Act lets the Minister revoke a board appointment at any time **without giving reasons**;
+  the commission records two uses: termination of CEO **Datuk Nik Mohd Hasyudeen bin Yusoff**
+  on 5 May 2021 before his term ended 31 August 2021, and of chairman **Tan Sri Md Nor bin Md
+  Yusof** on 15 October 2021 before his renewed two-year term expired (paras 14–15, pp.
+  xiv–xv).
+
+### What the commission recommends ✅ (para 4.4, pp. 192–199)
+
+Twenty-five recommendations. The load-bearing ones: amend Act 535 to set **competence criteria
+for board members**, and to **bar active politicians from serving as chairman or board member
+of LTH and its subsidiaries** (4.4.1(a)–(c)); require reasons before any board member's
+appointment is revoked (4.4.1(d)–(e)); carve the investment function out as a department
+called **Dana Haji**, kept inside LTH but regulated by the **Securities Commission Malaysia**,
+with the board having **no power to direct its investments** (4.4.23, p. 198; 3.18.3–3.18.8,
+pp. 184–185); keep LTH out of high-risk and "strategic" investments (4.4.24, p. 198); limit
+large withdrawals with one month's notice and restrict haj subsidy to those who need it
+(p. 198; the recommendation's number runs back to the previous page and was not read — cite
+the page, not the paragraph number, until confirmed); raise the Muassasah registration minimum from **RM1,300** to the current
+**RM12,980**, which the commission says would cut the haj waiting time from **130 years to 33
+years** (4.4.22, p. 198); and strengthen governance "**tanpa campur tangan politik**" (4.4.25,
+p. 199).
+
+The commission **rejected** proposals to break LTH up into separate entities, holding that the
+institution should be kept as it is and the weaknesses fixed without major structural change
+(para 4.3, pp. 191–192).
+
+### Sections 3.12 and 3.14–3.16 — read 2026-08-09, gap 7 closed ✅
+
+Every claim below had been press-sourced in earlier drafts and is now paragraph-cited.
+
+- **Bonuses — "up to 13 months' salary" and RM74 million confirmed (para 3.12.9, p. 100).**
+  The 2014 extraordinary bonus proposal ran at **one to eleven months' salary** as annual
+  bonus **plus two months** as a special bonus, "dengan jumlah keseluruhan boleh mencecah
+  **tiga belas bulan gaji**", involving an allocation of **RM74 juta**. The same paragraph
+  records that bonus approval passed through **three levels — the Board, the Minister of
+  Religious Affairs, and MOF** — and that the two ministers routinely approved what
+  management and the Board proposed.
+- **Why the bonuses were large (para 3.12.13, p. 102).** The commission ties them directly to
+  the RAV valuation: high bonuses followed because LTH valued its assets on RAV, which showed
+  large profits. This is the same mechanism as the hibah, applied to staff pay.
+- **Balancing fact (para 3.12.14, p. 102).** From financial year 2018 onward, bonuses have been
+  controlled against LTH's financial capacity. Carry this wherever the bonus figure is used.
+- **RM2.19 million resolved (para 3.12.19, p. 103).** The figure is the **sum of two years** of
+  *bonus istimewa* to selected individuals: **RM1,148,400 (2017) + RM1,045,000 (2018) =
+  RM2,193,400**. It is not a single payment. The 2017 award was approved at a TH Properties
+  Exco meeting of **12 April 2017**; four attendees are named in the report. **Do not name
+  them** — no charges exist.
+- **Problem investments (paras 3.14.1–3.14.6, pp. 138–139).** The commission found
+  "**transaksi yang mencurigakan dan penyembunyian maklumat**" — suspicious transactions and
+  concealment of information. Investment decision-making was disorderly with no coordination
+  between the CIO, corporate finance head, chief property officer and treasury head; the
+  Investment Panel did not scrutinise proposals adequately; and its chairman **Dato' Mohzani**
+  admitted the panel was not firm enough. Ministers relied entirely on Board memos, and every
+  document showed "dipersetujui seperti dicadangkan". At **para 3.14.6 (p. 139)** the
+  commission recommends a **forensic review**, then enumerates the investments needing one,
+  beginning "(1) PT TH Indo Plantations". **The widely reported count of "14" is NOT
+  confirmed** — the list runs to about p. 155 and has not been counted. Do not publish 14.
+- **FGV (p. 155).** Unrealised loss of **RM1,058,937,380**. UJSB took over 283,710,100 FGV
+  shares at cost RM4.62/unit (RM1,310,020,819) when the market price was about RM0.69 (Feb
+  2022); without that, LTH would have borne roughly **RM1.1 billion**.
+- **Accountability (para 3.14.7, p. 155).** The commission's view is that every board member,
+  subsidiary director, manager and staff member involved **should be held accountable** for the
+  losses. Strong language, and notable given no charges have followed.
+- **Four police reports confirmed (para 3.15.1, p. 155).** LTH management began an internal
+  investigation in mid-2018 and made **four police reports**.
+- **Six MACC matters confirmed (para 3.15.21, pp. 163–164).** The list runs (a) to (f):
+  alleged corruption in TH Plantation's purchase of Ladang Weida Bhd; alleged misappropriation
+  and abuse of power in the leasing of Restoran Opah at KL Sentral; the same for Restoran Nasi
+  Dalca at LTH headquarters; alleged misappropriation and corruption by a former Chief
+  Operating Officer over renovations; alleged falsification of rubber-seedling supply documents
+  at Ladang TH-Usia Jatimas, Sandakan; and alleged misconduct by officers of THP Bina and THP
+  Timur. **Para 3.15.22:** MACC investigations were still ongoing and the commission said MACC
+  should be given room to complete them.
+- **Haj cost — the forward-looking finding (paras 3.16.1–3.16.2, p. 165).** Cost per pilgrim
+  rose from **RM15,555 (2003)** to **RM25,540 (2022)**. TH's projection, reproduced by the
+  commission: 2022 **25,540**, 2023 **26,280**, 2024 **28,160**, 2025 **29,570**, 2026
+  **31,040**, 2027 **32,592**, 2028 **34,221**, 2029 **35,932**, 2030 **37,729**; and up to
+  **RM50,000 by 2050**. ⚠️ **Internal inconsistency in the report:** the prose at 3.16.1 says
+  the 2030 cost will reach "sehingga RM35,000" while the table at 3.16.2 gives RM37,729. Use
+  the table and disclose the difference.
+- **Private auditor recommendation confirmed (para 3.11.17, p. 97).** The commission
+  recommends amending **s.26 of Act 535** to exempt LTH from the **Statutory Bodies (Accounts
+  and Annual Reports) Act 1980 [Act 240]**, so that LTH may appoint a **private accounting
+  firm** to audit its financial statements. Phrase it that way — "replace the Auditor-General"
+  is a press paraphrase of a statutory-exemption recommendation.
+- **Section 22 amendment (para 3.11.18, p. 97).** Amend s.22 so the computation of distributable
+  profit is explicit, because the present wording "boleh disalahtafsirkan" and was used to
+  justify distributions without regard to LTH's financial capacity.
+
+### The finding the coverage has largely missed ✅ (para 4.6, p. 199)
+
+> "Suruhanjaya berharap Kerajaan akan menimbang supaya laporan Suruhanjaya ini **diumumkan
+> kepada awam** mengikut mana-mana bahagian yang bersesuaian."
+
+The commission asked, in the report itself, that the Government consider publishing it. That
+request was made in the document presented on **30 August 2022**. Publication came on
+**29 July 2026** — three years and eleven months later. The reason the Prime Minister gave in
+July 2026 was that earlier release could have caused depositors to lose confidence and
+withdraw; the commission had itself set out that same bank-run risk at 3.13.14 as the reason
+the 2018 rescue was urgent. The withholding rationale and the rescue rationale are the same
+argument, deployed eight years apart.
+
+**This is the strongest available reframe** and it is fully primary-sourced: the body that
+investigated asked for publication; the depositors whose money it concerned were the stated
+reason for withholding it from them.
 
 ## PERIOD
 
@@ -170,10 +398,43 @@ them as officeholders is factual, naming them as culpable is not.
 
 - **RM3.4 billion** — profit reported by TH for FY2017. [S1, S2, S3]
 - **RM1.4 billion** — net loss the RCI says FY2017 should have shown under full MFRS. [S1, S3, P6]
-- **RM2.75 billion** — cost of the FY2017 distribution: 4.50% hibah plus 1.75% haj hibah. [S5, S9]
-- **RM70.3 billion assets vs RM74.4 billion liabilities; RM4.1 billion deficit** — PwC's 2017
-  position. [S12 lead, to confirm against P1]
-- **RM4.7 billion** — PwC's accumulated losses by end-2017. [S3]
+- **RM3.324 billion** — cost of the FY2017 distribution, from the commission's own reproduction
+  of the PwC table at para 3.13.7 (p. 109). ✅ **CORRECTION:** the earlier
+  draft of this brief carried **RM2.75 billion** for the FY2017 distribution, sourced to press
+  reporting [S5, S9]. The report does not support it. **Do not publish RM2.75 billion.** The
+  distribution series in the report reads (RM'million): 2013 **2,632**, 2014 **3,237**, 2015
+  **3,220**, 2016 **2,871**, 2017 **3,324**.
+
+  ✅ **RESOLVED 2026-08-09 (second pass).** The commission's own hibah table at **para 3.11.7,
+  p. 92** settles it. For 2017 it gives rate **4.50 + 1.75**, annual hibah **RM3,042,184k**,
+  haj hibah **RM281,557k**, **total RM3,323,741k** — i.e. RM3.32 billion, matching PwC's
+  RM3,324m. **RM2.75 billion appears nowhere in the report's table.** It is a press figure
+  that the commission's own arithmetic contradicts, and it must not be attributed to the
+  commission. Full table (rate %, total RM'000): 2014 **6.25+2.00 → 3,237,196**; 2015
+  **5.00+3.00 → 3,220,374**; 2016 **4.25+1.50 → 2,870,822**; 2017 **4.50+1.75 → 3,323,741**;
+  2018 **1.25 → 922,959**; 2019 **3.05 → 2,140,538**; 2020 **3.10 → 2,242,141**. The
+  **2017 → 2018 fall of 72%** is the sharpest single fact in the series.
+- **The full PwC five-year position is available** and was read in full at para 3.13.7
+  (p. 109) — it is not a single-year snapshot. RM'million, 2013 → 2017. Assets: 48,778 /
+  54,751 / 60,196 / 64,321 / 70,317. Liabilities incl. depositors' saving fund: (43,696) /
+  (51,866) / (60,062) / (65,581) / (71,086). Shortfall/(surplus) pre-distribution: 5,082 /
+  2,885 / 134 / (1,260) / (769). Distribution declared: (2,632) / (3,237) / (3,220) /
+  (2,871) / (3,324). Post-distribution: 2,450 / (352) / (3,086) / (4,131) / (4,093). ✅
+  **2013 is in surplus and 2014 is the crossover year** — the series carries the finding far
+  better than the 2017 column alone.
+- **RM70.317 billion assets vs RM74.409 billion liabilities** — the 2017 position, and
+  ✅ **attribution corrected**: these are **KAN's audit findings** as recorded by the commission
+  at para 3.11.11 (pp. 93–94), not PwC's. PwC's own table (3.13.7, p. 109) states 2017 assets
+  **70,317** against liabilities and depositors' saving fund **(71,086)** pre-distribution, a
+  shortfall of **(769)**, becoming **(4,093)** after the 3,324 distribution. The RM4.1 billion
+  figure is the **post-distribution** shortfall — never describe it as the pre-distribution gap.
+- **RM4.683 billion** — adjusted accumulated loss at 31.12.2017 per PwC, reproduced at para
+  3.13.11 (p. 111). Round to **RM4.7 billion** only with the measure named. ✅
+- **RM1,313 million → RM171 million → RM1 million** — impairment charge at the >70%, >85% and
+  >90% policy thresholds; LTH recorded RM1.0 million for 2017 (paras 3.13.8–3.13.9, p. 110). ✅
+- **RM37.52 billion** — total hibah including haj hibah distributed to depositors 1966–2021;
+  **1.46 million** Malaysians taken on haj 1963–2021; **RM2.02 billion** in HAFIS subsidy since
+  2001; **8.6 million** depositors as at 22 July 2022 (para 4.2, p. 191). ✅
 - **RM227.81 million** — impairment losses not recognised across subsidiaries and associates,
   of which **RM164.58 million** relates to TH Heavy Engineering Bhd. [S5]
 - **RM74 million** — 2014 staff bonus allocation, at up to 13 months' salary (11 annual +
@@ -242,12 +503,12 @@ card.
    gives 1.25% (2018) → 3.25% (2024); the 1 August statement gives 3.10% (2023) → 3.50%
    (2025), "highest in eight years". Not contradictory, but different windows chosen for
    different arguments. Use one series and date it.
-4. **How long was the report withheld?** The commission's term ended 19 July 2022 and
-   publication was 29 July 2026 — about four years. But Anwar's own framing on 24 July 2026
-   was "three years ago, we were not in a position to publish", and the submission date to
-   the King is not yet established. **Do not publish a duration** until the submission date
-   is traced to the report or an official statement. Say "published on 29 July 2026, more
-   than four years after the commission was appointed" — that span is documented.
+4. **How long was the report withheld? — ✅ RESOLVED.** The report's own title page records
+   that it was **presented to the Yang di-Pertuan Agong on 30 Ogos 2022**. Publication was
+   **29 July 2026**. The withholding period is therefore **three years and eleven months**,
+   and that is now safe to publish. Anwar's "three years ago, we were not in a position to
+   publish" (24 July 2026) is consistent — it describes when the decision was revisited, not
+   the length of the delay.
 5. **2018 transfer value.** Market value reported as RM9.63 billion (UJSB/The Edge) and
    RM9.7 billion (TH). Consideration RM19.9 billion in both. Use RM9.63 billion with the
    UJSB attribution, or round consistently and attribute.
@@ -275,10 +536,17 @@ depositor voice is exactly the omission T4A exists to correct.
 
 **Primary** (official documents, official publications, institutional statements)
 
-- **[P1] RCI report on Tabung Haji, 2014-2020** — 211 pages, published by JAKIM,
-  29 July 2026. Announcement:
-  https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-...
-  **NOT YET OPENED** — the JAKIM portal returned 503 on two attempts. Blocking for Phase 2.
+- **[P1] Laporan Suruhanjaya Siasatan Diraja bagi Menyiasat Isu Pengurusan dan Operasi
+  Lembaga Tabung Haji dari Tahun 2014 hingga 2020** — presented to the Yang di-Pertuan Agong
+  **30 Ogos 2022**; reclassified OPEN under s.2C, Akta Rahsia Rasmi 1972 [Akta 88] by Cabinet
+  decision of **29 Julai 2026**, which directed JAKIM to publish it. ✅ **OPENED AND READ
+  2026-08-09.**
+  Announcement page: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022
+  Document (the official link from that page, uploaded by JAKIM's Unit Komunikasi Korporat):
+  https://online.fliphtml5.com/kaxni/WJD22-0447-Laporan-Suruhanjaya-RCI-1f93/
+  252 page images; report page N = image N+38. Retrieval method and the certificate-chain fix
+  are documented under PRIMARY SOURCE above. Cite as: *Laporan RCI Tabung Haji* (2022), para
+  X.Y.Z, p. N.
 - **[P2] Tabung Haji Act 1995 (Act 535)**, Laws of Malaysia, online version of updated text
   of reprint, as at 1 December 2011, Attorney General's Chambers — landing page
   https://lom.agc.gov.my/act-detail.php?language=BI&act=535; PDF at
@@ -336,9 +604,10 @@ depositor voice is exactly the omission T4A exists to correct.
 - **[S10]** Malaysiakini / Sinar Harian, 211-page report published, 29-30 Jul 2026 —
   https://www.malaysiakini.com/news/780940
 - **[S11]** New Straits Times, MACC task force and probe at TH headquarters, 30 Jul 2026
-- **[S12]** Reporting of the PwC 2017 position (RM70.3b vs RM74.4b). **Weakest link in the
-  chain** — currently traced only through aggregator summaries. Must be confirmed against
-  P1 or a 2018-2019 ministerial statement before use.
+- **[S12]** ~~Reporting of the PwC 2017 position (RM70.3b vs RM74.4b).~~ **SUPERSEDED
+  2026-08-09** — the figures are now read directly from P1 (paras 3.11.11 p. 93 and 3.13.7
+  p. 109), and the attribution has changed: RM70.317b / RM74.409b is **KAN's** finding, not
+  PwC's. Cite P1. Do not cite S12.
 - **[S13]** Asia Asset Management, "Malaysia's Tabung Haji sells property assets to
   government for 19.9 billion ringgit", 2018
 - **[S14]** Malay Mail op-ed, "What Tabung Haji's buyback is really telling us" — Mohamed
@@ -380,24 +649,57 @@ depositor voice is exactly the omission T4A exists to correct.
    for — but it can independently establish several of the same specifics. Gap 1 remains open
    and the issue remains held.
 
-   **Status: the issue is HELD**, per this brief's closing rule, on the user's explicit
-   decision of 2026-08-03. Retry on each session check-in; begin Stage 1 the moment the PDF
-   opens. Do not substitute press summaries, and note that several search results purporting
-   to summarise the report's contents are AI-authored social posts — non-primary under the
-   Accuracy Standard and not usable even as corroboration.
+   **2026-08-09 — ✅ CLOSED. The report was opened and read.** The twenty-first attempt
+   succeeded once the failure was diagnosed correctly: it was never a block or an outage, it
+   was a **broken certificate chain on the origin** (leaf issued by GlobalSign *ECC* OV SSL CA
+   2018, RSA intermediate served). Supplying the correct intermediate from the leaf's AIA
+   extension makes `www.islam.gov.my` reachable; a browser User-Agent clears the WAF 403. The
+   announcement page then reveals that JAKIM published **no PDF at all** — the official
+   document link is a FlipHTML5 flipbook uploaded by JAKIM's own communications unit, which is
+   why four days of hunting for a `.pdf` found nothing. Full method, and the page-cited
+   findings, are in **PRIMARY SOURCE — READ 2026-08-09** above. The Hansard fallback is no
+   longer needed for gap 1, though the 11 Aug 2026 sitting remains worth capturing for
+   post-publication reaction.
+
+   Retained as a standing warning: several search results purporting to summarise the report's
+   contents are machine-authored social posts — non-primary under the Accuracy Standard and
+   not usable even as corroboration. One of them misstates where the document is hosted.
 2. **[CLOSED 2026-08-03] Extract s.22(3)(a) verbatim from the AGC reprint [P2].** Done — full
    text of s.22(1) and s.22(3)(a)-(b) is now quoted in RELEVANT LAW above, pulled from the
    Act 535 PDF at `lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/`. The extraction corrected
    three errors in this brief's earlier paraphrase; see that section. One residual: confirm no
    post-2011 amendment altered s.22 before FY2017.
 3. **Pull TH's FY2017 annual report [P3]** for the reported profit and the declared rates.
-4. **Confirm the PwC 2017 asset/liability figures [S12]** against a primary source, or drop
-   them and rely on the restatement alone.
-5. **Establish the submission date** so the withholding period can be stated accurately, or
-   avoid stating a duration (see CONTRADICTIONS 4).
-6. **Fill two spectrum gaps:** an opposition-bloc response and a depositor or
-   pilgrim-association voice.
+   **Downgraded to optional** — the reported RM3.412 billion profit and the 2013–2017
+   distribution series are now read from P1 itself (paras 3.9.2, 3.13.7, 3.13.11).
+4. **[CLOSED 2026-08-09] Confirm the 2017 asset/liability figures.** Done, with an attribution
+   correction: RM70.317b vs RM74.409b is **KAN's** finding (para 3.11.11), not PwC's. See
+   KEY STATISTICS.
+5. **[CLOSED 2026-08-09] Establish the submission date.** Presented to the Yang di-Pertuan
+   Agong on **30 Ogos 2022** (title page). Withholding period: three years, eleven months.
+6. **[STILL OPEN] Fill two spectrum gaps:** an opposition-bloc response and a depositor or
+   pilgrim-association voice. Neither is blocking, but a fund story with no depositor voice is
+   exactly the omission T4A exists to correct — fill before Stage 1 if practical.
+7. **[CLOSED 2026-08-09] Sections 3.12 and 3.14–3.16.** Read; see the section above. All
+   previously press-sourced claims are now paragraph-cited, with two corrections: RM2.19m is
+   the **sum of two years** of special bonuses, and "replace the Auditor-General" is more
+   precisely a recommendation to exempt LTH from Act 240 so a private firm may audit.
+8. **[CLOSED 2026-08-10] The "14 problematic investments" count — confirmed at 14.** ✅ The
+   enumerated list at para 3.14.6 runs **(1) PT TH Indo Plantations (p. 139)** through
+   **(14) FGV Berhad (p. 154)**, and §3.14 closes with the commission's view at para 3.14.7
+   (p. 155), so (14) is the last. Entries confirmed by direct reading at four points across
+   the range: (1) p. 139, **(4) Deru Semangat Sdn. Bhd.** p. 142, **(12) Alam Maritim
+   Resources / TH Marine** p. 152, (14) p. 154 — roughly one per page, consistent with
+   contiguous numbering. **The press figure of 14 is correct and may now be published**, cited
+   to para 3.14.6, pp. 139–155.
+   Also captured from that range: **(4)** RM526.16m approved for a Pahang oil-palm joint
+   venture, of which RM257m had been paid out by January 2021; **(12)** RM334m in TH Marine;
+   the Al-Rawda hotel leases in Makkah and Madinah at SR1,426m with SR560.7m of rent in
+   arrears by end-2021; and at p. 152 the RM2.2m of special bonuses paid in 2017–2018 to TH
+   Properties management and board **without LTH's approval as principal shareholder**, which
+   TH Properties' own board resolved on 12 August 2020 to recover.
 
-If gaps 1 and 2 cannot be closed, the issue should be **held**, not softened. The restatement
-claim is well corroborated, but T4A's standard is a primary source, and for a 3R-adjacent
-institution the bar is higher, not lower.
+**Status: the issue is no longer held.** Gaps 1, 4 and 5 are closed against the primary
+document; gap 2 was closed on 2026-08-03. Stage 1 may begin on the user's approval. The
+standing rule still applies: for a 3R-adjacent institution the verification bar is higher, not
+lower — every card must cite the report paragraph, not a press summary of it.

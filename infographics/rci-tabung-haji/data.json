@@ -1,0 +1,105 @@
+{
+  "_comment": "Single source of truth for the RCI Tabung Haji data graphic. Read by src/pages/infographics/rci-tabung-haji.astro and by the render scripts in this directory, so the page and the share cards can never drift. Every figure carries the paragraph and page it comes from. RM million unless stated.",
+  "source": {
+    "title": "Laporan Suruhanjaya Siasatan Diraja bagi Menyiasat Isu Pengurusan dan Operasi Lembaga Tabung Haji dari Tahun 2014 hingga 2020",
+    "presented": "2022-08-30",
+    "published": "2026-07-29",
+    "url": "https://online.fliphtml5.com/kaxni/WJD22-0447-Laporan-Suruhanjaya-RCI-1f93/",
+    "announcement": "https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022"
+  },
+  "page": {
+    "path": "/infographics/rci-tabung-haji",
+    "host": "thefourthangle.pages.dev"
+  },
+
+  "bridge": {
+    "cite": "¶3.13.11, p.111",
+    "computedBy": "PwC, reproduced by the commission",
+    "steps": [
+      { "label": "Reported profit", "value": 3412, "kind": "observed",
+        "note": "The figure depositors were told, and the figure the 2017 distribution was declared on." },
+      { "label": "Equity write-downs", "value": -4258, "kind": "counterfactual",
+        "note": "Available-for-sale shareholdings carried above what they were worth. Larger than the reported profit on its own." },
+      { "label": "Debt instruments", "value": -7, "kind": "counterfactual",
+        "note": "Fixed-income holdings. Shown at a minimum visible height so it does not disappear." },
+      { "label": "Other adjustments", "value": -580, "kind": "counterfactual",
+        "note": "Property fair-value losses and income recognised but not received." },
+      { "label": "Restated loss", "value": -1433, "kind": "counterfactual",
+        "note": "A swing of RM4.8 billion inside one financial year, produced entirely by accounting choices." }
+    ]
+  },
+
+  "threshold": {
+    "cite": "¶3.13.8–¶3.13.9, p.110 · ¶3.9.8, p.77",
+    "computedBy": "PwC sensitivity; illustration recorded by the commission",
+    "ladder": [
+      { "value": "RM1,000", "label": "what it cost", "triggered": false },
+      { "value": "RM300", "label": "−70% · the trigger entering 2017", "triggered": true },
+      { "value": "RM150", "label": "−85% · first revision", "triggered": true },
+      { "value": "RM100", "label": "−90% · the trigger by year-end", "triggered": true }
+    ],
+    "charges": [
+      { "at": "−70%", "value": 1313, "note": "charge if the trigger had stayed at −70%" },
+      { "at": "−85%", "value": 171, "note": "charge at −85%" },
+      { "at": "−90%", "value": 1, "note": "charge at −90%" },
+      { "at": "recorded", "value": 1.0, "note": "what TH recorded for FY2017" }
+    ]
+  },
+
+  "position": {
+    "cite": "¶3.13.7, p.109",
+    "computedBy": "PwC, reproduced by the commission",
+    "auditBasisNote": "The National Audit Department put 2017 liabilities at RM74,409 million against the same RM70,317 million of assets — a wider gap on a different basis (¶3.11.11, pp.93–94).",
+    "years": [
+      { "year": 2013, "assets": 48778, "liabilities": 43696, "pre": 5082, "dist": -2632, "post": 2450 },
+      { "year": 2014, "assets": 54751, "liabilities": 51866, "pre": 2885, "dist": -3237, "post": -352 },
+      { "year": 2015, "assets": 60196, "liabilities": 60062, "pre": 134, "dist": -3220, "post": -3086 },
+      { "year": 2016, "assets": 64321, "liabilities": 65581, "pre": -1260, "dist": -2871, "post": -4131 },
+      { "year": 2017, "assets": 70317, "liabilities": 71086, "pre": -769, "dist": -3324, "post": -4093 }
+    ]
+  },
+
+  "hibah": {
+    "cite": "¶3.11.7, p.92",
+    "computedBy": "The commission",
+    "note": "Runs to 2020 because the commission's table does. Ending the series at the 2018 trough would be a truncation of the same class as a cut axis.",
+    "years": [
+      { "year": 2014, "rate": "6.25 + 2.00", "pct": 8.25, "amount": 3237196 },
+      { "year": 2015, "rate": "5.00 + 3.00", "pct": 8.0, "amount": 3220374 },
+      { "year": 2016, "rate": "4.25 + 1.50", "pct": 5.75, "amount": 2870822 },
+      { "year": 2017, "rate": "4.50 + 1.75", "pct": 6.25, "amount": 3323741 },
+      { "year": 2018, "rate": "1.25", "pct": 1.25, "amount": 922959 },
+      { "year": 2019, "rate": "3.05", "pct": 3.05, "amount": 2140538 },
+      { "year": 2020, "rate": "3.10", "pct": 3.1, "amount": 2242141 }
+    ]
+  },
+
+  "hajCost": {
+    "cite": "¶3.16.1–¶3.16.2, p.165",
+    "computedBy": "TH projection, recorded by the commission",
+    "note": "The commission's prose puts the 2030 figure at up to RM35,000 while the table it reproduces gives RM37,729. We use the table.",
+    "baseline": { "year": 2003, "cost": 15555 },
+    "years": [
+      { "year": 2022, "cost": 25540 }, { "year": 2023, "cost": 26280 },
+      { "year": 2024, "cost": 28160 }, { "year": 2025, "cost": 29570 },
+      { "year": 2026, "cost": 31040 }, { "year": 2027, "cost": 32592 },
+      { "year": 2028, "cost": 34221 }, { "year": 2029, "cost": 35932 },
+      { "year": 2030, "cost": 37729 }
+    ]
+  },
+
+  "measures": [
+    { "label": "Restated FY2017 net loss", "by": "PwC · counterfactual", "v": 1.4, "hatched": true },
+    { "label": "2017 shortfall after distribution", "by": "PwC · balance-sheet position", "v": 4.1, "hatched": false },
+    { "label": "Accumulated losses at 31 Dec 2017", "by": "PwC · cumulative", "v": 4.7, "hatched": false },
+    { "label": "Losses at the point of rescue, 2018", "by": "PwC, via the commission", "v": 10, "hatched": false },
+    { "label": "Investment losses TH says it has addressed", "by": "Tabung Haji · to end-2025", "v": 12.6, "hatched": false }
+  ],
+
+  "problemInvestments": {
+    "cite": "¶3.14.6, pp.139–155",
+    "count": 14,
+    "countVerified": "Counted from the report. The enumerated list runs (1) PT TH Indo Plantations at p.139 through (14) FGV Berhad at p.154, and §3.14 closes with the commission's view at ¶3.14.7, p.155. Entries confirmed by direct reading: (1) p.139, (4) Deru Semangat Sdn. Bhd. p.142, (12) Alam Maritim Resources / TH Marine p.152, (14) FGV Berhad p.154.",
+    "note": "The commission recommends a forensic review of each."
+  }
+}
