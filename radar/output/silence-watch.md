@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-08-12 10:27 UTC. Queue size: 1206. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-08-12 12:24 UTC. Queue size: 1216. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,7 +31,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.658 (silence=1.00 × importance=0.66, no age weighting)
 
-- **Age in queue:** 3.3 days (source date: 2026-08-09, first seen: 2026-08-09)
+- **Age in queue:** 3.4 days (source date: 2026-08-09, first seen: 2026-08-09)
 
 - **Coverage:** 4 news, 2 social — pattern: _below-expected coverage_
 
@@ -42,7 +42,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.643 (silence=1.00 × importance=0.65, no age weighting)
 
-- **Age in queue:** 6.0 days (source date: 2026-08-06, first seen: 2026-08-06)
+- **Age in queue:** 6.1 days (source date: 2026-08-06, first seen: 2026-08-06)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -64,7 +64,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.613 (silence=1.00 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.2 days (source date: 2026-08-12, first seen: 2026-08-12)
+- **Age in queue:** 0.3 days (source date: 2026-08-12, first seen: 2026-08-12)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -73,11 +73,11 @@ developed, and the develop list drifts into old news.
 
 ### F5. ngo islam bawa isu hak pertubuhan saman fitnah ke mahkamah persekutuan. ikram mengemukakan 10 persoalan und...
 
-- **Fresh score:** 0.612 (silence=0.99 × importance=0.61, no age weighting)
+- **Fresh score:** 0.611 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.0 days (source date: 2026-08-12, first seen: 2026-08-12)
+- **Age in queue:** 0.1 days (source date: 2026-08-12, first seen: 2026-08-12)
 
-- **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
+- **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, religious
 
@@ -86,7 +86,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.602 (silence=0.99 × importance=0.60, no age weighting)
 
-- **Age in queue:** 1.8 days (source date: 2026-08-11, first seen: 2026-08-10)
+- **Age in queue:** 1.9 days (source date: 2026-08-11, first seen: 2026-08-10)
 
 - **Coverage:** 4 news, 2 social — pattern: _below-expected coverage_
 
@@ -104,24 +104,24 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** legal, political
 
 
-### F8. federal court dismisses kedah govt’s bid for leave to appeal in pool betting outlet licences case. &nbsp;pu...
+### F8. apex court upholds ruling against kedah govt’s pool betting, lottery ban. federal court panel says the stat...
 
-- **Fresh score:** 0.600 (silence=0.98 × importance=0.61, no age weighting)
+- **Fresh score:** 0.599 (silence=0.97 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.1 days (source date: 2026-08-12, first seen: 2026-08-12)
+- **Age in queue:** 0.3 days (source date: 2026-08-12, first seen: 2026-08-12)
 
-- **Coverage:** 17 news, 14 social — pattern: _below-expected coverage_
+- **Coverage:** 27 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### F9. apex court upholds ruling against kedah govt’s pool betting, lottery ban. federal court panel says the stat...
+### F9. federal court dismisses kedah govt’s bid for leave to appeal in pool betting outlet licences case. &nbsp;pu...
 
-- **Fresh score:** 0.599 (silence=0.97 × importance=0.61, no age weighting)
+- **Fresh score:** 0.597 (silence=0.97 × importance=0.61, no age weighting)
 
 - **Age in queue:** 0.2 days (source date: 2026-08-12, first seen: 2026-08-12)
 
-- **Coverage:** 27 news, 6 social — pattern: _below-expected coverage_
+- **Coverage:** 19 news, 19 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
@@ -130,7 +130,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.596 (silence=1.00 × importance=0.60, no age weighting)
 
-- **Age in queue:** 0.9 days (source date: 2026-08-11, first seen: 2026-08-11)
+- **Age in queue:** 1.0 days (source date: 2026-08-11, first seen: 2026-08-11)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -141,7 +141,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.594 (silence=0.97 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.8 days (source date: 2026-08-12, first seen: 2026-08-11)
+- **Age in queue:** 0.9 days (source date: 2026-08-12, first seen: 2026-08-11)
 
 - **Coverage:** 31 news, 13 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.588 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 2.7 days (source date: 2026-08-10, first seen: 2026-08-09)
+- **Age in queue:** 2.8 days (source date: 2026-08-10, first seen: 2026-08-09)
 
 - **Coverage:** 53 news, 5 social — pattern: _below-expected coverage_
 
@@ -163,7 +163,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.585 (silence=0.98 × importance=0.60, no age weighting)
 
-- **Age in queue:** 0.9 days (source date: 2026-08-11, first seen: 2026-08-11)
+- **Age in queue:** 1.0 days (source date: 2026-08-11, first seen: 2026-08-11)
 
 - **Coverage:** 17 news, 2 social — pattern: _below-expected coverage_
 
@@ -174,7 +174,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.583 (silence=0.95 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.4 days (source date: 2026-08-12, first seen: 2026-08-12)
+- **Age in queue:** 0.5 days (source date: 2026-08-12, first seen: 2026-08-12)
 
 - **Coverage:** 48 news, 20 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.577 (silence=0.94 × importance=0.61, no age weighting)
 
-- **Age in queue:** 1.3 days (source date: 2026-08-11, first seen: 2026-08-11)
+- **Age in queue:** 1.4 days (source date: 2026-08-11, first seen: 2026-08-11)
 
 - **Coverage:** 55 news, 26 social — pattern: _below-expected coverage_
 
@@ -202,7 +202,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.410 (silence=0.99 × importance=0.71 × age_factor)
 
-- **Age in queue:** 89.3 days (source date: 2026-05-15, first seen: 2026-05-15)
+- **Age in queue:** 89.4 days (source date: 2026-05-15, first seen: 2026-05-15)
 
 - **Coverage:** 32 news, 14 social — pattern: _below-expected coverage_
 
@@ -213,7 +213,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.390 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 53.3 days (source date: 2026-06-21, first seen: 2026-06-20)
+- **Age in queue:** 53.4 days (source date: 2026-06-21, first seen: 2026-06-20)
 
 - **Coverage:** 57 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -222,9 +222,9 @@ developed, and the develop list drifts into old news.
 
 ### S3. melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no ‘back door’ to p...
 
-- **Rank score:** 1.351 (silence=0.97 × importance=0.71 × age_factor)
+- **Rank score:** 1.353 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 28.9 days (source date: 2026-07-15, first seen: 2026-07-14)
+- **Age in queue:** 29.0 days (source date: 2026-07-15, first seen: 2026-07-14)
 
 - **Coverage:** 74 news, 25 social — pattern: _below-expected coverage_
 
@@ -235,7 +235,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.304 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 98.1 days (source date: 2026-05-06, first seen: 2026-05-06)
+- **Age in queue:** 98.2 days (source date: 2026-05-06, first seen: 2026-05-06)
 
 - **Coverage:** 21 news, 24 social — pattern: _below-expected coverage_
 
@@ -246,7 +246,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 110.2 days (source date: 2026-04-24, first seen: 2026-04-24)
+- **Age in queue:** 110.3 days (source date: 2026-04-24, first seen: 2026-04-24)
 
 - **Coverage:** 55 news, 20 social — pattern: _below-expected coverage_
 
@@ -257,7 +257,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.232 (silence=0.96 × importance=0.64 × age_factor)
 
-- **Age in queue:** 42.2 days (source date: 2026-07-02, first seen: 2026-07-01)
+- **Age in queue:** 42.3 days (source date: 2026-07-02, first seen: 2026-07-01)
 
 - **Coverage:** 52 news, 15 social — pattern: _below-expected coverage_
 
@@ -266,7 +266,7 @@ developed, and the develop list drifts into old news.
 
 ### S7. tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdrawals. kuala lump...
 
-- **Rank score:** 1.217 (silence=0.96 × importance=0.67 × age_factor)
+- **Rank score:** 1.219 (silence=0.96 × importance=0.67 × age_factor)
 
 - **Age in queue:** 27.1 days (source date: 2026-07-17, first seen: 2026-07-16)
 
@@ -290,7 +290,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.186 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 83.9 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 84.0 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 35 news, 11 social — pattern: _below-expected coverage_
 
@@ -301,7 +301,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 84.0 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 84.1 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 41 news, 8 social — pattern: _below-expected coverage_
 
@@ -312,7 +312,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 95.5 days (source date: 2026-05-08, first seen: 2026-05-08)
+- **Age in queue:** 95.6 days (source date: 2026-05-08, first seen: 2026-05-08)
 
 - **Coverage:** 34 news, 15 social — pattern: _below-expected coverage_
 
@@ -334,7 +334,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.170 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 74.0 days (source date: 2026-05-31, first seen: 2026-05-30)
+- **Age in queue:** 74.1 days (source date: 2026-05-31, first seen: 2026-05-30)
 
 - **Coverage:** 50 news, 13 social — pattern: _24h+ silence then rising_
 
@@ -345,7 +345,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.169 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 114.5 days (source date: 2026-04-19, first seen: 2026-04-19)
+- **Age in queue:** 114.6 days (source date: 2026-04-19, first seen: 2026-04-19)
 
 - **Coverage:** 53 news, 11 social — pattern: _below-expected coverage_
 
@@ -356,7 +356,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.166 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 138.2 days (source date: 2026-03-27, first seen: 2026-03-27)
+- **Age in queue:** 138.3 days (source date: 2026-03-27, first seen: 2026-03-27)
 
 - **Coverage:** 52 news, 16 social — pattern: _below-expected coverage_
 
@@ -365,9 +365,9 @@ developed, and the develop list drifts into old news.
 
 ### S16. federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. putrajaya, july 15 ...
 
-- **Rank score:** 1.162 (silence=0.95 × importance=0.63 × age_factor)
+- **Rank score:** 1.164 (silence=0.95 × importance=0.63 × age_factor)
 
-- **Age in queue:** 28.0 days (source date: 2026-07-16, first seen: 2026-07-15)
+- **Age in queue:** 28.1 days (source date: 2026-07-16, first seen: 2026-07-15)
 
 - **Coverage:** 54 news, 19 social — pattern: _below-expected coverage_
 
@@ -378,7 +378,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.161 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 120.0 days (source date: 2026-04-14, first seen: 2026-04-14)
+- **Age in queue:** 120.1 days (source date: 2026-04-14, first seen: 2026-04-14)
 
 - **Coverage:** 51 news, 22 social — pattern: _24h+ silence then rising_
 
@@ -400,7 +400,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.154 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 111.3 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 111.4 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 51 news, 29 social — pattern: _below-expected coverage_
 
@@ -411,7 +411,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.153 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 36.2 days (source date: 2026-07-07, first seen: 2026-07-07)
+- **Age in queue:** 36.3 days (source date: 2026-07-07, first seen: 2026-07-07)
 
 - **Coverage:** 63 news, 18 social — pattern: _below-expected coverage_
 
@@ -422,7 +422,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.152 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 52.9 days (source date: 2026-06-22, first seen: 2026-06-20)
+- **Age in queue:** 53.0 days (source date: 2026-06-22, first seen: 2026-06-20)
 
 - **Coverage:** 70 news, 13 social — pattern: _24h+ silence then rising_
 
@@ -433,7 +433,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.150 (silence=0.93 × importance=0.61 × age_factor)
 
-- **Age in queue:** 55.3 days (source date: 2026-06-19, first seen: 2026-06-18)
+- **Age in queue:** 55.4 days (source date: 2026-06-19, first seen: 2026-06-18)
 
 - **Coverage:** 62 news, 23 social — pattern: _below-expected coverage_
 
@@ -444,7 +444,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.150 (silence=0.93 × importance=0.61 × age_factor)
 
-- **Age in queue:** 30.3 days (source date: 2026-07-13, first seen: 2026-07-13)
+- **Age in queue:** 30.4 days (source date: 2026-07-13, first seen: 2026-07-13)
 
 - **Coverage:** 58 news, 27 social — pattern: _below-expected coverage_
 
@@ -455,7 +455,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.141 (silence=0.93 × importance=0.61 × age_factor)
 
-- **Age in queue:** 43.2 days (source date: 2026-07-01, first seen: 2026-06-30)
+- **Age in queue:** 43.3 days (source date: 2026-07-01, first seen: 2026-06-30)
 
 - **Coverage:** 79 news, 15 social — pattern: _below-expected coverage_
 
@@ -466,7 +466,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.136 (silence=0.92 × importance=0.61 × age_factor)
 
-- **Age in queue:** 61.3 days (source date: 2026-06-13, first seen: 2026-06-12)
+- **Age in queue:** 61.4 days (source date: 2026-06-13, first seen: 2026-06-12)
 
 - **Coverage:** 80 news, 19 social — pattern: _below-expected coverage_
 
