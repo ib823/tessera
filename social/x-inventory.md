@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-12T12:24:03.417Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-12T14:31:29.627Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1122,40 +1122,6 @@ Tie standing rules to gazette publication date, enforce Section 12 replacement l
 https://thefourthangle.pages.dev/issue/1971
 ```
 
-### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
-
-> ⚡ **Reactive: topic is live in the radar** (govt, police seek leave to appeal ruling on gravedigger’s 2019 custody death. putrajaya, m). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
-
-**1/6** _(hook — attach image, NO link)_ · 105 chars
-```
-Malaysia celebrated the Supreme Court striking down Trump's tariffs. The replacement regime may be worse.
-```
-**2/6** _(fact)_ · 112 chars
-```
-IEEPA tariffs had a constitutional weakness. Section 301 tariffs do not. Court challenges are nearly impossible.
-```
-**3/6** _(fact)_ · 128 chars
-```
-68% of semiconductor exports come from US firms. The 180,000 ATP workers are 65% women. R&D flatlined at 1% of GDP for a decade.
-```
-**4/6** _(fact)_ · 115 chars
-```
-A forced-labour probe across 60 economies hands the US a second front. Every coalition chose patronage over reform.
-```
-**5/6** _(reframe)_ · 150 chars
-```
-The court victory was a trap. Every government since Mahathir 1.0 chose procurement preferences over a US trade deal. Those consequences are arriving.
-```
-**6/6** _(view — ONLY post with the link)_ · 207 chars
-```
-The vulnerability is real but leverage is underestimated. Malaysia lacks not options but political will to convert CPTPP, RCEP, and the NSSP into actual strategy.
-
-https://thefourthangle.pages.dev/issue/1965
-```
-
 ### Issue 1964 — Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
 
 > ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
@@ -2148,44 +2114,6 @@ Either amend the Constitution to give DOE enforcement power, or make conservatio
 https://thefourthangle.pages.dev/issue/1043
 ```
 
-### Issue 0154 — LCS Programme: RM6.08B Spent, First Ship in Sea Trials, Original Schedule 7 Years Late
-
-> ⚡ **Reactive: topic is live in the radar** (govt, police seek leave to appeal ruling on gravedigger’s 2019 custody death. putrajaya, m). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-0154-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 0154`
-
-**1/7** _(hook — attach image, NO link)_ · 239 chars
-```
-RM6.08 billion spent. Zero ships delivered to the Royal Malaysian Navy. The first vessel is in sea trials. LCS programme: contract signed 2011, first delivery due 2019. Original contract RM9.13B for 6 ships, revised to RM11.2B for 5 ships.
-```
-**2/7** _(fact)_ · 245 chars
-```
-PAC identified RM1.4B in cost overruns and allocations used for purposes other than the LCS works. PAC also flagged 'pembayaran melebihi kerja sebenar' (payments exceeding actual work) under a progress-payment schedule weakly tied to milestones.
-```
-**3/7** _(fact)_ · 127 chars
-```
-MACC investigation papers were completed by August 2022. The former BNS managing director was charged with CBT involving RM21M.
-```
-**4/7** _(fact)_ · 260 chars
-```
-PAC and audit findings carry serious defence and maritime-enforcement implications. Patrol relies on MMEA, RMN assets and Op Naga. AG reporting cited 89 Chinese-vessel incursions from 2016-2019. The LCS shortfall is one input into a broader capability picture.
-```
-**5/7** _(reframe)_ · 157 chars
-```
-The question is no longer whether RM6B bought ships. It is whether the revised contract, new payment terms and trial timeline will close the gap they opened.
-```
-**6/7** _(analogy)_ · 252 chars
-```
-Like paying a builder RM6B against a RM9B contract, finding partial hulls instead of a delivered fleet, and renegotiating with the same builder. Independent oversight came from PAC, the National Audit Department, MACC and auditors, not from BNS itself.
-```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
-```
-Accountability did happen: PAC reports, declassification, MACC charges, contract restructure. The unresolved test is delivery and whether the new terms hold.
-
-https://thefourthangle.pages.dev/issue/0154
-```
-
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
 
 - **Status:** PENDING
@@ -2530,6 +2458,39 @@ Registration serves the state and employers first. No coalition will expand beyo
 The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
 
 https://thefourthangle.pages.dev/issue/1966
+```
+
+### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
+
+**1/6** _(hook — attach image, NO link)_ · 105 chars
+```
+Malaysia celebrated the Supreme Court striking down Trump's tariffs. The replacement regime may be worse.
+```
+**2/6** _(fact)_ · 112 chars
+```
+IEEPA tariffs had a constitutional weakness. Section 301 tariffs do not. Court challenges are nearly impossible.
+```
+**3/6** _(fact)_ · 128 chars
+```
+68% of semiconductor exports come from US firms. The 180,000 ATP workers are 65% women. R&D flatlined at 1% of GDP for a decade.
+```
+**4/6** _(fact)_ · 115 chars
+```
+A forced-labour probe across 60 economies hands the US a second front. Every coalition chose patronage over reform.
+```
+**5/6** _(reframe)_ · 150 chars
+```
+The court victory was a trap. Every government since Mahathir 1.0 chose procurement preferences over a US trade deal. Those consequences are arriving.
+```
+**6/6** _(view — ONLY post with the link)_ · 207 chars
+```
+The vulnerability is real but leverage is underestimated. Malaysia lacks not options but political will to convert CPTPP, RCEP, and the NSSP into actual strategy.
+
+https://thefourthangle.pages.dev/issue/1965
 ```
 
 ### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
@@ -2917,6 +2878,43 @@ Like a historic neighbourhood where the heirs and the city disagree on renovatio
 The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
 
 https://thefourthangle.pages.dev/issue/1229
+```
+
+### Issue 0154 — LCS Programme: RM6.08B Spent, First Ship in Sea Trials, Original Schedule 7 Years Late
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-0154-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 0154`
+
+**1/7** _(hook — attach image, NO link)_ · 239 chars
+```
+RM6.08 billion spent. Zero ships delivered to the Royal Malaysian Navy. The first vessel is in sea trials. LCS programme: contract signed 2011, first delivery due 2019. Original contract RM9.13B for 6 ships, revised to RM11.2B for 5 ships.
+```
+**2/7** _(fact)_ · 245 chars
+```
+PAC identified RM1.4B in cost overruns and allocations used for purposes other than the LCS works. PAC also flagged 'pembayaran melebihi kerja sebenar' (payments exceeding actual work) under a progress-payment schedule weakly tied to milestones.
+```
+**3/7** _(fact)_ · 127 chars
+```
+MACC investigation papers were completed by August 2022. The former BNS managing director was charged with CBT involving RM21M.
+```
+**4/7** _(fact)_ · 260 chars
+```
+PAC and audit findings carry serious defence and maritime-enforcement implications. Patrol relies on MMEA, RMN assets and Op Naga. AG reporting cited 89 Chinese-vessel incursions from 2016-2019. The LCS shortfall is one input into a broader capability picture.
+```
+**5/7** _(reframe)_ · 157 chars
+```
+The question is no longer whether RM6B bought ships. It is whether the revised contract, new payment terms and trial timeline will close the gap they opened.
+```
+**6/7** _(analogy)_ · 252 chars
+```
+Like paying a builder RM6B against a RM9B contract, finding partial hulls instead of a delivered fleet, and renegotiating with the same builder. Independent oversight came from PAC, the National Audit Department, MACC and auditors, not from BNS itself.
+```
+**7/7** _(view — ONLY post with the link)_ · 202 chars
+```
+Accountability did happen: PAC reports, declassification, MACC charges, contract restructure. The unresolved test is delivery and whether the new terms hold.
+
+https://thefourthangle.pages.dev/issue/0154
 ```
 
 ### Issue 0146 — Gig Workers Act 2025: Mandatory SOCSO Registration; EPF Retirement Still Outside
