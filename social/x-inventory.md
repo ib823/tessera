@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-13T14:33:27.123Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-13T16:23:53.989Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -270,7 +270,7 @@ https://thefourthangle.pages.dev/issue/2002
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
 
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
@@ -790,7 +790,7 @@ https://thefourthangle.pages.dev/issue/1983
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
 
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
@@ -1090,7 +1090,7 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
@@ -1752,7 +1752,7 @@ https://thefourthangle.pages.dev/issue/1298
 
 ### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
 
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
@@ -1824,7 +1824,7 @@ https://thefourthangle.pages.dev/issue/1292
 
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
 
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
