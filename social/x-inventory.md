@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-13T10:29:07.571Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-13T12:24:07.204Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -84,7 +84,7 @@ https://thefourthangle.pages.dev/issue/2008
 
 ### Issue 2007 — High Court refused MACC's bid to freeze RM548m linked to Na'imah in Singapore
 
-> ⚡ **Reactive: topic is live in the radar** (sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sa). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2007-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2007`
@@ -604,7 +604,7 @@ https://thefourthangle.pages.dev/issue/1989
 
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
 
-> ⚡ **Reactive: topic is live in the radar** (um staff fail in final bid to challenge compulsory covid-19 vaccination circular. putrajay). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
