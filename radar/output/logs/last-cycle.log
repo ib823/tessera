@@ -1,56 +1,59 @@
-[32m2026-08-16 04:15:26[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-08-16 04:15:26[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-08-16 04:15:26[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-08-16 04:15:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-08-16 04:15:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-08-16 04:15:26[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Merdeka" importance=0.40
-[32m2026-08-16 04:15:26[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-08-16 04:15:27[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-16 04:15:27[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 8518 topics from state
-[32m2026-08-16 04:15:27[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-08-16 04:15:27[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-16T04:15:27.049170+00:00
-[32m2026-08-16 04:15:27[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-08-16 04:15:29[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-08-16 04:15:30[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-08-16 04:15:31[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-08-16 04:15:32[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-08-16 04:15:32[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 445 events
-[32m2026-08-16 04:15:34[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-08-16 04:15:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-08-16 04:15:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:16:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-16 04:16:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:16:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:16:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:16:59[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:17:10[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:17:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:17:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:17:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 04:17:46[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-08-16 04:17:48[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 481 events from 5 sources
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 481 events
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 303 within 24h (168 pruned)
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Fadhlina tells PKR members not to wait for Parliament dissolution to prepare for polls. &nbsp;MELAKA, Aug 16 &mdash; Parti Keadilan Rakyat (PKR) Wanita chief Fadhlina Sidek has urged party members to " importance=0.46
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Two drivers detained for allegedly blocking traffic to give way to supercar convoy. &nbsp;ISKANDAR PUTERI, Aug 16&nbsp;&mdash; Police have detained two car drivers believed to have acted as &ldquo;mar" importance=0.41
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Strong BN-PN pact needs early deal on seats, PM candidate. Analyst Tawfik Yaakub says whatever issues should be settled early, given the greater complexity of a general election." importance=0.46
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Strong economic figures alone won’t win over voters, says Fahmi. PKR information chief says the party must address issues such as cost of living and wages to attract voters." importance=0.41
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "When a squint signals something more. From childhood strabismus to age-related cataracts, subtle changes in vision should never be ignored." importance=0.41
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "On-demand car sharing platform, Socar is shutting down in Malaysia after 8 years of operations.. &nbsp;&nbsp;KUALA LUMPUR, Aug 15 &mdash; Users have recently received messages and notification in the " importance=0.46
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "‘Beginning, not the end’: Abim calls for broader higher education reform after AUKU repeal. KUALA LUMPUR, Aug 15 &mdash; The repeal of the Universities and University Colleges Act (AUKU) 1971 will cre" importance=0.41
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "As PKR grapples with departures, Anwar makes fresh appeal for estranged old friends to return. AYER KEROH, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today appealed to former PKR leaders a" importance=0.36
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "New ‘One Higher Education Act’, launched in January, to replace UUCA, Zambry confirms. PUTRAJAYA, Aug 15 &mdash; A more comprehensive national higher education legislative framework to replace the Uni" importance=0.41
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "MACC detains seven in Tabung Haji RCI probe, including senior executives and shipping company CEO. KUALA LUMPUR, Aug 15 &mdash; The Malaysian Anti-Corruption Commission (MACC) has detained seven peopl" importance=0.41
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "‘I take the peaceful path’: Anwar dismisses Khairy’s claim of rift with Zahid. MELAKA, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has stressed that his relationship with Deputy Prime Mini." importance=0.31
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 32), ('india', 32), ('government', 29), ('minister', 26), ('pkr', 20), ('prime minister', 18), ('pas', 18), ('dap', 14), ('isa', 14), ('race', 13)]
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 1 low-score topics
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 8520 active topics
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36moutput              [0m | 1222 active issues, 7297 new, 7299 pruned
-[32m2026-08-16 04:17:50[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-16 04:18:07[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=117  hmm=OK/70  cox=RT/1222  sarima=RT/1222
-[32m2026-08-16 04:18:07[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1222)
-[32m2026-08-16 04:18:08[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 8520 active topics. Top: parliament budget session session opens (score: 0.99)
+[32m2026-08-16 06:10:30[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-08-16 06:10:31[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-08-16 06:10:31[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Merdeka" importance=0.40
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 8520 topics from state
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-08-16 06:10:32[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-16T06:10:32.341192+00:00
+[32m2026-08-16 06:10:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-08-16 06:10:34[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-08-16 06:10:35[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-08-16 06:10:36[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-08-16 06:10:38[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-08-16 06:10:38[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 439 events
+[32m2026-08-16 06:10:40[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-08-16 06:11:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-08-16 06:11:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:11:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:11:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:12:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:12:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:12:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:12:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:13:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:13:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 06:13:15[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 5 events
+[32m2026-08-16 06:13:19[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 485 events from 5 sources
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 485 events
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 286 within 24h (180 pruned)
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Saifuddin Nasution made PKR’s de facto number two as Nurul Izzah steps down. MELAKA, Aug 16 &mdash; Datuk Seri Saifuddin Nasution will take over the duties of PKR&rsquo;s deputy president after inc..." importance=0.41
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "No MACC arrest, just rumours: Abdul Azeez’s son rebuts social media buzz over Tabung Haji RCI. KUALA LUMPUR, Aug 16 &mdash; The son of former Baling Member of Parliament Datuk Seri Abdul Azeez Abdul R" importance=0.51
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "No MACC arrest, just rumours: Abdul Azeez’s son rebuts social media buzz over Tabung Haji RCI. KUALA LUMPUR, Aug 16 &mdash; The son of former Baling Member of Parliament Datuk Seri Abdul Azeez Abdul R" importance=0.41
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Fadhlina tells PKR members not to wait for Parliament dissolution to prepare for polls. &nbsp;MELAKA, Aug 16 &mdash; Parti Keadilan Rakyat (PKR) Wanita chief Fadhlina Sidek has urged party members to " importance=0.46
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Two drivers detained for allegedly blocking traffic to give way to supercar convoy. &nbsp;ISKANDAR PUTERI, Aug 16&nbsp;&mdash; Police have detained two car drivers believed to have acted as &ldquo;mar" importance=0.41
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Moscow region targeted by 600 drones overnight, 3 wounded, says mayor. Ukraine has been carrying out strikes deep inside Russia, with drone barrages targeting military, industrial and e-commerce wareh" importance=0.31
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "My dad not arrested by MACC, says son of former Tabung Haji chairman. Speculation that former Baling MP Abdul Azeez Abdul Rahim had been arrested has been widespread on social media since last night." importance=0.36
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Bapa saya tak ditahan SPRM, kata anak Azeez. Khairul Azman Abdul Azeez memaklumkan bapanya sedang berehat di kediaman mereka." importance=0.36
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "KDM tarik sokongan bukan kerana kerajaan Sabah pimpinan GRS gagal, kata pemimpin PBS. Naib Presiden Arthur Sen dakwa keputusan itu untuk penjajaran politik baharu dengan Warisan dan STAR." importance=0.36
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Syarahan Razak Baginda di UIAM dibatal. Pembatalan itu susulan kebimbangan dibangkitkan Persatuan Kakitangan Akademik UIAM berhubung acara berkenaan." importance=0.46
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Ambil inspirasi Kit Siang, DAP kekal parti berbilang kaum, kata Loke. Setiausaha Agung DAP mengimbas kembali keputusan Lim Kit Siang menolak cadangan MCA untuk membubarkan parti pada 1970-an." importance=0.36
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Strong BN-PN pact needs early deal on seats, PM candidate. Analyst Tawfik Yaakub says whatever issues should be settled early, given the greater complexity of a general election." importance=0.46
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Strong economic figures alone won’t win over voters, says Fahmi. PKR information chief says the party must address issues such as cost of living and wages to attract voters." importance=0.41
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "On-demand car sharing platform, Socar is shutting down in Malaysia after 8 years of operations.. &nbsp;&nbsp;KUALA LUMPUR, Aug 15 &mdash; Users have recently received messages and notification in the " importance=0.46
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "‘Beginning, not the end’: Abim calls for broader higher education reform after AUKU repeal. KUALA LUMPUR, Aug 15 &mdash; The repeal of the Universities and University Colleges Act (AUKU) 1971 will cre" importance=0.41
+[32m2026-08-16 06:13:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "As PKR grapples with departures, Anwar makes fresh appeal for estranged old friends to return. AYER KEROH, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today appealed to former PKR leaders a" importance=0.36
+[32m2026-08-16 06:13:21[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-08-16 06:13:21[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('government', 33), ('india', 30), ('pkr', 29), ('malay', 29), ('minister', 22), ('dap', 21), ('pas', 16), ('prime minister', 15), ('race', 15), ('isa', 14)]
+[32m2026-08-16 06:13:21[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 13 events monitored, 13 flagged
+[32m2026-08-16 06:13:21[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 8525 active topics
+[32m2026-08-16 06:13:21[0m | [1mINFO    [0m | [36moutput              [0m | 1224 active issues, 7303 new, 7301 pruned
+[32m2026-08-16 06:13:21[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-16 06:13:49[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=117  hmm=OK/71  cox=RT/1224  sarima=RT/1224
+[32m2026-08-16 06:13:49[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1224)
+[32m2026-08-16 06:13:50[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 8525 active topics. Top: parliament budget session session opens (score: 0.99)
