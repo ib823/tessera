@@ -1,58 +1,54 @@
-[32m2026-08-16 00:16:54[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-08-16 00:16:54[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-08-16 00:16:54[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Merdeka" importance=0.40
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 8516 topics from state
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-08-16 00:16:55[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-16T00:16:55.984282+00:00
-[32m2026-08-16 00:16:56[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-08-16 00:16:58[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-08-16 00:17:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-08-16 00:17:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-08-16 00:17:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-08-16 00:17:03[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 445 events
-[32m2026-08-16 00:17:04[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-08-16 00:17:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:17:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:18:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
-[32m2026-08-16 00:18:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:18:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-08-16 00:18:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:18:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:19:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:19:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:19:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-08-16 00:19:33[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 3 events
-[32m2026-08-16 00:19:35[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 488 events from 5 sources
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 488 events
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 307 within 24h (175 pruned)
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "On-demand car sharing platform, Socar is shutting down in Malaysia after 8 years of operations.. &nbsp;&nbsp;KUALA LUMPUR, Aug 15 &mdash; Users have recently received messages and notification in the " importance=0.46
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "‘Beginning, not the end’: Abim calls for broader higher education reform after AUKU repeal. KUALA LUMPUR, Aug 15 &mdash; The repeal of the Universities and University Colleges Act (AUKU) 1971 will cre" importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "As PKR grapples with departures, Anwar makes fresh appeal for estranged old friends to return. AYER KEROH, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today appealed to former PKR leaders a" importance=0.36
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "New ‘One Higher Education Act’, launched in January, to replace UUCA, Zambry confirms. PUTRAJAYA, Aug 15 &mdash; A more comprehensive national higher education legislative framework to replace the Uni" importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "MACC detains seven in Tabung Haji RCI probe, including senior executives and shipping company CEO. KUALA LUMPUR, Aug 15 &mdash; The Malaysian Anti-Corruption Commission (MACC) has detained seven peopl" importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "‘I take the peaceful path’: Anwar dismisses Khairy’s claim of rift with Zahid. MELAKA, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has stressed that his relationship with Deputy Prime Mini." importance=0.31
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Belgium tackles fast-growing wildfire as it burns through 1,600 hectares. The wildfire at the Fagnes natural park near the border with Germany has ballooned in size since breaking out on Friday." importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Jerebu rentas sempadan jejas Sarawak dibawa ke Asean. Timbalan Premier Douglas Uggah Embas berkata perkara itu akan diusul Kementerian Sumber Asli dan Kelestarian Alam." importance=0.46
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "S’wak may raise transboundary haze concerns at Asean level, says deputy premier. Douglas Uggah Embas notes that Malaysia is a member of a sub-regional steering committee where such issues can be discu" importance=0.46
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Anwar on Tabung Haji RCI findings: ‘RM12b was lost, isn’t that sakau?’. MELAKA, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has stressed that acts of &ldquo;sakau&rdquo; (siphoning..." importance=0.43
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Anwar announces repeal of Universities and University Colleges Act, after students push for greater freedom. AYER KEROH, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today announced that the" importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Sibu latest to record unhealthy API as nine Sarawak areas affected. KUALA LUMPUR, Aug 15 &mdash; Sibu is the latest area in Sarawak to record an unhealthy Air Pollutant Index (API) reading..." importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [new_act] "Perlis gets new acting police chief as predecessor moves to Bukit Aman. KANGAR, Aug 15 &mdash; Perlis deputy police chief SAC Zaihairul Idrus has been appointed as acting state police chief, e..." importance=0.52
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Pengarah hospital di Sabah dipindah susulan siasatan ganggu seksual. Menteri Kesihatan Dzulkefly Ahmad berkata individu itu dipindah ke Jabatan Kesihatan Negeri Sabah sementara menunggu tindakan lanju" importance=0.46
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Sabah hospital director transferred following misconduct probe. Health minister Dzulkefly Ahmad says the person has been reassigned as a medical officer in the Sabah health department pending further " importance=0.41
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 33), ('government', 33), ('india', 33), ('malay', 30), ('prime minister', 25), ('pas', 18), ('isa', 16), ('pkr', 14), ('chinese', 14), ('indian', 11)]
-[32m2026-08-16 00:19:37[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 16 events monitored, 16 flagged
-[32m2026-08-16 00:19:38[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 8516 active topics
-[32m2026-08-16 00:19:38[0m | [1mINFO    [0m | [36moutput              [0m | 1232 active issues, 7280 new, 7284 pruned
-[32m2026-08-16 00:19:38[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-08-16 00:20:05[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=117  hmm=OK/69  cox=RT/1232  sarima=RT/1232
-[32m2026-08-16 00:20:05[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1232)
-[32m2026-08-16 00:20:05[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 8516 active topics. Top: parliament budget session session opens (score: 0.99)
+[32m2026-08-16 02:30:06[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-08-16 02:30:06[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-08-16 02:30:06[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Merdeka" importance=0.40
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 8516 topics from state
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-08-16 02:30:07[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-08-16T02:30:07.268741+00:00
+[32m2026-08-16 02:30:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-08-16 02:30:09[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-08-16 02:30:11[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-08-16 02:30:12[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-08-16 02:30:15[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-08-16 02:30:15[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 445 events
+[32m2026-08-16 02:30:16[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-08-16 02:30:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-08-16 02:31:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:31:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:31:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:31:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:32:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:32:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:32:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:32:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:32:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-08-16 02:32:55[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 13 events
+[32m2026-08-16 02:32:57[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 494 events from 5 sources
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 494 events
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 302 within 24h (177 pruned)
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Two drivers detained for allegedly blocking traffic to give way to supercar convoy. &nbsp;ISKANDAR PUTERI, Aug 16&nbsp;&mdash; Police have detained two car drivers believed to have acted as &ldquo;mar" importance=0.41
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "When a squint signals something more. From childhood strabismus to age-related cataracts, subtle changes in vision should never be ignored." importance=0.41
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "On-demand car sharing platform, Socar is shutting down in Malaysia after 8 years of operations.. &nbsp;&nbsp;KUALA LUMPUR, Aug 15 &mdash; Users have recently received messages and notification in the " importance=0.46
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "‘Beginning, not the end’: Abim calls for broader higher education reform after AUKU repeal. KUALA LUMPUR, Aug 15 &mdash; The repeal of the Universities and University Colleges Act (AUKU) 1971 will cre" importance=0.41
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "As PKR grapples with departures, Anwar makes fresh appeal for estranged old friends to return. AYER KEROH, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today appealed to former PKR leaders a" importance=0.36
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "New ‘One Higher Education Act’, launched in January, to replace UUCA, Zambry confirms. PUTRAJAYA, Aug 15 &mdash; A more comprehensive national higher education legislative framework to replace the Uni" importance=0.41
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "MACC detains seven in Tabung Haji RCI probe, including senior executives and shipping company CEO. KUALA LUMPUR, Aug 15 &mdash; The Malaysian Anti-Corruption Commission (MACC) has detained seven peopl" importance=0.41
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "‘I take the peaceful path’: Anwar dismisses Khairy’s claim of rift with Zahid. MELAKA, Aug 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has stressed that his relationship with Deputy Prime Mini." importance=0.31
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Belgium tackles fast-growing wildfire as it burns through 1,600 hectares. The wildfire at the Fagnes natural park near the border with Germany has ballooned in size since breaking out on Friday." importance=0.41
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Jerebu rentas sempadan jejas Sarawak dibawa ke Asean. Timbalan Premier Douglas Uggah Embas berkata perkara itu akan diusul Kementerian Sumber Asli dan Kelestarian Alam." importance=0.46
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "S’wak may raise transboundary haze concerns at Asean level, says deputy premier. Douglas Uggah Embas notes that Malaysia is a member of a sub-regional steering committee where such issues can be discu" importance=0.46
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 32), ('india', 32), ('government', 30), ('minister', 28), ('prime minister', 21), ('pas', 19), ('isa', 17), ('chinese', 12), ('race', 11), ('indian', 11)]
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 8518 active topics
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36moutput              [0m | 1224 active issues, 7286 new, 7294 pruned
+[32m2026-08-16 02:32:59[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-08-16 02:33:28[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=117  hmm=OK/70  cox=RT/1224  sarima=RT/1224
+[32m2026-08-16 02:33:29[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1224)
+[32m2026-08-16 02:33:29[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 8518 active topics. Top: parliament budget session session opens (score: 0.99)
