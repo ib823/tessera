@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-19T02:31:07.877Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-19T06:15:19.122Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1124,7 +1124,7 @@ https://thefourthangle.pages.dev/issue/1971
 
 ### Issue 1964 — Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
 
-> ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1964-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1964`
