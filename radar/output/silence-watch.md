@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-08-21 02:34 UTC. Queue size: 1246. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-08-21 04:19 UTC. Queue size: 1255. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,7 +31,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.702 (silence=0.99 × importance=0.71, no age weighting)
 
-- **Age in queue:** 1.7 days (source date: 2026-08-19, first seen: 2026-08-19)
+- **Age in queue:** 1.8 days (source date: 2026-08-19, first seen: 2026-08-19)
 
 - **Coverage:** 26 news, 9 social — pattern: _below-expected coverage_
 
@@ -42,7 +42,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.655 (silence=0.99 × importance=0.66, no age weighting)
 
-- **Age in queue:** 1.7 days (source date: 2026-08-19, first seen: 2026-08-19)
+- **Age in queue:** 1.8 days (source date: 2026-08-19, first seen: 2026-08-19)
 
 - **Coverage:** 10 news, 6 social — pattern: _below-expected coverage_
 
@@ -53,7 +53,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.655 (silence=0.98 × importance=0.67, no age weighting)
 
-- **Age in queue:** 0.9 days (source date: 2026-08-20, first seen: 2026-08-20)
+- **Age in queue:** 1.0 days (source date: 2026-08-20, first seen: 2026-08-20)
 
 - **Coverage:** 29 news, 6 social — pattern: _below-expected coverage_
 
@@ -64,7 +64,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.645 (silence=0.99 × importance=0.65, no age weighting)
 
-- **Age in queue:** 2.8 days (source date: 2026-08-18, first seen: 2026-08-18)
+- **Age in queue:** 2.9 days (source date: 2026-08-18, first seen: 2026-08-18)
 
 - **Coverage:** 12 news, 3 social — pattern: _below-expected coverage_
 
@@ -86,7 +86,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.614 (silence=1.00 × importance=0.61, no age weighting)
 
-- **Age in queue:** 6.8 days (source date: 2026-08-14, first seen: 2026-08-14)
+- **Age in queue:** 6.9 days (source date: 2026-08-14, first seen: 2026-08-14)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -97,7 +97,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.608 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 6.9 days (source date: 2026-08-14, first seen: 2026-08-14)
+- **Age in queue:** 7.0 days (source date: 2026-08-14, first seen: 2026-08-14)
 
 - **Coverage:** 11 news, 3 social — pattern: _below-expected coverage_
 
@@ -141,7 +141,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.594 (silence=0.97 × importance=0.61, no age weighting)
 
-- **Age in queue:** 2.8 days (source date: 2026-08-19, first seen: 2026-08-18)
+- **Age in queue:** 2.9 days (source date: 2026-08-19, first seen: 2026-08-18)
 
 - **Coverage:** 36 news, 9 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.590 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.8 days (source date: 2026-08-21, first seen: 2026-08-20)
+- **Age in queue:** 0.9 days (source date: 2026-08-21, first seen: 2026-08-20)
 
 - **Coverage:** 39 news, 14 social — pattern: _below-expected coverage_
 
@@ -163,7 +163,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.583 (silence=0.95 × importance=0.61, no age weighting)
 
-- **Age in queue:** 1.8 days (source date: 2026-08-19, first seen: 2026-08-19)
+- **Age in queue:** 1.9 days (source date: 2026-08-19, first seen: 2026-08-19)
 
 - **Coverage:** 58 news, 10 social — pattern: _below-expected coverage_
 
@@ -174,7 +174,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.562 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 4.7 days (source date: 2026-08-16, first seen: 2026-08-16)
+- **Age in queue:** 4.8 days (source date: 2026-08-16, first seen: 2026-08-16)
 
 - **Coverage:** 3 news, 2 social — pattern: _below-expected coverage_
 
@@ -224,7 +224,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.376 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 37.6 days (source date: 2026-07-15, first seen: 2026-07-14)
+- **Age in queue:** 37.7 days (source date: 2026-07-15, first seen: 2026-07-14)
 
 - **Coverage:** 74 news, 25 social — pattern: _below-expected coverage_
 
@@ -233,9 +233,9 @@ developed, and the develop list drifts into old news.
 
 ### S4. anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government critics. seberang...
 
-- **Rank score:** 1.326 (silence=0.98 × importance=0.71 × age_factor)
+- **Rank score:** 1.328 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 26.9 days (source date: 2026-07-26, first seen: 2026-07-25)
+- **Age in queue:** 27.0 days (source date: 2026-07-26, first seen: 2026-07-25)
 
 - **Coverage:** 62 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -246,7 +246,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.304 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 106.8 days (source date: 2026-05-06, first seen: 2026-05-06)
+- **Age in queue:** 106.9 days (source date: 2026-05-06, first seen: 2026-05-06)
 
 - **Coverage:** 21 news, 24 social — pattern: _below-expected coverage_
 
@@ -268,7 +268,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.280 (silence=0.96 × importance=0.67 × age_factor)
 
-- **Age in queue:** 35.7 days (source date: 2026-07-17, first seen: 2026-07-16)
+- **Age in queue:** 35.8 days (source date: 2026-07-17, first seen: 2026-07-16)
 
 - **Coverage:** 66 news, 21 social — pattern: _below-expected coverage_
 
@@ -301,7 +301,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.189 (silence=0.97 × importance=0.61 × age_factor)
 
-- **Age in queue:** 81.9 days (source date: 2026-06-01, first seen: 2026-05-31)
+- **Age in queue:** 82.0 days (source date: 2026-06-01, first seen: 2026-05-31)
 
 - **Coverage:** 37 news, 6 social — pattern: _24h+ silence then rising_
 
@@ -323,7 +323,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 92.7 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 92.8 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 41 news, 8 social — pattern: _below-expected coverage_
 
@@ -345,7 +345,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.183 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 51.7 days (source date: 2026-07-01, first seen: 2026-06-30)
+- **Age in queue:** 51.8 days (source date: 2026-07-01, first seen: 2026-06-30)
 
 - **Coverage:** 42 news, 8 social — pattern: _below-expected coverage_
 
@@ -356,7 +356,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.170 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 82.7 days (source date: 2026-05-31, first seen: 2026-05-30)
+- **Age in queue:** 82.8 days (source date: 2026-05-31, first seen: 2026-05-30)
 
 - **Coverage:** 50 news, 13 social — pattern: _24h+ silence then rising_
 
@@ -367,7 +367,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.169 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 123.2 days (source date: 2026-04-19, first seen: 2026-04-19)
+- **Age in queue:** 123.3 days (source date: 2026-04-19, first seen: 2026-04-19)
 
 - **Coverage:** 53 news, 11 social — pattern: _below-expected coverage_
 
@@ -378,7 +378,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.166 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 146.9 days (source date: 2026-03-27, first seen: 2026-03-27)
+- **Age in queue:** 147.0 days (source date: 2026-03-27, first seen: 2026-03-27)
 
 - **Coverage:** 52 news, 16 social — pattern: _below-expected coverage_
 
@@ -400,7 +400,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.160 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 67.7 days (source date: 2026-06-15, first seen: 2026-06-14)
+- **Age in queue:** 67.8 days (source date: 2026-06-15, first seen: 2026-06-14)
 
 - **Coverage:** 65 news, 9 social — pattern: _below-expected coverage_
 
@@ -411,33 +411,33 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.154 (silence=0.94 × importance=0.61 × age_factor)
 
-- **Age in queue:** 120.0 days (source date: 2026-04-23, first seen: 2026-04-23)
+- **Age in queue:** 120.1 days (source date: 2026-04-23, first seen: 2026-04-23)
 
 - **Coverage:** 51 news, 29 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S21. anwar: govt approved rm6b in loans, guarantees to help smes cope with war fallout. kuala lumpur, july 7 &md...
+### S21. strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara governor. kuala lu...
 
-- **Rank score:** 1.153 (silence=0.94 × importance=0.61 × age_factor)
+- **Rank score:** 1.154 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 44.9 days (source date: 2026-07-07, first seen: 2026-07-07)
-
-- **Coverage:** 63 news, 18 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S22. strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara governor. kuala lu...
-
-- **Rank score:** 1.153 (silence=0.97 × importance=0.67 × age_factor)
-
-- **Age in queue:** 23.7 days (source date: 2026-07-29, first seen: 2026-07-28)
+- **Age in queue:** 23.8 days (source date: 2026-07-29, first seen: 2026-07-28)
 
 - **Coverage:** 64 news, 10 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
+
+
+### S22. anwar: govt approved rm6b in loans, guarantees to help smes cope with war fallout. kuala lumpur, july 7 &md...
+
+- **Rank score:** 1.153 (silence=0.94 × importance=0.61 × age_factor)
+
+- **Age in queue:** 45.0 days (source date: 2026-07-07, first seen: 2026-07-07)
+
+- **Coverage:** 63 news, 18 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
 
 
 ### S23. former federal court judge nallini says judicial experience will help safeguard media council’s independenc...
