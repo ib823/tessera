@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-21T22:09:15.975Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-08-22T00:19:14.639Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -456,6 +456,44 @@ Like writing the building code after the towers go up. Now everyone watches whic
 Singapore charged four. Malaysia wrote a permit. Bridge swapped a tenant. Fifteen months later, no Malaysian operator has been publicly named.
 
 https://thefourthangle.pages.dev/issue/1995
+```
+
+### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
+
+> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
+
+**1/7** _(hook — attach image, NO link)_ · 263 chars
+```
+Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
+```
+**2/7** _(fact)_ · 256 chars
+```
+Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
+```
+**3/7** _(fact)_ · 262 chars
+```
+Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
+```
+**4/7** _(fact)_ · 268 chars
+```
+Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
+```
+**5/7** _(reframe)_ · 114 chars
+```
+Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
+```
+**6/7** _(analogy)_ · 227 chars
+```
+Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
+```
+**7/7** _(view — ONLY post with the link)_ · 180 chars
+```
+The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
+
+https://thefourthangle.pages.dev/issue/1994
 ```
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
@@ -1156,6 +1194,44 @@ Fabricated graphics deserve investigation. But when only 8 of 96 flagged posts a
 https://thefourthangle.pages.dev/issue/1964
 ```
 
+### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
+
+> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
+
+**1/7** _(hook — attach image, NO link)_ · 231 chars
+```
+Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. 11,000MW in applications still dwarf the grid. Johor has RM182.96B approved.
+```
+**2/7** _(fact)_ · 106 chars
+```
+11,000MW applied vs ~7.5GW real demand. The moratorium exempts AI centres, the most power-hungry category.
+```
+**3/7** _(fact)_ · 260 chars
+```
+The moratorium cited water too, but no public data exists on actual water use per data centre in Johor. Johor set a WUE threshold of 1.8 and planned four treatment plants worth RM1.41B. Orang Asli communities near proposed sites were absent from consultations.
+```
+**4/7** _(fact)_ · 240 chars
+```
+RM182.96B is approved in Johor alone, yet the pause shields hyperscalers while local operators face shutdown. Microsoft, Google and ByteDance structured investments as AI-focused, bypassing the pause. Smaller Malaysian firms cannot relabel.
+```
+**5/7** _(reframe)_ · 114 chars
+```
+The real filter is not sustainability. It is lobbying power. The ceiling has a hole sized for the biggest players.
+```
+**6/7** _(analogy)_ · 205 chars
+```
+Like installing a water meter in every house but exempting the swimming pools. A moratorium with exemptions for the largest consumers signals sustainability as a constraint for the small, not the powerful.
+```
+**7/7** _(view — ONLY post with the link)_ · 172 chars
+```
+The ambition is not wrong. It is ungoverned. Residents should not have to protest to trigger what the numbers already demanded.
+
+https://thefourthangle.pages.dev/issue/1963
+```
+
 ### Issue 1961 — MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
 
 > ⚡ **Reactive: topic is live in the radar** (hajiji welcomes rm1.5b interim special grant for sabah, wants swift disbursement. kota kin). Post now, don't wait for a slot.
@@ -1328,6 +1404,40 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
+```
+
+### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
+
+> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
+
+**1/6** _(hook — attach image, NO link)_ · 112 chars
+```
+Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
+```
+**2/6** _(fact)_ · 138 chars
+```
+Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
+```
+**3/6** _(fact)_ · 255 chars
+```
+Lower-income households are more exposed to food price rises as a share of expenditure. DOSM shows food's larger weight in B40 budgets. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
+```
+**4/6** _(fact)_ · 263 chars
+```
+Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves. Malaysia imports over 60% of mineral-fertiliser needs. No Vietnam-style stabilisation list or Thailand-style public-stock mechanism was found.
+```
+**5/6** _(reframe)_ · 171 chars
+```
+The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
+```
+**6/6** _(view — ONLY post with the link)_ · 201 chars
+```
+Hormuz raised the cost of input dependency. Malaysia lacks the buffers Indonesia, Vietnam and Thailand built; until that changes, shocks hit the wet market.
+
+https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1952 — RON95 Quota Cut April 1: 90% 'Unaffected' Figure Has No Published Basis
@@ -1856,40 +1966,6 @@ After the 2024 maternal-citizenship amendment, transparency on Article 15A discr
 https://thefourthangle.pages.dev/issue/1265
 ```
 
-### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
-
-> ⚡ **Reactive: topic is live in the radar** (minister says rm1.5b sabah interim grant shows federal government is listening. kota kinab). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1247-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1247`
-
-**1/6** _(hook — attach image, NO link)_ · 118 chars
-```
-SUHAKAM-linked 2022 reporting estimates 500,000 to 1 million stateless children in Sabah. There is no official figure.
-```
-**2/6** _(fact)_ · 257 chars
-```
-Federal Constitution Article 14 grants citizenship by birth under specific conditions. Stateless children fall through gaps in jus soli and jus sanguinis. The conditions assume parental documentation many lack, perpetuating statelessness across generations.
-```
-**3/6** _(fact)_ · 154 chars
-```
-Malaysia is not bound by the 1961 Statelessness Convention. It is a party to the CRC with reservations affecting Article 7 (right to acquire nationality).
-```
-**4/6** _(fact)_ · 253 chars
-```
-The Bajau Laut are a frequently cited affected group, described by researchers as 'genuinely stateless' across Malaysia, Indonesia and the Philippines. Many Bajau Laut have lived along Sabah's coast for generations; no state recognises them as citizens.
-```
-**5/6** _(reframe)_ · 166 chars
-```
-UNICEF's Sabah study found 18,781 'invisible' children missing from official databases. SUHAKAM-linked reporting estimates the latent stateless population at 500K-1M.
-```
-**6/6** _(view — ONLY post with the link)_ · 189 chars
-```
-Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
-
-https://thefourthangle.pages.dev/issue/1247
-```
-
 ### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
 
 > ⚡ **Reactive: topic is live in the radar** (pac urges stricter procurement safeguards at mahb in early review of privatisation. &nbsp;). Post now, don't wait for a slot.
@@ -2145,43 +2221,6 @@ Parliament repealed the ISA's detention-without-trial powers in 2012. The Akta w
 The Sultan-in-Council route is constitutional. The proposed Akta would revive a category Parliament removed in 2012.
 
 https://thefourthangle.pages.dev/issue/1999
-```
-
-### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
-
-**1/7** _(hook — attach image, NO link)_ · 263 chars
-```
-Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
-```
-**2/7** _(fact)_ · 256 chars
-```
-Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
-```
-**3/7** _(fact)_ · 262 chars
-```
-Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
-```
-**4/7** _(fact)_ · 268 chars
-```
-Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
-```
-**5/7** _(reframe)_ · 114 chars
-```
-Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
-```
-**6/7** _(analogy)_ · 227 chars
-```
-Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
-```
-**7/7** _(view — ONLY post with the link)_ · 180 chars
-```
-The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
-
-https://thefourthangle.pages.dev/issue/1994
 ```
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
@@ -2493,43 +2532,6 @@ The vulnerability is real but leverage is underestimated. Malaysia lacks not opt
 https://thefourthangle.pages.dev/issue/1965
 ```
 
-### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
-
-**1/7** _(hook — attach image, NO link)_ · 231 chars
-```
-Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. 11,000MW in applications still dwarf the grid. Johor has RM182.96B approved.
-```
-**2/7** _(fact)_ · 106 chars
-```
-11,000MW applied vs ~7.5GW real demand. The moratorium exempts AI centres, the most power-hungry category.
-```
-**3/7** _(fact)_ · 260 chars
-```
-The moratorium cited water too, but no public data exists on actual water use per data centre in Johor. Johor set a WUE threshold of 1.8 and planned four treatment plants worth RM1.41B. Orang Asli communities near proposed sites were absent from consultations.
-```
-**4/7** _(fact)_ · 240 chars
-```
-RM182.96B is approved in Johor alone, yet the pause shields hyperscalers while local operators face shutdown. Microsoft, Google and ByteDance structured investments as AI-focused, bypassing the pause. Smaller Malaysian firms cannot relabel.
-```
-**5/7** _(reframe)_ · 114 chars
-```
-The real filter is not sustainability. It is lobbying power. The ceiling has a hole sized for the biggest players.
-```
-**6/7** _(analogy)_ · 205 chars
-```
-Like installing a water meter in every house but exempting the swimming pools. A moratorium with exemptions for the largest consumers signals sustainability as a constraint for the small, not the powerful.
-```
-**7/7** _(view — ONLY post with the link)_ · 172 chars
-```
-The ambition is not wrong. It is ungoverned. Residents should not have to protest to trigger what the numbers already demanded.
-
-https://thefourthangle.pages.dev/issue/1963
-```
-
 ### Issue 1962 — Generals charged at last; the 4,679-contract cartel system remains intact
 
 - **Status:** PENDING
@@ -2666,39 +2668,6 @@ Protecting Malaysian jobs is a legitimate aim. The risk is that protection witho
 https://thefourthangle.pages.dev/issue/1956
 ```
 
-### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
-
-**1/6** _(hook — attach image, NO link)_ · 112 chars
-```
-Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
-```
-**2/6** _(fact)_ · 138 chars
-```
-Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
-```
-**3/6** _(fact)_ · 255 chars
-```
-Lower-income households are more exposed to food price rises as a share of expenditure. DOSM shows food's larger weight in B40 budgets. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
-```
-**4/6** _(fact)_ · 263 chars
-```
-Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves. Malaysia imports over 60% of mineral-fertiliser needs. No Vietnam-style stabilisation list or Thailand-style public-stock mechanism was found.
-```
-**5/6** _(reframe)_ · 171 chars
-```
-The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
-```
-**6/6** _(view — ONLY post with the link)_ · 201 chars
-```
-Hormuz raised the cost of input dependency. Malaysia lacks the buffers Indonesia, Vietnam and Thailand built; until that changes, shocks hit the wet market.
-
-https://thefourthangle.pages.dev/issue/1953
-```
-
 ### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
 
 - **Status:** PENDING
@@ -2804,6 +2773,39 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1247-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1247`
+
+**1/6** _(hook — attach image, NO link)_ · 118 chars
+```
+SUHAKAM-linked 2022 reporting estimates 500,000 to 1 million stateless children in Sabah. There is no official figure.
+```
+**2/6** _(fact)_ · 257 chars
+```
+Federal Constitution Article 14 grants citizenship by birth under specific conditions. Stateless children fall through gaps in jus soli and jus sanguinis. The conditions assume parental documentation many lack, perpetuating statelessness across generations.
+```
+**3/6** _(fact)_ · 154 chars
+```
+Malaysia is not bound by the 1961 Statelessness Convention. It is a party to the CRC with reservations affecting Article 7 (right to acquire nationality).
+```
+**4/6** _(fact)_ · 253 chars
+```
+The Bajau Laut are a frequently cited affected group, described by researchers as 'genuinely stateless' across Malaysia, Indonesia and the Philippines. Many Bajau Laut have lived along Sabah's coast for generations; no state recognises them as citizens.
+```
+**5/6** _(reframe)_ · 166 chars
+```
+UNICEF's Sabah study found 18,781 'invisible' children missing from official databases. SUHAKAM-linked reporting estimates the latent stateless population at 500K-1M.
+```
+**6/6** _(view — ONLY post with the link)_ · 189 chars
+```
+Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
+
+https://thefourthangle.pages.dev/issue/1247
 ```
 
 ### Issue 1241 — Suaram: 6,892 SOSMA Arrests Since 2012; Reported 20–28% Released Without Charge
