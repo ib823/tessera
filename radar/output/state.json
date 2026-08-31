@@ -1,20 +1,20 @@
 {
-  "last_cycle": "2026-08-31T00:14:46.328567+00:00",
-  "events_processed": 483,
-  "active_topics": 9350,
+  "last_cycle": "2026-08-31T08:13:15.742270+00:00",
+  "events_processed": 431,
+  "active_topics": 9366,
   "stream_health": {
+    "polarization": "ok",
+    "volume_monitor": "ok",
+    "narrative_fragmentation": "ok",
     "network_bridge": "ok",
     "cascade_tracker": "ok",
-    "polarization": "ok",
-    "narrative_fragmentation": "ok",
-    "volume_monitor": "ok",
     "silence_detector": "ok"
   },
   "fusion": {
     "topics": {
       "macc": {
-        "alpha": 1.0000000000220335,
-        "beta": 9.000000000097687,
+        "alpha": 1.0000000000004439,
+        "beta": 9.000000000001968,
         "created_at": "2026-03-24T14:39:16.811710+00:00",
         "last_updated": "2026-08-28T04:08:40.174272+00:00",
         "stream_signals": {
@@ -65,10 +65,10 @@
         }
       },
       "pas": {
-        "alpha": 608.1949235809752,
+        "alpha": 608.5449235809753,
         "beta": 123.50385179297575,
         "created_at": "2026-03-24T14:39:16.811773+00:00",
-        "last_updated": "2026-08-31T00:18:22.872280+00:00",
+        "last_updated": "2026-08-31T08:16:30.569537+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.8,
@@ -116,7 +116,7 @@
       },
       "subsidi": {
         "alpha": 1.0,
-        "beta": 10.400000161834157,
+        "beta": 9.930276446197645,
         "created_at": "2026-03-24T14:39:16.811819+00:00",
         "last_updated": "2026-08-31T00:18:22.872306+00:00",
         "stream_signals": {
@@ -150,16 +150,16 @@
       },
       "parlimen": {
         "alpha": 1.0,
-        "beta": 9.000000000000025,
+        "beta": 9.350000000000025,
         "created_at": "2026-03-24T14:39:16.811906+00:00",
-        "last_updated": "2026-08-27T19:05:49.366831+00:00",
+        "last_updated": "2026-08-31T08:16:30.569618+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.15,
-            "z_score": 0.6
+            "severity": 0.35,
+            "z_score": 1.4
           },
           "cascade_tracker": {
-            "n_star": 0.1,
+            "n_star": 0.23333333333333334,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -182,17 +182,17 @@
         }
       },
       "parliament": {
-        "alpha": 920.8999999999697,
-        "beta": 358.8999999999894,
+        "alpha": 921.2999999999697,
+        "beta": 359.24999999998937,
         "created_at": "2026-03-24T14:39:16.811915+00:00",
-        "last_updated": "2026-08-31T00:18:22.872875+00:00",
+        "last_updated": "2026-08-31T08:16:30.570331+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.2,
-            "z_score": 0.8
+            "severity": 0.15,
+            "z_score": 0.6
           },
           "cascade_tracker": {
-            "n_star": 0.13333333333333333,
+            "n_star": 0.1,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -200,9 +200,9 @@
             "keyword": "parliament",
             "title": "Parliament budget session session opens",
             "structural_importance": 0.515,
-            "silence_score": 0.9955,
-            "suppression_pattern": "PUBLIC_BLIND_SPOT",
-            "news_mentions": 3,
+            "silence_score": 1.0,
+            "suppression_pattern": "HIDDEN_STORY",
+            "news_mentions": 0,
             "social_mentions": 0,
             "expected_mentions": 660.0,
             "bias_dimensions_touched": [
@@ -211,13 +211,13 @@
             ],
             "alert_level": "high",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
       "rasuah": {
         "alpha": 1.0,
-        "beta": 9.000000000005597,
+        "beta": 9.000000000000112,
         "created_at": "2026-03-24T14:39:16.811946+00:00",
         "last_updated": "2026-08-28T04:08:40.174348+00:00",
         "stream_signals": {
@@ -363,17 +363,17 @@
         }
       },
       "government": {
-        "alpha": 629.7767021350273,
+        "alpha": 630.1267021350274,
         "beta": 145.42715174079086,
         "created_at": "2026-03-24T14:39:16.811982+00:00",
-        "last_updated": "2026-08-31T00:18:22.872250+00:00",
+        "last_updated": "2026-08-31T08:16:30.569655+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 1.0,
-            "z_score": 7.0
+            "severity": 0.95,
+            "z_score": 3.8
           },
           "cascade_tracker": {
-            "n_star": 0.9,
+            "n_star": 0.6333333333333333,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -430,9 +430,9 @@
       },
       "harga": {
         "alpha": 1.0,
-        "beta": 9.0,
+        "beta": 9.35,
         "created_at": "2026-03-24T14:39:16.811998+00:00",
-        "last_updated": "2026-08-07T12:22:09.791402+00:00",
+        "last_updated": "2026-08-31T08:16:30.569659+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.15,
@@ -476,10 +476,10 @@
         }
       },
       "budget": {
-        "alpha": 708.1999999999769,
+        "alpha": 708.5999999999768,
         "beta": 219.4000000000001,
         "created_at": "2026-03-24T14:39:16.812004+00:00",
-        "last_updated": "2026-08-31T00:18:22.872872+00:00",
+        "last_updated": "2026-08-31T08:16:30.570328+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.15,
@@ -494,10 +494,10 @@
             "keyword": "budget",
             "title": "Budget 2027 presentation",
             "structural_importance": 0.54,
-            "silence_score": 0.9987,
-            "suppression_pattern": "PUBLIC_BLIND_SPOT",
+            "silence_score": 0.9974,
+            "suppression_pattern": "NORMAL",
             "news_mentions": 1,
-            "social_mentions": 0,
+            "social_mentions": 1,
             "expected_mentions": 760.0,
             "bias_dimensions_touched": [
               "economic",
@@ -505,7 +505,7 @@
             ],
             "alert_level": "high",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           },
           "polarization": {
             "keyword": "budget",
@@ -527,17 +527,17 @@
         }
       },
       "minister": {
-        "alpha": 735.1999999999694,
-        "beta": 112.20000000000105,
+        "alpha": 735.3499999999693,
+        "beta": 112.40000000000106,
         "created_at": "2026-03-24T14:39:16.812015+00:00",
-        "last_updated": "2026-08-31T00:18:22.872297+00:00",
+        "last_updated": "2026-08-31T08:16:30.569518+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 1.0,
-            "z_score": 6.6
+            "severity": 0.7,
+            "z_score": 2.8
           },
           "cascade_tracker": {
-            "n_star": 0.9,
+            "n_star": 0.4666666666666667,
             "alert_level": "normal"
           },
           "polarization": {
@@ -577,8 +577,8 @@
         }
       },
       "pkr": {
-        "alpha": 1.000000350085317,
-        "beta": 9.0199576753357,
+        "alpha": 1.0000000668314535,
+        "beta": 9.003809929712522,
         "created_at": "2026-03-24T14:39:16.812021+00:00",
         "last_updated": "2026-08-29T23:59:24.607267+00:00",
         "stream_signals": {
@@ -610,17 +610,17 @@
         }
       },
       "malay": {
-        "alpha": 927.99999999995,
+        "alpha": 928.34999999995,
         "beta": 26.399999999999938,
         "created_at": "2026-03-24T14:39:16.812041+00:00",
-        "last_updated": "2026-08-31T00:18:22.872344+00:00",
+        "last_updated": "2026-08-31T08:16:30.569530+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 1.0,
-            "z_score": 9.0
+            "severity": 0.95,
+            "z_score": 3.8
           },
           "cascade_tracker": {
-            "n_star": 0.9,
+            "n_star": 0.6333333333333333,
             "alert_level": "normal"
           },
           "polarization": {
@@ -663,7 +663,7 @@
       },
       "cina": {
         "alpha": 1.0,
-        "beta": 9.013300196493917,
+        "beta": 9.002539013832168,
         "created_at": "2026-03-24T14:39:16.812048+00:00",
         "last_updated": "2026-08-29T23:59:24.607171+00:00",
         "stream_signals": {
@@ -703,19 +703,19 @@
         }
       },
       "parliament budget session session opens": {
-        "alpha": 708.1999999999769,
+        "alpha": 708.5999999999768,
         "beta": 9.0,
         "created_at": "2026-03-24T14:39:16.812698+00:00",
-        "last_updated": "2026-08-31T00:18:22.872584+00:00",
+        "last_updated": "2026-08-31T08:16:30.569961+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0001",
             "keyword": "parliament",
             "title": "Parliament budget session session opens",
             "structural_importance": 0.515,
-            "silence_score": 0.9955,
-            "suppression_pattern": "PUBLIC_BLIND_SPOT",
-            "news_mentions": 3,
+            "silence_score": 1.0,
+            "suppression_pattern": "HIDDEN_STORY",
+            "news_mentions": 0,
             "social_mentions": 0,
             "expected_mentions": 660.0,
             "bias_dimensions_touched": [
@@ -724,25 +724,25 @@
             ],
             "alert_level": "high",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
       "budget 2027 presentation": {
-        "alpha": 708.1999999999769,
+        "alpha": 708.5999999999768,
         "beta": 9.0,
         "created_at": "2026-03-24T14:39:16.812703+00:00",
-        "last_updated": "2026-08-31T00:18:22.872589+00:00",
+        "last_updated": "2026-08-31T08:16:30.569966+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0002",
             "keyword": "budget",
             "title": "Budget 2027 presentation",
             "structural_importance": 0.54,
-            "silence_score": 0.9987,
-            "suppression_pattern": "PUBLIC_BLIND_SPOT",
+            "silence_score": 0.9974,
+            "suppression_pattern": "NORMAL",
             "news_mentions": 1,
-            "social_mentions": 0,
+            "social_mentions": 1,
             "expected_mentions": 760.0,
             "bias_dimensions_touched": [
               "economic",
@@ -750,7 +750,7 @@
             ],
             "alert_level": "high",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -2099,7 +2099,7 @@
         }
       },
       "malaysia": {
-        "alpha": 1.0000000552694412,
+        "alpha": 1.0000000023073388,
         "beta": 9.0,
         "created_at": "2026-03-24T16:28:08.673795+00:00",
         "last_updated": "2026-08-28T18:21:15.412884+00:00",
@@ -2451,8 +2451,8 @@
         }
       },
       "kerajaan": {
-        "alpha": 1.00204253418502,
-        "beta": 10.251793817218724,
+        "alpha": 1.001357229444508,
+        "beta": 9.831795834626648,
         "created_at": "2026-03-24T22:12:15.508273+00:00",
         "last_updated": "2026-08-31T00:18:22.872272+00:00",
         "stream_signals": {
@@ -2650,7 +2650,7 @@
         }
       },
       "us": {
-        "alpha": 1.0000000313775346,
+        "alpha": 1.000000001309921,
         "beta": 9.0,
         "created_at": "2026-03-24T22:12:15.509180+00:00",
         "last_updated": "2026-08-28T18:21:15.412918+00:00",
@@ -2736,7 +2736,7 @@
       },
       "undang-undang": {
         "alpha": 1.0,
-        "beta": 9.000000000000021,
+        "beta": 9.0,
         "created_at": "2026-03-25T00:35:44.154565+00:00",
         "last_updated": "2026-08-27T19:05:49.366763+00:00",
         "stream_signals": {
@@ -3183,8 +3183,8 @@
         }
       },
       "ringgit": {
-        "alpha": 1.0034179331807613,
-        "beta": 10.490521175424622,
+        "alpha": 1.0018922302190465,
+        "beta": 9.825179739072304,
         "created_at": "2026-03-25T03:08:20.904260+00:00",
         "last_updated": "2026-08-30T20:44:51.790245+00:00",
         "stream_signals": {
@@ -3293,8 +3293,8 @@
         }
       },
       "mahkamah": {
-        "alpha": 1.0000000009514511,
-        "beta": 9.000000046617872,
+        "alpha": 1.0000000000397202,
+        "beta": 9.00000000194616,
         "created_at": "2026-03-25T04:43:09.347442+00:00",
         "last_updated": "2026-08-28T18:21:15.412311+00:00",
         "stream_signals": {
@@ -4698,7 +4698,7 @@
         }
       },
       "pm": {
-        "alpha": 1.0114001688440488,
+        "alpha": 1.0021762976668016,
         "beta": 9.0,
         "created_at": "2026-03-25T10:22:09.632403+00:00",
         "last_updated": "2026-08-29T23:59:24.607689+00:00",
@@ -4753,8 +4753,8 @@
         }
       },
       "umno": {
-        "alpha": 1.0000000000001124,
-        "beta": 9.512177268980915,
+        "alpha": 1.0000000000000386,
+        "beta": 9.176411242140242,
         "created_at": "2026-03-25T12:22:20.605427+00:00",
         "last_updated": "2026-08-30T11:29:44.065992+00:00",
         "stream_signals": {
@@ -5009,16 +5009,16 @@
       },
       "bangsa": {
         "alpha": 1.0,
-        "beta": 9.025433214634177,
+        "beta": 9.375433214634176,
         "created_at": "2026-03-25T14:32:20.351709+00:00",
-        "last_updated": "2026-08-30T04:23:41.085211+00:00",
+        "last_updated": "2026-08-31T08:16:30.569576+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.1,
-            "z_score": 0.4
+            "severity": 0.25,
+            "z_score": 1.0
           },
           "cascade_tracker": {
-            "n_star": 0.06666666666666667,
+            "n_star": 0.16666666666666666,
             "alert_level": "normal"
           }
         }
@@ -5041,7 +5041,7 @@
       },
       "perdana menteri": {
         "alpha": 1.0,
-        "beta": 9.088336788423232,
+        "beta": 9.030426189354081,
         "created_at": "2026-03-25T14:32:20.351757+00:00",
         "last_updated": "2026-08-30T11:29:44.065976+00:00",
         "stream_signals": {
@@ -5598,7 +5598,7 @@
       },
       "quota": {
         "alpha": 1.0,
-        "beta": 10.400001896952592,
+        "beta": 9.93027759887617,
         "created_at": "2026-03-26T03:09:51.147733+00:00",
         "last_updated": "2026-08-31T00:18:22.872285+00:00",
         "stream_signals": {
@@ -5811,7 +5811,7 @@
         }
       },
       "indonesia": {
-        "alpha": 1.5001908019706987,
+        "alpha": 1.2769147640607166,
         "beta": 9.0,
         "created_at": "2026-03-26T03:09:51.148549+00:00",
         "last_updated": "2026-08-30T20:44:51.790953+00:00",
@@ -5835,7 +5835,7 @@
       },
       "bersatu": {
         "alpha": 1.0,
-        "beta": 9.386377049186063,
+        "beta": 9.17004415807586,
         "created_at": "2026-03-26T04:51:50.494307+00:00",
         "last_updated": "2026-08-30T16:16:26.130239+00:00",
         "stream_signals": {
@@ -6102,7 +6102,7 @@
       },
       "assembly": {
         "alpha": 1.0,
-        "beta": 9.008062996136973,
+        "beta": 9.001293207889873,
         "created_at": "2026-03-26T06:31:53.550092+00:00",
         "last_updated": "2026-08-29T20:35:41.515397+00:00",
         "stream_signals": {
@@ -7125,7 +7125,7 @@
         }
       },
       "south": {
-        "alpha": 1.0114001688537946,
+        "alpha": 1.002176297669034,
         "beta": 9.0,
         "created_at": "2026-03-26T10:24:46.831483+00:00",
         "last_updated": "2026-08-29T23:59:24.607701+00:00",
@@ -7219,7 +7219,7 @@
         }
       },
       "missing": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.398689862675689,
         "beta": 9.0,
         "created_at": "2026-03-26T10:24:46.831503+00:00",
         "last_updated": "2026-08-31T00:18:22.872878+00:00",
@@ -8465,7 +8465,7 @@
         }
       },
       "a": {
-        "alpha": 1.0000007200922656,
+        "alpha": 1.0000000462440577,
         "beta": 9.0,
         "created_at": "2026-03-27T00:38:51.270208+00:00",
         "last_updated": "2026-08-29T02:45:02.449790+00:00",
@@ -8490,7 +8490,7 @@
         }
       },
       "trump": {
-        "alpha": 1.000041060866926,
+        "alpha": 1.0000040128581105,
         "beta": 9.0,
         "created_at": "2026-03-27T00:38:51.270211+00:00",
         "last_updated": "2026-08-29T10:56:12.588651+00:00",
@@ -8533,7 +8533,7 @@
         }
       },
       "norway,": {
-        "alpha": 1.0000315216613962,
+        "alpha": 1.0000030805962956,
         "beta": 9.0,
         "created_at": "2026-03-27T00:38:51.270221+00:00",
         "last_updated": "2026-08-29T10:56:12.588624+00:00",
@@ -8827,7 +8827,7 @@
         }
       },
       "two": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-03-27T03:09:51.354510+00:00",
         "last_updated": "2026-08-28T04:08:40.174881+00:00",
@@ -8944,9 +8944,9 @@
       },
       "racism": {
         "alpha": 1.0,
-        "beta": 9.0,
+        "beta": 9.35,
         "created_at": "2026-03-27T04:52:10.648188+00:00",
-        "last_updated": "2026-08-18T00:18:52.406150+00:00",
+        "last_updated": "2026-08-31T08:16:30.569581+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.1,
@@ -9219,28 +9219,25 @@
         }
       },
       "sarawak": {
-        "alpha": 1.6665252343418138,
+        "alpha": 1.8665252343418137,
         "beta": 9.0,
         "created_at": "2026-03-27T04:52:10.648856+00:00",
-        "last_updated": "2026-08-30T20:44:51.790904+00:00",
+        "last_updated": "2026-08-31T08:16:30.570382+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0020",
+            "event_id": "INST-0006",
             "keyword": "sarawak",
-            "title": "Sarawak ready to declare haze emergency at critical level. Deputy premier Douglas Uggah Embas says guidelines provide for the closure of government and private-sector offices should air pollution read",
-            "structural_importance": 0.515,
-            "silence_score": 0.9561,
+            "title": "Sarawak says no emergency unless API breaches 500, Serian readings remain hazardous. KUCHING, Aug 31 &mdash; A state of emergency will only be declared if the Air Pollutant Index (API) reaches 500 or ",
+            "structural_importance": 0.415,
+            "silence_score": 0.8846,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 23,
+            "news_mentions": 24,
             "social_mentions": 6,
-            "expected_mentions": 660.0,
-            "bias_dimensions_touched": [
-              "environmental",
-              "political"
-            ],
-            "alert_level": "high",
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-30T20:44:51.768055+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -9719,7 +9716,7 @@
         }
       },
       "billions": {
-        "alpha": 1.4998939260626303,
+        "alpha": 1.2767504081118501,
         "beta": 9.0,
         "created_at": "2026-03-27T08:21:17.587013+00:00",
         "last_updated": "2026-08-30T20:44:51.790947+00:00",
@@ -9794,7 +9791,7 @@
         }
       },
       "anwar": {
-        "alpha": 3.8150417980111766,
+        "alpha": 2.870547713285579,
         "beta": 9.0,
         "created_at": "2026-03-27T08:21:17.587025+00:00",
         "last_updated": "2026-08-31T00:18:22.872884+00:00",
@@ -10119,7 +10116,7 @@
         }
       },
       "malaysian": {
-        "alpha": 1.0000000194090062,
+        "alpha": 1.0000000008102696,
         "beta": 9.0,
         "created_at": "2026-03-27T10:20:34.259513+00:00",
         "last_updated": "2026-08-28T18:21:15.412897+00:00",
@@ -10760,7 +10757,7 @@
         }
       },
       "three": {
-        "alpha": 1.9999999999999998,
+        "alpha": 1.6644831047624462,
         "beta": 9.0,
         "created_at": "2026-03-27T16:22:35.971535+00:00",
         "last_updated": "2026-08-31T00:18:22.872910+00:00",
@@ -12629,7 +12626,7 @@
         }
       },
       "kedah": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-03-29T04:54:24.963562+00:00",
         "last_updated": "2026-08-28T04:08:40.174899+00:00",
@@ -12988,7 +12985,7 @@
         }
       },
       "nga": {
-        "alpha": 1.0117592691073065,
+        "alpha": 1.0028138791737893,
         "beta": 9.0,
         "created_at": "2026-03-29T06:30:43.339046+00:00",
         "last_updated": "2026-08-30T04:23:41.086072+00:00",
@@ -13208,7 +13205,7 @@
       },
       "death penalty": {
         "alpha": 1.0,
-        "beta": 9.020578719964334,
+        "beta": 9.00492428826296,
         "created_at": "2026-03-29T22:11:02.789216+00:00",
         "last_updated": "2026-08-30T04:23:41.085242+00:00",
         "stream_signals": {
@@ -13470,7 +13467,7 @@
       },
       "bumiputera": {
         "alpha": 1.0,
-        "beta": 9.00000130691832,
+        "beta": 9.000000083929809,
         "created_at": "2026-03-30T03:10:41.545702+00:00",
         "last_updated": "2026-08-29T02:45:02.449250+00:00",
         "stream_signals": {
@@ -13607,7 +13604,7 @@
         }
       },
       "australia": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-03-30T03:10:41.546193+00:00",
         "last_updated": "2026-08-28T04:08:40.174905+00:00",
@@ -13831,10 +13828,10 @@
         }
       },
       "federal": {
-        "alpha": 26.199999999999974,
+        "alpha": 26.599999999999973,
         "beta": 9.0,
         "created_at": "2026-03-30T05:01:56.770091+00:00",
-        "last_updated": "2026-08-31T00:18:22.872868+00:00",
+        "last_updated": "2026-08-31T08:16:30.570324+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0005",
@@ -13851,7 +13848,7 @@
             ],
             "alert_level": "high",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -15783,28 +15780,27 @@
         }
       },
       "china\u2019s": {
-        "alpha": 1.0,
+        "alpha": 1.4,
         "beta": 9.0,
         "created_at": "2026-03-31T04:53:07.873251+00:00",
-        "last_updated": "2026-08-24T04:47:56.964862+00:00",
+        "last_updated": "2026-08-31T08:16:30.570364+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0024",
+            "event_id": "INST-0017",
             "keyword": "china\u2019s",
-            "title": "China\u2019s property crisis grinds on after Evergrande sentencing. One-time billionaire Hui Ka Yan was sentenced to life in prison as China's property crisis enters its sixth year, weighing on the economy",
-            "structural_importance": 0.41,
-            "silence_score": 0.9583,
+            "title": "China\u2019s three biggest airlines post heavy first-half losses as fuel shock bites. Air China, China Eastern and China Southern posted combined losses of US$1.22 billion, with a lacklustre summer cloudin",
+            "structural_importance": 0.465,
+            "silence_score": 0.8674,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 8,
+            "news_mentions": 59,
             "social_mentions": 2,
-            "expected_mentions": 240.0,
+            "expected_mentions": 460.0,
             "bias_dimensions_touched": [
-              "legal",
               "political"
             ],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-24T04:47:56.939746+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -16043,7 +16039,7 @@
         }
       },
       "high": {
-        "alpha": 1.0000000000000002,
+        "alpha": 1.0,
         "beta": 9.0,
         "created_at": "2026-03-31T06:36:04.319658+00:00",
         "last_updated": "2026-08-27T08:03:11.738527+00:00",
@@ -16140,7 +16136,7 @@
         }
       },
       "factory": {
-        "alpha": 1.0000630433230369,
+        "alpha": 1.0000061611926179,
         "beta": 9.0,
         "created_at": "2026-03-31T06:36:04.319678+00:00",
         "last_updated": "2026-08-29T10:56:12.588658+00:00",
@@ -20244,7 +20240,7 @@
         }
       },
       "what": {
-        "alpha": 1.000000720092265,
+        "alpha": 1.0000000462440577,
         "beta": 9.0,
         "created_at": "2026-04-02T08:27:39.234213+00:00",
         "last_updated": "2026-08-29T02:45:02.449781+00:00",
@@ -20592,7 +20588,7 @@
         }
       },
       "bekas": {
-        "alpha": 1.0000000000000244,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-04-02T10:25:03.186949+00:00",
         "last_updated": "2026-08-27T19:05:49.367356+00:00",
@@ -22583,7 +22579,7 @@
         }
       },
       "wisma": {
-        "alpha": 1.3356832294624135,
+        "alpha": 1.115620703311684,
         "beta": 9.0,
         "created_at": "2026-04-03T12:19:56.768913+00:00",
         "last_updated": "2026-08-30T11:29:44.066685+00:00",
@@ -23589,7 +23585,7 @@
       },
       "audit": {
         "alpha": 1.0,
-        "beta": 9.04384809212153,
+        "beta": 9.010492423508508,
         "created_at": "2026-04-04T10:13:54.338098+00:00",
         "last_updated": "2026-08-30T04:23:41.085158+00:00",
         "stream_signals": {
@@ -34660,7 +34656,7 @@
         }
       },
       "after": {
-        "alpha": 1.0000000000095968,
+        "alpha": 1.0000000000001932,
         "beta": 9.0,
         "created_at": "2026-04-11T08:18:05.273739+00:00",
         "last_updated": "2026-08-28T04:08:40.174912+00:00",
@@ -35216,7 +35212,7 @@
         }
       },
       "in": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-04-12T00:42:39.076744+00:00",
         "last_updated": "2026-08-28T04:08:40.174865+00:00",
@@ -35657,7 +35653,7 @@
         }
       },
       "lee": {
-        "alpha": 1.0000000000000142,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-04-12T06:38:28.769635+00:00",
         "last_updated": "2026-08-27T19:05:49.367345+00:00",
@@ -36147,7 +36143,7 @@
         }
       },
       "3": {
-        "alpha": 1.100956332621785,
+        "alpha": 1.03477278921815,
         "beta": 9.0,
         "created_at": "2026-04-12T16:14:39.654051+00:00",
         "last_updated": "2026-08-30T11:29:44.066689+00:00",
@@ -36365,7 +36361,7 @@
       },
       "procurement": {
         "alpha": 1.0,
-        "beta": 9.000000000005597,
+        "beta": 9.000000000000112,
         "created_at": "2026-04-13T03:11:46.563101+00:00",
         "last_updated": "2026-08-28T04:08:40.174296+00:00",
         "stream_signals": {
@@ -38349,7 +38345,7 @@
         }
       },
       "remove": {
-        "alpha": 1.0114001688570433,
+        "alpha": 1.0021762976697783,
         "beta": 9.0,
         "created_at": "2026-04-14T00:44:06.849093+00:00",
         "last_updated": "2026-08-29T23:59:24.607705+00:00",
@@ -39847,16 +39843,16 @@
       },
       "petrol": {
         "alpha": 1.0,
-        "beta": 10.749999999999998,
+        "beta": 11.099999999999998,
         "created_at": "2026-04-14T18:31:07.800660+00:00",
-        "last_updated": "2026-08-31T00:18:22.872238+00:00",
+        "last_updated": "2026-08-31T08:16:30.569565+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.3,
-            "z_score": 1.2
+            "severity": 0.15,
+            "z_score": 0.6
           },
           "cascade_tracker": {
-            "n_star": 0.2,
+            "n_star": 0.1,
             "alert_level": "normal"
           }
         }
@@ -40056,7 +40052,7 @@
         }
       },
       "bessent": {
-        "alpha": 1.2,
+        "alpha": 1.132896620973318,
         "beta": 9.0,
         "created_at": "2026-04-15T00:44:10.242253+00:00",
         "last_updated": "2026-08-31T00:18:22.872921+00:00",
@@ -41500,7 +41496,7 @@
         }
       },
       "new": {
-        "alpha": 1.0000000097045032,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-04-15T12:28:53.430897+00:00",
         "last_updated": "2026-08-28T18:21:15.412915+00:00",
@@ -42537,25 +42533,25 @@
         }
       },
       "un": {
-        "alpha": 1.0,
+        "alpha": 1.2,
         "beta": 9.0,
         "created_at": "2026-04-16T06:45:05.655943+00:00",
-        "last_updated": "2026-08-25T06:52:30.728865+00:00",
+        "last_updated": "2026-08-31T08:16:30.570379+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0021",
+            "event_id": "INST-0010",
             "keyword": "un",
-            "title": "UN chief urges renewed global action over Rohingya crisis. Antonio Guterres also flags rising misinformation and hate speech targeting the community in countries across the region.",
+            "title": "UN committee presents legal case for broad slavery reparations. The UN anti-racism committee said countries must work to redress the harms caused by slavery and its continuing consequences.",
             "structural_importance": 0.415,
-            "silence_score": 0.8462,
+            "silence_score": 0.9231,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 37,
-            "social_mentions": 3,
+            "news_mentions": 16,
+            "social_mentions": 4,
             "expected_mentions": 260.0,
             "bias_dimensions_touched": [],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-25T06:52:30.710904+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -43731,16 +43727,16 @@
       },
       "urimai": {
         "alpha": 1.0,
-        "beta": 9.0,
+        "beta": 9.35,
         "created_at": "2026-04-17T03:10:35.992346+00:00",
-        "last_updated": "2026-04-30T12:39:51.938453+00:00",
+        "last_updated": "2026-08-31T08:16:30.569623+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.2,
-            "z_score": 0.8
+            "severity": 0.15,
+            "z_score": 0.6
           },
           "cascade_tracker": {
-            "n_star": 0.13333333333333333,
+            "n_star": 0.1,
             "alert_level": "normal"
           }
         }
@@ -46570,16 +46566,16 @@
       },
       "prime minister": {
         "alpha": 220.44842986080081,
-        "beta": 172.21707659762137,
+        "beta": 172.56707659762137,
         "created_at": "2026-04-19T10:18:07.524225+00:00",
-        "last_updated": "2026-08-31T00:18:22.872289+00:00",
+        "last_updated": "2026-08-31T08:16:30.569543+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.9,
-            "z_score": 3.6
+            "severity": 0.3,
+            "z_score": 1.2
           },
           "cascade_tracker": {
-            "n_star": 0.6,
+            "n_star": 0.2,
             "alert_level": "normal"
           }
         }
@@ -46856,16 +46852,16 @@
       },
       "election": {
         "alpha": 181.36882120100654,
-        "beta": 245.2518044452016,
+        "beta": 245.6018044452016,
         "created_at": "2026-04-19T20:14:07.934799+00:00",
-        "last_updated": "2026-08-31T00:18:22.872218+00:00",
+        "last_updated": "2026-08-31T08:16:30.569664+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.65,
-            "z_score": 2.6
+            "severity": 0.45,
+            "z_score": 1.8
           },
           "cascade_tracker": {
-            "n_star": 0.43333333333333335,
+            "n_star": 0.3,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -46889,9 +46885,9 @@
       },
       "liberal": {
         "alpha": 1.0,
-        "beta": 10.049999999999999,
+        "beta": 10.399999999999999,
         "created_at": "2026-04-19T22:13:07.239851+00:00",
-        "last_updated": "2026-08-31T00:18:22.872309+00:00",
+        "last_updated": "2026-08-31T08:16:30.569511+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.15,
@@ -47661,7 +47657,7 @@
         }
       },
       "7": {
-        "alpha": 1.0000315216613818,
+        "alpha": 1.000003080596294,
         "beta": 9.0,
         "created_at": "2026-04-20T05:08:08.244261+00:00",
         "last_updated": "2026-08-29T10:56:12.588620+00:00",
@@ -48968,17 +48964,17 @@
         }
       },
       "dap": {
-        "alpha": 9.425114417900586,
+        "alpha": 9.775114417900586,
         "beta": 37.25210471924528,
         "created_at": "2026-04-20T16:31:38.007894+00:00",
-        "last_updated": "2026-08-30T20:44:51.790165+00:00",
+        "last_updated": "2026-08-31T08:16:30.569640+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.25,
-            "z_score": 1.0
+            "severity": 0.8,
+            "z_score": 3.2
           },
           "cascade_tracker": {
-            "n_star": 0.16666666666666666,
+            "n_star": 0.5333333333333333,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -57944,7 +57940,7 @@
         }
       },
       "bukan": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-04-25T02:35:41.916980+00:00",
         "last_updated": "2026-08-28T04:08:40.174853+00:00",
@@ -61334,17 +61330,17 @@
         }
       },
       "isa": {
-        "alpha": 362.9176977786834,
+        "alpha": 363.2676977786834,
         "beta": 158.24608470128646,
         "created_at": "2026-04-27T19:25:55.170091+00:00",
-        "last_updated": "2026-08-31T00:18:22.872317+00:00",
+        "last_updated": "2026-08-31T08:16:30.569597+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.85,
-            "z_score": 3.4
+            "severity": 0.9,
+            "z_score": 3.6
           },
           "cascade_tracker": {
-            "n_star": 0.5666666666666667,
+            "n_star": 0.6,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -62541,7 +62537,7 @@
         }
       },
       "google": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898628915512,
         "beta": 9.0,
         "created_at": "2026-04-28T06:30:43.462588+00:00",
         "last_updated": "2026-08-31T00:18:22.872916+00:00",
@@ -68350,7 +68346,7 @@
         }
       },
       "nepali": {
-        "alpha": 1.0000000000031992,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-05-01T16:25:46.443920+00:00",
         "last_updated": "2026-08-28T04:08:40.174888+00:00",
@@ -69868,7 +69864,7 @@
         }
       },
       "fadhlina": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-05-03T08:39:41.265804+00:00",
         "last_updated": "2026-08-28T04:08:40.174915+00:00",
@@ -76152,27 +76148,25 @@
         }
       },
       "4": {
-        "alpha": 1.0,
+        "alpha": 1.2,
         "beta": 9.0,
         "created_at": "2026-05-07T05:13:26.937766+00:00",
-        "last_updated": "2026-08-10T12:22:41.467287+00:00",
+        "last_updated": "2026-08-31T08:16:30.570376+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0035",
+            "event_id": "INST-0019",
             "keyword": "4",
-            "title": "4 akta bakal digubal, dipinda bawah Dasar Perumahan Negara 2026-2035. Perundangan baharu ialah Akta Pemaju Harta Tanah, Akta Pengurus Bangunan dan Akta Sewaan Kediaman, selain pindaan terhadap Akta Pe",
-            "structural_importance": 0.425,
-            "silence_score": 0.9933,
+            "title": "4 areas in Sarawak record \u2018hazardous\u2019 air quality. Another three locations in the state record 'very unhealthy' API readings as of 8am.",
+            "structural_importance": 0.415,
+            "silence_score": 0.9538,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 1,
-            "social_mentions": 1,
-            "expected_mentions": 300.0,
-            "bias_dimensions_touched": [
-              "political"
-            ],
+            "news_mentions": 8,
+            "social_mentions": 4,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-10T12:22:41.442514+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -79908,16 +79902,16 @@
       },
       "unity": {
         "alpha": 17.38328552035196,
-        "beta": 194.64032744975685,
+        "beta": 194.99032744975685,
         "created_at": "2026-05-10T10:30:48.392783+00:00",
-        "last_updated": "2026-08-31T00:18:22.872224+00:00",
+        "last_updated": "2026-08-31T08:16:30.569631+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.45,
-            "z_score": 1.8
+            "severity": 0.3,
+            "z_score": 1.2
           },
           "cascade_tracker": {
-            "n_star": 0.3,
+            "n_star": 0.2,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -80057,17 +80051,17 @@
         }
       },
       "india": {
-        "alpha": 617.7499999999756,
+        "alpha": 618.0999999999756,
         "beta": 17.396552744164644,
         "created_at": "2026-05-10T12:26:20.698803+00:00",
-        "last_updated": "2026-08-31T00:18:22.872233+00:00",
+        "last_updated": "2026-08-31T08:16:30.569560+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 1.0,
-            "z_score": 4.8
+            "z_score": 4.4
           },
           "cascade_tracker": {
-            "n_star": 0.8,
+            "n_star": 0.7333333333333333,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -82624,17 +82618,17 @@
         }
       },
       "chinese": {
-        "alpha": 478.41307187055054,
-        "beta": 40.42348722918948,
+        "alpha": 478.5630718705505,
+        "beta": 40.623487229189486,
         "created_at": "2026-05-12T18:42:51.450387+00:00",
-        "last_updated": "2026-08-31T00:18:22.872818+00:00",
+        "last_updated": "2026-08-31T08:16:30.569591+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.65,
-            "z_score": 2.6
+            "severity": 0.7,
+            "z_score": 2.8
           },
           "cascade_tracker": {
-            "n_star": 0.43333333333333335,
+            "n_star": 0.4666666666666667,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -83329,7 +83323,7 @@
         }
       },
       "muhyiddin": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-05-13T03:14:23.269726+00:00",
         "last_updated": "2026-08-28T04:08:40.174909+00:00",
@@ -85475,7 +85469,7 @@
         }
       },
       "emotional": {
-        "alpha": 1.011759269104626,
+        "alpha": 1.0028138791729875,
         "beta": 9.0,
         "created_at": "2026-05-14T03:13:05.766703+00:00",
         "last_updated": "2026-08-30T04:23:41.086068+00:00",
@@ -92388,16 +92382,16 @@
       },
       "indian": {
         "alpha": 5.9675891137501464,
-        "beta": 88.7212035569107,
+        "beta": 89.0712035569107,
         "created_at": "2026-05-19T00:58:55.387137+00:00",
-        "last_updated": "2026-08-31T00:18:22.872246+00:00",
+        "last_updated": "2026-08-31T08:16:30.569555+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.25,
-            "z_score": 1.0
+            "severity": 0.2,
+            "z_score": 0.8
           },
           "cascade_tracker": {
-            "n_star": 0.16666666666666666,
+            "n_star": 0.13333333333333333,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -97129,28 +97123,27 @@
         }
       },
       "syahredzan": {
-        "alpha": 1.0,
+        "alpha": 1.2,
         "beta": 9.0,
         "created_at": "2026-05-21T13:19:12.159302+00:00",
-        "last_updated": "2026-05-21T22:35:44.854294+00:00",
+        "last_updated": "2026-08-31T08:16:30.570340+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0033",
+            "event_id": "INST-0013",
             "keyword": "syahredzan",
-            "title": "Syahredzan bidas bekas bos SPRM, syor pertuduhan sebelum selesai siasat. Ahli Parlimen Bangi berkata kenyataan terbaru Ketua Pesuruhjaya SPRM Abd Halim Aman bukti siasatan libat dua individu masih ber",
-            "structural_importance": 0.41,
-            "silence_score": 0.9708,
+            "title": "Syahredzan hargai bantuan Ong sebelum jadi wakil rakyat. Ahli Parlimen Bangi Syahredzan Johan berkata beliau menghormati keputusan Ong Kian Ming meninggalkan DAP.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9783,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 4,
-            "social_mentions": 3,
-            "expected_mentions": 240.0,
+            "news_mentions": 5,
+            "social_mentions": 5,
+            "expected_mentions": 460.0,
             "bias_dimensions_touched": [
-              "institutional",
               "political"
             ],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-05-21T22:35:44.823264+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -97178,7 +97171,7 @@
         }
       },
       "estate": {
-        "alpha": 1.0000000000000488,
+        "alpha": 1.0000000000000007,
         "beta": 9.0,
         "created_at": "2026-05-21T13:19:12.159348+00:00",
         "last_updated": "2026-08-27T19:05:49.367336+00:00",
@@ -98712,16 +98705,16 @@
       },
       "race": {
         "alpha": 17.89113838697926,
-        "beta": 130.5755695599436,
+        "beta": 130.9255695599436,
         "created_at": "2026-05-22T22:29:06.871213+00:00",
-        "last_updated": "2026-08-31T00:18:22.872302+00:00",
+        "last_updated": "2026-08-31T08:16:30.569613+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.25,
-            "z_score": 1.0
+            "severity": 0.45,
+            "z_score": 1.8
           },
           "cascade_tracker": {
-            "n_star": 0.16666666666666666,
+            "n_star": 0.3,
             "alert_level": "normal"
           },
           "polarization": {
@@ -104111,27 +104104,27 @@
         }
       },
       "foreign": {
-        "alpha": 1.0000007200922685,
+        "alpha": 1.2000007200922684,
         "beta": 9.0,
         "created_at": "2026-05-28T08:03:18.668245+00:00",
-        "last_updated": "2026-08-29T02:45:02.449820+00:00",
+        "last_updated": "2026-08-31T08:16:30.570354+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0008",
             "keyword": "foreign",
-            "title": "Foreign Ministry says 36 Malaysians in Tibet reported safe, with checks widening to Chinese border areas. PUTRAJAYA, Aug 29 &mdash; Thirty-six Malaysians in Tibet, China have reported to be safe follo",
+            "title": "Foreign Ministry urges caution, says 36 Malaysians unaccounted for in China and 55 in Nepal. PUTRAJAYA, Aug 31 &mdash; The number of Malaysians reported uncontactable remains at 36 in China and 55 in ",
             "structural_importance": 0.465,
-            "silence_score": 0.7196,
+            "silence_score": 0.9543,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 118,
-            "social_mentions": 11,
+            "news_mentions": 18,
+            "social_mentions": 3,
             "expected_mentions": 460.0,
             "bias_dimensions_touched": [
               "ethnic"
             ],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-29T02:45:02.422192+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -108590,7 +108583,7 @@
         }
       },
       "philippine": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-06-01T17:44:01.339810+00:00",
         "last_updated": "2026-08-27T19:05:49.367349+00:00",
@@ -115138,7 +115131,7 @@
       },
       "inflation": {
         "alpha": 1.0,
-        "beta": 9.000000085374264,
+        "beta": 9.000000003564129,
         "created_at": "2026-06-07T20:33:15.839201+00:00",
         "last_updated": "2026-08-28T18:21:15.412224+00:00",
         "stream_signals": {
@@ -132636,16 +132629,16 @@
       },
       "policy": {
         "alpha": 1.8858953656339092,
-        "beta": 32.903298306756156,
+        "beta": 33.25329830675616,
         "created_at": "2026-06-21T22:32:48.396703+00:00",
-        "last_updated": "2026-08-31T00:18:22.872294+00:00",
+        "last_updated": "2026-08-31T08:16:30.569586+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.45,
-            "z_score": 1.8
+            "severity": 0.4,
+            "z_score": 1.6
           },
           "cascade_tracker": {
-            "n_star": 0.3,
+            "n_star": 0.26666666666666666,
             "alert_level": "normal"
           },
           "silence_detector": {
@@ -135286,7 +135279,7 @@
         }
       },
       "murid": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-06-23T16:55:50.524337+00:00",
         "last_updated": "2026-08-27T19:05:49.367341+00:00",
@@ -144696,7 +144689,7 @@
         }
       },
       "nearly": {
-        "alpha": 1.302868998370247,
+        "alpha": 1.1043183678863189,
         "beta": 9.0,
         "created_at": "2026-07-01T03:18:27.780496+00:00",
         "last_updated": "2026-08-30T11:29:44.066728+00:00",
@@ -147480,7 +147473,7 @@
       },
       "rally": {
         "alpha": 1.0,
-        "beta": 9.635724968477913,
+        "beta": 9.42242849696513,
         "created_at": "2026-07-02T14:51:52.374826+00:00",
         "last_updated": "2026-08-31T00:18:22.872268+00:00",
         "stream_signals": {
@@ -148340,7 +148333,7 @@
         }
       },
       "nato": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898628233841,
         "beta": 9.0,
         "created_at": "2026-07-03T09:10:35.187244+00:00",
         "last_updated": "2026-08-31T00:18:22.872904+00:00",
@@ -152755,8 +152748,8 @@
         }
       },
       "protest": {
-        "alpha": 1.0327234483696004,
-        "beta": 12.203434490709881,
+        "alpha": 1.0181162985324568,
+        "beta": 10.773479827290505,
         "created_at": "2026-07-07T18:47:38.367572+00:00",
         "last_updated": "2026-08-30T20:44:51.790234+00:00",
         "stream_signals": {
@@ -163914,7 +163907,7 @@
         }
       },
       "chipmaker": {
-        "alpha": 1.0000630433224977,
+        "alpha": 1.0000061611925586,
         "beta": 9.0,
         "created_at": "2026-07-15T10:38:49.897910+00:00",
         "last_updated": "2026-08-29T10:56:12.588583+00:00",
@@ -174043,16 +174036,16 @@
       },
       "menteri": {
         "alpha": 1.0392677429637045,
-        "beta": 10.47124369538109,
+        "beta": 10.82124369538109,
         "created_at": "2026-07-22T07:00:06.960817+00:00",
-        "last_updated": "2026-08-30T11:29:44.066015+00:00",
+        "last_updated": "2026-08-31T08:16:30.569669+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.3,
-            "z_score": 1.2
+            "severity": 0.1,
+            "z_score": 0.4
           },
           "cascade_tracker": {
-            "n_star": 0.2,
+            "n_star": 0.06666666666666667,
             "alert_level": "normal"
           }
         }
@@ -187088,9 +187081,9 @@
       },
       "governance": {
         "alpha": 1.0,
-        "beta": 13.701724368281887,
+        "beta": 14.051724368281887,
         "created_at": "2026-07-31T12:44:56.742736+00:00",
-        "last_updated": "2026-08-31T00:18:22.872276+00:00",
+        "last_updated": "2026-08-31T08:16:30.569645+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.25,
@@ -196448,25 +196441,25 @@
         }
       },
       "serian": {
-        "alpha": 2.704099530095021,
+        "alpha": 2.904099530095021,
         "beta": 9.0,
         "created_at": "2026-08-07T10:23:21.650070+00:00",
-        "last_updated": "2026-08-31T00:18:22.872891+00:00",
+        "last_updated": "2026-08-31T08:16:30.570373+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0023",
+            "event_id": "INST-0009",
             "keyword": "serian",
-            "title": "Serian tops hazardous API chart at 364, multiple Sarawak districts suffer worsening air. KUCHING, Aug 30 &mdash; Serian recorded a hazardous Air Pollutant Index (API) reading as of 8am today.According",
+            "title": "Serian API nears 500 as four Sarawak areas hit hazardous levels. KUCHING, Aug 31 &mdash; Four areas in Sarawak recorded hazardous air quality, with Air Pollutant Index (API) readings ex...",
             "structural_importance": 0.415,
-            "silence_score": 0.9692,
+            "silence_score": 0.9538,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 5,
+            "news_mentions": 9,
             "social_mentions": 3,
             "expected_mentions": 260.0,
             "bias_dimensions_touched": [],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -198945,25 +198938,25 @@
       },
       "islam": {
         "alpha": 1.9364149283105743,
-        "beta": 28.3530296178399,
+        "beta": 28.7030296178399,
         "created_at": "2026-08-09T20:11:49.691042+00:00",
-        "last_updated": "2026-08-31T00:18:22.872212+00:00",
+        "last_updated": "2026-08-31T08:16:30.569571+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.3,
-            "z_score": 1.2
+            "severity": 0.25,
+            "z_score": 1.0
           },
           "cascade_tracker": {
-            "n_star": 0.2,
+            "n_star": 0.16666666666666666,
             "alert_level": "normal"
           }
         }
       },
       "price": {
         "alpha": 1.07675857982495,
-        "beta": 10.87922956264988,
+        "beta": 11.229229562649879,
         "created_at": "2026-08-10T00:26:05.574895+00:00",
-        "last_updated": "2026-08-31T00:18:22.872242+00:00",
+        "last_updated": "2026-08-31T08:16:30.569635+00:00",
         "stream_signals": {
           "volume_monitor": {
             "severity": 0.25,
@@ -200681,7 +200674,7 @@
       },
       "pakatan": {
         "alpha": 1.0,
-        "beta": 10.400000000010198,
+        "beta": 9.930276339079256,
         "created_at": "2026-08-11T04:34:36.455307+00:00",
         "last_updated": "2026-08-31T00:18:22.872337+00:00",
         "stream_signals": {
@@ -204214,7 +204207,7 @@
         }
       },
       "haze": {
-        "alpha": 1.8000000281895892,
+        "alpha": 1.5315865024657218,
         "beta": 9.0,
         "created_at": "2026-08-12T10:27:28.845495+00:00",
         "last_updated": "2026-08-31T00:18:22.872900+00:00",
@@ -206926,16 +206919,16 @@
       },
       "reform": {
         "alpha": 1.0000003674997842,
-        "beta": 10.497887364206248,
+        "beta": 10.847887364206247,
         "created_at": "2026-08-13T20:17:08.430217+00:00",
-        "last_updated": "2026-08-31T00:18:22.872321+00:00",
+        "last_updated": "2026-08-31T08:16:30.569602+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.15,
-            "z_score": 0.6
+            "severity": 0.2,
+            "z_score": 0.8
           },
           "cascade_tracker": {
-            "n_star": 0.1,
+            "n_star": 0.13333333333333333,
             "alert_level": "normal"
           }
         }
@@ -209134,7 +209127,7 @@
         }
       },
       "jerebu": {
-        "alpha": 1.3332626171899005,
+        "alpha": 1.1845002718695217,
         "beta": 9.0,
         "created_at": "2026-08-15T14:09:06.219088+00:00",
         "last_updated": "2026-08-30T20:44:51.790908+00:00",
@@ -209991,7 +209984,7 @@
         }
       },
       "spidey": {
-        "alpha": 1.2,
+        "alpha": 1.1328966208975768,
         "beta": 9.0,
         "created_at": "2026-08-17T00:18:40.828792+00:00",
         "last_updated": "2026-08-31T00:18:22.872881+00:00",
@@ -214217,7 +214210,7 @@
         }
       },
       "keep": {
-        "alpha": 1.0504781663281537,
+        "alpha": 1.017386394617002,
         "beta": 9.0,
         "created_at": "2026-08-19T06:14:46.429828+00:00",
         "last_updated": "2026-08-30T11:29:44.066697+00:00",
@@ -215038,7 +215031,7 @@
         }
       },
       "group": {
-        "alpha": 1.000031521661364,
+        "alpha": 1.000003080596292,
         "beta": 9.0,
         "created_at": "2026-08-19T12:12:48.710511+00:00",
         "last_updated": "2026-08-29T10:56:12.588615+00:00",
@@ -218983,8 +218976,8 @@
         }
       },
       "corruption": {
-        "alpha": 1.3313680783443163,
-        "beta": 16.26751956725218,
+        "alpha": 1.2201884876946396,
+        "beta": 13.829143925993094,
         "created_at": "2026-08-21T20:09:26.819510+00:00",
         "last_updated": "2026-08-31T00:18:22.872329+00:00",
         "stream_signals": {
@@ -219792,10 +219785,10 @@
         }
       },
       "federal court term begins 2026-08-31": {
-        "alpha": 25.399999999999977,
+        "alpha": 25.799999999999976,
         "beta": 9.0,
         "created_at": "2026-08-23T01:25:05.316355+00:00",
-        "last_updated": "2026-08-31T00:18:22.872600+00:00",
+        "last_updated": "2026-08-31T08:16:30.569979+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0005",
@@ -219812,7 +219805,7 @@
             ],
             "alert_level": "high",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -220435,7 +220428,7 @@
       },
       "undi": {
         "alpha": 1.0,
-        "beta": 14.503281268705141,
+        "beta": 12.656837392704643,
         "created_at": "2026-08-23T08:33:35.183092+00:00",
         "last_updated": "2026-08-31T00:18:22.872313+00:00",
         "stream_signals": {
@@ -221733,9 +221726,9 @@
       },
       "merdeka": {
         "alpha": 1.0,
-        "beta": 17.8,
+        "beta": 18.000000000000004,
         "created_at": "2026-08-24T10:40:10.151260+00:00",
-        "last_updated": "2026-08-31T00:18:22.872896+00:00",
+        "last_updated": "2026-08-31T08:16:30.570370+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0004",
@@ -221750,7 +221743,7 @@
             "bias_dimensions_touched": [],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -221854,16 +221847,16 @@
       },
       "opposition": {
         "alpha": 1.0,
-        "beta": 11.336090961727361,
+        "beta": 11.686090961727361,
         "created_at": "2026-08-24T12:53:52.656122+00:00",
-        "last_updated": "2026-08-31T00:18:22.872325+00:00",
+        "last_updated": "2026-08-31T08:16:30.569650+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.2,
-            "z_score": 0.8
+            "severity": 0.15,
+            "z_score": 0.6
           },
           "cascade_tracker": {
-            "n_star": 0.13333333333333333,
+            "n_star": 0.1,
             "alert_level": "normal"
           }
         }
@@ -224612,9 +224605,9 @@
       },
       "reformasi anniversary": {
         "alpha": 1.0,
-        "beta": 10.999999999999993,
+        "beta": 11.099999999999993,
         "created_at": "2026-08-26T10:39:18.920107+00:00",
-        "last_updated": "2026-08-31T00:18:22.872593+00:00",
+        "last_updated": "2026-08-31T08:16:30.569971+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0003",
@@ -224629,7 +224622,7 @@
             "bias_dimensions_touched": [],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -224834,7 +224827,7 @@
         }
       },
       "nepal": {
-        "alpha": 3.7799922713488066,
+        "alpha": 2.8472578956025,
         "beta": 9.0,
         "created_at": "2026-08-26T10:39:18.920441+00:00",
         "last_updated": "2026-08-31T00:18:22.872907+00:00",
@@ -224906,9 +224899,9 @@
       },
       "reformasi": {
         "alpha": 1.0,
-        "beta": 10.999999999999993,
+        "beta": 11.099999999999993,
         "created_at": "2026-08-26T10:39:18.920452+00:00",
-        "last_updated": "2026-08-31T00:18:22.872894+00:00",
+        "last_updated": "2026-08-31T08:16:30.570366+00:00",
         "stream_signals": {
           "silence_detector": {
             "event_id": "INST-0003",
@@ -224923,7 +224916,7 @@
             "bias_dimensions_touched": [],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
@@ -225509,7 +225502,7 @@
         }
       },
       "after ex-pm ismail sabri, macc says ex-minister to be charged with corruption tomorrow. petaling jaya, aug 27 &mdash; a former federal minister is set to be charged in the sessions court tomorrow in c": {
-        "alpha": 1.0000000000095968,
+        "alpha": 1.0000000000001932,
         "beta": 9.0,
         "created_at": "2026-08-27T08:03:11.738212+00:00",
         "last_updated": "2026-08-28T04:08:40.174638+00:00",
@@ -225535,7 +225528,7 @@
         }
       },
       "nepal-tibet floods: 17 malaysians on mount kailash pilgrimage out of contact, another group led by everest climber n. mohanadas safe. kuala lumpur, aug 27 &mdash; seventeen malaysians travelling to mo": {
-        "alpha": 1.0000000000095968,
+        "alpha": 1.0000000000001932,
         "beta": 9.0,
         "created_at": "2026-08-27T08:03:11.738216+00:00",
         "last_updated": "2026-08-28T04:08:40.174641+00:00",
@@ -225560,7 +225553,7 @@
         }
       },
       "anwar orders national security council, nadma and foreign ministry to step up aid for malaysians in india, nepal. kuala lumpur, aug 27 &mdash; prime minister datuk seri anwar ibrahim has directed the ": {
-        "alpha": 1.0000000000000244,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T08:03:11.738222+00:00",
         "last_updated": "2026-08-27T19:05:49.367112+00:00",
@@ -225585,7 +225578,7 @@
         }
       },
       "malaysia tightens thai border security, to appoint facilitators for southern thailand peace talks. &nbsp;&nbsp;kuala lumpur, aug 27 &mdash; malaysia has tightened security across its land borders with": {
-        "alpha": 1.0000000000000244,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T08:03:11.738225+00:00",
         "last_updated": "2026-08-27T19:05:49.367121+00:00",
@@ -225857,7 +225850,7 @@
         }
       },
       "nepal-tibet": {
-        "alpha": 1.0000000000095968,
+        "alpha": 1.0000000000001932,
         "beta": 9.0,
         "created_at": "2026-08-27T08:03:11.738533+00:00",
         "last_updated": "2026-08-28T04:08:40.174876+00:00",
@@ -225928,7 +225921,7 @@
         }
       },
       "nepal embassy in kl appeals for flood relief donations as death toll rises. kuala lumpur, aug 27 &mdash; the nepal government has accorded high priority to search, rescue, relief and emergency res...": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367080+00:00",
         "last_updated": "2026-08-28T04:08:40.174627+00:00",
@@ -225954,7 +225947,7 @@
         }
       },
       "muhyiddin trial: witness admits testifying to avoid corruption charges, but denies getting macc \u2018immunity\u2019 deal. kuala lumpur, aug 27 &mdash; a key prosecution witness today agreed that he had come to": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367084+00:00",
         "last_updated": "2026-08-28T04:08:40.174631+00:00",
@@ -225980,7 +225973,7 @@
         }
       },
       "lubok antu only sarawak area with very unhealthy api reading as of 4pm. kuching, aug 27 &mdash; lubok antu was the only area in sarawak to record a &ldquo;very unhealthy&rdquo; air pollutant i...": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367087+00:00",
         "last_updated": "2026-08-28T04:08:40.174634+00:00",
@@ -226003,7 +225996,7 @@
         }
       },
       "two fire and rescue dept officers among malaysians uncontactable after nepal flash floods. &nbsp;kuala lumpur, aug 27 &mdash;&nbsp;two fire and rescue department (jbpm) officers are among the malaysia": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367089+00:00",
         "last_updated": "2026-08-28T04:08:40.174636+00:00",
@@ -226028,7 +226021,7 @@
         }
       },
       "ex-hospital director seeks judicial review over demotion. dr p yogendra is seeking a declaration that the sabah health committee for placement and transfers lacked authority to remove him from the pos": {
-        "alpha": 1.0000000000000366,
+        "alpha": 1.0000000000000004,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367091+00:00",
         "last_updated": "2026-08-27T19:05:49.367097+00:00",
@@ -226054,7 +226047,7 @@
         }
       },
       "bekas pengarah hospital mohon semakan kehakiman berhubung penurunan pangkat. dr p yogendra mohon deklarasi bahawa jawatankuasa kesihatan sabah bagi penempatan dan pertukaran tidak mempunyai kuasa yang": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367094+00:00",
         "last_updated": "2026-08-27T19:05:49.367095+00:00",
@@ -226077,7 +226070,7 @@
         }
       },
       "philippine claim on sabah a diversion tactic, says kitingan. the parti solidariti tanah airku president says such calls often surface ahead of elections and are attempts to divert attention from the c": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367104+00:00",
         "last_updated": "2026-08-27T19:05:49.367104+00:00",
@@ -226102,7 +226095,7 @@
         }
       },
       "ioi properties posts higher fy2026 net profit of rm2.15bil. its revenue grew 45% to rm4.44 billion from fy2025\u2019s rm3.06 billion.": {
-        "alpha": 1.0000000000000244,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367106+00:00",
         "last_updated": "2026-08-27T19:05:49.367107+00:00",
@@ -226127,7 +226120,7 @@
         }
       },
       "haze forces venue change for pm\u2019s national day address. the committee in charge of the celebration says this is to ensure the safety, health and comfort of guests and the public.": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367110+00:00",
         "last_updated": "2026-08-27T19:05:49.367111+00:00",
@@ -226150,7 +226143,7 @@
         }
       },
       "croatia keeper livakovic joins barcelona on four-year contract. dominik livakovic arrives as coach hansi flick strengthens his goalkeeping options following marc-andre ter stegen's loan move to ajax a": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367114+00:00",
         "last_updated": "2026-08-27T19:05:49.367114+00:00",
@@ -226173,7 +226166,7 @@
         }
       },
       "lee gesa kerajaan jelas keputusan tak jadi ambil alih datasonic. ahli parlimen petaling jaya berkata, pendirian kerajaan seperti yang dinyatakan oleh kementerian kewangan dan mkn kelihatan tidak konsi": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367115+00:00",
         "last_updated": "2026-08-27T19:05:49.367116+00:00",
@@ -226198,7 +226191,7 @@
         }
       },
       "girl, 11, dies after being \u2018forced\u2019 to run, fadhlina orders stern action. nur qaira alisha ahmad ilwan had heart issues and was allegedly forced to join the run despite her medical condition.": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367118+00:00",
         "last_updated": "2026-08-27T19:05:49.367119+00:00",
@@ -226221,7 +226214,7 @@
         }
       },
       "estate can recover medical bills paid by insurer, rules court. the court of appeal says insurance payments do not reduce the liability for medical costs incurred before an accident victim\u2019s death.": {
-        "alpha": 1.0000000000000488,
+        "alpha": 1.0000000000000007,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367123+00:00",
         "last_updated": "2026-08-27T19:05:49.367126+00:00",
@@ -226247,7 +226240,7 @@
         }
       },
       "ringgit ends lower ahead of jackson hole symposium. traders will scrutinise us federal reserve chair kevin warsh\u2019s jackson hole speech tomorrow for clues on the fed\u2019s next federal open market committe": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367128+00:00",
         "last_updated": "2026-08-27T19:05:49.367129+00:00",
@@ -226272,7 +226265,7 @@
         }
       },
       "murid sakit jantung dipaksa lari, fadhlina arah kpm ambil tindakan. susulan kejadian, nur qaira alisha ahmad ilwan terlantar, perlu bantuan oksigen sebelum dilaporkan meninggal dunia pada malam rabu.": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367130+00:00",
         "last_updated": "2026-08-27T19:05:49.367131+00:00",
@@ -226297,7 +226290,7 @@
         }
       },
       "ioi": {
-        "alpha": 1.0000000000000244,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367319+00:00",
         "last_updated": "2026-08-27T19:05:49.367321+00:00",
@@ -226322,7 +226315,7 @@
         }
       },
       "ex-hospital": {
-        "alpha": 1.0000000000000366,
+        "alpha": 1.0000000000000004,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367337+00:00",
         "last_updated": "2026-08-27T19:05:49.367380+00:00",
@@ -226348,7 +226341,7 @@
         }
       },
       "croatia": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367354+00:00",
         "last_updated": "2026-08-27T19:05:49.367354+00:00",
@@ -226371,7 +226364,7 @@
         }
       },
       "lubok": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367364+00:00",
         "last_updated": "2026-08-28T04:08:40.174895+00:00",
@@ -226394,7 +226387,7 @@
         }
       },
       "girl,": {
-        "alpha": 1.0000000000000122,
+        "alpha": 1.0000000000000002,
         "beta": 9.0,
         "created_at": "2026-08-27T19:05:49.367366+00:00",
         "last_updated": "2026-08-27T19:05:49.367371+00:00",
@@ -226417,7 +226410,7 @@
         }
       },
       "malaysian fire dept ready to deploy specialist rescue team to nepal as nine hikers remain uncontactable. putrajaya, aug 28 \u2014 the malaysian fire and rescue department (jbpm) is ready to deploy its spec": {
-        "alpha": 1.0000000194090055,
+        "alpha": 1.0000000008102696,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174585+00:00",
         "last_updated": "2026-08-28T18:21:15.412651+00:00",
@@ -226442,7 +226435,7 @@
         }
       },
       "kedah teacher transferred pending probe into year four pupil\u2019s death after sports activity. alor setar, aug 28 &mdash; a teacher believed to be involved in the case of an 11-year-old girl who allegedl": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174589+00:00",
         "last_updated": "2026-08-28T04:08:40.174589+00:00",
@@ -226465,7 +226458,7 @@
         }
       },
       "fadhlina orders moe integrity unit to probe case of year four pupil who died after sports event. kuala lumpur, aug 28 &mdash; education minister datuk seri fadhlina sidek has directed the ministry&rsq": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174591+00:00",
         "last_updated": "2026-08-28T04:08:40.174591+00:00",
@@ -226488,7 +226481,7 @@
         }
       },
       "trump administration seeks to restrict internships for international students. the federal government warns that colleges failing to comply with the regulations may lose certification to enrol foreign": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174592+00:00",
         "last_updated": "2026-08-28T04:08:40.174593+00:00",
@@ -226513,7 +226506,7 @@
         }
       },
       "bukan sekadar jadi kilang, malaysia sasar eksport medtech rm50 bilion. timbalan perdana menteri zahid hamidi berkata sasaran kerajaan meningkatkan eksport peranti perubatan melepasi rm50 bilion menjel": {
-        "alpha": 1.0000000000063978,
+        "alpha": 1.0000000000001288,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174594+00:00",
         "last_updated": "2026-08-28T04:08:40.174595+00:00",
@@ -226539,7 +226532,7 @@
         }
       },
       "nepal keluar senarai mangsa hilang, tubuh pasukan selaras pencarian. pasukan tindakan kecemasan akan selaras usaha melibatkan warga asing terjejas atau dilaporkan hilang susulan banjir dahsyat di sung": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174596+00:00",
         "last_updated": "2026-08-28T04:08:40.174596+00:00",
@@ -226564,7 +226557,7 @@
         }
       },
       "20 kawasan catat ipu tidak sihat. sri aman mencatatkan bacaan ipu 195 iaitu menghampiri tahap sangat tidak sihat, diikuti ipd serian, sarikei, miri dan kuching.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174597+00:00",
         "last_updated": "2026-08-28T04:08:40.174598+00:00",
@@ -226587,7 +226580,7 @@
         }
       },
       "nepali police release names of 23 malaysians missing in floods. they are among 57 malaysians who have been uncontactable since flash floods hit nepal's rasuwa district.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174599+00:00",
         "last_updated": "2026-08-28T04:08:40.174599+00:00",
@@ -226612,7 +226605,7 @@
         }
       },
       "insurer wins rm2.2mil claim over 2017 muar factory fire. berjaya sompo insurance bhd recovers payout made to fire-hit factory owner under the principle of subrogation.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174600+00:00",
         "last_updated": "2026-08-28T04:08:40.174600+00:00",
@@ -226635,7 +226628,7 @@
         }
       },
       "us court rules pentagon ban of anthropic unlawful. the judge says invoking national security does not give the government a blank check to punish or retaliate against critics.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174601+00:00",
         "last_updated": "2026-08-28T04:08:40.174602+00:00",
@@ -226661,7 +226654,7 @@
         }
       },
       "rapidly swelling lakes spur new flood warnings in nepal, china. satellite analysis shows a new lake forming above the rasuwagadhi border crossing as debris blocks the lhende river.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174603+00:00",
         "last_updated": "2026-08-28T04:08:40.174604+00:00",
@@ -226684,7 +226677,7 @@
         }
       },
       "trump orders lake ontario to be renamed \u2018lake america\u2019. the us president steps up his trolling of canada by signing an order renaming the body of water along the neighbours\u2019 border.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174605+00:00",
         "last_updated": "2026-08-28T04:08:40.174606+00:00",
@@ -226707,7 +226700,7 @@
         }
       },
       "in shadow of premier league, serie a flexes financial muscle. transfermarkt puts italy\u2019s total transfer outgoings at more than one billion euros, far ahead of laliga and the bundesliga.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174607+00:00",
         "last_updated": "2026-08-28T04:08:40.174608+00:00",
@@ -226732,7 +226725,7 @@
         }
       },
       "saravanan didakwa terima rasuah rm1.097 juta berkait kuota pekerja asing. bekas menteri sumber manusia mengaku tidak bersalah terhadap tiga pertuduhan dikemukakan di bawah akta suruhanjaya pencegahan ": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174609+00:00",
         "last_updated": "2026-08-28T04:08:40.174610+00:00",
@@ -226755,7 +226748,7 @@
         }
       },
       "detective unable to verify defendant\u2019s role in tupac shooting. the case rests almost entirely on duane 'keffe d' davis' public and private statements that he was in the car with tupac shakur's killer ": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174616+00:00",
         "last_updated": "2026-08-28T04:08:40.174617+00:00",
@@ -226778,7 +226771,7 @@
         }
       },
       "saravanan charged with receiving rm1.097mil in bribes over foreign worker quotas. the former human resources minister pleads not guilty to three charges under the macc act 2009.": {
-        "alpha": 1.0000000000095968,
+        "alpha": 1.0000000000001932,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174618+00:00",
         "last_updated": "2026-08-28T04:08:40.174620+00:00",
@@ -226804,7 +226797,7 @@
         }
       },
       "us designates uk-based palestine action as foreign \u2018terrorist group\u2019. since returning to power for a second term, us president donald trump has directed his government to designate groups it considers": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174621+00:00",
         "last_updated": "2026-08-28T04:08:40.174622+00:00",
@@ -226829,7 +226822,7 @@
         }
       },
       "australia struggles to locate 39 citizens missing in nepal floods. foreign minister penny wong acknowledges difficulties locating citizens out of contact amid the scale of the disaster.": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174623+00:00",
         "last_updated": "2026-08-28T04:08:40.174623+00:00",
@@ -226852,7 +226845,7 @@
         }
       },
       "carbon market initiative to open door to private capital for climate action. national carbon market policy can serve as a financing mechanism by attracting private investment into low-carbon projects ": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174625+00:00",
         "last_updated": "2026-08-28T04:08:40.174625+00:00",
@@ -226877,7 +226870,7 @@
         }
       },
       "saravanan": {
-        "alpha": 1.000000067931522,
+        "alpha": 1.000000002835944,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174782+00:00",
         "last_updated": "2026-08-28T18:21:15.412905+00:00",
@@ -226922,7 +226915,7 @@
         }
       },
       "carbon": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174866+00:00",
         "last_updated": "2026-08-28T04:08:40.174867+00:00",
@@ -226947,7 +226940,7 @@
         }
       },
       "insurer": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174871+00:00",
         "last_updated": "2026-08-28T04:08:40.174872+00:00",
@@ -226970,7 +226963,7 @@
         }
       },
       "20": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174879+00:00",
         "last_updated": "2026-08-28T04:08:40.174879+00:00",
@@ -226993,7 +226986,7 @@
         }
       },
       "detective": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174897+00:00",
         "last_updated": "2026-08-28T04:08:40.174898+00:00",
@@ -227016,7 +227009,7 @@
         }
       },
       "rapidly": {
-        "alpha": 1.000000000003199,
+        "alpha": 1.0000000000000644,
         "beta": 9.0,
         "created_at": "2026-08-28T04:08:40.174902+00:00",
         "last_updated": "2026-08-28T04:08:40.174902+00:00",
@@ -227039,7 +227032,7 @@
         }
       },
       "\u2018false and baseless\u2019: teo nie ching rejects social media claims linking her to johor gang activity, lodges police report. kulai, aug 28 &mdash; deputy communications minister teo nie ching today denie": {
-        "alpha": 1.0000014401844899,
+        "alpha": 1.0000000924881125,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412612+00:00",
         "last_updated": "2026-08-29T02:45:02.449565+00:00",
@@ -227062,7 +227055,7 @@
         }
       },
       "\u2018let macc, agc look into it\u2019: anwar leaves saravanan\u2019s letter to authorities. kuala lumpur, aug 28 &mdash; prime minister datuk seri anwar ibrahim said today he would leave it to the malaysian anti-..": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412617+00:00",
         "last_updated": "2026-08-28T18:21:15.412619+00:00",
@@ -227088,7 +227081,7 @@
         }
       },
       "us fed chair says inflation is elevated and \u2018concerning\u2019. the us federal reserve has seen inflation remain above its long-term 2% target for more than five years, with the latest reading of its prefer": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412621+00:00",
         "last_updated": "2026-08-28T18:21:15.412623+00:00",
@@ -227111,7 +227104,7 @@
         }
       },
       "new social media accounts created to attack me, says teo. the dap leader and deputy minister says false allegations linking her to gang-related activities were made on social media accounts specifical": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412624+00:00",
         "last_updated": "2026-08-28T18:21:15.412625+00:00",
@@ -227134,7 +227127,7 @@
         }
       },
       "things to do now, to protect our lungs from smoke pollution. publish the pm2.5 reading alongside the air pollutant index, which only says the air is unhealthy without saying what people are inhaling. ": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412626+00:00",
         "last_updated": "2026-08-28T18:21:15.412627+00:00",
@@ -227159,7 +227152,7 @@
         }
       },
       "wisma putra launches round-the-clock effort to trace 57 malaysians after nepal disaster. kuala lumpur, aug 28 &mdash; fifty-seven malaysians are currently uncontactable following devastating floods in": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412630+00:00",
         "last_updated": "2026-08-28T18:21:15.412631+00:00",
@@ -227184,7 +227177,7 @@
         }
       },
       "nepal lists 51 malaysians among 537 foreigners still out of contact after himalayan floods. kuala lumpur, aug 28 &mdash; nepal&rsquo;s tourism authorities have released a list of 537 foreigners from m": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412632+00:00",
         "last_updated": "2026-08-28T18:21:15.412633+00:00",
@@ -227209,7 +227202,7 @@
         }
       },
       "saravanan calls graft charges \u2018wild accusations\u2019, says facts will emerge in court. kuala lumpur, aug 28 &mdash; former human resources minister datuk seri m. saravanan today described the corruption c": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412636+00:00",
         "last_updated": "2026-08-28T18:21:15.412637+00:00",
@@ -227234,7 +227227,7 @@
         }
       },
       "indonesia says it\u2019s working with malaysia to tackle haze. unhealthy air quality readings from smoke pollution have been recorded in areas of sarawak, kuala lumpur, selangor, penang, kedah and perak.": {
-        "alpha": 1.0000000194090055,
+        "alpha": 1.0000000008102696,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412641+00:00",
         "last_updated": "2026-08-28T18:21:15.412642+00:00",
@@ -227260,7 +227253,7 @@
         }
       },
       "malaysia aims to push medical device exports beyond rm50b by 2030, says zahid. kuala lumpur, aug 28 &mdash; malaysia should aim to surpass rm50 billion in medical device exports by 2030, up from rm34.": {
-        "alpha": 1.000000038818011,
+        "alpha": 1.0000000016205393,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412644+00:00",
         "last_updated": "2026-08-28T18:21:15.412647+00:00",
@@ -227286,7 +227279,7 @@
         }
       },
       "peniaga dipenjara 10 tahun rempuh 3 individu di bazar ramadan. mahkamah sesyen menjatuhkan hukuman terhadap kang ming han atas kesalahan cubaan membunuh dan memandu di bawah pengaruh alkohol susulan k": {
-        "alpha": 1.0000000291135083,
+        "alpha": 1.0000000012154044,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412654+00:00",
         "last_updated": "2026-08-28T18:21:15.412656+00:00",
@@ -227312,7 +227305,7 @@
         }
       },
       "trader jailed 10 years for ramming trio at ramadan bazaar. sessions court hands down sentences to kang ming han for attempted murder and drink driving in 2020 honking incident.": {
-        "alpha": 1.0000000097045028,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412658+00:00",
         "last_updated": "2026-08-28T18:21:15.412659+00:00",
@@ -227338,7 +227331,7 @@
         }
       },
       "peniaga": {
-        "alpha": 1.0000000291135094,
+        "alpha": 1.0000000012154044,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412888+00:00",
         "last_updated": "2026-08-28T18:21:15.412908+00:00",
@@ -227364,7 +227357,7 @@
         }
       },
       "things": {
-        "alpha": 1.0000000097045032,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412894+00:00",
         "last_updated": "2026-08-28T18:21:15.412895+00:00",
@@ -227389,7 +227382,7 @@
         }
       },
       "trader": {
-        "alpha": 1.0000000097045032,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412911+00:00",
         "last_updated": "2026-08-28T18:21:15.412913+00:00",
@@ -227415,7 +227408,7 @@
         }
       },
       "\u2018false": {
-        "alpha": 1.0000014401845352,
+        "alpha": 1.0000000924881156,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412922+00:00",
         "last_updated": "2026-08-29T02:45:02.449811+00:00",
@@ -227438,7 +227431,7 @@
         }
       },
       "\u2018let": {
-        "alpha": 1.0000000097045032,
+        "alpha": 1.0000000004051348,
         "beta": 9.0,
         "created_at": "2026-08-28T18:21:15.412924+00:00",
         "last_updated": "2026-08-28T18:21:15.412926+00:00",
@@ -227464,7 +227457,7 @@
         }
       },
       "factory owner suffers first-degree burns trying to fight blaze that destroys 80pc of butterworth premises. kuala lumpur, aug 29 &mdash; a 58-year-old factory owner suffered first-degree burns to his h": {
-        "alpha": 1.0000630433203277,
+        "alpha": 1.00000616119232,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449537+00:00",
         "last_updated": "2026-08-29T10:56:12.588281+00:00",
@@ -227487,7 +227480,7 @@
         }
       },
       "foreign ministry says 36 malaysians in tibet reported safe, with checks widening to chinese border areas. putrajaya, aug 29 &mdash; thirty-six malaysians in tibet, china have reported to be safe follo": {
-        "alpha": 1.000000720092243,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449542+00:00",
         "last_updated": "2026-08-29T02:45:02.449543+00:00",
@@ -227512,7 +227505,7 @@
         }
       },
       "muslims must lead by example through morality and integrity, says anwar. bukit mertajam, aug 29 &mdash; muslims must set the best example for society through good character, integrity, diligenc...": {
-        "alpha": 1.0000007200922432,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449545+00:00",
         "last_updated": "2026-08-29T02:45:02.449546+00:00",
@@ -227535,7 +227528,7 @@
         }
       },
       "a nation was born here: stadium merdeka keeps malaysia\u2019s independence story alive. kuala lumpur, aug 29 &mdash; nearly seven decades after witnessing the proclamation of independence, stadium merdeka ": {
-        "alpha": 1.0000007200922436,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449549+00:00",
         "last_updated": "2026-08-29T02:45:02.449550+00:00",
@@ -227560,7 +227553,7 @@
         }
       },
       "rights-based older persons bill backed by experts needed, govt told. group says the bill must have clear legal protections against abuse and neglect, regulation of private care homes, and mandatory sa": {
-        "alpha": 1.0000007200922438,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449552+00:00",
         "last_updated": "2026-08-29T02:45:02.449553+00:00",
@@ -227585,7 +227578,7 @@
         }
       },
       "what 20 years of border duty taught corporal wan. at 74, the retired serviceman still recalls sleepless shifts, armed smugglers and the friendships forged during two decades of guarding malaysia\u2019s nor": {
-        "alpha": 1.000000720092244,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449555+00:00",
         "last_updated": "2026-08-29T02:45:02.449556+00:00",
@@ -227610,7 +227603,7 @@
         }
       },
       "criminal appeals may be struck out, with right of reinstatement. a three-member bench rules dormant appeals may be removed from the docket when an accused cannot be traced or served.": {
-        "alpha": 1.0000007200922443,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449557+00:00",
         "last_updated": "2026-08-29T02:45:02.449558+00:00",
@@ -227636,7 +227629,7 @@
         }
       },
       "bezzecchi edges marquez brothers in blazing spanish motogp practice. the trio were separated by 0.038sec at the end, making it the closest ever top-three in a friday session.": {
-        "alpha": 1.0000007200922445,
+        "alpha": 1.0000000462440561,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449560+00:00",
         "last_updated": "2026-08-29T02:45:02.449561+00:00",
@@ -227659,7 +227652,7 @@
         }
       },
       "rights-based": {
-        "alpha": 1.0000007200922654,
+        "alpha": 1.0000000462440577,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449785+00:00",
         "last_updated": "2026-08-29T02:45:02.449787+00:00",
@@ -227684,7 +227677,7 @@
         }
       },
       "bezzecchi": {
-        "alpha": 1.0000007200922667,
+        "alpha": 1.0000000462440577,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449800+00:00",
         "last_updated": "2026-08-29T02:45:02.449801+00:00",
@@ -227707,7 +227700,7 @@
         }
       },
       "muslims": {
-        "alpha": 1.000000720092267,
+        "alpha": 1.0000000462440577,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449803+00:00",
         "last_updated": "2026-08-29T02:45:02.449804+00:00",
@@ -227730,7 +227723,7 @@
         }
       },
       "criminal": {
-        "alpha": 1.0000007200922683,
+        "alpha": 1.000000046244058,
         "beta": 9.0,
         "created_at": "2026-08-29T02:45:02.449815+00:00",
         "last_updated": "2026-08-29T02:45:02.449817+00:00",
@@ -227756,7 +227749,7 @@
         }
       },
       "wisma putra: 55 malaysians still uncontactable as checks expand to nepal\u2013china border areas. kuala lumpur, aug 29 &mdash; fifty-five malaysians remain uncontactable following the floods and landslides": {
-        "alpha": 1.3028689946935954,
+        "alpha": 1.104318366197834,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588259+00:00",
         "last_updated": "2026-08-30T11:29:44.066444+00:00",
@@ -227781,7 +227774,7 @@
         }
       },
       "nearly rm250,000 payout after segambut jogger fractures spine while fending off neighbour\u2019s german shepherds. kuala lumpur, aug 29 &mdash; the owner of two german shepherds has been ordered to pay nea": {
-        "alpha": 1.302868994745379,
+        "alpha": 1.1043183662216154,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588264+00:00",
         "last_updated": "2026-08-30T11:29:44.066448+00:00",
@@ -227804,7 +227797,7 @@
         }
       },
       "printer apologises, says last-minute order led to incorrect jalur gemilang star worn by kedah mb. kuala lumpur, aug 29 &mdash; a printing company has blamed a rushed last-minute order and less thoroug": {
-        "alpha": 1.0587963444575261,
+        "alpha": 1.0140693955462017,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588267+00:00",
         "last_updated": "2026-08-30T04:23:41.085750+00:00",
@@ -227827,7 +227820,7 @@
         }
       },
       "parents must caution teens that mule accounts can lead to legal action, says ewon. penampang, aug 29 &mdash; parents should educate and remind their children, particularly teenagers, not to become inv": {
-        "alpha": 1.05879634447093,
+        "alpha": 1.014069395550211,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588272+00:00",
         "last_updated": "2026-08-30T04:23:41.085754+00:00",
@@ -227850,7 +227843,7 @@
         }
       },
       "durian, pineapple and rm8b in deals: malaysia goes big at maha 2026. serdang, aug 29 &mdash; some 121 memoranda of understanding (mous) worth about rm8 billion are expected to be signed in...": {
-        "alpha": 1.1175926889552636,
+        "alpha": 1.028138791104431,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588275+00:00",
         "last_updated": "2026-08-30T04:23:41.085756+00:00",
@@ -227876,7 +227869,7 @@
         }
       },
       "anwar vows to claw back billions lost to leakages and return money to malaysians. kuala lumpur, aug 29 &mdash; prime minister datuk seri anwar ibrahim said billions of ringgit lost through leakages an": {
-        "alpha": 1.1175926889753696,
+        "alpha": 1.0281387911104451,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588277+00:00",
         "last_updated": "2026-08-30T04:23:41.085759+00:00",
@@ -227902,7 +227895,7 @@
         }
       },
       "nepal says post-flood reconstruction could total \u2018billions of dollars\u2019. foreign minister shisir khanal said the government would assess climate-related loss and damage before developing plans while se": {
-        "alpha": 1.0080191943164774,
+        "alpha": 1.0012861826106811,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588285+00:00",
         "last_updated": "2026-08-29T20:35:41.515809+00:00",
@@ -227928,7 +227921,7 @@
         }
       },
       "norris extends mclaren contract to 2030. the reigning world champion said he would be happy to see out his career with mclaren, a team he said felt like home.": {
-        "alpha": 1.004009597159267,
+        "alpha": 1.000643091305533,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588287+00:00",
         "last_updated": "2026-08-29T20:35:41.515812+00:00",
@@ -227951,7 +227944,7 @@
         }
       },
       "serian joins sri aman with \u2018very unhealthy\u2019 air quality. the two areas in sarawak recorded api readings of 229 and 228, respectively, as of 4pm while 29 other locations nationwide remained in the unhe": {
-        "alpha": 1.0040095971606382,
+        "alpha": 1.0006430913057895,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588291+00:00",
         "last_updated": "2026-08-29T20:35:41.515816+00:00",
@@ -227974,7 +227967,7 @@
         }
       },
       "aaron-wooi yik to resume partnership after asian games. bam performance committee chairman lee chong wei says the pair are committed to working together through to the 2028 olympics.": {
-        "alpha": 1.0040095971613237,
+        "alpha": 1.0006430913059179,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588293+00:00",
         "last_updated": "2026-08-29T20:35:41.515818+00:00",
@@ -227997,7 +227990,7 @@
         }
       },
       "72 rakyat malaysia sah selamat di darchen, tibet. 55 lagi rakyat malaysia masih belum dapat dihubungi susulan banjir, tanah runtuh di daerah rasuwa, nepal.": {
-        "alpha": 1.0080191943240184,
+        "alpha": 1.0012861826120922,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588298+00:00",
         "last_updated": "2026-08-29T20:35:41.515820+00:00",
@@ -228023,7 +228016,7 @@
         }
       },
       "alcaraz says uncertainty over comeback fuelled \u2018intrusive thoughts\u2019. the 23-year-old spaniard returns to flushing meadows with limited match practice but familiar expectations as he chases a third tit": {
-        "alpha": 1.0040095971630376,
+        "alpha": 1.0006430913062385,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588301+00:00",
         "last_updated": "2026-08-29T20:35:41.515823+00:00",
@@ -228046,7 +228039,7 @@
         }
       },
       "norway, in mourning, enters a new era under haakon viii. norway's parliament said the new monarch would take an oath of allegiance in its main chamber on tuesday.": {
-        "alpha": 1.0000315216602464,
+        "alpha": 1.000003080596169,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588304+00:00",
         "last_updated": "2026-08-29T10:56:12.588304+00:00",
@@ -228071,7 +228064,7 @@
         }
       },
       "group of 72 malaysians confirmed safe in darchen, tibet. wisma putra also says 55 malaysians remain uncontactable following floods and landslides in rasuwa district, nepal.": {
-        "alpha": 1.0000315216602573,
+        "alpha": 1.0000030805961704,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588306+00:00",
         "last_updated": "2026-08-29T10:56:12.588307+00:00",
@@ -228096,7 +228089,7 @@
         }
       },
       "121 mou rm8 bilion dijangka dimeterai sempena maha 2026. menteri pertanian dan keterjaminan makanan mohamad sabu berkata kira-kira rm4 bilion membabitkan kerjasama dengan china dan selebihnya negara l": {
-        "alpha": 1.0000315216602644,
+        "alpha": 1.000003080596171,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588308+00:00",
         "last_updated": "2026-08-29T10:56:12.588309+00:00",
@@ -228119,7 +228112,7 @@
         }
       },
       "pengunjung sambutan hari kebangsaan dinasihat pakai pelitup muka n95. langkah itu selaras nasihat kementerian kesihatan khususnya terhadap individu berisiko susulan jerebu yang melanda negara.": {
-        "alpha": 1.0000630433205433,
+        "alpha": 1.0000061611923439,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588310+00:00",
         "last_updated": "2026-08-29T10:56:12.588311+00:00",
@@ -228145,7 +228138,7 @@
         }
       },
       "trump govt mulls deal to give away part of yosemite park. reports of the transaction sparked outrage among conservationists and democrats opposed to the administration's rollback of public land protec": {
-        "alpha": 1.0000315216602789,
+        "alpha": 1.0000030805961726,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588312+00:00",
         "last_updated": "2026-08-29T10:56:12.588313+00:00",
@@ -228168,7 +228161,7 @@
         }
       },
       "me, a gambling boss? i cut down special draws, says anwar. the prime minister hits back at those accusing him of not acting against gaming activities.": {
-        "alpha": 1.000031521660286,
+        "alpha": 1.0000030805961735,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588314+00:00",
         "last_updated": "2026-08-29T10:56:12.588315+00:00",
@@ -228191,7 +228184,7 @@
         }
       },
       "chipmaker cxmt sues pentagon over \u2018chinese military company\u2019 designation. the lawsuit seeks to overturn the designation, which can trigger government contracting restrictions and reputational damage.": {
-        "alpha": 1.0000630433206008,
+        "alpha": 1.00000616119235,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588318+00:00",
         "last_updated": "2026-08-29T10:56:12.588319+00:00",
@@ -228218,7 +228211,7 @@
         }
       },
       "nurulhidayah rules out parliament bid while father zahid is mp. ahmad zahid hamidi's daughter says she may contest a state seat instead if she enters politics.": {
-        "alpha": 1.0000315216603146,
+        "alpha": 1.0000030805961766,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588319+00:00",
         "last_updated": "2026-08-29T10:56:12.588323+00:00",
@@ -228243,7 +228236,7 @@
         }
       },
       "\u2018very unhealthy\u2019 air quality continues in sri aman as haze worsens. twenty-nine areas record unhealthy api readings nationwide as of 10am, with sri aman recording the highest at 223.": {
-        "alpha": 1.0000315216603255,
+        "alpha": 1.000003080596178,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588325+00:00",
         "last_updated": "2026-08-29T10:56:12.588326+00:00",
@@ -228266,7 +228259,7 @@
         }
       },
       "7 yemeni men nabbed over dangerous car stunt in jalan sungai besi. police say some of them were seen leaning their bodies out and dangerously sitting on the window frames while the vehicles were in mo": {
-        "alpha": 1.0000315216603326,
+        "alpha": 1.0000030805961786,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588327+00:00",
         "last_updated": "2026-08-29T10:56:12.588328+00:00",
@@ -228291,7 +228284,7 @@
         }
       },
       "durian,": {
-        "alpha": 1.1175926909189227,
+        "alpha": 1.0281387916917868,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588571+00:00",
         "last_updated": "2026-08-30T04:23:41.086049+00:00",
@@ -228317,7 +228310,7 @@
         }
       },
       "pengunjung": {
-        "alpha": 1.000063043322584,
+        "alpha": 1.0000061611925681,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588593+00:00",
         "last_updated": "2026-08-29T10:56:12.588595+00:00",
@@ -228343,7 +228336,7 @@
         }
       },
       "72": {
-        "alpha": 1.0080191945091173,
+        "alpha": 1.0012861826467279,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588597+00:00",
         "last_updated": "2026-08-29T20:35:41.516090+00:00",
@@ -228369,7 +228362,7 @@
         }
       },
       "121": {
-        "alpha": 1.0000315216613316,
+        "alpha": 1.0000030805962885,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588604+00:00",
         "last_updated": "2026-08-29T10:56:12.588606+00:00",
@@ -228392,7 +228385,7 @@
         }
       },
       "nurulhidayah": {
-        "alpha": 1.0000315216613567,
+        "alpha": 1.0000030805962912,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588612+00:00",
         "last_updated": "2026-08-29T10:56:12.588613+00:00",
@@ -228417,7 +228410,7 @@
         }
       },
       "\u2018very": {
-        "alpha": 1.0000315216614428,
+        "alpha": 1.0000030805963007,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588636+00:00",
         "last_updated": "2026-08-29T10:56:12.588637+00:00",
@@ -228440,7 +228433,7 @@
         }
       },
       "aaron-wooi": {
-        "alpha": 1.0040095972627854,
+        "alpha": 1.0006430913249034,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588639+00:00",
         "last_updated": "2026-08-29T20:35:41.516114+00:00",
@@ -228463,7 +228456,7 @@
         }
       },
       "norris": {
-        "alpha": 1.0040095972644991,
+        "alpha": 1.000643091325224,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588654+00:00",
         "last_updated": "2026-08-29T20:35:41.516119+00:00",
@@ -228486,7 +228479,7 @@
         }
       },
       "me,": {
-        "alpha": 1.0000315216615328,
+        "alpha": 1.0000030805963105,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588661+00:00",
         "last_updated": "2026-08-29T10:56:12.588662+00:00",
@@ -228509,7 +228502,7 @@
         }
       },
       "alcaraz": {
-        "alpha": 1.0040095972675842,
+        "alpha": 1.0006430913258013,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588664+00:00",
         "last_updated": "2026-08-29T20:35:41.516128+00:00",
@@ -228532,7 +228525,7 @@
         }
       },
       "printer": {
-        "alpha": 1.058796345637062,
+        "alpha": 1.0140693958990161,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588666+00:00",
         "last_updated": "2026-08-30T04:23:41.086102+00:00",
@@ -228555,7 +228548,7 @@
         }
       },
       "parents": {
-        "alpha": 1.0587963456437637,
+        "alpha": 1.0140693959010207,
         "beta": 9.0,
         "created_at": "2026-08-29T10:56:12.588669+00:00",
         "last_updated": "2026-08-30T04:23:41.086104+00:00",
@@ -228579,22 +228572,22 @@
       },
       "economy": {
         "alpha": 1.0,
-        "beta": 11.799999999999997,
+        "beta": 12.149999999999997,
         "created_at": "2026-08-29T16:23:03.032611+00:00",
-        "last_updated": "2026-08-31T00:18:22.872264+00:00",
+        "last_updated": "2026-08-31T08:16:30.569549+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.2,
-            "z_score": 0.8
+            "severity": 0.3,
+            "z_score": 1.2
           },
           "cascade_tracker": {
-            "n_star": 0.13333333333333333,
+            "n_star": 0.2,
             "alert_level": "normal"
           }
         }
       },
       "south africa submits filing to icj over israel\u2019s non-compliance with its rulings. south africa stressed that the provisional measures ordered by the icj are legally binding and that israel 'has not co": {
-        "alpha": 1.0114001686556287,
+        "alpha": 1.0021762976236381,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033093+00:00",
         "last_updated": "2026-08-29T23:59:24.607457+00:00",
@@ -228617,7 +228610,7 @@
         }
       },
       "an action plan to get rid of the system of political corruption. reform the way political parties are financed, overhaul the framework of law enforcement, and guarantee media freedom without political": {
-        "alpha": 1.00267306476896,
+        "alpha": 1.000428727536295,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033097+00:00",
         "last_updated": "2026-08-29T20:35:41.515795+00:00",
@@ -228640,7 +228633,7 @@
         }
       },
       "maha 2026: dewan a kembali dibuka kepada pengunjung selepas insiden asap. jawatankuasa penganjur berkata insiden petang tadi telah dikawal dan tiada ancaman keselamatan.": {
-        "alpha": 1.0114001686613137,
+        "alpha": 1.0021762976249404,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033102+00:00",
         "last_updated": "2026-08-29T23:59:24.607464+00:00",
@@ -228663,7 +228656,7 @@
         }
       },
       "pm tegas akta warisan penjajah sekat mahasiswa harus dihapus. anwar ibrahim berkata, mahasiswa perlu diberi ruang dan kepercayaan kemuka pandangan, idea dengan lebih bebas.": {
-        "alpha": 1.0114001686637502,
+        "alpha": 1.0021762976254986,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033105+00:00",
         "last_updated": "2026-08-29T23:59:24.607467+00:00",
@@ -228686,7 +228679,7 @@
         }
       },
       "remove colonial-era shackles on student freedom, says anwar. the prime minister says that as older people are not always right, young people should not be prevented from speaking out or taking part in": {
-        "alpha": 1.0114001686653744,
+        "alpha": 1.0021762976258706,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033107+00:00",
         "last_updated": "2026-08-29T23:59:24.607469+00:00",
@@ -228709,7 +228702,7 @@
         }
       },
       "maha": {
-        "alpha": 1.0114001688351149,
+        "alpha": 1.002176297664755,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033421+00:00",
         "last_updated": "2026-08-29T23:59:24.607678+00:00",
@@ -228732,7 +228725,7 @@
         }
       },
       "an": {
-        "alpha": 1.0114001688416123,
+        "alpha": 1.0021762976662434,
         "beta": 9.0,
         "created_at": "2026-08-29T16:23:03.033424+00:00",
         "last_updated": "2026-08-29T23:59:24.607686+00:00",
@@ -228755,7 +228748,7 @@
         }
       },
       "an action plan to rid the system of political corruption. reform the way political parties are financed, overhaul the framework of law enforcement, and guarantee media freedom without political interf": {
-        "alpha": 1.0038000562196256,
+        "alpha": 1.0007254325414607,
         "beta": 9.0,
         "created_at": "2026-08-29T23:59:24.607460+00:00",
         "last_updated": "2026-08-29T23:59:24.607461+00:00",
@@ -228778,7 +228771,7 @@
         }
       },
       "three malaysians among 261 foreign nationals unaccounted for after gyirong mudslide at china\u2011nepal border. gyirong (china), aug 30 &mdash; three malaysians are among 261 foreign nationals from 23 coun": {
-        "alpha": 1.9999999999999998,
+        "alpha": 1.664483102272455,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085700+00:00",
         "last_updated": "2026-08-31T00:18:22.872647+00:00",
@@ -228803,7 +228796,7 @@
         }
       },
       "nepal floods leave 55 malaysians uncontactable, 36 more missing in china, says ministry. kuala lumpur, aug 30 &mdash; a total of 91 malaysians, comprising 55 in nepal and 36 in china, remain reported ": {
-        "alpha": 1.9999999999999998,
+        "alpha": 1.6644831023008582,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085706+00:00",
         "last_updated": "2026-08-31T00:18:22.872650+00:00",
@@ -228828,7 +228821,7 @@
         }
       },
       "serian tops hazardous api chart at 364, multiple sarawak districts suffer worsening air. kuching, aug 30 &mdash; serian recorded a hazardous air pollutant index (api) reading as of 8am today.according": {
-        "alpha": 1.9999999999999998,
+        "alpha": 1.6644831023292612,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085710+00:00",
         "last_updated": "2026-08-31T00:18:22.872653+00:00",
@@ -228851,7 +228844,7 @@
         }
       },
       "rm4.8bil th audit discrepancy calls for answers, says watchdog group. c4 says a review of the national audit department\u2019s practices is warranted, but experts say different accounting treatments can pr": {
-        "alpha": 1.0235185377387779,
+        "alpha": 1.0056277582052502,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085715+00:00",
         "last_updated": "2026-08-30T04:23:41.085717+00:00",
@@ -228877,7 +228870,7 @@
         }
       },
       "3 m\u2019sians among foreign nationals unaccounted for after xizang mudslide. the foreign nationals affected by the mudslide near the china-nepal border comprise 261 people from a total of 23 countries.": {
-        "alpha": 1.01175926887341,
+        "alpha": 1.002813879103828,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085721+00:00",
         "last_updated": "2026-08-30T04:23:41.085723+00:00",
@@ -228900,7 +228893,7 @@
         }
       },
       "nga hopes \u2018red heroes\u2019 will be found safe soon. two fire and rescue department officials are among the malaysians who remain uncontactable following the flash floods in nepal.": {
-        "alpha": 1.0117592688767612,
+        "alpha": 1.0028138791048302,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085726+00:00",
         "last_updated": "2026-08-30T04:23:41.085728+00:00",
@@ -228925,7 +228918,7 @@
         }
       },
       "serian catat bacaan ipu tahap bahaya. menurut apims, bacaan ipu di stesen pemantauan ipd serian mencecah 364.": {
-        "alpha": 1.0117592688787715,
+        "alpha": 1.0028138791054315,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085729+00:00",
         "last_updated": "2026-08-30T04:23:41.085731+00:00",
@@ -228948,7 +228941,7 @@
         }
       },
       "emotional federer inducted into tennis hall of fame. the swiss legend paid tribute to those who shared his career as he addressed a crowd bristling with tennis royalty.": {
-        "alpha": 1.0117592688807822,
+        "alpha": 1.002813879106033,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.085732+00:00",
         "last_updated": "2026-08-30T04:23:41.085734+00:00",
@@ -228973,7 +228966,7 @@
         }
       },
       "rm4.8bil": {
-        "alpha": 1.0235185381797633,
+        "alpha": 1.0056277583371547,
         "beta": 9.0,
         "created_at": "2026-08-30T04:23:41.086042+00:00",
         "last_updated": "2026-08-30T04:23:41.086046+00:00",
@@ -228999,32 +228992,32 @@
         }
       },
       "mb: pahang strengthens mineral\u2011sector enforcement, orders probe after trailers suspected of moving minerals out of raub site. kuantan, aug 30 &mdash; the pahang government will step up enforcement aga": {
-        "alpha": 1.7999999999999998,
+        "alpha": 1.9999999999999998,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066386+00:00",
-        "last_updated": "2026-08-31T00:18:22.872619+00:00",
+        "last_updated": "2026-08-31T08:16:30.570038+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0008",
+            "event_id": "INST-0021",
             "keyword": "mb:",
             "title": "MB: Pahang strengthens mineral\u2011sector enforcement, orders probe after trailers suspected of moving minerals out of Raub site. KUANTAN, Aug 30 &mdash; The Pahang government will step up enforcement aga",
             "structural_importance": 0.465,
-            "silence_score": 0.8913,
+            "silence_score": 0.9543,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 44,
-            "social_mentions": 6,
+            "news_mentions": 19,
+            "social_mentions": 2,
             "expected_mentions": 460.0,
             "bias_dimensions_touched": [
               "political"
             ],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
       "anwar pledges billions in seized funds for health, education; eases rules for small businesses. putrajaya, aug 30 &mdash; the government will channel billions of ringgit seized from illegal activities": {
-        "alpha": 1.7999999999999998,
+        "alpha": 1.5315864816361853,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066390+00:00",
         "last_updated": "2026-08-31T00:18:22.872623+00:00",
@@ -229049,7 +229042,7 @@
         }
       },
       "haze worsens as serian hits 412, while samarahan and kuching record hazardous api levels. kuching, aug 30 &mdash; serian, samarahan and kuching recorded hazardous-level air pollutant index (api) readi": {
-        "alpha": 1.7999999999999998,
+        "alpha": 1.5315864817270746,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066393+00:00",
         "last_updated": "2026-08-31T00:18:22.872635+00:00",
@@ -229072,7 +229065,7 @@
         }
       },
       "fatimah orders agencies to ensure welfare support for family in sibu child death. sibu, aug 30 &mdash; sarawak women, children and community wellbeing minister datuk seri fatimah abdullah will instruc": {
-        "alpha": 1.7999999999999998,
+        "alpha": 1.531586481742223,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066396+00:00",
         "last_updated": "2026-08-31T00:18:22.872637+00:00",
@@ -229095,7 +229088,7 @@
         }
       },
       "indonesia urges oic to take concrete action against israel. deputy foreign minister anis matta made the call at the 23rd extraordinary session of the oic council of foreign ministers in jeddah.": {
-        "alpha": 1.4998939236623285,
+        "alpha": 1.2767504054541483,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066406+00:00",
         "last_updated": "2026-08-30T20:44:51.790610+00:00",
@@ -229118,7 +229111,7 @@
         }
       },
       "turkey, saudi arabia, pakistan to hold first defence pact meeting. foreign and defence ministers, as well as the chiefs of staff, of the three countries will attend the meeting in istanbul.": {
-        "alpha": 1.4998939236836961,
+        "alpha": 1.2767504054778074,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066409+00:00",
         "last_updated": "2026-08-30T20:44:51.790613+00:00",
@@ -229141,7 +229134,7 @@
         }
       },
       "billions in seized funds to be returned to rakyat, says anwar. prime minister anwar ibrahim says the move is in line with the government\u2019s principle that the nation\u2019s wealth should be enjoyed by the p": {
-        "alpha": 1.4998939237406765,
+        "alpha": 1.2767504055408982,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066419+00:00",
         "last_updated": "2026-08-30T20:44:51.790621+00:00",
@@ -229166,7 +229159,7 @@
         }
       },
       "tests loom for popular uk pm burnham as parliament returns. mps return to westminster on tuesday, when andy burnham is expected to deliver his first speech to parliament as prime minister.": {
-        "alpha": 1.4998939237549216,
+        "alpha": 1.2767504055566707,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066425+00:00",
         "last_updated": "2026-08-30T20:44:51.790623+00:00",
@@ -229191,7 +229184,7 @@
         }
       },
       "balanced refugee policy needed to address security, humanitarian concerns, says s\u2019gor mb. amirudin shari says any action taken solely based on emotions without being guided by a balanced policy could ": {
-        "alpha": 1.499893923783412,
+        "alpha": 1.2767504055882164,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066429+00:00",
         "last_updated": "2026-08-30T20:44:51.790627+00:00",
@@ -229216,7 +229209,7 @@
         }
       },
       "worsening haze in sarawak prompts families to limit outdoor activities. hazardous api readings were recorded in serian (412), samarahan (332) and kuching (304) as of 12.30pm today.": {
-        "alpha": 1.050478165756374,
+        "alpha": 1.017386394354415,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066431+00:00",
         "last_updated": "2026-08-30T11:29:44.066432+00:00",
@@ -229239,7 +229232,7 @@
         }
       },
       "3 kawasan di sarawak catat ipu bahaya, serian tertinggi 425. sri aman merekodkan bacaan ipu pada tahap sangat tidak sihat, iaitu 241.": {
-        "alpha": 1.050478165762847,
+        "alpha": 1.0173863943573875,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066433+00:00",
         "last_updated": "2026-08-30T11:29:44.066435+00:00",
@@ -229262,7 +229255,7 @@
         }
       },
       "nepal flood death toll rises to 734. with 16 people confirmed dead in tibet, the overall death toll rises to 750, with 3,044 still missing after devastating floods near nepal's border with china.": {
-        "alpha": 1.0504781657671622,
+        "alpha": 1.0173863943593695,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066436+00:00",
         "last_updated": "2026-08-30T11:29:44.066437+00:00",
@@ -229285,7 +229278,7 @@
         }
       },
       "keep children indoors before the air turns unhealthy, say doctors. schools and parents are urged to cut back on outdoor activities if the air pollutant index is nearing 101.": {
-        "alpha": 1.0504781657736353,
+        "alpha": 1.017386394362342,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066439+00:00",
         "last_updated": "2026-08-30T11:29:44.066440+00:00",
@@ -229308,7 +229301,7 @@
         }
       },
       "tests": {
-        "alpha": 1.499893925806218,
+        "alpha": 1.2767504078279412,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066672+00:00",
         "last_updated": "2026-08-30T20:44:51.790911+00:00",
@@ -229333,7 +229326,7 @@
         }
       },
       "balanced": {
-        "alpha": 1.4998939258489536,
+        "alpha": 1.2767504078752596,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066675+00:00",
         "last_updated": "2026-08-30T20:44:51.790917+00:00",
@@ -229358,32 +229351,32 @@
         }
       },
       "mb:": {
-        "alpha": 1.7999999999999998,
+        "alpha": 1.9999999999999998,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066678+00:00",
-        "last_updated": "2026-08-31T00:18:22.872887+00:00",
+        "last_updated": "2026-08-31T08:16:30.570357+00:00",
         "stream_signals": {
           "silence_detector": {
-            "event_id": "INST-0008",
+            "event_id": "INST-0021",
             "keyword": "mb:",
             "title": "MB: Pahang strengthens mineral\u2011sector enforcement, orders probe after trailers suspected of moving minerals out of Raub site. KUANTAN, Aug 30 &mdash; The Pahang government will step up enforcement aga",
             "structural_importance": 0.465,
-            "silence_score": 0.8913,
+            "silence_score": 0.9543,
             "suppression_pattern": "NORMAL",
-            "news_mentions": 44,
-            "social_mentions": 6,
+            "news_mentions": 19,
+            "social_mentions": 2,
             "expected_mentions": 460.0,
             "bias_dimensions_touched": [
               "political"
             ],
             "alert_level": "medium",
             "detection_type": "silence_anomaly",
-            "timestamp": "2026-08-31T00:18:22.849891+00:00"
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
           }
         }
       },
       "worsening": {
-        "alpha": 1.0504781663346268,
+        "alpha": 1.0173863946199748,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066699+00:00",
         "last_updated": "2026-08-30T11:29:44.066700+00:00",
@@ -229406,7 +229399,7 @@
         }
       },
       "turkey,": {
-        "alpha": 1.499893926083998,
+        "alpha": 1.2767504081355092,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066722+00:00",
         "last_updated": "2026-08-30T20:44:51.790950+00:00",
@@ -229429,7 +229422,7 @@
         }
       },
       "fatimah": {
-        "alpha": 1.7999999999999998,
+        "alpha": 1.5315864838781241,
         "beta": 9.0,
         "created_at": "2026-08-30T11:29:44.066731+00:00",
         "last_updated": "2026-08-31T00:18:22.872919+00:00",
@@ -229452,7 +229445,7 @@
         }
       },
       "nato sees no imminent threat of russian attack. a nato official said russia was intensifying attacks on ukraine and increasing hybrid acts across europe.": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898612441807,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130673+00:00",
         "last_updated": "2026-08-31T00:18:22.872626+00:00",
@@ -229475,7 +229468,7 @@
         }
       },
       "google maps will show \u2018lake america\u2019 in us, not \u2018lake ontario\u2019. google said the decision to change the name was made to reflect president donald trump's executive order renaming the lake.": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898612669032,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130678+00:00",
         "last_updated": "2026-08-31T00:18:22.872630+00:00",
@@ -229498,7 +229491,7 @@
         }
       },
       "bring them all home, says daughter of missing malaysian. kritikaa joyce de brito says hopes are fading after nearly five days without contact with her mother, who was among 27 malaysians who travelled": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.398689861283945,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130681+00:00",
         "last_updated": "2026-08-31T00:18:22.872633+00:00",
@@ -229523,7 +229516,7 @@
         }
       },
       "missing trekker\u2019s son remains calm while awaiting news of father. firas shabuddin, 24, an engineer, said nothing would be resolved by becoming emotional.": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898613293897,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130690+00:00",
         "last_updated": "2026-08-31T00:18:22.872641+00:00",
@@ -229548,7 +229541,7 @@
         }
       },
       "van dijk wants gakpo to stay at liverpool amid man city interest. cody gakpo looks set to be pushed down the pecking order at anfield by the arrival of bradley barcola from paris st-germain.": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898613407508,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130693+00:00",
         "last_updated": "2026-08-31T00:18:22.872643+00:00",
@@ -229571,7 +229564,7 @@
         }
       },
       "jerebu makin buruk, 3 kawasan sarawak catat ipu berbahaya. serian catat bacaan ipu tertinggi cecah 436, disusuli samarahan dan kuching, manakala kualiti udara di sri aman dan sarikei \u2018sangat tidak sih": {
-        "alpha": 1.333262615727402,
+        "alpha": 1.18450027025019,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130697+00:00",
         "last_updated": "2026-08-30T20:44:51.790600+00:00",
@@ -229596,7 +229589,7 @@
         }
       },
       "sarawak ready to declare haze emergency at critical level. deputy premier douglas uggah embas says guidelines provide for the closure of government and private-sector offices should air pollution read": {
-        "alpha": 1.6665252314737975,
+        "alpha": 1.36900054052141,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.130700+00:00",
         "last_updated": "2026-08-30T20:44:51.790602+00:00",
@@ -229622,7 +229615,7 @@
         }
       },
       "bring": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898627893007,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.131014+00:00",
         "last_updated": "2026-08-31T00:18:22.872898+00:00",
@@ -229647,7 +229640,7 @@
         }
       },
       "van": {
-        "alpha": 1.5999999999999999,
+        "alpha": 1.3986898628745095,
         "beta": 9.0,
         "created_at": "2026-08-30T16:16:26.131022+00:00",
         "last_updated": "2026-08-31T00:18:22.872913+00:00",
@@ -229671,22 +229664,22 @@
       },
       "vote": {
         "alpha": 1.0,
-        "beta": 9.7,
+        "beta": 10.049999999999999,
         "created_at": "2026-08-30T20:44:51.790184+00:00",
-        "last_updated": "2026-08-31T00:18:22.872256+00:00",
+        "last_updated": "2026-08-31T08:16:30.569502+00:00",
         "stream_signals": {
           "volume_monitor": {
-            "severity": 0.5,
-            "z_score": 2.0
+            "severity": 0.4,
+            "z_score": 1.6
           },
           "cascade_tracker": {
-            "n_star": 0.3333333333333333,
+            "n_star": 0.26666666666666666,
             "alert_level": "normal"
           }
         }
       },
       "bessent says yen moves \u2018pretty contained\u2019 and not disorderly. scott bessent said he expects boj governor kazuo ueda, backed by prime minister sanae takaichi, to 'do the right thing' on policy amid the": {
-        "alpha": 1.2,
+        "alpha": 1.1328966203806434,
         "beta": 9.0,
         "created_at": "2026-08-31T00:18:22.872606+00:00",
         "last_updated": "2026-08-31T00:18:22.872608+00:00",
@@ -229709,7 +229702,7 @@
         }
       },
       "spidey keeps spinning gold for north america box office. sony's 'spider-man: brand new day' has now grossed us$891.5 million in the us and canada, with an additional us$1.44 billion internationally.": {
-        "alpha": 1.2,
+        "alpha": 1.1328966203882176,
         "beta": 9.0,
         "created_at": "2026-08-31T00:18:22.872610+00:00",
         "last_updated": "2026-08-31T00:18:22.872612+00:00",
@@ -229732,9 +229725,397 @@
             "timestamp": "2026-08-31T00:18:22.849891+00:00"
           }
         }
+      },
+      "sarawak says no emergency unless api breaches 500, serian readings remain hazardous. kuching, aug 31 &mdash; a state of emergency will only be declared if the air pollutant index (api) reaches 500 or ": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.569985+00:00",
+        "last_updated": "2026-08-31T08:16:30.569987+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0006",
+            "keyword": "sarawak",
+            "title": "Sarawak says no emergency unless API breaches 500, Serian readings remain hazardous. KUCHING, Aug 31 &mdash; A state of emergency will only be declared if the Air Pollutant Index (API) reaches 500 or ",
+            "structural_importance": 0.415,
+            "silence_score": 0.8846,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 24,
+            "social_mentions": 6,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "foreign ministry urges caution, says 36 malaysians unaccounted for in china and 55 in nepal. putrajaya, aug 31 &mdash; the number of malaysians reported uncontactable remains at 36 in china and 55 in ": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.569991+00:00",
+        "last_updated": "2026-08-31T08:16:30.569993+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0008",
+            "keyword": "foreign",
+            "title": "Foreign Ministry urges caution, says 36 Malaysians unaccounted for in China and 55 in Nepal. PUTRAJAYA, Aug 31 &mdash; The number of Malaysians reported uncontactable remains at 36 in China and 55 in ",
+            "structural_importance": 0.465,
+            "silence_score": 0.9543,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 18,
+            "social_mentions": 3,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "ethnic"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "serian api nears 500 as four sarawak areas hit hazardous levels. kuching, aug 31 &mdash; four areas in sarawak recorded hazardous air quality, with air pollutant index (api) readings ex...": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.569995+00:00",
+        "last_updated": "2026-08-31T08:16:30.569997+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0009",
+            "keyword": "serian",
+            "title": "Serian API nears 500 as four Sarawak areas hit hazardous levels. KUCHING, Aug 31 &mdash; Four areas in Sarawak recorded hazardous air quality, with Air Pollutant Index (API) readings ex...",
+            "structural_importance": 0.415,
+            "silence_score": 0.9538,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 9,
+            "social_mentions": 3,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "un committee presents legal case for broad slavery reparations. the un anti-racism committee said countries must work to redress the harms caused by slavery and its continuing consequences.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.569999+00:00",
+        "last_updated": "2026-08-31T08:16:30.570001+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0010",
+            "keyword": "un",
+            "title": "UN committee presents legal case for broad slavery reparations. The UN anti-racism committee said countries must work to redress the harms caused by slavery and its continuing consequences.",
+            "structural_importance": 0.415,
+            "silence_score": 0.9231,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 16,
+            "social_mentions": 4,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "ong keluar parti kehilangan besar buat dap, kata ramasamy. pengerusi urimai berkata, tindakan ahli parlimen bangi itu diambil ketika parti bergelut tentukan hala politik sendiri.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570003+00:00",
+        "last_updated": "2026-08-31T08:16:30.570004+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0011",
+            "keyword": "ong",
+            "title": "Ong keluar parti kehilangan besar buat DAP, kata Ramasamy. Pengerusi Urimai berkata, tindakan Ahli Parlimen Bangi itu diambil ketika parti bergelut tentukan hala politik sendiri.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9783,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 5,
+            "social_mentions": 5,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "china\u2019s factory activity slides for second straight month. soft demand weighs on the economy as beijing seeks to maintain pace amid us trade frictions and an entrenched property crisis.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570008+00:00",
+        "last_updated": "2026-08-31T08:16:30.570010+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0012",
+            "keyword": "china\u2019s",
+            "title": "China\u2019s factory activity slides for second straight month. Soft demand weighs on the economy as Beijing seeks to maintain pace amid US trade frictions and an entrenched property crisis.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9696,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 13,
+            "social_mentions": 1,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "economic"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "syahredzan hargai bantuan ong sebelum jadi wakil rakyat. ahli parlimen bangi syahredzan johan berkata beliau menghormati keputusan ong kian ming meninggalkan dap.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570011+00:00",
+        "last_updated": "2026-08-31T08:16:30.570013+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0013",
+            "keyword": "syahredzan",
+            "title": "Syahredzan hargai bantuan Ong sebelum jadi wakil rakyat. Ahli Parlimen Bangi Syahredzan Johan berkata beliau menghormati keputusan Ong Kian Ming meninggalkan DAP.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9783,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 5,
+            "social_mentions": 5,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "include university, military hospitals in digital health network, says mma. doctors' group says the rm1 billion allocation for electronic medical records must also cover equipment, internet access, an": {
+        "alpha": 1.4,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570015+00:00",
+        "last_updated": "2026-08-31T08:16:30.570016+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0016",
+            "keyword": "include",
+            "title": "Include university, military hospitals in digital health network, says MMA. Doctors' group says the RM1 billion allocation for electronic medical records must also cover equipment, internet access, an",
+            "structural_importance": 0.615,
+            "silence_score": 0.9831,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 19,
+            "social_mentions": 3,
+            "expected_mentions": 1300.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "high",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "china\u2019s three biggest airlines post heavy first-half losses as fuel shock bites. air china, china eastern and china southern posted combined losses of us$1.22 billion, with a lacklustre summer cloudin": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570020+00:00",
+        "last_updated": "2026-08-31T08:16:30.570022+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0017",
+            "keyword": "china\u2019s",
+            "title": "China\u2019s three biggest airlines post heavy first-half losses as fuel shock bites. Air China, China Eastern and China Southern posted combined losses of US$1.22 billion, with a lacklustre summer cloudin",
+            "structural_importance": 0.465,
+            "silence_score": 0.8674,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 59,
+            "social_mentions": 2,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "pemain industri mahu penjelasan aturan pengadunan vlsfo. pihak berkuasa digesa memperjelas peraturan terhadap petroleum yang disimpan, dipindahkan atau diadun dalam kemudahan bawah kawalan kastam.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570024+00:00",
+        "last_updated": "2026-08-31T08:16:30.570025+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0018",
+            "keyword": "pemain",
+            "title": "Pemain industri mahu penjelasan aturan pengadunan VLSFO. Pihak berkuasa digesa memperjelas peraturan terhadap petroleum yang disimpan, dipindahkan atau diadun dalam kemudahan bawah kawalan Kastam.",
+            "structural_importance": 0.415,
+            "silence_score": 0.9885,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 2,
+            "social_mentions": 1,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "4 areas in sarawak record \u2018hazardous\u2019 air quality. another three locations in the state record 'very unhealthy' api readings as of 8am.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570028+00:00",
+        "last_updated": "2026-08-31T08:16:30.570030+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0019",
+            "keyword": "4",
+            "title": "4 areas in Sarawak record \u2018hazardous\u2019 air quality. Another three locations in the state record 'very unhealthy' API readings as of 8am.",
+            "structural_importance": 0.415,
+            "silence_score": 0.9538,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 8,
+            "social_mentions": 4,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "kian ming keluar dap. bekas ahli parlimen serdang itu bersyukur diberikan peluang untuk menyumbang kepada parti dan negara melalui pelbagai cara sejak menyertai dap pada 2012.": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570032+00:00",
+        "last_updated": "2026-08-31T08:16:30.570033+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0020",
+            "keyword": "kian",
+            "title": "Kian Ming keluar DAP. Bekas Ahli Parlimen Serdang itu bersyukur diberikan peluang untuk menyumbang kepada parti dan negara melalui pelbagai cara sejak menyertai DAP pada 2012.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9739,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 7,
+            "social_mentions": 5,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "include": {
+        "alpha": 1.4,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570317+00:00",
+        "last_updated": "2026-08-31T08:16:30.570321+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0016",
+            "keyword": "include",
+            "title": "Include university, military hospitals in digital health network, says MMA. Doctors' group says the RM1 billion allocation for electronic medical records must also cover equipment, internet access, an",
+            "structural_importance": 0.615,
+            "silence_score": 0.9831,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 19,
+            "social_mentions": 3,
+            "expected_mentions": 1300.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "high",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "ong": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570334+00:00",
+        "last_updated": "2026-08-31T08:16:30.570336+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0011",
+            "keyword": "ong",
+            "title": "Ong keluar parti kehilangan besar buat DAP, kata Ramasamy. Pengerusi Urimai berkata, tindakan Ahli Parlimen Bangi itu diambil ketika parti bergelut tentukan hala politik sendiri.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9783,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 5,
+            "social_mentions": 5,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "kian": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570346+00:00",
+        "last_updated": "2026-08-31T08:16:30.570347+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0020",
+            "keyword": "kian",
+            "title": "Kian Ming keluar DAP. Bekas Ahli Parlimen Serdang itu bersyukur diberikan peluang untuk menyumbang kepada parti dan negara melalui pelbagai cara sejak menyertai DAP pada 2012.",
+            "structural_importance": 0.465,
+            "silence_score": 0.9739,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 7,
+            "social_mentions": 5,
+            "expected_mentions": 460.0,
+            "bias_dimensions_touched": [
+              "political"
+            ],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
+      },
+      "pemain": {
+        "alpha": 1.2,
+        "beta": 9.0,
+        "created_at": "2026-08-31T08:16:30.570361+00:00",
+        "last_updated": "2026-08-31T08:16:30.570362+00:00",
+        "stream_signals": {
+          "silence_detector": {
+            "event_id": "INST-0018",
+            "keyword": "pemain",
+            "title": "Pemain industri mahu penjelasan aturan pengadunan VLSFO. Pihak berkuasa digesa memperjelas peraturan terhadap petroleum yang disimpan, dipindahkan atau diadun dalam kemudahan bawah kawalan Kastam.",
+            "structural_importance": 0.415,
+            "silence_score": 0.9885,
+            "suppression_pattern": "NORMAL",
+            "news_mentions": 2,
+            "social_mentions": 1,
+            "expected_mentions": 260.0,
+            "bias_dimensions_touched": [],
+            "alert_level": "medium",
+            "detection_type": "silence_anomaly",
+            "timestamp": "2026-08-31T08:16:30.540440+00:00"
+          }
+        }
       }
     },
-    "issue_counter": 8650070
+    "issue_counter": 8659436
   },
   "volume_monitor": {
     "cusum": {},
@@ -229742,192 +230123,187 @@
   },
   "cascade_tracker": {
     "hawkes_params": {
-      "should": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "south": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "building": {
+      "rises": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "fellow": {
+      "four": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "bessent": {
+      "\u2018hazardous\u2019": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "commentary:": {
+      "kenin": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "stuck": {
+      "charged": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "\u2018they": {
+      "officer": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "indonesia": {
+      "crimewatch": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "best": {
+      "this": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "dozens": {
+      "resume": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "forces": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "brunner": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "drama-free": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "'blue": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "senior": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "pakistan\u2019s": {
+      "ai-driven": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
       "nepal": {
-        "mu": 8.641036660020449e-05,
-        "alpha": 0.45412865033396926,
-        "beta": 4.744759679478776
+        "mu": 0.00011480548706818306,
+        "alpha": 1e-06,
+        "beta": 5.504878337759406
       },
-      "forensics": {
+      "carrier": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "before": {
+      "collapsed": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "kostyuk": {
+      "pokemon": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "thailand's": {
+      "england": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "paradox": {
+      "sarawak": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "assist": {
+      "modi": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "trump": {
+      "west": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "inter": {
+      "iran": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "data": {
+      "borrowing": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "with": {
+      "govt": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "u.s.": {
+      "national": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "openai": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "ailing": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "golf": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pattaya": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "djokovic": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "apple": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "countries": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "nirmala": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "foreign": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "thai": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "serian": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "google": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "nepal-china": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
       "japan": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "prabowo's": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "through": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "japan,": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "nepal-tibet": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "japan's": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "india's": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "vietnam": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "cambodia": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -229953,6 +230329,11 @@
         "beta": 1.0
       },
       "bessent's": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "japan's": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230087,6 +230468,581 @@
         "alpha": 0.5,
         "beta": 1.0
       },
+      "china-led": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "china,": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "shein's": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "vietnam": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "must": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "2022": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "despite": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "resistance\u2019:": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "committee": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "what": {
+        "mu": 1.1649620368185338e-05,
+        "alpha": 1e-06,
+        "beta": 5.505240309147042
+      },
+      "merdeka": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pamer": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "kuala": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "keluar": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "north": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "bekalan": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "indonesia,": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "student": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "police": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "display": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "malaysia\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "kian": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pakistan\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "indonesia-us": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "china\u2019s": {
+        "mu": 1.602433595357252e-05,
+        "alpha": 5227.371734177042,
+        "beta": 13920.626937513553
+      },
+      "asean": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "u.s.": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "ong\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "fifa": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "catatan": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "reason": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "from": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "sewa": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "loke": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "rescue": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "chip": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "malaysian": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "demand": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "kings": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "aston": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "tennis": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "global": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "syahredzan": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "tahun": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "free": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "anti-korean": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "bangi": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "'blue": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "commander": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pakistani": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "senior": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "include": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "china-nepal": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "bilion": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "people": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "russia,": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "azizulhasni": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "forensics": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "says": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "selamat": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "thank": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "bishkek": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "1,500": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "eight": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "seoul": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "trump": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "cultural": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "classy": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "data": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pioneering": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "social": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "happy": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "father,": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "yeah,": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "thailand's": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "tahap": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "mamdani": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "palestinians": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "round": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pemain": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "will": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "kelantanese": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "gadis": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "kemerdekaan": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "nato\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "made": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "smart": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "shein": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "school": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "niger": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "agong,": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "tunisia": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "itauma": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "plans": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "singapore": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "chinese": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "waited": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "jill": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "orang": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "venezuela\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "strikes": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "dollar": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "king": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "don\u2019t": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "huawei": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "banjir": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "areas": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "china": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "golden": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "after": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "hampir": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "resigns": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "shares": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "dead": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "flash": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
       "daylight": {
         "mu": 1.0,
         "alpha": 0.5,
@@ -230102,57 +231058,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "iran": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "strikes": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "medvedev": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "hikers": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "eyes": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "colombian": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "true": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "daya": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "what": {
-        "mu": 1.130183460940092e-05,
-        "alpha": 1e-06,
-        "beta": 5.505246635143778
-      },
-      "holds": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "china,": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230162,22 +231068,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "red-hot": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "citi\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "hotel": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "watkins": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230187,52 +231078,12 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "top-ranked": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "g25:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "beranak": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "more": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "venezuela's": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "lake": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "pegula": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "russia": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "selamat": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "sensational": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230247,32 +231098,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "standing": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "calhanoglu": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "least": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "spidey": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "real": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "monaco": {
+      "grand": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230287,42 +231113,12 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "bitter": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "have": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
-      "rashford\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "fifa": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "funeral": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "patriotism,": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "pays": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "fernandes": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230337,72 +231133,12 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "\u2018opening": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "fashion": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "video:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "butcher": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "people": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "eight": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "families": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "fahmi:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "family": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "anwar": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "former": {
+      "least": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
       },
       "giant": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "public": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "miss": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230422,21 +231158,6 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "devastation": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "first": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "ahead": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "iranian": {
         "mu": 1.0,
         "alpha": 0.5,
@@ -230447,22 +231168,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "officials": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "anwar:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "icelandic": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "ferry": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230472,82 +231178,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "evidence": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "nepal\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "manhunt": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "nasa": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "zambia": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "amirudin": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "zambian": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "sarawak": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "death": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "google": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "debt": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "deputy": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "happy": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "head": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "rival": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "budi95": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230557,47 +231188,17 @@
         "alpha": 0.5,
         "beta": 1.0
       },
+      "zambian": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "head": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
       "/r/malaysia": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "pioneering": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "social": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "classy": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "from": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "cultural": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "china\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "melaka\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "suffers": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230607,132 +231208,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "nato": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "diesel": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "three\u2011year\u2011old\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "angola": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "burnham\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "chelsea": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "niger": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "ready": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "relief": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "zahid:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "this": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "malaysia": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "die,": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "in-form": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "kuota": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "shift": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "modi": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "llao": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "doe:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "orangutan": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "pendaki": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "juga": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "bring": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "haze": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "govt": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "actually": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230747,92 +231223,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "fatimah": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "dedah": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "open": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "13-year-old": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "melaka": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "missing": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "senator": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "will": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "dijk": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "gunmen": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "backlash": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "arthritis": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "long": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "news": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "three": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "prime": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "north": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "police": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230842,122 +231233,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "career": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "warning": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "motor": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "rescuers": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "malaysia\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "uzbekistan": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "starry": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "chinese": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "cantopop": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "farres": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "malaysians": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "cxmt": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "foreign": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "pakistan": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "\u2018stuck\u2019:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "serian": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "early": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "behind": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "300l": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "modi\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "23,000": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "token": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "masa": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "furore": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230972,17 +231248,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "beyond": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "ukraine's": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "dead": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -230993,16 +231259,6 @@
         "beta": 1.0
       },
       "whatsapp": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "\u2018please": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "serangan": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231032,17 +231288,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "committee": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "cyber": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "immigration": {
+      "dozens": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231052,17 +231298,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "subang": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "maha": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "lead": {
+      "former": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231082,6 +231318,11 @@
         "alpha": 0.5,
         "beta": 1.0
       },
+      "nepal\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
       "risk": {
         "mu": 1.0,
         "alpha": 0.5,
@@ -231097,47 +231338,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "watch:": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "norway": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "deadly": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "pull": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "judge": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "weighs": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "trump\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "artemis": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "argentina": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231188,6 +231389,11 @@
         "beta": 1.0
       },
       "india\u2019s": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "more": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231277,11 +231483,6 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "flash": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "lowering": {
         "mu": 1.0,
         "alpha": 0.5,
@@ -231302,11 +231503,6 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "golden": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
       "election": {
         "mu": 1.0,
         "alpha": 0.5,
@@ -231318,6 +231514,11 @@
         "beta": 1.0
       },
       "state": {
+        "mu": 1.0,
+        "alpha": 0.5,
+        "beta": 1.0
+      },
+      "pakistan": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231407,12 +231608,7 @@
         "alpha": 0.5,
         "beta": 1.0
       },
-      "singapore": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "china": {
+      "ahead": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231428,11 +231624,6 @@
         "beta": 1.0
       },
       "world\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "after": {
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
@@ -231481,29 +231672,25 @@
         "mu": 1.0,
         "alpha": 0.5,
         "beta": 1.0
-      },
-      "jinping\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
-      },
-      "kazakhstan\u2019s": {
-        "mu": 1.0,
-        "alpha": 0.5,
-        "beta": 1.0
       }
     },
     "n_star_history": {
       "nepal": [
         [
-          "2026-08-29T23:33:17+05:30",
-          0.09571162314038559
+          "2026-08-30T12:52:34+05:30",
+          1.8165705736686992e-07
+        ]
+      ],
+      "china\u2019s": [
+        [
+          "2026-08-25T21:22:00+09:00",
+          0.3755126660344749
         ]
       ],
       "what": [
         [
-          "2026-08-21T02:49:00+09:00",
-          1.8164490462903364e-07
+          "2026-08-21T18:40:00+09:00",
+          1.8164511335472215e-07
         ]
       ]
     }
@@ -231644,17 +231831,17 @@
       "2026-08-28": 978,
       "2026-08-29": 2429,
       "2026-08-30": 1963,
-      "2026-08-31": 483
+      "2026-08-31": 914
     },
     "predictors": {
       "hmm": {
         "last_trained_at": "2026-08-25T12:48:25.926806+00:00"
       },
       "cox": {
-        "last_trained_at": "2026-08-31T00:14:46.328567+00:00"
+        "last_trained_at": "2026-08-31T08:13:15.742270+00:00"
       },
       "sarima": {
-        "last_trained_at": "2026-08-31T00:14:46.328567+00:00"
+        "last_trained_at": "2026-08-31T08:13:15.742270+00:00"
       }
     }
   },
@@ -231662,19 +231849,19 @@
     "days_of_data": 132,
     "hmm": {
       "cold_start": false,
-      "applied": 66,
+      "applied": 69,
       "retrained": false,
       "days_needed": 0
     },
     "cox": {
       "cold_start": false,
-      "applied": 1156,
+      "applied": 1152,
       "retrained": true,
       "days_needed": 0
     },
     "sarima": {
       "cold_start": false,
-      "applied": 1156,
+      "applied": 1152,
       "retrained": true,
       "days_needed": 0
     }
