@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-04T03:23:22.124Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-04T08:35:30.992Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (83)
+## ⏳ TO POST (84)
 
 ### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
 
@@ -42,6 +42,44 @@ It is like a town that keeps drafting a fire code, files it away when the neighb
 A haze law would not put out the fires; Putrajaya said so in 2023. Its point was to tell Malaysian planters abroad the smoke follows them home. Two governments declined to say it.
 
 https://thefourthangle.pages.dev/issue/2011
+```
+
+### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
+
+> ⚡ **Reactive: topic is live in the radar** (anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
+
+**1/7** _(hook — attach image, NO link)_ · 145 chars
+```
+Tabung Haji declared a RM3.4 billion profit for 2017 and paid RM3.3 billion in hibah. A Royal Commission found the year was a RM1.4 billion loss.
+```
+**2/7** _(fact)_ · 153 chars
+```
+The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
+```
+**3/7** _(fact)_ · 149 chars
+```
+PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
+```
+**4/7** _(fact)_ · 152 chars
+```
+One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
+```
+**6/7** _(analogy)_ · 148 chars
+```
+A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
+```
+**7/7** _(view — ONLY post with the link)_ · 223 chars
+```
+Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
+
+https://thefourthangle.pages.dev/issue/2010
 ```
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
