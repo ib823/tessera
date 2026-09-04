@@ -101,7 +101,11 @@ document, not to press summaries.
    the changes happened **twice in one year**. The commission reproduces PwC's sensitivity:
    at the >70%/>24-month test the impairment charge would have been **RM1,313 million**; at
    >85% it was **RM171 million**; at >90% it was **RM1 million**. LTH recorded **RM1.0
-   million**. The report's own illustration: a RM1,000 shareholding was impaired only once it
+   million**. **Stage 3 (2026-09-04):** the 85% and 90% versions carry **no prolonged-decline
+   (>24-month) limb**, so the change relaxed two tests, not one; para 3.9.8 also records that
+   the two FY2017 revisions were made **within one day**. The three RM figures are PwC's
+   modelled effects under each policy version; only RM1.0 million was ever booked. Do not
+   write that a charge "shrank" or was reversed. The report's own illustration: a RM1,000 shareholding was impaired only once it
    fell to **RM100**.
 2. **The equity/liability misclassification (para 3.11.12, p. 94).** Depositors' funds
    (Kumpulan Wang Pendeposit) had been classified as **equity** in the financial statements
@@ -293,7 +297,12 @@ reason for withholding it from them.
   finding, citing RAV figures showing surpluses for 2015, 2016 and 2017.
 - **28 Dec 2018** — Restructuring completes: assets with a market value of about
   RM9.63 billion transfer to Urusharta Jamaah Sdn Bhd (an MOF Inc vehicle) for
-  RM19.9 billion — RM19.6 billion in two sukuk tranches plus RM300 million cash.
+  RM19.9 billion — RM19.6 billion in two sukuk tranches plus RM300 million cash. **Stage 3:**
+  the UJSB statement carrying RM9.63b is dated **14 November 2019** (The Edge), not December
+  2018; the commission's own para **3.13.29** gives market value **RM9.729 billion** against
+  transfer value RM19.900 billion, and TH rounds to RM9.7b. Prefer the report's figure.
+  Timeline per paras 3.13.19–3.13.29: Cabinet agreement in principle 30 Nov 2018, approval
+  7 Dec 2018, asset-transfer agreement executed 27 Dec 2018, completion 28 Dec 2018.
 - **2018** — Distribution falls to 1.25%. Deposits subsequently fall from about
   RM73 billion to RM69 billion (reported against the 2019 declaration).
 - **20 Jan 2022** — Six commissioners appointed and commissioned by the 16th Yang di-Pertuan
@@ -313,8 +322,11 @@ reason for withholding it from them.
   the Religious Affairs Minister, winding-up with Finance Minister II; opposition walks out after
   a request to postpone over the Prime Minister's absence is refused [S21].
 - **13 Aug 2026** — Former Auditor-General Madinah Mohamad (in office 2017–2019) says she was
-  not called to testify; on 3 Sep an RCI member says she was subpoenaed but asked to attend with
-  the JAN deputy director, which the commission refused [S22].
+  not called to testify; on 3 Sep RCI member Abdul Rashid Hussain says she was subpoenaed but
+  asked to attend with the JAN deputy director, which the commission refused [S22]. On **4 Sep**
+  Madinah denies making that request: Mona Othman "was just meant to be on standby outside in
+  case technical questions were asked" (FMT, 4 Sep 2026). The dispute is unresolved; carry both
+  positions or neither.
 - **25 Aug 2026** — Madinah: the RM4.8b gap between the RCI/PwC restatement and the audit is not
   proof of audit failure; different purposes, terms of reference and methodology, "apples and
   oranges" [S16].
@@ -323,9 +335,11 @@ reason for withholding it from them.
 - **30 Aug 2026** — C4 Center calls for a review of the National Audit Department over the
   RM4.8b discrepancy [S18].
 - **1–2 Sep 2026** — MACC detains a former minister (60s) over the leasing of a TH-linked hotel
-  in Saudi Arabia; remanded five days under MACC Act 2009 s.16(a)(A). A former TH chairman and a
-  former Treasury secretary-general were earlier released after a seven-day remand without
-  charge [S19].
+  in Saudi Arabia; remanded five days, order running to **6 September**, under MACC Act 2009
+  s.16(a)(A) (The Star, 2 Sep; the article does not name him). A former TH chairman and a
+  former Treasury secretary-general, remanded seven days from 26 Aug, were released on 1 Sep
+  without charge (Malay Mail, 1 Sep) [S19]. **Do not describe the former minister as released**
+  — as of 4 Sep the remand order was still running.
 - **3–4 Sep 2026** — Former TH chief operating officer Adi Azuan Abdul Ghani, due to face three
   charges under Penal Code s.165 at the Shah Alam Sessions Court, is hospitalised; charging
   postponed to 24 Sep 2026 [S20]. **As of 4 Sep 2026 no one has been convicted and no charge has
@@ -436,6 +450,16 @@ reason for withholding it from them.
   **5.00+3.00 → 3,220,374**; 2016 **4.25+1.50 → 2,870,822**; 2017 **4.50+1.75 → 3,323,741**;
   2018 **1.25 → 922,959**; 2019 **3.05 → 2,140,538**; 2020 **3.10 → 2,242,141**. The
   **2017 → 2018 fall of 72%** is the sharpest single fact in the series.
+
+  ⚠️ **STAGE 3 CORRECTION (2026-09-04).** The statement above that RM2.75 billion "appears
+  nowhere in the report" was wrong. Stage 3 located it in the **Ringkasan Eksekutif, para
+  22(iii)**, which gives the FY2017 cost of the 4.50% annual hibah plus 1.75% haj hibah as
+  **RM2.75 bilion**. The report is therefore internally inconsistent: executive summary
+  RM2.75b, detailed tables (3.11.7, 3.13.7) RM3,323,741k / RM3,324m, JAN testimony (3.11.10)
+  RM3.31b. Cards use the detailed-table figure because it reconciles across two tables and the
+  witness evidence. Disclose the inconsistency wherever the payout is discussed; do not say the
+  press figure is absent from the report. Para 22(iii) has not yet been re-read in session;
+  the finding is carried on Stage 3's reading.
 - **The full PwC five-year position is available** and was read in full at para 3.13.7
   (p. 109) — it is not a single-year snapshot. RM'million, 2013 → 2017. Assets: 48,778 /
   54,751 / 60,196 / 64,321 / 70,317. Liabilities incl. depositors' saving fund: (43,696) /
@@ -579,13 +603,18 @@ depositor voice is exactly the omission T4A exists to correct.
 - **[P3] Tabung Haji annual reports and statistics** —
   https://www.tabunghaji.gov.my/laporan-tahunan-dan-statistik. FY2017 report required for the
   declared profit and distribution rates. **Not yet opened.**
-- **[P4] Tabung Haji official statement, 30 July 2026** — defence of the 2018 restructuring
+- **[P4] Tabung Haji official statement, 31 July 2026** (Stage 3 corrected the date from 30 July;
+  tabunghaji.gov.my/bm/siaran-media/korporat/penjualan-aset-hampir-rm-10-bilion-selamatkan-th-kerugian-rm-2-6-bilion-turut-ditangani-untuk-pemulihan-seterusnya) — defence of the 2018 restructuring
   (RM10 billion gap, RM9.7 billion assets, RM19.9 billion consideration, RM12.6 billion
   losses addressed, TRX land and plantation repurchases, 75% of recommendations
   implemented). Retrieved via Malay Mail [S8].
 - **[P5] Tabung Haji official statement, 1 August 2026** — "profit distribution is only
   announced based on audited financial results"; implementing since 2022; 3.50% in 2025;
-  9.8 million depositors. Retrieved via Malay Mail:
+  9.8 million depositors. **Stage 3:** the "more than 75% of recommendations implemented"
+  figure is from TH's **7 August 2026** statement (tabunghaji.gov.my/bm/siaran-media/korporat/th-ambil-maklum-teliti-pandangan-dan-cadangan-ngo-berkaitan-dapatan-rci),
+  and TH's own 31 July 2026 page on the restatement is at
+  tabunghaji.gov.my/siaran-media/korporat/laporan-rci-th-patut-rekod-kerugian-1-4-bilion-pada-2017-berbanding-untung-3-4-bilion-mengikut-piawaian-perakaunan-mfrs.
+  Retrieved via Malay Mail:
   https://www.malaymail.com/news/malaysia/2026/08/01/tabung-haji-welcomes-rci-recommendations-says-already-distributes-profits-based-on-audited-results/229809
 - **[P6] Bernama, "RCI Report Reveals Governance Weaknesses, Political Interference In Tabung
   Haji"** — https://www.bernama.com/en/general/news.php?id=2587753. National news agency;
@@ -652,6 +681,9 @@ depositor voice is exactly the omission T4A exists to correct.
   leases 2015–2017, about SR1.43b upfront; s.16(a)(A) MACC Act 2009)
 - **[S20]** FMT, "Ex-Tabung Haji COO's graft case postponed to Sept 24", 3 Sep 2026 —
   https://www.freemalaysiatoday.com/category/nation/2026/09/03/ex-tabung-haji-coo-s-graft-case-postponed-to-sept-24 ;
+  The Star, "Former Tabung Haji COO misses court charge over hospitalisation", 3 Sep 2026 —
+  https://www.thestar.com.my/news/nation/2026/09/03/former-tabung-haji-coo-misses-court-charge-over-hospitalisation ;
+  Astro Awani, 3 Sep 2026 — https://www.astroawani.com/berita-malaysia/terkini-bekas-coo-th-masuk-hospital-pendakwaan-ditangguh-ke-24-sept ;
   The Star, "Ex-Tabung Haji COO hospitalised, court case postponed", 4 Sep 2026 —
   https://www.thestar.com.my/news/nation/2026/09/04/ex-tabung-haji-coo-hospitalised-court-case-postponed
   (three charges under Penal Code s.165; hospitalised since 31 Aug)
@@ -756,3 +788,27 @@ depositor voice is exactly the omission T4A exists to correct.
 document; gap 2 was closed on 2026-08-03. Stage 1 may begin on the user's approval. The
 standing rule still applies: for a 3R-adjacent institution the verification bar is higher, not
 lower — every card must cite the report paragraph, not a press summary of it.
+
+## STAGE 2 / STAGE 3 OUTCOME (2026-09-04)
+
+- **Stage 2 (bias audit):** bias_score **15** → BA 85. Two flags, both applied: the analogy
+  card's "bank" (Tabung Haji is a statutory fund, not a bank under the FSA) and the omission
+  of the former chairman's RAV counter-figures. No partisan, racial, religious, geographic,
+  economic or gender flags; religious_sensitivity 0.0.
+- **Stage 3 (fact verification):** factual_accuracy **78**, source_diversity **0.58** (above
+  the 0.4 Stage 5 trigger; Stage 5 stays retired). 45 claims logged; nine cardinal-sin flags,
+  all applied in Stage 6: s.6 eligibility overstated (s.6(3) disqualifications exist; the
+  defensible point is the absence of a competence test); impairment trigger to be stated as
+  "below cost" with the 24-month limb noted; "charge shrank" replaced by modelled effects;
+  para 4.6 is a hope that suitable parts be considered for publication, not an unqualified
+  request; "Putrajaya sealed" replaced by actor-neutral wording; the "protected / kept in the
+  dark" inference dropped; "bank" analogy rewritten; "the gate held" kicker replaced with the
+  commission's actual finding (2014–2017 hibah not in line with s.22); the RM2.75b provenance
+  error and the former-minister status error corrected above. Additional primary sources Stage 3
+  located: Bernama 24 Jul 2026 (news.php?id=2585316, Anwar's rationale); parlimen.gov.my bills
+  list (no Act 535 amendment bill as of 4 Sep 2026); Malay Mail 3 Sep 2026 (TH CEO: amendments
+  in final stages before tabling; 403 to the session fetcher, carried on Stage 3's reading);
+  FMT 2 Sep 2026 (MACC: several people to be charged); The Star 25 Aug 2026 (Madinah:
+  different audit methods).
+- **Stage 6:** SR 82. finalScore (86 + 85 + 78 + 82) / 4 = **82.75**. opinionShift 74.
+

@@ -43,22 +43,42 @@
       "note": "Stage 2 (Gemini) and Stage 3 (ChatGPT) prompts handed to operator in chat 2026-09-04; Stages 4/5 generated for legacy tooling, not used (Stage 5 escalation pending Stage 3 source_diversity_estimate)"
     },
     "4_stage2_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-09-04T05:45:32.641Z",
+      "path": "engine/output/tabung-haji-rci-2017-restatement-stage2.json",
+      "bias_score": 15
     },
     "4_stage3_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-09-04T05:47:01.442Z",
+      "path": "engine/output/tabung-haji-rci-2017-restatement-stage3.json",
+      "factual_accuracy_score": 78
     },
     "5_synthesis": {
-      "done": false
+      "done": true,
+      "at": "2026-09-04T05:50:55.137Z",
+      "sr_score": 82,
+      "revisions": 20,
+      "note": "Stage 2 + Stage 3 integrated; Stage 5 not triggered (diversity 0.58)"
     },
     "6_legal_check": {
-      "done": false
+      "done": true,
+      "at": "2026-09-04T05:52:46.937Z",
+      "result": "PASS",
+      "stealth": "CLEAN",
+      "language_warnings": 0,
+      "note": "3R, defamation, OSA, Sedition, CMA233, fact-trace and four-sins walked; see reader.json _provenance and stage6 revisions"
     },
     "7a_sherlock": {
-      "done": false
+      "done": true,
+      "at": "2026-09-04T05:52:47.012Z",
+      "connections": 0,
+      "note": "fact-graph scan found no issue sharing >=2 entities incl. one non-money entity; related[] left empty. Brief-noted candidates 1029/1151/1278 are unpublished."
     },
     "7b_image_prompt": {
-      "done": false
+      "done": true,
+      "at": "2026-09-04T05:52:47.109Z",
+      "note": "prompt handed to operator in chat 2026-09-04"
     },
     "7b_image_uploaded": {
       "done": false

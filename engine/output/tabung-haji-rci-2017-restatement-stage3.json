@@ -1,0 +1,528 @@
+{
+  "factual_accuracy_score": 78,
+  "source_diversity_estimate": 0.58,
+  "claims": [
+    {
+      "claim": "Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "RCI report para 3.13.11 and PwC reconciliation table, p.111; official publication dated 29 July 2026: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022 ; Tabung Haji's 31 July 2026 statement independently accepts the comparison: https://www.tabunghaji.gov.my/siaran-media/korporat/laporan-rci-th-patut-rekod-kerugian-1-4-bilion-pada-2017-berbanding-untung-3-4-bilion-mengikut-piawaian-perakaunan-mfrs",
+      "correction": "Retain both the attribution to the RCI and the qualification that RM1.433 billion is the result under full MFRS, rather than an unqualified cash-loss claim.",
+      "stale_check": "Not stale; this is a historical 2017 accounting finding published in 2026."
+    },
+    {
+      "claim": "The RCI report was presented to the King on 30 August 2022 and published on 29 July 2026",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "The RCI report title page states it was presented to the Yang di-Pertuan Agong on 30 August 2022; the official JAKIM publication and declassification announcement is dated 29 July 2026: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Use 'presented to the King' rather than the looser 'reported to the King'. The executive summary itself was signed on 19 July 2022.",
+      "stale_check": "Not applicable; both dates are fixed historical dates."
+    },
+    {
+      "claim": "Tabung Haji declared a RM3.4 billion profit for 2017 and paid RM3.3 billion in hibah",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.1,
+      "m_unknown": 0.25,
+      "source": "RCI report paras 3.11.7, p.92, and 3.13.7, p.109, give RM3,323,741,000 and rounded RM3.324 billion; para 3.13.11, p.111, gives reported profit of RM3.412 billion. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "RM3.3 billion, RM3.32 billion and RM3.324 billion are rounding variants of the detailed-table payout. However, the RCI executive summary also says RM2.75 billion, an internal inconsistency that must be disclosed; the detailed tables support RM3.324 billion.",
+      "stale_check": "Not applicable; this is a historical 2017 figure."
+    },
+    {
+      "claim": "It moved its write-down trigger twice that year, from a 70% fall to 85%, then 90%",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "RCI report paras 3.9.8, p.77, and 3.13.8-3.13.9, p.110, show changes from more than 70% below cost, with a separate prolonged-below-cost criterion of more than 24 months, to more than 85% with no prolonged criterion, and then more than 90% with no prolonged criterion. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "State the complete change: the significant-decline threshold moved from more than 70% below cost to more than 85% and then more than 90%, while the more-than-24-month prolonged-decline test shown in the initial policy was removed. 'Below cost' is more accurate than an unspecified 'fall in value'.",
+      "stale_check": "Not applicable; this is a historical accounting-policy change."
+    },
+    {
+      "claim": "The two FY2017 impairment-policy changes were made within one day",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.9.8, p.77, states that the 85% and 90% revisions were made within one day for FY2017. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Attribute this directly to the commission's finding.",
+      "stale_check": "Not applicable; this is a historical event."
+    },
+    {
+      "claim": "The impairment charge shrank from RM1,313 million to RM1 million",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.25,
+      "m_unknown": 0.35,
+      "source": "RCI report paras 3.13.8-3.13.9, p.110, tabulate estimated impairment effects of RM1.313 billion, RM171 million and RM1 million under the successive policies, and say the final policy enabled only RM1 million to be recorded. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Call these the modeled impairment effects under the three policy versions. 'Charge shrank' can falsely imply that RM1.313 billion was first booked and then reversed; the report instead compares what each policy would produce and says RM1 million was ultimately recorded.",
+      "stale_check": "Not applicable; this is a historical accounting comparison."
+    },
+    {
+      "claim": "The report referred to 9.2-9.3 million depositors at the time of the 2018 recovery plan",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.13.14, pp.112-113, refers to more than 9.2 million depositors and later recovery-plan discussion refers to nearly 9.3 million. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Keep the period attribution; this should not be presented as the current depositor count. Tabung Haji reported about 9.8 million depositors in 2026.",
+      "stale_check": "The figure is historical. A 2026 figure should not be substituted without changing the time reference."
+    },
+    {
+      "claim": "The commission found the chairman and several board members in 2014 to 2018 came from among politicians",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI executive summary para 12, p.xiv, says one chairman and several board members were appointed from among politicians during 2014-2018. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Do not infer a precise number or name individuals unless separately sourced; the commission used 'one chairman and several members'.",
+      "stale_check": "Not applicable; the claim is explicitly limited to 2014-2018."
+    },
+    {
+      "claim": "The Act asks only that a member be Muslim and a citizen",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.55,
+      "m_unknown": 0.1,
+      "source": "Tabung Haji Act 1995, Act 535, s.6(2)-(3), updated reprint as at 1 December 2011: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156 ; the RCI executive summary para 11 discusses the absence of specific positive expertise criteria.",
+      "correction": "Section 6(2) sets Muslim faith and Malaysian citizenship as the only positive qualifications, but s.6(3) also disqualifies a bankrupt person, a person with a qualifying criminal conviction, and a person of unsound mind or otherwise incapable of performing the duties. Write that the Act lacks specific competence or expertise criteria, not that it has only two eligibility rules in total.",
+      "stale_check": "The statement concerns the law applied during the inquiry period. A 2026 amendment was still being prepared, not enacted, as checked on 4 September 2026."
+    },
+    {
+      "claim": "Hibah rates, haj fares and the HAFIS subsidy were driven by political elements",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI executive summary para 13, p.xiv, uses 'didorong oleh unsur-unsur politik' for several decisions including hibah distribution, haj fare and HAFIS. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Attribute the causal characterization to the commission, as the card does; do not convert it into a finding of individual criminal responsibility.",
+      "stale_check": "Not applicable; this is a historical RCI finding."
+    },
+    {
+      "claim": "All three religious affairs ministers of the period had expertise confined to religious affairs and relied fully on management and board proposals",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI executive summary para 10, pp.xiii-xiv, characterizes the expertise of all three supervising ministers as limited to religious affairs and says this caused full reliance on management and board proposals. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Preserve the attribution and the word 'expertise'; do not paraphrase it as a finding that the ministers were generally incompetent or unfit.",
+      "stale_check": "Not applicable; this concerns the inquiry period."
+    },
+    {
+      "claim": "PwC's table shows the fund in deficit after every distribution from 2014",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.13.7, p.109, gives post-distribution balances of negative RM352 million in 2014, negative RM3.086 billion in 2015, negative RM4.131 billion in 2016 and negative RM4.093 billion in 2017. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Add that the table shows pre-distribution surpluses in 2014 and 2015, but pre-distribution deficits in 2016 and 2017; that distinction materially improves the trend description.",
+      "stale_check": "Not applicable; this is a historical series."
+    },
+    {
+      "claim": "In 2017 it paid out RM3.32 billion and ended RM4.09 billion short",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.13.7, p.109, records a 2017 distribution of RM3.324 billion and post-distribution shortfall of RM4.093 billion. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Identify RM4.093 billion as the post-distribution shortfall; the same table gives a pre-distribution shortfall of RM769 million.",
+      "stale_check": "Not applicable; these are historical 2017 figures."
+    },
+    {
+      "claim": "Audit Department testimony put 2017 capacity at RM2.70 billion; the board paid RM3.31 billion, RM0.61 billion or 22.5% over capacity",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.11.10, p.93, records the National Audit Department deputy director's evidence: RM2.70 billion capacity using 4% of the annual minimum balance, versus RM3.31 billion paid using 6.25% of the monthly minimum balance, an excess of RM0.61 billion or 22.5%. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Keep this explicitly as Audit Department testimony and explain the different calculation bases; RM3.31 billion is a rounded account of the same payout shown as RM3.323741 billion in the detailed table.",
+      "stale_check": "Not applicable; this is historical testimony."
+    },
+    {
+      "claim": "Hibah fell 72% in 2018, to RM923 million",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.11.7, p.92, gives RM3,323,741,000 for 2017 and RM922,959,000 for 2018; the decline is 72.23%. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "No numerical correction needed; 'about 72%' is the appropriate rounding.",
+      "stale_check": "Not applicable; this is a historical comparison."
+    },
+    {
+      "claim": "Section 22 bars a payout unless assets cover liabilities",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "Tabung Haji Act 1995, Act 535, s.22(1) and s.22(3)(a)-(b), updated reprint as at 1 December 2011: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156 ; the same provision is quoted and applied in the 2022 RCI report.",
+      "correction": "This is a necessary condition, not the whole statutory test. Section 22 also requires a reserve fund, ministerial approval under s.22(1), and the s.22(3)(b) reserve-ratio condition approved by the Treasury.",
+      "stale_check": "A 2026 amendment was still at the preparation stage as of 4 September 2026, but the cited downloadable reprint is only updated to 1 December 2011; publication should obtain the current official consolidated Act or Gazette history before stating that no relevant amendment occurred before FY2017."
+    },
+    {
+      "claim": "Depositors' money sat in equity from 2010, a 'misrepresentation'",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.11.12, p.94, says the National Audit Department accepted classification of the depositors' fund as fund/equity from 2010 and calls it a misrepresentation because it should have been a liability. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Attribute 'misrepresentation' to the commission and say 'the depositors' fund was classified as equity' rather than suggesting physical money was placed in a different account.",
+      "stale_check": "Not applicable; this is the commission's finding about accounting from 2010."
+    },
+    {
+      "claim": "The equity classification and insufficient impairment made assets appear to exceed liabilities, so the section 22(3)(a) gate cleared",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "RCI report para 3.11.13, p.94, says the classification and inadequate impairment caused the annual accounts to show assets exceeding liabilities and enabled hibah to be declared under s.22(3)(a). Act 535 s.22 contains additional conditions: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156",
+      "correction": "Say the presentation made the s.22(3)(a) condition appear satisfied. Do not imply that this alone established compliance with all of s.22, because the provision has additional conditions and the RCI concluded the 2014-2017 distributions contravened s.22.",
+      "stale_check": "Not applicable; this is a historical legal-accounting finding."
+    },
+    {
+      "claim": "The 2017 accounts should not have been given a clean audit certificate",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.11.14, p.94, says the 2017 financial statements should not have received a clean audit certificate and that matters presented as Emphasis of Matter were serious non-compliance. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Keep 'the commission found' immediately attached to this professional judgment; the former Auditor-General publicly disputes the inference.",
+      "stale_check": "Not applicable; it is a fixed RCI finding about the FY2017 audit."
+    },
+    {
+      "claim": "Ex-Auditor-General Madinah Mohamad calls the comparison 'apples and oranges'",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "Direct event reporting of Madinah Mohamad's 25 August 2026 public remarks by The Star: https://www.thestar.com.my/news/nation/2026/08/25/different-audit-methods-behind-rm48bil-th-gap-says-former-auditor-general and https://www.thestar.com.my/news/nation/2026/08/25/rci-findings-may-have-differed-had-i-testified-says-former-auditor-general",
+      "correction": "Add her substantive explanation: she said the National Audit Department audit and PwC review had different mandates, scopes, objectives and methodologies; the quote alone is too cryptic to convey her position fairly.",
+      "stale_check": "Not stale; the attribution was checked against two reports of the same 25 August 2026 event."
+    },
+    {
+      "claim": "Madinah Mohamad was Auditor-General for the FY2017 audit and served from 2017 to 2019",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.03,
+      "m_unknown": 0.12,
+      "source": "Direct reporting of her public explanation and tenure by The Star on 25 August 2026: https://www.thestar.com.my/news/nation/2026/08/25/rci-findings-may-have-differed-had-i-testified-says-former-auditor-general ; the RCI report identifies the relevant National Audit Department audit period.",
+      "correction": "No correction needed.",
+      "stale_check": "Not applicable; tenure dates are historical."
+    },
+    {
+      "claim": "On page 199 the commission asked that its report be made public",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.55,
+      "m_unknown": 0.1,
+      "source": "RCI report para 4.6, printed p.199, says: 'Suruhanjaya berharap Kerajaan akan menimbang supaya laporan Suruhanjaya ini diumumkan kepada awam mengikut mana-mana bahagian yang bersesuaian.' Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "The commission did not make an unqualified request for the entire report to be published. It expressed hope that the government would consider making public whichever parts were suitable. Page 199 is correct.",
+      "stale_check": "Not applicable; the report wording is fixed."
+    },
+    {
+      "claim": "Putrajaya sealed it for almost four years, citing depositor panic",
+      "status": "MISLEADING",
+      "m_true": 0.45,
+      "m_false": 0.15,
+      "m_unknown": 0.4,
+      "source": "The report was presented on 30 August 2022 and officially reclassified OPEN and published on 29 July 2026: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022 . Prime Minister Anwar Ibrahim's stated non-publication rationale was reported directly by Bernama on 24 July 2026: https://bernama.com/bm/wilayah/news.php?id=2585316",
+      "correction": "The interval is 3 years, 10 months and 29 days, so 'almost four years' is fair. Replace the loaded and actor-blurring 'Putrajaya sealed it' with 'successive governments did not publish the classified report'. Attribute the panic and mass-withdrawal rationale specifically to Anwar's 24 July 2026 explanation.",
+      "stale_check": "Not stale; the report was released five days after the stated rationale and the analysis correctly uses the eventual publication date."
+    },
+    {
+      "claim": "Those it protected were those kept in the dark",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "No primary source can establish this rhetorical conclusion. The official publication record and Anwar's stated rationale establish non-publication and concern over withdrawals, not that withholding actually protected depositors or whom it protected: https://bernama.com/bm/wilayah/news.php?id=2585316",
+      "correction": "Present this as commentary or inference, not a verified fact, and distinguish depositors' information interests from the government's asserted financial-stability rationale.",
+      "stale_check": "Not applicable; the problem is evidentiary, not a later change in conditions."
+    },
+    {
+      "claim": "A bank rewrites its bad-loan rule twice in a year, pays a dividend on the result, then locks the inspector's report away so customers will not worry",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.4,
+      "m_unknown": 0.3,
+      "source": "The underlying RCI findings are in paras 3.9.8, 3.13.8-3.13.9 and 4.6, but Act 535 establishes Tabung Haji as a statutory body rather than a bank: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156 . Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Label it explicitly as an analogy. Tabung Haji is not a bank, the impairment rule concerned investment assets rather than simply bad loans, the original test also had a duration limb, and the commission itself only hoped the government would consider publishing suitable parts.",
+      "stale_check": "Not applicable; this is a framing issue."
+    },
+    {
+      "claim": "The commission said losses grew to RM10 billion and the government acted urgently",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.13.12, p.111, states that losses grew to RM10 billion and that the government had to act urgently. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Do not combine this RM10 billion recovery-point figure with the RM1.433 billion FY2017 net loss, RM4.093 billion post-distribution shortfall or RM4.683 billion accumulated loss; they measure different things.",
+      "stale_check": "Not applicable; this is a historical finding."
+    },
+    {
+      "claim": "The 2018 rescue moved assets valued at RM9.63 billion to a Finance Ministry vehicle for RM19.9 billion",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.05,
+      "m_unknown": 0.15,
+      "source": "UJSB's statement, reported by The Edge on 14 November 2019, gives market value of RM9.63 billion and consideration of RM19.9 billion, comprising RM19.6 billion in sukuk and RM300 million cash: https://theedgemalaysia.com/article/tabung-haji-asset-transfer-part-rescue-restructuring-plan-completed-%E2%80%94-urusharta-jamaah . The later RCI report para 3.13.29 gives RM9.729 billion market value and RM19.900 billion transfer value; Tabung Haji's 31 July 2026 statement rounds market value to RM9.7 billion: https://www.tabunghaji.gov.my/bm/siaran-media/korporat/penjualan-aset-hampir-rm-10-bilion-selamatkan-th-kerugian-rm-2-6-bilion-turut-ditangani-untuk-pemulihan-seterusnya",
+      "correction": "Prefer the RCI's later detailed figure of RM9.729 billion, or round it to RM9.7 billion. If retaining RM9.63 billion, attribute it specifically to UJSB's 2019 statement and explain the valuation difference.",
+      "stale_check": "Not stale; the discrepancy is between stated valuation figures for the same historical transfer, not a later change to the transaction."
+    },
+    {
+      "claim": "Urusharta Jamaah issued its completion statement in December 2018",
+      "status": "INCORRECT",
+      "m_true": 0.15,
+      "m_false": 0.75,
+      "m_unknown": 0.1,
+      "source": "The UJSB completion statement cited through The Edge is dated 14 November 2019; it says the transfer was completed on 28 December 2018: https://theedgemalaysia.com/article/tabung-haji-asset-transfer-part-rescue-restructuring-plan-completed-%E2%80%94-urusharta-jamaah",
+      "correction": "Distinguish the transaction completion date, 28 December 2018, from the cited UJSB statement date, 14 November 2019.",
+      "stale_check": "Not applicable; both are historical dates."
+    },
+    {
+      "claim": "Tabung Haji says the 2018 restructuring prevented insolvency",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "Tabung Haji's official 31 July 2026 statement says the restructuring protected it from insolvency: https://www.tabunghaji.gov.my/bm/siaran-media/korporat/penjualan-aset-hampir-rm-10-bilion-selamatkan-th-kerugian-rm-2-6-bilion-turut-ditangani-untuk-pemulihan-seterusnya . The RCI report paras 3.13.19-3.13.29 documents the four rescue options, Cabinet approvals and transfer structure.",
+      "correction": "The card correctly attributes this to Tabung Haji; do not state it as an uncontested causal conclusion. The transaction also transferred an approximately RM10.2 billion valuation gap to the government vehicle.",
+      "stale_check": "Not stale; this verifies what Tabung Haji said in 2026 about a 2018 transaction."
+    },
+    {
+      "claim": "The cited Tabung Haji restructuring statement was issued on 30 July 2026",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.85,
+      "m_unknown": 0.05,
+      "source": "The official Tabung Haji webpage carrying the cited insolvency and asset-transfer claims is dated 31 July 2026: https://www.tabunghaji.gov.my/bm/siaran-media/korporat/penjualan-aset-hampir-rm-10-bilion-selamatkan-th-kerugian-rm-2-6-bilion-turut-ditangani-untuk-pemulihan-seterusnya",
+      "correction": "Change the source date from 30 July to 31 July 2026.",
+      "stale_check": "Not applicable; this is a bibliographic error."
+    },
+    {
+      "claim": "Tabung Haji says it pays on audited accounts since 2022",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "Tabung Haji's official 31 July 2026 response says that since 2022 it has implemented the practice of announcing distributions only after audited financial results: https://www.tabunghaji.gov.my/siaran-media/korporat/laporan-rci-th-patut-rekod-kerugian-1-4-bilion-pada-2017-berbanding-untung-3-4-bilion-mengikut-piawaian-perakaunan-mfrs . Its 18 March 2026 distribution announcement also says the 2025 distribution followed audited accounts: https://www.tabunghaji.gov.my/siaran-media/haji/tabung-haji-catat-prestasi-terbaik-dalam-lapan-tahun",
+      "correction": "The attribution and 'since 2022' wording are supportable. This is an institutional self-report, not an independent audit of every distribution since 2022.",
+      "stale_check": "Checked through 4 September 2026; no later contrary official statement was found."
+    },
+    {
+      "claim": "About 75% of the RCI recommendations had been implemented",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "Tabung Haji's official 7 August 2026 statement says more than 75% of the recommendations had been implemented: https://www.tabunghaji.gov.my/bm/siaran-media/korporat/th-ambil-maklum-teliti-pandangan-dan-cadangan-ngo-berkaitan-dapatan-rci",
+      "correction": "Use 'more than 75%, according to Tabung Haji' and cite 7 August 2026. The analysis's 1 August source date and 'about 75%' wording are less precise than the official statement located.",
+      "stale_check": "Current as of the official 7 August 2026 statement; implementation may have advanced after that date."
+    },
+    {
+      "claim": "The ban on active politicians on Tabung Haji's board is not yet law",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "The RCI recommendation is at para 4.4.1, pp.192-193. The official Dewan Rakyat bills list showed no Tabung Haji amendment bill as of 4 September 2026: https://www.parlimen.gov.my/bills-dewan-rakyat.html?uweb=dr . On 3 September 2026 the TH chief executive said the amendment was still being finalized before Cabinet, Attorney General's Chambers and parliamentary processes: https://www.malaymail.com/news/malaysia/2026/09/03/tabung-haji-act-amendments-in-final-stages-before-parliamentary-tabling-says-th-ceo/233776",
+      "correction": "No correction needed, but date-stamp the claim 'as of 4 September 2026'.",
+      "stale_check": "Highly time-sensitive. It was correct on 4 September 2026 but will become stale if an amendment is tabled and enacted."
+    },
+    {
+      "claim": "The gate held every year; the number fed into it did not",
+      "status": "MISLEADING",
+      "m_true": 0.35,
+      "m_false": 0.45,
+      "m_unknown": 0.2,
+      "source": "RCI report paras 3.11.9 and 3.11.13-3.11.18, pp.93-97, says the accounting presentation made s.22(3)(a) appear satisfied but concludes the 2014-2017 distributions were contrary to s.22. The statutory test has multiple parts in Act 535 s.22: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156",
+      "correction": "Write: 'The statutory test remained, but the commission found that the accounting presentation made one condition appear satisfied and that the 2014-2017 distributions did not comply with s.22.' The original line falsely suggests the legal gate functioned successfully every year.",
+      "stale_check": "Not applicable; this is interpretation of a historical legal finding."
+    },
+    {
+      "claim": "No one has been convicted in connection with the RCI matters as of 4 September 2026",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.05,
+      "m_unknown": 0.8,
+      "source": "Contemporaneous reports show investigations and proposed charges but no comprehensive official court-registry or MACC statement was located that establishes the universal negative. MACC's announced charging status was reported on 2 September 2026: https://www.freemalaysiatoday.com/category/nation/2026/09/02/several-people-to-be-charged-in-tabung-haji-rci-probe",
+      "correction": "Use 'No conviction was identified in the sources reviewed as of 4 September 2026' unless MACC or a comprehensive court search confirms that no person had been convicted in any RCI-linked matter.",
+      "stale_check": "This is highly time-sensitive and was checked only through 4 September 2026."
+    },
+    {
+      "claim": "The former COO's charging was postponed to 24 September 2026 after hospitalization",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "Direct court reporting on 3 September 2026 by Astro Awani: https://www.astroawani.com/berita-malaysia/terkini-bekas-coo-th-masuk-hospital-pendakwaan-ditangguh-ke-24-sept and The Star: https://www.thestar.com.my/news/nation/2026/09/03/former-tabung-haji-coo-misses-court-charge-over-hospitalisation",
+      "correction": "No correction needed for the postponement. Describe the three Penal Code s.165 charges as proposed or pending until they are actually read in court.",
+      "stale_check": "Correct as of 4 September 2026; it is scheduled status and may change on or before 24 September."
+    },
+    {
+      "claim": "A former minister was released from remand without charge as of 4 September 2026",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.95,
+      "m_unknown": 0.03,
+      "source": "Direct court reporting on 2 September 2026 says former minister Jamil Khir Baharom was remanded for five days, with the order running through 6 September: https://www.thestar.com.my/news/nation/2026/09/02/tabung-haji-rci-ex-minister-remanded-for-five-days . The people reported released on 1 September were a former TH chairman and a former Treasury secretary-general: https://www.malaymail.com/news/malaysia/2026/09/01/former-th-chairman-ex-treasury-sec-gen-released-from-macc-custody-in-rci-linked-probe/233557",
+      "correction": "Replace 'a former minister was released' with 'a former chairman and a former Treasury secretary-general were released after remand; the former minister remained under a five-day remand order as of 4 September'.",
+      "stale_check": "The analysis was not made stale by a later event; it was contradicted by the known remand order on its own 4 September 2026 timestamp."
+    },
+    {
+      "claim": "A former chairman and a former Treasury secretary-general were released after a seven-day remand without charge",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.03,
+      "m_unknown": 0.12,
+      "source": "Direct custody-status reporting on 1 September 2026 by Malay Mail: https://www.malaymail.com/news/malaysia/2026/09/01/former-th-chairman-ex-treasury-sec-gen-released-from-macc-custody-in-rci-linked-probe/233557",
+      "correction": "Make clear that this refers to those two former officeholders, not the former religious affairs minister.",
+      "stale_check": "Correct as of 1-4 September 2026; later charging decisions would not alter the fact of that release but would alter any current-status wording."
+    },
+    {
+      "claim": "Press reports of RM2.75 billion appear nowhere in the report and must not be introduced",
+      "status": "INCORRECT",
+      "m_true": 0.02,
+      "m_false": 0.95,
+      "m_unknown": 0.03,
+      "source": "The RCI executive summary para 22(iii) states that the FY2017 4.50% annual hibah and 1.75% haj hibah cost RM2.75 billion, while the detailed tables at paras 3.11.7 and 3.13.7 state RM3.323741 billion/RM3.324 billion. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "Disclose the report's internal inconsistency. Use RM3.324 billion for the detailed-table payout, but do not claim the RM2.75 billion figure is absent from the report.",
+      "stale_check": "Not applicable; this is a source-reading error, not a change over time."
+    },
+    {
+      "claim": "The four 2017 figures - RM1.4 billion, RM4.09 billion, RM4.683 billion and RM10 billion - are different measures and should not be summed",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report paras 3.13.7 and 3.13.11-3.13.12, pp.109-111, identify respectively the MFRS-adjusted FY2017 net loss of RM1.433 billion, post-distribution shortfall of RM4.093 billion, accumulated loss of RM4.683 billion and losses of about RM10 billion at the recovery-plan point. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "No correction needed; the source note correctly distinguishes the measures.",
+      "stale_check": "Not applicable; these are historical accounting measures."
+    },
+    {
+      "claim": "Two asset-liability pairs for 2017 exist: the National Audit Department's RM70.317b versus RM74.409b and PwC's RM70.317b versus RM71.086b before distribution",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.11.11, p.94, gives RM70.317 billion assets and RM74.409 billion liabilities; para 3.13.7, p.109, gives PwC's RM70.317 billion assets and RM71.086 billion liabilities/depositors' fund before distribution. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "No correction needed; identify the methodology and treatment behind each pair if either is used in publication.",
+      "stale_check": "Not applicable; these are historical calculations."
+    },
+    {
+      "claim": "The former chairman's counter-position used RAV figures of RM74.7 billion in assets and a RM373 million surplus in an 11 December 2018 statement",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "RCI report para 3.11.9, p.93, records the former chairman's 11 December 2018 realisable asset value position and the commission's conclusion that this basis was not aligned with s.22. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+      "correction": "This counter-position should be summarized where the accounting dispute is presented, even if the commission rejected RAV as a s.22-compliant basis.",
+      "stale_check": "Not applicable; this is a historical position recorded by the RCI."
+    },
+    {
+      "claim": "An RCI member said Madinah Mohamad was subpoenaed but wanted to appear with the National Audit Department deputy director and that request was refused",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.03,
+      "m_unknown": 0.12,
+      "source": "Direct attribution to RCI member Abdul Rashid Hussain by Free Malaysia Today on 3 September 2026: https://www.freemalaysiatoday.com/category/nation/2026/09/03/former-a-g-was-subpoenaed-says-tabung-haji-rci-member",
+      "correction": "The analysis accurately describes this as the RCI member's statement, but publication should add that Madinah denied on 4 September that she made such a request: https://www.freemalaysiatoday.com/category/nation/2026/09/04/former-a-g-denies-asking-to-testify-before-th-rci-with-another-officer . The underlying disputed event is not independently resolved by these competing statements.",
+      "stale_check": "The 3 September attribution remains true, but the analysis became incomplete when Madinah issued a denial on 4 September 2026."
+    },
+    {
+      "claim": "A special Dewan Rakyat sitting on the RCI report was held on 11 August 2026 and opposition MPs staged a walkout",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.02,
+      "m_unknown": 0.08,
+      "source": "Direct parliamentary-event reporting by The Star on 11 August 2026: https://www.thestar.com.my/news/nation/2026/08/11/opposition-stages-walkout-during-dewan-rakyat-special-sitting-on-th-rci-report and https://www.thestar.com.my/news/nation/2026/08/11/tabung-haji-rci-debate-bersatu-mps-remain-as-opposition-walks-out",
+      "correction": "If used, clarify that most opposition MPs walked out while Bersatu MPs remained; 'the opposition walked out' without that caveat is overbroad.",
+      "stale_check": "Not applicable; this is a fixed parliamentary event."
+    },
+    {
+      "claim": "C4 said the RM4.8 billion discrepancy warranted a review of National Audit Department practices",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.03,
+      "m_unknown": 0.32,
+      "source": "Direct attribution of C4's 30 August 2026 statement by Free Malaysia Today: https://www.freemalaysiatoday.com/category/nation/2026/08/30/rm4-8bil-th-audit-discrepancy-calls-for-anwers-says-watchdog-group",
+      "correction": "Keep this as C4's call, not an adjudicated finding that the audit failed.",
+      "stale_check": "Not applicable; this verifies a dated public position."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The Act asks only that a member be Muslim and a citizen.",
+      "why": "Section 6(2) contains those two positive qualifications, but s.6(3) also contains bankruptcy, criminal-conviction and incapacity disqualifications. The defensible governance point is that the Act lacked specific competence and expertise criteria.",
+      "primary_source": "Act 535, s.6(2)-(3): https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156"
+    },
+    {
+      "sin": "UNDERCLAIM",
+      "claim": "It moved its write-down trigger twice that year, from a 70% fall to 85%, then 90%.",
+      "why": "The sentence omits removal of the more-than-24-month prolonged-decline criterion, understating the full policy relaxation, while also describing percentage below cost imprecisely as a generic fall in value.",
+      "primary_source": "RCI report paras 3.9.8 and 3.13.8-3.13.9, pp.77 and 110: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "The impairment charge shrank from RM1,313 million to RM1 million.",
+      "why": "The report compares impairment effects under successive policies and says the final policy enabled RM1 million to be recorded. The sentence can imply that RM1.313 billion was actually booked and then reversed.",
+      "primary_source": "RCI report paras 3.13.8-3.13.9, p.110: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "On page 199 the commission asked that its report be made public.",
+      "why": "The actual wording says the commission hoped the government would consider making public whichever parts were suitable. It is neither an unqualified request nor a recommendation to publish the entire report.",
+      "primary_source": "RCI report para 4.6, printed p.199: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Putrajaya sealed it for almost four years, citing depositor panic. Those it protected were those kept in the dark.",
+      "why": "The dates and Anwar's stated panic rationale are supportable, but 'sealed' collapses classification and successive non-publication into a loaded action by a single actor, while the final sentence presents an untestable causal judgment as fact.",
+      "primary_source": "Official publication: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022 ; Anwar's rationale: https://bernama.com/bm/wilayah/news.php?id=2585316"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "A bank rewrites its bad-loan rule twice in a year, pays a dividend on the result, then locks the inspector's report away so customers will not worry.",
+      "why": "Tabung Haji is a statutory body, not a bank; the policy concerned investment impairment and included a duration criterion; and the report's publication wording was narrower than the analogy suggests. The analogy compounds several simplifications into a stronger narrative.",
+      "primary_source": "Act 535: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156 ; RCI report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "The gate held every year; the number fed into it did not.",
+      "why": "The commission did not find that the legal gate successfully held; it found that the presentation made s.22(3)(a) appear satisfied and that the 2014-2017 distributions contravened s.22. The metaphor also omits the other statutory conditions.",
+      "primary_source": "RCI report paras 3.11.9 and 3.11.13-3.11.18; Act 535 s.22: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Press reports of RM2.75 billion appear nowhere in the report and must not be introduced.",
+      "why": "The number appears in the RCI executive summary itself, even though it conflicts with the report's detailed RM3.324 billion tables. The categorical source assertion was not checked against the whole report.",
+      "primary_source": "RCI executive summary para 22(iii), compared with paras 3.11.7 and 3.13.7: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "A former minister was released from remand without charge as of 4 Sep.",
+      "why": "Contemporaneous court reporting says the former minister remained subject to a five-day remand order through 6 September. The analysis appears to have confused him with a former TH chairman and former Treasury secretary-general who were released.",
+      "primary_source": "https://www.thestar.com.my/news/nation/2026/09/02/tabung-haji-rci-ex-minister-remanded-for-five-days and https://www.malaymail.com/news/malaysia/2026/09/01/former-th-chairman-ex-treasury-sec-gen-released-from-macc-custody-in-rci-linked-probe/233557"
+    }
+  ],
+  "omitted_facts": [
+    "The RCI contains its own hibah-total conflict: executive summary para 22(iii) says RM2.75 billion, while detailed paras 3.11.7 and 3.13.7 say RM3.323741 billion/RM3.324 billion. The detailed tables are the better-supported basis, but publication must disclose the inconsistency. Official report: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "The initial impairment policy included a more-than-24-month prolonged-decline criterion; the later 85% and 90% policies show no prolonged criterion. RCI paras 3.13.8-3.13.9, p.110: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "Section 6(3) adds disqualifications for bankruptcy, a qualifying criminal conviction and incapacity; s.6(2)'s Muslim-and-citizen language is not the complete eligibility regime. Act 535: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156",
+    "Section 22 has more than the asset-liability test: it requires a reserve fund, ministerial approval and a Treasury-approved reserve ratio under s.22(3)(b). Act 535: https://world.moleg.go.kr/cms/commonDown.do?DLD_CFM_NO=YKMRB87WSZLSYEMC20XK&FL_SEQ=135156",
+    "The RCI's exact publication language was limited: it hoped the government would consider releasing suitable parts, not necessarily the entire report. RCI para 4.6, p.199: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "PwC's series distinguishes two phases: distributions turned pre-distribution surpluses into deficits in 2014 and 2015, while deficits already existed before distribution in 2016 and 2017. RCI para 3.13.7, p.109: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "The RCI documents four recovery options before the SPV route was chosen, Cabinet agreement in principle on 30 November 2018, approval on 7 December, and execution of the asset-transfer agreement on 27 December 2018. RCI paras 3.13.19-3.13.29: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "Madinah's full counter-position is that the National Audit Department statutory audit and PwC review had different mandates, scopes, objectives and methodologies; quoting only 'apples and oranges' understates her substantive defense: https://www.thestar.com.my/news/nation/2026/08/25/different-audit-methods-behind-rm48bil-th-gap-says-former-auditor-general",
+    "The former chairman's RAV counter-position, recorded in the RCI, asserted RM74.7 billion of assets and a RM373 million surplus; the commission rejected RAV as inconsistent with s.22. RCI para 3.11.9, p.93: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "The report says inquiry proceedings were secret and participants signed secrecy declarations under the Commissions of Enquiry Act and Official Secrets Act; this does not by itself prove the later report-publication decision or motive. RCI para 1.9: https://www.islam.gov.my/ms/pengumuman/5085-laporan-suruhanjaya-siasatan-diraja-rci-tabung-haji-ini-disediakan-oleh-suruhanjaya-yang-dilantik-oleh-kdymm-seri-paduka-banginda-yang-di-pertuan-agong-pada-20-januari-2022",
+    "Madinah denied on 4 September 2026 that she asked to testify together with another officer, directly contesting the RCI member's 3 September account. Both positions should be carried unless documents resolve the dispute: https://www.freemalaysiatoday.com/category/nation/2026/09/04/former-a-g-denies-asking-to-testify-before-th-rci-with-another-officer",
+    "As of 4 September 2026, former minister Jamil Khir remained under a five-day remand order through 6 September; the people released earlier were a former TH chairman and former Treasury secretary-general: https://www.thestar.com.my/news/nation/2026/09/02/tabung-haji-rci-ex-minister-remanded-for-five-days and https://www.malaymail.com/news/malaysia/2026/09/01/former-th-chairman-ex-treasury-sec-gen-released-from-macc-custody-in-rci-linked-probe/233557"
+  ],
+  "source_assessment": "The source list names 14 labeled items: five P-items and nine S-items, although some P-items are statements accessed through the same news stories and therefore are not independent publications. The analysis has a strong documentary core: the RCI report, Act 535, Tabung Haji statements and UJSB's stated transaction figures. It includes a meaningful countervoice from the former Auditor-General and acknowledges Tabung Haji's defense of the restructuring. Its source range extends to government, a statutory body, a government-owned rescue vehicle, Parliament, a former audit official, civil society and several Malaysian newsrooms. However, the cards remain dominated by the RCI and government-linked institutions; they lack an independent accounting-standard expert, depositor or community voice, academic analysis, and a developed opposition response. Some supposedly primary items are reached through news reports, source dates are misstated, and the cited Act reprint is updated only to 2011. The RM2.75 billion contradiction and Madinah's 4 September denial show that the source review was incomplete.",
+  "overall_assessment": "The central financial finding is reliable: the RCI's detailed tables support RM3.412 billion reported profit, RM1.433 billion MFRS-adjusted loss, a RM3.324 billion 2017 distribution, the impairment-policy changes and the post-distribution deficit series. Most governance and recovery figures also trace correctly to the report. Publication is not safe without revisions, however. The draft overstates s.6 eligibility, omits part of the impairment test, turns modeled impairment effects into a shrinking booked charge, exaggerates the commission's limited publication language, simplifies s.22 into a single gate, and uses an analogy that misdescribes both the institution and the assets. Its provenance also contains two clear errors: RM2.75 billion does appear in the RCI executive summary, and the former minister had not been released as of 4 September. Correct those points, disclose the report's internal RM2.75 billion versus RM3.324 billion inconsistency, preserve attribution to the RCI and institutional speakers, and date-stamp all live legal and enforcement claims."
+}
