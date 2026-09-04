@@ -10,114 +10,96 @@ with what guardrails. Nothing here is published._
 
 ## Data-freshness
 
-- **Raw queue** (`issue-queue.json`), **state**, and **health** rescanned
-  **2026-08-03 09:15 UTC** (queue 1134, 509 events, all five sources
-  healthy, all six streams ok).
-- **Silence-watch** rebuilt 2026-08-03 from that queue, now with two
-  tracks (fresh / accumulated).
-- **Curated develop list** refreshed the same day. The previous edition was
-  pinned to the 2026-06-05 scan — a two-month gap during which the radar
-  scanned roughly 700 times and nothing was curated.
+- **Raw queue**, **state**, and **health** from the CI scan at
+  **2026-09-03 22:24 UTC** (queue 1,122; 499 events; five sources healthy;
+  six streams ok). A local rescan at 23:51 UTC reproduced it (queue
+  1,128; prediction pipeline skipped on a missing `lifelines` build, CI
+  unaffected).
+- **Silence-watch** as committed by CI from the same scan.
+- **Curated develop list** refreshed 2026-09-04. The previous edition was
+  pinned to 2026-08-03.
 - **Latest published issue:** `2009` (sourceDate 2026-06-24). Nothing has
-  shipped in six weeks.
+  shipped in ten weeks. Two briefs are complete and waiting on approval.
 
-## Why the develop list had gone stale
-
-Not neglect alone — two mechanical faults in `build-silence-watch.py`, both
-fixed in this change and covered by tests in
-`radar/tests/test_silence_watch_builder.py`:
-
-1. The already-covered filter compared each candidate against the **union**
-   of every published issue's vocabulary. Three common words were enough to
-   suppress a story. It now compares per issue and discounts corpus-common
-   words. Four of this cycle's strongest picks were invisible before the fix.
-2. Every ranking was **age-weighted** (up to 2x), so nothing recent could
-   reach the top. A separate fresh-signal track now ranks the last 7 days
-   without age weighting.
-
-Calendar placeholders are filtered at source instead of being skipped by
-hand each cycle.
-
-## Status reconciliation (what shipped since the last curation)
+## Status reconciliation (since the 3 Aug curation)
 
 | Prior pick | Topic | Now |
 |------------|-------|-----|
-| A3 | ADMP rules exempt the state's own profiling | **Published `2008`** |
-| — | Mossad suspects named, no espionage conviction | **Published `2009`** |
-| A1 | MyIMMs outage / NIISe delay | **Still open** — merged into this cycle's A2 |
-| A2 | AG vs the Bar on DNAA standing | **Still open** — carry-over |
-| B1-B4 | Lotteries, Aeroline/APAD, PharmD, JAS | **Still open** — carry-over |
+| A1 | Tabung Haji RCI restatement | **Brief complete 9 Aug, ID 2010 reserved, awaiting approval.** Three September developments to fold in. |
+| A2 | Border system (MyIMMs / insider breach) | Not briefed. Carried to Tier B1. |
+| A3 | 2,001 factory fires | Not briefed. Carried to Tier B2; new Ipoh hook 1 Sep. |
+| B1–B4 | Langkawi, diesel, MAHB, Sabah transfers | Still open. |
+| — | **Sarawak haze / dropped Transboundary Haze Act** | **New. Briefed this cycle, ID 2011 reserved, awaiting approval.** |
 
 ## Recommended development order (next three publish slots)
 
-Notifications fire Tue/Thu 08:00 and Sat 09:00 MYT. Today is Monday
-2026-08-03, so the slots are **Tue 4 Aug, Thu 6 Aug, Sat 8 Aug**. Six weeks
-without a publish means the first slot should be the strongest pick, not
-the easiest one.
+Notifications fire Tue/Thu 08:00 and Sat 09:00 MYT. Today is Friday
+4 September 2026 (MYT), so the slots are **Sat 5 Sep, Tue 8 Sep, Thu 10
+Sep**. Ten weeks without a publish means the first slot must be the
+freshest story, not the one that has waited longest.
 
-1. **A1 — Tabung Haji RCI restatement.** Highest-leverage fresh story and
-   the cleanest primary-source path (commission report, audited accounts,
-   Act 535). Lead on the restatement mechanism — a distribution declared on
-   a profit the commission says was a loss — not on the misconduct
-   allegation mainstream coverage already carries. Governance / Economic
-   lens. Two hard guardrails: keep the FY2017 restatement separate from the
-   RM1.4b write-down disclosed in the 2025 annual report (unpublished draft
-   `1151` covers the latter; conflating them is the most likely accuracy
-   failure in this issue), and keep the critique on fund governance, never
-   on the pilgrimage or on depositors as a community.
-2. **A2 — the border system, breached inside and fragile outside.** Merges
-   the carried-over MyIMMs continuity story with the 29 July arrests.
-   Technology / Governance / Security — the lens the 2000-series is missing
-   entirely. Pre-charge, so count the detained without identifying them and
-   treat the RM2.4m as an official estimate, not a proven loss.
-3. **A3 — 2,001 factory fires, RM4.21b in losses.** Denominator-rich, zero
-   3R load, restores the Environmental slot. Get the year-by-year split
-   before publishing; a five-year lump sum without annual denominators is
-   the inert-statistic failure the language standard warns about.
+1. **A1 — Sarawak haze and the law both governments dropped.** Live this
+   week, Environmental lens the 2000-series has never carried, zero 3R
+   load, and a bipartisan legislative record (PH proposed and later
+   dropped it; PN shelved it in between) that keeps the anger on process.
+   The brief is complete with 53 sources, 14 primary. Two hard guardrails:
+   (a) the AGC's evidentiary objection and Singapore's zero-conviction
+   record must sit on a fact card as the honest counter-argument, and
+   (b) no card may imply Malaysian-linked plantations caused the 2026
+   fires; the 2019 sealing is precedent, not evidence. Before Stage 1,
+   close verification gaps 1, 2 and 4 in the brief (treaty Article 9
+   wording, Hansard for the 2020 and 2023 statements, the DOE API-to-PM2.5
+   breakpoint table). Update the API readings to the latest DOE bulletin
+   at Phase 8; the story will still be live.
+2. **A2 — Tabung Haji RCI restatement.** Brief already complete; the only
+   cost is a PERIOD/CONTEXT refresh for the 1 Sep MACC detention, the 3 Sep
+   COO charge and the 30 Aug C4 audit-discrepancy call. Governance /
+   Economic / Legal. Same guardrails as the 3 Aug edition.
+3. **A3 — Felda's decade-late audit.** Needs a full Phase 1. Governance /
+   Economic / Historical. MEDIUM ethnic risk on framing; the 2019 White
+   Paper and AG's Reports are the spine.
 
-This ordering keeps lens diversity across the three slots (Governance →
-Technology → Environmental) and puts the issue with the most demanding
-verification first, while the week still has room to hold it.
-
-If A1 slips on verification, promote **B1** (Langkawi council liability,
-Legal) rather than reordering A2 and A3 — it is the only other pick that
-needs no new lens research.
+This ordering gives Environmental → Governance → Governance/Historical
+across the three slots. If A3 slips on research, promote **B3 (KWAN
+Bill)**, which is a statute story with primary sources already public,
+rather than reordering A1 and A2.
 
 ## Stage 5 escalation calls
 
-Per CLAUDE.md and ADR-0004, re-enable the Grok contrarian stress-test when
-a brief marks Religion / Ethnic / Royalty risk HIGH+, marks Political risk
-CRITICAL with a sharp take, or when Stage 3 `source_diversity_estimate` is
-below 0.4.
+Per CLAUDE.md and ADR-0004, re-enable the Grok contrarian stress-test
+when a brief marks Religion / Ethnic / Royalty risk HIGH+, marks
+Political risk CRITICAL with a sharp take, or when Stage 3
+`source_diversity_estimate` is below 0.4.
 
-- **A1 (Tabung Haji):** religious risk assessed MEDIUM, not HIGH — the
-  subject is a statutory fund's accounts, not belief. Stage 5 **not**
-  required on the 3R trigger, but re-check after Phase 1: if the brief's
-  sources skew to one side of the political divide, the source-diversity
-  trigger will fire on its own.
-- **A2, A3, B1:** no escalation trigger.
-- **Pastor Koh (Skip)** and **the lotteries carry-over:** both would fire
-  the religious trigger. Neither enters the pipeline without Stage 5
-  re-enabled.
+- **A1 (haze):** Religious LOW, Ethnic LOW, Political MEDIUM. **Not
+  required.** Watch Stage 3's source-diversity score; the legislative
+  history leans on three outlets (FMT, Malay Mail, Malaysian Bar) until
+  Hansard is pulled.
+- **A2 (Tabung Haji):** Religious MEDIUM. Not required on the 3R trigger;
+  same caveat as before on source skew.
+- **A3 (Felda):** Ethnic MEDIUM. Not required at brief stage; re-assess
+  once written, because the "not race or religion" framing is already
+  being contested publicly.
+- **Preaching tauliah (Skip)** would fire the religious trigger. Does not
+  enter the pipeline without Stage 5.
 
-## Before drafting briefs
+## Before drafting Stage 1 for A1
 
-- Every figure in the curated list is a **radar signal, not a verified
-  number** — RM1.4b, RM2.4m, 2,001 fires, RM4.21b, RM2.5b monthly. Phase 1
-  traces each to a primary source or the claim does not reach a card.
-- The A2 arrests are an open investigation. No naming without charges.
-- The coverage filter is monolingual, so Malay and English versions of the
-  same story both surface. Dedupe by hand at Phase 0.
+- Six contradictions are logged in the brief (Indonesian July burn area
+  ×3; asthma counts KKM vs Al Jazeera; 2013 cost RM1.74b vs RM1.57b; AATHP
+  entry-into-force date; 2019 sealed plantations named vs denied; who is
+  responsible for 2026 fires). Each has a resolution rule. Follow it.
+- The reframe candidate that re-anchors API 500 against the MAAQS PM2.5
+  limit needs gap 4 closed first. Do not publish the multiple from memory.
+- Language: the brief already avoids em-dashes in card-bound text; keep
+  "Transboundary Haze Act" as the single term for the bill across all
+  cards (no "haze law" / "the Act" / "the bill" variation).
 
 ## Operational gap to close
 
-`radar/output/malaysia-impact-watch.{json,md}` do not exist. The daily
-Malaysia-impact pass is gated on `ANTHROPIC_API_KEY` and exits cleanly when
-it is absent, so the global-to-Malaysia transmission track has been dark
-while `foreign-events.json` keeps filling. Two foreign picks this cycle (US
-transhipment probes in Vietnam, US withholding WHO/Gavi funding) are
-therefore unscored. Either set the secret or drop the daily workflow — a
-pass that silently produces nothing is worse than no pass.
+`radar/output/malaysia-impact-watch.{json,md}` still do not exist; the
+daily impact pass exits silently without `ANTHROPIC_API_KEY`. Unchanged
+since 3 Aug. Either set the secret or disable the workflow.
 
-_Refreshed 2026-08-03 as the editorial-review companion to the same-day
-radar scan; supersede on the next curator refresh._
+_Refreshed 2026-09-04 as the editorial-review companion to the
+2026-09-03 22:24 UTC scan; supersede on the next curator refresh._
