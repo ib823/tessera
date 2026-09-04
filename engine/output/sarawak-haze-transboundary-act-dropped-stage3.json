@@ -1,0 +1,542 @@
+{
+"factual_accuracy_score": 62,
+"source_diversity_estimate": 0.54,
+"claims": [
+{
+"claim": "Serian hit an API of 475 on 31 August 2026.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.02,
+"m_unknown": 0.3,
+"source": "Sarawak Public Communication Unit (UKAS), 31 August 2026, reporting Serian at 475: https://ukas.sarawak.gov.my/web/subpage/news_view/47646",
+"correction": "The date and reading are supported, but the primary publication does not establish that 475 was the episode peak or the exact 10 a.m. timestamp used elsewhere in the analysis.",
+"stale_check": "Not stale; the analysis was dated 4 September 2026, four days after the reading."
+},
+{
+"claim": "Serian was at 475 at 10 a.m. and 463 at noon on 31 August 2026, and 475 was the episode peak.",
+"status": "UNVERIFIED",
+"m_true": 0.25,
+"m_false": 0.05,
+"m_unknown": 0.7,
+"source": "No qualifying archived DOE/APIMS primary record establishing both timestamps or the episode maximum was located. The closest official contemporaneous source confirms only the 475 reading: UKAS, 31 August 2026, https://ukas.sarawak.gov.my/web/subpage/news_view/47646",
+"correction": "Retain the 475 reading and date, but remove the exact times and the assertion that it was the episode peak unless an archived APIMS record is obtained.",
+"stale_check": "Not a stale-data issue; this is an archival-source gap."
+},
+{
+"claim": "Smoke from Kalimantan fires pushed Serian to an Air Pollutant Index of 475.",
+"status": "MISLEADING",
+"m_true": 0.45,
+"m_false": 0.1,
+"m_unknown": 0.45,
+"source": "UKAS, 31 August 2026, reports 1,180 Kalimantan hotspots on 29 August and says winds carried haze from Kalimantan, but also records nine Sarawak hotspots and does not quantify source attribution: https://ukas.sarawak.gov.my/web/subpage/news_view/47646. NADMA, 10 August 2026, also noted transboundary haze alongside local open burning: https://www.nadma.gov.my/bm/media-2/berita/6861-sarawak-sedia-pertimbang-operasi-pembenihan-awan",
+"correction": "Write that regional satellite and wind analysis indicated a substantial Kalimantan contribution. Do not present Kalimantan as the sole, quantitatively proven cause of the 475 reading.",
+"stale_check": "Not stale; both sources predate the analysis and describe the same episode."
+},
+{
+"claim": "This was the region's worst haze episode since 2015.",
+"status": "UNVERIFIED",
+"m_true": 0.15,
+"m_false": 0.1,
+"m_unknown": 0.75,
+"source": "No primary source defining the region, metric, duration, or comparative ranking was located. The ASEAN Specialised Meteorological Centre documented the current alert and haze conditions but did not rank the episode as the worst since 2015: https://asmc.asean.org/asmc-alerts/",
+"correction": "Attribute the characterization to Al Jazeera or remove it. An official comparison needs a defined geography and measure such as peak API, affected area, duration, or aerosol loading.",
+"stale_check": "Not stale as of 4 September 2026; the problem is lack of a qualifying comparative primary source."
+},
+{
+"claim": "591 Sarawak schools shut because of the haze.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.02,
+"m_unknown": 0.3,
+"source": "Radio Televisyen Malaysia, an official government broadcaster, 20 August 2026, reported 509 primary and 82 secondary schools closed, totaling 591: https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/591-sekolah-di-sarawak-ditutup-akibat-jerebu/",
+"correction": "Specify that the announced closures covered 20 and 21 August 2026.",
+"stale_check": "Not stale; this is a dated closure total for 20-21 August."
+},
+{
+"claim": "The closures affected 197,323 pupils.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.02,
+"m_unknown": 0.3,
+"source": "Radio Televisyen Malaysia, 20 August 2026, reported 107,590 primary and 89,733 secondary pupils, totaling 197,323: https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/591-sekolah-di-sarawak-ditutup-akibat-jerebu/",
+"correction": "None to the total; attach it to the 20-21 August closure period.",
+"stale_check": "Not stale; it is a historical count tied to the announced closures."
+},
+{
+"claim": "Sarawak shut 591 schools, 197,323 pupils, from 21 August.",
+"status": "INCORRECT",
+"m_true": 0.05,
+"m_false": 0.9,
+"m_unknown": 0.05,
+"source": "Radio Televisyen Malaysia, 20 August 2026, states that the 591 schools were ordered closed immediately for Thursday, 20 August, and Friday, 21 August: https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/591-sekolah-di-sarawak-ditutup-akibat-jerebu/",
+"correction": "Change 'from 21 August' to 'on 20 and 21 August'. The noun phrase should also say the closures affected 197,323 pupils, not that pupils themselves were shut.",
+"stale_check": "Not stale; the original analysis misstated the start date."
+},
+{
+"claim": "Kuching recorded an API of 407 the next morning.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.02,
+"m_unknown": 0.3,
+"source": "Radio Televisyen Malaysia, 1 September 2026, reported Kuching at 407 and Serian at 408 at 8 a.m.: https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/jerebu-enam-kawasan-di-sarawak-catat-ipu-berbahaya-setakat-8-pagi/",
+"correction": "For precision, state 'Kuching recorded 407 at 8 a.m. on 1 September; Serian was 408 at the same hour.'",
+"stale_check": "Not stale; this is a time-specific reading from 1 September 2026."
+},
+{
+"claim": "Anything above 300 is hazardous.",
+"status": "VERIFIED",
+"m_true": 0.9,
+"m_false": 0.02,
+"m_unknown": 0.08,
+"source": "Malaysia's Department of Environment APIMS classification identifies API readings above 300 as hazardous; the official RTM report applies that classification to the 1 September readings: https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/jerebu-enam-kawasan-di-sarawak-catat-ipu-berbahaya-setakat-8-pagi/",
+"correction": "Use 'API above 300 is classified as hazardous' to make clear this is the Malaysian API category.",
+"stale_check": "No relevant change was found by the analysis date."
+},
+{
+"claim": "Schools close at an API of 200.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.05,
+"m_unknown": 0.27,
+"source": "Sarawak State Education Department, 1 September 2026, said schools are closed when API reaches 200 or above: https://jpnsarawak.moe.gov.my/makluman/berita-semasa/sekolah-ditutup-jika-ipu-cecah-200-atau-lebih-pengarah-pendidikan-sarawak",
+"correction": "State the operational rule precisely as '200 or above'; closure and reopening also depend on official readings and education-department instructions.",
+"stale_check": "Not stale; this was the rule stated during the same episode."
+},
+{
+"claim": "Health Ministry surveillance recorded upper respiratory tract infections increasing from 1,637 in epidemiological week 32 to 3,674 in week 33.",
+"status": "VERIFIED",
+"m_true": 0.82,
+"m_false": 0.02,
+"m_unknown": 0.16,
+"source": "Ministry of Health Malaysia statement, 27 August 2026, reported through its official account, gives 1,637 and 3,674: https://www.facebook.com/kementeriankesihatanmalaysia/photos/980463384115665/. Bernama's report of the same ministry statement provides the surveillance context: https://bernama.com/bm/am/news.php?id=2599841",
+"correction": "Keep the figures but identify them as surveillance counts from 58 sentinel clinics and 18 hospital outpatient departments, not a complete census of all cases in Sarawak.",
+"stale_check": "Not stale; these are fixed week-32 and week-33 surveillance totals."
+},
+{
+"claim": "Health Ministry sentinel clinics logged the 1,637-to-3,674 increase.",
+"status": "MISLEADING",
+"m_true": 0.48,
+"m_false": 0.07,
+"m_unknown": 0.45,
+"source": "The Ministry of Health statement, as reproduced by Bernama on 27 August 2026, says the surveillance network comprised 58 sentinel clinics plus 18 hospital outpatient departments: https://bernama.com/bm/am/news.php?id=2599841",
+"correction": "Say 'the Health Ministry's sentinel surveillance network' rather than attributing the total only to clinics.",
+"stale_check": "Not stale; the issue is incomplete description of the reporting network."
+},
+{
+"claim": "KKM recorded asthma cases increasing from 61 to 158 between epidemiological weeks 32 and 33.",
+"status": "INCORRECT",
+"m_true": 0.03,
+"m_false": 0.95,
+"m_unknown": 0.02,
+"source": "The Health Minister's 23 August 2026 statement reported asthma cases rising from 61 to 219; 158 was the absolute increase, not the endpoint: https://www.kosmo.com.my/2026/08/23/jerebu-kes-asma-meningkat-259-peratus/",
+"correction": "Replace '61 to 158' with '61 to 219, an increase of 158 cases'. The associated description of a 259 percent rise is also arithmetically closer to the percentage increase, not the final count.",
+"stale_check": "Not stale; this is a transcription or interpretation error in the source note."
+},
+{
+"claim": "Al Jazeera attributed 1,811 asthma cases for 23-29 August to the Health Ministry.",
+"status": "UNVERIFIED",
+"m_true": 0.05,
+"m_false": 0.05,
+"m_unknown": 0.9,
+"source": "No qualifying Health Ministry primary dataset or statement for the 1,811 figure was located. The ministry-linked figures located for epidemiological weeks 32 and 33 were 61 and 219: https://www.kosmo.com.my/2026/08/23/jerebu-kes-asma-meningkat-259-peratus/",
+"correction": "Do not repeat the 1,811 figure as a ministry statistic without the underlying ministry release and an explanation of its period, geography, and case definition.",
+"stale_check": "Not stale; the source chain remains unverified as of 4 September 2026."
+},
+{
+"claim": "Cabinet agreed in principle to a Transboundary Haze Act on 12 February 2020.",
+"status": "VERIFIED",
+"m_true": 0.65,
+"m_false": 0.02,
+"m_unknown": 0.33,
+"source": "Dewan Rakyat Hansard, 7 June 2023, records former minister Yeo Bee Yin stating that the Pakatan Harapan Cabinet discussed the Academy of Sciences Malaysia study and agreed on 12 February 2020 to introduce the Act: https://www.cljlaw.com/files/hansard/DR/pdf/DR-07062023.pdf",
+"correction": "Attribute the exact date to Yeo Bee Yin's on-record retrospective account unless Cabinet minutes or a contemporaneous Cabinet statement are obtained.",
+"stale_check": "Not stale; later official answers concern whether to proceed, not whether the 2020 discussion occurred."
+},
+{
+"claim": "The proposed Act would reach Malaysian individuals or companies causing haze regardless of where burning occurs.",
+"status": "UNVERIFIED",
+"m_true": 0.25,
+"m_false": 0.05,
+"m_unknown": 0.7,
+"source": "The Dewan Rakyat Hansard of 7 June 2023 records Yeo Bee Yin describing the intended reach in those terms, but no bill text or enacted provision exists against which the exact legal scope can be checked: https://www.cljlaw.com/files/hansard/DR/pdf/DR-07062023.pdf",
+"correction": "Present this as Yeo's description of the proposal, not as the settled scope of a drafted or enacted statute.",
+"stale_check": "Not stale; no enacted Malaysian Transboundary Haze Act was found by 4 September 2026."
+},
+{
+"claim": "Perikatan Nasional shelved the proposed Act that August.",
+"status": "MISLEADING",
+"m_true": 0.4,
+"m_false": 0.45,
+"m_unknown": 0.15,
+"source": "Dewan Rakyat Hansard, 3 August 2020, states that the Cabinet decided on 24 July 2020 not to proceed with the proposed legislation: https://repositori.parlimen.gov.my/bitstream/123456789/4847/13/DR-03082020.pdf",
+"correction": "Write 'The Perikatan Nasional Cabinet decided on 24 July 2020 not to proceed; the decision was announced in Parliament on 3 August.' Calling it an August shelving blurs both the decision date and the stronger official wording.",
+"stale_check": "Not stale; the primary parliamentary record fixes the date and wording."
+},
+{
+"claim": "In 2020 the government said prosecution would require landowner information, maps and coordinates that source countries might not provide because of security and sovereignty concerns.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.02,
+"m_unknown": 0.3,
+"source": "Dewan Rakyat Hansard, 3 August 2020, gives those evidentiary needs and says source countries might not share the information on security and sovereignty grounds: https://repositori.parlimen.gov.my/bitstream/123456789/4847/13/DR-03082020.pdf",
+"correction": "Attribute this as the government's stated evidentiary and cooperation concern; it was not a finding that every neighboring state always withholds such records.",
+"stale_check": "Not stale; this accurately describes the 2020 government's stated rationale."
+},
+{
+"claim": "The government dropped the proposed Transboundary Haze Pollution Bill on 6 November 2023.",
+"status": "VERIFIED",
+"m_true": 0.7,
+"m_false": 0.02,
+"m_unknown": 0.28,
+"source": "Ministry of Natural Resources, Environment and Climate Change parliamentary answer, Dewan Rakyat question 33, 6 November 2023, states that the government would not continue the proposed bill: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Phrase it as the government's position on the proposal on that date, not as an irreversible legal bar to a future bill.",
+"stale_check": "A material qualification appeared three days later: on 9 November 2023 the ministry said it did not reject future proposals, including the need for such an Act: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2442"
+},
+{
+"claim": "A Pakatan Harapan-led Cabinet dropped the Act in 2023.",
+"status": "UNVERIFIED",
+"m_true": 0.2,
+"m_false": 0.05,
+"m_unknown": 0.75,
+"source": "The official 6 November 2023 record is a ministry answer stating the government's position; it does not identify a Cabinet decision or provide a Cabinet decision date: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Write 'The Pakatan Harapan-led unity government's environment ministry said in Parliament in November 2023 that the government would not continue the proposal.' Do not label it a Cabinet decision without Cabinet-level evidence.",
+"stale_check": "Not stale; this is an attribution problem in the 2023 record."
+},
+{
+"claim": "The proposed Act was dropped for good on 6 November 2023.",
+"status": "INCORRECT",
+"m_true": 0.05,
+"m_false": 0.9,
+"m_unknown": 0.05,
+"source": "Ministry of Natural Resources, Environment and Climate Change parliamentary answer, 9 November 2023, says the government did not reject any proposal, including the possible need for a Transboundary Haze Pollution Act, subject to effectiveness and feasibility: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2442",
+"correction": "Delete 'for good'. The 6 November position was not framed as permanently foreclosing legislation, and the ministry expressly kept the option open on 9 November.",
+"stale_check": "The contrary qualification was issued only three days after the 6 November answer and long before the 2026 analysis; this is not a post-publication change."
+},
+{
+"claim": "The 6 November 2023 answer to Tan Hong Pin was a written reply.",
+"status": "INCORRECT",
+"m_true": 0.01,
+"m_false": 0.98,
+"m_unknown": 0.01,
+"source": "The ministry's official parliamentary-answer metadata labels question 33 on 6 November 2023 as 'Lisan' (oral), not written: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Call it an oral parliamentary answer or simply an official parliamentary answer.",
+"stale_check": "Not stale; the official record type is fixed."
+},
+{
+"claim": "The 2023 answer cited the Attorney General's Chambers and said prosecution would need maps, coordinates and landowner or operating-company records.",
+"status": "VERIFIED",
+"m_true": 0.7,
+"m_false": 0.02,
+"m_unknown": 0.28,
+"source": "Ministry of Natural Resources, Environment and Climate Change parliamentary answer, 6 November 2023, lists location maps, coordinates, landowner information and operating-company information among the evidence needed, following consultation with the Attorney General's Chambers and legal experts: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "None to the list; add that the answer also cited confidentiality, security, sovereignty and corporate-ownership complications.",
+"stale_check": "Not stale; it accurately reports the 2023 rationale."
+},
+{
+"claim": "Those records are kept secret by a neighbour.",
+"status": "MISLEADING",
+"m_true": 0.4,
+"m_false": 0.15,
+"m_unknown": 0.45,
+"source": "The 6 November 2023 ministry answer says obtaining information from another country may implicate confidentiality, security and sovereignty and can be difficult; it does not accuse a named neighbor of categorically keeping the records secret: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Replace the rhetorical phrase with the ministry's narrower claim: necessary evidence may be difficult to obtain because of confidentiality, security and sovereignty constraints.",
+"stale_check": "Not stale; the analysis overstates the contemporaneous official wording."
+},
+{
+"claim": "Singapore's Transboundary Haze Pollution Act dates from 2014.",
+"status": "VERIFIED",
+"m_true": 0.98,
+"m_false": 0.01,
+"m_unknown": 0.01,
+"source": "Singapore Statutes Online, Transboundary Haze Pollution Act 2014, enacted in 2014 and commenced 25 September 2014: https://sso.agc.gov.sg/Act/THPA2014?ViewType=Pdf",
+"correction": "None.",
+"stale_check": "Not stale; this is the statute's fixed enactment history."
+},
+{
+"claim": "Singapore's 2014 haze law has extraterritorial reach.",
+"status": "VERIFIED",
+"m_true": 0.98,
+"m_false": 0.01,
+"m_unknown": 0.01,
+"source": "Section 4 of Singapore's Transboundary Haze Pollution Act 2014 applies the Act to conduct or things outside Singapore that cause or contribute to haze pollution in Singapore: https://sso.agc.gov.sg/Act/THPA2014?ViewType=Pdf",
+"correction": "For legal precision, cite section 4 and avoid implying that extraterritorial reach eliminates evidentiary or jurisdictional obstacles.",
+"stale_check": "Not stale; the cited statutory scope remained in force at the analysis date."
+},
+{
+"claim": "Singapore's extraterritorial haze law has never produced a conviction as of September 2026.",
+"status": "UNVERIFIED",
+"m_true": 0.25,
+"m_false": 0.05,
+"m_unknown": 0.7,
+"source": "No current official enforcement register or parliamentary answer conclusively establishing the absence of every conviction through September 2026 was located. The latest directly relevant official history located says NEA issued notices to six Indonesian companies in 2015, closed two cases after responses and still had four open in 2021: Singapore Ministry of Sustainability and the Environment, 13 September 2021, https://www.mse.gov.sg/latest-news/written-reply-to-pq-on-nea-investigation-on-transboundary-haze-in-2015/",
+"correction": "Do not make the universal negative without a current NEA or court record. A supportable alternative is that official records show legal notices and long-running investigations, while this check found no primary source confirming a conviction through September 2026.",
+"stale_check": "The analysis itself flagged the need for a current check. A 2021 status cannot prove a negative through 2026."
+},
+{
+"claim": "Indonesia counted 335 concession holders with hotspots inside their licences.",
+"status": "MISLEADING",
+"m_true": 0.35,
+"m_false": 0.35,
+"m_unknown": 0.3,
+"source": "Indonesia's Ministry of Environment, 22 August 2026, says heightened surveillance was directed at 335 concession companies in Sumatra and Kalimantan; it does not state that all 335 had confirmed hotspots inside their concessions: https://kemenlh.go.id/news/detail/kendalikan-kabakaran-hutan-dan-lahan-di-riau-menteri-lh-tegaskan-pemegang-konsesi-wajib-mitigasi-titik-api",
+"correction": "Change this to 'Indonesia ordered heightened surveillance of 335 concession companies in Sumatra and Kalimantan.' Do not convert a surveillance population into a count of confirmed violators.",
+"stale_check": "Not stale; the original analysis strengthened the ministry's 22 August wording."
+},
+{
+"claim": "Indonesia made 72 arrests in 89 cases by 21 August 2026.",
+"status": "MISLEADING",
+"m_true": 0.4,
+"m_false": 0.45,
+"m_unknown": 0.15,
+"source": "Indonesian National Police, 23 August 2026, reported 72 individual suspects and 89 police reports for 1 January-21 August; it did not characterize all 72 as arrests or the 89 reports as adjudicated cases: https://tribratanews.polri.go.id/blog/nasional-3/polri-ungkap-72-tersangka-karhutla-penegakan-hukum-dilakukan-di-9-polda-104859",
+"correction": "Write 'Police named 72 individual suspects across 89 police reports through 21 August.' Preserve the procedural distinction between suspect, arrest, report, charge and conviction.",
+"stale_check": "The 21 August snapshot was accurate for its cutoff, but by 30 August police reported 89 suspects and 189 reports: https://tribratanews.polri.go.id/blog/hukum-4/bareskrim-polri-tetapkan-89-tersangka-karhutla-105240"
+},
+{
+"claim": "In 2019 Indonesia sealed land where Malaysian parent KLK confirmed a fire.",
+"status": "VERIFIED",
+"m_true": 0.68,
+"m_false": 0.02,
+"m_unknown": 0.3,
+"source": "Kuala Lumpur Kepong Berhad statement, 14 September 2019, says a fire affected 2.8 hectares at subsidiary PT Adei Plantation and that 4.25 hectares, including an isolation area, were sealed for investigation: https://www.klk.com.my/wp-content/uploads/2019/09/20190914-Press-Release-KLK-gives-full-support-to-assist-investigation-PT-ADEI_v2-1.pdf",
+"correction": "Specify that the fire was on subsidiary PT Adei's estate, the cause was under investigation, and the sealed area was larger than the 2.8-hectare burned area. Do not call it deliberate open burning without evidence.",
+"stale_check": "Not stale; this is a fixed 2019 event."
+},
+{
+"claim": "Indonesia named four Malaysian-linked units in 2019, while Sime Darby and IOI denied that their land had been sealed.",
+"status": "UNVERIFIED",
+"m_true": 0.25,
+"m_false": 0.05,
+"m_unknown": 0.7,
+"source": "No direct Indonesian government release plus direct Sime Darby and IOI statements confirming every element of this compound claim was located. KLK's own statement independently supports only the PT Adei fire and sealing: https://www.klk.com.my/wp-content/uploads/2019/09/20190914-Press-Release-KLK-gives-full-support-to-assist-investigation-PT-ADEI_v2-1.pdf",
+"correction": "Separate each company and government assertion and source it directly; do not generalize KLK's confirmed case to the other named companies.",
+"stale_check": "Not stale; this is an unresolved primary-source gap concerning a 2019 event."
+},
+{
+"claim": "The smoke is Kalimantan's.",
+"status": "MISLEADING",
+"m_true": 0.4,
+"m_false": 0.25,
+"m_unknown": 0.35,
+"source": "UKAS, 31 August 2026, supports a major Kalimantan contribution but records both Kalimantan and Sarawak hotspots: https://ukas.sarawak.gov.my/web/subpage/news_view/47646. NADMA, 10 August 2026, expressly discussed transboundary haze together with local open burning: https://www.nadma.gov.my/bm/media-2/berita/6861-sarawak-sedia-pertimbang-operasi-pembenihan-awan",
+"correction": "Use 'Kalimantan fires were a major reported source of the haze' and acknowledge local sources unless a formal source-apportionment study supports exclusivity.",
+"stale_check": "Not stale; contemporaneous official sources already supplied the omitted qualification."
+},
+{
+"claim": "Putrajaya chose to meet the haze with letters rather than law.",
+"status": "MISLEADING",
+"m_true": 0.3,
+"m_false": 0.5,
+"m_unknown": 0.2,
+"source": "NADMA reported Malaysia sending an ASEAN-related letter on 24 August 2026: https://www.nadma.gov.my/bm/media-2/berita/6986-malaysia-hantar-surat-kepada-sekretariat-asean-berkaitan-isu-jerebu. The 6 November 2023 official answer also lists bilateral and multilateral diplomacy, technical and scientific cooperation, peatland work and firefighting, not letters alone: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Say the government did not enact the proposed law and relied on a package of diplomatic, ASEAN, monitoring, mitigation, firefighting and domestic-enforcement measures. 'Letters rather than law' is a false binary.",
+"stale_check": "Not stale; non-letter measures were documented before the 4 September analysis."
+},
+{
+"claim": "The choice against the Act was made twice, by both sides of the aisle.",
+"status": "MISLEADING",
+"m_true": 0.35,
+"m_false": 0.4,
+"m_unknown": 0.25,
+"source": "The 3 August 2020 Hansard verifies a Perikatan Nasional Cabinet decision not to proceed: https://repositori.parlimen.gov.my/bitstream/123456789/4847/13/DR-03082020.pdf. The 6 November 2023 source is a ministry statement by a Pakatan Harapan-led unity government, not evidence of a second Cabinet decision, and the 9 November answer kept future legislation open: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2442",
+"correction": "Distinguish the 2020 Cabinet decision from the 2023 ministry position. 'Both sides of the aisle' also oversimplifies a unity government containing multiple coalitions.",
+"stale_check": "Not stale; the distinction is visible in the cited contemporaneous records."
+},
+{
+"claim": "The emergency line is API 500.",
+"status": "VERIFIED",
+"m_true": 0.65,
+"m_false": 0.05,
+"m_unknown": 0.3,
+"source": "UKAS, 31 August 2026, reports Sarawak's disaster-management chairman saying a haze emergency may be declared when API reaches 500: https://ukas.sarawak.gov.my/web/subpage/news_view/47643",
+"correction": "Call 500 the haze-emergency declaration threshold, not the point at which hazardous conditions begin; hazardous begins above 300.",
+"stale_check": "Not stale; this was the threshold stated during the same episode."
+},
+{
+"claim": "The API-500 line has been crossed three times in 29 years: Kuching in 1997, Selangor in 2005 and Johor in 2013.",
+"status": "MISLEADING",
+"m_true": 0.45,
+"m_false": 0.15,
+"m_unknown": 0.4,
+"source": "The Ministry of Natural Resources and Environment's 23 June 2013 archive identifies three haze-emergency episodes: Sarawak in 1997, Port Klang and Kuala Selangor in 2005, and Muar and Ledang in 2013; it also reports Sarawak's 1997 maximum as 860 and Muar at 746 on 23 June 2013: https://www.nres.gov.my/ms-my/pustakamedia/Lists/Papar-Berita.aspx?ID=++++126",
+"correction": "Write 'Malaysia declared haze emergencies in three historical episodes: Sarawak in 1997, Port Klang/Kuala Selangor in 2005, and Muar/Ledang in 2013.' 'Crossed three times' wrongly compresses multiple stations and readings into three threshold crossings, and the primary source does not reduce the 1997 episode to Kuching alone.",
+"stale_check": "The 29-year arithmetic is valid from 1997 to 2026, but the historical framing was already imprecise when written."
+},
+{
+"claim": "Kuching recorded API 650 on 19 September 1997.",
+"status": "UNVERIFIED",
+"m_true": 0.25,
+"m_false": 0.05,
+"m_unknown": 0.7,
+"source": "No qualifying primary record for this exact city-date-value combination was located. The official NRES historical account instead states that the highest API in Sarawak during the 1997 emergency was 860, without supporting this exact Kuching 650 claim: https://www.nres.gov.my/ms-my/pustakamedia/Lists/Papar-Berita.aspx?ID=++++126",
+"correction": "Use the broader verified formulation 'Sarawak's 1997 haze emergency' unless the archived DOE station table is obtained.",
+"stale_check": "Not stale; this is an archival-verification gap."
+},
+{
+"claim": "Kuala Selangor and Port Klang crossed API 500 on 1 August 2005, with API 531.",
+"status": "INCORRECT",
+"m_true": 0.05,
+"m_false": 0.85,
+"m_unknown": 0.1,
+"source": "A peer-reviewed Universiti Kebangsaan Malaysia paper records the 2005 haze emergency declaration on 11 August 2005, not 1 August: https://journalarticle.ukm.my/924/1/1.2009-2-mastura%26huraiza-melayu-1.pdf. The official NRES historical account confirms Port Klang and Kuala Selangor exceeded 500 in the 2005 emergency: https://www.nres.gov.my/ms-my/pustakamedia/Lists/Papar-Berita.aspx?ID=++++126",
+"correction": "Correct the date to 11 August 2005. Retain API 531 only if an archived DOE table directly establishes the station and time.",
+"stale_check": "Not stale; the source note contains a historical date error."
+},
+{
+"claim": "Muar and Ledang crossed API 500 on 23 June 2013.",
+"status": "VERIFIED",
+"m_true": 0.85,
+"m_false": 0.02,
+"m_unknown": 0.13,
+"source": "The Ministry of Natural Resources and Environment, 23 June 2013, states that a haze emergency was declared in Muar and Ledang after API exceeded 500 and reports Muar at 746 at 7 a.m.: https://www.nres.gov.my/ms-my/pustakamedia/Lists/Papar-Berita.aspx?ID=++++126",
+"correction": "For precision, describe this as an emergency declaration after readings exceeded 500; the official page gives the 746 reading specifically for Muar.",
+"stale_check": "Not stale; this is a fixed historical event."
+},
+{
+"claim": "The proposed Transboundary Haze Act would not have put out Kalimantan's fires.",
+"status": "UNVERIFIED",
+"m_true": 0.2,
+"m_false": 0.1,
+"m_unknown": 0.7,
+"source": "No bill text, enacted Malaysian law or empirical counterfactual evaluation exists that can prove what the abandoned proposal would or would not have accomplished. The 6 November 2023 ministry answer says legislation alone would be insufficient, a narrower proposition: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Frame this as analysis: officials argued that a law alone would not solve transboundary haze. Do not present the counterfactual as an independently verified fact.",
+"stale_check": "Not stale; it is a non-testable counterfactual about an unenacted proposal."
+},
+{
+"claim": "The Act would have told Malaysian planters abroad that the smoke follows them home.",
+"status": "UNVERIFIED",
+"m_true": 0.2,
+"m_false": 0.1,
+"m_unknown": 0.7,
+"source": "The 7 June 2023 Hansard records Yeo Bee Yin's intended extraterritorial accountability concept, but no draft bill text establishes the exact regulated persons, evidentiary presumptions, remedies or penalties: https://www.cljlaw.com/files/hansard/DR/pdf/DR-07062023.pdf",
+"correction": "Label this as rhetoric or as Yeo's stated policy intent, not a factual description of a settled statute.",
+"stale_check": "Not stale; the proposal remained unenacted at the analysis date."
+},
+{
+"claim": "Two Cabinets declined to say so.",
+"status": "MISLEADING",
+"m_true": 0.3,
+"m_false": 0.5,
+"m_unknown": 0.2,
+"source": "The 2020 primary record establishes one Cabinet decision not to proceed: https://repositori.parlimen.gov.my/bitstream/123456789/4847/13/DR-03082020.pdf. The 2023 primary record establishes a government ministry position, not a documented second Cabinet vote or decision: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"correction": "Say one Cabinet decided not to proceed in July 2020 and the unity government's ministry said in November 2023 it would not continue that proposal. Avoid inventing equivalence between the decision mechanisms.",
+"stale_check": "Not stale; the official records did not support the two-Cabinet formulation when the analysis was written."
+},
+{
+"claim": "Malaysia ratified the ASEAN Agreement on Transboundary Haze Pollution in 2002.",
+"status": "VERIFIED",
+"m_true": 0.95,
+"m_false": 0.01,
+"m_unknown": 0.04,
+"source": "ASEAN's official agreements table records Malaysia's ratification on 3 December 2002 and deposit of its instrument on 18 February 2003; the agreement was signed on 10 June 2002: https://asean.org/wp-content/uploads/images/archive/documents/ASCC-ASEAN-Agreements-and-treaties-090930.pdf",
+"correction": "If exact chronology matters, distinguish signature, ratification and deposit dates.",
+"stale_check": "Not stale; these are fixed treaty dates."
+},
+{
+"claim": "Article 9(a) of the ASEAN haze agreement asks parties to use national legislation or regulation to promote zero burning, but it does not require an extraterritorial statute.",
+"status": "VERIFIED",
+"m_true": 0.95,
+"m_false": 0.01,
+"m_unknown": 0.04,
+"source": "ASEAN Agreement on Transboundary Haze Pollution, Article 9(a), official treaty text reproduced by the Philippine Supreme Court E-Library: https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/36/10114",
+"correction": "None; Article 9(g) separately calls for measures to control open burning and prevent land-clearing fires, but neither provision specifies extraterritorial criminal liability.",
+"stale_check": "Not stale; treaty text is fixed."
+},
+{
+"claim": "For July 2026, Al Jazeera reported about 95,000 hectares burned, Mongabay or BNPB 124,040 hectares, and AP about 182,000 hectares.",
+"status": "UNVERIFIED",
+"m_true": 0.15,
+"m_false": 0.05,
+"m_unknown": 0.8,
+"source": "The closest official figure located is Indonesian National Police's 1 September 2026 release citing forestry monitoring: 202,010.96 hectares cumulatively in January-July and a July increment of 94,545.49 hectares: https://tribratanews.polri.go.id/blog/hukum-4/bareskrim-polri-tetapkan-89-tersangka-karhutla-105240. No common primary dataset was located that validates and reconciles all three figures.",
+"correction": "Do not present these as directly conflicting estimates for the same scope. The roughly 95,000 figure corresponds closely to an official monthly increment, while 182,000 may use a different satellite method or cumulative period; 124,040 remains unverified here. State definitions, geography, cutoff and method for every figure.",
+"stale_check": "The issue is inconsistent scope and sourcing, not a later revision after publication."
+},
+{
+"claim": "The 2013 haze cost RM1.74 billion according to Shahwahid 2016, described as a peer-reviewed review.",
+"status": "INCORRECT",
+"m_true": 0.05,
+"m_false": 0.85,
+"m_unknown": 0.1,
+"source": "The 2016 EEPSEA research report by Mohd Shahwahid H.O. gives an estimated June 2013 Peninsular Malaysia haze cost of MYR1.49 billion, not MYR1.74 billion, and is catalogued as a research report: https://ideas.repec.org/p/eep/report/rr2016013.html",
+"correction": "Use MYR1.49 billion and describe the source accurately as an EEPSEA research report unless a separate peer-reviewed publication with a different estimate is supplied.",
+"stale_check": "Not stale; the source note misquotes and misclassifies a fixed 2016 publication."
+},
+{
+"claim": "A UKM study estimated the 2013 haze cost at RM1.57 billion.",
+"status": "UNVERIFIED",
+"m_true": 0.2,
+"m_false": 0.05,
+"m_unknown": 0.75,
+"source": "No qualifying UKM primary paper supporting RM1.57 billion was located. The directly identified 2016 primary research report estimates MYR1.49 billion: https://ideas.repec.org/p/eep/report/rr2016013.html",
+"correction": "Do not attribute RM1.57 billion to UKM without the paper, authors, methodology and stable publication link; report the RM1.49 billion EEPSEA estimate if an economic-cost figure is needed.",
+"stale_check": "Not stale; the claimed UKM source could not be verified."
+}
+],
+"cardinal_sin_flags": [
+{
+"sin": "OVERCLAIM",
+"claim": "dropped for good on 6 November 2023",
+"why": "The phrase converts a dated government position into a permanent conclusion. On 9 November 2023 the same ministry expressly said it did not reject future proposals, including the possible need for such an Act.",
+"primary_source": "Ministry of Natural Resources, Environment and Climate Change, parliamentary answer, 9 November 2023: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2442"
+},
+{
+"sin": "OVERCLAIM",
+"claim": "the region's worst haze episode since 2015",
+"why": "No primary comparative series or official ranking was located, and the claim leaves 'region' and 'worst' undefined.",
+"primary_source": "ASEAN Specialised Meteorological Centre alerts document the episode but do not make that ranking: https://asmc.asean.org/asmc-alerts/"
+},
+{
+"sin": "OVERCLAIM",
+"claim": "335 concession holders with hotspots inside their licences",
+"why": "The Indonesian ministry said 335 concession companies were placed under heightened surveillance; it did not identify all 335 as concessions with confirmed hotspots or violations.",
+"primary_source": "Indonesia Ministry of Environment, 22 August 2026: https://kemenlh.go.id/news/detail/kendalikan-kabakaran-hutan-dan-lahan-di-riau-menteri-lh-tegaskan-pemegang-konsesi-wajib-mitigasi-titik-api"
+},
+{
+"sin": "UNDERCLAIM",
+"claim": "Singapore's extraterritorial haze law dates from 2014 and has never produced a conviction.",
+"why": "The conviction claim is unverified, while the formulation omits documented enforcement: NEA issued legal notices to six Indonesian companies in 2015, closed two cases after responses and still had four open in 2021. Conviction count alone understates the law's actual use.",
+"primary_source": "Singapore Ministry of Sustainability and the Environment, 13 September 2021: https://www.mse.gov.sg/latest-news/written-reply-to-pq-on-nea-investigation-on-transboundary-haze-in-2015/"
+},
+{
+"sin": "MISLEADING_FRAMING",
+"claim": "The smoke is Kalimantan's. The choice to meet it with letters rather than law was made in Putrajaya, twice, by both sides of the aisle.",
+"why": "The sentence presents exclusive source attribution without formal apportionment, creates a false letters-versus-law binary despite monitoring, cloud seeding, firefighting, diplomacy and domestic enforcement, and equates a 2020 Cabinet decision with a 2023 ministry position.",
+"primary_source": "UKAS, 31 August 2026: https://ukas.sarawak.gov.my/web/subpage/news_view/47646; NRES parliamentary answer, 6 November 2023: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428"
+},
+{
+"sin": "MISLEADING_FRAMING",
+"claim": "It has been crossed three times in 29 years: Kuching in 1997, Selangor in 2005, Johor in 2013.",
+"why": "The evidence supports three haze-emergency episodes, not only three individual API threshold crossings. Each episode involved locations and repeated readings, and the official history describes Sarawak rather than only Kuching for 1997.",
+"primary_source": "Ministry of Natural Resources and Environment, 23 June 2013: https://www.nres.gov.my/ms-my/pustakamedia/Lists/Papar-Berita.aspx?ID=++++126"
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"claim": "Singapore's extraterritorial haze law ... has never produced a conviction.",
+"why": "No current official enforcement register, court search or 2026 parliamentary answer establishing this universal negative was located.",
+"primary_source": "Closest official enforcement history located, Singapore MSE, 13 September 2021: https://www.mse.gov.sg/latest-news/written-reply-to-pq-on-nea-investigation-on-transboundary-haze-in-2015/"
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"claim": "Serian 475 at 10 am, 463 at noon; 475 was the episode peak.",
+"why": "The official contemporaneous publication confirms 475 but no archived APIMS primary record was located for the precise timestamps or peak characterization.",
+"primary_source": "UKAS, 31 August 2026: https://ukas.sarawak.gov.my/web/subpage/news_view/47646"
+}
+],
+"omitted_facts": [
+"On 9 November 2023, three days after saying it would not continue the proposal, the environment ministry said the government did not reject future proposals, including the possible need for a Transboundary Haze Pollution Act, subject to effectiveness and feasibility: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2442",
+"The Perikatan Nasional Cabinet made its decision not to proceed on 24 July 2020; 3 August was the date the decision was announced in the Dewan Rakyat: https://repositori.parlimen.gov.my/bitstream/123456789/4847/13/DR-03082020.pdf",
+"The official 6 November 2023 parliamentary record classifies Tan Hong Pin's question as oral, not written: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2428",
+"The 591-school order covered both 20 and 21 August 2026, not a period beginning on 21 August: https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/591-sekolah-di-sarawak-ditutup-akibat-jerebu/",
+"Official Sarawak reporting identified a major Kalimantan contribution but also counted local Sarawak hotspots; NADMA separately acknowledged local open burning, so exclusive source attribution is not supported: https://ukas.sarawak.gov.my/web/subpage/news_view/47646 and https://www.nadma.gov.my/bm/media-2/berita/6861-sarawak-sedia-pertimbang-operasi-pembenihan-awan",
+"Singapore's NEA issued legal notices to six Indonesian companies after the 2015 haze; two matters were closed after responses and four remained open in 2021: https://www.mse.gov.sg/latest-news/written-reply-to-pq-on-nea-investigation-on-transboundary-haze-in-2015/",
+"Indonesia's official 335 figure referred to concession companies placed under heightened surveillance, not 335 confirmed concession hotspot offenders: https://kemenlh.go.id/news/detail/kendalikan-kabakaran-hutan-dan-lahan-di-riau-menteri-lh-tegaskan-pemegang-konsesi-wajib-mitigasi-titik-api",
+"Indonesia's police figure through 21 August was 72 suspects across 89 police reports; by 30 August it had risen to 89 suspects across 189 reports, illustrating that the first figure was a dated snapshot: https://tribratanews.polri.go.id/blog/nasional-3/polri-ungkap-72-tersangka-karhutla-penegakan-hukum-dilakukan-di-9-polda-104859 and https://tribratanews.polri.go.id/blog/hukum-4/bareskrim-polri-tetapkan-89-tersangka-karhutla-105240",
+"KLK said the PT Adei fire affected 2.8 hectares, 4.25 hectares including an isolation area were sealed, the fire was extinguished the same day and the cause remained under investigation: https://www.klk.com.my/wp-content/uploads/2019/09/20190914-Press-Release-KLK-gives-full-support-to-assist-investigation-PT-ADEI_v2-1.pdf",
+"Malaysia's 2026 response included ASEAN correspondence and operational measures such as cloud seeding, not letters alone: https://www.nadma.gov.my/bm/media-2/berita/6986-malaysia-hantar-surat-kepada-sekretariat-asean-berkaitan-isu-jerebu and https://www.nadma.gov.my/bm/media-2/program-dan-aktiviti",
+"Malaysia ratified the ASEAN haze agreement on 3 December 2002 and deposited its instrument on 18 February 2003; Article 9 promotes national zero-burning and open-burning controls but does not prescribe an extraterritorial liability law: https://asean.org/wp-content/uploads/images/archive/documents/ASCC-ASEAN-Agreements-and-treaties-090930.pdf and https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/36/10114",
+"The official July 2026 burned-area figure located was a monthly increase of 94,545.49 hectares and a January-July cumulative total of 202,010.96 hectares; the analysis's three media figures do not share a demonstrated method or scope: https://tribratanews.polri.go.id/blog/hukum-4/bareskrim-polri-tetapkan-89-tersangka-karhutla-105240"
+],
+"source_assessment": "The analysis lists 19 source identifiers drawn from roughly 15 publishing entities across Malaysia, Singapore, Indonesia and international media, which is broader than a single-outlet or single-country account. It includes government-derived data, different Malaysian administrations, a statutory text and one company statement. However, most claims are carried through secondary media instead of the readily available primary records: Dewan Rakyat Hansards, NRES parliamentary answers, education and health authorities, Indonesian ministry and police releases, the Singapore statute and KLK's own statement. Political and institutional balance is only partial: government voices dominate; there is little direct academic, legal-practitioner, NGO, affected-community, public-health expert or plantation-sector evidence, and no formal atmospheric source-apportionment study. Several citations are single-chain or circularly repeat an official assertion without the underlying record. A diversity estimate of 0.54 reflects reasonable geographic and publisher spread but material primary-source and stakeholder gaps.",
+"overall_assessment": "The draft has a substantially correct factual spine: Serian reached 475 on 31 August, Kuching reached 407 on 1 September, 591 schools affecting 197,323 pupils were closed, respiratory surveillance rose from 1,637 to 3,674, the 2020 proposal was not pursued, and the government said in November 2023 that it would not continue it. Its reliability is nevertheless only moderate because the narrative repeatedly strengthens what the records support. The most consequential faults are 'dropped for good,' treating the 2023 ministry position as a second Cabinet decision, misstating the school start date and the 2005 emergency date, calling an oral answer written, converting 335 monitored concession companies into confirmed hotspot holders, calling suspects arrests, and asserting a current absence of Singapore convictions without a current official record. The exclusive Kalimantan attribution and 'letters rather than law' contrast omit local burning and a wider response package. Publication should wait until those statements are corrected, unsupported legal and comparative claims are attributed or removed, and exact APIMS timestamps are backed by an archived primary record."
+}
