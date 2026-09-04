@@ -40,8 +40,16 @@ export default defineConfig({
   },
 
   webServer: {
-    command: 'npx http-server dist -p 4321 --silent',
-    url: 'http://localhost:4321',
+    // http-server is a pinned devDependency so `npx` resolves it from
+    // node_modules/.bin. Without that, a cold runner (no restored npm cache)
+    // downloads it at test time and the readiness probe times out
+    // ("Timed out waiting 60000ms from config.webServer") before the server
+    // ever answers; every deploy run from 4 Sep 2026 failed this way once
+    // the August cache was evicted. Binding and probing on 127.0.0.1 keeps
+    // the probe on the interface http-server actually listens on. The
+    // browser keeps baseURL as localhost.
+    command: 'npx http-server dist -a 127.0.0.1 -p 4321 --silent',
+    url: 'http://127.0.0.1:4321',
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,
   },
