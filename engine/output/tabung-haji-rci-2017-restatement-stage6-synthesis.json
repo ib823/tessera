@@ -1,0 +1,119 @@
+{
+  "_provenance": {
+    "stage": "Stage 6 — Synthesis (Claude)",
+    "slug": "tabung-haji-rci-2017-restatement",
+    "issue_id": "2010",
+    "generated_at": "2026-09-04",
+    "inputs": [
+      "stage1 (Claude primary analysis, PA 86)",
+      "stage2 (Gemini bias audit, external paste; bias_score 15 -> BA 85)",
+      "stage3 (ChatGPT fact verification, external paste; factual_accuracy_score 78, source_diversity 0.58)"
+    ],
+    "note": "Stages 4 and 5 retired (docs/adr/0004). Religious risk MEDIUM-HIGH and Political HIGH (not CRITICAL) per the brief; Stage 3 source_diversity 0.58 > 0.4; neither reviewer read any card as adjudicating hibah theology (Stage 2 religious_sensitivity 0.0, religious_flags empty). Stage 5 not re-enabled. Stage 3 located two provenance errors in Stage 1's notes (RM2.75b does appear in the report's executive summary; the former minister was still under remand, not released) and six framing corrections on cards; all applied below. Two Stage 3 sources were re-opened in this session (The Star 2 Sep 2026 remand report; FMT 4 Sep 2026 Madinah denial); the Malay Mail 3 Sep 2026 TH CEO report returned 403 and is relied on through Stage 3's reading."
+  },
+  "headline": "Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found",
+  "context": "A Royal Commission of Inquiry into Tabung Haji, presented to the King on 30 August 2022 and published on 29 July 2026, found the fund's RM3.4 billion profit for 2017 would have been a RM1.4 billion loss under full accounting standards.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Tabung Haji declared a RM3.4 billion profit for 2017 and paid RM3.3 billion in hibah. A Royal Commission found the year was a RM1.4 billion loss.",
+      "sub": "Its write-down trigger moved twice in 2017, from more than 70% below cost to 85%, then 90%. Old rule: RM1,313 million written down. New rule: RM1 million."
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.",
+      "sub": "Hibah rates, haj fares and the HAFIS subsidy were 'driven by political elements', it found. Ministers relied wholly on management's proposals."
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.",
+      "sub": "The former chairman's riposte, December 2018: on realisable asset value, a RM373 million surplus. The commission says that basis fails the Act."
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.",
+      "sub": "The 2017 accounts 'should not have been given a clean audit certificate', it found. Ex-AG Madinah Mohamad: different mandates, 'apples and oranges'."
+    },
+    {
+      "t": "reframe",
+      "big": "On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.",
+      "sub": ""
+    },
+    {
+      "t": "analogy",
+      "big": "A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.",
+      "sub": "In 2018 assets valued at about RM9.7 billion went to a Finance Ministry vehicle for RM19.9 billion. Tabung Haji says it prevented insolvency."
+    },
+    {
+      "t": "mature",
+      "big": "Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.",
+      "sub": ""
+    }
+  ],
+  "revisions": [
+    "CORRECTED (Stage 3): context 'reported to the King' → 'presented to the King'. The report's title page records presentation to the Yang di-Pertuan Agong on 30 Ogos 2022; 'reported' was loose.",
+    "CORRECTED (Stage 3): hook sub 'from a 70% fall to 85%, then 90%' → 'from more than 70% below cost to 85%, then 90%'. Report paras 3.9.8 p.77 and 3.13.8–3.13.9 p.110 define the trigger as a percentage below cost; the initial policy also carried a more-than-24-month prolonged-decline limb that the 85% and 90% versions dropped. The limb is not on the card for length; the synthesis_notes record it and the brief now carries it.",
+    "CORRECTED (Stage 3): hook sub 'The impairment charge shrank from RM1,313 million to RM1 million' → 'Under the old rule: RM1,313 million written down. Under the new one: RM1 million.' The report tabulates modelled effects under each policy version and records that RM1 million was booked; nothing was booked and then reversed.",
+    "CORRECTED (Stage 3): fact-Governance 'The Act asks only that a member be Muslim and a citizen' → 'The Act sets no competence test for the board.' Act 535 s.6(2) sets Muslim faith and citizenship as the positive qualifications, but s.6(3) adds bankruptcy, conviction and incapacity disqualifications; the defensible point, and the commission's (Ringkasan Eksekutif paras 11–12), is the absence of competence criteria.",
+    "CORRECTED (Stage 3): fact-Legal 'Section 22 bars a payout unless assets cover liabilities ... so the gate cleared' → 'One of section 22's tests: assets must cover liabilities ... so the accounts appeared to pass.' Section 22 also requires a Reserve Fund, Ministerial approval (s.22(1)) and a Treasury-approved reserve ratio (s.22(3)(b)); the commission found the 2014–2017 distributions did not comply with s.22, so the old wording that the gate 'cleared' overstated compliance.",
+    "CORRECTED (Stage 3): reframe 'the commission asked that its report be made public' → 'asked the Government to consider publishing what it could'. Para 4.6 p.199 reads 'berharap Kerajaan akan menimbang supaya laporan Suruhanjaya ini diumumkan kepada awam mengikut mana-mana bahagian yang bersesuaian': a hope that suitable parts be considered for publication, not an unqualified request.",
+    "REPHRASED (Stage 3 MISLEADING_FRAMING): reframe 'Putrajaya sealed it for almost four years, citing depositor panic' → 'The report stayed classified for almost four years. The stated reason: depositors might panic and withdraw.' Removes the single-actor 'sealed'; the classification spanned two administrations and the rationale is the Prime Minister's 24 July 2026 statement (Bernama / Malay Mail).",
+    "CORRECTED (Stage 3 UNVERIFIED): reframe 'Those it protected were those kept in the dark' dropped. It was an inference presented as fact; the reframe now ends on the stated rationale and lets the reader draw it.",
+    "REPHRASED (Stage 2 bias, Stage 3 MISLEADING_FRAMING): analogy 'A bank rewrites its bad-loan rule twice in a year, pays a dividend on the result, then locks the inspector's report away so customers will not worry' → 'Picture a savings fund that loosens its rule for writing down bad investments twice in a year, pays out on the result, then keeps the inspector's report in a drawer so savers will not worry.' Tabung Haji is a statutory fund, not a bank under the Financial Services Act; the rule concerned investment impairment, not loans; 'Picture' labels the card as analogy.",
+    "CORRECTED (Stage 3): analogy sub 'assets valued at RM9.63 billion' → 'assets valued at about RM9.7 billion'. RM9.63b is UJSB's figure in a statement dated 14 November 2019 (not December 2018, as Stage 1's source note said); the commission's own para 3.13.29 gives RM9.729 billion and Tabung Haji's 31 July 2026 statement rounds to RM9.7 billion. The report's figure is preferred.",
+    "CORRECTED (Stage 3): view 'The gate held every year; the number fed into it did not' → 'Four years of hibah rested on numbers the commission says the Act never allowed.' The commission did not find the legal gate held; it found the 2014–2017 RAV-based hibah 'tidak selaras dengan kehendak seksyen 22' (para 3.11.9) and KAN found the s.22 conditions unmet in 2015–2017 (para 3.11.11). The new kicker states that finding.",
+    "REPHRASED (Stage 3 stale-check): view 'The ban on active politicians on its board is not yet law' → 'The ban on politicians on its board has yet to reach Parliament.' Verified by Stage 3 against the Dewan Rakyat bills list (no Act 535 amendment bill as of 4 Sep 2026) and the TH chief executive's 3 Sep 2026 statement that amendments are being finalised before tabling.",
+    "ADDED (Stage 2 omission, Stage 3 omitted_facts): fact-Economic sub now carries the former chairman's RAV counter-position (RM373 million surplus, 11 December 2018 statement) with the commission's rejection of RAV as a s.22 basis (para 3.11.9 p.93). Both reviewers flagged its absence.",
+    "ADDED (Stage 3): fact-Legal sub now carries the substance of Madinah Mohamad's defence ('different mandates') alongside the 'apples and oranges' quote, per Stage 3's note that the quote alone was too cryptic to be fair to her.",
+    "ADDED (Stage 3 verified, Stage 1 sub): fact-Governance sub adds 'Ministers relied wholly on management's proposals' (Ringkasan Eksekutif para 10, 'bergantung sepenuhnya'); Stage 3 verified the characterisation and asked that 'expertise' framing be preserved, so the card names reliance, not competence.",
+    "COMPRESSED (length budget): fact-Economic sub no longer carries the JAN deputy director's capacity testimony (RM2.70b capacity vs RM3.31b paid, 22.5% over). Verified by Stage 3 but displaced by the RAV counter-position both reviewers asked for. The 72% hibah fall moved to the card's big field.",
+    "CORRECTED (Stage 3, provenance only): Stage 1's source_notes said 'RM2.75 billion appears nowhere in the report'. Stage 3 reports the figure in the executive summary at para 22(iii), conflicting with the detailed tables (3.11.7, 3.13.7) that give RM3,323,741k / RM3,324m. Cards keep the detailed-table figure; the discrepancy is disclosed in synthesis_notes and the brief is corrected.",
+    "CORRECTED (Stage 3, provenance only): Stage 1's discipline note said a former minister had been released from remand as of 4 Sep. Wrong: The Star (2 Sep 2026) reports the former minister remanded for five days to 6 September under MACC Act s.16(a)(A); those released after a seven-day remand were a former TH chairman and a former Treasury secretary-general (Malay Mail 1 Sep 2026). Not on any card; brief corrected.",
+    "CORRECTED (Stage 3, provenance only): Tabung Haji's restructuring statement is dated 31 July 2026, not 30 July; its 'more than 75% of recommendations implemented' figure is from a 7 August 2026 statement, not 1 August. Not on any card; sources corrected.",
+    "COMPRESSED (length budget, Stage 6 self-checked): hook sub 'Under the old rule ... Under the new one' → 'Old rule ... New rule'; Economic sub 'on realisable asset value the fund held' → 'by realisable asset value the fund had', 'does not meet' → 'fails'; Legal big 'the accounts appeared to pass' → 'the books appeared to pass'; reframe drops 'and withdraw' (the PM's rationale named both panic and withdrawals; 'panic' alone is the softer reading); analogy 'loosens its rule for writing down bad investments' → 'loosens its write-down rule', 'so savers will not worry' → 'lest savers worry'; view 'The ban on politicians on its board' → 'The politician ban'. No figure, date, actor or attribution changed."
+  ],
+  "introduced_claims": [
+    {
+      "claim": "The Act sets no competence test for the board.",
+      "primary_source": "Act 535 s.6(2)–(3), AGC reprint as at 1 Dec 2011 (positive qualifications: Muslim, Malaysian citizen; disqualifications: bankruptcy, conviction, incapacity; no competence or expertise criterion); Laporan RCI Ringkasan Eksekutif paras 11–12 p.xiv (absence of criteria; recommendation 4.4.1(a) to add competence criteria)."
+    },
+    {
+      "claim": "Ministers relied wholly on management's proposals.",
+      "primary_source": "Laporan RCI Ringkasan Eksekutif para 10 pp.xiii–xiv ('bergantung sepenuhnya' on management's proposals on fund and investment matters); verified by Stage 3 (m_true 0.65)."
+    },
+    {
+      "claim": "The former chairman's riposte, December 2018: on realisable asset value the fund held a RM373 million surplus.",
+      "primary_source": "Abdul Azeez Abdul Rahim media statement, Parliament lobby, 11 Dec 2018 (umno-online.my, brief P10: RAV assets RM74.7b vs liabilities RM74.4b, surplus RM373m); Laporan RCI para 3.11.9 p.93 records the RAV position and finds it 'tidak selaras dengan kehendak seksyen 22'; Stage 3 verified (m_true 0.65)."
+    },
+    {
+      "claim": "The report stayed classified for almost four years.",
+      "primary_source": "Title page: presented 30 Ogos 2022; JAKIM announcement 29 Julai 2026: reclassified OPEN under s.2C Akta Rahsia Rasmi 1972 by Cabinet decision. Interval 3 years 10 months 29 days; Stage 3 accepts 'almost four years'."
+    },
+    {
+      "claim": "The stated reason: depositors might panic and withdraw.",
+      "primary_source": "Prime Minister Anwar Ibrahim, 24 July 2026, Bernama (news.php?id=2585316) and Malay Mail (S7): report kept under wraps to avoid public panic and withdrawals."
+    },
+    {
+      "claim": "assets valued at about RM9.7 billion",
+      "primary_source": "Laporan RCI para 3.13.29 (market value RM9.729 billion, transfer value RM19.900 billion) per Stage 3; Tabung Haji statement 31 Jul 2026 (RM9.7 billion); UJSB statement 14 Nov 2019 via The Edge gives RM9.63 billion, the lower outlier."
+    },
+    {
+      "claim": "The ban on politicians on its board has yet to reach Parliament.",
+      "primary_source": "Laporan RCI para 4.4.1(a)–(c) pp.192–193 (recommendation); Dewan Rakyat bills list, no Act 535 amendment as of 4 Sep 2026 (parlimen.gov.my, per Stage 3); Malay Mail 3 Sep 2026, TH chief executive: amendments in final stages before tabling (per Stage 3; fetch returned 403 in session)."
+    },
+    {
+      "claim": "Four years of hibah rested on numbers the commission says the Act never allowed.",
+      "primary_source": "Laporan RCI para 3.11.9 p.93 (hibah 2014–2017 on RAV basis 'tidak selaras dengan kehendak seksyen 22 Akta 535'); para 3.11.11 pp.93–94 (KAN: s.22 conditions not fulfilled in 2015, 2016, 2017 yet hibah declared); para 3.11.13 p.94. 'Four years' = 2014, 2015, 2016, 2017."
+    },
+    {
+      "claim": "Ex-Auditor-General Madinah Mohamad: different mandates, 'apples and oranges'.",
+      "primary_source": "The Star 25 Aug 2026 (two reports) and FMT 25 Aug 2026: the National Audit Department audit and the PwC review had different purposes, terms of reference and methodologies; 'apples and oranges'. Verified by Stage 3 (m_true 0.9)."
+    }
+  ],
+  "synthesis_notes": "OVER-INTEGRATION CHECK: Stage 2 (bias 15) and Stage 3 (accuracy 78) agreed on both shared flags (the 'bank' analogy; the missing RAV counter-position), so no averaging was needed. Where Stage 2 logged claims VERIFIED that Stage 3 marked MISLEADING (the s.6 'Muslim and a citizen' line; the 70%/85%/90% trigger), Stage 3's reading of the statute and the report was followed because it cited the specific subsections and paragraphs and Stage 2 cited only the section. Stage 3's suggested replacement for 'Putrajaya sealed it' ('successive governments did not publish the classified report') was not used verbatim; the card says 'stayed classified for almost four years', which carries the same actor-neutral meaning in fewer words. Stage 3's suggested kicker ('The statutory test remained, but the commission found...') was not used; the card states the commission's finding directly. COMPRESSION DECISIONS: (1) the more-than-24-month prolonged-decline limb of the original impairment policy is not on the hook sub; its removal is recorded here and in the brief, and the card's claim (trigger moved from more than 70% below cost to 85% then 90%) stands without it. (2) The JAN capacity testimony (RM2.70b vs RM3.31b) left the Economic sub to make room for the RAV counter-position both reviewers requested; the figure remains in the brief. (3) 'Section 22' on the Legal card is described as 'one of section 22's tests' so that the Reserve Fund, Ministerial approval and s.22(3)(b) conditions are not implied away. (4) PwC's series shows pre-distribution surpluses in 2014 and 2015 and pre-distribution deficits in 2016 and 2017; the card's 'short after every payout from 2014' is the post-distribution reading and is accurate as worded; the pre-distribution distinction lives in the infographic at /infographics/rci-tabung-haji. DISCLOSED DISCREPANCY: the report's executive summary (para 22(iii), per Stage 3) gives the FY2017 hibah cost as RM2.75 billion while its detailed tables (paras 3.11.7 p.92 and 3.13.7 p.109) give RM3,323,741k / RM3,324m. The cards use the detailed-table figure (RM3.3b / RM3.32b), which reconciles across two independent tables and with the JAN testimony (RM3.31b). The brief's earlier statement that RM2.75b 'appears nowhere in the report' was wrong and is corrected. ENFORCEMENT STATUS AS OF 4 SEP 2026 (not on cards): no conviction identified in sources reviewed; ex-COO's three proposed Penal Code s.165 charges pending, charging postponed to 24 Sep after hospitalisation; a former minister remanded five days to 6 Sep under MACC Act s.16(a)(A); a former TH chairman and a former Treasury secretary-general released after seven-day remand. Madinah Mohamad (4 Sep) denies the RCI member's account that she asked to testify with the JAN deputy director; both positions recorded in the brief, neither on a card. ELEVATED WORD: 'riposte' (Economic sub), one per issue. REFRAME SHAPE: re-anchored fact plus stated rationale, ending without the inferential line Stage 3 flagged; not the 'X is not Y' template. DOMINANT EMOTION of hook: anger at process. NAMING: 'the commission' throughout for the RCI; 'Tabung Haji' for the fund; 'section 22' for the statutory test; 'hibah' for the payout.",
+  "sr_score": 82,
+  "sr_score_rationale": "Every Stage 3 correction applied with the primary paragraph re-cited; both Stage 2 flags applied; the two provenance errors Stage 3 caught are corrected in the brief as well as here; every wording introduced is listed with its source. Deductions: one Stage 3 source (Malay Mail 3 Sep 2026) could not be re-opened in session and is relied on through Stage 3's reading; the RM2.75b executive-summary figure is likewise carried on Stage 3's reading pending a re-read of Ringkasan Eksekutif para 22(iii); the JAN capacity testimony was compressed out."
+}

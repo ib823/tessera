@@ -1,0 +1,260 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "tabung-haji-rci-2017-restatement",
+    "issue_id": "2010",
+    "brief": "engine/briefs/tabung-haji-rci-2017-restatement.md",
+    "generated_at": "2026-09-04",
+    "revision_history": [
+      "v1 (2026-09-04): initial draft after Phase 1 brief approval (brief complete 2026-08-09, report read with page citations). Source channel: radar silence-watch fresh-track F7, develop-list pick A2 in the 2026-09-04 curation. Frame: the mechanism the commission documented (impairment trigger moved twice in 2017; depositors' funds booked as equity since 2010; section 22(3)(a) cleared by presentation rather than substance; distribution above audited capacity) and the finding coverage has missed (the commission asked at para 4.6 that its report be published; it was withheld three years and eleven months on a depositor-panic rationale). Anchor: anger-at-process. Every card cites the report paragraph, not a press summary."
+    ],
+    "discipline": "Critique a statutory fund's accounts, its board appointments and a Cabinet decision to withhold a report. NOT hibah as a religious concept, NOT the haj, NOT depositors, NOT any named individual as culpable. No one has been convicted; the ex-COO's charging was postponed to 24 Sep 2026 and a former minister was released from remand without charge as of 4 Sep. Cards name no individual except the former Auditor-General, quoted in her own defence. Ministers appear only as 'all three religious affairs ministers of the period', the commission's own phrasing. Both readings of the 2018 restructuring (rescue / over-valued bailout) are carried. Religious risk MEDIUM-HIGH: Stage 5 to be re-enabled if Stage 3 source_diversity_estimate < 0.4 or if any reviewer reads a card as adjudicating hibah theology."
+  },
+  "headline": "Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found",
+  "context": "A Royal Commission of Inquiry into Tabung Haji, reported to the King on 30 August 2022 and published on 29 July 2026, found the fund's RM3.4 billion profit for 2017 would have been a RM1.4 billion loss under full accounting standards.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Tabung Haji declared a RM3.4 billion profit for 2017 and paid RM3.3 billion in hibah. A Royal Commission found the year was a RM1.4 billion loss.",
+      "sub": "It moved its write-down trigger twice that year, from a 70% fall to 85%, then 90%. The impairment charge shrank from RM1,313 million to RM1 million.",
+      "sources": [
+        "P1 para 3.13.11 p.111 (RM3.4b reported, RM1.4b restated under full MFRS; PwC reconciliation 3,412 − 4,258 − 7 − 580 = (1,433))",
+        "P1 para 3.11.7 p.92 (2017 hibah total RM3,323,741k)",
+        "P1 para 3.13.14 pp.112–113 (9.2–9.3 million depositors)",
+        "P1 paras 3.13.8–3.13.9 p.110 and 3.9.8 p.77 (threshold 70% → 85% → 90%, twice in FY2017; charge RM1,313m / RM171m / RM1m; LTH recorded RM1.0m)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "The commission found the chairman and several board members in 2014 to 2018 came from among politicians. The Act asks only that a member be Muslim and a citizen.",
+      "sub": "Hibah rates, haj fares and the HAFIS subsidy were 'driven by political elements', it found.",
+      "sources": [
+        "P1 Ringkasan Eksekutif para 12 p.xiv (chairman and several board members appointed from among politicians, 2014–2018; s.6(2) requires only Muslim and Malaysian citizen)",
+        "P1 Ringkasan Eksekutif para 13 p.xiv ('didorong oleh unsur-unsur politik': hibah, haj fare, HAFIS)",
+        "P1 Ringkasan Eksekutif para 10 pp.xiii–xiv (all three ministers' expertise confined to religious affairs; 'bergantung sepenuhnya' on management)",
+        "P2 Tabung Haji Act 1995 (Act 535), AGC reprint as at 1 Dec 2011, s.6(2)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "PwC's table shows the fund in deficit after every distribution from 2014. In 2017 it paid out RM3.32 billion and ended RM4.09 billion short.",
+      "sub": "Audit Department testimony put 2017 capacity at RM2.70 billion; the board paid RM3.31 billion. Hibah fell 72% in 2018, to RM923 million.",
+      "sources": [
+        "P1 para 3.13.7 p.109 (PwC series 2013–2017, RM'million: post-distribution 2,450 / (352) / (3,086) / (4,131) / (4,093); 2017 distribution (3,324))",
+        "P1 para 3.11.10 p.93 (JAN Deputy Director of Financial Audit Mona binti Othman: capacity RM2.70b at 4% annual minimum balance; paid RM3.31b at 6.25% monthly minimum; RM0.61b or 22.5% over)",
+        "P1 para 3.11.7 p.92 (2017 RM3,323,741k → 2018 RM922,959k; 72% fall)"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Section 22 bars a payout unless assets cover liabilities. Depositors' money sat in equity from 2010, a 'misrepresentation', so the gate cleared.",
+      "sub": "The 2017 accounts 'should not have been given a clean audit certificate', it found. Ex-Auditor-General Madinah Mohamad calls the comparison 'apples and oranges'.",
+      "sources": [
+        "P2 Act 535 s.22(3)(a), verbatim in brief RELEVANT LAW",
+        "P1 para 3.11.12 p.94 (Kumpulan Wang Pendeposit classified as equity since 2010; 'satu representasi salah')",
+        "P1 para 3.11.13 p.94 (equity classification plus insufficient impairment showed assets exceeding liabilities, 'membolehkan keuntungan (hibah) diisytiharkan mengikut seksyen 22(3)(a)')",
+        "P1 para 3.11.14 p.94 ('tidak seharusnya diberikan Sijil Audit Bersih'; Emphasis of Matter should have been stated as serious non-compliance)",
+        "S16 FMT 25 Aug 2026 (Madinah Mohamad: different purposes, terms of reference and methodology; 'apples and oranges')"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "On page 199 the commission asked that its report be made public. Putrajaya sealed it for almost four years, citing depositor panic. Those it protected were those kept in the dark.",
+      "sub": "",
+      "sources": [
+        "P1 para 4.6 p.199 ('Suruhanjaya berharap Kerajaan akan menimbang supaya laporan Suruhanjaya ini diumumkan kepada awam')",
+        "P1 title page (presented to the Yang di-Pertuan Agong 30 Ogos 2022)",
+        "P1 reclassified OPEN under s.2C Official Secrets Act 1972 by Cabinet decision 29 Jul 2026; JAKIM announcement page",
+        "S7 Malay Mail 24 Jul 2026 (Anwar: kept under wraps to avoid public panic and withdrawals)"
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "A bank rewrites its bad-loan rule twice in a year, pays a dividend on the result, then locks the inspector's report away so customers will not worry.",
+      "sub": "The 2018 rescue moved assets valued at RM9.63 billion to a Finance Ministry vehicle for RM19.9 billion. Tabung Haji says it prevented insolvency.",
+      "sources": [
+        "P1 paras 3.13.8–3.13.9 p.110 (threshold changed twice in FY2017)",
+        "P1 para 3.13.12 p.111 (losses grew to RM10 billion; Government acted 'dengan kadar segera')",
+        "P9 Urusharta Jamaah completion statement Dec 2018 via The Edge (market value RM9.63b; consideration RM19.9b: RM19.6b sukuk + RM300m cash; completed 28 Dec 2018)",
+        "P4 Tabung Haji statement 30 Jul 2026 via S8 Malay Mail 31 Jul 2026 (RM10b gap; prevented insolvency)"
+      ]
+    },
+    {
+      "t": "mature",
+      "big": "Tabung Haji says it pays on audited accounts since 2022. The ban on active politicians on its board is not yet law. The gate held every year; the number fed into it did not.",
+      "sub": "",
+      "sources": [
+        "P2 Act 535 s.22(3)(a)",
+        "P1 paras 3.11.9 p.93 and 3.11.13 p.94 (RAV basis 'tidak selaras' with s.22; gate cleared by presentation of the accounts)",
+        "P5 Tabung Haji statement 1 Aug 2026 via Malay Mail (distributes only on audited financial results; implementing since 2022; about 75% of recommendations implemented)",
+        "P1 para 4.4.1(a)–(c) pp.192–193 (amend Act 535: competence criteria; bar active politicians from chairman and board of LTH and subsidiaries)",
+        "S17 FMT 26 Aug 2026 (minister: Government concentrating on follow-up action; no amendment bill yet reported)"
+      ]
+    }
+  ],
+  "sources": "Numbering follows engine/briefs/tabung-haji-rci-2017-restatement.md §SOURCES. P1 Laporan Suruhanjaya Siasatan Diraja bagi Menyiasat Isu Pengurusan dan Operasi Lembaga Tabung Haji dari Tahun 2014 hingga 2020 (presented 30 Aug 2022; reclassified OPEN 29 Jul 2026; JAKIM flipbook, report page N = image N+38) — Ringkasan Eksekutif paras 9–17 pp.xiii–xv; paras 3.9.8 p.77, 3.11.7 p.92, 3.11.9–3.11.14 pp.93–94, 3.11.17–3.11.18 p.97, 3.13.5 p.108, 3.13.7 p.109, 3.13.8–3.13.9 p.110, 3.13.11–3.13.12 p.111, 3.13.13–3.13.17 pp.112–114, 4.4.1 pp.192–193, 4.6 p.199. P2 Tabung Haji Act 1995 (Act 535), AGC online reprint as at 1 Dec 2011, s.6(2), s.22, s.24. P4 Tabung Haji statement 30 Jul 2026 (via S8). P5 Tabung Haji statement 1 Aug 2026 (via Malay Mail 1 Aug 2026). P9 Urusharta Jamaah completion statement Dec 2018 (via The Edge). S7 Malay Mail 24 Jul 2026 (Anwar on withholding). S8 Malay Mail 31 Jul 2026 (TH defends 2018 restructuring). S16 FMT 25 Aug 2026 (Madinah Mohamad: RM4.8b gap not proof of audit failure). S17 FMT 26 Aug 2026 (Government concentrating on follow-up action). S18 FMT 30 Aug 2026 (C4: RM4.8b discrepancy calls for NAD review). S19 Malay Mail 1 Sep 2026 / The Star 2 Sep 2026 (former minister detained by MACC, remanded five days, s.16(a)(A) MACC Act; Saudi hotel lease). S20 FMT 3 Sep 2026 / The Star 4 Sep 2026 (ex-COO Adi Azuan Abdul Ghani: three charges under Penal Code s.165 pending; charging postponed to 24 Sep 2026 after hospitalisation). S21 The Star 11 Aug 2026 (special Dewan Rakyat sitting; opposition walkout). S22 FMT 3 Sep 2026 (RCI member: former AG was subpoenaed; her request to attend with the JAN deputy director was refused).",
+  "confidence": "High on every figure drawn from P1: each is read from the commission's own text at a cited paragraph and page, not from press summaries, and the FY2017 hibah figure (RM3.32b) was reconciled against two independent tables inside the report (3.11.7 and 3.13.7). High on s.22 wording (AGC reprint read verbatim), with one residual: no confirmation yet that s.22 was unamended between the 2011 reprint and FY2017. Medium-High on the withholding period: the 30 Aug 2022 presentation date is the report's own title page; the 29 Jul 2026 publication date is JAKIM's announcement; the depositor-panic rationale is the Prime Minister's own statement reported by Malay Mail. Medium on the 2018 transfer value (RM9.63b via UJSB/The Edge; TH says RM9.7b) and on 'not yet law' for the politician bar (negative claim; see needs_verification).",
+  "lenses_used": [
+    "Governance",
+    "Economic",
+    "Legal"
+  ],
+  "lenses_applicable_but_unused": [
+    "Historical",
+    "Political",
+    "Theological",
+    "Social"
+  ],
+  "needs_verification": [
+    "'paid RM3.3 billion in hibah' (hook big) and 'RM3.32 billion' (fact-2 big) versus 'RM3.31 billion' (fact-2 sub, JAN testimony): the first two are the commission's own tables (3.11.7 RM3,323,741k; 3.13.7 RM3,324m); RM3.31b is the JAN deputy director's testimony at 3.11.10. Confirm the three are the same payout described at different precision and, if Stage 3 prefers, harmonise to one figure. Press reports of RM2.75 billion appear nowhere in the report and must not be introduced.",
+    "'from a 70% fall in value to 85%, then 90%' (hook sub): P1 3.13.8–3.13.9 and 3.9.8 describe the thresholds as percentage falls below cost and a >24-month test at the 70% level. Confirm that describing the 70%/85%/90% triggers as 'fall in value' without the duration test is not an over-simplification that changes meaning.",
+    "'appointed from among politicians' (fact-1 big): P1 Ringkasan Eksekutif para 12 p.xiv. Confirm the commission's wording covers 'seorang Pengerusi LTH dan beberapa anggota Lembaga' for 2014–2018 exactly, and does not name a number of board members.",
+    "'all three religious affairs ministers of the period had expertise confined to religion' (fact-1 sub): P1 para 10 pp.xiii–xiv. Confirm the commission's characterisation is of all three ministers and is framed as expertise ('kepakaran'), not competence or fitness. This card must not read as a personal attack.",
+    "'depositors' funds sat in equity since 2010' (fact-3 big): P1 para 3.11.12 p.94. Confirm the year 2010 is the commission's, and whether the classification had changed by the time of the 2018 audit.",
+    "'compare apples and oranges' (fact-3 sub): FMT 25 Aug 2026 quotes former Auditor-General Madinah Mohamad. Confirm the quote is hers verbatim and that she was Auditor-General for the FY2017 audit (she served 2017–2019). Note an RCI member's 3 Sep 2026 statement that she was subpoenaed but declined to attend without the JAN deputy director; carry neither side as fact beyond what each said.",
+    "'on page 199 of its own report' (reframe): P1 para 4.6 p.199, report pagination (flipbook image 237). Confirm page number in the printed pagination.",
+    "'almost four years' (reframe): 30 Aug 2022 (title page) to 29 Jul 2026 (JAKIM announcement) is 3 years 10 months 29 days. Confirm both dates; 'three years and eleven months' is the precise alternative.",
+    "'assets valued at RM9.63 billion' (analogy sub): UJSB completion statement via The Edge gives RM9.63b; TH's 30 Jul 2026 statement gives RM9.7b. Consideration RM19.9b in both. Confirm which to carry; if Stage 3 prefers TH's own figure, use RM9.7b with attribution.",
+    "'no active politician on its board, is not yet law' (view): negative claim. As of 4 Sep 2026 no amendment bill to Act 535 has been reported tabled; the minister said on 26 Aug 2026 the Government is concentrating on follow-up action. Confirm no bill was tabled at the 11 Aug 2026 special sitting or since. If one has been, rewrite to 'awaits passage'.",
+    "'Tabung Haji says it has paid on audited accounts since 2022' (view): P5 TH statement 1 Aug 2026 via Malay Mail. Confirm the statement says 'since 2022' rather than 'from FY2022 results'."
+  ],
+  "source_notes": "Four different loss figures exist for 2017 and are different measures: RM1.4b is the restated FY2017 net loss under full MFRS (3.13.11); RM4.09b (rounded to RM4.1b in press) is PwC's post-distribution shortfall for 2017 (3.13.7), not the pre-distribution gap, which was RM769m; RM4.683b is PwC's accumulated loss at 31 Dec 2017 (3.13.11); RM10b is the commission's figure for losses at the point of the 2018 rescue (3.13.12). The cards use RM1.4b and RM4.09b only, each with its measure named, and never sum them. Two asset/liability pairs for 2017 exist: KAN's audit findings RM70.317b vs RM74.409b (3.11.11) and PwC's RM70,317m vs RM71,086m pre-distribution (3.13.7); the cards use PwC's series and do not cite the KAN pair. The FY2017 hibah is RM3.32b per the commission's two tables; the widely reported RM2.75b does not appear in the report and is excluded. The former chairman's RAV figures (RM74.7b assets, RM373m surplus, 11 Dec 2018 statement) are the counter-position on the accounting question; they are not carried on a card because the commission's finding at 3.11.9 is that RAV is not a s.22-compliant basis, but Stage 2 should judge whether their absence is an omission. The former Auditor-General's defence is carried verbatim as the balancing voice on the audit finding. Enforcement status as of 4 Sep 2026: no one convicted; ex-COO's charging under Penal Code s.165 postponed to 24 Sep; former minister detained 1 Sep and remanded five days under MACC Act s.16(a)(A); a former chairman and a former Treasury secretary-general released after seven-day remand without charge. None of this is on a card; the cards describe the commission's findings, not culpability.",
+  "_self_check": {
+    "every_big_traces_to_brief": true,
+    "every_sub_adds_verified_specific": true,
+    "four_cardinal_sins": {
+      "overclaim": "Checked. 'was a RM1.4 billion loss' mirrors the commission's 'sepatutnya merekodkan kerugian bersih RM1.4 bilion' under full MFRS; headline keeps 'was' because the commission states it as its finding, and the context card adds 'under full accounting standards'. 'Misrepresentation' is the commission's own 'representasi salah'. 'Driven by political elements' is the commission's 'didorong oleh unsur-unsur politik'. 'Sealed' describes OSA classification, per the s.2C reclassification.",
+      "underclaim": "Checked. The audit finding is carried at the commission's strength ('should not have been given a clean audit certificate'), not softened to 'lack of firmness'. The board-appointment finding is carried as the commission stated it.",
+      "misleading_framing": "Checked. The 2018 rescue is carried with TH's own defence (analogy sub); the former Auditor-General's defence is carried (fact-3 sub); TH's post-2022 audited-basis practice is carried (view). The withholding rationale is attributed to the Prime Minister, and the reframe does not assert motive beyond his stated reason. The 72% hibah fall is given with both endpoints.",
+      "unverified_detail": "Every number, date and quote traces to a P1 paragraph and page, the AGC reprint of Act 535, a TH or UJSB statement via a named outlet, or a named outlet quoting the speaker. Eleven items are listed in needs_verification for Stage 3 to chase first."
+    },
+    "3R": "No card adjudicates hibah as a religious concept, comments on the haj, or characterises depositors. 'Muslim and a citizen' quotes the statutory eligibility test at s.6(2) as a governance gap, not as commentary on belief. No royalty dimension beyond the factual presentation date to the Yang di-Pertuan Agong.",
+    "stealth": "No banned terms.",
+    "emotion_of_hook": "Anger at process (a fund told depositors one number, paid on it, and the correct number was a loss). Not sadness.",
+    "elevated_word": "None used in v1; 'imprimatur' (for the audit certificate) or 'amanah' (fiduciary trust) are candidates for Stage 6 to consider, with 'amanah' flagged as the riskier choice given religious-risk MEDIUM-HIGH.",
+    "reframe_shape": "Paradox / re-anchored actor (the protected were the uninformed). Not the 'X is not Y, Z is' template used on 2011.",
+    "length_budget": "Measured before saving (v1, final trim): headline 79, context 234, big 140-179, sub max 161, big+sub max 305, total 2006. Within every hard cap; over the ~1,700 soft total because the issue carries an analogy card and three balancing clauses (TH defence, ex-AG defence, post-2022 practice) that the accuracy standard requires."
+  },
+  "pa_score": 86,
+  "pa_score_rationale": "Every figure on every card is read from the commission's own report at a cited paragraph and page, with two independent in-report tables reconciled for the hibah figure; the statute is quoted from the AGC reprint; the institution's own defence, the former Auditor-General's defence and the Prime Minister's stated rationale are all carried. Deductions: the s.22-unamended check is open; the 'not yet law' claim is a negative that needs a Hansard check; the former chairman's RAV counter-figures are not on a card."
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "tabung-haji-rci-2017-restatement",
+  "issue_id": "2010",
+  "created_at": "2026-09-04T04:27:24.151Z",
+  "paths": {
+    "brief": "engine/briefs/tabung-haji-rci-2017-restatement.md",
+    "stage1": "engine/output/tabung-haji-rci-2017-restatement-stage1.json",
+    "stage2": "engine/output/tabung-haji-rci-2017-restatement-stage2.json",
+    "stage3": "engine/output/tabung-haji-rci-2017-restatement-stage3.json",
+    "stage6": "engine/output/tabung-haji-rci-2017-restatement-stage6-synthesis.json",
+    "reader": "engine/output/tabung-haji-rci-2017-restatement-reader.json",
+    "issue": "src/data/issues/2010.json",
+    "og_background": "public/og/backgrounds/issue-2010-bg.png"
+  },
+  "phases": {
+    "0_init": {
+      "done": true,
+      "at": "2026-09-04T04:27:24.166Z"
+    },
+    "1_research": {
+      "done": true,
+      "at": "2026-09-04T04:27:24.247Z",
+      "brief": "engine/briefs/tabung-haji-rci-2017-restatement.md",
+      "approved": "2026-09-04 by operator",
+      "note": "brief complete 2026-08-09; RCI report read with page citations"
+    },
+    "2_stage1": {
+      "done": true,
+      "at": "2026-09-04T04:36:25.973Z",
+      "pa_score": 86,
+      "cards": 7,
+      "lenses": [
+        "Governance",
+        "Economic",
+        "Legal"
+      ],
+      "needs_verification": 11,
+      "note": "every card cites report paragraph and page; brief PERIOD/SOURCES refreshed to 2026-09-04"
+    },
+    "3_browser_prompts": {
+      "done": true,
+      "at": "2026-09-04T04:36:53.687Z",
+      "note": "Stage 2 (Gemini) and Stage 3 (ChatGPT) prompts handed to operator in chat 2026-09-04; Stages 4/5 generated for legacy tooling, not used (Stage 5 escalation pending Stage 3 source_diversity_estimate)"
+    },
+    "4_stage2_collected": {
+      "done": true,
+      "at": "2026-09-04T05:45:32.641Z",
+      "path": "engine/output/tabung-haji-rci-2017-restatement-stage2.json",
+      "bias_score": 15
+    },
+    "4_stage3_collected": {
+      "done": true,
+      "at": "2026-09-04T05:47:01.442Z",
+      "path": "engine/output/tabung-haji-rci-2017-restatement-stage3.json",
+      "factual_accuracy_score": 78
+    },
+    "5_synthesis": {
+      "done": true,
+      "at": "2026-09-04T05:50:55.137Z",
+      "sr_score": 82,
+      "revisions": 20,
+      "note": "Stage 2 + Stage 3 integrated; Stage 5 not triggered (diversity 0.58)"
+    },
+    "6_legal_check": {
+      "done": true,
+      "at": "2026-09-04T05:52:46.937Z",
+      "result": "PASS",
+      "stealth": "CLEAN",
+      "language_warnings": 0,
+      "note": "3R, defamation, OSA, Sedition, CMA233, fact-trace and four-sins walked; see reader.json _provenance and stage6 revisions"
+    },
+    "7a_sherlock": {
+      "done": true,
+      "at": "2026-09-04T05:52:47.012Z",
+      "connections": 0,
+      "note": "fact-graph scan found no issue sharing >=2 entities incl. one non-money entity; related[] left empty. Brief-noted candidates 1029/1151/1278 are unpublished."
+    },
+    "7b_image_prompt": {
+      "done": true,
+      "at": "2026-09-04T05:52:47.109Z",
+      "note": "prompt handed to operator in chat 2026-09-04"
+    },
+    "7b_image_uploaded": {
+      "done": true,
+      "at": "2026-09-04T06:02:27.363Z",
+      "source": "https://grok.com/imagine/post/b0674100-64d8-4c9c-8e46-2d3e8a9bdc4c",
+      "processing": "cover 1200x630, luminance remap to #0f0f23"
+    },
+    "8_validated": {
+      "done": true,
+      "at": "2026-09-04T06:02:50.892Z",
+      "validate": "PASS",
+      "errors": 0,
+      "stealth": "CLEAN",
+      "language_warnings": 0,
+      "image": "public/og/backgrounds/issue-2010-bg.png 1200x630"
+    },
+    "9_deployed": {
+      "done": false
+    }
+  }
+}
