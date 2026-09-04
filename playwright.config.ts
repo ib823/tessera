@@ -40,8 +40,14 @@ export default defineConfig({
   },
 
   webServer: {
-    command: 'npx http-server dist -p 4321 --silent',
-    url: 'http://localhost:4321',
+    // Bind and probe on 127.0.0.1 explicitly. http-server listens on IPv4
+    // only, and Node resolves `localhost` to ::1 first on the GitHub runner,
+    // so a probe against http://localhost:4321 is refused until the 60 s
+    // webServer timeout expires ("Timed out waiting 60000ms from
+    // config.webServer") even though the server is up. The browser keeps
+    // baseURL as localhost; Chromium falls back to IPv4 on its own.
+    command: 'npx http-server dist -a 127.0.0.1 -p 4321 --silent',
+    url: 'http://127.0.0.1:4321',
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,
   },
