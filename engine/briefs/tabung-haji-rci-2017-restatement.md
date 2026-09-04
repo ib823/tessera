@@ -4,11 +4,11 @@
 **Proposed issue ID:** 2010
 **Radar provenance:** silence-watch fresh-track F7 (silence 0.92, structural importance 0.62,
 first seen 2026-07-30); develop-list pick A1, 2026-08-03 curation
-**Source date:** 2026-08-09 (was 2026-08-03; refreshed when the report itself was opened)
+**Source date:** 2026-09-04 (was 2026-08-09; PERIOD and SOURCES refreshed with August–September enforcement developments at Stage 1)
 **Brief status:** Phase 1 complete. **The blocking gap is closed** — the RCI report [P1] was
 retrieved and read on 2026-08-09 after twenty-one failed attempts across three sessions. The
 findings below marked ✅ are now quoted from the commission's own text with page citations.
-Stage 1 may begin. Awaiting user approval to proceed.
+Stage 1 approved and run on 2026-09-04 (see engine/output/tabung-haji-rci-2017-restatement-stage1.json).
 
 ## ISSUE
 
@@ -308,6 +308,28 @@ reason for withholding it from them.
   assess for prosecution. TH issues a statement defending the 2018 restructuring.
 - **1 Aug 2026** — TH says it has distributed on audited results since 2022 and has
   implemented about 75% of the recommendations.
+- **7 Aug 2026** — LHDN says it is investigating individuals identified in the RCI report [S15].
+- **11 Aug 2026** — Special Dewan Rakyat sitting to debate the report; ministerial briefing by
+  the Religious Affairs Minister, winding-up with Finance Minister II; opposition walks out after
+  a request to postpone over the Prime Minister's absence is refused [S21].
+- **13 Aug 2026** — Former Auditor-General Madinah Mohamad (in office 2017–2019) says she was
+  not called to testify; on 3 Sep an RCI member says she was subpoenaed but asked to attend with
+  the JAN deputy director, which the commission refused [S22].
+- **25 Aug 2026** — Madinah: the RM4.8b gap between the RCI/PwC restatement and the audit is not
+  proof of audit failure; different purposes, terms of reference and methodology, "apples and
+  oranges" [S16].
+- **26 Aug 2026** — Minister: Government concentrating on follow-up action on the report; no
+  Act 535 amendment bill reported tabled as of 4 Sep [S17].
+- **30 Aug 2026** — C4 Center calls for a review of the National Audit Department over the
+  RM4.8b discrepancy [S18].
+- **1–2 Sep 2026** — MACC detains a former minister (60s) over the leasing of a TH-linked hotel
+  in Saudi Arabia; remanded five days under MACC Act 2009 s.16(a)(A). A former TH chairman and a
+  former Treasury secretary-general were earlier released after a seven-day remand without
+  charge [S19].
+- **3–4 Sep 2026** — Former TH chief operating officer Adi Azuan Abdul Ghani, due to face three
+  charges under Penal Code s.165 at the Shah Alam Sessions Court, is hospitalised; charging
+  postponed to 24 Sep 2026 [S20]. **As of 4 Sep 2026 no one has been convicted and no charge has
+  been read; the accuracy posture above is unchanged.**
 
 ## ACTORS
 
@@ -612,6 +634,37 @@ depositor voice is exactly the omission T4A exists to correct.
   government for 19.9 billion ringgit", 2018
 - **[S14]** Malay Mail op-ed, "What Tabung Haji's buyback is really telling us" — Mohamed
   Hadi Abd Hamid and Mohd Zaidi Md Zabri, 31 Jul 2026
+- **[S15]** FMT, "LHDN investigating those identified in Tabung Haji RCI report", 7 Aug 2026 —
+  https://www.freemalaysiatoday.com/category/nation/2026/08/07/lhdn-investigating-those-identified-in-tabung-haji-rci-report
+- **[S16]** FMT, "RM4.8bil gap between TH reports not proof of audit failure, says ex A-G",
+  25 Aug 2026 — https://www.freemalaysiatoday.com/category/nation/2026/08/25/rm4-8bil-gap-between-th-reports-not-proof-of-audit-failure-says-ex-a-g
+  (also The Star 25–26 Aug 2026: RCI findings may have differed had she testified; no proof of
+  theft in the 2017 AG report)
+- **[S17]** FMT, "Govt concentrating on follow-up action on Tabung Haji RCI report, says
+  minister", 26 Aug 2026 — https://www.freemalaysiatoday.com/category/nation/2026/08/26/govt-concentrating-on-follow-up-action-on-tabung-haji-rci-report-says-minister
+- **[S18]** FMT, "RM4.8bil TH audit discrepancy calls for answers, says watchdog group",
+  30 Aug 2026 (C4 Center, Arief Hamizan) — https://www.freemalaysiatoday.com/category/nation/2026/08/30/rm4-8bil-th-audit-discrepancy-calls-for-anwers-says-watchdog-group
+- **[S19]** Malay Mail, "Former minister held by MACC to assist Tabung Haji RCI investigation on
+  hotel deal", 1 Sep 2026 — https://www.malaymail.com/news/malaysia/2026/09/01/former-minister-held-by-macc-to-assist-tabung-haji-rci-investigation-on-hotel-deal/233573 ;
+  The Star, "Tabung Haji RCI: Former minister in court for remand proceedings", 2 Sep 2026 —
+  https://www.thestar.com.my/news/nation/2026/09/02/tabung-haji-rci-former-minister-in-court-for-remand-proceedings ;
+  The Edge, 1 Sep 2026 — https://theedgemalaysia.com/node/816478 (four Makkah/Madinah hotel
+  leases 2015–2017, about SR1.43b upfront; s.16(a)(A) MACC Act 2009)
+- **[S20]** FMT, "Ex-Tabung Haji COO's graft case postponed to Sept 24", 3 Sep 2026 —
+  https://www.freemalaysiatoday.com/category/nation/2026/09/03/ex-tabung-haji-coo-s-graft-case-postponed-to-sept-24 ;
+  The Star, "Ex-Tabung Haji COO hospitalised, court case postponed", 4 Sep 2026 —
+  https://www.thestar.com.my/news/nation/2026/09/04/ex-tabung-haji-coo-hospitalised-court-case-postponed
+  (three charges under Penal Code s.165; hospitalised since 31 Aug)
+- **[S21]** The Star, "Special Dewan Rakyat sitting to debate Tabung Haji RCI report begins" and
+  "Opposition stages walkout during Dewan Rakyat special sitting on TH RCI report", 11 Aug 2026 —
+  https://www.thestar.com.my/news/nation/2026/08/11/special-dewan-rakyat-sitting-to-debate-tabung-haji-rci-report-begins ;
+  https://www.thestar.com.my/news/nation/2026/08/11/opposition-stages-walkout-during-dewan-rakyat-special-sitting-on-th-rci-report
+  (Hansard of the sitting is the primary record; not yet pulled)
+- **[S22]** Malay Mail, "Former auditor-general says 'right to be heard' denied after not called
+  to testify by Tabung Haji RCI", 13 Aug 2026 —
+  https://www.malaymail.com/news/malaysia/2026/08/13/former-auditor-general-says-right-to-be-heard-denied-after-not-called-to-testify-by-tabung-haji-rci/231147 ;
+  FMT (Bahasa), "Bekas ketua audit negara telah disapina, kata anggota RCI TH", 3 Sep 2026 —
+  https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/09/03/bekas-ketua-audit-negara-telah-disapina-kata-anggota-rci-th
 
 ## VERIFICATION GAPS — must close before Stage 1
 
