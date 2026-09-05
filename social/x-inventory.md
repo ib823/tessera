@@ -1,10 +1,44 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-05T03:25:49.009Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-05T08:11:09.310Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (84)
+## ⏳ TO POST (85)
+
+### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
+
+> ⚡ **Reactive: topic is live in the radar** (new cybercrime, anti-racing bills to join two constitutional amendments when parliament re). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
+
+**1/6** _(hook — attach image, NO link)_ · 248 chars
+```
+Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
+```
+**2/6** _(fact)_ · 111 chars
+```
+Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
+```
+**3/6** _(fact)_ · 247 chars
+```
+Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
+```
+**4/6** _(fact)_ · 150 chars
+```
+MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
+```
+**6/6** _(view — ONLY post with the link)_ · 162 chars
+```
+Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
+
+https://thefourthangle.pages.dev/issue/2012
+```
 
 ### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
 
