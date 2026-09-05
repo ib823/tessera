@@ -1,0 +1,156 @@
+{
+  "_provenance": {
+    "stage": "Stage 3 — Fact Verification",
+    "run_mode": "IN-SESSION REVIEW PASS, NOT AN EXTERNAL MODEL. The codex CLI required by scripts/run-external-stages.mjs is not installed in this environment, so this stage was executed as a separate verification pass against engine/templates/stage3-preamble.txt, with fresh web retrieval of every claim. Independence is WEAKER than on issues 2010 and 2011. Flagged for the operator at Phase 8.",
+    "prompt": "engine/prompts-generated/felda-forensic-audit-decade-lag-stage3-browser.txt",
+    "run_at": "2026-09-05"
+  },
+  "factual_accuracy_score": 86,
+  "source_diversity_estimate": 0.72,
+  "claims": [
+    {
+      "claim": "Ernst & Young audited eight Felda and FIC purchases and the findings were laid before Parliament in 2019.",
+      "status": "VERIFIED",
+      "m_true": 0.97,
+      "m_false": 0.0,
+      "m_unknown": 0.03,
+      "source": "Kertas Putih FELDA, Kertas Perintah 6 Tahun 2019, dated 10 April 2019, para 3.10 and Lampiran 1 - Bab 3, 'Kajian Forensik bagi Lapan Pembelian atau Pelaburan Aset', Ernst & Young Advisory Services Sdn Bhd, summary report dated 4 April 2019: https://www.pmo.gov.my/wp-content/uploads/2019/04/Kertas-Putih-FELDA-2019.pdf",
+      "correction": "None. The document is a Command Paper and its cover states it is laid before the Dewan Rakyat/Dewan Negara by order. Note the tabling-date discrepancy already logged as brief C1; the analysis correctly avoids asserting a tabling date.",
+      "stale_check": "Not applicable; a 2019 document."
+    },
+    {
+      "claim": "The report was annexed in full to the FELDA White Paper, Command Paper 6 of 2019.",
+      "status": "VERIFIED",
+      "m_true": 0.95,
+      "m_false": 0.0,
+      "m_unknown": 0.05,
+      "source": "Same document. Cover: 'Kertas Perintah 6 Tahun 2019'. Lampiran 1 reproduces the EY summary report including its executive summary, findings, per-deal case studies and limitations section.",
+      "correction": "'In full' is accurate for the summary report that EY prepared for the Ministry; the underlying working papers are not published. The card text does not claim otherwise."
+    },
+    {
+      "claim": "Ernst & Young found RM4.38 billion committed across the eight deals; roughly half of it, about RM2.2 billion, was already written off.",
+      "status": "VERIFIED",
+      "m_true": 0.96,
+      "m_false": 0.0,
+      "m_unknown": 0.04,
+      "source": "Lampiran 1, Paparan 1: 'Jumlah 4,382' (RM million) investment value; impairment per audited financial statements (2,116) plus potential additional impairment (92). Para 1.3.1: 'kerugian atau kemerosotan nilai aset yang dihadapi adalah lebih kurang 50% daripada nilai pelaburan asal yang berjumlah RM4.4 bilion, iaitu mencecah RM2.2 bilion'.",
+      "correction": "None. Both the total and the 'roughly half / RM2.2 billion' characterisation are the document's own."
+    },
+    {
+      "claim": "That was before the three London properties and the Sabah hotel were revalued.",
+      "status": "VERIFIED",
+      "m_true": 0.9,
+      "m_false": 0.0,
+      "m_unknown": 0.1,
+      "source": "Para 1.3.1: 'sebelum mengambil kira nilai semasa tiga aset yang dibeli di United Kingdom (UK) dan nilai semasa GBHSB'. The three UK assets are Grand Plaza Serviced Apartments (Bayswater), Park City Grand Plaza Kensington and Felda House/Grand Felda House (Wembley), all in London. GBHSB is Grand Borneo Hotel Sdn Bhd, Sabah. Note N8: no independent valuer was appointed for the UK assets.",
+      "correction": "The document says 'UK', not 'London'. All three assets are in fact in London, so the card is accurate, but 'revalued' should be read as EY's note that no independent valuation had been done. The wording is defensible."
+    },
+    {
+      "claim": "One write-down booked in 2017 belonged in 2012.",
+      "status": "VERIFIED",
+      "m_true": 0.93,
+      "m_false": 0.0,
+      "m_unknown": 0.07,
+      "source": "Lampiran 1, Paparan 1, DASB row: 'Tahun Penjejasan Nilai Dibuat' 2017 against 'Tahun Penjejasan Nilai Sepatut Dibuat' 2012. Supported by para 1.3.2, 'Laporan perakaunan yang tidak tepat'.",
+      "correction": "None. The same table shows a second instance (FWC, booked 2017 against 2015) and one asset not impaired at all against 2014, so the card understates rather than overstates."
+    },
+    {
+      "claim": "MACC's seven Felda files, announced on 2 September 2026, cover seven of the eight deals Ernst & Young audited. Only the Indonesian plantation stake is missing.",
+      "status": "VERIFIED",
+      "m_true": 0.94,
+      "m_false": 0.0,
+      "m_unknown": 0.06,
+      "source": "MACC chief commissioner Abd Halim Aman, press conference 2 September 2026, reported by The Edge Malaysia (https://theedgemalaysia.com/node/816579) and FMT (https://www.freemalaysiatoday.com/category/nation/2026/09/02/macc-opens-7-probe-papers-into-felda-subsidiary): six new papers on Tataran Aras (Limbang), Grand Borneo Hotel, Grand Plaza Serviced Apartments (London), Felda Wellness Corporation, Felda House and Grand Felda House, and Kuala Lumpur Vertical City, plus one existing paper on Park City Grand Plaza. Cross-referenced against Lampiran 1 para 1.1.1, which lists EHP, DASB, GBHSB, GPSA, KLVC, FWC, GPK and DEX.",
+      "correction": "The mapping is exact on seven items. PT Eagle High Plantations Tbk, an Indonesian listed plantation company, is the only EY item with no corresponding MACC paper, so 'the Indonesian plantation stake' is a fair description. Note the name discrepancy already logged as brief C2 (Dataran vs Tataran Aras); the card correctly does not name the company."
+    },
+    {
+      "claim": "MACC opened the Kensington file in 2017 and it is still open.",
+      "status": "MISLEADING",
+      "m_true": 0.55,
+      "m_false": 0.05,
+      "m_unknown": 0.4,
+      "source": "MACC's 2 September 2026 statement says an existing investigation paper on the Park City Grand Plaza property 'has yet to be closed' and is undergoing mutual legal assistance. Separately, Malay Mail 14 July 2017 ('MACC says probing Felda Investment Corp for overpriced London hotel buy') and 3 August 2017 ('MACC chief says probe papers on FIC hotel purchases almost ready') report MACC opening papers on FIC's London and Kuching hotel purchases, the London one being the Grand Plaza Kensington bought in December 2014 for GBP60 million.",
+      "correction": "REQUIRED. Two separately sourced facts are fused into one asserted continuity. MACC has not stated that the still-open Park City Grand Plaza paper is the 2017 paper. The inference is strong but it is an inference. Rewrite as two attributed statements, for example: 'MACC began investigating the Kensington purchase in 2017. It says that file is still not closed.' That is fully supported and loses no force.",
+      "stale_check": "Checked against the most recent MACC statement, 2 September 2026."
+    },
+    {
+      "claim": "Mohd Isa Abdul Samad's conviction became final on 26 June 2026.",
+      "status": "VERIFIED",
+      "m_true": 0.95,
+      "m_false": 0.0,
+      "m_unknown": 0.05,
+      "source": "Federal Court, 26 June 2026, three-member bench chaired by Chief Judge of Sabah and Sarawak Azizah Nawawi, dismissing the application for leave to review under Rule 137 of the Federal Court Rules 1995, finding no miscarriage of justice. Reported by Malay Mail (https://www.malaymail.com/news/malaysia/2026/06/26/federal-court-rejects-isa-samads-final-bid-to-overturn-rm3m-graft-conviction/225311) and Borneo Post (https://www.theborneopost.com/2026/06/26/federal-court-rejects-isa-samads-bid-for-leave-to-review-graft-conviction-sentence/).",
+      "correction": "Accurate. Reporting notes the only remaining avenue is a royal pardon, which does not disturb finality of the conviction. The analysis rightly does not mention the pardon route.",
+      "stale_check": "Current as at 5 September 2026; no later development found."
+    },
+    {
+      "claim": "nine years after MACC opened files on the Felda hotel purchases in 2017",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0.05,
+      "m_unknown": 0.15,
+      "source": "MACC confirmed the FIC hotel investigation on 14 July 2017 and reported the papers 60% complete on 3 August 2017 (Malay Mail). Final conviction 26 June 2026.",
+      "correction": "Optional precision note. July 2017 to June 2026 is eight years and eleven months, so 'nine years' rounds up by one month. It is defensible as a span across nine calendar years and the card also states the 2017 anchor date, letting the reader check. Acceptable as written; 'nearly nine years' would be marginally safer."
+    },
+    {
+      "claim": "Felda also sued 21 defendants for RM2 billion over the Jalan Semarak land in 2019.",
+      "status": "VERIFIED",
+      "m_true": 0.88,
+      "m_false": 0.0,
+      "m_unknown": 0.12,
+      "source": "The Star, 15 November 2019, 'Felda sues Isa Samad, Shahrir, 19 others over Jalan Semarak land deal' (21 defendants; filed by Felda and FIC in the High Court; relief sought includes cancellation of the Jalan Semarak land transfer instruments): https://www.thestar.com.my/news/nation/2019/11/15/felda-sues-isa-samad-shahrir-19-others-over-jalan-semarak-land-deal. The RM2 billion quantum is from The Edge Malaysia, 'Felda and FIC file RM2 billion suit against Isa, Shahrir and Synergy Promenade'.",
+      "correction": "The defendant count and the filing are confirmed by a named outlet reporting the filing. The RM2 billion quantum comes from a different outlet than the count; both are reputable and consistent. Retain."
+    },
+    {
+      "claim": "That case was still in pretrial applications in 2025.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0.0,
+      "m_unknown": 0.15,
+      "source": "The Edge Malaysia, January 2025, 'Shahrir wants law firm representing Felda and FIC to be disqualified; trial postponed' (https://theedgemalaysia.com/node/740411): an application to disqualify the plaintiffs' solicitors and a further application to stay pending its disposal; trial postponed.",
+      "correction": "Accurate for 2025. No source found showing the suit has since gone to trial. The card says 'still in pretrial applications in 2025' and does not assert the present position, which is the right level of caution."
+    },
+    {
+      "claim": "Putrajaya is weighing whether to order a forensic audit of Felda.",
+      "status": "VERIFIED",
+      "m_true": 0.93,
+      "m_false": 0.0,
+      "m_unknown": 0.07,
+      "source": "Deputy Prime Minister Ahmad Zahid Hamidi called for a forensic audit and said he was open to an RCI, 23 August 2026 (FMT). Prime Minister Anwar Ibrahim said the proposal would be brought to Cabinet, 25 August 2026 (FMT, NST, BusinessToday, The Star 26 Aug).",
+      "correction": "None. 'Weighing whether to order' correctly reflects a proposal going to Cabinet rather than a decision taken.",
+      "stale_check": "No report found of a Cabinet decision as at 5 September 2026. If one lands before publication, the hook must be updated."
+    },
+    {
+      "claim": "the settlers paid for it",
+      "status": "UNVERIFIED",
+      "m_true": 0.5,
+      "m_false": 0.1,
+      "m_unknown": 0.4,
+      "source": "Kertas Putih FELDA 2019, Ringkasan Eksekutif p.1: 'FELDA juga berhadapan dengan isu kelewatan pembayaran Sara Hidup dan Pendahuluan Hasil kepada peneroka disebabkan aliran tunai FELDA yang kritikal.' This establishes that settlers suffered delayed Sara Hidup and Pendahuluan Hasil payments because of Felda's critical cash flow.",
+      "correction": "REQUIRED if the claim stays. A primary source does support settler harm from Felda's cash position, but no card in the issue shows it, so the assertion is unevidenced from the reader's side. Either put the delayed Sara Hidup and Pendahuluan Hasil payments on a card, or drop the clause. Do not leave it asserted and unshown."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "MACC opened the Kensington file in 2017 and it is still open.",
+      "why": "Presents an inference joining two sources as a single stated fact. See the claim entry above for the supported rewrite.",
+      "primary_source": "MACC statement 2 September 2026; Malay Mail 14 July and 3 August 2017"
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "the settlers paid for it",
+      "why": "Asserted in the closing card with no supporting card anywhere in the issue. A primary source exists for it and should be used, or the clause removed.",
+      "primary_source": "Kertas Putih FELDA 2019, Ringkasan Eksekutif p.1"
+    }
+  ],
+  "omitted_facts": [
+    "Ernst & Young's conduct findings, not just its arithmetic: para 1.3.3 records governance failure and approvals without due diligence, and para 1.3.4 records 'elemen ketidakpatuhan dan salah laku' (elements of non-compliance and misconduct), including purchases made without or contrary to board approval. This is the harshest verified characterisation available and the analysis does not use it. Same source as the money figures.",
+    "Ernst & Young recommended at para 1.3.6 that the Government consider reviewing the Land Development Act 1956 (Act 474) to introduce check-and-balance elements, noting that the former Felda chairman chaired nearly every significant Felda board and committee. I could not verify whether Act 474 has been amended since: the AGC portal (lom.agc.gov.my) returned an invalid request, and open legal databases show the Act as revised 1991 with a reprint incorporating amendments to 1 January 2006. This remains UNRESOLVED and must stay off the cards, as the analysis has correctly done.",
+    "The Kuala Lumpur Vertical City finding is more severe than any card conveys: EY records that Felda land was transferred to third parties without Felda's knowledge, and that Felda would be bound to rental commitments of at least RM1.5 billion over 20 years despite having paid nothing. Source: Lampiran 1, Paparan 1, KLVC row.",
+    "The conviction that became final on 26 June 2026 concerns the Merdeka Palace Hotel & Suites in Kuching, which is NOT one of the eight deals Ernst & Young audited. This sharpens the issue's thesis and is verified, but it is a negative-adjacent claim: I could not establish that none of the eight produced a charge, so it should be used only as stated (the convicted deal was outside the eight), never as 'none of the eight led to charges'.",
+    "The Auditor-General's Report for 2022 recorded a Felda net loss of RM1 billion against RM545 million in 2021, RM8.66 billion owed to external institutions, and criticised dependence on federal grants. Not used on a card; available if a card needs a present-day financial anchor."
+  ],
+  "source_assessment": "Source range is good and materially better than a typical single-outlet reconstruction. The load-bearing claim rests on a government Command Paper and its appended forensic report, both public, plus a dated MACC press statement carried by two independent outlets, plus court decisions reported by two outlets each. Spectrum spans official (PMO, Auditor-General, Parliament, MACC), government-aligned (Bernama, NST), independent and opposition-leaning (FMT, Malay Mail, Malaysiakini), business (The Edge, The Malaysian Reserve), civil society (C4 Center, Aliran) and international (BenarNews). Estimated diversity 0.72, comfortably above the 0.4 threshold that would force Stage 5 escalation. The clear gap is affected-party voice: no settler, settler cooperative or plantation-worker source appears anywhere, and the only settler-facing evidence in the entire source set is the White Paper's own two-line account of delayed payments. Two secondary gaps: the Ernst & Young working papers behind the published summary are not available, and the Federal Court decision that restored the conviction after the March 2024 acquittal could not be pinned to a dated primary report, which is why only the 26 June 2026 date is used.",
+  "overall_assessment": "Factually reliable. The central finding, that seven of the eight deals forensically audited for the 2019 White Paper are the seven MACC opened investigation papers on in September 2026, is a document-to-document comparison that I reproduced independently from the primary text and it holds exactly. Every money figure traces to the Ernst & Young annex's own tables and wording, and the analysis has correctly excluded the two weakest items in circulation, the unidentified August 2026 hotel and the RM10 billion figure whose basis is reported inconsistently. Two corrections are required before publication: the Kensington card fuses an inference into a stated fact and must be split into two attributed statements, and the closing clause about settlers must either be evidenced on a card from the White Paper's account of delayed Sara Hidup payments or removed. One significant omission should be repaired: the analysis reports what Ernst & Young counted but not what it found about conduct, which is both harsher and equally sourced."
+}

@@ -1,0 +1,191 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis (Claude)",
+    "slug": "felda-forensic-audit-decade-lag",
+    "issue_id": "2012",
+    "brief": "engine/briefs/felda-forensic-audit-decade-lag.md",
+    "generated_at": "2026-09-05",
+    "revision_history": [
+      "v1 (2026-09-05): initial draft after Phase 1. Source channel: radar issue-queue CI scan 2026-09-04 22:13 UTC, curated Tier A3. Frame: the Ernst & Young forensic study of eight Felda/FIC deals, annexed to the FELDA White Paper and laid before Parliament in April 2019, set against MACC's September 2026 announcement of seven investigation papers covering seven of those same eight deals, and against an August 2026 Cabinet proposal for a fresh forensic audit. Anchor: anger-at-process, bipartisan."
+    ],
+    "discipline": "Critique the interval between a published forensic audit and enforcement, NOT the settlers and NOT any community. The record is deliberately bipartisan: the deals are BN-era, the White Paper is Pakatan Harapan's, and the 2026 reopening runs under a unity government whose Deputy Prime Minister is the one demanding the new audit. MACC investigation papers are investigations, not findings; no living person under investigation is named. Only Mohd Isa Abdul Samad is named, because his conviction is final (26 June 2026). The August 2026 hotel-sale proposal is excluded from every card because no report identifies the asset (brief C4). Anwar's RM10b figure is excluded because its basis is reported inconsistently (brief C5). Ethnic risk MEDIUM, Religious LOW, Royalty LOW; Stage 5 not triggered."
+  },
+  "headline": "Eight Felda deals were audited in 2019. MACC opened papers on seven of them in 2026.",
+  "context": "In 2019 the Economic Affairs Ministry had Ernst & Young audit eight Felda and FIC purchases, and laid the findings before Parliament. In September 2026 the anti-graft agency opened investigation papers on seven of the same deals.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young delivered one in 2019, and Parliament has had it since.",
+      "sub": "It covered eight Felda and FIC purchases and was annexed in full to the FELDA White Paper, Command Paper 6 of 2019.",
+      "sources": ["S1", "S26", "S27", "S28"]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Mohd Isa Abdul Samad's conviction became final on 26 June 2026, nine years after MACC opened files on the Felda hotel purchases in 2017.",
+      "sub": "Felda also sued 21 defendants for RM2 billion over the Jalan Semarak land in 2019. That case was still in pretrial applications in 2025.",
+      "sources": ["S10", "S11", "S12", "S13", "S17", "S18"]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "Ernst & Young found RM4.38 billion committed across the eight deals. Roughly half of it, about RM2.2 billion, was already written off.",
+      "sub": "That was before the three London properties and the Sabah hotel were revalued. One write-down booked in 2017 belonged in 2012.",
+      "sources": ["S1"]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "MACC's seven Felda files, announced on 2 September 2026, cover seven of the eight deals Ernst & Young audited.",
+      "sub": "Only the Indonesian plantation stake is missing. MACC opened the Kensington file in 2017 and it is still open.",
+      "sources": ["S1", "S2", "S3", "S12", "S13"]
+    },
+    {
+      "t": "reframe",
+      "big": "Seven of the eight deals were audited in 2019 and investigated in 2026. The seven years in between are the finding nobody commissioned.",
+      "sub": "",
+      "sources": ["S1", "S2", "S3"]
+    },
+    {
+      "t": "analogy",
+      "big": "It is like paying for a survey of a house you own, filing it, then paying for a second survey because nobody acted on the first.",
+      "sub": "The surveys are not the cost. The years the house spends unrepaired are.",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "big": "Malaysia audited Felda more closely than almost any agency it owns. What followed the audit was forbearance, and the settlers paid for it.",
+      "sub": "",
+      "sources": ["S1", "S4"]
+    }
+  ],
+  "sources": "FELDA White Paper (Kertas Perintah 6 Tahun 2019, 10 April 2019) and its Ernst & Young forensic annex; MACC chief commissioner's statement of 2 September 2026 (The Edge, FMT); Auditor-General's Report on Felda 2022; Federal Court 26 June 2026 (Malay Mail, Borneo Post); Court of Appeal 6 March 2024; High Court 3 February 2021; Felda/FIC civil suit November 2019 (The Star, The Edge); MACC 2017 statements (Malay Mail, The Star); C4 Center and Aliran 2019; FMT/NST August 2026 on the Cabinet proposal.",
+  "confidence": "High — the central finding is a comparison between two public documents: the list of eight deals at para 1.1.1 of the Ernst & Young annex to the 2019 White Paper, and the list of seven investigation papers announced by the MACC chief commissioner on 2 September 2026. Both lists are quoted in full in the brief. Every figure on a card is taken from the White Paper's own tables or from a dated court decision. The two weakest links are handled by exclusion rather than hedging: the unidentified August 2026 hotel and Anwar's RM10b figure appear on no card.",
+  "lenses_used": ["Legal", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Historical", "Political", "Rights"],
+  "needs_verification": [
+    "Whether the Land Development Act 1956 (Act 474) has been amended since 2019, when Ernst & Young recommended at para 1.3.6 that the Government consider reviewing it to introduce check-and-balance elements. The AGC portal returned an invalid request and open sources show no amendment after 1991. NOT USED ON ANY CARD. If Stage 3 can confirm the negative against the AGC gazette list, it is a strong additional fact card.",
+    "Whether any of the eight Ernst & Young deals produced a criminal charge between 2019 and 2026. Isa Samad's conviction concerns the Merdeka Palace Hotel & Suites in Kuching, which is NOT among the eight. No card claims that no charges followed; the brief treats absence of evidence as a gap, not a finding.",
+    "The date of the Federal Court decision that restored the 2021 conviction after the 6 March 2024 acquittal. Only the 26 June 2026 review dismissal is used on a card, because that date is firmly sourced to two outlets.",
+    "Whether Felda's 2022 and 2023 annual reports were in fact tabled in 2026 as the Deputy Prime Minister undertook in December 2025. Not used on a card.",
+    "The identity of the hotel in the August 2026 RM330m sale proposal. No report names it and no audited deal matches the GBP160m figure exactly. Excluded from all cards."
+  ],
+  "source_notes": "Six contradictions are logged in the brief with resolution rules. (C1) The White Paper cover is dated 10 April 2019 while several reports say it was tabled on 11 April; cards say 'April 2019' and the hook cites the Command Paper number rather than a tabling date. (C2) The White Paper reads 'Dataran Aras Sdn Bhd' where September 2026 reports read 'Tataran Aras'; the company is not named on any card. (C3) The Edge reports six investigation papers and FMT seven; the reconciliation is six new files opened on information received 24 August plus one pre-existing Park City Grand Plaza file under mutual legal assistance, so seven is correct and the fact card states the composition. (C4) The August 2026 hotel is unidentified in every report and matches no audited deal exactly; excluded. (C5) Three different loss figures circulate on three different bases: RM4.9b group loss for 2017 (White Paper), RM1b net loss for 2022 (Auditor-General), and 'approaching RM10b' (Anwar, 27 July 2026, reported variously as losses and as debt). Cards use only the White Paper's impairment figures, which are the ones tied to the eight deals. (C6) The Isa Samad kickback figure is reported as RM3m and RM3.09m; no card uses it. The brief also flags that settler-side voice is thin across the source set, represented only through the White Paper's own account of delayed Sara Hidup and Pendahuluan Hasil payments; Stage 2 should test whether that omission skews the framing."
+}
