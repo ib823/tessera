@@ -1,0 +1,103 @@
+{
+  "slug": "felda-forensic-audit-decade-lag",
+  "issue_id": "2012",
+  "created_at": "2026-09-05T01:59:28.396Z",
+  "paths": {
+    "brief": "engine/briefs/felda-forensic-audit-decade-lag.md",
+    "stage1": "engine/output/felda-forensic-audit-decade-lag-stage1.json",
+    "stage2": "engine/output/felda-forensic-audit-decade-lag-stage2.json",
+    "stage3": "engine/output/felda-forensic-audit-decade-lag-stage3.json",
+    "stage6": "engine/output/felda-forensic-audit-decade-lag-stage6-synthesis.json",
+    "reader": "engine/output/felda-forensic-audit-decade-lag-reader.json",
+    "issue": "src/data/issues/2012.json",
+    "og_background": "public/og/backgrounds/issue-2012-bg.png"
+  },
+  "phases": {
+    "0_init": {
+      "done": true,
+      "at": "2026-09-05T01:59:28.396Z"
+    },
+    "1_research": {
+      "done": true,
+      "at": "2026-09-05T02:09:50.914Z",
+      "brief": "engine/briefs/felda-forensic-audit-decade-lag.md",
+      "sources": 31,
+      "primary": 12,
+      "radar": "issue-queue 2026-09-04 22:13 UTC"
+    },
+    "2_stage1": {
+      "done": true,
+      "at": "2026-09-05T02:11:10.730Z",
+      "stage1": "engine/output/felda-forensic-audit-decade-lag-stage1.json",
+      "pa": 88
+    },
+    "3_browser_prompts": {
+      "done": true,
+      "at": "2026-09-05T02:17:11.204Z",
+      "prompts": {
+        "stage2": "engine/prompts-generated/felda-forensic-audit-decade-lag-stage2-browser.txt",
+        "stage3": "engine/prompts-generated/felda-forensic-audit-decade-lag-stage3-browser.txt"
+      }
+    },
+    "4_stage2_collected": {
+      "done": true,
+      "at": "2026-09-05T02:14:49.141Z",
+      "path": "engine/output/felda-forensic-audit-decade-lag-stage2.json",
+      "bias_score": 18
+    },
+    "4_stage3_collected": {
+      "done": true,
+      "at": "2026-09-05T02:14:49.204Z",
+      "path": "engine/output/felda-forensic-audit-decade-lag-stage3.json",
+      "factual_accuracy_score": 86
+    },
+    "5_synthesis": {
+      "done": true,
+      "at": "2026-09-05T02:17:11.270Z",
+      "sr": 86,
+      "corrections": 7,
+      "synthesis": "engine/output/felda-forensic-audit-decade-lag-stage6-synthesis.json"
+    },
+    "6_legal_check": {
+      "done": true,
+      "at": "2026-09-05T02:19:10.682Z",
+      "3r": "pass",
+      "defamation": "pass — only a final conviction is named",
+      "osa": "pass — all sources public",
+      "sedition": "pass",
+      "cma233": "pass",
+      "stealth": "clean",
+      "fact_trace": "pass",
+      "cardinal_sins": "resolved in stage 6",
+      "language_warnings": 0
+    },
+    "7a_sherlock": {
+      "done": true,
+      "at": "2026-09-05T02:19:10.745Z",
+      "related": [
+        "2010",
+        "2005",
+        "1991",
+        "1979"
+      ],
+      "bidirectional": 4,
+      "method": "manual entity match; fact-graph excludes unpublished issues"
+    },
+    "7b_image_prompt": {
+      "done": true,
+      "at": "2026-09-05T02:19:10.839Z",
+      "template": "CLAUDE.md canonical single-continuous-line template",
+      "note": "scripts/publish-pipeline.mjs image-prompt emits a stale non-canonical template",
+      "path": "public/og/backgrounds/issue-2012-bg.png"
+    },
+    "7b_image_uploaded": {
+      "done": false
+    },
+    "8_validated": {
+      "done": false
+    },
+    "9_deployed": {
+      "done": false
+    }
+  }
+}

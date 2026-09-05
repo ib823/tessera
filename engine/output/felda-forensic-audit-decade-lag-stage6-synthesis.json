@@ -1,0 +1,80 @@
+{
+  "_provenance": {
+    "stage": "Stage 6 — Synthesis (Claude)",
+    "slug": "felda-forensic-audit-decade-lag",
+    "issue_id": "2012",
+    "generated_at": "2026-09-05",
+    "inputs": ["stage1", "stage2", "stage3"],
+    "retired_stages": "Stages 4 (DeepSeek alt-framing) and 5 (Grok contrarian) are retired per docs/adr/0004. Stage 5 escalation was assessed and NOT triggered: Religious LOW, Royalty LOW, Ethnic MEDIUM, Political MEDIUM, no CRITICAL political risk, and Stage 3 returned source_diversity_estimate 0.72, well above the 0.4 floor.",
+    "independence_caveat": "Stages 2 and 3 were run as in-session review passes rather than by external models, because the gemini and codex CLIs are not installed in this environment. Their independence is weaker than on issues 2010 and 2011. This is disclosed in each stage file and must be surfaced to the operator before publication."
+  },
+  "revisions": [
+    {
+      "tag": "REPHRASED (Stage 2)",
+      "target": "fact card 2, sub",
+      "from": "That was before the three London properties and the Sabah hotel were revalued. One write-down booked in 2017 belonged in 2012.",
+      "to": "The auditors also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.",
+      "why": "Stage 2 and Stage 3 both flagged an UNDERCLAIM: the draft reported what Ernst & Young counted and omitted what it found about conduct. Paras 1.3.3 and 1.3.4 of the annex record governance failure, approvals given without due diligence, and expressly 'elemen ketidakpatuhan dan salah laku'. That is the verified harshest accurate phrasing and it is now used. The displaced accounting-lag detail is a lesser finding and was cut for budget."
+    },
+    {
+      "tag": "CORRECTED (Stage 3)",
+      "target": "fact card 3, sub",
+      "from": "Only the Indonesian plantation stake is missing. MACC opened the Kensington file in 2017 and it is still open.",
+      "to": "Only the Indonesian plantation stake is missing. MACC began probing the Kensington purchase in 2017 and says that file is still open.",
+      "why": "Stage 3 graded the original MISLEADING. It fused two separately sourced facts into one asserted continuity: MACC's 2 September 2026 statement says the Park City Grand Plaza paper has yet to be closed, but does not date that paper to 2017. The rewrite states both facts with their own attribution and asserts no link between the two file numbers."
+    },
+    {
+      "tag": "CORRECTED (Stage 3)",
+      "target": "view card",
+      "from": "Malaysia audited Felda more closely than almost any agency it owns. What followed the audit was forbearance, and the settlers paid for it.",
+      "to": "big: 'Malaysia audited Felda more closely than almost any agency it owns. Scrutiny was never what failed. Follow-through was.' / sub: 'While the deals were being written down, the White Paper recorded settlers waiting on delayed Sara Hidup and Pendahuluan Hasil payments.'",
+      "why": "Two flags resolved at once. Stage 2 graded 'forbearance' an OVERCLAIM because the issue's own fact card records a criminal conviction and a civil suit, so the state did enforce, slowly and partially; 'follow-through was' is the accurate claim and keeps the force. Stage 3 graded 'the settlers paid for it' UNVERIFIED because no card evidenced it. The sub now carries the primary source directly (White Paper, Ringkasan Eksekutif p.1, delayed Sara Hidup and Pendahuluan Hasil payments), so the settler consequence is shown rather than asserted. This also answers Stage 2's HIGH omission flag that settlers were the subject of the closing sentence and otherwise absent from the entire issue."
+    },
+    {
+      "tag": "REPHRASED (Stage 2)",
+      "target": "context",
+      "from": "In 2019 the Economic Affairs Ministry had Ernst & Young audit eight Felda and FIC purchases, and laid the findings before Parliament. In September 2026 the anti-graft agency opened investigation papers on seven of the same deals.",
+      "to": "In 2019 the Economic Affairs Ministry had Ernst & Young audit eight Felda and FIC purchases and laid the findings before Parliament. A different government is now weighing a second audit, and the anti-graft agency has opened papers on seven of the same deals.",
+      "why": "Stage 2 MEDIUM omission flag: the bipartisan record was declared in the provenance block but invisible to the reader, leaving the issue readable as anti-incumbent. 'A different government' establishes that the audit and the reopening sit under different administrations without naming a party, which preserves the non-partisan posture while restoring the anger-at-process anchor."
+    },
+    {
+      "tag": "CORRECTED (Stage 3)",
+      "target": "fact card 1, big",
+      "from": "nine years after MACC opened files on the Felda hotel purchases in 2017",
+      "to": "nearly nine years after MACC opened its first Felda hotel files in 2017",
+      "why": "Stage 3 noted July 2017 to June 2026 is eight years and eleven months, so 'nine years' rounded up by a month. 'Nearly nine years' is exact and costs nothing."
+    },
+    {
+      "tag": "INTRODUCED (Stage 6 self-verified)",
+      "target": "analogy card",
+      "from": "It is like paying for a survey of a house you own, filing it, then paying for a second survey because nobody acted on the first.",
+      "to": "REMOVED",
+      "why": "Not a correction from a stage critique, so recorded here as a Stage 6 editorial decision. Two reasons. First, the length budget: with the settler evidence added to the view card the issue ran to about 1,913 characters against a 1,700 soft cap. Second, the analogy restated the reframe in metaphor without adding a reader-facing fact; CLAUDE.md treats the analogy card as optional and warranted only when it makes an issue intuitive. A published report followed by no action needs no analogy. Removal brings the issue to 1,641 characters and six cards."
+    },
+    {
+      "tag": "INTRODUCED (Stage 6 self-verified)",
+      "target": "several fields",
+      "from": "n/a",
+      "to": "Length trims across context, both fact card 1 fields, fact card 2 sub, fact card 3 sub, hook sub and view sub.",
+      "why": "Budget only. Every trimmed clause was checked against its primary source after trimming; no figure, date, name or attribution changed meaning. Verified: RM4.38 billion and RM2.2 billion against Paparan 1 and para 1.3.1; 21 defendants and the November 2019 filing against The Star of 15 November 2019; 26 June 2026 against Malay Mail and Borneo Post; the 2 September 2026 announcement against The Edge and FMT; the Sara Hidup and Pendahuluan Hasil delays against the White Paper executive summary."
+    }
+  ],
+  "unresolved": [
+    "Whether the Land Development Act 1956 (Act 474) has been amended since Ernst & Young recommended a check-and-balance review at para 1.3.6 in 2019. Stage 3 could not confirm the negative: the AGC portal returned an invalid request and open databases show the Act as revised 1991 with a reprint to 1 January 2006. NOT PUBLISHED. This is the single strongest additional fact card available if a future session can confirm it against the AGC gazette list.",
+    "Whether any of the eight audited deals produced a criminal charge between 2019 and 2026. The issue states only that the deal behind the final conviction (Merdeka Palace Hotel & Suites, Kuching) is not among the eight, which is verified. It does not claim that none of the eight led to charges.",
+    "The identity of the hotel in the August 2026 RM330m sale proposal. Excluded from every card, per brief C4.",
+    "Whether Cabinet has decided on the forensic-audit proposal. No report found as at 5 September 2026. The hook says 'weighing whether to order', which stays accurate until a decision lands. Re-check at Phase 8."
+  ],
+  "not_actioned": [
+    {
+      "flag": "Stage 2 LOW geographic flag: Sarawak absent, Sabah present only as an object.",
+      "why": "The rewritten fact card 2 sub drops asset geography entirely in favour of Ernst & Young's conduct finding, so the asymmetry no longer appears in reader-facing text. Adding East Malaysian geography back would cost budget the issue does not have. Noted for any future edition."
+    },
+    {
+      "flag": "Elevated-vocabulary posture rule (one carefully chosen sophisticated word per issue).",
+      "why": "Deliberately not satisfied. 'Forbearance' was the candidate and Stage 2 showed it overclaimed. Substitutes tested and rejected: 'lacuna' fails the no-substitute test because 'gap' reads as well, and 'amanah' was already used in issue 2008. CLAUDE.md warns that a carelessly placed elevated word reads as performative, so none is used here rather than one forced in."
+    }
+  ],
+  "sr_score": 86,
+  "sr_justification": "All three cardinal-sin flags raised across Stages 2 and 3 are resolved, and two of the three resolutions made the issue stronger rather than softer: the underclaim fix promotes Ernst & Young's own finding of non-compliance and misconduct onto a card, and the settler fix replaces an asserted emotional payoff with a primary-sourced one. The Stage 2 HIGH omission flag and MEDIUM framing flag are both answered. Every unresolved item is excluded from publication rather than hedged. The score is held at 86 rather than higher because Stages 2 and 3 were not externally independent, and because the strongest available structural finding, the fate of the Act 474 recommendation, could not be verified and is therefore missing from the published issue."
+}
