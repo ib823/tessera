@@ -303,3 +303,77 @@ Environmental/Legal/Regional (2011); Legal and Governance recur but the combinat
 MACC statement of 2 Sep 2026, [S4] the AG's Report, [S5] the Dewan Negara written reply, [S6]–[S11]
 the court decisions, [S29] Act 474). Spectrum spans official, government-aligned, independent,
 business, civil society and international.
+
+---
+
+## ADDENDA AFTER EXTERNAL STAGE 2 (Gemini) AND STAGE 3 (ChatGPT), 2026-09-05
+
+The external reviews saw the original Stage 1 text. Their findings that change the brief:
+
+### Corrections to the record above
+
+- **C3 is re-resolved.** MACC's 2 September 2026 statement is: **six** investigation papers newly
+  opened on information received 24 August 2026, plus **one** older Park City Grand Plaza paper
+  "yet to be closed" and under mutual legal assistance. Seven is the count of EY-listed deals now
+  under MACC investigation. **Never write "seven papers opened in 2026."** The original headline,
+  context, fact card 3 and reframe all committed this error.
+- **The EY annex is a summary.** Lampiran 1 identifies itself as "Ringkasan Laporan Bertarikh
+  4 April 2019", a 26-page summary report. Nothing establishes that EY's full report or working
+  papers were tabled. "Annexed in full" is an overclaim; write "summary report annexed".
+- **RM2.2 billion is loss and impairment, not a completed write-off.** Paparan 1: RM2,116m recorded
+  impairment plus RM92m additional impairment identified for recognition = RM2,208m; EY 1.3.1 rounds
+  this to "mencecah RM2.2 bilion", roughly 50% of RM4.4b original investment value. The RM4,382m
+  total covers the seven quantified deals; KLVC carries no comparable amount in that total. Write
+  "original investment value" and "loss and impairment"; never "written off" or "committed".
+- **Verification gap 4 is closed.** The Federal Court restored the conviction and sentence on
+  **10 February 2026**: *PP v Mohd Isa Abdul Samad* [2026] 3 MLRA 274. The 26 June 2026 decision
+  was a refusal of leave to review under Rule 137. Cards must carry both dates in that order.
+- **Verification gap 3 sharpened.** Isa Samad's conviction concerns Merdeka Palace Hotel & Suites,
+  Kuching, which is not among EY's eight. Both external reviewers graded the original fact card
+  MISLEADING for omitting this on the card itself. The caveat must be on the card.
+- **C1 strengthened.** The Parliament order paper of 11 April 2019 and a 7 December 2020 written
+  reply both record the White Paper as tabled on **10 April 2019**. Cards may use the date.
+- **"Nothing followed" is false and must not be implied.** A 7 December 2020 written reply
+  (Soalan Bukan Lisan 162) describes implementation of a Felda recovery plan, government financial
+  support and a monitoring task force after the White Paper. Combined with the 2017 MACC files on
+  Kensington and Grand Borneo and the 2019 KLVC civil suit, the defensible thesis is **delayed and
+  incomplete criminal enforcement**, not institutional inaction. The reframe and view are rewritten
+  on that basis; the analogy card (already removed) embedded the false premise.
+- **Comparative absolute removed.** "Audited more closely than almost any agency" has no
+  denominator and both reviewers flagged it.
+- **Settler causation.** The White Paper ties Felda's critical cash flow to delayed Sara Hidup and
+  Pendahuluan Hasil payments. It does not tie post-2019 enforcement delay to settler harm. Cards may
+  state the White Paper's own link; they may not assert the second.
+
+### Additional sources
+
+32. [S32] BERNAMA, "MACC opens six investigation papers ...", MACC chief commissioner's press
+    conference, 2 September 2026. https://www.bernama.com/radio/news.php?id=2602179 **(primary
+    for the six-plus-one composition)**
+33. [S33] *PP v Mohd Isa Abdul Samad* [2026] 3 MLRA 274, Federal Court, 10 February 2026.
+    https://www.elaw.my/JE/01/JE_2026_8.html **(primary)**
+34. [S34] Dewan Rakyat written reply, Soalan Bukan Lisan 162, 7 December 2020 (Felda recovery plan
+    implementation, government financial support, monitoring task force; confirms tabling date).
+    https://pardocs.sinarproject.org/documents/2020-november-december-parliamentary-session/written-replies-soalan-bertulis/20201207-p14m3p2-soalan-bukanlisan-162.pdf **(primary)**
+35. [S35] Parliament order paper, 11 April 2019 (records the White Paper and its 10 April embargo).
+    https://repositori.parlimen.gov.my/bitstream/123456789/4599/21/AUMDR%2011042019%20-%20KHAMIS.pdf **(primary)**
+36. [S36] Parliament mirror of the White Paper.
+    https://www.parlimen.gov.my/ipms/eps/2019-04-09/WJD011490%20Kulit%20Kertas%20Putih.pdf **(primary)**
+37. [S37] Astro Awani, "MACC probes Felda's purchase of four-star hotel in London", 2017.
+    https://international.astroawani.com/malaysia-news/macc-probes-feldas-purchase-four-star-hotel-london-149240
+38. [S38] Malay Mail, "MACC scrutinising another Felda Investment Corp hotel deal" (Grand Borneo),
+    18 August 2017. https://www.malaymail.com/news/malaysia/2017/08/18/macc-scrutinising-another-felda-investment-corp-hotel-deal/1445099
+39. [S39] Auditor-General dashboard, Felda 2022 (net loss RM1.005b; cash RM808m; external borrowing
+    RM8.659b). https://agdashboard.audit.gov.my/public/lkan **(primary)**
+40. [S40] PMO, verbatim text of the Prime Minister's Ambang Merdeka session (RM10 billion remark).
+    https://www.pmo.gov.my/en/speeches-en/teks-ucapan-verbatim-yab-perdana-menteri-sesi-temu-anwar-sempena-ambang-merdeka-sahabat-madani/ **(primary)**
+
+**Revised count:** 40 sources, of which **18 primary**.
+
+### Still open
+
+- Act 474 amendment status: external Stage 3 concurs it is UNVERIFIED and legally consequential.
+  Stays off the cards.
+- The RM2 billion KLVC suit's current (September 2026) docket position: cards say "by 2025" only.
+- Whether Cabinet has decided on the forensic-audit proposal: hook says "weighing". Re-check at
+  Phase 9.

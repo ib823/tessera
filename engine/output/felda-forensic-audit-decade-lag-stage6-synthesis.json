@@ -4,77 +4,100 @@
     "slug": "felda-forensic-audit-decade-lag",
     "issue_id": "2012",
     "generated_at": "2026-09-05",
-    "inputs": ["stage1", "stage2", "stage3"],
-    "retired_stages": "Stages 4 (DeepSeek alt-framing) and 5 (Grok contrarian) are retired per docs/adr/0004. Stage 5 escalation was assessed and NOT triggered: Religious LOW, Royalty LOW, Ethnic MEDIUM, Political MEDIUM, no CRITICAL political risk, and Stage 3 returned source_diversity_estimate 0.72, well above the 0.4 floor.",
-    "independence_caveat": "Stages 2 and 3 were run as in-session review passes rather than by external models, because the gemini and codex CLIs are not installed in this environment. Their independence is weaker than on issues 2010 and 2011. This is disclosed in each stage file and must be surfaced to the operator before publication."
+    "version": "v2 (after external Stage 2 and Stage 3)",
+    "inputs": ["stage1", "stage2 (external, Gemini)", "stage3 (external, ChatGPT)", "stage2-insession", "stage3-insession"],
+    "retired_stages": "Stages 4 and 5 retired per docs/adr/0004. Stage 5 escalation NOT triggered: Religious LOW, Royalty LOW, Ethnic MEDIUM, Political MEDIUM; external Stage 3 source_diversity_estimate 0.55, above the 0.4 floor.",
+    "independence_note": "Round 1 (below, summarised) applied the in-session review passes. Round 2 applies the external Gemini and ChatGPT reviews pasted by the operator. Both external reviewers saw the ORIGINAL Stage 1 text. Where an external flag was already resolved in round 1, that is recorded; where it was new, it is tagged and actioned here."
   },
+  "round1_summary": "In-session Stage 2/3 flagged three cardinal sins (underclaim on EY's conduct findings; overclaim in 'forbearance' and 'settlers paid'; fused inference on the Kensington file), all applied. Analogy card removed for budget and because it embedded a premise the record does not support. See felda-forensic-audit-decade-lag-stage2-insession.json and -stage3-insession.json.",
   "revisions": [
     {
-      "tag": "REPHRASED (Stage 2)",
-      "target": "fact card 2, sub",
-      "from": "That was before the three London properties and the Sabah hotel were revalued. One write-down booked in 2017 belonged in 2012.",
-      "to": "The auditors also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.",
-      "why": "Stage 2 and Stage 3 both flagged an UNDERCLAIM: the draft reported what Ernst & Young counted and omitted what it found about conduct. Paras 1.3.3 and 1.3.4 of the annex record governance failure, approvals given without due diligence, and expressly 'elemen ketidakpatuhan dan salah laku'. That is the verified harshest accurate phrasing and it is now used. The displaced accounting-lag detail is a lesser finding and was cut for budget."
+      "tag": "CORRECTED (Stage 3)",
+      "target": "headline, context, fact card 3, reframe",
+      "from": "Eight Felda deals were audited in 2019. MACC opened papers on seven of them in 2026. / ...opened investigation papers on seven of the same deals / MACC's seven Felda files, announced on 2 September 2026, cover seven of the eight deals... / Seven of the eight deals were audited in 2019 and investigated in 2026...",
+      "to": "Headline: 'Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.' Context and fact card 3 now state the composition: six new files opened 2 September 2026 on information received 24 August, plus one file open since 2017; seven of the eight audited deals are under investigation.",
+      "why": "External Stage 3 graded the headline and two cards INCORRECT: MACC opened SIX new papers in 2026 and is still working ONE older Park City Grand Plaza paper. 'Seven opened in 2026' was wrong. Source: BERNAMA 2 September 2026 [S32], corroborated by The Edge [S2]. This was the most consequential error in the draft and my in-session pass missed it because it accepted the six-plus-one reconciliation without noticing the cards still said seven were opened."
+    },
+    {
+      "tag": "CORRECTED (Stage 3)",
+      "target": "hook sub, hook big",
+      "from": "It covered eight Felda and FIC purchases and was annexed to the FELDA White Paper, Command Paper 6 of 2019. / ...Ernst & Young delivered one in 2019, and Parliament has had it since.",
+      "to": "Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019. / ...Ernst & Young finished one in 2019. Parliament has had the summary since.",
+      "why": "External Stage 3 graded 'annexed in full' an OVERCLAIM: Lampiran 1 identifies itself as 'Ringkasan Laporan Bertarikh 4 April 2019', a 26-page summary. Nothing establishes that the full report or working papers were tabled. 'Summary' is now stated in both hook fields. The tabling date 10 April 2019 is added because the Parliament order paper [S35] and the 2020 written reply [S34] both confirm it, closing brief contradiction C1."
+    },
+    {
+      "tag": "CORRECTED (Stage 3)",
+      "target": "fact card 2, big",
+      "from": "Ernst & Young found RM4.38 billion committed across the eight deals. Roughly half of it, about RM2.2 billion, was already written off.",
+      "to": "Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion.",
+      "why": "External Stage 3 graded 'written off' INCORRECT and 'committed' MISLEADING. Paparan 1 labels the RM4,382m as original investment value across the seven quantified deals (KLVC carries no comparable amount), and the RM2,208m is RM2,116m recorded impairment plus RM92m identified for recognition. Impairment is not a completed write-off. The card now uses EY's own categories: 'original value', 'loss and impairment', and 'the deals it could quantify'."
+    },
+    {
+      "tag": "CORRECTED (Stage 3) + REPHRASED (Stage 2)",
+      "target": "fact card 1 (Legal)",
+      "from": "Mohd Isa Abdul Samad's conviction became final on 26 June 2026, nearly nine years after MACC opened its first Felda hotel files in 2017. / Felda also sued 21 defendants for RM2 billion over the Jalan Semarak land in 2019. It was still in pretrial applications in 2025.",
+      "to": "Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals. / The Federal Court restored it on 10 February 2026 and refused a review on 26 June. Felda's RM2 billion Jalan Semarak suit, filed in 2019, had not reached trial by 2025.",
+      "why": "Two flags. External Stage 2 and Stage 3 both graded the card MISLEADING FRAMING because it sat beside the eight-deal discussion without saying the conviction concerned a different hotel (Merdeka Palace Hotel & Suites, Kuching); the caveat is now the card's lead sentence. External Stage 3 also supplied the restoration date, 10 February 2026 (PP v Mohd Isa Abdul Samad [2026] 3 MLRA 274 [S33]), and corrected '26 June' from 'became final' to 'refused a review'. The 'nearly nine years' span and '21 defendants' are dropped for budget; the 2019 filing and 2025 status remain."
+    },
+    {
+      "tag": "CORRECTED (Stage 3)",
+      "target": "reframe",
+      "from": "Seven of the eight deals were audited in 2019 and investigated in 2026. The seven years in between are the finding nobody commissioned.",
+      "to": "After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.",
+      "why": "External Stage 3 graded the original MISLEADING: it implied an action-free interval, but MACC investigated Kensington and Grand Borneo in 2017, one paper stayed open, Felda filed the KLVC suit in 2019, and a 7 December 2020 written reply [S34] documents a recovery plan, government financial support and a monitoring task force. The defensible thesis is delayed and incomplete criminal enforcement, not inaction. The rewrite states what did follow and names the part that did not close. This is a value restructuring (the state's response was financial, not prosecutorial), so it still functions as a reframe."
+    },
+    {
+      "tag": "REPHRASED (Stage 2) + CORRECTED (Stage 3)",
+      "target": "view card",
+      "from": "Malaysia audited Felda more closely than almost any agency it owns. Scrutiny was never what failed. Follow-through was. / While the deals were being written down, the White Paper recorded settlers waiting on delayed Sara Hidup and Pendahuluan Hasil payments.",
+      "to": "Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was. / The White Paper tied Felda's cash crisis to delayed Sara Hidup and Pendahuluan Hasil payments to settlers.",
+      "why": "The comparative absolute 'more closely than almost any agency it owns' was flagged by external Stage 2 (OVERCLAIM; Tabung Haji, 1MDB and MARA have had comparable scrutiny) and external Stage 3 (UNVERIFIED; no denominator). Replaced with three documented facts. The sub is rewritten so the causal link is the White Paper's own (Ringkasan Eksekutif p.1: payment delays 'disebabkan aliran tunai FELDA yang kritikal'), which answers external Stage 2's economic-framing flag by naming the mechanism, and respects external Stage 3's point that no source ties post-2019 enforcement delay to settler harm. 'Written down' is replaced because of the impairment correction above."
     },
     {
       "tag": "CORRECTED (Stage 3)",
       "target": "fact card 3, sub",
-      "from": "Only the Indonesian plantation stake is missing. MACC opened the Kensington file in 2017 and it is still open.",
-      "to": "Only the Indonesian plantation stake is missing. MACC began probing the Kensington purchase in 2017 and says that file is still open.",
-      "why": "Stage 3 graded the original MISLEADING. It fused two separately sourced facts into one asserted continuity: MACC's 2 September 2026 statement says the Park City Grand Plaza paper has yet to be closed, but does not date that paper to 2017. The rewrite states both facts with their own attribution and asserts no link between the two file numbers."
-    },
-    {
-      "tag": "CORRECTED (Stage 3)",
-      "target": "view card",
-      "from": "Malaysia audited Felda more closely than almost any agency it owns. What followed the audit was forbearance, and the settlers paid for it.",
-      "to": "big: 'Malaysia audited Felda more closely than almost any agency it owns. Scrutiny was never what failed. Follow-through was.' / sub: 'While the deals were being written down, the White Paper recorded settlers waiting on delayed Sara Hidup and Pendahuluan Hasil payments.'",
-      "why": "Two flags resolved at once. Stage 2 graded 'forbearance' an OVERCLAIM because the issue's own fact card records a criminal conviction and a civil suit, so the state did enforce, slowly and partially; 'follow-through was' is the accurate claim and keeps the force. Stage 3 graded 'the settlers paid for it' UNVERIFIED because no card evidenced it. The sub now carries the primary source directly (White Paper, Ringkasan Eksekutif p.1, delayed Sara Hidup and Pendahuluan Hasil payments), so the settler consequence is shown rather than asserted. This also answers Stage 2's HIGH omission flag that settlers were the subject of the closing sentence and otherwise absent from the entire issue."
-    },
-    {
-      "tag": "REPHRASED (Stage 2)",
-      "target": "context",
-      "from": "In 2019 the Economic Affairs Ministry had Ernst & Young audit eight Felda and FIC purchases, and laid the findings before Parliament. In September 2026 the anti-graft agency opened investigation papers on seven of the same deals.",
-      "to": "In 2019 the Economic Affairs Ministry had Ernst & Young audit eight Felda and FIC purchases and laid the findings before Parliament. A different government is now weighing a second audit, and the anti-graft agency has opened papers on seven of the same deals.",
-      "why": "Stage 2 MEDIUM omission flag: the bipartisan record was declared in the provenance block but invisible to the reader, leaving the issue readable as anti-incumbent. 'A different government' establishes that the audit and the reopening sit under different administrations without naming a party, which preserves the non-partisan posture while restoring the anger-at-process anchor."
-    },
-    {
-      "tag": "CORRECTED (Stage 3)",
-      "target": "fact card 1, big",
-      "from": "nine years after MACC opened files on the Felda hotel purchases in 2017",
-      "to": "nearly nine years after MACC opened its first Felda hotel files in 2017",
-      "why": "Stage 3 noted July 2017 to June 2026 is eight years and eleven months, so 'nine years' rounded up by a month. 'Nearly nine years' is exact and costs nothing."
+      "from": "Only the Indonesian plantation stake is missing. MACC began probing the Kensington purchase in 2017 and says that file is still open.",
+      "to": "Only the PT Eagle High Plantations stake is absent. MACC says the cases are at an early stage and no corruption value has been set.",
+      "why": "External Stage 3 asked that the omitted deal be named rather than described, and listed as an omitted fact MACC's own statement that the six new cases are at an early stage with no corruption value determined. That due-process qualifier is now on the card. The Kensington-since-2017 point moved to the card's big field as 'one file open since 2017'."
     },
     {
       "tag": "INTRODUCED (Stage 6 self-verified)",
-      "target": "analogy card",
-      "from": "It is like paying for a survey of a house you own, filing it, then paying for a second survey because nobody acted on the first.",
-      "to": "REMOVED",
-      "why": "Not a correction from a stage critique, so recorded here as a Stage 6 editorial decision. Two reasons. First, the length budget: with the settler evidence added to the view card the issue ran to about 1,913 characters against a 1,700 soft cap. Second, the analogy restated the reframe in metaphor without adding a reader-facing fact; CLAUDE.md treats the analogy card as optional and warranted only when it makes an issue intuitive. A published report followed by no action needs no analogy. Removal brings the issue to 1,641 characters and six cards."
+      "target": "stageScores",
+      "from": "pa 84, ba 82, fc 86, sr 86, final 84.5",
+      "to": "pa 78, ba 65, fc 61, sr 82, final 71.5",
+      "why": "ba and fc now carry the external scores (bias_score 35 inverted; factual_accuracy_score 61) as the pipeline requires. pa is lowered from 84 to 78 because the external reviews found a load-bearing counting error and two classification errors in Stage 1 that the in-session passes did not catch. sr is 82: every flag from both external reviews is actioned or explicitly declined below, and no card now carries a claim graded INCORRECT, MISLEADING or UNVERIFIED by either reviewer; it is not higher because the in-session round had already declared the piece clean once."
     },
     {
       "tag": "INTRODUCED (Stage 6 self-verified)",
-      "target": "several fields",
-      "from": "n/a",
-      "to": "Length trims across context, both fact card 1 fields, fact card 2 sub, fact card 3 sub, hook sub and view sub.",
-      "why": "Budget only. Every trimmed clause was checked against its primary source after trimming; no figure, date, name or attribution changed meaning. Verified: RM4.38 billion and RM2.2 billion against Paparan 1 and para 1.3.1; 21 defendants and the November 2019 filing against The Star of 15 November 2019; 26 June 2026 against Malay Mail and Borneo Post; the 2 September 2026 announcement against The Edge and FMT; the Sara Hidup and Pendahuluan Hasil delays against the White Paper executive summary."
+      "target": "opinionShift",
+      "from": "76",
+      "to": "74",
+      "why": "The corrected headline is slightly less stark than the erroneous one, so the gap between headline and full picture narrows a little."
     }
-  ],
-  "unresolved": [
-    "Whether the Land Development Act 1956 (Act 474) has been amended since Ernst & Young recommended a check-and-balance review at para 1.3.6 in 2019. Stage 3 could not confirm the negative: the AGC portal returned an invalid request and open databases show the Act as revised 1991 with a reprint to 1 January 2006. NOT PUBLISHED. This is the single strongest additional fact card available if a future session can confirm it against the AGC gazette list.",
-    "Whether any of the eight audited deals produced a criminal charge between 2019 and 2026. The issue states only that the deal behind the final conviction (Merdeka Palace Hotel & Suites, Kuching) is not among the eight, which is verified. It does not claim that none of the eight led to charges.",
-    "The identity of the hotel in the August 2026 RM330m sale proposal. Excluded from every card, per brief C4.",
-    "Whether Cabinet has decided on the forensic-audit proposal. No report found as at 5 September 2026. The hook says 'weighing whether to order', which stays accurate until a decision lands. Re-check at Phase 8."
   ],
   "not_actioned": [
     {
-      "flag": "Stage 2 LOW geographic flag: Sarawak absent, Sabah present only as an object.",
-      "why": "The rewritten fact card 2 sub drops asset geography entirely in favour of Ernst & Young's conduct finding, so the asymmetry no longer appears in reader-facing text. Adding East Malaysian geography back would cost budget the issue does not have. Noted for any future edition."
+      "flag": "External Stage 3: 'use interlocutory applications' for the KLVC suit status.",
+      "why": "Card now says 'had not reached trial by 2025', which is the plain-language equivalent of vacated trial dates pending an interlocutory application and avoids a term most readers would not parse. The precise term is in the brief."
     },
     {
-      "flag": "Elevated-vocabulary posture rule (one carefully chosen sophisticated word per issue).",
-      "why": "Deliberately not satisfied. 'Forbearance' was the candidate and Stage 2 showed it overclaimed. Substitutes tested and rejected: 'lacuna' fails the no-substitute test because 'gap' reads as well, and 'amanah' was already used in issue 2008. CLAUDE.md warns that a carelessly placed elevated word reads as performative, so none is used here rather than one forced in."
+      "flag": "External Stage 3: name Merdeka Palace Hotel & Suites on the card.",
+      "why": "Budget. 'A Kuching hotel purchase that is not one of the eight audited deals' carries the caveat that matters; the hotel's name is in the brief and both stage files."
+    },
+    {
+      "flag": "External Stage 3: S1-S28 labels not mapped to a bibliography.",
+      "why": "The bibliography is engine/briefs/felda-forensic-audit-decade-lag.md, which the browser prompt does not include. Not a card defect; noted so future prompt generation can consider appending the source list."
+    },
+    {
+      "flag": "External Stage 2: 'claims native to late 2026 remain unverified'.",
+      "why": "Gemini had no web access. Those claims were verified by external Stage 3 against BERNAMA, the Federal Court judgment and Malay Mail, and by the in-session pass."
     }
   ],
-  "sr_score": 86,
-  "sr_justification": "All three cardinal-sin flags raised across Stages 2 and 3 are resolved, and two of the three resolutions made the issue stronger rather than softer: the underclaim fix promotes Ernst & Young's own finding of non-compliance and misconduct onto a card, and the settler fix replaces an asserted emotional payoff with a primary-sourced one. The Stage 2 HIGH omission flag and MEDIUM framing flag are both answered. Every unresolved item is excluded from publication rather than hedged. The score is held at 86 rather than higher because Stages 2 and 3 were not externally independent, and because the strongest available structural finding, the fate of the Act 474 recommendation, could not be verified and is therefore missing from the published issue."
+  "unresolved": [
+    "Act 474 amendment status. Both external Stage 3 and the in-session pass grade it UNVERIFIED; external Stage 3 adds that 'revised 1991' is not proof of no later amendment and that the negative is legally consequential. NOT PUBLISHED.",
+    "The KLVC suit's docket position in September 2026. Card says 'by 2025' only.",
+    "Cabinet decision on the forensic-audit proposal. Hook says 'weighing'. Re-check before Phase 9."
+  ],
+  "sr_score": 82,
+  "sr_justification": "Round 2 applied seven corrections traced to specific external flags, the most important being the six-plus-one composition of MACC's files, which had been wrong in the headline. Every remaining card claim is one both external reviewers either verified or did not contest, and the four items declined are recorded with reasons. The piece is now less categorical and more accurate: the thesis moved from 'nothing followed the audit' to 'what followed was financial rescue and one civil suit, while criminal enforcement on the eight stayed open', which the record supports and which both reviewers said was the defensible version."
 }

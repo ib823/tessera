@@ -41,35 +41,34 @@
     },
     "4_stage2_collected": {
       "done": true,
-      "at": "2026-09-05T02:14:49.141Z",
+      "at": "2026-09-05T03:23:54.528Z",
       "path": "engine/output/felda-forensic-audit-decade-lag-stage2.json",
-      "bias_score": 18
+      "bias_score": 35
     },
     "4_stage3_collected": {
       "done": true,
-      "at": "2026-09-05T02:14:49.204Z",
+      "at": "2026-09-05T03:23:54.615Z",
       "path": "engine/output/felda-forensic-audit-decade-lag-stage3.json",
-      "factual_accuracy_score": 86
+      "factual_accuracy_score": 61
     },
     "5_synthesis": {
       "done": true,
-      "at": "2026-09-05T02:17:11.270Z",
-      "sr": 86,
-      "corrections": 7,
-      "synthesis": "engine/output/felda-forensic-audit-decade-lag-stage6-synthesis.json"
+      "at": "2026-09-05T03:25:56.464Z",
+      "sr": 82,
+      "corrections": 9,
+      "round": 2,
+      "synthesis": "engine/output/felda-forensic-audit-decade-lag-stage6-synthesis.json",
+      "external_stages": "stage2 Gemini bias_score 35; stage3 ChatGPT factual_accuracy_score 61"
     },
     "6_legal_check": {
       "done": true,
-      "at": "2026-09-05T02:19:10.682Z",
+      "at": "2026-09-05T03:25:56.532Z",
+      "round": 2,
       "3r": "pass",
-      "defamation": "pass — only a final conviction is named",
-      "osa": "pass — all sources public",
-      "sedition": "pass",
-      "cma233": "pass",
+      "defamation": "pass; only a final conviction is named, with the Kuching caveat on the card",
       "stealth": "clean",
-      "fact_trace": "pass",
-      "cardinal_sins": "resolved in stage 6",
-      "language_warnings": 0
+      "fact_trace": "pass against brief S1-S40",
+      "cardinal_sins": "all external flags resolved or declined with reasons in stage6 v2"
     },
     "7a_sherlock": {
       "done": true,
@@ -101,13 +100,12 @@
     },
     "8_validated": {
       "done": true,
-      "at": "2026-09-05T03:03:23.872Z",
+      "at": "2026-09-05T03:25:56.602Z",
+      "round": 2,
       "validate_issues": "0 errors",
-      "validate_language": "0 warnings",
+      "validate_language": "see log",
       "stealth": "clean",
-      "image": "public/og/backgrounds/issue-2012-bg.png 1200x630",
-      "published": true,
-      "note": "external Stage 2/3 results still pending; merge of PR #66 is the publish step"
+      "scores": "pa78 ba65 fc61 sr82 final71.5"
     },
     "9_deployed": {
       "done": false
