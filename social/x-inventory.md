@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-10T10:16:32.201Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-10T12:23:04.320Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1414,6 +1414,40 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
+### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
+
+> ⚡ **Reactive: topic is live in the radar** (federal court dismisses kedah govt’s bid for leave to appeal in pool betting outlet licenc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
+
+**1/6** _(hook — attach image, NO link)_ · 122 chars
+```
+The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
+```
+**2/6** _(fact)_ · 253 chars
+```
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
+```
+**3/6** _(fact)_ · 268 chars
+```
+In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
+```
+**4/6** _(fact)_ · 135 chars
+```
+Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
+```
+**6/6** _(view — ONLY post with the link)_ · 186 chars
+```
+Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
+
+https://thefourthangle.pages.dev/issue/1959
+```
+
 ### Issue 1958 — One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
 
 > ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
@@ -1480,40 +1514,6 @@ The question is not whether to host this year. It is whether procurement for off
 Symbolic austerity is real signalling, but small in fiscal terms. A durable answer is published procurement and audited costs for official festive events, not an on-off switch.
 
 https://thefourthangle.pages.dev/issue/1955
-```
-
-### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
-
-> ⚡ **Reactive: topic is live in the radar** (um staff fail in final bid to challenge compulsory covid-19 vaccination circular. putrajay). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1954-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1954`
-
-**1/6** _(hook — attach image, NO link)_ · 229 chars
-```
-WFH for federal public servants was fine-tuned on 26 March, the day fuel quotas were also cut. The stated trigger is fuel conservation amid the Hormuz crisis. A PSD circular was issued by 2 April; implementation started 15 April.
-```
-**2/6** _(fact)_ · 158 chars
-```
-Frontline workers are excluded by design: nurses, teachers, police. Eligibility runs to federal public servants in specified locations within an 8 km commute.
-```
-**3/6** _(fact)_ · 155 chars
-```
-Budget 2026 estimates federal emoluments at RM109.4B and retirement charges at RM42.8B. The public-service headcount is large by international comparisons.
-```
-**4/6** _(fact)_ · 159 chars
-```
-The UK runs hybrid with attendance targets. Singapore mandates flexible-work request rights. Malaysia's 2 April PSD circular sets KPIs and SPOT-Me geolocation.
-```
-**5/6** _(reframe)_ · 178 chars
-```
-The question is no longer whether WFH was 'announced with no details'. It is whether the published rules will be enforced and whether output, not attendance, becomes the measure.
-```
-**6/6** _(view — ONLY post with the link)_ · 212 chars
-```
-Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
-
-https://thefourthangle.pages.dev/issue/1954
 ```
 
 ### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
@@ -2675,39 +2675,6 @@ The prosecution is historic. But soldiers in substandard barracks while chiefs h
 https://thefourthangle.pages.dev/issue/1962
 ```
 
-### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
-
-**1/6** _(hook — attach image, NO link)_ · 122 chars
-```
-The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
-```
-**2/6** _(fact)_ · 253 chars
-```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
-```
-**3/6** _(fact)_ · 268 chars
-```
-In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
-```
-**4/6** _(fact)_ · 135 chars
-```
-Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
-```
-**6/6** _(view — ONLY post with the link)_ · 186 chars
-```
-Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
-
-https://thefourthangle.pages.dev/issue/1959
-```
-
 ### Issue 1957 — BYD Blocked, Proton Shielded, B40 Priced Out: Who Wins?
 
 - **Status:** PENDING
@@ -2776,6 +2743,39 @@ The salary floor adjusts the price of foreign replacement. The pipeline question
 Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
 
 https://thefourthangle.pages.dev/issue/1956
+```
+
+### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1954-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1954`
+
+**1/6** _(hook — attach image, NO link)_ · 229 chars
+```
+WFH for federal public servants was fine-tuned on 26 March, the day fuel quotas were also cut. The stated trigger is fuel conservation amid the Hormuz crisis. A PSD circular was issued by 2 April; implementation started 15 April.
+```
+**2/6** _(fact)_ · 158 chars
+```
+Frontline workers are excluded by design: nurses, teachers, police. Eligibility runs to federal public servants in specified locations within an 8 km commute.
+```
+**3/6** _(fact)_ · 155 chars
+```
+Budget 2026 estimates federal emoluments at RM109.4B and retirement charges at RM42.8B. The public-service headcount is large by international comparisons.
+```
+**4/6** _(fact)_ · 159 chars
+```
+The UK runs hybrid with attendance targets. Singapore mandates flexible-work request rights. Malaysia's 2 April PSD circular sets KPIs and SPOT-Me geolocation.
+```
+**5/6** _(reframe)_ · 178 chars
+```
+The question is no longer whether WFH was 'announced with no details'. It is whether the published rules will be enforced and whether output, not attendance, becomes the measure.
+```
+**6/6** _(view — ONLY post with the link)_ · 212 chars
+```
+Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
+
+https://thefourthangle.pages.dev/issue/1954
 ```
 
 ### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
