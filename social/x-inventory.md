@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-11T08:21:19.806Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-11T10:16:23.388Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -790,7 +790,7 @@ https://thefourthangle.pages.dev/issue/1988
 
 ### Issue 1987 — Median MP is 52, citizen 31. Parliament refused PM term limits by two votes.
 
-> ⚡ **Reactive: topic is live in the radar** (sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sa). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1987-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1987`
@@ -1166,7 +1166,7 @@ https://thefourthangle.pages.dev/issue/1975
 
 ### Issue 1974 — DOE chief charged with taking RM100K to bypass an EIA, on a road that killed nine
 
-> ⚡ **Reactive: topic is live in the radar** (sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sa). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1974-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1974`
@@ -1268,6 +1268,108 @@ This isn't one government's hypocrisy. It's a structural failure where states pr
 Tie standing rules to gazette publication date, enforce Section 12 replacement land, and adopt the NFA 2022 amendment across all states
 
 https://thefourthangle.pages.dev/issue/1971
+```
+
+### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
+
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
+
+**1/6** _(hook — attach image, NO link)_ · 91 chars
+```
+520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
+```
+**2/6** _(fact)_ · 112 chars
+```
+China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
+```
+**3/6** _(fact)_ · 259 chars
+```
+George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
+```
+**4/6** _(fact)_ · 259 chars
+```
+Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
+```
+**5/6** _(reframe)_ · 104 chars
+```
+This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
+```
+**6/6** _(view — ONLY post with the link)_ · 142 chars
+```
+Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
+
+https://thefourthangle.pages.dev/issue/1970
+```
+
+### Issue 1966 — Refugee registration system launched but work permits remain unissued
+
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
+
+**1/6** _(hook — attach image, NO link)_ · 128 chars
+```
+Malaysia's first refugee registration system is live. Work permits are announced but unissued. Thailand has already moved ahead.
+```
+**2/6** _(fact)_ · 264 chars
+```
+A 2019 study estimated RM3B in GDP gains, but B40 workers of all races face real wage competition. Employers want documented workers in shortage sectors. Registration risks labour-broker capture. Centres exist only in major cities; rural refugees can't reach them.
+```
+**3/6** _(fact)_ · 129 chars
+```
+21,000+ detained, including 3,200 children. Case law extends the Employment Act to refugees; the Immigration Act has not changed.
+```
+**4/6** _(fact)_ · 134 chars
+```
+Sabah has 50,000+ refugees but DPP rollout faces state objections. Political Islam drives selective sympathy for Muslim refugees only.
+```
+**5/6** _(reframe)_ · 138 chars
+```
+Registration serves the state and employers first. No coalition will expand beyond this. The DPP is likely both the floor and the ceiling.
+```
+**6/6** _(view — ONLY post with the link)_ · 191 chars
+```
+The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
+
+https://thefourthangle.pages.dev/issue/1966
+```
+
+### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
+
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
+
+**1/6** _(hook — attach image, NO link)_ · 105 chars
+```
+Malaysia celebrated the Supreme Court striking down Trump's tariffs. The replacement regime may be worse.
+```
+**2/6** _(fact)_ · 112 chars
+```
+IEEPA tariffs had a constitutional weakness. Section 301 tariffs do not. Court challenges are nearly impossible.
+```
+**3/6** _(fact)_ · 128 chars
+```
+68% of semiconductor exports come from US firms. The 180,000 ATP workers are 65% women. R&D flatlined at 1% of GDP for a decade.
+```
+**4/6** _(fact)_ · 115 chars
+```
+A forced-labour probe across 60 economies hands the US a second front. Every coalition chose patronage over reform.
+```
+**5/6** _(reframe)_ · 150 chars
+```
+The court victory was a trap. Every government since Mahathir 1.0 chose procurement preferences over a US trade deal. Those consequences are arriving.
+```
+**6/6** _(view — ONLY post with the link)_ · 207 chars
+```
+The vulnerability is real but leverage is underestimated. Malaysia lacks not options but political will to convert CPTPP, RCEP, and the NSSP into actual strategy.
+
+https://thefourthangle.pages.dev/issue/1965
 ```
 
 ### Issue 1964 — Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
@@ -1480,6 +1582,44 @@ Penalties already exist. The real question is whether Malaysia detects drunk dri
 Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
 
 https://thefourthangle.pages.dev/issue/1958
+```
+
+### Issue 1957 — BYD Blocked, Proton Shielded, B40 Priced Out: Who Wins?
+
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
+
+**1/7** _(hook — attach image, NO link)_ · 178 chars
+```
+MITI set an RM200K floor and 80% export rule. BYD walked. Thailand didn't. Both Proton (49.9% Geely) and Perodua (25.2% Daihatsu) are shielded. Neither is wholly Malaysian-owned.
+```
+**2/7** _(fact)_ · 181 chars
+```
+BYD Dolphin sells at RM100K. MITI's floor is RM200K. B40 median income: RM4,588/month. Only 5,624 public chargers installed, 56% of target. High-rise residents can't charge at home.
+```
+**3/7** _(fact)_ · 174 chars
+```
+Proton had 43 years of tariffs and subsidies. It still can't compete on price. Every party (BN, PH, PN) has extended the wall. 700,000 jobs includes 53,000 aftermarket shops.
+```
+**4/7** _(fact)_ · 191 chars
+```
+Thailand gave BYD zero export quotas and zero price floors. Production started 2024. Indonesia and India attach conditions too, but transparent, time-bound, and linked to capability-building.
+```
+**5/7** _(reframe)_ · 78 chars
+```
+After 43 years of protection and zero exit plan, who is the wall actually for?
+```
+**6/7** _(analogy)_ · 155 chars
+```
+Like building a wall around a garden that stopped growing 20 years ago. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
+```
+**7/7** _(view — ONLY post with the link)_ · 139 chars
+```
+700,000 jobs deserve an honest transition, not an indefinite regressive tax on the bottom 40%.
+
+https://thefourthangle.pages.dev/issue/1957
 ```
 
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
@@ -2042,6 +2182,44 @@ SUHAKAM and the Bar Council have urged restoring judicial review of Board decisi
 https://thefourthangle.pages.dev/issue/1292
 ```
 
+### Issue 1267 — Malaysia Hosts 2.5 Million Documented Migrant Workers, Persistent Tier 2 Trafficking Concerns
+
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
+
+**1/7** _(hook — attach image, NO link)_ · 268 chars
+```
+Malaysia hosts ~2.5 million documented migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. Malaysia retained Tier 2 in the 2025 TIP Report, with the State Department citing weak prosecution in palm oil and disposable-glove manufacturing.
+```
+**2/7** _(fact)_ · 144 chars
+```
+Employment Act 1955 amendments took effect 1 January 2023, extending core protections to all private-sector employees including foreign workers.
+```
+**3/7** _(fact)_ · 261 chars
+```
+The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. The 2025 report noted fewer trafficker convictions and no labour-trafficking prosecutions in palm oil or glove manufacturing despite ongoing reports.
+```
+**4/7** _(fact)_ · 109 chars
+```
+Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services.
+```
+**5/7** _(reframe)_ · 141 chars
+```
+Tier 2 is not a passing grade. Malaysia was Tier 3 in 2014; the trajectory has not reached structural compliance with TVPA minimum standards.
+```
+**6/7** _(analogy)_ · 200 chars
+```
+Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
+
+https://thefourthangle.pages.dev/issue/1267
+```
+
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
 
 > ⚡ **Reactive: topic is live in the radar** (federal court postpones altantuya family’s bid to restore rm5m damages award to oct 27. pu). Post now, don't wait for a slot.
@@ -2510,39 +2688,6 @@ The fix exists: open tendering, employer-pays enforcement, cooperation with Bang
 https://thefourthangle.pages.dev/issue/1973
 ```
 
-### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
-
-**1/6** _(hook — attach image, NO link)_ · 91 chars
-```
-520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
-```
-**2/6** _(fact)_ · 112 chars
-```
-China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
-```
-**3/6** _(fact)_ · 259 chars
-```
-George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
-```
-**4/6** _(fact)_ · 259 chars
-```
-Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
-```
-**5/6** _(reframe)_ · 104 chars
-```
-This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
-```
-**6/6** _(view — ONLY post with the link)_ · 142 chars
-```
-Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
-
-https://thefourthangle.pages.dev/issue/1970
-```
-
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
 
 - **Status:** PENDING
@@ -2576,72 +2721,6 @@ Stop debating whether vernacular schools should exist. Start asking why national
 https://thefourthangle.pages.dev/issue/1967
 ```
 
-### Issue 1966 — Refugee registration system launched but work permits remain unissued
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
-
-**1/6** _(hook — attach image, NO link)_ · 128 chars
-```
-Malaysia's first refugee registration system is live. Work permits are announced but unissued. Thailand has already moved ahead.
-```
-**2/6** _(fact)_ · 264 chars
-```
-A 2019 study estimated RM3B in GDP gains, but B40 workers of all races face real wage competition. Employers want documented workers in shortage sectors. Registration risks labour-broker capture. Centres exist only in major cities; rural refugees can't reach them.
-```
-**3/6** _(fact)_ · 129 chars
-```
-21,000+ detained, including 3,200 children. Case law extends the Employment Act to refugees; the Immigration Act has not changed.
-```
-**4/6** _(fact)_ · 134 chars
-```
-Sabah has 50,000+ refugees but DPP rollout faces state objections. Political Islam drives selective sympathy for Muslim refugees only.
-```
-**5/6** _(reframe)_ · 138 chars
-```
-Registration serves the state and employers first. No coalition will expand beyond this. The DPP is likely both the floor and the ceiling.
-```
-**6/6** _(view — ONLY post with the link)_ · 191 chars
-```
-The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
-
-https://thefourthangle.pages.dev/issue/1966
-```
-
-### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
-
-**1/6** _(hook — attach image, NO link)_ · 105 chars
-```
-Malaysia celebrated the Supreme Court striking down Trump's tariffs. The replacement regime may be worse.
-```
-**2/6** _(fact)_ · 112 chars
-```
-IEEPA tariffs had a constitutional weakness. Section 301 tariffs do not. Court challenges are nearly impossible.
-```
-**3/6** _(fact)_ · 128 chars
-```
-68% of semiconductor exports come from US firms. The 180,000 ATP workers are 65% women. R&D flatlined at 1% of GDP for a decade.
-```
-**4/6** _(fact)_ · 115 chars
-```
-A forced-labour probe across 60 economies hands the US a second front. Every coalition chose patronage over reform.
-```
-**5/6** _(reframe)_ · 150 chars
-```
-The court victory was a trap. Every government since Mahathir 1.0 chose procurement preferences over a US trade deal. Those consequences are arriving.
-```
-**6/6** _(view — ONLY post with the link)_ · 207 chars
-```
-The vulnerability is real but leverage is underestimated. Malaysia lacks not options but political will to convert CPTPP, RCEP, and the NSSP into actual strategy.
-
-https://thefourthangle.pages.dev/issue/1965
-```
-
 ### Issue 1962 — Generals charged at last; the 4,679-contract cartel system remains intact
 
 - **Status:** PENDING
@@ -2673,43 +2752,6 @@ These are not the first generals caught. They are the first charged. The system 
 The prosecution is historic. But soldiers in substandard barracks while chiefs hoarded gold deserve more than theatre. They deserve a system that cannot be captured.
 
 https://thefourthangle.pages.dev/issue/1962
-```
-
-### Issue 1957 — BYD Blocked, Proton Shielded, B40 Priced Out: Who Wins?
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
-
-**1/7** _(hook — attach image, NO link)_ · 178 chars
-```
-MITI set an RM200K floor and 80% export rule. BYD walked. Thailand didn't. Both Proton (49.9% Geely) and Perodua (25.2% Daihatsu) are shielded. Neither is wholly Malaysian-owned.
-```
-**2/7** _(fact)_ · 181 chars
-```
-BYD Dolphin sells at RM100K. MITI's floor is RM200K. B40 median income: RM4,588/month. Only 5,624 public chargers installed, 56% of target. High-rise residents can't charge at home.
-```
-**3/7** _(fact)_ · 174 chars
-```
-Proton had 43 years of tariffs and subsidies. It still can't compete on price. Every party (BN, PH, PN) has extended the wall. 700,000 jobs includes 53,000 aftermarket shops.
-```
-**4/7** _(fact)_ · 191 chars
-```
-Thailand gave BYD zero export quotas and zero price floors. Production started 2024. Indonesia and India attach conditions too, but transparent, time-bound, and linked to capability-building.
-```
-**5/7** _(reframe)_ · 78 chars
-```
-After 43 years of protection and zero exit plan, who is the wall actually for?
-```
-**6/7** _(analogy)_ · 155 chars
-```
-Like building a wall around a garden that stopped growing 20 years ago. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
-```
-**7/7** _(view — ONLY post with the link)_ · 139 chars
-```
-700,000 jobs deserve an honest transition, not an indefinite regressive tax on the bottom 40%.
-
-https://thefourthangle.pages.dev/issue/1957
 ```
 
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
@@ -2846,43 +2888,6 @@ Like a discount run by a retailer instead of a government voucher: the same hous
 If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
 
 https://thefourthangle.pages.dev/issue/1625
-```
-
-### Issue 1267 — Malaysia Hosts 2.5 Million Documented Migrant Workers, Persistent Tier 2 Trafficking Concerns
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
-
-**1/7** _(hook — attach image, NO link)_ · 268 chars
-```
-Malaysia hosts ~2.5 million documented migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. Malaysia retained Tier 2 in the 2025 TIP Report, with the State Department citing weak prosecution in palm oil and disposable-glove manufacturing.
-```
-**2/7** _(fact)_ · 144 chars
-```
-Employment Act 1955 amendments took effect 1 January 2023, extending core protections to all private-sector employees including foreign workers.
-```
-**3/7** _(fact)_ · 261 chars
-```
-The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. The 2025 report noted fewer trafficker convictions and no labour-trafficking prosecutions in palm oil or glove manufacturing despite ongoing reports.
-```
-**4/7** _(fact)_ · 109 chars
-```
-Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services.
-```
-**5/7** _(reframe)_ · 141 chars
-```
-Tier 2 is not a passing grade. Malaysia was Tier 3 in 2014; the trajectory has not reached structural compliance with TVPA minimum standards.
-```
-**6/7** _(analogy)_ · 200 chars
-```
-Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
-
-https://thefourthangle.pages.dev/issue/1267
 ```
 
 ### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
