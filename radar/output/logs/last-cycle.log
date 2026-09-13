@@ -1,59 +1,58 @@
-[32m2026-09-13 02:18:51[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-09-13 02:18:51[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-09-13 02:18:51[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Reformasi Anniversary" importance=0.40
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [national_policy] "Malaysia Day" importance=0.45
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [national_policy] "Merdeka" importance=0.40
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 9949 topics from state
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-09-13 02:18:52[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-09-13T02:18:52.887598+00:00
-[32m2026-09-13 02:18:53[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-09-13 02:18:55[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-09-13 02:18:57[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-09-13 02:18:57[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-09-13 02:19:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-09-13 02:19:00[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 438 events
-[32m2026-09-13 02:19:01[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-09-13 02:19:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-09-13 02:19:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:19:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:19:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:19:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:20:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-09-13 02:20:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:20:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:20:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-09-13 02:21:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-09-13 02:21:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-13 02:21:17[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-09-13 02:21:18[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 6 events
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 476 events from 5 sources
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 476 events
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 379 within 24h (141 pruned)
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Thai man drowns in Sungai Golok near Malaysia-Thailand border. &nbsp;OTA BHARU, Sept 13 &mdash; A 23-year-old Thai man was found drowned in Sungai Golok along the Malaysia-Thailand bo..." importance=0.46
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Anwar says Malaysia set to gain from new investment, industrial cooperation with India. &nbsp;NEW DELHI, Sept 13 &mdash;&nbsp;Prime Minister Datuk Seri Anwar Ibrahim said his meetings with representat" importance=0.36
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "How a little dough can dish out confidence in kids. A hands-on pizza class in Kulai gives children the chance to knead, bake and discover the satisfaction of making something themselves." importance=0.41
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [amendment_act] "Home Ministry to announce effective date for citizenship amendments once ready. &nbsp;KULIM, Sept 12 &mdash; The Home Ministry (KDN) will announce the effective date of amendments to citizenship provi" importance=0.42
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Zahid says door for Umno-PAS cooperation ‘wide open’, eyes million-strong unity rally ahead of GE16. KUALA LUMPUR, Sept 12 &mdash; The presence of PAS leaders at this year&rsquo;s Umno general assembl" importance=0.31
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Umno’s exit from unity govt would demand fresh mandate, not backroom deal, says Zahid. KUALA LUMPUR, Sept 12 &mdash; Umno president Datuk Seri Ahmad Zahid Hamidi said today that the party's removal fr" importance=0.31
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "From speech to GE16 manifesto: BN locks in Blue Malaysia Agenda. KUALA LUMPUR, Sept 12 &mdash; The Blue Malaysia Agenda outlined by Umno president Datuk Seri Dr Ahmad Zahid Hamidi will..." importance=0.36
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Kon Yeow orders excos to clear unfinished Penang2030 projects before he steps down as chief minister. GEORGE TOWN, Sept 12 &mdash; Penang Chief Minister Chow Kon Yeow has ordered all state executive c" importance=0.41
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Umno to stay the course with govt, respects differing view. Party president Ahmad Zahid Hamidi says Umno members in Cabinet were professional in carrying out their duties, despite the differing views " importance=0.36
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Zahid minta KPT pertimbang tiket penerbangan percuma untuk pelajar B40. Presiden Umno itu berkata perkara itu sudah dimaklumkan kepada Menteri Pendidikan Tinggi, Zambry Abdul Kadir untuk pertimbangan." importance=0.31
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "UK anti-migrant activists, counter-protesters face off in flashpoint city. Authorities fear the closely watched duelling rallies could descend into unrest following violent scenes involving police day" importance=0.41
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Antonelli fastest again in crash-hit final practice. Championship leader Kimi Antonelli clocked a best lap of 1:32.797, outpacing Ferrari's Charles Leclerc by 0.166 seconds." importance=0.41
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "Zahid asks ministry to look into free air tickets for B40 students. Umno president Ahmad Zahid Hamidi said he had also told the heads of Umno-led state governments to consider providing such tickets t" importance=0.36
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 45), ('india', 33), ('minister', 32), ('government', 31), ('pas', 29), ('umno', 27), ('chinese', 20), ('prime minister', 16), ('isa', 14), ('unity', 14)]
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
-[32m2026-09-13 02:21:20[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 9950 active topics
-[32m2026-09-13 02:21:21[0m | [1mINFO    [0m | [36moutput              [0m | 1132 active issues, 8820 new, 8819 pruned
-[32m2026-09-13 02:21:21[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-09-13 02:21:39[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=145  hmm=OK/68  cox=RT/1132  sarima=RT/1132
-[32m2026-09-13 02:21:39[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1132)
-[32m2026-09-13 02:21:39[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 9950 active topics. Top: parliament budget session session opens (score: 0.99)
+[32m2026-09-13 04:15:06[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-09-13 04:15:06[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-09-13 04:15:06[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Reformasi Anniversary" importance=0.40
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [national_policy] "Malaysia Day" importance=0.45
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [national_policy] "Merdeka" importance=0.40
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 9950 topics from state
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-09-13 04:15:07[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-09-13T04:15:07.705400+00:00
+[32m2026-09-13 04:15:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-09-13 04:15:09[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-09-13 04:15:10[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-09-13 04:15:10[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-09-13 04:15:13[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-09-13 04:15:13[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 438 events
+[32m2026-09-13 04:15:15[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-09-13 04:15:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:15:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:16:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:16:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:16:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:16:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:16:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:17:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:17:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:17:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-13 04:17:33[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-09-13 04:17:35[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 476 events from 5 sources
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 476 events
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 371 within 24h (151 pruned)
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Thai man drowns in Sungai Golok near Malaysia-Thailand border. &nbsp;OTA BHARU, Sept 13 &mdash; A 23-year-old Thai man was found drowned in Sungai Golok along the Malaysia-Thailand bo..." importance=0.46
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Anwar says Malaysia set to gain from new investment, industrial cooperation with India. &nbsp;NEW DELHI, Sept 13 &mdash;&nbsp;Prime Minister Datuk Seri Anwar Ibrahim said his meetings with representat" importance=0.36
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Indonesian ferry carrying 243 people reported missing at sea. The ship set sail on Saturday from the East Java city of Surabaya to the South Kalimantan city of Banjarmasin before losing contact during" importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Fahmi denies unity govt using courts, enforcement agencies to threaten Umno leaders. The government spokesman says Prime Minister Anwar Ibrahim and the administration have been consistent in not inter" importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Serian and 5 other areas record unhealthy air quality. There were no locations with very unhealthy or hazardous API readings as of 9am." importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Umno wants freedom to rebuild before GE16 pacts, say analysts. By keeping its options open, Umno can plan to recover electoral support before committing to alliances." importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Australia vows to bolster resilience of telco networks after Optus outage. An outage at the country's No. 2 carrier on Friday impacted users in three states and disrupted some emergency service calls." importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "How a little dough can dish out confidence in kids. A hands-on pizza class in Kulai gives children the chance to knead, bake and discover the satisfaction of making something themselves." importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [amendment_act] "Home Ministry to announce effective date for citizenship amendments once ready. &nbsp;KULIM, Sept 12 &mdash; The Home Ministry (KDN) will announce the effective date of amendments to citizenship provi" importance=0.42
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Zahid says door for Umno-PAS cooperation ‘wide open’, eyes million-strong unity rally ahead of GE16. KUALA LUMPUR, Sept 12 &mdash; The presence of PAS leaders at this year&rsquo;s Umno general assembl" importance=0.31
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Umno’s exit from unity govt would demand fresh mandate, not backroom deal, says Zahid. KUALA LUMPUR, Sept 12 &mdash; Umno president Datuk Seri Ahmad Zahid Hamidi said today that the party's removal fr" importance=0.31
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "From speech to GE16 manifesto: BN locks in Blue Malaysia Agenda. KUALA LUMPUR, Sept 12 &mdash; The Blue Malaysia Agenda outlined by Umno president Datuk Seri Dr Ahmad Zahid Hamidi will..." importance=0.36
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Kon Yeow orders excos to clear unfinished Penang2030 projects before he steps down as chief minister. GEORGE TOWN, Sept 12 &mdash; Penang Chief Minister Chow Kon Yeow has ordered all state executive c" importance=0.41
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'silence_detector': 'ok'}
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 40), ('india', 34), ('minister', 34), ('pas', 34), ('government', 31), ('umno', 25), ('chinese', 19), ('prime minister', 18), ('unity', 17), ('isa', 15)]
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 9955 active topics
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36moutput              [0m | 1140 active issues, 8824 new, 8816 pruned
+[32m2026-09-13 04:17:37[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-09-13 04:18:06[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=145  hmm=OK/69  cox=RT/1140  sarima=RT/1140
+[32m2026-09-13 04:18:06[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1140)
+[32m2026-09-13 04:18:06[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 9955 active topics. Top: parliament budget session session opens (score: 0.99)
