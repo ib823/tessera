@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-15T20:16:00.335Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-15T22:15:24.671Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1688,7 +1688,7 @@ https://thefourthangle.pages.dev/issue/1952
 
 ### Issue 1951 — Seven Tankers, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
 
-> ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1951-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1951`
