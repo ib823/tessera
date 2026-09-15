@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-15T10:17:10.082Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-15T12:22:48.215Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -972,44 +972,6 @@ The High Court found both governments in breach since 1974. Putrajaya pauses the
 Two pauses, two clocks. Putrajaya extends a 48-year delay the court called unconstitutional. Sabah stops a new law before it operates.
 
 https://thefourthangle.pages.dev/issue/1981
-```
-
-### Issue 1979 — RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration
-
-> ⚡ **Reactive: topic is live in the radar** (sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sa). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
-
-**1/7** _(hook — attach image, NO link)_ · 100 chars
-```
-Malaysia's RM31.3B 1MDB recovery headline includes a Goldman guarantee Goldman is fighting to reduce
-```
-**2/7** _(fact)_ · 266 chars
-```
-Of Goldman's USD3.9B 2020 settlement, only USD2.5B was paid in cash Goldman filed at the LCIA on 11 October 2023, arguing Malaysia had already recovered enough to satisfy the USD1.4B guarantee. MOF told Parliament in October 2025 the dispute is still in arbitration.
-```
-**3/7** _(fact)_ · 95 chars
-```
-Of cumulative 1MDB recoveries, RM5.29B remains in the trust account against RM24.46B still owed
-```
-**4/7** _(fact)_ · 111 chars
-```
-MACC's '74.5% recovered' uses 1MDB's 2015 debt as the denominator. The DOJ alleges US$4.5B was misappropriated.
-```
-**5/7** _(reframe)_ · 93 chars
-```
-The question is not how much was recovered. It is which number the next press release counts.
-```
-**6/7** _(analogy)_ · 262 chars
-```
-Think of the headline like a sales total that includes a customer disputing the charge Malaysia put the full RM31.3B on the receipt. RM6B of it is a Goldman guarantee still in arbitration. Most of what cleared the trust has already gone to service old 1MDB debt.
-```
-**7/7** _(view — ONLY post with the link)_ · 137 chars
-```
-RM31.3B recovered is real. '74.5% of a settled scandal' is not yet what the ledger supports.
-
-https://thefourthangle.pages.dev/issue/1979
 ```
 
 ### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
@@ -2649,6 +2611,43 @@ PM Anwar pledged to repeal the Sedition Act in 2018 and again in 2023. The Act r
 Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the law in Feb 2026. The PM has promised repeal since 2018. Zahid asks for more.
 
 https://thefourthangle.pages.dev/issue/1980
+```
+
+### Issue 1979 — RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
+
+**1/7** _(hook — attach image, NO link)_ · 100 chars
+```
+Malaysia's RM31.3B 1MDB recovery headline includes a Goldman guarantee Goldman is fighting to reduce
+```
+**2/7** _(fact)_ · 266 chars
+```
+Of Goldman's USD3.9B 2020 settlement, only USD2.5B was paid in cash Goldman filed at the LCIA on 11 October 2023, arguing Malaysia had already recovered enough to satisfy the USD1.4B guarantee. MOF told Parliament in October 2025 the dispute is still in arbitration.
+```
+**3/7** _(fact)_ · 95 chars
+```
+Of cumulative 1MDB recoveries, RM5.29B remains in the trust account against RM24.46B still owed
+```
+**4/7** _(fact)_ · 111 chars
+```
+MACC's '74.5% recovered' uses 1MDB's 2015 debt as the denominator. The DOJ alleges US$4.5B was misappropriated.
+```
+**5/7** _(reframe)_ · 93 chars
+```
+The question is not how much was recovered. It is which number the next press release counts.
+```
+**6/7** _(analogy)_ · 262 chars
+```
+Think of the headline like a sales total that includes a customer disputing the charge Malaysia put the full RM31.3B on the receipt. RM6B of it is a Goldman guarantee still in arbitration. Most of what cleared the trust has already gone to service old 1MDB debt.
+```
+**7/7** _(view — ONLY post with the link)_ · 137 chars
+```
+RM31.3B recovered is real. '74.5% of a settled scandal' is not yet what the ledger supports.
+
+https://thefourthangle.pages.dev/issue/1979
 ```
 
 ### Issue 1973 — Bestinet ran Malaysia's visa system for RM400M, no contract, Interpol arrest request
