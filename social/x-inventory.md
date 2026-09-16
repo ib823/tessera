@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-16T04:18:53.670Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-16T06:26:31.668Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -270,7 +270,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -532,7 +532,7 @@ https://thefourthangle.pages.dev/issue/1996
 
 ### Issue 1995 — Singapore charged a fourth in the Nvidia chip case. No Malaysian operator faces charges yet.
 
-> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1995-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1995`
@@ -570,7 +570,7 @@ https://thefourthangle.pages.dev/issue/1995
 
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
 
-> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
@@ -828,7 +828,7 @@ https://thefourthangle.pages.dev/issue/1987
 
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1985-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1985`
@@ -1090,7 +1090,7 @@ https://thefourthangle.pages.dev/issue/1976
 
 ### Issue 1975 — E-wallets hit 18.4 billion transactions; none of the balances carry PIDM deposit insurance
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
@@ -1166,7 +1166,7 @@ https://thefourthangle.pages.dev/issue/1974
 
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
@@ -1370,7 +1370,7 @@ https://thefourthangle.pages.dev/issue/1964
 
 ### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
 
-> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
@@ -1620,7 +1620,7 @@ https://thefourthangle.pages.dev/issue/1955
 
 ### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
 
-> ⚡ **Reactive: topic is live in the radar** (strong demand for malaysia’s us$1.5b sukuk signals investor confidence, says bank negara g). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
@@ -1824,7 +1824,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
@@ -2294,7 +2294,7 @@ https://thefourthangle.pages.dev/issue/1190
 
 ### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
