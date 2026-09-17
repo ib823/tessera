@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-17T04:19:20.348Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-17T06:26:57.946Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1440,44 +1440,6 @@ The fix is a permanent independent oversight body for MACC, as UNCAC recommended
 https://thefourthangle.pages.dev/issue/1961
 ```
 
-### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
-
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
-
-**1/7** _(hook — attach image, NO link)_ · 112 chars
-```
-A foundation razed a Hindu temple on its own land. Police investigated. The High Court sided with the landowner.
-```
-**2/7** _(fact)_ · 115 chars
-```
-Land title is enforceable, but demolishing a temple without court process is not the same as exercising that right.
-```
-**3/7** _(fact)_ · 116 chars
-```
-An estimated 2,500 temples lack registration, but the figure is unaudited and Selangor's official 2026 count is 687.
-```
-**4/7** _(fact)_ · 120 chars
-```
-The demolition was crowdfunded as a movement, but the class dynamics underneath matter more than the religious rhetoric.
-```
-**5/7** _(reframe)_ · 140 chars
-```
-The question is not property versus religion. It is why every party in power since 1965 has chosen inaction, and who profits from the chaos.
-```
-**6/7** _(analogy)_ · 254 chars
-```
-Like a squatter settlement where every government promises land titles but nobody ever surveys the plots. The ambiguity serves someone. Unregistered places of worship exist in legal limbo because formalisation would force decisions no party wants to make
-```
-**7/7** _(view — ONLY post with the link)_ · 203 chars
-```
-Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
-
-https://thefourthangle.pages.dev/issue/1960
-```
-
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
 
 > ⚡ **Reactive: topic is live in the radar** (federal court dismisses kedah govt’s bid for leave to appeal in pool betting outlet licenc). Post now, don't wait for a slot.
@@ -2106,44 +2068,6 @@ The legal route is the Federal Court challenge; the political route is state ame
 https://thefourthangle.pages.dev/issue/1294
 ```
 
-### Issue 1292 — POCA Allows 2-Year Renewable Detention; Section 15B Bars Merits Review by Court
-
-> ⚡ **Reactive: topic is live in the radar** (federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengga). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
-
-**1/7** _(hook — attach image, NO link)_ · 154 chars
-```
-POCA detention orders run 2 years and renew indefinitely. Section 15B insulates the appointed Board's discretionary decisions from court review on merits.
-```
-**2/7** _(fact)_ · 147 chars
-```
-Section 15B bars review of Board discretion. Courts retain jurisdiction over procedural-compliance grounds; the merits are substantially insulated.
-```
-**3/7** _(fact)_ · 224 chars
-```
-Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates laws designed to stop or prevent specified threats notwithstanding inconsistency with Articles 5, 9, 10, 13 and 79.
-```
-**4/7** _(fact)_ · 109 chars
-```
-SUHAKAM and Bar Council have recorded complaints from detainees in lower-income and marginalised communities.
-```
-**5/7** _(reframe)_ · 134 chars
-```
-POCA is not an Article 150 emergency ordinance. It is an operationally active preventive-detention regime sitting outside a courtroom.
-```
-**6/7** _(analogy)_ · 254 chars
-```
-Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
-```
-**7/7** _(view — ONLY post with the link)_ · 204 chars
-```
-SUHAKAM and the Bar Council have urged restoring judicial review of Board decisions and publishing disaggregated outcome data. Both proposals remain unenacted.
-
-https://thefourthangle.pages.dev/issue/1292
-```
-
 ### Issue 1267 — Malaysia Hosts 2.5 Million Documented Migrant Workers, Persistent Tier 2 Trafficking Concerns
 
 > ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
@@ -2753,6 +2677,43 @@ The prosecution is historic. But soldiers in substandard barracks while chiefs h
 https://thefourthangle.pages.dev/issue/1962
 ```
 
+### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
+
+**1/7** _(hook — attach image, NO link)_ · 112 chars
+```
+A foundation razed a Hindu temple on its own land. Police investigated. The High Court sided with the landowner.
+```
+**2/7** _(fact)_ · 115 chars
+```
+Land title is enforceable, but demolishing a temple without court process is not the same as exercising that right.
+```
+**3/7** _(fact)_ · 116 chars
+```
+An estimated 2,500 temples lack registration, but the figure is unaudited and Selangor's official 2026 count is 687.
+```
+**4/7** _(fact)_ · 120 chars
+```
+The demolition was crowdfunded as a movement, but the class dynamics underneath matter more than the religious rhetoric.
+```
+**5/7** _(reframe)_ · 140 chars
+```
+The question is not property versus religion. It is why every party in power since 1965 has chosen inaction, and who profits from the chaos.
+```
+**6/7** _(analogy)_ · 254 chars
+```
+Like a squatter settlement where every government promises land titles but nobody ever surveys the plots. The ambiguity serves someone. Unregistered places of worship exist in legal limbo because formalisation would force decisions no party wants to make
+```
+**7/7** _(view — ONLY post with the link)_ · 203 chars
+```
+Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
+
+https://thefourthangle.pages.dev/issue/1960
+```
+
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
 
 - **Status:** PENDING
@@ -2887,6 +2848,43 @@ Like a discount run by a retailer instead of a government voucher: the same hous
 If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
 
 https://thefourthangle.pages.dev/issue/1625
+```
+
+### Issue 1292 — POCA Allows 2-Year Renewable Detention; Section 15B Bars Merits Review by Court
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
+
+**1/7** _(hook — attach image, NO link)_ · 154 chars
+```
+POCA detention orders run 2 years and renew indefinitely. Section 15B insulates the appointed Board's discretionary decisions from court review on merits.
+```
+**2/7** _(fact)_ · 147 chars
+```
+Section 15B bars review of Board discretion. Courts retain jurisdiction over procedural-compliance grounds; the merits are substantially insulated.
+```
+**3/7** _(fact)_ · 224 chars
+```
+Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates laws designed to stop or prevent specified threats notwithstanding inconsistency with Articles 5, 9, 10, 13 and 79.
+```
+**4/7** _(fact)_ · 109 chars
+```
+SUHAKAM and Bar Council have recorded complaints from detainees in lower-income and marginalised communities.
+```
+**5/7** _(reframe)_ · 134 chars
+```
+POCA is not an Article 150 emergency ordinance. It is an operationally active preventive-detention regime sitting outside a courtroom.
+```
+**6/7** _(analogy)_ · 254 chars
+```
+Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
+```
+**7/7** _(view — ONLY post with the link)_ · 204 chars
+```
+SUHAKAM and the Bar Council have urged restoring judicial review of Board decisions and publishing disaggregated outcome data. Both proposals remain unenacted.
+
+https://thefourthangle.pages.dev/issue/1292
 ```
 
 ### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
