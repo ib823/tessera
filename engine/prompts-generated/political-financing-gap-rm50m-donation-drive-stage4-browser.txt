@@ -1,0 +1,252 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis",
+    "slug": "political-financing-gap-rm50m-donation-drive",
+    "issue_id": "2013",
+    "brief": "engine/briefs/political-financing-gap-rm50m-donation-drive.md",
+    "generated_at": "2026-09-19",
+    "revision_history": [
+      "v1 (2026-09-19): initial draft after Phase 1 brief approval. Source channel: radar issue-queue 2026-09-18 22:14 UTC (silence detector INST-0027; queue rank 107 MACC political-financing item). Frame: a party fund for a convicted former prime minister's RM50m fine, set against a political-financing statute that has been under study since Najib himself announced the committee on 14 August 2015 and is now dated 2027. Anchor: anger-at-process, the missing statute; never the pardon, the King, the party or its donors."
+    ],
+    "discipline": "The pardon is a royal prerogative under Article 42 and appears only as the dated fact that created the RM50m condition; no card evaluates it, the Pardons Board or the King. The fund is lawful; every card that describes it also says no law governs it, which is the finding. Umno's role is stated through its own published mechanics (account in the party's registered name, supervised by HQ) and through the dated record that Najib announced the 2015 committee. Pakatan Harapan's 2018 promise and the current government's 2027 date sit on the same card as BN's 2016 committee and Ismail Sabri's 2022 'in principle' so the record reads across four governments. Donors are described only by Umno's own words (gifts as low as RM10 and RM50). Comparator statutes are kept off the cards until their primary texts are opened (brief GAP 8). The 1MDB-Tanore 'forgeries' finding is kept off the cards pending GAP 7. Stage 5 triggered: Political CRITICAL."
+  },
+  "headline": "Umno opened an account to pay Najib's RM50m fine. No law says who may give a party money.",
+  "context": "On 18 September 2026 the Pardons Board made Najib Razak's house arrest conditional on paying a RM50 million fine. Umno launched a fund the same day. A political-financing law has been under study since 2015; the minister now puts tabling in 2027.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Najib's RM50 million fine became a condition of house arrest on 18 September. By evening Umno had an account for it, and RM634,562 in three hours.",
+      "sub": "No Malaysian law sets who may give a party money, how much, or whether the public may know. The Bar calls it a lacuna; the minister says 2027.",
+      "sources": [
+        "S1",
+        "S8",
+        "S9",
+        "S12",
+        "S23",
+        "S21",
+        "S34",
+        "S13"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "big": "Tabung Solidariti Najib Razak collects into an account in Umno's own registered name, run by party headquarters. No cap, donor rule or audit has been announced.",
+      "sub": "Under the Societies Act a party's accounts go to the Registrar; section 29 gives copies to members and subscribers, not the public.",
+      "sources": [
+        "S9",
+        "S10",
+        "S8",
+        "S24",
+        "S27"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Najib himself announced the committee that first drafted the law, on 14 August 2015. It reported in 2016. Eleven years on, the bill's date is 2027.",
+      "sub": "Buku Harapan pledged the Act in 2018. GIACC said 'next month' in September 2019. Cabinets agreed 'in principle' in May 2022 and on 8 September 2023.",
+      "sources": [
+        "S18",
+        "S19",
+        "S20",
+        "S22",
+        "S31",
+        "S32",
+        "S34",
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "big": "Ten days before the pardon the minister in charge said, as a lawyer: without the Act 'many politicians will be charged with corruption'.",
+      "sub": "Azalina Othman Said, also Umno information chief, listed nine open parameters on 8 September. Of 1,544 people BHEUU consulted, 90.3% want the law before GE16.",
+      "sources": [
+        "S15",
+        "S16",
+        "S14",
+        "S13",
+        "S30"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "A fine can be crowdfunded through a party account nobody outside the party may inspect. That is not a loophole in the political-financing law. There is no such law.",
+      "sub": "",
+      "sources": [
+        "S23",
+        "S24",
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "It is like a bank that promised a know-your-customer rule in 2015, approved it in principle three times, and today opens a new account with no form to fill.",
+      "sub": "The 2016 committee wrote the form: gifts above RM3,000 reported within 30 days, foreign cash banned, government contractors barred from giving.",
+      "sources": [
+        "S18",
+        "S20",
+        "S21",
+        "S34",
+        "S13"
+      ]
+    },
+    {
+      "t": "mature",
+      "big": "The fine will be paid through an account the public cannot inspect, under a law that does not exist. The coalition that promised it in 2018 now says 2027. Only one of those is a choice.",
+      "sub": "",
+      "sources": [
+        "S1",
+        "S9",
+        "S24",
+        "S22",
+        "S14"
+      ]
+    }
+  ],
+  "sources": "Numbering follows engine/briefs/political-financing-gap-rm50m-donation-drive.md §SOURCES. S1 Malay Mail 18 Sep 2026 quoting the BHEUU statement (64th FT Pardons Board; house arrest to 23 Aug 2028 'subject to his payment of a fine of RM50 million'; other conditions undisclosed); S8 Malay Mail 18 Sep 2026 (Zahid statement; no operational details); S9 Umno Online 18 Sep 2026 (Tabung Solidariti Najib Razak; account name PERTUBUHAN KEBANGSAAN MELAYU BERSATU (UMNO), CIMB Islamic, supervised by Umno HQ); S10 Kosmo 18 Sep 2026; S12 Utusan 18 Sep 2026 (RM634,562.02 in three hours; gifts as low as RM10 and RM50); S13 Malay Mail 8 Sep 2026 (BHEUU took over May 2023; Cabinet 8 Sep 2023 in principle; Punitha: 1,544 participants, 100% / 90.3%); S14 The Star 8 Sep 2026 (tabling 2027; 18 sessions); S15 Malay Mail 8 Sep 2026 (Azalina personal-capacity quote); S16 Malay Mail / The Sun 8 Sep 2026 (nine parameters; ~72 parties); S18 NCCPF report 29 Aug 2016 (para 98: PM announced committee 14 Aug 2015; R4 PDEA; R7 Controller; R13 foreign cash ban; R24 disclosure above RM3,000 within 30 days; R29 contractor ban); S19 Malay Mail 28 Aug 2015; S20 Malay Mail 30 Sep 2016 (Low: RM3,000 threshold; Controller; GLC and contractor ban); S21 Malay Mail/Bernama 10 Jun 2017 (Oct 2016 Cabinet resolution; before GE14); S22 Buku Harapan 8 Mar 2018, Promise 18 p.49; S23 International IDEA (no law regulates political donations); S24 Societies Act 1966 ss.14(1)(d), 29; S26 Malaysian Bar press release 5 Aug 2022; S27 Malaysian Bar 77th AGM resolution 18 Mar 2023 ('The lacuna is exacerbated...'); S30 Bernama 8 Sep 2026 (MACC five principles); S31 Malaysiakini 17 Sep 2019 and S32 Malay Mail/Bernama 17 Sep 2019 (Abu Kassim: tabled next month); S34 FMT 6 Jul 2022 (Ismail Sabri 19 May 2022 in principle).",
+  "confidence": "High on the fund mechanics (Umno's own publication), the pardon condition (BHEUU statement via three outlets), the statute history (four primary documents opened: NCCPF report, Buku Harapan, Bar resolution, Societies Act) and the 8 Sep 2026 statements (four outlets plus Bernama). Medium on 'three governments in principle' because the 2016 Cabinet resolution and the 8 Sep 2023 decision rest on Bernama-derived and ministerial statements rather than published Cabinet records. The RM634,562 figure is Umno's own and is time-stamped; it will move.",
+  "lenses_used": [
+    "Legal",
+    "Governance",
+    "Political"
+  ],
+  "lenses_applicable_but_unused": [
+    "Historical",
+    "Rights",
+    "Economic"
+  ],
+  "needs_verification": [
+    "Whether the CIMB Islamic account named in Umno's statement is a dedicated account or the party's general account (card 1 says 'in Umno's own registered name', which is what the statement shows; it does not say 'general account').",
+    "The Societies Act filing window: s.14(1) says 60 days after the AGM, or after the calendar year if no AGM is held; card 1 sub uses the AGM wording.",
+    "The 8 September 2023 Cabinet decision: known only from Azalina's 8 Sep 2026 speech; no Cabinet or BHEUU statement from 2023 has been located.",
+    "'Cabinets agreed in principle in May 2022 and 8 September 2023': May 2022 rests on FMT's report of Ismail Sabri's statement (cabinet committee, not full Cabinet); confirm the body.",
+    "'Under three governments' in the hook sub counts the Oct 2016 NCCPF resolution in Cabinet (BN), May 2022 (Ismail Sabri) and Sep 2023 (Anwar); the 2016 item was a resolution tabled by the committee, not a Cabinet decision. Stage 3 should decide whether 'three' stands or the sub should say 'under successive governments'.",
+    "Azalina's 'as a lawyer' framing: she said 'in her personal capacity as an MP and lawyer'; the card compresses this. Quote is verbatim from Malay Mail.",
+    "90.3% of 1,544: Punitha's figures as reported by Malay Mail; the 3,422-respondent perception study result is not used.",
+    "Analogy sub 'foreign cash banned': NCCPF R13 bans cash donations from foreign sources; 'government contractors barred' is R29. Both verbatim from the report summary.",
+    "GIACC 'next month' (Sep 2019): Malaysiakini and Bernama-via-Malay Mail; Hansard confirmation that no bill was tabled in Oct 2019 not yet obtained (brief GAP 10).",
+    "Hook sub 'The Bar calls it a lacuna': the 77th AGM resolution (18 Mar 2023) says 'The lacuna is exacerbated by...'; the card paraphrases the noun, not a quote."
+  ],
+  "source_notes": "Election Offences Act state-seat cap conflicts across sources (RM100,000 vs RM150,000); no card uses it. Pardons Board 2024 decision dated 29 Jan 2024, announced 2 Feb; cards do not cite the 2024 decision by date. Engagement-session counts differ (18 total vs 12 state); cards cite participants only. The 2016 committee recommended no cap on donations, only disclosure above RM3,000; the analogy sub reflects that. Comparator thresholds (Singapore, UK, Indonesia) are in the brief but off the cards because their primary texts returned 403 in session. The 1MDB-Tanore 'forgeries' finding is off the cards pending a citable report of the judgment. Malay Mail is the single outlet for Azalina's personal-capacity quote; Bernama and The Star carry the same event without that line."
+}
