@@ -1,0 +1,237 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis",
+    "slug": "southern-thailand-dialogue-on-hold-facilitator-vacant",
+    "issue_id": "2015",
+    "brief": "engine/briefs/southern-thailand-dialogue-on-hold-facilitator-vacant.md",
+    "generated_at": "2026-09-19",
+    "revision_history": [
+      "v1 (2026-09-19): initial draft after Phase 1 brief approval. Companion to issue 2014; linked only if Sherlock's shared-entity rule fires. Frame: every Malaysian security instrument on the Thai border is switched on while the one diplomatic instrument only Putrajaya controls, the facilitator's chair, has been vacant since the summer. Anchor: anger-at-process (a 'soon' with no date). Lessons carried from 2014's reviews: bounded claims, attributed counts, 'rangers' not 'soldiers', no inference beyond the record on sanctuary."
+    ],
+    "discipline": "Neither attack is attributed to the BRN (ACLED: too early; no claim of responsibility; the BRN spokesman neither confirmed nor denied). The BRN delegation in Kuala Lumpur is described as the negotiating party Thailand asked Malaysia to host. Both official reasons for the suspension (the 22 July attack; the facilitator transition) run attributed. Rabin's exact end date and contract term are not stated because they are not published. Nikmatullah's governance proposals stay off the cards. No AI-provider name and no 'AI' appears on any card."
+  },
+  "headline": "Thailand suspended BRN talks on 28 July. Malaysia has had no facilitator since the summer.",
+  "context": "Malaysia has facilitated the Thailand-BRN dialogue since 2013. A 22 July attack killed five rangers and Bangkok cancelled September's round. Rabin Basir's facilitator contract then expired; on 27 August Khaled said names were with the PM. No appointment as of 19 September.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Bangkok cancelled September's Kuala Lumpur round on 28 July: 'The violence was too severe for us to accept.' By 27 August Malaysia's facilitator seat was empty too.",
+      "sub": "The BRN's negotiator, in a KL hotel on 14 September: the talks were 'hampered by the absence of a Malaysian mediator'.",
+      "sources": [
+        "S9",
+        "S21",
+        "S22",
+        "S30"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "big": "Six masked attackers killed five rangers at Rangae's Bukit Sami checkpoint on 22 July. Six days later Thanat Suwannanont called off the September round.",
+      "sub": "On 31 July Thailand's NSC cited 'the transition to a new facilitator'. Seventeen days earlier Khaled had said Rabin Basir 'will continue his role'.",
+      "sources": [
+        "S9",
+        "S10",
+        "S8",
+        "S26"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "big": "Fifty-one attacks in four hours on 22 August, by ISOC's count. Blasts shook Rantau Panjang; inbound crossings fell from 2,068 that Saturday to 1,230 in two days.",
+      "sub": "PDRM agreed on 26 August to trace BRN-linked individuals for Thailand. Army chief Azhan Md Othman put drones on the border on 17 September: 'no compromise'.",
+      "sources": [
+        "S12",
+        "S16",
+        "S17",
+        "S24",
+        "S20",
+        "S29"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Khaled confirmed on 27 August that Rabin Basir's contract had expired and the Armed Forces had sent names to Anwar. On 18 September he told AFP: 'under consideration'.",
+      "sub": "Rabin was appointed 1 July 2024. Sihasak on 7 September: the choice 'was ultimately Malaysia's decision'. Malaysia has facilitated since 2013.",
+      "sources": [
+        "S21",
+        "S22",
+        "S30",
+        "S1",
+        "S32"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "Malaysia is doing everything on this border except the one thing Thailand asked it to do.",
+      "sub": "",
+      "sources": [
+        "S7",
+        "S26",
+        "S27",
+        "S29",
+        "S20"
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like a host who locks every door, posts guards at the gate, and never sets a chair at the table.",
+      "sub": "",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "big": "Drones watch the border. Police trace names for Bangkok. The chair that hosts the talks sits empty; Putrajaya has said 'soon' for three weeks. Name the facilitator or the date.",
+      "sub": "",
+      "sources": [
+        "S29",
+        "S20",
+        "S21",
+        "S22",
+        "S30"
+      ]
+    }
+  ],
+  "sources": "Numbering follows engine/briefs/southern-thailand-dialogue-on-hold-facilitator-vacant.md §SOURCES. S1 Bernama 5 Jul 2024 (MKN statement: Rabin appointed effective 1 Jul 2024, replacing Zulkifli whose tenure ended 30 Jun); S7/S8 Bernama and The Star 14 Jul 2026 (Khaled: 'Rabin Basir will continue his role'; 'Malaysia's role is limited to facilitating'); S9 Bernama 28 Jul 2026 (Thanat: 'There will be no negotiations in September ... The violence was too severe for us to accept'; six masked assailants, Ban Bukit Sami, Rangae, five rangers killed, six civilians injured); S10 Bernama via Malay Mail 31 Jul 2026 (Thai NSC: review 'following the temporary suspension of peace talks during the transition to a new facilitator'); S12 Al Jazeera/AFP/Reuters 23 Aug 2026 (ISOC: 51 attacks; 8 pm to midnight); S16 ACLED (51 incidents, 21 districts); S17 Bernama via The Star 23 Aug (Lubok Gong, Tersang residents); S20 Bernama 26 Aug (IGP: PDRM to trace BRN-linked individuals at Thai request); S21/S22 Bernama and Malay Mail/Yahoo 27 Aug (Khaled: tenure 'ended recently'; 'contract has also expired'; MAF names to PM; PM 'expected to appoint ... soon'); S24 Bernama via Malay Mail 26 Aug (AKPS Rantau Panjang: inbound 2,068 Sat, 1,230 Sun and Mon combined); S26/S27 Bernama 7 Sep (Sihasak: facilitator choice 'ultimately Malaysia's decision'; Mohamad Hasan on fence coordination); S29 Bernama 17 Sep (Azhan: drones; 'There will be no compromise'); S30 AFP via Malay Mail 18 Sep (Nikmatullah, 14 Sep, KL hotel: 'hampered by the absence of a Malaysian mediator'; Khaled to AFP: 'under consideration'); S32 McDermott, Peace Research 46(1) (General Consensus signed in KL 28 Feb 2013; Malaysia as facilitator).",
+  "confidence": "High on every dated statement (Bernama carrying MKN, IGP, Defence Minister, Army chief; Thai NSC via Bernama; AFP). High on the 51 count (ISOC final, carried by AFP/Reuters and ACLED; preliminary 25 and 34 noted in the brief). Medium on the facilitator timeline: the end date and term of Rabin's contract are unpublished, so the cards say 'expired' and 'since the summer' without a date. Medium on 'for three weeks': the 27 August 'soon' to 19 September is three weeks and two days.",
+  "lenses_used": [
+    "Regional",
+    "Security",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Political",
+    "Economic",
+    "Historical"
+  ],
+  "needs_verification": [
+    "'Six masked attackers': Bernama 28 Jul says 'six masked assailants'; the Washington Post wire said 'about 10 assailants'. Bernama's figure is used; Stage 3 to confirm against Thai ISOC statements.",
+    "'Five rangers': Bernama and The Nation say paramilitary rangers (thahan phran); AFP says 'five soldiers'. Rangers used throughout.",
+    "'The transition to a new facilitator': Thai NSC secretary-general Chatchai's statement as carried by Bernama on 31 Jul; Thai-language original not opened.",
+    "'Inbound crossings fell from 2,068 that Saturday to 1,230 over the next two days': AKPS Rantau Panjang commander via Bernama; the 1,230 is Sunday and Monday combined, as the card says.",
+    "'Putrajaya has said soon for three weeks': 'soon' is Malay Mail/Yahoo's report of Khaled on 27 Aug ('expected to appoint the facilitators soon'); Bernama's version has 'hope a facilitator can be appointed'. The 18 Sep 'under consideration' is Khaled's statement to AFP.",
+    "'Thanat Suwannanont': Bernama's transliteration; Thai PBS and The Star also use 'Thanut Suvarnananda'. One spelling used throughout.",
+    "'Seventeen days before that': 14 Jul (Khaled) to 31 Jul (NSC) is 17 days.",
+    "General Consensus signatory for Malaysia was NSC secretary Mohammed Thajudeen (McDermott); 'Malaysia has facilitated since' is the document's own term ('act as facilitator')."
+  ],
+  "source_notes": "Incident count 22 Aug: ISOC final 51 (used); The Nation initial 25; FOCC4 preliminary 34. Suspension reason: Thanat (attack) and NSC (facilitator transition) both run, attributed. Cumulative death tolls deliberately off the cards (SBPAC 5,989 certified to Aug 2025 vs Deep South Watch 7,790; issue 2014 carries the certified figure). Rabin's appointment date: 1 Jul 2024 per MKN; an earlier search summary's '5 Jul 2025' was wrong. The Kelantan police 'no evidence' reply (2 Aug) and the Thai request to deny safe haven (27 Jul) are on issue 2014's cards and are not repeated here."
+}
