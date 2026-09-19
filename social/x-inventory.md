@@ -1,10 +1,48 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-19T00:37:56.689Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-19T02:21:39.931Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (85)
+## ⏳ TO POST (86)
+
+### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s diesel subsidy surges to rm2.5b monthly, loke says ev trucks must replace fuel‑). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
+
+**1/7** _(hook — attach image, NO link)_ · 179 chars
+```
+Najib's RM50 million fine became a condition of house arrest on 18 September. By evening Umno was collecting for it in a party account: RM634,562 in three hours, by its own count.
+```
+**2/7** _(fact)_ · 152 chars
+```
+Tabung Solidariti Najib Razak takes gifts into an account in Umno's registered name, supervised by party HQ. Its launch set no cap, donor rule or audit.
+```
+**3/7** _(fact)_ · 159 chars
+```
+Najib announced the committee that first recommended the Act on 14 August 2015, amid the furore over RM2.6 billion in his accounts. The minister now says 2027.
+```
+**4/7** _(fact)_ · 126 chars
+```
+On 8 September the minister drafting the Act said, as a lawyer: without it 'many politicians will be charged with corruption'.
+```
+**5/7** _(reframe)_ · 148 chars
+```
+A fine can be crowdfunded through a party account only members may see. That is not a loophole in the political-financing law. There is no such law.
+```
+**6/7** _(analogy)_ · 148 chars
+```
+It is like a bank that promised a know-your-customer rule in 2015, studied it under four governments, and still takes deposits with no form to fill.
+```
+**7/7** _(view — ONLY post with the link)_ · 218 chars
+```
+The fine is raised in an account only party members may see, under a law that does not exist. Pakatan Harapan promised it in 2018; its government says 2027. One is a choice.
+
+https://thefourthangle.pages.dev/issue/2013
+```
 
 ### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
 
