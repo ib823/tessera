@@ -266,3 +266,152 @@ Primary count: S1, S3, S7, S9, S10, S16, S17, S21 = 8, plus S→P items quoting 
 6. **Meta CIB definition**: quote from transparency.meta.com.
 7. **Cambridge Analytica website archive** for the exact Kedah wording (The Malaysian Insight
    paraphrases it).
+
+---
+
+# ADDENDUM 2026-09-19 (operator redirect): the story is the absence of a link
+
+**Operator instruction (2026-09-19):** "there's no linkage of jewish state to the cause or even
+relate, that's the story and narrative we want to develop."
+
+**Effect on this issue.** Issue 2014 is restructured as a fact-check: the rumour that Israel is
+behind the southern Thailand unrest, set against everything on the Thai and Malaysian record that
+names Israel or Mossad. The influence-for-hire material above (S1–S17) survives as one fact-card
+sub-line (the platform reports never mention Thailand) and remains a candidate for its own issue
+later (the Meta 2022 police-linked network is strong enough to stand alone). The original headline,
+hook and cards in `engine/output/influence-operations-for-hire-stage1.json` v1 are superseded by v2.
+
+**Public footprint of the rumour.** Searches in English, Malay and Thai (19 Sep 2026) found no
+named Malaysian or Thai public figure, and no press-reported viral post, claiming that Israel or
+Mossad instigated the Deep South attacks of July–August 2026. What the record does hold are three
+documented "foreign hand" claims from this year, none of which mentions the Deep South:
+
+1. **Sondhi Limthongkul, 10 Sep 2026.** His "Take Our Thailand Back" letter to Israel's ambassador
+   alleged that Israeli groups seek "long-term influence and territorial control", that Israeli
+   visitors in Pai include "warriors in tourist disguise", and that Mossad personnel are scattered
+   throughout Thailand (Thai Examiner's paraphrase of the letter; The Nation's summary: "a strategy
+   to take over Thailand, which it suggested could take 10–20 years") [A1, A2, A3]. The letter's
+   geography: Pai (Mae Hong Son), Chachoengsao, Phuket, Bangkok. Not Pattani, Yala or Narathiwat.
+2. **Anwar Ibrahim, Dewan Rakyat, 22 Jul 2025.** "It has been confirmed that Mossad not only has a
+   presence here, but has also successfully recruited or collaborated with locals, including
+   married couples"; "One of the most recent cases involved a local couple from Selangor who
+   allegedly colluded with agents believed to be from Mossad. They were involved in smuggling
+   weapons from Thailand and were arrested and are now in prison" [A4, A5]. The case is the
+   Avitan firearms case (below): guns across the Thai border into the Klang Valley, an Israeli
+   defendant who said he was hunting a rival Israeli. Not the insurgency.
+3. **Gen Chaiyapruek Duangprapat, Royal Thai Army chief of staff, 23 Jul 2026.** "Those who provide
+   hiding places, and any country that provides hiding places, should know that we will pursue them
+   to the ends of the earth" [A6, A7]. The Rakyat Post read this as a reference to Malaysia, the
+   only country bordering the Deep South [A8]. No Thai official has named any country.
+
+A reader who has heard all three can assemble the rumour without anyone having said it. That is the
+hook: the ingredients are real and documented; the conclusion is not on any record.
+
+## THE RECORD, ITEM BY ITEM
+
+### Israel on Thailand's record (2012–2026)
+| Date | Case | Where | Source |
+|---|---|---|---|
+| 14 Feb 2012 | Bombs in Ekkamai, Bangkok; Thai police: "the target was specific and aimed at Israeli diplomatic staff"; Iranian Saeid Moradi jailed for life 22 Aug 2013, Mohammad Khazaei 15 years | Bangkok | A9 |
+| 7 Oct 2023 | Thai MFA: 32 Thai nationals killed, 19 injured, 19 abducted (as of 28 Oct 2023); Israel's embassy in Bangkok (Oct 2024): 41 Thai workers among the dead | Southern Israel | A10, A11 |
+| 12 Oct 2023 | BRN Information Department posts "Patani-Palestina: Bersatu Demi Keadilan dan Damai yang Hakiki" on YouTube (a 2021 clip preceded it); Hara Shintaro: "no studies to indicate that the crises in Palestine ... worsen the situation in the southern border provinces" | Deep South (solidarity, against Israel) | A12 |
+| 18 Feb 2025 | Mae Hong Son tourist police refute a viral post that "around 30,000 Jewish people had settled in Pai": 30,000 is annual visitors; 83–84 a day; one community centre on 200 sq wah; "no evidence" of settlement | Pai | A13 |
+| 25 Jul 2026 | During a Phuket inspection a person at a Chabad House asked officials "Don't you know that this is Israeli territory?"; Deputy Interior Minister: "No one has the right to claim sovereignty over Thai territory"; inspections widened to 361 businesses | Phuket | A14 |
+| 21 Aug–9 Sep 2026 | DSI raids in Chonburi; nominee-holding probe extends to Pai, Koh Pha Ngan, Koh Samui, Phuket, Bangkok; assets "tens of billions of baht" | Central, islands, north | A15 |
+| 7–8 Sep 2026 | Unlicensed cemetery in Chachoengsao (Kan Chabad Co.) exhumed; FM Sihasak meets Israeli ambassador: "frank, straight-to-the-point" | Chachoengsao, Bangkok | A16, A17 |
+| 10–11 Sep 2026 | Sondhi rally at the embassy (about 300; Bangkok Post noted a "Jews Out" placard); Save Phuket march of 500+ forces cancellation of a Rosh Hashanah gathering | Bangkok, Phuket | A1, A2, A16, A18 |
+| Jan–Aug 2026 | 277,000+ Israeli visitors to Thailand (AP via IBTimes); ~60,000 Thais work in Israel | Nationwide / Israel | A3, A16 |
+
+### The Deep South's own record
+| Item | Finding | Source |
+|---|---|---|
+| Crisis Group Asia Report 291, 8 Nov 2017 | "to date there is no evidence of jihadist inroads, partly because the insurgents are nationalists who aim to create an independent state"; militant leaders "see their fronts as bulwarks against jihadist influence" | A19 |
+| Fourth Army commander Norathip Poinok, 23–25 Aug 2026 | 22 Aug attacks "may have been retaliation" for cordon-and-search after 22 Jul; ~30 questioned; 2 million cigarettes and 18.7 million baht cash seized 13 Aug; "These networks cannot survive without money"; "our community engagement is still not good enough" | A20, A21 |
+| ACLED, Aug 2026 | 51 incidents, 21 districts; "too early to attribute the attacks directly to the BRN" | A22 |
+| BRN spokesman Nikmatullah Seri, 14 Sep 2026 | "We want political power"; "neither confirmed nor denied" BRN responsibility; funded "by member donations" | A23 |
+| SBPAC certified toll, 2004–26 Dec 2025 | 5,999 deaths; 13,519 injured | A24 |
+| Thai budget FY2004–FY2026 | 340,706.76 million baht (Parliamentary Information Centre) | A25 |
+
+### Israel on Malaysia's record (2018–2025)
+| Date | Case | Who says Mossad | Source |
+|---|---|---|---|
+| 21 Apr 2018 | Fadi al-Batsh shot dead in Setapak, KL; KL police chief Mazlan Lazim: "an international issue"; case unsolved | Family, Hamas; Israel's Lieberman denied | A26, A27 |
+| 28 Sep 2022 | Palestinian Omar Albelbaisy abducted in KL, held in Kuala Langat; 11 Malaysians charged 14 Oct 2022; NST: interrogated by video by "two men, believed to be Israelis" | NST sources, Al Jazeera Arabic source; police did not confirm | A28, A29 |
+| 27 Mar 2024 | Shalom Avitan arrested in a KL hotel with six guns; said he was hunting a rival Israeli; a Malaysian couple charged with supplying the weapons; Avitan jailed seven years 26 Feb 2025 | Police investigated "crime ring or spy"; Anwar (Jul 2025): couple "colluded with agents believed to be from Mossad ... smuggling weapons from Thailand" | A30, A31, A4, A5 |
+
+### The influence-for-hire record (S1–S17 above)
+Meta's takedown reports on Archimedes (May 2019), Mind Force and the police-linked network (Aug
+2022) and Stoic (May 2024) were re-read for "Thailand": zero mentions in each (Meta 2019 post: "some
+activity in Latin America and Southeast Asia", unspecified). The Guardian's Team Jorge text: zero.
+DFRLab's Archimedes analysis: zero. No platform, consortium or laboratory report links any
+documented operation to Thailand's southern border provinces.
+
+## WHAT THE CARDS DO NOT SAY
+- That no Israeli intelligence activity exists in Malaysia or Thailand. Anwar's Dewan Rakyat
+  statement and the Bangkok verdicts show it does; the point is where it is on the record.
+- That the BRN carried out the July or August attacks (ACLED; Nikmatullah's non-answer).
+- That the rumour was said by anyone in particular. The hook shows the documented ingredients.
+- Anything about Jewish religious institutions by name; Sondhi's "Chabad" demands stay in the
+  brief. The word "Jewish" and any placard wording stay off the cards.
+
+## ADDITIONAL CONTRADICTIONS
+9. **Thai dead on 7 Oct 2023.** Thai MFA 32 (as of 28 Oct 2023) [A10]; IDF spokesman 39; Israel's
+   embassy in Bangkok 41 (Oct 2024 commemoration) [A11]. **Cards use 41 with "Israel's embassy
+   count", or "at least 32" with "Thai Foreign Ministry".** Never unattributed.
+10. **Whether the Selangor couple were Mossad's.** Anwar: "agents believed to be from Mossad"
+    [A5]. Court record: firearms offences; Avitan's stated motive was a rival Israeli [A30, A31].
+    **Cards attribute to Anwar and call it an allegation.**
+11. **Sondhi's Mossad wording.** Thai Examiner paraphrases ("claimed Mossad personnel were
+    scattered throughout Thailand"); The Nation's summary does not use the word Mossad [A1, A2].
+    Bangkok Post text blocked (451). **Cards paraphrase without quotation marks.**
+12. **Thanut appointed April vs May** and **Rabin appointed 1 Jul 2024**: see the 2015 brief.
+
+## RISK TABLE — REVISED
+| Dimension | Level | Note |
+|---|---|---|
+| Religious | **HIGH** | Israel, Mossad, a Thai anti-Israel street movement with antisemitic placards, a Malay-Muslim insurgency. Cards name states, agencies, courts and named individuals only; no religious institution, no community characterisation. |
+| Ethnic | MEDIUM | Thai-Buddhist nationalists vs Israeli nationals; Malay-Muslim insurgents vs the Thai state. Cards describe actors by role. |
+| Political | HIGH | Anwar's Mossad statement and Sondhi's campaign are live politics in two capitals; the Thai army line implicates Malaysia. All quoted, none endorsed. |
+| Narrative | HIGH | The trap is producing the rumour while debunking it. Every card ends on the record, not the rumour. |
+| Royalty | LOW | None. |
+
+**Stage 5 escalation: REQUIRED** (Religious HIGH under ADR-0004, and by operator instruction for
+the paired issue).
+
+## ADDITIONAL SOURCES (A-series; S1–S17 above remain valid)
+- **A1** Thai Examiner, "Veteran protest leader and media boss Sondhi begins his street protest campaign at Israel's Embassy", 10 Sep 2026. https://www.thaiexaminer.com/thai-news-foreigners/2026/09/10/veteran-protest-leader-and-media-mogul-sondhi-launches-his-street-protest-campaign-at-israels-embassy/
+- **A2** The Nation, "Sondhi leads protest outside Israeli embassy in Bangkok", 10 Sep 2026. https://www.nationthailand.com/news/politics/40070868 ; "Sondhi launches campaign to pressure Anutin government", 7 Sep 2026. https://www.nationthailand.com/news/politics/40070742
+- **A3** IBTimes UK, "'This Is Not the Promised Land': Bangkok protesters demand scrutiny...", Sep 2026 (AP visitor count; Anutin 3 Sep quote). https://www.ibtimes.co.uk/thai-protesters-rally-israeli-embassy-land-business-allegations-1819036
+- **A4** The Star, "On alert against Mossad", 23 Jul 2025 (Dewan Rakyat, PM's Question Time). https://www.thestar.com.my/news/nation/2025/07/23/on-alert-against-mossad
+- **A5** FMT, "Malaysia vigilant against Mossad, external threats, Anwar says", 22 Jul 2025 (verbatim quotes). https://www.freemalaysiatoday.com/category/nation/2025/07/22/malaysia-vigilant-against-mossad-external-threats-anwar-says
+- **A6** The Nation, "Army chief of staff orders manhunt after Narathiwat checkpoint attack kills five rangers", 23 Jul 2026. https://www.nationthailand.com/news/general/40068960
+- **A7** Thai PBS World, "Manhunt ordered after five rangers murdered in Narathiwat", Jul 2026. https://www.thaipbsworld.com/south-watch/manhunt-ordered-after-five-rangers-murdered-in-narathiwat
+- **A8** The Rakyat Post, "After five rangers killed in Narathiwat, Thailand is building a fence on Malaysia's doorstep", 26 Jul 2026. https://www.therakyatpost.com/news/malaysia/2026/07/26/after-five-rangers-killed-in-narathiwat-thailand-is-building-a-fence-on-malaysias-doorstep/
+- **A9** FDD Long War Journal, "2 Iranians tied to Bangkok terror plot sentenced", 22 Aug 2013 (Thai court verdict; Gen Prewpan quote). https://www.longwarjournal.org/archives/2013/08/two_iranians_tied_to_bangkok_t.php
+- **A10** Ministry of Foreign Affairs of Thailand, statement, 29 Oct 2023 (32 killed, 19 injured, 19 abducted). https://www.mfa.go.th/en/content/statement-29102023-2
+- **A11** Embassy of Israel in Thailand, "One year since the October 7 massacre" (41 Thai workers). https://embassies.gov.il/thailand/en/news/commemoration-ceremony-october-7-massacre
+- **A12** Hara Shintaro, "The impact of the Palestine-Israel crisis on Patani", Prachatai English, 2023. https://prachataienglish.com/node/10688
+- **A13** The Nation, "No Israeli 'Promised Land' in Pai: tourist police refute social media claims", 18 Feb 2025. https://www.nationthailand.com/news/tourism/40046434
+- **A14** The Nation, "Phuket nominee crackdown widens after Chabad House confrontation", 26 Jul 2026. https://www.nationthailand.com/news/general/40069062
+- **A15** Thai Examiner, "Summonses and criminal charges considered by DSI in probe into substantial Israeli network in Pattaya", 9 Sep 2026. https://www.thaiexaminer.com/thai-news-foreigners/2026/09/09/summonses-and-criminal-charges-considered-by-dsi-in-probe-into-substantial-israeli-network-in-pattaya/
+- **A16** Asia Times (Richard S. Ehrlich), "Land of Smiles takes anti-Israel turn as Bangkok-Tel Aviv ties fray", Sep 2026. https://asiatimes.com/2026/09/land-of-smiles-takes-anti-semitic-turn-as-thai-israel-ties-fray/
+- **A17** Khaosod English, "Thai FM meets Israeli ambassador over tourist conduct concerns", 8 Sep 2026 (blocked 403; quoted via A16). https://www.khaosodenglish.com/life/embassy/2026/09/08/thai-fm-meets-israeli-ambassador-over-tourist-conduct-concerns/
+- **A18** Thai Examiner, "Pressure movement against Israel in Thailand gains momentum...", 12 Sep 2026. https://www.thaiexaminer.com/thai-news-foreigners/2026/09/12/pressure-movement-against-israel-in-thailand-is-gaining-momentum-as-it-combines-with-street-protests/
+- **A19** International Crisis Group, Asia Report N°291, "Jihadism in Southern Thailand: A Phantom Menace", 8 Nov 2017 (PDF opened). https://icg-prod.s3.amazonaws.com/291-jihadism-in-southern-thailand-a-phantom-menace_1.pdf
+- **A20** The Nation, "Nearly two months' warning failed to stop 51 deep South attacks, southern army chief admits", Aug 2026. https://www.nationthailand.com/news/general/40070185
+- **A21** The Nation, "Deep South unrest totals 1,271 incidents since 2017", 23 Aug 2026. https://www.nationthailand.com/news/general/40070161
+- **A22** ACLED expert comment, Aug 2026. https://acleddata.com/expert-comment/dozens-attacks-hit-thailands-deep-south-what-happens-peace-talks-now
+- **A23** AFP via Malay Mail, 18 Sep 2026 (Nikmatullah interview). https://www.malaymail.com/news/world/2026/09/18/southern-thailands-insurgent-group-wants-power-not-just-peace-talks-even-with-malaysia-at-the-table/235625
+- **A24** The Nation via The Star, 5 Jan 2026 (SBPAC certified toll). https://www.thestar.com.my/aseanplus/aseanplus-news/2026/01/05/thailand039s-deep-south-insurgency-marks-22-years-10116-attacks-5999-deaths
+- **A25** The Nation, "Deep South budget tops 340bn baht amid renewed attacks", 23 Aug 2026. https://www.nationthailand.com/news/general/40070166
+- **A26** Al Jazeera, "Kuala Lumpur police: killing of al-Batsh an 'international issue'", 22 Apr 2018. https://www.aljazeera.com/news/2018/4/22/kuala-lumpur-police-killing-of-al-batsh-an-international-issue
+- **A27** Bernama via Malay Mail, "Hamas claims has suspect who helped Mossad assassinate Palestinian lecturer in KL", 10 Jan 2022 (Lieberman denial). https://www.malaymail.com/amp/news/malaysia/2022/01/10/suspect-who-helped-mossad-assassinate-palestinian-lecturer-in-kl-arrested-b/2034108
+- **A28** Malay Mail, "Six questions about: Palestinian's abduction by Malaysians and alleged link to Israeli intelligence Mossad", 28 Oct 2022. https://www.malaymail.com/news/malaysia/2022/10/28/six-questions-about-palestinians-abduction-by-malaysians-and-alleged-link-to-israeli-intelligence-mossad/35347
+- **A29** Al Jazeera, "Malaysian media says Israel's Mossad behind kidnapped Palestinian", 18 Oct 2022. https://www.aljazeera.com/news/2022/10/18/malaysia-media-says-israels-mossad-behind-kidnapped-palestinian
+- **A30** SCMP, "Malaysia's arrest of Israeli man with 6 guns triggers mystery", Apr 2024. https://www.scmp.com/week-asia/politics/article/3257583/malaysias-arrest-israeli-man-6-guns-triggers-mystery-was-mossad-or-mob-involved
+- **A31** Malay Mail, "Israeli national jailed seven years for firearms, ammunition possession in Kajang", 26 Feb 2025. https://www.malaymail.com/news/malaysia/2025/02/26/israeli-national-jailed-seven-years-for-firearms-ammunition-possession-in-kajang/168028
+- **A32** Meta Newsroom, "Removing Coordinated Inauthentic Behavior From Israel", 16 May 2019 (re-read: no Thailand). https://about.fb.com/news/2019/05/removing-coordinated-inauthentic-behavior-from-israel/
+
+Blocked: Bangkok Post (451) for the Sondhi rally and the 2013 General Consensus; Khaosod English
+(403) for the 23 Jul army story and the 17 Sep "Grey Jews" opinion; Crisis Group site (403, PDF
+obtained from its S3 mirror); NST 22 Jul 2025 body (paywall; The Star and FMT carry the quotes).
