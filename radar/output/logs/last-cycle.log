@@ -1,64 +1,58 @@
-[32m2026-09-22 10:14:38[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-09-22 10:14:38[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-09-22 10:14:38[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Malaysia Day" importance=0.45
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 10403 topics from state
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-09-22 10:14:39[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-09-22T10:14:39.413562+00:00
-[32m2026-09-22 10:14:40[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-09-22 10:14:41[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-09-22 10:14:42[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-09-22 10:14:43[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-09-22 10:14:45[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-09-22 10:14:45[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 448 events
-[32m2026-09-22 10:14:46[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-09-22 10:14:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-09-22 10:15:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-09-22 10:15:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:15:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:15:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:15:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:16:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:16:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:16:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:16:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:16:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-09-22 10:16:56[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-09-22 10:16:58[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 7 events
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 13 events
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 493 events from 5 sources
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 493 events
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 491 within 24h (145 pruned)
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Three actors out on bail as police hunt uploader of viral Rukun Negara clip from 2018. KUALA LUMPUR, Sept 22 &mdash; Bukit Aman have released three local actors on police bail after questioning them o" importance=0.46
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Three actors out on bail as police hunt uploader of viral Rukun Negara clip from 2018. KUALA LUMPUR, Sept 22 &mdash; Bukit Aman have released three local actors on police bail after questioning them o" importance=0.36
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Zahid: Neither MB Ismail Lasim nor I was summoned by Negeri Sembilan Ruler for an audience. KUALA LUMPUR, Sept 22 &mdash; Deputy Prime Minister Datuk Seri Dr Ahmad Zahid Hamidi said neither he nor Neg" importance=0.31
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Dakwaan penyeludupan: Penjara gesa lapor ikut saluran, tangani ikut SOP. Sebarang dakwaan hendaklah disalurkan melalui saluran yang sewajarnya supaya ia dapat disahkan dan ditangani berdasarkan fakta " importance=0.41
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [court_of_appeal_ruling] "Court of Appeal widens access to documents in judicial review cases. Appellate court says the old ‘relevancy’ test no longer applies, rejects ‘fishing expedition’ as basis to deny discovery." importance=0.46
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Anwar sampaikan keresahan keluarga mangsa masih hilang kepada PM Nepal. Anwar Ibrahim berkata, Balendra Shah beri jaminan usaha pencarian akan diteruskan sedaya upaya." importance=0.31
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "South Korean court cuts former first lady Kim Keon Hee’s prison term to 5 years. The wife of former president Yoon Suk Yeol was found guilty in June of accepting luxury items in exchange for political" importance=0.36
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Perkeso keluar 25,011 notis kompaun RM15 juta kepada majikan ingkar. Sebanyak 21,177 kes turut dihadapkan ke mahkamah membabitkan pelbagai kesalahan di bawah undang-undang keselamatan sosial sejak 202" importance=0.42
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "3 pelakon teater persenda Rukun Negara ditahan. Mereka dibebaskan dengan jaminan polis manakala kes disiasat mengikut Akta Hasutan serta Akta Komunikasi dan Multimedia." importance=0.41
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "3 pelakon teater persenda Rukun Negara ditahan. Mereka dibebaskan dengan jaminan polis manakala kes disiasat mengikut Akta Hasutan serta Akta Komunikasi dan Multimedia." importance=0.31
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Pemimpin Pemuda Bersatu gagal dapat kebenaran cabar sekatan TikTok. Mahkamah Tinggi memutuskan bahawa keputusan menyekat atau menggantung akaun TikTok Na’im Brundage bukan dibuat oleh pengawal selia i" importance=0.36
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Bukit Aman probing alleged mocking of Rukun Negara for sedition. Bukit Aman criminal investigation department director M Kumar says three actors featured in a now-viral clip of the play were detained " importance=0.41
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Bukit Aman probing alleged mocking of Rukun Negara for sedition. Bukit Aman criminal investigation department director M Kumar says three actors featured in a now-viral clip of the play were detained " importance=0.31
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Bersatu Youth leader denied leave to challenge restrictions on TikTok accounts. High Court rules that the decision to block or suspend Na’im Brundage’s TikTok accounts was not made by the country's in" importance=0.36
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Higher oil prices won’t disrupt 2027 development plans, says Akmal. Economy minister Akmal Nasir says the government will need to address the impact of rising global oil prices on subsidies and the co" importance=0.51
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "G7 leaders condemn Houthi strikes on Saudi Arabia. The group representing Canada, France, Germany, Italy, Japan, the UK and the US also calls on the Houthis to immediately cease all military actions." importance=0.41
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [high_court_ruling] "Court acquits company owners of open burning charge. They were accused of allowing wood piles and roots to be burned at the Rubber Research Institute of Malaysia compound in Kota Tinggi in 2023." importance=0.41
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [high_court_ruling] "Najib’s residence assessed for house arrest, but location not yet finalised, authorities say. KUALA LUMPUR, Sept 21 &mdash; Police and the Prisons Department held a coordination meeting today to asses" importance=0.31
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0022 [high_court_ruling] "Former High Court judge Duncan Sikodol joins MACC Advisory Board. KUALA LUMPUR, Sept 21 &mdash; Former High Court judge Datuk Duncan Sikodol has been appointed to the Malaysian Anti-Corr..." importance=0.46
-[32m2026-09-22 10:17:00[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0023 [bill_reading] "‘Urgent and important’: Serikin border complex fast-tracked for 2027 completion, says minister. BAU, Sept 21 &mdash; Construction of the RM43.66 million Serikin Immigration, Customs, Quarantine and Se" importance=0.49
-[32m2026-09-22 10:17:01[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'narrative_fragmentation': 'ok', 'polarization': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-09-22 10:17:01[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 41), ('malay', 33), ('india', 27), ('chinese', 25), ('government', 23), ('pas', 16), ('isa', 16), ('assembly', 16), ('prime minister', 16), ('election', 12)]
-[32m2026-09-22 10:17:01[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
-[32m2026-09-22 10:17:01[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 10406 active topics
-[32m2026-09-22 10:17:01[0m | [1mINFO    [0m | [36moutput              [0m | 1173 active issues, 9220 new, 9233 pruned
-[32m2026-09-22 10:17:01[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-09-22 10:17:33[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=154  hmm=OK/68  cox=RT/1173  sarima=RT/1173
-[32m2026-09-22 10:17:33[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1173)
-[32m2026-09-22 10:17:34[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 10406 active topics. Top: parliament budget session session opens (score: 0.99)
+[32m2026-09-22 12:19:50[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-09-22 12:19:50[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-09-22 12:19:50[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [national_policy] "Malaysia Day" importance=0.45
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 10406 topics from state
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-09-22 12:19:51[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-09-22T12:19:51.634380+00:00
+[32m2026-09-22 12:19:52[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-09-22 12:19:54[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-09-22 12:19:55[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-09-22 12:19:56[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-09-22 12:19:59[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-09-22 12:19:59[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 439 events
+[32m2026-09-22 12:20:00[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 50 events
+[32m2026-09-22 12:20:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-09-22 12:20:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:20:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-09-22 12:20:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:21:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:21:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:21:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:21:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:21:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:22:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-09-22 12:22:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-09-22 12:22:14[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-09-22 12:22:16[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 6 events
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 8 events
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 503 events from 5 sources
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 503 events
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 507 within 24h (128 pruned)
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Three actors out on bail as police hunt uploader of viral Rukun Negara clip from 2018. KUALA LUMPUR, Sept 22 &mdash; Bukit Aman have released three local actors on police bail after questioning them o" importance=0.46
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Three actors out on bail as police hunt uploader of viral Rukun Negara clip from 2018. KUALA LUMPUR, Sept 22 &mdash; Bukit Aman have released three local actors on police bail after questioning them o" importance=0.36
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Zahid: Neither MB Ismail Lasim nor I was summoned by Negeri Sembilan Ruler for an audience. KUALA LUMPUR, Sept 22 &mdash; Deputy Prime Minister Datuk Seri Dr Ahmad Zahid Hamidi said neither he nor Neg" importance=0.31
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Ringgit inches up against dollar in cautious trade. Investors are monitoring geopolitical developments for their potential impact on the markets, says an analyst." importance=0.46
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "BoE and Fed examine bank exposure after Jane Street loss. Jane Street lost roughly US$15 billion in July, particularly through its investment in the Situational Awareness hedge fund and other technolo" importance=0.46
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Mandiri duo detained under Amla. Activists Amir Hadi and Dobby Chew were questioned under the anti-money laundering laws earlier today by Bukit Aman’s commercial crime investigation department officer" importance=0.41
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Dakwaan penyeludupan: Penjara gesa lapor ikut saluran, tangani ikut SOP. Sebarang dakwaan hendaklah disalurkan melalui saluran yang sewajarnya supaya ia dapat disahkan dan ditangani berdasarkan fakta " importance=0.41
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [court_of_appeal_ruling] "Court of Appeal widens access to documents in judicial review cases. Appellate court says the old ‘relevancy’ test no longer applies, rejects ‘fishing expedition’ as basis to deny discovery." importance=0.46
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Anwar sampaikan keresahan keluarga mangsa masih hilang kepada PM Nepal. Anwar Ibrahim berkata, Balendra Shah beri jaminan usaha pencarian akan diteruskan sedaya upaya." importance=0.31
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "South Korean court cuts former first lady Kim Keon Hee’s prison term to 5 years. The wife of former president Yoon Suk Yeol was found guilty in June of accepting luxury items in exchange for political" importance=0.36
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Perkeso keluar 25,011 notis kompaun RM15 juta kepada majikan ingkar. Sebanyak 21,177 kes turut dihadapkan ke mahkamah membabitkan pelbagai kesalahan di bawah undang-undang keselamatan sosial sejak 202" importance=0.42
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Najib’s residence assessed for house arrest, but location not yet finalised, authorities say. KUALA LUMPUR, Sept 21 &mdash; Police and the Prisons Department held a coordination meeting today to asses" importance=0.31
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Former High Court judge Duncan Sikodol joins MACC Advisory Board. KUALA LUMPUR, Sept 21 &mdash; Former High Court judge Datuk Duncan Sikodol has been appointed to the Malaysian Anti-Corr..." importance=0.46
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "‘Urgent and important’: Serikin border complex fast-tracked for 2027 completion, says minister. BAU, Sept 21 &mdash; Construction of the RM43.66 million Serikin Immigration, Customs, Quarantine and Se" importance=0.49
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 40), ('minister', 36), ('india', 27), ('chinese', 25), ('government', 22), ('pas', 16), ('prime minister', 15), ('isa', 14), ('assembly', 14), ('election', 12)]
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 10410 active topics
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36moutput              [0m | 1176 active issues, 9237 new, 9234 pruned
+[32m2026-09-22 12:22:18[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-09-22 12:22:38[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=154  hmm=OK/68  cox=RT/1176  sarima=RT/1176
+[32m2026-09-22 12:22:38[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1176)
+[32m2026-09-22 12:22:38[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 10410 active topics. Top: parliament budget session session opens (score: 0.99)
