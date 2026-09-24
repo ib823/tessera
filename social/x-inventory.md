@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-24T09:06:51.913Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-09-24T14:43:26.954Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1340,6 +1340,40 @@ This isn't about Chinese tourists versus heritage. It's about who profits from g
 Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
 
 https://thefourthangle.pages.dev/issue/1970
+```
+
+### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
+
+> ⚡ **Reactive: topic is live in the radar** (putrajaya approves 367 projects worth rm9b to replace dilapidated schools. tapah, aug 26 &). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
+
+**1/6** _(hook — attach image, NO link)_ · 111 chars
+```
+The vernacular school fight is stuck on unity vs culture. The courts settled the law, but parents keep leaving.
+```
+**2/6** _(fact)_ · 113 chars
+```
+69% of middle-class Malay parents preferred SJKC for academic quality, but no data proves SJKC is actually better
+```
+**3/6** _(fact)_ · 123 chars
+```
+Tamil schools are collapsing: 37 have 10 or fewer students, and 67% sit in rural areas the Indian community has left behind
+```
+**4/6** _(fact)_ · 120 chars
+```
+Malaysian enrolment in international schools rose 34% in five years. Class is reshaping education faster than ethnicity.
+```
+**5/6** _(reframe)_ · 128 chars
+```
+The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
+```
+**6/6** _(view — ONLY post with the link)_ · 170 chars
+```
+Stop debating whether vernacular schools should exist. Start asking why national schools keep losing the families they serve.
+
+https://thefourthangle.pages.dev/issue/1967
 ```
 
 ### Issue 1966 — Refugee registration system launched but work permits remain unissued
@@ -2685,39 +2719,6 @@ Like outsourcing passport control to a toll-booth operator who cut wait times, t
 The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
 
 https://thefourthangle.pages.dev/issue/1973
-```
-
-### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
-
-**1/6** _(hook — attach image, NO link)_ · 111 chars
-```
-The vernacular school fight is stuck on unity vs culture. The courts settled the law, but parents keep leaving.
-```
-**2/6** _(fact)_ · 113 chars
-```
-69% of middle-class Malay parents preferred SJKC for academic quality, but no data proves SJKC is actually better
-```
-**3/6** _(fact)_ · 123 chars
-```
-Tamil schools are collapsing: 37 have 10 or fewer students, and 67% sit in rural areas the Indian community has left behind
-```
-**4/6** _(fact)_ · 120 chars
-```
-Malaysian enrolment in international schools rose 34% in five years. Class is reshaping education faster than ethnicity.
-```
-**5/6** _(reframe)_ · 128 chars
-```
-The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
-```
-**6/6** _(view — ONLY post with the link)_ · 170 chars
-```
-Stop debating whether vernacular schools should exist. Start asking why national schools keep losing the families they serve.
-
-https://thefourthangle.pages.dev/issue/1967
 ```
 
 ### Issue 1962 — Generals charged at last; the 4,679-contract cartel system remains intact
