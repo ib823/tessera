@@ -1,57 +1,62 @@
-[32m2026-10-04 04:44:19[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-10-04 04:44:19[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-10-04 04:44:19[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 10900 topics from state
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-10-04 04:44:20[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-10-04T04:44:20.658601+00:00
-[32m2026-10-04 04:44:21[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-10-04 04:44:23[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-10-04 04:44:25[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-10-04 04:44:26[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-10-04 04:44:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-10-04 04:44:28[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 453 events
-[32m2026-10-04 04:44:30[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-10-04 04:44:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-10-04 04:44:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:45:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:45:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:45:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:45:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-10-04 04:45:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:46:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:46:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-10-04 04:46:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-10-04 04:46:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-04 04:46:40[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-10-04 04:46:42[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 13 events
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 1 events
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 492 events from 5 sources
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 492 events
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 291 within 24h (215 pruned)
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Not a great day to be outdoors in Batu Pahat, Segamat and Kluang as API hits unhealthy levels. KUALA LUMPUR, Oct 4 &mdash; Six areas in Johor and one in Sarawak recorded Air Pollutant Index (API) read" importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Johor police confirm investigating Yong Peng student’s death, public asked to refrain from spreading unverifiable information. BATU PAHAT, Oct 4 &mdash; Johor police have urged the public to give inve" importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Jika Trump boleh diterima mengapa tidak Houghton, soal Ahli Parlimen. Ahli Parlimen Kepong Lim Lip Eng berkata mengapa sensitiviti konsert Israel Houghton tak diuruskan menerusi persediaan keselamatan" importance=0.46
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Cable theft disrupts services on Putrajaya MRT line. Rapid KL says alternative train services and free shuttle buses have been activated following a power supply disruption near the Taman Equine stati" importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "6 kawasan di Johor catat IPU tak sihat pagi ini. Satu kawasan di Sarawak iaitu di Samarahan, Sarawak catat IPU tak sihat dengan bacaan 152." importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Pelajar maut di sekolah: Saifuddin gesa Fadhlina beri penerangan di Dewan Rakyat. Ahli Parlimen Indera Mahkota berkata tahap keselamatan murid di sekolah kini sudah semakin meruncing, membimbangkan da" importance=0.46
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Parties’ weaknesses behind Melaka pact uncertainty, say analysts. Tawfik Yaakub says fragmented support has made cooperation necessary, but analysts warn voters may be left unsure who they are voting " importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Unhealthy air quality in several parts of Johor. All other areas nationwide, except Samarahan in Sarawak, enjoy moderate to good API readings." importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Space travel can be hard on the gut. New research suggests microgravity slows digestion and changes how gut bacteria process food, offering clues to a common problem among astronauts." importance=0.41
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Tennessee prison chief who oversaw botched execution resigns. Tennessee governor Bill Lee announced the resignation, saying further executions would be halted for the rest of the year while a review i" importance=0.51
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Jaminan Abang Jo mengenai Petros ‘tak mencerminkan realiti’, dakwa Zaid. Bekas menteri undang-undang berkata usaha Petros mengambil alih peranan Petronas dalam sektor gas boleh melemahkan syarikat min" importance=0.31
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Senior Citizens Bill to strengthen protection for older Malaysians, says Nancy Shukri. MELAKA, Oct 3 &mdash; The physical and mental well-being of senior citizens will be among the key areas addressed" importance=0.51
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [budget_allocation] "Premier: Sarawak Budget 2027 to cover electricity tariffs, revenue and economic direction. MUKAH, Oct 3 &mdash; Sarawak Premier Tan Sri Abang Johari Openg hinted that the Sarawak Budget 2027, to be ta" importance=0.34
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Young Malaysians show enthusiasm as PLKN 3.0 attracts ten unexpected volunteers in Kepala Batas. ALOR SETAR, Oct 3 &mdash; The response to the National Service Training Programme (PLKN) 3.0 has been e" importance=0.46
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'volume_monitor': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 38), ('government', 32), ('minister', 30), ('india', 29), ('pas', 23), ('chinese', 22), ('isa', 17), ('election', 16), ('protest', 15), ('prime minister', 15)]
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
-[32m2026-10-04 04:46:44[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 10915 active topics
-[32m2026-10-04 04:46:45[0m | [1mINFO    [0m | [36moutput              [0m | 1168 active issues, 9749 new, 9747 pruned
-[32m2026-10-04 04:46:45[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-10-04 04:47:09[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=166  hmm=OK/61  cox=RT/1168  sarima=RT/1168
-[32m2026-10-04 04:47:09[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1168)
-[32m2026-10-04 04:47:10[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 10915 active topics. Top: parliament budget session session opens (score: 0.99)
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-10-04 11:53:54[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Parliament budget session session opens" importance=0.51
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 10915 topics from state
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-10-04 11:53:54[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-10-04T11:53:54.965419+00:00
+[32m2026-10-04 11:53:55[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-10-04 11:53:56[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-10-04 11:53:58[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-10-04 11:53:58[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-10-04 11:54:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-10-04 11:54:00[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 432 events
+[32m2026-10-04 11:54:02[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-10-04 11:54:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-10-04 11:54:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:54:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:54:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:54:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:55:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:55:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:55:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:55:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:55:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:56:01[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-04 11:56:01[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-10-04 11:56:02[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 16 events
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 476 events from 5 sources
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 476 events
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 293 within 24h (209 pruned)
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Zahid urges UiTM to establish Quantum Department, says Malaysia must not lag. &nbsp;SHAH ALAM, Oct 4 &mdash; Deputy Prime Minister Datuk Seri Ahmad Zahid Hamidi has called on Universiti Teknologi MA.." importance=0.36
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Negeri Sembilan joins Johor on unhealthy air list as haze lingers. KUALA LUMPUR, Oct 4 &mdash; A total of eight locations recorded Air Pollutant Index (API) readings in the unhealthy cate..." importance=0.41
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Money row emerges as suspected motive in Terengganu man’s death, brother under remand. KUALA TERENGGANU, Oct 4 &mdash; Dissatisfaction with his elder brother, who allegedly frequently asked their pare" importance=0.41
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Anwar orders ‘immediate, thorough and transparent’ probe into Yong Peng student’s death. KUALA LUMPUR, Oct 4 &mdash; Datuk Seri Anwar Ibrahim has expressed his condolences over the death of secondary " importance=0.41
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Pro-Europe Latvian PM wins election dominated by Russia, social concerns. Andris Kulbergs' United List party won 42 seats in the 100-seat parliament, an unprecedented result in the former Soviet repub" importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Not a great day to be outdoors in Batu Pahat, Segamat and Kluang as API hits unhealthy levels. KUALA LUMPUR, Oct 4 &mdash; Six areas in Johor and one in Sarawak recorded Air Pollutant Index (API) read" importance=0.41
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Tindakan akan ikut prosedur, kata Kulasegaran susulan saman keluarga pelajar kes bunuh. Timbalan Menteri di JPM, M Kulasegaran, kata pihak kerajaan dan polis akan ikut prosedur biasa." importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Iran says Hormuz will not reopen until conditions are met. Iran's parliament speaker Mohammad Baqer Qalibaf says the Strait of Hormuz will not be opened until seven conditions are met." importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Johor police confirm investigating Yong Peng student’s death, public asked to refrain from spreading unverifiable information. BATU PAHAT, Oct 4 &mdash; Johor police have urged the public to give inve" importance=0.41
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Mahkamah Tinggi ketepi perjanjian fi guaman RM1.55 juta libat 203 anak guam. Hakim putus perjanjian peguam cara-anak guam tidak dicapai secara adil dalam kes pelaburan, lalu memerintahkan 18 fi ditaks" importance=0.39
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "High Court sets aside law firm’s RM1.55mil fee agreement with 203 clients. Judge rules solicitor-client agreement was not fairly obtained in investment case, and orders 18 bills to be assessed afresh." importance=0.55
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "High Court sets aside law firm’s RM1.55mil fee agreement with 203 clients. Judge rules solicitor-client agreement was not fairly obtained in investment case, and orders 18 bills to be assessed afresh." importance=0.44
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Penceramah motivasi lagi sekali ditahan susulan laporan baharu. Polis Perlis berkata ia susulan laporan baharu dibuat remaja perempuan 19 tahun." importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Amanah rejects opposition role in Dewan agenda, PKR MP backs review. Pasir Gudang MP Hassan Karim says the proposal should be referred to a parliamentary select committee for consideration." importance=0.51
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Pemimpin Amanah tolak, Hassan sokong timbang peranan ketua pembangkang tentukan agenda Parlimen. Hassan Karim dari PKR berkata cadangan itu boleh dibincangkan Jawatankuasa Pilihan Parlimen untuk diper" importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Germany’s Merz arrives in Kyiv, pledges support for Ukraine. The chancellor is set to announce €1 billion in military aid and €350 million for energy repairs, alongside a deal on joint drone productio" importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [bill_reading] "Anwar calls for thorough probe into girl’s death at Yong Peng school. The prime minister says if there are elements of criminal wrongdoing, firm action must be taken in accordance with the law." importance=0.41
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0020 [bill_reading] "Jika Trump boleh diterima mengapa tidak Houghton, soal Ahli Parlimen. Ahli Parlimen Kepong Lim Lip Eng berkata mengapa sensitiviti konsert Israel Houghton tak diuruskan menerusi persediaan keselamatan" importance=0.46
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0021 [bill_reading] "Senior Citizens Bill to strengthen protection for older Malaysians, says Nancy Shukri. MELAKA, Oct 3 &mdash; The physical and mental well-being of senior citizens will be among the key areas addressed" importance=0.51
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'volume_monitor': 'ok', 'silence_detector': 'ok'}
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 34), ('government', 33), ('minister', 32), ('india', 24), ('pas', 24), ('chinese', 23), ('election', 20), ('isa', 20), ('prime minister', 16), ('protest', 15)]
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 19 events monitored, 19 flagged
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 10929 active topics
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36moutput              [0m | 1181 active issues, 9761 new, 9748 pruned
+[32m2026-10-04 11:56:04[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-10-04 11:56:18[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=166  hmm=OK/60  cox=RT/1181  sarima=RT/1181
+[32m2026-10-04 11:56:18[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1181)
+[32m2026-10-04 11:56:18[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 10929 active topics. Top: parliament budget session session opens (score: 0.99)
