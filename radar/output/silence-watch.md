@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-10-07 02:30 UTC. Queue size: 1255. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-10-07 04:20 UTC. Queue size: 1260. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,7 +31,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.643 (silence=0.97 × importance=0.67, no age weighting)
 
-- **Age in queue:** 1.7 days (source date: 2026-10-05, first seen: 2026-10-05)
+- **Age in queue:** 1.8 days (source date: 2026-10-05, first seen: 2026-10-05)
 
 - **Coverage:** 65 news, 10 social — pattern: _below-expected coverage_
 
@@ -42,9 +42,9 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.594 (silence=0.97 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.4 days (source date: 2026-10-07, first seen: 2026-10-06)
+- **Age in queue:** 0.5 days (source date: 2026-10-07, first seen: 2026-10-06)
 
-- **Coverage:** 33 news, 12 social — pattern: _below-expected coverage_
+- **Coverage:** 32 news, 12 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
@@ -53,9 +53,9 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.583 (silence=0.95 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.0 days (source date: 2026-10-07, first seen: 2026-10-07)
+- **Age in queue:** 0.1 days (source date: 2026-10-07, first seen: 2026-10-07)
 
-- **Coverage:** 50 news, 18 social — pattern: _below-expected coverage_
+- **Coverage:** 49 news, 19 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
@@ -64,7 +64,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.575 (silence=0.94 × importance=0.61, no age weighting)
 
-- **Age in queue:** 1.7 days (source date: 2026-10-06, first seen: 2026-10-05)
+- **Age in queue:** 1.8 days (source date: 2026-10-06, first seen: 2026-10-05)
 
 - **Coverage:** 62 news, 22 social — pattern: _below-expected coverage_
 
@@ -75,7 +75,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.560 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.9 days (source date: 2026-09-30, first seen: 2026-09-30)
+- **Age in queue:** 7.0 days (source date: 2026-09-30, first seen: 2026-09-30)
 
 - **Coverage:** 2 news, 5 social — pattern: _below-expected coverage_
 
@@ -86,7 +86,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.560 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 5.6 days (source date: 2026-10-01, first seen: 2026-10-01)
+- **Age in queue:** 5.7 days (source date: 2026-10-01, first seen: 2026-10-01)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
@@ -97,7 +97,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.558 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 3.9 days (source date: 2026-10-03, first seen: 2026-10-03)
+- **Age in queue:** 4.0 days (source date: 2026-10-03, first seen: 2026-10-03)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -108,7 +108,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.556 (silence=0.98 × importance=0.56, no age weighting)
 
-- **Age in queue:** 3.9 days (source date: 2026-10-03, first seen: 2026-10-03)
+- **Age in queue:** 4.0 days (source date: 2026-10-03, first seen: 2026-10-03)
 
 - **Coverage:** 10 news, 3 social — pattern: _below-expected coverage_
 
@@ -119,7 +119,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.552 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.7 days (source date: 2026-10-06, first seen: 2026-10-06)
+- **Age in queue:** 0.8 days (source date: 2026-10-06, first seen: 2026-10-06)
 
 - **Coverage:** 6 news, 6 social — pattern: _below-expected coverage_
 
@@ -130,7 +130,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.540 (silence=0.96 × importance=0.56, no age weighting)
 
-- **Age in queue:** 5.6 days (source date: 2026-10-01, first seen: 2026-10-01)
+- **Age in queue:** 5.7 days (source date: 2026-10-01, first seen: 2026-10-01)
 
 - **Coverage:** 29 news, 9 social — pattern: _below-expected coverage_
 
@@ -141,7 +141,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.525 (silence=0.93 × importance=0.56, no age weighting)
 
-- **Age in queue:** 5.6 days (source date: 2026-10-02, first seen: 2026-10-01)
+- **Age in queue:** 5.7 days (source date: 2026-10-02, first seen: 2026-10-01)
 
 - **Coverage:** 48 news, 13 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.514 (silence=0.93 × importance=0.55, no age weighting)
 
-- **Age in queue:** 1.7 days (source date: 2026-10-06, first seen: 2026-10-05)
+- **Age in queue:** 1.8 days (source date: 2026-10-06, first seen: 2026-10-05)
 
 - **Coverage:** 40 news, 19 social — pattern: _below-expected coverage_
 
@@ -163,7 +163,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.510 (silence=0.99 × importance=0.52, no age weighting)
 
-- **Age in queue:** 0.4 days (source date: 2026-10-06, first seen: 2026-10-06)
+- **Age in queue:** 0.5 days (source date: 2026-10-06, first seen: 2026-10-06)
 
 - **Coverage:** 4 news, 3 social — pattern: _below-expected coverage_
 
@@ -174,7 +174,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.505 (silence=0.98 × importance=0.52, no age weighting)
 
-- **Age in queue:** 2.6 days (source date: 2026-10-04, first seen: 2026-10-04)
+- **Age in queue:** 2.7 days (source date: 2026-10-04, first seen: 2026-10-04)
 
 - **Coverage:** 10 news, 3 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.503 (silence=0.99 × importance=0.51, no age weighting)
 
-- **Age in queue:** 0.7 days (source date: 2026-10-06, first seen: 2026-10-06)
+- **Age in queue:** 0.8 days (source date: 2026-10-06, first seen: 2026-10-06)
 
 - **Coverage:** 5 news, 4 social — pattern: _below-expected coverage_
 
@@ -213,7 +213,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.398 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 73.9 days (source date: 2026-07-26, first seen: 2026-07-25)
+- **Age in queue:** 74.0 days (source date: 2026-07-26, first seen: 2026-07-25)
 
 - **Coverage:** 62 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -235,7 +235,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.376 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 84.6 days (source date: 2026-07-15, first seen: 2026-07-14)
+- **Age in queue:** 84.7 days (source date: 2026-07-15, first seen: 2026-07-14)
 
 - **Coverage:** 74 news, 25 social — pattern: _below-expected coverage_
 
@@ -246,7 +246,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.304 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 153.8 days (source date: 2026-05-06, first seen: 2026-05-06)
+- **Age in queue:** 153.9 days (source date: 2026-05-06, first seen: 2026-05-06)
 
 - **Coverage:** 21 news, 24 social — pattern: _below-expected coverage_
 
@@ -268,7 +268,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 70.7 days (source date: 2026-07-29, first seen: 2026-07-28)
+- **Age in queue:** 70.8 days (source date: 2026-07-29, first seen: 2026-07-28)
 
 - **Coverage:** 64 news, 10 social — pattern: _below-expected coverage_
 
@@ -279,7 +279,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 165.8 days (source date: 2026-04-24, first seen: 2026-04-24)
+- **Age in queue:** 165.9 days (source date: 2026-04-24, first seen: 2026-04-24)
 
 - **Coverage:** 55 news, 20 social — pattern: _below-expected coverage_
 
@@ -290,7 +290,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.280 (silence=0.96 × importance=0.67 × age_factor)
 
-- **Age in queue:** 82.7 days (source date: 2026-07-17, first seen: 2026-07-16)
+- **Age in queue:** 82.8 days (source date: 2026-07-17, first seen: 2026-07-16)
 
 - **Coverage:** 66 news, 21 social — pattern: _below-expected coverage_
 
@@ -312,7 +312,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.203 (silence=0.98 × importance=0.61 × age_factor)
 
-- **Age in queue:** 41.8 days (source date: 2026-08-26, first seen: 2026-08-26)
+- **Age in queue:** 41.9 days (source date: 2026-08-26, first seen: 2026-08-26)
 
 - **Coverage:** 19 news, 10 social — pattern: _below-expected coverage_
 
@@ -345,7 +345,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.200 (silence=0.98 × importance=0.61 × age_factor)
 
-- **Age in queue:** 55.7 days (source date: 2026-08-13, first seen: 2026-08-12)
+- **Age in queue:** 55.8 days (source date: 2026-08-13, first seen: 2026-08-12)
 
 - **Coverage:** 18 news, 14 social — pattern: _below-expected coverage_
 
@@ -356,7 +356,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.189 (silence=0.97 × importance=0.61 × age_factor)
 
-- **Age in queue:** 128.9 days (source date: 2026-06-01, first seen: 2026-05-31)
+- **Age in queue:** 129.0 days (source date: 2026-06-01, first seen: 2026-05-31)
 
 - **Coverage:** 37 news, 6 social — pattern: _24h+ silence then rising_
 
@@ -367,7 +367,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.187 (silence=0.97 × importance=0.61 × age_factor)
 
-- **Age in queue:** 49.8 days (source date: 2026-08-19, first seen: 2026-08-18)
+- **Age in queue:** 49.9 days (source date: 2026-08-19, first seen: 2026-08-18)
 
 - **Coverage:** 36 news, 9 social — pattern: _below-expected coverage_
 
@@ -387,9 +387,9 @@ developed, and the develop list drifts into old news.
 
 ### S18. malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study finds. kuala lumpur...
 
-- **Rank score:** 1.185 (silence=0.97 × importance=0.71 × age_factor)
+- **Rank score:** 1.186 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 21.0 days (source date: 2026-09-17, first seen: 2026-09-16)
+- **Age in queue:** 21.1 days (source date: 2026-09-17, first seen: 2026-09-16)
 
 - **Coverage:** 72 news, 12 social — pattern: _24h+ silence then rising_
 
@@ -400,7 +400,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 139.7 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 139.8 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 41 news, 8 social — pattern: _below-expected coverage_
 
@@ -422,7 +422,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.183 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 98.7 days (source date: 2026-07-01, first seen: 2026-06-30)
+- **Age in queue:** 98.8 days (source date: 2026-07-01, first seen: 2026-06-30)
 
 - **Coverage:** 42 news, 8 social — pattern: _below-expected coverage_
 
@@ -433,7 +433,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.180 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 47.8 days (source date: 2026-08-21, first seen: 2026-08-20)
+- **Age in queue:** 47.9 days (source date: 2026-08-21, first seen: 2026-08-20)
 
 - **Coverage:** 39 news, 14 social — pattern: _below-expected coverage_
 
@@ -444,7 +444,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.170 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 129.7 days (source date: 2026-05-31, first seen: 2026-05-30)
+- **Age in queue:** 129.8 days (source date: 2026-05-31, first seen: 2026-05-30)
 
 - **Coverage:** 50 news, 13 social — pattern: _24h+ silence then rising_
 
@@ -455,7 +455,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.169 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 170.2 days (source date: 2026-04-19, first seen: 2026-04-19)
+- **Age in queue:** 170.3 days (source date: 2026-04-19, first seen: 2026-04-19)
 
 - **Coverage:** 53 news, 11 social — pattern: _below-expected coverage_
 
@@ -466,7 +466,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.166 (silence=0.95 × importance=0.61 × age_factor)
 
-- **Age in queue:** 193.9 days (source date: 2026-03-27, first seen: 2026-03-27)
+- **Age in queue:** 194.0 days (source date: 2026-03-27, first seen: 2026-03-27)
 
 - **Coverage:** 52 news, 16 social — pattern: _below-expected coverage_
 
