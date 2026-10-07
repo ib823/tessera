@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-07T06:26:27.511Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-07T08:23:28.027Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -2250,6 +2250,40 @@ After the 2024 maternal-citizenship amendment, transparency on Article 15A discr
 https://thefourthangle.pages.dev/issue/1265
 ```
 
+### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1247-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1247`
+
+**1/6** _(hook — attach image, NO link)_ · 118 chars
+```
+SUHAKAM-linked 2022 reporting estimates 500,000 to 1 million stateless children in Sabah. There is no official figure.
+```
+**2/6** _(fact)_ · 257 chars
+```
+Federal Constitution Article 14 grants citizenship by birth under specific conditions. Stateless children fall through gaps in jus soli and jus sanguinis. The conditions assume parental documentation many lack, perpetuating statelessness across generations.
+```
+**3/6** _(fact)_ · 154 chars
+```
+Malaysia is not bound by the 1961 Statelessness Convention. It is a party to the CRC with reservations affecting Article 7 (right to acquire nationality).
+```
+**4/6** _(fact)_ · 253 chars
+```
+The Bajau Laut are a frequently cited affected group, described by researchers as 'genuinely stateless' across Malaysia, Indonesia and the Philippines. Many Bajau Laut have lived along Sabah's coast for generations; no state recognises them as citizens.
+```
+**5/6** _(reframe)_ · 166 chars
+```
+UNICEF's Sabah study found 18,781 'invisible' children missing from official databases. SUHAKAM-linked reporting estimates the latent stateless population at 500K-1M.
+```
+**6/6** _(view — ONLY post with the link)_ · 189 chars
+```
+Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
+
+https://thefourthangle.pages.dev/issue/1247
+```
+
 ### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
 
 > ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
@@ -2962,39 +2996,6 @@ Like a registered-person watchlist decided by an appointed committee, with deten
 SUHAKAM and the Bar Council have urged restoring judicial review of Board decisions and publishing disaggregated outcome data. Both proposals remain unenacted.
 
 https://thefourthangle.pages.dev/issue/1292
-```
-
-### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1247-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1247`
-
-**1/6** _(hook — attach image, NO link)_ · 118 chars
-```
-SUHAKAM-linked 2022 reporting estimates 500,000 to 1 million stateless children in Sabah. There is no official figure.
-```
-**2/6** _(fact)_ · 257 chars
-```
-Federal Constitution Article 14 grants citizenship by birth under specific conditions. Stateless children fall through gaps in jus soli and jus sanguinis. The conditions assume parental documentation many lack, perpetuating statelessness across generations.
-```
-**3/6** _(fact)_ · 154 chars
-```
-Malaysia is not bound by the 1961 Statelessness Convention. It is a party to the CRC with reservations affecting Article 7 (right to acquire nationality).
-```
-**4/6** _(fact)_ · 253 chars
-```
-The Bajau Laut are a frequently cited affected group, described by researchers as 'genuinely stateless' across Malaysia, Indonesia and the Philippines. Many Bajau Laut have lived along Sabah's coast for generations; no state recognises them as citizens.
-```
-**5/6** _(reframe)_ · 166 chars
-```
-UNICEF's Sabah study found 18,781 'invisible' children missing from official databases. SUHAKAM-linked reporting estimates the latent stateless population at 500K-1M.
-```
-**6/6** _(view — ONLY post with the link)_ · 189 chars
-```
-Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
-
-https://thefourthangle.pages.dev/issue/1247
 ```
 
 ### Issue 1241 — Suaram: 6,892 SOSMA Arrests Since 2012; Reported 20–28% Released Without Charge
