@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-11T10:14:57.178Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-11T12:23:37.703Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1052,7 +1052,7 @@ https://thefourthangle.pages.dev/issue/1981
 
 ### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
