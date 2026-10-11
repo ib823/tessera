@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-11T04:20:00.407Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-11T06:26:19.842Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -418,7 +418,7 @@ https://thefourthangle.pages.dev/issue/2003
 
 ### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
 
-> ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
