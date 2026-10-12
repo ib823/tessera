@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-12T04:27:03.390Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-10-12T06:38:47.555Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -2036,7 +2036,7 @@ https://thefourthangle.pages.dev/issue/1618
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
-> ⚡ **Reactive: topic is live in the radar** (ai expected to contribute up to rm20b yearly to malaysia’s gdp by 2030, says gobind. putra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1445-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1445`
