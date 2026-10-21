@@ -1,0 +1,237 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "_provenance": {
+    "version": "v1",
+    "stage": "Stage 1 — Primary Analysis",
+    "slug": "southern-thailand-dialogue-on-hold-facilitator-vacant",
+    "issue_id": "2015",
+    "brief": "engine/briefs/southern-thailand-dialogue-on-hold-facilitator-vacant.md",
+    "generated_at": "2026-09-19",
+    "revision_history": [
+      "v1 (2026-09-19): initial draft after Phase 1 brief approval. Companion to issue 2014; linked only if Sherlock's shared-entity rule fires. Frame: every Malaysian security instrument on the Thai border is switched on while the one diplomatic instrument only Putrajaya controls, the facilitator's chair, has been vacant since the summer. Anchor: anger-at-process (a 'soon' with no date). Lessons carried from 2014's reviews: bounded claims, attributed counts, 'rangers' not 'soldiers', no inference beyond the record on sanctuary."
+    ],
+    "discipline": "Neither attack is attributed to the BRN (ACLED: too early; no claim of responsibility; the BRN spokesman neither confirmed nor denied). The BRN delegation in Kuala Lumpur is described as the negotiating party Thailand asked Malaysia to host. Both official reasons for the suspension (the 22 July attack; the facilitator transition) run attributed. Rabin's exact end date and contract term are not stated because they are not published. Nikmatullah's governance proposals stay off the cards. No AI-provider name and no 'AI' appears on any card."
+  },
+  "headline": "Thailand suspended BRN talks on 28 July. Malaysia has had no facilitator since the summer.",
+  "context": "Malaysia has facilitated the Thailand-BRN dialogue since 2013. A 22 July attack killed five rangers and Bangkok cancelled September's round. Rabin Basir's facilitator contract then expired; on 27 August Khaled said names were with the PM. No appointment as of 19 September.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "Bangkok cancelled September's Kuala Lumpur round on 28 July: 'The violence was too severe for us to accept.' By 27 August Malaysia's facilitator seat was empty too.",
+      "sub": "The BRN's negotiator, in a KL hotel on 14 September: the talks were 'hampered by the absence of a Malaysian mediator'.",
+      "sources": [
+        "S9",
+        "S21",
+        "S22",
+        "S30"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "big": "Six masked attackers killed five rangers at Rangae's Bukit Sami checkpoint on 22 July. Six days later Thanat Suwannanont called off the September round.",
+      "sub": "On 31 July Thailand's NSC cited 'the transition to a new facilitator'. Seventeen days earlier Khaled had said Rabin Basir 'will continue his role'.",
+      "sources": [
+        "S9",
+        "S10",
+        "S8",
+        "S26"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "big": "Fifty-one attacks in four hours on 22 August, by ISOC's count. Blasts shook Rantau Panjang; inbound crossings fell from 2,068 that Saturday to 1,230 in two days.",
+      "sub": "PDRM agreed on 26 August to trace BRN-linked individuals for Thailand. Army chief Azhan Md Othman put drones on the border on 17 September.",
+      "sources": [
+        "S12",
+        "S16",
+        "S17",
+        "S24",
+        "S20",
+        "S29"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Khaled confirmed on 27 August that Rabin Basir's contract had expired and the Armed Forces had sent names to Anwar. On 18 September he told AFP: 'under consideration'.",
+      "sub": "Rabin was appointed 1 July 2024. Sihasak, 7 September: the choice 'was ultimately Malaysia's decision'.",
+      "sources": [
+        "S21",
+        "S22",
+        "S30",
+        "S1",
+        "S32"
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "Malaysia is doing everything on this border except the one thing Thailand asked it to do.",
+      "sub": "",
+      "sources": [
+        "S7",
+        "S26",
+        "S27",
+        "S29",
+        "S20"
+      ]
+    },
+    {
+      "t": "analogy",
+      "big": "Like a host who locks every door, posts guards at the gate, and never sets a chair at the table.",
+      "sub": "",
+      "sources": []
+    },
+    {
+      "t": "mature",
+      "big": "Drones watch the border. Police trace names for Bangkok. The chair that hosts the talks sits empty; Putrajaya has said 'soon' for three weeks. Name the facilitator or the date.",
+      "sub": "",
+      "sources": [
+        "S29",
+        "S20",
+        "S21",
+        "S22",
+        "S30"
+      ]
+    }
+  ],
+  "sources": "Numbering follows engine/briefs/southern-thailand-dialogue-on-hold-facilitator-vacant.md §SOURCES. S1 Bernama 5 Jul 2024 (MKN statement: Rabin appointed effective 1 Jul 2024, replacing Zulkifli whose tenure ended 30 Jun); S7/S8 Bernama and The Star 14 Jul 2026 (Khaled: 'Rabin Basir will continue his role'; 'Malaysia's role is limited to facilitating'); S9 Bernama 28 Jul 2026 (Thanat: 'There will be no negotiations in September ... The violence was too severe for us to accept'; six masked assailants, Ban Bukit Sami, Rangae, five rangers killed, six civilians injured); S10 Bernama via Malay Mail 31 Jul 2026 (Thai NSC: review 'following the temporary suspension of peace talks during the transition to a new facilitator'); S12 Al Jazeera/AFP/Reuters 23 Aug 2026 (ISOC: 51 attacks; 8 pm to midnight); S16 ACLED (51 incidents, 21 districts); S17 Bernama via The Star 23 Aug (Lubok Gong, Tersang residents); S20 Bernama 26 Aug (IGP: PDRM to trace BRN-linked individuals at Thai request); S21/S22 Bernama and Malay Mail/Yahoo 27 Aug (Khaled: tenure 'ended recently'; 'contract has also expired'; MAF names to PM; PM 'expected to appoint ... soon'); S24 Bernama via Malay Mail 26 Aug (AKPS Rantau Panjang: inbound 2,068 Sat, 1,230 Sun and Mon combined); S26/S27 Bernama 7 Sep (Sihasak: facilitator choice 'ultimately Malaysia's decision'; Mohamad Hasan on fence coordination); S29 Bernama 17 Sep (Azhan: drones; 'There will be no compromise'); S30 AFP via Malay Mail 18 Sep (Nikmatullah, 14 Sep, KL hotel: 'hampered by the absence of a Malaysian mediator'; Khaled to AFP: 'under consideration'); S32 McDermott, Peace Research 46(1) (General Consensus signed in KL 28 Feb 2013; Malaysia as facilitator).",
+  "confidence": "High on every dated statement (Bernama carrying MKN, IGP, Defence Minister, Army chief; Thai NSC via Bernama; AFP). High on the 51 count (ISOC final, carried by AFP/Reuters and ACLED; preliminary 25 and 34 noted in the brief). Medium on the facilitator timeline: the end date and term of Rabin's contract are unpublished, so the cards say 'expired' and 'since the summer' without a date. Medium on 'for three weeks': the 27 August 'soon' to 19 September is three weeks and two days.",
+  "lenses_used": [
+    "Regional",
+    "Security",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Political",
+    "Economic",
+    "Historical"
+  ],
+  "needs_verification": [
+    "'Six masked attackers': Bernama 28 Jul says 'six masked assailants'; the Washington Post wire said 'about 10 assailants'. Bernama's figure is used; Stage 3 to confirm against Thai ISOC statements.",
+    "'Five rangers': Bernama and The Nation say paramilitary rangers (thahan phran); AFP says 'five soldiers'. Rangers used throughout.",
+    "'The transition to a new facilitator': Thai NSC secretary-general Chatchai's statement as carried by Bernama on 31 Jul; Thai-language original not opened.",
+    "'Inbound crossings fell from 2,068 that Saturday to 1,230 over the next two days': AKPS Rantau Panjang commander via Bernama; the 1,230 is Sunday and Monday combined, as the card says.",
+    "'Putrajaya has said soon for three weeks': 'soon' is Malay Mail/Yahoo's report of Khaled on 27 Aug ('expected to appoint the facilitators soon'); Bernama's version has 'hope a facilitator can be appointed'. The 18 Sep 'under consideration' is Khaled's statement to AFP.",
+    "'Thanat Suwannanont': Bernama's transliteration; Thai PBS and The Star also use 'Thanut Suvarnananda'. One spelling used throughout.",
+    "'Seventeen days before that': 14 Jul (Khaled) to 31 Jul (NSC) is 17 days.",
+    "General Consensus signatory for Malaysia was NSC secretary Mohammed Thajudeen (McDermott); 'Malaysia has facilitated since' is the document's own term ('act as facilitator')."
+  ],
+  "source_notes": "Incident count 22 Aug: ISOC final 51 (used); The Nation initial 25; FOCC4 preliminary 34. Suspension reason: Thanat (attack) and NSC (facilitator transition) both run, attributed. Cumulative death tolls deliberately off the cards (SBPAC 5,989 certified to Aug 2025 vs Deep South Watch 7,790; issue 2014 carries the certified figure). Rabin's appointment date: 1 Jul 2024 per MKN; an earlier search summary's '5 Jul 2025' was wrong. The Kelantan police 'no evidence' reply (2 Aug) and the Thai request to deny safe haven (27 Jul) are on issue 2014's cards and are not repeated here."
+}
