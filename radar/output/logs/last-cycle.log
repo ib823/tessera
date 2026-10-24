@@ -1,57 +1,58 @@
-[32m2026-10-24 16:12:17[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-10-24 16:12:17[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-10-24 16:12:17[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-10-24 16:12:18[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [budget_allocation] "Budget 2027 presentation" importance=0.54
-[32m2026-10-24 16:12:18[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-10-24 16:12:18[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-10-24 16:12:18[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 12291 topics from state
-[32m2026-10-24 16:12:18[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-10-24 16:12:18[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-10-24T16:12:18.454285+00:00
-[32m2026-10-24 16:12:19[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-10-24 16:12:21[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-10-24 16:12:23[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-10-24 16:12:23[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-10-24 16:12:26[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-10-24 16:12:26[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
-[32m2026-10-24 16:12:27[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-10-24 16:12:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-10-24 16:12:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:13:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:13:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:13:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-10-24 16:13:41[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:14:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-10-24 16:14:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:14:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:14:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-24 16:14:43[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 5 events
-[32m2026-10-24 16:14:45[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 11 events
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 487 events from 5 sources
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 487 events
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 455 within 24h (126 pruned)
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Public urged to stay calm during RTS Link security exercise on Oct 27. PUTRAJAYA, Oct 24 &mdash;The RTS Link Malaysia-Singapore Cross-Border Joint Exercise Field Training Exercise (FTX) 2026..." importance=0.46
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Home Ministry leaves decision on charged AKPS chief to civil service process. KULAI, Oct 24&nbsp;&mdash;&nbsp;Matters concerning the position of Malaysian Border Control and Protection Agency (AKPS).." importance=0.46
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "PM Anwar calls for thorough investigation into detainee’s death in police custody. KUALA LUMPUR, Oct 24 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has ordered a thorough, transparent and uncompro" importance=0.41
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "‘Mulai malam ini jangan alergik dengan hijau’, kata Zahid. Pengerusi BN berkata penyokong BN dan PAS perlu menerima serta bantu satu sama lain pada PRN Melaka." importance=0.31
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Zahid jangka isu ‘sakau’ jadi bahan kempen lawan di PRN Melaka. Pengerusi BN mengingatkan jentera parti supaya bersedia menjawab dakwaan itu serta tuduhan fitnah di media sosial." importance=0.31
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Hormati tugas peguam 2 polis dalam kes Shuhaily, kata Hassan. Ahli Parlimen Pasir Gudang berkata peguam bebas mewakili sesiapa dan tidak sepatutnya mereka diserang di media sosial." importance=0.46
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "500 RT sectors inactive nationwide, says minister. National unity minister Aaron Ago Dagang says Selangor recorded 174 inactive RTs, followed by Johor with 100." importance=0.41
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Bersih cadang akta baharu kawal selia parti politik. Kumpulan reformasi institusi berkata ini susulan kontroversi pembatalan pendaftaran Perikatan Nasional oleh Jabatan Pendaftaran Pertubuhan." importance=0.46
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Bersih calls for new law to regulate political parties. Reform group says this could replace registering parties under the Societies Act to boost transparency in financing and provide a mechanism to r" importance=0.46
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Haze creeps back: Seremban and Johor’s Larkin log highest API readings at 169. KUALA LUMPUR, Oct 24 &mdash; Air quality deteriorated across several states this morning, with 21 monitoring stations br." importance=0.41
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "‘What you order is what you get’: Zahid says Ab Rauf to return as CM if BN wins Melaka polls. JASIN, Oct 24 &mdash; Datuk Seri Ab Rauf Yusoh will remain Melaka chief minister should Barisan Nasional (" importance=0.41
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "‘What you order is what you get’: Zahid says Ab Rauf to return as CM if BN wins Melaka polls. JASIN, Oct 24 &mdash; Datuk Seri Ab Rauf Yusoh will remain Melaka chief minister should Barisan Nasional (" importance=0.31
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "North Korea’s Kim makes unannounced visit to Chinese border city. North Korean leader Kim Jong Un crossed a major bridge linking North Korea with the Chinese border city of Dandong that officially ope" importance=0.46
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Govt launches 5-year plan with 429 measures to ease cost of living. The National Cost of Living Action Plan 2030 sets two main priorities – increasing people's income and stabilising the prices of ess" importance=0.41
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [federal_court_ruling] "Federal Court to hear Negeri Sembilan exco members’ dismissal challenge on Dec 16. PUTRAJAYA, Oct 23 &mdash; The Federal Court has set December 16 to hear the legal bid filed by ten deposed Negeri Sem" importance=0.56
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "RoS challenges court stay on Perikatan deregistration. KUALA LUMPUR, Oct 23 &mdash; The Registrar of Societies Malaysia (RoS) has filed an appeal against the High Court&rsquo;..." importance=0.41
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok'}
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 35), ('government', 26), ('election', 25), ('minister', 22), ('chinese', 20), ('india', 18), ('pas', 17), ('protest', 16), ('isa', 16), ('prime minister', 14)]
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 12291 active topics
-[32m2026-10-24 16:14:51[0m | [1mINFO    [0m | [36moutput              [0m | 1454 active issues, 10835 new, 10837 pruned
-[32m2026-10-24 16:14:52[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-10-24 16:15:26[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=187  hmm=OK/71  cox=RT/1454  sarima=RT/1454
-[32m2026-10-24 16:15:26[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1454)
-[32m2026-10-24 16:15:26[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 12291 active topics. Top: budget 2027 presentation (score: 0.99)
+[32m2026-10-24 18:14:08[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-10-24 18:14:08[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-10-24 18:14:08[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-10-24 18:14:09[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [budget_allocation] "Budget 2027 presentation" importance=0.54
+[32m2026-10-24 18:14:09[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-10-24 18:14:09[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-10-24 18:14:09[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 12291 topics from state
+[32m2026-10-24 18:14:09[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-10-24 18:14:09[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-10-24T18:14:09.360082+00:00
+[32m2026-10-24 18:14:10[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-10-24 18:14:12[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-10-24 18:14:13[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-10-24 18:14:14[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-10-24 18:14:16[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-10-24 18:14:16[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
+[32m2026-10-24 18:14:17[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-10-24 18:14:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-10-24 18:14:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:14:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:15:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:15:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:15:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:15:43[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:15:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:16:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:16:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:16:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-24 18:16:39[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-10-24 18:16:40[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 482 events from 5 sources
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 482 events
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 427 within 24h (136 pruned)
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Public urged to stay calm during RTS Link security exercise on Oct 27. PUTRAJAYA, Oct 24 &mdash;The RTS Link Malaysia-Singapore Cross-Border Joint Exercise Field Training Exercise (FTX) 2026..." importance=0.46
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Home Ministry leaves decision on charged AKPS chief to civil service process. KULAI, Oct 24&nbsp;&mdash;&nbsp;Matters concerning the position of Malaysian Border Control and Protection Agency (AKPS).." importance=0.46
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Stop being ‘allergic’ to PAS, Zahid tells BN supporters. The BN chairman says the coalition’s cooperation with PAS must translate into mutual grassroots support." importance=0.31
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "UK’s Met police says it sent allegations letter to Meghan, not other forces. London’s Metropolitan Police said they passed Meghan, wife of Britain’s Prince Harry, a letter about allegations against he" importance=0.41
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "PM Anwar calls for thorough investigation into detainee’s death in police custody. KUALA LUMPUR, Oct 24 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has ordered a thorough, transparent and uncompro" importance=0.41
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "‘Mulai malam ini jangan alergik dengan hijau’, kata Zahid. Pengerusi BN berkata penyokong BN dan PAS perlu menerima serta bantu satu sama lain pada PRN Melaka." importance=0.31
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Zahid jangka isu ‘sakau’ jadi bahan kempen lawan di PRN Melaka. Pengerusi BN mengingatkan jentera parti supaya bersedia menjawab dakwaan itu serta tuduhan fitnah di media sosial." importance=0.31
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Hormati tugas peguam 2 polis dalam kes Shuhaily, kata Hassan. Ahli Parlimen Pasir Gudang berkata peguam bebas mewakili sesiapa dan tidak sepatutnya mereka diserang di media sosial." importance=0.46
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "500 RT sectors inactive nationwide, says minister. National unity minister Aaron Ago Dagang says Selangor recorded 174 inactive RTs, followed by Johor with 100." importance=0.41
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Bersih cadang akta baharu kawal selia parti politik. Kumpulan reformasi institusi berkata ini susulan kontroversi pembatalan pendaftaran Perikatan Nasional oleh Jabatan Pendaftaran Pertubuhan." importance=0.46
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Bersih calls for new law to regulate political parties. Reform group says this could replace registering parties under the Societies Act to boost transparency in financing and provide a mechanism to r" importance=0.46
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Haze creeps back: Seremban and Johor’s Larkin log highest API readings at 169. KUALA LUMPUR, Oct 24 &mdash; Air quality deteriorated across several states this morning, with 21 monitoring stations br." importance=0.41
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "‘What you order is what you get’: Zahid says Ab Rauf to return as CM if BN wins Melaka polls. JASIN, Oct 24 &mdash; Datuk Seri Ab Rauf Yusoh will remain Melaka chief minister should Barisan Nasional (" importance=0.41
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "‘What you order is what you get’: Zahid says Ab Rauf to return as CM if BN wins Melaka polls. JASIN, Oct 24 &mdash; Datuk Seri Ab Rauf Yusoh will remain Melaka chief minister should Barisan Nasional (" importance=0.31
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [federal_court_ruling] "Federal Court to hear Negeri Sembilan exco members’ dismissal challenge on Dec 16. PUTRAJAYA, Oct 23 &mdash; The Federal Court has set December 16 to hear the legal bid filed by ten deposed Negeri Sem" importance=0.56
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "RoS challenges court stay on Perikatan deregistration. KUALA LUMPUR, Oct 23 &mdash; The Registrar of Societies Malaysia (RoS) has filed an appeal against the High Court&rsquo;..." importance=0.41
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 33), ('government', 27), ('election', 24), ('pas', 22), ('minister', 22), ('india', 18), ('protest', 17), ('chinese', 17), ('isa', 16), ('prime minister', 14)]
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 13 events monitored, 13 flagged
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 12292 active topics
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36moutput              [0m | 1456 active issues, 10838 new, 10836 pruned
+[32m2026-10-24 18:16:47[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-10-24 18:17:10[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=187  hmm=OK/71  cox=RT/1456  sarima=RT/1456
+[32m2026-10-24 18:17:10[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1456)
+[32m2026-10-24 18:17:10[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 12292 active topics. Top: budget 2027 presentation (score: 0.99)
