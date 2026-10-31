@@ -1,57 +1,54 @@
-[32m2026-10-31 14:07:25[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-10-31 14:07:25[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-10-31 14:07:25[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-10-31 14:07:26[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-10-31 14:07:26[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-10-31 14:07:26[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 12757 topics from state
-[32m2026-10-31 14:07:26[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-10-31 14:07:26[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-10-31T14:07:26.404427+00:00
-[32m2026-10-31 14:07:27[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-10-31 14:07:28[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-10-31 14:07:29[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-10-31 14:07:30[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-10-31 14:07:33[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-10-31 14:07:33[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 447 events
-[32m2026-10-31 14:07:34[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-10-31 14:07:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:08:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:08:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:08:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:08:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:08:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:09:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:09:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-10-31 14:09:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:09:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-10-31 14:09:38[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-10-31 14:09:39[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 12 events
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 489 events from 5 sources
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 489 events
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 431 within 24h (151 pruned)
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Anwar directs Education Ministry to act firmly on school bullying. KOTA BHARU, Oct 31 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has directed the Ministry of Education (MOE) to take..." importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Nga Kor Ming urges global cooperation on housing crisis, cites 3.4 billion affected. KUALA LUMPUR, Oct 31 &mdash; Stronger international cooperation is needed to address the global housing crisis, wit" importance=0.46
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "No unhealthy readings: Cheras highest at 77 as 47 areas nationwide record moderate API readings this afternoon. KUALA LUMPUR, Oct 31 &mdash; A total of 47 areas across the country recorded Air Polluta" importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Not compulsory, but journalists, your annual check-up could soon come with your press card. PETALING JAYA, Oct 31 &mdash; The Malaysian Media Council (MMC) should explore mechanisms to encourage media" importance=0.46
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Same fix as 2023, please: Indian civil servants ask Putrajaya to add Nov 10 as extra Deepavali day. PUTRAJAYA, Oct 31 &mdash; The Putrajaya Indian Civil Servants Association (Imaiyam) is appealing to " importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Aston Villa to take legal action against pundit Carragher. Jamie Carragher faced backlash from Villa fans for suggesting that manager Unai Emery should be a candidate to take the helm at Manchester Un" importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "BN to retain Ab Rauf as Melaka CM if coalition wins Nov 14 polls, says Zahid. &nbsp;MELAKA, Oct 31 &mdash;&nbsp;Barisan Nasional (BN) will continue to entrust Datuk Seri Dr Ab Rauf Yusoh with the po.." importance=0.31
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Dentists fume over new staircase rule for upstairs clinics. The Malaysian Private Dental Practitioners’ Association calls for intervention by health minister Dzulkefly Ahmad, saying the regulation was" importance=0.46
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Zahid welcomes confidence pact with Bersatu MPs, wants wider agreement involving Opposition. MELAKA, Oct 31 &mdash; Barisan Nasional (BN) supports the signing of a Confidence and Supply Agreement (CSA" importance=0.46
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Zahid welcomes confidence pact with Bersatu MPs, wants wider agreement involving Opposition. MELAKA, Oct 31 &mdash; Barisan Nasional (BN) supports the signing of a Confidence and Supply Agreement (CSA" importance=0.36
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Cop nabbed over RM3,000 bribe to ignore domestic dispute. The policeman solicited a bribe in exchange for not taking action over a fight involving family members in Seremban." importance=0.43
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Syria weighing whether to join Mecca pact. Foreign minister Asaad al-Shaibani said discussions are currently underway to evaluate Syria's entry into the Nato-style defence alliance." importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Polish president calls crisis talks after court standoff. Police guarded Poland’s constitutional court as protestors accused Donald Tusk’s government of trying to seize control of the institution." importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Tok Mat explains commotion at Melaka nomination centre. The BN deputy chairman says the EC informed party leaders at a briefing they could enter the centres, just not the halls where nominations are h" importance=0.46
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Postal Forum lancer Parcel Shield perangi penipuan bungkusan. Inisiatif diperkenalkan badan kawal selia dilantik SKMM susulan kebimbangan berhubung penipuan COD dan penyamaran syarikat kurier." importance=0.46
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Hamzah confident of BN-PN ‘blue wave’ in Melaka. Wawasan president Hamzah Zainudin says his party has acted as a bridge between Umno and PAS, and now both BN and PN are working hand-in-hand." importance=0.41
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "Intervene in 3 Myanmar children’s case, rights group urges Suhakam. Tenaganita calls for legal and psychosocial support for the trio, aged between 11 and 12, who were initially denied bail on criminal" importance=0.36
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok'}
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('malay', 40), ('minister', 39), ('government', 30), ('election', 29), ('chinese', 23), ('india', 23), ('pas', 21), ('isa', 21), ('vote', 19), ('race', 15)]
-[32m2026-10-31 14:09:45[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 14 events monitored, 14 flagged
-[32m2026-10-31 14:09:46[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 12762 active topics
-[32m2026-10-31 14:09:46[0m | [1mINFO    [0m | [36moutput              [0m | 1484 active issues, 11278 new, 11278 pruned
-[32m2026-10-31 14:09:46[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-10-31 14:10:11[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=193  hmm=OK/67  cox=RT/1484  sarima=RT/1484
-[32m2026-10-31 14:10:11[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1484)
-[32m2026-10-31 14:10:11[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 12762 active topics. Top: malay (score: 0.98)
+[32m2026-10-31 16:08:02[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-10-31 16:08:03[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-10-31 16:08:03[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-10-31 16:08:03[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-10-31 16:08:04[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-10-31 16:08:04[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 12762 topics from state
+[32m2026-10-31 16:08:04[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-10-31 16:08:04[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-10-31T16:08:04.040127+00:00
+[32m2026-10-31 16:08:04[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-10-31 16:08:06[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-10-31 16:08:07[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-10-31 16:08:08[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-10-31 16:08:11[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-10-31 16:08:11[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
+[32m2026-10-31 16:08:12[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-10-31 16:08:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-10-31 16:08:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:08:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:08:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:09:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:09:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-10-31 16:09:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:10:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-10-31 16:10:18[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:10:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-10-31 16:10:31[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-10-31 16:10:32[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 4 events
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 481 events from 5 sources
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 481 events
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 414 within 24h (145 pruned)
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Anwar directs Education Ministry to act firmly on school bullying. KOTA BHARU, Oct 31 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has directed the Ministry of Education (MOE) to take..." importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Nga Kor Ming urges global cooperation on housing crisis, cites 3.4 billion affected. KUALA LUMPUR, Oct 31 &mdash; Stronger international cooperation is needed to address the global housing crisis, wit" importance=0.46
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "No unhealthy readings: Cheras highest at 77 as 47 areas nationwide record moderate API readings this afternoon. KUALA LUMPUR, Oct 31 &mdash; A total of 47 areas across the country recorded Air Polluta" importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Not compulsory, but journalists, your annual check-up could soon come with your press card. PETALING JAYA, Oct 31 &mdash; The Malaysian Media Council (MMC) should explore mechanisms to encourage media" importance=0.46
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Same fix as 2023, please: Indian civil servants ask Putrajaya to add Nov 10 as extra Deepavali day. PUTRAJAYA, Oct 31 &mdash; The Putrajaya Indian Civil Servants Association (Imaiyam) is appealing to " importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Anwar orders firm action against school bullies. The prime minister says cases of suicide, abuse and bullying highlighted the need to strengthen character development and moral values." importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Aston Villa to take legal action against pundit Carragher. Jamie Carragher faced backlash from Villa fans for suggesting that manager Unai Emery should be a candidate to take the helm at Manchester Un" importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "BN to retain Ab Rauf as Melaka CM if coalition wins Nov 14 polls, says Zahid. &nbsp;MELAKA, Oct 31 &mdash;&nbsp;Barisan Nasional (BN) will continue to entrust Datuk Seri Dr Ab Rauf Yusoh with the po.." importance=0.31
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Dentists fume over new staircase rule for upstairs clinics. The Malaysian Private Dental Practitioners’ Association calls for intervention by health minister Dzulkefly Ahmad, saying the regulation was" importance=0.46
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Zahid welcomes confidence pact with Bersatu MPs, wants wider agreement involving Opposition. MELAKA, Oct 31 &mdash; Barisan Nasional (BN) supports the signing of a Confidence and Supply Agreement (CSA" importance=0.46
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Zahid welcomes confidence pact with Bersatu MPs, wants wider agreement involving Opposition. MELAKA, Oct 31 &mdash; Barisan Nasional (BN) supports the signing of a Confidence and Supply Agreement (CSA" importance=0.36
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Cop nabbed over RM3,000 bribe to ignore domestic dispute. The policeman solicited a bribe in exchange for not taking action over a fight involving family members in Seremban." importance=0.43
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Syria weighing whether to join Mecca pact. Foreign minister Asaad al-Shaibani said discussions are currently underway to evaluate Syria's entry into the Nato-style defence alliance." importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Polish president calls crisis talks after court standoff. Police guarded Poland’s constitutional court as protestors accused Donald Tusk’s government of trying to seize control of the institution." importance=0.41
+[32m2026-10-31 16:10:38[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'volume_monitor': 'ok', 'polarization': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-10-31 16:10:39[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 42), ('malay', 38), ('government', 30), ('election', 25), ('india', 23), ('isa', 20), ('pas', 20), ('chinese', 20), ('vote', 16), ('race', 13)]
+[32m2026-10-31 16:10:39[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-10-31 16:10:39[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 12763 active topics
+[32m2026-10-31 16:10:39[0m | [1mINFO    [0m | [36moutput              [0m | 1480 active issues, 11279 new, 11283 pruned
+[32m2026-10-31 16:10:39[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-10-31 16:11:19[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=194  hmm=OK/67  cox=RT/1480  sarima=RT/1480
+[32m2026-10-31 16:11:19[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1480)
+[32m2026-10-31 16:11:20[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 12763 active topics. Top: malay (score: 0.98)
