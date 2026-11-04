@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-03T22:10:46.139Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-04T00:25:20.895Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1550,40 +1550,6 @@ The fix is a permanent independent oversight body for MACC, as UNCAC recommended
 https://thefourthangle.pages.dev/issue/1961
 ```
 
-### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
-
-> ⚡ **Reactive: topic is live in the radar** (federal court dismisses kedah govt’s bid for leave to appeal in pool betting outlet licenc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
-
-**1/6** _(hook — attach image, NO link)_ · 122 chars
-```
-The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
-```
-**2/6** _(fact)_ · 253 chars
-```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
-```
-**3/6** _(fact)_ · 268 chars
-```
-In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
-```
-**4/6** _(fact)_ · 135 chars
-```
-Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
-```
-**6/6** _(view — ONLY post with the link)_ · 186 chars
-```
-Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
-
-https://thefourthangle.pages.dev/issue/1959
-```
-
 ### Issue 1958 — One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
 
 > ⚡ **Reactive: topic is live in the radar** (tapped just twice in 40 years, putrajaya tables bill to tighten national trust fund withdr). Post now, don't wait for a slot.
@@ -1858,6 +1824,40 @@ The real question is not how fast we reach 100% cashless. It is who gets left wi
 Malaysia has the rails. The next decade is about whether consumer protection catches up before more vulnerable users are pushed onto a system that cannot protect them.
 
 https://thefourthangle.pages.dev/issue/1887
+```
+
+### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
+
+> ⚡ **Reactive: topic is live in the radar** (budget 2027: rm2.62b aid for paddy farmers, incentives for fishermen, smallholders. kuala ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1871-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1871`
+
+**1/6** _(hook — attach image, NO link)_ · 126 chars
+```
+ESSCOM marks 13 years: zero kidnappings since 2020, but its forward base is 41% complete and it still has no Act of Parliament
+```
+**2/6** _(fact)_ · 153 chars
+```
+59 kidnapping attempts foiled and zero cases since January 2020, though decline also reflects Philippine ops against Abu Sayyaf and COVID border closures
+```
+**3/6** _(fact)_ · 263 chars
+```
+Three successive administrations have kept ESSCOM on executive instruments without passing a dedicated Act of Parliament The maritime curfew began July 2014 and has been in effect for nearly 12 years, affecting B40 fishermen and women traders in coastal economies
+```
+**4/6** _(fact)_ · 146 chars
+```
+The security zone covers 1,400 km of coastline alongside 1.04 million non-citizens in a state where poverty runs at 19.5% versus the national 6.2%
+```
+**5/6** _(reframe)_ · 146 chars
+```
+The question is not whether ESSCOM works. It does. The question is why no government has given it the permanent legal mandate its mission demands.
+```
+**6/6** _(view — ONLY post with the link)_ · 222 chars
+```
+ESSCOM is a genuine security success on structurally fragile foundations. Three administrations kept its temporary status. That's a system failure, not one government's neglect.
+
+https://thefourthangle.pages.dev/issue/1871
 ```
 
 ### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
@@ -2825,6 +2825,39 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
+### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
+
+**1/6** _(hook — attach image, NO link)_ · 122 chars
+```
+The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
+```
+**2/6** _(fact)_ · 253 chars
+```
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
+```
+**3/6** _(fact)_ · 268 chars
+```
+In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
+```
+**4/6** _(fact)_ · 135 chars
+```
+Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
+```
+**6/6** _(view — ONLY post with the link)_ · 186 chars
+```
+Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
+
+https://thefourthangle.pages.dev/issue/1959
+```
+
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
 
 - **Status:** PENDING
@@ -2889,39 +2922,6 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
-```
-
-### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1871-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1871`
-
-**1/6** _(hook — attach image, NO link)_ · 126 chars
-```
-ESSCOM marks 13 years: zero kidnappings since 2020, but its forward base is 41% complete and it still has no Act of Parliament
-```
-**2/6** _(fact)_ · 153 chars
-```
-59 kidnapping attempts foiled and zero cases since January 2020, though decline also reflects Philippine ops against Abu Sayyaf and COVID border closures
-```
-**3/6** _(fact)_ · 263 chars
-```
-Three successive administrations have kept ESSCOM on executive instruments without passing a dedicated Act of Parliament The maritime curfew began July 2014 and has been in effect for nearly 12 years, affecting B40 fishermen and women traders in coastal economies
-```
-**4/6** _(fact)_ · 146 chars
-```
-The security zone covers 1,400 km of coastline alongside 1.04 million non-citizens in a state where poverty runs at 19.5% versus the national 6.2%
-```
-**5/6** _(reframe)_ · 146 chars
-```
-The question is not whether ESSCOM works. It does. The question is why no government has given it the permanent legal mandate its mission demands.
-```
-**6/6** _(view — ONLY post with the link)_ · 222 chars
-```
-ESSCOM is a genuine security success on structurally fragile foundations. Three administrations kept its temporary status. That's a system failure, not one government's neglect.
-
-https://thefourthangle.pages.dev/issue/1871
 ```
 
 ### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
