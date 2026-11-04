@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-11-04 00:25 UTC. Queue size: 1456. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-11-04 02:14 UTC. Queue size: 1461. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,7 +31,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.700 (silence=0.98 × importance=0.71, no age weighting)
 
-- **Age in queue:** 6.9 days (source date: 2026-10-28, first seen: 2026-10-28)
+- **Age in queue:** 7.0 days (source date: 2026-10-28, first seen: 2026-10-28)
 
 - **Coverage:** 53 news, 15 social — pattern: _below-expected coverage_
 
@@ -42,7 +42,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.664 (silence=1.00 × importance=0.67, no age weighting)
 
-- **Age in queue:** 1.3 days (source date: 2026-11-03, first seen: 2026-11-02)
+- **Age in queue:** 1.4 days (source date: 2026-11-03, first seen: 2026-11-02)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
@@ -53,9 +53,9 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.655 (silence=0.99 × importance=0.67, no age weighting)
 
-- **Age in queue:** 0.5 days (source date: 2026-11-04, first seen: 2026-11-03)
+- **Age in queue:** 0.6 days (source date: 2026-11-04, first seen: 2026-11-03)
 
-- **Coverage:** 26 news, 8 social — pattern: _below-expected coverage_
+- **Coverage:** 26 news, 7 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
@@ -64,7 +64,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.648 (silence=0.97 × importance=0.67, no age weighting)
 
-- **Age in queue:** 6.0 days (source date: 2026-10-29, first seen: 2026-10-29)
+- **Age in queue:** 6.1 days (source date: 2026-10-29, first seen: 2026-10-29)
 
 - **Coverage:** 44 news, 14 social — pattern: _below-expected coverage_
 
@@ -75,7 +75,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.642 (silence=0.96 × importance=0.67, no age weighting)
 
-- **Age in queue:** 5.6 days (source date: 2026-10-30, first seen: 2026-10-29)
+- **Age in queue:** 5.7 days (source date: 2026-10-30, first seen: 2026-10-29)
 
 - **Coverage:** 66 news, 15 social — pattern: _below-expected coverage_
 
@@ -86,7 +86,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.615 (silence=0.97 × importance=0.63, no age weighting)
 
-- **Age in queue:** 5.3 days (source date: 2026-10-29, first seen: 2026-10-29)
+- **Age in queue:** 5.4 days (source date: 2026-10-29, first seen: 2026-10-29)
 
 - **Coverage:** 39 news, 8 social — pattern: _below-expected coverage_
 
@@ -108,7 +108,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.605 (silence=0.98 × importance=0.61, no age weighting)
 
-- **Age in queue:** 0.8 days (source date: 2026-11-03, first seen: 2026-11-03)
+- **Age in queue:** 0.9 days (source date: 2026-11-03, first seen: 2026-11-03)
 
 - **Coverage:** 16 news, 5 social — pattern: _below-expected coverage_
 
@@ -119,7 +119,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.604 (silence=0.98 × importance=0.61, no age weighting)
 
-- **Age in queue:** 2.8 days (source date: 2026-11-01, first seen: 2026-11-01)
+- **Age in queue:** 2.9 days (source date: 2026-11-01, first seen: 2026-11-01)
 
 - **Coverage:** 21 news, 2 social — pattern: _below-expected coverage_
 
@@ -141,7 +141,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.601 (silence=0.98 × importance=0.61, no age weighting)
 
-- **Age in queue:** 1.3 days (source date: 2026-11-03, first seen: 2026-11-02)
+- **Age in queue:** 1.4 days (source date: 2026-11-03, first seen: 2026-11-02)
 
 - **Coverage:** 24 news, 5 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.600 (silence=0.98 × importance=0.61, no age weighting)
 
-- **Age in queue:** 5.6 days (source date: 2026-10-29, first seen: 2026-10-29)
+- **Age in queue:** 5.7 days (source date: 2026-10-29, first seen: 2026-10-29)
 
 - **Coverage:** 20 news, 12 social — pattern: _below-expected coverage_
 
@@ -174,7 +174,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.593 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 4.8 days (source date: 2026-10-30, first seen: 2026-10-30)
+- **Age in queue:** 4.9 days (source date: 2026-10-30, first seen: 2026-10-30)
 
 - **Coverage:** 33 news, 14 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.581 (silence=0.94 × importance=0.61, no age weighting)
 
-- **Age in queue:** 5.5 days (source date: 2026-10-29, first seen: 2026-10-29)
+- **Age in queue:** 5.6 days (source date: 2026-10-29, first seen: 2026-10-29)
 
 - **Coverage:** 61 news, 11 social — pattern: _below-expected coverage_
 
@@ -202,7 +202,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.410 (silence=0.99 × importance=0.71 × age_factor)
 
-- **Age in queue:** 172.9 days (source date: 2026-05-15, first seen: 2026-05-15)
+- **Age in queue:** 173.0 days (source date: 2026-05-15, first seen: 2026-05-15)
 
 - **Coverage:** 32 news, 14 social — pattern: _below-expected coverage_
 
@@ -213,7 +213,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.398 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 101.8 days (source date: 2026-07-26, first seen: 2026-07-25)
+- **Age in queue:** 101.9 days (source date: 2026-07-26, first seen: 2026-07-25)
 
 - **Coverage:** 62 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -224,7 +224,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.394 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 48.9 days (source date: 2026-09-17, first seen: 2026-09-16)
+- **Age in queue:** 49.0 days (source date: 2026-09-17, first seen: 2026-09-16)
 
 - **Coverage:** 72 news, 12 social — pattern: _24h+ silence then rising_
 
@@ -235,7 +235,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.390 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 136.9 days (source date: 2026-06-21, first seen: 2026-06-20)
+- **Age in queue:** 137.0 days (source date: 2026-06-21, first seen: 2026-06-20)
 
 - **Coverage:** 57 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -246,7 +246,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.376 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 112.5 days (source date: 2026-07-15, first seen: 2026-07-14)
+- **Age in queue:** 112.6 days (source date: 2026-07-15, first seen: 2026-07-14)
 
 - **Coverage:** 74 news, 25 social — pattern: _below-expected coverage_
 
@@ -257,7 +257,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.304 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 181.7 days (source date: 2026-05-06, first seen: 2026-05-06)
+- **Age in queue:** 181.8 days (source date: 2026-05-06, first seen: 2026-05-06)
 
 - **Coverage:** 21 news, 24 social — pattern: _below-expected coverage_
 
@@ -279,7 +279,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 98.6 days (source date: 2026-07-29, first seen: 2026-07-28)
+- **Age in queue:** 98.7 days (source date: 2026-07-29, first seen: 2026-07-28)
 
 - **Coverage:** 64 news, 10 social — pattern: _below-expected coverage_
 
@@ -301,7 +301,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.280 (silence=0.96 × importance=0.67 × age_factor)
 
-- **Age in queue:** 110.6 days (source date: 2026-07-17, first seen: 2026-07-16)
+- **Age in queue:** 110.7 days (source date: 2026-07-17, first seen: 2026-07-16)
 
 - **Coverage:** 66 news, 21 social — pattern: _below-expected coverage_
 
@@ -312,7 +312,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.232 (silence=0.96 × importance=0.64 × age_factor)
 
-- **Age in queue:** 125.8 days (source date: 2026-07-02, first seen: 2026-07-01)
+- **Age in queue:** 125.9 days (source date: 2026-07-02, first seen: 2026-07-01)
 
 - **Coverage:** 52 news, 15 social — pattern: _below-expected coverage_
 
@@ -323,7 +323,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.203 (silence=0.98 × importance=0.61 × age_factor)
 
-- **Age in queue:** 69.7 days (source date: 2026-08-26, first seen: 2026-08-26)
+- **Age in queue:** 69.8 days (source date: 2026-08-26, first seen: 2026-08-26)
 
 - **Coverage:** 19 news, 10 social — pattern: _below-expected coverage_
 
@@ -341,7 +341,18 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** environmental, legal
 
 
-### S14. sabah sets aside nearly rm1b to unlock state agriculture, industry and tourism potential. keningau, aug 17 ...
+### S14. budget 2027: rm2.62b aid for paddy farmers, incentives for fishermen, smallholders. kuala lumpur, oct 9 &md...
+
+- **Rank score:** 1.202 (silence=0.98 × importance=0.67 × age_factor)
+
+- **Age in queue:** 25.5 days (source date: 2026-10-10, first seen: 2026-10-09)
+
+- **Coverage:** 40 news, 13 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
+
+
+### S15. sabah sets aside nearly rm1b to unlock state agriculture, industry and tourism potential. keningau, aug 17 ...
 
 - **Rank score:** 1.201 (silence=0.98 × importance=0.61 × age_factor)
 
@@ -350,17 +361,6 @@ developed, and the develop list drifts into old news.
 - **Coverage:** 24 news, 7 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
-
-
-### S15. budget 2027: rm2.62b aid for paddy farmers, incentives for fishermen, smallholders. kuala lumpur, oct 9 &md...
-
-- **Rank score:** 1.200 (silence=0.98 × importance=0.67 × age_factor)
-
-- **Age in queue:** 25.4 days (source date: 2026-10-10, first seen: 2026-10-09)
-
-- **Coverage:** 40 news, 13 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, political
 
 
 ### S16. federal court dismisses kedah govt’s bid for leave to appeal in pool betting outlet licences case. &nbsp;pu...
@@ -376,9 +376,9 @@ developed, and the develop list drifts into old news.
 
 ### S17. budget 2027: rm8b for tvet, 30,000 new job opportunities via bakat madani. kuala lumpur, oct 9 &mdash; the ...
 
-- **Rank score:** 1.195 (silence=0.97 × importance=0.67 × age_factor)
+- **Rank score:** 1.197 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 25.4 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 25.5 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 46 news, 16 social — pattern: _below-expected coverage_
 
@@ -387,9 +387,9 @@ developed, and the develop list drifts into old news.
 
 ### S18. malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. kuala lumpur, oct 9...
 
-- **Rank score:** 1.192 (silence=0.97 × importance=0.67 × age_factor)
+- **Rank score:** 1.194 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 25.4 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 25.5 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 55 news, 13 social — pattern: _below-expected coverage_
 
@@ -400,14 +400,25 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.189 (silence=0.97 × importance=0.61 × age_factor)
 
-- **Age in queue:** 156.8 days (source date: 2026-06-01, first seen: 2026-05-31)
+- **Age in queue:** 156.9 days (source date: 2026-06-01, first seen: 2026-05-31)
 
 - **Coverage:** 37 news, 6 social — pattern: _24h+ silence then rising_
 
 - **Dimensions at risk:** political
 
 
-### S20. public works ministry spends entire rm2b road maintenance allocation, to seek more funds. seberang perai, a...
+### S20. budget 2027: higher education ministry gets rm19.1bil, rm800mil for university facilities upgrades. kuala l...
+
+- **Rank score:** 1.188 (silence=0.96 × importance=0.67 × age_factor)
+
+- **Age in queue:** 25.7 days (source date: 2026-10-10, first seen: 2026-10-09)
+
+- **Coverage:** 60 news, 25 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
+
+
+### S21. public works ministry spends entire rm2b road maintenance allocation, to seek more funds. seberang perai, a...
 
 - **Rank score:** 1.187 (silence=0.97 × importance=0.61 × age_factor)
 
@@ -416,17 +427,6 @@ developed, and the develop list drifts into old news.
 - **Coverage:** 36 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
-
-
-### S21. budget 2027: higher education ministry gets rm19.1bil, rm800mil for university facilities upgrades. kuala l...
-
-- **Rank score:** 1.187 (silence=0.96 × importance=0.67 × age_factor)
-
-- **Age in queue:** 25.6 days (source date: 2026-10-10, first seen: 2026-10-09)
-
-- **Coverage:** 60 news, 25 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, political
 
 
 ### S22. federal court affirms 30-year sentence for ex-rela member who shot dead friend at terengganu temple. putraj...
@@ -442,33 +442,33 @@ developed, and the develop list drifts into old news.
 
 ### S23. budget 2027: home, defence ministries each allocated rm22b. kuala lumpur, oct 9 &mdash; the home ministry a...
 
-- **Rank score:** 1.185 (silence=0.96 × importance=0.67 × age_factor)
+- **Rank score:** 1.186 (silence=0.96 × importance=0.67 × age_factor)
 
-- **Age in queue:** 25.4 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 25.5 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 64 news, 18 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S24. sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sarawak is projecti...
+### S24. budget 2027: school repair allocation doubles to rm2b, dilapidated schools get rm1.3b. kuala lumpur, oct 9 ...
+
+- **Rank score:** 1.185 (silence=0.96 × importance=0.67 × age_factor)
+
+- **Age in queue:** 25.7 days (source date: 2026-10-10, first seen: 2026-10-09)
+
+- **Coverage:** 64 news, 28 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
+
+
+### S25. sarawak projects rm13.04b revenue in 2026, says deputy premier. kuching, may 20 &mdash; sarawak is projecti...
 
 - **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 167.6 days (source date: 2026-05-21, first seen: 2026-05-20)
+- **Age in queue:** 167.7 days (source date: 2026-05-21, first seen: 2026-05-20)
 
 - **Coverage:** 41 news, 8 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S25. guan eng: bank profits surged rm6.5b, time to help struggling msmes with relief package. kuala lumpur, may ...
-
-- **Rank score:** 1.184 (silence=0.96 × importance=0.61 × age_factor)
-
-- **Age in queue:** 179.1 days (source date: 2026-05-08, first seen: 2026-05-08)
-
-- **Coverage:** 34 news, 15 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
