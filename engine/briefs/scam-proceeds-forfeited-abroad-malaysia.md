@@ -20,14 +20,15 @@ The evidence supports a narrower and sharper version of that story.
 **Abroad, the headline action is a forfeiture claim, not a forfeiture.** On 14 October 2025 the US Attorney for
 the Eastern District of New York filed a verified complaint *in rem* to forfeit "approximately 127,271 Bitcoin"
 that DOJ valued at "approximately $15 billion", the "largest forfeiture action in the history of the Department
-of Justice" [S9, S10]. The complaint asks the court to "forfeit and condemn [the coins] to the use and benefit of
-the United States" [S10 ¶1]. Treasury designated 146 Prince Group targets the same day, the UK froze London
+of Justice" [S9, S10]. The complaint is an action "to forfeit and condemn to the use and benefit of the United States
+the above-captioned defendant property" [S10 ¶1]. Treasury designated 146 Prince Group targets the same day, the UK froze London
 property, and Treasury has since added two more rounds (23 June 2026; 5 November 2026), the last of which names a
 **Malaysia-based company, Greenmeadows Properties Sdn Bhd**, and a **Malaysian individual, Chui Kok Wa** [S11,
 S12, S13]. But no final forfeiture order was found; nine alleged victims who tried to claim the coins were struck
 or refused on standing on 25 September 2026 (reported, docket not opened) [S25d]; and US rules route any money to
-victims only through a discretionary petition ("remission") under 28 CFR 9.8, while an Executive Order would
-otherwise send finally forfeited bitcoin to a Strategic Bitcoin Reserve that "shall not be sold" [S14]. The US
+victims only through a discretionary petition ("remission") under 28 CFR 9.8, while an Executive Order directs
+finally forfeited bitcoin held by Treasury, unless released for victims or other legal uses, into a Strategic
+Bitcoin Reserve that "shall not be sold" [S14]. The US
 does, however, have a written door for victims: 28 CFR 9.2 defines a victim as "a person who has incurred a
 pecuniary loss as a direct result of the commission of the offense underlying a forfeiture", with no nationality
 condition [S14a].
@@ -55,9 +56,10 @@ the Dewan Rakyat on 1 July and the Dewan Negara on 20 July 2026 [S23a, S23b]. **
 as of 7 November 2026**; on 4 and 5 November the Deputy Prime Minister and the CCID director still described it
 as a Bill and a "proposed" law [S18].
 
-Developable core (anger at process, not at victims, banks, police or any country): Malaysia freezes scam money
-faster than ever and has a restitution power on paper, but the law that decides the ownership of forfeited money
-names the Government, the victim must come forward to claim, and the one statute that would let a court order
+Developable core (anger at process, not at victims, banks, police or any country): Malaysia froze and disrupted more
+scam money in 2025 than before (BNM: NSRC mule-account disruptions and funds frozen "more than double" [S6 p. 92])
+and has a restitution power on paper, but the law that decides the ownership of forfeited money
+names the Government, the victim must come forward to claim, and the Bill that would let a court order
 restitution before a charge has no commencement date that this review could find.
 
 ## PERIOD
@@ -83,7 +85,7 @@ restitution before a charge has no commencement date that this review could find
 | 28 Jun 2024 | BNM issues *Ensuring Fair Treatment for Victims of Unauthorised e-Banking Transactions* (SEFT); para 4.1: "comes into effect on 1 October 2024". | [S7] |
 | 30 Oct 2024 | Penal Code ss. 424A to 424D (mule accounts) and CPC amendments in force; police "of at least the rank of sergeant" may "seize or prohibit transactions". Deputy minister Kula Segaran, 18 Nov 2024. | [S22d] |
 | 3 Dec 2024 | Anwar (PMQT): Malaysia should adopt the UK's compensation principle "provided that banks were found to be negligent"; "according to Section 413 of the CPC, RM178,407 has been returned"; online financial crime losses RM1.224b Jan to Oct 2024. | [S22b] |
-| Jul 2025 | NSRC placed under PDRM's Commercial Crime Investigation Department; moves to 24-hour operation. | [S6 p. 96] |
+| Jul 2025 | NSRC placed under PDRM's Commercial Crime Investigation Department; 24-hour operation in place by early 2026 (exact start date not established). | [S6 p. 96], [S22a] |
 | 8 Dec 2025 | PDRM: 67,735 online crime cases Jan to Nov 2025, losses "exceeding RM2.7 billion"; e-finance crimes 5,853 cases, RM458.1m. | [S21d] |
 | 21 Jan 2026 | Home Ministry written reply: RM2.77b lost in 2025; RM1.28b in 2023; RM1.57b in 2024. | [S21a] |
 | 27 Jan 2026 | Saifuddin (oral): RM34m "diselamatkan" and RM6.7m returned to victims in 2025, against RM508,479 the year before; RM542m in losses recorded from NSRC complaints in 2025. | [S22a] |
@@ -204,7 +206,7 @@ restitution before a charge has no commencement date that this review could find
   - 2024 amendments (in force 30 Oct 2024): police power to seize or prohibit transactions in suspected-crime funds
     [S22d]; section numbers not verified from text.
 - **BNM SEFT policy document** (issued 28 Jun 2024, effective 1 Oct 2024) [S7]: scope is unauthorised e-banking
-  transactions; BNM AR2025: "SEFT provides a basis for considering compensation, it does not guarantee
+  transactions; BNM AR2025: "While SEFT provides a basis for considering compensation, it does not guarantee
   compensation to victims in all cases" and excludes "cases where customers initiate transactions themselves,
   including those made under coercion or undue influence, such as love or investment scams" [S5 p. 81].
 - **US** [S14]: 28 CFR 9.2 ("Victim means a person who has incurred a pecuniary loss as a direct result of the
@@ -298,7 +300,7 @@ not CRITICAL. Re-check Stage 3's `source_diversity_estimate` (< 0.4 would trigge
    **Arousal peak (fact 2):** RM6.7m back out of RM2.97b lost in 2025.
 3. **Regional**: the Prince Group case. 127,271 BTC under a US forfeiture claim; three OFAC rounds; the third names
    a Malaysia-based company. The US route to victims is a petition any person with a documented loss may file;
-   nine early claimants were turned away for failing to trace their money to the seized wallets.
+   nine early claimants were turned away for failing to trace their money to the seized wallets (reported).
    (Alternative third lens: **Rights**: cl. 54 restraint without a charge and without an undertaking as to
    damages (cl. 54(4)); NGOs' call for judicial oversight [S23f]. Use only if Stage 2 wants the civil-liberties
    counterweight.)
@@ -314,14 +316,14 @@ the statute that decides who owns it names the Government. The victim has to com
 Reframe candidate (re-anchored number): *RM100.93 million prevented, RM14.3 million returned, and a restitution
 power Parliament passed in July that no gazette has yet switched on.*
 
-View candidate (WhatsApp test): *The US wrote down a rule that lets any defrauded person petition for forfeited
-money. Malaysia's anti-money-laundering law never uses the word "victim". The Cybercrimes Act would change that
+View candidate (WhatsApp test): *The US has a written rule that lets people defrauded by the crime behind a
+forfeiture petition for a share of it. Malaysia's anti-money-laundering law never uses the word "victim". The Cybercrimes Act would change that
 for court-ordered restitution, but only from the day the Minister gazettes it.* (Requires GAP 3 closed: confirm
 the 2025 AMLA amendment adds no victim provision.)
 
 Headline candidates (≤100 chars, topic-first):
-- "Malaysia's NSRC returned RM14.3m of RM1.2b reported lost; its restitution law awaits a start date" (98)
-- "US files to forfeit 127,271 bitcoin from Prince Group; Malaysia's scam victims got back RM6.7m in 2025" (100)
+- "Malaysia's NSRC returned RM14.3m of RM1.2b reported lost; its restitution law awaits a start date" (97)
+- "US seeks to forfeit 127,271 bitcoin; Malaysia returned RM6.7m of RM2.97b lost to scams in 2025" (94)
 
 Elevated-word candidate: *in rem* (the US complaint's own form: an action against the property, not the person).
 
@@ -382,7 +384,6 @@ CPC, Parliament, Dewan Negara.
     Recovers RM520 Million for Victims", 2025) and **1870** ("Malaysia-Singapore cooperation recovers RM320 million",
     2025) carry figures irreconcilable with BNM's NSRC outcomes (RM19m frozen in 2025 [S6]) and the Home Ministry
     (RM6.7m returned in 2025 [S22a]). Do not link them as related; flag to the editor for review.
-
 14. **Chen Zhi's nationality.** DOJ (release updated "to accurately reflect the defendant's nationality") and
     Treasury call him a "Cambodian national" [S9, S11]; Reuters via The Star calls him "a Chinese national" and
     reports that Cambodia revoked his citizenship [S25b]. Name him by role (Prince Group founder and chairman), not
@@ -416,8 +417,9 @@ the Home Ministry; there is no independent Malaysian audit of these figures (FOM
    complaint seeking forfeiture "to the use and benefit of the United States" [S10 ¶1]. No final forfeiture order
    was found. UK and Cambodian actions are sanctions freezes and court freezes, not forfeitures [S13, S25c]. No
    evidence was found that any victim, anywhere, has yet been paid from the 127,271 BTC; nine claimants were turned
-   away on standing (reported) [S25d]. By default under EO 14233, finally forfeited bitcoin goes to a reserve that
-   "shall not be sold", unless an official decides it should be returned to victims [S14b]. Remission is
+   away on standing (reported) [S25d]. Under EO 14233, finally forfeited bitcoin held by Treasury and not released
+   (for example to "identifiable and verifiable victims of crime") capitalises a reserve that "shall not be sold"
+   [S14b]. Remission is
    discretionary, documentation-heavy and pro rata [S14a]. Write "is seeking to forfeit", never "forfeited".
 2. **The "1% of RM1.23b over a decade" figure is an unlike-pools calculation.** See CONTRADICTION 1. The thesis's
    substance survives (the like-for-like NSRC ratio is about 1.2%, and against police-reported losses about 0.2%),
@@ -437,13 +439,13 @@ the Home Ministry; there is no independent Malaysian audit of these figures (FOM
    is unknown.
 6. **Victim routes exist and returns are rising.** CPC s. 413 delivery, CPC s. 426 compensation, AMLA s. 61
    third-party claims, SEFT for unauthorised transactions, and FMOS escalation all exist [S2, S3, S5, S7]. Returns
-   rose from RM508,479 (2024) to RM6.7m (2025) after the NSRC went 24-hour [S22a]. The AG told DPPs to seek
+   rose from RM508,479 (2024) to RM6.7m (2025); the minister credited the NSRC's 24-hour operation [S22a]. The AG told DPPs to seek
    compensation in April 2026 [S22e].
 7. **Low recovery is common, and comparators measure different things.** Singapore's government "does not track
    the amount of scam proceeds returned to victims" [S16b]. The UK's 88% is reimbursement paid by payment firms,
    not money recovered from criminals [S15]. Setting Malaysia's ~1% beside the UK's 88% compares asset recovery
    with liability shifting.
-8. **Malaysia's system is weighted to prevention, not recovery, by choice.** BNM: RM1.2b of attempted fraudulent
+8. **Malaysia's system is weighted to prevention, not recovery.** BNM: RM1.2b of attempted fraudulent
    transactions prevented in 2025 and ~RM1.9b in H1 2026 [S8]; 162,642 mule accounts stopped [S6]; NSRC prevented
    RM100.93m [S19]. Recovery alone understates protection.
 9. **The binding constraint may be speed and borders, not the forfeiture statute.** 95% of cases are authorised
