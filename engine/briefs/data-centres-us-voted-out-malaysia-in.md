@@ -390,8 +390,8 @@ not CRITICAL). Re-check if Stage 3 returns `source_diversity_estimate` below 0.4
   either settles who pays; the data-centre share of the RM5b is unknown.
 - **G15.** User-pays rules are "meant to" protect households (stated intent), not proven to.
 
-**Reframe candidate (hard sentence, asymmetry of specificity):** *A data centre in Malaysia now has a
-water tariff of its own. It still has no line of its own in the EIA Order, the list that decides which
+**Reframe candidate (hard sentence, asymmetry of specificity):** *A data centre in Peninsular Malaysia or
+Labuan now has a water tariff of its own. It still has no line of its own in the EIA Order, the list that decides which
 projects go on public display.*
 - Sources: [S5], [S11], [S2] para 3.
 - No sequence claim (C1). No claim of zero voice: the plan stage is acknowledged in the view and G4.
@@ -408,8 +408,8 @@ The EIA Order has no data-centre line.*
 - Acknowledges ss13, 14, 16(3) (zoning objections) and s21(6).
 - Stage 6 to note that the s21(6) right belongs to neighbouring *landowners*.
 
-**Hook direction (anxiety-of-precedent, asymmetry):** *From 1 August 2025, Malaysia gave data centres a
-water tariff of their own. Its EIA Order, which decides which projects go on public display, still has
+**Hook direction (anxiety-of-precedent, asymmetry):** *From 1 August 2025, data centres in Peninsular
+Malaysia and Labuan pay a water tariff of their own. Its EIA Order, which decides which projects go on public display, still has
 no data-centre line. And where a local plan already zones the land, the planning Act does not require
 the local council to notify neighbours before it grants planning permission.*
 - Sources: [S5], [S11], [S2], [S3] s21(1), (6).
@@ -1045,3 +1045,14 @@ being cited, to fix blocking item 4. The INDEPENDENT VERIFICATION section above 
 - The data-centre share of the RM5b (GAP 19).
 - Reconciling the capacity denominators (GAP 20).
 - The UHV schedule and RP4 recovery (GAPs 1–2).
+
+### Editor review (2026-11-07)
+
+- **Water-tariff scope.** Opened S11 directly: "Data centres are charged a separate water tariff of
+  between RM5.30 and RM5.38 per cubic metre in Peninsular Malaysia and Labuan, effective Aug 1 last
+  year." The date holds nationally for that scope; Sabah and Sarawak are not covered. The reframe and
+  hook said "Malaysia"; both now say "Peninsular Malaysia (and) Labuan". Any card using the tariff must
+  carry the same scope.
+- **Verification section integrity.** The INDEPENDENT VERIFICATION section was diffed against the
+  committed report (f304b580): unchanged apart from blank lines.
+- **Status.** Ready for the editor's approval to proceed to Stage 1. Not approved yet.
