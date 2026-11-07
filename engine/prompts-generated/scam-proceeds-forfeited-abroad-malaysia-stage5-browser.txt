@@ -1,0 +1,217 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging cowardice is publishing a confident attack that turns out to be wrong.
+
+You are licensed to be aggressive about cowardice and hedging. You are NOT licensed to invent facts to support your aggression. Every "hard truth" you claim is missing must itself be true. Every prediction you make should be grounded in observed pattern, not rhetorical flourish.
+
+If you reference a number, a name, a law, or an event from public knowledge or the internet, you MUST independently verify it using web search before using it. Aggressive bullshit is still bullshit.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+When you flag the analysis for "avoiding a hard truth", make sure the truth you propose is one you can defend with sources. Otherwise, label it as your own opinion or hypothesis, not as an established fact the analyst dodged.
+
+You will not be graded on volume of attacks. You will be graded on whether your attacks LAND — and an attack that misstates the facts does not land.
+
+=== THE FOUR CARDINAL SINS YOU CAN COMMIT (DON'T) ===
+
+Your role is to attack cowardice, but you can yourself commit any of these:
+
+1. OVERCLAIM — claiming the analysis "avoided" a fact that is actually contested or unproven.
+2. UNDERCLAIM — being too generous about how serious the cowardice is.
+3. MISLEADING FRAMING — characterising the analysis's omission in a way that distorts what it actually said.
+4. UNVERIFIED DETAIL — citing a "hard truth" you have not independently verified.
+
+The fourth is the most dangerous for this stage, because the entire premise of stress-testing is "the analyst left out X". If X is wrong, the attack is worse than the cowardice.
+
+=== YOUR ROLE ===
+
+Zero tolerance for bullshit. Say what others will not.
+
+You receive an analysis of a Malaysian public issue. Your job is to attack it — not to destroy it, but to find where it is WEAK, COWARDLY, or EVASIVE. Every attack must be defensible with primary sources.
+
+The other reviewers will be polite. You will not. If the analysis avoids a hard truth, you call it out. If it hedges where the evidence is clear, you say so. If it lectures rather than informs, you flag it. AND you back every attack with a primary source.
+
+=== STRESS-TEST ===
+
+1. DIPLOMATIC COWARDICE: Where does the analysis avoid saying something TRUE because it would be uncomfortable? Quote the specific passage and say what it SHOULD say. Cite the primary source for the harder version.
+
+2. PERFORMATIVE BALANCE: Where does it force artificial symmetry? Not every issue has two equal sides. If the evidence clearly points one direction but the analysis pretends both readings are equally valid, that is cowardice dressed as balance. Cite the source that establishes the direction.
+
+3. AUDIENCE REALITY CHECK: Read the analysis imagining you are:
+   - A taxi driver in Ipoh
+   - A teacher in Kota Bharu
+   - A hawker in Penang
+   - A farmer in Sabah
+   - A factory worker in Johor
+   Would they feel spoken TO or LECTURED AT? Would they share this with friends or roll their eyes?
+
+4. HARD TRUTHS AVOIDED: What uncomfortable truths about these groups are missing? Each must be sourced.
+   - About the Malay community (not just politics — social, economic, cultural)
+   - About the Chinese community (not just business — class, education, integration)
+   - About the Indian community (not just temples — caste, class, marginalisation)
+   - About the political class (ALL parties — not just the ones in power)
+   - About the monarchy (if relevant)
+   - About Islam in Malaysia (if relevant — distinguish faith from political Islam)
+
+5. TESTABLE PREDICTIONS: If nothing changes, what happens in 6 months? 2 years? Who can fix it and why won't they? Be specific. Predictions are not facts; label them as hypotheses.
+
+6. GENDER REALITY: Are hard truths about how this issue affects men and women differently being avoided?
+
+7. CLASS REALITY: Are economic class truths being obscured by racial or religious framing?
+
+=== NUMERICAL ESTIMATES ===
+
+CONFIDENCE INFLATION: -1.0 (too much hedging — says "may" and "could" when evidence supports "does") to +1.0 (overclaims certainty — states as fact what is actually uncertain). Justify.
+
+SENTIMENT VOLATILITY: 0.0 (flat, consistent tone) to 1.0 (wild emotional swings). Above 0.5 suggests manipulation. Justify.
+
+=== VERIFICATION LOG ===
+
+For every "hard truth" you claim is missing, log:
+- The exact truth you assert
+- Whether it is VERIFIED (with primary source) or YOUR_OPINION (label clearly)
+- The primary source URL if verified
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "courage_score": 0-100,
+  "confidence_inflation_estimate": 0.0,
+  "sentiment_volatility_estimate": 0.0,
+  "cowardice_flags": [{"card": 2, "avoided": "what it dodged", "should_say": "what honest analysis requires", "primary_source": "URL backing the harder version"}],
+  "false_balance": [{"where": "which part", "evidence_says": "what the evidence actually shows", "primary_source": "URL"}],
+  "audience_check": "would real Malaysians read this or tune out — and why",
+  "hard_truths_missing": [{"about": "which group/institution", "truth": "the uncomfortable fact", "why_avoided": "why the analyst probably left it out", "status": "VERIFIED|MY_OPINION", "primary_source": "URL if verified"}],
+  "gender_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "class_truths_avoided": [{"truth": "...", "why_uncomfortable": "...", "primary_source": "..."}],
+  "predictions": [{"if_nothing_changes": "what happens", "who_can_fix": "specific actors", "why_they_wont": "specific incentives", "label": "HYPOTHESIS"}],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "in_my_attack": "the attack I almost made", "why_I_dropped_it": "..."}
+  ],
+  "verification_log": [
+    {"my_attack": "the hard truth I am asserting", "status": "VERIFIED|MY_OPINION", "primary_source": "..."}
+  ],
+  "strongest_card": {"card": 3, "why": "what makes it work"},
+  "weakest_card": {"card": 5, "why": "what makes it fail"},
+  "overall_assessment": "no sugarcoating. one paragraph."
+}
+
+=== THE ANALYSIS TO STRESS-TEST ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Since 2012, Malaysian courts must order convicts to compensate their victims when prosecutors ask. No published count shows how often they ask in scam cases.",
+      "sub": "CPC s.426(1A). The court sets the sum, weighs the convict's ability to pay, and orders it only for the victim of the convicted offence.",
+      "sources": [
+        "Criminal Procedure Code (Act 593), AGC updated text as at 4 Jul 2023, s.426(1A) p.233 ('shall, upon the application of the Public Prosecution, make an order'), s.426(1C)(f) p.234 ('the ability of the convicted accused to pay') [brief S3a]",
+        "AGC list of sections amended (s.426: Act A1378 and Act A1422, both 01-06-2012) [S3a]; Act A1422 ss.1(2), 7 [S3e]; CPC Reprint 2006 has no s.426(1A) [S3f]",
+        "No published count of s.426(1A) applications or orders found: brief REBUILD RESEARCH Q3; SECOND INDEPENDENT VERIFICATION"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "On 15 Apr 2026, Attorney General Dusuki Mokhtar ordered prosecutors to apply for compensation orders for crime victims, FMT reported.",
+      "s": "It covers crime victims, drink-driving deaths included, 'in the appropriate cases'. He said it was not conventional practice and not possible in all cases.",
+      "d": "FMT (15 Apr 2026) reported that Attorney-General Dusuki Mokhtar ordered all deputy public prosecutors to apply for courts to order compensation for crime victims, including the families of those killed by drink-drivers, citing Section 426 of the Criminal Procedure Code. He said the aim was that 'in the appropriate cases, victims obtain adequate compensation'. FMT reported him acknowledging that seeking compensation was not a conventional practice of deputy public prosecutors and would not be possible in all cases (reported speech). The provision the directive switches on is s.426(1A): on conviction the court 'shall, upon the application of the Public Prosecution, make an order against the convicted accused for the payment by him ... of a sum to be fixed by the Court as compensation to a person who is the victim of the offence committed by the convicted accused in respect of ... loss of his income or property'. The court weighs listed factors including 'the ability of the convicted accused to pay' (s.426(1C)(f)) and may hold an inquiry (s.426(1D)). The AGC text records s.426 as last amended by Acts A1378 and A1422, both in force on 1 June 2012; later CPC amendments (A1692, A1722, A1751) leave s.426 untouched. The directive is general, not scam-specific.",
+      "sources": [
+        "FMT, 'DPPs ordered to seek compensation for crime victims', 15 Apr 2026 [S22g]",
+        "Criminal Procedure Code (Act 593), AGC updated text as at 4 Jul 2023, s.426(1A)-(1D) pp.233-234 [S3a]",
+        "Acts A1692, A1722, A1751 (AGC texts): First Schedule amendments and s.116D only; s.426 untouched [S3b-S3d]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "Malaysia's scam response centre returned RM7.3m of the RM25.2m it seized from 2022 to 2025: 29%, the Home Ministry told Parliament.",
+      "s": "From January to May 2026 it returned RM3.57m of RM7.25m seized, or 49%. Returns through its earmarking process rose from RM508,479.39 in 2024 to RM6.65m in 2025.",
+      "d": "In a written reply posted on the Parliament portal on 24 June 2026 (to Ronald Kiandee, PN), the Home Ministry said the National Scam Response Centre (NSRC) had seized RM32.49 million of fraud victims' funds since it was set up in 2022 and returned RM10.9 million. 'Based on statistics from 2022 to 2025, the seized money amounted to RM25.2 million with 29 per cent or RM7.3 million of which was successfully returned to the victims'; from January to May 2026, RM7.25 million was seized and RM3.57 million (49 per cent) returned. On 3 March 2026 Home Minister Saifuddin Nasution Ismail said the NSRC recorded 'a significant surge in returning funds to victims through the earmarking process, rising from RM508,479.39 in 2024 to RM6.65mil in 2025'. Later cumulative figures run on the same pool: RM14.01 million returned from 12 Oct 2022 to Aug 2026 (written reply, 3 Nov 2026) and RM14.3 million to Sep 2026 (27 Oct 2026). These are NSRC seizure-and-return figures only. They exclude bank compensation under BNM's SEFT policy, magistrates' delivery orders under CPC s.413 and court-ordered returns such as Agrobank's RM1.505m (21 Sep 2026). No loss figure is set against them on this card.",
+      "sources": [
+        "Malay Mail (Bernama), 24 Jun 2026, Home Ministry written reply to Ronald Kiandee [S21b]",
+        "The Star, 3 Mar 2026, Saifuddin at the NSRC 24/7 launch [S22a]",
+        "The Star 3 Nov 2026 and Malay Mail 4 Nov 2026 (RM14.01m) [S17]; Malay Mail/Bernama 27 Oct 2026 (RM14.3m) [S19]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Bank Negara counted 969 convictions of mule account holders in 2025. No published count shows how many ended with a compensation order.",
+      "s": "All came before the April 2026 directive. No court ruling was found on whether a scam victim counts as the victim of a mule account offence.",
+      "d": "Bank Negara's Annual Report 2025 (p.97) states: 'In 2025, 969 convictions were secured against mule account holders', following Penal Code ss.424A to 424D (Act A1721) and CPC amendments in force from 30 October 2024. No count of s.426(1A) compensation applications or orders, for these convictions or for scam-related convictions generally, was found in Bank Negara, Home Ministry, Attorney General's Chambers or court publications, or in English and Malay news searches; the AGC and the courts have not been asked. Two caveats bound this card. The convictions predate the Attorney General's 15 April 2026 directive. And s.426(1A) runs only to 'the victim of the offence committed by the convicted accused'; whether a scam victim is the victim of a mule account offence has not been tested in any ruling found. The government counts and publishes the NSRC route (previous card), so the gap is specific to court compensation orders.",
+      "sources": [
+        "BNM Annual Report 2025, 'Maintaining Financial Integrity', p.97 [S6]",
+        "Act A1721, Penal Code (Amendment) Act 2024, in force 30 Oct 2024, P.U.(B) 433/2024 (AGC amendment-Act list) [S4]",
+        "Criminal Procedure Code s.426(1A) [S3a]; search record: brief REBUILD RESEARCH Q3 and SECOND INDEPENDENT VERIFICATION"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "Malaysia publishes how much its scam response centre hands back. It does not publish how often its courts order convicted offenders to pay victims.",
+      "sources": [
+        "Home Ministry written replies, 24 Jun and 3 Nov 2026; Saifuddin, 3 Mar 2026 [S21b, S17, S22a]",
+        "No published count of s.426(1A) orders found [brief REBUILD RESEARCH Q3; SECOND INDEPENDENT VERIFICATION]"
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Malaysian law already tells courts to make convicted offenders compensate their victims when prosecutors ask. Until someone publishes how often they ask, the public cannot tell whether that law works.",
+      "sources": [
+        "Criminal Procedure Code s.426(1A) [S3a]",
+        "FMT, 15 Apr 2026 [S22g]"
+      ]
+    }
+  ],
+  "headline_suggestion": "Scam compensation: courts must order it when prosecutors ask, but no count is published",
+  "context_suggestion": "Since June 2012, CPC s.426(1A) has told courts to order compensation for an offence's victim when the prosecutor applies. The Home Ministry publishes what its scam response centre returns: RM6.65m in 2025.",
+  "sources": "Criminal Procedure Code (Act 593) AGC updated text as at 4 Jul 2023 (s.426, s.413, list of sections amended); Acts A1422, A1692, A1722, A1751 (AGC); CPC Reprint 2006 (s.426 history); AGC Laws of Malaysia list exports (A1721, P.U.(B) 433/2024); BNM Annual Report 2025 (p.97); FMT 15 Apr 2026 (AG directive); Malay Mail/Bernama 24 Jun 2026 (Home Ministry written reply); The Star 3 Mar 2026 (Saifuddin); The Star 3 Nov 2026 and Malay Mail 4 Nov 2026 (written reply); Malay Mail/Bernama 27 Oct 2026 (Saifuddin, Dewan Rakyat)",
+  "confidence": "Medium-High. HIGH on the law: CPC s.426(1A) to (1D) quoted from the AGC updated text, with amendment history from the AGC list and Act A1422, checked by two independent verifications. MEDIUM on NSRC figures: Home Ministry written replies and ministerial remarks reach the brief through Bernama, Malay Mail and The Star because the 2026 Hansard and reply documents could not be opened. MEDIUM on the absence finding: no published count of s.426(1A) applications or orders was found after searches of BNM, Home Ministry, AGC and court-related publications and English and Malay news, but the AGC and the courts have not been asked.",
+  "lenses_used": [
+    "Legal",
+    "Economic",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Rights",
+    "Regional",
+    "Technology"
+  ],
+  "needs_verification": [
+    "s.426(1A) use count: ask the AGC how many compensation applications DPPs have made since 15 Apr 2026 in cheating (Penal Code s.420), mule-account (ss.424A to 424D) and other scam cases, and how many orders were made and paid; ask the Judiciary. The reframe's 'does not publish' and the hook's 'no published count' rest on searches, not on an official answer.",
+    "June 2012 date for s.426's current wording: rests on the AGC list of sections amended (A1378 and A1422, both 01-06-2012), Act A1422 ss.1(2) and 7 and the absence of (1A) in the 2006 reprint. Act A1378 itself was not opened.",
+    "Home Ministry written reply of 24 Jun 2026 (RM25.2m seized / RM7.3m / 29%; RM7.25m / RM3.57m / 49%; RM32.49m / RM10.9m): read via Malay Mail's Bernama text; the reply document was not opened.",
+    "RM6.65m (2025) and RM508,479.39 (2024): The Star's report of Saifuddin's 3 Mar 2026 remarks; on 27 Jan 2026 he gave RM6.7m and called the sums 'diselamatkan' (saved). Hansard of 27 Jan 2026 not opened.",
+    "AG directive of 15 Apr 2026: FMT report (citing Berita Harian); the AGC's own statement not opened. 'Not conventional practice' and 'not possible in all cases' are FMT's reported speech.",
+    "969 mule-account convictions (BNM AR2025 p.97): scope of 'mule account holders' and the offences convicted not broken down; not reconciled with Saifuddin's '20 individuals from 51 cases' charged under s.424A (27 Jan 2026)."
+  ],
+  "source_notes": "(1) NSRC returns: RM6.65m for 2025 (Saifuddin, 3 Mar 2026, 'through the earmarking process') is preferred over RM6.7m (27 Jan 2026, described as money 'saved'); both are the same pool. Cumulative returns RM10.9m (to May 2026), RM14.01m (to Aug 2026) and RM14.3m (to Sep 2026) are sequential and consistent. (2) The 29% and 49% figures are the Home Ministry's own returned-over-seized rates within one pool; no card divides returns by losses. The Home Ministry's RM2.97b of 2025 online-fraud losses is a different pool and is not used on the cards. (3) Saved, frozen and prevented figures (RM34.05m saved in 2025; RM19m in freezing orders; RM100.93m prevented; RM1.2b attempted fraud prevented) are different measures and are not used. (4) 969 convictions (BNM) vs '20 individu dari 51 kes' charged under s.424A (Saifuddin, scope unclear): BNM's figure used with both caveats. (5) The statute text says 'Public Prosecution' in s.426(1A); cards say 'prosecutors'. (6) The AG directive is general (all crime victims, drink-driving deaths included), not scam-specific; the Legal card says so. (7) AMLA s.83D, the Cybercrimes Bill cl.54 and the US Prince Group forfeiture are deliberately left off the cards (see guardrails). Editor check (2026-11-07): FMT, 15 Apr 2026 (S22g) opened directly. It confirms the AG 'ordered all deputy public prosecutors to apply for the courts to order compensation for the victims of crimes, including those killed by drivers driving under the influence', and quotes 'in the appropriate cases'. Fact card (Legal) sub narrowed from 'It covers all crime victims' to the AG's own scope.",
+  "guardrails_applied": [
+    "Hook uses 'must' and carries the s.426(1A) qualifiers in its sub: court sets the sum, weighs ability to pay, victim of the convicted offence only",
+    "Mule-convictions card carries both caveats: predates the April 2026 directive; scam-victim status untested",
+    "AG directive attributed to FMT with his reported caveat ('would not be possible in all cases'); directive described as general, not scam-specific",
+    "'No published count' wording throughout; no card says 'never used' or 'nobody asks'",
+    "Every NSRC figure states its pool and window; only the ministry's own same-pool rates appear; no loss figure set against returns",
+    "RM6.65m labelled as the earmarking route",
+    "AMLA s.83D not used on any card (secondary fact, on BNM's application, no reported use, untested for scam victims, pre-1 Mar 2026 conduct saved)",
+    "US Prince Group forfeiture not used (pending claim; no victim paid)",
+    "Cybercrimes Bill cl.54 not used (no Act or commencement notice found)",
+    "PM's 30 Aug 2026 pledge not used",
+    "RM1.23b (3 Nov reply, unconfirmed category) not used",
+    "Analogy dropped: no comparison mapped exactly onto verified facts",
+    "No elevated word used; no em dashes; no community framing"
+  ],
+  "pa_score": 80
+}
