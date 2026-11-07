@@ -29,7 +29,7 @@ The US statistics agency puts Malaysia's crude and lease-condensate output at 51
 **Estimated (analyst attribution).** EIA, Columbia's Center on Global Energy Policy, Argus, Reuters'
 trade sources and Kpler attribute most of the excess to Iranian crude (and some Venezuelan) moved by
 ship-to-ship (STS) transfer in an anchorage about 70 km off Johor, the Eastern Outer Port Limits (EOPL),
-and relabelled as Malaysian [S3, S17, S18, S16]. Kpler estimated 57 Mt of Iranian-origin or suspected
+and relabelled as Malaysian [S3, S17, S19, S16]. Kpler estimated 57 Mt of Iranian-origin or suspected
 Iranian-origin crude reached China in January–October 2025, more than 51 Mt of it via STS [S16a]. GAC
 has recorded zero imports from Iran since 2022 [S17].
 
@@ -41,7 +41,7 @@ Iranian-origin" [S7b]; and FinCEN told US banks in May 2026 that Iranian oil is 
 as 'Malaysian blend'" and to apply heightened due diligence to any transaction that references it
 [S12]. At least ten Malaysia-addressed firms and individuals sit on the OFAC SDN list for Iranian oil
 shipping or port services, plus one Malaysia-flagged crude tanker [S6, S7]. No Malaysian court has made
-a finding on Iranian-origin cargo; Malaysia's own cases are anchoring and permit offences [S25].
+a finding on Iranian-origin cargo; Malaysia's own cases are anchoring and permit offences [S24].
 
 **The 2026 natural experiment, honestly stated.** The US and Israel attacked Iran on 28 February 2026
 [S13]. CENTCOM began a blockade of Iranian ports on 13 April, paused it in June, and reimposed it on
@@ -53,22 +53,22 @@ Iranian oil afloat outside the blockade zone "fell to zero in mid-October" from 
 at the start of the war, "much of it floating off Malaysia and Singapore" [S16c]. The October GAC country
 table (due about 20 November) is the real test.
 
-**What complicates it.** The "Malaysian" label was already shrinking before the war because traders
-moved the paperwork to "Indonesian" after Malaysia's July 2025 enforcement pledge and bank scrutiny of
-Malaysia-origin documents [S16a, S17]. China's recorded imports from Indonesia went from about 0.1 Mt in
+**What complicates it.** The "Malaysian" label was already shrinking before the war. Traders and
+analysts quoted by Reuters, and CGEP ("perhaps"), say the paperwork moved to "Indonesian" after
+Malaysia's July 2025 enforcement pledge and bank scrutiny of Malaysia-origin documents [S16a, S17]. China's recorded imports from Indonesia went from about 0.1 Mt in
 all of 2024 to 27.96 Mt in January–September 2026 [S15b, S14e]. Counting both labels, January–September
 2026 fell only about 10% on a year earlier (derived); the September 2026 collapse (combined -52% y/y,
 derived) is the first month that clearly separates (WHAT WEAKENS THE THESIS).
 
 **The Malaysian angle local coverage has not connected.** Malaysian coverage treats STS as an MMEA
-enforcement story (detentions, bonds, anchoring permits) [S25] or relays foreign reports [S18b]. What it
+enforcement story (detentions, bonds, anchoring permits) [S24] or relays foreign reports [S18b]. What it
 has not connected: (1) the gap lives in China's statistics, not Malaysia's, so Malaysia's own trade
-data cannot show it; (2) a US Treasury bureau now treats the word "Malaysian" on an oil document as a
-red flag for banks [S12], and FinCEN found Singapore-based Iran-linked oil firms banking in Malaysia
+data cannot show it; (2) a US Treasury bureau now treats a "Malaysian blend" reference on an oil
+document as a red flag for banks [S12], and FinCEN found Singapore-based Iran-linked oil firms banking in Malaysia
 [S11]; (3) Malaysia only acquired a written-permission regime for STS in its EEZ on 29 June 2026 [S5];
 (4) Malaysia's stated position is that it complies with UN sanctions, not unilateral ones, and it has
-condemned the US-Israeli strikes [S24]. Anger-at-process target: a country's name used as a laundering
-label, and an enforcement toolkit that arrived after the volume peaked. Not at Iran, China, the US, or
+condemned the US-Israeli strikes [S23]. Anger-at-process target: a country's name used as a disguise
+on other people's cargo documents, and an enforcement toolkit that arrived after the volume peaked. Not at Iran, China, the US, or
 any community.
 
 ## PERIOD
@@ -112,7 +112,7 @@ any community.
 
 | Date | Event | Source |
 |---|---|---|
-| 8–9 May 2024 | US Treasury official: "The capacity of Iran to move its oil has relied on... these types of service providers that are based in Malaysia." Under Secretary Brian Nelson (via Malaysiakini): shipments "loaded onto vessels of questionable legitimacy that may also pose major environmental and safety risks." | [S24c] |
+| 8–9 May 2024 | US Treasury official: "The capacity of Iran to move its oil has relied on... these types of service providers that are based in Malaysia." Under Secretary Brian Nelson (via Malaysiakini): shipments "loaded onto vessels of questionable legitimacy that may also pose major environmental and safety risks." | [S23c] |
 | 18 Jul 2024 | Treasury designates al-Jamal (Houthi-financing) network members incl. Malaysian and Singaporean national Mohammad Roslan Bin Ahmad, who "has facilitated the Sa'id al-Jamal network's shipments to Malaysia." | [S7a] |
 | 15 Aug 2024 | Treasury: "Malaysia-based Transmarine Navigation (M) SDN. BHD. ... provided forged documents for the U.S.-sanctioned DAWN II (IMO: 9185530), falsely showing the commodities on board were of Malaysian rather than Iranian-origin." SDN addresses: Ulu Tiram and Pelabuhan Tanjung Pelepas, Johor. | [S7b], [S6] |
 | 11 Oct 2024 | OFAC designates Kuala Lumpur-based Delnaz Ship Management Sdn Bhd (linked to NIOC) and Shah Alam-based Alya Marine Sdn Bhd; identifies Malaysia-flagged crude tanker SHANAYE QUEEN (IMO 9242118) as blocked property. | [S6] |
@@ -123,7 +123,7 @@ any community.
 | Oct 2025 | FinCEN trend analysis (2024 bank data): Singapore-based oil companies "used accounts at financial institutions in Singapore and Malaysia" (p. 4); one Iran-linked firm "banking in Malaysia sent approximately $60 million to four shipping companies" (p. 19). | [S11] |
 | 20 Nov 2025 | Treasury: Sepehr Energy Jahan labelled Iranian crude "as Malaysian heavy crude, a common tactic of the Iranian armed forces and Iranian oil smugglers writ large." Same day, State designates Singapore-based Strasselink and its operations manager (SDN address in Iskandar Puteri, Johor). | [S9], [S6] |
 | 11 May 2026 | FinCEN Alert FIN-2026-Alert002: Iranian oil "relabeled with forged documents as the product of another jurisdiction, most commonly as 'Malaysian blend'" (p. 3); "Financial institutions may consider requiring heightened due diligence on any transactions referencing 'Malaysian blend' oil" (p. 9). | [S12] |
-| 13 May 2026 | UANI (US advocacy group) counts 42 STS transfers of Iranian oil in the EOPL since 28 Feb; MMEA DG rejects its characterisation. | [S23] |
+| 13 May 2026 | UANI (US advocacy group) counts 42 STS transfers of Iranian oil in the EOPL since 28 Feb; MMEA DG rejects its characterisation. | [S22] |
 | 21 Aug 2026 | Kpler's Muyu Xu: "40mn barrels of Iranian oil on ships in Malaysian waters east of Singapore, though most of that has been promised to buyers." | [S16b] |
 | 22–23 Oct 2026 | Kpler: Iranian oil afloat outside the blockade zone "fell to zero in mid-October"; Iran "has not loaded a crude or condensate cargo since 25 August." Iran International: September "Malaysian" imports 276,000 b/d. | [S16c], [S21] |
 
@@ -131,25 +131,25 @@ any community.
 
 | Date | Event | Source |
 |---|---|---|
-| 8–9 May 2024 | Government spokesperson Fahmi Fadzil: "we comply with UN sanctions. But when it comes to unilaterally applied sanctions, then I think we have to assess this situation." Home Minister Saifuddin Nasution: Malaysia would comply with UN sanctions but "would not recognise unilaterally applied sanctions" (reported speech). | [S24c] |
-| 19 Jul 2024 | Ceres I (later SDN-listed) and Hafnia Nile collide and burn ~55 km NE of Pedra Branca; Marine Department DG: "no oil spill detected ... only an oil sheen." | [S25e], [S6] |
-| 11 Jul 2025 | Foreign Minister Mohamad Hasan: "This ship-to-ship issue has become a thorn in our side ... If we catch them, we will detain the vessel." | [S24a] |
-| 31 Jul 2025 | Marine Department rules: AIS on at all times; approved anchoring plans; Tompok Utara/EOPL anchorage closed (via P&I and SSA notices). | [S25f], [S19] |
+| 8–9 May 2024 | Government spokesperson Fahmi Fadzil: "we comply with UN sanctions. But when it comes to unilaterally applied sanctions, then I think we have to assess this situation." Home Minister Saifuddin Nasution: Malaysia would comply with UN sanctions but "would not recognise unilaterally applied sanctions" (reported speech). | [S23c] |
+| 19 Jul 2024 | Ceres I (later SDN-listed) and Hafnia Nile collide and burn ~55 km NE of Pedra Branca; Marine Department DG: "no oil spill detected ... only an oil sheen." | [S24e], [S6] |
+| 11 Jul 2025 | Foreign Minister Mohamad Hasan: "This ship-to-ship issue has become a thorn in our side ... If we catch them, we will detain the vessel." | [S23a] |
+| 31 Jul 2025 | Marine Department rules: AIS on at all times; approved anchoring plans; Tompok Utara/EOPL anchorage closed (via P&I and SSA notices). | [S24f], [S19] |
 | 19 Aug 2025 | Argus (Kpler data): of 84 vessels at the EOPL with AIS on, 52 were under sanctions. | [S19] |
-| 29–30 Jan 2026 | MMEA Penang detains tankers Nora and Rcelebra 24 nm off Muka Head; crude valued at RM512m. Released within days on a RM300,000 bond; case "awaiting further instructions from the Deputy Public Prosecutor." Nora's IMO 9237539 matches SDN-listed LONGBOW LAKE (linked to NIOC). | [S25a], [S25b], [S6] |
-| Mar 2026 | MMEA detains two tankers near Pulau Jarak for unauthorised STS bunkering (~750 t marine fuel). | [S25g] |
-| 13 May 2026 | MMEA DG Mohamad Rosli Abdullah: transfer sites are chosen "to exploit jurisdictional gaps and limit direct enforcement action by local authorities"; enforcement has "never compromised nor provided any special treatment or privileges to any country." | [S23] |
+| 29–30 Jan 2026 | MMEA Penang detains tankers Nora and Rcelebra 24 nm off Muka Head; crude valued at RM512m. Released within days on a RM300,000 bond; case "awaiting further instructions from the Deputy Public Prosecutor." Nora's IMO 9237539 matches SDN-listed LONGBOW LAKE (linked to NIOC). | [S24a], [S24b], [S6] |
+| Mar 2026 | MMEA detains two tankers near Pulau Jarak for unauthorised STS bunkering (~750 t marine fuel). | [S24g] |
+| 13 May 2026 | MMEA DG Mohamad Rosli Abdullah: transfer sites are chosen "to exploit jurisdictional gaps and limit direct enforcement action by local authorities"; enforcement has "never compromised nor provided any special treatment or privileges to any country." | [S22] |
 | 10 / 26 / 29 Jun 2026 | Exclusive Economic Zone Regulations 2026 made (10 Jun), gazetted as P.U. (A) 233 (26 Jun), in force 29 Jun: "No cargo transfer shall be allowed in the exclusive economic zone or on the continental shelf unless a permission in writing is obtained from the Government" (reg. 7(1)); 48-hour application (reg. 7(3)); bunkering prohibited (reg. 8); release bond up to RM1m (reg. 15). | [S5] |
 | 30 Jul 2026 | Al Jazeera: Malaysia's foreign ministry "did not respond"; up to 200 ships anchored on a given day, "half of them likely having ties to Iran" (Charlie Brown, YCAPS/UANI). | [S20a] |
-| 1–2 Sep 2026 | MMEA detains Malaysian tug and dredger off Tanjung Buai, Kota Tinggi; seizure valued at RM260m; investigated under MSO 1952 s. 491B(1)(k) and (l) and the Customs Act 1967. | [S25d] |
-| 11 Sep 2026 | Marine Sensitive Area Notice 01/2026 near eastern approaches of the Singapore Strait (anchoring, speed, cargo-transfer and bunkering limits). | [S25i]; GAP 5 |
+| 1–2 Sep 2026 | MMEA detains Malaysian tug and dredger off Tanjung Buai, Kota Tinggi; seizure valued at RM260m; investigated under MSO 1952 s. 491B(1)(k) and (l) and the Customs Act 1967. | [S24d] |
+| 11 Sep 2026 | Marine Sensitive Area Notice 01/2026 near eastern approaches of the Singapore Strait (anchoring, speed, cargo-transfer and bunkering limits). | [S24i]; GAP 5 |
 
 **War and blockade track**
 
 | Date | Event | Source |
 |---|---|---|
-| 28 Feb 2026 | US and Israel strike Iran ("wide-ranging strikes that began on Saturday (Feb 28)"). | [S13b], [S23] |
-| 2 Mar 2026 | Anwar tables Dewan Rakyat motion: Malaysia "strongly condemning the attacks by the Israeli Zionist regime and the US"; calls for "an immediate and unconditional ceasefire." | [S24b] |
+| 28 Feb 2026 | US and Israel strike Iran ("wide-ranging strikes that began on Saturday (Feb 28)"). | [S13b], [S22] |
+| 2 Mar 2026 | Anwar tables Dewan Rakyat motion: Malaysia "strongly condemning the attacks by the Israeli Zionist regime and the US"; calls for "an immediate and unconditional ceasefire." | [S23b] |
 | 27 Mar 2026 | Anwar: Iran granted Malaysian vessels "early clearance" through Hormuz; Malaysia imports nearly 70% of its crude from the Gulf (Al Jazeera). | [S20b] |
 | 12–13 Apr 2026 | CENTCOM: blockade of "all maritime traffic entering and exiting Iranian ports on April 13 at 10 a.m. ET, in accordance with the President's proclamation." | [S13a] |
 | 18 Jun 2026 | Blockade paused (Al Jazeera); Kpler refers to a "June MoU". | [S20a], [S16c] |
@@ -161,10 +161,10 @@ any community.
 
 | Date | Event | Source |
 |---|---|---|
-| 5 Jun 2026 | Maritime Network Sdn Bhd CEO R. Jeyenderan reports to MACC alleged mismatches between bills of lading and physical movement of two cargoes, 76,954.325 t of "Atlanta Crude", RM220,253,176.38, at Dialog Terminals Langsat, Tanjung Langsat, Johor, declared under Customs form K8 (temporary import for transhipment, reg. 17, Customs Regulations 2019). | [S26c], [S26a] |
-| 16 Sep 2026 | Jeyenderan says MACC informed him checks "found no basis for an offence under the MACC Act 2009 and that no revenue leakage had been identified to date"; Customs questions remain separate. | [S26c] |
-| 2 Oct 2026 | Jeyenderan: "four emails ... and an SMS in September stating that the case was under 'MACC Action' ... still no final decision." | [S26b] |
-| 3 Nov 2026 | After Customs DG Amran Ahmad (via Harian Metro) says some importers manipulated documents and under-declared goods, Jeyenderan asks MACC to revisit. His firm was only "the vessel or shipping agent". | [S26a] |
+| 5 Jun 2026 | Maritime Network Sdn Bhd CEO R. Jeyenderan reports to MACC alleged mismatches between bills of lading and physical movement of two cargoes, 76,954.325 t of "Atlanta Crude", RM220,253,176.38, at Dialog Terminals Langsat, Tanjung Langsat, Johor, declared under Customs form K8 (temporary import for transhipment, reg. 17, Customs Regulations 2019). | [S25c], [S25a] |
+| 16 Sep 2026 | Jeyenderan says MACC informed him checks "found no basis for an offence under the MACC Act 2009 and that no revenue leakage had been identified to date"; Customs questions remain separate. | [S25c] |
+| 2 Oct 2026 | Jeyenderan: "four emails ... and an SMS in September stating that the case was under 'MACC Action' ... still no final decision." | [S25b] |
+| 3 Nov 2026 | After Customs DG Amran Ahmad (via Harian Metro) says some importers manipulated documents and under-declared goods, Jeyenderan asks MACC to revisit. His firm was only "the vessel or shipping agent". | [S25a] |
 
 ## ACTORS
 
@@ -207,16 +207,16 @@ any community.
   ringgit"; reg. 16 custody costs a civil debt [S5]. Primary text opened.
 - **Merchant Shipping Ordinance 1952, s. 491B(1)(k)** (notify/approval for STS in Malaysian waters) and
   **(l)** (anchoring outside designated areas, read with Malaysia Shipping Notice 05/2014), cited by MMEA
-  and law firms [S25d, S25g]. **Statutory text and penalty not opened (GAP 4)**; reported penalties
+  and law firms [S24d, S24g]. **Statutory text and penalty not opened (GAP 4)**; reported penalties
   conflict (CONTRADICTION 7).
 - **Customs Act 1967; Customs Regulations 2019, reg. 17 (K8 transhipment declaration)** as described by
-  the complainant [S26c]. Not opened.
+  the complainant [S25c]. Not opened.
 - **UNCLOS Part V** (EEZ: coastal-state rights over resources and marine environment, not general
   sanctions enforcement). Use only as framing; Al Jazeera and AP state the jurisdictional limit [S20a,
-  S23].
+  S22].
 - **US law (extraterritorial, not binding on Malaysia)**: E.O. 13846 (Iranian petroleum; secondary
   sanctions), E.O. 13902 (Iranian economy sectors), E.O. 13224 (terrorism; al-Jamal network) [S6, S7].
-  Malaysia's position: it complies with UN sanctions, not unilateral ones [S24c].
+  Malaysia's position: it complies with UN sanctions, not unilateral ones [S23c].
 
 ## KEY STATISTICS (each traced to a numbered source)
 
@@ -235,7 +235,7 @@ comparison is tonnes against tonnes from the same UN database [S4].
 | Malaysia crude incl. lease condensate output | 502.1 / 499.2 / 478.3 / 512.7 kb/d (2022–2025) | Recorded | [S1] EIA IES, product "Crude oil including lease condensate", activity "Production" |
 | Malaysia total liquids output | 599.4 / 595.3 / 571.7 / 604.2 kb/d (2022–2025) | Recorded | [S1] "Total petroleum and other liquids" |
 | Ratio, China-recorded "Malaysian" crude to Malaysian output | ~2.5x (2025); ~3x (2024) | Derived | [S1], [S4], [S14b], [S17] |
-| China's share of Malaysia's crude and condensate exports, 2023 | 5% | Recorded (Vortexa) | [S2] Figure 8, p. 15 |
+| China's share of Malaysia's crude and condensate exports, 2023 | 5% (DOSM customs: ~1.9%, see CONTRADICTION 3) | Estimated (Vortexa cargo tracking, via EIA) | [S2] Figure 8, p. 15; [S4] |
 | Peak "Malaysian" month | 8.75 Mt (Mar 2025); "In some previous months, the figure had reached 2 million barrels per day" | Recorded | [S14e]; [S21a] |
 | "Malaysian" Sep 2026 | 1.16 Mt (~280,000 b/d), -70% y/y, -56% m/m | Recorded | [S15a] |
 | "Malaysian" Jan–Sep 2026 | 25.41 Mt, -50% | Recorded | [S15b] |
@@ -248,20 +248,20 @@ comparison is tonnes against tonnes from the same UN database [S4].
 | Iranian oil afloat outside the region | ~136 Mbbl at war start → zero mid-Oct 2026 | Estimated | [S16c] |
 | Iranian oil on ships in Malaysian waters east of Singapore | ~40m barrels (Aug 2026) | Estimated | [S16b] |
 | Sanctioned share of EOPL anchorage, 19 Aug 2025 | 52 of 84 AIS-visible vessels | Estimated (Kpler via Argus) | [S19] |
-| STS transfers of Iranian oil in EOPL, 28 Feb–13 May 2026 | 42 | Advocacy count (UANI) | [S23] |
+| STS transfers of Iranian oil in EOPL, 28 Feb–13 May 2026 | 42 | Advocacy count (UANI) | [S22] |
 | SDN parties with a Malaysian address | 45 (all programmes); at least 10 tied to Iranian oil shipping or port services; 1 Malaysia-flagged tanker | Established (designations) | [S6] SDN.CSV/ADD.CSV, downloaded 7 Nov 2026 |
-| Penang bond | RM300,000 (US$76,400) | Reported (MMEA to Reuters) | [S25a] |
-| Penang crude value | RM512m | Reported (MMEA) | [S25a], [S25c] |
+| Penang bond | RM300,000 (US$76,400) | Reported (MMEA to Reuters) | [S24a] |
+| Penang crude value | RM512m | Reported (MMEA) | [S24a], [S24c] |
 | EEZ release bond ceiling | RM1m | Established (gazette) | [S5] reg. 15 |
-| K8 cargo | 76,954.325 t; RM220,253,176.38 | Claimed by complainant | [S26c] |
+| K8 cargo | 76,954.325 t; RM220,253,176.38 | Claimed by complainant | [S25c] |
 | Revenue to Malaysia from STS services | **No credible estimate found** | Gap | [S19] says only "Vessels engaging in the trade pay fees to entities in Malaysia" |
 
 ## 12-DIMENSION RISK ASSESSMENT
 
 | Dimension | Level | Justification |
 |---|---|---|
-| Sentiment | MEDIUM-HIGH | War, oil prices, Gaza and Iran all run hot in Malaysian discourse. Ride anger at a laundered label and a late toolkit, not at any state or people. |
-| Political | **MEDIUM-HIGH** | Malaysia condemned the US-Israeli strikes and does not recognise unilateral sanctions [S24]; a card that reads as "Malaysia must enforce US sanctions" takes Washington's side. A card that dismisses US findings takes Tehran's. Present Malaysia's position in its own words and keep the frame on Malaysia's own interests (its name, its banks, its coastline). |
+| Sentiment | MEDIUM-HIGH | War, oil prices, Gaza and Iran all run hot in Malaysian discourse. Ride anger at a borrowed national label and a late toolkit, not at any state or people. |
+| Political | **MEDIUM-HIGH** | Malaysia condemned the US-Israeli strikes and does not recognise unilateral sanctions [S23]; a card that reads as "Malaysia must enforce US sanctions" takes Washington's side. A card that dismisses US findings takes Tehran's. Present Malaysia's position in its own words and keep the frame on Malaysia's own interests (its name, its banks, its coastline). |
 | Ethnic | LOW | No community dimension. |
 | Religious | LOW | Never frame by faith. Do not reference solidarity framings of Iran or Gaza. |
 | Royalty | LOW | Regulations are made by the YDPA by command on Cabinet advice; irrelevant to the story. |
@@ -271,7 +271,7 @@ comparison is tonnes against tonnes from the same UN database [S4].
 | Confidence | HIGH on recorded figures (GAC via Comtrade and Reuters; EIA; DOSM via Comtrade) and on US designations and FinCEN texts (opened). MEDIUM on attribution share (analyst estimates). LOW on revenue, spill harm, and the K8 cargo's relevance. |
 | Sources | MEDIUM | Malaysian government statements, Malaysian independent outlets (Malay Mail, NST, The Star, FMT, The Edge, The Vibes), US government (heavy), wires (Reuters, AP), Middle East (Al Jazeera, Gulf News, Gulf Times), Iranian opposition (Iran International), Russian state (TASS), analysts (Kpler, Argus, CGEP). Weak: Chinese official voice (only MOFA/MOFCOM positions via Al Jazeera), Iranian government voice (none), Indonesian official (one AP quote). Run Stage 3's `source_diversity_estimate`; escalate to Stage 5 if < 0.4. |
 | Geographic | MEDIUM | Johor east coast (EOPL/Tompok Utara, Tanjung Pelepas, Tanjung Langsat, Kota Tinggi), Penang, Melaka (Linggi), Labuan (IMS LTD, Noor Energy), Klang Valley firms. |
-| Economic | MEDIUM | Exposure is entity-level (banks, agents, ports, registry), not national [S24d]. No revenue estimate; do not imply Malaysia profited at scale. |
+| Economic | MEDIUM | Exposure is entity-level (banks, agents, ports, registry), not national [S23d]. No revenue estimate; do not imply Malaysia profited at scale. |
 | Gender | LOW | None. |
 
 **Stage 5 escalation: not triggered by risk levels** (Political MEDIUM-HIGH, Religion/Ethnic/Royalty
@@ -294,9 +294,9 @@ LOW). Editor flagged source diversity as the risk; re-check after Stage 3.
    which shows the paperwork moves faster than the patrol boats.)
 
 Hook candidate (verified numbers only): *In 2025 China's customs logged US$31 billion of crude "from
-Malaysia". Malaysia's own customs logged US$178 million going to China. The gap is now closing, and not
-because of anything Putrajaya did.* (Check the last clause against the July 2025 rules before use; see
-WHAT WEAKENS THE THESIS item 1.)
+Malaysia". Malaysia's own customs logged US$178 million going to China. In September 2026, with Iran
+under blockade, the "Malaysian" line fell 70%.* (Do not add "because of the blockade" as sole cause; see
+WHAT WEAKENS THE THESIS items 1–4.)
 
 Reframe candidate (value restructuring): *The barrels were never Malaysia's. The name on the paperwork
 was. In Washington's banking rulebook, "Malaysian blend" is now a red flag.*
@@ -317,7 +317,7 @@ produced.* (Elevated word: *provenance*.)
    EIA"; avoid Comtrade for 2023. 2024 differs trivially (70.38 vs 70.16 Mt).
 2. **Malaysia's production.** EIA crude incl. lease condensate: 478,300 b/d (2024), 512,700 b/d (2025)
    [S1]; EIA total liquids: 571,700 / 604,200 b/d [S1]; EIA country brief: 597,000 b/d total liquids
-   2023 (later revised to 595,300) [S2]; CNBC citing EIA: "around 0.6 million" [S18a]; CGEP: "535,000
+   2023 (the IES series now shows 595,300) [S2]; CNBC citing EIA: "around 0.6 million" [S18a]; CGEP: "535,000
    bpd in 2024" [S17]; Argus: "about 490,000 b/d" H1 2025 [S19]. Use EIA crude incl. lease condensate,
    the closest match to HS 2709 "crude", and name the definition on the card.
 3. **Malaysia's exports to China, 2023.** Vortexa via EIA: 5% of crude and condensate exports [S2];
@@ -332,13 +332,13 @@ produced.* (Elevated word: *provenance*.)
    Act" [S20a]. The gazette shows new Regulations under s. 41 of the 1984 Act, not an amendment to the
    Act [S5]. Use the gazette.
 7. **Penalty for unauthorised STS.** gCaptain: RM100,000 for anchoring, RM200,000 per vessel for STS
-   [S25c]; Maritime Executive: the US$76,000 bond is "the value of the maximum penalty" [S25b]; Reuters:
-   bond of RM300,000 [S25a]. Statute not opened. Cards may state the bond (RM300,000, per MMEA to
+   [S24c]; Maritime Executive: the US$76,000 bond is "the value of the maximum penalty" [S24b]; Reuters:
+   bond of RM300,000 [S24a]. Statute not opened. Cards may state the bond (RM300,000, per MMEA to
    Reuters), not a statutory maximum.
 8. **Name and status of the anchorage.** Al Jazeera, AP, Argus: Malaysia's EOPL / Tompok Utara, about
-   70 km off Johor, inside Malaysia's EEZ [S20a, S23, S19]; Treasury: "Singapore Eastern Outer Port
+   70 km off Johor, inside Malaysia's EEZ [S20a, S22, S19]; Treasury: "Singapore Eastern Outer Port
    Limits" [S8, S9]; AP photo caption: "in international waters" while the text says it is "widely
-   regarded as part of Malaysia's broader economic zone" and borders Indonesia's Riau Archipelago [S23].
+   regarded as part of Malaysia's broader economic zone" and borders Indonesia's Riau Archipelago [S22].
    Write "an anchorage about 70 km off Johor, inside Malaysia's exclusive economic zone".
 9. **Iranian deliveries to China in 2025.** 1.38m b/d (Kpler via CGEP) [S17]; ~1.4m b/d (Kpler via
    Reuters; Downs via Al Jazeera) [S16b, S20a]; "around 1.5 million" (tanker trackers via Iran
@@ -350,8 +350,8 @@ produced.* (Elevated word: *provenance*.)
 12. **March 2025 peak.** 8.75 Mt (Reuters, Mar 2026 table) [S14e] vs "8.5 million tonnes" (Reuters, Nov
     2025) [S16a]. Probably rounding or revision; use "about 8.5–8.8 Mt" or avoid.
 13. **K8 cargo status at MACC.** 16 Sep: MACC told the complainant there was "no basis for an offence"
-    and no revenue leakage identified [S26c]; 2 Oct: "still no final decision" [S26b]; 3 Nov: asks MACC
-    to revisit [S26a]. All from the complainant; no MACC statement found.
+    and no revenue leakage identified [S25c]; 2 Oct: "still no final decision" [S25b]; 3 Nov: asks MACC
+    to revisit [S25a]. All from the complainant; no MACC statement found.
 14. **Chinese purchases of Iranian crude in wartime.** Bessent: down "about 40 percent since the war
     began" (via Al Jazeera, 30 Jul) [S20a]; Kpler via Iran International: Jun–Sep average "less than
     half" of Jan–May [S21a]. Different windows; not in conflict.
@@ -360,17 +360,17 @@ produced.* (Elevated word: *provenance*.)
 
 ## SOURCE SPECTRUM CHECK
 
-- **Malaysian government**: P.U. (A) 233/2026 [S5]; Mohamad Hasan via Bernama [S24a]; Anwar via Bernama
-  and The Star [S24b, S13b]; Fahmi and Saifuddin via Reuters [S24c]; MMEA and Marine Department via AP,
-  Reuters, The Star, Malay Mail [S23, S25].
-- **Malaysian independent media**: Malay Mail [S24a, S25e, S26a, S26b], NST [S14g, S24d], The Star
-  [S25d, S13b], The Edge [S18b], The Vibes [S26c]. Malaysian academics in NST [S24d], including a
+- **Malaysian government**: P.U. (A) 233/2026 [S5]; Mohamad Hasan via Bernama [S23a]; Anwar via Bernama
+  and The Star [S23b, S13b]; Fahmi and Saifuddin via Reuters [S23c]; MMEA and Marine Department via AP,
+  Reuters, The Star, Malay Mail [S22, S24].
+- **Malaysian independent media**: Malay Mail [S23a, S24e, S25a, S25b], NST [S14g, S23d], The Star
+  [S24d, S13b], The Edge [S18b], The Vibes [S25c]. Malaysian academics in NST [S23d], including a
   sovereignty argument (Azmi Hassan).
 - **US government**: EIA [S1–S3]; OFAC, Treasury, State [S6–S10]; FinCEN [S11, S12]; CENTCOM [S13a].
   Heaviest cluster; every attribution card must name the agency.
 - **Multilateral statistics**: UN Comtrade (Chinese and Malaysian national submissions) [S4].
 - **International wires**: Reuters (via BOE Report, The Standard, Business Recorder, NST, Baird Maritime,
-  Gulf Times, Jakarta Post, gCaptain) [S14, S16, S24c, S25a]; AP [S23].
+  Gulf Times, Jakarta Post, gCaptain) [S14, S16, S23c, S24a]; AP [S22].
 - **Middle East / Gulf outlets**: Al Jazeera (Qatar) [S20]; Gulf News (UAE) [S13c]; Gulf Times [S16b].
 - **Iranian opposition**: Iran International [S21]. Every number corroborated: the 1.16 Mt September
   figure by GAC via Daily Beirut and the -50% Jan–Sep figure by TASS [S15].
@@ -380,8 +380,8 @@ produced.* (Elevated word: *provenance*.)
 - **Iranian government voice**: none on the relabelling. Weak.
 - **Industry / analysts**: Kpler [S16c], Argus [S19], CGEP [S17], Lloyd's List Intelligence via CNBC
   [S18a], Energy Aspects and Rystad via Reuters [S16a], law firms Skrine and Adnan Sundra & Low, P&I club
-  Gard [S25g–i].
-- **Advocacy**: UANI via AP and Al Jazeera [S23, S20a]. Partisan; attribute every count.
+  Gard [S24g–i].
+- **Advocacy**: UANI via AP and Al Jazeera [S22, S20a]. Partisan; attribute every count.
 
 Single-spectrum risk: moderate. The recorded spine is neutral (two national customs agencies, one US
 statistics agency). The attribution leans on US government and Western analysts; the brief balances it
@@ -393,15 +393,15 @@ with Malaysia's stated position and Malaysian economists, but lacks Beijing's an
    and fell year on year in October 2025 (-36%), December 2025 (-37.9%) and March 2026 (-41%) [S14c,
    S14d, S14e]. Reuters' traders and CGEP attribute part of this to Malaysia's July 2025 enforcement
    announcement and to banks rejecting Malaysia-origin documents [S16a, S17]. So Malaysian policy and
-   bank compliance did move the label, which cuts against "nothing Putrajaya did".
+   bank compliance plausibly moved the label; no card may imply Malaysia did nothing.
 2. **The label moved, the trade did not (until September).** "Indonesian" crude went from ~0.1 Mt in all
    of 2024 to 27.96 Mt in Jan–Sep 2026; Indonesia's own customs recorded ~25,000 t to China in Jan–Sep
    2025 [S15b, S16a]. Combining both labels, Jan–Sep 2026 fell only ~10% (derived). Energy Aspects:
    "Most of the STS transfers of Iranian crude destined for China still take place off the coast of
    Malaysia" [S16a]. A "Malaysian"-only series overstates the blockade effect for most of 2026.
 3. **China cut all imports.** China drew down stocks after the price shock; June 2026 total imports were
-   sharply lower and EIA documents a 2Q26 fall [S14f, S3 (EIA 31 Jul 2026, not separately numbered)].
-   Some of the "Malaysian" decline is China buying less of everything. Iran International itself warns
+   sharply lower and EIA documents a 2Q26 fall; Iran International says China at one point cut crude
+   imports by around 30% and drew on reserves [S14f, S3c, S21a]. Some of the "Malaysian" decline is China buying less of everything. Iran International itself warns
    the customs series is "not a one-for-one measure of Iranian exports" [S21a].
 4. **August rose, not fell.** "Malaysian" imports rose 74% m/m to 2.6 Mt in August 2026, during the
    reimposed blockade, as stocks already parked off Malaysia and Singapore were discharged [S14g, S16c].
@@ -412,22 +412,22 @@ with Malaysia's stated position and Malaysian economists, but lacks Beijing's an
    Iranian"; write "analysts attribute most of it to Iranian crude".
 6. **"Malaysian waters" is contested.** The main anchorage is outside the territorial sea but inside the
    EEZ; Treasury calls it the "Singapore EOPL"; AP notes it borders Indonesia's Riau Archipelago [S8,
-   S23]. Coastal-state powers in the EEZ concern resources and pollution, not sanctions; MMEA says sites
-   are chosen to exploit "jurisdictional gaps" [S23]. Argus also names floating storage at Linggi (off
+   S22]. Coastal-state powers in the EEZ concern resources and pollution, not sanctions; MMEA says sites
+   are chosen to exploit "jurisdictional gaps" [S22]. Argus also names floating storage at Linggi (off
    Melaka) and Tanjung Pelepas [S19], which are closer inshore. Be precise about which.
 7. **Malaysia did act, and has a principled position.** July 2025 rules and anchorage closure; Penang
    seizure (Jan 2026); EEZ Regulations (Jun 2026); Tanjung Buai seizure (Sep 2026); MSA notice (Sep
-   2026) [S25, S5]. Malaysia does not recognise unilateral sanctions and condemned the strikes [S24]. A
+   2026) [S24, S5]. Malaysia does not recognise unilateral sanctions and condemned the strikes [S23]. A
    card must not imply Malaysia is legally obliged to enforce US sanctions.
 8. **Revenue is unquantified.** The only statement is Argus' "Vessels engaging in the trade pay fees to
    entities in Malaysia" [S19]. No estimate exists. Do not imply Malaysia profited at scale.
 9. **Spill harm is a risk, not a record.** The documented incident (Ceres I / Hafnia Nile, July 2024)
    produced fire, one death on Ceres I (Reuters-reported, not opened) and "only an oil sheen" per the
-   Marine Department [S25e]. The April 2025 Tanjung Langsat spill (DOE, 1.6 m³) was a terminal pipeline
+   Marine Department [S24e]. The April 2025 Tanjung Langsat spill (DOE, 1.6 m³) was a terminal pipeline
    leak, not STS (search summary only, not opened). No DOE-documented spill from Iranian STS was found.
 10. **The domestic hook does not connect.** No source links the RM220m "Atlanta Crude" K8 cargo to Iran,
     sanctions or STS. The complainant's issue is documentary traceability and blending at a Tanjung
-    Langsat terminal; by his own account MACC found no basis for an offence [S26]. Recommend: do not use
+    Langsat terminal; by his own account MACC found no basis for an offence [S25]. Recommend: do not use
     it as evidence. At most, a one-line illustration that Malaysian petroleum transhipment paperwork is
     itself contested, clearly separated from the Iran thesis, or drop it.
 11. **US findings are designations, not court rulings.** OFAC and State designations are administrative
@@ -475,9 +475,10 @@ quotes an official statement verbatim.
 6. **[P]** OFAC, Specially Designated Nationals list (SDN.CSV and ADD.CSV, downloaded 7 Nov 2026):
    entries 51049 DELNAZ SHIP MANAGEMENT SDN BHD ("Linked To: NATIONAL IRANIAN OIL COMPANY"), 51072 ALYA
    MARINE SENDIRIAN BERHAD, 51074 SHANAYE QUEEN (vessel, flag Malaysia), 52969 IMS LTD (Labuan), 50096
-   TRANSMARINE NAVIGATION M SDN. BHD., 52305/52309/52311/52316/52352 (Merkur network), 56387 BIN
+   TRANSMARINE NAVIGATION M SDN. BHD., 52305/52309/52311/52316/52352 (al-Jamal network designations of 19 Dec 2024), 56387 BIN
    FADZLON, Muhammad Danial (Johor address), 29790 LONGBOW LAKE (IMO 9237539, linked to NIOC), 51350 CERES
-   I, 15729 HUMANITY, 53819 PRO MISSION SDN BHD. https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.CSV ;
+   I, 15729 HUMANITY (name match only; the IMO of the vessel Al Jazeera tracked is not confirmed), 53819
+   PRO MISSION SDN BHD. https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.CSV ;
    and OFAC Recent Actions, "Iran-related Designations; Publication of Iran-related Determination", 11
    Oct 2024 ("SHANAYE QUEEN (9WNN6) Crude Oil Tanker Malaysia flag ... (Linked To: ALYA MARINE SENDIRIAN
    BERHAD)"). https://ofac.treasury.gov/recent-actions/20241011
@@ -582,9 +583,7 @@ quotes an official statement verbatim.
 22. **[S]** AP, "Malaysia says Iranian oil transfers near its waters exploit a maritime loophole", 13 May
     2026 (MMEA DG Mohamad Rosli Abdullah: "The selection of such locations is intended to exploit
     jurisdictional gaps"; UANI: 42 STS transfers since 28 Feb). https://www.news4jax.com/news/world/2026/05/13/malaysia-says-iranian-oil-transfers-near-its-waters-exploit-a-maritime-loophole/
-23. *(Numbering note: [S23] in the tables above refers to this AP report; it is listed as item 22. Stage 1
-    should renumber [S23] → [S22] and shift [S24]–[S26] down by one if a strict 1–25 sequence is needed.)*
-24. **[S→P]** Malaysian government positions: (a) Malay Mail (Bernama), "Malaysia to enforce new rule
+23. **[S→P]** Malaysian government positions: (a) Malay Mail (Bernama), "Malaysia to enforce new rule
     against rogue ship-to-ship oil transfers by end of July, says foreign minister", 12 Jul 2025 ("This
     ship-to-ship issue has become a thorn in our side"). https://www.malaymail.com/news/malaysia/2025/07/12/malaysia-to-enforce-new-rule-against-rogue-ship-to-ship-oil-transfers-by-end-of-july-says-foreign-minister/183668 ;
     (b) Bernama, "Middle East Conflict: Wisma Putra Closely Monitoring Safety Of Malaysians - PM Anwar",
@@ -597,7 +596,7 @@ quotes an official statement verbatim.
     (d) NST, "Tighter Iran curbs could raise risks for Malaysian firms", 25 Aug 2026 (Aimi Zulhazmi:
     "Malaysia as a country is unlikely to be sanctioned wholesale, but specific entities or individuals
     could be"; Azmi Hassan's sovereignty argument). https://www.nst.com.my/amp/business/corporate/2026/08/1518386/tighter-iran-curbs-could-raise-risks-malaysian-firms
-25. **[S]** Enforcement record and legal commentary: (a) Reuters via Baird Maritime, "Tankers linked to
+24. **[S]** Enforcement record and legal commentary: (a) Reuters via Baird Maritime, "Tankers linked to
     alleged $130m crude transfer released by Malaysia", 3 Feb 2026 ("released on a bond of MYR300,000
     ($76,400)"; "awaiting further instructions from the Deputy Public Prosecutor"; Nora = ex-LONGBOW LAKE).
     https://www.bairdmaritime.com/security/incidents/piracy/tankers-linked-to-alleged-130m-crude-transfer-released-by-malaysia ;
@@ -618,17 +617,19 @@ quotes an official statement verbatim.
     https://www.asl.com.my/malaysia-introduces-new-eez-regulations-what-the-shipping-industry-needs-to-know/ ;
     (i) Gard, "Malaysia introduces new regulated sea areas", 2026 ("The MSA took effect on 11 September
     2026 under the Marine Sensitive Area Notice 01/2026"). https://gard.no/en/insights/malaysia-introduces-new-regulated-sea-areas/
-26. **[S]** Domestic K8 cargo: (a) Malay Mail, "After Customs flags import irregularities, maritime
+25. **[S]** Domestic K8 cargo: (a) Malay Mail, "After Customs flags import irregularities, maritime
     expert asks MACC to revisit RM220m crude cargo report", 3 Nov 2026. https://www.malaymail.com/news/malaysia/2026/11/03/after-customs-flags-import-irregularities-maritime-expert-asks-macc-to-revisit-rm220m-crude-cargo-report/241857 ;
     (b) Malay Mail, "Treat RM220m international maritime trade issue with same urgency as political
     cases, maritime expert tells MACC", 2 Oct 2026. https://www.malaymail.com/news/malaysia/2026/10/02/treat-rm220m-international-maritime-trade-issue-with-same-urgency-as-political-cases-maritime-expert-tells-macc/237449 ;
     (c) The Vibes, "Maritime expert seeks clarification over status of RM220m K8 cargo", 16 Sep 2026.
     https://www.thevibes.com/articles/business/127333/maritime-expert-seeks-clarification-over-status-of-rm220m-k8-cargo
 
-**Counts.** Primary documents opened this session: [S1]–[S12] = **12 primary** (EIA x3, UN Comtrade,
-AGC gazette, OFAC SDN list and recent action, Treasury x5 releases, OFAC advisory, FinCEN x2), plus S→P
-items [S13a], [S24a–c]. Total numbered source entries: 25 (item 23 is a numbering note), several grouping
-multiple copies of the same wire. Meets the ≥8 primary floor.
+**Counts.** Primary source entries opened this session: [S1]–[S12] = **12 primary entries** (EIA x3,
+UN Comtrade, AGC gazette, OFAC SDN list and recent action, Treasury releases, OFAC advisory, FinCEN x2),
+covering 17 distinct primary documents (S3 holds three EIA pages; S6 the SDN list and one OFAC action
+page; S7 three Treasury releases),
+plus S→P items [S13a], [S23a–c]. Total numbered source entries: 25, several grouping multiple copies of the same
+wire or related documents (about 55 individual documents in all). Meets the ≥8 primary floor.
 
 ## VERIFICATION GAPS — must close before Stage 1
 
