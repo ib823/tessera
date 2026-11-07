@@ -792,12 +792,12 @@ wire or related documents (about 55 individual documents in all). Meets the ≥8
     Malaysian ministerial statement specifically on the FinCEN "Malaysian blend" alert. None found.
 13. **Commerzbank note** (22 Jul 2025, via FXStreet; HTTP 403): not opened; not used. **CNBC 27 Jun
     2025** [S18a]: the independent check could not reopen it; context only, off cards.
-16. **September 2025 base (3.87 Mt, -36.7% y/y)**: opened by the independent check (NST/Reuters, 20 Oct
-    2025), not by the researcher; re-open before any card uses the September 2025 comparison.
 14. **Lloyd's List** report that Transport Minister Anthony Loke rejected responsibility for STS beyond
     port limits (headline seen; paywalled; date unknown). Do not use until opened.
 15. **K8 cargo**: no MACC or Customs statement found; all facts come from the complainant. Recommended
     not to use on cards.
+16. **September 2025 base (3.87 Mt, -36.7% y/y)**: opened by the independent check (NST/Reuters, 20 Oct
+    2025), not by the researcher; re-open before any card uses the September 2025 comparison.
 
 ## OPTIONAL — ENGINE CONTEXT
 
@@ -1031,3 +1031,176 @@ June 2025, not May 2026; FinCEN's FTA says "potentially linked to Iran". Treasur
 **Checker's call: READY FOR STAGE 1 AFTER FIXES.** The recorded mirror gap, the EIA production series, the
 US documents and the EEZ gazette all check out against primary sources. The six blocking items are
 wording-level and fixable from documents already opened.
+
+## FIXES APPLIED (2026-11-07)
+
+Every change below was made in the brief above this verification section; the INDEPENDENT VERIFICATION
+section itself was not edited. "Editor" = coordinator decisions of 7 Nov 2026; "B" = verifier's blocking
+items; "NB" = non-blocking; "Row" = claim-table row; "MF" = misleading-framing risk.
+
+**Editor decisions**
+
+1. **FinCEN wording everywhere** (Editor 1; B1; Rows 35, 36, 49): ISSUE "Established" paragraph rewritten
+   with "In some instances" (June 2025) and "sometimes" (May 2026), "may consider requiring heightened due
+   diligence ... particularly if the transactions show other indications of oil smuggling", and "no single
+   red flag is determinative". Red flag dated to its first appearance, FinCEN Advisory FIN-2025-A002 of 6
+   June 2025 (opened by the researcher; pp. 4, 8, fn 46), with the 11 May 2026 alert described as a
+   repetition (its red flags "supplement" the 2025 advisory, p. 8). New CONTEXT row for 6 Jun 2025; 11 May
+   2026 row rewritten; SOURCES [S12] split into [S12a] (2025) and [S12b] (2026). "Rulebook" and "now"
+   removed from all candidate lines and from ISSUE "Malaysian angle" (2).
+2. **Reframe / view / hook and title** (Editor 2; B2, B6; Rows 47, 48, 52): title changed to "BRIEF:
+   China's customs recorded 206 times more crude from Malaysia in 2025 than Malaysia's own trade statistics
+   recorded sending to China. The label is the story." (206x = 64.74 / 0.314 Mt, UN Comtrade [S4]; "trade
+   statistics", not "customs", for the DOSM side, per Row 2). Reframe now opens "Most of those barrels...".
+   Hook rebuilt on the recorded-vs-recorded gap plus the EEZ permission rule, with no blockade claim and no
+   September figure. Note on the editor's "2025 EEZ/STS permission rule": the EEZ written-permission rule
+   is P.U. (A) 233/2026, in force 29 June 2026 [S5]; what began in July 2025 was Marine Department
+   enforcement of prior approval for STS and anchoring in Malaysian waters under MSO 1952 s. 491B
+   [S24f, S24g]. The hook uses the gazette date; RL 2 states both. Blockade moved to an ISSUE paragraph
+   headed "context, not hook" ("one clear month so far"; October figures due ~20 November) and to an RL
+   guardrail. The withdrawn reframe "The question is not whether Malaysia should police..." is removed.
+3. **Kpler and Penang scoping** (Editor 3; B3, B4; Rows 20, 70, 71): ISSUE, PERIOD, CONTEXT (22–23 Oct
+   row), KEY STATISTICS and RL guardrails now say "Kpler analysts estimate"; "outside the blockade zone";
+   88.8 Mbbl on 14 July to zero by mid-October; ~43 Mbbl stranded inside; analyst figure differs from
+   Kpler platform data; Vortexa ~6 Mbbl off Singapore on 9 Oct [S21b]. The 136 Mbbl war-start figure is
+   kept separate with a "do not chain" note. Penang: tankers "released along with their cargo" on a
+   RM300,000 bond, ships "remained under investigation", case awaits the Deputy Public Prosecutor; RL 3
+   and CONTRADICTION 7 forbid setting the bond against the RM512m cargo.
+4. **September 2026 figure** (Editor 4; Row 14; NB1): one attempt made on 7 Nov to open the Reuters
+   original or GAC table (search for the Reuters text; stats.customs.gov.cn returned HTTP 412; two
+   candidate reposts returned empty pages). Not closed. Figure removed from hook and headline, labelled
+   "secondary aggregators only" in ISSUE, CONTEXT and KEY STATISTICS, and logged as GAP 2 "close before
+   Phase 6".
+5. **S1 link** (Editor 5; primary-source audit): [S1] now cites the keyless EIA browser view
+   (eia.gov/international/data/country/MYS, HTTP 200 on 7 Nov) and an API URL with the public DEMO_KEY
+   (tested, returns data). Read alongside the audit's [S4] note, [S4] also now cites a keyless ComtradePlus
+   browser view (HTTP 200) in addition to the keyless preview API, and states the two non-national cells
+   (China 2023 UN-estimated weight; China 2025 world total without quantity).
+6. **Verification section untouched; this log appended** (Editor 6). Confirmed by diff that the section
+   is byte-identical to the checker's text.
+7. **Brief status** (Editor 7): set to "Phase 1 complete after independent verification and fixes.
+   Awaiting editor approval before Stage 1."
+
+**Blocking items**
+
+8. B1 FinCEN wording: see 1.
+9. B2 Reframe 1: see 2.
+10. B3 Kpler "zero": see 3.
+11. B4 Penang outcome: see 3.
+12. B5 FinCEN FTA (Row 37): ISSUE "Malaysian angle" (2) and CONTEXT Oct 2025 row now quote "a
+    Singapore-based oil company potentially linked to Iran and banking in Malaysia", from 2024 bank reports.
+13. B6 Causal headline: see 2. Verdict paragraph in WHAT WEAKENS THE THESIS rephrased to scope the Kpler
+    run-down and to say the hook rests on the recorded gap.
+
+**Non-blocking items**
+
+14. September figure: see 4.
+15. "Most of the excess" (Row 30): ISSUE "Estimated" paragraph and WT 5 now say "analysts say much of it
+    is Iranian crude, with some Venezuelan"; any "most" attributed to Kpler's figures and Kpler's remark to
+    Iran International.
+16. Hook framing of September (Row 47): September removed from the hook; where used in context it is "the
+    lowest monthly level", with June's -81% noted as the steeper fall (KS; RL guardrail).
+17. CONTRADICTION 1 marked resolved (UN-estimated 2023 cell; Row 5); CONTEXT row 1 and KS note it; old
+    GAP 3 marked closed.
+18. Indonesia 2024 contradiction (Row 44): new CONTRADICTION 16; ISSUE gives both figures with sources.
+19. Iran International "since 2020" (Row 32): new CONTRADICTION 17; ISSUE uses "since 2022" with Comtrade.
+20. CGEP "Malaysia's exports to China" (Row 58): CONTEXT 2025 row relabelled as China-recorded imports
+    from Malaysia, with Comtrade -7.7% and Malaysia's own 0.41 → 0.31 Mt shown for contrast.
+21. "Indonesia top 2 Mt a month" (Row 56): CONTEXT row now "first topped 2 Mt in July 2025".
+22. Argus revenue sentence (Row 29): full sentence quoted in KS and WT 8; "no estimate" retained.
+23. "No Malaysian court finding" (Row 38): now "We found no Malaysian court finding ...".
+24. Roslan (Row 60): "Indonesia-based" added in CONTEXT.
+25. "One-for-one" locator (Row 81): WT 3 re-cited to [S21b]; [S21b] source entry now also carries the
+    Vortexa 6 Mbbl quote.
+26. CONTRADICTION 7 (Skrine penalty): Skrine's "up to RM100,000" fine and up to two years' imprisonment
+    added to CONTRADICTION 7 and RELEVANT LAW, labelled as a law-firm summary; statute still unopened
+    (GAP 4). Confirmed in the researcher's own copy of the Skrine page.
+27. GAP 6 dates (Rows 63, 66): opened OFAC recent-actions pages of 24 Feb 2025 and 20 Nov 2025 myself;
+    added as [S6c], [S6d]; CONTEXT rows updated; GAP 6 closed for IMS LTD and Strasselink/Bin Fadzlon,
+    left open for PRO MISSION and the LONGBOW LAKE date.
+28. Kpler 51 Mt via STS (Row 18): ISSUE says in bold that Kpler did not locate the transfers; KS row and RL
+    guardrail repeat it.
+29. Reframe template drift (Row 50): checked the last 10 published reframes (2005–2014): none uses "The
+    question is not X. It is Y"; three use negation-contrast. That candidate is withdrawn; a second reframe
+    in a re-anchored-number shape ("206 to 1 ...") is offered; note added in RL.
+
+**Other claim-table "Required fix" entries (VERIFIED rows with notes)**
+
+30. Row 1: KS and ISSUE label US$31.02bn as CIF. Row 2: US$178m labelled FOB; "Malaysia's own trade
+    statistics" used throughout (KS, ISSUE, RL, hook, title, Vortexa row).
+31. Row 4: "net energy exporter" (Al Jazeera, 27 Mar 2026 [S20b]) paired with "net crude importer" in
+    ISSUE, KS and RL 1.
+32. Row 11: conversion factor 7.33 bbl/t stated in ISSUE, KS and an RL guardrail; 2024 ratio corrected
+    from "~3x" to "~2.9x"; 2021 ratio (0.73x, below output) added.
+33. Row 19: KS attributes 2026 deliveries to "Kpler data obtained by Iran International".
+34. Row 21: Muyu Xu's "Malaysian waters" marked as her phrase in CONTEXT and KS.
+35. Row 23 and Row 74: UANI counts and Charlie Brown's claims attributed, with MMEA's rebuttal alongside.
+36. Row 24: SDN wording now "Iranian oil or commodity shipping or port services". Correction to the
+    checker: SDN.CSV shows **six** SDGT al-Jamal listings among the ten (Transmarine, Merkur, Blu, Tefcas,
+    Venayagamoorthy, Kanniappan), not five; the brief says six.
+37. Row 33: "[sic]" added after "providence".
+38. Row 41: August's rise attributed to Kpler's discharge account (ISSUE; WT 4).
+39. Row 42: "crude or condensate" used for the 25 August loading claim.
+40. Row 45: reg. 8 now "bunkering generally prohibited (exceptions in reg. 8(2))" in CONTEXT and RELEVANT
+    LAW; Adnan Sundra & Low's "for the first time" added.
+41. Row 54: ISSUE notes EIA's body text credits "industry analysts".
+42. Row 68: Hasan quote extended to include "it turned out the activity wasn't within our territory".
+43. Row 76: MSA Notice row notes the text is unopened (via Gard).
+44. Row 85: Indonesia's full-year 2025 filing (0.168 Mt to China) added to CONTEXT; new CONTRADICTION 18.
+45. Row 87: CNBC marked as not reopenable by the checker, context only, in CONTRADICTION 2, [S18a] and GAP
+    13.
+46. Rows 28 and 80 (K8 cargo): already off cards; unchanged.
+
+**Misleading-framing risks** (each now an edit plus a guardrail line in RECOMMENDED LENSES)
+
+47. MF(a) Wisma Putra: (1) bond-vs-cargo removed (see 3); (2) "toolkit that arrived after the volume
+    peaked" replaced by "the year between the July 2025 pledge and the June 2026 EEZ rule", with an
+    explicit "not 'Malaysia did nothing'" line and the -36.7% (Sep 2025) figure; (3) Hasan quote extended
+    (see 42); (4) guardrail: no UANI characterisation without MMEA's rebuttal; (5) ISSUE and guardrail: a
+    "Malaysian blend" label does not show a Malaysian authority issued the papers (FinCEN: "in Southeast
+    Asia").
+48. MF(b) Petronas: ISSUE states that no source opened links Petronas or Malaysian producers to the
+    relabelled cargoes; guardrail requires that line wherever "Malaysian heavy crude" or "Malaysian blend"
+    appears; "net energy exporter" paired (see 31).
+49. MF(c) China: ISSUE, RL 1 and guardrail use "China's customs, recording the origin declared on the
+    paperwork"; China's limited voice noted.
+50. MF(d) Iran: "natural experiment" wording removed; ISSUE now says "This is not a controlled
+    experiment" and names the contesting positions; guardrail: "designated / said", never "proven"; no
+    Iranian government voice on file.
+51. MF(e) US Treasury: permissive FinCEN wording restored (see 1); FTA "potentially linked to Iran" (see
+    12); anchorage location no longer resolved more firmly than sources (ISSUE; CONTRADICTION 8 now
+    "outside Malaysia's territorial sea; US Treasury calls it the Singapore EOPL"; WT 6 "reported ... to lie
+    within Malaysia's EEZ").
+
+**Primary-source audit**
+
+52. Additional primary documents suggested by the checker were opened by the researcher before citing:
+    FinCEN FIN-2025-A002 ([S12a]), OFAC recent actions of 24 Feb 2025 ([S6c]) and 20 Nov 2025 ([S6d]).
+    Counts updated: 12 primary entries covering 20 distinct primary documents.
+
+**Not fixed from sources already opened (kept off cards; listed in VERIFICATION GAPS)**
+
+53. September 2026 "Malaysian" figure (1.16 Mt): Reuters original or GAC table not reached (GAP 2).
+54. September 2025 base (3.87 Mt, -36.7% y/y): opened by the checker only; re-open before any card uses it
+    (GAP 16).
+55. MSO 1952 s. 491B statutory text and penalties (GAP 4); Marine Department and MSA notice texts (GAP 5);
+    PRO MISSION designation basis and date, LONGBOW LAKE date (GAP 6); Bin Fadzlon's job title (repost
+    only, GAP 6); CNBC page (GAP 13).
+
+### Editor review (2026-11-07)
+
+- **Verification section integrity.** Diffed by the fixing agent against the committed report; unchanged.
+- **View, sentence 1 ("Malaysia can decline to enforce Washington's sanctions").** Rests on S23c (May 2024:
+  Fahmi Fadzil, "we comply with UN sanctions"; Saifuddin, "would not recognise unilaterally applied
+  sanctions", reported speech). Stage 1 must state Malaysia's position in its ministers' own words on a card
+  or in the view, not as T4A's prescription, and must not imply Malaysia does or does not enforce in any
+  given case.
+- **View, sentence 2 ("most ... could not have come from Malaysian fields").** Arithmetic re-checked:
+  China-recorded 1.30m b/d (64.74 Mt x 7.33 bbl/t / 365) is 2.54x EIA's 512,700 b/d total Malaysian output
+  for 2025, so at most about 39% could be Malaysian-produced even if every barrel went to China. Holds;
+  state the conversion factor wherever b/d appears.
+- **EEZ rule date.** The ship-to-ship written-permission rule is in force from 29 Jun 2026 (P.U.(A)
+  233/2026), not 2025; the editor's instruction that said 2025 was wrong, and the brief is right.
+- **Stage 5.** Political MEDIUM-HIGH. Decide after Stage 3: run Stage 5 if `source_diversity_estimate` < 0.4.
+- **Status.** Ready for the editor's approval to proceed to Stage 1. Not approved yet.
+
