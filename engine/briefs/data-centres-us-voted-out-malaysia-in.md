@@ -36,9 +36,9 @@ The decision process gives residents little *formal* voice:
   ("industrial estate" of 20 ha or more) sits in the First Schedule, which carries no public display
   or comment unless the Director General orders it [S2].
 - Approvals run through MIDA, the Data Centre Task Force (DCTF) and, in Johor, a state technical
-  committee with three exco members [S15, S24].
-- The national planning guideline sets application tracks of 99, 29 and 22 days and contains no
-  objection step [S4].
+  committee with three exco members [S15, S24, S28].
+- The national planning guideline sets application tracks of 99, 29 and 22 days and, in the text
+  extracted, contains no objection step [S4].
 - The Digital Infrastructure (Data Centre) Bill is not due at Cabinet until 2027 [S17].
 
 Meanwhile the scale keeps rising:
@@ -264,7 +264,7 @@ Wording discipline throughout:
 | Dimension | Level | Justification |
 |---|---|---|
 | Sentiment | MEDIUM-HIGH | "Rich countries push out what Malaysia takes in" is an easy grievance frame. Keep the emotion as anxiety-of-precedent about process, not resentment of foreign investors or of the US. |
-| Political | MEDIUM | Federal (PH-led unity government) and Johor (BN) both appear. The parliamentary questions came from PN, PH and BN-era seats alike, which is useful balance. **Avoid US partisan framing** (Democratic gains, exit polls) on cards; the market items cite them, so attribute. |
+| Political | MEDIUM | The federal government and the Johor state government both appear (party alignments are not sourced in this brief; add them at Stage 1 only if a card needs them). The parliamentary questions came from PN-Machang, PH-Bukit Bendera (labels as reported) and the Batu Pahat MP, which is useful balance. **Avoid US partisan framing** (Democratic gains, exit polls) on cards; the market items cite them, so attribute. |
 | Ethnic | LOW | ZData/Computility is Chinese-linked and some operators are Singaporean. Never characterise operators or residents by community or nationality. |
 | Religious | LOW | Gaza and "genocide" claims appear in the Amsterdam quote [S34] and the Greenpeace statement [S48]. Keep them off the cards; they are protesters' stated motives, not the issue. |
 | Royalty | LOW | None. |
@@ -285,8 +285,10 @@ not CRITICAL). Re-check if Stage 3 returns `source_diversity_estimate` below 0.4
 1. **Governance:** who decides, in what order.
    - No data-centre line in the EIA Order. The nearest trigger has no public display.
    - The TCPA neighbour notice switches off wherever a local plan exists.
-   - The national guideline's 99, 29 and 22-day tracks have no objection step.
-   - DCTF and Johor's three-exco committee decide behind closed doors.
+   - The national guideline's 99, 29 and 22-day tracks show no objection step in the text extracted.
+   - The DCTF and Johor's three-exco committee review projects; whether either publishes its
+     decisions or criteria is **unverified** (gap 10). Do not write "behind closed doors" unless
+     that gap is closed.
    - The Bill is due at Cabinet in 2027.
    - Counter-weight: Kota Damansara.
 2. **Economic:** who pays.
