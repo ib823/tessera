@@ -55,7 +55,7 @@ oil as a red flag [S12a]. FinCEN's alert of 11 May 2026 repeated the point ("som
 as 'Malaysian blend'") and said financial institutions "may consider requiring heightened due diligence"
 on such transactions, "particularly if the transactions show other indications of oil smuggling", adding
 that "no single red flag is determinative" [S12b]. Ten Malaysia-addressed firms and individuals are on
-the OFAC SDN list for Iranian oil or commodity shipping or port services (five of them under the
+the OFAC SDN list for Iranian oil or commodity shipping or port services (six of them under the
 counter-terrorism programme, for the Houthi-linked al-Jamal network's "Iranian commodities"), plus one
 Malaysia-flagged crude tanker [S6, S7]. We found no Malaysian court finding on the origin of any such
 cargo; Malaysia's own cases found in this research are permit and anchoring offences [S24]. **No source
@@ -76,12 +76,13 @@ returned in mid-July" [S16c]. **Kpler analysts estimate** that Iranian crude and
 cargo since 25 August; Kpler notes its analyst figure "differs from the figure currently shown on the
 Kpler platform", and Vortexa estimated about 6 Mbbl of Iranian stocks off Singapore on 9 October [S16c,
 S21b]. October GAC country figures (due about 20 November) are the test. This is not a controlled
-experiment: the blockade is contested by Iran, China and Malaysia's stated positions, and China cut all
-crude imports in the same months.
+experiment: Tehran calls the continuing US military pressure aggression, China rejects "illegal
+unilateral sanctions", Malaysia condemned the strikes that began the war, and China cut all crude
+imports in the same months [S13c, S20a, S23b, S3c].
 
 **What complicates it.** The "Malaysian" label was already shrinking before the war: by September 2025
-it was 36.7% lower than a year earlier, and by March 2026 41% lower (INDEPENDENT VERIFICATION rows 14 and 47, NST/Reuters 20 Oct 2025, not opened by the researcher;
-[S14e]). Traders and Energy Aspects quoted by Reuters, and CGEP ("perhaps"), say the paperwork moved to
+it was 36.7% lower than a year earlier, and by March 2026 41% lower (September 2025: INDEPENDENT
+VERIFICATION rows 14 and 47, NST/Reuters 20 Oct 2025, not opened by the researcher; March: [S14e]). Traders and Energy Aspects quoted by Reuters, and CGEP ("perhaps"), say the paperwork moved to
 "Indonesian" after Malaysia's July 2025 enforcement announcement and bank scrutiny of Malaysia-origin
 documents [S16a, S17]. China's recorded imports from Indonesia went from about 0.1 Mt in 2024 (Reuters;
 UN Comtrade 0.15 Mt) to 27.96 Mt in January–September 2026 [S15b, S14e, S4]. Counting both labels,
@@ -284,7 +285,7 @@ comparison is tonnes against tonnes from the same UN database [S4].
 | Iranian oil on ships in "Malaysian waters east of Singapore" (Kpler's Muyu Xu's phrase) | ~40m barrels (Aug 2026), "most of that has been promised to buyers" | Estimated (Kpler) | [S16b] |
 | Sanctioned share of EOPL anchorage, 19 Aug 2025 | 52 of 84 AIS-visible vessels | Estimated (Kpler via Argus) | [S19] |
 | STS transfers of Iranian oil in EOPL, 28 Feb–13 May 2026 | 42 | Advocacy count (UANI, US group; MMEA rejects its characterisation) | [S22] |
-| SDN parties with a Malaysian address | 45 (all programmes); 10 tied to Iranian oil or commodity shipping or port services (5 of them SDGT al-Jamal listings resting on "Iranian commodities"); 1 Malaysia-flagged crude tanker | Established (designations) | [S6] SDN.CSV/ADD.CSV, downloaded 7 Nov 2026 |
+| SDN parties with a Malaysian address | 45 (all programmes); 10 tied to Iranian oil or commodity shipping or port services (6 of them SDGT al-Jamal listings resting on "Iranian commodities": Transmarine, Merkur, Blu, Tefcas and two Merkur officers); 1 Malaysia-flagged crude tanker | Established (designations) | [S6] SDN.CSV/ADD.CSV, downloaded 7 Nov 2026 |
 | Penang bond | RM300,000 (US$76,400) | Reported (MMEA to Reuters) | [S24a] |
 | Penang crude value | RM512m | Reported (MMEA) | [S24a], [S24c] |
 | EEZ release bond ceiling | RM1m | Established (gazette) | [S5] reg. 15 |
