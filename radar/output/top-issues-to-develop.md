@@ -5,8 +5,9 @@ Queue: 1,448 active issues (13,178 topics tracked); 493 events fetched;
 five sources healthy (news_rss, reddit, gdelt, parliament, court); six
 streams ok. 592 queue entries were first seen on or after 24 Oct.
 Latest published ID: **2014** (sourceDate 2026-09-19). Next free ID:
-**2015**, reserved for **G1** by `publish-pipeline.mjs init`
-(`data-centres-us-voted-out-malaysia-in`).
+**2016**: **2015** is held by open draft PR #70 (southern Thailand
+dialogue, awaiting Stages 2/3/5). Reserved this cycle: **2016 G1**,
+**2017 G2**, **2018 G3**.
 
 ## Editorial direction for this cycle (set 2026-11-07)
 
@@ -96,7 +97,7 @@ unless it is marked as already traced in a brief.
 
 ## Tier G — global events with a Malaysian mechanism (develop next)
 
-### G1. On 4 Nov, US voters rejected data centres in 40 of 41 local ballots. The same day, Google committed US$15b more to Malaysia. → **in pipeline as 2015**
+### G1. On 4 Nov, US voters rejected data centres in 40 of 41 local ballots. The same day, Google committed US$15b more to Malaysia. → **in pipeline as 2016**
 - **Radar:** foreign stream 6-7 Nov: Al Jazeera "How the US midterm
   elections reflected resistance to data centres"; "Protesters break into
   Microsoft data centre site in Amsterdam"; Nikkei "US midterms live:

@@ -29,8 +29,11 @@ cannot.
 - **Silence-watch** as committed by CI from the same scan (25 accumulated,
   15 fresh picks).
 - **Latest published issue:** `2014` (sourceDate 2026-09-19). Next free
-  ID: `2015`, reserved for **G1**
-  (`engine/output/data-centres-us-voted-out-malaysia-in-pipeline-state.json`).
+  ID: `2016`. `2015` is held by open draft PR #70 (southern Thailand
+  dialogue, awaiting Stages 2/3/5). Reserved this cycle: `2016` G1
+  (`data-centres-us-voted-out-malaysia-in`), `2017` G2
+  (`malaysian-crude-iran-blockade-gap`), `2018` G3
+  (`scam-proceeds-forfeited-abroad-malaysia`).
 
 ## Status reconciliation (since the 18 Sep curation)
 
@@ -41,9 +44,9 @@ cannot.
 | A3 | 800kWh electricity exemption | Never briefed. Overtaken by Budget 2027 (tabled 9 Oct). Folded into B5. |
 | B3 | Melaka nominated assemblymen | Briefly A1 this cycle; **parked as D1** when the direction changed. Pipeline state removed; research notes kept for a post-election issue. |
 | — | 2014 southern Thailand | Published 19 Sep (not from the list). |
-| — | **Data centres: US voters say no, Malaysia says yes** | **New. G1. In pipeline as 2015.** |
-| — | **"Malaysian" crude and the Iran blockade** | **New. G2.** |
-| — | **Scam empires abroad vs Malaysia's 1%** | **New. G3** (absorbs the domestic scam pick). |
+| — | **Data centres: US voters say no, Malaysia says yes** | **New. G1. In pipeline as 2016.** |
+| — | **"Malaysian" crude and the Iran blockade** | **New. G2. In pipeline as 2017.** |
+| — | **Scam empires abroad vs Malaysia's 1%** | **New. G3. In pipeline as 2018** (absorbs the domestic scam pick). |
 | — | **No house-arrest law** | **New. Wildcard W1, editor's call.** |
 
 ## Recommended development order (next three publish slots)
@@ -53,7 +56,7 @@ early on Sunday 8 Nov MYT, so the slots are **Tue 10 Nov, Thu 12 Nov,
 Sat 14 Nov**.
 
 1. **G1: data centres.** **Tuesday.** Economic / Environmental /
-   Governance. In the pipeline as **2015**; a research agent is
+   Governance. In the pipeline as **2016**; a research agent is
    gathering the brief's sources now. One week after the 3 Nov midterms
    and six days after Google's 4 Nov announcement, the contrast is fresh.
    Guardrails: (a) the US ballots were 41 *local* measures, mostly in ten
