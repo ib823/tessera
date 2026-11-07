@@ -271,7 +271,7 @@ comparison is tonnes against tonnes from the same UN database [S4].
 | Malaysia crude incl. lease condensate output | 502.1 / 499.2 / 478.3 / 512.7 kb/d (2022–2025) | Recorded | [S1] EIA IES, product "Crude oil including lease condensate", activity "Production" |
 | Malaysia total liquids output | 599.4 / 595.3 / 571.7 / 604.2 kb/d (2022–2025) | Recorded | [S1] "Total petroleum and other liquids" |
 | Ratio, China-recorded "Malaysian" crude to Malaysian output | ~2.5x (2025); ~2.9x (2024), at 7.33 bbl/t (state the factor if barrels are used); 2021: 0.73x, below output | Derived | [S1], [S4], [S14b], [S17] |
-| China's share of Malaysia's crude and condensate exports, 2023 | 5% (DOSM customs: ~1.9%, see CONTRADICTION 3) | Estimated (Vortexa cargo tracking, via EIA) | [S2] Figure 8, p. 15; [S4] |
+| China's share of Malaysia's crude and condensate exports, 2023 | 5% (Malaysia's own trade statistics, DOSM: ~1.9%, see CONTRADICTION 3) | Estimated (Vortexa cargo tracking, via EIA) | [S2] Figure 8, p. 15; [S4] |
 | Peak "Malaysian" month | 8.75 Mt (Mar 2025); "In some previous months, the figure had reached 2 million barrels per day" | Recorded | [S14e]; [S21a] |
 | "Malaysian" Sep 2026 | 1.16 Mt (~280,000 b/d), -70% y/y, -56% m/m; lowest monthly level in the series (June's -81% y/y was the steeper fall) | Recorded (secondary aggregators only; GAP 2: open Reuters/GAC before Phase 6; keep off hook) | [S15a] |
 | "Malaysian" Jan–Sep 2026 | 25.41 Mt, -50% | Recorded | [S15b] |
@@ -410,7 +410,7 @@ word for Stage 6, if used: *provenance*.
    the closest match to HS 2709 "crude", and name the definition on the card. The CNBC page could not be
    reopened by the independent check (block page); do not rely on the CNBC "0.6 million" figure.
 3. **Malaysia's exports to China, 2023.** Vortexa via EIA: 5% of crude and condensate exports [S2];
-   DOSM via Comtrade: 0.195 of 10.37 Mt, about 1.9% [S4]. Different data (cargo tracking vs customs).
+   DOSM via Comtrade: 0.195 of 10.37 Mt, about 1.9% [S4]. Different data (cargo tracking vs official trade statistics).
    Either way the share is tiny; cite DOSM tonnes.
 4. **September 2026 "Malaysian" volume.** 1.16 Mt / "around 280,000 barrels per day" (Daily Beirut,
    GAC) [S15a] vs "276,000 barrels per day" (Iran International) [S21a]. Conversion difference; use
