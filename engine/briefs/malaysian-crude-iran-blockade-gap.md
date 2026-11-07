@@ -669,3 +669,232 @@ wire or related documents (about 55 individual documents in all). Meets the ≥8
 ## OPTIONAL — ENGINE CONTEXT
 
 Not run. The story is trade statistics, sanctions records and maritime law, not coalition arithmetic.
+
+## INDEPENDENT VERIFICATION (2026-11-07)
+
+Checker worked only from documents opened on 7 Nov 2026 (downloads kept outside the repo). Nothing in the
+brief above was edited. "KS" = KEY STATISTICS; "CTX" = CONTEXT; "WT" = WHAT WEAKENS THE THESIS; "RL" =
+RECOMMENDED LENSES.
+
+### Claim table
+
+| # | Claim (short) | Brief location | Verdict | Evidence (URL/query + quote or data cell) | Required fix |
+|---|---|---|---|---|---|
+| 1 | China imported 64.74 Mt / US$31.02bn crude "from Malaysia" in 2025 | KS r1; ISSUE; hook | VERIFIED | Comtrade preview, reporter 156, partner 458, cmd 2709, flow M, 2025: netWgt 64,742,423,979 kg; primaryValue (CIF) 31,022,551,414 | Label as CIF import value |
+| 2 | Malaysia recorded 0.31 Mt / US$178m crude exports to China, 2025 | KS r2; ISSUE; hook | VERIFIED | Comtrade reporter 458, partner 156, flow X, 2025: netWgt 313,684,685 kg; primaryValue (FOB) 177,767,632 | Hook says "Malaysia's own customs"; ISSUE says "statistics agency". Pick one ("Malaysia's own trade statistics"); note FOB vs CIF |
+| 3 | Malaysia crude exports to world 11.78 Mt (US$6.67bn) | KS r3; ISSUE | VERIFIED | Comtrade 458/0/X/2025: 11,777,447,809 kg; 6,671,562,171 | None |
+| 4 | Malaysia crude imports 22.89 Mt; "net crude importer" on own books | KS r4; ISSUE | VERIFIED | Comtrade 458/0/M/2025: 22,894,885,935 kg; 12,632,195,477 | Add that Malaysia is a net energy exporter (Al Jazeera 27 Mar 2026: "Malaysia is a net energy exporter") so readers do not infer it barely produces oil |
+| 5 | 2021-25 mirror series (18.53/35.68/46.94/70.16/64.74; 0.27/0.08/0.20/0.41/0.31; 10.30/9.85/10.37/9.49/11.78 Mt) | CTX row 1 | VERIFIED | All 15 cells match Comtrade pulls (see Recomputed core data). China 2023 cell carries isNetWgtEstimated=true, legacyEstimationFlag=6 | Note that the 46.94 Mt cell is a UN estimate, not China's reported weight (this resolves CONTRADICTION 1) |
+| 6 | 2023: 54,792,821 t, +53.72% | CTX; KS r5; CONTRA 1 | VERIFIED | The Standard (Reuters table, 20 Jan 2024): "Malaysia 4,646,324 -15.80 54,792,821 53.72" | None |
+| 7 | 2024: 70.38 Mt, 1.41m b/d, third after Saudi | CTX; KS r5 | VERIFIED | BOE Report (Reuters) 19 Jan 2025: "jumped 28% last year at 70.38 million tons, or 1.41 million bpd, ranking it third after Saudi Arabia" | None (Comtrade 70.16 Mt; trivial) |
+| 8 | 2025 "Malaysian" ~1.3m b/d | KS r6; ISSUE | VERIFIED | CGEP 29 Jan 2026: "'Malaysian' crude (1.3 million bpd in 2025)"; recomputed 1.30m b/d at 7.33 bbl/t | None |
+| 9 | EIA crude incl. lease condensate 502.1/499.2/478.3/512.7 kb/d (2022-25) | KS r7; ISSUE | VERIFIED | EIA API v2 international, MYS, TBPD: 2022 502.08; 2023 499.21; 2024 478.34; 2025 512.67 | None |
+| 10 | EIA total liquids 599.4/595.3/571.7/604.2 kb/d | KS r8 | VERIFIED | Same pull, "Total petroleum and other liquids": 599.43/595.32/571.73/604.17 | None |
+| 11 | Ratios ~2.5x (2025), ~3x (2024), ~5.5x Malaysia's total exports | KS r9; ISSUE | VERIFIED | Recomputed: 2.54x, 2.94x (7.33 bbl/t); 64.74/11.78 = 5.50x | State conversion factor on card if b/d used |
+| 12 | 2023 China share of Malaysian exports 5% (Vortexa) vs ~1.9% (DOSM) | KS r10; CTX; CONTRA 3 | VERIFIED | EIA Country Analysis Brief (12 Nov 2024) p.15 Fig. 8: "China 5%", Thailand 32%, Australia 20%, "Data source: Vortexa"; Comtrade 0.195/10.37 Mt = 1.88% | None |
+| 13 | Peak month 8.75 Mt (Mar 2025); "2 million barrels per day" | KS r11; CTX | VERIFIED | BOE Report 19 Apr 2026 table: "Malaysia 5.14 8.75 -41%"; Iran International 23 Oct 2026: "In some previous months, the figure had reached 2 million barrels per day" | None |
+| 14 | Sep 2026 "Malaysian" 1.16 Mt, ~280,000 b/d, -70% y/y, -56% m/m | KS r12; ISSUE; CTX | VERIFIED (secondary only) | Daily Beirut 20 Oct 2026: "supplied 1.16 million tons to China in September ... reductions of 70 percent annually and 56 percent month-on-month"; Shafaq News, same figures; base check: NST/Reuters 20 Oct 2025, Sep 2025 = "3.87 million tonnes" (1.16/3.87 = -70.0%) | Open the Reuters original or the GAC table before Phase 6; cite Reuters, not Daily Beirut |
+| 15 | Jan-Sep 2026: Malaysia 25.41 Mt (-50%); Indonesia 27.96 Mt (3.38-fold) | KS r13-14 | VERIFIED | TASS 20 Oct 2026: "Indonesia followed with a 3.38-fold increase to 27.96 mln metric tons, while Malaysia supplied 25.41 mln metric tons, a sharp decline of 50%" | None |
+| 16 | Combined labels: Jan-Sep -10%; Sep -52% | KS r15-16; ISSUE | VERIFIED (derived) | 25.41+27.96 = 53.37 vs 50.82+8.27 = 59.09 (-9.7%); 2.88 vs 3.87+2.12 = 5.99 (-52%) | Keep "derived" label |
+| 17 | Iranian crude to China 2025: 1.38m b/d (Kpler via CGEP); ~1.4m (Kpler via Reuters; Downs) | KS r17 | VERIFIED | CGEP: "1.38 million bpd from Iran ... according to Kpler"; Gulf Times 21 Aug 2026: "China's Iran purchases averaged 1.4mn bpd, according to Kpler"; Al Jazeera 30 Jul 2026 (Downs): "about 1.4 million barrels per day" | None |
+| 18 | Kpler: >51 Mt of 57 Mt Iranian-origin crude via STS, Jan-Oct 2025 | KS r18; ISSUE | VERIFIED | Baird Maritime (Reuters) 24 Nov 2025: "more than 57 million tonnes, or 1.37 million bpd ... with over 51 million tonnes moved via STS" | Kpler does not locate the 51 Mt; do not place it all off Malaysia (ISSUE sequencing implies it) |
+| 19 | Iranian deliveries 2026: >1.55m b/d Jan-May; under half Jun-Sep | KS r19 | VERIFIED | Iran International 23 Oct 2026: "more than 1.55 million barrels per day ... From June through September, the average fell to less than half that level" | Attribute "Kpler data obtained by Iran International" |
+| 20 | Iranian oil afloat ~136 Mbbl at war start, "fell to zero in mid-October" | KS r20; ISSUE; PERIOD; CTX | SCOPE-MISMATCH | Kpler blog 22 Oct 2026: "fell to zero in mid-October, from a peak of 88.8 Mbbl on 14 July. Around 43 Mbbl remain stranded inside the blockade area"; 136 Mbbl was "outside the region" at war start; "differs from the figure currently shown on the Kpler platform" | Card must say: Kpler analysts estimate Iranian oil outside the blockade zone fell from 88.8 Mbbl (14 Jul) to zero by mid-October; ~43 Mbbl remained inside. Note Vortexa ~6 Mbbl off Singapore on 9 Oct (Iran International 23 Oct) |
+| 21 | ~40m bbl Iranian oil "in Malaysian waters east of Singapore" (Aug 2026) | KS r21; CTX | VERIFIED | Gulf Times (Reuters) 21 Aug 2026: "40mn barrels of Iranian oil on ships in Malaysian waters east of Singapore, though most of that has been promised to buyers" | Attribute to Kpler's Muyu Xu; "Malaysian waters" is her phrase |
+| 22 | 52 of 84 AIS-visible EOPL vessels sanctioned, 19 Aug 2025 | KS r22; CTX | VERIFIED | Argus 10 Sep 2025: "Of the 84 vessels anchored at the EOPL on 19 August with their ... AIS switched on, 52 were under sanctions" | None |
+| 23 | UANI: 42 STS transfers in EOPL since 28 Feb 2026 | KS r23; CTX | VERIFIED | AP 13 May 2026: "UANI says there have been 42 ship-to-ship transfers of Iranian oil conducted in the EOPL area since Feb. 28" | Attribute as advocacy count |
+| 24 | 45 SDN entries with Malaysian address; >=10 tied to Iranian oil shipping/port services; 1 Malaysia-flagged crude tanker | KS r24; ISSUE | VERIFIED | SDN.CSV+ADD.CSV (7 Nov 2026): 45 entities with a Malaysia address. Ten: Transmarine, Delnaz, Alya, Merkur, Venayagamoorthy, Kanniappan, Blu, Tefcas, IMS LTD, Bin Fadzlon. 51074 SHANAYE QUEEN "Crude Oil Tanker", flag "Malaysia" | Say "Iranian oil or commodity shipping": the five al-Jamal (SDGT) listings rest on "Iranian commodities" for a Houthi network |
+| 25 | Penang bond RM300,000 (US$76,400) | KS r25; CTX | VERIFIED | Baird Maritime (Reuters) 3 Feb 2026: "released on a bond of MYR300,000 ($76,400), but remained under investigation" | None |
+| 26 | Penang crude value RM512m | KS r26; CTX | VERIFIED | gCaptain 2 Feb 2026: "seized approximately RM512 million (USD 129.9 million) worth of crude oil"; Reuters: "nearly $130 million" | None |
+| 27 | EEZ release bond ceiling RM1m | KS r27; LAW | VERIFIED | P.U. (A) 233, reg. 15: "conditioned in a sum not exceeding one million ringgit" | None |
+| 28 | K8 cargo 76,954.325 t; RM220,253,176.38 | KS r28; CTX | VERIFIED (complainant only) | The Vibes 16 Sep 2026: "76,954.325 metric tonnes of Atlanta Crude, valued at RM220,253,176.38" | Keep off cards (brief agrees) |
+| 29 | Argus "says only 'Vessels engaging in the trade pay fees to entities in Malaysia'" | KS r29; WT 8 | MISQUOTED | Argus 10 Sep 2025, full sentence: "Vessels engaging in the trade pay fees to entities in Malaysia, providing a revenue source to the country." | Quote the full sentence; the "no estimate" conclusion still stands (Argus gives no number) |
+| 30 | Analysts "attribute most of the excess to Iranian crude" | ISSUE; WT 5 | OVERCLAIM (minor) | EIA (64131): "Many imports attributed to Malaysia ... originated in Iran"; CGEP: "Many Iranian and Venezuelan barrels ... are rebranded as Malaysian". No source says "most of the excess"; it is derivable (Kpler 1.38m b/d Iranian vs 1.3m b/d "Malaysian", plus Kpler via Iran International: "most Iranian oil exports to China are recorded as Malaysian") | Write "analysts say much of it is Iranian crude, with some Venezuelan" or attribute the "most" inference to Kpler figures |
+| 31 | EOPL about 70 km off Johor, inside Malaysia's EEZ | ISSUE; CONTRA 8 | VERIFIED | AP 13 May 2026: "about 70 kilometers (45 miles) off Johor"; Al Jazeera 30 Jul 2026: "outside Malaysia's territorial waters but within its Exclusive Economic Zone" | None |
+| 32 | GAC recorded no Iranian crude since 2022 | ISSUE; ACTORS | VERIFIED | CGEP: "GAC has not recorded any oil imports from Iran since 2022"; Comtrade 156/364/2709/M: 2021 260,312 t; 2022 780,392 t; 2023-25 no record | Iran International's "since 2020" is wrong; do not cite it for this |
+| 33 | Treasury: Sepehr labelled oil "Malaysian heavy crude, a common tactic" | ISSUE; CTX | VERIFIED | Treasury sb0322, 20 Nov 2025: "sought to disguise the providence of the oil by labeling it as Malaysian heavy crude, a common tactic of the Iranian armed forces and Iranian oil smugglers writ large" | Keep "[sic]" on "providence" or paraphrase |
+| 34 | Transmarine forged documents | ISSUE; CTX | VERIFIED | Treasury jy2538, 15 Aug 2024: "provided forged documents for the U.S.-sanctioned DAWN II ... falsely showing the commodities on board were of Malaysian rather than Iranian-origin" | None |
+| 35 | FinCEN (May 2026) told banks Iranian oil is relabelled "most commonly as 'Malaysian blend'" and "to apply heightened due diligence to any transaction that references it" | ISSUE para 3 | OVERCLAIM | FIN-2026-Alert002 p.3: "Iranian oil is sometimes blended ... or relabeled with forged documents ... most commonly as 'Malaysian blend.'" p.9: "may consider requiring heightened due diligence on any transactions referencing 'Malaysian blend' oil, particularly if the transactions show other indications of oil smuggling"; p.8: "no single red flag is determinative" | Restore "sometimes"; replace "told ... to apply" with "said banks may consider"; keep the "other indications" qualifier |
+| 36 | "A US Treasury bureau now treats a 'Malaysian blend' reference ... as a red flag" | ISSUE "Malaysian angle" (2) | SCOPE-MISMATCH | FinCEN FIN-2025-A002, 6 Jun 2025, p.4 ("most commonly as 'Malaysian blend'") and p.8 red flag ("makes reference to 'Malaysian blend' oil"); fn 46: falsified documents received "in Southeast Asia" | Date the red flag to June 2025, repeated May 2026; drop "now" |
+| 37 | FinCEN found "Singapore-based Iran-linked oil firms banking in Malaysia" | ISSUE "Malaysian angle" (2) | OVERCLAIM | FinCEN FTA (Oct 2025) p.19: "a Singapore-based oil company potentially linked to Iran and banking in Malaysia sent approximately $60 million"; p.4: Singapore-based oil companies "used accounts at financial institutions in Singapore and Malaysia" | One company, "potentially linked", from 2024 bank (BSA) reports |
+| 38 | "No Malaysian court has made a finding on Iranian-origin cargo" | ISSUE para 3 | UNSUPPORTED | Absence claim; nearest support Reuters 3 Feb 2026: MMEA "did not identify the origin of the oil" | "We found no Malaysian court finding ..." |
+| 39 | War began 28 Feb 2026; blockade 13 Apr; paused 18 Jun; reimposed 13/14 Jul | ISSUE; CTX | VERIFIED | The Star 2 Mar 2026: "wide-ranging strikes that began on Saturday (Feb 28)"; Seapower (CENTCOM text): "April 13 at 10 a.m. ET"; Al Jazeera: "April 13 to June 18 and resumed on July 14"; Gulf Times (Reuters): "re-imposed its blockade ... on July 13" | None |
+| 40 | Jun 2026 "Malaysian" 1.34 Mt, -81% | ISSUE; CTX | VERIFIED | Business Recorder (Reuters) 20 Jul 2026: "fell 81% to 1.34 million tons, or 0.33 million bpd" | None |
+| 41 | Aug 2026 2.6 Mt "as Iranian crude already parked off Malaysia and Singapore was discharged" | ISSUE; WT 4 | VERIFIED (number); cause is inference | NST (Reuters) 20 Sep 2026: "2.6 million tons, or 620,000 bpd, down 45 per cent ... up 74 per cent from July"; Kpler: pool "steadily discharged since the blockade returned in mid-July" | Attribute the causal link to Kpler's discharge account |
+| 42 | Iran has not loaded a cargo since 25 Aug | ISSUE; CTX | VERIFIED | Kpler 22 Oct 2026: "Iran has not loaded a crude or condensate cargo since 25 August" | Say "crude or condensate" |
+| 43 | Label moved to "Indonesian" after Malaysia's July 2025 pledge and bank scrutiny | ISSUE; WT 1 | VERIFIED | Baird (Reuters) 24 Nov 2025: "Some banks are rejecting documentations showing Malaysia as origin"; shift "driven by Malaysia announcing in July ... according to consultancy Energy Aspects"; CGEP: "perhaps prompted traders to relabel" | None |
+| 44 | China imports from Indonesia ~0.1 Mt in 2024 | ISSUE; WT 2 | VERIFIED (with contradiction) | BOE Report 19 Apr 2026: "around 0.1 million tons ... in the whole of 2024"; Reuters 24 Nov 2025: "less than 100,000 tonnes in 2024"; Comtrade 156/360/M/2024: 147,280 t | Add to CONTRADICTIONS; use "about 0.15 Mt (UN Comtrade)" or "about 0.1 Mt (Reuters)" |
+| 45 | Written-permission regime for EEZ cargo transfers only from 29 Jun 2026; regs 3, 7(1), 7(3), 7(8), 8, 15, 16; made 10 Jun, gazetted 26 Jun | ISSUE; CTX; LAW | VERIFIED | P.U. (A) 233: "These Regulations come into operation on 29 June 2026"; reg 7(1) quoted exactly; 7(3) "not less than forty-eight hours"; "Made 10 June 2026"; gazette dated 26 Jun 2026. Adnan Sundra & Low: regime introduced "for the first time" | Reg 8 bunkering ban has exceptions (reg 8(2)); say "generally prohibited" |
+| 46 | Malaysia complies with UN sanctions, not unilateral ones; condemned strikes | ISSUE; CTX | VERIFIED | Jakarta Post (Reuters) 8 May 2024, Fahmi: "we comply with UN sanctions ... unilaterally applied sanctions, then I think we have to assess"; gCaptain (Reuters) 9 May 2024: Saifuddin "would not recognise unilaterally applied sanctions"; Bernama 2 Mar 2026: "strongly condemning the attacks" | None |
+| 47 | Hook line 3: Sep 2026 "Malaysian" line fell 70% with Iran under blockade | Hook | VERIFIED (secondary) | See row 14 | Frame September as the lowest level (1.16 Mt), not the steepest fall: June was -81% y/y and Sep 2025 had already fallen 36.7% y/y (NST/Reuters 20 Oct 2025) |
+| 48 | "The barrels were never Malaysia's" | Reframe 1 | OVERCLAIM | Malaysia recorded 313,685 t to China in 2025 (Comtrade); Iran International: discrepancy is Iranian oil "alongside sanctioned oil from other producers and genuine Malaysian exports" | "Most of those barrels were never Malaysia's" |
+| 49 | "In Washington's banking rulebook, 'Malaysian blend' is now a red flag" | Reframe 1 | OVERCLAIM | FinCEN alerts are guidance: "may consider"; "no single red flag is determinative"; red flag first issued 6 Jun 2025 | "Since June 2025, US Treasury guidance tells banks to treat 'Malaysian blend' as a red flag" |
+| 50 | "who gets to spend Malaysia's name on a certificate of origin" | Reframe 2 | VERIFIED | OFAC advisory 16 Apr 2025 p.5: "Certificates of origin issued in jurisdictions ... such as Malaysia or Singapore, should be thoroughly investigated" | Fine as framing. "The question is not X. It is Y" template: check reframe drift |
+| 51 | "Malaysia can decline to enforce Washington's sanctions ... oil it never produced" | View | VERIFIED | Malaysia's stated position (row 46); E.O.s 13846/13902/13224 are US law | None |
+| 52 | Brief title: "The blockade on Iran is now draining the difference" | Title | OVERCLAIM | The brief's own verdict, and data in rows 43-44 and 47: decline began in 2025 and moved to an "Indonesian" label | Do not use as headline or hook. Use "September data show the gap collapsing" |
+| 53 | H1 2023: +330,000 b/d (46%) to 1.0m b/d | CTX | VERIFIED | EIA Today in Energy 60401, 18 Sep 2023: "imports from Malaysia increased 330,000 b/d (46%) to 1.0 million b/d" | None |
+| 54 | EIA 2023: "54% more (1.1 million b/d) ... exceeded Malaysia's total crude oil production" | CTX; S3a | VERIFIED | EIA 64131 (orig. 16 Apr 2024, republished 3 Jan 2025): exact quote present; chart note: "Many imports attributed to Malaysia ... originated in Iran and were relabeled" | EIA's body text attributes the relabelling to "Industry analysts" |
+| 55 | Argus: June 2025 1.72mn b/d vs ~490,000 b/d production | CTX | VERIFIED | Argus 10 Sep 2025: "China's imports from Malaysia stood at 1.72mn b/d in June ... far outstrips Malaysia's domestic production of about 490,000 b/d" | None |
+| 56 | "Jul 2025 onward: China's imports from Indonesia top 2 Mt a month" | CTX | OVERCLAIM | NST (Reuters): "monthly imports first exceeded 2 million tons in July 2025"; Oct 2025 Indonesia = 1.54 Mt (Oilprice/Reuters) | "first topped 2 Mt in July 2025" |
+| 57 | Oct 2025, Dec 2025, Mar 2026 monthly figures | CTX; WT 1 | VERIFIED | Oilprice (Reuters) 20 Nov 2025: Malaysia "from 7.5 million tons to 4.8 million tons", Indonesia "from zero ... to 1.54"; BOE Report 19 Jan 2026: "fell 37.9% to 4.14 million tons"; BOE 19 Apr 2026: 5.14 Mt -41%, Indonesia 5.58, combined "10.72 million tons ... up 21.9%" | None |
+| 58 | CGEP: "Malaysia's exports to China fell by 112,000 bpd (7.9 percent)" | CTX | SCOPE-MISMATCH | CGEP quote exact, but the series is GAC-recorded imports from Malaysia (Comtrade 70.16 to 64.74 Mt = -7.7%), not Malaysia-recorded exports to China (0.41 Mt in 2024 to 0.31 Mt in 2025) | Relabel as "China-recorded imports from Malaysia"; the brief's own thesis depends on this distinction |
+| 59 | May 2024: US official on Malaysia-based service providers; Nelson quote | CTX | VERIFIED | Jakarta Post: "The capacity of Iran to move its oil has relied on... these types of service providers that are based in Malaysia" (unnamed official); gCaptain: Nelson, "loaded onto vessels of questionable legitimacy" | None |
+| 60 | 18 Jul 2024: Roslan "facilitated ... shipments to Malaysia" | CTX | VERIFIED | Treasury jy2469: "Indonesia-based Malaysian and Singaporean national Mohammad Roslan Bin Ahmad"; "has facilitated the Sa'id al-Jamal network's shipments to Malaysia" | Add "Indonesia-based" |
+| 61 | 11 Oct 2024: Delnaz (NIOC-linked), Alya, SHANAYE QUEEN | CTX; S6 | VERIFIED | OFAC recent action 20241011: Delnaz "(Linked To: NATIONAL IRANIAN OIL COMPANY)"; "SHANAYE QUEEN (9WNN6) Crude Oil Tanker Malaysia flag" | None |
+| 62 | 19 Dec 2024: Blu Shipping, Tefcas, Merkur, two Malaysian officers | CTX | VERIFIED | Treasury jy2757: "Al-Jamal's oil shipments are enabled by a network of shipping firms in Malaysia"; SDN 52309, 52352: "nationality Malaysia" | None |
+| 63 | 24 Feb 2025: IMS LTD (Labuan) designated | CTX; GAP 6 | VERIFIED | OFAC recent action 20250224: "IMS LTD, Unit 0195, Jalan Merdeka, Labuan, Malaysia ... [IRAN-EO13846]"; linked tankers CHAMTANG, VIOLET 1 | Date now confirmed on a primary page; close GAP 6 for IMS |
+| 64 | 16 Apr 2025 OFAC advisory pp.5, 7 | CTX; S10 | VERIFIED | p.5: "known to have a high frequency of Iranian STS operations in adjacent waters, such as Malaysia or Singapore, should be thoroughly investigated"; p.7: "in the outer port limits of Malaysia and Singapore" | None |
+| 65 | 9 Oct 2025: STS "off the coast of Singapore and Malaysia"; "Singapore EOPL" tugs | CTX; S8 | VERIFIED | Treasury sb0275: exact quote; "APS 9 supported at least seven Iran-affiliated tankers in the Singapore Eastern Outer Port Limit (EOPL)" | None |
+| 66 | 20 Nov 2025: Strasselink and Bin Fadzlon (Johor address) | CTX; GAP 6 | VERIFIED | OFAC recent action 20251120: "BIN FADZLON, Muhammad Danial ... Iskandar Puteri, Johor 79250, Malaysia ... [IRAN-EO13846]"; State fact sheet (repost, globalsecurity.org): "senior operations manager of STRASSELINK" | Close GAP 6 for date; role is via a repost |
+| 67 | Ceres I / Hafnia Nile, 19 Jul 2024; "only an oil sheen" | CTX; WT 9 | VERIFIED | Malay Mail (Reuters) 30 Jul 2024: "about 55km north-east of ... Pedra Branca"; "no oil spill detected ... only an oil sheen" | None |
+| 68 | Hasan, 11 Jul 2025: "thorn in our side ... If we catch them, we will detain the vessel" | CTX | VERIFIED | Malay Mail 12 Jul 2025: both sentences present, several sentences apart | Ellipsis spans his remark that earlier reported sites "wasn't within our territory"; include it for fairness |
+| 69 | 31 Jul 2025 rules: AIS on, anchoring plans, EOPL/Tompok Utara closed | CTX | VERIFIED | Maritime Executive: "requirement for vessels to keep their AIS transmission on at all times"; Argus: "closing the EOPL"; "officially known as the Tompok Utara anchorage" | None |
+| 70 | Penang: 24 nm off Muka Head; DPP; Nora = LONGBOW LAKE (IMO 9237539, NIOC-linked) | CTX | VERIFIED | Reuters (Baird): "awaiting further instructions from the Deputy Public Prosecutor"; "Nora, under its previous name Longbow Lake"; SDN 29790 IMO 9237539 "Linked To: NATIONAL IRANIAN OIL COMPANY" | Add Reuters: tankers "released along with their cargo" |
+| 71 | "Penang seizure of RM512m of crude ended in release on a RM300,000 bond within days" | RL 3 | OVERCLAIM | Reuters: ships "remained under investigation"; case "awaiting further instructions from the Deputy Public Prosecutor". A bond is security pending proceedings, not a penalty | "Tankers and cargo released within days on a RM300,000 bond; the case awaits the prosecutor." Do not set RM512m against RM300,000 as if it were the penalty |
+| 72 | Mar 2026 Pulau Jarak, ~750 t marine fuel | CTX | VERIFIED | Skrine Jul 2026: "approximately 750 metric tonnes of marine fuel oil" | None |
+| 73 | MMEA DG 13 May 2026 quotes | CTX | VERIFIED | AP: "intended to exploit jurisdictional gaps and limit direct enforcement action"; "never compromised nor provided any special treatment or privileges to any country" | None |
+| 74 | Al Jazeera 30 Jul 2026: MFA no response; up to 200 ships, half Iran-linked | CTX | VERIFIED | "Malaysia's Ministry of Foreign Affairs did not respond"; "as many as 200 ships may be anchored in the area, according to Brown"; "half of them likely having ties to Iran" | Attribute to UANI's Brown |
+| 75 | 1-2 Sep 2026 Tanjung Buai: RM260m; s.491B(1)(k),(l); Customs Act | CTX | VERIFIED | The Star 2 Sep 2026: "estimated at RM260mil, involving both vessels and the oil cargo"; "Section 491B(1)(K) ... Section 491B(1)(L)" | None (1.4 nm off Tanjung Buai: territorial waters, no Iran link stated) |
+| 76 | 11 Sep 2026 Marine Sensitive Area Notice 01/2026 | CTX; GAP 5 | VERIFIED (via P&I club) | Gard: "The MSA took effect on 11 September 2026 under the Marine Sensitive Area Notice 01/2026" | Notice text still unopened |
+| 77 | Anwar, 2 Mar 2026 motion | CTX | VERIFIED | Bernama: "strongly condemning the attacks by the Israeli Zionist regime and the US"; "immediate and unconditional ceasefire" | None |
+| 78 | 27 Mar 2026: Hormuz "early clearance"; ~70% of crude from Gulf | CTX | VERIFIED | Al Jazeera: "granting Malaysian vessels 'early clearance'"; "imports nearly 70 percent of its crude oil from the Gulf region" | None |
+| 79 | Qeshm strike "limited military action"; Qatar relaying proposals | CTX | VERIFIED | Gulf News 4 Nov 2026: "a 'limited military action'"; "Qatar says it is facilitating exchanges of proposals" | None |
+| 80 | K8: MACC "no basis for an offence"; "four emails"; 3 Nov revisit | CTX | VERIFIED (complainant's account) | The Vibes: "no basis for an offence under the MACC Act 2009 and that no revenue leakage had been identified to date"; Malay Mail 2 Oct: "four emails beginning in June and an SMS in September" | Keep off cards |
+| 81 | WT 3: Iran International "not a one-for-one measure" cited [S21a] | WT 3 | MISQUOTED (locator) | Phrase is in S21b (Shokri), not S21a (Khatinoglu) | Re-cite to [S21b] |
+| 82 | Iran International: China cut imports ~30%, drew reserves | WT 3 | VERIFIED | S21a: "China at one point cut overall crude imports by around 30% and drew instead on its strategic petroleum reserves" | None |
+| 83 | EIA: lower 2Q26 imports | CTX; WT 3 | VERIFIED | EIA 67905, 31 Jul 2026: "8.1 million barrels per day ... in 2Q26, 32% less than the previous quarter" | None |
+| 84 | Bessent: Chinese purchases of Iranian crude down ~40% | CONTRA 14 | VERIFIED | Al Jazeera 30 Jul 2026: "fallen by about 40 percent since the war began, according to US Treasury Secretary Scott Bessent" | None |
+| 85 | Indonesian customs: 1.7 Mt crude exports Jan-Sep 2025, ~25,000 t to China | CTX; WT 2 | VERIFIED | Reuters (Baird) 24 Nov 2025: exact. Comtrade 360/156/X full-year 2025: 167,566 t | Note Q4 2025 rise if used |
+| 86 | Edge 25 Jul 2024: Standard Chartered 1.456m b/d | S18b | VERIFIED | The Edge: "crude oil imports from Malaysia clocked in at 1.456 million barrels per day" | None |
+| 87 | CNBC 27 Jun 2025 "around 0.6 million, according to EIA" | CONTRA 2; S18a | UNREACHABLE | cnbc.com returned a 493-byte block page | Do not rely on it (brief already limits use) |
+
+**Counts by verdict (87 rows):** VERIFIED 72 (including 6 flagged secondary/derived/complainant-only);
+OVERCLAIM 8; SCOPE-MISMATCH 3; MISQUOTED 2; UNSUPPORTED 1; UNREACHABLE 1; UNDERCLAIM 0.
+
+### Recomputed core data
+
+Queries (all `https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=R&period=Y&partnerCode=P&cmdCode=2709&flowCode=F`,
+retrieved 7 Nov 2026; HS 2709 = crude petroleum, which includes condensate; weights are net kg converted
+to tonnes). Monthly (`/C/M/`) queries for China by partner returned no rows for 2025-26, so monthly figures
+still rest on Reuters-derived copies.
+
+| Series (Mt) | 2021 | 2022 | 2023 | 2024 | 2025 |
+|---|---:|---:|---:|---:|---:|
+| China imports from Malaysia (156/458/M) | 18.527 | 35.676 | 46.940 (UN-estimated weight) | 70.157 | 64.742 |
+| value, US$bn CIF | 8.95 | 21.74 | 28.61 | 38.35 | 31.02 |
+| Malaysia exports to China (458/156/X) | 0.265 | 0.078 | 0.195 | 0.410 | 0.314 |
+| value, US$bn FOB | 0.143 | 0.055 | 0.131 | 0.179 | 0.178 |
+| Malaysia exports to world (458/0/X) | 10.303 | 9.852 | 10.368 | 9.491 | 11.777 |
+| Malaysia imports from world (458/0/M) | 6.540 | 15.681 | 21.066 | 22.123 | 22.895 |
+| China imports from Indonesia (156/360/M) | 0.971 | 0.780 | 0.117 | 0.147 | 14.526 |
+| Indonesia exports to China (360/156/X) | 0.408 | no record | 0.114 | 0.140 | 0.168 |
+| China imports from Iran (156/364/M) | 0.260 | 0.780 | no record | no record | no record |
+| China imports from world (156/0/M) | 512.92 | 508.28 | 553.99 (UN-estimated) | 553.23 | quantity not reported (US$295.4bn) |
+
+Derived (conversion 7.33 barrels per tonne, the BP/Energy Institute world-average factor; Reuters' own
+figures imply about 7.3):
+- China-recorded "Malaysian" crude in barrels a day: 2021 372k; 2022 716k; 2023 943k (Comtrade estimate)
+  or 1.10m (Reuters 54.79 Mt); 2024 1.405m; 2025 1.300m. At 7.3 bbl/t, 2025 = 1.295m; at 7.5 bbl/t
+  (lighter Malaysian grades), 2025 = 1.330m.
+- Against EIA crude incl. lease condensate (511.1 / 502.1 / 499.2 / 478.3 / 512.7 kb/d): 0.73x, 1.43x,
+  1.89x (2.20x on Reuters' 2023 figure), 2.94x, 2.54x. The excess over Malaysian production starts in
+  2022; in 2021 China's "Malaysian" volume was below Malaysia's output.
+- China-recorded "Malaysian" tonnes divided by Malaysia-recorded exports to China: 70x, 460x, 240x, 171x,
+  206x. 2025 by value: US$31.02bn / US$0.178bn = 174x.
+- China-recorded "Malaysian" tonnes divided by everything Malaysia recorded exporting: 1.80x, 3.62x,
+  4.53x, 7.39x, 5.50x.
+- September 2026: 1.16 Mt x 7.33 / 30 = 283k b/d (matches "around 280,000"; Iran International 276k).
+  Base: September 2025 = 3.87 Mt (NST/Reuters, 20 Oct 2025), so -70.0% y/y. August 2026 2.6 Mt to
+  September 1.16 Mt = -55%.
+
+### Misleading-framing risks
+
+(a) **Wisma Putra.** Fair complaints: (1) RL 3 sets RM512m of cargo against a RM300,000 bond as if the bond
+were the outcome; Reuters says the case awaits the prosecutor. (2) "An enforcement toolkit that arrived
+after the volume peaked", followed by "the blockade is draining the difference", implies Malaysian action
+did nothing. Yet "Malaysian" volumes were already down 36.7% y/y by September 2025 and 41% by March 2026,
+and Energy Aspects and a trader credit Malaysia's July 2025 announcement for the shift. (3) Hasan's quote
+is cut before his point that earlier reported sites were outside Malaysian territory. (4) UANI's
+"Malaysia's inaction" line must not appear unless MMEA's rebuttal sits beside it. (5) "Malaysian blend"
+in a US alert does not show any Malaysian authority issued the papers; FinCEN says documents are
+falsified "in Southeast Asia".
+
+(b) **Petronas.** The cards say "Malaysian heavy crude" and "Malaysian blend" without saying no source
+implicates Malaysian producers. A reader could infer Petronas grades were used or sold. Add one clause:
+no document found links Petronas or Malaysian producers to the relabelled cargoes. Also "net crude
+importer" without "net energy exporter" understates Malaysia's producer role.
+
+(c) **Chinese embassy.** The hook makes "China's customs" look like the unreliable side. GAC records the
+origin declared on cargo papers, and no source says GAC knew otherwise. Phrase it as "China's customs,
+recording the origin on the paperwork". Chinese voice is limited to MOFA's opposition to "illegal
+unilateral sanctions" and an embassy spokesperson being "unfamiliar" with the route.
+
+(d) **Iranian official.** The attribution layer rests on US designations (administrative, unilateral) and
+Iran International (opposition-aligned). The "natural experiment" frame treats a blockade that Iran,
+China and Malaysia's stated positions contest as a neutral test instrument. There is no Iranian
+government voice. Keep "US Treasury designated/said", never "proven", and say the numbers in Iran
+International match other sources.
+
+(e) **US Treasury official.** Fair complaints run the other way on wording: the ISSUE paragraph turns
+FinCEN's permissive "may consider" into an instruction and drops "sometimes"; the red flag dates from
+June 2025, not May 2026; FinCEN's FTA says "potentially linked to Iran". Treasury calls the anchorage the
+"Singapore EOPL", so the card should not resolve its location more firmly than the sources do.
+
+### Primary-source audit
+
+- **Confirmed primary: 12 entries, 17 documents**, as claimed ([S1]-[S12]). Each URL was opened and
+  resolves to the named document.
+- [S1]: the API URL in the brief returns `API_KEY_MISSING` without a key; the browser URL
+  (eia.gov/international/data/country/MYS) resolves. Cite the browser URL or note that a key is needed.
+- [S4]: the label "national submissions" is not quite right for China 2023 (UN-estimated weight,
+  isNetWgtEstimated=true) or China-world 2025 (no quantity). The Malaysia-side and China-from-Malaysia
+  2024-25 cells are national figures.
+- **Mislabelled P: none.** [S13a] and [S23] are correctly S->P.
+- Additional primary documents opened in this check, which the brief can add: FinCEN FIN-2025-A002
+  (6 Jun 2025; https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf);
+  OFAC recent actions 24 Feb 2025 (https://ofac.treasury.gov/recent-actions/20250224) and 20 Nov 2025
+  (https://ofac.treasury.gov/recent-actions/20251120); Comtrade China-Iran, China-Indonesia and
+  Indonesia-China HS 2709 series.
+
+### Blocking issues before Stage 1
+
+1. **FinCEN wording** (ISSUE para 3; "Malaysian angle" (2); Reframe 1). Restore "sometimes"; change
+   "told banks to apply" to "said banks may consider requiring heightened due diligence ... particularly if
+   the transactions show other indications of oil smuggling"; date the red flag to June 2025; drop
+   "rulebook" and "now".
+2. **Reframe 1 "The barrels were never Malaysia's."** Change to "Most of those barrels ...": Malaysia
+   recorded 0.31 Mt of real exports to China in 2025.
+3. **Kpler "zero" claim.** Attribute it as a Kpler analyst estimate, scoped to "outside the blockade zone",
+   from 88.8 Mbbl on 14 July; note ~43 Mbbl stranded inside; do not chain it to the 136 Mbbl war-start
+   figure.
+4. **Penang outcome** (RL 3). "Ended in release" becomes "tankers and cargo released on a RM300,000
+   bond; case awaits the prosecutor". No bond-versus-cargo juxtaposition.
+5. **FinCEN FTA** ("Malaysian angle" (2)). "Iran-linked oil firms" becomes "a Singapore-based oil company
+   'potentially linked to Iran and banking in Malaysia'".
+6. **Causal headline.** "The blockade ... is now draining the difference" must not become the headline or
+   hook; use "September data show the gap collapsing".
+
+### Non-blocking
+
+- September 2026 figure: consistent across Daily Beirut, Shafaq News and Iran International, and its
+  y/y base is confirmed by NST/Reuters. Still open the Reuters original or GAC table before Phase 6.
+- "Most of the excess" (row 30): reword or attribute the inference.
+- Hook: present September as the lowest level, not the steepest y/y fall (June was -81%).
+- CONTRADICTION 1 is resolved: Comtrade's 2023 China figure is UN-estimated. Keep 54.8 Mt.
+- New contradiction: Indonesia-to-China 2024 = ~0.1 Mt (Reuters), "<100,000 t" (Reuters Nov 2025),
+  147,280 t (Comtrade).
+- Iran International's "zero ... since 2020" is contradicted by Comtrade (0.78 Mt from Iran in 2022).
+- Relabel CGEP's "Malaysia's exports to China fell by 112,000 bpd" as China-recorded imports.
+- CTX "Indonesia top 2 Mt a month from July 2025" becomes "first topped 2 Mt in July 2025".
+- Quote Argus's revenue sentence in full; "no estimate exists" still holds.
+- "No Malaysian court finding" becomes "we found no ...".
+- Add "Indonesia-based" for Roslan; re-cite "one-for-one" to [S21b].
+- CONTRADICTION 7 partly informed: Skrine (law firm, Jul 2026) states s.491B conviction carries a fine "up
+  to RM100,000" and imprisonment up to two years. Statute still unopened.
+- GAP 6: IMS LTD (24 Feb 2025) and Bin Fadzlon/Strasselink (20 Nov 2025) dates now confirmed on OFAC pages.
+- Kpler's 51 Mt via STS has no location; do not place it all off Malaysia.
+- Reframe 2 uses the "The question is not X. It is Y" template; check the last ten reframes for drift.
+
+**Checker's call: READY FOR STAGE 1 AFTER FIXES.** The recorded mirror gap, the EIA production series, the
+US documents and the EEZ gazette all check out against primary sources. The six blocking items are
+wording-level and fixable from documents already opened.
