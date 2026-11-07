@@ -59,8 +59,10 @@ Sat 14 Nov**.
    Governance. In the pipeline as **2016**; a research agent is
    gathering the brief's sources now. One week after the 3 Nov midterms
    and six days after Google's 4 Nov announcement, the contrast is fresh.
-   Guardrails: (a) the US ballots were 41 *local* measures, mostly in ten
-   states; never "America rejected data centres"; (b) "AI bubble" is
+   Guardrails: (a) the US ballots were 41 *local* measures in ten states
+   that "favoured limiting" development (Ballotpedia), many of them caps
+   or moratoriums and some advisory; never "America rejected data
+   centres"; the vote was 3 Nov, Google's announcement 4 Nov; (b) "AI bubble" is
    attributed commentary, never a finding; (c) the issue is who decides
    and who pays, not whether Google's projects are bad; (d) do not
    repeat **1963**'s water findings; cite them and move on.
@@ -121,8 +123,9 @@ Political risk CRITICAL with a sharp take, or when Stage 3
   out; ours has no ballot), not anger at investors.
 - Candidate reframe (question restructuring): *The question is not
   whether Malaysia should host data centres. It is who in Malaysia gets
-  the vote that 41 American towns just used.* Test it against the brief
-  before using it.
+  the say that 40 American towns just used.* Test it against the brief
+  before using it; the strongest counter-evidence is the Kota Damansara
+  withdrawal after ~290 planning objections (TCPA s21(6)).
 
 ## Before drafting Stage 1 for G2
 

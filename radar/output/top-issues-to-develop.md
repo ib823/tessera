@@ -97,7 +97,7 @@ unless it is marked as already traced in a brief.
 
 ## Tier G — global events with a Malaysian mechanism (develop next)
 
-### G1. On 4 Nov, US voters rejected data centres in 40 of 41 local ballots. The same day, Google committed US$15b more to Malaysia. → **in pipeline as 2016**
+### G1. On 3 Nov, US voters backed limits on data centres in 40 of 41 local ballots. The next day, Google committed US$15b more to Malaysia. → **in pipeline as 2016**
 - **Radar:** foreign stream 6-7 Nov: Al Jazeera "How the US midterm
   elections reflected resistance to data centres"; "Protesters break into
   Microsoft data centre site in Amsterdam"; Nikkei "US midterms live:
@@ -108,14 +108,21 @@ unless it is marked as already traced in a brief.
   10 Oct "Wider electricity bill protection, RM15b national grid
   investment will benefit households, says TNB" (0.392).
 - **Why develop:** the same week, three signals point one way. American
-  voters used local ballots to block data centres (reported by CNBC from
-  the Data Centers on the Ballot tracker); Europeans are protesting on
-  site; markets sold AI stocks on fears of a regulating Congress.
-  Malaysia, meanwhile, celebrated a larger commitment. The question
-  Malaysian coverage has not asked: **who in Malaysia gets the vote that
-  American towns just used**, and who carries the grid, water and
-  stranded-asset risk if the AI build-out slows. Builds on **1963**
-  (Johor water, the moratorium's AI carve-out) without repeating it.
+  voters favoured limiting data centres in 40 of 41 local measures on 3
+  Nov (Ballotpedia; mostly size caps and moratoriums, some advisory);
+  protesters broke into a Microsoft site in Amsterdam on 6 Nov; markets
+  sold AI stocks on fears of a regulating Congress. Malaysia, on 4 Nov,
+  celebrated a larger commitment (Google's sites: Selangor and Negeri
+  Sembilan). Research narrowed the angle (7 Nov): Malaysia has written
+  cost-recovery rules (UHV tariff, contracted-capacity charges, water
+  tariff and capital contributions), but data centres are **not a
+  prescribed activity under the EIA Order 2015**, the nearest trigger
+  carries no public comment, and the Data Centre Bill reaches Cabinet
+  only in 2027, while approvals total 117 data centres and about
+  23,500MW of maximum demand. The question Malaysian coverage has not
+  asked: **who in Malaysia gets the say that American towns just used.**
+  Builds on **1963** (Johor water, the AI carve-out) without repeating
+  it; 1963's brief is now outdated on several counts.
 - **Verification path:** the official Google / MITI / MIDA statement of
   4 Nov; the ballot tracker and two county results pages; Knight Frank /
   C&W / BMI Johor capacity figures with definitions; the Energy
@@ -127,8 +134,8 @@ unless it is marked as already traced in a brief.
   `engine/briefs/data-centres-us-voted-out-malaysia-in.md`.
 - **Lenses:** Economic, Environmental, Governance (alt: Technology).
 - **Risk flags:** all LOW for 3R. Overclaim traps: (a) the US ballots were
-  local and mostly in 10 states; never write "America rejected data
-  centres"; (b) "AI bubble" is commentary, not a finding; attribute it;
+  41 local measures in 10 states that "favoured limiting" development;
+  never write "America rejected data centres"; (b) "AI bubble" is commentary, not a finding; attribute it;
   (c) do not imply Google's projects are harmful; the issue is who
   decides and who pays. **Stage 5:** not triggered.
 - **Related:** 1963, 1995, 1931 (draft).
