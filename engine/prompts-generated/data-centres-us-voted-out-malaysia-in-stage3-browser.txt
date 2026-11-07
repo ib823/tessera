@@ -1,0 +1,235 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Google pledged US$15b on 4 Nov and to pay 100% of its own power. Malaysia has written data-centre rules on who pays, none on who gets heard.",
+      "sub": "Since 1 Aug 2025, data centres in the Peninsula and Labuan pay their own water tariff. The EIA Order still has no data-centre line.",
+      "sources": [
+        "Google press release, 4 Nov 2026 (US$15b, 2027-2028; pays 100% of campus power and direct grid-connection costs) [brief S1]",
+        "The Star, 20 Oct 2026, Fadillah written reply: separate data-centre water tariff RM5.30-5.38/m3, Peninsular Malaysia and Labuan, effective 1 Aug 2025 [S11]",
+        "EIA Order 2015, P.U.(A) 195/2015, First and Second Schedules: no data-centre entry [S2]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "On 24 Jul, Greenpeace Malaysia and others asked DOE to list data centres for a public-display EIA. The EIA Order has no such line.",
+      "s": "A campus enters the Order only as a 20-hectare 'industrial estate', a First Schedule category with no public display unless the Director General directs it.",
+      "d": "The Environmental Quality (Prescribed Activities) (Environmental Impact Assessment) Order 2015 (P.U.(A) 195/2015) sorts prescribed activities into two schedules. Second Schedule activities, such as coal-fired power stations of 10MW or more, 'require public display and public comment' (para 3(3)). First Schedule activities, such as an industrial estate of 20 hectares or more, 'do not require public display and public comment unless otherwise instructed, in writing, by the Director General' (para 3(2)). Neither schedule contains a data-centre, computer or ICT entry. On 24 July 2026 Greenpeace Malaysia and co-signatories asked for data centres to be listed 'as a prescribed activity requiring a Schedule 2 Environmental Impact Assessment'. No amending order adding such an entry was found as of 7 Nov 2026. The PLANMalaysia data-centre planning guideline (Cabinet, 8 Oct 2024) lists DOE's environmental assessment among approvals but does not itself create an EIA trigger.",
+      "sources": [
+        "EIA Order 2015, P.U.(A) 195/2015, paras 3(2)-(3), First and Second Schedules (AGC text) [S2]",
+        "Greenpeace Malaysia et al., 24 Jul 2026 joint statement [S48]",
+        "PLANMalaysia, Garis Panduan Perancangan Pusat Data, 2024 [S4]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.",
+      "s": "On 4 Nov 2026 Johari put approvals at 117 data centres and about 23,500MW. Many early-stage projects plan off-grid power; approved grid supply was 12.3GW in August.",
+      "d": "AMRO's 2026 Malaysia report: power-supply applications from data centres 'had exceeded 11,000MW, equivalent to around 40 percent of Peninsular Malaysia's capacity of 27,000MW' as of December 2024. On 4 Nov 2026, at the Google event, Investment, Trade and Industry Minister Johari Abdul Ghani said 117 data centres had been approved, with a combined maximum demand of about 23,500MW on completion (55 operational, 19 under construction, 16 approved but not started, 27 at other stages; W.Media reports many of the 27 expect off-grid supply). The energy ministry's written reply (via The Star, 20 Oct 2026) put approved grid supply at 12.3GW as of August. The ministry projects Peninsular data-centre demand of 8,391MW by 2030, of which Johor 4,428MW. Ministers say costs follow 'cost causation': an Ultra High Voltage tariff since 1 July 2025 for all supply above 50kV, data centres included; a higher Connected Load Charge; a data-centre water tariff; developer capital for water works; and at least 30% renewables. Utilisation figures use different denominators across replies, so no trend is claimed.",
+      "sources": [
+        "AMRO, Malaysia Annual Consultation Report 2026, Selected Issue 1 (data-centre boom) [S7]",
+        "NST, 4 Nov 2026, Johari remarks at the Google event (117; ~23,500MW) [S18]; W.Media, 29 Oct 2026 (27 early-stage, off-grid) [S28]",
+        "The Star, 20-21 Oct 2026, Fadillah written reply (12.3GW; UHV; Connected Load Charge; 30% renewables) [S11, S12]",
+        "The Vibes, 20 Oct 2026, PETRA reply (8,391MW Peninsular by 2030; Johor 4,428MW) [S14]",
+        "The Vibes, 4 Nov 2026, Fadillah written reply (user pays; developer capital for water) [S13]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Planning permission is the local council's call. Neighbouring landowners get 21 days' notice to object only where no local plan exists.",
+      "s": "In planned areas the objection window is the zoning plan itself, open for at least four weeks (TCPA ss13, 16). A Data Centre Bill reaches Cabinet only in 2027.",
+      "d": "Under the Town and Country Planning Act 1976 (Act 172, reprint as at 1 June 2021), an application for planning permission 'shall be made to the local planning authority' (s21(1)). Section 21(6) requires the authority to notify the owners of neighbouring lands of their right to object within 21 days, with a hearing on request (s21(7)), only 'if the proposed development is located in an area in respect of which no local plan exists'. Where a local plan exists, the public's formal objection point is the plan: draft local plans and alterations must be advertised in three issues of at least two local newspapers, with not less than four weeks for objections (ss13(2), 16(3)); a local inquiry is discretionary (s14(1)); and permission may not contravene the plan (s22(4)(a)). The Data Centre Task Force assesses power and water; it does not grant planning permission. The 2024 data-centre planning guideline sets 99-, 29-, 22- and 33-day tracks; the fast tracks presuppose conforming land and an approved layout, and its text shows no objection step. On 19 Oct 2026 the National Economic Action Council agreed to draft a Digital Infrastructure (Data Centre) Bill for Cabinet in 2027; no draft has been published. Counterweight: in Kota Damansara (Selangor), residents objected in July 2026 and the consultant withdrew the application on 28 Jul, which MBPJ said was 'to allow the developer to re-evaluate the feasibility of the site'.",
+      "sources": [
+        "Town and Country Planning Act 1976 (Act 172), reprint as at 1 Jun 2021, ss12A, 13, 14, 16(3), 21(1), 21(6)-(8), 22(4)(a) [S3]",
+        "PLANMalaysia, Garis Panduan Perancangan Pusat Data, 2024 [S4]",
+        "NST, 19 Oct 2026, Data Centre Bill to Cabinet next year (Akmal Nasrullah) [S17]",
+        "The Star, 30 Jul 2026, MBPJ statement on Kota Damansara withdrawal [S27]"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "Kelantan's gazette prices a data centre's water at RM5.32 a cubic metre. Whether neighbouring landowners hear of the project first depends on the local plan.",
+      "sources": [
+        "Kelantan water rates (Amendment) Regulations 2025, P.U.(A) 226/2025, in force 1 Aug 2025 [S5]",
+        "TCPA 1976 s21(6) [S3]"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of a condo that meters its new rooftop chiller separately",
+      "text": "The chiller pays its own power. But the residents' only formal chance to object came years earlier, when the building plan was approved."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "User-pays rules are meant to protect the household bill. Anyone can object to a zoning plan, but neighbouring landowners get a say on the project itself only where no local plan exists. The Data Centre Bill, due at Cabinet in 2027, is where Malaysia can write who gets heard.",
+      "sources": [
+        "The Vibes, 4 Nov 2026, Fadillah written reply (intent to shield households) [S13]",
+        "TCPA 1976 ss13, 16(3), 21(6) [S3]",
+        "NST, 19 Oct 2026 [S17]"
+      ]
+    }
+  ],
+  "headline_suggestion": "Data centres: Malaysia wrote rules on who pays, and none on who gets heard",
+  "context_suggestion": "On 4 Nov, Google committed US$15b to data centres in Selangor and Negeri Sembilan, adding to 117 approved nationwide. A day earlier, voters in 40 of 41 local US contests (21 in Ohio; results unofficial) favoured limits.",
+  "sources": "EIA Order 2015 P.U.(A) 195/2015 (AGC); Town and Country Planning Act 1976 (Act 172) reprint 2021; PLANMalaysia Garis Panduan Perancangan Pusat Data 2024; Kelantan water rates regulations P.U.(A) 226/2025; AMRO Malaysia ACR 2026; Google press release 4 Nov 2026; The Star 20-21 Oct 2026 (Fadillah written reply); The Vibes 20 Oct and 4 Nov 2026 (PETRA and Fadillah replies); NST 19 Oct and 4 Nov 2026; W.Media 29 Oct 2026; The Star 30 Jul 2026 (MBPJ); Greenpeace Malaysia 24 Jul 2026; Ballotpedia 3 and 6 Nov 2026 (context line only)",
+  "confidence": "Medium-High. HIGH on the statutes and the planning guideline (EIA Order 2015, TCPA 1976, Kelantan gazette and PLANMalaysia guideline opened in full and checked by an independent verifier). MEDIUM on ministerial figures (117 approvals and ~23,500MW are remarks at an event; 12.3GW, the water-tariff range and the user-pays rules reach the brief via news reports of written replies because parliament.gov.my was unreachable). The US ballot figures appear only on the suggested context line, attributed to Ballotpedia and labelled unofficial.",
+  "lenses_used": [
+    "Legal",
+    "Economic",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Regional",
+    "Environmental",
+    "Technology"
+  ],
+  "needs_verification": [
+    "EIA Order 2015: confirm no amending order since gazettal (28 Aug 2015) adds a data-centre, computer or ICT entry. A Sahabat Alam Malaysia submission (about Sep 2026) still describes data centres as not prescribed; no P.U.(A) gazette search was completed.",
+    "TCPA 1976 s21(6)-(8): the text used is the reprint as at 1 Jun 2021; confirm no later amendment changed the neighbour-notice rule or added a data-centre-specific step.",
+    "Johari's 117 approvals and ~23,500MW (4 Nov 2026) are event remarks reported by NST, not a written reply; the 27 early-stage projects 'expecting off-grid supply' is W.Media's report.",
+    "12.3GW approved grid supply (Aug 2026), the RM5.30-5.38/m3 Peninsula-and-Labuan water tariff from 1 Aug 2025, the UHV tariff from 1 Jul 2025 and the 30% renewables rule: all via The Star/The Vibes reports of written replies; Hansard or reply PDFs not opened.",
+    "AMRO's '11,000MW ... around 40 percent of Peninsular Malaysia's capacity of 27,000MW' is AMRO's own comparison for Dec 2024; keep the date on any card.",
+    "Greenpeace Malaysia et al., 24 Jul 2026: confirm the request was addressed to DOE and the exact wording 'prescribed activity requiring a Schedule 2 Environmental Impact Assessment'.",
+    "Digital Infrastructure (Data Centre) Bill 'for Cabinet next year' (NEAC, 19 Oct 2026): confirm no draft or public consultation has been published.",
+    "Kota Damansara: the legal basis of the July 2026 objection window in a planned area is unresolved (brief CONTRADICTION 6); the card cites only MBPJ's own wording on the withdrawal."
+  ],
+  "source_notes": "(1) Capacity denominators differ across ministerial replies (declared maximum demand Jun 2025; maximum approved demand Apr 2026; contracted demand Aug 2026; PETRA 'supply capacity' 6,041MW for Aug 2026), so no utilisation trend is claimed. (2) 23,500MW (approved, on completion, partly off-grid) and 12.3GW (approved grid supply) measure different things; they appear together only with the off-grid caveat. (3) The water tariff range is from the minister's reply; Kelantan's gazette (RM5.32/m3) is the one state regulation opened, so the reframe uses Kelantan by name. (4) The Star reported the planning guideline 'requires' a 50m buffer; the guideline allows no buffer if noise stays within 5dB of baseline; not used on cards. (5) US measure counts: Ballotpedia 41 contests / 40 favouring limits vs Redbud's 44 pre-vote measures; Ballotpedia used, on the context line only. (6) No source links Google's Malaysia investment to the US votes; the context line presents them as parallel events, not cause and effect.",
+  "guardrails_applied": [
+    "G1 no displacement claim; US votes on the context line only",
+    "G2 no market causation",
+    "G3 41 local contests, 21 in Ohio, unofficial",
+    "G4 plan-stage objection acknowledged on fact 3 and the view",
+    "G5 fast tracks presuppose conforming land (fact 3 detail)",
+    "G6 local council grants permission",
+    "G7 Google appears with its 100% power pledge; no Johor grievance beside Google",
+    "G8 no household-bill expiry beside data-centre costs",
+    "G9 23,500MW only with the off-grid caveat and 12.3GW",
+    "G10 BMI 90% not used",
+    "G11 Kota Damansara in MBPJ's words",
+    "G12 Ramli Paiman not used",
+    "G13 Johor 2024 rejection rate not used",
+    "G14 RM5b reservoirs not used",
+    "G15 'meant to' protect"
+  ],
+  "pa_score": 83
+}

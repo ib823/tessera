@@ -1,0 +1,236 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Google pledged US$15b on 4 Nov and to pay 100% of its own power. Malaysia has written data-centre rules on who pays, none on who gets heard.",
+      "sub": "Since 1 Aug 2025, data centres in the Peninsula and Labuan pay their own water tariff. The EIA Order still has no data-centre line.",
+      "sources": [
+        "Google press release, 4 Nov 2026 (US$15b, 2027-2028; pays 100% of campus power and direct grid-connection costs) [brief S1]",
+        "The Star, 20 Oct 2026, Fadillah written reply: separate data-centre water tariff RM5.30-5.38/m3, Peninsular Malaysia and Labuan, effective 1 Aug 2025 [S11]",
+        "EIA Order 2015, P.U.(A) 195/2015, First and Second Schedules: no data-centre entry [S2]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "On 24 Jul, Greenpeace Malaysia and others asked DOE to list data centres for a public-display EIA. The EIA Order has no such line.",
+      "s": "A campus enters the Order only as a 20-hectare 'industrial estate', a First Schedule category with no public display unless the Director General directs it.",
+      "d": "The Environmental Quality (Prescribed Activities) (Environmental Impact Assessment) Order 2015 (P.U.(A) 195/2015) sorts prescribed activities into two schedules. Second Schedule activities, such as coal-fired power stations of 10MW or more, 'require public display and public comment' (para 3(3)). First Schedule activities, such as an industrial estate of 20 hectares or more, 'do not require public display and public comment unless otherwise instructed, in writing, by the Director General' (para 3(2)). Neither schedule contains a data-centre, computer or ICT entry. On 24 July 2026 Greenpeace Malaysia and co-signatories asked for data centres to be listed 'as a prescribed activity requiring a Schedule 2 Environmental Impact Assessment'. No amending order adding such an entry was found as of 7 Nov 2026. The PLANMalaysia data-centre planning guideline (Cabinet, 8 Oct 2024) lists DOE's environmental assessment among approvals but does not itself create an EIA trigger.",
+      "sources": [
+        "EIA Order 2015, P.U.(A) 195/2015, paras 3(2)-(3), First and Second Schedules (AGC text) [S2]",
+        "Greenpeace Malaysia et al., 24 Jul 2026 joint statement [S48]",
+        "PLANMalaysia, Garis Panduan Perancangan Pusat Data, 2024 [S4]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.",
+      "s": "On 4 Nov 2026 Johari put approvals at 117 data centres and about 23,500MW. Many early-stage projects plan off-grid power; approved grid supply was 12.3GW in August.",
+      "d": "AMRO's 2026 Malaysia report: power-supply applications from data centres 'had exceeded 11,000MW, equivalent to around 40 percent of Peninsular Malaysia's capacity of 27,000MW' as of December 2024. On 4 Nov 2026, at the Google event, Investment, Trade and Industry Minister Johari Abdul Ghani said 117 data centres had been approved, with a combined maximum demand of about 23,500MW on completion (55 operational, 19 under construction, 16 approved but not started, 27 at other stages; W.Media reports many of the 27 expect off-grid supply). The energy ministry's written reply (via The Star, 20 Oct 2026) put approved grid supply at 12.3GW as of August. The ministry projects Peninsular data-centre demand of 8,391MW by 2030, of which Johor 4,428MW. Ministers say costs follow 'cost causation': an Ultra High Voltage tariff since 1 July 2025 for all supply above 50kV, data centres included; a higher Connected Load Charge; a data-centre water tariff; developer capital for water works; and at least 30% renewables. Utilisation figures use different denominators across replies, so no trend is claimed.",
+      "sources": [
+        "AMRO, Malaysia Annual Consultation Report 2026, Selected Issue 1 (data-centre boom) [S7]",
+        "NST, 4 Nov 2026, Johari remarks at the Google event (117; ~23,500MW) [S18]; W.Media, 29 Oct 2026 (27 early-stage, off-grid) [S28]",
+        "The Star, 20-21 Oct 2026, Fadillah written reply (12.3GW; UHV; Connected Load Charge; 30% renewables) [S11, S12]",
+        "The Vibes, 20 Oct 2026, PETRA reply (8,391MW Peninsular by 2030; Johor 4,428MW) [S14]",
+        "The Vibes, 4 Nov 2026, Fadillah written reply (user pays; developer capital for water) [S13]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "Planning permission is the local council's call. Neighbouring landowners get 21 days' notice to object only where no local plan exists.",
+      "s": "In planned areas the objection window is the zoning plan itself, open for at least four weeks (TCPA ss13, 16). A Data Centre Bill reaches Cabinet only in 2027.",
+      "d": "Under the Town and Country Planning Act 1976 (Act 172, reprint as at 1 June 2021), an application for planning permission 'shall be made to the local planning authority' (s21(1)). Section 21(6) requires the authority to notify the owners of neighbouring lands of their right to object within 21 days, with a hearing on request (s21(7)), only 'if the proposed development is located in an area in respect of which no local plan exists'. Where a local plan exists, the public's formal objection point is the plan: draft local plans and alterations must be advertised in three issues of at least two local newspapers, with not less than four weeks for objections (ss13(2), 16(3)); a local inquiry is discretionary (s14(1)); and permission may not contravene the plan (s22(4)(a)). The Data Centre Task Force assesses power and water; it does not grant planning permission. The 2024 data-centre planning guideline sets 99-, 29-, 22- and 33-day tracks; the fast tracks presuppose conforming land and an approved layout, and its text shows no objection step. On 19 Oct 2026 the National Economic Action Council agreed to draft a Digital Infrastructure (Data Centre) Bill for Cabinet in 2027; no draft has been published. Counterweight: in Kota Damansara (Selangor), residents objected in July 2026 and the consultant withdrew the application on 28 Jul, which MBPJ said was 'to allow the developer to re-evaluate the feasibility of the site'.",
+      "sources": [
+        "Town and Country Planning Act 1976 (Act 172), reprint as at 1 Jun 2021, ss12A, 13, 14, 16(3), 21(1), 21(6)-(8), 22(4)(a) [S3]",
+        "PLANMalaysia, Garis Panduan Perancangan Pusat Data, 2024 [S4]",
+        "NST, 19 Oct 2026, Data Centre Bill to Cabinet next year (Akmal Nasrullah) [S17]",
+        "The Star, 30 Jul 2026, MBPJ statement on Kota Damansara withdrawal [S27]"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "Kelantan's gazette prices a data centre's water at RM5.32 a cubic metre. Whether neighbouring landowners hear of the project first depends on the local plan.",
+      "sources": [
+        "Kelantan water rates (Amendment) Regulations 2025, P.U.(A) 226/2025, in force 1 Aug 2025 [S5]",
+        "TCPA 1976 s21(6) [S3]"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of a condo that meters its new rooftop chiller separately",
+      "text": "The chiller pays its own power. But the residents' only formal chance to object came years earlier, when the building plan was approved."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "User-pays rules are meant to protect the household bill. Anyone can object to a zoning plan, but neighbouring landowners get a say on the project itself only where no local plan exists. The Data Centre Bill, due at Cabinet in 2027, is where Malaysia can write who gets heard.",
+      "sources": [
+        "The Vibes, 4 Nov 2026, Fadillah written reply (intent to shield households) [S13]",
+        "TCPA 1976 ss13, 16(3), 21(6) [S3]",
+        "NST, 19 Oct 2026 [S17]"
+      ]
+    }
+  ],
+  "headline_suggestion": "Data centres: Malaysia wrote rules on who pays, and none on who gets heard",
+  "context_suggestion": "On 4 Nov, Google committed US$15b to data centres in Selangor and Negeri Sembilan, adding to 117 approved nationwide. A day earlier, voters in 40 of 41 local US contests (21 in Ohio; results unofficial) favoured limits.",
+  "sources": "EIA Order 2015 P.U.(A) 195/2015 (AGC); Town and Country Planning Act 1976 (Act 172) reprint 2021; PLANMalaysia Garis Panduan Perancangan Pusat Data 2024; Kelantan water rates regulations P.U.(A) 226/2025; AMRO Malaysia ACR 2026; Google press release 4 Nov 2026; The Star 20-21 Oct 2026 (Fadillah written reply); The Vibes 20 Oct and 4 Nov 2026 (PETRA and Fadillah replies); NST 19 Oct and 4 Nov 2026; W.Media 29 Oct 2026; The Star 30 Jul 2026 (MBPJ); Greenpeace Malaysia 24 Jul 2026; Ballotpedia 3 and 6 Nov 2026 (context line only)",
+  "confidence": "Medium-High. HIGH on the statutes and the planning guideline (EIA Order 2015, TCPA 1976, Kelantan gazette and PLANMalaysia guideline opened in full and checked by an independent verifier). MEDIUM on ministerial figures (117 approvals and ~23,500MW are remarks at an event; 12.3GW, the water-tariff range and the user-pays rules reach the brief via news reports of written replies because parliament.gov.my was unreachable). The US ballot figures appear only on the suggested context line, attributed to Ballotpedia and labelled unofficial.",
+  "lenses_used": [
+    "Legal",
+    "Economic",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Regional",
+    "Environmental",
+    "Technology"
+  ],
+  "needs_verification": [
+    "EIA Order 2015: confirm no amending order since gazettal (28 Aug 2015) adds a data-centre, computer or ICT entry. A Sahabat Alam Malaysia submission (about Sep 2026) still describes data centres as not prescribed; no P.U.(A) gazette search was completed.",
+    "TCPA 1976 s21(6)-(8): the text used is the reprint as at 1 Jun 2021; confirm no later amendment changed the neighbour-notice rule or added a data-centre-specific step.",
+    "Johari's 117 approvals and ~23,500MW (4 Nov 2026) are event remarks reported by NST, not a written reply; the 27 early-stage projects 'expecting off-grid supply' is W.Media's report.",
+    "12.3GW approved grid supply (Aug 2026), the RM5.30-5.38/m3 Peninsula-and-Labuan water tariff from 1 Aug 2025, the UHV tariff from 1 Jul 2025 and the 30% renewables rule: all via The Star/The Vibes reports of written replies; Hansard or reply PDFs not opened.",
+    "AMRO's '11,000MW ... around 40 percent of Peninsular Malaysia's capacity of 27,000MW' is AMRO's own comparison for Dec 2024; keep the date on any card.",
+    "Greenpeace Malaysia et al., 24 Jul 2026: confirm the request was addressed to DOE and the exact wording 'prescribed activity requiring a Schedule 2 Environmental Impact Assessment'.",
+    "Digital Infrastructure (Data Centre) Bill 'for Cabinet next year' (NEAC, 19 Oct 2026): confirm no draft or public consultation has been published.",
+    "Kota Damansara: the legal basis of the July 2026 objection window in a planned area is unresolved (brief CONTRADICTION 6); the card cites only MBPJ's own wording on the withdrawal."
+  ],
+  "source_notes": "(1) Capacity denominators differ across ministerial replies (declared maximum demand Jun 2025; maximum approved demand Apr 2026; contracted demand Aug 2026; PETRA 'supply capacity' 6,041MW for Aug 2026), so no utilisation trend is claimed. (2) 23,500MW (approved, on completion, partly off-grid) and 12.3GW (approved grid supply) measure different things; they appear together only with the off-grid caveat. (3) The water tariff range is from the minister's reply; Kelantan's gazette (RM5.32/m3) is the one state regulation opened, so the reframe uses Kelantan by name. (4) The Star reported the planning guideline 'requires' a 50m buffer; the guideline allows no buffer if noise stays within 5dB of baseline; not used on cards. (5) US measure counts: Ballotpedia 41 contests / 40 favouring limits vs Redbud's 44 pre-vote measures; Ballotpedia used, on the context line only. (6) No source links Google's Malaysia investment to the US votes; the context line presents them as parallel events, not cause and effect.",
+  "guardrails_applied": [
+    "G1 no displacement claim; US votes on the context line only",
+    "G2 no market causation",
+    "G3 41 local contests, 21 in Ohio, unofficial",
+    "G4 plan-stage objection acknowledged on fact 3 and the view",
+    "G5 fast tracks presuppose conforming land (fact 3 detail)",
+    "G6 local council grants permission",
+    "G7 Google appears with its 100% power pledge; no Johor grievance beside Google",
+    "G8 no household-bill expiry beside data-centre costs",
+    "G9 23,500MW only with the off-grid caveat and 12.3GW",
+    "G10 BMI 90% not used",
+    "G11 Kota Damansara in MBPJ's words",
+    "G12 Ramli Paiman not used",
+    "G13 Johor 2024 rejection rate not used",
+    "G14 RM5b reservoirs not used",
+    "G15 'meant to' protect"
+  ],
+  "pa_score": 83
+}
