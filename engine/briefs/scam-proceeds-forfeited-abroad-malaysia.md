@@ -1,4 +1,4 @@
-# BRIEF — Since 1 March 2026 a Malaysian court can order restitution before anyone is charged. This review found no reported order; the NSRC returned RM6.65m to scam victims in 2025.
+# BRIEF — Since June 2012 Malaysia's Criminal Procedure Code has said courts shall order compensation for victims when prosecutors ask. No published count shows how often prosecutors ask in scam cases.
 
 **Slug:** scam-proceeds-forfeited-abroad-malaysia
 **Proposed issue ID:** 2018
@@ -10,101 +10,96 @@ sanctions on Cambodia's Prince Group over online scams" (published 7 Nov 07:30 J
 reports is dated **5 Nov 2026**, see CONTRADICTION 7). Curated as **G3** in
 `radar/output/top-issues-to-develop.md` (scan 2026-11-07 20:10 UTC); absorbs D2.
 **Source date:** 2026-11-07
-**Brief status:** Phase 1 rebuilt after independent verification (NEEDS MORE RESEARCH). Requires a second independent check before editor approval.
+**Brief status:** Phase 1 complete after two independent verifications and fixes. Awaiting editor approval before Stage 1.
 
 ## ISSUE
 
-**Editor's rebuilt thesis: the question is use, not absence.** The first draft argued that Malaysian law sends
-forfeited money to the Government and that pre-charge restitution existed only in the uncommenced Cybercrimes
-Bill. Independent verification showed both halves wrong (see INDEPENDENT VERIFICATION, B1 and B2). Malaysia
-already has the powers. What cannot be found is any public record of them being used for scam victims.
+**Editor's thesis (after two independent checks): the question is use, and the spine is CPC s. 426(1A).** The
+first draft said the law lacked victim remedies; the first check showed that was wrong. The rebuild then leaned on
+AMLA s. 83D; the second check showed that provision is a regulator's civil-enforcement tool, not a scam-victim
+remedy. The sound spine is the Criminal Procedure Code.
 
-**Power 1: AMLA s. 83D, in force since 1 March 2026.** Act A1761 inserted s. 83D into the Anti-Money Laundering
-Act [S2b]. The Finance Minister appointed 1 March 2026 as its commencement date by P.U.(B) 76/2026, dated 27
-February 2026 [S2c]. On an application by "the competent authority or the regulatory or supervisory authority"
-(Bank Negara Malaysia is the competent authority [S2a s. 7]), where a person has contravened, or is reasonably
-likely to contravene, "any provision of this Act", the court may make orders "whether or not that person has been
-charged with an offence", including an order to "remedy" the contravention "including making restitution to any
-other person aggrieved by such contravention" (s. 83D(1)(bb)) and an order restraining dealings in property
-(s. 83D(1)(dd)) [S2a, S2b]. The police and the Public Prosecutor are not named applicants.
-**This review found no reported s. 83D application or order as of 7 November 2026** (search described in REBUILD
-RESEARCH, Q2). The 23 Bank Negara enforcement notices of 2026 checked here cite compounds, prosecutions and
-administrative penalties under other provisions; none cites s. 83C or s. 83D [S9]. Bank Negara's stated reasons
-for the amendment are FATF alignment, "operational challenges in relation to the freezing, seizure and forfeiture
-of illicit proceeds", investigation and prosecution, and compliance clarity; victim restitution is not among them
-[S6 p. 94]. The same Act gives Bank Negara power to "publish ... the outcome" of any action under it (s. 83E)
-[S2b].
+**The law already says "shall".** Under CPC s. 426(1A), "the Court before which an accused is convicted of an
+offence shall, upon the application of the Public Prosecution, make an order against the convicted accused for
+the payment by him ... of a sum to be fixed by the Court as compensation to a person who is the victim of the
+offence committed by the convicted accused in respect of the injury to his person or character, or loss of his
+income or property" [S3a p. 233]. The court must weigh factors including "the ability of the convicted accused to
+pay" (s. 426(1C)(f)) and may hold an inquiry (s. 426(1D)) [S3a p. 234]. The AGC's updated text records s. 426 as
+last amended by Acts A1378 and A1422, both in force on 1 June 2012 [S3a, list of sections amended]; the 2006
+reprint had no subsection (1A); later CPC amendments (A1692, A1722, A1751) do not touch s. 426 [S3b, S3c, S3d].
+Two conditions apply: the prosecutor must apply, and the order runs only to "the victim of the offence committed
+by the convicted accused".
 
-**Power 2: CPC s. 426(1A), mandatory compensation after conviction.** The court before which an accused is
-convicted "shall, upon the application of the Public Prosecution, make an order ... as compensation to a person
-who is the victim of the offence ... in respect of ... loss of his income or property" [S3a s. 426(1A)]. The court
-must weigh factors including "the ability of the convicted accused to pay" (s. 426(1C)(f)) and may hold an inquiry
-(s. 426(1D)). In April 2026 the Attorney General directed prosecutors to apply for compensation; FMT reported him
-as acknowledging that seeking it was not a conventional practice of deputy public prosecutors [S22g]. Bank Negara
-counts 969 convictions of mule-account holders in 2025 [S6 p. 97]. **No official count of s. 426(1A) orders in
-scam or mule-account cases was found.**
+**The prosecutor's side.** On 15 April 2026 the Attorney General directed deputy public prosecutors to apply for
+compensation orders "in the appropriate cases"; FMT reported him as acknowledging that seeking compensation "was
+not a conventional practice of deputy public prosecutors and would not be possible in all cases" (reported speech)
+[S22g]. **No published count of s. 426(1A) applications or orders, in scam cases or generally, was found** (REBUILD
+RESEARCH Q3; second check). The AGC and the courts have not been asked (GAP 1).
 
-**Power 3: police freeze and court-ordered return (CPC s. 116D and the NSRC).** Since 30 October 2024 a police
-officer "not below the rank of Sergeant may seize or prohibit the dealing in, any money" in an account on
-reasonable suspicion (CPC s. 116D, Act A1722, in force by P.U.(B) 434/2024) [S3b, S4]. This route is in visible
-use: the NSRC "recorded a significant surge in returning funds to victims through the earmarking process, rising
-from RM508,479.39 in 2024 to RM6.65mil in 2025" (Saifuddin, 3 March 2026) [S22a]; and on 21 September 2026 a
-Sessions Court ordered RM1.505 million returned to Agrobank from 60 mule accounts, out of 1,903 accounts seized
-under s. 116D(2) holding RM16.929 million, on the bank's own application [S24e].
+**What is counted: the NSRC's earmarking route.** The Home Minister said the NSRC "recorded a significant surge in
+returning funds to victims through the earmarking process, rising from RM508,479.39 in 2024 to RM6.65mil in 2025"
+(The Star, 3 Mar 2026) [S22a]. The Home Ministry also publishes a same-pool return rate: from 2022 to 2025, RM25.2
+million seized, "29 per cent or RM7.3 million" returned; January to May 2026, RM7.25 million seized and RM3.57
+million (49%) returned (written reply to Ronald Kiandee, PN, 24 Jun 2026) [S21b]. Cumulatively the NSRC "recovered
+and returned RM14.3 million to online scam victims between Oct 12, 2022 and September this year" [S19]. In the
+same written reply of 24 June, the Home Ministry reported RM2.97 billion in online-fraud losses for 2025 [S21b]
+(a separate pool; never divided into the returns).
 
-**Pending power 4: Cybercrimes Bill 2026 cl. 54.** The Bill would let the Public Prosecutor or an authorised
-officer apply for a restitution or restraint order "whether or not that person has been charged" (cl. 54(1)(B),
-(D)); cl. 54(1)(B) orders the contravener, or a person "knowingly involved", to make restitution; it does not
-redirect forfeited property [S1]. It passed the Dewan Rakyat on 1 July and the Dewan Negara on 20 July 2026
-[S23a, S23b]. **As of 7 November 2026 the Attorney General's Chambers' legislation database lists no Cybercrimes
-Act and no commencement notice** [S4]. Its distinct feature against s. 83D is who may apply (prosecutor or
-authorised officer under a cybercrime law, rather than Bank Negara under the anti-money-laundering law).
+**Other return routes, each separately sourced.**
+- *Court-ordered return of frozen money.* Police may freeze account money under CPC s. 116D (in force 30 Oct 2024)
+  [S3b]. On 21 Sep 2026 a Sessions Court ordered RM1.505 million returned to Agrobank from 60 mule accounts, on the
+  bank's own application, out of 1,903 accounts seized under s. 116D(2) holding RM16.929 million; the money was the
+  bank's own settlement-account funds, and "all 60 account holders have agreed to the return of the funds" [S24e].
+  No source ties the NSRC's earmarking returns to s. 116D or to a court order.
+- *Magistrate's delivery order.* CPC s. 413: the Magistrate orders "delivery of the property to the person entitled
+  to the possession of it" [S3a p. 223]; the PM reported RM178,407 returned under s. 413 as of Dec 2024 [S22d].
+- *Civil suits and bank compensation.* A Sessions Court ordered Maybank to pay a customer RM166,000 in damages
+  (12 May 2026) [S24f]; BNM's SEFT policy covers unauthorised transactions only, and victims compensated under it
+  rose about 26% in 2025 (no base published) [S5 p. 83].
 
-**The figures, each with its own pool and window (no ratios across pools).**
-- NSRC returns: RM14.3 million returned to online-scam victims, 12 Oct 2022 to Sep 2026 [S19]. The minister set
-  this beside RM1.2 billion of losses reported through the 997 hotline (468,675 calls, 12 Oct 2022 to Aug 2026)
-  [S19]; no source says the RM14.3 million came only from 997-reported cases.
-- NSRC returns in 2025: RM6.65 million [S22a]. In the same year police recorded RM2.97 billion in online-scam
-  losses (Home Ministry, written reply of 24 Jun 2026) [S21b].
-- Saved, not returned: RM34.05 million "successfully saved from falling into the hands of syndicates" in 2025
-  [S22a]; RM100.93 million of losses prevented, Oct 2022 to Sep 2026 [S19]; about RM1.2 billion of attempted
-  fraudulent transactions prevented by the financial sector in 2025 [S8].
-- The Home Ministry's 3 Nov 2026 reply (RM1.23 billion, 18,213 victims, 1,754 charges, 2016 to Aug 2026) covers
-  a narrower, unconfirmed category and stays off the cards (CONTRADICTION 1) [S17].
+**Government's own words.** The Star reported that Saifuddin said the NSRC will be evaluated by its ability to
+recover stolen funds for victims (reporter's paraphrase) [S22a]. Law Minister Azalina said on 7 July 2026 that
+BHEUU is studying a legal mechanism for online-scam victims to be compensated or recover money; asked about the UK
+and Australia, where victims can get money back including through financial institutions, she said: "Di Malaysia,
+perkara itu belum ada" ("In Malaysia, that does not yet exist"), referring to that UK- and Australia-style
+mechanism [S24d].
 
-**Government's own words on the gap.** The Home Minister said the NSRC "will be evaluated by its ability to
-recover stolen funds for victims" (The Star's reported speech, 3 Mar 2026) [S22a]. On 7 July 2026 Law Minister
-Azalina Othman Said said BHEUU is studying a mechanism for online-scam victims to be compensated or recover money,
-following concern that existing law focuses more on punishing offenders than on protecting victims; on the UK and Australian return mechanisms she said: "Di
-Malaysia, perkara itu belum ada" ("In Malaysia, that does not yet exist") [S24d].
+**Secondary fact: AMLA s. 83D (always with these labels).** Since 1 March 2026 [S2c], on **Bank Negara's
+application** (no other "regulatory or supervisory authority" has been appointed [S4]), a court may order a person
+who breached the anti-money-laundering law to make "restitution to any other person aggrieved by such
+contravention", whether or not that person has been charged [S2a s. 83D]. **No reported use** (23 BNM enforcement
+notices of 2026 checked; none uses any of ss. 83A to 83E) [S9]. **Untested for scam victims**: the Bill's own
+Explanatory Statement ties s. 83D to civil action by the competent or regulatory authority [S23j], and that civil
+action (s. 83C) covers Parts IV, VIA and VIB [S2a]. **Pre-1 March 2026 conduct is saved** under A1761 s. 52(2):
+proceedings for breaches "committed before the date of coming into operation of this Act shall ... be conducted as
+if the principal Act had not been amended" [S2b]. s. 83D must not appear as a scam-victim remedy in the title,
+hook, headline or view.
 
-**Abroad, kept as labelled context, not as a comparison of returns.** The US filed a civil complaint *in rem* on
-14 Oct 2025 to forfeit about 127,271 bitcoin (DOJ valued it at about US$15 billion then) "to the use and benefit of
-the United States" [S10, S11]. It is a pending claim: no final forfeiture order was found, and no money from it
-has been reported paid to any victim; nine claimants were struck or refused on standing on 25 Sep 2026 (reported)
-[S25d]. US law has a written victim route: forfeited property may go "as restoration to any victim of the offense
-giving rise to the forfeiture" (18 U.S.C. § 981(e)(6)) [S14c], through a discretionary petition under 28 CFR 9.8,
-which DOJ may decline where "the total number of victims is large and the monetary amount ... so small" (9.8(e))
-[S14a]. Treasury's third round of Prince Group designations on 5 Nov 2026 named Malaysia-based Greenmeadows
-Properties Sdn Bhd [S12a]. Any card using the US must say "pending" and "no victim paid yet" (B6).
+**Pending: Cybercrimes Bill 2026 cl. 54.** Restitution and restraint orders on the Public Prosecutor's or an
+authorised officer's application, whether or not anyone is charged [S1]. As of 7 November 2026 the Attorney
+General's Chambers' legislation database lists no Cybercrimes Act and no commencement notice [S4].
 
-**Developable core (anger at process, not at victims, banks, police, Bank Negara or any country).** Parliament has
-given Malaysian courts a pre-charge restitution order (AMLA s. 83D) and a mandatory post-conviction compensation
-order (CPC s. 426(1A)), and is waiting to commence a third (Bill cl. 54). The government's own metric is how much
-the NSRC returns. Nobody publishes how often the court routes are asked for, granted or paid, although the AML law
-already lets Bank Negara publish outcomes. The process failure is the missing count, not a missing law.
+**Abroad (context only, never paired with Malaysian returns).** The US complaint *in rem* against about 127,271
+bitcoin (about US$15 billion at Oct 2025 prices) is a pending claim "to the use and benefit of the United States";
+no victim has been reported paid from it [S10, S11, S25d]. 18 U.S.C. § 981(e)(6) allows forfeited property to go
+"as restoration to any victim of the offense giving rise to the forfeiture" [S14c], through a discretionary DOJ
+petition process that may be declined where victims are many and amounts small (28 CFR 9.8(e)) [S14a]. Treasury's
+5 Nov 2026 designations named Malaysia-based Greenmeadows Properties Sdn Bhd [S12a].
+
+**Developable core (anger at process, not at prosecutors, courts, BNM, banks or victims).** Since 2012 the law has
+told courts to order convicted offenders to compensate their victims whenever the prosecutor applies, and in April
+2026 the Attorney General told prosecutors to apply. The government counts and publishes what the NSRC hands
+back, including its own return rate. No published count was found of how often prosecutors apply under s.
+426(1A), or how often courts order compensation, in scam cases. The missing number is the process failure.
 
 ## PERIOD
 
-- Core window: 1 March 2026 (AMLA s. 83D in force) to 7 November 2026.
-- Malaysian data windows (never merge): 2016 to Aug 2026 (3 Nov reply, category unconfirmed); 12 Oct 2022 to
-  Aug/Sep 2026 (NSRC 997 channel and NSRC returns); calendar 2024 and 2025 (NSRC returns; Home Ministry
-  online-scam losses); Jan to May 2026 (Home Ministry); late 2022 to Sep 2026 (PDRM AMLA team, corporate crime).
-- Law timeline: CPC s. 426(1A) in the AGC updated text as at 4 Jul 2023 (date of insertion not determined, GAP 11);
-  CPC s. 116D in force 30 Oct 2024; BNM SEFT effective 1 Oct 2024; AMLA amendment Bill passed Dewan Rakyat 11 Dec
-  2024 and Senate 18 Dec 2024; Royal Assent 24 Apr 2025; gazetted 14 May 2025; in force 1 Mar 2026; Cybercrimes
-  Bill first reading 22 Jun 2026, passed 1 and 20 Jul 2026, not listed as an Act.
-- Abroad: 14 Oct 2025 (DOJ complaint, OFAC/FinCEN, UK FCDO) to 5 Nov 2026 (third OFAC round).
+- Core window: 15 April 2026 (AG directive) to 7 November 2026; legal anchor 1 June 2012 (s. 426 last amended).
+- Data windows (never merge): NSRC returns by calendar year (2024, 2025), Jan to May 2026 and Jan to Aug 2026;
+  NSRC cumulative from 12 Oct 2022; Home Ministry online-fraud losses by calendar year; 3 Nov reply 2016 to Aug 2026
+  (category unconfirmed, off cards); PDRM AMLA team late 2022 to Sep 2026 (corporate crime, off cards).
+- Other law: CPC s. 116D and Penal Code ss. 424A to 424D in force 30 Oct 2024; SEFT 1 Oct 2024; AMLA ss. 83A to 83E
+  1 Mar 2026; Cybercrimes Bill passed 1 and 20 Jul 2026, not listed as an Act.
 
 ## CONTEXT (timeline with sources)
 
@@ -112,489 +107,399 @@ already lets Bank Negara publish outcomes. The process failure is the missing co
 
 | Date | Event | Source |
 |---|---|---|
-| 7 or 12 Oct 2022 | NSRC begins operating (12 Oct per Fahmi Fadzil; "initial operations on Oct 7, 2022" per The Star), 8am to 8pm at BNM's Sasana Kijang, 300 to 400 calls a day. | [S22i], [S22a] |
+| 1 Jun 2012 | CPC s. 426 amendments (Acts A1378 and A1422) in force; current s. 426 text includes (1A) to (1D). | [S3a], [S3e] |
+| 7 or 12 Oct 2022 | NSRC begins operating (12 Oct per Fahmi Fadzil; "initial operations on Oct 7, 2022" per The Star). | [S22i], [S22a] |
 | 23 May 2023 | PM Anwar: "The government has agreed to amend the Criminal Procedure Code (CPC) to allow refunds to victims of online scams"; the government "had so far recovered RM34.8 million". | [S22e] |
-| 28 Jun 2024 | BNM issues SEFT policy (unauthorised e-banking transactions), effective 1 Oct 2024. | [S7] |
-| 30 Oct 2024 | CPC s. 116D (police freeze or seizure of account money) and Penal Code ss. 424A to 424D in force (Act A1722; P.U.(B) 434/2024). | [S3b], [S4], [S22f] |
-| 3 Dec 2024 | PMQT. Malay Mail reports Anwar agreed Malaysia should adopt the UK's compensation principle, provided banks were found negligent (reported speech); and quotes him: "according to Section 413 of the CPC, RM178,407 has been returned". | [S22d] |
-| 11 and 18 Dec 2024 | AMLA (Amendment) Bill 2024 passes the Dewan Rakyat (tabled by Deputy Finance Minister Lim Hui Ying; "main objective is to strengthen supervision and enforcement") and the Senate. | [S23g], [S23h] |
-| 24 Apr / 14 May 2025 | Act A1761 receives Royal Assent and is published in the Gazette. | [S2b] |
-| Jul 2025 | NSRC placed under PDRM's Commercial Crime Investigation Department. | [S6 p. 96] |
-| Dec 2025 | NSRC operating around the clock at MCMC Tower 2 (Fahmi, 22 Dec 2025). | [S22i] |
-| 27 Jan 2026 | Saifuddin (oral answer to Yeo Bee Yin): victims' money "diselamatkan" RM508,479.39 (2024) and RM6.7m (2025); RM34m saved in 2025; RM542m in losses recorded from victims' complaints in 2025. | [S22b], [S22c] |
-| 27 Feb 2026 | P.U.(B) 76/2026: Finance Minister appoints 1 March 2026 as the date Act A1761 comes into operation. | [S2c] |
-| **1 Mar 2026** | **AMLA ss. 83A to 83E in force, including the s. 83D restitution order.** | [S2a], [S2b], [S2d] |
-| 3 Mar 2026 | NSRC 24/7 service formally launched. Saifuddin: 146,167 complaint calls and 138,915 accounts frozen in 2025; RM34.05m saved; earmarked returns RM508,479.39 (2024) to RM6.65m (2025). | [S22a] |
-| 31 Mar 2026 | BNM Annual Report 2025: about 95% of online fraud cases are authorised transactions; 969 mule-account convictions in 2025; amendments "addressed operational challenges in relation to the freezing, seizure and forfeiture of illicit proceeds". | [S5 p. 84], [S6 pp. 94, 97] |
-| 15 Apr 2026 | AG directs DPPs to apply for compensation under CPC s. 426 (FMT, reported speech). | [S22g] |
-| 12 May 2026 | KL Sessions Court orders Maybank to pay a customer RM166,000 in damages for failing to stop suspicious transfers (civil suit, not a CPC order). | [S24f] |
-| 7 Jul 2026 | Azalina: BHEUU studying a compensation or refund mechanism for online-scam victims; "Di Malaysia, perkara itu belum ada". | [S24d] |
-| 21 Sep 2026 | Sessions Court orders RM1.505m returned to Agrobank from 60 mule accounts; 1,903 accounts seized under CPC s. 116D(2) holding RM16.929m. | [S24e] |
-| 27 Oct 2026 | Saifuddin, winding up Supply Bill 2027: NSRC "recovered and returned RM14.3 million" (12 Oct 2022 to Sep 2026); RM1.2b reported via 997 (468,675 calls, to Aug 2026); RM100.93m prevented. "Are we satisfied with this? The answer is no". | [S19] |
-| 3 Nov 2026 | Home Ministry written reply to Lim Guan Eng: RM1.23b, 18,213 victims, 1,754 charges (2016 to Aug 2026); RM14.01m returned since 12 Oct 2022. | [S17] |
-| 7 Nov 2026 | AGC legislation lists: no Cybercrimes Act; no commencement notice in P.U.(A) or P.U.(B). | [S4] |
+| 1 Oct 2024 | BNM SEFT policy in effect (unauthorised transactions). | [S7] |
+| 30 Oct 2024 | CPC s. 116D in force (Act A1722; P.U.(B) 434/2024); Penal Code ss. 424A to 424D in force (Act A1721; P.U.(B) 433/2024). | [S3b], [S4], [S22f] |
+| 3 Dec 2024 | PMQT. Malay Mail reports Anwar agreed Malaysia should adopt the UK's compensation principle, provided banks were found negligent (reported speech); quotes him: "according to Section 413 of the CPC, RM178,407 has been returned". | [S22d] |
+| 11 and 18 Dec 2024 | AMLA (Amendment) Bill 2024 passes the Dewan Rakyat and the Senate; the Deputy Finance Minister describes Part VII changes as "tindakan pentadbiran dan penguatkuasaan sivil". | [S23g], [S23h], [S23k] |
+| Dec 2025 | NSRC operating around the clock (Fahmi). | [S22i] |
+| 27 Jan 2026 | Saifuddin (oral answer to Yeo Bee Yin): RM508,479.39 (2024) and RM6.7m (2025) "diselamatkan"; RM34m saved in 2025. | [S22b], [S22c] |
+| 1 Mar 2026 | AMLA ss. 83A to 83E in force (P.U.(B) 76/2026), with the A1761 s. 52(2) saving clause. | [S2b], [S2c] |
+| 3 Mar 2026 | NSRC 24/7 formally launched; earmarked returns RM508,479.39 (2024) to RM6.65m (2025); RM34.05m saved; 146,167 complaint calls. | [S22a] |
+| 31 Mar 2026 | BNM Annual Report 2025: about 95% of online fraud cases authorised; 969 mule-account convictions in 2025. | [S5 p. 84], [S6 p. 97] |
+| **15 Apr 2026** | **AG directs DPPs to apply for compensation under CPC s. 426 "in the appropriate cases".** | [S22g] |
+| 12 May 2026 | KL Sessions Court orders Maybank to pay RM166,000 damages (civil suit). | [S24f] |
+| 24 Jun 2026 | Home Ministry written reply (Ronald Kiandee, PN): 2025 online-fraud losses RM2.97b; NSRC seized RM25.2m and returned RM7.3m (29%) 2022 to 2025; Jan to May 2026 RM7.25m seized, RM3.57m (49%) returned. | [S21b] |
+| 7 Jul 2026 | Azalina: BHEUU studying a compensation or refund mechanism; a UK- and Australia-style mechanism "belum ada". | [S24d] |
+| 21 Sep 2026 | Sessions Court orders RM1.505m returned to Agrobank from 60 mule accounts (holders consented). | [S24e] |
+| 27 Oct 2026 | Saifuddin: NSRC returned RM14.3m (12 Oct 2022 to Sep 2026); RM1.2b reported via 997 (468,675 calls, to Aug 2026); RM100.93m losses prevented (window not stated). "Are we satisfied with this? The answer is no". | [S19] |
+| 3 Nov 2026 | Home Ministry written reply to Lim Guan Eng: RM14.01m returned since 12 Oct 2022 (to Aug 2026). | [S17] |
+| 7 Nov 2026 | AGC lists: no Cybercrimes Act; no commencement notice. | [S4] |
 
 **Cybercrimes Bill track**
 
 | Date | Event | Source |
 |---|---|---|
-| 22 Jun 2026 | First reading. 8 Parts, 61 clauses; repeals Computer Crimes Act 1997. | [S1], [S23e] |
-| 30 Jun 2026 | Article 19, CIJ and Sinar Project ask the government to halt the second reading and refer the Bill to a parliamentary special select committee. | [S23f] |
-| 1 Jul 2026 | Dewan Rakyat passes the Bill after 48 MPs debate; Zahid: "none of the powers provided under this Bill are absolute or without control". | [S23a] |
-| 20 Jul 2026 | Dewan Negara passes the Bill without committee-stage amendment; Senator Salehuddin Saidin calls for "a mechanism for direct compensation to victims"; Senator Wan Martina Wan Yusoff asks for a victims'-rights section including the right to seek compensation. | [S23b] |
-| 4 and 5 Nov 2026 | Zahid's written reply describes cl. 54 orders including "restitution orders to victims"; the CCID director refers to "the proposed Cyber Crime Bill 2026". | [S18] |
+| 22 Jun 2026 | First reading; repeals the Computer Crimes Act 1997. | [S1], [S23e] |
+| 30 Jun 2026 | Article 19, CIJ and Sinar Project ask for referral to a parliamentary special select committee. | [S23f] |
+| 1 Jul 2026 | Dewan Rakyat passes the Bill. | [S23a] |
+| 20 Jul 2026 | Dewan Negara passes it without committee-stage amendment; Senators Salehuddin Saidin and Wan Martina Wan Yusoff call for victim compensation provisions. | [S23b] |
+| 4 and 5 Nov 2026 | Zahid's written reply on cl. 54 "restitution orders to victims"; CCID director refers to "the proposed Cyber Crime Bill 2026". | [S18] |
 
 **Abroad track (context only)**
 
 | Date | Event | Source |
 |---|---|---|
-| 7 Oct 2024 | UK PSR APP-scam reimbursement requirement begins (cap £85,000). | [S15] |
-| 16 Dec 2024 | Singapore Shared Responsibility Framework for phishing scams in effect. | [S16a] |
-| 14 Oct 2025 | DOJ indictment of Chen Zhi unsealed; complaint *in rem* against ~127,271 BTC, Case 1:25-cv-05745 (E.D.N.Y.); OFAC designates 146 targets; UK freezes London property. | [S10], [S11], [S12c], [S13] |
+| 14 Oct 2025 | DOJ complaint *in rem* against ~127,271 BTC (1:25-cv-05745, E.D.N.Y.); OFAC designates 146 targets; UK freezes London property. | [S10], [S11], [S12c], [S13] |
 | Jan 2026 | Chen Zhi "extradited from Cambodia to China" (Reuters via The Star). | [S25b] |
-| 23 Jun 2026 | OFAC second round: 9 individuals, 26 entities. | [S12b] |
-| 25 Sep 2026 | E.D.N.Y. strikes two timely claims and denies seven late claims for lack of standing (reported). | [S25d] |
-| 22 Oct 2026 | Cambodia reports Prince-linked assets "with a combined estimated value of nearly $1 billion" frozen by court order. | [S25c] |
-| 5 Nov 2026 | OFAC third round: 4 individuals, 41 entities, incl. Malaysia-based Greenmeadows Properties Sdn Bhd; separately designates "a Malaysian individual", Chui Kok Wa. | [S12a] |
+| 25 Sep 2026 | E.D.N.Y. strikes or refuses nine claims for lack of standing (reported). | [S25d] |
+| 22 Oct 2026 | Cambodia reports Prince-linked assets of "nearly $1 billion" frozen by court order. | [S25c] |
+| 5 Nov 2026 | OFAC third round incl. Malaysia-based Greenmeadows Properties Sdn Bhd; separately "a Malaysian individual", Chui Kok Wa. | [S12a] |
 
 ## ACTORS
 
-- **Bank Negara Malaysia (BNM)**: AMLA competent authority (appointed under s. 7, P.U.(A) 19/2002 [S2a]); the
-  named applicant for s. 83D orders; holds the s. 83E publication power; runs SEFT and the National Fraud Portal.
-- **Regulatory or supervisory authorities under AMLA s. 7A**: may also apply under s. 83D. No s. 7A appointment
-  order was found in the AGC P.U.(A) list (GAP 9).
-- **Public Prosecutor / Attorney General Mohd Dusuki Mokhtar**: triggers CPC s. 426(1A) by applying; April 2026
-  directive to DPPs. Would be an applicant under Bill cl. 54.
-- **Royal Malaysia Police, CCID (director Rusdi Mohd Isa)**: runs the NSRC since July 2025; CPC s. 116D freezes.
-- **National Scam Response Centre (NSRC), hotline 997**: earmarking and return of frozen funds.
-- **Home Ministry (Saifuddin Nasution Ismail)**: source of the NSRC and loss figures.
-- **BHEUU, Law Minister Azalina Othman Said**: studying a victim compensation or refund mechanism (Jul 2026).
+- **Public Prosecutor / Attorney General Mohd Dusuki Mokhtar**: the only party who can trigger s. 426(1A); April
+  2026 directive.
+- **Sessions and Magistrates' Courts**: make s. 426(1A), s. 413 and return orders.
+- **Royal Malaysia Police, CCID**: CPC s. 116D freezes; runs the NSRC since July 2025.
+- **NSRC (997)**: earmarking and return; the only route with published counts.
+- **Home Ministry (Saifuddin Nasution Ismail)**: publishes NSRC figures and loss series.
+- **BHEUU, Law Minister Azalina Othman Said**: studying a victim compensation or refund mechanism.
+- **Bank Negara Malaysia**: AMLA competent authority (P.U.(A) 19/2002) and the only possible s. 83D applicant; SEFT.
 - **Ahmad Zahid Hamidi**: moved the Cybercrimes Bill.
-- **Anwar Ibrahim**: PM and Finance Minister; signed P.U.(B) 76/2026; 2023 CPC pledge; 30 Aug 2026 pledge on
-  seized proceeds (scope in B7 note below).
-- **Courts**: Sessions Courts (Agrobank return order; Maybank civil damages).
-- **MPs and senators on record**: Lim Guan Eng (PH-Bagan); Yeo Bee Yin (PH-Puchong); Shamshulkahar Mohd Deli
-  (BN-Jempol); Nurul Amin Hamid (PN-Padang Terap); Senators Salehuddin Saidin and Wan Martina Wan Yusoff.
+- **Anwar Ibrahim**: PM and Finance Minister; 2023 CPC pledge; signed P.U.(B) 76/2026.
+- **MPs and senators**: Lim Guan Eng, Yeo Bee Yin (PH); Shamshulkahar Mohd Deli (BN); Ronald Kiandee, Nurul Amin
+  Hamid (PN); Senators Salehuddin Saidin and Wan Martina Wan Yusoff.
 - **Civil society and consumers**: FOMCA; Article 19, CIJ, Sinar Project.
-- **US**: DOJ (EDNY, NSD), Treasury OFAC and FinCEN; E.D.N.Y. court. **UK**: FCDO; PSR. **Singapore**: MAS, IMDA,
-  MHA.
-- **Prince Holding Group / Chen Zhi**: indicted in the US, presumed innocent; extradited from Cambodia to China in
-  Jan 2026 per Reuters. Nationality is described differently by source (CONTRADICTION 14).
-  **Chui Kok Wa**: designated by OFAC as "a Malaysian individual" (5 Nov 2026).
+- **Abroad**: US DOJ, Treasury, E.D.N.Y.; UK FCDO, PSR; MAS, IMDA, Singapore MHA. Prince Holding Group / Chen Zhi
+  (presumed innocent; nationality described differently by source, CONTRADICTION 14); Chui Kok Wa (designated by
+  OFAC).
 
 ## RELEVANT LAW
 
-- **AMLA 2001 (Act 613)**, AGC updated text "As at 1 March 2026" incorporating Act A1761 [S2a]; Act A1761 [S2b];
-  P.U.(B) 76/2026 [S2c]:
-  - **s. 83D (A1761 s. 49; [S2a] PDF p. 126; [S2b] pp. 42 to 44)**, quoted in full in REBUILD RESEARCH Q1.
-    Applicant: "the competent authority or the regulatory or supervisory authority". Threshold: "it appears to the
-    court" that a person is reasonably likely to contravene, or has contravened, "any provision of this Act" and
-    that there are steps which could remedy it. Timing: "whether or not that person has been charged ... or whether
-    or not a contravention has been proved in a prosecution". Orders: cessation (aa); remedy "including making
-    restitution to any other person aggrieved by such contravention" by "that person, or any other person, who
-    appears to have been knowingly involved" (bb); compliance (cc); restraint on "acquiring, disposing of or
-    otherwise dealing with property which the court is satisfied such person is reasonably likely to dispose of"
-    (dd); performance (ee); removal of an officer of a reporting institution (ff); ancillary (gg). Interim orders
-    (2); no undertaking as to damages (4); court may rescind or vary (5). **No time limit is stated.**
-  - s. 83C: civil proceedings by the competent or regulatory authority for contravention of Parts IV, VIA, VIB.
-  - **s. 83E**: the competent authority, regulatory authority or enforcement agency "may ... publish" actions taken
-    and "the outcome of actions ... including the outcome of any proceedings".
-  - s. 44 ([S2a] p. 66): enforcement-agency freeze once "an investigation with regard to an unlawful activity has
-    commenced".
-  - s. 56 ([S2a] p. 89): PP may apply for forfeiture without prosecution within eighteen months of seizure or
-    freezing; s. 56(3): property not applied for "shall, at the expiration of eighteen months from the date of its
-    seizure, be released to the person from whom it was seized". That person may be the account holder, including a
-    mule (verifier note d3).
-  - s. 58(1) ([S2a] p. 91): "Where any property is forfeited under this Act, the property shall vest in the
-    Government free from any right, interest or encumbrance of any person" (purchaser in good faith excepted). This
-    governs **forfeited** property only.
-  - s. 61 ([S2a] p. 95): bona fide third-party claims after a gazette notice; return requires "a legitimate legal
-    interest in the property"; s. 61(2A): a third party who fails to attend "shall not make any claims after a
-    forfeiture order is made".
-  - s. 62 ([S2a] p. 96): the court or an enforcement agency "may" retain forfeited property for official use,
-    transfer it to the Federal Government, or sell it and transfer the proceeds to the Federal Government.
-  - The word "victim" does not appear in the AGC text as at 1 March 2026 (0 matches) [S2a]; s. 83D uses "person
-    aggrieved". Do not use the word-count point on any card: it invites the false inference that the Act has no
-    victim mechanism (verifier misleading-framing b1).
-- **Criminal Procedure Code (Act 593)**, AGC updated text "As at 4 July 2023" [S3a]; Act A1722 [S3b]:
-  - **s. 426(1A) ([S3a] p. 233)**: on conviction the court "shall, upon the application of the Public Prosecution,
-    make an order against the convicted accused for the payment by him ... of a sum to be fixed by the Court as
-    compensation to a person who is the victim of the offence ... in respect of the injury to his person or
-    character, or loss of his income or property". (1C) factors include "(f) the ability of the convicted accused
-    to pay"; (1D) inquiry. s. 426(1)(a) costs remain discretionary.
-  - s. 413(1) ([S3a] p. 223): Magistrate orders "delivery of the property to the person entitled to the possession
-    of it". A Dec 2024 Malay Mail report linked s. 413 to bank negligence; s. 413 concerns police-seized property,
-    not bank liability (verifier note c1). Do not repeat that conflation.
-  - **s. 116D (A1722, in force 30 Oct 2024)**: a police officer "not below the rank of Sergeant may seize or
-    prohibit the dealing in, any money" in a payment instrument or account on reasonable cause to suspect; written
-    order variable by a Sessions Court; lapses after eighteen months "if no prosecution for any offence under any
-    written law is instituted with regard to such money" (s. 116D(7)).
-- **Cybercrimes Bill 2026** (text as tabled, PN(U2)3438) [S1]: cl. 1(2) p. 5 commencement by ministerial gazette
-  notification; cl. 17 p. 16 computer-related fraud; cl. 34 p. 27 and cl. 35 p. 29 forfeited things "shall be the
-  property of the Federal Government"; **cl. 54 pp. 39 to 41**: applicant "the Public Prosecutor or authorized
-  officer"; same order menu as AMLA s. 83D(aa) to (ee) and (gg); restitution under (B) is paid by the contravener
-  or a person "knowingly involved". Status: no Act and no commencement notice in the AGC database as of 7 Nov
-  2026 [S4]; Royal Assent not established.
-- **BNM SEFT** (effective 1 Oct 2024) [S7]: unauthorised transactions only; "While SEFT provides a basis for
-  considering compensation, it does not guarantee compensation to victims in all cases" [S5 p. 81]. ABM says banks
-  reimburse on a "fair and proportionate" basis where investigations find shortcomings [S22h].
-- **US** [S14]: 18 U.S.C. § 981(e)(6) ("as restoration to any victim of the offense giving rise to the forfeiture");
-  28 CFR 9.2 (victim definition, no nationality condition) and 9.8 (documented loss; pro rata; net-proceeds cap;
-  9.8(e) discretion to decline where victims are many and amounts small); EO 14233 s. 3 (reserve bitcoin "shall not
-  be sold"; may be returned to "identifiable and verifiable victims of crime").
-- **UK** [S15]: PSR APP reimbursement from 7 Oct 2024, max £85,000; paid by payment firms (reimbursement, not
-  asset recovery). **Singapore** [S16]: SRF from 16 Dec 2024; the government publishes annual recovered totals
-  but "does not track the amount of scam proceeds returned to victims".
+- **Criminal Procedure Code (Act 593)**, AGC updated text "As at 4 July 2023" [S3a]:
+  - **s. 426(1A) (p. 233)**: quoted in ISSUE. **(1B)** deceased victim's representative. **(1C) (pp. 233 to 234)**
+    factors: nature of the offence; injury; expenses; "damage to, or loss of, property suffered by the victim"; loss
+    of income; "(f) the ability of the convicted accused to pay"; other factors. **(1D)**: "the Court may hold an
+    inquiry as it thinks fit". s. 426(1)(a) costs remain discretionary; s. 426(4): compensation paid satisfies a
+    damages claim to that extent but does not bar a civil remedy beyond it.
+  - Amendment history: AGC list of sections amended gives s. 426: "F.M. Ord. 8/1954", "Act A1378 01-06-2012", "Act
+    A1422 01-06-2012" [S3a]. A1422 s. 7 substitutes the s. 426(1) text inserted by A1378 s. 11 and comes into
+    operation with A1378 [S3e]. The CLR 2006 reprint has no (1A) [S3f]. A1692 and A1751 amend only the First
+    Schedule; A1722 inserts s. 116D [S3b, S3c, S3d]. A1378 itself was not opened (GAP 9).
+  - **s. 413(1) (p. 223)**: Magistrate orders "delivery of the property to the person entitled to the possession of
+    it". It concerns police-seized property, not bank liability (verifier note c1 of the first check).
+  - **s. 116D (A1722)**: police "not below the rank of Sergeant may seize or prohibit the dealing in, any money";
+    Sessions Court may vary; lapses after eighteen months "if no prosecution for any offence under any written law is
+    instituted" (s. 116D(7)) [S3b].
+- **Penal Code ss. 424A to 424D** (mule accounts): Act A1721, in force 30 Oct 2024 by P.U.(B) 433/2024 [S4].
+- **AMLA 2001 (Act 613)**, AGC updated text "As at 1 March 2026" [S2a]; Act A1761 [S2b]; P.U.(B) 76/2026 [S2c]:
+  - **s. 83D** (PDF p. 126): applicant "the competent authority or the regulatory or supervisory authority" (in
+    practice BNM; no s. 7A appointment found [S4]); threshold "it appears to the court" that a person has
+    contravened or is likely to contravene "any provision of this Act"; "whether or not that person has been
+    charged"; orders include (bb) restitution "to any other person aggrieved by such contravention" by the
+    contravener or a person "knowingly involved", (dd) property restraint, (ff) removal of officers of reporting
+    institutions; interim orders (2); no undertaking as to damages (4). No time limit is stated in s. 83D itself,
+    but **A1761 s. 52(2)** keeps breaches committed before 1 March 2026 under the unamended Act [S2b p. 45]. The
+    Bill's Explanatory Statement (para 46) says s. 83D gives the court power to make orders "bagi apa-apa tindakan
+    sivil yang diambil oleh pihak berkuasa berwibawa atau pihak berkuasa kawal selia atau pengawasan" [S23j p. 57];
+    s. 83C civil action covers Parts IV, VIA and VIB and directions under them [S2a]. Whether a scam victim is "a
+    person aggrieved" has never been tested.
+  - **s. 83E**: the competent authority, regulatory authority **or enforcement agency** "may ... publish any
+    information as may be considered necessary or expedient for the purpose of public interest" about actions and
+    outcomes (discretionary; shared; public-interest limited) [S2a].
+  - s. 56 (p. 89): forfeiture without prosecution within eighteen months; s. 56(3): property not applied for is
+    "released to the person from whom it was seized" (possibly a mule). s. 58(1) (p. 91): **forfeited** property
+    "shall vest in the Government". s. 61 (p. 95): bona fide third-party claims; s. 61(2A). s. 62 (p. 96): court or
+    agency "may" retain, transfer or sell, proceeds to the Federal Government. Keep ss. 56 to 62 off scam cards (no
+    scam-specific forfeiture figure, GAP 6).
+- **Cybercrimes Bill 2026** [S1]: cl. 1(2) p. 5; cl. 34 p. 27; cl. 35 p. 29; cl. 54 pp. 39 to 41 (PP or authorised
+  officer applies; restitution by the contravener or a person knowingly involved). Not listed as an Act [S4].
+- **BNM SEFT** [S7]: unauthorised transactions only; "does not guarantee compensation to victims in all cases" [S5
+  p. 81]; ABM: banks reimburse on a "fair and proportionate" basis where investigations find shortcomings [S22h].
+- **US (context)** [S14]: 18 U.S.C. § 981(e)(6); 28 CFR 9.2, 9.8 (incl. 9.8(e)); EO 14233 s. 3.
+- **UK / Singapore (context)**: PSR APP reimbursement (payment firms pay; max £85,000) [S15]; Singapore publishes
+  annual recovered totals but does not track returns to victims [S16b].
 
 ## KEY STATISTICS (scope and window defined for every figure)
 
-**Rule for Stage 1:** a ratio may only divide numbers from the same pool and window. Pools: **A** (3 Nov reply
-category, unconfirmed), **B** (NSRC returns), **C** (losses reported through 997), **D** (police-recorded
-online-scam losses, all categories), **E** (PDRM AMLA team, corporate crime), **F** (all-agency asset recovery,
-mostly 1MDB), **S** (saved or prevented; never returned). No card may divide one pool by another.
+**Rule for Stage 1:** no card divides one pool by another. Pools: **A** (3 Nov reply category, off cards), **B**
+(NSRC seizures and returns), **C** (losses reported through 997), **D** (Home Ministry online-fraud losses), **E**
+(PDRM AMLA team, corporate crime, off cards), **F** (all-agency recovery, mostly 1MDB, off cards), **S** (saved or
+prevented). The Home Ministry's own B-over-B return rates (rows 6, 7) may be cited as the ministry's figures.
 
 | # | Figure | Value | Pool, scope and window | Source and verbatim quote |
 |---|---|---|---|---|
-| 1 | 3 Nov reply | RM1.23b; 18,213 victims; 1,754 charges | **A.** 2016 to Aug 2026; category unconfirmed. Off cards. | [S17] Star: "Financial scams resulted in losses of RM1.23bil involving 18,213 victims between 2016 and August this year" |
-| 2 | NSRC returns to Aug 2026 | RM14.01m | **B.** 12 Oct 2022 to Aug 2026. | [S17] Star: "RM14.01mil had been successfully returned to victims since the National Scam Response Centre (NSRC) began operations on Oct 12, 2022" |
-| 3 | Jan to Aug 2026 | RM9.14m seized; RM6.67m returned | B, Jan to Aug 2026. | [S17] Star: "RM9.14mil was seized, of which RM6.67mil was returned to victims" |
-| 4 | NSRC returns to Sep 2026 | RM14.3m | **B.** 12 Oct 2022 to Sep 2026. | [S19] Bernama: "recovered and returned RM14.3 million to online scam victims between Oct 12, 2022 and September this year" |
-| 5 | Losses reported via 997 | RM1.2b; 468,675 calls | **C.** 12 Oct 2022 to Aug 2026. | [S19] Bernama: "losses reported through its 997 hotline totalled RM1.2 billion from 468,675 calls" |
-| 6 | Minister's pairing of rows 4 and 5 | arithmetic 1.19% | B beside C, as the minister set them. Windows end Sep vs Aug. No source says the RM14.3m came only from 997 cases. Attribute as the minister's pairing; not a "like-for-like" rate. | [S19] |
-| 7 | NSRC earmarked returns by year | RM508,479.39 (2024); **RM6.65m (2025)** | **B** by calendar year. Use RM6.65m (3 Mar 2026); RM6.7m (27 Jan 2026) is a rounded earlier figure. | [S22a] Star: "rising from RM508,479.39 in 2024 to RM6.65mil in 2025" |
-| 8 | Saved in 2025 | RM34.05m | **S.** NSRC, 2025. | [S22a] "a total of RM34.05mil was successfully saved from falling into the hands of syndicates last year" |
-| 9 | Prevented | RM100.93m (Oct 2022 to Sep 2026); RM1.2b (2025) and ~RM1.9b (H1 2026) attempted fraud prevented | **S.** | [S19] "prevented losses amounting to RM100.93 million"; [S8] "prevented approximately RM1.9 billion in attempted fraudulent transactions, surpassing the RM1.2 billion prevented during the whole of 2025" |
-| 10 | NSRC freezing orders 2025 | RM19m; 24,013 investigation papers | S-adjacent (frozen). | [S6 p. 97] "issued freezing orders on targeted collection accounts amounting to RM19 million" |
-| 11 | Accounts frozen 2025 | 138,915 accounts (minister); 162,642 suspected mule accounts stopped (BNM) | Different measures. | [S22a] "implemented freezing actions on 138,915 involved accounts"; [S6 p. 97] "Identified and stopped 162,642 suspected mule accounts" |
-| 12 | Online-scam losses | 2023 RM1.28b; 2024 RM1.57b; **2025 RM2.97b**; Jan to May 2026 RM830m; 2024 to May 2026 RM5.37b | **D.** | [S21b] "from RM1.57 billion in 2024 to RM2.97 billion in 2025 and reached RM830 million for the first five months of this year"; [S21c]; [S21a] |
-| 13 | Losses from victims' complaints, 2025 | RM542m | Collecting body not stated (relabelled per verifier row 13). Off cards. | [S22c] "kita merekodkan sejumlah RM542 juta kerugian daripada aktiviti scam ini sepanjang tahun lepas" |
-| 14 | e-financial crime | RM458.1m (Jan to Nov 2025); RM660.64m (2024 to May 2026) | D sub-category. | [S21d]; [S21c] "e-financial crimes amounting to RM660.64 million, representing 12.3 per cent" |
-| 15 | PDRM Jan to Nov 2025 | 67,735 cases; >RM2.7b | D, 2025. | [S21d] |
-| 16 | BNM 2025 | RM2.8b | D as cited by BNM. | [S5 p. 81] |
-| 17 | Mule-account convictions 2025 | 969 | BNM. No count of compensation orders attached. | [S6 p. 97] "In 2025, 969 convictions were secured against mule account holders." |
-| 18 | Online-fraud charges | 6,140 (2025); 8,014 (Jan to May 2026) | D enforcement. | [S23c] |
-| 19 | s. 413 returns | RM178,407 | Cumulative to Dec 2024, per PM. | [S22d] "according to Section 413 of the CPC, RM178,407 has been returned" |
-| 20 | Agrobank return order | RM1.505m from 60 accounts; 1,903 accounts seized under s. 116D(2) holding RM16.929m | Single case; victim is a bank; order of 21 Sep 2026. | [S24e] "ordered the return of RM1.505 million to Bank Pertanian Malaysia (Agrobank) from 60 mule accounts" |
-| 21 | Maybank civil damages | RM166,000 + RM15,000 costs | Single civil case, 12 May 2026. | [S24f] |
-| 22 | s. 83D orders reported | none found | 1 Mar to 7 Nov 2026. | REBUILD RESEARCH Q2; [S9] |
-| 23 | BNM 2026 enforcement notices checked | 23 (eapn01 to eapn22/2026; ea-pn-20260814) | none cites s. 83C or s. 83D. | [S9] |
-| 24 | Authorised share | ~95% of online fraud cases | BNM. | [S5 p. 84]; [S8] |
-| 25 | SEFT effect | victims compensated up ~26% in 2025 | Unauthorised only; no base. | [S5 p. 83] |
-| 26 | Corporate-crime AMLA enforcement | RM4.3b frozen; RM1b seized; RM48.3m forfeited; >RM3b in forfeiture proceedings | **E.** "alleged corporate crimes", late 2022 to Sep 2026. Not scams; off scam cards. | [S20] |
-| 27 | All-agency recovery | RM37.53b (RM28b to 1MDB debts) | **F.** Not scams. | [S20] |
-| 28 | US forfeiture claim | ~127,271 BTC; "approximately $15 billion" at Oct 2025 | Pending claim; no victim paid. | [S10]; [S11] |
-| 29 | OFAC designations | 146 (Oct 2025); 35 (Jun 2026); 45 + 1 (Nov 2026) | Prince Group TCO. | [S12c]; [S12b]; [S12a] |
-| 30 | UK reimbursement | 88% (£316m), 7 Oct 2024 to 31 Mar 2026 | Payment-firm reimbursement, not asset recovery. | [S15] |
-| 31 | Singapore | publishes annual recovered totals; does not track returns to victims | MHA, 7 Jul 2026. | [S16b] |
-| 32 | Cambodia freeze | "nearly $1 billion" | Reported 22 Oct 2026. | [S25c] |
-
-(KS row 31 of the first draft, CCID's RM1.47b, is dropped: unreachable on re-check and not needed.)
+| 1 | s. 426(1A) applications or orders, scam cases | **no published count found** | 2012 to 7 Nov 2026. | REBUILD RESEARCH Q3; second check |
+| 2 | AG directive | 15 Apr 2026 | DPPs to apply "in the appropriate cases". | [S22g] |
+| 3 | NSRC earmarked returns by year | RM508,479.39 (2024); **RM6.65m (2025)** | **B.** | [S22a] "through the earmarking process, rising from RM508,479.39 in 2024 to RM6.65mil in 2025" |
+| 4 | NSRC cumulative returns | RM10.9m (to May 2026); RM14.01m (to Aug 2026); RM14.3m (to Sep 2026) | **B**, from 12 Oct 2022. | [S21b] "a total of RM32.49 million ... seized and a total of RM10.9 million was returned"; [S17]; [S19] |
+| 5 | NSRC Jan to Aug 2026 | RM9.14m seized; RM6.67m returned | **B.** | [S17] |
+| 6 | Home Ministry return rate, 2022 to 2025 | RM25.2m seized; RM7.3m (29%) returned | **B over B** (ministry's own). | [S21b] "the seized money amounted to RM25.2 million with 29 per cent or RM7.3 million of which was successfully returned" |
+| 7 | Home Ministry return rate, Jan to May 2026 | RM7.25m seized; RM3.57m (49%) returned | **B over B** (ministry's own). | [S21b] |
+| 8 | Losses reported via 997 | RM1.2b; 468,675 calls | **C.** 12 Oct 2022 to Aug 2026. The minister set it beside RM14.3m; no source ties the RM14.3m to 997 cases only. | [S19] |
+| 9 | Saved / prevented | RM34.05m saved (2025); RM100.93m prevented (window not stated in source); ~RM1.2b (2025) and ~RM1.9b (H1 2026) attempted fraud prevented | **S.** | [S22a]; [S19]; [S8] |
+| 10 | NSRC freezing orders 2025 | RM19m; 24,013 investigation papers | S-adjacent. | [S6 p. 97] |
+| 11 | Online-fraud losses | 2023 RM1.28b; 2024 RM1.57b; **2025 RM2.97b**; Jan to May 2026 RM830m | **D.** Attribute to the Home Ministry. | [S21b] "from RM1.57 billion in 2024 to RM2.97 billion in 2025"; [S21a] |
+| 12 | Mule-account convictions 2025 | 969 | BNM. **Caveats:** predate the April 2026 directive; whether a scam victim is "the victim of the offence" of a mule-account conviction is untested. | [S6 p. 97] |
+| 13 | Online-fraud charges | 6,140 (2025); 8,014 (Jan to May 2026) | D enforcement. | [S23c] |
+| 14 | s. 413 returns | RM178,407 | Cumulative to Dec 2024, per PM. | [S22d] |
+| 15 | Agrobank return order | RM1.505m from 60 accounts (bank's settlement-account funds; holders consented); 1,903 accounts seized under s. 116D(2) holding RM16.929m | Single case, 21 Sep 2026. | [S24e] |
+| 16 | Maybank civil damages | RM166,000 + RM15,000 costs | Single civil case, 12 May 2026. | [S24f] |
+| 17 | SEFT effect | victims compensated up ~26% in 2025 (no base) | Unauthorised transactions only. | [S5 p. 83] |
+| 18 | Authorised share | ~95% of online fraud cases | BNM. | [S5 p. 84] |
+| 19 | AMLA s. 83D | no reported application or order; 23 BNM 2026 notices use none of ss. 83A to 83E | 1 Mar to 7 Nov 2026; breaches before 1 Mar 2026 saved by A1761 s. 52(2). Secondary fact. | [S9]; [S2b] |
+| 20 | 3 Nov reply | RM1.23b; 18,213 victims; 1,754 charges | **A**, 2016 to Aug 2026. Off cards. | [S17] |
+| 21 | Corporate-crime AMLA enforcement | RM4.3b frozen; RM48.3m forfeited; >RM3b in court | **E.** Off scam cards. | [S20] |
+| 22 | US forfeiture claim | ~127,271 BTC; ~US$15b (Oct 2025) | Pending; no victim paid. | [S10]; [S11] |
+| 23 | UK reimbursement | 88% (£316m), 7 Oct 2024 to 31 Mar 2026 | Payment-firm reimbursement. | [S15] |
 
 ## 12-DIMENSION RISK ASSESSMENT
 
 | Dimension | Level | Justification |
 |---|---|---|
-| Sentiment | MEDIUM | Ride anger at process (an uncounted right), not grief. No card blames BNM, prosecutors or courts; the target is the absence of published counts. |
-| Political | LOW-MEDIUM | Unity-government ministers supply the figures; PH, BN and PN members asked the questions. Keep the Najib house-arrest story off every card. |
-| Ethnic | LOW | No community framing. Name Chen Zhi by role, not nationality; "Malaysian individual" (Chui Kok Wa) only as Treasury states it. |
+| Sentiment | MEDIUM | Anger at process (an uncounted, prosecutor-triggered remedy), not grief; no blame on individual prosecutors or judges. |
+| Political | LOW-MEDIUM | Figures from unity-government ministers; questions from PH, BN and PN members. Keep the Najib house-arrest story off every card. |
+| Ethnic | LOW | No community framing. Name Chen Zhi by role. |
 | Religious | LOW | None. |
-| Royalty | LOW | Royal Assent is procedural; Cybercrimes Bill assent "not established". |
-| Narrative | **HIGH** | New traps: (1) "s. 83D has never been used" (write "no reported order found"); (2) implying s. 83D is a scam-victim tool (its applicant is BNM; its trigger is an AMLA contravention; its stated purpose is supervisory); (3) implying s. 426(1A) is automatic (it needs the PP's application and weighs ability to pay); (4) any cross-pool ratio (B4, B5); (5) pairing the US claim with Malaysian returns (B6); (6) the PM's 30 Aug pledge beside scam figures (B7); (7) "victim" word-count point. |
-| Completeness | **HIGH** | The thesis is about use; use data are missing by nature (court filings unsearchable here; no AGC statistics; Hansard unreachable). Absence of reports is the finding, not proof of non-use. |
-| Temporal | MEDIUM | s. 83D is eight months old; an application could surface any day. Re-check BNM notices, news and the AGC database at Phase 8. |
-| Confidence | MEDIUM-HIGH | HIGH on law (AGC texts, Act A1761, P.U.(B) 76/2026, A1722) and BNM documents; MEDIUM on parliamentary figures (via newswires); MEDIUM on "no reported order" (method stated). |
-| Sources | LOW risk | 16 primary entries; government, central bank, AGC, courts via reporting, opposition and backbench MPs, consumer and rights groups, law firms, international governments. All Malaysian scam figures are single-origin (PDRM/KDN). |
+| Royalty | LOW | None. |
+| Narrative | **HIGH** | Traps: (1) "prosecutors never apply" (write "no published count found"); (2) implying s. 426(1A) is automatic (needs the PP's application; weighs ability to pay; victim of the convicted offence only); (3) the 969 convictions as 969 missed orders (C5); (4) s. 83D as a scam-victim remedy (C1); (5) any cross-pool ratio; (6) "police recorded" RM2.97b (write "the Home Ministry reported"); (7) unscoped "belum ada"; (8) pairing the US claim with Malaysian returns. |
+| Completeness | **HIGH** | Use data for s. 426(1A) are held by the AGC and the courts, not published; neither has been asked. |
+| Temporal | MEDIUM | The AG directive is seven months old; a count could be released at any time. Re-check at Phase 8. |
+| Confidence | HIGH on law (AGC texts and amending Acts; Bill and Hansard via the Parliament repository) and BNM documents; MEDIUM on parliamentary figures (via newswires and newspapers). |
+| Sources | LOW risk | 16 primary entries; government, opposition, backbench, consumer, rights and legal-profession voices; international context. Malaysian scam figures are single-origin (PDRM/KDN). |
 | Geographic | LOW | National. |
-| Economic | MEDIUM | No derived cross-pool ratios. |
+| Economic | MEDIUM | Only the ministry's own same-pool rates; no derived cross-pool ratios. |
 | Gender | LOW | None. |
 
-**Legal risk:** the Prince Group cases are pending; presumption of innocence for Chen Zhi and Chui Kok Wa. The
-Agrobank matter is a live investigation (1,903 accounts); report only the order.
-
-**Stage 5 escalation: NOT TRIGGERED.** No Religion, Ethnic or Royalty dimension HIGH or CRITICAL; Political not
-CRITICAL. Re-check Stage 3's `source_diversity_estimate` (< 0.4 would trigger).
+**Legal risk:** pending US cases (presumption of innocence); the Agrobank investigation is live (report only the
+order). **Stage 5: NOT TRIGGERED.** Re-check Stage 3's `source_diversity_estimate` (< 0.4 would trigger).
 
 ## RECOMMENDED LENSES
 
-1. **Legal**: three in-force routes and one pending, each with its trigger. AMLA s. 83D (BNM applies; before
-   charge; restitution to "any other person aggrieved"); CPC s. 426(1A) (PP applies; after conviction; court
-   "shall" order compensation); CPC s. 116D plus court-ordered return (police freeze; victim or prosecutor
-   applies; Agrobank order of 21 Sep 2026); Cybercrimes Bill cl. 54 (PP or authorised officer; not commenced).
-2. **Governance**: the use gap. No reported s. 83D application in eight months; none in the 23 Bank Negara
-   enforcement notices of 2026 checked; no published count of s. 426(1A) orders against 969 mule-account convictions in 2025;
-   AMLA s. 83E already lets Bank Negara publish outcomes. The Law Minister says a return mechanism "belum ada".
-   **Arousal peak (fact 2):** "Eight months, no reported s. 83D order" placed beside "969 mule-account convictions
-   in 2025, no published compensation count".
-3. **Economic**: the NSRC's own numbers, each with its pool: RM6.65m returned in 2025 (up from RM508,479.39 in
-   2024); RM34.05m saved; RM14.3m returned since Oct 2022. Police recorded RM2.97b of online-scam losses in 2025
-   (stated as a separate sentence, never a ratio).
-   (Optional **Regional** line: the US complaint is a pending claim with a written victim-remission route; no
-   victim paid yet. Use only with both labels.)
+1. **Legal**: CPC s. 426(1A) "shall", on the prosecutor's application, for the victim of the convicted offence,
+   weighing ability to pay. Then the other routes, each separately: NSRC earmarking; CPC s. 116D freeze plus
+   court-ordered return (Agrobank); CPC s. 413 delivery; civil suits; SEFT. AMLA s. 83D only as a labelled
+   secondary fact. Cybercrimes Bill cl. 54 pending.
+2. **Governance**: the count. The AG told prosecutors in April 2026 to seek compensation; no count of applications
+   or orders has been published since. The ministry publishes NSRC returns and even return rates. **Arousal peak
+   (fact 2, per C5):** "The Attorney General told prosecutors in April 2026 to seek compensation. No count of
+   applications or orders has been published since." (If the 969 convictions are used, carry both caveats.)
+3. **Economic**: NSRC returns in their own pool: RM6.65m in 2025, up from RM508,479.39; the ministry's own return
+   rates (29% for 2022 to 2025; 49% for Jan to May 2026). Losses (RM2.97b, Home Ministry) only as a separate
+   sentence.
 
-**Differentiation from 2004.** 2004 asked who repays the victim before the loss (platforms, banks). G3 asks whether
-the court routes Parliament has already written are being used and counted. Keep SEFT and UK/Singapore to one
-supporting line.
+**Differentiation from 2004.** 2004 asked who repays before the loss (platforms, banks). G3 asks whether a
+compensation duty already in the CPC is being triggered, and whether anyone counts.
 
-**Hook (draft, for Stage 1):**
-- big: *"Since 1 March, a Malaysian court can order restitution to people harmed by a breach of the
-  anti-money-laundering law, before anyone is charged. This review found no reported order."*
-- sub: *"Act A1761 added AMLA s. 83D; Bank Negara applies. The NSRC returned RM6.65m to scam victims in 2025, a
-  year police recorded RM2.97b in online-scam losses."*
-- Emotion check: anger at process (a power on the books with no visible use), not sadness.
+**Hook (draft):**
+- big (146 chars): *"Malaysian courts must order convicts to compensate victims when prosecutors ask. No published count shows how
+  often prosecutors ask in scam cases."*
+- sub (151 chars): *"CPC s. 426(1A), in force since June 2012. In April 2026 the Attorney General told prosecutors to apply. The
+  NSRC's earmarking returned RM6.65m in 2025."*
+- Emotion: anger at process (a duty with no visible use count), not sadness.
 
-**Reframe (draft; not in "X is not Y" form):** *"Malaysia has written restitution into its laws. It has not written
-down how often anyone uses it."*
+**Reframe (draft; not "X is not Y" form):** *"Malaysia publishes how much its scam response centre hands back. It
+does not publish how often its courts order convicted offenders to pay victims."*
 
-**View (draft; WhatsApp test):** *"Parliament gave courts two ways to send money back to victims and gave Bank
-Negara the power to publish every outcome under one of them. A right that nobody counts is a right nobody can
-check."*
+**View (draft; WhatsApp test):** *"Malaysian law already tells courts to make convicted offenders compensate their
+victims when prosecutors ask. Until someone publishes how often they ask, nobody outside the courtroom can tell
+whether that law works."*
 
 Headline candidates (≤100 chars, topic-first):
-- "Malaysian courts gained a pre-charge restitution power in March; no reported order found" (88)
-- "Scam victims: NSRC returned RM6.65m in 2025; no published count of court restitution orders" (91)
+- "Malaysian courts must order victim compensation when prosecutors ask; no count for scam cases" (93)
+- "Scam victims: NSRC returned RM6.65m in 2025; no published count of court compensation orders" (92)
 
-Elevated-word candidate: *lacuna* (the gap is in the record, not the statute).
+Elevated-word candidate: *lacuna* (the gap is in the record, not in the statute).
 
-Image subject idea: a figure in a suit holding an open, blank ledger at arm's length, one continuous line.
+Image subject idea: a judge's gavel resting on an open, blank ledger, one continuous line.
 
-Related issues: **2004** (mule accounts, investment-scam losses), **1975** (e-wallets), **2007** (MACC's refused
-AMLA s. 53 freeze), **1979** (1MDB recovery accounting). Sherlock entities: BNM, NSRC, PDRM, AMLA, CPC,
-Parliament, Dewan Negara, Sessions Court.
+Related issues: **2004**, **1975**, **2007**, **1979**. Sherlock entities: AGC, Parliament, PDRM, NSRC, BNM, CPC,
+Sessions Court.
 
-**B7 note (PM's 30 Aug 2026 pledge).** If used anywhere, quote its full scope: "all funds seized from the proceeds
-of illegal activities through legal processes and decisions by the judiciary, amounting to billions of ringgit,
-will be returned, especially for the people's education and healthcare" [S24a]. Never place it beside scam
-figures as evidence of where scam money goes.
+**B7 note (PM's 30 Aug 2026 pledge).** If used, quote its full scope ("all funds seized from the proceeds of illegal
+activities through legal processes and decisions by the judiciary ... will be returned, especially for the people's
+education and healthcare") [S24a]; never beside scam figures.
 
 ## CONTRADICTIONS
 
-1. **What the RM1.23b measures.** 3 Nov reply: RM1.23b, 18,213 victims, 1,754 charges, 2016 to Aug 2026 [S17].
-   The Home Ministry's own series: RM2.97b in 2025 alone, RM5.37b for 2024 to May 2026 [S21b, S21c]; 6,140
-   online-fraud charges in 2025 [S23c]. RM1.23b cannot be all scam losses over a decade; e-financial crime
-   (RM660.64m in 2024 to May 2026 [S21c]) is the likeliest match, unconfirmed. Off cards until Hansard (GAP 3).
-2. **2025 total losses.** RM2.77b (KDN, Jan 2026) [S21a]; RM2.97b (KDN, Jun 2026) [S21b]; RM2.8b (BNM) [S5];
-   >RM2.7b Jan to Nov (PDRM) [S21d]. Use RM2.97b, attributed (1.57 + 2.97 + 0.83 = 5.37). RM542m is losses from
-   victims' complaints, collecting body not stated; it is not a total.
-3. **2024 losses.** RM1.57b (KDN) [S21a, S21b] vs "RM1.4bil" (Saifuddin, Star 3 Mar 2026) [S22a]. Use RM1.57b if
-   needed.
-4. **2025 returns: RM6.7m vs RM6.65m, and "saved" vs "returned".** 27 Jan 2026 (oral): RM508,479.39 and RM6.7m
-   described as money "diselamatkan" (saved) [S22b]; Sinar Harian the same day set RM6.7m "dipulangkan" (returned)
-   beside RM34m saved [S22c]; 3 Mar 2026 the minister called RM508,479.39 and RM6.65m returns "through the
-   earmarking process" and RM34.05m saved [S22a]. **Judgement:** RM6.65m returned, RM34.05m saved, per the later and
-   more specific statement.
-5. **Saved, frozen, prevented, recovered.** RM34.05m saved (2025) [S22a]; RM19m NSRC freezing orders (2025)
-   [S6]; RM100.93m prevented (Oct 2022 to Sep 2026) [S19]; RM1.2b attempted fraud prevented (2025) [S8]; "recovered
-   RM34.8 million" by May 2023 (PM) [S22e] beside RM14.01m returned to Aug 2026 [S17]. Different measures; never
-   add; never set against returns without naming both.
-6. **RM6.67m returned Jan to Aug 2026 vs RM6.65m in 2025.** Near-identical values for different periods [S17,
-   S22a]. Arithmetic is consistent with both (RM0.51m + RM6.65m + RM6.67m = RM13.83m ≤ RM14.01m). Verify against
-   Hansard before using the 2026 figure.
-7. **"7 Nov 2026" US sanctions.** Treasury release dated 5 Nov 2026 [S12a]; Nikkei published 7 Nov JST [S25a].
-8. **NSRC calls in 2025.** 146,167 complaint calls (minister, 3 Mar 2026) [S22a] vs 138,953 calls on online
-   financial scams, 83,232 from victims (BNM AR2025) [S6 p. 97]. Attribute each.
-9. **NSRC start date.** 12 Oct 2022 (Fahmi, Home Ministry) [S22i, S17] vs "initial operations on Oct 7, 2022"
-   (The Star) [S22a]. Use 12 Oct 2022 for windows (the ministry's own anchor).
-10. **2025 caseload.** 67,735 online crime cases Jan to Nov 2025 (PDRM) [S21d] vs 66,204 cybercrime cases in 2025
-    (Zahid) [S23a]. Different definitions; avoid case counts.
-11. **Mule-account enforcement counts.** 969 convictions against mule-account holders in 2025 (BNM) [S6 p. 97] vs
-    "20 individu dari 51 kes" charged under Penal Code s. 424A (Saifuddin, 27 Jan 2026, scope unclear) [S22b]. Unreconciled; use BNM's figure with attribution.
-12. **20 Oct scope.** Bernama: PDRM AMLA team, "alleged corporate crimes" [S20]. Not a scam pool.
-13. **The "UK principle".** Malay Mail's paraphrase of Anwar (fault-based, "provided that banks were found to be
-    negligent") vs BNM's description of the UK scheme as mandatory reimbursement unless the customer was grossly
-    negligent [S22d, S5 p. 82]. The same report linked s. 413 to bank negligence; s. 413 concerns police-seized
-    property (verifier c1).
-14. **Chen Zhi's nationality.** DOJ and Treasury: "Cambodian national" [S10, S12c]; Reuters: "a Chinese national",
-    citizenship revoked by Cambodia [S25b]. Name him by role.
-15. **Value of the 127,271 BTC.** US$15b (DOJ, Oct 2025) [S10] vs about US$9b (Bankless Times, Mar 2026, low
-    weight) [S25f]. Price-dependent.
-16. **Internal T4A drafts.** Unpublished 1912 (RM520m "recovered" in 2025) and 1870 (RM320m) conflict with BNM and
-    Home Ministry figures. Do not link; flag to the editor.
+1. **What the RM1.23b measures.** 3 Nov reply (2016 to Aug 2026) vs the Home Ministry's RM2.97b for 2025 alone and
+   6,140 charges in 2025 [S17, S21b, S23c]. Category unconfirmed; off cards (GAP 3).
+2. **2025 losses.** RM2.77b (KDN, Jan 2026) [S21a]; RM2.97b (KDN, Jun 2026) [S21b]; RM2.8b (BNM) [S5]; >RM2.7b
+   Jan to Nov (PDRM) [S21d]. Use RM2.97b, attributed to the Home Ministry. RM542m is losses from victims'
+   complaints, collecting body not stated [S22c].
+3. **2024 losses.** RM1.57b (KDN) vs "RM1.4bil" (Saifuddin, 3 Mar 2026) [S21b, S22a].
+4. **2025 returns: RM6.7m vs RM6.65m; "saved" vs "returned".** 27 Jan 2026 (oral): "diselamatkan" RM508,479.39 and
+   RM6.7m [S22b]; Sinar Harian: RM6.7m "dipulangkan" beside RM34m saved [S22c]; 3 Mar 2026: returns "through the
+   earmarking process" RM6.65m, RM34.05m saved [S22a]. Use RM6.65m returned.
+5. **Saved, frozen, prevented, recovered.** RM34.05m saved; RM19m frozen; RM100.93m prevented; RM1.2b attempted
+   fraud prevented; "recovered RM34.8 million" (PM, May 2023) [S22a, S6, S19, S8, S22e]. Different measures.
+6. **RM6.67m (Jan to Aug 2026) vs RM6.65m (2025).** Near-identical values for different periods [S17, S22a]; the
+   ministry's Jan to May 2026 figure (RM3.57m returned) is consistent with a later RM6.67m to August [S21b].
+7. **"7 Nov 2026" US sanctions.** Treasury release dated 5 Nov 2026 [S12a].
+8. **NSRC calls 2025.** 146,167 (minister) vs 138,953 (BNM) [S22a, S6].
+9. **NSRC start date.** 12 Oct vs 7 Oct 2022 [S22i, S22a].
+10. **2025 caseload.** 67,735 (PDRM, Jan to Nov) vs 66,204 (Zahid, full year) [S21d, S23a].
+11. **Mule-account enforcement.** 969 convictions (BNM, 2025) vs "20 individu dari 51 kes" charged under s. 424A
+    (Saifuddin, 27 Jan 2026, scope unclear) [S6, S22b].
+12. **20 Oct scope.** PDRM AMLA team, "alleged corporate crimes" [S20]. Not a scam pool.
+13. **The "UK principle".** Malay Mail paraphrase of Anwar (fault-based) vs BNM's description of the UK scheme
+    (mandatory unless the customer was grossly negligent) [S22d, S5 p. 82].
+14. **Chen Zhi's nationality.** "Cambodian national" (DOJ, Treasury) vs "a Chinese national" (Reuters) [S10, S12c,
+    S25b].
+15. **Value of the 127,271 BTC.** Price-dependent [S10, S25f].
+16. **Internal T4A drafts 1912 and 1870** conflict with BNM and Home Ministry figures. Do not link.
 
 ## SOURCE SPECTRUM CHECK
 
-- **Malaysian government:** Home Ministry [S17, S19, S21, S22a to c]; DPM Zahid [S18, S23]; PM Anwar [S20, S22d,
-  S22e, S24a]; AG [S22g]; Law Minister Azalina [S24d]; Finance Minister's gazette notice [S2c]; AGC [S2a, S3a, S4].
-- **Central bank:** BNM AR2025, SEFT, Governor's speech, enforcement notices, legislation page [S5 to S9, S2d].
-- **Courts (via reporting):** Sessions Court orders [S24e, S24f].
-- **Government backbench:** Lim Guan Eng, Yeo Bee Yin (PH) [S17, S22b, S24b].
-- **Opposition:** Nurul Amin Hamid (PN) [S22d]; Senator Wan Martina Wan Yusoff and Senator Salehuddin Saidin on
-  victim compensation in the Bill [S23b]. No PN or PAS statement specifically on scam-money recovery was found.
+- **Government:** Home Ministry [S17, S19, S21, S22a to c]; AG [S22g]; Law Minister [S24d]; DPM [S18, S23]; PM
+  [S20, S22d, S22e, S24a]; Finance Minister's gazette notice [S2c]; AGC texts and lists [S2a, S3a, S4].
+- **Parliament:** AMLA Bill and Explanatory Statement [S23j]; Dewan Rakyat Hansard 11 Dec 2024 [S23k].
+- **Central bank:** BNM [S5 to S9].
+- **Courts (via reporting):** [S24e], [S24f].
+- **Government backbench:** Lim Guan Eng, Yeo Bee Yin (PH).
+- **Opposition:** Ronald Kiandee (PN, asked the 24 Jun recovery-rate question) [S21b]; Nurul Amin Hamid (PN)
+  [S22d]; Senators Wan Martina Wan Yusoff and Salehuddin Saidin [S23b].
 - **Civil society and consumers:** FOMCA (asks for a national audit of the effectiveness of anti-scam measures)
   [S24c]; Article 19, CIJ, Sinar Project [S23f].
-- **Legal profession:** Rahmat Lim & Partners, HHQ, Skrine [S23d, S23e, S23h, S23i].
-- **Media:** Bernama, The Star, Malay Mail, NST, FMT, The Vibes, The Edge, Utusan Malaysia, Sinar Harian.
-- **International:** US DOJ, Treasury, CFR, US Code, Federal Register [S10 to S12, S14]; UK FCDO, PSR [S13, S15];
-  MAS, IMDA, Singapore MHA [S16]; Nikkei, Phnom Penh Post via ANN, Sullivan & Cromwell, crypto trade press [S25].
+- **Legal profession:** Rahmat Lim, HHQ, Skrine [S23d, S23e, S23h, S23i].
+- **Media:** Bernama, The Star, Malay Mail, NST, FMT, The Vibes, The Edge, Utusan, Sinar Harian.
+- **International (context):** US DOJ, Treasury, CFR, US Code; UK FCDO, PSR; MAS, IMDA, Singapore MHA; Nikkei; ANN;
+  Sullivan & Cromwell; crypto trade press.
 
-No single-spectrum dependence. Structural caveat: every Malaysian scam loss and recovery figure originates with
-PDRM or the Home Ministry, and no agency publishes use counts for s. 83D or s. 426(1A).
+Structural caveat: Malaysian scam figures are single-origin (PDRM/KDN); s. 426(1A) use data sit with the AGC and
+the courts, unpublished.
 
 ## WHAT WEAKENS THE THESIS
 
-1. **No reported order is not proof of no use.** s. 83D applications may be pending, unreported or settled; s.
-   83E publication is discretionary ("may"); Malaysian court filings were not searchable here. The card must say
-   "no reported order found" and describe the search.
-2. **s. 83D may not be designed for scam victims.** Its applicant is BNM or an appointed regulatory authority;
-   its trigger is a contravention of the AML Act; one of its orders removes officers of reporting institutions
-   (83D(1)(ff)); BNM's stated reasons for the amendment are FATF alignment, freezing and forfeiture operations,
-   prosecution and compliance clarity [S6 p. 94]. Expecting it to deliver scam restitution may misread its
-   purpose. On its text it could reach a person "knowingly involved" in a money-laundering contravention; whether
-   it will be used that way is untested.
-3. **The faster routes are working and growing.** NSRC earmarked returns rose from RM508,479.39 (2024) to RM6.65m
-   (2025) [S22a]; a Sessions Court ordered RM1.505m returned to Agrobank from frozen mule accounts [S24e]; civil
-   suits against banks can succeed (Maybank, RM166,000) [S24f]. Victims may get money back without s. 83D or s.
-   426(1A).
-4. **Compensation orders may be uncollectable.** s. 426(1C)(f) weighs "the ability of the convicted accused to
-   pay". A count of orders could overstate the money actually paid.
-5. **Prevention dominates.** RM34.05m saved and about RM1.2b of attempted fraud prevented in 2025 [S22a, S8].
-6. **Speed and borders.** About 95% of cases are authorised transfers [S5]; money moves within the "golden hours"
-   [S17]; syndicates operate abroad [S19, S12a].
-7. **Comparators measure different things.** Singapore publishes recovered totals but does not track returns to
-   victims [S16b]; the UK's 88% is payment-firm reimbursement [S15].
-8. **The US example has not returned money either.** It is a pending claim; nine claimants were turned away on
-   standing (reported) [S25d]; remission is discretionary and may be declined where victims are many and amounts
-   small [S14a].
-9. **Policy is moving.** BHEUU is studying a victim compensation or refund mechanism (Jul 2026) [S24d]; BNM is
-   assessing an expansion of SEFT [S5 p. 84]; the AG directed DPPs to apply under s. 426 (Apr 2026) [S22g]. A
-   "nobody is acting" frame would be unfair.
+1. **No published count is not proof of non-use.** The AGC and courts hold records; neither has been asked (GAP
+   1). Prosecutors may already apply in many scam cases. The card must say "no published count found".
+2. **s. 426(1A) has built-in limits.** The prosecutor must apply; the order runs to "the victim of the offence
+   committed by the convicted accused"; the court weighs "the ability of the convicted accused to pay" (1C)(f). The
+   AG himself said compensation "would not be possible in all cases" (reported speech) [S22g]. Orders against
+   low-income mule-account holders may yield little money.
+3. **The 969 mule-account convictions are not 969 missed orders.** They predate the April 2026 directive, and
+   whether a scam victim is the victim of a mule-account offence (Penal Code ss. 424A to 424D) is untested [S6,
+   S3a].
+4. **Other routes work and are counted.** NSRC earmarked returns rose from RM508,479.39 to RM6.65m [S22a]; the
+   ministry publishes return rates of 29% (2022 to 2025) and 49% (Jan to May 2026) [S21b]; the Agrobank and Maybank
+   orders show court routes in use [S24e, S24f].
+5. **AMLA s. 83D is not a scam-victim tool.** BNM is the only possible applicant; the Explanatory Statement ties it
+   to the regulator's civil action [S23j]; breaches before 1 March 2026 are saved by A1761 s. 52(2) [S2b]; the
+   Deputy Finance Minister described the changes as administrative and civil enforcement [S23k]. Its non-use says
+   nothing about scam victims.
+6. **Prevention dominates.** RM34.05m saved and ~RM1.2b of attempted fraud prevented in 2025 [S22a, S8].
+7. **Speed and borders.** ~95% of cases are authorised transfers [S5]; money moves within the "golden hours"
+   [S17].
+8. **Policy is moving.** AG directive (Apr 2026); BHEUU study (Jul 2026); BNM assessing a wider SEFT [S22g, S24d,
+   S5 p. 84].
+9. **Comparators differ.** UK reimbursement is paid by payment firms [S15]; Singapore does not track returns to
+   victims [S16b]; the US claim is pending with no victim paid [S25d].
 
 ## SOURCES
 
-Primary (P) = statute, bill or gazette text, official legislative database, court filing, government, regulator or
-central-bank publication. S = reporting or commentary. S→P = reporting that quotes an official statement.
+Primary (P) = statute, bill, gazette, Hansard, official legislative database, court filing, government,
+regulator or central-bank publication. S = reporting or commentary. S→P = reporting that quotes an official
+statement.
 
-1. **[P]** Parliament of Malaysia, *Cybercrimes Bill 2026*, text as tabled, PN(U2)3438, 54 pp.: cl. 1(2) p. 5; cl.
-   17 p. 16; cl. 34 p. 27; cl. 35 p. 29; cl. 54 pp. 39 to 41; Explanatory Statement para 63 p. 53 (MSC Malaysia
-   mirror; parliament site unreachable). https://www.msc.com.my/cyberlaws/CYBERCRIMES-BILL-2026.pdf
-2. **(a) [P]** AGC, Act 613 updated text "As at 1 March 2026" (incl. Act A1761): s. 7 and note (BNM appointed, P.U.(A)
-   19/2002); s. 44 p. 66; s. 56 p. 89; s. 58 p. 91; s. 61 p. 95; s. 62 p. 96; s. 83D p. 126 (PDF pages).
+1. **[P]** *Cybercrimes Bill 2026*, text as tabled, PN(U2)3438: cl. 1(2) p. 5; cl. 34 p. 27; cl. 35 p. 29; cl. 54 pp.
+   39 to 41 (MSC Malaysia mirror). https://www.msc.com.my/cyberlaws/CYBERCRIMES-BILL-2026.pdf
+2. **(a) [P]** AGC, Act 613 updated text "As at 1 March 2026": s. 7 note; s. 56 p. 89; s. 58 p. 91; s. 61 p. 95; s.
+   62 p. 96; ss. 83C and 83D p. 126, s. 83E p. 129 (PDF pages).
    https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3285881_BI/Act%20613%20%28Online%202026%29.pdf
-   **(b) [P]** AGC, Act A1761, AMLA (Amendment) Act 2025 (Royal Assent 24 Apr 2025; Gazette 14 May 2025), s. 1(2); s.
-   49 inserting ss. 83A to 83E, pp. 39 to 45.
+   **(b) [P]** AGC, Act A1761 (Royal Assent 24 Apr 2025; Gazette 14 May 2025): s. 1(2); s. 49 (ss. 83A to 83E); s.
+   52(2) saving, p. 45.
    https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2843970_BI/Act%20A1761-%20ANTI-MONEY%20LAUNDERING%2C%20ANTI-TERRORISM%20FINANCING%20DAN%20PROCEEDS%20ON%20UNLAWFUL%20ACTIVITIES%20%28AMENDMENT%29%20ACT%202025.pdf
-   **(c) [P]** Federal Government Gazette, P.U.(B) 76/2026, "Appointment of Date of Coming into Operation", 27 Feb 2026
-   (BNM-hosted copy). https://www.bnm.gov.my/documents/20124/820862/PUB_76_%282026%29-AMLA.pdf
-   **(d) [P]** BNM, Legislation page, AMLA entry ("Act A1761 ... came into force on 1 March 2026").
-   https://www.bnm.gov.my/en/legislation
-3. **(a) [P]** AGC, Act 593 (CPC) updated text "As at 4 July 2023": s. 413 p. 223; s. 426 pp. 232 to 234.
+   **(c) [P]** P.U.(B) 76/2026, 27 Feb 2026 (BNM-hosted gazette copy). https://www.bnm.gov.my/documents/20124/820862/PUB_76_%282026%29-AMLA.pdf
+   **(d) [P]** BNM, "Legislative powers to enforce supervisory and regulatory functions" ("came into force on 1 March
+   2026"). https://www.bnm.gov.my/legislative-powers-to-enforce-supervisory-and-regulatory-functions
+3. **(a) [P]** AGC, Act 593 (CPC) updated text "As at 4 July 2023": s. 413 p. 223; s. 426 pp. 232 to 234; list of
+   sections amended (s. 426).
    https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1841142_BI/Act%20593%20-%20Muktamad%20as%20at%204.7.23%20%281.12.23%29%20%282%29.pdf
-   **(b) [P]** AGC, Act A1722, CPC (Amendment) Act 2024 (Royal Assent 11 Sep 2024; Gazette 25 Sep 2024), new s. 116D.
-   https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2368175_BI/Act%20A1722.pdf
-4. **[P]** AGC Laws of Malaysia lists, exported 8 Nov 2026 MYT: principal Acts (latest 880 to 887; no Cybercrimes
-   Act); amendment Acts (A1761 in force 01/03/2026 [P.U.(B) 76/2026]; A1722 in force 30/10/2024 [P.U.(B) 434/2024]);
-   P.U.(A) and P.U.(B) lists; "What's New" page.
-   https://lom.agc.gov.my/generate-principal-pdf.php?type=original&lang=&search= ;
-   https://lom.agc.gov.my/generate-principal-pdf.php?type=amendment&lang=&search= ;
-   https://lom.agc.gov.my/generate-subsid-pdf.php?type=pub&lang=&search= ;
-   https://lom.agc.gov.my/generate-subsid-pdf.php?type=pua&lang=&search=
-5. **[P]** BNM, *Annual Report 2025*, Box "Fraud Resolution: Building Trust through Shared Accountability", pp. 81 to
-   85. https://www.bnm.gov.my/documents/20124/21185005/ar2025_en_box4.pdf
-6. **[P]** BNM, *Annual Report 2025*, "Maintaining Financial Integrity", pp. 92 to 97 (p. 94 rationale for the AMLA
-   amendments; p. 96 NSRC under CCID; p. 97 Diagram 4 and 969 mule-account convictions).
-   https://www.bnm.gov.my/documents/20124/21185005/ar2025_en_ch1g.pdf
-7. **[P]** BNM, Policy Document *Ensuring Fair Treatment for Victims of Unauthorised e-Banking Transactions*, 28 Jun
-   2024, para 4.1. https://www.bnm.gov.my/documents/20124/938039/Ensuring_Fair_Treatment_for_Victims_of_Unauthorised_eBanking-Transactions.pdf
-8. **[P]** BNM Governor Abdul Rasheed Ghaffour, IFCTF 2026 keynote, 6 Oct 2026. https://www.bnm.gov.my/en/-/g-spch-ifctf26
-9. **[P]** BNM enforcement-action notices 2026, eapn012026 to eapn222026 and ea-pn-20260814 (pattern
-   https://www.bnm.gov.my/-/eapn012026 ... https://www.bnm.gov.my/-/eapn222026 ; https://www.bnm.gov.my/-/ea-pn-20260814).
-10. **[P]** US DOJ, "Chairman of Prince Group Indicted ...", 14 Oct 2025.
-    https://www.justice.gov/opa/pr/chairman-prince-group-indicted-operating-cambodian-forced-labor-scam-compounds-engaged
-11. **[P]** *United States v. Approximately 127,271 Bitcoin*, Verified Complaint In Rem, 1:25-cv-05745 (E.D.N.Y.),
-    filed 10/14/25, ¶¶ 1 to 2. https://www.justice.gov/usao-edny/media/1416266/dl
-12. **(a) [P]** US Treasury sb0683, 5 Nov 2026. https://home.treasury.gov/news/press-releases/sb0683
-    **(b) [P]** US Treasury sb0538, 23 Jun 2026. https://home.treasury.gov/news/press-releases/sb0538
-    **(c) [P]** US Treasury sb0278, 14 Oct 2025. https://home.treasury.gov/news/press-releases/sb0278
-13. **[P]** UK FCDO and Home Office, "UK and US take joint action to disrupt major online fraud network", 14 Oct 2025.
-    https://www.gov.uk/government/news/uk-and-us-take-joint-action-to-disrupt-major-online-fraud-network
-14. **(a) [P]** 28 CFR Part 9, §§ 9.2, 9.8, via the official eCFR versioner API (as of 2026-10-01).
-    https://www.ecfr.gov/api/versioner/v1/full/2026-10-01/title-28.xml?part=9
-    **(b) [P]** Executive Order 14233, 6 Mar 2025, Federal Register 11 Mar 2025, s. 3.
-    https://govinfo.gov/content/pkg/FR-2025-03-11/html/2025-03992.htm
-    **(c) [P]** 18 U.S.C. § 981(e)(6) (Cornell LII mirror; uscode.house.gov returned 404 to this session).
-    https://www.law.cornell.edu/uscode/text/18/981
-15. **[P]** UK PSR, "APP scams reimbursement dashboard for Q1 2026".
-    https://www.psr.org.uk/information-for-consumers/app-scams-reimbursement-dashboard
-16. **(a) [P]** MAS and IMDA, SRF implementation release, 24 Oct 2024.
-    https://www.mas.gov.sg/news/media-releases/2024/mas-and-imda-announce-implementation-of-shared-responsibility-framework-from-16-december-2024
-    **(b) [P]** Singapore MHA, written reply to PQ (Pritam Singh), 7 Jul 2026 (para 1: annual recovered totals are in
-    the Annual Scam and Cybercrime Brief; para 2: returns to victims not tracked).
-    https://www.mha.gov.sg/media-room/newsroom/amount-of-recovered-and-reimbursed-to-scam-victims-each-year-compared-to-total-monies-lost/
-17. **[S→P]** Home Ministry written reply to Lim Guan Eng, 3 Nov 2026: The Star, 3 Nov,
-    https://www.thestar.com.my/news/nation/2026/11/03/financial-scams-cost-victims-rm123bil-since-2016-parliament-told ;
-    Malay Mail, 4 Nov, https://www.malaymail.com/news/malaysia/2026/11/04/scam-victims-recover-just-1pc-of-rm123b-lost-over-past-decade-parliament-told/241910
-18. **[S→P]** Zahid written reply, 4 Nov 2026, and CCID statement, 5 Nov: Bernama, https://bernama.com/en/general/news.php?id=2630223 ;
-    The Star, https://www.thestar.com.my/news/nation/2026/11/05/cybercrime-bill-allows-asset-restrictions-even-before-suspects-are-charged-says-zahid ;
-    Bernama, https://bernama.com/en/general/news.php?id=2630290 ; The Star (CCID),
+   **(b) [P]** Act A1722 (s. 116D). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2368175_BI/Act%20A1722.pdf
+   **(c) [P]** Act A1692 (First Schedule only; in force 10 Sep 2025). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1845385_BI/A1692%20BI.pdf
+   **(d) [P]** Act A1751 (First Schedule only; in force 11 Jul 2025). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2731057_BI/Criminal%20Procedure%20Code%20%28Amendment%29%20Act%202025%20A1751.pdf
+   **(e) [P]** Act A1422, CPC (Amendment) Act 2010 (Amendment) Act 2012, ss. 1(2), 7 (scanned PDF, read as images).
+   https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/853_BI/Act%20A1422.pdf
+   **(f) [P]** CPC Reprint 2006 (Commissioner of Law Revision), s. 426 without (1A), for amendment history only.
+   https://policehumanrightsresources.org/content/uploads/2016/03/Criminal-Procedure-Code-Malaysia-1935.pdf
+4. **[P]** AGC Laws of Malaysia list exports (principal, amendment, P.U.(A), P.U.(B)), 8 Nov 2026 MYT; A1721
+   (30/10/2024, P.U.(B) 433/2024); A1722 (30/10/2024, P.U.(B) 434/2024); A1761 (01/03/2026, P.U.(B) 76/2026); no
+   Cybercrimes Act; no s. 7A appointment. https://lom.agc.gov.my/generate-principal-pdf.php?type=amendment&lang=&search= (and type=original; generate-subsid-pdf.php?type=pua / type=pub)
+5. **[P]** BNM, *Annual Report 2025*, Box on fraud resolution, pp. 81 to 85. https://www.bnm.gov.my/documents/20124/21185005/ar2025_en_box4.pdf
+6. **[P]** BNM, *Annual Report 2025*, "Maintaining Financial Integrity", pp. 92 to 97. https://www.bnm.gov.my/documents/20124/21185005/ar2025_en_ch1g.pdf
+7. **[P]** BNM SEFT policy document, 28 Jun 2024. https://www.bnm.gov.my/documents/20124/938039/Ensuring_Fair_Treatment_for_Victims_of_Unauthorised_eBanking-Transactions.pdf
+8. **[P]** BNM Governor, IFCTF 2026 keynote, 6 Oct 2026. https://www.bnm.gov.my/en/-/g-spch-ifctf26
+9. **[P]** BNM enforcement notices 2026: https://www.bnm.gov.my/-/eapn012026 to https://www.bnm.gov.my/-/eapn222026 ; https://www.bnm.gov.my/-/ea-pn-20260814
+10. **[P]** US DOJ release, 14 Oct 2025. https://www.justice.gov/opa/pr/chairman-prince-group-indicted-operating-cambodian-forced-labor-scam-compounds-engaged
+11. **[P]** Verified Complaint In Rem, 1:25-cv-05745 (E.D.N.Y.). https://www.justice.gov/usao-edny/media/1416266/dl
+12. **(a) [P]** Treasury sb0683, 5 Nov 2026. https://home.treasury.gov/news/press-releases/sb0683 **(b) [P]** sb0538, 23 Jun
+    2026. https://home.treasury.gov/news/press-releases/sb0538 **(c) [P]** sb0278, 14 Oct 2025. https://home.treasury.gov/news/press-releases/sb0278
+13. **[P]** GOV.UK, 14 Oct 2025. https://www.gov.uk/government/news/uk-and-us-take-joint-action-to-disrupt-major-online-fraud-network
+14. **(a) [P]** 28 CFR Part 9 (eCFR API). https://www.ecfr.gov/api/versioner/v1/full/2026-10-01/title-28.xml?part=9
+    **(b) [P]** EO 14233. https://govinfo.gov/content/pkg/FR-2025-03-11/html/2025-03992.htm **(c) [P]** 18 U.S.C. § 981
+    (Cornell LII mirror). https://www.law.cornell.edu/uscode/text/18/981
+15. **[P]** UK PSR dashboard Q1 2026. https://www.psr.org.uk/information-for-consumers/app-scams-reimbursement-dashboard
+16. **(a) [P]** MAS and IMDA, 24 Oct 2024. https://www.mas.gov.sg/news/media-releases/2024/mas-and-imda-announce-implementation-of-shared-responsibility-framework-from-16-december-2024
+    **(b) [P]** Singapore MHA written reply, 7 Jul 2026. https://www.mha.gov.sg/media-room/newsroom/amount-of-recovered-and-reimbursed-to-scam-victims-each-year-compared-to-total-monies-lost/
+17. **[S→P]** 3 Nov 2026 written reply: The Star, https://www.thestar.com.my/news/nation/2026/11/03/financial-scams-cost-victims-rm123bil-since-2016-parliament-told ;
+    Malay Mail, https://www.malaymail.com/news/malaysia/2026/11/04/scam-victims-recover-just-1pc-of-rm123b-lost-over-past-decade-parliament-told/241910
+18. **[S→P]** Zahid reply 4 Nov and CCID statement 5 Nov: https://bernama.com/en/general/news.php?id=2630223 ;
+    https://www.thestar.com.my/news/nation/2026/11/05/cybercrime-bill-allows-asset-restrictions-even-before-suspects-are-charged-says-zahid ;
     https://www.thestar.com.my/news/nation/2026/11/05/bukit-aman-welcomes-proposed-cybercrime-bill-to-tackle-borderless-scams
-19. **[S→P]** Saifuddin, winding up Supply Bill 2027, 27 Oct 2026: Bernama, https://www.bernama.com/en/news.php?id=2626448 ;
-    Malay Mail, https://www.malaymail.com/news/malaysia/2026/10/27/saifuddin-nasution-rm143m-returned-to-online-scam-victims-rm1009m-losses-prevented/240823 ;
-    The Vibes, https://www.thevibes.com/articles/news/128865/online-scam-losses-hit-rm1.2b-but-only-rm14.3m-recovered-home-minster-says
-20. **[S→P]** Anwar, PMQT, 20 Oct 2026: Bernama, https://bernama.com/en/news.php?id=2622874 ; Malay Mail,
-    https://malaymail.com/news/malaysia/2026/10/20/anwar-madani-anti-money-laundering-enforcement-actions-net-rm4b-up-to2026/239842
-21. **[S→P]** Official loss series: (a) Malay Mail, 22 Jan 2026, https://www.malaymail.com/news/malaysia/2026/01/22/home-ministry-malaysias-online-fraud-surge-drains-rm277b-in-2025-the-highest-in-three-years/206298 ;
-    (b) Malay Mail, 24 Jun 2026, https://www.malaymail.com/news/malaysia/2026/06/24/online-scam-losses-surge-to-rm297b-in-2025-says-home-ministry-as-fraud-trend-worsens-across-malaysia/225000 ;
+19. **[S→P]** 27 Oct 2026 winding-up: Malay Mail (Bernama text), https://www.malaymail.com/news/malaysia/2026/10/27/saifuddin-nasution-rm143m-returned-to-online-scam-victims-rm1009m-losses-prevented/240823 ;
+    Bernama, https://www.bernama.com/en/news.php?id=2626448 ; The Vibes, https://www.thevibes.com/articles/news/128865/online-scam-losses-hit-rm1.2b-but-only-rm14.3m-recovered-home-minster-says
+20. **[S→P]** 20 Oct 2026 PMQT: https://bernama.com/en/news.php?id=2622874 ; https://malaymail.com/news/malaysia/2026/10/20/anwar-madani-anti-money-laundering-enforcement-actions-net-rm4b-up-to2026/239842
+21. **[S→P]** Home Ministry loss and return series: (a) Malay Mail, 22 Jan 2026, https://www.malaymail.com/news/malaysia/2026/01/22/home-ministry-malaysias-online-fraud-surge-drains-rm277b-in-2025-the-highest-in-three-years/206298 ;
+    (b) Malay Mail (Bernama), 24 Jun 2026 (written reply to Ronald Kiandee), https://www.malaymail.com/news/malaysia/2026/06/24/online-scam-losses-surge-to-rm297b-in-2025-says-home-ministry-as-fraud-trend-worsens-across-malaysia/225000 ;
     (c) The Vibes, 15 Jul 2026, https://www.thevibes.com/index.php/articles/news/125048/non-existent-investment-scams-account-for-half-of-malaysias-rm5.37-billion-online-fraud-losses ;
-    (d) The Vibes, 8 Dec 2025 (PDRM statement), https://www.thevibes.com/articles/news/116658/malaysia-hit-with-over-67000-online-crime-cases-in-11-months-losses-surpass-rm2.7-billion
-22. **[S→P]** NSRC returns and victim-route record: (a) The Star, "National Scam Response Centre now running 24/7", 3 Mar
-    2026, https://www.thestar.com.my/news/nation/2026/03/03/national-scam-response-centre-now-running-247 ;
-    (b) Utusan Malaysia, "Lebih RM7 juta duit mangsa scam dipulangkan sejak dua tahun lalu", 27 Jan 2026,
-    https://www.utusan.com.my/nasional/2026/01/parlimen-lebih-rm7-juta-duit-mangsa-scam-dipulangkan-sejak-dua-tahun-lalu/ ;
+    (d) The Vibes, 8 Dec 2025, https://www.thevibes.com/articles/news/116658/malaysia-hit-with-over-67000-online-crime-cases-in-11-months-losses-surpass-rm2.7-billion
+22. **[S→P]** Victim-route record: (a) The Star, 3 Mar 2026, https://www.thestar.com.my/news/nation/2026/03/03/national-scam-response-centre-now-running-247 ;
+    (b) Utusan, 27 Jan 2026, https://www.utusan.com.my/nasional/2026/01/parlimen-lebih-rm7-juta-duit-mangsa-scam-dipulangkan-sejak-dua-tahun-lalu/ ;
     (c) Sinar Harian, 27 Jan 2026, https://www.sinarharian.com.my/article/765717/berita/nasional/rm34-juta-wang-scam-diselamatkan-rm67-juta-dipulangkan-kepada-mangsa ;
     (d) Malay Mail, 3 Dec 2024, https://www.malaymail.com/news/malaysia/2024/12/03/making-banks-more-responsible-putrajaya-reviewing-mechanism-to-hold-banks-accountable-for-negligence-in-scam-cases-considers-adopting-uks-compensation-principle-says-pm-anwar/158757 ;
     (e) The Vibes (Bernama), 23 May 2023, https://www.thevibes.com/articles/news/93218/govt-to-amend-cpc-allow-refunds-to-online-scam-victims-anwar ;
     (f) FMT, 18 Nov 2024, https://www.freemalaysiatoday.com/category/nation/2024/11/18/cops-can-now-freeze-seize-mule-bank-accounts ;
-    (g) FMT, "DPPs ordered to seek compensation for crime victims", 15 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/15/dpps-ordered-to-seek-compensation-for-crime-victims ;
-    (h) NST, "BNM: Banks will bear fraud losses due to lapses in security", Dec 2024, https://nst.com.my/amp/business/corporate/2024/12/1152620/bnm-banks-will-bear-fraud-losses-due-lapses-security ;
-    (i) Malay Mail, 22 Dec 2025 (Fahmi on NSRC launch and 24-hour operation), https://www.malaymail.com/news/malaysia/2025/12/22/anwar-to-launch-new-national-scam-response-centre-office-in-january-to-strengthen-fund-recovery/202818
-23. **[S→P / S]** Bills and commentary: (a) NST, 1 Jul 2026, https://www.nst.com.my/amp/news/nation/2026/07/1477937/dewan-rakyat-passes-cybercrimes-bill-2026 ;
+    (g) FMT, 15 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/15/dpps-ordered-to-seek-compensation-for-crime-victims ;
+    (h) NST, Dec 2024, https://nst.com.my/amp/business/corporate/2024/12/1152620/bnm-banks-will-bear-fraud-losses-due-lapses-security ;
+    (i) Malay Mail, 22 Dec 2025, https://www.malaymail.com/news/malaysia/2025/12/22/anwar-to-launch-new-national-scam-response-centre-office-in-january-to-strengthen-fund-recovery/202818
+23. **[S→P / S / P]** Bills, Parliament and commentary: (a) NST, 1 Jul 2026, https://www.nst.com.my/amp/news/nation/2026/07/1477937/dewan-rakyat-passes-cybercrimes-bill-2026 ;
     (b) Bernama, 20 Jul 2026, https://www.bernama.com/en/general/news.php?id=2583510 ; (c) Malay Mail, 20 Jul 2026,
     https://www.malaymail.com/news/malaysia/2026/07/20/zahid-warns-of-fraud-surge-says-cyber-crime-bill-2026-will-fortify-malaysias-defences/228363 ;
     (d) Rahmat Lim, 6 Aug 2026, https://www.rahmatlim.com/publication/articles/33327/cybercrimes-bill-2026-closing-the-gaps-in-malaysia-s-cybercrime-legal-framework ;
-    (e) HHQ, 19 Aug 2026, https://hhq.com.my/?p=44758 ; (f) NST, NGOs' statement of 30 Jun 2026,
+    (e) HHQ, 19 Aug 2026, https://hhq.com.my/?p=44758 ; (f) NST (NGOs' statement of 30 Jun 2026),
     https://www.nst.com.my/amp/news/nation/2026/06/1476797/three-ngos-urge-government-halt-cybercrimes-bill-seek-pssc-review ;
-    (g) The Star, "A tightening noose on dirty money ...", 12 Dec 2024, https://www.thestar.com.my/news/nation/2024/12/12/a-tightening-noose-on-dirty-money-with-tougher-penalties-and-checks-on-excessive-wealth ;
-    (h) Rahmat Lim, AMLA (Amendment) Bill 2024 passed by Senate (18 Dec 2024), https://www.rahmatlim.com/publication/articles/30458/anti-money-laundering-anti-terrorism-financing-and-proceeds-of-unlawful-activities-amendment-bill-2024-passed-by-senate ;
-    (i) Skrine, Apr 2026, https://www.skrine.com/insights/alerts/april-2026/anti-money-laundering-act-enhanced
-24. **[S→P]** Malaysian voices and court use: (a) NST, 30 Aug 2026, https://www.nst.com.my/amp/news/nation/2026/08/1522098/updated-anwar-billions-seized-illegal-activities-fund-education ;
+    (g) The Star, 12 Dec 2024, https://www.thestar.com.my/news/nation/2024/12/12/a-tightening-noose-on-dirty-money-with-tougher-penalties-and-checks-on-excessive-wealth ;
+    (h) Rahmat Lim, AMLA Bill passed by Senate, https://www.rahmatlim.com/publication/articles/30458/anti-money-laundering-anti-terrorism-financing-and-proceeds-of-unlawful-activities-amendment-bill-2024-passed-by-senate ;
+    (i) Skrine, Apr 2026, https://www.skrine.com/insights/alerts/april-2026/anti-money-laundering-act-enhanced ;
+    (j) **[P]** AMLA (Amendment) Bill 2024, D.R. 64/2024, with Huraian (para 46, p. 57), https://repositori.parlimen.gov.my/bitstream/123456789/1605/68/DR%2064/2024 ;
+    (k) **[P]** Dewan Rakyat Hansard, 11 Dec 2024 (DR68), https://repositori.parlimen.gov.my/bitstream/123456789/1736/37/DR68-11122024
+24. **[S→P]** Voices and court use: (a) NST, 30 Aug 2026, https://www.nst.com.my/amp/news/nation/2026/08/1522098/updated-anwar-billions-seized-illegal-activities-fund-education ;
     (b) The Vibes, 24 Sep 2026 (Lim Guan Eng, reporter's paraphrase), https://www.thevibes.com/index.php/articles/news/127646/more-needs-to-be-done-to-curb-online-scams-says-former-finance-minister ;
     (c) NST letter (FOMCA), Oct 2026, https://www.nst.com.my/amp/opinion/letters/2026/10/1559585/enhancing-consumer-protection-and-empowerment-combat-scams ;
-    (d) Utusan Malaysia, "Kaji hukuman sebat kepada scammer, pampasan mangsa jenayah siber", 7 Jul 2026,
-    https://www.utusan.com.my/nasional/2026/07/kaji-hukuman-sebat-kepada-scammer-pampasan-mangsa-jenayah-siber/ ;
-    (e) The Edge, "Court orders return of RM1.5m in first recovery from Agrobank's RM203.8m fraud case", 21 Sep 2026,
-    https://theedgemalaysia.com/node/818740 ; (f) The Vibes, "Court orders Maybank to pay RM166,000 ...", 12 May 2026,
+    (d) Utusan, 7 Jul 2026, https://www.utusan.com.my/nasional/2026/07/kaji-hukuman-sebat-kepada-scammer-pampasan-mangsa-jenayah-siber/ ;
+    (e) The Edge, 21 Sep 2026, https://theedgemalaysia.com/node/818740 ; (f) The Vibes, 12 May 2026,
     https://www.thevibes.com/articles/news/122886/court-orders-maybank-to-pay-rm166000-to-customer-due-to-illegal-transactions
-25. **[S]** Prince Group aftermath: (a) Nikkei Asia, 7 Nov 2026, https://asia.nikkei.com/spotlight/society/crime/us-slaps-sanctions-on-cambodia-s-prince-group-over-online-scams ;
+25. **[S]** Prince Group aftermath: (a) Nikkei, 7 Nov 2026, https://asia.nikkei.com/spotlight/society/crime/us-slaps-sanctions-on-cambodia-s-prince-group-over-online-scams ;
     (b) The Star (Reuters), 8 Jan 2026, https://www.thestar.com.my/aseanplus/aseanplus-news/2026/01/08/prince-group-founder-linked-to-online-scams-extradited-to-china-says-cctv ;
-    (c) ANN / Phnom Penh Post, 22 Oct 2026, https://asianews.network/?p=309823 ; (d) CryptoSlate (25 Sep 2026 order,
-    reported), https://cryptoslate.com/us-court-blocks-victims-from-127000-seized-bitcoin-and-petition-rules-are-blamed/ ;
-    (e) Sullivan & Cromwell, Chapter 15 recognition note, https://www.sullcrom.com/About/News-and-Events/Highlights/2026/April/S-C-Represents-Joint-Provisional-Liquidators-of-Prince-Group-in-Global-Recovery-Efforts ;
-    (f) Bankless Times, 19 Mar 2026 (lead only), https://www.banklesstimes.com/articles/2026/03/19/victims-battle-doj-over-9b-in-bitcoin-seized-from-prince-group/
+    (c) ANN / Phnom Penh Post, 22 Oct 2026, https://asianews.network/?p=309823 ; (d) CryptoSlate (reported order),
+    https://cryptoslate.com/us-court-blocks-victims-from-127000-seized-bitcoin-and-petition-rules-are-blamed/ ;
+    (e) Sullivan & Cromwell, https://www.sullcrom.com/About/News-and-Events/Highlights/2026/April/S-C-Represents-Joint-Provisional-Liquidators-of-Prince-Group-in-Global-Recovery-Efforts ;
+    (f) Bankless Times (lead only), https://www.banklesstimes.com/articles/2026/03/19/victims-battle-doj-over-9b-in-bitcoin-seized-from-prince-group/
 
-**Count:** 25 numbered sources. **Primary: 16 entries ([S1] to [S16]) covering 30 primary documents opened** (incl.
-23 BNM enforcement notices counted as one entry). The superseded first-draft texts (Labuan FSA copy of Act 613;
-2006 CPC reprint) are no longer relied on.
+**Count:** 25 numbered sources. **Primary: 16 entries ([S1] to [S16]) plus [S23j] and [S23k]**, covering more than
+35 primary documents opened (including 23 BNM notices).
 
 ## VERIFICATION GAPS (close before Stage 1, or keep the claim off the cards)
 
-1. **s. 83D use.** No reported application or order found (REBUILD RESEARCH Q2). Ask BNM directly whether it has
-   applied under s. 83C or s. 83D since 1 Mar 2026; search the courts' e-filing records if accessible.
-2. **s. 426(1A) use in scam and mule-account cases.** No official count found (Q3). Ask the AGC for the number of
-   s. 426(1A) applications and orders since its April 2026 directive; ask the Judiciary for orders made.
-3. **Hansard** for 27 Jan 2026 (Yeo Bee Yin) and 3 Nov 2026 (Lim Guan Eng): fixes RM6.7m vs RM6.65m, the RM542m
-   collecting body and the RM1.23b category. parliament.gov.my unreachable from this environment.
-4. **Cybercrimes Act**: AGC lists no Act and no commencement notice as of 7 Nov 2026 [S4]; Royal Assent not
+1. **s. 426(1A) use count.** Ask the AGC how many s. 426(1A) applications DPPs have made since 15 Apr 2026, in
+   scam, cheating (Penal Code s. 420) and mule-account (ss. 424A to 424D) cases, and how many orders were made and
+   paid; ask the Judiciary for orders made. Until answered, write "no published count found".
+2. **s. 83D use.** Ask BNM whether it has applied under s. 83C or s. 83D. Secondary only.
+3. **Hansard** for 27 Jan 2026 and the 3 Nov 2026 written reply. The CLJ Hansard mirror returned no PDF for
+   DR-27012026; the Parliament repository was reachable for 2024 documents but the 2026 handles were not found.
+4. **Cybercrimes Act**: no Act and no commencement notice in the AGC lists as of 7 Nov 2026; Royal Assent not
    established. Re-check at Phase 8.
-5. **E.D.N.Y. order of 25 Sep 2026** (docket 1:25-cv-05745): reported only; CourtListener refused access.
-6. **Scam-specific forfeiture figure**: none found; keep AMLA s. 58 off scam cards.
-7. **Greenmeadows Properties Sdn Bhd**: no Malaysian freeze or SSM status found.
-8. **Malaysian victims in the Prince case**: none named in DOJ documents. Do not imply Malaysian victims can claim
-   the bitcoin; any 28 CFR 9.2 line must carry the 9.8 caveats.
-9. **AMLA s. 7A appointments**: no order appointing a "regulatory or supervisory authority" found in the AGC P.U.(A)
-   list; until found, BNM is the only identifiable s. 83D applicant.
-10. **Legal basis of the Agrobank return order** (21 Sep 2026): not stated in the report (s. 413 or another
-    provision).
-11. **When s. 426(1A) was inserted**: present in the AGC text as at 4 Jul 2023; the amending Act was not determined.
-12. **Thailand's 2025 decree** and BNM's "Financial Institutions' Response to Fraud" policy document: not opened.
+5. **E.D.N.Y. order of 25 Sep 2026**: reported only.
+6. **Scam-specific forfeiture figure**: none; keep AMLA ss. 56 to 62 off scam cards.
+7. **Greenmeadows Properties Sdn Bhd**: no Malaysian action found.
+8. **Malaysian victims in the Prince case**: none named; no card may imply they can claim.
+9. **Act A1378** (CPC Amendment Act 2010) not opened; the June 2012 date for s. 426's current wording rests on the
+   AGC list of sections amended, A1422 ss. 1(2) and 7, and the absence of (1A) in the 2006 reprint.
+10. **Legal basis of the Agrobank return order**: not stated in the report.
+11. Thailand's 2025 decree; BNM's "Financial Institutions' Response to Fraud" policy document: not opened.
 
 ## OPTIONAL — ENGINE CONTEXT
 
@@ -1088,3 +993,97 @@ Run 7 Nov 2026 UTC (8 Nov MYT), independently of the brief's Q2:
 - **Add to SOURCES as primary:** [V5] Bill D.R. 64/2024 with Huraian; [V6] Dewan Rakyat Hansard, 11 Dec 2024; [V8] BNM legislative-powers page.
 
 **Overall call: READY FOR STAGE 1 AFTER FIXES.** No wrong number was found among the figures the hook and core rely on (RM6.65m, RM508,479.39, RM34.05m, RM14.3m, RM2.97b, 969, 23 notices), and s. 83D, s. 83E, P.U.(B) 76/2026 and CPC s. 426(1A) are quoted correctly. The failure is framing. The Bill's own Explanatory Statement ties s. 83D to civil action by the regulator, only Bank Negara can apply, pre-March 2026 conduct is excluded, and no source links the power to scam victims. Title, hook, headline 1 and view must stop presenting it as a victim remedy (C1, C2). CPC s. 426(1A), which names the victim and is mandatory on the prosecutor's application, is the sounder spine. Apply C1 to C6 and re-read the hook and view against rows 14 to 20 before Stage 1.
+
+## FIXES APPLIED (SECOND CHECK, 2026-11-07)
+
+All sections above INDEPENDENT VERIFICATION were rewritten again; both verification sections, the first FIXES
+APPLIED log and REBUILD RESEARCH are unchanged (they now describe the superseded s. 83D-led draft).
+
+**Editor decisions**
+1. **Thesis re-centred on CPC s. 426(1A)** (ISSUE, core, Lens 1 and 2, KS 1 and 2, WEAKENS 1 to 3, GAP 1). AMLA s.
+   83D demoted to a "Secondary fact" block that always carries: on Bank Negara's application; no reported use;
+   untested for scam victims; pre-1 March 2026 breaches saved under A1761 s. 52(2). s. 83D does not appear in the
+   title, hook, headlines or view.
+2. **Retitled.** Date basis: AGC list of sections amended (s. 426: Acts A1378 and A1422, both 01-06-2012) [S3a];
+   A1422 s. 1(2) (in operation with A1378) and s. 7 (substitutes the s. 426(1) text inserted by A1378 s. 11),
+   opened as page images [S3e]; the 2006 reprint has no (1A) [S3f]; A1692 and A1751 (opened) amend only the First
+   Schedule and A1722 inserts s. 116D, so none touches s. 426 [S3b to S3d]. A1378 itself not opened (GAP 9). The
+   title says "Since June 2012", not a day.
+3. **Reframe (C3):** "Malaysia publishes how much its scam response centre hands back. It does not publish how often
+   its courts order convicted offenders to pay victims." Not in "X is not Y, it is Z" form.
+4. **View (C2):** no "two ways", "right" or "every outcome"; first sentence rests on s. 426(1A) only.
+5. **C4, C5, C6:** see items 9 to 11.
+
+**Blocking items**
+6. **C1 (rows 14 to 16).** Title, hook and headline 1 now lead with s. 426(1A); headline 1 replaced; s. 83D never
+   paired with the NSRC's RM6.65m.
+7. **C2 (rows 11, 19, 20).** View rewritten as in item 4.
+8. **C3 (row 18).** Reframe rewritten as in item 3; the Home Ministry's published return rates added (KS 6, 7).
+9. **C4 (rows 31, 32).** "Police recorded" removed everywhere; RM2.97b now "the Home Ministry reported ... online-fraud
+   losses"; RM6.65m labelled "through the NSRC's earmarking process" in ISSUE, hook sub and Lens 3.
+10. **C5 (row 28).** Fact-2 arousal peak replaced with the verifier's sentence (AG directive; no count since); the
+    969 convictions appear only with both caveats (KS 12; WEAKENS 3).
+11. **C6 (row 7).** A1761 s. 52(2) added to ISSUE (secondary fact), RELEVANT LAW, KS 19 and WEAKENS 5.
+
+**Non-blocking items**
+12. Row 33: NSRC earmarking and court-ordered return listed separately; "No source ties the NSRC's earmarking returns
+    to s. 116D or to a court order" stated.
+13. Row 41: every "belum ada" use scoped to the UK- and Australia-style mechanism.
+14. Row 30: Penal Code ss. 424A to 424D cited to Act A1721 and P.U.(B) 433/2024.
+15. Row 21: "no published count was found" used throughout; GAPs 1 and 2 ask the AGC and BNM.
+16. Row 26: AG's limits added ("in the appropriate cases"; "would not be possible in all cases").
+17. Row 38: Agrobank funds were the bank's settlement-account money; the 60 holders consented.
+18. Row 35: RM100.93m marked "window not stated in source".
+19. Row 10: s. 83E described as discretionary ("may"), shared with enforcement agencies, limited to public interest.
+20. GAP 11 narrowed and resolved as far as possible (item 2); now GAP 9 (A1378 unopened).
+21. KS gains Pool B corroboration from the 24 Jun 2026 reply (RM32.49m seized and RM10.9m returned since 2022;
+    RM25.2m / RM7.3m / 29% for 2022 to 2025; RM7.25m / RM3.57m / 49% for Jan to May 2026), checked against the Malay
+    Mail text; the asking MP (Ronald Kiandee, PN) added to the spectrum.
+22. GAP 3 (Hansard): tried the CLJ Hansard mirror for DR-27012026 (no PDF served); repository handles for 2026 not
+    found. Gap kept.
+23. A1692 (in force 10 Sep 2025) and A1751 (11 Jul 2025) opened: First Schedule amendments only; s. 426 untouched.
+24. Added to SOURCES as primary: Bill D.R. 64/2024 with Huraian [S23j] (para 46 confirmed: s. 83D orders "bagi
+    apa-apa tindakan sivil yang diambil oleh pihak berkuasa berwibawa atau pihak berkuasa kawal selia atau
+    pengawasan"); Dewan Rakyat Hansard 11 Dec 2024 [S23k] (confirmed "Fasal 20 memotong seksyen 22" and "tindakan
+    pentadbiran dan penguatkuasaan sivil"); BNM legislative-powers page [S2d].
+
+**Rows marked other than VERIFIED**
+25. Row 7 → item 11. Rows 11, 19, 20 → item 7. Row 14 → item 6. Rows 15, 16 → item 6. Row 18 → item 8. Row 28 → item
+    10. Row 30 → item 14. Row 32 → item 9. Row 33 → item 12. Row 41 → item 13.
+26. VERIFIED rows with a stated fix: row 1 (whole Act in force; stated); row 9 (BNM the only possible applicant;
+    stated); row 13 (Explanatory Statement and s. 83C scope added); row 17 (headline 2 now says "court compensation
+    orders"); row 23 (no 2026 notice uses ss. 83A to 83E; stated in KS 19); row 24 (A1692 and A1751 opened, item 23);
+    row 31 (route label); row 35 (item 18); row 38 (item 17); row 42 (Saifuddin's evaluation line kept as the
+    reporter's paraphrase, not quoted as his words); row 43 (re-check at Phase 8, GAP 4).
+
+**Misleading-framing risks (second check)**
+27. (a)1 → items 1 and 6. (a)2 → BNM's 23 notices acknowledged; no card says BNM publishes nothing. (b)1 → item 10.
+    (b)2 → "no published count found"; the AGC has not been asked (GAP 1). (c)1 → s. 83D kept off bank framing; bank
+    liability routed to SEFT and civil suits. (c)2 → RM6.65m labelled as NSRC earmarking only; SEFT shown separately.
+    (d)1 → s. 83D removed from the hook. (d)2 → victim-usable routes (s. 413, civil suits, SEFT) listed in ISSUE.
+
+**Final drafts (for Stage 1)**
+- Title: "Since June 2012 Malaysia's Criminal Procedure Code has said courts shall order compensation for victims when
+  prosecutors ask. No published count shows how often prosecutors ask in scam cases."
+- Hook big: "Malaysian courts must order convicts to compensate victims when prosecutors ask. No published count shows
+  how often prosecutors ask in scam cases." Sub: "CPC s. 426(1A), in force since June 2012. In April 2026 the
+  Attorney General told prosecutors to apply. The NSRC's earmarking returned RM6.65m in 2025." (297 characters
+  combined.)
+- Reframe and view as in items 3 and 4.
+
+### Editor review (2026-11-07)
+
+- **"Courts must order" (hook).** Holds on the text quoted in ISSUE: s. 426(1A) says the court "shall, upon the
+  application of the Public Prosecutor, make an order" for compensation. Two qualifiers must travel with any
+  card that uses "must": the court fixes the amount and weighs "the ability of the convicted accused to pay"
+  (s. 426(1C)(f)); and the order runs only to "the victim of the offence committed by the convicted accused".
+  Whether a scam victim is the victim of a mule-account conviction is untested (KEY STATISTICS row 12 caveat).
+- **AG directive (15 Apr 2026).** Rests on FMT's report [S22(g)], a named outlet quoting the AG; the AG's
+  own caveat ("would not be possible in all cases", reported speech) must accompany it on any card.
+- **Source-label note.** In the first INDEPENDENT VERIFICATION section, rows 67 and 68 cite "S22g Malay Mail
+  22 Dec 2025"; in the current SOURCES list that article is S22(i), and S22(g) is FMT, 15 Apr 2026. The
+  verification section is kept unedited as the audit record; read those two rows as S22(i).
+- **AMLA s.83D** is kept off the title, hook and view, per the second check (on BNM's application; no reported
+  use; untested for scam victims; pre-1 Mar 2026 conduct saved).
+- **Status.** Ready for the editor's approval to proceed to Stage 1. Not approved yet.
+
