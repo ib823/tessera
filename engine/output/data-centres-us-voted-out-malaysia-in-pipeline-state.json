@@ -42,22 +42,44 @@
       }
     },
     "4_stage2_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-11-07T23:44:55.226Z",
+      "path": "engine/output/data-centres-us-voted-out-malaysia-in-stage2.json",
+      "bias_score": 22
     },
     "4_stage3_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-11-07T23:44:55.264Z",
+      "path": "engine/output/data-centres-us-voted-out-malaysia-in-stage3.json",
+      "factual_accuracy_score": 68
     },
     "5_synthesis": {
-      "done": false
+      "done": true,
+      "at": "2026-11-07T23:47:50.531Z",
+      "synthesis": "engine/output/data-centres-us-voted-out-malaysia-in-stage6-synthesis.json",
+      "sr": 84,
+      "ba": 78,
+      "fc": 68,
+      "stage5": "not run (source_diversity 0.55 >= 0.4; no 3R HIGH)"
     },
     "6_legal_check": {
-      "done": false
+      "done": true,
+      "at": "2026-11-07T23:47:50.580Z",
+      "reader": "engine/output/data-centres-us-voted-out-malaysia-in-reader.json",
+      "legal": "pass (3R none; no defamation; public sources only; no sedition or CMA s233 risk; analysis framing)",
+      "stealth": "clean",
+      "validate_issues": "pass (0 errors, 0 warnings for 2016)",
+      "validate_language": "0 warnings",
+      "finalScore": 78.2
     },
     "7a_sherlock": {
       "done": false
     },
     "7b_image_prompt": {
-      "done": false
+      "done": true,
+      "at": "2026-11-07T23:47:50.629Z",
+      "template": "CLAUDE.md canonical single-line",
+      "target": "public/og/backgrounds/issue-2016-bg.png"
     },
     "7b_image_uploaded": {
       "done": false
