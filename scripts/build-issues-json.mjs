@@ -3,7 +3,7 @@
  * - public/issues-feed.json  — feed summaries (no card text)
  * - public/issues/[id].json  — full issue per file
  */
-import { writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, rmSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIssues } from './lib/load-issues.mjs';
@@ -57,11 +57,25 @@ rmSync(issuesDir, { recursive: true, force: true });
 mkdirSync(issuesDir, { recursive: true });
 
 // --- Per-issue full payloads (published only) ---
+// `sourceList` comes from src/data/sources/{id}.json (scripts/build-issue-sources.mjs,
+// which runs before this script). Only the reader-facing fields are shipped.
+const sourcesDir = join(root, 'src', 'data', 'sources');
+let withSources = 0;
 for (const issue of publishedIssues) {
+  const sourcesPath = join(sourcesDir, `${issue.id}.json`);
+  let payload = issue;
+  if (existsSync(sourcesPath)) {
+    const { entries } = JSON.parse(readFileSync(sourcesPath, 'utf8'));
+    payload = {
+      ...issue,
+      sourceList: entries.map(({ n, title, publisher, date, url, primary }) => ({ n, title, publisher, date, url, primary })),
+    };
+    withSources += 1;
+  }
   writeFileSync(
     join(issuesDir, `${issue.id}.json`),
-    JSON.stringify(issue),
+    JSON.stringify(payload),
     'utf8'
   );
 }
-console.log(`  ✓ issues/*.json (${publishedIssues.length} files)`);
+console.log(`  ✓ issues/*.json (${publishedIssues.length} files, ${withSources} with a source list)`);
