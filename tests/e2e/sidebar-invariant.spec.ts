@@ -1,28 +1,33 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 
 /**
  * Phase 9 smoke test #1 (brief-v3): Home renders the four canonical feed
  * sections.
  *
- * SKIPPED in CI baseline run — these tests rely on the App island fully
- * hydrating (so `html.js-reader-mounted` applies and the sidebar with its
- * data-section attributes is painted). Headless chromium on GH Actions
- * occasionally hangs during Svelte hydration.
+ * The invariant is also covered by Vitest unit tests on buildFeedSections at
+ * src/lib/__tests__/feed-sections.test.ts. These Playwright tests add the
+ * render-layer assertion on top, with the real service worker running.
  *
- * The invariant IS covered by Vitest unit tests on buildFeedSections at
- * src/lib/__tests__/feed-sections.test.ts — which run in every CI build.
- * These Playwright tests add the render-layer assertion on top, which
- * needs a working headless browser session. Re-enable after
- * parity/phase-9-hydration-tests stabilises the mount path.
+ * Below 768px the app switches to its mobile layout, where Today has no
+ * sidebar and the sectioned feed lives in Library > Archive. Narrow viewports
+ * assert on that list instead.
  *
- * Selectors target repo-owned data-section / data-section-count attributes,
+ * Selectors target repo-owned data-section / data-section-count attributes
+ * (SectionHeader in the desktop sidebar, MobileSectionDivider on mobile),
  * safe from scripts/stealth.mjs renames (it only rewrites data-astro-*).
  */
+async function openSectionedFeed(page: Page) {
+  const mobileLayout = (page.viewportSize()?.width ?? 1440) < 768;
+  await page.goto(mobileLayout ? '/?view=library&tab=archive' : '/');
+  // Wait for hydration to finish; App sets this class on success.
+  await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+  // The sections render with the feed, which arrives after mount.
+  await expect(page.locator('[data-section]').first()).toBeAttached();
+}
+
 test.describe('Four-section sidebar invariant', () => {
-  test.skip('home renders all four canonical feed sections', async ({ page }) => {
-    await page.goto('/');
-    // Wait for hydration to finish; App sets this class on success.
-    await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+  test('home renders all four canonical feed sections', async ({ page }) => {
+    await openSectionedFeed(page);
 
     // All four canonical sections must be present in the DOM.
     const sections = page.locator('[data-section]');
@@ -35,7 +40,7 @@ test.describe('Four-section sidebar invariant', () => {
     }
   });
 
-  test.skip('four sections render with count badges even when some are empty', async ({ page }) => {
+  test('four sections render with count badges even when some are empty', async ({ page }) => {
     // Clear any prior reading state so the test runs against a clean profile.
     await page.addInitScript(() => {
       try {
@@ -43,8 +48,7 @@ test.describe('Four-section sidebar invariant', () => {
         keys.forEach(k => localStorage.removeItem(k));
       } catch { /* ignore */ }
     });
-    await page.goto('/');
-    await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+    await openSectionedFeed(page);
 
     // At least the expected 4 data-section labels are rendered.
     // Count badges (data-section-count) should be numeric strings (may be '0').

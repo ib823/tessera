@@ -201,14 +201,8 @@ self.addEventListener('message', (event) => {
   }
 
   if (event.data.type === 'APP_VISIBLE') {
-    // Clear all T4A notifications when app is opened
-    self.registration.getNotifications().then((notifications) => {
-      notifications.forEach((n) => n.close());
-    });
-    // Clear badge count
-    if ('clearAppBadge' in navigator) {
-      navigator.clearAppBadge().catch(() => {});
-    }
+    // Clear all T4A notifications and the badge when the app is opened
+    event.waitUntil(clearShownNotifications());
   }
 
   if (event.data.type === 'ISSUE_OPENED') {
@@ -227,3 +221,36 @@ self.addEventListener('message', (event) => {
     });
   }
 });
+
+// ── Notification clearing ──
+
+// False only when the worker can read the notification permission and it is
+// not granted. Without it this origin cannot have shown a notification, and
+// the app sets no badge of its own, so there is nothing to clear.
+function mayHaveNotifications() {
+  if (typeof Notification === 'undefined' || typeof Notification.permission !== 'string') return true;
+  return Notification.permission === 'granted';
+}
+
+// Closes every notification this origin is showing and clears the app badge.
+//
+// The permission check also keeps the Badging API away from browsers that
+// expose it in service workers but cannot serve it there. chrome-headless-shell
+// (Playwright's default headless Chromium) has no handler for it in the worker
+// scope, so calling navigator.clearAppBadge() from here makes the browser kill
+// the renderer process, and with it every page of this origin ("No binder found
+// for interface blink.mojom.BadgeService for the service worker scope").
+// Feature detection cannot see that and .catch() cannot catch it. The shell
+// always reports notification permission as denied, so the check skips the call
+// there, while an installed app with permission still gets its badge cleared.
+function clearShownNotifications() {
+  if (!mayHaveNotifications()) return Promise.resolve();
+  const steps = [];
+  if (typeof self.registration.getNotifications === 'function') {
+    steps.push(self.registration.getNotifications().then((list) => list.forEach((n) => n.close())));
+  }
+  if (typeof navigator.clearAppBadge === 'function') {
+    steps.push(navigator.clearAppBadge());
+  }
+  return Promise.all(steps.map((step) => step.catch(() => {})));
+}
