@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { QUOTES } from '../data/quotes';
+  import { onMount } from 'svelte';
   import { opinionLabel, opinionColor as issueOpinionColor } from '../data/issue-types';
   import IssueImage from './IssueImage.svelte';
 
@@ -47,7 +47,21 @@
     onPullRefresh,
   }: Props = $props();
 
-  const quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+  // The quote list is ~70 KB raw (~19 KB brotli), about a fifth of the App
+  // chunk, to show one line in the footer. Load it after mount so it stays
+  // off the critical path of every page (home and all issue pages).
+  let quote = $state('');
+  onMount(() => {
+    let cancelled = false;
+    import('../data/quotes')
+      .then(({ QUOTES }) => {
+        if (!cancelled) quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  });
 
   let hasIssues = $derived(issueCount > 0);
   let continueIssue = $derived(sections.find((section) => section.kind === 'continue')?.issues[0] ?? null);
@@ -393,7 +407,7 @@
       {/if}
 
       <footer class="today-footer">
-        <div class="today-quote">"{quote}"</div>
+        {#if quote}<div class="today-quote">"{quote}"</div>{/if}
         <div class="today-ethos">Editorial ethos</div>
         <nav class="today-footer-links" aria-label="Footer navigation">
           <a href="/about">How This Works</a>
@@ -407,7 +421,7 @@
       <div class="coming-soon">
         <div class="today-kicker">Coming Soon</div>
         <h1 class="today-title">New issues publish three times a week.</h1>
-        <p class="today-quote">"{quote}"</p>
+        {#if quote}<p class="today-quote">"{quote}"</p>{/if}
       </div>
     {/if}
   </div>
