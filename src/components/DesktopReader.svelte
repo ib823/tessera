@@ -353,7 +353,7 @@
         <span style="font-family:var(--font-display);font-size:var(--text-title);font-weight:800;color:{nsColor};font-variant-numeric:tabular-nums;">{Math.round(issue.finalScore)}</span>
         <div>
           <div style="font-size:var(--text-xs);font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">Editorial Quality Score</div>
-          <div style="font-size:var(--text-sm);color:var(--text-secondary);margin-top:2px;">Combined score across all six review stages. Higher means more balanced and thorough analysis.</div>
+          <div style="font-size:var(--text-sm);color:var(--text-secondary);margin-top:2px;">Combined score across this issue's review stages. Higher means more balanced and thorough analysis.</div>
         </div>
       </div>
     {/if}

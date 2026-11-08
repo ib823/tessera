@@ -189,7 +189,7 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
           <span class="ssg-article__quality-label">Editorial Quality Score</span>
           <span class="ssg-article__quality-value" translate="no"><span>{Math.round(issue.finalScore)}</span> / 100</span>
         </p>
-        <p class="ssg-article__quality-note">Reviewed across 6 independent editorial stages.</p>
+        <p class="ssg-article__quality-note">Reviewed across {issue.stageScores ? Object.values(issue.stageScores).filter((v) => typeof v === 'number').length : 4} independent editorial stages.</p>
       </footer>
     )}
   </article>
