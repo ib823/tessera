@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import FeedRow from './FeedRow.svelte';
   import SectionHeader from './SectionHeader.svelte';
   import LibraryTabs from './LibraryTabs.svelte';
@@ -124,35 +123,15 @@
   // Search and library views use a flat issue list in the sidebar.
   let displayIssues = $derived(filteredByState);
 
-  // Virtual feed
+  // Flat feed (search results / filter fallback). Rows flow at their natural
+  // height: the list is at most the published issues (~100 rows, the same
+  // count the section feed renders), and fixed-height virtual rows made a
+  // row's text overlap the next one when users increase text spacing
+  // (WCAG 1.4.12).
   let scrollContainerEl: HTMLDivElement | undefined = $state(undefined);
-  let scrollTop = $state(0);
-  let containerHeight = $state(800);
-  const ITEM_HEIGHT = 132;
-  const BUFFER = 8;
-
-  function onFeedScroll() {
-    if (scrollContainerEl) {
-      scrollTop = scrollContainerEl.scrollTop;
-    }
-  }
-
-  onMount(() => {
-    if (scrollContainerEl) {
-      containerHeight = scrollContainerEl.clientHeight;
-      const ro = new ResizeObserver((entries) => {
-        containerHeight = entries[0].contentRect.height;
-      });
-      ro.observe(scrollContainerEl);
-      return () => ro.disconnect();
-    }
-  });
 
   let flatIssues = $derived(displayIssues);
   let issueIndexMap = $derived.by(() => new Map(flatIssues.map((issue, index) => [issue.id, index])));
-  let visibleStart = $derived(Math.max(0, Math.floor(scrollTop / ITEM_HEIGHT) - BUFFER));
-  let visibleEnd = $derived(Math.min(flatIssues.length, Math.ceil((scrollTop + containerHeight) / ITEM_HEIGHT) + BUFFER));
-  let totalHeight = $derived(flatIssues.length * ITEM_HEIGHT);
 
   // Roving tabindex
   let focusedIndex = $state(-1);
@@ -208,17 +187,9 @@
 
   function scrollToFocused() {
     if (!scrollContainerEl || focusedIndex < 0) return;
-    const itemTop = focusedIndex * ITEM_HEIGHT;
-    const itemBottom = itemTop + ITEM_HEIGHT;
-    const viewTop = scrollContainerEl.scrollTop;
-    const viewBottom = viewTop + containerHeight;
-    if (itemTop < viewTop) {
-      scrollContainerEl.scrollTop = itemTop;
-    } else if (itemBottom > viewBottom) {
-      scrollContainerEl.scrollTop = itemBottom - containerHeight;
-    }
     requestAnimationFrame(() => {
       const el = scrollContainerEl?.querySelector(`[data-index="${focusedIndex}"]`) as HTMLElement;
+      el?.scrollIntoView({ block: 'nearest' });
       el?.focus();
     });
   }
@@ -235,7 +206,6 @@
     void filterMode;
     if (scrollContainerEl) {
       scrollContainerEl.scrollTop = 0;
-      scrollTop = 0;
     }
   });
 </script>
@@ -371,7 +341,6 @@
   <div
     id="desktop-feed-list"
     bind:this={scrollContainerEl}
-    onscroll={onFeedScroll}
     onkeydown={onFeedKeyDown}
     role="listbox"
     aria-label="Issues"
@@ -427,17 +396,10 @@
         </p>
       </div>
     {:else}
-      <!-- Virtual windowed list (fallback / search results) -->
-      <div style="height:{totalHeight}px;position:relative;">
-        {#each flatIssues.slice(visibleStart, visibleEnd) as issue, i}
-          {@const idx = visibleStart + i}
-          <div
-            style="position:absolute;top:{idx * ITEM_HEIGHT}px;left:0;right:0;height:{ITEM_HEIGHT}px;"
-          >
-            <FeedRow {issue} readState={issueReadState(issue.id)} isActive={activeId === issue.id} tabIndex={rowTabIndex(issue.id, idx)} itemIndex={idx} onClick={() => { focusedIndex = idx; onSelectIssue(issue); }} hasReaction={hasReaction(issue.id)} reactionCount={reactionMap[issue.id]?.length ?? 0} hasConnections={issueHasConnections?.(issue.id) ?? false} searchTerms={isSearching ? searchQuery.trim() : ''} />
-          </div>
-        {/each}
-      </div>
+      <!-- Flat list (fallback / search results) -->
+      {#each flatIssues as issue, idx (issue.id)}
+        <FeedRow {issue} readState={issueReadState(issue.id)} isActive={activeId === issue.id} tabIndex={rowTabIndex(issue.id, idx)} itemIndex={idx} onClick={() => { focusedIndex = idx; onSelectIssue(issue); }} hasReaction={hasReaction(issue.id)} reactionCount={reactionMap[issue.id]?.length ?? 0} hasConnections={issueHasConnections?.(issue.id) ?? false} searchTerms={isSearching ? searchQuery.trim() : ''} />
+      {/each}
     {/if}
   </div>
   </div>

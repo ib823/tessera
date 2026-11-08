@@ -1291,7 +1291,7 @@
                 {:else if conn.readState === 'started'}
                   <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><circle cx="12" cy="12" r="9" stroke="var(--score-warning)" stroke-width="2" fill="none"/><path d="M12 3a9 9 0 0 1 0 18" fill="var(--score-warning)"/></svg>
                 {/if}
-                <div style="font-size: var(--text-ui);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">{conn.headline}</div>
+                <div style="font-size: var(--text-ui);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;">{conn.headline}</div>
               </div>
               <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
                 <div style="width:32px;height:3px;background:var(--bg-sunken);border-radius: var(--radius-pill);overflow:hidden;">

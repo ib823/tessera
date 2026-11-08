@@ -261,14 +261,15 @@
 
       {#if topIssue && onOpenIssue}
         <article class="hero-entry" aria-labelledby="lead-issue-title">
+        <!-- Named by its visible content (WCAG 2.5.3): no aria-label, and the art is
+             decorative here because the headline is already part of the name. -->
         <button
           class="hero-card"
           onclick={() => onOpenIssue?.(topIssue)}
-          aria-label={`Read lead issue: ${topIssue.headline}`}
         >
           {#if topIssue.hasImage}
             <div class="hero-art">
-              <IssueImage issueId={topIssue.id} size="hero" aspectRatio="16/9" borderRadius="0" alt="Illustration for {topIssue.headline}" eager={true} />
+              <IssueImage issueId={topIssue.id} size="hero" aspectRatio="16/9" borderRadius="0" alt="" eager={true} />
             </div>
           {/if}
           <div class="hero-scrim"></div>
@@ -956,15 +957,13 @@
     min-width: 0;
   }
 
+  /* Headlines are never line-clamped: with user text spacing (WCAG 1.4.12) a
+     clamp hides part of the headline. Context excerpts below stay clamped. */
   .topic-issue-headline {
     font-size: var(--text-sm);
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1.35;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
   .topic-issue-context {

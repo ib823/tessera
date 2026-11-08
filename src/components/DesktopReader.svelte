@@ -449,7 +449,7 @@
                     {:else if conn.readState === 'started'}
                       <svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><circle cx="12" cy="12" r="9" stroke="var(--score-warning)" stroke-width="2" fill="none"/><path d="M12 3a9 9 0 0 1 0 18" fill="var(--score-warning)"/></svg>
                     {/if}
-                    <div style="font-size: var(--text-sm);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;">{conn.headline}</div>
+                    <div style="font-size: var(--text-sm);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;">{conn.headline}</div>
                   </div>
                   <div style="display:flex;align-items:center;gap:8px;margin-top:4px;">
                     <span style="font-size: var(--text-micro);color:var(--text-muted);">{conn.sharedEntities.slice(0, 3).join(' · ')}</span>

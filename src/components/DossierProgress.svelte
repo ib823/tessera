@@ -60,7 +60,7 @@
 
 <header class="progress-bar" role="banner">
   <div class="progress-bar__inner">
-    <a href="/" class="progress-bar__brand" aria-label="The Fourth Angle home">
+    <a href="/" class="progress-bar__brand" aria-label="T4A Dossier · {dossierId}, The Fourth Angle home">
       <span class="progress-bar__brand-text">T4A</span>
       <span class="progress-bar__brand-dossier">Dossier · {dossierId}</span>
     </a>
@@ -79,7 +79,7 @@
         type="button"
         class="progress-bar__btn progress-bar__btn--share"
         onclick={handleShare}
-        aria-label="Copy link to this dossier"
+        aria-label={shared ? 'Copied link to this dossier' : 'Share: copy link to this dossier'}
       >
         <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4">
           <circle cx="4" cy="8" r="2" />
