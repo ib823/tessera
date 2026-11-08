@@ -1,10 +1,78 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-08T10:10:50.703Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-08T12:14:15.532Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (88)
+## ⏳ TO POST (90)
+
+### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
+
+> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
+
+**1/6** _(hook — attach image, NO link)_ · 157 chars
+```
+Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
+```
+**2/6** _(fact)_ · 156 chars
+```
+Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
+```
+**3/6** _(fact)_ · 151 chars
+```
+The scam response centre returned RM6.65m to victims in 2025, the Home Ministry told Parliament. Bank Negara put 2025's reported scam losses at RM2.8b.
+```
+**4/6** _(fact)_ · 131 chars
+```
+Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
+```
+**5/6** _(reframe)_ · 76 chars
+```
+The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
+```
+**6/6** _(view — ONLY post with the link)_ · 222 chars
+```
+If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
+
+https://thefourthangle.pages.dev/issue/2018
+```
+
+### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s diesel subsidy surges to rm2.5b monthly, loke says ev trucks must replace fuel‑). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2017-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2017`
+
+**1/6** _(hook — attach image, NO link)_ · 140 chars
+```
+China's customs logged 64.7 million tonnes of crude 'from Malaysia' in 2025. Malaysia's own trade statistics logged 314,000 tonnes to China.
+```
+**2/6** _(fact)_ · 149 chars
+```
+US Treasury said in November 2025 that Iran's military oil seller, Sepehr Energy Jahan, labelled its oil 'as Malaysian heavy crude, a common tactic'.
+```
+**3/6** _(fact)_ · 226 chars
+```
+China's 2025 'Malaysian' crude works out to 1.30m barrels a day, more than 2.5 times all the crude and condensate Malaysia produced. At 7.33 barrels a tonne. DOSM's preliminary 2025 output: 183.6m barrels, about 503,000 a day.
+```
+**4/6** _(fact)_ · 269 chars
+```
+Traders told Reuters in November 2025 the label was moving to 'Indonesian', after bank scrutiny and Malaysia's July 2025 vow to detain ships. In 2025 China's customs logged 14.5m tonnes of crude 'from Indonesia'. Indonesia's own statistics logged 0.17m tonnes to China.
+```
+**5/6** _(reframe)_ · 131 chars
+```
+The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretched over more than 2.5 times Malaysia's own output.
+```
+**6/6** _(view — ONLY post with the link)_ · 202 chars
+```
+Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.
+
+https://thefourthangle.pages.dev/issue/2017
+```
 
 ### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
 
