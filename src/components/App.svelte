@@ -1160,6 +1160,48 @@
       class="app-main app-main--desktop"
       onmouseleave={() => { if (cinemaActive) cinemaPeek = false; }}
     >
+      <!-- Sidebar first in the DOM: it is on the left, so keyboard and
+           screen-reader order now match what is on screen. -->
+      <aside style="display:flex;flex-direction:column;flex-shrink:0;" aria-label="Sidebar">
+      <DesktopFeed
+        issues={sortedIssues}
+        sections={feedSections}
+        loading={!feedLoaded}
+        activeId={activeIssue?.id ?? null}
+        {readMap}
+        {surfaceMode}
+        {libraryMode}
+        {readingCount}
+        {highlightCount}
+        archiveCount={issues.length}
+        {libraryCount}
+        onGoToday={goToday}
+        onOpenLibrary={() => openLibrary()}
+        onOpenReading={() => openLibrary('reading', 'replace')}
+        onOpenHighlights={openHighlightsLibrary}
+        onOpenArchive={() => openLibrary('archive', 'replace')}
+        onSelectIssue={(issue) => {
+          if (surfaceMode === 'library' && libraryMode === 'highlights') {
+            openIssueAtCard(issue, appReactionMap[issue.id]?.[0] ?? 0);
+            return;
+          }
+          openIssue(issue);
+        }}
+        {searchQuery}
+        onSearchInput={(q) => { searchQuery = q; }}
+        {onSearchFocus}
+        {onSearchClear}
+        {issueHasConnections}
+        sortMode={feedSort}
+        onSortChange={(mode) => { feedSort = mode; }}
+        {archiveFilter}
+        onArchiveFilter={(kind) => { archiveFilter = kind; }}
+        {showSyncBanner}
+        onSyncBannerTap={() => { angleCodeOpen = true; }}
+        onSyncBannerDismiss={dismissSyncBanner}
+      />
+      </aside>
+
       <main class="desktop-main-panel">
         {#if issueLoadError}
           <!-- I1: Error state with offline differentiation -->
@@ -1265,46 +1307,6 @@
           <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
         {/if}
       </main>
-
-      <aside style="display:flex;flex-direction:column;flex-shrink:0;" aria-label="Sidebar">
-      <DesktopFeed
-        issues={sortedIssues}
-        sections={feedSections}
-        loading={!feedLoaded}
-        activeId={activeIssue?.id ?? null}
-        {readMap}
-        {surfaceMode}
-        {libraryMode}
-        {readingCount}
-        {highlightCount}
-        archiveCount={issues.length}
-        {libraryCount}
-        onGoToday={goToday}
-        onOpenLibrary={() => openLibrary()}
-        onOpenReading={() => openLibrary('reading', 'replace')}
-        onOpenHighlights={openHighlightsLibrary}
-        onOpenArchive={() => openLibrary('archive', 'replace')}
-        onSelectIssue={(issue) => {
-          if (surfaceMode === 'library' && libraryMode === 'highlights') {
-            openIssueAtCard(issue, appReactionMap[issue.id]?.[0] ?? 0);
-            return;
-          }
-          openIssue(issue);
-        }}
-        {searchQuery}
-        onSearchInput={(q) => { searchQuery = q; }}
-        {onSearchFocus}
-        {onSearchClear}
-        {issueHasConnections}
-        sortMode={feedSort}
-        onSortChange={(mode) => { feedSort = mode; }}
-        {archiveFilter}
-        onArchiveFilter={(kind) => { archiveFilter = kind; }}
-        {showSyncBanner}
-        onSyncBannerTap={() => { angleCodeOpen = true; }}
-        onSyncBannerDismiss={dismissSyncBanner}
-      />
-      </aside>
     </div>
   </div>
 {/if}
@@ -1545,16 +1547,11 @@
   }
 
   .desktop-main-panel {
-    order: 2;
     flex: 1;
     min-width: 0;
     min-height: 0;
     display: flex;
     flex-direction: column;
-  }
-
-  .app-main--desktop :global(aside[aria-label]) {
-    order: 1;
   }
 
   .app-shell--tablet {
