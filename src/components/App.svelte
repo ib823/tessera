@@ -44,15 +44,17 @@
     /**
      * Full issue for a deep link (/issue/[id]). When present, the reader is
      * the very first thing App renders: no empty-feed homepage state, no
-     * network round-trip before the article appears. The issue route mounts
-     * App with client:only, so there is no server markup to hydrate and the
-     * first render can already pick the right shell for the viewport.
+     * network round-trip before the article appears. With it set, App renders
+     * nothing until onMount (server and hydration markup are empty), so the
+     * first real render can already pick the right shell for the viewport.
      */
     initialIssue?: Issue;
     feedData?: FeedIssue[];
   }
   let { initialIssueId, initialIssue, feedData = [] }: Props = $props();
   if (initialIssue) primeFullIssue(initialIssue);
+  // See the {#if shellReady} gate at the top of the markup.
+  let shellReady = $state(!initialIssue);
 
   type SurfaceMode = 'today' | 'library';
   type LibraryMode = 'reading' | 'highlights' | 'archive';
@@ -116,8 +118,9 @@
   }
 
   // The homepage hydrates server markup rendered as 'desktop', so it must start
-  // there and switch in onMount. Deep links (initialIssue) are client-only and
-  // start in the right shell, so the first painted frame is already final.
+  // there and switch in onMount. Deep links (initialIssue) render nothing until
+  // mounted, so they can start in the right shell and the first painted frame
+  // is already final.
   let viewMode = $state<'mobile' | 'tablet' | 'desktop'>(
     initialIssue && typeof window !== 'undefined' ? detectViewMode(window.innerWidth, window.innerHeight) : 'desktop'
   );
@@ -438,6 +441,7 @@
     installIsIOS = isIOSCheck();
     document.body.dataset.buildId = BUILD_ID;
     checkViewport();
+    shellReady = true;
     const currentState = locationAppState();
     surfaceMode = currentState.surfaceMode;
     libraryMode = currentState.libraryMode;
@@ -911,6 +915,14 @@
   });
 </script>
 
+<!--
+  Deep links render nothing on the server and while hydrating (shellReady is
+  false until onMount), so the static article is the only thing on screen
+  until the reader can replace it in a single frame. Keeping the island
+  server-rendered (rather than client:only) keeps its CSS in the chunk the
+  homepage already uses.
+-->
+{#if shellReady}
 {#if isOffline}
   <div role="status" aria-live="polite" style="background:var(--score-warning);color:#fff;text-align:center;padding:6px;font-family:var(--font-body);font-size: var(--text-sm);font-weight:600;position:sticky;top:0;left:0;right:0;z-index:9999;flex-shrink:0;">You're offline — reading cached content</div>
 {/if}
@@ -1325,6 +1337,7 @@
       <AngleCode onClose={() => { angleCodeOpen = false; }} />
     </div>
   </div>
+{/if}
 {/if}
 
 <style>

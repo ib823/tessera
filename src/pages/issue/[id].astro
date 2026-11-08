@@ -220,15 +220,17 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
   </article>
 
   {/*
-    The App island is client-only and receives the full issue. That gives a
-    deep link one visual hand-off: the static article above is the only
-    content until the island mounts, and the island's first frame is already
-    this issue's reader. Server-rendering App here would put an empty-feed
-    homepage shell under the article that jumps to the top on hydration
-    (CLS ~1.0) and then waits for two fetches before the reader appears.
+    The App island receives the full issue. With initialIssue set, App
+    renders nothing on the server or while hydrating, so the static article
+    above is the only content until the island mounts, and the island's
+    first frame is already this issue's reader. Previously App server-rendered
+    an empty-feed homepage shell under the article that jumped to the top on
+    hydration (CLS ~1.0), then waited for two fetches before the reader
+    appeared. (client:only would also work, but it emits a second copy of
+    App's CSS under another name instead of sharing the homepage chunk.)
   */}
   <div id="main-content" tabindex="-1">
-    <App client:only="svelte" initialIssueId={issue.id} initialIssue={issue} />
+    <App client:load initialIssueId={issue.id} initialIssue={issue} />
   </div>
   <style is:global>
     /*
