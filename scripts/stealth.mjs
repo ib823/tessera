@@ -4,6 +4,7 @@
  */
 import { readdir, readFile, writeFile, rename, unlink, rm } from 'fs/promises';
 import { join, basename } from 'path';
+import { STEALTH_TERMS } from './lib/stealth-terms.mjs';
 
 const DIST = new URL('../dist', import.meta.url).pathname;
 
@@ -211,41 +212,9 @@ async function main() {
   }
 
   // ── PHASE 8: Verification scan ──
-  // Word-boundary patterns to avoid false positives like "astronaut".
-  //
-  // The "astro" check also ignores "Astro Awani" / "Astro Malaysia"
-  // / "Astro Holdings" / "Astro Berhad" — "Astro" is the parent name of
-  // the Malaysian media group and is a legitimate editorial citation
-  // (e.g. dossier source lists reference Astro Awani news coverage).
-  // The framework "Astro" never appears followed by these tokens, so a
-  // single negative-lookahead suffix is sufficient.
-  const DANGEROUS = [
-    // Framework identifiers
-    { term: 'astro', regex: /\bastro\b(?!naut|nom|logy|phys|\s+(?:Awani|Malaysia|Holdings|Berhad|Group))/gi },
-    { term: 'svelte', regex: /\bsvelte\b/gi },
-    { term: 'vercel', regex: /\bvercel\b/gi },
-    { term: 'thefourthangle.vercel', regex: /thefourthangle\.vercel/gi },
-    // Identity traces
-    { term: 'github', regex: /\bgithub\b/gi },
-    { term: 'codespace', regex: /\bcodespace\b/gi },
-    { term: 'ib823', regex: /ib823/gi },
-    { term: 'fa-ops', regex: /fa-ops/gi },
-    { term: 'fa-ops@proton', regex: /fa-ops@proton/gi },
-    // AI/model references (editorial policy)
-    { term: 'claude', regex: /\bclaude\b(?!\.md)/gi },
-    { term: 'openai', regex: /\bopenai\b/gi },
-    { term: 'chatgpt', regex: /\bchatgpt\b/gi },
-    { term: 'gpt-4', regex: /\bgpt-4\b/gi },
-    { term: 'anthropic', regex: /\banthropic\b/gi },
-    { term: 'deepseek', regex: /\bdeepseek\b/gi },
-    { term: 'gemini', regex: /\bgemini\b/gi },
-    { term: 'language model', regex: /language model/gi },
-    { term: 'LLM', regex: /\bLLM\b/g },
-    // Local paths
-    { term: '/workspaces/', regex: /\/workspaces\//gi },
-    { term: '/home/codespace', regex: /\/home\/codespace/gi },
-    { term: 'node_modules', regex: /node_modules/gi },
-  ];
+  // Term list (and the rationale for each pattern) lives in
+  // scripts/lib/stealth-terms.mjs, shared with build-issue-sources.mjs.
+  const DANGEROUS = STEALTH_TERMS;
   const allFiles = await walk(DIST);
   let violations = 0;
   for (const f of allFiles) {

@@ -14,6 +14,21 @@ export interface StageScores {
   sr: number;
 }
 
+/**
+ * One entry of an issue's reader-facing source list, generated from the
+ * issue's research brief by scripts/build-issue-sources.mjs
+ * (src/data/sources/{id}.json). Text is verbatim from the brief.
+ */
+export interface SourceEntry {
+  n: number;
+  title: string;
+  publisher: string | null;
+  date: string | null;
+  url: string | null;
+  /** The brief classifies this source as primary (official record, statute, court, regulator). */
+  primary: boolean;
+}
+
 export interface Issue {
   id: string;
   opinionShift: number;
@@ -48,6 +63,12 @@ export interface Issue {
    * (src/data/issues/{id}.json); not exposed to readers.
    */
   retiredReason?: string;
+  /**
+   * Reader-facing source list. Never stored in src/data/issues/{id}.json:
+   * scripts/build-issues-json.mjs merges it into public/issues/{id}.json
+   * from src/data/sources/{id}.json.
+   */
+  sourceList?: SourceEntry[];
 }
 
 export const CARD_TYPES: Record<string, { label: string; color: string; bg: string }> = {
