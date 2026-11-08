@@ -9,12 +9,17 @@
   --card-dark: #2B231B;
   --card-dark-end: #34291F;
 
-  /* Text */
+  /* Contrast floor: every token used as a text colour (text-*, score-*,
+     status-green/red, highlight-accent, card-*-color) clears WCAG AA 4.5:1
+     on --bg, --bg-elevated and --bg-sunken (#F1F3F5, the darkest light
+     surface). muted/faint and the amber accent were #6C757D/#868E96/#B85C00,
+     which fell to 4.2/3.0/4.1:1 there. The dark blocks below hold the same
+     floor against #242420 (faint and score-neutral were raised). */
   --text-primary: #212529;
   --text-secondary: #495057;
   --text-tertiary: #5C636A;
-  --text-muted: #6C757D;
-  --text-faint: #868E96;
+  --text-muted: #626A72;
+  --text-faint: #687077;
   --text-on-dark: #F8F5EF;
   --text-on-dark-muted: rgba(248,245,239,0.9);
 
@@ -25,25 +30,25 @@
 
   /* Score colors */
   --score-strong: #8B5A00;
-  --score-medium: #B85C00;
+  --score-medium: #A35100;
   --score-partial: #1971C2;
   --score-critical: #C92A2A;
-  --score-warning: #B85C00;
+  --score-warning: #A35100;
   --score-info: #1971C2;
-  --score-neutral: #6C757D;
+  --score-neutral: #626A72;
 
   /* Highlight */
-  --highlight-accent: #B85C00;
+  --highlight-accent: #A35100;
   --highlight-bg: rgba(184, 92, 0, 0.08);
   --highlight-bg-strong: rgba(184, 92, 0, 0.12);
 
   /* Status colors */
-  --status-green: #2B8A3E;
+  --status-green: #237A34;
   --status-green-text: #1B6D30;
   --status-green-bg: #EBFBEE;
   --status-blue-text: #1864AB;
   --status-blue-bg: #E7F5FF;
-  --status-red: #E03131;
+  --status-red: #C92A2A;
   --status-red-bg: #FFF5F5;
   --status-red-border: #FFC9C9;
 
@@ -216,11 +221,11 @@
   --card-hook-bg: #F8F9FA;
   --card-fact-color: #1971C2;
   --card-fact-bg: #E7F5FF;
-  --card-reframe-color: #B85C00;
+  --card-reframe-color: #A35100;
   --card-reframe-bg: #FFF4E6;
   --card-view-color: #7048E8;
   --card-view-bg: #F3F0FF;
-  --card-analogy-color: #0EA5E9;
+  --card-analogy-color: #0369A1;
   --card-analogy-bg: #F0F9FF;
 }
 
@@ -254,7 +259,7 @@
     --text-secondary: #B5AFA6;
     --text-tertiary: #A5A098;
     --text-muted: #968F87;
-    --text-faint: #5C5650;
+    --text-faint: #918A81;
     --text-on-dark: #F8F5EF;
     --text-on-dark-muted: rgba(248,245,239,0.9);
     --amber: #C8963A;
@@ -263,7 +268,7 @@
     --score-critical: #F87171;
     --score-warning: #FBBF24;
     --score-info: #60A5FA;
-    --score-neutral: #8C8478;
+    --score-neutral: #9A9286;
     --score-strong: #F5C451;
     --score-medium: #FBBF24;
     --score-partial: #60A5FA;
@@ -342,7 +347,7 @@
   --text-secondary: #B5AFA6;
   --text-tertiary: #A5A098;
   --text-muted: #968F87;
-  --text-faint: #5C5650;
+  --text-faint: #918A81;
   --text-on-dark: #F8F5EF;
   --text-on-dark-muted: rgba(248,245,239,0.9);
   --amber: #C8963A;
@@ -351,7 +356,7 @@
   --score-critical: #F87171;
   --score-warning: #FBBF24;
   --score-info: #60A5FA;
-  --score-neutral: #8C8478;
+  --score-neutral: #9A9286;
   --score-strong: #F5C451;
   --score-medium: #FBBF24;
   --score-partial: #60A5FA;

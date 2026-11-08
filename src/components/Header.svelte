@@ -73,7 +73,6 @@
     <a
       class="brand"
       href="/"
-      aria-label="The Fourth Angle — go to Today"
       aria-current={homeActive ? 'page' : undefined}
       onclick={(event) => {
         if (!onHome) return;

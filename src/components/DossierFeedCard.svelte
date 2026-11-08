@@ -77,7 +77,8 @@
     overflow: hidden;
   }
   .dossier-card:hover { border-color: rgba(155, 44, 44, 0.45); }
-  .dossier-card:hover .dossier-card__title { color: #9B2C2C; }
+  /* Text-weight burgundy: #9B2C2C is only 2.4:1 on #15152e. */
+  .dossier-card:hover .dossier-card__title { color: #E07A7A; }
 
   .dossier-card__edge {
     background: #9B2C2C;

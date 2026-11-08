@@ -152,8 +152,9 @@
           </div>
           <div style="display:flex;align-items:center;gap:8px;font-size:var(--text-xs);color:var(--text-secondary);">
             <div style="width:8px;height:8px;background:var(--score-strong);transform:rotate(45deg);flex-shrink:0;"></div>
-            <span><strong>Diamond</strong> — Alert (&lt;50)</span>
+            <span><strong>Diamond</strong> — Disputed (&lt;50)</span>
           </div>
+          <div style="font-size:var(--text-xs);color:var(--text-muted);line-height:1.5;margin-top:2px;">A Flagged or Disputed score means that stage challenged the draft. In our current process, the synthesis stage corrects or drops what was challenged before publication.</div>
           <div style="font-size:var(--text-xs);color:var(--text-muted);line-height:1.5;margin-top:2px;">Tap any stage label above to see its score and what it tested.</div>
         </div>
       {/if}

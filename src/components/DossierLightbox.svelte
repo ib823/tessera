@@ -75,7 +75,7 @@
     </div>
     {#if caption}
       <p class="lightbox__caption">
-        {#if figure}<strong style:color="#9B2C2C">{figure.title} — </strong>{/if}
+        {#if figure}<strong style:color="var(--accent-ink)">{figure.title} — </strong>{/if}
         {caption}
       </p>
     {/if}

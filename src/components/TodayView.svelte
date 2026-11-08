@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { QUOTES } from '../data/quotes';
+  import { onMount } from 'svelte';
   import { opinionLabel, opinionColor as issueOpinionColor } from '../data/issue-types';
   import IssueImage from './IssueImage.svelte';
 
@@ -14,6 +14,8 @@
   const featuredDossiers = getDossierFeedEntries();
 
   interface Props {
+    /** Feed summaries still in flight: render nothing rather than "Coming soon". */
+    loading?: boolean;
     issueCount?: number;
     topIssue?: IssueSummary | null;
     issues?: IssueSummary[];
@@ -29,6 +31,7 @@
     onPullRefresh?: () => void;
   }
   let {
+    loading = false,
     issueCount = 0,
     topIssue = null,
     issues = [],
@@ -44,7 +47,21 @@
     onPullRefresh,
   }: Props = $props();
 
-  const quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+  // The quote list is ~70 KB raw (~19 KB brotli), about a fifth of the App
+  // chunk, to show one line in the footer. Load it after mount so it stays
+  // off the critical path of every page (home and all issue pages).
+  let quote = $state('');
+  onMount(() => {
+    let cancelled = false;
+    import('../data/quotes')
+      .then(({ QUOTES }) => {
+        if (!cancelled) quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  });
 
   let hasIssues = $derived(issueCount > 0);
   let continueIssue = $derived(sections.find((section) => section.kind === 'continue')?.issues[0] ?? null);
@@ -258,14 +275,15 @@
 
       {#if topIssue && onOpenIssue}
         <article class="hero-entry" aria-labelledby="lead-issue-title">
+        <!-- Named by its visible content (WCAG 2.5.3): no aria-label, and the art is
+             decorative here because the headline is already part of the name. -->
         <button
           class="hero-card"
           onclick={() => onOpenIssue?.(topIssue)}
-          aria-label={`Read lead issue: ${topIssue.headline}`}
         >
           {#if topIssue.hasImage}
             <div class="hero-art">
-              <IssueImage issueId={topIssue.id} size="hero" aspectRatio="16/9" borderRadius="0" alt="Illustration for {topIssue.headline}" eager={true} />
+              <IssueImage issueId={topIssue.id} size="hero" aspectRatio="16/9" borderRadius="0" alt="" eager={true} />
             </div>
           {/if}
           <div class="hero-scrim"></div>
@@ -389,7 +407,7 @@
       {/if}
 
       <footer class="today-footer">
-        <div class="today-quote">"{quote}"</div>
+        {#if quote}<div class="today-quote">"{quote}"</div>{/if}
         <div class="today-ethos">Editorial ethos</div>
         <nav class="today-footer-links" aria-label="Footer navigation">
           <a href="/about">How This Works</a>
@@ -399,11 +417,11 @@
           <a href="/verify">Verify Content</a>
         </nav>
       </footer>
-    {:else}
+    {:else if !loading}
       <div class="coming-soon">
         <div class="today-kicker">Coming Soon</div>
         <h1 class="today-title">New issues publish three times a week.</h1>
-        <p class="today-quote">"{quote}"</p>
+        {#if quote}<p class="today-quote">"{quote}"</p>{/if}
       </div>
     {/if}
   </div>
@@ -953,15 +971,13 @@
     min-width: 0;
   }
 
+  /* Headlines are never line-clamped: with user text spacing (WCAG 1.4.12) a
+     clamp hides part of the headline. Context excerpts below stay clamped. */
   .topic-issue-headline {
     font-size: var(--text-sm);
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1.35;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
   .topic-issue-context {

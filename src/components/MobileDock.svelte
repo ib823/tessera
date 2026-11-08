@@ -83,54 +83,49 @@
 <div class="dock-container">
   {#if showSyncCard || showInstallCard}
     <div class="dock-prompts">
-      <!-- svelte-ignore a11y_no_static_element_interactions -->
-      <!-- svelte-ignore a11y_click_events_have_key_events -->
+      <!-- The action and the dismiss control are sibling buttons: a role=button
+           wrapper around a real <button> is a nested interactive control, and
+           its aria-label hid the visible text from speech-input users. -->
       {#if showInstallCard}
         <div
           class="dock-prompt-card"
           class:dock-prompt-card--visible={installVisible && !installLeaving}
           class:dock-prompt-card--leaving={installLeaving}
-          onclick={handleInstallTap}
-          role="button"
-          tabindex="0"
-          onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleInstallTap(); } }}
-          aria-label={installIsIOS ? 'Add to your home screen' : 'Install for quick access'}
         >
-          <svg class="dock-prompt-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          <span class="dock-prompt-text">{installIsIOS ? 'Add to your home screen' : 'Install for quick access'}</span>
+          <button type="button" class="dock-prompt-action" onclick={handleInstallTap}>
+            <svg class="dock-prompt-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span class="dock-prompt-text">{installIsIOS ? 'Add to your home screen' : 'Install for quick access'}</span>
+          </button>
           <button
+            type="button"
             class="dock-prompt-dismiss"
-            onclick={(e: MouseEvent) => { e.stopPropagation(); dismissInstallCard(); }}
+            onclick={dismissInstallCard}
             aria-label="Dismiss install prompt"
           >&times;</button>
         </div>
       {/if}
-      <!-- svelte-ignore a11y_no_static_element_interactions -->
-      <!-- svelte-ignore a11y_click_events_have_key_events -->
       {#if showSyncCard}
         <div
           class="dock-prompt-card"
           class:dock-prompt-card--visible={syncVisible && !syncLeaving}
           class:dock-prompt-card--leaving={syncLeaving}
-          onclick={() => onSyncTap?.()}
-          role="button"
-          tabindex="0"
-          onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSyncTap?.(); } }}
-          aria-label="Sync your reading across devices"
         >
-          <svg class="dock-prompt-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-            <line x1="8" y1="21" x2="16" y2="21"/>
-            <line x1="12" y1="17" x2="12" y2="21"/>
-          </svg>
-          <span class="dock-prompt-text">Sync your reading across devices</span>
+          <button type="button" class="dock-prompt-action" onclick={() => onSyncTap?.()}>
+            <svg class="dock-prompt-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <span class="dock-prompt-text">Sync your reading across devices</span>
+          </button>
           <button
+            type="button"
             class="dock-prompt-dismiss"
-            onclick={(e: MouseEvent) => { e.stopPropagation(); dismissSync(); }}
+            onclick={dismissSync}
             aria-label="Dismiss sync prompt"
           >&times;</button>
         </div>
@@ -193,13 +188,28 @@
     border: none;
     border-top: 1px solid rgba(17, 24, 39, 0.06);
     border-radius: 0;
-    cursor: pointer;
     text-align: start;
     font: inherit;
     color: inherit;
     opacity: 0;
     transform: translateY(12px);
     transition: opacity 300ms ease-out, transform 300ms ease-out;
+  }
+
+  .dock-prompt-action {
+    flex: 1;
+    min-width: 0;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    text-align: start;
+    cursor: pointer;
   }
 
   .dock-prompt-card:first-child {

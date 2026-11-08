@@ -100,7 +100,6 @@
                 type="button"
                 class="saved-angle-open"
                 onclick={() => onOpenHighlight(group.issue, cardIndex)}
-                aria-label={`Open ${group.issue.headline} at ${stageLabel(group.issue, cardIndex, group.fullIssue)}`}
               >
                 <p class="saved-angle-claim balance-title">
                   {fullCard?.big ?? 'Loading this saved angle...'}
@@ -111,6 +110,8 @@
                   <p class="saved-angle-sub">Resolving the exact card text from the issue archive.</p>
                 {/if}
                 <span class="saved-angle-jump">Open angle {cardIndex + 1}</span>
+                <!-- Named by its visible text (WCAG 2.5.3), plus where it opens. -->
+                <span class="sr-only"> in {group.issue.headline}, {stageLabel(group.issue, cardIndex, group.fullIssue)}</span>
               </button>
             </article>
           {/each}

@@ -7,7 +7,7 @@ import UtilityHeader from '../components/UtilityHeader.astro';
   <main style="max-width:640px;margin:0 auto;padding:24px 18px 80px;">
 
       <h1 style="font-family:var(--font-display);font-size: var(--text-title-lg);font-weight:700;color:var(--text-primary);margin:0 0 10px 0;letter-spacing:-0.04em;line-height:1.04;">Disclaimer & Legal Notice</h1>
-      <p style="font-family:var(--font-body);font-size: var(--text-body);color:var(--text-tertiary);margin:0 0 32px 0;">Last reviewed April 2026</p>
+      <p style="font-family:var(--font-body);font-size: var(--text-body);color:var(--text-tertiary);margin:0 0 32px 0;">Last reviewed November 2026</p>
 
       <!-- Group 1: What We Are -->
       <div style="background:var(--card);border:1px solid var(--border-light);border-radius: var(--radius-lg);padding:20px;margin-bottom:16px;">
@@ -68,7 +68,7 @@ import UtilityHeader from '../components/UtilityHeader.astro';
 
       <div style="background:var(--card);border:1px solid var(--border-light);border-radius: var(--radius-lg);padding:20px;margin-bottom:16px;">
         <h2 style="font-family:var(--font-display);font-size: var(--text-reading-lg);font-weight:700;color:var(--text-primary);margin:0 0 12px 0;letter-spacing:-0.03em;">Sources</h2>
-        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0;">We use only publicly available information. We do not receive, store, or publish material classified under the Official Secrets Act 1972. All sources are disclosed in our published audit for each issue.</p>
+        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0;">We use only publicly available information. We do not receive, store, or publish material classified under the Official Secrets Act 1972. Each issue page lists the sources behind it where we have them on file, and says so plainly where we do not yet.</p>
       </div>
 
       <div style="background:var(--card);border:1px solid var(--border-light);border-radius: var(--radius-lg);padding:20px;margin-bottom:16px;">
@@ -95,7 +95,7 @@ import UtilityHeader from '../components/UtilityHeader.astro';
 
       <div style="background:var(--card);border:1px solid var(--border-light);border-radius: var(--radius-lg);padding:20px;margin-bottom:16px;">
         <h2 style="font-family:var(--font-display);font-size: var(--text-reading-lg);font-weight:700;color:var(--text-primary);margin:0 0 12px 0;letter-spacing:-0.03em;">Editorial Review Process</h2>
-        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0;">Every issue undergoes a 6-stage editorial review: Primary Analysis, Bias Audit, Fact Verification, Alternative Framing, Contrarian Stress-Test, and Synthesis Review. The complete audit is published with every issue. <a href="/about" style="color:var(--focus);text-decoration:none;">Full methodology</a></p>
+        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0;">Every issue undergoes a multi-stage editorial review: Primary Analysis, Bias Audit, Fact Verification and Synthesis Review, plus a Contrarian Stress-Test for higher-risk issues. Issues published before May 2026 also carry Alternative Framing scores. Each stage's score is published with every issue. <a href="/about" style="color:var(--focus);text-decoration:none;">Full methodology</a></p>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
@@ -113,7 +113,8 @@ import UtilityHeader from '../components/UtilityHeader.astro';
         <h2 style="font-family:var(--font-display);font-size: var(--text-reading-lg);font-weight:700;color:var(--text-primary);margin:0 0 12px 0;letter-spacing:-0.03em;">Privacy and Data</h2>
         <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0 0 12px 0;">No user accounts, no tracking, no third-party analytics, no personally identifiable information collected.</p>
         <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0 0 12px 0;">Your browser's local storage remembers reading progress. By default, this data stays entirely on your device and is never transmitted.</p>
-        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0 0 12px 0;"><strong style="color:var(--text-primary);">Angle Code (optional sync).</strong> You may choose to generate an anonymous 6-character Angle Code to sync reading progress across devices. If you opt in, the following is stored on our servers: which issues you have opened, your reading position (card 1–7), and which cards you have highlighted. This data is associated only with your Angle Code — not with any name, email, IP address, or other identifier. Sync data is stored on Cloudflare Workers KV with a 90-day expiry and is automatically deleted after that period. You can unlink your device at any time, and your Angle Code can be permanently deleted by contacting thefourthangle@proton.me.</p>
+        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0 0 12px 0;"><strong style="color:var(--text-primary);">Angle Code (optional sync).</strong> You may choose to generate an anonymous 6-character Angle Code to sync reading progress across devices. If you opt in, the following is stored on our servers: which issues you have opened, your reading position (card 1–7), and which cards you have highlighted. This data is associated only with your Angle Code — not with any name, email, IP address, or other identifier. Sync data is stored on Cloudflare Workers KV and is deleted automatically 90 days after your devices last sync. You can unlink your device at any time, and your Angle Code can be permanently deleted by contacting thefourthangle@proton.me.</p>
+        <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.72;color:var(--text-secondary);margin:0 0 12px 0;"><strong style="color:var(--text-primary);">Notifications (optional).</strong> If you turn on notifications, our notification service stores the push address your browser gives us, the keys needed to deliver messages to it, and when the app was last opened. The subscription record is deleted when you turn notifications off, when your browser reports the address is no longer valid, or 90 days after you last opened the site. We send at most three notifications a week.</p>
         <p style="font-family:var(--font-body);font-size: var(--text-ui);line-height:1.6;color:var(--text-tertiary);margin:0;">No cookies are used for tracking. Cloudflare (our host) may record standard server logs per their privacy policy.</p>
       </div>
 

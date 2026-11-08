@@ -1,7 +1,9 @@
 ---
 import '../../styles/global.css';
 import App from '../../components/App.svelte';
+import IssueSources from '../../components/IssueSources.svelte';
 import { ISSUES } from '../../data/issues';
+import { getIssueSourceList } from '../../data/sources';
 import { CARD_TYPES, opinionLabel } from '../../data/issue-types';
 
 export function getStaticPaths() {
@@ -31,6 +33,29 @@ if (ctxTrunc.length > maxCtx) {
 const description = ctxTrunc + suffix;
 const title = `${issue.headline} — The Fourth Angle`;
 const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}/100`;
+
+// JSON-LD article data for search engines. Issues carry one date, sourceDate
+// (same value as article:published_time below); there is no separate
+// modification date, so dateModified mirrors it.
+const publishedTime = issue.sourceDate ? `${issue.sourceDate}T08:00:00+08:00` : undefined;
+const organization = { '@type': 'Organization', name: 'The Fourth Angle', url: siteUrl };
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: issue.headline,
+  description: issue.context,
+  url: issueUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': issueUrl },
+  image: [{ '@type': 'ImageObject', url: ogImage, width: 1200, height: 630 }],
+  ...(publishedTime ? { datePublished: publishedTime, dateModified: publishedTime } : {}),
+  author: organization,
+  publisher: { ...organization, logo: { '@type': 'ImageObject', url: `${siteUrl}/logo.png`, width: 247, height: 98 } },
+  articleSection: 'Analysis',
+  inLanguage: 'en-MY',
+  isAccessibleForFree: true,
+};
+// Escape <, > and & so issue text can never close the <script> element early.
+const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, '0')}`);
 ---
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
@@ -70,6 +95,8 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
   )}
   <meta property="article:section" content="Analysis" />
   <link rel="canonical" href={issueUrl} />
+  {/* Data block, not executed: build-csp-hashes.mjs skips it, so no CSP hash. */}
+  <script type="application/ld+json" is:inline set:html={articleJsonLdText}></script>
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -183,19 +210,31 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
       })}
     </div>
 
+    <IssueSources issue={{ id: issue.id, legacyAudit: issue.legacyAudit, sourceList: getIssueSourceList(issue.id) }} variant="static" />
+
     {issue.finalScore != null && (
       <footer class="ssg-article__footer">
         <p class="ssg-article__quality">
           <span class="ssg-article__quality-label">Editorial Quality Score</span>
           <span class="ssg-article__quality-value" translate="no"><span>{Math.round(issue.finalScore)}</span> / 100</span>
         </p>
-        <p class="ssg-article__quality-note">Reviewed across 6 independent editorial stages.</p>
+        <p class="ssg-article__quality-note">Reviewed across {issue.stageScores ? Object.values(issue.stageScores).filter((v) => typeof v === 'number').length : 4} independent editorial stages.</p>
       </footer>
     )}
   </article>
 
+  {/*
+    The App island receives the full issue. With initialIssue set, App
+    renders nothing on the server or while hydrating, so the static article
+    above is the only content until the island mounts, and the island's
+    first frame is already this issue's reader. Previously App server-rendered
+    an empty-feed homepage shell under the article that jumped to the top on
+    hydration (CLS ~1.0), then waited for two fetches before the reader
+    appeared. (client:only would also work, but it emits a second copy of
+    App's CSS under another name instead of sharing the homepage chunk.)
+  */}
   <div id="main-content" tabindex="-1">
-    <App client:idle initialIssueId={issue.id} />
+    <App client:load initialIssueId={issue.id} initialIssue={issue} />
   </div>
   <style is:global>
     /*
@@ -272,7 +311,7 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 700;
-      color: var(--text-muted, #888);
+      color: var(--text-muted, #626a72);
       margin: 0 0 8px;
     }
     .ssg-article__score-value {
@@ -284,7 +323,7 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
     }
     .ssg-article__score-outof {
       font-size: 1rem;
-      color: var(--text-muted, #888);
+      color: var(--text-muted, #626a72);
       font-weight: 500;
     }
     .ssg-article__score-severity {
@@ -293,7 +332,7 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
       margin: 4px 0 12px;
     }
     .ssg-article__score-severity[data-severity="fundamental"] { color: #b52727; }
-    .ssg-article__score-severity[data-severity="significant"] { color: #b85c00; }
+    .ssg-article__score-severity[data-severity="significant"] { color: #a35100; }
     .ssg-article__score-severity[data-severity="partial"] { color: #8a6d00; }
     .ssg-article__score-severity[data-severity="surface"] { color: #5a5a5a; }
     .ssg-article__score-note {
@@ -317,7 +356,7 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
       text-transform: uppercase;
       letter-spacing: 0.75px;
       font-weight: 700;
-      color: var(--text-muted, #888);
+      color: var(--text-muted, #626a72);
       margin: 0 0 6px;
     }
     .ssg-card__big {
@@ -356,12 +395,15 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
     }
     .ssg-article__quality-note {
       font-size: 0.8125rem;
-      color: var(--text-muted, #888);
+      color: var(--text-muted, #626a72);
       margin: 4px 0 0;
     }
 
     /* Hide static article once the interactive island mounts. See App.svelte onMount. */
     html.js-reader-mounted .ssg-article { display: none; }
+    /* The client-only island is empty until it mounts; don't leave a blank
+       viewport-tall block under the article for no-JS readers. */
+    html:not(.js-reader-mounted) #main-content { min-height: 0; }
   </style>
 
   <script is:inline define:vars={{ buildId }}>

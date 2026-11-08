@@ -181,7 +181,22 @@ self.addEventListener('message', (event) => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ endpoint }),
-      }).catch(() => {});
+      })
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          // The server drops subscriptions 90 days after the reader was last seen.
+          // If this browser still holds the same push subscription, register it again.
+          if (!data || data.found !== false) return;
+          return self.registration.pushManager.getSubscription().then((sub) => {
+            if (!sub || sub.endpoint !== endpoint) return;
+            return fetch(NOTIFY_API + '/api/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(sub.toJSON()),
+            });
+          });
+        })
+        .catch(() => {});
     }
   }
 

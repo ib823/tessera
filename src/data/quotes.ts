@@ -148,7 +148,7 @@ export const QUOTES: string[] = [
   "We don't tell you what to think. We show you what was hidden.",
   "The fourth angle is the one nobody profits from showing you.",
   "Between the headline and the truth, there's always a missing paragraph.",
-  "Six stages of review. One goal: clarity.",
+  "Several stages of review. One goal: clarity.",
   "Not left. Not right. Not centre. Just the part they all skipped.",
   "We check the fact. Then we check who benefits from the fact.",
   "The view from the fourth angle is usually the least comfortable.",

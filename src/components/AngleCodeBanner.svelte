@@ -39,7 +39,7 @@
   }
 </script>
 
-<button class="angle-banner" onclick={onTap} aria-label={linked ? `Angle Code: ${code}` : 'Set up cross-device sync'}>
+<button class="angle-banner" onclick={onTap} aria-label={linked ? `Angle Code ${code} Synced` : undefined}>
   {#if linked}
     <div class="banner-dot" style="background:{syncDot()};"></div>
     <span class="banner-code">{code}</span>

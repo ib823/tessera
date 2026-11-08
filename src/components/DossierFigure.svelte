@@ -53,7 +53,12 @@
     onclick={handleZoom}
     onkeydown={handleKey}
   >
-    {@render children?.()}
+    <!-- The alt text above is the figure's accessible description; the
+         artwork's own SVG labels would otherwise be read as the button's
+         visible label and contradict it (WCAG 2.5.3). -->
+    <div class="figure__art" aria-hidden="true">
+      {@render children?.()}
+    </div>
     <span class="figure__zoom" aria-hidden="true">
       <!-- inline expand glyph -->
       <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4">

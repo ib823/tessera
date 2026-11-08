@@ -3,6 +3,7 @@
     getAngleCode, isLinked, createAngleCode, linkAngleCode,
     clearAngleCode, getLastSyncTime, onSyncChange
   } from '../lib/sync';
+  import { clearAll as clearAllReadingState } from '../lib/reading-state';
   import { onMount, onDestroy } from 'svelte';
 
   interface Props {
@@ -136,9 +137,9 @@
       setTimeout(() => { confirmClear = false; }, 4000);
       return;
     }
-    Object.keys(localStorage)
-      .filter(k => k.startsWith('tfa-'))
-      .forEach(k => localStorage.removeItem(k));
+    // Clear both the current tfa:v1:* keys and any legacy tfa-* keys. The old
+    // filter only matched tfa-*, so reading data under tfa:v1:* survived.
+    clearAllReadingState();
     clearAngleCode();
     window.location.reload();
   }
