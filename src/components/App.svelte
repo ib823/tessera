@@ -442,6 +442,9 @@
     document.body.dataset.buildId = BUILD_ID;
     checkViewport();
     shellReady = true;
+    // Angle Code links (/?sync=CODE) must be read before syncSurfaceUrl below
+    // rewrites the URL to the canonical surface path, which drops the query.
+    const syncToken = checkUrlSync();
     const currentState = locationAppState();
     surfaceMode = currentState.surfaceMode;
     libraryMode = currentState.libraryMode;
@@ -450,10 +453,9 @@
     }
     window.addEventListener('resize', debouncedResize);
 
-    // Angle Code: check URL param and start auto-sync
+    // Angle Code: confirm a ?sync= link, then start auto-sync.
     // A ?sync= link must not join this browser silently: linking merges this
     // browser's reading history into the code, where anyone holding it can read it.
-    const syncToken = checkUrlSync();
     if (syncToken && syncToken !== getAngleCode()) {
       const current = getAngleCode();
       const message =

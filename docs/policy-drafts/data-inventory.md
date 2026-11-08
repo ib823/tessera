@@ -9,7 +9,7 @@
 **Changes since this inventory was written.** PR #73 fixes three behaviours described below. Update the privacy notice's `[EDITOR NOTE]` lines to match once these changes are live:
 
 - **Clear button.** "Clear all reading data" in the Angle Code panel now clears the `tfa:v1:*` keys as well as the legacy `tfa-*` keys (`src/components/AngleCode.svelte`).
-- **Sync links.** A `?sync=CODE` link now asks before linking the browser, and says that the reading history becomes visible to anyone holding the code. Declining leaves the browser unlinked (`src/components/App.svelte`).
+- **Sync links.** A `?sync=CODE` link now asks before linking the browser, and says that the reading history becomes visible to anyone holding the code. Declining leaves the browser unlinked (`src/components/App.svelte`). Testing showed that before this fix the homepage rewrote its URL before the code was read, so `/?sync=` links (the only form the Angle Code panel generates) linked nothing at all. Fact 3 below describes the code path, not what happened in practice.
 - **Push notifications** (`workers/notify/src/index.ts`):
   - Every scheduled push is capped at 3 per rolling 7 days per subscription. The `sent:<key>` log expires after 8 days.
   - The Saturday digest is dispatched only by its own trigger and is guarded against running twice in one day.
