@@ -39,28 +39,68 @@
       }
     },
     "4_stage2_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:27:59.574Z",
+      "path": "engine/output/malaysian-crude-iran-blockade-gap-stage2.json",
+      "bias_score": 18
     },
     "4_stage3_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:27:59.629Z",
+      "path": "engine/output/malaysian-crude-iran-blockade-gap-stage3.json",
+      "factual_accuracy_score": 76
     },
     "5_synthesis": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:36:58.000Z",
+      "synthesis": "engine/output/malaysian-crude-iran-blockade-gap-stage6-synthesis.json",
+      "sr": 84,
+      "ba": 82,
+      "fc": 76,
+      "stage5": "not run (source_diversity 0.58 >= 0.4; no 3R HIGH)"
     },
     "6_legal_check": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:36:58.000Z",
+      "reader": "engine/output/malaysian-crude-iran-blockade-gap-reader.json",
+      "legal": "pass (3R none; no defamation: named foreign entity quoted from US Treasury, Petronas explicitly not named by the documents; public sources only; no sedition or CMA s233 risk; analysis framing)",
+      "stealth": "clean",
+      "validate_issues": "pass apart from missing OG image (published held false); target-length warnings only, no hard-max breach",
+      "validate_language": "0 warnings",
+      "finalScore": 81.0
     },
     "7a_sherlock": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:36:58.000Z",
+      "method": "manual entity match (fact graph indexes published issues only)",
+      "related": [
+        "1951"
+      ],
+      "bidirectional": true,
+      "pending_editor_confirmation": true
     },
     "7b_image_prompt": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:36:58.000Z",
+      "template": "CLAUDE.md canonical single-line",
+      "target": "public/og/backgrounds/issue-2017-bg.png",
+      "revision": "v2 subject: two tankers in ship-to-ship transfer, cargo tag on the hose (v1 man-with-tag rejected by editor as not intuitive)"
     },
     "7b_image_uploaded": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:08:08.000Z",
+      "image": "public/og/backgrounds/issue-2017-bg.png",
+      "source": "Grok Imagine post dea18a1a, 1792x1008 JPEG, centre-cropped to 1200x630 PNG"
     },
     "8_validated": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:08:08.000Z",
+      "validate_issues": "pass with published:true and image present (0 errors)",
+      "validate_language": "0 warnings",
+      "stealth": "clean",
+      "image": "exists 1200x630",
+      "published": true,
+      "note": "editor said Publish 2026-11-08; published flag flipped for Phase 9"
     },
     "9_deployed": {
       "done": false

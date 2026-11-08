@@ -10,7 +10,8 @@
     "stage6": "engine/output/scam-proceeds-forfeited-abroad-malaysia-stage6-synthesis.json",
     "reader": "engine/output/scam-proceeds-forfeited-abroad-malaysia-reader.json",
     "issue": "src/data/issues/2018.json",
-    "og_background": "public/og/backgrounds/issue-2018-bg.png"
+    "og_background": "public/og/backgrounds/issue-2018-bg.png",
+    "stage5": "engine/output/scam-proceeds-forfeited-abroad-malaysia-stage5.json"
   },
   "phases": {
     "0_init": {
@@ -39,31 +40,78 @@
       }
     },
     "4_stage2_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:27:59.668Z",
+      "path": "engine/output/scam-proceeds-forfeited-abroad-malaysia-stage2.json",
+      "bias_score": 18
     },
     "4_stage3_collected": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T03:27:59.705Z",
+      "path": "engine/output/scam-proceeds-forfeited-abroad-malaysia-stage3.json",
+      "factual_accuracy_score": 70
     },
     "5_synthesis": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:17:01.000Z",
+      "synthesis": "engine/output/scam-proceeds-forfeited-abroad-malaysia-stage6-synthesis.json",
+      "sr": 83,
+      "ba": 82,
+      "fc": 70,
+      "ct": 68,
+      "stage5": "run (source_diversity 0.35 < 0.4; ADR 0004 escalation)"
     },
     "6_legal_check": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:17:01.000Z",
+      "reader": "engine/output/scam-proceeds-forfeited-abroad-malaysia-reader.json",
+      "legal": "pass (3R none; no defamation: no private individual named, AG and minister quoted on official acts with attribution; public sources only; no sedition or CMA s233 risk; analysis framing)",
+      "stealth": "clean",
+      "validate_issues": "pass apart from missing OG image (published held false); target-length warnings only, no hard-max breach",
+      "validate_language": "0 warnings",
+      "finalScore": 76.6
     },
     "7a_sherlock": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:17:01.000Z",
+      "method": "manual entity match (fact graph indexes published issues only)",
+      "related": [
+        "2004"
+      ],
+      "bidirectional": true,
+      "pending_editor_confirmation": true
     },
     "7b_image_prompt": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:17:01.000Z",
+      "template": "CLAUDE.md canonical single-line",
+      "target": "public/og/backgrounds/issue-2018-bg.png"
     },
     "7b_image_uploaded": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:19:29.000Z",
+      "image": "public/og/backgrounds/issue-2018-bg.png",
+      "source": "Grok Imagine post 52377e36, 1792x1008 JPEG, centre-cropped to 1200x630 PNG"
     },
     "8_validated": {
-      "done": false
+      "done": true,
+      "at": "2026-11-08T10:19:29.000Z",
+      "validate_issues": "pass with published:true and image present (0 errors)",
+      "validate_language": "0 warnings",
+      "stealth": "clean",
+      "image": "exists 1200x630",
+      "published": true,
+      "note": "editor said Publish 2026-11-08; published flag flipped for Phase 9"
     },
     "9_deployed": {
       "done": false
+    }
+  },
+  "legacy_stages": {
+    "stage5": {
+      "collected_at": "2026-11-08T10:10:38.934Z",
+      "path": "engine/output/scam-proceeds-forfeited-abroad-malaysia-stage5.json",
+      "courage_score": 68
     }
   }
 }

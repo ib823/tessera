@@ -1,0 +1,899 @@
+{
+  "factual_accuracy_score": 76,
+  "source_diversity_estimate": 0.58,
+  "claims": [
+    {
+      "claim": "China's customs logged 64.7 million tonnes of crude 'from Malaysia' in 2025. Malaysia's own trade statistics logged 0.31 million tonnes to China.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade, 2025 annual HS 2709 data, independently retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS ; China reporter 156/imports/partner 458 and Malaysia reporter 458/exports/partner 156. Accessible mirrors: https://wits.worldbank.org/trade/comtrade/en/country/CHN/year/2025/tradeflow/Imports/partner/ALL/product/2709 and https://wits.worldbank.org/trade/comtrade/en/country/MYS/year/2025/tradeflow/Exports/partner/ALL/product/2709 . ",
+      "correction": "The exact net weights are 64,742,423,979 kg and 313,684,685 kg. Both rounded figures are correct. These are separately reported customs flows; they do not independently authenticate the physical origin or ownership of individual cargoes.",
+      "stale_check": "The 8 November 2026 retrieval reproduces the analysis's figures."
+    },
+    {
+      "claim": "reporter China, partner Malaysia, imports 64,742,423,979 kg (US$31.02bn CIF); reporter Malaysia, partner China, exports 313,684,685 kg (US$177.8m FOB)",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade API, annual 2025 HS 2709 national submissions, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS . Relevant reporter/partner/flow combinations are 156/458/M and 458/156/X.",
+      "correction": "The retrieved values are US$31,022,551,414 CIF and US$177,767,631.506 FOB. The rounding is accurate. The monetary values use different valuation bases and should not be treated as a directly comparable financial shortfall.",
+      "stale_check": "Current retrieval matches the stated weights and rounded values."
+    },
+    {
+      "claim": "Same product code, same UN database.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade HS 2709 records and UN methodological explanation, checked 8 November 2026: https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ . ",
+      "correction": "Correct, but the database preserves different countries' submissions. It is not a reconciled shipment ledger. Origin versus destination attribution, timing, transit, warehousing and other methodological differences can generate mirror discrepancies.",
+      "stale_check": ""
+    },
+    {
+      "claim": "HS 2709 (crude, including condensate)",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Malaysia's official tariff schedule, heading 2709 and subheading 2709.00.20 for condensates: https://fta.miti.gov.my/miti-fta/resources/ASEAN%20Free%20Trade%20Area%20%28AFTA%29/Annex-2-Tariff-Schedules-Malaysia-AHTN-2017.pdf ; current Royal Malaysian Customs HS Explorer also lists condensates under 2709, checked 8 November 2026. ",
+      "correction": "The classification is appropriate. It does not include all petroleum liquids or all refined petroleum products.",
+      "stale_check": ""
+    },
+    {
+      "claim": "Exclusive Economic Zone Regulations 2026, P.U. (A) 233, gazetted 26 Jun 2026, reg. 1(2) in force 29 Jun 2026",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Attorney General's Chambers, P.U. (A) 233/2026, official gazette dated 26 June 2026, regulation 1(2); PDF independently downloaded and read: https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3577352/PUA%20233%20(2026).pdf .",
+      "correction": "The instrument, gazette date, commencement date and subsection are correct.",
+      "stale_check": "Verified against the actual 2026 instrument; the date is not a mistaken reference to an earlier regulation."
+    },
+    {
+      "claim": "reg. 7(1) written permission for any cargo transfer in the EEZ",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.3,
+      "m_unknown": 0.3,
+      "source": "P.U. (A) 233/2026, regulations 2 and 7(1)–(3), gazetted 26 June 2026: https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3577352/PUA%20233%20(2026).pdf .",
+      "correction": "The requirement covers defined transfers of oil, liquefied gas, liquid bulk chemicals or petroleum products between vessels in the EEZ or on the continental shelf. Regulation 2 excludes bunkering from this definition, and regulation 7(2) provides exceptions, including specified government activities and safety, rescue or pollution-response transfers. Applications normally require at least 48 hours' notice. Replace 'any cargo transfer' with wording that preserves this scope.",
+      "stale_check": "These limitations were part of the regulation when it commenced; they are not later amendments."
+    },
+    {
+      "claim": "In August 2024, US Treasury said Malaysia-based Transmarine Navigation supplied forged papers passing off a ship's Iranian cargo as Malaysian.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury, release jy2538, 15 August 2024: https://home.treasury.gov/news/press-releases/jy2538 . ",
+      "correction": "Verified as an accurately attributed Treasury allegation. The release identifies DAWN II, IMO 9185530, and describes the cargo as commodities. It does not establish that this particular cargo was crude oil.",
+      "stale_check": ""
+    },
+    {
+      "claim": "Transmarine was designated under E.O. 13224 for supporting the Houthi-linked network of Sa'id al-Jamal",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury, jy2538, 15 August 2024: https://home.treasury.gov/news/press-releases/jy2538 . ",
+      "correction": "The legal authority and network attribution match the release. More precisely, Treasury acted under E.O. 13224, as amended.",
+      "stale_check": ""
+    },
+    {
+      "claim": "its SDN addresses are in Ulu Tiram and at Pelabuhan Tanjung Pelepas, Johor",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "OFAC SDN and address files, entry 50096, retrieved 8 November 2026: https://sanctionslistservice.ofac.treasury.gov/api/PublicationPreview/exports/SDN.CSV and https://sanctionslistservice.ofac.treasury.gov/api/PublicationPreview/exports/ADD.CSV .",
+      "correction": "Both locations appear in OFAC's address records. An SDN address is a recorded identifier, not independent proof of current operations at that location.",
+      "stale_check": "The downloaded files carried a 6 November 2026 Last-Modified timestamp."
+    },
+    {
+      "claim": "This is a US administrative designation, not a court finding",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury designation announcement, jy2538, 15 August 2024: https://home.treasury.gov/news/press-releases/jy2538 . ",
+      "correction": "Correct characterization of this action. Publication of the designation establishes the US government's action and stated reasons; it does not turn those reasons into a judicial determination.",
+      "stale_check": ""
+    },
+    {
+      "claim": "no Malaysian court finding on the origin of any such cargo was found",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "No qualifying Malaysian judgment was located within reasonable search effort as of 8 November 2026. The cited US administrative document is https://home.treasury.gov/news/press-releases/jy2538 , dated 15 August 2024.",
+      "correction": "Retain this only as a bounded research limitation. It is not proof that no Malaysian proceeding or judgment exists. The original analyst's search history cannot be independently audited from the attachment.",
+      "stale_check": "Court status can change; the statement should carry the search date."
+    },
+    {
+      "claim": "No source ties Petronas or Malaysian producers to the cargoes.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "Documents examined include Treasury jy2538, 15 August 2024, https://home.treasury.gov/news/press-releases/jy2538 ; Treasury sb0322, 20 November 2025, https://home.treasury.gov/news/press-releases/sb0322 ; and FinCEN's 6 June 2025 advisory, https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf .",
+      "correction": "Replace the universal 'No source' with 'The Treasury and FinCEN documents cited here do not identify Petronas or Malaysian producers as responsible for these cargoes.' The search found no basis in those documents for implicating them.",
+      "stale_check": "This is an evidentiary-scope limitation, not a finding of later involvement."
+    },
+    {
+      "claim": "In November 2025 Treasury also said an Iranian military oil seller labelled Iranian crude 'as Malaysian heavy crude, a common tactic' (sb0322).",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury, sb0322, 20 November 2025: https://home.treasury.gov/news/press-releases/sb0322 . ",
+      "correction": "The wording and characterization match Treasury's account of Sepehr Energy Jahan's activities. November 2025 is the announcement date; the described transactions included activity in early 2024.",
+      "stale_check": "Do not confuse the publication date with the date of the underlying conduct."
+    },
+    {
+      "claim": "Since June 2025, Treasury's FinCEN has listed 'Malaysian blend' as a red flag banks may weigh.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "FinCEN Advisory FIN-2025-A002, 6 June 2025, including page 4, footnote 46 and the red-flag discussion: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf . ",
+      "correction": "The advisory supports the relabelling and Southeast Asian documentation statements. It treats the label and associated transaction patterns as risk indicators, not conclusive evidence that every Malaysian-labelled shipment is Iranian or unlawful.",
+      "stale_check": ""
+    },
+    {
+      "claim": "FinCEN, a Treasury bureau, first listed the red flag in Advisory FIN-2025-A002 (6 Jun 2025)",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "FinCEN FIN-2025-A002, 6 June 2025: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf ; earlier Iran advisory, 11 October 2018: https://www.fincen.gov/system/files/advisory/2018-10-12/Iran%20Advisory%20FINAL%20508.pdf .",
+      "correction": "The bureau, document identifier and date are verified. 'First' was not established by an exhaustive search of earlier FinCEN publications. Use 'listed in its 6 June 2025 advisory'.",
+      "stale_check": "This is an unverified priority claim, not a demonstrated error in the June 2025 date."
+    },
+    {
+      "claim": "Its alert of 11 May 2026 repeated the point ('sometimes') and said institutions 'may consider requiring heightened due diligence' on such transactions, 'particularly if the transactions show other indications of oil smuggling', noting 'no single red flag is determinative'.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "FinCEN FIN-2026-Alert002, 11 May 2026, pages 3, 8 and 9: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf . ",
+      "correction": "The date, repetition and conditional wording are accurate. Preserve those qualifications in any shortened version.",
+      "stale_check": "The 2026 alert was inspected directly."
+    },
+    {
+      "claim": "the OFAC SDN list (downloaded 7 Nov 2026) carries ten Malaysia-addressed firms and individuals for Iranian oil or commodity shipping or port services",
+      "status": "INCORRECT",
+      "m_true": 0.1,
+      "m_false": 0.8,
+      "m_unknown": 0.1,
+      "source": "OFAC SDN.CSV and ADD.CSV, retrieved 8 November 2026, Last-Modified 6 November 2026: https://sanctionslistservice.ofac.treasury.gov/api/PublicationPreview/exports/SDN.CSV and https://sanctionslistservice.ofac.treasury.gov/api/PublicationPreview/exports/ADD.CSV . Roles independently checked against Treasury releases jy1257, jy2538, jy2644, jy2757, sb0026 and sb0090: https://home.treasury.gov/news/press-releases/jy1257 ; https://home.treasury.gov/news/press-releases/jy2538 ; https://home.treasury.gov/news/press-releases/jy2644 ; https://home.treasury.gov/news/press-releases/jy2757 ; https://home.treasury.gov/news/press-releases/sb0026 ; https://home.treasury.gov/news/press-releases/sb0090 .",
+      "correction": "At least eleven entries fit the stated broad scope: Sense Shipping and Trading; Transmarine Navigation; Delnaz Ship Management; Alya Marine; Merkur Energy Port Services; Puvaneswaran Venayagamoorthy; Blu Shipping; Tefcas Marine; Ezekial Kanniappan Jr; IMS Ltd; and Pro Mission. Sense's petrochemical-shipping activity falls within 'oil or commodity shipping'. Use 'at least eleven', or identify an explicitly narrower selection. Vessels are excluded from this count.",
+      "stale_check": "The retrieved files predate the claimed 7 November snapshot, so this is not explained by a designation added after the analysis."
+    },
+    {
+      "claim": "six of them al-Jamal counter-terrorism listings",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury jy2538, 15 August 2024, https://home.treasury.gov/news/press-releases/jy2538 ; jy2757, 19 December 2024, https://home.treasury.gov/news/press-releases/jy2757 ; current OFAC SDN records, retrieved 8 November 2026. ",
+      "correction": "The six are Transmarine, Merkur, Blu Shipping, Tefcas Marine, Puvaneswaran Venayagamoorthy and Ezekial Kanniappan Jr: four companies and two individuals. These are six entries associated with the network, not six separate networks.",
+      "stale_check": "The six remain identifiable in the retrieved list."
+    },
+    {
+      "claim": "plus one Malaysia-flagged crude tanker, SHANAYE QUEEN (designated 11 Oct 2024)",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "OFAC action of 11 October 2024: https://ofac.treasury.gov/recent-actions/20241011 ; current SDN entry 51074, SHANAYE QUEEN, IMO 9242118, retrieved 8 November 2026. ",
+      "correction": "Use 'OFAC lists SHANAYE QUEEN as a Malaysia-flagged crude-oil tanker'. The designation date and OFAC metadata match. The current validity of its registration was not independently certified against Malaysia's ship registry.",
+      "stale_check": "Flag metadata can lag re-registration or deregistration."
+    },
+    {
+      "claim": "A 'Malaysian blend' label in a US document does not show that any Malaysian authority issued the papers.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Treasury jy2538, 15 August 2024: https://home.treasury.gov/news/press-releases/jy2538 ; FinCEN FIN-2025-A002, 6 June 2025: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf . ",
+      "correction": "This is a sound limitation on what the cited documents establish. It should not be expanded into a universal finding about whether any official was ever involved.",
+      "stale_check": ""
+    },
+    {
+      "claim": "China's customs logged 1.30m barrels a day 'from Malaysia' in 2025, 2.5 times Malaysia's entire crude output that year (EIA: 512,700 b/d).",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade 2025 HS 2709 data, https://comtradeapi.un.org/public/v1/preview/C/A/HS ; EIA International Energy Statistics, annual Malaysia/product 57/activity 1/unit TBPD, https://api.eia.gov/v2/international/data/ ; both retrieved 8 November 2026.",
+      "correction": "At the stated 7.33 barrels per tonne, 64,742,423.979 tonnes divided over 365 days equals 1,300,169.77 b/d; dividing by the cited EIA production gives 2.5361. The daily import figure is a conversion from customs weight, not a directly reported daily customs measurement. The comparison is valid on the explicitly labelled EIA basis.",
+      "stale_check": "The current EIA observation matches. A conflicting, more direct DOSM production series should also be disclosed."
+    },
+    {
+      "claim": "At 7.33 barrels a tonne.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Energy Commission, Malaysia Energy Statistics Handbook 2023, publication ST(P)03/06/2025, conversion table on printed page 97: https://www.st.gov.my/sites/default/files/2026-02/Malaysia_Energy_Statistics_Handbook_2023.pdf . ",
+      "correction": "The handbook uses 7.33 barrels per tonne for imported crude and 7.60 for local crude. Thus 7.33 is a defensible stated conversion convention, not a measured density for these particular cargoes.",
+      "stale_check": ""
+    },
+    {
+      "claim": "EIA International Energy Statistics, Malaysia, crude oil including lease condensate, production 2025: 512.67 thousand b/d (2024: 478.34).",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "EIA International API, annual Malaysia/product 57/activity 1/TBPD, retrieved 8 November 2026: https://api.eia.gov/v2/international/data/ . Conflicting national series: DOSM, Mining of Petroleum and Natural Gas Statistics Q2 2026, released 3 September 2026, table 1a: https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=20883 . ",
+      "correction": "These are accurate EIA observations. DOSM instead reports 183.6 million barrels for 2025, preliminary, and 184.0 million for 2024, revised: approximately 503,000 and 502,700 b/d. Prefer DOSM as the principal national baseline because it identifies domestic administrative inputs and revisions, while retaining EIA as a separately labelled series. No documented reconciliation was found.",
+      "stale_check": "DOSM's September 2026 report supersedes its March estimate of 181.6 million barrels for 2024. The national alternative was available before the analysis's apparent November date."
+    },
+    {
+      "claim": "Ratio 2.54x (2.9x in 2024).",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Calculations from current UN Comtrade 2024–2025 HS 2709 data and EIA Malaysia annual product 57 series, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS and https://api.eia.gov/v2/international/data/ .",
+      "correction": "Using 7.33 barrels per tonne and the stated EIA denominator gives 2.5361 for 2025 and approximately 2.94 for 2024, using 366 days for that leap year. With the latest DOSM production baseline, the corresponding ratios are approximately 2.58 and 2.79. State which production series is used.",
+      "stale_check": "The arithmetic remains valid for EIA; the alternative national series changes the rounded comparisons."
+    },
+    {
+      "claim": "Even if every Malaysian barrel had gone to China, it would cover about 39% of the recorded volume.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Calculation from UN Comtrade 2025 imports and EIA 2025 Malaysian production, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS and https://api.eia.gov/v2/international/data/ .",
+      "correction": "As a comparison with that year's production, the result is 39.43% on the EIA basis. Say 'Malaysia's entire 2025 production was equivalent to about 39% of the reported imports'. This is not a measured allocation of the cargoes' origins.",
+      "stale_check": ""
+    },
+    {
+      "claim": "crude exports to all destinations 11.78 Mt (US$6.67bn)",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade, Malaysia reporter 458, exports to world partner 0, HS 2709, 2025, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS ; mirror https://wits.worldbank.org/trade/comtrade/en/country/MYS/year/2025/tradeflow/Exports/partner/ALL/product/2709 . ",
+      "correction": "Exact retrieved values: 11,777,447,809.12 kg and US$6,671,562,171.212 FOB. The rounded weight and value are correct.",
+      "stale_check": "Reproduced on 8 November 2026."
+    },
+    {
+      "claim": "crude imports 22.89 Mt. On crude alone Malaysia is a net importer",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade, Malaysia reporter 458, imports from world partner 0 and exports to world, HS 2709, annual 2025, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS .",
+      "correction": "Imports were 22,894,885,935.076 kg, exceeding exports of 11,777,447,809.12 kg. The net-importer conclusion is correct for this product group and year.",
+      "stale_check": "The claim should remain dated to 2025."
+    },
+    {
+      "claim": "although it is a net energy exporter overall (Al Jazeera, 27 Mar 2026)",
+      "status": "VERIFIED",
+      "m_true": 0.8,
+      "m_false": 0,
+      "m_unknown": 0.2,
+      "source": "Bank Negara Malaysia, Economic and Monetary Review 2025, chapter 2 and footnote 14, published March 2026: https://www.bnm.gov.my/publications/emr2025/ch2 ; OECD Economic Outlook, June 2026: https://www.oecd.org/en/publications/2026/06/oecd-economic-outlook-volume-2026-issue-1_8be0dba6/full-report/malaysia_58f6134f.html . The cited Al Jazeera article dated 27 March 2026 was also located: https://www.aljazeera.com/economy/2026/3/27/malaysias-ships-allowed-to-pass-strait-of-hormuz-pm-anwar-says . ",
+      "correction": "Specify the trade-value basis. BNM identifies a 2025 LNG surplus of RM45.3 billion and refined-petroleum surplus of RM3.1 billion against a crude deficit of RM29.9 billion. This does not establish self-sufficiency in crude or a surplus under every physical-energy measure.",
+      "stale_check": "The official support concerns the 2025 annual position and assessments published in 2026, not a guarantee of a surplus in every subsequent month."
+    },
+    {
+      "claim": "11.78 / 64.74 = 18%.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Calculation from UN Comtrade 2025 Malaysia world exports and China imports attributed to Malaysia, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS .",
+      "correction": "Using the unrounded values gives 18.1912%, so 'under a fifth' is accurate.",
+      "stale_check": ""
+    },
+    {
+      "claim": "2023 54.79 Mt, about 1.1m b/d",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Primary support for the rounded daily figure: EIA, 16 April 2024, https://www.eia.gov/todayinenergy/detail.php?id=61843 . Reuters's 20 January 2024 table, reproduced at https://profit.pakistantoday.com.pk/2024/01/20/china-defies-sanctions-to-make-russia-its-biggest-oil-supplier-in-2023/ , reports 54,792,821 tonnes. The original GAC cell was not separately retrieved. ",
+      "correction": "The rounded 1.1 million b/d has official EIA support. The exact 54.79 Mt matches Reuters, but does not meet the requested separately checked primary-source standard. Current Comtrade instead returns an estimated weight of 46.939955 Mt. Prefer EIA's official rounded figure for publication until the original GAC weight is obtained; do not treat Comtrade's estimated weight as proof Reuters is wrong.",
+      "stale_check": "The alternatives refer to the same historical year but different published data products. Their exact reconciliation remains unresolved."
+    },
+    {
+      "claim": "2024 70.38 Mt, 1.41m b/d.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Current primary data: UN Comtrade, China reporter 156, Malaysia partner 458, HS 2709 imports, 2024, retrieved 8 November 2026, https://comtradeapi.un.org/public/v1/preview/C/A/HS . Historical Reuters report, 20 January 2025: https://www.reuters.com/markets/commodities/chinas-crude-oil-imports-top-supplier-russia-reach-new-high-2024-2025-01-20/ . EIA's rounded official comparison, 11 February 2025: https://www.eia.gov/todayinenergy/detail.php?id=64544 . ",
+      "correction": "Reuters reported 70.38 Mt, but current Comtrade reports 70.15736 Mt with the weight not flagged as estimated: a difference of 222,640 tonnes. Both imply approximately 1.41 million b/d at the stated conversion. Prefer current Comtrade for a consistent annual series and identify Reuters's historical figure separately. The discrepancy's cause was not established.",
+      "stale_check": "The BOE republication's 19 January date and Reuters's 20 January date reflect different publication timestamps. A different data vintage is possible, but a revision was not demonstrated."
+    },
+    {
+      "claim": "The excess over Malaysian output began in 2022; in 2021 China's 'Malaysian' volume was below Malaysia's output.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade annual 2021 and 2022 China/Malaysia HS 2709 imports and EIA annual Malaysian crude-plus-lease-condensate production, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS and https://api.eia.gov/v2/international/data/ .",
+      "correction": "Within the checked 2021–2025 series, the crossover is correct. At 7.33 barrels per tonne, 2021 imports were approximately 372,063 b/d versus EIA production of 511,104 b/d; 2022 imports were approximately 716,449 b/d versus 502,082 b/d. Avoid presenting this as an exhaustively established first-ever occurrence across all earlier years.",
+      "stale_check": ""
+    },
+    {
+      "claim": "Kpler, via CGEP, put Iranian crude reaching China at about 1.38m b/d in 2025",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "CGEP, Erica Downs, 29 January 2026: https://www.energypolicy.columbia.edu/where-china-gets-its-oil-crude-imports-in-2025-reveal-stockpiling-and-changing-fortunes-of-certain-suppliers-including-those-sanctioned/ . No qualifying independently inspectable primary dataset or peer-reviewed paper was obtained. ",
+      "correction": "The attribution matches the published CGEP article. Under the requested source definition, the underlying proprietary estimate remains unverified. It estimates all Iranian crude reaching China, not just cargoes declared Malaysian or transferred off Malaysia.",
+      "stale_check": "This is a dated estimate for 2025, published in January 2026."
+    },
+    {
+      "claim": "EIA's chart note says 'Many imports attributed to Malaysia ... originated in Iran and were relabeled'",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "EIA Today in Energy, 16 April 2024: https://www.eia.gov/todayinenergy/detail.php?id=61843 . ",
+      "correction": "The official note supports the general relabelling explanation. Its discussion concerns the earlier import data, including 2023; it does not quantify the Iranian share of the 2025 discrepancy.",
+      "stale_check": "Retain the 2024 publication date rather than presenting the note as a fresh 2025 cargo audit."
+    },
+    {
+      "claim": "Analysts say much of the gap is Iranian crude, with some Venezuelan.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Official support for Iranian relabelling: EIA, 16 April 2024, https://www.eia.gov/todayinenergy/detail.php?id=61843 . The cited broader attribution appears in Reuters, 20 January 2025, https://www.reuters.com/markets/commodities/chinas-crude-oil-imports-top-supplier-russia-reach-new-high-2024-2025-01-20/ ; Argus, 10 September 2025, https://www.argusmedia.com/en/news-and-insights/market-opinion-and-analysis-blog/shadow-fleet-freight-malaysia ; and CGEP, 29 January 2026. ",
+      "correction": "The analyst attribution is fairly represented, and Iranian relabelling has official support. No qualifying primary evidence was obtained that allocates the 2025 discrepancy between Iranian, Venezuelan and other origins. Keep it attributed and unquantified.",
+      "stale_check": ""
+    },
+    {
+      "claim": "In July 2025 Malaysia vowed to detain ships in unapproved ship-to-ship transfers.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Bernama's original report, posted 12 July 2025 with an 11 July dateline: https://www.bernama.com/en/news.php?id=2444418 . No separately inspectable official transcript or recording was located. ",
+      "correction": "Bernama supports the attribution to Foreign Minister Mohamad Hasan and the quoted detention, coordinates and 'thorn in our side' remarks. Nevertheless, the exact remarks remain unverified under the user's stricter primary-source rule. Describe them explicitly as Bernama's report of his 11 July remarks.",
+      "stale_check": "An announcement of intended end-July rules is not proof that a particular regulation legally commenced then."
+    },
+    {
+      "claim": "Traders say the label then moved to 'Indonesian'.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Reuters report displayed 24 November 2025, with a 21 November dateline/URL: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ . No underlying interviews or transactional records were separately inspected. ",
+      "correction": "The attributed reporting matches. Preserve the bank-scrutiny explanation and partial causal attribution. Do not imply every Malaysian-labelled shipment changed label.",
+      "stale_check": "This was a November 2025 assessment, preceding the 2026 blockade."
+    },
+    {
+      "claim": "Energy Aspects' Jianan Sun: 'Most of the STS transfers of Iranian crude destined for China still take place off the coast of Malaysia.'",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Reuters, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ . ",
+      "correction": "Reuters contains the quotation. The underlying geographic estimate was not independently verified.",
+      "stale_check": "Date it to November 2025; it cannot establish the position after the 2026 blockade."
+    },
+    {
+      "claim": "Energy Aspects said most Iranian transfers still happened off Malaysia.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Reuters's quotation of Energy Aspects, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ . ",
+      "correction": "The subtitle broadens the quotation. Restore its China-bound crude and STS limitations.",
+      "stale_check": "The assessment is historical, not a verified current description."
+    },
+    {
+      "claim": "UN Comtrade, 2025: China imports from Indonesia 14.53 Mt; Indonesia's exports to China 0.168 Mt",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade annual 2025 HS 2709, China reporter 156/imports/Indonesia partner 360 and Indonesia reporter 360/exports/China partner 156, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS . Mirrors: https://wits.worldbank.org/trade/comtrade/en/country/CHN/year/2025/tradeflow/Imports/partner/ALL/product/2709 and https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Exports/partner/ALL/product/2709 . ",
+      "correction": "Exact weights are 14,526,179,979 kg and 167,566,200 kg. The detailed figures and the card's 14.5 Mt/0.17 Mt rounding are correct.",
+      "stale_check": "The current retrieval matches the analysis. The claimed 7 November retrieval date itself is workflow metadata."
+    },
+    {
+      "claim": "China imported about 0.1 Mt from Indonesia in all of 2024, per Reuters; 0.15 Mt per Comtrade",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "UN Comtrade, China reporter 156, Indonesia partner 360, HS 2709 imports, 2024, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS . Reuters reports: 24 November 2025, https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ ; 20 July 2026, https://www.brecorder.com/news/40430872/ .",
+      "correction": "Current Comtrade gives 147,279,903 kg, or 0.14728 Mt. Reuters's July report says about 0.1 Mt, while its November 2025 report says less than 100,000 tonnes. The latter conflicts with current Comtrade and is not merely equivalent rounding. Prefer the current official dataset; the underlying historical GAC extracts were not separately obtained.",
+      "stale_check": "The source-vintage discrepancy is unresolved; do not assert a proven revision."
+    },
+    {
+      "claim": "In January to September 2026 China logged 27.96 Mt 'from Indonesia' and 25.41 Mt 'from Malaysia' (-50%) (TASS citing GAC).",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "TASS, 20 October 2026: https://tass.com/economy/2204419 . The underlying GAC table was not independently retrieved. ",
+      "correction": "The numbers and year-on-year decline match TASS's report. They remain unverified under the requested primary-source standard. An unsuccessful or empty Comtrade monthly response is not evidence that these flows were zero.",
+      "stale_check": "The report genuinely concerns January–September 2026; it was not rejected because of its recent date."
+    },
+    {
+      "claim": "MMEA detained tankers Nora and Rcelebra off Penang in January 2026",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "MMEA official release, 31 January 2026, describing the 29 January detention of two tankers west of Muka Head: https://www.mmea.gov.my/eng/index.php/en/12-berita-utama/3283-53-kru-bersama-dua-kapal-tangki-ditahan-cuba-pindah-minyak-mentah-bernilai-lebih-rm512-juta . Reuters via Baird Maritime, 3 February 2026: https://www.bairdmaritime.com/amp/story/security/incidents/piracy/tankers-linked-to-alleged-130m-crude-transfer-released-by-malaysia . ",
+      "correction": "The detention of two tankers in that place and period is officially verified. The inspected MMEA release does not name them; Nora and Rcelebra are identified in Reuters's report. The exact named-vessel claim therefore retains a primary-source gap.",
+      "stale_check": "The detention is historical. It does not establish the vessels' later legal status or the cargo's Iranian origin."
+    },
+    {
+      "claim": "released with cargo on a RM300,000 bond",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Reuters via Baird Maritime, 3 February 2026: https://www.bairdmaritime.com/amp/story/security/incidents/piracy/tankers-linked-to-alleged-130m-crude-transfer-released-by-malaysia . No release order, bond instrument or separately published agency response was obtained. ",
+      "correction": "The report supports this wording, but the underlying legal instrument was not independently checked. Attribute the release, cargo retention and amount to Reuters.",
+      "stale_check": "This describes the reported February release, not a final determination of the case."
+    },
+    {
+      "claim": "case awaits the Deputy Public Prosecutor",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.05,
+      "m_unknown": 0.75,
+      "source": "Reuters via Baird Maritime, 3 February 2026: https://www.bairdmaritime.com/amp/story/security/incidents/piracy/tankers-linked-to-alleged-130m-crude-transfer-released-by-malaysia . No current official case-status document was located. ",
+      "correction": "Write 'Reuters reported on 3 February 2026 that the case had been referred for the Deputy Public Prosecutor's decision.' Do not use present tense without a current check.",
+      "stale_check": "The cited status was approximately nine months old by the analysis's apparent 7 November 2026 date."
+    },
+    {
+      "claim": "the bond is security, not a penalty",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Reuters's 3 February 2026 description of the release arrangement: https://www.bairdmaritime.com/amp/story/security/incidents/piracy/tankers-linked-to-alleged-130m-crude-transfer-released-by-malaysia . The actual bond or court order was not obtained.",
+      "correction": "Calling the reported sum a bond rather than a fine follows Reuters's wording and is the safer description. Its precise legal conditions and disposition remain unverified. The June 2026 EEZ regulations cannot by themselves establish the legal basis of a January–February arrangement.",
+      "stale_check": ""
+    },
+    {
+      "claim": "the US-Israeli strikes on Iran (28 Feb 2026)",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "US presidential notification dated 2 March 2026: https://www.govinfo.gov/content/pkg/CDOC-119hdoc139/pdf/CDOC-119hdoc139.pdf ; Israel Defense Forces briefing dated 28 February 2026: https://www.idf.il/en/mini-sites/israel-at-war/briefings-by-idf-spokesperson-bg-effie-defrin/february-26-press-briefings/press-briefing-by-idf-spokesperson-bg-effie-defrin-february-28-2026 . ",
+      "correction": "The event and date are corroborated by official statements from both participating governments. This verifies chronology, not their legal or political justification.",
+      "stale_check": "The actual 2026 documents were inspected."
+    },
+    {
+      "claim": "the US blockade of Iranian ports (from 13 Apr; lapsed 18 Jun; reimposed mid-July)",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "JMIC Advisory 002/26, 16 April 2026: https://www.ukmto.org/-/media/ukmto/products/jmic-advisory-note-002-26.pdf?rev=d0dc7738ff154a1a999acfd5db0f1521 ; JMIC Advisory 008/26, 18 June 2026: https://www.ukmto.org/-/media/ukmto/products/jmic-advisory-note-00826-blockade-end.pdf?rev=594122bf96754e439cebae80e2880047 ; CENTCOM release, 14 July 2026: https://www.dvidshub.net/news/printable/569957 . ",
+      "correction": "The chronology is correct. Prefer 'lifted on 18 June' to 'lapsed'. Resumption was announced for 14 July 2026 at 4 p.m. Eastern Time. The measures concerned traffic to and from Iranian ports and coastal areas, not an undifferentiated prohibition on all neutral transit through Hormuz.",
+      "stale_check": "All three stages were checked against contemporary 2026 official notices."
+    },
+    {
+      "claim": "China's 'Malaysian' imports were 1.34 Mt in June 2026 (-81% y/y, Reuters).",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Reuters via Business Recorder, 20 July 2026: https://www.brecorder.com/news/40430872/ . The underlying GAC monthly table was not separately obtained. ",
+      "correction": "The figure and decline match Reuters's report, but primary verification is incomplete. Do not present the decline alone as a measured causal effect of the blockade.",
+      "stale_check": "The publication and reference month are genuine 2026 dates; the limitation is source access."
+    },
+    {
+      "claim": "Kpler analysts estimate Iranian oil on water outside the blockade zone fell from 88.8 Mbbl on 14 Jul to zero by mid-October, with about 43 Mbbl stranded inside.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Kpler's original analytical article, 22 October 2026: https://www.kpler.com/blog/irans-oil-on-water-outside-the-blockade-zone-hits-zero-as-tehrans-trilemma-sharpens . No qualifying government dataset or peer-reviewed validation was obtained. ",
+      "correction": "The published attribution and numbers match. Under the stipulated primary-source definition, the empirical estimate remains unverified. Add Kpler's caveat that its analysts' estimate differed from platform data awaiting discharge updates. 'Zero' applies to its estimated inventory outside the specified blockade zone, not to all Iranian oil worldwide.",
+      "stale_check": "This is an estimate as of mid-October, published 22 October 2026, rather than a verified 8 November inventory."
+    },
+    {
+      "claim": "October GAC figures are due about 20 November.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "GAC Announcement 2025 No. 240, dated 5 December 2025, official government mirror: https://www.hunan.gov.cn/zqt/zcsd/202512/t20251210_33866409.html ; original calendar attachment independently downloaded and converted: https://www.hunan.gov.cn/zqt/zcsd/202512/33866409/files/7809aa484b174ad88ed137048372567e.doc . ",
+      "correction": "Correct for the detailed online query data: 20 November 2026. The calendar separately schedules preliminary totals for 10 November and the monthly bulletin for 18 November. Specify the detailed country/product breakdown.",
+      "stale_check": "On 8 November this remained a scheduled future publication, not an observed release."
+    },
+    {
+      "claim": "Most of those barrels were never Malaysia's. The name on the paperwork was.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.1,
+      "m_unknown": 0.5,
+      "source": "UN Comtrade reporting methodology: https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ ; 2025 trade and production records; Treasury jy2538, 15 August 2024, https://home.treasury.gov/news/press-releases/jy2538 . ",
+      "correction": "The evidence strongly supports a large discrepancy and documented relabelling practices. It does not establish historical ownership of most cargoes. 'Malaysia's' conflates geological origin, ownership and export reporting. Prefer 'China recorded far more Malaysian-origin crude than Malaysia produced or reported exporting; official US documents describe cases of Iranian cargoes relabelled as Malaysian.'",
+      "stale_check": "This is an inference and wording problem, not a later factual change."
+    },
+    {
+      "claim": "at most about 39% could be Malaysian-produced (7.33 bbl/t)",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.2,
+      "m_unknown": 0.4,
+      "source": "UN Comtrade 2025 imports, https://comtradeapi.un.org/public/v1/preview/C/A/HS ; EIA 2025 production, https://api.eia.gov/v2/international/data/ ; UN mirror-statistics methodology, https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ , checked 8 November 2026.",
+      "correction": "About 39% is a same-year production-to-import equivalence, not a strict upper bound on geological origin. A strict ceiling would require consistent density and coverage, inventory movements, timing and shipment reconciliation. Preserve the strong production comparison without presenting it as an audited allocation.",
+      "stale_check": ""
+    },
+    {
+      "claim": "In May 2024 Home Minister Saifuddin Nasution said Malaysia would comply with UN sanctions but not recognise unilateral ones.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Reuters via gCaptain, 9 May 2024: https://gcaptain.com/us-flags-environmental-risks-from-illicit-transfers-of-iranian-oil-off-malaysia/ . No separately inspectable ministerial transcript, recording or Home Ministry statement was found. ",
+      "correction": "The statement accurately reproduces Reuters's reported speech and attribution. Under the requested rule, that does not independently verify the exact historical ministerial statement. Retain explicit Reuters attribution.",
+      "stale_check": "The historical statement should not be treated as a complete account of Malaysia's sanctions obligations in November 2026."
+    },
+    {
+      "claim": "Fahmi Fadzil's direct quote ('we comply with UN sanctions ... unilaterally applied sanctions, then I think we have to assess')",
+      "status": "UNVERIFIED",
+      "m_true": 0.28,
+      "m_false": 0.02,
+      "m_unknown": 0.7,
+      "source": "The Jakarta Post, 8 May 2024: https://www.thejakartapost.com/world/2024/05/08/malaysia-to-assess-response-to-possible-us-sanctions-over-iran-oil-shipments ; a Reuters video URL was located but its recording/transcript could not be inspected: https://www.reuters.com/video/malaysia-prepared-engage-us-concerns-over-iranian-oil-shipments-2024-05-08/ . ",
+      "correction": "The published news wording supports the attribution, but switching to this quotation does not close the separately inspected primary-source gap. 'Assess' is also more qualified than an unconditional rejection of every unilateral measure.",
+      "stale_check": "This is a May 2024 position, not a current legal-status check."
+    },
+    {
+      "claim": "That settles policy, not provenance",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.2,
+      "m_unknown": 0.4,
+      "source": "UN Security Council resolution 2231 background and reapplication of sanctions: https://main.un.org/securitycouncil/en/content/2231/background ; BNM circular dated 22 December 2025, reproduced in Malaysian Bar Circular 005/2026: https://www.malaysianbar.org.my/cms/upload_files/document/Circular%20No%20005-2026.pdf . ",
+      "correction": "The distinction between sanctions policy and cargo provenance is sound, but a 2024 ministerial statement does not settle the 2026 position. UN Iran sanctions were reapplied in September 2025, and BNM subsequently instructed implementation of the relevant targeted financial sanctions. These measures are not a blanket prohibition on all Iranian crude.",
+      "stale_check": "The material sanctions change occurred after the quoted 2024 remarks but before the analysis's apparent November 2026 date."
+    },
+    {
+      "claim": "most crude China logged as Malaysian in 2025 could not have come from Malaysian fields.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.1,
+      "m_unknown": 0.5,
+      "source": "UN Comtrade 2025 trade data, https://comtradeapi.un.org/public/v1/preview/C/A/HS ; EIA Malaysian production, https://api.eia.gov/v2/international/data/ ; EIA's official relabelling assessment, 16 April 2024, https://www.eia.gov/todayinenergy/detail.php?id=61843 . ",
+      "correction": "The production comparison strongly supports an inference that the declared volume was predominantly not supplied by Malaysia's contemporaneous production. 'Could not have' is stronger than the available stock-and-flow evidence. State the inference and its same-year production assumption rather than claiming a complete provenance determination.",
+      "stale_check": ""
+    },
+    {
+      "claim": "Malaysian crude: China's customs logged 206 times what Malaysia recorded sending",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Calculation from the independently retrieved UN Comtrade 2025 HS 2709 bilateral weights: https://comtradeapi.un.org/public/v1/preview/C/A/HS , retrieved 8 November 2026.",
+      "correction": "64,742,423,979 divided by 313,684,685 equals 206.3933. The rounded ratio is correct. Specify 2025 and crude by weight. It measures a reporting discrepancy, not a quantified amount of proven smuggling.",
+      "stale_check": "The current data reproduce the ratio."
+    },
+    {
+      "claim": "China's customs record crude by the origin declared on its paperwork",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "China's Customs Statistics Regulations, as amended 29 March 2022, articles 9 and 15, official National Bureau of Statistics publication: https://www.stats.gov.cn/xxgk/zcfggz/tjxzfg2020/202407/t20240711_1955542.html . ",
+      "correction": "Imports are classified by country of origin, with declarations and customs-confirmed documents forming the statistical basis. Avoid implying customs merely accepts arbitrary labels without verification or correction powers.",
+      "stale_check": "Checked against the amended regulation available on the official site."
+    },
+    {
+      "claim": "have logged none from Iran since 2022",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.2,
+      "m_unknown": 0.4,
+      "source": "UN Comtrade, China reporter 156, Iran partner 364, HS 2709 annual imports, 2021–2025, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS .",
+      "correction": "China recorded 780,392,000 kg from Iran in 2022. No Iran-origin annual entry appeared for 2023–2025 in the checked series. Say 'no Iran-origin crude imports were recorded in the checked 2023–2025 annual data'. The exact last month and all 2026 monthly records were not independently verified.",
+      "stale_check": "'Since 2022' is ambiguous about imports during 2022 and overextends the verified annual coverage into 2026."
+    },
+    {
+      "claim": "US Treasury says Iranian cargoes move between tankers 'in waters off the coast of Singapore and Malaysia'.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury, sb0275, 9 October 2025: https://home.treasury.gov/news/press-releases/sb0275 . ",
+      "correction": "The attribution matches. This geographical wording does not by itself determine territorial waters, EEZ boundaries, port limits or which state had jurisdiction over an individual transfer.",
+      "stale_check": ""
+    },
+    {
+      "claim": "EIA 2025 production (512.67 kb/d) is the latest annual value in EIA's series and may be revised",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "EIA International API, annual Malaysia/product 57/activity 1/TBPD, queried without an end-year restriction and sorted newest first on 8 November 2026: https://api.eia.gov/v2/international/data/ .",
+      "correction": "The newest returned annual observation was 2025. Preserve the retrieval date and distinguish 'latest in EIA's series' from 'the only or preferred official Malaysian estimate'.",
+      "stale_check": "Confirmed as of 8 November 2026; subsequent EIA releases may revise it."
+    },
+    {
+      "claim": "lighter Malaysian grades would give about 1.33m b/d (ratio about 2.6x)",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Energy Commission conversion table: https://www.st.gov.my/sites/default/files/2026-02/Malaysia_Energy_Statistics_Handbook_2023.pdf , printed page 97; publication ST(P)03/06/2025. No source for the exact implied density or cargo composition was supplied or located. ",
+      "correction": "State the alternative factor. The handbook's 7.60 barrels per tonne for local crude produces approximately 1.348 million b/d and 2.63 times the EIA output. The particular 1.33 million figure cannot be reproduced from the stated 7.33 factor and is not independently supported as a measured cargo-density adjustment.",
+      "stale_check": ""
+    },
+    {
+      "claim": "DAWN II cargo: Treasury says 'commodities', not crude; the card says 'cargo'.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "US Treasury, jy2538, 15 August 2024: https://home.treasury.gov/news/press-releases/jy2538 . ",
+      "correction": "This guardrail is correct and should be preserved. The cited incident should not be silently converted into a specifically proven crude-oil shipment.",
+      "stale_check": ""
+    },
+    {
+      "claim": "the September 2026 'Malaysian' figure of 1.16 Mt",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Secondary reporting includes https://shafaq.com/en/Economy/Iraq-s-oil-exports-to-China-surge-248 , discussing September 2026. No separately retrieved GAC monthly cell was obtained as of 8 November 2026.",
+      "correction": "Keeping the number off the cards is appropriate. Its occurrence in secondary reports does not satisfy the requested primary verification standard.",
+      "stale_check": "The relevant detailed September data should have been published in October, but access to the original cell was not secured."
+    },
+    {
+      "claim": "the September 2025 base of 3.87 Mt",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0,
+      "m_unknown": 0.8,
+      "source": "No qualifying original GAC or national-submission monthly cell was obtained. UN Comtrade API endpoint checked: https://comtradeapi.un.org/public/v1/preview/C/M/HS , as of 8 November 2026.",
+      "correction": "The assertion that an earlier independent check opened it cannot substitute for inspectable primary evidence. Do not use this denominator to certify a year-on-year change until the actual record is retained.",
+      "stale_check": "Historical monthly records may be revised; the source vintage is undocumented."
+    },
+    {
+      "claim": "UN Comtrade's 46.94 Mt is a UN-estimated weight",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade, China/Malaysia HS 2709 imports, annual 2023, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS ; UN documentation: https://uncomtrade.org/docs/quantity-and-weight-data-in-un-comtrade/ . ",
+      "correction": "The returned net weight is 46,939,955,132.361 kg, with isNetWgtEstimated=true. This materially distinguishes it from a directly reported weight. The estimate flag alone does not establish the exact reason for its difference from Reuters's 54.79 Mt.",
+      "stale_check": "The estimate flag remains present in the current retrieval."
+    },
+    {
+      "claim": "total liquids 604.2 kb/d",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "EIA International API, Malaysia annual 2025, product 53, total petroleum and other liquids production, retrieved 8 November 2026: https://api.eia.gov/v2/international/data/ .",
+      "correction": "The returned value is 604.170895932 thousand b/d. This broader category is not interchangeable with crude including lease condensate or HS 2709.",
+      "stale_check": "Verified as a current EIA series value, subject to revision."
+    },
+    {
+      "claim": "CGEP '535,000 bpd in 2024'",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "CGEP, 29 January 2026: https://www.energypolicy.columbia.edu/where-china-gets-its-oil-crude-imports-in-2025-reveal-stockpiling-and-changing-fortunes-of-certain-suppliers-including-those-sanctioned/ ; Energy Institute Statistical Review 2025: https://www.energyinst.org/__data/assets/pdf_file/0007/1658077/Statistical-Review-of-World-Energy.pdf . ",
+      "correction": "The published attribution is accurate, and the Energy Institute table contains 535 thousand b/d in its broader oil-production series, including natural-gas liquids. Neither publication meets the specified primary-source categories for independently verifying the underlying estimate. It is not directly comparable to the EIA crude-plus-lease-condensate figure.",
+      "stale_check": "This is a 2024 figure from a different series, not a competing observation for 2025."
+    },
+    {
+      "claim": "Argus 'about 490,000 b/d' H1 2025",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Argus, Sean Lui, 10 September 2025: https://www.argusmedia.com/en/news-and-insights/market-opinion-and-analysis-blog/shadow-fleet-freight-malaysia . ",
+      "correction": "The article contains the quoted estimate for the first half of 2025. The underlying production dataset and precise coverage were not separately verified. A half-year estimate should not be substituted for an annual average.",
+      "stale_check": "Retain the first-half reference period and September 2025 publication date."
+    },
+    {
+      "claim": "Value comparison mixes CIF (China) and FOB (Malaysia); the hook uses tonnes only.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "UN Comtrade 2025 bilateral records, retrieved 8 November 2026, https://comtradeapi.un.org/public/v1/preview/C/A/HS ; UN mirror-statistics explanation, https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ . ",
+      "correction": "Correct. CIF/FOB differences affect monetary comparison, but do not mechanically account for the 206-fold weight discrepancy.",
+      "stale_check": ""
+    },
+    {
+      "claim": "The anchorage most often cited is about 70 km off Johor, outside Malaysia's territorial sea; US Treasury calls it the 'Singapore EOPL'",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "Treasury sb0275, 9 October 2025: https://home.treasury.gov/news/press-releases/sb0275 . The release uses Singapore EOPL terminology but does not establish the exact 70 km location or a jurisdictional boundary. ",
+      "correction": "No official coordinates, chart or baseline analysis was obtained that verifies this combined geographic claim. A distance from Johor alone does not settle territorial-sea or EEZ jurisdiction, and an outer-port-limits label is not itself a sovereignty determination.",
+      "stale_check": "Keeping the location unresolved on the cards is appropriate."
+    },
+    {
+      "claim": "Kpler's 51 Mt of Iranian-origin crude moved via STS (Jan-Oct 2025) has no stated location and is not used.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Reuters's Kpler attribution, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ . No independent original Kpler dataset was obtained. ",
+      "correction": "Restore 'over', 'Iranian-origin or suspected Iranian-origin', and the China-import scope. The quantity is not geographically allocated in that sentence.",
+      "stale_check": "The estimate concerns January–October 2025, not the later blockade period."
+    },
+    {
+      "claim": "Iran International (opposition-aligned) is not cited on any card; its September figure matches other secondary sources but no primary copy was opened.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Iran International, 22 October 2026: https://www.iranintl.com/en/202610222999 ; secondary comparison: https://shafaq.com/en/Economy/Iraq-s-oil-exports-to-China-surge-248 . No original GAC cell or qualifying primary evidence for the political-alignment classification was obtained. ",
+      "correction": "The exclusion from the cards is observable in the supplied analysis. However, the located article gives 276,000 b/d for September, whereas 1.16 Mt over 30 days at 7.33 barrels per tonne gives about 283,427 b/d. These are broadly similar, not an established exact match without a common conversion basis. The political characterization also lacks a qualifying primary citation in the analysis.",
+      "stale_check": "Both numerical accounts refer to September 2026; their methodology was not reconciled."
+    },
+    {
+      "claim": "China's MOFA opposing 'illegal unilateral sanctions'",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Chinese Foreign Ministry, Mao Ning's regular press conference, 21 March 2025: https://www.mfa.gov.cn/eng/xw/fyrbt/lxjzh/202503/t20250321_11579916.html . ",
+      "correction": "The official English transcript opposes US abuse of illicit unilateral sanctions and long-arm jurisdiction in response to sanctions concerning Iranian oil. Cite the specific statement. It verifies China's stated position, not the origin of particular cargoes.",
+      "stale_check": "Verified as a dated official position, not an exhaustive review of all subsequent statements."
+    },
+    {
+      "claim": "UN Comtrade cells, EIA production, the P.U. (A) 233 gazette, Treasury releases, FinCEN advisory and alert, and the OFAC list were all opened and independently rechecked.",
+      "status": "UNVERIFIED",
+      "m_true": 0.1,
+      "m_false": 0,
+      "m_unknown": 0.9,
+      "source": "The supplied analysis is the only evidence of its author's prior workflow. No underlying audit log or complete S-numbered brief was provided. This fact-check independently accessed the relevant datasets and documents as of 8 November 2026.",
+      "correction": "Treat this as unaudited process metadata, not additional corroboration. The current check reproduces many core values but also finds a sanctions-count error, unresolved numerical conflicts and source limitations.",
+      "stale_check": "A claimed earlier retrieval date cannot be reconstructed merely from a matching current value."
+    },
+    {
+      "claim": "Malaysian action credited: the July 2025 pledge is named as moving the label (fact 3)",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0.05,
+      "m_unknown": 0.7,
+      "source": "Reuters's trader and Energy Aspects attribution, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ .",
+      "correction": "This guardrail upgrades an attributed possible influence into an established effect. Preserve the attribution and uncertainty.",
+      "stale_check": "The source assesses 2025 behaviour; it does not establish later effects."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "UNDERCLAIM",
+      "claim": "carries ten Malaysia-addressed firms and individuals for Iranian oil or commodity shipping or port services",
+      "why": "At least eleven distinct entries satisfy the analysis's broad stated scope when relevant petrochemical-shipping activity is included. The understatement is not attributable to a post-analysis update.",
+      "primary_source": "OFAC SDN and address files retrieved 8 November 2026, Last-Modified 6 November 2026: https://sanctionslistservice.ofac.treasury.gov/api/PublicationPreview/exports/SDN.CSV and https://sanctionslistservice.ofac.treasury.gov/api/PublicationPreview/exports/ADD.CSV ; Treasury's Sense designation, 9 February 2023: https://home.treasury.gov/news/press-releases/jy1257 ."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "reg. 7(1) written permission for any cargo transfer in the EEZ",
+      "why": "The wording omits the defined cargo categories and express exceptions. The law also covers the continental shelf.",
+      "primary_source": "P.U. (A) 233/2026, regulations 2 and 7, gazetted 26 June 2026: https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3577352/PUA%20233%20(2026).pdf ."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "reg. 7(1) written permission for any cargo transfer in the EEZ",
+      "why": "A reader could understand this as an exceptionless rule covering every category of cargo. That is broader than the enacted provision.",
+      "primary_source": "P.U. (A) 233/2026, regulations 2 and 7(2): https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3577352/PUA%20233%20(2026).pdf ."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Most of those barrels were never Malaysia's. The name on the paperwork was.",
+      "why": "The records establish reported trade and production volumes, alongside documented relabelling practices. They do not establish the historical ownership of most cargoes.",
+      "primary_source": "UN Comtrade methodological explanation: https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ ; Treasury jy2538, 15 August 2024: https://home.treasury.gov/news/press-releases/jy2538 ."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Most of those barrels were never Malaysia's. The name on the paperwork was.",
+      "why": "The reframe merges geological origin, ownership and export reporting into one categorical conclusion.",
+      "primary_source": "UN Comtrade methodology and national submissions, checked 8 November 2026: https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ ."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "at most about 39% could be Malaysian-produced (7.33 bbl/t)",
+      "why": "A same-year production equivalence is presented as a strict provenance ceiling without inventory, timing or shipment reconciliation.",
+      "primary_source": "UN Comtrade 2025 data, https://comtradeapi.un.org/public/v1/preview/C/A/HS ; EIA annual production, https://api.eia.gov/v2/international/data/ , retrieved 8 November 2026."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "most crude China logged as Malaysian in 2025 could not have come from Malaysian fields.",
+      "why": "The inference is strongly supported by the scale comparison, but its absolute wording exceeds the available stock-and-flow evidence.",
+      "primary_source": "UN Comtrade 2025 data and EIA production, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS and https://api.eia.gov/v2/international/data/ ."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "No source ties Petronas or Malaysian producers to the cargoes.",
+      "why": "An unlimited claim about every possible source cannot be certified. The supported statement concerns the particular Treasury and FinCEN documents examined.",
+      "primary_source": "Treasury jy2538 and sb0322: https://home.treasury.gov/news/press-releases/jy2538 and https://home.treasury.gov/news/press-releases/sb0322 ; FinCEN advisory, 6 June 2025: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf ."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "That settles policy, not provenance",
+      "why": "The analysis uses a 2024 ministerial statement as a settled policy frame without accounting for the September 2025 reapplication of UN Iran sanctions and Malaysia's subsequent implementation instructions.",
+      "primary_source": "UN Security Council: https://main.un.org/securitycouncil/en/content/2231/background ; BNM circular dated 22 December 2025: https://www.malaysianbar.org.my/cms/upload_files/document/Circular%20No%20005-2026.pdf ."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "have logged none from Iran since 2022",
+      "why": "There were recorded imports during 2022, and the independently verified annual absence extends through 2025, not automatically through every month of 2026.",
+      "primary_source": "UN Comtrade annual China/Iran HS 2709 records, 2021–2025, retrieved 8 November 2026: https://comtradeapi.un.org/public/v1/preview/C/A/HS ."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Energy Aspects said most Iranian transfers still happened off Malaysia.",
+      "why": "The shortened sentence removes the quoted assessment's China-bound crude and STS limitations.",
+      "primary_source": "No qualifying primary measurement obtained. The wording comparison is against Reuters's attributed quotation, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ ."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Kpler's 51 Mt of Iranian-origin crude moved via STS (Jan-Oct 2025)",
+      "why": "The source note removes both a lower-bound qualification and uncertainty about origin.",
+      "primary_source": "No qualifying original dataset obtained. Reuters's reported Kpler estimate, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ ."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "Malaysian action credited: the July 2025 pledge is named as moving the label (fact 3)",
+      "why": "This turns an attributed possible influence into a demonstrated causal effect.",
+      "primary_source": "No independently checked causal evidence obtained. Reuters's attributed account, 24 November 2025: https://www.reuters.com/business/energy/surging-chinese-imports-indonesia-oil-point-to-rebranded-iranian-crude-traders-2025-11-21/ ."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "first listed the red flag in Advisory FIN-2025-A002 (6 Jun 2025)",
+      "why": "The advisory and date are verified; chronological priority over all earlier FinCEN publications is not.",
+      "primary_source": "FinCEN FIN-2025-A002: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf ."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "case awaits the Deputy Public Prosecutor",
+      "why": "The only identified support is a February news report. Present-tense status in November needs a current official record.",
+      "primary_source": "No current official status located. Historical report: https://www.bairdmaritime.com/amp/story/security/incidents/piracy/tankers-linked-to-alleged-130m-crude-transfer-released-by-malaysia , 3 February 2026."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "In January to September 2026 China logged 27.96 Mt 'from Indonesia' and 25.41 Mt 'from Malaysia' (-50%)",
+      "why": "The figures match the cited news report, but the underlying customs table was not separately checked.",
+      "primary_source": "No primary table obtained. TASS's attributed report, 20 October 2026: https://tass.com/economy/2204419 ."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The anchorage most often cited is about 70 km off Johor, outside Malaysia's territorial sea",
+      "why": "Exact coordinates and a legally relevant boundary analysis are missing.",
+      "primary_source": "Treasury's broader location description does not establish the asserted boundary: https://home.treasury.gov/news/press-releases/sb0275 , 9 October 2025."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "lighter Malaysian grades would give about 1.33m b/d",
+      "why": "No particular conversion factor or cargo-density evidence supports this numerical sensitivity claim.",
+      "primary_source": "The Energy Commission handbook instead supplies conventional factors of 7.33 for imported crude and 7.60 for local crude: https://www.st.gov.my/sites/default/files/2026-02/Malaysia_Energy_Statistics_Handbook_2023.pdf ."
+    }
+  ],
+  "omitted_facts": [
+    "The latest DOSM production table is a material missing comparator. Its 3 September 2026 release reports 183.6 million barrels in 2025, preliminary, and 184.0 million in 2024, revised. The 2025 comparison becomes about 2.6 times national production. The EIA–DOSM discrepancy remains unreconciled; it should not be explained away as a proven definitional difference. Source: https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=20883 . ",
+    "The current 2024 Comtrade weight is 70.15736 Mt, rather than Reuters's historically reported 70.38 Mt. This is a separate discrepancy from the already acknowledged 2023 estimated-weight issue. Prefer the current official series for consistent comparisons and disclose the historical alternative without inventing a revision explanation. Sources: https://comtradeapi.un.org/public/v1/preview/C/A/HS , retrieved 8 November 2026; https://www.reuters.com/markets/commodities/chinas-crude-oil-imports-top-supplier-russia-reach-new-high-2024-2025-01-20/ .",
+    "The UN treated the earlier Iran sanctions resolutions as reapplied from 27 September 2025 at 8 p.m. Eastern Time, equivalent to 28 September UTC. BNM's 22 December 2025 circular instructed relevant Malaysian institutions on implementation. These targeted proliferation, financial and related restrictions are not a blanket embargo on every Iranian crude shipment. Sources: https://main.un.org/securitycouncil/en/content/2231/background ; https://main.un.org/securitycouncil/en/sanctions/1737 ; https://www.malaysianbar.org.my/cms/upload_files/document/Circular%20No%20005-2026.pdf . ",
+    "Malaysian measures did not stop with the June commencement. Marine Sensitive Area Notice MSA 01/2026 was issued on 10 September and became effective on 11 September 2026, adding controls for a defined area. This is relevant to the governance chronology. Source: https://www.mkn.gov.my/web/wp-content/uploads/sites/3/2026/09/Marine-Sensitive-Area-Notice.pdf . ",
+    "National rejection of unilateral sanctions does not mean banks disregard them. BNM's financial-institution FAQ says decisions concerning persons on unilateral sanctions lists depend on each institution's assessment and risk appetite. This helps explain why banking scrutiny can matter independently of a minister's general foreign-policy position. Source, checked 8 November 2026: https://amlcft.bnm.gov.my/faq/tfs-fi/targeted-financial-sanctions . ",
+    "UN Comtrade explains that mirror-trade differences can arise from partner attribution, timing, warehousing, valuation and other methodological differences. The enormous discrepancy warrants investigation, but the dataset alone cannot allocate it to fraud, Iranian origin or any particular operator. Likewise, Malaysia's reported 0.31 Mt of exports does not itself prove Malaysian geological origin or exclude re-exports. Source: https://uncomtrade.org/docs/exports-of-a-country-not-coincide-with-imports-of-its-partner/ . ",
+    "Treasury itself recognizes that ship-to-ship transfers are a legitimate commercial practice that can be misused. A transfer, a Malaysian connection or an origin label alone is not proof of sanctions evasion. Source: Treasury sb0322, 20 November 2025, https://home.treasury.gov/news/press-releases/sb0322 . ",
+    "Kpler expressly distinguished its October 2026 analysts' oil-on-water estimate from platform figures awaiting discharge updates. Omitting that methodological caveat makes the apparent precision of 'zero' stronger than its source supports. Source: https://www.kpler.com/blog/irans-oil-on-water-outside-the-blockade-zone-hits-zero-as-tehrans-trilemma-sharpens , 22 October 2026. This is a verified feature of the published estimate, not independent primary validation of the inventory. ",
+    "MMEA's inspected January 2026 release establishes a detention relating to suspected unauthorized transfer and anchoring, but does not establish Iranian cargo origin. Its detention evidence should not be used as another verified Iranian-oil case without the subsequent investigation or court record. Source: https://www.mmea.gov.my/eng/index.php/en/12-berita-utama/3283-53-kru-bersama-dua-kapal-tangki-ditahan-cuba-pindah-minyak-mentah-bernilai-lebih-rm512-juta , 31 January 2026. "
+  ],
+  "source_assessment": "The consolidated bibliography contains approximately 23 documentary or dataset items: one Comtrade dataset family, two EIA items, one gazette, three Treasury releases, two OFAC items, two FinCEN publications, one CGEP article, seven dated Reuters reports, and one item each from Bernama, TASS, Kpler and Al Jazeera. These represent 12 named publishing bodies or platforms, or 10 institutional groups when Treasury, OFAC and FinCEN are consolidated. This is not 23 independent lines of evidence: Reuters republications are the same reporting, UN-hosted national submissions are not independent corroboration of those submissions, and EIA's reuse of GAC figures does not create another independent customs measurement. The strongest material is official statistical, legal and regulatory documentation. The institutional range also includes international commercial journalism, a US university policy centre, commercial shipping analysts, Malaysian public news reporting, a Russian state news agency and a Qatar-based news organization. Security attribution remains concentrated in US sanctions institutions; Malaysian policy voices mostly arrive through news reports. Direct cargo records, original analyst methodology, Malaysian case-disposition documents, affected operators' responses and substantive Chinese or Iranian responses to the specific discrepancy are missing. Argus, Energy Aspects and China's MOFA add voices outside the consolidated bibliography, but their document-level citations are incomplete. Iran International is explicitly excluded from the cards and should not count as an opposition source supporting them. The diversity estimate of 0.58 is a qualitative assessment of institutional and evidentiary breadth, not a statistical measurement or a requirement to balance verified arithmetic with partisan opinion. Under the requested restrictive definition, accurately attributed news quotations and proprietary analyst estimates remain UNVERIFIED where their underlying primary evidence was not separately inspected.",
+  "overall_assessment": "Checked as of 8 November 2026, using the analysis's 7 November SDN download as its apparent time reference. The central 2025 customs discrepancy, the 206-fold weight ratio, the stated EIA observations, the principal Treasury and FinCEN attributions, and the EEZ commencement date are well supported. The 2026 strikes and blockade chronology are also supported by contemporary official documents and should not be rejected as implausibly recent. Publication nevertheless requires material revisions: correct the sanctions count to at least eleven within the stated broad scope; qualify the EEZ rule's legal scope; disclose the conflicting DOSM production series and 2024 trade figure; replace ownership and strict-provenance conclusions with clearly stated inferences; and update the sanctions-policy context and dated case status. Several precise ministerial, monthly-trade and analyst claims remain unverified under the user's required standard, despite matching reputable published reporting. The 76/100 score is an editorial assessment of evidentiary support and material defects, not a computed probability or a claim that every UNVERIFIED item is false. The reporting-discrepancy story is substantially supported; a fully established account of the origin, ownership, location and legal status of the underlying cargoes is not."
+}

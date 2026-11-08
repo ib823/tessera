@@ -1,0 +1,114 @@
+{
+  "bias_score": 18,
+  "political_lean_estimate": 0.1,
+  "ethnic_framing_estimate": 0,
+  "religious_sensitivity_estimate": 0,
+  "narrative_framing_estimate": 0.2,
+  "geographic_bias_estimate": 0.3,
+  "economic_framing_estimate": 0.2,
+  "gender_agency_estimate": 0,
+  "partisan_flags": [],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [
+    {
+      "quote": "Malaysia publishes how much its scam response centre hands back. It does not publish how often its courts order convicted offenders to pay victims.",
+      "why_biased": "Treats federal agency aggregates (NSRC, AGC, Home Ministry) as exhaustive without noting regional enforcement or subordinate court variations across Peninsular Malaysia, Sabah, and Sarawak.",
+      "fix": "Specify that neither the Attorney General's Chambers nor the federal judiciary publishes a national or state-level breakdown of Section 426(1A) compensation orders."
+    }
+  ],
+  "economic_flags": [
+    {
+      "quote": "Malaysia's scam response centre returned RM7.3m of the RM25.2m it seized from 2022 to 2025: 29%, the Home Ministry told Parliament.",
+      "why_biased": "Presenting NSRC returns purely as a percentage of seized funds (29% and 49%) while excluding the Home Ministry's RM2.97 billion total online-fraud loss figure for 2025 frames institutional recovery from the regulator's operational perspective rather than the economic reality of victims who lose over 99% of stolen funds.",
+      "fix": "State clearly in the card detail that the RM25.2m seized and RM7.3m returned represent only the subset of funds intercepted by the NSRC, whereas total reported online fraud losses reached RM2.97 billion in 2025 alone."
+    }
+  ],
+  "gender_flags": [],
+  "omission_flags": [
+    "Total scam losses omitted from the Economic card: The source notes acknowledge the Home Ministry's RM2.97 billion figure for 2025 online-fraud losses, yet the card omits it completely, leaving readers with 29% and 49% 'returned-over-seized' rates that obscure how tiny NSRC recoveries are relative to total victim losses.",
+    "Practical insolvency of mule account holders under CPC s.426(1C)(f): While the hook mentions that courts weigh 'the convict's ability to pay', the Governance card fails to explain that mule account holders are typically low-income intermediaries who do not hold the stolen scam proceeds, making in personam compensation orders under s.426(1A) largely ineffective compared to in rem property delivery orders under CPC s.413.",
+    "Unreconciled discrepancy in mule-account prosecution figures: The analysis relegates to 'needs_verification' Home Minister Saifuddin Nasution Ismail's 27 January 2026 statement that only 20 individuals from 51 cases were charged under Penal Code s.424A, omitting this crucial context from the Governance card that cites 969 mule account convictions in 2025."
+  ],
+  "evasion_flags": [
+    "The analysis builds its central thesis around CPC s.426(1A) as a missing link in scam restitution, while admitting in fine print that the Attorney General's 15 April 2026 directive was general (highlighting drink-driving deaths, not scams) and that no court has ever ruled that a scam victim legally qualifies as the direct 'victim' of a mule-account offence under ss.424A-424D."
+  ],
+  "shoe_test_failures": [],
+  "cardinal_sin_flags": [
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Bank Negara counted 969 convictions of mule account holders in 2025. No published count shows how many ended with a compensation order.",
+      "why": "Juxtaposing 969 mule-account convictions with the absence of CPC s.426(1A) compensation statistics implies prosecutors or courts are neglecting a viable scam-recovery tool, even though the card later admits no court ruling establishes that a scam victim is the 'victim' of a mule-account offence and the 2025 convictions predated the April 2026 directive.",
+      "fix": "Reframe the card to explain first that mule-account offences (ss.424A-424D) criminalise handing over bank accounts rather than the underlying fraud, which is why scam restitution relies on NSRC earmarking and CPC s.413 property delivery orders rather than untested s.426(1A) orders against mule convicts."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "quote": "In 2025, 969 convictions were secured against mule account holders', following Penal Code ss.424A to 424D (Act A1721) and CPC amendments in force from 30 October 2024.",
+      "why": "As the analyst's own 'needs_verification' notes admit, Bank Negara's Annual Report 2025 (p.97) does not break down which statutory offences the 969 convictions fell under, and Home Minister Saifuddin reported on 27 January 2026 that only 20 individuals from 51 cases had been charged under s.424A. Linking the 969 convictions directly to ss.424A-424D overstates what the primary source proves.",
+      "fix": "State that Bank Negara reported 969 convictions against mule account holders in 2025 without specifying the offences of conviction, and note that separate Home Ministry figures from January 2026 recorded 20 individuals charged specifically under the new s.424A."
+    },
+    {
+      "sin": "OVERCLAIM",
+      "quote": "Malaysia publishes how much its scam response centre hands back. It does not publish how often its courts order convicted offenders to pay victims.",
+      "why": "The analyst's own verification notes admit that 'does not publish' rests solely on web and document searches and that neither the AGC nor the Judiciary was asked whether such statistics exist in judicial or prosecutorial records.",
+      "fix": "Replace 'It does not publish' with 'Neither the Attorney General's Chambers nor the courts have published figures on how often courts order convicted offenders to compensate victims under Section 426(1A)'."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "In a written reply posted on the Parliament portal on 24 June 2026 (to Ronald Kiandee, PN), the Home Ministry said the National Scam Response Centre (NSRC) had seized RM32.49 million of fraud victims' funds since it was set up in 2022 and returned RM10.9 million.",
+      "why": "The card text cites the written reply as if inspected on the Parliament portal, whereas 'confidence' and 'needs_verification' disclose that the 2026 Hansard and parliamentary reply documents could not be opened and were read only via secondary reporting in Malay Mail/Bernama.",
+      "fix": "Attribute the quote and figures on the card explicitly to Bernama/Malay Mail's report of the 24 June 2026 parliamentary written reply rather than citing the unopened Parliament portal document directly."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "The AGC text records s.426 as last amended by Acts A1378 and A1422, both in force on 1 June 2012",
+      "why": "The analyst's 'needs_verification' log states that 'Act A1378 itself was not opened', relying only on the AGC summary table and Act A1422 to verify the June 2012 wording history.",
+      "fix": "Cite Act A1422 (which was opened and verified) for the 1 June 2012 amendment to s.426(1A), or verify the text of Act A1378 before citing it as establishing the current wording."
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "CPC s.426(1A) provides that the court 'shall, upon the application of the Public Prosecution, make an order against the convicted accused for the payment by him ... of a sum to be fixed by the Court as compensation to a person who is the victim of the offence committed by the convicted accused in respect of ... loss of his income or property', and s.426(1C)(f) requires weighing 'the ability of the convicted accused to pay'.",
+      "status": "VERIFIED",
+      "primary_source": "Verified against the quoted excerpts from the Criminal Procedure Code (Act 593), AGC updated text as at 4 Jul 2023, s.426(1A)-(1D) pp.233-234 and Act A1422 ss.1(2), 7 provided in the dossier.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Act A1378 and Act A1422 both came into force on 1 June 2012 to establish the current wording of CPC s.426(1A).",
+      "status": "UNVERIFIED",
+      "primary_source": "I cannot verify this independently because Act A1378 was not opened in the provided audit dossier, which relied on the AGC amendment list and Act A1422 alone.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "On 15 Apr 2026, Attorney General Dusuki Mokhtar ordered all deputy public prosecutors to apply for compensation orders for crime victims, including drink-driving deaths, 'in the appropriate cases', noting it was not conventional practice and not possible in all cases.",
+      "status": "VERIFIED",
+      "primary_source": "Verified as reported speech against the directly opened FMT report dated 15 Apr 2026 ('DPPs ordered to seek compensation for crime victims') documented in the editor check; however, the underlying primary AGC directive itself was not opened.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Home Ministry written reply of 24 June 2026 (to Ronald Kiandee): NSRC seized RM32.49m since 2022 and returned RM10.9m; from 2022 to 2025 it seized RM25.2m and returned RM7.3m (29%); from Jan to May 2026 it seized RM7.25m and returned RM3.57m (49%).",
+      "status": "UNVERIFIED",
+      "primary_source": "I cannot verify this independently against the primary parliamentary document because the 24 June 2026 written reply on the Parliament portal was not opened in the dossier and rests solely on secondary reporting by Malay Mail/Bernama.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "On 3 March 2026 Home Minister Saifuddin Nasution Ismail said NSRC returns through earmarking rose from RM508,479.39 in 2024 to RM6.65m in 2025; cumulative returns reached RM14.01m to Aug 2026 (3 Nov 2026 written reply) and RM14.3m to Sep 2026 (27 Oct 2026).",
+      "status": "UNVERIFIED",
+      "primary_source": "I cannot verify this independently against primary Hansard or ministerial texts because the 2026 Hansard and parliamentary reply documents were not opened in the dossier, which relied on secondary reports in The Star and Malay Mail/Bernama.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Bank Negara's Annual Report 2025 (p.97) states: 'In 2025, 969 convictions were secured against mule account holders'.",
+      "status": "VERIFIED",
+      "primary_source": "Verified as an exact quote from Bank Negara Malaysia Annual Report 2025, 'Maintaining Financial Integrity', p.97 in the dossier, though the statutory offences of conviction are not broken down in that primary source.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Act A1721, Penal Code (Amendment) Act 2024 (inserting ss.424A to 424D), came into force on 30 October 2024 via P.U.(B) 433/2024.",
+      "status": "VERIFIED",
+      "primary_source": "Verified against the AGC amendment-Act list export (Act A1721 and P.U.(B) 433/2024) documented in the dossier.",
+      "corrected_value": ""
+    }
+  ],
+  "overall_assessment": "The analysis is politically neutral, avoids racial or religious framing, and transparently documents its evidentiary caveats in its back-end notes, but its core editorial angle rests on a forced and misleading juxtaposition. By pairing NSRC administrative fund recoveries and 969 mule-account convictions with the lack of published statistics on CPC Section 426(1A) victim compensation orders, the cards imply that a statutory scam-recovery mechanism is going unmeasured—even though the April 2026 Attorney General directive was not scam-specific, no court has ruled that a scam victim legally qualifies as the direct victim of a mule-account offence under Sections 424A-424D, and mule holders rarely possess the stolen funds required to satisfy an ability-to-pay inquiry. Furthermore, quoting 29% and 49% NSRC 'returned-over-seized' rates while omitting the RM2.97 billion in total 2025 online-fraud losses distorts the economic scale of victim losses, and several 2026 parliamentary figures are cited as direct parliamentary records despite being sourced only from secondary news reports."
+}
