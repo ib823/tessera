@@ -110,6 +110,10 @@ async function main() {
 
     // Strip component names from opts
     html = html.replace(/"name":"[A-Za-z]+"/g, '"name":"c"');
+    // Island opts are attribute-encoded. client:only="svelte" stores the
+    // renderer name as opts.value; the only-directive never reads it.
+    html = html.replace(/&quot;name&quot;:&quot;[A-Za-z]+&quot;/g, '&quot;name&quot;:&quot;c&quot;');
+    html = html.replace(/&quot;value&quot;:&quot;svelte&quot;/g, '&quot;value&quot;:&quot;c&quot;');
 
     // Apply file renames
     for (const [oldBase, newBase] of renames) {

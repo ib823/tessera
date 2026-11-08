@@ -194,8 +194,16 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
     )}
   </article>
 
+  {/*
+    The App island is client-only and receives the full issue. That gives a
+    deep link one visual hand-off: the static article above is the only
+    content until the island mounts, and the island's first frame is already
+    this issue's reader. Server-rendering App here would put an empty-feed
+    homepage shell under the article that jumps to the top on hydration
+    (CLS ~1.0) and then waits for two fetches before the reader appears.
+  */}
   <div id="main-content" tabindex="-1">
-    <App client:idle initialIssueId={issue.id} />
+    <App client:only="svelte" initialIssueId={issue.id} initialIssue={issue} />
   </div>
   <style is:global>
     /*
@@ -362,6 +370,9 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
 
     /* Hide static article once the interactive island mounts. See App.svelte onMount. */
     html.js-reader-mounted .ssg-article { display: none; }
+    /* The client-only island is empty until it mounts; don't leave a blank
+       viewport-tall block under the article for no-JS readers. */
+    html:not(.js-reader-mounted) #main-content { min-height: 0; }
   </style>
 
   <script is:inline define:vars={{ buildId }}>

@@ -14,6 +14,8 @@
   const featuredDossiers = getDossierFeedEntries();
 
   interface Props {
+    /** Feed summaries still in flight: render nothing rather than "Coming soon". */
+    loading?: boolean;
     issueCount?: number;
     topIssue?: IssueSummary | null;
     issues?: IssueSummary[];
@@ -29,6 +31,7 @@
     onPullRefresh?: () => void;
   }
   let {
+    loading = false,
     issueCount = 0,
     topIssue = null,
     issues = [],
@@ -399,7 +402,7 @@
           <a href="/verify">Verify Content</a>
         </nav>
       </footer>
-    {:else}
+    {:else if !loading}
       <div class="coming-soon">
         <div class="today-kicker">Coming Soon</div>
         <h1 class="today-title">New issues publish three times a week.</h1>

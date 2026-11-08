@@ -71,6 +71,11 @@ export function loadFullIssue(id: string): Promise<Issue | null> {
   return promise;
 }
 
+/** Seed the cache with an issue the page already shipped (deep-link SSG props). */
+export function primeFullIssue(issue: Issue): void {
+  if (!issueCache.has(issue.id)) issueCache.set(issue.id, issue);
+}
+
 /** Synchronous access — returns cached full issue or null */
 export function getFullIssue(id: string): Issue | null {
   return issueCache.get(id) ?? null;

@@ -15,6 +15,8 @@
   interface Props {
     issues: IssueSummary[];
     sections?: FeedSection[];
+    /** Feed summaries still in flight (deep link): keep the list empty, no placeholder rows. */
+    loading?: boolean;
     activeId: string | null;
     readMap: Record<string, string>;
     surfaceMode?: 'today' | 'library';
@@ -42,7 +44,7 @@
     onSyncBannerTap?: () => void;
     onSyncBannerDismiss?: () => void;
   }
-  let { issues, sections = [], activeId, readMap, surfaceMode = 'today', libraryMode = 'reading', readingCount = 0, highlightCount = 0, archiveCount = 0, libraryCount = 0, onGoToday, onOpenLibrary, onOpenReading, onOpenHighlights, onOpenArchive, onSelectIssue, searchQuery = '', onSearchInput, onSearchFocus, onSearchClear, issueHasConnections, sortMode = 'latest', onSortChange, archiveFilter = 'all' as ArchiveFilter, onArchiveFilter, showSyncBanner = false, onSyncBannerTap, onSyncBannerDismiss }: Props = $props();
+  let { issues, sections = [], loading = false, activeId, readMap, surfaceMode = 'today', libraryMode = 'reading', readingCount = 0, highlightCount = 0, archiveCount = 0, libraryCount = 0, onGoToday, onOpenLibrary, onOpenReading, onOpenHighlights, onOpenArchive, onSelectIssue, searchQuery = '', onSearchInput, onSearchFocus, onSearchClear, issueHasConnections, sortMode = 'latest', onSortChange, archiveFilter = 'all' as ArchiveFilter, onArchiveFilter, showSyncBanner = false, onSyncBannerTap, onSyncBannerDismiss }: Props = $props();
   function libraryHeading(mode: 'reading' | 'highlights' | 'archive') {
     if (mode === 'highlights') return 'Highlights library';
     if (mode === 'archive') return 'Archive library';
@@ -306,7 +308,7 @@
           {/if}
         </span>
       </div>
-    {:else if sections.length === 0 && surfaceMode !== 'library'}
+    {:else if sections.length === 0 && surfaceMode !== 'library' && !loading}
       <!-- Fallback: filter tabs when no sections computed -->
       <div style="display:flex;gap:0;margin-top:8px;border-bottom:1px solid var(--bg-sunken);" role="tablist" aria-label="Filter issues">
         {#each filterTabs as tab}
@@ -377,7 +379,9 @@
     aria-atomic="false"
     style="flex:1;overflow-y:auto;"
   >
-    {#if sections.length > 0 && !isSearching}
+    {#if loading && !isSearching}
+      <!-- Rows arrive with the feed fetch; render them in one pass so nothing below them moves. -->
+    {:else if sections.length > 0 && !isSearching}
       <!-- Section-based feed -->
       {#each sections as section, sectionIdx}
         {@const sectionHeadingId = `desktop-feed-section-${section.kind}-heading`}
