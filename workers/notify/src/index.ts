@@ -424,7 +424,7 @@ async function handleUnsubscribe(request: Request, env: Env): Promise<Response> 
     const subs = await getAllSubscriptions(env);
     for (const { key, sub } of subs) {
       if (sub.endpoint === body.endpoint) {
-        await env.SUBS.delete(key);
+        await deleteSubscription(env, key);
         break;
       }
     }
@@ -455,6 +455,49 @@ async function handleHeartbeat(request: Request, env: Env): Promise<Response> {
   } catch {
     return json({ error: 'Heartbeat failed' }, 500, request);
   }
+}
+
+// ── Weekly cap ──
+// The subscribe prompt promises at most 3 notifications a week. Every scheduled
+// send goes through these helpers, which keep a rolling 7-day log per subscription.
+
+const WEEKLY_CAP = 3;
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+
+async function recentSends(env: Env, key: string, now: number): Promise<number[]> {
+  const raw = await env.SUBS.get(`sent:${key}`);
+  if (!raw) return [];
+  try {
+    const list = JSON.parse(raw) as number[];
+    return Array.isArray(list) ? list.filter((t) => typeof t === 'number' && now - t < WEEK_MS) : [];
+  } catch {
+    return [];
+  }
+}
+
+async function recordSend(env: Env, key: string, now: number, recent: number[]): Promise<void> {
+  // Expires a day after the oldest entry could still count, so the log never outlives its purpose.
+  await env.SUBS.put(`sent:${key}`, JSON.stringify([...recent, now]), { expirationTtl: 8 * 24 * 60 * 60 });
+}
+
+/** Sends one capped push. Returns 'sent', 'capped' or 'expired' (subscription gone). */
+async function sendCapped(
+  env: Env, key: string, sub: Subscription, payload: string, urgency: string, topic: string,
+): Promise<'sent' | 'capped' | 'expired'> {
+  const now = Date.now();
+  const recent = await recentSends(env, key, now);
+  if (recent.length >= WEEKLY_CAP) return 'capped';
+  const ok = await sendPush(sub, payload, env, urgency, topic);
+  if (!ok) return 'expired';
+  await recordSend(env, key, now, recent);
+  return 'sent';
+}
+
+/** Removes a subscription and every record keyed to it. */
+async function deleteSubscription(env: Env, key: string): Promise<void> {
+  await env.SUBS.delete(key);
+  await env.SUBS.delete(`sent:${key}`);
+  await env.SUBS.delete(`reengaged:${key}`);
 }
 
 // ── CRON Handlers ──
@@ -501,13 +544,13 @@ async function checkNewIssues(env: Env): Promise<void> {
 
     for (const { key, sub } of subs) {
       const payload = newIssuePayload(topIssue, sub.platform || 'unknown');
-      const ok = await sendPush(sub, payload, env, 'normal', `issue-${topIssue.id}`);
-      if (!ok) expired.push(key);
+      const result = await sendCapped(env, key, sub, payload, 'normal', `issue-${topIssue.id}`);
+      if (result === 'expired') expired.push(key);
     }
 
     // Clean up expired subscriptions
     for (const key of expired) {
-      await env.SUBS.delete(key);
+      await deleteSubscription(env, key);
     }
   }
 
@@ -527,11 +570,22 @@ async function sendWeeklyDigest(env: Env): Promise<void> {
   const recentIssues = feed.slice(0, 7);
   if (recentIssues.length === 0) return;
 
+  // At most one digest run per day, even if the trigger fires twice.
+  const today = new Date().toISOString().slice(0, 10);
+  const sentKey = `meta:digest-sent:${today}`;
+  if (await env.SUBS.get(sentKey)) return;
+  await env.SUBS.put(sentKey, '1', { expirationTtl: 3 * 24 * 60 * 60 });
+
   const topIssue = recentIssues.reduce((a, b) => a.opinionShift > b.opinionShift ? a : b);
   const payload = digestPayload(topIssue.headline, recentIssues.length - 1);
 
-  for (const { sub } of subs) {
-    await sendPush(sub, payload, env, 'low', 'weekly-digest');
+  const expired: string[] = [];
+  for (const { key, sub } of subs) {
+    const result = await sendCapped(env, key, sub, payload, 'low', 'weekly-digest');
+    if (result === 'expired') expired.push(key);
+  }
+  for (const key of expired) {
+    await deleteSubscription(env, key);
   }
 }
 
@@ -554,9 +608,17 @@ async function checkReEngagement(env: Env): Promise<void> {
       const lastReEngage = parseInt(await env.SUBS.get(`reengaged:${key}`) || '0', 10);
       if (now - lastReEngage < 30 * 24 * 60 * 60 * 1000) continue; // Max once per 30 days
 
+      // Only nudge someone who has had no notification in the past week; otherwise
+      // the nudge would be a fourth message on top of the regular schedule.
+      if ((await recentSends(env, key, now)).length > 0) continue;
+
       const payload = reEngagementPayload(topIssue.headline, feed.length - 1);
-      await sendPush(sub, payload, env, 'low', 're-engagement');
-      await env.SUBS.put(`reengaged:${key}`, String(now));
+      const result = await sendCapped(env, key, sub, payload, 'low', 're-engagement');
+      if (result === 'expired') {
+        await deleteSubscription(env, key);
+        continue;
+      }
+      if (result === 'sent') await env.SUBS.put(`reengaged:${key}`, String(now));
     }
   }
 }
@@ -629,8 +691,10 @@ export default {
       const hour = new Date(event.scheduledTime).getUTCHours();
       const day = new Date(event.scheduledTime).getUTCDay();
 
-      // Saturday 1am UTC = Saturday 9am MYT → weekly digest
-      if (day === 6 && hour === 1) {
+      // Saturday 1am UTC fires two triggers: the weekly digest ("0 1 * * 6") and the
+      // daily re-engagement check ("0 1 * * *"). Dispatch on the cron string so the
+      // daily trigger no longer runs the digest a second time.
+      if (event.cron === '0 1 * * 6') {
         ctx.waitUntil(sendWeeklyDigest(env));
         return;
       }
@@ -641,8 +705,9 @@ export default {
         return;
       }
 
-      // Daily 1am UTC = 9am MYT → re-engagement check (max once per 30 days per user)
-      if (hour === 1) {
+      // Daily 1am UTC = 9am MYT → re-engagement check (max once per 30 days per user).
+      // Skipped on Saturday, when the digest goes out from the other 1am trigger.
+      if (hour === 1 && day !== 6) {
         ctx.waitUntil(checkReEngagement(env));
         return;
       }

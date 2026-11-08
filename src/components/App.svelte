@@ -22,7 +22,7 @@
   import { getAnimationTier } from '../lib/animation';
   import { buildFeedSections, type FeedSection, type SortMode, type SectionKind } from '../lib/feed-sections';
   import { BUILD_ID, getSiteOrigin } from '../lib/build';
-  import { startAutoSync, checkUrlSync, linkAngleCode, schedulePush, isLinked as isSyncLinked, onSyncChange } from '../lib/sync';
+  import { startAutoSync, checkUrlSync, linkAngleCode, getAngleCode, schedulePush, isLinked as isSyncLinked, onSyncChange } from '../lib/sync';
   import { initInstallState, canInstall as canInstallCheck, isIOS as isIOSCheck, triggerInstall, dismissInstall, onInstallChange } from '../lib/install-state';
   import AngleCode from './AngleCode.svelte';
 
@@ -451,9 +451,19 @@
     window.addEventListener('resize', debouncedResize);
 
     // Angle Code: check URL param and start auto-sync
+    // A ?sync= link must not join this browser silently: linking merges this
+    // browser's reading history into the code, where anyone holding it can read it.
     const syncToken = checkUrlSync();
-    if (syncToken) {
-      linkAngleCode(syncToken);
+    if (syncToken && syncToken !== getAngleCode()) {
+      const current = getAngleCode();
+      const message =
+        `This link connects this browser to Angle Code ${syncToken}.\n\n` +
+        'Your reading history on this browser will be added to that code, and anyone who has the code can see it.' +
+        (current ? `\n\nIt replaces the code ${current} on this browser.` : '') +
+        '\n\nConnect?';
+      if (window.confirm(message)) {
+        linkAngleCode(syncToken);
+      }
     }
     startAutoSync();
 

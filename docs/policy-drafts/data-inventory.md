@@ -6,6 +6,17 @@
 
 **Scope:** the website (Astro static build in `src/` and `public/`), the service worker (`public/sw.js`), the sync worker (`workers/sync/`), the push-notification worker (`workers/notify/`), and the social-posting worker (`workers/social/`, which handles no reader data).
 
+**Changes since this inventory was written.** PR #73 fixes three behaviours described below. Update the privacy notice's `[EDITOR NOTE]` lines to match once these changes are live:
+
+- **Clear button.** "Clear all reading data" in the Angle Code panel now clears the `tfa:v1:*` keys as well as the legacy `tfa-*` keys (`src/components/AngleCode.svelte`).
+- **Sync links.** A `?sync=CODE` link now asks before linking the browser, and says that the reading history becomes visible to anyone holding the code. Declining leaves the browser unlinked (`src/components/App.svelte`).
+- **Push notifications** (`workers/notify/src/index.ts`):
+  - Every scheduled push is capped at 3 per rolling 7 days per subscription. The `sent:<key>` log expires after 8 days.
+  - The Saturday digest is dispatched only by its own trigger and is guarded against running twice in one day.
+  - Re-engagement pushes go only to subscribers with no push in the past week, and never on Saturday.
+  - Unsubscribing, or a push service reporting the address gone, now deletes the subscription's `sent:` and `reengaged:` records as well.
+  - This change takes effect only once the notify worker is redeployed with `wrangler deploy`, because CI deploys the website, not this worker.
+
 ---
 
 ## 1. Headline facts
