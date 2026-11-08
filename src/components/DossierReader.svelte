@@ -596,7 +596,7 @@
         <p class="margin-rail__label">In this dossier</p>
         <p style:font-family="var(--font-body)" style:font-style="italic" style:font-size="14px" style:color="var(--body)" style:line-height="1.55">
           {dossier.series.name} —
-          <span style:color="var(--accent)">Dossier {dossier.series.ordinal} of the series.</span>
+          <span style:color="var(--accent-ink)">Dossier {dossier.series.ordinal} of the series.</span>
         </p>
         <p style:font-family="var(--font-ui)" style:font-size="12px" style:color="var(--muted)" style:line-height="1.55" style:margin-top="20px">
           Published after a {dossier.stageScoresNote ? 'multi-stage editorial review' : 'review'}. Every figure has a primary-source citation visible below it. Every fact section names its sources.

@@ -55,9 +55,11 @@
     originRect?: DOMRect;
     connections?: Connection[];
     nextIssueHeadline?: string;
+    /** false when the reader is the landing page (deep link): appear in place, no slide-in. */
+    animateEntry?: boolean;
   }
 
-  let { issue, onClose, onReturnHome, onNext, onNavigateToIssue, initialCardIndex = 0, originRect, connections = [], nextIssueHeadline = '' }: Props = $props();
+  let { issue, onClose, onReturnHome, onNext, onNavigateToIssue, initialCardIndex = 0, originRect, connections = [], nextIssueHeadline = '', animateEntry = true }: Props = $props();
 
   let patternSheetOpen = $state(false);
 
@@ -1054,6 +1056,7 @@
 <div
   class="overlay"
   class:reduced-motion={prefersReducedMotion}
+  class:no-entry={!animateEntry}
   bind:this={overlayEl}
   id="mobile-reader-dialog"
   tabindex="0"
@@ -1091,7 +1094,9 @@
 
   <!-- Hero image -->
   {#if current === 0 && !completed}
-    <div class="reader-hero" style="padding:0 20px;margin-bottom:8px;">
+    <!-- Explicit width: as a centred flex item the hero would otherwise size to the
+         image's natural width, which is 0 until it loads, then jump to ~183px tall. -->
+    <div class="reader-hero" style="width:100%;max-width:480px;padding:0 20px;margin-bottom:8px;">
       <div style="border-radius: var(--radius-md);overflow:hidden;background:var(--bg-sunken);max-width:440px;margin:0 auto;">
         <picture>
           <source type="image/avif" srcset={`${withBuildId(`/og/issue-${issue.id}-640w.avif`)} 640w, ${withBuildId(`/og/issue-${issue.id}-960w.avif`)} 960w`} sizes="(max-width: 460px) 100vw, 440px" />
@@ -1288,7 +1293,7 @@
                 {:else if conn.readState === 'started'}
                   <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><circle cx="12" cy="12" r="9" stroke="var(--score-warning)" stroke-width="2" fill="none"/><path d="M12 3a9 9 0 0 1 0 18" fill="var(--score-warning)"/></svg>
                 {/if}
-                <div style="font-size: var(--text-ui);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">{conn.headline}</div>
+                <div style="font-size: var(--text-ui);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;">{conn.headline}</div>
               </div>
               <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
                 <div style="width:32px;height:3px;background:var(--bg-sunken);border-radius: var(--radius-pill);overflow:hidden;">
@@ -1345,6 +1350,10 @@
     padding-top: env(safe-area-inset-top, 0);
     padding-bottom: env(safe-area-inset-bottom, 0);
     animation: overlayEnter 0.3s var(--ease-out-cubic, cubic-bezier(0.33, 1, 0.68, 1)) both;
+  }
+
+  .overlay.no-entry {
+    animation: none;
   }
 
   @keyframes overlayEnter {

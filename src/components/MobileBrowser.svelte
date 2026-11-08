@@ -413,7 +413,7 @@
     <div style="display:flex;align-items:center;justify-content:center;gap:2px;padding:10px 20px 4px;font-size:var(--text-sm);font-weight:600;">
       <button onclick={() => onSortChange?.('latest')} style="background:none;border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-pill);color:{sortMode === 'latest' ? 'var(--text-primary)' : 'var(--text-faint)'};font-size:var(--text-sm);font-weight:600;transition:color 0.2s ease-out;font-family:inherit;min-height:36px;" aria-label="Sort by latest" aria-pressed={sortMode === 'latest'}>Latest</button>
       <span style="color:var(--border-divider);">&middot;</span>
-      <button onclick={() => onSortChange?.('shift')} style="background:none;border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-pill);color:{sortMode === 'shift' ? 'var(--text-primary)' : 'var(--text-faint)'};font-size:var(--text-sm);font-weight:600;transition:color 0.2s ease-out;font-family:inherit;min-height:36px;" aria-label="Sort by biggest shift" aria-pressed={sortMode === 'shift'}>Most Hidden</button>
+      <button onclick={() => onSortChange?.('shift')} style="background:none;border:none;cursor:pointer;padding:6px 12px;border-radius:var(--radius-pill);color:{sortMode === 'shift' ? 'var(--text-primary)' : 'var(--text-faint)'};font-size:var(--text-sm);font-weight:600;transition:color 0.2s ease-out;font-family:inherit;min-height:36px;" aria-label="Most Hidden: sort by biggest shift" aria-pressed={sortMode === 'shift'}>Most Hidden</button>
     </div>
   {/if}
   {#if displayList.length === 0 && searchQuery}

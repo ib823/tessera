@@ -3,7 +3,7 @@
   import type { Issue } from '../data/issue-types';
   import { issueCategory, CARD_TYPES } from '../data/issue-types';
   import { addNotification } from '../stores/notifications';
-  import { loadFeedIssues, loadFullIssue, loadFactGraph, getConnections, getConnectionCount, isFactGraphLoaded } from '../lib/issues-loader';
+  import { loadFeedIssues, loadFullIssue, primeFullIssue, loadFactGraph, getConnections, getConnectionCount, isFactGraphLoaded } from '../lib/issues-loader';
   import Header from './Header.svelte';
   import DesktopCard from './DesktopCard.svelte';
   import DesktopFeed from './DesktopFeed.svelte';
@@ -41,9 +41,20 @@
 
   interface Props {
     initialIssueId?: string;
+    /**
+     * Full issue for a deep link (/issue/[id]). When present, the reader is
+     * the very first thing App renders: no empty-feed homepage state, no
+     * network round-trip before the article appears. With it set, App renders
+     * nothing until onMount (server and hydration markup are empty), so the
+     * first real render can already pick the right shell for the viewport.
+     */
+    initialIssue?: Issue;
     feedData?: FeedIssue[];
   }
-  let { initialIssueId, feedData = [] }: Props = $props();
+  let { initialIssueId, initialIssue, feedData = [] }: Props = $props();
+  if (initialIssue) primeFullIssue(initialIssue);
+  // See the {#if shellReady} gate at the top of the markup.
+  let shellReady = $state(!initialIssue);
 
   type SurfaceMode = 'today' | 'library';
   type LibraryMode = 'reading' | 'highlights' | 'archive';
@@ -101,7 +112,18 @@
     return 'See what deserves your full attention.';
   }
 
-  let viewMode = $state<'mobile' | 'tablet' | 'desktop'>('desktop');
+  function detectViewMode(w: number, h: number): 'mobile' | 'desktop' {
+    const compactLandscape = w < 960 && h < 640;
+    return w < 768 || compactLandscape ? 'mobile' : 'desktop';
+  }
+
+  // The homepage hydrates server markup rendered as 'desktop', so it must start
+  // there and switch in onMount. Deep links (initialIssue) render nothing until
+  // mounted, so they can start in the right shell and the first painted frame
+  // is already final.
+  let viewMode = $state<'mobile' | 'tablet' | 'desktop'>(
+    initialIssue && typeof window !== 'undefined' ? detectViewMode(window.innerWidth, window.innerHeight) : 'desktop'
+  );
   let viewportWidth = $state(typeof window !== 'undefined' ? window.innerWidth : 1440);
   let cinemaPeek = $state(false);
   // Cinema Mode dismissal persists for the entire tab session via sessionStorage:
@@ -127,8 +149,18 @@
   // Feed data comes from Astro props (SSR-available) or from async fetch
   let issues = $state<FeedIssue[]>(feedData);
 
+  // Feed summaries arrive later on deep links (fetched in onMount). Until then
+  // the Today surface renders nothing instead of its empty "Coming soon" state.
+  let feedLoaded = $state(feedData.length > 0);
+
   // Full issue for the reader (has card text)
-  let activeFullIssue = $state<Issue | null>(null);
+  let activeFullIssue = $state<Issue | null>(initialIssue ?? null);
+  // A deep-linked reader is the landing page itself, so it appears in place
+  // with no entrance animation. Any reader opened later animates as usual.
+  let readerIsLanding = $state(!!initialIssue);
+  $effect(() => {
+    if (!activeFullIssue) readerIsLanding = false;
+  });
   let issueLoadError = $state(false);
   let issueLoading = $state(false);
   let isOffline = $state(typeof navigator !== 'undefined' ? !navigator.onLine : false);
@@ -163,12 +195,17 @@
 
   // Restore position: initialIssueId (from URL) takes priority, then saved position
   let restoredPosition = getSavedPosition();
-  let restoredCardIndex = $state(restoredPosition?.cardIndex ?? 0);
+  // A saved position only applies to a deep link when it is for that same issue.
+  let restoredCardIndex = $state(
+    initialIssue && restoredPosition?.feedIssueId !== initialIssue.id ? 0 : (restoredPosition?.cardIndex ?? 0)
+  );
   let showContextWhisper = $state(!!restoredPosition && restoredPosition.cardIndex > 0);
 
   // Active issue in feed context (summary)
   let activeIssue: FeedIssue | null = $state(
-    initialIssueId
+    initialIssue
+      ? initialIssue
+      : initialIssueId
       ? issues.find(i => i.id === initialIssueId) ?? null
       : restoredPosition
         ? issues.find(i => i.id === restoredPosition!.feedIssueId) ?? null
@@ -404,6 +441,7 @@
     installIsIOS = isIOSCheck();
     document.body.dataset.buildId = BUILD_ID;
     checkViewport();
+    shellReady = true;
     const currentState = locationAppState();
     surfaceMode = currentState.surfaceMode;
     libraryMode = currentState.libraryMode;
@@ -426,11 +464,24 @@
     const tier = getAnimationTier();
     document.documentElement.classList.add('anim-tier-' + tier);
 
+    // Deep link with the full issue already in hand: the reader rendered on the
+    // first frame. Record the reader entry in history; nothing to fetch.
+    if (initialIssue) {
+      history.replaceState(
+        { reader: true, issueId: initialIssue.id, surface: surfaceMode, libraryMode },
+        '',
+        window.location.pathname + window.location.search + window.location.hash,
+      );
+      readerHistoryPushed = true;
+    }
+
     // If feedData was not passed as SSR prop (issue pages), fetch lazily
     if (issues.length === 0) {
       loadFeedIssues().then(data => {
         issues = data;
-        // Deep link: find issue in feed and open reader immediately
+        feedLoaded = true;
+        if (initialIssue) return;
+        // Deep link without the issue payload: find it in the feed and open it
         if (initialIssueId) {
           const found = data.find(i => i.id === initialIssueId);
           if (found) {
@@ -438,14 +489,14 @@
             loadAndOpenIssue(found.id, 'replace');
           }
         }
-      });
+      }).catch(() => { feedLoaded = true; });
     }
 
     // Load fact graph lazily (non-blocking, low priority)
     loadFactGraph().then(() => { graphLoaded = true; });
 
     // If feedData was SSR-provided (homepage), deep link is already resolved
-    if (initialIssueId && activeIssue) {
+    if (initialIssueId && activeIssue && !initialIssue) {
       loadAndOpenIssue(activeIssue.id, 'replace');
     }
 
@@ -864,6 +915,14 @@
   });
 </script>
 
+<!--
+  Deep links render nothing on the server and while hydrating (shellReady is
+  false until onMount), so the static article is the only thing on screen
+  until the reader can replace it in a single frame. Keeping the island
+  server-rendered (rather than client:only) keeps its CSS in the chunk the
+  homepage already uses.
+-->
+{#if shellReady}
 {#if isOffline}
   <div role="status" aria-live="polite" style="background:var(--score-warning);color:#fff;text-align:center;padding:6px;font-family:var(--font-body);font-size: var(--text-sm);font-weight:600;position:sticky;top:0;left:0;right:0;z-index:9999;flex-shrink:0;">You're offline — reading cached content</div>
 {/if}
@@ -913,7 +972,7 @@
         aria-labelledby={`mobile-today-sort-${feedSort}`}
         tabindex="0"
       >
-        <TodayView issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} allowPullRefresh={allowBrowserPullRefresh} onPullRefresh={refreshApp} />
+        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} allowPullRefresh={allowBrowserPullRefresh} onPullRefresh={refreshApp} />
       </div>
     {:else if !isSearching && surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0}
       <div
@@ -958,7 +1017,7 @@
   </div>
 
   {#if activeFullIssue}
-    <InsightReader issue={activeFullIssue} onClose={closeReader} onReturnHome={goToday} onNext={isLastIssue ? undefined : openNextIssue} onNavigateToIssue={navigateToIssue} initialCardIndex={restoredCardIndex} originRect={readerOriginRect ?? undefined} connections={resolvedConnections} nextIssueHeadline={nextHeadline} />
+    <InsightReader issue={activeFullIssue} onClose={closeReader} onReturnHome={goToday} onNext={isLastIssue ? undefined : openNextIssue} onNavigateToIssue={navigateToIssue} initialCardIndex={restoredCardIndex} originRect={readerOriginRect ?? undefined} connections={resolvedConnections} nextIssueHeadline={nextHeadline} animateEntry={!readerIsLanding} />
   {/if}
 
 {:else if viewMode === 'tablet'}
@@ -1011,7 +1070,7 @@
       {/if}
       {#if surfaceMode === 'today' && !isSearching}
         <div id="tablet-today-panel" role="tabpanel" aria-labelledby={`tablet-today-sort-${feedSort}`} tabindex="0">
-          <TodayView issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} allowPullRefresh={allowBrowserPullRefresh} onPullRefresh={refreshApp} />
+          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} allowPullRefresh={allowBrowserPullRefresh} onPullRefresh={refreshApp} />
         </div>
       {:else if !isSearching && surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0}
         <div id="tablet-library-panel" role="tabpanel" aria-labelledby="tablet-library-highlights" tabindex="0">
@@ -1079,7 +1138,7 @@
   </div>
 
   {#if activeFullIssue}
-    <InsightReader issue={activeFullIssue} onClose={closeReader} onReturnHome={goToday} onNext={isLastIssue ? undefined : openNextIssue} onNavigateToIssue={navigateToIssue} initialCardIndex={restoredCardIndex} originRect={readerOriginRect ?? undefined} connections={resolvedConnections} nextIssueHeadline={nextHeadline} />
+    <InsightReader issue={activeFullIssue} onClose={closeReader} onReturnHome={goToday} onNext={isLastIssue ? undefined : openNextIssue} onNavigateToIssue={navigateToIssue} initialCardIndex={restoredCardIndex} originRect={readerOriginRect ?? undefined} connections={resolvedConnections} nextIssueHeadline={nextHeadline} animateEntry={!readerIsLanding} />
   {/if}
 
 {:else}
@@ -1113,6 +1172,48 @@
       class="app-main app-main--desktop"
       onmouseleave={() => { if (cinemaActive) cinemaPeek = false; }}
     >
+      <!-- Sidebar first in the DOM: it is on the left, so keyboard and
+           screen-reader order now match what is on screen. -->
+      <aside style="display:flex;flex-direction:column;flex-shrink:0;" aria-label="Sidebar">
+      <DesktopFeed
+        issues={sortedIssues}
+        sections={feedSections}
+        loading={!feedLoaded}
+        activeId={activeIssue?.id ?? null}
+        {readMap}
+        {surfaceMode}
+        {libraryMode}
+        {readingCount}
+        {highlightCount}
+        archiveCount={issues.length}
+        {libraryCount}
+        onGoToday={goToday}
+        onOpenLibrary={() => openLibrary()}
+        onOpenReading={() => openLibrary('reading', 'replace')}
+        onOpenHighlights={openHighlightsLibrary}
+        onOpenArchive={() => openLibrary('archive', 'replace')}
+        onSelectIssue={(issue) => {
+          if (surfaceMode === 'library' && libraryMode === 'highlights') {
+            openIssueAtCard(issue, appReactionMap[issue.id]?.[0] ?? 0);
+            return;
+          }
+          openIssue(issue);
+        }}
+        {searchQuery}
+        onSearchInput={(q) => { searchQuery = q; }}
+        {onSearchFocus}
+        {onSearchClear}
+        {issueHasConnections}
+        sortMode={feedSort}
+        onSortChange={(mode) => { feedSort = mode; }}
+        {archiveFilter}
+        onArchiveFilter={(kind) => { archiveFilter = kind; }}
+        {showSyncBanner}
+        onSyncBannerTap={() => { angleCodeOpen = true; }}
+        onSyncBannerDismiss={dismissSyncBanner}
+      />
+      </aside>
+
       <main class="desktop-main-panel">
         {#if issueLoadError}
           <!-- I1: Error state with offline differentiation -->
@@ -1215,48 +1316,9 @@
             <p style="font-size: var(--text-body);color:var(--text-muted);">No issues match "{searchQuery.trim()}"</p>
           </div>
         {:else}
-          <TodayView issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
+          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
         {/if}
       </main>
-
-      <aside style="display:flex;flex-direction:column;flex-shrink:0;" aria-label="Sidebar">
-      <DesktopFeed
-        issues={sortedIssues}
-        sections={feedSections}
-        activeId={activeIssue?.id ?? null}
-        {readMap}
-        {surfaceMode}
-        {libraryMode}
-        {readingCount}
-        {highlightCount}
-        archiveCount={issues.length}
-        {libraryCount}
-        onGoToday={goToday}
-        onOpenLibrary={() => openLibrary()}
-        onOpenReading={() => openLibrary('reading', 'replace')}
-        onOpenHighlights={openHighlightsLibrary}
-        onOpenArchive={() => openLibrary('archive', 'replace')}
-        onSelectIssue={(issue) => {
-          if (surfaceMode === 'library' && libraryMode === 'highlights') {
-            openIssueAtCard(issue, appReactionMap[issue.id]?.[0] ?? 0);
-            return;
-          }
-          openIssue(issue);
-        }}
-        {searchQuery}
-        onSearchInput={(q) => { searchQuery = q; }}
-        {onSearchFocus}
-        {onSearchClear}
-        {issueHasConnections}
-        sortMode={feedSort}
-        onSortChange={(mode) => { feedSort = mode; }}
-        {archiveFilter}
-        onArchiveFilter={(kind) => { archiveFilter = kind; }}
-        {showSyncBanner}
-        onSyncBannerTap={() => { angleCodeOpen = true; }}
-        onSyncBannerDismiss={dismissSyncBanner}
-      />
-      </aside>
     </div>
   </div>
 {/if}
@@ -1275,6 +1337,7 @@
       <AngleCode onClose={() => { angleCodeOpen = false; }} />
     </div>
   </div>
+{/if}
 {/if}
 
 <style>
@@ -1497,16 +1560,11 @@
   }
 
   .desktop-main-panel {
-    order: 2;
     flex: 1;
     min-width: 0;
     min-height: 0;
     display: flex;
     flex-direction: column;
-  }
-
-  .app-main--desktop :global(aside[aria-label]) {
-    order: 1;
   }
 
   .app-shell--tablet {

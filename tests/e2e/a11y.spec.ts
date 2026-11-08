@@ -13,6 +13,34 @@ import AxeBuilder from '@axe-core/playwright';
  * baseline documented in docs/cross-browser-parity/55-at-matrix.md stands
  * in for this until parity/phase-9-hydration-tests lands.
  */
+/**
+ * Targeted guards for the WCAG fixes in the colour tokens and control labels:
+ * 1.4.3 contrast (light and dark) and 2.5.3 label-in-name, on the home page,
+ * an issue page and About. Service workers are blocked: sw.js answering the
+ * App's APP_VISIBLE message crashes chrome-headless-shell (the cause of the
+ * "hydration hang" noted below), and a cold visit has no worker anyway.
+ */
+test.describe('Contrast and label-in-name', () => {
+  test.use({ serviceWorkers: 'block' });
+
+  for (const colorScheme of ['light', 'dark'] as const) {
+    for (const path of ['/', '/issue/0146', '/about']) {
+      test(`${path} (${colorScheme}) has no contrast or label-in-name violations`, async ({ page }) => {
+        await page.emulateMedia({ colorScheme });
+        await page.goto(path);
+        if (path !== '/about') {
+          await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+        }
+        const results = await new AxeBuilder({ page })
+          .withRules(['color-contrast', 'label-content-name-mismatch'])
+          .analyze();
+        const summary = results.violations.flatMap((v) => v.nodes.map((n) => `${v.id}: ${n.target.join(' ')}`));
+        expect(summary).toEqual([]);
+      });
+    }
+  }
+});
+
 test.describe('Automated accessibility', () => {
   test.skip('home page has no serious or critical axe violations', async ({ page }) => {
     await page.goto('/');
