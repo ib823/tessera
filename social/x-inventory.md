@@ -1,10 +1,44 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-07T22:09:45.394Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-08T00:27:18.165Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (87)
+## ⏳ TO POST (88)
+
+### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
+
+> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2016-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2016`
+
+**1/6** _(hook — attach image, NO link)_ · 163 chars
+```
+Google pledged US$15b on 4 Nov and to pay 100% of its campuses' power. Who pays is now written into data-centre rules. Who gets heard rests on older, general ones.
+```
+**2/6** _(fact)_ · 150 chars
+```
+RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul to list data centres for a public-display EIA. The 2015 Order has none.
+```
+**3/6** _(fact)_ · 268 chars
+```
+By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found. On 28 Oct, Johari told Parliament 117 data centres are approved, needing 23,000-23,500MW if all are built. In August they drew about 1,374MW.
+```
+**4/6** _(fact)_ · 146 chars
+```
+In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists.
+```
+**5/6** _(reframe)_ · 156 chars
+```
+In the Peninsula, a data centre now has its own water-tariff category. It still has no category in the EIA Order, which decides what goes on public display.
+```
+**6/6** _(view — ONLY post with the link)_ · 160 chars
+```
+The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
+
+https://thefourthangle.pages.dev/issue/2016
+```
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
