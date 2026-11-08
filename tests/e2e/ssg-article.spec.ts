@@ -27,17 +27,12 @@ test.describe('SSG article raw-HTML content', () => {
     expect(html).toMatch(/<time datetime="\d{4}-\d{2}-\d{2}"/);
   });
 
-  test.skip('/issue/0146 contains the static article element after navigation', async ({ page }) => {
-    // SKIPPED per decision recorded in follow-up PR — headless chromium
-    // on GH Actions doesn't reliably parse /issue/0146 to the point where
-    // toBeAttached sees the static <article> in the DOM. Even with
-    // waitUntil: 'domcontentloaded' and --disable-dev-shm-usage the test
-    // times out. The companion request-based test above already proves
-    // the static HTML IS correct — this test duplicates that coverage
-    // via a browser render that the CI runner can't handle for the
-    // image-heavy /issue/0146 page. Re-enable once the smoke runner
-    // migrates to full Chrome or Firefox (tracked as parity/phase-9-
-    // browser-render-tests).
+  test('/issue/0146 contains the static article element after navigation', async ({ page }) => {
+    // Once skipped as "headless Chromium can't parse this page". The page was
+    // fine: sw.js called navigator.clearAppBadge() on the App's APP_VISIBLE
+    // message, which makes chrome-headless-shell kill the renderer. The test
+    // passed or timed out depending on whether it asserted before the worker
+    // registered. sw.js now skips that call without notification permission.
     await page.goto('/issue/0146', { waitUntil: 'domcontentloaded' });
     await expect(page.locator('article.ssg-article')).toBeAttached();
     await expect(page.locator('#ssg-headline')).toBeAttached();

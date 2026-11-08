@@ -88,13 +88,8 @@ async function coldLoad(page: Page, id: string) {
 }
 
 // Each test gets a fresh browser context, so every load is cold: no cached
-// feed, no saved reading position. Service workers are blocked: a first visit
-// from a shared link is never controlled by one (sw.js registers after load),
-// and Playwright's default chrome-headless-shell crashes the page target when
-// sw.js answers the App's APP_VISIBLE message (notification/badge APIs the
-// shell lacks). That crash, not hydration, is what the skipped
-// hydration-dependent specs in this folder were hitting.
-test.use({ serviceWorkers: 'block' });
+// feed, no saved reading position, and no service worker until sw.js
+// registers after load, as on a real first visit.
 
 test.describe('Shared-link landing on /issue/[id]', () => {
   for (const which of LANDINGS) {

@@ -7,22 +7,18 @@ import AxeBuilder from '@axe-core/playwright';
  * baseline entries (if any) would live in a `baseline.json` file here with
  * an ADR entry explaining why; none are currently tolerated.
  *
- * SKIPPED in CI baseline run — axe scan on a hydrating page occasionally
- * times out on headless chromium (same hydration flakiness that blocks
- * sidebar-invariant + user-preferences reduced-motion). The ARIA audit
- * baseline documented in docs/cross-browser-parity/55-at-matrix.md stands
- * in for this until parity/phase-9-hydration-tests lands.
+ * The full scans below were skipped as a "hydration timeout". The page was
+ * crashing: sw.js called navigator.clearAppBadge() on the App's APP_VISIBLE
+ * message, and chrome-headless-shell kills the renderer when a service worker
+ * uses the Badging API. sw.js now skips that call without notification
+ * permission.
  */
 /**
  * Targeted guards for the WCAG fixes in the colour tokens and control labels:
  * 1.4.3 contrast (light and dark) and 2.5.3 label-in-name, on the home page,
- * an issue page and About. Service workers are blocked: sw.js answering the
- * App's APP_VISIBLE message crashes chrome-headless-shell (the cause of the
- * "hydration hang" noted below), and a cold visit has no worker anyway.
+ * an issue page and About.
  */
 test.describe('Contrast and label-in-name', () => {
-  test.use({ serviceWorkers: 'block' });
-
   for (const colorScheme of ['light', 'dark'] as const) {
     for (const path of ['/', '/issue/0146', '/about']) {
       test(`${path} (${colorScheme}) has no contrast or label-in-name violations`, async ({ page }) => {
@@ -42,7 +38,7 @@ test.describe('Contrast and label-in-name', () => {
 });
 
 test.describe('Automated accessibility', () => {
-  test.skip('home page has no serious or critical axe violations', async ({ page }) => {
+  test('home page has no serious or critical axe violations', async ({ page }) => {
     await page.goto('/');
     await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
 
@@ -57,7 +53,7 @@ test.describe('Automated accessibility', () => {
     expect(blocking).toEqual([]);
   });
 
-  test.skip('/issue/0146 has no serious or critical axe violations', async ({ page }) => {
+  test('/issue/0146 has no serious or critical axe violations', async ({ page }) => {
     await page.goto('/issue/0146');
 
     const results = await new AxeBuilder({ page })

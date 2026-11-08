@@ -5,15 +5,15 @@ import { test, expect } from '@playwright/test';
  * storage-blocked behavior. These emulate OS-level user preferences via
  * Playwright's page.emulateMedia() and a storage-override init script.
  *
- * Some tests below are currently .skip()-ed: they rely on the App island
- * fully hydrating (so `html.js-reader-mounted` applies), but headless
- * chromium on GH Actions occasionally hangs during Svelte hydration. The
- * forced-colors test passes because it only asserts on a static SSG element.
- * Re-enable the skipped tests after parity/phase-9-hydration-tests lands.
+ * These were skipped as a "hydration hang". Hydration was fine: sw.js called
+ * navigator.clearAppBadge() on the App's APP_VISIBLE message, and
+ * chrome-headless-shell kills the renderer when a service worker uses the
+ * Badging API. sw.js now skips that call without notification permission, so
+ * these run with the real service worker.
  */
 
 test.describe('prefers-reduced-motion', () => {
-  test.skip('reduced-motion emulation kills transitions', async ({ page }) => {
+  test('reduced-motion emulation kills transitions', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto('/');
     await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
@@ -31,13 +31,7 @@ test.describe('prefers-reduced-motion', () => {
 });
 
 test.describe('forced-colors', () => {
-  test.skip('forced-colors: active applies the forced-colors block', async ({ page }) => {
-    // SKIPPED — same root cause as ssg-article.spec.ts's browser-render
-    // test. /issue/0146 doesn't parse to a queryable DOM in the CI's
-    // headless chromium runner. The forced-colors CSS block itself is
-    // in global.css and is statically verifiable; re-enable this test
-    // when the smoke runner stabilises (parity/phase-9-browser-render-
-    // tests).
+  test('forced-colors: active applies the forced-colors block', async ({ page }) => {
     await page.emulateMedia({ forcedColors: 'active' });
     // domcontentloaded — same reasoning as ssg-article.spec.ts: we need
     // the static HTML parsed, not every resource loaded.
@@ -52,7 +46,7 @@ test.describe('forced-colors', () => {
 });
 
 test.describe('storage-blocked path', () => {
-  test.skip('localStorage.setItem throwing shows the banner without breaking navigation', async ({ page }) => {
+  test('localStorage.setItem throwing shows the banner without breaking navigation', async ({ page }) => {
     await page.addInitScript(() => {
       const origSet = Storage.prototype.setItem;
       Storage.prototype.setItem = function () {
