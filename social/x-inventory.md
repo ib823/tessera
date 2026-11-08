@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-08T12:14:15.532Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-08T14:10:48.836Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -410,7 +410,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -1192,7 +1192,7 @@ https://thefourthangle.pages.dev/issue/1975
 
 ### Issue 1974 — DOE chief charged with taking RM100K to bypass an EIA, on a road that killed nine
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1974-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1974`
@@ -1264,7 +1264,7 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
@@ -1298,7 +1298,7 @@ https://thefourthangle.pages.dev/issue/1970
 
 ### Issue 1966 — Refugee registration system launched but work permits remain unissued
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
@@ -1332,7 +1332,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1400,7 +1400,7 @@ https://thefourthangle.pages.dev/issue/1964
 
 ### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
@@ -1612,7 +1612,7 @@ https://thefourthangle.pages.dev/issue/1955
 
 ### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
@@ -1680,7 +1680,7 @@ https://thefourthangle.pages.dev/issue/1952
 
 ### Issue 1951 — Seven Tankers, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1951-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1951`
@@ -1850,7 +1850,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
