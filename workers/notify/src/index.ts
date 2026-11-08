@@ -20,6 +20,12 @@ interface Subscription {
   platform: 'chrome' | 'firefox' | 'safari' | 'unknown';
 }
 
+// A subscription is kept for 90 days after the reader last opened the site
+// (the same window as Angle Code sync). Every heartbeat refreshes the KV TTL;
+// the daily prune catches records written before the TTL existed.
+const SUB_TTL_SECONDS = 90 * 24 * 60 * 60;
+const SUB_TTL_MS = SUB_TTL_SECONDS * 1000;
+
 function detectPlatform(endpoint: string): Subscription['platform'] {
   if (endpoint.includes('fcm.googleapis.com')) return 'chrome';
   if (endpoint.includes('push.services.mozilla.com')) return 'firefox';
@@ -403,7 +409,7 @@ async function handleSubscribe(request: Request, env: Env): Promise<Response> {
     };
 
     const key = `sub:${Date.now()}_${body.endpoint.slice(-20).replace(/[^a-zA-Z0-9]/g, '')}`;
-    await env.SUBS.put(key, JSON.stringify(sub));
+    await env.SUBS.put(key, JSON.stringify(sub), { expirationTtl: SUB_TTL_SECONDS });
 
     return json({ success: true }, 200, request);
   } catch {
@@ -444,14 +450,18 @@ async function handleHeartbeat(request: Request, env: Env): Promise<Response> {
     if (!body.endpoint) return json({ error: 'Missing endpoint' }, 400, request);
 
     const subs = await getAllSubscriptions(env);
+    let found = false;
     for (const { key, sub } of subs) {
       if (sub.endpoint === body.endpoint) {
         sub.lastSeen = Date.now();
-        await env.SUBS.put(key, JSON.stringify(sub));
+        await env.SUBS.put(key, JSON.stringify(sub), { expirationTtl: SUB_TTL_SECONDS });
+        found = true;
         break;
       }
     }
-    return json({ success: true }, 200, request);
+    // found:false tells the service worker the record has expired, so a reader who
+    // still has notifications switched on can be re-registered.
+    return json({ success: true, found }, 200, request);
   } catch {
     return json({ error: 'Heartbeat failed' }, 500, request);
   }
@@ -501,6 +511,18 @@ async function deleteSubscription(env: Env, key: string): Promise<void> {
 }
 
 // ── CRON Handlers ──
+
+/** Deletes subscriptions not seen for SUB_TTL_MS (records written before the KV TTL existed). */
+async function pruneStaleSubscriptions(env: Env): Promise<void> {
+  const now = Date.now();
+  const subs = await getAllSubscriptions(env);
+  for (const { key, sub } of subs) {
+    const lastActive = Math.max(sub.lastSeen || 0, sub.subscribedAt || 0);
+    if (now - lastActive > SUB_TTL_MS) {
+      await deleteSubscription(env, key);
+    }
+  }
+}
 
 async function getAllSubscriptions(env: Env): Promise<Array<{ key: string; sub: Subscription }>> {
   const subs: Array<{ key: string; sub: Subscription }> = [];
@@ -618,7 +640,8 @@ async function checkReEngagement(env: Env): Promise<void> {
         await deleteSubscription(env, key);
         continue;
       }
-      if (result === 'sent') await env.SUBS.put(`reengaged:${key}`, String(now));
+      // The marker only enforces the 30-day gap, so it expires shortly after.
+      if (result === 'sent') await env.SUBS.put(`reengaged:${key}`, String(now), { expirationTtl: 31 * 24 * 60 * 60 });
     }
   }
 }
@@ -705,10 +728,14 @@ export default {
         return;
       }
 
-      // Daily 1am UTC = 9am MYT → re-engagement check (max once per 30 days per user).
-      // Skipped on Saturday, when the digest goes out from the other 1am trigger.
-      if (hour === 1 && day !== 6) {
-        ctx.waitUntil(checkReEngagement(env));
+      // Daily 1am UTC = 9am MYT → prune stale subscriptions, then the re-engagement
+      // check (max once per 30 days per user). Re-engagement is skipped on Saturday,
+      // when the digest goes out from the other 1am trigger.
+      if (hour === 1) {
+        ctx.waitUntil((async () => {
+          await pruneStaleSubscriptions(env);
+          if (day !== 6) await checkReEngagement(env);
+        })());
         return;
       }
     } catch (e: any) {

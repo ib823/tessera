@@ -15,7 +15,9 @@
   - The Saturday digest is dispatched only by its own trigger and is guarded against running twice in one day.
   - Re-engagement pushes go only to subscribers with no push in the past week, and never on Saturday.
   - Unsubscribing, or a push service reporting the address gone, now deletes the subscription's `sent:` and `reengaged:` records as well.
-  - This change takes effect only once the notify worker is redeployed with `wrangler deploy`, because CI deploys the website, not this worker.
+  - Subscriptions now expire 90 days after the reader last opened the site. Each heartbeat refreshes the KV TTL, and a daily prune removes older records written before the TTL existed. The `reengaged:` marker expires after 31 days.
+  - If a returning reader's subscription has expired, the heartbeat reports `found: false` and the service worker re-registers the browser's existing push subscription.
+  - These changes take effect only once the notify worker is redeployed with `wrangler deploy`, because CI deploys the website, not this worker.
 
 ---
 
