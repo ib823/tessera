@@ -27,11 +27,14 @@
   }
 </script>
 
+<!-- data-section / data-section-count: repo-owned hooks for the four-section
+     invariant (tests/e2e/sidebar-invariant.spec.ts), as on MobileSectionDivider. -->
 <div
   {id}
   class="section-header"
   role="heading"
   aria-level={2}
+  data-section={kind}
 >
   <button
     class="section-toggle"
@@ -52,7 +55,7 @@
       <polyline points="6 9 12 15 18 9"/>
     </svg>
     <span class="section-label" style="color:{kindColor};">{label}</span>
-    <span class="section-count">{count}</span>
+    <span class="section-count" data-section-count>{count}</span>
   </button>
 </div>
 

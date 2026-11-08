@@ -133,6 +133,16 @@
   let flatIssues = $derived(displayIssues);
   let issueIndexMap = $derived.by(() => new Map(flatIssues.map((issue, index) => [issue.id, index])));
 
+  // What the list area holds. A listbox may contain only options, so the
+  // section feed, whose collapse toggles are buttons, gets one listbox per
+  // section panel instead of one around everything.
+  let listBody = $derived<'loading' | 'sections' | 'empty' | 'flat'>(
+    loading && !isSearching ? 'loading'
+      : sections.length > 0 && !isSearching ? 'sections'
+      : flatIssues.length === 0 && (isSearching || filterMode !== 'all') ? 'empty'
+      : 'flat',
+  );
+
   // Roving tabindex
   let focusedIndex = $state(-1);
 
@@ -342,20 +352,21 @@
     id="desktop-feed-list"
     bind:this={scrollContainerEl}
     onkeydown={onFeedKeyDown}
-    role="listbox"
-    aria-label="Issues"
+    role={listBody === 'flat' ? 'listbox' : undefined}
+    aria-label={listBody === 'flat' ? 'Issues' : undefined}
     aria-live="polite"
     aria-atomic="false"
     style="flex:1;overflow-y:auto;"
   >
-    {#if loading && !isSearching}
+    {#if listBody === 'loading'}
       <!-- Rows arrive with the feed fetch; render them in one pass so nothing below them moves. -->
-    {:else if sections.length > 0 && !isSearching}
-      <!-- Section-based feed -->
+    {:else if listBody === 'sections'}
+      <!-- Section-based feed: each panel is a listbox labelled by its section heading. -->
       {#each sections as section, sectionIdx}
         {@const sectionHeadingId = `desktop-feed-section-${section.kind}-heading`}
         {@const sectionPanelId = `desktop-feed-section-${section.kind}-panel`}
         {@const sectionCollapsed = collapsedSections[section.kind] ?? defaultCollapsed(section.kind)}
+        {@const sectionListbox = !sectionCollapsed && section.issues.length > 0}
         {@const isActiveArchiveFilter = surfaceMode === 'library' && libraryMode === 'archive' && archiveFilter === section.kind}
         <div role="group" aria-labelledby={sectionHeadingId} style={isActiveArchiveFilter ? 'background:var(--bg-sunken);' : ''}>
           <SectionHeader
@@ -375,7 +386,12 @@
               }
             }}
           />
-          <div id={sectionPanelId} hidden={sectionCollapsed}>
+          <div
+            id={sectionPanelId}
+            hidden={sectionCollapsed}
+            role={sectionListbox ? 'listbox' : undefined}
+            aria-labelledby={sectionListbox ? sectionHeadingId : undefined}
+          >
             {#if !sectionCollapsed}
               {#each section.issues as issue}
                 {@const idx = issueIndexMap.get(issue.id) ?? 0}
@@ -385,7 +401,7 @@
           </div>
         </div>
       {/each}
-    {:else if flatIssues.length === 0 && (isSearching || filterMode !== 'all')}
+    {:else if listBody === 'empty'}
       <div style="padding:40px 20px;text-align:center;">
         <p style="font-size: var(--text-ui);color:var(--text-muted);">
           {#if isSearching}
