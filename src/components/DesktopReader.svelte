@@ -9,6 +9,7 @@
   import ShareModal from './ShareModal.svelte';
   import PushPrompt from './PushPrompt.svelte';
   import IssueImage from './IssueImage.svelte';
+  import IssueSources from './IssueSources.svelte';
   import { withBuildId } from '../lib/build';
 
   import type { Issue } from '../data/issue-types';
@@ -498,6 +499,8 @@
         </div>
       </div>
     </div>
+
+    <IssueSources {issue} open variant="desktop" />
 
     <PushPrompt />
 
