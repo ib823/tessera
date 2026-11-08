@@ -10,40 +10,46 @@
   Cross-Origin-Resource-Policy: cross-origin
   Cross-Origin-Embedder-Policy: credentialless
 
+# Cache policy. HTML documents (and dossier images) use no-cache: browsers
+# may keep a copy but must revalidate with the origin before every use, so a
+# new deploy is visible on the next load (the freshness guarantee no-store was
+# added for in 559db716 / ea70b69a). Unlike no-store, no-cache on a document
+# keeps the page eligible for the back/forward cache. The app and sw.js also
+# fetch data and navigations with cache: 'no-store', independent of these.
 /*.html
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /issue/*
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /dossier/*
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /dossiers/*
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
   Cross-Origin-Resource-Policy: cross-origin
   Access-Control-Allow-Origin: *
 
 /about
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /disclaimer
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /verify
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /verify.html
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /sw.js
   Cache-Control: no-store, max-age=0, must-revalidate
 
 /offline.html
-  Cache-Control: no-store, max-age=0, must-revalidate
+  Cache-Control: no-cache, max-age=0, must-revalidate
 
 /manifest.json
   Cache-Control: no-store, max-age=0, must-revalidate
