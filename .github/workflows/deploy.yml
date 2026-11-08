@@ -112,6 +112,22 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=thefourthangle --branch=main --commit-message="${{ steps.msg.outputs.subject }}"
 
+      # ── Push-notification Worker (workers/notify/) ──
+      # Deployed from the repo on every push to main so the live Worker never
+      # drifts from the code the Disclaimer describes (weekly cap, 90-day
+      # retention). Its secrets (VAPID keys) are stored in Cloudflare and are
+      # kept by `wrangler deploy`. Runs after the Pages deploy and does not
+      # block it: a failure here shows as a warning annotation on the run.
+      - name: Deploy notify Worker
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: workers/notify
+          command: deploy
+
       # ── Social bot Worker (workers/social/) ──
       # Skips cleanly until the operator runs the one-time setup:
       #   1. cd workers/social && npx wrangler kv namespace create T4A_SOCIAL_KV
