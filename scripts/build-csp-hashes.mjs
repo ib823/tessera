@@ -23,11 +23,29 @@ function findHtmlFiles(dir) {
   return results;
 }
 
+// Only executable scripts need a script-src hash. Data blocks such as
+// <script type="application/ld+json"> are never run, so CSP does not apply
+// to them; hashing them anyway would add one hash per issue page and push
+// the CSP header past Cloudflare Pages' 2,000-character header limit.
+const EXECUTABLE_TYPES = new Set(['', 'module', 'text/javascript', 'application/javascript', 'text/ecmascript', 'application/ecmascript']);
+
+function isExecutable(attrs) {
+  const m = /\btype\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i.exec(attrs || '');
+  if (!m) return true;
+  const type = (m[1] ?? m[2] ?? m[3] ?? '').trim().toLowerCase();
+  return EXECUTABLE_TYPES.has(type);
+}
+
 const hashes = new Set();
+let dataBlocks = 0;
 for (const file of findHtmlFiles(distDir)) {
   const html = readFileSync(file, 'utf8');
-  for (const m of html.matchAll(/<script(?:\s[^>]*)?>(.+?)<\/script>/gs)) {
-    hashes.add(`'sha256-${createHash('sha256').update(m[1]).digest('base64')}'`);
+  for (const m of html.matchAll(/<script(\s[^>]*)?>(.+?)<\/script>/gs)) {
+    if (!isExecutable(m[1])) {
+      dataBlocks++;
+      continue;
+    }
+    hashes.add(`'sha256-${createHash('sha256').update(m[2]).digest('base64')}'`);
   }
 }
 
@@ -35,7 +53,7 @@ const hashDirective = hashes.size > 0
   ? [...hashes].join(' ')
   : "'unsafe-inline'";
 
-console.log(`  ✓ ${hashes.size} inline script hash(es)`);
+console.log(`  ✓ ${hashes.size} inline script hash(es) (${dataBlocks} non-executable data block(s) skipped)`);
 
 // Update dist/_headers — handles both placeholder and hardcoded hashes
 const distHeaders = join(distDir, '_headers');
@@ -65,3 +83,8 @@ if (content === original) {
 
 writeFileSync(distHeaders, content);
 console.log('  ✓ Updated dist/_headers');
+
+const cspValue = /Content-Security-Policy:\s*(.*)/.exec(content)?.[1] ?? '';
+if (cspValue.length > 2000) {
+  console.warn(`  ⚠ CSP header is ${cspValue.length} chars; Cloudflare Pages limits a _headers header to 2,000.`);
+}

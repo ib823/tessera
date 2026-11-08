@@ -31,6 +31,29 @@ if (ctxTrunc.length > maxCtx) {
 const description = ctxTrunc + suffix;
 const title = `${issue.headline} — The Fourth Angle`;
 const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}/100`;
+
+// JSON-LD article data for search engines. Issues carry one date, sourceDate
+// (same value as article:published_time below); there is no separate
+// modification date, so dateModified mirrors it.
+const publishedTime = issue.sourceDate ? `${issue.sourceDate}T08:00:00+08:00` : undefined;
+const organization = { '@type': 'Organization', name: 'The Fourth Angle', url: siteUrl };
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: issue.headline,
+  description: issue.context,
+  url: issueUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': issueUrl },
+  image: [{ '@type': 'ImageObject', url: ogImage, width: 1200, height: 630 }],
+  ...(publishedTime ? { datePublished: publishedTime, dateModified: publishedTime } : {}),
+  author: organization,
+  publisher: { ...organization, logo: { '@type': 'ImageObject', url: `${siteUrl}/logo.png`, width: 247, height: 98 } },
+  articleSection: 'Analysis',
+  inLanguage: 'en-MY',
+  isAccessibleForFree: true,
+};
+// Escape <, > and & so issue text can never close the <script> element early.
+const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, '0')}`);
 ---
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
@@ -70,6 +93,8 @@ const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}
   )}
   <meta property="article:section" content="Analysis" />
   <link rel="canonical" href={issueUrl} />
+  {/* Data block, not executed: build-csp-hashes.mjs skips it, so no CSP hash. */}
+  <script type="application/ld+json" is:inline set:html={articleJsonLdText}></script>
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
