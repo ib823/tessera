@@ -21,7 +21,7 @@ const dossierRoutes = readdirSync(dossierDir)
   .filter((name) => name.endsWith('.json'))
   .sort()
   .map((name) => JSON.parse(readFileSync(join(dossierDir, name), 'utf8')))
-  .filter((dossier) => dossier && dossier.id && dossier.format === 'dossier' && dossier.published)
+  .filter((dossier) => dossier?.id && dossier.format === 'dossier' && dossier.published)
   .map((dossier) => ({ loc: `/dossier/${dossier.id}`, priority: '0.8' }));
 
 const issueRoutes = issues.map((issue) => ({
