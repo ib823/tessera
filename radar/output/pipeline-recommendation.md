@@ -8,88 +8,90 @@ pipeline`. The radar does not write issues; this note recommends which
 curated candidates enter the 10-phase publish flow, in what order, and
 with what guardrails. Nothing here is published._
 
+## Editorial direction (set 2026-11-07)
+
+Lead with **global events that land on Malaysia in ways Malaysian
+coverage has not connected**, so T4A reads as the source that thinks
+furthest ahead. The test for every global pick: name the Malaysian
+mechanism (contract, trade flow, statute, tariff, port, court) and trace
+it to a primary source. A global story without a Malaysian mechanism is
+commentary and stays out. Domestic picks fill the slots the global slate
+cannot.
+
 ## Data-freshness
 
 - **Raw queue**, **state**, and **health** from the CI scan at
-  **2026-09-18 22:14 UTC** (run 1956; queue 1,214; 505 events; five
-  sources healthy; six streams ok). The scan has run every two hours
-  without a failed run in the last eight cycles today. No local rescan
-  this cycle: the container cannot build `lifelines` (same
-  `autograd-gamma` wheel failure noted on 4 Sep), and CI is the record.
+  **2026-11-07 20:10 UTC** (commit `640c86d`; 1,448 active issues; 493
+  events; five sources healthy; six streams ok). No local rescan: CI is
+  the record, and the container still cannot build `lifelines`.
+- **Foreign stream** (`foreign-events.json`, rolling 24h, 389 events)
+  from the same scan. First cycle it is used as a primary input.
 - **Silence-watch** as committed by CI from the same scan (25 accumulated,
   15 fresh picks).
-- **Curated develop list** refreshed 2026-09-18. The previous edition was
-  pinned to 2026-09-03.
-- **Latest published issue:** `2012` (sourceDate 2026-09-05). Next free
-  ID: `2013`. No brief is currently waiting on approval; all three
-  briefs from the 4 Sep edition shipped.
+- **Latest published issue:** `2014` (sourceDate 2026-09-19). Next free
+  ID: `2016`. `2015` is held by open draft PR #70 (southern Thailand
+  dialogue, awaiting Stages 2/3/5). Reserved this cycle: `2016` G1
+  (`data-centres-us-voted-out-malaysia-in`), `2017` G2
+  (`malaysian-crude-iran-blockade-gap`), `2018` G3
+  (`scam-proceeds-forfeited-abroad-malaysia`).
 
-## Status reconciliation (since the 4 Sep curation)
+## Status reconciliation (since the 18 Sep curation)
 
 | Prior pick | Topic | Now |
 |------------|-------|-----|
-| A1 | Sarawak haze / Transboundary Haze Act | **Published as 2011 (4 Sep).** Suhakam Clean Air Act call (17 Sep) and the westward haze are edition-2 material. |
-| A2 | Tabung Haji RCI restatement | **Published as 2010 (4 Sep).** Azeez Rahim charged 9 Sep; Jamil Khir claims trial 14 Sep. Period update only. |
-| A3 | Felda decade-late audit | **Published as 2012 (5 Sep).** Special-committee interim report due end-Sept. |
-| B1-B4 | Border system, factory fires, KWAN Bill, Melaka nominated reps | Still open. Melaka promoted to B3 (polls now in the queue). |
-| — | **AGC discontinues four Muhyiddin charges** | **New. Tier A1.** |
-| — | **Political financing gap, RM50m donation drive** | **New. Tier A2. Stage 5 triggered.** |
-| — | **800kWh electricity exemption** | **New. Tier A3.** |
-| — | **Negeri Sembilan proclamation** | **Update to 1976, Stage 5 required.** |
+| A2 | Political financing / RM50m donation drive | **Published as 2013 (19 Sep).** Payment completed 6 Nov: edition-2 update, Stage 5 required. |
+| A1 | AGC discontinues four Muhyiddin charges | Never briefed. Seven weeks old. Carry-over. |
+| A3 | 800kWh electricity exemption | Never briefed. Overtaken by Budget 2027 (tabled 9 Oct). Folded into B5. |
+| B3 | Melaka nominated assemblymen | Briefly A1 this cycle; **parked as D1** when the direction changed. Pipeline state removed; research notes kept for a post-election issue. |
+| — | 2014 southern Thailand | Published 19 Sep (not from the list). |
+| — | **Data centres: US voters say no, Malaysia says yes** | **New. G1. In pipeline as 2016.** |
+| — | **"Malaysian" crude and the Iran blockade** | **New. G2. In pipeline as 2017.** |
+| — | **Scam empires abroad vs Malaysia's 1%** | **New. G3. In pipeline as 2018** (absorbs the domestic scam pick). |
+| — | **No house-arrest law** | **New. Wildcard W1, editor's call.** |
 
 ## Recommended development order (next three publish slots)
 
-Notifications fire Tue/Thu 08:00 and Sat 09:00 MYT. The scan landed at
-06:14 MYT on Saturday 19 September; the 09:00 slot today cannot be met,
-so the slots are **Tue 22 Sep, Thu 24 Sep, Sat 26 Sep**. Two of the
-three picks are live prosecutions or live politics, so ordering is by
-half-life, not by how long each has waited.
+Notifications fire Tue/Thu 08:00 and Sat 09:00 MYT. This review lands
+early on Sunday 8 Nov MYT, so the slots are **Tue 10 Nov, Thu 12 Nov,
+Sat 14 Nov**.
 
-1. **A2 — no political-financing law, and a party crowdfunding a RM50m
-   fine.** Tuesday, while the pardon is still the national conversation
-   and before the Melaka campaign absorbs it. Governance / Legal /
-   Political. This is the one pick that fires the Stage 5 escalation
-   (Political CRITICAL with a sharp take); start the brief on Saturday so
-   the extra Grok round fits before Monday evening. Hard guardrails:
-   (a) no card evaluates the pardon or the Pardons Board; (b) the
-   critique is the absence of a statute, not the party or the donors;
-   (c) do not imply the drive is unlawful; (d) the 2018 pledge, the 2019
-   NCC and MACC's 8 Sep statement are the spine, all primary. Drafts
-   1307 and 1114 are superseded, not revived.
-2. **A1 — the AGC's unexplained discontinuance.** Thursday. Governance /
-   Legal / Political. Cleanest primary-source path of the three: the
-   AGC statement, the court order, the charge sheets, Article 145(3), and
-   T4A's own 1997 for the structural half. Three charges remain live:
-   count, quote, never characterise. Merge the 3 Aug carry-over (AG vs
-   Malaysian Bar on DNAA standing) into this brief as the second case
-   if the Federal Court date is known; otherwise leave it out.
-3. **A3 — the 800kWh exemption and its missing bill.** Saturday.
-   Economic / Governance / Environmental. Zero 3R load, and the only
-   Economic-lens pick since 2004. Fold accumulated S1 (diesel RM2.5b a
-   month) and S2 (RM50b fuel-subsidy bill) into the brief as the
-   denominator; do not publish either radar number without the MoF
-   source. This is also the natural opener for a pre-Budget run: Budget
-   session opens 5 Oct, Budget 2027 is tabled 23 Oct.
+1. **G1: data centres.** **Tuesday.** Economic / Environmental /
+   Governance. In the pipeline as **2016**; a research agent is
+   gathering the brief's sources now. One week after the 3 Nov midterms
+   and six days after Google's 4 Nov announcement, the contrast is fresh.
+   Guardrails: (a) the US ballots were 41 *local* measures in ten states
+   that "favoured limiting" development (Ballotpedia), many of them caps
+   or moratoriums and some advisory; never "America rejected data
+   centres"; the vote was 3 Nov, Google's announcement 4 Nov; (b) "AI bubble" is
+   attributed commentary, never a finding; (c) the issue is who decides
+   and who pays, not whether Google's projects are bad; (d) do not
+   repeat **1963**'s water findings; cite them and move on.
+2. **G2: "Malaysian" crude.** **Thursday.** Security / Economic / Legal.
+   Start the brief Sunday after G1's is approved. The spine is two
+   numbers from primary data (China's recorded imports from Malaysia;
+   Malaysia's production), then the blockade's effect on the first
+   number. Every "Iranian" attribution is an analyst estimate unless a
+   customs or sanctions document says otherwise. Iran International is a
+   partisan source; corroborate with tanker-tracking data reported by
+   Reuters or Bloomberg.
+3. **G3: scam proceeds.** **Saturday.** Legal / Economic / Regional.
+   Lowest 3R load of the three; the domestic figures are already in the
+   queue with parliamentary sources. Close the Cybercrimes Act
+   commencement question on the federal gazette before drafting.
 
-This gives Governance → Legal → Economic across the three slots. If A2
-slips on Stage 5 turnaround, swap A1 into Tuesday and A2 into Thursday;
-do not push A2 to Saturday, where a pardon story eight days old reads as
-commentary. If A3 slips on the tariff documents, promote **B4 (custody
-death appeal, accumulated S23)**: it is the silence-watch's oldest
-structurally-important item at 176 days and satisfies the
-one-accumulated-pick-per-cycle rule that A3 otherwise covers through
-S1/S2.
+This gives Economic → Security → Legal across the week, three global
+frames each with a Malaysian mechanism, and no 3R load in the lead slot.
 
-## October queue (first two slots after the budget session opens)
+**Fallbacks.** If G2's sourcing cannot clear Stage 3 by Wednesday,
+swap in the **2011 haze edition 2** (Singapore's haze-law changes vs
+Malaysia's dropped Act, plus the 2027 "Super El Nino" warning); note
+that an update may not fire the CRON's new-issue notification, so G3
+moves to Thursday. If any slot opens later, **D3** (pipeline loans) is
+ready.
 
-- **B1 — Sabah / Sarawak seats, Article 46 and nationwide
-  re-delineation.** Brief now from the 11-17 Sep statements and the
-  Bintulu Port repeal Acts; Stage 1 when the amendment bill is tabled.
-- **B2 — the 2024 citizenship amendment's missing commencement date.**
-  Verify gazette status first; if nothing is in force, it is a new Rights
-  issue; if part is, it is an update to 1325.
-- **S15 — PWD's RM2b road-maintenance allocation spent by August** is the
-  Budget-week Governance pick.
+**Wildcard W1 (no house-arrest law)** is the most-read story available
+and the riskiest. It needs the editor's explicit go-ahead before any
+brief work, Stage 5, and the guardrails in the develop list.
 
 ## Stage 5 escalation calls
 
@@ -98,65 +100,71 @@ when a brief marks Religion / Ethnic / Royalty risk HIGH+, marks
 Political risk CRITICAL with a sharp take, or when Stage 3
 `source_diversity_estimate` is below 0.4.
 
-- **A2 (political financing):** Political CRITICAL, Royalty adjacent.
-  **Required.** Run Stage 5 with the explicit instruction that the pardon
-  decision is out of scope; the stress-test is on whether the
-  "no statute" framing is fair to the party and to the donors.
-- **A1 (AGC discontinuance):** Political HIGH, 3R none. **Not required**
-  at brief stage. Watch Stage 3's source-diversity score: the coverage is
-  FMT / Malay Mail / Bernama heavy until the court order and the charge
-  sheets are pulled.
-- **A3 (electricity):** all LOW. Not required.
-- **1976 update (Negeri Sembilan):** Royalty CRITICAL. **Required** for
-  the edition-2 cards, even though the base issue is published.
-- **B4 (custody death):** Ethnic MEDIUM. Re-assess after the brief.
-- **Skips that would fire the trigger** (Catholic-clergy remark, GISBH
-  fatwa, Act 355 repeal call, the pardon decision itself) do not enter
-  the pipeline this cycle.
+- **G1 (data centres):** 3R LOW. Not required.
+- **G2 (crude):** Political MEDIUM-HIGH; source diversity is the risk.
+  **Decide after Stage 3**: run Stage 5 if `source_diversity_estimate`
+  < 0.4.
+- **G3 (scams):** all LOW. Not required.
+- **W1 (house arrest):** Royalty CRITICAL. **Required.**
+- **2013 and 1976 updates:** **Required** (both base issues carry the
+  escalation).
 
-## Before drafting Stage 1 for A2
+## Before drafting Stage 1 for G1
 
-- Establish the drive's mechanics from Umno's own statement before
-  writing a single number: account holder, cap per donor, whether names
-  will be published, whether the RM50m is the fine alone or includes
-  costs. A drive with voluntary disclosure changes the reframe.
-- Separate three legal regimes cleanly on the fact cards: the Societies
-  Act (party accounts to the Registrar), the Election Offences Act
-  (campaign spending caps and returns), and the missing political-
-  financing statute (donations outside campaigns). Mixing them is the
-  most likely Stage 3 correction.
-- Pick one phrase for the statute across all cards ("political financing
-  law") and one for the drive ("the donation drive"); no elegant
-  variation.
-- Hook emotion: anger-at-process (a promise from 2018, a bill the
-  anti-graft agency itself is asking for), not anger at the party.
+- One phrase per entity across all cards: "data centres" (not "server
+  farms", "hyperscale facilities", "AI campuses" in turn); "the ballots"
+  for the US measures.
+- The Malaysian half needs its own primary numbers: the official 4 Nov
+  statement, Energy Commission tariff treatment, TNB grid capex, and the
+  approval chain (who signs off, whether an EIA applies, whether
+  residents are consulted). The US half can rest on the tracker and two
+  county results pages.
+- Hook emotion: anxiety-of-precedent (other electorates are voting these
+  out; ours has no ballot), not anger at investors.
+- Candidate reframe (question restructuring): *The question is not
+  whether Malaysia should host data centres. It is who in Malaysia gets
+  the say that 40 American towns just used.* Test it against the brief
+  before using it; the strongest counter-evidence is the Kota Damansara
+  withdrawal after ~290 planning objections (TCPA s21(6)).
 
-## Before drafting Stage 1 for A1
+## Before drafting Stage 1 for G2
 
-- Get the exact procedural outcome for each of the four charges (DNAA vs
-  acquittal) from the court record, not from headlines; the queue carries
-  both words in different entries.
-- The 14-15 Sep police-report episode (MACC officer vs defence lawyer)
-  belongs on one fact card as a dated sequence, not as a motive claim.
-- Reframe candidate: "The office that decided this is the office
-  Parliament is still deciding how to split." Verify the committee status
-  against 1997's brief before using it.
+- Pull the China customs series by origin yourself (or via a named
+  wire report quoting it); do not rely on a single analyst chart.
+- Separate three things on the cards: what is *recorded* (customs),
+  what is *estimated* (analyst attribution to Iran), and what is
+  *established* (sanctions designations, court cases).
+- Malaysia's own enforcement record (MMEA detentions, any STS permit
+  rule) goes on a fact card; without it the issue underclaims Malaysia's
+  side.
 
 ## Operational gaps to close
 
 1. `radar/output/malaysia-impact-watch.{json,md}` still do not exist. The
-   daily pass reports success in Actions but exits before writing because
-   `ANTHROPIC_API_KEY` is unset. Unchanged since 3 Aug. Either set the
-   secret or disable the workflow; a green run that produces nothing is
-   worse than a red one.
-2. `radar/config/malaysia-calendar.json` has no 2026 state-election
-   window, but Melaka-poll items are in the queue. Add a Melaka window
-   (assembly term ends around November 2026) so the hazard model's
-   `days_to_election` covariate stops reading as calendar-free.
-3. The top 16 queue ranks are keyword stubs and calendar predictors.
-   Curators should keep reading the silence-watch and the fresh list;
-   consider a stub filter in `build-silence-watch.py`'s `_is_stub` for
-   single-word titles at the queue level too.
+   daily pass exits before writing because `ANTHROPIC_API_KEY` is unset.
+   Unchanged since 3 Aug. This cycle's editorial direction depends on
+   that pass: until it runs, curators read `foreign-events.json` by hand,
+   and that file keeps only 24 hours. Set the secret or disable the
+   workflow.
+2. `radar/config/malaysia-calendar.json` has `budget_presentation:
+   2026-10-23`, but Budget 2027 was tabled on **9 Oct** (committee stage
+   2-26 Nov). That date feeds `days_to_budget` in the Cox and SARIMA
+   models and the silence detector's calendar boost, and it is why rank 1
+   of the queue is still a "budget 2027 presentation" predictor at p 0.99
+   a month after the event. Correct the date (and re-run
+   `radar/tests/test_cox_timing.py`).
+3. The same file's `state_election_windows.notes` says "no scheduled
+   state elections in 2026"; Melaka polls on 14 Nov. Correction to the
+   18 Sep note: no model reads this key, so fixing it is documentation
+   only. The Cox model's `days_to_election` uses a fixed GE target.
+4. The silence detector's institutional-event classifier is loose: the 7
+   Nov cycle tracked a Leeds-Tottenham match report as INST-0012
+   `bill_reading`, and logged every Najib headline twice (once as
+   `bill_reading`, once as `high_court_ruling`).
+5. Ranks 1-16 of the queue remain calendar predictors and single-keyword
+   stubs. Curators should keep reading the silence-watch, the fresh list
+   and the foreign stream.
 
-_Refreshed 2026-09-18 as the editorial-review companion to the
-2026-09-18 22:14 UTC scan; supersede on the next curator refresh._
+_Refreshed 2026-11-07 as the editorial-review companion to the
+2026-11-07 20:10 UTC scan; editorial direction updated the same day.
+Supersede on the next curator refresh._

@@ -1,0 +1,113 @@
+{
+  "slug": "data-centres-us-voted-out-malaysia-in",
+  "issue_id": "2016",
+  "created_at": "2026-11-07T22:16:55.205Z",
+  "paths": {
+    "brief": "engine/briefs/data-centres-us-voted-out-malaysia-in.md",
+    "stage1": "engine/output/data-centres-us-voted-out-malaysia-in-stage1.json",
+    "stage2": "engine/output/data-centres-us-voted-out-malaysia-in-stage2.json",
+    "stage3": "engine/output/data-centres-us-voted-out-malaysia-in-stage3.json",
+    "stage6": "engine/output/data-centres-us-voted-out-malaysia-in-stage6-synthesis.json",
+    "reader": "engine/output/data-centres-us-voted-out-malaysia-in-reader.json",
+    "issue": "src/data/issues/2016.json",
+    "og_background": "public/og/backgrounds/issue-2016-bg.png"
+  },
+  "phases": {
+    "0_init": {
+      "done": true,
+      "at": "2026-11-07T22:16:55.205Z"
+    },
+    "1_research": {
+      "done": true,
+      "at": "2026-11-07T23:14:09.874Z",
+      "brief": "engine/briefs/data-centres-us-voted-out-malaysia-in.md",
+      "sources": 50,
+      "primary": 8,
+      "radar": "foreign stream + issue-queue 2026-11-07 20:10 UTC",
+      "independent_verification": "72/89 verified; ready after fixes; fixes applied 2026-11-07",
+      "approved_by_editor": "2026-11-07"
+    },
+    "2_stage1": {
+      "done": true,
+      "at": "2026-11-07T23:14:09.917Z",
+      "stage1": "engine/output/data-centres-us-voted-out-malaysia-in-stage1.json",
+      "pa": 83
+    },
+    "3_browser_prompts": {
+      "done": true,
+      "at": "2026-11-07T23:14:09.999Z",
+      "prompts": {
+        "stage2": "engine/prompts-generated/data-centres-us-voted-out-malaysia-in-stage2-browser.txt",
+        "stage3": "engine/prompts-generated/data-centres-us-voted-out-malaysia-in-stage3-browser.txt"
+      }
+    },
+    "4_stage2_collected": {
+      "done": true,
+      "at": "2026-11-07T23:44:55.226Z",
+      "path": "engine/output/data-centres-us-voted-out-malaysia-in-stage2.json",
+      "bias_score": 22
+    },
+    "4_stage3_collected": {
+      "done": true,
+      "at": "2026-11-07T23:44:55.264Z",
+      "path": "engine/output/data-centres-us-voted-out-malaysia-in-stage3.json",
+      "factual_accuracy_score": 68
+    },
+    "5_synthesis": {
+      "done": true,
+      "at": "2026-11-07T23:47:50.531Z",
+      "synthesis": "engine/output/data-centres-us-voted-out-malaysia-in-stage6-synthesis.json",
+      "sr": 84,
+      "ba": 78,
+      "fc": 68,
+      "stage5": "not run (source_diversity 0.55 >= 0.4; no 3R HIGH)"
+    },
+    "6_legal_check": {
+      "done": true,
+      "at": "2026-11-07T23:47:50.580Z",
+      "reader": "engine/output/data-centres-us-voted-out-malaysia-in-reader.json",
+      "legal": "pass (3R none; no defamation; public sources only; no sedition or CMA s233 risk; analysis framing)",
+      "stealth": "clean",
+      "validate_issues": "pass (0 errors, 0 warnings for 2016)",
+      "validate_language": "0 warnings",
+      "finalScore": 78.2
+    },
+    "7a_sherlock": {
+      "done": true,
+      "at": "2026-11-07T23:53:57.862Z",
+      "method": "manual entity match (fact graph indexes published issues only)",
+      "related": [
+        "1963",
+        "1974",
+        "1043"
+      ],
+      "bidirectional": true,
+      "pending_editor_confirmation": true
+    },
+    "7b_image_prompt": {
+      "done": true,
+      "at": "2026-11-07T23:47:50.629Z",
+      "template": "CLAUDE.md canonical single-line",
+      "target": "public/og/backgrounds/issue-2016-bg.png"
+    },
+    "7b_image_uploaded": {
+      "done": true,
+      "at": "2026-11-07T23:53:57.897Z",
+      "image": "public/og/backgrounds/issue-2016-bg.png",
+      "source": "Grok Imagine 1792x1008, centre-cropped to 1200x630 PNG"
+    },
+    "8_validated": {
+      "done": true,
+      "at": "2026-11-07T23:53:57.934Z",
+      "validate_issues": "pass",
+      "validate_language": "0 warnings",
+      "stealth": "clean",
+      "image": "exists 1200x630",
+      "published": false,
+      "note": "published flag held false until editor says Publish; flip at Phase 9"
+    },
+    "9_deployed": {
+      "done": false
+    }
+  }
+}

@@ -1,0 +1,730 @@
+{
+  "factual_accuracy_score": 68,
+  "source_diversity_estimate": 0.55,
+  "claims": [
+    {
+      "claim": "Google pledged US$15b on 4 Nov and to pay 100% of its own power.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Google announcement, 4 November 2026: https://blog.google/intl/en-my/company-news/inside-google/google-investment-malaysia-digital-infrastructure-november-2026/ ; Ministry of Higher Education account of the 4 November event, published 6 November 2026: https://www.mohe.gov.my/hebahan/sorotan-aktiviti/yb-menteri-kpt-hadiri-majlis-mantap-malaysia-bersama-ai-google-perkasa-pembangunan-bakat-digital-negara ; Prime Minister's speech, 4 November 2026: https://www.pmo.gov.my/ms/ucapanterkini/verbatim-text-yab-prime-minister-at-mantap-malaysia-bersama-ai-a-google-event/ . ",
+      "correction": "Verified as an announced commitment. The investment period is 2027–2028. Paying campus electricity costs does not establish that every wider system or environmental cost is recovered.",
+      "stale_check": "The announcement predates the analysis's 7 November 2026 cutoff."
+    },
+    {
+      "claim": "US$15b, 2027-2028; pays 100% of campus power and direct grid-connection costs",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Google release, 4 November 2026: https://www.googlecloudpresscorner.com/2026-11-04-Google-Announces-Digital-Infrastructure-Expansion-Local-Jobs-Water-Replenishment-and-Clean-Energy-Initiatives-with-US-15-Billion-Malaysia-Investment ; Bernama's contemporaneous report, checked against that original: https://bernama.com/en/news.php?id=2630047 . ",
+      "correction": "Preserve 'direct' when describing connection infrastructure costs. This verifies the company's pledge, not expenditure already completed.",
+      "stale_check": "Historical announcement verified as at the stated cutoff."
+    },
+    {
+      "claim": "On 4 Nov, Google committed US$15b to data centres in Selangor and Negeri Sembilan",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Google announcement, 4 November 2026: https://blog.google/intl/en-my/company-news/inside-google/google-investment-malaysia-digital-infrastructure-november-2026/ ; Bernama, 4 November 2026: https://bernama.com/en/news.php?id=2630047 . ",
+      "correction": "The announcement identifies planned campuses in those states and an operating Elmina campus. The US$15 billion programme also includes associated digital infrastructure and other initiatives; it is not described exclusively as building expenditure.",
+      "stale_check": "No subsequent change is needed to explain this qualification."
+    },
+    {
+      "claim": "adding to 117 approved nationwide",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.1,
+      "m_unknown": 0.75,
+      "source": "Google announcement, 4 November 2026: https://blog.google/intl/en-my/company-news/inside-google/google-investment-malaysia-digital-infrastructure-november-2026/ ; parliamentary record, 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "Neither source identifies whether Google's announced campuses are already included in the 117. Replace with 'against a backdrop of 117 approved projects' unless a project-level reconciliation establishes additionality.",
+      "stale_check": "This is an unresolved overlap question, not a demonstrated change after publication."
+    },
+    {
+      "claim": "Data centres: Malaysia wrote rules on who pays, and none on who gets heard",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.9,
+      "m_unknown": 0.05,
+      "source": "Act 172, official reprint as at 1 June 2021, sections 12A–16, 21(6)–(7) and 23: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf ; EIA Order 2015, paragraph 3: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "Existing law already provides participation procedures. The defensible criticism concerns gaps and conditions in project-specific participation, including the absence of a dedicated data-centre EIA entry.",
+      "stale_check": "These participation provisions substantially predate November 2026; this is not a stale correction caused by a recent reform."
+    },
+    {
+      "claim": "Since 1 Aug 2025, data centres in the Peninsula and Labuan pay their own water tariff.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.5,
+      "m_unknown": 0.1,
+      "source": "Selangor Menteri Besar statement, 1 August 2025: https://content.airselangor.com/cmi-prod-blobstorageanon-001-sea/media/yotnscfj/mb-penyelarasan-tarif-air-202508.pdf ; Kelantan gazette P.U.(A) 226/2025, 30 July 2025: https://airkelantan.com.my/wp-content/uploads/2025/10/PERATURAN-PERATURAN-INDUSTRI-PERKHIDMATAN-AIR-NEGERI-KELANTAN-2025.pdf ; Air Kelantan implementation page: https://airkelantan.com.my/maklumat-pengguna/kadar-tarif/ . ",
+      "correction": "A dedicated category exists, but universal actual billing from 1 August is not established. Selangor expressly deferred implementation to 1 September 2025. Kelantan's gazette commences on 1 August, whereas its operator page states 10 September. Distinguish statutory commencement from implementation.",
+      "stale_check": "The implementation differences arose in 2025 and were relevant before the analysis's cutoff."
+    },
+    {
+      "claim": "separate data-centre water tariff RM5.30-5.38/m3, Peninsular Malaysia and Labuan",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "SATU official statement, 2 August 2025: https://www.satuwater.com.my/v4/phocadownload/Kenyataan%20Media/Kenyataan%20Media%20SATU%202.pdf ; official tariff FAQ hosted by SAMB, 2025, question 6: https://samb.com.my/wp-content/uploads/2025/08/FAQ-Umum-TSM-TP2-Final.pdf . ",
+      "correction": "The range has substantial support: SATU states a common RM5.30 base rate excluding electricity charges, and the FAQ gives a state-dependent electricity component of 0–8 sen/m3. That produces RM5.30–RM5.38 arithmetically. However, the original ministerial reply and direct confirmation of both endpoints across the applicable schedules were not obtained. Checked schedules independently confirm RM5.31 and RM5.32.",
+      "stale_check": "The uncertainty concerns complete primary-source coverage, not evidence that the range recently changed."
+    },
+    {
+      "claim": "The Environmental Quality (Prescribed Activities) (Environmental Impact Assessment) Order 2015 (P.U.(A) 195/2015) sorts prescribed activities into two schedules.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Official federal gazette P.U.(A) 195/2015, gazetted 28 August 2015, paragraph 3(1) and both schedules: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "The instrument number, title, structure and gazettal date are confirmed.",
+      "stale_check": "Verified against the original 2015 instrument."
+    },
+    {
+      "claim": "Second Schedule activities, such as coal-fired power stations of 10MW or more, 'require public display and public comment' (para 3(3)).",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "P.U.(A) 195/2015, paragraph 3(3) and Second Schedule item 11(a), 28 August 2015: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "The threshold concerns construction of a coal-fired power station, with or without a transmission line.",
+      "stale_check": "The cited provision predates the analysis."
+    },
+    {
+      "claim": "First Schedule activities, such as an industrial estate of 20 hectares or more, 'do not require public display and public comment unless otherwise instructed, in writing, by the Director General' (para 3(2)).",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "P.U.(A) 195/2015, paragraph 3(2) and First Schedule item 17, 28 August 2015: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "The prescribed activity is development of an industrial estate of at least 20 hectares. Campus size alone does not establish that classification.",
+      "stale_check": "The qualification follows the original wording."
+    },
+    {
+      "claim": "Neither schedule contains a data-centre, computer or ICT entry.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Both schedules of P.U.(A) 195/2015, 28 August 2015: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "Verified for the inspected 2015 text. Absence of a dedicated entry does not exempt a project containing another prescribed activity.",
+      "stale_check": "The separate question of all subsequent amendments remains qualified below."
+    },
+    {
+      "claim": "A campus enters the Order only as a 20-hectare 'industrial estate', a First Schedule category with no public display unless the Director General directs it.",
+      "status": "INCORRECT",
+      "m_true": 0.05,
+      "m_false": 0.9,
+      "m_unknown": 0.05,
+      "source": "P.U.(A) 195/2015, both schedules: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf ; DOE EIA Guideline in Malaysia 2016, section 4.1: https://www.doe.gov.my/wp-content/uploads/2021/08/FA-EIA-GUIDELINE-IN-MALAYSIA-1.pdf . ",
+      "correction": "Delete 'only'. Associated power generation, forest conversion, slope development or water infrastructure can trigger other categories when their conditions are met. DOE guidance applies Second Schedule treatment to a project containing a qualifying Second Schedule component.",
+      "stale_check": "These alternative triggers and guidance existed well before November 2026."
+    },
+    {
+      "claim": "On 24 July 2026 Greenpeace Malaysia and co-signatories asked for data centres to be listed 'as a prescribed activity requiring a Schedule 2 Environmental Impact Assessment'.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Original RimbaWatch and allies statement published by Greenpeace Malaysia, 24 July 2026: https://www.greenpeace.org/malaysia/press/83760/civil-society-calls-for-ban-on-data-centres-near-residential-areas/ ; named DagangNews report by Kamaliza Kamaruddin, 24 July 2026, separately checked against that statement: https://dagangnews.dagangnews.com/article/terkini/ngo-desak-kerajaan-sekat-pusat-data-berhampiran-kawasan-perumahan-72057 . ",
+      "correction": "The date, quotation and address to DOE are confirmed. The original is attributed to RimbaWatch and allies, with Greenpeace among the endorsers. This verifies their request, not all factual assertions elsewhere in their statement.",
+      "stale_check": "Contemporaneous statement verified."
+    },
+    {
+      "claim": "No amending order adding such an entry was found as of 7 Nov 2026.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "DOE's official order index: https://www.doe.gov.my/perintah/ ; NRES parliamentary answer, 10 December 2025, question 46: https://www.nres.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=++++2967 . ",
+      "correction": "Targeted official-source searches also located no such amendment, and the official index still lists the 2015 Order. However, this is not an exhaustive gazette audit through 7 November 2026. Retain it as a bounded search finding, not certification that no amendment exists.",
+      "stale_check": "Currentness was specifically investigated; the exhaustive amendment check remains incomplete."
+    },
+    {
+      "claim": "The PLANMalaysia data-centre planning guideline (Cabinet, 8 Oct 2024) lists DOE's environmental assessment among approvals but does not itself create an EIA trigger.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Official PLANMalaysia Data Centre Planning Guidelines 2024, front matter and section 1.6: https://www.planmalaysia.gov.my/uploads/content-downloads/file_20251114204437.pdf ; statutory EIA Order 2015: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "The Cabinet date is confirmed. Listing an assessment in planning guidance does not amend the statutory prescribed-activity schedules.",
+      "stale_check": "The later PDF upload date does not change the guideline's 2024 approval date."
+    },
+    {
+      "claim": "AMRO's 2026 Malaysia report: power-supply applications from data centres 'had exceeded 11,000MW, equivalent to around 40 percent of Peninsular Malaysia's capacity of 27,000MW' as of December 2024.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "AMRO Malaysia Annual Consultation Report 2026, Selected Issue 1, paragraph 7, published 20 May 2026: https://www.amro-asia.org/wp-content/uploads/2026/05/Malaysia-ACR-2026-SI-1-Data-Center-Boom-in-Malaysia.pdf . ",
+      "correction": "The quotation and December 2024 reference date match. These are applications compared with capacity, not actual electricity use. Keep the historical date visible.",
+      "stale_check": "The analysis appropriately dates the comparison; newer figures do not make the historical statement false."
+    },
+    {
+      "claim": "On 4 Nov 2026 Johari put approvals at 117 data centres and about 23,500MW.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "A directly accessible parliamentary record establishes similar remarks by Johari on 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . The original 4 November event remarks were not obtained. ",
+      "correction": "The figures are supported by an earlier primary record, but the specific 4 November event attribution remains unverified. Cite the 28 October parliamentary statement unless the original event transcript or recording is supplied.",
+      "stale_check": "The verified statement predates the alleged repetition; this does not demonstrate that the 4 November report is false."
+    },
+    {
+      "claim": "117 data centres had been approved",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Johari Abdul Ghani, Dewan Rakyat digital Hansard, 28 October 2026, marked draft: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "Verified as the minister's stated count, not an independently audited project register.",
+      "stale_check": "Use the date of the primary statement."
+    },
+    {
+      "claim": "with a combined maximum demand of about 23,500MW on completion",
+      "status": "VERIFIED",
+      "m_true": 0.65,
+      "m_false": 0.05,
+      "m_unknown": 0.3,
+      "source": "Dewan Rakyat digital Hansard, 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "The primary wording estimates approximately 23,000–23,500MW if all 117 are completed. Preserve that approximation and condition.",
+      "stale_check": "Earlier official estimates differ; the unresolved comparison is reported under omitted_facts."
+    },
+    {
+      "claim": "55 operational, 19 under construction, 16 approved but not started, 27 at other stages",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Dewan Rakyat digital Hansard, 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "The categories and total are directly stated. The 27 include differing development stages.",
+      "stale_check": "A 15 October statement used a different operating-project count; no reconciliation was located."
+    },
+    {
+      "claim": "Many early-stage projects plan off-grid power",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Dewan Rakyat digital Hansard, 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "The minister describes the 27 as expected to obtain off-grid electricity. This is prospective, not evidence of completed independent supply.",
+      "stale_check": "Verified as an expectation stated before the cutoff."
+    },
+    {
+      "claim": "The energy ministry's written reply (via The Star, 20 Oct 2026) put approved grid supply at 12.3GW as of August.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "Secondary locator: The Star, 20 October 2026, attributing the figure to Fadillah's written answer to Syerleena Abdul Rashid: https://www.thestar.com.my/news/nation/2026/10/20/123gw-energy-capacity-approved-for-data-centres-as-of-august-parliament-told . The underlying answer was not retrieved. ",
+      "correction": "The report supports the attribution, but it does not meet the requested separately checked primary-source standard. Preserve 'approved supply capacity'; do not present it as actual use or subtract it from the eventual 23–23.5GW requirement to calculate off-grid capacity.",
+      "stale_check": "No evidence establishes that the reported figure became wrong later; the issue is source verification."
+    },
+    {
+      "claim": "The ministry projects Peninsular data-centre demand of 8,391MW by 2030, of which Johor 4,428MW.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "Secondary locator: Bernama, 19 October 2026, attributing the forecast to PETRA's written answer: https://web26.bernama.com/bm/news.php?id=2622721 . The original answer was not retrieved. ",
+      "correction": "The two figures are consistently reported, but remain unverified under the specified standard. They are a dated Peninsular 2030 forecast, not the same population or horizon as the eventual requirement of all approved projects.",
+      "stale_check": "Keep the forecast date, geography and horizon; no later official replacement was established."
+    },
+    {
+      "claim": "Ministers say costs follow 'cost causation'",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "The exact English phrase appears in The Star's 20 October 2026 account of a written answer: https://www.thestar.com.my/news/nation/2026/10/20/123gw-energy-capacity-approved-for-data-centres-as-of-august-parliament-told . Related user-pays policy is directly documented in the Senate Hansard, 8 December 2025, printed pages 5–7: https://www.parlimen.gov.my/files/hindex/pdf/DN-08122025.pdf . ",
+      "correction": "The underlying user-pays policy is corroborated. The precise quoted terminology in the referenced written reply was not separately checked; use an attributed paraphrase or obtain that answer.",
+      "stale_check": "Existing mechanisms predate the analysis; subsequent reform discussions do not negate them."
+    },
+    {
+      "claim": "an Ultra High Voltage tariff since 1 July 2025",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Energy Commission official Peninsular tariff schedule, effective 1 July 2025–31 December 2027: https://myenergystats.st.gov.my/documents/d/guest/jadual-tarif-tnb-terkini ; Senate Hansard, 8 December 2025: https://www.parlimen.gov.my/files/hindex/pdf/DN-08122025.pdf . ",
+      "correction": "The category and commencement are confirmed. Specify the Peninsular tariff's territorial scope.",
+      "stale_check": "The published schedule spans the analysis's cutoff."
+    },
+    {
+      "claim": "for all supply above 50kV, data centres included",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.15,
+      "m_unknown": 0.7,
+      "source": "Senate Hansard, 8 December 2025: https://www.parlimen.gov.my/files/hindex/pdf/DN-08122025.pdf ; Energy Commission tariff schedule: https://myenergystats.st.gov.my/documents/d/guest/jadual-tarif-tnb-terkini ; TNB Connection Charges Book 2025: https://www.tnb.com.my/assets/files/TNB_Connection_Charges_Book_2025_ENG.pdf . ",
+      "correction": "The primary ministerial statement identifies new and existing data centres connected at high and extra-high voltage. It does not establish universal UHV eligibility for every customer supplied above 50kV. Use that narrower scope.",
+      "stale_check": "This is an unsupported expansion of scope, not a demonstrated later tariff change."
+    },
+    {
+      "claim": "a higher Connected Load Charge",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "TNB Connection Charges Book 2025, section 4.2: https://www.tnb.com.my/assets/files/TNB_Connection_Charges_Book_2025_ENG.pdf ; secondary report of an increase, The Star, 20 October 2026: https://www.thestar.com.my/news/nation/2026/10/20/123gw-energy-capacity-approved-for-data-centres-as-of-august-parliament-told . ",
+      "correction": "The CLC's existence and purpose are documented, including an RM8.50/kW shortfall charge in the inspected book. A dated primary rate change or original written answer establishing 'higher' was not obtained.",
+      "stale_check": "The older schedule cannot exclude a later increase; therefore this is unverified, not disproved."
+    },
+    {
+      "claim": "developer capital for water works",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Water Services Industry (Water Services Deposits, Fees and Charges) (Amendment) Regulations 2025, P.U.(A) 274/2025, gazetted 27 August and effective 1 September 2025: https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3046482/PUA%20274%20(2025).pdf ; Senate Hansard, 8 December 2025: https://www.parlimen.gov.my/files/hindex/pdf/DN-08122025.pdf . ",
+      "correction": "The regulations introduce data-centre capital-contribution provisions and formulas. They do not establish one uniform charge or recovery of every external cost.",
+      "stale_check": "The operative mechanism predates the analysis."
+    },
+    {
+      "claim": "at least 30% renewables",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Fadillah Yusof, Dewan Rakyat digital Hansard, 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "Verified as an approved policy. The same answer says ST was still developing comprehensive implementation guidelines; final compliance dates and accounting rules were not established.",
+      "stale_check": "This implementation qualification was present before the cutoff."
+    },
+    {
+      "claim": "Utilisation figures use different denominators across replies, so no trend is claimed.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Dewan Rakyat records, 5 November 2025 and 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2025-11-05 ; https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+      "correction": "The decision not to infer a utilisation trend is justified. Declared maximum demand and contracted demand are separately identified in the primary records.",
+      "stale_check": "Differences in definitions must be resolved before interpreting the dated observations as a trend."
+    },
+    {
+      "claim": "declared maximum demand Jun 2025; maximum approved demand Apr 2026; contracted demand Aug 2026; PETRA 'supply capacity' 6,041MW for Aug 2026",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Primary records support the June 2025 and August 2026 demand labels: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2025-11-05 ; https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . The April and 6,041MW items remain traceable here only through news reports, including https://web26.bernama.com/bm/news.php?id=2622721 . ",
+      "correction": "This composite source note is only partially primary-verified. Do not present the entire four-part sequence as checked against original replies.",
+      "stale_check": "The dates represent different observations; the outstanding problem is source access and denominator reconciliation."
+    },
+    {
+      "claim": "23,500MW (approved, on completion, partly off-grid) and 12.3GW (approved grid supply) measure different things; they appear together only with the off-grid caveat.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Primary eventual-demand statement, 28 October 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined ; secondary 12.3GW report, 20 October 2026: https://www.thestar.com.my/news/nation/2026/10/20/123gw-energy-capacity-approved-for-data-centres-as-of-august-parliament-told . ",
+      "correction": "The caution against direct comparison is appropriate. However, the exact scope of the 12.3GW dataset remains unverified, and an off-grid caveat alone does not reconcile different dates, project populations and completion assumptions.",
+      "stale_check": "No later change is needed to explain the comparability problem."
+    },
+    {
+      "claim": "Planning permission is the local council's call.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, sections 5, 21 and 22, official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "Use 'local planning authority'. A council normally performs that role within its area, subject to statutory constraints and applicable state or national directions.",
+      "stale_check": "Verified within Act 172's scope; this is not a statement of uniform law throughout Malaysia."
+    },
+    {
+      "claim": "an application for planning permission 'shall be made to the local planning authority' (s21(1))",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, section 21(1), official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "The section and quoted wording match.",
+      "stale_check": "The 2021 text is verified; targeted searches did not establish a later change to this provision."
+    },
+    {
+      "claim": "Section 21(6) requires the authority to notify the owners of neighbouring lands of their right to object within 21 days, with a hearing on request (s21(7)), only 'if the proposed development is located in an area in respect of which no local plan exists'.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, sections 21(6)–(8), official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "The 21 days run from service. A qualifying objector must request the hearing when lodging the objection; the hearing follows within the statutory period.",
+      "stale_check": "The reprint was checked. A comprehensive post-2021 amendment audit remains incomplete."
+    },
+    {
+      "claim": "Where a local plan exists, the public's formal objection point is the plan",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "Act 172: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf ; MBPJ planning-permission checklist and public-notice template, 2018 edition: https://www.mbpj.gov.my/sites/default/files/mbpj/sumber/muat_turun_borang/borang-borang_online_unit_pusat_setempatosc/b02-proses_2-_borang_permohonan_km_skim-2018.pdf . ",
+      "correction": "Plan-stage participation exists, but the conditional section 21(6) guarantee does not exhaust local procedures or applicable EIA participation.",
+      "stale_check": "The MBPJ template predates the analysis; it does not establish the exact procedure used in July 2026."
+    },
+    {
+      "claim": "draft local plans and alterations must be advertised in three issues of at least two local newspapers, with not less than four weeks for objections (ss13(2), 16(3))",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, sections 13(2) and 16(3), official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "It is the notice that is published. One newspaper must be in the national language; the objection period follows the statutory inspection arrangements.",
+      "stale_check": "The specified reprint supports the citation."
+    },
+    {
+      "claim": "a local inquiry is discretionary (s14(1))",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, sections 14(1) and 15(1), official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "Correct, but section 15(1) still requires consideration of duly made objections and representations.",
+      "stale_check": "Both provisions predate the analysis."
+    },
+    {
+      "claim": "permission may not contravene the plan (s22(4)(a))",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, section 22(4)(a), official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "The statutory term is 'development plan'.",
+      "stale_check": "The cited wording is confirmed."
+    },
+    {
+      "claim": "The Data Centre Task Force assesses power and water; it does not grant planning permission.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Dewan Rakyat record on the task force, 7 July 2026: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-07-07 ; Act 172, sections 21–22: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "The distinction between national coordination and statutory planning permission is supported. The task force's remit also includes other infrastructure and development considerations.",
+      "stale_check": "Both sources predate the cutoff."
+    },
+    {
+      "claim": "The 2024 data-centre planning guideline sets 99-, 29-, 22- and 33-day tracks",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "PLANMalaysia Data Centre Planning Guidelines 2024, processing methods and flowcharts: https://www.planmalaysia.gov.my/uploads/content-downloads/file_20251114204437.pdf . ",
+      "correction": "Specify that 99 days is a maximum, whereas 29, 22 and 33 days are stated minimum periods. They are not four equivalent guaranteed approval deadlines.",
+      "stale_check": "The distinction is in the original guideline."
+    },
+    {
+      "claim": "the fast tracks presuppose conforming land and an approved layout",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "PLANMalaysia Data Centre Planning Guidelines 2024, methods 2–4: https://www.planmalaysia.gov.my/uploads/content-downloads/file_20251114204437.pdf . ",
+      "correction": "Prerequisites differ. The industrial green-lane method specifies an approved master layout; the 22-day method does not establish that as a universal prerequisite. Conversion has separate existing-building conditions.",
+      "stale_check": "This overgeneralisation is not attributable to a later change."
+    },
+    {
+      "claim": "its text shows no objection step",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Inspected PLANMalaysia Data Centre Planning Guidelines 2024 and processing flowcharts: https://www.planmalaysia.gov.my/uploads/content-downloads/file_20251114204437.pdf . ",
+      "correction": "Verified as a limited observation about the document. Its silence does not remove participation requirements arising elsewhere.",
+      "stale_check": "The observation concerns the inspected edition."
+    },
+    {
+      "claim": "On 19 Oct 2026 the National Economic Action Council agreed to draft a Digital Infrastructure (Data Centre) Bill for Cabinet in 2027",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Secondary locator: Bernama, 19 October 2026: https://www.bernama.com/bm/news.php?id=2622567 ; corroborating government-media report published 20 October 2026: https://dewanekonomi.jendeladbp.my/2026/10/20/16174/ . The original ministerial statement or meeting record was not retrieved. ",
+      "correction": "The reports consistently describe a 19 October decision and a 2027 Cabinet-submission target. Under the requested standard, the missing original keeps this unverified. Cabinet submission is distinct from parliamentary passage or commencement.",
+      "stale_check": "No evidence shows that the meeting date was confused with an earlier event."
+    },
+    {
+      "claim": "A Data Centre Bill reaches Cabinet only in 2027.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.1,
+      "m_unknown": 0.7,
+      "source": "Bernama's report of the announced target, 19 October 2026: https://www.bernama.com/bm/news.php?id=2622567 . Original statement not retrieved. ",
+      "correction": "Replace the definite future statement with 'The government reportedly targets Cabinet submission in 2027.' The report does not guarantee timing or establish that legal reforms must wait until then.",
+      "stale_check": "This was a future target at the analysis's cutoff."
+    },
+    {
+      "claim": "no draft has been published",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.05,
+      "m_unknown": 0.8,
+      "source": "The reported drafting announcement is dated 19 October 2026: https://www.bernama.com/bm/news.php?id=2622567 . Targeted searches located no public draft, but no exhaustive official publication record establishing absence was obtained. ",
+      "correction": "Use 'No public draft was located in the sources searched through 7 November 2026.' Do not state an unbounded negative as established fact.",
+      "stale_check": "The search was directed at the stated cutoff; completeness remains uncertain."
+    },
+    {
+      "claim": "Counterweight: in Kota Damansara (Selangor), residents objected in July 2026 and the consultant withdrew the application on 28 Jul, which MBPJ said was 'to allow the developer to re-evaluate the feasibility of the site'.",
+      "status": "UNVERIFIED",
+      "m_true": 0.25,
+      "m_false": 0,
+      "m_unknown": 0.75,
+      "source": "Secondary reports: The Star, 30 July 2026, https://www.thestar.com.my/metro/metro-news/2026/07/30/controversial-kota-damansara-data-centre-proposal-withdrawn ; Media Selangor, 30 July 2026, https://mediaselangor.com/en/2026/07/387304 ; objection reporting, 27 July 2026, https://mediaselangor.com/en/2026/07/386556 . The original council statement, withdrawal letter and case-specific objection notice were not independently inspected. ",
+      "correction": "Reports support objections and withdrawal, but the exact date is unresolved: The Star reports MBPJ received a letter on 28 July; Media Selangor quotes Izuan describing a letter dated 29 July. These are conflicting secondary accounts, not two inspected originals. Receipt date should not automatically become the withdrawal date. The feasibility explanation is the consultant's stated reason relayed through MBPJ, not an independently established motive.",
+      "stale_check": "The discrepancy exists between contemporaneous July reports; it is not caused by a later development."
+    },
+    {
+      "claim": "Kelantan's gazette prices a data centre's water at RM5.32 a cubic metre.",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Kelantan water-tariff amendment, P.U.(A) 226/2025, 30 July 2025, substituted First Schedule item 6: https://airkelantan.com.my/wp-content/uploads/2025/10/PERATURAN-PERATURAN-INDUSTRI-PERKHIDMATAN-AIR-NEGERI-KELANTAN-2025.pdf . ",
+      "correction": "The rate is correct. The schedule also specifies a minimum monthly charge of RM53.20.",
+      "stale_check": "The operator's published rate matches; its implementation date differs from the gazette's commencement."
+    },
+    {
+      "claim": "Kelantan water rates (Amendment) Regulations 2025, P.U.(A) 226/2025, in force 1 Aug 2025",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "P.U.(A) 226/2025, regulation 1(2), gazetted 30 July 2025: https://airkelantan.com.my/wp-content/uploads/2025/10/PERATURAN-PERATURAN-INDUSTRI-PERKHIDMATAN-AIR-NEGERI-KELANTAN-2025.pdf ; operator implementation page: https://airkelantan.com.my/maklumat-pengguna/kadar-tarif/ . ",
+      "correction": "Correct as the gazetted legal commencement. Report separately that Air Kelantan's tariff page gives 10 September 2025; no primary explanation resolving that difference was obtained.",
+      "stale_check": "Both dates concern the 2025 reform."
+    },
+    {
+      "claim": "Whether neighbouring landowners hear of the project first depends on the local plan.",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "Act 172, section 21(6): https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf ; MBPJ's published notice template, 2018 edition: https://www.mbpj.gov.my/sites/default/files/mbpj/sumber/muat_turun_borang/borang-borang_online_unit_pusat_setempatosc/b02-proses_2-_borang_permohonan_km_skim-2018.pdf . ",
+      "correction": "Local-plan status controls the particular statutory notice guarantee, not every route through which neighbours receive project information or submit comments.",
+      "stale_check": "The distinction follows pre-existing law and procedures."
+    },
+    {
+      "claim": "The chiller pays its own power. But the residents' only formal chance to object came years earlier, when the building plan was approved.",
+      "status": "MISLEADING",
+      "m_true": 0.3,
+      "m_false": 0.4,
+      "m_unknown": 0.3,
+      "source": "Relevant planning distinctions are in Act 172, Parts III and IV: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "This is a hypothetical analogy, not a verified condominium case. It conflates a local development plan with a building plan and invents an exclusive, years-earlier objection opportunity. Rework it around the documented distinction between plan-stage participation and conditional project notice.",
+      "stale_check": "The problem is conceptual, not temporal."
+    },
+    {
+      "claim": "User-pays rules are meant to protect the household bill.",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Senate Hansard, 8 December 2025, printed pages 5–7: https://www.parlimen.gov.my/files/hindex/pdf/DN-08122025.pdf ; official water-tariff FAQ, question 12: https://samb.com.my/wp-content/uploads/2025/08/FAQ-Umum-TSM-TP2-Final.pdf . ",
+      "correction": "The stated intention is supported. 'Meant to' is appropriate; the sources do not demonstrate complete cost recovery or guarantee unchanged household bills.",
+      "stale_check": "Existing policy intent is documented before the cutoff."
+    },
+    {
+      "claim": "Anyone can object to a zoning plan",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "Act 172, sections 13 and 16(3), official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+      "correction": "Specify public objections or representations during the advertised draft-local-plan or alteration process. This is not an unlimited opportunity to reopen an adopted plan.",
+      "stale_check": "Verified within the cited statutory procedure."
+    },
+    {
+      "claim": "neighbouring landowners get a say on the project itself only where no local plan exists",
+      "status": "MISLEADING",
+      "m_true": 0.4,
+      "m_false": 0.4,
+      "m_unknown": 0.2,
+      "source": "Act 172, section 21(6): https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf ; MBPJ public-notice template: https://www.mbpj.gov.my/sites/default/files/mbpj/sumber/muat_turun_borang/borang-borang_online_unit_pusat_setempatosc/b02-proses_2-_borang_permohonan_km_skim-2018.pdf ; EIA Order 2015: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekiling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+      "correction": "Replace 'get a say ... only' with 'receive the specific section 21(6) notice-and-objection entitlement where no local plan exists'. Other applicable participation routes are not excluded.",
+      "stale_check": "This corrects the inference drawn from an existing provision."
+    },
+    {
+      "claim": "A day earlier, voters in 40 of 41 local US contests (21 in Ohio; results unofficial) favoured limits.",
+      "status": "UNVERIFIED",
+      "m_true": 0.3,
+      "m_false": 0,
+      "m_unknown": 0.7,
+      "source": "Ballotpedia reports, 3 and 6 November 2026: https://news.ballotpedia.org/2026/11/03/voters-in-ten-states-will-vote-on-data-center-related-ballot-measures-november-3/ ; https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/ . Official county results were spot-checked, but the complete aggregate was not reconstructed from election authorities. ",
+      "correction": "The figures match Ballotpedia's reporting, including 21 Ohio measures rather than 21 separate towns. Under the requested primary-source standard, the complete 40/41 and Ohio inventory remain unverified. Write 'Ballotpedia reported that 40 of the 41 measures it tracked favoured limits.' The actual context sentence does not name Ballotpedia, despite the analysis's confidence note saying it does.",
+      "stale_check": "These were provisional post-election counts as at 6–7 November 2026. Coverage differences with Redbud are addressed separately."
+    },
+    {
+      "claim": "results unofficial",
+      "status": "VERIFIED",
+      "m_true": 0.85,
+      "m_false": 0,
+      "m_unknown": 0.15,
+      "source": "Official Trumbull County results, 4 November 2026: https://boe.co.trumbull.oh.gov/pdfs/Election%20Summary.pdf ; official Licking County results, 4 November 2026: https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf ; North Dakota Secretary of State's canvass timetable, 3 November 2026: https://www.sos.nd.gov/news/398-voter-turnout-north-dakota-general-election . ",
+      "correction": "The unofficial qualification is supported. It does not independently validate every item in either national tracker.",
+      "stale_check": "Correct for the analysis's early-November cutoff; later certification would require updating this label."
+    },
+    {
+      "claim": "Ballotpedia 41 contests / 40 favouring limits vs Redbud's 44 pre-vote measures",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0.05,
+      "m_unknown": 0.75,
+      "source": "Ballotpedia, 6 November 2026: https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/ ; Redbud tracker snapshot updated 7 November 2026 at 4:58 a.m. ET: https://www.datacentersontheballot.com/?race=oh-oregon . ",
+      "correction": "The historical Redbud count of 44 pre-vote measures was not recovered. Its retrieved 7 November snapshot instead tracks 47 November 3 measures: 45 complete counts, of which 44 favour restriction and one allowing development, plus two incomplete counts. Ballotpedia's 41-measure election-day universe differs. Do not conflate Redbud's 44 restrictive outcomes with an earlier inventory of 44 measures. A record-by-record reconciliation was not completed.",
+      "stale_check": "A pre-election inventory could legitimately expand. The later 47 count does not by itself prove the historical 44 count false."
+    },
+    {
+      "claim": "No source links Google's Malaysia investment to the US votes; the context line presents them as parallel events, not cause and effect.",
+      "status": "UNVERIFIED",
+      "m_true": 0.2,
+      "m_false": 0,
+      "m_unknown": 0.8,
+      "source": "Google announcement, 4 November 2026: https://blog.google/intl/en-my/company-news/inside-google/google-investment-malaysia-digital-infrastructure-november-2026/ ; Ballotpedia election report, 6 November 2026: https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/ . ",
+      "correction": "Neither inspected source establishes a causal link. That supports avoiding a causal claim, but not the universal statement that no source anywhere links them. Use 'No causal connection is established by the sources checked.'",
+      "stale_check": "Temporal proximity alone was insufficient at the stated cutoff."
+    },
+    {
+      "claim": "the guideline allows no buffer if noise stays within 5dB of baseline",
+      "status": "VERIFIED",
+      "m_true": 0.7,
+      "m_false": 0,
+      "m_unknown": 0.3,
+      "source": "PLANMalaysia Data Centre Planning Guidelines 2024, new-development buffer provision, PDF page 39: https://www.planmalaysia.gov.my/uploads/content-downloads/file_20251114204437.pdf . ",
+      "correction": "The table gives a 50m buffer or the stated noise-based exception. Preserve its new-development context; it does not establish an unconditional 50m requirement for every case.",
+      "stale_check": "The exception appears in the inspected original guideline."
+    },
+    {
+      "claim": "A Sahabat Alam Malaysia submission (about Sep 2026) still describes data centres as not prescribed",
+      "status": "UNVERIFIED",
+      "m_true": 0.15,
+      "m_false": 0.1,
+      "m_unknown": 0.75,
+      "source": "The matching SAM publication located is dated 10 May 2025 and describes a submission made in April: https://foe-malaysia.org/articles/overview-and-challenges-within-malaysian-jurisdiction-on-environmental-impact-assessments-and-strategic-environmental-assessments-sea/ . ",
+      "correction": "The located document supports the attributed position but not the September 2026 dating. Identify the intended submission. Do not silently use the April/May 2025 document as evidence of the legal position in September 2026.",
+      "stale_check": "This appears to be a source-date problem; a separate September 2026 submission was not established."
+    }
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "claim": "A campus enters the Order only as a 20-hectare 'industrial estate'",
+      "why": "The word 'only' excludes other prescribed activities that may be present in a data-centre development or its associated infrastructure. It also treats campus size as sufficient to establish industrial-estate classification.",
+      "primary_source": "EIA Order 2015 and DOE EIA Guideline 2016, section 4.1: https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf ; https://www.doe.gov.my/wp-content/uploads/2021/08/FA-EIA-GUIDELINE-IN-MALAYSIA-1.pdf . "
+    },
+    {
+      "sin": "UNDERCLAIM",
+      "claim": "Malaysia has written data-centre rules on who pays, none on who gets heard.",
+      "why": "This erases existing statutory participation rights that the detailed analysis itself partly acknowledges. A conditional or incomplete participation regime is materially different from no rules.",
+      "primary_source": "Act 172, sections 12A–16, 21 and 23, and EIA Order 2015, paragraph 3: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf ; https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . "
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "neighbouring landowners get a say on the project itself only where no local plan exists",
+      "why": "The limited trigger for a particular statutory notice entitlement is presented as an exhaustive limit on all project participation. The same problem affects the reframe about when neighbours hear of a project.",
+      "primary_source": "Act 172 and MBPJ's published planning-notice template: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf ; https://www.mbpj.gov.my/sites/default/files/mbpj/sumber/muat_turun_borang/borang-borang_online_unit_pusat_setempatosc/b02-proses_2-_borang_permohonan_km_skim-2018.pdf . "
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "Since 1 Aug 2025, data centres in the Peninsula and Labuan pay their own water tariff.",
+      "why": "The sentence merges gazetted commencement with universal actual implementation, despite documented later implementation dates.",
+      "primary_source": "Selangor government statement, 1 August 2025, and Air Kelantan tariff page: https://content.airselangor.com/cmi-prod-blobstorageanon-001-sea/media/yotnscfj/mb-penyelarasan-tarif-air-202508.pdf ; https://airkelantan.com.my/maklumat-pengguna/kadar-tarif/ . "
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "the fast tracks presuppose conforming land and an approved layout",
+      "why": "It generalises one method's prerequisites across distinct processing methods.",
+      "primary_source": "PLANMalaysia Data Centre Planning Guidelines 2024, methods 2–4: https://www.planmalaysia.gov.my/uploads/content-downloads/file_20251114204437.pdf . "
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "claim": "But the residents' only formal chance to object came years earlier, when the building plan was approved.",
+      "why": "The analogy substitutes a building plan for a local development plan and assumes an exclusive historical objection opportunity that the legal sources do not establish.",
+      "primary_source": "Act 172, Parts III–IV: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "adding to 117 approved nationwide",
+      "why": "No project-level evidence establishes that Google's announced campuses are additional to, rather than included in, the 117.",
+      "primary_source": "Google announcement and 28 October parliamentary record: https://blog.google/intl/en-my/company-news/inside-google/google-investment-malaysia-digital-infrastructure-november-2026/ ; https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "On 4 Nov 2026 Johari put approvals at 117 data centres and about 23,500MW.",
+      "why": "The figures have a primary parliamentary source dated 28 October. The distinct 4 November event attribution was not independently established.",
+      "primary_source": "Verified earlier statement: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The energy ministry's written reply (via The Star, 20 Oct 2026) put approved grid supply at 12.3GW as of August.",
+      "why": "The original written answer was not retrieved. Repetition by news outlets cannot substitute for the requested primary check.",
+      "primary_source": "No qualifying original obtained; secondary locator: https://www.thestar.com.my/news/nation/2026/10/20/123gw-energy-capacity-approved-for-data-centres-as-of-august-parliament-told . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "The ministry projects Peninsular data-centre demand of 8,391MW by 2030, of which Johor 4,428MW.",
+      "why": "The underlying written forecast was not accessed. Its exact dataset and scope cannot be independently reconciled with other capacity figures.",
+      "primary_source": "No qualifying original obtained; secondary locator: https://web26.bernama.com/bm/news.php?id=2622721 . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "separate data-centre water tariff RM5.30-5.38/m3, Peninsular Malaysia and Labuan",
+      "why": "Official base-rate and surcharge publications support the arithmetic, but direct verification of the complete national endpoint claim and cited written reply remains incomplete.",
+      "primary_source": "SATU statement and official common FAQ: https://www.satuwater.com.my/v4/phocadownload/Kenyataan%20Media/Kenyataan%20Media%20SATU%202.pdf ; https://samb.com.my/wp-content/uploads/2025/08/FAQ-Umum-TSM-TP2-Final.pdf . "
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "for all supply above 50kV, data centres included",
+      "why": "The universal wording exceeds the retrieved primary statement, which identifies the category's application to data centres at high and extra-high voltage.",
+      "primary_source": "Senate Hansard, 8 December 2025: https://www.parlimen.gov.my/files/hindex/pdf/DN-08122025.pdf . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "a higher Connected Load Charge",
+      "why": "An existing charge is documented, but a dated primary increase was not obtained.",
+      "primary_source": "TNB Connection Charges Book 2025: https://www.tnb.com.my/assets/files/TNB_Connection_Charges_Book_2025_ENG.pdf . "
+    },
+    {
+      "sin": "OVERCLAIM",
+      "claim": "A Data Centre Bill reaches Cabinet only in 2027.",
+      "why": "A reported submission target becomes a definite future event. The associated drafting decision and assertion that no draft exists also lack the required original-source verification.",
+      "primary_source": "No original announcement obtained; secondary locator, 19 October 2026: https://www.bernama.com/bm/news.php?id=2622567 . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "the consultant withdrew the application on 28 Jul",
+      "why": "The Star reports receipt on 28 July; another contemporaneous report describes a letter dated 29 July. Neither original document was checked, and receipt is not necessarily the withdrawal date.",
+      "primary_source": "No original letter obtained. Conflicting secondary accounts: https://www.thestar.com.my/metro/metro-news/2026/07/30/controversial-kota-damansara-data-centre-proposal-withdrawn ; https://mediaselangor.com/en/2026/07/387304 . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "voters in 40 of 41 local US contests (21 in Ohio; results unofficial) favoured limits",
+      "why": "The aggregate matches Ballotpedia, but was not independently reconstructed from the full set of election-authority results. Measures differ in legal effect and are not a representative nationwide poll.",
+      "primary_source": "Only partial official checks completed: https://boe.co.trumbull.oh.gov/pdfs/Election%20Summary.pdf ; https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf . Aggregate locator: https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/ . "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "Redbud's 44 pre-vote measures",
+      "why": "The historical snapshot was not obtained. The retrieved tracker instead shows 47 measures and 44 restrictive outcomes among 45 complete counts.",
+      "primary_source": "Redbud tracker, updated 7 November 2026: https://www.datacentersontheballot.com/?race=oh-oregon . This is the tracker author's record, not complete election-authority verification. "
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "claim": "A Sahabat Alam Malaysia submission (about Sep 2026)",
+      "why": "The matching publication located refers to an April 2025 submission and was published in May 2025. The asserted September 2026 document was not identified.",
+      "primary_source": "SAM's own publication record, 10 May 2025: https://foe-malaysia.org/articles/overview-and-challenges-within-malaysian-jurisdiction-on-environmental-impact-assessments-and-strategic-environmental-assessments-sea/ . "
+    }
+  ],
+  "omitted_facts": [
+    "The EIA regime includes more than a campus-category test. DOE's 2016 guideline, section 4.1, addresses projects containing multiple prescribed activities and applies Second Schedule treatment when a qualifying component falls there. Paragraph 3(4) of the 2015 Order also addresses subdivision and expansion. Sources: https://www.doe.gov.my/wp-content/uploads/2021/08/FA-EIA-GUIDELINE-IN-MALAYSIA-1.pdf ; https://www.doe.gov.my/wp-content/uploads/2021/08/Perintah-Kualiti-Alam-Sekeliling-Aktiviti-Yang-Ditetapkan-Eia-2015.pdf . ",
+    "Planning-law geography matters. PLANMalaysia identifies separate planning legislation for Sabah, Sarawak and Kuala Lumpur. The Act 172 discussion should not be presented as an unqualified description of every Malaysian jurisdiction. Official overview: https://www.planmalaysia.gov.my/main/article/akta-172 . ",
+    "Act 172 also provides publicity before draft-plan preparation under section 12A and an appeal route for qualifying section 21(6) objectors under section 23(1)(b). These strengthen the conclusion that existing law contains participation rights, although their coverage is conditional. Official reprint as at 1 June 2021: https://planmalaysia.gov.my/planmalaysia/resources/dokumen/Akta_172/Act_172_Bersih_As_at_1st_June_2021.pdf . ",
+    "MBPJ's published 2018 planning checklist contains a project-notice template inviting neighbouring owners and others wishing to comment or object. It is evidence that published local procedures can extend beyond the analysis's simplified binary. It does not establish the exact legal basis of the July 2026 objection exercise. Source: https://www.mbpj.gov.my/sites/default/files/mbpj/sumber/muat_turun_borang/borang-borang_online_unit_pusat_setempatosc/b02-proses_2-_borang_permohonan_km_skim-2018.pdf . ",
+    "The directly accessible 28 October 2026 answer gives August contracted demand of 2,346MW and actual use of approximately 1,374MW, or 58.5%. Those observations help distinguish current use from the much larger approval and eventual-completion figures. Source: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+    "Earlier official figures are not fully reconciled. On 15 October 2026 Johari described 57 existing data centres with 6,237MW, then said 6,230MW in the same answer, plus another 60 projects requiring 11,172MW. On 28 October he gave 55 operating within 117 and an eventual requirement of approximately 23,000–23,500MW. The later statement is preferable for reporting his latest stated position, but recency does not explain the changed classification or capacity basis. Do not infer closures, growth or an off-grid residual without reconciliation. Sources: https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-15 ; https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined . ",
+    "Water-demand guarantees supplement capital contributions. P.U.(A) 274/2025 inserts regulation 13A, requiring monthly demand estimates for the first six operating years, allowing revision after year three, and permitting a usage-guarantee charge when actual consumption falls short. The provision permits the charge; it does not prove universal collection. Gazette dated 27 August 2025, effective 1 September 2025: https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3046482/PUA%20274%20(2025).pdf . ",
+    "The official water-tariff FAQ says catchment-conservation environmental costs were not yet included in TSM calculations because the implementation mechanism was still being refined. This limits any inference that the tariff already internalises every environmental cost. Source, question 11 notes: https://samb.com.my/wp-content/uploads/2025/08/FAQ-Umum-TSM-TP2-Final.pdf . ",
+    "Public access and mandatory pre-approval comment are distinct. NRES announced access to executive summaries for both First and Second Schedule EIA reports from February 2025. That does not create the same mandatory public-comment requirement for every First Schedule project. Official statement, 22 January 2025: https://www.nres.gov.my/ms-my/pustakamedia/KenyataanMedia/PRESS%20STATEMENT%20PUBLIC%20ACCESS%20TO%20ENVIRONMENTAL%20IMPACT%20ASSESSMENT%20%28EIA%29%20REPORTS.pdf . ",
+    "The US measures vary in effect. For example, Harwood's official proposal concerned additional review requirements for certain industrial development; rejecting it was not itself approval of a particular data centre. Ballotpedia and Redbud also use different inventories and classification procedures. Official Harwood ballot text: https://cityofharwood.com/documents/801/Home_Rule_Charter_Amendment001.pdf ; tracker methodology: https://datacentersontheballot.com/ . "
+  ],
+  "source_assessment": "The main bibliography identifies 17 distinct works when separately dated articles are counted separately: four legal or planning documents, one AMRO report, one Google announcement, one civil-society statement, eight articles across The Star, The Vibes, NST and W.Media, and two Ballotpedia reports. Redbud and an incompletely identified SAM submission add two ancillary references. The institutional range includes government, an intergovernmental economic body, business, civil society and journalism. That is meaningful breadth, but much of the journalism repeats the same ministerial answers, so article count overstates evidential independence. The original analysis lacks directly inspected written answers for several important figures, a reconciled project register, the original Kota Damansara case documents, and a complete set of official US election returns. Community views are largely mediated through news or NGOs. No distinct opposition-party source, independent planning-law analysis or relevant judgment is cited; political balance cannot be inferred merely from outlet names. Corporate and NGO originals establish what their authors announced or requested, not the truth of every underlying benefit or allegation. The 0.55 diversity estimate reflects this institutional breadth together with substantial primary-source and perspective gaps; it is a qualitative assessment, not a measured political-bias index.",
+  "overall_assessment": "The analysis contains substantial accurate material: the Google announcement, AMRO's dated comparison, the principal statutory quotations, the Kelantan rate, the existence of utility cost-recovery mechanisms, and much of the ministerial project breakdown are supported. However, its central headline is false as an unqualified legal statement, and the 'only industrial estate' EIA claim is directly contradicted by the broader statutory scheme. Several shorter cards turn conditional participation rights into an unsupported claim that project-level participation is otherwise unavailable. Those errors were already present under the law and guidance available before the 7 November 2026 cutoff; they cannot be excused as stale criticism following a later reform. Other details remain unverified because the required originals were not obtained, especially certain written-answer figures, exact event attribution, the Bill timetable, the Kota withdrawal date and the complete US ballot tally. UNVERIFIED does not mean false. The 68/100 score is a qualitative editorial assessment weighted toward the central legal and numerical claims, not a statistical probability or a Dempster–Shafer combination of dependent sources. Repeated assertions have been consolidated where their factual content is identical; editorial recommendations, confidence labels, process self-descriptions and the proposed policy preference are not treated as independently provable external facts. The piece requires substantive revision before publication, chiefly to distinguish missing dedicated safeguards from the participation rules that already exist."
+}

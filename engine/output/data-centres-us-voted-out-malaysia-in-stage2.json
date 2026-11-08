@@ -1,0 +1,164 @@
+{
+  "bias_score": 22,
+  "political_lean_estimate": 0.1,
+  "ethnic_framing_estimate": 0,
+  "religious_sensitivity_estimate": 0,
+  "narrative_framing_estimate": 0.2,
+  "geographic_bias_estimate": 0.7,
+  "economic_framing_estimate": 0.2,
+  "gender_agency_estimate": 0.2,
+  "partisan_flags": [
+    {
+      "quote": "User-pays rules are meant to protect the household bill.",
+      "why_biased": "Presents the federal government's stated policy intent (from Minister Fadillah Yusof's written reply) in the voice of the analyst's own 'considered view' without testing whether shared grid transmission upgrades or water-infrastructure bottlenecks still create indirect costs or supply risks for households.",
+      "fix": "Attribute the claim explicitly in the conclusion: 'Ministers say user-pays tariffs are designed to shield household bills, though parliamentary replies have not disclosed how shared grid-reinforcement costs are allocated.'"
+    }
+  ],
+  "racial_flags": [],
+  "religious_flags": [],
+  "geographic_flags": [
+    {
+      "quote": "Planning permission is the local council's call. Neighbouring landowners get 21 days' notice to object only where no local plan exists.",
+      "why_biased": "Treats the Town and Country Planning Act 1976 (Act 172)—which applies only to Peninsular Malaysia and excludes Kuala Lumpur (governed by the Federal Territory (Planning) Act 1982), Sabah, and Sarawak—as the universal law of Malaysia.",
+      "fix": "Specify the jurisdiction: 'In Peninsular states under the Town and Country Planning Act 1976 (excluding KL), neighbouring landowners get 21 days' notice to object only where no local plan exists.'"
+    },
+    {
+      "quote": "Kelantan's gazette prices a data centre's water at RM5.32 a cubic metre. Whether neighbouring landowners hear of the project first depends on the local plan.",
+      "why_biased": "Centers the reframe on Kelantan solely because Kelantan's gazette (P.U.(A) 226/2025) was the only state regulation opened by the analyst, whereas the actual data-centre concentration cited in the analysis is in Johor (4,428MW projected by 2030), Selangor, and Negeri Sembilan, and East Malaysia is completely omitted.",
+      "fix": "Open and cite the water tariff gazettes for Johor, Selangor, or Negeri Sembilan where the data-centre load actually sits, or explicitly note why Kelantan is used as an illustrative Peninsular state tariff."
+    }
+  ],
+  "economic_flags": [
+    {
+      "quote": "Ministers say costs follow 'cost causation': an Ultra High Voltage tariff since 1 July 2025 for all supply above 50kV, data centres included; a higher Connected Load Charge; a data-centre water tariff; developer capital for water works; and at least 30% renewables.",
+      "why_biased": "Frames the economic issue around corporate pledges (Google paying 100% of power) and ministerial 'cost causation' assurances while omitting community economic externalities such as local land/property impacts, backup diesel generator costs, or water pressure interruptions faced by B40/M40 residents near industrial zones.",
+      "fix": "Balance ministerial 'cost causation' claims by noting that no independent audit or published tariff schedule breakdown in the brief verifies whether upstream grid and reserve-margin costs are 100% ring-fenced from domestic ratepayers."
+    }
+  ],
+  "gender_flags": [
+    {
+      "quote": "On 4 Nov 2026, at the Google event, Investment, Trade and Industry Minister Johari Abdul Ghani said 117 data centres had been approved...",
+      "why_biased": "Every named individual granted active decision-making or speaking agency in the analysis is a male cabinet minister (Johari Abdul Ghani, Fadillah Yusof, Akmal Nasrullah), whereas civil society and local objectors are aggregated anonymously as 'Greenpeace Malaysia and co-signatories' or 'residents' (gender agency estimate 0.2, male-skewed).",
+      "fix": "Where available in primary sources, name the specific spokespersons for Greenpeace Malaysia, Sahabat Alam Malaysia, or the Kota Damansara resident representatives alongside the ministers."
+    }
+  ],
+  "omission_flags": [
+    "Sabah and Sarawak are completely omitted ('Regional' lens left unused), despite having separate environmental impact laws, separate water authorities outside SPAN, and separate town planning ordinances outside TCPA 1976.",
+    "Kuala Lumpur's separate planning regime is omitted: the analysis applies TCPA 1976 (Act 172) across the board without noting that Kuala Lumpur is governed by the Federal Territory (Planning) Act 1982 and its own public-objection rules.",
+    "The 'Environmental' lens is marked applicable but unused despite Card 1 focusing on the Environmental Impact Assessment (EIA) Order 2015; concrete physical impacts driving resident and NGO objections (water consumption volumes, cooling discharge, diesel backup emissions, and the 5dB noise/50m buffer rule mentioned only in source_notes) are omitted from the cards."
+  ],
+  "evasion_flags": [
+    "Card 3 asserts that in planned areas 'the public's formal objection point is the plan' and neighbour notice under TCPA s21(6) applies 'only where no local plan exists', then tacks on Kota Damansara (which is under MBPJ, a planned area) as a 'Counterweight' where residents objected in July 2026 without explaining the legal mechanism that allowed those objections (which needs_verification[7] admits is an unresolved contradiction).",
+    "Card 2 presents three divergent capacity numbers—23,500MW approved on completion, 12.3GW approved grid supply as of August 2026, and 8,391MW projected Peninsular demand by 2030—and evades explaining why projected 2030 demand is lower than already-approved August 2026 grid supply by stating 'Utilisation figures use different denominators across replies, so no trend is claimed'."
+  ],
+  "shoe_test_failures": [
+    "If an opposition-led state government (e.g., Kelantan or Terengganu) fast-tracked 117 industrial facilities using guidelines with 22-to-33-day approval tracks and no project-level resident objection window while claiming 'user-pays rules are meant to protect the household bill', an audit would scrutinize whether those assurances actually protect households rather than adopting 'meant to protect the household bill' as the anchor of 'The considered view'."
+  ],
+  "cardinal_sin_flags": [
+    {
+      "sin": "OVERCLAIM",
+      "quote": "Malaysia has written data-centre rules on who pays, none on who gets heard.",
+      "why": "Repeated in headline_suggestion ('Malaysia wrote rules on who pays, and none on who gets heard'), this overclaims by stating Malaysia has written 'none' on who gets heard, whereas Cards 1 and 3 prove general statutory rules DO exist (TCPA 1976 ss13, 16, 21(6) and EIA Order 2015 First Schedule DG discretion), and residents in Kota Damansara did formally object in July 2026; what Malaysia lacks is a data-centre-specific EIA or project-notice rule in planned areas.",
+      "fix": "Revise to: 'Malaysia has written data-centre-specific rules on who pays, but none on who gets heard before a campus is built.'"
+    },
+    {
+      "sin": "OVERCLAIM",
+      "quote": "A campus enters the Order only as a 20-hectare 'industrial estate', a First Schedule category with no public display unless the Director General directs it.",
+      "why": "Claims a data-centre campus enters the EIA Order 2015 'only' as a 20-hectare industrial estate, ignoring that campuses building their own off-grid power plants (which Card 2 notes many of the 27 early-stage projects plan to do) or clearing sensitive/hill/coastal land can trigger other First or Second Schedule activities under P.U.(A) 195/2015.",
+      "fix": "Revise to: 'Without on-site power generation or sensitive terrain triggers, a campus enters the Order only if it reaches the 20-hectare industrial-estate threshold in the First Schedule.'"
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "On 4 Nov, Google committed US15b to data centres in Selangor and Negeri Sembilan, adding to 117 approved nationwide. A day earlier, voters in 40 of 41 local US contests (21 in Ohio; results unofficial) favoured limits.",
+      "why": "Although source_notes (6) states 'No source links Google's Malaysia investment to the US votes; the context line presents them as parallel events, not cause and effect', juxtaposing 'On 4 Nov, Google committed US15b...' with 'A day earlier, voters in 40 of 41 local US contests... favoured limits' leads a reasonable reader to infer causal displacement or regulatory flight.",
+      "fix": "Remove the unrelated US local ballot count from the context line or explicitly state that the two events are unrelated and highlight the contrast in local democratic mechanisms instead."
+    },
+    {
+      "sin": "MISLEADING_FRAMING",
+      "quote": "Planning permission is the local council's call. Neighbouring landowners get 21 days' notice to object only where no local plan exists.",
+      "why": "Presents TCPA 1976 s21(6) as an ironclad rule that neighbours in planned areas get no project-stage say, while burying at the bottom of the card the fact that Kota Damansara (MBPJ, a planned area) residents objected in July 2026 and caused the application to be withdrawn—a contradiction the analyst admits in needs_verification[7] is unresolved.",
+      "fix": "Acknowledge upfront that while TCPA s21(6) mandates neighbour notice only where no local plan exists, local councils in planned areas such as MBPJ can still receive resident objections in practice."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "No amending order adding such an entry was found as of 7 Nov 2026.",
+      "why": "In needs_verification[0], the analyst explicitly discloses that 'no P.U.(A) gazette search was completed' since 28 Aug 2015 and that the claim relies instead on a secondary Sahabat Alam Malaysia submission from around Sep 2026.",
+      "fix": "State in the card text that as of Sahabat Alam Malaysia's September 2026 submission and Greenpeace's July 2026 statement, data centres remained unlisted under the EIA Order 2015, rather than implying a complete gazette search through 7 Nov 2026 was performed."
+    },
+    {
+      "sin": "UNVERIFIED_DETAIL",
+      "quote": "The energy ministry's written reply (via The Star, 20 Oct 2026) put approved grid supply at 12.3GW as of August... an Ultra High Voltage tariff since 1 July 2025 for all supply above 50kV, data centres included; a higher Connected Load Charge; a data-centre water tariff; developer capital for water works; and at least 30% renewables.",
+      "why": "As disclosed in confidence and needs_verification[3], the primary parliamentary written replies/Hansard PDFs were never opened because parliament.gov.my was unreachable; furthermore, 'at least 30% renewables' is stated without clarifying whether it is a facility-level mandate or a grid-mix target.",
+      "fix": "Clarify the exact scope of the '30% renewables' reference and note in the text that the figures are as reported by The Star and The Vibes from parliamentary replies."
+    }
+  ],
+  "verification_log": [
+    {
+      "claim": "Google pledged US$15b on 4 Nov 2026 (2027-2028) and to pay 100% of its own power and direct grid-connection costs.",
+      "status": "UNVERIFIED",
+      "primary_source": "I cannot verify this independently against Google's 4 Nov 2026 press release outside the provided brief context.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Separate data-centre water tariff of RM5.30-5.38/m3 in Peninsular Malaysia and Labuan effective 1 Aug 2025.",
+      "status": "UNVERIFIED",
+      "primary_source": "The analysis itself notes in needs_verification[3] that the parliamentary written reply PDF could not be opened on parliament.gov.my and was cited via The Star (20 Oct 2026); only Kelantan's gazette P.U.(A) 226/2025 at RM5.32/m3 was opened directly in the brief.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "EIA Order 2015, P.U.(A) 195/2015, paras 3(2)-(3), First and Second Schedules contain no data-centre, computer or ICT entry, and no amending order adding such an entry was found as of 7 Nov 2026.",
+      "status": "UNVERIFIED",
+      "primary_source": "While the base text of P.U.(A) 195/2015 is cited from the AGC text in the brief, needs_verification[0] explicitly admits 'no P.U.(A) gazette search was completed' for amending orders since 28 Aug 2015.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "On 24 July 2026 Greenpeace Malaysia and co-signatories asked DOE for data centres to be listed 'as a prescribed activity requiring a Schedule 2 Environmental Impact Assessment'.",
+      "status": "UNVERIFIED",
+      "primary_source": "I cannot verify this independently; needs_verification[5] explicitly flags that the addressee (DOE) and exact wording still require confirmation against the primary 24 Jul 2026 statement.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "AMRO's 2026 Malaysia report states power-supply applications from data centres 'had exceeded 11,000MW, equivalent to around 40 percent of Peninsular Malaysia's capacity of 27,000MW' as of December 2024.",
+      "status": "UNVERIFIED",
+      "primary_source": "I cannot verify this independently outside the provided brief's citation of AMRO Malaysia Annual Consultation Report 2026, Selected Issue 1.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "On 4 Nov 2026, MITI Minister Johari Abdul Ghani said 117 data centres had been approved with a combined maximum demand of about 23,500MW on completion (55 operational, 19 under construction, 16 approved not started, 27 other stages).",
+      "status": "UNVERIFIED",
+      "primary_source": "As noted in confidence and needs_verification[2], these are oral event remarks reported by NST (4 Nov 2026) and W.Media (29 Oct 2026), not a primary government gazette or written parliamentary reply.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Approved grid supply for data centres was 12.3GW as of August 2026, and projected Peninsular data-centre demand is 8,391MW by 2030 (of which Johor 4,428MW).",
+      "status": "UNVERIFIED",
+      "primary_source": "As noted in needs_verification[3], parliament.gov.my was unreachable and these figures rely on secondary media reports (The Star and The Vibes, 20 Oct 2026) rather than verified Hansard PDFs.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "Town and Country Planning Act 1976 (Act 172, reprint as at 1 June 2021) s21(6) requires 21 days' neighbour notice only where no local plan exists, while ss13(2) and 16(3) require at least four weeks for objections to draft local plans in three issues of at least two local newspapers.",
+      "status": "UNVERIFIED",
+      "primary_source": "The statutory quotes match Act 172 as cited in the brief, but needs_verification[1] notes no post-1 June 2021 amendment check was confirmed, and Act 172 applies only to Peninsular states adopting it (excluding Kuala Lumpur under Act 267, Sabah, and Sarawak).",
+      "corrected_value": ""
+    },
+    {
+      "claim": "On 19 Oct 2026 the National Economic Action Council agreed to draft a Digital Infrastructure (Data Centre) Bill for Cabinet in 2027.",
+      "status": "UNVERIFIED",
+      "primary_source": "Cited via secondary report (NST, 19 Oct 2026, quoting Akmal Nasrullah); needs_verification[6] notes that absence of a published draft or consultation was not independently confirmed via a primary government portal.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "In Kota Damansara (Selangor), residents objected in July 2026 and the consultant withdrew the application on 28 Jul 2026, which MBPJ said was 'to allow the developer to re-evaluate the feasibility of the site'.",
+      "status": "UNVERIFIED",
+      "primary_source": "Cited from The Star (30 Jul 2026) reporting MBPJ's statement; needs_verification[7] notes the legal basis of the objection window in MBPJ's planned area remains unresolved.",
+      "corrected_value": ""
+    },
+    {
+      "claim": "On 3 Nov 2026, voters in 40 of 41 local US contests (21 in Ohio; results unofficial) favoured limits on data centres.",
+      "status": "UNVERIFIED",
+      "primary_source": "Cited from Ballotpedia (3 and 6 Nov 2026, unofficial results) in the brief; I cannot verify this independently against official county/state election board certificates.",
+      "corrected_value": ""
+    }
+  ],
+  "overall_assessment": "The analysis is well-structured, non-partisan in tone, and transparently logs its own evidentiary gaps in the metadata, but its headline and hook commit a clear overclaim by asserting Malaysia has written 'none [no rules] on who gets heard' when the cards themselves prove statutory objection mechanisms exist under the Town and Country Planning Act 1976 and the EIA Order 2015 (and were actually used by Kota Damansara residents in July 2026). It also suffers from strong Peninsular/Klang Valley geographic bias (0.7) by presenting Peninsular-only statutes (TCPA 1976 Act 172 and SPAN water tariffs) as nationwide Malaysian law without noting that Sabah, Sarawak, and Kuala Lumpur operate under separate planning and environmental legislation, while its context line relies on a suggestive juxtaposition between US local ballot votes and Google's Malaysian investment that implies causation without evidence."
+}

@@ -1,9 +1,25 @@
 # Radar — Top Issues to Develop
 
-Scan: 2026-09-18 22:14 UTC (CI run 1956, `radar-scan.yml`). Queue size:
-1,214 (524 entries first seen since 4 Sep). 505 events fetched; five
-sources healthy; six streams ok. Latest published ID: **2012**
-(sourceDate 2026-09-05). Next free ID: **2013**.
+Scan: 2026-11-07 20:10 UTC (CI, `radar-scan.yml`, commit `640c86d`).
+Queue: 1,448 active issues (13,178 topics tracked); 493 events fetched;
+five sources healthy (news_rss, reddit, gdelt, parliament, court); six
+streams ok. 592 queue entries were first seen on or after 24 Oct.
+Latest published ID: **2014** (sourceDate 2026-09-19). Next free ID:
+**2016**: **2015** is held by open draft PR #70 (southern Thailand
+dialogue, awaiting Stages 2/3/5). Reserved this cycle: **2016 G1**,
+**2017 G2**, **2018 G3**.
+
+## Editorial direction for this cycle (set 2026-11-07)
+
+Lead with **global events that land on Malaysia in ways Malaysian
+coverage has not connected**. The goal is to position T4A as the source
+that reads the world for Malaysians: second-order effects, not
+headlines. Every global pick must carry a concrete Malaysian mechanism
+(a contract, a trade flow, a statute, a tariff, a port) with a primary
+source, never a vibe. The radar's foreign stream
+(`radar/output/foreign-events.json`, rolling 24h) is now a first-class
+input alongside the silence-watch. Domestic picks stay in the queue
+(Tier D below) and fill slots the global slate cannot.
 
 Curated from `radar/output/issue-queue.json` and
 `radar/output/silence-watch.md`. This is the `editorial review` step in
@@ -14,370 +30,482 @@ does not write issues; this list curates which candidates enter the
 
 ## What changed this cycle — read this first
 
-The previous edition was pinned to the **2026-09-03** scan. All three of
-its Tier A picks have since shipped: **2010** Tabung Haji RCI
-restatement (4 Sep), **2011** Sarawak haze / Transboundary Haze Act
-(4 Sep), **2012** Felda decade-late audit (5 Sep). Nothing has shipped
-since 5 Sep, so the next three slots (Tue 22, Thu 24, Sat 26 Sep MYT)
-are open.
+The previous edition was pinned to the **2026-09-18** scan. Its Tier A2
+(political financing / Umno's RM50m donation drive) shipped as **2013**
+on 19 Sep, alongside **2014** (southern Thailand). Its A1 (AGC
+discontinuing four Muhyiddin charges) and A3 (800kWh electricity
+exemption) never entered Stage 1 and are now seven weeks old; both are
+demoted below. **Nothing has published for seven weeks.** The next three
+slots are **Tue 10 Nov, Thu 12 Nov and Sat 14 Nov** (MYT).
 
-Since 4 Sep the radar has run ~170 more cycles. Five story clusters
-dominate the fresh track, and the silence filter again splits most of
-them into many low-scoring entries:
+Since 24 Oct, six clusters dominate the fresh track:
 
-1. **Najib conditional pardon (18 Sep).** ~20 entries in one cycle: FT
-   Pardons Board, house arrest on payment of the RM50m fine, DAP
-   emergency CEC on 19 Sep, Umno's nationwide donation drive to pay the
-   fine, a "fake" house-arrest order the FT minister has reported to
-   police. The pardon itself is a royal prerogative (Article 42) and is
-   held behind the 3R bar. **The donation drive is the T4A story**
-   (Tier A2 below).
-2. **AGC drops four of Muhyiddin's charges (15-16 Sep).** Highest-scoring
-   fresh entry in the queue (0.579, rank 30, `[institutional, legal]`),
-   plus the MACC officer who retracted a police report against the
-   defence lawyer, Bersatu's call to lift the account freeze, and reform
-   groups asking the AGC to explain. Tier A1.
-3. **Electricity: 800kWh exemption (16-17 Sep).** Households up to
-   800kWh exempt from AFA, retail charge and SST until 31 Dec; economy
-   minister ties the bills to a "global energy shock"; PM convened a
-   special meeting. 0.477, rank 109, F15 on the fresh track. Tier A3.
-4. **Sabah / Sarawak seats and MA63 (11-17 Sep).** PM says both states
-   get a bigger share of Dewan Rakyat seats; EC will re-delineate
-   nationwide if Parliament approves; PAS wants east-coast seats too;
-   Bintulu Port moved to Sarawak jurisdiction on 14 Sep after two
-   federal Acts were repealed; Sarawak floats a 5-10 % federal-revenue
-   special grant. Tier B1 (needs the bill).
-5. **Negeri Sembilan proclamation saga (14-18 Sep).** Exco statement on
-   the Ruler's removal; AGC says gazetting it is unconstitutional; DKU
-   lodges a police report; State Secretary's Office sides with the AGC;
-   the MB endorses the Exco and asks for gazetting. Royalty CRITICAL.
-   Already published as **1976** (April episode) with a full in-flight
-   brief; this is an **edition 2 update, Stage 5 required**, not a new
-   issue.
+1. **Najib house arrest (6-7 Nov).** ~30 entries in two days: Umno
+   completes the RM50m fine payment; the High Court issues the house
+   arrest order; Najib leaves Kajang; implementation is deferred; the AGC
+   denies defying the King and seeks clarity on the jail terms; Istana
+   Negara says the decree is clear; the PM tells the AG to seek an
+   audience; Umno leaders lodge police reports. Royalty CRITICAL; held
+   behind the 3R bar. The money half is already **2013**; the fine's
+   completed payment and the 6 Nov call to audit the donations are an
+   **edition-2 update**, not a new issue (see Updates). The statutory gap
+   underneath (no house-arrest law) is **Wildcard W1**, editor's call.
+2. **Melaka state election.** Nomination 31 Oct, early voting 10 Nov,
+   polling **14 Nov**, 28 seats. Campaign items are horse-race. The
+   structural item is the July amendment allowing up to seven appointed
+   assemblymen, accumulated pick **S5** (116 days in the queue).
+   **Tier D1, parked.**
+3. **Scams and the Cybercrimes Bill (3-6 Nov).** Parliament told victims
+   recovered about 1% of RM1.23b lost over a decade (4 Nov); the DPM says
+   the 2026 Bill lets courts freeze scam proceeds before anyone is charged
+   (5 Nov, 0.494, rank 91, the second-highest fresh score). **Merged
+   into G3.**
+4. **Pipeline losses "cut to RM3b" (3-6 Nov).** The PM says a 30 Oct
+   agreement with China Exim Bank cut losses on the cancelled MPP and TSGP
+   pipelines to RM3b and moves RM5b of loans to a Perak-Penang water
+   scheme (F11). **Tier D3.**
+5. **Investment headlines (2-6 Nov).** Google's US$15b (RM61b) data
+   centre commitment (F1), JS-SEZ RM88.8b approved (F2/F10), RM20.27b of
+   income tax refunds (F3), the relaxed raw rare-earth export moratorium
+   (6 Nov). Google becomes **G1** through the global frame below; the
+   rare-earth easing is narrow (R&D exports only) and sits in Tier B.
+6. **Courts.** Court of Appeal cuts Klang council's dumpsite damages from
+   RM117m to RM3m (26 Oct, **0.521, rank 60, top fresh entry**); Syed
+   Saddiq's constituency-allocation challenge paused for settlement talks
+   (5 Nov, F14/F15); ex-AG Idrus Harun reappointed to the Judicial
+   Appointments Commission (1 Nov, F9); Da'i Syed rape acquittal and the
+   AGC's review bid (4-6 Nov, held).
+7. **Global, from the foreign stream (6-7 Nov).** US midterms: Democrats
+   take Congress; voters reject data centres in 40 of 41 local ballots;
+   Nasdaq falls on AI-regulation fears. Iran war: tankers on fire in
+   Hormuz, fresh US strikes, Iran-linked sanctions. Scam economy: US
+   sanctions on Cambodia's Prince Group; Myanmar's money-laundering
+   curbs; North Korea's US$6.3b Binance theft. Haze: Singapore reviews
+   its worst haze since 2015 and its haze law; Thailand warns of a "Super
+   El Nino" in 2027. Trump-Xi summit in Shenzhen ahead of APEC. These
+   feed **Tier G**, the lead tier this cycle.
 
-**Radar health.** 1,956 CI runs; the last eight today all succeeded.
-`state.json` and the prediction pipeline are intact on CI. The daily
-Malaysia-impact pass (`malaysia-impact-pass.yml`) reports success but
-still writes nothing: `radar/output/malaysia-impact-watch.{json,md}` do
-not exist because `ANTHROPIC_API_KEY` is unset. Unchanged since 3 Aug.
-Second operational note: `radar/config/malaysia-calendar.json` says "no
-scheduled state elections in 2026", yet the queue carries Melaka-poll
-items (12, 15, 18 Sep). The Melaka assembly's term runs out around
-November 2026; add a window so the hazard model stops treating those
-items as calendar-free.
-
-**Top-of-queue caveat.** Ranks 1-16 remain single-keyword stubs
-(`india`, `malay`, `chinese`, `federal`, `budget`) and calendar
-predictors (`parliament budget session opens`, p(eruption within 72h)
-0.99 against the 5 Oct sitting). They are radar structure, not stories.
-Read the silence-watch and the fresh list below instead.
+**Top-of-queue caveat.** Ranks 1-2 are calendar predictors for events
+that have already happened ("budget 2027 presentation", p 0.99; "parliament
+budget session opens"); ranks 3+ are single-keyword stubs (`malay`,
+`india`, `chinese`). Read the silence-watch and the fresh list below.
 
 Every number quoted below is a **radar signal, not a verified figure**
 unless it is marked as already traced in a brief.
 
 ---
 
-## Tier A — develop next (this week)
+## Tier G — global events with a Malaysian mechanism (develop next)
 
-### A1. The AGC dropped four charges against Muhyiddin on "evidence and litigation risk". The reasons stay in the AGC.
-- **Radar:** 15 Sep "MACC officer retracts police report against
-  Muhyiddin's lawyer; court decides not to cite for contempt" (0.579,
-  the top fresh entry; 42 news / 14 social, `DELAYED_FUSE`); 16 Sep
-  "AGC: dropping four charges against Muhyiddin based on evidence,
-  litigation risks; three Jana Wibawa charges remain" (0.286, 54/15);
-  15 Sep "Bersatu wants freeze on accounts lifted after acquittal"
-  (23/4); 17 Sep reform groups and think-tanks say the AGC gave no
-  explanation (BM, 2/3); 14 Sep MACC officer denies the key witness got
-  "special treatment" or immunity (39/13). Dims [institutional, legal,
-  political].
-- **Why develop:** the 3 Aug and 4 Sep editions skipped Jana Wibawa as
-  saturated and sub judice. The story has changed shape: the question is
-  no longer the trial but the **discretion to discontinue**. Article
-  145(3) lets the AG withdraw any charge; nothing obliges the office to
-  publish reasons; a two-line statement is the entire public record. The
-  structural fix (the AG-Public Prosecutor split) is already T4A issue
-  **1997**, still in committee with the report unpublished. That is the
-  reframe: the office that decided this is the office Parliament is
-  still deciding how to split.
-- **Verification path:** AGC's 16 Sep statement (full text); the High
-  Court order of discharge and whether it is DNAA or acquittal; the
-  charge sheets (which four Sections, which three remain); the Article
-  145(3) text; the AG-PP bill committee status from **1997**'s brief;
-  the retracted police report and the court's contempt decision (15 Sep).
-- **Lenses:** Governance, Legal, Political.
-- **Risk flags:** Political HIGH (Bersatu is the main opposition party);
-  3R none. **Sub judice:** three charges are live; count charges, quote
-  the AGC verbatim, never characterise guilt or innocence. **Stage 5:**
-  not triggered at HIGH; re-check after the brief if the take sharpens
-  to CRITICAL.
-- **Related:** 1997, 1961, 1988.
+### G1. On 3 Nov, US voters backed limits on data centres in 40 of 41 local ballots. The next day, Google committed US$15b more to Malaysia. → **in pipeline as 2016**
+- **Radar:** foreign stream 6-7 Nov: Al Jazeera "How the US midterm
+  elections reflected resistance to data centres"; "Protesters break into
+  Microsoft data centre site in Amsterdam"; Nikkei "US midterms live:
+  Nasdaq plunges 5.5% on AI regulation fears", "US anti-data center
+  sentiment spreads, hitting Asian markets"; CNA "AI rout sets off market
+  alarm signals". Domestic queue: 4 Nov "Google commits additional US$15b
+  to Malaysia data centre expansion... 37,000 jobs" (F1, 0.392, 65/18);
+  10 Oct "Wider electricity bill protection, RM15b national grid
+  investment will benefit households, says TNB" (0.392).
+- **Why develop:** the same week, three signals point one way. American
+  voters favoured limiting data centres in 40 of 41 local measures on 3
+  Nov (Ballotpedia; mostly size caps and moratoriums, some advisory);
+  protesters broke into a Microsoft site in Amsterdam on 6 Nov; markets
+  sold AI stocks on fears of a regulating Congress. Malaysia, on 4 Nov,
+  celebrated a larger commitment (Google's sites: Selangor and Negeri
+  Sembilan). Research narrowed the angle (7 Nov): Malaysia has written
+  cost-recovery rules (UHV tariff, contracted-capacity charges, water
+  tariff and capital contributions), but data centres are **not a
+  prescribed activity under the EIA Order 2015**, the nearest trigger
+  carries no public comment, and the Data Centre Bill reaches Cabinet
+  only in 2027, while approvals total 117 data centres and about
+  23,500MW of maximum demand. The question Malaysian coverage has not
+  asked: **who in Malaysia gets the say that American towns just used.**
+  Builds on **1963** (Johor water, the AI carve-out) without repeating
+  it; 1963's brief is now outdated on several counts.
+- **Verification path:** the official Google / MITI / MIDA statement of
+  4 Nov; the ballot tracker and two county results pages; Knight Frank /
+  C&W / BMI Johor capacity figures with definitions; the Energy
+  Commission's tariff treatment of data centres and TNB's grid capex;
+  Malaysia's approval chain (MIDA, state, local council, Energy
+  Commission, whether the EIA Order covers data centres); Singapore's
+  2019-22 moratorium as the regional comparator; any BNM note on
+  concentration risk. Research agent running; brief at
+  `engine/briefs/data-centres-us-voted-out-malaysia-in.md`.
+- **Lenses:** Economic, Environmental, Governance (alt: Technology).
+- **Risk flags:** all LOW for 3R. Overclaim traps: (a) the US ballots were
+  41 local measures in 10 states that "favoured limiting" development;
+  never write "America rejected data centres"; (b) "AI bubble" is commentary, not a finding; attribute it;
+  (c) do not imply Google's projects are harmful; the issue is who
+  decides and who pays. **Stage 5:** not triggered.
+- **Related:** 1963, 1995, 1931 (draft).
 
-### A2. Malaysia has no political-financing law. This week a party opened a nationwide drive to pay a RM50m criminal fine.
-- **Radar:** 18 Sep "Zahid announces Umno donation drive to pay Najib's
-  RM50m fine following conditional pardon" (silence detector INST-0027,
-  importance 0.33); 8 Sep "MACC: political financing bill should set
-  clear penalties, ensure independent enforcement" (0.477, rank 107,
-  57/16, `[institutional, political]`); 14 Sep column "The political
-  financing bill: what's taking so long?" (36/6); 18 Sep "Umno hopes
-  Najib's conditional pardon will provide boost ahead of Melaka polls"
-  (62/26). Foreign comparator in the same window: two £36m crypto
-  donations to Reform UK (12 Sep), which the UK law at least makes
-  public.
-- **Why develop:** the pardon is the loudest story of the month and T4A
-  cannot touch the decision itself (royal prerogative). The gap
-  mainstream leaves open is the money: who may give a party funds, how
-  much, and whether the public ever learns the names. The bill was a
-  2018 manifesto item, went to a National Consultative Council that met
-  once, and the MACC is now publicly lobbying for it. Draft **1307**
-  ("Political financing transparency law remains absent since 2018
-  promise") and **1114** (NCC met once) exist unpublished and legacy;
-  supersede them with a fresh brief rather than revive.
-- **Verification path:** Zahid's 18 Sep statement and the mechanism of
-  the drive (account, cap, disclosure); the FT Pardons Board's stated
-  conditions (fine amount, deadline); the 2018 PH manifesto pledge; the
-  NCC on political financing (2019) and its output; MACC's 8 Sep
-  statement; the Societies Act 1966 and Election Offences Act 1954
-  provisions that currently touch party money; Hansard answers on the
-  bill's status in the June 2026 sitting.
-- **Lenses:** Governance, Legal, Political.
-- **Risk flags:** Political CRITICAL (Umno, DAP, PN all live on it);
-  Royalty adjacent (the pardon). **Hard guardrails:** no card evaluates
-  the pardon decision or the Pardons Board; critique the absence of a
-  statute, not the party. Do not imply the drive is unlawful; the point
-  is that no law speaks to it. **Stage 5: TRIGGERED** (Political
-  CRITICAL with a sharp take) per CLAUDE.md / ADR-0004. Budget the extra
-  browser round.
-- **Related:** 1997, 1990, draft 1307, draft 1092.
+### G2. For two years China imported more "Malaysian" crude than Malaysia produces. The US blockade of Iran just switched the gap off.
+- **Radar:** foreign stream 6-7 Nov: "Iran Guards say two tankers caught
+  fire in Hormuz"; "Sailor killed in Gulf as Iran says tankers on fire";
+  "Trump confirms new US strikes on Iran's Qeshm island"; "US Treasury
+  sanctions eight Canadian money exchange firms over Iran ties".
+  Domestic queue: 3 Nov "After customs flags import irregularities,
+  maritime expert asks MACC to revisit RM220m crude cargo report"
+  (0.274, 49/14).
+- **Why develop:** Chinese customs recorded about 1.4m barrels a day of
+  crude from Malaysia in 2024 against Malaysian output of about 0.6m (EIA
+  via CNBC); analysts attribute the gap to Iranian oil relabelled after
+  ship-to-ship transfers off Malaysia's east coast. Iran International
+  (22 Oct 2026) reports the recorded "Malaysian" flow fell sharply once
+  the US blockade began. The blockade is a natural experiment: the
+  barrels that vanished show how much of the trade ran through Malaysian
+  waters. Malaysian coverage treats STS as a maritime-enforcement story;
+  the T4A angle is exposure: what Malaysia earned, what it policed, and
+  what US secondary sanctions now mean for Malaysian ports, banks and
+  registries while the US is at war with Iran.
+- **Verification path:** China GAC customs data by origin (monthly, 2024
+  to Oct 2026); Malaysian production (DOSM / EIA / Petronas); Malaysia's
+  STS rules (Marine Department / MMEA notices, 2025 permit requirement if
+  it exists); OFAC SDN designations naming vessels or firms linked to
+  Malaysian waters; the RM220m crude cargo case (customs statement, MACC
+  response); Al Jazeera 30 Jul 2026 field report; Iran International
+  22 Oct 2026 (treat as partisan; corroborate with Kpler / Vortexa via
+  Reuters or Bloomberg).
+- **Lenses:** Security, Economic, Legal.
+- **Risk flags:** Political MEDIUM-HIGH (foreign-policy sensitivity;
+  Malaysia's stated position on Iran and Gaza). Religious LOW; never
+  frame by faith. Every "Iranian" attribution must be sourced as an
+  analyst estimate unless a customs or sanctions document says so.
+  **Stage 5:** re-check after the brief; source diversity is the risk
+  (Western and Iranian-opposition outlets dominate).
+- **Related:** 1995 (Nvidia chip trans-shipment), 2014.
 
-### A3. Households up to 800kWh are exempt from three electricity charges until December. Nobody has said what it costs.
-- **Radar:** 17 Sep "Anwar: households using up to 800kWh exempt from
-  AFA, retail charge and SST on electricity bills until Dec 31 amid haze,
-  heat" (0.477, rank 109, 73/31, F15); 16 Sep "Anwar to review impact of
-  electricity bill increase at special meeting tomorrow" (0.408, 62/19);
-  17 Sep "Global energy shock now hitting Malaysia's electricity costs,
-  says economy minister" (0.286, 55/21); 17 Sep "Govt raises electricity
-  bill protection threshold to 800kWh" (34/7). Accumulated companions:
-  S1 diesel subsidy RM2.5b a month (127 days quiet), S2 "consider the
-  RM50b fuel subsidy bill" (56 days). Dims [economic, ethnic, political].
-- **Why develop:** an exemption announced as haze relief, framed by the
-  economy minister as an energy-price shock, with the Budget session
-  opening 5 Oct and Budget 2027 on 23 Oct. Mainstream carries the
-  threshold; it does not carry the bill. The T4A angle is the missing
-  denominator: how many households sit under 800kWh, what the AFA is
-  (the automatic fuel pass-through in the 2025 tariff structure), who
-  absorbs the waived amount (TNB, the Electricity Industry Fund, or the
-  Treasury), and how this sits against the RM8b-a-year rationalisation
-  target T4A already published as **1102**.
-- **Verification path:** the Energy Commission's tariff schedule and AFA
-  mechanism (gazette / ST circular); the PMO or MoF statement of 17 Sep
-  with the cost estimate if one was given; TNB's Bursa filing if the
-  waiver is borne by the utility; the 2025 tariff-restructuring
-  announcement for the previous threshold; DOSM household electricity
-  consumption distribution.
-- **Lenses:** Economic, Governance, Environmental (alt: Health for the
-  haze link).
-- **Risk flags:** all LOW. Ethnic dim is a radar keyword artefact.
-  **Stage 5:** not triggered.
-- **Related:** 1102, 2011, 2001.
+### G3. The US moved to forfeit billions from a Cambodian scam empire. Malaysia's scam victims got back about 1% in a decade.
+- **Radar:** foreign stream 7 Nov: Nikkei "US slaps sanctions on
+  Cambodia's Prince Group over online scams"; SCMP "Myanmar's will to
+  fight money laundering questioned as tougher curbs loom"; SCMP "How
+  North Korea turns child prodigies into crypto thieves" (Binance
+  US$6.3b). Domestic queue: 4 Nov "Scam victims recover just 1pc of
+  RM1.23b lost over past decade" (0.392); 5 Nov "Zahid: 2026 Cyber Crime
+  Bill allows courts to freeze scam proceeds before suspects are charged"
+  (0.494, rank 91); 20 Oct "RM4.3bil in assets frozen in financial crime
+  probes since 2022" (47/11).
+- **Why develop:** absorbs the domestic scam pick (D2) and gives it the
+  global frame. Abroad, governments are forfeiting scam proceeds at
+  scale; at home, the Home Ministry's own figures show RM14m returned on
+  RM1.23b lost, RM4.3b frozen across all financial-crime probes against
+  RM48m forfeited (2022-Sep 2026), and the Cybercrimes Bill's pre-charge
+  freezing power (passed July) has no commencement date that this review
+  could find. The question: where does seized money go, and why so
+  little reaches victims. **Never compare unlike pools**: RM4.3b frozen
+  covers all financial crime, not scams.
+- **Verification path:** OFAC / DOJ documents on the Prince Group
+  (2025 forfeiture and the reported 2026 sanctions); the 4 Nov and 5 Nov
+  written answers; the 20 Oct PMO figures; AMLA 2001 forfeiture
+  provisions (where forfeited property vests; third-party claims);
+  Cybercrimes Bill 2026 cl. 1(2) and cl. 54; the federal gazette for
+  commencement; **2004**'s brief.
+- **Lenses:** Legal, Economic, Regional.
+- **Risk flags:** all LOW. **Stage 5:** not triggered.
+- **Related:** 2004, 1975.
+
+### Wildcard W1. Malaysia still has no house-arrest law. That gap, not the decree, is why a pardon, a court order and a prison department could not agree this week.
+- **Radar:** the week's dominant cluster (~30 entries, the highest
+  social counts in the queue: 6-7 Nov, house arrest order, AGC deferral,
+  Istana statement). Supporting: The Star, 6 Oct 2026, "House Arrest
+  Bill still under AGC review, over a year after 'final stage'" (Home
+  Ministry written answer); 6 Nov Muhyiddin "explain what regulations
+  govern house arrest"; 7 Nov Saifuddin "best interpretation... should be
+  at court". Global comparator in the foreign stream: Paraguay's ousted
+  president placed under house arrest (7 Nov).
+- **Why it is the most-read story available:** every reader is already
+  following it, and no outlet has explained the statutory gap underneath
+  it. The angle critiques a bill stuck in drafting, not the King's
+  decree or the pardon.
+- **Why it is a wildcard:** Royalty CRITICAL. **Stage 5 required.** Live
+  court proceedings (the AGC's application for clarification). Hard
+  guardrails: no card evaluates the pardon, the Pardons Board, the decree
+  or the Istana statement; no card takes the AGC's or Najib's side on
+  the legal question; the story is the bill's timeline and what other
+  systems (UK, Singapore) legislate. **Editor's call before any brief
+  work.**
+- **Related:** 2013, 1092 (draft).
 
 ---
 
-## Tier B — develop if Tier A blocks, or for the first October slots
+## Tier D — domestic picks (parked behind the global slate)
 
-### B1. More Sabah and Sarawak seats means an Article 46 amendment and a nationwide re-delineation
-- **Radar:** 11 Sep "Sabah, Sarawak to get bigger share of parliament
-  seats, Anwar says as MA63 push moves ahead" (0.286, 64/16); 13 Sep "EC
-  to review electoral boundaries nationwide if parliament approves more
-  Sabah, Sarawak seats" (0.392, 68/9); 11 Sep Salleh Said Keruak on the
-  one-third share (55/15); 13 Sep PAS: east coast also needs seats
-  (13/6); 14 Sep "Bintulu Port comes under Sarawak jurisdiction following
-  repeal of federal acts" (98/18); 13 Sep Sarawak proposes 5-10 % of
-  federal revenue as special grant (19/3); 16-17 Sep Armizan / Anwar on
-  MA63 as a national promise (54/19, 72/22).
-- **Why develop:** the seat count is a constitutional amendment
-  (two-thirds), and the EC has said it triggers re-delineation
-  everywhere, which reopens the malapportionment question draft **0172**
-  (Putrajaya 20,834 voters vs Kapar 179,000) and draft **1015** (14
-  seats redrawn without public hearing) never shipped. Bintulu Port is
-  the first concrete devolution instrument of the cycle and a primary
-  document (two repealing Acts).
-- **Hold until:** the amendment bill is tabled in the 5 Oct sitting.
-  Brief now, Stage 1 when the bill text exists.
-- **Lenses:** Governance, Legal, Regional. Ethnic MEDIUM (Borneo vs
-  peninsula framing); keep the anger on the arithmetic, not on states.
-- **Related:** 1981, 0160 (draft), 0172 (draft), 1015 (draft).
+### D1. Melaka votes for 28 seats on Saturday. Up to seven more will be appointed afterwards. → **parked** (pipeline state removed 2026-11-07; research notes kept for a post-election issue)
+- **Radar:** accumulated S5, rank score 1.376, 116 days quiet (74 news /
+  25 social, `below-expected coverage`, [legal, political]): 14 Jul
+  "Melaka to add up to seven nominated assemblymen after constitutional
+  amendment, CM says no 'back door' to power". Campaign companions: 6 Nov
+  BN-PN joint manifesto (F7, 18/1); 30-31 Oct confidence-and-supply pact
+  statements (0.357); 1 Nov MCMC on campaign social media.
+- **Why develop now:** Melaka votes with the appointed seats already in
+  its constitution and a court challenge against them pending, and nobody
+  has done the arithmetic in public. Seven appointed against 28 elected
+  makes one seat in five unelected, against 5 of 61 in Johor (**1977**);
+  if the comparator table confirms it, that is the highest ratio of any
+  state (Pahang voted in 2022 with its 2020 amendment in place, so
+  Melaka is not the first). Two-thirds
+  of a 35-member house, the bar for future state-constitution amendments,
+  is 24, so the voting power of appointees decides whether a coalition
+  needs 17 or 19 elected seats to amend at will. Both figures depend on
+  the amendment text and must be re-derived from it in the brief. Leads
+  to verify: DAP left the state government over the bill; two PH leaders
+  filed a High Court challenge (reported 8 Oct) under Federal
+  Constitution Article 71(4); the amendment was gazetted (reported 27
+  Aug).
+- **Not a repeat of 1977.** 1977 is Johor's process story (its own legal
+  adviser said no). A1 is the electoral consequence: what a voter's
+  ballot decides when one seat in five is filled afterwards.
+- **Verification path:** the Melaka State Constitution (Amendment)
+  Enactment 2026 and its gazette; the 14 Jul assembly vote; the High
+  Court cause papers; Federal Constitution Article 71(4) and the Eighth
+  Schedule (lom.agc.gov.my); SPR notices for the 2026 polls; the 2021
+  Melaka result; Pahang, Sabah, Terengganu and Johor caps for the
+  comparator table.
+- **Lenses:** Legal, Governance, Political.
+- **Risk flags:** Political HIGH (live campaign). Ethnic: check MCA's 29
+  Oct "assurances on Chinese representation"; if the appointed seats are
+  the vehicle, Ethnic goes HIGH and **Stage 5 is triggered**. Royalty LOW
+  (Melaka has a Yang di-Pertua Negeri, not a Ruler). **Sub judice:** the
+  High Court suit is live; report the pleaded ground, never predict the
+  outcome. **Election-period:** no card may favour a party or candidate;
+  **never publish on polling day (Sat 14 Nov).**
+- **Related:** 1977.
 
-### B2. The 2024 citizenship amendment still has no commencement date (silence pick)
-- **Radar:** 12 Sep "Home ministry to announce effective date for
-  citizenship amendments once ready" (0.348, 62/9, `DELAYED_FUSE`); BM
-  version 1/3. Dims [political].
-- **Why develop:** the Constitution (Amendment) Bill 2024 passed the
-  Dewan Rakyat on 17 Oct 2024 and the Dewan Negara on 3 Dec 2024 (traced
-  in **1325**'s brief). A commencement still "being prepared" in
-  September 2026 is a Rights-lens story with a single clean number: the
-  months since royal assent. Verify first whether any part has been
-  gazetted into force; if it has, this is an update to 1325, not a new
-  issue.
-- **Lenses:** Rights, Legal, Governance. 3R LOW.
-- **Related:** 1325, 1265, 1247.
+### D2. Parliament: scam victims got back about 1% of what they lost. → **merged into G3**
+- **Radar:** 5 Nov "Zahid: 2026 Cyber Crime Bill allows courts to freeze
+  scam proceeds before suspects are charged" (0.494, rank 91,
+  [legal, political]); 4 Nov "Scam victims recover just 1pc of RM1.23b
+  lost over past decade, Parliament told" (0.392, rank 351); 5 Nov
+  "Legal action possible against cybercriminals abroad"; 6 Nov "Overseas
+  scammers targeting Malaysians can now face action, says Bukit Aman
+  CCID" (0.375); 1 Jul "Dewan Rakyat passes cybercrime bill" (0.357).
+- **Why develop:** the gap sits in the denominators and in the calendar.
+  Three official loss figures circulate: RM1.23b over 2016-Aug 2026
+  (police e-finance registry, 18,213 victims); RM1.2b via the 997 hotline
+  from Oct 2022 (468,675 calls, RM14.3m returned); RM2.7b in eleven
+  months (67,735 cases). They measure different things, and coverage
+  mixes them. Then the remedy: the Bill passed the Dewan Rakyat on 1 Jul
+  and the Dewan Negara on 20 Jul; commencement is by ministerial gazette
+  notification (cl. 1(2)). If no commencement order exists, the 5 Nov
+  answer describes a power courts cannot yet use.
+- **Verification path:** the Cybercrimes Bill 2026 text (cl. 1(2), cl.
+  54 property restriction orders); the federal gazette for royal assent
+  and commencement; the 4 Nov and 5 Nov written answers (Hansard; mirror
+  via Bernama, as parliament.gov.my is blocked from CI); AMLA 2001 Part
+  VI freezing and forfeiture as the existing comparator; NSRC and BNM
+  annual figures; **2004**'s brief for the mule-account numbers already
+  traced.
+- **Lenses:** Legal, Economic, Rights (pre-charge freezing vs
+  presumption of innocence).
+- **Risk flags:** all LOW. Ethnic dim is a keyword artefact. **Stage 5:**
+  not triggered.
+- **Related:** 2004, 1975.
 
-### B3. Melaka adds up to seven nominated assemblymen, and Melaka polls are now in the queue (accumulated S4, carried from 4 Sep B4)
-- **Radar:** S4 rank score 1.376, 66 days quiet (74/25, [legal,
-  political]); 12 Sep "PH prepared to go solo in Melaka polls" (24/3);
-  18 Sep Umno hopes the pardon boosts Melaka polls (62/26); 15 Sep CM's
-  office denies the CM signed a dissolution order (19/3).
-- **Why develop now:** a nominated-member amendment passed with no
-  analysis of what it does to a 28-seat assembly, and an election is
-  close enough that parties are pricing it. Check first whether the
-  in-flight brief `engine/briefs/johor-unelected-reps-bill.md` (issue
-  reader exists) can absorb Melaka as case two.
-- **Lenses:** Governance, Legal, Political. 3R LOW.
+### D3. The pipeline loss was "cut to RM3b". RM5b of the same loans now finances a water scheme.
+- **Radar:** F11 (fresh 0.598; 30 news / 6 social): 3 Nov "CEXIM deal
+  slashes pipeline project losses to RM3bil, says Anwar"; 3 Nov "In
+  Dewan Rakyat today: pipeline project recovery..."; 6 Nov Anwar
+  questions the opposition's silence on the losses.
+- **Why develop:** "losses cut" and "loans redirected" are different
+  claims. If RM5b of China Exim credit originally drawn for the
+  Multi-Product Pipeline and Trans-Sabah Gas Pipeline is re-purposed for
+  the Northern Perak-Penang Water Supply Scheme, the debt still exists;
+  what changed is what it buys. The T4A question is what was actually
+  recovered in cash, what remains owed, and on what terms. The 2018-19
+  record (payments by schedule, not progress, flagged by the PM himself on
+  3 Nov) is primary-sourced in the Auditor-General and PAC record.
+- **Verification path:** the PM's 3 Nov Dewan Rakyat statement (full
+  text); the SSER-CEXIM agreement of 30 Oct (MoF statement); the original
+  contract values (reported MPP RM5.35b, TSGP RM4.06b, 85% CEXIM-financed);
+  the 2018 MoF / PAC findings on progress vs payment; any arbitration with
+  the contractor; the NPWSS project cost from the Budget 2027 documents.
+- **Lenses:** Economic, Governance, Legal.
+- **Risk flags:** Political HIGH (1MDB-adjacent, the same week as the
+  Najib house arrest). Keep every card on contracts and cash, never on
+  persons; no card links the pipelines to the house-arrest story.
+  **Stage 5:** not triggered unless the take sharpens to CRITICAL.
+- **Related:** 1979 (draft, 1MDB recovery).
 
-### B4. Government and police seek leave to appeal the gravedigger custody-death ruling (accumulated S23)
-- **Radar:** rank score 1.166, **176 days quiet** (52/16, [legal,
-  political]), the oldest structurally-important item still open. Source
-  date 27 Mar 2026.
-- **Why develop:** the silence-watch rule says take one accumulated pick
-  per cycle; this is the cleanest. A High Court finding on a 2019
-  lock-up death, and the state appealing it, is a Rights story built on
-  a judgment text. Draft **1853** (immigration detention deaths) is
-  adjacent but different custody.
-- **Verification path:** the High Court judgment; the leave application
-  at the Court of Appeal and its hearing date; Suhakam's custodial-death
-  count for the year; the IPCC Act 2020 complaint route.
-- **Lenses:** Rights, Legal, Security. 3R: Ethnic MEDIUM if the deceased's
-  community becomes the frame; keep it on custody procedure.
+---
 
-### B5. A new Act to replace AUKU is being "fast-tracked" (F14)
-- **Radar:** 15 Sep (0.20, 18/4, `below-expected coverage`).
-- **Why develop:** the Universities and University Colleges Act 1971
-  amendment has stalled across three sittings (draft **1341**, unpublished
-  legacy). "Simplifying provisions on the establishment of universities"
-  is the minister's frame; whether Section 15 (student political
-  activity) goes is the reader's question. Hold for the bill; brief from
-  the 2018-2023 record now.
-- **Lenses:** Rights, Governance, Social. 3R LOW.
+## Tier B — develop if Tier G blocks, or for the week of 16 Nov
 
-### B6. Illicit tobacco: "US$775m a year, 55 % market share" (F1)
-- **Radar:** 16 Sep, F1 on the fresh track (fresh score 0.697; 72/12,
-  `24h+ silence then rising`), 0.408 in the queue.
-- **Why develop, carefully:** the number is being quoted everywhere. The
-  T4A angle is provenance: who commissioned the study, what the
-  denominator is, and whether the Customs / MoF seizure and excise data
-  agree. If the study is industry-funded, that is the reframe. If the
-  provenance cannot be established, skip.
-- **Lenses:** Economic, Health, Governance. 3R LOW.
+### B1. Syed Saddiq's constituency-allocation challenge is paused for settlement talks (F14/F15)
+- **Radar:** 5 Nov, Federal Court gives the parties time to negotiate
+  (31/7 EN, 4/6 BM, [legal]).
+- **Why develop:** opposition MPs' constituency allocations have no
+  statutory basis, no spending guideline and no audit trail (draft
+  **1046**, unpublished legacy). A constitutional challenge that ends in a
+  private settlement leaves the rule unwritten. Develop when the next
+  court date is known; brief from the 2023-24 MoU record now.
+- **Lenses:** Governance, Legal, Political.
 
-### B7. Fatal Sarawak Flying Doctor Service crash: MOH to review all helicopter contracts and the RM30 flight allowance
-- **Radar:** 13 Sep (0.274, 64/8); 9 Sep senator urges grounding BO-105s
-  (66/17); 12 Sep Sarawak reviews safety needs (BM, 6/1).
-- **Hold until:** CAAM's preliminary report. Then Health / Governance /
-  Regional: a procurement chain and a RM30 allowance exposed by one
-  crash.
+### B2. Cabinet approves the order handing environmental powers to Sarawak (F5)
+- **Radar:** 6 Nov "Cabinet approves transfer of scheduled waste
+  management powers to Sarawak under MA63" (5 news / 8 social, silence
+  0.99).
+- **Why develop:** the Environmental Quality Act amendment (Feb 2026)
+  enabled it; Sarawak's NREB takeover was first promised for Jan 2025.
+  The question is which federal standards still apply after transfer.
+  Alternative: fold into **2011**'s edition 2 (Sarawak haze) if the order
+  text is thin.
+- **Lenses:** Regional, Environmental, Legal.
+
+### B3. Ex-AG reappointed to the Judicial Appointments Commission (F9)
+- **Radar:** 1 Nov (21/2, [institutional, legal]).
+- **Why develop:** under the JAC Act 2009 the PM appoints four of nine
+  members. A former AG sitting on the body that shortlists judges who hear
+  AGC cases is a structural point, not a personal one. Keep it on the Act.
+- **Lenses:** Governance, Legal. Related: 1997 (AG-PP split).
+
+### B4. Court of Appeal cuts Klang council's dumpsite damages from RM117m to RM3m (top fresh score)
+- **Radar:** 26 Oct (0.521, rank 60, [environmental, legal, political]).
+- **Why develop:** the highest-scoring fresh item. Who pays (ratepayers),
+  what the award covered, and whether the site's remediation is funded.
+  Needs the written judgment; hold if not yet published.
+- **Lenses:** Environmental, Legal, Governance.
+
+### B5. Budget 2027's subsidy line (accumulated S1, S2, S18, S25)
+- **Radar:** S18 "RM80b for subsidies, STR and Sara rises to RM16b"; S25
+  "RM510b but no new taxes?"; S1 diesel RM2.5b a month (176 days quiet);
+  S2 RM50b fuel subsidy bill (105 days).
+- **Why develop:** Budget 2027 was tabled 9 Oct; committee stage runs to
+  26 Nov. The accumulated subsidy cluster is the oldest unbuilt
+  Economic story in the queue and absorbs the stale 800kWh pick (Sep A3).
+  Develop before the Supply Bill vote.
+- **Lenses:** Economic, Governance, Environmental.
+
+### B6. A new Act to replace AUKU (carried from Sep B5; fresh again 3 Nov)
+- **Radar:** 3 Nov "New law replacing AUKU will not curtail students'
+  freedom of expression, says Zahid" (0.274).
+- **Why develop:** promise without text. Hold for the Bill's first
+  reading; brief from draft **1341** and the 2018-2023 record now.
+- **Lenses:** Rights, Governance, Social.
+
+### B7. Child Act amendments on indefinite detention of young offenders
+- **Radar:** 3 Nov (0.274, [political]).
+- **Why develop:** a Rights story with a statute and a count. Note the
+  royalty-adjacent wording of detention "during pleasure"; keep it on the
+  procedure and the child-rights standard. Related: 1978.
+- **Lenses:** Rights, Legal.
+
+### B8. Malaysia eases its raw rare-earth export moratorium, for R&D only
+- **Radar:** 6 Nov "Govt relaxes raw rare earth export moratorium to
+  attract investors" (0.274, 43/25).
+- **Why it is B, not G:** the easing is narrow (R&D exports, with a
+  commitment to build processing in Malaysia within three years, per the
+  minister's 6 Nov reply). The 2025 US-Malaysia reciprocal trade
+  agreement commits Malaysia not to ban critical-mineral exports to the
+  US, but the raw-ore moratorium survived it. A "Malaysia bent to
+  Washington" framing would overclaim. Develop if a non-R&D export
+  approval or a named investor appears, ideally alongside the Trump-Xi
+  Shenzhen summit outcome.
+- **Lenses:** Economic, Regional, Environmental.
+
+### B9. Watch: Trump-Xi in Shenzhen, and a Democratic Congress reviewing executive trade deals
+- **Radar:** foreign stream 6-7 Nov (The Diplomat, Nikkei "Prospect of
+  'modern-day Yalta' shakes Asia's postwar order", Al Jazeera "US urges
+  China to honour Busan trade deal commitments").
+- **Why watch:** if Congress moves on executive trade agreements, the
+  2025 US-Malaysia agreement's commitments (export controls, critical
+  minerals, digital trade) become a live Malaysian story. Not yet a
+  mechanism; hold for the summit communique.
 
 ---
 
 ## Carry-over — still open, unbriefed
 
-- **National Trust Fund (KWAN) Bill 2026** (accumulated S9, 65 days).
-  Statute story with primary sources public; still the safest fallback.
-- **Diesel subsidy RM2.5b a month** (S1, 127 days) and **RM50b fuel
-  subsidy bill** (S2). Fold into A3's brief as the subsidy denominator
-  rather than develop separately.
-- **PWD spent its entire RM2b road-maintenance allocation by August and
-  will seek more** (S15, 32 days). Pre-Budget Governance pick for
-  October.
-- **PAC procurement safeguards at MAHB** (S10).
-- **Border system (MyIMMs / insider breach)** and **2,001 factory
-  fires** (from 3 Aug). Puchong blaze gutted four factories on 17 Sep
-  (53/19) if the fires story is revived.
-- **Altantuya family's RM5m damages bid**, Federal Court 27 Oct (S11).
-  Develop the week before the hearing.
-- **AG vs Malaysian Bar on DNAA standing** (from 3 Aug). Now pairs with
-  A1; consider merging into A1's brief as the second case.
+- **AGC discontinues four Muhyiddin charges** (Sep A1). Seven weeks old;
+  the separate sedition trial was postponed on 3 Nov for fresh
+  representations. Revive only if the AG-PP split bill (**1997**) moves.
+- **800kWh exemption** (Sep A3). Overtaken by Budget 2027 (TNB 10 Oct,
+  "wider electricity bill protection"; Sarawak's 25% discount, 12 Oct).
+  Fold into B5.
+- **Sabah / Sarawak seats and Article 46** (Sep B1). Check whether the
+  amendment was tabled in the budget session.
+- **2024 citizenship amendment commencement** (Sep B2).
+- **Gravedigger custody-death appeal** (Sep B4).
+- **Illicit tobacco "US$775m, 55%"** (Sep B6; now accumulated S3).
+- **Sarawak Flying Doctor crash** (Sep B7). Hold for CAAM's report.
+- **PAC on MAHB procurement** (S19, 130 days).
+- **Altantuya family's Federal Court leave bid** (S22). The 27 Oct
+  hearing outcome is not in the queue; check before using.
 
 ---
 
 ## Updates to published issues (edition bumps, not new IDs)
 
-- **1976 Negeri Sembilan.** The 16 Sep Exco statement, the AGC's 17 Sep
-  opinion that gazetting the proclamation is unconstitutional, the DKU
-  police report, the State Secretary's refusal to gazette, and the MB's
-  endorsement. Royalty CRITICAL: **Stage 5 required** for the update.
-  The in-flight brief `negeri-sembilan-undang-deposal-declaration.md`
-  carries all six stage outputs; extend the PERIOD and re-run Stages 2,
-  3 and 5 on the new cards only.
-- **2010 Tabung Haji.** 9 Sep: former TH chairman Azeez Rahim charged;
-  14 Sep: ex-minister Jamil Khir claims trial to misappropriating RM860m;
-  13 Sep: Puad calls the probe calls "mere politics". Charges are
-  charges; period update only.
-- **2011 Haze.** 17 Sep: Suhakam calls for a Clean Air Act; PKR Youth
-  calls to revive the Transboundary Haze Act; the smoke moved west (41
-  peninsular areas unhealthy on 16 Sep, Sarawak clear). Strengthens the
-  existing reframe; edition 2 when the Act is next mentioned in
-  Parliament.
-- **2012 Felda.** 11 Sep: special committee's interim report due
-  end-September. Hold the update for the report.
-- **1993 / brief 2000 (Article 49A).** 14 Sep: Federal Court reserved
-  decision on PKR's appeal to restore Zuraida's RM10m bond (F2/F8,
-  76/18). Update the `suhaili-bersatu-coa-article-49a` brief's PERIOD;
-  develop when the decision lands.
-- **1979 draft (1MDB recovery).** 13 Sep: government "takes note" of a
-  RM4.2b claim against DBS (F3, 4/3). Source for the draft, not a pick.
+- **2013 Umno donation drive.** 6 Nov: Umno says payment of the RM50m
+  fine is complete; 6 Nov: ex-Damansara MP Tony Pua calls for an audit of
+  the donations. Edition 2: "the fine is paid; the donors are still
+  unnamed; still no political financing law." **Exclude** the house
+  arrest order, the AGC deferral and the Istana statement (Royalty
+  CRITICAL). The base issue ran Stage 5; **Stage 5 required** for the
+  edition-2 cards.
+- **1976 Negeri Sembilan.** 3 Nov: AGC orders further police action on
+  claims the MB was forced to sign the proclamation; 7 Nov: NS Umno chief
+  denies no-confidence talk. Royalty CRITICAL; **Stage 5 required**.
+- **2010 Tabung Haji.** 4 Nov: Parliament told TH has implemented 76% of
+  the RCI recommendations. A clean edition-2 number; verify against the
+  Hansard answer.
+- **2011 Haze.** Strongest update on the list, now with a global
+  comparator: CNA (7 Nov) reviews Singapore's worst haze since 2015,
+  including changes to Singapore's transboundary haze law, while
+  Malaysia's own Transboundary Haze Act stays dropped (2011's finding);
+  Thailand's health ministry warns a "Super El Nino" could worsen haze in
+  2027. Domestic: 3 Nov, 12 cloud-seeding operations; 2 Nov, DOE expects
+  the monsoon to clear the haze. Verify Singapore's amendment from the
+  statute or MSE statement before using it. Pair with B2 if B2 is folded
+  in.
+- **1963 Data centres and Johor water.** 4 Nov: Google commits US$15b
+  over two years, 37,000 jobs projected. Edition 2 only if the investment
+  names a site and a water source.
+- **2004 Mule accounts.** If A2 slips, its loss and recovery figures go
+  here as an update instead.
 
 ---
 
 ## Skip — covered, held, saturated, or low-leverage
 
 ### 3R-sensitive — hold behind the higher verification bar
-- **The Najib pardon decision itself** (18 Sep, ~20 entries). Royal
-  prerogative under Article 42; the FT Pardons Board's deliberations are
-  not public. Draft **1092** already sits unpublished on the 2024 home
-  detention. Only the financing angle (A2) enters the pipeline.
-- **Umno assembly "joke" about Catholic clergy** (14-15 Sep; Unity
-  Minister urges action, Catholic Lawyers' Society to lodge report).
-  Religious HIGH, single named individual. Skip.
-- **GISBH fails to challenge Kedah fatwa** (11 Sep) and **Hadi's call to
-  repeal "colonial-era laws restraining Islam" (Act 355)** (9 Sep).
-  Religious HIGH. Hold.
-- **Queen of Malaysia orders Johor carnival postponed over haze**
-  (15 Sep). Royalty; use only as a dated fact in 2011's update if at all.
+- **Najib house arrest decree, the AGC deferral and the Istana
+  statement** (6-7 Nov). Royal prerogative; Royalty CRITICAL. Only the
+  2013 money update enters the pipeline.
+- **PN MP's call for a fatwa defining "khawarij"** (F12) and **halal
+  breaches at a Puchong chicken plant** (2 Nov). Religious HIGH. Hold.
+- **Choco Loco franchise charge** (F13). Religious; a single company
+  before the courts. Skip.
+- **JAIS asks for posts about a convert's family to be taken down**
+  (7 Nov). Religious; private individuals. Skip.
+- **Indian civil servants ask for an extra Deepavali day** (31 Oct).
+  Ethnic; low leverage.
+
+### Open investigation or sub judice — hold for charges, judgments or reports
+- **Da'i Syed rape acquittal, AGC review** (4-6 Nov). Live appeal.
+- **Daim family loses bid to stop "overthrow plot" probe** (3 Nov).
+- **Bank Rakyat hack and the 3 Nov cyberattacks.** Hold for the
+  NACSA / BNM finding.
+- **KLIA altercation: Special Branch officers sue the border agency
+  chief** (5 Nov). Civil suits, named individuals.
+- **MACC: Kedah policeman, RM15,000** (3 Nov); **RM220m crude cargo
+  report** (3 Nov); **Perak officer hit-and-run murder charge appeal**
+  (1 Nov).
 
 ### Saturated or horse-race
-- **Zahid "kick us out if you dare" / Umno-PAS realignment / Anwar-Zahid
-  ambiguity / Hamzah's absence** (11-18 Sep). Intra-coalition positioning,
-  no policy mechanism.
-- **DAP's emergency CEC on the pardon** (19 Sep). Wait for the outcome;
-  it may become a coalition-arithmetic update for the simulation engine,
-  not an issue.
-- **Hannah Yeoh's "fake" house-arrest order** (18 Sep). Police probe
-  opened; hold.
-- **Rosmah additional-evidence stay** (17 Sep, F10) and **Shafee vs
-  Malaysian Bar damages cut to RM120,000** (14 Sep, F6/F7). Procedural
-  rulings; niche.
+- **Melaka manifestos, candidate counts, the BN-Bersatu MPs'
+  confidence-and-supply pact.** A1 carries the structural point.
+- **Negeri Sembilan no-confidence chatter** (7 Nov). Wait.
 
-### Open investigation — hold for charges or reports
-- **Kedah fertiliser company MD on MACC bail** (17 Sep); **Kelantan
-  nepotism claims** (17 Sep); **Kepong "stare" case, AGC reviewing
-  representation** (17 Sep).
-- **Lenggong boarding-school food poisoning, ~160 ill** (11 Sep). Hold
-  for the MOH report.
+### Low-leverage, foreign, or better as a source
+- **US midterms and tariffs** (F6). Used as context in G1; tariffs feed
+  B9.
+- **YTL's Bristol airfield** (F8). Foreign asset; skip.
+- **Rapid KL congestion, Penang assembly facelift, Deepavali traffic,
+  "scrolling generation".** Skip.
+- **Palestine Action arrests (UK), Ronaldo, Leeds-Tottenham, South Korea
+  church leader, Bollywood actor's visa.** Foreign noise; route to the
+  impact pass, which is still dark (see pipeline-recommendation.md).
 
-### Low-leverage or better as a source
-- **Filial-support law "likely next year"** (17 Sep, 97/22). Track;
-  develop when the bill exists, with Singapore's Maintenance of Parents
-  Act as comparator.
-- **68,000 job losses this year, mostly manufacturing and retail**
-  (18 Sep, 16/6). Source for a Budget-week Economic issue.
-- **Jelutong reclamation grew from 4ha to 28ha** (14 Sep, 60/7). Local;
-  track for a Penang cluster with 1039 / 0148 drafts.
-- **4,646 domestic-violence cases Jan-Jul** (12 Sep); **stray-dog
-  hotspots** (12-13 Sep). Social; no policy mechanism yet.
-- **AirAsia denies bailout talk**, **Capital A exits BigPay / Tune
-  Protect**, **Sri Petaling radiation scare**. Skip.
-- **India-US sanctions bill, Heathrow, Sweden election, Macron
-  infrastructure order, Indonesian ferry** (F12, F13, foreign). Route to
-  the impact pass, which is still dark (see health note).
-
-_Refreshed 2026-09-18 (UTC) from the 2026-09-18 22:14 UTC CI scan.
+_Refreshed 2026-11-07 (UTC) from the 2026-11-07 20:10 UTC CI scan.
 Supersede on the next curator refresh._

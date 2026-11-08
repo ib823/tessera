@@ -1,0 +1,233 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "China's customs logged 64.7 million tonnes of crude 'from Malaysia' in 2025. Malaysia's own trade statistics logged 0.31 million tonnes to China.",
+      "sub": "Same product code, same UN database. Malaysia's rule requiring written permission for ship-to-ship cargo transfers across its EEZ began on 29 June 2026.",
+      "sources": [
+        "UN Comtrade, HS 2709, 2025: reporter China, partner Malaysia, imports 64,742,423,979 kg (US$31.02bn CIF); reporter Malaysia, partner China, exports 313,684,685 kg (US$177.8m FOB) [brief S4; recomputed by the independent check]",
+        "Exclusive Economic Zone Regulations 2026, P.U. (A) 233, gazetted 26 Jun 2026, reg. 1(2) in force 29 Jun 2026, reg. 7(1) written permission for any cargo transfer in the EEZ [S5]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "h": "In August 2024, US Treasury said Malaysia-based Transmarine Navigation supplied forged papers passing off a ship's Iranian cargo as Malaysian.",
+      "s": "Since June 2025, Treasury's FinCEN has listed 'Malaysian blend' as a red flag banks may weigh. No source ties Petronas or Malaysian producers to the cargoes.",
+      "d": "US Treasury press release jy2538 (15 Aug 2024): Malaysia-based Transmarine Navigation (M) Sdn Bhd 'provided forged documents for the U.S.-sanctioned DAWN II (IMO: 9185530), falsely showing the commodities on board were of Malaysian rather than Iranian-origin'. Transmarine was designated under E.O. 13224 for supporting the Houthi-linked network of Sa'id al-Jamal; its SDN addresses are in Ulu Tiram and at Pelabuhan Tanjung Pelepas, Johor. This is a US administrative designation, not a court finding; no Malaysian court finding on the origin of any such cargo was found. In November 2025 Treasury also said an Iranian military oil seller labelled Iranian crude 'as Malaysian heavy crude, a common tactic' (sb0322). FinCEN, a Treasury bureau, first listed the red flag in Advisory FIN-2025-A002 (6 Jun 2025): 'In some instances' Iranian oil is relabelled with forged documents 'most commonly as \"Malaysian blend\"' (p. 4), and smugglers 'frequently receive falsified documents in Southeast Asia' (fn 46). Its alert of 11 May 2026 repeated the point ('sometimes') and said institutions 'may consider requiring heightened due diligence' on such transactions, 'particularly if the transactions show other indications of oil smuggling', noting 'no single red flag is determinative'. Bracketing statistic: the OFAC SDN list (downloaded 7 Nov 2026) carries ten Malaysia-addressed firms and individuals for Iranian oil or commodity shipping or port services (six of them al-Jamal counter-terrorism listings) plus one Malaysia-flagged crude tanker, SHANAYE QUEEN (designated 11 Oct 2024). A 'Malaysian blend' label in a US document does not show that any Malaysian authority issued the papers.",
+      "sources": [
+        "US Treasury press release jy2538, 15 Aug 2024 [S7b]",
+        "FinCEN Advisory FIN-2025-A002, 6 Jun 2025, p. 4, fn 46, p. 8 [S12a]",
+        "FinCEN Alert FIN-2026-Alert002, 11 May 2026, pp. 3, 8, 9 [S12b]",
+        "US Treasury press release sb0322, 20 Nov 2025 [S9]",
+        "OFAC SDN list (SDN.CSV/ADD.CSV, 7 Nov 2026) and OFAC recent action 11 Oct 2024 [S6a, S6b]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "China's customs logged 1.30m barrels a day 'from Malaysia' in 2025, 2.5 times Malaysia's entire crude output that year (EIA: 512,700 b/d).",
+      "s": "At 7.33 barrels a tonne. Malaysia's own statistics show 11.8m tonnes of crude exports to every destination in 2025, under a fifth of China's 64.7m.",
+      "d": "China-recorded imports from Malaysia, HS 2709 (crude, including condensate), 2025: 64.74 Mt (UN Comtrade, China's submission), about 1.30m b/d at 7.33 barrels per tonne; CGEP (29 Jan 2026), citing GAC, also gives 1.3 million bpd. EIA International Energy Statistics, Malaysia, crude oil including lease condensate, production 2025: 512.67 thousand b/d (2024: 478.34). Ratio 2.54x (2.9x in 2024). Even if every Malaysian barrel had gone to China, it would cover about 39% of the recorded volume. Malaysia's own trade statistics (DOSM via UN Comtrade), 2025: crude exports to all destinations 11.78 Mt (US$6.67bn); crude exports to China 0.31 Mt; crude imports 22.89 Mt. On crude alone Malaysia is a net importer, although it is a net energy exporter overall (Al Jazeera, 27 Mar 2026). 11.78 / 64.74 = 18%. Earlier years (China-recorded, Reuters/EIA from GAC): 2023 54.79 Mt, about 1.1m b/d; 2024 70.38 Mt, 1.41m b/d. The excess over Malaysian output began in 2022; in 2021 China's 'Malaysian' volume was below Malaysia's output. Attribution (estimated, not recorded): Kpler, via CGEP, put Iranian crude reaching China at about 1.38m b/d in 2025; EIA's chart note says 'Many imports attributed to Malaysia ... originated in Iran and were relabeled'; Reuters, Argus and CGEP also name Venezuelan crude. Analysts say much of the gap is Iranian crude, with some Venezuelan.",
+      "sources": [
+        "UN Comtrade, HS 2709, 2025 (China imports from Malaysia; Malaysia exports to China and to world; Malaysia imports from world) [S4]",
+        "EIA International Energy Statistics, Malaysia, crude oil including lease condensate, production [S1]",
+        "Columbia CGEP, Erica Downs, 29 Jan 2026 [S17]",
+        "Reuters GAC tables via The Standard (20 Jan 2024) and BOE Report (19 Jan 2025) [S14a, S14b]; EIA Today in Energy (16 Apr 2024) [S3a]",
+        "Al Jazeera, 27 Mar 2026 ('Malaysia is a net energy exporter') [S20b]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "In July 2025 Malaysia vowed to detain ships in unapproved ship-to-ship transfers. Traders say the label then moved to 'Indonesian'.",
+      "s": "In 2025 China's customs logged 14.5m tonnes 'from Indonesia'; Indonesia logged 0.17m to China. Energy Aspects said most Iranian transfers still happened off Malaysia.",
+      "d": "Foreign Minister Mohamad Hasan, 11 Jul 2025 (Bernama via Malay Mail, 12 Jul): 'This ship-to-ship issue has become a thorn in our side because we are often accused of practising or allowing illegal oil transfers to take place in our waters'; 'Previously, when we asked for coordinates, they would provide them' ... 'it turned out the activity wasn't within our territory. This time, we will not let it slide. If we catch them, we will detain the vessel.' Reuters (24 Nov 2025): Indonesia emerged as an alternate declared origin 'due to greater scrutiny from banks about oil labelled as Malaysian' (two traders) and the shift was 'also being driven by Malaysia announcing in July' (Energy Aspects and a third trader); Energy Aspects' Jianan Sun: 'Most of the STS transfers of Iranian crude destined for China still take place off the coast of Malaysia.' UN Comtrade, 2025: China imports from Indonesia 14.53 Mt; Indonesia's exports to China 0.168 Mt (China imported about 0.1 Mt from Indonesia in all of 2024, per Reuters; 0.15 Mt per Comtrade). In January to September 2026 China logged 27.96 Mt 'from Indonesia' and 25.41 Mt 'from Malaysia' (-50%) (TASS citing GAC). Malaysia also acted later: MMEA detained tankers Nora and Rcelebra off Penang in January 2026 (released with cargo on a RM300,000 bond; case awaits the Deputy Public Prosecutor; the bond is security, not a penalty), and the EEZ Regulations 2026 took effect on 29 Jun 2026. Context, not for the card: after the US-Israeli strikes on Iran (28 Feb 2026) and the US blockade of Iranian ports (from 13 Apr; lapsed 18 Jun; reimposed mid-July), China's 'Malaysian' imports were 1.34 Mt in June 2026 (-81% y/y, Reuters). Kpler analysts estimate Iranian oil on water outside the blockade zone fell from 88.8 Mbbl on 14 Jul to zero by mid-October, with about 43 Mbbl stranded inside. Later monthly figures are not yet verified from a primary copy; October GAC figures are due about 20 November.",
+      "sources": [
+        "Malay Mail (Bernama), 12 Jul 2025, Mohamad Hasan remarks [S23a]",
+        "Reuters via Baird Maritime, 24 Nov 2025 (traders; Energy Aspects; Indonesian customs) [S16a]",
+        "UN Comtrade, HS 2709, 2025 (China imports from Indonesia; Indonesia exports to China) [S4]",
+        "TASS, 20 Oct 2026, citing GAC (Jan-Sep 2026) [S15b]",
+        "Reuters via Baird Maritime, 3 Feb 2026 (Penang release on bond) [S24a]; P.U. (A) 233/2026 [S5]",
+        "Business Recorder (Reuters), 20 Jul 2026 [S14f]; Kpler, 22 Oct 2026 [S16c] (context only)"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The reframe",
+      "text": "Most of those barrels were never Malaysia's. The name on the paperwork was.",
+      "sources": [
+        "UN Comtrade 2025 (64.74 Mt China-recorded vs 0.31 Mt Malaysia-recorded to China) [S4]; EIA 2025 output 512,700 b/d, so at most about 39% could be Malaysian-produced (7.33 bbl/t) [S1]",
+        "US Treasury jy2538 and sb0322; FinCEN FIN-2025-A002 [S7b, S9, S12a]"
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "In May 2024 Home Minister Saifuddin Nasution said Malaysia would comply with UN sanctions but not recognise unilateral ones. That settles policy, not provenance: most crude China logged as Malaysian in 2025 could not have come from Malaysian fields.",
+      "sources": [
+        "Reuters via gCaptain, 9 May 2024 (Saifuddin: Malaysia would comply with UN sanctions but would not recognise unilaterally applied sanctions; reported speech) [S23c]; Reuters via The Jakarta Post, 8 May 2024 (Fahmi Fadzil: 'we comply with UN sanctions') [S23c]",
+        "UN Comtrade 2025 [S4]; EIA International Energy Statistics 2025 [S1]"
+      ]
+    }
+  ],
+  "headline_suggestion": "Malaysian crude: China's customs logged 206 times what Malaysia recorded sending",
+  "context_suggestion": "China's customs record crude by the origin declared on its paperwork and have logged none from Iran since 2022. US Treasury says Iranian cargoes move between tankers 'in waters off the coast of Singapore and Malaysia'.",
+  "sources": "UN Comtrade HS 2709 2021-2025 (China GAC and Malaysia DOSM submissions); EIA International Energy Statistics (Malaysia) and Today in Energy (16 Apr 2024); Exclusive Economic Zone Regulations 2026, P.U. (A) 233 (AGC gazette); US Treasury press releases jy2538 (15 Aug 2024), sb0275 (9 Oct 2025), sb0322 (20 Nov 2025); OFAC SDN list (7 Nov 2026) and recent actions (11 Oct 2024); FinCEN Advisory FIN-2025-A002 (6 Jun 2025) and Alert FIN-2026-Alert002 (11 May 2026); Columbia CGEP (29 Jan 2026); Reuters (GAC tables 20 Jan 2024, 19 Jan 2025, 20 Jul 2026; Indonesia relabelling 24 Nov 2025; Penang release 3 Feb 2026; Saifuddin and Fahmi 8-9 May 2024); Bernama via Malay Mail (Mohamad Hasan, 12 Jul 2025); TASS (20 Oct 2026, GAC Jan-Sep 2026); Kpler (22 Oct 2026, context only); Al Jazeera (27 Mar 2026)",
+  "confidence": "High on the recorded figures and the US documents: UN Comtrade cells, EIA production, the P.U. (A) 233 gazette, Treasury releases, FinCEN advisory and alert, and the OFAC list were all opened and independently rechecked. Medium on attribution (analysts and Kpler estimate that much of the gap is Iranian; US documents are administrative, unilateral and not court findings) and on Malaysian policy chronology (the July 2025 pledge and the ministers' 2024 positions reach the brief through Bernama and Reuters reports, not transcripts or Marine Department notices).",
+  "lenses_used": [
+    "Security",
+    "Economic",
+    "Governance"
+  ],
+  "lenses_applicable_but_unused": [
+    "Legal",
+    "Regional",
+    "Environmental"
+  ],
+  "needs_verification": [
+    "Saifuddin Nasution, 9 May 2024: the view uses Reuters' reported speech ('would comply with United Nations sanctions but would not recognise unilaterally applied sanctions'). No transcript or Home Ministry statement was opened; confirm wording or switch to Fahmi Fadzil's direct quote ('we comply with UN sanctions ... unilaterally applied sanctions, then I think we have to assess').",
+    "Mohamad Hasan, 11 Jul 2025 ('If we catch them, we will detain the vessel'): via Bernama in Malay Mail; Wisma Putra transcript not opened. The Marine Department notice behind the end-July 2025 rules is unopened (brief GAP 5), so fact 3 cites the pledge, not the notice.",
+    "Energy Aspects quote ('Most of the STS transfers of Iranian crude destined for China still take place off the coast of Malaysia') dates from Reuters, 24 Nov 2025; it is an analyst view, not a measurement, and predates the 2026 blockade.",
+    "Fact 3 'Traders say the label then moved': Reuters attributes the shift to bank scrutiny (two traders) and to Malaysia's July 2025 announcement (Energy Aspects and a third trader); CGEP says 'perhaps'. Keep 'traders say'.",
+    "EIA 2025 production (512.67 kb/d) is the latest annual value in EIA's series and may be revised; the 2.5x ratio uses 7.33 barrels per tonne, while lighter Malaysian grades would give about 1.33m b/d (ratio about 2.6x).",
+    "UN Comtrade 2025 Indonesia cells (China imports 14.53 Mt; Indonesia exports to China 0.168 Mt): national submissions retrieved 7 Nov 2026; check for revisions before Phase 6.",
+    "DAWN II cargo: Treasury says 'commodities', not crude; the card says 'cargo'.",
+    "Not used on cards: the September 2026 'Malaysian' figure of 1.16 Mt (secondary aggregators only; brief GAP 2) and the September 2025 base of 3.87 Mt (opened by the independent check only; brief GAP 16)."
+  ],
+  "source_notes": "(1) 2023 China-recorded volume: Reuters/EIA from GAC give 54.79 Mt / 1.1m b/d; UN Comtrade's 46.94 Mt is a UN-estimated weight; the Reuters/EIA figure is used. (2) Malaysian production definitions differ (EIA crude incl. lease condensate 512.7 kb/d in 2025; total liquids 604.2 kb/d; CGEP '535,000 bpd in 2024'; Argus 'about 490,000 b/d' H1 2025); the card uses EIA crude incl. lease condensate, the closest match to HS 2709. (3) Value comparison mixes CIF (China) and FOB (Malaysia); the hook uses tonnes only. (4) China's imports from Indonesia in 2024: about 0.1 Mt (Reuters) vs 0.15 Mt (Comtrade); only Comtrade 2025 figures are on the card. (5) The anchorage most often cited is about 70 km off Johor, outside Malaysia's territorial sea; US Treasury calls it the 'Singapore EOPL'; no card resolves its location. (6) Kpler's 51 Mt of Iranian-origin crude moved via STS (Jan-Oct 2025) has no stated location and is not used. (7) Iran International (opposition-aligned) is not cited on any card; its September figure matches other secondary sources but no primary copy was opened. (8) Malaysia's own position appears in the view through a Reuters report of the Home Minister; no Chinese or Iranian government voice is on file beyond China's MOFA opposing 'illegal unilateral sanctions'.",
+  "guardrails_applied": [
+    "Recorded (UN Comtrade, EIA) vs estimated (analysts, Kpler) vs established (US designations, FinCEN) kept on separate cards and labelled in details",
+    "'Most of those barrels', never 'never Malaysia's': Malaysia recorded 0.31 Mt of real exports to China",
+    "FinCEN permissive wording: 'a red flag banks may weigh'; red flag dated to the 6 Jun 2025 advisory; May 2026 alert described as a repetition",
+    "Blockade kept out of hook, headline and card text; in fact 3 details as context only, with October figures due about 20 Nov",
+    "September 2026 1.16 Mt figure off all cards (brief GAP 2)",
+    "No card implies the Malaysian government profits or is complicit; Petronas and Malaysian producers explicitly not linked (fact 1)",
+    "Malaysian action credited: the July 2025 pledge is named as moving the label (fact 3); Penang bond never set against cargo value",
+    "Malaysia's sanctions position in the Home Minister's words as reported by Reuters, attributed, in the view",
+    "EEZ ship-to-ship permission rule dated 29 Jun 2026 (P.U. (A) 233)",
+    "7.33 barrels per tonne stated wherever b/d appears (fact 2)",
+    "China written as 'China's customs', which record the origin declared on paperwork",
+    "US findings described as 'US Treasury said', never 'proven'; no UANI characterisation used",
+    "Anchorage location not resolved; Kpler 51 Mt not placed off Malaysia",
+    "Analogy dropped: none mapped exactly onto verified facts",
+    "One elevated word ('provenance', view); no em dashes in reader-facing text"
+  ],
+  "pa_score": 82
+}
