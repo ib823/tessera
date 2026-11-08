@@ -1,0 +1,123 @@
+{
+  "_provenance": {
+    "stage": "Stage 6 — Synthesis",
+    "slug": "malaysian-crude-iran-blockade-gap",
+    "issue_id": "2017",
+    "generated_at": "2026-11-08",
+    "inputs": [
+      "stage1 (primary analysis, PA 82)",
+      "stage2 (external bias audit paste; bias_score 18 -> BA 82)",
+      "stage3 (external fact verification paste; factual_accuracy_score 76; source_diversity 0.58, above the 0.4 Stage 5 threshold)",
+      "brief engine/briefs/malaysian-crude-iran-blockade-gap.md (independent verification + fixes)"
+    ],
+    "preambles_read": [
+      "engine/templates/stage6-preamble.txt",
+      "engine/templates/language-quality-preamble.txt"
+    ]
+  },
+  "headline": "'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025",
+  "context": "China's customs record imports by declared origin and logged no Iranian crude in 2023-2025. US Treasury says Iranian cargoes move between tankers 'in waters off the coast of Singapore and Malaysia'. Figures predate the 2026 US blockade of Iran's ports.",
+  "cards": [
+    {
+      "t": "hook",
+      "big": "China's customs logged 64.7 million tonnes of crude 'from Malaysia' in 2025. Malaysia's own trade statistics logged 314,000 tonnes to China.",
+      "sub": "Same product code, same UN database. Since 29 June 2026, ship-to-ship oil, gas and chemical transfers in Malaysia's EEZ have needed written permission.",
+      "trace": [
+        "UN Comtrade HS 2709, 2025, retrieved by Stage 3 on 8 Nov 2026: China imports from Malaysia 64,742,423,979 kg; Malaysia exports to China 313,684,685 kg (Stage 3 VERIFIED). 64.7m / 0.314m = 206; exact 206.39.",
+        "P.U. (A) 233/2026, reg. 1(2) in force 29 Jun 2026; reg. 7(1) written permission; reg. 2 'cargo transfer' = oil, liquified gas, liquid bulk chemicals or petroleum products between two vessels, excluding bunkering (opened by Stage 6, gazette PDF p. 2 definitions). Reg. 7(2) exempts naval, government-licensed, government non-commercial and safety/rescue/pollution transfers."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "big": "US Treasury said in November 2025 that Iran's military oil seller, Sepehr Energy Jahan, labelled its oil 'as Malaysian heavy crude, a common tactic'.",
+      "sub": "Treasury's FinCEN lists 'Malaysian blend' as a red flag banks may weigh. Neither document names Petronas or any Malaysian producer.",
+      "trace": [
+        "US Treasury sb0322, 20 Nov 2025 (opened by Stage 6): 'the designated Armed Forces General Staff oil sales arm Sepehr Energy Jahan Nama Pars Company' ... 'Sepehr Energy Jahan sought to disguise the providence of the oil by labeling it as Malaysian heavy crude, a common tactic of the Iranian armed forces and Iranian oil smugglers writ large.' (Stage 3 VERIFIED)",
+        "FinCEN Advisory FIN-2025-A002 (6 Jun 2025) p. 4 'most commonly as \"Malaysian blend\"'; FinCEN Alert FIN-2026-Alert002 (11 May 2026) pp. 3, 8, 9, 'may consider requiring heightened due diligence' (Stage 3 VERIFIED).",
+        "Petronas line scoped to the documents, per Stage 3 correction; brief ISSUE line 62: no opened source links Petronas or any Malaysian producer to the relabelled cargoes."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "big": "China's 2025 'Malaysian' crude works out to 1.30m barrels a day, more than 2.5 times all the crude and condensate Malaysia produced.",
+      "sub": "At 7.33 barrels a tonne. DOSM's preliminary 2025 output: 183.6m barrels, about 503,000 a day.",
+      "trace": [
+        "64,742,423.979 t x 7.33 bbl/t / 365 = 1,300,170 b/d (Stage 3 VERIFIED arithmetic). Energy Commission Handbook 2023 p. 97: 7.33 bbl/t for imported crude, 7.60 for local crude (Stage 3 VERIFIED). At 7.60 the figure rises to about 1.348m b/d, so 7.33 is the conservative convention.",
+        "DOSM, Mining of Petroleum and Natural Gas Statistics (published Sep 2026), Table 1a, Crude Oil and Condensate, 2025p 183.6 million barrels; 2024r 184.0 (opened by Stage 6). 183.6m / 365 = 503,014 b/d. 1,300,170 / 503,014 = 2.58x. EIA crude incl. lease condensate 2025 512.67 kb/d gives 2.54x (Stage 3 VERIFIED). Both exceed 2.5x."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "big": "Traders told Reuters in November 2025 the label was moving to 'Indonesian', after bank scrutiny and Malaysia's July 2025 vow to detain ships.",
+      "sub": "In 2025 China's customs logged 14.5m tonnes of crude 'from Indonesia'. Indonesia's own statistics logged 0.17m tonnes to China.",
+      "trace": [
+        "Reuters, 24 Nov 2025: Indonesia emerged as an alternate declared origin 'due to greater scrutiny from banks about oil labelled as Malaysian' (two traders); shift 'also being driven by Malaysia announcing in July' (Energy Aspects and a third trader). Stage 3: attribution matches; underlying interviews not inspectable. Card now names both causes and attributes them to traders.",
+        "Malaysia's July 2025 vow: Bernama, 11-12 Jul 2025, Foreign Minister Mohamad Hasan, 'If we catch them, we will detain the vessel' (Stage 3: attribution supported by Bernama).",
+        "UN Comtrade HS 2709, 2025: China imports from Indonesia 14,526,179,979 kg; Indonesia exports to China 167,566,200 kg (Stage 3 VERIFIED)."
+      ]
+    },
+    {
+      "t": "reframe",
+      "big": "The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretched over more than 2.5 times Malaysia's own output.",
+      "sub": "",
+      "trace": [
+        "Value restructuring (national label as asset). Number re-anchors fact 2: DOSM 2.58x, EIA 2.54x, both over 2.5x. 'Stretched' is agentless because the declarants are not identified by any primary source."
+      ]
+    },
+    {
+      "t": "view",
+      "big": "Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.",
+      "sub": "In May 2024 the home minister said Malaysia complies with UN sanctions, not unilateral ones, Reuters reported. The EEZ rule needs neither.",
+      "trace": [
+        "View is editorial opinion. 'Provenance' is the issue's elevated word.",
+        "Reuters via gCaptain, 9 May 2024: Saifuddin Nasution said Malaysia would comply with UN sanctions but 'would not recognise unilaterally applied sanctions' (reported speech; attributed to Reuters on the card per Stage 2).",
+        "'The EEZ rule needs neither': P.U. (A) 233/2026 is made under Malaysia's Exclusive Economic Zone Act 1984 and applies to cargo transfers whatever their origin; it does not depend on any sanctions regime (gazette text opened by Stage 6)."
+      ]
+    }
+  ],
+  "revisions": [
+    "CORRECTED (Stage 2 cardinal flag, rounding): hook '0.31 million tonnes' -> '314,000 tonnes', so 64.7m / 0.314m = 206 matches the headline (Stage 2: 64.7 / 0.31 reads as 208.7).",
+    "CORRECTED (Stage 3 MISLEADING/OVERCLAIM, reg. 7(1)): hook sub 'written permission for ship-to-ship cargo transfers across its EEZ' -> 'ship-to-ship oil, gas and chemical transfers in Malaysia's EEZ have needed written permission'. Reg. 2 definition opened by Stage 6; bunkering excluded and reg. 7(2) exceptions recorded in trace.",
+    "REPHRASED (Stage 2 cardinal flag MISLEADING_FRAMING): fact 1 no longer leads with Transmarine/DAWN II, whose cargo Treasury calls 'commodities', not crude. It now leads with Treasury sb0322 (Sepehr Energy Jahan, 'as Malaysian heavy crude, a common tactic'), which is about crude. Transmarine moves to details, with 'commodities' preserved.",
+    "CORRECTED (Stage 3 OVERCLAIM): fact 1 sub 'No source ties Petronas or Malaysian producers to the cargoes' -> 'Neither document names Petronas or any Malaysian producer.'",
+    "CORRECTED (Stage 3 UNVERIFIED priority): fact 1 sub 'Since June 2025 ... has listed' -> 'lists' (present, covering the June 2025 advisory and May 2026 alert); no 'first listed' claim anywhere.",
+    "CORRECTED (Stage 3 note on conversion): fact 2 big 'China's customs logged 1.30m barrels a day' -> 'China's 2025 \"Malaysian\" crude works out to 1.30m barrels a day'. Customs logged tonnes; barrels a day is a conversion, stated in the sub.",
+    "CORRECTED (Stage 3 omitted fact, DOSM): fact 2 denominator 'EIA: 512,700 b/d' -> 'DOSM's preliminary 2025 output: 183.6m barrels, about 503,000 a day' (DOSM Table 1a opened by Stage 6). Ratio stated as 'more than 2.5 times', true on both DOSM (2.58x) and EIA (2.54x).",
+    "REPHRASED (Stage 2 partisan flag + cardinal OVERCLAIM; Stage 3 UNVERIFIED on the 'Malaysian action credited' guardrail): fact 3 big 'In July 2025 Malaysia vowed to detain ships ... Traders say the label then moved to \"Indonesian\"' -> 'Traders told Reuters in November 2025 the label was moving to \"Indonesian\", after bank scrutiny and Malaysia's July 2025 vow to detain ships.' Both causes named, attributed, unranked.",
+    "CORRECTED (Stage 3 OVERCLAIM on Energy Aspects compression): fact 3 sub drops 'Energy Aspects said most Iranian transfers still happened off Malaysia'. Details restore the full scope ('STS transfers of Iranian crude destined for China', Nov 2025, analyst view).",
+    "CORRECTED (Stage 3 MISLEADING + OVERCLAIM): reframe 'Most of those barrels were never Malaysia's. The name on the paperwork was.' -> 'The \"Malaysian\" label on an oil cargo is a national asset. In 2025 it was stretched over more than 2.5 times Malaysia's own output.' No ownership or strict-provenance claim; the number is the verified production comparison.",
+    "CORRECTED (Stage 3 MISLEADING x2; Stage 2 partisan + UNVERIFIED): view 'In May 2024 Home Minister Saifuddin Nasution said ... That settles policy, not provenance: most crude China logged as Malaysian in 2025 could not have come from Malaysian fields.' -> big 'Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest \"Malaysian\" cargoes trade on it.' sub: dated, Reuters-attributed sanctions position + 'The EEZ rule needs neither.'",
+    "CORRECTED (Stage 3 MISLEADING): context 'have logged none from Iran since 2022' -> 'logged no Iranian crude in 2023-2025' (China recorded 780,392 t from Iran in 2022).",
+    "CORRECTED (Stage 3 nuance): context 'record crude by the origin declared on its paperwork' -> 'record imports by declared origin' (Customs Statistics Regulations arts 9, 15: classified by country of origin from declarations and customs-confirmed documents).",
+    "INTRODUCED (Stage 6 self-verified; Stage 2 evasion flag): context adds 'Figures predate the 2026 US blockade of Iran's ports.' Source: JMIC Advisory 002/26 (16 Apr 2026), 008/26 (18 Jun 2026), CENTCOM 14 Jul 2026 (Stage 3 VERIFIED chronology).",
+    "CORRECTED (Stage 2 cardinal flag + Stage 3 UNVERIFIED): headline keeps '206 times' with '2025' and the hook's tonnes making it a 2025 weight comparison, per Stage 3 ('Specify 2025 and crude by weight')."
+  ],
+  "introduced_claims": [
+    {
+      "claim": "DOSM preliminary 2025 output of crude oil and condensate: 183.6 million barrels, about 503,000 barrels a day",
+      "primary_source": "DOSM, Mining of Petroleum and Natural Gas Statistics, published September 2026, Table 1a 'Production of Crude Oil & Condensate and Natural Gas - Annually', row 'Crude Oil and Condensate, Million Barrels', 2025p = 183.6 (2024r = 184.0). https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=20883 (PDF opened 8 Nov 2026). 183.6m / 365 = 503,014."
+    },
+    {
+      "claim": "EEZ rule covers ship-to-ship transfers of oil, gas and chemicals",
+      "primary_source": "P.U. (A) 233/2026, reg. 2: '\"cargo transfer\" means the transfer of oil, liquified gas, liquid bulk chemicals or petroleum products between two vessels ... but does not include a bunkering operation'; reg. 7(1)-(2). https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3577352/PUA%20233%20(2026).pdf (opened 8 Nov 2026)."
+    },
+    {
+      "claim": "Sepehr Energy Jahan is the Iranian military's oil seller",
+      "primary_source": "US Treasury sb0322, 20 Nov 2025: 'the designated Armed Forces General Staff oil sales arm Sepehr Energy Jahan Nama Pars Company (Sepehr Energy Jahan)'. https://home.treasury.gov/news/press-releases/sb0322 (opened 8 Nov 2026)."
+    },
+    {
+      "claim": "314,000 tonnes (Malaysia-recorded exports to China, 2025)",
+      "primary_source": "UN Comtrade HS 2709, reporter 458, partner 156, 2025: 313,684,685 kg (Stage 3 VERIFIED); rounded to the nearest thousand tonnes."
+    }
+  ],
+  "synthesis_notes": "Over-integration calls. (1) Fact 3 causation: Stage 1's guardrail credited Malaysia's July 2025 pledge with moving the label; Stage 2 called that an overclaim and Stage 3 called the guardrail an upgrade of attributed possible influence. Both critiques point the same way and the evidence (two traders cite bank scrutiny, one trader plus Energy Aspects cite Malaysia's announcement) supports neither cause as primary. The card names both, in that order, attributed to traders, with no ranking. (2) View: Stage 2 wanted the view to confront domestic enforcement; Stage 3 said a May 2024 statement cannot settle 2026 policy after the September 2025 reapplication of UN Iran sanctions. Rather than average, the view drops the 'settles' move entirely and turns on the one instrument both critiques point to: Malaysia's own EEZ permission rule, which works without any sanctions regime. The sanctions position stays in the sub, dated and attributed, because it is Malaysia's own stated voice. The reapplied UN measures are not a ban on Iranian crude purchases (Stage 3 omitted facts), so the view does not claim UN sanctions reach these cargoes. (3) Fact 1 lead: Stage 2 offered two fixes; the synthesis takes the first (lead with sb0322) because it is the only Treasury statement in the file that is specifically about crude labelled Malaysian; Transmarine's DAWN II cargo was 'commodities'. Declined Stage 2 suggestions, with reasons. (a) Sabah/Sarawak light sweet grades vs 'heavy' relabelled crude: would need assay-level primary sources not in the brief, and the volume arithmetic makes the point without a grade claim. (b) Spill risk to B40 coastal fishers: the brief rates spill harm LOW confidence with no primary source on these vessels' insurance; adding it would be unverified detail. (c) '11-month enforcement gap' between the July 2025 vow and the June 2026 regulation: the end-July 2025 Marine Department notice is unopened (brief GAP 5); a measure may have existed in Malaysian waters from July 2025, so a gap claim would be unverified. The hook dates the EEZ rule exactly instead. (d) Anchorage location (territorial sea vs EEZ): Stage 3 marks the 70 km claim UNVERIFIED; off cards. (e) Chinese and Indonesian official voices: only China's MOFA (21 Mar 2025, opposing 'illicit unilateral sanctions') is on file; recorded in details, not on cards for budget. Compression decisions. (i) Fact 2 drops Malaysia's 11.8 Mt exports to all destinations (Stage 3 VERIFIED) for budget; the hook already carries the mirror gap. (ii) Fact 2 drops the EIA figure from the card face; the ratio wording 'more than 2.5 times' was chosen because it holds on both series, so no qualifier is lost. (iii) The 7.33 conversion is the lower of the Energy Commission's two factors; the 7.60 local-crude factor would raise the ratio to about 2.6x, so the card understates rather than overstates. (iv) OFAC count corrected to 'at least eleven' Malaysia-addressed entries in details only; no count is on a card. (v) 2026 monthly figures (Reuters June -81%, TASS Jan-Sep) stay off cards: GAC tables not opened, and the US blockade confounds any attribution. The context line dating the figures before the blockade answers Stage 2's evasion flag without making a causal claim.",
+  "stage_scores": {
+    "pa": 82,
+    "ba": 82,
+    "fc": 76,
+    "sr": 84
+  }
+}
