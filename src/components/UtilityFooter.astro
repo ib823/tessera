@@ -1,0 +1,96 @@
+---
+/**
+ * Footer for pages that use UtilityHeader: links to the trust and policy
+ * pages (corrections, contact, privacy in English and Malay) alongside the
+ * existing About, Disclaimer, Verify and Reading progress pages.
+ */
+interface Props {
+  /** Path of the current page, e.g. "/privacy". Marks that link as current. */
+  current?: string;
+}
+
+const { current } = Astro.props;
+
+const links: Array<{ href: string; label: string; lang?: string }> = [
+  { href: '/about', label: 'How This Works' },
+  { href: '/corrections', label: 'Corrections' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/privacy', label: 'Privacy' },
+  { href: '/privasi', label: 'Privasi (Bahasa Malaysia)', lang: 'ms' },
+  { href: '/disclaimer', label: 'Disclaimer' },
+  { href: '/verify', label: 'Verify' },
+  { href: '/progress', label: 'Reading progress' },
+];
+---
+<footer class="utility-footer" data-site-footer>
+  <nav class="utility-footer-nav" aria-label="Site information">
+    <ul class="utility-footer-list">
+      {links.map(({ href, label, lang }) => (
+        <li>
+          <a
+            href={href}
+            class="utility-footer-link"
+            lang={lang}
+            hreflang={lang}
+            aria-current={current === href ? 'page' : undefined}
+          >{label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+  <p class="utility-footer-note">The Fourth Angle is independently operated.</p>
+</footer>
+
+<style>
+  .utility-footer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 18px 56px;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .utility-footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 4px;
+  }
+
+  .utility-footer-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 10px;
+    font-family: var(--font-body);
+    font-size: var(--text-ui);
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--border-subtle);
+    text-underline-offset: 3px;
+    border-radius: var(--radius-md);
+  }
+
+  .utility-footer-link[aria-current='page'] {
+    color: var(--text-primary);
+    text-decoration-color: currentColor;
+  }
+
+  @media (hover: hover) {
+    .utility-footer-link:hover {
+      color: var(--text-primary);
+      text-decoration-color: currentColor;
+    }
+  }
+
+  .utility-footer-note {
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+  }
+</style>
