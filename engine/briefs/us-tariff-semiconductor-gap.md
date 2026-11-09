@@ -69,7 +69,7 @@ April 2025–April 2026
 Legal, Economic, Political
 
 ## SOURCES
-1. US Supreme Court, *Learning Resources v. Trump*, No. 25-316 (Feb 20, 2026) — 6-3 ruling striking down IEEPA tariffs https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf
+1. US Supreme Court, *Learning Resources v. Trump*, No. 24-1287, together with No. 25-250 (Feb 20, 2026) — 6-3 ruling striking down IEEPA tariffs https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf
 2. USTR, Section 301 Investigation Notice: "Excess Manufacturing Capacity" (Mar 11, 2026) — 16 economies https://ustr.gov/sites/default/files/files/Press/Releases/2026/USTR%20301%20FRN%20Industrial%20Excess%20Capacity%203-11-26.pdf [PRIMARY]
 3. USTR, Section 301 Investigation Notice: "Forced Labor in Supply Chains" (12 Mar 2026) — 60 economies https://ustr.gov/about/policy-offices/press-office/fact-sheets/2026/march/fact-sheet-ustr-initiates-60-section-301-investigations-relating-failures-take-action-forced-labor [PRIMARY]
 4. Fortune, "Asia scrambles to respond to Trump's Section 301 probes" (Mar 16, 2026) https://fortune.com/2026/03/16/trump-asia-section-301-probes-china-malaysia-tariffs/

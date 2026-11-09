@@ -81,7 +81,7 @@ Economic, Social, Political
 ## SOURCES
 1. Malay Mail, "Penang courts tourists from China, India, Asean to offset Middle East and European shortfall" Mar 30, 2026 https://www.malaymail.com/news/malaysia/2026/03/30/penang-courts-tourists-from-china-india-asean-to-offset-middle-east-and-european-shortfall/214410
 2. The Star, "Malaysia to recalibrate tourism strategy, focus on Asian markets" Mar 31, 2026 https://www.thestar.com.my/news/nation/2026/03/31/malaysia-to-recalibrate-tourism-strategy-focus-on-asian-markets
-3. FMT, "Slight dip in SPM top scorers, but A+ numbers rise" Mar 31, 2026 https://www.freemalaysiatoday.com/category/nation/2026/03/31/slight-dip-in-spm-top-scorers-but-a-numbers-rise
+3. FMT, "Slight dip in SPM top scorers, but A+ numbers rise" Mar 31, 2026 https://www.freemalaysiatoday.com/category/nation/2026/03/31/slight-dip-in-spm-top-scorers-but-a-numbers-rise (LOGGED FOR EXCLUSION: an SPM exam story unrelated to Penang tourism)
 4. Travel & Tour World, "Penang Tourist Surge: Chinese Arrivals Jump 520% as Global Travellers Rediscover the Island" 2025 https://www.travelandtourworld.com/news/article/penang-tourist-surge-chinese-arrivals-jump-520-as-global-travellers-rediscover-the-island/
 5. Bernama, "Penang Airport Handles Nearly Two Million Passengers In Q1 2025, 69.5% Surge" 2025 https://bernama.com/en/news.php?id=2426530
 6. Buletin Mutiara, "Indonesia, China and Thailand drive Penang's tourist arrival" 2025 https://www.buletinmutiara.com/indonesia-china-and-thailand-drive-penangs-tourist-arrival
@@ -93,10 +93,10 @@ Economic, Social, Political
 12. TTG Asia, "Conditions pave the way for more Chinese travellers to Penang" Jan 2025 https://www.ttgasia.com/2025/01/21/conditions-pave-the-way-for-more-chinese-travellers-to-penang/
 13. Malay Mail, "Can you guess who the big spenders are among international visitors to Malaysia?" Apr 1, 2026 https://www.malaymail.com/news/malaysia/2026/04/01/can-you-guess-who-the-big-spenders-are-among-international-visitors-to-malaysia-check-out-these-tourism-numbers/214474
 14. Travel & Tour World, "2026 Sees Malaysia Welcome More Than 42 Million Tourists" 2026 https://www.travelandtourworld.com/news/article/2026-sees-malaysia-welcome-more-than-forty-two-million-tourists-with-singapore-indonesia-china-and-the-uk-leading-the-way-heres-everything-you-need-to-know/
-15. Chan & Lean, "Transition of Economic Structure and Demography: The Case of Tourism Gentrification in George Town, Penang" (academic, 2017) https://gala.gre.ac.uk/id/eprint/19990
+15. Chan, Lean & Qi, "Transition of Economic Structure and Demography: The Case of Tourism Gentrification in George Town, Penang" (academic, 2017) https://gala.gre.ac.uk/id/eprint/19990
 16. Tandfonline, "Affordable housing and public administration of a historic city: George Town UNESCO World Heritage Site" (academic, 2023) [PRIMARY]
 17. Penang Institute, "Transforming Tourism in Penang: Suggestions for the Short and the Long Term" 2020 https://penanginstitute.org/publications/covid-19-crisis-assessments/transforming-tourism-in-penang-suggestions-for-the-short-and-the-long-term/
-18. The Star, "Penang maintains strong SPM 2025 performance" Mar 31, 2026 https://www.thestar.com.my/news/nation/2026/03/31/penang-maintains-strong-spm-2025-performance
+18. The Star, "Penang maintains strong SPM 2025 performance" Mar 31, 2026 https://www.thestar.com.my/news/nation/2026/03/31/penang-maintains-strong-spm-2025-performance (LOGGED FOR EXCLUSION: an SPM exam story unrelated to Penang tourism)
 19. Tourism Malaysia, "Malaysia Tourism Statistics in Brief 2024", Apr 2025, https://data.tourism.gov.my/frontend/pdf/New_Final_Malaysia%20Tourism%20Statistics%20in%20Brief%202024.pdf [PRIMARY]
 20. Malay Mail (Bernama), "MAHB targets mid-2028 finish for RM1.55b Penang Airport upgrade", 18 Jul 2025, https://www.malaymail.com/news/money/2025/07/18/mahb-targets-mid-2028-finish-for-rm155b-penang-airport-upgrade/184351 [S]
 

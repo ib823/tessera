@@ -17,6 +17,8 @@ Recovery is also decelerating sharply. The bulk landed in 2020 (RM14.26B, Goldma
 
 ## CONTEXT (timeline with dates and sources)
 
+> Note (9 Nov 2026): the bracket numbers in this section and in KEY STATISTICS follow an earlier source numbering and do not match the SOURCES list below. Trace each claim by the source it names, not by its number.
+
 - **2009–2015:** US DOJ later establishes ≥US$4.5B misappropriated from 1MDB by senior officials and associates (Source [1]).
 - **Mid-2015:** 1MDB accumulated debts of RM42B (~US$12B at the time); S&P/Fitch downgrade 1MDB bonds to junk (Source [2]).
 - **2016:** US DOJ launches landmark Kleptocracy Initiative civil-forfeiture campaign (41 actions, US$1.7B seized) (Source [1]).
