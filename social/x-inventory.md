@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T12:16:36.332Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T14:13:13.347Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1264,44 +1264,6 @@ Imagine a council that, before its next election, lets the current chair appoint
 Sarawak voted in 2025 to grow its assembly from 82 seats to 99, all elected. Johor chose to grow by five appointments before voters next vote.
 
 https://thefourthangle.pages.dev/issue/1977
-```
-
-### Issue 1976 — Four Undangs Purported to Depose the Ruler. State Government Says One Was No Longer in Office.
-
-> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1976-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1976`
-
-**1/7** _(hook — attach image, NO link)_ · 261 chars
-```
-Mubarak Dohak signed and read a declaration purporting to depose Tuanku Muhriz, with the three other Undangs present. The state government rejected it. Mubarak had proclaimed Muhriz as Ruler in 2008. The MB said he was dismissed as Undang effective 13 May 2025.
-```
-**2/7** _(fact)_ · 152 chars
-```
-The state constitution lets the Undangs collectively call the Ruler to withdraw. Whether three alone (without the dismissed fourth) suffice is untested.
-```
-**3/7** _(fact)_ · 117 chars
-```
-The same Undang who read the deposal on 19 April 2026 had proclaimed Tuanku Muhriz as 11th Ruler on 29 December 2008.
-```
-**4/7** _(fact)_ · 133 chars
-```
-The MB said Mubarak was dismissed effective 13 May 2025 over 33 alleged offences against Telaga Undang and Luak Sungei Ujong customs.
-```
-**5/7** _(fact)_ · 253 chars
-```
-Telaga Undang Sarifah Norzaidah called Mubarak's action treasonous (menderhaka). Police reports were made. No public adjudication of the underlying misconduct claim was located. Public responses focused on the declaration's validity, not the allegation.
-```
-**6/7** _(reframe)_ · 176 chars
-```
-The real question is not whether one disputed Undang can act. Two questions matter: was the deposal enquiry full and complete, and can three Undangs invoke the provision alone?
-```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
-```
-Some institutions rejected the declaration and defended Tuanku Muhriz's position. No court has ruled. The constitutional and customary questions remain open.
-
-https://thefourthangle.pages.dev/issue/1976
 ```
 
 ### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
@@ -2798,6 +2760,43 @@ Amnesty says PM Anwar pledged to abolish and reform laws like the Sedition Act. 
 Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the law in Feb 2026. The PM once pledged to abolish such laws. Zahid asks for more.
 
 https://thefourthangle.pages.dev/issue/1980
+```
+
+### Issue 1976 — Negeri Sembilan Throne: Three of the Four Undang Titles Are Now Contested
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1976-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1976`
+
+**1/7** _(hook — attach image, NO link)_ · 158 chars
+```
+On 15 September the state exco backed a 19 April proclamation to depose Tuanku Muhriz. Two days later the Attorney-General's Chambers (AGC) called it invalid.
+```
+**2/7** _(fact)_ · 158 chars
+```
+Article X lets Undangs call on a Ruler to abdicate after a 'full and complete enquiry'. Article XXIX counts their powers as duly used when at least three act.
+```
+**3/7** _(fact)_ · 117 chars
+```
+Mubarak Thahak, who read the 19 April proclamation, proclaimed Tuanku Muhriz Ruler as Undang of Sungai Ujong in 2008.
+```
+**4/7** _(fact)_ · 173 chars
+```
+The DKU says Sungai Ujong's elders removed Mubarak in May 2025, Jelebu's removed Maarof Mat Rashad in May 2023, and Abdul Rahim Yasin was never lawfully installed in Rembau.
+```
+**5/7** _(fact)_ · 162 chars
+```
+Article X also needs the Menteri Besar's signature. Aminuddin Harun refused in April; after the 1 August election his successor, Ismail Lasim, signed on 3 August.
+```
+**6/7** _(reframe)_ · 142 chars
+```
+Before anyone can say whether a Ruler was lawfully removed, someone must settle who lawfully held three of the four Undang titles on 19 April.
+```
+**7/7** _(view — ONLY post with the link)_ · 205 chars
+```
+The DKU and the AGC call the 19 April move invalid; its backers say it stands. No court has ruled on the merits, and in October the four dropped their own suit.
+
+https://thefourthangle.pages.dev/issue/1976
 ```
 
 ### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
