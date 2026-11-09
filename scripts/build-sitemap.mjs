@@ -15,6 +15,15 @@ const staticRoutes = [
   { loc: '/verify', lastmod: null, priority: '0.4' },
 ];
 
+// Trust and policy pages: privacy notice (English, and Malay at /privasi),
+// corrections policy and contact. src/pages/{privacy,privasi,corrections,contact}.astro.
+staticRoutes.push(
+  { loc: '/privacy', lastmod: null, priority: '0.4' },
+  { loc: '/privasi', lastmod: null, priority: '0.4' },
+  { loc: '/corrections', lastmod: null, priority: '0.4' },
+  { loc: '/contact', lastmod: null, priority: '0.4' },
+);
+
 // Same publish rule as getAllDossiers() in src/data/dossiers.ts, which
 // drives getStaticPaths for /dossier/[id].
 const dossierRoutes = readdirSync(dossierDir)

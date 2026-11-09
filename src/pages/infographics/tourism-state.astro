@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import UtilityHeader from '../../components/UtilityHeader.astro';
+import UtilityFooter from '../../components/UtilityFooter.astro';
 
 // Canonical dataset for this graphic (RM million; DOSM 2024). Mirrors
 // infographics/tourism-state/WRITEUP.md and data.json.
@@ -118,4 +119,5 @@ const p = 'font-family:var(--font-body);font-size:var(--text-body);line-height:1
 
     <p style="font-family:var(--font-body);font-size:var(--text-ui);line-height:1.6;color:var(--text-tertiary);margin:24px 0 0 0;font-style:italic;">Compiled by The Fourth Angle. Figures are official DOSM statistics; the dependency ratio is a derived presentation, not an official DOSM figure.</p>
   </main>
+  <UtilityFooter />
 </Base>
