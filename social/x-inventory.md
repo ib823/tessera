@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T10:12:04.626Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T12:16:36.332Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -897,9 +897,9 @@ https://thefourthangle.pages.dev/issue/1990
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
 
-**1/7** _(hook — attach image, NO link)_ · 106 chars
+**1/7** _(hook — attach image, NO link)_ · 111 chars
 ```
-Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on about 208,000 smallholders
+Malaysian palm oil to China fell 39% before Trump met Xi. About 208,000 smallholders live with the price swings
 ```
 **2/7** _(fact)_ · 212 chars
 ```
@@ -917,9 +917,9 @@ Greer announced the deal. China's foreign ministry said working teams were still
 ```
 When CPO falls, smallholders absorb it About 208,000 independent smallholders manage 27% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. Johari says palm oil faces no US tariffs. April oleochemical exports rose 23.83% on March.
 ```
-**6/7** _(reframe)_ · 114 chars
+**6/7** _(reframe)_ · 130 chars
 ```
-The question is not whether Trump shook palm oil. It is whether Malaysian rerouting outpaces the smallholder cost.
+The question is not whether Trump shook palm oil. It is whether new buyers like Kenya can steady the price smallholders depend on.
 ```
 **7/7** _(view — ONLY post with the link)_ · 138 chars
 ```
@@ -1152,16 +1152,16 @@ Two pauses, two clocks. Putrajaya extends a 48-year delay the court called uncon
 https://thefourthangle.pages.dev/issue/1981
 ```
 
-### Issue 1979 — 1MDB: RM31.3B Recovered, RM24.46B Of Debt Outstanding, RM6B Still In Arbitration
+### Issue 1979 — 1MDB: RM31.3B Recovered, RM20.1B Left To Pay, RM6B Still In Arbitration
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ai expected to contribute up to rm20b yearly to malaysia’s gdp by 2030, says gobind. putra). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
 
 **1/7** _(hook — attach image, NO link)_ · 121 chars
 ```
-MACC says RM31.3B was recovered from 1MDB. In November 2025 the Finance Ministry put 1MDB's debt obligations at RM24.46B.
+MACC says RM31.3B was recovered from 1MDB. In October 2026 the Finance Ministry said RM20.1B in 1MDB obligations remains.
 ```
 **2/7** _(fact)_ · 266 chars
 ```
@@ -1588,16 +1588,16 @@ The ambition is not wrong. The filter is. Judge each centre by the water and pow
 https://thefourthangle.pages.dev/issue/1963
 ```
 
-### Issue 1961 — MACC Chief Under Probe; the System Investigating Him Answers to Those Who Appointed Him
+### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 > ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
 
-**1/6** _(hook — attach image, NO link)_ · 119 chars
+**1/6** _(hook — attach image, NO link)_ · 270 chars
 ```
-Malaysia's anticorruption chief is under investigation; the system investigating him answers to those who appointed him
+Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
 ```
 **2/6** _(fact)_ · 100 chars
 ```
@@ -2603,9 +2603,9 @@ The word 'environment' is absent from the Federal Constitution. DOE can object b
 ```
 Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
 ```
-**4/7** _(fact)_ · 137 chars
+**4/7** _(fact)_ · 145 chars
 ```
-States resist NFA reforms because land conversion generates revenue that federal transfers don't replace The pattern crosses party lines.
+Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
 ```
 **5/7** _(reframe)_ · 149 chars
 ```
@@ -2767,7 +2767,7 @@ Like a referee whose call and non-call both stand, with no replay rule on either
 https://thefourthangle.pages.dev/issue/1988
 ```
 
-### Issue 1980 — Zahid wants firmer law on insults; sedition cases already up 84% in 2025
+### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
 
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1980-bg.png
@@ -2822,9 +2822,9 @@ Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh t
 ```
 Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
 ```
-**5/7** _(reframe)_ · 110 chars
+**5/7** _(reframe)_ · 90 chars
 ```
-Malaysian businesses profit from bonded cheap labour while working-class Malaysians bear the wage suppression.
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
 ```
 **6/7** _(analogy)_ · 267 chars
 ```
@@ -2917,9 +2917,9 @@ A foundation levelled what was left of a Hindu temple on its own land, under pol
 ```
 Land title is enforceable, but demolishing a temple without court process is not the same as exercising that right.
 ```
-**3/7** _(fact)_ · 118 chars
+**3/7** _(fact)_ · 110 chars
 ```
-Selangor counted 687 unauthorised Hindu temples as of 31 January 2026: 388 on government land and 299 on private land.
+Selangor counted 688 unauthorised Hindu temples in April 2026: 433 on government land and 255 on private land.
 ```
 **4/7** _(fact)_ · 139 chars
 ```
