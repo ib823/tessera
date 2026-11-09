@@ -239,7 +239,7 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 18. Consumers Association Penang, "Time to Reform the Pension Scheme for Elected Representatives in Malaysia", https://consumer.org.my/time-to-reform-the-pension-scheme-for-elected-representatives-in-malaysia/
 
 **Tier D — Cast biography and career-length verification**
-19. Wikipedia, "Anwar Ibrahim" — birth date 10 Aug 1947; PM sworn in 24 Nov 2022 — secondary, cross-checked against CNN and Al Jazeera below.
+19. Wikipedia, "Anwar Ibrahim" — birth date 10 Aug 1947; PM sworn in 24 Nov 2022 — secondary, cross-checked against CNN and Al Jazeera below. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 20. CNN, "Malaysia's Anwar becomes prime minister", 24 Nov 2022, https://www.cnn.com/2022/11/24/asia/anwar-ibrahim-malaysia-new-prime-minister-intl-hnk
 21. Al Jazeera, "Anwar sworn in as Malaysia's PM after 25-year struggle for reform", 24 Nov 2022, https://www.aljazeera.com/news/2022/11/24/malaysias-anwar-named-countrys-10th-prime-minister
 22. Wikipedia, "Muhyiddin Yassin" — birth 15 May 1947; corroborated against Perdana Leadership Foundation biography, https://www.perdana.org.my/biography-tan-sri-mahiaddin-yasin/

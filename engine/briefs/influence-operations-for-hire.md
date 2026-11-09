@@ -243,9 +243,9 @@ one verbatim; S = reporting.
 15. **[S]** FMT, "What the Online Safety Act changes, and how it works", 4 Feb 2026; Malaysian Wireless, "MCMC begins enforcing Online Safety Act", Jan 2026. https://www.freemalaysiatoday.com/category/nation/2026/02/04/what-the-online-safety-act-changes-and-how-it-works
 16. **[P]** MCMC, *Online Safety (Risk Mitigation) Code*, in force 1 Jun 2026; Allen & Gledhill and Mayer Brown bulletins (Jun–Jul 2026). https://www.mcmc.gov.my/skmmgovmy/media/General/pdf2/ONSA-Risk-Mitigation-Code_1.pdf
 17. **[P]** Singapore MHA press release, "Issuance of Account Restriction Directions under FICA against 95 social media accounts linked to a foreign network", 19 Jul 2024 (via Lexology/Baker McKenzie and Malay Mail 19 Jul 2024; MHA URL returned 404 in session, GAP 3). https://www.malaymail.com/news/singapore/2024/07/19/singapore-block-95-social-media-accounts-tied-to-convicted-chinese-billionaire-guo-wengui-in-first-use-of-foreign-interference-law/144226 [S]
-18. **[S]** Malay Mail, "US envoy rejects Hadi's claim it offered to help shape Malaysian govt leadership", 6 Sep 2026; NST, "Hadi says he will prove US toppling claim in court", Sep 2026. Context only.
-19. **[S]** Wikipedia, "Archimedes Group"; Security Affairs, May 2019 (the US$1.1m figure). Contradiction 1 only.
-20. **[S]** Times of Israel, "Archimedes Group, outed by Facebook for election fakery, works from Holon office", May 2019.
+18. **[S]** Malay Mail, "US envoy rejects Hadi's claim it offered to help shape Malaysian govt leadership", 6 Sep 2026; NST, "Hadi says he will prove US toppling claim in court", Sep 2026. Context only. https://www.malaymail.com/news/malaysia/2026/09/06/us-envoy-rejects-hadis-claim-it-offered-to-help-shape-malaysian-govt-leadership/234095
+19. **[S]** Wikipedia, "Archimedes Group"; Security Affairs, May 2019 (the US$1.1m figure). Contradiction 1 only. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+20. **[S]** Times of Israel, "Archimedes Group, outed by Facebook for election fakery, works from Holon office", May 2019. https://www.timesofisrael.com/archimedes-group-outed-by-facebook-for-election-fakery-works-from-holon-office/
 21. **[P]** Meta Q1 2025 Adversarial Threat Report (May 2025): no Malaysia-related network; opened this session to confirm the absence. https://transparency.meta.com/sr/Q1-2025-Adversarial-threat-report/
 
 Primary count: S1, S3, S7, S9, S10, S16, S17, S21 = 8, plus S→P items quoting official text.

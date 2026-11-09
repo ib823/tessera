@@ -82,22 +82,22 @@ Coverage is well-distributed; no single-spectrum dominance. The piece reads neit
 4. The Vibes, "LHDN records over 820 million e-Invoices as businesses embrace digital tax reform," 22 Dec 2025, https://www.thevibes.com/articles/business/117291/ (PRIMARY-citing).
 5. The Borneo Post, "E-invoicing threshold raised, tax refunds doubled to support small businesses, says Anwar," 6 Dec 2025, https://www.theborneopost.com/2025/12/06/e-invoicing-threshold-raised-tax-refunds-doubled-to-support-small-businesses-says-anwar/ (PRIMARY-citing).
 6. The Star, "E-invoice exemption threshold up to RM1mil starting 2026, says PM," 6 Dec 2025, https://www.thestar.com.my/news/nation/2025/12/06/e-invoice-exemption-threshold-up-to-rm1mil-starting-2026-says-pm (PRIMARY-citing).
-7. Business Today, "Companies Below RM1 Million Revenue Exempt From E-Invoice, PM Says," 6 Dec 2025.
+7. Business Today, "Companies Below RM1 Million Revenue Exempt From E-Invoice, PM Says," 6 Dec 2025. https://www.businesstoday.com.my/2025/12/06/companies-below-rm1-million-revenue-exempt-from-e-invoice-pm-says/
 8. The Star, "Higher e-invoicing threshold to benefit 200,000 businesses, says SME association," 7 Dec 2025, https://www.thestar.com.my/news/nation/2025/12/07/expanded-e-invoicing-exemption-to-benefit-200000-small-businesses-says-sme-association
 9. Bernama, "Additional 200,000 SMEs To Benefit From New E-invoicing Exemption Threshold — Samenta," 7 Dec 2025, https://www.bernama.com/lite/news.php?id=2499714
-10. The Borneo Post, "Samenta: 200,000 more SMEs exempted from e-invoicing next year," 7 Dec 2025.
-11. Malay Mail, "SME group welcomes e-invoicing exemption for sub-RM1m firms, says 200,000 to benefit," 7 Dec 2025.
+10. The Borneo Post, "Samenta: 200,000 more SMEs exempted from e-invoicing next year," 7 Dec 2025. https://www.theborneopost.com/2025/12/07/samenta-200000-more-smes-exempted-from-e%E2%80%91invoicing-next-year/
+11. Malay Mail, "SME group welcomes e-invoicing exemption for sub-RM1m firms, says 200,000 to benefit," 7 Dec 2025. https://www.malaymail.com/news/malaysia/2025/12/07/sme-group-welcomes-e-invoicing-exemption-for-sub-rm1m-firms-says-200000-to-benefit/201051
 12. FMT, "Govt to postpone e-invoicing for firms earning up to RM5mil by another year," 5 Jan 2026, https://www.freemalaysiatoday.com/category/nation/2026/01/05/govt-to-postpone-e-invoicing-for-companies-earning-up-to-rm5mil-by-another-year
-13. The Star, "E-invoicing for SMEs with RM1mil to RM5mil sales postponed, says Anwar," 5 Jan 2026.
-14. The Edge Malaysia, "E-invoicing: Govt grants businesses with up to RM5 mil turnover another year to comply," 5 Jan 2026.
-15. TheVibes, "Close to 6,000 Malaysians identified for failing to declare RM484 million in income," July 2025 (PRIMARY-citing LHDN enforcement statement).
-16. Malay Mail, "LHDN raids company linked to luxury car cartel over RM70m tax evasion," 18 Nov 2025.
-17. FMT, "LHDN uncovers tax non-compliance linked to luxury vehicle cartel," 18 Nov 2025.
-18. VATupdate, "Malaysia raises e-invoicing exemption threshold to RM1 million; cancels final implementation phase," 17 Dec 2025.
-19. Comarch, "Malaysia Doubles E-Invoicing Exemption Threshold to RM1 Million" (industry commentary).
+13. The Star, "E-invoicing for SMEs with RM1mil to RM5mil sales postponed, says Anwar," 5 Jan 2026. https://www.thestar.com.my/news/nation/2026/01/05/e-invoicing-for-smes-with-rm1mil-to-rm5mil-sales-postponed-says-anwar
+14. The Edge Malaysia, "E-invoicing: Govt grants businesses with up to RM5 mil turnover another year to comply," 5 Jan 2026. https://theedgemalaysia.com/node/788024
+15. TheVibes, "Close to 6,000 Malaysians identified for failing to declare RM484 million in income," 27 Aug 2025 (PRIMARY-citing LHDN enforcement statement). https://www.thevibes.com/articles/news/112070/close-to-6000-malaysians-identified-for-failing-to-declare-rm484-million-in-income
+16. Malay Mail, "LHDN raids company linked to luxury car cartel over RM70m tax evasion," 18 Nov 2025. https://www.malaymail.com/news/malaysia/2025/11/18/lhdn-raids-company-linked-to-luxury-car-cartel-over-rm70m-tax-evasion/198819
+17. FMT, "LHDN uncovers tax non-compliance linked to luxury vehicle cartel," 18 Nov 2025. https://www.freemalaysiatoday.com/category/nation/2025/11/18/lhdn-uncovers-tax-non-compliance-linked-to-luxury-vehicle-cartel
+18. VATupdate, "Malaysia raises e-invoicing exemption threshold to RM1 million; cancels final implementation phase," 17 Dec 2025. https://www.vatupdate.com/2025/12/17/malaysia-raises-e-invoicing-exemption-threshold-to-rm1-million-cancels-final-implementation-phase/
+19. Comarch, "Malaysia Doubles E-Invoicing Exemption Threshold to RM1 Million" (industry commentary). https://www.comarch.com/trade-and-services/data-management/legal-regulation-changes/malaysia-doubles-e-invoicing-exemption-threshold-to-rm1-million/
 20. UiTM Institutional Repository, "Shadow economy in Malaysia: an introduction," https://ir.uitm.edu.my/id/eprint/131647/ (PRIMARY academic).
 21. IJBS, "Re-estimation and Modelling Shadow Economy in Malaysia," https://www.ijbs.unimas.my/images/repository/pdf/Vol20-no3-paper13.pdf (PRIMARY academic).
-22. Focus Malaysia, "Shadow economy — why does it matter?" (industry-press analysis citing BNM and academic estimates).
+22. Focus Malaysia, "Shadow economy — why does it matter?" (industry-press analysis citing BNM and academic estimates). https://focusmalaysia.my/shadow-economy-why-does-it-matter/
 23. LoanStreet, "How Does Shadow Economy Affect Malaysia's Income Tax?" (industry-press analysis).
 24. MDEC, "SME Digitalisation Grant," https://mdec.my/en/digital-economy-initiatives/for-the-industry/sme-digitalisation-grant/ (PRIMARY).
 25. Zoomotech, "Why Custom Software Cost in Malaysia Varies: RM30k-RM300k" (industry estimate for SME ERP costs).

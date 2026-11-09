@@ -128,7 +128,7 @@ Not "secret cells the media missed" (false — coverage was heavy, and no source
 17. Ynetnews, Avitan sentencing (7 years), Feb 2025
 18. The Vibes / Bernama, Saifuddin "very high capability" + 3 espionage arrests, Aug 21 2025
 19. Malay Mail / The Star, MACC "counter-setting" arrests (~50 officers), Aug–Nov 2024
-20. Wikipedia (compiling Dubai Police / Reuters / Guardian / BBC), "Assassination of Mahmoud al-Mabhouh" — 2010 passport signature comparator
+20. Wikipedia (compiling Dubai Police / Reuters / Guardian / BBC), "Assassination of Mahmoud al-Mabhouh" — 2010 passport signature comparator (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 21. Citizen Lab, "Running in Circles" (Circles SS7 in Malaysia, operator unidentified), Dec 2020 https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/
 22. Citizen Lab, "Hide and Seek" Pegasus 45-country map (Malaysia ABSENT) — basis for the Pegasus negative finding https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/
 23. UN Panel of Experts (2017) + Reuters, North Korea Glocom front companies registered in KL — front-company context
@@ -137,5 +137,6 @@ Not "secret cells the media missed" (false — coverage was heavy, and no source
 26. Free Malaysia Today (Bernama), "6 men who abducted Palestinian get 5 years' jail", 10 Jul 2025, https://www.freemalaysiatoday.com/category/nation/2025/07/10/6-men-who-abducted-palestinian-get-5-years-jail
 27. The Star, "Espionage remains persistent threat to Malaysia, says Home Minister", 21 Aug 2025, https://www.thestar.com.my/news/nation/2025/08/21/espionage-remains-persistent-threat-to-malaysia-says-home-minister
 28. Malay Mail, "High Court jails construction worker three years for Palestinian abduction tied to hacking secrets", 12 Oct 2026, https://www.malaymail.com/news/malaysia/2026/10/12/high-court-jails-construction-worker-three-years-for-palestinian-abduction-tied-to-hacking-secrets/238837
+29. NPR, "U.K. Expels Israeli Diplomat Over Dubai Killing", 23 Mar 2010, https://www.npr.org/2010/03/23/125072330/u-k-expels-israeli-diplomat-over-dubai-killing [S]
 
 *Note: items 1, 3, 4, 11–19, 21–24 carry primary on-record official quotes, court records, or forensic technical reports. ≥8 primary of 25 total — meets the Accuracy Standard. Advocacy/state-media outlets (Al Mayadeen, PressTV, TRT, MEMO, Malaysia Today, NMH, sunnafiles) were read for framing only and underlie NO factual assertion. Mossad authorship is "suspected/attributed" throughout — never stated as established fact.*

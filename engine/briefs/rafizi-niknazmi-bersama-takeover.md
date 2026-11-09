@@ -103,26 +103,26 @@ Avoid using all three of Political/Legal/Governance on the fact cards if Governa
 **Primary (legal commentary on the constitutional provisions):**
 6. Malaysian Bar — *By-elections and the Constitution*. https://www.malaysianbar.org.my/legal/general_news/by_elections_and_the_constitution.html (confirms the 6-months → 2-years amendment of Art. 54(1)). [S]
 7. Rahmat Lim & Partners — *Anti-party hopping laws introduced in Federal Constitution of Malaysia*. https://www.rahmatlim.com/publication/articles/22605/ [S]
-8. *Malaysia's Anti-hopping Law: Some Loopholes to Mull Over* — Fulcrum (ISEAS).
+8. *Malaysia's Anti-hopping Law: Some Loopholes to Mull Over* — Fulcrum (ISEAS). https://fulcrum.sg/article/commentaries/malaysias-anti-hopping-law-some-loopholes-to-mull-over/
 9. Thomas Philip Advocates — *Power to the Political Parties: An Overview of the current Legal Developments Affecting Elected Representatives Post-GE15*. https://www.thomasphilip.com.my/articles/power-to-the-political-parties-an-overview-of-the-current-legal-developments-affecting-elected-representatives-post-ge15/ [S]
 
 **Secondary (news, multi-spectrum):**
 10. **The Star** (mainstream / centrist) — *Speaker to decide on Pandan, Setiawangsa seats, by-elections unlikely after three-year mark, says Loke*, 17 May 2026. https://www.thestar.com.my/news/nation/2026/05/17/speaker-to-decide-on-pandan-setiawangsa-seats-by-elections-unlikely-after-three-year-mark-says-loke
-11. **The Star** — *Rafizi, Nik Nazmi's PKR membership automatically terminated, says Fuziah*, 17 May 2026.
-12. **The Star** — *Taking over Bersama is "second kamikaze" mission, say Rafizi, Nik Nazmi*, 17 May 2026.
-13. **The Star** — *We're not party-hopping, say Rafizi and Nik Nazmi on move to Parti Bersama Malaysia*, 17 May 2026.
+11. **The Star** — *Rafizi, Nik Nazmi's PKR membership automatically terminated, says Fuziah*, 17 May 2026. https://www.thestar.com.my/news/nation/2026/05/17/rafizi-nik-nazmi039s-pkr-membership-automatically-terminated-says-fuziah
+12. **The Star** — *Taking over Bersama is "second kamikaze" mission, say Rafizi, Nik Nazmi*, 17 May 2026. https://www.thestar.com.my/news/nation/2026/05/17/taking-over-bersama-is-039second-kamikaze039-mission-say-rafizi-nik-nazmi
+13. **The Star** — *We're not party-hopping, say Rafizi and Nik Nazmi on move to Parti Bersama Malaysia*, 17 May 2026. https://www.thestar.com.my/news/nation/2026/05/17/were-not-party-hopping-say-rafizi-and-nik-nazmi-on-move-to-parti-bersama-malaysia
 14. **New Straits Times** (government-aligned) — *[UPDATED] Rafizi, Nik Nazmi take over Parti Bersama Malaysia*, 17 May 2026. https://www.nst.com.my/news/nation/2026/05/1441564/
 15. **Malay Mail** (independent) — coverage of the MACC ARM investigation, 4 May / 7 May / 14 May 2026.
 16. **Malaysiakini** (independent) — *Rafizi and Nik Nazmi quitting PKR, vacating seats, to head Bersama party*, 17 May 2026. https://www.malaysiakini.com/news/775373
 17. **FMT** (independent) — *Rafizi, Nik Nazmi say quitting seats to avoid anti-hopping law implications*, 17 May 2026. https://www.freemalaysiatoday.com/category/nation/2026/05/17/rafizi-nik-nazmi-say-quitting-party-to-avoid-anti-hopping-law-implications
-18. **Borneo Post** (East Malaysia, independent) — *Rafizi Ramli, Nik Nazmi quit PKR, will vacate Pandan and Setiawangsa seats*, 17 May 2026.
-19. **The Vibes** (independent) — *Rafizi returns to anti-graft agency as RM1.1 billion probe deepens*, May 2026.
+18. **Borneo Post** (East Malaysia, independent) — *Rafizi Ramli, Nik Nazmi quit PKR, will vacate Pandan and Setiawangsa seats*, 17 May 2026. https://www.theborneopost.com/2026/05/17/rafizi-ramli-nik-nazmi-quit-pkr-will-vacate-pandan-and-setiawangsa-seats/
+19. **The Vibes** (independent) — *Rafizi returns to anti-graft agency as RM1.1 billion probe deepens*, May 2026. https://www.thevibes.com/articles/news/122601/rafizi-returns-to-anti-graft-agency-as-rm1.1-billion-probe-deepens
 20. **Bloomberg** (international) — *Malaysia's Anti-Graft Agency Summons Ex-Minister Rafizi Over Arm Deal Probe*, 3 May 2026. https://www.bloomberg.com/news/articles/2026-05-03/malaysia-s-anti-graft-agency-to-quiz-ex-minister-over-arm-deal
 21. **US News / AP wire** (international) — *Two Former Malaysian Ministers Announce Resignations from Parliament Seats*, 17 May 2026. https://www.usnews.com/news/world/articles/2026-05-17/two-former-malaysian-ministers-announce-resignations-from-parliament-seats
 22. **Berita Harian / Harian Metro** (Malay-language, government-aligned BH; mainstream HM) — corroborating Malay-language coverage.
 24. Court of Appeal Malaysia (via eLaw), "Zuraida Kamaruddin v Saifuddin Nasution Ismail (as Secretary General, Parti Keadilan Rakyat), Civil Appeal No. W-02(NCVC)(W)-1094-07-2023, [2025] 1 MLRA 907", 11 Dec 2024, https://www.elaw.my/JE/01/JE_2024_51.html [PRIMARY]
 25. Malay Mail (Bernama), "Confidence vote, election of Speaker focus of today's Dewan Rakyat session", 19 Dec 2022, https://www.malaymail.com/news/malaysia/2022/12/19/confidence-vote-election-of-speaker-focus-of-todays-dewan-rakyat-session/46000 [S]
-23. **Wikipedia** — *Malaysian United Party*; *Nik Nazmi*; *Results of the 2022 Malaysian general election by parliamentary constituency*. Secondary; used only to cross-check primary-source claims (registration date, majority figures).
+23. **Wikipedia** — *Malaysian United Party*; *Nik Nazmi*; *Results of the 2022 Malaysian general election by parliamentary constituency*. Secondary; used only to cross-check primary-source claims (registration date, majority figures). (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 
 ## CONTRADICTIONS
 

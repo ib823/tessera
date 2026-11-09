@@ -126,8 +126,12 @@ charging decision pending).
   used for the Arm deal sits at the seam between an IP-licensing
   arrangement, a strategic partnership, and a public-spend commitment;
   the procedural question turns on which category governs.
-- **Government Procurement Act 2023** (in force) — Imposes higher
-  transparency standards on large-value contracts.
+- **Government Procurement Act 2025** — Imposes higher transparency
+  standards on large-value contracts. (Corrected 9 Nov 2026: this brief
+  first called it the "Government Procurement Act 2023 (in force)". No
+  such 2023 Act exists; Parliament passed the Act in 2025, and May 2026
+  reporting disagreed on whether it had come into force. No card relies
+  on it, and source 6 is withheld from the reader list.)
 
 ## KEY STATISTICS
 
@@ -204,7 +208,7 @@ Governance, Legal, Political, Economic
 4. Penal Code Sections 420 and 409 (Laws of Malaysia, Act 574). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf
 5. Federal Constitution of Malaysia Article 145 (Attorney-General's https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
    prosecutorial discretion).
-6. Government Procurement Act 2023 (Laws of Malaysia).
+6. Government Procurement Act 2023 (Laws of Malaysia). (LOGGED FOR EXCLUSION: no Government Procurement Act 2023 exists; the Act passed in 2025, and no card relies on it)
 
 **Wire / international**
 7. AFP / SpaceDaily, "Malaysia signs deal with Arm to bolster chip
@@ -276,6 +280,7 @@ Governance, Legal, Political, Economic
     <https://www.malaymail.com/news/malaysia/2025/05/28/rafizi-quits-as-economy-minister-says-he-no-longer-has-mandate-for-reform/178458>
 27. SCMP, "Malaysia's Rafizi Ramli resigns as minister after bruising
     loss in ruling party election," May 2025.
+    <https://www.scmp.com/week-asia/politics/article/3312100/malaysias-rafizi-ramli-resigns-minister-after-bruising-loss-ruling-party-election>
 
 ## CONTRADICTIONS
 

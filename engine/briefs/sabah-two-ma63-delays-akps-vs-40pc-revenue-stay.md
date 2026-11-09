@@ -114,7 +114,7 @@ Primary: **Legal**, **Governance**, **Political**. Applicable but unused: **Hist
 
 Primary / quasi-primary:
 1. Federal Constitution, Article 112C, Article 112D, Tenth Schedule Part IV. AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf [PRIMARY]
-2. Immigration Act 1959/63 (Act 155). AGC consolidated text.
+2. Immigration Act 1959/63 (Act 155). AGC consolidated text. https://www.imi.gov.my/wp-content/uploads/2022/11/IMMIGRATION-ACT-1959-63-PDF.pdf
 3. Malaysian Border Control and Protection Agency Act 2024 (Act 860), specifically Section 6(3). AGC consolidated text.
 4. Sabah Law Society v Government of Malaysia & Ors, Kota Kinabalu High Court, judgment 7 Nov 2025 (Judge Datuk Celestina Stuel Galid, 107 pages). Primary judgment text not directly accessed; relied on FMT, The Star, Borneo Post, Edge Malaysia summaries. https://www.elaw.my/JE/01/JE_2025_46.html [PRIMARY]
 5. Court of Appeal panel ruling 6 April 2026 (Mohamed Zaini Mazlan, Ismail Brahim, K. Muniandy). Primary ruling text not directly accessed; relied on Bernama, Malay Mail, The Star, FMT, The Vibes summaries. [PRIMARY]

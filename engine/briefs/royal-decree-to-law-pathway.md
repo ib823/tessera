@@ -254,8 +254,8 @@ Religious lens deliberately *not* used as a card lens — keeps the editorial fr
 28. The Malaysian Bar, "Powers and functions of state rulers", https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/powers-and-functions-of-state-rulers
 29. Federal Constitution (AGC reprint, 1 November 2010) — Articles 3, 8, 32, 38, 40, 63, 66, 71, 121, 150, 152, 153, 181, 182; Eighth Schedule. Available via LPR ADB mirror: https://lpr.adb.org/sites/default/files/resource/719/malaysia-constitution.pdf.pdf [PRIMARY]
 30. Constitute Project, "Malaysia 1957 (rev. 2007) Constitution", https://www.constituteproject.org/constitution/Malaysia_2007
-31. Wikipedia, "Laws of the Constitution of Selangor 1959" — overview of Article 50 and the Selangor State Constitution structure.
-32. Wikipedia, "Constitution of Malaysia" — general primary-text reference.
+31. Wikipedia, "Laws of the Constitution of Selangor 1959" — overview of Article 50 and the Selangor State Constitution structure. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+32. Wikipedia, "Constitution of Malaysia" — general primary-text reference. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 33. Sedition Act 1948 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%2015.pdf
 34. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%20588.pdf
 35. Penal Code (Act 574), ss.298, 298A, 504 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf [PRIMARY]

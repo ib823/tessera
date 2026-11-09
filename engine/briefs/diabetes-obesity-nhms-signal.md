@@ -64,10 +64,10 @@ Primary **Health**; secondary **Social** (undiagnosed youth, sedentary behaviour
 2. "Conducting the National Health and Morbidity Survey 2023 in Malaysia…", Scientific Reports (2025) — https://www.nature.com/articles/s41598-025-08311-9 (PRIMARY methodology; 403)
 3. CodeBlue / Galen Centre, "NHMS 2023: Over Half Of Malaysian Adults Overweight Or Obese", 27 May 2024 — https://codeblue.galencentre.org/2024/05/nhms-2023-over-half-of-malaysian-adults-overweight-or-obese/
 4. FMT, "Survey shows over half of Malaysian adults overweight or obese", 16 May 2024 — https://www.freemalaysiatoday.com/category/nation/2024/05/16/survey-shows-over-half-of-malaysian-adults-overweight-or-obese
-5. The Vibes, "High rate of undiagnosed diabetes among Malaysian youth raises concern"
+5. The Vibes, "High rate of undiagnosed diabetes among Malaysian youth raises concern" https://www.thevibes.com/articles/lifestyles/111158/high-rate-of-undiagnosed-diabetes-among-malaysian-youth-raises-concern
 6. PLOS One, "Prevalence of impaired fasting glucose… NHMS 2019" — https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0320993 (confirms 2019 FBG method, 18.3%) [PRIMARY]
 7. "Rising Obesity in Malaysia (1990–2023)…", PMC12900780 — confirms the long-run obesity climb. https://pmc.ncbi.nlm.nih.gov/articles/PMC12900780/ [PRIMARY]
-8. Sinar Daily, "Malaysia's obesity crisis: 11 million adults affected"
+8. Sinar Daily, "Malaysia's obesity crisis: 11 million adults affected" https://www.sinardaily.my/article/218594/focus/national/malaysias-obesity-crisis-11-million-adults-affected
 9. Institute for Public Health, Ministry of Health Malaysia, "Fact Sheet: National Health and Morbidity Survey 2019: Non-communicable diseases, healthcare demand and health literacy", https://iku.nih.gov.my/images/IKU/Document/REPORT/NHMS2019/Fact_Sheet_NHMS_2019-English.pdf [PRIMARY]
 
 ## CARD MAP (as published in 2002.json)

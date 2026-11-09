@@ -85,7 +85,7 @@ Social, Economic, Legal
 5. Federal Court judgment, Feb 2024 — Rejects leave to appeal on vernacular school constitutionality [PRIMARY]
 6. Malay Mail, "Simplified: Why Malaysia's vernacular schools are constitutional" Feb 2024 https://www.malaymail.com/news/malaysia/2024/02/20/simplified-why-malaysias-vernacular-schools-are-constitutional-and-their-use-of-tamil-and-chinese-is-legally-protected-according-to-court-of-appeal/118903
 7. The Star, "Help Tamil schools survive" Mar 2025 https://www.thestar.com.my/news/education/2025/03/16/help-tamil-schools-survive
-8. Malaysiakini, "Tamil schools in decline — act now before legacy fades" 2024
+8. Malaysiakini, "Tamil schools in decline — act now before legacy fades" 13 Jan 2026 https://www.malaysiakini.com/letters/765487
 9. Ipoh Echo, "Safety concerns at SJKT Kerajaan have been unresolved since 2024" Mar 2026 https://www.ipohecho.com.my/2026/03/02/safety-concerns-at-sjkt-kerajaan-have-been-unresolved-since-2024/
 10. The Star, "Federal Court upholds constitutionality of vernacular schools" Feb 2024 https://www.thestar.com.my/news/nation/2024/02/20/federal-court-upholds-constitutionality-of-vernacular-schools-in-malaysia
 11. FMT, "Nearly 50% increase in Bumi students in international schools over past 5 years" Jul 2024 https://fmtv5.freemalaysiatoday.com/category/nation/2024/07/09/nearly-50-increase-in-bumi-students-in-intl-schools-over-past-5-years
@@ -97,7 +97,7 @@ Social, Economic, Legal
 17. UNESCO, "Malaysia: education policy review" (abridged report)
 18. Wiki Impact, "A Slow Fade: Why Tamil Schools Are Disappearing In Malaysia" https://www.wikiimpact.com/?p=42873
 19. Penang CM, "Penang to continue annual aid for Tamil vernacular school infrastructure" Dec 2024 https://www.thestar.com.my/news/nation/2024/12/22/penang-to-continue-annual-aid-for-tamil-vernacular-school-infrastructure-says-cm
-20. Sabah Media, "KPM perlu gandakan usaha jadikan Sekolah Kebangsaan sebagai sekolah pilihan utama" Jul 2024
+20. Sabah Media, "KPM perlu gandakan usaha jadikan Sekolah Kebangsaan sebagai sekolah pilihan utama" Jul 2024 https://sabahmedia.com/2024/07/22/kpm-perlu-gandakan-usaha-jadikan-sekolah-kebangsaan-sebagai-sekolah-pilihan-utama/
 21. The Star, "Education Ministry urged to relocate Tamil schools to highly-populated zones", 5 Mar 2025, https://www.thestar.com.my/news/nation/2025/03/05/education-ministry-urged-to-relocate-tamil-schools-to-highly-populated-zones [S]
 22. Bernama, "528 SJKT Operating Nationwide With 78,501 Pupils", 22 Jun 2026, https://www.bernama.com/en/general/news.php?id=2571731 [S]
 23. Scoop (republished by Newswav), "Tamil schools, SJKC funding raised to RM80mil: Anwar", 5 Jan 2026, https://newswav.com/article/tamil-schools-sjkc-funding-raised-to-rm80mil-anwar-A2601_9ZuEt4 [S]
