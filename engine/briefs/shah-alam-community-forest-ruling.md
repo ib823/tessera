@@ -89,21 +89,21 @@ Legal, Governance, Environmental
 
 ## SOURCES
 1. Malay Mail, "Federal Court decision could determine future of Shah Alam Community Forest" Mar 30, 2026 https://www.malaymail.com/news/malaysia/2026/03/30/federal-court-decision-could-determine-future-of-shah-alam-community-forest/214404
-2. FMT, "NGOs fail in Bukit Cherakah degazetting lawsuit" Apr 1, 2026
+2. FMT, "NGOs fail in Bukit Cherakah degazetting lawsuit" Apr 1, 2026 https://www.freemalaysiatoday.com/category/nation/2026/04/01/ngos-fail-in-bukit-cherakah-degazetting-lawsuit
 3. EdgeProp, "Apex court quashes NGO bid to challenge Bukit Cherakah's degazettement in split 2-1 decision" Apr 1, 2026 https://www.edgeprop.my/content/1915733/apex-court-quashes-ngo-bid-challenge-bukit-cherakah%E2%80%99s-degazettement-split-2-1-decision
-4. The Star, "Apex court dismisses NGOs' appeal over Bukit Cherakah degazettement" Apr 1, 2026
-5. The Star, "Shah Alam forest link road 70% complete" Mar 3, 2026
-6. The Star, "No to Shah Alam forest road" Feb 11, 2026
-7. FMT, "Residents protest Shah Alam road project, want forest protected" Dec 21, 2025
+4. The Star, "Apex court dismisses NGOs' appeal over Bukit Cherakah degazettement" Apr 1, 2026 https://www.thestar.com.my/news/nation/2026/04/01/apex-court-dismisses-ngos039-appeal-over-bukit-cherakah-degazettement
+5. The Star, "Shah Alam forest link road 70% complete" Mar 3, 2026 https://www.thestar.com.my/metro/metro-news/2026/03/03/shah-alam-forest-link-road-70-complete
+6. The Star, "No to Shah Alam forest road" Feb 11, 2026 https://www.thestar.com.my/metro/metro-news/2026/02/11/no-to-shah-alam-forest-road
+7. FMT, "Residents protest Shah Alam road project, want forest protected" Dec 21, 2025 https://www.freemalaysiatoday.com/category/nation/2025/12/21/residents-protest-shah-alam-road-project-want-forest-protected
 8. Eco-Business, "Malaysia's top court allows NGOs to challenge state government on forest degazettement" 9 Sep 2024 https://www.eco-business.com/id/news/malaysias-top-court-allows-ngos-to-challenge-state-government-on-forest-degazettement/
-9. NST, "Residents, Nature Lovers and NGOs Unite in Last-ditch Battle" Jun 2024
+9. NST, "Residents, Nature Lovers and NGOs Unite in Last-ditch Battle" Jun 2024 https://www.nst.com.my/lifestyle/sunday-vibes/2024/06/1067126/residents-nature-lovers-and-ngos-unite-last-ditch-battle-save
 10. WWF-Malaysia, "NGOs and CSOs Express Alarm Over Legal Implication" 2022
 11. SME Asia, "53 CSOs demand revocation of degazettement" Jul 18, 2022
-12. FMT, "Forestry dept explains delisting of Bukit Cherakah forest reserve" Jul 9, 2022
+12. FMT, "Forestry dept explains delisting of Bukit Cherakah forest reserve" Jul 9, 2022 https://freemalaysiatoday.com/category/nation/2022/07/09/forestry-dept-explains-delisting-of-bukit-cherakah-forest-reserve
 13. Malaysian Bar, "Selangor Government Must Respect Due Process in Forest Reserve Excision" 8 Nov 2021 https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-release-selangor-government-must-respect-due-process-in-forest-reserve-excision
-14. SACF official site, "Chronology of Bukit Cherakah Forest Corridor Judicial Review"
-15. UNDP GEF SGP, "Saving Shah Alam Community Forest" project page
+14. SACF official site, "Chronology of Bukit Cherakah Forest Corridor Judicial Review" https://shahalamforest.org/wp/chronology-of-bukit-cherakah-forest-corridor-judicial-review/
+15. UNDP GEF SGP, "Saving Shah Alam Community Forest" project page https://sgp.undp.org/spacial-itemid-projects-landing-page/spacial-itemid-project-search-results/spacial-itemid-project-detailpage.html?view=projectdetail&id=28792
 16. Wikipedia, "Shah Alam Community Forest" (for cross-referencing)
-17. Malay Mail, "Selangor announces halt, will regazette Kuala Langat North Forest Reserve" Sep 8, 2021
-18. Malay Mail, "Abdul Rahman Sebli retires" Jul 25, 2025
+17. Malay Mail, "Selangor announces halt, will regazette Kuala Langat North Forest Reserve" Sep 8, 2021 https://www.malaymail.com/news/malaysia/2021/09/08/selangor-announces-halt-to-development-plans-will-regazette-kuala-langat-no/2004044
+18. Malay Mail, "Abdul Rahman Sebli retires" Jul 25, 2025 https://www.malaymail.com/news/malaysia/2025/07/25/abdul-rahman-sebli-retires-as-chief-judge-of-sabah-and-sarawak-a-look-at-his-judicial-legacy-artistic-flair-and-wildlife-protection-advocacy/184949
 19. Malay Mail (Bernama), "Proposal to degazette Kuala Langat forest reserve gets 44,292 objections", 17 March 2020, https://www.malaymail.com/news/malaysia/2020/03/17/proposal-to-degazette-kuala-langat-forest-reserve-gets-44292-objections/1847538

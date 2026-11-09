@@ -420,6 +420,7 @@ lens diversity.
    <https://www.sc.com.my/regulation/guidelines/digital-assets>
 7. Capital Markets and Services (Prescription of Securities) (Digital
    Currency and Digital Token) Order 2019, P.U.(A) 12/2019.
+   <https://www.sc.com.my/api/documentms/download.ashx?id=8c8bc467-c750-466e-9a86-98c12fec4a77>
 8. White House, "Fact Sheet: President Donald J. Trump Signs GENIUS
    Act into Law," 18 July 2025.
    <https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/>

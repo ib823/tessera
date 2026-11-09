@@ -104,31 +104,31 @@ January 2025 – April 2026
 
 ## SOURCES
 
-1. Malay Mail, "DoE chief charged over RM100,000 bribe in Penang road project," Apr 3, 2026
-2. FMT, "DoE DG, deputy claim trial to graft charges totalling RM121,000," Apr 3, 2026
-3. The Star, "DOE top guns deny graft charges," Apr 4, 2026
-4. The Star, "DOE Deputy D-G charged with six counts of bribery," Apr 3, 2026
-5. The Star, "Environment Dept deputy DG to face further corruption charge," Apr 5, 2026
-6. FMT, "DoE deputy DG charged with taking over RM9,000 from waste firm," Apr 6, 2026
-7. Bernama, "DOE DG Pleads Not Guilty To Receiving RM100,000 Bribe," Apr 3, 2026
-8. Malaysiakini, "DOE DG accused of RM100k graft over Penang paired road project," Apr 3, 2026
-9. The Vibes, "Two top DOE officials plead not guilty to accepting bribes," Apr 3, 2026
-10. Eco-Business, "Malaysia arrests top environment officials amid e-waste probes," Jan 30, 2026
-11. Borneo Post, "MACC detains top DOE officials in e-waste corruption probe," Jan 29, 2026
-12. Malay Mail, "Three senior DOE officials under MACC remand for seven days," Jan 30, 2026
-13. The Star, "Probe papers on top DOE officials submitted to AGC," Mar 25, 2026
-14. Sahabat Alam Malaysia, "CSOs Demand Transparency On MACC Investigations Into DG Of Environment," Apr 1, 2026
-15. Aliran, "DoE arrests expose deep corruption risks in e-waste governance," Feb 2026
-16. FMT, "Environment dept needs 3,000 more enforcement staff, says DG," Nov 30, 2023
-17. The Star, "MACC detains six company owners, freezes RM7.2mil in e-waste cases," Jan 22, 2026
-18. FMT, "Foreigner pleads not guilty to giving DoE officer RM50,000 bribe," Jan 29, 2026
-19. The Star, "In the dock over RM50,000 bribe to DOE officer," Jan 23, 2026
-20. Euronews, "Malaysia announces immediate ban on e-waste imports," Feb 5, 2026
-21. Malay Mail, "Malaysia fully bans e-waste imports via 'Absolute Prohibition' listing," Feb 4, 2026
-22. The Star, "Nationwide crackdown on banned e-waste begins," Apr 3, 2026
-23. The Star, "Nearly 800,000 in Johor hit by water cuts due to Sg Johor pollution," Nov 1, 2025
-24. The Edge Malaysia, "When rivers fail, who goes to jail?" Mar 2026
-25. NST, "DoE deputy director-general charged with RM21k graft," Apr 3, 2026
+1. Malay Mail, "DoE chief charged over RM100,000 bribe in Penang road project," Apr 3, 2026 https://www.malaymail.com/news/malaysia/2026/04/03/doe-chief-charged-over-rm100000-ribe-in-penang-road-project/214889
+2. FMT, "DoE DG, deputy claim trial to graft charges totalling RM121,000," Apr 3, 2026 https://www.freemalaysiatoday.com/category/nation/2026/04/03/doe-dg-claims-trial-to-rm100000-graft-charge
+3. The Star, "DOE top guns deny graft charges," Apr 4, 2026 https://www.thestar.com.my/news/nation/2026/04/04/doe-top-guns-deny-graft-charges
+4. The Star, "DOE Deputy D-G charged with six counts of bribery," Apr 3, 2026 https://www.thestar.com.my/news/nation/2026/04/03/doe-deputy-d-g-charged-with-six-counts-of-bribery
+5. The Star, "Environment Dept deputy DG to face further corruption charge," Apr 5, 2026 https://www.thestar.com.my/news/nation/2026/04/05/environment-dept-deputy-dg-to-face-further-corruption-charge
+6. FMT, "DoE deputy DG charged with taking over RM9,000 from waste firm," Apr 6, 2026 https://www.freemalaysiatoday.com/category/nation/2026/04/06/doe-deputy-dg-charged-with-taking-over-rm9000-from-waste-firm
+7. Bernama, "DOE DG Pleads Not Guilty To Receiving RM100,000 Bribe," Apr 3, 2026 https://www.bernama.com/misc/rss/news.php?id=2540586
+8. Malaysiakini, "DOE DG accused of RM100k graft over Penang paired road project," Apr 3, 2026 https://www.malaysiakini.com/news/771704
+9. The Vibes, "Two top DOE officials plead not guilty to accepting bribes," Apr 3, 2026 https://www.thevibes.com/articles/news/121447/doe-dg-charged-for-accepting-rm100k-to-consider-eia-exemption-report
+10. Eco-Business, "Malaysia arrests top environment officials amid e-waste probes," Jan 30, 2026 https://www.eco-business.com/news/malaysia-arrests-top-environment-officials-amid-probes-on-e-waste-irregularities
+11. Borneo Post, "MACC detains top DOE officials in e-waste corruption probe," Jan 29, 2026 https://www.theborneopost.com/2026/01/29/macc-detains-top-department-of-environment-officials-in-e-waste-corruption-probe/
+12. Malay Mail, "Three senior DOE officials under MACC remand for seven days," Jan 30, 2026 https://www.malaymail.com/news/malaysia/2026/01/30/three-senior-doe-officials-under-macc-remand-for-next-seven-days-for-probe-into-e-waste-management-funds/207344
+13. The Star, "Probe papers on top DOE officials submitted to AGC," Mar 25, 2026 https://www.thestar.com.my/news/nation/2026/03/25/probe-papers-on-top-doe-officials-submitted-to-agc-prosecution-recommended-says-macc
+14. Sahabat Alam Malaysia, "CSOs Demand Transparency On MACC Investigations Into DG Of Environment," Apr 1, 2026 https://foe-malaysia.org/articles/csos-demand-transparency-on-macc-investigations-into-the-dg-of-environment-over-e-waste-management/
+15. Aliran, "DoE arrests expose deep corruption risks in e-waste governance," Feb 2026 https://aliran.com/civil-society-voices/doe-arrests-expose-deep-corruption-risks-in-malaysias-e-waste-governance
+16. FMT, "Environment dept needs 3,000 more enforcement staff, says DG," Nov 30, 2023 https://www.freemalaysiatoday.com/category/nation/2023/11/30/environment-dept-needs-3000-more-enforcement-staff-says-dg
+17. The Star, "MACC detains six company owners, freezes RM7.2mil in e-waste cases," Jan 22, 2026 https://www.thestar.com.my/news/nation/2026/01/22/macc-detains-six-company-owners-freezes-rm72mil-in-e-waste-cases
+18. FMT, "Foreigner pleads not guilty to giving DoE officer RM50,000 bribe," Jan 29, 2026 https://fmtv5.freemalaysiatoday.com/category/nation/2026/01/29/foreigner-pleads-not-guilty-to-giving-doe-officer-rm50000-bribe
+19. The Star, "In the dock over RM50,000 bribe to DOE officer," Jan 23, 2026 https://www.thestar.com.my/news/nation/2026/01/23/in-the-dock-over-rm50000-bribe-to-doe-officer
+20. Euronews, "Malaysia announces immediate ban on e-waste imports," Feb 5, 2026 https://euronews.com/2026/02/05/not-a-dumping-ground-for-the-world-malaysia-announces-immediate-ban-on-e-waste-imports
+21. Malay Mail, "Malaysia fully bans e-waste imports via 'Absolute Prohibition' listing," Feb 4, 2026 https://www.malaymail.com/news/malaysia/2026/02/04/macc-chief-malaysia-fully-bans-e-waste-imports-effective-today-via-absolute-prohibition-listing/208069
+22. The Star, "Nationwide crackdown on banned e-waste begins," Apr 3, 2026 https://www.thestar.com.my/news/nation/2026/04/03/nationwide-crackdown-on-banned-e-waste-begins
+23. The Star, "Nearly 800,000 in Johor hit by water cuts due to Sg Johor pollution," Nov 1, 2025 https://www.thestar.com.my/news/nation/2025/11/01/nearly-800000-in-johor-hit-by-water-cuts-due-to-sg-johor-pollution
+24. The Edge Malaysia, "When rivers fail, who goes to jail?" Mar 2026 https://theedgemalaysia.com/node/797859
+25. NST, "DoE deputy director-general charged with RM21k graft," Apr 3, 2026 https://www.nst.com.my/news/nation/2026/04/1409452/doe-deputy-director-general-charged-rm21k-graft-pleads-not-guilty
 26. Commissioner of Law Revision, Malaysia, "Malaysian Anti-Corruption Commission Act 2009 (Act 694), reprint as at 1 Jan 2022", 1 Jan 2022, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf [PRIMARY]
 27. Attorney General's Chambers, "Penal Code (Act 574), updated text as at 31 May 2023", 31 May 2023, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf [PRIMARY]
 28. The Star, "Penang landslide: Search extended for four more victims", 21 Oct 2018, https://www.thestar.com.my/news/nation/2018/10/21/penang-landslide-search-extended-for-four-more-victims [S]

@@ -73,8 +73,8 @@ Rights, Economic, Social
 8. Al Jazeera, "In legal no-man's land, refugees in Malaysia struggle to eat, pay rent" https://www.aljazeera.com/news/2024/2/7/in-legal-no-mans-land-refugees-in-malaysia-struggle-to-eat-pay-rent
 9. IOM Malaysia country page 2026 https://www.iom.int/countries/malaysia
 10. Business & Human Rights Resource Centre, "Malaysia: Govt plans to restrict refugee employment to '3D' jobs" https://www.business-humanrights.org/en/latest-news/malaysia-govt-plans-to-restrict-refugee-employment-to-3d-jobs-incl-manufacturing-mining-construction/
-11. Berghahn Journals, "Refugee Registration Schemes in Malaysia" 2024
-12. SAGE, "Migrant Workers in Malaysia: Human Rights Issues" 1 May 2025 [PRIMARY]
+11. Berghahn Journals, "Refugee Registration Schemes in Malaysia" 2024 https://www.berghahnjournals.com/view/journals/migration-and-society/7/1/arms070106.xml
+12. SAGE, "Migrant Workers in Malaysia: Human Rights Issues" 1 May 2025 [PRIMARY] https://journals.sagepub.com/doi/10.1177/21582440251337546
 16. Fortify Rights, "Malaysia: Rohingya Refugees Held Indefinitely in Inhumane and Degrading Conditions", 12 Mar 2026, https://www.fortifyrights.org/mly-inv-2026-03-12/ [S]
 17. Institute for Democracy and Economic Affairs (IDEAS), "IDEAS: Refugees could contribute over RM3 billion to the Malaysian economy if granted the right to work", 29 Apr 2019, https://www.ideas.org.my/for-media/ideas-refugees-could-contribute-over-rm3-billion-to-the-malaysian-economy-if-granted-the-right-to-work/ [PRIMARY]
 18. The Star, "Giving refugees the right to work a win-win for Malaysia, says MEF", 22 Jun 2025, https://www.thestar.com.my/news/nation/2025/06/22/giving-refugees-the-right-to-work-a-win-win-for-malaysia-says-mef [S]

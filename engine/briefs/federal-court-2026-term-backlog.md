@@ -127,9 +127,9 @@ The Section 97(2) Child Act detention is "at the pleasure of the Yang di-Pertuan
 **Tier E — Wider context / related**
 26. The Diplomat (former Diplomat-published Article 19 essay), structural framing.
 27. SUHAKAM, "Children Must Not Be Detained Under SOSMA", Media Statement No. 04-2026, January 2026: https://suhakam.org.my/2026/01/occ-media-statement-no-04-2026_children-must-not-be-detained-under-sosma/ [PRIMARY]
-28. Wikipedia, "Chief Justice of Malaysia" — secondary, for the 17th-CJ ordinal: https://en.wikipedia.org/wiki/Chief_Justice_of_Malaysia
+28. Wikipedia, "Chief Justice of Malaysia" — secondary, for the 17th-CJ ordinal: https://en.wikipedia.org/wiki/Chief_Justice_of_Malaysia (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 29. Federal Court of Malaysia, Wikipedia — secondary for jurisdiction overview: https://en.wikipedia.org/wiki/Federal_Court_of_Malaysia (LOGGED FOR EXCLUSION: encyclopedia, not a source)
-30. Wikipedia, "Wan Ahmad Farid Wan Salleh" — secondary for biography: https://en.wikipedia.org/wiki/Wan_Ahmad_Farid_Wan_Salleh
+30. Wikipedia, "Wan Ahmad Farid Wan Salleh" — secondary for biography: https://en.wikipedia.org/wiki/Wan_Ahmad_Farid_Wan_Salleh (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 31. FMT, "Contract judicial officers can reduce lower courts' case backlog, says ex-judge", 24 Jan 2026: https://www.freemalaysiatoday.com/category/nation/2026/01/24/contract-judicial-officers-can-reduce-lower-courts-case-backlog-says-ex-judge
 32. SUHAKAM (Office of the Children's Commissioner), "[OCC] Media Statement No. 23-2026: Children's Commissioner Calls for Reform of Section 97 of the Child Act 2001 to Ensure Legal Certainty for Children in Conflict With the Law", 24 Apr 2026, https://suhakam.org.my/2026/04/occ-media-statement-no-21-2026_childrens-commissioner-calls-for-reform-of-section-97-of-the-child-act-2001-to-ensure-legal-certainty-for-children-in-conflict-with-the-law/ [PRIMARY]
 

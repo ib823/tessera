@@ -561,7 +561,7 @@ Reid Commission rationale for combining the offices) or
     <https://www.theborneopost.com/2026/05/05/bill-to-separate-roles-of-ag-public-prosecutor-to-be-finalised-before-may-18-says-minister/>
 
 **Comparator analysis**
-36. Wikipedia, "Crown Prosecution Service" — UK history and
+36. Wikipedia, "Crown Prosecution Service" — UK history and (LOGGED FOR EXCLUSION: encyclopedia, not a source)
     structure.
     <https://en.wikipedia.org/wiki/Crown_Prosecution_Service>
 37. Wikipedia, "Director of Public Prosecutions (Australia)." (LOGGED FOR EXCLUSION: encyclopedia, not a source)

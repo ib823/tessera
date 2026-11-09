@@ -250,7 +250,7 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 
 **Tier E — Young politicians, MUDA, and Undi18 outcomes**
 27. Library of Congress (see Tier B #9). https://www.loc.gov/item/global-legal-monitor/2019-07-18/malaysia-bill-reducing-voting-age-to-18-passed/
-28. Wikipedia, "UNDI18" — corroborated against Library of Congress and ConstitutionNet, https://en.wikipedia.org/wiki/UNDI18
+28. Wikipedia, "UNDI18" — corroborated against Library of Congress and ConstitutionNet, https://en.wikipedia.org/wiki/UNDI18 (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 29. Benar News, "Malaysian ex-youth minister sentenced to 7 years, caning for corruption", 9 Nov 2023, https://www.benarnews.org/english/news/malaysian/syed-saddiq-guilty-7-years-prison-11092023130750.html
 30. South China Morning Post, "Malaysian court overturns Syed Saddiq's corruption conviction", 25 Jun 2025, https://www.scmp.com/week-asia/people/article/3315748/malaysian-lawmaker-syed-saddiq-cleared-corruption-after-5-years-hell
 31. FMT, "Apex court to rule June 30 on prosecution's appeal in Syed Saddiq case", 27 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/27/apex-court-to-rule-june-30-on-prosecutions-appeal-in-syed-saddiq-case

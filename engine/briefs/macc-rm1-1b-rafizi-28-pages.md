@@ -200,7 +200,7 @@ Governance, Legal, Political, Economic
 2. Bernama, "Govt Seeks Continuity Of Arm Holdings Deal Amid MACC Probe
    — Akmal Nasrullah," 23 Feb 2026.
    <https://www.bernama.com/en/news.php?id=2526806>
-3. MACC Act 2009 Section 23 (Suruhanjaya Pencegahan Rasuah Malaysia).
+3. MACC Act 2009 Section 23 (Suruhanjaya Pencegahan Rasuah Malaysia). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf
 4. Penal Code Sections 420 and 409 (Laws of Malaysia, Act 574). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf
 5. Federal Constitution of Malaysia Article 145 (Attorney-General's https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
    prosecutorial discretion).

@@ -73,16 +73,16 @@ Technology, Environmental, Economic
 
 ## SOURCES
 1. Bloomberg, "Malaysia Draws First Data Center Protest Over Pollution, Water" Feb 7, 2026 https://www.bloomberg.com/news/articles/2026-02-07/malaysia-draws-first-data-center-protest-over-pollution-water
-2. Lowyat, "Malaysia Witnesses First AI Data Centre Protest In Johor" Feb 2026
-3. PV Magazine, "Malaysia restricts non-AI data centers, citing energy concerns" Feb 25, 2026
+2. Lowyat, "Malaysia Witnesses First AI Data Centre Protest In Johor" Feb 2026 https://www.lowyat.net/2026/381039/malaysia-witnesses-first-ai-data-centre-protest-in-johor/
+3. PV Magazine, "Malaysia restricts non-AI data centers, citing energy concerns" Feb 25, 2026 https://www.pv-magazine.com/2026/02/25/malaysia-restricts-non-ai-data-centers-citing-energy-concerns
 4. TechWire Asia, "Malaysia's data centre policy is saying the quiet part out loud" Mar 2026
-5. Asia Society, "Malaysia's Gamble: Turning Data Centres Into Industrial Power" 2026
+5. Asia Society, "Malaysia's Gamble: Turning Data Centres Into Industrial Power" 2026 https://asiasociety.org/policy-institute/malaysias-gamble-turning-data-centres-industrial-power
 6. FOE Malaysia / Sahabat Alam Malaysia, "Data centres are big energy and water guzzlers" 2026
-7. China Global South Project, "China Steps In as Malaysia's Data Center Surge Puts the Power Grid to the Test" 2026
-8. The Independent Singapore, "Johor's data centre boom raises fears over mounting water strain" 2026
+7. China Global South Project, "China Steps In as Malaysia's Data Center Surge Puts the Power Grid to the Test" 2026 https://chinaglobalsouth.com/analysis/china-malaysia-data-centers-power-grid/
+8. The Independent Singapore, "Johor's data centre boom raises fears over mounting water strain" 2026 https://theindependent.sg/johors-data-centre-boom-raises-fears-over-mounting-water-strain-amid-rapid-tech-expansion
 9. Reccessary, "Johor requires green energy for data centers" 2026
-10. DCD (Data Centre Dynamics), "Sunway Construction employee under investigation for corruption in data center project" Jul 2025
-11. Lowyat, "Johor Assemblyman: Data Centre Dispute Should Be A 'Lesson'" 2026
+10. DCD (Data Centre Dynamics), "Sunway Construction employee under investigation for corruption in data center project" Jul 2025 https://www.datacenterdynamics.com/en/news/sunway-construction-employee-under-investigation-for-corruption-in-data-center-project-in-malaysia/
+11. Lowyat, "Johor Assemblyman: Data Centre Dispute Should Be A 'Lesson'" 2026 https://www.lowyat.net/2026/386326/johor-assemblyman-data-centre-dispute-should-be-a-lesson-for-future-projects/
 12. FULCRUM / ISEAS-Yusof Ishak Institute, "Data Centres, Energy Demand and Sustainability in Southeast Asia" 2026
 13. Published issue 1564 — DOE enforcement cut by 18% (related: weakened environmental monitoring capacity)
 14. TNB Annual Report / investor disclosures — 11,000MW application pipeline figure

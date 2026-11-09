@@ -94,15 +94,15 @@ Spectrum is broad — no single-side risk.
 1. FMT, "Treasury suggests RM5.4bil budget cuts for health, higher edu ministries," 2026-04-29. https://www.freemalaysiatoday.com/category/nation/2026/04/29/treasury-suggests-rm5-4bil-budget-cuts-for-health-higher-edu-ministries
 2. NST, "Treasury proposes RM5.45 billion budget cuts for health, higher education," 2026-04-29. https://www.nst.com.my/news/nation/2026/04/1429258/treasury-proposes-rm545-billion-budget-cuts-health-higher-education
 3. Galen Centre, "Proposed RM3.06 Billion Cut Risks Deepening Malaysia's Healthcare Crisis," 2026-04-29. https://galencentre.org/2026/04/29/proposed-rm3-06-billion-cut-risks-deepening-malaysias-healthcare-crisis/
-4. CodeBlue, "Report: Treasury Wants RM3b Cut To Health Ministry's 2026 Budget," 2026-04.
+4. CodeBlue, "Report: Treasury Wants RM3b Cut To Health Ministry's 2026 Budget," 2026-04. https://codeblue.galencentre.org/2026/04/report-treasury-wants-rm3b-cut-to-health-ministrys-2026-budget/
 5. CodeBlue, "Dzulkefly Expects 10% Cut To Health Ministry's Budget," 2026-05 (opex/dev split, 62% emoluments). https://codeblue.galencentre.org/2026/05/dzulkefly-expects-10-cut-to-health-ministrys-budget/
 6. The Star, "Health Ministry to submit counter-proposal to protect non-negotiable core services," 2026-05-02. https://www.thestar.com.my/news/nation/2026/05/02/health-ministry-to-submit-counter-proposal-to-protect-non-negotiable-core-services-from-budget-cut
 7. Bernama, "Health Ministry Seeks Re-evaluation of Proposed Budget Cuts – Dzulkefly," 2026-05-04. https://bernama.com/en/news.php?id=2552738
-8. FMT, "Health ministry to submit counter-proposal on budget cuts," 2026-05-04.
-9. The Edge Malaysia, "Health minister wants assurance core services not compromised," 2026-05.
-10. NST, "Health Ministry's development budget safe despite austerity drive," 2026-05.
+8. FMT, "Health ministry to submit counter-proposal on budget cuts," 2026-05-04. https://www.freemalaysiatoday.com/category/nation/2026/05/04/health-ministry-to-submit-counter-proposal-on-budget-cuts
+9. The Edge Malaysia, "Health minister wants assurance core services not compromised," 2026-05. https://theedgemalaysia.com/node/802263
+10. NST, "Health Ministry's development budget safe despite austerity drive," 2026-05. https://www.nst.com.my/news/nation/2026/05/1432116/health-ministrys-development-budget-safe-despite-austerity-drive
 11. data.gov.my — Annual Budget Allocation for the Ministry of Health (federal_budget_moh) [PRIMARY — budget history]. https://data.gov.my/data-catalogue/federal_budget_moh
-12. CodeBlue, "Cut Perks For Ministers, MPs, Top Civil Servants Before Gutting Public Health Care — Specialist," 2026-04.
+12. CodeBlue, "Cut Perks For Ministers, MPs, Top Civil Servants Before Gutting Public Health Care — Specialist," 2026-04. https://codeblue.galencentre.org/2026/04/cut-perks-for-ministers-mps-top-civil-servants-before-gutting-public-health-care-specialist/
 13. CodeBlue / doctor groups, "Health Spending Cut Will Worsen Patient Outcomes," 2026-04. https://codeblue.galencentre.org/2026/04/health-spending-cut-will-worsen-patient-outcomes-strain-health-workers-doctor-groups/
 14. FOMCA media statement on the RM3.06bil cut, 2026-04.
 15. The Independent (SG), framing on subsidy-vs-health tradeoff, 2026-04.

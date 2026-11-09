@@ -98,7 +98,7 @@ Despite 28 million Malaysians using e-wallets and RM48+ billion flowing through 
 
 1. Home Ministry data on RM2.77 billion fraud losses in 2025 (Malay Mail, Jan 2026)
 2. TNG eWallet account suspensions and frozen funds (The Rakyat Post, Dec 2025)
-3. Malaysian woman allegedly banned from banks over RM10.44 refund (The Rakyat Post, Jun 2025)
+3. Malaysian woman allegedly banned from banks over RM10.44 refund (The Rakyat Post, Jun 2025) https://www.therakyatpost.com/news/malaysia/2025/06/25/watch-malaysian-woman-allegedly-banned-from-banks-over-rm10-44-refund/
 4. BNM revised e-money policy document (effective Jan 2025) [PRIMARY]
 5. PDPA 2025 amendments — phases 1-3 (Chambers and Partners, 2026)
 6. PIDM non-coverage of e-wallet balances (FintechNews.my, 2025)

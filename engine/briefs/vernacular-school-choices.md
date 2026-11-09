@@ -84,19 +84,19 @@ Social, Economic, Legal
 4. FMT, "More Malay parents choose Chinese schools for academic edge, survey finds" May 2025 https://www.freemalaysiatoday.com/category/nation/2025/05/13/more-malay-parents-choose-chinese-schools-for-academic-edge-survey-finds
 5. Federal Court judgment, Feb 2024 — Rejects leave to appeal on vernacular school constitutionality [PRIMARY]
 6. Malay Mail, "Simplified: Why Malaysia's vernacular schools are constitutional" Feb 2024 https://www.malaymail.com/news/malaysia/2024/02/20/simplified-why-malaysias-vernacular-schools-are-constitutional-and-their-use-of-tamil-and-chinese-is-legally-protected-according-to-court-of-appeal/118903
-7. The Star, "Help Tamil schools survive" Mar 2025
+7. The Star, "Help Tamil schools survive" Mar 2025 https://www.thestar.com.my/news/education/2025/03/16/help-tamil-schools-survive
 8. Malaysiakini, "Tamil schools in decline — act now before legacy fades" 2024
-9. Ipoh Echo, "Safety concerns at SJKT Kerajaan have been unresolved since 2024" Mar 2026
-10. The Star, "Federal Court upholds constitutionality of vernacular schools" Feb 2024
-11. FMT, "Nearly 50% increase in Bumi students in international schools over past 5 years" Jul 2024
-12. The Edge, "Cover Story: Malaysia growing in popularity as Asia's private education destination" 2024
-13. Aliran, "Why some parents in Malaysia are choosing Chinese schools for their children"
-14. Aliran, "Breaking point: How Malaysia's education system is failing its children"
-15. IIUM Law Majalla, "A Legal Perspective: Vernacular Schools and National Unity in Malaysia" May 2024
-16. The Vibes, "Far-reaching education reform launched under Budget 2026" 2025
+9. Ipoh Echo, "Safety concerns at SJKT Kerajaan have been unresolved since 2024" Mar 2026 https://www.ipohecho.com.my/2026/03/02/safety-concerns-at-sjkt-kerajaan-have-been-unresolved-since-2024/
+10. The Star, "Federal Court upholds constitutionality of vernacular schools" Feb 2024 https://www.thestar.com.my/news/nation/2024/02/20/federal-court-upholds-constitutionality-of-vernacular-schools-in-malaysia
+11. FMT, "Nearly 50% increase in Bumi students in international schools over past 5 years" Jul 2024 https://fmtv5.freemalaysiatoday.com/category/nation/2024/07/09/nearly-50-increase-in-bumi-students-in-intl-schools-over-past-5-years
+12. The Edge, "Cover Story: Malaysia growing in popularity as Asia's private education destination" 2024 https://theedgemalaysia.com/node/727019
+13. Aliran, "Why some parents in Malaysia are choosing Chinese schools for their children" https://aliran.com/thinking-allowed-online/why-more-parents-in-malaysia-are-choosing-vernacular-schools-for-their-children
+14. Aliran, "Breaking point: How Malaysia's education system is failing its children" https://m.aliran.com/newsletters/breaking-point-how-malaysias-education-system-is-failing-its-children
+15. IIUM Law Majalla, "A Legal Perspective: Vernacular Schools and National Unity in Malaysia" May 2024 https://lawmajalla.iium.edu.my/2024/05/15/a-legal-perspective-vernacular-schools-and-national-unity-in-malaysia/
+16. The Vibes, "Far-reaching education reform launched under Budget 2026" 2025 https://www.thevibes.com/articles/news/113860/far-reaching-education-reform-launched-under-budget-2026-to-future-proof-next-generation
 17. UNESCO, "Malaysia: education policy review" (abridged report)
-18. Wiki Impact, "A Slow Fade: Why Tamil Schools Are Disappearing In Malaysia"
-19. Penang CM, "Penang to continue annual aid for Tamil vernacular school infrastructure" Dec 2024
+18. Wiki Impact, "A Slow Fade: Why Tamil Schools Are Disappearing In Malaysia" https://www.wikiimpact.com/?p=42873
+19. Penang CM, "Penang to continue annual aid for Tamil vernacular school infrastructure" Dec 2024 https://www.thestar.com.my/news/nation/2024/12/22/penang-to-continue-annual-aid-for-tamil-vernacular-school-infrastructure-says-cm
 20. Sabah Media, "KPM perlu gandakan usaha jadikan Sekolah Kebangsaan sebagai sekolah pilihan utama" Jul 2024
 21. The Star, "Education Ministry urged to relocate Tamil schools to highly-populated zones", 5 Mar 2025, https://www.thestar.com.my/news/nation/2025/03/05/education-ministry-urged-to-relocate-tamil-schools-to-highly-populated-zones [S]
 22. Bernama, "528 SJKT Operating Nationwide With 78,501 Pupils", 22 Jun 2026, https://www.bernama.com/en/general/news.php?id=2571731 [S]

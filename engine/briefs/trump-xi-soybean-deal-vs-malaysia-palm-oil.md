@@ -202,7 +202,7 @@ Aim for three fact cards on Economic / Regional / Critical lenses; the analogy c
 
 22. **Palm Oil Magazine — "CPO Slides on Global Pressure, Malaysian Prices Drop Nearly 3%", 7 May 2026** — https://www.palmoilmagazine.com/cpo-price/2026/05/07/cpo-slides-on-global-pressure-malaysian-prices-drop-nearly-3/.
 
-23. **Reuters via Investing.com — US trade court rules against Trump global tariff** — (referenced in radar via The Edge / Bernama, May 2026).
+23. **Reuters via Investing.com — US trade court rules against Trump global tariff** — (referenced in radar via The Edge / Bernama, May 2026). https://www.investing.com/news/world-news/us-trade-court-rules-against-trumps-10-global-tariff-4670110
 
 24. **Multiple — Rubio pre-summit Taiwan warning, 11 May 2026** — referenced in CNBC and CSIS panel coverage [25][26].
 
