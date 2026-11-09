@@ -23,7 +23,7 @@ December 2011 (letter of award) to October 2026 (delivery moved to April 2027).
 - Contract value later stated as RM9.128 billion; agreed delivery of the six ships "between April 2019 and August 2023" (declassified governance-committee report, as reported by Malay Mail) [11].
 - 4 Aug 2022: PAC tables its LCS report: RM6.083 billion paid, no ship completed, RM1.4 billion used for other purposes including cost overruns [7][8].
 - 11 Aug 2022: MACC completes investigation papers on several individuals and sends them to the AGC [9].
-- 16 Aug 2022: former navy chief and former BNS managing director Ahmad Ramli Mohd Nor charged with three counts of CBT (s.409 Penal Code) involving RM21.08 million [19].
+- 16 Aug 2022: former navy chief and former BNS managing director Ahmad Ramli Mohd Nor charged with three counts of CBT (s.409 Penal Code) involving RM21.08 million [19][24]. (Sourcing fixed 9 Nov 2026: [19] does not give his BNS role; [24] does.)
 - 26 May 2023: sixth supplemental contract signed; five ships instead of six; contract price revised to RM11.2 billion; first ship due August 2026, fifth in April 2029; payment terms moved from milestone activity to progress of works [14].
 - Jan 2024: Ocean Sunshine Bhd (a wholly owned MOF Inc subsidiary) holds 79.23% of the shipyard and is buying the rest for RM1; company renamed Lumut Naval Shipyard (LUNAS) [15][6].
 - 24 Jun 2024: Defence Minister tells the Dewan Rakyat RM7.15 billion has been paid, 63.69% of the RM11.22 billion total; original budget RM6 billion, later RM9.18 billion, then RM11.22 billion [16][17].
@@ -131,6 +131,7 @@ Edition 4 of issue 1805:
 21. **[S]** Malay Mail, "LCS 1 delivery pushed to April 2027, Defence Ministry issues damages notice to Lunas, says minister", 8 Oct 2026. https://www.malaymail.com/news/malaysia/2026/10/08/lcs-1-delivery-pushed-to-april-2027-defence-ministry-issues-damages-notice-to-lunas-says-minister/238155
 22. **[S]** The Vibes, "First LCS delivery pushed to April 2027 as commitment misses target", 27 Oct 2026. https://www.thevibes.com/articles/news/128834/first-lcs-delivery-pushed-to-april-2027-as-five-ship-project-lags-target
 23. Malaysiakini, "RM6 bil for six patrol vessels", 5 Feb 2011, https://www.malaysiakini.com/news/155285 [S]
+24. Free Malaysia Today, "Ex-Boustead Naval Shipyard MD charged with RM21.08mil CBT", 16 Aug 2022, https://www.freemalaysiatoday.com/category/nation/2022/08/16/ex-boustead-naval-shipyard-md-charged-with-rm21-08mil-cbt [S]
 
 ## BACKFILL NOTES
 

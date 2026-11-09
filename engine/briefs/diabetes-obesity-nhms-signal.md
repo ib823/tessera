@@ -2,16 +2,15 @@
 
 **Issue ID:** 2002
 **Slug:** diabetes-obesity-nhms-signal
-**Status:** DRAFT (`published: false`). Stage 1 (Primary Analysis) and Stage 6 (Synthesis) done by
+**Status:** Published. (Updated 9 Nov 2026: this header first read "DRAFT (`published: false`)", but the issue was published.) Stage 1 (Primary Analysis) and Stage 6 (Synthesis) done by
 Claude; independent verification done. **External Stage 2 (Bias Audit / Gemini) and Stage 3 (Fact
-Verification / ChatGPT) NOT yet run** — run `node scripts/generate-stage-prompts.mjs
-diabetes-obesity-nhms-signal` and complete those before flipping `published: true` and merging to `main`.
+Verification / ChatGPT) were not run before publication.** In the 9 Nov 2026 correction rounds the headline figures were traced to the NHMS 2023 and 2019 fact sheets (refs 1 and 9), both opened.
 **Source retrieval date:** 2026-05-31.
 
 ## ISSUE
 Malaysia's National Health and Morbidity Survey (NHMS) 2023 put adult diabetes prevalence at 15.6%, down
 from 18.3% in 2019. Coverage read this as the epidemic easing. The under-reported signal: the upstream
-driver — combined overweight and obesity — rose again to 54.4%, the fourth consecutive increase across the
+driver — combined overweight and obesity — rose again to 54.4%, the third consecutive increase across the
 2011/2015/2019/2023 survey cycles, having crossed the "one in two adults" line around 2019.
 
 ## THE CLAIM THAT WAS DROPPED (accuracy discipline)
@@ -60,7 +59,7 @@ does NOT assert *why* the 2019→2023 diabetes figure fell.
 Primary **Health**; secondary **Social** (undiagnosed youth, sedentary behaviour).
 
 ## SOURCES
-1. NHMS 2023 Fact Sheet, Institute for Public Health (IKU/NIH) — https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf (PRIMARY; 403 to automated fetch, open manually)
+1. NHMS 2023 Fact Sheet, Institute for Public Health (IKU/NIH) — https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf (PRIMARY; opened 9 Nov 2026)
 2. "Conducting the National Health and Morbidity Survey 2023 in Malaysia…", Scientific Reports (2025) — https://www.nature.com/articles/s41598-025-08311-9 (PRIMARY methodology; 403)
 3. CodeBlue / Galen Centre, "NHMS 2023: Over Half Of Malaysian Adults Overweight Or Obese", 27 May 2024 — https://codeblue.galencentre.org/2024/05/nhms-2023-over-half-of-malaysian-adults-overweight-or-obese/
 4. FMT, "Survey shows over half of Malaysian adults overweight or obese", 16 May 2024 — https://www.freemalaysiatoday.com/category/nation/2024/05/16/survey-shows-over-half-of-malaysian-adults-overweight-or-obese
