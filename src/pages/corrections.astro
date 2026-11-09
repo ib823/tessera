@@ -1,0 +1,152 @@
+---
+import PolicyLayout from '../layouts/PolicyLayout.astro';
+
+const EMAIL = 'thefourthangle@proton.me';
+---
+<PolicyLayout
+  title="Corrections Policy | The Fourth Angle"
+  description="How The Fourth Angle corrects errors, what counts as an error, how to report one, and how fast we aim to respond."
+  heading="Corrections policy"
+  reviewed="Last reviewed November 2026"
+  path="/corrections"
+>
+  <p class="policy-lede">When we get something wrong, we fix it in the open and say what we changed.</p>
+
+  <section class="policy-card" aria-labelledby="standard">
+    <h2 id="standard">Our standard</h2>
+    <p>Every number, date, name, law and quote in a T4A issue must trace to a primary source: an official document, a court ruling, a regulator's publication, a peer-reviewed study, or a named news outlet citing one. Before publication, every issue goes through 4 independent review stages: primary analysis, a bias audit, fact verification and a synthesis review. Higher-risk issues get a fifth, a contrarian stress test.</p>
+    <p>Review catches a lot. It does not catch everything.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="error">
+    <h2 id="error">What we count as an error</h2>
+    <p>We correct an issue when it contains any of these:</p>
+    <ul>
+      <li><strong>A wrong fact:</strong> a number, date, name, quote, law, section number or attribution that the source does not support.</li>
+      <li><strong>An overclaim:</strong> a claim stronger than the evidence. For example, "RM2.4 billion vanished" when the source says "up to RM2.4 billion is unaccounted for".</li>
+      <li><strong>An underclaim:</strong> a claim weaker than the evidence. For example, "some have alleged" when a court has ruled.</li>
+      <li><strong>Misleading framing:</strong> facts that are each accurate but, as selected or ordered, leave a false impression.</li>
+      <li><strong>An untraceable detail:</strong> a specific we cannot trace to a source.</li>
+    </ul>
+    <p>The examples above are illustrations, not real cases. We do not change an issue because someone dislikes its conclusion. We change it when the evidence shows it is wrong.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="kinds">
+    <h2 id="kinds">Four kinds of change</h2>
+    <ul class="policy-items">
+      <li>
+        <h3>Correction</h3>
+        <dl>
+          <dt>When</dt><dd>We published an error of a kind listed above.</dd>
+          <dt>You see</dt><dd>A new edition, and a dated line in the issue's "What changed" list that starts with "Correction:" and says what was wrong and what the issue says now.</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Clarification</h3>
+        <dl>
+          <dt>When</dt><dd>The facts were right, but the wording could mislead, or context was missing.</dd>
+          <dt>You see</dt><dd>A new edition and a dated line in "What changed".</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Update</h3>
+        <dl>
+          <dt>When</dt><dd>Something happened after publication (a ruling, new data, an official response), or we added sources to an older issue, and nothing we published was wrong.</dd>
+          <dt>You see</dt><dd>A new edition and a dated line in "What changed".</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Retraction</h3>
+        <dl>
+          <dt>When</dt><dd>The central claim of the issue is wrong.</dd>
+          <dt>You see</dt><dd>We withdraw the issue and say on this page what was wrong. We do not rewrite a false premise into a different story.</dd>
+        </dl>
+      </li>
+    </ul>
+    <p>Fixes to spelling, punctuation, layout and broken links that do not change meaning go in without a new edition.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="see">
+    <h2 id="see">How you will see a change</h2>
+    <ul>
+      <li><strong>A dated line for every edition.</strong> Each edition after the first gets its own dated line in a "What changed" list on the issue page. A line that fixes an error starts with "Correction:". For example: "Correction: Card 2 said RM2.4 billion vanished. The source report says up to RM2.4 billion is unaccounted for." (An illustration, not a real correction.)</li>
+      <li><strong>The edition number.</strong> The issue page shows which edition you are reading.</li>
+      <li><strong>No extra notifications.</strong> We do not send notifications for corrections.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card" aria-labelledby="report">
+    <h2 id="report">How to report an error</h2>
+    <p>Email <a class="policy-email" href={`mailto:${EMAIL}?subject=Correction`}>{EMAIL}</a> with "Correction" in the subject line, and include:</p>
+    <ol>
+      <li>the issue number or link;</li>
+      <li>which card (1 to 7), or the headline;</li>
+      <li>what you think is wrong;</li>
+      <li>your source, if you have one (a link or a document);</li>
+      <li>whether you are the person or organisation named in the issue, so we can prioritise.</li>
+    </ol>
+    <p>You do not need to give your name. We do not publish the names of people who report errors unless they ask us to.</p>
+    <p>Send legal complaints, such as a claim of defamation, to the same address with "Legal notice" in the subject line, so we can deal with them first.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="speed">
+    <h2 id="speed">How fast we aim to respond</h2>
+    <p>These are targets, not guarantees. Working days are Malaysian working days.</p>
+    <ul class="policy-items">
+      <li>
+        <h3>Urgent</h3>
+        <p>A claim that could wrongly harm a named person, a claim touching race, religion or royalty, or a safety risk.</p>
+        <dl>
+          <dt>Acknowledge</dt><dd>within 1 working day</dd>
+          <dt>Decide</dt><dd>within 2 working days</dd>
+          <dt>Fix live</dt><dd>within 1 working day of deciding. If we cannot check the claim quickly, we take the card, or the whole issue, down while we check.</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Substantive</h3>
+        <p>A wrong fact that changes what a card says.</p>
+        <dl>
+          <dt>Acknowledge</dt><dd>within 2 working days</dd>
+          <dt>Decide</dt><dd>within 5 working days</dd>
+          <dt>Fix live</dt><dd>within 2 working days of deciding</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Minor</h3>
+        <p>Wording, missing context, small slips.</p>
+        <dl>
+          <dt>Acknowledge</dt><dd>within 5 working days</dd>
+          <dt>Decide</dt><dd>within 10 working days</dd>
+          <dt>Fix live</dt><dd>within 14 days, usually in the next edition</dd>
+        </dl>
+      </li>
+    </ul>
+    <p>We reply to the person who reported the error with what we decided and why.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="review">
+    <h2 id="review">How corrections go through review</h2>
+    <p>A correction creates a new edition, and new text gets the same scrutiny as the original:</p>
+    <ul>
+      <li><strong>Fact verification.</strong> We check every changed claim against a primary source. A claim that touches race, religion or royalty needs two independent primary sources, or we drop it.</li>
+      <li><strong>Synthesis review.</strong> We check that the fix does not introduce a new error or tilt the balance of the issue.</li>
+      <li><strong>A record of every change.</strong> Internally, we log each changed sentence as corrected, rephrased or newly verified, with its source.</li>
+      <li><strong>Errors we find ourselves count too.</strong> If our review finds an error in a published issue that no reader reported, we correct it under this policy.</li>
+    </ul>
+    <p>If we cannot verify a claim within reasonable effort, we remove it or narrow it to what the evidence supports. A delayed fix beats a confident wrong one.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="never">
+    <h2 id="never">What we will not do</h2>
+    <ul>
+      <li>Change a published claim without saying so.</li>
+      <li>Delete an issue to hide a mistake.</li>
+      <li>Treat a complaint differently because of who made it, or which side of politics it comes from.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card policy-card--note" aria-labelledby="reach">
+    <h2 id="reach">Contact</h2>
+    <p>Corrections, legal notices and everything else: <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>. See our <a href="/contact">contact page</a> for who we are, and our <a href="/privacy">privacy notice</a> for how we handle reader data.</p>
+  </section>
+</PolicyLayout>
