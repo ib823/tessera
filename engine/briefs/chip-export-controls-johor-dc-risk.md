@@ -96,6 +96,17 @@ Totals: 17 VERIFIED, 1 PARTLY, 6 UNVERIFIED, 0 CONTRADICTED, 0 STALE-SINCE-PUBLI
 - Press: The Star, FMT republishing Reuters.
 - Gap: no Johor state, data-centre industry, residents' or civil-society source could be opened (see UNVERIFIED rows). The data-centre half of the issue (fact 2, Bridge Data Centres) currently rests on no source in this brief.
 
+## CORRECTION (2026-11-09)
+
+Edition 2 of issue 1995:
+
+- **Economic card, reframe, analogy sub, view:** the six data-centre claims with no source that could be opened are removed: Johor's 51 approved projects worth RM183 billion and 17 operational; the November 2025 halt on lower-tier approvals; the February 2026 residents' protest; YTL, ByteDance and GDS Johor footprints; "Johor tightened approvals"; and Bridge Data Centres swapping a Chinese tenant (attribution to Reuters also unresolved). A search on 9 Nov 2026 found Johor figures of 42 projects worth RM164.45 billion at Q2 2025, not 51 or RM183 billion, so the card's figures stay unverified. The data-centre angle of the issue goes with them.
+- **Economic card (new, update):** a US Justice Department release of 1 Oct 2026 announces the arrest of the owner of a California firm (Earthmade Computer) on a three-count indictment returned 29 Sep. It alleges the firm received more than US$176 million from two Malaysia-based shipment companies from January to October 2024, as part of a scheme that sent servers to Malaysia and Singapore before re-export to China. The release charges no Malaysian company or person [16]. The charges are allegations.
+- **Headline, context, hook, view (update):** Singapore added charges against all four individuals and charged four companies on 1 Jul 2026 [4]. The cards now say four people and four companies. "Nvidia" is dropped from the headline because SPF does not use it; the minister's "may contain Nvidia chips" stays in the hook sub and context [2].
+- **Security card:** "never officially named Malaysia" is now limited to the rule [5]. The card adds that BIS's 13 May 2025 release, as now published, cites diversion via Malaysia and Thailand [6].
+- **"No Malaysian operator publicly charged":** kept, with wording standardised across cards. Checks: SPF releases name only Singapore individuals and companies [1, 3, 4]; MITI's 2026 media-release index shows no AI-chip enforcement release [11]; the DOJ release charges no Malaysian party [16]; a web search on 9 Nov 2026 found no report of Malaysian charges. Non-public investigations cannot be ruled out.
+- **Reframe, view:** "Fifteen months on" becomes "Twenty months" (27 Feb 2025 to 9 Nov 2026).
+
 ## SOURCES
 
 1. **[P]** Singapore Police Force, *Three Men To Be Charged For Fraud By False Representation*, 27 Feb 2025. https://www.police.gov.sg/media-hub/news/2025/02/20250227_three_men_to_be_charged_for_fraud_by_false_representation
@@ -113,6 +124,7 @@ Totals: 17 VERIFIED, 1 PARTLY, 6 UNVERIFIED, 0 CONTRADICTED, 0 STALE-SINCE-PUBLI
 13. **[S]** Free Malaysia Today, republishing Reuters, "Singapore charges 3 with fraud linked to movement of Nvidia chips", 28 Feb 2025. https://www.freemalaysiatoday.com/category/world/2025/02/28/singapore-charges-three-with-fraud
 14. **[S]** The Star, "No violation of STA 2010 in recent Nvidia case", 17 Mar 2025. https://www.thestar.com.my/business/business-news/2025/03/17/no-violation-of-sta-2010-in-recent-nvidia-case
 15. **[S]** Free Malaysia Today, republishing Reuters, "Singapore charges one more individual with AI chip fraud", 2 Apr 2026. https://www.freemalaysiatoday.com/category/world/2026/04/02/singapore-charges-one-more-individual-with-ai-chip-fraud
+16. **[P]** US Department of Justice, Office of Public Affairs, *California Man Arrested for Smuggling More Than $300 Million in Export-Controlled Computer Servers to China*, press release, 1 Oct 2026. https://www.justice.gov/opa/pr/california-man-arrested-smuggling-more-300-million-export-controlled-computer-servers-china
 
 ## EARLIER-DRAFT ITEMS NOT VERIFIED IN THIS BACKFILL (not used in the cards; keep out of copy until sourced)
 
