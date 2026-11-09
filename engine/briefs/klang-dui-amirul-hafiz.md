@@ -79,3 +79,10 @@ SOURCES:
 13. WHO: Road safety Malaysia country profile — https://www.who.int/publications/m/item/road-safety-mys-2023-country-profile
 14. Mahwengkwai: Amendments to drink driving law — https://mahwengkwai.com/amendments-to-the-law-on-drink-driving-in-malaysia/
 15. Paultan: Loke proposes compensation — https://paultan.org/2026/03/31/no-compromise-on-drivers-under-influence-prison-proposed-compensation-for-victims-families-loke/
+16. The Star, "Over 1,200 DUI cases convicted last year, says Transport Ministry", 24 Feb 2026, https://www.thestar.com.my/news/nation/2026/02/24/over-1200-dui-cases-convicted-last-year-says-transport-ministry [S]
+17. Free Malaysia Today, "Less than 0.5% of fatal crashes involve drunk drivers, says Loke", 30 Oct 2025, https://www.freemalaysiatoday.com/category/nation/2025/10/30/less-than-0-5-of-fatal-crashes-involve-drunk-drivers-says-loke [S]
+18. MahWengKwai & Associates (via Legal 500), "FAQ On Drink Driving In Malaysia", 5 Oct 2020, https://www.legal500.com/intelligence/malaysia/transport/faq-on-drink-driving-in-malaysia [S]
+19. NSW Government (Transport for NSW), "Alcohol limits, drugs and medicines", null, https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules/safe-driving/alcohol-and-drugs [PRIMARY]
+20. The Star, "Motorcyclists make up two-thirds of road deaths in 2025, says Loke", 27 Jan 2026, https://www.thestar.com.my/news/nation/2026/01/27/motorcyclists-make-up-two-thirds-of-road-deaths-in-2025-says-loke [S]
+21. The Star, "Almost 98% of p-hailing workers are youth, says Stats Dept", 17 Feb 2023, https://www.thestar.com.my/news/nation/2023/02/17/almost-98-of-p-hailing-workers-are-youth-says-stats-dept [S]
+22. The Star, "Urgent reforms needed to protect, support families affected by DUI, says MMA", 30 Mar 2026, https://www.thestar.com.my/news/nation/2026/03/30/urgent-reforms-needed-to-protect-support-families-affected-by-dui-says-mma [S]

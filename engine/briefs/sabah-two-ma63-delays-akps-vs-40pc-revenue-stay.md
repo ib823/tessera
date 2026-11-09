@@ -113,12 +113,12 @@ Primary: **Legal**, **Governance**, **Political**. Applicable but unused: **Hist
 ## SOURCES (numbered bibliography)
 
 Primary / quasi-primary:
-1. Federal Constitution, Article 112C, Article 112D, Tenth Schedule Part IV. AGC consolidated text.
+1. Federal Constitution, Article 112C, Article 112D, Tenth Schedule Part IV. AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf [PRIMARY]
 2. Immigration Act 1959/63 (Act 155). AGC consolidated text.
 3. Malaysian Border Control and Protection Agency Act 2024 (Act 860), specifically Section 6(3). AGC consolidated text.
-4. Sabah Law Society v Government of Malaysia & Ors, Kota Kinabalu High Court, judgment 17 October 2025 (Judge Datuk Celestina Stuel Galid, 107 pages). Primary judgment text not directly accessed; relied on FMT, The Star, Borneo Post, Edge Malaysia summaries.
-5. Court of Appeal panel ruling 6 April 2026 (Mohamed Zaini Mazlan, Ismail Brahim, K. Muniandy). Primary ruling text not directly accessed; relied on Bernama, Malay Mail, The Star, FMT, The Vibes summaries.
-6. Attorney General's Chambers public statement 6 April 2026.
+4. Sabah Law Society v Government of Malaysia & Ors, Kota Kinabalu High Court, judgment 7 Nov 2025 (Judge Datuk Celestina Stuel Galid, 107 pages). Primary judgment text not directly accessed; relied on FMT, The Star, Borneo Post, Edge Malaysia summaries. https://www.elaw.my/JE/01/JE_2025_46.html [PRIMARY]
+5. Court of Appeal panel ruling 6 April 2026 (Mohamed Zaini Mazlan, Ismail Brahim, K. Muniandy). Primary ruling text not directly accessed; relied on Bernama, Malay Mail, The Star, FMT, The Vibes summaries. [PRIMARY]
+6. Attorney General's Chambers public statement 6 April 2026. [PRIMARY]
 
 Secondary news (April 2026 — 40% stay):
 7. Malay Mail, 6 April 2026, "AGC says Sabah 40pc formula untouched as court freezes payment timeline" — https://www.malaymail.com/news/malaysia/2026/04/06/putrajaya-says-sabah-40pc-formula-untouched-as-court-freezes-payment-timeline/215322
@@ -152,6 +152,7 @@ Secondary news (May 2026 — AKPS):
 31. The Star, 14 May 2026, "Preserve Sabah's rights, get border laws in sync before enforcing AKPS, says lawyers group" — https://www.thestar.com.my/news/nation/2026/05/14/preserve-sabah039s-rights-get-border-laws-in-sync-before-enforcing-akps-says-lawyers-group
 32. Borneo Post, 14 May 2026, "Sabah immigration officers' union backs deferment of AKPS rollout, cites protection of MA63 rights" — https://www.theborneopost.com/2026/05/14/sabah-immigration-officers-union-backs-deferment-of-akps-rollout-cites-protection-of-ma63-rights/
 33. Borneo Post, 15 May 2026, "Umno Putatan reaffirms support for MA63, backs Sabah's immigration autonomy" — https://www.theborneopost.com/2026/05/15/umno-putatan-reaffirms-support-for-ma63-backs-sabahs-immigration-autonomy/
+34. Commissioner of Law Revision, Malaysia (copy on Prime Minister's Department site), "Petroleum Development Act 1974 (Act 144), Reprint incorporating amendments up to 1 January 2006", 2006, https://bhess.jpm.gov.my/wp-content/uploads/2024/08/Petroleum-Development-Act-1974-Act-144.pdf [PRIMARY]
 
 ## CONTRADICTIONS
 

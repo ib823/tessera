@@ -93,3 +93,10 @@ SOURCES:
 20. SEARCCT: The Lahad Datu Incursion (PDF) — https://www.searcct.gov.my/wp-content/uploads/2020/03/The-Lahad-Datu-Incursion.pdf
 21. Jesselton Times: 10th Anniversary ESSCOM (Mar 2023) — https://jesseltontimes.com/2023/03/31/10th-anniversary-esscom-is-not-a-costly-april-fool-joke/
 22. NST: Beefing up ESSCOM with sophisticated strategies (Mar 2024) — https://www.nst.com.my/opinion/columnists/2024/03/1019786/beefing-esscom-sophisticated-strategies-effective-maritime
+23. Parliament of Malaysia (Dewan Rakyat), "Pertanyaan Lisan Dewan Rakyat No. 31 (Joseph Pairin Kitingan, Keningau) and reply by Minister in the Prime Minister's Department Shahidan Kassim, on ESSCOM and ESSZONE", 13 Mar 2014, https://pardocs.sinarproject.org/documents/2014-march-april-parliamentary-session/oral-questions-soalan-lisan/2014-03-13-parliamentary-replies/soalan-31.pdf [PRIMARY]
+24. Free Malaysia Today, "10 years on, scars from Lahad Datu incursion remain unhealed", 12 Feb 2023, https://freemalaysiatoday.com/category/nation/2023/02/12/10-years-on-scars-from-lahad-datu-incursion-remain-unhealed [S]
+25. Bernama, "ESSZone Stays Stable, No Kidnap Recorded Since 2020 - Shamsul Anuar", 26 Feb 2025, https://www.bernama.com/en/general/news.php?id=2396882 [S]
+26. The Star, "Sabah sea curfew extended to Aug 3", 19 Jul 2023, https://thestar.com.my/news/nation/2023/07/19/sabah-sea-curfew-extended-to-aug-3 [S]
+27. The Star, "Lahad Datu: Defence Ministry takes over Sabah's eastern coastline from JPM", 14 Mar 2013, https://www.thestar.com.my/news/nation/2013/03/14/lahad-datu--defence-ministry-takes-over-sabahs-eastern-coastline-from-jpm [S]
+28. The Star, "Sabah's non-citizen population reduced slightly in 2025, says Stats Dept", 8 Jan 2026, https://www.thestar.com.my/news/nation/2026/01/08/sabah039s-non-citizen-population-reduced-slightly-in-2025-says-stats-dept [S]
+29. Department of Statistics Malaysia, "Poverty in Malaysia 2022", 28 Jul 2023, https://www.dosm.gov.my/portal-main/release-content/poverty-in-malaysia- [PRIMARY]

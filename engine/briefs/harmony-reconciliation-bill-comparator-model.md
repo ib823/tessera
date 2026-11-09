@@ -187,7 +187,7 @@ No single-spectrum reliance detected. Note: 3R sensitivity puts higher bar on an
 
 ### SECONDARY (citing primary)
 
-13. **Bernama**, "Bill to set up Harmony and Reconciliation Commission expected to be tabled this year," 7 April 2026: [https://www.bernama.com/en/general/news.php?id=1814136](https://www.bernama.com/en/general/news.php?id=1814136). The originating government press on the SKRN announcement.
+13. **Bernama**, "Bill to set up Harmony and Reconciliation Commission expected to be tabled this year," 15 Feb 2020: [https://www.bernama.com/en/general/news.php?id=1814136](https://www.bernama.com/en/general/news.php?id=1814136). The originating government press on the SKRN announcement.
 14. **Malay Mail**, "Malaysia looks to Singapore, Australia, Zimbabwe for new harmony and reconciliation Bill, eyes mediation over punishment," 7 April 2026: [https://www.malaymail.com/news/malaysia/2026/04/07/malaysia-looks-to-singapore-australia-zimbabwe-for-new-harmony-and-reconciliation-bill-eyes-mediation-over-punishment/215419](https://www.malaymail.com/news/malaysia/2026/04/07/malaysia-looks-to-singapore-australia-zimbabwe-for-new-harmony-and-reconciliation-bill-eyes-mediation-over-punishment/215419). The originating radar source. (Note: WebFetch returns 403 on Malay Mail; content summarised from WebSearch result.)
 15. **The Star**, "Putrajaya to revisit proposed national harmony bill, says Aaron," 7 April 2026: [https://www.thestar.com.my/news/nation/2026/04/07/putrajaya-to-revisit-proposed-national-harmony-bill-says-aaron](https://www.thestar.com.my/news/nation/2026/04/07/putrajaya-to-revisit-proposed-national-harmony-bill-says-aaron); follow-up "Unity Bill to be revisited," 8 April 2026.
 16. **FMT (Free Malaysia Today)**, "Govt renews push for national harmony, reconciliation commission," 7 April 2026: [https://www.freemalaysiatoday.com/category/nation/2026/04/07/govt-renews-push-for-national-harmony-reconciliation-commission](https://www.freemalaysiatoday.com/category/nation/2026/04/07/govt-renews-push-for-national-harmony-reconciliation-commission). (WebFetch 403; summary from WebSearch result.)
@@ -200,6 +200,8 @@ No single-spectrum reliance detected. Note: 3R sensitivity puts higher bar on an
 23. **Wikipedia, "Maintenance of Religious Harmony Act"** — citing 12 February 2007 Singapore Parliament written reply by Min for Home Affairs that no restraining orders had been issued; current text through 2024 contains no record of any subsequent issuance: [https://en.wikipedia.org/wiki/Maintenance_of_Religious_Harmony_Act](https://en.wikipedia.org/wiki/Maintenance_of_Religious_Harmony_Act). (Wikipedia is not primary, but it summarises the parliamentary disclosure — to be tightened to citation of Hansard if Stage 3 finds time.)
 24. **Veritas Zimbabwe**, NPRC Annual Reports 2018, 2019, 2020, 2021, 2022, 2023.
 25. **Tandfonline / African Security Review**, "The Zimbabwe Peace and Reconciliation Commission: Towards an integrated national infrastructure for peace?" Vol 31, No 3, 2022.
+26. ARTICLE 19, SUARAM, Lawyers for Liberty, CIJ, Aliran and others, "Joint letter to the Minister of Home Affairs and the Minister for Law and Institutional Reform urging repeal of the Sedition Act 1948", 25 May 2023, https://www.article19.org/wp-content/uploads/2023/05/Sedition-Act-Repeal.pdf [S]
+27. Free Malaysia Today, "Sedition Act cases up 84% in 2025, says CIJ", 10 Dec 2025, https://www.freemalaysiatoday.com/category/nation/2025/12/10/sedition-act-cases-up-84-in-2025-says-cij [S]
 
 ---
 

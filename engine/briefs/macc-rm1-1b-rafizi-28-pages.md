@@ -201,8 +201,8 @@ Governance, Legal, Political, Economic
    — Akmal Nasrullah," 23 Feb 2026.
    <https://www.bernama.com/en/news.php?id=2526806>
 3. MACC Act 2009 Section 23 (Suruhanjaya Pencegahan Rasuah Malaysia).
-4. Penal Code Sections 420 and 409 (Laws of Malaysia, Act 574).
-5. Federal Constitution of Malaysia Article 145 (Attorney-General's
+4. Penal Code Sections 420 and 409 (Laws of Malaysia, Act 574). https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf
+5. Federal Constitution of Malaysia Article 145 (Attorney-General's https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
    prosecutorial discretion).
 6. Government Procurement Act 2023 (Laws of Malaysia).
 
@@ -256,6 +256,8 @@ Governance, Legal, Political, Economic
     misappropriation claims, slams MACC's public search," 4 Mar 2026.
     <https://www.malaymail.com/news/malaysia/2026/03/04/im-no-jho-low-2-rafizis-ex-aide-denies-misappropriation-claims-slams-maccs-public-search/211325>
 22. FMT, "MACC recommends charges against 2 in Arm Holdings case,"
+28. The Star, "Azam Baki clocks out of MACC HQ for last time as tenure ends", 12 May 2026, https://www.thestar.com.my/news/nation/2026/05/12/azam-baki-clocks-out-of-macc-hq-for-last-time-as-he-ends-tenure [S]
+29. Mothership, "M'sia's Economy Minister Rafizi Ramli keeps promise to resign after losing PKR Deputy Presidency", 28 May 2025, https://mothership.sg/2025/05/malaysia-economy-minister-rafizi-ramli-resigns/ [S]
     6 May 2026.
     <https://www.freemalaysiatoday.com/category/nation/2026/05/06/macc-recommends-charges-against-2-in-arm-holdings-case>
 23. The Edge, "Azam Baki: MACC recommends charges against two in Arm

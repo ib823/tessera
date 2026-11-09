@@ -62,11 +62,11 @@ Primary **Health**; secondary **Social** (undiagnosed youth, sedentary behaviour
 ## SOURCES
 1. NHMS 2023 Fact Sheet, Institute for Public Health (IKU/NIH) — https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf (PRIMARY; 403 to automated fetch, open manually)
 2. "Conducting the National Health and Morbidity Survey 2023 in Malaysia…", Scientific Reports (2025) — https://www.nature.com/articles/s41598-025-08311-9 (PRIMARY methodology; 403)
-3. CodeBlue / Galen Centre, "NHMS 2023: Over Half Of Malaysian Adults Overweight Or Obese", 16 May 2024 — https://codeblue.galencentre.org/2024/05/nhms-2023-over-half-of-malaysian-adults-overweight-or-obese/
+3. CodeBlue / Galen Centre, "NHMS 2023: Over Half Of Malaysian Adults Overweight Or Obese", 27 May 2024 — https://codeblue.galencentre.org/2024/05/nhms-2023-over-half-of-malaysian-adults-overweight-or-obese/
 4. FMT, "Survey shows over half of Malaysian adults overweight or obese", 16 May 2024 — https://www.freemalaysiatoday.com/category/nation/2024/05/16/survey-shows-over-half-of-malaysian-adults-overweight-or-obese
 5. The Vibes, "High rate of undiagnosed diabetes among Malaysian youth raises concern"
-6. PLOS One, "Prevalence of impaired fasting glucose… NHMS 2019" — https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0320993 (confirms 2019 FBG method, 18.3%)
-7. "Rising Obesity in Malaysia (1990–2023)…", PMC12900780 — confirms the long-run obesity climb.
+6. PLOS One, "Prevalence of impaired fasting glucose… NHMS 2019" — https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0320993 (confirms 2019 FBG method, 18.3%) [PRIMARY]
+7. "Rising Obesity in Malaysia (1990–2023)…", PMC12900780 — confirms the long-run obesity climb. https://pmc.ncbi.nlm.nih.gov/articles/PMC12900780/ [PRIMARY]
 8. Sinar Daily, "Malaysia's obesity crisis: 11 million adults affected"
 
 ## CARD MAP (as published in 2002.json)

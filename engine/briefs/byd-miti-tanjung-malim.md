@@ -62,3 +62,7 @@ SOURCES:
 8. The Edge Malaysia — "KLK Land RM3.5B tech park" (https://theedgemalaysia.com/node/770217)
 9. Paultan.org — "CKD EVs tax-free till 2027" (https://paultan.org/2026/03/12/ckd-evs-by-zeekr-xpeng-mg-will-be-tax-free-till-end-2027-rm250k-cbu-floor-price-appropriate-miti/)
 10. MIDA — "Automotive powerhouse" (https://www.mida.gov.my/unlocking-malaysias-potential-the-next-automotive-powerhouse/)
+11. The Star, "BYD Malaysia not setting up Tanjung Malim plant", 12 Sep 2026, https://www.thestar.com.my/news/nation/2026/09/12/byd-malaysia-not-setting-up-tanjung-malim-plant [S]
+12. The Star (Reuters), "China's BYD opens EV factory in Thailand, first in Southeast Asia", 4 Jul 2024, https://thestar.com.my/business/business-news/2024/07/04/china039s-byd-opens-ev-factory-in-thailand-first-in-southeast-asia [S]
+13. Thailand Board of Investment, "Thailand EV Board Approves Extended Production Timeframe for BEV and Inclusion of Mild HEV in Hybrid Incentive Package to Support Industry's Electrification (Press Release No. 167/2567)", 4 Dec 2024, https://osos.boi.go.th/article_attach/PR167_2567EN.pdf [PRIMARY]
+14. The Edge Malaysia, "Perodua says business as usual amid UMW takeover by Sime Darby", 27 Oct 2023, https://theedgemalaysia.com/node/687793 [S]

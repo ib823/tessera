@@ -88,12 +88,18 @@ SOURCES:
 6. Malay Mail: Paris court junks $14.9B award (Dec 2025) — https://www.malaymail.com/news/malaysia/2025/12/10/malaysia-wins-again-as-french-court-junks-sulu-claimants-us149b-award-govt-says-this-ends-extortion-bid/201447
 7. Global Arbitration Review: French court annuls final award — https://globalarbitrationreview.com/article/french-court-annuls-final-award-in-sulu-dispute
 8. Bloomberg: Paris court annuls $15B (Dec 2025) — https://www.bloomberg.com/news/articles/2025-12-10/malaysia-says-paris-court-annuls-final-award-in-sulu-case
-9. Malaysia Sulu Case official portal — https://www.malaysia-sulucase.gov.my/about
-10. ICJ: Malaysia observations on Philippines intervention — https://www.icj-cij.org/node/104582
-11. Wikipedia: North Borneo dispute — https://en.wikipedia.org/wiki/North_Borneo_dispute
-12. Wikipedia: Malaysia Sulu case — https://en.wikipedia.org/wiki/Malaysia_Sulu_case
+9. Malaysia Sulu Case official portal — https://www.malaysia-sulucase.gov.my/about [PRIMARY]
+10. ICJ: Malaysia observations on Philippines intervention — https://www.icj-cij.org/node/104582 [PRIMARY]
+11. Wikipedia: North Borneo dispute — https://en.wikipedia.org/wiki/North_Borneo_dispute (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+12. Wikipedia: Malaysia Sulu case — https://en.wikipedia.org/wiki/Malaysia_Sulu_case (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 13. RSIS: Sultan of Sulu's Sabah claim — https://rsis.edu.sg/rsis-publication/rsis/1933-sultan-of-sulus-sabah-claim/
 14. UP Law: The Sabah Question in International Law — https://law.upd.edu.ph/wp-content/uploads/2024/12/04-The-Sabah-Question-in-International-Law-Judge-Frank-E.-Lobrigo-ret..pdf
 15. Lowy Institute: Sabah's borders — https://www.lowyinstitute.org/the-interpreter/sabah-s-borders-indonesia-joins-malaysia-philippines-dispute
-16. Malaysian FM statement on Sabah sovereignty — https://www.kln.gov.my/web/guest/-/statement-on-sabah-sovereignty
+16. Malaysian FM statement on Sabah sovereignty — https://www.kln.gov.my/web/guest/-/statement-on-sabah-sovereignty [PRIMARY]
 17. Global Arbitration News: Paris annulment analysis (Jan 2026) — https://www.globalarbitrationnews.com/2026/01/27/the-paris-court-of-appeal-annuls-usd-14-92-billion-award-against-malaysia-finding-the-underlying-arbitration-agreement-to-be-inapplicable/
+18. Republic of the Philippines (text via Chan Robles Virtual Law Library), "Republic Act No. 5446: An Act to Amend Section One of Republic Act Numbered Thirty Hundred and Forty-Six", 18 Sep 1968, https://chanrobles.com/republicactno5446.html [PRIMARY]
+19. The Star, "Foreigners make up only 23.7% of Sabah's 3.4 million population, says Hajiji", 24 Mar 2022, https://www.thestar.com.my/news/nation/2022/03/24/foreigners-make-up-only-237-of-sabah039s-34-million-population-says-hajiji [S]
+20. Commission on Human Rights of the Philippines, "Policy Advisory on Addressing the Risk of Statelessness of Persons of Filipino Descent in Sabah, CHR(VI) No. A2026-004", 23 Feb 2026, https://chr.gov.ph/wp-content/uploads/2026/03/CHR_VI_NO_A2026_004_POLICY_ADVISORY_ON_ADDRESSING_THE_RISK_OF_STATELESSNESS.pdf [PRIMARY]
+21. The Star, "Hundreds of Bajau Laut left without homes after demolition op in Semporna", 7 Jun 2024, https://www.thestar.com.my/news/nation/2024/06/07/hundreds-of-bajau-laut-left-without-homes-after-demolition-op-in-semporna [S]
+22. Free Malaysia Today, "Eviction of Bajau Laut folk in Semporna above board, says Sabah minister", 7 Jun 2024, https://www.freemalaysiatoday.com/category/nation/2024/06/07/eviction-of-bajau-laut-folk-in-semporna-above-board-says-sabah-minister [S]
+23. Malay Mail, "Hajiji: Sabah not up for debate, issue just a political tactic in Philippines", 28 Mar 2026, https://www.malaymail.com/news/malaysia/2026/03/28/hajiji-sabah-not-up-for-debate-issue-just-a-political-tactic-in-philippines/214244 [S]

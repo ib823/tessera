@@ -112,8 +112,8 @@ Recovery is also decelerating sharply. The bulk landed in 2020 (RM14.26B, Goldma
 2. US Department of Justice, "Justice Department Repatriates $1.4B Misappropriated 1MDB Funds to Malaysia" (13 June 2024). https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia
 3. US SEC Administrative Proceeding File No. 3-20131, "In the Matter of The Goldman Sachs Group, Inc." (22 Oct 2020) — full settlement order. https://www.sec.gov/files/litigation/admin/2020/34-90243.pdf
 4. US IRS Criminal Investigation press release, "Justice Department repatriates $1.4B misappropriated 1MDB funds to Malaysia" (June 2024). https://www.irs.gov/compliance/criminal-investigation/justice-department-repatriates-1-point-4b-misappropriated-1mdb-funds-to-malaysia
-5. Ministry of Finance Malaysia, "Goldman Sachs returns US$3.9 bln in 1MDB settlement to Msia: MOF" (press citation). https://www.mof.gov.my/portal/en/news/press-citations/goldman-sachs-returns-us-3-9-bln-in-1mdb-settlement-to-msia-mof
-6. Ministry of Finance Malaysia, "RM43.8 bln 1MDB debt paid to date, with balance of RM9.7 bln — Ahmad Maslan" (press citation, 2023). https://www.mof.gov.my/portal/en/news/press-citations/rm43-8-bln-1mdb-debt-paid-to-date-with-balance-of-rm9-7-bln-ahmad-maslan
+5. Ministry of Finance Malaysia, "Goldman Sachs returns US$3.9 bln in 1MDB settlement to Msia: MOF" (press citation). https://www.mof.gov.my/portal/en/news/press-citations/goldman-sachs-returns-us-3-9-bln-in-1mdb-settlement-to-msia-mof [S]
+6. Ministry of Finance Malaysia, "RM43.8 bln 1MDB debt paid to date, with balance of RM9.7 bln — Ahmad Maslan" (press citation, 2023). https://www.mof.gov.my/portal/en/news/press-citations/rm43-8-bln-1mdb-debt-paid-to-date-with-balance-of-rm9-7-bln-ahmad-maslan [S]
 7. US Department of Justice, "Justice Department Recovers an Additional $20M in Misappropriated 1MDB Funds" (Jan 2025). https://www.justice.gov/archives/opa/pr/justice-department-recovers-additional-20m-misappropriated-1mdb-funds
 8. U.S. Embassy in Malaysia, "Over $1 Billion in Misappropriated 1MDB Funds Now Repatriated to Malaysia" (Aug 2021). https://my.usembassy.gov/over-1-billion-in-misappropriated-1mdb-funds-now-repatriated-to-malaysia-080621/
 
@@ -152,6 +152,7 @@ Recovery is also decelerating sharply. The bulk landed in 2020 (RM14.26B, Goldma
 **Civil society / academic:**
 
 29. Transparency International Malaysia, "Joint Press Statement: 1MDB & DoJ — What is our next course of action?" https://www.transparency.org.my/pages/news-and-events/press-releases/joint-press-statement-1mdb-doj-what-is-our-next-course-of-action
+31. Bernama, "Govt Recovers RM31.2 Bln Related To 1MDB, SRC As Of September 2025", 27 Nov 2025, https://www.bernama.com/en/news.php?id=2496226 [S]
 30. Wikipedia, "1MDB scandal" (cross-reference only for timeline). https://en.wikipedia.org/wiki/1Malaysia_Development_Berhad_scandal
 
 ## CONTRADICTIONS

@@ -110,6 +110,8 @@ Edition 5 of issue 1229:
 9. **[S]** Free Malaysia Today, "Court dismisses appeal by Kg Sungai Baru residents over vacant possession", 3 Oct 2025. https://www.freemalaysiatoday.com/category/nation/2025/10/03/court-dismisses-appeal-by-kg-sungai-baru-residents-over-vacant-possession
 10. **[S]** Norsidah Ujang, MIT–UTM Sustainable Cities Program, *Transforming the Historical Urban Village of Kampong Bharu into a New Urban Centre in Kuala Lumpur*, working paper, 2016. https://malaysiacities.mit.edu/?p=119
 11. **[S]** The Edge Malaysia, "Another plan to redevelop Kampung Baru", 29 Apr 2019. https://theedgemalaysia.com/article/politics-and-policy-another-plan-redevelop-kampung-baru
+12. Malay Mail, "Calling skyscraper plan redundant, experts say what makes Kampung Baru unique is its people, culture", 30 Sep 2019, https://www.malaymail.com/news/malaysia/2019/09/30/calling-skyscraper-plan-redundant-experts-say-what-makes-kampung-baru-uniqu/1795499 [S]
+13. Malay Mail (AFP), "'We won't sell at any price': The challenge of freeing Kampung Baru, a village 'trapped in time'", 3 Apr 2016, https://www.malaymail.com/news/malaysia/2016/04/03/we-wont-sell-at-any-price-authorities-seek-to-free-kampung-baru-a-village-t/1092807 [S]
 
 ## BACKFILL NOTES
 

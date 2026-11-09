@@ -245,10 +245,10 @@ Rule 137 review history)
 **Primary / official / statutory**
 1. Rules of the Federal Court 1995, Rule 137 — text. P.U.(A) 376/1995.
    <https://tcclaw.com.my/wp-content/uploads/2025/08/RULES-OF-THE-FEDERAL-COURT-1995.pdf>
-2. Malaysian Anti-Corruption Commission Act 2009, Section 50(1)
+2. Malaysian Anti-Corruption Commission Act 2009, Section 50(1) https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf
    (presumption of corruption) and Sections 16 / 17(a) (corrupt
    acceptance by agent). Suruhanjaya Pencegahan Rasuah Malaysia.
-3. Federal Constitution of Malaysia Articles 5(1), 8(1), 145.
+3. Federal Constitution of Malaysia Articles 5(1), 8(1), 145. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
 4. Courts of Judicature Act 1964 (Act 91), Sections 87 and 92
    (criminal appellate jurisdiction of the Federal Court).
 
@@ -296,6 +296,8 @@ documents and contemporaneous official reporting)**
     7 Mar 2026.
     <https://www.thestar.com.my/news/nation/2026/03/07/isa-samad-files-review-against-federal-court039s-decision-restoring-corruption-conviction-fine-and-jail-term>
 16. FMT, "Isa files review to set aside corruption conviction,"
+31. The Star, "Najib loses bid to review Federal Court decision", 31 Mar 2023, https://www.thestar.com.my/news/nation/2023/03/31/najib-loses-bid-to-review-federal-court-decision [S]
+32. Malay Mail, "No more way out for Najib as apex court refuses SRC review", 31 Mar 2023, https://www.malaymail.com/news/malaysia/2023/03/30/no-more-way-out-for-najib-as-apex-court-refuses-src-review/62356 [S]
     7 Mar 2026.
     <https://www.freemalaysiatoday.com/category/nation/2026/03/07/isa-files-review-to-set-aside-corruption-conviction>
 17. The Edge, "Isa Samad wants Federal Court to reconsider its

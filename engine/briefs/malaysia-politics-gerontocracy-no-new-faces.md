@@ -216,18 +216,18 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 
 **Tier A — Primary statistical sources (numbers we cite must come from here)**
 1. IPU Parline (Inter-Parliamentary Union), "Malaysia House of Representatives", https://data.ipu.org/parliament/MY/MY-LC01/ — composition, age, gender data.
-2. Election Commission Malaysia (SPR) tally and candidate-list pages for GE15, via Malay Mail aggregation, https://www.malaymail.com/news/malaysia/2022/11/20/ge15-in-embarrassing-defeat-dr-mahathir-loses-langkawi-along-with-election-deposit/40741
-3. The Star / Asia News Network, "INTERACTIVE: A look at our slightly younger Dewan Rakyat", 2 Dec 2022, https://www.thestar.com.my/news/nation/2022/12/02/interactive-a-look-at-our-slightly-younger-dewan-rakyat — median 52.4 etc.
-4. The Star, "INTERACTIVE: How diverse is our Dewan Rakyat?", 8 Nov 2022, https://www.thestar.com.my/news/nation/2022/11/08/interactive-how-diverse-is-our-dewan-rakyat-find-out-here
+2. Election Commission Malaysia (SPR) tally and candidate-list pages for GE15, via Malay Mail aggregation, https://www.malaymail.com/news/malaysia/2022/11/20/ge15-in-embarrassing-defeat-dr-mahathir-loses-langkawi-along-with-election-deposit/40741 [S]
+3. The Star / Asia News Network, "INTERACTIVE: A look at our slightly younger Dewan Rakyat", 2 Dec 2022, https://www.thestar.com.my/news/nation/2022/12/02/interactive-a-look-at-our-slightly-younger-dewan-rakyat — median 52.4 etc. [S]
+4. The Star, "INTERACTIVE: How diverse is our Dewan Rakyat?", 8 Nov 2022, https://www.thestar.com.my/news/nation/2022/11/08/interactive-how-diverse-is-our-dewan-rakyat-find-out-here [S]
 5. European Parliament, "Facts and figures: the European Parliament's 2024-2029 term", https://www.europarl.europa.eu/topics/en/article/20190705STO56305/facts-and-figures-the-european-parliament-s-2024-2029-term — average age 50, youngest 23, age distribution.
 6. European Parliament Research Service (EPRS), "Average age — Members of the European Parliament 2024-2029", https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/762356/EPRS_ATA(2024)762356_EN.pdf
 7. Inter-Parliamentary Union, "Data on age: by country", https://data.ipu.org/age-brackets/ — Malaysian-vs-European comparison ranking.
 
 **Tier B — Constitutional and statutory primary sources**
-8. Constitution of Malaysia (with 2007 reprint and subsequent amendments), Constitute Project PDF, https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en — Articles 47, 48, 49A, 119; Eighth Schedule.
+8. Constitution of Malaysia (with 2007 reprint and subsequent amendments), Constitute Project PDF, https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en — Articles 47, 48, 49A, 119; Eighth Schedule. [PRIMARY]
 9. Library of Congress Global Legal Monitor, "Malaysia: Bill Reducing Voting Age to 18 Passed", 18 Jul 2019, https://www.loc.gov/item/global-legal-monitor/2019-07-18/malaysia-bill-reducing-voting-age-to-18-passed/ — confirms BOTH voting and candidacy age lowered to 18.
 10. Constitution (Amendment) (No.3) Act 2022 — analysis by Rahmat Lim & Partners, https://www.rahmatlim.com/publication/articles/22605/anti-party-hopping-laws-introduced-in-federal-constitution-of-malaysia ; loophole analysis by Skrine, https://www.skrine.com/insights/alerts/august-2022/malaysias-anti-party-hopping-law-a-compromised-la
-11. Members of Parliament (Remuneration) Act 1980 (Act 237), official Parliament PDF, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf — gratuity formula, pension schedule.
+11. Members of Parliament (Remuneration) Act 1980 (Act 237), official Parliament PDF, https://www.parlimen.gov.my/images/webuser/akta/Act%20237e.pdf — gratuity formula, pension schedule. [PRIMARY]
 
 **Tier C — Political-pension and GLC patronage (the "too much to lose" mechanic)**
 12. The Vibes, "The perks of being a lawmaker: RM2 mil gratuity, RM100,000 monthly pension", https://www.thevibes.com/articles/news/43034/the-perks-of-being-a-lawmaker-rm2-mil-gratuity-rm100000-monthly-pension
@@ -240,7 +240,7 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 
 **Tier D — Cast biography and career-length verification**
 19. Wikipedia, "Anwar Ibrahim" — birth date 10 Aug 1947; PM sworn in 24 Nov 2022 — secondary, cross-checked against CNN and Al Jazeera below.
-20. CNN, "Malaysia's Anwar becomes prime minister", 25 Nov 2022, https://www.cnn.com/2022/11/24/asia/anwar-ibrahim-malaysia-new-prime-minister-intl-hnk
+20. CNN, "Malaysia's Anwar becomes prime minister", 24 Nov 2022, https://www.cnn.com/2022/11/24/asia/anwar-ibrahim-malaysia-new-prime-minister-intl-hnk
 21. Al Jazeera, "Anwar sworn in as Malaysia's PM after 25-year struggle for reform", 24 Nov 2022, https://www.aljazeera.com/news/2022/11/24/malaysias-anwar-named-countrys-10th-prime-minister
 22. Wikipedia, "Muhyiddin Yassin" — birth 15 May 1947; corroborated against Perdana Leadership Foundation biography, https://www.perdana.org.my/biography-tan-sri-mahiaddin-yasin/
 23. Al Jazeera, "Malaysia ex-PM Muhyiddin Yassin arrested, faces corruption charge", 9 Mar 2023, https://www.aljazeera.com/news/2023/3/9/holdmalaysiaformerpm-muhyiddin-yassin-arrested-over-covid-funds
@@ -249,7 +249,7 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 26. CNN, "Malaysia court finds jailed former leader Najib Razak guilty of abuse of power in biggest 1MDB trial", 26 Dec 2025, https://www.cnn.com/2025/12/26/asia/najib-1mdb-verdict-intl-hnk
 
 **Tier E — Young politicians, MUDA, and Undi18 outcomes**
-27. Library of Congress (see Tier B #9).
+27. Library of Congress (see Tier B #9). https://www.loc.gov/item/global-legal-monitor/2019-07-18/malaysia-bill-reducing-voting-age-to-18-passed/
 28. Wikipedia, "UNDI18" — corroborated against Library of Congress and ConstitutionNet, https://en.wikipedia.org/wiki/UNDI18
 29. Benar News, "Malaysian ex-youth minister sentenced to 7 years, caning for corruption", 9 Nov 2023, https://www.benarnews.org/english/news/malaysian/syed-saddiq-guilty-7-years-prison-11092023130750.html
 30. South China Morning Post, "Malaysian court overturns Syed Saddiq's corruption conviction", 25 Jun 2025, https://www.scmp.com/week-asia/people/article/3315748/malaysian-lawmaker-syed-saddiq-cleared-corruption-after-5-years-hell
@@ -271,6 +271,8 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 42. The Star, "Abdul Hadi returns unopposed as PAS president, Tuan Ibrahim retains deputy post", 4 Sep 2025, https://www.thestar.com.my/news/nation/2025/09/04/abdul-hadi-returns-unopposed-as-pas-president-tuan-ibrahim-retains-deputy-post
 43. Malay Mail, "Physician turned politician Dr Mohammed Taufiq Johari takes charge of Youth and Sports portfolio", 16 Dec 2025, https://www.malaymail.com/news/malaysia/2025/12/16/physician-turned-politician-dr-mohammed-taufiq-johari-takes-charge-of-youth-and-sports-portfolio/202159
 44. PBS NewsHour, "Macron picks EU Brexit negotiator as France's new prime minister", 5 Sep 2024, https://www.pbs.org/newshour/world/macron-picks-eu-brexit-negotiator-as-frances-new-prime-minister
+45. Institute for Democracy and Economic Affairs (IDEAS), "IDEAS: 78% of Federal Statutory Bodies (FSBs) Chairperson Roles Lack Clear Qualification Standards", 5 Mar 2026, https://www.ideas.org.my/for-media/all/ideas-78-of-federal-statutory-bodies-fsbs-chairperson-roles-lack-clear-qualification-standards/ [PRIMARY]
+46. Free Malaysia Today, "Dewan Rakyat fails to pass bill to cap PM's tenure at 10 years", 2 Mar 2026, https://www.freemalaysiatoday.com/category/nation/2026/03/02/dewan-rakyat-fails-to-pass-bill-to-cap-pms-tenure-at-10-years [S]
 
 ## CONTRADICTIONS
 

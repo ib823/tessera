@@ -112,4 +112,7 @@ November 2023 – April 2026
 17. FMT, "The alleged Sabah mining scandal: the story so far," Jul 8, 2025 — https://www.freemalaysiatoday.com/category/nation/2025/07/08/the-alleged-sabah-mining-scandal-the-story-so-far
 18. The Star, "Rest assured, Hajiji not involved in Sabah mining licence case, says MACC chief," Apr 10, 2025 — https://www.thestar.com.my/news/nation/2025/04/10/hajiji-has-given-statement-over-sabah-mining-licence-claims-says-macc-chief
 19. FMT, "SMM's role and the truth about Sabah's mining permits," Aug 10, 2025 — https://www.freemalaysiatoday.com/category/opinion/2025/08/10/smms-role-and-the-truth-about-sabahs-mining-permits
-20. Sabah State Government, "Sabah Mineral Enactment 1999 (gazetted PDF)" — https://sagc.sabah.gov.my/sites/default/files/law/MineralEnactment1999.pdf
+20. Sabah State Government, "Sabah Mineral Enactment 1999 (gazetted PDF)" — https://sagc.sabah.gov.my/sites/default/files/law/MineralEnactment1999.pdf [PRIMARY]
+21. Sabah State Attorney-General's Chambers, "Mineral Enactment 1999 (legislation status page)", null, https://sagc.sabah.gov.my/?q=en/content/mineral-enactment-1999 [PRIMARY]
+22. Sabah State Attorney-General's Chambers, "Mining Ordinance 1960 (No. 20 of 1960), reference copy as at January 2019", Jan 2019, https://sagc.sabah.gov.my/sites/default/files/law/MiningOrdinance1960_1.pdf [PRIMARY]
+23. Attorney General's Chambers (Commissioner of Law Revision), "Malaysian Anti-Corruption Commission Act 2009 (Act 694), reprint as at 1 January 2022", 1 Jan 2022, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf [PRIMARY]

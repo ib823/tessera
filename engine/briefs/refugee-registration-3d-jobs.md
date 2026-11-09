@@ -63,18 +63,23 @@ January–April 2026
 Rights, Economic, Social
 
 ## SOURCES
-1. CGD, "A Breakthrough for Refugees' Work Rights in Thailand and Malaysia?" 2026
+1. CGD, "A Breakthrough for Refugees' Work Rights in Thailand and Malaysia?" Dec 2025 https://www.cgdev.org/blog/breakthrough-refugees-work-rights-thailand-and-malaysia
 2. UNHCR Malaysia, "Where we work: Malaysia" 2026
-3. FMT, "Factors in favour of a refugee registration system" Feb 21, 2026
-4. Malay Mail, "Putrajaya says mulling allowing refugees to work, limited to '3D' jobs"
-5. SCMP, "Malaysia's plan to give refugees its worst jobs amounts to human rights 'facade'"
-6. HRW, "Rampant Labor Abuses Against Bangladeshi Migrant Workers in Malaysia" Nov 2025
-7. Asylum Access, "Malaysia: Court defends refugee worker rights in landmark ruling"
-8. Al Jazeera, "In legal no-man's land, refugees in Malaysia struggle to eat, pay rent"
-9. IOM Malaysia country page 2026
-10. Business & Human Rights Resource Centre, "Malaysia: Govt plans to restrict refugee employment to '3D' jobs"
+3. FMT, "Factors in favour of a refugee registration system" Feb 21, 2026 https://www.freemalaysiatoday.com/category/opinion/2026/02/21/factors-in-favour-of-a-refugee-registration-system
+4. Malay Mail, "Putrajaya says mulling allowing refugees to work, limited to '3D' jobs" https://www.malaymail.com/amp/news/malaysia/2023/10/31/putrajaya-says-mulling-allowing-refugees-to-work-here-but-limited-to-3d-jobs/99375
+5. SCMP, "Malaysia's plan to give refugees its worst jobs amounts to human rights 'facade'" https://m.scmp.com/week-asia/people/article/3240771/malaysias-plan-give-refugees-its-worst-jobs-amounts-human-rights-facade-activists
+6. HRW, "Rampant Labor Abuses Against Bangladeshi Migrant Workers in Malaysia" 26 Nov 2025 https://hrw.org/news/2025/11/26/rampant-labor-abuses-against-bangladeshi-migrant-workers-in-malaysia
+7. Asylum Access, "Malaysia: Court defends refugee worker rights in landmark ruling" https://asylumaccess.org/malaysia-court-defends-refugee-worker-rights-in-landmark-ruling/
+8. Al Jazeera, "In legal no-man's land, refugees in Malaysia struggle to eat, pay rent" https://www.aljazeera.com/news/2024/2/7/in-legal-no-mans-land-refugees-in-malaysia-struggle-to-eat-pay-rent
+9. IOM Malaysia country page 2026 https://www.iom.int/countries/malaysia
+10. Business & Human Rights Resource Centre, "Malaysia: Govt plans to restrict refugee employment to '3D' jobs" https://www.business-humanrights.org/en/latest-news/malaysia-govt-plans-to-restrict-refugee-employment-to-3d-jobs-incl-manufacturing-mining-construction/
 11. Berghahn Journals, "Refugee Registration Schemes in Malaysia" 2024
-12. SAGE, "Migrant Workers in Malaysia: Human Rights Issues" 2025
+12. SAGE, "Migrant Workers in Malaysia: Human Rights Issues" 1 May 2025 [PRIMARY]
+16. Fortify Rights, "Malaysia: Rohingya Refugees Held Indefinitely in Inhumane and Degrading Conditions", 12 Mar 2026, https://www.fortifyrights.org/mly-inv-2026-03-12/ [S]
+17. Institute for Democracy and Economic Affairs (IDEAS), "IDEAS: Refugees could contribute over RM3 billion to the Malaysian economy if granted the right to work", 29 Apr 2019, https://www.ideas.org.my/for-media/ideas-refugees-could-contribute-over-rm3-billion-to-the-malaysian-economy-if-granted-the-right-to-work/ [PRIMARY]
+18. The Star, "Giving refugees the right to work a win-win for Malaysia, says MEF", 22 Jun 2025, https://www.thestar.com.my/news/nation/2025/06/22/giving-refugees-the-right-to-work-a-win-win-for-malaysia-says-mef [S]
+19. Cabinet Secretariat of the Republic of Indonesia (Setkab), "Presiden Jokowi Teken Perpres Penanganan Pengungsi Dari Luar Negeri", 16 Jan 2017, https://setkab.go.id/presiden-jokowi-teken-perpres-penanganan-pengungsi-dari-luar-negeri/ [PRIMARY]
+20. US Department of State (via ecoi.net), "2025 Trafficking in Persons Report: Malaysia", 29 Sep 2025, https://www.ecoi.net/en/document/2130677.html [PRIMARY]
 13. Published issue 1267 — Migrant worker exploitation affects 2.1M
 14. Published issue 1283 — Rohingya face 12 hate speech incidents monthly
 15. Published issue 0179 — Born here, documented nowhere (stateless children)

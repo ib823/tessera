@@ -49,18 +49,22 @@
 Legal, Governance, Environmental
 
 ## SOURCES
-1. Macaranga/Pulitzer Center, "Excision: The Main Threat to Forests in Peninsular Malaysia"
-2. Macaranga/Pulitzer Center, "Cut, Carved, and Cleared: When Big Forests Go" (Johor)
-3. SAM/FOE Malaysia, "Tanjung Bungah Landslide: DOE objection ignored"
-4. Malaysian Bar/Prof. Ainul Jaria Maidin, "Challenges in implementing environmental protection"
-5. Mongabay, "Deforestation intensifies in northern Malaysia's most important water catchment" (Ulu Muda)
-6. SAM/FOE Malaysia, "State Governments must immediately adopt NFA Amendment Act 2022"
+1. Macaranga/Pulitzer Center, "Excision: The Main Threat to Forests in Peninsular Malaysia" https://www.macaranga.org/excision-the-main-threat-to-forests-in-peninsular-malaysia/
+2. Macaranga/Pulitzer Center, "Cut, Carved, and Cleared: When Big Forests Go" (Johor) https://www.macaranga.org/big-forests-go-jemaluang-tenggaroh/
+3. SAM/FOE Malaysia, "Tanjung Bungah Landslide: DOE objection ignored" https://consumer.org.my/tanjung-bungah-landslide-state-government-and-mbpp-must-explain-why-doe-objection-ignored-and-be-held-accountable/
+4. Malaysian Bar/Prof. Ainul Jaria Maidin, "Challenges in implementing environmental protection" https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/challenges-in-implementing-and-enforcing-environmental-protection-measures-in-malaysia-by-ainul-jaria-bt-maidin
+5. Mongabay, "Deforestation intensifies in northern Malaysia's most important water catchment" (Ulu Muda) https://news.mongabay.com/2022/07/deforestation-on-the-rise-in-northern-malaysias-most-important-water-catchment/
+6. SAM/FOE Malaysia, "State Governments must immediately adopt NFA Amendment Act 2022" https://consumer.org.my/state-governments-must-immediately-adopt-the-national-forestry-amendment-act-2022/
 7. WWF-Malaysia, "NGOs Express Alarm Over SACF Degazettement"
-8. Malaysian Bar, "Selangor Must Respect Due Process in Forest Reserve Excision"
-9. RimbaWatch/Borneo Project, "State of the Malaysian Rainforest 2024"
-10. Eco-Business, "Rare earth mining in Perak forest" (Kenering)
-11. DOE Malaysia, Environmental Quality (Amendment) Act 2024
-12. Macaranga, "Empower the Dewan to Safeguard Forest Reserves"
+8. Malaysian Bar, "Selangor Must Respect Due Process in Forest Reserve Excision" https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-release-selangor-government-must-respect-due-process-in-forest-reserve-excision
+9. RimbaWatch/Borneo Project, "State of the Malaysian Rainforest 2024" https://borneoproject.org/state-of-the-malaysian-rainforest-2024-report/
+10. Eco-Business, "Rare earth mining in Perak forest" (Kenering) https://www.eco-business.com/news/rare-earth-mining-in-malaysias-perak-forest-raises-environmental-and-health-concerns/
+11. DOE Malaysia, Environmental Quality (Amendment) Act 2024 [PRIMARY]
+12. Macaranga, "Empower the Dewan to Safeguard Forest Reserves" https://www.macaranga.org/empower-the-dewan-to-safeguard-forest-reserves/
+13. Attorney General's Chambers, "Federal Constitution (Reprint, as at 15 October 2020)", 15 Oct 2020, https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf [PRIMARY]
+14. Commissioner of Law Revision, Malaysia, "National Forestry Act 1984 (Act 313), Reprint incorporating all amendments up to 1 January 2006", 1 Jan 2006, https://lpr.adb.org/sites/default/files/resource/%5Bnid%5D/national-forestry-act-313-1-.pdf [PRIMARY]
+15. Malay Mail, "Report: Campsite in deadly Batang Kali landslide may have been inside 'no-go area'", 20 Jan 2023, https://www.malaymail.com/news/malaysia/2023/01/20/report-campsite-in-deadly-batang-kali-landslide-may-have-been-inside-no-go-area/51222 [S]
+16. Macaranga, "Forest Loss: Under Whose Watch?", 26 Nov 2020, https://www.macaranga.org/forest-loss-under-whose-watch/ [S]
 
 ## CORRECTION (2026-11-09)
 

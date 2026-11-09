@@ -514,6 +514,8 @@ lens diversity.
     Regulatory Model."
     <https://www.panewslab.com/en/articles/lc23yr39f56e>
 36. The Sumsuber, "Crypto Regulations in Malaysia — 2025 Guide."
+38. Bank Negara Malaysia, "Navigating the Future of Digital Assets (Box 8, Annual Report 2024)", Mar 2025, https://www.bnm.gov.my/documents/20124/17493532/ar2024_en_box8.pdf [PRIMARY]
+39. Securities Commission Malaysia, "Digital Assets: List of Tradeable Digital Assets on Regulated Exchanges in Malaysia and the Shariah Status", null, https://www.sc.com.my/digital-assets [PRIMARY]
     <https://sumsub.com/blog/crypto-regulations-in-malaysia-guide/>
 37. Disruption Banking, "Why Singapore's Crypto Regulation Is
     Outshining MiCA in 2025."

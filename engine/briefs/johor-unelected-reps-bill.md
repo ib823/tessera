@@ -129,12 +129,16 @@ The amendment requires the Sultan's consent. Per the T4A Accuracy Standard, clai
 25. The Star, "Hajiji leads swearing-in of Sabah assemblymen", 11 Dec 2025, https://www.thestar.com.my/news/nation/2025/12/11/hajiji-leads-swearing-in-of-sabah-assemblymen
 
 **Tier E — Constitutional / academic / structural**
-26. Constitution of Malaysia (with amendments through 2007), Constitute Project PDF, https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en — Federal Constitution including Article 71 and Eighth Schedule.
+26. Constitution of Malaysia (with amendments through 2007), Constitute Project PDF, https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en — Federal Constitution including Article 71 and Eighth Schedule. [PRIMARY]
 27. Wikipedia, "Constitution of Johor" — secondary source, citation primary text and 1895 promulgation.
 28. Wikipedia, "Johor State Legislative Assembly" — secondary, citation 56-seat composition and 2022 election results.
 29. Wikipedia, "2022 Johor state election" — secondary, BN 40 / PH 11 / PN 3 / PKR 1 / MUDA 1.
 30. Malay Mail, "[Official] Final tally for Johor polls is BN 40, Pakatan 11, Perikatan 3, PKR 1, Muda 1, says EC", 12 Mar 2022, https://www.malaymail.com/news/malaysia/2022/03/12/live-official-perikatan-records-first-win-in-johor-polls-with-endau/2047098 — primary Election Commission tally.
 31. The Malaysian Bar, "Powers and functions of state rulers", https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/powers-and-functions-of-state-rulers — institutional/secondary on Article 71 and the Eighth Schedule essential-provisions framework.
+32. Dewan Negeri Johor, "Soalan-soalan Lisan Yang Tidak Habis Dijawab di Persidangan Dewan Negeri Johor pada Hari Khamis, 11 September 2025 (Soalan 113)", 11 Sep 2025, https://dewannegeri.johor.gov.my/wp-content/uploads/2025/09/SOALAN-LISAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-11-SEPT-2025.pdf [PRIMARY]
+33. China Press (Johor), "柔州增5官委议员 9组织促优先委任女性 (Johor adds 5 appointed assemblymen; 9 organisations urge priority appointment of women)", 7 May 2026, https://johor.chinapress.com.my/20260507/%E6%9F%94%E5%B7%9E%E5%A2%9E5%E5%AE%98%E5%A7%94%E8%AE%AE%E5%91%98-9%E7%BB%84%E7%BB%87%E4%BF%83%E4%BC%98%E5%85%88%E5%A7%94%E4%BB%BB%E5%A5%B3%E6%80%A7/ [S]
+34. The Star, "Closing the political gender gap", 20 Sep 2025, https://www.thestar.com.my/news/nation/2025/09/20/closing-the-political-gender-gap [S]
+35. Pahang State Government, "Lima ADUN Lantikan Selesai Angkat Sumpah Hari Ini", 5 Sep 2024, https://www.pahang.gov.my/pahang/resources/PDF/Berita/2024/September/%285hb%29_LIMA_ADUN_LANTIKAN_SELESAI_ANGKAT_SUMPAH_HARI_INI.pdf [PRIMARY]
 
 ## CONTRADICTIONS
 

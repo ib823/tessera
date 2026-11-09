@@ -634,6 +634,7 @@ secondary.
 48. **[S]** Greenpeace Malaysia et al., "Civil society calls for ban on data centres near residential areas", 24 Jul 2026. https://www.greenpeace.org/malaysia/press/83760/civil-society-calls-for-ban-on-data-centres-near-residential-areas/
 49. **[S]** Malay Mail (citing *The Straits Times*), "Johor's data centre surge unsettles Iskandar Puteri residents, some consider selling homes", 3 Nov 2026. https://www.malaymail.com/amp/news/malaysia/2026/11/03/johors-data-centre-surge-unsettles-iskandar-puteri-residents-some-consider-selling-homes/241761
 50. **[S]** Matheson LLP, "Large Energy Users Connection Policy Decision", Feb 2026 (summary of CRU2025236 thresholds). https://media.matheson.com/wp-content/uploads/2026/02/Large-Energy-Users-Connection-Policy-Decision-3.pdf
+51. Parliament of Malaysia, "Penyata Rasmi Dewan Rakyat (Hansard), 28 Oktober 2026", 28 Oct 2026, https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-28?search=undefined [PRIMARY]
 
 **Primary count: 8 confirmed** ([S2], [S3], [S4], [S5], [S7], [S8], [S9], [S10]). The floor is met
 thinly:

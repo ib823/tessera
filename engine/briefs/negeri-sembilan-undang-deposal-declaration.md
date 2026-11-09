@@ -109,8 +109,8 @@ Per T4A Accuracy Standard: "Claims about 3R-adjacent topics require two independ
 13. Buletin TV3, "Pengisytiharan Mubarak tidak sah, bukan lagi Undang Luak Sungai Ujong", 20 Apr 2026, https://www.buletintv3.my/nasional/pengisytiharan-mubarak-tidak-sah-bukan-lagi-undang-luak-sungai-ujong/
 
 **Tier D — Historical context**
-14. NS Government Official Portal, "Institusi Diraja", https://www.ns.gov.my/en/institusi-diraja
-15. Majlis Datuk² Undang Sungai Ujong (official Undang SU portal), "Perlembagaan Persekutuan & Undang-Undang Tubuh Negeri Sembilan", https://majlisdatolsu.gov.my/perlembagaan-persekutuan-undang-undang-tubuh-negeri-sembilan/
+14. NS Government Official Portal, "Institusi Diraja", https://www.ns.gov.my/en/institusi-diraja [PRIMARY]
+15. Majlis Datuk² Undang Sungai Ujong (official Undang SU portal), "Perlembagaan Persekutuan & Undang-Undang Tubuh Negeri Sembilan", https://majlisdatolsu.gov.my/perlembagaan-persekutuan-undang-undang-tubuh-negeri-sembilan/ [PRIMARY]
 16. Wikipedia, "Muhriz of Negeri Sembilan" — secondary, cites primary: bio, 2008 proclamation by Undang SU Datuk Klana Petra Datuk Mubarak Dohak at 3:45pm Istana Besar Seri Menanti.
 17. Wikipedia, "Yang di-Pertuan Besar of Negeri Sembilan" — secondary, for historical line of YDPBs.
 18. Wikipedia (Bahasa), "Undang (Negeri Sembilan)" — secondary, for structure of Undang Yang Empat.
@@ -118,9 +118,12 @@ Per T4A Accuracy Standard: "Claims about 3R-adjacent topics require two independ
 20. Malaysia-Today (historical), "Tuanku Muhriz is 11th Yang Di Pertuan Besar of Negri Sembilan", 29 Dec 2008, https://www.malaysia-today.net/2008/12/29/tuanku-muhriz-is-11th-yang-di-pertuan-besar-of-negri-sembilan/
 
 **Tier E — Analysis / academic**
-21. Sinar Harian, "Undang-Undang Tubuh Negeri Sembilan: Tuanku atau Undang Yang Empat lebih berkuasa?" — constitutional analysis of the power balance between YDPB and Undang Yang Empat.
+21. Sinar Harian, "Undang-Undang Tubuh Negeri Sembilan: Tuanku atau Undang Yang Empat lebih berkuasa?" — constitutional analysis of the power balance between YDPB and Undang Yang Empat. https://www.sinarharian.com.my/article/776431
 22. The Star, "Four Undang dispute MB's claim over Mubarak's removal", 21 Apr 2026, https://www.thestar.com.my/news/nation/2026/04/21/four-undang-dispute-mbs-claim-over-mubaraks-removal
 23. The Star, "Who are the four Undang embroiled in Negri Sembilan royal controversy?", 20 Apr 2026, https://www.thestar.com.my/news/nation/2026/04/20/who-are-the-four-undang-embroiled-in-negri-sembilan-royal-controversy
+24. State Government of Negeri Sembilan (State Legal Adviser reprint; OCR copy via Sinar Project), "The Laws of the Constitution of Negeri Sembilan, 1959 (incorporating all amendments up to 9 October 2003), Article X", 9 Oct 2003, https://govdocs.sinarproject.org/documents/state-governments/negeri-sembilan/thelawsoftheconstitutionofns1959-ocr.pdf [PRIMARY]
+25. Malay Mail, "Simplified: Why Tuanku Muhriz is legally still the Negeri Sembilan ruler, and why Undangs' attempt to 'sack' him is invalid, experts say", 5 May 2026, https://www.malaymail.com/news/malaysia/2026/05/05/simplified-why-tuanku-muhriz-is-legally-still-the-negeri-sembilan-ruler-and-why-undangs-attempt-to-sack-him-is-invalid-experts-say/218741 [S]
+26. New Straits Times, "Declaration to remove Negri Sembilan ruler invalid, says Telaga Undang", 20 Apr 2026, https://www.nst.com.my/amp/news/nation/2026/04/1421713/declaration-remove-negri-sembilan-ruler-invalid-says-telaga-undang [S]
 
 ## CONTRADICTIONS
 

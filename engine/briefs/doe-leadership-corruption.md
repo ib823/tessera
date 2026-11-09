@@ -129,3 +129,5 @@ January 2025 – April 2026
 23. The Star, "Nearly 800,000 in Johor hit by water cuts due to Sg Johor pollution," Nov 1, 2025
 24. The Edge Malaysia, "When rivers fail, who goes to jail?" Mar 2026
 25. NST, "DoE deputy director-general charged with RM21k graft," Apr 3, 2026
+26. Commissioner of Law Revision, Malaysia, "Malaysian Anti-Corruption Commission Act 2009 (Act 694), reprint as at 1 Jan 2022", 1 Jan 2022, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf [PRIMARY]
+27. Attorney General's Chambers, "Penal Code (Act 574), updated text as at 31 May 2023", 31 May 2023, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf [PRIMARY]

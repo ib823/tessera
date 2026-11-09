@@ -158,25 +158,25 @@ Aim for three fact cards on Economic / Regional / Critical lenses; the analogy c
 
 1. **USTR / Bloomberg, 15 May 2026 — Greer interview, "double-digit billion purchases of ags over the next three years, per year"** — https://www.bloomberg.com/news/articles/2026-05-15/us-expects-dramatic-agricultural-purchases-by-china-greer-says (PRIMARY: direct USTR-attributed remarks).
 
-2. **DTN Progressive Farmer — "USTR: China Pledges to Buy Billions in Ag Products, 'Soybeans and Everything Else'", 15 May 2026** — https://www.dtnpf.com/agriculture/web/ag/columns/washington-insider/article/2026/05/15/ustr-china-pledges-buy-billions-ag (PRIMARY: extended Greer quotes and product list).
+2. **DTN Progressive Farmer — "USTR: China Pledges to Buy Billions in Ag Products, 'Soybeans and Everything Else'", 15 May 2026** — https://www.dtnpf.com/agriculture/web/ag/columns/washington-insider/article/2026/05/15/ustr-china-pledges-buy-billions-ag (PRIMARY: extended Greer quotes and product list). [S]
 
-3. **Farmdoc Daily / University of Illinois — "U.S.–China Soybean Deal: Comparing Past Export Levels and Global Market Impacts", November 2025** — https://farmdocdaily.illinois.edu/2025/11/us-china-soybean-deal-comparing-past-export-levels-and-global-market-impacts.html (PRIMARY: peer-research analysis with citations).
+3. **Farmdoc Daily / University of Illinois — "U.S.–China Soybean Deal: Comparing Past Export Levels and Global Market Impacts", November 2025** — https://farmdocdaily.illinois.edu/2025/11/us-china-soybean-deal-comparing-past-export-levels-and-global-market-impacts.html (PRIMARY: peer-research analysis with citations). [S]
 
 4. **MPOC / Minister Johari Abdul Ghani — "Johari: Drop in Palm Oil Exports to China Due to Price, Not Geopolitics", 27 November 2025** — https://www.mpoc.org.my/johari-drop-in-palm-oil-exports-to-china-due-to-price-not-geopolitics/ (PRIMARY: on-record cabinet minister statement, attributed source).
 
-5. **Al Jazeera — "'Never mess it up': What Xi and Trump said on day one of Beijing talks", 14 May 2026** — https://www.aljazeera.com/news/2026/5/14/never-mess-it-up-what-xi-and-trump-said-on-day-one-of-beijing-talks (PRIMARY: direct quotes from Xi and Trump).
+5. **Al Jazeera — "'Never mess it up': What Xi and Trump said on day one of Beijing talks", 14 May 2026** — https://www.aljazeera.com/news/2026/5/14/never-mess-it-up-what-xi-and-trump-said-on-day-one-of-beijing-talks (PRIMARY: direct quotes from Xi and Trump). [S]
 
-6. **CNN Politics — "May 14–15, 2026 — Trump's China state visit and meetings with Xi Jinping" (live blog)** — https://www.cnn.com/politics/live-news/trump-china-visit-xi-meeting-hnk (PRIMARY: contemporaneous live reporting with named US/Chinese officials).
+6. **CNN Politics — "May 14–15, 2026 — Trump's China state visit and meetings with Xi Jinping" (live blog)** — https://www.cnn.com/politics/live-news/trump-china-visit-xi-meeting-hnk (PRIMARY: contemporaneous live reporting with named US/Chinese officials). [S]
 
-7. **American Soybean Association — "Soybeans Without a Buyer: The Export Gap Hurting U.S. Farms", August 2025 (PDF)** — https://soygrowers.com/wp-content/uploads/2025/08/China-Trade-Paper-FINAL.pdf (PRIMARY: industry-association policy paper with USDA-derived export data).
+7. **American Soybean Association — "Soybeans Without a Buyer: The Export Gap Hurting U.S. Farms", August 2025 (PDF)** — https://soygrowers.com/wp-content/uploads/2025/08/China-Trade-Paper-FINAL.pdf (PRIMARY: industry-association policy paper with USDA-derived export data). [S]
 
-8. **MarketScreener / Datamarnews — "China's COFCO seals billion-dollar Brazilian soybean, palm oil deals", November 2025** — https://datamarnews.com/noticias/cofco-signs-multi-billion-agreements-to-purchase-soybeans-and-palm-oil-from-brazil/ (PRIMARY: deal-announcement reporting with named counterparties).
+8. **MarketScreener / Datamarnews — "China's COFCO seals billion-dollar Brazilian soybean, palm oil deals", November 2025** — https://datamarnews.com/noticias/cofco-signs-multi-billion-agreements-to-purchase-soybeans-and-palm-oil-from-brazil/ (PRIMARY: deal-announcement reporting with named counterparties). [S]
 
-9. **Farm Policy News, University of Illinois — "China buys more Brazil soybeans as US purchases stall", November 2025** — https://farmpolicynews.illinois.edu/2025/11/china-buys-more-brazil-soybeans-as-us-purchases-stall/ (PRIMARY: corroborating analysis with trade-data citations).
+9. **Farm Policy News, University of Illinois — "China buys more Brazil soybeans as US purchases stall", November 2025** — https://farmpolicynews.illinois.edu/2025/11/china-buys-more-brazil-soybeans-as-us-purchases-stall/ (PRIMARY: corroborating analysis with trade-data citations). [S]
 
-10. **The Edge Malaysia / MPOB monthly release — "MPOB: Malaysia's palm oil stocks up 1.71% to 2.30 mil tonnes in April 2026", 12 May 2026** — https://theedgemalaysia.com/node/803054 (PRIMARY: direct MPOB monthly statistical release).
+10. **The Edge Malaysia / MPOB monthly release — "MPOB: Malaysia's palm oil stocks up 1.71% to 2.30 mil tonnes in April 2026", 12 May 2026** — https://theedgemalaysia.com/node/803054 (PRIMARY: direct MPOB monthly statistical release). [S]
 
-11. **Ainvest analysis — "Malaysia's Rising Palm Oil Export Duty and Its Implications for Commodity Investors", August 2025** — https://www.ainvest.com/news/malaysia-rising-palm-oil-export-duty-implications-commodity-investors-2508/ + Palm Oil Magazine, "Malaysia Keeps CPO Export Tax at 10% for May, Lowers Reference Price", 25 April 2025 — https://www.palmoilmagazine.com/market/2025/04/25/malaysia-keeps-cpo-export-tax-at-10-for-may-lowers-reference-price/ (PRIMARY-derived: Malaysian Customs gazette-derived rates).
+11. **Ainvest analysis — "Malaysia's Rising Palm Oil Export Duty and Its Implications for Commodity Investors", August 2025** — https://www.ainvest.com/news/malaysia-rising-palm-oil-export-duty-implications-commodity-investors-2508/ + Palm Oil Magazine, "Malaysia Keeps CPO Export Tax at 10% for May, Lowers Reference Price", 25 April 2025 — https://www.palmoilmagazine.com/market/2025/04/25/malaysia-keeps-cpo-export-tax-at-10-for-may-lowers-reference-price/ (PRIMARY-derived: Malaysian Customs gazette-derived rates). [S]
 
 12. **USDA FAS — Biofuels Annual, Jakarta Indonesia ID2024-0018 (PDF)** — https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Biofuels+Annual_Jakarta_Indonesia_ID2024-0018.pdf + Business-Indonesia.org B40 mandate article (PRIMARY: USDA attaché report, source-citable PDF).
 
@@ -192,7 +192,7 @@ Aim for three fact cards on Economic / Regional / Critical lenses; the analogy c
 
 17. **Mondaq / Aqran Vijandran — "EUDR 2025–2026: What Malaysian Palm-Oil, Rubber and Wood Exporters Must Know"** — https://www.mondaq.com/compliance/1640946/eudr-20252026-what-malaysian-palmoil-rubber-and-wood-exporters-must-know-and-do-next + EU Commission environment.ec.europa.eu Regulation page.
 
-18. **Malay Mail — "Anwar: Malaysia's local currency trade with China, Thailand and Indonesia surges to RM82b…", 24 March 2026** — https://www.malaymail.com/news/malaysia/2026/03/24/anwar-malaysias-local-currency-trade-with-china-thailand-and-indonesia-surges-to-rm82b-cutting-reliance-on-us-dollar/213702 (Primary-cited PMX statement).
+18. **Malay Mail — "Anwar: Malaysia's local currency trade with China, Thailand and Indonesia surges to RM82b…", 24 March 2026** — https://www.malaymail.com/news/malaysia/2026/03/24/anwar-malaysias-local-currency-trade-with-china-thailand-and-indonesia-surges-to-rm82b-cutting-reliance-on-us-dollar/213702 (Primary-cited PMX statement). [S]
 
 19. **Free Malaysia Today — "Clarify scope, review mechanism of US trade deal, think tank tells Miti", 9 November 2025** — https://www.freemalaysiatoday.com/category/nation/2025/11/09/clarify-scope-review-mechanism-of-us-trade-deal-think-tank-tells-miti (Secondary: independent media + Malaysian think tank source).
 

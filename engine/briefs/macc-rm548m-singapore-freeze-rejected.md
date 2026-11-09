@@ -193,20 +193,20 @@ PRIMARY (statutes, court records, agency actions):
 - **[S5] Income Tax Act 1967, s.113** — investigation basis (official statute).
 - **[S7] MACC Act 2009, s.36(2)** — Na'imah's charge (official statute) + KL
   Sessions Court charge record, 23 Jan 2024.
-- **[S1 court decision] KL High Court, 22 May 2026, JC Mohd Arief Emran Arifin**
+- **[S1 court decision] KL High Court, 22 May 2026, JC Mohd Arief Emran Arifin** [S]
   — dismissal + s.53 threshold quote (written grounds pending). Reported:
   FMT (BM), https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/05/22/sprm-akan-rayu-keputusan-mahkamah-tolak-perintah-larangan-akses-rm548-juta
-- **[S2] Bernama** — MACC to file appeal; 14-day window.
+- **[S2] Bernama** — MACC to file appeal; 14-day window. [S]
   https://bernama.com/misc/rss/news.php?id=2560454
-- **[S6] Bernama** — MACC identifies >RM3b in 11 countries.
+- **[S6] Bernama** — MACC identifies >RM3b in 11 countries. [S]
   https://www.bernama.com/en/news.php?id=2444251
-- **[S9] Daim posthumous acquittal** (KL Sessions Court, Nov 2024) — court
+- **[S9] Daim posthumous acquittal** (KL Sessions Court, Nov 2024) — court [S]
   record via Malay Mail https://www.malaymail.com/news/malaysia/2024/11/20/after-daims-death-prosecutors-drop-asset-declaration-charge/157423 ; SCMP https://www.scmp.com/week-asia/politics/article/3287337/
-- **[S10] AGC appeal in Na'imah asset-declaration case** (Sep 2025) — The Star
+- **[S10] AGC appeal in Na'imah asset-declaration case** (Sep 2025) — The Star [S]
   https://www.thestar.com.my/news/nation/2025/09/23/agc-appeals-high-court-decision-in-naimahs-asset-declaration-case
 - **[S11] UK freeze £132m / RM758.2m** (KL High Court, 3 Jun 2025) — court order
   via The Malaysian Reserve / The Edge.
-- **[S12] Ilham Tower seizure + s.56 forfeiture filing** — The Edge
+- **[S12] Ilham Tower seizure + s.56 forfeiture filing** — The Edge [S]
   https://theedgemalaysia.com/node/762321 ; Malay Mail (5 Jun 2025 seizure)
   https://www.malaymail.com/news/malaysia/2025/06/05/macc-seizes-ilham-tower-again-after-getting-approval-linked-to-daims-family-assets/179367
 

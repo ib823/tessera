@@ -60,13 +60,13 @@ Security, Governance, Legal
 
 ## SOURCES
 1. Washington Post, "Malaysia to charge 2 former generals" Jan 21, 2026
-2. Washington Post, "Second former Malaysian general charged" Jan 23, 2026
+2. Washington Post, "Second former Malaysian general charged" Jan 23, 2026 https://www.washingtonpost.com/world/2026/01/23/malaysian-military-procurement-corruption/9c04a91e-f848-11f0-9ceb-4c268b6e1369_story.html
 3. ABC News, "Malaysia to charge 2 former generals in high-profile military corruption case" Jan 2026
-4. JURIST, "Second former Malaysia general charged with corruption" Jan 2026
-5. SCMP, "How Malaysia's military tender scandal is bringing 'opaque' defence deals to light" Jan 2026
+4. JURIST, "Second former Malaysia general charged with corruption" Jan 2026 https://www.jurist.org/news/2026/01/second-former-malaysia-general-charged-for-corruption-in-defense-contracts/
+5. SCMP, "How Malaysia's military tender scandal is bringing 'opaque' defence deals to light" Jan 2026 https://www.scmp.com/week-asia/economics/article/3339190/how-malaysias-military-tender-scandal-bringing-opaque-defence-deals-light
 6. SCMP, "King warns of wider corruption 'hunt' as military scandal rocks Malaysia" Jan 2026
-7. SCMP, "Malaysia arrests ex-army chief and his wives" Jan 2026
-8. Asia Sentinel, "Malaysia Weathers Another Military Scandal" Jan 2026
+7. SCMP, "Malaysia arrests ex-army chief and his wives" Jan 2026 https://www.scmp.com/news/asia/southeast-asia/article/3339115/malaysia-arrests-ex-army-chief-and-his-wives-corruption-investigation
+8. Asia Sentinel, "Malaysia Weathers Another Military Scandal" Jan 2026 https://www.asiasentinel.com/p/malaysia-another-military-scandal
 9. GlobalPost, "Malaysia Takes On Its Military As Corruption Scandals Rivet the Country" Jan 28, 2026
 10. Published issue 0154 — RM9B for ships that don't exist (LCS)
 11. Published issue 1805 — LCS programme wastes RM6.1B

@@ -97,14 +97,14 @@ Avoid using all three of Political/Legal/Governance on the fact cards if Governa
 1. Federal Constitution of Malaysia, Articles 49A, 51, 54(1), 55(3). https://www.commonlii.org/my/legis/const/1957/4.html
 2. Constitution (Amendment) (No. 3) Act 2022 — Federal Gazette (in force 5 Oct 2022).
 3. *PKR v Zuraida Kamaruddin*, High Court ruling 23 June 2023; Court of Appeal ruling 11 Dec 2024 (See Mee Chun JCA presiding). Reported via The Edge Malaysia and Sinar Daily — quoted with citation.
-4. Election Commission GE15 results (19 Nov 2022) for Pandan (P099) and Setiawangsa (P116). https://electiondata.my/elections
+4. Election Commission GE15 results (19 Nov 2022) for Pandan (P099) and Setiawangsa (P116). https://electiondata.my/elections [S]
 5. Registrar of Societies (RoS) — registration record for Parti Bersama Malaysia, 2 Dec 2016, Penang. (Confirmed in NST 17 May 2026 reporting and Wikipedia *Malaysian United Party*.)
 
 **Primary (legal commentary on the constitutional provisions):**
-6. Malaysian Bar — *By-elections and the Constitution*. https://www.malaysianbar.org.my/legal/general_news/by_elections_and_the_constitution.html (confirms the 6-months → 2-years amendment of Art. 54(1)).
-7. Rahmat Lim & Partners — *Anti-party hopping laws introduced in Federal Constitution of Malaysia*. https://www.rahmatlim.com/publication/articles/22605/
+6. Malaysian Bar — *By-elections and the Constitution*. https://www.malaysianbar.org.my/legal/general_news/by_elections_and_the_constitution.html (confirms the 6-months → 2-years amendment of Art. 54(1)). [S]
+7. Rahmat Lim & Partners — *Anti-party hopping laws introduced in Federal Constitution of Malaysia*. https://www.rahmatlim.com/publication/articles/22605/ [S]
 8. *Malaysia's Anti-hopping Law: Some Loopholes to Mull Over* — Fulcrum (ISEAS).
-9. Thomas Philip Advocates — *Power to the Political Parties: An Overview of the current Legal Developments Affecting Elected Representatives Post-GE15*. https://www.thomasphilip.com.my/articles/power-to-the-political-parties-an-overview-of-the-current-legal-developments-affecting-elected-representatives-post-ge15/
+9. Thomas Philip Advocates — *Power to the Political Parties: An Overview of the current Legal Developments Affecting Elected Representatives Post-GE15*. https://www.thomasphilip.com.my/articles/power-to-the-political-parties-an-overview-of-the-current-legal-developments-affecting-elected-representatives-post-ge15/ [S]
 
 **Secondary (news, multi-spectrum):**
 10. **The Star** (mainstream / centrist) — *Speaker to decide on Pandan, Setiawangsa seats, by-elections unlikely after three-year mark, says Loke*, 17 May 2026. https://www.thestar.com.my/news/nation/2026/05/17/speaker-to-decide-on-pandan-setiawangsa-seats-by-elections-unlikely-after-three-year-mark-says-loke
@@ -113,13 +113,14 @@ Avoid using all three of Political/Legal/Governance on the fact cards if Governa
 13. **The Star** — *We're not party-hopping, say Rafizi and Nik Nazmi on move to Parti Bersama Malaysia*, 17 May 2026.
 14. **New Straits Times** (government-aligned) — *[UPDATED] Rafizi, Nik Nazmi take over Parti Bersama Malaysia*, 17 May 2026. https://www.nst.com.my/news/nation/2026/05/1441564/
 15. **Malay Mail** (independent) — coverage of the MACC ARM investigation, 4 May / 7 May / 14 May 2026.
-16. **Malaysiakini** (independent) — *Rafizi and Nik Nazmi quitting PKR, vacating seats, to head Bersama party*, 17 May 2026.
-17. **FMT** (independent) — *Rafizi, Nik Nazmi say quitting seats to avoid anti-hopping law implications*, 17 May 2026.
+16. **Malaysiakini** (independent) — *Rafizi and Nik Nazmi quitting PKR, vacating seats, to head Bersama party*, 17 May 2026. https://www.malaysiakini.com/news/775373
+17. **FMT** (independent) — *Rafizi, Nik Nazmi say quitting seats to avoid anti-hopping law implications*, 17 May 2026. https://www.freemalaysiatoday.com/category/nation/2026/05/17/rafizi-nik-nazmi-say-quitting-party-to-avoid-anti-hopping-law-implications
 18. **Borneo Post** (East Malaysia, independent) — *Rafizi Ramli, Nik Nazmi quit PKR, will vacate Pandan and Setiawangsa seats*, 17 May 2026.
 19. **The Vibes** (independent) — *Rafizi returns to anti-graft agency as RM1.1 billion probe deepens*, May 2026.
-20. **Bloomberg** (international) — *Malaysia's Anti-Graft Agency Summons Ex-Minister Rafizi Over Arm Deal Probe*, 3 May 2026.
-21. **US News / AP wire** (international) — *Two Former Malaysian Ministers Announce Resignations from Parliament Seats*, 17 May 2026.
+20. **Bloomberg** (international) — *Malaysia's Anti-Graft Agency Summons Ex-Minister Rafizi Over Arm Deal Probe*, 3 May 2026. https://www.bloomberg.com/news/articles/2026-05-03/malaysia-s-anti-graft-agency-to-quiz-ex-minister-over-arm-deal
+21. **US News / AP wire** (international) — *Two Former Malaysian Ministers Announce Resignations from Parliament Seats*, 17 May 2026. https://www.usnews.com/news/world/articles/2026-05-17/two-former-malaysian-ministers-announce-resignations-from-parliament-seats
 22. **Berita Harian / Harian Metro** (Malay-language, government-aligned BH; mainstream HM) — corroborating Malay-language coverage.
+24. Court of Appeal Malaysia (via eLaw), "Zuraida Kamaruddin v Saifuddin Nasution Ismail (as Secretary General, Parti Keadilan Rakyat), Civil Appeal No. W-02(NCVC)(W)-1094-07-2023, [2025] 1 MLRA 907", 11 Dec 2024, https://www.elaw.my/JE/01/JE_2024_51.html [PRIMARY]
 23. **Wikipedia** — *Malaysian United Party*; *Nik Nazmi*; *Results of the 2022 Malaysian general election by parliamentary constituency*. Secondary; used only to cross-check primary-source claims (registration date, majority figures).
 
 ## CONTRADICTIONS

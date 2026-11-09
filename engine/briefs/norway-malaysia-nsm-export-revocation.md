@@ -150,7 +150,7 @@ Secondary: **Economic** (~RM550m sunk, RM11bn programme exposure, opportunity co
 ## SOURCES (Numbered, primary in **bold**)
 
 **Primary — Norwegian government / regulator**
-1. **Norwegian Ministry of Foreign Affairs (UD) spokesperson statement (Guri Solberg), 14 May 2026**, reproduced in Breaking Defense and Euronews — https://breakingdefense.com/2026/05/malaysia-looks-for-further-clarifications-from-norway-after-naval-strike-missile-order-falters/
+1. **Norwegian Ministry of Foreign Affairs (UD) spokesperson statement (Guri Solberg), 14 May 2026**, reproduced in Breaking Defense and Euronews — https://breakingdefense.com/2026/05/malaysia-looks-for-further-clarifications-from-norway-after-naval-strike-missile-order-falters/ [S]
 2. **Regjeringen.no — "What is Norway's export control system?"** — https://www.regjeringen.no/en/topics/foreign-affairs/export-control/om-eksportkontroll/export-control/id2008483/
 3. **Regjeringen.no — Regulations relating to the export of defence-related products, dual-use items, technology and services (Eksportforskriften, current consolidated text)** — https://www.regjeringen.no/en/documents/regulations-relating-to-the-export-of-defence-related-products-dual-use-items-technology-and-services/id3119510/
 4. **Meld. St. 29 (2024–2025) — Norwegian exports of defence-related products in 2024** — https://www.regjeringen.no/contentassets/73846097b4414c919d7e9aa141b0c7d2/meld-st-29_eksportkontroll.pdf
@@ -160,15 +160,15 @@ Secondary: **Economic** (~RM550m sunk, RM11bn programme exposure, opportunity co
 
 **Primary — Malaysian government / parliamentary / judicial**
 8. **PAC Chairman Wong Kah Woh — Media Statement 4 August 2022, parlimen.gov.my** — https://www.parlimen.gov.my/images/webuser/Pac/kenyataan%20media/2022/BI/Kenyataan%20Media%20YB%20Pengerusi%20PAC%2004%20Ogos%20(Pembentangan%20Laporan%20Perolehan%20Kapal%20LCS%20TLDM)%20_%20eng.pdf
-9. **JKSTUPKK forensic report (Ambrin Buang chair), declassified 17 August 2022, reported via Malaysiakini** — https://www.malaysiakini.com/news/632417
-10. **AGC representation rejection re: Tan Sri Ahmad Ramli CBT charges, Feb 2024** — https://www.malaymail.com/news/malaysia/2024/02/05/lcs-project-agc-rejects-representation-submitted-by-former-boustead-naval-shipyard-md-to-drop-rm21m-cbt-charges/116503
-11. **High Court ruling on dementia defence, July 2024** — https://www.malaymail.com/news/malaysia/2024/07/26/boustead-shipyard-ex-md-loses-bid-to-dismiss-rm21m-cbt-charges-from-lcs-scandal-over-moderate-dementia/145011
-12. **Sessions Court DNAA, March 2025** — https://www.thestar.com.my/news/nation/2025/03/13/ex-navy-chief-unfit-for-trial-in-lcs-case
-13. **The Malaysian Reserve — "BHIC's Lumut Naval Shipyard stake disposal finalised for RM1," 3 April 2024** — https://themalaysianreserve.com/2024/04/03/bhics-lumut-naval-shipyard-stake-disposal-finalised-for-rm1/
+9. **JKSTUPKK forensic report (Ambrin Buang chair), declassified 17 August 2022, reported via Malaysiakini** — https://www.malaysiakini.com/news/632417 [S]
+10. **AGC representation rejection re: Tan Sri Ahmad Ramli CBT charges, Feb 2024** — https://www.malaymail.com/news/malaysia/2024/02/05/lcs-project-agc-rejects-representation-submitted-by-former-boustead-naval-shipyard-md-to-drop-rm21m-cbt-charges/116503 [S]
+11. **High Court ruling on dementia defence, July 2024** — https://www.malaymail.com/news/malaysia/2024/07/26/boustead-shipyard-ex-md-loses-bid-to-dismiss-rm21m-cbt-charges-from-lcs-scandal-over-moderate-dementia/145011 [S]
+12. **Sessions Court DNAA, March 2025** — https://www.thestar.com.my/news/nation/2025/03/13/ex-navy-chief-unfit-for-trial-in-lcs-case [S]
+13. **The Malaysian Reserve — "BHIC's Lumut Naval Shipyard stake disposal finalised for RM1," 3 April 2024** — https://themalaysianreserve.com/2024/04/03/bhics-lumut-naval-shipyard-stake-disposal-finalised-for-rm1/ [S]
 
 **Primary — contract / industry**
 14. **Kongsberg press release, "Contract worth Euro 124M for NSM missiles to the Royal Malaysian Navy," April 2018** — https://www.kongsberg.com/kda/news/news-archive/2018/contract-worth-euro-124m-for-nsm-missiles-to-the-royal-malaysian-navy/
-15. **Army Recognition — "Australia Reinforces Allied Indo-Pacific Deterrence with Local Production of Norwegian NSM and JSM Missiles," 14 May 2026** — https://www.armyrecognition.com/news/army-news/2026/australia-reinforces-allied-indo-pacific-deterrence-with-local-production-of-norwegian-nsm-and-jsm-missiles
+15. **Army Recognition — "Australia Reinforces Allied Indo-Pacific Deterrence with Local Production of Norwegian NSM and JSM Missiles," 14 May 2026** — https://www.armyrecognition.com/news/army-news/2026/australia-reinforces-allied-indo-pacific-deterrence-with-local-production-of-norwegian-nsm-and-jsm-missiles [S]
 
 **Primary — international legal / multilateral**
 16. **EU Council Common Position 2008/944/CFSP** — EUR-Lex CELEX:32008E0944 — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008E0944
@@ -181,7 +181,7 @@ Secondary: **Economic** (~RM550m sunk, RM11bn programme exposure, opportunity co
 21. USNI News — "Norway Cancels Kongsberg-Malaysian Government Contract for Naval Strike Missiles, Launchers," 14 May 2026 — https://news.usni.org/2026/05/14/norway-cancels-kongsberg-malaysian-government-contract-for-naval-strike-missiles-launchers
 22. Naval Today — "Norway halts NSM missile exports to Malaysia, triggering diplomatic backlash," 14 May 2026 — https://www.navaltoday.com/2026/05/14/norway-halts-nsm-missile-exports-to-malaysia-triggering-diplomatic-backlash/
 23. Breaking Defense (Reuters/NTB pickup) — https://breakingdefense.com/2026/05/malaysia-looks-for-further-clarifications-from-norway-after-naval-strike-missile-order-falters/
-24. Defence Security Asia — "Norway Blocks Malaysia's Naval Strike Missile Deal While Powering Australia's Missile Boom," 14 May 2026 — https://defencesecurityasia.com/en/norway-blocks-malaysia-naval-strike-missile-australia-missile-boom-indo-pacific-shock/
+24. Defence Security Asia — "Norway Blocks Malaysia's Naval Strike Missile Deal While Powering Australia's Missile Boom," 15 May 2026 — https://defencesecurityasia.com/en/norway-blocks-malaysia-naval-strike-missile-australia-missile-boom-indo-pacific-shock/
 25. Malaysian Defence — "Norway Bans Deliveries of NSM to Malaysia, Killing the Contract..." — https://www.malaysiandefence.com/norway-bans-deliveries-of-nsm-to-malaysia-killing-the-contract-exocet-or-atmaca-then/
 26. Naval News, LIMA 2019, "Kongsberg Started Production of NSM Anti-Ship Missiles for Malaysia" — https://www.navalnews.com/event-news/lima-2019/2019/04/lima-2019-kongsberg-started-production-of-nsm-anti-ship-missiles-for-malaysia/
 

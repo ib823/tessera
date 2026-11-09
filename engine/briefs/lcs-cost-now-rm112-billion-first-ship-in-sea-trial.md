@@ -130,6 +130,7 @@ Edition 4 of issue 1805:
 20. **[S]** The Vibes, "LCS 1 risks handover without full combat capability, readiness could slip to 2035", 5 Oct 2026. https://www.thevibes.com/articles/news/127998/lcs-1-risks-handover-without-full-combat-capability-readiness-could-slip-to-2035
 21. **[S]** Malay Mail, "LCS 1 delivery pushed to April 2027, Defence Ministry issues damages notice to Lunas, says minister", 8 Oct 2026. https://www.malaymail.com/news/malaysia/2026/10/08/lcs-1-delivery-pushed-to-april-2027-defence-ministry-issues-damages-notice-to-lunas-says-minister/238155
 22. **[S]** The Vibes, "First LCS delivery pushed to April 2027 as commitment misses target", 27 Oct 2026. https://www.thevibes.com/articles/news/128834/first-lcs-delivery-pushed-to-april-2027-as-five-ship-project-lags-target
+23. Malaysiakini, "RM6 bil for six patrol vessels", 5 Feb 2011, https://www.malaysiakini.com/news/155285 [S]
 
 ## BACKFILL NOTES
 
