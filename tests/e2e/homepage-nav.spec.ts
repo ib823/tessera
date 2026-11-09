@@ -1,4 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
 
 /**
  * Homepage, navigation, prompts and layout (UX audit H-1 to H-9, R-1, R-3,
@@ -294,6 +295,17 @@ test.describe('Static pages', () => {
     await expect(nav.getByRole('link', { name: 'Library' })).toHaveAttribute('href', '/?view=library');
     await expect(page.getByRole('link', { name: 'Back to Today' })).toHaveAttribute('href', '/');
     await expect(page.locator('[role="dialog"][aria-label="Dossier table of contents"]')).toHaveAttribute('inert', '');
+  });
+
+  test('dossier and topic pages have no serious or critical axe violations', async ({ page }) => {
+    for (const path of ['/dossier/D001', '/topic/legal']) {
+      await page.goto(path);
+      const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      const blocking = results.violations
+        .filter((v) => v.impact === 'serious' || v.impact === 'critical')
+        .flatMap((v) => v.nodes.map((n) => `${v.id}: ${n.target.join(' ')}`));
+      expect(blocking, path).toEqual([]);
+    }
   });
 
   test('reading-path segments are at least 24px tall (X-6)', async ({ page }) => {
