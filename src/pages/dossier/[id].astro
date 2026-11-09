@@ -157,8 +157,11 @@ const jsonLd = {
   </head>
 
   <body>
+    <a href="#dossier-main" class="dossier-skip">Skip to content</a>
     <DossierSiteNav />
-    <DossierReader dossier={dossier} client:load />
+    <div id="dossier-main" tabindex="-1">
+      <DossierReader dossier={dossier} client:load />
+    </div>
     <DossierSiteFooter />
   </body>
 </html>

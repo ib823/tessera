@@ -1,3 +1,11 @@
+<script lang="ts" module>
+  // Latest mode renders in pages so the first paint stays light. How far a
+  // reader has expanded it outlives the component: on desktop the reader
+  // replaces Today, and Back must return to the same list (playbook §06).
+  const LATEST_PAGE = 20;
+  const latestLimitMemory = new Map<string, number>();
+</script>
+
 <script lang="ts">
   import { onMount } from 'svelte';
   import { opinionLabel, opinionColor as issueOpinionColor } from '../data/issue-types';
@@ -9,6 +17,7 @@
   import { absoluteDate, isWithinDays, newestDate, relativeDate } from '../lib/relative-date';
   import { publishedDay } from '../lib/issue-meta';
   import { buildTopicClusters, primaryLens, topicHref } from '../lib/topics';
+  import { inAppClick, issueHref } from '../lib/link-open';
 
   // Featured dossiers — surfaces the new long-form product on the
   // homepage with a distinctive burgundy-accented card. The list is
@@ -143,9 +152,8 @@
     return briefingIsRecent ? 'Start with the lead, then move into the briefing.' : 'Start with the lead, then pick a strong place to start.';
   });
 
-  // Latest mode renders in pages so the first paint stays light.
-  const LATEST_PAGE = 20;
-  let latestLimit = $state(LATEST_PAGE);
+  // svelte-ignore state_referenced_locally — idPrefix is fixed per instance
+  let latestLimit = $state(latestLimitMemory.get(idPrefix) ?? LATEST_PAGE);
   let latestVisible = $derived(latestIssues.slice(0, latestLimit));
 
   function readLabel(id: string): string {
@@ -266,7 +274,7 @@
               {@const lens = primaryLens(issue.cards)}
               {@const state = readLabel(issue.id)}
               <li>
-                <button class="latest-item" onclick={() => onOpenIssue?.(issue)}>
+                <a class="latest-item" href={issueHref(issue.id)} onclick={inAppClick(() => onOpenIssue?.(issue))}>
                   <div class="latest-meta">
                     {@render dateStamp(publishedDay(issue))}
                     {#if lens}<span class="latest-topic">{lens}</span>{/if}
@@ -275,12 +283,12 @@
                   <div class="latest-headline balance-title">{issue.headline}</div>
                   <div class="latest-context pretty-copy">{issue.context}</div>
                   <div class="latest-score" style="color:{opinionColor(issue.opinionShift)};"><span class="sr-only">Opinion Shift </span>{issue.opinionShift} <span class="latest-score-label">{opinionLabel(issue.opinionShift)}</span></div>
-                </button>
+                </a>
               </li>
             {/each}
           </ol>
           {#if latestIssues.length > latestLimit}
-            <button class="latest-more" onclick={() => { latestLimit += LATEST_PAGE; }}>Show {Math.min(LATEST_PAGE, latestIssues.length - latestLimit)} more</button>
+            <button class="latest-more" onclick={() => { latestLimit += LATEST_PAGE; latestLimitMemory.set(idPrefix, latestLimit); }}>Show {Math.min(LATEST_PAGE, latestIssues.length - latestLimit)} more</button>
           {/if}
         </section>
       {:else}
@@ -288,9 +296,10 @@
         <article class="hero-entry" aria-labelledby={`${idPrefix}-lead-issue-title`}>
         <!-- Named by its visible content (WCAG 2.5.3): no aria-label, and the art is
              decorative here because the headline is already part of the name. -->
-        <button
+        <a
           class="hero-card"
-          onclick={() => onOpenIssue?.(topIssue)}
+          href={issueHref(topIssue.id)}
+          onclick={inAppClick(() => onOpenIssue?.(topIssue))}
         >
           {#if topIssue.hasImage}
             <div class="hero-art">
@@ -318,7 +327,7 @@
               <div class="hero-cta">Start reading <span aria-hidden="true">→</span></div>
             </div>
           </div>
-        </button>
+        </a>
         </article>
       {/if}
 
@@ -356,7 +365,7 @@
         <section class="today-panel" aria-labelledby={`${idPrefix}-continue-reading-heading`}>
           <div class="panel-kicker">Continue Reading</div>
           <h2 id={`${idPrefix}-continue-reading-heading`} class="sr-only">Continue Reading</h2>
-            <button class="panel-issue" onclick={() => onOpenIssue?.(continueIssue)}>
+            <a class="panel-issue" href={issueHref(continueIssue.id)} onclick={inAppClick(() => onOpenIssue?.(continueIssue))}>
               {@render dateStamp(publishedDay(continueIssue))}
               <div class="panel-issue-title balance-title">{continueIssue.headline}</div>
               <div class="panel-issue-copy pretty-copy">Next: angle {nextContinueAngle}. Pick up where the argument starts to turn.</div>
@@ -366,7 +375,7 @@
                 </div>
                 <span>Angle {nextContinueAngle} next</span>
               </div>
-            </button>
+            </a>
         </section>
         {/if}
 
@@ -383,14 +392,14 @@
           <div class="panel-subtitle">{briefingIsRecent ? `Published in the last ${RECENT_DAYS} days.` : 'The biggest gaps between headline and story.'} About {briefingMinutes} minutes.</div>
           <div class="brief-list">
             {#each briefingIssues as issue (issue.id)}
-              <button class="brief-item" onclick={() => onOpenIssue?.(issue)}>
+              <a class="brief-item" href={issueHref(issue.id)} onclick={inAppClick(() => onOpenIssue?.(issue))}>
                 <div class="brief-score" style="color:{opinionColor(issue.opinionShift)};" title="{issue.opinionShift} — {opinionLabel(issue.opinionShift)}: Reading only the headline would hide about {issue.opinionShift}% of the story">{issue.opinionShift}</div>
                 <div class="brief-copy">
                   {@render dateStamp(publishedDay(issue))}
                   <div class="brief-headline balance-title">{issue.headline}</div>
                   <div class="brief-context pretty-copy">{issue.context}</div>
                 </div>
-              </button>
+              </a>
             {/each}
           </div>
         </section>
@@ -421,14 +430,14 @@
           <div id={`${idPrefix}-topic-panel`} class="topic-issues" hidden={!activeCluster}>
             {#if activeCluster}
               {#each activeTopicIssues as issue (issue.id)}
-                <button class="topic-issue" onclick={() => onOpenIssue?.(issue)}>
+                <a class="topic-issue" href={issueHref(issue.id)} onclick={inAppClick(() => onOpenIssue?.(issue))}>
                   <span class="topic-issue-score" style="color:{issueOpinionColor(issue.opinionShift)};">{issue.opinionShift}</span>
                   <div class="topic-issue-copy">
                     {@render dateStamp(publishedDay(issue))}
                     <div class="topic-issue-headline balance-title">{issue.headline}</div>
                     <div class="topic-issue-context pretty-copy">{issue.context}</div>
                   </div>
-                </button>
+                </a>
               {/each}
               <a class="topic-all-link" href={topicHref(activeCluster.topic)}>All {activeCluster.count} {activeCluster.topic} issues <span aria-hidden="true">→</span></a>
             {/if}
@@ -448,6 +457,7 @@
           <a href="/privacy">Privacy</a>
           <a href="/corrections">Corrections</a>
           <a href="/contact">Contact</a>
+          <a href="/accessibility">Accessibility</a>
           <a href="/rss.xml" type="application/rss+xml">RSS</a>
         </nav>
       </footer>
@@ -770,11 +780,22 @@
   .hero-card,
   .panel-issue,
   .brief-item {
+    display: block;
     width: 100%;
     border: none;
     cursor: pointer;
     font: inherit;
     text-align: left;
+  }
+
+  /* Issue entries are links (playbook §06): keep them looking like cards. */
+  .hero-card,
+  .panel-issue,
+  .brief-item,
+  .topic-issue,
+  .latest-item {
+    color: inherit;
+    text-decoration: none;
   }
 
   .hero-card {

@@ -17,12 +17,14 @@ const staticRoutes = [
 ];
 
 // Trust and policy pages: privacy notice (English, and Malay at /privasi),
-// corrections policy and contact. src/pages/{privacy,privasi,corrections,contact}.astro.
+// corrections policy, contact and accessibility.
+// src/pages/{privacy,privasi,corrections,contact,accessibility}.astro.
 staticRoutes.push(
   { loc: '/privacy', lastmod: null, priority: '0.4' },
   { loc: '/privasi', lastmod: null, priority: '0.4' },
   { loc: '/corrections', lastmod: null, priority: '0.4' },
   { loc: '/contact', lastmod: null, priority: '0.4' },
+  { loc: '/accessibility', lastmod: null, priority: '0.4' },
 );
 
 // Same publish rule as getAllDossiers() in src/data/dossiers.ts, which

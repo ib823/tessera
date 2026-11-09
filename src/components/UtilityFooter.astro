@@ -1,7 +1,7 @@
 ---
 /**
  * Footer for pages that use UtilityHeader: links to the trust and policy
- * pages (corrections, contact, privacy in English and Malay) alongside the
+ * pages (corrections, contact, privacy in English and Malay, accessibility) alongside the
  * existing About, Disclaimer, Verify and Reading progress pages.
  */
 interface Props {
@@ -17,6 +17,7 @@ const links: Array<{ href: string; label: string; lang?: string }> = [
   { href: '/contact', label: 'Contact' },
   { href: '/privacy', label: 'Privacy' },
   { href: '/privasi', label: 'Privasi (Bahasa Malaysia)', lang: 'ms' },
+  { href: '/accessibility', label: 'Accessibility' },
   { href: '/disclaimer', label: 'Disclaimer' },
   { href: '/verify', label: 'Verify' },
   { href: '/progress', label: 'Reading progress' },

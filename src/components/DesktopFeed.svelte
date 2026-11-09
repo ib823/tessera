@@ -157,7 +157,8 @@
       e.stopPropagation();
       focusedIndex = Math.max(focusedIndex - 1, 0);
       scrollToFocused();
-    } else if (e.key === 'Enter' && focusedIndex >= 0) {
+    } else if (e.key === 'Enter' && focusedIndex >= 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
+      // Modified Enter falls through to the row's link (new tab or window).
       e.preventDefault();
       e.stopPropagation();
       onSelectIssue(flatIssues[focusedIndex]);

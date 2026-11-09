@@ -16,6 +16,7 @@
   import SurfaceNav from './SurfaceNav.svelte';
   import TodayView from './TodayView.svelte';
   import SearchEmpty from './SearchEmpty.svelte';
+  import SearchFilters from './SearchFilters.svelte';
   import MobileBrowser from './MobileBrowser.svelte';
   import InsightReader from './InsightReader.svelte';
   import { countHighlights, readIssues, getSavedPosition, savePosition, clearPosition, getReactions, reactions, computeAffinity, scoreIssue } from '../stores/reader';
@@ -28,7 +29,7 @@
   import { initInstallState, canInstall as canInstallCheck, isIOS as isIOSCheck, triggerInstall, dismissInstall, onInstallChange } from '../lib/install-state';
   import AngleCode from './AngleCode.svelte';
   import { choosePrompt, countCompleted, markPromptSpent, markWelcomeShown, promptSpent, sharedLanding, welcomeSeenOnEarlierVisit, welcomeSession, type RelationshipPrompt } from '../lib/prompt-budget';
-  import { buildTopicClusters } from '../lib/topics';
+  import { buildTopicClusters, primaryLens } from '../lib/topics';
 
   interface FeedIssue {
     id: string;
@@ -41,6 +42,7 @@
     context: string;
     stageScores?: { pa: number; ba: number; fc: number; sr: number; af?: number; ct?: number };
     finalScore?: number;
+    type?: 'Analysis' | 'Explainer' | 'Fact-check';
     cards: Array<{ t: string; lens?: string }>;
   }
 
@@ -149,6 +151,9 @@
   let allowBrowserPullRefresh = $state(false);
   let searchQuery = $state('');
   let searchActive = $state(false);
+  // Search filters (playbook screen 08): story type and topic (primary lens).
+  let searchType = $state('');
+  let searchTopic = $state('');
   let surfaceMode = $state<SurfaceMode>(initialSurfaceMode());
   let libraryMode = $state<LibraryMode>(initialLibraryMode());
 
@@ -271,6 +276,63 @@
   function onSearchClear() {
     searchQuery = '';
     searchActive = false;
+    searchType = '';
+    searchTopic = '';
+  }
+
+  // The search lives in the address (?q=, &type=, &topic=) so it survives a
+  // refresh, a shared link and Back from an issue (playbook screen 08).
+  function searchFromLocation(): { q: string; type: string; topic: string } {
+    const params = new URL(window.location.href).searchParams;
+    return { q: (params.get('q') ?? '').trim(), type: params.get('type') ?? '', topic: params.get('topic') ?? '' };
+  }
+
+  // Set while a search from the address waits for the index, so the URL
+  // keeps its ?q= in the meantime.
+  let pendingSearchRestore = false;
+
+  function applySearchFromLocation() {
+    const { q, type, topic } = searchFromLocation();
+    searchType = q ? type : '';
+    searchTopic = q ? topic : '';
+    if (q.length < 2) {
+      pendingSearchRestore = false;
+      searchQuery = '';
+      searchActive = false;
+      return;
+    }
+    searchActive = true;
+    urlSearch = new URLSearchParams({ q, ...(type ? { type } : {}), ...(topic ? { topic } : {}) }).toString();
+    // Results derive from the index, which is not reactive: set the query
+    // once it has loaded.
+    if (searchReady()) { searchQuery = q; return; }
+    pendingSearchRestore = true;
+    void loadSearchIndex().then(() => { pendingSearchRestore = false; searchQuery = q; });
+  }
+
+  // Debounced, so typing does not flood history.replaceState.
+  let urlSearch = $state('');
+  $effect(() => {
+    // Read every input first so the effect keeps tracking them.
+    const q = isSearching ? searchQuery.trim() : '';
+    const type = searchType;
+    const topic = searchTopic;
+    if (pendingSearchRestore) return;
+    const params = new URLSearchParams();
+    if (q) {
+      params.set('q', q);
+      if (type) params.set('type', type);
+      if (topic) params.set('topic', topic);
+    }
+    const next = params.toString();
+    if (next === urlSearch) return;
+    const timer = setTimeout(() => { urlSearch = next; }, next && urlSearch ? 300 : 0);
+    return () => clearTimeout(timer);
+  });
+
+  function withSearch(url: string): string {
+    if (!urlSearch) return url;
+    return `${url}${url.includes('?') ? '&' : '?'}${urlSearch}`;
   }
 
   // Restore position: initialIssueId (from URL) takes priority, then saved position
@@ -393,13 +455,20 @@
     }
     return issues;
   });
-  let filteredIssues = $derived.by(() => {
+  let searchMatches = $derived.by(() => {
     const source = scopedIssues;
     if (!searchQuery.trim() || !isSearching) return source;
     const ids = doSearch(searchQuery);
     if (ids.length === 0) return [];
     const idSet = new Set(ids);
     return source.filter(i => idSet.has(i.id));
+  });
+  let searchFiltered = $derived(isSearching && (searchType !== '' || searchTopic !== ''));
+  let filteredIssues = $derived.by(() => {
+    if (!searchFiltered) return searchMatches;
+    return searchMatches.filter((i) =>
+      (!searchType || (i.type ?? 'Analysis') === searchType) &&
+      (!searchTopic || primaryLens(i.cards) === searchTopic));
   });
   let searchResultCount = $derived(isSearching ? filteredIssues.length : -1);
   let searchStatusMessage = $derived.by(() => {
@@ -491,7 +560,8 @@
 
   function syncSurfaceUrl(mode: SurfaceMode, historyMode: Exclude<HistoryMode, 'none'> = 'replace', nextLibraryMode: LibraryMode = libraryMode) {
     if (typeof window === 'undefined') return;
-    const target = surfaceUrl(mode, nextLibraryMode);
+    const base = surfaceUrl(mode, nextLibraryMode);
+    const target = isSearching || pendingSearchRestore ? withSearch(base) : base;
     const current = window.location.pathname + window.location.search;
     const state = { surface: mode, libraryMode: nextLibraryMode };
     if (historyMode === 'push' && current !== target) {
@@ -516,9 +586,14 @@
   let docScrollWas = false;
   let docScrollSettled = false;
   let savedDocScrollY = 0;
-  $effect(() => {
+  // A pre-effect, so the position is read before the DOM swaps Today out. On
+  // desktop the reader replaces Today; read afterwards, scrollY has already
+  // collapsed to 0 and Back returned readers to the top (playbook §06).
+  $effect.pre(() => {
     const on = docScroll;
     if (typeof document === 'undefined') return;
+    // Read before the class change below can alter the document's layout.
+    const currentY = window.scrollY;
     document.documentElement.classList.toggle('app-doc-scroll', on);
     if (!docScrollSettled) {
       // First pass: leave the browser's own scroll restoration alone.
@@ -530,7 +605,7 @@
     docScrollWas = on;
     if (!on) {
       // Leaving Today: keep its place, start the next surface at the top.
-      savedDocScrollY = window.scrollY;
+      savedDocScrollY = currentY;
       window.scrollTo(0, 0);
     } else {
       const y = savedDocScrollY;
@@ -606,6 +681,9 @@
     surfaceMode = currentState.surfaceMode;
     libraryMode = currentState.libraryMode;
     if (!window.location.pathname.startsWith('/issue/')) {
+      // Read ?q= before the canonical rewrite below, which keeps it only
+      // once the search is known.
+      applySearchFromLocation();
       syncSurfaceUrl(surfaceMode, 'replace', libraryMode);
     }
     window.addEventListener('resize', debouncedResize);
@@ -720,10 +798,9 @@
       const nextState = locationAppState();
       const issueMatch = window.location.pathname.match(/^\/issue\/([^/]+)$/);
 
-      searchActive = false;
-      searchQuery = '';
-
       if (issueMatch) {
+        searchActive = false;
+        searchQuery = '';
         const issueId = issueMatch[1];
         surfaceMode = e.state?.surface === 'library' ? 'library' : nextState.surfaceMode;
         libraryMode = normalizeLibraryMode(e.state?.libraryMode ?? nextState.libraryMode);
@@ -739,6 +816,7 @@
       activeFullIssue = null;
       surfaceMode = nextState.surfaceMode;
       libraryMode = nextState.libraryMode;
+      applySearchFromLocation();
     }
     window.addEventListener('popstate', onPopState);
 
@@ -945,6 +1023,8 @@
     leaveLanding();
     searchQuery = '';
     searchActive = false;
+    searchType = '';
+    searchTopic = '';
     surfaceMode = mode;
     libraryMode = nextLibraryMode;
     if (activeIssue || activeFullIssue) {
@@ -1012,7 +1092,7 @@
 
   $effect(() => {
     if (typeof window === 'undefined' || activeIssue || activeFullIssue || window.location.pathname.startsWith('/issue/')) return;
-    const target = surfaceUrl(surfaceMode, libraryMode);
+    const target = withSearch(surfaceUrl(surfaceMode, libraryMode));
     if (window.location.pathname + window.location.search !== target) {
       history.replaceState({ surface: surfaceMode, libraryMode }, '', target);
     } else if (history.state?.surface !== surfaceMode || history.state?.libraryMode !== libraryMode) {
@@ -1152,6 +1232,9 @@
       {/if}
     {#if isSearching}
       <div class="sr-only" role="status" aria-live="polite">{searchStatusMessage}</div>
+      <div class="mobile-search-filters">
+        <SearchFilters matches={searchMatches} type={searchType} topic={searchTopic} onType={(v) => { searchType = v; }} onTopic={(v) => { searchTopic = v; }} variant="scroll" />
+      </div>
     {/if}
     {#if surfaceMode === 'today' && !isSearching}
       <div class="mobile-today-panel">
@@ -1389,7 +1472,10 @@
           <div style="flex:1;overflow-y:auto;padding:32px 24px;">
             <div style="margin-bottom:24px;">
               <div style="font-size: var(--text-xs);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-tertiary);">Search results</div>
-              <p style="font-size: var(--text-body);color:var(--text-secondary);margin:8px 0 0;">{searchResultCount} result{searchResultCount !== 1 ? 's' : ''} for "{searchQuery.trim()}"</p>
+              <p data-search-count style="font-size: var(--text-body);color:var(--text-secondary);margin:8px 0 0;">{searchResultCount} result{searchResultCount !== 1 ? 's' : ''} for "{searchQuery.trim()}"</p>
+              <div style="margin-top:16px;">
+                <SearchFilters matches={searchMatches} type={searchType} topic={searchTopic} onType={(v) => { searchType = v; }} onTopic={(v) => { searchTopic = v; }} />
+              </div>
             </div>
             <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:20px;">
               {#each sortedIssues as issue, i}
@@ -1398,7 +1484,10 @@
             </div>
           </div>
         {:else if isSearching}
-          <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:32px;">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:32px;">
+            {#if searchFiltered}
+              <SearchFilters matches={searchMatches} type={searchType} topic={searchTopic} onType={(v) => { searchType = v; }} onTopic={(v) => { searchTopic = v; }} />
+            {/if}
             <SearchEmpty query={searchQuery} topics={searchTopics} onClear={onSearchClear} onBrowseAll={browseAllFromSearch} />
           </div>
         {:else}
@@ -1729,6 +1818,10 @@
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .mobile-search-filters {
+    flex-shrink: 0;
   }
 
   .mobile-search-empty {

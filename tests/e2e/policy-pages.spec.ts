@@ -3,16 +3,16 @@ import AxeBuilder from '@axe-core/playwright';
 
 /**
  * Trust and policy pages: the privacy notice in English (/privacy) and Malay
- * (/privasi), the corrections policy and the contact page. Each must load,
- * carry one H1, link to the others, and pass axe with no serious or critical
- * violations. The existing utility pages must link to all four, and the
- * sitemap must list them.
+ * (/privasi), the corrections policy, the contact page and the accessibility
+ * statement. Each must load, carry one H1, link to the others, and pass axe
+ * with no serious or critical violations. The existing utility pages must
+ * link to all of them, and the sitemap must list them.
  *
  * Selectors are hrefs, roles and repo-owned data-* attributes, which
  * scripts/stealth.mjs keeps.
  */
 
-const POLICY_PAGES = ['/privacy', '/privasi', '/corrections', '/contact'] as const;
+const POLICY_PAGES = ['/privacy', '/privasi', '/corrections', '/contact', '/accessibility'] as const;
 
 test.use({ serviceWorkers: 'block' });
 
@@ -91,7 +91,7 @@ test('/contact states ownership and funding, and points errors to /corrections',
 });
 
 for (const path of ['/about', '/disclaimer', '/progress']) {
-  test(`${path} links to all four policy pages`, async ({ page }) => {
+  test(`${path} links to every policy page`, async ({ page }) => {
     await page.goto(path);
     for (const target of POLICY_PAGES) {
       await expect(page.locator(`a[href="${target}"]`).first(), `${path} links to ${target}`).toBeAttached();
@@ -111,7 +111,7 @@ test('/disclaimer points its Privacy and Data section to the full notice', async
   await expect(section.locator('a[href="/privacy"]')).toHaveCount(1);
 });
 
-test('sitemap lists the four policy pages', async ({ request, baseURL }) => {
+test('sitemap lists the policy pages', async ({ request, baseURL }) => {
   const response = await request.get(`${baseURL}/sitemap.xml`);
   expect(response.ok()).toBeTruthy();
   const xml = await response.text();
