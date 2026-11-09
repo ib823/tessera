@@ -153,6 +153,7 @@ Recovery is also decelerating sharply. The bulk landed in 2020 (RM14.26B, Goldma
 
 29. Transparency International Malaysia, "Joint Press Statement: 1MDB & DoJ — What is our next course of action?" https://www.transparency.org.my/pages/news-and-events/press-releases/joint-press-statement-1mdb-doj-what-is-our-next-course-of-action
 31. Bernama, "Govt Recovers RM31.2 Bln Related To 1MDB, SRC As Of September 2025", 27 Nov 2025, https://www.bernama.com/en/news.php?id=2496226 [S]
+32. Free Malaysia Today, "RM31.2bil in assets linked to 1MDB, SRC recovered", 27 Nov 2025, https://www.freemalaysiatoday.com/category/nation/2025/11/27/rm31-2bil-in-assets-linked-to-1mdb-src-recovered [S]
 30. Wikipedia, "1MDB scandal" (cross-reference only for timeline). https://en.wikipedia.org/wiki/1Malaysia_Development_Berhad_scandal
 
 ## CONTRADICTIONS

@@ -99,3 +99,5 @@ Social, Economic, Legal
 19. Penang CM, "Penang to continue annual aid for Tamil vernacular school infrastructure" Dec 2024
 20. Sabah Media, "KPM perlu gandakan usaha jadikan Sekolah Kebangsaan sebagai sekolah pilihan utama" Jul 2024
 21. The Star, "Education Ministry urged to relocate Tamil schools to highly-populated zones", 5 Mar 2025, https://www.thestar.com.my/news/nation/2025/03/05/education-ministry-urged-to-relocate-tamil-schools-to-highly-populated-zones [S]
+22. Bernama, "528 SJKT Operating Nationwide With 78,501 Pupils", 22 Jun 2026, https://www.bernama.com/en/general/news.php?id=2571731 [S]
+23. Scoop (republished by Newswav), "Tamil schools, SJKC funding raised to RM80mil: Anwar", 5 Jan 2026, https://newswav.com/article/tamil-schools-sjkc-funding-raised-to-rm80mil-anwar-A2601_9ZuEt4 [S]

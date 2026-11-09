@@ -80,6 +80,8 @@ Rights, Economic, Social
 18. The Star, "Giving refugees the right to work a win-win for Malaysia, says MEF", 22 Jun 2025, https://www.thestar.com.my/news/nation/2025/06/22/giving-refugees-the-right-to-work-a-win-win-for-malaysia-says-mef [S]
 19. Cabinet Secretariat of the Republic of Indonesia (Setkab), "Presiden Jokowi Teken Perpres Penanganan Pengungsi Dari Luar Negeri", 16 Jan 2017, https://setkab.go.id/presiden-jokowi-teken-perpres-penanganan-pengungsi-dari-luar-negeri/ [PRIMARY]
 20. US Department of State (via ecoi.net), "2025 Trafficking in Persons Report: Malaysia", 29 Sep 2025, https://www.ecoi.net/en/document/2130677.html [PRIMARY]
+21. Bernama, "KDN To Conduct Refugee Registration To Enhance Data Accuracy", 8 Jul 2025, https://www.bernama.com/en/general/news.php?id=2442798 [S]
+22. Galen Centre for Health and Social Policy (OVA), "The Crushing Impact: A Shadow Over Childhood (Dr Musa Mohd Nordin, Prof Thiyagar Nadarajaw and Dr Hartini Zainudin)", 15 Dec 2025, https://ova.galencentre.org/?p=8671 [S]
 13. Published issue 1267 — Migrant worker exploitation affects 2.1M
 14. Published issue 1283 — Rohingya face 12 hate speech incidents monthly
 15. Published issue 0179 — Born here, documented nowhere (stateless children)

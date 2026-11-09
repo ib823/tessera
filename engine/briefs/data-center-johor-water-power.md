@@ -89,3 +89,5 @@ Technology, Environmental, Economic
 15. PM Anwar Ibrahim press conference statements, Mar 2026 — moratorium confirmation and ~2 year timeline
 16. New Straits Times, "[UPDATED] PM: Govt restricts non-AI data centre approvals over energy, water concerns", 24 Feb 2026, https://www.nst.com.my/amp/news/nation/2026/02/1384108/updated-pm-govt-restricts-non-ai-data-centre-approvals-over-energy [S]
 17. ASEAN+3 Macroeconomic Research Office (AMRO), "Malaysia Annual Consultation Report 2026, Selected Issue 1: Data Center Boom in Malaysia: Recent Developments and Challenges", May 2026, https://amro-asia.org/wp-content/uploads/2026/05/Malaysia-ACR-2026-SI-1-Data-Center-Boom-in-Malaysia.pdf [S]
+18. EdgeProp, "Malaysia's data centres using only half of approved power, water capacity, says minister", 25 Jun 2026, https://www.edgeprop.my/content/1916520/malaysia%E2%80%99s-data-centres-using-only-half-approved-power-water-capacity-says-minister [S]
+19. The Vibes, "Government shields households from data centre-driven utility costs", 4 Nov 2026, https://www.thevibes.com/articles/news/129179/government-shields-households-from-data-centre-driven-utility-costs [S]

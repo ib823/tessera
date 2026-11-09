@@ -65,6 +65,8 @@ Legal, Governance, Environmental
 14. Commissioner of Law Revision, Malaysia, "National Forestry Act 1984 (Act 313), Reprint incorporating all amendments up to 1 January 2006", 1 Jan 2006, https://lpr.adb.org/sites/default/files/resource/%5Bnid%5D/national-forestry-act-313-1-.pdf [PRIMARY]
 15. Malay Mail, "Report: Campsite in deadly Batang Kali landslide may have been inside 'no-go area'", 20 Jan 2023, https://www.malaymail.com/news/malaysia/2023/01/20/report-campsite-in-deadly-batang-kali-landslide-may-have-been-inside-no-go-area/51222 [S]
 16. Macaranga, "Forest Loss: Under Whose Watch?", 26 Nov 2020, https://www.macaranga.org/forest-loss-under-whose-watch/ [S]
+17. Malay Mail, "After fatal landslide, Penang admits DoE did not approve Tanjung Bungah project", 23 Oct 2017, https://www.malaymail.com/news/malaysia/2017/10/23/after-fatal-landslide-penang-admits-doe-did-not-approve-tanjung-bungah-proj/1493289 [S]
+18. Free Malaysia Today, "Heavy rain main cause of Batang Kali landslide, report finds", 17 Oct 2023, https://www.freemalaysiatoday.com/category/nation/2023/10/17/heavy-rain-main-cause-of-batang-kali-landslide-finds-report/ [S]
 
 ## CORRECTION (2026-11-09)
 
