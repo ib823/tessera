@@ -62,13 +62,14 @@ test.describe('Issue sources', () => {
     }
   });
 
-  test('an issue without a source list on file shows one quiet line', async ({ request, baseURL }) => {
-    // 0146 is published, not pre-pipeline, and has no brief linked in engine/output.
+  test('a backfilled issue renders its source list instead of the empty line', async ({ request, baseURL }) => {
+    // 0146 had no source list until the November 2026 backfill. Every published
+    // issue now has one, so the empty-line branch is covered by the unit test in
+    // src/lib/__tests__/issue-sources-state.test.ts.
     const response = await request.get(`${baseURL}/issue/0146`);
     expect(response.ok()).toBeTruthy();
     const html = await response.text();
-    expect(html).toContain('data-issue-sources-empty');
-    expect(html).toContain('Source list not yet on file for this issue.');
-    expect(html).not.toMatch(/data-source-entry\b/);
+    expect(html).not.toContain('data-issue-sources-empty');
+    expect(html).toMatch(/data-source-entry\b/);
   });
 });
