@@ -19,6 +19,14 @@
 
   let items = $derived(cardSources(card, entries));
   let compact = $derived(variant === 'mobile');
+  // Mobile shows publishers only; when two sources share one, the date tells them apart.
+  let repeated = $derived(
+    new Set(items.map(sourcePublisher).filter((by, k, all) => all.indexOf(by) !== k)),
+  );
+  function shortLabel(entry: SourceEntry): string {
+    const by = sourcePublisher(entry);
+    return repeated.has(by) && entry.date ? `${by}, ${entry.date}` : by;
+  }
 </script>
 
 {#if items.length > 0}
@@ -26,7 +34,7 @@
     <span class="card-sources-label">{items.length === 1 ? 'Source' : 'Sources'}</span>
     <ul class="card-sources-list">
       {#each items as entry (entry.n)}
-        {@const by = sourcePublisher(entry)}
+        {@const by = shortLabel(entry)}
         <li class="card-sources-item" data-source-n={entry.n}>
           <span class="card-sources-n" aria-hidden="true">{entry.n}</span>
           {#if compact}

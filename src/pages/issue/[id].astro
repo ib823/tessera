@@ -264,7 +264,9 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
     App's CSS under another name instead of sharing the homepage chunk.)
   */}
   <div id="main-content" tabindex="-1">
-    <App client:load initialIssueId={issue.id} initialIssue={issue} />
+    {/* sourceList rides along so a deep-linked reader shows the per-card and
+        end-of-issue sources, as the per-issue JSON does on in-app navigation. */}
+    <App client:load initialIssueId={issue.id} initialIssue={sourceList ? { ...issue, sourceList } : issue} />
   </div>
   <style is:global>
     /*

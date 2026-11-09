@@ -65,6 +65,8 @@ test.describe('Per-card sources', () => {
       await expect(links.nth(k)).toHaveAttribute('target', '_blank');
       await expect(links.nth(k)).toContainText(entry.title);
     }
+    // A deep link lands with the source list too, so the end-of-issue list renders.
+    await expect(page.locator('[data-issue-sources][data-variant="desktop"]')).toBeVisible();
   });
 
   test('mobile reader shows the publishers on the card, and a tap does not turn the card', async ({ browser }) => {
@@ -84,12 +86,14 @@ test.describe('Per-card sources', () => {
     }
 
     // The link opens the source in a new tab; the card stays where it was.
-    await context.route(/^https?:\/\/(?!localhost|127\.0\.0\.1)/, (route) => route.fulfill({ status: 204, body: '' }));
+    await context.route(/^https?:\/\/(?!localhost|127\.0\.0\.1)/, (route) => route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>source</title>' }));
     const [popup] = await Promise.all([context.waitForEvent('page'), links.first().tap()]);
-    await popup.waitForLoadState('domcontentloaded');
+    await popup.waitForURL(/^https?:\/\//);
     expect(new URL(popup.url()).host).toBe(new URL(fx.cited[0].url!).host);
     await popup.close();
-    await expect(page.getByText(fx.big, { exact: true })).toBeVisible();
+    // Still on the same card: the reader's card group keeps its label and text.
+    const cardGroup = page.getByRole('group', { name: new RegExp(`^Card ${fx.index + 1} of`) });
+    await expect(cardGroup.getByText(fx.big, { exact: true })).toBeVisible();
     await expect(block).toBeVisible();
     await context.close();
   });
