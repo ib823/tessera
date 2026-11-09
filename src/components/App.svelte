@@ -864,16 +864,19 @@
   let readerOriginRect: DOMRect | null = $state(null);
 
   // Fact graph loaded flag — triggers re-render of connection dots on feed cards
-  let graphLoaded = $state(false);
+  let graphLoaded = $state(isFactGraphLoaded());
 
   function issueHasConnections(id: string): boolean {
     if (!graphLoaded) return false;
     return getConnectionCount(id) >= 2;
   }
 
-  // Connections for the active issue — derived from fact graph
+  // Connections for the active issue, from the fact graph. getConnections()
+  // reads a module cache Svelte cannot track, so read graphLoaded here: a
+  // deep-linked issue opens before the graph arrives and must recompute
+  // when it lands, or "Tracked in" stays at 0.
   let activeConnections = $derived.by(() => {
-    if (!activeIssue) return [];
+    if (!activeIssue || !graphLoaded) return [];
     return getConnections(activeIssue.id);
   });
 

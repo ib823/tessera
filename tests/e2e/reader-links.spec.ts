@@ -261,3 +261,34 @@ test.describe('Share sheet on a touch screen', () => {
     expect(await copy.evaluate((el) => getComputedStyle(el).display)).toBe('flex');
   });
 });
+
+test.describe('Fact-graph connections on a deep link', () => {
+  test('"Tracked in" counts connections when the graph loads after the reader', async ({ page, baseURL }) => {
+    const graph = (await (await page.request.get(`${baseURL}/fact-graph.json`)).json()) as {
+      connections: Record<string, Array<{ id: string }>>;
+    };
+    const feed = (await (await page.request.get(`${baseURL}/issues-feed.json`)).json()) as Array<{ id: string }>;
+    const published = new Set(feed.map((i) => i.id));
+    const expected = (graph.connections[ISSUE] ?? []).filter((c) => published.has(c.id)).length;
+    expect(expected).toBeGreaterThan(0);
+
+    // Hold the graph back until the reader is on screen.
+    let release: () => void = () => {};
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    await page.route('**/fact-graph.json*', async (route) => {
+      await gate;
+      await route.continue();
+    });
+
+    // Card 2 is the first fact card, where the label shows on both readers.
+    await page.goto(`/issue/${ISSUE}#card-2`);
+    await waitForReader(page);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    release();
+
+    const label = `Tracked in ${expected} ${expected === 1 ? 'issue' : 'issues'}`;
+    await expect(page.getByRole('button', { name: new RegExp(`^${label}`) }).first()).toBeVisible();
+  });
+});
