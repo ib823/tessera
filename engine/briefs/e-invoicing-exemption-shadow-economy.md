@@ -101,3 +101,7 @@ Coverage is well-distributed; no single-spectrum dominance. The piece reads neit
 23. LoanStreet, "How Does Shadow Economy Affect Malaysia's Income Tax?" (industry-press analysis).
 24. MDEC, "SME Digitalisation Grant," https://mdec.my/en/digital-economy-initiatives/for-the-industry/sme-digitalisation-grant/ (PRIMARY).
 25. Zoomotech, "Why Custom Software Cost in Malaysia Varies: RM30k-RM300k" (industry estimate for SME ERP costs).
+26. The Star, "Over 1.1 million businesses to benefit from higher e-invoicing threshold, says LHDN", 30 August 2026, https://thestar.com.my/news/nation/2026/08/30/over-11-million-businesses-to-benefit-from-higher-e-invoicing-threshold-says-lhdn
+27. EY India, "CBIC lowers turnover threshold for e-invoicing to INR5 crores with effect from 1 August 2023", May 2023, https://www.ey.com/en_in/technical/alerts-hub/2023/05/cbic-lowers-turnover-threshold-for-e-invoicing-to-inr5-crores-with-effect-from-1-august-2023
+28. Inland Revenue Authority of Singapore (IRAS), "GST InvoiceNow Requirement", last updated 8 October 2026, https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-invoicenow-requirement [PRIMARY]
+29. Forvis Mazars Thailand, "Update on electronic tax filing and documentation in Thailand", 28 October 2019, https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/e-tax-filing-and-documentation-in-thailand

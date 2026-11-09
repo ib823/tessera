@@ -119,6 +119,8 @@ Per T4A Accuracy Standard: "Claims about 3R-adjacent topics require two independ
 
 **Tier E — Analysis / academic**
 21. Sinar Harian, "Undang-Undang Tubuh Negeri Sembilan: Tuanku atau Undang Yang Empat lebih berkuasa?" — constitutional analysis of the power balance between YDPB and Undang Yang Empat.
+22. The Star, "Four Undang dispute MB's claim over Mubarak's removal", 21 Apr 2026, https://www.thestar.com.my/news/nation/2026/04/21/four-undang-dispute-mbs-claim-over-mubaraks-removal
+23. The Star, "Who are the four Undang embroiled in Negri Sembilan royal controversy?", 20 Apr 2026, https://www.thestar.com.my/news/nation/2026/04/20/who-are-the-four-undang-embroiled-in-negri-sembilan-royal-controversy
 
 ## CONTRADICTIONS
 

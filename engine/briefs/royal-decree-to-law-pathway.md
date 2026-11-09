@@ -267,6 +267,7 @@ Religious lens deliberately *not* used as a card lens — keeps the editorial fr
 39. Wikipedia, "Lèse-majesté", https://en.wikipedia.org/wiki/L%C3%A8se-majest%C3%A9
 40. ARTICLE 19, "Blog: How lèse-majesté laws are eroding free speech in Southeast Asia", https://www.article19.org/resources/lese-majeste-laws-eroding-free-speech-southeast-asia/
 41. Foreign Policy Association, "Thailand's Lèse Majesté Law", https://fpa.org/thailands-lese-majeste-law/
+45. Free Malaysia Today, "280 reports lodged over insult to Selangor sultan", 4 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/04/280-reports-lodged-over-insult-to-selangor-sultan
 
 **Tier H — Adjacent T4A coverage**
 42. T4A issue 1980 — Zahid "firm action" speech. `src/data/issues/1980.json`; brief `engine/briefs/zahid-insults-firm-action-vs-existing-laws.md`.

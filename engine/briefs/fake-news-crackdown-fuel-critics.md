@@ -75,3 +75,4 @@ Rights, Political, Economic
 14. Published issue 1940 — Government surveillance powers expanded
 15. Published issue 1950 — Online Safety Act 2026
 16. Published issue 1952 — Fuel quota cut to 200 litres
+17. Ministry of Finance Malaysia (siaran media), "BUDI95 Diselaras Kepada 200 Liter Sebulan, Harga Kekal RM1.99 Seliter", 26 Mar 2026, https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter [PRIMARY]

@@ -106,3 +106,4 @@ Legal, Governance, Environmental
 16. Wikipedia, "Shah Alam Community Forest" (for cross-referencing)
 17. Malay Mail, "Selangor announces halt, will regazette Kuala Langat North Forest Reserve" Sep 8, 2021
 18. Malay Mail, "Abdul Rahman Sebli retires" Jul 25, 2025
+19. Malay Mail (Bernama), "Proposal to degazette Kuala Langat forest reserve gets 44,292 objections", 17 March 2020, https://www.malaymail.com/news/malaysia/2020/03/17/proposal-to-degazette-kuala-langat-forest-reserve-gets-44292-objections/1847538

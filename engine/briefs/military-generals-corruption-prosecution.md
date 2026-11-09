@@ -71,3 +71,6 @@ Security, Governance, Legal
 10. Published issue 0154 — RM9B for ships that don't exist (LCS)
 11. Published issue 1805 — LCS programme wastes RM6.1B
 12. Published issue 1208 — Corruption costs RM47B annually
+13. Malay Mail, "The MAF corruption crackdown in two weeks: From army chief to welfare fund boss, charges mount", 30 Jan 2026, https://www.malaymail.com/news/malaysia/2026/01/30/the-maf-corruption-crackdown-in-two-weeks-from-army-chief-to-welfare-fund-boss-charges-mount/207391
+14. Free Malaysia Today, "Ex-navy chief given DNAA for LCS-linked CBT charges", 12 Mar 2025, https://www.freemalaysiatoday.com/category/nation/2025/03/12/ex-navy-chief-given-dnaa-for-lcs-linked-cbt-charges
+15. Malay Mail, "King: Corruption in armed forces just tip of the iceberg, pledges continued action", 19 Jan 2026, https://malaymail.com/news/malaysia/2026/01/19/king-corruption-in-armed-forces-just-tip-of-the-iceberg-pledges-continued-action/205958

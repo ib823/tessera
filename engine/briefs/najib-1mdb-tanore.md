@@ -88,3 +88,4 @@ SOURCES GATHERED:
 28. Malay Mail — "Shafee says Najib spent like 'Robin Hood'" (https://www.malaymail.com/news/malaysia/2024/10/01/1mdb-trial-lawyer-shafee-says-najib-spent-like-robin-hood-not-on-himself/152228)
 29. JURIST — "Former Malaysian PM convicted over 1MDB" (https://www.jurist.org/news/2025/12/former-malaysian-prime-minister-najib-razak-convicted-over-1mdb-corruption-scandal/)
 30. Britannica — "Najib Razak trial outcome Dec 2025" (https://www.britannica.com/question/What-was-the-outcome-of-Najib-Razaks-trial-in-December-2025)
+31. The Star, "Recommendations for Political Financing Bill to be presented to parliamentary committee soon, says Azalina", 27 Oct 2026, https://www.thestar.com.my/news/nation/2026/10/27/recommendations-for-political-financing-bill-to-be-presented-to-parliamentary-committee-soon-says-azalina

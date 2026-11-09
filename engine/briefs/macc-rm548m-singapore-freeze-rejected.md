@@ -225,6 +225,8 @@ SECONDARY (spectrum / detail):
 - **[S14] The Edge** — Na'imah's lawyers allege MACC "harassment" over Ilham
   Tower. https://theedgemalaysia.com/node/758039
 - **[S9b] Daim death** — The Malaysian Reserve
+- Malay Mail, "High Court grants stay on £132 million asset freeze for widow of late Daim Zainuddin, pending further hearings", 23 June 2025, https://www.malaymail.com/news/malaysia/2025/06/23/high-court-grants-stay-on-132-million-asset-freeze-for-widow-of-late-daim-zainuddin-pending-further-hearings/181417
+- MalaysiaNow, "Court rules UK asset freeze linked to late Daim lapses", 8 July 2026, https://www.malaysianow.com/news/2026/07/08/court-rules-uk-asset-freeze-linked-to-late-daim-lapses
   https://themalaysianreserve.com/2024/11/13/daim-zainuddin-passed-away/
 
 _Sourcing note: ≥10 primary items (statutes + court records + agency
