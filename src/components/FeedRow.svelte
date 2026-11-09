@@ -2,6 +2,7 @@
   import { opinionLabel } from '../data/issue-types';
   import { formatIssueDate, publishedDay, updatedSinceRead } from '../lib/issue-meta';
   import { absoluteDate, relativeDate } from '../lib/relative-date';
+  import { inAppClick, issueHref } from '../lib/link-open';
 
   import type { IssueSummary } from '../lib/issues-loader';
   import type { ReadState } from '../stores/reader';
@@ -46,18 +47,21 @@
   let progressLabel = $derived(isStarted && progress > 0 ? `Resume from insight ${Math.min(progress + 1, totalAngles)} of ${totalAngles}` : (savedLabel || (isCompleted ? 'Done' : '')));
 </script>
 
-<button
-  type="button"
+<!-- A real link (playbook §06) that keeps the listbox option role: new tab,
+     copy link and crawlers follow the href; a plain click opens in place. -->
+<a
+  href={issueHref(issue.id)}
   class="feed-row"
   data-index={itemIndex}
-  onclick={onClick}
+  onclick={inAppClick(onClick)}
+  onkeydown={(e) => { if (e.key === ' ') { e.preventDefault(); onClick(); } }}
   onmouseenter={() => hovered = true}
   onmouseleave={() => hovered = false}
   role="option"
   aria-selected={isActive}
   tabindex={tabIndex}
   style="
-    width:100%;appearance:none;border:none;text-align:left;font:inherit;
+    width:100%;appearance:none;border:none;text-align:left;font:inherit;color:inherit;text-decoration:none;
     padding:12px 16px;cursor:pointer;
     border-bottom:1px solid var(--bg-sunken);
     background:{isActive ? 'rgba(25,113,194,0.05)' : (hovered ? 'var(--bg-sunken)' : 'transparent')};
@@ -96,7 +100,7 @@
       <span style="font-size:var(--text-micro);color:var(--text-muted);">{progressLabel}</span>
     {/if}
   </div>
-</button>
+</a>
 
 <style>
   .feed-row:focus-visible {

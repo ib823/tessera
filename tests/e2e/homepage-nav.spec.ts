@@ -62,7 +62,7 @@ test.describe('Today', () => {
 
     const briefing = page.locator('section[data-briefing]');
     await expect(briefing).toHaveCount(1);
-    const items = briefing.getByRole('button');
+    const items = briefing.getByRole('link');
     const itemCount = await items.count();
     expect(itemCount).toBeGreaterThan(0);
     await expect(briefing.locator('time[data-relative-date]')).toHaveCount(itemCount);
@@ -142,7 +142,7 @@ test.describe('Today', () => {
   test('footer links are 44px targets and include the trust pages (X-6)', async ({ page }) => {
     await openHome(page);
     const footer = page.getByRole('navigation', { name: 'Footer navigation' });
-    for (const name of ['How This Works', 'Disclaimer', 'Verify Content', 'Privacy', 'Corrections', 'Contact', 'RSS']) {
+    for (const name of ['How This Works', 'Disclaimer', 'Verify Content', 'Privacy', 'Corrections', 'Contact', 'Accessibility', 'RSS']) {
       const box = await footer.getByRole('link', { name, exact: true }).boundingBox();
       expect(box, name).toBeTruthy();
       expect(box!.height, name).toBeGreaterThanOrEqual(44);

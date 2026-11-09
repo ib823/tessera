@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import IssueImage from './IssueImage.svelte';
   import { absoluteDate, relativeDate } from '../lib/relative-date';
+  import { inAppClick, issueHref } from '../lib/link-open';
   import { opinionLabel } from '../data/issue-types';
   import { formatIssueDate, publishedDay, updatedSinceRead } from '../lib/issue-meta';
 
@@ -63,18 +64,16 @@
   });
 </script>
 
-<!-- svelte-ignore a11y_click_events_have_key_events — onkeydown handles Enter/Space below -->
-<!-- svelte-ignore a11y_no_static_element_interactions — role="article" + tabindex="0" make this interactive -->
+<!-- The headline is the card's link (playbook §06); its ::after covers the
+     whole card, so a click anywhere opens the issue. -->
+<!-- svelte-ignore a11y_no_static_element_interactions — hover only prefetches and lifts the card -->
 <div
   bind:this={cardEl}
-  onclick={onOpen}
+  class="desktop-card"
   onmouseenter={() => { hovered = true; onPrefetch?.(); }}
   onmouseleave={() => hovered = false}
-  onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(); } }}
-  role="article"
-  tabindex="0"
-  aria-label="{issue.headline}. Opinion Shift {issue.opinionShift}."
   style="
+    position:relative;
     background:{isCompleted ? 'var(--bg-elevated)' : 'var(--bg)'};
     border-radius:var(--radius-lg);padding:18px;cursor:pointer;
     box-shadow:{hovered ? '0 8px 30px rgba(0,0,0,0.08)' : '0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03)'};
@@ -114,7 +113,7 @@
   {/if}
 
   <!-- Headline -->
-  <h3 class="balance-title" title={issue.headline} style="font-size:var(--text-body);font-weight:{isCompleted ? 600 : 700};color:{isCompleted ? 'var(--text-tertiary)' : 'var(--text-primary)'};margin:10px 0 0;line-height:1.28;overflow-wrap:normal;">{issue.headline}</h3>
+  <h3 class="balance-title" title={issue.headline} style="font-size:var(--text-body);font-weight:{isCompleted ? 600 : 700};color:{isCompleted ? 'var(--text-tertiary)' : 'var(--text-primary)'};margin:10px 0 0;line-height:1.28;overflow-wrap:normal;"><a class="card-link" href={issueHref(issue.id)} onclick={inAppClick(onOpen)}>{issue.headline}</a></h3>
   <!-- Context -->
   <p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.55;margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">{issue.context}</p>
 
@@ -140,3 +139,23 @@
     <div style="margin-top:10px;height:3px;background:var(--status-green);border-radius: var(--radius-pill);opacity:0.3;"></div>
   {/if}
 </div>
+
+<style>
+  .card-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+  }
+  .card-link:focus-visible {
+    outline: none;
+  }
+  .card-link:focus-visible::after {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+</style>

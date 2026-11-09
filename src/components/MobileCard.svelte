@@ -7,6 +7,7 @@
 
   import IssueImage from './IssueImage.svelte';
   import { absoluteDate, relativeDate } from '../lib/relative-date';
+  import { inAppClick, issueHref } from '../lib/link-open';
   import type { IssueSummary } from '../lib/issues-loader';
   import type { ReadState } from '../stores/reader';
 
@@ -25,10 +26,6 @@
   let isStarted = $derived(readState?.state === 'started');
   let totalAngles = $derived(issue.cards.length || 6);
   let nextAngle = $derived(Math.min((readState?.progress ?? 0) + 1, totalAngles));
-
-  function handleKeydown(e: KeyboardEvent) {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(); }
-  }
 
   let label = $derived(opinionLabel(issue.opinionShift));
 
@@ -98,15 +95,14 @@
   }
 </script>
 
+<!-- The headline is the card's link (playbook §06); its ::after covers the
+     whole card, so a tap anywhere opens the issue and a long-press offers the
+     browser's link menu. -->
+<!-- svelte-ignore a11y_no_static_element_interactions — pointerdown only prefetches -->
 <div
   bind:this={cardEl}
   use:pressAction={{ scale: 0.97 }}
-  onclick={onOpen}
   onpointerdown={() => onPrefetch?.()}
-  onkeydown={handleKeydown}
-  role="article"
-  tabindex="0"
-  aria-label="{issue.headline}. Opinion Shift {issue.opinionShift}."
   class="mobile-card"
   style="background:var(--bg-elevated);box-shadow:0 2px 12px rgba(0,0,0,{isCompleted ? '0.03' : '0.06'});position:relative;"
 >
@@ -168,7 +164,7 @@
   </div>
 
   <!-- Headline -->
-  <h2 class="headline balance-title" style="color:{isCompleted ? 'var(--text-tertiary)' : 'var(--text-primary)'};font-weight:{isCompleted ? 600 : 700};">{issue.headline}</h2>
+  <h2 class="headline balance-title" style="color:{isCompleted ? 'var(--text-tertiary)' : 'var(--text-primary)'};font-weight:{isCompleted ? 600 : 700};"><a class="card-link" href={issueHref(issue.id)} onclick={inAppClick(onOpen)}>{issue.headline}</a></h2>
 
   <!-- Context -->
   <p class="context-text">{issue.context}</p>
@@ -210,6 +206,24 @@
     touch-action: pan-y;
     overflow-anchor: none;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  .card-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-xl);
+  }
+  .card-link:focus-visible {
+    outline: none;
+  }
+  .card-link:focus-visible::after {
+    outline: 2px solid var(--focus);
+    outline-offset: -2px;
   }
 
   .headline {

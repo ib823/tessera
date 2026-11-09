@@ -143,10 +143,16 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-image.png?v=${enco
     if ('startViewTransition' in document) {
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
       document.addEventListener('click', (e) => {
+        // Leave the click alone when the page already handled it (an issue
+        // link that opens in place) or the reader asked for a new tab, a new
+        // window or a download.
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
         const target = e.target;
         if (!(target instanceof Element)) return;
         const anchor = target.closest('a[href]');
         if (!anchor) return;
+        if ((anchor.getAttribute('target') ?? '') !== '' && anchor.getAttribute('target') !== '_self') return;
+        if (anchor.hasAttribute('download')) return;
         const href = anchor.getAttribute('href');
         if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) return;
         // Same-origin internal navigation only

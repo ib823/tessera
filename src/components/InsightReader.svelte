@@ -1142,7 +1142,10 @@
 
   <!-- Headline -->
   <div class="headline-area">
-    <h1 class="headline">{issue.headline}</h1>
+    <!-- On the first card the headline leads the page, as a reader arriving
+         from a shared link needs it (playbook §07). From card 2 on it shrinks
+         back to a label, as the deck below already gives way to the cards. -->
+    <h1 class="headline" class:headline--lead={current === 0 && !completed}>{issue.headline}</h1>
     <IssueMeta {issue} variant="mobile" />
     {#if issue.legacyAudit}
       <div class="legacy-caveat" role="note" aria-label="Pre-pipeline issue notice">
@@ -1500,6 +1503,19 @@
     line-height: 1.32;
     text-wrap: balance;
     hyphens: manual;
+  }
+  .headline--lead {
+    font-size: var(--text-subtitle);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: 8px;
+  }
+  @media (max-height: 600px) {
+    .headline--lead {
+      font-size: var(--text-body-lg);
+    }
   }
 
   /* A-2: the static article's deck, kept as card 1's summary. */

@@ -1,0 +1,53 @@
+---
+import PolicyLayout from '../layouts/PolicyLayout.astro';
+
+const EMAIL = 'thefourthangle@proton.me';
+---
+<PolicyLayout
+  title="Accessibility | The Fourth Angle"
+  description="How The Fourth Angle works with screen readers, keyboards, enlarged text and other settings, what we test, what we know falls short, and how to tell us about a problem."
+  heading="Accessibility"
+  reviewed="Last reviewed November 2026"
+  path="/accessibility"
+>
+  <p class="policy-lede">Everyone should be able to read T4A, whether you use a screen reader, a keyboard, magnification, high contrast or reduced motion.</p>
+
+  <section class="policy-card" aria-labelledby="aim">
+    <h2 id="aim">Our aim</h2>
+    <p>We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA across the whole site.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="use">
+    <h2 id="use">What you can do</h2>
+    <ul>
+      <li><strong>Enlarge the text.</strong> Text follows your browser's font size, and pages reflow to fit a screen 320 pixels wide without scrolling sideways.</li>
+      <li><strong>Use a keyboard.</strong> Every page starts with a "Skip to content" link, and the control in focus shows an outline. In an issue, the arrow keys move between cards: left and right on a phone layout, up and down (or J and K) on a wide screen.</li>
+      <li><strong>Choose light or dark.</strong> The site follows your device's setting, and supports Windows high-contrast themes.</li>
+      <li><strong>Reduce motion.</strong> If your device asks for less motion, we turn off decorative animation.</li>
+      <li><strong>Read without scripts.</strong> Every issue page carries its full text, sources and change log as plain HTML, so it works in reader modes and when scripts are blocked.</li>
+      <li><strong>Print.</strong> Printing an issue drops menus and buttons, and prints each link's address.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card" aria-labelledby="checks">
+    <h2 id="checks">How we check</h2>
+    <p>Automated accessibility checks run on every change to the site, on the homepage, an issue page, How This Works and these policy pages, in light and dark mode. Other automated tests cover keyboard use of the main controls.</p>
+  </section>
+
+  <section class="policy-card policy-card--note" aria-labelledby="limits">
+    <h2 id="limits">What we know falls short</h2>
+    <ul>
+      <li>We have not had an independent accessibility audit, and we have not yet tested every page with a screen reader. Automated checks find only some problems.</li>
+      <li>Some charts and interactive pages, such as the infographics and the Plumb Line board, may be harder to use with assistive technology. If one gets in your way, tell us and we will send you the same information in another form.</li>
+      <li>On a phone with text at double size, a few panels on the homepage and the How This Works page run wider than the screen.</li>
+      <li>Issue illustrations are decorative line drawings. They carry nothing that is not also in the text.</li>
+      <li>Issues are published in English. The <a href="/privasi" lang="ms" hreflang="ms">privacy notice</a> is also in Bahasa Malaysia.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card" aria-labelledby="report">
+    <h2 id="report">Tell us about a problem</h2>
+    <p>Write to <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a> with the subject "Accessibility". Tell us the page address, what you were trying to do, and the device, browser and any assistive technology you use. We aim to respond within 5 working days.</p>
+    <p>Other ways to reach us are on the <a href="/contact">contact page</a>.</p>
+  </section>
+</PolicyLayout>
