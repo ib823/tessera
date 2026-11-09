@@ -1,11 +1,21 @@
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { test, expect } from '@playwright/test';
+import { formatIssueDate } from '../../src/lib/issue-meta';
 
 // 1201's modifiedAt is derived from git history by scripts/derive-issue-history.mjs and
 // committed in its JSON; read it rather than hard-coding the commit time, so a re-derive
 // after a squash merge does not break these assertions.
 const MODIFIED_1201: string = JSON.parse(readFileSync('src/data/issues/1201.json', 'utf8')).modifiedAt;
 const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// A published issue that has never been updated, read from the data so a later
+// correction to any one issue does not break the fixture: the newest one with
+// no changes[] and modifiedAt equal to publishedAt.
+const NEVER_UPDATED: { id: string; publishedAt: string } = readdirSync('src/data/issues')
+  .sort()
+  .reverse()
+  .map((f) => JSON.parse(readFileSync(`src/data/issues/${f}`, 'utf8')))
+  .find((i) => i.published === true && !i.changes?.length && i.publishedAt && i.modifiedAt === i.publishedAt);
 
 /**
  * Publication history: the "Published · Updated · Type" line, the "What
@@ -17,9 +27,9 @@ const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
  * scripts/stealth.mjs keeps.
  *
  * Fixtures: 1201 was first published on 30 Mar 2026, corrected on 8 Apr and
- * 18 May 2026 and updated on 9 Nov 2026 (edition 4, Explainer). 2018 was
- * published on 8 Nov 2026 and never changed (Explainer). Dates come from
- * scripts/derive-issue-history.mjs.
+ * 18 May 2026 and updated on 9 Nov 2026 (edition 4, Explainer). The
+ * never-updated fixture is picked from the data (NEVER_UPDATED above). Dates
+ * come from scripts/derive-issue-history.mjs.
  */
 
 function slice(html: string, marker: string, tag: string): string {
@@ -76,10 +86,10 @@ test.describe('Issue publication history', () => {
   });
 
   test('an issue never updated shows no Updated date and no change log', async ({ request, baseURL }) => {
-    const html = await (await request.get(`${baseURL}/issue/2018`)).text();
+    const html = await (await request.get(`${baseURL}/issue/${NEVER_UPDATED.id}`)).text();
     const article = html.slice(html.indexOf('<article'), html.indexOf('</article>'));
     const meta = slice(article, 'data-issue-meta', 'p');
-    expect(meta).toMatch(/Published <time[^>]*>8 Nov 2026<\/time>/);
+    expect(meta).toMatch(new RegExp(`Published <time[^>]*>${esc(formatIssueDate(NEVER_UPDATED.publishedAt))}</time>`));
     expect(meta).not.toContain('Updated');
     expect(article).not.toContain('data-issue-changes');
   });
@@ -99,7 +109,7 @@ test.describe('Issue publication history', () => {
   test('sitemap lastmod follows modifiedAt', async ({ request, baseURL }) => {
     const xml = await (await request.get(`${baseURL}/sitemap.xml`)).text();
     expect(xml).toMatch(new RegExp(`<loc>[^<]*/issue/1201</loc>\\s*<lastmod>${esc(MODIFIED_1201)}</lastmod>`));
-    expect(xml).toMatch(/<loc>[^<]*\/issue\/2018<\/loc>\s*<lastmod>2026-11-08T18:37:13\+08:00<\/lastmod>/);
+    expect(xml).toMatch(new RegExp(`<loc>[^<]*/issue/${NEVER_UPDATED.id}</loc>\\s*<lastmod>${esc(NEVER_UPDATED.publishedAt)}</lastmod>`));
   });
 
   test('desktop reader shows the meta line and an open What changed block', async ({ page }) => {
@@ -119,17 +129,17 @@ test.describe('Issue publication history', () => {
 
   test('feed row says "Updated since you read it" only when the read predates the change', async ({ page }) => {
     test.skip((page.viewportSize()?.width ?? 1440) < 768, 'Uses the desktop sidebar feed.');
-    await page.addInitScript(() => {
+    await page.addInitScript((neverUpdated: string) => {
       try {
         for (const k of Object.keys(localStorage)) if (k.startsWith('tfa')) localStorage.removeItem(k);
         // Finished before the 18 May and 9 Nov 2026 changes.
         localStorage.setItem('tfa:v1:read:1201', JSON.stringify({ state: 'completed', progress: 7, completedAt: '2026-04-01T00:00:00.000Z' }));
         // Never updated after publication.
-        localStorage.setItem('tfa:v1:read:2018', JSON.stringify({ state: 'completed', progress: 7, completedAt: '2026-11-08T12:00:00.000Z' }));
+        localStorage.setItem(`tfa:v1:read:${neverUpdated}`, JSON.stringify({ state: 'completed', progress: 7, completedAt: '2026-11-08T12:00:00.000Z' }));
         // A completion recorded before completedAt existed: no badge.
         localStorage.setItem('tfa:v1:read:1102', JSON.stringify({ state: 'completed', progress: 7 }));
       } catch { /* ignore */ }
-    });
+    }, NEVER_UPDATED.id);
     await page.goto('/');
     await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
     await expect(page.locator('[data-section]').first()).toBeAttached();
