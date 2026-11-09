@@ -1,0 +1,178 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "headline": "Negeri Sembilan Throne: Three of the Four Undang Titles Are Now Contested",
+  "context": "On 19 April 2026, four signatories, each claiming an Undang title, issued a proclamation purporting to depose Tuanku Muhriz and chose Tunku Nadzaruddin to succeed him. Tuanku Muhriz continues to carry out the Ruler's functions.",
+  "cards": [
+    {
+      "t": "hook",
+      "text": "On 15 September the state exco backed a 19 April proclamation to depose Tuanku Muhriz. Two days later the Attorney-General's Chambers (AGC) called it invalid.",
+      "sub": "The DKU, the state's council on custom, says three of the four signatories were not lawful Undangs at the time. They say they were."
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Article X lets Undangs call on a Ruler to abdicate after a 'full and complete enquiry'. Article XXIX counts their powers as duly used when at least three act.",
+      "s": "The DKU says no full enquiry was held; the AGC found no facts showing Article X was followed. The four say they held one on 5 March.",
+      "d": ""
+    },
+    {
+      "t": "fact",
+      "lens": "Historical",
+      "h": "Mubarak Thahak, who read the 19 April proclamation, proclaimed Tuanku Muhriz Ruler as Undang of Sungai Ujong in 2008.",
+      "s": "On 5 June his side proclaimed Tunku Nadzaruddin. The DKU calls it contempt of a same-day order; the six it named say only a Special Court can hear it. A stay bid failed on 4 November.",
+      "d": ""
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "The DKU says Sungai Ujong's elders removed Mubarak in May 2025, Jelebu's removed Maarof Mat Rashad in May 2023, and Abdul Rahim Yasin was never installed in Rembau.",
+      "s": "Article XVI(3) makes such advice final and non-justiciable. The four reject it and say they remain the Undangs.",
+      "d": ""
+    },
+    {
+      "t": "fact",
+      "lens": "Political",
+      "h": "Article X's proclamation also needs the Menteri Besar's signature. MB Ismail Lasim signed on 3 August and later cited duress; a lawyer for the six says he signed freely.",
+      "s": "On 20 September Tuanku Muhriz revoked 10 exco appointments. Ismail objected; the Attorney-General called the revocation valid.",
+      "d": ""
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "This was a dispute over Undangs before it became one over a Ruler. The throne now depends on who lawfully held three Undang titles on 19 April."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "No side disputes that Undangs may remove a Ruler. Whether they lawfully did on 19 April is a question every side has answered and no court has."
+    }
+  ],
+  "sources": "[1] BERNAMA, \"Declaration To Depose Negeri Sembilan Ruler Not Recognised - Aminuddin\", 20 Apr 2026, https://www.bernama.com/en/news.php?id=2546810 | [2] Malay Mail, \"No authority, no validity: Negeri Sembilan MB rejects bid to unseat state Ruler\", 20 Apr 2026, https://www.malaymail.com/news/malaysia/2026/04/20/no-authority-no-validity-negeri-sembilan-mb-rejects-bid-to-unseat-state-ruler/216927 | [3] Free Malaysia Today, \"State govt does not recognise declaration to depose Negeri Sembilan ruler, says MB\", 20 Apr 2026, https://www.freemalaysiatoday.com/category/nation/2026/04/20/state-govt-does-not-recognise-declaration-to-depose-negeri-sembilan-ruler-says-mb | [4] The Vibes, \"Declaration to depose Negeri Sembilan Ruler not recognised - MB Aminuddin\", 20 Apr 2026, https://www.thevibes.com/articles/news/122046/declaration-to-depose-negeri-sembilan-ruler-not-recognised-mb-aminuddin | [5] The Sun, \"Declaration to depose Negeri Sembilan ruler not recognised\", 20 Apr 2026, https://thesun.my/news/malaysia-news/declaration-to-depose-negeri-sembilan-ruler-not-recognised/ | [6] Scoop, \"Pengisytiharan turunkan Tuanku Muhriz tidak sah: Aminuddin\", 20 Apr 2026, https://www.scoop.my/berita/287173/pengisytiharan-turunkan-tuanku-muhriz-tidak-sah-aminuddin/ | [7] Malay Mail, \"Negeri Sembilan's unique ruler selection system: Who are the Undang Yang Empat and what role are they playing?\", 20 Apr 2026, https://www.malaymail.com/news/malaysia/2026/04/20/negeri-sembilans-unique-ruler-selection-system-who-are-the-undang-yang-empat-and-what-role-are-they-playing/216978 | [8] The Edge Malaysia, \"Attempt brewing in Negeri Sembilan to remove Ruler — sources\", 20 Apr 2026, https://theedgemalaysia.com/node/800429 | [9] Malaysiakini, \"Krisis takhta Negeri Sembilan: Undang pecat Yang Dipertuan Besar\", 20 Apr 2026, https://www.malaysiakini.com/news/773064 | [10] FMT (Bahasa), \"Pengisytiharan turunkan Yang Dipertuan Besar N Sembilan tak sah, menderhaka, kata Telaga Undang\", 20 Apr 2026, https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/04/20/pengisytiharan-turunkan-yang-dipertuan-besar-n-sembilan-tak-sah-menderhaka-kata-telaga-undang | [11] Berita Harian, \"Pengisytiharan Mubarak Dohak turunkan Yang Dipertuan Besar Negeri Sembilan tidak sah - Yang Mulia Telaga Undang\", 20 Apr 2026, https://www.bharian.com.my/berita/nasional/2026/04/1535753/pengisytiharan-mubarak-dohak-turunkan-yang-dipertuan-besar-negeri | [12] Harian Metro, \"Pengisytiharan turunkan Yang Dipertuan Besar Negeri Sembilan tak diiktiraf - MB\", 20 Apr 2026, https://www.hmetro.com.my/mutakhir/2026/04/1348057/pengisytiharan-turunkan-yang-dipertuan-besar-negeri-sembilan-tak-diiktiraf | [13] Buletin TV3, \"Pengisytiharan Mubarak tidak sah, bukan lagi Undang Luak Sungai Ujong\", 20 Apr 2026, https://www.buletintv3.my/nasional/pengisytiharan-mubarak-tidak-sah-bukan-lagi-undang-luak-sungai-ujong/ | [14] NS Government Official Portal, \"Institusi Diraja\", n.d., https://www.ns.gov.my/en/institusi-diraja | [15] Majlis Datuk² Undang Sungai Ujong (official Undang SU portal), \"Perlembagaan Persekutuan & Undang-Undang Tubuh Negeri Sembilan\", n.d., https://majlisdatolsu.gov.my/perlembagaan-persekutuan-undang-undang-tubuh-negeri-sembilan/ | [19] mStar (historical), \"Tunku Mukhriz Yang Dipertuan Besar Negeri Sembilan ke-11\", 29 Dec 2008, https://www.mstar.com.my/lokal/semasa/2008/12/29/tunku-mukhriz-yang-dipertuan-besar-negeri-sembilan-ke11 | [20] Malaysia-Today (historical), \"Tuanku Muhriz is 11th Yang Di Pertuan Besar of Negri Sembilan\", 29 Dec 2008, https://www.malaysia-today.net/2008/12/29/tuanku-muhriz-is-11th-yang-di-pertuan-besar-of-negri-sembilan/ | [21] Sinar Harian, \"Undang-Undang Tubuh Negeri Sembilan: Tuanku atau Undang Yang Empat lebih berkuasa?\", n.d., https://www.sinarharian.com.my/article/776431 | [22] The Star, \"Four Undang dispute MB's claim over Mubarak's removal\", 21 Apr 2026, https://www.thestar.com.my/news/nation/2026/04/21/four-undang-dispute-mbs-claim-over-mubaraks-removal | [23] The Star, \"Who are the four Undang embroiled in Negri Sembilan royal controversy?\", 20 Apr 2026, https://www.thestar.com.my/news/nation/2026/04/20/who-are-the-four-undang-embroiled-in-negri-sembilan-royal-controversy | [24] State Government of Negeri Sembilan (State Legal Adviser reprint; OCR copy via Sinar Project), \"The Laws of the Constitution of Negeri Sembilan, 1959 (incorporating all amendments up to 9 October 2003), Article X\", 9 Oct 2003, https://govdocs.sinarproject.org/documents/state-governments/negeri-sembilan/thelawsoftheconstitutionofns1959-ocr.pdf | [25] Malay Mail, \"Simplified: Why Tuanku Muhriz is legally still the Negeri Sembilan ruler, and why Undangs' attempt to 'sack' him is invalid, experts say\", 5 May 2026, https://www.malaymail.com/news/malaysia/2026/05/05/simplified-why-tuanku-muhriz-is-legally-still-the-negeri-sembilan-ruler-and-why-undangs-attempt-to-sack-him-is-invalid-experts-say/218741 | [26] New Straits Times, \"Declaration to remove Negri Sembilan ruler invalid, says Telaga Undang\", 20 Apr 2026, https://www.nst.com.my/amp/news/nation/2026/04/1421713/declaration-remove-negri-sembilan-ruler-invalid-says-telaga-undang | [new:1] BERNAMA, \"April Proclamation On Negeri Sembilan Throne Invalid - AGC\", 17 Sep 2026, https://bernama.com/en/general/news.php?id=2608608 | [new:2] Malay Mail, \"AGC: Exco statement has no legal effect, move to gazette or implement proclamation on N. Sembilan Yamtuan's removal invalid, unconstitutional\", 17 Sep 2026, https://www.malaymail.com/news/malaysia/2026/09/17/agc-exco-statement-has-no-legal-effect-move-to-gazette-or-implement-yamtuan-removal-proclamation-invalid-unconstitutional/235576 | [new:3] The Edge Malaysia, \"AGC says Negeri Sembilan exco has no power to vacate throne, move to depose Tuanku Muhriz unconstitutional\", 17 Sep 2026, https://theedgemalaysia.com/node/818444 | [new:4] Malaysiakini, \"N Sembilan exco says Tuanku Muhriz removal valid, recognises Tunku Nadzaruddin as ruler\", 16 Sep 2026, https://malaysiakini.com/news/885154-n-sembilan-cabinet-says-tuanku-muhriz-removal-valid-recognises-tuanku-nadzaruddin-as-ruler | [new:5] Malaysiakini (Bahasa), \"Proklamasi turunkan Tuanku Muhriz sah, Tuanku Nadzaruddin Yamtuan baru - Exco\", 16 Sep 2026, https://malaysiakini.com/news/885151-kerajaan-negeri-sembilan-sahkan-tunku-muhriz-diturunkan-takhta | [new:6] The Edge Malaysia, \"Three of the four Undangs who attempted to oust Tuanku Muhriz were not valid chiefs, says Negeri Sembilan state council\", 1 Aug 2026, https://theedgemalaysia.com/node/812951 | [new:7] The Star, \"DKU reaffirms Tuanku Muhriz remains Yang Dipertuan Besar of Negri Sembilan\", 4 Oct 2026, https://www.thestar.com.my/news/nation/2026/10/04/dku-reaffirms-tuanku-muhriz-remains-yang-dipertuan-besar-of-negri-sembilan | [new:8] The Star, \"Secretariat hits back at AGC, calls for resignation of Negri Sembilan state secretary\", 18 Sep 2026, https://www.thestar.com.my/news/nation/2026/09/18/secretariat-hits-back-at-agc-calls-for-resignation-of-negri-sembilan-state-secretary | [new:9] Malaysiakini, \"N Sembilan chieftains list alleged breaches behind Tuanku Muhriz's removal\", 2 Oct 2026, https://malaysiakini.com/news/886117-n-sembilan-chieftains-list-alleged-breaches-behind-tuanku-muhrizs-removal | [new:10] Malay Mail, \"Negeri Sembilan royal dispute: Sungei Ujong Undang says Tuanku Muhriz removal bid invalid despite purported MB sign-off\", 9 Sep 2026, https://www.malaymail.com/news/malaysia/2026/09/09/negeri-sembilan-royal-dispute-sungei-ujong-undang-says-tuanku-muhriz-removal-bid-invalid-despite-purported-mb-sign-off/234493 | [new:11] Malay Mail, \"Negeri Sembilan MB says he signed proclamation on Tuanku Muhriz under duress, files police report\", 9 Sep 2026, https://www.malaymail.com/news/malaysia/2026/09/09/negeri-sembilan-mb-says-he-signed-proclamation-on-tuanku-muhriz-under-duress-files-police-report/234539 | [new:12] The Rakyat Post, \"Far From Over - Negeri Sembilan Royalty Crisis Picks Up Again With New Claim\", 7 Sep 2026, https://www.therakyatpost.com/news/malaysia/2026/09/07/far-from-over-negeri-sembilan-royalty-crisis-picks-up-again-with-new-claim/ | [new:13] Malaysiakini, \"MB signed document to remove Tuanku Muhriz voluntarily, lawyer claims, recounts timeline\", 10 Sep 2026, https://www.malaysiakini.com/news/884799-mb-signed-document-to-remove-tuanku-muhriz-voluntarily-lawyer-claims-recounts-timeline | [new:14] Malaysiakini, \"Rembau undang: Exco cannot override N Sembilan constitution, DKU ruling on Tuanku Muhriz\", 16 Sep 2026, https://www.malaysiakini.com/news/885164-rembau-undang-exco-cannot-override-n-sembilan-constitution-dku-ruling-on-tuanku-muhriz | [new:15] BERNAMA, \"Negeri Sembilan Ruler Revokes Appointments Of State Executive Councillors\", 20 Sep 2026, https://www.bernama.com/en/news.php?id=2609647 | [new:16] Malay Mail, \"N. Sembilan Ruler formally revokes appointments of 10 exco members\", 24 Sep 2026, https://malaymail.com/news/malaysia/2026/09/24/n-sembilan-ruler-formally-revokes-appointments-of-10-exco-members/236396 | [new:17] The Star, \"MB: Negri exco will continue to function as normal\", 22 Sep 2026, https://www.thestar.com.my/news/nation/2026/09/22/mbnegri-exco-will-continue-to-function-as-normal | [new:18] The Vibes, \"Revocation of Negeri Sembilan Exco appointments valid - Attorney General\", 26 Sep 2026, https://www.thevibes.com/articles/news/127702/revocation-of-negeri-sembilan-exco-appointment-valid-attorney-general | [new:19] Malaysiakini, \"SNAPSHOT | N Sembilan excos' sacking valid, AG says\", 26 Sep 2026, https://www.malaysiakini.com/news/885781-snapshot-n-sembilan-excos-sacking-valid-ag-says-cops-classify-form-2-students-death-as-murder | [new:20] The Edge Malaysia, \"Negeri Sembilan's deposed Undangs, chieftains fail to stop committal proceedings\", 4 Nov 2026, https://theedgemalaysia.com/node/824468 | [new:21] The Vibes, \"Negeri's deposed Undang, chieftains fail to stop committal proceedings\", 4 Nov 2026, https://www.thevibes.com/articles/news/129171/negeris-deposed-undangs-chieftains-fail-to-stop-committal-proceedings | [new:22] Malay Mail, \"Blocked in Tampin, proclaimed in Melaka: Rais Yatim says Negeri Sembilan has a new Ruler\", 5 Jun 2026, https://www.malaymail.com/news/malaysia/2026/06/05/blocked-in-tampin-proclaimed-in-melaka-rais-yatim-says-negeri-sembilan-has-a-new-ruler/222629 | [new:23] The Star, \"Court of Appeal reserves decision in Negri Sembilan Undang legal battle\", 7 Sep 2026, https://www.thestar.com.my/news/nation/2026/09/07/court-of-appeal-reserves-decision-in-negri-sembilan-undang-legal-battle | [new:24] Malay Mail (Bernama), \"Appeals court reserves decision on bid to stay committal proceedings against former undang Mubarak, five others\", 7 Sep 2026, https://www.malaymail.com/amp/news/malaysia/2026/09/07/appeals-court-reserves-decision-on-bid-to-stay-committal-proceedings-against-former-undang-mubarak-five-others/234290 | [new:25] Malaysiakini (Bahasa), \"Undang: Ismail Lasim tak perlu lagi menghadap Tuanku Muhriz\", 20 Oct 2026, https://www.malaysiakini.com/news/887525-undang-ismail-lasim-tak-perlu-lagi-menghadap-tuanku-muhriz | [new:26] BERNAMA, \"Tuanku Muhriz Bestows State Honours On Three Undangs, Consorts\", 16 Oct 2026, https://www.bernama.com/en/general/news.php?id=2621225 | [new:27] BERNAMA, \"Four Withdraw Judicial Review Bid Over Removal Of Negeri Sembilan Ruler\", 7 Oct 2026, https://bernama.com/en/crime_courts/news.php?id=2616573 | [new:28] Malay Mail, \"Disputed Undang abandon case to depose Negeri Sembilan Yamtuan, cannot refile lawsuit\", 7 Oct 2026, https://www.malaymail.com/news/malaysia/2026/10/07/four-drop-kl-court-bid-to-remove-tuanku-muhriz-as-negeri-sembilan-ruler/238081 | [new:29] Malaysiakini, \"Tuanku Muhriz revokes exco appointments, but reading of state constitution disputed\", 21 Sep 2026, https://www.malaysiakini.com/news/885414-tuanku-muhriz-revokes-exco-appointments-but-reading-of-constitution-disputed | [new:30] Malaysiakini, \"N Sembilan lawyers group seeks 'royal review' of constitutional crisis\", 23 Sep 2026, https://www.malaysiakini.com/news/885587-n-sembilan-lawyers-group-seeks-royal-review-of-constitutional-crisis | [new:31] The Edge Malaysia, \"Negeri Sembilan DKU allowed to intervene in former excos' suit, but not its secretary\", 2 Nov 2026, https://theedgemalaysia.com/node/824246 | [new:32] The Vibes, \"High Court allows contempt proceedings against Undangs, two others\", 8 Jul 2026, https://www.thevibes.com/articles/news/124817/high-court-court-allows-contempt-proceedings-against-undangs-two-others | [new:33] Malaysiakini, \"KINIGUIDE | Negeri Sembilan royal rumble: What's going on?\", 17 Sep 2026, https://www.malaysiakini.com/news/885209-kiniguide-negeri-sembilan-royal-rumble-whats-going-on | [new:34] The Star, \"Negri royal row: Revocation of 10 exco members' appointments official, according to state gazette\", 24 Sep 2026, https://www.thestar.com.my/news/nation/2026/09/24/negri-royal-row-revocation-of-10-exco-members039-posts-official-according-to-state-gazette | [new:35] Berita RTM, \"Proklamasi 19 April tidak sah, MMKN tiada kuasa unilateral - AGC\", 17 Sep 2026, https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/proklamasi-19-april-tidak-sah-mmkn-tiada-kuasa-unilateral-agc/ | [new:36] The Vibes, \"Ismail's move to seek Tuanku Muhriz's consent seen as recognition of ruler's legitimacy\", 3 Nov 2026, https://www.thevibes.com/articles/news/129140/ismails-move-to-seek-tuanku-muhrizs-consent-seen-as-recognition-of-rulers-legitimacy",
+  "confidence": "Medium. Every card fact rests on at least two independent outlets, opened 9 November 2026. The 19 April proclamation document itself was not seen; signatories are taken from statements by both sides. The scope of the 5 June court order is reported two ways.",
+  "lenses_used": [
+    "Legal",
+    "Historical",
+    "Governance",
+    "Political"
+  ],
+  "lenses_applicable_but_unused": [
+    "Rights",
+    "Regional"
+  ],
+  "note_for_reviewers": "Edition 4 rewrite of a published issue on the Negeri Sembilan royal succession dispute (royalty risk CRITICAL). Check especially: attribution of every disputed position, any sentence that could be read as taking a side or questioning royal sovereignty, and whether each date and named actor matches the sources."
+}
