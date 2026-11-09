@@ -8,7 +8,8 @@ import { test, expect, type Page } from '@playwright/test';
  *     still expanded (desktop, where the reader replaces Today);
  *  3. search lives in the address (?q=, &type=, &topic=) and survives a
  *     reload and Back;
- *  5. on a phone the reader's h1 headline leads the first card.
+ *  5. on a phone the reader's h1 headline leads the first card;
+ *  8. Latest groups issues under week headings (screen 02).
  */
 
 const DESKTOP = { width: 1440, height: 900 };
@@ -79,6 +80,34 @@ test.describe('Back keeps the reader\'s place', () => {
     await expect(items).toHaveCount(shown);
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(before - 150);
     expect(await page.evaluate(() => window.scrollY)).toBeLessThan(before + 150);
+  });
+});
+
+test.describe('Latest by week', () => {
+  test.use({ viewport: DESKTOP });
+
+  test('each week heading holds only that week\'s issues, newest week first', async ({ page }) => {
+    await openHome(page);
+    await page.getByRole('tab', { name: 'Latest' }).first().click();
+    const groups = await page.locator('[data-latest-list] ol').evaluateAll((lists) =>
+      lists.map((ol) => ({
+        heading: document.getElementById(ol.getAttribute('aria-labelledby') ?? '')?.tagName + ':' + (document.getElementById(ol.getAttribute('aria-labelledby') ?? '')?.textContent?.trim() ?? ''),
+        days: [...ol.querySelectorAll('time[data-relative-date]')].map((t) => t.getAttribute('datetime') ?? ''),
+      })),
+    );
+    expect(groups.length).toBeGreaterThan(1);
+    const monday = (day: string) => {
+      const t = Date.parse(`${day}T00:00:00Z`);
+      return new Date(t - ((new Date(t).getUTCDay() + 6) % 7) * 86_400_000).toISOString().slice(0, 10);
+    };
+    const starts = groups.map((group) => {
+      expect(group.heading).toMatch(/^H3:(This week|Last week|Week of \d{1,2} [A-Z][a-z]{2}( \d{4})?)$/);
+      const weeks = new Set(group.days.map(monday));
+      expect(weeks.size, group.heading).toBe(1);
+      return [...weeks][0];
+    });
+    expect([...starts].sort().reverse()).toEqual(starts);
+    expect(new Set(starts).size).toBe(starts.length);
   });
 });
 

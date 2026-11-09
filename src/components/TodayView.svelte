@@ -69,24 +69,44 @@
     onOpenIssue,
   }: Props = $props();
 
-  // The quote list is ~70 KB raw (~19 KB brotli), about a fifth of the App
-  // chunk, to show one line in the footer. Load it after mount so it stays
-  // off the critical path of every page (home and all issue pages).
+  // The quote list is ~70 KB raw (~22 KB brotli) to show one line in the
+  // footer. Load it only when the footer nears the screen: on a phone the
+  // reader covers Today on every issue page, and most visits never reach the
+  // footer, so the list stays off their JS budget (playbook §14).
   let quote = $state('');
+  let quoteAnchor = $state<HTMLElement | null>(null);
+  $effect(() => {
+    const el = quoteAnchor;
+    if (!el || quote) return;
+    let cancelled = false;
+    const load = () => {
+      import('../data/quotes')
+        .then(({ QUOTES }) => {
+          if (!cancelled) quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+        })
+        .catch(() => {});
+    };
+    if (typeof IntersectionObserver === 'undefined') {
+      load();
+      return () => { cancelled = true; };
+    }
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        io.disconnect();
+        load();
+      }
+    }, { rootMargin: '400px 0px' });
+    io.observe(el);
+    return () => {
+      cancelled = true;
+      io.disconnect();
+    };
+  });
   // Relative dates ("3 days ago") are computed against the reader's clock.
   // The server render uses the build time; mount refreshes it.
   let now = $state(new Date());
   onMount(() => {
-    let cancelled = false;
     now = new Date();
-    import('../data/quotes')
-      .then(({ QUOTES }) => {
-        if (!cancelled) quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
   });
 
   /** "New This Week" uses the same seven-day window. */
@@ -155,6 +175,34 @@
   // svelte-ignore state_referenced_locally — idPrefix is fixed per instance
   let latestLimit = $state(latestLimitMemory.get(idPrefix) ?? LATEST_PAGE);
   let latestVisible = $derived(latestIssues.slice(0, latestLimit));
+
+  // Latest is grouped by publication week (Monday start, Malaysia dates), the
+  // natural unit at about three issues a week (playbook §05, screen 02).
+  const WEEK_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function weekStart(day: string): string {
+    const [y, m, d] = day.split('-').map(Number);
+    const t = Date.UTC(y, m - 1, d);
+    const dow = (new Date(t).getUTCDay() + 6) % 7;
+    return new Date(t - dow * 86_400_000).toISOString().slice(0, 10);
+  }
+  function weekLabel(start: string, current: string): string {
+    if (start === current) return 'This week';
+    if (start === new Date(Date.parse(current) - 7 * 86_400_000).toISOString().slice(0, 10)) return 'Last week';
+    const [y, m, d] = start.split('-').map(Number);
+    return `Week of ${d} ${WEEK_MONTHS[m - 1]}${y === Number(current.slice(0, 4)) ? '' : ` ${y}`}`;
+  }
+  let latestWeeks = $derived.by(() => {
+    const current = weekStart(new Date(now.getTime() + 8 * 3_600_000).toISOString().slice(0, 10));
+    const weeks: Array<{ start: string; label: string; issues: IssueSummary[] }> = [];
+    for (const issue of latestVisible) {
+      const day = publishedDay(issue);
+      const start = day ? weekStart(day) : '';
+      const last = weeks[weeks.length - 1];
+      if (last && last.start === start) last.issues.push(issue);
+      else weeks.push({ start, label: start ? weekLabel(start, current) : 'Undated', issues: [issue] });
+    }
+    return weeks;
+  });
 
   function readLabel(id: string): string {
     const raw = readMap[id];
@@ -269,8 +317,11 @@
       {#if mode === 'latest'}
         <section class="latest-section" aria-labelledby={`${idPrefix}-latest-heading`}>
           <h2 id={`${idPrefix}-latest-heading`} class="panel-title">All {latestIssues.length} issues</h2>
-          <ol class="latest-list" data-latest-list>
-            {#each latestVisible as issue (issue.id)}
+          <div class="latest-weeks" data-latest-list>
+          {#each latestWeeks as week (week.start)}
+          <h3 class="latest-week" id={`${idPrefix}-week-${week.start}`} data-latest-week>{week.label}</h3>
+          <ol class="latest-list" aria-labelledby={`${idPrefix}-week-${week.start}`}>
+            {#each week.issues as issue (issue.id)}
               {@const lens = primaryLens(issue.cards)}
               {@const state = readLabel(issue.id)}
               <li>
@@ -287,6 +338,8 @@
               </li>
             {/each}
           </ol>
+          {/each}
+          </div>
           {#if latestIssues.length > latestLimit}
             <button class="latest-more" onclick={() => { latestLimit += LATEST_PAGE; latestLimitMemory.set(idPrefix, latestLimit); }}>Show {Math.min(LATEST_PAGE, latestIssues.length - latestLimit)} more</button>
           {/if}
@@ -447,7 +500,7 @@
       {/if}
       </div>
 
-      <footer class="today-footer">
+      <footer class="today-footer" bind:this={quoteAnchor}>
         {#if quote}<div class="today-quote">"{quote}"</div>{/if}
         <div class="today-ethos">Editorial ethos</div>
         <nav class="today-footer-links" aria-label="Footer navigation">
@@ -462,7 +515,7 @@
         </nav>
       </footer>
     {:else if !loading}
-      <div class="coming-soon">
+      <div class="coming-soon" bind:this={quoteAnchor}>
         <div class="today-kicker">Today</div>
         <svelte:element this={headingLevel} class="today-title">No issues to show right now.</svelte:element>
         <p class="today-intro pretty-copy">Check back soon, or read <a class="welcome-link" href="/about">how this works</a>.</p>
@@ -617,6 +670,25 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+  }
+
+  .latest-weeks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .latest-week {
+    margin: 12px 0 0;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+  }
+
+  .latest-week:first-child {
+    margin-top: 0;
   }
 
   .latest-list {

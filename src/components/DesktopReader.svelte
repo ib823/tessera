@@ -380,7 +380,7 @@
 
           <p style="font-size: var(--text-title);font-weight:700;color:var(--text-primary);line-height:1.45;margin:0;max-width:33ch;">{card.big}</p>
           {#if card.sub}
-            <p style="font-size: var(--text-reading);color:var(--text-secondary);line-height:1.65;margin:12px 0 0;max-width:52ch;">{card.sub}</p>
+            <p style="font-size: var(--text-reading-lg);color:var(--text-secondary);line-height:1.65;margin:12px 0 0;max-width:52ch;">{card.sub}</p>
           {/if}
           <CardSources {card} entries={issue.sourceList} variant="desktop" />
           {#if card.t === 'fact' && connections.length > 0}
