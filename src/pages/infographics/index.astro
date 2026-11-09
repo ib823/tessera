@@ -19,6 +19,8 @@ const items = [
     blurb:
       'Domestic tourism receipts as a share of state GDP — a geographic choropleth of all 16 states, with the full dataset, method, and sources.',
     img: '/infographics/tourism-state.png',
+    imgWidth: 2480,
+    imgHeight: 3000,
   },
   {
     href: '/plumb-line-report',
@@ -27,6 +29,8 @@ const items = [
     blurb:
       "How Malaysia's leaders score on the public record — conduct and delivery on one fixed set of public-record tests, every figure cited, scoring checked for party bias.",
     img: '/og/plumb-line-poster.png',
+    imgWidth: 1240,
+    imgHeight: 1558,
   },
 ];
 
@@ -49,6 +53,8 @@ const card =
           <img
             src={it.img}
             alt={it.title}
+            width={it.imgWidth}
+            height={it.imgHeight}
             loading="lazy"
             style="display:block;width:100%;height:auto;border-bottom:1px solid var(--border-light);"
           />

@@ -49,6 +49,8 @@
       srcset={jpegSrcset}
       sizes={sizes}
       alt={alt}
+      width="1200"
+      height="630"
       loading={eager ? 'eager' : 'lazy'}
       decoding={eager ? 'sync' : 'async'}
       fetchpriority={eager ? 'high' : undefined}
