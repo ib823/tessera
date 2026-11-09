@@ -18,6 +18,9 @@ export interface IssueSummary {
   finalScore?: number;
   hasImage?: boolean;
   sourceDate?: string;
+  publishedAt?: string;
+  modifiedAt?: string;
+  type?: Issue['type'];
   cards: Array<{ t: string; lens?: string }>;
   legacyAudit?: boolean;
 }
