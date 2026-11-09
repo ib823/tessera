@@ -10,8 +10,9 @@ import { test, expect } from '@playwright/test';
  * scripts/stealth.mjs keeps.
  *
  * Fixtures: 1201 was first published on 30 Mar 2026, corrected on 8 Apr and
- * 18 May 2026 (edition 3, Explainer). 2018 was published on 8 Nov 2026 and
- * never changed (Explainer). Dates come from scripts/derive-issue-history.mjs.
+ * 18 May 2026 and updated on 9 Nov 2026 (edition 4, Explainer). 2018 was
+ * published on 8 Nov 2026 and never changed (Explainer). Dates come from
+ * scripts/derive-issue-history.mjs.
  */
 
 function slice(html: string, marker: string, tag: string): string {
@@ -31,19 +32,21 @@ test.describe('Issue publication history', () => {
 
     const meta = slice(article, 'data-issue-meta', 'p');
     expect(meta).toMatch(/Published <time datetime="2026-03-30T14:17:24\+08:00"[^>]*>30 Mar 2026<\/time>/);
-    expect(meta).toMatch(/Updated <time datetime="2026-05-18T08:46:05\+08:00"[^>]*>18 May 2026<\/time>/);
+    expect(meta).toMatch(/Updated <time datetime="2026-11-09T08:57:55\+08:00"[^>]*>9 Nov 2026<\/time>/);
     expect(meta).toContain('data-story-type="Explainer"');
     // The line sits directly under the headline.
     expect(article.indexOf('data-issue-meta')).toBeGreaterThan(article.indexOf('id="ssg-headline"'));
     expect(article.indexOf('data-issue-meta')).toBeLessThan(article.indexOf('<figure'));
 
     const changes = slice(article, 'data-issue-changes', 'section');
-    expect(changes).toContain('data-change-count="2"');
-    expect(changes).toMatch(/>What changed \(2\)</);
-    expect([...changes.matchAll(/data-change-entry\b/g)]).toHaveLength(2);
-    // Newest first, corrections labelled.
+    expect(changes).toContain('data-change-count="3"');
+    expect(changes).toMatch(/>What changed \(3\)</);
+    expect([...changes.matchAll(/data-change-entry\b/g)]).toHaveLength(3);
+    // Newest first, corrections labelled, updates not.
+    expect(changes.indexOf('Edition 4')).toBeLessThan(changes.indexOf('Edition 3'));
     expect(changes.indexOf('Edition 3')).toBeLessThan(changes.indexOf('Edition 2'));
     expect([...changes.matchAll(/data-change-kind="correction"/g)]).toHaveLength(2);
+    expect([...changes.matchAll(/data-change-kind="update"/g)]).toHaveLength(1);
     expect(changes).toMatch(/>Correction</);
     // Placed after the Sources block, as a native <details> collapsed on the static article.
     expect(article.indexOf('data-issue-changes')).toBeGreaterThan(article.indexOf('data-issue-sources'));
@@ -53,14 +56,14 @@ test.describe('Issue publication history', () => {
   test('/issue/1201 head carries matching article:* times and JSON-LD dates', async ({ request, baseURL }) => {
     const html = await (await request.get(`${baseURL}/issue/1201`)).text();
     expect(html).toContain('<meta property="article:published_time" content="2026-03-30T14:17:24+08:00"');
-    expect(html).toContain('<meta property="article:modified_time" content="2026-05-18T08:46:05+08:00"');
+    expect(html).toContain('<meta property="article:modified_time" content="2026-11-09T08:57:55+08:00"');
     expect(html).toContain('<meta property="article:section" content="Explainer"');
 
     const ld = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
     expect(ld).not.toBeNull();
     const data = JSON.parse(ld![1]);
     expect(data.datePublished).toBe('2026-03-30T14:17:24+08:00');
-    expect(data.dateModified).toBe('2026-05-18T08:46:05+08:00');
+    expect(data.dateModified).toBe('2026-11-09T08:57:55+08:00');
     expect(data.articleSection).toBe('Explainer');
   });
 
@@ -76,17 +79,18 @@ test.describe('Issue publication history', () => {
   test('feed and per-issue JSON carry the history fields', async ({ request, baseURL }) => {
     const feed = await (await request.get(`${baseURL}/issues-feed.json`)).json();
     const row = feed.find((i: { id: string }) => i.id === '1201');
-    expect(row).toMatchObject({ publishedAt: '2026-03-30T14:17:24+08:00', modifiedAt: '2026-05-18T08:46:05+08:00', type: 'Explainer' });
+    expect(row).toMatchObject({ publishedAt: '2026-03-30T14:17:24+08:00', modifiedAt: '2026-11-09T08:57:55+08:00', type: 'Explainer' });
     expect(row.changes).toBeUndefined();
 
     const issue = await (await request.get(`${baseURL}/issues/1201.json`)).json();
-    expect(issue.changes).toHaveLength(2);
+    expect(issue.changes).toHaveLength(3);
     expect(issue.changes[1]).toMatchObject({ edition: 3, date: '2026-05-18' });
+    expect(issue.changes[2]).toMatchObject({ edition: 4, date: '2026-11-09' });
   });
 
   test('sitemap lastmod follows modifiedAt', async ({ request, baseURL }) => {
     const xml = await (await request.get(`${baseURL}/sitemap.xml`)).text();
-    expect(xml).toMatch(/<loc>[^<]*\/issue\/1201<\/loc>\s*<lastmod>2026-05-18T08:46:05\+08:00<\/lastmod>/);
+    expect(xml).toMatch(/<loc>[^<]*\/issue\/1201<\/loc>\s*<lastmod>2026-11-09T08:57:55\+08:00<\/lastmod>/);
     expect(xml).toMatch(/<loc>[^<]*\/issue\/2018<\/loc>\s*<lastmod>2026-11-08T18:37:13\+08:00<\/lastmod>/);
   });
 
@@ -98,11 +102,11 @@ test.describe('Issue publication history', () => {
     const meta = page.locator('[data-issue-meta][data-variant="desktop"]');
     await expect(meta).toBeVisible();
     await expect(meta).toContainText('Published 30 Mar 2026');
-    await expect(meta).toContainText('Updated 18 May 2026');
+    await expect(meta).toContainText('Updated 9 Nov 2026');
     await expect(meta).toContainText('Explainer');
 
     const changes = page.locator('[data-issue-changes][data-variant="desktop"]');
-    await expect(changes.locator('[data-change-entry]')).toHaveCount(2);
+    await expect(changes.locator('[data-change-entry]')).toHaveCount(3);
   });
 
   test('feed row says "Updated since you read it" only when the read predates the change', async ({ page }) => {
@@ -110,7 +114,7 @@ test.describe('Issue publication history', () => {
     await page.addInitScript(() => {
       try {
         for (const k of Object.keys(localStorage)) if (k.startsWith('tfa')) localStorage.removeItem(k);
-        // Finished before the 18 May 2026 correction.
+        // Finished before the 18 May and 9 Nov 2026 changes.
         localStorage.setItem('tfa:v1:read:1201', JSON.stringify({ state: 'completed', progress: 7, completedAt: '2026-04-01T00:00:00.000Z' }));
         // Never updated after publication.
         localStorage.setItem('tfa:v1:read:2018', JSON.stringify({ state: 'completed', progress: 7, completedAt: '2026-11-08T12:00:00.000Z' }));
