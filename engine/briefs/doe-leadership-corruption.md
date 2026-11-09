@@ -131,3 +131,5 @@ January 2025 – April 2026
 25. NST, "DoE deputy director-general charged with RM21k graft," Apr 3, 2026
 26. Commissioner of Law Revision, Malaysia, "Malaysian Anti-Corruption Commission Act 2009 (Act 694), reprint as at 1 Jan 2022", 1 Jan 2022, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf [PRIMARY]
 27. Attorney General's Chambers, "Penal Code (Act 574), updated text as at 31 May 2023", 31 May 2023, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf [PRIMARY]
+28. The Star, "Penang landslide: Search extended for four more victims", 21 Oct 2018, https://www.thestar.com.my/news/nation/2018/10/21/penang-landslide-search-extended-for-four-more-victims [S]
+29. Malay Mail, "Eighth body in Penang landslide found at noon", 22 Oct 2018, https://www.malaymail.com/news/malaysia/2018/10/22/eighth-body-in-penang-landslide-found-at-noon/1685397 [S]

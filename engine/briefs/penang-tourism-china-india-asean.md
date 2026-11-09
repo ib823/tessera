@@ -97,6 +97,8 @@ Economic, Social, Political
 16. Tandfonline, "Affordable housing and public administration of a historic city: George Town UNESCO World Heritage Site" (academic, 2023) [PRIMARY]
 17. Penang Institute, "Transforming Tourism in Penang: Suggestions for the Short and the Long Term" 2020
 18. The Star, "Penang maintains strong SPM 2025 performance" Mar 31, 2026
+19. Tourism Malaysia, "Malaysia Tourism Statistics in Brief 2024", Apr 2025, https://data.tourism.gov.my/frontend/pdf/New_Final_Malaysia%20Tourism%20Statistics%20in%20Brief%202024.pdf [PRIMARY]
+20. Malay Mail (Bernama), "MAHB targets mid-2028 finish for RM1.55b Penang Airport upgrade", 18 Jul 2025, https://www.malaymail.com/news/money/2025/07/18/mahb-targets-mid-2028-finish-for-rm155b-penang-airport-upgrade/184351 [S]
 
 ## CORRECTION (2026-11-09)
 

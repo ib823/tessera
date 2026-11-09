@@ -273,6 +273,7 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 44. PBS NewsHour, "Macron picks EU Brexit negotiator as France's new prime minister", 5 Sep 2024, https://www.pbs.org/newshour/world/macron-picks-eu-brexit-negotiator-as-frances-new-prime-minister
 45. Institute for Democracy and Economic Affairs (IDEAS), "IDEAS: 78% of Federal Statutory Bodies (FSBs) Chairperson Roles Lack Clear Qualification Standards", 5 Mar 2026, https://www.ideas.org.my/for-media/all/ideas-78-of-federal-statutory-bodies-fsbs-chairperson-roles-lack-clear-qualification-standards/ [PRIMARY]
 46. Free Malaysia Today, "Dewan Rakyat fails to pass bill to cap PM's tenure at 10 years", 2 Mar 2026, https://www.freemalaysiatoday.com/category/nation/2026/03/02/dewan-rakyat-fails-to-pass-bill-to-cap-pms-tenure-at-10-years [S]
+47. Department of Statistics Malaysia, "Current Population Estimates, Malaysia, 2025", 31 Jul 2025, https://www.dosm.gov.my/uploads/release-content/file_20250821151339.pdf [PRIMARY]
 
 ## CONTRADICTIONS
 

@@ -68,6 +68,7 @@ Primary **Health**; secondary **Social** (undiagnosed youth, sedentary behaviour
 6. PLOS One, "Prevalence of impaired fasting glucose… NHMS 2019" — https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0320993 (confirms 2019 FBG method, 18.3%) [PRIMARY]
 7. "Rising Obesity in Malaysia (1990–2023)…", PMC12900780 — confirms the long-run obesity climb. https://pmc.ncbi.nlm.nih.gov/articles/PMC12900780/ [PRIMARY]
 8. Sinar Daily, "Malaysia's obesity crisis: 11 million adults affected"
+9. Institute for Public Health, Ministry of Health Malaysia, "Fact Sheet: National Health and Morbidity Survey 2019: Non-communicable diseases, healthcare demand and health literacy", https://iku.nih.gov.my/images/IKU/Document/REPORT/NHMS2019/Fact_Sheet_NHMS_2019-English.pdf [PRIMARY]
 
 ## CARD MAP (as published in 2002.json)
 hook → diabetes fell, reported as relief, but one survey is not a trend.

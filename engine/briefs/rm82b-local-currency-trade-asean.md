@@ -92,3 +92,4 @@ Economic, Political, Governance
 18. Free Malaysia Today, "Malaysian semiconductor exports remain exempt from US tariffs, says Tengku Zafrul", 7 Aug 2025, https://www.freemalaysiatoday.com/category/nation/2025/08/07/some-us-firms-in-malaysia-may-escape-semiconductor-chip-tariff-says-tengku-zafrul [S]
 19. Bank Negara Malaysia, "Measures to Regain Monetary Independence", 1 Sep 1998, https://www.bnm.gov.my/-/measures-to-regain-monetary-independence [PRIMARY]
 20. New Straits Times, "BNM says it is not considering Asian Financial Crisis-like capital controls", 8 Apr 2024, https://www.nst.com.my/amp/business/economy/2024/04/1035835/bnm-says-it-not-considering-asian-financial-crisis-capital-controls [S]
+21. Bank Negara Malaysia, "Renewal of Bilateral Currency Swap Arrangement Agreement between Bank Negara Malaysia and the People's Bank of China", 7 Aug 2026, https://www.bnm.gov.my/-/bcsa26-pboc [PRIMARY]

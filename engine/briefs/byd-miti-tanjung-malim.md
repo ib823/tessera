@@ -66,3 +66,4 @@ SOURCES:
 12. The Star (Reuters), "China's BYD opens EV factory in Thailand, first in Southeast Asia", 4 Jul 2024, https://thestar.com.my/business/business-news/2024/07/04/china039s-byd-opens-ev-factory-in-thailand-first-in-southeast-asia [S]
 13. Thailand Board of Investment, "Thailand EV Board Approves Extended Production Timeframe for BEV and Inclusion of Mild HEV in Hybrid Incentive Package to Support Industry's Electrification (Press Release No. 167/2567)", 4 Dec 2024, https://osos.boi.go.th/article_attach/PR167_2567EN.pdf [PRIMARY]
 14. The Edge Malaysia, "Perodua says business as usual amid UMW takeover by Sime Darby", 27 Oct 2023, https://theedgemalaysia.com/node/687793 [S]
+15. The Star, "Geely transfers entire equity interest in Proton", 2 May 2023, https://www.thestar.com.my/business/business-news/2023/05/02/geely-transfers-entire-equity-interest-in-proton [S]

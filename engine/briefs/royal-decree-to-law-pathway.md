@@ -268,6 +268,7 @@ Religious lens deliberately *not* used as a card lens — keeps the editorial fr
 40. ARTICLE 19, "Blog: How lèse-majesté laws are eroding free speech in Southeast Asia", https://www.article19.org/resources/lese-majeste-laws-eroding-free-speech-southeast-asia/
 41. Foreign Policy Association, "Thailand's Lèse Majesté Law", https://fpa.org/thailands-lese-majeste-law/
 45. Free Malaysia Today, "280 reports lodged over insult to Selangor sultan", 4 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/04/280-reports-lodged-over-insult-to-selangor-sultan
+46. Pesuruhjaya Penyemak Undang-Undang, Selangor, with Pesuruhjaya Penyemak Undang-Undang, Malaysia, "Undang-Undang Tubuh Kerajaan Selangor 1959 (Cetakan Semula, mengandungi segala pindaan hingga 1 Januari 2008)", 2008 reprint, https://govdocs.sinarproject.org/documents/state-governments/selangor/undang-undang-tubuh-negeri-selangor-1959-ocr.pdf/@@download/file/Undang%20-%20Undang%20Tubuh%20Negeri%20Selangor%201959-ocr.pdf [PRIMARY]
 
 **Tier H — Adjacent T4A coverage**
 42. T4A issue 1980 — Zahid "firm action" speech. `src/data/issues/1980.json`; brief `engine/briefs/zahid-insults-firm-action-vs-existing-laws.md`.

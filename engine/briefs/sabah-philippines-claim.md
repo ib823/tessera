@@ -103,3 +103,5 @@ SOURCES:
 21. The Star, "Hundreds of Bajau Laut left without homes after demolition op in Semporna", 7 Jun 2024, https://www.thestar.com.my/news/nation/2024/06/07/hundreds-of-bajau-laut-left-without-homes-after-demolition-op-in-semporna [S]
 22. Free Malaysia Today, "Eviction of Bajau Laut folk in Semporna above board, says Sabah minister", 7 Jun 2024, https://www.freemalaysiatoday.com/category/nation/2024/06/07/eviction-of-bajau-laut-folk-in-semporna-above-board-says-sabah-minister [S]
 23. Malay Mail, "Hajiji: Sabah not up for debate, issue just a political tactic in Philippines", 28 Mar 2026, https://www.malaymail.com/news/malaysia/2026/03/28/hajiji-sabah-not-up-for-debate-issue-just-a-political-tactic-in-philippines/214244 [S]
+24. The Vibes, "The invalid Sulu claim over Sabah: a historical explanation", 13 Mar 2022, https://www.thevibes.com/index.php/articles/news/56185/the-invalid-sulu-claim-over-sabah-a-historical-explanation [S]
+25. SUHAKAM, "Undocumented People", undated web page (viewed 9 Nov 2026), https://suhakam.org.my/portfolio/undocumented-people/ [PRIMARY]

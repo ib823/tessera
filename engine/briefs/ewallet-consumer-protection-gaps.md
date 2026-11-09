@@ -118,3 +118,6 @@ Despite 28 million Malaysians using e-wallets and RM48+ billion flowing through 
 20. Touch 'n Go eWallet first to implement all 5 BNM safety measures (TNG official)
 21. Perbadanan Insurans Deposit Malaysia (PIDM), "Deposit Insurance System (FAQs)", null, https://www.pidm.gov.my/general/faqs/deposit-insurance-system [PRIMARY]
 22. Bank Negara Malaysia, "Payment Statistics: T1 Transactions Per Capita (Basic Payments Indicator)", Apr 2026, https://www.bnm.gov.my/documents/20124/20848086/T1+-+Transactions+Per+Capita.pdf [PRIMARY]
+23. Bank Negara Malaysia, "Payment Statistics: T2 Payment Instruments", Nov 2026, https://www.bnm.gov.my/documents/20124/20848086/T2+-+Payment+Instruments.pdf [PRIMARY]
+24. Perbadanan Insurans Deposit Malaysia (PIDM), "FAQs: About PIDM (Does PIDM protect e-money?)", , https://www.pidm.gov.my/general/faqs/about-pidm [PRIMARY]
+25. Financial Markets Ombudsman Service (FMOS), "FMOS Annual Report 2025", Apr 2026, https://www.fmos.org.my/wp-content/uploads/2026/04/FMOS-Annual-Report-2025.pdf [PRIMARY]
