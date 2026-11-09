@@ -142,6 +142,17 @@ describe('buildFeedSections — bucketing logic (preserved from v2)', () => {
     expect(sections.find(s => s.kind === 'new')?.count).toBe(1);
     expect(sections.find(s => s.kind === 'explore')?.count).toBe(1);
   });
+
+  it('dates issues by publishedAt, so a correction does not make an old issue new', () => {
+    const issues = [
+      // Published in January, sources re-checked this week for a correction.
+      makeIssue('0001', { publishedAt: '2026-01-10T08:00:00+08:00', sourceDate: '2026-03-29' }),
+      makeIssue('0002', { publishedAt: '2026-03-28', sourceDate: '2026-03-20' }),
+    ];
+    const sections = buildFeedSections(issues, {}, now, 'latest');
+    expect(sections.find(s => s.kind === 'new')?.issues.map(i => i.id)).toEqual(['0002']);
+    expect(sections.find(s => s.kind === 'explore')?.issues.map(i => i.id)).toEqual(['0001']);
+  });
 });
 
 describe('FEED_SECTIONS const', () => {
