@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T06:23:10.448Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T08:15:55.090Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -93,9 +93,9 @@ RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul t
 ```
 By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.
 ```
-**4/6** _(fact)_ · 146 chars
+**4/6** _(fact)_ · 213 chars
 ```
-In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists.
+In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists. Elsewhere the statutory window is the local plan's drafting stage.
 ```
 **5/6** _(reframe)_ · 156 chars
 ```
@@ -127,9 +127,9 @@ Tabung Solidariti Najib Razak takes gifts into an account in Umno's registered n
 ```
 Najib announced the committee that first recommended the Act on 14 August 2015, amid the furore over RM2.6 billion in his accounts. The minister now says 2027.
 ```
-**4/7** _(fact)_ · 126 chars
+**4/7** _(fact)_ · 178 chars
 ```
-On 8 September the minister drafting the Act said, as a lawyer: without it 'many politicians will be charged with corruption'.
+On 8 September the minister drafting the Act said, as a lawyer: without it 'many politicians will be charged with corruption'. Azalina Othman Said is also Umno information chief.
 ```
 **5/7** _(reframe)_ · 148 chars
 ```
@@ -267,9 +267,9 @@ https://thefourthangle.pages.dev/issue/2010
 ```
 Suspected Israeli operations in Malaysia share a signature: the operative enters on another country's passport. The 2018 assassins of a Palestinian lecturer used Serbian and Montenegrin papers; the 2024 gunman flew in French. Dubai's 2010 hit squad did the same.
 ```
-**2/7** _(fact)_ · 91 chars
+**2/7** _(fact)_ · 99 chars
 ```
-Fadi al-Batsh, a lecturer, was shot about 14 times walking to dawn prayers in Kuala Lumpur.
+Gunmen fired 14 bullets at Fadi al-Batsh, a lecturer, as he walked to dawn prayers in Kuala Lumpur.
 ```
 **3/7** _(fact)_ · 126 chars
 ```
@@ -429,7 +429,7 @@ He was remanded five days to assist the probe. No charge has been reported. Magi
 ```
 **4/6** _(fact)_ · 269 chars
 ```
-An alleged RM1 million skims 14% off a RM7 million job, charged simply to sign what the contractor had already earned. MACC has said public-procurement complaints often centre on approving claims, including for work not properly done, rather than on the original award.
+An alleged RM1 million skims 14% off a RM7 million job, charged simply to sign what the contractor had already earned. In 2024 MACC said most offences in the procurement cases it investigates involve abuse of power, bribery and approving claims for work not fully done.
 ```
 **5/6** _(reframe)_ · 119 chars
 ```
@@ -833,13 +833,13 @@ https://thefourthangle.pages.dev/issue/1992
 ```
 On 7 April 2026, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill: 'mediation over punishment'. Three earlier NUCC bills drafted in 2014 were shelved by 2020. The named comparators have track records worth reading.
 ```
-**2/6** _(fact)_ · 134 chars
+**2/6** _(fact)_ · 170 chars
 ```
-Najib pledged in 2012 to repeal the Sedition Act. Anwar's coalition pledged the same in 2018 and 2022, then withdrew in November 2023.
+Najib pledged in 2012 to repeal the Sedition Act. Anwar's coalition pledged repeal in 2018, narrowed it to 'draconian provisions' in 2022, then withdrew in November 2023.
 ```
-**3/6** _(fact)_ · 166 chars
+**3/6** _(fact)_ · 125 chars
 ```
-Singapore's Maintenance of Religious Harmony Act took effect in 1992. In February 2025, Minister Shanmugam confirmed its restraining-order powers had never been used.
+Singapore's Maintenance of Religious Harmony Act took effect in 1992. By 2019, no restraining order had been issued under it.
 ```
 **4/6** _(fact)_ · 141 chars
 ```
@@ -849,9 +849,9 @@ Zimbabwe's National Peace and Reconciliation Commission closed in 2023 with no G
 ```
 After four attempts in 14 years, the Harmony Bill is back in draft. The Sedition Act repeal is not.
 ```
-**6/6** _(view — ONLY post with the link)_ · 218 chars
+**6/6** _(view — ONLY post with the link)_ · 224 chars
 ```
-Singapore's Act has issued no restraining order in 30 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
+Singapore's Act issued no restraining order in its first 27 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
 
 https://thefourthangle.pages.dev/issue/1991
 ```
@@ -875,13 +875,13 @@ Akmal Nasrullah, the new Economy Minister, said on 23 February the deal continue
 ```
 Azam Baki announced the charging recommendation on 6 May 2026. His tenure as MACC chief ended six days later, on 12 May.
 ```
-**4/6** _(fact)_ · 148 chars
+**4/6** _(fact)_ · 208 chars
 ```
-Rafizi resigned in May 2025 after losing the PKR deputy-president race to Nurul Izzah Anwar, the prime minister's daughter, by more than two to one.
+Rafizi resigned in May 2025 after losing the PKR deputy-president race to Nurul Izzah Anwar, the prime minister's daughter, by more than two to one. He has been openly critical of the Madani government since.
 ```
-**5/6** _(reframe)_ · 162 chars
+**5/6** _(reframe)_ · 150 chars
 ```
-MACC recommended charges against the signers. The same government defends the deal. The rule a billion-ringgit IP licence should have cleared is still not public.
+MACC recommended charges over the deal. The same government defends it. The rule a billion-ringgit IP licence should have cleared is still not public.
 ```
 **6/6** _(view — ONLY post with the link)_ · 164 chars
 ```
@@ -1103,13 +1103,13 @@ Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2
 ```
 The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
 ```
-**6/7** _(analogy)_ · 267 chars
+**6/7** _(analogy)_ · 74 chars
 ```
-Think of it like a landlord who decides which tenants' mail gets delivered The landlord writes the rules, the rules are not public, and Malaysia's regulator licenses the landlord without seeing the rules. WeChat, TikTok, RedNote, Facebook, Telegram are all landlords.
+Think of it like a landlord who decides which tenants' mail gets delivered
 ```
-**7/7** _(view — ONLY post with the link)_ · 164 chars
+**7/7** _(view — ONLY post with the link)_ · 169 chars
 ```
-PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence, not moderation logic
+PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
 
 https://thefourthangle.pages.dev/issue/1982
 ```
@@ -1247,9 +1247,9 @@ Johor's own State Legal Adviser called appointed assemblymen inconsistent with t
 ```
 Pahang took about three and a half years from enacting (Nov 2020) to appointing (May 2024). Johor passed its Bill three days after the plan surfaced. Four of Pahang's five 2024 appointees held party posts (UMNO, MCA, Amanah, PKR); the fifth founded a tahfiz school.
 ```
-**4/7** _(fact)_ · 93 chars
+**4/7** _(fact)_ · 270 chars
 ```
-The same day the bill passed, nine women's-rights groups demanded all five seats go to women.
+The same day the bill passed, nine gender-equality groups urged Johor to reserve the seats for women first, until women hold 30%. Johor's elected assembly is 25% women, already Malaysia's highest. Five women appointees would push it past the 30% international benchmark.
 ```
 **5/7** _(reframe)_ · 170 chars
 ```
@@ -1259,9 +1259,9 @@ The question is not whether the amendment is constitutional. It is what it means
 ```
 Imagine a council that, before its next election, lets the current chair appoint five new voting members. The new members can vote on budgets and contracts but cannot become chair. The election still happens, with five extra votes already locked in.
 ```
-**7/7** _(view — ONLY post with the link)_ · 180 chars
+**7/7** _(view — ONLY post with the link)_ · 187 chars
 ```
-Sarawak grew its assembly from 82 seats to 99 last year, all elected. Johor chose to grow by five appointments before voters next vote.
+Sarawak voted in 2025 to grow its assembly from 82 seats to 99, all elected. Johor chose to grow by five appointments before voters next vote.
 
 https://thefourthangle.pages.dev/issue/1977
 ```
@@ -1323,13 +1323,13 @@ PIDM covers bank deposits up to RM250,000. It calls e-money 'not directly protec
 ```
 The financial ombudsman, FMOS, logged 132 e-money disputes in 2025, up from 64 in 2024, mainly over unauthorised transactions from scams. Across banking and payments, its ombudsman upheld the provider in 887 adjudicated cases in 2025 and ruled for complainants in 334.
 ```
-**4/7** _(fact)_ · 140 chars
+**4/7** _(fact)_ · 203 chars
 ```
-63% of e-wallet accounts hold under RM50: trivial for T20, critical for B40. The Consumer Credit Act 2025 excludes e-wallet credit features.
+The RM1B eMADANI e-wallet credit was open to STR recipients and adults earning RM100,000 or less. MOF said in November 2023 the RM100 credit would reach up to 10 million adults in the B40 and M40 groups.
 ```
-**5/7** _(reframe)_ · 129 chars
+**5/7** _(reframe)_ · 116 chars
 ```
-Every coalition (PH, PN, BN) rushed e-wallet subsidies for voter wins before building protections. The incentive has not changed.
+Governments since 2020 paid people to adopt e-wallets. Deposit insurance still does not directly cover the balances.
 ```
 **6/7** _(analogy)_ · 260 chars
 ```
@@ -1342,7 +1342,7 @@ Three fixes close the gap: tiered deposit protection, capital requirements scali
 https://thefourthangle.pages.dev/issue/1975
 ```
 
-### Issue 1974 — DOE chief charged with taking RM100K to bypass an EIA, on a road that killed nine
+### Issue 1974 — DOE chief charged with taking RM100K over an EIA exemption, on a road that killed nine
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
@@ -1353,25 +1353,25 @@ https://thefourthangle.pages.dev/issue/1975
 ```
 Malaysia's top two environmental regulators are charged. The DG allegedly took RM100,000 to consider an EIA bypass.
 ```
-**2/7** _(fact)_ · 122 chars
+**2/7** _(fact)_ · 252 chars
 ```
-The DG asked for 3,000 more pollution-control staff. Fourteen months later he allegedly took RM100,000 cash at his office.
+The DG asked for 3,000 more pollution-control staff. Fourteen months later he allegedly took RM100,000 cash at his office. DOE runs 1,100 officers for 60,000 facilities, a 1:55 ratio. Until the ban, e-waste import exemptions sat at the DG's discretion.
 ```
-**3/7** _(fact)_ · 127 chars
+**3/7** _(fact)_ · 244 chars
 ```
-E-waste smuggling ran five years across Customs, ports, police and DOE. Only the DG's arrest triggered a nationwide import ban.
+MACC says e-waste smuggling ran for about five years. Six days after the DG's arrest, Malaysia banned all e-waste imports. MACC froze RM10.2M in 16 accounts. Ban announced Feb 4, gazetted effective Apr 1. 800+ containers stranded at Port Klang.
 ```
-**4/7** _(fact)_ · 269 chars
+**4/7** _(fact)_ · 213 chars
 ```
-The DG faces 20 years under the MACC Act, the deputy 2 years under the Penal Code. No audit of past approvals has been announced. Payments to the deputy ran two years. Six e-waste owners face separate proceedings. The approvals these officials signed remain unreviewed.
+The DG faces up to 20 years under the MACC Act; the deputy, up to 2 years per count under the Penal Code. The alleged payments to the deputy ran over two years. MACC detained six e-waste company owners in January.
 ```
 **5/7** _(reframe)_ · 127 chars
 ```
 Bribery charges put two officials in the dock. The road's 2018 dead, most of them foreign workers, had no say in its approvals.
 ```
-**6/7** _(analogy)_ · 229 chars
+**6/7** _(analogy)_ · 245 chars
 ```
-Like learning the building inspector took bribes to skip the fire exits, after the building already burned down. The charges don't answer how many other approvals were compromised, or whether Sabah and Sarawak face the same risk.
+Like learning the building inspector is accused of taking bribes to skip the fire exits, after the building already burned down. The charges don't answer how many other approvals were compromised, or whether Sabah and Sarawak face the same risk.
 ```
 **7/7** _(view — ONLY post with the link)_ · 176 chars
 ```
@@ -1399,9 +1399,9 @@ The 16-year total equals about 10 days of 2024 trade, but within the China corri
 ```
 76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
 ```
-**4/6** _(fact)_ · 135 chars
+**4/6** _(fact)_ · 187 chars
 ```
-The 1998 capital controls that saved the ringgit now block its internationalisation. Incentives to keep them run deeper than economics.
+The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
 ```
 **5/6** _(reframe)_ · 138 chars
 ```
@@ -1421,9 +1421,9 @@ https://thefourthangle.pages.dev/issue/1972
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
 
-**1/6** _(hook — attach image, NO link)_ · 208 chars
+**1/6** _(hook — attach image, NO link)_ · 218 chars
 ```
-A gazette backdated 22 years bypassed Selangor's public inquiry law. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
+A gazette backdated 22 years bypassed Selangor's public inquiry law, NGOs say. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
 ```
 **2/6** _(fact)_ · 117 chars
 ```
@@ -1441,9 +1441,9 @@ In September 2021, after the KLNFR excision went through, Selangor halted develo
 ```
 This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
 ```
-**6/6** _(view — ONLY post with the link)_ · 180 chars
+**6/6** _(view — ONLY post with the link)_ · 181 chars
 ```
-Tie standing rules to gazette publication date, enforce Section 12 replacement land, and adopt the NFA 2022 amendment across all states
+Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
 
 https://thefourthangle.pages.dev/issue/1971
 ```
@@ -1505,13 +1505,13 @@ Immigration detention centres held over 21,000 migrants and refugees in March 20
 ```
 The 3D jobs proposed in 2023 cover manufacturing, mining and construction. Domestic work and plantations sit outside them. The US State Department's 2025 trafficking report flags forced labour on palm oil plantations and among domestic workers.
 ```
-**5/6** _(reframe)_ · 138 chars
+**5/6** _(reframe)_ · 108 chars
 ```
-Registration serves the state and employers first. No coalition will expand beyond this. The DPP is likely both the floor and the ceiling.
+Registration serves the state and employers first. The test is whether the DPP becomes a floor or a ceiling.
 ```
-**6/6** _(view — ONLY post with the link)_ · 191 chars
+**6/6** _(view — ONLY post with the link)_ · 137 chars
 ```
-The DPP is the political maximum Malaysian democracy can produce now. The task is making this registration exercise function as actual protection.
+Whatever its political limits, the task now is making the DPP function as actual protection.
 
 https://thefourthangle.pages.dev/issue/1966
 ```
@@ -1535,13 +1535,13 @@ The Court ruled IEEPA does not authorise tariffs. Section 301 does: USTR may imp
 ```
 Chips make up 68% of Malaysia's E&E exports to the US, and American firms operating here ship 65% of those chips, then-trade minister Tengku Zafrul said in August 2025.
 ```
-**4/6** _(fact)_ · 115 chars
+**4/6** _(fact)_ · 92 chars
 ```
-A forced-labour probe across 60 economies hands the US a second front. Every coalition chose patronage over reform.
+A forced-labour probe across 60 economies, Malaysia among them, hands the US a second front.
 ```
-**5/6** _(reframe)_ · 150 chars
+**5/6** _(reframe)_ · 124 chars
 ```
-The court victory was a trap. Every government since Mahathir 1.0 chose procurement preferences over a US trade deal. Those consequences are arriving.
+The court victory was a trap. IEEPA tariffs fell, and Section 301 duties, if imposed, carry no fixed time limit or rate cap.
 ```
 **6/6** _(view — ONLY post with the link)_ · 207 chars
 ```
@@ -1690,7 +1690,7 @@ Deterrence requires detection. Compensation requires architecture. 4,340 motorcy
 https://thefourthangle.pages.dev/issue/1958
 ```
 
-### Issue 1957 — BYD Stalled, Proton Shielded, B40 Priced Out: Who Wins?
+### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
 
 > ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
@@ -1705,25 +1705,25 @@ MITI set an RM200K floor and an 80% export rule. BYD's Tanjung Malim plan stalle
 ```
 MITI's rule puts any Tanjung Malim-built BYD sold here above RM200K. BYD's imported Dolphin and Atto 3 already sell for less.
 ```
-**3/7** _(fact)_ · 174 chars
+**3/7** _(fact)_ · 98 chars
 ```
-Proton had 43 years of tariffs and subsidies. It still can't compete on price. Every party (BN, PH, PN) has extended the wall. 700,000 jobs includes 53,000 aftermarket shops.
+MITI minister Johari Abdul Ghani said the conditions protect a car industry of about 700,000 jobs.
 ```
 **4/7** _(fact)_ · 149 chars
 ```
 Thailand set conditions too: EV makers on its subsidy scheme had to build one car locally for each import in 2024. BYD's Thai plant opened that July.
 ```
-**5/7** _(reframe)_ · 78 chars
+**5/7** _(reframe)_ · 29 chars
 ```
-After 43 years of protection and zero exit plan, who is the wall actually for?
+Who is the wall actually for?
 ```
-**6/7** _(analogy)_ · 155 chars
+**6/7** _(analogy)_ · 121 chars
 ```
-Like building a wall around a garden that stopped growing 20 years ago. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
+Like building a wall around a garden. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
 ```
-**7/7** _(view — ONLY post with the link)_ · 139 chars
+**7/7** _(view — ONLY post with the link)_ · 146 chars
 ```
-700,000 jobs deserve an honest transition, not an indefinite regressive tax on the bottom 40%.
+700,000 jobs deserve an honest transition, not a price floor that cordons off the affordable segment.
 
 https://thefourthangle.pages.dev/issue/1957
 ```
@@ -1943,9 +1943,9 @@ https://thefourthangle.pages.dev/issue/1887
 ```
 ESSCOM marks 13 years: zero kidnappings since 2020, but its Pulau Mabul forward base was only 41% complete in October 2025 The 2013 Lahad Datu incursion left at least 68 intruders and 10 security personnel dead. ESSCOM was set up on 1 April 2013.
 ```
-**2/6** _(fact)_ · 153 chars
+**2/6** _(fact)_ · 258 chars
 ```
-59 kidnapping attempts foiled and zero cases since January 2020, though decline also reflects Philippine ops against Abu Sayyaf and COVID border closures
+59 kidnapping attempts foiled and zero cases since 2020. The deputy home minister also credited Philippine operations against Abu Sayyaf. Pulau Mabul forward base only 41% complete after a decade, costs rose from RM52.81M to RM81.51M after contractor failure
 ```
 **3/6** _(fact)_ · 216 chars
 ```
@@ -2019,9 +2019,9 @@ Contract value escalated from the RM9.128 billion 2014 signing to RM11.22 billio
 ```
 MACC sent LCS papers on several individuals to the AGC in August 2022. Days later, former navy chief Ahmad Ramli Nor was charged.
 ```
-**4/6** _(fact)_ · 243 chars
+**4/6** _(fact)_ · 210 chars
 ```
-The Royal Malaysian Navy has waited ~7 years past the April 2019 contractual delivery date. Singapore commissioned comparable Littoral Mission Vessels years earlier. The delay created a capability gap relative to commissioned peer-navy assets.
+The Royal Malaysian Navy has waited ~7 years past the April 2019 contractual delivery date. Singapore commissioned its first Littoral Mission Vessel in May 2017. The delay created a capability gap for the navy.
 ```
 **5/6** _(reframe)_ · 170 chars
 ```
@@ -2053,9 +2053,9 @@ The project was scrapped in May 2018 and approved again on 4 March 2022. MRT Cor
 ```
 About 51 km orbital alignment with 10 interchange stations integrated with existing MRT, LRT, KTM and Monorail lines. Designed to close the Klang Valley rail loop. Secondary reporting cites a 2032 operational target.
 ```
-**4/6** _(fact)_ · 160 chars
+**4/6** _(fact)_ · 263 chars
 ```
-ECRL remains the larger ringgit-cost single rail project at RM74.96 billion total per MOT/MRL figures. MRT3 sits below ECRL but above other current rail builds.
+ECRL remains the larger ringgit-cost single rail project at RM74.96 billion total per MOT/MRL figures, against MRT3's target of under RM45 billion. TI-Malaysia called for an Independent Expert Monitor and integrity pact before MRT3 tender documents are finalised.
 ```
 **5/6** _(reframe)_ · 142 chars
 ```
@@ -2674,25 +2674,25 @@ Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spie
 ```
 Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
 ```
-**3/7** _(fact)_ · 162 chars
+**3/7** _(fact)_ · 163 chars
 ```
-Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: 'no evidence has been presented to us'.
+Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
 ```
 **4/7** _(fact)_ · 161 chars
 ```
 Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
 ```
-**5/7** _(reframe)_ · 170 chars
+**5/7** _(reframe)_ · 147 chars
 ```
-The Deep South needs no imported villain. It has a 22-year fight over Malay land, language and self-rule, 333 billion baht in Thai border plans, and 5,989 certified dead.
+The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
 ```
 **6/7** _(analogy)_ · 125 chars
 ```
 Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
 ```
-**7/7** _(view — ONLY post with the link)_ · 224 chars
+**7/7** _(view — ONLY post with the link)_ · 202 chars
 ```
-Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok pointed at this year is Malaysia. Kelantan police still await the evidence.
+Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
 
 https://thefourthangle.pages.dev/issue/2014
 ```
@@ -2849,7 +2849,7 @@ The vernacular school fight is stuck on unity vs culture. The courts settled the
 ```
 **2/6** _(fact)_ · 113 chars
 ```
-69% of middle-class Malay parents preferred SJKC for academic quality, but no data proves SJKC is actually better
+69% of middle-class Malay parents preferred SJKC for academic quality, a reputation ISEAS describes as perceived.
 ```
 **3/6** _(fact)_ · 145 chars
 ```
@@ -2863,9 +2863,9 @@ Citizen enrolment in international schools rose 34% from 2019 to 2024. Class is 
 ```
 The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
 ```
-**6/6** _(view — ONLY post with the link)_ · 170 chars
+**6/6** _(view — ONLY post with the link)_ · 175 chars
 ```
-Stop debating whether vernacular schools should exist. Start asking why national schools keep losing the families they serve.
+Stop debating whether vernacular schools should exist. Start asking why more families now choose other schools over national ones.
 
 https://thefourthangle.pages.dev/issue/1967
 ```
