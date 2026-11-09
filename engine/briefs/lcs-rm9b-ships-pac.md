@@ -102,6 +102,17 @@ Totals: 15 VERIFIED, 9 PARTLY, 1 UNVERIFIED, 3 CONTRADICTED, 0 STALE-SINCE-PUBLI
 - Press across the spectrum: The Star, Malay Mail, FMT, The Edge, The Sun, Bernama, The Vibes.
 - **Only two primary sources.** parlimen.gov.my (PAC report and Hansard) returned HTTP 503 or connection resets throughout this session, and the Auditor-General's LKAN portal returned HTTP 503, so the PAC report, the declassified governance-committee report and both Auditor-General reports are cited through news coverage. An editor with access should add the PAC report (parlimen.gov.my/pac/review/docs-257-312.pdf) and the declassified report.
 
+## CORRECTION (2026-11-09)
+
+Edition 5 of issue 0154:
+
+- **Headline, hook, reframe:** "RM6.08B spent" (PAC, at October 2021) replaced by MINDEF's "about RM8.3 billion" (74% of contract value, 28 Jan 2026) [1]. The context keeps PAC's 2022 figure, labelled as paid at the time of the 2022 report [5, 6].
+- **Hook sub:** "contract signed 2011" corrected to "awarded 2011, contract signed July 2014" (letter of award 16 Dec 2011; contract signed 17 Jul 2014) [10]. This matches issue 1805.
+- **Governance card sub:** the unchecked Malay quote and "progress-payment schedule weakly tied to milestones" (likely inverted) are replaced by the reported PAC finding (63.8% paid for the first ship against 42.7% of work done) [5] and the 2023 contract's move "from milestone activity to progress of works" [12].
+- **Critical card:** adds that the former BNS managing director's CBT charge ended in a discharge not amounting to acquittal on 12 Mar 2025, after a hospital report found him unfit to stand trial [16]. This matches issue 1805. Removed the unverified "failed due diligence" and the untraced LTAT link; "weak finances" and "direct negotiation" stay [5, 6]. "MACC investigation papers were completed by" changed to "MACC sent investigation papers to the AGC in" [7].
+- **Context, view (update):** first delivery moved to April 2027, with a damages notice to LUNAS (8 Oct 2026) [20]. The view's "MACC charges" now reads "a CBT charge that ended in a DNAA".
+- **Not changed:** analogy (describes the 2022 position: RM6B paid against a RM9B contract, then renegotiation).
+
 ## SOURCES
 
 1. **[P]** Ministry of Defence Malaysia, *Menteri Pertahanan Berada di Dewan Rakyat bagi Menjawab Pertanyaan Berhubung Status Pembinaan Kapal Tempur Pesisir (LCS) 1*, 28 Jan 2026. https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1
