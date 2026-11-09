@@ -120,7 +120,7 @@
         <span class="brand-tagline">Read past the first telling.</span>
       </div>
     </a>
-    <div style="display:flex;align-items:center;gap:4px;">
+    <div style="display:flex;align-items:center;gap:4px;flex-shrink:0;">
       {#if onBrowseToggle}
         <button
           type="button"
@@ -211,6 +211,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    min-width: 0;
     min-height: 44px;
     text-decoration: none;
     border-radius: var(--radius-lg);
@@ -220,6 +221,7 @@
     display: flex;
     align-items: baseline;
     gap: 0 10px;
+    min-width: 0;
   }
 
   .brand-name {
@@ -228,6 +230,9 @@
     color: var(--text-primary);
     letter-spacing: -0.015em;
     white-space: nowrap;
+    /* At large text sizes the name truncates rather than push the icons off-screen. */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .brand-tagline {

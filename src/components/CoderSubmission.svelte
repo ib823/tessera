@@ -95,12 +95,15 @@
   .cs { max-width: 760px; font-family: var(--font-body); display: flex; flex-direction: column; gap: 14px; }
   .cs label { display: flex; flex-direction: column; gap: 4px; font-size: var(--text-xs); color: var(--text-tertiary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
   .cs input, .cs select { font-family: var(--font-body); font-size: var(--text-body); color: var(--text-primary); background: var(--bg); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 7px 9px; }
-  .cs__block { border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 14px; display: flex; flex-direction: column; gap: 10px; background: var(--card); }
+  /* min-width: 0 overrides the fieldset default (min-content), which widened the page on phones. */
+  .cs__block { min-width: 0; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 14px; display: flex; flex-direction: column; gap: 10px; background: var(--card); }
   .cs__block legend { font-family: var(--font-display); font-weight: 800; color: var(--text-primary); padding: 0 6px; }
   .cs__dim { border-top: 1px solid var(--border-light); padding-top: 8px; }
   .cs__dimhead { font-size: var(--text-body); color: var(--text-secondary); margin-bottom: 5px; }
   .cs__dimhead b { font-family: var(--font-display); color: var(--text-primary); }
-  .cs__row { display: flex; gap: 8px; }
+  /* The text field wraps under the score on narrow screens instead of widening the page. */
+  .cs__row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cs__why { flex: 1 1 12rem; min-width: 0; }
   .cs__row select { flex-shrink: 0; }
   .cs__why { flex: 1; }
   .cs__rm { align-self: flex-start; background: none; border: 0; color: var(--score-critical, var(--status-red)); font-size: var(--text-xs); cursor: pointer; padding: 2px 0; }

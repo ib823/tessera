@@ -249,6 +249,7 @@
   }
   .rp-meta-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
     gap: 16px;
@@ -260,6 +261,8 @@
   }
   .rp-meta-row dd {
     margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
     color: var(--text-primary, #212529);
     font-variant-numeric: tabular-nums;
   }

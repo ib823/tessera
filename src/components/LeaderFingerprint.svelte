@@ -148,7 +148,7 @@
 </article>
 
 <style>
-  .fp {
+  .fp { min-width: 0;
     background: var(--card);
     border: 1px solid var(--border-light);
     border-radius: var(--radius-lg);
@@ -159,18 +159,19 @@
     font-family: var(--font-body);
   }
   .fp--bench { border-style: dashed; }
-  .fp__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .fp__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .fp__head > :first-child { min-width: 0; }
   .fp__name {
     font-family: var(--font-display); font-weight: 700; font-size: var(--text-reading);
     color: var(--text-primary); margin: 0; letter-spacing: -0.02em; line-height: 1.15;
   }
   .fp__role { font-size: var(--text-micro); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.06em; }
-  .fp__tags { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
+  .fp__tags { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; max-width: 100%; }
   .fp__country { font-family: var(--font-display); font-weight: 700; font-size: var(--text-micro); color: var(--text-tertiary); letter-spacing: 0.08em; }
   .fp__party {
     font-size: var(--text-micro); color: var(--text-secondary);
     background: var(--bg-sunken); border-radius: var(--radius-pill);
-    padding: 2px 8px; max-width: 160px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    padding: 2px 8px; max-width: min(160px, 100%); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     /* desaturated by design: identity, never rank */
   }
   .fp__statusband {
@@ -198,7 +199,8 @@
   }
   .fp__trackname--conduct { color: var(--card-fact-color); border-color: var(--card-fact-color); }
   .fp__trackname--delivery { color: var(--card-reframe-color); border-color: var(--card-reframe-color); }
-  .fp__row { display: grid; grid-template-columns: minmax(96px, 1.3fr) minmax(70px, 1fr) auto; align-items: center; gap: 8px; }
+  /* minmax(0, …): rows shrink with a narrow card instead of widening the page (WCAG 1.4.10). */
+  .fp__row { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(48px, 1fr) auto; align-items: center; gap: 8px; }
   .fp__dim { font-size: var(--text-xs); color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .fp__dim b { color: var(--text-primary); font-family: var(--font-display); }
   .fp__track-meter { height: 8px; background: var(--bg-sunken); border-radius: var(--radius-pill); overflow: hidden; position: relative; }

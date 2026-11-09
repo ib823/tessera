@@ -34,7 +34,7 @@ import UtilityFooter from '../components/UtilityFooter.astro';
         <h2 style="font-family:var(--font-display);font-size: var(--text-reading-lg);font-weight:700;color:var(--text-primary);margin:0 0 8px 0;letter-spacing:-0.03em;">The Editorial Audit</h2>
         <p style="font-family:var(--font-body);font-size: var(--text-body);line-height:1.6;color:var(--text-secondary);margin:0 0 16px 0;">Every issue shows how each editorial stage assessed it. A Flagged or Disputed score means that stage challenged the draft. In our current process, the synthesis stage corrects or drops what was challenged before publication.</p>
         <!-- Example: PA=85(green/circle), BA=62(amber/triangle), FC=88(green/circle), AF=76(green/circle), CT=52(amber/triangle), SR=78(green/circle) -->
-        <div style="display:flex;align-items:center;gap:0;padding:12px 16px;background:var(--amber-bg);border:1px solid rgba(44,34,21,0.05);border-radius: var(--radius-md);margin-bottom:16px;">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 0;padding:12px 16px;background:var(--amber-bg);border:1px solid rgba(44,34,21,0.05);border-radius: var(--radius-md);margin-bottom:16px;">
           <div style="display:flex;align-items:center;gap:8px;flex:1;">
             <!-- PA: 85 → circle (green) -->
             <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
@@ -74,17 +74,17 @@ import UtilityFooter from '../components/UtilityFooter.astro';
         </div>
         <!-- Legend: shapes match Editorial Audit component -->
         <div style="display:flex;flex-direction:column;gap:10px;font-family:var(--font-body);font-size: var(--text-body);color:var(--text-secondary);line-height:1.5;">
-          <div style="display:flex;align-items:center;gap:8px;">
+          <div style="display:grid;grid-template-columns:auto minmax(0, 1fr);align-items:center;gap:8px;">
             <div style="width:8px;height:8px;border-radius: var(--radius-round);background:var(--status-green);flex-shrink:0;"></div>
-            <strong style="font-weight:600;">Circle</strong> — Balanced (75+) — stage found no significant issues
+            <span><strong style="font-weight:600;">Circle</strong> — Balanced (75+) — stage found no significant issues</span>
           </div>
-          <div style="display:flex;align-items:center;gap:8px;">
+          <div style="display:grid;grid-template-columns:auto minmax(0, 1fr);align-items:center;gap:8px;">
             <div style="width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-bottom:8px solid var(--score-warning);flex-shrink:0;"></div>
-            <strong style="font-weight:600;">Triangle</strong> — Flagged (50–74) — stage found moderate concerns
+            <span><strong style="font-weight:600;">Triangle</strong> — Flagged (50–74) — stage found moderate concerns</span>
           </div>
-          <div style="display:flex;align-items:center;gap:8px;">
+          <div style="display:grid;grid-template-columns:auto minmax(0, 1fr);align-items:center;gap:8px;">
             <div style="width:7px;height:7px;background:var(--score-critical);transform:rotate(45deg);flex-shrink:0;"></div>
-            <strong style="font-weight:600;">Diamond</strong> — Disputed (&lt;50) — stage challenged significant parts of the draft
+            <span><strong style="font-weight:600;">Diamond</strong> — Disputed (&lt;50) — stage challenged significant parts of the draft</span>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@ import UtilityFooter from '../components/UtilityFooter.astro';
           <span style="font-family:var(--font-display);font-size: var(--text-body);font-weight:700;color:var(--score-warning);">76</span>
           <span style="font-family:var(--font-body);font-size: var(--text-xs);font-weight:600;color:var(--text-secondary);">Significant</span>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(9rem, 100%), 1fr));gap:8px;">
           <div style="display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">
             <span style="font-family:var(--font-display);font-size: var(--text-ui);font-weight:700;color:var(--score-strong);">80–100</span>
             <span style="font-family:var(--font-body);font-size: var(--text-sm);color:var(--text-secondary);">Fundamental</span>
@@ -159,7 +159,7 @@ import UtilityFooter from '../components/UtilityFooter.astro';
         <div style="display:flex;flex-direction:column;gap:16px;">
           <div>
             <p style="font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;color:var(--text-tertiary);margin:0 0 6px;text-transform:uppercase;letter-spacing:0.08em;">Tone & Framing</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(9rem, 100%), 1fr));gap:8px;">
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Tone</span>
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Narrative framing</span>
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Certainty</span>
@@ -168,7 +168,7 @@ import UtilityFooter from '../components/UtilityFooter.astro';
           </div>
           <div>
             <p style="font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;color:var(--text-tertiary);margin:0 0 6px;text-transform:uppercase;letter-spacing:0.08em;">Source & Completeness</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(9rem, 100%), 1fr));gap:8px;">
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Source diversity</span>
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Completeness</span>
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Geographic balance</span>
@@ -177,7 +177,7 @@ import UtilityFooter from '../components/UtilityFooter.astro';
           </div>
           <div>
             <p style="font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;color:var(--text-tertiary);margin:0 0 6px;text-transform:uppercase;letter-spacing:0.08em;">Identity & Representation</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(9rem, 100%), 1fr));gap:8px;">
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Political lean</span>
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Ethnic framing</span>
               <span style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-secondary);padding:10px 12px;background:var(--bg-elevated);border-radius: var(--radius-md);">Religious sensitivity</span>
@@ -208,7 +208,7 @@ import UtilityFooter from '../components/UtilityFooter.astro';
       <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:28px;">
         <div style="text-align:center;">
           <p style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-tertiary);margin:0 0 4px 0;">Contact</p>
-          <a href="mailto:thefourthangle@proton.me" style="font-family:var(--font-body);font-size: var(--text-body);font-weight:600;color:var(--focus);text-decoration:none;">thefourthangle@proton.me</a>
+          <a href="mailto:thefourthangle@proton.me" style="overflow-wrap:anywhere;font-family:var(--font-body);font-size: var(--text-body);font-weight:600;color:var(--focus);text-decoration:none;">thefourthangle@proton.me</a>
         </div>
         <div style="text-align:center;">
           <a href="/disclaimer" style="font-family:var(--font-body);font-size: var(--text-ui);color:var(--text-tertiary);text-decoration:none;">Disclaimer & Legal Notice</a>
