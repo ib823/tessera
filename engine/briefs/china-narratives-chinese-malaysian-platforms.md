@@ -159,6 +159,7 @@ The **reframe card** (if pursued) should rotate the frame from "who is propagand
 23. Wikipedia entry on Media Chinese International — for ownership structure cross-check only; not citable as primary.
 24. Oriental Daily News, "大马各族对中国好感不一　欧阳玉靖：马中关系整体趋向前发展 (Views of China vary among Malaysia's ethnic groups)", 25 May 2022, https://www.orientaldaily.com.my/news/nation/2022/05/25/488529
 25. Laws of Malaysia, "Online Safety Act 2025 (Act 866), section 2(2)", Royal Assent 6 May 2025; published in the Gazette 22 May 2025, https://www.wccpenang.org/wp-content/uploads/2025/07/Online-Safety-Act-2025.pdf [PRIMARY]
+26. 12371.cn (Communist Party of China members' portal), reproducing the statute, "中华人民共和国国家情报法 (National Intelligence Law of the People's Republic of China), Article 7", Adopted 27 Jun 2017; amended 27 Apr 2018, https://www.12371.cn/2020/06/11/ARTI1591823814040380.shtml [PRIMARY]
 
 **Related published T4A issues (for Sherlock connection scan if this proceeds):**
 - 1823 — South China Sea Chinese Vessel Incursions Rise 45 Percent

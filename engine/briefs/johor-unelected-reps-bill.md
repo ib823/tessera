@@ -139,6 +139,8 @@ The amendment requires the Sultan's consent. Per the T4A Accuracy Standard, clai
 33. China Press (Johor), "柔州增5官委议员 9组织促优先委任女性 (Johor adds 5 appointed assemblymen; 9 organisations urge priority appointment of women)", 7 May 2026, https://johor.chinapress.com.my/20260507/%E6%9F%94%E5%B7%9E%E5%A2%9E5%E5%AE%98%E5%A7%94%E8%AE%AE%E5%91%98-9%E7%BB%84%E7%BB%87%E4%BF%83%E4%BC%98%E5%85%88%E5%A7%94%E4%BB%BB%E5%A5%B3%E6%80%A7/ [S]
 34. The Star, "Closing the political gender gap", 20 Sep 2025, https://www.thestar.com.my/news/nation/2025/09/20/closing-the-political-gender-gap [S]
 35. Pahang State Government, "Lima ADUN Lantikan Selesai Angkat Sumpah Hari Ini", 5 Sep 2024, https://www.pahang.gov.my/pahang/resources/PDF/Berita/2024/September/%285hb%29_LIMA_ADUN_LANTIKAN_SELESAI_ANGKAT_SUMPAH_HARI_INI.pdf [PRIMARY]
+36. DayakDaily, "Sarawak Legislative Assembly passes Bill to increase elected members from 82 to 99", 7 Jul 2025, https://dayakdaily.com/sarawak-legislative-assembly-passes-bill-to-increase-elected-members-from-82-to-99 [S]
+37. Free Malaysia Today, "Sarawak assembly passes bill to increase seats to 99", 7 Jul 2025, https://www.freemalaysiatoday.com/category/nation/2025/07/07/sarawak-assembly-passes-bill-to-increase-seats-to-99 [S]
 
 ## CONTRADICTIONS
 
