@@ -11,14 +11,21 @@
  * For bot-posted use we bump the branding ~70% vs the user-share variant
  * since T4A is the publisher here, not the user sharing.
  *
- * Fonts: Manrope 700 + Nunito Sans 400 from @fontsource, converted from
- * woff2 to TTF at build start with wawoff2, embedded into every SVG as
- * a base64 @font-face data URI. librsvg (via sharp) loads them directly
- * — no fontconfig install step required.
+ * Fonts: Manrope 700/800 + Nunito Sans 400/600 from @fontsource, converted
+ * from woff2 to TTF at build start and registered with node-canvas, which
+ * draws from those files. (SVG text through sharp/librsvg ignores embedded
+ * @font-face and falls back to the machine's fonts, which differ on CI.)
+ *
+ * The statement is never cut. It is wrapped by measured width, and a long
+ * statement steps down in size until it fits the text area. A statement
+ * that cannot fit even at the smallest size is left out of the index, so
+ * the bot never posts an image that drops words.
  */
 import sharp from 'sharp';
 import wawoff from 'wawoff2';
-import { mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { createCanvas, registerFont } from 'canvas';
+import { mkdirSync, mkdtempSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIssues } from './lib/load-issues.mjs';
@@ -36,7 +43,7 @@ for (const file of readdirSync(outDir)) {
   }
 }
 
-// ── Fonts: convert woff2 from @fontsource to TTF, base64-encode for inlining ──
+// ── Fonts: convert woff2 from @fontsource to TTF and register with canvas ──
 const FONTSOURCE = join(root, 'node_modules', '@fontsource');
 const fontSpecs = [
   { family: 'Manrope', weight: 700, src: join(FONTSOURCE, 'manrope/files/manrope-latin-700-normal.woff2') },
@@ -46,15 +53,13 @@ const fontSpecs = [
 ];
 
 console.log('Loading fonts...');
-const fontFaceCss = [];
+const fontDir = mkdtempSync(join(tmpdir(), 't4a-social-'));
 for (const f of fontSpecs) {
   const ttf = await wawoff.decompress(readFileSync(f.src));
-  const b64 = Buffer.from(ttf).toString('base64');
-  fontFaceCss.push(
-    `@font-face { font-family: '${f.family}'; src: url(data:font/ttf;base64,${b64}) format('truetype'); font-weight: ${f.weight}; font-style: normal; }`,
-  );
+  const file = join(fontDir, `${f.family.replace(/\s+/g, '-')}-${f.weight}.ttf`);
+  writeFileSync(file, Buffer.from(ttf));
+  registerFont(file, { family: f.family, weight: String(f.weight) });
 }
-const FONT_FACE_BLOCK = fontFaceCss.join('\n      ');
 
 const issues = loadIssues();
 const published = issues.filter((i) => i.published);
@@ -70,12 +75,14 @@ const CARD_WEIGHTS = {
 // ── Layout — calibrated for "intellectual editorial" register ──
 const W = 1080;
 const H = 1350;
-const FONT_DISPLAY = "'Manrope', sans-serif";
-const FONT_BODY = "'Nunito Sans', sans-serif";
+const FONT_DISPLAY = '"Manrope"';
+const FONT_BODY = '"Nunito Sans"';
 
-const STATEMENT_PX = 48;
-const LINE_HEIGHT_PX = 66;
-const STATEMENT_MAX_CHARS = 26; // tuned for Manrope-700 at 48px on 900px content width
+const STATEMENT_PX = 48; // preferred size; long statements step down from here
+const MIN_STATEMENT_PX = 34;
+const LINE_HEIGHT_RATIO = 66 / 48;
+const CONTENT_W = 900;
+const TEXT_BUDGET_PX = 7 * 66; // the height seven lines take at 48px
 const GAP_AFTER_STATEMENT = 90;
 const T4A_WORDMARK_PX = 48;
 const FOURTH_ANGLE_PX = 24;
@@ -103,47 +110,73 @@ function extractTopicKeywords(text) {
   return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10).map(([k]) => k);
 }
 
-function escapeXml(s) {
-  return s
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
-}
-
-function wrap(text, maxChars) {
-  const words = text.split(/\s+/);
+// Wrap by measured width in the current font. Lossless: every word lands on
+// a line, so joining the lines gives back the statement.
+function wrap(ctx, text, maxWidth) {
+  const words = text.trim().split(/\s+/);
   const lines = [];
-  let cur = [];
-  let len = 0;
+  let line = '';
   for (const word of words) {
-    const need = (cur.length ? 1 : 0) + word.length;
-    if (len + need > maxChars && cur.length) {
-      lines.push(cur.join(' '));
-      cur = [word];
-      len = word.length;
+    const test = line ? `${line} ${word}` : word;
+    if (line && ctx.measureText(test).width > maxWidth) {
+      lines.push(line);
+      line = word;
     } else {
-      cur.push(word);
-      len += need;
+      line = test;
     }
   }
-  if (cur.length) lines.push(cur.join(' '));
+  if (line) lines.push(line);
   return lines;
 }
 
-function buildSvg(statement) {
-  const lines = wrap(statement, STATEMENT_MAX_CHARS).slice(0, 7);
-  const textH = lines.length * LINE_HEIGHT_PX;
+// Largest size from STATEMENT_PX down whose wrapped lines all fit the
+// content width and the text budget; null if none does.
+function fitStatement(ctx, statement) {
+  for (let px = STATEMENT_PX; px >= MIN_STATEMENT_PX; px -= 2) {
+    ctx.font = `700 ${px}px ${FONT_DISPLAY}`;
+    const lineHeight = Math.round(px * LINE_HEIGHT_RATIO);
+    const lines = wrap(ctx, statement, CONTENT_W);
+    const fitsWidth = lines.every((l) => ctx.measureText(l).width <= CONTENT_W);
+    if (fitsWidth && lines.length * lineHeight <= TEXT_BUDGET_PX) return { px, lineHeight, lines };
+  }
+  return null;
+}
+
+// Centered text with letter spacing (node-canvas has no ctx.letterSpacing).
+function drawSpaced(ctx, text, cx, y, spacing) {
+  const chars = [...text];
+  const widths = chars.map((c) => ctx.measureText(c).width);
+  const total = widths.reduce((a, b) => a + b, 0) + spacing * (chars.length - 1);
+  let x = cx - total / 2;
+  ctx.textAlign = 'left';
+  chars.forEach((c, k) => {
+    ctx.fillText(c, x, y);
+    x += widths[k] + spacing;
+  });
+  ctx.textAlign = 'center';
+}
+
+function drawCard(statement) {
+  const canvas = createCanvas(W, H);
+  const ctx = canvas.getContext('2d');
+  const fit = fitStatement(ctx, statement);
+  if (!fit) return null;
+
+  const textH = fit.lines.length * fit.lineHeight;
   // brand block: T4A (48) + 18 + "The Fourth Angle" (24) + 28 + tagline (16)
   const brandH = T4A_WORDMARK_PX + 18 + FOURTH_ANGLE_PX + 28 + TAGLINE_PX;
   const totalH = textH + GAP_AFTER_STATEMENT + brandH;
   const blockTop = (H - totalH) / 2 - 30;
 
-  const statementBaseline0 = blockTop + STATEMENT_PX;
-  const statementTspans = lines
-    .map((line, i) => `<tspan x="${W / 2}" y="${statementBaseline0 + i * LINE_HEIGHT_PX}">${escapeXml(line)}</tspan>`)
-    .join('');
+  ctx.fillStyle = '#000000';
+  ctx.fillRect(0, 0, W, H);
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'alphabetic';
+
+  ctx.fillStyle = '#FFFFFF';
+  ctx.font = `700 ${fit.px}px ${FONT_DISPLAY}`;
+  const baseline0 = blockTop + fit.px;
+  fit.lines.forEach((line, k) => ctx.fillText(line, W / 2, baseline0 + k * fit.lineHeight));
 
   const attribTop = blockTop + textH + GAP_AFTER_STATEMENT;
   const t4aY = attribTop + T4A_WORDMARK_PX; // baseline
@@ -151,31 +184,31 @@ function buildSvg(statement) {
   const taglineY = fourthAngleY + 28;
   const urlY = H - 70;
 
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-  <defs><style>
-      ${FONT_FACE_BLOCK}
-  </style></defs>
-  <rect width="${W}" height="${H}" fill="#000000"/>
+  ctx.font = `800 ${T4A_WORDMARK_PX}px ${FONT_DISPLAY}`;
+  drawSpaced(ctx, 'T4A', W / 2, t4aY, 1);
 
-  <text font-family="${FONT_DISPLAY}" font-weight="700" font-size="${STATEMENT_PX}" fill="#FFFFFF" text-anchor="middle">${statementTspans}</text>
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+  ctx.font = `700 ${FOURTH_ANGLE_PX}px ${FONT_DISPLAY}`;
+  drawSpaced(ctx, 'The Fourth Angle', W / 2, fourthAngleY, 0.5);
 
-  <text x="${W / 2}" y="${t4aY}" font-family="${FONT_DISPLAY}" font-weight="800" font-size="${T4A_WORDMARK_PX}" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">T4A</text>
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+  ctx.font = `400 ${TAGLINE_PX}px ${FONT_BODY}`;
+  ctx.fillText('Read past the first telling.', W / 2, taglineY);
 
-  <text x="${W / 2}" y="${fourthAngleY}" font-family="${FONT_DISPLAY}" font-weight="700" font-size="${FOURTH_ANGLE_PX}" fill="#FFFFFF" fill-opacity="0.7" text-anchor="middle" letter-spacing="0.5">The Fourth Angle</text>
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+  ctx.font = `600 ${URL_PX}px ${FONT_BODY}`;
+  drawSpaced(ctx, 'thefourthangle.pages.dev', W / 2, urlY, 0.5);
 
-  <text x="${W / 2}" y="${taglineY}" font-family="${FONT_BODY}" font-weight="400" font-size="${TAGLINE_PX}" fill="#FFFFFF" fill-opacity="0.5" text-anchor="middle">Read past the first telling.</text>
-
-  <text x="${W / 2}" y="${urlY}" font-family="${FONT_BODY}" font-weight="600" font-size="${URL_PX}" fill="#FFFFFF" fill-opacity="0.4" text-anchor="middle" letter-spacing="0.5">thefourthangle.pages.dev</text>
-</svg>`;
+  return { png: canvas.toBuffer('image/png'), fit };
 }
 
 async function renderCard(issue, cardIndex) {
   const card = issue.cards[cardIndex];
-  const svg = buildSvg(card.big);
+  const drawn = drawCard(card.big);
+  if (!drawn) return null;
   const outPath = join(outDir, `issue-${issue.id}-card${cardIndex}-1080x1350.png`);
-  await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(outPath);
-  return outPath;
+  await sharp(drawn.png).png({ compressionLevel: 9 }).toFile(outPath);
+  return drawn.fit;
 }
 
 console.log(`Building social cards for ${published.length} published issues...`);
@@ -183,6 +216,8 @@ console.log(`Building social cards for ${published.length} published issues...`)
 const cards = [];
 let rendered = 0;
 let errors = 0;
+let shrunk = 0;
+const unfit = [];
 
 for (const issue of published) {
   if (!Array.isArray(issue.cards)) continue;
@@ -195,7 +230,13 @@ for (const issue of published) {
     if (!card.big) continue;
 
     try {
-      await renderCard(issue, i);
+      const fit = await renderCard(issue, i);
+      if (!fit) {
+        // Too long to show whole: leave it out rather than post a cut statement.
+        unfit.push(`${issue.id}#${i}`);
+        continue;
+      }
+      if (fit.px < STATEMENT_PX) shrunk++;
       rendered++;
     } catch (err) {
       console.error(`  ERROR rendering issue ${issue.id} card ${i}:`, err.message);
@@ -234,7 +275,8 @@ writeFileSync(
   }, null, 2),
 );
 
-console.log(`  Rendered ${rendered} card images (${errors} errors)`);
+console.log(`  Rendered ${rendered} card images (${errors} errors); ${shrunk} set below ${STATEMENT_PX}px to fit`);
+if (unfit.length) console.warn(`  WARN: ${unfit.length} card(s) too long to show whole, left out of the index: ${unfit.join(', ')}`);
 console.log(`  Wrote index: ${cards.length} entries → public/social-card-index.json`);
 
 if (errors > 0) process.exit(1);
