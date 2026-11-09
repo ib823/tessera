@@ -1,110 +1,129 @@
-# ISSUE 1995 — Singapore Charged Three Over Nvidia Chips Routed Via Malaysia. Johor Kept Building.
+# BRIEF: Singapore charged a fourth person in the Nvidia-linked server fraud case; Malaysia added a permit for US AI chips; no Malaysian operator has been charged
+
+**Issue ID:** 1995
+**Slug:** chip-export-controls-johor-dc-risk
+**Source date:** 2026-05-17
+**Backfill date: 2026-11-08**
+**Brief status:** Verified and completed in the 2026-11-08 source-list backfill. The earlier draft's placeholders ("NEEDS VERIFICATION", "or equivalent title") are resolved or removed; unverified items from that draft are listed at the end, not deleted silently. Issue cards unchanged; findings below are for the editor.
+
+## ISSUE
+
+Singapore charged three men on 27 February 2025 with fraud by false representation on suppliers of servers; Singapore's Home Affairs Minister said the servers may contain Nvidia chips and went to Malaysia, final destination unknown. A fourth person, the CFO of Aperia International, was charged on 2 April 2026. Malaysia's MITI said in March and June 2025 that the chips were not controlled under the Strategic Trade Act 2010, then on 14 July 2025 made exports, transhipment and transit of high-performance US-origin AI chips subject to a Strategic Trade Permit. Up to this backfill no Malaysian operator has been publicly charged. Since publication Singapore has added charges against all four individuals and charged four companies (1 July 2026).
 
 ## PERIOD
-January 2025 – May 2026
 
-## CONTEXT (Timeline)
-- 13 Jan 2025: Biden-era BIS issues the "Framework for Artificial Intelligence Diffusion" (the "AI Diffusion Rule") — three-tier export-control system; Malaysia placed in **Tier 2** (annual chip caps, validated end-user requirements).
-- 23 Jan 2025: Trump executive order "Removing Barriers to American Leadership in Artificial Intelligence" revokes the Biden AI EO; signals review of all AI export rules.
-- 27 Feb 2025: Singapore Police Force announces charges against three men under the Penal Code for fraud / false representation linked to the sale of servers containing Nvidia AI accelerators. Singapore Home Affairs Minister K. Shanmugam states the servers in question moved from Singapore **to Malaysia**, with their final destination "an open question." [NEEDS VERIFICATION on exact phrasing.]
-- Feb–Mar 2025: Bloomberg, Reuters, and Wall Street Journal report DOJ and Commerce Department investigations into whether high-end Nvidia chips routed via Singapore/Malaysia ended up at Chinese AI firms (DeepSeek named in some reports).
-- Mar 2025: Malaysia's Trade Minister (then Tengku Zafrul, MITI) publicly commits that any Malaysian company named in a US diversion probe will be investigated under domestic law; no findings released to date. [NEEDS VERIFICATION on exact date and forum.]
-- 13 May 2025: US Commerce Secretary Howard Lutnick announces rescission of the AI Diffusion Rule before its 15 May enforcement date; BIS issues guidance signalling case-by-case licensing for advanced AI chips and explicit warning on diversion enforcement and Huawei Ascend chip use.
-- 2024–2026: Johor approves the largest data-centre build-out in Southeast Asia. Public figures (MIDA, Johor state government, MITI) describe **more than 80 data-centre projects approved** and announced/contracted capacity of **at least ~5 GW**. Major anchor tenants include Microsoft, Google, AWS, ByteDance, YTL Power, GDS, Bridge Data Centres, Princeton Digital Group, AirTrunk, Equinix.
-- 2025–2026: Power-demand concerns raised by TNB and Energy Commission; Sedenak Tech Park and YTL Green Data Center Park expand; PM Anwar's government signals selective approval (high-value DC, not all DC).
-- May 2026: No US designation of any Malaysian data-centre operator as a sanctioned diversion hub has been published as of the date of this brief, but BIS case-by-case licensing remains the operative framework and the Singapore prosecution is active. [Status as of 2026-05-17 — NEEDS VERIFICATION via current BIS Federal Register notices and Singapore court docket.]
+January 2025 to November 2026.
+
+## CONTEXT (timeline with sources)
+
+- 13 Jan 2025: BIS "Framework for Artificial Intelligence Diffusion" takes effect (interim final rule, 90 FR 4544, published 15 Jan 2025); compliance date 15 May 2025 [5][7].
+- 26 to 27 Feb 2025: Singapore Police and Customs raid 22 locations and arrest nine; three men charged on 27 Feb for fraud by false representation on suppliers of servers [1]. Press names them as Singaporeans Aaron Woon Guo Jie and Alan Wei Zhaolun and Chinese national Li Ming [12][13].
+- 3 Mar 2025: Minister K. Shanmugam: "We assessed that the servers may contain Nvidia chips"; "the servers went to Malaysia"; whether Malaysia was the final destination "we do not know for certain" [2].
+- 17 Mar 2025: MITI tells StarBiz the STA 2010 was not violated and the AI chips are not in the Strategic Items List [14].
+- 13 May 2025: BIS announces rescission of the AI Diffusion Rule and instructs enforcement officials not to enforce it [6].
+- 18 Jun 2025: MITI: servers using Nvidia and AI chips "are not classified as controlled goods" under the STA 2010; MITI verifying media reports about a Chinese company's use of such servers in Malaysia [8].
+- 14 Jul 2025: MITI: "effective immediately", exports, transhipment and transit of high-performance AI chips of US origin need a Strategic Trade Permit, under the s.12 catch-all of the STA 2010, pending review of listing in the Strategic Items List [9]. MITI's guideline sets corporate penalties of up to RM10 million (without knowledge) and RM20 million (with knowledge) [10].
+- 2 Apr 2026: Lim Jenny, CFO of Aperia International Pte Ltd, charged with conspiracy to commit fraud on Dell (s.120B read with s.424B Penal Code 1871), November 2023 to February 2025; CAD investigating 22 individuals and companies [3][15].
+- 12 May 2026: GAO decision B-337935: the 13 May 2025 press release is a rule for Congressional Review Act purposes; "the AI Diffusion Rule remains legally in effect until Commerce completes its planned rulemaking to rescind it" [7].
+- 1 Jul 2026: Singapore Police: additional charges against Wei, Woon, Li and Lim; Aperia International, A-Speed Infotech, Aperia Cloud Services (II) and Luxuriate Your Life charged; offences include fraud and money laundering; suppliers named as Dell, Super Micro Computer and Asus [4].
+- To 4 Nov 2026: MITI's 2026 media release index lists no release on AI-chip enforcement or charges [11].
 
 ## ACTORS
-- **US Bureau of Industry and Security (BIS)** — Issued the Diffusion Rule (Jan 2025), rescinded it (May 2025), now licences AI-chip exports case-by-case.
-- **US Department of Justice / Commerce Department** — Reported to be investigating chip diversion via Singapore and Malaysia; no public Malaysian indictments at time of brief.
-- **Nvidia Corporation** — Manufacturer of the H100/H200/B200 AI accelerators at the centre of the case; not a defendant.
-- **Singapore Police Force / AGC Singapore** — Charged three men 27 Feb 2025: a Singapore citizen, a permanent resident, and a Chinese national (names per SPF statement — NEEDS VERIFICATION on exact identities).
-- **Singapore Home Affairs Minister K. Shanmugam** — Public statement that servers moved Singapore → Malaysia.
-- **MITI / MIDA / Tengku Zafrul Aziz (then Investment, Trade and Industry Minister)** — Stated MY would investigate any named MY company; lead on DC investment promotion.
-- **Johor state government / Menteri Besar Onn Hafiz Ghazi** — Lead on Sedenak and Iskandar DC approvals.
-- **TNB / Suruhanjaya Tenaga (Energy Commission)** — Power supply to DC build-out.
-- **Hyperscaler anchor tenants** — Microsoft (USD 2.2 B Malaysia cloud investment announced May 2024), Google (USD 2 B announced May 2024), AWS (multi-year capacity build), ByteDance (Johor DC contract).
-- **Domestic DC operators** — YTL Power International (Sedenak Tech Park), GDS Holdings (Chinese operator with MY operations), Bridge Data Centres, Princeton Digital Group, AirTrunk, Equinix.
-- **Trump administration** — Set chip-export policy direction post Jan 2025; explicit on diversion-enforcement.
+
+- Singapore Police Force (Commercial Affairs Department) and Singapore Customs [1][3][4].
+- Singapore Minister for Home Affairs and Law K. Shanmugam [2].
+- Accused: Alan Wei Zhaolun, Aaron Woon Guo Jie, Li Ming, Lim Jenny; companies Aperia International, A-Speed Infotech, Aperia Cloud Services (II), Luxuriate Your Life [3][4][12][13].
+- Malaysia's Ministry of Investment, Trade and Industry (MITI) and the Strategic Trade Controller [8][9][10][14].
+- US Bureau of Industry and Security (BIS) [5][6]; US Government Accountability Office (GAO) [7].
+- Nvidia: chip maker named by the Singapore minister as the possible chip source; not a party.
 
 ## RELEVANT LAW
-- **US Export Administration Regulations (EAR), 15 CFR §§ 730–774** — Statutory framework for dual-use export controls; ECCN 3A090 covers advanced AI accelerators (Nvidia H100/H200, B200, etc.).
-- **BIS "Framework for AI Diffusion" (Interim Final Rule, 13 Jan 2025)** — Three-tier system; Malaysia in Tier 2 (annual chip caps, VEU programme requirement). Rescinded 13 May 2025.
-- **BIS guidance (May 2025)** — Case-by-case licensing for advanced AI chips; explicit warning against allowing US-controlled chips to be used to train Chinese AI models; Huawei Ascend chips deemed "covered" globally under EAR.
-- **US Foreign Direct Product Rule (FDPR)** — Extends US jurisdiction to non-US-made items containing or produced with US technology; central to enforcement against diversion through third countries.
-- **Singapore Penal Code, ss. 415, 417 (cheating) / s. 471 (false document)** — Charges reportedly framed under fraud / false-representation rather than direct export-control offence, since Singapore has its own Strategic Goods Control Act. [NEEDS VERIFICATION on exact sections.]
-- **Singapore Strategic Goods Control Act 2002** — Domestic export-control statute; would apply if items were intended for ultimate Chinese end-user.
-- **Malaysia Strategic Trade Act 2010 (Act 708)** — Domestic equivalent in Malaysia; criminalises export, trans-shipment or brokering of listed strategic items without permit. Penalty: corporate fine up to RM 1 million / individual up to 5 years' imprisonment.
-- **Malaysia Customs Act 1967** — Trans-shipment recording obligations.
 
-## KEY STATISTICS
-- **3** — Number of men charged in Singapore on 27 Feb 2025.
-- **~US$390 million / S$390 million** — Reported value of suspect transactions linked to the case. Currency in news reports has varied; both figures appear. The brief uses **"approximately S$390 million"** in cards unless Stage 3 verifies a single authoritative figure. [Source contradiction flagged below.]
-- **>80** — Data-centre projects approved in Johor (MIDA / MITI public statements 2024–2025). [NEEDS VERIFICATION of current figure.]
-- **~5 GW** — Announced/contracted DC capacity in Johor (industry tracker estimates, Cushman & Wakefield, Knight Frank, DC Byte 2024–2025).
-- **~20 GW** — Peninsular Malaysia peak electricity demand (Energy Commission, recent annual reports). 5 GW of DC load is therefore approximately a quarter of peninsular peak demand. [NEEDS VERIFICATION of latest peak figure.]
-- **USD 2.2 B** — Microsoft's announced Malaysia cloud-and-AI investment (May 2024).
-- **USD 2 B** — Google's announced Malaysia data-centre and cloud investment (May 2024).
-- **13 May 2025** — Date BIS rescinded the AI Diffusion Rule.
-- **15 May 2025** — Date the Diffusion Rule was scheduled to take enforcement effect (rescinded two days prior).
-- **Tier 2** — Malaysia's classification under the rescinded Diffusion Rule.
+- Strategic Trade Act 2010 (Act 708), s.12 catch-all: notice at least 30 days before export, transhipment or transit of unlisted items where misuse is known or suspected [9]; Directive of the Strategic Trade Controller No. 1/2025 (advanced AI chips) and its penalty table: individuals up to RM5 million or 5 years (without knowledge) and RM10 million or 10 years (with knowledge); corporations up to RM10 million and RM20 million [10]. (The earlier draft's "corporate fine up to RM1 million / 5 years" is not supported and has been removed.)
+- Singapore Penal Code 1871, s.424B (fraud by false representation) and s.120B (criminal conspiracy) [3]; CDSA money-laundering charges [4].
+- US Export Administration Regulations as amended by the AI Diffusion interim final rule, 90 FR 4544 [5].
 
-## 12-DIMENSION RISK ASSESSMENT
-1. **Sentiment** — MEDIUM: Mainstream Malaysian media has covered the DC boom favourably; the chip-diversion link is reported but treated as a Singapore story, not a Malaysian one.
-2. **Political** — HIGH: A US designation of any Malaysian DC as a diversion hub would create direct Trump-administration pressure on the Anwar government during an already tense tariff period.
-3. **Ethnic** — LOW: Trade/security issue, not communal.
-4. **Religious** — LOW.
-5. **Narrative** — CRITICAL: The Malaysian narrative is "AI-investment hub of Southeast Asia"; the Washington narrative is "diversion-risk Tier 2 country". Both can be true simultaneously, and the gap between them is the story.
-6. **Completeness** — MEDIUM: Singapore charges are public; DOJ/Commerce investigations are reported but not officially listed; specific Malaysian companies under US scrutiny are not publicly named.
-7. **Temporal** — HIGH: Singapore prosecution active; BIS case-by-case licensing live; Johor approvals continuing month-to-month.
-8. **Confidence** — MEDIUM-HIGH on the legal/statutory framework and the Singapore case existence; MEDIUM on the operational specifics (which MY companies, which chip volumes); LOW on the post-cutoff (Feb 2026–May 2026) status of US enforcement actions — Stage 3 should chase.
-9. **Sources** — MIXED: SPF press releases, BIS Federal Register notices, Reuters / Bloomberg / WSJ secondary, Cushman & Wakefield / DC Byte for DC capacity. Strong on primary law (EAR, BIS rules, Singapore Penal Code). Weak on the actual chip volumes diverted (commercially sensitive).
-10. **Geographic** — HIGH on Johor specificity; the issue does not generalise to Klang Valley DCs in the same way.
-11. **Economic** — CRITICAL: A US designation would impact USD-tens-of-billions of announced FDI.
-12. **Gender** — LOW.
+## CLAIM VERIFICATION
 
-## RECOMMENDED LENSES
-**Primary**: Economic, Security, Governance.
-Also defensible: Technology, Legal.
+| Claim (card / field) | Status | Source(s) | Note |
+|---|---|---|---|
+| Headline: "Singapore charged a fourth in the Nvidia chip case" | VERIFIED | 2, 3, 15 | SPF does not say "Nvidia"; the Nvidia link is the minister's assessment that the servers "may contain Nvidia chips" [2]. |
+| Headline, context, fact 3 sub, reframe, view: "No Malaysian operator faces charges yet" / "has been publicly named" | PARTLY | 1, 3, 4, 11 | Singapore's releases name only Singapore individuals and companies; MITI's 2026 release index shows no AI-chip enforcement release [11]. Absence cannot be proved, and non-public investigations cannot be ruled out. |
+| Context: "Singapore charged three men in Feb 2025 over servers the Home Affairs Minister linked to Nvidia AI chips bound for Malaysia" | VERIFIED | 1, 2 | |
+| Context: "A fourth was charged April 2026" | VERIFIED | 3 | 2 Apr 2026. |
+| Context and fact 3: "Malaysia put US AI chips under a Strategic Trade Permit on 14 July 2025" | VERIFIED | 9 | Precisely: "high-performance AI chips of US origin", exports, transhipment and transit. |
+| Hook: "three on 27 Feb 2025 (two Singaporeans and a Chinese national)" | VERIFIED | 1, 12, 13 | Nationalities from press reports; SPF gives only ages (40, 48, 51), while press gives 41, 49, 51. |
+| Hook: "a fourth on 2 April 2026" | VERIFIED | 3 | |
+| Hook sub: Shanmugam "said the servers possibly carried Nvidia chips and moved to Malaysia; the final destination was unknown" | VERIFIED | 2 | |
+| Fact 1: "The US 'Tier 2' label came from a rule that never officially named Malaysia" | VERIFIED | 5, 6 | The rule text contains neither "Malaysia" nor a "Tier 2" label [5]; BIS's release refers to "second-tier status" [6]. **Framing flag:** the same BIS release, as now published, lists among its 13 May 2025 actions "Imposing additional export licensing requirements for exports of SI chips to Malaysia and Thailand, due to known instances of diversion" [6] ("SI" is the page's current wording where "AI" is meant throughout). The card's "never officially named Malaysia" is true of the rule but a reader could take it to mean the US has not singled Malaysia out. Whether that bullet was in the release when first issued could not be confirmed. |
+| Fact 1: "BIS suspended enforcement before its main compliance date" | VERIFIED | 6, 7 | |
+| Fact 1 sub: "BIS issued the rule effective 13 Jan 2025" | VERIFIED | 5, 7 | Effective 13 Jan; published 15 Jan 2025. |
+| Fact 1 sub: "announced rescission 13 May 2025" | VERIFIED | 6 | |
+| Fact 1 sub: "GAO ruled in May 2026 the rule still stood until rulemaking completes" | VERIFIED | 7 | 12 May 2026. |
+| Fact 2: "Johor approved 51 data-centre projects worth RM183 billion; 17 operational" | UNVERIFIED | — | No source opened this session. Earlier pipeline notes attribute it to a Johor state statement reported 26 Nov 2025; The Star URL recorded there returned HTTP 404. |
+| Fact 2: "In November 2025 the state stopped approving lower-tier DCs" | UNVERIFIED | — | Same as above. |
+| Fact 2 sub: "Residents protested at a Johor DC site in February 2026, the first such protest in Malaysia" | UNVERIFIED | — | A Bloomberg report of 7 Feb 2026 is recorded in earlier pipeline notes; it returned HTTP 403 here. |
+| Fact 2 sub: "YTL, ByteDance and GDS have Johor footprints" | UNVERIFIED | — | Company pages opened did not state Johor locations. |
+| Fact 3: "Before that, MITI said the chips were not on the Strategic Items List" | VERIFIED | 8, 14 | 17 Mar 2025 and 18 Jun 2025. |
+| Fact 3 sub: "Penalties under the July 2025 directive reach RM10M (RM20M with knowledge)" | VERIFIED | 10 | Corporate penalties; individual penalties are lower fines plus prison. |
+| Reframe and analogy sub: "Fifteen months on" / "roughly five months after the Singapore charges" | VERIFIED | 1, 9 | 27 Feb 2025 to 14 Jul 2025 is about 4.5 months; February 2025 to May 2026 is 15 months. |
+| Reframe and view: "Johor tightened approvals" | UNVERIFIED | — | See fact 2. |
+| Reframe, analogy sub, view: "Bridge Data Centres swapped a Chinese tenant in February 2026, per Reuters" | UNVERIFIED | — | No source opened. Earlier pipeline notes attribute the report to Bloomberg (citing a lender memo), not Reuters; the attribution needs checking too. |
+| View: "Singapore charged four" | VERIFIED | 3 | Four individuals at source date. Since publication four companies were also charged [4]. |
+| View: "Malaysia wrote a permit" | VERIFIED | 9 | |
 
-## SOURCES
-1. **BIS, "Framework for Artificial Intelligence Diffusion," 90 Fed. Reg. 4544 (15 Jan 2025)** — Interim final rule; tier classifications; chip caps. *Primary.* https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion
-2. **BIS, "Rescission of Framework for AI Diffusion; Industry Guidance" (May 2025)** — Rescission notice + interim guidance. *Primary.* [NEEDS VERIFICATION of Federal Register cite.]
-3. **Singapore Police Force, "Three Men Charged Over Fraudulent Sale of Servers" (or equivalent SPF press release title), 27 Feb 2025** — *Primary.* https://www.police.gov.sg/Media-Room/News
-4. **Singapore Ministry of Home Affairs, statement by Minister K. Shanmugam in Parliament / media doorstop on the case (Feb/Mar 2025)** — *Primary.* https://www.mha.gov.sg
-5. **Reuters, "Singapore charges three with fraud in alleged Nvidia chip diversion case" (Feb 27, 2025)** — Secondary citing SPF. [NEEDS VERIFICATION on URL and exact headline.]
-6. **Bloomberg / WSJ reporting on DOJ and Commerce investigations into Malaysia-routed chip shipments (Feb–Mar 2025)** — Secondary; cite specific articles in Stage 3 verification.
-7. **Tengku Zafrul Aziz, MITI ministerial statement on Malaysia investigating any named company (March 2025)** — *Primary if ministerial press release.* [NEEDS VERIFICATION of date / forum / exact wording.]
-8. **MIDA, Annual Investment Performance Reports 2023 and 2024** — Data-centre approval figures; *Primary.* https://www.mida.gov.my
-9. **DC Byte / Cushman & Wakefield / Knight Frank Asia-Pacific data-centre reports 2024 and 2025** — Capacity tracker estimates for Johor.
-10. **Microsoft news release, "Microsoft to Invest $2.2 Billion to Fuel Malaysia's Cloud and AI Transformation," 2 May 2024** — *Primary.* https://news.microsoft.com
-11. **Google blog, "$2 billion investment to support Malaysia's digital transformation," 30 May 2024** — *Primary.* https://blog.google
-12. **YTL Power International announcements on Sedenak Tech Park / Green Data Center Park (Bursa filings)** — *Primary.* https://www.bursamalaysia.com
-13. **Suruhanjaya Tenaga (Energy Commission), Peninsular Malaysia Electricity Supply Industry Outlook 2024** — *Primary* for peak demand figure.
-14. **Malaysia Strategic Trade Act 2010 (Act 708), Attorney General's Chambers consolidated text** — *Primary.* https://www.agc.gov.my
-15. **Singapore Strategic Goods (Control) Act 2002, AGC Singapore consolidated text** — *Primary.* https://sso.agc.gov.sg
-16. **15 CFR Parts 730–774 (US Export Administration Regulations), eCFR** — *Primary.* https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C
-17. **CSIS, "What's Behind the Diffusion Rule and Its Rescission" (Wadhwa Center, 2025)** — Secondary policy analysis.
-18. **NST / The Edge / Free Malaysia Today / The Star** — Malaysian-press coverage of MITI statements and Johor DC approvals (Stage 3 to surface specific articles).
-19. **Published issue 1965** — *Supreme Court tariff case* (US trade policy precedent context).
+Totals: 17 VERIFIED, 1 PARTLY, 6 UNVERIFIED, 0 CONTRADICTED, 0 STALE-SINCE-PUBLICATION (the July 2026 charges are noted in SINCE PUBLICATION; "Singapore charged four" remains true of individuals).
 
 ## CONTRADICTIONS
-- **Currency of the S$390M vs US$390M figure.** Reuters and some early reports cited "US$390 million"; Singapore Government communications and *Channel News Asia* used "S$390 million" (Singapore dollars). At ~S$1 ≈ US$0.75, the two figures differ by a factor of ~1.33. The brief uses **"approximately S$390 million"** because that is the figure attached to SPF / Singapore-government communications, which are closer to the primary court filings. Stage 3 to verify against the actual charge sheet / SPF release. Until verified, cards must not assert "USD" with confidence.
-- **Number of Johor data-centre projects approved.** Public statements range from "more than 50" (early 2024) to "more than 80" (mid-2025) to industry-tracker figures over 100. The brief uses **"more than 80"** as a mid-range, conservative figure aligned with MITI/MIDA public-statement vocabulary in 2025. Stage 3 to confirm against the latest MIDA approval count.
-- **5 GW Johor DC capacity.** Industry trackers and state-government announcements give figures from 3 GW (operational + under construction) to >5 GW (announced + planned). The brief uses **"more than 5 GW announced"** as the upper-conservative framing — careful to say *announced*, not *operational*. Stage 3 to confirm.
-- **DeepSeek connection in the Singapore case.** Some early reports linked the diverted chips to DeepSeek specifically; SPF charge sheet language has been more cautious. Cards should reference *"a Chinese AI firm"* unless Stage 3 verifies a direct named link in the indictment.
+
+1. **Ages of the first three accused.** SPF: 40, 48 and 51 [1]; press: 41, 49 and 51 [12][13]. Probably ages at different dates; the cards give no ages.
+2. **Nationalities.** The earlier draft of this brief said "a Singapore citizen, a permanent resident, and a Chinese national". Press reports say two Singaporeans and a Chinese national [12][13]; SPF gives none. The card follows the press reports.
+3. **Rule date.** BIS: "issued on January 15, 2025" [6]; Federal Register: effective 13 Jan 2025, published 15 Jan 2025 [5]. The card's "effective 13 Jan 2025" is right.
+4. **Did the US name Malaysia?** The rule did not [5]; the BIS release (current text) does, in its list of 13 May 2025 actions [6]. See the framing flag above.
+5. **Johor approvals count.** The earlier draft said "more than 80" approved projects; the card says 51 (as of November 2025, per earlier pipeline notes). Neither was verified in this backfill.
+6. **Bridge Data Centres report attribution.** Card: "per Reuters". Earlier pipeline notes: Bloomberg. Unresolved.
+
+## SINCE PUBLICATION
+
+- **1 Jul 2026:** Singapore Police announced additional charges against all four individuals and charges against four companies (Aperia International, A-Speed Infotech, Aperia Cloud Services (II), Luxuriate Your Life), including money laundering under the CDSA and a prohibition of disposal order over a bungalow valued at about S$55 million; the suppliers named include Dell, Super Micro Computer and Asus [4]. The headline and view ("charged four") now understate the case.
+- **To 4 Nov 2026:** no MITI media release on AI-chip enforcement or charges [11]. A wider news sweep for Malaysian enforcement after May 2026 could not be run: the session's web-search budget was exhausted. The editor should check before relying on "no Malaysian operator faces charges".
 
 ## SOURCE SPECTRUM CHECK
-- **US government-aligned**: BIS Federal Register notices, DOJ investigation reporting, CSIS analysis.
-- **Singapore government-aligned**: SPF, MHA, AGC.
-- **Malaysia government-aligned**: MITI, MIDA, Tengku Zafrul statements, MOSTI / NIMP framework documents.
-- **Independent / business press**: Reuters, Bloomberg, WSJ, The Edge, FMT.
-- **Industry tracker (commercial)**: Cushman & Wakefield, DC Byte, Knight Frank — disclose commercial interest in DC market growth.
-- **Critical / civil society**: Limited so far on the diversion-risk angle; Sinar Project and KRSI have written on data-sovereignty more broadly. Stage 2 (Gemini) and Stage 3 (ChatGPT) should be asked to surface critical-spectrum sources to balance the industry-tracker bias.
 
-## EDITORIAL NOTES (for Stage 1 author and Stage 6 synthesiser)
-- The "timebomb" framing applies to the **structural exposure**, not to any predicted US action. The story is the gap between the announced FDI thesis and the export-control framework that sits over it — not a prediction of sanctions.
-- 3R-safe: pure policy/economic/security angle; no race, religion, or royalty content.
-- The reframe should rotate the reader's mental model from "Malaysia is winning the AI investment race" to "Malaysia is operating inside a US export-control envelope it does not set". This is *value restructuring* (per the playbook), not *adding evidence*.
-- The view card should pass the WhatsApp test: a thoughtful reader should be able to paste the view's `big` alone with no commentary.
-- Hook emotion target: **anxiety-of-precedent**, not sadness or anger-at-people. The named parties so far (the three men charged in Singapore) are alleged actors, not the subjects of the issue — the subject is the structural exposure of Malaysia's DC thesis.
+- Singapore government: SPF [1][3][4]; Ministry of Home Affairs [2].
+- Malaysian government: MITI [8][9][10][11]; MITI via The Star [14].
+- US government: BIS [5][6]; GAO [7] (a congressional watchdog that ruled against the administration's approach).
+- Press: The Star, FMT republishing Reuters.
+- Gap: no Johor state, data-centre industry, residents' or civil-society source could be opened (see UNVERIFIED rows). The data-centre half of the issue (fact 2, Bridge Data Centres) currently rests on no source in this brief.
+
+## SOURCES
+
+1. **[P]** Singapore Police Force, *Three Men To Be Charged For Fraud By False Representation*, 27 Feb 2025. https://www.police.gov.sg/media-hub/news/2025/02/20250227_three_men_to_be_charged_for_fraud_by_false_representation
+2. **[P]** Ministry of Home Affairs Singapore, *Transcript of Media Conference with Mr K Shanmugam, Minister for Home Affairs and Minister for Law, regarding the case involving the three men who were charged on 27 February 2025 for fraud by false representation*, 3 Mar 2025. https://www.mha.gov.sg/media-room/newsroom/transcript-of-media-conference-with-mr-k-shanmugam-minister-for-home-affairs-and-minister-for-law-regarding-the-case-involving-the-three-men-who-were-charged-on-27-february-2025-for-fraud-by-false-representation/
+3. **[P]** Singapore Police Force, *Fourth Individual Charged In Relation To The Case Involving Fraud By False Representation On Suppliers Of Servers*, 2 Apr 2026. https://www.police.gov.sg/media-hub/news/2026/04/20260402_fourth_individual_charged_in_relation_to_the_case_involving_fraud_by_false_representation
+4. **[P]** Singapore Police Force, *Four Individuals Face Additional Charges And Four Companies Face Charges For Offences Including Fraud*, 1 Jul 2026. https://www.police.gov.sg/media-hub/news/2026/07/20260701_four_individuals_face_additional_charges_and_four_companies_face_charges
+5. **[P]** US Bureau of Industry and Security, *Framework for Artificial Intelligence Diffusion*, interim final rule, 90 FR 4544, 15 Jan 2025, effective 13 Jan 2025. https://www.govinfo.gov/content/pkg/FR-2025-01-15/pdf/2025-00636.pdf
+6. **[P]** US Bureau of Industry and Security, *Department of Commerce Announces Rescission of Biden-Era Artificial Intelligence Diffusion Rule, Strengthens Chip-Related Export Controls*, 13 May 2025. https://www.bis.gov/press-release/department-commerce-announces-recission-biden-era-artificial-intelligence-diffusion-rule-strengthens-chip
+7. **[P]** US Government Accountability Office, *U.S. Department of Commerce, Bureau of Industry and Security—Applicability of the Congressional Review Act to the Rescission of the Artificial Intelligence Diffusion Rule*, B-337935, 12 May 2026. https://www.gao.gov/products/b-337935
+8. **[P]** Ministry of Investment, Trade and Industry Malaysia, *Zero Tolerance for Individuals or Companies Involved in Illegal Operations and Trading Activities in Malaysia*, press release, 18 Jun 2025. https://www.miti.gov.my/miti/resources/Media%20Release/[FINAL]_MITI_Press_Release_Zero_Tolerance_for_Breaking_Malaysian_Laws_2025-06-18.pdf
+9. **[P]** Ministry of Investment, Trade and Industry Malaysia, *Export, Transshipment and Transit of High-Performance AI Chips of US Origin Now Subject to a Strategic Trade Permit*, press statement, 14 Jul 2025. https://www.miti.gov.my/miti/resources/Media%20Release/[FINAL]_MITI_Press_Stmt_Malaysia_Regulates_Trade_of_US_AI_Chips_2025-07-14.pdf
+10. **[P]** Ministry of Investment, Trade and Industry Malaysia, *Industry Guideline in Compliance to Directive of Strategic Trade Controller No.1/2025 (Advanced Artificial Intelligence Chips)*, penalty table. https://www.miti.gov.my/miti/resources/STA%20Folder/INDUSTRY_GUIDELINE_IN_COMPLIANCE_TO_DIRECTIVE_OF_STRATEGIC_TRADE_CONTROLLER_NO_1_2025__ADVANCED_ARTIFICIAL_INTELLIGENCE_CHIPS.pdf
+11. **[P]** Ministry of Investment, Trade and Industry Malaysia, *Media Release 2026*, index of 2026 media releases. https://www.miti.gov.my/index.php/pages/view/10936
+12. **[S]** The Star, "Three men charged with fraud in Singapore case allegedly linked to Nvidia chips", 27 Feb 2025. https://www.thestar.com.my/aseanplus/aseanplus-news/2025/02/27/three-men-charged-with-fraud-in-singapore-case-allegedly-linked-to-nvidia-chips
+13. **[S]** Free Malaysia Today, republishing Reuters, "Singapore charges 3 with fraud linked to movement of Nvidia chips", 28 Feb 2025. https://www.freemalaysiatoday.com/category/world/2025/02/28/singapore-charges-three-with-fraud
+14. **[S]** The Star, "No violation of STA 2010 in recent Nvidia case", 17 Mar 2025. https://www.thestar.com.my/business/business-news/2025/03/17/no-violation-of-sta-2010-in-recent-nvidia-case
+15. **[S]** Free Malaysia Today, republishing Reuters, "Singapore charges one more individual with AI chip fraud", 2 Apr 2026. https://www.freemalaysiatoday.com/category/world/2026/04/02/singapore-charges-one-more-individual-with-ai-chip-fraud
+
+## EARLIER-DRAFT ITEMS NOT VERIFIED IN THIS BACKFILL (not used in the cards; keep out of copy until sourced)
+
+- "More than 80" Johor data-centre approvals; "~5 GW" announced capacity; "~20 GW" peninsular peak demand.
+- Microsoft US$2.2 billion and Google US$2 billion Malaysia investment announcements (May 2024).
+- Reported S$390 million or US$390 million transaction value in the Singapore case (currency unresolved).
+- Reports of US DOJ and Commerce investigations into Malaysia-routed chips (Feb–Mar 2025).
+- A March 2025 MITI commitment to investigate any named Malaysian company (MITI's 17 Mar 2025 position as reported [14] is that STA 2010 was not violated and other laws were being assessed).
+
+## EDITORIAL NOTES (for the editor)
+
+- The "timebomb" framing applies to structural exposure, not to any predicted US action.
+- 3R-safe: policy, economic and security angle only.
+- Hook emotion target: anxiety-of-precedent. The named parties are accused persons in Singapore; the subject is Malaysia's regulatory position.
