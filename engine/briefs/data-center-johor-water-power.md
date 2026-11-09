@@ -72,7 +72,7 @@ January–April 2026
 Technology, Environmental, Economic
 
 ## SOURCES
-1. Bloomberg, "Malaysia Draws First Data Center Protest Over Pollution, Water" Feb 7, 2026
+1. Bloomberg, "Malaysia Draws First Data Center Protest Over Pollution, Water" Feb 7, 2026 https://www.bloomberg.com/news/articles/2026-02-07/malaysia-draws-first-data-center-protest-over-pollution-water
 2. Lowyat, "Malaysia Witnesses First AI Data Centre Protest In Johor" Feb 2026
 3. PV Magazine, "Malaysia restricts non-AI data centers, citing energy concerns" Feb 25, 2026
 4. TechWire Asia, "Malaysia's data centre policy is saying the quiet part out loud" Mar 2026
@@ -87,3 +87,5 @@ Technology, Environmental, Economic
 13. Published issue 1564 — DOE enforcement cut by 18% (related: weakened environmental monitoring capacity)
 14. TNB Annual Report / investor disclosures — 11,000MW application pipeline figure
 15. PM Anwar Ibrahim press conference statements, Mar 2026 — moratorium confirmation and ~2 year timeline
+16. New Straits Times, "[UPDATED] PM: Govt restricts non-AI data centre approvals over energy, water concerns", 24 Feb 2026, https://www.nst.com.my/amp/news/nation/2026/02/1384108/updated-pm-govt-restricts-non-ai-data-centre-approvals-over-energy [S]
+17. ASEAN+3 Macroeconomic Research Office (AMRO), "Malaysia Annual Consultation Report 2026, Selected Issue 1: Data Center Boom in Malaysia: Recent Developments and Challenges", May 2026, https://amro-asia.org/wp-content/uploads/2026/05/Malaysia-ACR-2026-SI-1-Data-Center-Boom-in-Malaysia.pdf [S]

@@ -53,7 +53,7 @@ The Prevention of Crime Act 1959 (POCA), as amended from 2014, lets the Preventi
 
 ## SOURCES
 
-1. **[P]** Attorney General's Chambers, *Prevention of Crime Act 1959, Act 297, online version of updated text of reprint*, as at 1 Jan 2018, preamble and ss. 3, 4, 7B, 9, 10, 10A, 15B and 19A.
+1. **[P]** Attorney General's Chambers, *Prevention of Crime Act 1959, Act 297, online version of updated text of reprint*, as at 1 Jan 2018, preamble and ss. 3, 4, 7B, 9, 10, 10A, 15B and 19A. https://www.moha.gov.my/utama/images/Bahagian%20Keselamatan%20dan%20Ketenteraman%20Awam/AKTA/POCA/Prevention_of_Crime_Act.pdf
 2. **[P]** Attorney General's Chambers, *Prevention of Crime (Amendment and Extension) Act 2014, Act A1459*, 1 Apr 2014, ss. 11, 19 and 23.
 3. **[P]** Attorney General's Chambers, *Federal Constitution, Reprint*, 15 Oct 2020, Articles 5, 149 and 151. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
 4. **[P]** Federal Court of Malaysia, *Press Release, the Majority Decision, Criminal Appeal No. 05(HC)-304-12/2019(B) and other appeals*, 19 Feb 2021, paras 4–15. https://www.kehakiman.gov.my/sites/default/files/documents/Ringkasan_Media/2021/Press%20Summary%20-%20Rovin%20Joty%20%28Majority%29%2019.2.2020_0.pdf

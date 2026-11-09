@@ -94,7 +94,7 @@ Economic, Social, Political
 13. Malay Mail, "Can you guess who the big spenders are among international visitors to Malaysia?" Apr 1, 2026
 14. Travel & Tour World, "2026 Sees Malaysia Welcome More Than 42 Million Tourists" 2026
 15. Chan & Lean, "Transition of Economic Structure and Demography: The Case of Tourism Gentrification in George Town, Penang" (academic, 2017)
-16. Tandfonline, "Affordable housing and public administration of a historic city: George Town UNESCO World Heritage Site" (academic, 2023)
+16. Tandfonline, "Affordable housing and public administration of a historic city: George Town UNESCO World Heritage Site" (academic, 2023) [PRIMARY]
 17. Penang Institute, "Transforming Tourism in Penang: Suggestions for the Short and the Long Term" 2020
 18. The Star, "Penang maintains strong SPM 2025 performance" Mar 31, 2026
 

@@ -99,20 +99,22 @@ Despite 28 million Malaysians using e-wallets and RM48+ billion flowing through 
 1. Home Ministry data on RM2.77 billion fraud losses in 2025 (Malay Mail, Jan 2026)
 2. TNG eWallet account suspensions and frozen funds (The Rakyat Post, Dec 2025)
 3. Malaysian woman allegedly banned from banks over RM10.44 refund (The Rakyat Post, Jun 2025)
-4. BNM revised e-money policy document (effective Jan 2025)
+4. BNM revised e-money policy document (effective Jan 2025) [PRIMARY]
 5. PDPA 2025 amendments — phases 1-3 (Chambers and Partners, 2026)
 6. PIDM non-coverage of e-wallet balances (FintechNews.my, 2025)
 7. State of Scam Report 2024 — 70% unreported (ScamWatchHQ)
 8. Malaysia's scam economy as system design problem (Malay Mail, Mar 2026)
 9. DuitNow QR MDR fee structure and waiver extensions (RinggitPlus, VulcanPost)
 10. 77% SMEs cite MDR and coverage as barriers (Yahoo Finance / GlobeNewsWire)
-11. E-wallet impulse buying research — Gen-Y/Z (PMC/ResearchGate, peer-reviewed)
+11. E-wallet impulse buying research — Gen-Y/Z (PMC/ResearchGate, peer-reviewed) [PRIMARY]
 12. Rural vs urban cash reliance statistics (multiple academic sources)
 13. TNG eWallet Money-Back Guarantee (RinggitPlus)
-14. Financial Ombudsman Scheme membership requirement (BNM policy)
+14. Financial Ombudsman Scheme membership requirement (BNM policy) [PRIMARY]
 15. Government e-wallet subsidy programs totaling RM2B+ (SoyaCincau, government data)
 16. E-wallet overspending behavioral economics (SAGE journals, 2025)
 17. BNM expects consolidation from 56 to 8-12 providers by 2028 (Industry analysis)
 18. Cashless digital divide elderly adoption barriers (SAGE journals, 2025)
 19. Recovery rate — RM6.7 million returned vs RM2.77 billion lost (NSRC data)
 20. Touch 'n Go eWallet first to implement all 5 BNM safety measures (TNG official)
+21. Perbadanan Insurans Deposit Malaysia (PIDM), "Deposit Insurance System (FAQs)", null, https://www.pidm.gov.my/general/faqs/deposit-insurance-system [PRIMARY]
+22. Bank Negara Malaysia, "Payment Statistics: T1 Transactions Per Capita (Basic Payments Indicator)", Apr 2026, https://www.bnm.gov.my/documents/20124/20848086/T1+-+Transactions+Per+Capita.pdf [PRIMARY]

@@ -72,20 +72,23 @@
 Economic, Political, Governance
 
 ## SOURCES
-1. Malay Mail, "Anwar: Malaysia's local currency trade surges to RM82b" Mar 24, 2026
-2. FMT, "RM82.1bil in trade settled in local currencies" Mar 24, 2026
-3. The Star, "Local currency trade surges to RM82.1bil" Mar 24, 2026
+1. Malay Mail, "Anwar: Malaysia's local currency trade surges to RM82b" Mar 24, 2026 https://www.malaymail.com/news/malaysia/2026/03/24/anwar-malaysias-local-currency-trade-with-china-thailand-and-indonesia-surges-to-rm82b-cutting-reliance-on-us-dollar/213702
+2. FMT, "RM82.1bil in trade settled in local currencies" Mar 24, 2026 https://www.freemalaysiatoday.com/category/nation/2026/03/24/rm82-1bil-in-trade-settled-in-local-currencies-with-key-partners-says-finance-ministry
+3. The Star, "Local currency trade surges to RM82.1bil" Mar 24, 2026 https://www.thestar.com.my/news/nation/2026/03/24/local-currency-trade-with-china-thailand-and-indonesia-surges-to-rm821bil-says-anwar
 4. FMT, "Highs and lows of switch to RMB" Feb 10, 2026
-5. Malay Mail, "Malaysia, India to promote ringgit-rupee use" Feb 8, 2026
-6. BNM, "Renewal of BNM-PBOC Bilateral Currency Swap" Nov 2023
-7. BNM, "Local Currency Settlement Framework information"
-8. BOT, "Joint Press Release: LCTF harmonization" Feb 17, 2025
-9. BIS, "Abdul Rasheed Ghaffour on future of international monetary system" Feb 2026
-10. AMRO, "Expanding Local Currency Transactions in ASEAN+3" Dec 2023
-11. Lowy Institute, "Malaysia's Anwar seeks Asian Monetary Fund and dedollarisation"
-12. RSIS, "From Rhetoric to Realignment? Anwar Ibrahim and the BRICS Question"
-13. FMT, "Anwar's de-dollarisation plan will falter unless ringgit trade simplified" Nov 6, 2023
-14. The Diplomat, "Southeast Asia's Quiet Revolt Against the Dollar" Apr 2025
-15. Carnegie, "Southeast Asia's Growing Interest in Non-dollar Financial Channels" 2022
-16. The Edge, "BNM's forex losses totalled RM31.5b, says RCI"
-17. MATRADE, "Trade Performance for Year 2024"
+5. Malay Mail, "Malaysia, India to promote ringgit-rupee use" Feb 8, 2026 https://www.malaymail.com/news/malaysia/2026/02/08/anwar-malaysia-india-to-promote-wider-ringgitrupee-use-in-bilateral-trade-investment/208462
+6. BNM, "Renewal of BNM-PBOC Bilateral Currency Swap" 23 Nov 2021 https://www.bnm.gov.my/-/bilateral-currency-swap-pbc [PRIMARY]
+7. BNM, "Local Currency Settlement Framework information" https://www.bnm.gov.my/-/information-on-local-currency-settlement-framework [PRIMARY]
+8. BOT, "Joint Press Release: LCTF harmonization" Feb 17, 2025 https://www.bot.or.th/en/news-and-media/news/news-20250217.html [PRIMARY]
+9. BIS, "Abdul Rasheed Ghaffour on future of international monetary system" Feb 2026 https://www.bis.org/review/r260223d.htm [PRIMARY]
+10. AMRO, "Expanding Local Currency Transactions in ASEAN+3" Dec 2023 https://amro-asia.org/wp-content/uploads/2023/12/AMRO-PPP_Expanding-LCT-in-ASEAN3-Cross-Border-Payments_Dec-2023.pdf
+11. Lowy Institute, "Malaysia's Anwar seeks Asian Monetary Fund and dedollarisation" https://www.lowyinstitute.org/the-interpreter/malaysia-s-anwar-seeks-asian-monetary-fund-dedollarisation
+12. RSIS, "From Rhetoric to Realignment? Anwar Ibrahim and the BRICS Question" https://rsis.edu.sg/rsis-publication/rsis/from-rhetoric-to-realignment-anwar-ibrahim-and-the-brics-question/
+13. FMT, "Anwar's de-dollarisation plan will falter unless ringgit trade simplified" Nov 6, 2023 https://fmtv5.freemalaysiatoday.com/category/highlight/2023/11/06/anwars-de-dollarisation-plan-will-falter-unless-ringgit-trade-is-simplified
+14. The Diplomat, "Southeast Asia's Quiet Revolt Against the Dollar" Apr 2025 https://sv7.thediplomat.com/2025/04/southeast-asias-quiet-revolt-against-the-dollar-should-the-us-be-worried
+15. Carnegie, "Southeast Asia's Growing Interest in Non-dollar Financial Channels" 22 Aug 2022 https://carnegieendowment.org/research/2022/08/southeast-asias-growing-interest-in-non-dollar-financial-channelsand-the-renminbis-potential-role
+16. The Edge, "BNM's forex losses totalled RM31.5b, says RCI" https://www.theedgemarkets.com/article/bnms-forex-losses-totalled-about-rm315b-says-rci
+17. MATRADE, "Trade Performance for Year 2024" https://www.matrade.gov.my/en/about-matrade/press-release/trade-performance-for-year-2024-and-december-2024 [PRIMARY]
+18. Free Malaysia Today, "Malaysian semiconductor exports remain exempt from US tariffs, says Tengku Zafrul", 7 Aug 2025, https://www.freemalaysiatoday.com/category/nation/2025/08/07/some-us-firms-in-malaysia-may-escape-semiconductor-chip-tariff-says-tengku-zafrul [S]
+19. Bank Negara Malaysia, "Measures to Regain Monetary Independence", 1 Sep 1998, https://www.bnm.gov.my/-/measures-to-regain-monetary-independence [PRIMARY]
+20. New Straits Times, "BNM says it is not considering Asian Financial Crisis-like capital controls", 8 Apr 2024, https://www.nst.com.my/amp/business/economy/2024/04/1035835/bnm-says-it-not-considering-asian-financial-crisis-capital-controls [S]

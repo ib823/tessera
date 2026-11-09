@@ -233,9 +233,9 @@ Environmental/Legal/Regional (2011); Legal and Governance recur but the combinat
    paras 1.1.1, 1.2.1, 1.3.1–1.3.6, 1.5.27–1.5.35, Paparan 1, Paparan 3.
    https://www.pmo.gov.my/wp-content/uploads/2019/04/Kertas-Putih-FELDA-2019.pdf
 2. [S2] MACC chief commissioner Abd Halim Aman, press conference, 2 September 2026, as reported by
-   The Edge Malaysia, "MACC opens six investigation papers into Felda, FIC; arrests expected next week".
+   The Edge Malaysia, "MACC opens six investigation papers into Felda, FIC; arrests expected next week". [S]
    https://theedgemalaysia.com/node/816579
-3. [S3] FMT, "MACC opens 7 probe papers on Felda, subsidiary", 2 September 2026.
+3. [S3] FMT, "MACC opens 7 probe papers on Felda, subsidiary", 2 September 2026. [S]
    https://www.freemalaysiatoday.com/category/nation/2026/09/02/macc-opens-7-probe-papers-into-felda-subsidiary
 4. [S4] Auditor-General's Report on Felda for 2022, tabled March 2024 (net loss RM1b; RM8.66b external
    debt; going-concern; grant dependence). Reported: The Edge,
@@ -246,14 +246,14 @@ Environmental/Legal/Regional (2011); Legal and Governance recur but the combinat
    counts; six years' imprisonment, RM15.45m fine.
 7. [S7] Court of Appeal decision, 6 March 2024, acquitting Mohd Isa Abdul Samad (Vazeer Alam Mydin
    Meera JCA presiding). https://www.thestar.com.my/news/nation/2024/03/06/court-of-appeal-acquits-mohd-isa-samad-of-corruption-charges
-8. [S8] BenarNews, "Malaysian court overturns graft conviction of state land agency's former chairman",
+8. [S8] BenarNews, "Malaysian court overturns graft conviction of state land agency's former chairman", [S]
    6 March 2024. https://www.benarnews.org/english/news/malaysian/felda-ex-chairman-conviction-overturned-03062024153628.html
-9. [S9] Malay Mail, "Federal Court adjourns Isa Samad's bid to review reinstated corruption conviction",
+9. [S9] Malay Mail, "Federal Court adjourns Isa Samad's bid to review reinstated corruption conviction", [S]
    13 May 2026. https://www.malaymail.com/news/malaysia/2026/05/13/federal-court-adjourns-isa-samads-bid-to-review-reinstated-corruption-conviction/219771
-10. [S10] Malay Mail, "Federal Court rejects Isa Samad's final bid to overturn RM3m graft conviction",
+10. [S10] Malay Mail, "Federal Court rejects Isa Samad's final bid to overturn RM3m graft conviction", [S]
     26 June 2026 (Azizah Nawawi CJSS presiding; Rule 137 Federal Court Rules 1995; no miscarriage of
     justice). https://www.malaymail.com/news/malaysia/2026/06/26/federal-court-rejects-isa-samads-final-bid-to-overturn-rm3m-graft-conviction/225311
-11. [S11] Borneo Post, "Federal Court rejects Isa Samad's bid for leave to review graft conviction,
+11. [S11] Borneo Post, "Federal Court rejects Isa Samad's bid for leave to review graft conviction, [S]
     sentence", 26 June 2026. https://www.theborneopost.com/2026/06/26/federal-court-rejects-isa-samads-bid-for-leave-to-review-graft-conviction-sentence/
 29. [S29] Land Development Act 1956 (Act 474), Laws of Malaysia (Revised 1991).
     https://www.commonlii.org/my/legis/consol_act/lda19561991243/

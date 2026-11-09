@@ -70,21 +70,22 @@ Legal, Economic, Political
 
 ## SOURCES
 1. US Supreme Court, *Learning Resources v. Trump*, No. 25-316 (Feb 20, 2026) — 6-3 ruling striking down IEEPA tariffs
-2. USTR, Section 301 Investigation Notice: "Excess Manufacturing Capacity" (Mar 11, 2026) — 16 economies
-3. USTR, Section 301 Investigation Notice: "Forced Labor in Supply Chains" (Mar 13, 2026) — 60 economies
-4. Fortune, "Asia scrambles to respond to Trump's Section 301 probes" (Mar 16, 2026)
+2. USTR, Section 301 Investigation Notice: "Excess Manufacturing Capacity" (Mar 11, 2026) — 16 economies https://ustr.gov/sites/default/files/files/Press/Releases/2026/USTR%20301%20FRN%20Industrial%20Excess%20Capacity%203-11-26.pdf [PRIMARY]
+3. USTR, Section 301 Investigation Notice: "Forced Labor in Supply Chains" (12 Mar 2026) — 60 economies https://ustr.gov/about/policy-offices/press-office/fact-sheets/2026/march/fact-sheet-ustr-initiates-60-section-301-investigations-relating-failures-take-action-forced-labor [PRIMARY]
+4. Fortune, "Asia scrambles to respond to Trump's Section 301 probes" (Mar 16, 2026) https://fortune.com/2026/03/16/trump-asia-section-301-probes-china-malaysia-tariffs/
 5. Johari Abdul Ghani, ministerial statement declaring ART deal "null and void" (Mar 15, 2026)
-6. White House, Executive Order imposing Section 122 blanket tariff (Feb 24, 2026)
-7. Tax Foundation, "Tariff Tracker: 2026 Trump Tariffs & Trade War by the Numbers"
+6. White House, Executive Order imposing Section 122 blanket tariff (20 Feb 2026) https://www.whitehouse.gov/presidential-actions/2026/02/imposing-a-temporary-import-surcharge-to-address-fundamental-international-payments-problems/ [PRIMARY]
+7. Tax Foundation, "Tariff Tracker: 2026 Trump Tariffs & Trade War by the Numbers" https://taxfoundation.org/trump-tariffs-trade-war/
 8. SCMP, "Malaysia warns US tariffs could halve trade growth" (2026)
 9. SCMP, "What US tariffs mean for Malaysian businesses and workers" (2026)
-10. SCMP, "In response to US tariffs, Malaysia unveils $356M SME relief" (2026)
+10. SCMP, "In response to US tariffs, Malaysia unveils $356M SME relief" (May 2025) https://www.scmp.com/week-asia/economics/article/3309101/response-us-tariffs-malaysia-unveils-us356-million-sme-relief-measures
 11. RHB, "Impact of the trade war on Malaysia" (2026)
-12. FMT, "Malaysian semiconductor exports remain exempt from US tariffs" (2025)
-13. KR Institute, "Which Malaysian Exports Get Zero Tariffs" (2026)
+12. FMT, "Malaysian semiconductor exports remain exempt from US tariffs" (7 Aug 2025) https://www.freemalaysiatoday.com/category/nation/2025/08/07/some-us-firms-in-malaysia-may-escape-semiconductor-chip-tariff-says-tengku-zafrul
+13. KR Institute, "Which Malaysian Exports Get Zero Tariffs" (24 Nov 2025) https://www.krinstitute.org/publications/which-malaysian-exports-get-zero-tariffs-under-the-us-malaysia-trade-deal
 14. The ASEAN Frontier, "Malaysia in the Splash Zone of Trump's Semiconductor Tariff" (2026)
-15. CEIC, "Malaysia electronics exports to US avoid tariffs for now" (2026)
-16. Malay Mail, "Anwar warns US-China tariff tensions risk derailing Malaysia's trade momentum"
-17. Section 122, Trade Act of 1974, 19 U.S.C. Section 2132 — 150-day emergency tariff authority
-18. Section 301, Trade Act of 1974, 19 U.S.C. Sections 2411-2420 — unfair trade practices investigation authority
+15. CEIC, "Malaysia electronics exports to US avoid tariffs for now" (2026) https://info.ceicdata.com/malaysia-electronics-exports-to-us-avoid-tariffs-for-now
+16. Malay Mail, "Anwar warns US-China tariff tensions risk derailing Malaysia's trade momentum" https://www.malaymail.com/news/malaysia/2025/04/12/anwar-warns-us-china-tariff-tensions-risk-derailing-malaysias-trade-momentum/172849
+17. Section 122, Trade Act of 1974, 19 U.S.C. Section 2132 — 150-day emergency tariff authority https://www.govinfo.gov/content/pkg/USCODE-2024-title19/pdf/USCODE-2024-title19-chap12-subchapI-part2-sec2132.pdf [PRIMARY]
+18. Section 301, Trade Act of 1974, 19 U.S.C. Sections 2411-2420 — unfair trade practices investigation authority https://www.govinfo.gov/content/pkg/USCODE-2024-title19/html/USCODE-2024-title19-chap12-subchapIII.htm [PRIMARY]
+20. Office of the United States Trade Representative, "Fact Sheet: USTR Initiates Section 301 Investigations into Structural Excess Capacity and Production in Manufacturing Sectors", Mar 2026, https://ustr.gov/about/policy-offices/press-office/fact-sheets/2026/march/fact-sheet-ustr-initiates-section-301-investigations-structural-excess-capacity-and-production [PRIMARY]
 19. Published issue 1957 — BYD blocked, Proton shielded (auto trade policy)

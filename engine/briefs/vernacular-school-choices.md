@@ -78,12 +78,12 @@
 Social, Economic, Legal
 
 ## SOURCES
-1. ISEAS Perspective 2025/34, James Chai, "Malaysia's Chinese Primary Schools: Saved Yet Threatened by Rising Inflows of Malay Students" Apr 2025
-2. BERNAMA, "Parliament: Bumiputera Student Enrollment At SJKC Nearly Doubled Over 10-year Period" Jul 2024
-3. Malay Mail, "Education Ministry: Bumiputera enrolment in SJKC nearly doubled over 10 years" Jul 2024
-4. FMT, "More Malay parents choose Chinese schools for academic edge, survey finds" May 2025
-5. Federal Court judgment, Feb 2024 — Rejects leave to appeal on vernacular school constitutionality
-6. Malay Mail, "Simplified: Why Malaysia's vernacular schools are constitutional" Feb 2024
+1. ISEAS Perspective 2025/34, James Chai, "Malaysia's Chinese Primary Schools: Saved Yet Threatened by Rising Inflows of Malay Students" 13 May 2025 https://www.iseas.edu.sg/articles-commentaries/iseas-perspective/2025-34-malaysias-chinese-primary-schools-saved-yet-threatened-by-rising-inflows-of-malay-students-by-james-chai/ [PRIMARY]
+2. BERNAMA, "Parliament: Bumiputera Student Enrollment At SJKC Nearly Doubled Over 10-year Period" Jul 2024 https://www.bernama.com/en/news.php?id=2316369
+3. Malay Mail, "Education Ministry: Bumiputera enrolment in SJKC nearly doubled over 10 years" Jul 2024 https://www.malaymail.com/news/malaysia/2024/07/11/education-ministry-bumiputera-enrolment-in-sjkc-nearly-doubled-over-10-years-two-thirds-of-international-school-students-are-malaysians/143342
+4. FMT, "More Malay parents choose Chinese schools for academic edge, survey finds" May 2025 https://www.freemalaysiatoday.com/category/nation/2025/05/13/more-malay-parents-choose-chinese-schools-for-academic-edge-survey-finds
+5. Federal Court judgment, Feb 2024 — Rejects leave to appeal on vernacular school constitutionality [PRIMARY]
+6. Malay Mail, "Simplified: Why Malaysia's vernacular schools are constitutional" Feb 2024 https://www.malaymail.com/news/malaysia/2024/02/20/simplified-why-malaysias-vernacular-schools-are-constitutional-and-their-use-of-tamil-and-chinese-is-legally-protected-according-to-court-of-appeal/118903
 7. The Star, "Help Tamil schools survive" Mar 2025
 8. Malaysiakini, "Tamil schools in decline — act now before legacy fades" 2024
 9. Ipoh Echo, "Safety concerns at SJKT Kerajaan have been unresolved since 2024" Mar 2026
@@ -98,3 +98,4 @@ Social, Economic, Legal
 18. Wiki Impact, "A Slow Fade: Why Tamil Schools Are Disappearing In Malaysia"
 19. Penang CM, "Penang to continue annual aid for Tamil vernacular school infrastructure" Dec 2024
 20. Sabah Media, "KPM perlu gandakan usaha jadikan Sekolah Kebangsaan sebagai sekolah pilihan utama" Jul 2024
+21. The Star, "Education Ministry urged to relocate Tamil schools to highly-populated zones", 5 Mar 2025, https://www.thestar.com.my/news/nation/2025/03/05/education-ministry-urged-to-relocate-tamil-schools-to-highly-populated-zones [S]

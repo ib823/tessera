@@ -88,19 +88,19 @@ May 1909–April 2026
 Legal, Governance, Environmental
 
 ## SOURCES
-1. Malay Mail, "Federal Court decision could determine future of Shah Alam Community Forest" Mar 30, 2026
+1. Malay Mail, "Federal Court decision could determine future of Shah Alam Community Forest" Mar 30, 2026 https://www.malaymail.com/news/malaysia/2026/03/30/federal-court-decision-could-determine-future-of-shah-alam-community-forest/214404
 2. FMT, "NGOs fail in Bukit Cherakah degazetting lawsuit" Apr 1, 2026
-3. EdgeProp, "Apex court quashes NGO bid to challenge Bukit Cherakah's degazettement in split 2-1 decision" Apr 1, 2026
+3. EdgeProp, "Apex court quashes NGO bid to challenge Bukit Cherakah's degazettement in split 2-1 decision" Apr 1, 2026 https://www.edgeprop.my/content/1915733/apex-court-quashes-ngo-bid-challenge-bukit-cherakah%E2%80%99s-degazettement-split-2-1-decision
 4. The Star, "Apex court dismisses NGOs' appeal over Bukit Cherakah degazettement" Apr 1, 2026
 5. The Star, "Shah Alam forest link road 70% complete" Mar 3, 2026
 6. The Star, "No to Shah Alam forest road" Feb 11, 2026
 7. FMT, "Residents protest Shah Alam road project, want forest protected" Dec 21, 2025
-8. Eco-Business, "Malaysia's top court allows NGOs to challenge state government on forest degazettement" Sep 2024
+8. Eco-Business, "Malaysia's top court allows NGOs to challenge state government on forest degazettement" 9 Sep 2024 https://www.eco-business.com/id/news/malaysias-top-court-allows-ngos-to-challenge-state-government-on-forest-degazettement/
 9. NST, "Residents, Nature Lovers and NGOs Unite in Last-ditch Battle" Jun 2024
 10. WWF-Malaysia, "NGOs and CSOs Express Alarm Over Legal Implication" 2022
 11. SME Asia, "53 CSOs demand revocation of degazettement" Jul 18, 2022
 12. FMT, "Forestry dept explains delisting of Bukit Cherakah forest reserve" Jul 9, 2022
-13. Malaysian Bar, "Selangor Government Must Respect Due Process in Forest Reserve Excision" 2022
+13. Malaysian Bar, "Selangor Government Must Respect Due Process in Forest Reserve Excision" 8 Nov 2021 https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-release-selangor-government-must-respect-due-process-in-forest-reserve-excision
 14. SACF official site, "Chronology of Bukit Cherakah Forest Corridor Judicial Review"
 15. UNDP GEF SGP, "Saving Shah Alam Community Forest" project page
 16. Wikipedia, "Shah Alam Community Forest" (for cross-referencing)

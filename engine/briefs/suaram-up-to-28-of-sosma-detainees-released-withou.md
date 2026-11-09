@@ -67,7 +67,7 @@ Edition 4 of issue 1241:
 ## SOURCES
 
 1. **[P]** Laws of Malaysia, *Security Offences (Special Measures) Act 2012, Act 747*, 22 Jun 2012, ss. 4(4), 4(5), 4(9), 4(11) and 32. https://icj.org/wp-content/uploads/2012/12/Malaysia-Security-Offences-Special-Measures-Act-2012-eng.pdf
-2. **[P]** Attorney General's Chambers, *Security Offences (Special Measures) Act 2012, Act 747, online version of updated text of reprint*, as at 1 Aug 2015, s. 4 and commencement note P.U. (B) 256/2012.
+2. **[P]** Attorney General's Chambers, *Security Offences (Special Measures) Act 2012, Act 747, online version of updated text of reprint*, as at 1 Aug 2015, s. 4 and commencement note P.U. (B) 256/2012. https://aipalync.org/document/view/2919
 3. **[P]** Parliament of Malaysia, *Dewan Rakyat Official Report, DR 26.7.2022*, 26 Jul 2022, motion under s. 4(11) at p. 41 and division result at p. 94. https://cljlaw.com/files/hansard/DR/pdf/DR-26072022.pdf
 4. **[P]** Human Rights Commission of Malaysia, *Media Statement No. 22-2025: SUHAKAM to Conduct Public Inquiry into Alleged Human Rights Violations at Taiping Prison*, 23 May 2025. https://suhakam.org.my/2025/05/media-statement-no-22-2025_suhakam-to-conduct-public-inquiry-into-alleged-human-rights-violations-at-taiping-prison/
 5. **[S]** Free Malaysia Today, "Up to 28% of Sosma detainees freed without charge, says Suaram", 7 Apr 2026. https://www.freemalaysiatoday.com/category/nation/2026/04/07/up-to-28-of-sosma-detainees-freed-without-charge-says-suaram

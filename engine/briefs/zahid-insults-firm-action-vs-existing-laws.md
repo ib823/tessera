@@ -144,7 +144,7 @@ Coverage spans the spectrum. The "firmer action needed" narrative is dominant in
 3. Free Malaysia Today, "Zahid speaks of growing 'Malay unease', weakened political power", 10 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/10/zahid-speaks-of-growing-malay-unease-weakened-political-power
 4. The Edge Malaysia, "Ahmad Zahid: Insults against Islam, Malay rulers must be handled firmly", 10 May 2026, https://theedgemalaysia.com/node/802962
 5. Malaysiakini, "Zahid highlights Malay unease in their homeland, but stresses on unity", 10 May 2026, https://www.malaysiakini.com/news/774764
-6. UMNO Online (party organ — primary record of Zahid's framing), "Musyawarah Nasional Perlu Jadi Makmal Pemikir Bangsa Tangani Keresahan Melayu – Ahmad Zahid", 10 May 2026, https://umno-online.my/2026/05/10/musyawarah-nasional-perlu-jadi-makmal-pemikir-bangsa-tangani-keresahan-melayu-ahmad-zahid/
+6. UMNO Online (party organ — primary record of Zahid's framing), "Musyawarah Nasional Perlu Jadi Makmal Pemikir Bangsa Tangani Keresahan Melayu – Ahmad Zahid", 10 May 2026, https://umno-online.my/2026/05/10/musyawarah-nasional-perlu-jadi-makmal-pemikir-bangsa-tangani-keresahan-melayu-ahmad-zahid/ [PRIMARY]
 7. BN Comms, same press release, 10 May 2026, https://bncomms.my/2026/05/10/musyawarah-nasional-perlu-jadi-makmal-pemikir-bangsa-tangani-keresahan-melayu-ahmad-zahid/
 8. The Star, "Musyawarah Nasional to be registered as NGO, not owned by any party or individual, says Ahmad Zahid", 10 May 2026, https://www.thestar.com.my/news/nation/2026/05/10/musyawarah-nasional-to-be-registered-as-ngo-not-owned-by-any-party-or-individual-says-ahmad-zahid
 9. FMT (bahasa), "Isu Bumiputera agenda nasional, bukan ekstremis, tegas Zahid", 10 May 2026, https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/05/10/isu-bumiputera-agenda-nasional-bukan-ekstremis-tegas-zahid
@@ -163,7 +163,7 @@ Coverage spans the spectrum. The "firmer action needed" narrative is dominant in
 18. SUARAM (via Civicus Monitor / IFEX summaries of the April 2025 Malaysia Human Rights Report — five-year high in Sedition Act charges), April 2025.
 19. IFEX, "Malaysia: Freedom of expression is an everyday essential; stop restricting, keep progressing", 2025, https://ifex.org/malaysia-freedom-of-expression-is-an-everyday-essential-stop-restricting-keep-progressing/
 20. Amnesty Malaysia, "Stop restricting freedom of expression", 16 July 2025, https://www.amnesty.my/2025/07/16/malaysia-stop-restricting-freedom-of-expression/
-21. SUHAKAM, "Media Statement No. 02-2026 — Freedom of Expression at Stake: SUHAKAM Responds to the Application of the Sedition Act, Penal Code and CMA in a Journalistic Context", January 2026, https://suhakam.org.my/2026/01/media-statement-no-02-2026_freedom-of-expression-at-stake-suhakam-responds-to-the-application-of-the-sedition-act-penal-code-and-cma-in-a-journalistic-context/
+21. SUHAKAM, "Media Statement No. 02-2026 — Freedom of Expression at Stake: SUHAKAM Responds to the Application of the Sedition Act, Penal Code and CMA in a Journalistic Context", January 2026, https://suhakam.org.my/2026/01/media-statement-no-02-2026_freedom-of-expression-at-stake-suhakam-responds-to-the-application-of-the-sedition-act-penal-code-and-cma-in-a-journalistic-context/ [PRIMARY]
 22. Human Rights Watch, "World Report 2025: Malaysia", https://www.hrw.org/world-report/2025/country-chapters/malaysia
 
 **Tier D — National Harmony & Reconciliation Bill (the proposed alternative)**
@@ -181,4 +181,10 @@ Coverage spans the spectrum. The "firmer action needed" narrative is dominant in
 30. Sedition Act 1948 (revised) — Federal Gazette / Attorney General's Chambers consolidated text.
 31. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text.
 32. Penal Code (Act 574), ss.295, 298, 298A — Federal Gazette / AGC consolidated text.
-33. Federal Constitution, Articles 3, 8, 10, 152, 153, 181.
+33. Federal Constitution, Articles 3, 8, 10, 152, 153, 181. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
+34. Attorney General's Chambers, "Communications and Multimedia (Amendment) Act 2025 (Act A1743)", 7 Feb 2025, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2669326_BI/A1743%20BI-%20COMMUNICATIONS%20AND%20MULTIMEDIA%20%28AMENDMENT%29%20ACT%202025.pdf [PRIMARY]
+35. Free Malaysia Today, "Sedition Act cases up 84% in 2025, says CIJ", 10 Dec 2025, https://www.freemalaysiatoday.com/category/nation/2025/12/10/sedition-act-cases-up-84-in-2025-says-cij [S]
+36. Centre for Independent Journalism, "Kenyataan Akhbar: Hari Hak Asasi Manusia Sedunia 2025: Kebebasan Bersuara adalah Keperluan Harian; Hentikan Sekatan, Tumpukan Kemajuan", 10 Dec 2025, https://cijmalaysia.net/wp-content/uploads/2025/12/Kenyataan-Akhbar-IHRD-2025.pdf [PRIMARY]
+37. Malaysiakini, "Half of sedition cases involve criticism of political leaders - Suaram", 7 Apr 2026, https://www.malaysiakini.com/news/772030 [S]
+38. Federal Court of Malaysia, "Government of Malaysia v Heidy Quah Gaik Li, Civil Appeal No. 08(f)-35-02/2024(W): Press Summary", 6 Feb 2026, https://www.article19.org/wp-content/uploads/2026/02/GOVERNMENT-OF-MALAYSIA-v-HEIDY-QUAH-GAIK-LI_Press_Summary.pdf [PRIMARY]
+39. Malay Mail, "Lawyers: Federal Court's 'pivotal' ruling raises bar for prosecuting Malaysians over offensive online remarks", 6 Feb 2026, https://www.malaymail.com/news/malaysia/2026/02/06/lawyers-federal-courts-pivotal-ruling-raises-bar-for-prosecuting-malaysians-over-offensive-online-remarks/208255 [S]

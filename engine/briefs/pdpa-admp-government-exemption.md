@@ -218,8 +218,8 @@ PRIMARY (official document / regulator / statute / court / named authority citin
 - [S4] JPDP ADMP Public Consultation Paper No. 3/2025 + adopted ADMP Guideline (30 Apr 2026) — pdp.gov.my. **PRIMARY (regulator).**
 - [S5] JPDP Data Protection by Design Guideline (30 Apr 2026) — pdp.gov.my. **PRIMARY (regulator).**
 - [S7] 2022 breach — Malay Mail / SoyaCincau (18 May 2022) quoting Home Minister Hamzah Zainudin's denial; 22.5m figure. **Named authority citing primary (ministerial statement).**
-- [S8] Gobind Singh Deo on PADU not bound by Act 709 — Malay Mail, 17 Jul 2024. **Named authority quoting minister.**
-- [S11] Malaysian Bar — "Rebuilding the Public Trust Deficit With Regard to Personal Data Collection" press statement. malaysianbar.org.my. **PRIMARY (professional body).**
+- [S8] Gobind Singh Deo on PADU not bound by Act 709 — Malay Mail, 17 Jul 2024. **Named authority quoting minister.** [S]
+- [S11] Malaysian Bar — "Rebuilding the Public Trust Deficit With Regard to Personal Data Collection" press statement. malaysianbar.org.my. **PRIMARY (professional body).** [S]
 - [S13] GDPR Article 22 official consolidated text — gdpr-info.eu / gdpr-text.com. **PRIMARY (statute).**
 - [S14] PMO — "PADU ensures government services will be enjoyed by deserving recipients" — pmo.gov.my. **PRIMARY (government).**
 
@@ -239,7 +239,7 @@ ADDED post-draft (external deep-research report, each primary-verified before us
 - [S20] Malay Mail / FMT, 20 Apr 2026 — PADU Analytics-as-a-Service; loan-repayment-capability scoring; ageing-population targeting.
 
 ADDED — spectrum broadening (Stage 3 follow-up; each primary-verified):
-- [S21] **Academic / expert.** Prof. Abu Bakar Munir (Faculty of Law, Universiti Malaya), adviser on the original PDPA drafting: argued the government exclusion should be removed (state holds the largest data bank; accountability and investor confidence); notes Malaysia and Singapore are the only states with such a clause, and that Indonesia and Saudi Arabia omitted it on his advice. Per FMT/Daily Express 7 Oct 2023. Peer-reviewed: Ali Alibeigi & Abu Bakar Munir, "Malaysian Personal Data Protection Act, a Mysterious Application," Bologna Law Review / SSRN 3792672. **Academic + named expert.**
+- [S21] **Academic / expert.** Prof. Abu Bakar Munir (Faculty of Law, Universiti Malaya), adviser on the original PDPA drafting: argued the government exclusion should be removed (state holds the largest data bank; accountability and investor confidence); notes Malaysia and Singapore are the only states with such a clause, and that Indonesia and Saudi Arabia omitted it on his advice. Per FMT/Daily Express 7 Oct 2023. Peer-reviewed: Ali Alibeigi & Abu Bakar Munir, "Malaysian Personal Data Protection Act, a Mysterious Application," Bologna Law Review / SSRN 3792672. **Academic + named expert.** [PRIMARY]
 - [S22] **Civil society / rights group.** ARTICLE 19 with nine human-rights NGOs — memorandum submitted to Minister Azalina Othman Said (Law and Institutional Reform), 23 Jan 2024, proposing PDPA reforms (alongside OSA and Penal Code s.203A) in the RTI-reform context; read by the deep-research report as proposing to narrow/remove the s.3(1) public-sector exemption. article19.org. **Primary submission (rights group).**
 - [S23] **Parliamentary record.** PDPA (Amendment) Bill 2024: Cabinet approval announced 4 Jul 2024; first reading 10 Jul 2024; passed Dewan Rakyat 16 Jul 2024; passed Dewan Negara 31 Jul 2024 (Hansard). **PRIMARY (parliamentary).**
 - [S24] **Primary regulator consultation.** JPDP Public Consultation Paper, "Review of Personal Data Protection Act 2010" — expressly considered extending Act 709 to the Federal and State Governments, and noted statutory bodies are not automatically exempt. pdp.gov.my (Public-Consultation-Paper-on-Review-of-Act-709). **PRIMARY (regulator).** Replaces the FMT-second-hand "Cabinet rejected" framing.

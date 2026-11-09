@@ -448,7 +448,7 @@ Reid Commission rationale for combining the offices) or
    <https://www.parlimen.gov.my/bills-dewan-rakyat.html?uweb=dr&lang=en>
 3. Pakatan Harapan, *Buku Harapan: Membina Negara Memenuhi
    Harapan* (March 2018 manifesto). Promise 15 on AG-PP separation.
-4. Malaysian Bar Council, 79th AGM Motion on AG appointment
+4. Malaysian Bar Council, 79th AGM Motion on AG appointment [S]
    (14 March 2026, Mohamad Ezri Abdul Wahab proposing).
    <https://www.thestar.com.my/news/nation/2026/03/14/malaysian-bar-seeks-separation-of-ag-public-prosecutor-to-protect-independence>
 5. Bar Council, Opening of the Legal Year 2026 speech by President
@@ -456,7 +456,7 @@ Reid Commission rationale for combining the offices) or
    <https://www.malaysianbar.org.my/article/news/speeches/speeches/speech-by-mohamad-ezri-b-abdul-wahab-president-of-the-malaysian-bar-at-the-opening-of-the-legal-year-2026-malaysia-international-trade-and-exhibition-centre-12-jan-2026->
 6. Attorney-General of Malaysia, OLY 2026 Speech by AG Dusuki.
    <https://www.malaysianbar.org.my/cms/upload_files/document/2.%20Final%20OLY%202026%20AG%20-%20Dusuki%20-%20Speech.pdf>
-7. C4 Center MyGovt Reform Tracker — Separation of AG & PP.
+7. C4 Center MyGovt Reform Tracker — Separation of AG & PP. [S]
    <https://c4center.org/mygovtreformtracker/separation-of-ag-pp/>
 
 **Comparator jurisdictions (primary)**
@@ -546,11 +546,13 @@ Reid Commission rationale for combining the offices) or
     <https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-comment-the-malaysian-bar-applauds-the-government-s-commitment-to-the-separation-of-powers-of-the-attorney-general-and-the-public-prosecutor>
 
 **Historical context**
-33. Wikipedia, "Anwar Ibrahim sodomy trials" (extensive primary-
+33. Wikipedia, "Anwar Ibrahim sodomy trials" (extensive primary- [S] (LOGGED FOR EXCLUSION: encyclopedia, not a source)
     document references) — for the 1998 and 2008 prosecutorial-
     discretion context.
     <https://en.wikipedia.org/wiki/Anwar_Ibrahim_sodomy_trials>
 34. Tommy Thomas, *My Story: Justice in the Wilderness* (Gerakbudaya,
+39. MalaysiaNow, "Idrus Harun to continue as AG for another six months", 3 Mar 2023, https://www.malaysianow.com/news/2023/03/03/idrus-harun-to-continue-as-ag-for-another-six-months [S]
+40. Malay Mail, "AGC's Mohd Dusuki Mokhtar appointed as Malaysia's new attorney general, effective tomorrow", 11 Nov 2024, https://www.malaymail.com/news/malaysia/2024/11/11/agcs-mohd-dusuki-mokhtar-appointed-as-malaysias-new-attorney-general-effective-tomorrow/156497 [S]
     January 2021).
     <https://www.gerakbudaya.com/product/my-story-justice-in-the-wilderness-tommy-thomas>
 35. The Borneo Post, "Bill to separate roles of AG, Public
@@ -562,9 +564,9 @@ Reid Commission rationale for combining the offices) or
 36. Wikipedia, "Crown Prosecution Service" — UK history and
     structure.
     <https://en.wikipedia.org/wiki/Crown_Prosecution_Service>
-37. Wikipedia, "Director of Public Prosecutions (Australia)."
+37. Wikipedia, "Director of Public Prosecutions (Australia)." (LOGGED FOR EXCLUSION: encyclopedia, not a source)
     <https://en.wikipedia.org/wiki/Director_of_Public_Prosecutions_(Australia)>
-38. Wikipedia, "Attorney-General of Singapore."
+38. Wikipedia, "Attorney-General of Singapore." (LOGGED FOR EXCLUSION: encyclopedia, not a source)
     <https://en.wikipedia.org/wiki/Attorney-General_of_Singapore>
 
 ## CONTRADICTIONS

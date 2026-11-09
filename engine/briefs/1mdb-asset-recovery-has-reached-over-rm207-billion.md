@@ -104,6 +104,7 @@ Edition 4 of issue 1867:
 9. **[S]** Malay Mail, "Malaysia's 1MDB recovery hits RM31.3b as of 2025, ranks among world's highest, says MACC chief", 6 May 2026. https://www.malaymail.com/news/malaysia/2026/05/06/malaysias-1mdb-recovery-hits-rm313b-as-of-2025-ranks-among-worlds-highest-says-macc-chief/218902
 10. **[S]** The Star, "RM31.3bil of 1MDB funds and assets recovered, says Azam", 6 May 2026. https://www.thestar.com.my/news/nation/2026/05/06/rm313bil-of-1mdb-funds-and-assets-recovered-says-azam
 11. **[S]** The Edge Malaysia, "Govt still has to bear RM20.1b 1MDB burden if no further funds recovered, MOF", 7 Oct 2026. https://theedgemalaysia.com/node/820951
+12. Reuters, "Goldman to pay Malaysia $3.9 billion over 1MBD scandal, U.S. settlement seen close", 24 Jul 2020, https://au.finance.yahoo.com/news/goldman-sachs-malaysia-agree-3-101222953.html [S]
 
 ## BACKFILL NOTES
 

@@ -214,14 +214,14 @@ Religious lens deliberately *not* used as a card lens — keeps the editorial fr
 ## SOURCES
 
 **Tier A — The Sultan's decrees and Royal Office statements (primary)**
-1. The Star, "No more pig farms in Tanjong Sepat, decrees Selangor Ruler", 12 Jan 2026, https://www.thestar.com.my/news/nation/2026/01/12/no-more-pig-farms-in-tanjong-sepat-decrees-selangor-ruler
-2. Malay Mail, "Selangor to move pig farms to Bukit Tagar immediately after Sultan's decree", 13 Jan 2026, https://www.malaymail.com/news/malaysia/2026/01/13/selangor-to-move-pig-farms-to-bukit-tagar-immediately-after-sultans-decree/205250
-3. Malay Mail, "Sultan Sharafuddin says no to pig farming in Selangor, urges pork imports to meet demand", 10 Feb 2026, https://www.malaymail.com/news/malaysia/2026/02/10/sultan-sharafuddin-says-no-to-pig-farming-in-selangor-urges-pork-imports-to-meet-demand/208707
-4. CodeBlue (Galen Centre), "Sultan Sharafuddin Wants Total Pig Farming Ban In Selangor", Feb 2026, https://codeblue.galencentre.org/2026/02/sultan-sharafuddin-wants-total-pig-farming-ban-in-selangor/
-5. Malay Mail, "Selangor Royal Office: Sultan decrees 'full stop' on pig farming in state", 7 May 2026, https://www.malaymail.com/news/malaysia/2026/05/07/selangor-royal-office-sultan-decrees-full-stop-on-pig-farming-in-state/219080
-6. Bernama, "Sultan Of Selangor Sets Three Policy Directives For State Pig Farming Operations", https://www.bernama.com/en/general/news.php?id=2511685
-7. NST, "[UPDATED] Sultan of Selangor makes it clear, no consent for pig farming in state", May 2026, https://www.nst.com.my/news/regional/2026/05/1434391/updated-sultan-selangor-makes-it-clear-no-consent-pig-farming-state
-8. Malay Mail, "'Come once a week': Selangor Sultan asks Ronnie Liu, DAP rep to visit Rukun Negara monument over pig farming controversy", 19 May 2026, https://www.malaymail.com/news/malaysia/2026/05/19/come-once-a-week-selangor-sultan-asks-ronnie-liu-dap-rep-to-visit-rukun-negara-monument-over-pig-farming-controversy/220560
+1. The Star, "No more pig farms in Tanjong Sepat, decrees Selangor Ruler", 12 Jan 2026, https://www.thestar.com.my/news/nation/2026/01/12/no-more-pig-farms-in-tanjong-sepat-decrees-selangor-ruler [S]
+2. Malay Mail, "Selangor to move pig farms to Bukit Tagar immediately after Sultan's decree", 13 Jan 2026, https://www.malaymail.com/news/malaysia/2026/01/13/selangor-to-move-pig-farms-to-bukit-tagar-immediately-after-sultans-decree/205250 [S]
+3. Malay Mail, "Sultan Sharafuddin says no to pig farming in Selangor, urges pork imports to meet demand", 10 Feb 2026, https://www.malaymail.com/news/malaysia/2026/02/10/sultan-sharafuddin-says-no-to-pig-farming-in-selangor-urges-pork-imports-to-meet-demand/208707 [S]
+4. CodeBlue (Galen Centre), "Sultan Sharafuddin Wants Total Pig Farming Ban In Selangor", Feb 2026, https://codeblue.galencentre.org/2026/02/sultan-sharafuddin-wants-total-pig-farming-ban-in-selangor/ [S]
+5. Malay Mail, "Selangor Royal Office: Sultan decrees 'full stop' on pig farming in state", 7 May 2026, https://www.malaymail.com/news/malaysia/2026/05/07/selangor-royal-office-sultan-decrees-full-stop-on-pig-farming-in-state/219080 [S]
+6. Bernama, "Sultan Of Selangor Sets Three Policy Directives For State Pig Farming Operations", https://www.bernama.com/en/general/news.php?id=2511685 [S]
+7. NST, "[UPDATED] Sultan of Selangor makes it clear, no consent for pig farming in state", May 2026, https://www.nst.com.my/news/regional/2026/05/1434391/updated-sultan-selangor-makes-it-clear-no-consent-pig-farming-state [S]
+8. Malay Mail, "'Come once a week': Selangor Sultan asks Ronnie Liu, DAP rep to visit Rukun Negara monument over pig farming controversy", 19 May 2026, https://www.malaymail.com/news/malaysia/2026/05/19/come-once-a-week-selangor-sultan-asks-ronnie-liu-dap-rep-to-visit-rukun-negara-monument-over-pig-farming-controversy/220560 [S]
 
 **Tier B — Selangor State Exco / MMKN adoption (primary executive uptake)**
 9. CodeBlue, "MB: Selangor To Completely Import Pork, Ban Pig Farming", Feb 2026, https://codeblue.galencentre.org/2026/02/mb-selangor-to-completely-import-pork-ban-pig-farming/
@@ -252,15 +252,15 @@ Religious lens deliberately *not* used as a card lens — keeps the editorial fr
 
 **Tier F — Constitutional law primary sources**
 28. The Malaysian Bar, "Powers and functions of state rulers", https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/powers-and-functions-of-state-rulers
-29. Federal Constitution (AGC reprint, 1 November 2010) — Articles 3, 8, 32, 38, 40, 63, 66, 71, 121, 150, 152, 153, 181, 182; Eighth Schedule. Available via LPR ADB mirror: https://lpr.adb.org/sites/default/files/resource/719/malaysia-constitution.pdf.pdf
+29. Federal Constitution (AGC reprint, 1 November 2010) — Articles 3, 8, 32, 38, 40, 63, 66, 71, 121, 150, 152, 153, 181, 182; Eighth Schedule. Available via LPR ADB mirror: https://lpr.adb.org/sites/default/files/resource/719/malaysia-constitution.pdf.pdf [PRIMARY]
 30. Constitute Project, "Malaysia 1957 (rev. 2007) Constitution", https://www.constituteproject.org/constitution/Malaysia_2007
 31. Wikipedia, "Laws of the Constitution of Selangor 1959" — overview of Article 50 and the Selangor State Constitution structure.
 32. Wikipedia, "Constitution of Malaysia" — general primary-text reference.
 33. Sedition Act 1948 — Federal Gazette / AGC consolidated text.
 34. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text.
-35. Penal Code (Act 574), ss.298, 298A, 504 — Federal Gazette / AGC consolidated text.
-36. Child Act 2001, s.97 — Federal Gazette / AGC consolidated text.
-37. Internal Security Act 1960 (now repealed) and ISA Repeal Act 2012 — for the historical comparator.
+35. Penal Code (Act 574), ss.298, 298A, 504 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf [PRIMARY]
+36. Child Act 2001, s.97 — Federal Gazette / AGC consolidated text. [PRIMARY]
+37. Internal Security Act 1960 (now repealed) and ISA Repeal Act 2012 — for the historical comparator. [PRIMARY]
 
 **Tier G — Lèse-majesté comparator landscape**
 38. LawShun, "Global Lèse Majesté Laws: Nations Protecting Royal Dignity And Authority", https://lawshun.com/article/which-countries-have-lese-majeste-laws

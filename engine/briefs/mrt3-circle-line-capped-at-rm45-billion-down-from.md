@@ -106,6 +106,7 @@ Totals: 15 VERIFIED, 5 PARTLY, 0 UNVERIFIED, 0 CONTRADICTED, 0 STALE-SINCE-PUBLI
 14. **[S]** Free Malaysia Today, "MRT3 will link up all Klang Valley's rail services, say transport experts", 26 Sep 2024. https://freemalaysiatoday.com/category/nation/2024/09/26/mrt3-will-link-up-all-klang-valleys-rail-services-say-transport-experts
 15. **[S]** Free Malaysia Today, "ECRL's total development cost RM75bil, says ministry", 22 Dec 2022. https://www.freemalaysiatoday.com/category/nation/2022/12/22/ecrl-total-development-cost-is-rm75bil-says-ministry
 16. **[S]** The Star, "Loke: ECRL projected to generate revenue of RM418mil", 4 Nov 2026. https://www.thestar.com.my/news/nation/2026/11/04/loke-ecrl-projected-to-generate-revenue-of-rm418mil
+17. Mass Rapid Transit Corporation (MRT Corp), "Stakeholder Management Report: Circle Line (MRT3) Public Inspection", Dec 2025, https://www.mymrt.com.my/wp-content/uploads/2025/12/Stakeholder-Management-Report-MRT3-5DEC_Final.pdf [S]
 
 ## BACKFILL NOTES
 

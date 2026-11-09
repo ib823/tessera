@@ -608,7 +608,7 @@ depositor voice is exactly the omission T4A exists to correct.
   (RM10 billion gap, RM9.7 billion assets, RM19.9 billion consideration, RM12.6 billion
   losses addressed, TRX land and plantation repurchases, 75% of recommendations
   implemented). Retrieved via Malay Mail [S8].
-- **[P5] Tabung Haji official statement, 1 August 2026** — "profit distribution is only
+- **[P5] Tabung Haji official statement, 1 August 2026** — "profit distribution is only [S]
   announced based on audited financial results"; implementing since 2022; 3.50% in 2025;
   9.8 million depositors. **Stage 3:** the "more than 75% of recommendations implemented"
   figure is from TH's **7 August 2026** statement (tabunghaji.gov.my/bm/siaran-media/korporat/th-ambil-maklum-teliti-pandangan-dan-cadangan-ngo-berkaitan-dapatan-rci),
@@ -616,19 +616,19 @@ depositor voice is exactly the omission T4A exists to correct.
   tabunghaji.gov.my/siaran-media/korporat/laporan-rci-th-patut-rekod-kerugian-1-4-bilion-pada-2017-berbanding-untung-3-4-bilion-mengikut-piawaian-perakaunan-mfrs.
   Retrieved via Malay Mail:
   https://www.malaymail.com/news/malaysia/2026/08/01/tabung-haji-welcomes-rci-recommendations-says-already-distributes-profits-based-on-audited-results/229809
-- **[P6] Bernama, "RCI Report Reveals Governance Weaknesses, Political Interference In Tabung
+- **[P6] Bernama, "RCI Report Reveals Governance Weaknesses, Political Interference In Tabung [S]
   Haji"** — https://www.bernama.com/en/general/news.php?id=2587753. National news agency;
   findings on political involvement 2014-2018, ministerial powers under Act 535,
   restructuring recommendations.
-- **[P7] Bernama, "211-Page Tabung Haji RCI Report Released"** —
+- **[P7] Bernama, "211-Page Tabung Haji RCI Report Released"** — [S]
   https://bernama.com/en//general/news.php?id=2587728. Appointment 20 Jan 2022 by the 16th
   Yang di-Pertuan Agong, six-month term to 19 July 2022, terms of reference built on PwC, EY
   and Roland Berger.
 - **[P8] Official Secrets Act 1972, s.2C** — declassification mechanism reported for the
   release. **Text not yet pulled.**
-- **[P9] Urusharta Jamaah Sdn Bhd completion statement, Dec 2018** — transfer terms.
+- **[P9] Urusharta Jamaah Sdn Bhd completion statement, Dec 2018** — transfer terms. [S]
   Retrieved via The Edge: https://theedgemalaysia.com/article/tabung-haji-asset-transfer-part-rescue-restructuring-plan-completed-%E2%80%94-urusharta-jamaah
-- **[P10] Abdul Azeez Abdul Rahim, media statement, Parliament lobby, 11 Dec 2018** — the
+- **[P10] Abdul Azeez Abdul Rahim, media statement, Parliament lobby, 11 Dec 2018** — the [S]
   RAV defence and the 2015/2016/2017 surplus figures.
   https://umno-online.my/2018/12/11/isytihar-hibah-2014-2017-tidak-langgar-akta-tabung-haji-1995/
 
