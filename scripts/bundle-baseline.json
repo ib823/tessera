@@ -1,5 +1,5 @@
 {
-  "total": 188813,
-  "establishedAt": "2026-06-02T01:30:00.000Z",
-  "establishedBy": "PR #51 — baseline refresh, NOT caused by this PR's content. The Malaysia tourism-state infographic page (/infographics/tourism-state) is static HTML with inline styles and ships ~0 B of JS/CSS chunk weight; building origin/main alone already exceeded the prior 164,986 B baseline by +23,289 B, versus +23,294 B with this PR (a ~5 B difference = build noise). The ~+23.8 KB brotli growth originates from features merged to main since the 2026-05-18 baseline (the Plumb Line ranked-board / coder-panel surfaces). This bump records the current main bundle size so PR CI reflects reality; it is within ADR-0001's +30 KB per-refactor ceiling. If that Plumb Line growth warrants trimming, that is a separate decision and should not be attributed to this infographic PR."
+  "total": 202781,
+  "establishedAt": "2026-11-09T02:00:00.000Z",
+  "establishedBy": "UX audit integration (homepage/navigation, policy pages, reader/sharing/SEO/performance batches plus follow-ups). Measured with astro build + stealth at each step: main at 31e7be6b8 was already 194,280 B (+5,467 B pre-existing drift over the 188,813 B baseline); homepage, navigation, layout, prompts and accessibility batch +4,521 B; policy pages batch +72 B; reader, sharing, SEO and performance batch +3,225 B; follow-ups +683 B. Total +13,968 B (+7.40%), within ADR-0001's +30 KB per-refactor ceiling. The reader batch moved MiniSearch (5,679 B) out of the main chunk into a chunk loaded on first search; this gate sums every chunk, so that cut first-load JS without lowering the total (split overhead about 150 B). No duplicate helpers across the batches were found that would trim it."
 }
