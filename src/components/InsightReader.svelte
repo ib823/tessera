@@ -8,6 +8,7 @@
   import IssueSources from './IssueSources.svelte';
   import IssueMeta from './IssueMeta.svelte';
   import IssueChanges from './IssueChanges.svelte';
+  import CardSources from './CardSources.svelte';
   import VerifyCopyButton from './VerifyCopyButton.svelte';
   import { CARD_TYPES, opinionColor } from '../data/issue-types';
   import { markCompleted, updateProgress, savePosition } from '../stores/reader';
@@ -24,6 +25,7 @@
     big: string;
     sub: string;
     lens?: string;
+    src?: string[];
   }
 
   interface Issue {
@@ -1281,6 +1283,11 @@
           {#if card.sub}
             <p class="sub-text" style:opacity={subTextVisible ? 1 : 0}>{card.sub}</p>
           {/if}
+          {#if card.src?.length}
+            <div class="card-sources-slot" style:opacity={subTextVisible ? 1 : 0}>
+              <CardSources {card} entries={issue.sourceList} variant="mobile" />
+            </div>
+          {/if}
         </div>
 
         <!-- Card bottom -->
@@ -1695,6 +1702,10 @@
     line-height: 1.65;
     margin: 0;
     max-width: 65ch;
+    transition: opacity 250ms ease;
+  }
+
+  .card-sources-slot {
     transition: opacity 250ms ease;
   }
 

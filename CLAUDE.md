@@ -32,7 +32,7 @@ Issues are stored one-per-file in `src/data/issues/`. The loader in `src/data/is
   "type": "Analysis",
   "cards": [
     { "t": "hook", "big": "What they said — the surface claim", "sub": "Context that sets up the gap between claim and reality" },
-    { "t": "fact", "big": "What we found — first factual finding", "sub": "Supporting evidence with specific numbers", "lens": "Legal" },
+    { "t": "fact", "big": "What we found — first factual finding", "sub": "Supporting evidence with specific numbers", "lens": "Legal", "src": ["3", "7"] },
     { "t": "fact", "big": "Second finding from different angle", "sub": "Contrasting data point", "lens": "Economic" },
     { "t": "fact", "big": "Third finding — the missing voice", "sub": "Perspective that mainstream coverage omits", "lens": "Social" },
     { "t": "reframe", "big": "The real question nobody is asking", "sub": "" },
@@ -57,6 +57,7 @@ Field notes:
 - `type`: `"Analysis"` (argues a reading), `"Explainer"` (sets out how something works) or `"Fact-check"` (tests a specific public claim). Shown under the headline.
 - `changes`: edition history, oldest first: `[{ "edition": 2, "date": "2026-04-08", "summary": "Correction: ..." }]`. One plain line per entry; start substantive corrections with `Correction:` and refreshes with `Update:`. Shown as "What changed" on the issue page.
 - `node scripts/derive-issue-history.mjs` re-derives `publishedAt`/`modifiedAt` from git history (`--write` to save; rules in its header).
+- `src` (hook and fact cards only): the sources behind that card, as up to 3 refs from the brief's SOURCES numbering, exactly as the `ref` field in `src/data/sources/{id}.json` (e.g. `"src": ["4", "12a"]`). Readers see them under the card. Link a source only when the brief ties it to a specific fact on the card, or it is the very document the card describes (the Act, the judgment, the report); never by topic. A card with no supporting source in the list gets no `src`, and the gap goes back to the brief. `node scripts/build-issue-sources.mjs --check` fails when a ref does not resolve. Adding or changing `src` is not a substantive change: it does not move `modifiedAt` or the edition.
 
 ### Card types:
 - `hook` — "What they said" — the mainstream narrative / surface claim
@@ -492,7 +493,7 @@ Draw a man in a suit shown from the chest up in a shrugging pose — arms extend
 1. Process uploaded image → move to `public/og/backgrounds/issue-{ID}-bg.png`
 2. Write issue to `src/data/issues/{ID}.json`
 3. Update `related[]` on connected issues (bidirectional — edit each connected issue's JSON file)
-4. Set `"published": true` and `"sourceDate"` to today's date; set `publishedAt` and `modifiedAt` to now and pick a `type`
+4. Set `"published": true` and `"sourceDate"` to today's date; set `publishedAt` and `modifiedAt` to now and pick a `type`; set `src` on the hook and every fact card from the brief's source numbers
 5. Run `node scripts/validate-issues.mjs` — **must exit 0**
 6. Verify background image exists at expected path
 7. Grep all issue text for stealth banned terms (must find zero)

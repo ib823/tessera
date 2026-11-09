@@ -74,7 +74,7 @@ for (const issue of publishedIssues) {
     const { entries } = JSON.parse(readFileSync(sourcesPath, 'utf8'));
     payload = {
       ...issue,
-      sourceList: entries.map(({ n, title, publisher, date, url, primary }) => ({ n, title, publisher, date, url, primary })),
+      sourceList: entries.map(({ n, ref, title, publisher, date, url, primary }) => ({ n, ref: String(ref), title, publisher, date, url, primary })),
     };
     withSources += 1;
   }
