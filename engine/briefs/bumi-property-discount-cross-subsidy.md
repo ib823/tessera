@@ -83,3 +83,12 @@ None identified that changes a card.
 
 Primary count is 4 of 10. State housing circulars, such as LPHS Circular No. 1 of 2019, were not reachable online.
 The issue is narrow and the sources above cover every card claim except the income-criteria hedge.
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1625.json`:
+
+- **Context.** "Quotas and discounts range from 5-15%" paired quotas with the discount range. CIDB Technical Publication 218, Table 3.22 (source 1) lists quotas of 30% (Kuala Lumpur, Penang), 40% (Johor) and a 50% minimum rising to 70% by house type (Selangor), and discounts of 5% (KL, Penang), 7% (Selangor) and 15% (Johor). The Selangor assembly answer gives a 30% state floor (source 3). The context now says quotas run from 30% to 70% of units and discounts from 5% to 15% in the four states CIDB tabulated.
+- **Economic big.** "46% had been on the books over a year" became "46% had been on the market more than 36 months". Source 1 (finding IV and the ageing table) gives 46% beyond 36 months and 79% beyond 12 months.
+- **Governance big and sub.** Dropped the unsourced "affordable-housing schemes may apply income criteria separately" and the unsourced "income tests" in the sub. The big now carries the CIDB finding that buyers of RM1 million homes still get the 5-15% discount (source 1, "Bumiputera Quota & Discounts").
+- Hook, Critical card, reframe, analogy and view unchanged. The reframe keeps a pre-existing auxiliary-density warning; the card was out of scope.
