@@ -46,6 +46,16 @@ No material change found. The s. 4(5) extension runs from 31 Jul 2022, so the ne
 - Media [5, 6, 10, 11, 13]: Malay Mail, FMT, Malaysiakini and The Star.
 - **Gap:** the government's case for renewal is on file only through the Hansard [2]. Suaram data is single-NGO and is labelled as such on the cards.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1298:
+
+- **Rights card:** 6,892 is now attributed to the Home Minister's Dewan Negara written reply covering 2012 to 2025 [12], not to Suaram; the 20–28% range stays Suaram's [10, 11]. The sub says the count did not exist at the 2022 renewal vote: it came in a March 2026 written reply, which Suaram cited in April 2026 [10, 12]. No release rate is derived.
+- **Legal card sub:** the unverified sentence on Speaker and business-manager debate-time allocation is removed. It is replaced by the December 2025 parliamentary select-committee call to review the 28-day period, outside the s. 4(11) mechanism [13].
+- **Hook sub:** "Available renewal records show shorter debates" was checked for July 2022 only. Now: the July 2022 motion passed on the day it was moved [2]; the 2012 Bill's debate ran across two sitting days [3, 4].
+- **Social card:** "made public submissions at renewal moments" did not fit Lawyers for Liberty, whose statement found is dated after the renewal. Now: the three groups publicly urged MPs to reject the renewal or repeal SOSMA [7, 8, 9].
+- **View:** "Suaram's arrest ... data" changed to "official detention counts and Suaram's release-without-charge data" [10, 12].
+
 ## SOURCES
 
 1. **[P]** Laws of Malaysia, *Security Offences (Special Measures) Act 2012, Act 747*, 22 Jun 2012, ss. 4(5) and 4(11). https://icj.org/wp-content/uploads/2012/12/Malaysia-Security-Offences-Special-Measures-Act-2012-eng.pdf

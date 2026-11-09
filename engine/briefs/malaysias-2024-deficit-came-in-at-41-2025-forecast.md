@@ -47,6 +47,14 @@ The federal fiscal deficit was 4.1% of GDP in 2024 against a 4.3% target, and 3.
 - **Opposition:** none opened. The fiscal outturns are official statistics, not contested on the numbers; an opposition critique of the glide path was not located in this pass (web search budget exhausted before that search).
 - Primary count: 7 of 9.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1201:
+
+- **View (update):** adds a dated sub. Budget 2027 (9 Oct 2026) revised the 2026 deficit target from 3.5% to 3.6% [5]. Federal debt was 65.2% of GDP at end-2025 and 63.1% at end-June 2026 [4], against the 60% value in Act 850's First Schedule [3]. The view's test (whether the s. 27 adjustment mechanism is used) is unchanged.
+- **Hook sub:** "SST-broadening delays" was not among the risks BMI reported. The risks now listed are those BMI gave: spending overshoot, weaker tax collection and lower petroleum revenue [9].
+- **Social card sub:** the unverified sentence on corporate-bond pass-through and household-credit channels is removed. It is replaced by Fitch's affirmation of BBB+ with a stable outlook on 9 Dec 2025 [7].
+
 ## SOURCES
 
 1. **[P]** Ministry of Finance Malaysia, "Malaysia Exceeds GDP and Fiscal Deficit Targets for 2024", press release, 14 Feb 2025. https://www.mof.gov.my/portal/en/news/press-release/malaysia-exceeds-gdp-and-fiscal-deficit-targets-for-2024

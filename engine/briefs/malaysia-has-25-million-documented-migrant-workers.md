@@ -51,6 +51,18 @@ The Ministry of Finance's Economic Outlook 2025 counted about 2.5 million regist
 - Media [3, 9, 10]: The Star (mainstream) and Malaysiakini (independent).
 - **Gap:** no worker-side or employer-side voice is on file: migrant-worker NGOs, source-country embassies, or the plantation and glove industries. The ILO was not consulted. The TIP Report is a US government assessment, not a Malaysian or UN finding; the Home Ministry's response to the 2026 report is on file only through The Star [9].
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1267:
+
+- **Headline, context, hook:** "2.5 million documented migrant workers" (MOF, end-August 2024) replaced by the latest official count, 2.13 million (2.132 million) active registrations at 15 Oct 2025, down 13% in a year (Hansard DR 3.11.2025) [2, 3]. "Persistent Tier 2" replaced by "three years at Tier 2" (2024, 2025, 2026) [4, 9, 10].
+- **Context, hook sub:** the 2026 TIP Report (9 Oct 2026) is cited as the latest; it kept Tier 2 [9, 10].
+- **Legal card:** coverage date corrected to 1 Sep 2022 (First Schedule order P.U. (A) 262/2022) and scope corrected to Peninsular Malaysia only (s. 2(2)) [7]. "All private-sector employees" removed.
+- **Rights card sub:** convictions given as 26 against 54 in the 2025 report, and 36 in the 2026 report, which found no employment agency prosecuted under the Private Employment Agencies Act 1981 [4, 10].
+- **Economic card sub:** the unverified absence claim ("No single official aggregate of their economic contribution was located") removed.
+- **Reframe:** adds the 2021 and 2022 Tier 3 years [6, 10].
+- **View:** "2023 Employment Act expansion" (wrong year) replaced by "wider Employment Act coverage"; the TIP recommendation is restated as written (victim identification in palm oil and gloves; prosecute trafficking cases) [4].
+
 ## SOURCES
 
 1. **[P]** Ministry of Finance Malaysia, *Economic Outlook 2025*, 18 Oct 2024, Chapter 2, labour market, p. 94. https://belanjawan.mof.gov.my/pdf/belanjawan2025/economy/economic-2025.pdf

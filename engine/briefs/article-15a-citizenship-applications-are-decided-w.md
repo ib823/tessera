@@ -47,6 +47,14 @@ Article 15A lets the Federal Government, "in such special circumstances as it th
 - Media [8, 9, 10]: Malay Mail and Malaysiakini.
 - **Gap:** no published Home Ministry statistics on Article 15A approval rates were opened. Reports of a sub-5% approval rate exist but could not be opened, so they are not used.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1265:
+
+- **Context, hook sub, Social card sub:** the "11-year" case is no longer attributed to SUHAKAM. SUHAKAM's documented multi-year waits stay [5]. The single long case is re-attributed to Malay Mail (27 Sep 2019), which reports an Article 15A applicant who waited "more than a decade" with no SUHAKAM involvement [9].
+- **Rights card:** now says the 2024 Bill also lowers Article 15A's age limit from 21 to 18 [3, 4], and that the discretion itself is unchanged. Adds that the amendment still had no enforcement date at 14 Oct 2026 [10].
+- **Not changed:** reframe (opinion; its existing auxiliary-density language warning predates this correction) and view (opinion).
+
 ## SOURCES
 
 1. **[P]** Attorney General's Chambers, *Federal Constitution, Reprint*, 15 Oct 2020, Articles 15(2), 15A and 19. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf

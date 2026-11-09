@@ -48,6 +48,15 @@ On 26 March 2026 the Ministry of Finance announced that the monthly BUDI95 entit
 - **Opposition / consumer groups:** none opened (web search budget was exhausted before that search). A gap for a political-cost issue.
 - Primary count: 8 of 12.
 
+## CORRECTION (2026-11-09)
+
+Edition 3 of issue 1952:
+
+- **Headline, context, hook:** dated to April to August 2026. The quota returned to 300 litres from 1 Sep 2026 [6, 11]. MOF's own wording, "nearly 90%" and "temporary", is used [1, 2].
+- **Economic card:** the 16–22 April unsubsidised price corrected from RM3.87 to RM4.02 (MOF, 22 Apr 2026) [3]. The gap for that week is 102%: (4.02 − 1.99) / 1.99. RM3.87 applied 26 Mar–8 Apr and 23–29 Apr [2, 3, 4], a 94% gap: (3.87 − 1.99) / 1.99. The unverified claim that heavy-use drivers, gig riders and rural commuters cross 200 litres most often is removed.
+- **Social card:** the unverified public-transport claim is replaced by MOF's 800-litre ceiling for e-hailing operators [1] and the absence of any published usage distribution in the MOF releases opened [1, 2, 5]. "Five days after" corrected to four, and the festive scheme is described as covering goods [10].
+- **Reframe and view:** "targeted reform" replaced by "temporary cut" / "quota cut", matching MOF's description of a temporary measure "until global supply stabilises" [1, 2]. The argument (publish the arithmetic) is unchanged.
+
 ## SOURCES
 
 1. **[P]** Ministry of Finance Malaysia, "BUDI95 Diselaras Kepada 200 Liter Sebulan, Harga Kekal RM1.99 Seliter", siaran media, 26 Mar 2026. https://www.mof.gov.my/portal/ms/berita/siaran-media/budi95-diselaras-kepada-200-liter-sebulan-harga-kekal-rm1-99-seliter

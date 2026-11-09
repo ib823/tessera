@@ -51,6 +51,15 @@ Before the amendment, a child born abroad was a citizen by operation of law only
 - Media [6, 8, 9]: Malay Mail, The Star and Malaysiakini.
 - **Gap:** Family Frontiers' own statements were not opened. The Conference of Rulers' role in the amendment is mentioned in Hansard but not used in the cards.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1325:
+
+- **View:** "closes the central injustice" read as if the amendment were in force. It had no enforcement date at 14 Oct 2026 [9]. The view now says Parliament voted for the fix in 2024, the 2025 settlement gave earlier children a route [6], and the amendment still had no start date in October 2026 [9].
+- **Legal card:** the hedged "reporting and party statements place the Dewan Negara vote on 3 December 2024" underclaimed; the Senate Hansard records it [2]. The Dewan Rakyat vote (206 to 1) is added [1]. The sub adds the missing commencement date [9].
+- **Social card sub:** the untraced claim that Family Frontiers "continue[s] to press" is replaced by two sourced positions: Lawyers for Liberty's objection to the non-retroactivity clause [7] and the UN CRC's February 2026 call to cover children born before enactment (para. 33(k)) [5].
+- **Not changed:** reframe (framing; PARTLY in the table above).
+
 ## SOURCES
 
 1. **[P]** Parliament of Malaysia, *Dewan Rakyat Official Report, DR 17.10.2024*, 17 Oct 2024, Constitution (Amendment) Bill 2024 at pp. 47–113. https://cljlaw.com/files/hansard/DR/pdf/DR-17102024.pdf
