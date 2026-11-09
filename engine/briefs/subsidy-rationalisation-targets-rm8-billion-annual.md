@@ -47,6 +47,13 @@ In the Budget 2026 speech (10 October 2025), Prime Minister and Finance Minister
 - **Media:** FMT [5], The Star [4].
 - Primary count: 5 of 9.
 
+## CORRECTION (2026-11-09)
+
+Edition 5 of issue 1102:
+
+- **Economic card sub (update):** fuel subsidy spending rose to RM40 billion in 2026 after the West Asia crisis (Fiscal Outlook 2027, p. 113) [7]; Budget 2027 argues the burden would have been higher without targeting [8]. The sub now says savings count against an untargeted bill, not a falling one. The old sub ("Components have shifted as RON95 targeting begins...") is replaced.
+- **Hook sub:** "RON95 targeting begins in the second half of 2025" changed to "began in September 2025" [1, 6].
+
 ## SOURCES
 
 1. **[P]** Ministry of Finance Malaysia, *Budget Speech 2026*, 10 Oct 2025, paras. 40–41. https://budget.mof.gov.my/pdf/belanjawan2026/ucapan/bs26.pdf
