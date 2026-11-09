@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T04:14:04.930Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T06:23:10.448Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (89)
+## ⏳ TO POST (88)
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
@@ -21,9 +21,9 @@ Since 2012, Malaysian courts must order convicts to compensate victims when pros
 ```
 Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
 ```
-**3/6** _(fact)_ · 151 chars
+**3/6** _(fact)_ · 149 chars
 ```
-The scam response centre returned RM6.65m to victims in 2025, the Home Ministry told Parliament. Bank Negara put 2025's reported scam losses at RM2.8b.
+The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
 ```
 **4/6** _(fact)_ · 131 chars
 ```
@@ -89,9 +89,9 @@ Google pledged US$15b on 4 Nov and to pay 100% of its campuses' power. Who pays 
 ```
 RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul to list data centres for a public-display EIA. The 2015 Order has none.
 ```
-**3/6** _(fact)_ · 268 chars
+**3/6** _(fact)_ · 126 chars
 ```
-By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found. On 28 Oct, Johari told Parliament 117 data centres are approved, needing 23,000-23,500MW if all are built. In August they drew about 1,374MW.
+By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.
 ```
 **4/6** _(fact)_ · 146 chars
 ```
@@ -225,9 +225,9 @@ https://thefourthangle.pages.dev/issue/2011
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
 
-**1/7** _(hook — attach image, NO link)_ · 145 chars
+**1/7** _(hook — attach image, NO link)_ · 130 chars
 ```
-Tabung Haji declared a RM3.4 billion profit for 2017 and paid RM3.3 billion in hibah. A Royal Commission found the year was a RM1.4 billion loss.
+Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
 ```
 **2/7** _(fact)_ · 153 chars
 ```
@@ -271,13 +271,13 @@ Suspected Israeli operations in Malaysia share a signature: the operative enters
 ```
 Fadi al-Batsh, a lecturer, was shot about 14 times walking to dawn prayers in Kuala Lumpur.
 ```
-**3/7** _(fact)_ · 105 chars
+**3/7** _(fact)_ · 126 chars
 ```
-In 2022, more than a dozen Malaysians abducted a Gaza programmer to force out his phone-hacking software.
+In 2022, Malaysians abducted a Gaza programmer in Kuala Lumpur. Prosecutors say they wanted secrets on phone-hacking software.
 ```
-**4/7** _(fact)_ · 253 chars
+**4/7** _(fact)_ · 63 chars
 ```
-Every conviction so far is for guns or kidnapping, never spying. Seven years for the Israeli, ten and six strokes for his arms supplier, five each for six abductors. Yet about 50 immigration officers were arrested in 2024 for selling foreigners passage.
+Every conviction so far is for guns or abduction, never spying.
 ```
 **5/7** _(reframe)_ · 101 chars
 ```
@@ -287,9 +287,9 @@ The danger never lay in a hidden cell. It lies in a border for sale and locals h
 ```
 Think of a burglar who never picks a lock. He pays the doorman, hires local hands who never see his face, and leaves on a passport borrowed from a tourist. The police report says trespassing, not burglary.
 ```
-**7/7** _(view — ONLY post with the link)_ · 207 chars
+**7/7** _(view — ONLY post with the link)_ · 210 chars
 ```
-Ministers now name spies in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
+Ministers now name suspects in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
 
 https://thefourthangle.pages.dev/issue/2009
 ```
@@ -347,9 +347,9 @@ MACC's hunt for assets linked to Daim Zainuddin's family looked sweeping: RM3 bi
 ```
 High Court judge Mohd Arief Emran Arifin dismissed the bid, ruling the prosecution had not met the threshold Section 53 of the anti-money-laundering act sets.
 ```
-**3/7** _(fact)_ · 267 chars
+**3/7** _(fact)_ · 154 chars
 ```
-Malaysia's drive to lock down the overseas money keeps meeting court limits: London granted a £132m freeze in June 2025, then stayed it; Singapore refused outright. Each check leaves the assets under no Malaysian freeze while MACC litigates. It has 14 days to appeal.
+Malaysia's drive to lock down the overseas money keeps meeting court limits: the KL High Court granted a £132m London freeze in June 2025, then stayed it.
 ```
 **4/7** _(fact)_ · 138 chars
 ```
@@ -495,9 +495,9 @@ Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop look
 ```
 Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
 ```
-**3/7** _(fact)_ · 231 chars
+**3/7** _(fact)_ · 248 chars
 ```
-Two in five Malaysians with diabetes do not know they have it. Among those aged 18 to 29 with diabetes, about 84% are unaware. The 15.6% already includes people a survey blood test caught unaware, not only those formally diagnosed.
+Nearly two in five adults with diabetes in 2023 did not know they had it: 5.9 of the 15.6 points came from the survey's own blood test. Known diabetes edged up, from 9.4% in 2019 to 9.7%. The whole fall came in undiagnosed cases, from 8.9% to 5.9%.
 ```
 **4/7** _(fact)_ · 189 chars
 ```
@@ -575,9 +575,9 @@ DOSM put total flood losses at RM636.9M for 2025, down 31.8% from RM933.4M in 20
 ```
 Public-asset damage rose 25.3% to RM380.2M in 2025 while household losses fell 50.6% to RM183.8M. Public infrastructure now carries about 60% of the bill.
 ```
-**4/7** _(fact)_ · 268 chars
+**4/7** _(fact)_ · 261 chars
 ```
-Government audits flag failures in the very projects meant to prevent the public-asset damage. PAC found the national flood warning programme cost RM129 million and works at 5.6% accuracy. The Auditor-General logged 145 of 712 water projects delayed at RM6.15 billion.
+Parliament's Public Accounts Committee found the RM129 million first phase of the national flood warning programme unjustified, citing inaccurate forecasts. The PAC reported in March 2024. The ministry in charge replied that Phase 1 had achieved its objectives.
 ```
 **5/7** _(reframe)_ · 112 chars
 ```
@@ -587,9 +587,9 @@ Same states top the damage table every year. Same projects miss every deadline. 
 ```
 Think of a household whose repair bill drops because the dam meant to protect it now leaks straight into the public works budget. Less household pain. A larger public claim. A dam nobody finished fixing.
 ```
-**7/7** _(view — ONLY post with the link)_ · 201 chars
+**7/7** _(view — ONLY post with the link)_ · 225 chars
 ```
-The bill fell. The bill was ten times larger four years ago. The infrastructure meant to prevent the next one cost RM129 million and works 5.6% of the time.
+The bill fell. The bill was ten times larger four years ago. The flood warning programme's first phase cost RM129 million, and Parliament's spending watchdog called it unjustified.
 
 https://thefourthangle.pages.dev/issue/1998
 ```
@@ -639,17 +639,17 @@ https://thefourthangle.pages.dev/issue/1997
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
 
-**1/7** _(hook — attach image, NO link)_ · 145 chars
+**1/7** _(hook — attach image, NO link)_ · 262 chars
 ```
-MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion.
+MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion. Malay Mail, The Edge and Bernama carried the two figures in separate stories. West Asia is only 2.7% of total trade.
 ```
-**2/7** _(fact)_ · 156 chars
+**2/7** _(fact)_ · 157 chars
 ```
-DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia drop is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
+DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia total is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
 ```
-**3/7** _(fact)_ · 173 chars
+**3/7** _(fact)_ · 232 chars
 ```
-Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. UAE bilateral trade hit US$3.3 billion in H1 2025, up 30.9% under a CEPA in force since 1 October 2025.
+Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. The UAE-Malaysia CEPA took effect only on 1 October 2025. Palm products were 62.4% of exports to Iran. The UAE deal targets US$13.5 billion non-oil trade by 2032.
 ```
 **4/7** _(fact)_ · 158 chars
 ```
@@ -795,17 +795,17 @@ https://thefourthangle.pages.dev/issue/1993
 ```
 On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
 ```
-**2/7** _(fact)_ · 133 chars
+**2/7** _(fact)_ · 266 chars
 ```
-Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
+Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026. RM3.09 million in alleged gratification, tied to a Felda subsidiary's RM160 million purchase of the Merdeka Palace Hotel in Kuching.
 ```
 **3/7** _(fact)_ · 155 chars
 ```
 M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
 ```
-**4/7** _(fact)_ · 151 chars
+**4/7** _(fact)_ · 114 chars
 ```
-Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
+Rule 137 reviews of an apex ruling are rare: granted for quorum failure, bias, or integrity critically undermined.
 ```
 **5/7** _(reframe)_ · 176 chars
 ```
@@ -928,66 +928,66 @@ The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before
 https://thefourthangle.pages.dev/issue/1989
 ```
 
-### Issue 1987 — Median MP is 52, citizen 31. Parliament refused PM term limits by two votes.
+### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1987-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1987`
 
-**1/7** _(hook — attach image, NO link)_ · 130 chars
+**1/7** _(hook — attach image, NO link)_ · 139 chars
 ```
-Median Malaysian MP is 52. Median citizen is 31. Only 5% of MPs are under 35, and the constitution is not what's blocking renewal.
+The median Malaysian MP is 52; Malaysia's median age, 31. Only 5% of MPs are 35 or younger, and the constitution does not stand in the way.
 ```
-**2/7** _(fact)_ · 139 chars
+**2/7** _(fact)_ · 143 chars
 ```
-Same cast since the 1970s. Lim Kit Siang in DAP for 56 years. Anwar in UMNO since 1982. Najib was MP for 46 years until his SRC conviction.
+Same cast since the 1970s. Lim Kit Siang won his first seat in 1969 and retired only in 2022. Anwar, who founded ABIM in 1971, became PM at 75.
 ```
 **3/7** _(fact)_ · 146 chars
 ```
 Ministers may qualify for gratuities reported up to RM2 million. Stacked pensions across MP, ADUN, and cabinet roles can exceed RM100,000 a month.
 ```
-**4/7** _(fact)_ · 145 chars
+**4/7** _(fact)_ · 167 chars
 ```
-France's 34-year-old PM in 2024 was replaced within months by 73-year-olds. Anwar's Dec 2025 'reset' made the Speaker's son Youth Minister at 29.
+France's 34-year-old PM in 2024 was replaced eight months later by Michel Barnier, 73. Anwar's Dec 2025 'reset' made the Speaker's son Youth and Sports Minister at 29.
 ```
-**5/7** _(reframe)_ · 158 chars
+**5/7** _(reframe)_ · 144 chars
 ```
-The candidacy age has been 18 since 2019. Two months ago Parliament rejected a 10-year PM term limit, by two votes. The machinery refuses to constrain itself.
+The candidacy age has been 18 since 2019. In March 2026 a 10-year PM term limit fell two votes short. The machinery refuses to constrain itself.
 ```
 **6/7** _(analogy)_ · 222 chars
 ```
 Imagine a relay race that pays each runner more the longer they hold the baton, and the baton tends to pass to the runner's son. Up to RM2 million gratuity per ministerial exit. Up to RM100,000 a month in stacked pensions.
 ```
-**7/7** _(view — ONLY post with the link)_ · 185 chars
+**7/7** _(view — ONLY post with the link)_ · 182 chars
 ```
-The bottleneck is not age. It's the machinery that also produces 13.5% women MPs, one Orang Asli MP ever, and zero women aged 30 or younger.
+The bottleneck is not age. It is the machinery that picks candidates, rewards long tenure and leaves just 11 of 222 MPs aged 35 or under.
 
 https://thefourthangle.pages.dev/issue/1987
 ```
 
-### Issue 1985 — Malaysia chose exemption. Singapore subsidises. India set RM2.8m threshold.
+### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
 
-> ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1985-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1985`
 
-**1/6** _(hook — attach image, NO link)_ · 238 chars
+**1/6** _(hook — attach image, NO link)_ · 158 chars
 ```
-Malaysia kept SMEs out of mandatory e-invoicing by exempting under RM1m. Three peers kept theirs in with different instruments. Singapore offers grants. India sets a higher threshold. Thailand allows email-based invoicing for small firms.
+Malaysia keeps small firms out of mandatory e-invoicing by exemption: under RM1m from January 2026, under RM3m since September. Three peers took other routes.
 ```
-**2/6** _(fact)_ · 145 chars
+**2/6** _(fact)_ · 173 chars
 ```
-India's mandate starts at INR 5 crore (~RM2.8m), almost 3x Malaysia's RM1m exemption. Thailand's email route covers SMEs under THB 30m (~RM3.8m).
+India moved the other way: in August 2023 it cut its e-invoice threshold from INR 10 crore to INR 5 crore of turnover. Malaysia has raised its bar twice since December 2025.
 ```
-**3/6** _(fact)_ · 146 chars
+**3/6** _(fact)_ · 248 chars
 ```
-Singapore is phasing in GST InvoiceNow over 2025-2031 with up to S$1,000 in grants per SME and free InvoiceNow-ready software until 31 March 2027.
+Singapore is phasing in GST InvoiceNow from November 2025 to April 2031, with a S$1,000 transition grant for SMEs and free solution packages until March 2031. Larger firms get S$5,000. Malaysia's MSME Digital Grant offers a 50% match up to RM5,000.
 ```
-**4/6** _(fact)_ · 140 chars
+**4/6** _(fact)_ · 154 chars
 ```
-Thailand offers SMEs under THB 30m a PDF-by-email e-tax invoice with timestamp verification, alongside the full XML system for larger firms.
+Thailand lets firms with income up to THB 30m issue e-tax invoices as time-stamped PDFs by email. Any firm can use the XML route with a digital signature.
 ```
 **5/6** _(reframe)_ · 101 chars
 ```
@@ -1057,9 +1057,9 @@ Norway invoked force majeure. Its own export rules let it revoke arms-export lic
 ```
 Under US ITAR rules, one US-origin part can pull a whole missile under US re-export jurisdiction. Oslo may not have had a choice.
 ```
-**5/8** _(fact)_ · 121 chars
+**5/8** _(fact)_ · 136 chars
 ```
-On the day Malaysia's dispute went public, Australia signed a multilateral NSM/JSM MoU with Norway and 10 other partners.
+On 14 May, the day Anwar protested to Norway's prime minister, Australia signed an MoU with Norway to make NSM and JSM missiles locally.
 ```
 **6/8** _(reframe)_ · 174 chars
 ```
@@ -1095,9 +1095,9 @@ WeChat surveils images and documents shared between non-China accounts to train 
 ```
 Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
 ```
-**4/7** _(fact)_ · 108 chars
+**4/7** _(fact)_ · 244 chars
 ```
-Chinese-Malaysian favourability of China rose 41% to 67%; Malay favourability fell 33% to 28% (2016 to 2022)
+Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
 ```
 **5/7** _(reframe)_ · 175 chars
 ```
@@ -1133,9 +1133,9 @@ On 6 April 2026 the Court of Appeal granted Putrajaya's stay on Sabah's 40% reve
 ```
 On 13 May 2026 Sabah deferred AKPS, citing clashes between Act 860 and the Immigration Act 1959/63. CM Hajiji called Sabah's MA63 immigration autonomy 'non-negotiable' and flagged Section 6(3) as giving the state only indirect AKPS oversight.
 ```
-**4/7** _(fact)_ · 264 chars
+**4/7** _(fact)_ · 141 chars
 ```
-The 40% grant is constitutional, but excludes Sabah's largest revenue: oil and gas, ring-fenced under the Petroleum Development Act 1974. Articles 112C/112D cover 'net revenue derived from Sabah.' Oil and gas sit under Petronas and a 5% royalty, not the 40% grant.
+The 40% grant is a constitutional formula. Petronas's oil and gas payments to Sabah are not: they rest on the Petroleum Development Act 1974.
 ```
 **5/7** _(fact)_ · 121 chars
 ```
@@ -1150,6 +1150,44 @@ The High Court found both governments in breach since 1974. Putrajaya pauses the
 Two pauses, two clocks. Putrajaya extends a 48-year delay the court called unconstitutional. Sabah stops a new law before it operates.
 
 https://thefourthangle.pages.dev/issue/1981
+```
+
+### Issue 1979 — 1MDB: RM31.3B Recovered, RM24.46B Of Debt Outstanding, RM6B Still In Arbitration
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
+
+**1/7** _(hook — attach image, NO link)_ · 121 chars
+```
+MACC says RM31.3B was recovered from 1MDB. In November 2025 the Finance Ministry put 1MDB's debt obligations at RM24.46B.
+```
+**2/7** _(fact)_ · 266 chars
+```
+Of Goldman's USD3.9B 2020 settlement, only USD2.5B was paid in cash Goldman filed at the LCIA on 11 October 2023, arguing Malaysia had already recovered enough to satisfy the USD1.4B guarantee. MOF told Parliament in October 2025 the dispute is still in arbitration.
+```
+**3/7** _(fact)_ · 120 chars
+```
+MOF told Parliament RM31.2B was recovered for 1MDB and SRC from December 2018 to September 2025. RM5.29B of it remained.
+```
+**4/7** _(fact)_ · 132 chars
+```
+MACC measures its '74.5% recovered' against the RM42B it says was misappropriated from 1MDB. The US DOJ's figure: more than US$4.5B.
+```
+**5/7** _(reframe)_ · 93 chars
+```
+The question is not how much was recovered. It is which number the next press release counts.
+```
+**6/7** _(analogy)_ · 239 chars
+```
+Think of a household that wins back stolen savings and sends most of them straight to old loans The recovery is real. Of RM31.2B recovered for 1MDB and SRC by September 2025, RM5.29B was left, and 1MDB's debt obligations stood at RM24.46B.
+```
+**7/7** _(view — ONLY post with the link)_ · 144 chars
+```
+RM31.3B recovered is real. Reading 74.5% as a scandal nearly settled outruns what the ledger shows.
+
+https://thefourthangle.pages.dev/issue/1979
 ```
 
 ### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
@@ -1205,9 +1243,9 @@ Johor's state assembly voted 40-16 to add up to five appointed members. The spli
 ```
 Johor's own State Legal Adviser called appointed assemblymen inconsistent with the Federal Constitution in September 2025.
 ```
-**3/7** _(fact)_ · 91 chars
+**3/7** _(fact)_ · 265 chars
 ```
-Pahang took four years between enacting and appointing. Johor compressed both into one day.
+Pahang took about three and a half years from enacting (Nov 2020) to appointing (May 2024). Johor passed its Bill three days after the plan surfaced. Four of Pahang's five 2024 appointees held party posts (UMNO, MCA, Amanah, PKR); the fifth founded a tahfiz school.
 ```
 **4/7** _(fact)_ · 93 chars
 ```
@@ -1235,9 +1273,9 @@ https://thefourthangle.pages.dev/issue/1977
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1976-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1976`
 
-**1/7** _(hook — attach image, NO link)_ · 142 chars
+**1/7** _(hook — attach image, NO link)_ · 261 chars
 ```
-Four Undangs signed a declaration purporting to depose Tuanku Muhriz. The state government rejected it, citing the dismissal of one signatory.
+Mubarak Dohak signed and read a declaration purporting to depose Tuanku Muhriz, with the three other Undangs present. The state government rejected it. Mubarak had proclaimed Muhriz as Ruler in 2008. The MB said he was dismissed as Undang effective 13 May 2025.
 ```
 **2/7** _(fact)_ · 152 chars
 ```
@@ -1266,24 +1304,24 @@ Some institutions rejected the declaration and defended Tuanku Muhriz's position
 https://thefourthangle.pages.dev/issue/1976
 ```
 
-### Issue 1975 — E-wallets hit 18.4 billion transactions; none of the balances carry PIDM deposit insurance
+### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s diesel subsidy surges to rm2.5b monthly, loke says ev trucks must replace fuel‑). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
 
-**1/7** _(hook — attach image, NO link)_ · 223 chars
+**1/7** _(hook — attach image, NO link)_ · 251 chars
 ```
-18.4 billion e-payments in 2025. The funds sitting inside e-wallets carry no PIDM deposit insurance at all. RM2 billion in subsidies onboarded millions since 2020. Online fraud losses hit RM2.77B in 2025, a three-year high.
+E-money users made 6.4 billion transactions in 2025. If an e-wallet issuer fails, PIDM deposit insurance does not cover their balances. RM2 billion in subsidies onboarded millions since 2020. Online fraud losses hit RM2.77B in 2025, a three-year high.
 ```
-**2/7** _(fact)_ · 140 chars
+**2/7** _(fact)_ · 164 chars
 ```
-PIDM covers bank deposits up to RM250,000. E-wallet balances get none. Trust-account protections are untested in Malaysian insolvency court.
+PIDM covers bank deposits up to RM250,000. It calls e-money 'not directly protected': cover reaches e-wallet funds only if the bank holding the trust account fails.
 ```
-**3/7** _(fact)_ · 255 chars
+**3/7** _(fact)_ · 268 chars
 ```
-FMOS got 1,843 e-wallet complaints in 2025; only 22% resolved in the consumer's favour, averaging 89 days against a 45-day target. Of RM2.77B lost to online fraud, recovery returned just RM6.7M to victims. Credit cards offer chargebacks; e-wallets do not.
+The financial ombudsman, FMOS, logged 132 e-money disputes in 2025, up from 64 in 2024, mainly over unauthorised transactions from scams. Across banking and payments, its ombudsman upheld the provider in 887 adjudicated cases in 2025 and ruled for complainants in 334.
 ```
 **4/7** _(fact)_ · 140 chars
 ```
@@ -1293,9 +1331,9 @@ FMOS got 1,843 e-wallet complaints in 2025; only 22% resolved in the consumer's 
 ```
 Every coalition (PH, PN, BN) rushed e-wallet subsidies for voter wins before building protections. The incentive has not changed.
 ```
-**6/7** _(analogy)_ · 262 chars
+**6/7** _(analogy)_ · 260 chars
 ```
-Like issuing driving licences to millions before building guardrails, then counting the pile-ups as bad luck. Bank customers have deposit insurance and chargebacks. E-wallet users have an untested trust account and a dispute service that fails 78% of complaints.
+Like issuing driving licences to millions before building guardrails, then counting the pile-ups as bad luck. Bank deposits carry PIDM cover up to RM250,000. E-wallet money sits in an issuer's trust account, which PIDM covers only if the bank holding it fails.
 ```
 **7/7** _(view — ONLY post with the link)_ · 185 chars
 ```
@@ -1327,9 +1365,9 @@ E-waste smuggling ran five years across Customs, ports, police and DOE. Only the
 ```
 The DG faces 20 years under the MACC Act, the deputy 2 years under the Penal Code. No audit of past approvals has been announced. Payments to the deputy ran two years. Six e-waste owners face separate proceedings. The approvals these officials signed remain unreviewed.
 ```
-**5/7** _(reframe)_ · 141 chars
+**5/7** _(reframe)_ · 127 chars
 ```
-The nine dead at Bukit Kukus were foreign workers with no voice in the EIA. Communities near e-waste sites bear health costs no one measures.
+Bribery charges put two officials in the dock. The road's 2018 dead, most of them foreign workers, had no say in its approvals.
 ```
 **6/7** _(analogy)_ · 229 chars
 ```
@@ -1353,9 +1391,9 @@ https://thefourthangle.pages.dev/issue/1974
 ```
 RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
 ```
-**2/6** _(fact)_ · 262 chars
+**2/6** _(fact)_ · 118 chars
 ```
-The 16-year cumulative equals roughly one month of annual trade, but within the China corridor, a quarter now bypasses the dollar SMEs save up to 2% in fees. Palm oil, LNG and petroleum stay USD-benchmarked. B40 feels ringgit weakness through imported inflation.
+The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
 ```
 **3/6** _(fact)_ · 124 chars
 ```
@@ -1378,26 +1416,26 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
-> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (melaka to add up to seven nominated assemblymen after constitutional amendment, cm says no). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
 
-**1/6** _(hook — attach image, NO link)_ · 119 chars
+**1/6** _(hook — attach image, NO link)_ · 208 chars
 ```
-A gazette backdated 22 years bypassed Selangor's public inquiry law. Three courts never ruled on whether it was lawful.
+A gazette backdated 22 years bypassed Selangor's public inquiry law. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
 ```
-**2/6** _(fact)_ · 105 chars
+**2/6** _(fact)_ · 117 chars
 ```
-Selangor's public inquiry law for forest excision has existed since 2011, and has never been invoked once
+Selangor has required a public inquiry before forest excision since 2011. Bukit Cherakah's degazetting followed none.
 ```
-**3/6** _(fact)_ · 108 chars
+**3/6** _(fact)_ · 189 chars
 ```
-316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments
+316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments A UNDP-funded survey found tapir, gibbon and leopard cat, all totally protected.
 ```
-**4/6** _(fact)_ · 120 chars
+**4/6** _(fact)_ · 137 chars
 ```
-KLNFR drew 45,000 objections and was reversed before gazettement. SACF drew 718, after the gazette was already published
+In September 2021, after the KLNFR excision went through, Selangor halted development and pledged to regazette. The SACF excision stands.
 ```
 **5/6** _(reframe)_ · 131 chars
 ```
@@ -1417,21 +1455,21 @@ https://thefourthangle.pages.dev/issue/1971
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
 
-**1/6** _(hook — attach image, NO link)_ · 91 chars
+**1/6** _(hook — attach image, NO link)_ · 188 chars
 ```
-520% more Chinese tourists landed in Penang, but the success story has a rent bill attached
+520% more Chinese tourists landed in Penang, but the success story has a rent bill attached The 520% surge uses a low 2023 base of 26,056. George Town's historic core has long depopulated.
 ```
-**2/6** _(fact)_ · 112 chars
+**2/6** _(fact)_ · 137 chars
 ```
-China generated RM20.87B in tourism receipts nationally. The 'low-value tourist' claim doesn't survive the data.
+Visitors from China spent RM20.87B in Malaysia in 2024, second only to Singapore. The 'low-value tourist' claim doesn't survive the data.
 ```
-**3/6** _(fact)_ · 259 chars
+**3/6** _(fact)_ · 220 chars
 ```
-George Town's UNESCO core has experienced long-term depopulation: renters of every ethnicity, not one community B40 renters, women hawkers, Indian Muslim traders and Chinese clan tenants face the same economics: a tourist night earns more than a month's rent.
+A 2017 study dates George Town's gentrification to the 1997 end of rent control, and says the 2008 UNESCO listing sped it up. Its authors warn that gentrification can displace long-term residents and erode local culture.
 ```
-**4/6** _(fact)_ · 259 chars
+**4/6** _(fact)_ · 225 chars
 ```
-Penang has a sustainable tourism master plan, but nobody is measuring whether it works No carrying-capacity study for the UNESCO zone. No displacement tracking. Airport expanding to 12M capacity by 2028, but water, waste, and housing haven't scaled alongside.
+Penang is building for more arrivals: its airport expansion lifts capacity from 6.5 million to 12 million passengers a year by June 2028. Malaysia Airports' group managing director confirmed the June 2028 target in July 2025.
 ```
 **5/6** _(reframe)_ · 104 chars
 ```
@@ -1451,21 +1489,21 @@ https://thefourthangle.pages.dev/issue/1970
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
 
-**1/6** _(hook — attach image, NO link)_ · 128 chars
+**1/6** _(hook — attach image, NO link)_ · 145 chars
 ```
-Malaysia's first refugee registration system is live. Work permits are announced but unissued. Thailand has already moved ahead.
+Malaysia's new refugee registration scheme went live on 1 January 2026. Work permits are proposed but unissued. Thailand has already moved ahead.
 ```
-**2/6** _(fact)_ · 264 chars
+**2/6** _(fact)_ · 270 chars
 ```
-A 2019 study estimated RM3B in GDP gains, but B40 workers of all races face real wage competition. Employers want documented workers in shortage sectors. Registration risks labour-broker capture. Centres exist only in major cities; rural refugees can't reach them.
+A 2019 IDEAS study projected that refugees with the right to work would add over RM3B to GDP by 2024. The Malaysian Employers Federation backs work rights in shortage sectors. In 2025 the Home Ministry planned to register refugees at Immigration's 78 offices nationwide.
 ```
-**3/6** _(fact)_ · 129 chars
+**3/6** _(fact)_ · 169 chars
 ```
-21,000+ detained, including 3,200 children. Case law extends the Employment Act to refugees; the Immigration Act has not changed.
+Immigration detention centres held over 21,000 migrants and refugees in March 2026, Fortify Rights said. In August 2025 they held 2,196 children, the Home Minister said.
 ```
-**4/6** _(fact)_ · 134 chars
+**4/6** _(fact)_ · 244 chars
 ```
-Sabah has 50,000+ refugees but DPP rollout faces state objections. Political Islam drives selective sympathy for Muslim refugees only.
+The 3D jobs proposed in 2023 cover manufacturing, mining and construction. Domestic work and plantations sit outside them. The US State Department's 2025 trafficking report flags forced labour on palm oil plantations and among domestic workers.
 ```
 **5/6** _(reframe)_ · 138 chars
 ```
@@ -1480,22 +1518,22 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
 
-**1/6** _(hook — attach image, NO link)_ · 105 chars
+**1/6** _(hook — attach image, NO link)_ · 142 chars
 ```
-Malaysia celebrated the Supreme Court striking down Trump's tariffs. The replacement regime may be worse.
+The US Supreme Court struck down Trump's IEEPA tariffs on 20 February. Within a month, Malaysia faced a new surcharge and a Section 301 probe.
 ```
-**2/6** _(fact)_ · 112 chars
+**2/6** _(fact)_ · 153 chars
 ```
-IEEPA tariffs had a constitutional weakness. Section 301 tariffs do not. Court challenges are nearly impossible.
+The Court ruled IEEPA does not authorise tariffs. Section 301 does: USTR may impose duties 'for such time as' it deems appropriate, with no maximum rate.
 ```
-**3/6** _(fact)_ · 128 chars
+**3/6** _(fact)_ · 168 chars
 ```
-68% of semiconductor exports come from US firms. The 180,000 ATP workers are 65% women. R&D flatlined at 1% of GDP for a decade.
+Chips make up 68% of Malaysia's E&E exports to the US, and American firms operating here ship 65% of those chips, then-trade minister Tengku Zafrul said in August 2025.
 ```
 **4/6** _(fact)_ · 115 chars
 ```
@@ -1512,74 +1550,40 @@ The vulnerability is real but leverage is underestimated. Malaysia lacks not opt
 https://thefourthangle.pages.dev/issue/1965
 ```
 
-### Issue 1964 — Fuel Fake News Crackdown: Only 8 of 96 Flagged Posts Were Fabrications
-
-> ⚡ **Reactive: topic is live in the radar** (anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government ). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1964-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1964`
-
-**1/6** _(hook — attach image, NO link)_ · 245 chars
-```
-The government is cracking down on fake news about fuel and electricity prices to protect Malaysians from misinformation. MCMC investigated 17 individuals and flagged 96 posts. Only 8 involved fabricated graphics. 88 were reposts or speculation.
-```
-**2/6** _(fact)_ · 114 chars
-```
-Section 233 penalties jumped to RM500K and 2 years, yet MCMC's conviction rate is 3.8% across 1,243 investigations
-```
-**3/6** _(fact)_ · 250 chars
-```
-Every PM (Mahathir, Badawi, Najib, Muhyiddin, Ismail Sabri, Anwar) has used these laws against critics. The pattern is systemic. PAS and PN turn cost-of-living anger into ethnic grievance. No ruling party voluntarily narrows tools it may itself need.
-```
-**4/6** _(fact)_ · 118 chars
-```
-The fuel subsidy hit RM4 billion per month. The public's anxiety is rational, but so is the government's fiscal alarm.
-```
-**5/6** _(reframe)_ · 178 chars
-```
-A government that signals fuel prices must rise cannot criminally investigate citizens for saying the same thing. That is not fighting fake news. It is punishing premature truth.
-```
-**6/6** _(view — ONLY post with the link)_ · 206 chars
-```
-Fabricated graphics deserve investigation. But when only 8 of 96 flagged posts are fabrications, enforcement has become suppression, a pattern every PM inherits.
-
-https://thefourthangle.pages.dev/issue/1964
-```
-
-### Issue 1963 — Data centres vs Johor's water: a moratorium that exempts the biggest consumers
+### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
 
-**1/7** _(hook — attach image, NO link)_ · 231 chars
+**1/7** _(hook — attach image, NO link)_ · 259 chars
 ```
-Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. 11,000MW in applications still dwarf the grid. Johor has RM182.96B approved.
+Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
 ```
-**2/7** _(fact)_ · 106 chars
+**2/7** _(fact)_ · 143 chars
 ```
-11,000MW applied vs ~7.5GW real demand. The moratorium exempts AI centres, the most power-hungry category.
+AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
 ```
-**3/7** _(fact)_ · 260 chars
+**3/7** _(fact)_ · 145 chars
 ```
-The moratorium cited water too, but no public data exists on actual water use per data centre in Johor. Johor set a WUE threshold of 1.8 and planned four treatment plants worth RM1.41B. Orang Asli communities near proposed sites were absent from consultations.
+The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
 ```
-**4/7** _(fact)_ · 240 chars
+**4/7** _(fact)_ · 253 chars
 ```
-RM182.96B is approved in Johor alone, yet the pause shields hyperscalers while local operators face shutdown. Microsoft, Google and ByteDance structured investments as AI-focused, bypassing the pause. Smaller Malaysian firms cannot relabel.
+Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
 ```
-**5/7** _(reframe)_ · 114 chars
+**5/7** _(reframe)_ · 84 chars
 ```
-The real filter is not sustainability. It is lobbying power. The ceiling has a hole sized for the biggest players.
+The federal line asks what a centre computes, not how much water and power it draws.
 ```
-**6/7** _(analogy)_ · 205 chars
+**6/7** _(analogy)_ · 81 chars
 ```
-Like installing a water meter in every house but exempting the swimming pools. A moratorium with exemptions for the largest consumers signals sustainability as a constraint for the small, not the powerful.
+Like a water ration that checks what each house is for, not what its meter reads.
 ```
-**7/7** _(view — ONLY post with the link)_ · 172 chars
+**7/7** _(view — ONLY post with the link)_ · 175 chars
 ```
-The ambition is not wrong. It is ungoverned. Residents should not have to protest to trigger what the numbers already demanded.
+The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
 
 https://thefourthangle.pages.dev/issue/1963
 ```
@@ -1595,25 +1599,25 @@ https://thefourthangle.pages.dev/issue/1963
 ```
 Malaysia's anticorruption chief is under investigation; the system investigating him answers to those who appointed him
 ```
-**2/6** _(fact)_ · 90 chars
+**2/6** _(fact)_ · 100 chars
 ```
-The MACC Act created four oversight bodies. None can criminally investigate its own chief.
+The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
 ```
-**3/6** _(fact)_ · 122 chars
+**3/6** _(fact)_ · 242 chars
 ```
-Anthony Loke demanded an RCI. He was overruled in 72 hours. Every government since 2009 has preserved this power structure
+A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
 ```
-**4/6** _(fact)_ · 122 chars
+**4/6** _(fact)_ · 230 chars
 ```
-Corruption costs RM277 billion over five years. The burden falls hardest on B40 families paying bribes for basic services.
+MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
 ```
 **5/6** _(reframe)_ · 159 chars
 ```
 The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
 ```
-**6/6** _(view — ONLY post with the link)_ · 209 chars
+**6/6** _(view — ONLY post with the link)_ · 187 chars
 ```
-The fix is a permanent independent oversight body for MACC, as UNCAC recommended. But that requires a government to surrender power over its own watchdog. None has.
+The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
 ```
@@ -1629,17 +1633,17 @@ https://thefourthangle.pages.dev/issue/1961
 ```
 The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
 ```
-**2/6** _(fact)_ · 253 chars
+**2/6** _(fact)_ · 125 chars
 ```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it. English says cede. Sulu text says pajakkan (lease). RA5446 (1968) preserves the claim. No Philippine president dares repeal it.
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
 ```
-**3/6** _(fact)_ · 268 chars
+**3/6** _(fact)_ · 264 chars
 ```
-In 2013, armed Sulu followers invaded eastern Sabah. 78 casualties. The claim has produced armed incursion within living memory. Lahad Datu killed 68 militants and 10 Malaysian security personnel. ESSZONE was created. Malaysia stopped cession payments held since 1963.
+In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
 ```
-**4/6** _(fact)_ · 135 chars
+**4/6** _(fact)_ · 131 chars
 ```
-Sabah unanimously rejects the claim. But 810,000 foreigners, 23.7% of the population, live in the space between two nations' arguments.
+Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
 ```
 **5/6** _(reframe)_ · 151 chars
 ```
@@ -1652,7 +1656,7 @@ Malaysia wins on law. The Philippines loses on law. The people who pay (stateles
 https://thefourthangle.pages.dev/issue/1959
 ```
 
-### Issue 1958 — One Death, Six Proposals, Zero Data: Malaysia's Drunk Driving Blind Spot
+### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
@@ -1663,13 +1667,13 @@ https://thefourthangle.pages.dev/issue/1959
 ```
 A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
 ```
-**2/6** _(fact)_ · 269 chars
+**2/6** _(fact)_ · 253 chars
 ```
-149 DUI crash cases prosecuted in three years. 1,261 DUI convictions in one year. Different laws, same silence. 149 covers Section 44 only (injury/death). The 1,261 spans all DUI sections. Malaysia publishes no data on breath tests administered or roadblocks conducted.
+149 DUI crash cases charged from 2021 to September 2024. 1,261 DUI convictions in 11 months of 2025. Neither figure counts breath tests. The 149 covers Section 44 only (death or injury). The 1,261 spans Sections 44, 45 and 45A, January to November 2025.
 ```
-**3/6** _(fact)_ · 265 chars
+**3/6** _(fact)_ · 134 chars
 ```
-12 DUI fatalities per year, 0.2% of crashes. Testing is discretionary. The real number is unknown. Police test on 'reasonable cause' only. Australia mandates blood-testing of all fatal-crash drivers; Malaysia does not. The 0.2% measures enforcement, not prevalence.
+12 fatal crashes caused by drunk road users in 2024, 0.19% of all fatal crashes. Testing is discretionary. The real number is unknown.
 ```
 **4/6** _(fact)_ · 134 chars
 ```
@@ -1686,28 +1690,28 @@ Deterrence requires detection. Compensation requires architecture. 4,340 motorcy
 https://thefourthangle.pages.dev/issue/1958
 ```
 
-### Issue 1957 — BYD Blocked, Proton Shielded, B40 Priced Out: Who Wins?
+### Issue 1957 — BYD Stalled, Proton Shielded, B40 Priced Out: Who Wins?
 
 > ⚡ **Reactive: topic is live in the radar** (road crashes cost malaysia up to rm30b a year, but human cost of 18 daily deaths is far gr). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
 
-**1/7** _(hook — attach image, NO link)_ · 178 chars
+**1/7** _(hook — attach image, NO link)_ · 123 chars
 ```
-MITI set an RM200K floor and 80% export rule. BYD walked. Thailand didn't. Both Proton (49.9% Geely) and Perodua (25.2% Daihatsu) are shielded. Neither is wholly Malaysian-owned.
+MITI set an RM200K floor and an 80% export rule. BYD's Tanjung Malim plan stalled. In Thailand, BYD opened a plant in 2024.
 ```
-**2/7** _(fact)_ · 181 chars
+**2/7** _(fact)_ · 125 chars
 ```
-BYD Dolphin sells at RM100K. MITI's floor is RM200K. B40 median income: RM4,588/month. Only 5,624 public chargers installed, 56% of target. High-rise residents can't charge at home.
+MITI's rule puts any Tanjung Malim-built BYD sold here above RM200K. BYD's imported Dolphin and Atto 3 already sell for less.
 ```
 **3/7** _(fact)_ · 174 chars
 ```
 Proton had 43 years of tariffs and subsidies. It still can't compete on price. Every party (BN, PH, PN) has extended the wall. 700,000 jobs includes 53,000 aftermarket shops.
 ```
-**4/7** _(fact)_ · 191 chars
+**4/7** _(fact)_ · 149 chars
 ```
-Thailand gave BYD zero export quotas and zero price floors. Production started 2024. Indonesia and India attach conditions too, but transparent, time-bound, and linked to capability-building.
+Thailand set conditions too: EV makers on its subsidy scheme had to build one car locally for each import in 2024. BYD's Thai plant opened that July.
 ```
 **5/7** _(reframe)_ · 78 chars
 ```
@@ -1862,26 +1866,26 @@ https://thefourthangle.pages.dev/issue/1951
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government ). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s diesel subsidy surges to rm2.5b monthly, loke says ev trucks must replace fuel‑). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
 
-**1/6** _(hook — attach image, NO link)_ · 152 chars
+**1/6** _(hook — attach image, NO link)_ · 150 chars
 ```
-Najib was convicted on all 25 charges; the appeal was filed within days. The rally-and-T-shirt response missed the RM24.46 billion 1MDB debt still owed.
+Najib was convicted on all 25 charges and appealed within days; UMNO sought his pardon. Lost in both: the RM42 billion Malaysia has paid on 1MDB debt.
 ```
-**2/6** _(fact)_ · 232 chars
+**2/6** _(fact)_ · 230 chars
 ```
-The judge declared four Saudi donation letters forgeries. Najib was convicted on all 25 charges. The fine was RM11.3879 billion for the four abuse-of-power charges (5× gratification). Appeal filed days after the 26 December verdict.
+The judge declared four Saudi donation letters forgeries. Najib was convicted on all 25 charges. The fine was RM11.38 billion for the four abuse-of-power charges (5× gratification). Appeal filed days after the 26 December verdict.
 ```
-**3/6** _(fact)_ · 223 chars
+**3/6** _(fact)_ · 198 chars
 ```
-Malaysia has paid about RM42 billion servicing 1MDB-linked debt. RM24.46 billion remains outstanding. RM9.02 billion in sukuk runs to 2039. The remaining debt is larger than a third of the 2026 federal education allocation.
+Malaysia has paid about RM42 billion servicing 1MDB-linked debt. In December 2025 Anwar told Parliament about RM13 billion was left to settle. Anwar said 1MDB is still the government's biggest debt.
 ```
-**4/6** _(fact)_ · 265 chars
+**4/6** _(fact)_ · 268 chars
 ```
-Political-financing reform remains unpassed. A draft bill submitted by APPG MPs in July 2022 was never tabled by the government. Bersih and C4 have repeatedly urged statutory disclosure of donors and spending caps. Anwar's unity government has not tabled the draft.
+Political-financing reform remains unpassed. On 26 October 2026 the bill's policy recommendations were still bound for a select committee, then Cabinet. After the verdict, C4's Cynthia Gabriel urged the government to pass a proposed law regulating political financing.
 ```
 **5/6** _(reframe)_ · 86 chars
 ```
@@ -1928,36 +1932,36 @@ Malaysia has the rails. The next decade is about whether consumer protection cat
 https://thefourthangle.pages.dev/issue/1887
 ```
 
-### Issue 1871 — Lahad Datu Anniversary: 13 Years Without Permanent Security Legislation
+### Issue 1871 — Lahad Datu at 13: no kidnappings since 2020, but ESSCOM's island base stalled at 41%
 
-> ⚡ **Reactive: topic is live in the radar** (budget 2027: rm2.62b aid for paddy farmers, incentives for fishermen, smallholders. kuala ). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1871-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1871`
 
-**1/6** _(hook — attach image, NO link)_ · 126 chars
+**1/6** _(hook — attach image, NO link)_ · 246 chars
 ```
-ESSCOM marks 13 years: zero kidnappings since 2020, but its forward base is 41% complete and it still has no Act of Parliament
+ESSCOM marks 13 years: zero kidnappings since 2020, but its Pulau Mabul forward base was only 41% complete in October 2025 The 2013 Lahad Datu incursion left at least 68 intruders and 10 security personnel dead. ESSCOM was set up on 1 April 2013.
 ```
 **2/6** _(fact)_ · 153 chars
 ```
 59 kidnapping attempts foiled and zero cases since January 2020, though decline also reflects Philippine ops against Abu Sayyaf and COVID border closures
 ```
-**3/6** _(fact)_ · 263 chars
+**3/6** _(fact)_ · 216 chars
 ```
-Three successive administrations have kept ESSCOM on executive instruments without passing a dedicated Act of Parliament The maritime curfew began July 2014 and has been in effect for nearly 12 years, affecting B40 fishermen and women traders in coastal economies
+Eastern Sabah's sea curfew has run on renewals. Police extended it for the 215th time in July 2023, nine years after it began. The curfew was first imposed on 16 July 2014, under Section 31(4) of the Police Act 1967.
 ```
-**4/6** _(fact)_ · 146 chars
+**4/6** _(fact)_ · 222 chars
 ```
-The security zone covers 1,400 km of coastline alongside 1.04 million non-citizens in a state where poverty runs at 19.5% versus the national 6.2%
+The security zone covers 1,400 km of coastline in a state with 1.04 million non-citizens and Malaysia's highest poverty rate Sabah's poverty rate was 19.7% in 2022, against 6.2% nationally, the Statistics Department found.
 ```
-**5/6** _(reframe)_ · 146 chars
+**5/6** _(reframe)_ · 114 chars
 ```
-The question is not whether ESSCOM works. It does. The question is why no government has given it the permanent legal mandate its mission demands.
+ESSCOM works. Its foundations do not: a base 41% built after a decade, and a sea curfew renewed 215 times by 2023.
 ```
-**6/6** _(view — ONLY post with the link)_ · 222 chars
+**6/6** _(view — ONLY post with the link)_ · 160 chars
 ```
-ESSCOM is a genuine security success on structurally fragile foundations. Three administrations kept its temporary status. That's a system failure, not one government's neglect.
+ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 215 times makes a habit, not a plan.
 
 https://thefourthangle.pages.dev/issue/1871
 ```
@@ -2011,9 +2015,9 @@ LCS contract value reached RM11.22 billion. Maharaja Lela had its first sea-goin
 ```
 Contract value escalated from the RM9.128 billion 2014 signing to RM11.22 billion. Earlier 2011 figures circulated near RM6 billion before contract.
 ```
-**3/6** _(fact)_ · 138 chars
+**3/6** _(fact)_ · 129 chars
 ```
-Several named officers and former Boustead directors have faced MACC investigation. One LCS-linked criminal case had a DNAA in March 2025.
+MACC sent LCS papers on several individuals to the AGC in August 2022. Days later, former navy chief Ahmad Ramli Nor was charged.
 ```
 **4/6** _(fact)_ · 243 chars
 ```
@@ -2041,9 +2045,9 @@ https://thefourthangle.pages.dev/issue/1805
 ```
 Budget 2023 targeted bringing MRT3 total cost under RM45 billion, from the 2018 RM68 billion estimate. Final railway scheme approval landed 17 July 2025.
 ```
-**2/6** _(fact)_ · 202 chars
+**2/6** _(fact)_ · 229 chars
 ```
-The project was scrapped in May 2018, then approved again in March 2022 with MRT Corp appointed as project owner. Land acquisition is targeted for completion in 2026; construction is expected from 2027.
+The project was scrapped in May 2018 and approved again on 4 March 2022. MRT Corp says it was named developer and asset owner in April 2021. Land acquisition is targeted for completion in 2026; construction is expected from 2027.
 ```
 **3/6** _(fact)_ · 216 chars
 ```
@@ -2580,16 +2584,16 @@ A reform proposal: stand up an independent audit publishing per-cohort delivery 
 https://thefourthangle.pages.dev/issue/1102
 ```
 
-### Issue 1043 — When states override environmental law, the environment has no government; and 42 are dead
+### Issue 1043 — When states override environmental law, the environment has no government
 
 > ⚡ **Reactive: topic is live in the radar** (new cybercrime, anti-racing bills to join two constitutional amendments when parliament re). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
 
-**1/7** _(hook — attach image, NO link)_ · 134 chars
+**1/7** _(hook — attach image, NO link)_ · 151 chars
 ```
-42 died at sites where EIA rules were overridden. The mechanism is constitutional and most states refuse the reform that would fix it.
+Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
 ```
 **2/7** _(fact)_ · 113 chars
 ```
@@ -2599,9 +2603,9 @@ The word 'environment' is absent from the Federal Constitution. DOE can object b
 ```
 Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
 ```
-**4/7** _(fact)_ · 104 chars
+**4/7** _(fact)_ · 137 chars
 ```
-States resist NFA reforms because land conversion generates revenue that federal transfers don't replace
+States resist NFA reforms because land conversion generates revenue that federal transfers don't replace The pattern crosses party lines.
 ```
 **5/7** _(reframe)_ · 149 chars
 ```
@@ -2703,25 +2707,25 @@ https://thefourthangle.pages.dev/issue/2014
 ```
 The royal pig-farming decree became Selangor policy through the lawful Sultan-in-Council route: Article 50 of the State Constitution plus the Exco's 12 February adoption.
 ```
-**2/6** _(fact)_ · 127 chars
+**2/6** _(fact)_ · 128 chars
 ```
-Article 50 of the Selangor Constitution vests state executive authority in the Sultan, exercisable on Executive Council advice.
+Article 50 of Selangor's Constitution vests executive authority in the Sultan. Article 55 binds him to Executive Council advice.
 ```
-**3/6** _(fact)_ · 148 chars
+**3/6** _(fact)_ · 126 chars
 ```
-DAP reps Wong Siew Ki and Ronnie Liu defended the pig farmers under Federal Constitution Article 8(2). The 16 May Daulat Tuanku rally answered them.
+DAP's Wong Siew Ki invoked Federal Constitution Article 8(2) for the pig farmers. The 16 May Daulat Tuanku rally answered her.
 ```
-**4/6** _(fact)_ · 267 chars
+**4/6** _(fact)_ · 257 chars
 ```
-Lèse-majesté laws in Thailand and Spain need criminal trials. The Akta proposes 14 days' detention without warrant plus preventive detention without trial. Bernama and Harakahdaily verified the windows. ISA-style detention is the category Parliament repealed in 2012.
+The proposed Akta would let a senior police officer detain people for up to two weeks without a court warrant, for investigation. It was a proposal to the government, not a drafted bill. Parliament repealed the ISA, and its detention without trial, in 2012.
 ```
-**5/6** _(reframe)_ · 123 chars
+**5/6** _(reframe)_ · 115 chars
 ```
-Parliament repealed the ISA's detention-without-trial powers in 2012. The Akta would restore them for speech about royalty.
+Parliament repealed the ISA in 2012. The Akta would aim ISA-like detention without a warrant at insults to royalty.
 ```
-**6/6** _(view — ONLY post with the link)_ · 161 chars
+**6/6** _(view — ONLY post with the link)_ · 153 chars
 ```
-The Sultan-in-Council route is constitutional. The proposed Akta would revive a category Parliament removed in 2012.
+The Sultan-in-Council route is constitutional. The Akta would borrow from a law Parliament repealed in 2012.
 
 https://thefourthangle.pages.dev/issue/1999
 ```
@@ -2796,43 +2800,6 @@ Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the 
 https://thefourthangle.pages.dev/issue/1980
 ```
 
-### Issue 1979 — RM31.3B Recovered, RM24.46B Still Owed, RM6B Still In Arbitration
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
-
-**1/7** _(hook — attach image, NO link)_ · 100 chars
-```
-Malaysia's RM31.3B 1MDB recovery headline includes a Goldman guarantee Goldman is fighting to reduce
-```
-**2/7** _(fact)_ · 266 chars
-```
-Of Goldman's USD3.9B 2020 settlement, only USD2.5B was paid in cash Goldman filed at the LCIA on 11 October 2023, arguing Malaysia had already recovered enough to satisfy the USD1.4B guarantee. MOF told Parliament in October 2025 the dispute is still in arbitration.
-```
-**3/7** _(fact)_ · 95 chars
-```
-Of cumulative 1MDB recoveries, RM5.29B remains in the trust account against RM24.46B still owed
-```
-**4/7** _(fact)_ · 111 chars
-```
-MACC's '74.5% recovered' uses 1MDB's 2015 debt as the denominator. The DOJ alleges US$4.5B was misappropriated.
-```
-**5/7** _(reframe)_ · 93 chars
-```
-The question is not how much was recovered. It is which number the next press release counts.
-```
-**6/7** _(analogy)_ · 262 chars
-```
-Think of the headline like a sales total that includes a customer disputing the charge Malaysia put the full RM31.3B on the receipt. RM6B of it is a Goldman guarantee still in arbitration. Most of what cleared the trust has already gone to service old 1MDB debt.
-```
-**7/7** _(view — ONLY post with the link)_ · 137 chars
-```
-RM31.3B recovered is real. '74.5% of a settled scandal' is not yet what the ledger supports.
-
-https://thefourthangle.pages.dev/issue/1979
-```
-
 ### Issue 1973 — Bestinet ran Malaysia's visa system for RM400M, no contract, Interpol arrest request
 
 - **Status:** PENDING
@@ -2851,9 +2818,9 @@ Six years with no signed contract. Then the per-worker fee was set at RM215, mor
 ```
 Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking.
 ```
-**4/7** _(fact)_ · 153 chars
+**4/7** _(fact)_ · 160 chars
 ```
-Zahid created the 10-agency restriction. Anwar extended the contract despite his own research centre's warning. A 2023 open tender drew just two bidders.
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
 ```
 **5/7** _(reframe)_ · 133 chars
 ```
@@ -2876,21 +2843,21 @@ https://thefourthangle.pages.dev/issue/1973
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
 
-**1/6** _(hook — attach image, NO link)_ · 111 chars
+**1/6** _(hook — attach image, NO link)_ · 134 chars
 ```
-The vernacular school fight is stuck on unity vs culture. The courts settled the law, but parents keep leaving.
+The vernacular school fight is stuck on unity vs culture. The courts settled the law, but the debate skips why parents choose schools.
 ```
 **2/6** _(fact)_ · 113 chars
 ```
 69% of middle-class Malay parents preferred SJKC for academic quality, but no data proves SJKC is actually better
 ```
-**3/6** _(fact)_ · 123 chars
+**3/6** _(fact)_ · 145 chars
 ```
-Tamil schools are collapsing: 37 have 10 or fewer students, and 67% sit in rural areas the Indian community has left behind
+135 of 528 Tamil schools are so short of pupils that they teach several grades in one class, the Education Ministry told Parliament in June 2026.
 ```
-**4/6** _(fact)_ · 120 chars
+**4/6** _(fact)_ · 224 chars
 ```
-Malaysian enrolment in international schools rose 34% in five years. Class is reshaping education faster than ethnicity.
+Citizen enrolment in international schools rose 34% from 2019 to 2024. Class is reshaping school choice. International schools held 88,951 pupils on 31 May 2024; 67.1% were citizens, about 59,700 children, the ministry said.
 ```
 **5/6** _(reframe)_ · 128 chars
 ```
@@ -2903,35 +2870,35 @@ Stop debating whether vernacular schools should exist. Start asking why national
 https://thefourthangle.pages.dev/issue/1967
 ```
 
-### Issue 1962 — Generals charged at last; the 4,679-contract cartel system remains intact
+### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
 
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
 
-**1/6** _(hook — attach image, NO link)_ · 97 chars
+**1/6** _(hook — attach image, NO link)_ · 152 chars
 ```
-Two former military chiefs charged with corruption: Malaysia's first prosecution of its top brass
+Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
 ```
-**2/6** _(fact)_ · 105 chars
+**2/6** _(fact)_ · 248 chars
 ```
-A 26-firm cartel ran 4,679 contracts while 12 auditors watched. An external activist triggered the probe.
+A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
 ```
-**3/6** _(fact)_ · 249 chars
+**3/6** _(fact)_ · 263 chars
 ```
-The LCS scandal ended in DNAA. Then the same procurement system produced a new cartel on this government's watch RM6.1B spent on warships that don't exist. Contracts above RM500K required MOF approval. Civilian bureaucrats either colluded or failed.
+The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
 ```
-**4/6** _(fact)_ · 266 chars
+**4/6** _(fact)_ · 232 chars
 ```
-The King warned the Ministry was 'full of agents', constitutionally grounded but potentially prejudicial to fair trial As Supreme Commander under Article 41, the Agong has a legitimate role. But 'hunt' language on active cases risks defence challenges to fair trial.
+Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
 ```
-**5/6** _(reframe)_ · 170 chars
+**5/6** _(reframe)_ · 157 chars
 ```
-These are not the first generals caught. They are the first charged. The system that enabled a 4,679-contract cartel has been announced reformed but not actually changed.
+Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
 ```
-**6/6** _(view — ONLY post with the link)_ · 210 chars
+**6/6** _(view — ONLY post with the link)_ · 181 chars
 ```
-The prosecution is historic. But soldiers in substandard barracks while chiefs hoarded gold deserve more than theatre. They deserve a system that cannot be captured.
+The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
 
 https://thefourthangle.pages.dev/issue/1962
 ```
@@ -2942,21 +2909,21 @@ https://thefourthangle.pages.dev/issue/1962
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
 
-**1/7** _(hook — attach image, NO link)_ · 112 chars
+**1/7** _(hook — attach image, NO link)_ · 168 chars
 ```
-A foundation razed a Hindu temple on its own land. Police investigated. The High Court sided with the landowner.
+A foundation levelled what was left of a Hindu temple on its own land, under police supervision, CNA reported. The High Court later lifted a bar on its demolition work.
 ```
 **2/7** _(fact)_ · 115 chars
 ```
 Land title is enforceable, but demolishing a temple without court process is not the same as exercising that right.
 ```
-**3/7** _(fact)_ · 116 chars
+**3/7** _(fact)_ · 118 chars
 ```
-An estimated 2,500 temples lack registration, but the figure is unaudited and Selangor's official 2026 count is 687.
+Selangor counted 687 unauthorised Hindu temples as of 31 January 2026: 388 on government land and 299 on private land.
 ```
-**4/7** _(fact)_ · 120 chars
+**4/7** _(fact)_ · 139 chars
 ```
-The demolition was crowdfunded as a movement, but the class dynamics underneath matter more than the religious rhetoric.
+A group called Tanah Malaya crowdfunded the RM45,000 backhoe used on the temple and said it raised over RM131,000 in a month, CNA reported.
 ```
 **5/7** _(reframe)_ · 140 chars
 ```
@@ -3189,9 +3156,9 @@ https://thefourthangle.pages.dev/issue/1229
 ```
 Act 872 makes platform-provider registration and PERKESO contribution mandatory for gig workers; EPF retirement is not included.
 ```
-**2/7** _(fact)_ · 265 chars
+**2/7** _(fact)_ · 252 chars
 ```
-Voluntary opt-in retirement schemes have shown limited reach. EPF i-Saraan had 291,743 participants in 2022. DOSM 2022: 2.88 million own-account workers + 489,800 unpaid family workers. World Bank notes that i-Saraan take-up remained low despite increased outreach.
+Voluntary opt-in retirement schemes have shown limited reach. EPF i-Saraan had 291,743 participants in 2022. DOSM counted 2.86 million own-account workers in December 2022. World Bank notes that i-Saraan take-up remained low despite increased outreach.
 ```
 **3/7** _(fact)_ · 151 chars
 ```
@@ -3220,5 +3187,5 @@ https://thefourthangle.pages.dev/issue/0146
 
 ## ✅ POSTED (2)
 
-- **2004** — Bank Negara blocked 162,642 mule accounts in 2025; investment-scam losses still rose 73%  _(2026-06-01T00:52:11.861Z, x)_
+- **2004** — Scam centre stopped 162,642 suspected mule accounts in 2025; investment-scam losses still rose 73%  _(2026-06-01T00:52:11.861Z, x)_
 - **2001** — Health savings promised without cutting essential services. 62% of the operating budget is salaries.  _(2026-05-31T06:13:05.471Z, x)_
