@@ -86,6 +86,10 @@ test.describe('404 page (S-7)', () => {
 });
 
 test.describe('Desktop reader', () => {
+  // These exercise DesktopReader, which App shows from 768px up; pin the
+  // width so the phone project does not get the mobile reader instead.
+  test.use({ viewport: { width: 1440, height: 900 } });
+
   test('A-9: one <h1> once the reader mounts', async ({ page }) => {
     await page.goto(`/issue/${ISSUE}`);
     await waitForReader(page);
