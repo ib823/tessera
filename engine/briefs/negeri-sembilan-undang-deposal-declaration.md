@@ -110,7 +110,7 @@ Per T4A Accuracy Standard: "Claims about 3R-adjacent topics require two independ
 
 **Tier D — Historical context**
 14. NS Government Official Portal, "Institusi Diraja", https://www.ns.gov.my/en/institusi-diraja [PRIMARY]
-15. Majlis Datuk² Undang Sungai Ujong (official Undang SU portal), "Perlembagaan Persekutuan & Undang-Undang Tubuh Negeri Sembilan", https://majlisdatolsu.gov.my/perlembagaan-persekutuan-undang-undang-tubuh-negeri-sembilan/ [PRIMARY]
+15. Majlis Dato Lembaga Adat Sungei Ujong (Sungei Ujong Customary Council, which publishes its own position), "Perlembagaan Persekutuan & Undang-Undang Tubuh Negeri Sembilan", https://majlisdatolsu.gov.my/perlembagaan-persekutuan-undang-undang-tubuh-negeri-sembilan/ [PRIMARY]
 16. Wikipedia, "Muhriz of Negeri Sembilan" — secondary, cites primary: bio, 2008 proclamation by Undang SU Datuk Klana Petra Datuk Mubarak Dohak at 3:45pm Istana Besar Seri Menanti. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 17. Wikipedia, "Yang di-Pertuan Besar of Negeri Sembilan" — secondary, for historical line of YDPBs. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 18. Wikipedia (Bahasa), "Undang (Negeri Sembilan)" — secondary, for structure of Undang Yang Empat. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
@@ -421,6 +421,7 @@ No single-spectrum bias. The gap is primary documents, not viewpoints.
 60. The Star, "Negri royal row: Revocation of 10 exco members' appointments official, according to state gazette", 24 Sep 2026, https://www.thestar.com.my/news/nation/2026/09/24/negri-royal-row-revocation-of-10-exco-members039-posts-official-according-to-state-gazette
 61. Berita RTM, "Proklamasi 19 April tidak sah, MMKN tiada kuasa unilateral - AGC", 17 Sep 2026, https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/proklamasi-19-april-tidak-sah-mmkn-tiada-kuasa-unilateral-agc/
 62. The Vibes, "Ismail's move to seek Tuanku Muhriz's consent seen as recognition of ruler's legitimacy", 3 Nov 2026, https://www.thevibes.com/articles/news/129140/ismails-move-to-seek-tuanku-muhrizs-consent-seen-as-recognition-of-rulers-legitimacy (LOGGED FOR EXCLUSION: background for this addendum only; single outlet)
+63. The Edge Malaysia, "Negeri Sembilan MB says proclamation to remove ruler signed under duress", 9 Sep 2026, https://theedgemalaysia.com/node/817377 [S]
 
 Constitution provisions read in [24] (2003 reprint, Sinar Project OCR):
 - Article X(1) and X(2) and its proviso;
