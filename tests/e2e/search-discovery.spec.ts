@@ -11,6 +11,8 @@ interface FeedEntry {
   headline: string;
   context: string;
   sourceDate?: string | null;
+  publishedAt?: string;
+  modifiedAt?: string;
 }
 
 test.describe('Search discovery', () => {
@@ -45,9 +47,10 @@ test.describe('Search discovery', () => {
     expect(article.image[0].url).toMatch(new RegExp(`/og/issue-${issue.id}\\.png`));
     expect(article.publisher.name).toBe('The Fourth Angle');
     expect(article.author.name).toBe('The Fourth Angle');
-    if (issue.sourceDate) {
-      expect(article.datePublished.startsWith(issue.sourceDate)).toBe(true);
-      expect(article.dateModified.startsWith(issue.sourceDate)).toBe(true);
-    }
+    // Dates come from the issue's publication history (scripts/derive-issue-history.mjs),
+    // the same values the page shows as "Published" and "Updated".
+    expect(issue.publishedAt, 'published issue has publishedAt').toBeTruthy();
+    expect(article.datePublished.startsWith(issue.publishedAt!)).toBe(true);
+    expect(article.dateModified.startsWith(issue.modifiedAt ?? issue.publishedAt!)).toBe(true);
   });
 });
