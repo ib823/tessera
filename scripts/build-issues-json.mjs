@@ -39,6 +39,12 @@ const feedSummaries = publishedIssues.map(issue => {
     finalScore: issue.finalScore,
     hasImage: existsSync(join(bgDir, `issue-${issue.id}-bg.jpg`)) || existsSync(join(bgDir, `issue-${issue.id}-bg.png`)),
     sourceDate: issue.sourceDate || null,
+    // Publication history: the feed rows' "Updated since you read it" badge
+    // compares modifiedAt with the reader's completion time. changes[] stays
+    // in the per-issue payload only.
+    publishedAt: issue.publishedAt || undefined,
+    modifiedAt: issue.modifiedAt || undefined,
+    type: issue.type || undefined,
     // Keep card structure for category derivation and card count, but strip body text
     cards: issue.cards.map(c => ({ t: c.t, lens: c.lens })),
     legacyAudit: issue.legacyAudit === true ? true : undefined,

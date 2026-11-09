@@ -10,6 +10,8 @@
   import PushPrompt from './PushPrompt.svelte';
   import IssueImage from './IssueImage.svelte';
   import IssueSources from './IssueSources.svelte';
+  import IssueMeta from './IssueMeta.svelte';
+  import IssueChanges from './IssueChanges.svelte';
   import { withBuildId } from '../lib/build';
 
   import type { Issue } from '../data/issue-types';
@@ -311,6 +313,7 @@
     <div class="reader-head">
       <div class="reader-headline-wrap">
         <h1 class="reader-headline balance-title">{issue.headline}</h1>
+        <IssueMeta {issue} variant="desktop" />
       </div>
       <div class="reader-actions">
         <button onclick={() => { shareCardIndex = null; shareOpen = true; }} style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:8px 16px;border-radius: var(--radius-pill);border:1px solid var(--border-subtle);background:var(--bg-elevated);cursor:pointer;transition:background 0.2s ease-out,border-color 0.2s ease-out;margin-top:4px;min-height:44px;" onmouseenter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--border-subtle)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border-divider)'; }} onmouseleave={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-elevated)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border-subtle)'; }} aria-label="Share this issue" aria-expanded={shareOpen} aria-haspopup="dialog">
@@ -501,6 +504,7 @@
     </div>
 
     <IssueSources {issue} open variant="desktop" />
+    <IssueChanges {issue} open variant="desktop" />
 
     <PushPrompt />
 

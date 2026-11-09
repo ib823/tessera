@@ -27,6 +27,9 @@ Issues are stored one-per-file in `src/data/issues/`. The loader in `src/data/is
   "finalScore": 73.2,
   "related": ["0142"],
   "sourceDate": "2026-03-28",
+  "publishedAt": "2026-03-30T08:00:00+08:00",
+  "modifiedAt": "2026-03-30T08:00:00+08:00",
+  "type": "Analysis",
   "cards": [
     { "t": "hook", "big": "What they said — the surface claim", "sub": "Context that sets up the gap between claim and reality" },
     { "t": "fact", "big": "What we found — first factual finding", "sub": "Supporting evidence with specific numbers", "lens": "Legal" },
@@ -49,6 +52,11 @@ Field notes:
 - `finalScore`: 0–100 editorial quality score.
 - `related`: array of connected issue IDs (optional).
 - `sourceDate`: ISO date when source info was retrieved.
+- `publishedAt`: first publication, ISO date or date-time with offset (`2026-03-30` or `2026-03-30T08:00:00+08:00`). Set when you set `published: true`; never change it afterwards.
+- `modifiedAt`: last substantive change to headline, context or cards, same format. Equals `publishedAt` until the first update. Style-only passes do not move it. Readers see "Updated {date}" only when it falls on a later day.
+- `type`: `"Analysis"` (argues a reading), `"Explainer"` (sets out how something works) or `"Fact-check"` (tests a specific public claim). Shown under the headline.
+- `changes`: edition history, oldest first: `[{ "edition": 2, "date": "2026-04-08", "summary": "Correction: ..." }]`. One plain line per entry; start substantive corrections with `Correction:` and refreshes with `Update:`. Shown as "What changed" on the issue page.
+- `node scripts/derive-issue-history.mjs` re-derives `publishedAt`/`modifiedAt` from git history (`--write` to save; rules in its header).
 
 ### Card types:
 - `hook` — "What they said" — the mainstream narrative / surface claim
@@ -78,7 +86,7 @@ Legal, Rights, Economic, Governance, Technology, Social, Political, Health, Envi
 ### To update an existing issue:
 1. Open `src/data/issues/{id}.json`
 2. Update the content
-3. Change `"status": "updated"`, increment `edition`
+3. Change `"status": "updated"`, increment `edition`, set `modifiedAt` to now, and append a `changes[]` entry saying what changed
 4. Commit and push
 
 ## Length Budget — Bite-Size Standard
@@ -484,7 +492,7 @@ Draw a man in a suit shown from the chest up in a shrugging pose — arms extend
 1. Process uploaded image → move to `public/og/backgrounds/issue-{ID}-bg.png`
 2. Write issue to `src/data/issues/{ID}.json`
 3. Update `related[]` on connected issues (bidirectional — edit each connected issue's JSON file)
-4. Set `"published": true` and `"sourceDate"` to today's date
+4. Set `"published": true` and `"sourceDate"` to today's date; set `publishedAt` and `modifiedAt` to now and pick a `type`
 5. Run `node scripts/validate-issues.mjs` — **must exit 0**
 6. Verify background image exists at expected path
 7. Grep all issue text for stealth banned terms (must find zero)

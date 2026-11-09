@@ -6,6 +6,8 @@
   import ShareModal from './ShareModal.svelte';
   import PushPrompt from './PushPrompt.svelte';
   import IssueSources from './IssueSources.svelte';
+  import IssueMeta from './IssueMeta.svelte';
+  import IssueChanges from './IssueChanges.svelte';
   import { CARD_TYPES, opinionColor } from '../data/issue-types';
   import { markCompleted, updateProgress, savePosition } from '../stores/reader';
   import { createSpring, animateSpring, SPRING_DEFAULT, SPRING_SNAPPY, SPRING_RUBBER, type SpringConfig } from '../lib/spring';
@@ -1084,6 +1086,7 @@
   <!-- Headline -->
   <div class="headline-area">
     <h1 class="headline">{issue.headline}</h1>
+    <IssueMeta {issue} variant="mobile" />
     {#if issue.legacyAudit}
       <div class="legacy-caveat" role="note" aria-label="Pre-pipeline issue notice">
         <span class="legacy-caveat__icon" aria-hidden="true">&#9432;</span>
@@ -1172,6 +1175,7 @@
           </div>
           <PushPrompt />
           <IssueSources {issue} variant="mobile" />
+          <IssueChanges {issue} variant="mobile" />
         </div>
       </div>
     {:else}

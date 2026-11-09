@@ -3,6 +3,8 @@ import { persistentMap, persistentAtom } from '@nanostores/persistent';
 export interface ReadState {
   state: 'started' | 'completed';
   progress: number;
+  /** ISO time of the latest completion; drives the "Updated since you read it" badge. */
+  completedAt?: string;
 }
 
 export const readIssues = persistentMap<Record<string, string>>('tfa:v1:read:', {});
@@ -29,7 +31,7 @@ export function updateProgress(id: string, progress: number) {
 }
 
 export function markCompleted(id: string, cardCount: number = 7) {
-  readIssues.setKey(id, JSON.stringify({ state: 'completed', progress: cardCount }));
+  readIssues.setKey(id, JSON.stringify({ state: 'completed', progress: cardCount, completedAt: new Date().toISOString() }));
 }
 
 // Reactions — "this insight hit hard"
