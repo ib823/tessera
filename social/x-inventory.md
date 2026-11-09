@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T14:13:13.347Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T16:13:20.198Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -372,7 +372,7 @@ https://thefourthangle.pages.dev/issue/2007
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (conference of rulers deliberates pm term limits, ag‑pp separation and child act amendments). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
