@@ -3,6 +3,13 @@ export interface Card {
   big: string;
   sub: string;
   lens?: string;
+  /**
+   * Hook and fact cards: the sources that support this card, as refs (the
+   * research brief's own source numbers, `SourceEntry.ref`) into the issue's
+   * source list. Readers see them under the card. The build fails when a ref
+   * does not resolve (scripts/build-issue-sources.mjs).
+   */
+  src?: string[];
 }
 
 export interface StageScores {
@@ -21,6 +28,8 @@ export interface StageScores {
  */
 export interface SourceEntry {
   n: number;
+  /** The brief's own number for this source; cards cite it in `Card.src`. */
+  ref: string;
   title: string;
   publisher: string | null;
   date: string | null;

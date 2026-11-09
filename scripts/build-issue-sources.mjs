@@ -229,6 +229,35 @@ for (const f of existsSync(sourcesDir) ? readdirSync(sourcesDir).filter((x) => x
   });
 }
 
+// ── 4b. Per-card source links ──────────────────────────────────────────────
+// A hook or fact card may carry `src`: refs (the brief's own source numbers,
+// the `ref` field above) to the entries that support it. Readers see them
+// under the card. Every ref must resolve in that issue's current list, so a
+// brief edit that drops or renumbers a source fails the build instead of
+// leaving a card pointing at the wrong document.
+const MAX_CARD_SOURCES = 3;
+let linkedCards = 0;
+for (const issue of published) {
+  const sourcesPath = join(sourcesDir, `${issue.id}.json`);
+  const data = existsSync(sourcesPath) ? readJson(sourcesPath) : null;
+  const refs = new Set((data?.entries ?? []).map((e) => String(e.ref)));
+  (issue.cards ?? []).forEach((card, i) => {
+    if (card.src === undefined) return;
+    const at = `${issue.id} card ${i} (${card.t})`;
+    if (!Array.isArray(card.src) || card.src.some((r) => typeof r !== 'string' || r.length === 0)) {
+      errors.push(`${at}: src must be an array of source refs (strings)`);
+      return;
+    }
+    if (card.t !== 'hook' && card.t !== 'fact') errors.push(`${at}: src is only for hook and fact cards`);
+    if (card.src.length > MAX_CARD_SOURCES) errors.push(`${at}: src lists ${card.src.length} sources (max ${MAX_CARD_SOURCES})`);
+    if (new Set(card.src).size !== card.src.length) errors.push(`${at}: src repeats a ref`);
+    for (const r of card.src) {
+      if (!refs.has(r)) errors.push(`${at}: src ref "${r}" is not in src/data/sources/${issue.id}.json`);
+    }
+    if (card.src.length) linkedCards += 1;
+  });
+}
+
 // ── 5. Report ──────────────────────────────────────────────────────────────
 
 const legacyNone = report.none.filter((r) => r.legacyAudit);
@@ -236,6 +265,7 @@ console.log(`Issue sources: ${published.length} published`);
 console.log(`  ✓ ${report.brief.length} from research briefs (${report.brief.reduce((s, r) => s + r.count, 0)} entries)`);
 console.log(`  ✓ ${report.fallback.length} from the issue's sources field`);
 console.log(`  · ${report.none.length} without a source list (${legacyNone.length} pre-pipeline, covered by the legacy caveat)`);
+console.log(`  ✓ ${linkedCards} cards link their sources`);
 if (dropped.length) {
   const byReason = new Map();
   for (const d of dropped) byReason.set(d.reason, (byReason.get(d.reason) ?? 0) + 1);

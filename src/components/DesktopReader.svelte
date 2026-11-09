@@ -13,6 +13,7 @@
   import IssueSources from './IssueSources.svelte';
   import IssueMeta from './IssueMeta.svelte';
   import IssueChanges from './IssueChanges.svelte';
+  import CardSources from './CardSources.svelte';
   import { withBuildId } from '../lib/build';
   import { initialCardFromLocation } from '../lib/card-anchor';
   import { resolveRelatedIssue, type RelatedPick } from '../lib/related-next';
@@ -381,6 +382,7 @@
           {#if card.sub}
             <p style="font-size: var(--text-reading);color:var(--text-secondary);line-height:1.65;margin:12px 0 0;max-width:52ch;">{card.sub}</p>
           {/if}
+          <CardSources {card} entries={issue.sourceList} variant="desktop" />
           {#if card.t === 'fact' && connections.length > 0}
             <button onclick={() => completionMarker?.scrollIntoView({ behavior: 'smooth', block: 'start' })} style="font-size:var(--text-xs);font-weight:700;color:var(--score-info);margin-top:16px;display:inline-flex;align-items:center;gap:4px;background:none;border:none;cursor:pointer;padding:0;font-family:inherit;transition:color 0.15s ease;" onmouseenter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)'; }} onmouseleave={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--score-info)'; }}>
               Tracked in {connections.length} {connections.length === 1 ? 'issue' : 'issues'} <span aria-hidden="true">↓</span>

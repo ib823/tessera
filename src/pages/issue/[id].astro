@@ -4,6 +4,7 @@ import App from '../../components/App.svelte';
 import IssueSources from '../../components/IssueSources.svelte';
 import IssueMeta from '../../components/IssueMeta.svelte';
 import IssueChanges from '../../components/IssueChanges.svelte';
+import CardSources from '../../components/CardSources.svelte';
 import { issueDateTime } from '../../lib/issue-meta';
 import { ISSUES } from '../../data/issues';
 import { getIssueSourceList } from '../../data/sources';
@@ -19,6 +20,7 @@ export function getStaticPaths() {
 }
 
 const { issue } = Astro.props;
+const sourceList = getIssueSourceList(issue.id);
 const siteUrl = Astro.site?.origin || 'https://thefourthangle.pages.dev';
 const issueUrl = `${siteUrl}/issue/${issue.id}`;
 const buildId = typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : new Date().toISOString();
@@ -226,12 +228,13 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
             <p class="ssg-card__label">{label}</p>
             <p class="ssg-card__big">{card.big}</p>
             {card.sub && <p class="ssg-card__sub">{card.sub}</p>}
+            <CardSources card={card} entries={sourceList} variant="static" />
           </section>
         );
       })}
     </div>
 
-    <IssueSources issue={{ id: issue.id, legacyAudit: issue.legacyAudit, sourceList: getIssueSourceList(issue.id) }} variant="static" />
+    <IssueSources issue={{ id: issue.id, legacyAudit: issue.legacyAudit, sourceList }} variant="static" />
     <IssueChanges issue={issue} variant="static" />
 
     {issue.finalScore != null && (
