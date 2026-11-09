@@ -34,9 +34,16 @@ html = html.replace('SIGNATURES_PLACEHOLDER', JSON.stringify(signatures));
 
 // Step 1 links to the newest issue, where the "Copy for verification" button
 // sits in the Share menu and at the end of the article (audit T-6).
+// Newest by first publication (publishedAt), not sourceDate, which moves
+// when an old issue's sources are re-checked for a correction.
+const publishedTime = (issue) => {
+  const v = issue.publishedAt ?? issue.sourceDate ?? '';
+  const t = Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(v) ? `${v}T08:00:00+08:00` : v);
+  return Number.isNaN(t) ? 0 : t;
+};
 const latest = loadIssues()
   .filter((issue) => issue.published === true && issue.retired !== true)
-  .sort((a, b) => (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '') || b.id.localeCompare(a.id))[0];
+  .sort((a, b) => publishedTime(b) - publishedTime(a) || b.id.localeCompare(a.id))[0];
 html = html.replace('LATEST_ISSUE_HREF', latest ? `/issue/${latest.id}` : '/');
 writeFileSync(outputPath, html, 'utf8');
 

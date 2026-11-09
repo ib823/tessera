@@ -15,6 +15,7 @@ import { ISSUES } from '../../data/issues';
 import { opinionColor, opinionLabel } from '../../data/issue-types';
 import { buildTopicClusters } from '../../lib/topics';
 import { absoluteDate } from '../../lib/relative-date';
+import { publishedDay } from '../../lib/issue-meta';
 
 export function getStaticPaths() {
   const published = ISSUES.filter((issue) => issue.published === true && issue.retired !== true);
@@ -24,7 +25,7 @@ export function getStaticPaths() {
     props: {
       topic: cluster.topic,
       slug: cluster.slug,
-      issues: [...cluster.issues].sort((a, b) => (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '') || b.opinionShift - a.opinionShift),
+      issues: [...cluster.issues].sort((a, b) => publishedDay(b).localeCompare(publishedDay(a)) || b.opinionShift - a.opinionShift),
       others: clusters.filter((c) => c.slug !== cluster.slug).map(({ topic, slug, count }) => ({ topic, slug, count })),
     },
   }));
@@ -55,8 +56,8 @@ const description = `${count} Malaysian ${count === 1 ? 'issue' : 'issues'} read
       {issues.map((issue) => (
         <li>
           <a class="topic-item" href={`/issue/${issue.id}`}>
-            {issue.sourceDate && (
-              <time class="topic-item-date" datetime={issue.sourceDate}>{absoluteDate(issue.sourceDate)}</time>
+            {publishedDay(issue) && (
+              <time class="topic-item-date" datetime={publishedDay(issue)}>{absoluteDate(publishedDay(issue))}</time>
             )}
             <span class="topic-item-headline">{issue.headline}</span>
             <span class="topic-item-context">{issue.context}</span>

@@ -32,8 +32,8 @@ describe('buildRssXml', () => {
     const links = [...xml.matchAll(/<link>(https:\/\/example\.test\/issue\/\d+)<\/link>/g)].map((m) => m[1]);
     expect(links).toEqual(['https://example.test/issue/0005', 'https://example.test/issue/0002', 'https://example.test/issue/0001']);
     expect(xml).toContain('<guid isPermaLink="true">https://example.test/issue/0002</guid>');
-    expect(xml).toContain(`<pubDate>${issuePublishedDate('2026-05-17')!.toUTCString()}</pubDate>`);
-    expect(xml).toContain(`<lastBuildDate>${issuePublishedDate('2026-05-17')!.toUTCString()}</lastBuildDate>`);
+    expect(xml).toContain(`<pubDate>${issuePublishedDate({ sourceDate: '2026-05-17' })!.toUTCString()}</pubDate>`);
+    expect(xml).toContain(`<lastBuildDate>${issuePublishedDate({ sourceDate: '2026-05-17' })!.toUTCString()}</lastBuildDate>`);
   });
 
   it('escapes text and lists each fact lens once', () => {
@@ -45,8 +45,18 @@ describe('buildRssXml', () => {
   });
 
   it('dates issues at 08:00 Malaysia time, matching article:published_time', () => {
-    expect(issuePublishedDate('2026-04-08')!.toISOString()).toBe('2026-04-08T00:00:00.000Z');
-    expect(issuePublishedDate('not-a-date')).toBeNull();
+    expect(issuePublishedDate({ sourceDate: '2026-04-08' })!.toISOString()).toBe('2026-04-08T00:00:00.000Z');
+    expect(issuePublishedDate({ sourceDate: 'not-a-date' })).toBeNull();
+    expect(issuePublishedDate({})).toBeNull();
+  });
+
+  it('dates and orders by publishedAt, so a corrected old issue keeps its place', () => {
+    const corrected = [
+      { id: '0010', headline: 'Old, corrected today', context: 'c', publishedAt: '2026-01-10T08:00:00+08:00', sourceDate: '2026-11-09', published: true, cards: [] },
+      { id: '0011', headline: 'Newer', context: 'c', publishedAt: '2026-06-01', sourceDate: '2026-06-01', published: true, cards: [] },
+    ];
+    expect(latestIssues(corrected).map((i) => i.id)).toEqual(['0011', '0010']);
+    expect(issuePublishedDate(corrected[0])!.toISOString()).toBe('2026-01-10T00:00:00.000Z');
   });
 
   it('covers every published issue in the real data', () => {

@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { publishedDay } from '../../src/lib/issue-meta';
 
 /**
  * Homepage, navigation, prompts and layout (UX audit H-1 to H-9, R-1, R-3,
@@ -11,6 +12,7 @@ interface FeedEntry {
   id: string;
   opinionShift: number;
   sourceDate?: string | null;
+  publishedAt?: string | null;
   cards: Array<{ t: string; lens?: string }>;
 }
 
@@ -89,7 +91,7 @@ test.describe('Today', () => {
   test('labels a lead that differs from the newest issue because it was read (H-9)', async ({ page, request, baseURL }) => {
     const feed = (await (await request.get(`${baseURL}/issues-feed.json`)).json()) as FeedEntry[];
     // TodayView's order: newest date first, then the larger Opinion Shift.
-    const newest = [...feed].sort((a, b) => (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '') || b.opinionShift - a.opinionShift)[0];
+    const newest = [...feed].sort((a, b) => publishedDay(b).localeCompare(publishedDay(a)) || b.opinionShift - a.opinionShift)[0];
     await openHome(page);
     await expect(page.locator('[data-lead-label]')).toHaveText('Latest issue');
 

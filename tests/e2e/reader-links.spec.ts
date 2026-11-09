@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { test, expect, type Page } from '@playwright/test';
+import { publishedDay } from '../../src/lib/issue-meta';
 
 /**
  * Reader, sharing, SEO and crawl fixes from the UX audit batch:
@@ -31,10 +32,10 @@ test.describe('Feeds, titles and crawl rules', () => {
     expect(res.ok()).toBeTruthy();
     const xml = await res.text();
     expect(xml).toMatch(/^<\?xml version="1\.0" encoding="UTF-8"\?>\s*<rss version="2\.0"/);
-    const feed = (await (await request.get(`${baseURL}/issues-feed.json`)).json()) as Array<{ id: string; sourceDate: string | null }>;
+    const feed = (await (await request.get(`${baseURL}/issues-feed.json`)).json()) as Array<{ id: string; sourceDate: string | null; publishedAt?: string | null }>;
     const items = [...xml.matchAll(/<item>[\s\S]*?<link>[^<]*\/issue\/(\d+)<\/link>[\s\S]*?<\/item>/g)].map((m) => m[1]);
     expect(items).toHaveLength(feed.length);
-    const newest = [...feed].sort((a, b) => (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '') || b.id.localeCompare(a.id))[0];
+    const newest = [...feed].sort((a, b) => publishedDay(b).localeCompare(publishedDay(a)) || b.id.localeCompare(a.id))[0];
     expect(items[0]).toBe(newest.id);
   });
 

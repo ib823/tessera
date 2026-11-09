@@ -41,7 +41,7 @@ describe('share image stamp', () => {
   });
 
   it('carries date, edition and a short link to the card', () => {
-    expect(shareCardStamp({ issueId: '0146', edition: 2, sourceDate: '2026-04-08', cardIndex: 2 })).toEqual({
+    expect(shareCardStamp({ issueId: '0146', edition: 2, date: '2026-04-08', cardIndex: 2 })).toEqual({
       line: '8 Apr 2026 \u00B7 Edition 2',
       url: 'thefourthangle.pages.dev/issue/0146#card-3',
     });

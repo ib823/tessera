@@ -44,7 +44,7 @@ describe('date helpers', () => {
   });
 
   it('finds the newest date', () => {
-    expect(newestDate([{ sourceDate: '2026-09-19' }, { sourceDate: '2026-11-07' }, {}])).toBe('2026-11-07');
+    expect(newestDate(['2026-09-19', '2026-11-07', '', undefined])).toBe('2026-11-07');
     expect(newestDate([])).toBe('');
   });
 

@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.svelte';
 import { ISSUES } from '../data/issues';
 import { latestIssues } from '../lib/rss';
-import { formatStampDate } from '../lib/share-card';
+import { formatIssueDate, publishedDay } from '../lib/issue-meta';
 
 const title = 'Page not found — The Fourth Angle';
 const description = 'This page or issue could not be found. Search the issues or pick one of the latest from The Fourth Angle.';
@@ -50,7 +50,7 @@ const searchTitles = JSON.stringify(latestIssues(ISSUES).map((issue) => [issue.i
         {latest.map((issue) => (
           <li>
             <a href={`/issue/${issue.id}`}>{issue.headline}</a>
-            {issue.sourceDate && <time datetime={issue.sourceDate}>{formatStampDate(issue.sourceDate)}</time>}
+            {publishedDay(issue) && <time datetime={publishedDay(issue)}>{formatIssueDate(publishedDay(issue))}</time>}
           </li>
         ))}
       </ol>

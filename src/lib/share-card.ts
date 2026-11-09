@@ -54,8 +54,8 @@ export type CardFormat = 'feed' | 'story';
 export interface ShareCardMeta {
   issueId: string;
   edition?: number;
-  /** ISO date (YYYY-MM-DD); the issue's sourceDate stands in for its publication date. */
-  sourceDate?: string;
+  /** ISO date (YYYY-MM-DD) of the edition being shared: its last update, else its publication. */
+  date?: string;
   /** 0-based card index, or null for the whole issue. */
   cardIndex?: number | null;
 }
@@ -73,7 +73,7 @@ export function formatStampDate(iso: string | undefined): string {
 
 /** The stamp lines printed at the foot of an exported image. */
 export function shareCardStamp(meta: ShareCardMeta): { line: string; url: string } {
-  const parts = [formatStampDate(meta.sourceDate), meta.edition ? `Edition ${meta.edition}` : ''].filter(Boolean);
+  const parts = [formatStampDate(meta.date), meta.edition ? `Edition ${meta.edition}` : ''].filter(Boolean);
   const hash = meta.cardIndex == null ? '' : `#${cardAnchor(meta.cardIndex)}`;
   return { line: parts.join(' \u00B7 '), url: `${SHARE_HOST}/issue/${meta.issueId}${hash}` };
 }

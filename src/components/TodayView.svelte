@@ -7,6 +7,7 @@
   import type { FeedSection, TodayMode } from '../lib/feed-sections';
   import { getDossierFeedEntries } from '../data/dossiers';
   import { absoluteDate, isWithinDays, newestDate, relativeDate } from '../lib/relative-date';
+  import { publishedDay } from '../lib/issue-meta';
   import { buildTopicClusters, primaryLens, topicHref } from '../lib/topics';
 
   // Featured dossiers — surfaces the new long-form product on the
@@ -94,12 +95,12 @@
   let nextContinueAngle = $derived(Math.min(continueProgress + 1, continueIssue?.cards.length ?? 6));
 
   function byNewest(a: IssueSummary, b: IssueSummary): number {
-    const dates = (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '');
+    const dates = publishedDay(b).localeCompare(publishedDay(a));
     return dates !== 0 ? dates : b.opinionShift - a.opinionShift;
   }
 
   let latestIssues = $derived([...issues].sort(byNewest));
-  let lastPublished = $derived(newestDate(issues));
+  let lastPublished = $derived(newestDate(issues.map(publishedDay)));
 
   // H-9: the lead is the newest issue this reader has not opened. When they
   // have already opened the newest one, say so instead of presenting a
@@ -110,7 +111,7 @@
   // H-1: the briefing holds recent issues only. When nothing recent is left
   // unopened, it becomes "Start here" with the strongest unopened reads.
   let recentUnread = $derived(
-    latestIssues.filter((issue) => issue.id !== topIssue?.id && !readMap[issue.id] && isWithinDays(issue.sourceDate, RECENT_DAYS, now)),
+    latestIssues.filter((issue) => issue.id !== topIssue?.id && !readMap[issue.id] && isWithinDays(publishedDay(issue), RECENT_DAYS, now)),
   );
   let briefingIsRecent = $derived(recentUnread.length > 0);
   let briefingIssues = $derived.by(() => {
@@ -267,7 +268,7 @@
               <li>
                 <button class="latest-item" onclick={() => onOpenIssue?.(issue)}>
                   <div class="latest-meta">
-                    {@render dateStamp(issue.sourceDate)}
+                    {@render dateStamp(publishedDay(issue))}
                     {#if lens}<span class="latest-topic">{lens}</span>{/if}
                     {#if state}<span class="latest-state">{state}</span>{/if}
                   </div>
@@ -301,7 +302,7 @@
             <div class="hero-copy">
               <div class="hero-badge-row">
                 <span class="hero-badge" data-lead-label>{leadIsPersonal ? "You've opened the latest issue. Next up:" : 'Latest issue'}</span>
-                {@render dateStamp(topIssue.sourceDate)}
+                {@render dateStamp(publishedDay(topIssue))}
               </div>
               <h2 id={`${idPrefix}-lead-issue-title`} class="hero-headline balance-title">{topIssue.headline}</h2>
               <p class="hero-context pretty-copy">{topIssue.context}</p>
@@ -356,7 +357,7 @@
           <div class="panel-kicker">Continue Reading</div>
           <h2 id={`${idPrefix}-continue-reading-heading`} class="sr-only">Continue Reading</h2>
             <button class="panel-issue" onclick={() => onOpenIssue?.(continueIssue)}>
-              {@render dateStamp(continueIssue.sourceDate)}
+              {@render dateStamp(publishedDay(continueIssue))}
               <div class="panel-issue-title balance-title">{continueIssue.headline}</div>
               <div class="panel-issue-copy pretty-copy">Next: angle {nextContinueAngle}. Pick up where the argument starts to turn.</div>
               <div class="panel-progress-row">
@@ -385,7 +386,7 @@
               <button class="brief-item" onclick={() => onOpenIssue?.(issue)}>
                 <div class="brief-score" style="color:{opinionColor(issue.opinionShift)};" title="{issue.opinionShift} — {opinionLabel(issue.opinionShift)}: Reading only the headline would hide about {issue.opinionShift}% of the story">{issue.opinionShift}</div>
                 <div class="brief-copy">
-                  {@render dateStamp(issue.sourceDate)}
+                  {@render dateStamp(publishedDay(issue))}
                   <div class="brief-headline balance-title">{issue.headline}</div>
                   <div class="brief-context pretty-copy">{issue.context}</div>
                 </div>
@@ -423,7 +424,7 @@
                 <button class="topic-issue" onclick={() => onOpenIssue?.(issue)}>
                   <span class="topic-issue-score" style="color:{issueOpinionColor(issue.opinionShift)};">{issue.opinionShift}</span>
                   <div class="topic-issue-copy">
-                    {@render dateStamp(issue.sourceDate)}
+                    {@render dateStamp(publishedDay(issue))}
                     <div class="topic-issue-headline balance-title">{issue.headline}</div>
                     <div class="topic-issue-context pretty-copy">{issue.context}</div>
                   </div>

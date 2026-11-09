@@ -2,9 +2,10 @@
  * Reader-facing dates for feed cards, the lead, the briefing, dossier cards
  * and Library rows (audit H-1).
  *
- * Issues carry one date, `sourceDate` (YYYY-MM-DD, the day the sources were
- * retrieved), so every card shows that until a separate publish date exists.
- * Dates are calendar days: an issue dated today reads "Today" at any hour.
+ * Callers pass an issue's publication day (`publishedDay()` in issue-meta,
+ * YYYY-MM-DD in Malaysia time), not `sourceDate`, which moves when sources
+ * are re-checked for a correction. Dates are calendar days: an issue dated
+ * today reads "Today" at any hour.
  */
 
 const DAY_MS = 86_400_000;
@@ -62,11 +63,11 @@ export function absoluteDate(iso: string | null | undefined): string {
   return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
-/** Newest `sourceDate` in a list (ISO strings sort lexically), or '' for none. */
-export function newestDate(items: Array<{ sourceDate?: string | null }>): string {
+/** Newest of a list of ISO dates (they sort lexically), or '' for none. */
+export function newestDate(dates: ReadonlyArray<string | null | undefined>): string {
   let newest = '';
-  for (const item of items) {
-    if (item.sourceDate && item.sourceDate > newest) newest = item.sourceDate;
+  for (const date of dates) {
+    if (date && date > newest) newest = date;
   }
   return newest;
 }

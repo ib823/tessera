@@ -2,7 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { opinionLabel, CARD_TYPES } from '../data/issue-types';
   import { pressAction } from '../lib/actions/press';
-  import { formatIssueDate, updatedSinceRead } from '../lib/issue-meta';
+  import { formatIssueDate, publishedDay, updatedSinceRead } from '../lib/issue-meta';
   import { tween, countUp, ease } from '../lib/animation';
 
   import IssueImage from './IssueImage.svelte';
@@ -127,8 +127,8 @@
       {#if issue.legacyAudit}
         <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size: var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius: var(--radius-sm);text-transform:uppercase;letter-spacing:0.02em;">Pre-pipeline</span>
       {/if}
-      {#if relativeDate(issue.sourceDate)}
-        <time datetime={issue.sourceDate} title={absoluteDate(issue.sourceDate)} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);white-space:nowrap;">{relativeDate(issue.sourceDate)}</time>
+      {#if relativeDate(publishedDay(issue))}
+        <time datetime={publishedDay(issue)} title={absoluteDate(publishedDay(issue))} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);white-space:nowrap;">{relativeDate(publishedDay(issue))}</time>
       {/if}
     </div>
     {#if isStarted && readState && readState.progress > 0}

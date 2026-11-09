@@ -5,6 +5,7 @@
   import { createSpring, animateSpring } from '../lib/spring';
   import { BUILD_ID, getSiteOrigin } from '../lib/build';
   import { shareCardAsImage, type CardVariant, type CardFormat } from '../lib/share-card';
+  import { issueDay, publishedDay } from '../lib/issue-meta';
   import { issueShareUrl } from '../lib/card-anchor';
   import VerifyCopyButton from './VerifyCopyButton.svelte';
 
@@ -204,7 +205,7 @@
       await shareCardAsImage(shareText, cardVariant, cardFormat, {
         issueId: issue.id,
         edition: issue.edition,
-        sourceDate: issue.sourceDate,
+        date: issueDay(issue.modifiedAt) ?? publishedDay(issue),
         cardIndex,
       });
     } catch {}
