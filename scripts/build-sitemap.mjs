@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { primaryLens, topicSlug } from './lib/topics.mjs';
 
 const siteUrl = 'https://thefourthangle.pages.dev';
 const feedPath = join(process.cwd(), 'public', 'issues-feed.json');
@@ -29,7 +30,13 @@ const issueRoutes = issues.map((issue) => ({
   priority: '0.8',
 }));
 
-const routes = [...staticRoutes, ...dossierRoutes, ...issueRoutes];
+// One route per topic (an issue's primary lens), matching the pages built by
+// src/pages/topic/[slug].astro and the chips on Today.
+const topicRoutes = [...new Set(issues.map((issue) => primaryLens(issue.cards)).filter(Boolean).map(topicSlug))]
+  .sort()
+  .map((slug) => ({ loc: `/topic/${slug}`, priority: '0.6' }));
+
+const routes = [...staticRoutes, ...dossierRoutes, ...topicRoutes, ...issueRoutes];
 const urls = routes
   .map(({ loc, priority }) => {
     return `  <url>\n    <loc>${siteUrl}${loc}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
@@ -39,4 +46,4 @@ const urls = routes
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 
 writeFileSync(sitemapPath, xml, 'utf8');
-console.log(`Sitemap written: ${sitemapPath} (${routes.length} URLs: ${staticRoutes.length} static, ${dossierRoutes.length} dossiers, ${issueRoutes.length} issues)`);
+console.log(`Sitemap written: ${sitemapPath} (${routes.length} URLs: ${staticRoutes.length} static, ${dossierRoutes.length} dossiers, ${topicRoutes.length} topics, ${issueRoutes.length} issues)`);
