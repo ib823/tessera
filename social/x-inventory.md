@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T00:27:30.351Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T02:15:16.711Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (90)
+## ⏳ TO POST (89)
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
@@ -410,7 +410,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -444,7 +444,7 @@ https://thefourthangle.pages.dev/issue/2005
 
 ### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
 
-> ⚡ **Reactive: topic is live in the radar** (ai expected to contribute up to rm20b yearly to malaysia’s gdp by 2030, says gobind. putra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2003-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2003`
@@ -457,13 +457,13 @@ Malaysia targets 80% rice self-sufficiency by 2030. The actual rate fell to 52.9
 ```
 Rice self-sufficiency is sliding: 56.2% in 2023, then 52.9% in 2024. The competition regulator traces a longer fall from about 70% in 2017. The gap to the 80% target is now about 27 points, with five years left to 2030.
 ```
-**3/7** _(fact)_ · 252 chars
+**3/7** _(fact)_ · 140 chars
 ```
-Malaysia imports nearly half its rice, tying the staple to other governments' export decisions. When India, the world's largest rice exporter, banned non-basmati white rice exports in July 2023, importing nations faced tighter supply and higher prices.
+In 2024 Malaysia imported 1.50m tonnes of rice, more than the 1.36m tonnes it grew, tying the staple to other governments' export decisions.
 ```
-**4/7** _(fact)_ · 210 chars
+**4/7** _(fact)_ · 192 chars
 ```
-The national food import bill nearly doubled in a decade, from RM42.6 billion in 2014 to RM78.8 billion in 2023. Food exports trailed at RM46.5 billion that year, leaving a food trade deficit of RM32.3 billion.
+Malaysia's food import bill reached RM93.8 billion in 2024, up 19.1% on the year before. DOSM says the bill reflects 'continued reliance on external sources for several essential commodities'.
 ```
 **5/7** _(reframe)_ · 139 chars
 ```
@@ -516,6 +516,44 @@ Judging the epidemic by one survey is like calling the tide from a single wave. 
 One better year in the diabetes data does not reverse a decade of getting heavier.
 
 https://thefourthangle.pages.dev/issue/2002
+```
+
+### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
+
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
+
+**1/7** _(hook — attach image, NO link)_ · 120 chars
+```
+A Labuan MP's appeal over the cessation of his Bersatu membership was dismissed at the Court of Appeal on 29 April 2026.
+```
+**2/7** _(fact)_ · 198 chars
+```
+Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022 (Act A1663), in force 5 October 2022. The text prevents a party from causing an MP's seat to be vacated merely by expelling that MP.
+```
+**3/7** _(fact)_ · 119 chars
+```
+Zuraida Kamaruddin's case (CoA, Dec 2024) turned on 'reasonable compensation' under the Contracts Act, not Article 49A.
+```
+**4/7** _(fact)_ · 106 chars
+```
+Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate Pandan and Setiawangsa before leaving PKR.
+```
+**5/7** _(reframe)_ · 153 chars
+```
+Article 49A(2)(c) names a constitutional protection. Section 18C of the Societies Act tells the courts not to reach it. Two laws, one shielded carve-out.
+```
+**6/7** _(analogy)_ · 200 chars
+```
+Like a constitutional door locked from the other side by a different law. Article 49A(2)(c) is the protection. Section 18C of the Societies Act 1966 keeps courts from disputes that could interpret it.
+```
+**7/7** _(view — ONLY post with the link)_ · 225 chars
+```
+Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
+
+https://thefourthangle.pages.dev/issue/2000
 ```
 
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
@@ -632,40 +670,40 @@ Both figures are true. The diversification worked. The exporters who lost the ch
 https://thefourthangle.pages.dev/issue/1996
 ```
 
-### Issue 1995 — Singapore charged a fourth in the Nvidia chip case. No Malaysian operator faces charges yet.
+### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1995-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1995`
 
-**1/7** _(hook — attach image, NO link)_ · 140 chars
+**1/7** _(hook — attach image, NO link)_ · 154 chars
 ```
-Singapore's chip case grew to four people charged: three on 27 Feb 2025 (two Singaporeans and a Chinese national), a fourth on 2 April 2026.
+Singapore's chip case grew to four people and four companies charged: three men on 27 Feb 2025, a fourth person on 2 April 2026, the firms on 1 July 2026.
 ```
-**2/7** _(fact)_ · 135 chars
+**2/7** _(fact)_ · 153 chars
 ```
-The US 'Tier 2' label came from a rule that never officially named Malaysia. BIS suspended enforcement before its main compliance date.
+The US 'Tier 2' label came from a rule that never named Malaysia. BIS's 13 May 2025 release, as now published, cites diversion via Malaysia and Thailand.
 ```
-**3/7** _(fact)_ · 136 chars
+**3/7** _(fact)_ · 155 chars
 ```
-Johor approved 51 data-centre projects worth RM183 billion; 17 operational. In November 2025 the state stopped approving lower-tier DCs.
+A US indictment alleges a California firm got over US$176 million from two Malaysia-based shipment companies in 2024, in a scheme routing servers to China.
 ```
 **4/7** _(fact)_ · 156 chars
 ```
 Malaysia made US-origin AI chips subject to a Strategic Trade Permit on 14 July 2025. Before that, MITI said the chips were not on the Strategic Items List.
 ```
-**5/7** _(reframe)_ · 136 chars
+**5/7** _(reframe)_ · 170 chars
 ```
-Fifteen months on, the permit exists, Bridge swapped a tenant, Johor tightened approvals. No Malaysian operator has been publicly named.
+Singapore prosecutes fraud on suppliers; the US prosecutes the exporter. Twenty months after the first Singapore charges, no Malaysian operator has been publicly charged.
 ```
-**6/7** _(analogy)_ · 260 chars
+**6/7** _(analogy)_ · 184 chars
 ```
-Like writing the building code after the towers go up. Now everyone watches which ones get inspected. Malaysia wrote its US-chip permit roughly five months after the Singapore charges. Bridge Data Centres swapped a Chinese tenant in February 2026, per Reuters.
+Like writing the building code after the towers go up. Now everyone watches which ones get inspected. Malaysia wrote its US-chip permit roughly five months after the Singapore charges.
 ```
-**7/7** _(view — ONLY post with the link)_ · 187 chars
+**7/7** _(view — ONLY post with the link)_ · 188 chars
 ```
-Singapore charged four. Malaysia wrote a permit. Bridge swapped a tenant. Fifteen months later, no Malaysian operator has been publicly named.
+Singapore charged four people, then four companies. Malaysia wrote a permit. Twenty months on, no Malaysian operator has been publicly charged.
 
 https://thefourthangle.pages.dev/issue/1995
 ```
@@ -744,6 +782,44 @@ Like a residents' association chairman resigning 18 months before the AGM, with 
 Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
 
 https://thefourthangle.pages.dev/issue/1993
+```
+
+### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
+
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
+
+**1/7** _(hook — attach image, NO link)_ · 265 chars
+```
+On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
+```
+**2/7** _(fact)_ · 133 chars
+```
+Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
+```
+**3/7** _(fact)_ · 155 chars
+```
+M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
+```
+**4/7** _(fact)_ · 151 chars
+```
+Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
+```
+**6/7** _(analogy)_ · 233 chars
+```
+Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
+```
+**7/7** _(view — ONLY post with the link)_ · 222 chars
+```
+Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
+
+https://thefourthangle.pages.dev/issue/1992
 ```
 
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
@@ -924,9 +1000,9 @@ Exemption is the cheapest political answer. Capacity-building is the expensive s
 https://thefourthangle.pages.dev/issue/1985
 ```
 
-### Issue 1984 — E-invoice mandate softened three times in five months after Sabah loss
+### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
 
-> ⚡ **Reactive: topic is live in the radar** (malaysians repaid a record rm23b in credit card debt in 2025 as household debt rises. kual). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
@@ -935,25 +1011,25 @@ https://thefourthangle.pages.dev/issue/1985
 ```
 On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
 ```
-**2/6** _(fact)_ · 133 chars
+**2/6** _(fact)_ · 267 chars
 ```
-Government estimates put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other methodologies range from 7% to 26.6%.
+A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
 ```
 **3/6** _(fact)_ · 134 chars
 ```
 By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
 ```
-**4/6** _(fact)_ · 141 chars
+**4/6** _(fact)_ · 155 chars
 ```
-On 5 January 2026 the penalty-free transition for RM1m-5m firms was extended to end-2026. On 20 April 2026 MOF extended it again to end-2027.
+The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
 ```
-**5/6** _(reframe)_ · 175 chars
+**5/6** _(reframe)_ · 174 chars
 ```
-Phase 1-2 compliance is over 90%. Three softenings in five months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
+Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
 ```
-**6/6** _(view — ONLY post with the link)_ · 217 chars
+**6/6** _(view — ONLY post with the link)_ · 216 chars
 ```
-E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; three softenings in five months set a different pattern.
+E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
 
 https://thefourthangle.pages.dev/issue/1984
 ```
@@ -1036,6 +1112,44 @@ Think of it like a landlord who decides which tenants' mail gets delivered The l
 PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence, not moderation logic
 
 https://thefourthangle.pages.dev/issue/1982
+```
+
+### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
+
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
+
+**1/7** _(hook — attach image, NO link)_ · 241 chars
+```
+Sabah just paused a federal rollout. Federal courts paused Sabah's 40% payout 5 weeks earlier. On 13 May Sabah deferred AKPS. On 6 April the Court of Appeal stayed payment on a 40% grant the High Court ruled had gone 48 years without review.
+```
+**2/7** _(fact)_ · 231 chars
+```
+On 6 April 2026 the Court of Appeal granted Putrajaya's stay on Sabah's 40% revenue payment pending appeal. AGC said the appeal contests the High Court's finding of breach by BOTH governments since 1974, not the 40% formula itself.
+```
+**3/7** _(fact)_ · 242 chars
+```
+On 13 May 2026 Sabah deferred AKPS, citing clashes between Act 860 and the Immigration Act 1959/63. CM Hajiji called Sabah's MA63 immigration autonomy 'non-negotiable' and flagged Section 6(3) as giving the state only indirect AKPS oversight.
+```
+**4/7** _(fact)_ · 264 chars
+```
+The 40% grant is constitutional, but excludes Sabah's largest revenue: oil and gas, ring-fenced under the Petroleum Development Act 1974. Articles 112C/112D cover 'net revenue derived from Sabah.' Oil and gas sit under Petronas and a 5% royalty, not the 40% grant.
+```
+**5/7** _(fact)_ · 121 chars
+```
+Within 48 hours, Sabah's Law Society, immigration officers' union, and ex-CM Salleh Said Keruak backed the AKPS deferral.
+```
+**6/7** _(reframe)_ · 131 chars
+```
+The High Court found both governments in breach since 1974. Putrajaya pauses the remedy; Sabah pauses a new law before it operates.
+```
+**7/7** _(view — ONLY post with the link)_ · 179 chars
+```
+Two pauses, two clocks. Putrajaya extends a 48-year delay the court called unconstitutional. Sabah stops a new law before it operates.
+
+https://thefourthangle.pages.dev/issue/1981
 ```
 
 ### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
@@ -1262,6 +1376,40 @@ Publish annual volumes by country, build the hedging infrastructure exporters ne
 https://thefourthangle.pages.dev/issue/1972
 ```
 
+### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
+
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
+
+**1/6** _(hook — attach image, NO link)_ · 119 chars
+```
+A gazette backdated 22 years bypassed Selangor's public inquiry law. Three courts never ruled on whether it was lawful.
+```
+**2/6** _(fact)_ · 105 chars
+```
+Selangor's public inquiry law for forest excision has existed since 2011, and has never been invoked once
+```
+**3/6** _(fact)_ · 108 chars
+```
+316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments
+```
+**4/6** _(fact)_ · 120 chars
+```
+KLNFR drew 45,000 objections and was reversed before gazettement. SACF drew 718, after the gazette was already published
+```
+**5/6** _(reframe)_ · 131 chars
+```
+This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
+```
+**6/6** _(view — ONLY post with the link)_ · 180 chars
+```
+Tie standing rules to gazette publication date, enforce Section 12 replacement land, and adopt the NFA 2022 amendment across all states
+
+https://thefourthangle.pages.dev/issue/1971
+```
+
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
@@ -1332,7 +1480,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1576,6 +1724,40 @@ Like building a wall around a garden that stopped growing 20 years ago. The wall
 https://thefourthangle.pages.dev/issue/1957
 ```
 
+### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
+
+**1/6** _(hook — attach image, NO link)_ · 268 chars
+```
+Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
+```
+**2/6** _(fact)_ · 252 chars
+```
+Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
+```
+**3/6** _(fact)_ · 247 chars
+```
+The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
+```
+**4/6** _(fact)_ · 149 chars
+```
+Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
+```
+**5/6** _(reframe)_ · 160 chars
+```
+The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
+```
+**6/6** _(view — ONLY post with the link)_ · 217 chars
+```
+Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
+
+https://thefourthangle.pages.dev/issue/1956
+```
+
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
 
 > ⚡ **Reactive: topic is live in the radar** (anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government ). Post now, don't wait for a slot.
@@ -1583,21 +1765,21 @@ https://thefourthangle.pages.dev/issue/1957
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1955-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1955`
 
-**1/6** _(hook — attach image, NO link)_ · 262 chars
+**1/6** _(hook — attach image, NO link)_ · 256 chars
 ```
-Government open houses are off this Raya. The savings sit alongside fuel-subsidy figures roughly two orders of magnitude larger. The order covers government agencies, GLCs and GLICs, not all open houses in Malaysia. Private and household events are not in scope.
+Government open houses are off this Raya. The savings sit beside a fuel-subsidy bill MOF put at about RM7 billion a month. The order covers government agencies, GLCs and GLICs, not all open houses in Malaysia. Private and household events are not in scope.
 ```
-**2/6** _(fact)_ · 133 chars
+**2/6** _(fact)_ · 250 chars
 ```
-Hari Raya open houses are an established part of the official calendar and are described in policy as fostering inter-community ties.
+A Dewan Rakyat reply said the 2013 PM and Cabinet open house at Seri Perdana drew over 80,000 guests. Official open houses are taxpayer-funded: that event's food and drink cost RM2.88M, about RM36 a guest. Scale and procurement vary by year and host.
 ```
-**3/6** _(fact)_ · 266 chars
+**3/6** _(fact)_ · 238 chars
 ```
-Reported lost private-sector revenue from cancelled official events was estimated at RM15-25M across ministries and agencies. Catering can run 50-60% of event budgets. DOSM records women-owned F&B establishments; a female-dominated catering pattern was not verified.
+World Trade Centre Kuala Lumpur's group CEO told Bernama the cancellation 'does have an impact on industry players like us'. He gave no figure. He urged events firms to diversify beyond big seasonal events and 'be ready to pivot quickly'.
 ```
-**4/6** _(fact)_ · 150 chars
+**4/6** _(fact)_ · 140 chars
 ```
-Other Muslim-majority states scaled down festive hospitality rather than eliminating official events. Malaysia chose a full ban for the sectors named.
+Indonesia's president still held a palace open house for Eid al-Fitr 2026. Malaysia chose a full ban for the agencies, GLCs and GLICs named.
 ```
 **5/6** _(reframe)_ · 157 chars
 ```
@@ -1625,60 +1807,26 @@ Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz 
 ```
 Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
 ```
-**3/6** _(fact)_ · 255 chars
+**3/6** _(fact)_ · 266 chars
 ```
-Lower-income households are more exposed to food price rises as a share of expenditure. DOSM shows food's larger weight in B40 budgets. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
+Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
 ```
-**4/6** _(fact)_ · 263 chars
+**4/6** _(fact)_ · 120 chars
 ```
-Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves. Malaysia imports over 60% of mineral-fertiliser needs. No Vietnam-style stabilisation list or Thailand-style public-stock mechanism was found.
+Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
 ```
 **5/6** _(reframe)_ · 171 chars
 ```
 The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
 ```
-**6/6** _(view — ONLY post with the link)_ · 201 chars
+**6/6** _(view — ONLY post with the link)_ · 203 chars
 ```
-Hormuz raised the cost of input dependency. Malaysia lacks the buffers Indonesia, Vietnam and Thailand built; until that changes, shocks hit the wet market.
+Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
 
 https://thefourthangle.pages.dev/issue/1953
 ```
 
-### Issue 1952 — RON95 Quota Cut April 1: 90% 'Unaffected' Figure Has No Published Basis
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s diesel subsidy surges to rm2.5b monthly, loke says ev trucks must replace fuel‑). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
-
-**1/6** _(hook — attach image, NO link)_ · 235 chars
-```
-RON95 stays at RM1.99 for the first 200 litres. The government says 90% of users won't notice. The 90% figure was stated by MOF without a published methodology or sample period. The quota dropped from 300 to 200 litres on 1 April 2026.
-```
-**2/6** _(fact)_ · 258 chars
-```
-Above-quota RON95 sold near market rate from 1 April. The week of 16-22 April listed RM3.87 versus the subsidised RM1.99. The gap is roughly 95% on a per-litre basis. Heavy-use drivers, gig riders and rural commuters cross the 200-litre threshold most often.
-```
-**3/6** _(fact)_ · 236 chars
-```
-Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
-```
-**4/6** _(fact)_ · 260 chars
-```
-Rural and East Malaysia have thinner public-transport networks than the Klang Valley. Daily commuter alternatives are limited; coverage varies by district. The quota cut took effect five days after the Aidilfitri festive maximum price scheme ended on 28 March.
-```
-**5/6** _(reframe)_ · 143 chars
-```
-The question is not whether 90% are unaffected. It is whether a 'targeted' reform can claim that figure without publishing how it was computed.
-```
-**6/6** _(view — ONLY post with the link)_ · 223 chars
-```
-Reform without published targeting methodology, a transitional package, or an alternatives plan is reform on assertion. The arithmetic should be on the table before the price is.
-
-https://thefourthangle.pages.dev/issue/1952
-```
-
-### Issue 1951 — Seven Tankers, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
+### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
@@ -1687,19 +1835,19 @@ https://thefourthangle.pages.dev/issue/1952
 
 **1/6** _(hook — attach image, NO link)_ · 117 chars
 ```
-Iran approved all seven Malaysian-company tankers after PM Anwar called Iran's president. Transit happened in stages.
+Iran approved all seven Malaysian-company vessels after PM Anwar called Iran's president. Transit happened in stages.
 ```
 **2/6** _(fact)_ · 102 chars
 ```
 Malaysia is a CMF member on paper, but no RMN naval escort was required or deployed for these vessels.
 ```
-**3/6** _(fact)_ · 203 chars
+**3/6** _(fact)_ · 266 chars
 ```
-Brent crude hit $126/barrel. The subsidy bill jumped to RM4 billion per month. Higher crude can raise Petronas revenue and add to fuel subsidy outlay simultaneously, depending on hedging and assumptions.
+MOF's fuel-subsidy estimate rose from up to RM4 billion a month on 26 March to about RM7 billion on 15 April. Brent touched $126 on 30 April. Higher crude can raise Petronas revenue and add to fuel subsidy outlay simultaneously, depending on hedging and assumptions.
 ```
-**4/6** _(fact)_ · 103 chars
+**4/6** _(fact)_ · 227 chars
 ```
-Putrajaya was reported to stop accepting port-of-call applications from US warships during the episode.
+Putrajaya was reported to stop accepting port-of-call applications from US warships during the episode. About 20,000 seafarers were reported trapped in the Persian Gulf at one point. Industry reporting cited a 90% traffic drop.
 ```
 **5/6** _(reframe)_ · 153 chars
 ```
@@ -1746,9 +1894,9 @@ Connected elites across the political spectrum benefit from the absence of donor
 https://thefourthangle.pages.dev/issue/1944
 ```
 
-### Issue 1887 — 18.4 billion e-payment transactions in 2025, but 63% of non-urban Malaysians still use cash daily
+### Issue 1887 — 18.4 billion e-payments in 2025, yet 63% of non-urban Malaysians used cash daily in a 2021 survey
 
-> ⚡ **Reactive: topic is live in the radar** (anwar urges malaysians to consider rm50b fuel subsidy bill before listening to government ). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s diesel subsidy surges to rm2.5b monthly, loke says ev trucks must replace fuel‑). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1887-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1887`
@@ -1757,17 +1905,17 @@ https://thefourthangle.pages.dev/issue/1944
 ```
 18.4 billion e-payment transactions in 2025, about 538 per Malaysian. The headline growth is real. The framing of the divide is not.
 ```
-**2/6** _(fact)_ · 144 chars
+**2/6** _(fact)_ · 267 chars
 ```
-DuitNow QR doubled to 3 billion transactions in 2025 with nearly 3 million touchpoints. Average e-money transaction size rose to RM43 from RM33.
+DuitNow QR doubled to 3 billion transactions in 2025 with nearly 3 million touchpoints. Average e-money transaction size rose to RM43 from RM33. BNM AR 2024: DuitNow QR merchant payments worth RM31.1 billion over 2024. ReDI signed up 22,368 small traders by May 2025.
 ```
-**3/6** _(fact)_ · 153 chars
+**3/6** _(fact)_ · 164 chars
 ```
-PayNet found 36.2% of urban and 63.5% of non-urban Malaysians still use cash daily. BNM's 2025 Basic Banking policy mandates cash access stays available.
+PayNet's late-2021 survey found 36.2% of urban and 63.5% of non-urban Malaysians used cash daily. BNM's Basic Banking policy keeps cash services for basic accounts.
 ```
-**4/6** _(fact)_ · 156 chars
+**4/6** _(fact)_ · 126 chars
 ```
-RM2.8B is the 2025 scam impact across all channels, not e-wallet fraud. BNM averted RM1.2B before it left. Social engineering rises; account takeovers fall.
+RM2.8B is the 2025 scam impact across all channels, not e-wallet fraud. Banks blocked about RM1.2B of fraudulent transactions.
 ```
 **5/6** _(reframe)_ · 135 chars
 ```
@@ -1821,9 +1969,9 @@ https://thefourthangle.pages.dev/issue/1871
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
 
-**1/6** _(hook — attach image, NO link)_ · 261 chars
+**1/6** _(hook — attach image, NO link)_ · 252 chars
 ```
-1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.73 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from asset seizures and prosecutions.
+1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.71 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from other asset recoveries.
 ```
 **2/6** _(fact)_ · 208 chars
 ```
@@ -1833,9 +1981,9 @@ Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash
 ```
 Recovery flows from settlements with financial institutions and asset seizures across multiple jurisdictions. The US Department of Justice has separately recovered and returned about USD1.4 billion in 1MDB-linked assets to Malaysia.
 ```
-**4/6** _(fact)_ · 266 chars
+**4/6** _(fact)_ · 123 chars
 ```
-DOJ says more than USD4.5 billion was misappropriated. MACC's Malaysian estimate is RM42 billion in 1MDB and SRC-linked losses. Recovery comparisons depend on which baseline is used. Multiple jurisdictions have ongoing litigation that may produce further recoveries.
+DOJ says more than USD4.5 billion was misappropriated. MACC's Malaysian estimate is RM42 billion misappropriated from 1MDB.
 ```
 **5/6** _(reframe)_ · 145 chars
 ```
@@ -1850,14 +1998,14 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (budget 2027: rm2.62b aid for paddy farmers, incentives for fishermen, smallholders. kuala ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
 
-**1/6** _(hook — attach image, NO link)_ · 257 chars
+**1/6** _(hook — attach image, NO link)_ · 142 chars
 ```
-LCS contract value reached RM11.22 billion. Maharaja Lela had its first sea-going on 28 January 2026; first delivery is scheduled for December 2026. The original contract was signed July 2014 at RM9.128 billion. The programme was cut from six ships to five.
+LCS contract value reached RM11.22 billion. Maharaja Lela had its first sea-going on 28 January 2026; first delivery is now due in April 2027.
 ```
 **2/6** _(fact)_ · 148 chars
 ```
@@ -1957,25 +2105,25 @@ https://thefourthangle.pages.dev/issue/1626
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
 
-**1/7** _(hook — attach image, NO link)_ · 133 chars
+**1/7** _(hook — attach image, NO link)_ · 123 chars
 ```
-PAS controls Kelantan, Terengganu and Kedah and anchors PN's Perlis state government. The Islamic-state debate is back on the agenda.
+PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
 ```
-**2/7** _(fact)_ · 243 chars
+**2/7** _(fact)_ · 266 chars
 ```
-The Federal Constitution limits Shariah courts to matters in the State List, primarily personal and family law. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
+The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
 ```
-**3/7** _(fact)_ · 265 chars
+**3/7** _(fact)_ · 142 chars
 ```
-Federal Court rulings in recent years have repeatedly affirmed that civil law prevails where state Shariah enactments overreach the State List. Cases challenging state enactments that touch federal subjects have generally been struck down on constitutional grounds.
+The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
 ```
-**4/7** _(fact)_ · 161 chars
+**4/7** _(fact)_ · 150 chars
 ```
-Malay-Muslim attitudes on Islamic governance are not monolithic. Pew (2013) found 86% favoured sharia as official law; Merdeka polls show narrower hudud support.
+Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
 ```
-**5/7** _(reframe)_ · 180 chars
+**5/7** _(reframe)_ · 132 chars
 ```
-The debate is framed as secular-versus-Islamic. Survey data shows broader sharia-in-principle support but narrower hudud support — a middle ground that resists either binary label.
+The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
 ```
 **6/7** _(analogy)_ · 144 chars
 ```
@@ -1995,21 +2143,21 @@ https://thefourthangle.pages.dev/issue/1618
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1445-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1445`
 
-**1/7** _(hook — attach image, NO link)_ · 140 chars
+**1/7** _(hook — attach image, NO link)_ · 268 chars
 ```
-Medical tourism earned RM2.72 billion in 2024, targeting RM12 billion by 2030, while public hospitals continue to face specialist shortages.
+Medical tourism earned RM2.72 billion in 2024, targeting RM12 billion by 2030, while public hospitals continue to face specialist shortages. MHTC: 1.6 million healthcare travellers in 2024, about 1.85 million in 2025. The RM12B 2030 target is about 4× the 2024 actual.
 ```
-**2/7** _(fact)_ · 142 chars
+**2/7** _(fact)_ · 230 chars
 ```
-MHTC shortlisted several major hospitals for the Flagship Medical Tourism Hospital (FMTH) programme; MOH supports public hospitals separately.
+MHTC named Island Hospital Penang its first Flagship Medical Tourism Hospital (FMTH) on 9 December 2025. The other finalists, Institut Jantung Negara, Mahkota Medical Centre and Subang Jaya Medical Centre, received special awards.
 ```
 **3/7** _(fact)_ · 129 chars
 ```
 Scaling medical tourism 4× by 2030 raises a workforce-planning question: where the additional specialist capacity will come from.
 ```
-**4/7** _(fact)_ · 267 chars
+**4/7** _(fact)_ · 233 chars
 ```
-Some jurisdictions use cross-subsidy mechanisms. India's Charitable Hospital obligations reserve beds for low-income local patients. Malaysian private-healthcare regulations contain no comparable mandatory reserved-beds-for-locals requirement in the sources reviewed.
+Some jurisdictions use cross-subsidy rules. In India's Maharashtra state, charitable hospitals can be directed to keep 10% of beds free for indigent patients. In Malaysia, private hospitals took 95% of 2025 healthcare-travel revenue.
 ```
 **5/7** _(reframe)_ · 161 chars
 ```
@@ -2037,25 +2185,25 @@ https://thefourthangle.pages.dev/issue/1445
 ```
 Parliament passed the maternal-citizenship amendment in 2024. Pre-amendment children needed a separate Federal Court settlement to be covered. Suriani Kempe v Kerajaan Malaysia ran 2020 to 2025. The legislative fix arrived in October-December 2024.
 ```
-**2/6** _(fact)_ · 161 chars
+**2/6** _(fact)_ · 108 chars
 ```
-The Dewan Rakyat passed the Constitution (Amendment) Bill 2024 on 17 October 2024; reporting and party statements place the Dewan Negara vote on 3 December 2024.
+The Dewan Rakyat passed the Bill 206 to 1 on 17 October 2024; the Dewan Negara passed it on 3 December 2024.
 ```
 **3/6** _(fact)_ · 133 chars
 ```
 On 10 March 2025, a Federal Court bench endorsed a consent order between Family Frontiers and the government for pre-amendment cases.
 ```
-**4/6** _(fact)_ · 259 chars
+**4/6** _(fact)_ · 147 chars
 ```
-Residual gaps remain: non-retroactivity, pre-implementation births, adults over 18, and stateless local-born children outside the settlement class. Family Frontiers and other advocacy groups continue to press for further reforms beyond the headline amendment.
+Residual gaps remain: non-retroactivity, pre-implementation births, adults over 18, and stateless local-born children outside the settlement class.
 ```
 **5/6** _(reframe)_ · 160 chars
 ```
 The story is no longer 'will the government recognise mothers'. It is which residual gaps remain after the legislative and judicial fixes settled the main case.
 ```
-**6/6** _(view — ONLY post with the link)_ · 189 chars
+**6/6** _(view — ONLY post with the link)_ · 208 chars
 ```
-The amendment plus the March 2025 settlement closes the central injustice. The remaining work is on the cases the headline reform did not touch.
+Parliament voted to end the central injustice in 2024 and the 2025 settlement gave earlier children a route. At October 2026 the amendment still had no start date.
 
 https://thefourthangle.pages.dev/issue/1325
 ```
@@ -2071,17 +2219,17 @@ https://thefourthangle.pages.dev/issue/1325
 ```
 SOSMA Section 4(11) requires Parliament to extend or let lapse the 28-day pre-charge detention authority every five years.
 ```
-**2/7** _(fact)_ · 251 chars
+**2/7** _(fact)_ · 260 chars
 ```
-SOSMA Section 4(11) sets the five-year review trigger for the Section 4(5) Superintendent-or-above detention power. The 2022 renewal was a motion put to a vote. Debate-time allocation is set by the Speaker and government business managers in practice.
+SOSMA Section 4(11) sets the five-year review trigger for the Section 4(5) Superintendent-or-above detention power. The 2022 renewal was a motion put to a vote. Separately, in December 2025, a parliamentary select committee urged a review of the 28-day period.
 ```
-**3/7** _(fact)_ · 242 chars
+**3/7** _(fact)_ · 260 chars
 ```
-Suaram reports 6,892 SOSMA arrests since 2012, with 20-28% released without any charge filed. Most of that operational data emerged after 2012 and is not embedded in the formal renewal debate, though civil society has cited it in submissions.
+The Home Minister counted 6,892 SOSMA detentions from 2012 to 2025. Suaram reports 20-28% of SOSMA detainees are released without charge. The count did not exist at the 2022 renewal vote: it came in a March 2026 written reply, which Suaram cited in April 2026.
 ```
-**4/7** _(fact)_ · 119 chars
+**4/7** _(fact)_ · 133 chars
 ```
-Civil-society organisations (Bar Council, Suaram, Lawyers for Liberty) have made public submissions at renewal moments.
+Civil-society organisations (Bar Council, Suaram, Lawyers for Liberty) have publicly urged MPs to reject the renewal or repeal SOSMA.
 ```
 **5/7** _(reframe)_ · 139 chars
 ```
@@ -2091,83 +2239,159 @@ The renewal mechanism extends an investigative-detention authority. It is not de
 ```
 Like renewing a licence with a tick-box form: the paperwork advances, the underlying decision is never re-examined. Renewal procedure is not the same as substantive review.
 ```
-**7/7** _(view — ONLY post with the link)_ · 196 chars
+**7/7** _(view — ONLY post with the link)_ · 215 chars
 ```
-A law permitting 28-day pre-charge detention warrants substantive review at every renewal, anchored on Suaram's arrest and release-without-charge data.
+A law permitting 28-day pre-charge detention warrants substantive review at every renewal, anchored on official detention counts and Suaram's release-without-charge data.
 
 https://thefourthangle.pages.dev/issue/1298
 ```
 
-### Issue 1267 — Malaysia Hosts 2.5 Million Documented Migrant Workers, Persistent Tier 2 Trafficking Concerns
+### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
+
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
+
+**1/6** _(hook — attach image, NO link)_ · 164 chars
+```
+A KL High Court suit named six states and the Federal Territories over laws alleged to permit unilateral conversion of minors. On 12 Jun 2026 it failed on standing.
+```
+**2/6** _(fact)_ · 246 chars
+```
+Federal Court in Indira Gandhi 2018 ruled that 'parent' in Article 12(4) means both parents; both must consent to a minor's conversion. Para 180 gives the ruling prospective effect only. It does not reopen court decisions made before 29 Jan 2018.
+```
+**3/6** _(fact)_ · 256 chars
+```
+Article 12(4) places a minor's religion in the parent or guardian's hands until 18. Indira Gandhi reads 'parent' as both parents. Constitutional supremacy leaves inconsistent state enactments open to challenge, but the 2023 suit ended without testing them.
+```
+**4/6** _(fact)_ · 254 chars
+```
+Post-Indira unilateral-conversion disputes continue to arise. A defined aggregate count is not on public record in this audit. The 12 Jun 2026 dismissal left the disputed state provisions untested, and children caught between them and the federal ruling.
+```
+**5/6** _(reframe)_ · 133 chars
+```
+Continued provisions alleged to conflict with Indira Gandhi are the constitutional test, not a settled story of state non-compliance.
+```
+**6/6** _(view — ONLY post with the link)_ · 163 chars
+```
+Amendment closed the gap in Pahang. The court route ended on standing, so the constitutional question stays undecided.
+
+https://thefourthangle.pages.dev/issue/1294
+```
+
+### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
+
+> ⚡ **Reactive: topic is live in the radar** (kelantan assembly unanimously approves shariah law amendments. the enactment replaces 16 p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
+
+**1/7** _(hook — attach image, NO link)_ · 265 chars
+```
+POCA detention orders run 2 years and can be renewed without limit. The clause that shielded the Board from the courts has been void since April 2022. The Federal Court struck down section 15B and section 4, on police remand, for breaching the separation of powers.
+```
+**2/7** _(fact)_ · 249 chars
+```
+In April 2022 a five-member Federal Court bench chaired by the Chief Justice struck down POCA sections 4 and 15B. Section 7B: Board members are appointed by the Yang di-Pertuan Agong. The Act provides for Inquiry Officer reports and Board decisions.
+```
+**3/7** _(fact)_ · 170 chars
+```
+Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates such laws despite inconsistency with Articles 5, 9, 10 or 13.
+```
+**4/7** _(fact)_ · 173 chars
+```
+SUHAKAM and Suaram raised concern in January 2019 about children detained under POCA. The Act, as reprinted in 2018, sets no duty to report detention outcomes to Parliament.
+```
+**5/7** _(reframe)_ · 115 chars
+```
+POCA is not an Article 150 emergency ordinance. It is standing law, and since 2022 its Board answers to the courts.
+```
+**6/7** _(analogy)_ · 254 chars
+```
+Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
+```
+**7/7** _(view — ONLY post with the link)_ · 170 chars
+```
+Judges, not legislators, reopened POCA detention to court review. Two-year renewable detention without trial remains the law.
+
+https://thefourthangle.pages.dev/issue/1292
+```
+
+### Issue 1267 — Malaysia Hosts 2.13 Million Registered Migrant Workers, Three Years at Tier 2 on Trafficking
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
 
-**1/7** _(hook — attach image, NO link)_ · 268 chars
+**1/7** _(hook — attach image, NO link)_ · 270 chars
 ```
-Malaysia hosts ~2.5 million documented migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. Malaysia retained Tier 2 in the 2025 TIP Report, with the State Department citing weak prosecution in palm oil and disposable-glove manufacturing.
+Malaysia hosts 2.13 million registered migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. The 2026 TIP Report kept Malaysia at Tier 2. The 2025 report found no labour-trafficking prosecutions in palm oil or disposable-glove manufacturing.
 ```
-**2/7** _(fact)_ · 144 chars
+**2/7** _(fact)_ · 140 chars
 ```
-Employment Act 1955 amendments took effect 1 January 2023, extending core protections to all private-sector employees including foreign workers.
+Since 1 September 2022 the Employment Act 1955 has covered anyone on a contract of service in Peninsular Malaysia, foreign workers included.
 ```
-**3/7** _(fact)_ · 261 chars
+**3/7** _(fact)_ · 266 chars
 ```
-The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. The 2025 report noted fewer trafficker convictions and no labour-trafficking prosecutions in palm oil or glove manufacturing despite ongoing reports.
+The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. Convictions fell to 26 from 54 in the 2025 report, then rose to 36 in the 2026 report, which found no employment agency prosecuted for recruitment abuses.
 ```
-**4/7** _(fact)_ · 109 chars
+**4/7** _(fact)_ · 211 chars
 ```
-Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services.
+Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services. MOF end-August 2024: Bangladesh 37.8%, Indonesia 23.7% and Nepal 16.7% were the top source countries.
 ```
-**5/7** _(reframe)_ · 141 chars
+**5/7** _(reframe)_ · 138 chars
 ```
-Tier 2 is not a passing grade. Malaysia was Tier 3 in 2014; the trajectory has not reached structural compliance with TVPA minimum standards.
+Tier 2 is not a passing grade. Malaysia sat at Tier 3 in 2014 and again in 2021 and 2022, and still falls short of TVPA minimum standards.
 ```
 **6/7** _(analogy)_ · 200 chars
 ```
 Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
 ```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
+**7/7** _(view — ONLY post with the link)_ · 213 chars
 ```
-The 2023 Employment Act expansion is necessary but not sufficient. The 2025 TIP urges investigating and prosecuting credible allegations, especially in palm oil and gloves.
+Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
 
 https://thefourthangle.pages.dev/issue/1267
 ```
 
-### Issue 1247 — SUHAKAM-Linked 2022 Estimates: 500,000 to 1 Million Stateless Children in Sabah
+### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia loses us$775m a year to illicit tobacco trade as market share hits 55pc, study fi). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1247-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1247`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1241-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1241`
 
-**1/6** _(hook — attach image, NO link)_ · 118 chars
+**1/7** _(hook — attach image, NO link)_ · 146 chars
 ```
-SUHAKAM-linked 2022 reporting estimates 500,000 to 1 million stateless children in Sabah. There is no official figure.
+6,892 people detained under SOSMA from 2012 to 2025, by the Home Minister's count. Suaram says 20-28% of SOSMA detainees walk free without charge.
 ```
-**2/6** _(fact)_ · 257 chars
+**2/7** _(fact)_ · 151 chars
 ```
-Federal Constitution Article 14 grants citizenship by birth under specific conditions. Stateless children fall through gaps in jus soli and jus sanguinis. The conditions assume parental documentation many lack, perpetuating statelessness across generations.
+SOSMA Section 4 allows 28 days of pre-charge police detention since 2012. The Act replaced the ISA but retains extended investigative-detention powers.
 ```
-**3/6** _(fact)_ · 154 chars
+**3/7** _(fact)_ · 163 chars
 ```
-Malaysia is not bound by the 1961 Statelessness Convention. It is a party to the CRC with reservations affecting Article 7 (right to acquire nationality).
+SUHAKAM announced a public inquiry in 2025 into alleged human rights violations linked to a 17 January 2025 Taiping Prison incident that led to a death in custody.
 ```
-**4/6** _(fact)_ · 253 chars
+**4/7** _(fact)_ · 132 chars
 ```
-The Bajau Laut are a frequently cited affected group, described by researchers as 'genuinely stateless' across Malaysia, Indonesia and the Philippines. Many Bajau Laut have lived along Sabah's coast for generations; no state recognises them as citizens.
+Suaram's annual reports are a regularly cited civil-society source on SOSMA usage. Disaggregated official reporting remains limited.
 ```
-**5/6** _(reframe)_ · 166 chars
+**5/7** _(reframe)_ · 152 chars
 ```
-UNICEF's Sabah study found 18,781 'invisible' children missing from official databases. SUHAKAM-linked reporting estimates the latent stateless population at 500K-1M.
+SOSMA is a routine pre-charge detention regime. Suaram's reported 20-28% release-without-charge rate is the live editorial fact, not a one-time anomaly.
 ```
-**6/6** _(view — ONLY post with the link)_ · 189 chars
+**6/7** _(analogy)_ · 160 chars
 ```
-Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
+Like a 28-day holding cell where one in four to five occupants is released with no charge, and there is no fully disaggregated public log of who entered or why.
+```
+**7/7** _(view — ONLY post with the link)_ · 193 chars
+```
+Genuine SOSMA reform requires disaggregated public reporting on arrests, durations, charges and outcomes, not just renewal debates every five years.
 
-https://thefourthangle.pages.dev/issue/1247
+https://thefourthangle.pages.dev/issue/1241
 ```
 
 ### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
@@ -2185,9 +2409,9 @@ Malaysia narrowed its deficit to 4.1% in 2024 and 3.7% in 2025, beating the 3.8%
 ```
 Every 1 percentage point of deficit adds tens of billions to annual borrowing. Long-term sustainability requires revenue mobilisation (broader SST, CGT) or sustained spending discipline. Both involve political trade-offs.
 ```
-**3/7** _(fact)_ · 148 chars
+**3/7** _(fact)_ · 222 chars
 ```
-Credit rating outlooks track consistent target performance. Downgrades are associated with higher yields and risk premia across the sovereign curve.
+Credit rating outlooks track consistent target performance. Downgrades are associated with higher yields and risk premia across the sovereign curve. Fitch affirmed Malaysia at BBB+ with a stable outlook on 9 December 2025.
 ```
 **4/7** _(fact)_ · 266 chars
 ```
@@ -2201,9 +2425,9 @@ The 2025 target was met. The open question is whether the glide path holds to th
 ```
 Like a household that hit its annual savings target. The trend is right; the question is whether next year stays on it. Hitting one target does not establish a glide path. Markets price the trajectory, not the single year.
 ```
-**7/7** _(view — ONLY post with the link)_ · 196 chars
+**7/7** _(view — ONLY post with the link)_ · 183 chars
 ```
-PFFRA already provides the statutory frame. The next test is enforcement: whether the fiscal-adjustment mechanism is triggered if the glide path slips.
+PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
 
 https://thefourthangle.pages.dev/issue/1201
 ```
@@ -2215,17 +2439,17 @@ https://thefourthangle.pages.dev/issue/1201
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
 
-**1/7** _(hook — attach image, NO link)_ · 246 chars
+**1/7** _(hook — attach image, NO link)_ · 234 chars
 ```
-RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. Akaun Fleksibel launched May 2024 as a permanent flexible-withdrawal facility.
+RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
 ```
-**2/7** _(fact)_ · 133 chars
+**2/7** _(fact)_ · 269 chars
 ```
-Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished.
+Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
 ```
-**3/7** _(fact)_ · 140 chars
+**3/7** _(fact)_ · 225 chars
 ```
-Akaun Fleksibel was framed as an emergency facility, but its design allows withdrawal at any time, for any reason, with no eligibility test.
+Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
 ```
 **4/7** _(fact)_ · 154 chars
 ```
@@ -2257,17 +2481,17 @@ https://thefourthangle.pages.dev/issue/1190
 ```
 Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
 ```
-**2/6** _(fact)_ · 161 chars
+**2/6** _(fact)_ · 267 chars
 ```
-FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Smaller players have no such cushion.
+FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
 ```
 **3/6** _(fact)_ · 135 chars
 ```
-ReDI registered 22,368 traders for e-wallets by May 2025: only 1,120 in Sabah and 1,799 in Sarawak. Adoption is stuck where it matters.
+ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
 ```
-**4/6** _(fact)_ · 128 chars
+**4/6** _(fact)_ · 268 chars
 ```
-PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows.
+PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
 ```
 **5/6** _(reframe)_ · 165 chars
 ```
@@ -2295,13 +2519,13 @@ Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending
 ```
 Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
 ```
-**3/7** _(fact)_ · 236 chars
+**3/7** _(fact)_ · 112 chars
 ```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed. Voluntary i-Saraan covered ~10.7% of self-employed workers by 2022. The new mandatory scheme does not extend to retirement.
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
 ```
-**4/7** _(fact)_ · 135 chars
+**4/7** _(fact)_ · 148 chars
 ```
-DOSM Q1 2025: 17.23 million labour force, 16.70 million employed, 3.45 million informal. Gig workers fall inside the informal universe.
+DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
 ```
 **5/7** _(reframe)_ · 137 chars
 ```
@@ -2311,9 +2535,9 @@ The 'no social-security protection' framing is now narrower. The remaining gap i
 ```
 Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
 ```
-**7/7** _(view — ONLY post with the link)_ · 207 chars
+**7/7** _(view — ONLY post with the link)_ · 217 chars
 ```
-Phase 1 establishes mandatory platform-collected SOCSO deductions. The open Phase 2 question is whether retirement-savings coverage follows, and on what timeline.
+Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
 
 https://thefourthangle.pages.dev/issue/1128
 ```
@@ -2333,9 +2557,9 @@ Anwar cited ~RM15.5 billion annual savings from subsidy rationalisation in Budge
 ```
 PADU compiled about 30.4 million individual profiles by June 2025. It serves as one of the key reference databases for MoF targeted-subsidy validation.
 ```
-**3/7** _(fact)_ · 249 chars
+**3/7** _(fact)_ · 140 chars
 ```
-By Budget 2026, electricity-rationalisation savings averaged ~RM6 billion/year. Diesel rationalisation contributed substantially in 2024-25. Components have shifted as RON95 targeting begins. Read headline savings against verified component figures.
+By Budget 2026, electricity-rationalisation savings averaged ~RM6 billion/year. Diesel rationalisation contributed substantially in 2024-25.
 ```
 **4/7** _(fact)_ · 127 chars
 ```
@@ -2394,40 +2618,40 @@ Either amend the Constitution to give DOE enforcement power, or make conservatio
 https://thefourthangle.pages.dev/issue/1043
 ```
 
-### Issue 0154 — LCS Programme: RM6.08B Spent, First Ship in Sea Trials, Original Schedule 7 Years Late
+### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-0154-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 0154`
 
-**1/7** _(hook — attach image, NO link)_ · 239 chars
+**1/7** _(hook — attach image, NO link)_ · 263 chars
 ```
-RM6.08 billion spent. Zero ships delivered to the Royal Malaysian Navy. The first vessel is in sea trials. LCS programme: contract signed 2011, first delivery due 2019. Original contract RM9.13B for 6 ships, revised to RM11.2B for 5 ships.
+About RM8.3 billion spent. Zero ships delivered to the Royal Malaysian Navy. The first vessel is in sea trials. LCS programme: awarded 2011, contract signed July 2014, first delivery due 2019. Original contract RM9.13B for 6 ships, revised to RM11.2B for 5 ships.
 ```
-**2/7** _(fact)_ · 245 chars
+**2/7** _(fact)_ · 98 chars
 ```
-PAC identified RM1.4B in cost overruns and allocations used for purposes other than the LCS works. PAC also flagged 'pembayaran melebihi kerja sebenar' (payments exceeding actual work) under a progress-payment schedule weakly tied to milestones.
+PAC identified RM1.4B in cost overruns and allocations used for purposes other than the LCS works.
 ```
-**3/7** _(fact)_ · 127 chars
+**3/7** _(fact)_ · 128 chars
 ```
-MACC investigation papers were completed by August 2022. The former BNS managing director was charged with CBT involving RM21M.
+MACC sent investigation papers to the AGC in August 2022. The former BNS managing director was charged with CBT involving RM21M.
 ```
 **4/7** _(fact)_ · 260 chars
 ```
 PAC and audit findings carry serious defence and maritime-enforcement implications. Patrol relies on MMEA, RMN assets and Op Naga. AG reporting cited 89 Chinese-vessel incursions from 2016-2019. The LCS shortfall is one input into a broader capability picture.
 ```
-**5/7** _(reframe)_ · 157 chars
+**5/7** _(reframe)_ · 159 chars
 ```
-The question is no longer whether RM6B bought ships. It is whether the revised contract, new payment terms and trial timeline will close the gap they opened.
+The question is no longer whether RM8.3B bought ships. It is whether the revised contract, new payment terms and trial timeline will close the gap they opened.
 ```
 **6/7** _(analogy)_ · 252 chars
 ```
 Like paying a builder RM6B against a RM9B contract, finding partial hulls instead of a delivered fleet, and renegotiating with the same builder. Independent oversight came from PAC, the National Audit Department, MACC and auditors, not from BNS itself.
 ```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
+**7/7** _(view — ONLY post with the link)_ · 209 chars
 ```
-Accountability did happen: PAC reports, declassification, MACC charges, contract restructure. The unresolved test is delivery and whether the new terms hold.
+Oversight did happen: PAC reports, declassification, a CBT charge that ended in a DNAA, a contract restructure. The unresolved test is delivery, now due April 2027.
 
 https://thefourthangle.pages.dev/issue/0154
 ```
@@ -2469,43 +2693,6 @@ Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. T
 https://thefourthangle.pages.dev/issue/2014
 ```
 
-### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
-
-**1/7** _(hook — attach image, NO link)_ · 120 chars
-```
-A Labuan MP's appeal over the cessation of his Bersatu membership was dismissed at the Court of Appeal on 29 April 2026.
-```
-**2/7** _(fact)_ · 198 chars
-```
-Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022 (Act A1663), in force 5 October 2022. The text prevents a party from causing an MP's seat to be vacated merely by expelling that MP.
-```
-**3/7** _(fact)_ · 113 chars
-```
-Zuraida Kamaruddin's case (CoA December 2024) was decided on Contracts Act s.75 proportionality, not Article 49A.
-```
-**4/7** _(fact)_ · 106 chars
-```
-Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate Pandan and Setiawangsa before leaving PKR.
-```
-**5/7** _(reframe)_ · 153 chars
-```
-Article 49A(2)(c) names a constitutional protection. Section 18C of the Societies Act tells the courts not to reach it. Two laws, one shielded carve-out.
-```
-**6/7** _(analogy)_ · 200 chars
-```
-Like a constitutional door locked from the other side by a different law. Article 49A(2)(c) is the protection. Section 18C of the Societies Act 1966 keeps courts from disputes that could interpret it.
-```
-**7/7** _(view — ONLY post with the link)_ · 225 chars
-```
-Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
-
-https://thefourthangle.pages.dev/issue/2000
-```
-
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
 
 - **Status:** PENDING
@@ -2537,43 +2724,6 @@ Parliament repealed the ISA's detention-without-trial powers in 2012. The Akta w
 The Sultan-in-Council route is constitutional. The proposed Akta would revive a category Parliament removed in 2012.
 
 https://thefourthangle.pages.dev/issue/1999
-```
-
-### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
-
-**1/7** _(hook — attach image, NO link)_ · 265 chars
-```
-On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
-```
-**2/7** _(fact)_ · 133 chars
-```
-Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026.
-```
-**3/7** _(fact)_ · 155 chars
-```
-M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
-```
-**4/7** _(fact)_ · 151 chars
-```
-Rule 137 reviews of an apex ruling are granted in rare situations: quorum failure, bias, breach of natural justice, or integrity critically undermined.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
-```
-**6/7** _(analogy)_ · 233 chars
-```
-Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
-```
-**7/7** _(view — ONLY post with the link)_ · 222 chars
-```
-Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
-
-https://thefourthangle.pages.dev/issue/1992
 ```
 
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
@@ -2611,76 +2761,6 @@ Like a referee whose call and non-call both stand, with no replay rule on either
 1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
 
 https://thefourthangle.pages.dev/issue/1988
-```
-
-### Issue 1986 — The Malay grievance, read structurally: capture, not racial competition.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1986-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1986`
-
-**1/6** _(hook — attach image, NO link)_ · 147 chars
-```
-Bumiputera policy was built on two prongs: poverty eradication and ethnic restructuring. World Bank 2025 finds the bigger leak is now intra-ethnic.
-```
-**2/6** _(fact)_ · 131 chars
-```
-Parliament passed the Government Procurement Bill 2025 to penalise rent-seeking and subcontracting abuses across federal contracts.
-```
-**3/6** _(fact)_ · 124 chars
-```
-IDEAS counted 238 political appointments to GLC and statutory body boards under the Anwar administration up to October 2025.
-```
-**4/6** _(fact)_ · 162 chars
-```
-DOSM 2024: overall income Gini 0.390; the Chinese ethnic group has the highest internal inequality (0.412). East Malaysian Bumiputera remain the poorest subgroup.
-```
-**5/6** _(reframe)_ · 145 chars
-```
-For Malays: the biggest income gap is now within the community, not between Malays and others. The policy framework still chases the smaller gap.
-```
-**6/6** _(view — ONLY post with the link)_ · 217 chars
-```
-A B40 sub-quota inside the Bumi quota. An independent appointments commissioner. Workforce-verified procurement audits. Pro-Malay reform that doesn't dismantle Article 153.
-
-https://thefourthangle.pages.dev/issue/1986
-```
-
-### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
-
-**1/7** _(hook — attach image, NO link)_ · 241 chars
-```
-Sabah just paused a federal rollout. Federal courts paused Sabah's 40% payout 5 weeks earlier. On 13 May Sabah deferred AKPS. On 6 April the Court of Appeal stayed payment on a 40% grant the High Court ruled had gone 48 years without review.
-```
-**2/7** _(fact)_ · 231 chars
-```
-On 6 April 2026 the Court of Appeal granted Putrajaya's stay on Sabah's 40% revenue payment pending appeal. AGC said the appeal contests the High Court's finding of breach by BOTH governments since 1974, not the 40% formula itself.
-```
-**3/7** _(fact)_ · 242 chars
-```
-On 13 May 2026 Sabah deferred AKPS, citing clashes between Act 860 and the Immigration Act 1959/63. CM Hajiji called Sabah's MA63 immigration autonomy 'non-negotiable' and flagged Section 6(3) as giving the state only indirect AKPS oversight.
-```
-**4/7** _(fact)_ · 264 chars
-```
-The 40% grant is constitutional, but excludes Sabah's largest revenue: oil and gas, ring-fenced under the Petroleum Development Act 1974. Articles 112C/112D cover 'net revenue derived from Sabah.' Oil and gas sit under Petronas and a 5% royalty, not the 40% grant.
-```
-**5/7** _(fact)_ · 121 chars
-```
-Within 48 hours, Sabah's Law Society, immigration officers' union, and ex-CM Salleh Said Keruak backed the AKPS deferral.
-```
-**6/7** _(reframe)_ · 131 chars
-```
-The High Court found both governments in breach since 1974. Putrajaya pauses the remedy; Sabah pauses a new law before it operates.
-```
-**7/7** _(view — ONLY post with the link)_ · 179 chars
-```
-Two pauses, two clocks. Putrajaya extends a 48-year delay the court called unconstitutional. Sabah stops a new law before it operates.
-
-https://thefourthangle.pages.dev/issue/1981
 ```
 
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases already up 84% in 2025
@@ -2790,39 +2870,6 @@ The fix exists: open tendering, employer-pays enforcement, cooperation with Bang
 https://thefourthangle.pages.dev/issue/1973
 ```
 
-### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
-
-**1/6** _(hook — attach image, NO link)_ · 119 chars
-```
-A gazette backdated 22 years bypassed Selangor's public inquiry law. Three courts never ruled on whether it was lawful.
-```
-**2/6** _(fact)_ · 105 chars
-```
-Selangor's public inquiry law for forest excision has existed since 2011, and has never been invoked once
-```
-**3/6** _(fact)_ · 108 chars
-```
-316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments
-```
-**4/6** _(fact)_ · 120 chars
-```
-KLNFR drew 45,000 objections and was reversed before gazettement. SACF drew 718, after the gazette was already published
-```
-**5/6** _(reframe)_ · 131 chars
-```
-This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
-```
-**6/6** _(view — ONLY post with the link)_ · 180 chars
-```
-Tie standing rules to gazette publication date, enforce Section 12 replacement land, and adopt the NFA 2022 amendment across all states
-
-https://thefourthangle.pages.dev/issue/1971
-```
-
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
 
 - **Status:** PENDING
@@ -2926,39 +2973,6 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
-### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
-
-**1/6** _(hook — attach image, NO link)_ · 250 chars
-```
-Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise; Category III replacement-plan requirements include training, mentoring and documentation.
-```
-**2/6** _(fact)_ · 129 chars
-```
-Semiconductor target: 60,000 workers by 2030. Government data cites about 6,600 E&E-related bachelor's-degree graduates per year.
-```
-**3/6** _(fact)_ · 247 chars
-```
-The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
-```
-**4/6** _(fact)_ · 250 chars
-```
-Singapore's EP minimum qualifying salary is SGD5,600 (~RM18,500) for most sectors, SGD6,200 (~RM20,500) for financial services. Malaysia's RM20K sits above the non-finance Singapore floor. Comparative competitiveness depends on the full cost package.
-```
-**5/6** _(reframe)_ · 160 chars
-```
-The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
-```
-**6/6** _(view — ONLY post with the link)_ · 217 chars
-```
-Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
-
-https://thefourthangle.pages.dev/issue/1956
-```
-
 ### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
 
 - **Status:** PENDING
@@ -2969,17 +2983,17 @@ https://thefourthangle.pages.dev/issue/1956
 ```
 WFH for federal public servants was fine-tuned on 26 March, the day fuel quotas were also cut. The stated trigger is fuel conservation amid the Hormuz crisis. A PSD circular was issued by 2 April; implementation started 15 April.
 ```
-**2/6** _(fact)_ · 158 chars
+**2/6** _(fact)_ · 248 chars
 ```
-Frontline workers are excluded by design: nurses, teachers, police. Eligibility runs to federal public servants in specified locations within an 8 km commute.
+The circular excluded frontline workers by design: nurses, teachers, police. It covered officers in specified locations with a one-way commute of more than 8 km. The specified locations were Kuala Lumpur, Putrajaya, Selangor and the state capitals.
 ```
-**3/6** _(fact)_ · 155 chars
+**3/6** _(fact)_ · 151 chars
 ```
-Budget 2026 estimates federal emoluments at RM109.4B and retirement charges at RM42.8B. The public-service headcount is large by international comparisons.
+Budget 2026 estimates federal emoluments at RM109.4B and retirement charges at RM42.8B. Malaysia had over 1.3 million civil servants in September 2025.
 ```
-**4/6** _(fact)_ · 159 chars
+**4/6** _(fact)_ · 174 chars
 ```
-The UK runs hybrid with attendance targets. Singapore mandates flexible-work request rights. Malaysia's 2 April PSD circular sets KPIs and SPOT-Me geolocation.
+The UK runs hybrid with attendance targets. Singapore's guidelines set a process for flexible-work requests. Malaysia's 2 April PSD circular set KPIs and SPOT-Me geolocation.
 ```
 **5/6** _(reframe)_ · 178 chars
 ```
@@ -2992,6 +3006,39 @@ Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular 
 https://thefourthangle.pages.dev/issue/1954
 ```
 
+### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
+
+**1/6** _(hook — attach image, NO link)_ · 264 chars
+```
+From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
+```
+**2/6** _(fact)_ · 247 chars
+```
+Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
+```
+**3/6** _(fact)_ · 236 chars
+```
+Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
+```
+**4/6** _(fact)_ · 251 chars
+```
+E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
+```
+**5/6** _(reframe)_ · 135 chars
+```
+The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
+```
+**6/6** _(view — ONLY post with the link)_ · 210 chars
+```
+A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
+
+https://thefourthangle.pages.dev/issue/1952
+```
+
 ### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
 
 - **Status:** PENDING
@@ -3002,13 +3049,13 @@ https://thefourthangle.pages.dev/issue/1954
 ```
 Bumiputera property discounts range from 5% to 15% depending on state. The mechanism is industry-funded, not Treasury-funded.
 ```
-**2/7** _(fact)_ · 137 chars
+**2/7** _(fact)_ · 146 chars
 ```
-A June 2020 REHDA survey cited in a CIDB-hosted report listed 6,121 Bumiputera quota units unsold; 46% had been on the books over a year.
+A June 2020 REHDA survey cited in a CIDB-hosted report listed 6,121 Bumiputera quota units unsold; 46% had been on the market more than 36 months.
 ```
-**3/7** _(fact)_ · 158 chars
+**3/7** _(fact)_ · 267 chars
 ```
-Broad open-market Bumiputera discounts are described in industry reports as not means-tested. Affordable-housing schemes may apply income criteria separately.
+Industry reports describe open-market Bumiputera discounts as not means-tested: buyers of homes priced RM1 million and above still get 5% to 15%. The mix of discount, quota and release rules varies by property type and state, making national generalisation difficult.
 ```
 **4/7** _(fact)_ · 257 chars
 ```
@@ -3029,76 +3076,6 @@ If the discount is a national priority, the fairer debate is whether to fund it 
 https://thefourthangle.pages.dev/issue/1625
 ```
 
-### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
-
-**1/6** _(hook — attach image, NO link)_ · 156 chars
-```
-Six states and the Federal Territories are named defendants in a constitutional challenge over enactments alleged to permit unilateral conversion of minors.
-```
-**2/6** _(fact)_ · 248 chars
-```
-Federal Court in Indira Gandhi 2018 ruled that 'parent' in Article 12(4) means both parents; both must consent to a minor's conversion. The plaintiffs challenge state enactments alleged to permit single-parent conversion notwithstanding the ruling.
-```
-**3/6** _(fact)_ · 260 chars
-```
-Article 12(4) places a minor's religion in the parent or guardian's hands until 18. Indira Gandhi reads 'parent' as both parents. Constitutional supremacy means inconsistent state enactments are open to challenge; the 2023-originating case is the live vehicle.
-```
-**4/6** _(fact)_ · 247 chars
-```
-Post-Indira unilateral-conversion disputes continue to arise. A defined aggregate count is not on public record in this audit. Children remain caught between disputed state provisions and the binding federal ruling until the challenge is resolved.
-```
-**5/6** _(reframe)_ · 133 chars
-```
-Continued provisions alleged to conflict with Indira Gandhi are the constitutional test, not a settled story of state non-compliance.
-```
-**6/6** _(view — ONLY post with the link)_ · 160 chars
-```
-The legal route is the Federal Court challenge; the political route is state amendment. Neither has closed the gap.
-
-https://thefourthangle.pages.dev/issue/1294
-```
-
-### Issue 1292 — POCA Allows 2-Year Renewable Detention; Section 15B Bars Merits Review by Court
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
-
-**1/7** _(hook — attach image, NO link)_ · 154 chars
-```
-POCA detention orders run 2 years and renew indefinitely. Section 15B insulates the appointed Board's discretionary decisions from court review on merits.
-```
-**2/7** _(fact)_ · 147 chars
-```
-Section 15B bars review of Board discretion. Courts retain jurisdiction over procedural-compliance grounds; the merits are substantially insulated.
-```
-**3/7** _(fact)_ · 224 chars
-```
-Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates laws designed to stop or prevent specified threats notwithstanding inconsistency with Articles 5, 9, 10, 13 and 79.
-```
-**4/7** _(fact)_ · 109 chars
-```
-SUHAKAM and Bar Council have recorded complaints from detainees in lower-income and marginalised communities.
-```
-**5/7** _(reframe)_ · 134 chars
-```
-POCA is not an Article 150 emergency ordinance. It is an operationally active preventive-detention regime sitting outside a courtroom.
-```
-**6/7** _(analogy)_ · 254 chars
-```
-Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
-```
-**7/7** _(view — ONLY post with the link)_ · 204 chars
-```
-SUHAKAM and the Bar Council have urged restoring judicial review of Board decisions and publishing disaggregated outcome data. Both proposals remain unenacted.
-
-https://thefourthangle.pages.dev/issue/1292
-```
-
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
 
 - **Status:** PENDING
@@ -3113,13 +3090,13 @@ Article 15A is a discretionary citizenship route used by stateless children. JPN
 ```
 Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
 ```
-**3/6** _(fact)_ · 160 chars
+**3/6** _(fact)_ · 157 chars
 ```
-The 2024 Constitution (Amendment) Bill addressed the maternal-citizenship gap for overseas-born children. It did not address the broader Article 15A discretion.
+The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
 ```
-**4/6** _(fact)_ · 233 chars
+**4/6** _(fact)_ · 261 chars
 ```
-SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. At least one Article 15A case documented by SUHAKAM ran 11 years before resolution.
+SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
 ```
 **5/6** _(reframe)_ · 158 chars
 ```
@@ -3132,41 +3109,37 @@ After the 2024 maternal-citizenship amendment, transparency on Article 15A discr
 https://thefourthangle.pages.dev/issue/1265
 ```
 
-### Issue 1241 — Suaram: 6,892 SOSMA Arrests Since 2012; Reported 20–28% Released Without Charge
+### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1241-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1241`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1247-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1247`
 
-**1/7** _(hook — attach image, NO link)_ · 252 chars
+**1/6** _(hook — attach image, NO link)_ · 118 chars
 ```
-Suaram: 6,892 SOSMA arrests since 2012; reported 20-28% released without any charge filed. Of arrests under the Security Offences (Special Measures) Act 2012 since enactment, between a fifth and just over a quarter were reported to result in no charge.
+A 2022 report on SUHAKAM's Sabah visit put Sabah's stateless people at 500,000 to 1 million. No official count exists.
 ```
-**2/7** _(fact)_ · 151 chars
+**2/6** _(fact)_ · 257 chars
 ```
-SOSMA Section 4 allows 28 days of pre-charge police detention since 2012. The Act replaced the ISA but retains extended investigative-detention powers.
+Federal Constitution Article 14 grants citizenship by birth under specific conditions. Stateless children fall through gaps in jus soli and jus sanguinis. The conditions assume parental documentation many lack, perpetuating statelessness across generations.
 ```
-**3/7** _(fact)_ · 163 chars
+**3/6** _(fact)_ · 154 chars
 ```
-SUHAKAM announced a public inquiry in 2025 into alleged human rights violations linked to a 17 January 2025 Taiping Prison incident that led to a death in custody.
+Malaysia is not bound by the 1961 Statelessness Convention. It is a party to the CRC with reservations affecting Article 7 (right to acquire nationality).
 ```
-**4/7** _(fact)_ · 132 chars
+**4/6** _(fact)_ · 156 chars
 ```
-Suaram's annual reports are a regularly cited civil-society source on SOSMA usage. Disaggregated official reporting remains limited.
+Two peer-reviewed studies describe Sabah's Bajau Laut as stateless. In February 2026 the UN Committee on the Rights of the Child singled out their children.
 ```
-**5/7** _(reframe)_ · 152 chars
+**5/6** _(reframe)_ · 146 chars
 ```
-SOSMA is a routine pre-charge detention regime. Suaram's reported 20-28% release-without-charge rate is the live editorial fact, not a one-time anomaly.
+The missing number is the story: UNICEF found 18,781 'invisible' children, and a 2022 report puts stateless people of all ages at up to 1 million.
 ```
-**6/7** _(analogy)_ · 160 chars
+**6/6** _(view — ONLY post with the link)_ · 189 chars
 ```
-Like a 28-day holding cell where one in four to five occupants is released with no charge, and there is no fully disaggregated public log of who entered or why.
-```
-**7/7** _(view — ONLY post with the link)_ · 193 chars
-```
-Genuine SOSMA reform requires disaggregated public reporting on arrests, durations, charges and outcomes, not just renewal debates every five years.
+Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
 
-https://thefourthangle.pages.dev/issue/1241
+https://thefourthangle.pages.dev/issue/1247
 ```
 
 ### Issue 1229 — Kampung Baru Master Redevelopment Remains Unrealised; PKB Has Delivered Smaller Projects
@@ -3179,13 +3152,13 @@ https://thefourthangle.pages.dev/issue/1241
 ```
 Forty years of proposals, no master redevelopment delivered. PKB lists completed smaller projects; the comprehensive plan has not begun.
 ```
-**2/7** _(fact)_ · 129 chars
+**2/7** _(fact)_ · 265 chars
 ```
-Kampung Baru sits beside the KLCC core. The land has Malay Agricultural Settlement status with Malay-only ownership restrictions.
+Kampung Baru sits beside the KLCC core. Its land holds Malay Agricultural Settlement status, gazetted in 1900. In October 2025 the minister called overlapping ownership 'one of the biggest hurdles' for such land. A 2016 study adds small lots and inheritance claims.
 ```
-**3/7** _(fact)_ · 267 chars
+**3/7** _(fact)_ · 136 chars
 ```
-PKB's 2010 census recorded 18,372 residents. Many trace household ties to the 1899 founding of the settlement. Heritage value is officially recognised. PKB plans envisage phased redevelopment with Malay ownership safeguards and heritage protections built into design.
+About 18,000 people lived in Kampung Baru in 2010, a 2016 study found. Many trace household ties to the 1899 founding of the settlement.
 ```
 **4/7** _(fact)_ · 139 chars
 ```
