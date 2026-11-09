@@ -102,7 +102,13 @@ for (const path of ['/about', '/disclaimer', '/progress']) {
 test('/disclaimer points its Privacy and Data section to the full notice', async ({ page }) => {
   await page.goto('/disclaimer');
   const section = page.locator('[data-disclaimer-privacy]');
-  await expect(section.locator('a[href="/privacy"]')).toBeVisible();
+  // The summary claims no more than the notice: it points to it instead.
+  await expect(section).toContainText(
+    'No user accounts, no advertising or third-party analytics. What we store, where, and for how long is set out in our Privacy Notice.',
+  );
+  await expect(section).not.toContainText('no personally identifiable information');
+  await expect(section.getByRole('link', { name: 'Privacy Notice', exact: true })).toHaveAttribute('href', '/privacy');
+  await expect(section.getByRole('link', { name: 'privacy notice', exact: true })).toHaveAttribute('href', '/privacy');
 });
 
 test('sitemap lists the four policy pages', async ({ request, baseURL }) => {
