@@ -420,6 +420,7 @@ lens diversity.
    <https://www.sc.com.my/regulation/guidelines/digital-assets>
 7. Capital Markets and Services (Prescription of Securities) (Digital
    Currency and Digital Token) Order 2019, P.U.(A) 12/2019.
+   <https://www.sc.com.my/api/documentms/download.ashx?id=8c8bc467-c750-466e-9a86-98c12fec4a77>
 8. White House, "Fact Sheet: President Donald J. Trump Signs GENIUS
    Act into Law," 18 July 2025.
    <https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/>
@@ -514,9 +515,9 @@ lens diversity.
     Regulatory Model."
     <https://www.panewslab.com/en/articles/lc23yr39f56e>
 36. The Sumsuber, "Crypto Regulations in Malaysia — 2025 Guide."
-38. Bank Negara Malaysia, "Navigating the Future of Digital Assets (Box 8, Annual Report 2024)", Mar 2025, https://www.bnm.gov.my/documents/20124/17493532/ar2024_en_box8.pdf [PRIMARY]
-39. Securities Commission Malaysia, "Digital Assets: List of Tradeable Digital Assets on Regulated Exchanges in Malaysia and the Shariah Status", null, https://www.sc.com.my/digital-assets [PRIMARY]
     <https://sumsub.com/blog/crypto-regulations-in-malaysia-guide/>
+38. Bank Negara Malaysia, "Navigating the Future of Digital Assets (Box 8, Annual Report 2024)", Mar 2025, https://www.bnm.gov.my/documents/20124/17493532/ar2024_en_box8.pdf [PRIMARY]
+39. Securities Commission Malaysia, "Digital Assets: List of Tradeable Digital Assets on Regulated Exchanges in Malaysia and the Shariah Status", https://www.sc.com.my/digital-assets [PRIMARY]
 37. Disruption Banking, "Why Singapore's Crypto Regulation Is
     Outshining MiCA in 2025."
     <https://www.disruptionbanking.com/2025/12/29/why-singapores-crypto-regulation-is-outshining-mica-in-2025/>

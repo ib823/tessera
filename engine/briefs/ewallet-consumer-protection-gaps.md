@@ -98,7 +98,7 @@ Despite 28 million Malaysians using e-wallets and RM48+ billion flowing through 
 
 1. Home Ministry data on RM2.77 billion fraud losses in 2025 (Malay Mail, Jan 2026)
 2. TNG eWallet account suspensions and frozen funds (The Rakyat Post, Dec 2025)
-3. Malaysian woman allegedly banned from banks over RM10.44 refund (The Rakyat Post, Jun 2025)
+3. Malaysian woman allegedly banned from banks over RM10.44 refund (The Rakyat Post, Jun 2025) https://www.therakyatpost.com/news/malaysia/2025/06/25/watch-malaysian-woman-allegedly-banned-from-banks-over-rm10-44-refund/
 4. BNM revised e-money policy document (effective Jan 2025) [PRIMARY]
 5. PDPA 2025 amendments — phases 1-3 (Chambers and Partners, 2026)
 6. PIDM non-coverage of e-wallet balances (FintechNews.my, 2025)
@@ -116,7 +116,7 @@ Despite 28 million Malaysians using e-wallets and RM48+ billion flowing through 
 18. Cashless digital divide elderly adoption barriers (SAGE journals, 2025)
 19. Recovery rate — RM6.7 million returned vs RM2.77 billion lost (NSRC data)
 20. Touch 'n Go eWallet first to implement all 5 BNM safety measures (TNG official)
-21. Perbadanan Insurans Deposit Malaysia (PIDM), "Deposit Insurance System (FAQs)", null, https://www.pidm.gov.my/general/faqs/deposit-insurance-system [PRIMARY]
+21. Perbadanan Insurans Deposit Malaysia (PIDM), "Deposit Insurance System (FAQs)", https://www.pidm.gov.my/general/faqs/deposit-insurance-system [PRIMARY]
 22. Bank Negara Malaysia, "Payment Statistics: T1 Transactions Per Capita (Basic Payments Indicator)", Apr 2026, https://www.bnm.gov.my/documents/20124/20848086/T1+-+Transactions+Per+Capita.pdf [PRIMARY]
 23. Bank Negara Malaysia, "Payment Statistics: T2 Payment Instruments", Nov 2026, https://www.bnm.gov.my/documents/20124/20848086/T2+-+Payment+Instruments.pdf [PRIMARY]
 24. Perbadanan Insurans Deposit Malaysia (PIDM), "FAQs: About PIDM (Does PIDM protect e-money?)", , https://www.pidm.gov.my/general/faqs/about-pidm [PRIMARY]

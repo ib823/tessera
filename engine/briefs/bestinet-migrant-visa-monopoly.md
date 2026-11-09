@@ -127,18 +127,18 @@ January 2024 – April 2026
 ## SOURCES
 
 1. Bloomberg, "Malaysia's Migrant Recruitment Is Lucrative Business, But Not For Workers," Jan 23, 2026 https://www.bloomberg.com/features/2026-bangladesh-malaysia-migrants/
-2. MalaysiaNow, "Damning Bloomberg report implicates Putrajaya," Jan 26, 2026
+2. MalaysiaNow, "Damning Bloomberg report implicates Putrajaya," Jan 26, 2026 https://www.malaysianow.com/news/2026/01/26/damning-bloomberg-report-implicates-putrajaya-in-giving-second-life-to-bangladeshi-owned-firm-accused-of-human-trafficking
 3. MalaysiaNow, "Court rejects Bestinet's bid to silence Bloomberg, Rafizi, Latheefa," Feb 23, 2026 https://www.malaysianow.com/news/2026/02/23/court-rejects-bestinets-bid-to-silence-bloomberg-rafizi-latheefa-and-three-local-media-outlets
-4. The Edge Malaysia, "Rampant corruption traps Malaysia's poorest migrant workers," Jan 2026
-5. The Edge Malaysia, "Bestinet's contract extension could cost govt at least RM3.2b — PAC," Nov 2024
-6. The Edge Malaysia, "Govt paid Bestinet RM381 mil for foreign worker permit management," Feb 2026
-7. The Edge Malaysia, "How a Bestinet executive made his way to NexG," Mar 2026
+4. The Edge Malaysia, "Rampant corruption traps Malaysia's poorest migrant workers," Jan 2026 https://theedgemalaysia.com/node/790425
+5. The Edge Malaysia, "Bestinet's contract extension could cost govt at least RM3.2b — PAC," Nov 2024 https://theedgemalaysia.com/node/734829
+6. The Edge Malaysia, "Govt paid Bestinet RM381 mil for foreign worker permit management," Feb 2026 https://theedgemalaysia.com/node/792493
+7. The Edge Malaysia, "How a Bestinet executive made his way to NexG," Mar 2026 https://theedgemalaysia.com/node/796477
 8. The Vibes, "Foreign worker management system operating 6 years without a contract," 3 Jul 2024 https://www.thevibes.com/index.php/articles/news/102625/6-year-old-foreign-worker-management-system-operating-without-a-contract
 9. OHCHR, "UN experts sound alarm over continued systematic exploitation," Nov 21, 2025 https://www.ohchr.org/en/press-releases/2025/11/malaysia-un-experts-sound-alarm-over-continued-systematic-exploitation [PRIMARY]
-10. Human Rights Watch, "Rampant Labor Abuses Against Bangladeshi Migrant Workers," Nov 26, 2025
+10. Human Rights Watch, "Rampant Labor Abuses Against Bangladeshi Migrant Workers," Nov 26, 2025 https://hrw.org/news/2025/11/26/rampant-labor-abuses-against-bangladeshi-migrant-workers-in-malaysia
 11. Bloomberg, "Malaysia Asks Bangladesh to Withdraw Migrant Labor Probes," May 15, 2025 https://www.bloomberg.com/news/articles/2025-05-15/malaysia-asks-bangladesh-to-withdraw-migrant-labor-probes
 12. Bloomberg, "Bangladesh Asks Malaysia to Arrest Two Men in Trafficking Case," Nov 5, 2024 https://www.bloomberg.com/news/articles/2024-11-05/bangladesh-asks-malaysia-to-arrest-two-men-in-money-laundering-trafficking-case
-13. The Daily Star, "Syndicate siphons over $1b out of Bangladesh," May 31, 2024
+13. The Daily Star, "Syndicate siphons over $1b out of Bangladesh," May 31, 2024 https://www.thedailystar.net/nrb/migration/news/recruitment-malaysia-syndicate-siphons-over-1b-out-bangladesh-3623231
 14. The Daily Star, "Bangladesh-Malaysia labour route rife with corruption," 2026 https://www.thedailystar.net/news/bangladesh-malaysia-labour-route-rife-corruption-4088821
 15. FMT, "33 migrant workers sue recruitment firm, govt over alleged job scam," May 17, 2025 https://fmtv5.freemalaysiatoday.com/category/nation/2025/05/17/33-migrant-workers-sue-recruitment-firm-govt-over-alleged-job-scam
 16. FMT, "Bloomberg Malaysia applies to strike out Bestinet libel suit," Apr 2, 2026 https://www.freemalaysiatoday.com/category/nation/2026/04/02/bloomberg-malaysia-applies-to-strike-out-bestinet-libel-suit
@@ -147,8 +147,8 @@ January 2024 – April 2026
 19. Malay Mail, "Dhaka seeks Putrajaya's aid to arrest, extradite Bestinet founder," Nov 6, 2024 https://www.malaymail.com/news/malaysia/2024/11/06/dhaka-seeks-putrajayas-aid-to-arrest-extradite-bestinet-founder-and-associate-for-investigation-into-trafficking-and-extortion-of-bangladeshi-workers/155962
 20. C4 Center/Aliran, "Bestinet controversy: C4 Center demands accountability," Jul 2024 https://m.aliran.com/civil-society-voices/bestinet-controversy-c4-center-demands-accountability-for-recruitment-fiasco
 21. Andy Hall documentation, 2024-2026
-22. FreedomUnited, "Debt, delay, and death: the price Bangladeshi migrants pay," 2024
+22. FreedomUnited, "Debt, delay, and death: the price Bangladeshi migrants pay," 2024 https://www.freedomunited.org/news/bangladeshi-workers-migration-malaysia/
 23. US State Department, "2025 Trafficking in Persons Report: Malaysia" https://www.state.gov/reports/2025-trafficking-in-persons-report/malaysia/ [PRIMARY]
 24. US State Department, "2024 Trafficking in Persons Report: Malaysia" https://2021-2025.state.gov/reports/2024-trafficking-in-persons-report/malaysia/ [PRIMARY]
-25. FinanceTwitter, "From Zahid To Saifuddin: Corruption In Migrant Worker System," Jan 2026
+25. FinanceTwitter, "From Zahid To Saifuddin: Corruption In Migrant Worker System," Jan 2026 https://www.financetwitter.com/2026/01/from-zahid-to-saifuddin-corruption-in-migrant-worker-system.html
 26. Bestinet.com.my, "MACC's Bestinet probe is NFA," Sep 23, 2024 https://www.bestinet.com.my/?p=4755

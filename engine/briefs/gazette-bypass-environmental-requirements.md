@@ -59,7 +59,7 @@ Legal, Governance, Environmental
 8. Malaysian Bar, "Selangor Must Respect Due Process in Forest Reserve Excision" https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-release-selangor-government-must-respect-due-process-in-forest-reserve-excision
 9. RimbaWatch/Borneo Project, "State of the Malaysian Rainforest 2024" https://borneoproject.org/state-of-the-malaysian-rainforest-2024-report/
 10. Eco-Business, "Rare earth mining in Perak forest" (Kenering) https://www.eco-business.com/news/rare-earth-mining-in-malaysias-perak-forest-raises-environmental-and-health-concerns/
-11. DOE Malaysia, Environmental Quality (Amendment) Act 2024 [PRIMARY]
+11. DOE Malaysia, Environmental Quality (Amendment) Act 2024 [PRIMARY] https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2147523_BI/Act%20A1712.pdf
 12. Macaranga, "Empower the Dewan to Safeguard Forest Reserves" https://www.macaranga.org/empower-the-dewan-to-safeguard-forest-reserves/
 13. Attorney General's Chambers, "Federal Constitution (Reprint, as at 15 October 2020)", 15 Oct 2020, https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf [PRIMARY]
 14. Commissioner of Law Revision, Malaysia, "National Forestry Act 1984 (Act 313), Reprint incorporating all amendments up to 1 January 2006", 1 Jan 2006, https://lpr.adb.org/sites/default/files/resource/%5Bnid%5D/national-forestry-act-313-1-.pdf [PRIMARY]

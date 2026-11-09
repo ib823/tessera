@@ -551,17 +551,17 @@ Reid Commission rationale for combining the offices) or
     discretion context.
     <https://en.wikipedia.org/wiki/Anwar_Ibrahim_sodomy_trials>
 34. Tommy Thomas, *My Story: Justice in the Wilderness* (Gerakbudaya,
-39. MalaysiaNow, "Idrus Harun to continue as AG for another six months", 3 Mar 2023, https://www.malaysianow.com/news/2023/03/03/idrus-harun-to-continue-as-ag-for-another-six-months [S]
-40. Malay Mail, "AGC's Mohd Dusuki Mokhtar appointed as Malaysia's new attorney general, effective tomorrow", 11 Nov 2024, https://www.malaymail.com/news/malaysia/2024/11/11/agcs-mohd-dusuki-mokhtar-appointed-as-malaysias-new-attorney-general-effective-tomorrow/156497 [S]
     January 2021).
     <https://www.gerakbudaya.com/product/my-story-justice-in-the-wilderness-tommy-thomas>
+39. MalaysiaNow, "Idrus Harun to continue as AG for another six months", 3 Mar 2023, https://www.malaysianow.com/news/2023/03/03/idrus-harun-to-continue-as-ag-for-another-six-months [S]
+40. Malay Mail, "AGC's Mohd Dusuki Mokhtar appointed as Malaysia's new attorney general, effective tomorrow", 11 Nov 2024, https://www.malaymail.com/news/malaysia/2024/11/11/agcs-mohd-dusuki-mokhtar-appointed-as-malaysias-new-attorney-general-effective-tomorrow/156497 [S]
 35. The Borneo Post, "Bill to separate roles of AG, Public
     Prosecutor to be finalised before May 18, says minister,"
     5 May 2026.
     <https://www.theborneopost.com/2026/05/05/bill-to-separate-roles-of-ag-public-prosecutor-to-be-finalised-before-may-18-says-minister/>
 
 **Comparator analysis**
-36. Wikipedia, "Crown Prosecution Service" — UK history and
+36. Wikipedia, "Crown Prosecution Service" — UK history and (LOGGED FOR EXCLUSION: encyclopedia, not a source)
     structure.
     <https://en.wikipedia.org/wiki/Crown_Prosecution_Service>
 37. Wikipedia, "Director of Public Prosecutions (Australia)." (LOGGED FOR EXCLUSION: encyclopedia, not a source)

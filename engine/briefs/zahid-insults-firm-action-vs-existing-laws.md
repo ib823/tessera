@@ -178,9 +178,9 @@ Coverage spans the spectrum. The "firmer action needed" narrative is dominant in
 29. South China Morning Post, "Malaysian student charged with desecrating Koran in viral video", 2026, https://www.scmp.com/week-asia/lifestyle-culture/article/3345255/malaysian-student-charged-desecrating-koran-viral-video
 
 **Tier F — Statutory text (primary)**
-30. Sedition Act 1948 (revised) — Federal Gazette / Attorney General's Chambers consolidated text.
-31. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text.
-32. Penal Code (Act 574), ss.295, 298, 298A — Federal Gazette / AGC consolidated text.
+30. Sedition Act 1948 (revised) — Federal Gazette / Attorney General's Chambers consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%2015.pdf
+31. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%20588.pdf
+32. Penal Code (Act 574), ss.295, 298, 298A — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf
 33. Federal Constitution, Articles 3, 8, 10, 152, 153, 181. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Federal%20Constitution%20(Reprint%202020).pdf
 34. Attorney General's Chambers, "Communications and Multimedia (Amendment) Act 2025 (Act A1743)", 7 Feb 2025, https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/2669326_BI/A1743%20BI-%20COMMUNICATIONS%20AND%20MULTIMEDIA%20%28AMENDMENT%29%20ACT%202025.pdf [PRIMARY]
 35. Free Malaysia Today, "Sedition Act cases up 84% in 2025, says CIJ", 10 Dec 2025, https://www.freemalaysiatoday.com/category/nation/2025/12/10/sedition-act-cases-up-84-in-2025-says-cij [S]

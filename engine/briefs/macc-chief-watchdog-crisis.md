@@ -58,18 +58,18 @@ Governance, Legal, Political
 
 ## SOURCES
 1. Bloomberg, "Who's Watching Malaysia's Anti-Corruption Watchdog?" Feb 11, 2026
-2. Bloomberg, "Malaysia Cabinet Orders Investigation Into MACC Chief Azam Baki" Feb 13, 2026
+2. Bloomberg, "Malaysia Cabinet Orders Investigation Into MACC Chief Azam Baki" Feb 13, 2026 https://www.bloomberg.com/news/articles/2026-02-13/malaysia-s-cabinet-orders-probe-into-anti-graft-chief-azam-baki
 3. Bloomberg, "Malaysia Civil Groups Say Royal Commission Should Probe MACC" Feb 20, 2026 https://www.bloomberg.com/news/articles/2026-02-20/malaysia-civil-groups-say-royal-commission-should-probe-macc
-4. Bloomberg, "Malaysia Minister Calls for Royal Commission Into Graft Watchdog" Feb 24, 2026
+4. Bloomberg, "Malaysia Minister Calls for Royal Commission Into Graft Watchdog" Feb 24, 2026 https://www.bloomberg.com/news/articles/2026-02-24/malaysia-minister-calls-for-royal-commission-into-graft-watchdog
 5. Bloomberg, "Malaysia to Decide on Royal Inquiry Into MACC After Chief's Probe Concludes" Feb 27, 2026 https://www.bloomberg.com/news/articles/2026-02-27/malaysia-to-decide-on-macc-inquiry-after-probe-on-chief-is-done
 6. CPJ, "Malaysian anti-corruption chief sues Bloomberg in $25 million defamation suit" Feb 2026 https://cpj.org/2026/02/malaysian-anti-corruption-chief-sues-bloomberg-in-25-million-defamation-suit/
 7. Malay Mail, "Anwar: Findings from special probe panel expected this week" Mar 3, 2026 https://www.malaymail.com/news/malaysia/2026/03/03/anwar-findings-from-special-probe-panel-on-macc-chief-azam-bakis-shareholdings-expected-this-week/211105
-8. The Star, "About time for a royal inquiry" Mar 11, 2026
+8. The Star, "About time for a royal inquiry" Mar 11, 2026 https://www.thestar.com.my/news/nation/2026/03/11/about-time-for-a-royal-inquiry
 9. Malay Mail, "Fahmi: Investigation into MACC chief still ongoing" Apr 1, 2026 https://www.malaymail.com/news/malaysia/2026/04/01/fahmi-says-investigation-into-macc-chief-azam-bakis-shareholdings-still-ongoing/214681
 10. SCMP, "Who watches Malaysia's watchdog?" Feb 2026 https://www.scmp.com/week-asia/politics/article/3343734/who-watches-malaysias-watchdog-controversy-over-anti-corruption-chief-strains-reform-agenda
 11. SCMP, "Malaysia considers high-powered commission to probe anti-corruption agency" Mar 2026 https://www.scmp.com/week-asia/politics/article/3344908/malaysia-considers-high-powered-commission-probe-anti-corruption-agency-allegations
-12. KL Selangor Chinese Assembly Hall, "Tun Tengku Maimun must lead Independent Probe" Feb 2026
-13. Transparency International Malaysia — CPI 2025 report
+12. KL Selangor Chinese Assembly Hall, "Tun Tengku Maimun must lead Independent Probe" Feb 2026 https://klscah.org.my/en/2026/02/43587.html
+13. Transparency International Malaysia — CPI 2025 report https://www.transparency.org.my/pages/news-and-events/press-releases/press-release-corruption-perceptions-index-2025
 14. Published issue 1208 — Corruption costs Malaysia RM47B annually
 15. Published issue 1120 — Governance score dropped 8 points
 16. Commissioner of Law Revision, Malaysia, "Malaysian Anti-Corruption Commission Act 2009 (Act 694), Laws of Malaysia Reprint, as at 1 January 2022", 2022, https://anticor.world/assets/brics/Akta_694_(1.1.2022)_B1.pdf [PRIMARY]

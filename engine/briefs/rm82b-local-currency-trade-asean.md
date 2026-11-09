@@ -75,7 +75,7 @@ Economic, Political, Governance
 1. Malay Mail, "Anwar: Malaysia's local currency trade surges to RM82b" Mar 24, 2026 https://www.malaymail.com/news/malaysia/2026/03/24/anwar-malaysias-local-currency-trade-with-china-thailand-and-indonesia-surges-to-rm82b-cutting-reliance-on-us-dollar/213702
 2. FMT, "RM82.1bil in trade settled in local currencies" Mar 24, 2026 https://www.freemalaysiatoday.com/category/nation/2026/03/24/rm82-1bil-in-trade-settled-in-local-currencies-with-key-partners-says-finance-ministry
 3. The Star, "Local currency trade surges to RM82.1bil" Mar 24, 2026 https://www.thestar.com.my/news/nation/2026/03/24/local-currency-trade-with-china-thailand-and-indonesia-surges-to-rm821bil-says-anwar
-4. FMT, "Highs and lows of switch to RMB" Feb 10, 2026
+4. FMT, "Highs and lows of switch to RMB" Feb 10, 2026 https://www.freemalaysiatoday.com/category/nation/2026/02/10/highs-and-lows-of-switch-to-rmb-in-international-trade
 5. Malay Mail, "Malaysia, India to promote ringgit-rupee use" Feb 8, 2026 https://www.malaymail.com/news/malaysia/2026/02/08/anwar-malaysia-india-to-promote-wider-ringgitrupee-use-in-bilateral-trade-investment/208462
 6. BNM, "Renewal of BNM-PBOC Bilateral Currency Swap" 23 Nov 2021 https://www.bnm.gov.my/-/bilateral-currency-swap-pbc [PRIMARY]
 7. BNM, "Local Currency Settlement Framework information" https://www.bnm.gov.my/-/information-on-local-currency-settlement-framework [PRIMARY]

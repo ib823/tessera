@@ -110,27 +110,27 @@ Not "secret cells the media missed" (false — coverage was heavy, and no source
 ## SOURCES (to be expanded to 15–25 with full URLs/dates before publication)
 
 1. BenarNews, "Malaysia tightens security after arresting Israeli with guns," Mar 29 2024 — https://www.benarnews.org/english/news/malaysian/suspect-arrested-03292024150631.html
-2. SCMP, "Malaysia a target for Israeli spies over Gaza stance, Anwar warns," Jul 22 2025 — article 3319134
-3. Scoop, "Malaysia stepping up counter-intelligence efforts... IGP," Jul 23 2025
-4. Malay Mail, "IGP says foreign spies might be in Malaysia, but intelligence reports show no locals are agents," Nov 17 2023
-5. The Star, "Israeli a suspected Mossad spy," Apr 1 2024
-6. Times of Israel, "Israeli alleged mobster arrested in Malaysia with illegal firearms, suspected of spying," Mar 2024
+2. SCMP, "Malaysia a target for Israeli spies over Gaza stance, Anwar warns," Jul 22 2025 — article 3319134 https://www.scmp.com/week-asia/politics/article/3319134/malaysia-target-israeli-spies-over-gaza-stance-anwar-warns
+3. Scoop, "Malaysia stepping up counter-intelligence efforts... IGP," Jul 23 2025 https://www.scoop.my/news/265279/malaysia-stepping-up-counter-intelligence-efforts-as-palestine-stance-draws-foreign-spy-threats-igp/
+4. Malay Mail, "IGP says foreign spies might be in Malaysia, but intelligence reports show no locals are agents," Nov 17 2023 https://www.malaymail.com/news/malaysia/2023/11/17/igp-says-foreign-spies-might-be-in-malaysia-but-intelligence-reports-shows-no-locals-are-agents/102535
+5. The Star, "Israeli a suspected Mossad spy," Apr 1 2024 https://www.thestar.com.my/news/nation/2024/04/01/israeli-a-suspected-mossad-spy
+6. Times of Israel, "Israeli alleged mobster arrested in Malaysia with illegal firearms, suspected of spying," Mar 2024 https://www.timesofisrael.com/israeli-alleged-mobster-arrested-in-malaysia-with-illegal-firearms-suspected-of-spying/
 7. Daily Express, "Foreign spies including Mossad's might be in Malaysia, says IGP"
-8. Asia News Network, "Israeli nabbed in Malaysia suspected to be a Mossad spy"
-9. The Star, "On alert against Mossad," Jul 23 2025
-10. Malay Mail, "Anwar says Malaysia won't bow to US pressure on Gaza stance," Jul 22 2025
-11. Al Jazeera, "Kuala Lumpur police: killing of al-Batsh an international issue," Apr 22 2018
-12. Al Jazeera, "Malaysia releases sketches of suspects in Fadi al-Batsh killing," Apr 23 2018
-13. NST, "Lecturer's assassins used fake Serbia, Montenegro passports," May 2018; corroborated Haaretz, May 2018
-14. BenarNews, "Man kidnapped" (2022 abduction charge detail), Oct 19 2022
-15. The Star, "Over 20 witnesses to testify against 13 individuals in Palestinian kidnapping case," May 7 2025
+8. Asia News Network, "Israeli nabbed in Malaysia suspected to be a Mossad spy" https://asianews.network/israeli-nabbed-in-malaysia-suspected-to-be-a-mossad-spy/
+9. The Star, "On alert against Mossad," Jul 23 2025 https://www.thestar.com.my/news/nation/2025/07/23/on-alert-against-mossad
+10. Malay Mail, "Anwar says Malaysia won't bow to US pressure on Gaza stance," Jul 22 2025 https://www.malaymail.com/news/malaysia/2025/07/22/anwar-says-malaysia-wont-bow-to-us-pressure-on-gaza-stance-amid-ongoing-tariff-talks/184753
+11. Al Jazeera, "Kuala Lumpur police: killing of al-Batsh an international issue," Apr 22 2018 https://www.aljazeera.com/news/2018/4/22/kuala-lumpur-police-killing-of-al-batsh-an-international-issue
+12. Al Jazeera, "Malaysia releases sketches of suspects in Fadi al-Batsh killing," Apr 23 2018 https://www.aljazeera.com/news/2018/04/malaysia-releases-sketches-suspects-fadi-al-batsh-killing-180423062433026.html
+13. NST, "Lecturer's assassins used fake Serbia, Montenegro passports," May 2018; corroborated Haaretz, May 2018 https://www.nst.com.my/news/crime-courts/2018/05/365708/lecturers-assassins-used-fake-serbia-montenegro-passports
+14. BenarNews, "Man kidnapped" (2022 abduction charge detail), Oct 19 2022 https://www.benarnews.org/english/news/malaysian/man-kidnapped-10192022140248.html
+15. The Star, "Over 20 witnesses to testify against 13 individuals in Palestinian kidnapping case," May 7 2025 https://www.thestar.com.my/news/nation/2025/05/07/over-20-witnesses-to-testify-against-13-individuals-in-palestinian-kidnapping-case
 16. FMT, Abdul Azim Yasin sentencing (10 years + 6 strokes), Jun 5 2025; Syarifah Faraha trial, Aug 6 / Oct 13 2025
 17. Ynetnews, Avitan sentencing (7 years), Feb 2025
 18. The Vibes / Bernama, Saifuddin "very high capability" + 3 espionage arrests, Aug 21 2025
 19. Malay Mail / The Star, MACC "counter-setting" arrests (~50 officers), Aug–Nov 2024
 20. Wikipedia (compiling Dubai Police / Reuters / Guardian / BBC), "Assassination of Mahmoud al-Mabhouh" — 2010 passport signature comparator
-21. Citizen Lab, "Running in Circles" (Circles SS7 in Malaysia, operator unidentified), Dec 2020
-22. Citizen Lab, "Hide and Seek" Pegasus 45-country map (Malaysia ABSENT) — basis for the Pegasus negative finding
+21. Citizen Lab, "Running in Circles" (Circles SS7 in Malaysia, operator unidentified), Dec 2020 https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/
+22. Citizen Lab, "Hide and Seek" Pegasus 45-country map (Malaysia ABSENT) — basis for the Pegasus negative finding https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/
 23. UN Panel of Experts (2017) + Reuters, North Korea Glocom front companies registered in KL — front-company context
 24. Malay Mail / Bernama, China drone-mapping OSA case near Mindef, Aug 2025
 25. Malay Mail / SCMP, Malaysian student arrested in Norway for spying, Sep 2023

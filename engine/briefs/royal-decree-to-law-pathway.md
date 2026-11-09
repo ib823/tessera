@@ -256,15 +256,15 @@ Religious lens deliberately *not* used as a card lens — keeps the editorial fr
 30. Constitute Project, "Malaysia 1957 (rev. 2007) Constitution", https://www.constituteproject.org/constitution/Malaysia_2007
 31. Wikipedia, "Laws of the Constitution of Selangor 1959" — overview of Article 50 and the Selangor State Constitution structure.
 32. Wikipedia, "Constitution of Malaysia" — general primary-text reference.
-33. Sedition Act 1948 — Federal Gazette / AGC consolidated text.
-34. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text.
+33. Sedition Act 1948 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%2015.pdf
+34. Communications and Multimedia Act 1998, s.233 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/LOM/EN/Act%20588.pdf
 35. Penal Code (Act 574), ss.298, 298A, 504 — Federal Gazette / AGC consolidated text. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1823715_BI/Act%20574%20Project%202%20Final.pdf [PRIMARY]
 36. Child Act 2001, s.97 — Federal Gazette / AGC consolidated text. [PRIMARY]
 37. Internal Security Act 1960 (now repealed) and ISA Repeal Act 2012 — for the historical comparator. [PRIMARY]
 
 **Tier G — Lèse-majesté comparator landscape**
 38. LawShun, "Global Lèse Majesté Laws: Nations Protecting Royal Dignity And Authority", https://lawshun.com/article/which-countries-have-lese-majeste-laws
-39. Wikipedia, "Lèse-majesté", https://en.wikipedia.org/wiki/L%C3%A8se-majest%C3%A9
+39. Wikipedia, "Lèse-majesté", https://en.wikipedia.org/wiki/L%C3%A8se-majest%C3%A9 (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 40. ARTICLE 19, "Blog: How lèse-majesté laws are eroding free speech in Southeast Asia", https://www.article19.org/resources/lese-majeste-laws-eroding-free-speech-southeast-asia/
 41. Foreign Policy Association, "Thailand's Lèse Majesté Law", https://fpa.org/thailands-lese-majeste-law/
 45. Free Malaysia Today, "280 reports lodged over insult to Selangor sultan", 4 May 2026, https://www.freemalaysiatoday.com/category/nation/2026/05/04/280-reports-lodged-over-insult-to-selangor-sultan

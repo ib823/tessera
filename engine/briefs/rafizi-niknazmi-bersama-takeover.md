@@ -95,7 +95,7 @@ Avoid using all three of Political/Legal/Governance on the fact cards if Governa
 
 **Primary (constitutional / court / regulator):**
 1. Federal Constitution of Malaysia, Articles 49A, 51, 54(1), 55(3). https://www.commonlii.org/my/legis/const/1957/4.html
-2. Constitution (Amendment) (No. 3) Act 2022 — Federal Gazette (in force 5 Oct 2022).
+2. Constitution (Amendment) (No. 3) Act 2022 — Federal Gazette (in force 5 Oct 2022). https://e-perundangan.pkns.gov.my/img/AKTA%20PERLEMBAGAAN%20(PINDAAN)%20(NO.%203)%202022.pdf
 3. *PKR v Zuraida Kamaruddin*, High Court ruling 23 June 2023; Court of Appeal ruling 11 Dec 2024 (See Mee Chun JCA presiding). Reported via The Edge Malaysia and Sinar Daily — quoted with citation.
 4. Election Commission GE15 results (19 Nov 2022) for Pandan (P099) and Setiawangsa (P116). https://electiondata.my/elections [S]
 5. Registrar of Societies (RoS) — registration record for Parti Bersama Malaysia, 2 Dec 2016, Penang. (Confirmed in NST 17 May 2026 reporting and Wikipedia *Malaysian United Party*.)

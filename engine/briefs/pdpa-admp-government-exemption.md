@@ -214,13 +214,13 @@ PRIMARY (official document / regulator / statute / court / named authority citin
 - [S0] Digital Policy Alert — Malaysia events `/change/13812` (ADMP), `/change/13810` (DPIA), `/change/19244` (Data Protection by Design). digitalpolicyalert.org
 - [S1] PDPA 2010 (Act 709), Section 3 — pdp.gov.my "Non-application of Act"; full text mirror mohre.um.edu.my. **PRIMARY (statute).**
 - [S2] PDPA (Amendment) Act 2024 (Act A1727) — pdp.gov.my official PDF. **PRIMARY (statute).**
-- [S3] JPDP DPIA Public Consultation Paper No. 1/2025 + adopted DPIA Guideline (30 Apr 2026) — pdp.gov.my PDF. **PRIMARY (regulator).**
-- [S4] JPDP ADMP Public Consultation Paper No. 3/2025 + adopted ADMP Guideline (30 Apr 2026) — pdp.gov.my. **PRIMARY (regulator).**
-- [S5] JPDP Data Protection by Design Guideline (30 Apr 2026) — pdp.gov.my. **PRIMARY (regulator).**
+- [S3] JPDP DPIA Public Consultation Paper No. 1/2025 + adopted DPIA Guideline (30 Apr 2026) — pdp.gov.my PDF. **PRIMARY (regulator).** https://www.pdp.gov.my/en/akta/data-protection-impact-assessment-guideline-dpia/
+- [S4] JPDP ADMP Public Consultation Paper No. 3/2025 + adopted ADMP Guideline (30 Apr 2026) — pdp.gov.my. **PRIMARY (regulator).** https://www.pdp.gov.my/en/akta/automated-decision-making-and-profiling-guideline-admp/
+- [S5] JPDP Data Protection by Design Guideline (30 Apr 2026) — pdp.gov.my. **PRIMARY (regulator).** https://www.pdp.gov.my/wp-content/uploads/2026/04/Data-Protection-By-Design-Guideline-DpbD.pdf
 - [S7] 2022 breach — Malay Mail / SoyaCincau (18 May 2022) quoting Home Minister Hamzah Zainudin's denial; 22.5m figure. **Named authority citing primary (ministerial statement).**
 - [S8] Gobind Singh Deo on PADU not bound by Act 709 — Malay Mail, 17 Jul 2024. **Named authority quoting minister.** [S]
 - [S11] Malaysian Bar — "Rebuilding the Public Trust Deficit With Regard to Personal Data Collection" press statement. malaysianbar.org.my. **PRIMARY (professional body).** [S]
-- [S13] GDPR Article 22 official consolidated text — gdpr-info.eu / gdpr-text.com. **PRIMARY (statute).**
+- [S13] GDPR Article 22 official consolidated text — gdpr-info.eu / gdpr-text.com. **PRIMARY (statute).** https://gdpr-info.eu/art-22-gdpr/
 - [S14] PMO — "PADU ensures government services will be enjoyed by deserving recipients" — pmo.gov.my. **PRIMARY (government).**
 
 SECONDARY / INTERPRETIVE:
@@ -232,7 +232,7 @@ SECONDARY / INTERPRETIVE:
 
 ADDED post-draft (external deep-research report, each primary-verified before use):
 - [S15] SAYS — "PADU Has Data On 30.7 Million Malaysians" (citing Economy Ministry). Named outlet citing primary.
-- [S16] JPDP ADMP Guideline PDF — pdp.gov.my/.../Automated-Decision-Making-And-Profiling-Guideline-ADMP.pdf (Right to Refuse; child-marketing bar). PRIMARY (regulator).
+- [S16] JPDP ADMP Guideline PDF — pdp.gov.my/.../Automated-Decision-Making-And-Profiling-Guideline-ADMP.pdf (Right to Refuse; child-marketing bar). PRIMARY (regulator). https://www.pdp.gov.my/wp-content/uploads/2026/04/Automated-Decision-Making-And-Profiling-Guideline-ADMP.pdf
 - [S17] Cyber Security Act 2024 (Act 854) — nacsa.gov.my/act854.php; in force 26 Aug 2024; NCII incl. Government. PRIMARY (statute).
 - [S18] Data Sharing Act 2025 (Act 864) — jdn.gov.my Act-864.pdf; in force 28 Apr 2025; binds Federal Government; s.18 RM1m / 5y officer penalty. PRIMARY (statute).
 - [S19] The Star, 20 Apr 2026 — "Padu shifts gear, now backend powerhouse for 26 govt agencies, says Akmal Nasrullah."
@@ -242,7 +242,7 @@ ADDED — spectrum broadening (Stage 3 follow-up; each primary-verified):
 - [S21] **Academic / expert.** Prof. Abu Bakar Munir (Faculty of Law, Universiti Malaya), adviser on the original PDPA drafting: argued the government exclusion should be removed (state holds the largest data bank; accountability and investor confidence); notes Malaysia and Singapore are the only states with such a clause, and that Indonesia and Saudi Arabia omitted it on his advice. Per FMT/Daily Express 7 Oct 2023. Peer-reviewed: Ali Alibeigi & Abu Bakar Munir, "Malaysian Personal Data Protection Act, a Mysterious Application," Bologna Law Review / SSRN 3792672. **Academic + named expert.** [PRIMARY]
 - [S22] **Civil society / rights group.** ARTICLE 19 with nine human-rights NGOs — memorandum submitted to Minister Azalina Othman Said (Law and Institutional Reform), 23 Jan 2024, proposing PDPA reforms (alongside OSA and Penal Code s.203A) in the RTI-reform context; read by the deep-research report as proposing to narrow/remove the s.3(1) public-sector exemption. article19.org. **Primary submission (rights group).**
 - [S23] **Parliamentary record.** PDPA (Amendment) Bill 2024: Cabinet approval announced 4 Jul 2024; first reading 10 Jul 2024; passed Dewan Rakyat 16 Jul 2024; passed Dewan Negara 31 Jul 2024 (Hansard). **PRIMARY (parliamentary).**
-- [S24] **Primary regulator consultation.** JPDP Public Consultation Paper, "Review of Personal Data Protection Act 2010" — expressly considered extending Act 709 to the Federal and State Governments, and noted statutory bodies are not automatically exempt. pdp.gov.my (Public-Consultation-Paper-on-Review-of-Act-709). **PRIMARY (regulator).** Replaces the FMT-second-hand "Cabinet rejected" framing.
+- [S24] **Primary regulator consultation.** JPDP Public Consultation Paper, "Review of Personal Data Protection Act 2010" — expressly considered extending Act 709 to the Federal and State Governments, and noted statutory bodies are not automatically exempt. pdp.gov.my (Public-Consultation-Paper-on-Review-of-Act-709). **PRIMARY (regulator).** Replaces the FMT-second-hand "Cabinet rejected" framing. https://www.pdp.gov.my/wp-content/uploads/2024/12/Public-Consultation-Paper-on-Review-of-Act-709_V4.pdf
 - [S25] **Official PADU material**, 20 Apr 2026 — padu.gov.my/mediagambar/20-04-2026-hala-tuju-padu.pdf: 30.7 million socio-economic profiles; 26 agencies approved (Jan-Mar 2026) for decision-making/analytics. **PRIMARY (government).** Anchors PADU scale without circular reliance on prior T4A issue 1102.
 
 ## THE T4A ANGLE (for Stage 1)
