@@ -8,11 +8,18 @@ import {
   formatIssueDate,
   issueDateTime,
   issueDay,
+  publishedDay,
   updatedSinceRead,
   wasUpdated,
 } from '../issue-meta';
 
 describe('issue dates', () => {
+  it('dates an issue by first publication, falling back to sourceDate', () => {
+    expect(publishedDay({ publishedAt: '2026-03-29T22:30:00Z', sourceDate: '2026-11-09' })).toBe('2026-03-30');
+    expect(publishedDay({ sourceDate: '2026-04-08' })).toBe('2026-04-08');
+    expect(publishedDay({})).toBe('');
+  });
+
   it('reads a date-time as its Malaysia calendar day', () => {
     // 22:30 UTC on 7 April is 06:30 on 8 April in Kuala Lumpur.
     expect(issueDay('2026-04-07T22:30:00Z')).toBe('2026-04-08');

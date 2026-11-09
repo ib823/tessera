@@ -20,6 +20,16 @@ export function issueDay(value: string | null | undefined): string | null {
   return new Date(t + MYT_OFFSET_MS).toISOString().slice(0, 10);
 }
 
+/**
+ * The Malaysia calendar day an issue was first published, for feed dates,
+ * "New" sections and newest-first ordering. Issues without `publishedAt` fall
+ * back to `sourceDate`. A correction re-dates `sourceDate` and `modifiedAt`,
+ * never this, so a corrected old issue does not resurface as new.
+ */
+export function publishedDay(issue: { publishedAt?: string | null; sourceDate?: string | null }): string {
+  return issueDay(issue.publishedAt) ?? issueDay(issue.sourceDate) ?? '';
+}
+
 /** "8 Apr 2026". Fixed English month names, not Intl, so output never varies by locale or ICU. */
 export function formatIssueDate(value: string | null | undefined): string {
   const day = issueDay(value);
