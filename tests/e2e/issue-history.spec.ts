@@ -132,6 +132,10 @@ test.describe('Issue publication history', () => {
     });
     await page.goto('/');
     await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+    await expect(page.locator('[data-section]').first()).toBeAttached();
+    // 768-1023 px: the sidebar is a drawer behind the header's Browse toggle.
+    const browse = page.locator('[data-browse-toggle]');
+    if (await browse.isVisible()) await browse.click();
 
     // Completed issues sit in the collapsed "Completed" section.
     const completed = page.locator('[data-section="completed"] button');
