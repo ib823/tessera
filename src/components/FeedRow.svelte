@@ -1,5 +1,6 @@
 <script lang="ts">
   import { opinionLabel } from '../data/issue-types';
+  import { absoluteDate, relativeDate } from '../lib/relative-date';
 
   import type { IssueSummary } from '../lib/issues-loader';
   import type { ReadState } from '../stores/reader';
@@ -40,6 +41,7 @@
   // Visual weight: bold unread → medium reading → light done
   let headlineWeight = $derived(isCompleted ? '600' : (isStarted ? '600' : '700'));
   let headlineColor = $derived(isCompleted ? 'var(--text-tertiary)' : 'var(--text-primary)');
+  let dateLabel = $derived(relativeDate(issue.sourceDate));
   let progressLabel = $derived(isStarted && progress > 0 ? `Resume from insight ${Math.min(progress + 1, totalAngles)} of ${totalAngles}` : (savedLabel || (isCompleted ? 'Done' : '')));
 </script>
 
@@ -73,6 +75,9 @@
       {/if}
       {#if issue.legacyAudit}
         <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size:var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;letter-spacing:0.02em;">Pre-pipeline</span>
+      {/if}
+      {#if dateLabel}
+        <time datetime={issue.sourceDate} title={absoluteDate(issue.sourceDate)} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);">{dateLabel}</time>
       {/if}
     </div>
     <span class="balance-title" style="font-size:var(--text-body);font-weight:{headlineWeight};color:{isActive ? 'var(--text-primary)' : headlineColor};line-height:1.28;display:block;margin-top:2px;">{#if searchTerms}{@html highlightText(issue.headline, searchTerms)}{:else}{issue.headline}{/if}</span>

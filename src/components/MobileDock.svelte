@@ -6,12 +6,20 @@
     libraryCount?: number;
     onGoToday?: () => void;
     onOpenLibrary?: () => void;
-    syncLinked?: boolean;
-    onSyncTap?: () => void;
-    showInstall?: boolean;
+    /**
+     * The one relationship prompt App's interruption budget allows (R-1), or
+     * null. The dock never decides on its own whether to ask.
+     */
+    prompt?: 'sync' | 'install' | null;
     installIsIOS?: boolean;
+    onSyncTap?: () => void;
+    onSyncDismiss?: () => void;
     onInstallTap?: () => void;
     onInstallDismiss?: () => void;
+    /** Fixed to the viewport while the document scrolls (Today). */
+    floating?: boolean;
+    /** Rendered height, so the page can keep its last line clear of the dock. */
+    height?: number;
   }
 
   let {
@@ -19,117 +27,88 @@
     libraryCount = 0,
     onGoToday,
     onOpenLibrary,
-    syncLinked = false,
-    onSyncTap,
-    showInstall = false,
+    prompt = null,
     installIsIOS = false,
+    onSyncTap,
+    onSyncDismiss,
     onInstallTap,
     onInstallDismiss,
+    floating = false,
+    height = $bindable(0),
   }: Props = $props();
 
-  // Sync prompt: permanent dismissal, never when linked or standalone
-  const SYNC_DISMISS_KEY = 'tfa:v1:sync-prompt-dismissed';
-
-  let syncDismissed = $state(false);
-  let isStandalone = $state(false);
-
-  // Animation states
-  let syncVisible = $state(false);
-  let installVisible = $state(false);
-  let syncLeaving = $state(false);
-  let installLeaving = $state(false);
+  let visible = $state(false);
+  let leaving = $state(false);
+  let iosHint = $state(false);
 
   onMount(() => {
-    isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-    syncDismissed = localStorage.getItem(SYNC_DISMISS_KEY) === '1';
-
-    // Stagger entrance animations
     requestAnimationFrame(() => {
-      syncVisible = true;
-      installVisible = true;
+      visible = true;
     });
   });
 
-  let showSyncCard = $derived(!syncLinked && !syncDismissed && !isStandalone);
-  let showInstallCard = $derived(showInstall && !isStandalone);
-
-  function dismissSync() {
-    syncLeaving = true;
+  function dismiss() {
+    leaving = true;
     setTimeout(() => {
-      syncDismissed = true;
-      localStorage.setItem(SYNC_DISMISS_KEY, '1');
-      syncLeaving = false;
-    }, 200);
-  }
-
-  function dismissInstallCard() {
-    installLeaving = true;
-    setTimeout(() => {
-      onInstallDismiss?.();
-      installLeaving = false;
+      if (prompt === 'install') onInstallDismiss?.();
+      else onSyncDismiss?.();
+      leaving = false;
     }, 200);
   }
 
   function handleInstallTap() {
+    // iOS has no install prompt: say where the browser keeps the option.
     if (installIsIOS) {
-      // iOS: open a guide sheet — delegate to parent
-      onInstallTap?.();
-    } else {
-      onInstallTap?.();
+      iosHint = !iosHint;
+      return;
     }
+    onInstallTap?.();
   }
 </script>
 
-<div class="dock-container">
-  {#if showSyncCard || showInstallCard}
+<div class="dock-container" class:dock-container--floating={floating} bind:offsetHeight={height}>
+  {#if prompt}
     <div class="dock-prompts">
       <!-- The action and the dismiss control are sibling buttons: a role=button
            wrapper around a real <button> is a nested interactive control, and
            its aria-label hid the visible text from speech-input users. -->
-      {#if showInstallCard}
-        <div
-          class="dock-prompt-card"
-          class:dock-prompt-card--visible={installVisible && !installLeaving}
-          class:dock-prompt-card--leaving={installLeaving}
-        >
-          <button type="button" class="dock-prompt-action" onclick={handleInstallTap}>
+      <div
+        class="dock-prompt-card"
+        class:dock-prompt-card--visible={visible && !leaving}
+        class:dock-prompt-card--leaving={leaving}
+        data-prompt={prompt}
+      >
+        {#if prompt === 'install'}
+          <button type="button" class="dock-prompt-action" onclick={handleInstallTap} aria-expanded={installIsIOS ? iosHint : undefined}>
             <svg class="dock-prompt-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            <span class="dock-prompt-text">{installIsIOS ? 'Add to your home screen' : 'Install for quick access'}</span>
+            <span class="dock-prompt-copy">
+              <span class="dock-prompt-text">{installIsIOS ? 'Add to your home screen' : 'Install for quick access'}</span>
+              {#if installIsIOS && iosHint}
+                <span class="dock-prompt-sub">In Safari, tap Share, then Add to Home Screen.</span>
+              {/if}
+            </span>
           </button>
-          <button
-            type="button"
-            class="dock-prompt-dismiss"
-            onclick={dismissInstallCard}
-            aria-label="Dismiss install prompt"
-          >&times;</button>
-        </div>
-      {/if}
-      {#if showSyncCard}
-        <div
-          class="dock-prompt-card"
-          class:dock-prompt-card--visible={syncVisible && !syncLeaving}
-          class:dock-prompt-card--leaving={syncLeaving}
-        >
+          <button type="button" class="dock-prompt-dismiss" onclick={dismiss} aria-label="Dismiss install prompt">&times;</button>
+        {:else}
           <button type="button" class="dock-prompt-action" onclick={() => onSyncTap?.()}>
             <svg class="dock-prompt-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
               <line x1="8" y1="21" x2="16" y2="21"/>
               <line x1="12" y1="17" x2="12" y2="21"/>
             </svg>
-            <span class="dock-prompt-text">Sync your reading across devices</span>
+            <span class="dock-prompt-copy">
+              <span class="dock-prompt-text">Keep your reading progress</span>
+              <!-- R-4: say where progress lives and how it is lost. -->
+              <span class="dock-prompt-sub">It lives only in this browser. Clearing site data erases it. Sync it to another device to keep a copy.</span>
+            </span>
           </button>
-          <button
-            type="button"
-            class="dock-prompt-dismiss"
-            onclick={dismissSync}
-            aria-label="Dismiss sync prompt"
-          >&times;</button>
-        </div>
-      {/if}
+          <button type="button" class="dock-prompt-dismiss" onclick={dismiss} aria-label="Dismiss sync prompt">&times;</button>
+        {/if}
+      </div>
     </div>
   {/if}
 
@@ -147,6 +126,12 @@
       </div>
       <span>Library</span>
     </button>
+    <!-- H-3: the same destinations as the desktop sidebar. Graphics leaves
+         the app for /infographics, so it is a link. -->
+    <a class="dock-item" href="/infographics">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"></path><rect x="5" y="11" width="3.6" height="7" rx="1"></rect><rect x="10.2" y="6" width="3.6" height="12" rx="1"></rect><rect x="15.4" y="14" width="3.6" height="4" rx="1"></rect></svg>
+      <span>Graphics</span>
+    </a>
   </nav>
 </div>
 
@@ -159,7 +144,23 @@
     margin-top: auto;
   }
 
-  /* ── Prompt cards area ── */
+  /* Today scrolls the document, so the dock pins to the viewport. */
+  .dock-container--floating {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+  }
+
+  /* No bottom nav on wide screens: the sidebar carries navigation there. */
+  @media (min-width: 1024px) {
+    .dock-container {
+      display: none;
+    }
+  }
+
+  /* ── Prompt card area ── */
   .dock-prompts {
     display: flex;
     flex-direction: column;
@@ -183,7 +184,7 @@
     align-items: center;
     gap: 10px;
     width: 100%;
-    padding: 12px 14px;
+    padding: 10px 4px 10px 14px;
     background: none;
     border: none;
     border-top: 1px solid rgba(17, 24, 39, 0.06);
@@ -199,7 +200,7 @@
   .dock-prompt-action {
     flex: 1;
     min-width: 0;
-    min-height: 32px;
+    min-height: 44px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -210,11 +211,6 @@
     font: inherit;
     text-align: start;
     cursor: pointer;
-  }
-
-  .dock-prompt-card:first-child {
-    border-top-left-radius: var(--radius-lg);
-    border-top-right-radius: var(--radius-lg);
   }
 
   .dock-prompt-card--visible {
@@ -233,24 +229,38 @@
     flex-shrink: 0;
   }
 
-  .dock-prompt-text {
+  .dock-prompt-copy {
     flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .dock-prompt-text {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+  }
+
+  .dock-prompt-sub {
     font-size: var(--text-sm);
     font-weight: 600;
     color: var(--text-secondary);
-    line-height: 1.3;
+    line-height: 1.35;
   }
 
   .dock-prompt-dismiss {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 0;
     color: var(--text-muted);
     font-size: var(--text-body);
     line-height: 1;
-    min-width: 32px;
-    min-height: 32px;
+    min-width: 44px;
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,10 +276,10 @@
   /* ── Dock navigation ── */
   .mobile-dock {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
-    min-height: calc(78px + env(safe-area-inset-bottom, 0px));
-    padding: 10px 14px max(14px, calc(10px + env(safe-area-inset-bottom, 0px)));
+    min-height: calc(72px + env(safe-area-inset-bottom, 0px));
+    padding: 8px 14px max(10px, calc(8px + env(safe-area-inset-bottom, 0px)));
     border-top: 1px solid rgba(17, 24, 39, 0.08);
     background:
       linear-gradient(180deg, rgba(248, 249, 250, 0.72) 0%, rgba(255, 255, 255, 0.96) 100%);
@@ -288,15 +298,16 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    min-height: 58px;
+    min-height: 54px;
     border: none;
     border-radius: var(--radius-lg);
     background: transparent;
-    color: var(--text-faint);
+    color: var(--text-muted);
     cursor: pointer;
     font: inherit;
     font-size: var(--text-xs);
     font-weight: 700;
+    text-decoration: none;
     transition: background 0.2s ease-out, color 0.2s ease-out, transform 0.2s ease-out;
   }
 
@@ -314,7 +325,7 @@
   .dock-badge {
     position: absolute;
     top: -6px;
-    right: -10px;
+    right: -12px;
     min-width: 16px;
     height: 16px;
     padding: 0 4px;
@@ -331,15 +342,13 @@
   /* Landscape: compact dock to reclaim vertical space */
   @media (orientation: landscape) and (max-height: 500px) {
     .mobile-dock {
-      min-height: calc(54px + env(safe-area-inset-bottom, 0px));
-      padding: 6px 14px max(8px, calc(6px + env(safe-area-inset-bottom, 0px)));
+      min-height: calc(52px + env(safe-area-inset-bottom, 0px));
+      padding: 4px 14px max(6px, calc(4px + env(safe-area-inset-bottom, 0px)));
     }
     .dock-item {
-      min-height: 42px;
-      gap: 2px;
-    }
-    .dock-item span {
-      font-size: 0.5625rem;
+      min-height: 44px;
+      flex-direction: row;
+      gap: 6px;
     }
     .dock-prompts { display: none; }
   }

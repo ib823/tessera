@@ -2,6 +2,7 @@
   import { CARD_TYPES } from '../data/issue-types';
   import { loadFullIssue } from '../lib/issues-loader';
   import SaveButton from './SaveButton.svelte';
+  import { absoluteDate, relativeDate } from '../lib/relative-date';
 
   import type { Issue } from '../data/issue-types';
   import type { IssueSummary } from '../lib/issues-loader';
@@ -75,6 +76,9 @@
       <article class="highlight-group">
         <div class="issue-row">
           <div class="issue-copy">
+            {#if relativeDate(group.issue.sourceDate)}
+              <time datetime={group.issue.sourceDate} title={absoluteDate(group.issue.sourceDate)} data-relative-date style="display:block;margin-bottom:4px;font-size:var(--text-sm);font-weight:600;color:var(--text-muted);">{relativeDate(group.issue.sourceDate)}</time>
+            {/if}
             <p class="issue-title balance-title">{group.issue.headline}</p>
             <p class="issue-context">{group.issue.context}</p>
           </div>
