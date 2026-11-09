@@ -237,14 +237,16 @@
     const subEl = cardContentEl.querySelector('.sub-text') as HTMLElement;
     if (!bigEl) return;
 
-    // Reset to base sizes
+    // Reset to base sizes. Body text starts at 18px (playbook §04's reading
+    // floor); a long card shrinks below it only as far as it must to fit.
+    const baseSub = 18;
     const baseBig = card?.sub ? 24 : 22;
     const baseBigLH = 1.45;
     const baseSubLH = 1.65;
     const baseGap = 14;
     bigEl.style.fontSize = baseBig + 'px';
     bigEl.style.lineHeight = String(baseBigLH);
-    if (subEl) { subEl.style.fontSize = '17px'; subEl.style.lineHeight = String(baseSubLH); }
+    if (subEl) { subEl.style.fontSize = baseSub + 'px'; subEl.style.lineHeight = String(baseSubLH); }
     cardContentEl.style.gap = baseGap + 'px';
 
     // Already fits — done
@@ -252,7 +254,7 @@
 
     // Shrink until it fits (min 14px big / 12px sub, tighter line-height)
     let currentBig = baseBig;
-    let currentSub = 17;
+    let currentSub = baseSub;
     let currentBigLH = baseBigLH;
     let currentSubLH = baseSubLH;
     let currentGap = baseGap;
@@ -1713,7 +1715,7 @@
   }
 
   .sub-text {
-    font-size: var(--text-reading);
+    font-size: var(--text-reading-lg);
     color: var(--text-secondary);
     line-height: 1.65;
     margin: 0;

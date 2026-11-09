@@ -1,7 +1,9 @@
 /**
  * Generates OG images for each PUBLISHED issue.
- * The issue's one-line art IS the OG image — no text overlay.
- * Resized to 1200×630 (1.91:1) with center crop.
+ * The issue's one-line art is the OG image, resized to 1200×630 (1.91:1)
+ * with center crop. The og:image PNG alone carries a small date and source
+ * label (playbook §10: a shared or screenshotted image should say when and
+ * where it is from); the responsive hero variants stay clean art.
  * Issues without a background image are blocked by validation.
  */
 import sharp from 'sharp';
@@ -9,6 +11,8 @@ import { mkdirSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIssues } from './lib/load-issues.mjs';
+import wawoff from 'wawoff2';
+import { readFileSync } from 'node:fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -26,6 +30,42 @@ for (const file of readdirSync(outDir)) {
   if (/\.(png|webp|avif|jpg|jpeg)$/i.test(file)) {
     unlinkSync(join(outDir, file));
   }
+}
+
+// ── Date + source label for the og:image PNG ──
+const FONTSOURCE = join(root, 'node_modules', '@fontsource');
+const ttf = await wawoff.decompress(readFileSync(join(FONTSOURCE, 'nunito-sans/files/nunito-sans-latin-600-normal.woff2')));
+const FONT_FACE = `@font-face { font-family: 'Nunito Sans'; src: url(data:font/ttf;base64,${Buffer.from(ttf).toString('base64')}) format('truetype'); font-weight: 600; }`;
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+// Calendar day in Malaysia time, as the site shows it (src/lib/issue-meta.ts).
+function dayOf(value) {
+  if (!value) return null;
+  const s = String(value);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const d = new Date(s);
+  if (Number.isNaN(d.getTime())) return null;
+  return new Date(d.getTime() + 8 * 3600e3).toISOString().slice(0, 10);
+}
+const fmt = (day) => { const [y, m, d] = day.split('-'); return `${Number(d)} ${MONTHS[Number(m) - 1]} ${y}`; };
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+function dateLabel(issue) {
+  const published = dayOf(issue.publishedAt) ?? dayOf(issue.sourceDate);
+  if (!published) return 'thefourthangle.pages.dev';
+  const modified = dayOf(issue.modifiedAt);
+  const updated = modified && modified > published ? ` · Updated ${fmt(modified)}` : '';
+  return `thefourthangle.pages.dev · ${fmt(published)}${updated}`;
+}
+function labelSvg(text) {
+  // Bottom-left pill; the art keeps its right side and T4A signature free.
+  const size = 24;
+  const padX = 18;
+  const w = Math.round(text.length * size * 0.51) + padX * 2;
+  const h = 44;
+  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+    <style>${FONT_FACE}</style>
+    <rect x="28" y="${630 - 28 - h}" width="${w}" height="${h}" rx="${h / 2}" fill="#0f0f23" fill-opacity="0.82"/>
+    <text x="${28 + padX}" y="${630 - 28 - h / 2 + size * 0.36}" font-family="'Nunito Sans', sans-serif" font-weight="600" font-size="${size}" fill="#ffffff" fill-opacity="0.92">${esc(text)}</text>
+  </svg>`);
 }
 
 // Only generate for published issues
@@ -54,8 +94,12 @@ for (const issue of published) {
     // This PNG is kept at canonical 1200×630 because it is the URL that
     // goes into <meta property="og:image"> for social scrapers, which do
     // not all understand <picture>.
-    await sharp(bgPath)
+    const art = await sharp(bgPath)
       .resize(1200, 630, { fit: 'cover', position: 'centre' })
+      .png()
+      .toBuffer();
+    await sharp(art)
+      .composite([{ input: labelSvg(dateLabel(issue)), top: 0, left: 0 }])
       .png({ compressionLevel: 9 })
       .toFile(outPath);
 
