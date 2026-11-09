@@ -97,6 +97,15 @@ Totals: 14 VERIFIED, 5 PARTLY, 0 UNVERIFIED, 0 CONTRADICTED, 2 STALE-SINCE-PUBLI
 - Gap: no defence-analyst or civil-society source is cited. The cards make few claims that would need one.
 - **Primary count is below the 8-source target.** parlimen.gov.my (PAC report, Hansard written replies) returned HTTP 503 or connection resets throughout this session, and the Auditor-General's LKAN portal returned HTTP 503. The PAC report, Hansard and LKAN 2/2026 are therefore cited only through news reports. An editor with access should add the PAC report (parlimen.gov.my/pac/review/docs-257-312.pdf) and the Hansard replies of 24 Jun 2024, 28 Jan 2026 and 8 Oct 2026.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1805:
+
+- **Context, hook (update):** "first delivery is scheduled for December 2026" replaced by April 2027, the date the Defence Minister gave on 8 Oct 2026 [21, 22]. The lateness against the contractual April 2019 date is now eight years (was 7 years 8 months) [11].
+- **Hook sub (update):** adds that MINDEF issued a liquidated ascertained damages notice to LUNAS in October 2026 [21].
+- **Consistency with 0154:** 0154 now says "awarded 2011, contract signed July 2014" and discloses the March 2025 DNAA, matching this issue.
+- **Not changed:** Security card "~7 years" (still true at 9 Nov 2026); Political and Governance cards (PARTLY).
+
 ## SOURCES
 
 1. **[P]** Ministry of Defence Malaysia, *Menteri Pertahanan Berada di Dewan Rakyat bagi Menjawab Pertanyaan Berhubung Status Pembinaan Kapal Tempur Pesisir (LCS) 1*, 28 Jan 2026. https://www.mod.gov.my/index.php/media2/berita/menteri-pertahanan-berada-di-dewan-rakyat-bagi-menjawab-pertanyaan-berhubung-status-pembinaan-kapal-tempur-pesisir-lcs-1
