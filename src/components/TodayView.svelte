@@ -30,6 +30,11 @@
     onModeChange?: (mode: TodayMode) => void;
     /** Keeps ids unique when more than one layout is in the DOM. */
     idPrefix?: string;
+    /**
+     * The page heading's level. h2 while an issue reader sits on top of
+     * Today, so the issue's headline is the page's only <h1> (A-9).
+     */
+    headingLevel?: 'h1' | 'h2';
     /** Set by App's interruption budget (R-1). */
     showWelcome?: boolean;
     onDismissWelcome?: () => void;
@@ -48,6 +53,7 @@
     mode = 'top',
     onModeChange,
     idPrefix = 'today',
+    headingLevel = 'h1',
     showWelcome = false,
     onDismissWelcome,
     onOpenIssue,
@@ -202,7 +208,7 @@
       <div class="today-topline">
         <div>
           <div class="today-kicker">Today</div>
-          <h1 class="today-title">See what deserves your full attention.</h1>
+          <svelte:element this={headingLevel} class="today-title">See what deserves your full attention.</svelte:element>
           <p class="today-intro pretty-copy">{todayDeckCopy}</p>
         </div>
         <div class="today-status">
@@ -447,7 +453,7 @@
     {:else if !loading}
       <div class="coming-soon">
         <div class="today-kicker">Today</div>
-        <h1 class="today-title">No issues to show right now.</h1>
+        <svelte:element this={headingLevel} class="today-title">No issues to show right now.</svelte:element>
         <p class="today-intro pretty-copy">Check back soon, or read <a class="welcome-link" href="/about">how this works</a>.</p>
         {#if quote}<p class="today-quote">"{quote}"</p>{/if}
       </div>

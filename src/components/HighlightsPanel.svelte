@@ -11,9 +11,11 @@
     issues: IssueSummary[];
     reactionMap: Record<string, number[]>;
     onOpenHighlight: (issue: IssueSummary, cardIndex: number) => void;
+    /** h2 while an issue reader sits on top, so the page keeps one <h1>. */
+    headingLevel?: 'h1' | 'h2';
   }
 
-  let { issues, reactionMap, onOpenHighlight }: Props = $props();
+  let { issues, reactionMap, onOpenHighlight, headingLevel = 'h1' }: Props = $props();
 
   let fullIssues = $state<Record<string, Issue>>({});
   let loadToken = 0;
@@ -64,7 +66,7 @@
 <section class="highlights-panel" aria-label="Saved angles">
   <header class="highlights-head">
     <p class="highlights-kicker">Library · Highlights</p>
-    <h1 class="highlights-title">Saved angles</h1>
+    <svelte:element this={headingLevel} class="highlights-title">Saved angles</svelte:element>
     <p class="highlights-copy">
       {savedCardCount} highlighted {savedCardCount === 1 ? 'angle' : 'angles'} across {groups.length}
       {groups.length === 1 ? ' issue' : ' issues'}. Open any saved card and jump straight back to that point in the reader.

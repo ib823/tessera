@@ -377,6 +377,10 @@
     if (activePrompt === 'welcome' && issues.length > 0) markWelcomeShown();
   });
   let dockPrompt = $derived(activePrompt === 'sync' || activePrompt === 'install' ? activePrompt : null);
+  // On the mobile layout the reader opens over Today (or the Library), which
+  // stays in the DOM. Its heading steps down to h2 so the issue headline is
+  // the page's only <h1> (A-9). The desktop layout swaps Today out instead.
+  let mobilePageHeadingLevel = $derived<'h1' | 'h2'>(activeFullIssue ? 'h2' : 'h1');
   let readingCount = $derived(readingIssueIds.size);
   let libraryCount = $derived.by(() => new Set([...readingIssueIds, ...highlightedIssueIds]).size);
   let scopedIssues = $derived.by(() => {
@@ -1121,7 +1125,7 @@
     <main class="app-main">
       {#if !searchActive}
         {#if surfaceMode !== 'today' && !(surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0)}
-          <h1 class="sr-only">{pageHeading(surfaceMode, libraryMode)}</h1>
+          <svelte:element this={mobilePageHeadingLevel} class="sr-only">{pageHeading(surfaceMode, libraryMode)}</svelte:element>
         {/if}
         {#if surfaceMode === 'library'}
           <!-- Only Library has a secondary bar; on Today an empty bordered
@@ -1146,7 +1150,7 @@
     {/if}
     {#if surfaceMode === 'today' && !isSearching}
       <div class="mobile-today-panel">
-        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="mobile" showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
+        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="mobile" headingLevel={mobilePageHeadingLevel} showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
       </div>
     {:else if isSearching && sortedIssues.length === 0}
       <div class="mobile-search-empty">
@@ -1164,6 +1168,7 @@
           issues={sortedIssues}
           reactionMap={appReactionMap}
           onOpenHighlight={openIssueAtCard}
+          headingLevel={mobilePageHeadingLevel}
         />
       </div>
     {:else if !isSearching && surfaceMode === 'library' && sortedIssues.length === 0}

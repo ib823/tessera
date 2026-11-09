@@ -205,3 +205,29 @@ test.describe('Dossier (T-9, P-6)', () => {
     expect(fontRequests).toEqual([]);
   });
 });
+
+test.describe('One <h1> on phone and tablet (A-9)', () => {
+  const TABLET = { width: 820, height: 1180 };
+
+  for (const [name, viewport] of [['phone', PHONE], ['tablet', TABLET]] as const) {
+    test(`${name}: an open issue has exactly one <h1>, the issue headline`, async ({ page, baseURL }) => {
+      const issue = await issueJson(page, baseURL);
+      await page.setViewportSize(viewport);
+      await page.goto(`/issue/${ISSUE}`);
+      await waitForReader(page);
+      await expect(page.getByRole('heading', { level: 1, name: issue.headline })).toBeVisible();
+      await expect(page.locator('h1')).toHaveCount(1);
+    });
+  }
+
+  test("phone: Today's heading is the page's <h1> again once the reader closes", async ({ page }) => {
+    await page.setViewportSize(PHONE);
+    await page.goto(`/issue/${ISSUE}`);
+    await waitForReader(page);
+    await expect(page.locator('h1')).toHaveCount(1);
+    await page.getByRole('dialog').getByRole('button', { name: 'Close', exact: true }).first().click();
+    await expect(page.getByRole('dialog')).toHaveCount(0);
+    await expect(page.locator('h1')).toHaveCount(1);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('See what deserves your full attention.');
+  });
+});
