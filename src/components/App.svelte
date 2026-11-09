@@ -26,7 +26,7 @@
   import { startAutoSync, checkUrlSync, linkAngleCode, getAngleCode, schedulePush, isLinked as isSyncLinked, onSyncChange } from '../lib/sync';
   import { initInstallState, canInstall as canInstallCheck, isIOS as isIOSCheck, triggerInstall, dismissInstall, onInstallChange } from '../lib/install-state';
   import AngleCode from './AngleCode.svelte';
-  import { choosePrompt, countCompleted, markPromptSpent, promptSpent, sharedLanding, type RelationshipPrompt } from '../lib/prompt-budget';
+  import { choosePrompt, countCompleted, markPromptSpent, markWelcomeShown, promptSpent, sharedLanding, welcomeSeenOnEarlierVisit, welcomeSession, type RelationshipPrompt } from '../lib/prompt-budget';
   import { buildTopicClusters } from '../lib/topics';
 
   interface FeedIssue {
@@ -187,10 +187,14 @@
   }
   let syncDismissed = $state(readFlag('tfa:v1:sync-banner-dismissed') || readFlag('tfa:v1:sync-prompt-dismissed'));
   let welcomeDismissed = $state(readFlag('tfa:v1:welcome-dismissed'));
+  // The welcome card is for the first visit to Today; later visits skip it.
+  const welcomeSeenEarlier = welcomeSeenOnEarlierVisit();
   let landingActive = $state(sharedLanding.get());
   let promptsSpent = $state(promptSpent.get());
+  let welcomeHolds = $state(welcomeSession.get());
   $effect(() => sharedLanding.subscribe((v) => { landingActive = v; }));
   $effect(() => promptSpent.subscribe((v) => { promptsSpent = v; }));
+  $effect(() => welcomeSession.subscribe((v) => { welcomeHolds = v; }));
 
   function dismissSyncPrompt() {
     writeFlag('tfa:v1:sync-banner-dismissed');
@@ -349,22 +353,29 @@
   let highlightCount = $derived(countHighlights(appReactionMap));
   let completedCount = $derived(countCompleted(readMap));
 
-  // One relationship prompt at a time, only after a completed issue, never
-  // on the first screen of a shared-link visit, one per session (R-1).
+  // One relationship prompt at a time, never on the first screen of a
+  // shared-link visit, one per session (R-1). The welcome card greets a first
+  // visit to Today; the others wait for a completed issue.
   let activePrompt = $derived<RelationshipPrompt | null>(
     choosePrompt({
       completedCount,
       sharedLanding: landingActive,
       spent: promptsSpent,
+      welcomeSession: welcomeHolds,
       readerOpen: !!activeFullIssue || issueLoading,
       candidates: {
-        welcome: !welcomeDismissed && surfaceMode === 'today' && !isSearching,
+        welcome: !welcomeDismissed && !welcomeSeenEarlier && surfaceMode === 'today' && !isSearching,
         sync: !syncLinked && !syncDismissed && !isStandalone,
         // Only the mobile dock offers install.
         install: viewMode === 'mobile' && showInstall && !isStandalone,
       },
     }),
   );
+  // Once the welcome card is on screen (Today renders it only with issues to
+  // show), it is this session's one prompt.
+  $effect(() => {
+    if (activePrompt === 'welcome' && issues.length > 0) markWelcomeShown();
+  });
   let dockPrompt = $derived(activePrompt === 'sync' || activePrompt === 'install' ? activePrompt : null);
   let readingCount = $derived(readingIssueIds.size);
   let libraryCount = $derived.by(() => new Set([...readingIssueIds, ...highlightedIssueIds]).size);

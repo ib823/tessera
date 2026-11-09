@@ -185,21 +185,37 @@ test.describe('Search', () => {
 test.describe('Relationship prompts (R-1, R-4)', () => {
   test.use({ viewport: DESKTOP });
 
-  test('a first visit shows no prompt', async ({ page }) => {
+  test('a first visit to Today shows the welcome card and nothing else', async ({ page }) => {
     await openHome(page);
     await expect(page.getByRole('tab', { name: 'Top' })).toBeVisible();
-    await expect(page.locator('[data-prompt]')).toHaveCount(0);
+    await expect(page.locator('[data-prompt="welcome"]')).toBeVisible();
+    await expect(page.locator('[data-prompt]')).toHaveCount(1);
   });
 
-  test('after a completed issue, exactly one prompt shows', async ({ page, request, baseURL }) => {
+  test('the welcome card is the one prompt for its session', async ({ page, request, baseURL }) => {
     const feed = (await (await request.get(`${baseURL}/issues-feed.json`)).json()) as FeedEntry[];
     await seedCompleted(page, [feed[feed.length - 1].id]);
     await openHome(page);
-    await expect(page.locator('[data-prompt]')).toHaveCount(1);
     await expect(page.locator('[data-prompt="welcome"]')).toBeVisible();
+    await expect(page.locator('[data-prompt]')).toHaveCount(1);
+
+    // Same session, a completed issue on file: the welcome card keeps the
+    // budget and the sync prompt waits for the next visit.
+    await openHome(page);
+    await expect(page.locator('[data-prompt="welcome"]')).toBeVisible();
+    await expect(page.locator('[data-prompt]')).toHaveCount(1);
 
     // Dismissing spends the session's budget: no second prompt replaces it.
     await page.getByRole('button', { name: 'Dismiss welcome message' }).click();
+    await expect(page.locator('[data-prompt]')).toHaveCount(0);
+  });
+
+  test('a later visit skips the welcome card; other prompts wait for a completed issue', async ({ page }) => {
+    // The welcome card showed on an earlier visit (fresh session now).
+    await page.addInitScript(() => localStorage.setItem('tfa:v1:welcome-seen', '1'));
+    await openHome(page);
+    await expect(page.getByRole('tab', { name: 'Top' })).toBeVisible();
+    await page.waitForTimeout(500);
     await expect(page.locator('[data-prompt]')).toHaveCount(0);
   });
 
@@ -221,6 +237,20 @@ test.describe('Relationship prompts (R-1, R-4)', () => {
     await openHome(page, `/issue/${feed[0].id}`);
     await page.waitForTimeout(500);
     await expect(page.locator('[data-prompt]')).toHaveCount(0);
+  });
+
+  test('a first-time reader on a shared link sees the welcome card only after leaving the issue', async ({ page, request, baseURL }) => {
+    await page.setViewportSize(PHONE);
+    const feed = (await (await request.get(`${baseURL}/issues-feed.json`)).json()) as FeedEntry[];
+    await openHome(page, `/issue/${feed[0].id}`);
+    const reader = page.getByRole('dialog');
+    await expect(reader).toBeVisible();
+    await page.waitForTimeout(500);
+    await expect(page.locator('[data-prompt]')).toHaveCount(0);
+
+    await reader.getByRole('button', { name: 'Close', exact: true }).first().click();
+    await expect(page.locator('[data-prompt="welcome"]')).toBeVisible();
+    await expect(page.locator('[data-prompt]')).toHaveCount(1);
   });
 });
 
