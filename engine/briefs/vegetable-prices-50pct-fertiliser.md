@@ -69,3 +69,22 @@ In late March 2026, as the festive maximum-price scheme for Hari Raya ended, Mal
 14. **[S]** The Star, "Fertiliser shortage may impact vege harvests", 13 Apr 2026. https://www.thestar.com.my/news/nation/2026/04/13/fertiliser-shortage-may-impact-vege-harvests
 15. **[S]** The Star, "Renewed tensions in Mideast could hit fertiliser supply", 14 Aug 2026. https://www.thestar.com.my/news/nation/2026/08/14/renewed-tensions-in-mideast-could-hit-fertiliser-supply
 16. **[S]** CodeBlue, "Malaysia Vulnerable To Fertiliser Import Disruptions, Says RSIS", 24 Mar 2026. https://codeblue.galencentre.org/2026/03/malaysia-vulnerable-to-fertiliser-import-disruptions-says-rsis/
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1953.json`:
+
+- **Governance sub.** "No ... Thailand-style public-stock mechanism was found" is weakened by NST, 27 Apr 2026 (before
+  the source date): "Nafas maintains buffer stocks and implements phased deliveries", and Nafas said its stock levels
+  "remain adequate" (source 13, re-opened 2026-11-09). The sub now reports the Nafas buffer and keeps only the absence of
+  a Vietnam-style price-stabilisation list. "Over 60% of mineral-fertiliser needs" became RSIS's own figure, domestic
+  output covering 39% of fertiliser use (source 8); RSIS does not say "mineral".
+- **View.** "Malaysia lacks the buffers Indonesia, Vietnam and Thailand built" became "NAFAS buffer stocks exist, but
+  with about 61% of fertiliser imported, the next shock still reaches the wet market" (sources 8, 13).
+- **Social big.** "DOSM shows food's larger weight in B40 budgets" overstated the source, which covers daily necessities,
+  not food alone. It now gives the figures: B40 households spend 71.6% on daily necessities, against 64% for T20 (source
+  11).
+- Headline, context, hook, Economic card, Social sub, Governance big and reframe unchanged. The reframe keeps a
+  pre-existing auxiliary-density warning; the card was out of scope. Not added: The Star's 14 Aug 2026 report (source 15)
+  that growers called the situation "less tense" and one retailer saw prices up about 15% from March. It rests on a
+  single retailer and no DOSM vegetable price series was opened.
