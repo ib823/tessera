@@ -84,3 +84,27 @@ Sources are numbered as in SOURCES below. "3R" marks a religion-touching claim, 
 Primary count is 3 of 10. The state enactments, the 2023 originating summons and the 2026 High Court grounds were not
 publicly available online, so the litigation facts rest on three consistent news reports. The grounds of judgment in
 source 2 are a certified copy of the judgment, scanned and hosted by a civil-society blog.
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1294.json`:
+
+- **Context and hook.** The suit is now described as a 2023 Kuala Lumpur High Court suit, attributed to Bernama, with
+  the dated update that it was dismissed for lack of standing on 12 Jun 2026 without a ruling on constitutionality
+  (sources 7, 8; The Sun on the 2023 filing, source 6). The hook sub adds that Pahang amended its law and was dropped
+  (source 7). The suit's existence and parties rest on three consistent news reports only, so they appear in
+  attributed form.
+- **Hook sub.** Removed "The Indira Gandhi 2018 ruling is binding nationwide" (news report only) and "the pending
+  challenge tests whether state-level enactments comply" (stale since 12 Jun 2026).
+- **Legal sub.** Replaced the present-tense description of the plaintiffs' case with para 180 of the 2018 judgment:
+  "our decision in these appeals is to have prospective effect", with no retrospective effect on court decisions made
+  before 29 Jan 2018 (source 2, checked 2026-11-09 against the scanned certified copy, p. 99).
+- **Rights sub.** "The 2023-originating case is the live vehicle" became "the 2023 suit ended without testing them"
+  (sources 7, 8).
+- **Social sub.** "Until the challenge is resolved" became a dated statement that the 12 Jun 2026 dismissal left the
+  provisions untested. Dropped "binding" before "federal ruling".
+- **View.** "Federal Court challenge" was wrong: the suit was in the High Court (sources 6, 7, 8). "Neither has closed
+  the gap" was contradicted by Pahang's amendment (source 7). The view now says amendment closed the gap in Pahang and
+  the court route ended on standing, leaving the constitutional question undecided.
+- Headline, Legal big, Rights big, Social big and reframe unchanged. The headline stays accurate as a statement of who
+  was named.
