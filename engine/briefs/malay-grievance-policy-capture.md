@@ -164,3 +164,36 @@ Primary count is 9 of 18.
 This issue has had **Stage 1 (Primary Analysis)** and **Stage 6 (Synthesis Review)** done by Claude with self-verification against the underlying audited issues. **Stage 2 (Gemini Bias Audit)** and **Stage 3 (ChatGPT Fact Verification)** have NOT been run separately. Justification: every factual claim is reused verbatim from a T4A issue that has already cleared its own multi-stage audit. The stageScores in the published JSON reflect this (ba=70 explicitly, fc=88 reflecting the underlying audit chain, sr=78 reflecting self-synthesis).
 
 If the editor wants formal external bias and fact-checking stages before going live, run `node scripts/generate-stage-prompts.mjs malay-grievance-policy-capture` and copy the Stage 2/3 prompts into Gemini and ChatGPT per the playbook.
+
+## CORRECTION (2026-11-09)
+
+Edition 4. Changes to `src/data/issues/1986.json`. Editor note: the reviewer recommends unpublishing this issue (see the
+review file). These corrections apply either way, because an unpublished issue stays reachable by direct URL.
+
+- **Context.** Removed "PuTERA35 deepens race-based targets" (no source opened) and "13MP commits to needs-based reform".
+  The 13MP Executive Summary commits to "targeted subsidies and assistance" and says "implementation of the Bumiputera
+  empowerment agenda will be intensified" (source 5, checked 2026-11-09). Removed the claim that GLC appointments were
+  built on the NEP (no source). The NEP's two prongs now quote the Third Malaysia Plan, ch. 1, para 6 (source 4,
+  checked 2026-11-09 against the scanned page).
+- **Hook big.** Replaced "two prongs: poverty eradication and ethnic restructuring" with the Third Malaysia Plan's own
+  words ("eradicating poverty irrespective of race and restructuring society", source 4). Dropped the "leak" metaphor.
+- **Hook sub.** Removed "the 13MP and PuTERA35 point in opposite directions", which the 13MP's own text contradicts
+  (source 5). The 87% and 13% figures now carry the World Bank attribution and the 2022 data year (source 1, overview:
+  "In 2022, only 13 percent of total income inequality in Malaysia was explained by differences in average income
+  across ethnicities; 87 percent reflected differences within each group").
+- **Economic card.** The bill no longer "penalises rent-seeking and subcontracting abuses across federal contracts"; it
+  makes it an offence to transfer or novate a government contract without approval (source 7, clause 35). Dropped the
+  unsourced Anti-Rent-Seeking Act line. The "Ali Baba" link is attributed to Malay Mail (source 11).
+- **Governance sub.** The 78% figure now carries its own denominator, 135 federal statutory body chair roles, instead of
+  reading as a share of the 238 appointments (source 12). Dropped "down from 301 under Najib", which compared a peak
+  count with a cumulative count (source 13).
+- **Political card.** Dropped the unsourced KL median income of RM10,805. "East Malaysian Bumiputera remain the poorest
+  subgroup" is now the World Bank's own description, "the most disadvantaged" (source 1, ch. 2). Sabah's 17.7% is
+  "more than triple" the national 5.1% (17.7 / 5.1 = 3.5) (sources 3, 17). The DOSM 0.412 figure stays, attributed
+  to DOSM (source 2).
+- **Reframe.** Removed "For Malays: the biggest income gap is now within the community". The World Bank decomposition
+  covers all ethnic groups and gives no within-Malay share, and "Bumiputera" is wider than "Malay". The reframe now
+  states the all-group finding and the World Bank's own recommendation that ethnicity-focused policies "benefit the
+  disadvantaged Bumiputera rather than those who are already succeeding" (source 1).
+- Headline and view unchanged. Without the reframe's within-Malay claim, no source on file supports the headline's
+  thesis about "the Malay grievance".

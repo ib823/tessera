@@ -61,3 +61,10 @@ Legal, Governance, Environmental
 10. Eco-Business, "Rare earth mining in Perak forest" (Kenering)
 11. DOE Malaysia, Environmental Quality (Amendment) Act 2024
 12. Macaranga, "Empower the Dewan to Safeguard Forest Reserves"
+
+## CORRECTION (2026-11-09)
+
+Status only. `src/data/issues/1043.json` read `"status": "new"` although the cards were corrected after publication on
+5 Apr 2026 (commit aca51aa13): the 8 Apr 2026 audit corrections (commit 6fb7b21de) rewrote the hook ("42 died at sites
+where EIA rules were overridden" replaced "42 people dead in landslides linked to EIA bypass"). Status set to
+`"updated"`. Edition (2), source date and card text unchanged.

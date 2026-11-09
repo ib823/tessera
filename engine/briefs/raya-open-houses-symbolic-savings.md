@@ -51,3 +51,27 @@ On 11 March 2026 the Prime Minister said Cabinet had decided that government age
 3. **[S]** Ministry of Finance Malaysia, press citation of Bernama, "Subsidies Under RON95, BUDI Diesel Hit RM4 Bln Monthly - MOF", 26 Mar 2026. https://www.mof.gov.my/portal/en/news/press-citations/subsidies-under-ron95-budi-diesel-hit-rm4-bln-monthly-mof
 4. **[S]** Ministry of Finance Malaysia, press citation of Bernama, "BUDI95 Price Remains, Unsubsidised RON95, RON97 Down 25 Sen, Diesel Drops 75 Sen", 15 Apr 2026. https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen-diesel-drops-75-sen
 5. **[S]** Astro Awani, "Government spent RM2.88 million from PM's Raya open house", 24 Sep 2013. https://international.astroawani.com/malaysia-news/government-spent-rm288-million-pms-raya-open-house-22749
+6. **[S]** Bernama, "Raya Open House Cancellation Spurs Innovation, Opportunities For Events Industry", 19 Mar 2026. https://bernama.com/tv/news.php?id=2536153
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1955.json`:
+
+- **Context and hook (subsidy figure).** "MOF said fuel subsidies could reach RM4B/month" was superseded before the source
+  date: MOF put the total at about RM7 billion a month on 15 April (source 4), after "up to RM4 billion" on 26 March
+  (source 3). The context gives both with dates. The hook now sets the savings beside the RM7 billion figure instead of
+  claiming a ratio of "two orders of magnitude", which rested on the unverified RM15-25M.
+- **Context and Social card (lost revenue).** Dropped "reported lost private-sector revenue RM15-25M": the Business Today
+  page was never opened, and a web search on 2026-11-09 found no source for the figure. The Social card now carries a
+  sourced industry voice instead: WTCKL group CEO Fauzy Wahab told Bernama the cancellation "does have an impact on
+  industry players like us", and gave no figure (new source 6, opened 2026-11-09).
+- **Social sub.** Dropped "catering can run 50-60% of event budgets" and the DOSM women-owned F&B line; neither had a
+  source on file. The sub now reports Fauzy's advice that events firms diversify and "be ready to pivot quickly"
+  (source 6).
+- **Political big (3R).** Dropped "described in policy as fostering inter-community ties": no policy document was found,
+  and the claim needs two primary sources. The card now rests on the 2013 Dewan Rakyat reply: over 80,000 guests at the
+  Seri Perdana open house, RM2.88 million for food and drink, about RM36 a guest (source 5).
+- **Governance big (3R).** "Other Muslim-majority states scaled down festive hospitality" rested on one country. It now
+  names that case: Indonesia's president held a palace open house for Eid al-Fitr 2026 (source 2).
+- Headline, hook sub, Governance sub, reframe and view unchanged. The reframe keeps a pre-existing auxiliary-density
+  warning; the card was out of scope.

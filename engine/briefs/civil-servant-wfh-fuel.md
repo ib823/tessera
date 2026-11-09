@@ -61,3 +61,26 @@ In a special address on 26 March 2026 the Prime Minister said civil servants wou
 9. **[S]** The Star, "No WFH for Penang civil servants for now, says CM", 1 Apr 2026. https://www.thestar.com.my/news/nation/2026/04/01/no-wfh-for-penang-civil-servants-for-now-says-cm
 10. **[S]** Sarawak Tribune, "No work-from-home directive issued by state government yet", 2 Apr 2026. https://www.sarawaktribune.com/no-work-from-home-directive-issued-by-state-government-yet/
 11. **[S]** The Star, "Zaliha: Malaysia has over 1.3 million civil servants", 6 Nov 2025. https://www.thestar.com.my/news/nation/2025/11/06/zaliha-malaysia-has-over-13-million-civil-servants
+12. **[S]** Malay Mail, "Cabinet approves Hybrid Working Day, civil servants to balance home and office from August 1", 26 Jun 2026. https://www.malaymail.com/news/malaysia/2026/06/26/cabinet-approves-hybrid-working-day-civil-servants-to-balance-home-and-office-from-august-1/225348
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1954.json`:
+
+- **Social big.** "Within an 8 km commute" reversed the rule. The PSD circular covers officers whose one-way commute is
+  more than eight kilometres (source 8, Bernama, 14 Apr 2026). The card now says so, in active voice and past tense.
+- **Social sub.** Dropped the JUSA C+ (60.7% male) and Grade 41-54 (67.9% female) figures: the DOSM table they were
+  attributed to was never opened, so they are unverified. The sub now names the locations the circular covers (source 8).
+- **Governance big.** Dropped "The public-service headcount is large by international comparisons": no source ranks it
+  as large, and the World Bank cautions against such comparisons (source 5). Replaced with the sourced headcount of over
+  1.3 million civil servants as of September 2025 (source 11).
+- **Political big.** "Singapore mandates flexible-work request rights" overstated tripartite guidelines that set a
+  process for employers to consider requests (source 4).
+- **Political sub.** The Penang and Sarawak positions are now dated to early April 2026 (sources 9, 10); later status
+  was not checked.
+- **Context (update).** Added that from 1 Aug 2026 a Hybrid Working Day policy, approved by Cabinet and announced by the
+  PSD on 26 Jun 2026, replaced the West Asia conflict WFH arrangement, with three office days and two days at home or an
+  approved location (new source 12, opened 2026-11-09). The card text about the April circular now uses the past tense.
+- Hook, reframe and view unchanged. The hook sub keeps a validator flag on "was issued by 2 April", a false positive
+  (the "by" is a date, not an agent). The reframe keeps a pre-existing auxiliary-density warning; the card was out of
+  scope.

@@ -97,3 +97,15 @@ Economic, Social, Political
 16. Tandfonline, "Affordable housing and public administration of a historic city: George Town UNESCO World Heritage Site" (academic, 2023)
 17. Penang Institute, "Transforming Tourism in Penang: Suggestions for the Short and the Long Term" 2020
 18. The Star, "Penang maintains strong SPM 2025 performance" Mar 31, 2026
+
+## CORRECTION (2026-11-09)
+
+Edition 2. Changes to `src/data/issues/1970.json`:
+
+- **Context.** Removed "George Town's heritage core has lost 80% of residents since UNESCO listing". The correction of
+  8 Apr 2026 (commit d05813ef8, "Phase B: Tier 2 re-audit confirmation + 1967/1970 corrections") found the 80% and related
+  population-decline figures unverifiable and replaced them in the cards with "long-term depopulation". That correction
+  missed the context. The context now matches the hook sub: "George Town's heritage core has long depopulated."
+- **Status and edition.** The 8 Apr card correction did not bump the edition or status, so the issue still read
+  `"status": "new"`, edition 1. This edition records both corrections.
+- No new sources. Cards unchanged.

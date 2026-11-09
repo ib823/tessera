@@ -78,3 +78,29 @@ BNM's Annual Report 2025 shows e-payments rising 25% to 18.4 billion transaction
 17. **[S]** The Sun, "NSRC Hotline 997 critical in fighting rapid online scams". https://thesun.my/news/malaysia-news/people-issues/nsrc-hotline-997-critical-in-fighting-rapid-online-scams/
 18. **[S]** The Star, "Cyber risk remains a top concern for financial institutions in 2026 - Bank Negara", 31 Mar 2026. https://www.thestar.com.my/business/business-news/2026/03/31/cyber-risk-remains-a-top-concerns-for-financial-institutions-in-2026---bank-negara
 19. **[S]** Bernama, "22,368 Traders Registered With E-wallets Via ReDI Initiative, Says Armizan", 1 Jul 2025. https://bernama.com/en/news.php?id=2440007
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1887.json`:
+
+- **Status.** As with issue 1146, edition 2 (7 Apr 2026) was the first published version (edition 1 was never
+  published, commit 98e6553f6) and the cards had not changed since. This edition is a real post-publication correction,
+  so `status: "updated"` is now accurate.
+- **Headline, context, hook sub and Social big (PayNet date).** The PayNet study was fieldworked in Q4 2021 (source 14).
+  The headline, context and Social card set its figures against 2025 data in the present tense ("still use cash daily").
+  They now say "late-2021 survey" or "2021 survey" and use the past tense.
+- **Hook sub.** "48.4% of daily expenses still paid in cash" became "48.4% of Malaysians paid daily expenses in cash"
+  (source 14).
+- **Context.** "Most fraud losses now come from social-engineering scams" became BNM's own measure: about 95% of online
+  fraud cases are authorised transactions (source 2). That is a share of cases, not losses.
+- **Economic sub.** "End-2024 DuitNow QR value RM31.1 billion" became the 2024 full-year value of merchant payments
+  (source 8). Dropped "East Malaysia onboarding still lags": no source shows a lag, and Sabah and Sarawak supplied about
+  90% of January to May 2025 ReDI registrations (source 12). "Tens of thousands" became the sourced 22,368 (sources 12, 19).
+- **Social big.** "Mandates cash access stays available" became "keeps cash services for basic accounts", matching the
+  policy's scope, para 9.11 (source 9).
+- **Legal big.** "BNM averted RM1.2B" became "Banks blocked about RM1.2B" (source 5, FSR 2H2025 footnote 24). Dropped
+  "Social engineering rises; account takeovers fall", which held for 1H 2025 only (source 6); FSR 2H2025 says fraud
+  cases kept rising, driven mainly by malware enabling unauthorised transfers (source 5).
+- **Legal sub.** "Recovered RM34.5M" became RM34.05M kept from syndicates, plus RM6.65M returned to victims (sources 16,
+  17). The half-year trend is now dated.
+- Hook big, Economic big, reframe and view unchanged.
