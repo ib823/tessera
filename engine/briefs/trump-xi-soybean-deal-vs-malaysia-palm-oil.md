@@ -227,6 +227,10 @@ Aim for three fact cards on Economic / Regional / Critical lenses; the analogy c
 34. **Universitas Trisakti Prosiding ICEETE — "Analysis of the Competitiveness of Indonesian and Malaysian Palm Oil"** — https://prosiding.utp.ac.id/index.php/ICEETE/article/download/246/130 (Academic study, primary-data analysis).
 
 35. **Sarawak Tribune — "EU Delays Deforestation Rule To December 2026"** — https://www.sarawaktribune.com/eu-delays-deforestation-rule-to-december-2026/ (Government-aligned MY outlet on EU regulatory dates).
+36. New Straits Times, "Report: Palm oil smallholders risk being left out of sustainability drive", 12 Sep 2025, https://www.nst.com.my/business/corporate/2025/09/1273999/report-palm-oil-smallholders-risk-being-left-out-sustainability [S]
+37. UkrAgroConsult (citing OleoScope and the Malaysian Palm Oil Council), "Kenya becomes top buyer of Malaysian palm oil, overtaking EU and China", 23 Jul 2025, https://ukragroconsult.com/en/news/kenya-becomes-top-buyer-of-malaysian-palm-oil-overtaking-eu-and-china/ [S]
+38. Palm Oil Magazine, "Malaysia's Palm Oil Stocks Rise to 2.30 Million Tons in April 2026 as CPO Output Surges", 18 May 2026, https://www.palmoilmagazine.com/hot-news/2026/05/18/malaysias-palm-oil-stocks-rise-to-2-30-million-tons-in-april-2026-as-cpo-output-surges/ [S]
+39. Malaysian Palm Oil Council (MPOC), summarising a New Straits Times report, "Malaysia Seeks to Regain Palm Oil Market Share in China", 10 Dec 2025, https://www.mpoc.org.my/malaysia-seeks-to-regain-palm-oil-market-share-in-china/ [S]
 
 ## CONTRADICTIONS (always disclose; never silently choose favourable number)
 

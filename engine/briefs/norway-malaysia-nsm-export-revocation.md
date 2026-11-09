@@ -222,6 +222,8 @@ Secondary: **Economic** (~RM550m sunk, RM11bn programme exposure, opportunity co
 50. Murray Hunter (The Vibes opinion) — "Norway harshly cancels NSM missile supply contract to Malaysia" — https://www.thevibes.com/articles/opinion/122697/norway-harshly-cancels-nsm-missile-supply-contract-to-malaysia (note: author is subject to Thai criminal defamation charges filed at Malaysia's request — CPJ, Nov 2025 — which the reader should weigh)
 51. Lam Choong Wah (Malaysiakini) — "Norwegian missile ban sends two signals to M'sia — analyst" — https://www.malaysiakini.com/news/774892
 52. Prime Minister of Australia (pm.gov.au), "Australia recognises the state of Palestine (joint statement, Prime Minister and Minister for Foreign Affairs)", 21 September 2025, https://www.pm.gov.au/media/australia-recognises-state-palestine [PRIMARY]
+53. Naval News, "Malaysia's Littoral Combat Ship Set Sail for the First Time", 30 Jan 2026, https://www.navalnews.com/naval-news/2026/01/malaysias-littoral-combat-ship-set-sail-for-the-first-time/ [S]
+54. Electronic Code of Federal Regulations (eCFR), US Government Publishing Office / Office of the Federal Register, "22 CFR 123.9, Country of ultimate destination and approval of reexports or retransfers (International Traffic in Arms Regulations, 22 CFR Subchapter M, Parts 120-130)", current text, accessed 9 Nov 2026, https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M/part-123/section-123.9 [PRIMARY]
 
 ## SOURCE SPECTRUM CHECK
 

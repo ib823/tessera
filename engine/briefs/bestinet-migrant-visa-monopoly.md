@@ -152,3 +152,6 @@ January 2024 – April 2026
 24. US State Department, "2024 Trafficking in Persons Report: Malaysia" https://2021-2025.state.gov/reports/2024-trafficking-in-persons-report/malaysia/ [PRIMARY]
 25. FinanceTwitter, "From Zahid To Saifuddin: Corruption In Migrant Worker System," Jan 2026 https://www.financetwitter.com/2026/01/from-zahid-to-saifuddin-corruption-in-migrant-worker-system.html
 26. Bestinet.com.my, "MACC's Bestinet probe is NFA," Sep 23, 2024 https://www.bestinet.com.my/?p=4755
+27. Malaysiakini, "Rafizi: Govt has no access to Bestinet's source code", 3 Feb 2026 (updated 13 Apr 2026), https://www.malaysiakini.com/news/767176 [S]
+28. Bestinet Sdn Bhd (company statement, bestinet.com.my), "From Systemic Abuse to Full Transparency: Bestinet Defends FWCMS Against Misleading Narratives", 23 Apr 2026, https://www.bestinet.com.my/?p=5304 [PRIMARY]
+29. Malay Mail (Reuters), "Nearly a third of domestic workers in Malaysia in forced labour conditions, says UN agency", 15 Jun 2023, https://www.malaymail.com/news/malaysia/2023/06/15/nearly-a-third-of-domestic-workers-in-malaysia-in-forced-labour-conditions-says-un-agency/74436 [S]
