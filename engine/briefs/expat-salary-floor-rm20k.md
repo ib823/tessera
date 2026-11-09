@@ -48,6 +48,15 @@ The Ministry of Home Affairs announced on 14 January 2026 a new expatriate emplo
 - **Business / employers / opposition:** none opened (web search budget exhausted before those searches). A gap: employer-group reaction to the RM20,000 floor and the deferral is not represented.
 - Primary count: 8 of 9.
 
+## CORRECTION (2026-11-09)
+
+Edition 3 of issue 1956:
+
+- **Regional card:** the ringgit conversions were wrong (they implied about RM3.30 per SGD). At BNM's 30 Mar 2026 rate (RM3.0913 buying, RM3.1333 selling) [9]: SGD5,600 is about RM17,400 (range RM17,311–17,546) and SGD6,200 about RM19,300 (range RM19,166–19,426), so both Singapore entry floors sit below RM20,000. The card now says these floors apply at age 23 and under, rising to SGD10,700 outside finance at 45 and over (about RM33,000) [7].
+- **Context, hook sub:** ESD deferred the succession (replacement) plan requirement to 1 Jan 2027 (Announcement 278, 26 May 2026) [4]. The salary floor took effect on 1 Jun 2026 as planned [4].
+- **Economic card:** "60,000 workers" corrected to "60,000 highly skilled engineers" under the National Semiconductor Strategy [5]. The unverified "6,600 E&E graduates per year" is removed.
+- **Not changed:** Singapore's announced 2027 floors (date of announcement not established) are not added.
+
 ## SOURCES
 
 1. **[P]** Ministry of Home Affairs, "Dasar Baharu Penggajian Ekspatriat Bermula 1 Jun 2026", siaran media, 14 Jan 2026. https://dmedia.penerangan.gov.my/upload/sm/14012026.1023709201.pdf
