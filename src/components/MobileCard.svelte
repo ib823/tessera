@@ -5,6 +5,7 @@
   import { tween, countUp, ease } from '../lib/animation';
 
   import IssueImage from './IssueImage.svelte';
+  import { absoluteDate, relativeDate } from '../lib/relative-date';
   import type { IssueSummary } from '../lib/issues-loader';
   import type { ReadState } from '../stores/reader';
 
@@ -122,6 +123,9 @@
       {/if}
       {#if issue.legacyAudit}
         <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size: var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius: var(--radius-sm);text-transform:uppercase;letter-spacing:0.02em;">Pre-pipeline</span>
+      {/if}
+      {#if relativeDate(issue.sourceDate)}
+        <time datetime={issue.sourceDate} title={absoluteDate(issue.sourceDate)} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);white-space:nowrap;">{relativeDate(issue.sourceDate)}</time>
       {/if}
     </div>
     {#if isStarted && readState && readState.progress > 0}

@@ -26,7 +26,10 @@
   let { headers, rows, caption, sourceLine }: Props = $props();
 </script>
 
-<div class="fig-table-wrap" style:overflow-x="auto">
+<!-- Scrolls sideways on phones, so keyboard users need to reach it
+     (axe scrollable-region-focusable). -->
+<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+<div class="fig-table-wrap" style:overflow-x="auto" tabindex="0" role="region" aria-label={caption ?? 'Comparison table'}>
   <table class="fig-table">
     {#if caption}
       <caption class="sr-only">{caption}</caption>

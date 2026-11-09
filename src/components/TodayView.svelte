@@ -4,8 +4,10 @@
   import IssueImage from './IssueImage.svelte';
 
   import type { IssueSummary } from '../lib/issues-loader';
-  import type { FeedSection } from '../lib/feed-sections';
+  import type { FeedSection, TodayMode } from '../lib/feed-sections';
   import { getDossierFeedEntries } from '../data/dossiers';
+  import { absoluteDate, isWithinDays, newestDate, relativeDate } from '../lib/relative-date';
+  import { buildTopicClusters, primaryLens, topicHref } from '../lib/topics';
 
   // Featured dossiers — surfaces the new long-form product on the
   // homepage with a distinctive burgundy-accented card. The list is
@@ -14,7 +16,7 @@
   const featuredDossiers = getDossierFeedEntries();
 
   interface Props {
-    /** Feed summaries still in flight: render nothing rather than "Coming soon". */
+    /** Feed summaries still in flight: render nothing rather than an empty state. */
     loading?: boolean;
     issueCount?: number;
     topIssue?: IssueSummary | null;
@@ -23,12 +25,18 @@
     readMap?: Record<string, string>;
     readingCount?: number;
     highlightCount?: number;
+    /** Top: the editor's front page. Latest: every issue, newest first (H-2). */
+    mode?: TodayMode;
+    onModeChange?: (mode: TodayMode) => void;
+    /** Keeps ids unique when more than one layout is in the DOM. */
+    idPrefix?: string;
+    /** Set by App's interruption budget (R-1). */
+    showWelcome?: boolean;
+    onDismissWelcome?: () => void;
     onOpenIssue?: (issue: IssueSummary) => void;
     onOpenLibraryReading?: () => void;
     onOpenLibraryHighlights?: () => void;
     onOpenLibraryArchive?: () => void;
-    allowPullRefresh?: boolean;
-    onPullRefresh?: () => void;
   }
   let {
     loading = false,
@@ -37,22 +45,24 @@
     issues = [],
     sections = [],
     readMap = {},
-    readingCount = 0,
-    highlightCount = 0,
+    mode = 'top',
+    onModeChange,
+    idPrefix = 'today',
+    showWelcome = false,
+    onDismissWelcome,
     onOpenIssue,
-    onOpenLibraryReading,
-    onOpenLibraryHighlights,
-    onOpenLibraryArchive,
-    allowPullRefresh = false,
-    onPullRefresh,
   }: Props = $props();
 
   // The quote list is ~70 KB raw (~19 KB brotli), about a fifth of the App
   // chunk, to show one line in the footer. Load it after mount so it stays
   // off the critical path of every page (home and all issue pages).
   let quote = $state('');
+  // Relative dates ("3 days ago") are computed against the reader's clock.
+  // The server render uses the build time; mount refreshes it.
+  let now = $state(new Date());
   onMount(() => {
     let cancelled = false;
+    now = new Date();
     import('../data/quotes')
       .then(({ QUOTES }) => {
         if (!cancelled) quote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
@@ -62,6 +72,9 @@
       cancelled = true;
     };
   });
+
+  /** "New This Week" uses the same seven-day window. */
+  const RECENT_DAYS = 7;
 
   let hasIssues = $derived(issueCount > 0);
   let continueIssue = $derived(sections.find((section) => section.kind === 'continue')?.issues[0] ?? null);
@@ -73,138 +86,93 @@
     try { return JSON.parse(raw).progress ?? 0; } catch { return 0; }
   });
   let nextContinueAngle = $derived(Math.min(continueProgress + 1, continueIssue?.cards.length ?? 6));
-  let newIssues = $derived(sections.find((section) => section.kind === 'new')?.issues ?? []);
-  let briefingIssues = $derived.by(() => {
-    const picked: IssueSummary[] = [];
-    const seen = new Set<string>();
-    if (topIssue) seen.add(topIssue.id);
 
-    for (const issue of newIssues) {
-      if (seen.has(issue.id)) continue;
-      seen.add(issue.id);
-      picked.push(issue);
-      if (picked.length === 3) return picked;
-    }
-    for (const issue of issues) {
-      if (seen.has(issue.id)) continue;
-      seen.add(issue.id);
-      picked.push(issue);
-      if (picked.length === 3) break;
-    }
-    return picked;
-  });
-  // Topic clusters: derive primary lens per issue, group into browsable topics
-  interface TopicCluster {
-    topic: string;
-    count: number;
-    issues: IssueSummary[];
+  function byNewest(a: IssueSummary, b: IssueSummary): number {
+    const dates = (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '');
+    return dates !== 0 ? dates : b.opinionShift - a.opinionShift;
   }
 
-  let topicClusters = $derived.by((): TopicCluster[] => {
-    const topicMap = new Map<string, IssueSummary[]>();
-    for (const issue of issues) {
-      const lensCounts = new Map<string, number>();
-      for (const card of issue.cards) {
-        if (card.lens) lensCounts.set(card.lens, (lensCounts.get(card.lens) ?? 0) + 1);
-      }
-      if (lensCounts.size === 0) continue;
-      const primary = [...lensCounts.entries()].sort((a, b) => b[1] - a[1])[0][0];
-      const list = topicMap.get(primary) ?? [];
-      list.push(issue);
-      topicMap.set(primary, list);
-    }
-    return [...topicMap.entries()]
-      .map(([topic, issues]) => ({ topic, count: issues.length, issues: issues.sort((a, b) => b.opinionShift - a.opinionShift) }))
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 8);
+  let latestIssues = $derived([...issues].sort(byNewest));
+  let lastPublished = $derived(newestDate(issues));
+
+  // H-9: the lead is the newest issue this reader has not opened. When they
+  // have already opened the newest one, say so instead of presenting a
+  // different lead without explanation.
+  let newestIssue = $derived(latestIssues[0] ?? null);
+  let leadIsPersonal = $derived(!!topIssue && !!newestIssue && topIssue.id !== newestIssue.id && !!readMap[newestIssue.id]);
+
+  // H-1: the briefing holds recent issues only. When nothing recent is left
+  // unopened, it becomes "Start here" with the strongest unopened reads.
+  let recentUnread = $derived(
+    latestIssues.filter((issue) => issue.id !== topIssue?.id && !readMap[issue.id] && isWithinDays(issue.sourceDate, RECENT_DAYS, now)),
+  );
+  let briefingIsRecent = $derived(recentUnread.length > 0);
+  let briefingIssues = $derived.by(() => {
+    if (briefingIsRecent) return recentUnread.slice(0, 3);
+    return issues
+      .filter((issue) => issue.id !== topIssue?.id && !readMap[issue.id])
+      .sort((a, b) => b.opinionShift - a.opinionShift)
+      .slice(0, 3);
   });
+  let briefingMinutes = $derived(Math.max(3, briefingIssues.length * 3));
+
+  // H-4: every topic is shown, so the chip counts add up to the heading.
+  let topicClusters = $derived(
+    buildTopicClusters(issues).map((cluster) => ({
+      ...cluster,
+      issues: [...cluster.issues].sort((a, b) => b.opinionShift - a.opinionShift),
+    })),
+  );
+  let topicIssueTotal = $derived(topicClusters.reduce((sum, cluster) => sum + cluster.count, 0));
 
   let activeTopic = $state<string | null>(null);
-  let activeTopicIssues = $derived.by(() => {
-    if (!activeTopic) return [];
-    const cluster = topicClusters.find(c => c.topic === activeTopic);
-    return cluster?.issues.slice(0, 5) ?? [];
-  });
+  let activeCluster = $derived(topicClusters.find((c) => c.topic === activeTopic) ?? null);
+  let activeTopicIssues = $derived(activeCluster?.issues.slice(0, 5) ?? []);
 
   let readyMinutes = $derived(Math.max(4, briefingIssues.length * 3 + (continueIssue ? 2 : 0)));
   let todayDeckCopy = $derived.by(() => {
+    if (mode === 'latest') return 'Every issue, newest first.';
     if (continueIssue) return 'Start with the lead, then resume where you stopped.';
-    return 'Start with the lead, then move into the briefing.';
+    return briefingIsRecent ? 'Start with the lead, then move into the briefing.' : 'Start with the lead, then pick a strong place to start.';
   });
 
-  const buildDate = typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : '';
-  const pullThreshold = 72;
-  const pullMax = 104;
+  // Latest mode renders in pages so the first paint stays light.
+  const LATEST_PAGE = 20;
+  let latestLimit = $state(LATEST_PAGE);
+  let latestVisible = $derived(latestIssues.slice(0, latestLimit));
 
-  let todayShellEl: HTMLDivElement | undefined = $state();
-  let touchTracking = false;
-  let touchStartY = 0;
-  let touchStartX = 0;
-  let touchStartScrollTop = 0;
-  let pullDistance = $state(0);
-  let pullRefreshState = $state<'idle' | 'pulling' | 'ready' | 'refreshing'>('idle');
-
-  // Welcome card — shown once for first-time visitors
-  let welcomeDismissed = $state(typeof localStorage !== 'undefined' && localStorage.getItem('tfa:v1:welcome-dismissed') === '1');
-  function dismissWelcome() { localStorage.setItem('tfa:v1:welcome-dismissed', '1'); welcomeDismissed = true; }
-
-  function resetPullRefresh() {
-    if (pullRefreshState === 'refreshing') return;
-    pullDistance = 0;
-    pullRefreshState = 'idle';
-  }
-
-  function onTouchStart(event: TouchEvent) {
-    if (!todayShellEl || !allowPullRefresh || pullRefreshState === 'refreshing' || event.touches.length !== 1) return;
-    const touch = event.touches[0];
-    touchTracking = true;
-    touchStartY = touch.clientY;
-    touchStartX = touch.clientX;
-    touchStartScrollTop = todayShellEl.scrollTop;
-  }
-
-  function onTouchMove(event: TouchEvent) {
-    if (!todayShellEl || !touchTracking || !allowPullRefresh || pullRefreshState === 'refreshing' || event.touches.length !== 1) return;
-    const touch = event.touches[0];
-    const deltaY = touch.clientY - touchStartY;
-    const deltaX = touch.clientX - touchStartX;
-    const pullingFromTop = touchStartScrollTop <= 0 && todayShellEl.scrollTop <= 0 && deltaY > 0;
-    const mostlyVertical = Math.abs(deltaY) >= Math.abs(deltaX) * 1.15;
-
-    if (!pullingFromTop || !mostlyVertical) {
-      if (pullRefreshState !== 'idle') resetPullRefresh();
-      return;
-    }
-
-    if (event.cancelable) event.preventDefault();
-    pullDistance = Math.min(pullMax, Math.max(0, deltaY * 0.5));
-    pullRefreshState = pullDistance >= pullThreshold ? 'ready' : 'pulling';
-  }
-
-  function onTouchEnd() {
-    touchTracking = false;
-    if (pullRefreshState === 'ready' && onPullRefresh) {
-      pullRefreshState = 'refreshing';
-      pullDistance = 58;
-      onPullRefresh();
-      return;
-    }
-    resetPullRefresh();
-  }
-
-  function onTouchCancel() {
-    touchTracking = false;
-    resetPullRefresh();
-  }
-
-  function formatDate(iso: string): string {
-    if (!iso) return '';
+  function readLabel(id: string): string {
+    const raw = readMap[id];
+    if (!raw) return '';
+    if (raw === 'true') return 'Read';
     try {
-      const d = new Date(iso + 'T00:00:00Z');
-      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+      const state = JSON.parse(raw).state;
+      return state === 'completed' ? 'Read' : state === 'started' ? 'In progress' : '';
     } catch {
-      return iso;
+      return '';
     }
+  }
+
+  const modes: Array<{ key: TodayMode; label: string }> = [
+    { key: 'top', label: 'Top' },
+    { key: 'latest', label: 'Latest' },
+  ];
+
+  function onModeKeyDown(event: KeyboardEvent) {
+    if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    let next: TodayMode;
+    if (event.key === 'Home') next = 'top';
+    else if (event.key === 'End') next = 'latest';
+    else next = mode === 'top' ? 'latest' : 'top';
+    onModeChange?.(next);
+    requestAnimationFrame(() => {
+      document.getElementById(`${idPrefix}-today-mode-${next}`)?.focus();
+    });
+  }
+
+  function formatLongDate(iso: string): string {
+    return absoluteDate(iso) || iso;
   }
 
   function opinionTone(score: number): string {
@@ -222,31 +190,13 @@
   }
 </script>
 
-<div
-  class="today-shell"
-  bind:this={todayShellEl}
-  ontouchstart={onTouchStart}
-  ontouchmove={onTouchMove}
-  ontouchend={onTouchEnd}
-  ontouchcancel={onTouchCancel}
->
-  {#if allowPullRefresh}
-    <div
-      class="pull-refresh"
-      class:pull-refresh--visible={pullRefreshState !== 'idle'}
-      class:pull-refresh--ready={pullRefreshState === 'ready' || pullRefreshState === 'refreshing'}
-      style={`transform: translate3d(-50%, ${Math.round(Math.max(-24, pullDistance - 44))}px, 0); opacity: ${Math.min(1, pullDistance / 36)};`}
-      aria-hidden="true"
-    >
-      {#if pullRefreshState === 'refreshing'}
-        Refreshing…
-      {:else if pullRefreshState === 'ready'}
-        Release to refresh
-      {:else}
-        Pull to refresh
-      {/if}
-    </div>
+{#snippet dateStamp(iso: string | null | undefined)}
+  {#if iso && relativeDate(iso, now)}
+    <time class="date-stamp" datetime={iso} title={absoluteDate(iso)} data-relative-date>{relativeDate(iso, now)}</time>
   {/if}
+{/snippet}
+
+<div class="today-shell">
   <div class="today-wrap">
     {#if hasIssues}
       <div class="today-topline">
@@ -256,25 +206,79 @@
           <p class="today-intro pretty-copy">{todayDeckCopy}</p>
         </div>
         <div class="today-status">
-          <span>about {readyMinutes} min</span>
-          <span class="today-divider"></span>
-          <span>updated {formatDate(buildDate)}</span>
+          {#if mode === 'top'}
+            <span>about {readyMinutes} min</span>
+            <span class="today-divider"></span>
+          {/if}
+          {#if lastPublished}
+            <span data-last-published>Last published <time datetime={lastPublished}>{formatLongDate(lastPublished)}</time></span>
+          {/if}
         </div>
       </div>
 
-      {#if !welcomeDismissed}
-        <div class="welcome-card" role="note" aria-label="Welcome to The Fourth Angle">
+      <div class="today-modes" role="tablist" aria-label="Today view">
+        {#each modes as option}
+          <button
+            id={`${idPrefix}-today-mode-${option.key}`}
+            class="today-mode"
+            class:today-mode--active={mode === option.key}
+            role="tab"
+            type="button"
+            aria-selected={mode === option.key}
+            aria-controls={`${idPrefix}-today-mode-panel`}
+            tabindex={mode === option.key ? 0 : -1}
+            onclick={() => onModeChange?.(option.key)}
+            onkeydown={onModeKeyDown}
+            data-today-mode={option.key}
+          >{option.label}</button>
+        {/each}
+      </div>
+
+      {#if showWelcome}
+        <div class="welcome-card" role="note" aria-label="Welcome to The Fourth Angle" data-prompt="welcome">
           <div class="welcome-content">
-            <p class="welcome-text"><strong>The Fourth Angle</strong> is a non-partisan Malaysian issues platform. We show you what every side left out — then let you decide.</p>
+            <p class="welcome-text"><strong>The Fourth Angle</strong> is a nonpartisan Malaysian issues platform. We show you what every side left out, then let you decide.</p>
             <p class="welcome-text">The <strong>Opinion Shift</strong> number on each issue tells you how much you would miss by reading only the headline. Higher means more hidden complexity.</p>
             <a href="/about" class="welcome-link">How this works <span aria-hidden="true">→</span></a>
           </div>
-          <button class="welcome-dismiss" onclick={dismissWelcome} aria-label="Dismiss welcome message">&times;</button>
+          <button class="welcome-dismiss" onclick={() => onDismissWelcome?.()} aria-label="Dismiss welcome message">&times;</button>
         </div>
       {/if}
 
+      <div
+        id={`${idPrefix}-today-mode-panel`}
+        class="today-mode-panel"
+        role="tabpanel"
+        aria-labelledby={`${idPrefix}-today-mode-${mode}`}
+      >
+      {#if mode === 'latest'}
+        <section class="latest-section" aria-labelledby={`${idPrefix}-latest-heading`}>
+          <h2 id={`${idPrefix}-latest-heading`} class="panel-title">All {latestIssues.length} issues</h2>
+          <ol class="latest-list" data-latest-list>
+            {#each latestVisible as issue (issue.id)}
+              {@const lens = primaryLens(issue.cards)}
+              {@const state = readLabel(issue.id)}
+              <li>
+                <button class="latest-item" onclick={() => onOpenIssue?.(issue)}>
+                  <div class="latest-meta">
+                    {@render dateStamp(issue.sourceDate)}
+                    {#if lens}<span class="latest-topic">{lens}</span>{/if}
+                    {#if state}<span class="latest-state">{state}</span>{/if}
+                  </div>
+                  <div class="latest-headline balance-title">{issue.headline}</div>
+                  <div class="latest-context pretty-copy">{issue.context}</div>
+                  <div class="latest-score" style="color:{opinionColor(issue.opinionShift)};"><span class="sr-only">Opinion Shift </span>{issue.opinionShift} <span class="latest-score-label">{opinionLabel(issue.opinionShift)}</span></div>
+                </button>
+              </li>
+            {/each}
+          </ol>
+          {#if latestIssues.length > latestLimit}
+            <button class="latest-more" onclick={() => { latestLimit += LATEST_PAGE; }}>Show {Math.min(LATEST_PAGE, latestIssues.length - latestLimit)} more</button>
+          {/if}
+        </section>
+      {:else}
       {#if topIssue && onOpenIssue}
-        <article class="hero-entry" aria-labelledby="lead-issue-title">
+        <article class="hero-entry" aria-labelledby={`${idPrefix}-lead-issue-title`}>
         <!-- Named by its visible content (WCAG 2.5.3): no aria-label, and the art is
              decorative here because the headline is already part of the name. -->
         <button
@@ -289,8 +293,11 @@
           <div class="hero-scrim"></div>
           <div class="hero-grid">
             <div class="hero-copy">
-              <div class="hero-badge">Editor's Pick</div>
-              <h2 id="lead-issue-title" class="hero-headline balance-title">{topIssue.headline}</h2>
+              <div class="hero-badge-row">
+                <span class="hero-badge" data-lead-label>{leadIsPersonal ? "You've opened the latest issue. Next up:" : 'Latest issue'}</span>
+                {@render dateStamp(topIssue.sourceDate)}
+              </div>
+              <h2 id={`${idPrefix}-lead-issue-title`} class="hero-headline balance-title">{topIssue.headline}</h2>
               <p class="hero-context pretty-copy">{topIssue.context}</p>
             </div>
             <div class="hero-shift">
@@ -309,10 +316,10 @@
       {/if}
 
       {#if featuredDossiers.length > 0}
-        <section class="featured-dossiers" aria-labelledby="featured-dossiers-heading">
-          <h2 id="featured-dossiers-heading" class="sr-only">Featured Dossier</h2>
+        <section class="featured-dossiers" aria-labelledby={`${idPrefix}-featured-dossiers-heading`}>
+          <h2 id={`${idPrefix}-featured-dossiers-heading`} class="sr-only">Featured Dossier</h2>
           {#each featuredDossiers as d (d.id)}
-            <a class="dossier-card" href={d.href} data-dossier-id={d.id} aria-label="Dossier {d.id}: {d.title} — {d.subtitle}">
+            <a class="dossier-card" href={d.href} data-dossier-id={d.id}>
               <div class="dossier-card__body">
                 <div class="dossier-card__top">
                   <span class="dossier-card__pill">DOSSIER · {d.id}</span>
@@ -321,10 +328,14 @@
                 <div class="dossier-card__title">{d.title}</div>
                 <div class="dossier-card__subtitle">{d.subtitle}</div>
                 <div class="dossier-card__meta">
+                  {#if d.sourceDate && relativeDate(d.sourceDate, now)}
+                    <time datetime={d.sourceDate} title={absoluteDate(d.sourceDate)} data-relative-date>{relativeDate(d.sourceDate, now)}</time>
+                    <span class="dot" aria-hidden="true">·</span>
+                  {/if}
                   <span>{d.estReadMinutes} min read</span>
-                  <span class="dot">·</span>
+                  <span class="dot" aria-hidden="true">·</span>
                   <span>Long-form editorial</span>
-                  <span class="dot">·</span>
+                  <span class="dot" aria-hidden="true">·</span>
                   <span>{d.primaryLens} lens</span>
                 </div>
               </div>
@@ -335,10 +346,11 @@
 
       <div class="today-grid">
         {#if continueIssue && onOpenIssue}
-        <section class="today-panel" aria-labelledby="continue-reading-heading">
+        <section class="today-panel" aria-labelledby={`${idPrefix}-continue-reading-heading`}>
           <div class="panel-kicker">Continue Reading</div>
-          <h2 id="continue-reading-heading" class="sr-only">Continue Reading</h2>
+          <h2 id={`${idPrefix}-continue-reading-heading`} class="sr-only">Continue Reading</h2>
             <button class="panel-issue" onclick={() => onOpenIssue?.(continueIssue)}>
+              {@render dateStamp(continueIssue.sourceDate)}
               <div class="panel-issue-title balance-title">{continueIssue.headline}</div>
               <div class="panel-issue-copy pretty-copy">Next: angle {nextContinueAngle}. Pick up where the argument starts to turn.</div>
               <div class="panel-progress-row">
@@ -351,15 +363,23 @@
         </section>
         {/if}
 
-        <section class="today-panel" aria-labelledby="daily-briefing-heading">
-          <div class="panel-kicker">Daily Briefing</div>
-          <h2 id="daily-briefing-heading" class="panel-title">Three strong places to start.</h2>
-          <div class="panel-subtitle">High-yield reads in about {Math.max(6, briefingIssues.length * 3)} minutes.</div>
+        {#if briefingIssues.length > 0}
+        <section class="today-panel" aria-labelledby={`${idPrefix}-briefing-heading`} data-briefing={briefingIsRecent ? 'recent' : 'start-here'}>
+          <div class="panel-kicker">{briefingIsRecent ? 'Daily Briefing' : 'Start Here'}</div>
+          <h2 id={`${idPrefix}-briefing-heading`} class="panel-title">
+            {#if briefingIsRecent}
+              New this week.
+            {:else}
+              {briefingIssues.length === 1 ? 'A strong place to start.' : `${briefingIssues.length === 2 ? 'Two' : 'Three'} strong places to start.`}
+            {/if}
+          </h2>
+          <div class="panel-subtitle">{briefingIsRecent ? `Published in the last ${RECENT_DAYS} days.` : 'The biggest gaps between headline and story.'} About {briefingMinutes} minutes.</div>
           <div class="brief-list">
-            {#each briefingIssues as issue}
+            {#each briefingIssues as issue (issue.id)}
               <button class="brief-item" onclick={() => onOpenIssue?.(issue)}>
                 <div class="brief-score" style="color:{opinionColor(issue.opinionShift)};" title="{issue.opinionShift} — {opinionLabel(issue.opinionShift)}: Reading only the headline would hide about {issue.opinionShift}% of the story">{issue.opinionShift}</div>
                 <div class="brief-copy">
+                  {@render dateStamp(issue.sourceDate)}
                   <div class="brief-headline balance-title">{issue.headline}</div>
                   <div class="brief-context pretty-copy">{issue.context}</div>
                 </div>
@@ -367,60 +387,67 @@
             {/each}
           </div>
         </section>
+        {/if}
       </div>
 
       {#if topicClusters.length > 0}
-        <section class="topic-section" aria-labelledby="topic-heading">
+        <section class="topic-section" aria-labelledby={`${idPrefix}-topic-heading`}>
           <div class="topic-header">
             <div class="panel-kicker">Browse by Topic</div>
-            <h2 id="topic-heading" class="panel-title">{issues.length} issues across {topicClusters.length} topics.</h2>
+            <h2 id={`${idPrefix}-topic-heading`} class="panel-title" data-topic-summary>{topicIssueTotal} issues across {topicClusters.length} topics.</h2>
           </div>
-          <div class="topic-chips" role="tablist" aria-label="Topic filters">
-            {#each topicClusters as cluster}
+          <div class="topic-chips" role="group" aria-label="Topics">
+            {#each topicClusters as cluster (cluster.topic)}
               <button
                 class="topic-chip"
                 class:topic-chip--active={activeTopic === cluster.topic}
                 onclick={() => { activeTopic = activeTopic === cluster.topic ? null : cluster.topic; }}
-                role="tab"
-                aria-selected={activeTopic === cluster.topic}
-                aria-label="{cluster.topic}: {cluster.count} issues"
+                aria-expanded={activeTopic === cluster.topic}
+                aria-controls={`${idPrefix}-topic-panel`}
+                data-topic-chip={cluster.slug}
               >
                 <span class="topic-chip-name">{cluster.topic}</span>
-                <span class="topic-chip-count">{cluster.count}</span>
+                <span class="topic-chip-count" data-topic-count>{cluster.count}</span>
               </button>
             {/each}
           </div>
-          {#if activeTopic && activeTopicIssues.length > 0}
-            <div class="topic-issues" role="tabpanel" aria-label="{activeTopic} issues">
-              {#each activeTopicIssues as issue}
+          <div id={`${idPrefix}-topic-panel`} class="topic-issues" hidden={!activeCluster}>
+            {#if activeCluster}
+              {#each activeTopicIssues as issue (issue.id)}
                 <button class="topic-issue" onclick={() => onOpenIssue?.(issue)}>
                   <span class="topic-issue-score" style="color:{issueOpinionColor(issue.opinionShift)};">{issue.opinionShift}</span>
                   <div class="topic-issue-copy">
+                    {@render dateStamp(issue.sourceDate)}
                     <div class="topic-issue-headline balance-title">{issue.headline}</div>
                     <div class="topic-issue-context pretty-copy">{issue.context}</div>
                   </div>
                 </button>
               {/each}
-            </div>
-          {/if}
+              <a class="topic-all-link" href={topicHref(activeCluster.topic)}>All {activeCluster.count} {activeCluster.topic} issues <span aria-hidden="true">→</span></a>
+            {/if}
+          </div>
         </section>
       {/if}
+      {/if}
+      </div>
 
       <footer class="today-footer">
         {#if quote}<div class="today-quote">"{quote}"</div>{/if}
         <div class="today-ethos">Editorial ethos</div>
         <nav class="today-footer-links" aria-label="Footer navigation">
           <a href="/about">How This Works</a>
-          <span class="footer-dot" aria-hidden="true">&middot;</span>
           <a href="/disclaimer">Disclaimer</a>
-          <span class="footer-dot" aria-hidden="true">&middot;</span>
           <a href="/verify">Verify Content</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/corrections">Corrections</a>
+          <a href="/contact">Contact</a>
         </nav>
       </footer>
     {:else if !loading}
       <div class="coming-soon">
-        <div class="today-kicker">Coming Soon</div>
-        <h1 class="today-title">New issues publish three times a week.</h1>
+        <div class="today-kicker">Today</div>
+        <h1 class="today-title">No issues to show right now.</h1>
+        <p class="today-intro pretty-copy">Check back soon, or read <a class="welcome-link" href="/about">how this works</a>.</p>
         {#if quote}<p class="today-quote">"{quote}"</p>{/if}
       </div>
     {/if}
@@ -428,52 +455,17 @@
 </div>
 
 <style>
+  /* Not a scroll container: the document scrolls (X-8), so mobile browser
+     bars collapse, native pull-to-refresh and scroll restoration work. */
   .today-shell {
     position: relative;
-    flex: 1;
-    overflow-y: auto;
+    flex: 1 0 auto;
     background:
       radial-gradient(circle at top right, rgba(210, 140, 40, 0.08), transparent 28%),
       linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg) 22%, var(--bg) 100%);
   }
 
-  .pull-refresh {
-    position: sticky;
-    top: 10px;
-    left: 50%;
-    z-index: 5;
-    width: fit-content;
-    margin: 0 0 -32px;
-    padding: 8px 14px;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--border-subtle);
-    background: rgba(255, 255, 255, 0.88);
-    color: var(--text-secondary);
-    font-size: var(--text-sm);
-    font-weight: 700;
-    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08);
-    pointer-events: none;
-    transition: opacity 0.18s ease, transform 0.18s ease, border-color 0.18s ease, color 0.18s ease;
-    will-change: transform, opacity;
-  }
-
-  .pull-refresh--ready {
-    border-color: rgba(184, 92, 0, 0.22);
-    color: var(--text-primary);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .pull-refresh {
-      background: rgba(34, 31, 27, 0.92);
-      border-color: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 16px 28px rgba(0, 0, 0, 0.28);
-    }
-
-    .pull-refresh--ready {
-      border-color: rgba(200, 150, 58, 0.24);
-    }
-  }
-
+  /* Capped canvas (H-8): no tier grows it past 1080px, so lines stay readable. */
   .today-wrap {
     max-width: 1080px;
     margin: 0 auto;
@@ -501,17 +493,23 @@
   }
 
   .welcome-text {
-    font-size: var(--text-sm);
+    font-size: var(--text-body);
     line-height: 1.55;
     color: var(--text-secondary);
     margin: 0;
+    max-width: 68ch;
   }
 
+  /* Links in running text are underlined (WCAG 1.4.1, audit X-10). */
   .welcome-link {
-    font-size: var(--text-sm);
     font-weight: 700;
     color: var(--score-medium);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .welcome-content .welcome-link {
+    font-size: var(--text-sm);
   }
 
   .welcome-dismiss {
@@ -522,13 +520,183 @@
     font-size: var(--text-body);
     color: var(--text-muted);
     padding: 4px 8px;
-    min-width: 32px;
-    min-height: 32px;
+    min-width: 44px;
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-sm);
     flex-shrink: 0;
+  }
+
+  /* ── Top / Latest (H-2) ── */
+  .today-modes {
+    display: inline-grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: fit-content;
+    padding: 4px;
+    gap: 4px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-elevated);
+  }
+
+  .today-mode {
+    min-height: 40px;
+    min-width: 88px;
+    padding: 0 18px;
+    border: none;
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: var(--text-ui);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .today-mode--active {
+    background: var(--bg);
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(17, 24, 39, 0.08);
+  }
+
+  .today-mode-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* ── Dates (H-1) ── */
+  .date-stamp {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.01em;
+  }
+
+  .panel-issue .date-stamp,
+  .brief-copy .date-stamp,
+  .topic-issue-copy .date-stamp {
+    margin-bottom: 4px;
+  }
+
+  .hero-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+  }
+
+  .hero-badge-row .date-stamp {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  /* ── Latest list ── */
+  .latest-section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .latest-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+    gap: 12px;
+  }
+
+  .latest-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg);
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  @media (hover: hover) {
+    .latest-item:hover {
+      border-color: var(--border-divider);
+      transform: translateY(-1px);
+    }
+  }
+
+  .latest-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 10px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .latest-topic,
+  .latest-state {
+    font-size: var(--text-sm);
+  }
+
+  .latest-state {
+    color: var(--status-green-text);
+  }
+
+  .latest-headline {
+    font-size: var(--text-body);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+
+  .latest-context {
+    font-size: var(--text-ui);
+    line-height: 1.5;
+    color: var(--text-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .latest-score {
+    margin-top: auto;
+    font-family: var(--font-display);
+    font-size: var(--text-body);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .latest-score-label {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .latest-more {
+    align-self: center;
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-divider);
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    font: inherit;
+    font-size: var(--text-ui);
+    font-weight: 700;
+    cursor: pointer;
   }
 
   .today-topline {
@@ -649,6 +817,7 @@
 
   .hero-badge {
     display: inline-flex;
+    text-align: left;
     align-items: center;
     width: fit-content;
     padding: 8px 12px;
@@ -934,6 +1103,10 @@
     gap: 8px;
   }
 
+  .topic-issues[hidden] {
+    display: none;
+  }
+
   .topic-issue {
     display: flex;
     align-items: flex-start;
@@ -981,7 +1154,7 @@
   }
 
   .topic-issue-context {
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
     color: var(--text-secondary);
     line-height: 1.5;
     margin-top: 4px;
@@ -1026,26 +1199,42 @@
   .today-footer-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0 4px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  /* 44px targets (X-6). */
   .today-footer-links a {
-    font-size: var(--text-xs);
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 10px;
+    font-size: var(--text-sm);
     font-weight: 600;
     color: var(--text-muted);
     text-decoration: none;
+    border-radius: var(--radius-sm);
     transition: color 0.15s ease;
   }
 
   .today-footer-links a:hover {
     color: var(--text-primary);
+    text-decoration: underline;
   }
 
-  .footer-dot {
-    color: var(--text-faint);
-    font-size: var(--text-xs);
+  .topic-all-link {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 0 4px;
+    font-size: var(--text-ui);
+    font-weight: 700;
+    color: var(--score-info);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
   }
 
   .coming-soon {
@@ -1077,97 +1266,11 @@
     }
   }
 
-  /* Widescreen tiers — only adjust full-width sections (today-wrap padding,
-     topic-issues grid). today-grid and brief-list use auto-fit at the base
-     and adapt to their container width without manual column overrides. */
-
-  @media (min-width: 1600px) {
-    .today-wrap {
-      max-width: 1560px;
-      padding: clamp(32px, 3vw, 48px) clamp(24px, 2.5vw, 40px) 56px;
-      gap: clamp(24px, 2vw, 32px);
-    }
-
-    .hero-entry {
-      max-width: 100%;
-    }
-
-    .topic-issues {
+  @media (min-width: 1024px) {
+    .topic-issues:not([hidden]) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    .today-wrap {
-      max-width: 1820px;
-      padding: clamp(36px, 2.6vw, 56px) clamp(32px, 2.4vw, 56px) 64px;
-    }
-
-    .topic-issues {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: 2560px) {
-    .today-wrap {
-      max-width: 2280px;
-      padding: clamp(44px, 2.4vw, 64px) clamp(40px, 2.4vw, 72px) 72px;
-    }
-
-    .topic-issues {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-  }
-
-  @media (min-width: 3440px) {
-    .today-wrap {
-      max-width: 3040px;
-      padding: clamp(52px, 2.2vw, 80px) clamp(56px, 2.4vw, 96px) 80px;
-    }
-
-    .topic-issues {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-  }
-
-  @media (min-width: 3840px) {
-    .today-wrap {
-      max-width: 3400px;
-      padding: 80px 96px 88px;
-    }
-
-    .topic-issues {
-      grid-template-columns: repeat(5, 1fr);
-      gap: 24px;
-    }
-  }
-
-  @media (min-width: 5120px) {
-    .today-wrap {
-      max-width: 4000px;
-      padding: 88px 120px 96px;
-    }
-
-    .topic-issues {
-      grid-template-columns: repeat(5, 1fr);
-      gap: 28px;
-    }
-  }
-
-  @media (min-width: 7680px) {
-    .today-wrap {
-      max-width: 5200px;
-      padding: 96px 144px 104px;
-    }
-
-    .topic-issues {
-      grid-template-columns: repeat(6, 1fr);
-      gap: 32px;
     }
   }
 
@@ -1204,6 +1307,7 @@
     .today-status {
       flex-wrap: wrap;
       white-space: normal;
+      padding: 8px 14px;
     }
 
     .hero-card {
@@ -1265,6 +1369,21 @@
 
     .today-divider {
       background: rgba(255, 255, 255, 0.16);
+    }
+
+    .today-modes {
+      background: rgba(34, 31, 27, 0.9);
+      border-color: var(--border-divider);
+    }
+
+    .today-mode--active {
+      background: rgba(200, 150, 58, 0.16);
+      box-shadow: none;
+    }
+
+    .latest-item {
+      background: rgba(25, 24, 22, 0.96);
+      border-color: var(--border-divider);
     }
 
     .today-panel {
@@ -1334,7 +1453,7 @@
   }
   .dossier-card__pill {
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -1345,7 +1464,7 @@
   }
   .dossier-card__series {
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.16em;
     text-transform: uppercase;

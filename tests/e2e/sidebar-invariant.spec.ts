@@ -23,6 +23,12 @@ async function openSectionedFeed(page: Page) {
   await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
   // The sections render with the feed, which arrives after mount.
   await expect(page.locator('[data-section]').first()).toBeAttached();
+  // 768-1023 px: the sidebar is a drawer behind the header's Browse toggle.
+  const browse = page.locator('[data-browse-toggle]');
+  if (await browse.isVisible()) {
+    await browse.click();
+    await expect(browse).toHaveAttribute('aria-expanded', 'true');
+  }
 }
 
 test.describe('Four-section sidebar invariant', () => {

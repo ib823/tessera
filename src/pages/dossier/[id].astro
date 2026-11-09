@@ -21,6 +21,8 @@
 
 import type { GetStaticPaths } from 'astro';
 import DossierReader from '../../components/DossierReader.svelte';
+import DossierSiteNav from '../../components/DossierSiteNav.astro';
+import DossierSiteFooter from '../../components/DossierSiteFooter.astro';
 import { getAllDossiers, getDossierById } from '../../data/dossiers';
 import '../../styles/dossier.css';
 
@@ -170,6 +172,8 @@ const jsonLd = {
   </head>
 
   <body>
+    <DossierSiteNav />
     <DossierReader dossier={dossier} client:load />
+    <DossierSiteFooter />
   </body>
 </html>

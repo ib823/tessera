@@ -47,6 +47,9 @@ function parseReadState(raw: string | undefined): ReadState | null {
 
 export type SortMode = 'latest' | 'shift';
 
+/** Today's two modes: the editor's front page, or every issue newest first. */
+export type TodayMode = 'top' | 'latest';
+
 export function buildFeedSections(
   issues: IssueSummary[],
   readMap: Record<string, string>,

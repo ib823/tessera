@@ -79,6 +79,25 @@ body.app-shell-root #main-content {
 }
 
 /*
+  Today lets the document scroll (audit X-8): App sets html.app-doc-scroll
+  while a surface can grow with its content. Mobile browser bars collapse,
+  pull-to-refresh and scroll restoration are native, and keyboard users
+  scroll the page without a focusable region.
+*/
+html.app-doc-scroll body.app-shell-root,
+html.app-doc-scroll body.app-shell-root #main-content {
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: visible;
+}
+
+html.app-doc-scroll,
+html.app-doc-scroll body {
+  overscroll-behavior-y: auto;
+}
+
+/*
   Phase 3 progressive enhancement (per brief-v3).
 
   Baseline: sensible wrapping with manual hyphens and no aggressive

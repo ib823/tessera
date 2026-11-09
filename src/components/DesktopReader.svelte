@@ -593,27 +593,42 @@
     gap: 8px;
   }
 
+  /* X-6 (WCAG 2.5.8): the button is a 24px-tall target; the 8px bar is
+     drawn by ::before, so the look is unchanged. */
   .reader-progress-segment {
+    position: relative;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .reader-progress-segment::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
     height: 8px;
+    box-sizing: border-box;
     border-radius: var(--radius-pill);
     background: var(--bg-elevated);
     border: 1px solid var(--border-subtle);
-    cursor: pointer;
-    padding: 0;
     transition: background 0.2s ease-out, border-color 0.2s ease-out, transform 0.15s ease;
   }
 
-  .reader-progress-segment:hover {
+  .reader-progress-segment:hover::before {
     transform: scaleY(1.4);
     border-color: var(--text-muted);
   }
 
-  .reader-progress-segment--done {
+  .reader-progress-segment--done::before {
     background: rgba(46, 125, 50, 0.14);
     border-color: rgba(46, 125, 50, 0.18);
   }
 
-  .reader-progress-segment--active {
+  .reader-progress-segment--active::before {
     background: rgba(210, 140, 40, 0.18);
     border-color: rgba(210, 140, 40, 0.26);
   }
