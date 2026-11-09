@@ -8,14 +8,16 @@
   import IssueSources from './IssueSources.svelte';
   import IssueMeta from './IssueMeta.svelte';
   import IssueChanges from './IssueChanges.svelte';
+  import VerifyCopyButton from './VerifyCopyButton.svelte';
   import { CARD_TYPES, opinionColor } from '../data/issue-types';
   import { markCompleted, updateProgress, savePosition } from '../stores/reader';
   import { createSpring, animateSpring, SPRING_DEFAULT, SPRING_SNAPPY, SPRING_RUBBER, type SpringConfig } from '../lib/spring';
   import { createVelocityTracker, classifyGesture, rubberBand } from '../lib/velocity';
   import { haptic, stagger, tween, ease } from '../lib/animation';
-  import { withBuildId } from '../lib/build';
   import { lockScroll, unlockScroll } from '../lib/scroll-lock';
   import { observeScroll, applyFadeGradient, shouldBlockSwipe, type ScrollState } from '../lib/scroll-physics';
+  import { initialCardFromLocation } from '../lib/card-anchor';
+  import { resolveRelatedIssue, type RelatedPick } from '../lib/related-next';
 
   interface Card {
     t: 'hook' | 'fact' | 'reframe' | 'analogy' | 'view';
@@ -35,6 +37,8 @@
     stageScores?: { pa: number; ba: number; fc: number; sr: number; af?: number; ct?: number };
     finalScore?: number;
     legacyAudit?: boolean;
+    sourceDate?: string;
+    related?: string[];
   }
 
   interface Connection {
@@ -65,10 +69,18 @@
 
   let patternSheetOpen = $state(false);
 
-  let current = $state(Math.min(initialCardIndex, 5));
+  // A card deep link (/issue/{id}#card-N, SH-2) wins over the saved position.
+  const hashCard = initialCardFromLocation(issue.id, issue.cards.length);
+  const startCard = hashCard ?? Math.min(initialCardIndex, 5);
+  let current = $state(startCard);
   let completed = $state(false);
   // Mark all cards up to initial position as read
-  let readCards = $state(new Set<number>(Array.from({ length: Math.min(initialCardIndex, 5) + 1 }, (_, i) => i)));
+  let readCards = $state(new Set<number>(Array.from({ length: startCard + 1 }, (_, i) => i)));
+  // Arrow keys and arrow buttons pressed mid-transition queue here instead of
+  // being dropped (A-7); positive = forward, negative = back.
+  let queuedSteps = 0;
+  // "Continue: related" on the completion screen (A-8).
+  let relatedPick = $state<RelatedPick | null>(null);
   let shareOpen = $state(false);
   let shareCardIndex: number | null = $state(null);
   let showSwipeHint = $state(false);
@@ -146,7 +158,20 @@
       completionButtonsVisible = [];
       bigTextVisible = true;
       subTextVisible = true;
+      queuedSteps = 0;
     }
+  });
+
+  // Resolve the related issue for the completion screen from the cached feed
+  // and fact graph (both already loaded by the app shell).
+  $effect(() => {
+    const target = issue;
+    relatedPick = null;
+    let cancelled = false;
+    resolveRelatedIssue(target).then((pick) => {
+      if (!cancelled) relatedPick = pick;
+    });
+    return () => { cancelled = true; };
   });
 
   // Auto-fit via ResizeObserver: fires when card-center is created, resized, or re-laid out.
@@ -417,6 +442,7 @@
           cancelAnimation = null;
           announceCard();
           autoFitCardText();
+          drainQueuedStep();
           return;
         }
 
@@ -442,11 +468,13 @@
           // A8: Haptic pulse on settle
           haptic(3);
           announceCard();
+          drainQueuedStep();
         });
       } else {
         animating = false;
         cancelAnimation = null;
         announceCard();
+        drainQueuedStep();
       }
     });
   }
@@ -482,6 +510,7 @@
       resetDotStyles();
       animating = false;
       cancelAnimation = null;
+      drainQueuedStep();
     });
   }
 
@@ -542,15 +571,38 @@
     goTo(current - 1, 'left');
   }
 
+  /** Step forward (+1) or back (-1), queuing the step if a transition is running. */
+  function requestStep(direction: 1 | -1) {
+    if (animating) {
+      queuedSteps = Math.max(-3, Math.min(3, queuedSteps + direction));
+      return;
+    }
+    if (direction > 0) next();
+    else prev();
+  }
+
+  /** Run one queued step once the current transition has settled. */
+  function drainQueuedStep() {
+    if (queuedSteps === 0 || animating) return;
+    const direction = queuedSteps > 0 ? 1 : -1;
+    queuedSteps -= direction;
+    if (direction > 0 && completed) {
+      queuedSteps = 0;
+      return;
+    }
+    if (direction > 0) next();
+    else prev();
+  }
+
   function showCompletion() {
+    queuedSteps = 0;
     completed = true;
     markCompleted(issue.id, issue.cards.length);
     completionVisible = true;
     announceCompletion();
     // Stagger buttons in
-    const btnCount = onReturnHome && onNext ? 3 : 2;
     completionButtonsVisible = [];
-    stagger(btnCount, 120, 500, (i) => {
+    stagger(1, 120, 500, () => {
       completionButtonsVisible = [...completionButtonsVisible, true];
     });
   }
@@ -614,6 +666,8 @@
     if (completed) return;
     if (e.button !== 0) return;
     if ((e.target as HTMLElement)?.closest('button, a, input')) return;
+    // A drag takes over from any queued key presses.
+    queuedSteps = 0;
 
     // No scroll blocking — card content auto-fits, never scrolls
 
@@ -840,12 +894,10 @@
     }
     if (e.key === 'ArrowRight') {
       e.preventDefault();
-      if (animating) return;
-      next();
+      requestStep(1);
     } else if (e.key === 'ArrowLeft') {
       e.preventDefault();
-      if (animating) return;
-      prev();
+      requestStep(-1);
     } else if (e.key === 'Escape') {
       e.preventDefault();
       onClose();
@@ -938,6 +990,9 @@
     focusOrigin = document.activeElement;
     toggleBackgroundInert(true);
     overlayEl?.focus();
+    // The browser jumped the window to the static article's #card-N section
+    // before the reader opened; start the page underneath from the top.
+    if (hashCard !== null) window.scrollTo(0, 0);
     lockScroll();
 
     // Acquire wake lock
@@ -1095,19 +1150,11 @@
     {/if}
   </div>
 
-  <!-- Hero image -->
+  <!-- Deck: the issue summary from the static article stays as card 1's
+       lead-in (A-2). It replaces the decorative hero, which added no
+       information and pushed card 1 down (A-5). -->
   {#if current === 0 && !completed}
-    <!-- Explicit width: as a centred flex item the hero would otherwise size to the
-         image's natural width, which is 0 until it loads, then jump to ~183px tall. -->
-    <div class="reader-hero" style="width:100%;max-width:480px;padding:0 20px;margin-bottom:8px;">
-      <div style="border-radius: var(--radius-md);overflow:hidden;background:var(--bg-sunken);max-width:440px;margin:0 auto;">
-        <picture>
-          <source type="image/avif" srcset={`${withBuildId(`/og/issue-${issue.id}-640w.avif`)} 640w, ${withBuildId(`/og/issue-${issue.id}-960w.avif`)} 960w`} sizes="(max-width: 460px) 100vw, 440px" />
-          <source type="image/webp" srcset={`${withBuildId(`/og/issue-${issue.id}-640w.webp`)} 640w, ${withBuildId(`/og/issue-${issue.id}-960w.webp`)} 960w`} sizes="(max-width: 460px) 100vw, 440px" />
-          <img src={withBuildId(`/og/issue-${issue.id}-960w.jpg`)} srcset={`${withBuildId(`/og/issue-${issue.id}-640w.jpg`)} 640w, ${withBuildId(`/og/issue-${issue.id}-960w.jpg`)} 960w`} sizes="(max-width: 460px) 100vw, 440px" alt="" width="960" height="504" loading="eager" decoding="async" fetchpriority="high" style="width:100%;aspect-ratio:1.91/1;object-fit:cover;display:block;" onerror={(e) => { const w = (e.currentTarget as HTMLElement)?.parentElement?.parentElement?.parentElement; if (w) w.style.display = 'none'; }} />
-        </picture>
-      </div>
-    </div>
+    <p class="reader-deck">{issue.context}</p>
   {/if}
 
   <!-- Card area -->
@@ -1146,8 +1193,22 @@
             </button>
           {/if}
 
-          <!-- C6: Next issue preview -->
-          {#if nextIssueHeadline}
+          <!-- A-8: a related issue first (curated links, then the fact graph);
+               the feed order stays available as "Next in Latest". -->
+          {#if relatedPick && onNavigateToIssue}
+            <button
+              class="continue-related completion-btn-enter"
+              onclick={() => { if (relatedPick) onNavigateToIssue?.(relatedPick.id); }}
+              data-continue-related={relatedPick.id}
+            >
+              <span class="continue-related__kicker">Continue: related</span>
+              <span class="continue-related__headline">{relatedPick.headline}</span>
+              {#if relatedPick.sharedEntities.length > 0}
+                <span class="continue-related__why">Shares {relatedPick.sharedEntities.slice(0, 3).join(', ')}</span>
+              {/if}
+            </button>
+          {:else if nextIssueHeadline}
+            <!-- C6: Next issue preview -->
             <div style="width:100%;max-width:340px;padding:10px 14px;background:var(--bg-sunken);border-radius: var(--radius-md);margin:4px 0;">
               <div style="font-size: var(--text-micro);font-weight:600;color:var(--text-faint);text-transform:uppercase;">Up next</div>
               <div style="font-size: var(--text-sm);font-weight:600;color:var(--text-secondary);line-height:1.35;margin-top:2px;">{nextIssueHeadline}</div>
@@ -1155,22 +1216,17 @@
           {/if}
 
           <div class="completion-buttons">
-            {#if completionButtonsVisible.length > 1}
+            {#if completionButtonsVisible.length > 0}
+              {#if onNext}
+                <button class={relatedPick ? 'btn-secondary completion-btn-enter' : 'btn-next completion-btn-enter'} onclick={onNext}>{relatedPick ? 'Next in Latest' : 'Next topic'}</button>
+              {/if}
               {#if onReturnHome}
-                <button class="btn-done completion-btn-enter" onclick={onReturnHome}>Back to Today</button>
-              {:else if onNext}
-                <button class="btn-next completion-btn-enter" onclick={onNext}>Next topic</button>
-              {:else}
+                <button class={onNext ? 'btn-secondary completion-btn-enter' : 'btn-done completion-btn-enter'} onclick={onReturnHome}>Back to Today</button>
+              {:else if !onNext}
                 <button class="btn-done completion-btn-enter" onclick={onClose}>Done</button>
               {/if}
-            {/if}
-            {#if completionButtonsVisible.length > 2}
-              {#if onNext}
-                <button class="btn-next completion-btn-enter" onclick={onNext}>Next topic</button>
-              {/if}
-            {/if}
-            {#if completionButtonsVisible.length > 0}
               <button class="btn-share completion-btn-enter" onclick={() => { shareCardIndex = null; shareOpen = true; }} aria-expanded={shareOpen} aria-haspopup="dialog">Share</button>
+              <div class="completion-btn-enter" style="width:100%;"><VerifyCopyButton {issue} variant="link" /></div>
             {/if}
           </div>
           <PushPrompt />
@@ -1244,19 +1300,25 @@
         </div>
       </div>
 
-      <!-- Nav chevrons -->
-      {#if current > 0}
-        <button class="nav-chevron nav-prev" onclick={prev} aria-label="Previous card">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-      {/if}
-      {#if current < totalCards - 1}
-        <button class="nav-chevron nav-next" onclick={next} aria-label="Next card">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-      {/if}
     {/if}
   </div>
+
+  <!-- Card navigation sits under the card, in its own row, so the arrows
+       never cover card text at narrow widths (A-4). -->
+  {#if !completed}
+    <div class="card-nav">
+      {#if current > 0}
+        <button class="nav-chevron" onclick={() => requestStep(-1)} aria-label="Previous card">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+      {:else}
+        <span class="nav-chevron-spacer" aria-hidden="true"></span>
+      {/if}
+      <button class="nav-chevron" onclick={() => requestStep(1)} aria-label={current < totalCards - 1 ? 'Next card' : 'Finish reading'}>
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  {/if}
 
   <!-- Bottom safe area spacing (dots removed — 2/6 counter + card type pill + ghost cards are sufficient) -->
   <div style="height:calc(12px + env(safe-area-inset-bottom, 0));flex-shrink:0;"></div>
@@ -1433,6 +1495,37 @@
     hyphens: manual;
   }
 
+  /* A-2: the static article's deck, kept as card 1's summary. */
+  .reader-deck {
+    width: 100%;
+    max-width: 440px;
+    /* Vertical space as margin, not padding, so a clamped deck clips cleanly. */
+    margin: 2px 0 6px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    font-size: var(--text-ui);
+    line-height: 1.5;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+  }
+
+  /* Short phones: keep the deck to a few lines so card 1 still fits. The
+     full text stays in the DOM for screen readers and in the static article. */
+  @media (max-height: 740px) {
+    .reader-deck {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .reader-deck {
+      -webkit-line-clamp: 2;
+    }
+  }
+
   .legacy-caveat {
     display: flex;
     align-items: flex-start;
@@ -1554,11 +1647,12 @@
     white-space: nowrap;
   }
 
+  /* A-5: text starts under the card label instead of floating mid-card. */
   .card-center {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 14px;
     min-height: 0;
     overflow: hidden;
@@ -1767,6 +1861,68 @@
     }
   }
 
+  .continue-related {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 14px 16px;
+    border-radius: var(--radius-lg);
+    border: none;
+    background: var(--text-primary);
+    color: var(--bg);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .continue-related:hover {
+      background: var(--text-secondary);
+    }
+  }
+
+  .continue-related__kicker {
+    font-size: var(--text-micro);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .continue-related__headline {
+    font-size: var(--text-ui);
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .continue-related__why {
+    font-size: var(--text-xs);
+    opacity: 0.85;
+  }
+
+  .btn-secondary {
+    width: 100%;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-size: var(--text-body);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border-divider);
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .btn-secondary:hover {
+      background: var(--bg-sunken);
+    }
+  }
+
   .btn-share {
     width: 100%;
     padding: 12px 28px;
@@ -1789,7 +1945,8 @@
 
   /* Reduced motion overrides */
   .reduced-motion .check-circle,
-  .reduced-motion .completion-btn-enter {
+  .reduced-motion .completion-btn-enter,
+  .reduced-motion .continue-related {
     animation: none;
   }
 
@@ -1814,35 +1971,43 @@
     transition: none;
   }
 
-  /* Navigation chevron buttons */
-  .nav-chevron {
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
+  /* Card navigation row under the card (A-4): arrows never overlap text. */
+  .card-nav {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 20px 0;
+    flex-shrink: 0;
+  }
+
+  .nav-chevron,
+  .nav-chevron-spacer {
     width: 48px;
     height: 48px;
-    border: none;
+    flex-shrink: 0;
+  }
+
+  .nav-chevron {
+    border: 1px solid var(--border-subtle);
     background: var(--bg-elevated);
     border-radius: var(--radius-round);
     color: var(--text-secondary);
     cursor: pointer;
-    opacity: 0.4;
-    transition: opacity 150ms ease, background 150ms ease;
-    z-index: 4;
+    transition: background 150ms ease, border-color 150ms ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow-sm);
     touch-action: manipulation;
   }
   @media (hover: hover) {
     .nav-chevron:hover {
-      opacity: 0.8;
       background: var(--bg);
+      border-color: var(--border-divider);
     }
   }
-  .nav-prev { left: 4px; }
-  .nav-next { right: 4px; }
 
   .reduced-motion .nav-chevron {
     transition: none;
@@ -1894,8 +2059,8 @@
       padding-top: 4px;
     }
 
-    .reader-hero {
-      display: none;
+    .card-nav {
+      padding-top: 4px;
     }
 
     .card-area {

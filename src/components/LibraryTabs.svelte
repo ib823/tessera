@@ -96,7 +96,7 @@
     justify-content: center;
     gap: 6px;
     min-width: 0;
-    min-height: 36px;
+    min-height: 44px;
     padding: 0 12px;
     border: none;
     border-bottom: 2px solid transparent;

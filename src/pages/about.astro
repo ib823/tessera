@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import UtilityHeader from '../components/UtilityHeader.astro';
+import UtilityFooter from '../components/UtilityFooter.astro';
 ---
 <Base title="How This Works — The Fourth Angle">
   <UtilityHeader current="about" />
@@ -215,4 +216,18 @@ import UtilityHeader from '../components/UtilityHeader.astro';
       </div>
 
   </main>
+  <UtilityFooter current="/about" />
 </Base>
+
+<style>
+  /* X-10 (WCAG 1.4.1): links in running text are underlined, so colour is
+     not the only thing that sets them apart. !important beats the inline
+     text-decoration:none on the links; copy and markup are unchanged. */
+  main p a,
+  main a[href^="mailto:"],
+  main a[href="/disclaimer"] {
+    text-decoration: underline !important;
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: from-font;
+  }
+</style>

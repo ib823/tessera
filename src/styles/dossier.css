@@ -5,63 +5,16 @@
    Tokens here mirror designTokens in src/data/dossiers/*.json.
    ============================================================= */
 
-/* -------- Self-hosted webfonts --------
-   Spectral + Inter served from /public/fonts/.
-   Run `node scripts/fetch-fonts.mjs` once to populate.
-   Spectral is OFL-1.1; Inter is OFL-1.1. Both safe to redistribute.
-   We declare only the weights/styles actually used by the dossier
-   to keep the font budget tight — see scripts/check-font-budget.mjs. */
-
-@font-face {
-  font-family: 'Spectral';
-  src: url('/fonts/spectral-300.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Spectral';
-  src: url('/fonts/spectral-300-italic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Spectral';
-  src: url('/fonts/spectral-400.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Spectral';
-  src: url('/fonts/spectral-400-italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-400.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-500.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-600.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+/* -------- Webfonts --------
+   The dossier names Spectral (serif) and Inter (sans) first in its font
+   stacks, but the WOFF2 files were never shipped: the @font-face rules
+   pointed at /fonts/spectral-*.woff2 and /fonts/inter-*.woff2, which 404ed
+   on every dossier load (audit P-6). Shipping them would take the site past
+   the 60 KB font budget (ADR-0001: a third family needs a budget decision),
+   so the rules are gone and the stacks fall through to the next face
+   (Source Serif Pro / Georgia, and the system sans), which is what readers
+   already saw. To ship the faces instead: revise ADR-0001, run
+   scripts/fetch-fonts.mjs, and restore the @font-face rules. */
 
 /* -------- Design tokens -------- */
 :root {

@@ -1,0 +1,114 @@
+---
+/*
+ * Site navigation for dossier pages (audit H-6).
+ *
+ * Dossiers keep their own dark editorial design and their fixed progress
+ * bar, but they now carry the same destinations as every other page, so a
+ * reader who lands on one from a share can reach Today and the Library.
+ * Colours and fonts come from src/styles/dossier.css.
+ *
+ * The strip sits in normal flow under the fixed 56px progress bar: its
+ * padding clears the bar and its negative margin cancels the matching
+ * padding on .shell, so the dossier itself does not move further down.
+ */
+---
+<nav class="dossier-site-nav" aria-label="Main navigation">
+  <div class="dossier-site-nav__inner">
+    <a class="dossier-site-nav__brand" href="/" translate="no">The Fourth Angle</a>
+    <ul class="dossier-site-nav__links">
+      <li><a href="/">Today</a></li>
+      <li><a href="/?view=library">Library</a></li>
+      <li><a href="/infographics">Graphics</a></li>
+      <li><a href="/about">How This Works</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .dossier-site-nav {
+    padding-top: 56px;
+    margin-bottom: -56px;
+    border-bottom: 1px solid var(--rule-soft, rgba(244, 241, 235, 0.08));
+    font-family: var(--font-ui, system-ui, sans-serif);
+  }
+
+  .dossier-site-nav__inner {
+    max-width: var(--max-shell, 1320px);
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 16px;
+  }
+
+  .dossier-site-nav__brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--body, #f4f1eb);
+    text-decoration: none;
+  }
+
+  .dossier-site-nav__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 4px;
+  }
+
+  .dossier-site-nav__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted, #9ca3af);
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .dossier-site-nav__links a:hover,
+  .dossier-site-nav__brand:hover {
+    color: var(--body, #f4f1eb);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .dossier-site-nav a:focus-visible {
+    outline: 2px solid var(--accent-ink, #e07a7a);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 640px) {
+    .dossier-site-nav__inner {
+      padding: 0 16px;
+    }
+
+    .dossier-site-nav__brand {
+      display: none;
+    }
+
+    .dossier-site-nav__links {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .dossier-site-nav__links a {
+      padding: 0 6px;
+    }
+  }
+
+  @media print {
+    .dossier-site-nav {
+      display: none;
+    }
+  }
+</style>

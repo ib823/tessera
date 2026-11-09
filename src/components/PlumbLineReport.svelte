@@ -52,7 +52,7 @@
 </script>
 
 <article class="pl">
-  {#if poster}<img class="pl__hero" src={poster} alt="The Plumb Line: Malaysia leader accountability index" loading="eager" />{/if}
+  {#if poster}<img class="pl__hero" src={poster} alt="The Plumb Line: Malaysia leader accountability index" width="1240" height="1558" loading="eager" />{/if}
 
   <header class="pl__head">
     <h1>Ranked: Malaysia's Leaders, On the Level</h1>

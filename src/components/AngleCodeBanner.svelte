@@ -45,9 +45,13 @@
     <span class="banner-code">{code}</span>
     <span class="banner-label">Synced</span>
   {:else}
-    <svg class="banner-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-    <span class="banner-label">Sync across devices</span>
-    <svg class="banner-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    <svg class="banner-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    <!-- R-4: say where reading progress lives and how it is lost. -->
+    <span class="banner-copy">
+      <span class="banner-title">Sync your reading progress</span>
+      <span class="banner-sub">It lives only in this browser. Clearing site data erases it.</span>
+    </span>
+    <svg class="banner-chevron" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
   {/if}
 </button>
 
@@ -90,6 +94,28 @@
     font-weight: 600;
     color: var(--text-muted);
     flex: 1;
+  }
+
+  .banner-copy {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-right: 24px;
+  }
+
+  .banner-title {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .banner-sub {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    line-height: 1.35;
   }
 
   .banner-icon {

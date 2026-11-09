@@ -334,18 +334,20 @@
   </div>
 
   {#if showSyncBanner}
-    <div style="position:relative;padding:8px 18px 4px;">
+    <div style="position:relative;padding:8px 18px 4px;" data-prompt="sync">
       <AngleCodeBanner onTap={() => onSyncBannerTap?.()} />
-      <button onclick={() => onSyncBannerDismiss?.()} aria-label="Dismiss sync banner" style="position:absolute;top:4px;right:14px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:50%;color:var(--text-muted);font-size:var(--text-body);cursor:pointer;line-height:1;z-index:1;">&times;</button>
+      <button onclick={() => onSyncBannerDismiss?.()} aria-label="Dismiss sync prompt" style="position:absolute;top:4px;right:14px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:50%;color:var(--text-muted);font-size:var(--text-body);cursor:pointer;line-height:1;z-index:1;">&times;</button>
     </div>
   {/if}
 
   <!-- Feed list -->
+  <!-- A tabpanel only under Library's tabs; on Today no tab controls this
+       list, and the old aria-labelledby pointed at an id that did not exist. -->
   <div
     id={surfaceMode === 'library' ? 'desktop-library-panel' : 'desktop-today-panel'}
-    role={!isSearching ? 'tabpanel' : undefined}
-    aria-labelledby={!isSearching && surfaceMode === 'library' ? `desktop-library-${libraryMode}` : !isSearching ? `desktop-today-sort-${sortMode}` : undefined}
-    tabindex={!isSearching ? 0 : undefined}
+    role={!isSearching && surfaceMode === 'library' ? 'tabpanel' : undefined}
+    aria-labelledby={!isSearching && surfaceMode === 'library' ? `desktop-library-${libraryMode}` : undefined}
+    tabindex={!isSearching && surfaceMode === 'library' ? 0 : undefined}
     style="flex:1;display:flex;flex-direction:column;min-height:0;"
   >
   <div
@@ -422,45 +424,10 @@
 </aside>
 
 <style>
+  /* The canvas is capped at 1440px (H-8), so the sidebar stops growing too. */
   @media (min-width: 1600px) {
     .desktop-sidebar {
-      width: 380px !important;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    .desktop-sidebar {
-      width: 400px !important;
-    }
-  }
-
-  @media (min-width: 2560px) {
-    .desktop-sidebar {
-      width: 440px !important;
-    }
-  }
-
-  @media (min-width: 3440px) {
-    .desktop-sidebar {
-      width: 480px !important;
-    }
-  }
-
-  @media (min-width: 3840px) {
-    .desktop-sidebar {
-      width: 500px !important;
-    }
-  }
-
-  @media (min-width: 5120px) {
-    .desktop-sidebar {
-      width: 520px !important;
-    }
-  }
-
-  @media (min-width: 7680px) {
-    .desktop-sidebar {
-      width: 560px !important;
+      width: 340px !important;
     }
   }
 </style>

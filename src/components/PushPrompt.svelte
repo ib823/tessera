@@ -1,10 +1,19 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { canShowPushPrompt, markPromptSpent, promptSpent, sharedLanding } from '../lib/prompt-budget';
 
   const VAPID_PUBLIC_KEY = 'BM2IpaheS2aS1-Fs6_EBmsWuSUZ09aYkndax5C9XKTd0qJzKUKRz1cYFb78yjtM8d_sEf0koC2wrUbOTSaY7GK4';
   const NOTIFY_API = 'https://tfa-notify.4thangle.workers.dev';
 
   let showPrompt = $state(false);
+  let completedCount = $state(0);
+  // R-1 interruption budget: not on the first screen of a shared-link
+  // visit, and not after another prompt this session.
+  let landing = $state(sharedLanding.get());
+  let spent = $state(promptSpent.get());
+  $effect(() => sharedLanding.subscribe((v) => { landing = v; }));
+  $effect(() => promptSpent.subscribe((v) => { spent = v; }));
+  let budgetAllows = $derived(canShowPushPrompt({ completedCount, sharedLanding: landing, spent }));
   let subscribed = $state(false);
   let denied = $state(false);
   let unsupported = $state(false);
@@ -40,7 +49,7 @@
     // Only show after user has completed at least 1 issue
     try {
       const readKeys = Object.keys(localStorage).filter(k => k.startsWith('tfa:v1:read:'));
-      const completedCount = readKeys.filter(k => {
+      completedCount = readKeys.filter(k => {
         try { return JSON.parse(localStorage.getItem(k) || '').state === 'completed'; } catch { return false; }
       }).length;
       if (completedCount >= 1) showPrompt = true;
@@ -96,6 +105,7 @@
         localStorage.setItem('tfa:v1:push-endpoint', subscription.endpoint);
       } catch {}
       showPrompt = false;
+      markPromptSpent();
     } catch (e) {
       console.error('Push subscription failed:', e);
     }
@@ -103,17 +113,18 @@
 
   function dismiss() {
     showPrompt = false;
+    markPromptSpent();
     try { localStorage.setItem('tfa:v1:push-dismissed', String(Date.now())); } catch {}
   }
 </script>
 
-{#if showPrompt && !subscribed && !denied && !unsupported}
+{#if showPrompt && budgetAllows && !subscribed && !denied && !unsupported}
   <div style="background:var(--card, #FFFDF9);border:1px solid var(--border-light, rgba(0,0,0,0.05));border-radius: var(--radius-lg);padding:16px;margin-top:16px;display:flex;flex-direction:column;gap:12px;">
     <div style="display:flex;align-items:center;gap:8px;">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--amber, #7A5A12)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
       <span style="font-family:var(--font-display, sans-serif);font-size: var(--text-body);font-weight:700;color:var(--text-primary, #212529);">Stay updated</span>
     </div>
-    <p style="font-family:var(--font-body, sans-serif);font-size: var(--text-ui);line-height:1.5;color:var(--text-secondary, #495057);margin:0;">Get notified when new issues drop. Max 3/week. Unsubscribe anytime.</p>
+    <p style="font-family:var(--font-body, sans-serif);font-size: var(--text-ui);line-height:1.5;color:var(--text-secondary, #495057);margin:0;">Get notified when new issues drop. Max 3/week. Unsubscribe anytime. <a href="/privacy#notifications" style="color:inherit;text-decoration:underline;text-underline-offset:2px;">Privacy notice</a></p>
     <div style="display:flex;gap:8px;">
       <button
         onclick={subscribe}

@@ -33,6 +33,11 @@
   );
   const fallbackSrc = $derived(`/og/issue-${issueId}-1200w.jpg?v=${v}`);
 
+  // A missing size (a new issue whose resized art is not on file yet) used
+  // to leave the browser's broken-image glyph on the lead card (audit H-7).
+  // Hide the frame instead; the card reads fine without art.
+  let failed = $state(false);
+
   const sizes = $derived(
     size === 'hero' ? '(min-width: 1024px) 700px, (min-width: 768px) 50vw, 100vw'
     : size === 'card' ? '(min-width: 768px) 400px, 100vw'
@@ -40,7 +45,7 @@
   );
 </script>
 
-<div class="issue-image-wrap" style="aspect-ratio:{aspectRatio};border-radius:{borderRadius};overflow:hidden;background:var(--bg-sunken);">
+<div class="issue-image-wrap" hidden={failed} style="aspect-ratio:{aspectRatio};border-radius:{borderRadius};overflow:hidden;background:var(--bg-sunken);{failed ? 'display:none;' : ''}">
   <picture>
     <source type="image/avif" srcset={avifSrcset} sizes={sizes} />
     <source type="image/webp" srcset={webpSrcset} sizes={sizes} />
@@ -49,10 +54,13 @@
       srcset={jpegSrcset}
       sizes={sizes}
       alt={alt}
+      width="1200"
+      height="630"
       loading={eager ? 'eager' : 'lazy'}
       decoding={eager ? 'sync' : 'async'}
       fetchpriority={eager ? 'high' : undefined}
       style="width:100%;height:100%;object-fit:cover;display:block;"
+      onerror={() => { failed = true; }}
     />
   </picture>
 </div>

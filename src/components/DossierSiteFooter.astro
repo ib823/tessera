@@ -1,0 +1,106 @@
+---
+/*
+ * Site footer for dossier pages (audit H-6): the same trust and navigation
+ * links as the Today footer, in the dossier's palette (src/styles/dossier.css).
+ */
+---
+<footer class="dossier-site-footer">
+  <div class="dossier-site-footer__inner">
+    <p class="dossier-site-footer__next">
+      <a href="/">Back to Today</a>
+      <span aria-hidden="true">·</span>
+      <a href="/?view=library&amp;tab=archive">Browse every issue</a>
+    </p>
+    <nav aria-label="Footer navigation">
+      <ul class="dossier-site-footer__links">
+        <li><a href="/about">How This Works</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/verify">Verify Content</a></li>
+        <li><a href="/infographics">Graphics</a></li>
+      </ul>
+    </nav>
+    <p class="dossier-site-footer__brand" translate="no">The Fourth Angle</p>
+  </div>
+</footer>
+
+<style>
+  .dossier-site-footer {
+    border-top: 1px solid var(--rule, #3f1212);
+    font-family: var(--font-ui, system-ui, sans-serif);
+    color: var(--muted, #9ca3af);
+  }
+
+  .dossier-site-footer__inner {
+    max-width: var(--reading-width, 680px);
+    margin: 0 auto;
+    padding: 32px 24px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .dossier-site-footer__next {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    font-size: 16px;
+  }
+
+  .dossier-site-footer__next a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--body, #f4f1eb);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .dossier-site-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 4px;
+  }
+
+  .dossier-site-footer__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: var(--muted, #9ca3af);
+    text-decoration: none;
+  }
+
+  .dossier-site-footer__links a:hover {
+    color: var(--body, #f4f1eb);
+    text-decoration: underline;
+  }
+
+  .dossier-site-footer a:focus-visible {
+    outline: 2px solid var(--accent-ink, #e07a7a);
+    outline-offset: 2px;
+  }
+
+  .dossier-site-footer__brand {
+    margin: 8px 0 0;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  @media print {
+    .dossier-site-footer {
+      display: none;
+    }
+  }
+</style>

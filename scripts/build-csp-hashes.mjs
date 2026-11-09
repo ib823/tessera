@@ -40,7 +40,12 @@ const hashes = new Set();
 let dataBlocks = 0;
 for (const file of findHtmlFiles(distDir)) {
   const html = readFileSync(file, 'utf8');
-  for (const m of html.matchAll(/<script(\s[^>]*)?>(.+?)<\/script>/gs)) {
+  // `*?`, not `+?`: an empty external script (<script src=...></script>)
+  // must match as empty. With `+?` the match ran on to the next </script>,
+  // hashing a bogus "</script>…<script>…" span and skipping the inline
+  // script that followed it on that page.
+  for (const m of html.matchAll(/<script(\s[^>]*)?>(.*?)<\/script>/gs)) {
+    if (m[2] === '' || /\bsrc\s*=/i.test(m[1] || '')) continue;
     if (!isExecutable(m[1])) {
       dataBlocks++;
       continue;

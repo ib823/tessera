@@ -1,0 +1,198 @@
+---
+import PolicyLayout from '../layouts/PolicyLayout.astro';
+
+const EMAIL = 'thefourthangle@proton.me';
+---
+<PolicyLayout
+  title="Privacy Notice | The Fourth Angle"
+  description="What The Fourth Angle stores on your device and on our servers, how long we keep it, and how to delete it."
+  heading="Privacy notice"
+  reviewed="Last reviewed November 2026"
+  path="/privacy"
+>
+  <p class="policy-alt"><a href="/privasi" lang="ms" hreflang="ms">Baca notis ini dalam Bahasa Malaysia</a></p>
+
+  <section class="policy-card" aria-labelledby="who">
+    <h2 id="who">Who we are</h2>
+    <p>The Fourth Angle ("T4A", "we", "us") is independently operated. We decide how the data described on this page is used, which makes us its data controller under Malaysia's Personal Data Protection Act 2010.</p>
+    <p>Questions, requests and complaints about privacy: <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+  </section>
+
+  <section class="policy-card policy-card--note" aria-labelledby="short">
+    <h2 id="short">The short version</h2>
+    <ul>
+      <li>You can read everything on T4A without an account, a name, an email address or a phone number.</li>
+      <li>Your reading progress stays in your own browser unless you turn on Angle Code sync.</li>
+      <li>Two optional features send data to our servers: <strong>Angle Code sync</strong> and <strong>notifications</strong>. Both stay off until you turn them on. Apart from those, your browser sends us only the occasional automatic security report (<a href="#security">section 4</a>).</li>
+      <li>We use no analytics services, no advertising trackers and no third-party scripts. Our code sets no cookies.</li>
+      <li>Our host, Cloudflare, receives standard technical data, such as your IP address, whenever your browser loads a page.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card" aria-labelledby="device">
+    <h2 id="device">1. What stays on your device</h2>
+    <p>T4A saves the following in your browser's own storage. We cannot see it. It leaves your device only if you turn on sync (<a href="#sync">section 2</a>) or notifications (<a href="#notifications">section 3</a>).</p>
+    <ul class="policy-items">
+      <li>
+        <p class="policy-item-title">Which issues you have started or finished, and how many cards you have read</p>
+        <dl><dt>Why</dt><dd>To mark issues as read and let you pick up where you left off</dd><dt>Kept</dt><dd>Until you clear it</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Which cards you have highlighted</p>
+        <dl><dt>Why</dt><dd>To show your highlights</dd><dt>Kept</dt><dd>Until you clear it</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Where you last stopped reading, and when</p>
+        <dl><dt>Why</dt><dd>To offer to take you back there</dd><dt>Kept</dt><dd>Ignored after 24 hours; stored until replaced or cleared</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">The notifications you have received, up to 50</p>
+        <dl><dt>Why</dt><dd>So you can find them after you dismiss them</dd><dt>Kept</dt><dd>Hidden after 30 days, then deleted</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Small settings, such as whether you closed the welcome card or the install, sync or notification prompts</p>
+        <dl><dt>Why</dt><dd>So we do not show them again</dd><dt>Kept</dt><dd>Until you clear them</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">A random device label, created when you first open the Reading progress page</p>
+        <dl><dt>Why</dt><dd>Shown on that page and used to name export files</dd><dt>Kept</dt><dd>Until you clear it</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Copies of some site files: the offline page, icons, scripts, styles and fonts</p>
+        <dl><dt>Why</dt><dd>So the site loads faster and works offline</dd><dt>Kept</dt><dd>Until we replace them with a new version, or you clear site data</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">While a tab is open: flags that stop hints and animations from repeating, and an animation level chosen from your device's processor and memory</p>
+        <dl><dt>Why</dt><dd>To avoid repeats and keep animations smooth</dd><dt>Kept</dt><dd>Deleted when you close the tab</dd></dl>
+      </li>
+    </ul>
+    <p>If you use sync, your browser also keeps your Angle Code and the time it last synced. If you use notifications, it keeps a note that they are on and a copy of your notification address.</p>
+    <p><strong>Topic order.</strong> Once you have finished 10 issues, the app moves unread issues on the topics you read and highlight most toward the top of your list. Your device works this out, and nothing about it reaches us. Every reader has access to the same issues.</p>
+    <p id="delete"><strong>How to delete it.</strong> Open the <a href="/progress">Reading progress page</a> and choose <strong>Clear on this device</strong>. This deletes your reading progress, highlights, notification list, settings, device label and, if you use sync, your Angle Code from this browser. If you use sync, the <strong>Clear all reading data</strong> button in the Angle Code panel does the same. Neither button turns off notifications or deletes a sync copy on our server: sections <a href="#sync">2</a> and <a href="#notifications">3</a> explain how to do those. You can also clear this site's data in your browser settings.</p>
+    <p><strong>Taking a copy.</strong> The Reading progress page also lets you export your progress as a file and import it in another browser. The file contains your Angle Code and, if notifications are on, your notification address. Keep it private.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="sync">
+    <h2 id="sync">2. Angle Code sync (optional)</h2>
+    <p><strong>What it does.</strong> Sync lets you carry on reading on another device. When you turn it on, we give you a 6-character Angle Code. Every device linked to the code shares the same reading progress.</p>
+    <p><strong>What we store on our server, linked only to your code:</strong></p>
+    <ul>
+      <li>for each issue you have opened: whether you started or finished it, and how many cards you read;</li>
+      <li>which cards you highlighted;</li>
+      <li>where you last stopped reading, and when;</li>
+      <li>when your progress last synced.</li>
+    </ul>
+    <p>We store no name, email address or IP address with your sync record. Our sync service holds your IP address in working memory to limit how many requests one connection can make. It does not write your IP address to storage.</p>
+    <p><strong>Where we store it.</strong> On Cloudflare Workers KV, part of Cloudflare's global network. The record can sit on servers outside Malaysia.</p>
+    <p><strong>How long we keep it.</strong> We keep your sync record until 90 days pass with no sync from any device linked to your code. Then it is deleted automatically. Each sync restarts the 90 days.</p>
+    <p><strong>Who can see it.</strong> Anyone who has your Angle Code can load your synced progress. Treat the code like a password and do not post it publicly. The code also travels in web addresses: in sync links, and in the request a device makes to load your progress. Our host, Cloudflare, processes those requests (<a href="#host">section 5</a>).</p>
+    <p><strong>Sync links.</strong> A sync link is a T4A web address that ends in <code>?sync=</code> and a code. When you open one, T4A asks you before it links the browser. If you agree, that browser's reading progress joins the code's progress, and anyone with the code can see it. If you decline, nothing is linked. Only accept sync links you created yourself.</p>
+    <p><strong>How to stop and delete.</strong> Open the Angle Code panel, choose <strong>Unlink</strong> and confirm. This browser stops syncing and forgets the code. The copy on our server stays until its 90 days run out. To have it deleted sooner, email <a href={`mailto:${EMAIL}`}>{EMAIL}</a> with your Angle Code. We aim to delete it within 5 working days and will confirm by reply. We can find your record only if you give us the code.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="notifications">
+    <h2 id="notifications">3. Notifications (optional)</h2>
+    <p><strong>What they do.</strong> Notifications tell you when we publish new issues. We suggest them after you finish your first issue, and you can turn them on at any time from the notification bell. Your browser asks for your permission before anything is set up.</p>
+    <p><strong>When we send them</strong> (Malaysia time):</p>
+    <ul>
+      <li>Tuesday and Thursday at 8am, if we have published new issues;</li>
+      <li>Saturday at 9am, a weekly digest;</li>
+      <li>a "You Missed This" reminder at 9am, only if you have not opened T4A for 14 days and have had no notification from us in the past 7 days. We send it at most once every 30 days, and never on a Saturday.</li>
+    </ul>
+    <p>You get no more than 3 notifications in any 7 days.</p>
+    <p><strong>What we store on our server:</strong></p>
+    <ul>
+      <li>the notification address your browser gives us: a web address at your browser maker's push service (Google, Mozilla, Apple or Microsoft), with two keys used to encrypt messages to you;</li>
+      <li>the date you turned notifications on;</li>
+      <li>the last time you opened T4A with notifications on. Your browser sends us this each time you open the app, so we know whether to send a reminder and when to delete your record;</li>
+      <li>which push service your browser uses (Google, Mozilla, Apple or another), worked out from the notification address so we send a format your browser can show;</li>
+      <li>the times of the notifications we sent you recently, to keep to the weekly limit. We delete this list 8 days after the last notification we send you;</li>
+      <li>if we have sent you a reminder, the date we sent it. We delete it after 31 days.</li>
+    </ul>
+    <p>We store no name, email address, IP address or reading history with your notification record. Our notification service holds your IP address in working memory to limit requests, as the sync service does.</p>
+    <p><strong>Who else is involved.</strong> Your browser maker's push service delivers each notification. Messages are encrypted, so the push service cannot read them. A message contains only public issue text (a headline or a short summary), a link and, on some browsers, the issue's image. We ask the push service to discard a message it cannot deliver within 24 hours.</p>
+    <p><strong>How long we keep it.</strong> We delete your notification record when any of these happens:</p>
+    <ul>
+      <li>you turn notifications off;</li>
+      <li>a notification to your address fails to deliver;</li>
+      <li>90 days pass since you last opened T4A.</li>
+    </ul>
+    <p>In the first two cases we also delete its send times and reminder date at once. If your record has expired but this browser still holds its T4A notification subscription, the app signs it up again the next time you open T4A, so notifications carry on. To stop them, turn them off as described below.</p>
+    <p><strong>How to stop.</strong> Open the notification bell and choose <strong>Turn off</strong>. This cancels the subscription in your browser and deletes your notification record, its send times and its reminder date from our server. If you block notifications in your browser settings instead, we delete your record the next time a notification fails to reach you, or 90 days after your last visit, whichever comes first.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="security">
+    <h2 id="security">4. Security reports</h2>
+    <p>Our pages tell your browser to block content from unexpected sources. If your browser blocks something on one of our pages, it can send us a short report automatically: the page address (without anything after a <code>?</code>), what was blocked, which rule blocked it, and the time. We keep these reports for 30 days to find and fix security problems. We store no IP address with them. Browser extensions can trigger these reports.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="host">
+    <h2 id="host">5. What our host and other services see</h2>
+    <p><strong>Cloudflare.</strong> Cloudflare hosts T4A and runs our sync and notification services. When your browser connects, Cloudflare receives standard request data, including your IP address, your browser type and the address of the page or service requested. Cloudflare processes this request data under its own <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">privacy policy</a>.</p>
+    <p><strong>No tracking.</strong> We use no analytics services, advertising trackers, social media plugins, or third-party fonts or scripts. Our security settings stop pages from loading scripts from anywhere else. Our code sets no cookies.</p>
+    <p><strong>Share buttons.</strong> If you tap a share button, we open the service you chose (WhatsApp, Telegram, X, Facebook, LinkedIn or Threads) with the issue's link and text. Nothing goes to that service unless you tap. Its own privacy policy then applies.</p>
+    <p><strong>Links in notifications</strong> carry a label such as <code>?from=notification</code>. We do not use it, but it forms part of the web address your browser requests.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="why">
+    <h2 id="why">6. Why we use this data, and your consent</h2>
+    <p>We use the data in this notice only to:</p>
+    <ol>
+      <li>save your reading progress on your device;</li>
+      <li>sync your progress between devices, if you turn sync on;</li>
+      <li>send you notifications, if you turn them on;</li>
+      <li>keep our services working and secure (request limits and security reports).</li>
+    </ol>
+    <p>We rely on your consent for sync and notifications, which you give by turning them on. You can withdraw it at any time (<a href="#rights">section 9</a>).</p>
+    <p>All of this data comes from your own browser. We obtain no information about you from anyone else.</p>
+    <p>Giving us any of it is <strong>voluntary</strong>. Without sync or notifications, you can still read everything on T4A. You miss only cross-device sync and alerts.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="share">
+    <h2 id="share">7. Who we share data with</h2>
+    <p>Only two kinds of organisation:</p>
+    <ul>
+      <li><strong>Cloudflare</strong>, which hosts the site and stores sync and notification records for us;</li>
+      <li><strong>your browser maker's push service</strong>, which delivers notifications if you turn them on.</li>
+    </ul>
+    <p>We do not sell or rent your data. We do not share it with advertisers, political parties or campaign groups. We disclose it to authorities only where Malaysian law requires us to.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="where">
+    <h2 id="where">8. Where your data is stored</h2>
+    <p>Data on your device stays on your device. Sync and notification records sit on Cloudflare's global network, which can place them outside Malaysia. By turning on sync or notifications, you agree to that storage.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="rights">
+    <h2 id="rights">9. Your rights and choices</h2>
+    <ul>
+      <li><strong>See your data.</strong> On your device: export it from the <a href="/progress">Reading progress page</a>. On our server: email us with your Angle Code (for sync) or your notification address (for notifications; it is in your exported file), and we will send you what we hold.</li>
+      <li><strong>Correct it.</strong> Your progress updates as you read. If something we hold is wrong, tell us and we will correct or delete it.</li>
+      <li><strong>Withdraw consent.</strong> Turn notifications off, or unlink sync, as sections <a href="#sync">2</a> and <a href="#notifications">3</a> describe. You can also email us, and we will stop using the data and delete it.</li>
+      <li><strong>Move it.</strong> Export your progress from the Reading progress page, or ask us to send your sync record as a file.</li>
+      <li><strong>Complain.</strong> Contact us first. If you are not satisfied, you can complain to the Personal Data Protection Commissioner (Jabatan Perlindungan Data Peribadi) at <a href="https://www.pdp.gov.my" rel="noopener noreferrer">pdp.gov.my</a>.</li>
+    </ul>
+    <p>We do not know who you are, so we can find data on our server only if you give us your Angle Code or notification address. Write to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We aim to reply within 5 working days.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="protect">
+    <h2 id="protect">10. How we protect it</h2>
+    <p>All connections use HTTPS. Our security settings stop pages from loading code from other sources. Our services limit how often one connection can make requests. Angle Codes are random 6-character codes drawn from 32 characters, which allows about 1.07 billion combinations. Notification messages are encrypted. No system is perfectly secure, so we keep as little as we can.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="breach">
+    <h2 id="breach">11. If something goes wrong</h2>
+    <p>If we believe personal data in our care has been lost, misused or accessed without permission, we will notify the Personal Data Protection Commissioner as the law requires. We hold no email addresses or phone numbers for readers, so we will tell affected readers through a notice on this site.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="changes">
+    <h2 id="changes">12. Changes to this notice</h2>
+    <p>If we change how we handle data, we will update this notice and the date at the top. For significant changes, we will post a notice on the site before the change takes effect.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="contact">
+    <h2 id="contact">13. Contact</h2>
+    <p>Privacy questions and requests: <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>. More ways to reach us are on our <a href="/contact">contact page</a>.</p>
+    <p>This notice is published in English and in <a href="/privasi" lang="ms" hreflang="ms">Bahasa Malaysia</a>. See also our <a href="/corrections">corrections policy</a>.</p>
+  </section>
+</PolicyLayout>

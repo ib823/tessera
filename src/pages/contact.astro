@@ -1,0 +1,89 @@
+---
+import PolicyLayout from '../layouts/PolicyLayout.astro';
+
+const EMAIL = 'thefourthangle@proton.me';
+---
+<PolicyLayout
+  title="Contact and Ownership | The Fourth Angle"
+  description="Who publishes The Fourth Angle, how it is funded, how editorial decisions are made, and how to reach us."
+  heading="Contact and ownership"
+  reviewed="Last reviewed November 2026"
+  path="/contact"
+>
+  <p class="policy-lede">The Fourth Angle is independently operated.</p>
+
+  <section class="policy-card" aria-labelledby="who">
+    <h2 id="who">Who we are</h2>
+    <p>The Fourth Angle (T4A) publishes nonpartisan analysis of Malaysian public issues. Each issue sets the mainstream claim beside what the primary sources show.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="names">
+    <h2 id="names">Why we do not name individuals</h2>
+    <p>We write about power in Malaysia, including issues that touch race, religion and royalty. Work like this can draw harassment of the people who do it, so we do not publish the names of the people who run T4A.</p>
+    <p>That asks more of your trust, so we work to earn it by making our work checkable:</p>
+    <ul>
+      <li>each issue lists its sources where we have them on file, and says so plainly where we do not yet;</li>
+      <li>each issue publishes the score from every review stage, including the low ones;</li>
+      <li>every edition after the first gets a dated line on the issue page, under our <a href="/corrections">corrections policy</a>;</li>
+      <li>every issue carries a cryptographic signature you can check at <a href="/verify">/verify</a>.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card" aria-labelledby="funding">
+    <h2 id="funding">How we are funded</h2>
+    <p>Self-funded by its operator. No advertising, grants or political funding.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="independence">
+    <h2 id="independence">Editorial independence</h2>
+    <p>T4A makes its own editorial decisions. No one outside T4A has a say over which topics we cover, what we find or how we word it.</p>
+    <p>Every issue goes through 4 independent review stages before publication: primary analysis, a bias audit, fact verification and a synthesis review. Higher-risk issues get a fifth, a contrarian stress test. We publish every stage's score. <a href="/about">How this works</a> explains the process.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="error">
+    <h2 id="error">Report an error</h2>
+    <p>If you think an issue gets something wrong, tell us. Our <a href="/corrections">corrections policy</a> explains what to send, what counts as an error and how fast we aim to respond.</p>
+  </section>
+
+  <section class="policy-card policy-card--note" aria-labelledby="reach">
+    <h2 id="reach">Contact us</h2>
+    <p>Write to <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>. One address handles everything; a clear subject line helps us route your message.</p>
+    <ul class="policy-items">
+      <li>
+        <h3>Corrections and errors</h3>
+        <dl>
+          <dt>Subject</dt><dd>Correction</dd>
+          <dt>Reply</dt><dd>See the <a href="/corrections">corrections policy</a></dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Privacy and data requests</h3>
+        <dl>
+          <dt>Subject</dt><dd>Privacy</dd>
+          <dt>Reply</dt><dd>We aim to reply within 5 working days. See the <a href="/privacy">privacy notice</a></dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Legal notices</h3>
+        <dl>
+          <dt>Subject</dt><dd>Legal notice</dd>
+          <dt>Reply</dt><dd>We aim to respond within 5 working days</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Security problems with the site</h3>
+        <dl>
+          <dt>Subject</dt><dd>Security</dd>
+          <dt>Reply</dt><dd>We aim to respond within 5 working days</dd>
+        </dl>
+      </li>
+      <li>
+        <h3>Everything else</h3>
+        <dl>
+          <dt>Reply</dt><dd>We aim to respond within 5 working days</dd>
+        </dl>
+      </li>
+    </ul>
+    <p>We read every message. We do not add your address to any mailing list.</p>
+  </section>
+</PolicyLayout>
