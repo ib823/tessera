@@ -82,6 +82,15 @@ Totals: 11 VERIFIED, 5 PARTLY, 0 UNVERIFIED, 1 CONTRADICTED, 0 STALE-SINCE-PUBLI
 - Gap: no opposition or civil-society source. The cards are mostly arithmetic on official figures; the October 2026 MOF net-burden figure is the main counterweight and is included.
 - Primary count (3) is below target. MACC's own statement and the Hansard written replies were not reachable (parlimen.gov.my returned HTTP 503 or connection resets this session); the DOJ site returned a bot challenge, so the DOJ release is cited from the IRS Criminal Investigation republication.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1867:
+
+- **Context:** "Azam Baki said in 2025" corrected. He gave the RM31.3 billion / 74.5% figures on 6 May 2026, for recoveries "as of 2025" [9, 10]. That statement postdates the earlier 8 Apr 2026 source date. This edition moves the source date to 9 Nov 2026, and the MOF repeated RM31.3 billion recovered in October 2026 [11], so the cards keep the figure with its correct date.
+- **Context, hook sub:** RM20.73 billion corrected to RM20.71 billion (Bernama, 15 Oct 2025, MOF reply) [6]. "The rest from asset seizures and prosecutions" softened to "other asset recoveries"; no source breaks the remainder down that way.
+- **Context, Economic card:** the RM42 billion is MACC's figure for funds misappropriated from 1MDB only [9, 10]. The "and SRC-linked" qualifier is removed (SRC belongs to the MOF's separate RM31.2 billion tally [7]).
+- **Economic card sub (update):** the MOF said in October 2026 that the government still faces a RM20.1 billion net burden if nothing more is recovered [11]. It replaces the litigation line, which the reframe and Governance card already cover.
+
 ## SOURCES
 
 1. **[P]** The Goldman Sachs Group, Inc., *Form 8-K Current Report*, filed with the US Securities and Exchange Commission, 22 Oct 2020, Item 2.02. https://www.sec.gov/Archives/edgar/data/886982/000119312520274226/d73654d8k.htm
