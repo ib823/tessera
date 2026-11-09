@@ -3,6 +3,9 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIssues } from './lib/load-issues.mjs';
+// Shared with the reader's "Copy for verification" button so the copied
+// text and the signed fingerprint can never drift apart.
+import { buildVerificationText } from '../src/lib/verification-text.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -49,66 +52,6 @@ const existingManifest = existsSync(signaturesPath)
   ? JSON.parse(readFileSync(signaturesPath, 'utf8'))
   : { publicKeyFingerprint: pubFingerprint, issues: {} };
 
-const CARD_LABELS = {
-  hook: 'What they said',
-  fact: 'What we found',
-  reframe: 'The real question',
-  analogy: 'Think of it this way',
-  view: 'The considered view',
-};
-
-function opinionLabel(score) {
-  if (score >= 80) return 'Fundamental';
-  if (score >= 60) return 'Significant';
-  if (score >= 40) return 'Partial';
-  return 'Surface';
-}
-
-function buildReadableText(issue) {
-  const lines = [];
-  lines.push(issue.headline);
-  lines.push(issue.context);
-  lines.push('');
-  lines.push(`${issue.opinionShift}`);
-  lines.push(opinionLabel(issue.opinionShift));
-
-  if (issue.stageScores) {
-    lines.push('PA');
-    lines.push('BA');
-    lines.push('FC');
-    lines.push('AF');
-    lines.push('CT');
-    lines.push('SR');
-  }
-
-  if (issue.finalScore != null) {
-    lines.push(String(issue.finalScore));
-    lines.push('/100');
-  }
-
-  if (issue.status) lines.push(issue.status === 'new' ? 'New' : 'Updated');
-
-  for (const card of issue.cards) {
-    lines.push('');
-    let label = CARD_LABELS[card.t] || card.t;
-    if (card.t === 'fact' && card.lens) label += ` \u00B7 ${card.lens}`;
-    lines.push(label);
-    lines.push('');
-    lines.push(card.big);
-    if (card.sub) {
-      lines.push('');
-      lines.push(card.sub);
-    }
-  }
-
-  lines.push('');
-  lines.push(`All ${issue.cards.length} perspectives read`);
-  const viewCard = [...issue.cards].reverse().find(card => card.t === 'view');
-  if (viewCard) lines.push(viewCard.big);
-
-  return lines.join('\n');
-}
-
 const issues = loadIssues();
 const publishedIssues = issues.filter(issue => issue.published === true);
 
@@ -118,7 +61,7 @@ const manifest = {
 };
 
 for (const issue of publishedIssues) {
-  const readableText = buildReadableText(issue);
+  const readableText = buildVerificationText(issue);
   const fingerprint = createHash('sha256').update(readableText).digest('hex');
   const existingEntry = existingManifest.issues?.[issue.id];
 
