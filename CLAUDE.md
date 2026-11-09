@@ -82,7 +82,7 @@ Legal, Rights, Economic, Governance, Technology, Social, Political, Health, Envi
 ### To publish/unpublish:
 - Set `published: true` on issues you want visible
 - Set `published: false` (or omit) to hide from feed
-- Unpublished issues still accessible via direct URL
+- An issue that was published and is then set to `published: false` is *withdrawn*: it leaves the feed, sitemap and search, but keeps its page at `/issue/{id}` (corrected text, a "Withdrawn" notice, the change log, noindex, no reader) so old links and cached copies never keep serving the withdrawn text. Add a `changes[]` line saying why. Issues never published have no page.
 
 ### To update an existing issue:
 1. Open `src/data/issues/{id}.json`
