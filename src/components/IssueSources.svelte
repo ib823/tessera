@@ -13,6 +13,7 @@
    */
   import { untrack } from 'svelte';
   import type { SourceEntry } from '../data/issue-types';
+  import { sourcesState } from '../lib/issue-sources-state';
 
   interface Props {
     issue: { id: string; legacyAudit?: boolean; sourceList?: SourceEntry[] };
@@ -25,6 +26,7 @@
 
   let isOpen = $state(untrack(() => open));
   let entries = $derived(issue.sourceList ?? []);
+  let state = $derived(sourcesState(issue));
   let primaryCount = $derived(entries.filter((e) => e.primary).length);
   let headingId = $derived(`issue-sources-${variant}-${issue.id}`);
   // The static article keeps the list in the HTML for no-JS readers and search.
@@ -46,7 +48,7 @@
   }
 </script>
 
-{#if entries.length > 0}
+{#if state === 'list'}
   <section
     class="sources"
     data-variant={variant}
@@ -85,7 +87,7 @@
       {/if}
     </details>
   </section>
-{:else if !issue.legacyAudit}
+{:else if state === 'empty'}
   <p class="sources-empty" data-variant={variant} data-issue-sources-empty>Source list not yet on file for this issue.</p>
 {/if}
 
