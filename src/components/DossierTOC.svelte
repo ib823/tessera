@@ -131,6 +131,7 @@
     aria-modal="true"
     aria-label="Dossier table of contents"
     aria-hidden={!open}
+    inert={!open}
   >
     <div class="toc-sheet__handle" aria-hidden="true"></div>
     <div class="toc-sheet__body">

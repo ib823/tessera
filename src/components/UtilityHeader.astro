@@ -35,6 +35,8 @@ const { current } = Astro.props;
 
     <nav class="utility-nav" aria-label="Main navigation">
       <a href="/" class="utility-nav-link">Today</a>
+      <!-- H-3: the app's destinations (Today, Library, Graphics) on every page. -->
+      <a href="/?view=library" class="utility-nav-link">Library</a>
       <a
         href="/infographics"
         class={`utility-nav-link${current === 'infographics' ? ' utility-nav-link--active' : ''}`}
