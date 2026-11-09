@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T08:15:55.090Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-09T10:12:04.626Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -351,9 +351,9 @@ High Court judge Mohd Arief Emran Arifin dismissed the bid, ruling the prosecuti
 ```
 Malaysia's drive to lock down the overseas money keeps meeting court limits: the KL High Court granted a £132m London freeze in June 2025, then stayed it.
 ```
-**4/7** _(fact)_ · 138 chars
+**4/7** _(fact)_ · 120 chars
 ```
-Announced scope and proven guilt are different things. Daim was discharged and acquitted after his death; the wider case remains unproven.
+Announced scope is not proven guilt. Daim was discharged and acquitted after his death; the wider case remains unproven.
 ```
 **5/7** _(reframe)_ · 149 chars
 ```
@@ -663,9 +663,9 @@ When 2.7% of trade can fall 30% without moving the headline, the question is not
 ```
 A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
 ```
-**7/7** _(view — ONLY post with the link)_ · 155 chars
+**7/7** _(view — ONLY post with the link)_ · 127 chars
 ```
-Both figures are true. The diversification worked. The exporters who lost the channel are not in the headline.
+Both figures are true. The exporters who lost the channel are not in the headline.
 
 https://thefourthangle.pages.dev/issue/1996
 ```
@@ -897,13 +897,13 @@ https://thefourthangle.pages.dev/issue/1990
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
 
-**1/7** _(hook — attach image, NO link)_ · 100 chars
+**1/7** _(hook — attach image, NO link)_ · 106 chars
 ```
-Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on 210,000 smallholders
+Malaysian palm oil to China fell 39% before Trump met Xi, and the cost lands on about 208,000 smallholders
 ```
-**2/7** _(fact)_ · 103 chars
+**2/7** _(fact)_ · 212 chars
 ```
-Palm oil traded USD120 a tonne above soybean oil at one point in 2025, and Chinese refiners shifted mix
+Palm oil traded USD120 a tonne above soybean oil at one point in 2025, and Chinese refiners shifted mix Malaysia's 2024 exports to China were 1.39 million tonnes, down 5.3% on 2023. The Jan-Oct 2025 drop hit 39%.
 ```
 **3/7** _(fact)_ · 269 chars
 ```
@@ -913,9 +913,9 @@ China signed an oilseed deal with Brazil worth more than US$10 billion in Novemb
 ```
 Greer announced the deal. China's foreign ministry said working teams were still in consultation
 ```
-**5/7** _(fact)_ · 264 chars
+**5/7** _(fact)_ · 246 chars
 ```
-When CPO falls, the corporate listcos hedge. Smallholders absorb it About 210,000 smallholders cultivate ~15% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. The Oct 2025 US-Malaysia trade deal exempted palm oil. April oleochemicals rose 23.83%.
+When CPO falls, smallholders absorb it About 208,000 independent smallholders manage 27% of the planted area. Kenya overtook the EU as #2 buyer in H1 2025. Johari says palm oil faces no US tariffs. April oleochemical exports rose 23.83% on March.
 ```
 **6/7** _(reframe)_ · 114 chars
 ```
@@ -951,13 +951,13 @@ Ministers may qualify for gratuities reported up to RM2 million. Stacked pension
 ```
 France's 34-year-old PM in 2024 was replaced eight months later by Michel Barnier, 73. Anwar's Dec 2025 'reset' made the Speaker's son Youth and Sports Minister at 29.
 ```
-**5/7** _(reframe)_ · 144 chars
+**5/7** _(reframe)_ · 143 chars
 ```
-The candidacy age has been 18 since 2019. In March 2026 a 10-year PM term limit fell two votes short. The machinery refuses to constrain itself.
+The candidacy age was cut to 18 in 2019. In March 2026 a 10-year PM term limit fell two votes short. The machinery refuses to constrain itself.
 ```
-**6/7** _(analogy)_ · 222 chars
+**6/7** _(analogy)_ · 228 chars
 ```
-Imagine a relay race that pays each runner more the longer they hold the baton, and the baton tends to pass to the runner's son. Up to RM2 million gratuity per ministerial exit. Up to RM100,000 a month in stacked pensions.
+Imagine a relay race that pays each runner more the longer they hold the baton, and the baton tends to pass to the runner's son. Up to RM2 million gratuity on leaving the cabinet. Stacked pensions that can top RM100,000 a month.
 ```
 **7/7** _(view — ONLY post with the link)_ · 182 chars
 ```
@@ -1041,9 +1041,9 @@ https://thefourthangle.pages.dev/issue/1984
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1983-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1983`
 
-**1/8** _(hook — attach image, NO link)_ · 115 chars
+**1/8** _(hook — attach image, NO link)_ · 113 chars
 ```
-Anwar told Norway 'contracts are not confetti.' The first ship those missiles were meant for hasn't been delivered.
+Anwar told Norway contracts are 'not confetti.' The first ship the missiles were meant for still awaits delivery.
 ```
 **2/8** _(fact)_ · 102 chars
 ```
@@ -1065,9 +1065,9 @@ On 14 May, the day Anwar protested to Norway's prime minister, Australia signed 
 ```
 The scandal isn't Norway revoking a licence. It's using Oslo to bury 15 years of LCS billions: ships undelivered, one DNAA the only criminal endpoint across four governments.
 ```
-**7/8** _(analogy)_ · 130 chars
+**7/8** _(analogy)_ · 151 chars
 ```
-Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then suing the tailor when his country bans the fabric.
+Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then weighing a lawsuit against the tailor when his country bans the fabric.
 ```
 **8/8** _(view — ONLY post with the link)_ · 202 chars
 ```
@@ -1977,9 +1977,9 @@ https://thefourthangle.pages.dev/issue/1871
 ```
 1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.71 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from other asset recoveries.
 ```
-**2/6** _(fact)_ · 208 chars
+**2/6** _(fact)_ · 244 chars
 ```
-Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash plus a USD1.4 billion asset-recovery guarantee. It is the largest single 1MDB-related financial-institution settlement to date.
+Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash plus a USD1.4 billion asset-recovery guarantee. It is the largest of Malaysia's three 1MDB bank settlements; AmBank paid RM2.83 billion and JPMorgan RM1.4 billion.
 ```
 **3/6** _(fact)_ · 232 chars
 ```
@@ -2773,9 +2773,9 @@ https://thefourthangle.pages.dev/issue/1988
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1980-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1980`
 
-**1/6** _(hook — attach image, NO link)_ · 120 chars
+**1/6** _(hook — attach image, NO link)_ · 121 chars
 ```
-DPM Zahid says insults to Islam and the Malay Rulers need 'firm, fair, wise' action, and a strengthened legal framework.
+DPM Zahid says insults to Islam and the Malay Rulers need firm, fair and wise action, and a strengthened legal framework.
 ```
 **2/6** _(fact)_ · 152 chars
 ```
@@ -2789,46 +2789,46 @@ CIJ said Sedition Act cases rose to 36 in 2025 from 19. SUARAM found half of all
 ```
 On 6 February 2026 the apex court restored 'offensive' and 'annoy' in CMA s.233, but read them down to require clear intent and harm.
 ```
-**5/6** _(reframe)_ · 131 chars
+**5/6** _(reframe)_ · 140 chars
 ```
-PM Anwar pledged to repeal the Sedition Act in 2018 and again in 2023. The Act remains. The promised replacement is still in draft.
+Amnesty says PM Anwar pledged to abolish and reform laws like the Sedition Act. The Act remains. The promised replacement is still in draft.
 ```
-**6/6** _(view — ONLY post with the link)_ · 201 chars
+**6/6** _(view — ONLY post with the link)_ · 204 chars
 ```
-Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the law in Feb 2026. The PM has promised repeal since 2018. Zahid asks for more.
+Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the law in Feb 2026. The PM once pledged to abolish such laws. Zahid asks for more.
 
 https://thefourthangle.pages.dev/issue/1980
 ```
 
-### Issue 1973 — Bestinet ran Malaysia's visa system for RM400M, no contract, Interpol arrest request
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
 
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
 
-**1/7** _(hook — attach image, NO link)_ · 142 chars
+**1/7** _(hook — attach image, NO link)_ · 137 chars
 ```
-One firm runs Malaysia's migrant visa system. Its founder faces an Interpol arrest request. The government just extended his contract to 2031.
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
 ```
 **2/7** _(fact)_ · 125 chars
 ```
 Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
 ```
-**3/7** _(fact)_ · 137 chars
+**3/7** _(fact)_ · 234 chars
 ```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking.
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
 ```
 **4/7** _(fact)_ · 160 chars
 ```
 Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
 ```
-**5/7** _(reframe)_ · 133 chars
+**5/7** _(reframe)_ · 110 chars
 ```
-Malaysian businesses across all communities profit from bonded cheap labour while working-class Malaysians bear the wage suppression.
+Malaysian businesses profit from bonded cheap labour while working-class Malaysians bear the wage suppression.
 ```
-**6/7** _(analogy)_ · 245 chars
+**6/7** _(analogy)_ · 267 chars
 ```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning the operator charges five times the rate and has no contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
 ```
 **7/7** _(view — ONLY post with the link)_ · 173 chars
 ```
