@@ -518,6 +518,8 @@ lens diversity.
     <https://sumsub.com/blog/crypto-regulations-in-malaysia-guide/>
 38. Bank Negara Malaysia, "Navigating the Future of Digital Assets (Box 8, Annual Report 2024)", Mar 2025, https://www.bnm.gov.my/documents/20124/17493532/ar2024_en_box8.pdf [PRIMARY]
 39. Securities Commission Malaysia, "Digital Assets: List of Tradeable Digital Assets on Regulated Exchanges in Malaysia and the Shariah Status", https://www.sc.com.my/digital-assets [PRIMARY]
+40. Tilleke & Gibbins, "Thailand to Add USDT and USDC to Approved Cryptocurrencies List", 10 Mar 2025, https://www.tilleke.com/insights/thailand-to-add-usdt-and-usdc-to-approved-cryptocurrencies-list/ [S]
+41. Bank Negara Malaysia, "Measures to Regain Monetary Independence", 1 Sep 1998, https://www.bnm.gov.my/-/measures-to-regain-monetary-independence [PRIMARY]
 37. Disruption Banking, "Why Singapore's Crypto Regulation Is
     Outshining MiCA in 2025."
     <https://www.disruptionbanking.com/2025/12/29/why-singapores-crypto-regulation-is-outshining-mica-in-2025/>

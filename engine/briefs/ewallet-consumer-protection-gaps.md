@@ -121,3 +121,4 @@ Despite 28 million Malaysians using e-wallets and RM48+ billion flowing through 
 23. Bank Negara Malaysia, "Payment Statistics: T2 Payment Instruments", Nov 2026, https://www.bnm.gov.my/documents/20124/20848086/T2+-+Payment+Instruments.pdf [PRIMARY]
 24. Perbadanan Insurans Deposit Malaysia (PIDM), "FAQs: About PIDM (Does PIDM protect e-money?)", , https://www.pidm.gov.my/general/faqs/about-pidm [PRIMARY]
 25. Financial Markets Ombudsman Service (FMOS), "FMOS Annual Report 2025", Apr 2026, https://www.fmos.org.my/wp-content/uploads/2026/04/FMOS-Annual-Report-2025.pdf [PRIMARY]
+26. Ministry of Finance Malaysia, "RM1 Billion Allocated To eMADANI To Benefit Up To 10 Million Malaysians", 29 Nov 2023, https://mof.gov.my/portal/en/news/press-release/rm1-billion-allocated-to-emadani-to-benefit-up-to-10-million-malaysians [PRIMARY]

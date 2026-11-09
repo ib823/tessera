@@ -272,6 +272,7 @@ Primary (P) = official document, statement by the responsible body, court/treaty
 58. RTM Berita, "Jerebu: Enam kawasan di Sarawak catat IPU berbahaya setakat 8 pagi", 1 Sep 2026, https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/jerebu-enam-kawasan-di-sarawak-catat-ipu-berbahaya-setakat-8-pagi/ [S]
 59. Ministry of Sustainability and the Environment, Singapore, "Written Reply to Parliamentary Question on NEA's Investigation on Transboundary Haze in 2015 by Ms Grace Fu, Minister for Sustainability and the Environment", 13 Sep 2021, https://www.mse.gov.sg/latest-news/written-reply-to-pq-on-nea-investigation-on-transboundary-haze-in-2015/ [PRIMARY]
 60. Indonesian National Police (Tribratanews Polri), "Bareskrim Polri Tetapkan 89 Tersangka Karhutla", 1 Sep 2026, https://tribratanews.polri.go.id/blog/hukum-4/bareskrim-polri-tetapkan-89-tersangka-karhutla-105240 [PRIMARY]
+61. New Straits Times, "Tabling of Transboundary Haze Act shelved", 3 Aug 2020, https://nst.com.my/amp/news/nation/2020/08/613690/tabling-transboundary-haze-act-shelved [S]
 
 Primary count: [1], [3], [4], [5], [7], [12], [14], [15], [16], [17], [21], [42], [49], [53] = 14 primary (plus [14b], [54] = 16); 8 further items are reporting that directly cites a named primary dataset (DOE APIMS, ASMC, NADMA, Forestry Ministry).
 

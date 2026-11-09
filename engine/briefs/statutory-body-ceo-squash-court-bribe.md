@@ -122,6 +122,8 @@ A6. The Vibes, "MACC nabs statutory body CEO suspected of accepting bribes to bu
 A7. FMT, "Rodziah denies link to CEO under probe by MACC", 15 Apr 2026 — LOGGED FOR
     EXCLUSION ONLY (unverified third-party allegation; do not use).
     https://www.freemalaysiatoday.com/category/nation/2026/04/15/rodziah-denies-link-to-ceo-under-probe-by-macc
+A8. Free Malaysia Today, "70% of complaints in 2024 related to public procurement, says MACC", 8 Aug 2024.
+    https://www.freemalaysiatoday.com/category/nation/2024/08/08/70-of-complaints-in-2024-related-to-public-procurement-says-macc
 
 ## EDITORIAL ANGLE (for Stage 1)
 The story is the *gate*, not the man. Lead identifiable-but-unnamed: a CEO arrested

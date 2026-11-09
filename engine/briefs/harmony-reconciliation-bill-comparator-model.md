@@ -201,6 +201,9 @@ No single-spectrum reliance detected. Note: 3R sensitivity puts higher bar on an
 24. **Veritas Zimbabwe**, NPRC Annual Reports 2018, 2019, 2020, 2021, 2022, 2023.
 25. **Tandfonline / African Security Review**, "The Zimbabwe Peace and Reconciliation Commission: Towards an integrated national infrastructure for peace?" Vol 31, No 3, 2022. https://www.tandfonline.com/doi/full/10.1080/10246029.2022.2086475
 26. ARTICLE 19, SUARAM, Lawyers for Liberty, CIJ, Aliran and others, "Joint letter to the Minister of Home Affairs and the Minister for Law and Institutional Reform urging repeal of the Sedition Act 1948", 25 May 2023, https://www.article19.org/wp-content/uploads/2023/05/Sedition-Act-Repeal.pdf [S]
+28. The Star, "PM: National Harmony Act to replace Sedition Act", 11 Jul 2012, https://www.thestar.com.my/news/nation/2012/07/11/pm-national-harmony-act-to-replace-sedition-act [S]
+29. Tsun Hang Tey, Singapore Journal of Legal Studies [2008] 118-142 (NUS Faculty of Law), "Excluding Religion from Politics and Enforcing Religious Harmony: Singapore-Style", July 2008, https://law.nus.edu.sg/sjls/wp-content/uploads/sites/14/2024/07/1953-2008-sjls-jul-118.pdf [PRIMARY]
+30. Mothership, "S'pore law minister can demand takedown of offensive posts under updated Religious Harmony Act", 26 Sep 2019, https://mothership.sg/2019/09/shanmugam-maintenance-of-religious-harmony-act-bill [S]
 27. Free Malaysia Today, "Sedition Act cases up 84% in 2025, says CIJ", 10 Dec 2025, https://www.freemalaysiatoday.com/category/nation/2025/12/10/sedition-act-cases-up-84-in-2025-says-cij [S]
 
 ---

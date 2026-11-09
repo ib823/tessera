@@ -411,6 +411,10 @@ the paired issue).
 - **A30** SCMP, "Malaysia's arrest of Israeli man with 6 guns triggers mystery", Apr 2024. https://www.scmp.com/week-asia/politics/article/3257583/malaysias-arrest-israeli-man-6-guns-triggers-mystery-was-mossad-or-mob-involved
 - **A31** Malay Mail, "Israeli national jailed seven years for firearms, ammunition possession in Kajang", 26 Feb 2025. https://www.malaymail.com/news/malaysia/2025/02/26/israeli-national-jailed-seven-years-for-firearms-ammunition-possession-in-kajang/168028
 - **A32** Meta Newsroom, "Removing Coordinated Inauthentic Behavior From Israel", 16 May 2019 (re-read: no Thailand). https://about.fb.com/news/2019/05/removing-coordinated-inauthentic-behavior-from-israel/
+- **A33** Thai PBS World, "Thailand asks Malaysia to deny safe haven to southern insurgents", 28 Jul 2026. https://www.thaipbsworld.com/south-watch/thailand-asks-malaysia-to-deny-safe-haven-to-southern-insurgents
+- **A34** RTM (Berita RTM), "Serangan bom di Narathiwat, tiada bukti suspek bolos ke Kelantan – Polis", 2 Aug 2026. https://berita.rtm.gov.my/kes/senarai-berita-kes/senarai-artikel/serangan-bom-di-narathiwat-tiada-bukti-suspek-bolos-ke-kelantan-polis/
+- **A35** New Straits Times, "Kelantan police welcome Thai plan for 99km border fence", 2 Aug 2026. https://www.nst.com.my/amp/news/regional/2026/08/1502802/kelantan-police-welcome-thai-plan-99km-border-fence
+- **A36** Daily News (Thailand), "เปิดเนื้อหาจดหมายเปิดผนึก 'สนธิ ลิ้มทองกุล' ยื่นถึงทูตอิสราเอล 4 ข้อเรียกร้อง (Full text of Sondhi Limthongkul's open letter to the Israeli ambassador, with four demands)", 10 Sep 2026. https://www.dailynews.co.th/news/6177880/
 
 Blocked: Bangkok Post (451) for the Sondhi rally and the 2013 General Consensus; Khaosod English
 (403) for the 23 Jul army story and the 17 Sep "Grey Jews" opinion; Crisis Group site (403, PDF

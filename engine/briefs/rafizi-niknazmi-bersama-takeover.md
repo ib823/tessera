@@ -121,6 +121,7 @@ Avoid using all three of Political/Legal/Governance on the fact cards if Governa
 21. **US News / AP wire** (international) — *Two Former Malaysian Ministers Announce Resignations from Parliament Seats*, 17 May 2026. https://www.usnews.com/news/world/articles/2026-05-17/two-former-malaysian-ministers-announce-resignations-from-parliament-seats
 22. **Berita Harian / Harian Metro** (Malay-language, government-aligned BH; mainstream HM) — corroborating Malay-language coverage.
 24. Court of Appeal Malaysia (via eLaw), "Zuraida Kamaruddin v Saifuddin Nasution Ismail (as Secretary General, Parti Keadilan Rakyat), Civil Appeal No. W-02(NCVC)(W)-1094-07-2023, [2025] 1 MLRA 907", 11 Dec 2024, https://www.elaw.my/JE/01/JE_2024_51.html [PRIMARY]
+25. Malay Mail (Bernama), "Confidence vote, election of Speaker focus of today's Dewan Rakyat session", 19 Dec 2022, https://www.malaymail.com/news/malaysia/2022/12/19/confidence-vote-election-of-speaker-focus-of-todays-dewan-rakyat-session/46000 [S]
 23. **Wikipedia** — *Malaysian United Party*; *Nik Nazmi*; *Results of the 2022 Malaysian general election by parliamentary constituency*. Secondary; used only to cross-check primary-source claims (registration date, majority figures).
 
 ## CONTRADICTIONS
