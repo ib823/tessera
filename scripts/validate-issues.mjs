@@ -193,6 +193,15 @@ for (const issue of issues) {
       warn(id, 'headline', `Over bite-size target: ${issue.headline.length} chars (target ${LIMITS.headline.target})`);
     }
   }
+  // Optional short title for search results and social cards (S-4). The page
+  // <title> falls back to the headline cut at a word boundary when absent.
+  if (issue.seoTitle !== undefined) {
+    if (typeof issue.seoTitle !== 'string' || issue.seoTitle.trim().length < LIMITS.headline.min) {
+      err(id, 'seoTitle', `Must be a string of at least ${LIMITS.headline.min} chars when present`);
+    } else if (issue.seoTitle.trim().length > 60) {
+      err(id, 'seoTitle', `Too long: ${issue.seoTitle.trim().length} chars (max 60, the search-results limit)`);
+    }
+  }
   if (issue.context) {
     if (issue.context.length < LIMITS.context.min) {
       err(id, 'context', `Too short: ${issue.context.length} chars (min ${LIMITS.context.min})`);

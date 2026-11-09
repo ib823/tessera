@@ -5,6 +5,8 @@ import IssueSources from '../../components/IssueSources.svelte';
 import { ISSUES } from '../../data/issues';
 import { getIssueSourceList } from '../../data/sources';
 import { CARD_TYPES, opinionLabel } from '../../data/issue-types';
+import { issueDocumentTitle, issueSeoTitle } from '../../lib/seo';
+import { cardAnchor } from '../../lib/card-anchor';
 
 export function getStaticPaths() {
   return ISSUES.filter(issue => issue.published === true).map(issue => ({
@@ -31,7 +33,18 @@ if (ctxTrunc.length > maxCtx) {
   ctxTrunc = ctxTrunc.substring(0, maxCtx).replace(/\s+\S*$/, '') + '...';
 }
 const description = ctxTrunc + suffix;
-const title = `${issue.headline} — The Fourth Angle`;
+// S-4: results pages cut titles near 60 characters. Use the issue's seoTitle
+// override, or the headline shortened at a word boundary. The on-page <h1>
+// keeps the full headline.
+const title = issueDocumentTitle(issue);
+const socialTitle = issueSeoTitle(issue);
+// P-4: preload the issue's own hero (the static article's LCP image). The
+// preload, the <picture> below and DesktopReader's hero share the same AVIF
+// candidates and sizes, so the reader reuses the preloaded file instead of
+// fetching a second width after hydration.
+const v = encodeURIComponent(buildId);
+const heroSizes = '(min-width: 70rem) 700px, 100vw';
+const heroAvifSrcset = `/og/issue-${issue.id}-640w.avif?v=${v} 640w, /og/issue-${issue.id}-960w.avif?v=${v} 960w, /og/issue-${issue.id}-1200w.avif?v=${v} 1200w`;
 const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}/100`;
 
 // JSON-LD article data for search engines. Issues carry one date, sourceDate
@@ -70,7 +83,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
   <title>{title}</title>
   <meta name="description" content={description} />
 
-  <meta property="og:title" content={issue.headline} />
+  <meta property="og:title" content={socialTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:secure_url" content={ogImage} />
@@ -84,7 +97,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
   <meta property="og:locale" content="en_MY" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={issue.headline} />
+  <meta name="twitter:title" content={socialTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
   <meta name="twitter:image:alt" content={imageAlt} />
@@ -95,6 +108,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
   )}
   <meta property="article:section" content="Analysis" />
   <link rel="canonical" href={issueUrl} />
+  <link rel="alternate" type="application/rss+xml" title="The Fourth Angle" href="/rss.xml" />
   {/* Data block, not executed: build-csp-hashes.mjs skips it, so no CSP hash. */}
   <script type="application/ld+json" is:inline set:html={articleJsonLdText}></script>
   <meta name="mobile-web-app-capable" content="yes" />
@@ -113,6 +127,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
   */}
   <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" type="image/avif" imagesrcset={heroAvifSrcset} imagesizes={heroSizes} fetchpriority="high" />
   <script is:inline>
     (function () {
       try {
@@ -164,18 +179,18 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
       <picture>
         <source
           type="image/avif"
-          srcset={`/og/issue-${issue.id}-640w.avif?v=${encodeURIComponent(buildId)} 640w, /og/issue-${issue.id}-960w.avif?v=${encodeURIComponent(buildId)} 960w, /og/issue-${issue.id}-1200w.avif?v=${encodeURIComponent(buildId)} 1200w`}
-          sizes="(min-width: 70rem) 70ch, 100vw"
+          srcset={heroAvifSrcset}
+          sizes={heroSizes}
         />
         <source
           type="image/webp"
           srcset={`/og/issue-${issue.id}-640w.webp?v=${encodeURIComponent(buildId)} 640w, /og/issue-${issue.id}-960w.webp?v=${encodeURIComponent(buildId)} 960w, /og/issue-${issue.id}-1200w.webp?v=${encodeURIComponent(buildId)} 1200w`}
-          sizes="(min-width: 70rem) 70ch, 100vw"
+          sizes={heroSizes}
         />
         <img
           src={`/og/issue-${issue.id}-1200w.jpg?v=${encodeURIComponent(buildId)}`}
           srcset={`/og/issue-${issue.id}-640w.jpg?v=${encodeURIComponent(buildId)} 640w, /og/issue-${issue.id}-960w.jpg?v=${encodeURIComponent(buildId)} 960w, /og/issue-${issue.id}-1200w.jpg?v=${encodeURIComponent(buildId)} 1200w`}
-          sizes="(min-width: 70rem) 70ch, 100vw"
+          sizes={heroSizes}
           alt={imageAlt}
           width="1200"
           height="630"
@@ -201,7 +216,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
         const cardType = CARD_TYPES[card.t];
         const label = card.t === 'fact' && card.lens ? `${cardType.label} · ${card.lens}` : cardType.label;
         return (
-          <section class={`ssg-card ssg-card--${card.t}`} data-card-index={i} data-card-type={card.t}>
+          <section id={cardAnchor(i)} class={`ssg-card ssg-card--${card.t}`} data-card-index={i} data-card-type={card.t}>
             <p class="ssg-card__label">{label}</p>
             <p class="ssg-card__big">{card.big}</p>
             {card.sub && <p class="ssg-card__sub">{card.sub}</p>}
@@ -221,6 +236,11 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
         <p class="ssg-article__quality-note">Reviewed across {issue.stageScores ? Object.values(issue.stageScores).filter((v) => typeof v === 'number').length : 4} independent editorial stages.</p>
       </footer>
     )}
+    <p class="ssg-article__follow">
+      <a href="/verify">Verify this issue</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="/rss.xml">RSS feed</a>
+    </p>
   </article>
 
   {/*
@@ -398,6 +418,18 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
       color: var(--text-muted, #626a72);
       margin: 4px 0 0;
     }
+    .ssg-article__follow {
+      display: flex;
+      gap: 8px;
+      margin: 16px 0 0;
+      font-size: 0.875rem;
+      color: var(--text-muted, #626a72);
+    }
+    .ssg-article__follow a {
+      color: var(--text-secondary, #444);
+    }
+    /* Card deep links (#card-N) land with a little space above the card. */
+    .ssg-card { scroll-margin-top: 16px; }
 
     /* Hide static article once the interactive island mounts. See App.svelte onMount. */
     html.js-reader-mounted .ssg-article { display: none; }
@@ -431,6 +463,32 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
           })
           .catch(() => {});
       });
+    }
+  </script>
+
+  <script>
+    // A-9: one <h1> per view. Once the interactive reader mounts it renders
+    // its own <h1> and the static article is hidden, so the hidden copy is
+    // demoted to a paragraph. It stays in the DOM (same id and class) as the
+    // no-JS fallback; the article is only ever shown when the reader did not
+    // mount, and then this never runs.
+    const root = document.documentElement;
+    function demoteStaticHeadline(): boolean {
+      if (!root.classList.contains('js-reader-mounted')) return false;
+      const heading = document.getElementById('ssg-headline');
+      if (heading && heading.tagName === 'H1') {
+        const p = document.createElement('p');
+        for (const attr of Array.from(heading.attributes)) p.setAttribute(attr.name, attr.value);
+        p.textContent = heading.textContent;
+        heading.replaceWith(p);
+      }
+      return true;
+    }
+    if (!demoteStaticHeadline()) {
+      const observer = new MutationObserver(() => {
+        if (demoteStaticHeadline()) observer.disconnect();
+      });
+      observer.observe(root, { attributes: true, attributeFilter: ['class'] });
     }
   </script>
 </body>

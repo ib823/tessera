@@ -1,4 +1,6 @@
-import MiniSearch from 'minisearch';
+// MiniSearch loads with the index, on first search, instead of riding in
+// the main bundle on every page (audit P-3).
+import type MiniSearch from 'minisearch';
 import { freshFetch } from './build';
 
 let miniSearch: MiniSearch | null = null;
@@ -18,16 +20,28 @@ const SEARCH_CONFIG = {
 /** Minimum characters before search fires (avoids noisy single-char results) */
 const MIN_QUERY_LENGTH = 2;
 
-export async function loadSearchIndex(): Promise<void> {
-  if (loaded || loading) return;
+let loadPromise: Promise<void> | null = null;
+
+/** Load the index once; concurrent callers share the same in-flight load. */
+export function loadSearchIndex(): Promise<void> {
+  if (loaded) return Promise.resolve();
+  if (!loadPromise) loadPromise = fetchIndex();
+  return loadPromise;
+}
+
+async function fetchIndex(): Promise<void> {
   loading = true;
   try {
-    const res = await freshFetch('/search-index.json');
+    const [{ default: MiniSearchImpl }, res] = await Promise.all([
+      import('minisearch'),
+      freshFetch('/search-index.json'),
+    ]);
     const json = await res.json();
-    miniSearch = MiniSearch.loadJSON(JSON.stringify(json), SEARCH_CONFIG);
+    miniSearch = MiniSearchImpl.loadJSON(JSON.stringify(json), SEARCH_CONFIG);
     loaded = true;
   } catch {
-    // Silently fail — search won't work but app continues
+    // Silently fail — search won't work but app continues. Allow a retry.
+    loadPromise = null;
   }
   loading = false;
 }

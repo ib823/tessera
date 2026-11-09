@@ -35,6 +35,12 @@ export interface Issue {
   status: "new" | "updated" | null;
   edition: number;
   headline: string;
+  /**
+   * Optional short title (≤ 60 chars) for the page <title>, og:title and
+   * twitter:title. When absent, the headline is shortened at a word boundary
+   * (src/lib/seo.ts). Never shown on the page; the headline stays the <h1>.
+   */
+  seoTitle?: string;
   context: string;
   cards: Card[];
   stageScores?: StageScores;

@@ -8,9 +8,13 @@
   import SaveButton from './SaveButton.svelte';
   import ShareModal from './ShareModal.svelte';
   import PushPrompt from './PushPrompt.svelte';
+  import VerifyCopyButton from './VerifyCopyButton.svelte';
   import IssueImage from './IssueImage.svelte';
   import IssueSources from './IssueSources.svelte';
   import { withBuildId } from '../lib/build';
+  import { initialCardFromLocation } from '../lib/card-anchor';
+  import { resolveRelatedIssue, type RelatedPick } from '../lib/related-next';
+  import { truncateAtWord } from '../lib/seo';
 
   import type { Issue } from '../data/issue-types';
 
@@ -41,72 +45,17 @@
   let cardEls: Array<HTMLDivElement | undefined> = $state([]);
   let shareOpen = $state(false);
   let shareCardIndex: number | null = $state(null);
-  let copied = $state(false);
+  // "Continue: related" in the completion block (A-8).
+  let relatedPick = $state<RelatedPick | null>(null);
+  // A card deep link (/issue/{id}#card-N, SH-2) applies to the issue in the
+  // URL until the reader has scrolled to it once.
+  const hashIssueId = issue.id;
+  const hashCard = initialCardFromLocation(issue.id, issue.cards.length);
+  let hashCardApplied = hashCard === null;
   let activeStep = $state(Math.max(0, Math.min(initialCardIndex, Math.max(issue.cards.length - 1, 0))));
   let persistedProgress = $state(0);
   let pendingInitialCardIndex: number | null = $state(initialCardIndex > 0 ? initialCardIndex : null);
   let stepObserver: IntersectionObserver | null = null;
-
-  const CARD_LABELS: Record<string, string> = {
-    hook: 'What they said',
-    fact: 'What we found',
-    reframe: 'The real question',
-    view: 'The considered view',
-  };
-
-  function buildVerificationText() {
-    const lines: string[] = [];
-    lines.push(issue.headline);
-    lines.push(issue.context);
-    lines.push('');
-    lines.push(String(issue.opinionShift));
-    lines.push(opinionLabel(issue.opinionShift));
-
-    // Stage scores
-    if (issue.stageScores) {
-      const s = issue.stageScores;
-      lines.push('PA');
-      lines.push('BA');
-      lines.push('FC');
-      lines.push('AF');
-      lines.push('CT');
-      lines.push('SR');
-    }
-    if (issue.finalScore != null) {
-      lines.push(String(issue.finalScore));
-      lines.push('/100');
-    }
-
-    if (issue.status) lines.push(issue.status === 'new' ? 'New' : 'Updated');
-
-    for (const card of issue.cards) {
-      lines.push('');
-      let lbl = CARD_LABELS[card.t] || card.t;
-      if (card.t === 'fact' && card.lens) lbl += ` \u00B7 ${card.lens}`;
-      lines.push(lbl);
-      lines.push('');
-      lines.push(card.big);
-      if (card.sub) {
-        lines.push('');
-        lines.push(card.sub);
-      }
-    }
-
-    lines.push('');
-    lines.push('All 6 perspectives read');
-    const vc = [...issue.cards].reverse().find((c) => c.t === 'view');
-    if (vc) lines.push(vc.big);
-
-    return lines.join('\n');
-  }
-
-  async function copyForVerification() {
-    try {
-      await navigator.clipboard.writeText(buildVerificationText());
-      copied = true;
-      setTimeout(() => { copied = false; }, 2000);
-    } catch {}
-  }
 
   function cardLabel(card: Issue['cards'][number]) {
     const m = CARD_TYPES[card.t] ?? CARD_TYPES.hook;
@@ -236,6 +185,7 @@
         if (targetEl) {
           scrollEl.scrollTop = Math.max(0, targetEl.offsetTop - 24);
           activeStep = targetIndex;
+          hashCardApplied = true;
         }
         pendingInitialCardIndex = null;
       }
@@ -243,13 +193,38 @@
   }
 
   $effect(() => {
+    const target = issue;
+    relatedPick = null;
+    let cancelled = false;
+    resolveRelatedIssue(target).then((pick) => {
+      if (!cancelled) relatedPick = pick;
+    });
+    return () => { cancelled = true; };
+  });
+
+  function startCardIndex(): number {
+    if (!hashCardApplied && hashCard !== null && issue.id === hashIssueId) return hashCard;
+    return initialCardIndex;
+  }
+
+  onMount(() => {
+    // The browser already jumped the window to the static article's
+    // #card-N section before the reader replaced it; the reader scrolls its
+    // own column, so put the window back at the top.
+    if (hashCard !== null) window.scrollTo(0, 0);
+  });
+
+  $effect(() => {
     void issue.id;
     void initialCardIndex;
-    const nextInitialIndex = Math.max(0, Math.min(initialCardIndex, Math.max(issue.cards.length - 1, 0)));
+    const nextInitialIndex = Math.max(0, Math.min(startCardIndex(), Math.max(issue.cards.length - 1, 0)));
     activeStep = nextInitialIndex;
     persistedProgress = getReadState(issue.id)?.progress ?? 0;
     pendingInitialCardIndex = nextInitialIndex > 0 ? nextInitialIndex : null;
-    cardEls = [];
+    // Do not reset cardEls here: bind:this fills it once per element and does
+    // not re-run, so clearing it left the step observer with no cards. The
+    // "Reading path" never advanced on scroll and a start card (resume or
+    // #card-N) was never scrolled to.
     setupStepObserver();
   });
 
@@ -300,6 +275,7 @@
             class="reader-progress-segment"
             class:reader-progress-segment--done={i < activeStep}
             class:reader-progress-segment--active={i === activeStep}
+            aria-current={i === activeStep ? 'step' : undefined}
             onclick={() => { const el = cardEls[i]; if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
             title="{cardMeta.label}{card.lens ? ' · ' + card.lens : ''}"
             aria-label="Card {i + 1}: {cardMeta.label}{card.lens ? ' — ' + card.lens : ''}"
@@ -440,7 +416,7 @@
                   <picture>
                     <source type="image/avif" srcset={withBuildId(`/og/issue-${conn.id}-640w.avif`)} />
                     <source type="image/webp" srcset={withBuildId(`/og/issue-${conn.id}-640w.webp`)} />
-                    <img src={withBuildId(`/og/issue-${conn.id}-640w.jpg`)} alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" onerror={(e) => { (e.currentTarget as HTMLElement).style.display = 'none'; }} />
+                    <img src={withBuildId(`/og/issue-${conn.id}-640w.jpg`)} alt="" width="36" height="36" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" onerror={(e) => { (e.currentTarget as HTMLElement).style.display = 'none'; }} />
                   </picture>
                 </div>
                 <div style="flex:1;min-width:0;">
@@ -476,26 +452,26 @@
       {/if}
 
       <div class="reader-completion-actions">
+        <!-- A-8: a related issue first; the feed order stays as "Next in Latest". -->
+        {#if relatedPick && onNavigateToIssue}
+          <button onclick={() => { if (relatedPick) onNavigateToIssue?.(relatedPick.id); }} class="completion-primary-btn completion-related-btn" data-continue-related={relatedPick.id}>
+            <span class="completion-related-kicker">Continue: related</span>
+            <span>{truncateAtWord(relatedPick.headline, 90)}</span>
+          </button>
+        {/if}
         {#if onNext}
-          <button onclick={onNext} class="completion-primary-btn">
-            {nextHeadline ? `Next: ${nextHeadline.length > 50 ? nextHeadline.slice(0, 50) + '...' : nextHeadline}` : 'Read next issue'}
+          <button onclick={onNext} class={relatedPick ? 'completion-secondary-btn' : 'completion-primary-btn'}>
+            {nextHeadline ? `${relatedPick ? 'Next in Latest' : 'Next'}: ${truncateAtWord(nextHeadline, 50)}` : 'Read next issue'}
           </button>
         {/if}
         {#if onReturnHome}
-          <button onclick={onReturnHome} class={onNext ? 'completion-secondary-btn' : 'completion-primary-btn'}>
+          <button onclick={onReturnHome} class={onNext || relatedPick ? 'completion-secondary-btn' : 'completion-primary-btn'}>
             Back to Today
           </button>
         {/if}
 
         <div class="completion-verify-row">
-          <button
-            onclick={copyForVerification}
-            class="completion-utility-btn"
-            class:completion-utility-btn--copied={copied}
-          >
-            {copied ? 'Copied — paste into the verifier' : 'Copy for verification'}
-          </button>
-          <a href="/verify" class="completion-help-link">What is this?</a>
+          <VerifyCopyButton {issue} variant="link" />
         </div>
       </div>
     </div>
@@ -671,8 +647,7 @@
   }
 
   .completion-primary-btn,
-  .completion-secondary-btn,
-  .completion-utility-btn {
+  .completion-secondary-btn {
     width: 100%;
     border-radius: var(--radius-pill);
     font: inherit;
@@ -726,58 +701,27 @@
     }
   }
 
-  .completion-utility-btn {
-    min-height: 44px;
-    padding: 0 20px;
-    border: 1px solid var(--border-subtle);
-    background: rgba(255, 255, 255, 0.64);
-    color: var(--text-secondary);
-    font-size: var(--text-sm);
-    font-weight: 600;
-    box-shadow: none;
-  }
-
-  @media (hover: hover) {
-    .completion-utility-btn:hover {
-      background: var(--bg);
-      border-color: var(--border-divider);
-      color: var(--text-primary);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(17, 24, 39, 0.06);
-    }
-  }
-
-  .completion-utility-btn--copied {
-    border-color: rgba(46, 125, 50, 0.28);
-    color: var(--status-green);
-    background: rgba(46, 125, 50, 0.08);
-  }
-
   .completion-verify-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 12px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
-  .completion-verify-row .completion-utility-btn {
-    min-height: 40px;
-    font-size: var(--text-xs);
-    border-color: transparent;
-    background: var(--bg-elevated);
+  .completion-related-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    padding: 12px 24px;
+    border-radius: var(--radius-lg);
+    text-align: left;
+    line-height: 1.35;
   }
 
-  .completion-help-link {
-    font-size: var(--text-xs);
-    font-weight: 600;
-    color: var(--text-muted);
-    text-decoration: none;
-  }
-
-  @media (hover: hover) {
-    .completion-help-link:hover {
-      color: var(--text-secondary);
-    }
+  .completion-related-kicker {
+    font-size: var(--text-micro);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -786,14 +730,6 @@
       background: linear-gradient(180deg, rgba(200, 150, 58, 0.13), rgba(200, 150, 58, 0.08));
       box-shadow: 0 16px 30px rgba(0, 0, 0, 0.22);
     }
-
-    .completion-utility-btn {
-      background: rgba(34, 31, 27, 0.74);
-    }
-
-    .completion-verify-row .completion-utility-btn {
-      background: rgba(30, 28, 24, 0.64);
-    }
   }
 
   @media (prefers-color-scheme: dark) and (hover: hover) {
@@ -801,11 +737,6 @@
       border-color: rgba(200, 150, 58, 0.3);
       background: linear-gradient(180deg, rgba(200, 150, 58, 0.16), rgba(200, 150, 58, 0.1));
       box-shadow: 0 20px 36px rgba(0, 0, 0, 0.26);
-    }
-
-    .completion-utility-btn:hover {
-      background: rgba(40, 36, 31, 0.94);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
     }
   }
 
@@ -822,19 +753,10 @@
       max-width: 100%;
       font-size: var(--text-reader-title-mobile);
     }
-
-    .completion-verify-row {
-      grid-template-columns: 1fr;
-    }
-
-    .completion-help-link {
-      justify-self: center;
-    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .completion-primary-btn,
-    .completion-utility-btn {
+    .completion-primary-btn {
       transition: none;
     }
   }

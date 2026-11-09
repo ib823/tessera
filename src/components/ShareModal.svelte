@@ -5,6 +5,8 @@
   import { createSpring, animateSpring } from '../lib/spring';
   import { BUILD_ID, getSiteOrigin } from '../lib/build';
   import { shareCardAsImage, type CardVariant, type CardFormat } from '../lib/share-card';
+  import { issueShareUrl } from '../lib/card-anchor';
+  import VerifyCopyButton from './VerifyCopyButton.svelte';
 
   interface Props {
     issue: Issue;
@@ -133,7 +135,8 @@
   let card = $derived(cardIndex !== null ? issue.cards[cardIndex] : null);
   let shareText = $derived(card ? card.big : issue.headline);
   let previewText = $derived(card ? (shareText.length > 120 ? shareText.slice(0, 117) + '...' : shareText) : (issue.context.length > 120 ? issue.context.slice(0, 117) + '...' : issue.context));
-  let fullUrl = $derived(`${getSiteOrigin()}/issue/${issue.id}?v=${encodeURIComponent(BUILD_ID)}`);
+  // A card share links to that card (/issue/{id}#card-N, SH-2); the reader opens there.
+  let fullUrl = $derived(issueShareUrl(getSiteOrigin(), issue.id, cardIndex, BUILD_ID));
 
   let os = $derived(issue.opinionShift);
   let ns = $derived(Math.round(issue.finalScore ?? 0));
@@ -197,7 +200,13 @@
     cardGenerating = true;
     try {
       haptic(5);
-      await shareCardAsImage(shareText, cardVariant, cardFormat);
+      // SH-3: stamp publication, date, edition and a short link on the image.
+      await shareCardAsImage(shareText, cardVariant, cardFormat, {
+        issueId: issue.id,
+        edition: issue.edition,
+        sourceDate: issue.sourceDate,
+        cardIndex,
+      });
     } catch {}
     cardGenerating = false;
   }
@@ -380,7 +389,7 @@
           <picture>
             <source type="image/avif" srcset={`/og/issue-${issue.id}-640w.avif?v=${encodeURIComponent(BUILD_ID)}`} />
             <source type="image/webp" srcset={`/og/issue-${issue.id}-640w.webp?v=${encodeURIComponent(BUILD_ID)}`} />
-            <img src={`/og/issue-${issue.id}-640w.jpg?v=${encodeURIComponent(BUILD_ID)}`} alt="" loading="eager" decoding="async" style="width:100%;aspect-ratio:1.91/1;object-fit:cover;display:block;" onerror={(e) => { const w = (e.currentTarget as HTMLElement)?.parentElement?.parentElement?.parentElement; if (w) w.style.display = 'none'; }} />
+            <img src={`/og/issue-${issue.id}-640w.jpg?v=${encodeURIComponent(BUILD_ID)}`} alt="" width="640" height="336" loading="eager" decoding="async" style="width:100%;aspect-ratio:1.91/1;object-fit:cover;display:block;" onerror={(e) => { const w = (e.currentTarget as HTMLElement)?.parentElement?.parentElement?.parentElement; if (w) w.style.display = 'none'; }} />
           </picture>
         </div>
         <div class="preview-headline">{issue.headline}</div>
@@ -441,5 +450,10 @@
         {/if}
       </span>
     </button>
+
+    <!-- T-6: the verification copy lives in the share sheet too, not only at the end of the article. -->
+    <div style="margin-top:10px;">
+      <VerifyCopyButton {issue} />
+    </div>
   </div>
 </div>

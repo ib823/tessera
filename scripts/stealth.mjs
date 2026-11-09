@@ -167,8 +167,9 @@ async function main() {
 
   // ── PHASE 6: Remove unused files ──
   try { await unlink(join(DIST, 'fonts', 'playfair-latin.woff2')); } catch {}
-  try { await unlink(join(DIST, 'favicon.ico')); } catch {}
-  try { await unlink(join(DIST, 'favicon.svg')); } catch {}
+  // favicon.svg and favicon.ico are the T4A mark (scripts/generate-logos.mjs),
+  // not framework starter files. Every page links them, so deleting them here
+  // made both 404 (audit P-7).
   try { await rm(join(DIST, 'og', 'backgrounds'), { recursive: true, force: true }); } catch {}
 
   // ── PHASE 7: Strip image metadata (PNG chunks + JPEG EXIF) ──

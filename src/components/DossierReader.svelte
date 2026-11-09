@@ -641,6 +641,8 @@
         alt={lightboxFigure.alt}
         loading="eager"
         decoding="async"
+        width="1200"
+        height="675"
         style:width="100%"
         style:height="auto"
         style:max-height="92vh"
