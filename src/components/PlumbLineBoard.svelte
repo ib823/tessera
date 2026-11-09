@@ -153,7 +153,7 @@
   .pl__view--on { color: var(--bg); background: var(--text-primary); }
   .pl__sec { margin-bottom: 28px; }
   .pl__seclabel { font-family: var(--font-display); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-tertiary); margin: 0 0 12px; }
-  .pl__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .pl__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 14px; }
   .pl__foot { font-size: var(--text-xs); color: var(--text-tertiary); line-height: 1.55; border-top: 1px solid var(--border-light); padding-top: 14px; }
   @media (max-width: 520px) { .pl__grid { grid-template-columns: 1fr; } }
 </style>

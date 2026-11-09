@@ -110,6 +110,13 @@ html.app-doc-scroll body {
   get automatic line-balancing for headings. Older engines fall back to
   the baseline wrapping with no visible regression.
 */
+/* A long unbroken word (a URL, an email address, a code) breaks rather than
+   widen the page at large text sizes (WCAG 1.4.10). break-word changes no
+   intrinsic sizes, so it leaves layouts alone at normal sizes. */
+body {
+  overflow-wrap: break-word;
+}
+
 .balance-title {
   overflow-wrap: normal;
   word-break: normal;

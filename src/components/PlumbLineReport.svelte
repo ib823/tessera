@@ -149,7 +149,7 @@
   .pl__head h1 { font-family: var(--font-display); font-size: clamp(1.5rem, 5vw, 2.1rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin: 0 0 10px; }
   .pl__by { display: flex; align-items: center; gap: 8px; font-size: var(--text-xs); color: var(--text-tertiary); }
   .pl__avatar { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--text-primary); color: var(--bg); font-family: var(--font-display); font-weight: 800; font-size: 10px; letter-spacing: 0.02em; }
-  .pl__tabs { display: flex; gap: 22px; padding: 14px 18px 0; border-bottom: 1px solid var(--border-light); position: sticky; top: 0; background: var(--bg); z-index: 2; }
+  .pl__tabs { display: flex; gap: 4px 22px; padding: 14px 18px 0; border-bottom: 1px solid var(--border-light); position: sticky; top: 0; background: var(--bg); z-index: 2; flex-wrap: wrap; }
   .pl__tabs button { all: unset; cursor: pointer; padding: 6px 0 12px; font-family: var(--font-display); font-weight: 700; font-size: var(--text-body); color: var(--text-tertiary); border-bottom: 3px solid transparent; margin-bottom: -1px; }
   .pl__tabs button.active { color: var(--text-primary); border-bottom-color: var(--text-primary); }
   .pl__body { padding: 22px 18px 70px; line-height: 1.62; font-size: var(--text-reading); color: var(--text-secondary); }

@@ -137,6 +137,7 @@ const { current } = Astro.props;
     display: inline-flex;
     align-items: center;
     gap: 12px;
+    min-width: 0;
     min-height: 44px;
     border-radius: var(--radius-lg);
     color: var(--text-primary);
@@ -156,6 +157,7 @@ const { current } = Astro.props;
     display: flex;
     align-items: baseline;
     gap: 0 10px;
+    min-width: 0;
   }
 
   .utility-wordmark {
@@ -165,6 +167,9 @@ const { current } = Astro.props;
     letter-spacing: -0.015em;
     font-weight: 700;
     white-space: nowrap;
+    /* At large text sizes the name truncates rather than push the menu off-screen. */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .utility-tagline {
@@ -207,6 +212,10 @@ const { current } = Astro.props;
   .utility-nav {
     margin-inline-start: auto;
     display: inline-flex;
+    /* Links wrap onto a second row at large text sizes instead of widening the page. */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 0;
     align-items: center;
     gap: 4px;
     border-radius: var(--radius-pill);
@@ -247,6 +256,7 @@ const { current } = Astro.props;
   /* ── Hamburger button — hidden on desktop ── */
   .nav-hamburger {
     display: none;
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     margin-inline-start: auto;

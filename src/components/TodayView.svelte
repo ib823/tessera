@@ -763,9 +763,10 @@
     color: var(--text-secondary);
     font-size: var(--text-sm);
     font-weight: 600;
-    white-space: nowrap;
+    /* One line at normal sizes; wraps rather than widen the page when text is enlarged. */
+    flex-wrap: wrap;
+    max-width: 100%;
   }
-
   .hero-entry {
     display: block;
   }
@@ -861,6 +862,7 @@
 
   .hero-headline {
     margin: 0;
+    overflow-wrap: break-word;
     font-family: var(--font-display);
     font-size: var(--text-issue-title-fluid);
     line-height: 1.15;
@@ -1345,7 +1347,8 @@
     }
 
     .hero-grid {
-      grid-template-columns: 1fr;
+      /* minmax(0, …): a long word at large text sizes must not widen the card. */
+      grid-template-columns: minmax(0, 1fr);
       min-height: 0;
       padding: 20px;
       gap: 20px;
