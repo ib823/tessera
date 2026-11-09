@@ -101,9 +101,9 @@
               <line x1="12" y1="17" x2="12" y2="21"/>
             </svg>
             <span class="dock-prompt-copy">
-              <span class="dock-prompt-text">Keep your reading progress</span>
+              <span class="dock-prompt-text">Sync your reading progress</span>
               <!-- R-4: say where progress lives and how it is lost. -->
-              <span class="dock-prompt-sub">It lives only in this browser. Clearing site data erases it. Sync it to another device to keep a copy.</span>
+              <span class="dock-prompt-sub">It lives only in this browser. Clearing site data erases it.</span>
             </span>
           </button>
           <button type="button" class="dock-prompt-dismiss" onclick={dismiss} aria-label="Dismiss sync prompt">&times;</button>
