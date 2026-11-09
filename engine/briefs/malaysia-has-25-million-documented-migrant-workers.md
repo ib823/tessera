@@ -71,7 +71,7 @@ Edition 4 of issue 1267:
 4. **[P]** US Department of State, *2025 Trafficking in Persons Report: Malaysia*, 29 Sep 2025. https://www.ecoi.net/de/dokument/2130677.html
 5. **[P]** US Department of State, *Trafficking in Persons Report 2014 - Malaysia*, 20 Jun 2014. https://www.ecoi.net/en/document/1102618.html
 6. **[P]** US Department of State, *2022 Trafficking in Persons Report: Malaysia*, 29 Jul 2022. https://www.ecoi.net/en/document/2077640.html
-7. **[P]** Attorney General's Chambers, *Employment Act 1955, Act 265, Reprint*, as at 1 Aug 2023, s. 2(2), s. 90B, First Schedule and list of amendments.
+7. **[P]** Attorney General's Chambers, *Employment Act 1955, Act 265, Reprint*, as at 1 Aug 2023, s. 2(2), s. 90B, First Schedule and list of amendments. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1744567_BI/Reprint%20Act%20265%20(Final).pdf
 8. **[P]** Immigration Department of Malaysia, *Foreign Worker*, sectors and approved source countries. https://www.imi.gov.my/index.php/en/main-services/foreign-worker
 9. **[S]** The Star, "Malaysia maintains Tier 2 status in US human trafficking report", 9 Oct 2026. https://www.thestar.com.my/news/nation/2026/10/09/malaysia-maintains-tier-2-status-in-us-human-trafficking-report
 10. **[S]** Malaysiakini, "US report: M'sia prosecuted no agencies over recruitment abuses, retains Tier 2 status", 9 Oct 2026. https://www.malaysiakini.com/news/886652

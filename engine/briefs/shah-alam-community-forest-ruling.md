@@ -103,7 +103,7 @@ Legal, Governance, Environmental
 13. Malaysian Bar, "Selangor Government Must Respect Due Process in Forest Reserve Excision" 8 Nov 2021 https://www.malaysianbar.org.my/article/news/press-statements/press-statements/press-release-selangor-government-must-respect-due-process-in-forest-reserve-excision
 14. SACF official site, "Chronology of Bukit Cherakah Forest Corridor Judicial Review" https://shahalamforest.org/wp/chronology-of-bukit-cherakah-forest-corridor-judicial-review/
 15. UNDP GEF SGP, "Saving Shah Alam Community Forest" project page https://sgp.undp.org/spacial-itemid-projects-landing-page/spacial-itemid-project-search-results/spacial-itemid-project-detailpage.html?view=projectdetail&id=28792
-16. Wikipedia, "Shah Alam Community Forest" (for cross-referencing)
+16. Wikipedia, "Shah Alam Community Forest" (for cross-referencing) (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 17. Malay Mail, "Selangor announces halt, will regazette Kuala Langat North Forest Reserve" Sep 8, 2021 https://www.malaymail.com/news/malaysia/2021/09/08/selangor-announces-halt-to-development-plans-will-regazette-kuala-langat-no/2004044
 18. Malay Mail, "Abdul Rahman Sebli retires" Jul 25, 2025 https://www.malaymail.com/news/malaysia/2025/07/25/abdul-rahman-sebli-retires-as-chief-judge-of-sabah-and-sarawak-a-look-at-his-judicial-legacy-artistic-flair-and-wildlife-protection-advocacy/184949
 19. Malay Mail (Bernama), "Proposal to degazette Kuala Langat forest reserve gets 44,292 objections", 17 March 2020, https://www.malaymail.com/news/malaysia/2020/03/17/proposal-to-degazette-kuala-langat-forest-reserve-gets-44292-objections/1847538

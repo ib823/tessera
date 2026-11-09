@@ -448,6 +448,7 @@ Reid Commission rationale for combining the offices) or
    <https://www.parlimen.gov.my/bills-dewan-rakyat.html?uweb=dr&lang=en>
 3. Pakatan Harapan, *Buku Harapan: Membina Negara Memenuhi
    Harapan* (March 2018 manifesto). Promise 15 on AG-PP separation.
+   <https://kurzman.unc.edu/wp-content/uploads/sites/1410/2022/11/Pakatan_Harapan_2018_Buku_Harapan.pdf>
 4. Malaysian Bar Council, 79th AGM Motion on AG appointment [S]
    (14 March 2026, Mohamad Ezri Abdul Wahab proposing).
    <https://www.thestar.com.my/news/nation/2026/03/14/malaysian-bar-seeks-separation-of-ag-public-prosecutor-to-protect-independence>

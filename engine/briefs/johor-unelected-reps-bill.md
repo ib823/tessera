@@ -130,9 +130,9 @@ The amendment requires the Sultan's consent. Per the T4A Accuracy Standard, clai
 
 **Tier E — Constitutional / academic / structural**
 26. Constitution of Malaysia (with amendments through 2007), Constitute Project PDF, https://www.constituteproject.org/constitution/Malaysia_2007.pdf?lang=en — Federal Constitution including Article 71 and Eighth Schedule. [PRIMARY]
-27. Wikipedia, "Constitution of Johor" — secondary source, citation primary text and 1895 promulgation.
-28. Wikipedia, "Johor State Legislative Assembly" — secondary, citation 56-seat composition and 2022 election results.
-29. Wikipedia, "2022 Johor state election" — secondary, BN 40 / PH 11 / PN 3 / PKR 1 / MUDA 1.
+27. Wikipedia, "Constitution of Johor" — secondary source, citation primary text and 1895 promulgation. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+28. Wikipedia, "Johor State Legislative Assembly" — secondary, citation 56-seat composition and 2022 election results. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+29. Wikipedia, "2022 Johor state election" — secondary, BN 40 / PH 11 / PN 3 / PKR 1 / MUDA 1. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 30. Malay Mail, "[Official] Final tally for Johor polls is BN 40, Pakatan 11, Perikatan 3, PKR 1, Muda 1, says EC", 12 Mar 2022, https://www.malaymail.com/news/malaysia/2022/03/12/live-official-perikatan-records-first-win-in-johor-polls-with-endau/2047098 — primary Election Commission tally.
 31. The Malaysian Bar, "Powers and functions of state rulers", https://www.malaysianbar.org.my/article/news/legal-and-general-news/legal-news/powers-and-functions-of-state-rulers — institutional/secondary on Article 71 and the Eighth Schedule essential-provisions framework.
 32. Dewan Negeri Johor, "Soalan-soalan Lisan Yang Tidak Habis Dijawab di Persidangan Dewan Negeri Johor pada Hari Khamis, 11 September 2025 (Soalan 113)", 11 Sep 2025, https://dewannegeri.johor.gov.my/wp-content/uploads/2025/09/SOALAN-LISAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-11-SEPT-2025.pdf [PRIMARY]

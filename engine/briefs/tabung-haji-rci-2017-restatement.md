@@ -607,7 +607,7 @@ depositor voice is exactly the omission T4A exists to correct.
   tabunghaji.gov.my/bm/siaran-media/korporat/penjualan-aset-hampir-rm-10-bilion-selamatkan-th-kerugian-rm-2-6-bilion-turut-ditangani-untuk-pemulihan-seterusnya) — defence of the 2018 restructuring
   (RM10 billion gap, RM9.7 billion assets, RM19.9 billion consideration, RM12.6 billion
   losses addressed, TRX land and plantation repurchases, 75% of recommendations
-  implemented). Retrieved via Malay Mail [S8].
+  implemented). Retrieved via Malay Mail [S8]. https://www.tabunghaji.gov.my/siaran-media/korporat/penjualan-aset-hampir-rm-10-bilion-selamatkan-th-kerugian-rm-2-6-bilion-turut-ditangani-untuk-pemulihan-seterusnya
 - **[P5] Tabung Haji official statement, 1 August 2026** — "profit distribution is only [S]
   announced based on audited financial results"; implementing since 2022; 3.50% in 2025;
   9.8 million depositors. **Stage 3:** the "more than 75% of recommendations implemented"
@@ -651,7 +651,7 @@ depositor voice is exactly the omission T4A exists to correct.
   panic, withdrawals", 24 Jul 2026 — https://www.malaymail.com/news/malaysia/2026/07/24/pm-anwar-tabung-haji-rci-report-kept-under-wraps-to-avoid-public-panic-withdrawals/228816
 - **[S8]** Malay Mail, "Tabung Haji defends 2018 restructuring, says RM10b asset sale
   prevented insolvency", 31 Jul 2026 — https://www.malaymail.com/news/malaysia/2026/07/31/tabung-haji-defends-2018-restructuring-says-rm10b-asset-sale-prevented-insolvency/229636
-- **[S9]** Harian Metro, "TH tidak sepatutnya isytihar hibah 2017 RM2.75 bilion", 30 Jul 2026
+- **[S9]** Harian Metro, "TH tidak sepatutnya isytihar hibah 2017 RM2.75 bilion", 30 Jul 2026 https://www.hmetro.com.my/mutakhir/2026/07/1391442/th-tidak-sepatutnya-isytihar-hibah-2017-rm275-bilion-amal-perakaunan
 - **[S10]** Malaysiakini / Sinar Harian, 211-page report published, 29-30 Jul 2026 —
   https://www.malaysiakini.com/news/780940
 - **[S11]** New Straits Times, MACC task force and probe at TH headquarters, 30 Jul 2026
@@ -660,8 +660,8 @@ depositor voice is exactly the omission T4A exists to correct.
   p. 109), and the attribution has changed: RM70.317b / RM74.409b is **KAN's** finding, not
   PwC's. Cite P1. Do not cite S12.
 - **[S13]** Asia Asset Management, "Malaysia's Tabung Haji sells property assets to
-  government for 19.9 billion ringgit", 2018
-- **[S14]** Malay Mail op-ed, "What Tabung Haji's buyback is really telling us" — Mohamed
+  government for 19.9 billion ringgit", 20 Feb 2020 https://www.asiaasset.com/sovereign-wealth-funds/malaysias-tabung-haji-sells-property-assets-to-government-for-19-9-billion-ringgit/
+- **[S14]** Malay Mail op-ed, "What Tabung Haji's buyback is really telling us" — Mohamed https://www.malaymail.com/news/what-you-think/2026/07/31/what-tabung-hajis-buyback-is-really-telling-us-mohamed-hadi-abd-hamid-and-mohd-zaidi-md-zabri/229667
   Hadi Abd Hamid and Mohd Zaidi Md Zabri, 31 Jul 2026
 - **[S15]** FMT, "LHDN investigating those identified in Tabung Haji RCI report", 7 Aug 2026 —
   https://www.freemalaysiatoday.com/category/nation/2026/08/07/lhdn-investigating-those-identified-in-tabung-haji-rci-report

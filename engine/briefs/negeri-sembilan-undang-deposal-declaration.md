@@ -111,9 +111,9 @@ Per T4A Accuracy Standard: "Claims about 3R-adjacent topics require two independ
 **Tier D — Historical context**
 14. NS Government Official Portal, "Institusi Diraja", https://www.ns.gov.my/en/institusi-diraja [PRIMARY]
 15. Majlis Datuk² Undang Sungai Ujong (official Undang SU portal), "Perlembagaan Persekutuan & Undang-Undang Tubuh Negeri Sembilan", https://majlisdatolsu.gov.my/perlembagaan-persekutuan-undang-undang-tubuh-negeri-sembilan/ [PRIMARY]
-16. Wikipedia, "Muhriz of Negeri Sembilan" — secondary, cites primary: bio, 2008 proclamation by Undang SU Datuk Klana Petra Datuk Mubarak Dohak at 3:45pm Istana Besar Seri Menanti.
-17. Wikipedia, "Yang di-Pertuan Besar of Negeri Sembilan" — secondary, for historical line of YDPBs.
-18. Wikipedia (Bahasa), "Undang (Negeri Sembilan)" — secondary, for structure of Undang Yang Empat.
+16. Wikipedia, "Muhriz of Negeri Sembilan" — secondary, cites primary: bio, 2008 proclamation by Undang SU Datuk Klana Petra Datuk Mubarak Dohak at 3:45pm Istana Besar Seri Menanti. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+17. Wikipedia, "Yang di-Pertuan Besar of Negeri Sembilan" — secondary, for historical line of YDPBs. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
+18. Wikipedia (Bahasa), "Undang (Negeri Sembilan)" — secondary, for structure of Undang Yang Empat. (LOGGED FOR EXCLUSION: encyclopedia, not a source)
 19. mStar (historical), "Tunku Mukhriz Yang Dipertuan Besar Negeri Sembilan ke-11", 29 Dec 2008, https://www.mstar.com.my/lokal/semasa/2008/12/29/tunku-mukhriz-yang-dipertuan-besar-negeri-sembilan-ke11
 20. Malaysia-Today (historical), "Tuanku Muhriz is 11th Yang Di Pertuan Besar of Negri Sembilan", 29 Dec 2008, https://www.malaysia-today.net/2008/12/29/tuanku-muhriz-is-11th-yang-di-pertuan-besar-of-negri-sembilan/
 

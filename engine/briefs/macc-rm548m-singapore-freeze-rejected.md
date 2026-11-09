@@ -191,7 +191,7 @@ PRIMARY (statutes, court records, agency actions):
 - **[S4] AMLATFPUAA 2001 (Act 613), full text** — ss.53, 56, 4(1).
   https://www.sprm.gov.my/admin/files/sprm/assets/pdf/penguatkuasaan/amlatfpuaa-2001-akta-613-bi.pdf
 - **[S5] Income Tax Act 1967, s.113** — investigation basis (official statute).
-- **[S7] MACC Act 2009, s.36(2)** — Na'imah's charge (official statute) + KL
+- **[S7] MACC Act 2009, s.36(2)** — Na'imah's charge (official statute) + KL https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1695068_BI/Act%20694%20(1.1.2022).pdf
   Sessions Court charge record, 23 Jan 2024.
 - **[S1 court decision] KL High Court, 22 May 2026, JC Mohd Arief Emran Arifin** [S]
   — dismissal + s.53 threshold quote (written grounds pending). Reported:
