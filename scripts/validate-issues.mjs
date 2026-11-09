@@ -58,7 +58,12 @@ const LIMITS = {
   finalScore: { min: 0, max: 100 },
   cardCount: { min: 5, max: 8 },                   // typically 6-7, allow 5-8
   edition: { min: 1, max: 99 },
+  changeSummary: { max: 300 },                     // one plain line per edition-history entry
 };
+
+const STORY_TYPES = ['Analysis', 'Explainer', 'Fact-check'];
+// YYYY-MM-DD, or a full ISO 8601 date-time with seconds and an offset.
+const ISO_DATE_OR_DATETIME = /^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2}(\.\d+)?)?(Z|[+-]\d{2}:\d{2}))?$/;
 
 // ── Concreteness helpers (research: identifiable victim / Slovic psychic numbing) ──
 // A fact card is "concrete enough" if it contains ANY of:
@@ -392,6 +397,60 @@ for (const issue of issues) {
   if (issue.sourceDate) {
     if (typeof issue.sourceDate !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(issue.sourceDate)) {
       err(id, 'sourceDate', `Invalid format: "${issue.sourceDate}" — must be YYYY-MM-DD`);
+    }
+  }
+
+  // ── Publication history: publishedAt, modifiedAt, type, changes ──
+  // Dates come from scripts/derive-issue-history.mjs (git history) or are set
+  // by hand at publication. See CLAUDE.md "Issue format".
+  for (const field of ['publishedAt', 'modifiedAt']) {
+    const value = issue[field];
+    if (value == null) continue;
+    if (typeof value !== 'string' || !ISO_DATE_OR_DATETIME.test(value) || Number.isNaN(Date.parse(value))) {
+      err(id, field, `Invalid: "${value}" — must be YYYY-MM-DD or ISO 8601 date-time with offset (e.g. 2026-04-08T18:08:24+08:00)`);
+    }
+  }
+  if (issue.publishedAt && issue.modifiedAt && Date.parse(issue.modifiedAt) < Date.parse(issue.publishedAt)) {
+    err(id, 'modifiedAt', `Earlier than publishedAt (${issue.modifiedAt} < ${issue.publishedAt})`);
+  }
+  if (issue.modifiedAt && !issue.publishedAt) {
+    err(id, 'modifiedAt', 'Set without publishedAt');
+  }
+  if (issue.type != null && !STORY_TYPES.includes(issue.type)) {
+    err(id, 'type', `Invalid story type: "${issue.type}" — must be one of ${STORY_TYPES.join(', ')}`);
+  }
+  if (issue.changes != null) {
+    if (!Array.isArray(issue.changes)) {
+      err(id, 'changes', 'Must be an array of { edition, date, summary }');
+    } else {
+      let prevDate = '';
+      issue.changes.forEach((change, ci) => {
+        const label = `changes[${ci}]`;
+        if (!Number.isInteger(change?.edition) || change.edition < 1 || change.edition > (issue.edition ?? 1)) {
+          err(id, `${label}.edition`, `Must be an integer from 1 to the current edition (${issue.edition}), got ${change?.edition}`);
+        }
+        if (typeof change?.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(change.date)) {
+          err(id, `${label}.date`, `Invalid: "${change?.date}" — must be YYYY-MM-DD`);
+        } else {
+          if (change.date < prevDate) warn(id, `${label}.date`, 'Entries should be oldest first');
+          prevDate = change.date;
+        }
+        if (typeof change?.summary !== 'string' || change.summary.trim().length === 0) {
+          err(id, `${label}.summary`, 'Missing summary');
+        } else {
+          if (change.summary.length > LIMITS.changeSummary.max) {
+            warn(id, `${label}.summary`, `Over ${LIMITS.changeSummary.max} chars (${change.summary.length}) — one plain line`);
+          }
+          if (change.summary.includes('—')) warn(id, `${label}.summary`, 'Em dash in reader-facing text');
+        }
+      });
+    }
+  }
+  if (issue.published && issue.retired !== true) {
+    if (!issue.publishedAt) warn(id, 'publishedAt', 'Published issue has no publishedAt — set it at publication (or run scripts/derive-issue-history.mjs --write)');
+    if (!issue.type) warn(id, 'type', `Published issue has no story type (${STORY_TYPES.join(' / ')})`);
+    if ((issue.status === 'updated' || issue.edition > 1) && !(issue.changes?.length > 0)) {
+      warn(id, 'changes', 'Updated issue has no changes[] entry explaining what changed');
     }
   }
 }

@@ -21,6 +21,7 @@
   import { loadSearchIndex, search as doSearch, isLoaded as searchReady, isLoading as searchLoading } from '../lib/search';
   import { getAnimationTier } from '../lib/animation';
   import { buildFeedSections, type FeedSection, type SortMode, type SectionKind } from '../lib/feed-sections';
+  import { publishedDay } from '../lib/issue-meta';
   import { BUILD_ID, getSiteOrigin } from '../lib/build';
   import { startAutoSync, checkUrlSync, linkAngleCode, getAngleCode, schedulePush, isLinked as isSyncLinked, onSyncChange } from '../lib/sync';
   import { initInstallState, canInstall as canInstallCheck, isIOS as isIOSCheck, triggerInstall, dismissInstall, onInstallChange } from '../lib/install-state';
@@ -30,6 +31,7 @@
     id: string;
     opinionShift: number;
     sourceDate?: string;
+    publishedAt?: string;
     status: "new" | "updated" | null;
     edition: number;
     headline: string;
@@ -372,8 +374,8 @@
     const unread = issues.filter(i => !readMap[i.id]);
     if (unread.length === 0) return null;
     return unread.reduce((winner, issue) => {
-      const issueDate = issue.sourceDate ?? '';
-      const winnerDate = winner.sourceDate ?? '';
+      const issueDate = publishedDay(issue);
+      const winnerDate = publishedDay(winner);
       if (issueDate !== winnerDate) return issueDate > winnerDate ? issue : winner;
       return issue.opinionShift > winner.opinionShift ? issue : winner;
     });

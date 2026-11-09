@@ -31,17 +31,35 @@ test.describe('prefers-reduced-motion', () => {
 });
 
 test.describe('forced-colors', () => {
-  test('forced-colors: active applies the forced-colors block', async ({ page }) => {
+  test.describe('static article', () => {
+    // The static article is the no-JavaScript view. Once the reader mounts,
+    // App adds html.js-reader-mounted and the article is display:none, so
+    // with JavaScript on this label was visible only until hydration won
+    // the race against the first visibility check (about 1 run in 5 under
+    // parallel load). Pin the state the assertion is about.
+    test.use({ javaScriptEnabled: false });
+
+    test('forced-colors: active applies the forced-colors block', async ({ page }) => {
+      await page.emulateMedia({ forcedColors: 'active' });
+      // domcontentloaded — same reasoning as ssg-article.spec.ts: we need
+      // the static HTML parsed, not every resource loaded.
+      await page.goto('/issue/0146', { waitUntil: 'domcontentloaded' });
+      // Opinion Shift severity label renders as text (not color-only). Static
+      // SSG element from Phase 8a.
+      const severity = page.locator('.ssg-article__score-severity').first();
+      await expect(severity).toBeVisible();
+      const text = await severity.innerText();
+      expect(['Fundamental', 'Significant', 'Partial', 'Surface']).toContain(text);
+    });
+  });
+
+  test('forced-colors: active, the reader hydrates and shows the issue', async ({ page }) => {
     await page.emulateMedia({ forcedColors: 'active' });
-    // domcontentloaded — same reasoning as ssg-article.spec.ts: we need
-    // the static HTML parsed, not every resource loaded.
-    await page.goto('/issue/0146', { waitUntil: 'domcontentloaded' });
-    // Opinion Shift severity label renders as text (not color-only). Static
-    // SSG element from Phase 8a — doesn't depend on hydration.
-    const severity = page.locator('.ssg-article__score-severity').first();
-    await expect(severity).toBeVisible();
-    const text = await severity.innerText();
-    expect(['Fundamental', 'Significant', 'Partial', 'Surface']).toContain(text);
+    await page.goto('/issue/0146');
+    await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+    expect(await page.evaluate(() => matchMedia('(forced-colors: active)').matches)).toBe(true);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.locator('.ssg-article__score-severity').first()).toBeHidden();
   });
 });
 

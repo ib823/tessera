@@ -29,6 +29,22 @@ export interface SourceEntry {
   primary: boolean;
 }
 
+/** Story type shown under the headline. */
+export type StoryType = "Analysis" | "Explainer" | "Fact-check";
+export const STORY_TYPES: readonly StoryType[] = ["Analysis", "Explainer", "Fact-check"];
+
+/**
+ * One entry of an issue's edition history. A `summary` starting with
+ * "Correction:" marks a substantive correction; other entries are updates.
+ * Corpus-wide style passes are not logged.
+ */
+export interface IssueChange {
+  edition: number;
+  /** ISO date (YYYY-MM-DD, Malaysia time). */
+  date: string;
+  summary: string;
+}
+
 export interface Issue {
   id: string;
   opinionShift: number;
@@ -41,6 +57,16 @@ export interface Issue {
   finalScore?: number;
   related?: string[];
   sourceDate?: string;
+  /**
+   * First publication: ISO date or date-time (e.g. 2026-04-08T18:08:24+08:00).
+   * Derived from git history by scripts/derive-issue-history.mjs.
+   */
+  publishedAt?: string;
+  /** Last substantive change to headline, context or cards. Same format. */
+  modifiedAt?: string;
+  type?: StoryType;
+  /** Edition history, oldest first. */
+  changes?: IssueChange[];
   published?: boolean;
   /**
    * Pre-pipeline content disclosure.

@@ -50,3 +50,22 @@ The National Agrofood Policy 2021-2030 (NAP 2.0) projects rice self-sufficiency 
 1. **[P]** Department of Statistics Malaysia, *Supply and Utilization Accounts Selected Agricultural Commodities, Malaysia 2020-2024*, 15 Dec 2025, Exhibits 8 and 14, p. 54. https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=17128
 2. **[P]** Department of Statistics Malaysia, *High Self-Sufficiency Ratio (SSR): Domestic Production Capacity Strengthened, however Import Dependency Remains Significant*, press statement on the Supply and Utilization Accounts 2020-2024, 15 Dec 2025. https://www.dosm.gov.my/portal-main/release-document-log?release_document_id=17129
 3. **[P]** Malaysia Competition Commission, *The Paddy and Rice Industry in Malaysia: Public Summary 2024*, 2024, sections 3.1, 3.2.1 and 7.4, Tables 4, 5 and 9. https://www.mycc.gov.my/sites/default/files/pdf/newsroom/MyCC_Paddy%20and%20Rice%20Industry%20in%20Malaysia%20%28Public%20Report%29_%28ENG%29.pdf
+4. **[S]** LiveLaw, "DGFT Amends Export Policy Of Non-Basmati White Rice From 'Free' To 'Prohibited'", 22 Jul 2023, reporting DGFT Notification No. 20/2023 of 20 Jul 2023 (HS code 1006 30 90). https://www.livelaw.in/tax-cases/dgft-amends-export-policy-of-non-basmati-white-rice-from-free-to-prohibited-233360
+
+## CORRECTION (2026-11-09)
+
+Edition 2. Changes to `src/data/issues/2003.json`:
+
+- **Regional big.** "Imports nearly half its rice" understated the dependence. DOSM's 2024 tables show rice imports of
+  1,500.0 thousand tonnes against production of 1,362.1 thousand tonnes (source 2, Tables 1 and 3, checked 2026-11-09;
+  also source 1). The card now gives both volumes.
+- **Regional sub.** The July 2023 date contradicted MyCC's "July 2022" (source 3). India's own notification could not be
+  opened (egazette.gov.in returned 503 and failed TLS verification; commerce.gov.in returned 403). LiveLaw, a legal news
+  outlet, reproduces DGFT Notification No. 20/2023 dated 20 July 2023, which moved non-basmati white rice (HS 1006 30 90)
+  from "Free" to "Prohibited" (new source 4, opened 2026-11-09). The card now ties the date to that notification. MyCC's
+  2022 date is likely the September 2022 export duty, not the ban; this is not confirmed. "The world's largest rice
+  exporter" became "the top exporter" for length (source 3, Table 9).
+- **Economic (trade) card.** Dropped RM42.6 billion (2014), RM78.8 billion (2023), RM46.5 billion and RM32.3 billion: none
+  appears in a source opened. Replaced with DOSM's 2024 figure: food imports of RM93.8 billion, up 19.1% on the previous
+  year, "reflecting continued reliance on external sources for several essential commodities" (source 2).
+- Headline, context, hook, first Economic card, reframe, analogy and view unchanged.

@@ -67,3 +67,25 @@ Bank Negara Malaysia's Annual Report 2025 records 18.4 billion e-payment transac
 11. **[S]** Bernama, "22,368 Traders Registered With E-wallets Via ReDI Initiative, Says Armizan", 1 Jul 2025. https://bernama.com/en/news.php?id=2440007
 12. **[S]** Bernama, "S Pay Global Drives Cashless Lifestyle In Sarawak", 30 Mar 2026. https://www.bernama.com/en/news.php?id=2538831
 13. **[S]** Grab Malaysia, *Privacy Notice*, 8 Oct 2025. https://www.grab.com/my/terms-policies/privacy-notice/
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1146.json`:
+
+- **Status.** Edition 2 (7 Apr 2026) was the first published version: edition 1 was never published (commit 98e6553f6),
+  and the cards did not change after publication until now, so "updated" was premature. This edition is a real
+  post-publication correction, so `status: "updated"` is now accurate.
+- **Social big.** "Only 1,120 in Sabah and 1,799 in Sarawak. Adoption is stuck where it matters" misread the data.
+  Those are January to May 2025 registrations out of 3,229 nationwide in that period, not shares of the 22,368
+  cumulative, and Sabah and Sarawak supplied 2,919 of them (about 90%) (source 10, The Sun, quoting KPDN minister
+  Armizan; cumulative figure in source 11). The card now states that and drops "adoption is stuck".
+- **Social sub.** "TNG eWallet was approved by JTK Sabah" became active voice. The RM3.5B now says it is nationwide wage
+  payments, as TNG stated (source 8). "B40 use wallets for government handouts but fall back to cash daily" had no
+  source for the handout pattern; it became BNM's finding that reliance on cash prevails among low-income users
+  (source 6).
+- **Economic card.** Dropped "Smaller players have no such cushion" (no issuer-level financials on file). S Pay Global's
+  "~1.56M users" became "about 1.6M registered users" (source 12, Bernama 30 Mar 2026).
+- **Legal sub.** Now describes the current notices: Grab names group companies, marketing partners and credit bureaus as
+  recipients (source 13); TNG's notice of 29 May 2026 names group entities and business partners (source 9).
+- Headline, context, hook, reframe and view unchanged. The reframe and view keep pre-existing auxiliary-density
+  warnings; those cards were out of scope.

@@ -54,6 +54,15 @@ The Gig Workers Bill 2025 passed the Dewan Rakyat on 28 August 2025 and the Dewa
 - **Labour / civil society:** UNI-MLC [15].
 - **Access limits:** mohr.gov.my, perkeso.gov.my, kwsp.gov.my and parlimen.gov.my refused or reset all requests; the MOHR FAQ, P.U.(A) 143/2026 and Hansard could not be opened. Primary count: 6 of 15, below the 8-source target for that reason.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1128:
+
+- **Social card:** "3.45 million informal" was DOSM's 2023 figure, presented beside Q1 2025 labour-force data [3, 4]. The card now gives DOSM's 2025 survey figure, 3.28 million in informal employment (released 9 Sep 2026), down from 3.45 million in 2023 [14]. The Q1 2025 labour-force figures are dropped for length.
+- **Social card sub:** the 1.64 million figure is attributed to the minister when the Act took effect (31 Mar 2026) [8]; the MOHR FAQ attribution to MDEC 2024 data could not be opened and is removed.
+- **Economic card sub:** i-Saraan coverage for 2022 is given as a range, 10.7% to 12.6%, from two World Bank publications [5, 6] (see CONTRADICTIONS).
+- **View (update):** Budget 2027 (9 Oct 2026) added voluntary EPF matching for e-hailing and p-hailing drivers, not mandatory retirement coverage [13]. The view now says so.
+
 ## SOURCES
 
 1. **[P]** Attorney General's Chambers, *Gig Workers Act 2025 (Act 872)*, 31 Dec 2025, ss. 2, 3, 8, 82, 83 and Schedule. https://lom.agc.gov.my/act-detail.php?language=BI&act=872

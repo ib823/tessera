@@ -13,6 +13,7 @@
  * elsewhere in the UI. It is always rendered too.
  */
 import type { IssueSummary } from './issues-loader';
+import { publishedDay } from './issue-meta';
 
 export type SectionKind = 'continue' | 'new' | 'explore' | 'completed';
 
@@ -70,7 +71,7 @@ export function buildFeedSections(
       buckets.completed.push(issue);
     } else if (rs?.state === 'started') {
       buckets.continue.push(issue);
-    } else if (issue.sourceDate && issue.sourceDate >= cutoff) {
+    } else if (publishedDay(issue) >= cutoff) {
       buckets.new.push(issue);
     } else {
       buckets.explore.push(issue);
@@ -79,7 +80,7 @@ export function buildFeedSections(
 
   const sortFn = sortMode === 'shift'
     ? (a: IssueSummary, b: IssueSummary) => b.opinionShift - a.opinionShift
-    : (a: IssueSummary, b: IssueSummary) => (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '');
+    : (a: IssueSummary, b: IssueSummary) => publishedDay(b).localeCompare(publishedDay(a));
 
   for (const kind of Object.keys(buckets) as SectionKind[]) {
     buckets[kind].sort(sortFn);

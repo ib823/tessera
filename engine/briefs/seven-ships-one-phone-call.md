@@ -76,3 +76,21 @@ After the late-February 2026 war involving Iran, shipping through the Strait of 
 18. **[S]** Ministry of Finance Malaysia, press citation of Bernama, "BUDI95 Price Remains, Unsubsidised RON95, RON97 Down 25 Sen, Diesel Drops 75 Sen", 15 Apr 2026. https://www.mof.gov.my/portal/en/news/press-citations/budi95-price-remains-unsubsidised-ron95-ron97-down-25-sen-diesel-drops-75-sen
 19. **[S]** Dawn (AFP), "Oil tanker traffic through Strait of Hormuz down 90pc: Kpler", 4 Mar 2026. https://www.dawn.com/news/1978342/oil-tanker-traffic-through-strait-of-hormuz-down-90pc-kpler
 20. **[S]** Free Malaysia Today, "PM to visit Tehran at 'appropriate time'", 26 May 2026. https://www.freemalaysiatoday.com/category/nation/2026/05/26/pm-to-visit-tehran-at-appropriate-time
+
+## CORRECTION (2026-11-09)
+
+Edition 3. Changes to `src/data/issues/1951.json`:
+
+- **Headline, context and hook big.** "Tankers" became "ships" or "vessels". A seafarers' union official told NST that
+  four of the seven carry crude; the others include a pipe-laying vessel and an offshore support ship (source 7). The
+  context now says "four of them crude carriers".
+- **Hook sub.** "Sepadu" corrected to Shapadu (Shapadu Corporation Sdn Bhd, source 7).
+- **Context (transit status).** Kept "two had transited by mid-April" (source 9) and added the dated update that four of
+  the seven had cleared by 26 May 2026 (source 20).
+- **Economic big.** "Brent crude hit $126/barrel. The subsidy bill jumped to RM4 billion per month" paired a 30 April
+  intraday peak with a 26 March subsidy estimate. The card now gives both MOF estimates with dates: up to RM4 billion a
+  month on 26 March (source 17) and about RM7 billion a month on 15 April (source 18), and dates the $126 peak to
+  30 April (source 16).
+- **Political sub.** Dropped "Anwar said Malaysia takes a balanced and independent stance": the phrase was not found in
+  any source opened.
+- Security card, Economic sub, Political big, reframe and view unchanged.

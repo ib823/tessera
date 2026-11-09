@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { opinionLabel, CARD_TYPES } from '../data/issue-types';
   import { pressAction } from '../lib/actions/press';
+  import { formatIssueDate, updatedSinceRead } from '../lib/issue-meta';
   import { tween, countUp, ease } from '../lib/animation';
 
   import IssueImage from './IssueImage.svelte';
@@ -114,6 +115,8 @@
     <div style="display:flex;align-items:center;gap:8px;">
       {#if issue.status === 'new' && !readState}
         <span style="font-size: var(--text-micro);font-weight:700;color:var(--status-green-text);background:var(--status-green-bg);padding:4px 8px;border-radius: var(--radius-sm);text-transform:uppercase;">New</span>
+      {:else if updatedSinceRead(issue, readState)}
+        <span data-updated-since-read title="Updated {formatIssueDate(issue.modifiedAt)}, after you finished it" style="font-size: var(--text-micro);font-weight:700;color:var(--status-blue-text);background:var(--status-blue-bg);padding:4px 8px;border-radius: var(--radius-sm);text-transform:uppercase;">Updated since you read it</span>
       {:else if issue.status === 'updated'}
         <span style="font-size: var(--text-micro);font-weight:700;color:var(--status-blue-text);background:var(--status-blue-bg);padding:4px 8px;border-radius: var(--radius-sm);text-transform:uppercase;">Updated</span>
       {/if}

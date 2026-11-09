@@ -24,15 +24,22 @@ const dossierRoutes = readdirSync(dossierDir)
   .filter((dossier) => dossier?.id && dossier.format === 'dossier' && dossier.published)
   .map((dossier) => ({ loc: `/dossier/${dossier.id}`, priority: '0.8' }));
 
+// lastmod: the issue's last substantive change, else its first publication
+// (both from scripts/derive-issue-history.mjs). The homepage lists issues, so
+// it takes the newest of them.
 const issueRoutes = issues.map((issue) => ({
   loc: `/issue/${issue.id}`,
+  lastmod: issue.modifiedAt || issue.publishedAt || null,
   priority: '0.8',
 }));
+const newestIssue = issueRoutes.reduce((max, r) => (r.lastmod && (!max || Date.parse(r.lastmod) > Date.parse(max)) ? r.lastmod : max), null);
+staticRoutes[0].lastmod = newestIssue;
 
 const routes = [...staticRoutes, ...dossierRoutes, ...issueRoutes];
 const urls = routes
-  .map(({ loc, priority }) => {
-    return `  <url>\n    <loc>${siteUrl}${loc}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+  .map(({ loc, lastmod, priority }) => {
+    const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : '';
+    return `  <url>\n    <loc>${siteUrl}${loc}</loc>${lastmodTag}\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
   })
   .join('\n');
 

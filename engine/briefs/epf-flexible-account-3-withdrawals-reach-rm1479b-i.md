@@ -52,6 +52,15 @@ EPF restructured members' accounts on 11 May 2024, creating Akaun Fleksibel, fro
 - **Media:** FMT, The Star, Malay Mail, NST, RTM.
 - **Access limits:** kwsp.gov.my returned HTTP 403 to every request and parlimen.gov.my was unreachable, so EPF's report, EPF's RIA documents and Hansard could not be opened directly. Primary count is 2 of 12; every EPF figure here is EPF's own number as reported by named outlets.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1190:
+
+- **Economic card sub:** "collectively pulled tens of billions" underclaimed. MOF put i-Lestari, i-Sinar and i-Citra alone at RM101 billion (3 Mar 2022) [10]; Akaun Fleksibel added RM14.79 billion by 30 Jun 2025 [3]. Both figures are now stated.
+- **Social card sub:** the unverified clause "broadly mirroring EPF's overall membership composition rather than disproportionate low-income use" is removed. The 51.1% figure stays, attributed to EPF's study [4, 5].
+- **Social card:** "framed as an emergency facility" changed to "framed as help for short-term needs", EPF's own framing [1].
+- **Hook sub (update):** the "permanent" label (PARTLY) is replaced by the latest total: about RM19.87 billion withdrawn by 31 May 2026 (MOF written reply, 9 Jul 2026) [12]. The headline stays dated to 30 Jun 2025.
+
 ## SOURCES
 
 1. **[P]** Employees Provident Fund, "EPF Account Restructuring Set to Address Members' Life Cycle Needs", media release, 25 Apr 2024, copy hosted by MAICSA. https://www.maicsa.org.my/media/9090/technical_announcements_240425_2_1.pdf

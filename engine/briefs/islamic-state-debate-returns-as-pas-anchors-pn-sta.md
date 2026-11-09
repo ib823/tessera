@@ -87,3 +87,15 @@ sources to be VERIFIED.
 
 Primary count is 3 of 19. The state-level actions (Kelantan motion, Kedah amendments) are reachable only through
 reporting here; the assembly records and state gazettes were not reachable online. The 8-primary target is not met.
+
+## CORRECTION (2026-11-09)
+
+Edition 4. Changes to `src/data/issues/1618.json`:
+
+- **Context and hook (Perlis).** Removed "anchors the PN coalition holding Perlis" and "anchors PN's Perlis state government". Bersatu's Abu Bakar Hamzah was sworn in as Perlis MB on 28 Dec 2025, and PAS took no exco posts (sources 7, 8). The context now says Bersatu took the MB post in Dec 2025; the hook names only the three states PAS heads.
+- **Context and hook sub (Kelantan, Kedah).** Both religion claims rest on news reports only, so they now appear in attributed form ("Bernama reported...") (sources 9, 12; FMT and Malay Mail agree, sources 10, 13). The hook sub drops any count of voided provisions: the judgment summary voids 17 listed sections (source 2, para 18), while the reports say 16.
+- **Legal big.** "Primarily personal and family law" became "including family law and offences against the precepts of Islam", which matches Ninth Schedule List II item 1 (source 1; source 3).
+- **Governance big and sub.** "Civil law prevails" and "generally struck down" were replaced with what the court said: *Nik Elin* "tidak kena mengena dengan kedudukan Islam atau Mahkamah Syariah" and turned on the Kelantan legislature's power (source 2, para 5). The court upheld sections 13 and 30 as within state power over the propagation of doctrine among Muslims (source 2, paras 16-17). *Iki Putra* and *SIS Forum* rest on Malay Mail only and are no longer named on the card.
+- **Social big and sub.** The card no longer characterises a community's attitudes. Pew's 86% now appears as Pew's own reported finding (source 16). The Merdeka 2014 figure now says what was asked (readiness, 58% not ready, 30% ready among Malay respondents) instead of "narrower hudud support" (source 18).
+- **Reframe.** Removed the em dash and the claim of "narrower hudud support". It now says the binary asks the wrong question and that polls separating sharia in principle from hudud give different answers (sources 16, 18).
+- Analogy, view and headline unchanged.

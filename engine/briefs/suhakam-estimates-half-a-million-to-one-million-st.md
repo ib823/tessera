@@ -53,6 +53,16 @@ In April 2022, SUHAKAM visited Sabah and spoke on statelessness. Malay Mail's re
 - Media [1, 2, 10]: Malay Mail and The Vibes.
 - **Gap:** no NRD or Home Ministry statement of the Sabah stateless population was opened directly; NRD figures here come through UNICEF [3] and Malay Mail [10]. The Sabah state government's position is absent.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1247:
+
+- **Headline, context, hook:** the 500,000 to 1 million estimate now refers to stateless **people**, not children, and is attributed to Malay Mail's report of SUHAKAM's Sabah visit rather than to SUHAKAM directly [1]. "There is no official figure" now reads "No official count exists" [1].
+- **Context and hook sub:** the "tens of thousands excluded from formal schooling" line is replaced by UNICEF's documented child figures: 18,781 "invisible" children (s. 4.4) and 23,154 undocumented children or young adults in Sabah as of October 2017 [3].
+- **Social card (3R):** the unverified phrases "'genuinely stateless' across Malaysia, Indonesia and the Philippines" and "no state recognises them as citizens" are removed. The card now rests on two peer-reviewed papers that describe the Bajau Laut as stateless [8, 9] and the UN CRC's February 2026 observations on low birth registration and access to citizenship for Bajau Laut children [7].
+- **Reframe:** attribution changed to "a 2022 report"; the population is "stateless people of all ages" [1, 3].
+- **Not changed:** Legal card (PARTLY: omits Second Schedule Part II s. 1(e)); Rights card sub (PARTLY). Both left for the editor.
+
 ## SOURCES
 
 1. **[S]** Malay Mail, "In Sabah, Suhakam says number of statelessness complaints show urgent need for lasting solution", 19 Apr 2022. https://www.malaymail.com/news/malaysia/2022/04/19/in-sabah-suhakam-says-number-of-statelessness-complaints-show-urgent-need-f/2054402

@@ -80,6 +80,15 @@ Totals: 9 VERIFIED, 4 PARTLY, 2 UNVERIFIED, 1 CONTRADICTED, 0 STALE-SINCE-PUBLIC
 - Gap: no patient-group or public-hospital doctors' association source. The cards' workforce argument rests on MOH data.
 - Primary count (4) is below target; the issue is narrow. The MOH Dewan Negara reply (parlimen.gov.my) was unreachable in this session, so it is cited via CodeBlue.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1445:
+
+- **Context, hook sub:** "early-2025 figures showed 1.84 million" corrected. 1.84 million was the preliminary count for the whole of 2025 [7]. The settled 2025 figures are about 1.85 million travellers and RM3.35 billion [3, 9], which beat the RM3 billion target [5, 6]. The context now says so.
+- **Economic card:** the unverified "MOH supports public hospitals separately" is removed. The card now reports that Island Hospital Penang was named the first Flagship Medical Tourism Hospital on 9 Dec 2025, with special awards for the other finalists [2, 5]. The July 2025 finalist list was superseded before the source date.
+- **Critical card:** "India's Charitable Hospital obligations reserve beds for low-income local patients" narrowed to Maharashtra state law, which allows 10% of beds to be reserved free for indigent patients [4]. The unverified sub on Malaysian reserved-bed rules (Act 586 not opened) is replaced by the reported 95% share of 2025 healthcare-travel revenue taken by private hospitals [8].
+- **Not changed:** the RM7 billion 2030 industry projection [8] is not added; the cards use MHTC's RM12 billion target.
+
 ## SOURCES
 
 1. **[P]** Malaysia Healthcare Travel Council, *Malaysia Healthcare Travel Council Launches MYMT 2026, Malaysia's First Medical Tourism Year*, press release, 24 Jul 2025. https://www.malaysiahealthcare.org/press-release/malaysia-healthcare-travel-council-launches-mymt-2026-malaysias-first-medical-tourism-year

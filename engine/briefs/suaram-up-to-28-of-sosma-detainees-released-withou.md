@@ -53,6 +53,17 @@ Scope note: this is a narrow, data-attribution issue. Suaram's full 2025 report 
 - [9, 10]: Malay Mail and The Star (mainstream).
 - **Gap:** no police or Home Ministry defence of SOSMA usage rates is on file beyond the raw reply [7]. The 20–28% range is a single-NGO figure. Cards correctly label it "reported" and attribute it to Suaram.
 
+## CORRECTION (2026-11-09)
+
+Edition 4 of issue 1241:
+
+- **Headline, context, hook:** 6,892 is now attributed to the Home Minister's Dewan Negara written reply covering detentions from 2012 to 2025 (FMT, 5 Mar 2026), which Suaram cited [7]. It is no longer presented as Suaram's own tally. FMT's report of the Suaram launch gives Suaram's period as 2018 to 2023 [5]; the cards use the ministerial period, judged authoritative under CONTRADICTIONS.
+- **Context, hook:** the 20–28% range stays attributed to Suaram as reported [5, 6], and is no longer tied to "those arrested" in the 6,892 count. No release rate is derived from the ministerial breakdown.
+- **Context:** the inference "runs at scale on people never prosecuted" is removed.
+- **Legal card sub:** the 20–28% range is labelled as Suaram's.
+- **Rights card sub (update):** adds that the Taiping inquiry found abuse and negligence in May 2026 [9].
+- **Not changed:** Social card (PARTLY), reframe and analogy (attributed to Suaram).
+
 ## SOURCES
 
 1. **[P]** Laws of Malaysia, *Security Offences (Special Measures) Act 2012, Act 747*, 22 Jun 2012, ss. 4(4), 4(5), 4(9), 4(11) and 32. https://icj.org/wp-content/uploads/2012/12/Malaysia-Security-Offences-Special-Measures-Act-2012-eng.pdf

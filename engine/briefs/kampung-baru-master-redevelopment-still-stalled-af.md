@@ -86,6 +86,17 @@ Totals: 6 VERIFIED, 10 PARTLY (one 3R), 2 UNVERIFIED (one 3R), 0 CONTRADICTED, 0
 - Press: Malay Mail, The Star, FMT, The Edge.
 - Gap: no residents' association or landowners' group statement was opened. Resident opposition is documented only through court and press reports [9][11]. For a 3R-adjacent issue this is a real gap; the editor should add a landowner or residents' committee source.
 
+## CORRECTION (2026-11-09)
+
+Edition 5 of issue 1229:
+
+- **Economic card (3R):** "with Malay-only ownership restrictions" removed; it lacks two independent primary sources (see 3R note). The card keeps the verified Malay Agricultural Settlement status, gazetted 12 Jan 1900 [1, 8].
+- **Economic and Governance card subs (3R):** "Malay-only ownership" removed from both constraint lists, along with their attribution to PKB, which was not found on PKB pages. The Economic sub now cites the minister's "one of the biggest hurdles" remark on overlapping ownership (6 Oct 2025) [8] and the 2016 working paper on small lots and inheritance [10]. The Governance sub now says Act 733 makes PKB the "principal co-ordinating body" (s. 14) [2] and that PKB's project page lists two completed projects (4 Nov 2026) [3].
+- **Hook sub, Social card:** "PKB's 2010 census recorded 18,372 residents" replaced by "about 18,000" in 2010, attributed to the 2016 working paper [10]. The "on the Malay Agricultural Settlement land" qualifier is removed, since 121.7 ha is the full PKB boundary [7].
+- **Social card sub:** "PKB plans envisage phased redevelopment with Malay ownership safeguards" was not on PKB's pages (PARTLY, 3R-adjacent). It is replaced by Act 733's statutory definition of the "interest of the Malays", which includes their heritage, customs and culture in Kampong Bharu (s. 2) [2].
+- **Context, analogy sub:** "328 owners" corrected to 328 properties [7]. The analogy's em dash is replaced.
+- **Not changed:** "beside the KLCC core" and "four decades" (PARTLY), reframe and view (policy framing).
+
 ## SOURCES
 
 1. **[P]** Perbadanan Pembangunan Kampong Bharu, *Latar Belakang Kampong Bharu*, PKB background page. https://www.pkb.gov.my/?page_id=465

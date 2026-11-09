@@ -223,3 +223,19 @@ which have one outlet each.
 3. *Still needed:* The Article 49A vacancy count from EC records. Affects the strength of the "untested" framing but not its direction.
 
 **Brief is ready for Phase 2 (Stage 1 Primary Analysis) at the operator's approval.** The structural argument is honest about what we do and don't know, and the publishable take is "what mainstream coverage of the case missed is that the case didn't decide the question Parliament left open" — a clean T4A reframe move.
+
+## CORRECTION (2026-11-09)
+
+Edition 2. Changes to `src/data/issues/2000.json`:
+
+- **Hook sub.** "After 3 years 7 months" overstated the span. From 5 Oct 2022 (in force, sources 1, 5) to 29 Apr 2026 is
+  3 years 6 months 24 days, so the card now says "three and a half years after it took effect". "No court has
+  interpreted" became "no reported ruling has tested it", which is what the absence search supports.
+- **Governance big.** "Decided on Contracts Act s.75 proportionality" became "turned on 'reasonable compensation' under
+  the Contracts Act". The reports quote the court's "reasonable compensation" test (sources 16, 17), FMT records PKR
+  claiming under s.71 (17), and The Star records s.75 argued at the Federal Court (19), so the card no longer names a
+  section or uses "proportionality".
+- **Governance sub.** "Disproportionate" became the reported words "unreasonable and extravagant" (16, 17). "PKR's
+  Federal Court appeal hears 16 July 2026" was overtaken: the Federal Court heard the appeal on 14 Sep 2026 and reserved
+  its decision (19). A web search on 2026-11-09 found no judgment yet.
+- Headline, context, Legal and Political cards, reframe, analogy and view unchanged.
