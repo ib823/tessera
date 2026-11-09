@@ -7,12 +7,13 @@
  * Issues without a background image are blocked by validation.
  */
 import sharp from 'sharp';
-import { mkdirSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, existsSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIssues } from './lib/load-issues.mjs';
 import wawoff from 'wawoff2';
-import { readFileSync } from 'node:fs';
+import { createCanvas, registerFont } from 'canvas';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -33,9 +34,14 @@ for (const file of readdirSync(outDir)) {
 }
 
 // ── Date + source label for the og:image PNG ──
+// Drawn with node-canvas from the real font file: SVG text through sharp
+// ignores embedded @font-face and falls back to whatever the machine has,
+// which differs between local builds and CI.
 const FONTSOURCE = join(root, 'node_modules', '@fontsource');
 const ttf = await wawoff.decompress(readFileSync(join(FONTSOURCE, 'nunito-sans/files/nunito-sans-latin-600-normal.woff2')));
-const FONT_FACE = `@font-face { font-family: 'Nunito Sans'; src: url(data:font/ttf;base64,${Buffer.from(ttf).toString('base64')}) format('truetype'); font-weight: 600; }`;
+const fontFile = join(mkdtempSync(join(tmpdir(), 't4a-og-')), 'nunito-sans-600.ttf');
+writeFileSync(fontFile, Buffer.from(ttf));
+registerFont(fontFile, { family: 'T4A Label', weight: '600' });
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 // Calendar day in Malaysia time, as the site shows it (src/lib/issue-meta.ts).
 function dayOf(value) {
@@ -47,7 +53,6 @@ function dayOf(value) {
   return new Date(d.getTime() + 8 * 3600e3).toISOString().slice(0, 10);
 }
 const fmt = (day) => { const [y, m, d] = day.split('-'); return `${Number(d)} ${MONTHS[Number(m) - 1]} ${y}`; };
-const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 function dateLabel(issue) {
   const published = dayOf(issue.publishedAt) ?? dayOf(issue.sourceDate);
   if (!published) return 'thefourthangle.pages.dev';
@@ -55,17 +60,21 @@ function dateLabel(issue) {
   const updated = modified && modified > published ? ` · Updated ${fmt(modified)}` : '';
   return `thefourthangle.pages.dev · ${fmt(published)}${updated}`;
 }
-function labelSvg(text) {
+function labelPng(text) {
   // Bottom-left pill; the art keeps its right side and T4A signature free.
-  const size = 24;
-  const padX = 18;
-  const w = Math.round(text.length * size * 0.51) + padX * 2;
-  const h = 44;
-  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
-    <style>${FONT_FACE}</style>
-    <rect x="28" y="${630 - 28 - h}" width="${w}" height="${h}" rx="${h / 2}" fill="#0f0f23" fill-opacity="0.82"/>
-    <text x="${28 + padX}" y="${630 - 28 - h / 2 + size * 0.36}" font-family="'Nunito Sans', sans-serif" font-weight="600" font-size="${size}" fill="#ffffff" fill-opacity="0.92">${esc(text)}</text>
-  </svg>`);
+  const size = 24, padX = 18, h = 44, x = 28, y = 630 - 28 - h;
+  const canvas = createCanvas(1200, 630);
+  const ctx = canvas.getContext('2d');
+  ctx.font = `600 ${size}px "T4A Label"`;
+  const w = Math.ceil(ctx.measureText(text).width) + padX * 2;
+  ctx.fillStyle = 'rgba(15, 15, 35, 0.82)';
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, h, h / 2);
+  ctx.fill();
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x + padX, y + h / 2 + 1);
+  return canvas.toBuffer('image/png');
 }
 
 // Only generate for published issues
@@ -99,7 +108,7 @@ for (const issue of published) {
       .png()
       .toBuffer();
     await sharp(art)
-      .composite([{ input: labelSvg(dateLabel(issue)), top: 0, left: 0 }])
+      .composite([{ input: labelPng(dateLabel(issue)), top: 0, left: 0 }])
       .png({ compressionLevel: 9 })
       .toFile(outPath);
 
