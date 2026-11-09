@@ -138,9 +138,9 @@ government + independent + regulator + consumer. No single-spectrum capture.
 10. Malay Mail, "Bukit Aman: 90pc of commercial crime now online…", 24 Feb 2026.
     https://www.malaymail.com/news/malaysia/2026/02/24/bukit-aman-90pc-of-commercial-crime-now-online-as-scams-drain-billions/210162
 11. Borneo Post, "Police: Scams cost Malaysians over RM2.7 billion as of November",
-12. Bank Negara Malaysia, "Annual Report 2025: Maintaining Financial Integrity", 31 Mar 2026, https://www.bnm.gov.my/documents/20124/21185005/ar2025_en_ch1g.pdf [PRIMARY]
     8 Dec 2025 (all-category superset).
     https://www.theborneopost.com/2025/12/08/police-scams-cost-malaysians-over-rm2-7-billion-as-of-november/
+12. Bank Negara Malaysia, "Annual Report 2025: Maintaining Financial Integrity", 31 Mar 2026, https://www.bnm.gov.my/documents/20124/21185005/ar2025_en_ch1g.pdf [PRIMARY]
 
 ## EDITORIAL ANGLE (for Stage 1)
 Lead with a named, identifiable mechanic (the "can't-withdraw + pay-a-fee" second

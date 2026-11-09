@@ -296,10 +296,10 @@ documents and contemporaneous official reporting)**
     7 Mar 2026.
     <https://www.thestar.com.my/news/nation/2026/03/07/isa-samad-files-review-against-federal-court039s-decision-restoring-corruption-conviction-fine-and-jail-term>
 16. FMT, "Isa files review to set aside corruption conviction,"
-31. The Star, "Najib loses bid to review Federal Court decision", 31 Mar 2023, https://www.thestar.com.my/news/nation/2023/03/31/najib-loses-bid-to-review-federal-court-decision [S]
-32. Malay Mail, "No more way out for Najib as apex court refuses SRC review", 31 Mar 2023, https://www.malaymail.com/news/malaysia/2023/03/30/no-more-way-out-for-najib-as-apex-court-refuses-src-review/62356 [S]
     7 Mar 2026.
     <https://www.freemalaysiatoday.com/category/nation/2026/03/07/isa-files-review-to-set-aside-corruption-conviction>
+31. The Star, "Najib loses bid to review Federal Court decision", 31 Mar 2023, https://www.thestar.com.my/news/nation/2023/03/31/najib-loses-bid-to-review-federal-court-decision [S]
+32. Malay Mail, "No more way out for Najib as apex court refuses SRC review", 31 Mar 2023, https://www.malaymail.com/news/malaysia/2023/03/30/no-more-way-out-for-najib-as-apex-court-refuses-src-review/62356 [S]
 17. The Edge, "Isa Samad wants Federal Court to reconsider its
     decision to convict him."
     <https://theedgemalaysia.com/node/795370>
