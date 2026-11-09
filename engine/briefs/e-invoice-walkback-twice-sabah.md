@@ -66,3 +66,21 @@ A week after Pakatan Harapan's heavy defeat in the 29 November 2025 Sabah state 
 13. **[S]** Khazanah Research Institute, "Informality in the Malaysian economy", 15 Jan 2021. https://www.krinstitute.org/publications/informality-in-the-malaysian-economy
 14. **[S]** World Economics, "Malaysia's Informal Economy | Shadow Economy | 2000-2026 Data". https://www.worldeconomics.com/Informal-Economy/Malaysia.aspx
 15. **[S]** Bernama, "Malaysia Enters Fourth Phase Of E-invoicing To Strengthen Tax System, Ease SME Compliance", 1 Jan 2026. https://bernama.com/en/news.php?id=2507850
+
+## CORRECTION (2026-11-09)
+
+Edition 4. Changes to `src/data/issues/1984.json`:
+
+- **Headline, context, Political big, reframe and view (update).** A fourth softening followed the source date: HASiL
+  said on 30 Aug 2026 that the e-invoice exemption threshold would rise from RM1 million to RM3 million from 1 Sep 2026
+  (source 5). "Three times in five months" became "four times in nine months" (6 Dec 2025 to 30 Aug 2026 is 8 months
+  24 days). The context and Political big add the RM3m step. Context drops "Phase 1-2 compliance was over 90%", which the
+  Governance card, reframe and view already carry.
+- **Economic big and sub.** "Other methodologies range from 7% to 26.6%" matched no source. The KRI informal-sector range
+  starts at 4.0% (source 13), and the World Economics page shows 24.5% (source 14); its 26.6% could not be confirmed for
+  the source date. The card now says other estimates run from 4% to 24.5% and attributes each end. The government
+  estimate is dated to 2023 (source 12). "Khazanah" became "Khazanah Research Institute", which is the publisher.
+- **Political sub.** "Recovering about RM82m in additional tax" became "about RM82m in additional tax": HASiL describes it
+  as additional tax from the returns, not money collected (source 1).
+- Hook and Governance card unchanged. The Governance card's 820.5 million total is dated to 22 Dec 2025; HASiL reported
+  1.84 billion e-invoices by 30 Aug 2026 (source 5), not added for length.
