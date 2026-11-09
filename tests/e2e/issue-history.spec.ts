@@ -1,4 +1,11 @@
+import { readFileSync } from 'node:fs';
 import { test, expect } from '@playwright/test';
+
+// 1201's modifiedAt is derived from git history by scripts/derive-issue-history.mjs and
+// committed in its JSON; read it rather than hard-coding the commit time, so a re-derive
+// after a squash merge does not break these assertions.
+const MODIFIED_1201: string = JSON.parse(readFileSync('src/data/issues/1201.json', 'utf8')).modifiedAt;
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 /**
  * Publication history: the "Published · Updated · Type" line, the "What
@@ -32,7 +39,8 @@ test.describe('Issue publication history', () => {
 
     const meta = slice(article, 'data-issue-meta', 'p');
     expect(meta).toMatch(/Published <time datetime="2026-03-30T14:17:24\+08:00"[^>]*>30 Mar 2026<\/time>/);
-    expect(meta).toMatch(/Updated <time datetime="2026-11-09T08:57:55\+08:00"[^>]*>9 Nov 2026<\/time>/);
+    expect(MODIFIED_1201.startsWith('2026-11-09')).toBe(true);
+    expect(meta).toMatch(new RegExp(`Updated <time datetime="${esc(MODIFIED_1201)}"[^>]*>9 Nov 2026</time>`));
     expect(meta).toContain('data-story-type="Explainer"');
     // The line sits directly under the headline.
     expect(article.indexOf('data-issue-meta')).toBeGreaterThan(article.indexOf('id="ssg-headline"'));
@@ -56,14 +64,14 @@ test.describe('Issue publication history', () => {
   test('/issue/1201 head carries matching article:* times and JSON-LD dates', async ({ request, baseURL }) => {
     const html = await (await request.get(`${baseURL}/issue/1201`)).text();
     expect(html).toContain('<meta property="article:published_time" content="2026-03-30T14:17:24+08:00"');
-    expect(html).toContain('<meta property="article:modified_time" content="2026-11-09T08:57:55+08:00"');
+    expect(html).toContain(`<meta property="article:modified_time" content="${MODIFIED_1201}"`);
     expect(html).toContain('<meta property="article:section" content="Explainer"');
 
     const ld = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
     expect(ld).not.toBeNull();
     const data = JSON.parse(ld![1]);
     expect(data.datePublished).toBe('2026-03-30T14:17:24+08:00');
-    expect(data.dateModified).toBe('2026-11-09T08:57:55+08:00');
+    expect(data.dateModified).toBe(MODIFIED_1201);
     expect(data.articleSection).toBe('Explainer');
   });
 
@@ -79,7 +87,7 @@ test.describe('Issue publication history', () => {
   test('feed and per-issue JSON carry the history fields', async ({ request, baseURL }) => {
     const feed = await (await request.get(`${baseURL}/issues-feed.json`)).json();
     const row = feed.find((i: { id: string }) => i.id === '1201');
-    expect(row).toMatchObject({ publishedAt: '2026-03-30T14:17:24+08:00', modifiedAt: '2026-11-09T08:57:55+08:00', type: 'Explainer' });
+    expect(row).toMatchObject({ publishedAt: '2026-03-30T14:17:24+08:00', modifiedAt: MODIFIED_1201, type: 'Explainer' });
     expect(row.changes).toBeUndefined();
 
     const issue = await (await request.get(`${baseURL}/issues/1201.json`)).json();
@@ -90,7 +98,7 @@ test.describe('Issue publication history', () => {
 
   test('sitemap lastmod follows modifiedAt', async ({ request, baseURL }) => {
     const xml = await (await request.get(`${baseURL}/sitemap.xml`)).text();
-    expect(xml).toMatch(/<loc>[^<]*\/issue\/1201<\/loc>\s*<lastmod>2026-11-09T08:57:55\+08:00<\/lastmod>/);
+    expect(xml).toMatch(new RegExp(`<loc>[^<]*/issue/1201</loc>\\s*<lastmod>${esc(MODIFIED_1201)}</lastmod>`));
     expect(xml).toMatch(/<loc>[^<]*\/issue\/2018<\/loc>\s*<lastmod>2026-11-08T18:37:13\+08:00<\/lastmod>/);
   });
 

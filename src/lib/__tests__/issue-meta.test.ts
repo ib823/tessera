@@ -67,6 +67,16 @@ describe('change entries', () => {
     expect(describeChange({ edition: 3, date: '2026-05-18', summary: 'Update: Added 2025 data.' })).toEqual({ kind: 'update', text: 'Added 2025 data.' });
     expect(describeChange({ edition: 2, date: '2026-04-07', summary: 'First published as edition 2.' })).toEqual({ kind: 'note', text: 'First published as edition 2.' });
   });
+
+  it('capitalises the text after the prefix', () => {
+    expect(describeChange({ edition: 4, date: '2026-11-09', summary: 'Correction: the court struck it down.' })).toEqual({ kind: 'correction', text: 'The court struck it down.' });
+  });
+
+  it('labels an update that also corrects an error as a correction', () => {
+    const c = describeChange({ edition: 3, date: '2026-11-09', summary: 'Update: the case was dismissed. Correction: it was the High Court.' });
+    expect(c.kind).toBe('correction');
+    expect(c.text).toBe('The case was dismissed. Correction: it was the High Court.');
+  });
 });
 
 describe('setIssueFields', () => {

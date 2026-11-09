@@ -65,5 +65,9 @@ export function updatedSinceRead(
 export function describeChange(change: IssueChange): { kind: 'correction' | 'update' | 'note'; text: string } {
   const m = change.summary.match(/^(Correction|Update):\s*/);
   if (!m) return { kind: 'note', text: change.summary };
-  return { kind: m[1] === 'Correction' ? 'correction' : 'update', text: change.summary.slice(m[0].length) };
+  const rest = change.summary.slice(m[0].length);
+  const text = rest.charAt(0).toUpperCase() + rest.slice(1);
+  // An "Update: … Correction: …" entry also corrects an error, so it is labelled a correction.
+  const corrects = m[1] === 'Correction' || /\bCorrection:/.test(rest);
+  return { kind: corrects ? 'correction' : 'update', text };
 }
