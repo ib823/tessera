@@ -231,3 +231,33 @@ test.describe('One <h1> on phone and tablet (A-9)', () => {
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('See what deserves your full attention.');
   });
 });
+
+test.describe('Share sheet on a touch screen', () => {
+  // A tap leaves the button in :hover on touch devices; the hover styles
+  // must not change its layout (it used to collapse under the finger).
+  test.use({ viewport: PHONE, hasTouch: true });
+
+  test('Copy link keeps its size after a tap and copies the card link', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await page.goto(`/issue/${ISSUE}`);
+    await waitForReader(page);
+    expect(await page.evaluate(() => matchMedia('(hover: none)').matches)).toBe(true);
+    await page.getByRole('button', { name: 'Share this card' }).tap();
+    const sheet = page.getByRole('dialog', { name: /^Share / });
+    const copy = sheet.getByRole('button', { name: /Copy link/ });
+    await expect(copy).toBeVisible();
+    await page.waitForTimeout(400);
+    const before = (await copy.boundingBox())!;
+    expect(before.height).toBeGreaterThanOrEqual(44);
+
+    await copy.tap();
+    await expect(sheet.getByText('Copied!')).toBeVisible();
+    const url = await page.evaluate(() => navigator.clipboard.readText());
+    expect(url).toMatch(new RegExp(`/issue/${ISSUE}\\?v=[^#]+#card-1$`));
+
+    const after = (await copy.boundingBox())!;
+    expect(after.height).toBeGreaterThanOrEqual(44);
+    expect(Math.abs(after.width - before.width)).toBeLessThan(2);
+    expect(await copy.evaluate((el) => getComputedStyle(el).display)).toBe('flex');
+  });
+});
