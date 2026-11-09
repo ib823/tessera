@@ -67,6 +67,8 @@ Legal, Governance, Environmental
 16. Macaranga, "Forest Loss: Under Whose Watch?", 26 Nov 2020, https://www.macaranga.org/forest-loss-under-whose-watch/ [S]
 17. Malay Mail, "After fatal landslide, Penang admits DoE did not approve Tanjung Bungah project", 23 Oct 2017, https://www.malaymail.com/news/malaysia/2017/10/23/after-fatal-landslide-penang-admits-doe-did-not-approve-tanjung-bungah-proj/1493289 [S]
 18. Free Malaysia Today, "Heavy rain main cause of Batang Kali landslide, report finds", 17 Oct 2023, https://www.freemalaysiatoday.com/category/nation/2023/10/17/heavy-rain-main-cause-of-batang-kali-landslide-finds-report/ [S]
+19. Institute of Strategic and International Studies (ISIS) Malaysia, "Shaping a nature-positive economy in Malaysia", 15 Jul 2024, https://www.isis.org.my/2024/07/15/shaping-a-nature-positive-economy-in-malaysia/ [S]
+20. Malay Mail, "Minister: We can't afford compensation if states told to stop logging for money", 8 Sep 2018, https://www.malaymail.com/news/malaysia/2018/09/08/minister-we-cant-afford-compensation-if-states-told-to-stop-logging-for-mon/1670620 [S]
 
 ## CORRECTION (2026-11-09)
 
