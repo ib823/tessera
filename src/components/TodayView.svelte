@@ -441,6 +441,7 @@
           <a href="/privacy">Privacy</a>
           <a href="/corrections">Corrections</a>
           <a href="/contact">Contact</a>
+          <a href="/rss.xml" type="application/rss+xml">RSS</a>
         </nav>
       </footer>
     {:else if !loading}

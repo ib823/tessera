@@ -140,11 +140,12 @@ test.describe('Today', () => {
   test('footer links are 44px targets and include the trust pages (X-6)', async ({ page }) => {
     await openHome(page);
     const footer = page.getByRole('navigation', { name: 'Footer navigation' });
-    for (const name of ['How This Works', 'Disclaimer', 'Verify Content', 'Privacy', 'Corrections', 'Contact']) {
-      const box = await footer.getByRole('link', { name }).boundingBox();
+    for (const name of ['How This Works', 'Disclaimer', 'Verify Content', 'Privacy', 'Corrections', 'Contact', 'RSS']) {
+      const box = await footer.getByRole('link', { name, exact: true }).boundingBox();
       expect(box, name).toBeTruthy();
       expect(box!.height, name).toBeGreaterThanOrEqual(44);
     }
+    await expect(footer.getByRole('link', { name: 'RSS', exact: true })).toHaveAttribute('href', '/rss.xml');
   });
 
   test('the document scrolls, not an inner region (X-8)', async ({ page }) => {
