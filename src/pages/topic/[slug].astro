@@ -1,0 +1,291 @@
+---
+/*
+ * /topic/{slug}: one crawlable page per topic (audit H-5).
+ *
+ * An issue's topic is its primary lens, the rule Today's "Browse by Topic"
+ * chips use (src/lib/topics.ts). The sitemap lists these routes through
+ * scripts/build-sitemap.mjs, which mirrors the same rule.
+ *
+ * Static HTML with no client script: the page is a list of links, so it
+ * works for crawlers, readers without JavaScript and the in-app browsers.
+ */
+import Base from '../../layouts/Base.astro';
+import UtilityHeader from '../../components/UtilityHeader.astro';
+import { ISSUES } from '../../data/issues';
+import { opinionColor, opinionLabel } from '../../data/issue-types';
+import { buildTopicClusters } from '../../lib/topics';
+import { absoluteDate } from '../../lib/relative-date';
+import { publishedDay } from '../../lib/issue-meta';
+
+export function getStaticPaths() {
+  const published = ISSUES.filter((issue) => issue.published === true && issue.retired !== true);
+  const clusters = buildTopicClusters(published);
+  return clusters.map((cluster) => ({
+    params: { slug: cluster.slug },
+    props: {
+      topic: cluster.topic,
+      slug: cluster.slug,
+      issues: [...cluster.issues].sort((a, b) => publishedDay(b).localeCompare(publishedDay(a)) || b.opinionShift - a.opinionShift),
+      others: clusters.filter((c) => c.slug !== cluster.slug).map(({ topic, slug, count }) => ({ topic, slug, count })),
+    },
+  }));
+}
+
+const { topic, issues, others } = Astro.props;
+const count = issues.length;
+const lensWord = topic.toLowerCase();
+const title = `${topic} issues | The Fourth Angle`;
+const description = `${count} Malaysian ${count === 1 ? 'issue' : 'issues'} read mainly through the ${lensWord} lens, newest first, each with its Opinion Shift score.`;
+---
+<Base title={title} description={description}>
+  <UtilityHeader />
+  <main class="topic-page" data-topic-page={Astro.props.slug}>
+    <nav class="topic-crumbs" aria-label="Breadcrumb">
+      <a href="/">Today</a>
+      <span aria-hidden="true">/</span>
+      <span>Topics</span>
+    </nav>
+
+    <header class="topic-head">
+      <p class="topic-kicker">Topic</p>
+      <h1 class="topic-title">{topic}</h1>
+      <p class="topic-intro">{description}</p>
+    </header>
+
+    <ol class="topic-list">
+      {issues.map((issue) => (
+        <li>
+          <a class="topic-item" href={`/issue/${issue.id}`}>
+            {publishedDay(issue) && (
+              <time class="topic-item-date" datetime={publishedDay(issue)}>{absoluteDate(publishedDay(issue))}</time>
+            )}
+            <span class="topic-item-headline">{issue.headline}</span>
+            <span class="topic-item-context">{issue.context}</span>
+            <span class="topic-item-score" style={`color:${opinionColor(issue.opinionShift)};`}>
+              <span class="sr-only">Opinion Shift </span>{issue.opinionShift}
+              <span class="topic-item-label">{opinionLabel(issue.opinionShift)}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+
+    {others.length > 0 && (
+      <section class="topic-others" aria-labelledby="other-topics-heading">
+        <h2 id="other-topics-heading" class="topic-others-title">Other topics</h2>
+        <ul class="topic-others-list">
+          {others.map((other) => (
+            <li><a href={`/topic/${other.slug}`}>{other.topic} <span class="topic-others-count">{other.count}</span></a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <footer class="topic-footer">
+      <nav aria-label="Footer navigation">
+        <a href="/">Today</a>
+        <a href="/?view=library&amp;tab=archive">Library</a>
+        <a href="/about">How This Works</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/verify">Verify Content</a>
+      </nav>
+    </footer>
+  </main>
+</Base>
+
+<style>
+  .topic-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px 16px 80px;
+  }
+
+  .topic-crumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .topic-crumbs a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .topic-head {
+    margin: 4px 0 24px;
+  }
+
+  .topic-kicker {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+  }
+
+  .topic-title {
+    margin: 8px 0 0;
+    font-family: var(--font-display);
+    font-size: var(--text-title-lg);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+  }
+
+  .topic-intro {
+    margin: 10px 0 0;
+    max-width: 60ch;
+    font-size: var(--text-body);
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .topic-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .topic-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (hover: hover) {
+    .topic-item:hover {
+      border-color: var(--border-divider);
+    }
+    .topic-item:hover .topic-item-headline {
+      text-decoration: underline;
+    }
+  }
+
+  .topic-item-date {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .topic-item-headline {
+    font-size: var(--text-body-lg);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+
+  .topic-item-context {
+    font-size: var(--text-ui);
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+
+  .topic-item-score {
+    font-family: var(--font-display);
+    font-size: var(--text-body);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .topic-item-label {
+    margin-left: 4px;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .topic-others {
+    margin-top: 40px;
+  }
+
+  .topic-others-title {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: var(--text-reading);
+    color: var(--text-primary);
+  }
+
+  .topic-others-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .topic-others-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 0 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-elevated);
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .topic-others-count {
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .topic-footer {
+    margin-top: 40px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .topic-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 4px;
+  }
+
+  .topic-footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 10px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  .topic-footer a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .topic-item {
+      background: rgba(25, 24, 22, 0.96);
+      border-color: var(--border-divider);
+    }
+  }
+</style>

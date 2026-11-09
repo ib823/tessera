@@ -51,7 +51,8 @@ These persist until the reader clears them. "Leaves the device" means sent over 
 | L11 | Install prompt dismissed, key `tfa:v1:install-dismissed` (`1` or a timestamp) | Device | Hide the install prompt (30-day cooldown on iOS) | Until cleared | No | `src/lib/install-state.ts:14`, `src/lib/install-state.ts:32`, `src/lib/install-state.ts:82`, `src/components/InstallPrompt.svelte:23-24`, `src/components/InstallPrompt.svelte:60` |
 | L12 | Sync banner dismissed, key `tfa:v1:sync-banner-dismissed` | Device | Hide the banner | Until cleared | No | `src/components/App.svelte:141-143` |
 | L13 | Sync prompt dismissed, key `tfa:v1:sync-prompt-dismissed` | Device | Hide the mobile sync card | Until cleared | No | `src/components/MobileDock.svelte:31`, `src/components/MobileDock.svelte:44`, `src/components/MobileDock.svelte:60` |
-| L14 | Welcome card dismissed, key `tfa:v1:welcome-dismissed` | Device | Show the welcome card once | Until cleared | No | `src/components/TodayView.svelte:131-132` |
+| L14 | Welcome card dismissed, key `tfa:v1:welcome-dismissed` | Device | Hide the welcome card once closed | Until cleared | No | `src/components/App.svelte` (`welcomeDismissed`) |
+| L14b | Welcome card seen, key `tfa:v1:welcome-seen` | Device | Show the welcome card on the first visit only | Until cleared | No | `src/lib/prompt-budget.ts` (`WELCOME_SEEN_KEY`) |
 | L15 | Migration flag, key `tfa:v1:migrated` | Device | Run the legacy-key migration once | Until cleared | No | `src/lib/reading-state.ts:65`, `src/lib/reading-state.ts:236`, `src/lib/reading-state.ts:299` |
 | L16 | Storage probe, key `__tfa_probe__` | Device | Test whether storage works | Written and deleted immediately | No | `src/lib/reading-state.ts:129-133` |
 | L17 | Legacy keys `tfa-*` (pre-April 2026 names for L1 to L14) | Device | None now | Copied to `tfa:v1:*` and deleted on first load | No | `src/lib/reading-state.ts:31-46`, `src/lib/reading-state.ts:242-296` |

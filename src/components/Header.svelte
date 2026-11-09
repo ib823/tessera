@@ -13,8 +13,42 @@
     onSearchClear?: () => void;
     onHome?: () => void;
     homeActive?: boolean;
+    /** Mobile, document scrolling: slide away on scroll down, return on scroll up. */
+    collapseOnScroll?: boolean;
+    /** 768-1023 px: opens the sidebar drawer (#app-sidebar). */
+    onBrowseToggle?: () => void;
+    browseOpen?: boolean;
   }
-  let { issues = [], onSearchToggle, searchMode = false, searchQuery = '', onSearchInput, onSearchClear, onHome, homeActive = false }: Props = $props();
+  let { issues = [], onSearchToggle, searchMode = false, searchQuery = '', onSearchInput, onSearchClear, onHome, homeActive = false, collapseOnScroll = false, onBrowseToggle, browseOpen = false }: Props = $props();
+
+  // Collapse on scroll: a 56px header is 7% of a 844px phone screen.
+  let collapsed = $state(false);
+  $effect(() => {
+    if (!collapseOnScroll || typeof window === 'undefined') {
+      collapsed = false;
+      return;
+    }
+    let lastY = window.scrollY;
+    let frame = 0;
+    const onScroll = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const y = window.scrollY;
+        const delta = y - lastY;
+        if (y < 72) collapsed = false;
+        else if (delta > 8) collapsed = true;
+        else if (delta < -8) collapsed = false;
+        if (Math.abs(delta) > 8) lastY = y;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (frame) cancelAnimationFrame(frame);
+      collapsed = false;
+    };
+  });
 
   let readCount = $state(0);
   let readMap: Record<string, string> = $state({});
@@ -50,7 +84,7 @@
   });
 </script>
 
-<header class="site-header">
+<header class="site-header" class:site-header--collapsed={collapsed} onfocusin={() => { collapsed = false; }} data-collapsed={collapsed ? 'true' : undefined}>
   {#if searchMode}
     <form role="search" aria-label="Search issues" onsubmit={(event) => event.preventDefault()} style="flex:1;display:flex;align-items:center;gap:8px;">
       <label class="sr-only" for="header-search">Search issues</label>
@@ -87,6 +121,19 @@
       </div>
     </a>
     <div style="display:flex;align-items:center;gap:4px;">
+      {#if onBrowseToggle}
+        <button
+          type="button"
+          class="browse-toggle"
+          aria-controls="app-sidebar"
+          aria-expanded={browseOpen}
+          onclick={onBrowseToggle}
+          data-browse-toggle
+        >
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="14" y2="18"/></svg>
+          <span>Browse</span>
+        </button>
+      {/if}
       {#if onSearchToggle}
         <button class="search-icon" onclick={onSearchToggle} style="background:none;border:none;cursor:pointer;padding:10px;display:flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;border-radius:var(--radius-md);transition:background 0.2s ease-out;" aria-label="Search" aria-expanded={searchMode} onmouseenter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-sunken)'; }} onmouseleave={(e) => { (e.currentTarget as HTMLElement).style.background = 'none'; }}>
           <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -117,6 +164,40 @@
     z-index: var(--z-header, 40);
     background: var(--header-bg);
     border-bottom: 1px solid rgba(17, 24, 39, 0.05);
+    transition: transform 220ms var(--ease-out-cubic, ease-out);
+  }
+
+  .site-header--collapsed {
+    transform: translateY(-100%);
+  }
+
+  /* Browse: only where the sidebar becomes a drawer (768-1023 px). */
+  .browse-toggle {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 14px;
+    margin-right: 4px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg);
+    color: var(--text-primary);
+    font: inherit;
+    font-size: var(--text-ui);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .browse-toggle[aria-expanded='true'] {
+    background: var(--bg-sunken);
+    border-color: var(--border-divider);
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .browse-toggle {
+      display: inline-flex;
+    }
   }
   @supports ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
     .site-header {
@@ -173,7 +254,8 @@
   /* ── Desktop: stacked name + tagline beside mark ── */
   @media (min-width: 769px) {
     .site-header { height: 60px; }
-    .search-icon { display: none !important; }
+    /* The search icon renders only in the mobile shell, which also covers
+       short landscape screens (844x390); keep it visible there (H-3). */
     .brand { gap: 14px; }
 
     .brand-text-block {
@@ -206,6 +288,11 @@
     .brand { gap: 16px; }
     .brand-name { font-size: var(--text-reading); }
     .brand-tagline { font-size: var(--text-sm); }
+  }
+
+  /* The header content follows the 1440px canvas cap (H-8). */
+  @media (min-width: 1472px) {
+    .site-header { padding-inline: calc((100% - 1440px) / 2 + 16px); }
   }
 
   @media (min-width: 1440px) {

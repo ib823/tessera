@@ -1,0 +1,199 @@
+---
+import PolicyLayout from '../layouts/PolicyLayout.astro';
+
+const EMAIL = 'thefourthangle@proton.me';
+---
+<PolicyLayout
+  title="Notis Privasi | The Fourth Angle"
+  description="Apa yang The Fourth Angle simpan pada peranti anda dan di pelayan kami, berapa lama kami menyimpannya, dan cara memadamkannya."
+  heading="Notis privasi"
+  reviewed="Kali terakhir disemak November 2026"
+  lang="ms"
+  path="/privasi"
+>
+  <p class="policy-alt"><a href="/privacy" lang="en" hreflang="en">Read this notice in English</a></p>
+
+  <section class="policy-card" aria-labelledby="siapa">
+    <h2 id="siapa">Siapa kami</h2>
+    <p>The Fourth Angle ("T4A", "kami") dikendalikan secara bebas. Kami menentukan cara data yang diterangkan dalam halaman ini digunakan. Oleh itu, kami ialah pengawal data tersebut di bawah Akta Perlindungan Data Peribadi 2010 Malaysia.</p>
+    <p>Pertanyaan, permintaan dan aduan tentang privasi: <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+  </section>
+
+  <section class="policy-card policy-card--note" aria-labelledby="ringkas">
+    <h2 id="ringkas">Ringkasnya</h2>
+    <ul>
+      <li>Anda boleh membaca semua kandungan T4A tanpa akaun, nama, alamat e-mel atau nombor telefon.</li>
+      <li>Kemajuan bacaan anda kekal dalam pelayar anda sendiri melainkan anda menghidupkan penyegerakan Angle Code.</li>
+      <li>Dua ciri pilihan menghantar data ke pelayan kami: <strong>penyegerakan Angle Code</strong> dan <strong>pemberitahuan</strong>. Kedua-duanya kekal dimatikan sehingga anda menghidupkannya. Selain itu, pelayar anda hanya sekali-sekala menghantar laporan keselamatan automatik kepada kami (<a href="#keselamatan">bahagian 4</a>).</li>
+      <li>Kami tidak menggunakan perkhidmatan analitik, penjejak pengiklanan atau skrip pihak ketiga. Kod kami tidak menetapkan sebarang kuki.</li>
+      <li>Hos kami, Cloudflare, menerima data teknikal standard, seperti alamat IP anda, setiap kali pelayar anda memuatkan halaman.</li>
+    </ul>
+  </section>
+
+  <section class="policy-card" aria-labelledby="peranti">
+    <h2 id="peranti">1. Apa yang kekal pada peranti anda</h2>
+    <p>T4A menyimpan perkara berikut dalam storan pelayar anda sendiri. Kami tidak dapat melihatnya. Data ini hanya keluar dari peranti anda jika anda menghidupkan penyegerakan (<a href="#penyegerakan">bahagian 2</a>) atau pemberitahuan (<a href="#pemberitahuan">bahagian 3</a>).</p>
+    <ul class="policy-items">
+      <li>
+        <p class="policy-item-title">Isu yang telah anda mulakan atau habiskan, dan bilangan kad yang telah anda baca</p>
+        <dl><dt>Sebab</dt><dd>Untuk menandakan isu yang telah dibaca dan membolehkan anda menyambung bacaan</dd><dt>Disimpan</dt><dd>Sehingga anda mengosongkannya</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Kad yang telah anda serlahkan</p>
+        <dl><dt>Sebab</dt><dd>Untuk memaparkan serlahan anda</dd><dt>Disimpan</dt><dd>Sehingga anda mengosongkannya</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Tempat anda terakhir berhenti membaca, dan masanya</p>
+        <dl><dt>Sebab</dt><dd>Untuk menawarkan anda kembali ke situ</dd><dt>Disimpan</dt><dd>Diabaikan selepas 24 jam; disimpan sehingga diganti atau dikosongkan</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Pemberitahuan yang telah anda terima, sehingga 50</p>
+        <dl><dt>Sebab</dt><dd>Supaya anda boleh mencarinya selepas menutupnya</dd><dt>Disimpan</dt><dd>Disembunyikan selepas 30 hari, kemudian dipadamkan</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Tetapan kecil, seperti sama ada anda telah melihat atau menutup kad alu-aluan, atau menutup gesaan pemasangan, penyegerakan atau pemberitahuan</p>
+        <dl><dt>Sebab</dt><dd>Supaya kami tidak memaparkannya lagi</dd><dt>Disimpan</dt><dd>Sehingga anda mengosongkannya</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Label peranti rawak, yang dicipta apabila anda mula-mula membuka halaman <span lang="en">Reading progress</span> (Kemajuan bacaan)</p>
+        <dl><dt>Sebab</dt><dd>Dipaparkan pada halaman itu dan digunakan untuk menamakan fail eksport</dd><dt>Disimpan</dt><dd>Sehingga anda mengosongkannya</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Salinan beberapa fail laman: halaman luar talian, ikon, skrip, gaya dan fon</p>
+        <dl><dt>Sebab</dt><dd>Supaya laman dimuatkan lebih cepat dan berfungsi tanpa talian</dd><dt>Disimpan</dt><dd>Sehingga kami menggantikannya dengan versi baharu, atau anda mengosongkan data laman</dd></dl>
+      </li>
+      <li>
+        <p class="policy-item-title">Semasa tab dibuka: penanda yang menghalang petunjuk dan animasi daripada berulang, dan tahap animasi yang dipilih berdasarkan pemproses dan memori peranti anda</p>
+        <dl><dt>Sebab</dt><dd>Untuk mengelakkan ulangan dan memastikan animasi lancar</dd><dt>Disimpan</dt><dd>Dipadamkan apabila anda menutup tab</dd></dl>
+      </li>
+    </ul>
+    <p>Jika anda menggunakan penyegerakan, pelayar anda turut menyimpan Angle Code anda dan masa terakhir ia disegerakkan. Jika anda menggunakan pemberitahuan, pelayar anda menyimpan catatan bahawa pemberitahuan dihidupkan dan salinan alamat pemberitahuan anda.</p>
+    <p><strong>Susunan topik.</strong> Selepas anda menghabiskan 10 isu, aplikasi ini mengalihkan isu yang belum dibaca tentang topik yang paling banyak anda baca dan serlahkan ke bahagian atas senarai anda. Peranti anda sendiri yang membuat pengiraan ini, dan tiada maklumat mengenainya sampai kepada kami. Setiap pembaca mempunyai akses kepada isu yang sama.</p>
+    <p id="padam"><strong>Cara memadamkannya.</strong> Buka <a href="/progress">halaman <span lang="en">Reading progress</span></a> (Kemajuan bacaan) dan pilih <strong lang="en">Clear on this device</strong> (Kosongkan pada peranti ini). Tindakan ini memadamkan kemajuan bacaan, serlahan, senarai pemberitahuan, tetapan, label peranti dan, jika anda menggunakan penyegerakan, Angle Code anda daripada pelayar ini. Jika anda menggunakan penyegerakan, butang <strong lang="en">Clear all reading data</strong> (Kosongkan semua data bacaan) dalam panel Angle Code melakukan perkara yang sama. Kedua-dua butang ini tidak mematikan pemberitahuan dan tidak memadamkan salinan penyegerakan di pelayan kami: bahagian <a href="#penyegerakan">2</a> dan <a href="#pemberitahuan">3</a> menerangkan caranya. Anda juga boleh mengosongkan data laman ini melalui tetapan pelayar anda.</p>
+    <p><strong>Mengambil salinan.</strong> Halaman <span lang="en">Reading progress</span> juga membolehkan anda mengeksport kemajuan anda sebagai fail dan mengimportnya ke dalam pelayar lain. Fail itu mengandungi Angle Code anda dan, jika pemberitahuan dihidupkan, alamat pemberitahuan anda. Rahsiakan fail itu.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="penyegerakan">
+    <h2 id="penyegerakan">2. Penyegerakan Angle Code (pilihan)</h2>
+    <p><strong>Fungsinya.</strong> Penyegerakan membolehkan anda meneruskan bacaan pada peranti lain. Apabila anda menghidupkannya, kami memberi anda Angle Code 6 aksara. Setiap peranti yang dipautkan kepada kod itu berkongsi kemajuan bacaan yang sama.</p>
+    <p><strong>Apa yang kami simpan di pelayan kami, dipautkan hanya kepada kod anda:</strong></p>
+    <ul>
+      <li>bagi setiap isu yang telah anda buka: sama ada anda telah memulakan atau menghabiskannya, dan bilangan kad yang telah anda baca;</li>
+      <li>kad yang telah anda serlahkan;</li>
+      <li>tempat anda terakhir berhenti membaca, dan masanya;</li>
+      <li>masa terakhir kemajuan anda disegerakkan.</li>
+    </ul>
+    <p>Kami tidak menyimpan nama, alamat e-mel atau alamat IP bersama rekod penyegerakan anda. Perkhidmatan penyegerakan kami menyimpan alamat IP anda dalam memori kerja untuk mengehadkan bilangan permintaan daripada satu sambungan. Perkhidmatan itu tidak menulis alamat IP anda ke dalam storan.</p>
+    <p><strong>Tempat kami menyimpannya.</strong> Dalam Cloudflare Workers KV, sebahagian daripada rangkaian global Cloudflare. Rekod itu boleh berada pada pelayan di luar Malaysia.</p>
+    <p><strong>Tempoh kami menyimpannya.</strong> Kami menyimpan rekod penyegerakan anda sehingga 90 hari berlalu tanpa sebarang penyegerakan daripada mana-mana peranti yang dipautkan kepada kod anda. Selepas itu, rekod tersebut dipadamkan secara automatik. Setiap penyegerakan memulakan semula tempoh 90 hari itu.</p>
+    <p><strong>Siapa yang boleh melihatnya.</strong> Sesiapa yang mempunyai Angle Code anda boleh memuatkan kemajuan anda yang telah disegerakkan. Jaga kod itu seperti kata laluan dan jangan siarkannya secara terbuka. Kod itu juga dihantar dalam alamat web: dalam pautan penyegerakan, dan dalam permintaan yang dibuat oleh peranti untuk memuatkan kemajuan anda. Hos kami, Cloudflare, memproses permintaan tersebut (<a href="#hos">bahagian 5</a>).</p>
+    <p><strong>Pautan penyegerakan.</strong> Pautan penyegerakan ialah alamat web T4A yang berakhir dengan <code>?sync=</code> dan satu kod. Apabila anda membuka pautan sebegini, T4A bertanya kepada anda dahulu sebelum memautkan pelayar itu. Jika anda bersetuju, kemajuan bacaan pelayar itu digabungkan dengan kemajuan kod tersebut, dan sesiapa yang mempunyai kod itu boleh melihatnya. Jika anda menolak, tiada apa-apa yang dipautkan. Terima hanya pautan penyegerakan yang anda cipta sendiri.</p>
+    <p><strong>Cara menghentikan dan memadamkannya.</strong> Buka panel Angle Code, pilih <strong lang="en">Unlink</strong> (Nyahpaut) dan sahkan. Pelayar ini berhenti menyegerak dan melupakan kod itu. Salinan di pelayan kami kekal sehingga tempoh 90 harinya tamat. Untuk memadamkannya lebih awal, e-mel <a href={`mailto:${EMAIL}`}>{EMAIL}</a> bersama Angle Code anda. Kami berusaha memadamkannya dalam tempoh 5 hari bekerja dan akan mengesahkannya melalui balasan e-mel. Kami hanya boleh mencari rekod anda jika anda memberikan kod itu kepada kami.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="pemberitahuan">
+    <h2 id="pemberitahuan">3. Pemberitahuan (pilihan)</h2>
+    <p><strong>Fungsinya.</strong> Pemberitahuan memaklumkan anda apabila kami menerbitkan isu baharu. Kami mencadangkannya selepas anda menghabiskan isu pertama anda, dan anda boleh menghidupkannya pada bila-bila masa melalui loceng pemberitahuan. Pelayar anda meminta kebenaran anda sebelum apa-apa disediakan.</p>
+    <p><strong>Bila kami menghantarnya</strong> (waktu Malaysia):</p>
+    <ul>
+      <li>Selasa dan Khamis jam 8 pagi, jika kami telah menerbitkan isu baharu;</li>
+      <li>Sabtu jam 9 pagi, ringkasan mingguan;</li>
+      <li>peringatan "<span lang="en">You Missed This</span>" jam 9 pagi, hanya jika anda tidak membuka T4A selama 14 hari dan tidak menerima sebarang pemberitahuan daripada kami dalam 7 hari yang lalu. Kami menghantarnya paling kerap sekali setiap 30 hari, dan tidak sekali-kali pada hari Sabtu.</li>
+    </ul>
+    <p>Anda tidak akan menerima lebih daripada 3 pemberitahuan dalam mana-mana tempoh 7 hari.</p>
+    <p><strong>Apa yang kami simpan di pelayan kami:</strong></p>
+    <ul>
+      <li>alamat pemberitahuan yang diberikan oleh pelayar anda: alamat web pada perkhidmatan <i lang="en">push</i> pembuat pelayar anda (Google, Mozilla, Apple atau Microsoft), bersama dua kunci yang digunakan untuk menyulitkan mesej kepada anda;</li>
+      <li>tarikh anda menghidupkan pemberitahuan;</li>
+      <li>kali terakhir anda membuka T4A dengan pemberitahuan dihidupkan. Pelayar anda menghantar maklumat ini kepada kami setiap kali anda membuka aplikasi, supaya kami tahu sama ada perlu menghantar peringatan dan bila perlu memadamkan rekod anda;</li>
+      <li>perkhidmatan <i lang="en">push</i> yang digunakan oleh pelayar anda (Google, Mozilla, Apple atau lain-lain), yang kami kenal pasti daripada alamat pemberitahuan supaya kami menghantar format yang boleh dipaparkan oleh pelayar anda;</li>
+      <li>masa pemberitahuan yang kami hantar kepada anda baru-baru ini, untuk mematuhi had mingguan. Kami memadamkan senarai ini 8 hari selepas pemberitahuan terakhir yang kami hantar kepada anda;</li>
+      <li>jika kami pernah menghantar peringatan kepada anda, tarikh kami menghantarnya. Kami memadamkannya selepas 31 hari.</li>
+    </ul>
+    <p>Kami tidak menyimpan nama, alamat e-mel, alamat IP atau sejarah bacaan bersama rekod pemberitahuan anda. Perkhidmatan pemberitahuan kami menyimpan alamat IP anda dalam memori kerja untuk mengehadkan permintaan, sama seperti perkhidmatan penyegerakan.</p>
+    <p><strong>Pihak lain yang terlibat.</strong> Perkhidmatan <i lang="en">push</i> pembuat pelayar anda menghantar setiap pemberitahuan. Mesej disulitkan, jadi perkhidmatan <i lang="en">push</i> tidak dapat membacanya. Setiap mesej hanya mengandungi teks isu yang terbuka kepada umum (tajuk atau ringkasan pendek), satu pautan dan, pada sesetengah pelayar, imej isu tersebut. Kami meminta perkhidmatan <i lang="en">push</i> membuang mesej yang tidak dapat dihantar dalam tempoh 24 jam.</p>
+    <p><strong>Tempoh kami menyimpannya.</strong> Kami memadamkan rekod pemberitahuan anda apabila salah satu perkara berikut berlaku:</p>
+    <ul>
+      <li>anda mematikan pemberitahuan;</li>
+      <li>pemberitahuan ke alamat anda gagal dihantar;</li>
+      <li>90 hari berlalu sejak anda kali terakhir membuka T4A.</li>
+    </ul>
+    <p>Dalam dua keadaan pertama, kami turut memadamkan masa penghantaran dan tarikh peringatannya serta-merta. Jika rekod anda telah tamat tempoh tetapi pelayar ini masih memegang langganan pemberitahuan T4A, aplikasi mendaftarkannya semula apabila anda membuka T4A seterusnya, supaya pemberitahuan diteruskan. Untuk menghentikannya, matikan pemberitahuan seperti yang diterangkan di bawah.</p>
+    <p><strong>Cara menghentikannya.</strong> Buka loceng pemberitahuan dan pilih <strong lang="en">Turn off</strong> (Matikan). Tindakan ini membatalkan langganan dalam pelayar anda dan memadamkan rekod pemberitahuan anda, masa penghantarannya dan tarikh peringatannya daripada pelayan kami. Jika anda menyekat pemberitahuan melalui tetapan pelayar, kami memadamkan rekod anda apabila pemberitahuan seterusnya gagal sampai kepada anda, atau 90 hari selepas lawatan terakhir anda, mengikut yang mana lebih awal.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="keselamatan">
+    <h2 id="keselamatan">4. Laporan keselamatan</h2>
+    <p>Halaman kami mengarahkan pelayar anda supaya menyekat kandungan daripada sumber yang tidak dijangka. Jika pelayar anda menyekat sesuatu pada salah satu halaman kami, pelayar itu boleh menghantar laporan ringkas kepada kami secara automatik: alamat halaman (tanpa apa-apa selepas <code>?</code>), apa yang disekat, peraturan yang menyekatnya, dan masanya. Kami menyimpan laporan ini selama 30 hari untuk mengesan dan membetulkan masalah keselamatan. Kami tidak menyimpan alamat IP bersamanya. Sambungan pelayar (<i lang="en">browser extensions</i>) boleh mencetuskan laporan ini.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="hos">
+    <h2 id="hos">5. Apa yang dilihat oleh hos kami dan perkhidmatan lain</h2>
+    <p><strong>Cloudflare.</strong> Cloudflare menjadi hos T4A dan menjalankan perkhidmatan penyegerakan dan pemberitahuan kami. Apabila pelayar anda bersambung, Cloudflare menerima data permintaan standard, termasuk alamat IP anda, jenis pelayar anda dan alamat halaman atau perkhidmatan yang diminta. Cloudflare memproses data permintaan ini di bawah <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">dasar privasinya sendiri</a> (dalam bahasa Inggeris).</p>
+    <p><strong>Tiada penjejakan.</strong> Kami tidak menggunakan perkhidmatan analitik, penjejak pengiklanan, pemalam media sosial, atau fon dan skrip pihak ketiga. Tetapan keselamatan kami menghalang halaman daripada memuatkan skrip dari tempat lain. Kod kami tidak menetapkan sebarang kuki.</p>
+    <p><strong>Butang kongsi.</strong> Jika anda mengetik butang kongsi, kami membuka perkhidmatan yang anda pilih (WhatsApp, Telegram, X, Facebook, LinkedIn atau Threads) bersama pautan dan teks isu tersebut. Tiada apa-apa dihantar kepada perkhidmatan itu melainkan anda mengetik butang tersebut. Dasar privasi perkhidmatan itu sendiri kemudian terpakai.</p>
+    <p><strong>Pautan dalam pemberitahuan</strong> membawa label seperti <code>?from=notification</code>. Kami tidak menggunakannya, tetapi label itu menjadi sebahagian daripada alamat web yang diminta oleh pelayar anda.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="sebab">
+    <h2 id="sebab">6. Sebab kami menggunakan data ini, dan persetujuan anda</h2>
+    <p>Kami menggunakan data dalam notis ini hanya untuk:</p>
+    <ol>
+      <li>menyimpan kemajuan bacaan anda pada peranti anda;</li>
+      <li>menyegerakkan kemajuan anda antara peranti, jika anda menghidupkan penyegerakan;</li>
+      <li>menghantar pemberitahuan kepada anda, jika anda menghidupkannya;</li>
+      <li>memastikan perkhidmatan kami berfungsi dan selamat (had permintaan dan laporan keselamatan).</li>
+    </ol>
+    <p>Kami bergantung pada persetujuan anda untuk penyegerakan dan pemberitahuan, yang anda berikan dengan menghidupkannya. Anda boleh menarik balik persetujuan itu pada bila-bila masa (<a href="#hak">bahagian 9</a>).</p>
+    <p>Semua data ini datang daripada pelayar anda sendiri. Kami tidak memperoleh sebarang maklumat tentang anda daripada pihak lain.</p>
+    <p>Pemberian sebarang data ini adalah <strong>secara sukarela</strong>. Tanpa penyegerakan atau pemberitahuan, anda masih boleh membaca semua kandungan T4A. Anda hanya terlepas penyegerakan antara peranti dan makluman.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="kongsi">
+    <h2 id="kongsi">7. Pihak yang menerima data daripada kami</h2>
+    <p>Hanya dua jenis organisasi:</p>
+    <ul>
+      <li><strong>Cloudflare</strong>, yang menjadi hos laman ini dan menyimpan rekod penyegerakan dan pemberitahuan untuk kami;</li>
+      <li><strong>perkhidmatan <i lang="en">push</i> pembuat pelayar anda</strong>, yang menghantar pemberitahuan jika anda menghidupkannya.</li>
+    </ul>
+    <p>Kami tidak menjual atau menyewakan data anda. Kami tidak berkongsi data anda dengan pengiklan, parti politik atau kumpulan kempen. Kami mendedahkannya kepada pihak berkuasa hanya apabila undang-undang Malaysia mewajibkan kami berbuat demikian.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="tempat">
+    <h2 id="tempat">8. Tempat data anda disimpan</h2>
+    <p>Data pada peranti anda kekal pada peranti anda. Rekod penyegerakan dan pemberitahuan berada dalam rangkaian global Cloudflare, yang boleh meletakkannya di luar Malaysia. Dengan menghidupkan penyegerakan atau pemberitahuan, anda bersetuju dengan penyimpanan tersebut.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="hak">
+    <h2 id="hak">9. Hak dan pilihan anda</h2>
+    <ul>
+      <li><strong>Lihat data anda.</strong> Pada peranti anda: eksport data itu daripada <a href="/progress">halaman <span lang="en">Reading progress</span></a>. Di pelayan kami: e-mel kami bersama Angle Code anda (untuk penyegerakan) atau alamat pemberitahuan anda (untuk pemberitahuan; alamat ini terdapat dalam fail eksport anda), dan kami akan menghantar kepada anda data yang kami simpan.</li>
+      <li><strong>Betulkan data anda.</strong> Kemajuan anda dikemas kini semasa anda membaca. Jika ada data yang kami simpan tidak tepat, beritahu kami dan kami akan membetulkan atau memadamkannya.</li>
+      <li><strong>Tarik balik persetujuan.</strong> Matikan pemberitahuan, atau nyahpaut penyegerakan, seperti yang diterangkan dalam bahagian <a href="#penyegerakan">2</a> dan <a href="#pemberitahuan">3</a>. Anda juga boleh menghantar e-mel kepada kami, dan kami akan berhenti menggunakan data itu dan memadamkannya.</li>
+      <li><strong>Pindahkan data anda.</strong> Eksport kemajuan anda daripada halaman <span lang="en">Reading progress</span>, atau minta kami menghantar rekod penyegerakan anda sebagai fail.</li>
+      <li><strong>Buat aduan.</strong> Hubungi kami dahulu. Jika anda tidak berpuas hati, anda boleh membuat aduan kepada Pesuruhjaya Perlindungan Data Peribadi (Jabatan Perlindungan Data Peribadi) di <a href="https://www.pdp.gov.my" rel="noopener noreferrer">pdp.gov.my</a>.</li>
+    </ul>
+    <p>Kami tidak mengetahui identiti anda, jadi kami hanya dapat mencari data di pelayan kami jika anda memberikan Angle Code atau alamat pemberitahuan anda. Tulis kepada <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Kami berusaha membalas dalam tempoh 5 hari bekerja.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="lindung">
+    <h2 id="lindung">10. Cara kami melindunginya</h2>
+    <p>Semua sambungan menggunakan HTTPS. Tetapan keselamatan kami menghalang halaman daripada memuatkan kod dari sumber lain. Perkhidmatan kami mengehadkan kekerapan satu sambungan boleh membuat permintaan. Angle Code ialah kod rawak 6 aksara yang dipilih daripada 32 aksara, yang membolehkan kira-kira 1.07 bilion gabungan. Mesej pemberitahuan disulitkan. Tiada sistem yang selamat sepenuhnya, jadi kami menyimpan data sesedikit yang boleh.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="masalah">
+    <h2 id="masalah">11. Jika berlaku masalah</h2>
+    <p>Jika kami percaya data peribadi dalam jagaan kami telah hilang, disalahgunakan atau diakses tanpa kebenaran, kami akan memaklumkan Pesuruhjaya Perlindungan Data Peribadi seperti yang dikehendaki oleh undang-undang. Kami tidak menyimpan alamat e-mel atau nombor telefon pembaca, jadi kami akan memaklumkan pembaca yang terjejas melalui notis di laman ini.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="perubahan">
+    <h2 id="perubahan">12. Perubahan pada notis ini</h2>
+    <p>Jika kami mengubah cara kami mengendalikan data, kami akan mengemas kini notis ini dan tarikh di bahagian atas. Bagi perubahan yang ketara, kami akan menyiarkan notis di laman ini sebelum perubahan itu berkuat kuasa.</p>
+  </section>
+
+  <section class="policy-card" aria-labelledby="hubungi">
+    <h2 id="hubungi">13. Hubungi kami</h2>
+    <p>Pertanyaan dan permintaan privasi: <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>. Cara lain untuk menghubungi kami terdapat di <a href="/contact">halaman hubungan kami</a> (dalam bahasa Inggeris).</p>
+    <p>Notis ini diterbitkan dalam Bahasa Malaysia dan <a href="/privacy" hreflang="en">bahasa Inggeris</a>. Lihat juga <a href="/corrections">dasar pembetulan kami</a> (dalam bahasa Inggeris).</p>
+  </section>
+</PolicyLayout>

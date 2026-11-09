@@ -15,17 +15,20 @@
   import MobileDock from './MobileDock.svelte';
   import SurfaceNav from './SurfaceNav.svelte';
   import TodayView from './TodayView.svelte';
+  import SearchEmpty from './SearchEmpty.svelte';
   import MobileBrowser from './MobileBrowser.svelte';
   import InsightReader from './InsightReader.svelte';
   import { countHighlights, readIssues, getSavedPosition, savePosition, clearPosition, getReactions, reactions, computeAffinity, scoreIssue } from '../stores/reader';
   import { loadSearchIndex, search as doSearch, isLoaded as searchReady, isLoading as searchLoading } from '../lib/search';
   import { getAnimationTier } from '../lib/animation';
-  import { buildFeedSections, type FeedSection, type SortMode, type SectionKind } from '../lib/feed-sections';
+  import { buildFeedSections, type FeedSection, type SortMode, type SectionKind, type TodayMode } from '../lib/feed-sections';
   import { publishedDay } from '../lib/issue-meta';
   import { BUILD_ID, getSiteOrigin } from '../lib/build';
   import { startAutoSync, checkUrlSync, linkAngleCode, getAngleCode, schedulePush, isLinked as isSyncLinked, onSyncChange } from '../lib/sync';
   import { initInstallState, canInstall as canInstallCheck, isIOS as isIOSCheck, triggerInstall, dismissInstall, onInstallChange } from '../lib/install-state';
   import AngleCode from './AngleCode.svelte';
+  import { choosePrompt, countCompleted, markPromptSpent, markWelcomeShown, promptSpent, sharedLanding, welcomeSeenOnEarlierVisit, welcomeSession, type RelationshipPrompt } from '../lib/prompt-budget';
+  import { buildTopicClusters } from '../lib/topics';
 
   interface FeedIssue {
     id: string;
@@ -123,7 +126,7 @@
   // there and switch in onMount. Deep links (initialIssue) render nothing until
   // mounted, so they can start in the right shell and the first painted frame
   // is already final.
-  let viewMode = $state<'mobile' | 'tablet' | 'desktop'>(
+  let viewMode = $state<'mobile' | 'desktop'>(
     initialIssue && typeof window !== 'undefined' ? detectViewMode(window.innerWidth, window.innerHeight) : 'desktop'
   );
   let viewportWidth = $state(typeof window !== 'undefined' ? window.innerWidth : 1440);
@@ -142,6 +145,7 @@
       try { sessionStorage.setItem('tfa-cinema-dismissed', '1'); } catch {}
     }
   }
+  // The mobile card feed (Library, search) keeps its own scroller and pull-to-refresh.
   let allowBrowserPullRefresh = $state(false);
   let searchQuery = $state('');
   let searchActive = $state(false);
@@ -172,9 +176,51 @@
   let syncLinked = $state(isSyncLinked());
   let showInstall = $state(false);
   let installIsIOS = $state(false);
-  let syncBannerDismissed = $state(typeof localStorage !== 'undefined' && localStorage.getItem('tfa:v1:sync-banner-dismissed') === '1');
-  let showSyncBanner = $derived(!syncBannerDismissed && surfaceMode === 'library');
-  function dismissSyncBanner() { localStorage.setItem('tfa:v1:sync-banner-dismissed', '1'); syncBannerDismissed = true; }
+  let isStandalone = $state(false);
+
+  // ── Relationship prompts: one interruption budget (R-1) ──
+  // The sync prompt used to have two dismissal keys (mobile dock card and
+  // desktop sidebar banner); either one now dismisses the single prompt.
+  function readFlag(key: string): boolean {
+    try { return typeof localStorage !== 'undefined' && localStorage.getItem(key) === '1'; } catch { return false; }
+  }
+  function writeFlag(key: string) {
+    try { localStorage.setItem(key, '1'); } catch { /* storage blocked: dismissal lasts this page */ }
+  }
+  let syncDismissed = $state(readFlag('tfa:v1:sync-banner-dismissed') || readFlag('tfa:v1:sync-prompt-dismissed'));
+  let welcomeDismissed = $state(readFlag('tfa:v1:welcome-dismissed'));
+  // The welcome card is for the first visit to Today; later visits skip it.
+  const welcomeSeenEarlier = welcomeSeenOnEarlierVisit();
+  let landingActive = $state(sharedLanding.get());
+  let promptsSpent = $state(promptSpent.get());
+  let welcomeHolds = $state(welcomeSession.get());
+  $effect(() => sharedLanding.subscribe((v) => { landingActive = v; }));
+  $effect(() => promptSpent.subscribe((v) => { promptsSpent = v; }));
+  $effect(() => welcomeSession.subscribe((v) => { welcomeHolds = v; }));
+
+  function dismissSyncPrompt() {
+    writeFlag('tfa:v1:sync-banner-dismissed');
+    writeFlag('tfa:v1:sync-prompt-dismissed');
+    syncDismissed = true;
+    markPromptSpent();
+  }
+  function dismissWelcome() {
+    writeFlag('tfa:v1:welcome-dismissed');
+    welcomeDismissed = true;
+    markPromptSpent();
+  }
+  function openSyncPanel() {
+    angleCodeOpen = true;
+    markPromptSpent();
+  }
+  function dismissInstallPrompt() {
+    dismissInstall();
+    markPromptSpent();
+  }
+  function acceptInstallPrompt() {
+    markPromptSpent();
+    void triggerInstall();
+  }
 
   // Keep syncLinked and install state reactive
   $effect(() => {
@@ -184,6 +230,38 @@
   });
 
   let isSearching = $derived(searchQuery.trim().length >= 2);
+
+  // ── Today: Top / Latest (H-2) ──
+  // sessionStorage: the chosen mode lasts for this visit only.
+  const TODAY_MODE_KEY = 'tfa:v1:today-mode';
+  let todayMode = $state<TodayMode>('top');
+  function setTodayMode(mode: TodayMode) {
+    todayMode = mode;
+    try { sessionStorage.setItem(TODAY_MODE_KEY, mode); } catch { /* storage blocked */ }
+  }
+
+  // ── Tablet (768-1023 px): the sidebar is a drawer behind a toggle ──
+  let sidebarOpen = $state(false);
+  let sidebarEl: HTMLElement | undefined = $state(undefined);
+  function toggleSidebar() {
+    sidebarOpen = !sidebarOpen;
+    if (sidebarOpen) requestAnimationFrame(() => sidebarEl?.focus());
+  }
+  function closeSidebar(restoreFocus = false) {
+    if (!sidebarOpen) return;
+    sidebarOpen = false;
+    if (restoreFocus) requestAnimationFrame(() => (document.querySelector('[data-browse-toggle]') as HTMLElement | null)?.focus());
+  }
+
+  let dockHeight = $state(0);
+  let desktopHeaderHeight = $state(0);
+
+  // Search no-results: suggest the largest topics.
+  let searchTopics = $derived(buildTopicClusters(issues).slice(0, 6).map(({ topic, slug, count }) => ({ topic, slug, count })));
+  function browseAllFromSearch() {
+    onSearchClear();
+    openLibrary('archive');
+  }
 
   function onSearchFocus() {
     loadSearchIndex();
@@ -275,6 +353,36 @@
     return ids;
   });
   let highlightCount = $derived(countHighlights(appReactionMap));
+  let completedCount = $derived(countCompleted(readMap));
+
+  // One relationship prompt at a time, never on the first screen of a
+  // shared-link visit, one per session (R-1). The welcome card greets a first
+  // visit to Today; the others wait for a completed issue.
+  let activePrompt = $derived<RelationshipPrompt | null>(
+    choosePrompt({
+      completedCount,
+      sharedLanding: landingActive,
+      spent: promptsSpent,
+      welcomeSession: welcomeHolds,
+      readerOpen: !!activeFullIssue || issueLoading,
+      candidates: {
+        welcome: !welcomeDismissed && !welcomeSeenEarlier && surfaceMode === 'today' && !isSearching,
+        sync: !syncLinked && !syncDismissed && !isStandalone,
+        // Only the mobile dock offers install.
+        install: viewMode === 'mobile' && showInstall && !isStandalone,
+      },
+    }),
+  );
+  // Once the welcome card is on screen (Today renders it only with issues to
+  // show), it is this session's one prompt.
+  $effect(() => {
+    if (activePrompt === 'welcome' && issues.length > 0) markWelcomeShown();
+  });
+  let dockPrompt = $derived(activePrompt === 'sync' || activePrompt === 'install' ? activePrompt : null);
+  // On the mobile layout the reader opens over Today (or the Library), which
+  // stays in the DOM. Its heading steps down to h2 so the issue headline is
+  // the page's only <h1> (A-9). The desktop layout swaps Today out instead.
+  let mobilePageHeadingLevel = $derived<'h1' | 'h2'>(activeFullIssue ? 'h2' : 'h1');
   let readingCount = $derived(readingIssueIds.size);
   let libraryCount = $derived.by(() => new Set([...readingIssueIds, ...highlightedIssueIds]).size);
   let scopedIssues = $derived.by(() => {
@@ -393,6 +501,48 @@
     history.replaceState(state, '', target);
   }
 
+  // ── Document scroll (X-8) ──
+  // Today scrolls the document instead of an inner .today-shell region, so
+  // mobile browser bars collapse, pull-to-refresh and scroll restoration are
+  // native, and keyboard scrolling needs no focusable region. Surfaces that
+  // need a fixed-height shell (the mobile card feed, the desktop reader)
+  // keep it.
+  let docScroll = $derived(
+    shellReady &&
+      surfaceMode === 'today' &&
+      !isSearching &&
+      (viewMode === 'mobile' || (!activeFullIssue && !issueLoading && !issueLoadError)),
+  );
+  let docScrollWas = false;
+  let docScrollSettled = false;
+  let savedDocScrollY = 0;
+  $effect(() => {
+    const on = docScroll;
+    if (typeof document === 'undefined') return;
+    document.documentElement.classList.toggle('app-doc-scroll', on);
+    if (!docScrollSettled) {
+      // First pass: leave the browser's own scroll restoration alone.
+      docScrollSettled = true;
+      docScrollWas = on;
+      return;
+    }
+    if (on === docScrollWas) return;
+    docScrollWas = on;
+    if (!on) {
+      // Leaving Today: keep its place, start the next surface at the top.
+      savedDocScrollY = window.scrollY;
+      window.scrollTo(0, 0);
+    } else {
+      const y = savedDocScrollY;
+      requestAnimationFrame(() => window.scrollTo(0, y));
+    }
+  });
+
+  // A shared-link visit stays prompt-free until the reader leaves the
+  // issue it landed on (R-1).
+  function leaveLanding() {
+    if (sharedLanding.get()) sharedLanding.set(false);
+  }
 
   function checkViewport() {
     const w = window.innerWidth;
@@ -420,6 +570,7 @@
   function syncShellModeClass() {
     const standalone = isStandaloneDisplay();
     document.body.classList.toggle('app-shell-standalone', standalone);
+    isStandalone = standalone;
     allowBrowserPullRefresh = !standalone;
   }
 
@@ -437,6 +588,10 @@
     // before the storage-availability probe used by StorageBlockedBanner.
     try { migrateReadingState(); } catch { /* storage unavailable; banner handles UI */ }
     document.body.classList.add('app-shell-root');
+    if (initialIssue || initialIssueId) sharedLanding.set(true);
+    try {
+      if (sessionStorage.getItem(TODAY_MODE_KEY) === 'latest') todayMode = 'latest';
+    } catch { /* storage blocked */ }
     syncShellModeClass();
     initInstallState();
     showInstall = canInstallCheck();
@@ -697,6 +852,7 @@
   }
 
   async function openIssueById(id: string, historyMode: HistoryMode = 'push') {
+    if (historyMode !== 'none') leaveLanding();
     const target = issues.find((item) => item.id === id) ?? null;
     if (target) {
       activeIssue = target;
@@ -710,16 +866,19 @@
   let readerOriginRect: DOMRect | null = $state(null);
 
   // Fact graph loaded flag — triggers re-render of connection dots on feed cards
-  let graphLoaded = $state(false);
+  let graphLoaded = $state(isFactGraphLoaded());
 
   function issueHasConnections(id: string): boolean {
     if (!graphLoaded) return false;
     return getConnectionCount(id) >= 2;
   }
 
-  // Connections for the active issue — derived from fact graph
+  // Connections for the active issue, from the fact graph. getConnections()
+  // reads a module cache Svelte cannot track, so read graphLoaded here: a
+  // deep-linked issue opens before the graph arrives and must recompute
+  // when it lands, or "Tracked in" stays at 0.
   let activeConnections = $derived.by(() => {
-    if (!activeIssue) return [];
+    if (!activeIssue || !graphLoaded) return [];
     return getConnections(activeIssue.id);
   });
 
@@ -745,6 +904,7 @@
 
   // Navigate to a connected issue from within a reader
   function navigateToIssue(issueId: string) {
+    leaveLanding();
     const target = issues.find(i => i.id === issueId);
     if (target) {
       activeIssue = null;
@@ -761,6 +921,8 @@
   }
 
   function openIssue(issue: FeedIssue, originRect?: DOMRect) {
+    leaveLanding();
+    closeSidebar();
     activeIssue = issue;
     readerOriginRect = originRect ?? null;
     restoredCardIndex = 0; // Clear resume position — only used once on return
@@ -769,6 +931,8 @@
   }
 
   function openIssueAtCard(issue: FeedIssue, cardIndex: number) {
+    leaveLanding();
+    closeSidebar();
     activeIssue = issue;
     readerOriginRect = null;
     restoredCardIndex = Math.max(0, Math.min(cardIndex, Math.max(issue.cards.length - 1, 0)));
@@ -778,6 +942,7 @@
   }
 
   function activateSurface(mode: SurfaceMode, historyMode: Exclude<HistoryMode, 'none'> = 'push', nextLibraryMode: LibraryMode = libraryMode) {
+    leaveLanding();
     searchQuery = '';
     searchActive = false;
     surfaceMode = mode;
@@ -811,6 +976,7 @@
   }
 
   function closeReader(historyMode: Exclude<HistoryMode, 'none'> = 'replace') {
+    leaveLanding();
     activeIssue = null;
     activeFullIssue = null;
     readerHistoryPushed = false;
@@ -820,6 +986,7 @@
 
   function openNextIssue() {
     if (!activeIssue) return;
+    leaveLanding();
     const sequence = sortedIssues.length > 0 ? sortedIssues : issues;
     const idx = sequence.findIndex(i => i.id === activeIssue!.id);
     if (idx >= 0 && idx < sequence.length - 1) {
@@ -860,11 +1027,16 @@
         if (viewMode !== 'mobile') {
           e.preventDefault();
           onSearchFocus();
-          const input = document.querySelector('[data-search-input]') as HTMLInputElement;
-          input?.focus();
+          // 768-1023 px: the search field lives in the sidebar drawer.
+          if (window.innerWidth < 1024) sidebarOpen = true;
+          requestAnimationFrame(() => {
+            const input = document.querySelector('[data-search-input]') as HTMLInputElement;
+            input?.focus();
+          });
           return;
         }
       }
+      if (e.key === 'Escape' && sidebarOpen) { closeSidebar(true); return; }
       if (e.key === 'Escape' && searchActive) { onSearchClear(); return; }
       if (viewMode !== 'desktop') return;
       if (e.key === 'Escape' && activeIssue) {
@@ -943,7 +1115,7 @@
 <StorageBlockedBanner />
 
   {#if viewMode === 'mobile'}
-  <div class="app-shell app-shell--mobile">
+  <div class="app-shell app-shell--mobile" class:app-shell--doc={docScroll} style={docScroll ? `--dock-space:${dockHeight}px;` : undefined}>
     <Header
       issues={issues.map(i => ({id: i.id, headline: i.headline}))}
       onHome={goToday}
@@ -953,14 +1125,17 @@
       {searchQuery}
       onSearchInput={(q) => { searchQuery = q; }}
       onSearchClear={onSearchClear}
+      collapseOnScroll={docScroll && !searchActive}
     />
     <main class="app-main">
       {#if !searchActive}
         {#if surfaceMode !== 'today' && !(surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0)}
-          <h1 class="sr-only">{pageHeading(surfaceMode, libraryMode)}</h1>
+          <svelte:element this={mobilePageHeadingLevel} class="sr-only">{pageHeading(surfaceMode, libraryMode)}</svelte:element>
         {/if}
-        <div class="mobile-secondary-bar" class:mobile-secondary-bar--library={surfaceMode === 'library'}>
-          {#if surfaceMode === 'library'}
+        {#if surfaceMode === 'library'}
+          <!-- Only Library has a secondary bar; on Today an empty bordered
+               strip used to sit under the header (H-7). -->
+          <div class="mobile-secondary-bar mobile-secondary-bar--library">
             <LibraryTabs
               libraryMode={libraryMode}
               {readingCount}
@@ -972,21 +1147,19 @@
               onOpenHighlights={openHighlightsLibrary}
               onOpenArchive={openArchiveLibrary}
             />
-          {/if}
-        </div>
+          </div>
+        {/if}
       {/if}
     {#if isSearching}
       <div class="sr-only" role="status" aria-live="polite">{searchStatusMessage}</div>
     {/if}
     {#if surfaceMode === 'today' && !isSearching}
-      <div
-        id="mobile-today-panel"
-        class="mobile-today-panel"
-        role="tabpanel"
-        aria-labelledby={`mobile-today-sort-${feedSort}`}
-        tabindex="0"
-      >
-        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} allowPullRefresh={allowBrowserPullRefresh} onPullRefresh={refreshApp} />
+      <div class="mobile-today-panel">
+        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="mobile" headingLevel={mobilePageHeadingLevel} showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
+      </div>
+    {:else if isSearching && sortedIssues.length === 0}
+      <div class="mobile-search-empty">
+        <SearchEmpty query={searchQuery} topics={searchTopics} onClear={onSearchClear} onBrowseAll={browseAllFromSearch} />
       </div>
     {:else if !isSearching && surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0}
       <div
@@ -1000,6 +1173,7 @@
           issues={sortedIssues}
           reactionMap={appReactionMap}
           onOpenHighlight={openIssueAtCard}
+          headingLevel={mobilePageHeadingLevel}
         />
       </div>
     {:else if !isSearching && surfaceMode === 'library' && sortedIssues.length === 0}
@@ -1026,129 +1200,21 @@
     {/if}
     </main>
     {#if !searchActive && !activeFullIssue}
-      <MobileDock surfaceMode={surfaceMode} {libraryCount} onGoToday={goToday} onOpenLibrary={() => openLibrary()} {syncLinked} onSyncTap={() => { angleCodeOpen = true; }} {showInstall} {installIsIOS} onInstallTap={triggerInstall} onInstallDismiss={dismissInstall} />
+      <MobileDock
+        surfaceMode={surfaceMode}
+        {libraryCount}
+        onGoToday={goToday}
+        onOpenLibrary={() => openLibrary()}
+        prompt={dockPrompt}
+        {installIsIOS}
+        onSyncTap={openSyncPanel}
+        onSyncDismiss={dismissSyncPrompt}
+        onInstallTap={acceptInstallPrompt}
+        onInstallDismiss={dismissInstallPrompt}
+        floating={docScroll}
+        bind:height={dockHeight}
+      />
     {/if}
-  </div>
-
-  {#if activeFullIssue}
-    <InsightReader issue={activeFullIssue} onClose={closeReader} onReturnHome={goToday} onNext={isLastIssue ? undefined : openNextIssue} onNavigateToIssue={navigateToIssue} initialCardIndex={restoredCardIndex} originRect={readerOriginRect ?? undefined} connections={resolvedConnections} nextIssueHeadline={nextHeadline} animateEntry={!readerIsLanding} />
-  {/if}
-
-{:else if viewMode === 'tablet'}
-  <div class="app-shell app-shell--tablet">
-    <Header issues={issues.map(i => ({id: i.id, headline: i.headline}))} onHome={goToday} homeActive={surfaceMode === 'today' && !activeIssue} />
-    <main class="app-main app-main--tablet">
-    <div class="tablet-shell">
-      {#if surfaceMode !== 'today' && !(surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0)}
-        <h1 class="sr-only">{pageHeading(surfaceMode, libraryMode)}</h1>
-      {/if}
-      <div style="margin:12px 0 16px;">
-        <form role="search" aria-label="Search issues" onsubmit={(event) => event.preventDefault()}>
-          <label class="sr-only" for="tablet-search">Search issues</label>
-          <input
-            id="tablet-search"
-            data-search-input
-            type="text"
-            placeholder="Search issues..."
-            aria-label="Search issues"
-            value={searchQuery}
-            oninput={(e) => { searchQuery = (e.currentTarget as HTMLInputElement).value; }}
-            onfocus={onSearchFocus}
-            style="width:100%;min-height:44px;box-sizing:border-box;padding:10px 16px;font-size: var(--text-body);border:1px solid var(--border-subtle);border-radius: var(--radius-lg);background:var(--bg-sunken);color:var(--text-primary);outline:none;"
-          />
-        </form>
-      </div>
-      {#if !isSearching}
-        <div style="margin-bottom:14px;">
-          <SurfaceNav surfaceMode={surfaceMode} {libraryCount} onGoToday={goToday} onOpenLibrary={() => openLibrary()} />
-        </div>
-      {/if}
-      {#if isSearching}
-        <div role="status" aria-live="polite" style="font-size: var(--text-sm);color:var(--text-tertiary);margin-bottom:12px;">
-          {searchResultCount} result{searchResultCount !== 1 ? 's' : ''}{searchQuery.trim() ? ` for "${searchQuery.trim()}"` : ''}
-        </div>
-      {:else if surfaceMode === 'library'}
-        <div style="margin-bottom:12px;">
-          <LibraryTabs
-            libraryMode={libraryMode}
-            {readingCount}
-            {highlightCount}
-            archiveCount={issues.length}
-            panelId="tablet-library-panel"
-            idPrefix="tablet-library"
-            onOpenReading={() => openLibrary('reading', 'replace')}
-            onOpenHighlights={() => openLibrary('highlights', 'replace')}
-            onOpenArchive={() => openLibrary('archive', 'replace')}
-          />
-        </div>
-      {/if}
-      {#if surfaceMode === 'today' && !isSearching}
-        <div id="tablet-today-panel" role="tabpanel" aria-labelledby={`tablet-today-sort-${feedSort}`} tabindex="0">
-          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} allowPullRefresh={allowBrowserPullRefresh} onPullRefresh={refreshApp} />
-        </div>
-      {:else if !isSearching && surfaceMode === 'library' && libraryMode === 'highlights' && sortedIssues.length > 0}
-        <div id="tablet-library-panel" role="tabpanel" aria-labelledby="tablet-library-highlights" tabindex="0">
-          <HighlightsPanel
-            issues={sortedIssues}
-            reactionMap={appReactionMap}
-            onOpenHighlight={openIssueAtCard}
-          />
-        </div>
-      {:else if !isSearching && surfaceMode === 'library' && sortedIssues.length === 0}
-        <section style="display:flex;align-items:center;justify-content:center;min-height:360px;padding:28px 20px;background:linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg) 24%);border-radius: var(--radius-xl);">
-          <div style="max-width:420px;text-align:center;">
-            <div style="font-size: var(--text-xs);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-tertiary);">Library · {libraryLabel(libraryMode)}</div>
-            <p style="margin:12px 0 0;font-family:var(--font-display);font-size: var(--text-title-lg);line-height:1.04;letter-spacing:-0.04em;color:var(--text-primary);">{libraryEmptyTitle(libraryMode)}</p>
-            <p style="font-size: var(--text-body);line-height:1.65;color:var(--text-secondary);margin:16px 0 0;">{libraryEmptyCopy(libraryMode)}</p>
-            <button onclick={goToday} style="margin-top:18px;padding:0 18px;min-height:44px;border-radius: var(--radius-pill);border:1px solid var(--border-divider);background:var(--bg-elevated);color:var(--text-primary);font:inherit;font-size: var(--text-ui);font-weight:700;cursor:pointer;">Return to Today</button>
-          </div>
-        </section>
-      {:else if isSearching}
-        <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;">
-          {#each sortedIssues as issue, i}
-            <DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasReaction={hasReaction(issue.id)} hasConnections={issueHasConnections(issue.id)} />
-          {/each}
-        </div>
-      {:else if surfaceMode === 'library'}
-        <div id="tablet-library-panel" role="tabpanel" aria-labelledby={`tablet-library-${libraryMode}`} tabindex="0">
-          {#if libraryMode !== 'highlights'}
-            <div style="display:flex;align-items:center;justify-content:flex-end;padding:0 0 12px;">
-              <button onclick={() => { feedSort = feedSort === 'latest' ? 'shift' : 'latest'; }} style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border:1px solid var(--border-subtle);border-radius:var(--radius-pill);background:var(--bg-elevated);color:var(--text-secondary);font:inherit;font-size:var(--text-xs);font-weight:700;cursor:pointer;transition:color 180ms ease,border-color 180ms ease;" aria-label="Sort issues: currently {feedSort === 'latest' ? 'Latest' : 'Biggest Shift'}">
-                {feedSort === 'latest' ? 'Latest' : 'Biggest Shift'}
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-            </div>
-          {/if}
-          {#each feedSections as section}
-            <div style="margin-bottom:32px;" data-section={section.kind}>
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-                <span style="font-size: var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:{section.kind === 'continue' ? 'var(--score-warning)' : section.kind === 'new' ? 'var(--status-green)' : section.kind === 'completed' ? 'var(--text-muted)' : 'var(--text-tertiary)'};">{section.label}</span>
-                <span style="font-size: var(--text-micro);color:var(--text-faint);" data-section-count>{section.count}</span>
-              </div>
-              {#if section.count === 0}
-                <p style="font-size:var(--text-sm);color:var(--text-muted);margin:0;padding:12px 0;font-style:italic;">Nothing here yet.</p>
-              {:else}
-                <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;">
-                  {#each section.issues as issue, i}
-                    <DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasReaction={hasReaction(issue.id)} hasConnections={issueHasConnections(issue.id)} />
-                  {/each}
-                </div>
-              {/if}
-            </div>
-          {/each}
-        </div>
-      {:else}
-        <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;">
-          {#each sortedIssues as issue, i}
-            <DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasReaction={hasReaction(issue.id)} hasConnections={issueHasConnections(issue.id)} />
-          {/each}
-        </div>
-      {/if}
-      {#if isSearching && searchResultCount === 0}
-        <div style="text-align:center;padding:40px 20px;color:var(--text-muted);font-size: var(--text-body);">No issues match "{searchQuery.trim()}"</div>
-      {/if}
-    </div>
-    </main>
   </div>
 
   {#if activeFullIssue}
@@ -1158,7 +1224,7 @@
 {:else}
   {@const cinemaActive = !!activeFullIssue && viewportWidth >= 1920 && !cinemaDismissed}
   {@const cinemaCollapsed = cinemaActive && !cinemaPeek}
-  <div class="app-shell app-shell--desktop" class:cinema={cinemaActive} class:cinema-collapsed={cinemaCollapsed}>
+  <div class="app-shell app-shell--desktop" class:app-shell--doc={docScroll} class:cinema={cinemaActive} class:cinema-collapsed={cinemaCollapsed} class:sidebar-open={sidebarOpen} style={`--app-header-height:${desktopHeaderHeight || 64}px;`}>
     {#if cinemaActive && activeFullIssue}
       <div
         class="cinema-stage"
@@ -1178,9 +1244,14 @@
         onclick={dismissCinema}
       >Exit focus</button>
     {/if}
-    <div style="flex-shrink:0;border-bottom:1px solid var(--bg-sunken);position:relative;z-index:2;">
-      <Header issues={issues.map(i => ({id: i.id, headline: i.headline}))} onHome={goToday} homeActive={surfaceMode === 'today' && !activeIssue} />
+    <div class="desktop-header-wrap" bind:offsetHeight={desktopHeaderHeight}>
+      <Header issues={issues.map(i => ({id: i.id, headline: i.headline}))} onHome={goToday} homeActive={surfaceMode === 'today' && !activeIssue} onBrowseToggle={toggleSidebar} browseOpen={sidebarOpen} />
     </div>
+    {#if sidebarOpen}
+      <!-- Tablet drawer backdrop; hidden by CSS from 1024 px, where the sidebar is always shown. -->
+      <!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (Escape closes it from the keyboard) -->
+      <div class="sidebar-backdrop" aria-hidden="true" onclick={() => closeSidebar(true)}></div>
+    {/if}
 
     <div
       class="app-main app-main--desktop"
@@ -1188,7 +1259,7 @@
     >
       <!-- Sidebar first in the DOM: it is on the left, so keyboard and
            screen-reader order now match what is on screen. -->
-      <aside style="display:flex;flex-direction:column;flex-shrink:0;" aria-label="Sidebar">
+      <aside id="app-sidebar" class="app-sidebar" bind:this={sidebarEl} tabindex="-1" style="display:flex;flex-direction:column;flex-shrink:0;" aria-label="Sidebar">
       <DesktopFeed
         issues={sortedIssues}
         sections={feedSections}
@@ -1207,6 +1278,7 @@
         onOpenHighlights={openHighlightsLibrary}
         onOpenArchive={() => openLibrary('archive', 'replace')}
         onSelectIssue={(issue) => {
+          closeSidebar();
           if (surfaceMode === 'library' && libraryMode === 'highlights') {
             openIssueAtCard(issue, appReactionMap[issue.id]?.[0] ?? 0);
             return;
@@ -1222,9 +1294,9 @@
         onSortChange={(mode) => { feedSort = mode; }}
         {archiveFilter}
         onArchiveFilter={(kind) => { archiveFilter = kind; }}
-        {showSyncBanner}
-        onSyncBannerTap={() => { angleCodeOpen = true; }}
-        onSyncBannerDismiss={dismissSyncBanner}
+        showSyncBanner={activePrompt === 'sync'}
+        onSyncBannerTap={openSyncPanel}
+        onSyncBannerDismiss={dismissSyncPrompt}
       />
       </aside>
 
@@ -1327,10 +1399,10 @@
           </div>
         {:else if isSearching}
           <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:32px;">
-            <p style="font-size: var(--text-body);color:var(--text-muted);">No issues match "{searchQuery.trim()}"</p>
+            <SearchEmpty query={searchQuery} topics={searchTopics} onClear={onSearchClear} onBrowseAll={browseAllFromSearch} />
           </div>
         {:else}
-          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
+          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="desktop" showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
         {/if}
       </main>
     </div>
@@ -1369,6 +1441,52 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+  }
+
+  /* Today: the document scrolls (X-8). The shell grows with its content;
+     overflow must stay visible so the sticky header and sidebar stick to
+     the viewport. */
+  .app-shell.app-shell--doc {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  .app-shell--doc .app-main {
+    flex: 1 0 auto;
+    overflow: visible;
+  }
+
+  /* Keep the last line clear of the fixed dock. */
+  .app-shell--mobile.app-shell--doc .app-main {
+    padding-bottom: var(--dock-space, 88px);
+  }
+
+  .desktop-header-wrap {
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--bg-sunken);
+    position: relative;
+    z-index: 30;
+  }
+
+  .app-shell--doc .desktop-header-wrap {
+    position: sticky;
+    top: 0;
+  }
+
+  /* With the document scrolling, the sidebar sticks under the header and
+     keeps its own scroll. */
+  .app-shell--doc .app-main--desktop :global(aside.app-sidebar) {
+    position: sticky;
+    top: var(--app-header-height, 64px);
+    height: calc(100vh - var(--app-header-height, 64px));
+    height: calc(100dvh - var(--app-header-height, 64px));
+    align-self: flex-start;
+  }
+
+  .app-sidebar:focus {
+    outline: none;
   }
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1524,53 +1642,13 @@
     overflow: hidden;
   }
 
+  /* Capped canvas (H-8): one width from 1440 px up, so wide screens get
+     margins instead of 180-character lines. */
   .app-main--desktop {
     flex-direction: row;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     width: 100%;
-  }
-
-  @media (min-width: 1600px) {
-    .app-main--desktop {
-      max-width: 1720px;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    .app-main--desktop {
-      max-width: 1920px;
-    }
-  }
-
-  @media (min-width: 2560px) {
-    .app-main--desktop {
-      max-width: 2400px;
-    }
-  }
-
-  @media (min-width: 3440px) {
-    .app-main--desktop {
-      max-width: 3200px;
-    }
-  }
-
-  @media (min-width: 3840px) {
-    .app-main--desktop {
-      max-width: 3600px;
-    }
-  }
-
-  @media (min-width: 5120px) {
-    .app-main--desktop {
-      max-width: 4200px;
-    }
-  }
-
-  @media (min-width: 7680px) {
-    .app-main--desktop {
-      max-width: 5400px;
-    }
   }
 
   .desktop-main-panel {
@@ -1581,40 +1659,45 @@
     flex-direction: column;
   }
 
-  .app-shell--tablet {
-    height: 100vh;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  .app-main--tablet {
-    display: block;
-    overflow-y: auto;
-  }
-
-
-  .tablet-shell {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px 40px;
-  }
-
-  /* Compact sidebar for 768-1023px (tablet portrait) */
+  /* Tablet (768-1023 px): the sidebar is a drawer behind the header's
+     Browse toggle, so the reading column gets the full width. */
   @media (min-width: 768px) and (max-width: 1023px) {
-    .app-main--desktop :global(aside[aria-label]) {
-      width: 240px !important;
+    .app-main--desktop :global(aside.app-sidebar) {
+      position: fixed !important;
+      top: 0 !important;
+      bottom: 0;
+      left: 0;
+      z-index: 60;
+      width: min(360px, 88vw) !important;
+      height: 100% !important;
+      background: var(--bg-elevated);
+      box-shadow: 0 24px 64px rgba(15, 15, 35, 0.22);
+      transform: translateX(-104%);
+      visibility: hidden;
+      transition: transform 240ms var(--ease-out-cubic, ease-out), visibility 0s linear 240ms;
     }
 
-    /* Hide excerpts in compact sidebar */
-    .app-main--desktop :global(.feed-row p) {
+    .sidebar-open .app-main--desktop :global(aside.app-sidebar) {
+      transform: none;
+      visibility: visible;
+      transition: transform 240ms var(--ease-out-cubic, ease-out);
+    }
+
+    .app-main--desktop :global(aside.desktop-sidebar) {
+      width: 100% !important;
+    }
+
+    .sidebar-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 55;
+      background: rgba(15, 15, 35, 0.48);
+    }
+  }
+
+  @media (max-width: 767px), (min-width: 1024px) {
+    .sidebar-backdrop {
       display: none;
-    }
-
-    /* Tighten feed row padding in compact sidebar */
-    .app-main--desktop :global(.feed-row) {
-      padding: 8px 12px;
     }
   }
 
@@ -1643,10 +1726,15 @@
   }
 
   .mobile-today-panel {
-    flex: 1;
-    min-height: 0;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .mobile-search-empty {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -1698,8 +1786,29 @@
     to { transform: translateY(0); }
   }
 
+  /* Short landscape (844x390): an opaque backdrop and the full height, so
+     the page underneath does not show through a thin sheet. */
+  @media (orientation: landscape) and (max-height: 500px) {
+    .angle-overlay {
+      background: var(--bg);
+      align-items: stretch;
+    }
+
+    .angle-sheet {
+      max-width: none;
+      max-height: none;
+      height: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .angle-sheet-handle {
+      display: none;
+    }
+  }
+
   /* Desktop: center the sheet instead of bottom-anchoring */
-  @media (min-width: 769px) {
+  @media (min-width: 769px) and (min-height: 501px) {
     .angle-overlay {
       align-items: center;
     }

@@ -19,15 +19,33 @@
  */
 
 import type { Dossier } from './dossier-types';
+import { readMinutes } from '../lib/read-time';
 
 // Eager glob — these are JSON files, small, embedded at build.
 const modules = import.meta.glob<{ default: Dossier }>('./dossiers/*.json', {
   eager: true,
 });
 
+/**
+ * Reading time comes from the word count at ~230 wpm (audit T-9), not the
+ * hand-entered estReadMinutes, which had drifted to about 120 wpm
+ * ("Est. 16 min" for 1,900 words). The cover section shows the same figure.
+ */
+function withComputedReadTime(d: Dossier): Dossier {
+  const minutes = readMinutes(d.wordCount);
+  return {
+    ...d,
+    estReadMinutes: minutes,
+    sections: d.sections.map((section) =>
+      section.t === 'cover' ? { ...section, estReadMinutes: minutes } : section
+    ),
+  };
+}
+
 const ALL: Dossier[] = Object.values(modules)
   .map((m) => m.default)
-  .filter((d): d is Dossier => Boolean(d && d.id && d.format === 'dossier'));
+  .filter((d): d is Dossier => Boolean(d && d.id && d.format === 'dossier'))
+  .map(withComputedReadTime);
 
 // Newest first by sourceDate. Stable tiebreak on id descending.
 ALL.sort((a, b) => {

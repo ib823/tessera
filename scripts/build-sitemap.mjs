@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { primaryLens, topicSlug } from './lib/topics.mjs';
 
 const siteUrl = 'https://thefourthangle.pages.dev';
 const feedPath = join(process.cwd(), 'public', 'issues-feed.json');
@@ -14,6 +15,15 @@ const staticRoutes = [
   // Cloudflare Pages serves verify.html at /verify (robots.txt disallows the .html form).
   { loc: '/verify', lastmod: null, priority: '0.4' },
 ];
+
+// Trust and policy pages: privacy notice (English, and Malay at /privasi),
+// corrections policy and contact. src/pages/{privacy,privasi,corrections,contact}.astro.
+staticRoutes.push(
+  { loc: '/privacy', lastmod: null, priority: '0.4' },
+  { loc: '/privasi', lastmod: null, priority: '0.4' },
+  { loc: '/corrections', lastmod: null, priority: '0.4' },
+  { loc: '/contact', lastmod: null, priority: '0.4' },
+);
 
 // Same publish rule as getAllDossiers() in src/data/dossiers.ts, which
 // drives getStaticPaths for /dossier/[id].
@@ -35,7 +45,13 @@ const issueRoutes = issues.map((issue) => ({
 const newestIssue = issueRoutes.reduce((max, r) => (r.lastmod && (!max || Date.parse(r.lastmod) > Date.parse(max)) ? r.lastmod : max), null);
 staticRoutes[0].lastmod = newestIssue;
 
-const routes = [...staticRoutes, ...dossierRoutes, ...issueRoutes];
+// One route per topic (an issue's primary lens), matching the pages built by
+// src/pages/topic/[slug].astro and the chips on Today.
+const topicRoutes = [...new Set(issues.map((issue) => primaryLens(issue.cards)).filter(Boolean).map(topicSlug))]
+  .sort()
+  .map((slug) => ({ loc: `/topic/${slug}`, priority: '0.6' }));
+
+const routes = [...staticRoutes, ...dossierRoutes, ...topicRoutes, ...issueRoutes];
 const urls = routes
   .map(({ loc, lastmod, priority }) => {
     const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : '';
@@ -46,4 +62,4 @@ const urls = routes
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 
 writeFileSync(sitemapPath, xml, 'utf8');
-console.log(`Sitemap written: ${sitemapPath} (${routes.length} URLs: ${staticRoutes.length} static, ${dossierRoutes.length} dossiers, ${issueRoutes.length} issues)`);
+console.log(`Sitemap written: ${sitemapPath} (${routes.length} URLs: ${staticRoutes.length} static, ${dossierRoutes.length} dossiers, ${topicRoutes.length} topics, ${issueRoutes.length} issues)`);

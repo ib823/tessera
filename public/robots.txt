@@ -4,13 +4,15 @@ Allow: /about
 Allow: /disclaimer
 Allow: /issue/
 Disallow: /issues-feed.json
-Disallow: /issues/
+# Per-issue JSON is what the reader loads; renderers need it to match the
+# server-rendered page. It is still kept out of the index (X-Robots-Tag:
+# noindex in _headers).
+Allow: /issues/*.json
 Disallow: /fact-graph.json
 Disallow: /search-index.json
 Disallow: /signatures.json
 Disallow: /pubkey.pem
 Disallow: /verify.html
-Disallow: /radar-summary.json
 
 # AI training crawlers
 User-agent: GPTBot

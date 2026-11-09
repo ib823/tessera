@@ -14,13 +14,16 @@
  *  • JSON-LD ScholarlyArticle schema with citeAs as `citation`
  *
  * Privacy posture:
- *  • Fonts self-hosted from /fonts/ — no Google Fonts CDN.
+ *  • No webfonts beyond the site's own; no Google Fonts CDN (see
+ *    src/styles/dossier.css on the Spectral/Inter faces).
  *  • No analytics, no trackers, no third-party scripts.
  *  • Only inline JSON-LD (which is data, not a tracker).
  */
 
 import type { GetStaticPaths } from 'astro';
 import DossierReader from '../../components/DossierReader.svelte';
+import DossierSiteNav from '../../components/DossierSiteNav.astro';
+import DossierSiteFooter from '../../components/DossierSiteFooter.astro';
 import { getAllDossiers, getDossierById } from '../../data/dossiers';
 import '../../styles/dossier.css';
 
@@ -149,27 +152,13 @@ const jsonLd = {
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:image:alt" content={`Dossier ${dossier.id} cover`} />
 
-    <!-- Self-hosted font preload (only the two faces above the fold) -->
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/fonts/spectral-300-italic.woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/fonts/inter-500.woff2"
-      crossorigin
-    />
-
     <!-- Structured data -->
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
   </head>
 
   <body>
+    <DossierSiteNav />
     <DossierReader dossier={dossier} client:load />
+    <DossierSiteFooter />
   </body>
 </html>

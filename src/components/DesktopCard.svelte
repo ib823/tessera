@@ -1,8 +1,9 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import IssueImage from './IssueImage.svelte';
+  import { absoluteDate, relativeDate } from '../lib/relative-date';
   import { opinionLabel } from '../data/issue-types';
-  import { formatIssueDate, updatedSinceRead } from '../lib/issue-meta';
+  import { formatIssueDate, publishedDay, updatedSinceRead } from '../lib/issue-meta';
 
   import type { IssueSummary } from '../lib/issues-loader';
   import type { ReadState } from '../stores/reader';
@@ -100,6 +101,9 @@
       <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size:var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;letter-spacing:0.02em;">Pre-pipeline</span>
     {/if}
     <div style="flex:1;"></div>
+    {#if relativeDate(publishedDay(issue))}
+      <time datetime={publishedDay(issue)} title={absoluteDate(publishedDay(issue))} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);white-space:nowrap;">{relativeDate(publishedDay(issue))}</time>
+    {/if}
   </div>
 
   <!-- Issue art -->

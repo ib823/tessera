@@ -196,7 +196,7 @@
 
     <div class="privacy-note">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-      No account. No personal data. 90-day auto-delete.
+      <span>No account. Deleted 90 days after your last sync. <a class="privacy-link" href="/privacy#sync">Privacy notice</a></span>
     </div>
 
     <button
@@ -260,7 +260,7 @@
 
     <div class="privacy-note">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-      No account needed. No personal data collected.
+      <span>No account needed. <a class="privacy-link" href="/privacy#sync">What sync stores</a></span>
     </div>
   {/if}
 </div>
@@ -483,6 +483,12 @@
     font-size: var(--text-xs);
     color: var(--text-muted);
     margin-top: 4px;
+  }
+
+  .privacy-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .clear-btn {

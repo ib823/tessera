@@ -94,13 +94,16 @@
   --font-display: 'Manrope', system-ui, sans-serif;
   --font-body: 'Nunito Sans', system-ui, sans-serif;
 
-  /* Type scale (rem-based for accessibility — respects user font-size preferences) */
-  --text-micro: 0.625rem;
-  --text-xs: 0.6875rem;
+  /* Type scale (rem-based for accessibility — respects user font-size preferences).
+     Floors (audit X-7): no UI text below 12px, body text at 16px. micro and
+     xs were 10px and 11px; body was 14px. The names stay so every component
+     picks up the floor without a rename. */
+  --text-micro: 0.75rem;
+  --text-xs: 0.75rem;
   --text-sm: 0.75rem;
   --text-ui: 0.8125rem;
-  --text-body: 0.875rem;
-  --text-body-lg: 1rem;
+  --text-body: 1rem;
+  --text-body-lg: 1.0625rem;
   --text-reading: 1.0625rem;
   --text-reading-lg: 1.125rem;
   --text-subtitle: 1.375rem;
