@@ -1007,8 +1007,12 @@
         if (viewMode !== 'mobile') {
           e.preventDefault();
           onSearchFocus();
-          const input = document.querySelector('[data-search-input]') as HTMLInputElement;
-          input?.focus();
+          // 768-1023 px: the search field lives in the sidebar drawer.
+          if (window.innerWidth < 1024) sidebarOpen = true;
+          requestAnimationFrame(() => {
+            const input = document.querySelector('[data-search-input]') as HTMLInputElement;
+            input?.focus();
+          });
           return;
         }
       }
