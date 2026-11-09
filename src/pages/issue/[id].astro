@@ -140,7 +140,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
   */}
   <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" as="image" type="image/avif" imagesrcset={heroAvifSrcset} imagesizes={heroSizes} fetchpriority="high" />
+  {!withdrawn && <link rel="preload" as="image" type="image/avif" imagesrcset={heroAvifSrcset} imagesizes={heroSizes} fetchpriority="high" />}
   <script is:inline>
     (function () {
       try {
@@ -188,7 +188,8 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
       )}
     </header>
 
-    <figure class="ssg-article__hero">
+    {/* Hero images are generated for published issues only; a withdrawn page has none. */}
+    {!withdrawn && <figure class="ssg-article__hero">
       {/*
         <picture> with AVIF → WebP → JPEG (Phase 8b, ADR-0002 split).
         The hero is the LCP element — eager + fetchpriority=high + sync decode
@@ -218,7 +219,7 @@ const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) =>
           decoding="sync"
         />
       </picture>
-    </figure>
+    </figure>}
 
     <aside class="ssg-article__score" aria-label="Opinion Shift score">
       <p class="ssg-article__score-label">Opinion Shift</p>

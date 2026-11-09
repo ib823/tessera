@@ -23,6 +23,8 @@ test.describe('Withdrawn issues', () => {
       expect(html).toContain('data-issue-withdrawn');
       expect(html).toContain('data-issue-changes');
       expect(html).not.toContain('application/ld+json');
+      // Hero images exist for published issues only, so the page carries none.
+      expect(html).not.toContain(`/og/issue-${issue.id}-`);
       const h1 = /<h1 id="ssg-headline"[^>]*>([^<]*)</.exec(html)?.[1] ?? '';
       expect(h1.replace(/&#39;/g, "'").replace(/&amp;/g, '&')).toBe(issue.headline);
     }
