@@ -267,6 +267,10 @@ The hook card should plant the gap (a number nobody knows), the three fact cards
 38. Malay Mail, "Malaysia Cabinet reshuffle: Full list of all 28 ministers and deputies", 16 Dec 2025, https://www.malaymail.com/news/malaysia/2025/12/16/malaysia-cabinet-reshuffle-full-list-of-all-28-ministers-and-deputies/202141
 39. Malay Mail, "Generational reset: Anwar says Cabinet reshuffle gives younger leaders their turn", 18 Dec 2025, https://www.malaymail.com/news/malaysia/2025/12/18/generational-reset-anwar-says-cabinet-reshuffle-gives-younger-leaders-their-turn/202318
 40. BERNAMA, "Cabinet Reshuffle: Six Deputies, One New Face Appointed As Full Ministers", 16 Dec 2025, https://www.bernama.com/en/news.php?id=2503345
+41. MalaysiaNow, "DAP veteran Kit Siang retires from politics", 20 Mar 2022, https://www.malaysianow.com/news/2022/03/20/dap-veteran-kit-siang-retires-from-politics/
+42. The Star, "Abdul Hadi returns unopposed as PAS president, Tuan Ibrahim retains deputy post", 4 Sep 2025, https://www.thestar.com.my/news/nation/2025/09/04/abdul-hadi-returns-unopposed-as-pas-president-tuan-ibrahim-retains-deputy-post
+43. Malay Mail, "Physician turned politician Dr Mohammed Taufiq Johari takes charge of Youth and Sports portfolio", 16 Dec 2025, https://www.malaymail.com/news/malaysia/2025/12/16/physician-turned-politician-dr-mohammed-taufiq-johari-takes-charge-of-youth-and-sports-portfolio/202159
+44. PBS NewsHour, "Macron picks EU Brexit negotiator as France's new prime minister", 5 Sep 2024, https://www.pbs.org/newshour/world/macron-picks-eu-brexit-negotiator-as-frances-new-prime-minister
 
 ## CONTRADICTIONS
 

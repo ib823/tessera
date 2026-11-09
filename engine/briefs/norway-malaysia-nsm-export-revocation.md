@@ -221,6 +221,7 @@ Secondary: **Economic** (~RM550m sunk, RM11bn programme exposure, opportunity co
 **Speculative analysis (cited as such, not endorsed)**
 50. Murray Hunter (The Vibes opinion) — "Norway harshly cancels NSM missile supply contract to Malaysia" — https://www.thevibes.com/articles/opinion/122697/norway-harshly-cancels-nsm-missile-supply-contract-to-malaysia (note: author is subject to Thai criminal defamation charges filed at Malaysia's request — CPJ, Nov 2025 — which the reader should weigh)
 51. Lam Choong Wah (Malaysiakini) — "Norwegian missile ban sends two signals to M'sia — analyst" — https://www.malaysiakini.com/news/774892
+52. Prime Minister of Australia (pm.gov.au), "Australia recognises the state of Palestine (joint statement, Prime Minister and Minister for Foreign Affairs)", 21 September 2025, https://www.pm.gov.au/media/australia-recognises-state-palestine [PRIMARY]
 
 ## SOURCE SPECTRUM CHECK
 

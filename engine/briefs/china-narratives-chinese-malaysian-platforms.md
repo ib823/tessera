@@ -157,6 +157,8 @@ The **reframe card** (if pursued) should rotate the frame from "who is propagand
 21. Carnegie Endowment, "Tilting Toward Beijing? Malaysia's Relations with China after Li Qiang's Visit", Aug 2024. https://carnegieendowment.org/research/2024/08/tilting-toward-beijing-malaysias-relations-with-china-after-li-qiangs-visit
 22. China Digital Times reprint of Sinopsis, Sep 2024. https://chinadigitaltimes.net/2024/09/sinopsis-how-pro-russian-narratives-spread-in-malaysian-chinese-language-facebook-circles/
 23. Wikipedia entry on Media Chinese International — for ownership structure cross-check only; not citable as primary.
+24. Oriental Daily News, "大马各族对中国好感不一　欧阳玉靖：马中关系整体趋向前发展 (Views of China vary among Malaysia's ethnic groups)", 25 May 2022, https://www.orientaldaily.com.my/news/nation/2022/05/25/488529
+25. Laws of Malaysia, "Online Safety Act 2025 (Act 866), section 2(2)", Royal Assent 6 May 2025; published in the Gazette 22 May 2025, https://www.wccpenang.org/wp-content/uploads/2025/07/Online-Safety-Act-2025.pdf [PRIMARY]
 
 **Related published T4A issues (for Sherlock connection scan if this proceeds):**
 - 1823 — South China Sea Chinese Vessel Incursions Rise 45 Percent

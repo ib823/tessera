@@ -72,3 +72,5 @@ Governance, Legal, Political
 13. Transparency International Malaysia — CPI 2025 report
 14. Published issue 1208 — Corruption costs Malaysia RM47B annually
 15. Published issue 1120 — Governance score dropped 8 points
+16. Commissioner of Law Revision, Malaysia, "Malaysian Anti-Corruption Commission Act 2009 (Act 694), Laws of Malaysia Reprint, as at 1 January 2022", 2022, https://anticor.world/assets/brics/Akta_694_(1.1.2022)_B1.pdf [PRIMARY]
+17. Free Malaysia Today, "RM277bil lost to corruption in 5 years, says MACC chief", 7 May 2024, https://www.freemalaysiatoday.com/category/nation/2024/05/07/malaysia-lost-rm277bil-to-corruption-in-5-years
