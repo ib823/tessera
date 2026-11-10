@@ -216,15 +216,19 @@ node scripts/publish-pipeline.mjs set-phase {slug} 7a_sherlock '{"related": ["01
 node scripts/publish-pipeline.mjs image-prompt <ID>
 ```
 
-This prints the per-issue prompt composed from the T4A master style
-(`#0f0f23` navy background, single symbolic object, amber/steel-blue/earth
-palette, 1.91:1 aspect).
+This prints the canonical T4A image template from CLAUDE.md ("PHASE 7:
+SHERLOCK + IMAGE", "Image Prompt") with the issue's header and save path
+filled in: a single continuous white line (`#FFFFFF`) on `#0f0f23` navy,
+ending in a cursive "T4A" signature bottom right, negative space on the
+right, 1.91:1. The wording is fixed. Claude fills only the
+`[INSERT YOUR SUBJECT DESCRIPTION HERE]` placeholder, following the subject
+rules listed under the template in CLAUDE.md.
 
 Claude presents the prompt to the user. User renders it in their image tool
 and drops the result at:
 
 ```
-public/og/backgrounds/issue-{ID}-bg.png    (or .jpg)
+public/og/backgrounds/issue-{ID}-bg.png
 ```
 
 When the file lands, mark:
