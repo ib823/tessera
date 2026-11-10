@@ -25,7 +25,7 @@
     onBrowseToggle?: () => void;
     browseOpen?: boolean;
   }
-  let { surfaceMode = 'today', todayMode = 'top', libraryCount = 0, onGoLatest, onOpenLibrary, issues = [], onSearchToggle, searchMode = false, searchQuery = '', onSearchInput, onSearchClear, onHome, homeActive = false, collapseOnScroll = false, onBrowseToggle, browseOpen = false }: Props = $props();
+  let { surfaceMode = 'today', todayMode = 'top', libraryCount = 0, onGoLatest, onOpenLibrary, onSearchToggle, searchMode = false, searchQuery = '', onSearchInput, onSearchClear, onHome, homeActive = false, collapseOnScroll = false, onBrowseToggle, browseOpen = false }: Props = $props();
 
   // Collapse on scroll: a 56px header is 7% of a 844px phone screen.
   let collapsed = $state(false);
@@ -57,7 +57,6 @@
   });
 
   let readCount = $state(0);
-  let readMap: Record<string, string> = $state({});
   let searchInputEl: HTMLInputElement | undefined = $state(undefined);
 
   $effect(() => {
@@ -67,19 +66,8 @@
     }
   });
 
-  function segmentColor(id: string): string {
-    const raw = readMap[id];
-    if (!raw) return 'var(--border-subtle)';
-    if (raw === 'true') return 'var(--status-green)';
-    try {
-      const s = JSON.parse(raw);
-      return s.state === 'completed' ? 'var(--status-green)' : 'var(--score-warning)';
-    } catch { return 'var(--status-green)'; }
-  }
-
   $effect(() => {
     const unsub = readIssues.subscribe(val => {
-      readMap = { ...val };
       readCount = Object.entries(val).filter(([_, v]) => {
         if (!v) return false;
         if (v === 'true') return true;
@@ -152,11 +140,10 @@
       <a href="/about" aria-label="About" style="text-decoration:none;padding:8px;border-radius:var(--radius-md);min-height:44px;min-width:44px;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease-out;" onmouseenter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-sunken)'; }} onmouseleave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary, #6C757D)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></a>
     </div>
   {/if}
-  <div style="position:absolute;bottom:0;left:0;right:0;display:flex;gap:1px;height:1.5px;">
-    {#each issues as issue}
-      <div style="flex:1;background:{segmentColor(issue.id)};" title={issue.headline}></div>
-    {/each}
-  </div>
+  <!-- The old UI drew a 1.5px strip of per-issue read-state segments here.
+       Under the FORA header rule it read as a broken dashed line, and the
+       FORA masthead has no such element; progress shows in Continue reading
+       and Saved instead. -->
 </header>
 
 <style>

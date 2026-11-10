@@ -87,18 +87,21 @@
         <time datetime={publishedDay(issue)} title={absoluteDate(publishedDay(issue))} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);">{dateLabel}</time>
       {/if}
     </div>
-    <span class="balance-title" style="font-size:var(--text-body);font-weight:{headlineWeight};color:{isActive ? 'var(--text-primary)' : headlineColor};line-height:1.28;display:block;margin-top:2px;">{#if searchTerms}{@html highlightText(issue.headline, searchTerms)}{:else}{issue.headline}{/if}</span>
+    <span class="balance-title" data-feed-title style="font-size:var(--text-body);font-weight:{headlineWeight};color:{isActive ? 'var(--text-primary)' : headlineColor};line-height:1.28;display:block;margin-top:2px;">{#if searchTerms}{@html highlightText(issue.headline, searchTerms)}{:else}{issue.headline}{/if}</span>
 
     <p style="font-size:var(--text-sm);color:var(--text-tertiary);line-height:1.45;margin:4px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{issue.context}</p>
+    <!-- Under the headline, not in the score column: that column is sized to
+         its widest line, and this unbreakable label squeezed headlines into
+         about 120px of the 320px sidebar. -->
+    {#if progressLabel}
+      <span data-feed-progress style="display:block;margin-top:6px;font-size:var(--text-micro);color:var(--text-muted);">{progressLabel}</span>
+    {/if}
   </div>
   <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:2px;padding-top:2px;min-width:54px;">
     <!-- The option is named by its visible text (WCAG 2.5.3); the hidden
          prefix gives the bare score its meaning for screen readers. -->
     <span style="font-size:var(--text-body);font-weight:700;color:{scoreColor};font-variant-numeric:tabular-nums;" title="{issue.opinionShift} — {label}: Reading only the headline would hide about {issue.opinionShift}% of the story"><span class="sr-only">Opinion Shift </span>{issue.opinionShift}</span>
     <span style="font-size:var(--text-xs);font-weight:600;color:var(--text-muted);">{label}</span>
-    {#if progressLabel}
-      <span style="font-size:var(--text-micro);color:var(--text-muted);">{progressLabel}</span>
-    {/if}
   </div>
 </a>
 
