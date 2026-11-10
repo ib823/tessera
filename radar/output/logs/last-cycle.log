@@ -1,59 +1,60 @@
-[32m2026-11-10 02:11:58[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-10 02:11:58[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-10 02:11:58[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-10 02:11:59[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-10 02:11:59[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-10 02:11:59[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 13255 topics from state
-[32m2026-11-10 02:11:59[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-10 02:11:59[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-10T02:11:59.913681+00:00
-[32m2026-11-10 02:12:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
-[32m2026-11-10 02:12:01[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
-[32m2026-11-10 02:12:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
-[32m2026-11-10 02:12:03[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
-[32m2026-11-10 02:12:05[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
-[32m2026-11-10 02:12:05[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 441 events
-[32m2026-11-10 02:12:06[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-11-10 02:12:19[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-11-10 02:12:31[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:12:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:12:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:13:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:13:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:13:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:13:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:13:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:14:10[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:14:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-10 02:14:22[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-10 02:14:33[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 8 events
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 484 events from 5 sources
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 484 events
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 469 within 24h (138 pruned)
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Melaka polls: Pakatan’s Ginie Lim uses interactive digital platform to reach Machap Jaya voters. MELAKA, Nov 10 &mdash; The Pakatan Harapan (PH) candidate for Machap Jaya state constituency, Datuk Gin" importance=0.41
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Factory worker killed after motorcycle crashes into Proton that veered into his path in Kluang. KLUANG, Nov 10 &mdash; A factory worker was killed yesterday after his Yamaha motorcycle crashed into a " importance=0.41
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "AGC accused of changing its tune over Najib’s house arrest. Lawyer Farhan Shafee says AG Dusuki Mokhtar’s statement yesterday demonstrates a shift in position from the AGC’s earlier media statement, w" importance=0.31
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Rosmah dalam ‘penjara’ di Langgak Duta?. Timbul persoalan privasi Rosmah Mansor dan ahli keluarga selepas kediaman di Langgak Duta diisytihar penjara." importance=0.31
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Thousands participate in silent march after Krakow mass shooting. Poland is still investigating whether the shooter acted alone or was inspired by a group after six people were killed in the southern " importance=0.41
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "In Kuala Linggi, horseshoe crab is the catch of the day. As Melaka heads to the polls, this coastal town is serving up a far more appetising attraction." importance=0.41
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Larger-than-life Leo statue awaits the pope on Peru’s Pacific coast. The 14-metre towering white statue of the pontiff, with arms stretched wide, in Callao is billed as the world's tallest sculpture o" importance=0.46
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Court clarification could prevent floodgates of litigation over Najib. Clarifying the discharge order could prevent future disputes over Najib Razak's two prison sentences." importance=0.46
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Penjelasan mahkamah cegah pertikaian berlarutan terhadap Najib. Penjelasan mengenai 'perintah pelepasan' itu mampu kekang pertikaian masa hadapan berhubung dua hukuman penjara Najib Razak." importance=0.46
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Court clarification could prevent floodgates of litigation over Najib. Clarifying the discharge order could prevent future disputes over Najib Razak's two prison sentences." importance=0.36
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Penjelasan mahkamah cegah pertikaian berlarutan terhadap Najib. Penjelasan mengenai 'perintah pelepasan' itu mampu kekang pertikaian masa hadapan berhubung dua hukuman penjara Najib Razak." importance=0.36
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Alleged Charlie Kirk assassin to face trial in June 2028. Tyler Robinson, 23, faces a potential death penalty if found guilty of killing the conservative firebrand." importance=0.31
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "EU to crack down on influencer marketing. The bloc plans to tighten rules on online pricing and deceptive sales tactics, while restricting purchases aimed at minors." importance=0.41
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "ECRL enters final trial run ahead of Dec 12 passenger service launch. GOMBAK, Nov 9 &mdash; Malaysia Rail Link Sdn Bhd (MRL) is conducting trial operations for the East Coast Rail Link (ECRL..." importance=0.36
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Paya Terubong landslide: Penang to decide developer’s fate after DOSH probe. GEORGE TOWN, Nov 9 &mdash; Any action against the developer involved in the landslide at Taman Seri Rambai, Paya Terubon..." importance=0.41
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Woman jailed three months, fined RM5,000 for dumping baby with missing head, arm in Kuala Berang drain. KUALA BERANG, Nov 9 &mdash; A restaurant worker was sentenced to three months&rsquo; jail and fi" importance=0.38
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [bill_reading] "Attorney General says ‘glaring error’ in Najib court document caused confusion. KUALA LUMPUR, Nov 9 &mdash; Attorney General Tan Sri Mohd Dusuki Mokhtar yesterday raised questions over the accuracy an" importance=0.46
-[32m2026-11-10 02:14:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [high_court_ruling] "Attorney General says ‘glaring error’ in Najib court document caused confusion. KUALA LUMPUR, Nov 9 &mdash; Attorney General Tan Sri Mohd Dusuki Mokhtar yesterday raised questions over the accuracy an" importance=0.36
-[32m2026-11-10 02:14:40[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'volume_monitor': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
-[32m2026-11-10 02:14:40[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('government', 35), ('chinese', 33), ('malay', 30), ('pas', 23), ('india', 21), ('election', 18), ('price', 17), ('minister', 16), ('isa', 13), ('vote', 12)]
-[32m2026-11-10 02:14:40[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 10 events monitored, 10 flagged
-[32m2026-11-10 02:14:40[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 13261 active topics
-[32m2026-11-10 02:14:40[0m | [1mINFO    [0m | [36moutput              [0m | 1423 active issues, 11841 new, 11838 pruned
-[32m2026-11-10 02:14:40[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-10 02:15:21[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=203  hmm=OK/68  cox=RT/1423  sarima=RT/1423
-[32m2026-11-10 02:15:21[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1423)
-[32m2026-11-10 02:15:22[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 13261 active topics. Top: malay (score: 0.98)
+[32m2026-11-10 04:09:51[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-10 04:09:52[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-10 04:09:52[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-10 04:09:53[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-10 04:09:53[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-10 04:09:53[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 13261 topics from state
+[32m2026-11-10 04:09:53[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-10 04:09:53[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-10T04:09:53.310694+00:00
+[32m2026-11-10 04:09:54[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed The Star returned no entries (bozo=1)
+[32m2026-11-10 04:09:55[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed NHK World returned no entries (bozo=1)
+[32m2026-11-10 04:09:57[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Caixin Global returned no entries (bozo=1)
+[32m2026-11-10 04:09:57[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Jakarta Post returned no entries (bozo=1)
+[32m2026-11-10 04:10:00[0m | [33m[1mWARNING [0m | [36msource.news_rss     [0m | Feed Arab News returned no entries (bozo=1)
+[32m2026-11-10 04:10:00[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 442 events
+[32m2026-11-10 04:10:02[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-11-10 04:10:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-11-10 04:10:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:10:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-10 04:10:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:11:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-11-10 04:11:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:11:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:11:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:11:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:12:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:12:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-10 04:12:22[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-10 04:12:33[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 9 events
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 486 events from 5 sources
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 486 events
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 472 within 24h (131 pruned)
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Najib house arrest: Home minister says court must clarify Prisons Dept’s authority. MELAKA, Nov 10 &mdash; The interpretation of the Conditional Pardon Order and the implications of the Order of Disch" importance=0.46
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [high_court_ruling] "Najib house arrest: Home minister says court must clarify Prisons Dept’s authority. MELAKA, Nov 10 &mdash; The interpretation of the Conditional Pardon Order and the implications of the Order of Disch" importance=0.36
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Melaka polls: Pakatan’s Ginie Lim uses interactive digital platform to reach Machap Jaya voters. MELAKA, Nov 10 &mdash; The Pakatan Harapan (PH) candidate for Machap Jaya state constituency, Datuk Gin" importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Factory worker killed after motorcycle crashes into Proton that veered into his path in Kluang. KLUANG, Nov 10 &mdash; A factory worker was killed yesterday after his Yamaha motorcycle crashed into a " importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "China’s trade surplus soars past US$1tril as AI boom powers exports. The figure highlights Beijing's growing reliance on overseas demand to support an economy hobbled by subdued consumption and a prot" importance=0.46
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Polis buka 18 kertas siasatan berkait kempen PRN Melaka. Ketua Polis Melaka Dzulkhairi Mukhtar berkata kebanyakan kertas siasatan dibuka membabitkan kesalahan khianat, hasutan dan ugutan." importance=0.31
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Asian stocks climb as sliding oil prices buoy sentiment. The slump in oil price eased inflation concerns and lifted stocks after last week’s rout, as Democrats’ midterm victory fuelled fears of AI reg" importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "AGC dituduh ubah pendirian berkait tahanan rumah Najib. Peguam Farhan Shafee berkata kenyataan peguam negara semalam menunjukkan AGC mengubah pendirian berbanding kenyataan sebelum ini yang menimbulka" importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "AGC dituduh ubah pendirian berkait tahanan rumah Najib. Peguam Farhan Shafee berkata kenyataan peguam negara semalam menunjukkan AGC mengubah pendirian berbanding kenyataan sebelum ini yang menimbulka" importance=0.31
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [federal_court_ruling] "WuXi AppTec removed from Pentagon’s Chinese military list. A federal court in Washington barred the US defence department from enforcing the designation after the biotechnology company filed a lawsuit" importance=0.61
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Khidmat Kamarudin sebagai exco Kelantan dibincang Rabu. Timbalan Menteri Besar Mohamed Fadzli Hassan berkata keputusan berhubung perkara itu akan dimaklum Menteri Besar Mohd Nassuruddin Daud selepas m" importance=0.31
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "AGC accused of changing its tune over Najib’s house arrest. Lawyer Farhan Shafee says AG Dusuki Mokhtar’s statement yesterday demonstrates a shift in position from the AGC’s earlier media statement, w" importance=0.31
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Rosmah dalam ‘penjara’ di Langgak Duta?. Timbul persoalan privasi Rosmah Mansor dan ahli keluarga selepas kediaman di Langgak Duta diisytihar penjara." importance=0.31
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Thousands participate in silent march after Krakow mass shooting. Poland is still investigating whether the shooter acted alone or was inspired by a group after six people were killed in the southern " importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "In Kuala Linggi, horseshoe crab is the catch of the day. As Melaka heads to the polls, this coastal town is serving up a far more appetising attraction." importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Larger-than-life Leo statue awaits the pope on Peru’s Pacific coast. The 14-metre towering white statue of the pontiff, with arms stretched wide, in Callao is billed as the world's tallest sculpture o" importance=0.46
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "ECRL enters final trial run ahead of Dec 12 passenger service launch. GOMBAK, Nov 9 &mdash; Malaysia Rail Link Sdn Bhd (MRL) is conducting trial operations for the East Coast Rail Link (ECRL..." importance=0.36
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0018 [bill_reading] "Paya Terubong landslide: Penang to decide developer’s fate after DOSH probe. GEORGE TOWN, Nov 9 &mdash; Any action against the developer involved in the landslide at Taman Seri Rambai, Paya Terubon..." importance=0.41
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0019 [high_court_ruling] "Woman jailed three months, fined RM5,000 for dumping baby with missing head, arm in Kuala Berang drain. KUALA BERANG, Nov 9 &mdash; A restaurant worker was sentenced to three months&rsquo; jail and fi" importance=0.38
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'volume_monitor': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok'}
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('chinese', 39), ('malay', 33), ('government', 31), ('india', 23), ('election', 22), ('minister', 21), ('price', 21), ('pas', 21), ('policy', 14), ('isa', 13)]
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 13267 active topics
+[32m2026-11-10 04:12:40[0m | [1mINFO    [0m | [36moutput              [0m | 1431 active issues, 11844 new, 11836 pruned
+[32m2026-11-10 04:12:41[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-10 04:13:20[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=203  hmm=OK/69  cox=RT/1431  sarima=RT/1431
+[32m2026-11-10 04:13:20[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=1431)
+[32m2026-11-10 04:13:21[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 13267 active topics. Top: malay (score: 0.98)
