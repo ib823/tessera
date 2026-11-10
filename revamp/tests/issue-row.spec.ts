@@ -59,30 +59,38 @@ for (const width of [1024, 1440, 1920]) {
 }
 
 test('an issue reads the same in the reading list, Saved and Latest', async ({ page }) => {
-  const ids = await feedIds(page);
-  await seed(page, ids);
+  await page.route('https://tfa-sync.4thangle.workers.dev/**', (route) => route.abort());
   await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto('/?view=library&tab=archive');
-  await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
 
-  // Saved shows the compact reading list beside the full archive.
-  const sidebarRow = page.locator('#app-sidebar').getByRole('option').filter({ has: page.locator('[data-row-state]', { hasText: /^Continue at card/ }) }).first();
-  await expect(sidebarRow).toBeVisible();
-  const headline = (await sidebarRow.locator('[data-row-headline]').textContent())!.trim();
-  const signal = (await sidebarRow.locator('[data-row-signal]').textContent())!.trim();
-  const state = (await sidebarRow.locator('[data-row-state]').textContent())!.trim();
+  // Latest pages its list, so start from its first row and mark that issue started.
+  await page.goto('/?feed=latest');
+  const firstLatest = page.locator('[data-latest-list] [data-issue-row]').first();
+  await expect(firstLatest).toBeVisible({ timeout: 10_000 });
+  const headline = (await firstLatest.locator('[data-row-headline]').textContent())!.trim();
+  const feed = (await (await page.request.get('/issues-feed.json')).json()) as Array<{ id: string; headline: string }>;
+  const issue = feed.find((entry) => entry.headline === headline);
+  expect(issue, `feed entry for "${headline}"`).toBeTruthy();
+  await page.evaluate((id) => localStorage.setItem(`tfa:v1:read:${id}`, JSON.stringify({ state: 'started', progress: 2 })), issue!.id);
+  await page.reload();
+
+  const byHeadline = page.locator('[data-row-headline]', { hasText: headline });
+  const latestRow = page.locator('[data-latest-list] [data-issue-row]').filter({ has: byHeadline }).first();
+  await expect(latestRow.locator('[data-row-state]')).toHaveText(/^Continue at card 3 of \d+$/);
+  const signal = (await latestRow.locator('[data-row-signal]').textContent())!.trim();
+  const state = (await latestRow.locator('[data-row-state]').textContent())!.trim();
   expect(signal).toMatch(/^Opinion Shift \d+ · \w+$/);
 
-  const archiveRow = page.locator('[data-issue-row][data-density="regular"]').filter({ has: page.locator('[data-row-headline]', { hasText: headline }) }).first();
+  // Saved shows the compact reading list beside the full archive.
+  await page.goto('/?view=library&tab=archive');
+  await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+  const sidebarRow = page.locator('#app-sidebar').getByRole('option').filter({ has: byHeadline }).first();
+  await sidebarRow.scrollIntoViewIfNeeded();
+  await expect(sidebarRow.locator('[data-row-signal]')).toHaveText(signal);
+  await expect(sidebarRow.locator('[data-row-state]')).toHaveText(state);
+  const archiveRow = page.locator('[data-issue-row][data-density="regular"]').filter({ has: byHeadline }).first();
+  await archiveRow.scrollIntoViewIfNeeded();
   await expect(archiveRow.locator('[data-row-signal]')).toHaveText(signal);
   await expect(archiveRow.locator('[data-row-state]')).toHaveText(state);
-
-  await page.goto('/?feed=latest');
-  await expect(page.locator('[data-latest-list]')).toBeVisible();
-  const latestRow = page.locator('[data-latest-list] [data-issue-row]').filter({ has: page.locator('[data-row-headline]', { hasText: headline }) }).first();
-  await latestRow.scrollIntoViewIfNeeded();
-  await expect(latestRow.locator('[data-row-signal]')).toHaveText(signal);
-  await expect(latestRow.locator('[data-row-state]')).toHaveText(state);
 });
 
 test('phone and tablet lists use the same row, with the headline beside the art', async ({ page }) => {
