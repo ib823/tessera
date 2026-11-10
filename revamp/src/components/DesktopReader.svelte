@@ -59,7 +59,6 @@
   let activeStep = $state(Math.max(0, Math.min(initialCardIndex, Math.max(issue.cards.length - 1, 0))));
   let persistedProgress = $state(0);
   let pendingInitialCardIndex: number | null = $state(initialCardIndex > 0 ? initialCardIndex : null);
-  let stepObserver: IntersectionObserver | null = null;
   // The reading path stays pinned to the top of the reading column, so it
   // shows where you are while you read instead of scrolling away above the
   // headline (where it always showed card 1).
@@ -102,7 +101,6 @@
     wakeLock = null;
     visCleanup?.();
     countUpCancel?.();
-    stepObserver?.disconnect();
   });
 
   // C1: Animated opinion shift count-up
@@ -155,40 +153,41 @@
     return `The headline gets the outline, but the deeper frame still matters.`;
   }
 
-  function setupStepObserver() {
-    stepObserver?.disconnect();
-    stepObserver = null;
+  // The current card is the last one whose top has passed a reading line
+  // just under the pinned reading path. (Picking the most visible card, as
+  // before, put two fully visible cards in a tie that the later one won, so
+  // jumping to card 4 marked card 5.) At the end of the article the last
+  // card is current.
+  function updateActiveStep() {
+    if (!scrollEl) return;
+    const els = cardEls.filter(Boolean) as HTMLDivElement[];
+    if (els.length === 0) return;
+    const line = scrollEl.getBoundingClientRect().top + (progressShell?.offsetHeight ?? 0) + 24;
+    let index = 0;
+    for (let i = 0; i < els.length; i++) {
+      if (els[i].getBoundingClientRect().top <= line) index = i;
+      else break;
+    }
+    if (scrollEl.scrollTop > 0 && scrollEl.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 2) index = els.length - 1;
+    activeStep = index;
+    const nextProgress = index + 1;
+    if (index > 0 && nextProgress > persistedProgress) {
+      persistedProgress = nextProgress;
+      updateProgress(issue.id, nextProgress);
+    }
+  }
 
+  let stepFrame = 0;
+  function onReaderScroll() {
+    if (stepFrame) return;
+    stepFrame = requestAnimationFrame(() => { stepFrame = 0; updateActiveStep(); });
+  }
+
+  function setupStepObserver() {
     requestAnimationFrame(() => {
       if (!scrollEl) return;
       const els = cardEls.filter(Boolean) as HTMLDivElement[];
       if (els.length === 0) return;
-
-      stepObserver = new IntersectionObserver((entries) => {
-        let bestIndex = activeStep;
-        let bestRatio = 0;
-
-        for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          const idx = Number((entry.target as HTMLElement).dataset.step ?? '-1');
-          if (Number.isNaN(idx)) continue;
-          if (entry.intersectionRatio >= bestRatio) {
-            bestRatio = entry.intersectionRatio;
-            bestIndex = idx;
-          }
-        }
-
-        if (bestRatio > 0) {
-          activeStep = bestIndex;
-          const nextProgress = bestIndex + 1;
-          if (bestIndex > 0 && nextProgress > persistedProgress) {
-            persistedProgress = nextProgress;
-            updateProgress(issue.id, nextProgress);
-          }
-        }
-      }, { root: scrollEl, threshold: [0.25, 0.45, 0.7] });
-
-      els.forEach((el) => stepObserver?.observe(el));
 
       if (pendingInitialCardIndex != null && pendingInitialCardIndex > 0) {
         const targetIndex = Math.max(0, Math.min(pendingInitialCardIndex, els.length - 1));
@@ -199,9 +198,22 @@
           hashCardApplied = true;
         }
         pendingInitialCardIndex = null;
+      } else {
+        updateActiveStep();
       }
     });
   }
+
+  $effect(() => {
+    const root = scrollEl;
+    if (!root) return;
+    root.addEventListener('scroll', onReaderScroll, { passive: true });
+    return () => {
+      root.removeEventListener('scroll', onReaderScroll);
+      if (stepFrame) cancelAnimationFrame(stepFrame);
+      stepFrame = 0;
+    };
+  });
 
   $effect(() => {
     const target = issue;
