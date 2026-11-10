@@ -112,7 +112,7 @@ async function main() {
     // Strip component names from opts. Structured data carries real names,
     // such as the publisher "FORA", which this rule would turn into "c", so
     // application/ld+json blocks pass through unchanged.
-    html = html.replace(/(<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>)|"name":"[A-Za-z]+"/g, (match, structuredData) => structuredData ?? '"name":"c"');
+    html = html.replace(/(<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>)|"name":"[A-Za-z]+"/g, (_match, structuredData) => structuredData ?? '"name":"c"');
     // Island opts are attribute-encoded, so the rule above never matched them.
     // A client:only="svelte" island would also store the renderer name as
     // opts.value; the only-directive never reads it.
