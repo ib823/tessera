@@ -28,6 +28,10 @@ for (const width of [320, 360]) {
       expect(await body.evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(18 * percent / 100);
       await region.focus();
       await page.keyboard.press('End');
+      // End scrolls with an animation (about 0.2-0.3 s in Chromium, Firefox and
+      // WebKit). Wait until it reaches the bottom: otherwise its later frames
+      // can land after the scroll below and carry the body back out of view.
+      await expect.poll(() => region.evaluate(el => el.scrollHeight - el.clientHeight - el.scrollTop)).toBeLessThanOrEqual(1);
       await body.scrollIntoViewIfNeeded();
       await expect(body).toBeInViewport();
       await expect(dialog.getByRole('button', { name: /Next card|Finish reading/ })).toBeInViewport();
