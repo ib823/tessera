@@ -1,4 +1,4 @@
-import { test, expect, open, reflow, capture } from './matrix';
+import { test, expect, open, reflow, capture, settled } from './matrix';
 
 test('search filters survive issue navigation, Back and reload', async ({ page }) => {
   await open(page, '/?q=malaysia');
@@ -100,6 +100,8 @@ test('legacy progress and reactions migrate and persist on reload', async ({ pag
   expect(state.reactions).toEqual({ '1976': [1] });
   expect(state.migrated).toBeTruthy();
   await page.reload();
+  await expect(page.locator('html.js-reader-mounted')).toHaveCount(1);
+  await settled(page);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('tfa:v1:reactions')!))).toEqual(state.reactions);
   await open(page, '/issue/1976#card-2');
   await expect(page.getByRole('button', { name: 'Remove highlight from this insight', exact: true })).toHaveCount(1);

@@ -41,11 +41,22 @@ export const test = base.extend({
 });
 export { expect };
 
+// The app fetches /fact-graph.json once it mounts, and handles a failure.
+// WebKit still reports a fetch that a reload or navigation cancels as a page
+// error ("Fetch API cannot load ... due to access control checks"), which the
+// fixture above counts. Let that startup request finish before a test reloads
+// or leaves the page, so a failure there means the app, not the test's timing.
+export async function settled(page: Page) {
+  await expect.poll(() => page.evaluate(() => performance.getEntriesByType('resource')
+    .some(entry => entry.name.includes('/fact-graph.json') && (entry as PerformanceResourceTiming).responseEnd > 0))).toBe(true);
+}
+
 export async function open(page: Page, path: string) {
   const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
   expect(response?.ok(), `${path} responds successfully`).toBe(true);
   if (path.startsWith('/?') || path === '/' || path.startsWith('/issue/1976')) {
     await expect(page.locator('html.js-reader-mounted')).toHaveCount(1);
+    await settled(page);
   }
   if (process.env.FORA_MATRIX_ORIGIN) {
     // Hosted mode only. A deployed origin delivers the search index and web
