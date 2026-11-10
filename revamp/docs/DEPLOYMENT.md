@@ -61,6 +61,24 @@ node revamp/scripts/check-hosted.mjs https://HEX.thefourthangle.pages.dev
 4. Record the old and new Cloudflare deployment IDs and commit SHAs. No live
    cut-over is complete merely because a push or deployment command returned.
 
+## Cut-over record — 10 November 2026
+
+The user authorized replacing the production UI with FORA in full. Order:
+
+1. [#97](https://github.com/ib823/tessera/pull/97) (`e2e17a2`) fixed the
+   canonical spring, `IssueImage` and offline-page defects on `main`. Run
+   [42791159938](https://github.com/ib823/tessera/actions/runs/42791159938)
+   deployed it with the old UI: production deployment `59c851b9`.
+2. `codex/t4a-revamp` merged that `main`; the FORA overlays of the same files
+   were removed so the canonical fixes apply.
+3. [#96](https://github.com/ib823/tessera/pull/96) merges FORA into `main`. The
+   `main` run builds, tests and deploys `revamp/dist` to production, then
+   verifies the live origin.
+
+Rollback targets, newest first: `59c851b9` (old UI with the #97 fixes) and
+`bb6b4be7` (old UI at `1300e8a`). Roll back in Cloudflare Pages first, then
+revert the #96 merge commit on `main` so the next push cannot redeploy it.
+
 ## Rollback
 
 If a production regression appears, restore the last successful production

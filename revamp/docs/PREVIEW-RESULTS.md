@@ -77,9 +77,17 @@ The generated `sw.js` differs from `public/sw.js` only in that cache name.
   were checked, so no subscriber or sync record was touched.
 - Physical iPhone/Android, native share sheets, browser zoom, virtual
   keyboards and screen readers: emulation is not device certification.
+- Offline fallback on Cloudflare (pre-existing, also in the old UI): the
+  service worker precaches `/offline.html`, which Pages answers with a `308`
+  to `/offline`. The cached copy is a redirected response, and browsers reject
+  it for a navigation, so an offline reader gets the browser's error page
+  (`net::ERR_FAILED`, checked on production on 10 Nov 2026). The local upgrade
+  check passed only because the local server does not redirect.
 - Observation for review: a cold `/?q=` link briefly shows the server-rendered
   "Top stories" heading before the search view replaces it (≈0.2–0.3 s from
   this test client). Not changed in this preview.
-- Pre-existing in canonical code and production, not changed here: the
-  canonical `src/lib/spring.ts` integrator has the slow-frame defect, and
-  `offline.html`'s inline `onclick` Retry button is blocked by the CSP.
+- The canonical defects found here (the spring integrator, `IssueImage`'s inline
+  `onerror` and `offline.html`'s inline `onclick`) were fixed on `main` by
+  [#97](https://github.com/ib823/tessera/pull/97) (`e2e17a2`). For the cut-over
+  the FORA overlays of `spring.ts` and `IssueImage.svelte`, and their duplicate
+  tests, were removed so the canonical files apply.
