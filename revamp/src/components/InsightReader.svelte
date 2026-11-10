@@ -1,0 +1,2097 @@
+<script lang="ts">
+  import { primaryLens, topicHref } from '../lib/topics';
+  import { onMount, onDestroy, tick } from 'svelte';
+  import OpinionBar from './OpinionBar.svelte';
+  import VerdictBar from './VerdictBar.svelte';
+  import SaveButton from './SaveButton.svelte';
+  import ShareModal from './ShareModal.svelte';
+  import PushPrompt from './PushPrompt.svelte';
+  import IssueSources from './IssueSources.svelte';
+  import IssueMeta from './IssueMeta.svelte';
+  import IssueChanges from './IssueChanges.svelte';
+  import CardSources from './CardSources.svelte';
+  import VerifyCopyButton from './VerifyCopyButton.svelte';
+  import { CARD_TYPES, opinionColor } from '../data/issue-types';
+  import { markCompleted, updateProgress, savePosition } from '../stores/reader';
+  import { createSpring, animateSpring, SPRING_DEFAULT, SPRING_SNAPPY, SPRING_RUBBER, type SpringConfig } from '../lib/spring';
+  import { createVelocityTracker, classifyGesture, rubberBand } from '../lib/velocity';
+  import { haptic, stagger, tween, ease } from '../lib/animation';
+  import { lockScroll, unlockScroll } from '../lib/scroll-lock';
+  import { observeScroll, applyFadeGradient, shouldBlockSwipe, type ScrollState } from '../lib/scroll-physics';
+  import { initialCardFromLocation } from '../lib/card-anchor';
+  import { resolveRelatedIssue, type RelatedPick } from '../lib/related-next';
+
+  interface Card {
+    t: 'hook' | 'fact' | 'reframe' | 'analogy' | 'view';
+    big: string;
+    sub: string;
+    lens?: string;
+    src?: string[];
+  }
+
+  interface Issue {
+    id: string;
+    headline: string;
+    opinionShift: number;
+    status: 'new' | 'updated' | null;
+    edition: number;
+    context: string;
+    cards: Card[];
+    stageScores?: { pa: number; ba: number; fc: number; sr: number; af?: number; ct?: number };
+    finalScore?: number;
+    legacyAudit?: boolean;
+    sourceDate?: string;
+    related?: string[];
+  }
+
+  interface Connection {
+    id: string;
+    weight: number;
+    sharedEntities: string[];
+    headline: string;
+    opinionShift: number;
+    readState: string | null;
+    hasReaction: boolean;
+  }
+
+  interface Props {
+    issue: Issue;
+    onClose: () => void;
+    onReturnHome?: () => void;
+    onNext?: () => void;
+    onNavigateToIssue?: (issueId: string) => void;
+    initialCardIndex?: number;
+    originRect?: DOMRect;
+    connections?: Connection[];
+    nextIssueHeadline?: string;
+    /** false when the reader is the landing page (deep link): appear in place, no slide-in. */
+    animateEntry?: boolean;
+  }
+
+  let { issue, onClose, onReturnHome, onNext, onNavigateToIssue, initialCardIndex = 0, originRect, connections = [], nextIssueHeadline = '', animateEntry = true }: Props = $props();
+
+  let patternSheetOpen = $state(false);
+
+  // A card deep link (/issue/{id}#card-N, SH-2) wins over the saved position.
+  const hashCard = initialCardFromLocation(issue.id, issue.cards.length);
+  const startCard = hashCard ?? Math.min(initialCardIndex, 5);
+  let current = $state(startCard);
+  let completed = $state(false);
+  // Mark all cards up to initial position as read
+  let readCards = $state(new Set<number>(Array.from({ length: startCard + 1 }, (_, i) => i)));
+  // Arrow keys and arrow buttons pressed mid-transition queue here instead of
+  // being dropped (A-7); positive = forward, negative = back.
+  let queuedSteps = 0;
+  // "Continue: related" on the completion screen (A-8).
+  let relatedPick = $state<RelatedPick | null>(null);
+  let shareOpen = $state(false);
+  let shareCardIndex: number | null = $state(null);
+  let showSwipeHint = $state(false);
+  let issueDetailsOpen = $state(false);
+  $effect(() => {
+    current;
+    completed;
+    if (cardAreaEl) cardAreaEl.scrollTop = 0;
+  });
+  let bigTextVisible = $state(true);
+  let subTextVisible = $state(true);
+  let subRevealTimer: ReturnType<typeof setTimeout> | null = null;
+  let swipeHintFaded = $state(false);
+  let completionVisible = $state(false);
+  let completionButtonsVisible = $state<boolean[]>([]);
+
+  // Drag state - NOT reactive for perf (we use direct DOM manipulation during drag)
+  let isDragging = false;
+  let gestureDirection: 'horizontal' | 'vertical' | 'ambiguous' | 'undecided' = 'undecided';
+  let dragStartX = 0;
+  let dragStartY = 0;
+  let dragDeltaX = 0;
+  let dragDeltaY = 0;
+  let activePointerId: number | null = null;
+  let crossedCommitThreshold = false;
+  let canDismissFromHere = false; // restrict dismiss to header/card-top zones
+  let pointerCaptured = false; // track whether we've captured the pointer
+
+  // Cached dot elements — avoid querySelectorAll on every pointermove
+  let cachedDots: HTMLElement[] = [];
+
+  // Animation cancellation
+  let cancelAnimation: (() => void) | null = null;
+  let animating = false;
+
+  // Reduced motion
+  let prefersReducedMotion = $state(false);
+
+  // Element refs
+  let overlayEl: HTMLDivElement | undefined = $state(undefined);
+  let cardEl: HTMLDivElement | undefined = $state(undefined);
+  let ghost1El: HTMLDivElement | undefined = $state(undefined);
+  let ghost2El: HTMLDivElement | undefined = $state(undefined);
+  let dotsContainerEl: HTMLDivElement | undefined = $state(undefined);
+  let cardAreaEl: HTMLDivElement | undefined = $state(undefined);
+  let cardContentEl: HTMLDivElement | undefined = $state(undefined);
+
+  // Scroll physics state for card content
+  let scrollState: ScrollState = $state({ atTop: true, atBottom: true, canScroll: false, scrollProgress: 0 });
+  let scrollIndicatorVisible = $state(false);
+  let scrollIndicatorTimer: ReturnType<typeof setTimeout> | null = null;
+  let cleanupScrollObserver: (() => void) | null = null;
+
+  // Velocity tracker
+  const tracker = createVelocityTracker();
+
+  let card = $derived(issue.cards[current]);
+  let meta = $derived(CARD_TYPES[card?.t] ?? CARD_TYPES.hook);
+  let totalCards = $derived(issue.cards.length);
+  let progress = $derived(((current + 1) / totalCards) * 100);
+
+  // Accessibility: screen reader announcements for card transitions
+  let announcement = $state('');
+
+  // Reset to first card when issue changes
+  let lastIssueId = $state(issue.id);
+  $effect(() => {
+    if (issue.id !== lastIssueId) {
+      lastIssueId = issue.id;
+      current = 0;
+      completed = false;
+      readCards = new Set([0]);
+      shareOpen = false;
+      shareCardIndex = null;
+      isDragging = false;
+      dragDeltaX = 0;
+      animating = false;
+      cancelAnimation?.();
+      cancelAnimation = null;
+      completionVisible = false;
+      completionButtonsVisible = [];
+      bigTextVisible = true;
+      subTextVisible = true;
+      queuedSteps = 0;
+    }
+  });
+
+  // Resolve the related issue for the completion screen from the cached feed
+  // and fact graph (both already loaded by the app shell).
+  $effect(() => {
+    const target = issue;
+    relatedPick = null;
+    let cancelled = false;
+    resolveRelatedIssue(target).then((pick) => {
+      if (!cancelled) relatedPick = pick;
+    });
+    return () => { cancelled = true; };
+  });
+
+  function cardLabel(c: Card): string {
+    const m = CARD_TYPES[c.t] ?? CARD_TYPES.hook;
+    if (c.t === 'fact' && c.lens) {
+      return `${m.label} \u00B7 ${c.lens}`;
+    }
+    return m.label;
+  }
+
+  function announceCard() {
+    const c = issue.cards[current];
+    if (c) {
+      announcement = `Card ${current + 1} of ${totalCards}: ${cardLabel(c)}`;
+    }
+  }
+
+  function announceCompletion() {
+    announcement = `All ${totalCards} perspectives read.`;
+  }
+
+  // Find takeaway text (last view card)
+  let takeaway = $derived.by(() => {
+    for (let i = issue.cards.length - 1; i >= 0; i--) {
+      if (issue.cards[i].t === 'view') return issue.cards[i].big;
+    }
+    return issue.cards[issue.cards.length - 1].big;
+  });
+
+  // --- Swipe threshold logic ---
+  let cachedCardWidth = 0;
+  function getCardWidth(): number {
+    // Cache offsetWidth per drag session to avoid layout reads on every pointer move
+    if (cachedCardWidth > 0) return cachedCardWidth;
+    cachedCardWidth = cardEl?.offsetWidth ?? 340;
+    return cachedCardWidth;
+  }
+
+  function isAtEdge(direction: 'left' | 'right'): boolean {
+    if (completed) return direction === 'left';
+    if (direction === 'left' && current >= totalCards - 1) return false; // can go to completion
+    if (direction === 'right' && current <= 0) return true;
+    return false;
+  }
+
+  function shouldCommit(dx: number, vx: number): 'left' | 'right' | null {
+    const absDx = Math.abs(dx);
+    const absVx = Math.abs(vx);
+    const width = getCardWidth();
+    const distanceThreshold = width * 0.15;
+
+    if (absVx > 500 || absDx > distanceThreshold) {
+      const direction = (vx !== 0 ? vx : dx) < 0 ? 'left' : 'right';
+      return direction;
+    }
+    return null;
+  }
+
+  // --- Direct DOM transforms during drag ---
+  function applyDragTransform(dx: number) {
+    if (!cardEl) return;
+
+    const width = getCardWidth();
+    const absDx = Math.abs(dx);
+    const rotation = Math.max(-8, Math.min(8, dx * 0.04));
+    const scaleVal = 1.0 + absDx * 0.0001;
+
+    cardEl.style.transform = `translateX(${dx}px) rotate(${rotation}deg) scale(${scaleVal})`;
+
+    // Ghost card interpolation based on progress
+    const progressFrac = Math.min(absDx / (width * 0.5), 1);
+    if (ghost1El) {
+      const g1Scale = 0.97 + progressFrac * 0.03;
+      const g1TransY = 8 - progressFrac * 8;
+      ghost1El.style.transform = `scale(${g1Scale}) translateY(${g1TransY}px)`;
+    }
+    if (ghost2El) {
+      const g2Scale = 0.94 + progressFrac * 0.03;
+      const g2TransY = 16 - progressFrac * 8;
+      ghost2El.style.transform = `scale(${g2Scale}) translateY(${g2TransY}px)`;
+    }
+
+    // Dot interpolation
+    interpolateDots(dx);
+  }
+
+  function cacheDotElements() {
+    // Dots are now non-interactive — no caching needed for animation
+  }
+
+  function interpolateDots(_dx: number) {
+    // Dots use opacity only — no width interpolation during drag
+  }
+
+  function resetDotStyles() {
+    // No inline styles to reset — dots use CSS classes only
+  }
+
+  function resetGhostStyles() {
+    if (ghost1El) ghost1El.style.transform = '';
+    if (ghost2El) ghost2El.style.transform = '';
+  }
+
+  // --- Navigation with spring physics ---
+  let textRevealSafety: ReturnType<typeof setTimeout> | null = null;
+
+  function goTo(index: number, direction: 'left' | 'right', initialVelocity = 0) {
+    if (index < 0 || index >= totalCards) return;
+    // Allow interruption of ongoing animation
+    if (animating) {
+      cancelAnimation?.();
+      cancelAnimation = null;
+      animating = false;
+      if (cardEl) { cardEl.style.transform = ''; cardEl.style.opacity = ''; }
+      resetGhostStyles();
+      resetDotStyles();
+    }
+    haptic(5);
+    savePosition(issue.id, index);
+
+    animating = true;
+    cancelAnimation?.();
+    if (subRevealTimer) {
+      clearTimeout(subRevealTimer);
+      subRevealTimer = null;
+    }
+    bigTextVisible = true;
+    subTextVisible = true;
+
+    // Safety: guarantee text becomes visible even if animation callback fails
+    if (textRevealSafety) clearTimeout(textRevealSafety);
+    textRevealSafety = setTimeout(() => {
+      if (!bigTextVisible) { bigTextVisible = true; subTextVisible = true; }
+    }, 800);
+
+    const width = getCardWidth();
+    const exitTarget = direction === 'right' ? -width * 1.2 : width * 1.2;
+
+    // Exit animation
+    const startPos = dragDeltaX || 0;
+    const remaining = Math.abs(exitTarget - startPos);
+    const exitDuration = prefersReducedMotion ? 0 : Math.max(180, Math.min(350, remaining / width * 350));
+
+    const exitSpring = createSpring(startPos, {
+      stiffness: 500,
+      damping: 30,
+      mass: 1,
+      precision: 5,
+    });
+    exitSpring.velocity = initialVelocity;
+
+    cancelAnimation = animateSpring(exitSpring, exitTarget, (value) => {
+      if (cardEl) {
+        const rot = Math.max(-8, Math.min(8, value * 0.04));
+        cardEl.style.transform = `translateX(${value}px) rotate(${rot}deg)`;
+        cardEl.style.opacity = `${Math.max(0, 1 - Math.abs(value) / (width * 1.5))}`;
+      }
+    }, () => {
+      // Exit complete — hide text before switching card content
+      bigTextVisible = false;
+      subTextVisible = false;
+
+      current = index;
+      if (overlayEl) overlayEl.scrollTop = 0;
+      readCards = new Set([...readCards, index]);
+      updateProgress(issue.id, index + 1);
+
+      resetGhostStyles();
+      resetDotStyles();
+
+      // Enter animation — reveal text after DOM has painted new content
+      if (cardEl) {
+        const enterFrom = direction === 'right' ? 60 : -60;
+        cardEl.style.opacity = '1';
+
+        // Wait one frame for Svelte to render new card content, then fade text in
+        requestAnimationFrame(() => {
+          bigTextVisible = true;
+          subTextVisible = true;
+        });
+
+        if (prefersReducedMotion) {
+          cardEl.style.transform = 'translateX(0) rotate(0deg)';
+          animating = false;
+          cancelAnimation = null;
+          announceCard();
+
+          drainQueuedStep();
+          return;
+        }
+
+        const enterSpring = createSpring(enterFrom, {
+          stiffness: 500,
+          damping: 30,
+          mass: 1,
+          precision: 0.5,
+        });
+
+        cancelAnimation = animateSpring(enterSpring, 0, (value) => {
+          if (cardEl) {
+            const rot = value * 0.02;
+            cardEl.style.transform = `translateX(${value}px) rotate(${rot}deg)`;
+          }
+        }, () => {
+          if (cardEl) {
+            cardEl.style.transform = '';
+          }
+          animating = false;
+          cancelAnimation = null;
+
+          // A8: Haptic pulse on settle
+          haptic(3);
+          announceCard();
+          drainQueuedStep();
+        });
+      } else {
+        animating = false;
+        cancelAnimation = null;
+        announceCard();
+        drainQueuedStep();
+      }
+    });
+  }
+
+  function snapBack(initialVelocity = 0) {
+    if (!cardEl) return;
+    animating = true;
+
+    if (prefersReducedMotion) {
+      cardEl.style.transform = '';
+      cardEl.style.transition = '';
+      resetGhostStyles();
+      resetDotStyles();
+      animating = false;
+      return;
+    }
+
+    const startPos = dragDeltaX;
+    const spring = createSpring(startPos, SPRING_SNAPPY);
+    spring.velocity = initialVelocity;
+
+    cancelAnimation = animateSpring(spring, 0, (value) => {
+      if (cardEl) {
+        const rot = Math.max(-8, Math.min(8, value * 0.04));
+        const sc = 1.0 + Math.abs(value) * 0.0001;
+        cardEl.style.transform = `translateX(${value}px) rotate(${rot}deg) scale(${sc})`;
+      }
+    }, () => {
+      if (cardEl) {
+        cardEl.style.transform = '';
+      }
+      resetGhostStyles();
+      resetDotStyles();
+      animating = false;
+      cancelAnimation = null;
+      drainQueuedStep();
+    });
+  }
+
+  function rubberBandBack() {
+    if (!cardEl) return;
+    animating = true;
+
+    // A3: Edge glow flash
+    if (!prefersReducedMotion && cardEl) {
+      const glowSide = dragDeltaX > 0 ? 'inset -12px 0 20px -12px rgba(25,113,194,0.1)' : 'inset 12px 0 20px -12px rgba(25,113,194,0.1)';
+      cardEl.style.boxShadow = glowSide;
+      setTimeout(() => { if (cardEl) cardEl.style.boxShadow = ''; }, 300);
+    }
+
+    const startPos = dragDeltaX;
+    // Use SPRING_RUBBER with omega=18 equivalent
+    const spring = createSpring(startPos, {
+      stiffness: 324, // omega^2 * mass = 18^2 = 324
+      damping: 36,
+      mass: 1,
+      precision: 0.5,
+    });
+
+    cancelAnimation = animateSpring(spring, 0, (value) => {
+      if (cardEl) {
+        const rot = Math.max(-8, Math.min(8, value * 0.04));
+        cardEl.style.transform = `translateX(${value}px) rotate(${rot}deg)`;
+      }
+    }, () => {
+      if (cardEl) {
+        cardEl.style.transform = '';
+      }
+      resetGhostStyles();
+      resetDotStyles();
+      animating = false;
+      cancelAnimation = null;
+    });
+  }
+
+  function next() {
+    if (animating) return;
+    if (current >= totalCards - 1) {
+      showCompletion();
+      return;
+    }
+    goTo(current + 1, 'right');
+  }
+
+  function prev() {
+    if (animating) return;
+    if (completed) {
+      completed = false;
+      completionVisible = false;
+      completionButtonsVisible = [];
+      goTo(totalCards - 1, 'left');
+      return;
+    }
+    goTo(current - 1, 'left');
+  }
+
+  /** Step forward (+1) or back (-1), queuing the step if a transition is running. */
+  function requestStep(direction: 1 | -1) {
+    if (animating) {
+      queuedSteps = Math.max(-3, Math.min(3, queuedSteps + direction));
+      return;
+    }
+    if (direction > 0) next();
+    else prev();
+  }
+
+  /** Run one queued step once the current transition has settled. */
+  function drainQueuedStep() {
+    if (queuedSteps === 0 || animating) return;
+    const direction = queuedSteps > 0 ? 1 : -1;
+    queuedSteps -= direction;
+    if (direction > 0 && completed) {
+      queuedSteps = 0;
+      return;
+    }
+    if (direction > 0) next();
+    else prev();
+  }
+
+  function showCompletion() {
+    queuedSteps = 0;
+    completed = true;
+    markCompleted(issue.id, issue.cards.length);
+    completionVisible = true;
+    announceCompletion();
+    // Stagger buttons in
+    completionButtonsVisible = [];
+    stagger(1, 120, 500, () => {
+      completionButtonsVisible = [...completionButtonsVisible, true];
+    });
+  }
+
+  function restart() {
+    completed = false;
+    completionVisible = false;
+    completionButtonsVisible = [];
+    current = 0;
+    readCards = new Set([0]);
+    animating = false;
+    cancelAnimation?.();
+    cancelAnimation = null;
+    if (cardEl) cardEl.style.transform = '';
+  }
+
+  // --- Dismiss overlay via vertical drag ---
+  let verticalDismissActive = false;
+
+  function handleVerticalDismiss(dy: number) {
+    if (!overlayEl) return;
+    const absDy = Math.abs(dy);
+    const opacity = Math.max(0, 1 - absDy / 400);
+    // Disable expensive backdrop-filter during drag for perf
+    overlayEl.style.backdropFilter = 'none';
+    (overlayEl.style as any).webkitBackdropFilter = 'none';
+    overlayEl.style.transform = `translateY(${Math.max(0, dy)}px)`;
+    overlayEl.style.opacity = `${opacity}`;
+  }
+
+  function finishVerticalDismiss(dy: number) {
+    const { vy } = tracker.getVelocity();
+    // Dismiss if dragged far enough OR fast enough downward flick
+    if (dy > 200 || vy > 500) {
+      onClose();
+    } else if (overlayEl) {
+      // Snap back with spring
+      const startDy = Math.max(0, dy);
+      const spring = createSpring(startDy, { stiffness: 500, damping: 30, mass: 1, precision: 0.5 });
+      cancelAnimation = animateSpring(spring, 0, (value) => {
+        if (overlayEl) {
+          overlayEl.style.transform = `translateY(${value}px)`;
+          overlayEl.style.opacity = `${Math.max(0, 1 - Math.abs(value) / 400)}`;
+        }
+      }, () => {
+        if (overlayEl) {
+          overlayEl.style.transform = '';
+          overlayEl.style.opacity = '';
+          // Restore backdrop-filter after snap-back
+          overlayEl.style.backdropFilter = '';
+          (overlayEl.style as any).webkitBackdropFilter = '';
+        }
+        cancelAnimation = null;
+      });
+    }
+    verticalDismissActive = false;
+  }
+
+  // --- Pointer event handlers ---
+  function onPointerDown(e: PointerEvent) {
+    if (completed) return;
+    if (e.button !== 0) return;
+    if ((e.target as HTMLElement)?.closest('button, a, input')) return;
+    // A drag takes over from any queued key presses.
+    queuedSteps = 0;
+
+    // Preserve vertical scrolling while horizontal gestures change cards.
+
+    // Allow interruption of ongoing animation
+    if (animating) {
+      cancelAnimation?.();
+      cancelAnimation = null;
+      animating = false;
+      if (cardEl) { cardEl.style.transform = ''; cardEl.style.opacity = ''; }
+      resetGhostStyles();
+      resetDotStyles();
+    }
+
+    isDragging = true;
+    gestureDirection = 'undecided';
+    dragStartX = e.clientX;
+    dragStartY = e.clientY;
+    dragDeltaX = 0;
+    dragDeltaY = 0;
+    activePointerId = e.pointerId;
+    crossedCommitThreshold = false;
+    verticalDismissActive = false;
+    pointerCaptured = false;
+    cachedCardWidth = 0; // Reset width cache for this drag session
+
+    // Determine if this touch can trigger vertical dismiss (only from header zones)
+    canDismissFromHere = !!((e.target as HTMLElement)?.closest('.card-top, .headline-area, .progress-track, .header'));
+
+    tracker.reset();
+    tracker.push(e.clientX, e.clientY);
+
+    // Do NOT capture pointer here — wait until gesture is classified as horizontal
+    // This allows the browser to handle vertical scroll natively
+
+    // Remove CSS transitions during drag
+    if (cardEl) {
+      cardEl.style.transition = 'none';
+    }
+  }
+
+  function onPointerMove(e: PointerEvent) {
+    if (!isDragging || e.pointerId !== activePointerId) return;
+
+    const dx = e.clientX - dragStartX;
+    const dy = e.clientY - dragStartY;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    tracker.push(e.clientX, e.clientY);
+
+    // Gesture disambiguation — single pass, minimal dead zone
+    if (gestureDirection === 'undecided') {
+      if (absDx < 3 && absDy < 3) return; // minimal dead zone
+
+      const classification = classifyGesture(dx, dy);
+      if (classification === 'horizontal') {
+        gestureDirection = 'horizontal';
+        // NOW capture the pointer — only for confirmed horizontal swipes
+        try { (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId); pointerCaptured = true; } catch {}
+        // Dynamically block touch-action during horizontal drag
+        if (cardEl) (cardEl as HTMLElement).style.touchAction = 'none';
+      } else {
+        // Vertical or ambiguous — default to vertical (scroll or dismiss)
+        gestureDirection = 'vertical';
+        if (canDismissFromHere) {
+          verticalDismissActive = true;
+        } else {
+          // Not in dismiss zone — release entirely, let browser handle scroll
+          isDragging = false;
+          gestureDirection = 'undecided';
+          return;
+        }
+      }
+    }
+
+    if (gestureDirection === 'vertical') {
+      if (verticalDismissActive) {
+        dragDeltaY = dy;
+        handleVerticalDismiss(dy);
+      }
+      return;
+    }
+
+    if (gestureDirection !== 'horizontal') return;
+
+    e.preventDefault();
+
+    const width = getCardWidth();
+    const maxRubber = width * 0.25;
+
+    // Check if at edge (rubber band)
+    const swipingRight = dx > 0;
+    const swipingLeft = dx < 0;
+    const atLeftEdge = swipingRight && current <= 0 && !completed;
+    const atRightEdge = swipingLeft && current >= totalCards - 1 && !completed;
+
+    if (atLeftEdge || atRightEdge) {
+      dragDeltaX = rubberBand(dx, maxRubber);
+    } else {
+      dragDeltaX = dx;
+    }
+
+    // Check commit threshold for haptic
+    const commitDist = width * 0.15;
+    if (!crossedCommitThreshold && Math.abs(dragDeltaX) > commitDist) {
+      crossedCommitThreshold = true;
+      haptic(5);
+    } else if (crossedCommitThreshold && Math.abs(dragDeltaX) < commitDist * 0.8) {
+      crossedCommitThreshold = false;
+    }
+
+    applyDragTransform(dragDeltaX);
+  }
+
+  function onPointerUp(e: PointerEvent) {
+    if (!isDragging || e.pointerId !== activePointerId) return;
+
+    isDragging = false;
+    activePointerId = null;
+
+    if (pointerCaptured) {
+      try { (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId); } catch {}
+      pointerCaptured = false;
+    }
+
+    // Restore touch-action and transition
+    if (cardEl) {
+      (cardEl as HTMLElement).style.touchAction = '';
+      cardEl.style.transition = '';
+    }
+
+    // Vertical dismiss
+    if (gestureDirection === 'vertical' && verticalDismissActive) {
+      finishVerticalDismiss(dragDeltaY);
+      gestureDirection = 'undecided';
+      return;
+    }
+
+    if (gestureDirection !== 'horizontal') {
+      gestureDirection = 'undecided';
+      return;
+    }
+
+    const { vx } = tracker.getVelocity();
+    const direction = shouldCommit(dragDeltaX, vx);
+
+    if (direction) {
+      // Check edge cases
+      const atLeftEdge = direction === 'right' && current <= 0 && !completed;
+      const atRightEdge = direction === 'left' && current >= totalCards - 1;
+
+      if (atLeftEdge) {
+        rubberBandBack();
+      } else if (atRightEdge) {
+        // Go to completion
+        showCompletion();
+        snapBack(vx);
+      } else if (direction === 'left') {
+        if (current < totalCards - 1) {
+          goTo(current + 1, 'right', vx);
+        } else {
+          showCompletion();
+          snapBack(vx);
+        }
+      } else {
+        // right swipe = go back
+        if (completed) {
+          completed = false;
+          completionVisible = false;
+          goTo(totalCards - 1, 'left', vx);
+        } else if (current > 0) {
+          goTo(current - 1, 'left', vx);
+        } else {
+          rubberBandBack();
+        }
+      }
+    } else {
+      // Snap back
+      snapBack(vx);
+    }
+
+    dragDeltaX = 0;
+    gestureDirection = 'undecided';
+  }
+
+  function onPointerCancel(e: PointerEvent) {
+    if (e.pointerId !== activePointerId) return;
+    isDragging = false;
+    activePointerId = null;
+    gestureDirection = 'undecided';
+    pointerCaptured = false;
+    if (cardEl) {
+      (cardEl as HTMLElement).style.touchAction = '';
+      cardEl.style.transition = '';
+    }
+    snapBack();
+    dragDeltaX = 0;
+  }
+
+  // Multi-touch cancellation
+  function onTouchStart(e: TouchEvent) {
+    if (e.touches.length > 1 && isDragging) {
+      isDragging = false;
+      activePointerId = null;
+      gestureDirection = 'undecided';
+      if (cardEl) cardEl.style.transition = '';
+      snapBack();
+      dragDeltaX = 0;
+    }
+  }
+
+  // Keyboard handler
+  function onKeyDown(e: KeyboardEvent) {
+    if (shareOpen) return;
+    // H5: Focus trap — Tab cycles within the reader overlay
+    if (e.key === 'Tab' && overlayEl) {
+      const focusable = overlayEl.querySelectorAll<HTMLElement>('button, [href], input, [tabindex]:not([tabindex="-1"])');
+      if (focusable.length > 0) {
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      requestStep(1);
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      requestStep(-1);
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      onClose();
+    }
+  }
+
+  // --- Swipe hint ---
+  function maybeShowSwipeHint() {
+    if (typeof sessionStorage === 'undefined') return;
+    const key = 'tfa_swipe_hint_shown';
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, '1');
+
+    showSwipeHint = true;
+    let iterCount = 0;
+    const interval = setInterval(() => {
+      iterCount++;
+      if (iterCount >= 3) {
+        clearInterval(interval);
+        swipeHintFaded = true;
+        setTimeout(() => { showSwipeHint = false; }, 400);
+      }
+    }, 1500);
+  }
+
+  // --- Content scroll overflow detection (now driven by scroll-physics) ---
+  let contentOverflows = $derived(scrollState.canScroll);
+
+  function attachScrollObserver() {
+    cleanupScrollObserver?.();
+    cleanupScrollObserver = null;
+
+    if (!cardContentEl) return;
+
+    cleanupScrollObserver = observeScroll(cardContentEl, (state) => {
+      scrollState = state;
+      applyFadeGradient(cardContentEl!, state);
+
+      // Show scroll indicator while scrolling, fade out after stop
+      scrollIndicatorVisible = true;
+      if (scrollIndicatorTimer) clearTimeout(scrollIndicatorTimer);
+      scrollIndicatorTimer = setTimeout(() => {
+        scrollIndicatorVisible = false;
+      }, 1200);
+    });
+  }
+
+  // Accessibility: store focus origin for restoration on close
+  let focusOrigin: Element | null = null;
+  let inertSiblings: HTMLElement[] = [];
+
+  function toggleBackgroundInert(shouldInert: boolean) {
+    const host = overlayEl?.parentElement;
+    if (!host) return;
+    if (shouldInert) {
+      inertSiblings = [];
+      for (const node of Array.from(host.children)) {
+        if (!(node instanceof HTMLElement) || node === overlayEl || node.inert) continue;
+        node.inert = true;
+        inertSiblings.push(node);
+      }
+      return;
+    }
+    // Restore tracked siblings
+    for (const node of inertSiblings) {
+      node.inert = false;
+    }
+    // Safety: also sweep all host children — catches nodes marked inert
+    // by nested dialogs (ShareModal) that may not have cleaned up yet
+    for (const node of Array.from(host.children)) {
+      if (node instanceof HTMLElement && node !== overlayEl) {
+        node.inert = false;
+      }
+    }
+    inertSiblings = [];
+  }
+
+  function restoreReaderFocus() {
+    const target = focusOrigin instanceof HTMLElement && focusOrigin !== document.body
+      ? focusOrigin
+      : document.querySelector<HTMLElement>('[role="option"][aria-selected="true"], .hero-card, .brand');
+    target?.focus();
+  }
+
+  // Screen Wake Lock: keep screen on while reading
+  let wakeLock: WakeLockSentinel | null = null;
+  let wakeLockVisCleanup: (() => void) | null = null;
+
+  onMount(() => {
+    focusOrigin = document.activeElement;
+    toggleBackgroundInert(true);
+    overlayEl?.focus();
+    // The browser jumped the window to the static article's #card-N section
+    // before the reader opened; start the page underneath from the top.
+    if (hashCard !== null) window.scrollTo(0, 0);
+    lockScroll();
+
+    // Acquire wake lock
+    if ('wakeLock' in navigator) {
+      navigator.wakeLock.request('screen').then(wl => { wakeLock = wl; }).catch(() => {});
+    }
+    // Re-acquire on visibility change (released when tab goes background)
+    const onVis = () => {
+      if (document.visibilityState === 'visible' && !wakeLock && 'wakeLock' in navigator) {
+        navigator.wakeLock.request('screen').then(wl => { wakeLock = wl; }).catch(() => {});
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
+    wakeLockVisCleanup = () => document.removeEventListener('visibilitychange', onVis);
+
+    // Clear notification for this issue
+    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({ type: 'ISSUE_OPENED', issueId: issue.id });
+    }
+
+    // Check reduced motion preference
+    if (typeof window !== 'undefined') {
+      prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    maybeShowSwipeHint();
+
+    // Announce initial card for screen readers
+    requestAnimationFrame(announceCard);
+
+    // Cache dot elements for perf
+    requestAnimationFrame(cacheDotElements);
+
+    // Attach scroll observer after first render
+    requestAnimationFrame(attachScrollObserver);
+
+    // Shared-element entry animation from card origin
+    if (originRect && overlayEl && !prefersReducedMotion) {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const sx = originRect.width / vw;
+      const sy = originRect.height / vh;
+      const tx = originRect.left;
+      const ty = originRect.top;
+
+      // Disable the CSS entry animation when using shared-element
+      overlayEl.style.animation = 'none';
+
+      const spring = createSpring(1, { stiffness: 500, damping: 30, mass: 1, precision: 0.01 });
+      animateSpring(spring, 0, (t) => {
+        if (overlayEl) {
+          overlayEl.style.transformOrigin = '0 0';
+          overlayEl.style.transform = `translate(${tx * t}px, ${ty * t}px) scale(${1 + (sx - 1) * t}, ${1 + (sy - 1) * t})`;
+          overlayEl.style.borderRadius = `${20 * t}px`;
+          overlayEl.style.opacity = `${1 - t * 0.3}`;
+        }
+      }, () => {
+        if (overlayEl) {
+          overlayEl.style.transform = '';
+          overlayEl.style.transformOrigin = '';
+          overlayEl.style.borderRadius = '';
+          overlayEl.style.opacity = '';
+        }
+      });
+    }
+    // Card content follows normal flow and respects the reader’s text size.
+  });
+
+  onDestroy(() => {
+    unlockScroll();
+    toggleBackgroundInert(false);
+    cancelAnimation?.();
+    cleanupScrollObserver?.();
+    if (scrollIndicatorTimer) clearTimeout(scrollIndicatorTimer);
+    // Release wake lock
+    wakeLock?.release().catch(() => {});
+    wakeLock = null;
+    wakeLockVisCleanup?.();
+    // Restore focus to the element that opened the reader
+    restoreReaderFocus();
+
+    // Safety net: force-clear body scroll lock and inert on next frame
+    // in case the primary cleanup missed due to DOM timing
+    requestAnimationFrame(() => {
+      const b = document.body;
+      if (b.style.position === 'fixed') {
+        const y = Math.abs(parseInt(b.style.top || '0', 10));
+        b.style.position = '';
+        b.style.top = '';
+        b.style.left = '';
+        b.style.right = '';
+        b.style.overflow = '';
+        window.scrollTo(0, y);
+      }
+      // Clear any stale inert on the app shell
+      const shell = document.querySelector('.app-shell');
+      if (shell instanceof HTMLElement && shell.inert) {
+        shell.inert = false;
+      }
+    });
+  });
+
+  // Re-attach scroll observer when card changes (new content element)
+  $effect(() => {
+    // Depend on current card and completed state
+    void current;
+    void completed;
+    // Reset scroll state for new card
+    scrollState = { atTop: true, atBottom: true, canScroll: false, scrollProgress: 0 };
+    requestAnimationFrame(attachScrollObserver);
+    requestAnimationFrame(cacheDotElements);
+  });
+</script>
+
+<svelte:window onkeydown={onKeyDown} />
+
+<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+<div
+  class="overlay"
+  class:reduced-motion={prefersReducedMotion}
+  class:no-entry={!animateEntry}
+  bind:this={overlayEl}
+  id="mobile-reader-dialog"
+  tabindex="0"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Reading: {issue.headline}"
+>
+  <!-- Screen reader announcements for card transitions -->
+  <div class="sr-announce" role="status" aria-live="polite" aria-atomic="true">{announcement}</div>
+
+  <div class="header">
+    <button class="close-btn" onclick={onClose} aria-label="Close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <div class="reader-title">
+      <h1 class="headline" class:headline--lead={current === 0 && !completed} title={issue.headline}>{issue.headline}</h1>
+      <span class="counter">Card {completed ? totalCards : current + 1} of {totalCards} · {issue.type ?? 'Analysis'}</span>
+    </div>
+    <button class="close-btn" aria-label="Issue details, sources and changes" aria-expanded={issueDetailsOpen} aria-controls="reader-issue-details" onclick={() => { issueDetailsOpen = !issueDetailsOpen; }}>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h.01M12 12h.01M19 12h.01"/></svg>
+    </button>
+  </div>
+  <div class="progress-track" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax={totalCards} aria-valuenow={completed ? totalCards : current + 1}>
+    {#each issue.cards as _, i}
+      <span class="progress-segment" class:is-read={completed || i < current} class:is-current={!completed && i === current}></span>
+    {/each}
+  </div>
+
+  <!-- Card area -->
+  <div
+    class="card-area"
+    bind:this={cardAreaEl}
+    role="region"
+    aria-label="Issue reading area"
+    tabindex="0"
+    ontouchstart={onTouchStart}
+  >
+    <div id="reader-issue-details" hidden={!issueDetailsOpen} class="reader-issue-details">
+    {#if issueDetailsOpen}
+  <!-- Headline -->
+  <div class="headline-area">
+    <!-- On the first card the headline leads the page, as a reader arriving
+         from a shared link needs it (playbook §07). From card 2 on it shrinks
+         back to a label, as the deck below already gives way to the cards. -->
+    <p class="details-headline">{issue.headline}</p>
+    <IssueMeta {issue} variant="mobile" />
+        {#if primaryLens(issue.cards)}<a class="fora-issue-topic" href={topicHref(primaryLens(issue.cards)!)}>More on {primaryLens(issue.cards)} <span aria-hidden="true">→</span></a>{/if}
+    {#if issue.legacyAudit}
+      <div class="legacy-caveat" role="note" aria-label="Pre-pipeline issue notice">
+        <span class="legacy-caveat__icon" aria-hidden="true">&#9432;</span>
+        <span class="legacy-caveat__text">Pre-pipeline issue — primary sources for the claims below are not on file yet. The editorial review trail predates the current 4-stage pipeline. <a href="/disclaimer" class="legacy-caveat__link">Read more</a>.</span>
+      </div>
+    {/if}
+  </div>
+
+      <p class="reader-deck">{issue.context}</p>
+      <p class="reader-score">Opinion Shift: {issue.opinionShift} · Editorial Quality Score: {issue.finalScore}</p>
+      <IssueSources {issue} variant="mobile" />
+      <IssueChanges {issue} variant="mobile" />
+    {/if}
+    </div>
+    {#if !issueDetailsOpen && current === 0 && !completed}
+      <div class="reader-introduction">
+        <IssueMeta {issue} variant="mobile" />
+        {#if primaryLens(issue.cards)}<a class="fora-issue-topic" href={topicHref(primaryLens(issue.cards)!)}>More on {primaryLens(issue.cards)} <span aria-hidden="true">→</span></a>{/if}
+        <p class="reader-deck">{issue.context}</p>
+        {#if issue.legacyAudit}
+          <p class="legacy-caveat" role="note" aria-label="Pre-pipeline issue notice">Pre-pipeline issue — primary sources for the claims below are not on file yet. <a href="/disclaimer">Read more</a>.</p>
+        {/if}
+      </div>
+    {/if}
+    {#if completed}
+      <div class="card completion-card" class:completion-visible={completionVisible}>
+        <div class="completion-inner">
+          <div class="check-circle">
+            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12" stroke-dasharray="50" stroke-dashoffset="50" class="check-path" />
+            </svg>
+          </div>
+          <p class="completion-title">All {totalCards} perspectives</p>
+
+          <!-- Trust summary: Opinion Shift + Editorial Audit -->
+          <div style="width:100%;max-width:340px;margin:4px 0;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+              <div style="flex:1;"><OpinionBar score={issue.opinionShift} height={4} showLabel={false} /></div>
+              <span style="font-size: var(--text-sm);font-weight:700;color:var(--text-secondary);">{issue.opinionShift}%</span>
+              <span style="font-size: var(--text-micro);color:var(--text-tertiary);">Opinion Shift</span>
+            </div>
+            {#if issue.stageScores && issue.finalScore}
+              <VerdictBar scores={issue.stageScores} finalScore={issue.finalScore} compact={false} />
+            {/if}
+          </div>
+
+          {#if connections.length >= 2}
+            <button class="connection-nudge" onclick={() => { patternSheetOpen = true; }}>
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              {connections.length} connected {connections.length === 1 ? 'issue' : 'issues'}
+              <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          {/if}
+
+          <!-- A-8: a related issue first (curated links, then the fact graph);
+               the feed order stays available as "Next in Latest". -->
+          {#if relatedPick && onNavigateToIssue}
+            <button
+              class="continue-related completion-btn-enter"
+              onclick={() => { if (relatedPick) onNavigateToIssue?.(relatedPick.id); }}
+              data-continue-related={relatedPick.id}
+            >
+              <span class="continue-related__kicker">Continue: related</span>
+              <span class="continue-related__headline">{relatedPick.headline}</span>
+              {#if relatedPick.sharedEntities.length > 0}
+                <span class="continue-related__why">Shares {relatedPick.sharedEntities.slice(0, 3).join(', ')}</span>
+              {/if}
+            </button>
+          {:else if nextIssueHeadline}
+            <!-- C6: Next issue preview -->
+            <div style="width:100%;max-width:340px;padding:10px 14px;background:var(--bg-sunken);border-radius: var(--radius-md);margin:4px 0;">
+              <div style="font-size: var(--text-micro);font-weight:600;color:var(--text-faint);text-transform:uppercase;">Up next</div>
+              <div style="font-size: var(--text-sm);font-weight:600;color:var(--text-secondary);line-height:1.35;margin-top:2px;">{nextIssueHeadline}</div>
+            </div>
+          {/if}
+
+          <div class="completion-buttons">
+            {#if completionButtonsVisible.length > 0}
+              {#if onNext}
+                <button class={relatedPick ? 'btn-secondary completion-btn-enter' : 'btn-next completion-btn-enter'} onclick={onNext}>{relatedPick ? 'Next in Latest' : 'Next topic'}</button>
+              {/if}
+              {#if onReturnHome}
+                <button class={onNext ? 'btn-secondary completion-btn-enter' : 'btn-done completion-btn-enter'} onclick={onReturnHome}>Back to Today</button>
+              {:else if !onNext}
+                <button class="btn-done completion-btn-enter" onclick={onClose}>Done</button>
+              {/if}
+              <button class="btn-share completion-btn-enter" onclick={() => { shareCardIndex = null; shareOpen = true; }} aria-expanded={shareOpen} aria-haspopup="dialog">Share</button>
+              <div class="completion-btn-enter" style="width:100%;"><VerifyCopyButton {issue} variant="link" /></div>
+            {/if}
+          </div>
+          <PushPrompt />
+          <IssueSources {issue} variant="mobile" />
+          <IssueChanges {issue} variant="mobile" />
+        </div>
+      </div>
+    {:else}
+      <!-- Ghost cards -->
+
+
+      <!-- Active card -->
+      <div
+        class="card active-card"
+        bind:this={cardEl}
+        onpointerdown={onPointerDown}
+        onpointermove={onPointerMove}
+        onpointerup={onPointerUp}
+        onpointercancel={onPointerCancel}
+        role="group"
+        aria-label="Card {current + 1} of {totalCards}"
+      >
+        <!-- Card top -->
+        <div class="card-top">
+          <div class="type-pill" style="background:{meta.bg};">
+            <span class="pill-icon" style="color:{meta.color};">
+              {#if card.t === 'hook'}
+                <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              {:else if card.t === 'fact'}
+                <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"></circle><path d="m20 20-3.5-3.5"></path></svg>
+              {:else if card.t === 'reframe'}
+                <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+              {:else if card.t === 'analogy'}
+                <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+              {:else}
+                <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="m14.5 9.5-3 7-1-4-4-1z"></path></svg>
+              {/if}
+            </span>
+            <span class="pill-label" style="color:{meta.color};">{cardLabel(card)}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;touch-action:manipulation;position:relative;z-index:15;">
+            <button onclick={(e) => { e.stopPropagation(); shareCardIndex = current; shareOpen = true; }} style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--bg-elevated);border:1px solid var(--border-divider);border-radius: var(--radius-md);cursor:pointer;transition:border-color 0.2s ease-out;touch-action:manipulation;" aria-label="Share this card" aria-expanded={shareOpen} aria-haspopup="dialog">
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card center -->
+        <div class="card-center" bind:this={cardContentEl}>
+          <p data-reader-primary class="big-text" style:opacity={bigTextVisible ? 1 : 0}>{card.big}</p>
+          {#if card.sub}
+            <p data-reader-body class="sub-text" style:opacity={subTextVisible ? 1 : 0}>{card.sub}</p>
+          {/if}
+          {#if card.src?.length}
+            <div class="card-sources-slot" style:opacity={subTextVisible ? 1 : 0}>
+              <CardSources {card} entries={issue.sourceList} variant="mobile" />
+            </div>
+          {/if}
+        </div>
+
+        <!-- Card bottom -->
+        <div class="card-bottom" style="display:flex;align-items:center;justify-content:space-between;">
+
+          <div>
+          {#if showSwipeHint && current === 0}
+            <span class="swipe-hint" class:swipe-hint-fade={swipeHintFaded}>Swipe or tap arrows</span>
+          {:else if card.t === 'fact' && connections.length > 0}
+            <button onclick={(e) => { e.stopPropagation(); patternSheetOpen = true; }} style="font-size:var(--text-xs);font-weight:600;color:var(--score-info);background:none;border:none;cursor:pointer;padding:0;font-family:inherit;">Tracked in {connections.length} {connections.length === 1 ? 'issue' : 'issues'} &rsaquo;</button>
+          {:else if current === totalCards - 2 && !completed}
+            <span style="font-size: var(--text-sm);font-weight:600;color:var(--text-tertiary);">Almost done</span>
+          {:else if current === totalCards - 1 && !completed}
+            <span style="font-size: var(--text-sm);font-weight:600;color:var(--text-tertiary);">Last one</span>
+          {/if}
+          </div>
+        </div>
+      </div>
+
+    {/if}
+  </div>
+
+  <!-- Card navigation sits under the card, in its own row, so the arrows
+       never cover card text at narrow widths (A-4). -->
+  {#if !completed}
+    <div class="card-nav">
+      {#if current > 0}
+        <button class="nav-chevron" onclick={() => requestStep(-1)} aria-label="Previous card">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+      {:else}
+        <span class="nav-chevron-spacer" aria-hidden="true"></span>
+      {/if}
+      <SaveButton issueId={issue.id} cardIndex={current} />
+      <button class="nav-chevron" onclick={() => requestStep(1)} aria-label={current < totalCards - 1 ? 'Next card' : 'Finish reading'}>
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  {/if}
+
+  <!-- Bottom safe area spacing (dots removed — 2/6 counter + card type pill + ghost cards are sufficient) -->
+
+</div>
+
+{#if shareOpen}
+  <ShareModal issue={issue} cardIndex={shareCardIndex} onClose={() => { shareOpen = false; }} />
+{/if}
+
+{#if patternSheetOpen && connections.length > 0}
+  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div class="pattern-backdrop" class:pattern-backdrop--visible={patternSheetOpen} onclick={(e) => { if (e.target === e.currentTarget) patternSheetOpen = false; }}>
+    <div class="pattern-panel" class:pattern-panel--visible={patternSheetOpen} role="dialog" aria-modal="true" aria-label="Connected issues">
+      <div class="drag-handle-wrap"><div class="drag-handle"></div></div>
+      <div class="panel-header">
+        <span class="panel-title">Connected issues</span>
+        <button class="close-btn" onclick={() => { patternSheetOpen = false; }} aria-label="Close">
+          <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;padding-bottom:8px;">
+        {#each connections as conn}
+          <button
+            class="pattern-issue-card"
+            onclick={() => {
+              patternSheetOpen = false;
+              if (onNavigateToIssue) {
+                onNavigateToIssue(conn.id);
+              }
+            }}
+          >
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:6px;">
+                {#if conn.readState === 'completed'}
+                  <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--status-green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+                {:else if conn.readState === 'started'}
+                  <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><circle cx="12" cy="12" r="9" stroke="var(--score-warning)" stroke-width="2" fill="none"/><path d="M12 3a9 9 0 0 1 0 18" fill="var(--score-warning)"/></svg>
+                {/if}
+                <div style="font-size: var(--text-ui);font-weight:{conn.readState === 'completed' ? '600' : '600'};color:{conn.readState === 'completed' ? 'var(--text-secondary)' : 'var(--text-primary)'};line-height:1.35;">{conn.headline}</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
+                <div style="width:32px;height:3px;background:var(--bg-sunken);border-radius: var(--radius-pill);overflow:hidden;">
+                  <div style="height:100%;width:{conn.opinionShift}%;background:{opinionColor(conn.opinionShift)};border-radius: var(--radius-pill);"></div>
+                </div>
+                <span style="font-size: var(--text-micro);font-weight:700;color:var(--text-secondary);font-variant-numeric:tabular-nums;">{conn.opinionShift}%</span>
+                <span style="font-size: var(--text-micro);color:var(--text-muted);">{conn.sharedEntities.slice(0, 3).join(' · ')}</span>
+                {#if conn.hasReaction}
+                  <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="var(--highlight-accent)" stroke="none" style="flex-shrink:0;opacity:0.6;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                {/if}
+              </div>
+            </div>
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-faint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        {/each}
+      </div>
+
+      {#if connections.length > 5}
+        <div style="font-size: var(--text-xs);color:var(--text-muted);text-align:center;padding:4px 0;">
+          +{connections.length - 5} more
+        </div>
+      {/if}
+    </div>
+  </div>
+{/if}
+
+<style>
+  .sr-announce {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: var(--overlay-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    touch-action: auto;
+    will-change: transform, opacity;
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    animation: overlayEnter 0.3s var(--ease-out-cubic, cubic-bezier(0.33, 1, 0.68, 1)) both;
+  }
+
+  .overlay.no-entry {
+    animation: none;
+  }
+
+  @keyframes overlayEnter {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .progress-track {
+    width: 100%;
+    height: 4px;
+    background: var(--bg-sunken);
+    flex-shrink: 0;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    transition: width var(--duration-normal, 250ms) ease, background var(--duration-normal, 250ms) ease;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--overlay-bg);
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px 0;
+    flex-shrink: 0;
+  }
+
+  .counter {
+    font-size: var(--text-body);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .close-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+    font-size: var(--text-subtitle);
+    line-height: 1;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .close-btn:hover {
+      background: var(--border-subtle);
+    }
+  }
+
+  .headline-area {
+    width: 100%;
+    max-width: 440px;
+    padding: 8px 20px 0;
+    flex-shrink: 0;
+  }
+
+  .headline {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 6px;
+    line-height: 1.32;
+    text-wrap: balance;
+    hyphens: manual;
+  }
+  .headline--lead {
+    font-size: var(--text-subtitle);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: 8px;
+  }
+  @media (max-height: 600px) {
+    .headline--lead {
+      font-size: var(--text-body-lg);
+    }
+  }
+
+  /* A-2: the static article's deck, kept as card 1's summary. */
+  .reader-deck {
+    width: 100%;
+    max-width: 440px;
+    /* Vertical space as margin, not padding, so a clamped deck clips cleanly. */
+    margin: 2px 0 6px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    font-size: var(--text-ui);
+    line-height: 1.5;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+  }
+
+  .legacy-caveat {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 4px 0 8px;
+    padding: 8px 10px;
+    background: var(--bg-sunken);
+    border-left: 3px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-micro);
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+  .legacy-caveat__icon {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--text-tertiary);
+  }
+  .legacy-caveat__text { flex: 1; }
+  .legacy-caveat__link {
+    color: var(--text-muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .legacy-caveat__link:hover { color: var(--text-secondary); }
+
+  .card-area {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 440px;
+    padding: 12px 16px 4px;
+    position: relative;
+    min-height: 0;
+    perspective: 1000px;
+    touch-action: pan-y;
+  }
+
+  .ghost {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: auto;
+    top: 12px;
+    bottom: 4px;
+    background: var(--bg);
+    border-radius: var(--radius-xl);
+    pointer-events: none;
+    will-change: transform;
+    overflow-anchor: none;
+  }
+
+  .ghost-2 {
+    transform: scale(0.94) translateY(16px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    z-index: 1;
+    backface-visibility: hidden;
+  }
+
+  .ghost-1 {
+    transform: scale(0.97) translateY(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    z-index: 2;
+    backface-visibility: hidden;
+  }
+
+  .card {
+    position: relative;
+    inset: auto;
+    z-index: 3;
+    width: auto;
+    background: var(--bg);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    will-change: transform;
+    overflow-anchor: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .active-card {
+    cursor: grab;
+    touch-action: pan-y;
+  }
+
+  .active-card:active {
+    cursor: grabbing;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+  }
+
+  .type-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+  }
+
+  .pill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .pill-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* A-5: text starts under the card label instead of floating mid-card. */
+  .card-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.875rem;
+    min-height: 0;
+    overflow: visible;
+    position: relative;
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    right: 2px;
+    width: 3px;
+    height: 24px;
+    border-radius: var(--radius-pill);
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .scroll-indicator-visible {
+    opacity: 1;
+  }
+
+  .big-text {
+    font-size: 1.5rem;
+    user-select: text;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.45;
+    transition: opacity 250ms ease;
+    margin: 0;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    font-optical-sizing: auto;
+    max-width: 65ch;
+  }
+
+  .sub-text {
+    user-select: text;
+    font-size: var(--text-reading-lg);
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin: 0;
+    max-width: 65ch;
+    transition: opacity 250ms ease;
+  }
+
+  .card-sources-slot {
+    transition: opacity 250ms ease;
+  }
+
+  .card-bottom {
+    flex-shrink: 0;
+    margin-top: 16px;
+    text-align: right;
+  }
+
+  .swipe-hint {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    user-select: none;
+    display: inline-block;
+    animation: nudgeHint 1.5s ease-in-out 3;
+    transition: opacity 0.4s ease;
+  }
+
+  .swipe-hint-fade {
+    opacity: 0;
+  }
+
+  @keyframes nudgeHint {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(12px); }
+  }
+
+
+  /* Completion card */
+  .completion-card {
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-y: auto;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity var(--duration-medium, 350ms) ease, transform var(--duration-medium, 350ms) ease;
+  }
+
+  .completion-card.completion-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .completion-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0 16px;
+    width: 100%;
+  }
+
+  .check-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-round);
+    background: linear-gradient(135deg, var(--status-green), var(--status-green-text));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .check-path {
+    animation: drawCheck 0.4s ease 0.4s forwards;
+  }
+
+  @keyframes drawCheck {
+    from { stroke-dashoffset: 50; }
+    to { stroke-dashoffset: 0; }
+  }
+
+  .completion-title {
+    font-size: var(--text-body-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  .completion-takeaway {
+    font-size: var(--text-body);
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 320px;
+  }
+
+  .completion-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .completion-btn-enter {
+    animation: fadeSlideUp 0.3s ease both;
+  }
+
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .btn-done {
+    width: 100%;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-size: var(--text-body);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: var(--text-primary);
+    color: var(--bg);
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .btn-done:hover {
+      background: var(--text-secondary);
+    }
+  }
+
+  .btn-next {
+    width: 100%;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-size: var(--text-body);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: var(--text-primary);
+    color: var(--bg);
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .btn-next:hover {
+      background: var(--text-secondary);
+    }
+  }
+
+  .continue-related {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 14px 16px;
+    border-radius: var(--radius-lg);
+    border: none;
+    background: var(--text-primary);
+    color: var(--bg);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .continue-related:hover {
+      background: var(--text-secondary);
+    }
+  }
+
+  .continue-related__kicker {
+    font-size: var(--text-micro);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .continue-related__headline {
+    font-size: var(--text-ui);
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .continue-related__why {
+    font-size: var(--text-xs);
+    opacity: 0.85;
+  }
+
+  .btn-secondary {
+    width: 100%;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-size: var(--text-body);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border-divider);
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    transition: background var(--duration-fast, 150ms) ease;
+  }
+
+  @media (hover: hover) {
+    .btn-secondary:hover {
+      background: var(--bg-sunken);
+    }
+  }
+
+  .btn-share {
+    width: 100%;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border-subtle);
+    background: transparent;
+    color: var(--text-secondary);
+    transition: background var(--duration-fast, 150ms) ease;
+    touch-action: auto;
+  }
+
+  @media (hover: hover) {
+    .btn-share:hover {
+      background: var(--bg-elevated);
+    }
+  }
+
+  /* Reduced motion overrides */
+  .reduced-motion .check-circle,
+  .reduced-motion .completion-btn-enter,
+  .reduced-motion .continue-related {
+    animation: none;
+  }
+
+  .reduced-motion .check-path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+
+  .reduced-motion .swipe-hint {
+    animation: none;
+  }
+
+  .reduced-motion .completion-card {
+    transition: none;
+  }
+
+  .reduced-motion .progress-fill {
+    transition: none;
+  }
+
+  .reduced-motion .dot {
+    transition: none;
+  }
+
+  /* Card navigation row under the card (A-4): arrows never overlap text. */
+  .card-nav {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 20px 0;
+    flex-shrink: 0;
+  }
+
+  .nav-chevron,
+  .nav-chevron-spacer {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .nav-chevron {
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-elevated);
+    border-radius: var(--radius-round);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: background 150ms ease, border-color 150ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+  }
+  @media (hover: hover) {
+    .nav-chevron:hover {
+      background: var(--bg);
+      border-color: var(--border-divider);
+    }
+  }
+
+  .reduced-motion .nav-chevron {
+    transition: none;
+  }
+
+  /* Connection nudge on completion card */
+  .connection-nudge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease-out;
+    min-height: 44px;
+    margin-bottom: 4px;
+  }
+  @media (hover: hover) {
+    .connection-nudge:hover {
+      background: var(--bg-sunken);
+    }
+  }
+
+  /* Tablet: widen card area from phone-sized 440px to use tablet space */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header,
+    .headline-area,
+    .card-area {
+      max-width: 560px;
+    }
+  }
+
+  @media (max-height: 500px) {
+    .overlay {
+      overflow-y: auto;
+    }
+
+    .header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--overlay-bg);
+      padding-top: 6px;
+    }
+
+    .headline-area {
+      padding-top: 4px;
+    }
+
+    .card-nav {
+      padding-top: 4px;
+    }
+
+    .card-area {
+      padding-top: 8px;
+      padding-bottom: 0;
+    }
+
+    .card {
+      padding: 16px 18px;
+    }
+
+    .card-top {
+      margin-bottom: 12px;
+    }
+
+    .card-center {
+      justify-content: flex-start;
+      overflow-y: auto;
+      padding-inline-end: 4px;
+    }
+
+    .card-bottom {
+      margin-top: 12px;
+    }
+
+    .completion-inner {
+      gap: 12px;
+      padding-top: 16px;
+    }
+  }
+
+  /* 10b: fixed chrome; the content scrolls, never shrinks. */
+  .overlay { background:var(--fora-paper); backdrop-filter:none; overflow:hidden; font-family:var(--fora-sans); }
+  .header { position:relative; padding:2px 4px; gap:4px; max-width:560px; min-height:52px; }
+  .reader-title { flex:1; min-width:0; }
+  .headline { font:600 .8125rem/1.4 var(--fora-sans); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin:0; }
+  .headline--lead { font-size:1.25rem; }
+  .counter { font:400 .75rem/1.4 var(--fora-sans); color:var(--fora-muted); }
+  .close-btn { flex-shrink:0; border-radius:999px; background:transparent; }
+  .progress-track { display:flex; gap:3px; padding:4px 12px 8px; height:auto; max-width:560px; background:transparent; }
+  .progress-segment { flex:1; height:3px; border-radius:2px; background:var(--fora-rule); }
+  .progress-segment.is-read { background:var(--fora-ink); }
+  .progress-segment.is-current { background:var(--fora-brand); }
+  .card-area { flex:1 1 0; min-height:0; overflow-y:auto; overflow-x:hidden; padding:0 16px; max-width:560px; perspective:none; overscroll-behavior:contain; }
+  .card { border-radius:0; box-shadow:none; background:transparent; padding:12px 0 16px; }
+  .card-center { overflow:visible; }
+  .card-top { margin-bottom:14px; gap:8px; }
+  .type-pill { border-radius:4px; padding:4px 6px; background:var(--fora-brand-tint) !important; }
+  .pill-label { white-space:normal; color:var(--fora-brand-strong) !important; }
+  .pill-icon { color:var(--fora-brand-strong) !important; }
+  .big-text { font:700 1.5rem/1.2 var(--fora-serif); }
+  .sub-text { font:400 1.125rem/1.55 var(--fora-serif); color:var(--fora-ink); }
+  .reader-introduction { padding:8px 0 12px; border-bottom:1px solid var(--fora-rule); }
+  .reader-deck { max-width:var(--fora-measure); padding:0; margin:8px 0 0; font:400 1.125rem/1.55 var(--fora-serif); }
+  .reader-issue-details { padding:8px 0 16px; border-bottom:1px solid var(--fora-rule); }
+  .reader-issue-details[hidden] { display:none; }
+  .headline-area { padding:0; }
+  .details-headline { font:700 1.5rem/1.2 var(--fora-serif); margin:0 0 12px; }
+  .reader-score { font-size:.8125rem; color:var(--fora-muted); }
+  .card-bottom :global(button) { min-height:44px; min-width:44px; color:var(--fora-brand) !important; }
+  .card-nav { flex-shrink:0; width:100%; max-width:560px; display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:8px; padding:6px 16px; border-top:1px solid var(--fora-rule); background:var(--fora-surface); }
+  .nav-chevron, .nav-chevron-spacer { width:44px; height:44px; }
+  .nav-chevron { color:var(--fora-brand); background:transparent; border:0; }
+  @media (forced-colors: active) {
+    .progress-segment { border:1px solid CanvasText; }
+    .progress-segment.is-current { background:Highlight; forced-color-adjust:none; }
+  }
+  .fora-issue-topic { display:inline-flex; align-items:center; min-height:44px; color:var(--fora-brand); font:600 .8125rem/1.5 var(--fora-sans); text-decoration:underline; text-underline-offset:3px; gap:8px; }
+</style>

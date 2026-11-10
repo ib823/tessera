@@ -1,0 +1,84 @@
+/* FORA v2.1: BrandTokens.dc.html is the colour authority.
+   Keep the T4A semantic API so existing reading, storage and policy components
+   can adopt the palette without replacing their behaviour. Typography follows
+   D06 option 1: Newsreader 400/700 with system sans, measured at 46,276 bytes. */
+:root {
+  --fora-paper: #FAF9F6;
+  --fora-surface: #FFFFFF;
+  --fora-ink: #16181B;
+  --fora-ink-2: #3F444B;
+  --fora-muted: #5B6169;
+  --fora-rule: #E4E1DA;
+  --fora-control-edge: #8A8F96;
+  --fora-brand: #0F6B6B;
+  --fora-brand-strong: #0B5454;
+  --fora-brand-tint: #E3F0EE;
+  --fora-signal: #B42318;
+  --fora-signal-tint: #FBEDE8;
+  --fora-sponsored: #EDE9E0;
+  --fora-focus: #1D4ED8;
+  --fora-serif: "Newsreader", Georgia, serif;
+  --fora-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--fora-serif);
+  --font-body: var(--fora-sans);
+  --fora-radius-card: 12px;
+  --fora-target: 44px;
+  --fora-measure: 65ch;
+
+  --bg: var(--fora-surface);
+  --bg-elevated: var(--fora-paper);
+  --bg-sunken: var(--fora-paper);
+  --card: var(--fora-surface);
+  --text-primary: var(--fora-ink);
+  --text-secondary: var(--fora-ink-2);
+  --text-tertiary: var(--fora-muted);
+  --text-muted: var(--fora-muted);
+  --text-faint: var(--fora-muted);
+  --border-subtle: var(--fora-rule);
+  --border-divider: var(--fora-rule);
+  --header-bg: var(--fora-paper);
+  --overlay-bg: var(--fora-paper);
+  --focus: var(--fora-focus);
+  --color-focus-ring: var(--fora-focus);
+  --highlight-accent: var(--fora-brand);
+  --highlight-bg: var(--fora-brand-tint);
+  --highlight-bg-strong: var(--fora-brand-tint);
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --content-max: 1360px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fora-paper: #121315;
+    --fora-surface: #1B1D20;
+    --fora-ink: #ECEAE6;
+    --fora-ink-2: #C7C4BE;
+    --fora-muted: #A3A8AF;
+    --fora-rule: #2A2D31;
+    --fora-control-edge: #6B7078;
+    --fora-brand: #5CC2B8;
+    --fora-brand-strong: #8AD6CD;
+    --fora-brand-tint: #16302D;
+    --fora-signal: #F2836F;
+    --fora-signal-tint: #3A1E1A;
+    --fora-sponsored: #2A2722;
+    --fora-focus: #8FA6FF;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--fora-focus) !important;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+::selection { background: var(--fora-brand-tint); color: var(--fora-ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
+@media (forced-colors: active) {
+  :focus-visible { outline-color: Highlight !important; }
+}

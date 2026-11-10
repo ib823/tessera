@@ -1,0 +1,259 @@
+/**
+ * Post-build stealth hardening script.
+ * Strips all framework-identifiable markers from the dist/ output.
+ */
+import { readdir, readFile, writeFile, rename, unlink, rm } from 'fs/promises';
+import { join, basename } from 'path';
+import { createHash } from 'node:crypto';
+import { STEALTH_TERMS } from './lib/stealth-terms.mjs';
+
+const DIST = new URL('../dist', import.meta.url).pathname;
+
+async function walk(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (const e of entries) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) files.push(...await walk(p));
+    else files.push(p);
+  }
+  return files;
+}
+
+function shortHash(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h + s.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h).toString(36).slice(0, 8);
+}
+
+// Strip non-essential PNG chunks (keep only IHDR, IDAT, IEND)
+function stripPngMetadata(buf) {
+  if (buf[0] !== 0x89 || buf[1] !== 0x50) return buf; // not a PNG
+  const sig = buf.subarray(0, 8);
+  const chunks = [];
+  let offset = 8;
+  const keep = new Set(['IHDR', 'IDAT', 'IEND', 'sRGB', 'tRNS', 'PLTE']);
+  while (offset < buf.length) {
+    const len = buf.readUInt32BE(offset);
+    const type = buf.subarray(offset + 4, offset + 8).toString('ascii');
+    const chunkTotal = 12 + len;
+    if (keep.has(type)) {
+      chunks.push(buf.subarray(offset, offset + chunkTotal));
+    }
+    offset += chunkTotal;
+  }
+  return Buffer.concat([sig, ...chunks]);
+}
+
+async function main() {
+  const files = await walk(DIST);
+  const renames = new Map();
+
+  // ── PHASE 1: Compute JS file renames ──
+  for (const f of files) {
+    const base = basename(f);
+    if (!base.endsWith('.js')) continue;
+    if (!f.includes('/_a/')) continue;
+    const stem = base.replace('.js', '');
+    const dotParts = stem.split('.');
+    if (dotParts.length >= 2) {
+      const hash = dotParts[dotParts.length - 1];
+      const newBase = `${hash}.js`;
+      if (newBase !== base) renames.set(base, newBase);
+    } else {
+      const hash = shortHash(base + Date.now());
+      renames.set(base, `${hash}.js`);
+    }
+  }
+
+  // ── PHASE 2: Rename JS files ──
+  for (const [oldBase, newBase] of renames) {
+    try { await rename(join(DIST, '_a', oldBase), join(DIST, '_a', newBase)); } catch {}
+  }
+
+  // ── PHASE 3: Process all HTML files ──
+  const htmlFiles = files.filter(f => f.endsWith('.html'));
+  for (const f of htmlFiles) {
+    let html = await readFile(f, 'utf8');
+
+    // Astro custom elements
+    html = html.replace(/astro-island/g, 'd-island');
+    html = html.replace(/astro-slot/g, 'd-slot');
+    html = html.replace(/astro-static-slot/g, 'd-ss');
+    html = html.replace(/astro-retry/g, '_r-retry');
+
+    // Astro globals and events
+    html = html.replace(/self\.Astro/g, 'self._R');
+    html = html.replace(/\bAstro\b/g, '_R');
+    html = html.replace(/astro:load/g, '_r:l');
+    html = html.replace(/astro:unmount/g, '_r:u');
+    html = html.replace(/astro:hydrate/g, '_r:h');
+    html = html.replace(/astro:after-swap/g, '_r:s');
+    html = html.replace(/astro:end/g, '_r:e');
+    html = html.replace(/astro:idle/g, '_r:i');
+    html = html.replace(/astro:visible/g, '_r:v');
+    html = html.replace(/astro:media/g, '_r:m');
+    html = html.replace(/astro:/g, '_r:');
+
+    // Svelte patterns in inline scripts (gap fix)
+    html = html.replace(/window\.__svelte/g, 'window._s');
+    html = html.replace(/svelte\.dev\/e\/[a-z_]*/g, '');
+    html = html.replace(/svelte-[a-z0-9]+/g, (m) => '_' + shortHash(m));
+
+    // Strip HTML comments
+    html = html.replace(/<!--[\s\S]*?-->/g, '');
+
+    // Rename data-astro-* attributes: strip "astro-" prefix but preserve unique cid hashes for scoping
+    html = html.replace(/data-astro-template/g, 'data-t');
+    html = html.replace(/data-astro-cid-/g, 'data-c-');
+    html = html.replace(/data-astro-[a-z0-9-]+/g, 'data-x');
+
+    // Strip component names from opts
+    html = html.replace(/"name":"[A-Za-z]+"/g, '"name":"c"');
+    // Island opts are attribute-encoded, so the rule above never matched them.
+    // A client:only="svelte" island would also store the renderer name as
+    // opts.value; the only-directive never reads it.
+    html = html.replace(/&quot;name&quot;:&quot;[A-Za-z]+&quot;/g, '&quot;name&quot;:&quot;c&quot;');
+    html = html.replace(/&quot;value&quot;:&quot;svelte&quot;/g, '&quot;value&quot;:&quot;c&quot;');
+
+    // Apply file renames
+    for (const [oldBase, newBase] of renames) {
+      html = html.replaceAll(oldBase, newBase);
+    }
+
+    await writeFile(f, html, 'utf8');
+  }
+
+  // ── PHASE 4: Process all JS files ──
+  const jsDir = join(DIST, '_a');
+  let jsFiles;
+  try { jsFiles = (await readdir(jsDir)).filter(f => f.endsWith('.js')); } catch { jsFiles = []; }
+  for (const base of jsFiles) {
+    const f = join(jsDir, base);
+    let js = await readFile(f, 'utf8');
+
+    js = js.replace(/https:\/\/svelte\.dev\/e\/[a-z_]*/g, '');
+    js = js.replace(/window\.__svelte/g, 'window._s');
+    js = js.replace(/\(window\._s\?\?=\{\}\)/g, '(window._s??={})');
+    js = js.replace(/svelte-trusted-html/g, '_th');
+    js = js.replace(/Failed to hydrate/g, 'Load error');
+    js = js.replace(/astro-slot/g, 'd-slot');
+    js = js.replace(/astro-retry/g, '_r-retry');
+    js = js.replace(/self\.Astro/g, 'self._R');
+    js = js.replace(/astro:/g, '_r:');
+    js = js.replace(/svelte-[a-z0-9]+/g, (m) => '_' + shortHash(m));
+
+    for (const [oldBase, newBase] of renames) {
+      js = js.replaceAll(oldBase, newBase);
+    }
+
+    await writeFile(f, js, 'utf8');
+  }
+
+  // ── PHASE 5: Process CSS files ──
+  let cssFiles;
+  try { cssFiles = (await readdir(jsDir)).filter(f => f.endsWith('.css')); } catch { cssFiles = []; }
+  for (const base of cssFiles) {
+    const f = join(jsDir, base);
+    let css = await readFile(f, 'utf8');
+    css = css.replace(/svelte-[a-z0-9]+/g, (m) => '_' + shortHash(m));
+    // Rename Astro scoped attribute selectors: preserve unique cid hashes for scoping
+    css = css.replace(/data-astro-cid-/g, 'data-c-');
+    css = css.replace(/data-astro-[a-z0-9-]+/g, 'data-x');
+    css = css.replace(/\/\*[\s\S]*?\*\//g, '');
+    await writeFile(f, css, 'utf8');
+  }
+
+  // ── PHASE 6: Remove unused files ──
+  try { await unlink(join(DIST, 'fonts', 'playfair-latin.woff2')); } catch {}
+  // favicon.svg and favicon.ico are the T4A mark (scripts/generate-logos.mjs),
+  // not framework starter files. Every page links them, so deleting them here
+  // made both 404 (audit P-7).
+  try { await rm(join(DIST, 'og', 'backgrounds'), { recursive: true, force: true }); } catch {}
+
+  // ── PHASE 7: Strip image metadata (PNG chunks + JPEG EXIF) ──
+  const pngFiles = files.filter(f => f.endsWith('.png'));
+  for (const f of pngFiles) {
+    try {
+      const buf = await readFile(f);
+      const stripped = stripPngMetadata(buf);
+      if (stripped.length < buf.length) {
+        await writeFile(f, stripped);
+      }
+    } catch {}
+  }
+
+  // Strip JPEG EXIF (if any user-uploaded JPEGs exist)
+  const jpgFiles = files.filter(f => f.endsWith('.jpg') || f.endsWith('.jpeg'));
+  for (const f of jpgFiles) {
+    try {
+      const buf = await readFile(f);
+      // JPEG EXIF starts with FF D8 FF E1 — strip APP1 segment
+      if (buf[0] === 0xFF && buf[1] === 0xD8) {
+        let offset = 2;
+        const cleaned = [buf.subarray(0, 2)]; // keep SOI marker
+        while (offset < buf.length - 1) {
+          if (buf[offset] !== 0xFF) break;
+          const marker = buf[offset + 1];
+          if (marker === 0xDA) { // Start of scan — rest is pixel data, keep all
+            cleaned.push(buf.subarray(offset));
+            break;
+          }
+          const segLen = buf.readUInt16BE(offset + 2);
+          // Strip APP1 (EXIF), APP2 (ICC profile metadata), APP13 (IPTC)
+          if (marker === 0xE1 || marker === 0xE2 || marker === 0xED) {
+            // Skip this segment (strip it)
+          } else {
+            cleaned.push(buf.subarray(offset, offset + 2 + segLen));
+          }
+          offset += 2 + segLen;
+        }
+        const result = Buffer.concat(cleaned);
+        if (result.length < buf.length) {
+          await writeFile(f, result);
+        }
+      }
+    } catch {}
+  }
+
+  // ── PHASE 8: Verification scan ──
+  // Term list (and the rationale for each pattern) lives in
+  // scripts/lib/stealth-terms.mjs, shared with build-issue-sources.mjs.
+  const DANGEROUS = STEALTH_TERMS;
+  const allFiles = await walk(DIST);
+  let violations = 0;
+  for (const f of allFiles) {
+    if (f.endsWith('.png') || f.endsWith('.woff2') || f.endsWith('.ico') || basename(f) === 'robots.txt') continue;
+    const content = await readFile(f, 'utf8');
+    for (const { term, regex } of DANGEROUS) {
+      regex.lastIndex = 0;
+      const matches = content.match(regex);
+      // Preserve the upstream OFL copyright notice. This exact licence file
+      // contains the font project's URL; it is not a framework/content marker.
+      // Pin its bytes and exempt only 'github'. Every other term still fails,
+      // and any edit to this file removes the exception.
+      if (term === 'github' && f === join(DIST, 'fonts', 'Newsreader-LICENSE.txt') &&
+          createHash('sha256').update(content).digest('hex') === '26028ec4e13b650065fa525a09532176f8a668b76ff849ea01c564a7480f91e7') continue;
+      if (matches) {
+        console.error(`  VIOLATION: "${term}" found ${matches.length}x in ${basename(f)}`);
+        violations++;
+      }
+    }
+  }
+
+  // ── Report ──
+  console.log('Stealth hardening complete:');
+  console.log(`  HTML: ${htmlFiles.length}, JS: ${jsFiles.length}, CSS: ${cssFiles.length}`);
+  console.log(`  Renames: ${renames.size}`);
+  console.log(`  PNGs stripped: ${pngFiles.length}`);
+  if (violations > 0) {
+    console.error(`  ⚠ ${violations} STEALTH VIOLATIONS FOUND — review above`);
+    process.exit(1);
+  } else {
+    console.log(`  ✓ Zero stealth violations. Clean for deployment.`);
+  }
+}
+
+main().catch(e => { console.error('Stealth script failed:', e); process.exit(1); });

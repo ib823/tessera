@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verify Content — The Fourth Angle</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+@font-face{font-family:'Newsreader';src:url('/fonts/newsreader-latin-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Newsreader';src:url('/fonts/newsreader-latin-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --bg:#FAF9F6;--bg-card:#FFFFFF;--bg-sunken:#E3F0EE;
+  --text-primary:#16181B;--text-secondary:#3F444B;--text-muted:#5B6169;
+  --border:#E4E1DA;
+  --font-display:'Newsreader',Georgia,serif;
+  --font-body:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  --green:#237A34;--green-bg:#EBFBEE;--green-border:#B2F2BB;
+  --red:#C92A2A;--red-bg:#FFF5F5;--red-border:#FFC9C9;
+  --amber:#A35100
+}
+
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#121315;--bg-card:#1B1D20;--bg-sunken:#16302D;
+    --text-primary:#ECEAE6;--text-secondary:#C7C4BE;--text-muted:#A3A8AF;
+    --border:#2A2D31;
+    --green:#4ADE80;--green-bg:rgba(74,222,128,0.1);--green-border:rgba(74,222,128,0.3);
+    --red:#F87171;--red-bg:rgba(248,113,113,0.1);--red-border:rgba(248,113,113,0.3)
+  }
+}
+
+body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary);min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased}
+
+/* Back link */
+.back{display:inline-flex;align-items:center;gap:6px;padding:16px 20px;font-size:14px;font-weight:600;color:var(--text-muted);text-decoration:none;transition:color .15s}
+.back:hover{color:var(--text-primary);text-decoration:none}
+.back svg{width:16px;height:16px}
+
+/* Page layout */
+.page{max-width:480px;margin:0 auto;padding:0 20px 80px}
+
+/* Header */
+.page-title{font-family:var(--font-display);font-size:28px;font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:var(--text-primary);margin-bottom:6px}
+.page-sub{font-size:15px;color:var(--text-muted);line-height:1.5;margin-bottom:32px}
+
+/* Textarea */
+.input-wrap{position:relative;margin-bottom:12px}
+.input-wrap textarea{width:100%;min-height:160px;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--bg-sunken);color:var(--text-primary);font-family:inherit;font-size:15px;line-height:1.6;resize:vertical;transition:border-color .15s}
+.input-wrap textarea:focus{outline:none;border-color:var(--amber)}
+.input-wrap textarea::placeholder{color:var(--text-muted)}
+
+/* Button */
+.btn{width:100%;min-height:48px;padding:0 20px;border:none;border-radius:999px;background:var(--text-primary);color:var(--bg);font-family:var(--font-display);font-size:15px;font-weight:700;cursor:pointer;transition:opacity .15s,transform .15s}
+.btn:hover{opacity:.85;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+
+/* Result */
+.result{margin-top:16px;padding:14px 16px;border-radius:12px;font-size:15px;line-height:1.5;display:none}
+.result.visible{display:block}
+.result.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.result.fail{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
+.result strong{font-weight:700}
+
+/* Divider */
+.divider{border:none;border-top:1px solid var(--border);margin:28px 0}
+
+/* How it works */
+.steps{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
+.step{display:flex;gap:12px;align-items:flex-start}
+.step-dot{width:24px;height:24px;border-radius:50%;background:var(--bg-sunken);border:1px solid var(--border);font-family:var(--font-display);font-size:12px;font-weight:700;color:var(--text-muted);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step p{font-size:14px;color:var(--text-secondary);line-height:1.55}
+.step strong{color:var(--text-primary);font-weight:700}
+.step a{color:var(--text-primary);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+
+/* Footer note */
+.footnote{font-size:13px;color:var(--text-muted);line-height:1.6;text-align:center;margin-top:24px}
+.footnote a{color:var(--text-secondary);text-decoration:underline;text-underline-offset:2px}
+
+/* Privacy badge */
+.privacy{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;font-weight:600;color:var(--text-muted);margin-top:16px}
+.privacy svg{width:14px;height:14px;opacity:.5}
+
+/* Mobile */
+@media(max-width:480px){
+  .page-title{font-size:24px}
+  .page{padding:0 16px 60px}
+}
+.page-title{font-size:2.5rem;letter-spacing:-.02em}.page{max-width:760px}.btn{font-family:var(--font-body)}:focus-visible{outline:3px solid #1D4ED8;outline-offset:3px}@media(prefers-color-scheme:dark){:focus-visible{outline-color:#8FA6FF}}@media(forced-colors:active){:focus-visible{outline-color:Highlight}}
+</style>
+</head>
+<body>
+
+<a href="/" class="back" aria-label="Back to Top stories">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  Back
+</a>
+
+<main class="page">
+  <img src="/fora-lockup.svg" alt="FORA — The Fourth Angle" width="112" height="28" style="margin-bottom:24px">
+  <h1 class="page-title">Verify content</h1>
+  <p class="page-sub">Check if content was published by The Fourth Angle.</p>
+
+  <form id="verify-form">
+    <div class="input-wrap">
+      <textarea id="content-input" placeholder="Paste issue content here..." aria-label="Content to verify"></textarea>
+    </div>
+    <button type="submit" class="btn">Verify</button>
+  </form>
+  <div class="result" id="result"></div>
+
+  <hr class="divider">
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-dot">1</div>
+      <p><strong>Copy</strong> the issue text with the <strong>Copy for verification</strong> button. Every issue has it in its Share menu and at the end of the article. <a href="LATEST_ISSUE_HREF" data-verify-latest>Open the latest issue</a>.</p>
+    </div>
+    <div class="step">
+      <div class="step-dot">2</div>
+      <p><strong>Paste</strong> above. A cryptographic fingerprint is computed locally on your device.</p>
+    </div>
+    <div class="step">
+      <div class="step-dot">3</div>
+      <p><strong>AUTHENTIC</strong> confirms the content is unmodified and published by T4A.</p>
+    </div>
+  </div>
+
+  <div class="privacy">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+    Runs locally — nothing leaves your device
+  </div>
+
+  <p class="footnote">
+    If verification fails, we cannot confirm the content originated from this platform.<br>
+    <a href="/disclaimer">Disclaimer & Legal Notice</a>
+  </p>
+</main>
+
+<script>
+const PUBLIC_KEY_PEM = `-----BEGIN PUBLIC KEY-----
+MCowBQYDK2VwAyEAeEr0UCKu2NM+/yZ6Ls8VgU7tLUGL/kvh7Z/NGJ/2oZ0=
+-----END PUBLIC KEY-----`;
+
+const SIGNED_FINGERPRINTS = SIGNATURES_PLACEHOLDER;
+
+function pemToArrayBuffer(pem) {
+  const b64 = pem.replace(/-----[^-]+-----/g, '').replace(/\s/g, '');
+  const bin = atob(b64);
+  const buf = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+  return buf.buffer;
+}
+
+async function getPublicKey() {
+  return crypto.subtle.importKey('spki', pemToArrayBuffer(PUBLIC_KEY_PEM), { name: 'Ed25519' }, false, ['verify']);
+}
+
+async function sha256hex(text) {
+  const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function normalizeText(raw) {
+  return raw.split('\n').map(l => l.trim()).join('\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+async function verifyContent() {
+  const raw = document.getElementById('content-input').value;
+  const resultEl = document.getElementById('result');
+
+  if (!raw.trim()) {
+    resultEl.className = 'result visible fail';
+    resultEl.innerHTML = '<strong>Nothing to verify.</strong> Paste the full content of an issue.';
+    return;
+  }
+
+  const normalized = normalizeText(raw);
+  const fingerprint = await sha256hex(normalized);
+
+  const match = SIGNED_FINGERPRINTS.find(s => s.fp === fingerprint);
+
+  if (match) {
+    if (!match.sig) {
+      resultEl.className = 'result visible fail';
+      resultEl.innerHTML = '<strong>FINGERPRINT MATCHED</strong> — This build was generated without a signing key, so the cryptographic signature is unavailable.';
+      return;
+    }
+    try {
+      const key = await getPublicKey();
+      const sigBin = Uint8Array.from(atob(match.sig), c => c.charCodeAt(0));
+      const data = new TextEncoder().encode(match.fp);
+      const valid = await crypto.subtle.verify('Ed25519', key, sigBin, data);
+
+      if (valid) {
+        resultEl.className = 'result visible ok';
+        resultEl.innerHTML = '<strong>AUTHENTIC</strong> — This content was published by The Fourth Angle and has not been modified.';
+      } else {
+        resultEl.className = 'result visible fail';
+        resultEl.innerHTML = '<strong>SIGNATURE INVALID</strong> — Fingerprint matched but the cryptographic signature could not be verified.';
+      }
+    } catch {
+      resultEl.className = 'result visible fail';
+      resultEl.innerHTML = '<strong>VERIFICATION ERROR</strong> — Cryptographic verification could not be completed. Try a different browser.';
+    }
+  } else {
+    resultEl.className = 'result visible fail';
+    resultEl.innerHTML = '<strong>NOT VERIFIED</strong> — This content does not match any issue published by The Fourth Angle.';
+  }
+}
+document.getElementById("verify-form").addEventListener("submit",(event)=>{
+  event.preventDefault();
+  verifyContent();
+});
+</script>
+</body>
+</html>
