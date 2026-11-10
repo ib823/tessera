@@ -10,8 +10,10 @@
   import { onMount } from 'svelte';
   import { opinionLabel, opinionColor as issueOpinionColor } from '../data/issue-types';
   import IssueImage from './IssueImage.svelte';
+  import IssueRow from './IssueRow.svelte';
 
   import type { IssueSummary } from '../lib/issues-loader';
+  import type { ReadState } from '../stores/reader';
   import type { FeedSection, TodayMode } from '../lib/feed-sections';
   import { getDossierFeedEntries } from '../data/dossiers';
   import { absoluteDate, newestDate, relativeDate } from '../lib/relative-date';
@@ -52,6 +54,8 @@
     onOpenLibraryReading?: () => void;
     onOpenLibraryHighlights?: () => void;
     onOpenLibraryArchive?: () => void;
+    /** Whether an issue links to two or more others (App's fact graph). */
+    issueHasConnections?: (id: string) => boolean;
   }
   let {
     loading = false,
@@ -67,6 +71,7 @@
     showWelcome = false,
     onDismissWelcome,
     onOpenIssue,
+    issueHasConnections,
   }: Props = $props();
 
   // The quote list is ~70 KB raw (~22 KB brotli) to show one line in the
@@ -182,16 +187,12 @@
     return weeks;
   });
 
-  function readLabel(id: string): string {
+  // The same state the other lists show (Continue at card N of M, Read).
+  function readStateFor(id: string): ReadState | null {
     const raw = readMap[id];
-    if (!raw) return '';
-    if (raw === 'true') return 'Read';
-    try {
-      const state = JSON.parse(raw).state;
-      return state === 'completed' ? 'Read' : state === 'started' ? 'In progress' : '';
-    } catch {
-      return '';
-    }
+    if (!raw) return null;
+    if (raw === 'true') return { state: 'completed', progress: 6 };
+    try { return JSON.parse(raw) as ReadState; } catch { return null; }
   }
 
   const modes: Array<{ key: TodayMode; label: string }> = [
@@ -246,18 +247,9 @@
           <h3 class="latest-week" id={`${idPrefix}-week-${week.start}`} data-latest-week>{week.label}</h3>
           <ol class="latest-list" aria-labelledby={`${idPrefix}-week-${week.start}`}>
             {#each week.issues as issue (issue.id)}
-              {@const lens = primaryLens(issue.cards)}
-              {@const state = readLabel(issue.id)}
               <li>
                 <a class="latest-item" href={issueHref(issue.id)} onclick={inAppClick(() => onOpenIssue?.(issue))}>
-                  <div class="latest-meta">
-                    {@render dateStamp(publishedDay(issue))}
-                    {#if lens}<span class="latest-topic">{lens}</span>{/if}
-                    {#if state}<span class="latest-state">{state}</span>{/if}
-                  </div>
-                  <div class="latest-headline balance-title">{issue.headline}</div>
-                  <div class="latest-context pretty-copy">{issue.context}</div>
-                  <div class="latest-score" style="color:{opinionColor(issue.opinionShift)};"><span class="sr-only">Opinion Shift </span>{issue.opinionShift} <span class="latest-score-label">{opinionLabel(issue.opinionShift)}</span></div>
+                  <IssueRow {issue} readState={readStateFor(issue.id)} density="regular" art={true} headingTag="span" hasConnections={issueHasConnections?.(issue.id) ?? false} />
                 </a>
               </li>
             {/each}
@@ -376,9 +368,9 @@
   {/if}
   </div>
       {#if showWelcome}
-        <div class="welcome-card" role="note" aria-label="Welcome to The Fourth Angle" data-prompt="welcome">
+        <div class="welcome-card" role="note" aria-label="Welcome to FORA" data-prompt="welcome">
           <div class="welcome-content">
-            <p class="welcome-text"><strong>The Fourth Angle</strong> is a nonpartisan Malaysian issues platform. We show you what every side left out, then let you decide.</p>
+            <p class="welcome-text"><strong>FORA</strong>, short for The Fourth Angle, is a nonpartisan Malaysian issues platform. We show you what every side left out, then let you decide.</p>
             <p class="welcome-text">The <strong>Opinion Shift</strong> number on each issue tells you how much you would miss by reading only the headline. Higher means more hidden complexity.</p>
             <a href="/about" class="welcome-link">How this works <span aria-hidden="true">→</span></a>
           </div>
@@ -398,6 +390,7 @@
           <a href="/accessibility">Accessibility</a>
           <a href="/rss.xml" type="application/rss+xml">RSS</a>
         </nav>
+        <p class="today-name-note">FORA is short for The Fourth Angle. T4A is our signature.</p>
       </footer>
 
 {:else if !loading}
@@ -416,7 +409,7 @@
   .today-mode--active { color:var(--fora-brand); border-bottom-color:var(--fora-brand); }
   .frontpage-grid { display:grid; grid-template-columns:minmax(0, 7fr) minmax(0, 3.5fr) minmax(0, 3fr); gap:24px; align-items:start; }
   a { color:inherit; text-decoration:none; }
-  a:hover h2, a:hover .latest-headline, a:hover .topic-issue-headline { text-decoration:underline; text-underline-offset:3px; }
+  a:hover h2, a:hover .topic-issue-headline { text-decoration:underline; text-underline-offset:3px; }
   .hero-art { margin-bottom:16px; overflow:hidden; }
   .hero-badge-row, .hero-meta, .story-meta { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 12px; }
   .hero-badge, .story-lens, .panel-kicker, .topic-header > .panel-kicker { font:700 .75rem/1.6 var(--fora-sans); text-transform:uppercase; letter-spacing:.08em; color:var(--fora-brand); }
@@ -463,12 +456,6 @@
   .latest-list { list-style:none; margin:0; padding:0; }
   .latest-list li { border-top:1px solid var(--fora-rule); }
   .latest-item { display:block; padding:24px 0; }
-  .latest-meta { display:flex; flex-wrap:wrap; gap:12px; font:.75rem/1.5 var(--fora-sans); color:var(--fora-muted); }
-  .latest-topic { color:var(--fora-brand); }
-  .latest-headline { font:700 1.75rem/1.15 var(--fora-serif); margin:8px 0 12px; }
-  .latest-context { font:1rem/1.6 var(--fora-sans); color:var(--fora-ink-2); }
-  .latest-score { margin-top:12px; font:700 .8125rem/1.6 var(--fora-sans); }
-  .latest-state { color:var(--fora-brand); }
   .welcome-card { position:relative; margin-top:32px; padding:20px 56px 20px 20px; background:var(--fora-brand-tint); border-radius:12px; max-width:760px; }
   .welcome-text { font:.875rem/1.6 var(--fora-sans); margin:0 0 8px; }
   .welcome-link { color:var(--fora-brand); font:600 .875rem/1.6 var(--fora-sans); display:inline-flex; align-items:center; min-height:44px; }
@@ -477,6 +464,7 @@
   .today-quote { font:400 1.125rem/1.5 var(--fora-serif); max-width:55ch; margin:auto; }
   .today-ethos { font:.75rem/1.5 var(--fora-sans); text-transform:uppercase; letter-spacing:.08em; color:var(--fora-muted); margin:12px 0; }
   .today-footer-links { display:flex; flex-wrap:wrap; justify-content:center; gap:0 20px; }
+  .today-name-note { font:.75rem/1.5 var(--fora-sans); color:var(--fora-muted); margin:8px 0 0; }
   .today-footer-links a { min-height:44px; display:inline-flex; align-items:center; font:.75rem var(--fora-sans); text-decoration:underline; text-underline-offset:3px; color:var(--fora-muted); }
   @media(max-width:1100px) { .frontpage-grid { grid-template-columns:minmax(0, 1.5fr) minmax(0, 1fr); } .latest-rail { grid-column:1 / -1; border-left:0; padding-left:0; } .latest-rail ol { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; } }
   @media(max-width:600px) {
@@ -495,7 +483,6 @@
     .secondary-story h2 { font-size:1.375rem; }
     .latest-rail { margin-top:32px; }
     .latest-rail ol { display:block; }
-    .latest-headline { font-size:1.5rem; }
     .topic-issue { gap:12px; }
   }
   @media(forced-colors:active) { .today-mode--active { border-color:Highlight; } .topic-chip--active { outline:2px solid Highlight; } }

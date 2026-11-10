@@ -2,7 +2,7 @@
   DossierProgress.svelte
   ---------------------------------------------------------------
   Sticky top bar with:
-  • T4A brand + DOSSIER pill + title (truncated on small screens)
+  • FORA brand + DOSSIER pill + title (truncated on small screens)
   • Section number / total
   • Share + Print actions (desktop)
   • TOC trigger (mobile only — desktop has the left-rail TOC)
@@ -60,8 +60,8 @@
 
 <header class="progress-bar" role="banner">
   <div class="progress-bar__inner">
-    <a href="/" class="progress-bar__brand" aria-label="T4A Dossier · {dossierId}, The Fourth Angle home">
-      <span class="progress-bar__brand-text">T4A</span>
+    <a href="/" class="progress-bar__brand" aria-label="FORA Dossier · {dossierId}, home page">
+      <span class="progress-bar__brand-text">FORA</span>
       <span class="progress-bar__brand-dossier">Dossier · {dossierId}</span>
     </a>
 

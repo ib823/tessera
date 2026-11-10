@@ -30,17 +30,18 @@ describe('issue titles', () => {
   });
 
   it('adds the site name only when it still fits', () => {
-    expect(issueDocumentTitle({ headline: 'Gig workers and EPF' })).toBe('Gig workers and EPF | The Fourth Angle');
+    expect(issueDocumentTitle({ headline: 'Gig workers and EPF' })).toBe('Gig workers and EPF | FORA');
     const long = issueDocumentTitle({ headline: 'Malaysia counts 1.2 million gig workers but the definition leaves out most riders' });
     expect(long.length).toBeLessThanOrEqual(SEO_TITLE_MAX);
-    expect(long).not.toContain('The Fourth Angle');
+    expect(long).not.toContain(' | FORA');
   });
 
   it('keeps every published issue title within 60 characters without splitting a word', () => {
     for (const issue of ISSUES.filter((i) => i.published === true)) {
       const title = issueDocumentTitle(issue);
       expect(title.length, `${issue.id}: ${title}`).toBeLessThanOrEqual(SEO_TITLE_MAX);
-      const stem = title.replace(/…$/, '').replace(/ \| The Fourth Angle$/, '');
+      // The site name follows a shortened title when both fit, so drop it first.
+      const stem = title.replace(/ \| FORA$/, '').replace(/…$/, '');
       const source = (issue.seoTitle ?? issue.headline).replace(/\s+/g, ' ').trim();
       expect(source.startsWith(stem), `${issue.id}: "${stem}" is not a prefix of the headline`).toBe(true);
       const nextChar = source.charAt(stem.length);

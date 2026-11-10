@@ -321,7 +321,7 @@ test.describe('Static pages', () => {
       const slug = lens.toLowerCase().replace(/[^a-z0-9]+/g, '-');
       expect(sitemap, slug).toContain(`/topic/${slug}</loc>`);
       const html = await (await request.get(`${baseURL}/topic/${slug}`)).text();
-      expect(html).toContain(`<title>${lens} issues | The Fourth Angle</title>`);
+      expect(html).toContain(`<title>${lens} issues | FORA</title>`);
       expect(html.match(/href="\/issue\/\d+"/g)?.length ?? 0, slug).toBe(count);
     }
   });

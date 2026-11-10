@@ -350,7 +350,7 @@ function newIssuePayload(issue: { id: string; headline: string; opinionShift: nu
 function digestPayload(topHeadline: string, remaining: number): string {
   const body = remaining > 0 ? `${topHeadline} + ${remaining} more` : topHeadline;
   return JSON.stringify({
-    title: 'This Week on The Fourth Angle',
+    title: 'This Week on FORA',
     body,
     icon: '/icons/icon-192.png',
     tag: 'weekly-digest',

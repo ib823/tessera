@@ -17,7 +17,7 @@ export interface FeedIssue {
   cards: Pick<Card, 't' | 'lens'>[];
 }
 
-export const FEED_TITLE = 'The Fourth Angle';
+export const FEED_TITLE = 'FORA';
 export const FEED_DESCRIPTION =
   'Bite-size analysis of Malaysian issues: what the headline said, what the record shows, and the question worth asking.';
 

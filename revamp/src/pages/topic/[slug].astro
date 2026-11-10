@@ -34,7 +34,7 @@ export function getStaticPaths() {
 const { topic, issues, others } = Astro.props;
 const count = issues.length;
 const lensWord = topic.toLowerCase();
-const title = `${topic} issues | The Fourth Angle`;
+const title = `${topic} issues | FORA`;
 const description = `${count} Malaysian ${count === 1 ? 'issue' : 'issues'} read mainly through the ${lensWord} lens, newest first, each with its Opinion Shift score.`;
 ---
 <Base title={title} description={description}>
@@ -61,10 +61,8 @@ const description = `${count} Malaysian ${count === 1 ? 'issue' : 'issues'} read
             )}
             <span class="topic-item-headline">{issue.headline}</span>
             <span class="topic-item-context">{issue.context}</span>
-            <span class="topic-item-score" style={`color:${opinionColor(issue.opinionShift)};`}>
-              <span class="sr-only">Opinion Shift </span>{issue.opinionShift}
-              <span class="topic-item-label">{opinionLabel(issue.opinionShift)}</span>
-            </span>
+            {/* Same signal line as every other issue list (IssueRow.svelte). */}
+            <span class="topic-item-score">Opinion Shift <strong style={`color:${opinionColor(issue.opinionShift)};`}>{issue.opinionShift}</strong> · {opinionLabel(issue.opinionShift)}</span>
           </a>
         </li>
       ))}
@@ -199,18 +197,12 @@ const description = `${count} Malaysian ${count === 1 ? 'issue' : 'issues'} read
   }
 
   .topic-item-score {
-    font-family: var(--font-display);
-    font-size: var(--text-body);
-    font-weight: 800;
-    font-variant-numeric: tabular-nums;
+    font: .75rem/1.5 var(--fora-sans);
+    color: var(--fora-muted);
   }
 
-  .topic-item-label {
-    margin-left: 4px;
-    font-family: var(--font-body);
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--text-muted);
+  .topic-item-score strong {
+    font-weight: 700;
   }
 
   .topic-others {

@@ -56,7 +56,7 @@
 
   <header class="pl__head">
     <h1>Ranked: Malaysia's Leaders, On the Level</h1>
-    <div class="pl__by"><span class="pl__avatar">T4A</span> The Fourth Angle · {fmtDate()}</div>
+    <div class="pl__by"><span class="pl__avatar">T4A</span> FORA · {fmtDate()}</div>
   </header>
 
   <nav class="pl__tabs" role="tablist">

@@ -884,7 +884,7 @@
   });
 
   // --- Keep browser tab & meta tags in sync with active issue ---
-  const defaultTitle = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis';
+  const defaultTitle = 'FORA — Bite-Sized Malaysian Issues Analysis';
   const defaultDesc = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.';
   function setMeta(attr: string, value: string, content: string) {
     const el = document.querySelector(`meta[${attr}="${value}"]`);
@@ -900,7 +900,7 @@
     const homeUrl = `${siteUrl}/`;
     if (activeFullIssue) {
       const i = activeFullIssue;
-      const title = `${i.headline} — The Fourth Angle`;
+      const title = `${i.headline} — FORA`;
       const desc = i.context;
       const url = `${siteUrl}/issue/${i.id}`;
       const image = `${siteUrl}/og/issue-${i.id}.png?v=${encodeURIComponent(BUILD_ID)}`;
@@ -1281,7 +1281,7 @@
     {/if}
     {#if surfaceMode === 'today' && !isSearching}
       <div class="mobile-today-panel">
-        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="mobile" headingLevel={mobilePageHeadingLevel} showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
+        <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="mobile" headingLevel={mobilePageHeadingLevel} showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} {issueHasConnections} />
       </div>
     {:else if isSearching && sortedIssues.length === 0}
       <div class="mobile-search-empty">
@@ -1493,20 +1493,20 @@
             </div>
             <div class="fora-result-list">
               {#each archiveIssues as issue, i}
-                <DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasReaction={hasReaction(issue.id)} hasConnections={issueHasConnections(issue.id)} />
+                <DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasConnections={issueHasConnections(issue.id)} />
               {/each}
             </div>
           </div>
         {:else if surfaceMode === 'library'}
           <section class="saved-main" aria-labelledby="saved-reading-heading">
             <div class="saved-heading"><h1 id="saved-reading-heading">Saved &amp; continue reading</h1><p>Your reading progress and highlights stay in this browser.</p><button class="angle-code-button" onclick={openSyncPanel}>Angle Code · sync your library</button></div>
-            <div class="fora-result-list">{#each sortedIssues as issue, i}<DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasReaction={hasReaction(issue.id)} hasConnections={issueHasConnections(issue.id)} />{/each}</div>
+            <div class="fora-result-list">{#each sortedIssues as issue, i}<DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasConnections={issueHasConnections(issue.id)} />{/each}</div>
           </section>
         {:else if isSearching && sortedIssues.length > 0}
           <section class="fora-search-results" aria-labelledby="search-heading">
             <header class="fora-search-summary"><h1 id="search-heading">Search</h1><p data-search-count>{searchResultCount} result{searchResultCount !== 1 ? 's' : ''} for "{searchQuery.trim()}"</p></header>
             <div class="fora-search-filters"><h2>Filter results</h2><SearchFilters matches={searchMatches} type={searchType} topic={searchTopic} onType={(v) => { searchType = v; }} onTopic={(v) => { searchTopic = v; }} /></div>
-            <div class="fora-result-list">{#each sortedIssues as issue, i}<DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasReaction={hasReaction(issue.id)} hasConnections={issueHasConnections(issue.id)} />{/each}</div>
+            <div class="fora-result-list">{#each sortedIssues as issue, i}<DesktopCard {issue} index={i} readState={getState(issue.id)} onOpen={() => openIssue(issue)} onPrefetch={() => prefetchIssue(issue)} hasConnections={issueHasConnections(issue.id)} />{/each}</div>
           </section>
         {:else if isSearching}
           <h1 class="sr-only">Search</h1>
@@ -1520,7 +1520,7 @@
           {#if activePrompt === 'sync' && viewportWidth >= 1024}
             <div class="fora-sync-prompt" data-prompt="sync"><AngleCodeBanner onTap={openSyncPanel}/><button onclick={dismissSyncPrompt} aria-label="Dismiss sync prompt">×</button></div>
           {/if}
-          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="desktop" showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} />
+          <TodayView loading={!feedLoaded} issueCount={issues.length} topIssue={topUnreadIssue} issues={sortedIssues} sections={feedSections} {readMap} {readingCount} highlightCount={highlightCount} mode={todayMode} onModeChange={setTodayMode} idPrefix="desktop" showWelcome={activePrompt === 'welcome'} onDismissWelcome={dismissWelcome} onOpenIssue={openIssue} onOpenLibraryReading={openReadingLibrary} onOpenLibraryHighlights={openHighlightsLibrary} onOpenLibraryArchive={openArchiveLibrary} {issueHasConnections} />
         {/if}
       </main>
     </div>

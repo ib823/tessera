@@ -4,7 +4,6 @@
   import LibraryTabs from './LibraryTabs.svelte';
   import SurfaceNav from './SurfaceNav.svelte';
   import AngleCodeBanner from './AngleCodeBanner.svelte';
-  import { reactions } from '../stores/reader';
 
   import type { IssueSummary } from '../lib/issues-loader';
   import type { FeedSection, SectionKind, SortMode } from '../lib/feed-sections';
@@ -81,20 +80,6 @@
     { key: 'done', label: 'Done' },
   ];
   let filterMode = $state<FilterMode>('all');
-
-  // Reactions — subscribe to the atom for real-time updates
-  let reactionRaw = $state('{}');
-  $effect(() => {
-    const unsub = reactions.subscribe(v => { reactionRaw = v; });
-    return unsub;
-  });
-  let reactionMap: Record<string, number[]> = $derived.by(() => {
-    try { return JSON.parse(reactionRaw); } catch { return {}; }
-  });
-
-  function hasReaction(issueId: string): boolean {
-    return (reactionMap[issueId]?.length ?? 0) > 0;
-  }
 
   // Compute counts
   let counts = $derived.by(() => {
@@ -400,7 +385,7 @@
             {#if !sectionCollapsed}
               {#each section.issues as issue}
                 {@const idx = issueIndexMap.get(issue.id) ?? 0}
-                <FeedRow {issue} readState={issueReadState(issue.id)} isActive={activeId === issue.id} tabIndex={rowTabIndex(issue.id, idx)} itemIndex={idx} onClick={() => { focusedIndex = idx; onSelectIssue(issue); }} hasReaction={hasReaction(issue.id)} reactionCount={reactionMap[issue.id]?.length ?? 0} hasConnections={issueHasConnections?.(issue.id) ?? false} searchTerms={isSearching ? searchQuery.trim() : ''} />
+                <FeedRow {issue} readState={issueReadState(issue.id)} isActive={activeId === issue.id} tabIndex={rowTabIndex(issue.id, idx)} itemIndex={idx} onClick={() => { focusedIndex = idx; onSelectIssue(issue); }} hasConnections={issueHasConnections?.(issue.id) ?? false} searchTerms={isSearching ? searchQuery.trim() : ''} />
               {/each}
             {/if}
           </div>
@@ -419,7 +404,7 @@
     {:else}
       <!-- Flat list (fallback / search results) -->
       {#each flatIssues as issue, idx (issue.id)}
-        <FeedRow {issue} readState={issueReadState(issue.id)} isActive={activeId === issue.id} tabIndex={rowTabIndex(issue.id, idx)} itemIndex={idx} onClick={() => { focusedIndex = idx; onSelectIssue(issue); }} hasReaction={hasReaction(issue.id)} reactionCount={reactionMap[issue.id]?.length ?? 0} hasConnections={issueHasConnections?.(issue.id) ?? false} searchTerms={isSearching ? searchQuery.trim() : ''} />
+        <FeedRow {issue} readState={issueReadState(issue.id)} isActive={activeId === issue.id} tabIndex={rowTabIndex(issue.id, idx)} itemIndex={idx} onClick={() => { focusedIndex = idx; onSelectIssue(issue); }} hasConnections={issueHasConnections?.(issue.id) ?? false} searchTerms={isSearching ? searchQuery.trim() : ''} />
       {/each}
     {/if}
   </div>
