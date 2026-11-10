@@ -24,6 +24,16 @@ Aspect ratio 1.91:1 wide landscape. Ensure the final result matches the clean, c
 Save as: public/og/backgrounds/issue-2019-bg.png
 ```
 
+## Alternative under test: handshake that becomes a queue rope
+
+Same template; replace only the "Draw …" paragraph. The editor is rendering both and will keep whichever passes the thumbnail test (about 240 px wide, both halves nameable in a second). Preferred if both pass, because it carries the reframe ("abroad, Malaysia backs the case; at home, a pass").
+
+```
+Draw two forearms in suit cuffs meeting in a firm diplomatic handshake on the left side of the frame, the clasp drawn as one simple rounded contour without separate fingers; without a break, the line falls from the clasped hands down to the top of a short stanchion post, swings across in a single low sagging rope to a second stanchion post further right, and drops to the ground, the kind of queue barrier used at an immigration counter, as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
+```
+
+## Notes for either render
+
 If the first render muddles the turnstile: regenerate with "three straight arms spaced evenly around the hub like a peace-sign Y" added after "three straight rotating arms", or drop "slight three-quarter angle" for a side view with the hub drawn as a small circle.
 
 If the render is not 1.91:1: `sharp(input).resize({width:1200, height:630, fit:'cover'}).png().toFile('public/og/backgrounds/issue-2019-bg.png')` (`npm install sharp --no-save`).
