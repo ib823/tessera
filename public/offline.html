@@ -37,7 +37,9 @@
     <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="176 350 607 258" width="60" height="24" aria-label="The Fourth Angle"><path d="M 773 363 L 691 363 L 680 366 L 666 378 L 590 542 L 567 595 L 616 595 L 624 574 L 637 547 L 728 547 L 729 595 L 773 595 Z M 727 399 L 729 401 L 729 506 L 656 507 L 655 506 L 698 411 L 703 405 L 709 401 Z M 482 363 L 378 509 L 378 547 L 499 547 L 500 595 L 545 595 L 545 549 L 576 507 L 545 506 L 545 364 Z M 499 412 L 500 506 L 432 507 L 431 506 Z M 186 363 L 186 408 L 273 409 L 273 595 L 318 595 L 318 409 L 391 408 L 422 363 Z" fill="currentColor" fill-rule="evenodd"/></svg>
     <h1>You're offline</h1>
     <p>Check your connection and try again. Previously read issues may still be available.</p>
-    <button class="retry" onclick="location.reload()">Try again</button>
+    <button class="retry" type="button" data-retry>Try again</button>
   </div>
+  <!-- The CSP blocks inline event attributes; this script's hash is allowed. -->
+  <script>document.querySelector('[data-retry]').addEventListener('click', function () { location.reload(); });</script>
 </body>
 </html>
