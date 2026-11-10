@@ -5,6 +5,16 @@ function freshRequest(request) {
   return new Request(request, { cache: 'no-store' });
 }
 
+// Cloudflare Pages answers /offline.html with a 308 to /offline, so the
+// precached copy is a redirected response. Browsers refuse a redirected
+// response as the answer to a navigation, and offline readers saw the
+// browser's own error page instead. Serve a plain copy (same body, status
+// and headers, CSP included).
+function plainResponse(response) {
+  if (!response || !response.redirected) return response;
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers: response.headers });
+}
+
 function isMutablePath(pathname) {
   return pathname === '/' ||
     pathname.endsWith('.html') ||
@@ -41,7 +51,7 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(freshRequest(event.request)).catch(() => {
         if (event.request.mode === 'navigate') {
-          return caches.match('/offline.html');
+          return caches.match('/offline.html').then(plainResponse);
         }
         return Response.error();
       })
