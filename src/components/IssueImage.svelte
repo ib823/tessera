@@ -38,6 +38,22 @@
   // Hide the frame instead; the card reads fine without art.
   let failed = $state(false);
 
+  // Svelte server-renders an onerror prop, or a use: action on an <img>, as
+  // inline replay attributes (onerror/onload="this.__e=event"). The site's CSP
+  // blocks inline handlers: Firefox reports a violation for each one (each
+  // sent to the CSP report endpoint) and the replay never runs. A bound
+  // element with an effect renders no inline attribute. It also treats an
+  // image that already failed before hydration as failed.
+  let img: HTMLImageElement | undefined = $state();
+  $effect(() => {
+    if (!img) return;
+    const element = img;
+    const fail = () => { failed = true; };
+    if (element.complete && element.naturalWidth === 0 && element.currentSrc) fail();
+    element.addEventListener('error', fail);
+    return () => element.removeEventListener('error', fail);
+  });
+
   const sizes = $derived(
     size === 'hero' ? '(min-width: 1024px) 700px, (min-width: 768px) 50vw, 100vw'
     : size === 'card' ? '(min-width: 768px) 400px, 100vw'
@@ -45,7 +61,7 @@
   );
 </script>
 
-<div class="issue-image-wrap" hidden={failed} style="aspect-ratio:{aspectRatio};border-radius:{borderRadius};overflow:hidden;background:var(--bg-sunken);{failed ? 'display:none;' : ''}">
+<div class="issue-image-wrap" data-issue-image hidden={failed} style="aspect-ratio:{aspectRatio};border-radius:{borderRadius};overflow:hidden;background:var(--bg-sunken);{failed ? 'display:none;' : ''}">
   <picture>
     <source type="image/avif" srcset={avifSrcset} sizes={sizes} />
     <source type="image/webp" srcset={webpSrcset} sizes={sizes} />
@@ -60,7 +76,7 @@
       decoding={eager ? 'sync' : 'async'}
       fetchpriority={eager ? 'high' : undefined}
       style="width:100%;height:100%;object-fit:cover;display:block;"
-      onerror={() => { failed = true; }}
+      bind:this={img}
     />
   </picture>
 </div>

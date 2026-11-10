@@ -35,6 +35,14 @@ export function createSpring(initial: number, config: Partial<SpringConfig> = {}
   return { value: initial, velocity: 0, target: initial, config: c, settled: true };
 }
 
+// Longest single integration step. Semi-implicit Euler at stiffness 500 and
+// damping 30 is unstable at the 64 ms frame cap below: each step multiplies the
+// error by about -2.4, so a run of slow frames sent the reader card to
+// translateX(7e18px) and it never settled, leaving the reader blank and stuck.
+// Longer frames are integrated in equal sub-steps; 60 Hz and faster frames take
+// one step, exactly as before.
+const MAX_STEP = 1 / 60;
+
 /**
  * Advance spring by dt seconds. Returns new state (immutable).
  */
@@ -42,13 +50,17 @@ export function stepSpring(s: SpringState, dt: number): SpringState {
   if (s.settled) return s;
 
   const { stiffness, damping, mass, precision } = s.config;
-  const displacement = s.value - s.target;
-  const springForce = -stiffness * displacement;
-  const dampingForce = -damping * s.velocity;
-  const acceleration = (springForce + dampingForce) / mass;
-
-  const newVelocity = s.velocity + acceleration * dt;
-  const newValue = s.value + newVelocity * dt;
+  const steps = Math.max(1, Math.ceil(dt / MAX_STEP - 1e-9));
+  const h = dt / steps;
+  let newValue = s.value;
+  let newVelocity = s.velocity;
+  for (let i = 0; i < steps; i++) {
+    const springForce = -stiffness * (newValue - s.target);
+    const dampingForce = -damping * newVelocity;
+    const acceleration = (springForce + dampingForce) / mass;
+    newVelocity += acceleration * h;
+    newValue += newVelocity * h;
+  }
   const newDisplacement = Math.abs(newValue - s.target);
   const settled = newDisplacement < precision && Math.abs(newVelocity) < precision;
 
