@@ -9,10 +9,8 @@ import { createPreviewServer } from './serve-preview.mjs';
 const server = process.argv[2] === '--local' ? createPreviewServer(new URL('../dist/', import.meta.url).pathname) : null;
 if (server) await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = server ? `http://127.0.0.1:${server.address().port}` : new URL(process.argv[2] ?? 'http://127.0.0.1:4323').origin;
-const browser = await chromium.launch({
-  executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE ?? (existsSync('/usr/bin/chromium') ? '/usr/bin/chromium' : undefined),
-  args: ['--disable-dev-shm-usage'],
-});
+const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE ?? (existsSync('/usr/bin/chromium') ? '/usr/bin/chromium' : undefined);
+const browser = await chromium.launch({ executablePath, args: ['--disable-dev-shm-usage'] });
 const reports = [];
 try {
   for (const viewport of [{ width: 360, height: 640 }, { width: 1440, height: 900 }]) {
@@ -22,12 +20,27 @@ try {
     const responses = new Map();
     const thirdParty = new Set();
     const runtimeErrors = [];
+    // Diagnostics: the full outside requests and their types (a CSP violation
+    // report counts as one), failed loads, HTTP errors and CSP violations.
+    const outsideRequests = [];
+    const failedRequests = [];
+    const httpErrors = [];
+    const cspViolations = [];
     page.on('pageerror', error => runtimeErrors.push(error.message));
     page.on('request', request => {
       const url = new URL(request.url());
-      if (['http:', 'https:'].includes(url.protocol) && url.origin !== origin) thirdParty.add(url.origin);
+      if (['http:', 'https:'].includes(url.protocol) && url.origin !== origin) {
+        thirdParty.add(url.origin);
+        outsideRequests.push(`${request.method()} ${request.url()} (${request.resourceType()})`);
+      }
+    });
+    page.on('requestfailed', request => failedRequests.push(`${request.url()} ${request.failure()?.errorText ?? ''}`));
+    page.on('console', message => {
+      const text = message.text();
+      if (/content[- ]security[- ]policy/i.test(text) && /refused|blocked/i.test(text)) cspViolations.push(text);
     });
     page.on('response', response => {
+      if (response.status() >= 400) httpErrors.push(`${response.status()} ${response.url()}`);
       if (response.request().resourceType() === 'script') responses.set(response.url(), response);
     });
     const navigation = await page.goto(`${origin}${path}`, { waitUntil: 'networkidle' });
@@ -47,13 +60,20 @@ try {
     }
     const totals = scripts.reduce((sum, item) => ({ raw: sum.raw + item.raw, gzip: sum.gzip + item.gzip, brotli: sum.brotli + item.brotli }), { raw: 0, gzip: 0, brotli: 0 });
     const cookies = (await context.cookies()).map(cookie => cookie.name);
-    reports.push({ path, viewport, totals, scripts, thirdParty: [...thirdParty], cookies, runtimeErrors, pass: scripts.length > 0 && totals.gzip <= 150000 && thirdParty.size === 0 && cookies.length === 0 && runtimeErrors.length === 0 });
+    reports.push({ path, viewport, totals, scripts, thirdParty: [...thirdParty], cookies, runtimeErrors, outsideRequests, failedRequests, httpErrors, cspViolations,
+      pass: scripts.length > 0 && totals.gzip <= 150000 && thirdParty.size === 0 && cookies.length === 0 && runtimeErrors.length === 0 && cspViolations.length === 0 });
     await context.close();
   }
   }
 } finally {
+  var browserVersion = browser.version();
   await browser.close();
   if (server) await new Promise(resolve => server.close(resolve));
 }
-console.log(JSON.stringify({ method: 'fresh Chromium context, service workers blocked, networkidle; sum of separately compressed requested JS bodies and executable inline scripts (conservative for inline HTML compression)', budgetBytes: 150000, reports }, null, 2));
+console.log(JSON.stringify({ browser: { version: browserVersion, executable: executablePath ?? 'Playwright-managed Chromium' }, method: 'fresh Chromium context, service workers blocked, networkidle; sum of separately compressed requested JS bodies and executable inline scripts (conservative for inline HTML compression)', budgetBytes: 150000, reports }, null, 2));
+for (const report of reports.filter(report => !report.pass)) {
+  console.error(`FAIL ${report.path} ${report.viewport.width}x${report.viewport.height}:`, JSON.stringify({
+    gzip: report.totals.gzip, outsideRequests: report.outsideRequests, cspViolations: report.cspViolations, failedRequests: report.failedRequests,
+    httpErrors: report.httpErrors, cookies: report.cookies, runtimeErrors: report.runtimeErrors }));
+}
 if (reports.some(report => !report.pass)) process.exitCode = 1;
