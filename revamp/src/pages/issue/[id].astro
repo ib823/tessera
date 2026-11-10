@@ -1,0 +1,533 @@
+---
+import '../../styles/global.css';
+import App from '../../components/App.svelte';
+import IssueSources from '../../components/IssueSources.svelte';
+import IssueMeta from '../../components/IssueMeta.svelte';
+import IssueChanges from '../../components/IssueChanges.svelte';
+import CardSources from '../../components/CardSources.svelte';
+import { issueDateTime } from '../../lib/issue-meta';
+import { ISSUES } from '../../data/issues';
+import { getIssueSourceList } from '../../data/sources';
+import { CARD_TYPES, opinionLabel } from '../../data/issue-types';
+import { issueDocumentTitle, issueSeoTitle } from '../../lib/seo';
+import { primaryLens, topicHref } from '../../lib/topics';
+import { cardAnchor } from '../../lib/card-anchor';
+
+export function getStaticPaths() {
+  // Published issues, plus withdrawn ones: issues that were published and then
+  // taken out of the feed (published false, publishedAt kept). A withdrawn
+  // issue keeps its URL, corrected and marked noindex, so existing links and
+  // cached copies never keep serving the text it was withdrawn for.
+  return ISSUES.filter(issue => issue.published === true || !!issue.publishedAt).map(issue => ({
+    params: { id: issue.id },
+    props: { issue },
+  }));
+}
+
+const { issue } = Astro.props;
+const withdrawn = issue.published !== true;
+const sourceList = getIssueSourceList(issue.id);
+const siteUrl = Astro.site?.origin || 'https://thefourthangle.pages.dev';
+const issueUrl = `${siteUrl}/issue/${issue.id}`;
+const buildId = typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : new Date().toISOString();
+const ogImage = issue.published === true
+  ? `${siteUrl}/og/issue-${issue.id}.png?v=${encodeURIComponent(buildId)}`
+  : `${siteUrl}/og-image.png?v=${encodeURIComponent(buildId)}`;
+
+// OG description: context + scores, optimized for social platforms (110-160 chars)
+const os = issue.opinionShift;
+const ns = Math.round(issue.finalScore ?? 0);
+const suffix = ` — ${os}% Opinion Shift · Neutrality: ${ns}/100`;
+const maxCtx = 155 - suffix.length;
+let ctxTrunc = issue.context;
+if (ctxTrunc.length > maxCtx) {
+  ctxTrunc = ctxTrunc.substring(0, maxCtx).replace(/\s+\S*$/, '') + '...';
+}
+const description = ctxTrunc + suffix;
+// S-4: results pages cut titles near 60 characters. Use the issue's seoTitle
+// override, or the headline shortened at a word boundary. The on-page <h1>
+// keeps the full headline.
+const title = issueDocumentTitle(issue);
+const socialTitle = issueSeoTitle(issue);
+// P-4: preload the issue's own hero (the static article's LCP image). The
+// preload, the <picture> below and DesktopReader's hero share the same AVIF
+// candidates and sizes, so the reader reuses the preloaded file instead of
+// fetching a second width after hydration.
+const v = encodeURIComponent(buildId);
+const heroSizes = '(min-width: 70rem) 700px, 100vw';
+const heroAvifSrcset = `/og/issue-${issue.id}-640w.avif?v=${v} 640w, /og/issue-${issue.id}-960w.avif?v=${v} 960w, /og/issue-${issue.id}-1200w.avif?v=${v} 1200w`;
+const imageAlt = `${issue.headline} — ${os}% Opinion Shift · Neutrality ${ns}/100`;
+
+// Publication dates for JSON-LD and the article:* meta tags below. publishedAt
+// and modifiedAt come from git history (scripts/derive-issue-history.mjs);
+// issues without them fall back to sourceDate. modifiedTime matches the
+// visible "Updated" date in IssueMeta.
+const publishedTime = issueDateTime(issue.publishedAt ?? issue.sourceDate);
+const modifiedTime = issueDateTime(issue.modifiedAt) ?? publishedTime;
+const storyType = issue.type ?? 'Analysis';
+const organization = { '@type': 'Organization', name: 'The Fourth Angle', url: siteUrl };
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: issue.headline,
+  description: issue.context,
+  url: issueUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': issueUrl },
+  image: [{ '@type': 'ImageObject', url: ogImage, width: 1200, height: 630 }],
+  ...(publishedTime ? { datePublished: publishedTime, dateModified: modifiedTime } : {}),
+  author: organization,
+  publisher: { ...organization, logo: { '@type': 'ImageObject', url: `${siteUrl}/logo.png`, width: 247, height: 98 } },
+  articleSection: storyType,
+  inLanguage: 'en-MY',
+  isAccessibleForFree: true,
+};
+// Escape <, > and & so issue text can never close the <script> element early.
+const articleJsonLdText = JSON.stringify(articleJsonLd).replace(/[<>&]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, '0')}`);
+---
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1A1A1A" media="(prefers-color-scheme: dark)" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <meta property="og:title" content={socialTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:secure_url" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content={imageAlt} />
+  <meta property="og:url" content={issueUrl} />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="The Fourth Angle" />
+  <meta property="og:locale" content="en_MY" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={socialTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image:alt" content={imageAlt} />
+
+  <meta name="author" content="The Fourth Angle" />
+  {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+  {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+  <meta property="article:section" content={storyType} />
+  <link rel="canonical" href={issueUrl} />
+  {withdrawn && <meta name="robots" content="noindex" />}
+  <link rel="alternate" type="application/rss+xml" title="The Fourth Angle" href="/rss.xml" />
+  {/* Data block, not executed: build-csp-hashes.mjs skips it, so no CSP hash. */}
+  {!withdrawn && <script type="application/ld+json" is:inline set:html={articleJsonLdText}></script>}
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="application-name" content="The Fourth Angle" />
+  <meta name="apple-mobile-web-app-title" content="4th Angle" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="manifest" href={`/manifest.json?v=${encodeURIComponent(buildId)}`} />
+  <link rel="icon" type="image/svg+xml" href={`/favicon.svg?v=${encodeURIComponent(buildId)}`} />
+  <link rel="icon" type="image/png" href={`/favicon.png?v=${encodeURIComponent(buildId)}`} />
+  <link rel="apple-touch-icon" sizes="180x180" href={`/icons/apple-touch-icon.png?v=${encodeURIComponent(buildId)}`} />
+  {/*
+    Phase 4 font preload — same as Base.astro. Crossorigin required even for
+    same-origin fetches so the @font-face fetch hits the preload cache.
+  */}
+  <link rel="preload" href="/fonts/newsreader-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/newsreader-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  {!withdrawn && <link rel="preload" as="image" type="image/avif" imagesrcset={heroAvifSrcset} imagesizes={heroSizes} fetchpriority="high" />}
+  <script is:inline>
+    (function () {
+      try {
+        var ua = navigator.userAgent || '';
+        if (/FBAN|FBAV|Instagram|Line|TikTok|\bwv\b|MicroMessenger|Twitter/i.test(ua)) {
+          document.documentElement.dataset.env = 'webview';
+        }
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="sr-only">Skip to content</a>
+
+  {/*
+    Static article — the SSG content baseline.
+
+    Rendered into every /issue/[id] HTML file at build time so that:
+      (a) JS-disabled readers, webviews that strip JS, throttled 3G readers
+          before hydration, and content-blockers that kill the App bundle
+          all still get the full article (ADR-0002 Phase 8a acceptance).
+      (b) Edge Immersive Reader, Safari Reader, Firefox Reader, and search
+          engines have an <article> landmark to extract.
+
+    On hydration, App.svelte adds `js-reader-mounted` to <html>, which hides
+    this element via the CSS rule below so the interactive reader is the
+    only visible surface. Kept in the DOM for screen readers and for graceful
+    fallback if the island fails to hydrate (Safari content blockers, rare
+    webview crashes).
+  */}
+  <article class="ssg-article" data-issue-id={issue.id} aria-labelledby="ssg-headline">
+    <header class="ssg-article__header">
+      {issue.status === 'new' && <span class="ssg-article__badge ssg-article__badge--new">New</span>}
+      {issue.status === 'updated' && <span class="ssg-article__badge ssg-article__badge--updated">Updated · Edition {issue.edition}</span>}
+      {withdrawn && (
+        <p class="ssg-article__withdrawn" data-issue-withdrawn>
+          <strong>Withdrawn.</strong> This issue is no longer in our feed. It stays at this address, corrected, so existing links still work. What changed and why is listed at the end.
+        </p>
+      )}
+      <h1 id="ssg-headline" class="ssg-article__headline">{issue.headline}</h1>
+      <IssueMeta issue={issue} variant="static" />
+      <p class="ssg-article__deck">{issue.context}</p>
+      {issue.sourceDate && (
+        <p class="ssg-article__date">Sources retrieved <time datetime={issue.sourceDate} translate="no">{issue.sourceDate}</time></p>
+      )}
+    </header>
+
+    {/* Hero images are generated for published issues only; a withdrawn page has none. */}
+    {!withdrawn && <figure class="ssg-article__hero">
+      {/*
+        <picture> with AVIF → WebP → JPEG (Phase 8b, ADR-0002 split).
+        The hero is the LCP element — eager + fetchpriority=high + sync decode
+        + explicit width/height to reserve space and prevent CLS.
+        Sizes: up to 70ch reading column on desktop, full-viewport on mobile.
+      */}
+      <picture>
+        <source
+          type="image/avif"
+          srcset={heroAvifSrcset}
+          sizes={heroSizes}
+        />
+        <source
+          type="image/webp"
+          srcset={`/og/issue-${issue.id}-640w.webp?v=${encodeURIComponent(buildId)} 640w, /og/issue-${issue.id}-960w.webp?v=${encodeURIComponent(buildId)} 960w, /og/issue-${issue.id}-1200w.webp?v=${encodeURIComponent(buildId)} 1200w`}
+          sizes={heroSizes}
+        />
+        <img
+          src={`/og/issue-${issue.id}-1200w.jpg?v=${encodeURIComponent(buildId)}`}
+          srcset={`/og/issue-${issue.id}-640w.jpg?v=${encodeURIComponent(buildId)} 640w, /og/issue-${issue.id}-960w.jpg?v=${encodeURIComponent(buildId)} 960w, /og/issue-${issue.id}-1200w.jpg?v=${encodeURIComponent(buildId)} 1200w`}
+          sizes={heroSizes}
+          alt={imageAlt}
+          width="1200"
+          height="630"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+        />
+      </picture>
+    </figure>}
+
+    <aside class="ssg-article__score" aria-label="Opinion Shift score">
+      <p class="ssg-article__score-label">Opinion Shift</p>
+      <p class="ssg-article__score-value" data-score={issue.opinionShift}>
+        <span class="ssg-article__score-number" translate="no">{issue.opinionShift}</span>
+        <span class="ssg-article__score-outof" translate="no">/ 100</span>
+      </p>
+      <p class="ssg-article__score-severity" data-severity={opinionLabel(issue.opinionShift).toLowerCase()}>{opinionLabel(issue.opinionShift)}</p>
+      <p class="ssg-article__score-note">Reading only the headline would hide about {issue.opinionShift}% of the story.</p>
+    </aside>
+
+    {primaryLens(issue.cards) && <p><a href={topicHref(primaryLens(issue.cards)!)}>More on {primaryLens(issue.cards)} →</a></p>}
+    <div class="ssg-article__cards">
+      {issue.cards.map((card, i) => {
+        const cardType = CARD_TYPES[card.t];
+        const label = card.t === 'fact' && card.lens ? `${cardType.label} · ${card.lens}` : cardType.label;
+        return (
+          <section id={cardAnchor(i)} class={`ssg-card ssg-card--${card.t}`} data-card-index={i} data-card-type={card.t}>
+            <p class="ssg-card__label">{label}</p>
+            <p class="ssg-card__big">{card.big}</p>
+            {card.sub && <p class="ssg-card__sub">{card.sub}</p>}
+            <CardSources card={card} entries={sourceList} variant="static" />
+          </section>
+        );
+      })}
+    </div>
+
+    {!withdrawn && <IssueSources issue={{ id: issue.id, legacyAudit: issue.legacyAudit, sourceList }} variant="static" />}
+    <IssueChanges issue={issue} variant="static" />
+
+    {issue.finalScore != null && (
+      <footer class="ssg-article__footer">
+        <p class="ssg-article__quality">
+          <span class="ssg-article__quality-label">Editorial Quality Score</span>
+          <span class="ssg-article__quality-value" translate="no"><span>{Math.round(issue.finalScore)}</span> / 100</span>
+        </p>
+        <p class="ssg-article__quality-note">Reviewed across {issue.stageScores ? Object.values(issue.stageScores).filter((v) => typeof v === 'number').length : 4} independent editorial stages.</p>
+      </footer>
+    )}
+    <p class="ssg-article__follow">
+      <a href="/verify">Verify this issue</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="/rss.xml">RSS feed</a>
+    </p>
+  </article>
+
+  {/*
+    The App island receives the full issue. With initialIssue set, App
+    renders nothing on the server or while hydrating, so the static article
+    above is the only content until the island mounts, and the island's
+    first frame is already this issue's reader. Previously App server-rendered
+    an empty-feed homepage shell under the article that jumped to the top on
+    hydration (CLS ~1.0), then waited for two fetches before the reader
+    appeared. (client:only would also work, but it emits a second copy of
+    App's CSS under another name instead of sharing the homepage chunk.)
+  */}
+  <div id="main-content" tabindex="-1">
+    {/* sourceList rides along so a deep-linked reader shows the per-card and
+        end-of-issue sources, as the per-issue JSON does on in-app navigation. */}
+    {/* A withdrawn issue is the static article alone: no reader, feed or prompts. */}
+    {!withdrawn && <App client:load initialIssueId={issue.id} initialIssue={sourceList ? { ...issue, sourceList } : issue} />}
+  </div>
+  <style is:global>
+    /*
+      SSG article styles — see ADR-0002 (Phase 8 split).
+      Baseline is readable WITHOUT any design system or token variables
+      loaded, because this must work for readers whose CSS bundle was
+      blocked (ITP, Brave Shields, uBlock custom filters). Uses plain
+      hex values and system fonts for maximum robustness.
+
+      When the App island mounts, it adds `js-reader-mounted` to <html>.
+      The rule at the bottom hides the static article so only the
+      interactive reader is visible — kept in the DOM for screen readers
+      and for graceful fallback if the island fails to hydrate.
+    */
+    .ssg-article {
+      max-width: 70ch;
+      margin: 0 auto;
+      padding: 24px max(16px, env(safe-area-inset-left)) 48px max(16px, env(safe-area-inset-right));
+      font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+      color: var(--text-primary, #1a1a1a);
+      background: var(--bg-primary, #ffffff);
+      line-height: 1.55;
+    }
+    .ssg-article__header { margin-bottom: 24px; }
+    .ssg-article__badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .ssg-article__badge--new { background: #1a7a2a; color: #ffffff; }
+    .ssg-article__badge--updated { background: #1a5a8a; color: #ffffff; }
+    .ssg-article__headline {
+      font-family: var(--font-display, 'Newsreader', system-ui, sans-serif);
+      font-size: clamp(1.75rem, 4vw + 1rem, 2.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0 0 12px;
+      text-wrap: balance;
+    }
+    .ssg-article__withdrawn {
+      margin: 0 0 16px;
+      padding: 12px 14px;
+      border: 1px solid var(--border-divider, #dee2e6);
+      border-left: 4px solid var(--score-warning, #a35100);
+      border-radius: 8px;
+      background: var(--bg-elevated, #f8f9fa);
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      color: var(--text-primary, #212529);
+    }
+    .ssg-article__deck {
+      font-size: 1.125rem;
+      line-height: 1.55;
+      color: var(--text-secondary, #444);
+      margin: 0 0 8px;
+    }
+    .ssg-article__date {
+      font-size: 0.875rem;
+      color: var(--text-tertiary, #666);
+      margin: 8px 0 0;
+    }
+    .ssg-article__hero { margin: 24px 0; }
+    .ssg-article__hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      background: var(--color-hero-bg, #0f0f23);
+      aspect-ratio: 1200 / 630;
+    }
+    .ssg-article__score {
+      border: 1px solid var(--border-subtle, #e0e0e0);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 24px 0;
+      background: var(--bg-elevated, #f8f9fa);
+    }
+    .ssg-article__score-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: var(--text-muted, #626a72);
+      margin: 0 0 8px;
+    }
+    .ssg-article__score-value {
+      font-family: var(--font-display, 'Newsreader', system-ui, sans-serif);
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .ssg-article__score-outof {
+      font-size: 1rem;
+      color: var(--text-muted, #626a72);
+      font-weight: 500;
+    }
+    .ssg-article__score-severity {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 4px 0 12px;
+    }
+    .ssg-article__score-severity[data-severity="fundamental"] { color: #b52727; }
+    .ssg-article__score-severity[data-severity="significant"] { color: #a35100; }
+    .ssg-article__score-severity[data-severity="partial"] { color: #8a6d00; }
+    .ssg-article__score-severity[data-severity="surface"] { color: #5a5a5a; }
+    .ssg-article__score-note {
+      font-size: 0.875rem;
+      color: var(--text-secondary, #444);
+      margin: 0;
+      font-style: italic;
+    }
+    .ssg-article__cards { display: flex; flex-direction: column; gap: 20px; }
+    .ssg-card {
+      border-left: 3px solid var(--border-subtle, #e0e0e0);
+      padding: 4px 0 4px 16px;
+    }
+    .ssg-card--hook { border-left-color: #5a5a5a; }
+    .ssg-card--fact { border-left-color: #1a5a8a; }
+    .ssg-card--reframe { border-left-color: #b85c00; }
+    .ssg-card--analogy { border-left-color: #6a4a8a; }
+    .ssg-card--view { border-left-color: #1a7a2a; }
+    .ssg-card__label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      font-weight: 700;
+      color: var(--text-muted, #626a72);
+      margin: 0 0 6px;
+    }
+    .ssg-card__big {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 0;
+      color: var(--text-primary, #1a1a1a);
+    }
+    .ssg-card__sub {
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      margin: 8px 0 0;
+      color: var(--text-secondary, #444);
+    }
+    .ssg-article__footer {
+      border-top: 1px solid var(--border-subtle, #e0e0e0);
+      margin-top: 32px;
+      padding-top: 16px;
+    }
+    .ssg-article__quality {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 0;
+      font-size: 0.875rem;
+    }
+    .ssg-article__quality-label {
+      font-weight: 600;
+      color: var(--text-secondary, #444);
+    }
+    .ssg-article__quality-value {
+      font-weight: 700;
+      color: var(--text-primary, #1a1a1a);
+      font-variant-numeric: tabular-nums;
+    }
+    .ssg-article__quality-note {
+      font-size: 0.8125rem;
+      color: var(--text-muted, #626a72);
+      margin: 4px 0 0;
+    }
+    .ssg-article__follow {
+      display: flex;
+      gap: 8px;
+      margin: 16px 0 0;
+      font-size: 0.875rem;
+      color: var(--text-muted, #626a72);
+    }
+    .ssg-article__follow a {
+      color: var(--text-secondary, #444);
+    }
+    /* Card deep links (#card-N) land with a little space above the card. */
+    .ssg-card { scroll-margin-top: 16px; }
+
+    /* Hide static article once the interactive island mounts. See App.svelte onMount. */
+    html.js-reader-mounted .ssg-article { display: none; }
+    /* The client-only island is empty until it mounts; don't leave a blank
+       viewport-tall block under the article for no-JS readers. */
+    html:not(.js-reader-mounted) #main-content { min-height: 0; }
+  </style>
+
+  <script is:inline define:vars={{ buildId }}>
+    if ('serviceWorker' in navigator) {
+      const currentBuild = String(buildId);
+      const priorBuild = sessionStorage.getItem('tfa-sw-build');
+      let reloading = false;
+
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!priorBuild || priorBuild === currentBuild || reloading) {
+          sessionStorage.setItem('tfa-sw-build', currentBuild);
+          return;
+        }
+        reloading = true;
+        sessionStorage.setItem('tfa-sw-build', currentBuild);
+        location.reload();
+      });
+
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register(`/sw.js?v=${encodeURIComponent(currentBuild)}`, { updateViaCache: 'none' })
+          .then((registration) => {
+            sessionStorage.setItem('tfa-sw-build', currentBuild);
+            registration.update().catch(() => {});
+          })
+          .catch(() => {});
+      });
+    }
+  </script>
+
+  <script>
+    // A-9: one <h1> per view. Once the interactive reader mounts it renders
+    // its own <h1> and the static article is hidden, so the hidden copy is
+    // demoted to a paragraph. It stays in the DOM (same id and class) as the
+    // no-JS fallback; the article is only ever shown when the reader did not
+    // mount, and then this never runs.
+    const root = document.documentElement;
+    function demoteStaticHeadline(): boolean {
+      if (!root.classList.contains('js-reader-mounted')) return false;
+      const heading = document.getElementById('ssg-headline');
+      if (heading && heading.tagName === 'H1') {
+        const p = document.createElement('p');
+        for (const attr of Array.from(heading.attributes)) p.setAttribute(attr.name, attr.value);
+        p.textContent = heading.textContent;
+        heading.replaceWith(p);
+      }
+      return true;
+    }
+    if (!demoteStaticHeadline()) {
+      const observer = new MutationObserver(() => {
+        if (demoteStaticHeadline()) observer.disconnect();
+      });
+      observer.observe(root, { attributes: true, attributeFilter: ['class'] });
+    }
+  </script>
+</body>
+</html>

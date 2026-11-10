@@ -1,0 +1,244 @@
+---
+/**
+ * Shared shell for the trust and policy pages (/privacy, /privasi,
+ * /corrections, /contact). Same Base layout, UtilityHeader and tokens as
+ * /about and /disclaimer, with the card styling moved into one stylesheet so
+ * the four pages stay consistent. The pages render plain semantic HTML into
+ * the slot; the styles below reach it through :global() under .policy.
+ */
+import Base from './Base.astro';
+import UtilityHeader from '../components/UtilityHeader.astro';
+import UtilityFooter from '../components/UtilityFooter.astro';
+
+interface Props {
+  /** Document <title>. */
+  title: string;
+  description: string;
+  /** Visible H1. */
+  heading: string;
+  /** Line under the H1, e.g. "Last reviewed November 2026". */
+  reviewed?: string;
+  /** Language of the page content. The site chrome stays English. */
+  lang?: 'en' | 'ms';
+  /** Path of this page, so the footer can mark it as current. */
+  path: string;
+}
+
+const { title, description, heading, reviewed, lang = 'en', path } = Astro.props;
+---
+<Base title={title} description={description}>
+  <UtilityHeader />
+  <main class="policy" lang={lang} data-policy-page={path}>
+    <h1 class="policy-title">{heading}</h1>
+    {reviewed && <p class="policy-reviewed">{reviewed}</p>}
+    <slot />
+  </main>
+  <UtilityFooter current={path} />
+</Base>
+
+<style>
+  /* Addresses, emails and code can be longer than a phone line at large text sizes. */
+  .policy :global(a),
+  .policy :global(code) {
+    overflow-wrap: anywhere;
+  }
+
+  .policy {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 18px 48px;
+  }
+
+  .policy-title {
+    /* One long word ("Accessibility") must not widen the page at large text sizes. */
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-family: var(--font-display);
+    font-size: var(--text-title-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 10px 0;
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+  }
+
+  .policy-reviewed {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    color: var(--text-tertiary);
+    margin: 0 0 20px 0;
+  }
+
+  .policy :global(.policy-lede) {
+    font-family: var(--font-body);
+    font-size: var(--text-reading);
+    line-height: 1.65;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 24px 0;
+  }
+
+  .policy :global(.policy-alt) {
+    font-family: var(--font-body);
+    font-size: var(--text-ui);
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0 0 24px 0;
+  }
+
+  .policy :global(.policy-card) {
+    background: var(--card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .policy :global(.policy-card--note) {
+    background: var(--amber-bg);
+    border-color: rgba(139, 101, 8, 0.12);
+  }
+
+  .policy :global(h2) {
+    font-family: var(--font-display);
+    font-size: var(--text-reading-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 12px 0;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+  }
+
+  .policy :global(h3) {
+    font-family: var(--font-display);
+    font-size: var(--text-body);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 6px 0;
+    line-height: 1.35;
+  }
+
+  .policy :global(p),
+  .policy :global(li),
+  .policy :global(dd) {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: 1.72;
+    color: var(--text-secondary);
+  }
+
+  .policy :global(.policy-card p) {
+    margin: 0 0 12px 0;
+  }
+
+  .policy :global(.policy-card > :last-child) {
+    margin-bottom: 0;
+  }
+
+  .policy :global(ul),
+  .policy :global(ol) {
+    margin: 0 0 12px 0;
+    padding-left: 1.25em;
+  }
+
+  /* global.css resets list markers; policy lists need them to scan. */
+  .policy :global(ul:not(.policy-items)) {
+    list-style: disc;
+  }
+
+  .policy :global(ol) {
+    list-style: decimal;
+  }
+
+  .policy :global(li + li) {
+    margin-top: 6px;
+  }
+
+  .policy :global(strong) {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  .policy :global(a) {
+    color: var(--focus);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+  }
+
+  .policy :global(code) {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--bg-sunken);
+    border-radius: 4px;
+    padding: 1px 4px;
+  }
+
+  /* Stacked "item / why / how long" lists. A table would need horizontal
+     scrolling at 390 px; one small card per item reads cleanly at any width. */
+  .policy :global(.policy-items) {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .policy :global(.policy-items > li) {
+    margin: 0;
+    padding: 12px 14px;
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+  }
+
+  .policy :global(.policy-items dl) {
+    margin: 6px 0 0 0;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 2px 10px;
+  }
+
+  .policy :global(.policy-items dt) {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--text-tertiary);
+    line-height: 1.72;
+  }
+
+  .policy :global(.policy-items dd) {
+    margin: 0;
+    font-size: var(--text-ui);
+    line-height: 1.6;
+  }
+
+  .policy :global(.policy-items p) {
+    margin: 0;
+  }
+
+  .policy :global(.policy-items h3) {
+    margin: 0 0 2px 0;
+  }
+
+  .policy :global(.policy-item-title) {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .policy :global(.policy-email) {
+    font-weight: 600;
+  }
+
+  .policy { max-width:800px; padding:48px 24px 64px; }
+  .policy-title { font:700 clamp(2.25rem,5vw,3.5rem)/1.08 var(--fora-serif); letter-spacing:-.02em; }
+  .policy-reviewed { padding-bottom:24px; border-bottom:1px solid var(--fora-ink); font-size:.875rem; }
+  .policy :global(.policy-card) { padding:24px 0; border:0; border-bottom:1px solid var(--fora-rule); border-radius:0; background:transparent; }
+  .policy :global(.policy-card--note) { padding:20px; border:1px solid var(--fora-rule); border-radius:12px; background:var(--fora-brand-tint); }
+  @media(max-width:600px) { .policy { padding:28px 16px 48px; } }
+
+</style>

@@ -1,0 +1,17 @@
+{
+  "name": "t4a-revamp",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "node scripts/workspace.mjs prepare",
+    "dev": "node scripts/workspace.mjs dev",
+    "build": "node scripts/workspace.mjs build",
+    "preview": "node scripts/workspace.mjs preview",
+    "test": "node scripts/workspace.mjs test",
+    "test:matrix": "node ../node_modules/@playwright/test/cli.js test --config=playwright.matrix.config.ts",
+    "check:first-load": "node scripts/check-first-load.mjs",
+    "check:license-gate": "node scripts/check-license-gate.mjs",
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "deploy:preview": "node scripts/deploy-preview.mjs"
+  }
+}

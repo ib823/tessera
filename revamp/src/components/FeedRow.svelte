@@ -1,0 +1,111 @@
+<script lang="ts">
+  import { opinionLabel } from '../data/issue-types';
+  import { formatIssueDate, publishedDay, updatedSinceRead } from '../lib/issue-meta';
+  import { absoluteDate, relativeDate } from '../lib/relative-date';
+  import { inAppClick, issueHref } from '../lib/link-open';
+
+  import type { IssueSummary } from '../lib/issues-loader';
+  import type { ReadState } from '../stores/reader';
+
+  interface Props {
+    issue: IssueSummary;
+    readState: ReadState | null;
+    isActive: boolean;
+    tabIndex?: number;
+    itemIndex?: number;
+    onClick: () => void;
+    hasReaction?: boolean;
+    reactionCount?: number;
+    hasConnections?: boolean;
+    searchTerms?: string;
+  }
+  let { issue, readState, isActive, tabIndex = 0, itemIndex = 0, onClick, hasReaction = false, reactionCount = 0, hasConnections = false, searchTerms = '' }: Props = $props();
+
+  function highlightText(text: string, terms: string): string {
+    if (!terms || terms.length < 2) return text;
+    const escaped = terms.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escaped})`, 'gi');
+    return text.replace(regex, '<mark style="background:var(--amber-light);color:inherit;border-radius:var(--radius-sm);padding:0 1px;">$1</mark>');
+  }
+
+  let hovered = $state(false);
+  let scoreColor = $derived(
+    issue.opinionShift >= 80 ? 'var(--score-strong)' : issue.opinionShift >= 60 ? 'var(--score-medium)' : issue.opinionShift >= 40 ? 'var(--score-partial)' : 'var(--text-tertiary)'
+  );
+  let label = $derived(opinionLabel(issue.opinionShift));
+
+  let isCompleted = $derived(readState?.state === 'completed');
+  let isStarted = $derived(readState?.state === 'started');
+  let progress = $derived(readState?.progress ?? 0);
+  let savedLabel = $derived(reactionCount > 0 ? `${reactionCount} saved angle${reactionCount === 1 ? '' : 's'}` : '');
+  let totalAngles = $derived(issue.cards.length || 6);
+
+  // Visual weight: bold unread → medium reading → light done
+  let headlineWeight = $derived(isCompleted ? '600' : (isStarted ? '600' : '700'));
+  let headlineColor = $derived(isCompleted ? 'var(--text-tertiary)' : 'var(--text-primary)');
+  let dateLabel = $derived(relativeDate(publishedDay(issue)));
+  let progressLabel = $derived(isStarted && progress > 0 ? `Resume from insight ${Math.min(progress + 1, totalAngles)} of ${totalAngles}` : (savedLabel || (isCompleted ? 'Done' : '')));
+</script>
+
+<!-- A real link (playbook §06) that keeps the listbox option role: new tab,
+     copy link and crawlers follow the href; a plain click opens in place. -->
+<a
+  href={issueHref(issue.id)}
+  class="feed-row"
+  data-index={itemIndex}
+  onclick={inAppClick(onClick)}
+  onkeydown={(e) => { if (e.key === ' ') { e.preventDefault(); onClick(); } }}
+  onmouseenter={() => hovered = true}
+  onmouseleave={() => hovered = false}
+  role="option"
+  aria-selected={isActive}
+  tabindex={tabIndex}
+  style="
+    width:100%;appearance:none;border:none;text-align:left;font:inherit;color:inherit;text-decoration:none;
+    padding:12px 16px;cursor:pointer;
+    border-bottom:1px solid var(--bg-sunken);
+    background:{isActive ? 'rgba(25,113,194,0.05)' : (hovered ? 'var(--bg-sunken)' : 'transparent')};
+    transition:background var(--duration-fast, 150ms) ease;
+    display:grid;grid-template-columns:4px minmax(0,1fr) auto;align-items:flex-start;gap:12px;
+  "
+>
+  <div style="width:4px;align-self:stretch;border-radius:var(--radius-pill);background:{scoreColor};opacity:{isActive ? 1 : (isStarted ? 0.7 : 0.28)};"></div>
+  <div style="flex:1;min-width:0;">
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      {#if updatedSinceRead(issue, readState)}
+        <span data-updated-since-read title="Updated {formatIssueDate(issue.modifiedAt)}, after you finished it" style="font-size:var(--text-micro);font-weight:700;color:var(--status-blue-text);background:var(--status-blue-bg);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;">Updated since you read it</span>
+      {:else if issue.status === 'updated'}
+        <span style="font-size:var(--text-micro);font-weight:700;color:var(--status-blue-text);background:var(--status-blue-bg);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;">Updated</span>
+      {/if}
+      {#if hasReaction}
+        <span style="font-size:var(--text-micro);font-weight:700;color:var(--highlight-accent, var(--score-warning));background:var(--highlight-bg, rgba(184,92,0,0.08));padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;">{reactionCount > 0 ? `${reactionCount} saved` : 'Highlighted'}</span>
+      {/if}
+      {#if issue.legacyAudit}
+        <span title="Pre-pipeline issue — primary sources not on file yet. The editorial review trail predates the current 4-stage pipeline." style="font-size:var(--text-micro);font-weight:700;color:var(--text-muted);background:var(--bg-sunken);padding:4px 8px;border-radius:var(--radius-sm);text-transform:uppercase;flex-shrink:0;letter-spacing:0.02em;">Pre-pipeline</span>
+      {/if}
+      {#if dateLabel}
+        <time datetime={publishedDay(issue)} title={absoluteDate(publishedDay(issue))} data-relative-date style="font-size:var(--text-sm);font-weight:600;color:var(--text-muted);">{dateLabel}</time>
+      {/if}
+    </div>
+    <span class="balance-title" style="font-size:var(--text-body);font-weight:{headlineWeight};color:{isActive ? 'var(--text-primary)' : headlineColor};line-height:1.28;display:block;margin-top:2px;">{#if searchTerms}{@html highlightText(issue.headline, searchTerms)}{:else}{issue.headline}{/if}</span>
+
+    <p style="font-size:var(--text-sm);color:var(--text-tertiary);line-height:1.45;margin:4px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{issue.context}</p>
+  </div>
+  <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:2px;padding-top:2px;min-width:54px;">
+    <!-- The option is named by its visible text (WCAG 2.5.3); the hidden
+         prefix gives the bare score its meaning for screen readers. -->
+    <span style="font-size:var(--text-body);font-weight:700;color:{scoreColor};font-variant-numeric:tabular-nums;" title="{issue.opinionShift} — {label}: Reading only the headline would hide about {issue.opinionShift}% of the story"><span class="sr-only">Opinion Shift </span>{issue.opinionShift}</span>
+    <span style="font-size:var(--text-xs);font-weight:600;color:var(--text-muted);">{label}</span>
+    {#if progressLabel}
+      <span style="font-size:var(--text-micro);color:var(--text-muted);">{progressLabel}</span>
+    {/if}
+  </div>
+</a>
+
+<style>
+  .feed-row:focus-visible {
+    outline: 2px solid var(--score-info);
+    outline-offset: -2px;
+  }
+.feed-row .balance-title { font-family:var(--fora-serif); font-size:1.125rem !important; line-height:1.2 !important; }
+</style>

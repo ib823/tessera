@@ -1,0 +1,46 @@
+{
+  "decision": "D06 option 1: Newsreader 400 + 700 static Latin WOFF2 and system sans",
+  "authority": "User instruction to proceed as recommended within the existing font budget",
+  "package": "@fontsource/newsreader",
+  "version": "5.3.0",
+  "budgetBytes": 61440,
+  "totalBytes": 46276,
+  "files": [
+    {
+      "path": "newsreader-latin-400.woff2",
+      "bytes": 22480,
+      "sha256": "e66067814f1c672d33a457e4f4d102c818b481420e2234cf685ebdbf2f443904"
+    },
+    {
+      "path": "newsreader-latin-700.woff2",
+      "bytes": 23796,
+      "sha256": "8b5c3b65cbda1d79ed371d23df3ef1fe194e590558965cf9942042441480ec61"
+    }
+  ],
+  "comparisons": [
+    {
+      "option": 1,
+      "description": "Static Latin Regular 400 + Bold 700",
+      "fontBytes": 46276,
+      "headroomBytes": 15164,
+      "selected": true
+    },
+    {
+      "option": 2,
+      "description": "@fontsource-variable/newsreader 5.3.0 Latin wght variable file (default optical size)",
+      "fontBytes": 58084,
+      "headroomBytes": 3356,
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757",
+      "selected": false
+    },
+    {
+      "option": 3,
+      "description": "System fonts and outlined wordmark",
+      "fontBytes": 0,
+      "headroomBytes": 61440,
+      "selected": false
+    }
+  ],
+  "rationale": "The recommended static pair fits the unchanged budget and matches both specified reading weights. It is 11,808 bytes smaller than the supplied Latin weight-variable file and uses the same fixed-weight files in node-canvas and the browser. System-only fallback is unnecessary.",
+  "coverage": "Official Latin subset, 224 mapped code points; complete printable ASCII including Malay A\u2013Z. Other scripts/unsupported characters use system font fallback. No canonical text was changed."
+}

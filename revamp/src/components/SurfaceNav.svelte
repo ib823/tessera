@@ -1,0 +1,159 @@
+<script lang="ts">
+  interface Props {
+    surfaceMode: 'today' | 'library';
+    todayMode?: 'top' | 'latest';
+    onGoLatest?: () => void;
+    libraryCount?: number;
+    variant?: 'inline' | 'sidebar';
+    onGoToday?: () => void;
+    onOpenLibrary?: () => void;
+  }
+
+  let {
+    surfaceMode,
+    todayMode = 'top',
+    onGoLatest,
+    libraryCount = 0,
+    variant = 'inline',
+    onGoToday,
+    onOpenLibrary,
+  }: Props = $props();
+</script>
+
+<nav class="surface-nav" class:surface-nav--sidebar={variant === 'sidebar'} aria-label="Main navigation">
+  <button class="surface-button" class:surface-button--today={surfaceMode === 'today' && todayMode === 'top'} onclick={() => onGoToday?.()} aria-current={surfaceMode === 'today' && todayMode === 'top' ? 'page' : undefined}>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg>
+    <span>Top stories</span>
+  </button>
+
+  <button class="surface-button" class:surface-button--today={surfaceMode === 'today' && todayMode === 'latest'} onclick={() => onGoLatest?.()} aria-current={surfaceMode === 'today' && todayMode === 'latest' ? 'page' : undefined}>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>Latest</span>
+  </button>
+  <button class="surface-button" class:surface-button--library={surfaceMode === 'library'} onclick={() => onOpenLibrary?.()} aria-current={surfaceMode === 'library' ? 'page' : undefined}>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H20v15.5A2.5 2.5 0 0 0 17.5 16H3z"></path><path d="M20 18.5A2.5 2.5 0 0 1 17.5 21H6a3 3 0 0 1-3-3V5.5"></path></svg>
+    <span>Saved</span>
+    {#if libraryCount > 0}<span class="surface-badge" aria-label={`${libraryCount} items in your library`}>{libraryCount}</span>{/if}
+  </button>
+
+
+</nav>
+
+<style>
+  .surface-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .surface-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-subtle);
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: transform 0.2s ease-out, background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out, box-shadow 0.2s ease-out;
+    font: inherit;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    box-shadow: 0 8px 18px rgba(17, 24, 39, 0.04);
+  }
+
+  @media (hover: hover) {
+    .surface-button:hover {
+      transform: translateY(-1px);
+      background: var(--bg);
+      border-color: var(--border-divider);
+    }
+  }
+
+  .surface-button[aria-current='page'] {
+    background: var(--bg-sunken);
+    border-color: var(--border-divider);
+    box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
+  }
+
+  .surface-button--today {
+    background: rgba(210, 140, 40, 0.12);
+    border-color: rgba(210, 140, 40, 0.28);
+    color: var(--score-warning);
+  }
+
+  .surface-button--library {
+    color: var(--score-warning);
+  }
+
+  /* Rendered as an <a>, so it needs the link defaults reset to match the buttons. */
+  .surface-button--graphics {
+    text-decoration: none;
+    color: var(--text-secondary);
+  }
+
+  .surface-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 8px;
+    border-radius: var(--radius-pill);
+    background: rgba(210, 140, 40, 0.12);
+    color: inherit;
+    font-size: var(--text-micro);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .surface-nav--sidebar .surface-button {
+    min-height: 44px;
+    padding-inline: 12px;
+    font-size: var(--text-xs);
+    box-shadow: none;
+  }
+
+  @media (max-width: 767px) {
+    .surface-nav {
+      gap: 8px;
+    }
+
+    .surface-button {
+      min-height: 44px;
+      padding-inline: 12px;
+      font-size: var(--text-xs);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .surface-button {
+      background: rgba(34, 31, 27, 0.9);
+      border-color: var(--border-divider);
+      color: var(--text-secondary);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+    }
+
+    .surface-button[aria-current='page'] {
+      background: rgba(200, 150, 58, 0.14);
+      border-color: rgba(200, 150, 58, 0.3);
+      color: var(--text-primary);
+    }
+
+    .surface-button--today {
+      background: rgba(200, 150, 58, 0.16);
+      border-color: rgba(200, 150, 58, 0.34);
+      color: var(--score-warning);
+    }
+
+    .surface-badge {
+      background: rgba(200, 150, 58, 0.16);
+    }
+
+  }
+  .surface-button { color: var(--fora-muted); background: transparent; border:0; border-radius: 0; box-shadow: none; font-family: var(--fora-sans); }
+  .surface-button[aria-current='page'] { color: var(--fora-brand); background: transparent; box-shadow: inset 0 -3px var(--fora-brand); }
+  .surface-nav { background: var(--fora-paper); }
+</style>

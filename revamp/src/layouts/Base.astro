@@ -1,0 +1,176 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+  image?: string;
+}
+
+const { title = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.', noindex = false, image } = Astro.props;
+const siteUrl = Astro.site?.origin || 'https://thefourthangle.pages.dev';
+const canonicalPath = Astro.url.pathname
+  .replace(/index\.html$/, '')
+  .replace(/\.html$/, '') || '/';
+const canonicalUrl = `${siteUrl}${canonicalPath === '/' ? '/' : canonicalPath}`;
+const buildId = typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : new Date().toISOString();
+// Per-page OG image override (1200×630 cards); falls back to the site card.
+const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-image.png?v=${encodeURIComponent(buildId)}`;
+---
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  {/*
+    Phase 4: preload one critical weight per family. Both files are latin
+    subsets (~25 KB and ~31 KB) sitting well under the 60 KB brotli budget
+    (ADR-0001). crossorigin is mandatory for font preloads even from
+    same-origin — without it the preload is fetched anonymously and the
+    subsequent @font-face fetch misses the preload cache.
+  */}
+  <link rel="preload" href="/fonts/newsreader-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/newsreader-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  <script is:inline>
+    // Phase 8.5 — in-app webview detection. Runs before any other script
+    // so dataset.env is set when Phase 3's view-transition click handler
+    // checks it. Pattern covers Facebook/Messenger (FBAN/FBAV), Instagram,
+    // Line, TikTok, WeChat (MicroMessenger), X/Twitter (generic Twitter),
+    // and the Android wv token. False positives are benign: webview-gated
+    // features degrade gracefully (View Transitions → instant navigation,
+    // nested backdrop-filter → solid background).
+    (function () {
+      try {
+        var ua = navigator.userAgent || '';
+        if (/FBAN|FBAV|Instagram|Line|TikTok|\bwv\b|MicroMessenger|Twitter/i.test(ua)) {
+          document.documentElement.dataset.env = 'webview';
+        }
+      } catch (_) { /* leave unset */ }
+    })();
+  </script>
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:secure_url" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content={`${title} — Independent Malaysian issues analysis`} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Fourth Angle" />
+  <meta property="og:locale" content="en_MY" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image:alt" content={`${title} — Independent Malaysian issues analysis`} />
+  <meta name="author" content="The Fourth Angle" />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" type="application/rss+xml" title="The Fourth Angle" href="/rss.xml" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="application-name" content="The Fourth Angle" />
+  <meta name="apple-mobile-web-app-title" content="4th Angle" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="manifest" href={`/manifest.json?v=${encodeURIComponent(buildId)}`} />
+  <link rel="icon" type="image/svg+xml" href={`/favicon.svg?v=${encodeURIComponent(buildId)}`} />
+  <link rel="icon" type="image/png" href={`/favicon.png?v=${encodeURIComponent(buildId)}`} />
+  <link rel="apple-touch-icon" sizes="180x180" href={`/icons/apple-touch-icon.png?v=${encodeURIComponent(buildId)}`} />
+</head>
+<body data-build-id={buildId}>
+  <a href="#main-content" class="sr-only">Skip to content</a>
+  <div id="main-content" tabindex="-1">
+    <slot />
+  </div>
+  <script is:inline define:vars={{ buildId }}>
+    window.__TFA_RELEASE__ = { buildId };
+    if ('serviceWorker' in navigator) {
+      const currentBuild = String(buildId);
+      const priorBuild = sessionStorage.getItem('tfa-sw-build');
+      let reloading = false;
+
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!priorBuild || priorBuild === currentBuild || reloading) {
+          sessionStorage.setItem('tfa-sw-build', currentBuild);
+          return;
+        }
+        reloading = true;
+        sessionStorage.setItem('tfa-sw-build', currentBuild);
+        location.reload();
+      });
+
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register(`/sw.js?v=${encodeURIComponent(currentBuild)}`, { updateViaCache: 'none' })
+          .then((registration) => {
+            sessionStorage.setItem('tfa-sw-build', currentBuild);
+            registration.update().catch(() => {});
+          })
+          .catch(() => {});
+      });
+    }
+    // Back link: go back if history exists, otherwise go home
+    document.querySelector('.back-link')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      let canGoBack = false;
+      try {
+        canGoBack = !!document.referrer && new URL(document.referrer).origin === location.origin;
+      } catch {}
+      if (canGoBack) {
+        history.back();
+      } else {
+        location.href = '/';
+      }
+    });
+    // F02/F03: Crossfade route transition using View Transitions API.
+    // Progressive enhancement per ADR-0001 Phase 3: feature-detect,
+    // fall back to instant navigation, and gate on both reduced-motion
+    // preference and webview environment (see Phase 8.5 for the
+    // data-env="webview" detector). Without these gates:
+    //   - reduced-motion users see a crossfade they explicitly opted out of
+    //   - in-app webviews occasionally flash-black on transition
+    if ('startViewTransition' in document) {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      document.addEventListener('click', (e) => {
+        // Leave the click alone when the page already handled it (an issue
+        // link that opens in place) or the reader asked for a new tab, a new
+        // window or a download.
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        const target = e.target;
+        if (!(target instanceof Element)) return;
+        const anchor = target.closest('a[href]');
+        if (!anchor) return;
+        if ((anchor.getAttribute('target') ?? '') !== '' && anchor.getAttribute('target') !== '_self') return;
+        if (anchor.hasAttribute('download')) return;
+        const href = anchor.getAttribute('href');
+        if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) return;
+        // Same-origin internal navigation only
+        if (anchor.origin !== location.origin) return;
+        e.preventDefault();
+        // Skip the view-transition wrapper if the user prefers reduced motion
+        // or the runtime is an in-app webview. Navigate instantly — same URL
+        // change, no crossfade.
+        const isWebview = document.documentElement.dataset.env === 'webview';
+        if (prefersReducedMotion.matches || isWebview) {
+          location.href = href;
+          return;
+        }
+        document.startViewTransition(() => {
+          location.href = href;
+        });
+      });
+    }
+  </script>
+</body>
+</html>
