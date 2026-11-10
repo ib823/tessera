@@ -99,6 +99,9 @@ jobs:
         run: cp -a revamp/.cache/app/dist revamp/dist
 
       - name: Install Playwright browsers
+        # Normally about four minutes. A stalled download or apt lock once held
+        # this step for over an hour; fail it instead of the whole job budget.
+        timeout-minutes: 20
         run: npx playwright install --with-deps chromium firefox webkit
 
       - name: Playwright e2e (all seven browser and device projects)
