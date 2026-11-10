@@ -32,7 +32,9 @@ jobs:
     # ubuntu26.04-x64"), which stopped the job before the Cloudflare deploy.
     # Unpin when @playwright/test is upgraded to a release that supports it.
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    # The seven browser projects and the three-engine responsive matrix run
+    # against the same signed build before it can deploy. This is a ceiling.
+    timeout-minutes: 120
     env:
       ASTRO_TELEMETRY_DISABLED: '1'
       GIT_DIR: ${{ github.workspace }}/.git
