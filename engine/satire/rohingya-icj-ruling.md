@@ -38,6 +38,12 @@ Myanmar's government, which does not use the term Rohingya, said it was unable t
 
 ## Community Reaction
 
+A construction industry representative said contractors had long supported the Rohingya community.
+
+"Many of our sites would not run without them," he said. "We recognise them as workers. We just cannot recognise them in writing."
+
+He said the industry would welcome a legal right to work for refugees, provided it did not affect current wage levels.
+
 A 31-year-old construction worker who holds a UN refugee card followed the reading of the judgment on his phone during his lunch break. He asked not to be named because he works without a permit, which is the only way he is able to work.
 
 "It is good that the court says what happened," he said. "I hope the officer at the roadblock near the site was also watching."
