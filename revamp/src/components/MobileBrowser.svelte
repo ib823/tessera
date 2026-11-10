@@ -2,7 +2,7 @@
   import { onDestroy, onMount } from 'svelte';
   import MobileCard from './MobileCard.svelte';
   import MobileSectionDivider from './MobileSectionDivider.svelte';
-  import { readIssues, savePosition, getSavedPosition, reactions } from '../stores/reader';
+  import { readIssues, savePosition, getSavedPosition } from '../stores/reader';
   import { haptic } from '../lib/animation';
 
   import type { IssueSummary } from '../lib/issues-loader';
@@ -59,20 +59,6 @@
     }
     return items;
   });
-
-  // Reactions — subscribe to the atom for real-time updates
-  let reactionRaw = $state('{}');
-  $effect(() => {
-    const unsub = reactions.subscribe(v => { reactionRaw = v; });
-    return unsub;
-  });
-  let reactionMap: Record<string, number[]> = $derived.by(() => {
-    try { return JSON.parse(reactionRaw); } catch { return {}; }
-  });
-
-  function hasReaction(issueId: string): boolean {
-    return (reactionMap[issueId]?.length ?? 0) > 0;
-  }
 
   // DOM refs
   let containerEl: HTMLDivElement | undefined = $state();
@@ -435,7 +421,6 @@
             readState={getState(item.issue.id)}
             onOpen={() => handleCardOpen(item.issue)}
             onPrefetch={() => onPrefetch?.(item.issue)}
-            hasReaction={hasReaction(item.issue.id)}
             hasConnections={issueHasConnections?.(item.issue.id) ?? false}
             eager={i === 0 || i === 1}
           />

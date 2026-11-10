@@ -8,10 +8,9 @@
     readState: ReadState | null;
     onOpen: () => void;
     onPrefetch?: () => void;
-    hasReaction?: boolean;
     hasConnections?: boolean;
   }
-  let { issue, index, readState, onOpen, onPrefetch, hasReaction = false, hasConnections = false }: Props = $props();
+  let { issue, index, readState, onOpen, onPrefetch, hasConnections = false }: Props = $props();
 </script>
-<div class="desktop-card"><MobileCard {issue} {readState} {onOpen} {onPrefetch} {hasReaction} {hasConnections} eager={index < 3}/></div>
+<div class="desktop-card"><MobileCard {issue} {readState} {onOpen} {onPrefetch} {hasConnections} eager={index < 3}/></div>
 <style>.desktop-card { min-width:0; }</style>
