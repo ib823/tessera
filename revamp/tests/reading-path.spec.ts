@@ -5,7 +5,8 @@ import { test, expect } from '@playwright/test';
  * above the headline and scrolled away with the article, so readers only
  * ever saw it on card 1. It is now pinned to the top of the reading column,
  * says "Card N of M" like the issue lists, and jumping to a card lands the
- * card below it rather than under it.
+ * card below it rather than under it. Jumps scroll only the reading column,
+ * not the window, so the site header stays on screen.
  */
 
 test.use({ serviceWorkers: 'block' });
@@ -35,6 +36,12 @@ for (const width of [1024, 1440, 1920]) {
     // The card lands below the pinned path, not under it.
     const card = page.locator('.fora-reading-step[data-step="3"]');
     await expect.poll(async () => (await card.boundingBox())!.y - (pathBox.y + pathBox.height)).toBeGreaterThanOrEqual(0);
+
+    // Only the reading column scrolls: the site header stays on screen.
+    expect(await page.evaluate(() => scrollY), 'the window did not scroll').toBe(0);
+    await page.keyboard.press('j');
+    await expect(page.locator('[data-reading-path-position]')).toHaveText(`Card 5 of ${total}`);
+    expect(await page.evaluate(() => scrollY), 'J did not scroll the window').toBe(0);
 
     // Scrolling on through the article keeps it in view.
     await page.locator('.fora-reading-step[data-step="5"]').scrollIntoViewIfNeeded();

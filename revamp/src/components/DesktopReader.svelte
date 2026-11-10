@@ -268,6 +268,18 @@
     return () => observer.disconnect();
   });
 
+  // Scroll only the reader's own column. scrollIntoView also scrolled the
+  // window (the page is taller than the screen), which pushed the site
+  // header off screen and left a blank strip below the app. The target
+  // lands just below the pinned reading path.
+  function scrollReaderTo(el: HTMLElement | null | undefined) {
+    if (!el || !scrollEl) return;
+    const offset = (progressShell?.offsetHeight ?? 0) + 16;
+    const top = scrollEl.scrollTop + el.getBoundingClientRect().top - scrollEl.getBoundingClientRect().top - offset;
+    const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    scrollEl.scrollTo({ top: Math.max(0, top), behavior: smooth ? 'smooth' : 'auto' });
+  }
+
   // J/K keyboard navigation between cards
   function onReaderKeyDown(e: KeyboardEvent) {
     // Don't intercept if user is typing in an input
@@ -278,13 +290,13 @@
       const next = Math.min(activeStep + 1, els.length - 1);
       if (next !== activeStep) {
         e.preventDefault();
-        els[next]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        scrollReaderTo(els[next]);
       }
     } else if (e.key === 'k' || e.key === 'ArrowUp') {
       const prev = Math.max(activeStep - 1, 0);
       if (prev !== activeStep) {
         e.preventDefault();
-        els[prev]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        scrollReaderTo(els[prev]);
       }
     }
   }
@@ -310,7 +322,7 @@
             class:reader-progress-segment--done={i < activeStep}
             class:reader-progress-segment--active={i === activeStep}
             aria-current={i === activeStep ? 'step' : undefined}
-            onclick={() => { const el = cardEls[i]; if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
+            onclick={() => scrollReaderTo(cardEls[i])}
             title="{cardMeta.label}{card.lens ? ' · ' + card.lens : ''}"
             aria-label="Card {i + 1}: {cardMeta.label}{card.lens ? ' — ' + card.lens : ''}"
           ></button>
@@ -410,7 +422,7 @@
           {/if}
           <CardSources {card} entries={issue.sourceList} variant="desktop" />
           {#if card.t === 'fact' && connections.length > 0}
-            <button onclick={() => completionMarker?.scrollIntoView({ behavior: 'smooth', block: 'start' })} style="font-size:var(--text-xs);font-weight:700;color:var(--score-info);margin-top:16px;display:inline-flex;align-items:center;gap:4px;background:none;border:none;cursor:pointer;padding:0;font-family:inherit;transition:color 0.15s ease;" onmouseenter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)'; }} onmouseleave={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--score-info)'; }}>
+            <button onclick={() => scrollReaderTo(completionMarker)} style="font-size:var(--text-xs);font-weight:700;color:var(--score-info);margin-top:16px;display:inline-flex;align-items:center;gap:4px;background:none;border:none;cursor:pointer;padding:0;font-family:inherit;transition:color 0.15s ease;" onmouseenter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)'; }} onmouseleave={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--score-info)'; }}>
               Tracked in {connections.length} {connections.length === 1 ? 'issue' : 'issues'} <span aria-hidden="true">↓</span>
             </button>
           {/if}
