@@ -194,7 +194,6 @@
     if (raw === 'true') return { state: 'completed', progress: 6 };
     try { return JSON.parse(raw) as ReadState; } catch { return null; }
   }
-  }
 
   const modes: Array<{ key: TodayMode; label: string }> = [
     { key: 'top', label: 'Top stories' },
