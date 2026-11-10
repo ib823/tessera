@@ -1,5 +1,7 @@
 # FORA Phase 1 — final browser verification
 
+> Later: Firefox and WebKit runs, the fixes they required and the hosted preview checks are in [PREVIEW-RESULTS.md](PREVIEW-RESULTS.md). This report records the earlier Chromium-only checkpoint.
+
 10 November 2026 (MYT). Local feature branch `codex/t4a-revamp`; no commit, push, hosted deployment or production cut-over.
 
 **The local Chromium runs pass. Firefox/WebKit, physical devices and deployment-origin acceptance remain unverified.**

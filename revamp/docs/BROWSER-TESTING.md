@@ -65,7 +65,7 @@ The original suite had only run `chromium-desktop` on main. Running all seven pr
 
 ## Hosted preview journeys
 
-Set `FORA_MATRIX_ORIGIN` to an immutable deployment URL to run the same matrix against the hosted preview. No local server starts; the page fixture allows only that origin and still blocks workers, publishers and every other host. A hosted run also fails on any CSP violation logged by the browser, which the local server cannot exercise because it sends no CSP header. Production and the branch alias are refused. Put the deployed `revamp/dist` (the `fora-preview-dist` artifact of the deploying run) in place first: the breakpoint sweep reads its CSS from there.
+Set `FORA_MATRIX_ORIGIN` to an immutable deployment URL to run the same matrix against the hosted preview. No local server starts; the page fixture allows only that origin and still blocks workers, publishers and every other host. A hosted run also fails on any CSP violation logged by the browser, which the local server cannot exercise because it sends no CSP header. Production and the branch alias are refused. Hosted pages also wait for `load` (and, on `/?q=` URLs, for the Search heading) before measuring, because a deployed origin delivers the search index and fonts after hydration; local runs are unaffected. Put the deployed `revamp/dist` (the `fora-preview-dist` artifact of the deploying run) in place first: the breakpoint sweep reads its CSS from there.
 
 ```sh
 FORA_MATRIX_ORIGIN=https://HEX.thefourthangle.pages.dev \
@@ -73,5 +73,9 @@ FORA_MATRIX_ORIGIN=https://HEX.thefourthangle.pages.dev \
 ```
 
 Results go to `revamp/playwright-report/matrix-hosted/` and `revamp/test-results/matrix-hosted.json`.
+
+`check-first-load.mjs` and `check-storage-upgrade.mjs` use `/usr/bin/chromium` when it exists. On GitHub's ubuntu-24.04 runners that is the runner's own Chromium (156 on 10 November 2026), not Playwright's; the first-load report records the version and executable. It also lists outside requests, failed loads, HTTP errors and CSP violations. A CSP violation report counts as an outside request because the policy's `report-uri` is the notify worker.
+
+The site's CSP has no `'unsafe-hashes'`, so server-rendered markup must not contain inline event handlers. Svelte renders an `onerror`/`onload` prop, or a `use:` action, on an `<img>` as `this.__e=event` replay attributes; listen through `bind:this` and an effect instead (see `src/components/IssueImage.svelte` in the overlay). `tests/issue-image.spec.ts` enforces this for the app routes.
 
 Remaining separate acceptance checks include actual iPhone/Safari and Android hardware, browser chrome zoom/OS text settings, virtual keyboards and safe areas, native sharing, screen-reader use, hosted-preview headers/caching, real opt-in push/sync, production signatures and approved cut-over. Do not infer these passes from the local matrix.

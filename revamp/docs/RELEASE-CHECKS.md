@@ -1,5 +1,7 @@
 # Cut-over preparation checks — 10 November 2026
 
+> Later: the signed CI run, Firefox/WebKit results and the hosted preview checks are recorded in [PREVIEW-RESULTS.md](PREVIEW-RESULTS.md). The record below is the earlier local checkpoint.
+
 The user authorized Phase 1 production cut-over. The release preparation is on
 `codex/t4a-revamp`; it is not evidence that main has been merged or deployed.
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the gated workflow and rollback procedure.

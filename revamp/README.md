@@ -50,6 +50,7 @@ A preview origin has its own browser storage. It cannot directly read storage fr
 - [Phase manifest](docs/PHASE_MANIFEST.csv): board scope and required omissions.
 - [Implementation and evidence](docs/IMPLEMENTATION.md): current changes, tests, and remaining work.
 - [Owner acceptance map](docs/REQUIREMENTS_TO_ACCEPTANCE.csv): planned release checks, not proof they already pass.
+- [Hosted preview verification](docs/PREVIEW-RESULTS.md): the signed CI run, Firefox/WebKit results and hosted checks.
 
 Starting commit: `1300e8a7e578fc9a612b65e41a70d6515a8319d0`.
 

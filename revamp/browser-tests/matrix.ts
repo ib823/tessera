@@ -47,6 +47,15 @@ export async function open(page: Page, path: string) {
   if (path.startsWith('/?') || path === '/' || path.startsWith('/issue/1976')) {
     await expect(page.locator('html.js-reader-mounted')).toHaveCount(1);
   }
+  if (process.env.FORA_MATRIX_ORIGIN) {
+    // Hosted mode only. A deployed origin delivers the search index and web
+    // fonts after hydration; the local server is effectively instant. /?q=
+    // first shows the server-rendered home heading, which the app replaces
+    // with Search once the index arrives, and a late Newsreader swap re-lays
+    // out headings. Measure the settled page, as a reader sees it.
+    await page.waitForLoadState('load');
+    if (new URL(path, 'http://localhost').searchParams.has('q')) await expect(page.locator('h1:visible')).toHaveText('Search');
+  }
   await page.evaluate(() => document.fonts.ready);
   await expect(page.locator('h1:visible')).toHaveCount(1);
 }
