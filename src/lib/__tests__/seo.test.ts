@@ -40,7 +40,8 @@ describe('issue titles', () => {
     for (const issue of ISSUES.filter((i) => i.published === true)) {
       const title = issueDocumentTitle(issue);
       expect(title.length, `${issue.id}: ${title}`).toBeLessThanOrEqual(SEO_TITLE_MAX);
-      const stem = title.replace(/…$/, '').replace(/ \| FORA$/, '');
+      // The site name follows a shortened title when both fit, so drop it first.
+      const stem = title.replace(/ \| FORA$/, '').replace(/…$/, '');
       const source = (issue.seoTitle ?? issue.headline).replace(/\s+/g, ' ').trim();
       expect(source.startsWith(stem), `${issue.id}: "${stem}" is not a prefix of the headline`).toBe(true);
       const nextChar = source.charAt(stem.length);
