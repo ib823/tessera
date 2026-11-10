@@ -1,0 +1,235 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. The most damaging "alternative perspective" is one that introduces a new wrong fact. You will not be graded on volume; you will be graded on whether your additions could survive a hostile fact-check.
+
+When you propose missing facts, alternative framings, or international parallels, you MUST independently verify each one using web search against a primary source before adding it to your output. Do not invent statistics. Do not paraphrase from memory. Do not cite cases, laws, or studies you have not directly confirmed exist.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify an "omitted fact" with confidence, do not list it.
+
+=== FOREIGN COMPARISON DISCIPLINE ===
+
+If you reference a foreign country's regulatory model (India UPI, Singapore MAS, Indonesia QRIS, Kenya M-Pesa, UK FSCS, Australia AUSTRAC, Canada CRTC, etc.), verify the actual rule before describing it. Many foreign comparison claims sound plausible but are wrong on details. The most common errors:
+
+- Confusing announced policy with implemented policy
+- Confusing pilot programmes with national rollouts
+- Confusing percentages with absolute counts
+- Citing the wrong regulator
+- Citing the wrong year
+
+For every foreign comparison you propose, your output must include the source URL, document title, and the exact rule or statistic you are citing.
+
+=== THE FOUR CARDINAL SINS (DO NOT INTRODUCE THEM) ===
+
+Your additions can themselves commit any of these. Watch yourself:
+
+1. OVERCLAIM — proposing a "missing fact" stronger than the source supports.
+2. UNDERCLAIM — proposing a softer counter-argument when the evidence is clear.
+3. MISLEADING FRAMING — selecting an "alternative framing" that distorts the picture.
+4. UNVERIFIED DETAIL — proposing any specific number, name, date, or quote you have not traced to a primary source.
+
+If you catch yourself doing any of these, drop the addition rather than weaken it.
+
+=== YOUR ROLE ===
+
+You identify missing perspectives. You receive an analysis of a Malaysian public issue. Your job is to find what it does NOT see — and to propose only verified additions.
+
+You are not here to agree or disagree with the analysis. You are here to ask: what voices, framings, and facts are absent?
+
+=== FIND WHAT IS MISSING ===
+
+1. MISSING COMMUNITY PERSPECTIVES:
+   - Within the Malay community: class differences (urban elite vs rural), generational differences (youth vs establishment), geographic differences (Peninsular vs Sabah/Sarawak)
+   - Within the Chinese community: not a monolith — SME owners vs corporates, Mandarin-educated vs English-educated
+   - Within the Indian community: plantation workers vs professionals, Hindu vs Muslim Indians
+   - Orang Asli, Kadazan-Dusun, Iban, Bajau, other East Malaysian communities
+   - Migrants, refugees, stateless persons
+   - B40 across ALL communities
+   - Youth (under 30) vs establishment
+   - Women's specific experiences and perspectives
+   - Rural vs urban across all communities
+
+2. ALTERNATIVE CAUSAL FRAMINGS:
+   - Is what looks racial actually economic?
+   - Is what looks like conspiracy actually bureaucratic incompetence?
+   - Is what looks ideological actually generational?
+   - Is what looks like policy failure actually implementation failure?
+   - What structural incentives create this problem regardless of which party is in power?
+
+3. INTERNATIONAL COMPARISONS (verify each one):
+   - India (Ayodhya for religious issues, reservation system for affirmative action)
+   - Indonesia (Pancasila interfaith model, decentralisation)
+   - Singapore (managed harmony, GLS system, multiracialism model)
+   - Turkey (secular-religious tension)
+   - South Africa (post-apartheid reconciliation, land reform)
+   - Thailand, Vietnam, Philippines for ASEAN parallels
+   - Others relevant to this specific issue
+
+4. COUNTER-ARGUMENTS the reader deserves to hear even if uncomfortable. For every counter-argument you propose, name the source you would attribute it to. If no source exists, label it as your own reasoning rather than borrowed authority.
+
+5. STRUCTURAL SOLUTIONS already proposed by Malaysian civil society, academics, or international bodies.
+
+6. GENDER DIMENSIONS: Are women's experiences or impacts absent from the analysis?
+
+7. ECONOMIC DIMENSIONS: Is class analysis being masked by racial or religious framing?
+
+8. GEOGRAPHIC DIMENSIONS: Is East Malaysia, rural Malaysia, or non-KL perspective missing?
+
+=== LIST ALL OMITTED FACTS ===
+
+Search for facts that ARE publicly available but MISSING from the analysis:
+- The specific fact (with the exact verifiable phrasing)
+- Why it matters for understanding the issue
+- The primary source URL
+- Importance score: 0.0 (minor context) to 1.0 (changes the entire analysis)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "completeness_score": 0-100,
+  "missing_perspectives": [{"who": "...", "what": "their likely view", "why": "why this perspective matters"}],
+  "alternative_framings": [{"current": "how the analysis frames it", "alternative": "different framing", "evidence": "what supports the alternative", "primary_source": "URL"}],
+  "international_parallels": [{"country": "...", "rule_or_statistic": "exact verifiable phrasing", "primary_source": "URL", "lesson": "what Malaysia can learn"}],
+  "counter_arguments": [{"to_card": 2, "counter": "the counter-argument", "source": "primary source URL or 'my own reasoning'"}],
+  "missing_facts": [{"fact": "...", "importance": 0.8, "primary_source": "URL"}],
+  "gender_gaps": [{"missing": "...", "why_matters": "..."}],
+  "economic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "geographic_gaps": [{"missing": "...", "why_matters": "..."}],
+  "verification_log": [
+    {"my_addition": "claim I am proposing to add", "primary_source": "...", "status": "VERIFIED|MY_REASONING"}
+  ],
+  "overall_assessment": "one paragraph on completeness"
+}
+
+=== THE ANALYSIS TO REVIEW ===
+
+{
+  "register_note": "Editor's direction: deadpan news register in the manner of The Onion, applied to verified facts only. The effect comes from placing real, sourced statements side by side and reporting them flatly. No invented quotes, scenes or statistics. Every quote is verbatim from a cited source. Reviewers should judge the juxtapositions for misleading framing, not the flat tone.",
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysia supports The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 25 Sep. The World Court rules on 19 Nov.",
+      "sub": "At the UN in 2025, Malaysia said Myanmar's 1982 Citizenship Law 'has systematically denied the Rohingya people their fundamental rights.'",
+      "sources": [
+        "Bernama, 25 Sep 2026: Foreign Minister Mohamad Hasan at the OIC Annual Coordination Meeting, UN headquarters; Malaysia 'supported The Gambia's case against Myanmar before the International Court of Justice (ICJ)' [brief 6a]",
+        "ICJ press release 2026/27, 3 Nov 2026: 'The Court to deliver its Judgment on Thursday 19 November 2026 at 10 a.m.' [brief 2a]",
+        "UN transcript, high-level conference on the Rohingya, 30 Sep 2025, Malaysia's statement: 'The 1982 Citizenship Law has systematically denied the Rohingya people their fundamental rights.' [brief 5]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Malaysia's Immigration Act has no category for refugees. On 31 Jul the Immigration Department said UNHCR card holders are 'still regarded as illegal immigrants'.",
+      "s": "They are not prosecuted for entering or overstaying, the department said. Working without a permit stays an offence, its director-general said on 7 Sep.",
+      "d": "Malaysia is not a party to the 1951 Refugee Convention or the 1967 Protocol (UNTC status pages, as at 10 Nov 2026). Act 155 makes entry without a valid pass an offence (s.6(1)(c); s.6(3): a fine up to RM10,000, jail up to five years or both, and up to six strokes) and contains no 'refugee' or 'asylum' category. A 2005 AG's Chambers circular says persons registered with UNHCR at arrest should not be prosecuted for immigration offences; UNHCR says it 'is not systematically implemented'. On 19 Jun the Immigration DG said: 'if they have a UNHCR card…we cannot detain them'. Refugee policy runs under NSC Directive No. 23, which is confidential.",
+      "sources": [
+        "UN Treaty Collection, status of the 1951 Convention and 1967 Protocol [brief 8a, 8b]",
+        "Immigration Act 1959/63 (Act 155), 2006 reprint, ss.6(1)(c), 6(3), 15(1)(c); no 'refugee' or 'asylum' in the text [brief 9a]",
+        "Malay Mail, 31 Jul 2026: Immigration Department statement, card holders 'still regarded as illegal immigrants', exempt from prosecution for overstaying and entering without documents [brief 11a]",
+        "The Star, 7 Sep 2026: Immigration DG Zakaria Shaaban, card holders can be acted against for 'working without a valid pass or permit' [brief 11b]",
+        "UNHCR UPR submission (2023): 2005 AG circular, 'not systematically implemented' [brief 10]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Rights",
+      "h": "Malaysia's own refugee registration, begun in January, had granted refugee status to 78 Rohingya by July. UNHCR counts 129,400 Rohingya in Malaysia.",
+      "s": "Its first phase registered 4,010 people held in immigration depots, 4,008 of them from Myanmar. The Home Ministry aims to finish by 31 Dec 2029.",
+      "d": "Written replies of 8 Jul 2026: 78 Rohingya granted refugee status and 25 found eligible for a pilot work scheme; Phase 1 registered 4,010 depot detainees (4,008 Myanmar nationals, one Sudanese, one Syrian); registration to be completed by 31 Dec 2029. UNHCR's data portal counts 129,400 stateless Rohingya in Malaysia at 30 Jun 2026. On 23 Jul the Deputy Foreign Minister told the Senate the government 'instructed the UNHCR to stop any refugee registrations for the time being'. The scheme is in its first year, so 78 is an early count, not a final one; the card says 'by July' for that reason.",
+      "sources": [
+        "Malay Mail, 9 Jul 2026: written reply, 78 granted refugee status, 25 eligible for work [brief 14a]",
+        "Utusan, Jul 2026: written reply to Teresa Kok, Phase 1 registered 4,010 depot detainees, 4,008 Myanmar nationals; target 31 Dec 2029 [brief 14b]",
+        "UNHCR Operational Data Portal, Myanmar situation: 129,400 stateless Rohingya in Malaysia, 30 Jun 2026 [brief 16a]",
+        "HRW, 4 May 2026: government registration began in January 2026 [brief 15a]",
+        "NST, 23 Jul 2026: Deputy Foreign Minister in the Senate [brief 15b]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "h": "Myanmar has 'agreed to take back 5,000' Rohingya from Malaysia, the Prime Minister said on 29 Jul. None of the first 1,476 returned were Rohingya, he told Parliament on 6 Oct.",
+      "s": "In January 2020 the World Court ordered Myanmar to take all measures within its power to prevent genocide against the Rohingya in its territory.",
+      "d": "PM Anwar Ibrahim, 29 Jul 2026: 'because of our good relations with Myanmar, they have agreed to take back 5,000 from Malaysia.' On 29 Sep 1,476 Myanmar nationals were returned; on 6 Oct the PM told Parliament 'no Rohingya refugees have been repatriated' among them. Al Jazeera's 29 Sep headline spoke of Rohingya refugees; the card uses the PM's attributed statement. ICJ Order of 23 Jan 2020, unanimous: Myanmar shall take all measures within its power to prevent the commission of acts within Article II of the Genocide Convention in relation to the Rohingya in its territory. ASEAN decides by consultation and consensus (Charter Art. 20(1)); its foreign ministers said on 21 Jul 2026 that the Five-Point Consensus 'remains our main reference'.",
+      "sources": [
+        "NST, 29 Jul 2026: PM, Myanmar 'agreed to take back 5,000 from Malaysia' [brief 19a]",
+        "Malaysiakini, 6 Oct 2026: PM in Parliament, 'no Rohingya refugees have been repatriated' among 1,476 [brief 19b]",
+        "ICJ, summary of the Order of 23 Jan 2020 [brief 3]",
+        "ASEAN Charter Art. 20(1) [brief 21b]; 59th AMM Joint Communiqué, 21 Jul 2026, para 179 [brief 21d]"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "Malaysia keeps its Rohingya policy at two addresses. In The Hague, it backs accountability. In Act 155, there is a lacuna where the word refugee would go."
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "Whatever the World Court rules on 19 Nov, the Rohingya in Malaysia wake up on 20 Nov under an Immigration Act with no word for refugee. Section 55 already lets the minister exempt a class of persons by gazetted order."
+    }
+  ],
+  "headline_suggestion": "Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.",
+  "context_suggestion": "The World Court rules on 19 Nov in The Gambia's genocide case against Myanmar, which Malaysia supports. UNHCR counts 129,400 Rohingya in Malaysia, which has not joined the Refugee Convention.",
+  "sources": "ICJ case 178 page and press release 2026/27; ICJ Order summary 23 Jan 2020; UN transcript 30 Sep 2025; UN Treaty Collection (1951 Convention, 1967 Protocol); Immigration Act 1959/63 (Act 155) 2006 reprint; UNHCR UPR submission 2023; UNHCR Operational Data Portal; ASEAN Charter; ASEAN 59th AMM Joint Communique; Bernama 25 Sep 2026; Malay Mail 31 Jul 2026 and 9 Jul 2026; The Star 7 Sep 2026; Utusan Jul 2026; HRW 4 May 2026; NST 23 Jul 2026 and 29 Jul 2026; Malaysiakini 6 Oct 2026",
+  "source_urls": {
+    "brief 2a ICJ press release 2026/27 (3 Nov 2026)": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261103-pre-01-00-en.pdf",
+    "brief 1 ICJ case 178 page (interventions list)": "https://www.icj-cij.org/case/178",
+    "brief 3 ICJ Order of 23 Jan 2020, summary": "https://icj-cij.org/node/105892",
+    "brief 5 UN transcript, Rohingya conference, 30 Sep 2025": "https://transcripts.un.org/en/asset/k11/k11jpn4pmm",
+    "brief 6a Bernama, Foreign Minister at OIC, 25 Sep 2026": "https://www.bernama.com/en/news.php?id=2611617",
+    "brief 8a UNTC 1951 Convention status": "https://treaties.un.org/Pages/ViewDetailsII.aspx?src=TREATY&mtdsg_no=V-2&chapter=5&Temp=mtdsg2&clang=_en",
+    "brief 8b UNTC 1967 Protocol status": "https://treaties.un.org/Pages/ViewDetailsII.aspx?src=TREATY&mtdsg_no=V-5&chapter=5&Temp=mtdsg2&clang=_en",
+    "brief 9a Immigration Act 1959/63, 2006 reprint": "https://www.imi.gov.my/wp-content/uploads/2022/11/IMMIGRATION-ACT-1959-63-PDF.pdf",
+    "brief 10 UNHCR UPR submission (2023)": "https://uprdoc.ohchr.org/uprweb/downloadfile.aspx?filename=12137&file=EnglishTranslation",
+    "brief 11a Malay Mail, Immigration Department, 31 Jul 2026": "https://www.malaymail.com/news/malaysia/2026/07/31/unhcr-cards-do-not-confer-legal-immigration-status-in-malaysia-department-says/229745",
+    "brief 11b The Star, Immigration DG, 7 Sep 2026": "https://www.thestar.com.my/news/nation/2026/09/07/unhcr-card-holders-still-subject-to-immigration-laws-says-immigration-dg",
+    "brief 11c The Star, Immigration DG, 19 Jun 2026": "https://www.thestar.com.my/news/nation/2026/06/19/unhcr-cardholders-still-subject-to-malaysian-laws-says-immigration-dg",
+    "brief 14a Malay Mail, written reply, 9 Jul 2026": "https://www.malaymail.com/news/malaysia/2026/07/09/home-minister-says-78-rohingya-granted-refugee-status-25-eligible-for-work-under-dpp-pilot-scheme/226931",
+    "brief 14b Utusan, written reply to Teresa Kok, Jul 2026": "https://www.utusan.com.my/nasional/2026/07/rohingya-dominasi-pelarian-di-depot-imigresen/",
+    "brief 15a HRW, registration system, 4 May 2026": "https://www.hrw.org/news/2026/05/04/malaysia-new-refugee-registration-system-raises-concerns",
+    "brief 15b NST, Deputy Foreign Minister in the Senate, 23 Jul 2026": "https://www.nst.com.my/amp/news/nation/2026/07/1495426/malaysia-directs-unhcr-stop-refugee-registration-now-watch",
+    "brief 16a UNHCR Operational Data Portal, Myanmar situation": "https://data.unhcr.org/en/situations/myanmar",
+    "brief 19a NST, PM on 5,000 returns, 29 Jul 2026": "https://www.nst.com.my/amp/news/nation/2026/07/1499744/updated-anwar-myanmar-agrees-take-back-5000-rohingya-malaysia",
+    "brief 19b Malaysiakini, PM in Parliament, 6 Oct 2026": "https://www.malaysiakini.com/news/886331-no-rohingya-among-1476-repatriated-to-myanmar-says-pm",
+    "brief 19c Al Jazeera, returns, 29 Sep 2026": "https://www.aljazeera.com/news/2026/9/29/malaysia-begins-returning-myanmar-nationals-despite-safety-warnings",
+    "brief 21b ASEAN Charter": "https://asean.org/wp-content/uploads/2021/09/21069.pdf",
+    "brief 21d 59th ASEAN Foreign Ministers' Meeting Joint Communique, 21 Jul 2026": "https://asean.org/wp-content/uploads/2026/07/FINAL-Joint-Communique%CC%81-of-the-59th-ASEAN-Foreign-Ministers-Meeting-21-July-2026.pdf"
+  },
+  "confidence": "Medium-High. ICJ, treaty status, Act text, UNHCR data and ASEAN texts are primary. Malaysia's 2026 figures and statements come from news reports of written replies and official statements (S->P); each is listed in needs_verification for Stage 3 to chase.",
+  "lenses_used": ["Legal", "Rights", "Regional"],
+  "lenses_applicable_but_unused": ["Governance", "Political", "Economic"],
+  "needs_verification": [
+    "Fact 2: 78 granted refugee status, 4,010 registered in Phase 1 (4,008 from Myanmar), 31 Dec 2029 target: confirm against the 8 Jul 2026 written replies (read via Malay Mail and Utusan only).",
+    "Fact 2: registration 'begun in January' 2026 rests on HRW (4 May 2026); confirm with a government source.",
+    "Fact 1: the Immigration Department's 31 Jul 2026 statement, 'still regarded as illegal immigrants'; original not opened.",
+    "Fact 1: Act 155 has no refugee category in the current text, including after the Dec 2025 amendment; checked only in the 2006 reprint.",
+    "Fact 3: the PM's 29 Jul 2026 wording: '5,000' Rohingya or '5,000' Myanmar nationals.",
+    "Hook: the Foreign Minister's 25 Sep 2026 wording (Bernama report; speech text not opened).",
+    "Hook: the speaker and exact wording of Malaysia's 30 Sep 2025 UN statement (UN transcript).",
+    "Context: 129,400 is UNHCR's count of stateless Rohingya at 30 Jun 2026; confirm against the portal on the day of publication."
+  ],
+  "source_notes": "Rohingya count: 126,144 (end-Feb 2026, Bernama citing UNHCR) vs 129,400 (30 Jun 2026, UNHCR portal); the card uses 129,400, primary and more recent. Depot registration: Malay Mail calls the 4,008 'Rohingya', Utusan 'Myanmar nationals, majority Rohingya'; the card says 'from Myanmar'. Returns: Al Jazeera's headline spoke of Rohingya refugees, the PM said none of the 1,476 were Rohingya; the card attributes the PM's statement. UNHCR depot access is contested (UNHCR and HRW say none since Aug 2019; the Home Minister says Malaysia does not block visits) and is kept off the cards. Immigration's position is internally inconsistent (card holders 'illegal immigrants' yet 'we cannot detain them'); the card reports the stated position without resolving it. Most Malaysian 2026 figures rest on single-outlet reports of written replies.",
+  "guardrails_applied": [
+    "No false equivalence: no card compares Malaysia's immigration law with Myanmar's citizenship law or with the alleged genocide beyond quoting Malaysia's own 2025 UN statement.",
+    "No 'Malaysia deported Rohingya': the PM's statement that none of the 1,476 were Rohingya is on the card.",
+    "No 'Malaysia refuses to recognise refugees': the 78 grants and the 2029 target are on fact 2.",
+    "The 4,008 are described as 'from Myanmar', not as Rohingya.",
+    "UNHCR depot access, the 2022 depot breakout and the PM hosting Myanmar's president on 8 Oct 2026 are kept off the cards (contested, dated, or open to an endorsement reading); Stage 2 may advise otherwise.",
+    "No card predicts or characterises the ICJ verdict. The hook will be refreshed after 17:00 MYT on 19 Nov with Malaysia's actual reaction, then put through a Stage 3 delta check.",
+    "No religion on any card; Rohingya named as an ethnic group only.",
+    "No invented quotes: every quoted phrase is verbatim from a cited source."
+  ],
+  "post_verdict_plan": "After 17:00 MYT on 19 Nov 2026: replace the hook text with Malaysia's official reaction to the judgment (verbatim, sourced); state the Court's operative finding only if quoted from the judgment; leave the fact cards unchanged unless the judgment bears on them; run a Stage 3 delta check on changed cards only.",
+  "pa_score": 80
+}
