@@ -38,18 +38,21 @@
   // Hide the frame instead; the card reads fine without art.
   let failed = $state(false);
 
-  // Svelte server-renders an onerror prop as the inline attribute
-  // onerror="this.__e=event" so it can replay early errors after hydration.
-  // The site's CSP blocks inline handlers: Firefox reports a violation for
-  // each one (four per home feed load, each sent to the CSP report endpoint)
-  // and the replay never runs. Listen after mount instead, and treat an image
-  // that already failed before hydration the same way.
-  function detectFailure(img: HTMLImageElement) {
+  // Svelte server-renders an onerror prop, or a use: action on an <img>, as
+  // inline replay attributes (onerror/onload="this.__e=event"). The site's CSP
+  // blocks inline handlers: Firefox reports a violation for each one (four per
+  // home feed load, each sent to the CSP report endpoint) and the replay never
+  // runs. A bound element with an effect renders no inline attribute. It also
+  // treats an image that already failed before hydration as failed.
+  let img: HTMLImageElement | undefined = $state();
+  $effect(() => {
+    if (!img) return;
+    const element = img;
     const fail = () => { failed = true; };
-    if (img.complete && img.naturalWidth === 0 && img.currentSrc) fail();
-    img.addEventListener('error', fail);
-    return { destroy: () => img.removeEventListener('error', fail) };
-  }
+    if (element.complete && element.naturalWidth === 0 && element.currentSrc) fail();
+    element.addEventListener('error', fail);
+    return () => element.removeEventListener('error', fail);
+  });
 
   const sizes = $derived(
     size === 'hero' ? '(min-width: 1024px) 700px, (min-width: 768px) 50vw, 100vw'
@@ -73,7 +76,7 @@
       decoding={eager ? 'sync' : 'async'}
       fetchpriority={eager ? 'high' : undefined}
       style="width:100%;height:100%;object-fit:cover;display:block;"
-      use:detectFailure
+      bind:this={img}
     />
   </picture>
 </div>
