@@ -32,6 +32,34 @@ Same template; replace only the "Draw …" paragraph. The editor is rendering bo
 Draw two forearms in suit cuffs meeting in a firm diplomatic handshake on the left side of the frame, the clasp drawn as one simple rounded contour without separate fingers; without a break, the line falls from the clasped hands down to the top of a short stanchion post, swings across in a single low sagging rope to a second stanchion post further right, and drops to the ground, the kind of queue barrier used at an immigration counter, as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
 ```
 
+## Malaysia-specific satirical options (2026-11-11, editor asked for sharper, local ideas)
+
+Each replaces only the "Draw …" paragraph. All avoid people, community markers, religious and royal symbols.
+
+1. **Guardhouse visitor's pass (recommended).** Recognised refugees get a time-limited Special Pass, roughly a visitor's pass swapped for an IC at a condo guardhouse.
+
+```
+Draw a small residential guardhouse on the left, a simple booth with a flat roof and one open service window; from its side a boom-gate arm runs level across the road toward the right, held down, and from the very tip of the arm a lanyard hangs with a small rectangular visitor's pass swinging at the end, the kind handed out in exchange for an identity card, as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
+```
+
+2. **Endless queue ticket.** Registration runs to 2029 or 2030 (sources differ); the continuous line is the queue.
+
+```
+Draw a queue-number ticket dispenser on a short post on the left, the kind at a government counter, with a narrow slot from which a paper ticket strip spills out and keeps unspooling in loose, lazy loops along the bottom of the frame toward the right, as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
+```
+
+3. **Tiffin carrier with a missing tier.** A compartment for every status except refugee.
+
+```
+Draw a traditional stacked tiffin carrier with a carrying handle arched over the top and two upright side clips holding the tiers together; between the second and third tier there is an obvious empty gap where one tier is missing, the side clips still running past it, as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
+```
+
+4. **Wau tied to a boom gate.** Flies high abroad, tethered at home. Softest; the wau is a national emblem.
+
+```
+Draw a traditional Malaysian moon kite flying high in the upper left, its long string falling in a diagonal down to the left and tied in a small knot to the arm of a lowered boom gate, as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.
+```
+
 ## Notes for either render
 
 If the first render muddles the turnstile: regenerate with "three straight arms spaced evenly around the hub like a peace-sign Y" added after "three straight rotating arms", or drop "slight three-quarter angle" for a side view with the hub drawn as a small circle.
