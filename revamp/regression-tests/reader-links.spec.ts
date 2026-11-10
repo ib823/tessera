@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type BrowserContext, type Page } from '@playwright/test';
 import { publishedDay } from '../../src/lib/issue-meta';
 
 /**
@@ -18,6 +18,32 @@ const PHONE = { width: 390, height: 844 };
 
 async function waitForReader(page: Page) {
   await expect(page.locator('html.js-reader-mounted')).toHaveCount(1, { timeout: 10_000 });
+}
+
+// Playwright's clipboard permissions differ by engine. Chromium takes both;
+// WebKit rejects 'clipboard-write' once a page is open and needs no grant to
+// copy; Firefox takes neither, so the generated Playwright config enables its
+// async-clipboard test preferences (revamp/scripts/workspace.mjs). The same
+// copy/read assertions then run in every engine.
+async function allowClipboard(context: BrowserContext, browserName: string) {
+  if (browserName === 'chromium') await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  else if (browserName === 'webkit') await context.grantPermissions(['clipboard-read']);
+}
+
+// WebKit allows navigator.clipboard.readText() only during a user gesture, so
+// there the system clipboard is read by pasting into a blank page of the same
+// browser context. Chromium and Firefox read it directly.
+async function readClipboard(page: Page, browserName: string) {
+  if (browserName !== 'webkit') return page.evaluate(() => navigator.clipboard.readText());
+  const reader = await page.context().newPage();
+  try {
+    await reader.setContent('<textarea aria-label="Clipboard"></textarea>');
+    await reader.getByRole('textbox').focus();
+    await reader.keyboard.press('ControlOrMeta+V');
+    return await reader.getByRole('textbox').inputValue();
+  } finally {
+    await reader.close();
+  }
 }
 
 async function issueJson(page: Page, baseURL: string | undefined, id = ISSUE) {
@@ -108,8 +134,8 @@ test.describe('Desktop reader', () => {
     await expect(page.getByRole('article').getByText(issue.cards[0].big, { exact: true })).not.toBeInViewport();
   });
 
-  test('T-2 / A-8 / T-6: completion shows stage words, related next and a working verification copy', async ({ page, baseURL, context }) => {
-    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  test('T-2 / A-8 / T-6: completion shows stage words, related next and a working verification copy', async ({ page, baseURL, context, browserName }) => {
+    await allowClipboard(context, browserName);
     await page.goto(`/issue/${ISSUE}`);
     await waitForReader(page);
 
@@ -130,7 +156,7 @@ test.describe('Desktop reader', () => {
     await expect(page.getByRole('button', { name: /^Next in Latest/ })).toBeVisible();
 
     await page.locator('[data-verify-copy]').last().click();
-    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    const copied = await readClipboard(page, browserName);
     const signatures = (await (await page.request.get(`${baseURL}/signatures.json`)).json()) as { issues: Record<string, { fingerprint: string }> };
     expect(createHash('sha256').update(copied).digest('hex')).toBe(signatures.issues[ISSUE].fingerprint);
 
@@ -187,8 +213,8 @@ test.describe('Mobile reader', () => {
     await expect(dialog.getByRole('group', { name: 'Card 4 of 7' })).toBeVisible({ timeout: 5_000 });
   });
 
-  test('SH-2: a card deep link opens that card, and card shares link to their anchor', async ({ page, context }) => {
-    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  test('SH-2: a card deep link opens that card, and card shares link to their anchor', async ({ page, context, browserName }) => {
+    await allowClipboard(context, browserName);
     await page.goto(`/issue/${ISSUE}#card-3`);
     await waitForReader(page);
     await expect(page.getByRole('group', { name: 'Card 3 of 7' })).toBeVisible();
@@ -196,7 +222,7 @@ test.describe('Mobile reader', () => {
     const sheet = page.getByRole('dialog', { name: /^Share / });
     await sheet.getByRole('button', { name: /Copy link/ }).click();
     await expect(sheet.getByText('Copied!')).toBeVisible();
-    const url = await page.evaluate(() => navigator.clipboard.readText());
+    const url = await readClipboard(page, browserName);
     expect(url).toMatch(new RegExp(`/issue/${ISSUE}\\?v=[^#]+#card-3$`));
     // T-6: the verification copy is in the share sheet too.
     await expect(sheet.getByRole('button', { name: 'Copy for verification' })).toBeVisible();
@@ -247,8 +273,8 @@ test.describe('Share sheet on a touch screen', () => {
   // must not change its layout (it used to collapse under the finger).
   test.use({ viewport: PHONE, hasTouch: true });
 
-  test('Copy link keeps its size after a tap and copies the card link', async ({ page, context }) => {
-    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  test('Copy link keeps its size after a tap and copies the card link', async ({ page, context, browserName }) => {
+    await allowClipboard(context, browserName);
     await page.goto(`/issue/${ISSUE}`);
     await waitForReader(page);
     expect(await page.evaluate(() => matchMedia('(hover: none)').matches)).toBe(true);
@@ -262,7 +288,7 @@ test.describe('Share sheet on a touch screen', () => {
 
     await copy.tap();
     await expect(sheet.getByText('Copied!')).toBeVisible();
-    const url = await page.evaluate(() => navigator.clipboard.readText());
+    const url = await readClipboard(page, browserName);
     expect(url).toMatch(new RegExp(`/issue/${ISSUE}\\?v=[^#]+#card-1$`));
 
     const after = (await copy.boundingBox())!;

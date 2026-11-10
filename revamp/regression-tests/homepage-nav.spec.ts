@@ -146,11 +146,18 @@ test.describe('Today', () => {
     await expect(footer.getByRole('link', { name: 'RSS', exact: true })).toHaveAttribute('href', '/rss.xml');
   });
 
-  test('the document scrolls, not an inner region (X-8)', async ({ page }) => {
+  test('the document scrolls, not an inner region (X-8)', async ({ page, browserName, isMobile }) => {
     await openHome(page);
     const before = await page.evaluate(() => window.scrollY);
-    await page.mouse.move(900, 600);
-    await page.mouse.wheel(0, 900);
+    if (browserName === 'webkit' && isMobile) {
+      // Playwright has no mouse wheel in mobile WebKit. Page Down from the body
+      // scrolls the nearest scroll container, so an inner region would still fail.
+      await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur());
+      await page.keyboard.press('PageDown');
+    } else {
+      await page.mouse.move(900, 600);
+      await page.mouse.wheel(0, 900);
+    }
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(before);
     // The sidebar stays in view while the page scrolls.
     await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeInViewport();

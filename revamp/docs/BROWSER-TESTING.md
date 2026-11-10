@@ -13,16 +13,14 @@ npx playwright show-report revamp/playwright-report/matrix
 
 The matrix starts and stops its own local static server on port 4325. It resolves clean `.html` paths before directories, so `/infographics` and `/infographics/*` both work. It returns a real 404 for an unknown path. It does not simulate Cloudflare response headers, caching, signing or worker integration.
 
-To run the original browser suite at its three Chromium configurations:
+To run the original browser suite at all seven browser/device projects, use its ordinary configuration (this is what CI runs):
 
 ```sh
-cd /workspace/tessera/revamp/.cache/app
-node node_modules/@playwright/test/cli.js test \
-  --config=cloud.playwright.config.ts --project='chromium-*' \
-  --workers=2 --reporter=html --trace=retain-on-failure
+cd revamp/.cache/app
+npm run e2e
 ```
 
-That suite uses port 4321. Its tests sometimes set their own viewport or create their own context, so the project count is not a full Cartesian test of every assertion at every device size. Desktop-only skips must be reported separately.
+`cloud.playwright.config.ts` only points Chromium at the managed environment's `/usr/bin/chromium`; never use it for Firefox/WebKit. That suite uses port 4321. Its tests sometimes set their own viewport or create their own context, so the project count is not a full Cartesian test of every assertion at every device size. Desktop-only skips must be reported separately.
 
 ## Additional matrix
 
@@ -46,19 +44,34 @@ Build the unchanged root app in a disposable directory, then pass its distributi
 node revamp/scripts/check-storage-upgrade.mjs BASELINE_DIST REPORT_DIR
 ```
 
-The check creates progress and a highlight through the old UI, switches the server to the revamp while keeping the same origin and browser context, reloads and compares the stored values. It checks phone and desktop, then opens Saved and the highlighted card. This differs from opening a new preview hostname, whose localStorage is separate. Service-worker update/caching behavior is outside this isolated storage check.
+The check creates progress and a highlight through the old UI, switches the server to the revamp while keeping the same origin and browser context, reloads and compares the stored values. It checks phone (360×640) and desktop (1440×900), each with service workers blocked and active, then opens Saved and the highlighted card. The active-worker cases also require the new worker's `-fora-v1` cache to replace the old cache and its cached icon bytes, and serve offline navigation after the switch. This differs from opening a new preview hostname, whose localStorage is separate.
 
 ## Other engines and deployment acceptance
 
 The configuration supports `FORA_BROWSERS=chromium,firefox,webkit`. Chromium uses the system executable if present; other engines use their own Playwright binaries. Do not use the cloud Chromium override configuration to launch Firefox/WebKit.
 
 ```sh
-# Only after the environment permits the official download hosts:
-PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright npx playwright install firefox webkit
-PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright \
+npx playwright install --with-deps chromium firefox webkit
+FORA_BROWSERS=chromium,firefox,webkit npm --prefix revamp run test:matrix
+```
+
+CI runs the matrix in all three engines against the same signed build it deploys. Firefox's phone configuration is viewport/touch emulation; Playwright does not implement Firefox's `isMobile` option. WebKit emulation does not replace actual Safari/iOS testing.
+
+The original suite had only run `chromium-desktop` on main. Running all seven projects exposed three harness portability problems, fixed without changing assertions:
+
+- The canonical config passes Chromium's `--disable-dev-shm-usage` to every project and WebKit refuses to start with it. The generated app wraps the canonical config (`revamp/scripts/workspace.mjs`) and passes the flag to Chromium projects only.
+- Playwright cannot grant clipboard permissions in Firefox. The same wrapper enables Firefox's async-clipboard test preferences, and `regression-tests/reader-links.spec.ts` grants permissions only in the other engines.
+- `regression-tests/card-sources.spec.ts` omits `isMobile` in Firefox, and `regression-tests/sync-link-consent.spec.ts` waits for the navigation to commit rather than for `load`, because Firefox can show the hydration-time confirmation before `load`.
+
+## Hosted preview journeys
+
+Set `FORA_MATRIX_ORIGIN` to an immutable deployment URL to run the same matrix against the hosted preview. No local server starts; the page fixture allows only that origin and still blocks workers, publishers and every other host. A hosted run also fails on any CSP violation logged by the browser, which the local server cannot exercise because it sends no CSP header. Production and the branch alias are refused. Put the deployed `revamp/dist` (the `fora-preview-dist` artifact of the deploying run) in place first: the breakpoint sweep reads its CSS from there.
+
+```sh
+FORA_MATRIX_ORIGIN=https://HEX.thefourthangle.pages.dev \
   FORA_BROWSERS=chromium,firefox,webkit npm --prefix revamp run test:matrix
 ```
 
-Firefox's phone configuration is viewport/touch emulation; Playwright does not implement Firefox's `isMobile` option. WebKit emulation does not replace actual Safari/iOS testing. On this environment, the official download hosts have returned HTTP 403 “Domain forbidden”; an environment draft contains the required domain additions. Saving that draft alone does not apply them.
+Results go to `revamp/playwright-report/matrix-hosted/` and `revamp/test-results/matrix-hosted.json`.
 
 Remaining separate acceptance checks include actual iPhone/Safari and Android hardware, browser chrome zoom/OS text settings, virtual keyboards and safe areas, native sharing, screen-reader use, hosted-preview headers/caching, real opt-in push/sync, production signatures and approved cut-over. Do not infer these passes from the local matrix.

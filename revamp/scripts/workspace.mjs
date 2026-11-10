@@ -51,6 +51,35 @@ async function prepare() {
   await writeFile(join(workspace, 'astro.config.mjs'), `import config from './astro.base.config.mjs';
 export default { ...config, devToolbar: { enabled: false }, vite: { ...config.vite, cacheDir: ${JSON.stringify(join(workspace, ".vite"))}, server: { ...config.vite?.server, fs: { allow: ${JSON.stringify([repository, workspace])} } } } };
 `);
+  // The canonical config passes the Chromium-only --disable-dev-shm-usage
+  // flag to every project. WebKit exits on that unknown flag, so the generated
+  // app applies it to Chromium projects only. Playwright cannot grant clipboard
+  // permissions in Firefox; its projects enable Firefox's async-clipboard test
+  // preferences instead, so the copy/read assertions still run there.
+  await rename(join(workspace, 'playwright.config.ts'), join(workspace, 'playwright.base.config.ts'));
+  await writeFile(join(workspace, 'playwright.config.ts'), `import type { LaunchOptions, PlaywrightTestConfig, PlaywrightTestOptions, PlaywrightWorkerOptions, Project } from '@playwright/test';
+import base from './playwright.base.config';
+
+type Engine = PlaywrightWorkerOptions['browserName'];
+type EngineProject = Project<PlaywrightTestOptions, PlaywrightWorkerOptions>;
+const { args, ...shared } = base.use?.launchOptions ?? {};
+const engine = (project: EngineProject): Engine => project.use?.browserName ?? project.use?.defaultBrowserType ?? 'chromium';
+const engineLaunch: Record<Engine, LaunchOptions> = {
+  chromium: { args },
+  firefox: { firefoxUserPrefs: { 'dom.events.asyncClipboard.readText': true, 'dom.events.testing.asyncClipboard': true } },
+  webkit: {},
+};
+
+const config: PlaywrightTestConfig = {
+  ...base,
+  use: { ...base.use, launchOptions: shared },
+  projects: (base.projects as EngineProject[] | undefined)?.map((project) => ({
+    ...project,
+    use: { ...project.use, launchOptions: { ...shared, ...project.use?.launchOptions, ...engineLaunch[engine(project)] } },
+  })),
+};
+export default config;
+`);
   await writeFile(join(workspace, 'cloud.playwright.config.ts'), `import config from './playwright.config';
 export default { ...config, use: { ...config.use, launchOptions: { ...config.use?.launchOptions, executablePath: '/usr/bin/chromium' } } };
 `);

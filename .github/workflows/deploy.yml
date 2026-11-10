@@ -105,10 +105,11 @@ jobs:
         env:
           CI: 'true'
 
-      - name: Responsive matrix and CSS breakpoint sweeps
+      - name: Responsive matrix and CSS breakpoint sweeps (Chromium, Firefox, WebKit)
         run: npm --prefix revamp run test:matrix
         env:
           CI: 'true'
+          FORA_BROWSERS: chromium,firefox,webkit
 
       - name: First-load JavaScript and initial network budgets
         run: node revamp/scripts/check-first-load.mjs --local
@@ -143,6 +144,31 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy revamp/dist --project-name=thefourthangle --branch=codex-t4a-revamp
+
+      - name: Record preview deployment
+        if: steps.preview.outcome == 'success'
+        run: |
+          echo "Deployment URL: $URL"
+          echo "Deployment ID: $ID"
+          echo "Environment: $ENVIRONMENT"
+          echo "Branch alias: $ALIAS"
+          echo "Source commit: $GITHUB_SHA"
+          { echo "### FORA preview"; echo; echo "- URL: $URL"; echo "- Deployment ID: $ID"; echo "- Environment: $ENVIRONMENT"; echo "- Commit: $GITHUB_SHA"; } >> "$GITHUB_STEP_SUMMARY"
+        env:
+          URL: ${{ steps.preview.outputs.deployment-url }}
+          ID: ${{ steps.preview.outputs.pages-deployment-id }}
+          ENVIRONMENT: ${{ steps.preview.outputs.pages-environment }}
+          ALIAS: ${{ steps.preview.outputs.pages-deployment-alias-url }}
+
+      # The exact public output that was deployed, so the hosted byte checks can
+      # be repeated independently. revamp/dist holds only published site files.
+      - name: Retain deployed preview output
+        if: steps.preview.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: fora-preview-dist
+          path: revamp/dist
+          retention-days: 7
 
       - name: Verify hosted preview routes, signatures, headers and worker access
         if: steps.preview.outcome == 'success'

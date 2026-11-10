@@ -15,12 +15,16 @@ Use the commands in `revamp/README.md` for FORA development.
 The workflow runs type checking, lint, unit tests, the font licence boundary
 checks, the complete original build chain, signature verification, font and
 bundle budgets, all seven existing browser/device projects, the additional
-Chromium responsive matrix and the 150,000-byte first-load JavaScript check.
+responsive matrix in Chromium, Firefox and WebKit, and the 150,000-byte
+first-load JavaScript check.
 Signing and deployment use existing repository secrets; they must not be
 copied into source or this cloud workspace. The signature check is mandatory.
 
 - A push to `codex/t4a-revamp` can deploy only the `codex-t4a-revamp` Pages
   preview after those gates pass. Worker deployment and KV writes are excluded.
+  The run records the deployment URL and ID, and retains the deployed public
+  output as the `fora-preview-dist` artifact for independent hosted checks.
+  A `workflow_dispatch` run on the branch runs the gates but does not deploy.
 - A push to `main` deploys the same build path to production and retains the
   existing notify/social worker deployment and KV updates. The social index
   and private radar summary are read from the generated app's build outputs.
@@ -70,17 +74,12 @@ commit by its recorded SHA. Reverting both restores the old workflow and avoids
 the root type checker scanning the retained overlay tree. Storage keys and
 worker state are unchanged, so rollback does not require resetting readers.
 
-## Current environment limitation
+## Environment access
 
-Git fetch works, but GitHub API and Pages/worker requests are denied by the
-current cloud network policy. A saved environment draft preserves the existing
-domains and adds `api.github.com`, `thefourthangle.pages.dev`,
-`*.thefourthangle.pages.dev`, `tfa-notify.4thangle.workers.dev` and
-`tfa-sync.4thangle.workers.dev`. Review/save the draft in environment settings,
-then publish the environment configuration. The existing browser download
-domain additions remain in the draft. Saving a draft alone does not apply it.
-
-After settings are applied, recheck API and hosted access with fresh requests.
-No new GitHub token or local signing key has been requested. Missing local
-Cloudflare credentials can be avoided by the existing secret-backed Actions
-pipeline; availability and permissions of those secrets still need a real run.
+An earlier cloud session could push Git but its network policy denied the
+GitHub API, Pages and worker hosts, so it could not confirm the Actions outcome
+or a hosted preview. That limit belonged to that environment. A session that
+can reach `api.github.com`, `*.thefourthangle.pages.dev` and both worker hosts
+can verify the run and the preview directly. No local signing key or
+Cloudflare token is needed: signing and deployment use the existing repository
+secrets in the Actions run.

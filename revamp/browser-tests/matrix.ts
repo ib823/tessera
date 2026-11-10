@@ -22,11 +22,19 @@ export const surfaces: [string, string][] = [
 ];
 
 export const test = base.extend({
-  page: async ({ page }, use) => {
+  page: async ({ page, baseURL }, use) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
+    // A hosted run serves the real CSP header; a blocked script or style is a
+    // failure. Match violations only, not Firefox's "Ignoring ..." notices.
+    page.on('console', message => {
+      const text = message.text();
+      if (/content[- ]security[- ]policy/i.test(text) && /refused|blocked/i.test(text)) errors.push(text);
+    });
     // Test opt-in UI without contacting production workers or outside publishers.
-    await page.route(/^https?:\/\/(?!127\.0\.0\.1(?::|\/)|localhost(?::|\/))/, route => route.abort());
+    // Hosted mode (FORA_MATRIX_ORIGIN) allows only the deployment under test.
+    const hosted = process.env.FORA_MATRIX_ORIGIN ? new URL(baseURL!).origin : undefined;
+    await page.route(hosted ? url => url.origin !== hosted : /^https?:\/\/(?!127\.0\.0\.1(?::|\/)|localhost(?::|\/))/, route => route.abort());
     await use(page);
     expect(errors, 'Uncaught browser errors').toEqual([]);
   },
