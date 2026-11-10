@@ -1,4 +1,4 @@
-import { cp, mkdir, readdir, rename, rm, symlink, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readdir, readFile, rename, rm, symlink, writeFile } from 'node:fs/promises';
 import { existsSync, watch } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
@@ -36,6 +36,12 @@ async function prepare() {
   // Font replacement is confined to this disposable build workspace.
   await rm(join(workspace, 'public', 'fonts'), { recursive: true, force: true });
   await overlay(join(revamp, 'public'), join(workspace, 'public'));
+  // The new identity uses the existing icon URLs. Refresh the service worker
+  // and its precache on cut-over, without forking its canonical implementation.
+  const serviceWorker = join(workspace, 'public', 'sw.js');
+  const workerSource = await readFile(serviceWorker, 'utf8');
+  if (!/^const CACHE_NAME = '[^']+';/m.test(workerSource)) throw new Error('Unrecognized service-worker cache declaration');
+  await writeFile(serviceWorker, workerSource.replace(/^(const CACHE_NAME = ')([^']+)(';)/m, '$1$2-fora-v1$3'));
   await overlay(join(revamp, 'build-scripts'), join(workspace, 'scripts'));
   await overlay(join(revamp, 'tests'), join(workspace, 'tests', 'e2e', 'revamp'));
   await overlay(join(revamp, 'regression-tests'), join(workspace, 'tests', 'e2e'));

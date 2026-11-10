@@ -1,12 +1,12 @@
 # T4A revamp
 
-Phase 1 implementation of the supplied FORA v2.1 manifest on `codex/t4a-revamp`. Includes responsive discovery, search, Saved, reader, sharing, alerts, utility pages and the measured Newsreader font choice. See [implementation and release limits](docs/IMPLEMENTATION.md), [board coverage](docs/PHASE1-COVERAGE.md) and [browser test instructions](docs/BROWSER-TESTING.md). Production cut-over still requires explicit approval.
+Phase 1 implementation of the supplied FORA v2.1 manifest on `codex/t4a-revamp`. Includes responsive discovery, search, Saved, reader, sharing, alerts, utility pages and the measured Newsreader font choice. See [implementation and release limits](docs/IMPLEMENTATION.md), [board coverage](docs/PHASE1-COVERAGE.md) and [browser test instructions](docs/BROWSER-TESTING.md). The user has authorized production cut-over; follow the [deployment checks and rollback procedure](docs/DEPLOYMENT.md) before release.
 
 ## Isolation
 
 Author replacements under `revamp/src/` using the same relative paths as `src/`. Assets live under `revamp/public/`; isolated build-script overrides live under `revamp/build-scripts/`. The generated workspace replaces its font directory before applying those assets. Regression expectations changed by the approved design live under `revamp/regression-tests/`; new tests live under `revamp/tests/`. The development runner creates `revamp/.cache/app/` from the current checkout, overlays the replacements, and shares the root's locked dependencies. It copies canonical content for build input; it never creates an alternate editorial source. Changes under `revamp/src/` refresh the running development server. Restart after changing shared source outside that directory.
 
-The root package scripts, Astro configuration, deployment workflow, canonical content, workers, and current application source remain untouched. Normal root builds do not load the revamp. All generated work stays inside the ignored `revamp/.cache/` and `revamp/dist/` paths. Never edit the generated copy.
+The root package scripts, Astro configuration, canonical content, workers, and current application source remain untouched. The cut-over workflow builds and deploys the overlaid application. Normal root builds still do not load the revamp. All generated work stays inside the ignored `revamp/.cache/` and `revamp/dist/` paths. Never edit the generated copy.
 
 ```sh
 # Install once from the repository root.
@@ -23,7 +23,7 @@ npm --prefix revamp run preview
 npm --prefix revamp test -- --reporter=list
 ```
 
-Stop the preview server before running tests if using its port. The current test configuration uses the managed environment's Chromium executable; the suite's own static server uses port 4321. Production deployment remains subject to explicit cut-over approval. The `deploy:preview` command targets only the fixed `codex-t4a-revamp` Pages branch. It needs Cloudflare credentials and has not been exercised here; no hosted deployment is claimed.
+Stop the preview server before running tests if using its port. The current local test configuration uses the managed environment's Chromium executable; the suite's own static server uses port 4321. CI uses Playwright's installed browser engines. The `deploy:preview` command targets only the fixed `codex-t4a-revamp` Pages branch. It needs local Cloudflare credentials; the feature-branch workflow instead uses existing repository secrets. Hosted deployment status is recorded separately from local tests.
 
 ## Compatibility contract
 

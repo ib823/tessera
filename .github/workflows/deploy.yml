@@ -2,7 +2,7 @@ name: Build & Deploy to Cloudflare Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, codex/t4a-revamp]
     paths-ignore:
       - 'radar/**'
       - 'docs/**'
@@ -21,6 +21,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     # Pinned: ubuntu-latest moved to 26.04, where Playwright 1.60.0 cannot
@@ -28,7 +32,10 @@ jobs:
     # ubuntu26.04-x64"), which stopped the job before the Cloudflare deploy.
     # Unpin when @playwright/test is upgraded to a release that supports it.
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 60
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      GIT_DIR: ${{ github.workspace }}/.git
 
     steps:
       - name: Checkout
@@ -43,14 +50,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Prepare FORA application from canonical content
+        run: npm --prefix revamp run prepare
+
       - name: Typecheck
+        working-directory: revamp/.cache/app
         run: npm run check
 
       - name: Lint
+        working-directory: revamp/.cache/app
         run: npm run lint
 
       - name: Test
+        working-directory: revamp/.cache/app
         run: npm test
+
+      - name: Verify font licence exception boundaries
+        run: npm --prefix revamp run check:license-gate
 
       - name: Validate signing secret
         env:
@@ -63,38 +79,51 @@ jobs:
           fi
 
       - name: Build
+        working-directory: revamp/.cache/app
         run: npm run build
         env:
           TFA_PRIVATE_KEY_B64: ${{ secrets.TFA_PRIVATE_KEY_B64 || secrets.SIGNING_KEY_BASE64 }}
           TFA_PRIVATE_KEY_PEM: ${{ secrets.TFA_PRIVATE_KEY_PEM }}
 
       - name: Bundle-size budget
+        working-directory: revamp/.cache/app
         run: npm run check-bundle
 
-      - name: Install Playwright browsers
-        # Only chromium for the initial CI run. WebKit + Firefox get added
-        # once the matrix is known-stable to keep run times predictable
-        # under the 30-minute job timeout. See docs/cross-browser-parity/09-ci.md.
-        run: npx playwright install --with-deps chromium
+      - name: Verify published signatures
+        working-directory: revamp/.cache/app
+        run: npm run check-signatures
 
-      - name: Playwright e2e (chromium-desktop baseline)
-        # Deliberately narrow for the first green CI. Widen to chromium-mobile
-        # / tablet and firefox / webkit engines in follow-up PRs once this
-        # baseline is stable. See docs/cross-browser-parity/09-ci.md.
-        run: npm run e2e:ci
+      - name: Stage the exact built output for responsive tests
+        run: cp -a revamp/.cache/app/dist revamp/dist
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium firefox webkit
+
+      - name: Playwright e2e (all seven browser and device projects)
+        working-directory: revamp/.cache/app
+        run: npm run e2e
         env:
           CI: 'true'
+
+      - name: Responsive matrix and CSS breakpoint sweeps
+        run: npm --prefix revamp run test:matrix
+        env:
+          CI: 'true'
+
+      - name: First-load JavaScript and initial network budgets
+        run: node revamp/scripts/check-first-load.mjs --local
 
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: playwright-report
+          path: |
+            revamp/.cache/app/playwright-report
+            revamp/.cache/app/test-results
+            revamp/playwright-report
+            revamp/test-results
           retention-days: 7
-
-      - name: Verify published signatures
-        run: npm run check-signatures
 
       - name: Extract commit subject
         id: msg
@@ -104,13 +133,40 @@ jobs:
         env:
           COMMIT_MSG: ${{ github.event.head_commit.message }}
 
+      # A feature-branch push can exercise the real signing/deployment secrets
+      # without changing main, the production origin, workers or their KV data.
+      - name: Deploy FORA preview to Cloudflare Pages
+        id: preview
+        if: github.event_name == 'push' && github.ref == 'refs/heads/codex/t4a-revamp'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy revamp/dist --project-name=thefourthangle --branch=codex-t4a-revamp
+
+      - name: Verify hosted preview routes, signatures, headers and worker access
+        if: steps.preview.outcome == 'success'
+        run: |
+          node revamp/scripts/check-hosted.mjs "$FORA_PREVIEW_URL"
+          node revamp/scripts/check-first-load.mjs "$FORA_PREVIEW_URL"
+        env:
+          # Use the immutable hexadecimal deployment URL. The existing workers
+          # intentionally do not allow named branch aliases as CORS origins.
+          FORA_PREVIEW_URL: ${{ steps.preview.outputs.deployment-url }}
+
       - name: Deploy to Cloudflare Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=thefourthangle --branch=main --commit-message="${{ steps.msg.outputs.subject }}"
+          command: pages deploy revamp/dist --project-name=thefourthangle --branch=main --commit-message="${{ steps.msg.outputs.subject }}"
+
+      - name: Verify production routes, signatures, headers and worker access
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          node revamp/scripts/check-hosted.mjs https://thefourthangle.pages.dev
+          node revamp/scripts/check-first-load.mjs https://thefourthangle.pages.dev
 
       # ── Push-notification Worker (workers/notify/) ──
       # Deployed from the repo on every push to main so the live Worker never
@@ -167,7 +223,7 @@ jobs:
           # `--remote` is the default on wrangler v3 (the runner toolchain
           # version); the flag itself was only added in wrangler v4 and
           # errors out with "Unknown argument: remote" on v3.
-          command: kv key put --binding T4A_SOCIAL_KV cards:index --path ../../public/social-card-index.json
+          command: kv key put --binding T4A_SOCIAL_KV cards:index --path ../../revamp/.cache/app/public/social-card-index.json
 
       - name: Upload radar:current to KV
         if: steps.social_check.outputs.configured == 'true'
@@ -180,4 +236,4 @@ jobs:
           # (gitignored; never published). Worker reads via getRadar() at
           # post-decision time. If the summary is missing, the kv put fails
           # softly — scorer falls back to trends-only.
-          command: kv key put --binding T4A_SOCIAL_KV radar:current --path ../../engine/private/radar-summary.json
+          command: kv key put --binding T4A_SOCIAL_KV radar:current --path ../../revamp/.cache/app/engine/private/radar-summary.json

@@ -4,6 +4,8 @@
 
 The Phase 1 layout and font work is implemented inside `revamp/`. Root application source, canonical content, workers and main deployment workflows are unchanged. No commit, push, hosted deployment or production cut-over was performed.
 
+**Later release work:** the user subsequently authorized cut-over. The prepared workflow and release procedure are recorded in [DEPLOYMENT.md](DEPLOYMENT.md); the paragraph above describes the original implementation checkpoint.
+
 
 **Expanded browser follow-up:** [Final browser results](BROWSER-RESULTS.md) supersede the browser counts and bundle measurements below. They include additional regression fixes; the original implementation record is retained here.
 
