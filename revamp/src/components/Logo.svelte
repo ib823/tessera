@@ -2,7 +2,7 @@
   interface Props { size?: number; }
   let { size = 36 }: Props = $props();
 </script>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox={size >= 88 ? '0 0 112 28' : '0 0 24 24'} width={size} height={size >= 88 ? size / 4 : size} class="logo" aria-label="FORA — The Fourth Angle" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox={size >= 88 ? '0 0 112 28' : '0 0 24 24'} width={size} height={size >= 88 ? size / 4 : size} class="logo" aria-label="FORA" role="img">
   <g transform={size >= 88 ? 'translate(0 2)' : undefined}>
     <polygon points="11.2,2 11.2,11.2 2,11.2" fill="currentColor"/>
     <polygon points="12.8,2 22,11.2 12.8,11.2" fill="currentColor"/>

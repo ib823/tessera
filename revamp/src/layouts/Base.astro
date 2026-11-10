@@ -8,7 +8,7 @@ interface Props {
   image?: string;
 }
 
-const { title = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.', noindex = false, image } = Astro.props;
+const { title = 'FORA — Bite-Sized Malaysian Issues Analysis', description = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.', noindex = false, image } = Astro.props;
 const siteUrl = Astro.site?.origin || 'https://thefourthangle.pages.dev';
 const canonicalPath = Astro.url.pathname
   .replace(/index\.html$/, '')
@@ -17,6 +17,11 @@ const canonicalUrl = `${siteUrl}${canonicalPath === '/' ? '/' : canonicalPath}`;
 const buildId = typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : new Date().toISOString();
 // Per-page OG image override (1200×630 cards); falls back to the site card.
 const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-image.png?v=${encodeURIComponent(buildId)}`;
+// The home page names the site for search engines: FORA, short for The Fourth
+// Angle (see "Names" in CLAUDE.md). Data block, not executed, so no CSP hash.
+const websiteJsonLd = canonicalPath === '/'
+  ? JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebSite', name: 'FORA', alternateName: ['The Fourth Angle'], url: `${siteUrl}/` })
+  : null;
 ---
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
@@ -67,21 +72,22 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-image.png?v=${enco
   <meta property="og:image:alt" content={`${title} — Independent Malaysian issues analysis`} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="The Fourth Angle" />
+  <meta property="og:site_name" content="FORA" />
   <meta property="og:locale" content="en_MY" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
   <meta name="twitter:image:alt" content={`${title} — Independent Malaysian issues analysis`} />
-  <meta name="author" content="The Fourth Angle" />
+  <meta name="author" content="FORA" />
   <link rel="canonical" href={canonicalUrl} />
-  <link rel="alternate" type="application/rss+xml" title="The Fourth Angle" href="/rss.xml" />
+  {websiteJsonLd && <script type="application/ld+json" is:inline set:html={websiteJsonLd}></script>}
+  <link rel="alternate" type="application/rss+xml" title="FORA" href="/rss.xml" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="application-name" content="The Fourth Angle" />
-  <meta name="apple-mobile-web-app-title" content="4th Angle" />
+  <meta name="application-name" content="FORA" />
+  <meta name="apple-mobile-web-app-title" content="FORA" />
   <meta name="format-detection" content="telephone=no" />
   <link rel="manifest" href={`/manifest.json?v=${encodeURIComponent(buildId)}`} />
   <link rel="icon" type="image/svg+xml" href={`/favicon.svg?v=${encodeURIComponent(buildId)}`} />

@@ -80,7 +80,7 @@
 
 <header class="site-header" class:site-header--collapsed={collapsed} onfocusin={() => { collapsed = false; }} data-collapsed={collapsed ? 'true' : undefined}>
   {#if searchMode}
-    <a class="search-brand" href="/" aria-label="FORA — The Fourth Angle home"><Logo size={112} /></a>
+    <a class="search-brand" href="/" aria-label="FORA home"><Logo size={112} /></a>
     <form role="search" aria-label="Search issues" onsubmit={(event) => event.preventDefault()} style="flex:1;display:flex;align-items:center;gap:8px;">
       <label class="sr-only" for="header-search">Search issues</label>
       <div style="position:relative;flex:1;">
@@ -102,7 +102,7 @@
     <a
       class="brand"
       href="/"
-      aria-label="FORA — The Fourth Angle home"
+      aria-label="FORA home"
       aria-current={homeActive ? 'page' : undefined}
       onclick={(event) => {
         if (!onHome || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

@@ -84,7 +84,7 @@ test('/privacy explains how to delete local data and how to stop sync and notifi
 test('/contact states ownership and funding, and points errors to /corrections', async ({ page }) => {
   await page.goto('/contact');
   const main = page.locator('main');
-  await expect(main).toContainText('The Fourth Angle is independently operated.');
+  await expect(main).toContainText('FORA is independently operated.');
   await expect(main).toContainText('Self-funded by its operator. No advertising, grants or political funding.');
   await expect(main.locator('a[href="/corrections"]').first()).toBeVisible();
   await expect(main.locator('a[href="mailto:thefourthangle@proton.me"]').first()).toBeVisible();

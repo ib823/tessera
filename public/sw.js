@@ -118,7 +118,7 @@ self.addEventListener('push', (event) => {
       requireInteraction: false,
     };
     event.waitUntil(
-      self.registration.showNotification(data.title || 'The Fourth Angle', options).then(() => {
+      self.registration.showNotification(data.title || 'FORA', options).then(() => {
         // Notify all open clients to update their notification inbox
         return clients.matchAll({ type: 'window' }).then((windowClients) => {
           windowClients.forEach((client) => {
@@ -136,7 +136,7 @@ self.addEventListener('push', (event) => {
     );
   } catch {
     event.waitUntil(
-      self.registration.showNotification('The Fourth Angle', {
+      self.registration.showNotification('FORA', {
         body: event.data.text(),
         icon: '/icons/icon-192.png',
       })

@@ -70,6 +70,9 @@ jobs:
       - name: Verify font licence exception boundaries
         run: npm --prefix revamp run check:license-gate
 
+      - name: Check brand names (FORA; see Names in CLAUDE.md)
+        run: npm --prefix revamp run check:brand-names
+
       - name: Validate signing secret
         env:
           TFA_PRIVATE_KEY_B64: ${{ secrets.TFA_PRIVATE_KEY_B64 || secrets.SIGNING_KEY_BASE64 }}

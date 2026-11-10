@@ -5,8 +5,8 @@ import { ISSUES } from '../data/issues';
 import { latestIssues } from '../lib/rss';
 import { formatIssueDate, publishedDay } from '../lib/issue-meta';
 
-const title = 'Page not found — The Fourth Angle';
-const description = 'This page or issue could not be found. Search the issues or pick one of the latest from The Fourth Angle.';
+const title = 'Page not found — FORA';
+const description = 'This page or issue could not be found. Search the issues or pick one of the latest from FORA.';
 
 // S-7: give a reader who hit a dead link somewhere to go. The five newest
 // issues are server-rendered; search runs on the same index as the app.
@@ -21,7 +21,7 @@ const searchTitles = JSON.stringify(latestIssues(ISSUES).map((issue) => [issue.i
   <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--border-subtle);background:var(--bg);">
     <a href="/" style="display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--text-primary);min-height:44px;">
       <Logo size={60} />
-      <span style="font-family:var(--font-display);font-size: var(--text-body-lg);font-weight:700;letter-spacing:-0.02em;color:var(--text-primary);">The Fourth Angle</span>
+      <span style="font-family:var(--font-display);font-size: var(--text-body-lg);font-weight:700;letter-spacing:-0.02em;color:var(--text-primary);">FORA</span>
     </a>
     <a href="/about" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;border-radius: var(--radius-pill);border:1px solid var(--border-subtle);background:var(--bg-elevated);font-size: var(--text-sm);font-weight:700;color:var(--text-secondary);text-decoration:none;">How This Works</a>
   </header>

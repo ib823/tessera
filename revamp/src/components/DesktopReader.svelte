@@ -319,7 +319,7 @@
       </div>
       <div>
         <p style="font-size: var(--text-reading-lg);font-weight:700;line-height:1.35;color:var(--text-primary);margin:0;">{opinionNarrative(issue.opinionShift)}</p>
-        <p style="font-size: var(--text-ui);line-height:1.6;color:var(--text-secondary);margin:8px 0 0;">This is the signature T4A measure: how much the story changes when you read beyond the first telling.</p>
+        <p style="font-size: var(--text-ui);line-height:1.6;color:var(--text-secondary);margin:8px 0 0;">This is FORA's own measure: how much the story changes when you read beyond the first telling.</p>
         <div style="margin-top:16px;"><OpinionBar score={issue.opinionShift} height={8} showLabel={false} /></div>
       </div>
     </div>

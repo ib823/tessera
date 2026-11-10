@@ -884,7 +884,7 @@
   });
 
   // --- Keep browser tab & meta tags in sync with active issue ---
-  const defaultTitle = 'The Fourth Angle — Bite-Sized Malaysian Issues Analysis';
+  const defaultTitle = 'FORA — Bite-Sized Malaysian Issues Analysis';
   const defaultDesc = 'Bite-size clarity for smarter thinking and better questions. The strongest check on power is a public that reads.';
   function setMeta(attr: string, value: string, content: string) {
     const el = document.querySelector(`meta[${attr}="${value}"]`);
@@ -900,7 +900,7 @@
     const homeUrl = `${siteUrl}/`;
     if (activeFullIssue) {
       const i = activeFullIssue;
-      const title = `${i.headline} — The Fourth Angle`;
+      const title = `${i.headline} — FORA`;
       const desc = i.context;
       const url = `${siteUrl}/issue/${i.id}`;
       const image = `${siteUrl}/og/issue-${i.id}.png?v=${encodeURIComponent(BUILD_ID)}`;

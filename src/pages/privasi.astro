@@ -4,8 +4,8 @@ import PolicyLayout from '../layouts/PolicyLayout.astro';
 const EMAIL = 'thefourthangle@proton.me';
 ---
 <PolicyLayout
-  title="Notis Privasi | The Fourth Angle"
-  description="Apa yang The Fourth Angle simpan pada peranti anda dan di pelayan kami, berapa lama kami menyimpannya, dan cara memadamkannya."
+  title="Notis Privasi | FORA"
+  description="Apa yang FORA simpan pada peranti anda dan di pelayan kami, berapa lama kami menyimpannya, dan cara memadamkannya."
   heading="Notis privasi"
   reviewed="Kali terakhir disemak November 2026"
   lang="ms"
@@ -15,14 +15,14 @@ const EMAIL = 'thefourthangle@proton.me';
 
   <section class="policy-card" aria-labelledby="siapa">
     <h2 id="siapa">Siapa kami</h2>
-    <p>The Fourth Angle ("T4A", "kami") dikendalikan secara bebas. Kami menentukan cara data yang diterangkan dalam halaman ini digunakan. Oleh itu, kami ialah pengawal data tersebut di bawah Akta Perlindungan Data Peribadi 2010 Malaysia.</p>
+    <p>FORA ("kami"), singkatan bagi The Fourth Angle, dikendalikan secara bebas. T4A ialah tandatangan kami, bukan organisasi berasingan. Kami menentukan cara data yang diterangkan dalam halaman ini digunakan. Oleh itu, kami ialah pengawal data tersebut di bawah Akta Perlindungan Data Peribadi 2010 Malaysia.</p>
     <p>Pertanyaan, permintaan dan aduan tentang privasi: <a class="policy-email" href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
   </section>
 
   <section class="policy-card policy-card--note" aria-labelledby="ringkas">
     <h2 id="ringkas">Ringkasnya</h2>
     <ul>
-      <li>Anda boleh membaca semua kandungan T4A tanpa akaun, nama, alamat e-mel atau nombor telefon.</li>
+      <li>Anda boleh membaca semua kandungan FORA tanpa akaun, nama, alamat e-mel atau nombor telefon.</li>
       <li>Kemajuan bacaan anda kekal dalam pelayar anda sendiri melainkan anda menghidupkan penyegerakan Angle Code.</li>
       <li>Dua ciri pilihan menghantar data ke pelayan kami: <strong>penyegerakan Angle Code</strong> dan <strong>pemberitahuan</strong>. Kedua-duanya kekal dimatikan sehingga anda menghidupkannya. Selain itu, pelayar anda hanya sekali-sekala menghantar laporan keselamatan automatik kepada kami (<a href="#keselamatan">bahagian 4</a>).</li>
       <li>Kami tidak menggunakan perkhidmatan analitik, penjejak pengiklanan atau skrip pihak ketiga. Kod kami tidak menetapkan sebarang kuki.</li>
@@ -32,7 +32,7 @@ const EMAIL = 'thefourthangle@proton.me';
 
   <section class="policy-card" aria-labelledby="peranti">
     <h2 id="peranti">1. Apa yang kekal pada peranti anda</h2>
-    <p>T4A menyimpan perkara berikut dalam storan pelayar anda sendiri. Kami tidak dapat melihatnya. Data ini hanya keluar dari peranti anda jika anda menghidupkan penyegerakan (<a href="#penyegerakan">bahagian 2</a>) atau pemberitahuan (<a href="#pemberitahuan">bahagian 3</a>).</p>
+    <p>FORA menyimpan perkara berikut dalam storan pelayar anda sendiri. Kami tidak dapat melihatnya. Data ini hanya keluar dari peranti anda jika anda menghidupkan penyegerakan (<a href="#penyegerakan">bahagian 2</a>) atau pemberitahuan (<a href="#pemberitahuan">bahagian 3</a>).</p>
     <ul class="policy-items">
       <li>
         <p class="policy-item-title">Isu yang telah anda mulakan atau habiskan, dan bilangan kad yang telah anda baca</p>
@@ -87,7 +87,7 @@ const EMAIL = 'thefourthangle@proton.me';
     <p><strong>Tempat kami menyimpannya.</strong> Dalam Cloudflare Workers KV, sebahagian daripada rangkaian global Cloudflare. Rekod itu boleh berada pada pelayan di luar Malaysia.</p>
     <p><strong>Tempoh kami menyimpannya.</strong> Kami menyimpan rekod penyegerakan anda sehingga 90 hari berlalu tanpa sebarang penyegerakan daripada mana-mana peranti yang dipautkan kepada kod anda. Selepas itu, rekod tersebut dipadamkan secara automatik. Setiap penyegerakan memulakan semula tempoh 90 hari itu.</p>
     <p><strong>Siapa yang boleh melihatnya.</strong> Sesiapa yang mempunyai Angle Code anda boleh memuatkan kemajuan anda yang telah disegerakkan. Jaga kod itu seperti kata laluan dan jangan siarkannya secara terbuka. Kod itu juga dihantar dalam alamat web: dalam pautan penyegerakan, dan dalam permintaan yang dibuat oleh peranti untuk memuatkan kemajuan anda. Hos kami, Cloudflare, memproses permintaan tersebut (<a href="#hos">bahagian 5</a>).</p>
-    <p><strong>Pautan penyegerakan.</strong> Pautan penyegerakan ialah alamat web T4A yang berakhir dengan <code>?sync=</code> dan satu kod. Apabila anda membuka pautan sebegini, T4A bertanya kepada anda dahulu sebelum memautkan pelayar itu. Jika anda bersetuju, kemajuan bacaan pelayar itu digabungkan dengan kemajuan kod tersebut, dan sesiapa yang mempunyai kod itu boleh melihatnya. Jika anda menolak, tiada apa-apa yang dipautkan. Terima hanya pautan penyegerakan yang anda cipta sendiri.</p>
+    <p><strong>Pautan penyegerakan.</strong> Pautan penyegerakan ialah alamat web FORA yang berakhir dengan <code>?sync=</code> dan satu kod. Apabila anda membuka pautan sebegini, FORA bertanya kepada anda dahulu sebelum memautkan pelayar itu. Jika anda bersetuju, kemajuan bacaan pelayar itu digabungkan dengan kemajuan kod tersebut, dan sesiapa yang mempunyai kod itu boleh melihatnya. Jika anda menolak, tiada apa-apa yang dipautkan. Terima hanya pautan penyegerakan yang anda cipta sendiri.</p>
     <p><strong>Cara menghentikan dan memadamkannya.</strong> Buka panel Angle Code, pilih <strong lang="en">Unlink</strong> (Nyahpaut) dan sahkan. Pelayar ini berhenti menyegerak dan melupakan kod itu. Salinan di pelayan kami kekal sehingga tempoh 90 harinya tamat. Untuk memadamkannya lebih awal, e-mel <a href={`mailto:${EMAIL}`}>{EMAIL}</a> bersama Angle Code anda. Kami berusaha memadamkannya dalam tempoh 5 hari bekerja dan akan mengesahkannya melalui balasan e-mel. Kami hanya boleh mencari rekod anda jika anda memberikan kod itu kepada kami.</p>
   </section>
 
@@ -98,14 +98,14 @@ const EMAIL = 'thefourthangle@proton.me';
     <ul>
       <li>Selasa dan Khamis jam 8 pagi, jika kami telah menerbitkan isu baharu;</li>
       <li>Sabtu jam 9 pagi, ringkasan mingguan;</li>
-      <li>peringatan "<span lang="en">You Missed This</span>" jam 9 pagi, hanya jika anda tidak membuka T4A selama 14 hari dan tidak menerima sebarang pemberitahuan daripada kami dalam 7 hari yang lalu. Kami menghantarnya paling kerap sekali setiap 30 hari, dan tidak sekali-kali pada hari Sabtu.</li>
+      <li>peringatan "<span lang="en">You Missed This</span>" jam 9 pagi, hanya jika anda tidak membuka FORA selama 14 hari dan tidak menerima sebarang pemberitahuan daripada kami dalam 7 hari yang lalu. Kami menghantarnya paling kerap sekali setiap 30 hari, dan tidak sekali-kali pada hari Sabtu.</li>
     </ul>
     <p>Anda tidak akan menerima lebih daripada 3 pemberitahuan dalam mana-mana tempoh 7 hari.</p>
     <p><strong>Apa yang kami simpan di pelayan kami:</strong></p>
     <ul>
       <li>alamat pemberitahuan yang diberikan oleh pelayar anda: alamat web pada perkhidmatan <i lang="en">push</i> pembuat pelayar anda (Google, Mozilla, Apple atau Microsoft), bersama dua kunci yang digunakan untuk menyulitkan mesej kepada anda;</li>
       <li>tarikh anda menghidupkan pemberitahuan;</li>
-      <li>kali terakhir anda membuka T4A dengan pemberitahuan dihidupkan. Pelayar anda menghantar maklumat ini kepada kami setiap kali anda membuka aplikasi, supaya kami tahu sama ada perlu menghantar peringatan dan bila perlu memadamkan rekod anda;</li>
+      <li>kali terakhir anda membuka FORA dengan pemberitahuan dihidupkan. Pelayar anda menghantar maklumat ini kepada kami setiap kali anda membuka aplikasi, supaya kami tahu sama ada perlu menghantar peringatan dan bila perlu memadamkan rekod anda;</li>
       <li>perkhidmatan <i lang="en">push</i> yang digunakan oleh pelayar anda (Google, Mozilla, Apple atau lain-lain), yang kami kenal pasti daripada alamat pemberitahuan supaya kami menghantar format yang boleh dipaparkan oleh pelayar anda;</li>
       <li>masa pemberitahuan yang kami hantar kepada anda baru-baru ini, untuk mematuhi had mingguan. Kami memadamkan senarai ini 8 hari selepas pemberitahuan terakhir yang kami hantar kepada anda;</li>
       <li>jika kami pernah menghantar peringatan kepada anda, tarikh kami menghantarnya. Kami memadamkannya selepas 31 hari.</li>
@@ -116,9 +116,9 @@ const EMAIL = 'thefourthangle@proton.me';
     <ul>
       <li>anda mematikan pemberitahuan;</li>
       <li>pemberitahuan ke alamat anda gagal dihantar;</li>
-      <li>90 hari berlalu sejak anda kali terakhir membuka T4A.</li>
+      <li>90 hari berlalu sejak anda kali terakhir membuka FORA.</li>
     </ul>
-    <p>Dalam dua keadaan pertama, kami turut memadamkan masa penghantaran dan tarikh peringatannya serta-merta. Jika rekod anda telah tamat tempoh tetapi pelayar ini masih memegang langganan pemberitahuan T4A, aplikasi mendaftarkannya semula apabila anda membuka T4A seterusnya, supaya pemberitahuan diteruskan. Untuk menghentikannya, matikan pemberitahuan seperti yang diterangkan di bawah.</p>
+    <p>Dalam dua keadaan pertama, kami turut memadamkan masa penghantaran dan tarikh peringatannya serta-merta. Jika rekod anda telah tamat tempoh tetapi pelayar ini masih memegang langganan pemberitahuan FORA, aplikasi mendaftarkannya semula apabila anda membuka FORA seterusnya, supaya pemberitahuan diteruskan. Untuk menghentikannya, matikan pemberitahuan seperti yang diterangkan di bawah.</p>
     <p><strong>Cara menghentikannya.</strong> Buka loceng pemberitahuan dan pilih <strong lang="en">Turn off</strong> (Matikan). Tindakan ini membatalkan langganan dalam pelayar anda dan memadamkan rekod pemberitahuan anda, masa penghantarannya dan tarikh peringatannya daripada pelayan kami. Jika anda menyekat pemberitahuan melalui tetapan pelayar, kami memadamkan rekod anda apabila pemberitahuan seterusnya gagal sampai kepada anda, atau 90 hari selepas lawatan terakhir anda, mengikut yang mana lebih awal.</p>
   </section>
 
@@ -129,7 +129,7 @@ const EMAIL = 'thefourthangle@proton.me';
 
   <section class="policy-card" aria-labelledby="hos">
     <h2 id="hos">5. Apa yang dilihat oleh hos kami dan perkhidmatan lain</h2>
-    <p><strong>Cloudflare.</strong> Cloudflare menjadi hos T4A dan menjalankan perkhidmatan penyegerakan dan pemberitahuan kami. Apabila pelayar anda bersambung, Cloudflare menerima data permintaan standard, termasuk alamat IP anda, jenis pelayar anda dan alamat halaman atau perkhidmatan yang diminta. Cloudflare memproses data permintaan ini di bawah <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">dasar privasinya sendiri</a> (dalam bahasa Inggeris).</p>
+    <p><strong>Cloudflare.</strong> Cloudflare menjadi hos FORA dan menjalankan perkhidmatan penyegerakan dan pemberitahuan kami. Apabila pelayar anda bersambung, Cloudflare menerima data permintaan standard, termasuk alamat IP anda, jenis pelayar anda dan alamat halaman atau perkhidmatan yang diminta. Cloudflare memproses data permintaan ini di bawah <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">dasar privasinya sendiri</a> (dalam bahasa Inggeris).</p>
     <p><strong>Tiada penjejakan.</strong> Kami tidak menggunakan perkhidmatan analitik, penjejak pengiklanan, pemalam media sosial, atau fon dan skrip pihak ketiga. Tetapan keselamatan kami menghalang halaman daripada memuatkan skrip dari tempat lain. Kod kami tidak menetapkan sebarang kuki.</p>
     <p><strong>Butang kongsi.</strong> Jika anda mengetik butang kongsi, kami membuka perkhidmatan yang anda pilih (WhatsApp, Telegram, X, Facebook, LinkedIn atau Threads) bersama pautan dan teks isu tersebut. Tiada apa-apa dihantar kepada perkhidmatan itu melainkan anda mengetik butang tersebut. Dasar privasi perkhidmatan itu sendiri kemudian terpakai.</p>
     <p><strong>Pautan dalam pemberitahuan</strong> membawa label seperti <code>?from=notification</code>. Kami tidak menggunakannya, tetapi label itu menjadi sebahagian daripada alamat web yang diminta oleh pelayar anda.</p>
@@ -146,7 +146,7 @@ const EMAIL = 'thefourthangle@proton.me';
     </ol>
     <p>Kami bergantung pada persetujuan anda untuk penyegerakan dan pemberitahuan, yang anda berikan dengan menghidupkannya. Anda boleh menarik balik persetujuan itu pada bila-bila masa (<a href="#hak">bahagian 9</a>).</p>
     <p>Semua data ini datang daripada pelayar anda sendiri. Kami tidak memperoleh sebarang maklumat tentang anda daripada pihak lain.</p>
-    <p>Pemberian sebarang data ini adalah <strong>secara sukarela</strong>. Tanpa penyegerakan atau pemberitahuan, anda masih boleh membaca semua kandungan T4A. Anda hanya terlepas penyegerakan antara peranti dan makluman.</p>
+    <p>Pemberian sebarang data ini adalah <strong>secara sukarela</strong>. Tanpa penyegerakan atau pemberitahuan, anda masih boleh membaca semua kandungan FORA. Anda hanya terlepas penyegerakan antara peranti dan makluman.</p>
   </section>
 
   <section class="policy-card" aria-labelledby="kongsi">

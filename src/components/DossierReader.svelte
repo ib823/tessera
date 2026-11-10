@@ -605,7 +605,7 @@
         <div style:margin-top="32px" style:padding-top="20px" style:border-top="1px solid var(--rule)">
           <p class="margin-rail__label">Citation</p>
           <p style:font-family="var(--font-mono)" style:font-size="11px" style:line-height="1.6" style:color="var(--muted)">
-            T4A ({new Date(dossier.sourceDate).getFullYear()}). {dossier.title}. Dossier {dossier.id}.
+            FORA ({new Date(dossier.sourceDate).getFullYear()}). {dossier.title}. Dossier {dossier.id}.
           </p>
         </div>
       </div>

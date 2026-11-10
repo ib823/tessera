@@ -3,6 +3,16 @@
 ## What This Is
 Non-partisan Malaysian issues analysis platform. Every issue goes through a 4-stage editorial pipeline (Stages 1+2+3+6 — see `engine/templates/publish-playbook.md`), scored for neutrality and opinion shift. Stages 4 (DeepSeek Alt-Framing) and 5 (Grok Contrarian Stress-Test) are retired by default; legacy issues retain their `af`/`ct` scores. **Stage 5 escalation:** re-enable Stage 5 (Grok Contrarian) for any issue whose brief marks Religion / Ethnic / Royalty risk HIGH or CRITICAL, marks Political risk CRITICAL with a sharp editorial take, or where Stage 3's `source_diversity_estimate` < 0.4. See `docs/adr/0004-retire-stages-4-and-5.md` for the full rationale. Static site on Cloudflare Pages.
 
+## Names
+One rule, enforced in CI by `npm --prefix revamp run check:brand-names`:
+
+- **FORA** is the brand. Every name readers see uses it: page titles (`… | FORA`, `… — FORA`), site and app names, RSS, notifications, structured data, logo labels, and the publisher named in policy pages.
+- **The Fourth Angle** is the original name; FORA is short for it. Mention it only to explain the name: "FORA, short for The Fourth Angle, …" on first mention in a policy or legal page, the footer name line, the About page's "Our Name" section, and `alternateName` in structured data. Never as a title, a label or a standalone name.
+- **T4A** is the codename and our signature. It belongs on images (OG backgrounds, share and social cards, the cursive line-art signature) and as the pen name on figures and compilations we make ourselves ("Illustration: T4A", "T4A compilation"). Never the site's name in copy. Internal code, scripts, engine files and repository docs may keep T4A.
+- Issue and dossier text in `src/data/` is editorial. An existing "T4A" or "The Fourth Angle" there changes only through an edition update, never a sweep. New issue copy that refers to us says FORA.
+
+The check reads what the FORA build serves (`src/` with the `revamp/src/` overlay, the shipped root files of `public/`, and the Workers), ignores code comments, and allows only the explanation phrases listed in `revamp/scripts/check-brand-names.mjs`. Add a phrase there only when it explains the name or marks our own work with the signature.
+
 ## Publishing Workflow
 
 ### To create a new issue:
@@ -262,6 +272,7 @@ Clearing the flag is the backfill protocol: research the topic against primary s
 
 ## Content Rules
 - NO references to AI, models, Claude, GPT, or any AI provider
+- Name us FORA in reader-facing copy (see Names above)
 - Use "4 independent review stages" (or "multi-stage editorial review") not "AI models"
 - All analysis framed as editorial methodology
 - Respect 3R: Race, Religion, Royalty — critique policy, not communities/beliefs

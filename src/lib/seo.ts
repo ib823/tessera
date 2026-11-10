@@ -8,7 +8,7 @@
  */
 
 export const SEO_TITLE_MAX = 60;
-export const SITE_NAME = 'The Fourth Angle';
+export const SITE_NAME = 'FORA';
 const BRAND_SUFFIX = ` | ${SITE_NAME}`;
 const ELLIPSIS = '…';
 

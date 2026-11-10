@@ -376,9 +376,9 @@
   {/if}
   </div>
       {#if showWelcome}
-        <div class="welcome-card" role="note" aria-label="Welcome to The Fourth Angle" data-prompt="welcome">
+        <div class="welcome-card" role="note" aria-label="Welcome to FORA" data-prompt="welcome">
           <div class="welcome-content">
-            <p class="welcome-text"><strong>The Fourth Angle</strong> is a nonpartisan Malaysian issues platform. We show you what every side left out, then let you decide.</p>
+            <p class="welcome-text"><strong>FORA</strong>, short for The Fourth Angle, is a nonpartisan Malaysian issues platform. We show you what every side left out, then let you decide.</p>
             <p class="welcome-text">The <strong>Opinion Shift</strong> number on each issue tells you how much you would miss by reading only the headline. Higher means more hidden complexity.</p>
             <a href="/about" class="welcome-link">How this works <span aria-hidden="true">→</span></a>
           </div>
@@ -398,6 +398,7 @@
           <a href="/accessibility">Accessibility</a>
           <a href="/rss.xml" type="application/rss+xml">RSS</a>
         </nav>
+        <p class="today-name-note">FORA is short for The Fourth Angle. T4A is our signature.</p>
       </footer>
 
 {:else if !loading}
@@ -477,6 +478,7 @@
   .today-quote { font:400 1.125rem/1.5 var(--fora-serif); max-width:55ch; margin:auto; }
   .today-ethos { font:.75rem/1.5 var(--fora-sans); text-transform:uppercase; letter-spacing:.08em; color:var(--fora-muted); margin:12px 0; }
   .today-footer-links { display:flex; flex-wrap:wrap; justify-content:center; gap:0 20px; }
+  .today-name-note { font:.75rem/1.5 var(--fora-sans); color:var(--fora-muted); margin:8px 0 0; }
   .today-footer-links a { min-height:44px; display:inline-flex; align-items:center; font:.75rem var(--fora-sans); text-decoration:underline; text-underline-offset:3px; color:var(--fora-muted); }
   @media(max-width:1100px) { .frontpage-grid { grid-template-columns:minmax(0, 1.5fr) minmax(0, 1fr); } .latest-rail { grid-column:1 / -1; border-left:0; padding-left:0; } .latest-rail ol { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; } }
   @media(max-width:600px) {
