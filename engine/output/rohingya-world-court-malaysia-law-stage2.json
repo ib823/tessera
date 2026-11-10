@@ -1,0 +1,165 @@
+{
+"bias_score": 32,
+"political_lean_estimate": -0.3,
+"ethnic_framing_estimate": 0.6,
+"religious_sensitivity_estimate": 0.0,
+"narrative_framing_estimate": -0.4,
+"geographic_bias_estimate": 0.8,
+"economic_framing_estimate": 0.2,
+"gender_agency_estimate": 0.9,
+"partisan_flags": [
+{
+"quote": "Editor's direction: deadpan news register in the manner of The Onion, applied to verified facts only. The effect comes from placing real, sourced statements side by side and reporting them flatly.",
+"why_biased": "Adopting a satirical deadpan register ('in the manner of The Onion') structurally selects for irony and government hypocrisy in every card—pairing international human rights rhetoric against domestic enforcement without presenting the government's stated administrative, security, or fiscal rationale for phased registration.",
+"fix": "Drop the satirical juxtaposition mandate and report the legal and policy gap between Malaysia's international diplomacy and domestic statutory framework in a neutral analytical register that includes the government's stated rationale for NSC Directive No. 23 and phased screening."
+},
+{
+"quote": "Myanmar has 'agreed to take back 5,000' Rohingya from Malaysia, the Prime Minister said on 29 Jul. None of the first 1,476 returned were Rohingya, he told Parliament on 6 Oct.",
+"why_biased": "The headline inserts the word 'Rohingya' outside the quotation marks of the Prime Minister's 29 July statement—even though the analyst's own verification notes admit it is unverified whether the Prime Minister said 5,000 Rohingya or 5,000 Myanmar nationals—to manufacture a deadpan contradiction with the 6 October statement that none of the 1,476 repatriated were Rohingya.",
+"fix": "Use the exact attributed wording from detail 'd' ('agreed to take back 5,000 from Malaysia') until the primary transcript of the 29 July remarks is verified, and clarify that the 1,476 returned were non-Rohingya Myanmar nationals."
+}
+],
+"racial_flags": [
+{
+"quote": "Whatever the World Court rules on 19 Nov, the Rohingya in Malaysia wake up on 20 Nov under an Immigration Act with no word for refugee.",
+"why_biased": "Across all six cards, state officials and international bodies hold 100% of active grammatical agency, while the 129,400 Rohingya in Malaysia are framed exclusively as passive objects of state policy, detention, registration, or court rulings, with zero voice or agency from Rohingya community representatives.",
+"fix": "Include documented statements or perspectives from Rohingya community organisations or refugee advocates alongside official government and UNHCR citations."
+}
+],
+"religious_flags": [],
+"geographic_flags": [
+{
+"quote": "Malaysia keeps its Rohingya policy at two addresses. In The Hague, it backs accountability. In Act 155, there is a lacuna where the word refugee would go.",
+"why_biased": "The analysis is entirely centred on elite diplomatic venues (The Hague, UN headquarters) and federal statements in Putrajaya/Kuala Lumpur, ignoring sub-national realities where immigration depots and refugee communities are situated as well as East Malaysia's distinct statutory position under Act 155.",
+"fix": "Contextualise where the detention depots and registered populations are concentrated or specify that the analysis focuses specifically on federal statutory and diplomatic policy."
+}
+],
+"economic_flags": [
+{
+"quote": "They are not prosecuted for entering or overstaying, the department said. Working without a permit stays an offence, its director-general said on 7 Sep.",
+"why_biased": "The economic lens is explicitly left unused ('lenses_applicable_but_unused': ['Governance', 'Political', 'Economic']), reducing the ban on working without a permit and the 25-person pilot work scheme to a dry legal contrast while omitting both the livelihood impact on 129,400 Rohingya and domestic fiscal/labour concerns affecting B40 Malaysians.",
+"fix": "Incorporate the Economic lens by explaining the scope of the pilot work scheme (which found 25 eligible out of 78 recognised refugees) and the socio-economic implications of barring 129,400 people from formal employment."
+}
+],
+"gender_flags": [
+{
+"quote": "Written replies of 8 Jul 2026: 78 Rohingya granted refugee status and 25 found eligible for a pilot work scheme; Phase 1 registered 4,010 depot detainees (4,008 Myanmar nationals, one Sudanese, one Syrian); registration to be completed by 31 Dec 2029.",
+"why_biased": "Every active speaker quoted on the cards is male (Foreign Minister Mohamad Hasan, Immigration DG Zakaria Shaaban, Prime Minister Anwar Ibrahim, and the Deputy Foreign Minister), whereas MP Teresa Kok—whose parliamentary question elicited the core Phase 1 depot data—is relegated to a citation note in 'sources', and gender-disaggregated impacts on women and children in detention depots are absent.",
+"fix": "Attribute the parliamentary inquiry to MP Teresa Kok in the text of Card 3 and include gender-disaggregated data on registered detainees and UNHCR card holders if available in the primary written reply."
+}
+],
+"omission_flags": [
+"Governance, Political, and Economic lenses are explicitly omitted ('lenses_applicable_but_unused': ['Governance', 'Political', 'Economic']), leaving readers with no explanation of why successive Malaysian administrations have declined to ratify the 1951 Refugee Convention or how NSC Directive No. 23 operates in practice.",
+"Contested UNHCR access to immigration detention depots (which the analyst notes in 'source_notes' has reportedly been blocked since August 2019 according to UNHCR and HRW, while contested by the Home Minister) is omitted from the cards altogether, obscuring why the government's Phase 1 depot registration replaced UNHCR depot screening.",
+"Rohingya community voices and civil society perspectives are completely absent across all cards, leaving state officials and UN agencies as the sole speakers.",
+"The distinction between diplomatic support at the OIC/UN and formal legal intervention before the ICJ (where Malaysia does not appear on the ICJ Case 178 interventions list) is omitted from the Hook card."
+],
+"evasion_flags": [
+"In 'source_notes', the analyst acknowledges that the Immigration Department's stated position is internally inconsistent ('card holders illegal immigrants yet we cannot detain them'), and that UNHCR depot access is contested, yet keeps the depot access dispute off the cards rather than confronting and explaining the contradiction.",
+"The analyst buries critical verification gaps in 'needs_verification'—including reliance on a 2006 reprint of Act 155 despite a December 2025 amendment, and reliance on secondary media reports for all 2026 parliamentary replies—while presenting the cards in a definitive declarative voice."
+],
+"shoe_test_failures": [
+"If an opposition coalition or a foreign government announced that it had registered 4,010 immigration depot detainees in Phase 1 of a multi-year exercise ending in December 2029, juxtaposing the 78 people approved from that depot cohort directly against the total national population of 129,400 in the headline without specifying in the headline that Phase 1 only covered detention depots would be flagged immediately as an unfair cherry-picked numerator/denominator comparison."
+],
+"cardinal_sin_flags": [
+{
+"sin": "MISLEADING_FRAMING",
+"quote": "Malaysia's own refugee registration, begun in January, had granted refugee status to 78 Rohingya by July. UNHCR counts 129,400 Rohingya in Malaysia.",
+"why": "Placing '78 Rohingya' directly alongside '129,400 Rohingya in Malaysia' in the headline ('h') creates the false impression that the government rejected or failed to process 99.94% of the total Rohingya population, whereas the sub-text ('s') and detail ('d') show that Phase 1 only registered 4,010 detainees inside immigration depots (4,008 from Myanmar).",
+"fix": "State the actual Phase 1 denominator in the headline: 'Malaysia's new refugee registration, begun in January for 4,010 immigration depot detainees, had granted refugee status to 78 Rohingya by July; UNHCR counts 129,400 Rohingya nationwide'."
+},
+{
+"sin": "MISLEADING_FRAMING",
+"quote": "Myanmar has 'agreed to take back 5,000' Rohingya from Malaysia, the Prime Minister said on 29 Jul. None of the first 1,476 returned were Rohingya, he told Parliament on 6 Oct.",
+"why": "In detail 'd', the Prime Minister's attributed quote is 'they have agreed to take back 5,000 from Malaysia' without the word 'Rohingya', and 'needs_verification' explicitly admits the analyst has not verified whether the 29 July commitment referred to 5,000 Rohingya or 5,000 Myanmar nationals; inserting 'Rohingya' outside the quotation marks in 'h' manufactures a false contradiction with the 6 October clarification that none of the 1,476 returned were Rohingya, and pairing it with the 2020 ICJ genocide order in 's' implies Malaysia planned to deport Rohingya into genocide.",
+"fix": "Remove the unverified word 'Rohingya' from the first sentence of 'h' so it reads 'Myanmar has agreed to take back 5,000 nationals from Malaysia, the Prime Minister said on 29 Jul,' and clearly separate non-Rohingya deportations from the ICJ protection order covering Rohingya."
+},
+{
+"sin": "OVERCLAIM",
+"quote": "Malaysia supports The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 25 Sep.",
+"why": "Without qualification, 'supports The Gambia's genocide case' can be read by a general audience as formal legal participation or intervention at the ICJ, whereas Malaysia only expressed diplomatic support at an OIC meeting (reported via Bernama without the primary speech text verified) and is not listed among formal state interveners on the ICJ Case 178 page.",
+"fix": "Clarify that Malaysia expressed diplomatic support at the OIC for The Gambia's ICJ case without formally intervening in the proceedings."
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"quote": "Act 155 makes entry without a valid pass an offence (s.6(1)(c); s.6(3): a fine up to RM10,000, jail up to five years or both, and up to six strokes) and contains no 'refugee' or 'asylum' category.",
+"why": "As admitted in 'needs_verification', the analyst checked only a 2006 reprint of the Immigration Act 1959/63 (Act 155) hosted on the Immigration Department website and did not verify the current statutory text following the December 2025 amendment.",
+"fix": "Verify the current consolidated text of Act 155 including the December 2025 amendment via the official Federal Gazette / AGC Laws of Malaysia portal before asserting what the statute currently contains."
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"quote": "Section 55 already lets the minister exempt a class of persons by gazetted order.",
+"why": "The claim about Section 55 of Act 155 is introduced for the first time in the final 'mature' card without being cited in any fact card's source list or verified against the post-December 2025 amended text of Act 155.",
+"fix": "Verify Section 55 against the current official text of Act 155 and include the specific statutory citation in Fact 1's sources before relying on it in the concluding card."
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"quote": "Written replies of 8 Jul 2026: 78 Rohingya granted refugee status and 25 found eligible for a pilot work scheme; Phase 1 registered 4,010 depot detainees (4,008 Myanmar nationals, one Sudanese, one Syrian); registration to be completed by 31 Dec 2029.",
+"why": "As logged in 'needs_verification', all figures from the 8 July 2026 parliamentary written replies (78 granted status, 25 eligible for work, 4,010 depot detainees, 4,008 from Myanmar, 31 December 2029 target), as well as the 31 July 2026 Immigration Department statement and the January 2026 start date, were taken from secondary news/NGO reports (Malay Mail, Utusan, HRW) without opening the primary parliamentary Hansard/written replies or official ministry statements.",
+"fix": "Obtain and verify the original 8 July 2026 parliamentary written replies from the Official Portal of the Parliament of Malaysia and the primary 31 July 2026 Immigration Department media statement prior to publication."
+}
+],
+"verification_log": [
+{
+"claim": "Foreign Minister Mohamad Hasan told an OIC meeting on 25 Sep 2026 that Malaysia supported The Gambia's case against Myanmar before the ICJ.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently against a primary speech transcript; the submission cites a secondary Bernama report (25 Sep 2026, id=2611617) and explicitly logs in needs_verification that the original speech text was not opened.",
+"corrected_value": ""
+},
+{
+"claim": "The ICJ will deliver its Judgment in The Gambia v. Myanmar on Thursday 19 November 2026 at 10 a.m.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently as live web search is disabled in this environment; the submission cites primary source ICJ Press Release 2026/27 dated 3 Nov 2026 (178-20261103-pre-01-00-en.pdf).",
+"corrected_value": ""
+},
+{
+"claim": "At the UN high-level conference on 30 Sep 2025, Malaysia stated: 'The 1982 Citizenship Law has systematically denied the Rohingya people their fundamental rights.'",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently; the submission cites UN transcript k11jpn4pmm (30 Sep 2025) but explicitly flags in needs_verification that the speaker identity and exact wording still require confirmation.",
+"corrected_value": ""
+},
+{
+"claim": "Malaysia is not a party to the 1951 Refugee Convention or the 1967 Protocol as at 10 Nov 2026.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify the live 10 Nov 2026 status page independently without web search, though the submission cites the primary UN Treaty Collection status pages (Chapter V-2 and V-5).",
+"corrected_value": ""
+},
+{
+"claim": "Immigration Act 1959/63 (Act 155) contains no 'refugee' or 'asylum' category, prescribes penalties under ss.6(1)(c) and 6(3) of a fine up to RM10,000, jail up to 5 years or both, and up to 6 strokes, and grants ministerial exemption powers under s.55.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify the current post-December 2025 amended text independently; the submission explicitly admits in needs_verification that only a 2006 reprint PDF was checked, not the current statute after the Dec 2025 amendment.",
+"corrected_value": ""
+},
+{
+"claim": "On 31 Jul 2026 the Immigration Department stated UNHCR card holders are 'still regarded as illegal immigrants' and exempt from prosecution for entering or overstaying, while on 19 Jun 2026 and 7 Sep 2026 Immigration DG Zakaria Shaaban stated they cannot be detained if holding a UNHCR card but can be acted against for working without a permit.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently against primary government releases; the submission relies on secondary reports in Malay Mail (31 Jul 2026) and The Star (19 Jun 2026, 7 Sep 2026) and logs in needs_verification that the original 31 Jul statement was not opened.",
+"corrected_value": ""
+},
+{
+"claim": "Written parliamentary replies of 8 Jul 2026 state 78 Rohingya were granted refugee status, 25 were eligible for a pilot work scheme, and Phase 1 registered 4,010 immigration depot detainees (4,008 from Myanmar, 1 Sudanese, 1 Syrian) with a completion target of 31 Dec 2029.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently against the official Parliamentary Hansard; the submission explicitly logs in needs_verification that the 8 Jul 2026 written replies were read only via secondary outlets Malay Mail (9 Jul 2026) and Utusan (Jul 2026), which themselves differed on whether the 4,008 were all Rohingya or Myanmar nationals.",
+"corrected_value": ""
+},
+{
+"claim": "UNHCR's Operational Data Portal counts 129,400 stateless Rohingya in Malaysia as at 30 Jun 2026, and the Deputy Foreign Minister told the Senate on 23 Jul 2026 that the government instructed UNHCR to stop refugee registrations for the time being.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently without live web access; the submission cites the UNHCR Operational Data Portal (which needs_verification flags for day-of-publication confirmation) and a secondary NST report (23 Jul 2026) rather than the Senate Hansard.",
+"corrected_value": ""
+},
+{
+"claim": "PM Anwar Ibrahim said on 29 Jul 2026 that Myanmar 'agreed to take back 5,000' Rohingya from Malaysia, and told Parliament on 6 Oct 2026 that 'no Rohingya refugees have been repatriated' among the first 1,476 Myanmar nationals returned on 29 Sep 2026.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify this independently; the submission relies on secondary reports in NST (29 Jul 2026) and Malaysiakini (6 Oct 2026) and admits in needs_verification that it has not verified whether the PM's 29 Jul wording referred to 5,000 Rohingya or 5,000 Myanmar nationals.",
+"corrected_value": ""
+},
+{
+"claim": "On 23 Jan 2020 the ICJ unanimously ordered Myanmar to take all measures within its power to prevent acts within Article II of the Genocide Convention in relation to the Rohingya, and on 21 Jul 2026 the 59th ASEAN Foreign Ministers' Meeting Joint Communiqué (para 179) stated the Five-Point Consensus remains ASEAN's main reference.",
+"status": "UNVERIFIED",
+"primary_source": "I cannot verify these documents independently in this environment without web search, though the submission cites primary sources: ICJ Order summary (node/105892), ASEAN Charter Art. 20(1), and the 59th AMM Joint Communiqué PDF (21 Jul 2026).",
+"corrected_value": ""
+}
+],
+"overall_assessment": "The analysis uses a 'deadpan' satirical register ('in the manner of The Onion') that systematically engineers ironic juxtapositions at the expense of contextual accuracy and primary-source verification. Most critically, it commits two major framing distortions: first, Card 3's headline juxtaposes 78 refugees approved in Phase 1 directly against the 129,400 UNHCR-registered Rohingya nationwide while burying in the sub-text that Phase 1 was restricted to 4,010 immigration depot detainees; second, Card 4's headline inserts the word 'Rohingya' outside the quotation marks of the Prime Minister's 29 July statement on returning 5,000 people—despite the analyst's own verification notes admitting uncertainty over whether he meant 5,000 Rohingya or 5,000 Myanmar nationals—to manufacture a contradiction with his 6 October statement that none of the 1,476 deported were Rohingya. Compounding these framing errors, the analyst admits in 'needs_verification' that nearly all 2026 Malaysian figures and quotes rest on secondary news reports rather than opened parliamentary Hansards or official statements, and that claims about Act 155 rest on a 2006 reprint rather than the December 2025 amended text, while completely omitting the Economic, Governance, and Political lenses as well as any Rohingya voice."
+}
