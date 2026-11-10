@@ -60,6 +60,13 @@
   let persistedProgress = $state(0);
   let pendingInitialCardIndex: number | null = $state(initialCardIndex > 0 ? initialCardIndex : null);
   let stepObserver: IntersectionObserver | null = null;
+  // The reading path stays pinned to the top of the reading column, so it
+  // shows where you are while you read instead of scrolling away above the
+  // headline (where it always showed card 1).
+  let progressShell: HTMLDivElement | undefined = $state();
+  let pathSentinel: HTMLDivElement | undefined = $state();
+  let pathHeight = $state(0);
+  let pathStuck = $state(false);
 
   function cardLabel(card: Issue['cards'][number]) {
     const m = CARD_TYPES[card.t] ?? CARD_TYPES.hook;
@@ -187,7 +194,7 @@
         const targetIndex = Math.max(0, Math.min(pendingInitialCardIndex, els.length - 1));
         const targetEl = els[targetIndex];
         if (targetEl) {
-          scrollEl.scrollTop = Math.max(0, targetEl.offsetTop - 24);
+          scrollEl.scrollTop = Math.max(0, targetEl.offsetTop - (progressShell?.offsetHeight ?? 0) - 16);
           activeStep = targetIndex;
           hashCardApplied = true;
         }
@@ -239,6 +246,16 @@
     }
   });
 
+  // A rule under the reading path once it is pinned over the text.
+  $effect(() => {
+    const sentinel = pathSentinel;
+    const root = scrollEl;
+    if (!sentinel || !root) return;
+    const observer = new IntersectionObserver(([entry]) => { pathStuck = !entry.isIntersecting; }, { root });
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  });
+
   // J/K keyboard navigation between cards
   function onReaderKeyDown(e: KeyboardEvent) {
     // Don't intercept if user is typing in an input
@@ -263,13 +280,14 @@
 
 <svelte:window onkeydown={onReaderKeyDown} />
 <div bind:this={scrollEl} role="article" aria-label="Issue reader — use J/K or arrow keys to navigate between cards" class:reader-switching={transitioning}
-  style="flex:1;overflow-y:auto;background:var(--bg);transition:opacity var(--duration-fast, 150ms) ease-out, transform var(--duration-fast, 150ms) ease-out;">
+  style="flex:1;overflow-y:auto;background:var(--bg);--reading-path-offset:{pathHeight + 16}px;transition:opacity var(--duration-fast, 150ms) ease-out, transform var(--duration-fast, 150ms) ease-out;">
   <!-- Screen reader announcement for issue change -->
   <div class="sr-only" aria-live="polite" aria-atomic="true">Now reading: {issue.headline}</div>
   <div class="reader-content-wrap">
-    <div class="reader-progress-shell">
+    <div class="reader-path-sentinel" bind:this={pathSentinel} aria-hidden="true"></div>
+    <div class="reader-progress-shell" class:reader-progress-shell--stuck={pathStuck} bind:this={progressShell} bind:offsetHeight={pathHeight} data-reading-path>
       <div class="reader-progress-copy">
-        <div class="reader-progress-kicker">Reading path</div>
+        <div class="reader-progress-kicker" data-reading-path-position>Card {activeStep + 1} of {issue.cards.length}</div>
         <div class="reader-progress-label balance-title">{activeStageLabel}</div>
       </div>
       <div class="reader-progress-track" style="--steps:{issue.cards.length};" role="navigation" aria-label="Reading path — click to jump to a card">
@@ -492,24 +510,27 @@
 
 <style>
   .reader-content-wrap {
+    --wrap-pad: 24px;
     max-width: 760px;
     margin: 0 auto;
-    padding: 32px 24px 56px;
+    padding: 32px var(--wrap-pad) 56px;
   }
 
   /* Slightly more breathing room past 1600px */
   @media (min-width: 1600px) {
     .reader-content-wrap {
+      --wrap-pad: 32px;
       max-width: 800px;
-      padding: 40px 32px 64px;
+      padding: 40px var(--wrap-pad) 64px;
     }
   }
 
   /* QHD 27" — wider prose comfort + generous flanks */
   @media (min-width: 1920px) {
     .reader-content-wrap {
+      --wrap-pad: 40px;
       max-width: 840px;
-      padding: 48px 40px 72px;
+      padding: 48px var(--wrap-pad) 72px;
     }
   }
 
@@ -534,11 +555,34 @@
     transform: translateY(8px);
   }
 
+  .reader-path-sentinel {
+    height: 1px;
+    margin-bottom: -1px;
+  }
+
+  /* Pinned to the top of the reading column; the background spans the
+     column's padding so text scrolls cleanly underneath. */
   .reader-progress-shell {
+    position: sticky;
+    top: 0;
+    z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 28px;
+    gap: 8px;
+    margin: 0 calc(-1 * var(--wrap-pad)) 28px;
+    padding: 12px var(--wrap-pad) 6px;
+    background: var(--bg);
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--duration-fast, 150ms) ease-out;
+  }
+
+  .reader-progress-shell--stuck {
+    border-bottom-color: var(--fora-rule);
+  }
+
+  /* Jumping to a card (segment, J/K, #card-N) lands below the pinned path. */
+  .fora-reading-step {
+    scroll-margin-top: var(--reading-path-offset, 112px);
   }
 
   .reader-progress-copy {
@@ -582,33 +626,46 @@
     padding: 0;
   }
 
+  /* Read cards in the brand teal, the current card in ink, the rest in the
+     rule colour. */
   .reader-progress-segment::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    top: 8px;
-    height: 8px;
-    box-sizing: border-box;
+    top: 9px;
+    height: 6px;
     border-radius: var(--radius-pill);
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-subtle);
-    transition: background 0.2s ease-out, border-color 0.2s ease-out, transform 0.15s ease;
+    background: var(--fora-rule);
+    transition: background 0.2s ease-out, transform 0.15s ease;
   }
 
   .reader-progress-segment:hover::before {
-    transform: scaleY(1.4);
-    border-color: var(--text-muted);
+    transform: scaleY(1.5);
   }
 
   .reader-progress-segment--done::before {
-    background: rgba(46, 125, 50, 0.14);
-    border-color: rgba(46, 125, 50, 0.18);
+    background: var(--fora-brand);
   }
 
   .reader-progress-segment--active::before {
-    background: rgba(210, 140, 40, 0.18);
-    border-color: rgba(210, 140, 40, 0.26);
+    background: var(--fora-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reader-progress-shell,
+    .reader-progress-segment::before { transition: none; }
+  }
+
+  @media (forced-colors: active) {
+    .reader-progress-segment::before { forced-color-adjust: none; background: Canvas; border: 1px solid CanvasText; }
+    .reader-progress-segment--done::before { background: GrayText; }
+    .reader-progress-segment--active::before { background: Highlight; }
+    .reader-progress-shell--stuck { border-bottom-color: CanvasText; }
+  }
+
+  @media print {
+    .reader-progress-shell { display: none; }
   }
 
   .reader-head {
