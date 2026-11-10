@@ -196,6 +196,17 @@ jobs:
       - name: Verify production routes, signatures, headers and worker access
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
+          # The production alias can serve the previous deployment for a few
+          # seconds after `pages deploy` returns (run 42804172356 checked it
+          # 0.4 s later and saw the old home page). Wait up to three minutes
+          # for this build's exact home page, then run the unchanged checks;
+          # they still fail if production never serves this build.
+          expected=$(sha256sum revamp/dist/index.html | cut -d' ' -f1)
+          for attempt in $(seq 1 36); do
+            actual=$(curl -fsS https://thefourthangle.pages.dev/ | sha256sum | cut -d' ' -f1) || actual=
+            if [ "$actual" = "$expected" ]; then echo "Production serves this build (check $attempt)."; break; fi
+            sleep 5
+          done
           node revamp/scripts/check-hosted.mjs https://thefourthangle.pages.dev
           node revamp/scripts/check-first-load.mjs https://thefourthangle.pages.dev
 
