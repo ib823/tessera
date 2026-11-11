@@ -383,29 +383,32 @@ function cmdImagePrompt(id) {
   }
   const issue = JSON.parse(readFileSync(issuePath, 'utf8'));
 
-  // Master T4A style prompt — kept in sync with generate-image-prompts.mjs.
-  const MASTER_STYLE =
-    `Abstract minimalist editorial illustration. Deep dark navy background (#0f0f23). `
-  + `Single symbolic object as the focal point, centered-left in frame. Muted warm `
-  + `color palette: amber highlights, steel blue accents, earth brown tones. Soft `
-  + `photographic grain texture throughout. Subtle dark vignette at edges. Dramatic `
-  + `single-source low-key lighting from upper left, amber-tinted. No text, no `
-  + `words, no letters, no logos, no watermarks. No human faces. Clean negative `
-  + `space on the right 60% of the frame. Atmospheric, contemplative, journalistic `
-  + `mood. Slight bird's-eye perspective. Ultra-high quality, 8K detail. Aspect `
-  + `ratio exactly 1.91:1 wide landscape format.`;
+  // Canonical T4A image template, verbatim from CLAUDE.md (PHASE 7: SHERLOCK
+  // + IMAGE, "Image Prompt"). Only the header, the subject placeholder and the
+  // save path vary per issue; the editor fills the placeholder by hand using
+  // the subject rules listed under the template in CLAUDE.md. Change this text
+  // only together with CLAUDE.md.
+  const TEMPLATE = [
+    `=== ISSUE ${id}: ${issue.headline} ===`,
+    '',
+    'Create a minimalist Pablo Picasso single continuous line drawing on a deep dark navy background exactly #0f0f23. Use one single unbroken bold white line (#FFFFFF) with perfectly consistent stroke weight throughout. The entire drawing must be created as one continuous gesture without the pen ever lifting from the canvas.',
+    '',
+    'Draw [INSERT YOUR SUBJECT DESCRIPTION HERE] as one clean, elegant, and confident single continuous line. The line quality should be bold, smooth, and editorial.',
+    '',
+    'At the bottom right corner, seamlessly continue the exact same continuous line into a natural hand-drawn cursive "T4A" signature as the ending tail of the stroke. The T4A signature must feel like an organic part of the single unbroken line, not added separately.',
+    '',
+    'Style: elegant minimalist single-line illustration, contemplative, editorial. No fill, no shading, no extra lines, and no unnecessary details. Keep the composition clean with generous negative space, especially toward the right side of the frame.',
+    '',
+    'Aspect ratio 1.91:1 wide landscape. Ensure the final result matches the clean, consistent quality of previous T4A single continuous line images.',
+    '',
+    `Save as: public/og/backgrounds/issue-${id}-bg.png`,
+  ];
 
-  console.log(`\n=== IMAGE PROMPT for issue ${id} ===`);
-  console.log(`Headline: ${issue.headline}`);
-  console.log(`Context:  ${issue.context}`);
   console.log('');
-  console.log('Compose a single symbolic visual that captures the tension in the');
-  console.log('headline above, then wrap it in the T4A master style:');
+  console.log(TEMPLATE.join('\n'));
   console.log('');
-  console.log(MASTER_STYLE);
-  console.log('');
-  console.log(`Save output as: public/og/backgrounds/issue-${id}-bg.png (or .jpg)`);
-  console.log('Exactly 1.91:1 aspect. Then: set-phase <slug> 7b_image_uploaded');
+  console.log('Fill the subject using the rules under "Image Prompt" in CLAUDE.md.');
+  console.log('Then: set-phase <slug> 7b_image_uploaded');
 }
 
 
