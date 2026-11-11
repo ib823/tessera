@@ -26,8 +26,11 @@ copied into source or this cloud workspace. The signature check is mandatory.
   output as the `fora-preview-dist` artifact for independent hosted checks.
   A `workflow_dispatch` run on the branch runs the gates but does not deploy.
 - A push to `main` deploys the same build path to production and retains the
-  existing notify/social worker deployment and KV updates. The social index
-  and private radar summary are read from the generated app's build outputs.
+  existing notify/social worker deployment and social-index KV update. The
+  social index is read from the generated app's build outputs. Radar's private
+  summary is synced separately by `radar-sync.yml` after a successful scan or
+  site deployment, using the latest committed scan. That single writer checks
+  freshness, expires the value four hours after the scan, and verifies readback.
 - Pull requests run the gates but do not deploy. An Actions run or preview is
   not claimed successful until its actual outcome and URL have been checked.
 

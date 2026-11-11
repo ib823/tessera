@@ -1,0 +1,94 @@
+name: Sync Radar to production KV
+
+on:
+  workflow_run:
+    workflows: ['T4A Radar Scan', 'Build & Deploy to Cloudflare Pages']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One writer; each run checks out the latest committed scan after acquiring
+# the slot. Site completion also covers migration from its former KV writer.
+concurrency:
+  group: radar-production-kv
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout latest committed scan
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Test summary validation
+        run: node --test scripts/__tests__/build-radar-summary.test.mjs
+
+      - name: Validate fresh scan and build private summary
+        id: summary
+        run: |
+          node scripts/build-radar-summary.mjs --require-fresh
+          node --input-type=module <<'JS'
+          import { appendFileSync, readFileSync } from 'node:fs';
+          const summary = JSON.parse(readFileSync('engine/private/radar-summary.json', 'utf8'));
+          const expiration = Math.floor(Date.parse(summary.generatedAt) / 1000) + 4 * 60 * 60;
+          if (expiration <= Math.floor(Date.now() / 1000) + 60) {
+            throw new Error('Scan is too old to cache safely');
+          }
+          appendFileSync(process.env.GITHUB_OUTPUT, `expiration=${expiration}\n`);
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY,
+            `Radar scan: ${summary.generatedAt}\n\nSelected signals: ${summary.selectedCount}\n`);
+          JS
+
+      - name: Install pinned KV client
+        run: npm install --prefix "$RUNNER_TEMP/radar-tools" --no-audit --no-fund wrangler@4.92.0
+
+      - name: Upload and verify radar:current
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          RADAR_EXPIRATION: ${{ steps.summary.outputs.expiration }}
+          WRANGLER_SEND_METRICS: 'false'
+        run: |
+          set -euo pipefail
+          radar_wrangler="$RUNNER_TEMP/radar-tools/node_modules/.bin/wrangler"
+          "$radar_wrangler" kv key put radar:current \
+            --config workers/social/wrangler.toml --binding T4A_SOCIAL_KV \
+            --remote --path engine/private/radar-summary.json \
+            --expiration "$RADAR_EXPIRATION"
+          # KV may take time to propagate. Read the entire value back, allowing
+          # bounded retries before reporting this production update as failed.
+          for attempt in 1 2 3 4 5; do
+            if "$radar_wrangler" kv key get radar:current \
+              --config workers/social/wrangler.toml --binding T4A_SOCIAL_KV \
+              --remote > "$RUNNER_TEMP/radar-readback.json" &&
+              node --input-type=module <<'JS'
+          import { deepStrictEqual } from 'node:assert';
+          import { readFileSync } from 'node:fs';
+          const expected = JSON.parse(readFileSync('engine/private/radar-summary.json', 'utf8'));
+          const actual = JSON.parse(readFileSync(`${process.env.RUNNER_TEMP}/radar-readback.json`, 'utf8'));
+          deepStrictEqual(actual, expected);
+          console.log(`Verified production Radar scan ${actual.generatedAt}: ${actual.selectedCount} signals`);
+          JS
+            then
+              exit 0
+            fi
+            if [ "$attempt" -lt 5 ]; then sleep 20; fi
+          done
+          echo '::error::Production Radar KV did not match the committed scan'
+          exit 1

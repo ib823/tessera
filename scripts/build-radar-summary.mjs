@@ -19,9 +19,11 @@
  * If radar/output/issue-queue.json is missing (no radar scan yet), an
  * empty summary is emitted — the worker treats this as "no boost," which
  * is the correct degraded behaviour.
+ * --require-fresh is for the production data-sync job: missing, malformed,
+ * stale or future scan input is an error, and no summary is written.
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { extractEntities } from './lib/entity-patterns.mjs';
 
@@ -42,64 +44,112 @@ const STOPWORDS = new Set([
   'over', 'after', 'before', 'between', 'into', 'out', 'up', 'down', 'more', 'most',
 ]);
 
-const inputPath = join(root, 'radar/output/issue-queue.json');
-const outputDir = join(root, 'engine/private');
-const outputPath = join(outputDir, 'radar-summary.json');
+const MAX_SCAN_AGE_MS = 4 * 60 * 60 * 1000;
+const MAX_EVIDENCE_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
-function emit(summary) {
+function timestamp(value) {
+  // Date.parse also accepts date-only/local-time strings and normalizes
+  // impossible dates. CI requires an explicit timezone and a real date.
+  if (typeof value !== 'string') return null;
+  const match = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d+)?(Z|[+-]\d{2}:\d{2})$/.exec(value);
+  const millis = Date.parse(value);
+  if (!match || !Number.isFinite(millis)) return null;
+  const [, year, month, day, hour, minute, second, zone] = match;
+  const offsetMinutes = zone === 'Z' ? 0
+    : (zone[0] === '+' ? 1 : -1) * (Number(zone.slice(1, 3)) * 60 + Number(zone.slice(4)));
+  const local = new Date(millis + offsetMinutes * 60 * 1000);
+  if (local.getUTCFullYear() !== Number(year) || local.getUTCMonth() + 1 !== Number(month)
+      || local.getUTCDate() !== Number(day) || local.getUTCHours() !== Number(hour)
+      || local.getUTCMinutes() !== Number(minute) || local.getUTCSeconds() !== Number(second)) return null;
+  return millis;
+}
+
+function validateQueue(queue, scanAt) {
+  if (!Array.isArray(queue)) throw new Error('issue queue must be an array');
+  const titles = new Set();
+  for (const [index, item] of queue.entries()) {
+    const fail = (message) => { throw new Error(`queue[${index}]: ${message}`); };
+    if (!item || typeof item !== 'object' || Array.isArray(item)) fail('must be an object');
+    if (typeof item.title !== 'string' || !item.title.trim()) fail('title must be nonempty');
+    if (titles.has(item.title)) fail('duplicate title');
+    titles.add(item.title);
+    if (!['low', 'medium', 'high', 'critical'].includes(item.priority)) fail('invalid priority');
+    for (const field of ['controversy_score', 'confidence']) {
+      if (!Number.isFinite(item[field]) || item[field] < 0 || item[field] > 1) fail(`invalid ${field}`);
+    }
+    for (const field of ['timestamp', 'last_evidence_at', 'first_seen', 'peak_at']) {
+      if (field !== 'timestamp' && item[field] === undefined) continue;
+      const at = timestamp(item[field]);
+      if (at === null) fail(`invalid ${field}`);
+      if (at > scanAt) fail(`${field} is newer than the scan`);
+      if ((field === 'timestamp' || field === 'last_evidence_at') && scanAt - at > MAX_EVIDENCE_AGE_MS) {
+        fail(`${field} is older than the seven-day queue window`);
+      }
+    }
+  }
+}
+
+export function buildRadarSummary(queue, { health = null, requireFresh = false, now = new Date() } = {}) {
+  const scanAt = timestamp(health?.last_scan);
+  if (requireFresh) {
+    if (scanAt === null) throw new Error('health.last_scan must be a valid ISO timestamp with timezone');
+    if (scanAt > now.getTime()) throw new Error('health.last_scan is in the future');
+    if (now.getTime() - scanAt > MAX_SCAN_AGE_MS) throw new Error('health.last_scan is older than four hours');
+    validateQueue(queue, scanAt);
+  }
+
+  const selected = (Array.isArray(queue) ? queue : []).filter((x) => x &&
+    (x.priority === 'critical' || x.priority === 'high') &&
+    (x.confidence ?? 0) >= 0.5 && typeof x.title === 'string' && x.title.trim().length > 0);
+  const entities = {};
+  const keywords = {};
+  for (const item of selected) {
+    const score = item.controversy_score ?? 0;
+    if (score <= 0) continue;
+    for (const entity of extractEntities(item.title)) {
+      if (entities[entity] === undefined || score > entities[entity]) entities[entity] = score;
+    }
+    const tokens = item.title.toLowerCase().match(/[a-z][a-z'-]{2,}/g) || [];
+    for (const token of tokens) {
+      if (STOPWORDS.has(token)) continue;
+      if (keywords[token] === undefined || score > keywords[token]) keywords[token] = score;
+    }
+  }
+  // Source freshness must survive rebuilding: building an old checkout does
+  // not turn its Radar evidence into a new scan.
+  return { generatedAt: new Date(scanAt ?? now.getTime()).toISOString(),
+    selectedCount: selected.length, entities, keywords };
+}
+
+export function main({ rootDir = root, args = process.argv.slice(2), now = new Date() } = {}) {
+  const requireFresh = args.includes('--require-fresh');
+  const inputPath = join(rootDir, 'radar/output/issue-queue.json');
+  let queue;
+  try {
+    queue = JSON.parse(readFileSync(inputPath, 'utf8'));
+  } catch (error) {
+    if (requireFresh) throw new Error(`issue queue is unreadable: ${error.code || error.message}`);
+    console.warn(`radar-summary: ${inputPath} not readable (${error.code || error.message}) — emitting empty summary.`);
+    queue = [];
+  }
+  let health = null;
+  try {
+    health = JSON.parse(readFileSync(join(rootDir, 'radar/output/health.json'), 'utf8'));
+  } catch (error) {
+    if (requireFresh) throw new Error(`scan health is unreadable: ${error.code || error.message}`);
+  }
+  const summary = buildRadarSummary(queue, { health, requireFresh, now });
+  const outputDir = join(rootDir, 'engine/private');
   mkdirSync(outputDir, { recursive: true });
-  writeFileSync(outputPath, JSON.stringify(summary, null, 2));
+  writeFileSync(join(outputDir, 'radar-summary.json'), JSON.stringify(summary, null, 2));
+  console.log(`✓ engine/private/radar-summary.json (${summary.selectedCount} items → ${Object.keys(summary.entities).length} entities, ${Object.keys(summary.keywords).length} keywords)`);
+  return summary;
 }
 
-let queue;
-try {
-  queue = JSON.parse(readFileSync(inputPath, 'utf8'));
-} catch (err) {
-  console.warn(`radar-summary: ${inputPath} not readable (${err.code || err.message}) — emitting empty summary.`);
-  emit({
-    generatedAt: new Date().toISOString(),
-    selectedCount: 0,
-    entities: {},
-    keywords: {},
-  });
-  process.exit(0);
-}
-
-const selected = queue.filter((x) =>
-  (x.priority === 'critical' || x.priority === 'high') &&
-  (x.confidence ?? 0) >= 0.5 &&
-  typeof x.title === 'string' &&
-  x.title.trim().length > 0,
-);
-
-const entities = {};
-const keywords = {};
-
-for (const item of selected) {
-  const score = item.controversy_score ?? 0;
-  if (score <= 0) continue;
-
-  // Structured entities via the shared institutions/laws patterns. Same
-  // ID format as cards.ts: "inst:PAS", "law:SOSMA", etc.
-  for (const e of extractEntities(item.title)) {
-    if (entities[e] === undefined || score > entities[e]) entities[e] = score;
-  }
-
-  // Topic keywords: lowercase tokens, stopword-filtered, min length 3.
-  const tokens = item.title.toLowerCase().match(/[a-z][a-z'-]{2,}/g) || [];
-  for (const t of tokens) {
-    if (STOPWORDS.has(t)) continue;
-    if (keywords[t] === undefined || score > keywords[t]) keywords[t] = score;
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  try { main(); }
+  catch (error) {
+    console.error(`radar-summary: ${error.message}`);
+    process.exitCode = 1;
   }
 }
-
-emit({
-  generatedAt: new Date().toISOString(),
-  selectedCount: selected.length,
-  entities,
-  keywords,
-});
-
-console.log(
-  `✓ engine/private/radar-summary.json (${selected.length} items → ${Object.keys(entities).length} entities, ${Object.keys(keywords).length} keywords)`,
-);
