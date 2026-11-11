@@ -91,6 +91,26 @@ class SourceAggregator:
             f"Initialized {len(self.connectors)} source connectors: "
             f"{[c.name for c in self.connectors]}"
         )
+        # Keep disabled and unavailable configured sources visible to operators.
+        active = {c.name for c in self.connectors}
+        self._omitted_sources = []
+        for config_name, name, default_enabled in (
+            ("twitter", "twitter", False), ("news_rss", "news_rss", False),
+            ("reddit_rss", "reddit", False), ("gdelt", "gdelt", False),
+            ("google_trends", "google_trends", False),
+            ("parliament", "parliament", True), ("court", "court", True),
+        ):
+            if name in active:
+                continue
+            enabled = sources_cfg.get(config_name, {}).get("enabled", default_enabled)
+            reason = "initialization_failed" if enabled else "disabled_in_config"
+            if name == "twitter" and enabled:
+                import os
+                if os.environ.get("TWITTER_BEARER_TOKEN", "") in ("", "your_token_here"):
+                    reason = "missing_credential"
+            self._omitted_sources.append({"name": name,
+                "status": "unavailable" if enabled else "disabled", "reason": reason,
+                "events_fetched": 0, "last_fetch": None})
 
     @staticmethod
     def _flatten_keywords(keywords_config: dict) -> list[str]:
@@ -121,4 +141,4 @@ class SourceAggregator:
 
     def health(self) -> list[dict]:
         """Return health status for all connectors."""
-        return [c.health_check() for c in self.connectors]
+        return [c.health_check() for c in self.connectors] + self._omitted_sources

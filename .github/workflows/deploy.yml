@@ -52,6 +52,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test publishing pipeline
+        run: node --test scripts/__tests__/publish-pipeline.test.mjs
+
       - name: Prepare FORA application from canonical content
         run: npm --prefix revamp run prepare
 

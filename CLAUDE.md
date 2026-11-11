@@ -328,10 +328,10 @@ No manual steps needed. OG images, search index, and signatures all generated au
 When the user provides a topic (e.g., "Add new issue: [topic]"), execute this 10-phase pipeline. The user's only manual actions are: 4 copy-paste rounds to external review stages, 1 image upload, and 1 final approval.
 
 #### PHASE 0: INIT
-1. `git pull --rebase origin main` — sync with remote
-2. Scan `src/data/issues/` filenames for the highest issue ID → next ID = max + 1
-3. Derive slug from topic (kebab-case, e.g., `temple-demolition-hate-crime`)
-4. Ensure `engine/briefs/`, `engine/output/`, `engine/prompts-generated/` directories exist
+1. Sync a clean checkout with `origin/main` before drafting.
+2. Derive slug from topic (kebab-case, e.g., `temple-demolition-hate-crime`).
+3. Run `node scripts/publish-pipeline.mjs init {slug}`. It creates the evidence directories and `engine/output/{slug}-pipeline-state.json`, reserving an ID above both issue filenames and existing pipeline reservations. A lock prevents two local initializations from taking the same ID.
+4. Resume an existing state with `status {slug}`. An explicit `init {slug} {ID}` rejects an ID held by another active pipeline; a completed pipeline may be followed by an edition pipeline for that issue.
 
 #### PHASE 1: RESEARCH
 1. Web search: exhaustive scan of all news on the topic + related historical cases
@@ -505,7 +505,7 @@ Draw a man in a suit shown from the chest up in a shrugging pose — arms extend
 2. Write issue to `src/data/issues/{ID}.json`
 3. Update `related[]` on connected issues (bidirectional — edit each connected issue's JSON file)
 4. Set `"published": true` and `"sourceDate"` to today's date; set `publishedAt` and `modifiedAt` to now and pick a `type`; set `src` on the hook and every fact card from the brief's source numbers
-5. Run `node scripts/validate-issues.mjs` — **must exit 0**
+5. Run `node scripts/build-issue-sources.mjs` to generate the source list, then `node scripts/publish-pipeline.mjs validate` — issue structure, committed source references and stealth checks **must exit 0**.
 6. Verify background image exists at expected path
 7. Grep all issue text for stealth banned terms (must find zero)
 8. Present validation report:
@@ -516,24 +516,21 @@ Draw a man in a suit shown from the chest up in a shrugging pose — arms extend
    LEGAL: PASS (all 8 checks clear)
    CONNECTIONS: N bidirectional updates
    ```
-9. **WAIT** for user to say "Publish" or request changes.
+9. Prepare the complete publication bundle listed in Phase 9 for review. For direct deployment from `main`, run `node scripts/publish-pipeline.mjs deploy {ID} --dry-run`; it validates and lists the bundle without changing Git's index, history or remotes. On a feature branch, use `validate` and review the same explicit file list. **WAIT** for user to say "Publish" or request changes.
 
 #### PHASE 9: DEPLOY
 After user says "Publish":
-1. `git pull --rebase origin main` — handle parallel worker changes
-2. If rebase conflict in a related issue's JSON (because multiple workers added connections): resolve by merging the `related` arrays, re-run validation. New issue JSONs rarely conflict because each is its own file.
-3. If conflict in other files: alert user
-4. Stage all files:
-   - `src/data/issues/{ID}.json` (new)
-   - `src/data/issues/{related-ID}.json` for each bidirectional connection update
-   - `public/og/backgrounds/issue-{ID}-bg.png` (new)
-   - `engine/briefs/{slug}.md` (new)
-   - `engine/output/{slug}-stage*.json` (7 files)
-   - `engine/output/{slug}-reader.json` (new)
-   - `engine/prompts-generated/{slug}-stage*-browser.txt` (4 files)
-5. Commit: `"Publish: issue {ID} — {headline truncated to 50 chars}"`
-6. `git push origin main`
-7. Report to user:
+1. **Recommended: publish through a feature-branch PR.** Stage the explicit publication bundle below, commit it, fetch and rebase onto `origin/main`, then rerun validation. Push the feature branch and open a PR; merge after the FORA CI checks pass. The direct deployment helper is for `main` only.
+2. The complete publication bundle is:
+   - `src/data/issues/{ID}.json` and accepted bidirectional edits in `src/data/issues/{related-ID}.json`
+   - `src/data/sources/{ID}.json`, generated from the brief
+   - Source background `public/og/backgrounds/issue-{ID}-bg.png` or `.jpg`, excluding generated variants
+   - `engine/briefs/{slug}.md`
+   - `engine/output/{slug}-stage1.json`, `-stage2.json`, `-stage3.json`, `-stage6-synthesis.json`, `-reader.json` and `-pipeline-state.json`
+   - Stage 2/3 browser prompts in `engine/prompts-generated/`; include Stage 4/5 prompts and review JSONs when present
+3. **Direct alternative on `main`:** commit or set aside unrelated tracked/staged changes, review `node scripts/publish-pipeline.mjs deploy {ID} --dry-run`, then run `node scripts/publish-pipeline.mjs deploy {ID}`. The helper selects the single active pipeline for the issue, or the latest completed pipeline when none is active. It checks the required evidence, validates issue/source references and stealth, stages only its bundle, commits, pulls with rebase, validates again, then pushes `main`. It does not sweep unrelated files into the commit.
+4. If rebase conflicts only add accepted connections to a related issue, merge the `related` arrays and rerun validation. For other conflicts, alert the user. A failed rebase or validation must be resolved before pushing.
+5. Report to user after push or PR merge:
    - "Pushed to main. GitHub Actions will build and deploy."
    - "Live URL: https://thefourthangle.pages.dev/issue/{ID}"
    - "Notifications fire on next CRON schedule (Tue/Thu 8am, Sat 9am MYT)"

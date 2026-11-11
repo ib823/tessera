@@ -11,6 +11,8 @@ from radar.streams.polarization import (
     bimodality_coefficient,
 )
 
+pytestmark = pytest.mark.usefixtures("march_stream_clock")
+
 
 class TestSentiment:
     def test_positive_english(self):

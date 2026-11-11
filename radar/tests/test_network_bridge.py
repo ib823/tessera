@@ -7,6 +7,8 @@ import pytest
 
 from radar.streams.network_bridge import NetworkBridgeMonitor
 
+pytestmark = pytest.mark.usefixtures("march_stream_clock")
+
 
 class TestNetworkBridge:
     def _make_config(self):

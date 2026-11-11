@@ -21,7 +21,11 @@ node scripts/publish-pipeline.mjs init {slug}
 ```
 
 Creates `engine/output/{slug}-pipeline-state.json` and reserves the next issue
-ID. If state already exists, resume instead.
+ID above both existing issue filenames and pipeline reservations. A lock
+serializes reservations in this checkout. If state already exists, resume
+instead. `init {slug} {ID}` accepts an explicit four-digit ID, rejecting one
+held by another active pipeline; a completed pipeline may be followed by an
+edition pipeline for the same issue.
 
 ---
 
@@ -245,35 +249,74 @@ automatically on next `npm run build`.
 ## Phase 8 — Validate
 **Driver:** Claude.
 
+Prepare the local publication candidate with `"published": true`, its source
+date and publication timestamps. Generate its source list from the brief before
+checking the exact files readers will receive. For an update, preserve the
+original `publishedAt` and record the new edition and `modifiedAt`.
+
 ```
+node scripts/build-issue-sources.mjs
 node scripts/publish-pipeline.mjs validate
 ```
 
-Wraps `validate-issues.mjs` (structural + duplicate-ID + length-budget) and
-runs a stealth grep across all issue files for banned terms. Exits non-zero
-if anything fails — do NOT proceed to deploy.
+Wraps `validate-issues.mjs` (structural + duplicate-ID + length-budget), checks
+committed source lists and card references with `build-issue-sources.mjs --check`,
+and scans issue files for banned terms. Exits non-zero if anything fails; do
+not proceed to deploy.
 
 The validator accepts 4-stage (pa/ba/fc/sr) issues as required and still
 parses legacy 6-stage issues (af/ct remain optional).
+
+Present the candidate, validation report and explicit publication bundle from
+Phase 9. On `main`, `deploy <ID> --dry-run` validates and lists that bundle
+without staging, committing, rebasing or pushing. On a feature branch, use
+`validate` and review the explicit file list. **Wait for the user to say
+"Publish" or request changes.** This is the final publication approval;
+preparing a local candidate does not publish it.
 
 ---
 
 ## Phase 9 — Deploy
 **Driver:** Claude.
 
-Flip the new issue's `"published": true` + set `"sourceDate"` to today.
+Proceed after the final publication approval in Phase 8.
+
+**Recommended: feature-branch PR.** Stage the complete publication bundle
+below, commit before fetching and rebasing onto `origin/main`, then rerun
+validation. Push the feature branch and open a PR. Merge after the FORA CI
+checks pass. The direct helper does not deploy feature branches.
+
+The complete bundle contains:
+
+- Issue JSON and accepted bidirectional changes in related issue JSONs.
+- Generated `src/data/sources/{ID}.json` and source background
+  `public/og/backgrounds/issue-{ID}-bg.png` or `.jpg`.
+- `engine/briefs/{slug}.md`.
+- `engine/output/{slug}-stage1.json`, `-stage2.json`, `-stage3.json`,
+  `-stage6-synthesis.json`, `-reader.json` and `-pipeline-state.json`.
+- Stage 2/3 browser prompts; Stage 4/5 prompts and review JSONs when present.
+
+**Direct alternative on `main`:** commit or set aside unrelated tracked or
+staged changes, review the dry run, then deploy:
 
 ```
+node scripts/publish-pipeline.mjs deploy <ID> --dry-run
 node scripts/publish-pipeline.mjs deploy <ID>
 ```
 
-Runs `git pull --rebase origin main` first (Path A — handles parallel workers),
-then stages the issue JSON + its bidirectional related updates + the background
-image, commits with `"Publish: issue {ID} — {headline}"`, pushes.
+The helper selects the single active pipeline for the issue, or the latest
+completed pipeline when none is active. It checks the required evidence,
+validates, stages only the explicit bundle and commits
+with `"Publish: issue {ID} — {headline}"`. It then pulls with rebase, validates
+again and pushes `main`. Generated image variants and unrelated drafts are
+excluded. A missing review, unrelated tracked/staged changes, failed
+validation or a rebase conflict stops deployment before the push. Resolve
+conflicts and rerun validation before continuing.
 
-GitHub Actions picks it up and runs `npm run build` (which calls
-`generate-og-images.mjs`, `build-fact-graph.mjs`, `validate-issues.mjs`, and
-post-build `stealth.mjs` PNG-metadata stripping) then `wrangler pages deploy`.
+GitHub Actions prepares the FORA app from canonical content and the `revamp/`
+overlay, runs type/lint/unit checks, builds and signs it, checks signatures
+and budgets, and runs browser and responsive tests before deploying the
+tested output with `wrangler pages deploy`. Hosted checks verify the result.
 
 The CRON worker at `workers/notify/` picks up the new published issue on the
 next scheduled push (Tue/Thu 8am MYT, Sat 9am MYT).

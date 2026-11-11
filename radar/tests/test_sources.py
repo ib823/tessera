@@ -52,7 +52,7 @@ class TestBaseConnector:
     def test_health_check_initial(self):
         c = DummyConnector()
         health = c.health_check()
-        assert health["status"] == "healthy"
+        assert health["status"] == "unknown"
         assert health["error_count"] == 0
 
     def test_safe_fetch_success(self):
@@ -67,6 +67,13 @@ class TestBaseConnector:
         result = c.safe_fetch()
         assert result == []
         assert c.error_count == 3  # 3 retries
+        assert c.health_check()["status"] == "failed"
+
+    def test_empty_success_is_not_a_failure(self):
+        c = DummyConnector()
+        assert c.safe_fetch() == []
+        assert c.health_check()["status"] == "healthy_empty"
+        assert c.health_check()["batches"]["succeeded"] == 1
 
 
 # --- Twitter Connector ---
@@ -126,6 +133,20 @@ MOCK_RSS = """<?xml version="1.0" encoding="UTF-8"?>
 
 
 class TestNewsRSSConnector:
+    def test_partial_feed_failure_is_visible(self):
+        import feedparser as fp
+        connector = NewsRSSConnector({"feeds": [
+            {"name": "Good", "url": "https://example.com/good"},
+            {"name": "Broken", "url": "https://example.com/broken"},
+        ]})
+        with patch("radar.sources.news_rss_connector.feedparser.parse",
+                   side_effect=[fp.parse(MOCK_RSS), fp.parse("not an RSS feed")]):
+            assert len(connector.safe_fetch()) == 2
+        health = connector.health_check()
+        assert health["status"] == "degraded"
+        assert health["batches"] == {"attempted": 2, "succeeded": 1, "failed": 1, "rate_limited": 0}
+        assert health["batch_results"][1]["label"] == "Broken"
+
     def test_fetch_parses_entries(self):
         import feedparser as fp
         config = {
@@ -168,6 +189,43 @@ class TestNewsRSSConnector:
 
 
 class TestGDELTConnector:
+    def test_rate_limit_does_not_become_healthy(self):
+        connector = GDELTConnector({"country_filter": "MY"})
+        response = MagicMock(status_code=429)
+        with patch("requests.get", return_value=response):
+            assert connector.safe_fetch() == []
+        health = connector.health_check()
+        assert health["status"] == "rate_limited"
+        assert health["error_rate"] == 1
+        assert health["batches"]["rate_limited"] == 1
+
+        # A later legitimate empty response recovers health; old errors remain
+        # in the lifetime counters, not in the current cycle's status.
+        with patch("requests.get", return_value=self._make_mock_response({"articles": []})):
+            assert connector.safe_fetch() == []
+        assert connector.health_check()["status"] == "healthy_empty"
+        assert connector.health_check()["batches"]["failed"] == 0
+
+    @pytest.mark.parametrize("payload", ["query too long", '{"error":"bad query"}'])
+    def test_rejected_query_is_failed(self, payload):
+        connector = GDELTConnector({"country_filter": "MY"})
+        response = MagicMock(status_code=200, text=payload)
+        response.json.return_value = {"error": "bad query"}
+        with patch("requests.get", return_value=response):
+            assert connector.safe_fetch() == []
+        assert connector.health_check()["status"] == "failed"
+
+    def test_partially_rate_limited_scan_keeps_successful_events(self):
+        connector = GDELTConnector({"domestic": {"enabled": True}, "malaysia_interest": {
+            "enabled": True, "themes": ["TRADE"], "keywords": ["Malaysia"]}})
+        good = self._make_mock_response({"articles": [{"title": "Trade", "seendate": "20260324T100000Z"}]})
+        with patch("requests.get", side_effect=[good, MagicMock(status_code=429)]), patch("time.sleep"):
+            assert len(connector.safe_fetch()) == 1
+        health = connector.health_check()
+        assert health["status"] == "degraded"
+        assert health["events_fetched"] == 1
+        assert health["batches"]["succeeded"] == health["batches"]["failed"] == 1
+
     def _make_mock_response(self, json_data):
         """Create a mock response that passes the text/status checks."""
         import json
@@ -271,3 +329,12 @@ class TestSourceAggregator:
         }
         agg = SourceAggregator(config)
         assert len(agg.connectors) == 0
+        assert all(source["status"] == "disabled" for source in agg.health())
+
+    def test_missing_twitter_token_is_visible(self):
+        with patch.dict("os.environ", {"TWITTER_BEARER_TOKEN": ""}):
+            agg = SourceAggregator({"sources": {"twitter": {"enabled": True},
+                "parliament": {"enabled": False}, "court": {"enabled": False}}})
+        twitter = next(source for source in agg.health() if source["name"] == "twitter")
+        assert twitter["status"] == "unavailable"
+        assert twitter["reason"] == "missing_credential"

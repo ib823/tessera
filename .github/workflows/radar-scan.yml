@@ -1,6 +1,12 @@
 name: T4A Radar Scan
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'radar/**'
+      - '!radar/output/**'
+      - '.github/workflows/radar-scan.yml'
   schedule:
     # Every 2 hours
     - cron: '0 */2 * * *'
@@ -9,6 +15,10 @@ on:
 
 permissions:
   contents: write  # Needed to commit state back to repo
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   scan:
@@ -29,44 +39,27 @@ jobs:
           cache-dependency-path: 'radar/requirements.txt'
 
       - name: Install dependencies
-        run: pip install -r radar/requirements.txt
+        run: pip install -r radar/requirements.txt pytest
+
+      - name: Test Radar
+        run: python -m pytest radar/tests/ -q --disable-warnings
 
       - name: Run radar scan
         env:
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
           PYTHONUNBUFFERED: '1'
         run: |
+          set -euo pipefail
           mkdir -p radar/output/logs
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > "$RUNNER_TEMP/radar-scan-started-at"
           python radar/run-radar.py --once 2>&1 | tee radar/output/logs/last-cycle.log
 
       - name: Check scan health
         if: always()
-        run: |
-          python3 -c "
-          import json, sys
-          try:
-              with open('radar/output/health.json') as f:
-                  health = json.load(f)
-              sources = health.get('sources', {})
-              failed = [s for s, v in sources.items() if v.get('status') == 'failed']
-              if failed:
-                  print(f'WARNING: Failed sources: {failed}')
-              print(f'Sources: {len(sources)} configured, {len(sources) - len(failed)} healthy')
-          except FileNotFoundError:
-              print('No health.json yet — first run')
-          try:
-              with open('radar/output/issue-queue.json') as f:
-                  issues = json.load(f)
-              print(f'Issues: {len(issues)} tracked')
-              if issues:
-                  top = issues[0]
-                  print(f'Top: {top.get(\"title\",\"?\")} (score={top.get(\"controversy_score\",0):.3f})')
-          except FileNotFoundError:
-              print('No issue-queue.json yet')
-          "
+        run: python radar/scripts/check-health.py --started-at-file "$RUNNER_TEMP/radar-scan-started-at"
 
       - name: Refresh X posting inventory
-        if: always()
+        if: success()
         run: |
           # Regenerates social/x-inventory.{json,md} from published issues +
           # fresh radar signals. Preserves POSTED status. Plain Node, no deps.
@@ -92,4 +85,4 @@ jobs:
 
           # Only commit if there are changes
           git diff --staged --quiet || git commit -m "radar: scan $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push || echo "Push failed — will retry next cycle"
+          git push

@@ -134,18 +134,25 @@ class GDELTConnector(BaseConnector):
             resp = requests.get(self.api_url, params=params, timeout=15)
             if resp.status_code == 429:
                 self.log.warning(f"GDELT rate limited ({scope}) — skipping this batch")
+                self.record_batch(scope, "rate_limited", reason="http_429")
                 return []
             resp.raise_for_status()
             text = resp.text.strip()
             if not text or text[0] != '{':
                 self.log.warning(f"GDELT {scope} non-JSON: {text[:100]}")
+                self.record_batch(scope, "failed", reason="non_json_response")
                 return []
             data = resp.json()
+            if not isinstance(data, dict) or not isinstance(data.get("articles"), list):
+                self.record_batch(scope, "failed", reason="invalid_articles_response")
+                return []
         except requests.RequestException as e:
             self.log.warning(f"GDELT {scope} request failed: {e}")
+            self.record_batch(scope, "failed", reason=type(e).__name__)
             return []
         except ValueError as e:
             self.log.warning(f"GDELT {scope} invalid JSON: {e}")
+            self.record_batch(scope, "failed", reason="invalid_json")
             return []
 
         articles = data.get("articles", []) or []
@@ -184,6 +191,7 @@ class GDELTConnector(BaseConnector):
                 source_country=art.get("sourcecountry", ""),
             ))
 
+        self.record_batch(scope, "healthy" if events else "healthy_empty", len(events))
         return events
 
 

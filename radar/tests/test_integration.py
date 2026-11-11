@@ -12,6 +12,8 @@ from radar.streams.narrative_frag import NarrativeFragmentationMonitor
 from radar.streams.network_bridge import NetworkBridgeMonitor
 from radar.fusion.bayesian_fusion import BayesianFusion
 
+pytestmark = pytest.mark.usefixtures("march_stream_clock")
+
 
 def _make_streams_config():
     return {

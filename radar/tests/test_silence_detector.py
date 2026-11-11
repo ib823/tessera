@@ -181,11 +181,11 @@ class TestSilenceDetector:
         assert result["suppression_pattern"] == "HIDDEN_STORY"
         assert result["alert_level"] == "critical"
 
-    def test_watchlist_from_calendar(self):
+    def test_watchlist_from_calendar(self, march_stream_clock):
         sd = SilenceDetector(self._make_config())
         calendar = {
             "parliamentary_sessions_2026": {
-                "first_session": {"start": "2026-03-09", "end": "2026-04-16"},
+                "first_session": {"start": "2026-03-22", "end": "2026-04-16"},
             },
             "budget_presentation": "2026-10-23",
             "historical_sensitivity_dates": {},

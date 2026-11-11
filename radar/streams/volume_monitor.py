@@ -9,12 +9,16 @@ Detects controversy spikes using:
 Reference: framework §2.4 (Change-Point Detection)
 """
 
+import ast
+import hashlib
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from typing import Any
 
 import numpy as np
 from loguru import logger
+
+from radar.keywords import keyword_pattern
 
 
 class CUSUMDetector:
@@ -287,6 +291,13 @@ class VolumeMonitor:
         self.daily_period = stl_cfg.get("daily_period", 96)
         self.weekly_period = stl_cfg.get("weekly_period", 672)
         self.baseline_days = config.get("baseline_window_days", 7)
+        self.keywords = tuple(dict.fromkeys(
+            str(kw).lower() for kw in config.get("keywords", []) if str(kw).strip()
+        ))
+        self._keyword_patterns = [(kw, keyword_pattern(kw)) for kw in self.keywords]
+        self.retention_days = config.get("retention_days", max(self.baseline_days, 7))
+        self.max_seen_events = max(1, config.get("max_seen_events", 20_000))
+        self.max_keys = max(1, config.get("max_keys", 2_000))
 
         # Per-key state: key = (keyword, platform, language)
         self._cusum: dict[tuple, CUSUMDetector] = defaultdict(
@@ -299,45 +310,73 @@ class VolumeMonitor:
             lambda: STLDeseasonalizer(self.daily_period, self.weekly_period)
         )
 
-        # Current bucket counts
-        self._current_bucket: dict[tuple, int] = defaultdict(int)
-        self._bucket_start: datetime | None = None
+        # Event-time buckets and a watermark survive scheduled --once runs.
+        # The watermark is the first bucket not yet processed.
+        self._pending: dict[datetime, dict[tuple, int]] = {}
+        self._next_bucket: datetime | None = None
+        self._first_bucket: dict[tuple, datetime] = {}
+        self._last_seen: dict[tuple, datetime] = {}
+        self._seen_events: dict[str, datetime] = {}
 
         # Active alerts
         self._active_alerts: list[dict] = []
 
-    def process(self, events: list[dict[str, Any]]):
-        """Process a batch of events, bucketing and running detectors."""
-        now = datetime.now(timezone.utc)
+    @staticmethod
+    def _utc(value) -> datetime | None:
+        try:
+            parsed = value if isinstance(value, datetime) else datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+            return parsed.replace(tzinfo=timezone.utc) if parsed.tzinfo is None else parsed.astimezone(timezone.utc)
+        except (ValueError, TypeError, OverflowError):
+            return None
 
-        # Initialize bucket if needed
-        if self._bucket_start is None:
-            self._bucket_start = now
+    def _bucket(self, timestamp: datetime) -> datetime:
+        seconds = self.bucket_minutes * 60
+        return datetime.fromtimestamp(int(timestamp.timestamp() // seconds) * seconds, timezone.utc)
 
-        # Count events per key
+    def process(self, events: list[dict[str, Any]], now: datetime | None = None):
+        """Count new documents by event time and process completed buckets.
+
+        Already-closed buckets are immutable: delayed/replayed documents cannot
+        be counted as a fresh spike in a later scheduled scan.
+        """
+        now = self._utc(now or datetime.now(timezone.utc))
+        cutoff = now - timedelta(days=self.retention_days)
         for event in events:
-            text = event.get("text", "")
+            ts = self._utc(event.get("timestamp"))
+            if ts is None or ts < cutoff or ts > now:
+                continue
+            bucket = self._bucket(ts)
+            if self._next_bucket is not None and bucket < self._next_bucket:
+                continue
+            text = str(event.get("text", ""))
+            url = (event.get("metadata") or {}).get("url")
+            identity = str(url) if url else f"{event.get('platform', '')}|{text}|{ts.isoformat()}"
+            fingerprint = hashlib.sha256(identity.encode()).hexdigest()
+            if fingerprint in self._seen_events:
+                continue
+            self._seen_events[fingerprint] = ts
             lang = event.get("lang", "unknown")
             platform = event.get("platform", "unknown")
-
-            # Match against keywords (simple substring match)
-            # In production, use the config keywords; here we use the text as key
-            keywords = self._extract_keywords(text)
-            for kw in keywords:
+            for kw in self._extract_keywords(text):
                 key = (kw, platform, lang)
-                self._current_bucket[key] += 1
-
-        # Check if bucket period has elapsed
-        elapsed = (now - self._bucket_start).total_seconds()
-        if elapsed >= self.bucket_minutes * 60:
-            self._flush_bucket(now)
+                if key not in self._first_bucket and len(self._first_bucket) >= self.max_keys:
+                    continue
+                self._first_bucket[key] = min(bucket, self._first_bucket.get(key, bucket))
+                self._last_seen[key] = max(bucket, self._last_seen.get(key, bucket))
+                counts = self._pending.setdefault(bucket, {})
+                counts[key] = counts.get(key, 0) + 1
+        self._seen_events = dict(sorted(
+            ((key, ts) for key, ts in self._seen_events.items() if ts >= cutoff),
+            key=lambda item: item[1],
+        )[-self.max_seen_events:])
+        self.flush_completed(now)
 
     def _extract_keywords(self, text: str) -> list[str]:
-        """Extract matching keywords from text. Simple word presence check."""
-        # For MVP: use the text itself as a single "topic"
-        # In production: match against config keyword lists
+        """Use configured topics, with the legacy fallback for standalone callers."""
+        if self._keyword_patterns:
+            text = text.lower()
+            return [kw for kw, pattern in self._keyword_patterns if pattern.search(text)]
         words = text.lower().split()
-        # Return first 3 significant words as topic proxy
         stop = {"the", "a", "an", "is", "was", "are", "in", "on", "at", "to", "for",
                 "of", "and", "or", "but", "yang", "dan", "ini", "itu", "di", "ke"}
         significant = [w for w in words if len(w) > 3 and w not in stop]
@@ -398,36 +437,81 @@ class VolumeMonitor:
             }
             self._active_alerts.append(alert)
 
-    def _flush_bucket(self, now: datetime):
-        """Process accumulated bucket counts through detectors."""
-        for key, count in self._current_bucket.items():
-            self.process_count(key, float(count), now)
+    def flush_completed(self, now: datetime | None = None):
+        """Flush closed event-time buckets, including zero counts between scans."""
+        now = self._utc(now or datetime.now(timezone.utc))
+        completed_end = self._bucket(now)
+        cutoff = completed_end - timedelta(days=self.retention_days)
+        expired = {key for key, ts in self._last_seen.items() if ts < cutoff}
+        for key in expired:
+            for states in (self._first_bucket, self._last_seen, self._stl, self._cusum, self._bocpd):
+                states.pop(key, None)
+        self._pending = {ts: {key: count for key, count in counts.items() if key not in expired}
+                         for ts, counts in self._pending.items() if ts >= cutoff}
+        self._seen_events = {key: ts for key, ts in self._seen_events.items() if ts >= cutoff}
+        if self._next_bucket is None:
+            self._next_bucket = min(self._pending, default=completed_end)
+        cursor = max(self._next_bucket, cutoff)
+        step = timedelta(minutes=self.bucket_minutes)
+        while cursor < completed_end:
+            counts = self._pending.pop(cursor, {})
+            for key, first in self._first_bucket.items():
+                if first <= cursor:
+                    self.process_count(key, float(counts.get(key, 0)), cursor + step)
+            cursor += step
+        self._next_bucket = max(cursor, self._next_bucket)
+        self.get_active_alerts(now)
 
-        self._current_bucket.clear()
-        self._bucket_start = now
-
-    def get_active_alerts(self) -> list[dict]:
+    def get_active_alerts(self, now: datetime | None = None) -> list[dict]:
         """Return all active alerts sorted by severity descending."""
         # Keep only alerts from last 24 hours
-        cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+        cutoff = self._utc(now or datetime.now(timezone.utc)) - timedelta(hours=24)
         self._active_alerts = [
             a for a in self._active_alerts
-            if a.get("timestamp", "") >= cutoff.isoformat()
+            if (self._utc(a.get("timestamp")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
         ]
         return sorted(self._active_alerts, key=lambda a: a.get("severity", 0), reverse=True)
 
     def get_state(self) -> dict:
         """Serialize state for persistence."""
         return {
+            "version": 2,
             "cusum": {str(k): v.get_state() for k, v in self._cusum.items()},
             "bocpd": {str(k): v.get_state() for k, v in self._bocpd.items()},
+            "stl": {str(k): list(v._history) for k, v in self._stl.items()},
+            "next_bucket": self._next_bucket.isoformat() if self._next_bucket else None,
+            "pending": {ts.isoformat(): {str(k): count for k, count in counts.items()}
+                        for ts, counts in self._pending.items()},
+            "first_bucket": {str(k): ts.isoformat() for k, ts in self._first_bucket.items()},
+            "last_seen": {str(k): ts.isoformat() for k, ts in self._last_seen.items()},
+            "seen_events": {key: ts.isoformat() for key, ts in self._seen_events.items()},
+            "active_alerts": [dict(alert) for alert in self._active_alerts],
         }
 
     def load_state(self, state: dict):
         """Restore state from persistence."""
         for k_str, v in state.get("cusum", {}).items():
-            key = eval(k_str)  # noqa: S307 — controlled internal data only
+            key = self._state_key(k_str)
             self._cusum[key].load_state(v)
         for k_str, v in state.get("bocpd", {}).items():
-            key = eval(k_str)  # noqa: S307
+            key = self._state_key(k_str)
             self._bocpd[key].load_state(v)
+        for k_str, history in state.get("stl", {}).items():
+            stl = self._stl[self._state_key(k_str)]
+            stl._history = list(history)[-stl._max_history:]
+        self._next_bucket = self._utc(state.get("next_bucket"))
+        self._pending = {self._utc(ts): {self._state_key(k): int(count) for k, count in counts.items()}
+                         for ts, counts in state.get("pending", {}).items() if self._utc(ts) is not None}
+        for attribute in ("first_bucket", "last_seen"):
+            setattr(self, "_" + attribute, {self._state_key(k): self._utc(ts)
+                    for k, ts in state.get(attribute, {}).items() if self._utc(ts) is not None})
+        self._seen_events = {key: self._utc(ts) for key, ts in state.get("seen_events", {}).items()
+                             if self._utc(ts) is not None}
+        self._active_alerts = list(state.get("active_alerts", []))
+
+    @staticmethod
+    def _state_key(value: str) -> tuple:
+        key = ast.literal_eval(value)
+        if not isinstance(key, tuple) or len(key) != 3 or not all(isinstance(part, str) for part in key):
+            raise ValueError("Invalid volume state key")
+        return key

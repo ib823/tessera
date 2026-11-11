@@ -166,7 +166,7 @@ class TestVolumeMonitor:
             "bucket_minutes": 15,
         }
 
-    def test_detects_spike_in_counts(self):
+    def test_detects_spike_in_counts(self, march_stream_clock):
         """VolumeMonitor should detect a clear spike in mention counts."""
         vm = VolumeMonitor(self._make_config())
         key = ("corruption", "twitter", "english")
@@ -182,6 +182,7 @@ class TestVolumeMonitor:
             t = now + timedelta(minutes=15 * (100 + i))
             vm.process_count(key, 50.0, t)
 
+        march_stream_clock.current = t
         alerts = vm.get_active_alerts()
         assert len(alerts) >= 1, "Should detect the volume spike"
         assert alerts[0]["keyword"] == "corruption"

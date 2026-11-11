@@ -13,6 +13,16 @@ from typing import Any
 from loguru import logger
 
 
+def _utc_timestamp(value):
+    try:
+        stamp = value if isinstance(value, datetime) else datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if stamp.tzinfo is None:
+            stamp = stamp.replace(tzinfo=timezone.utc)
+        return stamp.astimezone(timezone.utc)
+    except (AttributeError, TypeError, ValueError):
+        return None
+
+
 # Political keywords for bias dimension mapping
 POLITICAL_KEYWORDS = {"kerajaan", "government", "parlimen", "parliament", "election",
                       "pilihanraya", "menteri", "minister", "opposition", "pembangkang",
@@ -34,6 +44,7 @@ class TopicState:
         self.beta = prior_beta
         self.created_at = datetime.now(timezone.utc)
         self.last_updated = self.created_at
+        self.last_decay_at = self.created_at
         self.stream_signals: dict[str, dict] = {}
         self._issue_counter = 0
 
@@ -49,11 +60,11 @@ class TopicState:
         # Map to [0, 1]: more evidence = higher confidence
         return min(1.0, max(0.0, total_evidence / 20.0))
 
-    def update(self, positive_evidence: float, negative_evidence: float):
+    def update(self, positive_evidence: float, negative_evidence: float, timestamp=None):
         """Update Beta posterior with weighted evidence."""
         self.alpha += positive_evidence
         self.beta += negative_evidence
-        self.last_updated = datetime.now(timezone.utc)
+        self.last_updated = max(self.last_updated, timestamp or datetime.now(timezone.utc))
 
     def decay(self, hours_since_update: float, decay_rate: float = 0.95):
         """Decay posterior toward prior when no new evidence arrives."""
@@ -71,6 +82,7 @@ class TopicState:
             "beta": self.beta,
             "created_at": self.created_at.isoformat(),
             "last_updated": self.last_updated.isoformat(),
+            "last_decay_at": self.last_decay_at.isoformat(),
             "stream_signals": self.stream_signals,
         }
 
@@ -78,16 +90,9 @@ class TopicState:
     def from_dict(cls, topic_id: str, data: dict) -> "TopicState":
         ts = cls(topic_id, data.get("alpha", 1.0), data.get("beta", 9.0))
         ts.stream_signals = data.get("stream_signals", {})
-        if "created_at" in data:
-            try:
-                ts.created_at = datetime.fromisoformat(data["created_at"])
-            except (ValueError, TypeError):
-                pass
-        if "last_updated" in data:
-            try:
-                ts.last_updated = datetime.fromisoformat(data["last_updated"])
-            except (ValueError, TypeError):
-                pass
+        ts.created_at = _utc_timestamp(data.get("created_at")) or ts.created_at
+        ts.last_updated = _utc_timestamp(data.get("last_updated")) or ts.last_updated
+        ts.last_decay_at = _utc_timestamp(data.get("last_decay_at")) or ts.last_updated
         return ts
 
 
@@ -102,6 +107,7 @@ class BayesianFusion:
         self.prior_beta = config.get("prior_beta", 9)
         self.decay_rate = config.get("decay_rate_per_hour", 0.95)
         self.archive_threshold = config.get("archive_threshold", 0.05)
+        self.max_topic_age_days = config.get("max_topic_age_days", 7)
 
         self.stream_weights = config.get("stream_weights", {
             "volume_monitor": 0.15,
@@ -142,14 +148,31 @@ class BayesianFusion:
             stream_name: one of the 5 stream names
             evidence: stream-specific output dict
         """
+        stamp = _utc_timestamp(evidence.get("last_evidence_at") or evidence.get("timestamp"))
+        topic_is_new = topic_id not in self._topics
         topic = self._get_or_create_topic(topic_id)
+        previous = topic.stream_signals.get(stream_name, {})
+        previous_stamp = _utc_timestamp(previous.get("last_evidence_at") or previous.get("timestamp"))
+        if stamp is not None and previous_stamp is not None and stamp <= previous_stamp:
+            return
+        stamp = stamp or datetime.now(timezone.utc)
+        if topic_is_new:
+            topic.created_at = topic.last_updated = topic.last_decay_at = stamp
+        elif stamp > topic.last_decay_at:
+            hours = (stamp - topic.last_decay_at).total_seconds() / 3600
+            topic.decay(hours, self.decay_rate)
+            topic.last_decay_at = stamp
         weight = self.stream_weights.get(stream_name, 0.1)
 
         # Convert stream evidence to positive/negative signals
         pos, neg = self._convert_evidence(stream_name, evidence)
 
-        topic.update(pos * weight, neg * weight)
-        topic.stream_signals[stream_name] = evidence
+        # Late-arriving evidence contributes at its age, while the clock for
+        # the posterior never moves backwards or refreshes last observation.
+        age_hours = max(0, (topic.last_decay_at - stamp).total_seconds() / 3600)
+        age_weight = self.decay_rate ** age_hours
+        topic.update(pos * weight * age_weight, neg * weight * age_weight, stamp)
+        topic.stream_signals[stream_name] = dict(evidence)
 
     def _convert_evidence(self, stream_name: str, evidence: dict) -> tuple[float, float]:
         """Convert stream output to (positive, negative) evidence."""
@@ -215,11 +238,13 @@ class BayesianFusion:
         to_archive = []
 
         for topic_id, topic in self._topics.items():
-            hours = (now - topic.last_updated).total_seconds() / 3600
+            hours = (now - topic.last_decay_at).total_seconds() / 3600
             if hours > 0:
                 topic.decay(hours, self.decay_rate)
+                topic.last_decay_at = now
 
-            if topic.controversy_score < self.archive_threshold:
+            if (topic.controversy_score < self.archive_threshold
+                    or now - topic.last_updated > timedelta(days=self.max_topic_age_days)):
                 to_archive.append(topic_id)
 
         for topic_id in to_archive:

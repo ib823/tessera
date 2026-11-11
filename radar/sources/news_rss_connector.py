@@ -33,12 +33,20 @@ class NewsRSSConnector(BaseConnector):
                 parsed = feedparser.parse(url)
             except Exception as e:
                 self.log.warning(f"Failed to parse feed {name}: {e}")
+                self.record_batch(name, "failed", reason=type(e).__name__)
                 continue
 
+            http_status = parsed.get("status", 200)
+            if http_status >= 400:
+                self.record_batch(name, "rate_limited" if http_status == 429 else "failed",
+                                  reason=f"http_{http_status}")
+                continue
             if parsed.bozo and not parsed.entries:
                 self.log.warning(f"Feed {name} returned no entries (bozo={parsed.bozo})")
+                self.record_batch(name, "failed", reason="unparseable_feed")
                 continue
 
+            before = len(events)
             for entry in parsed.entries:
                 link = entry.get("link", "")
                 if link in self._seen_urls:
@@ -70,6 +78,8 @@ class NewsRSSConnector(BaseConnector):
                     title=title,
                     region=region,
                 ))
+            fetched = len(events) - before
+            self.record_batch(name, "healthy" if fetched else "healthy_empty", fetched)
 
         # Prune dedup set if too large
         if len(self._seen_urls) > self._max_seen:

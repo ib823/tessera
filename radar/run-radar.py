@@ -38,6 +38,26 @@ MODELS_DIR = OUTPUT_DIR / "models"
 FOREIGN_EVENTS_WINDOW_HOURS = 24
 
 
+def _utc_timestamp(value):
+    """Parse persisted/source timestamps as instants, accepting ISO offsets."""
+    try:
+        stamp = value if isinstance(value, datetime) else datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if stamp.tzinfo is None:
+            stamp = stamp.replace(tzinfo=timezone.utc)
+        return stamp.astimezone(timezone.utc)
+    except (AttributeError, TypeError, ValueError):
+        return None
+
+
+def _config_keywords(config):
+    return sorted({
+        kw.lower()
+        for category in config.get("keywords", {}).values() if isinstance(category, dict)
+        for words in category.values() if isinstance(words, list)
+        for kw in words if isinstance(kw, str)
+    })
+
+
 def load_config():
     """Load YAML config and calendar."""
     with open(CONFIG_PATH) as f:
@@ -92,7 +112,9 @@ def init_streams(config):
     streams = {}
 
     try:
-        streams["volume_monitor"] = VolumeMonitor(streams_cfg.get("volume_monitor", {}))
+        volume_config = dict(streams_cfg.get("volume_monitor", {}))
+        volume_config["keywords"] = _config_keywords(config)
+        streams["volume_monitor"] = VolumeMonitor(volume_config)
     except Exception as e:
         logger.bind(component="streams").error(f"Volume monitor init failed: {e}")
         streams["volume_monitor"] = None
@@ -171,8 +193,8 @@ ARCHIVE_DIR = OUTPUT_DIR / "archive"
 PRUNE_DAYS = 7
 
 
-def write_issue_queue(new_issues):
-    """Append new issues to queue, prune entries older than 7 days."""
+def write_issue_queue(new_issues, now=None):
+    """Store current evidence scores, keeping historical peaks as metadata."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     log = logger.bind(component="output")
 
@@ -190,30 +212,44 @@ def write_issue_queue(new_issues):
     # Merge: update existing issues by title, add new ones.
     # Preserve `first_seen` across cycles so silence-watch can measure
     # how long an underreported item has been accumulating.
-    by_title = {i["title"]: i for i in existing}
+    by_title = {i["title"]: i for i in existing if isinstance(i, dict) and "title" in i}
     new_count = 0
-    cycle_ts = datetime.now(timezone.utc).isoformat()
+    now = now or datetime.now(timezone.utc)
+    cycle_ts = now.isoformat()
     for issue in new_issues:
+        issue = dict(issue)
         title = issue.get("title", "")
+        if not title:
+            continue
+        evidence_at = _utc_timestamp(issue.get("last_evidence_at") or issue.get("timestamp"))
+        if evidence_at is None or evidence_at > now:
+            continue
+        issue["timestamp"] = evidence_at.isoformat()
+        issue["last_evidence_at"] = evidence_at.isoformat()
         if title in by_title:
             old = by_title[title]
             first_seen = old.get("first_seen") or old.get("timestamp") or cycle_ts
-            if issue.get("controversy_score", 0) >= old.get("controversy_score", 0):
-                issue["first_seen"] = first_seen
-                by_title[title] = issue
-            else:
-                old["first_seen"] = first_seen
+            old_peak = old.get("peak_controversy_score", old.get("controversy_score", 0))
+            new_score = issue.get("controversy_score", 0)
+            issue["first_seen"] = first_seen
+            issue["peak_controversy_score"] = max(old_peak, new_score)
+            issue["peak_at"] = (evidence_at.isoformat() if new_score > old_peak
+                                else old.get("peak_at", old.get("timestamp")))
+            by_title[title] = issue
         else:
             issue["first_seen"] = issue.get("timestamp") or cycle_ts
+            issue["peak_controversy_score"] = issue.get("controversy_score", 0)
+            issue["peak_at"] = evidence_at.isoformat()
             by_title[title] = issue
             new_count += 1
 
     # Prune issues older than PRUNE_DAYS
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=PRUNE_DAYS)).isoformat()
+    cutoff = now - timedelta(days=PRUNE_DAYS)
     before_prune = len(by_title)
     by_title = {
         t: i for t, i in by_title.items()
-        if i.get("timestamp", "") >= cutoff or i.get("controversy_score", 0) > 0.3
+        if (stamp := _utc_timestamp(i.get("last_evidence_at") or i.get("timestamp"))) is not None
+        and cutoff <= stamp <= now
     }
     pruned = before_prune - len(by_title)
 
@@ -255,7 +291,7 @@ def _is_foreign_event(event: dict) -> bool:
     return False
 
 
-def persist_foreign_events(events):
+def persist_foreign_events(events, now=None):
     """Append foreign events to a rolling 24-hour file for the impact pass.
 
     Deduplicates by URL where present; falls back to text+timestamp otherwise.
@@ -274,18 +310,25 @@ def persist_foreign_events(events):
         except (json.JSONDecodeError, ValueError, OSError):
             existing = []
 
-    seen_keys = set()
-    merged = []
+    by_key = {}
     for ev in existing + [e for e in events if _is_foreign_event(e)]:
+        stamp = _utc_timestamp(ev.get("timestamp"))
+        if stamp is None:
+            continue
         url = (ev.get("metadata") or {}).get("url", "")
         key = url or f"{ev.get('text', '')[:120]}|{ev.get('timestamp', '')}"
-        if key in seen_keys:
-            continue
-        seen_keys.add(key)
-        merged.append(ev)
+        old_stamp = _utc_timestamp(by_key.get(key, {}).get("timestamp"))
+        if old_stamp is None or stamp > old_stamp:
+            by_key[key] = {**ev, "timestamp": stamp.isoformat()}
+    merged = list(by_key.values())
 
-    cutoff = (datetime.now(timezone.utc) - timedelta(hours=FOREIGN_EVENTS_WINDOW_HOURS)).isoformat()
-    pruned = [e for e in merged if e.get("timestamp", "") >= cutoff]
+    now = now or datetime.now(timezone.utc)
+    cutoff = now - timedelta(hours=FOREIGN_EVENTS_WINDOW_HOURS)
+    pruned = []
+    for event in merged:
+        stamp = _utc_timestamp(event.get("timestamp"))
+        if stamp is not None and cutoff <= stamp <= now:
+            pruned.append({**event, "timestamp": stamp.isoformat()})
 
     with open(FOREIGN_EVENTS_PATH, "w") as f:
         json.dump(pruned, f, indent=2, default=str)
@@ -294,7 +337,7 @@ def persist_foreign_events(events):
              f"({len(merged) - len(pruned)} pruned)")
 
 
-def write_health(sources, streams, events_count, issues_count):
+def write_health(sources, streams, events_count, issues_count, stream_health=None):
     """Write health.json for monitoring."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     health = {
@@ -307,23 +350,23 @@ def write_health(sources, streams, events_count, issues_count):
 
     if sources:
         for h in sources.health():
-            health["sources"][h["name"]] = {
-                "status": h.get("status", "unknown"),
-                "last_fetch": h.get("last_fetch"),
-                "error_rate": h.get("error_rate", 0),
-            }
+            health["sources"][h["name"]] = {k: v for k, v in h.items() if k != "name"}
 
     for name, stream in streams.items():
-        health["streams"][name] = "ok" if stream is not None else "disabled"
+        health["streams"][name] = ((stream_health or {}).get(name, "idle")
+                                    if stream is not None else "disabled")
 
     with open(HEALTH_PATH, "w") as f:
         json.dump(health, f, indent=2, default=str)
 
 
-def _process_stream(name, stream, events):
+def _process_stream(name, stream, events, now=None):
     """Process events through a single stream. Used in thread pool."""
     try:
-        stream.process(events)
+        if name == "volume_monitor":
+            stream.process(events, now=now)
+        else:
+            stream.process(events)
         return name, "ok", None
     except Exception as e:
         return name, "error", str(e)
@@ -379,6 +422,17 @@ def run_cycle(sources, streams, fusion, config):
             log.error(f"Source fetch failed: {e}")
     log.info(f"Fetched {len(events)} events")
 
+    # Normalize once at the ingestion boundary. Comparisons and detector
+    # windows must use instants rather than the lexicographic ISO spelling.
+    fetched_at = datetime.now(timezone.utc)
+    normalized = []
+    for event in events:
+        stamp = _utc_timestamp(event.get("timestamp")) or fetched_at
+        if stamp > fetched_at:
+            continue
+        normalized.append({**event, "timestamp": stamp.isoformat()})
+    events = sorted(normalized, key=lambda event: event["timestamp"])
+
     # Step 1a: Persist foreign-channel events for the Malaysia-impact pass.
     # Stored separately because state.json aggregates everything and loses
     # the raw text the impact pass needs to reason about.
@@ -396,14 +450,7 @@ def run_cycle(sources, streams, fusion, config):
                 meta = event.get("metadata", {})
                 event_type = meta.get("event_type", "bill_reading")
                 title = event.get("text", "")[:200]
-                try:
-                    ts_str = event.get("timestamp", "")
-                    if isinstance(ts_str, str):
-                        ts = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
-                    else:
-                        ts = ts_str
-                except (ValueError, TypeError):
-                    ts = now
+                ts = _utc_timestamp(event.get("timestamp")) or cycle_start
                 sd.add_institutional_event(
                     event_type=event_type,
                     title=title,
@@ -416,10 +463,10 @@ def run_cycle(sources, streams, fusion, config):
     active_streams = {k: v for k, v in streams.items() if v is not None}
     stream_health = {}
 
-    if events and active_streams:
+    if active_streams:
         with ThreadPoolExecutor(max_workers=6) as executor:
             futures = {
-                executor.submit(_process_stream, name, stream, events): name
+                executor.submit(_process_stream, name, stream, events, fetched_at): name
                 for name, stream in active_streams.items()
             }
             for future in as_completed(futures):
@@ -433,23 +480,20 @@ def run_cycle(sources, streams, fusion, config):
     now = datetime.now(timezone.utc)
 
     # Extract topics by matching config keywords against event text
-    keywords_cfg = config.get("keywords", {})
-    all_keywords = set()
-    for category in keywords_cfg.values():
-        if isinstance(category, dict):
-            for lang_kws in category.values():
-                if isinstance(lang_kws, list):
-                    for kw in lang_kws:
-                        all_keywords.add(kw.lower())
+    all_keywords = _config_keywords(config)
 
     # Count keyword matches across events
     from collections import Counter
+    from radar.keywords import keyword_pattern
+    keyword_patterns = [(kw, keyword_pattern(kw)) for kw in all_keywords]
     topic_counts = Counter()
+    topic_evidence_at = {}
     for event in events:
         text = event.get("text", "").lower()
-        for kw in all_keywords:
-            if kw in text:
+        for kw, pattern in keyword_patterns:
+            if pattern.search(text):
                 topic_counts[kw] += 1
+                topic_evidence_at[kw] = event["timestamp"]
 
     # Top topics by mention count
     topics_seen = {kw for kw, count in topic_counts.most_common(30) if count >= 2}
@@ -463,18 +507,10 @@ def run_cycle(sources, streams, fusion, config):
                 try:
                     result = stream.evaluate_topic(topic, now)
                     if result.get("alert_level", "normal") != "normal":
+                        result["timestamp"] = topic_evidence_at[topic]
                         fusion.update(topic, sname, result)
                 except Exception:
                     pass
-
-    # Also feed volume/cascade evidence for matched topics
-    for topic in topics_seen:
-        count = topic_counts[topic]
-        # Volume signal: treat count as severity proxy
-        severity = min(1.0, count / 20.0)
-        fusion.update(topic, "volume_monitor", {"severity": severity, "z_score": count / 5.0})
-        # Cascade signal: more mentions = higher n_star proxy
-        fusion.update(topic, "cascade_tracker", {"n_star": min(0.9, count / 30.0), "alert_level": "normal"})
 
     # Evaluate silence detector
     sd = active_streams.get("silence_detector")
@@ -482,6 +518,14 @@ def run_cycle(sources, streams, fusion, config):
         silence_alerts = sd.evaluate_all(now)
         for alert in silence_alerts:
             if alert.get("alert_level", "low") != "low":
+                inst_event = sd.get_event(alert.get("event_id"))
+                if inst_event is not None:
+                    event_date = _utc_timestamp(inst_event.date)
+                    if event_date is None or event_date > now:
+                        continue
+                    # The scan time is not a new source observation. Keeping
+                    # this date lets abandoned/calendar topics expire.
+                    alert = {**alert, "last_evidence_at": event_date.isoformat()}
                 topic = alert.get("title", alert.get("keyword", "unknown")).lower()
                 fusion.update(topic, "silence_detector", alert)
         if silence_alerts:
@@ -490,10 +534,22 @@ def run_cycle(sources, streams, fusion, config):
 
     # Collect alerts from all streams
     for name, stream in active_streams.items():
+        # evaluate_all above already ingests each silence event by its full
+        # title. Ingesting these again by the first word creates fake topics.
+        if name == "silence_detector":
+            continue
         try:
             alerts = stream.get_active_alerts()
-            for alert in alerts:
+            for alert in sorted(alerts, key=lambda item: item.get("timestamp", "")):
+                if name == "volume_monitor" and (
+                    alert.get("direction") == "down" or alert.get("z_score", 0) <= 0
+                ):
+                    continue
                 topic = alert.get("keyword", "unknown")
+                if name in ("polarization", "narrative_fragmentation", "network_bridge"):
+                    if topic not in topic_evidence_at:
+                        continue
+                    alert = {**alert, "last_evidence_at": topic_evidence_at[topic]}
                 fusion.update(topic, name, alert)
         except Exception as e:
             log.error(f"Alert collection from {name} failed: {e}")
@@ -506,8 +562,8 @@ def run_cycle(sources, streams, fusion, config):
     log.info(f"Issue queue: {len(issues)} active topics")
 
     # Step 6: Write output
-    write_issue_queue(issues)
-    write_health(sources, active_streams, len(events), len(issues))
+    write_issue_queue(issues, now=now)
+    write_health(sources, streams, len(events), len(issues), stream_health)
 
     # Step 7: Predictions — HMM regime, Cox eruption timing, SARIMA windows.
     # Each predictor has its own cold-start gate (7 / 14 / 30 days) and
@@ -742,6 +798,8 @@ def main():
     state = load_state()
     if state and "fusion" in state:
         fusion.load_state(state["fusion"])
+    if state and streams.get("volume_monitor"):
+        streams["volume_monitor"].load_state(state.get("volume_monitor", {}))
 
     if args.once:
         log.info("Running single cycle (--once)")

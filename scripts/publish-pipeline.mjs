@@ -8,15 +8,15 @@
  * up mid-pipeline by inspecting it.
  *
  * Subcommands:
- *   init <slug>              Phase 0  — create state file, derive next ID
+ *   init <slug>              Phase 0  — create state file, reserve next ID
  *   status <slug>            show phase table + next action
  *   set-phase <slug> <phase> <json>   mark a phase complete with metadata
  *   stage-prompts <slug>     Phase 3  — generate Stage 2/3 browser prompts
  *   collect <slug> <stage> <json-path>    Phase 4  — record pasted response
  *   sherlock <id>            Phase 7a — propose related[] from fact-graph
  *   image-prompt <id>        Phase 7b — print the T4A image prompt for ID
- *   validate                 Phase 8  — run validate-issues + stealth check
- *   deploy <id>              Phase 9  — stage + commit + push
+ *   validate                 Phase 8  — issue/source validation + stealth check
+ *   deploy <id> [--dry-run]   Phase 9  — validate bundle + commit + rebase + push
  *
  * This script never invokes LLMs itself. Stages 2 and 3 stay in the browser
  * (paste into Gemini + ChatGPT). Stages 4 and 5 (DeepSeek, Grok) are retired
@@ -24,10 +24,10 @@
  */
 
 import {
-  existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync,
+  existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync, openSync, closeSync, unlinkSync,
 } from 'node:fs';
-import { execSync, spawnSync } from 'node:child_process';
-import { join, dirname, basename } from 'node:path';
+import { spawnSync } from 'node:child_process';
+import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -77,6 +77,9 @@ const NEXT_ACTION_HINTS = {
 
 
 function statePath(slug) {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug || '')) {
+    throw new Error('slug must contain lowercase words separated by single hyphens');
+  }
   return join(OUTPUT_DIR, `${slug}-pipeline-state.json`);
 }
 
@@ -117,23 +120,28 @@ function nextPhase(state) {
 // ── helpers ────────────────────────────────────────────────────────────────
 
 
-function nextIssueId() {
-  if (!existsSync(ISSUES_DIR)) return '0001';
-  const ids = readdirSync(ISSUES_DIR)
-    .filter((f) => f.endsWith('.json'))
-    .map((f) => parseInt(f.replace('.json', ''), 10))
-    .filter((n) => !Number.isNaN(n));
-  const max = ids.length ? Math.max(...ids) : 0;
-  return String(max + 1).padStart(4, '0');
+function pipelineStates() {
+  if (!existsSync(OUTPUT_DIR)) return [];
+  return readdirSync(OUTPUT_DIR)
+    .filter((f) => f.endsWith('-pipeline-state.json'))
+    .map((file) => ({ file, state: JSON.parse(readFileSync(join(OUTPUT_DIR, file), 'utf8')) }));
 }
 
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-    .slice(0, 60);
+function assertIssueId(id) {
+  if (!/^\d{4}$/.test(id || '')) throw new Error('issue ID must be a four-digit string');
+}
+
+function nextIssueId() {
+  const ids = (existsSync(ISSUES_DIR) ? readdirSync(ISSUES_DIR) : [])
+    .filter((f) => /^\d{4}\.json$/.test(f))
+    .map((f) => Number(f.slice(0, 4)));
+  for (const { state } of pipelineStates()) {
+    assertIssueId(state.issue_id);
+    ids.push(Number(state.issue_id));
+  }
+  const max = ids.length ? Math.max(...ids) : 0;
+  if (max >= 9999) throw new Error('no four-digit issue IDs remain');
+  return String(max + 1).padStart(4, '0');
 }
 
 function runScript(cmd, args = []) {
@@ -156,6 +164,8 @@ function fail(msg) {
 
 function cmdInit(slug, issueIdOverride) {
   if (!slug) fail('usage: init <slug> [issueId]');
+  statePath(slug); // Validate before making directories or writing any files.
+  if (issueIdOverride) assertIssueId(issueIdOverride);
 
   mkdirSync(BRIEFS_DIR, { recursive: true });
   mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -169,29 +179,48 @@ function cmdInit(slug, issueIdOverride) {
     return;
   }
 
-  const issueId = issueIdOverride || nextIssueId();
-  const state = {
-    slug,
-    issue_id: issueId,
-    created_at: new Date().toISOString(),
-    paths: {
-      brief:           `engine/briefs/${slug}.md`,
-      stage1:          `engine/output/${slug}-stage1.json`,
-      stage2:          `engine/output/${slug}-stage2.json`,
-      stage3:          `engine/output/${slug}-stage3.json`,
-      stage6:          `engine/output/${slug}-stage6-synthesis.json`,
-      reader:          `engine/output/${slug}-reader.json`,
-      issue:           `src/data/issues/${issueId}.json`,
-      og_background:   `public/og/backgrounds/issue-${issueId}-bg.png`,
-    },
-    phases: Object.fromEntries(PHASES.map((p) => [p, { done: false }])),
-  };
-  state.phases['0_init'] = { done: true, at: new Date().toISOString() };
-  saveState(slug, state);
+  // Separate slugs must not reserve the same ID when init runs concurrently.
+  const lockPath = join(OUTPUT_DIR, '.issue-id.lock');
+  let lock;
+  try {
+    lock = openSync(lockPath, 'wx');
+  } catch (error) {
+    if (error.code === 'EEXIST') throw new Error('another init holds the issue-ID lock; retry after it finishes');
+    throw error;
+  }
+  try {
+    // Recheck after acquiring the lock: another process may have created it.
+    if (existsSync(statePath(slug))) throw new Error(`state already exists for ${slug}; use status`);
+    const issueId = issueIdOverride || nextIssueId();
+    const reserved = pipelineStates().find(({ state }) =>
+      state.issue_id === issueId && !state.phases?.['9_deployed']?.done);
+    if (reserved) throw new Error(`issue ${issueId} is reserved by ${reserved.state.slug}`);
+    const state = {
+      slug,
+      issue_id: issueId,
+      created_at: new Date().toISOString(),
+      paths: {
+        brief:           `engine/briefs/${slug}.md`,
+        stage1:          `engine/output/${slug}-stage1.json`,
+        stage2:          `engine/output/${slug}-stage2.json`,
+        stage3:          `engine/output/${slug}-stage3.json`,
+        stage6:          `engine/output/${slug}-stage6-synthesis.json`,
+        reader:          `engine/output/${slug}-reader.json`,
+        issue:           `src/data/issues/${issueId}.json`,
+        og_background:   `public/og/backgrounds/issue-${issueId}-bg.png`,
+      },
+      phases: Object.fromEntries(PHASES.map((p) => [p, { done: false }])),
+    };
+    state.phases['0_init'] = { done: true, at: new Date().toISOString() };
+    saveState(slug, state);
 
-  console.log(`Initialised pipeline for "${slug}" (issue ${issueId}).`);
-  console.log(`State: ${statePath(slug).replace(ROOT + '/', '')}`);
-  console.log(`Next:  ${NEXT_ACTION_HINTS['1_research']}`);
+    console.log(`Initialised pipeline for "${slug}" (issue ${issueId}).`);
+    console.log(`State: ${statePath(slug).replace(ROOT + '/', '')}`);
+    console.log(`Next:  ${NEXT_ACTION_HINTS['1_research']}`);
+  } finally {
+    closeSync(lock);
+    unlinkSync(lockPath);
+  }
 }
 
 
@@ -295,6 +324,19 @@ function cmdCollect(slug, stage, responsePath) {
     fail(`${abs} is not valid JSON: ${e.message}`);
   }
 
+  // Extract the score the editorial brand tracks per stage.
+  const scoreKeys = {
+    stage2: 'bias_score',
+    stage3: 'factual_accuracy_score',
+    stage4: 'completeness_score',
+    stage5: 'courage_score',
+  };
+  const scoreKey = scoreKeys[stage];
+  const score = parsed?.[scoreKey];
+  if (typeof score !== 'number' || !Number.isFinite(score) || score < 0 || score > 100) {
+    throw new Error(`${stage} response must contain a numeric ${scoreKey} between 0 and 100`);
+  }
+
   // Fill in paths for stage4/5 if not already reserved in state.
   if (!state.paths[stage]) {
     state.paths[stage] = `engine/output/${slug}-${stage}.json`;
@@ -308,16 +350,6 @@ function cmdCollect(slug, stage, responsePath) {
     writeFileSync(canonical, JSON.stringify(parsed, null, 2) + '\n');
     console.log(`Copied response to canonical path: ${state.paths[stage]}`);
   }
-
-  // Extract the score the editorial brand tracks per stage.
-  const scoreKeys = {
-    stage2: 'bias_score',
-    stage3: 'factual_accuracy_score',
-    stage4: 'completeness_score',
-    stage5: 'courage_score',
-  };
-  const scoreKey = scoreKeys[stage];
-  const score = parsed?.[scoreKey];
 
   // Stages 2 and 3 have formal phase entries in the state machine.
   // Stages 4 and 5 are tracked as optional metadata under `legacy_stages`
@@ -417,6 +449,7 @@ function cmdValidate() {
   // It iterates every issue under src/data/issues and exits non-zero on any
   // error — the pipeline script just wraps it so operators have one command.
   runScript('validate-issues.mjs');
+  runScript('build-issue-sources.mjs', ['--check']);
 
   // Stealth check — provider-specific terms only. Bare words "AI" and
   // "model" are legitimate English (business model, AIDS, AIS) and generate
@@ -454,43 +487,111 @@ function cmdValidate() {
 }
 
 
-function cmdDeploy(id) {
-  if (!id) fail('usage: deploy <issue-id>');
+function git(args, capture = false) {
+  // No shell interpolation: headlines, filenames and commit messages are data.
+  const result = spawnSync('git', ['--literal-pathspecs', ...args], {
+    cwd: ROOT, stdio: capture ? 'pipe' : 'inherit', encoding: 'utf8',
+  });
+  if (result.error) throw result.error;
+  if (result.status !== 0) throw new Error(`git ${args[0]} failed${capture ? `: ${result.stderr.trim()}` : ''}`);
+  return result.stdout || '';
+}
 
+function publicationBundle(id, issue) {
+  const matches = pipelineStates().filter(({ state }) => state.issue_id === id);
+  const active = matches.filter(({ state }) => !state.phases?.['9_deployed']?.done);
+  if (active.length > 1) throw new Error(`multiple active pipelines reserve issue ${id}; reconcile them before deploying`);
+  const selected = active[0] || matches.sort((a, b) =>
+    (b.state.created_at || '').localeCompare(a.state.created_at || ''))[0];
+  if (!selected) throw new Error(`no pipeline evidence for issue ${id}; run init <slug> ${id} first`);
+  const { state, file } = selected;
+  statePath(state.slug);
+  const files = new Set([`src/data/issues/${id}.json`, `engine/output/${file}`]);
+  const required = {
+    brief: `engine/briefs/${state.slug}.md`,
+    stage1: `engine/output/${state.slug}-stage1.json`,
+    stage2: `engine/output/${state.slug}-stage2.json`,
+    stage3: `engine/output/${state.slug}-stage3.json`,
+    stage6: `engine/output/${state.slug}-stage6-synthesis.json`,
+    reader: `engine/output/${state.slug}-reader.json`,
+  };
+  for (const [key, canonical] of Object.entries(required)) {
+    const path = state.paths?.[key] || canonical;
+    if (path !== canonical) throw new Error(`unexpected ${key} path in ${file}: ${path}; expected ${canonical}`);
+    if (!existsSync(join(ROOT, path))) throw new Error(`publication evidence missing: ${path}`);
+    if (path.endsWith('.json')) JSON.parse(readFileSync(join(ROOT, path), 'utf8'));
+    files.add(path);
+  }
+  // Include optional escalation/legacy reviews and every generated stage prompt,
+  // without adding another topic's artifacts or generated image variants.
+  for (const suffix of ['stage4.json', 'stage5.json']) {
+    const path = `engine/output/${state.slug}-${suffix}`;
+    if (existsSync(join(ROOT, path))) files.add(path);
+  }
+  for (const stage of [2, 3, 4, 5]) {
+    const path = `engine/prompts-generated/${state.slug}-stage${stage}-browser.txt`;
+    if (existsSync(join(ROOT, path))) files.add(path);
+    else if (stage <= 3) throw new Error(`publication prompt missing: ${path}`);
+  }
+  const sourcePath = `src/data/sources/${id}.json`;
+  if (existsSync(join(ROOT, sourcePath))) files.add(sourcePath);
+  const backgrounds = ['png', 'jpg'].map((ext) => `public/og/backgrounds/issue-${id}-bg.${ext}`)
+    .filter((path) => existsSync(join(ROOT, path)));
+  if (!backgrounds.length) throw new Error(`background image missing for issue ${id}`);
+  for (const path of backgrounds) files.add(path);
+  for (const related of issue.related || []) {
+    assertIssueId(related);
+    const path = `src/data/issues/${related}.json`;
+    if (!existsSync(join(ROOT, path))) throw new Error(`related issue missing: ${path}`);
+    files.add(path);
+  }
+  return [...files];
+}
+
+function cmdDeploy(id, option) {
+  if (!id) fail('usage: deploy <issue-id> [--dry-run]');
+  if (option && option !== '--dry-run') throw new Error(`unknown deploy option: ${option}`);
+  assertIssueId(id);
+  if (git(['branch', '--show-current'], true).trim() !== 'main') {
+    throw new Error('deploy publishes main; switch to main before running it');
+  }
   const issuePath = `src/data/issues/${id}.json`;
-  if (!existsSync(join(ROOT, issuePath))) {
-    fail(`issue file missing: ${issuePath}. Run validate first.`);
-  }
-  const bgPng = join(ROOT, `public/og/backgrounds/issue-${id}-bg.png`);
-  const bgJpg = join(ROOT, `public/og/backgrounds/issue-${id}-bg.jpg`);
-  if (!existsSync(bgPng) && !existsSync(bgJpg)) {
-    fail(`background image missing for issue ${id}`);
-  }
-
-  // git pull --rebase first (Path A in CLAUDE.md: handle parallel workers).
-  try {
-    execSync('git pull --rebase origin main', { cwd: ROOT, stdio: 'inherit' });
-  } catch {
-    fail('git pull --rebase failed — resolve conflicts before deploying');
-  }
-
+  if (!existsSync(join(ROOT, issuePath))) throw new Error(`issue file missing: ${issuePath}`);
   const issue = JSON.parse(readFileSync(join(ROOT, issuePath), 'utf8'));
-  const shortHeadline = (issue.headline || '').slice(0, 50).replace(/"/g, '');
-  const commitMsg = `Publish: issue ${id} — ${shortHeadline}`;
-
-  // Stage only the files this issue owns — don't sweep in unrelated work.
-  const toStage = [
-    issuePath,
-    `public/og/backgrounds/issue-${id}-bg.*`,
-  ];
-  // Pick up any bidirectional related[] edits on neighbouring issues.
-  for (const rid of issue.related || []) {
-    toStage.push(`src/data/issues/${rid}.json`);
+  if (issue.id !== id || issue.published !== true) throw new Error(`issue ${id} must have the matching id and published: true`);
+  const toStage = publicationBundle(id, issue);
+  const changed = [
+    ...git(['diff', '--name-only', '-z'], true).split('\0'),
+    ...git(['diff', '--cached', '--name-only', '-z'], true).split('\0'),
+  ].filter(Boolean);
+  const unrelated = [...new Set(changed)].filter((path) => !toStage.includes(path));
+  if (unrelated.length) {
+    throw new Error(`unrelated tracked changes prevent a clean rebase; commit or set them aside first:\n${unrelated.join('\n')}`);
   }
-  execSync(`git add ${toStage.join(' ')}`, { cwd: ROOT, stdio: 'inherit' });
 
-  execSync(`git commit -m "${commitMsg}"`, { cwd: ROOT, stdio: 'inherit' });
-  execSync('git push origin main', { cwd: ROOT, stdio: 'inherit' });
+  // Validate the exact publication before changing Git's index or history.
+  cmdValidate();
+  if (option === '--dry-run') {
+    console.log(`\nValidated publication bundle for issue ${id}:\n${toStage.join('\n')}`);
+    console.log('\nDry run complete. Git index, history and remotes were not changed.');
+    return;
+  }
+  const commitMsg = `Publish: issue ${id} — ${(issue.headline || '').slice(0, 50)}`;
+  git(['add', '--', ...toStage]);
+  if (git(['diff', '--cached', '--name-only'], true).trim()) {
+    git(['commit', '-m', commitMsg, '--only', '--', ...toStage]);
+  }
+  // Commit first so ordinary issue/related edits do not make rebase fail.
+  // A conflict leaves the commit local and never pushes partial resolution.
+  git(['pull', '--rebase', 'origin', 'main']);
+  const rebasedIssue = JSON.parse(readFileSync(join(ROOT, issuePath), 'utf8'));
+  if (rebasedIssue.id !== id || rebasedIssue.published !== true) {
+    throw new Error(`issue ${id} is no longer a published candidate after rebase`);
+  }
+  // Reservations from another checkout may have arrived with the rebase.
+  publicationBundle(id, rebasedIssue);
+  cmdValidate();
+  git(['push', 'origin', 'main']);
 
   console.log('\nPushed. GitHub Actions will build + deploy.');
   console.log(`Live URL: https://thefourthangle.pages.dev/issue/${id}`);
@@ -512,8 +613,8 @@ Commands:
   collect <slug> <stage> <path>    Phase 4 — record Gemini / ChatGPT response
   sherlock <issue-id>              Phase 7a — propose related[]
   image-prompt <issue-id>          Phase 7b — emit the T4A image prompt
-  validate                         Phase 8 — validate-issues + stealth grep
-  deploy <issue-id>                Phase 9 — git add + commit + push
+  validate                         Phase 8 — issue/source validation + stealth grep
+  deploy <issue-id> [--dry-run]    Phase 9 — validate bundle + commit + rebase + push
 
 Phases: ${PHASES.join(' → ')}
 `);
