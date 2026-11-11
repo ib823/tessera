@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-11-11 14:12 UTC. Queue size: 1448. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-11-11 16:13 UTC. Queue size: 1445. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -27,167 +27,167 @@ developed, and the develop list drifts into old news.
 ## Fresh signal — first seen in the last 7 days
 
 
-### F1. google set to invest rm61bil in malaysia over 2027-28. the alphabet subsidiary is expected to contribute an...
-
-- **Fresh score:** 0.707 (silence=0.99 × importance=0.71, no age weighting)
-
-- **Age in queue:** 7.0 days (source date: 2026-11-04, first seen: 2026-11-04)
-
-- **Coverage:** 28 news, 8 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, ethnic, political
-
-
-### F2. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
+### F1. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
 
 - **Fresh score:** 0.609 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 5.2 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 5.3 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 5 news, 8 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
 
-### F3. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
+### F2. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
 
 - **Fresh score:** 0.606 (silence=0.95 × importance=0.64, no age weighting)
 
-- **Age in queue:** 5.2 days (source date: 2026-11-07, first seen: 2026-11-06)
+- **Age in queue:** 5.3 days (source date: 2026-11-07, first seen: 2026-11-06)
 
 - **Coverage:** 70 news, 25 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, environmental, ethnic, political
 
 
-### F4. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
+### F3. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
 
 - **Fresh score:** 0.606 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 5.1 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 5.2 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 18 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F5. wuxi apptec removed from pentagon’s chinese military list. a federal court in washington barred the us defe...
+### F4. wuxi apptec removed from pentagon’s chinese military list. a federal court in washington barred the us defe...
 
 - **Fresh score:** 0.590 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 1.4 days (source date: 2026-11-10, first seen: 2026-11-10)
+- **Age in queue:** 1.5 days (source date: 2026-11-10, first seen: 2026-11-10)
 
 - **Coverage:** 49 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, legal
 
 
-### F6. cabaran syed saddiq berkait peruntukan kawasan tangguh untuk rundingan penyelesaian. mahkamah persekutuan b...
+### F5. cabaran syed saddiq berkait peruntukan kawasan tangguh untuk rundingan penyelesaian. mahkamah persekutuan b...
 
 - **Fresh score:** 0.558 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.4 days (source date: 2026-11-05, first seen: 2026-11-05)
+- **Age in queue:** 6.5 days (source date: 2026-11-05, first seen: 2026-11-05)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F7. syed saddiq’s constituency funds challenge on hold for settlement talks. federal court gives parties until ...
+### F6. syed saddiq’s constituency funds challenge on hold for settlement talks. federal court gives parties until ...
 
 - **Fresh score:** 0.540 (silence=0.96 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.4 days (source date: 2026-11-05, first seen: 2026-11-05)
+- **Age in queue:** 6.5 days (source date: 2026-11-05, first seen: 2026-11-05)
 
 - **Coverage:** 31 news, 7 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F8. ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the restriction order was...
+### F7. ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the restriction order was...
 
 - **Fresh score:** 0.540 (silence=0.96 × importance=0.56, no age weighting)
 
-- **Age in queue:** 5.0 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 5.1 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 29 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F9. harga minyak masak botol kekal, kerajaan sedia insentif rm15 juta sebulan. kerajaan melaksanakan mekanisme ...
+### F8. harga minyak masak botol kekal, kerajaan sedia insentif rm15 juta sebulan. kerajaan melaksanakan mekanisme ...
 
 - **Fresh score:** 0.525 (silence=0.99 × importance=0.53, no age weighting)
 
-- **Age in queue:** 0.2 days (source date: 2026-11-11, first seen: 2026-11-11)
+- **Age in queue:** 0.3 days (source date: 2026-11-11, first seen: 2026-11-11)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### F10. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
+### F9. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
 
 - **Fresh score:** 0.518 (silence=0.92 × importance=0.56, no age weighting)
 
-- **Age in queue:** 5.2 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 5.3 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 57 news, 15 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, ethnic, political
 
 
-### F11. ronaldo umum persaraan antarabangsa. bintang bola sepak  itu sebelum ini meninggalkan skuad kebangsaan susu...
+### F10. ronaldo umum persaraan antarabangsa. bintang bola sepak  itu sebelum ini meninggalkan skuad kebangsaan susu...
 
 - **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
 
-- **Age in queue:** 5.9 days (source date: 2026-11-06, first seen: 2026-11-05)
+- **Age in queue:** 6.0 days (source date: 2026-11-06, first seen: 2026-11-05)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### F12. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
+### F11. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
 
 - **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
 
-- **Age in queue:** 2.9 days (source date: 2026-11-09, first seen: 2026-11-08)
+- **Age in queue:** 3.0 days (source date: 2026-11-09, first seen: 2026-11-08)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### F13. pelan perumahan kawasan tanah runtuh diubah banyak kali, dun diberitahu. exco p pinang h’ng mooi lye berkat...
+### F12. jppm tak pernah lulus pendaftaran ngo rohingya. jppm menegaskan pertubuhan yang memenuhi syarat asas permoh...
 
 - **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
 
-- **Age in queue:** 7.0 days (source date: 2026-11-04, first seen: 2026-11-04)
-
-- **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** general
-
-
-### F14. jppm tak pernah lulus pendaftaran ngo rohingya. jppm menegaskan pertubuhan yang memenuhi syarat asas permoh...
-
-- **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
-
-- **Age in queue:** 1.2 days (source date: 2026-11-10, first seen: 2026-11-10)
+- **Age in queue:** 1.3 days (source date: 2026-11-10, first seen: 2026-11-10)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F15. deepavali mengundang kerinduan tak sudah. manivannan dan yoganandhini rethinam dambakan kenangan bersama ko...
+### F13. deepavali mengundang kerinduan tak sudah. manivannan dan yoganandhini rethinam dambakan kenangan bersama ko...
 
 - **Fresh score:** 0.512 (silence=0.99 × importance=0.52, no age weighting)
 
-- **Age in queue:** 3.5 days (source date: 2026-11-08, first seen: 2026-11-08)
+- **Age in queue:** 3.6 days (source date: 2026-11-08, first seen: 2026-11-08)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** environmental, political
+
+
+### F14. kargo minyak sawit ‘koktel’ boleh jejas pengeksport malaysia, kata pemain industri. minyak import yang tida...
+
+- **Fresh score:** 0.510 (silence=0.99 × importance=0.52, no age weighting)
+
+- **Age in queue:** 6.3 days (source date: 2026-11-05, first seen: 2026-11-05)
+
+- **Coverage:** 5 news, 2 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
+
+
+### F15. kerajaan digesa tutup segera ladang babi tapi jangan zalimi penternak. ahli parlimen tasek gelugor wan saif...
+
+- **Fresh score:** 0.509 (silence=0.99 × importance=0.52, no age weighting)
+
+- **Age in queue:** 6.4 days (source date: 2026-11-05, first seen: 2026-11-05)
+
+- **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
@@ -213,7 +213,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.398 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 109.4 days (source date: 2026-07-26, first seen: 2026-07-25)
+- **Age in queue:** 109.5 days (source date: 2026-07-26, first seen: 2026-07-25)
 
 - **Coverage:** 62 news, 11 social — pattern: _24h+ silence then rising_
 
@@ -224,7 +224,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.394 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 56.5 days (source date: 2026-09-17, first seen: 2026-09-16)
+- **Age in queue:** 56.6 days (source date: 2026-09-17, first seen: 2026-09-16)
 
 - **Coverage:** 72 news, 12 social — pattern: _24h+ silence then rising_
 
@@ -246,7 +246,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.376 (silence=0.97 × importance=0.71 × age_factor)
 
-- **Age in queue:** 120.1 days (source date: 2026-07-15, first seen: 2026-07-14)
+- **Age in queue:** 120.2 days (source date: 2026-07-15, first seen: 2026-07-14)
 
 - **Coverage:** 74 news, 25 social — pattern: _below-expected coverage_
 
@@ -255,9 +255,9 @@ developed, and the develop list drifts into old news.
 
 ### S6. conference of rulers deliberates pm term limits, ag‑pp separation and child act amendments. kuala lumpur, o...
 
-- **Rank score:** 1.333 (silence=0.99 × importance=0.71 × age_factor)
+- **Rank score:** 1.335 (silence=0.99 × importance=0.71 × age_factor)
 
-- **Age in queue:** 27.1 days (source date: 2026-10-16, first seen: 2026-10-15)
+- **Age in queue:** 27.2 days (source date: 2026-10-16, first seen: 2026-10-15)
 
 - **Coverage:** 29 news, 13 social — pattern: _below-expected coverage_
 
@@ -268,7 +268,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.321 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 91.1 days (source date: 2026-08-12, first seen: 2026-08-12)
+- **Age in queue:** 91.2 days (source date: 2026-08-12, first seen: 2026-08-12)
 
 - **Coverage:** 6 news, 9 social — pattern: _below-expected coverage_
 
@@ -279,7 +279,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.304 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 189.3 days (source date: 2026-05-06, first seen: 2026-05-06)
+- **Age in queue:** 189.4 days (source date: 2026-05-06, first seen: 2026-05-06)
 
 - **Coverage:** 21 news, 24 social — pattern: _below-expected coverage_
 
@@ -290,7 +290,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.299 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 33.0 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 33.1 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 40 news, 13 social — pattern: _below-expected coverage_
 
@@ -301,7 +301,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.294 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 33.0 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 33.1 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 46 news, 16 social — pattern: _below-expected coverage_
 
@@ -312,7 +312,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.294 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 30.3 days (source date: 2026-10-13, first seen: 2026-10-12)
+- **Age in queue:** 30.4 days (source date: 2026-10-13, first seen: 2026-10-12)
 
 - **Coverage:** 50 news, 12 social — pattern: _below-expected coverage_
 
@@ -323,7 +323,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.291 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 33.0 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 33.1 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 55 news, 13 social — pattern: _below-expected coverage_
 
@@ -334,7 +334,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.290 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 86.2 days (source date: 2026-08-18, first seen: 2026-08-17)
+- **Age in queue:** 86.3 days (source date: 2026-08-18, first seen: 2026-08-17)
 
 - **Coverage:** 47 news, 22 social — pattern: _24h+ silence then rising_
 
@@ -345,7 +345,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 106.2 days (source date: 2026-07-29, first seen: 2026-07-28)
+- **Age in queue:** 106.3 days (source date: 2026-07-29, first seen: 2026-07-28)
 
 - **Coverage:** 64 news, 10 social — pattern: _below-expected coverage_
 
@@ -356,7 +356,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.287 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 201.3 days (source date: 2026-04-24, first seen: 2026-04-24)
+- **Age in queue:** 201.4 days (source date: 2026-04-24, first seen: 2026-04-24)
 
 - **Coverage:** 55 news, 20 social — pattern: _below-expected coverage_
 
@@ -367,7 +367,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.283 (silence=0.96 × importance=0.67 × age_factor)
 
-- **Age in queue:** 33.0 days (source date: 2026-10-10, first seen: 2026-10-09)
+- **Age in queue:** 33.1 days (source date: 2026-10-10, first seen: 2026-10-09)
 
 - **Coverage:** 64 news, 18 social — pattern: _below-expected coverage_
 
@@ -389,7 +389,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.280 (silence=0.96 × importance=0.67 × age_factor)
 
-- **Age in queue:** 118.2 days (source date: 2026-07-17, first seen: 2026-07-16)
+- **Age in queue:** 118.3 days (source date: 2026-07-17, first seen: 2026-07-16)
 
 - **Coverage:** 66 news, 21 social — pattern: _below-expected coverage_
 
@@ -409,9 +409,9 @@ developed, and the develop list drifts into old news.
 
 ### S20. rm510b but no new taxes? amir hamzah says 2027 budget possible through cutting leakages. kuala lumpur, oct ...
 
-- **Rank score:** 1.274 (silence=0.97 × importance=0.67 × age_factor)
+- **Rank score:** 1.276 (silence=0.97 × importance=0.67 × age_factor)
 
-- **Age in queue:** 29.4 days (source date: 2026-10-14, first seen: 2026-10-13)
+- **Age in queue:** 29.5 days (source date: 2026-10-14, first seen: 2026-10-13)
 
 - **Coverage:** 58 news, 17 social — pattern: _below-expected coverage_
 
@@ -442,9 +442,9 @@ developed, and the develop list drifts into old news.
 
 ### S23. sarawak says rm1.5b interim grant not final, pushes for clear constitutional formula. kuching, oct 16 &mdas...
 
-- **Rank score:** 1.233 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 1.235 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 26.3 days (source date: 2026-10-17, first seen: 2026-10-16)
+- **Age in queue:** 26.4 days (source date: 2026-10-17, first seen: 2026-10-16)
 
 - **Coverage:** 22 news, 7 social — pattern: _below-expected coverage_
 
@@ -466,7 +466,7 @@ developed, and the develop list drifts into old news.
 
 - **Rank score:** 1.203 (silence=0.98 × importance=0.61 × age_factor)
 
-- **Age in queue:** 77.3 days (source date: 2026-08-26, first seen: 2026-08-26)
+- **Age in queue:** 77.4 days (source date: 2026-08-26, first seen: 2026-08-26)
 
 - **Coverage:** 19 news, 10 social — pattern: _below-expected coverage_
 
