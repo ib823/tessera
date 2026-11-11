@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-11T02:14:01.921Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-11T04:13:11.882Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1692,7 +1692,7 @@ https://thefourthangle.pages.dev/issue/1957
 
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s approved investments rise 11.7pc to rm218.5b in first half of 2026, says pm. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (abang johari unveils record rm14.84b sarawak budget with rm10.09b for development. kuching). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
