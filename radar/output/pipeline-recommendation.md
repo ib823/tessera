@@ -41,10 +41,12 @@ edition update may not trigger the new-issue notification; check its behavior.
 
 ## Input freshness and state
 
-Latest saved scan: **12 November, 04:11 MYT**, main `f06c7ea3`: 500 fetched
-events, 1,445 queue entries and 501 foreign entries. This scan predates the
-local Radar fixes; its original ranks and health labels are not corrected
-live results. Use the events as leads and check primary documents.
+Latest verified production scan: **12 November, 06:19 MYT**, output commit
+`14147330` using Radar release `cd031aca`: 499 fetched events, 644 queue
+entries and 422 foreign entries. No queue evidence exceeds the seven-day
+retention window. GDELT is correctly reported failed; RSS coverage is partial.
+The scan preserves volume-detector history for the next scheduled run.
+Use these corrected signals as leads and check primary documents.
 
 The 2016 update uses a separate `-research-state.json` to avoid competing with
 the canonical published issue-to-brief source mapping. New 2020/2021 pipeline

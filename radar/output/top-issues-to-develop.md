@@ -1,8 +1,10 @@
 # Radar — active development slate
 
-Refreshed **12 November 2026 MYT**, main `f06c7ea3`. Latest saved scan:
-**04:11 MYT**, 500 events, 1,445 queue entries, 501 foreign entries. This scan
-predates local code fixes; its health labels and ranks are not corrected output.
+Refreshed **12 November 2026 MYT**. Latest verified production scan:
+**06:19 MYT**, output commit `14147330`, 499 events, 644 queue entries and
+422 foreign entries. The scan uses the deployed Radar fixes; no queue evidence
+exceeds seven days. GDELT failed and RSS coverage is partial, as recorded in
+source health. These signals remain discovery leads requiring primary checks.
 
 ## Selected for development
 
