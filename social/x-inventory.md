@@ -1,10 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-10T22:11:21.623Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-11T00:25:29.245Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (88)
+## ⏳ TO POST (89)
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
@@ -2620,6 +2620,39 @@ Like paying a builder RM6B against a RM9B contract, finding partial hulls instea
 Oversight did happen: PAC reports, declassification, a CBT charge that ended in a DNAA, a contract restructure. The unresolved test is delivery, now due April 2027.
 
 https://thefourthangle.pages.dev/issue/0154
+```
+
+### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
+
+**1/6** _(hook — attach image, NO link)_ · 152 chars
+```
+Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
+```
+**2/6** _(fact)_ · 171 chars
+```
+The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
+```
+**3/6** _(fact)_ · 169 chars
+```
+Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
+```
+**4/6** _(fact)_ · 167 chars
+```
+A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
+```
+**5/6** _(reframe)_ · 127 chars
+```
+Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
+```
+**6/6** _(view — ONLY post with the link)_ · 197 chars
+```
+Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
+
+https://thefourthangle.pages.dev/issue/2019
 ```
 
 ### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
