@@ -1,15 +1,15 @@
 {
-  "last_scan": "2026-11-12T12:16:05.721858+00:00",
-  "events_fetched": 496,
-  "issues_tracked": 610,
+  "last_scan": "2026-11-12T14:12:06.497426+00:00",
+  "events_fetched": 492,
+  "issues_tracked": 608,
   "sources": {
     "news_rss": {
-      "last_fetch": "2026-11-12T12:13:30.853798+00:00",
+      "last_fetch": "2026-11-12T14:09:29.132430+00:00",
       "error_rate": 0.3333333333333333,
       "success_count": 10,
       "error_count": 5,
       "status": "degraded",
-      "events_fetched": 440,
+      "events_fetched": 439,
       "batches": {
         "attempted": 15,
         "succeeded": 10,
@@ -36,7 +36,7 @@
         {
           "label": "BBC World",
           "status": "healthy",
-          "events_fetched": 29
+          "events_fetched": 28
         },
         {
           "label": "Al Jazeera English",
@@ -100,7 +100,7 @@
       ]
     },
     "reddit": {
-      "last_fetch": "2026-11-12T12:13:31.751249+00:00",
+      "last_fetch": "2026-11-12T14:09:30.319483+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
@@ -121,7 +121,7 @@
       ]
     },
     "gdelt": {
-      "last_fetch": "2026-11-12T12:15:47.932237+00:00",
+      "last_fetch": "2026-11-12T14:11:48.013032+00:00",
       "error_rate": 1.0,
       "success_count": 0,
       "error_count": 11,
@@ -131,7 +131,7 @@
         "attempted": 11,
         "succeeded": 0,
         "failed": 11,
-        "rate_limited": 9
+        "rate_limited": 10
       },
       "batch_results": [
         {
@@ -196,14 +196,35 @@
         },
         {
           "label": "malaysia_interest",
-          "status": "failed",
+          "status": "rate_limited",
           "events_fetched": 0,
-          "reason": "non_json_response"
+          "reason": "http_429"
         }
       ]
     },
     "parliament": {
-      "last_fetch": "2026-11-12T12:15:58.799133+00:00",
+      "last_fetch": "2026-11-12T14:11:59.531777+00:00",
+      "error_rate": 0.0,
+      "success_count": 1,
+      "error_count": 0,
+      "status": "healthy",
+      "events_fetched": 13,
+      "batches": {
+        "attempted": 1,
+        "succeeded": 1,
+        "failed": 0,
+        "rate_limited": 0
+      },
+      "batch_results": [
+        {
+          "label": "parliament",
+          "status": "healthy",
+          "events_fetched": 13
+        }
+      ]
+    },
+    "court": {
+      "last_fetch": "2026-11-12T14:12:05.918661+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
@@ -217,30 +238,9 @@
       },
       "batch_results": [
         {
-          "label": "parliament",
-          "status": "healthy",
-          "events_fetched": 15
-        }
-      ]
-    },
-    "court": {
-      "last_fetch": "2026-11-12T12:16:04.887503+00:00",
-      "error_rate": 0.0,
-      "success_count": 1,
-      "error_count": 0,
-      "status": "healthy",
-      "events_fetched": 16,
-      "batches": {
-        "attempted": 1,
-        "succeeded": 1,
-        "failed": 0,
-        "rate_limited": 0
-      },
-      "batch_results": [
-        {
           "label": "court",
           "status": "healthy",
-          "events_fetched": 16
+          "events_fetched": 15
         }
       ]
     },
