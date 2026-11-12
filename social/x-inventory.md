@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T06:18:54.844Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T08:15:17.508Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1048,6 +1048,44 @@ Like issuing driving licences to millions before building guardrails, then count
 Three fixes close the gap: tiered deposit protection, capital requirements scaling with operator float, and mandatory literacy in subsidies.
 
 https://thefourthangle.pages.dev/issue/1975
+```
+
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
+
+> ⚡ **Reactive: topic is live in the radar** (south korean audit reveals friction in us alliance as washington’s priorities shift. the p). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
+
+**1/7** _(hook — attach image, NO link)_ · 137 chars
+```
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
+```
+**2/7** _(fact)_ · 125 chars
+```
+Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
+```
+**3/7** _(fact)_ · 234 chars
+```
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
+```
+**4/7** _(fact)_ · 160 chars
+```
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
+```
+**5/7** _(reframe)_ · 90 chars
+```
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
+
+https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
@@ -2432,43 +2470,6 @@ Like learning the building inspector is accused of taking bribes to skip the fir
 The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
 
 https://thefourthangle.pages.dev/issue/1974
-```
-
-### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
-
-**1/7** _(hook — attach image, NO link)_ · 137 chars
-```
-One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
-```
-**2/7** _(fact)_ · 125 chars
-```
-Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
-```
-**3/7** _(fact)_ · 234 chars
-```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
-```
-**4/7** _(fact)_ · 160 chars
-```
-Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
-```
-**5/7** _(reframe)_ · 90 chars
-```
-Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
-
-https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
