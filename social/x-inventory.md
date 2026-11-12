@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T04:13:21.816Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T06:18:54.844Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -410,7 +410,7 @@ https://thefourthangle.pages.dev/issue/2002
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
@@ -600,7 +600,7 @@ https://thefourthangle.pages.dev/issue/1993
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
@@ -710,7 +710,7 @@ https://thefourthangle.pages.dev/issue/1989
 
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
@@ -862,7 +862,7 @@ https://thefourthangle.pages.dev/issue/1983
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
@@ -1086,7 +1086,7 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
@@ -1116,40 +1116,6 @@ This isn't one government's hypocrisy. It's a structural failure where states pr
 Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
 
 https://thefourthangle.pages.dev/issue/1971
-```
-
-### Issue 1966 — Refugee registration system launched but work permits remain unissued
-
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
-
-**1/6** _(hook — attach image, NO link)_ · 145 chars
-```
-Malaysia's new refugee registration scheme went live on 1 January 2026. Work permits are proposed but unissued. Thailand has already moved ahead.
-```
-**2/6** _(fact)_ · 270 chars
-```
-A 2019 IDEAS study projected that refugees with the right to work would add over RM3B to GDP by 2024. The Malaysian Employers Federation backs work rights in shortage sectors. In 2025 the Home Ministry planned to register refugees at Immigration's 78 offices nationwide.
-```
-**3/6** _(fact)_ · 169 chars
-```
-Immigration detention centres held over 21,000 migrants and refugees in March 2026, Fortify Rights said. In August 2025 they held 2,196 children, the Home Minister said.
-```
-**4/6** _(fact)_ · 244 chars
-```
-The 3D jobs proposed in 2023 cover manufacturing, mining and construction. Domestic work and plantations sit outside them. The US State Department's 2025 trafficking report flags forced labour on palm oil plantations and among domestic workers.
-```
-**5/6** _(reframe)_ · 108 chars
-```
-Registration serves the state and employers first. The test is whether the DPP becomes a floor or a ceiling.
-```
-**6/6** _(view — ONLY post with the link)_ · 137 chars
-```
-Whatever its political limits, the task now is making the DPP function as actual protection.
-
-https://thefourthangle.pages.dev/issue/1966
 ```
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
@@ -1602,40 +1568,6 @@ Reducing the headline target does not eliminate cost-overrun risk. The test is w
 https://thefourthangle.pages.dev/issue/1751
 ```
 
-### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
-
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1626-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1626`
-
-**1/6** _(hook — attach image, NO link)_ · 260 chars
-```
-Major political actors invoke 'the social contract'. The phrase itself is not in the Federal Constitution, and its substance is contested. Different actors emphasise different constitutional provisions when discussing the concept, producing competing readings.
-```
-**2/6** _(fact)_ · 133 chars
-```
-The phrase 'social contract' does not appear in the Federal Constitution. It is invoked as a political idea, not a textual provision.
-```
-**3/6** _(fact)_ · 265 chars
-```
-UMNO framing centres on Article 153 (special position of Malays and Borneo natives) and the constitutional position of the Malay rulers. DAP statements emphasise Article 8 equality while also stating it upholds Article 153. The same text supports multiple readings.
-```
-**4/6** _(fact)_ · 163 chars
-```
-The Reid Commission's 1957 report records constitutional compromises and recommendations on citizenship, language, religion and the special position of the Malays.
-```
-**5/6** _(reframe)_ · 155 chars
-```
-A foundational concept that different parties read differently is not a fixed text. It is a constitutional narrative that each side reads against the text.
-```
-**6/6** _(view — ONLY post with the link)_ · 207 chars
-```
-Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
-
-https://thefourthangle.pages.dev/issue/1626
-```
-
 ### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
@@ -1714,7 +1646,7 @@ https://thefourthangle.pages.dev/issue/1445
 
 ### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
@@ -1748,7 +1680,7 @@ https://thefourthangle.pages.dev/issue/1325
 
 ### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
@@ -1782,7 +1714,7 @@ https://thefourthangle.pages.dev/issue/1294
 
 ### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
 
-> ⚡ **Reactive: topic is live in the radar** (syed saddiq’s constituency funds challenge on hold for settlement talks. federal court giv). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
@@ -1816,40 +1748,6 @@ Like a registered-person watchlist decided by an appointed committee, with deten
 Judges, not legislators, reopened POCA detention to court review. Two-year renewable detention without trial remains the law.
 
 https://thefourthangle.pages.dev/issue/1292
-```
-
-### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
-
-> ⚡ **Reactive: topic is live in the radar** (bank of england set to raise rate as inflation jumps. uk inflation is forecast to hit 4% i). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
-
-**1/6** _(hook — attach image, NO link)_ · 150 chars
-```
-Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
-```
-**2/6** _(fact)_ · 135 chars
-```
-Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
-```
-**3/6** _(fact)_ · 157 chars
-```
-The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
-```
-**4/6** _(fact)_ · 261 chars
-```
-SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
-```
-**5/6** _(reframe)_ · 158 chars
-```
-Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
-```
-**6/6** _(view — ONLY post with the link)_ · 220 chars
-```
-After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
-
-https://thefourthangle.pages.dev/issue/1265
 ```
 
 ### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
@@ -2639,6 +2537,39 @@ Stop debating whether vernacular schools should exist. Start asking why more fam
 https://thefourthangle.pages.dev/issue/1967
 ```
 
+### Issue 1966 — Refugee registration system launched but work permits remain unissued
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
+
+**1/6** _(hook — attach image, NO link)_ · 145 chars
+```
+Malaysia's new refugee registration scheme went live on 1 January 2026. Work permits are proposed but unissued. Thailand has already moved ahead.
+```
+**2/6** _(fact)_ · 270 chars
+```
+A 2019 IDEAS study projected that refugees with the right to work would add over RM3B to GDP by 2024. The Malaysian Employers Federation backs work rights in shortage sectors. In 2025 the Home Ministry planned to register refugees at Immigration's 78 offices nationwide.
+```
+**3/6** _(fact)_ · 169 chars
+```
+Immigration detention centres held over 21,000 migrants and refugees in March 2026, Fortify Rights said. In August 2025 they held 2,196 children, the Home Minister said.
+```
+**4/6** _(fact)_ · 244 chars
+```
+The 3D jobs proposed in 2023 cover manufacturing, mining and construction. Domestic work and plantations sit outside them. The US State Department's 2025 trafficking report flags forced labour on palm oil plantations and among domestic workers.
+```
+**5/6** _(reframe)_ · 108 chars
+```
+Registration serves the state and employers first. The test is whether the DPP becomes a floor or a ceiling.
+```
+**6/6** _(view — ONLY post with the link)_ · 137 chars
+```
+Whatever its political limits, the task now is making the DPP function as actual protection.
+
+https://thefourthangle.pages.dev/issue/1966
+```
+
 ### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
 
 - **Status:** PENDING
@@ -2874,6 +2805,39 @@ ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 2
 https://thefourthangle.pages.dev/issue/1871
 ```
 
+### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1626-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1626`
+
+**1/6** _(hook — attach image, NO link)_ · 260 chars
+```
+Major political actors invoke 'the social contract'. The phrase itself is not in the Federal Constitution, and its substance is contested. Different actors emphasise different constitutional provisions when discussing the concept, producing competing readings.
+```
+**2/6** _(fact)_ · 133 chars
+```
+The phrase 'social contract' does not appear in the Federal Constitution. It is invoked as a political idea, not a textual provision.
+```
+**3/6** _(fact)_ · 265 chars
+```
+UMNO framing centres on Article 153 (special position of Malays and Borneo natives) and the constitutional position of the Malay rulers. DAP statements emphasise Article 8 equality while also stating it upholds Article 153. The same text supports multiple readings.
+```
+**4/6** _(fact)_ · 163 chars
+```
+The Reid Commission's 1957 report records constitutional compromises and recommendations on citizenship, language, religion and the special position of the Malays.
+```
+**5/6** _(reframe)_ · 155 chars
+```
+A foundational concept that different parties read differently is not a fixed text. It is a constitutional narrative that each side reads against the text.
+```
+**6/6** _(view — ONLY post with the link)_ · 207 chars
+```
+Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
+
+https://thefourthangle.pages.dev/issue/1626
+```
+
 ### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
 
 - **Status:** PENDING
@@ -2983,6 +2947,39 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
+
+**1/6** _(hook — attach image, NO link)_ · 150 chars
+```
+Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
+```
+**2/6** _(fact)_ · 135 chars
+```
+Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
+```
+**3/6** _(fact)_ · 157 chars
+```
+The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
+```
+**4/6** _(fact)_ · 261 chars
+```
+SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
+```
+**5/6** _(reframe)_ · 158 chars
+```
+Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
+```
+**6/6** _(view — ONLY post with the link)_ · 220 chars
+```
+After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
+
+https://thefourthangle.pages.dev/issue/1265
 ```
 
 ### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
