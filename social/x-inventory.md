@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T00:26:11.036Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T02:15:04.791Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1536,7 +1536,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
@@ -1634,6 +1634,44 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
+```
+
+### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
+
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1625-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1625`
+
+**1/7** _(hook — attach image, NO link)_ · 125 chars
+```
+Bumiputera property discounts range from 5% to 15% depending on state. The mechanism is industry-funded, not Treasury-funded.
+```
+**2/7** _(fact)_ · 146 chars
+```
+A June 2020 REHDA survey cited in a CIDB-hosted report listed 6,121 Bumiputera quota units unsold; 46% had been on the market more than 36 months.
+```
+**3/7** _(fact)_ · 267 chars
+```
+Industry reports describe open-market Bumiputera discounts as not means-tested: buyers of homes priced RM1 million and above still get 5% to 15%. The mix of discount, quota and release rules varies by property type and state, making national generalisation difficult.
+```
+**4/7** _(fact)_ · 257 chars
+```
+Singapore's Ethnic Integration Policy applies quotas to buyers and sellers alike. Malaysia's discount applies on the buyer side only. Comparisons across systems require care: Singapore's policy targets neighbourhood mix; Malaysia's targets ownership access.
+```
+**5/7** _(reframe)_ · 169 chars
+```
+The question is not whether Bumiputera housing access is a national priority. It is whether a developer-administered cross-subsidy is the right instrument to deliver it.
+```
+**6/7** _(analogy)_ · 250 chars
+```
+Like a discount run by a retailer instead of a government voucher: the same household receives it, but the cost is collected from other shoppers, not from tax revenue. The instrument changes who pays, what is measured, and what can be debated openly.
+```
+**7/7** _(view — ONLY post with the link)_ · 201 chars
+```
+If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
+
+https://thefourthangle.pages.dev/issue/1625
 ```
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
@@ -2834,43 +2872,6 @@ ESSCOM works. Its foundations do not: a base 41% built after a decade, and a sea
 ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 215 times makes a habit, not a plan.
 
 https://thefourthangle.pages.dev/issue/1871
-```
-
-### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1625-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1625`
-
-**1/7** _(hook — attach image, NO link)_ · 125 chars
-```
-Bumiputera property discounts range from 5% to 15% depending on state. The mechanism is industry-funded, not Treasury-funded.
-```
-**2/7** _(fact)_ · 146 chars
-```
-A June 2020 REHDA survey cited in a CIDB-hosted report listed 6,121 Bumiputera quota units unsold; 46% had been on the market more than 36 months.
-```
-**3/7** _(fact)_ · 267 chars
-```
-Industry reports describe open-market Bumiputera discounts as not means-tested: buyers of homes priced RM1 million and above still get 5% to 15%. The mix of discount, quota and release rules varies by property type and state, making national generalisation difficult.
-```
-**4/7** _(fact)_ · 257 chars
-```
-Singapore's Ethnic Integration Policy applies quotas to buyers and sellers alike. Malaysia's discount applies on the buyer side only. Comparisons across systems require care: Singapore's policy targets neighbourhood mix; Malaysia's targets ownership access.
-```
-**5/7** _(reframe)_ · 169 chars
-```
-The question is not whether Bumiputera housing access is a national priority. It is whether a developer-administered cross-subsidy is the right instrument to deliver it.
-```
-**6/7** _(analogy)_ · 250 chars
-```
-Like a discount run by a retailer instead of a government voucher: the same household receives it, but the cost is collected from other shoppers, not from tax revenue. The instrument changes who pays, what is measured, and what can be debated openly.
-```
-**7/7** _(view — ONLY post with the link)_ · 201 chars
-```
-If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
-
-https://thefourthangle.pages.dev/issue/1625
 ```
 
 ### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
