@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T08:15:17.508Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T10:12:17.101Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -184,44 +184,6 @@ Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was n
 https://thefourthangle.pages.dev/issue/2012
 ```
 
-### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
-
-**1/7** _(hook — attach image, NO link)_ · 130 chars
-```
-Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
-```
-**2/7** _(fact)_ · 153 chars
-```
-The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
-```
-**3/7** _(fact)_ · 149 chars
-```
-PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
-```
-**4/7** _(fact)_ · 152 chars
-```
-One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
-```
-**6/7** _(analogy)_ · 148 chars
-```
-A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
-```
-**7/7** _(view — ONLY post with the link)_ · 223 chars
-```
-Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
-
-https://thefourthangle.pages.dev/issue/2010
-```
-
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
@@ -370,44 +332,6 @@ Whether charges follow or not, the lesson is the payment desk: scrutiny that sto
 https://thefourthangle.pages.dev/issue/2005
 ```
 
-### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
-
-**1/7** _(hook — attach image, NO link)_ · 197 chars
-```
-Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
-```
-**2/7** _(fact)_ · 210 chars
-```
-Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
-```
-**3/7** _(fact)_ · 248 chars
-```
-Nearly two in five adults with diabetes in 2023 did not know they had it: 5.9 of the 15.6 points came from the survey's own blood test. Known diabetes edged up, from 9.4% in 2019 to 9.7%. The whole fall came in undiagnosed cases, from 8.9% to 5.9%.
-```
-**4/7** _(fact)_ · 189 chars
-```
-One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
-```
-**5/7** _(reframe)_ · 119 chars
-```
-One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
-```
-**6/7** _(analogy)_ · 178 chars
-```
-Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
-```
-**7/7** _(view — ONLY post with the link)_ · 127 chars
-```
-One better year in the diabetes data does not reverse a decade of getting heavier.
-
-https://thefourthangle.pages.dev/issue/2002
-```
-
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
 
 > ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
@@ -482,44 +406,6 @@ Think of a household whose repair bill drops because the dam meant to protect it
 The bill fell. The bill was ten times larger four years ago. The flood warning programme's first phase cost RM129 million, and Parliament's spending watchdog called it unjustified.
 
 https://thefourthangle.pages.dev/issue/1998
-```
-
-### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
-
-**1/7** _(hook — attach image, NO link)_ · 262 chars
-```
-MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion. Malay Mail, The Edge and Bernama carried the two figures in separate stories. West Asia is only 2.7% of total trade.
-```
-**2/7** _(fact)_ · 157 chars
-```
-DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia total is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
-```
-**3/7** _(fact)_ · 232 chars
-```
-Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. The UAE-Malaysia CEPA took effect only on 1 October 2025. Palm products were 62.4% of exports to Iran. The UAE deal targets US$13.5 billion non-oil trade by 2032.
-```
-**4/7** _(fact)_ · 158 chars
-```
-Reezal added a caveat: direct West Asia exposure stayed limited, but indirect costs (freight, war-risk premiums, goods prices) could weigh on competitiveness.
-```
-**5/7** _(reframe)_ · 171 chars
-```
-When 2.7% of trade can fall 30% without moving the headline, the question is not how bad the collapse looks. It is who counts as a lost market when the aggregate does not.
-```
-**6/7** _(analogy)_ · 161 chars
-```
-A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
-```
-**7/7** _(view — ONLY post with the link)_ · 127 chars
-```
-Both figures are true. The exporters who lost the channel are not in the headline.
-
-https://thefourthangle.pages.dev/issue/1996
 ```
 
 ### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
@@ -820,7 +706,7 @@ https://thefourthangle.pages.dev/issue/1984
 
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (pope leo leaves on emotional south america tour weeks after surgery. the 71-year-old head ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1983-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1983`
@@ -1190,44 +1076,6 @@ The vulnerability is real but leverage is underestimated. Malaysia lacks not opt
 https://thefourthangle.pages.dev/issue/1965
 ```
 
-### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
-
-**1/7** _(hook — attach image, NO link)_ · 259 chars
-```
-Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
-```
-**2/7** _(fact)_ · 143 chars
-```
-AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
-```
-**3/7** _(fact)_ · 145 chars
-```
-The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
-```
-**4/7** _(fact)_ · 253 chars
-```
-Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
-```
-**5/7** _(reframe)_ · 84 chars
-```
-The federal line asks what a centre computes, not how much water and power it draws.
-```
-**6/7** _(analogy)_ · 81 chars
-```
-Like a water ration that checks what each house is for, not what its meter reads.
-```
-**7/7** _(view — ONLY post with the link)_ · 175 chars
-```
-The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
-
-https://thefourthangle.pages.dev/issue/1963
-```
-
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 > ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
@@ -1300,40 +1148,6 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
-### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
-
-**1/6** _(hook — attach image, NO link)_ · 268 chars
-```
-Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
-```
-**2/6** _(fact)_ · 252 chars
-```
-Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
-```
-**3/6** _(fact)_ · 247 chars
-```
-The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
-```
-**4/6** _(fact)_ · 149 chars
-```
-Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
-```
-**5/6** _(reframe)_ · 160 chars
-```
-The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
-```
-**6/6** _(view — ONLY post with the link)_ · 217 chars
-```
-Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
-
-https://thefourthangle.pages.dev/issue/1956
-```
-
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
 
 > ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
@@ -1366,40 +1180,6 @@ The question is not whether to host this year. It is whether procurement for off
 Symbolic austerity is real signalling, but small in fiscal terms. A durable answer is published procurement and audited costs for official festive events, not an on-off switch.
 
 https://thefourthangle.pages.dev/issue/1955
-```
-
-### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
-
-**1/6** _(hook — attach image, NO link)_ · 112 chars
-```
-Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
-```
-**2/6** _(fact)_ · 138 chars
-```
-Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
-```
-**3/6** _(fact)_ · 266 chars
-```
-Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
-```
-**4/6** _(fact)_ · 120 chars
-```
-Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
-```
-**5/6** _(reframe)_ · 171 chars
-```
-The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
-```
-**6/6** _(view — ONLY post with the link)_ · 203 chars
-```
-Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
-
-https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
@@ -1502,40 +1282,6 @@ The real question is not how fast we reach 100% cashless. It is who gets left wi
 Malaysia has the rails. The next decade is about whether consumer protection catches up before more vulnerable users are pushed onto a system that cannot protect them.
 
 https://thefourthangle.pages.dev/issue/1887
-```
-
-### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
-
-> ⚡ **Reactive: topic is live in the radar** (maersk raises 2026 profit guidance again as rates stay high. maersk's third-quarter profit). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
-
-**1/6** _(hook — attach image, NO link)_ · 252 chars
-```
-1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.71 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from other asset recoveries.
-```
-**2/6** _(fact)_ · 244 chars
-```
-Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash plus a USD1.4 billion asset-recovery guarantee. It is the largest of Malaysia's three 1MDB bank settlements; AmBank paid RM2.83 billion and JPMorgan RM1.4 billion.
-```
-**3/6** _(fact)_ · 232 chars
-```
-Recovery flows from settlements with financial institutions and asset seizures across multiple jurisdictions. The US Department of Justice has separately recovered and returned about USD1.4 billion in 1MDB-linked assets to Malaysia.
-```
-**4/6** _(fact)_ · 123 chars
-```
-DOJ says more than USD4.5 billion was misappropriated. MACC's Malaysian estimate is RM42 billion misappropriated from 1MDB.
-```
-**5/6** _(reframe)_ · 145 chars
-```
-The recovery story is no longer 'how little came back'. It is whether the recovered funds reach public accounts and institutional reform follows.
-```
-**6/6** _(view — ONLY post with the link)_ · 201 chars
-```
-RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
-
-https://thefourthangle.pages.dev/issue/1867
 ```
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
@@ -1642,6 +1388,44 @@ Like a discount run by a retailer instead of a government voucher: the same hous
 If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
 
 https://thefourthangle.pages.dev/issue/1625
+```
+
+### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
+
+> ⚡ **Reactive: topic is live in the radar** (turkish parliament ratifies mecca defence pact. the pact links nato member turkey with pak). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
+```
+**2/7** _(fact)_ · 266 chars
+```
+The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
+```
+**3/7** _(fact)_ · 142 chars
+```
+The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
+```
+**4/7** _(fact)_ · 150 chars
+```
+Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
+```
+**6/7** _(analogy)_ · 144 chars
+```
+Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
+```
+**7/7** _(view — ONLY post with the link)_ · 198 chars
+```
+The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
+
+https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
@@ -2081,6 +1865,43 @@ A haze law would not put out the fires; Putrajaya said so in 2023. Its point was
 https://thefourthangle.pages.dev/issue/2011
 ```
 
+### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
+
+**1/7** _(hook — attach image, NO link)_ · 130 chars
+```
+Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
+```
+**2/7** _(fact)_ · 153 chars
+```
+The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
+```
+**3/7** _(fact)_ · 149 chars
+```
+PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
+```
+**4/7** _(fact)_ · 152 chars
+```
+One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
+```
+**6/7** _(analogy)_ · 148 chars
+```
+A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
+```
+**7/7** _(view — ONLY post with the link)_ · 223 chars
+```
+Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
+
+https://thefourthangle.pages.dev/issue/2010
+```
+
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
 
 - **Status:** PENDING
@@ -2155,6 +1976,43 @@ A government can set a target but not guarantee a harvest. Rice security is deci
 https://thefourthangle.pages.dev/issue/2003
 ```
 
+### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
+
+**1/7** _(hook — attach image, NO link)_ · 197 chars
+```
+Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
+```
+**2/7** _(fact)_ · 210 chars
+```
+Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
+```
+**3/7** _(fact)_ · 248 chars
+```
+Nearly two in five adults with diabetes in 2023 did not know they had it: 5.9 of the 15.6 points came from the survey's own blood test. Known diabetes edged up, from 9.4% in 2019 to 9.7%. The whole fall came in undiagnosed cases, from 8.9% to 5.9%.
+```
+**4/7** _(fact)_ · 189 chars
+```
+One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
+```
+**5/7** _(reframe)_ · 119 chars
+```
+One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
+```
+**6/7** _(analogy)_ · 178 chars
+```
+Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
+```
+**7/7** _(view — ONLY post with the link)_ · 127 chars
+```
+One better year in the diabetes data does not reverse a decade of getting heavier.
+
+https://thefourthangle.pages.dev/issue/2002
+```
+
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
 
 - **Status:** PENDING
@@ -2223,6 +2081,43 @@ Picture giving the umpire his own office, then still choosing him through a pane
 Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
 
 https://thefourthangle.pages.dev/issue/1997
+```
+
+### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
+
+**1/7** _(hook — attach image, NO link)_ · 262 chars
+```
+MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion. Malay Mail, The Edge and Bernama carried the two figures in separate stories. West Asia is only 2.7% of total trade.
+```
+**2/7** _(fact)_ · 157 chars
+```
+DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia total is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
+```
+**3/7** _(fact)_ · 232 chars
+```
+Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. The UAE-Malaysia CEPA took effect only on 1 October 2025. Palm products were 62.4% of exports to Iran. The UAE deal targets US$13.5 billion non-oil trade by 2032.
+```
+**4/7** _(fact)_ · 158 chars
+```
+Reezal added a caveat: direct West Asia exposure stayed limited, but indirect costs (freight, war-risk premiums, goods prices) could weigh on competitiveness.
+```
+**5/7** _(reframe)_ · 171 chars
+```
+When 2.7% of trade can fall 30% without moving the headline, the question is not how bad the collapse looks. It is who counts as a lost market when the aggregate does not.
+```
+**6/7** _(analogy)_ · 161 chars
+```
+A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
+```
+**7/7** _(view — ONLY post with the link)_ · 127 chars
+```
+Both figures are true. The exporters who lost the channel are not in the headline.
+
+https://thefourthangle.pages.dev/issue/1996
 ```
 
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
@@ -2571,6 +2466,43 @@ Whatever its political limits, the task now is making the DPP function as actual
 https://thefourthangle.pages.dev/issue/1966
 ```
 
+### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
+
+**1/7** _(hook — attach image, NO link)_ · 259 chars
+```
+Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
+```
+**2/7** _(fact)_ · 143 chars
+```
+AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
+```
+**3/7** _(fact)_ · 145 chars
+```
+The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
+```
+**4/7** _(fact)_ · 253 chars
+```
+Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
+```
+**5/7** _(reframe)_ · 84 chars
+```
+The federal line asks what a centre computes, not how much water and power it draws.
+```
+**6/7** _(analogy)_ · 81 chars
+```
+Like a water ration that checks what each house is for, not what its meter reads.
+```
+**7/7** _(view — ONLY post with the link)_ · 175 chars
+```
+The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
+
+https://thefourthangle.pages.dev/issue/1963
+```
+
 ### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
 
 - **Status:** PENDING
@@ -2707,6 +2639,39 @@ Like building a wall around a garden. The wall keeps competitors out, but it als
 https://thefourthangle.pages.dev/issue/1957
 ```
 
+### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
+
+**1/6** _(hook — attach image, NO link)_ · 268 chars
+```
+Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
+```
+**2/6** _(fact)_ · 252 chars
+```
+Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
+```
+**3/6** _(fact)_ · 247 chars
+```
+The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
+```
+**4/6** _(fact)_ · 149 chars
+```
+Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
+```
+**5/6** _(reframe)_ · 160 chars
+```
+The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
+```
+**6/6** _(view — ONLY post with the link)_ · 217 chars
+```
+Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
+
+https://thefourthangle.pages.dev/issue/1956
+```
+
 ### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
 
 - **Status:** PENDING
@@ -2738,6 +2703,39 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
+```
+
+### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
+
+**1/6** _(hook — attach image, NO link)_ · 112 chars
+```
+Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
+```
+**2/6** _(fact)_ · 138 chars
+```
+Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
+```
+**3/6** _(fact)_ · 266 chars
+```
+Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
+```
+**4/6** _(fact)_ · 120 chars
+```
+Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
+```
+**5/6** _(reframe)_ · 171 chars
+```
+The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
+```
+**6/6** _(view — ONLY post with the link)_ · 203 chars
+```
+Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
+
+https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
@@ -2806,6 +2804,39 @@ ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 2
 https://thefourthangle.pages.dev/issue/1871
 ```
 
+### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
+
+**1/6** _(hook — attach image, NO link)_ · 252 chars
+```
+1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.71 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from other asset recoveries.
+```
+**2/6** _(fact)_ · 244 chars
+```
+Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash plus a USD1.4 billion asset-recovery guarantee. It is the largest of Malaysia's three 1MDB bank settlements; AmBank paid RM2.83 billion and JPMorgan RM1.4 billion.
+```
+**3/6** _(fact)_ · 232 chars
+```
+Recovery flows from settlements with financial institutions and asset seizures across multiple jurisdictions. The US Department of Justice has separately recovered and returned about USD1.4 billion in 1MDB-linked assets to Malaysia.
+```
+**4/6** _(fact)_ · 123 chars
+```
+DOJ says more than USD4.5 billion was misappropriated. MACC's Malaysian estimate is RM42 billion misappropriated from 1MDB.
+```
+**5/6** _(reframe)_ · 145 chars
+```
+The recovery story is no longer 'how little came back'. It is whether the recovered funds reach public accounts and institutional reform follows.
+```
+**6/6** _(view — ONLY post with the link)_ · 201 chars
+```
+RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
+
+https://thefourthangle.pages.dev/issue/1867
+```
+
 ### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
 
 - **Status:** PENDING
@@ -2837,43 +2868,6 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
-```
-
-### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
-```
-**2/7** _(fact)_ · 266 chars
-```
-The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
-```
-**3/7** _(fact)_ · 142 chars
-```
-The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
-```
-**4/7** _(fact)_ · 150 chars
-```
-Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
-```
-**5/7** _(reframe)_ · 132 chars
-```
-The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
-```
-**6/7** _(analogy)_ · 144 chars
-```
-Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
-```
-**7/7** _(view — ONLY post with the link)_ · 198 chars
-```
-The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
-
-https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
