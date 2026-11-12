@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T10:12:17.101Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T12:16:23.156Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -182,6 +182,44 @@ After the audit the state funded Felda's recovery and sued over one of the eight
 Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
 
 https://thefourthangle.pages.dev/issue/2012
+```
+
+### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
+
+**1/7** _(hook — attach image, NO link)_ · 130 chars
+```
+Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
+```
+**2/7** _(fact)_ · 153 chars
+```
+The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
+```
+**3/7** _(fact)_ · 149 chars
+```
+PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
+```
+**4/7** _(fact)_ · 152 chars
+```
+One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
+```
+**6/7** _(analogy)_ · 148 chars
+```
+A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
+```
+**7/7** _(view — ONLY post with the link)_ · 223 chars
+```
+Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
+
+https://thefourthangle.pages.dev/issue/2010
 ```
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
@@ -406,6 +444,44 @@ Think of a household whose repair bill drops because the dam meant to protect it
 The bill fell. The bill was ten times larger four years ago. The flood warning programme's first phase cost RM129 million, and Parliament's spending watchdog called it unjustified.
 
 https://thefourthangle.pages.dev/issue/1998
+```
+
+### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
+
+**1/7** _(hook — attach image, NO link)_ · 262 chars
+```
+MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion. Malay Mail, The Edge and Bernama carried the two figures in separate stories. West Asia is only 2.7% of total trade.
+```
+**2/7** _(fact)_ · 157 chars
+```
+DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia total is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
+```
+**3/7** _(fact)_ · 232 chars
+```
+Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. The UAE-Malaysia CEPA took effect only on 1 October 2025. Palm products were 62.4% of exports to Iran. The UAE deal targets US$13.5 billion non-oil trade by 2032.
+```
+**4/7** _(fact)_ · 158 chars
+```
+Reezal added a caveat: direct West Asia exposure stayed limited, but indirect costs (freight, war-risk premiums, goods prices) could weigh on competitiveness.
+```
+**5/7** _(reframe)_ · 171 chars
+```
+When 2.7% of trade can fall 30% without moving the headline, the question is not how bad the collapse looks. It is who counts as a lost market when the aggregate does not.
+```
+**6/7** _(analogy)_ · 161 chars
+```
+A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
+```
+**7/7** _(view — ONLY post with the link)_ · 127 chars
+```
+Both figures are true. The exporters who lost the channel are not in the headline.
+
+https://thefourthangle.pages.dev/issue/1996
 ```
 
 ### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
@@ -936,44 +1012,6 @@ Three fixes close the gap: tiered deposit protection, capital requirements scali
 https://thefourthangle.pages.dev/issue/1975
 ```
 
-### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
-
-> ⚡ **Reactive: topic is live in the radar** (south korean audit reveals friction in us alliance as washington’s priorities shift. the p). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
-
-**1/7** _(hook — attach image, NO link)_ · 137 chars
-```
-One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
-```
-**2/7** _(fact)_ · 125 chars
-```
-Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
-```
-**3/7** _(fact)_ · 234 chars
-```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
-```
-**4/7** _(fact)_ · 160 chars
-```
-Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
-```
-**5/7** _(reframe)_ · 90 chars
-```
-Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
-
-https://thefourthangle.pages.dev/issue/1973
-```
-
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
 
 > ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
@@ -1182,6 +1220,74 @@ Symbolic austerity is real signalling, but small in fiscal terms. A durable answ
 https://thefourthangle.pages.dev/issue/1955
 ```
 
+### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
+
+**1/6** _(hook — attach image, NO link)_ · 112 chars
+```
+Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
+```
+**2/6** _(fact)_ · 138 chars
+```
+Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
+```
+**3/6** _(fact)_ · 266 chars
+```
+Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
+```
+**4/6** _(fact)_ · 120 chars
+```
+Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
+```
+**5/6** _(reframe)_ · 171 chars
+```
+The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
+```
+**6/6** _(view — ONLY post with the link)_ · 203 chars
+```
+Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
+
+https://thefourthangle.pages.dev/issue/1953
+```
+
+### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
+
+**1/6** _(hook — attach image, NO link)_ · 264 chars
+```
+From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
+```
+**2/6** _(fact)_ · 247 chars
+```
+Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
+```
+**3/6** _(fact)_ · 236 chars
+```
+Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
+```
+**4/6** _(fact)_ · 251 chars
+```
+E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
+```
+**5/6** _(reframe)_ · 135 chars
+```
+The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
+```
+**6/6** _(view — ONLY post with the link)_ · 210 chars
+```
+A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
+
+https://thefourthangle.pages.dev/issue/1952
+```
+
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
@@ -1282,6 +1388,40 @@ The real question is not how fast we reach 100% cashless. It is who gets left wi
 Malaysia has the rails. The next decade is about whether consumer protection catches up before more vulnerable users are pushed onto a system that cannot protect them.
 
 https://thefourthangle.pages.dev/issue/1887
+```
+
+### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
+
+**1/6** _(hook — attach image, NO link)_ · 252 chars
+```
+1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.71 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from other asset recoveries.
+```
+**2/6** _(fact)_ · 244 chars
+```
+Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash plus a USD1.4 billion asset-recovery guarantee. It is the largest of Malaysia's three 1MDB bank settlements; AmBank paid RM2.83 billion and JPMorgan RM1.4 billion.
+```
+**3/6** _(fact)_ · 232 chars
+```
+Recovery flows from settlements with financial institutions and asset seizures across multiple jurisdictions. The US Department of Justice has separately recovered and returned about USD1.4 billion in 1MDB-linked assets to Malaysia.
+```
+**4/6** _(fact)_ · 123 chars
+```
+DOJ says more than USD4.5 billion was misappropriated. MACC's Malaysian estimate is RM42 billion misappropriated from 1MDB.
+```
+**5/6** _(reframe)_ · 145 chars
+```
+The recovery story is no longer 'how little came back'. It is whether the recovered funds reach public accounts and institutional reform follows.
+```
+**6/6** _(view — ONLY post with the link)_ · 201 chars
+```
+RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
+
+https://thefourthangle.pages.dev/issue/1867
 ```
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
@@ -1610,6 +1750,44 @@ Genuine SOSMA reform requires disaggregated public reporting on arrests, duratio
 https://thefourthangle.pages.dev/issue/1241
 ```
 
+### Issue 1229 — Kampung Baru Master Redevelopment Remains Unrealised; PKB Has Delivered Smaller Projects
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1229-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1229`
+
+**1/7** _(hook — attach image, NO link)_ · 136 chars
+```
+Forty years of proposals, no master redevelopment delivered. PKB lists completed smaller projects; the comprehensive plan has not begun.
+```
+**2/7** _(fact)_ · 265 chars
+```
+Kampung Baru sits beside the KLCC core. Its land holds Malay Agricultural Settlement status, gazetted in 1900. In October 2025 the minister called overlapping ownership 'one of the biggest hurdles' for such land. A 2016 study adds small lots and inheritance claims.
+```
+**3/7** _(fact)_ · 136 chars
+```
+About 18,000 people lived in Kampung Baru in 2010, a 2016 study found. Many trace household ties to the 1899 founding of the settlement.
+```
+**4/7** _(fact)_ · 139 chars
+```
+PKB (Perbadanan Pembangunan Kampong Bharu), set up in 2012, has delivered specific projects but not the comprehensive master redevelopment.
+```
+**5/7** _(reframe)_ · 160 chars
+```
+Kampung Baru is not a real estate problem. It is the unresolved question of whether Malay heritage and KLCC-grade land economics can coexist on the same blocks.
+```
+**6/7** _(analogy)_ · 135 chars
+```
+Like a historic neighbourhood where the heirs and the city disagree on renovation: four decades of blueprints, only patchwork delivery.
+```
+**7/7** _(view — ONLY post with the link)_ · 197 chars
+```
+The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
+
+https://thefourthangle.pages.dev/issue/1229
+```
+
 ### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
@@ -1684,6 +1862,78 @@ Like eating your seed corn in a drought. It solves today's hunger but cuts into 
 Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
 
 https://thefourthangle.pages.dev/issue/1190
+```
+
+### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
+
+**1/6** _(hook — attach image, NO link)_ · 131 chars
+```
+Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
+```
+**2/6** _(fact)_ · 267 chars
+```
+FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
+```
+**3/6** _(fact)_ · 135 chars
+```
+ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
+```
+**4/6** _(fact)_ · 268 chars
+```
+PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
+```
+**5/6** _(reframe)_ · 165 chars
+```
+The interoperability question is already half-answered: DuitNow QR is the national standard. The harder questions are about fees, BNPL exposure, and who is left out.
+```
+**6/6** _(view — ONLY post with the link)_ · 199 chars
+```
+Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
+
+https://thefourthangle.pages.dev/issue/1146
+```
+
+### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
+
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
+
+**1/7** _(hook — attach image, NO link)_ · 132 chars
+```
+Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
+```
+**2/7** _(fact)_ · 124 chars
+```
+Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
+```
+**3/7** _(fact)_ · 112 chars
+```
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
+```
+**4/7** _(fact)_ · 148 chars
+```
+DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
+```
+**5/7** _(reframe)_ · 137 chars
+```
+The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
+```
+**6/7** _(analogy)_ · 269 chars
+```
+Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
+
+https://thefourthangle.pages.dev/issue/1128
 ```
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
@@ -1865,43 +2115,6 @@ A haze law would not put out the fires; Putrajaya said so in 2023. Its point was
 https://thefourthangle.pages.dev/issue/2011
 ```
 
-### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
-
-**1/7** _(hook — attach image, NO link)_ · 130 chars
-```
-Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
-```
-**2/7** _(fact)_ · 153 chars
-```
-The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
-```
-**3/7** _(fact)_ · 149 chars
-```
-PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
-```
-**4/7** _(fact)_ · 152 chars
-```
-One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
-```
-**6/7** _(analogy)_ · 148 chars
-```
-A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
-```
-**7/7** _(view — ONLY post with the link)_ · 223 chars
-```
-Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
-
-https://thefourthangle.pages.dev/issue/2010
-```
-
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
 
 - **Status:** PENDING
@@ -2081,43 +2294,6 @@ Picture giving the umpire his own office, then still choosing him through a pane
 Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
 
 https://thefourthangle.pages.dev/issue/1997
-```
-
-### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
-
-**1/7** _(hook — attach image, NO link)_ · 262 chars
-```
-MATRADE briefed two figures from one room on 21 April: March trade up 9.3% to RM272.95 billion, Q1 West Asia trade down 30.4% to RM21.41 billion. Malay Mail, The Edge and Bernama carried the two figures in separate stories. West Asia is only 2.7% of total trade.
-```
-**2/7** _(fact)_ · 157 chars
-```
-DOSM put Q1 2026 total trade at RM789.85 billion. The RM21.41 billion West Asia total is 2.7% of that: a 30% fall in a sliver the aggregate barely registers.
-```
-**3/7** _(fact)_ · 232 chars
-```
-Inside that number: palm oil to Iran collapsed 86.1% to RM90 million. The UAE-Malaysia CEPA took effect only on 1 October 2025. Palm products were 62.4% of exports to Iran. The UAE deal targets US$13.5 billion non-oil trade by 2032.
-```
-**4/7** _(fact)_ · 158 chars
-```
-Reezal added a caveat: direct West Asia exposure stayed limited, but indirect costs (freight, war-risk premiums, goods prices) could weigh on competitiveness.
-```
-**5/7** _(reframe)_ · 171 chars
-```
-When 2.7% of trade can fall 30% without moving the headline, the question is not how bad the collapse looks. It is who counts as a lost market when the aggregate does not.
-```
-**6/7** _(analogy)_ · 161 chars
-```
-A city reports downtown traffic up 9% in March while one neighbourhood loses a third of its shops. Both figures are true. The city map decides which one is news.
-```
-**7/7** _(view — ONLY post with the link)_ · 127 chars
-```
-Both figures are true. The exporters who lost the channel are not in the headline.
-
-https://thefourthangle.pages.dev/issue/1996
 ```
 
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
@@ -2365,6 +2541,43 @@ Like learning the building inspector is accused of taking bribes to skip the fir
 The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
 
 https://thefourthangle.pages.dev/issue/1974
+```
+
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
+
+**1/7** _(hook — attach image, NO link)_ · 137 chars
+```
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
+```
+**2/7** _(fact)_ · 125 chars
+```
+Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
+```
+**3/7** _(fact)_ · 234 chars
+```
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
+```
+**4/7** _(fact)_ · 160 chars
+```
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
+```
+**5/7** _(reframe)_ · 90 chars
+```
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
+
+https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
@@ -2705,72 +2918,6 @@ Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular 
 https://thefourthangle.pages.dev/issue/1954
 ```
 
-### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
-
-**1/6** _(hook — attach image, NO link)_ · 112 chars
-```
-Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
-```
-**2/6** _(fact)_ · 138 chars
-```
-Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
-```
-**3/6** _(fact)_ · 266 chars
-```
-Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
-```
-**4/6** _(fact)_ · 120 chars
-```
-Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
-```
-**5/6** _(reframe)_ · 171 chars
-```
-The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
-```
-**6/6** _(view — ONLY post with the link)_ · 203 chars
-```
-Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
-
-https://thefourthangle.pages.dev/issue/1953
-```
-
-### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
-
-**1/6** _(hook — attach image, NO link)_ · 264 chars
-```
-From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
-```
-**2/6** _(fact)_ · 247 chars
-```
-Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
-```
-**3/6** _(fact)_ · 236 chars
-```
-Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
-```
-**4/6** _(fact)_ · 251 chars
-```
-E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
-```
-**5/6** _(reframe)_ · 135 chars
-```
-The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
-```
-**6/6** _(view — ONLY post with the link)_ · 210 chars
-```
-A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
-
-https://thefourthangle.pages.dev/issue/1952
-```
-
 ### Issue 1871 — Lahad Datu at 13: no kidnappings since 2020, but ESSCOM's island base stalled at 41%
 
 - **Status:** PENDING
@@ -2802,39 +2949,6 @@ ESSCOM works. Its foundations do not: a base 41% built after a decade, and a sea
 ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 215 times makes a habit, not a plan.
 
 https://thefourthangle.pages.dev/issue/1871
-```
-
-### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
-
-**1/6** _(hook — attach image, NO link)_ · 252 chars
-```
-1MDB total recovery has reached RM31.3 billion, 74.5% of the RM42 billion MACC estimates was misappropriated. MOF October 2025: RM20.71 billion of that came from settlements with Goldman Sachs, AmBank and JPMorgan; the rest from other asset recoveries.
-```
-**2/6** _(fact)_ · 244 chars
-```
-Goldman Sachs agreed to a USD3.9 billion settlement in 2020: USD2.5 billion cash plus a USD1.4 billion asset-recovery guarantee. It is the largest of Malaysia's three 1MDB bank settlements; AmBank paid RM2.83 billion and JPMorgan RM1.4 billion.
-```
-**3/6** _(fact)_ · 232 chars
-```
-Recovery flows from settlements with financial institutions and asset seizures across multiple jurisdictions. The US Department of Justice has separately recovered and returned about USD1.4 billion in 1MDB-linked assets to Malaysia.
-```
-**4/6** _(fact)_ · 123 chars
-```
-DOJ says more than USD4.5 billion was misappropriated. MACC's Malaysian estimate is RM42 billion misappropriated from 1MDB.
-```
-**5/6** _(reframe)_ · 145 chars
-```
-The recovery story is no longer 'how little came back'. It is whether the recovered funds reach public accounts and institutional reform follows.
-```
-**6/6** _(view — ONLY post with the link)_ · 201 chars
-```
-RM31.3 billion recovered, 74.5% of estimated losses. The remaining test is whether the institutions that enabled the scandal have been structurally changed.
-
-https://thefourthangle.pages.dev/issue/1867
 ```
 
 ### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
@@ -3008,113 +3122,6 @@ The missing number is the story: UNICEF found 18,781 'invisible' children, and a
 Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
 
 https://thefourthangle.pages.dev/issue/1247
-```
-
-### Issue 1229 — Kampung Baru Master Redevelopment Remains Unrealised; PKB Has Delivered Smaller Projects
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1229-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1229`
-
-**1/7** _(hook — attach image, NO link)_ · 136 chars
-```
-Forty years of proposals, no master redevelopment delivered. PKB lists completed smaller projects; the comprehensive plan has not begun.
-```
-**2/7** _(fact)_ · 265 chars
-```
-Kampung Baru sits beside the KLCC core. Its land holds Malay Agricultural Settlement status, gazetted in 1900. In October 2025 the minister called overlapping ownership 'one of the biggest hurdles' for such land. A 2016 study adds small lots and inheritance claims.
-```
-**3/7** _(fact)_ · 136 chars
-```
-About 18,000 people lived in Kampung Baru in 2010, a 2016 study found. Many trace household ties to the 1899 founding of the settlement.
-```
-**4/7** _(fact)_ · 139 chars
-```
-PKB (Perbadanan Pembangunan Kampong Bharu), set up in 2012, has delivered specific projects but not the comprehensive master redevelopment.
-```
-**5/7** _(reframe)_ · 160 chars
-```
-Kampung Baru is not a real estate problem. It is the unresolved question of whether Malay heritage and KLCC-grade land economics can coexist on the same blocks.
-```
-**6/7** _(analogy)_ · 135 chars
-```
-Like a historic neighbourhood where the heirs and the city disagree on renovation: four decades of blueprints, only patchwork delivery.
-```
-**7/7** _(view — ONLY post with the link)_ · 197 chars
-```
-The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
-
-https://thefourthangle.pages.dev/issue/1229
-```
-
-### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
-
-**1/6** _(hook — attach image, NO link)_ · 131 chars
-```
-Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
-```
-**2/6** _(fact)_ · 267 chars
-```
-FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
-```
-**3/6** _(fact)_ · 135 chars
-```
-ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
-```
-**4/6** _(fact)_ · 268 chars
-```
-PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
-```
-**5/6** _(reframe)_ · 165 chars
-```
-The interoperability question is already half-answered: DuitNow QR is the national standard. The harder questions are about fees, BNPL exposure, and who is left out.
-```
-**6/6** _(view — ONLY post with the link)_ · 199 chars
-```
-Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
-
-https://thefourthangle.pages.dev/issue/1146
-```
-
-### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
-
-**1/7** _(hook — attach image, NO link)_ · 132 chars
-```
-Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
-```
-**2/7** _(fact)_ · 124 chars
-```
-Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
-```
-**3/7** _(fact)_ · 112 chars
-```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
-```
-**4/7** _(fact)_ · 148 chars
-```
-DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
-```
-**5/7** _(reframe)_ · 137 chars
-```
-The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
-```
-**6/7** _(analogy)_ · 269 chars
-```
-Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
-
-https://thefourthangle.pages.dev/issue/1128
 ```
 
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
