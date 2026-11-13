@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-13T12:15:08.753Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-13T14:13:16.397Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -108,6 +108,40 @@ Malaysia can stay out of Washington's sanctions and still guard its own label. P
 https://thefourthangle.pages.dev/issue/2017
 ```
 
+### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2016-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2016`
+
+**1/6** _(hook — attach image, NO link)_ · 163 chars
+```
+Google pledged US$15b on 4 Nov and to pay 100% of its campuses' power. Who pays is now written into data-centre rules. Who gets heard rests on older, general ones.
+```
+**2/6** _(fact)_ · 150 chars
+```
+RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul to list data centres for a public-display EIA. The 2015 Order has none.
+```
+**3/6** _(fact)_ · 126 chars
+```
+By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.
+```
+**4/6** _(fact)_ · 213 chars
+```
+In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists. Elsewhere the statutory window is the local plan's drafting stage.
+```
+**5/6** _(reframe)_ · 156 chars
+```
+In the Peninsula, a data centre now has its own water-tariff category. It still has no category in the EIA Order, which decides what goes on public display.
+```
+**6/6** _(view — ONLY post with the link)_ · 160 chars
+```
+The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
+
+https://thefourthangle.pages.dev/issue/2016
+```
+
 ### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
@@ -184,40 +218,6 @@ The fine is raised in an account only party members may see, under a law that do
 https://thefourthangle.pages.dev/issue/2013
 ```
 
-### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
-
-> ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
-
-**1/6** _(hook — attach image, NO link)_ · 248 chars
-```
-Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
-```
-**2/6** _(fact)_ · 111 chars
-```
-Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
-```
-**3/6** _(fact)_ · 247 chars
-```
-Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
-```
-**4/6** _(fact)_ · 150 chars
-```
-MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
-```
-**6/6** _(view — ONLY post with the link)_ · 162 chars
-```
-Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
-
-https://thefourthangle.pages.dev/issue/2012
-```
-
 ### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
 
 > ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
@@ -254,44 +254,6 @@ It is like a town that keeps drafting a fire code, files it away when the neighb
 A haze law would not put out the fires; Putrajaya said so in 2023. Its point was to tell Malaysian planters abroad the smoke follows them home. Two governments declined to say it.
 
 https://thefourthangle.pages.dev/issue/2011
-```
-
-### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
-
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
-
-**1/7** _(hook — attach image, NO link)_ · 130 chars
-```
-Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
-```
-**2/7** _(fact)_ · 153 chars
-```
-The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
-```
-**3/7** _(fact)_ · 149 chars
-```
-PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
-```
-**4/7** _(fact)_ · 152 chars
-```
-One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
-```
-**6/7** _(analogy)_ · 148 chars
-```
-A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
-```
-**7/7** _(view — ONLY post with the link)_ · 223 chars
-```
-Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
-
-https://thefourthangle.pages.dev/issue/2010
 ```
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
@@ -372,7 +334,7 @@ https://thefourthangle.pages.dev/issue/2007
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
 
-> ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
@@ -628,6 +590,44 @@ Singapore charged four people, then four companies. Malaysia wrote a permit. Twe
 https://thefourthangle.pages.dev/issue/1995
 ```
 
+### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
+
+**1/7** _(hook — attach image, NO link)_ · 263 chars
+```
+Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
+```
+**2/7** _(fact)_ · 256 chars
+```
+Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
+```
+**3/7** _(fact)_ · 262 chars
+```
+Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
+```
+**4/7** _(fact)_ · 268 chars
+```
+Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
+```
+**5/7** _(reframe)_ · 114 chars
+```
+Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
+```
+**6/7** _(analogy)_ · 227 chars
+```
+Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
+```
+**7/7** _(view — ONLY post with the link)_ · 180 chars
+```
+The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
+
+https://thefourthangle.pages.dev/issue/1994
+```
+
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
@@ -702,6 +702,40 @@ Like a referee's match report contested by both teams, where the only neutral ar
 Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
 
 https://thefourthangle.pages.dev/issue/1992
+```
+
+### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
+
+> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1991-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1991`
+
+**1/6** _(hook — attach image, NO link)_ · 251 chars
+```
+On 7 April 2026, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill: 'mediation over punishment'. Three earlier NUCC bills drafted in 2014 were shelved by 2020. The named comparators have track records worth reading.
+```
+**2/6** _(fact)_ · 170 chars
+```
+Najib pledged in 2012 to repeal the Sedition Act. Anwar's coalition pledged repeal in 2018, narrowed it to 'draconian provisions' in 2022, then withdrew in November 2023.
+```
+**3/6** _(fact)_ · 125 chars
+```
+Singapore's Maintenance of Religious Harmony Act took effect in 1992. By 2019, no restraining order had been issued under it.
+```
+**4/6** _(fact)_ · 141 chars
+```
+Zimbabwe's National Peace and Reconciliation Commission closed in 2023 with no Gukurahundi outcome. Its enabling Act took five years to pass.
+```
+**5/6** _(reframe)_ · 99 chars
+```
+After four attempts in 14 years, the Harmony Bill is back in draft. The Sedition Act repeal is not.
+```
+**6/6** _(view — ONLY post with the link)_ · 224 chars
+```
+Singapore's Act issued no restraining order in its first 27 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
+
+https://thefourthangle.pages.dev/issue/1991
 ```
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
@@ -1194,6 +1228,40 @@ The fix exists: open tendering, employer-pays enforcement, cooperation with Bang
 https://thefourthangle.pages.dev/issue/1973
 ```
 
+### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
+
+> ⚡ **Reactive: topic is live in the radar** (brace for early ge16 if bn-pn wins melaka, says samsuri. pn chairman says it could set off). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
+
+**1/6** _(hook — attach image, NO link)_ · 126 chars
+```
+RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
+```
+**2/6** _(fact)_ · 118 chars
+```
+The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
+```
+**3/6** _(fact)_ · 124 chars
+```
+76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
+```
+**4/6** _(fact)_ · 187 chars
+```
+The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
+```
+**5/6** _(reframe)_ · 138 chars
+```
+The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
+```
+**6/6** _(view — ONLY post with the link)_ · 197 chars
+```
+Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
+
+https://thefourthangle.pages.dev/issue/1972
+```
+
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
 > ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
@@ -1260,6 +1328,44 @@ The court victory was a trap. IEEPA tariffs fell, and Section 301 duties, if imp
 The vulnerability is real but leverage is underestimated. Malaysia lacks not options but political will to convert CPTPP, RCEP, and the NSSP into actual strategy.
 
 https://thefourthangle.pages.dev/issue/1965
+```
+
+### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
+
+> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
+
+**1/7** _(hook — attach image, NO link)_ · 259 chars
+```
+Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
+```
+**2/7** _(fact)_ · 143 chars
+```
+AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
+```
+**3/7** _(fact)_ · 145 chars
+```
+The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
+```
+**4/7** _(fact)_ · 253 chars
+```
+Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
+```
+**5/7** _(reframe)_ · 84 chars
+```
+The federal line asks what a centre computes, not how much water and power it draws.
+```
+**6/7** _(analogy)_ · 81 chars
+```
+Like a water ration that checks what each house is for, not what its meter reads.
+```
+**7/7** _(view — ONLY post with the link)_ · 175 chars
+```
+The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
+
+https://thefourthangle.pages.dev/issue/1963
 ```
 
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
@@ -1334,9 +1440,81 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
+### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1958-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1958`
+
+**1/6** _(hook — attach image, NO link)_ · 125 chars
+```
+A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
+```
+**2/6** _(fact)_ · 253 chars
+```
+149 DUI crash cases charged from 2021 to September 2024. 1,261 DUI convictions in 11 months of 2025. Neither figure counts breath tests. The 149 covers Section 44 only (death or injury). The 1,261 spans Sections 44, 45 and 45A, January to November 2025.
+```
+**3/6** _(fact)_ · 134 chars
+```
+12 fatal crashes caused by drunk road users in 2024, 0.19% of all fatal crashes. Testing is discretionary. The real number is unknown.
+```
+**4/6** _(fact)_ · 134 chars
+```
+4,340 motorcyclists killed in 2025. 13.7% of accidents, 66.4% of deaths. The gig economy's youngest workers on the deadliest vehicles.
+```
+**5/6** _(reframe)_ · 164 chars
+```
+Penalties already exist. The real question is whether Malaysia detects drunk drivers before they kill, and whether alcohol is even the main killer of motorcyclists.
+```
+**6/6** _(view — ONLY post with the link)_ · 224 chars
+```
+Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
+
+https://thefourthangle.pages.dev/issue/1958
+```
+
+### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
+
+> ⚡ **Reactive: topic is live in the radar** (brace for early ge16 if bn-pn wins melaka, says samsuri. pn chairman says it could set off). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+MITI set an RM200K floor and an 80% export rule. BYD's Tanjung Malim plan stalled. In Thailand, BYD opened a plant in 2024.
+```
+**2/7** _(fact)_ · 125 chars
+```
+MITI's rule puts any Tanjung Malim-built BYD sold here above RM200K. BYD's imported Dolphin and Atto 3 already sell for less.
+```
+**3/7** _(fact)_ · 98 chars
+```
+MITI minister Johari Abdul Ghani said the conditions protect a car industry of about 700,000 jobs.
+```
+**4/7** _(fact)_ · 149 chars
+```
+Thailand set conditions too: EV makers on its subsidy scheme had to build one car locally for each import in 2024. BYD's Thai plant opened that July.
+```
+**5/7** _(reframe)_ · 29 chars
+```
+Who is the wall actually for?
+```
+**6/7** _(analogy)_ · 121 chars
+```
+Like building a wall around a garden. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
+```
+**7/7** _(view — ONLY post with the link)_ · 146 chars
+```
+700,000 jobs deserve an honest transition, not a price floor that cordons off the affordable segment.
+
+https://thefourthangle.pages.dev/issue/1957
+```
+
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
 
-> ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1955-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1955`
@@ -1400,40 +1578,6 @@ The question is not whether external shocks are real. It is whether Malaysia has
 Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
 
 https://thefourthangle.pages.dev/issue/1953
-```
-
-### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
-
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
-
-**1/6** _(hook — attach image, NO link)_ · 264 chars
-```
-From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
-```
-**2/6** _(fact)_ · 247 chars
-```
-Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
-```
-**3/6** _(fact)_ · 236 chars
-```
-Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
-```
-**4/6** _(fact)_ · 251 chars
-```
-E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
-```
-**5/6** _(reframe)_ · 135 chars
-```
-The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
-```
-**6/6** _(view — ONLY post with the link)_ · 210 chars
-```
-A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
-
-https://thefourthangle.pages.dev/issue/1952
 ```
 
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
@@ -1678,44 +1822,6 @@ If the discount is a national priority, the fairer debate is whether to fund it 
 https://thefourthangle.pages.dev/issue/1625
 ```
 
-### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
-
-> ⚡ **Reactive: topic is live in the radar** (turkish parliament ratifies mecca defence pact. the pact links nato member turkey with pak). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
-```
-**2/7** _(fact)_ · 266 chars
-```
-The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
-```
-**3/7** _(fact)_ · 142 chars
-```
-The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
-```
-**4/7** _(fact)_ · 150 chars
-```
-Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
-```
-**5/7** _(reframe)_ · 132 chars
-```
-The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
-```
-**6/7** _(analogy)_ · 144 chars
-```
-Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
-```
-**7/7** _(view — ONLY post with the link)_ · 198 chars
-```
-The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
-
-https://thefourthangle.pages.dev/issue/1618
-```
-
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
 > ⚡ **Reactive: topic is live in the radar** (free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint m). Post now, don't wait for a slot.
@@ -1896,7 +2002,7 @@ https://thefourthangle.pages.dev/issue/1265
 
 ### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
 
-> ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1241-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1241`
@@ -1930,44 +2036,6 @@ Like a 28-day holding cell where one in four to five occupants is released with 
 Genuine SOSMA reform requires disaggregated public reporting on arrests, durations, charges and outcomes, not just renewal debates every five years.
 
 https://thefourthangle.pages.dev/issue/1241
-```
-
-### Issue 1229 — Kampung Baru Master Redevelopment Remains Unrealised; PKB Has Delivered Smaller Projects
-
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1229-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1229`
-
-**1/7** _(hook — attach image, NO link)_ · 136 chars
-```
-Forty years of proposals, no master redevelopment delivered. PKB lists completed smaller projects; the comprehensive plan has not begun.
-```
-**2/7** _(fact)_ · 265 chars
-```
-Kampung Baru sits beside the KLCC core. Its land holds Malay Agricultural Settlement status, gazetted in 1900. In October 2025 the minister called overlapping ownership 'one of the biggest hurdles' for such land. A 2016 study adds small lots and inheritance claims.
-```
-**3/7** _(fact)_ · 136 chars
-```
-About 18,000 people lived in Kampung Baru in 2010, a 2016 study found. Many trace household ties to the 1899 founding of the settlement.
-```
-**4/7** _(fact)_ · 139 chars
-```
-PKB (Perbadanan Pembangunan Kampong Bharu), set up in 2012, has delivered specific projects but not the comprehensive master redevelopment.
-```
-**5/7** _(reframe)_ · 160 chars
-```
-Kampung Baru is not a real estate problem. It is the unresolved question of whether Malay heritage and KLCC-grade land economics can coexist on the same blocks.
-```
-**6/7** _(analogy)_ · 135 chars
-```
-Like a historic neighbourhood where the heirs and the city disagree on renovation: four decades of blueprints, only patchwork delivery.
-```
-**7/7** _(view — ONLY post with the link)_ · 197 chars
-```
-The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
-
-https://thefourthangle.pages.dev/issue/1229
 ```
 
 ### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
@@ -2008,81 +2076,9 @@ PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-
 https://thefourthangle.pages.dev/issue/1201
 ```
 
-### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
-
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
-
-**1/7** _(hook — attach image, NO link)_ · 234 chars
-```
-RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
-```
-**2/7** _(fact)_ · 269 chars
-```
-Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
-```
-**3/7** _(fact)_ · 225 chars
-```
-Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
-```
-**4/7** _(fact)_ · 154 chars
-```
-Around 36% of active formal EPF members met the RM240,000 basic-savings benchmark in 2024. The new RIA framework targets RM390,000 as the new basic floor.
-```
-**5/7** _(reframe)_ · 141 chars
-```
-Calling it 'flexible savings' does not change the math. Ringgit withdrawn today and not replenished compound into a larger gap at retirement.
-```
-**6/7** _(analogy)_ · 186 chars
-```
-Like eating your seed corn in a drought. It solves today's hunger but cuts into next year's harvest. Withdrawn ringgit, unless replenished, no longer earn EPF dividends until retirement.
-```
-**7/7** _(view — ONLY post with the link)_ · 218 chars
-```
-Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
-
-https://thefourthangle.pages.dev/issue/1190
-```
-
-### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
-
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
-
-**1/6** _(hook — attach image, NO link)_ · 131 chars
-```
-Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
-```
-**2/6** _(fact)_ · 267 chars
-```
-FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
-```
-**3/6** _(fact)_ · 135 chars
-```
-ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
-```
-**4/6** _(fact)_ · 268 chars
-```
-PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
-```
-**5/6** _(reframe)_ · 165 chars
-```
-The interoperability question is already half-answered: DuitNow QR is the national standard. The harder questions are about fees, BNPL exposure, and who is left out.
-```
-**6/6** _(view — ONLY post with the link)_ · 199 chars
-```
-Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
-
-https://thefourthangle.pages.dev/issue/1146
-```
-
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
 
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
@@ -2194,37 +2190,74 @@ Either amend the Constitution to give DOE enforcement power, or make conservatio
 https://thefourthangle.pages.dev/issue/1043
 ```
 
-### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
+### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2016-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2016`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
 
-**1/6** _(hook — attach image, NO link)_ · 163 chars
+**1/6** _(hook — attach image, NO link)_ · 248 chars
 ```
-Google pledged US$15b on 4 Nov and to pay 100% of its campuses' power. Who pays is now written into data-centre rules. Who gets heard rests on older, general ones.
+Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
 ```
-**2/6** _(fact)_ · 150 chars
+**2/6** _(fact)_ · 111 chars
 ```
-RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul to list data centres for a public-display EIA. The 2015 Order has none.
+Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
 ```
-**3/6** _(fact)_ · 126 chars
+**3/6** _(fact)_ · 247 chars
 ```
-By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.
+Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
 ```
-**4/6** _(fact)_ · 213 chars
+**4/6** _(fact)_ · 150 chars
 ```
-In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists. Elsewhere the statutory window is the local plan's drafting stage.
+MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
 ```
-**5/6** _(reframe)_ · 156 chars
+**5/6** _(reframe)_ · 151 chars
 ```
-In the Peninsula, a data centre now has its own water-tariff category. It still has no category in the EIA Order, which decides what goes on public display.
+After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
 ```
-**6/6** _(view — ONLY post with the link)_ · 160 chars
+**6/6** _(view — ONLY post with the link)_ · 162 chars
 ```
-The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
+Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
 
-https://thefourthangle.pages.dev/issue/2016
+https://thefourthangle.pages.dev/issue/2012
+```
+
+### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
+
+**1/7** _(hook — attach image, NO link)_ · 130 chars
+```
+Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
+```
+**2/7** _(fact)_ · 153 chars
+```
+The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
+```
+**3/7** _(fact)_ · 149 chars
+```
+PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
+```
+**4/7** _(fact)_ · 152 chars
+```
+One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
+```
+**6/7** _(analogy)_ · 148 chars
+```
+A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
+```
+**7/7** _(view — ONLY post with the link)_ · 223 chars
+```
+Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
+
+https://thefourthangle.pages.dev/issue/2010
 ```
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
@@ -2375,76 +2408,6 @@ Eight years to agree on splitting the office. Deciding who confirms the new pros
 https://thefourthangle.pages.dev/issue/1997
 ```
 
-### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
-
-**1/7** _(hook — attach image, NO link)_ · 263 chars
-```
-Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
-```
-**2/7** _(fact)_ · 256 chars
-```
-Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
-```
-**3/7** _(fact)_ · 262 chars
-```
-Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
-```
-**4/7** _(fact)_ · 268 chars
-```
-Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
-```
-**5/7** _(reframe)_ · 114 chars
-```
-Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
-```
-**6/7** _(analogy)_ · 227 chars
-```
-Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
-```
-**7/7** _(view — ONLY post with the link)_ · 180 chars
-```
-The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
-
-https://thefourthangle.pages.dev/issue/1994
-```
-
-### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1991-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1991`
-
-**1/6** _(hook — attach image, NO link)_ · 251 chars
-```
-On 7 April 2026, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill: 'mediation over punishment'. Three earlier NUCC bills drafted in 2014 were shelved by 2020. The named comparators have track records worth reading.
-```
-**2/6** _(fact)_ · 170 chars
-```
-Najib pledged in 2012 to repeal the Sedition Act. Anwar's coalition pledged repeal in 2018, narrowed it to 'draconian provisions' in 2022, then withdrew in November 2023.
-```
-**3/6** _(fact)_ · 125 chars
-```
-Singapore's Maintenance of Religious Harmony Act took effect in 1992. By 2019, no restraining order had been issued under it.
-```
-**4/6** _(fact)_ · 141 chars
-```
-Zimbabwe's National Peace and Reconciliation Commission closed in 2023 with no Gukurahundi outcome. Its enabling Act took five years to pass.
-```
-**5/6** _(reframe)_ · 99 chars
-```
-After four attempts in 14 years, the Harmony Bill is back in draft. The Sedition Act repeal is not.
-```
-**6/6** _(view — ONLY post with the link)_ · 224 chars
-```
-Singapore's Act issued no restraining order in its first 27 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
-
-https://thefourthangle.pages.dev/issue/1991
-```
-
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
 
 - **Status:** PENDING
@@ -2585,39 +2548,6 @@ The fix is independent environmental courts and community standing to challenge 
 https://thefourthangle.pages.dev/issue/1974
 ```
 
-### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
-
-**1/6** _(hook — attach image, NO link)_ · 126 chars
-```
-RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
-```
-**2/6** _(fact)_ · 118 chars
-```
-The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
-```
-**3/6** _(fact)_ · 124 chars
-```
-76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
-```
-**4/6** _(fact)_ · 187 chars
-```
-The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
-```
-**5/6** _(reframe)_ · 138 chars
-```
-The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
-```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
-```
-Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
-
-https://thefourthangle.pages.dev/issue/1972
-```
-
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
 
 - **Status:** PENDING
@@ -2717,43 +2647,6 @@ Whatever its political limits, the task now is making the DPP function as actual
 https://thefourthangle.pages.dev/issue/1966
 ```
 
-### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
-
-**1/7** _(hook — attach image, NO link)_ · 259 chars
-```
-Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
-```
-**2/7** _(fact)_ · 143 chars
-```
-AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
-```
-**3/7** _(fact)_ · 145 chars
-```
-The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
-```
-**4/7** _(fact)_ · 253 chars
-```
-Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
-```
-**5/7** _(reframe)_ · 84 chars
-```
-The federal line asks what a centre computes, not how much water and power it draws.
-```
-**6/7** _(analogy)_ · 81 chars
-```
-Like a water ration that checks what each house is for, not what its meter reads.
-```
-**7/7** _(view — ONLY post with the link)_ · 175 chars
-```
-The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
-
-https://thefourthangle.pages.dev/issue/1963
-```
-
 ### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
 
 - **Status:** PENDING
@@ -2818,76 +2711,6 @@ The real question is not who owns Sabah. Self-determination and 63 years of stat
 Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
 
 https://thefourthangle.pages.dev/issue/1959
-```
-
-### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1958-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1958`
-
-**1/6** _(hook — attach image, NO link)_ · 125 chars
-```
-A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
-```
-**2/6** _(fact)_ · 253 chars
-```
-149 DUI crash cases charged from 2021 to September 2024. 1,261 DUI convictions in 11 months of 2025. Neither figure counts breath tests. The 149 covers Section 44 only (death or injury). The 1,261 spans Sections 44, 45 and 45A, January to November 2025.
-```
-**3/6** _(fact)_ · 134 chars
-```
-12 fatal crashes caused by drunk road users in 2024, 0.19% of all fatal crashes. Testing is discretionary. The real number is unknown.
-```
-**4/6** _(fact)_ · 134 chars
-```
-4,340 motorcyclists killed in 2025. 13.7% of accidents, 66.4% of deaths. The gig economy's youngest workers on the deadliest vehicles.
-```
-**5/6** _(reframe)_ · 164 chars
-```
-Penalties already exist. The real question is whether Malaysia detects drunk drivers before they kill, and whether alcohol is even the main killer of motorcyclists.
-```
-**6/6** _(view — ONLY post with the link)_ · 224 chars
-```
-Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
-
-https://thefourthangle.pages.dev/issue/1958
-```
-
-### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-MITI set an RM200K floor and an 80% export rule. BYD's Tanjung Malim plan stalled. In Thailand, BYD opened a plant in 2024.
-```
-**2/7** _(fact)_ · 125 chars
-```
-MITI's rule puts any Tanjung Malim-built BYD sold here above RM200K. BYD's imported Dolphin and Atto 3 already sell for less.
-```
-**3/7** _(fact)_ · 98 chars
-```
-MITI minister Johari Abdul Ghani said the conditions protect a car industry of about 700,000 jobs.
-```
-**4/7** _(fact)_ · 149 chars
-```
-Thailand set conditions too: EV makers on its subsidy scheme had to build one car locally for each import in 2024. BYD's Thai plant opened that July.
-```
-**5/7** _(reframe)_ · 29 chars
-```
-Who is the wall actually for?
-```
-**6/7** _(analogy)_ · 121 chars
-```
-Like building a wall around a garden. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
-```
-**7/7** _(view — ONLY post with the link)_ · 146 chars
-```
-700,000 jobs deserve an honest transition, not a price floor that cordons off the affordable segment.
-
-https://thefourthangle.pages.dev/issue/1957
 ```
 
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
@@ -2956,6 +2779,39 @@ Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular 
 https://thefourthangle.pages.dev/issue/1954
 ```
 
+### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
+
+**1/6** _(hook — attach image, NO link)_ · 264 chars
+```
+From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
+```
+**2/6** _(fact)_ · 247 chars
+```
+Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
+```
+**3/6** _(fact)_ · 236 chars
+```
+Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
+```
+**4/6** _(fact)_ · 251 chars
+```
+E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
+```
+**5/6** _(reframe)_ · 135 chars
+```
+The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
+```
+**6/6** _(view — ONLY post with the link)_ · 210 chars
+```
+A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
+
+https://thefourthangle.pages.dev/issue/1952
+```
+
 ### Issue 1871 — Lahad Datu at 13: no kidnappings since 2020, but ESSCOM's island base stalled at 41%
 
 - **Status:** PENDING
@@ -3020,6 +2876,43 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
+```
+
+### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
+```
+**2/7** _(fact)_ · 266 chars
+```
+The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
+```
+**3/7** _(fact)_ · 142 chars
+```
+The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
+```
+**4/7** _(fact)_ · 150 chars
+```
+Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
+```
+**6/7** _(analogy)_ · 144 chars
+```
+Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
+```
+**7/7** _(view — ONLY post with the link)_ · 198 chars
+```
+The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
+
+https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
@@ -3127,6 +3020,113 @@ The missing number is the story: UNICEF found 18,781 'invisible' children, and a
 Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
 
 https://thefourthangle.pages.dev/issue/1247
+```
+
+### Issue 1229 — Kampung Baru Master Redevelopment Remains Unrealised; PKB Has Delivered Smaller Projects
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1229-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1229`
+
+**1/7** _(hook — attach image, NO link)_ · 136 chars
+```
+Forty years of proposals, no master redevelopment delivered. PKB lists completed smaller projects; the comprehensive plan has not begun.
+```
+**2/7** _(fact)_ · 265 chars
+```
+Kampung Baru sits beside the KLCC core. Its land holds Malay Agricultural Settlement status, gazetted in 1900. In October 2025 the minister called overlapping ownership 'one of the biggest hurdles' for such land. A 2016 study adds small lots and inheritance claims.
+```
+**3/7** _(fact)_ · 136 chars
+```
+About 18,000 people lived in Kampung Baru in 2010, a 2016 study found. Many trace household ties to the 1899 founding of the settlement.
+```
+**4/7** _(fact)_ · 139 chars
+```
+PKB (Perbadanan Pembangunan Kampong Bharu), set up in 2012, has delivered specific projects but not the comprehensive master redevelopment.
+```
+**5/7** _(reframe)_ · 160 chars
+```
+Kampung Baru is not a real estate problem. It is the unresolved question of whether Malay heritage and KLCC-grade land economics can coexist on the same blocks.
+```
+**6/7** _(analogy)_ · 135 chars
+```
+Like a historic neighbourhood where the heirs and the city disagree on renovation: four decades of blueprints, only patchwork delivery.
+```
+**7/7** _(view — ONLY post with the link)_ · 197 chars
+```
+The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
+
+https://thefourthangle.pages.dev/issue/1229
+```
+
+### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
+
+**1/7** _(hook — attach image, NO link)_ · 234 chars
+```
+RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
+```
+**2/7** _(fact)_ · 269 chars
+```
+Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
+```
+**3/7** _(fact)_ · 225 chars
+```
+Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
+```
+**4/7** _(fact)_ · 154 chars
+```
+Around 36% of active formal EPF members met the RM240,000 basic-savings benchmark in 2024. The new RIA framework targets RM390,000 as the new basic floor.
+```
+**5/7** _(reframe)_ · 141 chars
+```
+Calling it 'flexible savings' does not change the math. Ringgit withdrawn today and not replenished compound into a larger gap at retirement.
+```
+**6/7** _(analogy)_ · 186 chars
+```
+Like eating your seed corn in a drought. It solves today's hunger but cuts into next year's harvest. Withdrawn ringgit, unless replenished, no longer earn EPF dividends until retirement.
+```
+**7/7** _(view — ONLY post with the link)_ · 218 chars
+```
+Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
+
+https://thefourthangle.pages.dev/issue/1190
+```
+
+### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
+
+**1/6** _(hook — attach image, NO link)_ · 131 chars
+```
+Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
+```
+**2/6** _(fact)_ · 267 chars
+```
+FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
+```
+**3/6** _(fact)_ · 135 chars
+```
+ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
+```
+**4/6** _(fact)_ · 268 chars
+```
+PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
+```
+**5/6** _(reframe)_ · 165 chars
+```
+The interoperability question is already half-answered: DuitNow QR is the national standard. The harder questions are about fees, BNPL exposure, and who is left out.
+```
+**6/6** _(view — ONLY post with the link)_ · 199 chars
+```
+Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
+
+https://thefourthangle.pages.dev/issue/1146
 ```
 
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
