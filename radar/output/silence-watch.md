@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-11-12 22:11 UTC. Queue size: 605. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-11-13 00:26 UTC. Queue size: 585. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -38,139 +38,150 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** economic, ethnic, political
 
 
-### F2. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
+### F2. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
+
+- **Fresh score:** 0.660 (silence=0.99 × importance=0.67, no age weighting)
+
+- **Age in queue:** 0.0 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
+
+
+### F3. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
 
 - **Fresh score:** 0.609 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 5 news, 8 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
 
-### F3. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
+### F4. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
 
 - **Fresh score:** 0.606 (silence=0.95 × importance=0.64, no age weighting)
 
-- **Age in queue:** 6.5 days (source date: 2026-11-07, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-07, first seen: 2026-11-06)
 
 - **Coverage:** 70 news, 25 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, environmental, ethnic, political
 
 
-### F4. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
+### F5. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
 
 - **Fresh score:** 0.606 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 6.4 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 18 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F5. wuxi apptec removed from pentagon’s chinese military list. a federal court in washington barred the us defe...
+### F6. wuxi apptec removed from pentagon’s chinese military list. a federal court in washington barred the us defe...
 
 - **Fresh score:** 0.590 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 2.7 days (source date: 2026-11-10, first seen: 2026-11-10)
+- **Age in queue:** 2.8 days (source date: 2026-11-10, first seen: 2026-11-10)
 
 - **Coverage:** 49 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, legal
 
 
-### F6. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
+### F7. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
 
 - **Fresh score:** 0.558 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.6 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.7 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### F7. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
+### F8. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
 
 - **Fresh score:** 0.553 (silence=0.98 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.5 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.6 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F8. tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water transformation minis...
+### F9. tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water transformation minis...
 
 - **Fresh score:** 0.548 (silence=0.95 × importance=0.58, no age weighting)
 
-- **Age in queue:** 0.9 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.0 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 38 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### F9. ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the restriction order was...
+### F10. ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the restriction order was...
 
 - **Fresh score:** 0.540 (silence=0.96 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.3 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.4 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 29 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F10. federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also receive 12 strok...
+### F11. federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also receive 12 strok...
 
 - **Fresh score:** 0.539 (silence=0.95 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.6 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.7 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 34 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F11. consumers in malaysia may soon be able to check chicken’s halal status under proposed new rules. kuala lump...
+### F12. consumers in malaysia may soon be able to check chicken’s halal status under proposed new rules. kuala lump...
 
 - **Fresh score:** 0.532 (silence=0.94 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.4 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.5 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 37 news, 13 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, ethnic, religious
 
 
-### F12. harga minyak masak botol kekal, kerajaan sedia insentif rm15 juta sebulan. kerajaan melaksanakan mekanisme ...
+### F13. harga minyak masak botol kekal, kerajaan sedia insentif rm15 juta sebulan. kerajaan melaksanakan mekanisme ...
 
 - **Fresh score:** 0.525 (silence=0.99 × importance=0.53, no age weighting)
 
-- **Age in queue:** 1.5 days (source date: 2026-11-11, first seen: 2026-11-11)
+- **Age in queue:** 1.6 days (source date: 2026-11-11, first seen: 2026-11-11)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### F13. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
+### F14. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
 
 - **Fresh score:** 0.518 (silence=0.92 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 57 news, 15 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, ethnic, political
 
 
-### F14. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
+### F15. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
 
 - **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
 
@@ -179,17 +190,6 @@ developed, and the develop list drifts into old news.
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
-
-
-### F15. jppm tak pernah lulus pendaftaran ngo rohingya. jppm menegaskan pertubuhan yang memenuhi syarat asas permoh...
-
-- **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
-
-- **Age in queue:** 2.6 days (source date: 2026-11-10, first seen: 2026-11-10)
-
-- **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
 
 
 ---
@@ -198,53 +198,42 @@ developed, and the develop list drifts into old news.
 ## Accumulated — silence compounding over time
 
 
-### S1. over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpur, nov 4 &mdash; ...
+### S1. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
 
-- **Rank score:** 0.815 (silence=0.96 × importance=0.67 × age_factor)
+- **Rank score:** 0.743 (silence=0.99 × importance=0.61 × age_factor)
 
-- **Age in queue:** 8.4 days (source date: 2026-11-06, first seen: 2026-11-04)
-
-- **Coverage:** 80 news, 18 social — pattern: _24h+ silence then rising_
-
-- **Dimensions at risk:** ethnic, political
-
-
-### S2. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
-
-- **Rank score:** 0.741 (silence=0.99 × importance=0.61 × age_factor)
-
-- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 5 news, 8 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
 
-### S3. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
+### S2. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
 
-- **Rank score:** 0.738 (silence=0.95 × importance=0.64 × age_factor)
+- **Rank score:** 0.739 (silence=0.95 × importance=0.64 × age_factor)
 
-- **Age in queue:** 6.5 days (source date: 2026-11-07, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-07, first seen: 2026-11-06)
 
 - **Coverage:** 70 news, 25 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, environmental, ethnic, political
 
 
-### S4. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
+### S3. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
 
-- **Rank score:** 0.736 (silence=0.99 × importance=0.61 × age_factor)
+- **Rank score:** 0.737 (silence=0.99 × importance=0.61 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 18 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### S5. anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur, nov 12 &mdash; t...
+### S4. anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur, nov 12 &mdash; t...
 
-- **Rank score:** 0.717 (silence=0.98 × importance=0.71 × age_factor)
+- **Rank score:** 0.720 (silence=0.98 × importance=0.71 × age_factor)
 
 - **Age in queue:** 0.9 days (source date: 2026-11-12, first seen: 2026-11-12)
 
@@ -253,11 +242,22 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** economic, ethnic, political
 
 
+### S5. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
+
+- **Rank score:** 0.661 (silence=0.99 × importance=0.67 × age_factor)
+
+- **Age in queue:** 0.0 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
+
+
 ### S6. ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the restriction order was...
 
-- **Rank score:** 0.654 (silence=0.96 × importance=0.56 × age_factor)
+- **Rank score:** 0.656 (silence=0.96 × importance=0.56 × age_factor)
 
-- **Age in queue:** 6.3 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.4 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 29 news, 9 social — pattern: _below-expected coverage_
 
@@ -266,106 +266,84 @@ developed, and the develop list drifts into old news.
 
 ### S7. wuxi apptec removed from pentagon’s chinese military list. a federal court in washington barred the us defe...
 
-- **Rank score:** 0.645 (silence=0.96 × importance=0.61 × age_factor)
+- **Rank score:** 0.646 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 2.7 days (source date: 2026-11-10, first seen: 2026-11-10)
+- **Age in queue:** 2.8 days (source date: 2026-11-10, first seen: 2026-11-10)
 
 - **Coverage:** 49 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, legal
 
 
-### S8. ronaldo umum persaraan antarabangsa. bintang bola sepak  itu sebelum ini meninggalkan skuad kebangsaan susu...
+### S8. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
 
-- **Rank score:** 0.638 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.632 (silence=0.92 × importance=0.56 × age_factor)
 
-- **Age in queue:** 7.2 days (source date: 2026-11-06, first seen: 2026-11-05)
-
-- **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, political
-
-
-### S9. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
-
-- **Rank score:** 0.630 (silence=0.92 × importance=0.56 × age_factor)
-
-- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 57 news, 15 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, ethnic, political
 
 
-### S10. kbs beri kelulusan bersyarat anjur hyrox kl. keputusan dibuat setelah penganjur setuju patuhi sepenuhnya pe...
+### S9. kbs beri kelulusan bersyarat anjur hyrox kl. keputusan dibuat setelah penganjur setuju patuhi sepenuhnya pe...
 
-- **Rank score:** 0.619 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.621 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** general
 
 
-### S11. turkish parliament ratifies mecca defence pact. the pact links nato member turkey with pakistan, the islami...
+### S10. turkish parliament ratifies mecca defence pact. the pact links nato member turkey with pakistan, the islami...
 
-- **Rank score:** 0.615 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.616 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 12 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political, religious
 
 
-### S12. pope leo leaves on emotional south america tour weeks after surgery. the 71-year-old head of the catholic c...
+### S11. pope leo leaves on emotional south america tour weeks after surgery. the 71-year-old head of the catholic c...
 
-- **Rank score:** 0.598 (silence=0.95 × importance=0.52 × age_factor)
+- **Rank score:** 0.599 (silence=0.95 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 31 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political, religious
 
 
-### S13. deepavali mengundang kerinduan tak sudah. manivannan dan yoganandhini rethinam dambakan kenangan bersama ko...
+### S12. deepavali mengundang kerinduan tak sudah. manivannan dan yoganandhini rethinam dambakan kenangan bersama ko...
 
-- **Rank score:** 0.594 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.596 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.8 days (source date: 2026-11-08, first seen: 2026-11-08)
+- **Age in queue:** 4.9 days (source date: 2026-11-08, first seen: 2026-11-08)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** environmental, political
 
 
-### S14. british airways parent says profit drops on higher fuel costs. profit after tax fell to €1.23 billion in th...
+### S13. british airways parent says profit drops on higher fuel costs. profit after tax fell to €1.23 billion in th...
 
-- **Rank score:** 0.588 (silence=0.94 × importance=0.52 × age_factor)
+- **Rank score:** 0.589 (silence=0.94 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 36 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S15. projek ladang durian gagal, ahli perniagaan diperintah bayar balik rm470,000. mahkamah tinggi kekal penghak...
+### S14. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
 
-- **Rank score:** 0.587 (silence=0.98 × importance=0.48 × age_factor)
-
-- **Age in queue:** 7.2 days (source date: 2026-11-06, first seen: 2026-11-05)
-
-- **Coverage:** 3 news, 5 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S16. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
-
-- **Rank score:** 0.586 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.588 (silence=1.00 × importance=0.52 × age_factor)
 
 - **Age in queue:** 4.3 days (source date: 2026-11-09, first seen: 2026-11-08)
 
@@ -374,103 +352,125 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** ethnic, political
 
 
-### S17. selangor to review approved projects, tighten flood mitigation requirements in high-risk areas. &nbsp;kuala...
+### S15. selangor to review approved projects, tighten flood mitigation requirements in high-risk areas. &nbsp;kuala...
 
-- **Rank score:** 0.586 (silence=0.93 × importance=0.52 × age_factor)
+- **Rank score:** 0.588 (silence=0.93 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-11-07, first seen: 2026-11-06)
+- **Age in queue:** 6.7 days (source date: 2026-11-07, first seen: 2026-11-06)
 
 - **Coverage:** 36 news, 8 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S18. trump’s political humbling signals short-term gain, long-term pain for china. beijing now faces a congress ...
+### S16. trump’s political humbling signals short-term gain, long-term pain for china. beijing now faces a congress ...
 
-- **Rank score:** 0.585 (silence=0.93 × importance=0.52 × age_factor)
+- **Rank score:** 0.586 (silence=0.93 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 46 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### S19. malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan teknologi pengkomputer...
+### S17. malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan teknologi pengkomputer...
 
-- **Rank score:** 0.571 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.572 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.7 days (source date: 2026-11-09, first seen: 2026-11-09)
+- **Age in queue:** 3.8 days (source date: 2026-11-09, first seen: 2026-11-09)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### S20. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
+### S18. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
 
-- **Rank score:** 0.570 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.572 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 0.6 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.7 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S21. indonesian police say wiretapping probe is a law enforcement matter. lawmakers are considering a parliament...
+### S19. mahkamah rayuan kekal award rm472,000 kes pemecatan salah. balu pengarah pengeluaran dilantik teruskan pros...
 
-- **Rank score:** 0.569 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.569 (silence=0.99 × importance=0.47 × age_factor)
 
-- **Age in queue:** 7.3 days (source date: 2026-11-05, first seen: 2026-11-05)
-
-- **Coverage:** 7 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S22. tunjuk bukti projek luar bandar batal,  rayer gesa zahid. ahli parlimen jelutong mohon penjelasan tpm menge...
-
-- **Rank score:** 0.567 (silence=0.98 × importance=0.47 × age_factor)
-
-- **Age in queue:** 7.3 days (source date: 2026-11-05, first seen: 2026-11-05)
-
-- **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S23. mahkamah rayuan kekal award rm472,000 kes pemecatan salah. balu pengarah pengeluaran dilantik teruskan pros...
-
-- **Rank score:** 0.567 (silence=0.99 × importance=0.47 × age_factor)
-
-- **Age in queue:** 6.5 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### S24. bank boleh guna penyata akaun janaan komputer tuntut pinjaman tertunggak. mahkamah rayuan ketepi keputusan ...
+### S20. bank boleh guna penyata akaun janaan komputer tuntut pinjaman tertunggak. mahkamah rayuan ketepi keputusan ...
 
-- **Rank score:** 0.565 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.566 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### S25. tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water transformation minis...
+### S21. tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water transformation minis...
 
-- **Rank score:** 0.564 (silence=0.95 × importance=0.58 × age_factor)
+- **Rank score:** 0.566 (silence=0.95 × importance=0.58 × age_factor)
 
-- **Age in queue:** 0.9 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.0 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 38 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
+
+
+### S22. brace for early ge16 if bn-pn wins melaka, says samsuri. pn chairman says it could set off further 'politic...
+
+- **Rank score:** 0.564 (silence=0.98 × importance=0.52 × age_factor)
+
+- **Age in queue:** 3.3 days (source date: 2026-11-10, first seen: 2026-11-09)
+
+- **Coverage:** 8 news, 2 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
+
+
+### S23. rosmah dismisses report of rm50mil fine payment for najib. the former prime minister's wife says the media ...
+
+- **Rank score:** 0.563 (silence=0.93 × importance=0.49 × age_factor)
+
+- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
+
+- **Coverage:** 24 news, 19 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S24. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
+
+- **Rank score:** 0.563 (silence=0.98 × importance=0.56 × age_factor)
+
+- **Age in queue:** 0.6 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S25. pertikai titah tahanan rumah najib bermakna ingkar perintah agong. istana negara berkata perintah pengampun...
+
+- **Rank score:** 0.562 (silence=0.95 × importance=0.49 × age_factor)
+
+- **Age in queue:** 5.8 days (source date: 2026-11-07, first seen: 2026-11-07)
+
+- **Coverage:** 10 news, 18 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
 
 
 ---

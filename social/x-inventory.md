@@ -1,10 +1,44 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-12T22:11:28.882Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-13T00:26:17.812Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
 ## ⏳ TO POST (89)
+
+### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
+
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
+
+**1/6** _(hook — attach image, NO link)_ · 152 chars
+```
+Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
+```
+**2/6** _(fact)_ · 171 chars
+```
+The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
+```
+**3/6** _(fact)_ · 169 chars
+```
+Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
+```
+**4/6** _(fact)_ · 167 chars
+```
+A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
+```
+**5/6** _(reframe)_ · 127 chars
+```
+Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
+```
+**6/6** _(view — ONLY post with the link)_ · 197 chars
+```
+Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
+
+https://thefourthangle.pages.dev/issue/2019
+```
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
@@ -114,7 +148,7 @@ https://thefourthangle.pages.dev/issue/2014
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -262,7 +296,7 @@ https://thefourthangle.pages.dev/issue/2008
 
 ### Issue 2007 — High Court refused MACC's bid to freeze RM548m linked to Na'imah in Singapore
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2007-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2007`
@@ -300,7 +334,7 @@ https://thefourthangle.pages.dev/issue/2007
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
@@ -338,7 +372,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -408,9 +442,43 @@ Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. 
 https://thefourthangle.pages.dev/issue/2000
 ```
 
+### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
+
+> ⚡ **Reactive: topic is live in the radar** (selangor to review approved projects, tighten flood mitigation requirements in high-risk a). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1999-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1999`
+
+**1/6** _(hook — attach image, NO link)_ · 170 chars
+```
+The royal pig-farming decree became Selangor policy through the lawful Sultan-in-Council route: Article 50 of the State Constitution plus the Exco's 12 February adoption.
+```
+**2/6** _(fact)_ · 128 chars
+```
+Article 50 of Selangor's Constitution vests executive authority in the Sultan. Article 55 binds him to Executive Council advice.
+```
+**3/6** _(fact)_ · 126 chars
+```
+DAP's Wong Siew Ki invoked Federal Constitution Article 8(2) for the pig farmers. The 16 May Daulat Tuanku rally answered her.
+```
+**4/6** _(fact)_ · 257 chars
+```
+The proposed Akta would let a senior police officer detain people for up to two weeks without a court warrant, for investigation. It was a proposal to the government, not a drafted bill. Parliament repealed the ISA, and its detention without trial, in 2012.
+```
+**5/6** _(reframe)_ · 115 chars
+```
+Parliament repealed the ISA in 2012. The Akta would aim ISA-like detention without a warrant at insults to royalty.
+```
+**6/6** _(view — ONLY post with the link)_ · 153 chars
+```
+The Sultan-in-Council route is constitutional. The Akta would borrow from a law Parliament repealed in 2012.
+
+https://thefourthangle.pages.dev/issue/1999
+```
+
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1998-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1998`
@@ -448,7 +516,7 @@ https://thefourthangle.pages.dev/issue/1998
 
 ### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
 
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
@@ -486,7 +554,7 @@ https://thefourthangle.pages.dev/issue/1996
 
 ### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1995-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1995`
@@ -600,7 +668,7 @@ https://thefourthangle.pages.dev/issue/1992
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -634,7 +702,7 @@ https://thefourthangle.pages.dev/issue/1990
 
 ### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
@@ -782,7 +850,7 @@ https://thefourthangle.pages.dev/issue/1984
 
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 
-> ⚡ **Reactive: topic is live in the radar** (pope leo leaves on emotional south america tour weeks after surgery. the 71-year-old head ). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1983-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1983`
@@ -820,6 +888,44 @@ Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then 
 Norway acted within its rules. The real cost is 15 years of LCS spending: no delivered ships, one DNAA as the only criminal endpoint across four governments.
 
 https://thefourthangle.pages.dev/issue/1983
+```
+
+### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
+
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
+
+**1/7** _(hook — attach image, NO link)_ · 152 chars
+```
+Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
+```
+**2/7** _(fact)_ · 112 chars
+```
+WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
+```
+**3/7** _(fact)_ · 121 chars
+```
+Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
+```
+**4/7** _(fact)_ · 244 chars
+```
+Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
+```
+**5/7** _(reframe)_ · 175 chars
+```
+The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
+```
+**6/7** _(analogy)_ · 74 chars
+```
+Think of it like a landlord who decides which tenants' mail gets delivered
+```
+**7/7** _(view — ONLY post with the link)_ · 169 chars
+```
+PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
+
+https://thefourthangle.pages.dev/issue/1982
 ```
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
@@ -976,7 +1082,7 @@ https://thefourthangle.pages.dev/issue/1977
 
 ### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
@@ -1012,38 +1118,42 @@ Three fixes close the gap: tiered deposit protection, capital requirements scali
 https://thefourthangle.pages.dev/issue/1975
 ```
 
-### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
 
-**1/6** _(hook — attach image, NO link)_ · 126 chars
+**1/7** _(hook — attach image, NO link)_ · 137 chars
 ```
-RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
 ```
-**2/6** _(fact)_ · 118 chars
+**2/7** _(fact)_ · 125 chars
 ```
-The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
+Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
 ```
-**3/6** _(fact)_ · 124 chars
+**3/7** _(fact)_ · 234 chars
 ```
-76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
 ```
-**4/6** _(fact)_ · 187 chars
+**4/7** _(fact)_ · 160 chars
 ```
-The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
 ```
-**5/6** _(reframe)_ · 138 chars
+**5/7** _(reframe)_ · 90 chars
 ```
-The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
 ```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
+**6/7** _(analogy)_ · 267 chars
 ```
-Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
 
-https://thefourthangle.pages.dev/issue/1972
+https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
@@ -1116,7 +1226,7 @@ https://thefourthangle.pages.dev/issue/1965
 
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
@@ -1222,7 +1332,7 @@ https://thefourthangle.pages.dev/issue/1955
 
 ### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
 
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
@@ -1324,7 +1434,7 @@ https://thefourthangle.pages.dev/issue/1951
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -1358,7 +1468,7 @@ https://thefourthangle.pages.dev/issue/1944
 
 ### Issue 1887 — 18.4 billion e-payments in 2025, yet 63% of non-urban Malaysians used cash daily in a 2021 survey
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1887-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1887`
@@ -1392,7 +1502,7 @@ https://thefourthangle.pages.dev/issue/1887
 
 ### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
 
-> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
@@ -1570,7 +1680,7 @@ https://thefourthangle.pages.dev/issue/1618
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint m). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1445-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1445`
@@ -1828,7 +1938,7 @@ https://thefourthangle.pages.dev/issue/1201
 
 ### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (british airways parent says profit drops on higher fuel costs. profit after tax fell to €1). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
@@ -1938,7 +2048,7 @@ https://thefourthangle.pages.dev/issue/1128
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
-> ⚡ **Reactive: topic is live in the radar** (over five million malaysians to receive rm1.1b str aid from today, says anwar. kuala lumpu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1102-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1102`
@@ -2010,39 +2120,6 @@ Like a building code that only applies in the lobby. Each floor sets its own rul
 Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
 
 https://thefourthangle.pages.dev/issue/1043
-```
-
-### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
-
-**1/6** _(hook — attach image, NO link)_ · 152 chars
-```
-Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
-```
-**2/6** _(fact)_ · 171 chars
-```
-The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
-```
-**3/6** _(fact)_ · 169 chars
-```
-Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
-```
-**4/6** _(fact)_ · 167 chars
-```
-A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
-```
-**5/6** _(reframe)_ · 127 chars
-```
-Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
-```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
-```
-Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
-
-https://thefourthangle.pages.dev/issue/2019
 ```
 
 ### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
@@ -2226,39 +2303,6 @@ One better year in the diabetes data does not reverse a decade of getting heavie
 https://thefourthangle.pages.dev/issue/2002
 ```
 
-### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1999-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1999`
-
-**1/6** _(hook — attach image, NO link)_ · 170 chars
-```
-The royal pig-farming decree became Selangor policy through the lawful Sultan-in-Council route: Article 50 of the State Constitution plus the Exco's 12 February adoption.
-```
-**2/6** _(fact)_ · 128 chars
-```
-Article 50 of Selangor's Constitution vests executive authority in the Sultan. Article 55 binds him to Executive Council advice.
-```
-**3/6** _(fact)_ · 126 chars
-```
-DAP's Wong Siew Ki invoked Federal Constitution Article 8(2) for the pig farmers. The 16 May Daulat Tuanku rally answered her.
-```
-**4/6** _(fact)_ · 257 chars
-```
-The proposed Akta would let a senior police officer detain people for up to two weeks without a court warrant, for investigation. It was a proposal to the government, not a drafted bill. Parliament repealed the ISA, and its detention without trial, in 2012.
-```
-**5/6** _(reframe)_ · 115 chars
-```
-Parliament repealed the ISA in 2012. The Akta would aim ISA-like detention without a warrant at insults to royalty.
-```
-**6/6** _(view — ONLY post with the link)_ · 153 chars
-```
-The Sultan-in-Council route is constitutional. The Akta would borrow from a law Parliament repealed in 2012.
-
-https://thefourthangle.pages.dev/issue/1999
-```
-
 ### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
 
 - **Status:** PENDING
@@ -2399,43 +2443,6 @@ Exemption is the cheapest political answer. Capacity-building is the expensive s
 https://thefourthangle.pages.dev/issue/1985
 ```
 
-### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
-
-**1/7** _(hook — attach image, NO link)_ · 152 chars
-```
-Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
-```
-**2/7** _(fact)_ · 112 chars
-```
-WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
-```
-**3/7** _(fact)_ · 121 chars
-```
-Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
-```
-**4/7** _(fact)_ · 244 chars
-```
-Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
-```
-**5/7** _(reframe)_ · 175 chars
-```
-The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
-```
-**6/7** _(analogy)_ · 74 chars
-```
-Think of it like a landlord who decides which tenants' mail gets delivered
-```
-**7/7** _(view — ONLY post with the link)_ · 169 chars
-```
-PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
-
-https://thefourthangle.pages.dev/issue/1982
-```
-
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
 
 - **Status:** PENDING
@@ -2543,41 +2550,37 @@ The fix is independent environmental courts and community standing to challenge 
 https://thefourthangle.pages.dev/issue/1974
 ```
 
-### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
+### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
 
-**1/7** _(hook — attach image, NO link)_ · 137 chars
+**1/6** _(hook — attach image, NO link)_ · 126 chars
 ```
-One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
+RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
 ```
-**2/7** _(fact)_ · 125 chars
+**2/6** _(fact)_ · 118 chars
 ```
-Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
+The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
 ```
-**3/7** _(fact)_ · 234 chars
+**3/6** _(fact)_ · 124 chars
 ```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
+76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
 ```
-**4/7** _(fact)_ · 160 chars
+**4/6** _(fact)_ · 187 chars
 ```
-Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
+The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
 ```
-**5/7** _(reframe)_ · 90 chars
+**5/6** _(reframe)_ · 138 chars
 ```
-Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
+The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
 ```
-**6/7** _(analogy)_ · 267 chars
+**6/6** _(view — ONLY post with the link)_ · 197 chars
 ```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
+Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
 
-https://thefourthangle.pages.dev/issue/1973
+https://thefourthangle.pages.dev/issue/1972
 ```
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
