@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-11-13 04:14 UTC. Queue size: 571. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-11-13 06:17 UTC. Queue size: 576. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,7 +31,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.697 (silence=0.98 × importance=0.71, no age weighting)
 
-- **Age in queue:** 1.1 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.2 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 55 news, 26 social — pattern: _below-expected coverage_
 
@@ -42,7 +42,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.660 (silence=0.99 × importance=0.67, no age weighting)
 
-- **Age in queue:** 0.2 days (source date: 2026-11-13, first seen: 2026-11-13)
+- **Age in queue:** 0.3 days (source date: 2026-11-13, first seen: 2026-11-13)
 
 - **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
 
@@ -75,7 +75,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.606 (silence=0.99 × importance=0.61, no age weighting)
 
-- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 18 news, 1 social — pattern: _below-expected coverage_
 
@@ -86,7 +86,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.590 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 3.0 days (source date: 2026-11-10, first seen: 2026-11-10)
+- **Age in queue:** 3.1 days (source date: 2026-11-10, first seen: 2026-11-10)
 
 - **Coverage:** 49 news, 3 social — pattern: _below-expected coverage_
 
@@ -97,7 +97,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.558 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.9 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.0 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
@@ -108,7 +108,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.553 (silence=0.98 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.7 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.8 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
 
@@ -119,7 +119,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.548 (silence=0.95 × importance=0.58, no age weighting)
 
-- **Age in queue:** 1.2 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.3 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 38 news, 9 social — pattern: _below-expected coverage_
 
@@ -130,7 +130,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.540 (silence=0.96 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 29 news, 9 social — pattern: _below-expected coverage_
 
@@ -141,7 +141,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.539 (silence=0.95 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.9 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.0 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 34 news, 6 social — pattern: _below-expected coverage_
 
@@ -152,7 +152,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.532 (silence=0.94 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.7 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.8 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 37 news, 13 social — pattern: _below-expected coverage_
 
@@ -185,7 +185,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
 
-- **Age in queue:** 4.5 days (source date: 2026-11-09, first seen: 2026-11-08)
+- **Age in queue:** 4.6 days (source date: 2026-11-09, first seen: 2026-11-08)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -200,7 +200,7 @@ developed, and the develop list drifts into old news.
 
 ### S1. kabinet lulus pindaan perintah, serah kuasa alam sekitar kepada sarawak. perintah itu sudah mendapat kelulu...
 
-- **Rank score:** 0.746 (silence=0.99 × importance=0.61 × age_factor)
+- **Rank score:** 0.748 (silence=0.99 × importance=0.61 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
@@ -211,7 +211,7 @@ developed, and the develop list drifts into old news.
 
 ### S2. anwar says malaysia assessing impact of us midterm election results, including tariffs. kuala lumpur, nov 6...
 
-- **Rank score:** 0.743 (silence=0.95 × importance=0.64 × age_factor)
+- **Rank score:** 0.744 (silence=0.95 × importance=0.64 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-11-07, first seen: 2026-11-06)
 
@@ -222,9 +222,9 @@ developed, and the develop list drifts into old news.
 
 ### S3. free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint manifesto for the ...
 
-- **Rank score:** 0.741 (silence=0.99 × importance=0.61 × age_factor)
+- **Rank score:** 0.742 (silence=0.99 × importance=0.61 × age_factor)
 
-- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 18 news, 1 social — pattern: _below-expected coverage_
 
@@ -233,9 +233,9 @@ developed, and the develop list drifts into old news.
 
 ### S4. anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur, nov 12 &mdash; t...
 
-- **Rank score:** 0.723 (silence=0.98 × importance=0.71 × age_factor)
+- **Rank score:** 0.725 (silence=0.98 × importance=0.71 × age_factor)
 
-- **Age in queue:** 1.1 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.2 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 55 news, 26 social — pattern: _below-expected coverage_
 
@@ -244,9 +244,9 @@ developed, and the develop list drifts into old news.
 
 ### S5. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
 
-- **Rank score:** 0.664 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.666 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 0.2 days (source date: 2026-11-13, first seen: 2026-11-13)
+- **Age in queue:** 0.3 days (source date: 2026-11-13, first seen: 2026-11-13)
 
 - **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
 
@@ -255,9 +255,9 @@ developed, and the develop list drifts into old news.
 
 ### S6. ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the restriction order was...
 
-- **Rank score:** 0.659 (silence=0.96 × importance=0.56 × age_factor)
+- **Rank score:** 0.660 (silence=0.96 × importance=0.56 × age_factor)
 
-- **Age in queue:** 6.6 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.7 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 29 news, 9 social — pattern: _below-expected coverage_
 
@@ -266,9 +266,9 @@ developed, and the develop list drifts into old news.
 
 ### S7. wuxi apptec removed from pentagon’s chinese military list. a federal court in washington barred the us defe...
 
-- **Rank score:** 0.649 (silence=0.96 × importance=0.61 × age_factor)
+- **Rank score:** 0.651 (silence=0.96 × importance=0.61 × age_factor)
 
-- **Age in queue:** 3.0 days (source date: 2026-11-10, first seen: 2026-11-10)
+- **Age in queue:** 3.1 days (source date: 2026-11-10, first seen: 2026-11-10)
 
 - **Coverage:** 49 news, 3 social — pattern: _below-expected coverage_
 
@@ -277,7 +277,7 @@ developed, and the develop list drifts into old news.
 
 ### S8. putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister says the governm...
 
-- **Rank score:** 0.634 (silence=0.92 × importance=0.56 × age_factor)
+- **Rank score:** 0.636 (silence=0.92 × importance=0.56 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
@@ -288,9 +288,9 @@ developed, and the develop list drifts into old news.
 
 ### S9. kbs beri kelulusan bersyarat anjur hyrox kl. keputusan dibuat setelah penganjur setuju patuhi sepenuhnya pe...
 
-- **Rank score:** 0.624 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.625 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.9 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -299,9 +299,9 @@ developed, and the develop list drifts into old news.
 
 ### S10. turkish parliament ratifies mecca defence pact. the pact links nato member turkey with pakistan, the islami...
 
-- **Rank score:** 0.619 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.620 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.9 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 12 news, 2 social — pattern: _below-expected coverage_
 
@@ -310,9 +310,9 @@ developed, and the develop list drifts into old news.
 
 ### S11. pope leo leaves on emotional south america tour weeks after surgery. the 71-year-old head of the catholic c...
 
-- **Rank score:** 0.602 (silence=0.95 × importance=0.52 × age_factor)
+- **Rank score:** 0.603 (silence=0.95 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 6.9 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 31 news, 1 social — pattern: _below-expected coverage_
 
@@ -321,9 +321,9 @@ developed, and the develop list drifts into old news.
 
 ### S12. deepavali mengundang kerinduan tak sudah. manivannan dan yoganandhini rethinam dambakan kenangan bersama ko...
 
-- **Rank score:** 0.599 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.600 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-11-08, first seen: 2026-11-08)
+- **Age in queue:** 5.2 days (source date: 2026-11-08, first seen: 2026-11-08)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
@@ -332,7 +332,7 @@ developed, and the develop list drifts into old news.
 
 ### S13. british airways parent says profit drops on higher fuel costs. profit after tax fell to €1.23 billion in th...
 
-- **Rank score:** 0.592 (silence=0.94 × importance=0.52 × age_factor)
+- **Rank score:** 0.593 (silence=0.94 × importance=0.52 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
@@ -343,9 +343,9 @@ developed, and the develop list drifts into old news.
 
 ### S14. banjir diramal landa 9 jajahan di kelantan. ramalan awal banjir dikeluarkan susulan amaran hujan berterusan...
 
-- **Rank score:** 0.591 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.592 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.5 days (source date: 2026-11-09, first seen: 2026-11-08)
+- **Age in queue:** 4.6 days (source date: 2026-11-09, first seen: 2026-11-08)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
@@ -354,9 +354,9 @@ developed, and the develop list drifts into old news.
 
 ### S15. selangor to review approved projects, tighten flood mitigation requirements in high-risk areas. &nbsp;kuala...
 
-- **Rank score:** 0.590 (silence=0.93 × importance=0.52 × age_factor)
+- **Rank score:** 0.592 (silence=0.93 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.8 days (source date: 2026-11-07, first seen: 2026-11-06)
+- **Age in queue:** 6.9 days (source date: 2026-11-07, first seen: 2026-11-06)
 
 - **Coverage:** 36 news, 8 social — pattern: _below-expected coverage_
 
@@ -365,9 +365,9 @@ developed, and the develop list drifts into old news.
 
 ### S16. trump’s political humbling signals short-term gain, long-term pain for china. beijing now faces a congress ...
 
-- **Rank score:** 0.589 (silence=0.93 × importance=0.52 × age_factor)
+- **Rank score:** 0.590 (silence=0.93 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 7.0 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 46 news, 1 social — pattern: _below-expected coverage_
 
@@ -376,9 +376,9 @@ developed, and the develop list drifts into old news.
 
 ### S17. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
 
-- **Rank score:** 0.575 (silence=0.99 × importance=0.56 × age_factor)
+- **Rank score:** 0.577 (silence=0.99 × importance=0.56 × age_factor)
 
-- **Age in queue:** 0.9 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.0 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
@@ -387,9 +387,9 @@ developed, and the develop list drifts into old news.
 
 ### S18. malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan teknologi pengkomputer...
 
-- **Rank score:** 0.575 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.576 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.0 days (source date: 2026-11-09, first seen: 2026-11-09)
+- **Age in queue:** 4.1 days (source date: 2026-11-09, first seen: 2026-11-09)
 
 - **Coverage:** 6 news, 4 social — pattern: _below-expected coverage_
 
@@ -398,7 +398,7 @@ developed, and the develop list drifts into old news.
 
 ### S19. mahkamah rayuan kekal award rm472,000 kes pemecatan salah. balu pengarah pengeluaran dilantik teruskan pros...
 
-- **Rank score:** 0.571 (silence=0.99 × importance=0.47 × age_factor)
+- **Rank score:** 0.572 (silence=0.99 × importance=0.47 × age_factor)
 
 - **Age in queue:** 6.8 days (source date: 2026-11-06, first seen: 2026-11-06)
 
@@ -409,9 +409,9 @@ developed, and the develop list drifts into old news.
 
 ### S20. tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water transformation minis...
 
-- **Rank score:** 0.569 (silence=0.95 × importance=0.58 × age_factor)
+- **Rank score:** 0.570 (silence=0.95 × importance=0.58 × age_factor)
 
-- **Age in queue:** 1.2 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 1.3 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 38 news, 9 social — pattern: _below-expected coverage_
 
@@ -420,9 +420,9 @@ developed, and the develop list drifts into old news.
 
 ### S21. bank boleh guna penyata akaun janaan komputer tuntut pinjaman tertunggak. mahkamah rayuan ketepi keputusan ...
 
-- **Rank score:** 0.569 (silence=0.98 × importance=0.47 × age_factor)
+- **Rank score:** 0.570 (silence=0.98 × importance=0.47 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 7.0 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
@@ -431,9 +431,9 @@ developed, and the develop list drifts into old news.
 
 ### S22. brace for early ge16 if bn-pn wins melaka, says samsuri. pn chairman says it could set off further 'politic...
 
-- **Rank score:** 0.566 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.568 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 3.5 days (source date: 2026-11-10, first seen: 2026-11-09)
+- **Age in queue:** 3.6 days (source date: 2026-11-10, first seen: 2026-11-09)
 
 - **Coverage:** 8 news, 2 social — pattern: _below-expected coverage_
 
@@ -442,9 +442,9 @@ developed, and the develop list drifts into old news.
 
 ### S23. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
 
-- **Rank score:** 0.566 (silence=0.98 × importance=0.56 × age_factor)
+- **Rank score:** 0.567 (silence=0.98 × importance=0.56 × age_factor)
 
-- **Age in queue:** 0.7 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 0.8 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
 
@@ -453,9 +453,9 @@ developed, and the develop list drifts into old news.
 
 ### S24. rosmah dismisses report of rm50mil fine payment for najib. the former prime minister's wife says the media ...
 
-- **Rank score:** 0.565 (silence=0.93 × importance=0.49 × age_factor)
+- **Rank score:** 0.567 (silence=0.93 × importance=0.49 × age_factor)
 
-- **Age in queue:** 7.0 days (source date: 2026-11-06, first seen: 2026-11-06)
+- **Age in queue:** 7.1 days (source date: 2026-11-06, first seen: 2026-11-06)
 
 - **Coverage:** 24 news, 19 social — pattern: _below-expected coverage_
 
@@ -464,9 +464,9 @@ developed, and the develop list drifts into old news.
 
 ### S25. pertikai titah tahanan rumah najib bermakna ingkar perintah agong. istana negara berkata perintah pengampun...
 
-- **Rank score:** 0.564 (silence=0.95 × importance=0.49 × age_factor)
+- **Rank score:** 0.565 (silence=0.95 × importance=0.49 × age_factor)
 
-- **Age in queue:** 5.9 days (source date: 2026-11-07, first seen: 2026-11-07)
+- **Age in queue:** 6.0 days (source date: 2026-11-07, first seen: 2026-11-07)
 
 - **Coverage:** 10 news, 18 social — pattern: _below-expected coverage_
 
