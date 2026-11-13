@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-13T08:15:37.640Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-13T10:12:09.316Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -216,6 +216,44 @@ After the audit the state funded Felda's recovery and sued over one of the eight
 Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
 
 https://thefourthangle.pages.dev/issue/2012
+```
+
+### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
+
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2011-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2011`
+
+**1/7** _(hook — attach image, NO link)_ · 131 chars
+```
+Serian hit an API of 475 on 31 August; 591 Sarawak schools shut. Putrajaya once had a haze law on the table. It dropped it in 2023.
+```
+**2/7** _(fact)_ · 127 chars
+```
+Serian recorded an API of 475 on 31 August; Kuching 407 the next morning. Above 300 is hazardous; schools shut at 200 or above.
+```
+**3/7** _(fact)_ · 152 chars
+```
+Perikatan Nasional's Cabinet said no to the Act in July 2020. In November 2023 the Pakatan Harapan-led government told Parliament it would not continue.
+```
+**4/7** _(fact)_ · 134 chars
+```
+Singapore has had an extraterritorial haze law since 2014. Its record: legal notices to six Indonesian firms, four still open in 2021.
+```
+**5/7** _(reframe)_ · 152 chars
+```
+On 30 August Sarawak counted nine hotspots; Kalimantan 1,180. The absence of a Malaysian haze law is Putrajaya's own choice, made under two governments.
+```
+**6/7** _(analogy)_ · 167 chars
+```
+It is like a town that keeps drafting a fire code, files it away when the neighbour's field burns, then measures how far the smoke spreads before calling an emergency.
+```
+**7/7** _(view — ONLY post with the link)_ · 224 chars
+```
+A haze law would not put out the fires; Putrajaya said so in 2023. Its point was to tell Malaysian planters abroad the smoke follows them home. Two governments declined to say it.
+
+https://thefourthangle.pages.dev/issue/2011
 ```
 
 ### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
@@ -444,7 +482,7 @@ https://thefourthangle.pages.dev/issue/2000
 
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
 
-> ⚡ **Reactive: topic is live in the radar** (selangor to review approved projects, tighten flood mitigation requirements in high-risk a). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1999-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1999`
@@ -1822,6 +1860,40 @@ Judges, not legislators, reopened POCA detention to court review. Two-year renew
 https://thefourthangle.pages.dev/issue/1292
 ```
 
+### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
+
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
+
+**1/6** _(hook — attach image, NO link)_ · 150 chars
+```
+Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
+```
+**2/6** _(fact)_ · 135 chars
+```
+Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
+```
+**3/6** _(fact)_ · 157 chars
+```
+The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
+```
+**4/6** _(fact)_ · 261 chars
+```
+SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
+```
+**5/6** _(reframe)_ · 158 chars
+```
+Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
+```
+**6/6** _(view — ONLY post with the link)_ · 220 chars
+```
+After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
+
+https://thefourthangle.pages.dev/issue/1265
+```
+
 ### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
 
 > ⚡ **Reactive: topic is live in the radar** (putrajaya examining impact of us midterm polls on malaysia, says anwar. the prime minister). Post now, don't wait for a slot.
@@ -2153,43 +2225,6 @@ In the Peninsula, a data centre now has its own water-tariff category. It still 
 The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
 
 https://thefourthangle.pages.dev/issue/2016
-```
-
-### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2011-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2011`
-
-**1/7** _(hook — attach image, NO link)_ · 131 chars
-```
-Serian hit an API of 475 on 31 August; 591 Sarawak schools shut. Putrajaya once had a haze law on the table. It dropped it in 2023.
-```
-**2/7** _(fact)_ · 127 chars
-```
-Serian recorded an API of 475 on 31 August; Kuching 407 the next morning. Above 300 is hazardous; schools shut at 200 or above.
-```
-**3/7** _(fact)_ · 152 chars
-```
-Perikatan Nasional's Cabinet said no to the Act in July 2020. In November 2023 the Pakatan Harapan-led government told Parliament it would not continue.
-```
-**4/7** _(fact)_ · 134 chars
-```
-Singapore has had an extraterritorial haze law since 2014. Its record: legal notices to six Indonesian firms, four still open in 2021.
-```
-**5/7** _(reframe)_ · 152 chars
-```
-On 30 August Sarawak counted nine hotspots; Kalimantan 1,180. The absence of a Malaysian haze law is Putrajaya's own choice, made under two governments.
-```
-**6/7** _(analogy)_ · 167 chars
-```
-It is like a town that keeps drafting a fire code, files it away when the neighbour's field burns, then measures how far the smoke spreads before calling an emergency.
-```
-**7/7** _(view — ONLY post with the link)_ · 224 chars
-```
-A haze law would not put out the fires; Putrajaya said so in 2023. Its point was to tell Malaysian planters abroad the smoke follows them home. Two governments declined to say it.
-
-https://thefourthangle.pages.dev/issue/2011
 ```
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
@@ -3059,39 +3094,6 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
 
 https://thefourthangle.pages.dev/issue/1267
-```
-
-### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
-
-**1/6** _(hook — attach image, NO link)_ · 150 chars
-```
-Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
-```
-**2/6** _(fact)_ · 135 chars
-```
-Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
-```
-**3/6** _(fact)_ · 157 chars
-```
-The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
-```
-**4/6** _(fact)_ · 261 chars
-```
-SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
-```
-**5/6** _(reframe)_ · 158 chars
-```
-Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
-```
-**6/6** _(view — ONLY post with the link)_ · 220 chars
-```
-After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
-
-https://thefourthangle.pages.dev/issue/1265
 ```
 
 ### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
