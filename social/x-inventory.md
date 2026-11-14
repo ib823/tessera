@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-13T22:10:37.710Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-14T00:25:00.411Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -38,40 +38,6 @@ Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya i
 Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
 
 https://thefourthangle.pages.dev/issue/2019
-```
-
-### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
-
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
-
-**1/6** _(hook — attach image, NO link)_ · 157 chars
-```
-Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
-```
-**2/6** _(fact)_ · 156 chars
-```
-Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
-```
-**3/6** _(fact)_ · 149 chars
-```
-The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
-```
-**4/6** _(fact)_ · 131 chars
-```
-Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
-```
-**5/6** _(reframe)_ · 76 chars
-```
-The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
-```
-**6/6** _(view — ONLY post with the link)_ · 222 chars
-```
-If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
-
-https://thefourthangle.pages.dev/issue/2018
 ```
 
 ### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
@@ -372,7 +338,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -406,7 +372,7 @@ https://thefourthangle.pages.dev/issue/2005
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
@@ -668,7 +634,7 @@ https://thefourthangle.pages.dev/issue/1993
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
@@ -808,44 +774,6 @@ The question is not whether Trump shook palm oil. It is whether new buyers like 
 The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before Trump met Xi
 
 https://thefourthangle.pages.dev/issue/1989
-```
-
-### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
-
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
-
-**1/7** _(hook — attach image, NO link)_ · 246 chars
-```
-Court of Appeal: the Agong's emergency call, issue it or refuse it, is final. No court may ask why. The challenge was to a refusal (October 2020). The same architecture covers issuance, under which Parliament did not sit for seven months in 2021.
-```
-**2/7** _(fact)_ · 150 chars
-```
-Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'
-```
-**3/7** _(fact)_ · 147 chars
-```
-In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure, and ouster clauses cannot remove it (Indira Gandhi).
-```
-**4/7** _(fact)_ · 115 chars
-```
-Five federal emergencies since 1964 (1964, 1966, 1969, 1977, 2021). One documented refusal on record: October 2020.
-```
-**5/7** _(reframe)_ · 150 chars
-```
-Two checks survive in text: Parliament's Art. 150(3) annulment, and the Conference of Rulers. In 2021, Parliament did not sit while the emergency ran.
-```
-**6/7** _(analogy)_ · 235 chars
-```
-Like a referee whose call and non-call both stand, with no replay rule on either. The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.
-```
-**7/7** _(view — ONLY post with the link)_ · 211 chars
-```
-1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
-
-https://thefourthangle.pages.dev/issue/1988
 ```
 
 ### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
@@ -1002,7 +930,7 @@ https://thefourthangle.pages.dev/issue/1982
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
@@ -1116,7 +1044,7 @@ https://thefourthangle.pages.dev/issue/1978
 
 ### Issue 1977 — Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1977-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1977`
@@ -1264,7 +1192,7 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
@@ -1368,43 +1296,9 @@ The ambition is not wrong. The filter is. Judge each centre by the water and pow
 https://thefourthangle.pages.dev/issue/1963
 ```
 
-### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
-
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
-
-**1/6** _(hook — attach image, NO link)_ · 270 chars
-```
-Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
-```
-**2/6** _(fact)_ · 100 chars
-```
-The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
-```
-**3/6** _(fact)_ · 242 chars
-```
-A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
-```
-**4/6** _(fact)_ · 230 chars
-```
-MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
-```
-**5/6** _(reframe)_ · 159 chars
-```
-The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
-```
-**6/6** _(view — ONLY post with the link)_ · 187 chars
-```
-The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
-
-https://thefourthangle.pages.dev/issue/1961
-```
-
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
@@ -1752,7 +1646,7 @@ https://thefourthangle.pages.dev/issue/1805
 
 ### Issue 1751 — MRT3 Circle Line: Budget 2023 Targets ~RM45B Total, Down from RM68B in 2018
 
-> ⚡ **Reactive: topic is live in the radar** (free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint m). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1751-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1751`
@@ -1824,7 +1718,7 @@ https://thefourthangle.pages.dev/issue/1625
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
-> ⚡ **Reactive: topic is live in the radar** (free water, 25,000 homes, jobs for young among bn-pn polls pledges. the alliance's joint m). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1445-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1445`
@@ -1862,7 +1756,7 @@ https://thefourthangle.pages.dev/issue/1445
 
 ### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
@@ -1896,7 +1790,7 @@ https://thefourthangle.pages.dev/issue/1325
 
 ### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
@@ -1930,7 +1824,7 @@ https://thefourthangle.pages.dev/issue/1294
 
 ### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
 
-> ⚡ **Reactive: topic is live in the radar** (ex-waiter fails to overturn jail term for curfew breach. the court of appeal said the rest). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
@@ -2190,6 +2084,39 @@ Either amend the Constitution to give DOE enforcement power, or make conservatio
 https://thefourthangle.pages.dev/issue/1043
 ```
 
+### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
+
+**1/6** _(hook — attach image, NO link)_ · 157 chars
+```
+Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
+```
+**2/6** _(fact)_ · 156 chars
+```
+Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
+```
+**3/6** _(fact)_ · 149 chars
+```
+The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
+```
+**4/6** _(fact)_ · 131 chars
+```
+Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
+```
+**5/6** _(reframe)_ · 76 chars
+```
+The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
+```
+**6/6** _(view — ONLY post with the link)_ · 222 chars
+```
+If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
+
+https://thefourthangle.pages.dev/issue/2018
+```
+
 ### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
 
 - **Status:** PENDING
@@ -2406,6 +2333,43 @@ Picture giving the umpire his own office, then still choosing him through a pane
 Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
 
 https://thefourthangle.pages.dev/issue/1997
+```
+
+### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
+
+**1/7** _(hook — attach image, NO link)_ · 246 chars
+```
+Court of Appeal: the Agong's emergency call, issue it or refuse it, is final. No court may ask why. The challenge was to a refusal (October 2020). The same architecture covers issuance, under which Parliament did not sit for seven months in 2021.
+```
+**2/7** _(fact)_ · 150 chars
+```
+Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'
+```
+**3/7** _(fact)_ · 147 chars
+```
+In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure, and ouster clauses cannot remove it (Indira Gandhi).
+```
+**4/7** _(fact)_ · 115 chars
+```
+Five federal emergencies since 1964 (1964, 1966, 1969, 1977, 2021). One documented refusal on record: October 2020.
+```
+**5/7** _(reframe)_ · 150 chars
+```
+Two checks survive in text: Parliament's Art. 150(3) annulment, and the Conference of Rulers. In 2021, Parliament did not sit while the emergency ran.
+```
+**6/7** _(analogy)_ · 235 chars
+```
+Like a referee whose call and non-call both stand, with no replay rule on either. The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.
+```
+**7/7** _(view — ONLY post with the link)_ · 211 chars
+```
+1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
+
+https://thefourthangle.pages.dev/issue/1988
 ```
 
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
@@ -2678,6 +2642,39 @@ Two prosecutions test two men. A suspected 26-firm cartel tests the procurement 
 The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
 
 https://thefourthangle.pages.dev/issue/1962
+```
+
+### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
+
+**1/6** _(hook — attach image, NO link)_ · 270 chars
+```
+Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
+```
+**2/6** _(fact)_ · 100 chars
+```
+The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
+```
+**3/6** _(fact)_ · 242 chars
+```
+A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
+```
+**4/6** _(fact)_ · 230 chars
+```
+MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
+```
+**5/6** _(reframe)_ · 159 chars
+```
+The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
+```
+**6/6** _(view — ONLY post with the link)_ · 187 chars
+```
+The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
+
+https://thefourthangle.pages.dev/issue/1961
 ```
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
