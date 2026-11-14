@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-14T00:25:00.411Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-14T02:16:00.756Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -42,7 +42,7 @@ https://thefourthangle.pages.dev/issue/2019
 
 ### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2017-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2017`
@@ -108,47 +108,9 @@ The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write
 https://thefourthangle.pages.dev/issue/2016
 ```
 
-### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
-
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2014-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2014`
-
-**1/7** _(hook — attach image, NO link)_ · 174 chars
-```
-Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spies sit 'scattered' across Thailand. Anwar told Parliament in 2025 that Mossad targets Malaysia.
-```
-**2/7** _(fact)_ · 171 chars
-```
-Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
-```
-**3/7** _(fact)_ · 163 chars
-```
-Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
-```
-**4/7** _(fact)_ · 161 chars
-```
-Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
-```
-**5/7** _(reframe)_ · 147 chars
-```
-The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
-```
-**6/7** _(analogy)_ · 125 chars
-```
-Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
-```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
-```
-Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
-
-https://thefourthangle.pages.dev/issue/2014
-```
-
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -224,7 +186,7 @@ https://thefourthangle.pages.dev/issue/2011
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2008-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2008`
@@ -594,44 +556,6 @@ The dollar is now software. Six licensed exchanges do not list it. US sanctions 
 https://thefourthangle.pages.dev/issue/1994
 ```
 
-### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
-
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
-
-**1/7** _(hook — attach image, NO link)_ · 139 chars
-```
-Two ex-ministers quit PKR and took over an existing party with no MPs. The buried line: their two seats can lawfully stay empty until GE16.
-```
-**2/7** _(fact)_ · 248 chars
-```
-Pandan and Setiawangsa are set to vacate on 18 May. Article 54(1) lets seats sit empty with fewer than two years left. GE15 was 19 November 2022. The 15th Parliament first sat 19 December 2022; the two-year carve-out window opened 19 December 2025.
-```
-**3/7** _(fact)_ · 125 chars
-```
-Resign the seat first, leave the party second. The MPs say the sequence avoids Article 49A and may sidestep PKR's RM10M bond.
-```
-**4/7** _(fact)_ · 139 chars
-```
-The carve-out used to be six months. A constitutional amendment expanded it to two years. Shad Saleem Faruqi called the change regrettable.
-```
-**5/7** _(reframe)_ · 148 chars
-```
-Anti-hopping was sold as protecting the voter's mandate. Resign the seat before the party, and the sequence circumvents the law without breaking it.
-```
-**6/7** _(analogy)_ · 158 chars
-```
-Like a residents' association chairman resigning 18 months before the AGM, with by-laws blocking any election before then. The chair, by default, stays empty.
-```
-**7/7** _(view — ONLY post with the link)_ · 221 chars
-```
-Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
-
-https://thefourthangle.pages.dev/issue/1993
-```
-
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
 > ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
@@ -706,7 +630,7 @@ https://thefourthangle.pages.dev/issue/1991
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -776,9 +700,47 @@ The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before
 https://thefourthangle.pages.dev/issue/1989
 ```
 
+### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
+
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
+
+**1/7** _(hook — attach image, NO link)_ · 246 chars
+```
+Court of Appeal: the Agong's emergency call, issue it or refuse it, is final. No court may ask why. The challenge was to a refusal (October 2020). The same architecture covers issuance, under which Parliament did not sit for seven months in 2021.
+```
+**2/7** _(fact)_ · 150 chars
+```
+Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'
+```
+**3/7** _(fact)_ · 147 chars
+```
+In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure, and ouster clauses cannot remove it (Indira Gandhi).
+```
+**4/7** _(fact)_ · 115 chars
+```
+Five federal emergencies since 1964 (1964, 1966, 1969, 1977, 2021). One documented refusal on record: October 2020.
+```
+**5/7** _(reframe)_ · 150 chars
+```
+Two checks survive in text: Parliament's Art. 150(3) annulment, and the Conference of Rulers. In 2021, Parliament did not sit while the emergency ran.
+```
+**6/7** _(analogy)_ · 235 chars
+```
+Like a referee whose call and non-call both stand, with no replay rule on either. The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.
+```
+**7/7** _(view — ONLY post with the link)_ · 211 chars
+```
+1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
+
+https://thefourthangle.pages.dev/issue/1988
+```
+
 ### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1987-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1987`
@@ -812,40 +774,6 @@ Imagine a relay race that pays each runner more the longer they hold the baton, 
 The bottleneck is not age. It is the machinery that picks candidates, rewards long tenure and leaves just 11 of 222 MPs aged 35 or under.
 
 https://thefourthangle.pages.dev/issue/1987
-```
-
-### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
-
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
-
-**1/6** _(hook — attach image, NO link)_ · 265 chars
-```
-On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
-```
-**2/6** _(fact)_ · 267 chars
-```
-A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
-```
-**3/6** _(fact)_ · 134 chars
-```
-By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
-```
-**4/6** _(fact)_ · 155 chars
-```
-The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
-```
-**5/6** _(reframe)_ · 174 chars
-```
-Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
-```
-**6/6** _(view — ONLY post with the link)_ · 216 chars
-```
-E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
-
-https://thefourthangle.pages.dev/issue/1984
 ```
 
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
@@ -968,7 +896,7 @@ https://thefourthangle.pages.dev/issue/1981
 
 ### Issue 1979 — 1MDB: RM31.3B Recovered, RM20.1B Left To Pay, RM6B Still In Arbitration
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
@@ -1006,7 +934,7 @@ https://thefourthangle.pages.dev/issue/1979
 
 ### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
@@ -1226,7 +1154,7 @@ https://thefourthangle.pages.dev/issue/1971
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1332,6 +1260,40 @@ Like a squatter settlement where every government promises land titles but nobod
 Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
 
 https://thefourthangle.pages.dev/issue/1960
+```
+
+### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
+
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
+
+**1/6** _(hook — attach image, NO link)_ · 122 chars
+```
+The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
+```
+**2/6** _(fact)_ · 125 chars
+```
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
+```
+**3/6** _(fact)_ · 264 chars
+```
+In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
+```
+**4/6** _(fact)_ · 131 chars
+```
+Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
+```
+**6/6** _(view — ONLY post with the link)_ · 186 chars
+```
+Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
+
+https://thefourthangle.pages.dev/issue/1959
 ```
 
 ### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
@@ -1476,7 +1438,7 @@ https://thefourthangle.pages.dev/issue/1953
 
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1951-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1951`
@@ -1510,7 +1472,7 @@ https://thefourthangle.pages.dev/issue/1951
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -1932,44 +1894,6 @@ Genuine SOSMA reform requires disaggregated public reporting on arrests, duratio
 https://thefourthangle.pages.dev/issue/1241
 ```
 
-### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
-
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1201-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1201`
-
-**1/7** _(hook — attach image, NO link)_ · 135 chars
-```
-Malaysia narrowed its deficit to 4.1% in 2024 and 3.7% in 2025, beating the 3.8% projection. The PFFRA medium-term target is 3% of GDP.
-```
-**2/7** _(fact)_ · 221 chars
-```
-Every 1 percentage point of deficit adds tens of billions to annual borrowing. Long-term sustainability requires revenue mobilisation (broader SST, CGT) or sustained spending discipline. Both involve political trade-offs.
-```
-**3/7** _(fact)_ · 222 chars
-```
-Credit rating outlooks track consistent target performance. Downgrades are associated with higher yields and risk premia across the sovereign curve. Fitch affirmed Malaysia at BBB+ with a stable outlook on 9 December 2025.
-```
-**4/7** _(fact)_ · 266 chars
-```
-The Public Finance and Fiscal Responsibility Act 2023 (Act 850) provides statutory fiscal objectives and a 3-to-5-year MTFF. It sets a 3%-of-GDP medium-term deficit target and requires the Finance Minister to lay an annual fiscal-outlook statement before Parliament.
-```
-**5/7** _(reframe)_ · 133 chars
-```
-The 2025 target was met. The open question is whether the glide path holds to the 3% PFFRA target without revenue or spending action.
-```
-**6/7** _(analogy)_ · 222 chars
-```
-Like a household that hit its annual savings target. The trend is right; the question is whether next year stays on it. Hitting one target does not establish a glide path. Markets price the trajectory, not the single year.
-```
-**7/7** _(view — ONLY post with the link)_ · 183 chars
-```
-PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
-
-https://thefourthangle.pages.dev/issue/1201
-```
-
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
 
 > ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
@@ -2046,44 +1970,6 @@ A reform proposal: stand up an independent audit publishing per-cohort delivery 
 https://thefourthangle.pages.dev/issue/1102
 ```
 
-### Issue 1043 — When states override environmental law, the environment has no government
-
-> ⚡ **Reactive: topic is live in the radar** (anwar says malaysia assessing impact of us midterm election results, including tariffs. ku). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
-
-**1/7** _(hook — attach image, NO link)_ · 151 chars
-```
-Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
-```
-**2/7** _(fact)_ · 113 chars
-```
-The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
-```
-**3/7** _(fact)_ · 269 chars
-```
-Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
-```
-**4/7** _(fact)_ · 145 chars
-```
-Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
-```
-**5/7** _(reframe)_ · 149 chars
-```
-This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
-```
-**6/7** _(analogy)_ · 223 chars
-```
-Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
-```
-**7/7** _(view — ONLY post with the link)_ · 183 chars
-```
-Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
-
-https://thefourthangle.pages.dev/issue/1043
-```
-
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
 - **Status:** PENDING
@@ -2115,6 +2001,43 @@ The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
 If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
 
 https://thefourthangle.pages.dev/issue/2018
+```
+
+### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2014-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2014`
+
+**1/7** _(hook — attach image, NO link)_ · 174 chars
+```
+Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spies sit 'scattered' across Thailand. Anwar told Parliament in 2025 that Mossad targets Malaysia.
+```
+**2/7** _(fact)_ · 171 chars
+```
+Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
+```
+**3/7** _(fact)_ · 163 chars
+```
+Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
+```
+**4/7** _(fact)_ · 161 chars
+```
+Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
+```
+**5/7** _(reframe)_ · 147 chars
+```
+The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
+```
+**6/7** _(analogy)_ · 125 chars
+```
+Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
+```
+**7/7** _(view — ONLY post with the link)_ · 202 chars
+```
+Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
+
+https://thefourthangle.pages.dev/issue/2014
 ```
 
 ### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
@@ -2335,41 +2258,41 @@ Eight years to agree on splitting the office. Deciding who confirms the new pros
 https://thefourthangle.pages.dev/issue/1997
 ```
 
-### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
+### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
 
-**1/7** _(hook — attach image, NO link)_ · 246 chars
+**1/7** _(hook — attach image, NO link)_ · 139 chars
 ```
-Court of Appeal: the Agong's emergency call, issue it or refuse it, is final. No court may ask why. The challenge was to a refusal (October 2020). The same architecture covers issuance, under which Parliament did not sit for seven months in 2021.
+Two ex-ministers quit PKR and took over an existing party with no MPs. The buried line: their two seats can lawfully stay empty until GE16.
 ```
-**2/7** _(fact)_ · 150 chars
+**2/7** _(fact)_ · 248 chars
 ```
-Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'
+Pandan and Setiawangsa are set to vacate on 18 May. Article 54(1) lets seats sit empty with fewer than two years left. GE15 was 19 November 2022. The 15th Parliament first sat 19 December 2022; the two-year carve-out window opened 19 December 2025.
 ```
-**3/7** _(fact)_ · 147 chars
+**3/7** _(fact)_ · 125 chars
 ```
-In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure, and ouster clauses cannot remove it (Indira Gandhi).
+Resign the seat first, leave the party second. The MPs say the sequence avoids Article 49A and may sidestep PKR's RM10M bond.
 ```
-**4/7** _(fact)_ · 115 chars
+**4/7** _(fact)_ · 139 chars
 ```
-Five federal emergencies since 1964 (1964, 1966, 1969, 1977, 2021). One documented refusal on record: October 2020.
+The carve-out used to be six months. A constitutional amendment expanded it to two years. Shad Saleem Faruqi called the change regrettable.
 ```
-**5/7** _(reframe)_ · 150 chars
+**5/7** _(reframe)_ · 148 chars
 ```
-Two checks survive in text: Parliament's Art. 150(3) annulment, and the Conference of Rulers. In 2021, Parliament did not sit while the emergency ran.
+Anti-hopping was sold as protecting the voter's mandate. Resign the seat before the party, and the sequence circumvents the law without breaking it.
 ```
-**6/7** _(analogy)_ · 235 chars
+**6/7** _(analogy)_ · 158 chars
 ```
-Like a referee whose call and non-call both stand, with no replay rule on either. The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.
+Like a residents' association chairman resigning 18 months before the AGM, with by-laws blocking any election before then. The chair, by default, stays empty.
 ```
-**7/7** _(view — ONLY post with the link)_ · 211 chars
+**7/7** _(view — ONLY post with the link)_ · 221 chars
 ```
-1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
+Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
 
-https://thefourthangle.pages.dev/issue/1988
+https://thefourthangle.pages.dev/issue/1993
 ```
 
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
@@ -2403,6 +2326,39 @@ The choice was never just 'mandate or exempt.' Three peers built middle paths Ma
 Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
 
 https://thefourthangle.pages.dev/issue/1985
+```
+
+### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
+
+**1/6** _(hook — attach image, NO link)_ · 265 chars
+```
+On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
+```
+**2/6** _(fact)_ · 267 chars
+```
+A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
+```
+**3/6** _(fact)_ · 134 chars
+```
+By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
+```
+**4/6** _(fact)_ · 155 chars
+```
+The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
+```
+**5/6** _(reframe)_ · 174 chars
+```
+Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
+```
+**6/6** _(view — ONLY post with the link)_ · 216 chars
+```
+E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
+
+https://thefourthangle.pages.dev/issue/1984
 ```
 
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
@@ -2675,39 +2631,6 @@ The question is not whether Azam Baki is guilty. It is whether any institution c
 The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
-```
-
-### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
-
-**1/6** _(hook — attach image, NO link)_ · 122 chars
-```
-The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
-```
-**2/6** _(fact)_ · 125 chars
-```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
-```
-**3/6** _(fact)_ · 264 chars
-```
-In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
-```
-**4/6** _(fact)_ · 131 chars
-```
-Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
-```
-**6/6** _(view — ONLY post with the link)_ · 186 chars
-```
-Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
-
-https://thefourthangle.pages.dev/issue/1959
 ```
 
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
@@ -3056,6 +2979,43 @@ The path forward is not a bigger plan. It is structured smaller-block consolidat
 https://thefourthangle.pages.dev/issue/1229
 ```
 
+### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1201-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1201`
+
+**1/7** _(hook — attach image, NO link)_ · 135 chars
+```
+Malaysia narrowed its deficit to 4.1% in 2024 and 3.7% in 2025, beating the 3.8% projection. The PFFRA medium-term target is 3% of GDP.
+```
+**2/7** _(fact)_ · 221 chars
+```
+Every 1 percentage point of deficit adds tens of billions to annual borrowing. Long-term sustainability requires revenue mobilisation (broader SST, CGT) or sustained spending discipline. Both involve political trade-offs.
+```
+**3/7** _(fact)_ · 222 chars
+```
+Credit rating outlooks track consistent target performance. Downgrades are associated with higher yields and risk premia across the sovereign curve. Fitch affirmed Malaysia at BBB+ with a stable outlook on 9 December 2025.
+```
+**4/7** _(fact)_ · 266 chars
+```
+The Public Finance and Fiscal Responsibility Act 2023 (Act 850) provides statutory fiscal objectives and a 3-to-5-year MTFF. It sets a 3%-of-GDP medium-term deficit target and requires the Finance Minister to lay an annual fiscal-outlook statement before Parliament.
+```
+**5/7** _(reframe)_ · 133 chars
+```
+The 2025 target was met. The open question is whether the glide path holds to the 3% PFFRA target without revenue or spending action.
+```
+**6/7** _(analogy)_ · 222 chars
+```
+Like a household that hit its annual savings target. The trend is right; the question is whether next year stays on it. Hitting one target does not establish a glide path. Markets price the trajectory, not the single year.
+```
+**7/7** _(view — ONLY post with the link)_ · 183 chars
+```
+PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
+
+https://thefourthangle.pages.dev/issue/1201
+```
+
 ### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
 
 - **Status:** PENDING
@@ -3124,6 +3084,43 @@ The interoperability question is already half-answered: DuitNow QR is the nation
 Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
 
 https://thefourthangle.pages.dev/issue/1146
+```
+
+### Issue 1043 — When states override environmental law, the environment has no government
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
+
+**1/7** _(hook — attach image, NO link)_ · 151 chars
+```
+Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
+```
+**2/7** _(fact)_ · 113 chars
+```
+The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
+```
+**3/7** _(fact)_ · 269 chars
+```
+Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
+```
+**4/7** _(fact)_ · 145 chars
+```
+Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
+```
+**5/7** _(reframe)_ · 149 chars
+```
+This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
+```
+**6/7** _(analogy)_ · 223 chars
+```
+Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
+```
+**7/7** _(view — ONLY post with the link)_ · 183 chars
+```
+Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
+
+https://thefourthangle.pages.dev/issue/1043
 ```
 
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
