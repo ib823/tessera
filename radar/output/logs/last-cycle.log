@@ -1,52 +1,48 @@
-[32m2026-11-14 08:10:40[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-14 08:10:40[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-14 08:10:40[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-14 08:10:41[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-14 08:10:41[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-14 08:10:41[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 504 topics from state
-[32m2026-11-14 08:10:41[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-14 08:10:41[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-14T08:10:41.610854+00:00
-[32m2026-11-14 08:10:48[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 436 events
-[32m2026-11-14 08:10:49[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-11-14 08:11:00[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-11-14 08:11:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:11:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:11:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:11:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:11:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:12:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:12:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-14 08:12:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-14 08:12:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-14 08:12:55[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-14 08:12:55[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-14 08:13:06[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 476 events from 5 sources
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 476 events
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 416 within 24h (125 pruned)
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [high_court_ruling] "Former Communications and Multimedia deputy minister Zahidi Zainul Abidin dies at 65. GEORGE TOWN, Nov 14 &mdash; Former Communications and Multimedia deputy minister Datuk Zahidi Zainul Abidin died y" importance=0.31
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [high_court_ruling] "Anwar extends condolences to former deputy minister Zahidi's family. KUALA LUMPUR, Nov 14 &mdash; Prime Minister Datuk Seri Anwar Ibrahim has extended his condolences to the family of forme..." importance=0.31
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "No free pass for foreigners who break the law, IGP says as arrests since 2024 near 97,000. KUALA LUMPUR, Nov 14 &mdash; Police will take firm action against any violation of the law and criminal condu" importance=0.41
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Man gets 12 months' jail, RM250,000 fine for Quran desecration in Pahang. KUALA LUMPUR, Nov 14 &mdash; A man was sentenced to 12 months in prison and fined RM250,000 by the Kuantan Sessions Cour..." importance=0.38
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "She knew and chose silence: Kuching mother gets five years’ jail for allowing teen daughter’s sexual abuse. KUCHING, Nov 14 &mdash; A 52-year-old woman was sentenced to five years&rsquo; imprisonment " importance=0.36
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Towing a last resort, no auctions for parking offences, KK City Hall tells MP after traders raise concerns. KOTA KINABALU, Nov 14 &mdash; Kota Kinabalu Member of Parliament Datuk Chan Foong Hin wants " importance=0.51
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "DAP defends itself, blames Umno for testing boundaries of unity govt pact. DAP legal bureau chairman Ramkarpal Singh says Umno is straining consensus within the unity government through its cooperatio" importance=0.46
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Pope returns to ‘beloved’ Peruvian hometown. The visit is the emotional highlight of the pope’s South American tour, marking his return to the city where he served the Church for nearly a decade as Ro" importance=0.51
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Queen calls for water, electricity use by data centres to be evaluated. Raja Zarith Sofiah cautions on the impact of these data centres on the environment and people's well-being." importance=0.46
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Melaka polls: Police to step up security at hotspots to maintain public order. MELAKA, Nov 14 &mdash; Melaka police will step up security at several locations identified as hotspots, including Seri B." importance=0.41
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Ahli Parlimen wanita Asia turun Melaka lihat proses demokrasi PRN. Lawatan kira-kira 20 delegasi itu sebahagian daripada program sempena Mesyuarat Asian Women Parliamentarian Caucus 2026 yang berlangs" importance=0.46
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Ahli Parlimen gesa KWSP dedah nilai semasa pegangan saham dalam Nvidia. Wan Saiful Wan Jan berkata pencarum perlu tahu risiko dihadapi memandangkan pengeluar cip itu berdepan ketidaktentuan pasaran su" importance=0.51
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Philippine court takes step towards preacher’s US extradition. The court issued extradition arrest warrants on Thursday for Apollo Quiboloy and two female associates, both at large." importance=0.36
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Asian women MPs observe polling process in Melaka. PAC chairman Mas Ermieyati Samsudin says the visit is in conjunction with the Asian Women Parliamentarian Caucus 2026 meeting in Kuala Lumpur." importance=0.46
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Malaysia proposes Sustainable Haze Fund, science diplomacy for transboundary haze fight at Asean meeting, says Tok Mat. MANILA, Nov 14 &mdash; Malaysia has called for a more proactive and coordinated " importance=0.46
-[32m2026-11-14 08:13:12[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
-[32m2026-11-14 08:13:13[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 27), ('chinese', 26), ('government', 23), ('india', 21), ('prime minister', 12), ('scandal', 10), ('vote', 10), ('policy', 8), ('election', 8), ('race', 7)]
-[32m2026-11-14 08:13:13[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 10 events monitored, 10 flagged
-[32m2026-11-14 08:13:13[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 2 low-score topics
-[32m2026-11-14 08:13:13[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 503 active topics
-[32m2026-11-14 08:13:13[0m | [1mINFO    [0m | [36moutput              [0m | 503 active issues, 1 new, 2 pruned
-[32m2026-11-14 08:13:13[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-14 08:13:40[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=207  hmm=OK/68  cox=RT/503  sarima=RT/503
-[32m2026-11-14 08:13:40[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=503)
-[32m2026-11-14 08:13:40[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 503 active topics. Top: malay (score: 0.87)
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-14 10:07:43[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 503 topics from state
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-14 10:07:43[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-14T10:07:43.598020+00:00
+[32m2026-11-14 10:07:49[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 436 events
+[32m2026-11-14 10:07:50[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-11-14 10:08:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:08:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:08:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:08:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:09:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:09:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:09:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:09:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-14 10:09:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-14 10:10:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-14 10:10:02[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-14 10:10:13[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 473 events from 5 sources
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 473 events
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 408 within 24h (144 pruned)
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Towing a last resort, no auctions for parking offences, KK City Hall tells MP after traders raise concerns. KOTA KINABALU, Nov 14 &mdash; Kota Kinabalu Member of Parliament Datuk Chan Foong Hin wants " importance=0.51
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Melaka polls: Police to step up security at hotspots to maintain public order. MELAKA, Nov 14 &mdash; Melaka police will step up security at several locations identified as hotspots, including Seri B." importance=0.41
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Ahli Parlimen gesa KWSP dedah nilai semasa pegangan saham dalam Nvidia. Wan Saiful Wan Jan berkata pencarum perlu tahu risiko dihadapi memandangkan pengeluar cip itu berdepan ketidaktentuan pasaran su" importance=0.51
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Philippine court takes step towards preacher’s US extradition. The court issued extradition arrest warrants on Thursday for Apollo Quiboloy and two female associates, both at large." importance=0.36
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Asian women MPs observe polling process in Melaka. PAC chairman Mas Ermieyati Samsudin says the visit is in conjunction with the Asian Women Parliamentarian Caucus 2026 meeting in Kuala Lumpur." importance=0.46
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Malaysia proposes Sustainable Haze Fund, science diplomacy for transboundary haze fight at Asean meeting, says Tok Mat. MANILA, Nov 14 &mdash; Malaysia has called for a more proactive and coordinated " importance=0.46
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Canada’s Carney touts Philippine trade deal on Asia tour. Mark Carney said Ottawa had successfully concluded negotiations for a sweeping free-trade pact with the Philippines, as it seeks ways to reduc" importance=0.46
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Polis siasat isu cip AI Nvidia sejak 2025, kata Saifuddin. Menteri dalam negeri berkata siasatan itu susulan dakwaan AS berhubung kemungkinan wujud kegiatan pemerolehan tidak sah dan penggunaan syarik" importance=0.46
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Banduan berhak mohon pengampunan, kata menteri. Saifuddin Nasution Ismail berkata KDN hanya bertindak sebagai agensi pelaksana keputusan Lembaga Pengampunan." importance=0.31
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Anwar says legacy debts like 1MDB pushed up Malaysia’s debt, cautions that corruption ruins nations. KUALA LUMPUR, Nov 14 &mdash; Prime Minister Datuk Seri Anwar Ibrahim today sought to correct claims" importance=0.36
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Voters can act as a check and balance, says Sarawak speaker. Asfia Awang Nasar says the people hold the power to elect their representatives." importance=0.41
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Seven impact marks, metal pellets found: Police probe suspected shooting at Sarikei business premises. SIBU, Nov 14 &mdash;&nbsp;Police are investigating a suspected shooting incident after a business" importance=0.41
+[32m2026-11-14 10:10:19[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
+[32m2026-11-14 10:10:20[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 34), ('chinese', 25), ('government', 22), ('india', 20), ('prime minister', 17), ('election', 11), ('menteri', 10), ('vote', 9), ('policy', 8), ('scandal', 8)]
+[32m2026-11-14 10:10:20[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 9 events monitored, 9 flagged
+[32m2026-11-14 10:10:20[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 7 low-score topics
+[32m2026-11-14 10:10:20[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 500 active topics
+[32m2026-11-14 10:10:20[0m | [1mINFO    [0m | [36moutput              [0m | 500 active issues, 4 new, 7 pruned
+[32m2026-11-14 10:10:20[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-14 10:10:30[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=207  hmm=OK/68  cox=RT/500  sarima=RT/500
+[32m2026-11-14 10:10:30[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=500)
+[32m2026-11-14 10:10:30[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 500 active topics. Top: malay (score: 0.86)
