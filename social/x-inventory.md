@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-15T10:11:00.983Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-15T12:14:26.218Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -144,6 +144,40 @@ It is like a bank that promised a know-your-customer rule in 2015, studied it un
 The fine is raised in an account only party members may see, under a law that does not exist. Pakatan Harapan promised it in 2018; its government says 2027. One is a choice.
 
 https://thefourthangle.pages.dev/issue/2013
+```
+
+### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
+
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
+
+**1/6** _(hook — attach image, NO link)_ · 248 chars
+```
+Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
+```
+**2/6** _(fact)_ · 111 chars
+```
+Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
+```
+**3/6** _(fact)_ · 247 chars
+```
+Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
+```
+**4/6** _(fact)_ · 150 chars
+```
+MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
+```
+**6/6** _(view — ONLY post with the link)_ · 162 chars
+```
+Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
+
+https://thefourthangle.pages.dev/issue/2012
 ```
 
 ### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
@@ -1368,6 +1402,40 @@ Like building a wall around a garden. The wall keeps competitors out, but it als
 https://thefourthangle.pages.dev/issue/1957
 ```
 
+### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
+
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
+
+**1/6** _(hook — attach image, NO link)_ · 268 chars
+```
+Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
+```
+**2/6** _(fact)_ · 252 chars
+```
+Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
+```
+**3/6** _(fact)_ · 247 chars
+```
+The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
+```
+**4/6** _(fact)_ · 149 chars
+```
+Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
+```
+**5/6** _(reframe)_ · 160 chars
+```
+The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
+```
+**6/6** _(view — ONLY post with the link)_ · 217 chars
+```
+Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
+
+https://thefourthangle.pages.dev/issue/1956
+```
+
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
 
 > ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
@@ -1676,6 +1744,44 @@ Like a discount run by a retailer instead of a government voucher: the same hous
 If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
 
 https://thefourthangle.pages.dev/issue/1625
+```
+
+### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
+
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
+```
+**2/7** _(fact)_ · 266 chars
+```
+The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
+```
+**3/7** _(fact)_ · 142 chars
+```
+The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
+```
+**4/7** _(fact)_ · 150 chars
+```
+Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
+```
+**6/7** _(analogy)_ · 144 chars
+```
+Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
+```
+**7/7** _(view — ONLY post with the link)_ · 198 chars
+```
+The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
+
+https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
@@ -2038,39 +2144,6 @@ Like blaming a stranger three streets away for the fire while the neighbour is a
 Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
 
 https://thefourthangle.pages.dev/issue/2014
-```
-
-### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
-
-**1/6** _(hook — attach image, NO link)_ · 248 chars
-```
-Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
-```
-**2/6** _(fact)_ · 111 chars
-```
-Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
-```
-**3/6** _(fact)_ · 247 chars
-```
-Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
-```
-**4/6** _(fact)_ · 150 chars
-```
-MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
-```
-**6/6** _(view — ONLY post with the link)_ · 162 chars
-```
-Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
-
-https://thefourthangle.pages.dev/issue/2012
 ```
 
 ### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
@@ -2633,39 +2706,6 @@ The fix is a permanent independent oversight body for MACC. But that requires a 
 https://thefourthangle.pages.dev/issue/1961
 ```
 
-### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
-
-**1/6** _(hook — attach image, NO link)_ · 268 chars
-```
-Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
-```
-**2/6** _(fact)_ · 252 chars
-```
-Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
-```
-**3/6** _(fact)_ · 247 chars
-```
-The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
-```
-**4/6** _(fact)_ · 149 chars
-```
-Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
-```
-**5/6** _(reframe)_ · 160 chars
-```
-The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
-```
-**6/6** _(view — ONLY post with the link)_ · 217 chars
-```
-Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
-
-https://thefourthangle.pages.dev/issue/1956
-```
-
 ### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
 
 - **Status:** PENDING
@@ -2796,43 +2836,6 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
-```
-
-### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
-```
-**2/7** _(fact)_ · 266 chars
-```
-The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
-```
-**3/7** _(fact)_ · 142 chars
-```
-The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
-```
-**4/7** _(fact)_ · 150 chars
-```
-Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
-```
-**5/7** _(reframe)_ · 132 chars
-```
-The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
-```
-**6/7** _(analogy)_ · 144 chars
-```
-Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
-```
-**7/7** _(view — ONLY post with the link)_ · 198 chars
-```
-The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
-
-https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention

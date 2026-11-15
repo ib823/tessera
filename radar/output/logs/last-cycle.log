@@ -1,51 +1,53 @@
-[32m2026-11-15 10:08:09[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-15 10:08:09[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-15 10:08:09[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-15 10:08:10[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-15 10:08:10[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-15 10:08:10[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 484 topics from state
-[32m2026-11-15 10:08:10[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-15 10:08:10[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-15T10:08:10.310436+00:00
-[32m2026-11-15 10:08:17[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 432 events
-[32m2026-11-15 10:08:18[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-11-15 10:08:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-11-15 10:08:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:08:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:09:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:09:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:09:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:09:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:09:46[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-15 10:09:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-15 10:10:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:10:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-15 10:10:22[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-15 10:10:33[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 11 events
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 3 events
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 471 events from 5 sources
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 471 events
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 366 within 24h (146 pruned)
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "No disruption to border control agency after director-general’s transfer, says Saifuddin Nasution. LUMUT, Nov 14 &mdash; The Malaysian Border Control and Protection Agency (AKPS) continues to operate " importance=0.46
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Learn from Indonesia, tighten export monitoring to stop under-invoicing, say industry players. &nbsp;KUALA LUMPUR, Nov 14 &mdash; Stricter monitoring of commodity exports is needed to curb under-invoi" importance=0.41
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Police yet to receive further instructions on Shuhaily’s return from border control agency, says IGP. MELAKA, Nov 14 &mdash; Malaysian Border Control and Protection Agency (AKPS) Director-General Datu" importance=0.46
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Zahid confirms Ab Rauf as Melaka CM after BN-PN supermajority win. MELAKA, Nov 14 &mdash; Barisan Nasional (BN) and Perikatan Nasional (PN) will nominate incumbent Chief Minister Datuk Se..." importance=0.31
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Bekas Ahli Parlimen Bersatu timbang pertahan Bukit Gantang guno logo PKR. Syed Abu Hussin Hafiz Syed Abdul Fasal kali pertama dipilih sebagai wakil rakyat pada 2018 atas tiket BN dan pertahankan kerus" importance=0.46
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Nations grapple with loss of 1.5C target at UN climate summit. The world has already warmed by about 1.4°C above pre-industrial levels, with the UN warning in September that breaching the Paris Agreem" importance=0.36
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Lim Guan Eng says govt considering proposal for higher electricity bill protection as heat drives usage. KUALA LUMPUR, Nov 15 &mdash; Deputy Prime Minister and Energy Transition and Water Transformati" importance=0.46
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Philippines, Australia sign defence cooperation pact. The arrangement would strengthen maritime, air and land military cooperation, as well as humanitarian and disaster response efforts, while boostin" importance=0.41
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Rita Rudaini’s eldest brother, a Customs officer, dies after collapsing at Kelana Jaya sports event. PETALING JAYA, Nov 15 &mdash; Ahmad Musyaiful Mokhtar, 51, the eldest brother of actress Rita Rudai" importance=0.41
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Labuan temple earns Malaysia Book of Records recognition for tallest Vel structure. The construction of the 13.18m Vel was made possible through contributions from the management committee, donors, co" importance=0.51
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Ab Rauf’s second-term to-do list: Economy, investments and fewer unanswered complaints. MELAKA, Nov 15 &mdash; The Melaka government will focus on strengthening the state&rsquo;s economy, attracting i" importance=0.46
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Wu-Tang Clan, Queen Latifah join Rock Hall of Fame. Phil Collins, Joy Division/New Order and the late Luther Vandross were also inducted into the rock pantheon at the Los Angeles ceremony." importance=0.41
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Loke says Anwar need not bow to calls for early dissolution of Parliament. KLUANG, Nov 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim need not bow to calls for an early dissolution of Parliam..." importance=0.46
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "BN aims to field PPP candidates in GE16, says Zahid. The coalition's chairman says PPP is also a partner alongside Umno, MCA and MIC." importance=0.31
-[32m2026-11-15 10:10:39[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
-[32m2026-11-15 10:10:40[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('minister', 31), ('chinese', 28), ('government', 27), ('prime minister', 19), ('india', 18), ('election', 14), ('economy', 11), ('policy', 9), ('indian', 7), ('pakatan', 7)]
-[32m2026-11-15 10:10:40[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
-[32m2026-11-15 10:10:40[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 5 low-score topics
-[32m2026-11-15 10:10:40[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 482 active topics
-[32m2026-11-15 10:10:40[0m | [1mINFO    [0m | [36moutput              [0m | 482 active issues, 3 new, 5 pruned
-[32m2026-11-15 10:10:40[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-15 10:11:00[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=208  hmm=OK/68  cox=RT/482  sarima=RT/482
-[32m2026-11-15 10:11:00[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=482)
-[32m2026-11-15 10:11:00[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 482 active topics. Top: malay (score: 0.67)
+[32m2026-11-15 12:11:44[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-15 12:11:44[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-15 12:11:44[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-15 12:11:45[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-15 12:11:45[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-15 12:11:45[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 482 topics from state
+[32m2026-11-15 12:11:45[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-15 12:11:45[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-15T12:11:45.296639+00:00
+[32m2026-11-15 12:11:54[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 433 events
+[32m2026-11-15 12:11:55[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
+[32m2026-11-15 12:12:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-11-15 12:12:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:12:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:12:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:12:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-15 12:13:00[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:13:24[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:13:34[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:13:45[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:13:53[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-15 12:13:54[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-15 12:14:05[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 11 events
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 6 events
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 475 events from 5 sources
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 475 events
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 367 within 24h (146 pruned)
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Lim Guan Eng says govt considering proposal for higher electricity bill protection as heat drives usage. KUALA LUMPUR, Nov 15 &mdash; Deputy Prime Minister and Energy Transition and Water Transformati" importance=0.46
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Rita Rudaini’s eldest brother, a Customs officer, dies after collapsing at Kelana Jaya sports event. PETALING JAYA, Nov 15 &mdash; Ahmad Musyaiful Mokhtar, 51, the eldest brother of actress Rita Rudai" importance=0.41
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Ab Rauf’s second-term to-do list: Economy, investments and fewer unanswered complaints. MELAKA, Nov 15 &mdash; The Melaka government will focus on strengthening the state&rsquo;s economy, attracting i" importance=0.46
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Wu-Tang Clan, Queen Latifah join Rock Hall of Fame. Phil Collins, Joy Division/New Order and the late Luther Vandross were also inducted into the rock pantheon at the Los Angeles ceremony." importance=0.41
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Loke says Anwar need not bow to calls for early dissolution of Parliament. KLUANG, Nov 15 &mdash; Prime Minister Datuk Seri Anwar Ibrahim need not bow to calls for an early dissolution of Parliam..." importance=0.46
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "BN aims to field PPP candidates in GE16, says Zahid. The coalition's chairman says PPP is also a partner alongside Umno, MCA and MIC." importance=0.31
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Armizan gesa PAC teliti implikasi tamat PDP Pan Borneo Sabah. Ahli Parlimen Papar berkata penamatan model Rakan Pelaksana Projek pada 2019 itu perlu disiasat kerana kesannya masih jadi polemik." importance=0.46
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Mas Ermieyati mahu Bersatu pecat terus, bukan gantung keahlian. Bagaimanapun, Ahli Parlimen Masjid Tanah itu berkata tindakan disiplin ke atasnya tidak sedikit pun menjejaskan tugasnya sebagai wakil r" importance=0.51
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Ukrainian strikes hit major Russian industrial city. The strikes caused a fire at the Nizhnekamskneftekhim petrochemical complex, owned by leading Russian company Sibur." importance=0.31
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "Umno, BN to stay out of Sarawak election. BN chairman Ahmad Zahid Hamidi says Umno has an understanding with PBB, the lynchpin of the ruling GPS coalition in Sarawak." importance=0.36
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Clarify roles in Negeri Sembilan royal crisis, DAP leaders tell BN, PN. Syahredzan Johan and three others say the coalitions’ central leadership must state whether they backed the actions of the mente" importance=0.41
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "BN to skip Sarawak state polls under Umno-PBB understanding, says Zahid. KUALA LUMPUR, Nov 15 &mdash; Barisan Nasional (BN) will not contest any seats in the 13th Sarawak state election, its ch..." importance=0.36
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Kedah aims to cut operating deficit to 10.59pc with RM1.34b Budget 2027, says MB. ALOR SETAR, Nov 15 &mdash; The Kedah state government today tabled its RM1.34 billion Budget 2027, projecting an opera" importance=0.66
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [budget_allocation] "Senator warns early Parliament dissolution could derail Budget 2027 and force temporary spending, citing 2022 precedent. KUCHING, Nov 15 &mdash; Calls for an early dissolution of the Dewan Rakyat are " importance=0.39
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "With MIC’s backing, BN vows to field PPP candidates in upcoming general election, says Zahid. KUALA LUMPUR, Nov 15 &mdash; Barisan Nasional (BN) is committed to fielding candidates from the People&rsq" importance=0.36
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "GRS MPs to submit memorandum to PAC, seek expanded Pan Borneo probe. PAPAR, Nov 15 &mdash; Seven Gabungan Rakyat Sabah (GRS) Members of Parliament will submit a memorandum to the Public Acc..." importance=0.46
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [high_court_ruling] "3 men sentenced to death over Jordan church attack. The gunmen killed nine people and wounded 25 others when they stormed a funeral at a Greek Orthodox church in southern Hammoud village, Karak govern" importance=0.41
+[32m2026-11-15 12:14:11[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
+[32m2026-11-15 12:14:12[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('chinese', 31), ('minister', 28), ('government', 22), ('india', 21), ('prime minister', 18), ('election', 17), ('policy', 10), ('economy', 10), ('dap', 9), ('indian', 8)]
+[32m2026-11-15 12:14:12[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 11 events monitored, 11 flagged
+[32m2026-11-15 12:14:12[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 3 low-score topics
+[32m2026-11-15 12:14:12[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 485 active topics
+[32m2026-11-15 12:14:12[0m | [1mINFO    [0m | [36moutput              [0m | 485 active issues, 6 new, 3 pruned
+[32m2026-11-15 12:14:12[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-15 12:14:25[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=208  hmm=OK/68  cox=RT/485  sarima=RT/485
+[32m2026-11-15 12:14:25[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=485)
+[32m2026-11-15 12:14:25[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 485 active topics. Top: malay (score: 0.65)
