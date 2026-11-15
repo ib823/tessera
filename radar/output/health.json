@@ -1,15 +1,15 @@
 {
-  "last_scan": "2026-11-15T00:27:57.077016+00:00",
-  "events_fetched": 517,
-  "issues_tracked": 492,
+  "last_scan": "2026-11-15T02:14:43.650406+00:00",
+  "events_fetched": 474,
+  "issues_tracked": 489,
   "sources": {
     "news_rss": {
-      "last_fetch": "2026-11-15T00:25:34.196834+00:00",
+      "last_fetch": "2026-11-15T02:12:23.995497+00:00",
       "error_rate": 0.3333333333333333,
       "success_count": 10,
       "error_count": 5,
       "status": "degraded",
-      "events_fetched": 474,
+      "events_fetched": 434,
       "batches": {
         "attempted": 15,
         "succeeded": 10,
@@ -83,9 +83,8 @@
         },
         {
           "label": "Bangkok Post",
-          "status": "failed",
-          "events_fetched": 0,
-          "reason": "http_451"
+          "status": "healthy",
+          "events_fetched": 10
         },
         {
           "label": "The Hindu \u2014 International",
@@ -94,13 +93,14 @@
         },
         {
           "label": "Arab News",
-          "status": "healthy",
-          "events_fetched": 50
+          "status": "failed",
+          "events_fetched": 0,
+          "reason": "http_403"
         }
       ]
     },
     "reddit": {
-      "last_fetch": "2026-11-15T00:25:34.827088+00:00",
+      "last_fetch": "2026-11-15T02:12:25.336072+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
@@ -121,7 +121,7 @@
       ]
     },
     "gdelt": {
-      "last_fetch": "2026-11-15T00:27:39.355289+00:00",
+      "last_fetch": "2026-11-15T02:14:26.004323+00:00",
       "error_rate": 1.0,
       "success_count": 0,
       "error_count": 11,
@@ -131,7 +131,7 @@
         "attempted": 11,
         "succeeded": 0,
         "failed": 11,
-        "rate_limited": 8
+        "rate_limited": 7
       },
       "batch_results": [
         {
@@ -160,9 +160,9 @@
         },
         {
           "label": "malaysia_interest",
-          "status": "rate_limited",
+          "status": "failed",
           "events_fetched": 0,
-          "reason": "http_429"
+          "reason": "non_json_response"
         },
         {
           "label": "malaysia_interest",
@@ -184,26 +184,26 @@
         },
         {
           "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
           "status": "failed",
           "events_fetched": 0,
           "reason": "non_json_response"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
         }
       ]
     },
     "parliament": {
-      "last_fetch": "2026-11-15T00:27:50.324326+00:00",
+      "last_fetch": "2026-11-15T02:14:37.112963+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
@@ -224,12 +224,12 @@
       ]
     },
     "court": {
-      "last_fetch": "2026-11-15T00:27:56.270938+00:00",
+      "last_fetch": "2026-11-15T02:14:43.149200+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 7,
+      "events_fetched": 4,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -240,7 +240,7 @@
         {
           "label": "court",
           "status": "healthy",
-          "events_fetched": 7
+          "events_fetched": 4
         }
       ]
     },
