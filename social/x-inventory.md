@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-16T08:28:11.457Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-16T10:14:03.160Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -72,40 +72,6 @@ The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretc
 Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.
 
 https://thefourthangle.pages.dev/issue/2017
-```
-
-### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2016-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2016`
-
-**1/6** _(hook — attach image, NO link)_ · 163 chars
-```
-Google pledged US$15b on 4 Nov and to pay 100% of its campuses' power. Who pays is now written into data-centre rules. Who gets heard rests on older, general ones.
-```
-**2/6** _(fact)_ · 150 chars
-```
-RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul to list data centres for a public-display EIA. The 2015 Order has none.
-```
-**3/6** _(fact)_ · 126 chars
-```
-By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.
-```
-**4/6** _(fact)_ · 213 chars
-```
-In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists. Elsewhere the statutory window is the local plan's drafting stage.
-```
-**5/6** _(reframe)_ · 156 chars
-```
-In the Peninsula, a data centre now has its own water-tariff category. It still has no category in the EIA Order, which decides what goes on public display.
-```
-**6/6** _(view — ONLY post with the link)_ · 160 chars
-```
-The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
-
-https://thefourthangle.pages.dev/issue/2016
 ```
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
@@ -216,6 +182,44 @@ It is like a town that keeps drafting a fire code, files it away when the neighb
 A haze law would not put out the fires; Putrajaya said so in 2023. Its point was to tell Malaysian planters abroad the smoke follows them home. Two governments declined to say it.
 
 https://thefourthangle.pages.dev/issue/2011
+```
+
+### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
+
+**1/7** _(hook — attach image, NO link)_ · 130 chars
+```
+Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
+```
+**2/7** _(fact)_ · 153 chars
+```
+The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
+```
+**3/7** _(fact)_ · 149 chars
+```
+PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
+```
+**4/7** _(fact)_ · 152 chars
+```
+One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
+```
+**6/7** _(analogy)_ · 148 chars
+```
+A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
+```
+**7/7** _(view — ONLY post with the link)_ · 223 chars
+```
+Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
+
+https://thefourthangle.pages.dev/issue/2010
 ```
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
@@ -364,6 +368,44 @@ Watchdogs guard the tender. The bigger leak may sit one step later, at the desk 
 Whether charges follow or not, the lesson is the payment desk: scrutiny that stops at the award misses where the cash actually moves.
 
 https://thefourthangle.pages.dev/issue/2005
+```
+
+### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
+
+**1/7** _(hook — attach image, NO link)_ · 197 chars
+```
+Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
+```
+**2/7** _(fact)_ · 210 chars
+```
+Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
+```
+**3/7** _(fact)_ · 248 chars
+```
+Nearly two in five adults with diabetes in 2023 did not know they had it: 5.9 of the 15.6 points came from the survey's own blood test. Known diabetes edged up, from 9.4% in 2019 to 9.7%. The whole fall came in undiagnosed cases, from 8.9% to 5.9%.
+```
+**4/7** _(fact)_ · 189 chars
+```
+One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
+```
+**5/7** _(reframe)_ · 119 chars
+```
+One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
+```
+**6/7** _(analogy)_ · 178 chars
+```
+Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
+```
+**7/7** _(view — ONLY post with the link)_ · 127 chars
+```
+One better year in the diabetes data does not reverse a decade of getting heavier.
+
+https://thefourthangle.pages.dev/issue/2002
 ```
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
@@ -550,44 +592,6 @@ Like writing the building code after the towers go up. Now everyone watches whic
 Singapore charged four people, then four companies. Malaysia wrote a permit. Twenty months on, no Malaysian operator has been publicly charged.
 
 https://thefourthangle.pages.dev/issue/1995
-```
-
-### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
-
-**1/7** _(hook — attach image, NO link)_ · 263 chars
-```
-Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
-```
-**2/7** _(fact)_ · 256 chars
-```
-Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
-```
-**3/7** _(fact)_ · 262 chars
-```
-Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
-```
-**4/7** _(fact)_ · 268 chars
-```
-Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
-```
-**5/7** _(reframe)_ · 114 chars
-```
-Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
-```
-**6/7** _(analogy)_ · 227 chars
-```
-Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
-```
-**7/7** _(view — ONLY post with the link)_ · 180 chars
-```
-The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
-
-https://thefourthangle.pages.dev/issue/1994
 ```
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
@@ -810,6 +814,40 @@ The bottleneck is not age. It is the machinery that picks candidates, rewards lo
 https://thefourthangle.pages.dev/issue/1987
 ```
 
+### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
+
+**1/6** _(hook — attach image, NO link)_ · 265 chars
+```
+On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
+```
+**2/6** _(fact)_ · 267 chars
+```
+A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
+```
+**3/6** _(fact)_ · 134 chars
+```
+By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
+```
+**4/6** _(fact)_ · 155 chars
+```
+The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
+```
+**5/6** _(reframe)_ · 174 chars
+```
+Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
+```
+**6/6** _(view — ONLY post with the link)_ · 216 chars
+```
+E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
+
+https://thefourthangle.pages.dev/issue/1984
+```
+
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 
 > ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
@@ -968,7 +1006,7 @@ https://thefourthangle.pages.dev/issue/1979
 
 ### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
@@ -1186,6 +1224,40 @@ Tie standing rules to gazette publication date, require replacement forest land,
 https://thefourthangle.pages.dev/issue/1971
 ```
 
+### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
+
+**1/6** _(hook — attach image, NO link)_ · 188 chars
+```
+520% more Chinese tourists landed in Penang, but the success story has a rent bill attached The 520% surge uses a low 2023 base of 26,056. George Town's historic core has long depopulated.
+```
+**2/6** _(fact)_ · 137 chars
+```
+Visitors from China spent RM20.87B in Malaysia in 2024, second only to Singapore. The 'low-value tourist' claim doesn't survive the data.
+```
+**3/6** _(fact)_ · 220 chars
+```
+A 2017 study dates George Town's gentrification to the 1997 end of rent control, and says the 2008 UNESCO listing sped it up. Its authors warn that gentrification can displace long-term residents and erode local culture.
+```
+**4/6** _(fact)_ · 225 chars
+```
+Penang is building for more arrivals: its airport expansion lifts capacity from 6.5 million to 12 million passengers a year by June 2028. Malaysia Airports' group managing director confirmed the June 2028 target in July 2025.
+```
+**5/6** _(reframe)_ · 104 chars
+```
+This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
+```
+**6/6** _(view — ONLY post with the link)_ · 142 chars
+```
+Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
+
+https://thefourthangle.pages.dev/issue/1970
+```
+
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
 > ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
@@ -1222,7 +1294,7 @@ https://thefourthangle.pages.dev/issue/1965
 
 ### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
 
-> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
@@ -1256,6 +1328,40 @@ Like a water ration that checks what each house is for, not what its meter reads
 The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
 
 https://thefourthangle.pages.dev/issue/1963
+```
+
+### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
+
+**1/6** _(hook — attach image, NO link)_ · 152 chars
+```
+Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
+```
+**2/6** _(fact)_ · 248 chars
+```
+A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
+```
+**3/6** _(fact)_ · 263 chars
+```
+The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
+```
+**4/6** _(fact)_ · 232 chars
+```
+Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
+```
+**5/6** _(reframe)_ · 157 chars
+```
+Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
+```
+**6/6** _(view — ONLY post with the link)_ · 181 chars
+```
+The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
+
+https://thefourthangle.pages.dev/issue/1962
 ```
 
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
@@ -1328,40 +1434,6 @@ The real question is not who owns Sabah. Self-determination and 63 years of stat
 Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
 
 https://thefourthangle.pages.dev/issue/1959
-```
-
-### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1958-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1958`
-
-**1/6** _(hook — attach image, NO link)_ · 125 chars
-```
-A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
-```
-**2/6** _(fact)_ · 253 chars
-```
-149 DUI crash cases charged from 2021 to September 2024. 1,261 DUI convictions in 11 months of 2025. Neither figure counts breath tests. The 149 covers Section 44 only (death or injury). The 1,261 spans Sections 44, 45 and 45A, January to November 2025.
-```
-**3/6** _(fact)_ · 134 chars
-```
-12 fatal crashes caused by drunk road users in 2024, 0.19% of all fatal crashes. Testing is discretionary. The real number is unknown.
-```
-**4/6** _(fact)_ · 134 chars
-```
-4,340 motorcyclists killed in 2025. 13.7% of accidents, 66.4% of deaths. The gig economy's youngest workers on the deadliest vehicles.
-```
-**5/6** _(reframe)_ · 164 chars
-```
-Penalties already exist. The real question is whether Malaysia detects drunk drivers before they kill, and whether alcohol is even the main killer of motorcyclists.
-```
-**6/6** _(view — ONLY post with the link)_ · 224 chars
-```
-Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
-
-https://thefourthangle.pages.dev/issue/1958
 ```
 
 ### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
@@ -1928,6 +2000,44 @@ Judges, not legislators, reopened POCA detention to court review. Two-year renew
 https://thefourthangle.pages.dev/issue/1292
 ```
 
+### Issue 1267 — Malaysia Hosts 2.13 Million Registered Migrant Workers, Three Years at Tier 2 on Trafficking
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
+
+**1/7** _(hook — attach image, NO link)_ · 270 chars
+```
+Malaysia hosts 2.13 million registered migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. The 2026 TIP Report kept Malaysia at Tier 2. The 2025 report found no labour-trafficking prosecutions in palm oil or disposable-glove manufacturing.
+```
+**2/7** _(fact)_ · 140 chars
+```
+Since 1 September 2022 the Employment Act 1955 has covered anyone on a contract of service in Peninsular Malaysia, foreign workers included.
+```
+**3/7** _(fact)_ · 266 chars
+```
+The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. Convictions fell to 26 from 54 in the 2025 report, then rose to 36 in the 2026 report, which found no employment agency prosecuted for recruitment abuses.
+```
+**4/7** _(fact)_ · 211 chars
+```
+Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services. MOF end-August 2024: Bangladesh 37.8%, Indonesia 23.7% and Nepal 16.7% were the top source countries.
+```
+**5/7** _(reframe)_ · 138 chars
+```
+Tier 2 is not a passing grade. Malaysia sat at Tier 3 in 2014 and again in 2021 and 2022, and still falls short of TVPA minimum standards.
+```
+**6/7** _(analogy)_ · 200 chars
+```
+Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
+```
+**7/7** _(view — ONLY post with the link)_ · 213 chars
+```
+Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
+
+https://thefourthangle.pages.dev/issue/1267
+```
+
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
 
 > ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
@@ -2000,44 +2110,6 @@ Genuine SOSMA reform requires disaggregated public reporting on arrests, duratio
 https://thefourthangle.pages.dev/issue/1241
 ```
 
-### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
-
-> ⚡ **Reactive: topic is live in the radar** (malaysia akan percepat migrasi kuantum lindungi data negara. ia susulan perkembangan tekno). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
-
-**1/7** _(hook — attach image, NO link)_ · 132 chars
-```
-Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
-```
-**2/7** _(fact)_ · 124 chars
-```
-Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
-```
-**3/7** _(fact)_ · 112 chars
-```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
-```
-**4/7** _(fact)_ · 148 chars
-```
-DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
-```
-**5/7** _(reframe)_ · 137 chars
-```
-The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
-```
-**6/7** _(analogy)_ · 269 chars
-```
-Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
-
-https://thefourthangle.pages.dev/issue/1128
-```
-
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
@@ -2076,6 +2148,44 @@ A reform proposal: stand up an independent audit publishing per-cohort delivery 
 https://thefourthangle.pages.dev/issue/1102
 ```
 
+### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
+
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-0154-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 0154`
+
+**1/7** _(hook — attach image, NO link)_ · 263 chars
+```
+About RM8.3 billion spent. Zero ships delivered to the Royal Malaysian Navy. The first vessel is in sea trials. LCS programme: awarded 2011, contract signed July 2014, first delivery due 2019. Original contract RM9.13B for 6 ships, revised to RM11.2B for 5 ships.
+```
+**2/7** _(fact)_ · 98 chars
+```
+PAC identified RM1.4B in cost overruns and allocations used for purposes other than the LCS works.
+```
+**3/7** _(fact)_ · 128 chars
+```
+MACC sent investigation papers to the AGC in August 2022. The former BNS managing director was charged with CBT involving RM21M.
+```
+**4/7** _(fact)_ · 260 chars
+```
+PAC and audit findings carry serious defence and maritime-enforcement implications. Patrol relies on MMEA, RMN assets and Op Naga. AG reporting cited 89 Chinese-vessel incursions from 2016-2019. The LCS shortfall is one input into a broader capability picture.
+```
+**5/7** _(reframe)_ · 159 chars
+```
+The question is no longer whether RM8.3B bought ships. It is whether the revised contract, new payment terms and trial timeline will close the gap they opened.
+```
+**6/7** _(analogy)_ · 252 chars
+```
+Like paying a builder RM6B against a RM9B contract, finding partial hulls instead of a delivered fleet, and renegotiating with the same builder. Independent oversight came from PAC, the National Audit Department, MACC and auditors, not from BNS itself.
+```
+**7/7** _(view — ONLY post with the link)_ · 209 chars
+```
+Oversight did happen: PAC reports, declassification, a CBT charge that ended in a DNAA, a contract restructure. The unresolved test is delivery, now due April 2027.
+
+https://thefourthangle.pages.dev/issue/0154
+```
+
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
 - **Status:** PENDING
@@ -2107,6 +2217,39 @@ The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
 If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
 
 https://thefourthangle.pages.dev/issue/2018
+```
+
+### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2016-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2016`
+
+**1/6** _(hook — attach image, NO link)_ · 163 chars
+```
+Google pledged US$15b on 4 Nov and to pay 100% of its campuses' power. Who pays is now written into data-centre rules. Who gets heard rests on older, general ones.
+```
+**2/6** _(fact)_ · 150 chars
+```
+RimbaWatch and allies, Greenpeace Malaysia among them, asked the DOE on 24 Jul to list data centres for a public-display EIA. The 2015 Order has none.
+```
+**3/6** _(fact)_ · 126 chars
+```
+By Dec 2024, data-centre power applications already equalled about 40% of Peninsular Malaysia's 27,000MW capacity, AMRO found.
+```
+**4/6** _(fact)_ · 213 chars
+```
+In Peninsular states under the 1976 planning Act, neighbouring landowners get a statutory 21-day notice to object only where no local plan exists. Elsewhere the statutory window is the local plan's drafting stage.
+```
+**5/6** _(reframe)_ · 156 chars
+```
+In the Peninsula, a data centre now has its own water-tariff category. It still has no category in the EIA Order, which decides what goes on public display.
+```
+**6/6** _(view — ONLY post with the link)_ · 160 chars
+```
+The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
+
+https://thefourthangle.pages.dev/issue/2016
 ```
 
 ### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
@@ -2144,43 +2287,6 @@ Like blaming a stranger three streets away for the fire while the neighbour is a
 Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
 
 https://thefourthangle.pages.dev/issue/2014
-```
-
-### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
-
-**1/7** _(hook — attach image, NO link)_ · 130 chars
-```
-Tabung Haji declared a RM3.4 billion profit for 2017 and paid hibah on it. A Royal Commission found 2017 was a RM1.4 billion loss.
-```
-**2/7** _(fact)_ · 153 chars
-```
-The commission found the chairman and several board members from 2014 to 2018 came from among politicians. The Act sets no competence test for the board.
-```
-**3/7** _(fact)_ · 149 chars
-```
-PwC's table shows the fund short after every payout from 2014. In 2017 it paid RM3.32 billion and ended RM4.09 billion short; hibah fell 72% in 2018.
-```
-**4/7** _(fact)_ · 152 chars
-```
-One section 22 test: assets cover liabilities. Depositors' money sat as equity from 2010; the books appeared to pass. The commission: misrepresentation.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-On page 199 the commission asked the Government to consider publishing what it could. The report stayed classified almost four years. The stated reason: depositors might panic.
-```
-**6/7** _(analogy)_ · 148 chars
-```
-A savings fund loosens its write-down rule twice in a year, pays out on the result, then keeps the inspector's report in a drawer lest savers worry.
-```
-**7/7** _(view — ONLY post with the link)_ · 223 chars
-```
-Tabung Haji says it now pays on audited accounts. The politician ban has yet to reach Parliament. Four years of hibah rested on numbers the commission says the Act never allowed.
-
-https://thefourthangle.pages.dev/issue/2010
 ```
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
@@ -2257,43 +2363,6 @@ A government can set a target but not guarantee a harvest. Rice security is deci
 https://thefourthangle.pages.dev/issue/2003
 ```
 
-### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
-
-**1/7** _(hook — attach image, NO link)_ · 197 chars
-```
-Adult diabetes fell to 15.6% in 2023, down from 18.3% in 2019, and the drop looks like good news. One survey down is not a trend. The risk factor that drives future diabetes moved the opposite way.
-```
-**2/7** _(fact)_ · 210 chars
-```
-Overweight and obesity climbed to 54.4% of adults in 2023, up from 50.1% (2019), 47.7% (2015) and 44.5% (2011). More than one in two adults now carry excess weight, a major modifiable driver of type 2 diabetes.
-```
-**3/7** _(fact)_ · 248 chars
-```
-Nearly two in five adults with diabetes in 2023 did not know they had it: 5.9 of the 15.6 points came from the survey's own blood test. Known diabetes edged up, from 9.4% in 2019 to 9.7%. The whole fall came in undiagnosed cases, from 8.9% to 5.9%.
-```
-**4/7** _(fact)_ · 189 chars
-```
-One in two adults lead sedentary lives, and about 84% take part in no sport, fitness or leisure activity. Physical inactivity is a modifiable risk factor that feeds the rising weight trend.
-```
-**5/7** _(reframe)_ · 119 chars
-```
-One year's diabetes figure is a snapshot. Body weight, a major modifiable driver, has risen at every survey since 2011.
-```
-**6/7** _(analogy)_ · 178 chars
-```
-Judging the epidemic by one survey is like calling the tide from a single wave. The waterline that shapes future risk, the share of adults overweight, has risen at every reading.
-```
-**7/7** _(view — ONLY post with the link)_ · 127 chars
-```
-One better year in the diabetes data does not reverse a decade of getting heavier.
-
-https://thefourthangle.pages.dev/issue/2002
-```
-
 ### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
 
 - **Status:** PENDING
@@ -2329,6 +2398,43 @@ Picture giving the umpire his own office, then still choosing him through a pane
 Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
 
 https://thefourthangle.pages.dev/issue/1997
+```
+
+### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1994-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1994`
+
+**1/7** _(hook — attach image, NO link)_ · 263 chars
+```
+Malaysia's six licensed exchanges approve no dollar stablecoin. The dollar arrived anyway, on rails Bank Negara has not publicly counted. Licensed exchange volume hit RM13.9 billion in 2024, up from RM5.4 billion. None of that captures off-platform USDT and USDC.
+```
+**2/7** _(fact)_ · 256 chars
+```
+Standard Chartered modelled US$1 trillion in deposit flight from emerging-market banks into dollar stablecoins by 2028. Egypt, Pakistan, Turkey, India and Brazil are among the high-risk markets named. Malaysia is not. The mechanism does not require naming.
+```
+**3/7** _(fact)_ · 262 chars
+```
+Tether has frozen US$4.4 billion in tokens globally, including US$2.1 billion at US-authority direction. The reach is extraterritorial. The GENIUS Act, signed 18 July 2025, made on-chain sanctions compliance a federal obligation for permitted stablecoin issuers.
+```
+**4/7** _(fact)_ · 268 chars
+```
+Thailand approved USDT and USDC on its exchanges in March 2025. Singapore wrote rules for dollar stablecoins in 2023. Bank Negara's three 2026 pilots are all ringgit. BNM promises clarity on ringgit stablecoins by end-2026. The pilots do not address the dollar demand.
+```
+**5/7** _(reframe)_ · 114 chars
+```
+Malaysia walled off the ringgit in 1998. The dollar now arrives as software, and US sanctions decide who keeps it.
+```
+**6/7** _(analogy)_ · 227 chars
+```
+Like checking permits at the front door while every window is open. The permit list shows who applied, not who came in. The SC approved list is the permit. P2P apps, offshore exchanges, and self-custody wallets are the windows.
+```
+**7/7** _(view — ONLY post with the link)_ · 180 chars
+```
+The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
+
+https://thefourthangle.pages.dev/issue/1994
 ```
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
@@ -2399,39 +2505,6 @@ The choice was never just 'mandate or exempt.' Three peers built middle paths Ma
 Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
 
 https://thefourthangle.pages.dev/issue/1985
-```
-
-### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
-
-**1/6** _(hook — attach image, NO link)_ · 265 chars
-```
-On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
-```
-**2/6** _(fact)_ · 267 chars
-```
-A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
-```
-**3/6** _(fact)_ · 134 chars
-```
-By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
-```
-**4/6** _(fact)_ · 155 chars
-```
-The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
-```
-**5/6** _(reframe)_ · 174 chars
-```
-Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
-```
-**6/6** _(view — ONLY post with the link)_ · 216 chars
-```
-E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
-
-https://thefourthangle.pages.dev/issue/1984
 ```
 
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
@@ -2541,39 +2614,6 @@ The fix is independent environmental courts and community standing to challenge 
 https://thefourthangle.pages.dev/issue/1974
 ```
 
-### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
-
-**1/6** _(hook — attach image, NO link)_ · 188 chars
-```
-520% more Chinese tourists landed in Penang, but the success story has a rent bill attached The 520% surge uses a low 2023 base of 26,056. George Town's historic core has long depopulated.
-```
-**2/6** _(fact)_ · 137 chars
-```
-Visitors from China spent RM20.87B in Malaysia in 2024, second only to Singapore. The 'low-value tourist' claim doesn't survive the data.
-```
-**3/6** _(fact)_ · 220 chars
-```
-A 2017 study dates George Town's gentrification to the 1997 end of rent control, and says the 2008 UNESCO listing sped it up. Its authors warn that gentrification can displace long-term residents and erode local culture.
-```
-**4/6** _(fact)_ · 225 chars
-```
-Penang is building for more arrivals: its airport expansion lifts capacity from 6.5 million to 12 million passengers a year by June 2028. Malaysia Airports' group managing director confirmed the June 2028 target in July 2025.
-```
-**5/6** _(reframe)_ · 104 chars
-```
-This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
-```
-**6/6** _(view — ONLY post with the link)_ · 142 chars
-```
-Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
-
-https://thefourthangle.pages.dev/issue/1970
-```
-
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
 
 - **Status:** PENDING
@@ -2640,39 +2680,6 @@ Whatever its political limits, the task now is making the DPP function as actual
 https://thefourthangle.pages.dev/issue/1966
 ```
 
-### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
-
-**1/6** _(hook — attach image, NO link)_ · 152 chars
-```
-Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
-```
-**2/6** _(fact)_ · 248 chars
-```
-A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
-```
-**3/6** _(fact)_ · 263 chars
-```
-The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
-```
-**4/6** _(fact)_ · 232 chars
-```
-Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
-```
-**5/6** _(reframe)_ · 157 chars
-```
-Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
-```
-**6/6** _(view — ONLY post with the link)_ · 181 chars
-```
-The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
-
-https://thefourthangle.pages.dev/issue/1962
-```
-
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 - **Status:** PENDING
@@ -2704,6 +2711,39 @@ The question is not whether Azam Baki is guilty. It is whether any institution c
 The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
+```
+
+### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1958-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1958`
+
+**1/6** _(hook — attach image, NO link)_ · 125 chars
+```
+A drunk, drugged driver killed a father of three. Politicians demanded the death penalty. The penalty is already 10-15 years.
+```
+**2/6** _(fact)_ · 253 chars
+```
+149 DUI crash cases charged from 2021 to September 2024. 1,261 DUI convictions in 11 months of 2025. Neither figure counts breath tests. The 149 covers Section 44 only (death or injury). The 1,261 spans Sections 44, 45 and 45A, January to November 2025.
+```
+**3/6** _(fact)_ · 134 chars
+```
+12 fatal crashes caused by drunk road users in 2024, 0.19% of all fatal crashes. Testing is discretionary. The real number is unknown.
+```
+**4/6** _(fact)_ · 134 chars
+```
+4,340 motorcyclists killed in 2025. 13.7% of accidents, 66.4% of deaths. The gig economy's youngest workers on the deadliest vehicles.
+```
+**5/6** _(reframe)_ · 164 chars
+```
+Penalties already exist. The real question is whether Malaysia detects drunk drivers before they kill, and whether alcohol is even the main killer of motorcyclists.
+```
+**6/6** _(view — ONLY post with the link)_ · 224 chars
+```
+Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
+
+https://thefourthangle.pages.dev/issue/1958
 ```
 
 ### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
@@ -2873,43 +2913,6 @@ Like renewing a licence with a tick-box form: the paperwork advances, the underl
 A law permitting 28-day pre-charge detention warrants substantive review at every renewal, anchored on official detention counts and Suaram's release-without-charge data.
 
 https://thefourthangle.pages.dev/issue/1298
-```
-
-### Issue 1267 — Malaysia Hosts 2.13 Million Registered Migrant Workers, Three Years at Tier 2 on Trafficking
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
-
-**1/7** _(hook — attach image, NO link)_ · 270 chars
-```
-Malaysia hosts 2.13 million registered migrant workers. The US TIP Report keeps flagging the same forced-labour patterns. The 2026 TIP Report kept Malaysia at Tier 2. The 2025 report found no labour-trafficking prosecutions in palm oil or disposable-glove manufacturing.
-```
-**2/7** _(fact)_ · 140 chars
-```
-Since 1 September 2022 the Employment Act 1955 has covered anyone on a contract of service in Peninsular Malaysia, foreign workers included.
-```
-**3/7** _(fact)_ · 266 chars
-```
-The US TIP Report's Tier 2 status reflects increasing efforts but unmet minimum standards in several key areas. Convictions fell to 26 from 54 in the 2025 report, then rose to 36 in the 2026 report, which found no employment agency prosecuted for recruitment abuses.
-```
-**4/7** _(fact)_ · 211 chars
-```
-Foreign workers are officially allowed in manufacturing, construction, agriculture, plantations and services. MOF end-August 2024: Bangladesh 37.8%, Indonesia 23.7% and Nepal 16.7% were the top source countries.
-```
-**5/7** _(reframe)_ · 138 chars
-```
-Tier 2 is not a passing grade. Malaysia sat at Tier 3 in 2014 and again in 2021 and 2022, and still falls short of TVPA minimum standards.
-```
-**6/7** _(analogy)_ · 200 chars
-```
-Like a factory that treats its workers' welfare as a compliance line item: essential to hire, not to protect. Documentation buys access to labour but not enforcement of the protections already in law.
-```
-**7/7** _(view — ONLY post with the link)_ · 213 chars
-```
-Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
-
-https://thefourthangle.pages.dev/issue/1267
 ```
 
 ### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
@@ -3089,6 +3092,43 @@ Adoption is not protection. The infrastructure works. The guardrails on merchant
 https://thefourthangle.pages.dev/issue/1146
 ```
 
+### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
+
+**1/7** _(hook — attach image, NO link)_ · 132 chars
+```
+Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
+```
+**2/7** _(fact)_ · 124 chars
+```
+Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
+```
+**3/7** _(fact)_ · 112 chars
+```
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
+```
+**4/7** _(fact)_ · 148 chars
+```
+DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
+```
+**5/7** _(reframe)_ · 137 chars
+```
+The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
+```
+**6/7** _(analogy)_ · 269 chars
+```
+Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
+
+https://thefourthangle.pages.dev/issue/1128
+```
+
 ### Issue 1043 — When states override environmental law, the environment has no government
 
 - **Status:** PENDING
@@ -3124,43 +3164,6 @@ Like a building code that only applies in the lobby. Each floor sets its own rul
 Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
 
 https://thefourthangle.pages.dev/issue/1043
-```
-
-### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-0154-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 0154`
-
-**1/7** _(hook — attach image, NO link)_ · 263 chars
-```
-About RM8.3 billion spent. Zero ships delivered to the Royal Malaysian Navy. The first vessel is in sea trials. LCS programme: awarded 2011, contract signed July 2014, first delivery due 2019. Original contract RM9.13B for 6 ships, revised to RM11.2B for 5 ships.
-```
-**2/7** _(fact)_ · 98 chars
-```
-PAC identified RM1.4B in cost overruns and allocations used for purposes other than the LCS works.
-```
-**3/7** _(fact)_ · 128 chars
-```
-MACC sent investigation papers to the AGC in August 2022. The former BNS managing director was charged with CBT involving RM21M.
-```
-**4/7** _(fact)_ · 260 chars
-```
-PAC and audit findings carry serious defence and maritime-enforcement implications. Patrol relies on MMEA, RMN assets and Op Naga. AG reporting cited 89 Chinese-vessel incursions from 2016-2019. The LCS shortfall is one input into a broader capability picture.
-```
-**5/7** _(reframe)_ · 159 chars
-```
-The question is no longer whether RM8.3B bought ships. It is whether the revised contract, new payment terms and trial timeline will close the gap they opened.
-```
-**6/7** _(analogy)_ · 252 chars
-```
-Like paying a builder RM6B against a RM9B contract, finding partial hulls instead of a delivered fleet, and renegotiating with the same builder. Independent oversight came from PAC, the National Audit Department, MACC and auditors, not from BNS itself.
-```
-**7/7** _(view — ONLY post with the link)_ · 209 chars
-```
-Oversight did happen: PAC reports, declassification, a CBT charge that ended in a DNAA, a contract restructure. The unresolved test is delivery, now due April 2027.
-
-https://thefourthangle.pages.dev/issue/0154
 ```
 
 ### Issue 0146 — Gig Workers Act 2025: Mandatory SOCSO Registration; EPF Retirement Still Outside
