@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T04:13:39.393Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T06:17:58.197Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -338,7 +338,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -410,7 +410,7 @@ https://thefourthangle.pages.dev/issue/2002
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
@@ -634,7 +634,7 @@ https://thefourthangle.pages.dev/issue/1995
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
@@ -968,7 +968,7 @@ https://thefourthangle.pages.dev/issue/1982
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
@@ -1082,7 +1082,7 @@ https://thefourthangle.pages.dev/issue/1978
 
 ### Issue 1977 — Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1977-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1977`
@@ -1332,7 +1332,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1438,7 +1438,7 @@ https://thefourthangle.pages.dev/issue/1962
 
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
@@ -1964,7 +1964,7 @@ https://thefourthangle.pages.dev/issue/1445
 
 ### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
@@ -1998,7 +1998,7 @@ https://thefourthangle.pages.dev/issue/1325
 
 ### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
@@ -2032,7 +2032,7 @@ https://thefourthangle.pages.dev/issue/1294
 
 ### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
 
-> ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
