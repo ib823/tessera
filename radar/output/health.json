@@ -1,15 +1,15 @@
 {
-  "last_scan": "2026-11-17T16:13:09.241557+00:00",
-  "events_fetched": 423,
-  "issues_tracked": 438,
+  "last_scan": "2026-11-17T18:13:32.499023+00:00",
+  "events_fetched": 399,
+  "issues_tracked": 439,
   "sources": {
     "news_rss": {
-      "last_fetch": "2026-11-17T16:10:40.322607+00:00",
+      "last_fetch": "2026-11-17T18:11:01.595898+00:00",
       "error_rate": 0.4,
       "success_count": 9,
       "error_count": 6,
       "status": "degraded",
-      "events_fetched": 382,
+      "events_fetched": 385,
       "batches": {
         "attempted": 15,
         "succeeded": 9,
@@ -37,7 +37,7 @@
         {
           "label": "BBC World",
           "status": "healthy",
-          "events_fetched": 21
+          "events_fetched": 24
         },
         {
           "label": "Al Jazeera English",
@@ -101,12 +101,12 @@
       ]
     },
     "reddit": {
-      "last_fetch": "2026-11-17T16:10:41.227282+00:00",
+      "last_fetch": "2026-11-17T18:11:01.855945+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
-      "status": "healthy",
-      "events_fetched": 25,
+      "status": "healthy_empty",
+      "events_fetched": 0,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -116,13 +116,13 @@
       "batch_results": [
         {
           "label": "reddit",
-          "status": "healthy",
-          "events_fetched": 25
+          "status": "healthy_empty",
+          "events_fetched": 0
         }
       ]
     },
     "gdelt": {
-      "last_fetch": "2026-11-17T16:12:51.101051+00:00",
+      "last_fetch": "2026-11-17T18:13:14.243264+00:00",
       "error_rate": 1.0,
       "success_count": 0,
       "error_count": 11,
@@ -137,6 +137,18 @@
       "batch_results": [
         {
           "label": "domestic",
+          "status": "failed",
+          "events_fetched": 0,
+          "reason": "invalid_articles_response"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
           "status": "rate_limited",
           "events_fetched": 0,
           "reason": "http_429"
@@ -163,25 +175,13 @@
           "label": "malaysia_interest",
           "status": "failed",
           "events_fetched": 0,
-          "reason": "non_json_response"
+          "reason": "invalid_articles_response"
         },
         {
           "label": "malaysia_interest",
           "status": "rate_limited",
           "events_fetched": 0,
           "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "failed",
-          "events_fetched": 0,
-          "reason": "non_json_response"
         },
         {
           "label": "malaysia_interest",
@@ -204,12 +204,12 @@
       ]
     },
     "parliament": {
-      "last_fetch": "2026-11-17T16:13:02.298681+00:00",
+      "last_fetch": "2026-11-17T18:13:25.589944+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 11,
+      "events_fetched": 10,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -220,17 +220,17 @@
         {
           "label": "parliament",
           "status": "healthy",
-          "events_fetched": 11
+          "events_fetched": 10
         }
       ]
     },
     "court": {
-      "last_fetch": "2026-11-17T16:13:08.616662+00:00",
+      "last_fetch": "2026-11-17T18:13:31.743017+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 5,
+      "events_fetched": 4,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -241,7 +241,7 @@
         {
           "label": "court",
           "status": "healthy",
-          "events_fetched": 5
+          "events_fetched": 4
         }
       ]
     },

@@ -1,52 +1,48 @@
-[32m2026-11-17 16:10:32[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-17 16:10:32[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-17 16:10:32[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-17 16:10:33[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-17 16:10:33[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-17 16:10:33[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 435 topics from state
-[32m2026-11-17 16:10:33[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-17 16:10:33[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-17T16:10:33.479873+00:00
-[32m2026-11-17 16:10:40[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 382 events
-[32m2026-11-17 16:10:41[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 25 events
-[32m2026-11-17 16:10:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-11-17 16:11:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:11:16[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:11:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:11:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-17 16:11:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:12:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:12:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-17 16:12:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:12:38[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:12:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-17 16:12:51[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-17 16:13:02[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 11 events
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 423 events from 5 sources
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 423 events
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 485 within 24h (151 pruned)
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Taliban supreme leader makes rare visit to Afghan capital. Security was stepped up ahead of his attendance at a Kabul conference on the impact of his decrees, with heavily manned checkpoints set up ar" importance=0.41
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [high_court_ruling] "Persatuan dibenar cabar majlis berkait pengendalian anjing liar. Mahkamah membenarkan sebahagian rayuan oleh PeLindung untuk mendapatkan kebenaran bagi memulakan prosiding semakan kehakiman terhadap M" importance=0.36
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Israel set for new parliament speaker as Netanyahu’s grip loosens. Gadi Eisenkot, a former military chief tasked with forming a government to replace Benjamin Netanyahu, has nominated ally Matan Kahan" importance=0.46
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Get UNHCR to cover refugees’ hospital bills, says Radzi. The Putrajaya MP accuses the UN agency of issuing cards to refugees indiscriminately without taking responsibility for them." importance=0.46
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Nvidia says creates committee for national security, export controls. The announcement came after the US tightened restrictions on AI chip exports following revelations that Jensen Huang had an extram" importance=0.41
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Genneva’s bid to stay winding-up order pending appeal fails. The appeals bench says the liquidator must be allowed to realise assets and investigate the alleged transfer of RM11.66 million." importance=0.53
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Genneva’s bid to stay winding-up order pending appeal fails. The appeals bench says the liquidator must be allowed to realise assets and investigate the alleged transfer of RM11.66 million." importance=0.42
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Oviedo fan given suspended 11-month sentence for racially abusing Mbappe. The unnamed fan has been fined, banned from sports stadiums for two years and handed a suspended 11-month prison sentence." importance=0.36
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "Sarawak DAP to contest Batu Lintang. State party chief Chong Chieng Jen says the decision follows a meeting of the candidate selection committee yesterday." importance=0.46
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "DAP Sarawak tanding Batu Lintang. Ketua DAP Sarawak, Chong Chieng Jen, mengumumkan perkembangan ini susulan mesyuarat jawatankuasa pemilihan calon semalam." importance=0.46
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Firm’s failure to honour contract blamed for ambulance procurement delay. Health minister Dzulkefly Ahmad, however, refuses to name the firm or the minister who awarded the contract as he does not wan" importance=0.51
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "MCA sokong keputusan pajakan KLSCAH, anggap langkah wajar. Chong Sin Woon berkata, pembaharuan pajakan bangunan bersejarah itu tiada kena-mengena dengan kaum." importance=0.36
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [budget_allocation] "Disclose expenditure, targets of RM575mil tourism allocation, govt told. Kepong MP Lim Lip Eng says the government should also disclose how many hotel bookings and holiday packages have resulted from " importance=0.47
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Peratusan pengundi bukan Melayu tinggi bukan kelebihan buat PH. Bekas Ahli Parlimen Ong Kian Ming kata Bersama mungkin meraih manfaat daripada undi masyarakat India dan Cina, berdasarkan keputusan PRN" importance=0.51
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Peratusan pengundi bukan Melayu tinggi bukan kelebihan buat PH. Bekas Ahli Parlimen Ong Kian Ming kata Bersama mungkin meraih manfaat daripada undi masyarakat India dan Cina, berdasarkan keputusan PRN" importance=0.41
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "Wildlife protection must be part of climate action, campaigners tell COP. An animal welfare group said wildlife plays a vital role in carbon-storing ecosystems but has been largely overlooked in clima" importance=0.46
-[32m2026-11-17 16:13:08[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
-[32m2026-11-17 16:13:09[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('chinese', 31), ('india', 23), ('government', 22), ('minister', 19), ('prime minister', 12), ('policy', 9), ('race', 7), ('dap', 7), ('election', 6), ('economy', 5)]
-[32m2026-11-17 16:13:09[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 13 events monitored, 13 flagged
-[32m2026-11-17 16:13:09[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 438 active topics
-[32m2026-11-17 16:13:09[0m | [1mINFO    [0m | [36moutput              [0m | 438 active issues, 3 new, 0 pruned
-[32m2026-11-17 16:13:09[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-17 16:13:19[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=211  hmm=OK/68  cox=RT/438  sarima=RT/438
-[32m2026-11-17 16:13:19[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=438)
-[32m2026-11-17 16:13:20[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 438 active topics. Top: india (score: 0.21)
+[32m2026-11-17 18:10:54[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-17 18:10:54[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-17 18:10:54[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-17 18:10:55[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-17 18:10:55[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-17 18:10:55[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 438 topics from state
+[32m2026-11-17 18:10:55[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-17 18:10:55[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-17T18:10:55.375069+00:00
+[32m2026-11-17 18:11:01[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 385 events
+[32m2026-11-17 18:11:01[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
+[32m2026-11-17 18:11:28[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:11:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:11:52[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:12:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:12:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:12:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:12:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:13:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:13:13[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-17 18:13:14[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-17 18:13:25[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 10 events
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 4 events
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 399 events from 5 sources
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 399 events
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 482 within 24h (146 pruned)
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Get UNHCR to cover refugees’ hospital bills, says Radzi. The Putrajaya MP accuses the UN agency of issuing cards to refugees indiscriminately without taking responsibility for them." importance=0.46
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Nvidia says creates committee for national security, export controls. The announcement came after the US tightened restrictions on AI chip exports following revelations that Jensen Huang had an extram" importance=0.41
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [bill_reading] "Genneva’s bid to stay winding-up order pending appeal fails. The appeals bench says the liquidator must be allowed to realise assets and investigate the alleged transfer of RM11.66 million." importance=0.53
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Genneva’s bid to stay winding-up order pending appeal fails. The appeals bench says the liquidator must be allowed to realise assets and investigate the alleged transfer of RM11.66 million." importance=0.42
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Oviedo fan given suspended 11-month sentence for racially abusing Mbappe. The unnamed fan has been fined, banned from sports stadiums for two years and handed a suspended 11-month prison sentence." importance=0.36
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Sarawak DAP to contest Batu Lintang. State party chief Chong Chieng Jen says the decision follows a meeting of the candidate selection committee yesterday." importance=0.46
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "DAP Sarawak tanding Batu Lintang. Ketua DAP Sarawak, Chong Chieng Jen, mengumumkan perkembangan ini susulan mesyuarat jawatankuasa pemilihan calon semalam." importance=0.46
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Firm’s failure to honour contract blamed for ambulance procurement delay. Health minister Dzulkefly Ahmad, however, refuses to name the firm or the minister who awarded the contract as he does not wan" importance=0.51
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "MCA sokong keputusan pajakan KLSCAH, anggap langkah wajar. Chong Sin Woon berkata, pembaharuan pajakan bangunan bersejarah itu tiada kena-mengena dengan kaum." importance=0.36
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [budget_allocation] "Disclose expenditure, targets of RM575mil tourism allocation, govt told. Kepong MP Lim Lip Eng says the government should also disclose how many hotel bookings and holiday packages have resulted from " importance=0.47
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [bill_reading] "Peratusan pengundi bukan Melayu tinggi bukan kelebihan buat PH. Bekas Ahli Parlimen Ong Kian Ming kata Bersama mungkin meraih manfaat daripada undi masyarakat India dan Cina, berdasarkan keputusan PRN" importance=0.51
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "Peratusan pengundi bukan Melayu tinggi bukan kelebihan buat PH. Bekas Ahli Parlimen Ong Kian Ming kata Bersama mungkin meraih manfaat daripada undi masyarakat India dan Cina, berdasarkan keputusan PRN" importance=0.41
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [bill_reading] "Wildlife protection must be part of climate action, campaigners tell COP. An animal welfare group said wildlife plays a vital role in carbon-storing ecosystems but has been largely overlooked in clima" importance=0.46
+[32m2026-11-17 18:13:31[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Former Nvidia CEO to appear before US congressional committees in December. Nvidia's General Counsel Tim Teter will also appear before the same committees on Dec 2." importance=0.41
+[32m2026-11-17 18:13:32[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'cascade_tracker': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
+[32m2026-11-17 18:13:32[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 29 config keywords in events. Top: [('chinese', 32), ('india', 22), ('government', 19), ('minister', 18), ('prime minister', 11), ('policy', 9), ('race', 7), ('election', 5), ('scandal', 5), ('dap', 5)]
+[32m2026-11-17 18:13:32[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 12 events monitored, 12 flagged
+[32m2026-11-17 18:13:32[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 439 active topics
+[32m2026-11-17 18:13:32[0m | [1mINFO    [0m | [36moutput              [0m | 439 active issues, 1 new, 0 pruned
+[32m2026-11-17 18:13:32[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-17 18:13:47[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=211  hmm=OK/68  cox=RT/439  sarima=RT/439
+[32m2026-11-17 18:13:47[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=439)
+[32m2026-11-17 18:13:47[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 439 active topics. Top: india (score: 0.20)
