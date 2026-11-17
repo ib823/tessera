@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-16T22:11:02.140Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T00:26:50.728Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1156,40 +1156,6 @@ The fix exists: open tendering, employer-pays enforcement, cooperation with Bang
 https://thefourthangle.pages.dev/issue/1973
 ```
 
-### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
-
-> ⚡ **Reactive: topic is live in the radar** (brace for early ge16 if bn-pn wins melaka, says samsuri. pn chairman says it could set off). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
-
-**1/6** _(hook — attach image, NO link)_ · 126 chars
-```
-RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
-```
-**2/6** _(fact)_ · 118 chars
-```
-The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
-```
-**3/6** _(fact)_ · 124 chars
-```
-76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
-```
-**4/6** _(fact)_ · 187 chars
-```
-The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
-```
-**5/6** _(reframe)_ · 138 chars
-```
-The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
-```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
-```
-Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
-
-https://thefourthangle.pages.dev/issue/1972
-```
-
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
 > ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
@@ -1434,44 +1400,6 @@ The real question is not who owns Sabah. Self-determination and 63 years of stat
 Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
 
 https://thefourthangle.pages.dev/issue/1959
-```
-
-### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
-
-> ⚡ **Reactive: topic is live in the radar** (brace for early ge16 if bn-pn wins melaka, says samsuri. pn chairman says it could set off). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-MITI set an RM200K floor and an 80% export rule. BYD's Tanjung Malim plan stalled. In Thailand, BYD opened a plant in 2024.
-```
-**2/7** _(fact)_ · 125 chars
-```
-MITI's rule puts any Tanjung Malim-built BYD sold here above RM200K. BYD's imported Dolphin and Atto 3 already sell for less.
-```
-**3/7** _(fact)_ · 98 chars
-```
-MITI minister Johari Abdul Ghani said the conditions protect a car industry of about 700,000 jobs.
-```
-**4/7** _(fact)_ · 149 chars
-```
-Thailand set conditions too: EV makers on its subsidy scheme had to build one car locally for each import in 2024. BYD's Thai plant opened that July.
-```
-**5/7** _(reframe)_ · 29 chars
-```
-Who is the wall actually for?
-```
-**6/7** _(analogy)_ · 121 chars
-```
-Like building a wall around a garden. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
-```
-**7/7** _(view — ONLY post with the link)_ · 146 chars
-```
-700,000 jobs deserve an honest transition, not a price floor that cordons off the affordable segment.
-
-https://thefourthangle.pages.dev/issue/1957
 ```
 
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
@@ -2614,6 +2542,39 @@ The fix is independent environmental courts and community standing to challenge 
 https://thefourthangle.pages.dev/issue/1974
 ```
 
+### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
+
+**1/6** _(hook — attach image, NO link)_ · 126 chars
+```
+RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
+```
+**2/6** _(fact)_ · 118 chars
+```
+The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
+```
+**3/6** _(fact)_ · 124 chars
+```
+76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
+```
+**4/6** _(fact)_ · 187 chars
+```
+The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
+```
+**5/6** _(reframe)_ · 138 chars
+```
+The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
+```
+**6/6** _(view — ONLY post with the link)_ · 197 chars
+```
+Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
+
+https://thefourthangle.pages.dev/issue/1972
+```
+
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
 
 - **Status:** PENDING
@@ -2744,6 +2705,43 @@ Penalties already exist. The real question is whether Malaysia detects drunk dri
 Deterrence requires detection. Compensation requires architecture. 4,340 motorcyclists died in 2025: most sober, on roads not built for them, riding because they had no other way.
 
 https://thefourthangle.pages.dev/issue/1958
+```
+
+### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+MITI set an RM200K floor and an 80% export rule. BYD's Tanjung Malim plan stalled. In Thailand, BYD opened a plant in 2024.
+```
+**2/7** _(fact)_ · 125 chars
+```
+MITI's rule puts any Tanjung Malim-built BYD sold here above RM200K. BYD's imported Dolphin and Atto 3 already sell for less.
+```
+**3/7** _(fact)_ · 98 chars
+```
+MITI minister Johari Abdul Ghani said the conditions protect a car industry of about 700,000 jobs.
+```
+**4/7** _(fact)_ · 149 chars
+```
+Thailand set conditions too: EV makers on its subsidy scheme had to build one car locally for each import in 2024. BYD's Thai plant opened that July.
+```
+**5/7** _(reframe)_ · 29 chars
+```
+Who is the wall actually for?
+```
+**6/7** _(analogy)_ · 121 chars
+```
+Like building a wall around a garden. The wall keeps competitors out, but it also keeps the garden from getting sunlight.
+```
+**7/7** _(view — ONLY post with the link)_ · 146 chars
+```
+700,000 jobs deserve an honest transition, not a price floor that cordons off the affordable segment.
+
+https://thefourthangle.pages.dev/issue/1957
 ```
 
 ### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
