@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T02:15:53.127Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T04:13:39.393Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -516,6 +516,44 @@ Think of a household whose repair bill drops because the dam meant to protect it
 The bill fell. The bill was ten times larger four years ago. The flood warning programme's first phase cost RM129 million, and Parliament's spending watchdog called it unjustified.
 
 https://thefourthangle.pages.dev/issue/1998
+```
+
+### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
+
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1997-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1997`
+
+**1/7** _(hook — attach image, NO link)_ · 250 chars
+```
+Malaysia will split the Attorney-General and Public Prosecutor for the first time since 1957. The 2018 manifesto promised it 'immediately'. Eight years and four AGs later, splitting the office is the easy part. Who confirms the new prosecutor is not.
+```
+**2/7** _(fact)_ · 151 chars
+```
+Article 145 has placed prosecution and the government's legal advice in one executive-appointed officer since 1957. The bill finally separates the two.
+```
+**3/7** _(fact)_ · 159 chars
+```
+Ten government MPs led by Rafizi Ramli demanded a Dewan Rakyat vote to confirm the new prosecutor. None were named to the committee that shaped the compromise.
+```
+**4/7** _(fact)_ · 173 chars
+```
+The new prosecutor would be recommended by the Judicial and Legal Service Commission, the body the Attorney-General sits on. As tabled, the bill added no parliamentary vote.
+```
+**5/7** _(reframe)_ · 168 chars
+```
+Separation is not independence. The office split has consensus; the vote to let Parliament confirm the prosecutor does not, and its backers were kept off the committee.
+```
+**6/7** _(analogy)_ · 263 chars
+```
+Picture giving the umpire his own office, then still choosing him through a panel the team captain sits on, with no open vote on the pick. The bill creates a standalone prosecutor. The commission that recommends the prosecutor still includes the Attorney-General.
+```
+**7/7** _(view — ONLY post with the link)_ · 193 chars
+```
+Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
+
+https://thefourthangle.pages.dev/issue/1997
 ```
 
 ### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
@@ -1224,6 +1262,74 @@ Penang needs a public dashboard tracking residents, rents, and local retention, 
 https://thefourthangle.pages.dev/issue/1970
 ```
 
+### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
+
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
+
+**1/6** _(hook — attach image, NO link)_ · 134 chars
+```
+The vernacular school fight is stuck on unity vs culture. The courts settled the law, but the debate skips why parents choose schools.
+```
+**2/6** _(fact)_ · 113 chars
+```
+69% of middle-class Malay parents preferred SJKC for academic quality, a reputation ISEAS describes as perceived.
+```
+**3/6** _(fact)_ · 145 chars
+```
+135 of 528 Tamil schools are so short of pupils that they teach several grades in one class, the Education Ministry told Parliament in June 2026.
+```
+**4/6** _(fact)_ · 224 chars
+```
+Citizen enrolment in international schools rose 34% from 2019 to 2024. Class is reshaping school choice. International schools held 88,951 pupils on 31 May 2024; 67.1% were citizens, about 59,700 children, the ministry said.
+```
+**5/6** _(reframe)_ · 128 chars
+```
+The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
+```
+**6/6** _(view — ONLY post with the link)_ · 175 chars
+```
+Stop debating whether vernacular schools should exist. Start asking why more families now choose other schools over national ones.
+
+https://thefourthangle.pages.dev/issue/1967
+```
+
+### Issue 1966 — Refugee registration system launched but work permits remain unissued
+
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
+
+**1/6** _(hook — attach image, NO link)_ · 145 chars
+```
+Malaysia's new refugee registration scheme went live on 1 January 2026. Work permits are proposed but unissued. Thailand has already moved ahead.
+```
+**2/6** _(fact)_ · 270 chars
+```
+A 2019 IDEAS study projected that refugees with the right to work would add over RM3B to GDP by 2024. The Malaysian Employers Federation backs work rights in shortage sectors. In 2025 the Home Ministry planned to register refugees at Immigration's 78 offices nationwide.
+```
+**3/6** _(fact)_ · 169 chars
+```
+Immigration detention centres held over 21,000 migrants and refugees in March 2026, Fortify Rights said. In August 2025 they held 2,196 children, the Home Minister said.
+```
+**4/6** _(fact)_ · 244 chars
+```
+The 3D jobs proposed in 2023 cover manufacturing, mining and construction. Domestic work and plantations sit outside them. The US State Department's 2025 trafficking report flags forced labour on palm oil plantations and among domestic workers.
+```
+**5/6** _(reframe)_ · 108 chars
+```
+Registration serves the state and employers first. The test is whether the DPP becomes a floor or a ceiling.
+```
+**6/6** _(view — ONLY post with the link)_ · 137 chars
+```
+Whatever its political limits, the task now is making the DPP function as actual protection.
+
+https://thefourthangle.pages.dev/issue/1966
+```
+
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
 > ⚡ **Reactive: topic is live in the radar** (wuxi apptec removed from pentagon’s chinese military list. a federal court in washington b). Post now, don't wait for a slot.
@@ -1502,6 +1608,40 @@ The question is not whether external shocks are real. It is whether Malaysia has
 Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
 
 https://thefourthangle.pages.dev/issue/1953
+```
+
+### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
+
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
+
+**1/6** _(hook — attach image, NO link)_ · 264 chars
+```
+From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
+```
+**2/6** _(fact)_ · 247 chars
+```
+Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
+```
+**3/6** _(fact)_ · 236 chars
+```
+Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
+```
+**4/6** _(fact)_ · 251 chars
+```
+E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
+```
+**5/6** _(reframe)_ · 135 chars
+```
+The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
+```
+**6/6** _(view — ONLY post with the link)_ · 210 chars
+```
+A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
+
+https://thefourthangle.pages.dev/issue/1952
 ```
 
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
@@ -2002,7 +2142,7 @@ https://thefourthangle.pages.dev/issue/1265
 
 ### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
 
-> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1241-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1241`
@@ -2036,6 +2176,44 @@ Like a 28-day holding cell where one in four to five occupants is released with 
 Genuine SOSMA reform requires disaggregated public reporting on arrests, durations, charges and outcomes, not just renewal debates every five years.
 
 https://thefourthangle.pages.dev/issue/1241
+```
+
+### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
+
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
+
+**1/7** _(hook — attach image, NO link)_ · 234 chars
+```
+RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
+```
+**2/7** _(fact)_ · 269 chars
+```
+Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
+```
+**3/7** _(fact)_ · 225 chars
+```
+Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
+```
+**4/7** _(fact)_ · 154 chars
+```
+Around 36% of active formal EPF members met the RM240,000 basic-savings benchmark in 2024. The new RIA framework targets RM390,000 as the new basic floor.
+```
+**5/7** _(reframe)_ · 141 chars
+```
+Calling it 'flexible savings' does not change the math. Ringgit withdrawn today and not replenished compound into a larger gap at retirement.
+```
+**6/7** _(analogy)_ · 186 chars
+```
+Like eating your seed corn in a drought. It solves today's hunger but cuts into next year's harvest. Withdrawn ringgit, unless replenished, no longer earn EPF dividends until retirement.
+```
+**7/7** _(view — ONLY post with the link)_ · 218 chars
+```
+Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
+
+https://thefourthangle.pages.dev/issue/1190
 ```
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
@@ -2291,43 +2469,6 @@ A government can set a target but not guarantee a harvest. Rice security is deci
 https://thefourthangle.pages.dev/issue/2003
 ```
 
-### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1997-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1997`
-
-**1/7** _(hook — attach image, NO link)_ · 250 chars
-```
-Malaysia will split the Attorney-General and Public Prosecutor for the first time since 1957. The 2018 manifesto promised it 'immediately'. Eight years and four AGs later, splitting the office is the easy part. Who confirms the new prosecutor is not.
-```
-**2/7** _(fact)_ · 151 chars
-```
-Article 145 has placed prosecution and the government's legal advice in one executive-appointed officer since 1957. The bill finally separates the two.
-```
-**3/7** _(fact)_ · 159 chars
-```
-Ten government MPs led by Rafizi Ramli demanded a Dewan Rakyat vote to confirm the new prosecutor. None were named to the committee that shaped the compromise.
-```
-**4/7** _(fact)_ · 173 chars
-```
-The new prosecutor would be recommended by the Judicial and Legal Service Commission, the body the Attorney-General sits on. As tabled, the bill added no parliamentary vote.
-```
-**5/7** _(reframe)_ · 168 chars
-```
-Separation is not independence. The office split has consensus; the vote to let Parliament confirm the prosecutor does not, and its backers were kept off the committee.
-```
-**6/7** _(analogy)_ · 263 chars
-```
-Picture giving the umpire his own office, then still choosing him through a panel the team captain sits on, with no open vote on the pick. The bill creates a standalone prosecutor. The commission that recommends the prosecutor still includes the Attorney-General.
-```
-**7/7** _(view — ONLY post with the link)_ · 193 chars
-```
-Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
-
-https://thefourthangle.pages.dev/issue/1997
-```
-
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
 
 - **Status:** PENDING
@@ -2575,72 +2716,6 @@ Publish annual volumes by country, build the hedging infrastructure exporters ne
 https://thefourthangle.pages.dev/issue/1972
 ```
 
-### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
-
-**1/6** _(hook — attach image, NO link)_ · 134 chars
-```
-The vernacular school fight is stuck on unity vs culture. The courts settled the law, but the debate skips why parents choose schools.
-```
-**2/6** _(fact)_ · 113 chars
-```
-69% of middle-class Malay parents preferred SJKC for academic quality, a reputation ISEAS describes as perceived.
-```
-**3/6** _(fact)_ · 145 chars
-```
-135 of 528 Tamil schools are so short of pupils that they teach several grades in one class, the Education Ministry told Parliament in June 2026.
-```
-**4/6** _(fact)_ · 224 chars
-```
-Citizen enrolment in international schools rose 34% from 2019 to 2024. Class is reshaping school choice. International schools held 88,951 pupils on 31 May 2024; 67.1% were citizens, about 59,700 children, the ministry said.
-```
-**5/6** _(reframe)_ · 128 chars
-```
-The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
-```
-**6/6** _(view — ONLY post with the link)_ · 175 chars
-```
-Stop debating whether vernacular schools should exist. Start asking why more families now choose other schools over national ones.
-
-https://thefourthangle.pages.dev/issue/1967
-```
-
-### Issue 1966 — Refugee registration system launched but work permits remain unissued
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
-
-**1/6** _(hook — attach image, NO link)_ · 145 chars
-```
-Malaysia's new refugee registration scheme went live on 1 January 2026. Work permits are proposed but unissued. Thailand has already moved ahead.
-```
-**2/6** _(fact)_ · 270 chars
-```
-A 2019 IDEAS study projected that refugees with the right to work would add over RM3B to GDP by 2024. The Malaysian Employers Federation backs work rights in shortage sectors. In 2025 the Home Ministry planned to register refugees at Immigration's 78 offices nationwide.
-```
-**3/6** _(fact)_ · 169 chars
-```
-Immigration detention centres held over 21,000 migrants and refugees in March 2026, Fortify Rights said. In August 2025 they held 2,196 children, the Home Minister said.
-```
-**4/6** _(fact)_ · 244 chars
-```
-The 3D jobs proposed in 2023 cover manufacturing, mining and construction. Domestic work and plantations sit outside them. The US State Department's 2025 trafficking report flags forced labour on palm oil plantations and among domestic workers.
-```
-**5/6** _(reframe)_ · 108 chars
-```
-Registration serves the state and employers first. The test is whether the DPP becomes a floor or a ceiling.
-```
-**6/6** _(view — ONLY post with the link)_ · 137 chars
-```
-Whatever its political limits, the task now is making the DPP function as actual protection.
-
-https://thefourthangle.pages.dev/issue/1966
-```
-
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 - **Status:** PENDING
@@ -2775,39 +2850,6 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
-```
-
-### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1952-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1952`
-
-**1/6** _(hook — attach image, NO link)_ · 264 chars
-```
-From 1 April 2026, RON95 stayed at RM1.99 only for the first 200 litres. MOF said nearly 90% of users would not be affected. MOF gave no methodology or sample period for the figure and called the cut temporary. The quota returned to 300 litres on 1 September 2026.
-```
-**2/6** _(fact)_ · 247 chars
-```
-Above-quota RON95 sold at the weekly unsubsidised price from 1 April. The week of 16-22 April listed RM4.02 versus the subsidised RM1.99. That gap is about 102% per litre. RM3.87 applied from 26 March to 8 April and from 23 to 29 April, a 94% gap.
-```
-**3/6** _(fact)_ · 236 chars
-```
-Indonesia's earlier subsidy cuts ran with direct cash assistance such as BLT BBM. Malaysia kept STR and SARA but added no dedicated BUDI95 transfer. Each country's quota design, transfer and timing differ; the comparison is directional.
-```
-**4/6** _(fact)_ · 251 chars
-```
-E-hailing operators kept a separate 800-litre monthly ceiling. MOF published no usage spread showing which other users cross 200 litres. The quota cut took effect four days after the Aidilfitri festive price-control scheme for goods ended on 28 March.
-```
-**5/6** _(reframe)_ · 135 chars
-```
-The question is not whether 90% escaped the cut. It is whether even a temporary cut can rest on a number published without its working.
-```
-**6/6** _(view — ONLY post with the link)_ · 210 chars
-```
-A quota cut without published targeting methodology, a transitional package or an alternatives plan rests on assertion. Show the arithmetic before the price changes.
-
-https://thefourthangle.pages.dev/issue/1952
 ```
 
 ### Issue 1871 — Lahad Datu at 13: no kidnappings since 2020, but ESSCOM's island base stalled at 41%
@@ -3018,43 +3060,6 @@ Like a household that hit its annual savings target. The trend is right; the que
 PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
 
 https://thefourthangle.pages.dev/issue/1201
-```
-
-### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
-
-**1/7** _(hook — attach image, NO link)_ · 234 chars
-```
-RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
-```
-**2/7** _(fact)_ · 269 chars
-```
-Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
-```
-**3/7** _(fact)_ · 225 chars
-```
-Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
-```
-**4/7** _(fact)_ · 154 chars
-```
-Around 36% of active formal EPF members met the RM240,000 basic-savings benchmark in 2024. The new RIA framework targets RM390,000 as the new basic floor.
-```
-**5/7** _(reframe)_ · 141 chars
-```
-Calling it 'flexible savings' does not change the math. Ringgit withdrawn today and not replenished compound into a larger gap at retirement.
-```
-**6/7** _(analogy)_ · 186 chars
-```
-Like eating your seed corn in a drought. It solves today's hunger but cuts into next year's harvest. Withdrawn ringgit, unless replenished, no longer earn EPF dividends until retirement.
-```
-**7/7** _(view — ONLY post with the link)_ · 218 chars
-```
-Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
-
-https://thefourthangle.pages.dev/issue/1190
 ```
 
 ### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
