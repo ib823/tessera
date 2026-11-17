@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T08:15:00.251Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-17T10:12:42.755Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -368,6 +368,44 @@ Watchdogs guard the tender. The bigger leak may sit one step later, at the desk 
 Whether charges follow or not, the lesson is the payment desk: scrutiny that stops at the award misses where the cash actually moves.
 
 https://thefourthangle.pages.dev/issue/2005
+```
+
+### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
+
+> ⚡ **Reactive: topic is live in the radar** (consumers in malaysia may soon be able to check chicken’s halal status under proposed new ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2003-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2003`
+
+**1/7** _(hook — attach image, NO link)_ · 172 chars
+```
+Malaysia targets 80% rice self-sufficiency by 2030. The actual rate fell to 52.9% in 2024. That is down from 56.2% a year earlier, moving away from the goal, not toward it.
+```
+**2/7** _(fact)_ · 219 chars
+```
+Rice self-sufficiency is sliding: 56.2% in 2023, then 52.9% in 2024. The competition regulator traces a longer fall from about 70% in 2017. The gap to the 80% target is now about 27 points, with five years left to 2030.
+```
+**3/7** _(fact)_ · 140 chars
+```
+In 2024 Malaysia imported 1.50m tonnes of rice, more than the 1.36m tonnes it grew, tying the staple to other governments' export decisions.
+```
+**4/7** _(fact)_ · 192 chars
+```
+Malaysia's food import bill reached RM93.8 billion in 2024, up 19.1% on the year before. DOSM says the bill reflects 'continued reliance on external sources for several essential commodities'.
+```
+**5/7** _(reframe)_ · 139 chars
+```
+The target climbs on paper while the rate falls in the field. A gap that widens each year is not closed by raising the number written down.
+```
+**6/7** _(analogy)_ · 178 chars
+```
+Setting a higher self-sufficiency target while output drops is like lifting your savings goal as your income shrinks. The number on paper rises; the balance in the account falls.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+A government can set a target but not guarantee a harvest. Rice security is decided in the paddy field, not the policy document.
+
+https://thefourthangle.pages.dev/issue/2003
 ```
 
 ### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
@@ -850,6 +888,40 @@ Imagine a relay race that pays each runner more the longer they hold the baton, 
 The bottleneck is not age. It is the machinery that picks candidates, rewards long tenure and leaves just 11 of 222 MPs aged 35 or under.
 
 https://thefourthangle.pages.dev/issue/1987
+```
+
+### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
+
+> ⚡ **Reactive: topic is live in the radar** (consumers in malaysia may soon be able to check chicken’s halal status under proposed new ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1985-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1985`
+
+**1/6** _(hook — attach image, NO link)_ · 158 chars
+```
+Malaysia keeps small firms out of mandatory e-invoicing by exemption: under RM1m from January 2026, under RM3m since September. Three peers took other routes.
+```
+**2/6** _(fact)_ · 173 chars
+```
+India moved the other way: in August 2023 it cut its e-invoice threshold from INR 10 crore to INR 5 crore of turnover. Malaysia has raised its bar twice since December 2025.
+```
+**3/6** _(fact)_ · 248 chars
+```
+Singapore is phasing in GST InvoiceNow from November 2025 to April 2031, with a S$1,000 transition grant for SMEs and free solution packages until March 2031. Larger firms get S$5,000. Malaysia's MSME Digital Grant offers a 50% match up to RM5,000.
+```
+**4/6** _(fact)_ · 154 chars
+```
+Thailand lets firms with income up to THB 30m issue e-tax invoices as time-stamped PDFs by email. Any firm can use the XML route with a digital signature.
+```
+**5/6** _(reframe)_ · 101 chars
+```
+The choice was never just 'mandate or exempt.' Three peers built middle paths Malaysia did not adopt.
+```
+**6/6** _(view — ONLY post with the link)_ · 203 chars
+```
+Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
+
+https://thefourthangle.pages.dev/issue/1985
 ```
 
 ### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
@@ -2432,43 +2504,6 @@ Ministers now name suspects in Parliament, yet the cheapest way in, a bought bor
 https://thefourthangle.pages.dev/issue/2009
 ```
 
-### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2003-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2003`
-
-**1/7** _(hook — attach image, NO link)_ · 172 chars
-```
-Malaysia targets 80% rice self-sufficiency by 2030. The actual rate fell to 52.9% in 2024. That is down from 56.2% a year earlier, moving away from the goal, not toward it.
-```
-**2/7** _(fact)_ · 219 chars
-```
-Rice self-sufficiency is sliding: 56.2% in 2023, then 52.9% in 2024. The competition regulator traces a longer fall from about 70% in 2017. The gap to the 80% target is now about 27 points, with five years left to 2030.
-```
-**3/7** _(fact)_ · 140 chars
-```
-In 2024 Malaysia imported 1.50m tonnes of rice, more than the 1.36m tonnes it grew, tying the staple to other governments' export decisions.
-```
-**4/7** _(fact)_ · 192 chars
-```
-Malaysia's food import bill reached RM93.8 billion in 2024, up 19.1% on the year before. DOSM says the bill reflects 'continued reliance on external sources for several essential commodities'.
-```
-**5/7** _(reframe)_ · 139 chars
-```
-The target climbs on paper while the rate falls in the field. A gap that widens each year is not closed by raising the number written down.
-```
-**6/7** _(analogy)_ · 178 chars
-```
-Setting a higher self-sufficiency target while output drops is like lifting your savings goal as your income shrinks. The number on paper rises; the balance in the account falls.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-A government can set a target but not guarantee a harvest. Rice security is decided in the paddy field, not the policy document.
-
-https://thefourthangle.pages.dev/issue/2003
-```
-
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
 
 - **Status:** PENDING
@@ -2541,39 +2576,6 @@ Like a residents' association chairman resigning 18 months before the AGM, with 
 Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
 
 https://thefourthangle.pages.dev/issue/1993
-```
-
-### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1985-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1985`
-
-**1/6** _(hook — attach image, NO link)_ · 158 chars
-```
-Malaysia keeps small firms out of mandatory e-invoicing by exemption: under RM1m from January 2026, under RM3m since September. Three peers took other routes.
-```
-**2/6** _(fact)_ · 173 chars
-```
-India moved the other way: in August 2023 it cut its e-invoice threshold from INR 10 crore to INR 5 crore of turnover. Malaysia has raised its bar twice since December 2025.
-```
-**3/6** _(fact)_ · 248 chars
-```
-Singapore is phasing in GST InvoiceNow from November 2025 to April 2031, with a S$1,000 transition grant for SMEs and free solution packages until March 2031. Larger firms get S$5,000. Malaysia's MSME Digital Grant offers a 50% match up to RM5,000.
-```
-**4/6** _(fact)_ · 154 chars
-```
-Thailand lets firms with income up to THB 30m issue e-tax invoices as time-stamped PDFs by email. Any firm can use the XML route with a digital signature.
-```
-**5/6** _(reframe)_ · 101 chars
-```
-The choice was never just 'mandate or exempt.' Three peers built middle paths Malaysia did not adopt.
-```
-**6/6** _(view — ONLY post with the link)_ · 203 chars
-```
-Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
-
-https://thefourthangle.pages.dev/issue/1985
 ```
 
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
