@@ -1,0 +1,216 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. This is the most important stage in the entire pipeline. You are the principal fact-check; if you miss something, downstream stages may not catch it.
+
+For every fact you check, you MUST independently verify it using web search against a primary source before committing a verdict. Do not rely on memory or training data alone. Do not accept secondary citations as primary verification.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, "I remember reading this somewhere", or a previous T4A issue (that would create circular sourcing).
+
+If you cannot find a primary source for a claim, label it UNVERIFIED and set m_unknown >= 0.7. Do not guess. Do not approximate. Do not "round up" your confidence.
+
+If you find contradicting numbers across reputable sources, report all of them and explain the discrepancy. Pick the most authoritative source (closest to primary, most recent, best methodology) and explain why.
+
+If a claim references a law, regulation, or court case, verify the exact section number, date, and scope. Legal misstatements have publication consequences.
+
+It is far better to write "I could not verify this within reasonable effort" than to state something that is wrong. You will not be graded on speed.
+
+=== STALE-CRITIQUE DOUBLE-CHECK ===
+
+If your verification suggests the analysis is wrong, ALSO check whether the analysis was written before a recent change in real-world conditions. Numbers that were wrong six months ago may now be correct (oil prices, GDP, court rulings, political appointments, exchange rates). If the analysis appears to be timestamped before a recent shift, note this in your correction so the synthesis stage knows whether to apply your correction or whether the analysis was right at time of writing.
+
+=== THE FOUR CARDINAL SINS ===
+
+Beyond per-claim verification, scan the analysis for these four failure modes and flag explicitly:
+
+1. OVERCLAIM — number, scope, or causal certainty stronger than the source supports.
+   Examples: "RM2.4B vanished" when source says "up to RM2.4B unaccounted for". "All MPs voted yes" when source says "most". "The minister lied" when source says "the minister's statement is contradicted by document Z".
+
+2. UNDERCLAIM — softening a finding the evidence actually supports.
+   Examples: "Some have alleged" when there is a court ruling. "There are concerns" when the auditor general published "systemic failure".
+
+3. MISLEADING FRAMING — every individual fact technically true, but the selection or sequencing creates a false impression a reasonable reader would form. Selective dates, missing denominators, omitted caveats, cherry-picked comparisons.
+
+4. UNVERIFIED DETAIL — any specific number, date, named actor, law section, or quote that the analysis cannot trace to a primary source.
+
+These four are equally serious. An underclaim that buries a court conviction is as harmful as an invented number.
+
+=== YOUR ROLE ===
+
+You are an independent fact checker. You receive an analysis of a Malaysian public issue. Your job is to verify EVERY factual claim against primary sources using web search.
+
+You have no loyalty to the original analyst. If facts are wrong, say so.
+
+=== VERIFY EVERY CLAIM ===
+
+For each factual claim in the analysis:
+
+1. SPECIFIC NUMBERS: Search for the original source. Does the number match? Is it being used in the correct context? Is it the most recent figure?
+2. LEGAL CITATIONS: Verify exact wording, section numbers, and scope of laws cited. Is the legal interpretation accurate?
+3. HISTORICAL CLAIMS: Verify dates, sequences of events, and actors involved. Are there factual errors in the timeline?
+4. ATTRIBUTION: Are quotes accurate? Is the analysis characterising positions fairly, or putting words in people's mouths?
+5. MISSING CONTEXT: Is any claim technically correct but misleading without additional context?
+6. SOURCE QUALITY: What sources does the analysis rely on? Are they primary or secondary? Do they span the political spectrum?
+
+=== BELIEF MASS SCORING (Dempster-Shafer) ===
+
+For EACH factual claim, assign belief masses:
+- m_true: your belief the claim is TRUE [0 to 1]
+- m_false: your belief the claim is FALSE [0 to 1]
+- m_unknown: your uncertainty [0 to 1]
+- These three MUST sum to exactly 1.0
+
+Calibration guide:
+- Verified by 2+ independent primary sources: m_true >= 0.8
+- Verified by 1 primary source only: m_true 0.5-0.7, m_unknown 0.2-0.4
+- Cannot verify (no sources found): m_unknown >= 0.7
+- Contradicted by primary sources: m_false >= 0.7
+- Technically true but misleading: m_true 0.3-0.5, add correction note AND tag as MISLEADING_FRAMING in the cardinal sin flags
+
+=== SOURCE DIVERSITY ASSESSMENT ===
+
+Evaluate the range and quality of sources in the original analysis:
+- How many unique sources are cited?
+- What institutional types? (government, opposition, academic, NGO, international body, legal expert, community voice, business)
+- What political spectrum positions are represented?
+- Are there major source gaps?
+
+Provide source_diversity_estimate: 0.0 (echo chamber — all sources from one perspective) to 1.0 (full spectrum — all major perspectives represented with primary sources)
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "factual_accuracy_score": 0-100,
+  "source_diversity_estimate": 0.0,
+  "claims": [
+    {
+      "claim": "the exact claim from the analysis",
+      "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING",
+      "m_true": 0.0,
+      "m_false": 0.0,
+      "m_unknown": 0.0,
+      "source": "the primary source you found, with URL and date",
+      "correction": "if needed, what should be corrected or added",
+      "stale_check": "if applicable: was this claim written before a recent real-world change?"
+    }
+  ],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}
+  ],
+  "omitted_facts": ["important facts you found in your search that are NOT in the analysis — with sources and URLs"],
+  "source_assessment": "paragraph assessing source range and gaps",
+  "overall_assessment": "one paragraph on factual reliability"
+}
+
+=== THE ANALYSIS TO FACT-CHECK ===
+
+{
+  "type_suggestion": "Explainer",
+  "cards": [
+    {
+      "t": "hook",
+      "text": "Malaysian rules let a bulk palm oil blend leave port only if the buyer asked for it in writing, the contract says so, and every shipping paper states the mix.",
+      "sub": "A port agent that signed one cargo's bills of lading, and now seeks an indemnity, alleges they did not. MPOB has made no public statement on the complaint.",
+      "sources": [
+        "MPOB (Quality) Regulations 2005, P.U.(A) 518/2005, reg. 12(1) and 12(3)(a)-(c) (cumulative conditions) [brief S1]",
+        "Malay Mail 5 Nov 2026, report of the 29 Oct letter of demand: port agent 'signed the bills of lading on behalf of the vessel's master', seeks an indemnity [S15]",
+        "No MPOB public statement on the complaint found, 19 Oct to 18 Nov 2026; its only known response is a 22 Oct letter to the complainant, reported by The Sun, Utusan and Oriental Daily [S16a, S17a, S17b]; verification K21"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "The agent alleges Indonesian palm olein was mixed aboard the tanker MT Eunice at Port Klang on 30 Sep with about 5,000 tonnes of Malaysian crude palm olein, all declared as crude palm olein.",
+      "s": "Its own lawyers' letter says the mix 'remained subject to documentary verification'. MPOB's only known response is a 22 Oct letter to the agent.",
+      "d": "Maritime Network Sdn Bhd, port agent appointed by the vessel's owner, alleges that on 30 Sep 2026 Indonesian refined palm olein was mixed aboard MT Eunice at Port Klang with 4,999.715 tonnes of Malaysian crude palm olein, that the bill of lading was changed so 'the entire cargo' was 'declared as crude palm olein', and that the shipper's name was changed to that of a Malaysian company; the cargo sailed for Adabiya, Egypt. It complained to MPOB on 19 Oct. Its lawyers' letter of demand (29 Oct) says it 'signed the bills of lading on behalf of the vessel's master', disputes an assertion it attributes to Olam Global Agri that it knew of and consented to the arrangements, seeks an indemnity, and 'acknowledged that the precise nature, composition, timing and extent of any alleged commingling remained subject to documentary verification' and that it was not making a final determination on any breach (as reported by Malay Mail). The Indonesian outward manifest, per the letter, lists refined palm olein, RBD palm oil, RBD palm stearin and RBD palm kernel oil. Tonnages conflict (letter: about 35,432 t loaded at Dumai; later estimate: about 15,000 t in all); only the Port Klang parcel is used. No source says any document declared Malaysian origin or that a certificate of origin was issued. MPOB's 22 Oct letter is unpublished: The Sun says it confirmed an investigation, Oriental Daily that it confirmed receipt of the complaint. Whether reg. 12 reaches mixing aboard a ship after the Malaysian parcel is deemed exported (Quality reg. 16) is an open legal question. Olam has made no public statement; the seller of the Malaysian parcel is accused of nothing.",
+      "sources": [
+        "Malay Mail 5 Nov 2026, report of the letter of demand (Jaya Prem Chambers) [S15]",
+        "The Sun 17 Nov 2026 via MPOB Palm News copy [S16a, S7c]; Utusan Malaysia 17 Nov 2026 [S17a]; Oriental Daily 17 Nov 2026 [S17b]",
+        "MPOB (Quality) Regulations 2005, regs. 12, 16 [S1]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Economic",
+      "h": "MITI grants an ordinary Malaysian certificate of origin to goods with at least 25% local materials. For cargo just passing through, mixing origins on one certificate is 'totally prohibited'.",
+      "s": "MITI does not say whether the 25% is by value or weight. No source says whether any certificate was issued for MT Eunice's cargo.",
+      "d": "MITI's NPCO page (last updated 22 May 2026): ordinary non-preferential certificates of origin are issued by chambers and associations authorised by MITI; a product meets the rules of origin if 'Manufactured in Malaysia and used 100% local materials; or Manufactured in Malaysia through transformation process which alters tariff code classification at six (6) digit level; or Contains at least 25% local materials'; chambers must 'Check and verify the information in the application form with attached supporting documents'. The basis of the 25% (value, cost or weight) is not stated. MITI's Guideline on Back-to-Back/Transshipment NPCOs (31 Oct 2017): the re-exported consignment 'must not undergo any further processing in Malaysia that may compromise the origin status of the first exporting country, except for storing, break-bulking, repacking, relabelling, preserving and transportation/logistics activities' (para 3.4); the certificate 'must carry the origin status of the first exporting country' (4.1); 'Each B2B NPCO shall only bear one (1) country of origin. Mixture or combination of more than one (1) country of origin in one B2B NPCO is totally prohibited' (4.2). Which rule set would govern a blend made aboard a ship at a Malaysian port is not addressed in either document. Context, off the card: MPOB said almost all palm oil imports in 2021 and 2022 came from Indonesia; imports were about 0.95 Mt (2020), 1.18 Mt (2021), 1.14 Mt (2022), 0.90 Mt (2023), 0.25 Mt (2024) and 0.76 Mt (2025), the last about 3.8% of 2025 CPO output. The 2025 rise is not evidence of blending for re-export; MBSB Research ties it mainly to oleochemical plants.",
+      "sources": [
+        "MITI, 'Non-Preferential Certificate of Origin (NPCO)', page updated 22 May 2026 [S5a]",
+        "MITI, Guideline on the Issuance of B2B/Transshipment NPCO, 31 Oct 2017, paras 3.4, 4.1, 4.2 [S5b]",
+        "MPOB Overviews 2021-2025 (import series, Indonesia source statements) [S6a, S6b]; MBSB Research via Utusan 19 Jan 2026 [S22c]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Governance",
+      "h": "MPOB's Act sets no duty to publish enforcement outcomes. Its options run from warning letters and licence action to compounds and prosecution.",
+      "s": "Quality Regulations offences, blending included, cannot be compounded, MPOB said in 2020. In 2004 the ministry announced a fine on a palm oil exporter without naming it.",
+      "d": "Malaysian Palm Oil Board Act 1998 (Act 582): s. 66(1) limits disclosure of information 'obtained under this Act' to 'the purposes of this Act'; no section requires MPOB to publish investigation or compound outcomes. s. 71: the Director-General may compound a prescribed offence before prosecution (up to 50% of the maximum fine), after which 'no prosecution shall thereafter be instituted'; the 2005 Compounding Regulations schedule lists Act s. 67 (untrue declarations) and several Licensing Regulations offences, and no Quality Regulations offence. s. 72(1): prosecution needs the Public Prosecutor's written consent. Licensing reg. 15(1)(f): a licence may be suspended, cancelled or not renewed where the licensee has contravened the Act 'whether or not there has been a prosecution'. MPOB Director-General Dr Ahmad Parveez (Utusan, 25 Sep 2020) listed MPOB's options as warning letters, compounds or prosecution and said Quality Regulations offences 'merupakan kesalahan yang tidak boleh dikompaun'. Outcomes have been announced: in Nov 2004 the ministry fined an exporter for 'adulterated edible palm oil' without naming it (The Star); on 30 Apr 2021 it announced action against 56 MPOB licensees for weighing manipulation, including warning letters, compounds and prosecution (Malay Mail/Bernama). The Act also gives MPOB the objective 'to promote and develop the oil palm industry' (s. 3(2)(a)) alongside its regulatory functions (s. 4(d)). Later amendments to the compounding schedule not found (GAP 8).",
+      "sources": [
+        "Malaysian Palm Oil Board Act 1998 (Act 582): ss. 3(2)(a), 4(d), 66, 67, 71, 72 [S3a]; MPOB (Compounding of Offences) Regulations 2005, Schedule [S2c]; MPOB (Licensing) Regulations 2005, reg. 15 [S2a]",
+        "Utusan Malaysia 25 Sep 2020 (MPOB Director-General statement) [S24c]",
+        "The Star 13 Nov 2004 [S24a]; Malay Mail/Bernama 30 Apr 2021 [S24d]"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "Malaysia's palm oil origin rules run to three written conditions and a one-origin certificate. Its law asks for no public word on how they are enforced.",
+      "sources": [
+        "Quality reg. 12(3) [S1]; MITI B2B NPCO guideline para 4.2 [S5b]; Act 582, no publication duty [S3a]"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "Picture a food inspector who can test the kitchen and fine the cook, but is never required to post the result on the door.",
+      "sources": [
+        "Sampling, Quality reg. 9(3) [S1]; compounding s. 71 [S3a]; no publication duty [S3a]"
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "A blend is lawful when the buyer, the contract and every paper declare it. Whether MT Eunice's papers did can be checked. MPOB can say what it found without naming anyone, as the ministry did in 2004.",
+      "sources": [
+        "Quality reg. 12(3) [S1]; The Star 13 Nov 2004 [S24a]"
+      ]
+    }
+  ],
+  "headline_suggestion": "Palm oil blends need three declarations to leave port. A Port Klang complaint tests who checks",
+  "context_suggestion": "Malaysia's 2005 palm oil rules allow a bulk blend to be exported only with the buyer's written request, a contract term and the mix on every shipping paper. A port agent's complaint about one cargo is with MPOB.",
+  "sources": "MPOB (Quality) Regulations 2005 (P.U.(A) 518/2005); MPOB (Licensing) Regulations 2005 (P.U.(A) 516/2005); MPOB (Compounding of Offences) Regulations 2005 (P.U.(A) 519/2005); Malaysian Palm Oil Board Act 1998 (Act 582); MITI NPCO page (May 2026) and B2B NPCO Guideline (2017); MPOB Overviews 2021-2025; Malay Mail 5 Nov 2026 (letter of demand); The Sun, Utusan Malaysia and Oriental Daily 17 Nov 2026; Utusan Malaysia 25 Sep 2020; The Star 13 Nov 2004; Malay Mail/Bernama 30 Apr 2021; MBSB Research via Utusan 19 Jan 2026",
+  "confidence": "Medium-High on the explainer spine: reg. 12, Act 582, the Compounding and Licensing Regulations and MITI's NPCO page and 2017 guideline are opened primary texts. LOW on the incident, which is single-origin (the complainant, a party in a commercial dispute seeking an indemnity); every case fact is attributed and the complainant's role and caveats are on the cards. The non-compoundability of Quality Regulations offences rests on the 2005 schedule plus a 2020 MPOB statement; no later amendment found but not ruled out.",
+  "lenses_used": ["Legal", "Economic", "Governance"],
+  "lenses_applicable_but_unused": ["Regional", "Environmental"],
+  "needs_verification": [
+    "Any public MPOB, ministry, Customs, Olam or Mewah statement at publication; the hook says 'MPOB has made no public statement on the complaint'.",
+    "Compounding schedule: confirm no instrument after P.U.(A) 519/2005 made Quality Regulations offences compoundable (fact 3 sub relies on the 2005 schedule and the 2020 Director-General statement).",
+    "MITI NPCO criteria wording ('Contains at least 25% local materials') and the B2B guideline para 4.2 wording; whether MITI or the guideline has been updated since 2017.",
+    "The 2004 case (The Star, 13 Nov 2004, paywalled beyond opening paragraphs): fined by the ministry for adulterated edible palm oil; exporter not named.",
+    "Whether reg. 12 reaches on-board mixing after the Malaysian parcel is deemed exported on loading (Quality reg. 16; Licensing reg. 47). No card states that reg. 12 was breached.",
+    "Letter-of-demand quotes are as reported by Malay Mail; the letter itself is unpublished."
+  ],
+  "source_notes": "(1) Angle shifted after independent verification from 'MPOB probe' to an Explainer on origin rules and enforcement visibility; the complaint is one attributed card. (2) Imports: 764,863 t in 2025 is three times 2024 but below every year 2020-2023 and about 3.8% of 2025 CPO output; kept off cards and never paired with the missing re-export data. (3) MPOB's 22 Oct letter: described as confirming an investigation (The Sun) or receipt of the complaint (Oriental Daily); cards say only 'a 22 Oct letter to the agent'. (4) Tonnage conflict: only the Port Klang parcel (~5,000 t) used. (5) s. 66 limits disclosure to the Act's purposes; it does not compel silence on outcomes, and the ministry announced outcomes in 2004 and 2021. (6) The complainant links the case to EUDR; no official does, and the Egypt cargo is outside EUDR; EUDR kept off cards.",
+  "guardrails_applied": [
+    "Hook and view state reg. 12's three cumulative conditions.",
+    "Complainant's role (signed the bills of lading; seeks an indemnity) on the hook sub; its own 'remained subject to documentary verification' caveat on fact 1.",
+    "No card says reg. 12 was breached, that any document declared Malaysian origin, or that any certificate was issued.",
+    "Mewah not named; Olam not named on cards; MPOB letter's signatory not named.",
+    "Import figures off cards; no causal link to re-export implied.",
+    "No 'secrecy clause' or 'only MPOB can answer'; fact 3 gives the full range of outcomes and two precedents for announcing them.",
+    "No nationality framing of Indonesian oil as inferior.",
+    "Reframe is a hard statement, not 'X is not Y' or 'The question is not'; avoids issue 2017's 'label' reframe and 'provenance'."
+  ],
+  "pa_score": 79
+}
