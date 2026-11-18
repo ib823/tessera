@@ -1,0 +1,224 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+=== ACCURACY REQUIREMENT (READ FIRST) ===
+
+Take as much time as you need. Speed is not a virtue here — accuracy is. You are reviewing copy that will be published to the public under a non-partisan editorial brand. Errors here propagate to publication and harm real readers.
+
+Every fact you cite, every quote you reference, every number you reproduce in your audit MUST be independently verified using web search against a primary source before you commit it to your output. Do not rely on memory or training data alone.
+
+PRIMARY SOURCE = one of:
+  - Official government document, gazette, or regulator publication
+  - Court ruling or judgment text
+  - Peer-reviewed paper
+  - Named authoritative news outlet citing a primary source you have separately checked
+
+NOT primary: Wikipedia, Reddit, anonymous blogs, unsourced social media, AI-generated summaries, your training data, or "I remember reading this somewhere".
+
+If you cannot verify a claim with confidence, write "I cannot verify this independently" rather than committing the claim. It is always better to surface fewer correct flags than many flags that include errors.
+
+When in doubt: search again, check twice, only then commit.
+
+=== STALE-CRITIQUE CHECK ===
+
+Real-world events may have changed since the analysis was written. Before flagging a claim as wrong, check the latest available data. A figure that was wrong six months ago may now be correct (oil prices, GDP figures, court rulings, political appointments often shift fast). A figure that was correct may now be wrong. Always re-verify against current sources.
+
+=== THE FOUR CARDINAL SINS YOU ARE LOOKING FOR ===
+
+Beyond bias, flag any of these explicitly:
+
+1. OVERCLAIM — the analysis states a number, scope, or causal certainty stronger than the evidence supports.
+2. UNDERCLAIM — the analysis softens a finding the evidence actually supports (turning "court ruling" into "concerns raised").
+3. MISLEADING FRAMING — every individual fact is true, but the selection or sequencing creates a false impression a reasonable reader would form.
+4. UNVERIFIED DETAIL — any specific number, name, date, law section, or quote that the analysis does not source.
+
+These four sins are equally serious. An underclaim that buries a court conviction is as harmful as an overclaim that invents one. A misleading sequence is as harmful as an outright wrong number.
+
+=== YOUR ROLE ===
+
+You are an independent bias auditor AND a fact-grounded reviewer. You receive an analysis of a Malaysian public issue from another analyst. Your job is to detect bias AND flag the four cardinal sins.
+
+You have no loyalty to the original analyst. If their work is biased or factually unsound, say so bluntly.
+
+=== SCAN FOR THESE 9 BIAS TYPES ===
+
+1. PARTISAN LANGUAGE: Framings that favour ANY Malaysian party.
+   Examples: "backdoor government" (PH framing), "stability government" (BN framing), describing PH as "reformist" without noting failures, describing PN as "extremist" without noting their democratic mandate. ANY asymmetric treatment of political actors = bias.
+
+2. RACIAL FRAMING: Blame or victimhood assigned disproportionately to one community.
+   Examples: "Chinese-owned company" when ethnicity is irrelevant, treating any community as a monolith ("the Malays want", "the Chinese think"), giving one group more grammatical agency than another.
+
+3. RELIGIOUS BIAS: One religion's perspective treated as more legitimate.
+   Example: Describing Islamic sensitivity as "overreaction" while Hindu concerns are "legitimate heritage". Both are legitimate or neither is.
+
+4. OMISSION BIAS: What is NOT said. Is East Malaysia missing? Are Orang Asli missing? Are women missing? Is youth perspective missing? Is B40 missing?
+
+5. EMOTIONAL MANIPULATION: Selective use of emotive details. Rigged questions. False equivalences where evidence clearly favours one reading. Sympathy accumulation toward one actor.
+
+6. DIPLOMATIC EVASION: So carefully balanced it says nothing. Hedging where clarity is possible. Avoiding a conclusion the evidence supports.
+
+7. GEOGRAPHIC BIAS: KL/Peninsular perspective treated as default. Sabah and Sarawak absent or footnoted.
+
+8. ECONOMIC MASKING: Racial narratives substituted for economic analysis. If the real driver is money/class but the analysis frames it as race/religion, that is bias.
+
+9. GENDER ERASURE: Women's voices absent, passive, or tokenised.
+
+=== PROVIDE NUMERICAL ESTIMATES ===
+
+For the mathematical bias measurement framework, provide these estimates for the analysis you are auditing:
+
+POLITICAL LEAN: -1.0 (strongly pro-opposition) to +1.0 (strongly pro-government). One decimal place. Justify.
+ETHNIC FRAMING: 0.0 (all groups have equal agency) to 1.0 (one group dominates agency). Specify which groups have most/least agency.
+RELIGIOUS SENSITIVITY: -1.0 (dismissive of religion) to +1.0 (uncritically amplifying religious framing).
+NARRATIVE FRAMING: -1.0 (opposition consistently active voice) to +1.0 (govt consistently active).
+GEOGRAPHIC BIAS: -1.0 (unusual peripheral focus) to +1.0 (strongly KL/urban-centric).
+ECONOMIC FRAMING: -1.0 (B40 perspective dominates) to +1.0 (T20/corporate perspective dominates).
+GENDER AGENCY: 0.0 (equal agency) to 1.0 (highly unequal). Specify which gender has more agency.
+
+=== VERIFICATION LOG ===
+
+For every numerical or named-entity claim in the analysis, log whether you independently verified it:
+- VERIFIED: cite the primary source you used
+- UNVERIFIED: explain what you searched and why no primary source was found
+- WRONG: cite the primary source that contradicts the claim AND the corrected value
+
+=== OUTPUT ===
+
+Return ONLY valid JSON. No markdown. No commentary.
+
+{
+  "bias_score": 0-100,   // amount of bias detected. 0 = no bias found, 100 = heavily biased. LOWER IS BETTER. Downstream: VerdictBar displays quality where higher=better, so the pipeline inverts this to ba = 100 - bias_score. Your job here is to report bias AMOUNT accurately, not to pre-invert.
+  "political_lean_estimate": -1.0,
+  "ethnic_framing_estimate": 0.0,
+  "religious_sensitivity_estimate": 0.0,
+  "narrative_framing_estimate": 0.0,
+  "geographic_bias_estimate": 0.0,
+  "economic_framing_estimate": 0.0,
+  "gender_agency_estimate": 0.0,
+  "partisan_flags": [{"quote": "exact text from analysis", "why_biased": "explanation", "fix": "suggested correction"}],
+  "racial_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "religious_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "geographic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "economic_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "gender_flags": [{"quote": "...", "why_biased": "...", "fix": "..."}],
+  "omission_flags": ["what is missing and why it matters"],
+  "evasion_flags": ["where the analysis dodges something it should confront"],
+  "shoe_test_failures": ["where swapping parties/communities breaks the logic"],
+  "cardinal_sin_flags": [
+    {"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "quote": "exact text", "why": "explanation", "fix": "..."}
+  ],
+  "verification_log": [
+    {"claim": "exact claim from analysis", "status": "VERIFIED|UNVERIFIED|WRONG", "primary_source": "...", "corrected_value": "if WRONG"}
+  ],
+  "overall_assessment": "One blunt paragraph. No sugarcoating."
+}
+
+=== THE ANALYSIS TO AUDIT ===
+
+{
+  "cards": [
+    {
+      "t": "hook",
+      "text": "On 5 Nov the US designated a Kuala Lumpur company in Prince Group's network. The Malaysian wire reports we found named a Malaysian man sanctioned that day, not the company.",
+      "sub": "The company is Greenmeadows Properties Sdn Bhd. The man, Chui Kok Wa, was designated separately; OFAC accuses him of leading a scam network in Madagascar.",
+      "sources": [
+        "US Treasury press release sb0683, 5 Nov 2026: 4 individuals and 41 entities under E.O. 13581; Greenmeadows 'Malaysia-based'; Chui 'led an extensive network of scammers located in Madagascar' [brief S1]",
+        "OFAC Recent Actions 5 Nov 2026, SDN entries GREENMEADOWS PROPERTIES SDN BHD (Kuala Lumpur address) and CHUI, Kok Wa ('nationality Malaysia') [S2]; Federal Register 91 FR 72626-72627 [S3]",
+        "Malaysian coverage opened 18 Nov 2026, all AFP-based: The Star 6 and 7 Nov, The Sun, The Vibes, RTM, Oriental Daily [S16a-f], Kwong Wah Yit Poh 6 Nov (verification V38): 7 of 7 name Chui as Malaysian, 0 of 7 name Greenmeadows. Trade press (Export Compliance Daily, 6 Nov) did name it (V44)."
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Security",
+      "h": "Greenmeadows Properties Sdn Bhd, a KL holding company set up in December 2018 by OFAC's record, is the only Malaysian company among the 41 entities in the US action against Prince Group.",
+      "s": "Treasury says its director is Dai An, whom it calls a Prince Group leader. Its claims about concealing ownership cover all the new designations; none is specific to the company.",
+      "d": "OFAC's 5 Nov 2026 action designated 41 entities under E.O. 13581 as part of the Prince Group transnational criminal organisation: 23 Cambodian, 8 BVI, 6 Hong Kong, 2 Singapore, 1 Mauritius and 1 Malaysian (count from the SDN entries). The Malaysian entry is Greenmeadows Properties Sdn Bhd, Kuala Lumpur, 'Organization Established Date 03 Dec 2018', 'Activities of holding companies', registration 201801044010, 'Linked To: DAI, An'. Treasury's release says Dai An, designated on 23 Jun 2026 as 'a high-level leader in the Prince Group TCO', 'serves as director for ... Malaysia-based Greenmeadows Properties Sdn Bhd'. The Federal Register designates the company under s.1(a)(ii)(C) of E.O. 13581: owned or controlled by, or having acted for or on behalf of, Dai An. Treasury makes collective claims about all the newly designated parties ('managing offshore corporate structures, concealing beneficial ownership, facilitating commercial activities, and providing administrative and financial services') and none specific to Greenmeadows. 'Holding company' and the 2018 date are OFAC's record ('Organization Type: Activities of holding companies'; 'Organization Established Date 03 Dec 2018'). The same OFAC page also added six Cuba-program entities; '41' counts only the Prince Group set. Neither earlier Prince Group round (146 targets, 14 Oct 2025; 35 targets, 23 Jun 2026) shows a Malaysian address on OFAC's listing pages. Ownership of Greenmeadows is not established: the SSM record was not obtained. A designation is an administrative determination; OFAC runs a delisting process.",
+      "sources": [
+        "US Treasury press release sb0683, 5 Nov 2026, Dai An and Greenmeadows paragraph [S1]",
+        "OFAC Recent Actions 5 Nov 2026 SDN entries (jurisdiction count) [S2]; Federal Register 91 FR 72627, E.O. 13581 s.1(a)(ii)(C) [S3]",
+        "Treasury sb0538, 23 Jun 2026 and OFAC Recent Actions 23 Jun 2026 (Dai An) [S4a, S4b]; Treasury sb0278 and OFAC Recent Actions 14 Oct 2025 (146 targets) [S5a, S5b]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Regional",
+      "h": "Singapore does not enforce US sanctions either. Its police, on their own financial intelligence since 2024, used the US and UK releases to widen a laundering case.",
+      "s": "By March 2026 they had seized or barred the sale of over S$500m in assets in Singapore. No Malaysian agency has spoken publicly on any of the three US rounds.",
+      "d": "Singapore Customs: 'Singapore does not enforce unilateral sanctions imposed by other countries.' Singapore Police said that, with 'the additional information obtained from the US's and UK's press releases on 14 Oct 2025', they advanced an investigation begun in 2024 on Suspicious Transaction Reporting Office intelligence on Chen Zhi and associates, and on 30 Oct 2025 seized or issued prohibition of disposal orders over more than S$150 million in assets. On 3 Mar 2026 they reported three Singaporeans arrested between November 2025 and January 2026 and assets 'seized and/or prohibited' worth 'more than S$500 million'. For Malaysia, no statement from PDRM, the Home Ministry, Bank Negara, SSM, Wisma Putra or the AGC on Greenmeadows, Chui Kok Wa or any of the three Prince Group rounds (Oct 2025, Jun 2026, Nov 2026) was found as at 18 Nov 2026. That is a finding about public statements only: suspicious transaction reports and investigations are confidential under AMLA s.14A (prohibition against disclosure of reports) and s.35 (tipping-off). Caveat for the comparison: Singapore's case targeted assets and people in Singapore; no source shows Prince Group assets in Malaysia.",
+      "sources": [
+        "Singapore Police Force, 31 Oct 2025 and 3 Mar 2026 releases [S13a, S13b]",
+        "Singapore Customs, 'Sanctioned Lists and Red Flags' and UNSC sanctions overview pages [S14a, S14b]",
+        "Search log for a Malaysian response, brief VERIFICATION GAPS; AMLA s.14A p.34 and s.35 pp.61-62 (AGC text as at 1 Mar 2026) [S8]"
+      ]
+    },
+    {
+      "t": "fact",
+      "lens": "Legal",
+      "h": "Ministers say Malaysia recognises only UN Security Council sanctions. Bank Negara's rules still require a suspicious transaction report when a bank finds a match on another country's sanctions list.",
+      "s": "Checking those lists is optional, and BNM has not said whether the rule reaches a US crime listing. Freezing property needs a Malaysian investigation under AMLA s.44.",
+      "d": "BNM policy document BNM/RH/PD 030-14 (effective 6 Feb 2024), para 27.8.3, marked 'S' (a requirement whose breach 'may result in enforcement action'): 'Reporting institutions shall submit a suspicious transaction report if there is any positive name match with individuals or entities listed in other unilateral sanctions lists.' The same rule recurs at 28.7.3 and 29.7.3. Para 27.3.11 (guidance): institutions 'may monitor and consolidate other countries' unilateral sanctions lists'. Freezing duties attach only to the Domestic List (Home Minister's AMLA s.66B orders, terrorism only) and UN Security Council lists (paras 27, 28, 29). The STR-on-match rule sits only in the terrorism-financing, proliferation and other-UN-regime sections (27.8.3, 28.7.3, 29.7.3), so whether it reaches an OFAC transnational-crime designation is unsettled; BNM has not been asked (brief GAP 2). AMLA s.44(1): an enforcement agency 'may issue an order to freeze any property of any person' where 'an investigation with regard to an unlawful activity has commenced against that person' and it has reasonable grounds to suspect proceeds; 'unlawful activity' includes a 'foreign serious offence' stated in a certificate issued by the foreign State. Ministers have said Malaysia recognises only UN Security Council sanctions (PM Anwar, 7 Nov 2023; Home Minister Saifuddin Nasution, 9 May 2024). MITI (4 Mar 2025) said Malaysia 'maintains a neutral position on unilateral sanctions' and advised companies to be aware of other countries' unilateral export controls; that is not a UN-only statement.",
+      "sources": [
+        "BNM policy document BNM/RH/PD 030-14, legend p.15; paras 27.3.11 p.114, 27.6 p.115, 27.8.3 p.117 [S9]",
+        "AMLA (Act 613), AGC updated text as at 1 Mar 2026: s.3 pp.10-11, 14; s.44 pp.66-67; ss.66B-66C pp.99-103 [S8]",
+        "FMT 9 May 2024 (Home Minister); The Star 7 Nov 2023 (PM) [S15a, S15b]"
+      ]
+    },
+    {
+      "t": "reframe",
+      "h": "The real question",
+      "text": "The question was never whether Malaysia must act on Washington's list. It is whether anyone here has checked the Kuala Lumpur company named on it.",
+      "sources": [
+        "Ministers' UN-only statements [S15a, S15b]; no freeze duty on unilateral listings, BNM PD paras 27-29 [S9]; no public Malaysian statement found as at 18 Nov 2026 (search log)"
+      ]
+    },
+    {
+      "t": "analogy",
+      "h": "Think of it this way",
+      "text": "It is like a foreign police notice naming a house on your street. You need not arrest anyone on it, but the neighbours will want to know whether anyone knocked.",
+      "sources": [
+        "Rests on the reframe's sources: no freeze duty on unilateral lists [S9]; AMLA s.44 needs a Malaysian investigation [S8]; no public statement found"
+      ]
+    },
+    {
+      "t": "mature",
+      "h": "The considered view",
+      "text": "An investigation can stay confidential. Whether any Malaysian agency has looked at the KL company the US tied to Prince Group need not. None has said publicly.",
+      "sources": [
+        "Confidentiality: AMLA s.14A, s.35 [S8]; no public statement found as at 18 Nov 2026 (brief search log)"
+      ]
+    }
+  ],
+  "headline_suggestion": "US sanctions tie a KL company to Prince Group; no Malaysian agency has said whether it checked",
+  "context_suggestion": "On 5 Nov 2026 the US Treasury sanctioned 45 more targets in Cambodia-based Prince Group's network, one a Kuala Lumpur company, and separately a Malaysian it accuses of leading scams from Madagascar.",
+  "sources": "US Treasury sb0683 (5 Nov 2026), sb0538 (23 Jun 2026), sb0278 (14 Oct 2025); OFAC Recent Actions 5 Nov 2026, 23 Jun 2026, 14 Oct 2025 (SDN entries); Federal Register 91 FR 72624-72630; USAO-DC press release 27 Oct 2026; affidavit in support of criminal complaint, US v. Chui Kok Wa et al. (D.D.C., sworn 23 Oct 2026); Anti-Money Laundering, Anti-Terrorism Financing, Anti-Restricted Activity Financing and Proceeds of Unlawful Activities Act 2001 (Act 613), AGC text as at 1 Mar 2026; BNM policy document BNM/RH/PD 030-14 (2024); Singapore Police Force releases 31 Oct 2025 and 3 Mar 2026; Singapore Customs sanctions pages; FMT 9 May 2024; The Star 7 Nov 2023; Malaysian coverage of 5 Nov action (The Star, The Sun, The Vibes, RTM, Oriental Daily)",
+  "confidence": "Medium-High. HIGH on the US record (Treasury release, OFAC SDN entries, Federal Register, DOJ release, sworn affidavit) and on Malaysian legal texts (AMLA AGC text as at 1 Mar 2026; BNM policy document). MEDIUM on the coverage claim: six Malaysian items opened, wider searches found none naming the company, but absence cannot be proven, so the hook says 'reports we found'. LOW on whether any Malaysian agency has acted: STRs and investigations are confidential by law, so the cards claim only that no public statement was found.",
+  "lenses_used": [
+    "Security",
+    "Regional",
+    "Legal"
+  ],
+  "lenses_applicable_but_unused": [
+    "Governance",
+    "Economic",
+    "Rights"
+  ],
+  "needs_verification": [
+    "BNM: does para 27.8.3 (and 28.7.3, 29.7.3) require an STR on a positive match with an OFAC transnational-crime designation, or only with terrorism, proliferation and UN-regime listings? Fact 3 says BNM has not said; ask BNM before publication.",
+    "Re-check for any public statement from PDRM, the Home Ministry, BNM, SSM, Wisma Putra or the AGC on Greenmeadows or Chui Kok Wa at publication; fact 2's sub, the reframe and the view depend on there being none.",
+    "SSM record for Greenmeadows Properties Sdn Bhd (reg. 201801044010): status, directors, shareholders. Cards say only what OFAC and Treasury state. A same-name App Store developer listing exists (verification V46); off cards unless SSM ties it to the registration number and a right of reply is sought.",
+    "Re-run the Malaysian coverage search at publication (English, Malay, Chinese press, Bernama); the hook's 'wire reports we found' rests on seven AFP-based items.",
+    "Singapore figures: 'seized and/or prohibited' > S$500 million (SPF, 3 Mar 2026), case begun 2024 on STRO intelligence; card glosses 'prohibition of disposal orders' as 'barred the sale of'.",
+    "Ministers' UN-only statements: PM 7 Nov 2023 (The Star, paywalled beyond lead) and Home Minister 9 May 2024 (FMT) are reported speech; the 2022 foreign minister named the UN General Assembly."
+  ],
+  "source_notes": "(1) Chui Kok Wa: Treasury says he defrauded Americans 'of over $400,000 equivalent'; the DOJ complaint alleges 'at least approximately $516,695' from about 74 wallets. Different agencies and bases; neither figure is on the cards. The US instrument is a criminal complaint (D.D.C.), not an indictment, despite The Record's headline. Chui is designated under E.O. 13694 (cyber), not as part of Prince Group. (2) Malaysian coverage: seven items found, all AFP-based, name Chui as Malaysian and none names the company; AFP's own copy never named it, so the gap is in the wire, not a Malaysian newsroom choice. Trade press named the company on 6 Nov. The hook says 'wire reports we found' and the issue's spine is the company and BNM's rule, not media. (3) Which UN body: the 2022 foreign minister named the General Assembly; the PM (2023) and Home Minister (2024) named the Security Council; statute (AMLA s.66C) and BNM rules track the Security Council, so cards say UN. (4) All allegations originate with the US government (single-origin); attribution is kept on every card. (5) Kosmo's 31 Oct headline says Chui was arrested; no source supports an arrest; not used.",
+  "guardrails_applied": [
+    "Every US claim attributed (designated, OFAC accuses, Treasury says); 'holding company' and 2018 date attributed to OFAC's record; no 'scam company', 'shell' or 'front'.",
+    "Fact 1 states that Treasury's collective claims cover all designations and none is specific to Greenmeadows (V9).",
+    "Chui named only with OFAC attribution and as designated separately; no loss figures, no 'indicted', no 'arrested', no birth date, ID or street address.",
+    "No 'Malaysia refuses', 'cannot freeze' or 'did nothing': fact 3 states BNM's STR rule with both limits (optional screening; scope unsettled); fact 2 and the view say 'no public statement'; STR secrecy is s.14A.",
+    "Singapore card carries its own origin (2024, own intelligence, assets in Singapore).",
+    "Hook frames coverage as wire reports, not a Malaysian newsroom choice (V38).",
+    "Reframe uses question restructuring, not the paradox shape of 2018/2019; view avoids issue 2017's 'stay out of Washington's sanctions and still...' shape.",
+    "No ethnic descriptor; DOJ's 'tied to China' language not used."
+  ],
+  "pa_score": 80
+}

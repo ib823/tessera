@@ -1,4 +1,4 @@
-# BRIEF — On 5 November 2026 Washington blacklisted a Kuala Lumpur holding company as part of Prince Group's network. Malaysian reports named the Malaysian man sanctioned that day; none we found named the company.
+# BRIEF — On 5 November 2026 Washington blacklisted a Kuala Lumpur holding company as part of Prince Group's network. The Malaysian reports we found, all drawn from AFP, named the Malaysian man sanctioned that day; none named the company.
 
 **Slug:** prince-group-kl-company-us-sanctions
 **Proposed issue ID:** 2022
@@ -59,7 +59,7 @@ needs precise wording.
 **Malaysian response: none found.** No statement from PDRM, the Home Ministry, BNM, SSM, Wisma Putra or the AGC
 on Greenmeadows, Chui Kok Wa, or any of the three Prince Group rounds was found as at 18 Nov 2026 (search log in
 VERIFICATION GAPS). This is a finding about public statements only: suspicious transaction reports and
-investigations are confidential (AMLA s. 14, s. 35 tipping-off) [S8 pp. 32, 61-62].
+investigations are confidential (AMLA s. 14A, prohibition against disclosure of reports, p. 34; s. 35 tipping-off, pp. 61-62) [S8].
 
 **The comparator that sharpens the point.** Singapore also "does not enforce unilateral sanctions imposed by other
 countries" [S14a, S14b]. Yet Singapore Police, which had STRO intelligence on Chen Zhi from 2024, said that "with
@@ -70,19 +70,22 @@ own 2025 statement shows Malaysia uses the same move elsewhere: on US-sanctioned
 is taking the necessary actions to establish whether Malaysian laws had been breached" [S12].
 
 **Developable core (anger at process, not at a community or at named officials).** A KL-registered company is now
-on a US list as part of a scam network's corporate structure. Malaysia's UN-only stance answers whether Malaysia
+on a US list: the Treasury designated it as owned or controlled by, or acting for, a man it calls a Prince Group
+leader. Malaysia's UN-only stance answers whether Malaysia
 must freeze it (no). It does not answer whether Malaysian banks filed the report BNM's own rules require on a
-match, or whether any Malaysian agency opened a file, and nobody has said. The Malaysian end of the scam economy
-includes a company registry entry and a Malaysian national abroad, not only victims. Differentiate from 2004
+match, or whether any Malaysian agency opened a file, and nobody has said. On the US record, the Malaysian end of the
+Prince Group case includes a company registry entry, and the same day's action named a Malaysian national abroad
+(designated separately; charged in a US criminal complaint; presumed innocent). Differentiate from 2004
 (prevention: mule accounts, platforms) and 2018 (victim compensation): this issue is about the supply side and the
 corporate plumbing.
 
 **Allegation discipline.** OFAC designations are administrative determinations; the Chui case is a criminal
 complaint (not an indictment) [S7], an allegation he has not answered in any source found; FORA treats him as
 presumed innocent. Greenmeadows is designated for being "owned or
-controlled by, or [having] acted ... for or on behalf of" Dai An [S3]; **the release alleges no specific conduct by
-Greenmeadows itself**, and the general sentences about concealing assets and evading sanctions describe the whole
-action, not this company [S1]. Prince Group "has previously denied any involvement in cyberscams" (AFP) [S16a].
+controlled by, or [having] acted ... for or on behalf of" Dai An [S3]; **Treasury makes collective claims about all the newly
+designated parties ("managing offshore corporate structures, concealing beneficial ownership, facilitating
+commercial activities, and providing administrative and financial services") and none specific to Greenmeadows**
+[S1] (corrected per INDEPENDENT VERIFICATION V9). Prince Group "has previously denied any involvement in cyberscams" (AFP) [S16a].
 No statement from Greenmeadows or Chui was found.
 
 ## PERIOD
@@ -226,7 +229,7 @@ S14b]; money laundering under CDSA s. 54, up to 10 years or S$500,000 [S13a].
 | 10 | Crypto seized, Madagascar | ~US$52m in a single day | "the US authority said" via AFP. | [S17a] |
 | 11 | Workforce claims | 25 (lawyers' report); 15 (material-witness warrant); "around 20" in custody (AFP); "about 20" (The Record) | Different counts, different bases. | [S7], [S6], [S17d], [S18] |
 | 12 | Singapore seizures | >S$150m (30 Oct 2025); **>S$500m** cumulative (3 Mar 2026); 3 arrests | Seized and/or prohibited; Singapore case begun 2024. | [S13a], [S13b] |
-| 13 | Malaysian coverage of 5 Nov action | 6 of 6 opened items named Chui as Malaysian; 0 of 6 named Greenmeadows | Items opened 18 Nov 2026; not a census of all Malaysian media. | [S16a-f] |
+| 13 | Malaysian coverage of 5 Nov action | 7 of 7 items found named Chui as Malaysian; 0 of 7 named Greenmeadows; all AFP-based | Items opened 18 Nov 2026 (six in [S16a-f] plus Kwong Wah Yit Poh, 6 Nov 2026, per V38); not a census. Trade press (Export Compliance Daily, 6 Nov) named Greenmeadows. | [S16a-f]; V38, V44 |
 | 14 | DOJ Strike Force | $1,006,460,156.82 crypto restrained | To 27 Oct 2026; context only. | [S6] |
 
 **Rule for Stage 1:** never set Prince Group's US$15b bitcoin claim or Strike Force totals beside the Chui figures;
@@ -357,11 +360,11 @@ AMLA, PDRM, Home Ministry, Parliament (none expected), Singapore.
 1. **Malaysian media did report the Malaysian end.** All six Malaysian reports opened named Chui [S16]; Kosmo
    called him a Malaysian "bos 'scammer'" before the sanctions [S17c]. Only the company went unnamed, and the
    Treasury gave it one sentence [S1].
-2. **The company may be a shell with nothing here.** Treasury alleges no conduct by Greenmeadows; it is one of 41
+2. **The company's Malaysian footprint is unknown.** Treasury makes no claim specific to Greenmeadows; it is one of 41
    entities and the only Malaysian address among the 226 Prince Group targets across three rounds [S1, S2, S4a,
    S4b, S5a, S5b]. A holding company with
    a director in common is not proof of assets or activity in Malaysia.
-3. **Silence is not inaction.** STRs and investigations are confidential (AMLA ss. 14, 35) [S8]; BNM 27.8.3 already
+3. **Silence is not inaction.** STRs and investigations are confidential (AMLA ss. 14A, 35) [S8]; BNM 27.8.3 already
    obliges banks to report a match [S9]. Malaysia may have acted without saying so.
 4. **The UN-only stance is old, cross-government and shared.** Stated in 2022, 2023, 2024 and 2025 [S15, S12];
    Singapore holds the same line [S14]. It is not a Prince Group-specific choice.
@@ -391,7 +394,7 @@ publication. S = reporting or commentary. S→P = reporting that quotes an offic
    **(b) [P]** OFAC, "Transnational Criminal Organizations Designations; Issuance of TCO-related General License", Recent Actions, 14 Oct 2025 (Prince Group SDN entries). https://ofac.treasury.gov/recent-actions/20251014
 6. **[P]** US Attorney's Office, District of Columbia, "Scam Center Strike Force Expands Reach to Target Global Crime Syndicates; Charges Scammers Based in Africa and Tied to China", press release, 27 Oct 2026 (updated 29 Oct 2026). https://www.justice.gov/usao-dc/pr/scam-center-strike-force-expands-reach-target-global-crime-syndicates-charges-scammers
 7. **[P]** US District Court for the District of Columbia, *United States v. Chui Kok Wa et al.*, Affidavit in Support of Criminal Complaint and Arrest Warrant, sworn 23 Oct 2026 before Magistrate Judge Zia M. Faruqui, redacted copy released 27 Oct 2026 (paras 1, 4, 14 to 16, 19, 36, 40, 122). https://www.justice.gov/usao-dc/media/1468811/dl?inline
-8. **[P]** Attorney General's Chambers, *Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001 (Act 613)*, updated text "As at 1 March 2026": s. 3 pp. 10 to 11, 14; s. 14 p. 32; s. 35 pp. 61 to 62; s. 44 pp. 66 to 67; ss. 66A to 66D pp. 99 to 104. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3285881_BI/Act%20613%20%28Online%202026%29.pdf
+8. **[P]** Attorney General's Chambers, *Anti-Money Laundering, Anti-Terrorism Financing, Anti-Restricted Activity Financing and Proceeds of Unlawful Activities Act 2001 (Act 613)*, updated text "As at 1 March 2026": s. 3 pp. 10 to 11, 14; s. 14 p. 32; s. 14A p. 34; s. 35 pp. 61 to 62; s. 44 pp. 66 to 67; ss. 66A to 66D pp. 99 to 104. https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3285881_BI/Act%20613%20%28Online%202026%29.pdf
 9. **[P]** Bank Negara Malaysia, *Anti-Money Laundering, Countering Financing of Terrorism, Countering Proliferation Financing and Targeted Financial Sanctions for Financial Institutions*, BNM/RH/PD 030-14, issued 5 Feb 2024, effective 6 Feb 2024: "S"/"G" legend p. 15; para 9.1 p. 17; paras 27.1.1 p. 112, 27.3.11 and 27.4.1 p. 114, 27.6 p. 115, 27.8.3 p. 117, 28.7.3 p. 122, 29.1.1 and 29.2.1 p. 123, 29.7.3 p. 127. https://www.bnm.gov.my/documents/20124/938039/pd-AMLCFTCPF-TFS-FI-Feb2024_+2.pdf
 10. **[P]** Commissioner of Law Revision, Malaysia, *Mutual Assistance in Criminal Matters Act 2002 (Act 621)*, Reprint 2006 (incorporating amendments to 1 Jan 2006): s. 2 p. 8; s. 17 p. 17; s. 31 p. 32 (UNODC-hosted copy). https://www.unodc.org/documents/organized-crime/GPTOC/GPTOC2/MLA_Law_Malaysia.pdf
 11. **[P]** Laws of Malaysia, *Penal Code (Act 574)*, online version of updated text of reprint, as at 1 Feb 2018 (latest amendment Act A1536): s. 4 pp. 32 to 33; Chapter VIB (s. 130U). https://www.asianlaws.org/gcld/cyberlawdb/MY/Penal%20Code.pdf
@@ -456,3 +459,198 @@ Metro, Sinar Harian, Malay Mail, FMT, Malaysiakini, NST, Kosmo; "PDRM Chui Kok W
 Dewan Rakyat soalan Parlimen"; "Saifuddin / Bukit Aman / Bank Negara Prince Group Chen Zhi Malaysia"; "Razarudin /
 Bukit Aman / Home Ministry Prince Group October 2025"; Chinese-language searches for 崔国华 and 太子集团 with 星洲,
 中国报, 光华日报, 南洋商报. No Malaysian agency statement found.
+
+## INDEPENDENT VERIFICATION (2026-11-18)
+
+**Method.** Second-pass check by a reviewer who did not write the brief, run 18 Nov 2026. Primary documents were
+downloaded and text-searched, not read from summaries: Treasury sb0683, sb0538, sb0278; OFAC recent-action pages
+20261105, 20260623, 20251014 (all entries machine-counted); Federal Register PDF 2026-22861; the 87-page affidavit
+PDF; AGC Act 613 PDF ("As at 1 March 2026"); BNM PD 030-14 PDF; MACMA 2006 reprint; Penal Code 2018 text; MITI
+statement PDF; both SPF releases; both Singapore Customs pages; FMT 2024, The Star 2023, RTM 2022. All six [S16] items
+plus Kosmo [S17c] and The Star 2 Nov [S17a] were downloaded and searched. The Greenmeadows media search was re-run
+independently in English, Malay and Chinese, open web and restricted to 23 Malaysian news domains, plus "Chui Kok Wa"
+across Malaysian domains and searches for any Malaysian agency statement. **Could not open:** the USAO-DC release
+[S6] (bot-check page on every attempt), the HSF Kramer note and state.gov pages (403). Not re-opened (off cards):
+[S17b], [S17d], [S19].
+
+**Tally: 47 claims checked: 35 CONFIRMED, 10 CORRECTED, 2 UNVERIFIED.**
+
+| # | Claim in brief | Verdict | Evidence / correct wording |
+|---|---|---|---|
+| V1 | 5 Nov: 4 individuals + 41 entities (45) under E.O. 13581, 1 target under E.O. 13694 | CONFIRMED | [S1]: "OFAC is designating 45 targets pursuant to E.O. 13581 ... and one target pursuant to E.O. 13694". |
+| V2 | Dai An "a high-level leader in the Prince Group TCO"; "serves as director" of "Malaysia-based" Greenmeadows | CONFIRMED | [S1] verbatim. Dai is "majority owner" of Chen Hua only; no ownership stated for Greenmeadows. |
+| V3 | Basis: owned or controlled by, or acted for, Dai An; FR s. 1(a)(ii)(C), p. 72627 | CONFIRMED | [S1] "for being owned or controlled by, or to have acted or purported to act for or on behalf of, directly or indirectly, Dai An"; [S3] p. 72627 same, s. 1(a)(ii)(C). |
+| V4 | SDN entry: TTDI KL address, est. 03 Dec 2018, holding companies, reg. 201801044010, Linked To DAI, An | CONFIRMED | [S2] verbatim (postcode 60000). |
+| V5 | 41 entities: Cambodia 23, BVI 8, HK 6, Singapore 2, Mauritius 1, Malaysia 1 | CONFIRMED | Machine count of [TCO]-tagged entities on [S2]. The same page also adds 6 Cuba-program entities (47 entities in all); "41" is right only for the Prince Group set. |
+| V6 | No Malaysian address or nationality in the Oct 2025 or Jun 2026 rounds; 146 and 35 (9 + 26) targets | CONFIRMED | Zero "Malaysia", "Kuala", "Sdn Bhd", "Labuan" strings on [S5b], [S4b]; counts per [S5a], [S4a]. |
+| V7 | Chui: E.O. 13694 s. 1(a)(ii)(D); [CYBER4]; nationality Malaysia; POB Negeri Sembilan; Antananarivo; "led an extensive network of scammers located in Madagascar"; "over $400,000 equivalent"; heading "FACILITATOR" | CONFIRMED | [S1], [S2], [S3] p. 72626. Treasury's lead calls him "a Malaysian individual who defrauded U.S. victims", stated as fact: attribute on cards. |
+| V8 | Chui is not part of the Prince Group designation | CONFIRMED | Separate authority, program tag and section of [S1]. |
+| V9 | "Release alleges no specific conduct by Greenmeadows; the general sentences ... describe the whole action, not this company" | CORRECTED | First half right. Second half wrong: [S1] says "The newly designated individuals and entities have helped sustain Prince Group TCO's illicit global operations ... by managing offshore corporate structures, concealing beneficial ownership, facilitating commercial activities, and providing administrative and financial services". That collective claim covers every designated entity, Greenmeadows included. Correct wording: "Treasury makes collective claims about all the newly designated parties and none specific to Greenmeadows." |
+| V10 | BVI FIA and UK FCDO credited; no Malaysian agency | CONFIRMED | [S1]. |
+| V11 | Blocking effects; 50% rule; "may risk exposure to sanctions"; delisting petition | CONFIRMED | [S1] "Sanctions Implications". |
+| V12 | E.O. 14390, 6 Mar 2026, title | CONFIRMED | [S1], [S4a]. |
+| V13 | Dai An SDN nationality Cambodia, alt. Cyprus, Vanuatu | CONFIRMED | [S4b]. |
+| V14 | 91 FR 72624 to 72630, FR Doc. 2026-22861, 10 Nov 2026 | CONFIRMED | [S3]. P. 72624 opens with the tail of a separate DPRK notice (FR Doc. 2026-22862). |
+| V15 | Complaint, not indictment; D.D.C.; "26-mj-"; 18 U.S.C. §§ 1343, 1349; Jan 2025 to Apr 2026; sworn 23 Oct 2026 before Magistrate Judge Zia M. Faruqui | CONFIRMED | [S7] caption, paras 1, 4; jurat "Subscribed and sworn telephonically ... on October 23, 2026". |
+| V16 | Affidavit figures: ~74 wallets, ~$516,695; ~3,200 devices; 13 compounds; ~400 in custody incl. ~40 Chinese; leaders "repatriated to China"; Brazilians moved "early-May 2026"; 25 in the Attorney Report, FBI "unable to substantiate"; "potentially inconsistent with claims of duress" | CONFIRMED | [S7] paras 14 to 16, 19 and the Attorney Report passage. |
+| V17 | DOJ release [S6]: "approximately 800 victims"; "leader of the NFT Scheme"; $1,006,460,156.82; 15 material witnesses; "Chinese TCOs"; Pirro, Heyman | UNVERIFIED | [S6] would not load. Partial corroboration only: "connections to Malaysia and China ... early 2025" quoted from DOJ by AFP (Kosmo [S17c], Arab News); the extradition request by [S18]; ~800 victims only in a Yahoo/Wealth of Geeks paraphrase. |
+| V18 | The Record: "US indicts"; unclear whether defendants remain in Madagascar | CONFIRMED | [S18]. |
+| V19 | [S8] titled "Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001" | CORRECTED | Since Act A1761 (in force 1 Mar 2026) the title is "Anti-Money Laundering, Anti-Terrorism Financing, Anti-Restricted Activity Financing and Proceeds of Unlawful Activities Act 2001" ([S8] cover and p. 2). |
+| V20 | s. 3 "unlawful activity" (pp. 10 to 11), "foreign serious offence" and "serious offence" (p. 14) | CONFIRMED | [S8]; "serious offence" para (aa) is federal offences punishable by one year or more. |
+| V21 | s. 14(1)(b) "shall promptly report" (p. 32) | CONFIRMED | [S8]. |
+| V22 | STRs confidential under "AMLA s. 14, s. 35" | CORRECTED | The STR secrecy offence is **s. 14A**, "Prohibition against disclosure of reports and related information" (p. 34; up to RM3m or five years). s. 35 is tipping-off about an investigation. s. 14 is the duty to report. |
+| V23 | s. 44(1) freeze needs a commenced investigation plus reasonable grounds (pp. 66 to 67) | CONFIRMED | [S8] verbatim; the text now also covers "terrorist property or proliferator property" and restricted-activity financing. |
+| V24 | Part VIA; s. 66B terrorism-only, Gazette, fine up to RM3m or five years; s. 66C UN Security Council Article 41 measures | CONFIRMED | [S8] pp. 99 to 103. Full Part VIA heading: "Suppression of Terrorism Financing Offences and Freezing, Seizure and Forfeiture of Terrorist Property". |
+| V25 | BNM PD 030-14 issued 5 Feb 2024, effective 6 Feb 2024; "S" legend p. 15 | CONFIRMED | [S9] para 5.1 and p. 15. No revised FI version found as at 18 Nov 2026; the PD predates AMLA A1761. |
+| V26 | 27.1.1 (p. 112), 27.4.1 (p. 114), 27.6.1 to 27.6.3 (p. 115) | CONFIRMED | [S9]. |
+| V27 | 27.3.11 (G, p. 114) "may monitor and consolidate"; 27.8.3 (S, p. 117) "shall submit a suspicious transaction report if there is any positive name match ... in other unilateral sanctions lists"; same in 28.7.3 (p. 122), 29.7.3 (p. 127) | CONFIRMED | [S9] verbatim. Scope caveat: see B1. |
+| V28 | Para 28 tied to STA 2010 subsidiary legislation; para 29 to CBA 2009 regulations | CONFIRMED | [S9] 28.1.1 (p. 118), 29.1.1 and 29.2.1 (p. 123). STA itself not needed for any card. |
+| V29 | MACMA: "prescribed foreign State requires a treaty or agreement (s. 17)"; s. 2 p. 8; s. 31 p. 32 | CORRECTED | ss. 2, 17, 31 confirmed, but s. 18 lets the Minister, on the AG's recommendation, apply the Act to a non-treaty State by "special direction", and s. 2 defines "prescribed foreign State" to include such a State. A treaty is not the only route. |
+| V30 | Penal Code s. 4 extends only Chapters VI, VIA, VIB to citizens abroad; "Malaysia's reach ... is therefore limited to the organised-crime chapter" | CORRECTED | s. 4 text confirmed (2018 text, pp. 32 to 33). The conclusion is wrong: AMLA **s. 82(1)(c)** lets any AMLA offence committed "by any citizen ... in any place outside and beyond the limits of Malaysia" be "dealt with as if it had been committed at any place within Malaysia", subject to the s. 82(2) diplomatic-officer certificate ([S8] pp. 121 to 122). Off cards either way. |
+| V31 | MITI 4 Mar 2025 listed among ministers saying Malaysia "recognises only UN sanctions" | CORRECTED | Quotes confirmed, grouping wrong. MITI said Malaysia "maintains a neutral position on unilateral sanctions" and advised that "companies operating in Malaysia are advised to be aware of other countries' unilateral export controls ... to avoid such sanctions". That is not a UN-only statement, and it cuts against a "Malaysia ignores US lists" reading. |
+| V32 | PM Anwar, 7 Nov 2023, "only recognises sanctions by the United Nations Security Council" | CONFIRMED | [S15b] lead; context: US bill on Hamas; venue not stated. |
+| V33 | Home Minister to Brian Nelson, 9 May 2024; "certain individuals and companies in Malaysia needed further verification by his ministry" | CONFIRMED | [S15a]. Context: US concern over funds reaching Iran and its proxies. |
+| V34 | FM Saifuddin Abdullah, 8 May, UNGA; "year taken from NST's URL" (GAP 11) | CORRECTED | The RTM page itself shows "8/05/2022 / 1:24 pm" and names the "Perhimpunan Agung" (UNGA). GAP 11 is closed. |
+| V35 | SPF 31 Oct 2025: STRO intelligence in 2024; "with the additional information obtained from the US's and UK's press releases on 14 Oct 2025"; operation 30 Oct; >S$150m; CDSA s. 54, 10 years or S$500,000 | CONFIRMED | [S13a] verbatim ("to advance the investigations"). |
+| V36 | SPF 3 Mar 2026: three Singaporeans arrested (Nov 2025 to Jan 2026); "seized and/or prohibited ... more than S$500 million" | CONFIRMED | [S13b]; arrests 20 Nov 2025, 11 Dec 2025, 12 Jan 2026. |
+| V37 | Singapore "does not enforce unilateral sanctions imposed by other countries" | CONFIRMED | [S14a], [S14b]. The same pages add that parties in Singapore "may be affected by unilateral sanctions imposed by other countries as they may have extraterritorial implications". These are trade-control pages. |
+| V38 | Six Malaysian reports opened; all named Chui as Malaysian; none named Greenmeadows; headline pattern | CORRECTED | All six re-opened and confirmed (no "Greenmeadows", "Taman Tun" or Malaysian company in any). A **seventh** item: Kwong Wah Yit Poh, 6 Nov 2026, "美国制裁柬埔寨太子集团关联企业及个人 打击跨国网络诈骗" (https://www.kwongwah.com.my/20261106/), names "马来西亚籍男子崔国华" and no company; headline names Cambodia. So 7 of 7 named Chui, 0 of 7 named Greenmeadows, and 4 of 7 headlines named Cambodia. At least six of the seven credit AFP (The Star x2, The Sun, The Vibes, RTM "– AFP", Oriental "法新社报导"); Kwong Wah's text matches the AFP copy. |
+| V39 | No Malaysian outlet named Greenmeadows | CONFIRMED (search-limited) | Independent re-search found none. Non-Malaysian naming exists (V44). Paywalled Malaysiakini, The Edge and Sin Chew can't be fully searched; keep "we found". |
+| V40 | Kosmo 31 Oct: headline "diberkas", body names Chui and the Ivato villa, no arrest described | CONFIRMED | [S17c]; body is AFP copy. |
+| V41 | The Star 2 Nov omits the paragraph naming Chui | CONFIRMED | [S17a]: no "Chui" or "Malaysian" string. |
+| V42 | No statement from PDRM, Home Ministry, BNM, SSM, Wisma Putra or AGC on Greenmeadows, Chui or the three rounds | CONFIRMED (search-limited) | Independent searches (EN/MS) found none. |
+| V43 | Jian Hua Daily lists Malaysia among jurisdictions, names no Malaysian entity | CONFIRMED | [S20]. |
+| V44 | Timeline: 16 Nov, "A US compliance newsletter names Greenmeadows" | CORRECTED | [S21] confirmed (post dated 16 Nov 2026), but Greenmeadows was named in trade press on 6 Nov: Export Compliance Daily, "Malaysia-based Greenmeadows Properties Sdn. Bhd., linked to previously sanctioned Prince Group executive Dai An". It also appears on OpenSanctions. The row must not read as the first public naming. |
+| V45 | Prince Group "has previously denied any involvement in cyberscams" (AFP) | CONFIRMED | [S16a]; also The Vibes. |
+| V46 | Greenmeadows as "a Kuala Lumpur holding company"; WHAT WEAKENS 2 "may be a shell with nothing here" | CORRECTED | "Holding company" is OFAC's classification ("Organization Type: Activities of holding companies"); "set up December 2018" is OFAC's "Organization Established Date". Attribute both. **New lead:** Apple's App Store (Malaysia storefront; US and Cambodia listings also found) lists "GREENMEADOWS PROPERTIES SDN BHD" as developer of FusionChats, an encrypted messaging app (id6639589061; developer page id1678712925, one app). Seller and copyright: "GRANDAPP TECHNOLOGIES SDN BHD". Version history runs from 24/12/2024 to a "Sep 9" update, year not shown. Whether this is the company with reg. 201801044010 is **not established**. |
+| V47 | Off-card sources [S17b], [S17d], [S19] (The Sun and CGS Madagascar items; The Edge on Prince Bank) | UNVERIFIED | Not re-opened. Keep off cards as the brief says. |
+
+### Misleading-framing risks
+
+1. **The media gap is a wire gap.** Every Malaysian item found is AFP copy or matches it. AFP did not name Greenmeadows.
+   Treasury's own release put "a Malaysian individual" in its first paragraph and gave the company one sentence deep
+   in the body. A hook that reads as "Malaysian newsrooms left the company out" assigns an editorial choice the
+   evidence does not show. Say "the wire reports Malaysian outlets carried" (or "the Malaysian reports we found, all
+   drawn from AFP") and keep the count at seven.
+2. **Singapore as the arousal peak.** Setting S$500m beside a Malaysian company with no known assets in Malaysia
+   implies Malaysia is sitting on comparable assets. Singapore's case began in 2024 from its own STR office (STRO),
+   targeted assets in Singapore, and used the 14 Oct 2025 releases as "additional information" [S13a]. Without those
+   three facts on the same card, the comparison misleads.
+3. **"Malaysia refuses Washington's list."** No Malaysian body has said anything about this list. The policy
+   statements say Malaysia does not "recognise" unilateral sanctions (2023, 2024); MITI says "neutral" and tells firms
+   to mind foreign controls (V31). "Refuses" overclaims.
+4. **"Banks must report every match."** 27.8.3 binds only when an institution finds a positive name match.
+   Screening against foreign lists is optional guidance (27.3.11, "G"). Without the second half the reader infers a
+   duty to check that the PD does not impose (see B1).
+5. **Silence is not inaction.** STRs are secret by law (s. 14A, V22). Any line implying Malaysia did nothing
+   overclaims. "No public statement found as at 18 Nov 2026" is the ceiling.
+6. **Underclaim risk on Greenmeadows.** "Treasury alleged nothing against the company" understates [S1]. The
+   collective sentence covers all designated parties (V9).
+7. **Chui beside Greenmeadows.** Two Malaysian names on one day under two programs invites the reader to link them.
+   Keep the brief's separation explicit on any card that mentions both.
+8. **"Spans governments."** Only the 2022 statement predates the current government, and it named the UN General
+   Assembly, not the Security Council (CONTRADICTION 8). MITI 2025 is not a UN-only statement.
+
+### Blocking issues before Stage 1
+
+- **B1. Scope the BNM reframe.** Rewrite the reframe and any Legal card so they carry the limits of 27.8.3. Drop
+  "refuses" and "every match". Defensible wording: "Ministers say Malaysia recognises only UN Security Council
+  sanctions. Bank Negara's rules still require a suspicious transaction report when a bank finds a name match on
+  another country's sanctions list (para 27.8.3); checking those lists is optional (27.3.11)." The rule appears only
+  in the terrorism-financing, proliferation and UN-sanctions sections (27.8.3, 28.7.3, 29.7.3). Add to GAP 2: does
+  BNM read 27.8.3 as covering a listing outside those subjects, such as an OFAC transnational-crime designation? Until
+  BNM answers, no card may say the rule "covers" or "applies to" the Greenmeadows listing as settled fact.
+- **B2. Attribute every allegation in the drafts.** Three drafts state US allegations as fact:
+  - "Developable core": "now on a US list as part of a scam network's corporate structure" and "The Malaysian end of
+    the scam economy includes a company registry entry and a Malaysian national abroad".
+  - View draft: "sits on a US scam-network list".
+  - WHAT WEAKENS 2: "shell".
+
+  Rewrite with attribution, e.g. "a company the US Treasury designated as owned or controlled by, or acting for, a
+  man it calls a Prince Group leader". Never "scam company", "shell" or "front". Chui: "whom OFAC accuses of leading"
+  and "charged in a US criminal complaint; presumed innocent".
+- **B3. Describe Greenmeadows only through OFAC's record until SSM is checked.** "Holding company" and "set up
+  December 2018" must be attributed to OFAC. Delete "may be a shell with nothing here". A company of the same name is
+  the listed developer of a live messaging app on Apple's Malaysian, US and Cambodian stores (V46), so "nothing here"
+  may be false. The App Store listing stays off cards, and nothing may imply that the app is connected to scams,
+  unless SSM (GAP 1) and the app's publisher records tie it to reg. 201801044010. Even then it would need a right of
+  reply.
+- **B4. Correct the STR-secrecy citation** to AMLA s. 14A (p. 34) in ISSUE ("Malaysian response"), WHAT WEAKENS 3
+  and any card. s. 35 is tipping-off about an investigation.
+- **B5. Correct the Act 613 title** in [S8] and RELEVANT LAW to the post-A1761 title (V19). The SOURCES list feeds
+  `src/data/sources/2022.json`, which readers see.
+- **B6. Fix the media claim in the headline, hook and KEY STATISTICS row 13:** seven items (add Kwong Wah, 6 Nov
+  2026), 7 of 7 named Chui, 0 of 7 named Greenmeadows, all AFP-based. Keep "we found". Apply misleading-framing risk 1.
+- **B7. Singapore card must carry its own origin.** Include "since 2024", the STR-intelligence start (STRO), and the
+  fact that the assets were in Singapore, plus "seized and/or prohibited", on the same card. Otherwise drop the S$500m
+  figure.
+- **B8. Keep S6-only specifics off cards** (≈800 victims, "leader of the NFT Scheme", Strike Force totals, 15
+  material witnesses, "Chinese TCOs") until someone re-opens [S6] and records the exact quote. Use [S7] figures (74
+  wallets, about $516,695), which are confirmed. "Connections to Malaysia and China" and "early 2025" may stay, cited
+  to [S6] with AFP corroboration.
+- **B9. Rewrite the allegation-discipline sentence** on the Treasury's general statements per V9. Treasury makes
+  collective claims about all newly designated parties, Greenmeadows included, and no claim specific to it.
+
+### Non-blocking
+
+- **N1.** GAP 11 closed: the RTM page carries the date "8/05/2022" (V34).
+- **N2.** Timeline row "16 Nov 2026": re-date the first public naming to 6 Nov (Export Compliance Daily), or reword
+  the row (V44).
+- **N3.** MACMA: add s. 18 special direction (V29). Whether the US is a prescribed foreign State was not checked
+  here, so do not state it either way.
+- **N4.** WHAT WEAKENS 6 and the Penal Code note: add AMLA s. 82(1)(c) extraterritorial reach for AMLA offences by
+  citizens (V30). The "narrow reach" point is weaker than stated.
+- **N5.** BNM freeze duties attach to the Domestic List and to the UN Security Council lists under paras 27, 28 and
+  29, not only 27.6. Write "Domestic List and UN Security Council lists". The PD predates AMLA A1761 (1 Mar 2026).
+- **N6.** Timeline "Aug 2026" row merges the FBI deployment (Aug 2026, [S7] para 14) with the Malagasy custody count,
+  which [S7] para 16 does not date. AFP/Kosmo puts the raids in August and September 2026.
+- **N7.** The affidavit calls Chui "WA" throughout ("issue an arrest warrant for WA"), and The Record follows ("Wa").
+  OFAC lists the surname as CHUI. Cards use "Chui"; gloss any affidavit quote.
+- **N8.** WHAT WEAKENS 9 cites FORA issues 2004 and 2018 as evidence, which is circular. Cite NSRC, PDRM or BNM
+  primaries if the point is used.
+- **N9.** Source quality: [S10] (2006 reprint, UNODC copy) and [S11] (2018 text on a third-party mirror) carry
+  primary text but are not current official copies. Keep GAP 6, and keep both off cards as the brief says.
+  Secondary reports quote a 5 Nov 2026 State Department spokesperson statement, which was not opened (403). Leave it
+  off cards.
+- **N10.** Useful balance not in the brief:
+  - FMT 2024 shows the Home Ministry said it would verify US concerns about "certain individuals and companies in
+    Malaysia" (V33). That is a precedent for checking without recognising.
+  - Singapore Customs warns that foreign unilateral sanctions "may have extraterritorial implications" (V37).
+  - BNM's PD lists, among risk indicators, customers whose "beneficial owners or senior management appear in
+    unilateral sanctions lists or adverse news" ([S9], proliferation-risk factors).
+- **N11.** The OFAC 5 Nov page adds 47 entities in total (41 TCO plus 6 Cuba-program). Always say "41 entities in the
+  Prince Group action" (V5).
+- **N12.** Angle note for the editor:
+  - The weakest leg is the media gap (an AFP gap, and smaller than first framed).
+  - The strongest defensible leg is the official silence set against BNM 27.8.3, which needs BNM's answer on scope
+    (B1).
+  - The App Store lead (V46) could reshape the issue around a designated KL company with an apparent consumer
+    product, but only after SSM confirmation and a right of reply.
+
+## FIXES APPLIED (2026-11-18)
+
+Applied after the independent verification above. Body edits are in place; this log records them.
+
+- **B1 (BNM scope).** Stage 1 reframe and Legal card rewritten: no "refuses", no "every match". The Legal card now
+  says screening against other countries' lists is optional (27.3.11, "G") and that BNM has not said whether
+  27.8.3 reaches a US transnational-crime listing. Added to GAP 2: ask BNM whether 27.8.3 (and 28.7.3, 29.7.3)
+  covers listings outside terrorism financing, proliferation and UN regimes.
+- **B2 (attribution).** Developable core rewritten with attribution; WHAT WEAKENS 2 no longer says "shell". Stage 1
+  view and analogy rewritten ("the KL company the US tied to Prince Group"; no "scam-network list"). Chui appears
+  only as "whom OFAC accuses of leading", designated separately.
+- **B3 (OFAC record only).** "Holding company" and "December 2018" attributed to OFAC's record on fact 1. "May be a
+  shell with nothing here" deleted. The App Store lead (V46) stays off cards until SSM ties it to reg. 201801044010
+  and a right of reply is sought; added to GAP 1.
+- **B4.** STR secrecy cited to AMLA s. 14A (p. 34) in ISSUE, WHAT WEAKENS 3 and Stage 1.
+- **B5.** [S8] title corrected to the post-A1761 title; s. 14A page added.
+- **B6.** Title line, KEY STATISTICS row 13 and the Stage 1 hook now say the reports found were AFP-based and count
+  seven (Kwong Wah added). Hook reworded to "the Malaysian wire reports we found"; the media gap is no longer the
+  issue's spine.
+- **B7.** Singapore card carries "since 2024", its own intelligence start, "assets in Singapore" and "seized or
+  barred the sale of" on the same card.
+- **B8.** No [S6]-only specifics on cards (no 800 victims, no "leader of the NFT Scheme", no Strike Force totals).
+- **B9.** Allegation-discipline sentence corrected per V9: Treasury's collective claims cover all designated
+  parties; none is specific to Greenmeadows.
+- **Non-blocking carried:** N5 wording ("Domestic List and UN Security Council lists") used on the Legal card; N8
+  (circular citation of FORA issues) noted, WHAT WEAKENS 9 not used on cards; N11 ("41 entities in the Prince Group
+  action") used throughout.
