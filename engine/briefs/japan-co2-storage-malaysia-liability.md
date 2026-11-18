@@ -1,4 +1,4 @@
-# BRIEF: Malaysia's 2025 carbon storage law hands closed offshore sites to the Government. Japan-backed projects plan to store about 10 Mtpa off Malaysia; the deal that would allocate long-term duties is not signed.
+# BRIEF: Under Malaysia's 2025 carbon storage law, monitoring and repair duties for a closed offshore site pass to the Government after a prescribed period, paid from a fund it partly finances. Japan's 2024 list plans about 10 Mtpa of storage off Malaysia; no Japan–Malaysia instrument is signed or public.
 
 **Slug:** japan-co2-storage-malaysia-liability
 **Proposed issue ID:** 2023
@@ -19,9 +19,11 @@ approval before Stage 1.
    from injection and geological storage sites" [S3a p. 5.20]. Captured CO2 is subtracted at source
    ("Emissions = Production − Capture", Equation 2.7) and "any subsequent emissions from CO2 transport, CO2
    injection and the storage reservoir itself should be counted in national total emissions" [S3b pp. 2.36–2.37].
-   The 2019 Refinement made "No Refinement" to Chapter 5 [S3c]. So the capturing country books the cut; the storing
-   country books any leak from the storage site.
-2. **Federal law hands closed sites to the Government.** Under Act 870, s. 32(1): "Where a storage site has been
+   The 2019 Refinement made "No Refinement" to Chapter 5 [S3c]. So the capturing country reports the CO2 as captured and exported,
+   which lowers its reported emissions; the storing country reports any emissions from injection and the storage
+   site (corrected wording per verification item 22; Japan's own inventory treatment unconfirmed, GAP 7). This is
+   inventory reporting; it creates no credit.
+2. **Federal law passes a closed site's monitoring and repair duties to the Government (s. 32(1)-(3)).** Under Act 870, s. 32(1): "Where a storage site has been
    closed pursuant to section 31, the obligations relating to monitoring, corrective measures and remediation
    measures shall be transferred to the Government and the Government shall issue a certificate to the offshore
    operator to document the transfer of obligations" [S1a p. 24]. Post-transfer costs are paid from a
@@ -43,7 +45,7 @@ approval before Stage 1.
   [S10b]. The Offshore Permit and Licensing Regulations 2025 (P.U.(A) 346/2025, in force 1 Oct 2025) reportedly set
   transfer "after at least 10 years, subject to proof of permanent CO₂ containment" (LH-AG, 16 Oct 2025) [S10a].
   **The regulation text was not opened (GAP 1).** The Economy Minister was reported as saying liability passes
-  "typically after a 20 to 30 year contract" (Eco-Business paraphrase, 10 Mar 2025) [S20c].
+  "the contract for the site is for a certain period – 20 to 30 years – after which [responsibility for the site] will be returned to the government" (Eco-Business, 10 Mar 2025) [S20c]; this is a contract-term statement, not a post-closure period (corrected per verification item 15). The same article reports: "in Malaysia, the government will not bear any costs of CCUS projects, said Rafizi" (reporter's paraphrase), against s. 42(1), which spends the Fund on "costs to be borne by the Government for long-term stewardship of offshore storage sites after the transfer of obligations" [S1a].
 - **"Can take over" understates the Act and "obligations" is not "liability".** The transfer is mandatory once the
   prescribed period and conditions are met ("shall be transferred"). And s. 32(3): the transfer "shall not include
   the transfer of any criminal, contractual or civil law liability connected to the storage site attributable to the
@@ -87,7 +89,11 @@ allocated.
 **Developable core (anger at process, not at Japan, Petronas, Sarawak or NGOs).** Malaysia has enacted the transfer
 (s. 32) and the fund (s. 41) but not yet the price (the levy order), the import rules or the Japan agreement. The
 inventory rule already decides who reports a leak. The documents that decide who pays to watch a closed site, and
-for how long, are being written now, before any ship sails, and none is public.
+for how long, are partly written: the gazetted Regulations reportedly set a minimum of 10 years after closure
+(LH-AG and Skrine, Regulation 42(c); text unopened). What is not yet made as at 18 Nov 2026: no injection-levy
+order, no import regulations and no public Japan–Malaysia instrument (corrected per verification B3). The Act names
+the Government as bearer of post-transfer stewardship costs (s. 42(1)) and bars raising the levy when the Fund is
+drawn down (s. 30(2)(b)).
 
 ## PERIOD
 
@@ -218,7 +224,7 @@ for how long, are being written now, before any ship sails, and none is public.
   read with the Land (Carbon Storage) Rules, 2022 [Swk. L.N. 349/2022] (p. 10); First Schedule A: "all activities
   related to carbon capture and storage" (p. 36). Commencement "on such dates as the Minister may ... appoint"
   (commencement status not checked, GAP 2). The Land (Carbon Storage) Rules 2022 were **not opened** (GAP 2).
-- **Sabah:** "has yet to pass state legislation to govern CCUS activities" (Wong & Partners, Apr 2025) [S10e].
+- **Sabah:** Wong & Partners (Apr 2025) said Sabah "has yet to pass state legislation to govern CCUS activities" [S10e]; superseded: Sabah Land Ordinance (Cap. 68) s. 23B now requires the Minister's approval and a Collector's licence for "carbon storage", and Sabah passed a Climate Change and Carbon Governance Enactment on 8 Jul 2025 (verification item 46). Off cards.
 - **London Protocol 1996, Article 6 as amended by LP.3(4)** [S6a]: export allowed under "an agreement or arrangement"
   covering "confirmation and allocation of permitting responsibilities" and, for non-Parties, "provisions at a minimum
   equivalent to those contained in this Protocol"; the Party must notify the IMO. Not in force (17 of 56 acceptances;
@@ -252,7 +258,7 @@ domestic CO2 and must never be presented as Japanese CO2.
 | 13 | Korea's dates | Accession 22 Jan 2009; acceptance and provisional application 12 Apr 2022 | | [S5 pp. 400, 403–404] |
 | 14 | JCM partner countries | 32 (as of Apr 2026); Malaysia not among them | | [S23c] |
 | 15 | Import offences | fine up to RM1 million or up to 5 years' jail, or both | ss. 19(2), 20(4) | [S1a p. 18] |
-| 16 | Post-closure period | Act: "a prescribed period"; Regulations (reported): "at least 10 years"; Minister (reported): "typically after a 20 to 30 year contract"; NGO demand: "minimum of 200 years" | See CONTRADICTION 1 | [S1a], [S10a], [S20c], [S18b] |
+| 16 | Post-closure period | Act: "a prescribed period"; Regulations (reported): "at least 10 years"; Minister (reported): site "contract ... 20 to 30 years" (a contract term, not a post-closure period); NGO demand: "minimum of 200 years" | See CONTRADICTION 1 | [S1a], [S10a], [S20c], [S18b] |
 | 17 | Fees (reported) | Offshore assessment permit RM80,000; storage licence RM120,000; closure initiation RM120,000 | P.U.(A) 346/2025, as summarised | [S10d] |
 | 18 | Injection levy rate | not set; no gazetted order found | to 13 Nov 2026 (latest P.U.(A) in AGC list) | [S2]; Rafizi said in Mar 2025 the rate was not yet finalised (reported) [S19a] |
 | 19 | Malaysia storage potential | "over 150Gt (13.3Gt from depleted oil and gas reservoirs and 140Gt from saline aquifers)" | Ministry of Economy claim | [S9d]. See CONTRADICTION 9 |
@@ -263,7 +269,7 @@ domestic CO2 and must never be presented as Japanese CO2.
 | Dimension | Level | Justification |
 |---|---|---|
 | Sentiment | MEDIUM | Natural frame is "dumping ground" outrage. Keep to anger at process (rules unwritten before shipments), not at Japan, Japanese people, Petronas staff or Sarawak. |
-| Political | **HIGH** | Jurisdiction over offshore Sarawak is before the Federal Court (Petronas v Sarawak, 25–29 Jan 2027), with Putrajaya backing Petronas [S22a]. Any card implying federal law governs Sarawak storage, or the reverse, enters a live constitutional dispute. Not partisan otherwise: the Dewan Negara passed the Bill unanimously; critics include MPs (party not verified) and NGOs. Not CRITICAL. |
+| Political | **HIGH** | Jurisdiction over offshore Sarawak is before the Federal Court (petitions fixed for hearing 25–29 Jan 2027; Sarawak challenges the PDA 1974, Continental Shelf Act 1966 and Petroleum Mining Act 1966 as applied to Sarawak; Petronas challenges Sarawak's gas and oil-mining ordinances) [S22a]. Neither petition, as reported, concerns carbon storage (corrected per verification B5). Any card implying federal law governs Sarawak storage, or the reverse, enters a live constitutional dispute. Not partisan otherwise: the Dewan Negara passed the Bill unanimously; critics include MPs (party not verified) and NGOs. Not CRITICAL. |
 | Ethnic | LOW | No community framing. Do not frame Japanese or Korean people; name governments and companies by role. |
 | Religious | LOW | None. |
 | Royalty | LOW | Royal Assent only (22 Jul 2025). Recorded for the Stage 5 trigger check. |
@@ -272,7 +278,7 @@ domestic CO2 and must never be presented as Japanese CO2.
 | Temporal | **HIGH** | Bilateral agreements were "towards finalisation" on 15 Sep 2026; import regulations in draft; levy order pending; Southern FID "near future"; Federal Court hearing Jan 2027; IPCC 2027 Methodology Report covers cross-border transport. Re-check at Phase 8. |
 | Confidence | MEDIUM | HIGH on Act 870 text, AGC lists, IMO status, IPCC text, METI list. LOW-MEDIUM on the post-closure period, Sarawak rules and the ministry statement. |
 | Sources | MEDIUM | 9 primary entries (federal, state, IGO, Japanese government); industry, law firms, Malaysian and foreign NGOs, Malaysian and foreign media. Gaps: no Sabah voice, no academic, no Japanese government statement on liability. |
-| Geographic | **HIGH** | The thesis turns on location: Peninsular offshore (Act 870) vs offshore Sarawak (state regime, contested) vs Sabah (no law). Cards must name which sea. |
+| Geographic | **HIGH** | The thesis turns on location: Peninsular offshore (Act 870) vs offshore Sarawak (state ordinance; federal reach over the EEZ off Sarawak unsettled in every source opened) vs Sabah (Land Ordinance s. 23B; 2025 Enactment). Cards must name which sea. |
 | Economic | MEDIUM | Payment per tonne to Malaysia "undetermined" (AP) [S16]; levy unset; Fund size unknown; Ministry's GDP claims (USD200–250 billion GVA, sourced to Petronas) [S9d] are promotional. Avoid any cost-to-taxpayer figure. |
 | Gender | LOW | None. |
 
@@ -297,7 +303,7 @@ named speakers. The Federal Court matter is sub judice: describe the hearing, no
 
 **Hook (draft, not final copy):**
 - big (138 chars): *"Three Japan-backed projects plan to store about 10 million tonnes of CO2 a year off Malaysia. The 2025 law
-  hands closed sites to the Government."*
+  passes a closed site's monitoring duties to the Government."* (wording corrected per B2)
 - sub (157 chars): *"Act 870, s. 32: monitoring and repair duties pass to the Government after a prescribed period. The levy
   that funds it has no rate; the Japan deal is unsigned."*
 - Emotion: anxiety of precedent (rules being set before the first shipment), not sadness.
@@ -305,7 +311,7 @@ named speakers. The Federal Court matter is sub judice: describe the hearing, no
   project; if the hook names s. 32, the sub must say the Sarawak project falls under Sarawak law, or the hook must
   use "about 8 million tonnes" (the Peninsular pair).
 
-**Reframe (draft; paradox form, not "X is not Y"):** *"Japan books the tonne when it is captured. Malaysia books any
+**Reframe (draft, superseded: "books" wording withdrawn per verification B6; see Stage 1):** *"Japan books the tonne when it is captured. Malaysia books any
 tonne that comes back up."* (Inventory sense only; see [S3a].)
 
 **View (draft; WhatsApp test):** *"Malaysia has written the handover and left the price and the partner's duties
@@ -326,7 +332,7 @@ Sarawak, Federal Court, Ministry of Economy.
 1. **Post-closure period before transfer.** Act 870: "a prescribed period" (no number) [S1a p. 24]; Pinsent Masons
    (on the Bill, Mar 2025): "does not specify the duration" [S10b]; LH-AG (on the Regulations, Oct 2025): "after at
    least 10 years, subject to proof of permanent CO₂ containment" [S10a]; Rafizi (Eco-Business paraphrase, Mar 2025):
-   liability passes "typically after a 20 to 30 year contract" [S20c]; GDIMY demand: "minimum of 200 years" [S18b].
+   the site "contract ... is for a certain period – 20 to 30 years" (contract term; corrected per verification item 15) [S20c]; GDIMY demand: "minimum of 200 years" [S18b].
    Authoritative: the Regulations, unopened. Until opened, cards may say only "after a period set by regulation".
 2. **Commencement of Act 870.** AmCham note (Azmi & Associates): "On 1 August 2025, the ... CCUS Act ... came into
    force" [S10d]; AGC: publication 1 Aug 2025, commencement 1 Oct 2025 by P.U.(B) 355/2025 [S2]; Skrine and Petronas:
@@ -563,3 +569,322 @@ opened.
 14. **Sleipner over-reporting (28%)**: rests on an Equinor footnote as reported by DeSmog; no Norwegian authority
     document opened. Keep off cards.
 15. **MyCCUS "0.001%" leak claim** and the ERIA "130 billion tonnes" figure: original sources not identified.
+
+## INDEPENDENT VERIFICATION (2026-11-18)
+
+**Method.** Independent check on 18 Nov 2026, run to find faults rather than confirm. Every primary below was
+downloaded and read directly: Act 870 (AGC PDF, 33 pp.); AGC Principal Act, P.U.(A) and P.U.(B) list exports; IPCC
+2006 Guidelines Vol 2 Ch 5 and Ch 2; 2019 Refinement Vol 2 contents; IPCC SRCCS SPM; IMO *Status of Treaties* Vol II
+(30 Oct 2026); IMO resolution LP.3(4); METI release of 28 Jun 2024; Sarawak Cap. 85; Sabah Land Ordinance Cap. 68
+(Sabah AG reference copy, Aug 2026); MyCCUS activities page, home page and public media listing; Ministry of Economy
+AZEC press statement (17 Oct 2025); Petronas releases (M3, OAP, Southern JVA) and the Petronas sustainability data
+table. Secondary sources were re-read for exact wording: Eco-Business, The Star (two), FMT (two), NST, DayakDaily,
+Malay Mail/Reuters, AP via The Standard, LH-AG, Skrine (AmCham-hosted PDF), Clifford Chance, GEC JCM page,
+Greenpeace/GDIMY memorandum, RimbaWatch letter, FoE Japan. **Not opened despite attempts:** P.U.(A) 346/2025 text
+(the AGC viewer returns "Invalid request" without a session-issued link; the MyCCUS media library holds only the
+Bill and infographics, no regulation); FMT 22 May 2025 (404; the alternate host redirects to the homepage); MOFA
+Japan–Malaysia Joint Statement of 10 Jun 2026 (403); NREB item on Cap. 85 commencement (503). Verdicts: CONFIRMED =
+matches the opened source; CORRECTED = wrong or imprecise, right wording given; UNVERIFIED = not traceable to an
+opened source.
+
+### Claim-by-claim
+
+**Act 870 (S1a, read in full)**
+1. s. 2 "This Act shall apply to Peninsular Malaysia and the Federal Territory of Labuan." (p. 8). CONFIRMED.
+2. s. 1(3): Part VII (onshore) commences in a State after consultation with the State Government. CONFIRMED.
+3. s. 4(1) "offshore area" and s. 4(2) EEZ and continental shelf (Acts 311 and 83), pp. 10–11. CONFIRMED.
+4. ss. 19(1)–(2), 20(1), (2), (4), 23 and 26(1) ("captured within or outside of Malaysia"), pp. 18–21. CONFIRMED.
+5. s. 30(1), (2)(a), (2)(b) (p. 23). CONFIRMED verbatim. s. 30(3)(a): CORRECTED. The text is "the Agency may review
+   the rates of injection levy for every five years": discretionary, not a mandatory five-yearly review; s. 30(3)(b)
+   lets the operator request a review.
+6. s. 31(1)–(2), pp. 23–24. CONFIRMED.
+7. s. 32(1), (2) and (3), p. 24. CONFIRMED verbatim.
+8. ss. 40, 41(2), 42(1)–(2), 44, 49, 51, 52(2)(i)–(j). CONFIRMED. Omitted by the brief: s. 42(1) spends the Fund on
+   "costs to be borne by the Government for long-term stewardship of offshore storage sites after the transfer of
+   obligations"; s. 41(2)(b) calls the levy "financial support to the Government". The Act names the Government as the
+   bearer of post-transfer costs and does not cap that exposure at the Fund balance. s. 52(2)(k) also provides for
+   transfer conditions to a State Government (onshore).
+9. Royal Assent 22 Jul 2025; Gazette 1 Aug 2025 (Act front matter). CONFIRMED.
+10. Commencement 1 Oct 2025 by P.U.(B) 355/2025 (AGC principal list; MyCCUS entry of 9 Oct 2025). CONFIRMED. Whether
+    the notice commenced every Part (Part VII is subject to s. 1(3)) is UNVERIFIED; notice text not opened. No effect
+    on offshore cards.
+11. AGC lists at 18 Nov 2026: P.U.(A) 346/2025 is the only Act 870 regulation; latest P.U.(A) is 393/2026 of
+    13/11/2026; "10/01/2025" commencement artefact present; no title containing levy, injection, "suntikan" or carbon
+    other than 346/2025. CONFIRMED. Trivial: the P.U.(B) list also tags P.U.(B) 1/2025 (appointment of a Deputy Public
+    Prosecutor, 2 Jan 2025) with Act 870, an apparent indexing error.
+
+**Regulations (P.U.(A) 346/2025) and the post-closure period**
+12. Gazetted text of P.U.(A) 346/2025: UNVERIFIED. GAP 1 stays open.
+13. "after at least 10 years, subject to proof of permanent CO₂ containment" (LH-AG, 16 Oct 2025, Part VII item v).
+    CONFIRMED as LH-AG's wording. Now independently corroborated by Skrine ("Carbon Capture Utilization and Storage
+    (Offshore Permit and Licensing) Regulations 2025 now in force", 10 Oct 2025,
+    https://amcham.com.my/wp-content/uploads/32.-Carbon-Capture-Utilization-and-Storage-Offshore-Permit-and-Licensing-Regulations-2025-now-in-force.pdf):
+    Regulation 42 conditions include "(c) a minimum of 10 years has lapsed since the closure certificate was issued
+    (this period may be extended by the Agency if it is not satisfied that the condition in paragraph (b) above have
+    been complied with)", plus proof that the CO2 "will be completely and permanently contained", injection-levy
+    payments made, site sealed and facilities decommissioned, and seabed damage made good. Skrine also reports that
+    where a site closes after licence revocation, transfer is "deemed" to occur on containment, sealing and
+    decommissioning, with no minimum period listed. Two independent law-firm summaries; still secondary.
+14. Financial security for "closure and post-closure costs" (LH-AG) and "until responsibility is assumed by the
+    Government" (Skrine); closure-request fee RM120,000 (Skrine). CONFIRMED (secondary).
+15. Rafizi: liability passes "typically after a 20 to 30 year contract" [S20c]. CORRECTED. These words are not in the
+    Eco-Business article. The quote is: "The difference for CCUS projects is that the contract for the site is for a
+    certain period – 20 to 30 years – after which [responsibility for the site] will be returned to the government."
+    It describes the site contract term, not a post-closure waiting period.
+16. Rafizi: levy funds "can be kept as insurance once liability for the projects is transferred to the government";
+    levy rate "yet to be announced". CONFIRMED (Eco-Business). Omitted, same article: "But in Malaysia, the government
+    will not bear any costs of CCUS projects, said Rafizi" (reporter's paraphrase).
+17. MPs Wan Ahmad Fayhsal (Machang) and Dr Siti Mastura Muhammad (Kepala Batas) criticised the Bill. CONFIRMED.
+    "Party affiliation not stated": CORRECTED in part; the article groups the critics as "opposition lawmakers" but
+    names no party.
+18. Levy rate not finalised (DayakDaily, 4 Mar 2025: "While the government has yet to finalise the levy rate, Rafizi
+    assured that it will be competitive"). CONFIRMED.
+
+**IPCC**
+19. Vol 2 Ch 5 cross-border paragraph, p. 5.20. CONFIRMED verbatim. Precision: s. 5.10 is "Reporting and
+    Documentation"; "Reporting of cross-border CCS operations" is a subheading inside it. The following sentence also
+    matters: where CO2 injected in Country A leaks in Country B, "Country A is responsible for reporting the emissions
+    from the geological storage site".
+20. Equation 2.7 (p. 2.36) and "any subsequent emissions ... should be counted in national total emissions" (p. 2.37).
+    CONFIRMED verbatim. Equation 2.7 is the Tier 3 method for capture at stationary combustion sources.
+21. 2019 Refinement, Vol 2 Chapter 5 "(No Refinement)". CONFIRMED.
+22. "The capturing country books the cut" / draft reframe "Japan books the tonne when it is captured". CORRECTED as
+    wording. The guidance says Country A "should report the amount of CO2 captured ... and the amount of CO2 exported";
+    the subtraction happens at the emitting source (Eq. 2.7). It is national-inventory reporting guidance: it creates
+    no credit, no ITMO and no JCM unit, and no opened source shows how Japan's own inventory treats exported CO2
+    (GAP 7). Safe wording: "Under IPCC inventory guidance, the country that captures the CO2 reports it as captured and
+    exported, which lowers its reported emissions; the storing country reports any emissions from injection and from
+    the storage site."
+23. SRCCS SPM para 25 (p. 14), retention; para 29 (p. 15), "Some States take on long-term responsibility ...".
+    CONFIRMED. Para 29 also says: "Long-term liability issues associated with the leakage of CO2 to the atmosphere and
+    local environmental impacts are generally unresolved."
+
+**Japan's projects (S7, opened)**
+24. Nine projects; "approximately 20 Mtpa"; five in Japan, four in Asia-Pacific; JOGMEC selection 28 Jun 2024; final
+    investment decisions "by FY2026". CONFIRMED.
+25. 2030 goal "6 to 12 metric tons per annum (Mtpa)" (sic). CONFIRMED.
+26. Northern Offshore of Peninsular Malaysia ~3 Mtpa (Tokyo Bay emitters; remark "evaluated as promising but further
+    initial studies were required"); Offshore Sarawak ~1.9–2.9 Mtpa (Setouchi emitters); Southern Offshore of
+    Peninsular Malaysia ~5 Mtpa, storage area "Offshore of the east coast of Peninsular Malaysia". CONFIRMED.
+27. "Petronas CCS Ventures: Malaysian partner in all three". CORRECTED in detail: METI lists Petronas CCS Solutions
+    Sdn Bhd (Northern), PCCSV (Sarawak) and no Petronas company in the Southern company list ("closely working with
+    Petronas and TotalEnergies"); PCCSV later signed the Southern JVA.
+28. Whether all three projects remain in JOGMEC's programme after the FY2025 stage gate: UNVERIFIED (GAP 11). FY2026
+    ends 31 Mar 2027.
+
+**London Protocol (S5, S6a, opened)**
+29. Japan: accession 2 Oct 2007 (in force 1 Nov 2007); IMO received its provisional-application declaration on
+    16 Oct 2025; acceptance deposited 16 Dec 2025 (pp. 400, 403–404). CONFIRMED.
+30. 56 Contracting States; 17 acceptances; 14 declarations; Malaysia party to neither LC 1972 (87 States) nor the
+    Protocol; Korea accession 22 Jan 2009, acceptance and declaration 12 Apr 2022. CONFIRMED.
+31. LP.3(4): Article 6(2) text and preamble "accountability for compliance with the provisions of the Protocol will
+    rest with the Contracting Party in the case of export to non-Contracting Parties". CONFIRMED verbatim. Precision:
+    Art. 6(2) requires "confirmation and allocation of permitting responsibilities" and, for non-Parties, provisions
+    "at a minimum equivalent" including permits and Annex 2 permit conditions. It does not require the instrument to
+    allocate long-term liability or post-closure costs. The preamble also notes that migration after injection "is not
+    export for dumping".
+
+**Bilateral track and project status**
+32. MyCCUS entries: 15 Oct 2025 (discussions "on a bilateral arrangement for the transboundary movement of CO₂ from
+    Japan to Malaysia"); 11 Feb 2026 (first working group); 22 Jun 2026 (import regulations in draft); 15 Sep 2026
+    ("towards the finalisation of bilateral agreements on cross-border CCS"). CONFIRMED. No later entry (page last
+    modified 22 Sep 2026).
+33. 2 Jul 2026 EEZ session "(title only)". CORRECTED: the entry has body text, gathering feedback on "the draft
+    guidelines and Standard Operating Procedures for the OAP currently being developed". It does not say which EEZ
+    waters.
+34. Oct 2025 MoC (GAP 5): date CONFIRMED from a primary. Ministry of Economy press statement, 17 Oct 2025, lists
+    "Memorandum of Co-Operation between the Government of Malaysia and the Ministry of Economy, Trade and Industry of
+    Japan in the Field of Carbon Capture and Storage" among seven instruments signed at the 3rd AZEC Ministerial
+    Meeting, Kuala Lumpur.
+    https://ekonomi.gov.my/sites/default/files/2025-10/Media_Statement_The_3rd_Asia_Zero_Emission_Community_171025.pdf
+    Signatories: still UNVERIFIED.
+35. Petronas, 1 Apr 2026 (Bernama via The Star; Emry Hisham Yusoff): "no agreement has been signed to date, although
+    negotiations are ongoing"; bilateral agreements "still required"; Kasawari 3.3 Mtpa, first injection as early as
+    2027 (previously 2029 or 2030). CONFIRMED.
+36. No Japan–Malaysia CCS agreement signed to 18 Nov 2026. CONFIRMED as far as searched (MyCCUS, Petronas, news). The
+    MOFA Joint Statement of 10 Jun 2026, reported to mention CCS cooperation, was not opened.
+37. Southern JVA, 23 Oct 2026: "expected injection capacity of up to 5 million tonnes per annum", "first injection
+    targeted as early as 2031", FID "in the near future". CONFIRMED. Omitted: the hub "is being developed to receive CO2
+    domestically and regionally, including potential cross-border CO2 shipments". The 5 Mtpa is hub capacity, not
+    Japanese tonnes.
+38. KPA "Jul 2025". CONFIRMED (Petronas OAP release: "Key Principles Agreement (KPA) dated July 2025"). The Ministry of
+    Economy AZEC statement lists the same KPA among instruments signed on 17 Oct 2025: minor contradiction to record.
+39. Duyong OAP granted 10 Oct 2025 (release dated 10 Nov 2025), "located offshore Peninsular Malaysia". CONFIRMED.
+40. M3 SSA signed 26 Feb 2024 (release 29 Feb 2024); PETROS quote "As the Resource Manager for Carbon Capture,
+    Utilisation and Storage (CCUS) in Sarawak" (Nazrin Banu Shaikh S. Ahmad). CONFIRMED verbatim. The SSA "enables the
+    feasibility studies": feasibility stage.
+41. Reuters via Malay Mail, 28 Sep 2023: MoC signed "on Wednesday"; "as early as 2028". CONFIRMED.
+
+**Sarawak, Sabah and the Federal Court**
+42. Sarawak Cap. 85: passed 20 Nov 2023, assent 12 Dec 2023, gazette 22 Dec 2023; s. 2 "atmosphere"; s. 3(1)(b);
+    s. 3(3) with Swk. L.N. 349/2022. CONFIRMED.
+43. "covers 'all activities related to carbon capture and storage' whether 'onshore or offshore Sarawak'". CORRECTED:
+    stitched quote. First Schedule A reads "Exploration, production and processing of petroleum or gas whether onshore
+    or offshore Sarawak and all activities related to carbon capture and storage." The onshore/offshore words qualify
+    the petroleum activities; s. 3(1)(b) separately covers capture and storage "in any facility on land whether onshore
+    or offshore of Sarawak". Quote each separately.
+44. Cap. 85 commencement: UNVERIFIED. Search-index text from NREB and Sarawak Tribune reports 1 Mar 2024; the NREB page
+    returned 503.
+45. Fadillah (FMT, 9 Mar 2025): CONFIRMED that the report says the law "applies only to Peninsular Malaysia and Labuan"
+    and that he said the laws "just need to be harmonised". CORRECTED on Sabah: the article quotes him on Sarawak's own
+    laws only and does not mention Sabah. The Sabah exclusion follows from s. 2, not from his words.
+46. "Sabah has yet to pass state legislation" [S10e] and Geographic row "Sabah (no law)". CORRECTED (stale or wrong).
+    Sabah Land Ordinance (Cap. 68) s. 23B, Sabah AG reference copy (Aug 2026): no person may use land "for carbon
+    storage without the approval of the Minister and a licence issued to him by the Collector"; s. 2 defines "carbon
+    storage" to include any facility "on or below the surface, for the purpose of permanent storage ... of carbon
+    dioxide". Sabah also passed the Climate Change and Carbon Governance Enactment 2025 on 8 Jul 2025 (Malay Mail), and
+    Skrine (Oct 2025) says Sabah and Sarawak "have each enacted separate State Enactments". Date of s. 23B's insertion
+    and its offshore reach not checked.
+    https://sagc.sabah.gov.my/sites/default/files/law/Land%20Ordinance%20%5BCap.%2068%5D.pdf
+47. Federal Court: hearing 25–29 Jan 2027, fixed 1 Oct 2026; Sarawak's petition seeks to have the PDA 1974,
+    Continental Shelf Act 1966 and Petroleum Mining Act 1966 "as applied to Sarawak" declared unconstitutional
+    (NST/Bernama). Petronas's leave (FMT, 16 Mar 2026) concerns the Distribution of Gas Ordinance and the Oil Mining
+    Ordinance; no carbon-storage law is named in either report. CONFIRMED.
+48. Political risk row: "with Putrajaya backing Petronas". CORRECTED. NST reports that federal counsel "supported the
+    submission by Petronas's counsel" that Petronas's petition be heard first (a procedural point), and the Federal
+    Government is a respondent to Sarawak's petition. State exactly that.
+
+**Petronas emissions and Kasawari**
+49. Operational control: Scope 1+2 54.10 Mt (2022), 55.57 Mt (2025); Cat 1 30.27 / 18.73; Cat 11 292.09 / 300.03;
+    2025 recalculated on API Compendium 2021 and AR6. CONFIRMED.
+50. Kasawari 3.3 Mtpa ≈ 6.1% of 2022 Scope 1+2 and ≈ 0.88% of 2022 Scope 1+2 plus Cat 1 and Cat 11 (376.46 Mt);
+    letter: "reduce 0.9% of Petronas's current emissions". CONFIRMED (arithmetic and quote).
+
+**Civil society, media and other**
+51. GDIMY: liability period "should be for a minimum of 200 years post-closure before it is transferred to the
+    government". CONFIRMED.
+52. FoE Japan and SAM, 21 Mar 2024: "Exporting CO2 from Japan to Malaysia is Carbon Colonialism". CONFIRMED.
+53. The Star, 14 Mar 2025, KAMY: CORRECTED wording. Aroe Ajoeni is quoted: "This is already happening through
+    agreements with countries like Japan and South Korea". It is a quote, not a reporter's summary, and it remains
+    unsupported (CONTRADICTION 11 stands).
+54. AP (17 Feb 2026): "by 2030, the sites will store 20 million tons of carbon annually, roughly 2% of Japan's yearly
+    emissions"; "Malaysia will likely be paid an undetermined amount per ton of emissions stored". CONFIRMED.
+    CONTRADICTION 8 CORRECTED: AP says Petronas "is leading the $1.1 billion construction of what will be world's
+    largest offshore carbon storage facility, slated to begin operations by the end of the decade"; it does not name
+    Kasawari.
+55. MyCCUS home page "probability of leakage less than 0.001%" and "over 150Gt (13.3Gt ... 140Gt ...)". CONFIRMED as
+    the Ministry's claims.
+56. Clifford Chance: operator "liable for any damage caused by CO2 leakage on a strict liability basis (i.e., even if
+    it has not acted negligently), even after closure of the storage site and its transfer to JOGMEC". CONFIRMED
+    (secondary on Japanese law; the Act itself not opened).
+57. JCM: 32 partner countries "as of April 2026"; Malaysia not listed. CONFIRMED.
+58. FMT, 22 May 2025, ministry leak-responsibility line: UNVERIFIED. Still unopened; search-index text repeats the
+    quoted lines, but no result names the ministry. Keep off cards.
+59. Dewan Rakyat passage 6 Mar 2025. CONFIRMED (GDIMY memorandum: "passed on 6 March 2025 in Dewan Rakyat";
+    Eco-Business, 10 Mar 2025: "passed last Thursday").
+
+**Tally:** 59 claims checked. 41 CONFIRMED; 12 CORRECTED (items 5, 15, 17, 22, 27, 33, 43, 45, 46, 48, 53, 54; four of
+these are otherwise confirmed); 6 UNVERIFIED (items 10, 12, 28, 34, 44, 58; two alongside a confirmed part).
+
+### Misleading-framing risks
+
+1. **"Hands closed sites to the Government"** (brief title, ISSUE item 2 heading, draft hook). The Act transfers
+   "obligations relating to monitoring, corrective measures and remediation measures", not the site, and only after a
+   prescribed period and prescribed conditions; fault-based liability stays with the operator.
+2. **"About 10 million tonnes" read as Japanese CO2.** The METI figures are 2024 planned capacities for projects at
+   study or design stage. The Southern hub's 5 Mtpa will take domestic and regional CO2. The Northern project was not
+   yet under contract when selected. Cards must say "planned (METI, 2024)", never "Japanese CO2 Malaysia will hold".
+3. **"None is public" / "for how long ... being written now".** P.U.(A) 346/2025 is gazetted and public, and (per two
+   law firms) already fixes a 10-year minimum and the transfer conditions. What is not made or not public: the levy
+   order, the import regulations and the Japan–Malaysia instrument.
+4. **"The levy has no rate yet" as the arousal peak.** True, but no storage licence or injection exists under Act 870
+   yet (one assessment permit, Duyong). A missing rate before any injection is ordinary sequencing, not a lapse. The
+   stronger, sourced tension: s. 30(2)(b) bars raising the levy for Fund withdrawals, s. 42(1) says stewardship costs
+   are "borne by the Government", and the Minister was reported saying "the government will not bear any costs of
+   CCUS projects".
+5. **IPCC split as "Japan books the reduction, Malaysia books the leak".** Inventory reporting only, not credits;
+   Japan's practice unconfirmed; Malaysia also reports injection emissions and the imported amount.
+6. **London Protocol as a liability lever.** Art. 6(2) requires allocation of *permitting* responsibilities and
+   minimum-equivalent permit provisions, not liability or cost sharing. "Could allocate" is accurate; "must allocate"
+   would be wrong.
+7. **Sarawak.** ISSUE says flatly that s. 32 does "not" apply to the Sarawak project, while RELEVANT LAW and GAP 3 say
+   the s. 2 / s. 4 interaction off Sarawak is unsettled. Card wording: "Act 870 says it applies to Peninsular Malaysia
+   and Labuan; Sarawak regulates carbon storage under its own laws." Do not link the January 2027 Federal Court
+   hearing to CCS: neither petition, as reported, names a carbon-storage law.
+8. **"Putrajaya backing Petronas".** Turns a procedural submission into a side in a live federal–state dispute.
+9. **Japan contrast.** Clifford Chance says Japanese operators stay strictly liable for leak damage after transfer to
+   JOGMEC, while Act 870 s. 32(3) keeps only fault-based liability. Strong, but it rests on a law-firm summary of an
+   unopened Japanese Act; attribute it and open Act No. 38 of 2024 before any card uses it.
+10. **Rafizi's "20 to 30 years"** is a contract term. Presenting it as a post-closure period compares unlike things.
+
+### Blocking issues before Stage 1
+
+B1. **Misquote of a named minister.** Replace "typically after a 20 to 30 year contract" in ISSUE, KEY STATISTICS #16
+    and CONTRADICTION 1 with the actual Eco-Business quote ("the contract for the site is for a certain period – 20 to
+    30 years – after which [responsibility for the site] will be returned to the government") and reclassify it as a
+    contract-term statement, not a post-closure period.
+B2. **Overclaim in the title, ISSUE item 2 and the draft hook:** "hands closed (offshore) sites to the Government".
+    Rewrite to the statute: monitoring, corrective and remediation obligations pass to the Government after a
+    prescribed period and conditions; fault-based liability stays with the operator (s. 32(1)–(3)).
+B3. **The developable core and view overstate what is unwritten.** The gazetted Regulations already set transfer
+    conditions (a 10-year minimum per LH-AG and Skrine; text unopened). Restate the gap as: no levy order, no import
+    regulations and no public Japan–Malaysia instrument as of 18 Nov 2026.
+B4. **Hook figure.** Re-anchor "about 10 million tonnes": date it to METI's June 2024 list of planned capacity, note
+    that the Southern hub takes domestic and regional CO2, and check JOGMEC's FY2025 stage-gate status for all three
+    Malaysian projects. If that cannot be checked, the hook must carry "planned in 2024".
+B5. **Federal–Sarawak precision.** Replace "Putrajaya backing Petronas" with the procedural fact (item 48). Align ISSUE
+    with GAP 3: Act 870 says it applies to Peninsular Malaysia and Labuan, and its EEZ and continental-shelf reach off
+    Sarawak is unsettled in every source opened. State that neither Federal Court petition, as reported, concerns carbon
+    storage.
+B6. **IPCC wording.** Replace "books the cut", "books the reduction" and "books the tonne" with reporting language tied
+    to the 2006 Guidelines (item 22), and mark Japan's own inventory treatment as unconfirmed (GAP 7). The draft
+    reframe must not imply a credit or an NDC transfer.
+
+### Non-blocking
+
+- GAP 1 stays open. Skrine's Regulation 42 summary now corroborates LH-AG; cards keep "a period set by regulation"
+  until the P.U.(A) text is opened (ask MyCCUS or obtain the Federal Gazette copy). Note the revocation route, which
+  Skrine summarises without a minimum period.
+- Add a CONTRADICTION: Rafizi, "the government will not bear any costs of CCUS projects" (Eco-Business paraphrase,
+  10 Mar 2025), against s. 42(1) "costs to be borne by the Government for long-term stewardship". Attribute as reported.
+- Correct "Sabah (no law)" (item 46) and add Sabah Cap. 68 as a source if Sabah appears anywhere in copy.
+- s. 30(3)(a) review is discretionary ("may").
+- Re-quote the Sarawak First Schedule exactly (item 43). Cap. 85 commencement on 1 Mar 2024 is reported only.
+- Fadillah did not mention Sabah in S19d (item 45).
+- Fix the KAMY quote (item 53) and the AP facility wording (item 54).
+- The MyCCUS 2 Jul 2026 entry has body text (item 33).
+- GAP 5: the date is closed by the Ministry of Economy AZEC statement; add it as a primary [P]. Signatories stay open.
+  Record the KPA date contradiction (item 38).
+- METI partner names (item 27). The Southern storage area is "offshore of the east coast of Peninsular Malaysia":
+  name the sea that way on cards.
+- MPs: Eco-Business calls the critics "opposition lawmakers" (item 17).
+- Phase 8 re-checks: MyCCUS uploaded a "MyCCUS Roadmap 2050" figure file on 17 Nov 2026 (a roadmap release may be
+  imminent and may cover cross-border storage); MOFA Joint Statement of 10 Jun 2026 (unopened, 403); JOGMEC's FID
+  deadline at the end of FY2026 (31 Mar 2027).
+- Source quality: the [P] markers on S1 to S9 are honest; each was opened (the S7 page refuses some automated clients
+  but opens normally). No FORA issue is cited. S21 is correctly flagged as unopened. The source count can add the
+  Ministry of Economy AZEC statement and Sabah Cap. 68.
+- SRCCS SPM para 33 (p. 15) supports the cross-border point: "Possible physical leakage from a storage site in the
+  future would have to be accounted for."
+
+**Angle.** The mechanism holds; shift the core modestly. "The rules are unwritten" overstates the gap. The sourced
+story is that the law already gives the Government the long-term tail (reportedly after 10 or more years) and names
+it as the bearer of stewardship costs, while the price (levy rate, which s. 30(2)(b) bars from rising with Fund
+withdrawals) and the exporter's share (the unsigned Japan–Malaysia instrument) are still open, against a Minister's
+reported assurance that the Government "will not bear any costs". A secondary line, once Japan's Act is opened: Japan
+keeps operators strictly liable after transfer, while Malaysia keeps them liable only for fault.
+
+## FIXES APPLIED (2026-11-18)
+
+Applied after the independent verification above. Body edits are in place; this log records them.
+
+- **B1.** Rafizi's "20 to 30 years" re-quoted verbatim from Eco-Business and reclassified as a site-contract term in
+  ISSUE, KEY STATISTICS #16 and CONTRADICTION 1. His reported "the government will not bear any costs of CCUS projects"
+  added against s. 42(1) as a recorded contradiction.
+- **B2.** Title, ISSUE item 2 and the hook draft now follow s. 32(1) to (3): monitoring, corrective and remediation
+  obligations pass after a prescribed period and conditions; fault liability stays with the operator.
+- **B3.** Developable core restated: the Regulations reportedly set a 10-year minimum (two law-firm summaries; text
+  unopened); what is not yet made is the levy order, the import regulations and any public Japan–Malaysia instrument.
+  Stage 1 view rewritten accordingly.
+- **B4.** Hook dated to METI's June 2024 planned capacities; fact 1 says the Southern hub takes domestic and regional
+  CO2, so its 5 Mtpa is hub capacity, not Japanese tonnes. JOGMEC FY2025 stage-gate status unverified; cards say
+  "planned in 2024".
+- **B5.** "Putrajaya backing Petronas" replaced with the procedural fact; neither petition concerns carbon storage.
+  Geographic row and Sabah line corrected (Sabah Cap. 68 s. 23B; 2025 Enactment). Cards state only each law's own
+  scope.
+- **B6.** "Books the cut/tonne" replaced with inventory-reporting wording; no credit or NDC transfer implied; Japan's
+  own inventory treatment marked unconfirmed (GAP 7).
+- **Angle.** Fact 2 now carries the sourced tension: the Act names the Government as bearer of post-transfer
+  stewardship costs (s. 42(1)) and bars raising the levy for Fund withdrawals (s. 30(2)(b)), against the then
+  minister's reported "will not bear any costs"; no levy rate is gazetted. Ministry of Economy AZEC statement
+  (17 Oct 2025) closes the MoC date (GAP 5, signatories still open).
