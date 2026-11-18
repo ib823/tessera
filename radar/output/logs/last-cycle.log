@@ -1,53 +1,52 @@
-[32m2026-11-18 10:09:27[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-18 10:09:27[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-18 10:09:27[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-18 10:09:28[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-18 10:09:28[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-18 10:09:28[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 394 topics from state
-[32m2026-11-18 10:09:28[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-18 10:09:28[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-18T10:09:28.409711+00:00
-[32m2026-11-18 10:09:32[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 387 events
-[32m2026-11-18 10:09:33[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
-[32m2026-11-18 10:09:57[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:10:08[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:10:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:10:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:10:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-18 10:11:03[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:11:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:11:26[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:11:37[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:11:49[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 10:11:49[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-18 10:12:00[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 6 events
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 11 events
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 404 events from 5 sources
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 404 events
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 511 within 24h (144 pruned)
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Hannah mahu pegawai lain tandatangan pengampunan Najib, menurut minit mesyuarat. Selepas pertimbangan pandangan anggota lembaga, Yang di-Pertuan Agong putuskan menteri wilayah persekutuan akan tandata" importance=0.41
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [high_court_ruling] "Hannah mahu pegawai lain tandatangan pengampunan Najib, menurut minit mesyuarat. Selepas pertimbangan pandangan anggota lembaga, Yang di-Pertuan Agong putuskan menteri wilayah persekutuan akan tandata" importance=0.31
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Rela member claims trial to sexual assault of 5-year-old girl. Afiq Affendy is accused of touching the girl's thigh in an inappropriate manner earlier this month." importance=0.31
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "6 berdepan prosiding hina mahkamah kali ke-3 berkait krisis N Sembilan. DKU dan setiausahanya menarik balik permohonan prosiding komital terhadap Menteri Besar Ismail Lasim dan 10 bekas anggota exco." importance=0.36
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Businessman claims trial to CBT involving over RM500,000. Tea Kain Chuan is accused of committing CBT by transferring the funds into three bank accounts belonging to other companies." importance=0.33
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Thailand orders clean water for thousands facing arsenic pollution. Tap water supplies to 14 villages in Thailand’s Mae Sai district near the Myanmar border were suspended this month after arsenic lev" importance=0.46
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Zahid tegur anak Ismail campur urusan kemelut MB. Pengerusi BN menegaskan peletakan jawatan Ismail Lasim membabitkan pentadbiran negeri, bukan urusan peribadi atau keluarga." importance=0.31
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [high_court_ruling] "Zahid chides Ismail’s son for questioning BN statement. Barisan Nasional chairman Ahmad Zahid Hamidi says Ismail Lasim’s resignation as Negeri Sembilan menteri besar is not a private family matter." importance=0.31
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [bill_reading] "‘Sesiapa boleh buat analisis’, Khoo jawab ramalan BN-PN tawan Kota Melaka. Ahli Parlimen Kota Melaka berkata DAP akan terus mempergiat usaha meraih sokongan pengundi dan memperbaiki kelemahan menjelan" importance=0.46
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "I was beaten, told to strip naked by cops, ex-Esscom officer’s wife tells court. Vivien Fabian testifies that two police officers tried to get her to confess to a murder at the Tawau police quarters." importance=0.36
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Court acquits man of murdering YouTuber girlfriend. The Penang High Court says none of the prosecution’s 17 witnesses saw the killing, no weapon was recovered, and questions remained over the possible" importance=0.36
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "After US$6.3bil crypto heist, Binance plans foray into 5 Asian markets. Binance's expansion plans come on the heels of a security breach linked to North Korea that resulted in US$6.3 billion being sto" importance=0.46
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [new_act] "Umno tuntut penjelasan status minit pengampunan Najib. Azalina Othman Said mahu pihak berkuasa menjelaskan sama ada minit dikongsi Tony Pua sudah dinyahklasifikasi secara rasmi dan siapa yang melulusk" importance=0.52
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Umno tuntut penjelasan status minit pengampunan Najib. Azalina Othman Said mahu pihak berkuasa menjelaskan sama ada minit dikongsi Tony Pua sudah dinyahklasifikasi secara rasmi dan siapa yang melulusk" importance=0.31
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [high_court_ruling] "Lelaki bebas tuduhan bunuh teman wanita. Mahkamah Tinggi kata pihak pendakwaan banyak bergantung kepada teori 'kali terakhir dilihat' untuk membuktikan kes." importance=0.36
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [high_court_ruling] "Saya dipukul, diarah berbogel oleh polis, isteri bekas pegawai Esscom beritahu mahkamah. Vivien Fabian beri keterangan 2 pegawai polis cuba paksanya mengaku terlibat kes bunuh." importance=0.36
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0017 [budget_allocation] "Kerajaan digesa gubal akta khusus saliran, sedia dana tahunan. Rodziah Ismail berkata Akta 133 tidak mewajibkan peruntukan khusus bagi pembinaan dan penyelenggaraan sistem saliran di bawah tanggungjaw" importance=0.34
-[32m2026-11-18 10:12:06[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'narrative_fragmentation': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
-[32m2026-11-18 10:12:07[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 25 config keywords in events. Top: [('chinese', 32), ('india', 25), ('government', 18), ('minister', 14), ('menteri', 12), ('policy', 10), ('race', 10), ('election', 8), ('prime minister', 8), ('economy', 7)]
-[32m2026-11-18 10:12:07[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 5 events monitored, 5 flagged
-[32m2026-11-18 10:12:07[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 7 low-score topics
-[32m2026-11-18 10:12:07[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 390 active topics
-[32m2026-11-18 10:12:07[0m | [1mINFO    [0m | [36moutput              [0m | 390 active issues, 3 new, 7 pruned
-[32m2026-11-18 10:12:07[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-18 10:12:18[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=211  hmm=OK/69  cox=RT/390  sarima=RT/390
-[32m2026-11-18 10:12:18[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=390)
-[32m2026-11-18 10:12:19[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 390 active topics. Top: race (score: 0.16)
+[32m2026-11-18 12:12:28[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-18 12:12:28[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-18 12:12:28[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-18 12:12:29[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-18 12:12:29[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-18 12:12:29[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 390 topics from state
+[32m2026-11-18 12:12:29[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-18 12:12:29[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-18T12:12:29.556719+00:00
+[32m2026-11-18 12:12:36[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 388 events
+[32m2026-11-18 12:12:36[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
+[32m2026-11-18 12:12:48[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-11-18 12:13:00[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:13:12[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 12:13:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:13:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:13:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:13:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:14:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:14:20[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:14:32[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:14:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 12:14:44[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-18 12:14:56[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 9 events
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 404 events from 5 sources
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 404 events
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 505 within 24h (160 pruned)
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [high_court_ruling] "Court acquits man of murdering YouTuber girlfriend. The Penang High Court says none of the prosecution’s 17 witnesses saw the killing, no weapon was recovered, and questions remained over the possible" importance=0.36
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "After US$6.3bil crypto heist, Binance plans foray into 5 Asian markets. Binance's expansion plans come on the heels of a security breach linked to North Korea that resulted in US$6.3 billion being sto" importance=0.46
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [new_act] "Umno tuntut penjelasan status minit pengampunan Najib. Azalina Othman Said mahu pihak berkuasa menjelaskan sama ada minit dikongsi Tony Pua sudah dinyahklasifikasi secara rasmi dan siapa yang melulusk" importance=0.52
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Umno tuntut penjelasan status minit pengampunan Najib. Azalina Othman Said mahu pihak berkuasa menjelaskan sama ada minit dikongsi Tony Pua sudah dinyahklasifikasi secara rasmi dan siapa yang melulusk" importance=0.31
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Lelaki bebas tuduhan bunuh teman wanita. Mahkamah Tinggi kata pihak pendakwaan banyak bergantung kepada teori 'kali terakhir dilihat' untuk membuktikan kes." importance=0.36
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [high_court_ruling] "Saya dipukul, diarah berbogel oleh polis, isteri bekas pegawai Esscom beritahu mahkamah. Vivien Fabian beri keterangan 2 pegawai polis cuba paksanya mengaku terlibat kes bunuh." importance=0.36
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [budget_allocation] "Kerajaan digesa gubal akta khusus saliran, sedia dana tahunan. Rodziah Ismail berkata Akta 133 tidak mewajibkan peruntukan khusus bagi pembinaan dan penyelenggaraan sistem saliran di bawah tanggungjaw" importance=0.34
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Body of naked man found at LRT parking area. Police urge those with missing family members or acquaintances to contact them." importance=0.41
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Did king consent to declassification of FTPB minutes, asks Umno. Umno secretary-general Asyraf Wajdi Dusuki says all matters concerning the FTPB proceedings over Najib Razak's conditional pardon shoul" importance=0.31
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Ahli Parlimen gesa tambah dana MyPower, manfaatkan pakar nuklear. Wan Ahmad Fayhsal Wan Ahmad Kamal berkata langkah itu bagi menyokong peralihan kepada sumber tenaga baharu." importance=0.46
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Adakah Agong perkenan nyahklasifikasi minit Lembaga Pengampunan, soal Umno. Asyraf Wajdi Dusuki berkata, segala urusan prosiding FTPB mengenai pengampunan bersyarat Najib Razak mesti dirujuk kepada Ag" importance=0.31
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [bill_reading] "Voyager 1 spacecraft reaches one light-day milestone. Already the most distant man-made object in the universe, the spacecraft is now about 26 billion kilometres away." importance=0.46
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "‘Umno tak merayu’, Pemuda desak Chow jelas pendirian. Hilmi Elias berkata Umno sedia menerima keputusan rasmi jika ph tidak lagi mahukan parti itu dalam pentadbiran Pulau Pinang." importance=0.31
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [bill_reading] "Ringgit weakens as hawkish US rate outlook weighs. Traders continued to assess the outlook for monetary policy in 2026, focusing on the US Federal Open Market Committee (FOMC) meeting on Dec 8-9, says" importance=0.46
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Petrol bomb kills activist in Bangladesh ex-PM Hasina’s hometown. With tensions running high, violent attacks have hit Sheikh Hasina's hometown and political stronghold of Gopalganj." importance=0.41
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0016 [bill_reading] "China tech giant Tencent’s quarterly revenue growth slows. Revenue during the third quarter of 2026 was 207.3 billion yuan (US$31.1 billion), up 8% year-on-year -- slowing from 11% in the previous qua" importance=0.46
+[32m2026-11-18 12:15:02[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'network_bridge': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'polarization': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
+[32m2026-11-18 12:15:03[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 27 config keywords in events. Top: [('chinese', 36), ('india', 24), ('government', 17), ('minister', 17), ('policy', 12), ('prime minister', 10), ('umno', 10), ('race', 9), ('election', 6), ('indian', 5)]
+[32m2026-11-18 12:15:03[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 8 events monitored, 8 flagged
+[32m2026-11-18 12:15:03[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 398 active topics
+[32m2026-11-18 12:15:03[0m | [1mINFO    [0m | [36moutput              [0m | 398 active issues, 8 new, 0 pruned
+[32m2026-11-18 12:15:03[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-18 12:15:18[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=211  hmm=OK/71  cox=RT/398  sarima=RT/398
+[32m2026-11-18 12:15:18[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=398)
+[32m2026-11-18 12:15:18[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 398 active topics. Top: india (score: 0.17)
