@@ -435,6 +435,7 @@ quotes an official statement or record.
    **(b) [P]** *Carbon Capture, Utilization and Storage Bill 2025*, English text as tabled with Explanatory
    Statement (paras 4 and 34), Ministry of Economy MyCCUS mirror, uploaded 2 May 2025.
    https://myccus.ekonomi.gov.my/wp-content/uploads/2025/05/RUU-BI-CARBON-CAPTURE-UTILISATION-AND-STORAGE-BILL-2025.pdf
+   **(c) [P]** *Carbon Capture, Utilization and Storage (Offshore Permit and Licensing) Regulations 2025*, P.U.(A) 346/2025, Federal Government Gazette, 30 Sep 2025, in force 1 Oct 2025: regs. 1(2), 14, 32, 33, 41 to 45. https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/3100038/PUA%20346%20%282025%29.pdf
 2. **[P]** AGC Laws of Malaysia list exports, retrieved 18 Nov 2026: Principal Acts (Act 870: assent 22/07/2025,
    publication 01/08/2025, commencement 1/10/2025 [P.U.(B) 355/2025]); Senarai P.U.(A) (P.U.(A) 346/2025 published
    30/09/2025, the only Act 870 regulation listed; latest entry P.U.(A) 393/2026 of 13/11/2026); Senarai P.U.(B)
@@ -458,9 +459,10 @@ quotes an official statement or record.
    (LC 41/17/Add.1, Annex 2). https://wwwcdn.imo.org/localresources/en/OurWork/Environment/Documents/LC_LP/LP%20provisional%20application%202009%20amendment.pdf
 7. **[P]** METI (Japan), "Advanced Efforts for Commercialization of CCS: JOGMEC selects FY2024 Advanced CCS
    Projects", 28 Jun 2024, s. 2 to 4 and project list items 6 to 8. https://www.meti.go.jp/english/press/2024/0628_005.html
-8. **[P]** Laws of Sarawak, Chapter 85, *Environment (Reduction of Greenhouse Gases Emission) Ordinance, 2023*
+8. **(a) [P]** Laws of Sarawak, Chapter 85, *Environment (Reduction of Greenhouse Gases Emission) Ordinance, 2023*
    (passed 20 Nov 2023; assent 12 Dec 2023; gazette 22 Dec 2023), Sarawak LawNet online version: s. 2 p. 6; s. 3
    p. 10; First Schedule p. 36. https://lawnet.sarawak.gov.my/lawnet_file/Ordinance/ORD_Cap.%2085%20ENVIRONMENT%20(REDUCTION%20OF%20GREENHOUSE%20GASES%20EMISSION)%20ORD%202023%20LawNet%202024%20(1).pdf
+   **(b) [P]** Sarawak Government Gazette Part II, Swk. L.N. 349/2022, *Land (Carbon Storage) Rules, 2022* (made under the Land Code), 22 Dec 2022, in force 1 Jan 2023: rules 41 to 43. https://lawnet.sarawak.gov.my/lawnet_file/Subsidiary/SUB_Issue%20No.%2084%20L.N.%20349%20Land%20Carbon%20Storage.pdf
 9. **(a) [P]** Ministry of Economy, MyCCUS "Activities and Initiatives" page (entries of 7 May 2025, 15 Oct 2025,
    11 Feb 2026 and 15 Sep 2026), retrieved 18 Nov 2026. https://myccus.ekonomi.gov.my/activities/
    **(b) [P]** Ministry of Economy, MyCCUS, "Workshop Series 1/2026 to finalise the draft Import Permit and
@@ -468,6 +470,7 @@ quotes an official statement or record.
    **(c) [P]** Ministry of Economy, MyCCUS, "Discussion Session on the Governance Structure for the Issuance of
    Offshore Assessment Permits (OAP) ... in the Exclusive Economic Zone", 2 Jul 2026. https://myccus.ekonomi.gov.my/discussion-session-on-the-governance-structure-for-the-issuance-of-offshore-assessment-permits-oap-for-carbon-capture-utilisation-and-storage-ccus-activities-in-the-exclusive-economic-zone/
    **(d) [P]** Ministry of Economy, MyCCUS home page, "9 Key Messages", retrieved 18 Nov 2026. https://myccus.ekonomi.gov.my/
+   **(e) [P]** Ministry of Economy, media statement on the 3rd Asia Zero Emission Community Ministerial Meeting, Kuala Lumpur, 17 Oct 2025 (lists the Malaysia–METI Memorandum of Co-Operation in the Field of Carbon Capture and Storage among instruments signed). https://ekonomi.gov.my/sites/default/files/2025-10/Media_Statement_The_3rd_Asia_Zero_Emission_Community_171025.pdf
 10. **(a) [S]** Lee Hishammuddin Allen & Gledhill, "Licence to Store: Malaysia Rolls Out Offshore Carbon Storage
     Regulations", ESG Alert, 16 Oct 2025, Part VII summary. https://lh-ag.com/wp-content/uploads/2025/10/ESG-ALERTS-16102025.pdf
     **(b) [S]** Pinsent Masons (with Skrine), "Malaysia carbon capture and storage legislation", Out-Law analysis,
