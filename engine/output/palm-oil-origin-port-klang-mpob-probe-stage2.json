@@ -1,0 +1,153 @@
+{
+"bias_score": 28,
+"political_lean_estimate": 0.1,
+"ethnic_framing_estimate": 0.0,
+"religious_sensitivity_estimate": 0.0,
+"narrative_framing_estimate": 0.2,
+"geographic_bias_estimate": 0.4,
+"economic_framing_estimate": 0.6,
+"gender_agency_estimate": 0.3,
+"partisan_flags": [],
+"racial_flags": [],
+"religious_flags": [],
+"geographic_flags": [
+{
+"quote": "Malaysia's palm oil origin rules run to three written conditions and a one-origin certificate. Its law asks for no public word on how they are enforced.",
+"why_biased": "Treats Port Klang and Peninsular export administration as representative of Malaysia's entire palm oil sector while omitting Sabah and Sarawak, which account for roughly half of national palm oil output and major downstream export hubs (Lahad Datu, Sandakan, Bintulu) with distinct state-level port and bulking dynamics.",
+"fix": "Specify that Port Klang is Peninsular Malaysia's main transshipment hub while noting that national origin and traceability enforcement also governs major East Malaysian export ports in Sabah and Sarawak."
+}
+],
+"economic_flags": [
+{
+"quote": "The 2025 rise is not evidence of blending for re-export; MBSB Research ties it mainly to oleochemical plants.",
+"why_biased": "Centers corporate, institutional, and brokerage perspectives (multinational traders, port agents, chambers of commerce, regulators, and MBSB Research) while excluding how origin dilution or re-export controversies affect Malaysian oil palm smallholders (around 40% of planted area) and downstream workers whose livelihoods depend on Malaysian palm oil price premiums and sustainability certification.",
+"fix": "Balance the corporate and macro-trade framing by briefly noting the economic stake for upstream smallholders and local refiners in preserving origin integrity and price differentiation."
+}
+],
+"gender_flags": [
+{
+"quote": "MPOB Director-General Dr Ahmad Parveez (Utusan, 25 Sep 2020) listed MPOB's options as warning letters, compounds or prosecution",
+"why_biased": "All named actors and cited institutional voices across the explainer are male officials or corporate entities, with no inclusion of female industry stakeholders, smallholders, or regulatory voices.",
+"fix": "Where institutional quotes are optional, avoid relying exclusively on single male executive citations and include broader stakeholder impacts."
+}
+],
+"omission_flags": [
+"Royal Malaysian Customs Department (RMCD) is omitted from all public-facing cards despite transshipment cargo, K1/K2/K8 customs declarations, and port/free-zone controls falling directly under RMCD's statutory jurisdiction.",
+"Malaysian Sustainable Palm Oil (MSPO) certification is completely omitted, even though Maritime Network's 17 Nov 2026 statement explicitly warned that commingling imported oil with Malaysian supply threatens MSPO credibility and national palm oil branding.",
+"Smallholders (~40% of Malaysian oil palm planted area) and East Malaysia (Sabah and Sarawak) are absent, reducing a national origin-integrity issue to a Peninsular corporate-shipping dispute.",
+"The reported market context behind the 25% local-content threshold—industry allegations cited in 17 Nov 2026 media reports of 75:25 or 80:20 blending ratios—is omitted on Fact Card 2, leaving readers to guess why MITI's 25% NPCO rule was selected."
+],
+"evasion_flags": [
+"The explainer avoids stating clearly whether MPOB's 28-day silence since the 19 Oct 2026 complaint is standard investigative confidentiality for an active probe or an actual governance failure, instead pivoting to a general critique that Act 582 lacks a publication mandate.",
+"Fact Card 2 lists MITI's ordinary NPCO rules and B2B transshipment rules side-by-side without resolving or explaining how Malaysian customs/trade law treats cargo blended aboard a vessel in port waters—leaving the reader with an implied contradiction rather than an analytical synthesis."
+],
+"shoe_test_failures": [
+"If a Malaysian government ministry or GLC were accused of misconduct on a 28-day-old unverified commercial complaint, framing the regulator's lack of a public verdict within four weeks as 'never required to post the result on the door' would be flagged as premature; conversely, the complainant's own potential liability as signatory to the contested bills of lading is softened relative to the scrutiny placed on MPOB."
+],
+"cardinal_sin_flags": [
+{
+"sin": "OVERCLAIM",
+"quote": "Malaysian rules let a bulk palm oil blend leave port only if the buyer asked for it in writing, the contract says so, and every shipping paper states the mix.",
+"why": "Regulation 12 of the MPOB (Quality) Regulations 2005 imposes a conditional prohibition on selling, exporting, or consigning a blended oil palm product, but Fact Card 1 itself admits it is an open legal question whether Regulation 12 reaches on-board mixing after loading (when goods are presumed exported under Regulation 16). Presenting Regulation 12(3) in the Hook and Context Suggestion as the sole, categorical rule governing when a blend may leave port overstates its settled legal scope.",
+"fix": "Qualify the Hook and Context Suggestion: 'Under Malaysia's 2005 palm oil quality rules, exporting a blended oil palm product requires the buyer's written request, a contract clause, and disclosure on all shipping papers—though legal questions remain over mixing aboard ships after loading.'"
+},
+{
+"sin": "MISLEADING_FRAMING",
+"quote": "Picture a food inspector who can test the kitchen and fine the cook, but is never required to post the result on the door.",
+"why": "Two distortions combine here: (1) MPOB cannot 'fine' offenders under the Quality Regulations—Quality offences are non-compoundable, and criminal prosecution requires the Public Prosecutor's consent under Act 582 s. 72(1), meaning any court fine becomes public record; (2) equating a 28-day-old pending investigation (lodged 19 Oct 2026) with a refusal to publish completed enforcement results creates a misleading impression of statutory secrecy.",
+"fix": "Replace the analogy with one that accurately reflects non-compoundable offences requiring Public Prosecutor action and distinguishes active investigations from closed enforcement outcomes."
+},
+{
+"sin": "UNDERCLAIM",
+"quote": "A port agent that signed one cargo's bills of lading, and now seeks an indemnity, alleges they did not. MPOB has made no public statement on the complaint.",
+"why": "While the analysis mentions that Maritime Network signed the bills of lading and seeks an indemnity, it underplays the legal exposure a bill-of-lading signatory faces for misdeclared cargo and frames the dispute primarily as a public-interest test of MPOB's enforcement visibility ('A Port Klang complaint tests who checks').",
+"fix": "State explicitly on Fact Card 1 that a port agent signing bills of lading faces direct commercial and regulatory liability for inaccurate cargo declarations, explaining its legal incentive to seek an indemnity from the charterer."
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"quote": "in Nov 2004 the ministry fined an exporter for 'adulterated edible palm oil' without naming it (The Star)",
+"why": "The analyst notes in needs_verification that The Star (13 Nov 2004) was paywalled beyond the opening paragraphs. Moreover, under Act 582 the ministry has no statutory authority to impose fines directly (courts impose fines; the MPOB Director-General issues compounds for scheduled offences), making the exact legal nature of the 2004 penalty unverified.",
+"fix": "Either verify the full text of the 13 Nov 2004 report to confirm whether the penalty was a court fine or an MPOB compound under another regulation, or drop the unverified precedent."
+},
+{
+"sin": "UNVERIFIED_DETAIL",
+"quote": "Mewah not named; Olam not named on cards; MPOB letter's signatory not named.",
+"why": "Internal factual error in the analyst's guardrail metadata: Olam Global Agri / Olam IS named twice on Fact Card 1 ('disputes an assertion it attributes to Olam Global Agri' and 'Olam has made no public statement'), whereas Mewah Oils Sdn Bhd (named in Malay Mail's 5 Nov 2026 report as the FOB seller) was omitted from the cards.",
+"fix": "Correct the guardrail log to reflect that Olam Global Agri is named on Fact Card 1 while Mewah Oils Sdn Bhd is omitted."
+}
+],
+"verification_log": [
+{
+"claim": "MPOB (Quality) Regulations 2005, P.U.(A) 518/2005, reg. 12(1) and 12(3)(a)-(c) require buyer's written request, contract stipulation, and declaration on all shipping documents for blended oil palm products",
+"status": "VERIFIED",
+"primary_source": "Malaysian Palm Oil Board (Quality) Regulations 2005, P.U.(A) 518/2005, reg. 12 (FAOLEX official text)"
+},
+{
+"claim": "MPOB (Quality) Regulations 2005, reg. 16 sets presumption as to export and reg. 9 covers sampling",
+"status": "VERIFIED",
+"primary_source": "Malaysian Palm Oil Board (Quality) Regulations 2005, P.U.(A) 518/2005, regs. 9 and 16 (FAOLEX official text)"
+},
+{
+"claim": "Maritime Network Sdn Bhd alleges on 30 Sep 2026 Indonesian palm olein was mixed aboard MT Eunice at Port Klang with 4,999.715 tonnes of Malaysian crude palm olein, cargo sailed for Adabiya, Egypt, complaint lodged 19 Oct, letter of demand 29 Oct via Jaya Prem Chambers against Olam Global Agri",
+"status": "VERIFIED",
+"primary_source": "Malay Mail (5 Nov 2026), Berita Harian (5 Nov 2026), and Oriental Daily (17 Nov 2026)"
+},
+{
+"claim": "Letter of demand states ~35,432 tonnes loaded at Dumai, Indonesia; later estimate states ~15,000 tonnes total cargo",
+"status": "VERIFIED",
+"primary_source": "Malay Mail (5 Nov 2026) for ~35,432 tonnes at Dumai; Oriental Daily and Kosmo (17 Nov 2026) for Maritime Network's ~15,000 tonnes estimate"
+},
+{
+"claim": "MPOB sent a 22 Oct 2026 letter to Maritime Network (reported by The Sun as confirming an investigation and by Oriental Daily as confirming receipt of the complaint)",
+"status": "VERIFIED",
+"primary_source": "The Sun via MPOB Palm News (17 Nov 2026), Oriental Daily (17 Nov 2026), and Sinar Harian (17 Nov 2026)"
+},
+{
+"claim": "MITI NPCO rules require 100% local materials, 6-digit tariff transformation, or at least 25% local materials; MITI B2B/Transshipment NPCO Guideline (31 Oct 2017) paras 3.4, 4.1, 4.2 prohibit mixing origins on one B2B NPCO",
+"status": "VERIFIED",
+"primary_source": "MITI Non-Preferential Certificate of Origin portal (updated 22 May 2026) and MITI Guideline on the Issuance of Back-to-Back/Transshipment NPCO (31 Oct 2017), paras 3.4, 4.1, 4.2"
+},
+{
+"claim": "Malaysian palm oil imports were 0.95 Mt (2020), 1.18 Mt (2021), 0.25 Mt (2024: 253,485 t), and 0.76 Mt (2025: 764,863 t), ~3.8% of 2025 CPO output (20.28 Mt)",
+"status": "VERIFIED",
+"primary_source": "MPOB Overview of the Malaysian Oil Palm Industry 2021 and 2025 (bepi.mpob.gov.my)"
+},
+{
+"claim": "MBSB Research (Utusan, 19 Jan 2026) attributed the 2025 palm oil import increase mainly to oleochemical plant demand",
+"status": "VERIFIED",
+"primary_source": "Utusan Malaysia (19 Jan 2026) and DagangNews (15 Jan 2026)"
+},
+{
+"claim": "Malaysian Palm Oil Board Act 1998 (Act 582) ss. 3(2)(a), 4(d), 66, 67, 71, 72 govern objectives, secrecy, false information, compounding up to 50% of maximum fine, and Public Prosecutor consent",
+"status": "VERIFIED",
+"primary_source": "Malaysian Palm Oil Board Act 1998 [Act 582] (FAOLEX / mylaw.my official text)"
+},
+{
+"claim": "MPOB (Compounding of Offences) Regulations 2005 [P.U.(A) 519/2005] excludes Quality Regulations offences, and MPOB DG Dr Ahmad Parveez (Sep 2020) stated Quality Regulations offences are non-compoundable",
+"status": "VERIFIED",
+"primary_source": "MPOB (Compounding of Offences) Regulations 2005, P.U.(A) 519/2005 Schedule (FAOLEX) and MalaysiaGazette / Utusan Malaysia (24-25 Sep 2020)"
+},
+{
+"claim": "On 30 Apr 2021, action was announced against 56 MPOB licensees for weighing manipulation including warning letters, compounds, and prosecution",
+"status": "VERIFIED",
+"primary_source": "Malay Mail / Bernama / The Edge Markets (30 Apr 2021)"
+},
+{
+"claim": "In Nov 2004 the ministry fined an exporter for 'adulterated edible palm oil' without naming it (The Star 13 Nov 2004)",
+"status": "UNVERIFIED",
+"primary_source": "Full article text is paywalled/unavailable in open search results, and Act 582 vests compounding power in the MPOB Director-General and fining power in the courts rather than the ministry directly"
+},
+{
+"claim": "Indonesian outward manifest lists refined palm olein, RBD palm oil, RBD palm stearin, and RBD palm kernel oil",
+"status": "UNVERIFIED",
+"primary_source": "Neither the 29 Oct 2026 letter of demand nor the Indonesian outward manifest is public; available press reports refer generally to refined palm oil products"
+},
+{
+"claim": "guardrails_applied states 'Olam not named on cards'",
+"status": "WRONG",
+"primary_source": "Fact Card 1 of the audited analysis itself, which names 'Olam Global Agri' and 'Olam'",
+"corrected_value": "Olam Global Agri is named twice on Fact Card 1; only Mewah Oils Sdn Bhd and the MPOB signatory were omitted from the cards"
+}
+],
+"overall_assessment": "This is a disciplined, legally grounded explainer that avoids partisan, racial, or religious bias and responsibly flags that the Port Klang blending allegation stems from a single interested commercial party seeking an indemnity. However, it suffers from three significant flaws: first, it overclaims in the Hook and Context Suggestion that MPOB Quality Regulation 12(3) categorically governs when a bulk blend can leave port, even though Fact Card 1 concedes that Regulation 12's application to on-board ship mixing after loading is an unresolved legal question; second, it engages in misleading framing by equating MPOB's silence on a 28-day-old pending complaint with statutory secrecy and using a flawed 'food inspector who can fine the cook' analogy despite Quality offences being non-compoundable and prosecutable only with the Public Prosecutor's consent; and third, it exhibits Peninsular, corporate-centric omission bias by leaving out the Royal Malaysian Customs Department, MSPO certification stakes, oil palm smallholders, and East Malaysia's major producing and exporting hubs."
+}

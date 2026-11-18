@@ -104,11 +104,56 @@ jobs:
       - name: Stage the exact built output for responsive tests
         run: cp -a revamp/.cache/app/dist revamp/dist
 
+      # Browsers come from Playwright's CDN; their system libraries (about 160
+      # .deb packages for Chromium, Firefox and WebKit) come from the Ubuntu
+      # mirror. On 18 Nov 2026 the mirror was slow enough (10 to 100 seconds
+      # per package) to exceed the 20-minute limit below twice on a
+      # content-only PR. Cache both, keyed on the Playwright version, so a run
+      # downloads only what changed. apt still refreshes its package lists, so
+      # security updates are picked up.
+      - name: Resolve Playwright version
+        id: playwright
+        run: echo "version=$(node -p "require('@playwright/test/package.json').version")" >> "$GITHUB_OUTPUT"
+
+      - name: Restore Playwright browsers and system packages
+        id: playwright-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            ~/.cache/apt-archives
+          key: playwright-ubuntu-24.04-${{ steps.playwright.outputs.version }}
+          restore-keys: playwright-ubuntu-24.04-
+
       - name: Install Playwright browsers
         # Normally about four minutes. A stalled download or apt lock once held
         # this step for over an hour; fail it instead of the whole job budget.
-        timeout-minutes: 20
-        run: npx playwright install --with-deps chromium firefox webkit
+        # 30, not 20: a cache miss (a new Playwright version, or a branch before
+        # main has saved the cache) still downloads every package, and a slow
+        # mirror needed more than 20 minutes for that on 18 Nov 2026. apt's
+        # retry and timeout settings below stop a single stalled download.
+        timeout-minutes: 30
+        run: |
+          # Keep apt's downloaded .deb files in a cacheable directory and let
+          # apt retry a stalled mirror instead of waiting on it.
+          mkdir -p "$HOME/.cache/apt-archives/partial"
+          printf 'Dir::Cache::Archives "%s/.cache/apt-archives/";\nAPT::Keep-Downloaded-Packages "true";\nAcquire::Retries "5";\nAcquire::http::Timeout "60";\n' "$HOME" \
+            | sudo tee /etc/apt/apt.conf.d/90-fora-playwright-cache >/dev/null
+          sudo rm -f /etc/apt/apt.conf.d/docker-clean
+          npx playwright install --with-deps chromium firefox webkit
+          # apt runs as root; hand the archive back so the cache step can read it.
+          sudo chown -R "$(id -u):$(id -g)" "$HOME/.cache/apt-archives"
+
+      # Saved right after a good install, so a later test failure does not
+      # stop the next run from reusing it.
+      - name: Save Playwright browsers and system packages
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            ~/.cache/apt-archives
+          key: playwright-ubuntu-24.04-${{ steps.playwright.outputs.version }}
 
       - name: Playwright e2e (all seven browser and device projects)
         working-directory: revamp/.cache/app
