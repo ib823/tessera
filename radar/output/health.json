@@ -1,10 +1,10 @@
 {
-  "last_scan": "2026-11-18T08:15:06.121774+00:00",
-  "events_fetched": 409,
-  "issues_tracked": 394,
+  "last_scan": "2026-11-18T10:12:07.203116+00:00",
+  "events_fetched": 404,
+  "issues_tracked": 390,
   "sources": {
     "news_rss": {
-      "last_fetch": "2026-11-18T08:12:42.365299+00:00",
+      "last_fetch": "2026-11-18T10:09:32.769214+00:00",
       "error_rate": 0.4,
       "success_count": 9,
       "error_count": 6,
@@ -101,7 +101,7 @@
       ]
     },
     "reddit": {
-      "last_fetch": "2026-11-18T08:12:42.921870+00:00",
+      "last_fetch": "2026-11-18T10:09:33.379028+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
@@ -122,7 +122,7 @@
       ]
     },
     "gdelt": {
-      "last_fetch": "2026-11-18T08:14:48.540317+00:00",
+      "last_fetch": "2026-11-18T10:11:49.695271+00:00",
       "error_rate": 1.0,
       "success_count": 0,
       "error_count": 11,
@@ -137,21 +137,9 @@
       "batch_results": [
         {
           "label": "domestic",
-          "status": "rate_limited",
+          "status": "failed",
           "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
+          "reason": "invalid_articles_response"
         },
         {
           "label": "malaysia_interest",
@@ -191,9 +179,21 @@
         },
         {
           "label": "malaysia_interest",
-          "status": "failed",
+          "status": "rate_limited",
           "events_fetched": 0,
-          "reason": "non_json_response"
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
         },
         {
           "label": "malaysia_interest",
@@ -204,12 +204,12 @@
       ]
     },
     "parliament": {
-      "last_fetch": "2026-11-18T08:14:59.521244+00:00",
+      "last_fetch": "2026-11-18T10:12:00.505293+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 14,
+      "events_fetched": 6,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -220,17 +220,17 @@
         {
           "label": "parliament",
           "status": "healthy",
-          "events_fetched": 14
+          "events_fetched": 6
         }
       ]
     },
     "court": {
-      "last_fetch": "2026-11-18T08:15:05.261694+00:00",
+      "last_fetch": "2026-11-18T10:12:06.495399+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 8,
+      "events_fetched": 11,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -241,7 +241,7 @@
         {
           "label": "court",
           "status": "healthy",
-          "events_fetched": 8
+          "events_fetched": 11
         }
       ]
     },
