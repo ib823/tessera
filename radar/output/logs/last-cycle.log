@@ -1,44 +1,47 @@
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-18 02:12:31[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 403 topics from state
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-18 02:12:31[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-18T02:12:31.513184+00:00
-[32m2026-11-18 02:12:38[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 389 events
-[32m2026-11-18 02:12:38[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
-[32m2026-11-18 02:12:50[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-11-18 02:13:02[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-18 02:13:14[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:13:25[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:13:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:13:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:13:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:14:09[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-18 02:14:21[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:14:33[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:14:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 02:14:44[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-18 02:14:55[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 5 events
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 2 events
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 396 events from 5 sources
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 396 events
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 494 within 24h (138 pruned)
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Portugal beat Wales to restore order after Ronaldo furore. Jorge Jesus's side shrugged off the distraction of Cristiano Ronaldo's international retirement to secure top spot in Nations League Group A4" importance=0.41
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Israel elects opposition-backed lawmaker as parliament speaker. Matan Kahana, an ally of former military chief Gadi Eisenkot, won 66 of 120 votes in a first step towards rolling back the legacy of car" importance=0.46
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [statutory_instrument] "Insurer can’t escape liability over dead policyholder, appeals court rules. Appellate court says contractual defects cannot override statutory protection for innocent road accident victims." importance=0.30
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [high_court_ruling] "Insurer can’t escape liability over dead policyholder, appeals court rules. Appellate court says contractual defects cannot override statutory protection for innocent road accident victims." importance=0.36
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [court_of_appeal_ruling] "Kematian pemegang polisi tak lepaskan syarikat insurans daripada liabiliti. Mahkamah Rayuan berkata kecacatan kontrak tak boleh atasi perlindungan berkanun terhadap mangsa kemalangan jalan raya yang t" importance=0.46
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Nvidia doubles revenue in Q3, exceeding expectations. The chip giant doubled its Q3 revenue to more than US$115 billion, while net income reached US$65.3 billion." importance=0.46
-[32m2026-11-18 02:15:01[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "Ringgit opens higher against US dollar ahead of GDP data. The local note strengthened to 4.0910/4.0965, with a stronger-than-expected Q3 reading likely to provide further support." importance=0.41
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'narrative_fragmentation': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 23 config keywords in events. Top: [('chinese', 32), ('minister', 21), ('india', 18), ('government', 16), ('prime minister', 16), ('policy', 9), ('scandal', 7), ('race', 6), ('election', 5), ('opposition', 5)]
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 5 events monitored, 5 flagged
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 7 low-score topics
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 397 active topics
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36moutput              [0m | 397 active issues, 1 new, 7 pruned
-[32m2026-11-18 02:15:02[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-18 02:15:11[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=211  hmm=OK/68  cox=RT/397  sarima=RT/397
-[32m2026-11-18 02:15:11[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=397)
-[32m2026-11-18 02:15:11[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 397 active topics. Top: malay (score: 0.18)
+[32m2026-11-18 04:10:43[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-18 04:10:43[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-18 04:10:43[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-18 04:10:44[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-18 04:10:44[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-18 04:10:44[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 397 topics from state
+[32m2026-11-18 04:10:44[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-18 04:10:44[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-18T04:10:44.549504+00:00
+[32m2026-11-18 04:10:50[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 389 events
+[32m2026-11-18 04:10:51[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
+[32m2026-11-18 04:11:04[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
+[32m2026-11-18 04:11:15[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 04:11:27[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 04:11:39[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 04:11:51[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 04:12:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 04:12:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 04:12:30[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 04:12:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 04:12:54[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 04:13:06[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 04:13:07[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-18 04:13:18[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 5 events
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 5 events
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 399 events from 5 sources
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 399 events
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 503 within 24h (127 pruned)
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [bill_reading] "Ringgit opens higher against US dollar ahead of GDP data. The local note strengthened to 4.0910/4.0965, with a stronger-than-expected Q3 reading likely to provide further support." importance=0.41
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Krisis MB N Sembilan: ‘Tangan Zahid terikat’ cari pengganti Ismail. Penganalisis Azmi Hassan menganggarkan hanya lima atau enam Adun BN boleh dipertimbangkan sebagai menteri besar baharu susulan perti" importance=0.46
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "Krisis MB N Sembilan: ‘Tangan Zahid terikat’ cari pengganti Ismail. Penganalisis Azmi Hassan menganggarkan hanya lima atau enam Adun BN boleh dipertimbangkan sebagai menteri besar baharu susulan perti" importance=0.36
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Huawei says US put ‘sinister spin’ on business activities, failed to prove charges at trial. Prosecutors accuse Huawei of scheming to defraud HSBC and other banks about its business in Iran and conspi" importance=0.41
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [high_court_ruling] "Huawei says US put ‘sinister spin’ on business activities, failed to prove charges at trial. Prosecutors accuse Huawei of scheming to defraud HSBC and other banks about its business in Iran and conspi" importance=0.31
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "Sacked Negeri Sembilan exco members drop suit after MB ‘resigns’. Seremban High Court strikes out the case without liberty to file afresh and orders the 10 assemblymen to pay RM48,000 in costs." importance=0.48
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [high_court_ruling] "Sacked Negeri Sembilan exco members drop suit after MB ‘resigns’. Seremban High Court strikes out the case without liberty to file afresh and orders the 10 assemblymen to pay RM48,000 in costs." importance=0.38
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "Bekas exco dipecat tarik balik saman kerajaan N Sembilan. Peguam 10 Adun BN dan PN itu maklum Mahkamah Tinggi tindakan itu susulan peletakan jawatan Menteri Besar Ismail Lasim." importance=0.51
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "Bekas exco dipecat tarik balik saman kerajaan N Sembilan. Peguam 10 Adun BN dan PN itu maklum Mahkamah Tinggi tindakan itu susulan peletakan jawatan Menteri Besar Ismail Lasim." importance=0.41
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [high_court_ruling] "2 Indonesians jailed 11 years for smuggling countrymen into Malaysia. High Court says the offences by Najril Ilham and Iswadi Ibrahim are extremely serious and could expose Malaysia to a real security" importance=0.41
+[32m2026-11-18 04:13:24[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'polarization': 'ok', 'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
+[32m2026-11-18 04:13:25[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 26 config keywords in events. Top: [('chinese', 32), ('india', 19), ('minister', 18), ('government', 17), ('prime minister', 13), ('policy', 9), ('menteri', 8), ('race', 7), ('scandal', 7), ('election', 5)]
+[32m2026-11-18 04:13:25[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 7 events monitored, 7 flagged
+[32m2026-11-18 04:13:25[0m | [1mINFO    [0m | [36mfusion              [0m | Archived 7 low-score topics
+[32m2026-11-18 04:13:25[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 395 active topics
+[32m2026-11-18 04:13:25[0m | [1mINFO    [0m | [36moutput              [0m | 395 active issues, 5 new, 7 pruned
+[32m2026-11-18 04:13:25[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-18 04:13:51[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=211  hmm=OK/68  cox=RT/395  sarima=RT/395
+[32m2026-11-18 04:13:51[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=395)
+[32m2026-11-18 04:13:51[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 395 active topics. Top: malay (score: 0.17)
