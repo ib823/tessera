@@ -1,51 +1,49 @@
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
-[32m2026-11-18 18:09:57[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 387 topics from state
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
-[32m2026-11-18 18:09:57[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-18T18:09:57.884409+00:00
-[32m2026-11-18 18:10:04[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 394 events
-[32m2026-11-18 18:10:04[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
-[32m2026-11-18 18:10:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (domestic) — skipping this batch
-[32m2026-11-18 18:10:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:10:42[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-18 18:10:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:11:10[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:11:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:11:35[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:11:47[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-18 18:11:58[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:12:11[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
-[32m2026-11-18 18:12:23[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
-[32m2026-11-18 18:12:24[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
-[32m2026-11-18 18:12:36[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 409 events from 5 sources
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 409 events
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 504 within 24h (136 pruned)
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [high_court_ruling] "Adakah Agong perkenan nyahklasifikasi minit Lembaga Pengampunan, soal Umno. Asyraf Wajdi Dusuki berkata, segala urusan prosiding FTPB mengenai pengampunan bersyarat Najib Razak mesti dirujuk kepada Ag" importance=0.31
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Voyager 1 spacecraft reaches one light-day milestone. Already the most distant man-made object in the universe, the spacecraft is now about 26 billion kilometres away." importance=0.46
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "‘Umno tak merayu’, Pemuda desak Chow jelas pendirian. Hilmi Elias berkata Umno sedia menerima keputusan rasmi jika ph tidak lagi mahukan parti itu dalam pentadbiran Pulau Pinang." importance=0.31
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Ringgit weakens as hawkish US rate outlook weighs. Traders continue to assess the outlook for monetary policy in 2026, focusing on the US Federal Open Market Committee meeting scheduled for Dec 8-9, s" importance=0.46
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Petrol bomb kills activist in Bangladesh ex-PM Hasina’s hometown. With tensions running high, violent attacks have hit Sheikh Hasina's hometown and political stronghold of Gopalganj." importance=0.41
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "China tech giant Tencent’s quarterly revenue growth slows. Revenue during the third quarter of 2026 was 207.3 billion yuan (US$31.1 billion), up 8% year-on-year -- slowing from 11% in the previous qua" importance=0.46
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "EU proposes €45bil Ukraine loan, to be repaid after Russia pays reparations. The loan aims to help Ukraine cover a €70 billion funding shortfall next year as it continues fighting Russia's invasion." importance=0.46
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "MACC denies agreeing to reward French-Syrian businessman over 1MDB deal. Bachar Kiwan claimed to possess information that could help Malaysia recover billions of ringgit linked to the 1MDB scandal." importance=0.56
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "MACC denies agreeing to reward French-Syrian businessman over 1MDB deal. Bachar Kiwan claimed to possess information that could help Malaysia recover billions of ringgit linked to the 1MDB scandal." importance=0.46
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Deutsche Bank leak points to Russian laundering in Hungary. Millions of leaked documents revealed questionable practices at the German bank and links between several companies and Russian oligarch Ole" importance=0.41
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Nothing treasonous about AG, Yeoh’s objection to Najib’s house arrest, says lawyer. Zainul Rijal Abu Bakar says members of the Federal Territories Pardons Board are entitled to disagree with the propo" importance=0.31
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "AG, Yeoh tak derhaka kerana bantah tahanan rumah Najib, kata peguam. Zainul Rijal Abu Bakar berkata ahli Lembaga Pengampunan Wilayah Persekutuan berhak tidak bersetuju dengan cadangan dikemukakan untu" importance=0.31
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Kedah govt turns to local councils for help with gaming ban. Menteri besar Sanusi Nor says while the state respects the court's decision, its stance against gambling remains unchanged." importance=0.36
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Kerajaan Kedah serah kepada PBT bantu kekang premis judi. MB Sanusi Nor berkata, walaupun negeri hormati keputusan mahkamah, pendiriannya menentang judi kekal tidak berubah." importance=0.41
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Anwar orders thorough probe after Form 3 student found dead in Perak. A report had said the girl at a fully residential school in Kuala Kangsar was found dead on the school grounds today." importance=0.43
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'cascade_tracker': 'ok', 'narrative_fragmentation': 'ok', 'polarization': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('chinese', 35), ('minister', 24), ('india', 21), ('government', 20), ('prime minister', 15), ('policy', 11), ('scandal', 8), ('race', 7), ('election', 6), ('opposition', 6)]
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 10 events monitored, 10 flagged
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 389 active topics
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36moutput              [0m | 389 active issues, 2 new, 0 pruned
-[32m2026-11-18 18:12:42[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
-[32m2026-11-18 18:12:51[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=212  hmm=OK/70  cox=RT/389  sarima=RT/389
-[32m2026-11-18 18:12:51[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=389)
-[32m2026-11-18 18:12:51[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 389 active topics. Top: japan (score: 0.16)
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36mmain                [0m | T4A Radar starting
+[32m2026-11-18 20:09:10[0m | [33m[1mWARNING [0m | [36msource_aggregator   [0m | TWITTER_BEARER_TOKEN not set — skipping Twitter source
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Initialized 5 source connectors: ['news_rss', 'reddit', 'gdelt', 'parliament', 'court']
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36mstreams             [0m | Initialized 6/6 streams: ['volume_monitor', 'cascade_tracker', 'polarization', 'narrative_fragmentation', 'network_bridge', 'silence_detector']
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36mfusion              [0m | Loaded 389 topics from state
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36mmain                [0m | Running single cycle (--once)
+[32m2026-11-18 20:09:10[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle started at 2026-11-18T20:09:10.719680+00:00
+[32m2026-11-18 20:09:17[0m | [1mINFO    [0m | [36msource.news_rss     [0m | Fetched 394 events
+[32m2026-11-18 20:09:17[0m | [1mINFO    [0m | [36msource.reddit       [0m | Fetched 0 events
+[32m2026-11-18 20:09:44[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 20:09:56[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 20:10:07[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 20:10:22[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 20:10:36[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 20:11:05[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest request failed: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)
+[32m2026-11-18 20:11:17[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 20:11:29[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT rate limited (malaysia_interest) — skipping this batch
+[32m2026-11-18 20:11:40[0m | [33m[1mWARNING [0m | [36msource.gdelt        [0m | GDELT malaysia_interest non-JSON: Your query was too short or too long.
+[32m2026-11-18 20:11:40[0m | [1mINFO    [0m | [36msource.gdelt        [0m | Fetched 0 events
+[32m2026-11-18 20:11:51[0m | [1mINFO    [0m | [36msource.parliament   [0m | Fetched 8 events
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msource.court        [0m | Fetched 7 events
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msource_aggregator   [0m | Aggregated 409 events from 5 sources
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36mcycle               [0m | Fetched 409 events
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36mforeign_events      [0m | Foreign events buffer: 494 within 24h (144 pruned)
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0001 [high_court_ruling] "Adakah Agong perkenan nyahklasifikasi minit Lembaga Pengampunan, soal Umno. Asyraf Wajdi Dusuki berkata, segala urusan prosiding FTPB mengenai pengampunan bersyarat Najib Razak mesti dirujuk kepada Ag" importance=0.31
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0002 [bill_reading] "Voyager 1 spacecraft reaches one light-day milestone. Already the most distant man-made object in the universe, the spacecraft is now about 26 billion kilometres away." importance=0.46
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0003 [high_court_ruling] "‘Umno tak merayu’, Pemuda desak Chow jelas pendirian. Hilmi Elias berkata Umno sedia menerima keputusan rasmi jika ph tidak lagi mahukan parti itu dalam pentadbiran Pulau Pinang." importance=0.31
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0004 [bill_reading] "Ringgit weakens as hawkish US rate outlook weighs. Traders continue to assess the outlook for monetary policy in 2026, focusing on the US Federal Open Market Committee meeting scheduled for Dec 8-9, s" importance=0.46
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0005 [bill_reading] "Petrol bomb kills activist in Bangladesh ex-PM Hasina’s hometown. With tensions running high, violent attacks have hit Sheikh Hasina's hometown and political stronghold of Gopalganj." importance=0.41
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0006 [bill_reading] "China tech giant Tencent’s quarterly revenue growth slows. Revenue during the third quarter of 2026 was 207.3 billion yuan (US$31.1 billion), up 8% year-on-year -- slowing from 11% in the previous qua" importance=0.46
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0007 [bill_reading] "EU proposes €45bil Ukraine loan, to be repaid after Russia pays reparations. The loan aims to help Ukraine cover a €70 billion funding shortfall next year as it continues fighting Russia's invasion." importance=0.46
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0008 [bill_reading] "MACC denies agreeing to reward French-Syrian businessman over 1MDB deal. Bachar Kiwan claimed to possess information that could help Malaysia recover billions of ringgit linked to the 1MDB scandal." importance=0.56
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0009 [high_court_ruling] "MACC denies agreeing to reward French-Syrian businessman over 1MDB deal. Bachar Kiwan claimed to possess information that could help Malaysia recover billions of ringgit linked to the 1MDB scandal." importance=0.46
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0010 [bill_reading] "Deutsche Bank leak points to Russian laundering in Hungary. Millions of leaked documents revealed questionable practices at the German bank and links between several companies and Russian oligarch Ole" importance=0.41
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0011 [high_court_ruling] "Nothing treasonous about AG, Yeoh’s objection to Najib’s house arrest, says lawyer. Zainul Rijal Abu Bakar says members of the Federal Territories Pardons Board are entitled to disagree with the propo" importance=0.31
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0012 [high_court_ruling] "AG, Yeoh tak derhaka kerana bantah tahanan rumah Najib, kata peguam. Zainul Rijal Abu Bakar berkata ahli Lembaga Pengampunan Wilayah Persekutuan berhak tidak bersetuju dengan cadangan dikemukakan untu" importance=0.31
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0013 [high_court_ruling] "Kedah govt turns to local councils for help with gaming ban. Menteri besar Sanusi Nor says while the state respects the court's decision, its stance against gambling remains unchanged." importance=0.36
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0014 [high_court_ruling] "Kerajaan Kedah serah kepada PBT bantu kekang premis judi. MB Sanusi Nor berkata, walaupun negeri hormati keputusan mahkamah, pendiriannya menentang judi kekal tidak berubah." importance=0.41
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36msilence_detector    [0m | Tracking: INST-0015 [bill_reading] "Anwar orders thorough probe after Form 3 student found dead in Perak. A report had said the girl at a fully residential school in Kuala Kangsar was found dead on the school grounds today." importance=0.43
+[32m2026-11-18 20:11:57[0m | [1mINFO    [0m | [36mcycle               [0m | Streams processed: {'narrative_fragmentation': 'ok', 'polarization': 'ok', 'cascade_tracker': 'ok', 'network_bridge': 'ok', 'silence_detector': 'ok', 'volume_monitor': 'ok'}
+[32m2026-11-18 20:11:58[0m | [1mINFO    [0m | [36mcycle               [0m | Matched 30 config keywords in events. Top: [('chinese', 34), ('minister', 24), ('india', 21), ('government', 18), ('prime minister', 15), ('policy', 11), ('scandal', 8), ('race', 7), ('election', 6), ('opposition', 6)]
+[32m2026-11-18 20:11:58[0m | [1mINFO    [0m | [36mcycle               [0m | Silence detector: 10 events monitored, 10 flagged
+[32m2026-11-18 20:11:58[0m | [1mINFO    [0m | [36mcycle               [0m | Issue queue: 389 active topics
+[32m2026-11-18 20:11:58[0m | [1mINFO    [0m | [36moutput              [0m | 389 active issues, 0 new, 0 pruned
+[32m2026-11-18 20:11:58[0m | [1mINFO    [0m | [36mstate               [0m | Loaded state from /home/runner/work/tessera/tessera/radar/output/state.json
+[32m2026-11-18 20:12:12[0m | [1mINFO    [0m | [36mcycle               [0m | Predictions: days_of_data=212  hmm=OK/70  cox=RT/389  sarima=RT/389
+[32m2026-11-18 20:12:13[0m | [1mINFO    [0m | [36mcycle               [0m | Silence watch: 25 picks over threshold (queue=389)
+[32m2026-11-18 20:12:13[0m | [1mINFO    [0m | [36mcycle               [0m | Cycle complete. 389 active topics. Top: japan (score: 0.18)
