@@ -1,10 +1,44 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-18T12:15:18.706Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-18T14:13:16.307Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
-## ⏳ TO POST (89)
+## ⏳ TO POST (91)
+
+### Issue 2024 — Malaysia lets bulk palm oil blends out only on three conditions. A Port Klang complaint tests them
+
+> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2024-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2024`
+
+**1/6** _(hook — attach image, NO link)_ · 156 chars
+```
+Malaysian rules bar exporting a bulk palm oil blend unless the buyer asked for it in writing, the contract says so, and every shipping paper states the mix.
+```
+**2/6** _(fact)_ · 156 chars
+```
+The agent alleges Indonesian palm olein was mixed aboard the tanker MT Eunice at Port Klang on 30 Sep with about 5,000 tonnes of Malaysian crude palm olein.
+```
+**3/6** _(fact)_ · 148 chars
+```
+For an ordinary Malaysian certificate of origin, one of MITI's three tests is at least 25% local content by value, checked by an authorised chamber.
+```
+**4/6** _(fact)_ · 154 chars
+```
+MPOB must table a yearly activities report in Parliament, but no rule makes it announce single cases, and its Act limits disclosure to the Act's purposes.
+```
+**5/6** _(reframe)_ · 140 chars
+```
+MPOB both champions Malaysian palm oil and polices it. The law asks it to account to Parliament once a year, not to explain any single case.
+```
+**6/6** _(view — ONLY post with the link)_ · 222 chars
+```
+Four weeks' quiet on a cross-border cargo can pass as routine. When the 'Malaysian' label carries the industry's imprimatur, a word on the file's status costs less than silence.
+
+https://thefourthangle.pages.dev/issue/2024
+```
 
 ### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
 
@@ -38,6 +72,40 @@ Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya i
 Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
 
 https://thefourthangle.pages.dev/issue/2019
+```
+
+### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
+
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
+
+**1/6** _(hook — attach image, NO link)_ · 157 chars
+```
+Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
+```
+**2/6** _(fact)_ · 156 chars
+```
+Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
+```
+**3/6** _(fact)_ · 149 chars
+```
+The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
+```
+**4/6** _(fact)_ · 131 chars
+```
+Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
+```
+**5/6** _(reframe)_ · 76 chars
+```
+The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
+```
+**6/6** _(view — ONLY post with the link)_ · 222 chars
+```
+If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
+
+https://thefourthangle.pages.dev/issue/2018
 ```
 
 ### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
@@ -2288,6 +2356,44 @@ Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essen
 https://thefourthangle.pages.dev/issue/1190
 ```
 
+### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
+
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
+
+**1/7** _(hook — attach image, NO link)_ · 132 chars
+```
+Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
+```
+**2/7** _(fact)_ · 124 chars
+```
+Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
+```
+**3/7** _(fact)_ · 112 chars
+```
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
+```
+**4/7** _(fact)_ · 148 chars
+```
+DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
+```
+**5/7** _(reframe)_ · 137 chars
+```
+The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
+```
+**6/7** _(analogy)_ · 269 chars
+```
+Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
+
+https://thefourthangle.pages.dev/issue/1128
+```
+
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
 > ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
@@ -2364,37 +2470,41 @@ Oversight did happen: PAC reports, declassification, a CBT charge that ended in 
 https://thefourthangle.pages.dev/issue/0154
 ```
 
-### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
+### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2023-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2023`
 
-**1/6** _(hook — attach image, NO link)_ · 157 chars
+**1/7** _(hook — attach image, NO link)_ · 162 chars
 ```
-Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
+Japan picked three projects in 2024 to store about 10 million tonnes of CO2 a year off Malaysia. The deal to ship it there was still being finalised in September.
 ```
-**2/6** _(fact)_ · 156 chars
+**2/7** _(fact)_ · 161 chars
 ```
-Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
+On 23 Oct 2026 Petronas, TotalEnergies and Mitsui signed a joint venture agreement for a CO2 storage hub off Peninsular Malaysia's east coast, up to 5 Mt a year.
 ```
-**3/6** _(fact)_ · 149 chars
+**3/7** _(fact)_ · 146 chars
 ```
-The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
+Federal rules hand a closed site's monitoring and repair to the Government at least 10 years after closure, once its CO2 is shown to be contained.
 ```
-**4/6** _(fact)_ · 131 chars
+**4/7** _(fact)_ · 167 chars
 ```
-Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
+Sarawak's 2022 rules set at least 20 years before handover, shorter only if containment is proven, and charge a contribution sized to cover the state's costs after it.
 ```
-**5/6** _(reframe)_ · 76 chars
+**5/7** _(reframe)_ · 153 chars
 ```
-The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
+The asymmetry is built in. The capturing country reports the climate gain; after handover, the country that buries the CO2 inherits the duty to watch it.
 ```
-**6/6** _(view — ONLY post with the link)_ · 222 chars
+**6/7** _(analogy)_ · 171 chars
 ```
-If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
+Think of a landlord who takes back a sealed storeroom only after the tenant has kept it ten years, proved it tight and paid in. From then on, the upkeep is the landlord's.
+```
+**7/7** _(view — ONLY post with the link)_ · 209 chars
+```
+Malaysia has written who watches a closed reservoir, and when. Before the first import permit, publish the levy rate and the Japan terms so Malaysians see who pays.
 
-https://thefourthangle.pages.dev/issue/2018
+https://thefourthangle.pages.dev/issue/2023
 ```
 
 ### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
@@ -3095,43 +3205,6 @@ The interoperability question is already half-answered: DuitNow QR is the nation
 Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
 
 https://thefourthangle.pages.dev/issue/1146
-```
-
-### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
-
-**1/7** _(hook — attach image, NO link)_ · 132 chars
-```
-Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
-```
-**2/7** _(fact)_ · 124 chars
-```
-Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
-```
-**3/7** _(fact)_ · 112 chars
-```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
-```
-**4/7** _(fact)_ · 148 chars
-```
-DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
-```
-**5/7** _(reframe)_ · 137 chars
-```
-The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
-```
-**6/7** _(analogy)_ · 269 chars
-```
-Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
-
-https://thefourthangle.pages.dev/issue/1128
 ```
 
 ### Issue 1043 — When states override environmental law, the environment has no government
