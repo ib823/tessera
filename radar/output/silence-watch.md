@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-11-19 00:26 UTC. Queue size: 363. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-11-19 02:15 UTC. Queue size: 353. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,69 +31,58 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.714 (silence=1.00 × importance=0.71, no age weighting)
 
-- **Age in queue:** 2.6 days (source date: 2026-11-16, first seen: 2026-11-16)
+- **Age in queue:** 2.7 days (source date: 2026-11-16, first seen: 2026-11-16)
 
 - **Coverage:** 5 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F2. anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur, nov 12 &mdash; t...
-
-- **Fresh score:** 0.697 (silence=0.98 × importance=0.71, no age weighting)
-
-- **Age in queue:** 6.9 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 55 news, 26 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, ethnic, political
-
-
-### F3. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
+### F2. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
 
 - **Fresh score:** 0.660 (silence=0.99 × importance=0.67, no age weighting)
 
-- **Age in queue:** 6.0 days (source date: 2026-11-13, first seen: 2026-11-13)
+- **Age in queue:** 6.1 days (source date: 2026-11-13, first seen: 2026-11-13)
 
 - **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### F4. epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment income for the third...
+### F3. epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment income for the third...
 
 - **Fresh score:** 0.658 (silence=0.99 × importance=0.67, no age weighting)
 
-- **Age in queue:** 2.6 days (source date: 2026-11-16, first seen: 2026-11-16)
+- **Age in queue:** 2.7 days (source date: 2026-11-16, first seen: 2026-11-16)
 
 - **Coverage:** 20 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### F5. selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the state government...
+### F4. selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the state government...
 
 - **Fresh score:** 0.655 (silence=0.98 × importance=0.67, no age weighting)
 
-- **Age in queue:** 5.6 days (source date: 2026-11-13, first seen: 2026-11-13)
+- **Age in queue:** 5.7 days (source date: 2026-11-13, first seen: 2026-11-13)
 
 - **Coverage:** 24 news, 11 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### F6. malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov 17 &mdash; malays...
+### F5. malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov 17 &mdash; malays...
 
 - **Fresh score:** 0.649 (silence=0.98 × importance=0.67, no age weighting)
 
-- **Age in queue:** 1.9 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 2.0 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 45 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### F7. kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor setar, nov 15 &mdash...
+### F6. kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor setar, nov 15 &mdash...
 
 - **Fresh score:** 0.644 (silence=0.97 × importance=0.67, no age weighting)
 
@@ -104,7 +93,7 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** economic, political
 
 
-### F8. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
+### F7. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
 
 - **Fresh score:** 0.603 (silence=0.98 × importance=0.61, no age weighting)
 
@@ -115,7 +104,7 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** political
 
 
-### F9. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
+### F8. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
 
 - **Fresh score:** 0.594 (silence=0.97 × importance=0.61, no age weighting)
 
@@ -126,62 +115,62 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** political
 
 
-### F10. high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute should first be heard...
+### F9. high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute should first be heard...
 
 - **Fresh score:** 0.587 (silence=0.96 × importance=0.61, no age weighting)
 
-- **Age in queue:** 2.8 days (source date: 2026-11-16, first seen: 2026-11-16)
+- **Age in queue:** 2.9 days (source date: 2026-11-16, first seen: 2026-11-16)
 
 - **Coverage:** 26 news, 15 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, legal, political
 
 
-### F11. kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berkata mesyuarat pert...
+### F10. kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berkata mesyuarat pert...
 
 - **Fresh score:** 0.562 (silence=1.00 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.8 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 0.9 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 3 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### F12. adun kota kemuning mahu 47 projek tebatan banjir di selangor dipercepat. s preakas berkata projek dalam bel...
+### F11. adun kota kemuning mahu 47 projek tebatan banjir di selangor dipercepat. s preakas berkata projek dalam bel...
 
 - **Fresh score:** 0.560 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 4.9 days (source date: 2026-11-14, first seen: 2026-11-14)
+- **Age in queue:** 5.0 days (source date: 2026-11-14, first seen: 2026-11-14)
 
 - **Coverage:** 7 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic
 
 
-### F13. irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. putrajaya, nov 13 &...
+### F12. irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. putrajaya, nov 13 &...
 
 - **Fresh score:** 0.559 (silence=0.96 × importance=0.58, no age weighting)
 
-- **Age in queue:** 5.7 days (source date: 2026-11-13, first seen: 2026-11-13)
+- **Age in queue:** 5.8 days (source date: 2026-11-13, first seen: 2026-11-13)
 
 - **Coverage:** 23 news, 11 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F14. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
+### F13. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
 
 - **Fresh score:** 0.558 (silence=0.99 × importance=0.56, no age weighting)
 
-- **Age in queue:** 6.7 days (source date: 2026-11-12, first seen: 2026-11-12)
+- **Age in queue:** 6.8 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### F15. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
+### F14. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
 
 - **Fresh score:** 0.553 (silence=0.98 × importance=0.56, no age weighting)
 
@@ -192,235 +181,9 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** political
 
 
----
+### F15. court throws out mukhriz’s challenge to rm5m tax bill. kuala lumpur, nov 16 &mdash;the high court here toda...
 
-
-## Accumulated — silence compounding over time
-
-
-### S1. anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur, nov 12 &mdash; t...
-
-- **Rank score:** 0.859 (silence=0.98 × importance=0.71 × age_factor)
-
-- **Age in queue:** 6.9 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 55 news, 26 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, ethnic, political
-
-
-### S2. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
-
-- **Rank score:** 0.793 (silence=0.99 × importance=0.67 × age_factor)
-
-- **Age in queue:** 6.0 days (source date: 2026-11-13, first seen: 2026-11-13)
-
-- **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, political
-
-
-### S3. selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the state government...
-
-- **Rank score:** 0.777 (silence=0.98 × importance=0.67 × age_factor)
-
-- **Age in queue:** 5.6 days (source date: 2026-11-13, first seen: 2026-11-13)
-
-- **Coverage:** 24 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, political
-
-
-### S4. kerajaan lulus sukuk rm19.05 bilion biaya ecrl. menteri kewangan ii amir hamzah azizan berkata ia merupakan...
-
-- **Rank score:** 0.776 (silence=1.00 × importance=0.71 × age_factor)
-
-- **Age in queue:** 2.6 days (source date: 2026-11-16, first seen: 2026-11-16)
-
-- **Coverage:** 5 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S5. kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor setar, nov 15 &mdash...
-
-- **Rank score:** 0.720 (silence=0.97 × importance=0.67 × age_factor)
-
-- **Age in queue:** 3.6 days (source date: 2026-11-15, first seen: 2026-11-15)
-
-- **Coverage:** 61 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, political
-
-
-### S6. epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment income for the third...
-
-- **Rank score:** 0.716 (silence=0.99 × importance=0.67 × age_factor)
-
-- **Age in queue:** 2.6 days (source date: 2026-11-16, first seen: 2026-11-16)
-
-- **Coverage:** 20 news, 4 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, political
-
-
-### S7. malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov 17 &mdash; malays...
-
-- **Rank score:** 0.691 (silence=0.98 × importance=0.67 × age_factor)
-
-- **Age in queue:** 1.9 days (source date: 2026-11-17, first seen: 2026-11-17)
-
-- **Coverage:** 45 news, 9 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, political
-
-
-### S8. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
-
-- **Rank score:** 0.684 (silence=0.99 × importance=0.56 × age_factor)
-
-- **Age in queue:** 6.7 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S9. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
-
-- **Rank score:** 0.673 (silence=0.98 × importance=0.56 × age_factor)
-
-- **Age in queue:** 6.6 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S10. irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. putrajaya, nov 13 &...
-
-- **Rank score:** 0.665 (silence=0.96 × importance=0.58 × age_factor)
-
-- **Age in queue:** 5.7 days (source date: 2026-11-13, first seen: 2026-11-13)
-
-- **Coverage:** 23 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal
-
-
-### S11. federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also receive 12 strok...
-
-- **Rank score:** 0.660 (silence=0.95 × importance=0.56 × age_factor)
-
-- **Age in queue:** 6.7 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 34 news, 6 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal
-
-
-### S12. adun kota kemuning mahu 47 projek tebatan banjir di selangor dipercepat. s preakas berkata projek dalam bel...
-
-- **Rank score:** 0.651 (silence=0.99 × importance=0.56 × age_factor)
-
-- **Age in queue:** 4.9 days (source date: 2026-11-14, first seen: 2026-11-14)
-
-- **Coverage:** 7 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic
-
-
-### S13. consumers in malaysia may soon be able to check chicken’s halal status under proposed new rules. kuala lump...
-
-- **Rank score:** 0.648 (silence=0.94 × importance=0.56 × age_factor)
-
-- **Age in queue:** 6.5 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 37 news, 13 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, ethnic, religious
-
-
-### S14. high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute should first be heard...
-
-- **Rank score:** 0.643 (silence=0.96 × importance=0.61 × age_factor)
-
-- **Age in queue:** 2.8 days (source date: 2026-11-16, first seen: 2026-11-16)
-
-- **Coverage:** 26 news, 15 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** economic, legal, political
-
-
-### S15. federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m award. putrajaya, ...
-
-- **Rank score:** 0.637 (silence=0.93 × importance=0.58 × age_factor)
-
-- **Age in queue:** 5.6 days (source date: 2026-11-13, first seen: 2026-11-13)
-
-- **Coverage:** 51 news, 16 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal
-
-
-### S16. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
-
-- **Rank score:** 0.626 (silence=0.97 × importance=0.61 × age_factor)
-
-- **Age in queue:** 1.7 days (source date: 2026-11-17, first seen: 2026-11-17)
-
-- **Coverage:** 37 news, 8 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S17. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
-
-- **Rank score:** 0.620 (silence=0.98 × importance=0.61 × age_factor)
-
-- **Age in queue:** 0.9 days (source date: 2026-11-18, first seen: 2026-11-18)
-
-- **Coverage:** 20 news, 5 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political
-
-
-### S18. kerajaan bantah cabaran baharu badan peguam terhadap tahanan rumah najib. peguam kanan persekutuan ahmad ha...
-
-- **Rank score:** 0.619 (silence=0.98 × importance=0.52 × age_factor)
-
-- **Age in queue:** 6.9 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 7 news, 7 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S19. court of appeal allows 1mdb to use singaporean woman’s affidavit in bid to freeze rosmah’s rm1.41b assets. ...
-
-- **Rank score:** 0.615 (silence=0.96 × importance=0.52 × age_factor)
-
-- **Age in queue:** 6.8 days (source date: 2026-11-12, first seen: 2026-11-12)
-
-- **Coverage:** 13 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, legal
-
-
-### S20. kerajaan pertimbang peraturan jual alkohol bagi pekerja muslim. menteri hal ehwal agama zulkifli hasan berk...
-
-- **Rank score:** 0.611 (silence=0.99 × importance=0.52 × age_factor)
-
-- **Age in queue:** 6.0 days (source date: 2026-11-13, first seen: 2026-11-13)
-
-- **Coverage:** 6 news, 2 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** political, religious
-
-
-### S21. court throws out mukhriz’s challenge to rm5m tax bill. kuala lumpur, nov 16 &mdash;the high court here toda...
-
-- **Rank score:** 0.601 (silence=0.95 × importance=0.58 × age_factor)
+- **Fresh score:** 0.550 (silence=0.95 × importance=0.58, no age weighting)
 
 - **Age in queue:** 2.8 days (source date: 2026-11-16, first seen: 2026-11-16)
 
@@ -429,31 +192,257 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** economic, legal, political
 
 
-### S22. us starts 2027 fiscal year with record october budget deficit of us$404bil. october receipts fell by us$35 ...
+---
 
-- **Rank score:** 0.591 (silence=0.96 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-11-12, first seen: 2026-11-12)
+## Accumulated — silence compounding over time
+
+
+### S1. why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi son has made and l...
+
+- **Rank score:** 0.794 (silence=0.99 × importance=0.67 × age_factor)
+
+- **Age in queue:** 6.1 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 13 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
+
+
+### S2. selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the state government...
+
+- **Rank score:** 0.779 (silence=0.98 × importance=0.67 × age_factor)
+
+- **Age in queue:** 5.7 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 24 news, 11 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
+
+
+### S3. kerajaan lulus sukuk rm19.05 bilion biaya ecrl. menteri kewangan ii amir hamzah azizan berkata ia merupakan...
+
+- **Rank score:** 0.778 (silence=1.00 × importance=0.71 × age_factor)
+
+- **Age in queue:** 2.7 days (source date: 2026-11-16, first seen: 2026-11-16)
+
+- **Coverage:** 5 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S4. kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor setar, nov 15 &mdash...
+
+- **Rank score:** 0.722 (silence=0.97 × importance=0.67 × age_factor)
+
+- **Age in queue:** 3.6 days (source date: 2026-11-15, first seen: 2026-11-15)
+
+- **Coverage:** 61 news, 11 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
+
+
+### S5. epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment income for the third...
+
+- **Rank score:** 0.717 (silence=0.99 × importance=0.67 × age_factor)
+
+- **Age in queue:** 2.7 days (source date: 2026-11-16, first seen: 2026-11-16)
+
+- **Coverage:** 20 news, 4 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, political
+
+
+### S6. malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov 17 &mdash; malays...
+
+- **Rank score:** 0.692 (silence=0.98 × importance=0.67 × age_factor)
+
+- **Age in queue:** 2.0 days (source date: 2026-11-17, first seen: 2026-11-17)
+
+- **Coverage:** 45 news, 9 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
+
+
+### S7. mahkamah persekutuan kekal hukuman penjara 35 tahun 2 lelaki kerana membunuh. s sandanam dan r ramesh juga ...
+
+- **Rank score:** 0.685 (silence=0.99 × importance=0.56 × age_factor)
+
+- **Age in queue:** 6.8 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 4 news, 6 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, political
+
+
+### S8. p pinang boleh tarik diri jika caj perjanjian air tak lulus. ketua menteri kata kerajaan negeri tidak perlu...
+
+- **Rank score:** 0.675 (silence=0.98 × importance=0.56 × age_factor)
+
+- **Age in queue:** 6.6 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 9 news, 10 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S9. irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. putrajaya, nov 13 &...
+
+- **Rank score:** 0.666 (silence=0.96 × importance=0.58 × age_factor)
+
+- **Age in queue:** 5.8 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 23 news, 11 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### S10. federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also receive 12 strok...
+
+- **Rank score:** 0.661 (silence=0.95 × importance=0.56 × age_factor)
+
+- **Age in queue:** 6.8 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 34 news, 6 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### S11. adun kota kemuning mahu 47 projek tebatan banjir di selangor dipercepat. s preakas berkata projek dalam bel...
+
+- **Rank score:** 0.653 (silence=0.99 × importance=0.56 × age_factor)
+
+- **Age in queue:** 5.0 days (source date: 2026-11-14, first seen: 2026-11-14)
+
+- **Coverage:** 7 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic
+
+
+### S12. consumers in malaysia may soon be able to check chicken’s halal status under proposed new rules. kuala lump...
+
+- **Rank score:** 0.650 (silence=0.94 × importance=0.56 × age_factor)
+
+- **Age in queue:** 6.6 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 37 news, 13 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, ethnic, religious
+
+
+### S13. high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute should first be heard...
+
+- **Rank score:** 0.644 (silence=0.96 × importance=0.61 × age_factor)
+
+- **Age in queue:** 2.9 days (source date: 2026-11-16, first seen: 2026-11-16)
+
+- **Coverage:** 26 news, 15 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, legal, political
+
+
+### S14. federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m award. putrajaya, ...
+
+- **Rank score:** 0.639 (silence=0.93 × importance=0.58 × age_factor)
+
+- **Age in queue:** 5.6 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 51 news, 16 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal
+
+
+### S15. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
+
+- **Rank score:** 0.628 (silence=0.97 × importance=0.61 × age_factor)
+
+- **Age in queue:** 1.7 days (source date: 2026-11-17, first seen: 2026-11-17)
+
+- **Coverage:** 37 news, 8 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S16. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
+
+- **Rank score:** 0.622 (silence=0.98 × importance=0.61 × age_factor)
+
+- **Age in queue:** 0.9 days (source date: 2026-11-18, first seen: 2026-11-18)
+
+- **Coverage:** 20 news, 5 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### S17. kerajaan bantah cabaran baharu badan peguam terhadap tahanan rumah najib. peguam kanan persekutuan ahmad ha...
+
+- **Rank score:** 0.621 (silence=0.98 × importance=0.52 × age_factor)
+
+- **Age in queue:** 6.9 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 7 news, 7 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** legal, political
+
+
+### S18. court of appeal allows 1mdb to use singaporean woman’s affidavit in bid to freeze rosmah’s rm1.41b assets. ...
+
+- **Rank score:** 0.616 (silence=0.96 × importance=0.52 × age_factor)
+
+- **Age in queue:** 6.8 days (source date: 2026-11-12, first seen: 2026-11-12)
+
+- **Coverage:** 13 news, 11 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, legal
+
+
+### S19. kerajaan pertimbang peraturan jual alkohol bagi pekerja muslim. menteri hal ehwal agama zulkifli hasan berk...
+
+- **Rank score:** 0.612 (silence=0.99 × importance=0.52 × age_factor)
+
+- **Age in queue:** 6.1 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 6 news, 2 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political, religious
+
+
+### S20. court throws out mukhriz’s challenge to rm5m tax bill. kuala lumpur, nov 16 &mdash;the high court here toda...
+
+- **Rank score:** 0.602 (silence=0.95 × importance=0.58 × age_factor)
+
+- **Age in queue:** 2.8 days (source date: 2026-11-16, first seen: 2026-11-16)
+
+- **Coverage:** 32 news, 15 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, legal, political
+
+
+### S21. us starts 2027 fiscal year with record october budget deficit of us$404bil. october receipts fell by us$35 ...
+
+- **Rank score:** 0.593 (silence=0.96 × importance=0.52 × age_factor)
+
+- **Age in queue:** 6.1 days (source date: 2026-11-12, first seen: 2026-11-12)
 
 - **Coverage:** 25 news, 4 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S23. ahli parlimen gesa kwsp dedah nilai semasa pegangan saham dalam nvidia. wan saiful wan jan berkata pencarum...
+### S22. ahli parlimen gesa kwsp dedah nilai semasa pegangan saham dalam nvidia. wan saiful wan jan berkata pencarum...
 
-- **Rank score:** 0.587 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.588 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.8 days (source date: 2026-11-14, first seen: 2026-11-14)
+- **Age in queue:** 4.9 days (source date: 2026-11-14, first seen: 2026-11-14)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, political
 
 
-### S24. court of appeal upholds citizenship for woman abandoned at birth. the court, in dismissing the government's...
+### S23. court of appeal upholds citizenship for woman abandoned at birth. the court, in dismissing the government's...
 
-- **Rank score:** 0.585 (silence=0.96 × importance=0.52 × age_factor)
+- **Rank score:** 0.587 (silence=0.96 × importance=0.52 × age_factor)
 
 - **Age in queue:** 5.7 days (source date: 2026-11-13, first seen: 2026-11-13)
 
@@ -462,15 +451,26 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** legal, political
 
 
-### S25. pope returns to ‘beloved’ peruvian hometown. the visit is the emotional highlight of the pope’s south ameri...
+### S24. pope returns to ‘beloved’ peruvian hometown. the visit is the emotional highlight of the pope’s south ameri...
 
-- **Rank score:** 0.582 (silence=0.97 × importance=0.52 × age_factor)
+- **Rank score:** 0.583 (silence=0.97 × importance=0.52 × age_factor)
 
 - **Age in queue:** 4.9 days (source date: 2026-11-14, first seen: 2026-11-14)
 
 - **Coverage:** 15 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political, religious
+
+
+### S25. data centre boom prompts new safeguards as malaysia targets 2027 for regulatory bill. kuala lumpur, nov 13 ...
+
+- **Rank score:** 0.580 (silence=0.94 × importance=0.52 × age_factor)
+
+- **Age in queue:** 6.0 days (source date: 2026-11-13, first seen: 2026-11-13)
+
+- **Coverage:** 34 news, 6 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** ethnic, political
 
 
 ---

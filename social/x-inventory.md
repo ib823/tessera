@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-19T00:26:33.323Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-19T02:15:51.962Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -144,7 +144,7 @@ https://thefourthangle.pages.dev/issue/2017
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -330,7 +330,7 @@ https://thefourthangle.pages.dev/issue/2008
 
 ### Issue 2007 — High Court refused MACC's bid to freeze RM548m linked to Na'imah in Singapore
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2007-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2007`
@@ -812,7 +812,7 @@ https://thefourthangle.pages.dev/issue/1991
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -1260,7 +1260,7 @@ https://thefourthangle.pages.dev/issue/1977
 
 ### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
@@ -1332,6 +1332,40 @@ Like outsourcing passport control to a toll-booth operator who cut wait times, t
 The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
 
 https://thefourthangle.pages.dev/issue/1973
+```
+
+### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
+
+> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
+
+**1/6** _(hook — attach image, NO link)_ · 126 chars
+```
+RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
+```
+**2/6** _(fact)_ · 118 chars
+```
+The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
+```
+**3/6** _(fact)_ · 124 chars
+```
+76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
+```
+**4/6** _(fact)_ · 187 chars
+```
+The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
+```
+**5/6** _(reframe)_ · 138 chars
+```
+The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
+```
+**6/6** _(view — ONLY post with the link)_ · 197 chars
+```
+Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
+
+https://thefourthangle.pages.dev/issue/1972
 ```
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
@@ -1820,7 +1854,7 @@ https://thefourthangle.pages.dev/issue/1951
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -1854,7 +1888,7 @@ https://thefourthangle.pages.dev/issue/1944
 
 ### Issue 1887 — 18.4 billion e-payments in 2025, yet 63% of non-urban Malaysians used cash daily in a 2021 survey
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1887-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1887`
@@ -1922,7 +1956,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
@@ -1956,7 +1990,7 @@ https://thefourthangle.pages.dev/issue/1805
 
 ### Issue 1751 — MRT3 Circle Line: Budget 2023 Targets ~RM45B Total, Down from RM68B in 2018
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1751-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1751`
@@ -1986,44 +2020,6 @@ The story is not 'budget ballooning'. The open question is whether the Budget 20
 Reducing the headline target does not eliminate cost-overrun risk. The test is whether construction from 2027 onwards stays close to the RM45 billion target.
 
 https://thefourthangle.pages.dev/issue/1751
-```
-
-### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
-
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1625-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1625`
-
-**1/7** _(hook — attach image, NO link)_ · 125 chars
-```
-Bumiputera property discounts range from 5% to 15% depending on state. The mechanism is industry-funded, not Treasury-funded.
-```
-**2/7** _(fact)_ · 146 chars
-```
-A June 2020 REHDA survey cited in a CIDB-hosted report listed 6,121 Bumiputera quota units unsold; 46% had been on the market more than 36 months.
-```
-**3/7** _(fact)_ · 267 chars
-```
-Industry reports describe open-market Bumiputera discounts as not means-tested: buyers of homes priced RM1 million and above still get 5% to 15%. The mix of discount, quota and release rules varies by property type and state, making national generalisation difficult.
-```
-**4/7** _(fact)_ · 257 chars
-```
-Singapore's Ethnic Integration Policy applies quotas to buyers and sellers alike. Malaysia's discount applies on the buyer side only. Comparisons across systems require care: Singapore's policy targets neighbourhood mix; Malaysia's targets ownership access.
-```
-**5/7** _(reframe)_ · 169 chars
-```
-The question is not whether Bumiputera housing access is a national priority. It is whether a developer-administered cross-subsidy is the right instrument to deliver it.
-```
-**6/7** _(analogy)_ · 250 chars
-```
-Like a discount run by a retailer instead of a government voucher: the same household receives it, but the cost is collected from other shoppers, not from tax revenue. The instrument changes who pays, what is measured, and what can be debated openly.
-```
-**7/7** _(view — ONLY post with the link)_ · 201 chars
-```
-If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
-
-https://thefourthangle.pages.dev/issue/1625
 ```
 
 ### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
@@ -2396,7 +2392,7 @@ https://thefourthangle.pages.dev/issue/1128
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
-> ⚡ **Reactive: topic is live in the radar** (anwar says rm7.5b budget allocation will help bumiputera contractors expand. kuala lumpur,). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1102-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1102`
@@ -2795,39 +2791,6 @@ The fix is independent environmental courts and community standing to challenge 
 https://thefourthangle.pages.dev/issue/1974
 ```
 
-### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
-
-**1/6** _(hook — attach image, NO link)_ · 126 chars
-```
-RM82.1B in local currency trade over 16 years: real growth, but 76% is with China and the hedging infrastructure barely exists
-```
-**2/6** _(fact)_ · 118 chars
-```
-The 16-year total equals about 10 days of 2024 trade, but within the China corridor, a quarter now bypasses the dollar
-```
-**3/6** _(fact)_ · 124 chars
-```
-76% concentration in China isn't diversification, and BRICS partner status carries tariff risk without decision making power
-```
-**4/6** _(fact)_ · 187 chars
-```
-The 1998 capital controls barred licensed offshore banks from trading ringgit instruments. In April 2024 BNM said it was not considering controls like those of the Asian financial crisis.
-```
-**5/6** _(reframe)_ · 138 chars
-```
-The question isn't whether to reduce dollar dependency. It's whether Malaysia is building yuan dependency instead, and who bears the cost.
-```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
-```
-Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
-
-https://thefourthangle.pages.dev/issue/1972
-```
-
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 - **Status:** PENDING
@@ -3028,6 +2991,43 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
+```
+
+### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1625-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1625`
+
+**1/7** _(hook — attach image, NO link)_ · 125 chars
+```
+Bumiputera property discounts range from 5% to 15% depending on state. The mechanism is industry-funded, not Treasury-funded.
+```
+**2/7** _(fact)_ · 146 chars
+```
+A June 2020 REHDA survey cited in a CIDB-hosted report listed 6,121 Bumiputera quota units unsold; 46% had been on the market more than 36 months.
+```
+**3/7** _(fact)_ · 267 chars
+```
+Industry reports describe open-market Bumiputera discounts as not means-tested: buyers of homes priced RM1 million and above still get 5% to 15%. The mix of discount, quota and release rules varies by property type and state, making national generalisation difficult.
+```
+**4/7** _(fact)_ · 257 chars
+```
+Singapore's Ethnic Integration Policy applies quotas to buyers and sellers alike. Malaysia's discount applies on the buyer side only. Comparisons across systems require care: Singapore's policy targets neighbourhood mix; Malaysia's targets ownership access.
+```
+**5/7** _(reframe)_ · 169 chars
+```
+The question is not whether Bumiputera housing access is a national priority. It is whether a developer-administered cross-subsidy is the right instrument to deliver it.
+```
+**6/7** _(analogy)_ · 250 chars
+```
+Like a discount run by a retailer instead of a government voucher: the same household receives it, but the cost is collected from other shoppers, not from tax revenue. The instrument changes who pays, what is measured, and what can be debated openly.
+```
+**7/7** _(view — ONLY post with the link)_ · 201 chars
+```
+If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
+
+https://thefourthangle.pages.dev/issue/1625
 ```
 
 ### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
