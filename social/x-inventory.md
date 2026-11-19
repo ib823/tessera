@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-18T22:11:35.853Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-19T00:26:33.323Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -8,7 +8,7 @@ Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image an
 
 ### Issue 2024 — Malaysia lets bulk palm oil blends out only on three conditions. A Port Klang complaint tests them
 
-> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (consumers in malaysia may soon be able to check chicken’s halal status under proposed new ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2024-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2024`
@@ -368,7 +368,7 @@ https://thefourthangle.pages.dev/issue/2007
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
 
-> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
@@ -778,7 +778,7 @@ https://thefourthangle.pages.dev/issue/1992
 
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
 
-> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1991-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1991`
@@ -1684,7 +1684,7 @@ https://thefourthangle.pages.dev/issue/1956
 
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
 
-> ⚡ **Reactive: topic is live in the radar** (tnb to bear bulk of rm248mil electricity bill relief cost. energy transition and water tra). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (consumers in malaysia may soon be able to check chicken’s halal status under proposed new ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1955-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1955`
