@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-19T06:19:11.219Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-19T08:15:06.448Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1222,7 +1222,7 @@ https://thefourthangle.pages.dev/issue/1978
 
 ### Issue 1977 — Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 
-> ⚡ **Reactive: topic is live in the radar** (federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1977-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1977`
@@ -1612,7 +1612,7 @@ https://thefourthangle.pages.dev/issue/1962
 
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
 
-> ⚡ **Reactive: topic is live in the radar** (federal court upholds 35-year jail term for 2 murderers. s sandanam and r ramesh will also). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
@@ -2350,6 +2350,40 @@ Like eating your seed corn in a drought. It solves today's hunger but cuts into 
 Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
 
 https://thefourthangle.pages.dev/issue/1190
+```
+
+### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
+
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
+
+**1/6** _(hook — attach image, NO link)_ · 131 chars
+```
+Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
+```
+**2/6** _(fact)_ · 267 chars
+```
+FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
+```
+**3/6** _(fact)_ · 135 chars
+```
+ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
+```
+**4/6** _(fact)_ · 268 chars
+```
+PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
+```
+**5/6** _(reframe)_ · 165 chars
+```
+The interoperability question is already half-answered: DuitNow QR is the national standard. The harder questions are about fees, BNPL exposure, and who is left out.
+```
+**6/6** _(view — ONLY post with the link)_ · 199 chars
+```
+Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
+
+https://thefourthangle.pages.dev/issue/1146
 ```
 
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
@@ -3172,39 +3206,6 @@ Like a household that hit its annual savings target. The trend is right; the que
 PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
 
 https://thefourthangle.pages.dev/issue/1201
-```
-
-### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1146-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1146`
-
-**1/6** _(hook — attach image, NO link)_ · 131 chars
-```
-Malaysia made 18.4 billion e-payment transactions in 2025 (538 per Malaysian), but 48 e-money issuers face very different economics
-```
-**2/6** _(fact)_ · 267 chars
-```
-FATF/APG: Malaysia has 48 licensed e-money issuers. Touch 'n Go reports 24M verified users and profitability since Q3 2024. Sarawak's S Pay Global runs as a state alternative with about 1.6M registered users, proof local ecosystems can coexist where politics demands.
-```
-**3/6** _(fact)_ · 135 chars
-```
-ReDI signed up 22,368 traders for e-wallets by May 2025; Sabah and Sarawak supplied 2,919 of 3,229 who joined from January to May 2025.
-```
-**4/6** _(fact)_ · 268 chars
-```
-PDPA covers banking with no carve-out, but the consent you sign at signup is the door through which your transaction data flows. Grab's notice names group companies, marketing partners and credit bureaus as recipients; TNG's names group entities and business partners.
-```
-**5/6** _(reframe)_ · 165 chars
-```
-The interoperability question is already half-answered: DuitNow QR is the national standard. The harder questions are about fees, BNPL exposure, and who is left out.
-```
-**6/6** _(view — ONLY post with the link)_ · 199 chars
-```
-Adoption is not protection. The infrastructure works. The guardrails on merchant fees, BNPL supervision, and meaningful consent are still being assembled.
-
-https://thefourthangle.pages.dev/issue/1146
 ```
 
 ### Issue 1043 — When states override environmental law, the environment has no government
