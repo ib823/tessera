@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T10:12:14.289Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T12:15:17.729Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -408,44 +408,6 @@ One better year in the diabetes data does not reverse a decade of getting heavie
 https://thefourthangle.pages.dev/issue/2002
 ```
 
-### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
-
-> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
-
-**1/7** _(hook — attach image, NO link)_ · 120 chars
-```
-A Labuan MP's appeal over the cessation of his Bersatu membership was dismissed at the Court of Appeal on 29 April 2026.
-```
-**2/7** _(fact)_ · 198 chars
-```
-Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022 (Act A1663), in force 5 October 2022. The text prevents a party from causing an MP's seat to be vacated merely by expelling that MP.
-```
-**3/7** _(fact)_ · 119 chars
-```
-Zuraida Kamaruddin's case (CoA, Dec 2024) turned on 'reasonable compensation' under the Contracts Act, not Article 49A.
-```
-**4/7** _(fact)_ · 106 chars
-```
-Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate Pandan and Setiawangsa before leaving PKR.
-```
-**5/7** _(reframe)_ · 153 chars
-```
-Article 49A(2)(c) names a constitutional protection. Section 18C of the Societies Act tells the courts not to reach it. Two laws, one shielded carve-out.
-```
-**6/7** _(analogy)_ · 200 chars
-```
-Like a constitutional door locked from the other side by a different law. Article 49A(2)(c) is the protection. Section 18C of the Societies Act 1966 keeps courts from disputes that could interpret it.
-```
-**7/7** _(view — ONLY post with the link)_ · 225 chars
-```
-Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
-
-https://thefourthangle.pages.dev/issue/2000
-```
-
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
 
 > ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
@@ -596,6 +558,44 @@ Like writing the building code after the towers go up. Now everyone watches whic
 Singapore charged four people, then four companies. Malaysia wrote a permit. Twenty months on, no Malaysian operator has been publicly charged.
 
 https://thefourthangle.pages.dev/issue/1995
+```
+
+### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
+
+> ⚡ **Reactive: topic is live in the radar** (kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berka). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
+
+**1/7** _(hook — attach image, NO link)_ · 139 chars
+```
+Two ex-ministers quit PKR and took over an existing party with no MPs. The buried line: their two seats can lawfully stay empty until GE16.
+```
+**2/7** _(fact)_ · 248 chars
+```
+Pandan and Setiawangsa are set to vacate on 18 May. Article 54(1) lets seats sit empty with fewer than two years left. GE15 was 19 November 2022. The 15th Parliament first sat 19 December 2022; the two-year carve-out window opened 19 December 2025.
+```
+**3/7** _(fact)_ · 125 chars
+```
+Resign the seat first, leave the party second. The MPs say the sequence avoids Article 49A and may sidestep PKR's RM10M bond.
+```
+**4/7** _(fact)_ · 139 chars
+```
+The carve-out used to be six months. A constitutional amendment expanded it to two years. Shad Saleem Faruqi called the change regrettable.
+```
+**5/7** _(reframe)_ · 148 chars
+```
+Anti-hopping was sold as protecting the voter's mandate. Resign the seat before the party, and the sequence circumvents the law without breaking it.
+```
+**6/7** _(analogy)_ · 158 chars
+```
+Like a residents' association chairman resigning 18 months before the AGM, with by-laws blocking any election before then. The chair, by default, stays empty.
+```
+**7/7** _(view — ONLY post with the link)_ · 221 chars
+```
+Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
+
+https://thefourthangle.pages.dev/issue/1993
 ```
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
@@ -892,6 +892,44 @@ Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then 
 Norway acted within its rules. The real cost is 15 years of LCS spending: no delivered ships, one DNAA as the only criminal endpoint across four governments.
 
 https://thefourthangle.pages.dev/issue/1983
+```
+
+### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
+
+> ⚡ **Reactive: topic is live in the radar** (kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berka). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
+
+**1/7** _(hook — attach image, NO link)_ · 152 chars
+```
+Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
+```
+**2/7** _(fact)_ · 112 chars
+```
+WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
+```
+**3/7** _(fact)_ · 121 chars
+```
+Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
+```
+**4/7** _(fact)_ · 244 chars
+```
+Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
+```
+**5/7** _(reframe)_ · 175 chars
+```
+The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
+```
+**6/7** _(analogy)_ · 74 chars
+```
+Think of it like a landlord who decides which tenants' mail gets delivered
+```
+**7/7** _(view — ONLY post with the link)_ · 169 chars
+```
+PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
+
+https://thefourthangle.pages.dev/issue/1982
 ```
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
@@ -1398,40 +1436,6 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
-### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
-
-> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
-
-**1/6** _(hook — attach image, NO link)_ · 122 chars
-```
-The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
-```
-**2/6** _(fact)_ · 125 chars
-```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
-```
-**3/6** _(fact)_ · 264 chars
-```
-In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
-```
-**4/6** _(fact)_ · 131 chars
-```
-Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
-```
-**6/6** _(view — ONLY post with the link)_ · 186 chars
-```
-Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
-
-https://thefourthangle.pages.dev/issue/1959
-```
-
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
 
 > ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
@@ -1848,44 +1852,6 @@ Amendment closed the gap in Pahang. The court route ended on standing, so the co
 https://thefourthangle.pages.dev/issue/1294
 ```
 
-### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
-
-> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
-
-**1/7** _(hook — attach image, NO link)_ · 265 chars
-```
-POCA detention orders run 2 years and can be renewed without limit. The clause that shielded the Board from the courts has been void since April 2022. The Federal Court struck down section 15B and section 4, on police remand, for breaching the separation of powers.
-```
-**2/7** _(fact)_ · 249 chars
-```
-In April 2022 a five-member Federal Court bench chaired by the Chief Justice struck down POCA sections 4 and 15B. Section 7B: Board members are appointed by the Yang di-Pertuan Agong. The Act provides for Inquiry Officer reports and Board decisions.
-```
-**3/7** _(fact)_ · 170 chars
-```
-Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates such laws despite inconsistency with Articles 5, 9, 10 or 13.
-```
-**4/7** _(fact)_ · 173 chars
-```
-SUHAKAM and Suaram raised concern in January 2019 about children detained under POCA. The Act, as reprinted in 2018, sets no duty to report detention outcomes to Parliament.
-```
-**5/7** _(reframe)_ · 115 chars
-```
-POCA is not an Article 150 emergency ordinance. It is standing law, and since 2022 its Board answers to the courts.
-```
-**6/7** _(analogy)_ · 254 chars
-```
-Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
-```
-**7/7** _(view — ONLY post with the link)_ · 170 chars
-```
-Judges, not legislators, reopened POCA detention to court review. Two-year renewable detention without trial remains the law.
-
-https://thefourthangle.pages.dev/issue/1292
-```
-
 ### Issue 1267 — Malaysia Hosts 2.13 Million Registered Migrant Workers, Three Years at Tier 2 on Trafficking
 
 > ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
@@ -1922,40 +1888,6 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
 
 https://thefourthangle.pages.dev/issue/1267
-```
-
-### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
-
-> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
-
-**1/6** _(hook — attach image, NO link)_ · 150 chars
-```
-Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
-```
-**2/6** _(fact)_ · 135 chars
-```
-Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
-```
-**3/6** _(fact)_ · 157 chars
-```
-The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
-```
-**4/6** _(fact)_ · 261 chars
-```
-SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
-```
-**5/6** _(reframe)_ · 158 chars
-```
-Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
-```
-**6/6** _(view — ONLY post with the link)_ · 220 chars
-```
-After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
-
-https://thefourthangle.pages.dev/issue/1265
 ```
 
 ### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
@@ -2429,6 +2361,43 @@ A government can set a target but not guarantee a harvest. Rice security is deci
 https://thefourthangle.pages.dev/issue/2003
 ```
 
+### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
+
+**1/7** _(hook — attach image, NO link)_ · 120 chars
+```
+A Labuan MP's appeal over the cessation of his Bersatu membership was dismissed at the Court of Appeal on 29 April 2026.
+```
+**2/7** _(fact)_ · 198 chars
+```
+Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022 (Act A1663), in force 5 October 2022. The text prevents a party from causing an MP's seat to be vacated merely by expelling that MP.
+```
+**3/7** _(fact)_ · 119 chars
+```
+Zuraida Kamaruddin's case (CoA, Dec 2024) turned on 'reasonable compensation' under the Contracts Act, not Article 49A.
+```
+**4/7** _(fact)_ · 106 chars
+```
+Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate Pandan and Setiawangsa before leaving PKR.
+```
+**5/7** _(reframe)_ · 153 chars
+```
+Article 49A(2)(c) names a constitutional protection. Section 18C of the Societies Act tells the courts not to reach it. Two laws, one shielded carve-out.
+```
+**6/7** _(analogy)_ · 200 chars
+```
+Like a constitutional door locked from the other side by a different law. Article 49A(2)(c) is the protection. Section 18C of the Societies Act 1966 keeps courts from disputes that could interpret it.
+```
+**7/7** _(view — ONLY post with the link)_ · 225 chars
+```
+Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
+
+https://thefourthangle.pages.dev/issue/2000
+```
+
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
 
 - **Status:** PENDING
@@ -2499,43 +2468,6 @@ The dollar is now software. Six licensed exchanges do not list it. US sanctions 
 https://thefourthangle.pages.dev/issue/1994
 ```
 
-### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
-
-**1/7** _(hook — attach image, NO link)_ · 139 chars
-```
-Two ex-ministers quit PKR and took over an existing party with no MPs. The buried line: their two seats can lawfully stay empty until GE16.
-```
-**2/7** _(fact)_ · 248 chars
-```
-Pandan and Setiawangsa are set to vacate on 18 May. Article 54(1) lets seats sit empty with fewer than two years left. GE15 was 19 November 2022. The 15th Parliament first sat 19 December 2022; the two-year carve-out window opened 19 December 2025.
-```
-**3/7** _(fact)_ · 125 chars
-```
-Resign the seat first, leave the party second. The MPs say the sequence avoids Article 49A and may sidestep PKR's RM10M bond.
-```
-**4/7** _(fact)_ · 139 chars
-```
-The carve-out used to be six months. A constitutional amendment expanded it to two years. Shad Saleem Faruqi called the change regrettable.
-```
-**5/7** _(reframe)_ · 148 chars
-```
-Anti-hopping was sold as protecting the voter's mandate. Resign the seat before the party, and the sequence circumvents the law without breaking it.
-```
-**6/7** _(analogy)_ · 158 chars
-```
-Like a residents' association chairman resigning 18 months before the AGM, with by-laws blocking any election before then. The chair, by default, stays empty.
-```
-**7/7** _(view — ONLY post with the link)_ · 221 chars
-```
-Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
-
-https://thefourthangle.pages.dev/issue/1993
-```
-
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
 
 - **Status:** PENDING
@@ -2567,43 +2499,6 @@ The choice was never just 'mandate or exempt.' Three peers built middle paths Ma
 Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
 
 https://thefourthangle.pages.dev/issue/1985
-```
-
-### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
-
-**1/7** _(hook — attach image, NO link)_ · 152 chars
-```
-Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
-```
-**2/7** _(fact)_ · 112 chars
-```
-WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
-```
-**3/7** _(fact)_ · 121 chars
-```
-Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
-```
-**4/7** _(fact)_ · 244 chars
-```
-Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
-```
-**5/7** _(reframe)_ · 175 chars
-```
-The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
-```
-**6/7** _(analogy)_ · 74 chars
-```
-Think of it like a landlord who decides which tenants' mail gets delivered
-```
-**7/7** _(view — ONLY post with the link)_ · 169 chars
-```
-PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
-
-https://thefourthangle.pages.dev/issue/1982
 ```
 
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
@@ -2781,6 +2676,39 @@ The question is not whether Azam Baki is guilty. It is whether any institution c
 The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
+```
+
+### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
+
+**1/6** _(hook — attach image, NO link)_ · 122 chars
+```
+The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
+```
+**2/6** _(fact)_ · 125 chars
+```
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
+```
+**3/6** _(fact)_ · 264 chars
+```
+In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
+```
+**4/6** _(fact)_ · 131 chars
+```
+Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
+```
+**6/6** _(view — ONLY post with the link)_ · 186 chars
+```
+Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
+
+https://thefourthangle.pages.dev/issue/1959
 ```
 
 ### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
@@ -3090,6 +3018,76 @@ Like renewing a licence with a tick-box form: the paperwork advances, the underl
 A law permitting 28-day pre-charge detention warrants substantive review at every renewal, anchored on official detention counts and Suaram's release-without-charge data.
 
 https://thefourthangle.pages.dev/issue/1298
+```
+
+### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
+
+**1/7** _(hook — attach image, NO link)_ · 265 chars
+```
+POCA detention orders run 2 years and can be renewed without limit. The clause that shielded the Board from the courts has been void since April 2022. The Federal Court struck down section 15B and section 4, on police remand, for breaching the separation of powers.
+```
+**2/7** _(fact)_ · 249 chars
+```
+In April 2022 a five-member Federal Court bench chaired by the Chief Justice struck down POCA sections 4 and 15B. Section 7B: Board members are appointed by the Yang di-Pertuan Agong. The Act provides for Inquiry Officer reports and Board decisions.
+```
+**3/7** _(fact)_ · 170 chars
+```
+Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates such laws despite inconsistency with Articles 5, 9, 10 or 13.
+```
+**4/7** _(fact)_ · 173 chars
+```
+SUHAKAM and Suaram raised concern in January 2019 about children detained under POCA. The Act, as reprinted in 2018, sets no duty to report detention outcomes to Parliament.
+```
+**5/7** _(reframe)_ · 115 chars
+```
+POCA is not an Article 150 emergency ordinance. It is standing law, and since 2022 its Board answers to the courts.
+```
+**6/7** _(analogy)_ · 254 chars
+```
+Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
+```
+**7/7** _(view — ONLY post with the link)_ · 170 chars
+```
+Judges, not legislators, reopened POCA detention to court review. Two-year renewable detention without trial remains the law.
+
+https://thefourthangle.pages.dev/issue/1292
+```
+
+### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
+
+**1/6** _(hook — attach image, NO link)_ · 150 chars
+```
+Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
+```
+**2/6** _(fact)_ · 135 chars
+```
+Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
+```
+**3/6** _(fact)_ · 157 chars
+```
+The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
+```
+**4/6** _(fact)_ · 261 chars
+```
+SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
+```
+**5/6** _(reframe)_ · 158 chars
+```
+Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
+```
+**6/6** _(view — ONLY post with the link)_ · 220 chars
+```
+After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
+
+https://thefourthangle.pages.dev/issue/1265
 ```
 
 ### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
