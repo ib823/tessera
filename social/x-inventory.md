@@ -1,44 +1,10 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T06:18:02.523Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T08:14:59.549Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
 ## ⏳ TO POST (91)
-
-### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
-
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
-
-**1/6** _(hook — attach image, NO link)_ · 152 chars
-```
-Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
-```
-**2/6** _(fact)_ · 171 chars
-```
-The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
-```
-**3/6** _(fact)_ · 169 chars
-```
-Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
-```
-**4/6** _(fact)_ · 167 chars
-```
-A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
-```
-**5/6** _(reframe)_ · 127 chars
-```
-Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
-```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
-```
-Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
-
-https://thefourthangle.pages.dev/issue/2019
-```
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
@@ -444,7 +410,7 @@ https://thefourthangle.pages.dev/issue/2002
 
 ### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
@@ -668,7 +634,7 @@ https://thefourthangle.pages.dev/issue/1995
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
@@ -812,7 +778,7 @@ https://thefourthangle.pages.dev/issue/1989
 
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
@@ -964,7 +930,7 @@ https://thefourthangle.pages.dev/issue/1983
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
@@ -1324,7 +1290,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1468,7 +1434,7 @@ https://thefourthangle.pages.dev/issue/1960
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
@@ -1604,7 +1570,7 @@ https://thefourthangle.pages.dev/issue/1952
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -1850,7 +1816,7 @@ https://thefourthangle.pages.dev/issue/1445
 
 ### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
@@ -1918,7 +1884,7 @@ https://thefourthangle.pages.dev/issue/1294
 
 ### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
 
-> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
@@ -2318,6 +2284,39 @@ Think of a landlord who takes back a sealed storeroom only after the tenant has 
 Malaysia has written who watches a closed reservoir, and when. Before the first import permit, publish the levy rate and the Japan terms so Malaysians see who pays.
 
 https://thefourthangle.pages.dev/issue/2023
+```
+
+### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
+
+**1/6** _(hook — attach image, NO link)_ · 152 chars
+```
+Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
+```
+**2/6** _(fact)_ · 171 chars
+```
+The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
+```
+**3/6** _(fact)_ · 169 chars
+```
+Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
+```
+**4/6** _(fact)_ · 167 chars
+```
+A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
+```
+**5/6** _(reframe)_ · 127 chars
+```
+Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
+```
+**6/6** _(view — ONLY post with the link)_ · 197 chars
+```
+Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
+
+https://thefourthangle.pages.dev/issue/2019
 ```
 
 ### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
