@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T08:14:59.549Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T10:12:14.289Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -76,7 +76,7 @@ https://thefourthangle.pages.dev/issue/2017
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -148,7 +148,7 @@ https://thefourthangle.pages.dev/issue/2012
 
 ### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2011-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2011`
@@ -224,7 +224,7 @@ https://thefourthangle.pages.dev/issue/2010
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2008-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2008`
@@ -444,40 +444,6 @@ Like a constitutional door locked from the other side by a different law. Articl
 Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
 
 https://thefourthangle.pages.dev/issue/2000
-```
-
-### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
-
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1999-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1999`
-
-**1/6** _(hook — attach image, NO link)_ · 170 chars
-```
-The royal pig-farming decree became Selangor policy through the lawful Sultan-in-Council route: Article 50 of the State Constitution plus the Exco's 12 February adoption.
-```
-**2/6** _(fact)_ · 128 chars
-```
-Article 50 of Selangor's Constitution vests executive authority in the Sultan. Article 55 binds him to Executive Council advice.
-```
-**3/6** _(fact)_ · 126 chars
-```
-DAP's Wong Siew Ki invoked Federal Constitution Article 8(2) for the pig farmers. The 16 May Daulat Tuanku rally answered her.
-```
-**4/6** _(fact)_ · 257 chars
-```
-The proposed Akta would let a senior police officer detain people for up to two weeks without a court warrant, for investigation. It was a proposal to the government, not a drafted bill. Parliament repealed the ISA, and its detention without trial, in 2012.
-```
-**5/6** _(reframe)_ · 115 chars
-```
-Parliament repealed the ISA in 2012. The Akta would aim ISA-like detention without a warrant at insults to royalty.
-```
-**6/6** _(view — ONLY post with the link)_ · 153 chars
-```
-The Sultan-in-Council route is constitutional. The Akta would borrow from a law Parliament repealed in 2012.
-
-https://thefourthangle.pages.dev/issue/1999
 ```
 
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
@@ -706,7 +672,7 @@ https://thefourthangle.pages.dev/issue/1991
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -888,7 +854,7 @@ https://thefourthangle.pages.dev/issue/1984
 
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1983-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1983`
@@ -968,7 +934,7 @@ https://thefourthangle.pages.dev/issue/1981
 
 ### Issue 1979 — 1MDB: RM31.3B Recovered, RM20.1B Left To Pay, RM6B Still In Arbitration
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
@@ -1082,7 +1048,7 @@ https://thefourthangle.pages.dev/issue/1977
 
 ### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
@@ -1154,7 +1120,7 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
@@ -1604,7 +1570,7 @@ https://thefourthangle.pages.dev/issue/1944
 
 ### Issue 1887 — 18.4 billion e-payments in 2025, yet 63% of non-urban Malaysians used cash daily in a 2021 survey
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1887-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1887`
@@ -1672,7 +1638,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
@@ -1706,7 +1672,7 @@ https://thefourthangle.pages.dev/issue/1805
 
 ### Issue 1751 — MRT3 Circle Line: Budget 2023 Targets ~RM45B Total, Down from RM68B in 2018
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1751-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1751`
@@ -1778,7 +1744,7 @@ https://thefourthangle.pages.dev/issue/1618
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1445-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1445`
@@ -1960,7 +1926,7 @@ https://thefourthangle.pages.dev/issue/1267
 
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (federal court sets feb 25 to hear altantuya family’s leave to appeal over reduced rm1.4m a). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
@@ -2142,7 +2108,7 @@ https://thefourthangle.pages.dev/issue/1128
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
-> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1102-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1102`
@@ -2461,6 +2427,39 @@ Setting a higher self-sufficiency target while output drops is like lifting your
 A government can set a target but not guarantee a harvest. Rice security is decided in the paddy field, not the policy document.
 
 https://thefourthangle.pages.dev/issue/2003
+```
+
+### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1999-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1999`
+
+**1/6** _(hook — attach image, NO link)_ · 170 chars
+```
+The royal pig-farming decree became Selangor policy through the lawful Sultan-in-Council route: Article 50 of the State Constitution plus the Exco's 12 February adoption.
+```
+**2/6** _(fact)_ · 128 chars
+```
+Article 50 of Selangor's Constitution vests executive authority in the Sultan. Article 55 binds him to Executive Council advice.
+```
+**3/6** _(fact)_ · 126 chars
+```
+DAP's Wong Siew Ki invoked Federal Constitution Article 8(2) for the pig farmers. The 16 May Daulat Tuanku rally answered her.
+```
+**4/6** _(fact)_ · 257 chars
+```
+The proposed Akta would let a senior police officer detain people for up to two weeks without a court warrant, for investigation. It was a proposal to the government, not a drafted bill. Parliament repealed the ISA, and its detention without trial, in 2012.
+```
+**5/6** _(reframe)_ · 115 chars
+```
+Parliament repealed the ISA in 2012. The Akta would aim ISA-like detention without a warrant at insults to royalty.
+```
+**6/6** _(view — ONLY post with the link)_ · 153 chars
+```
+The Sultan-in-Council route is constitutional. The Akta would borrow from a law Parliament repealed in 2012.
+
+https://thefourthangle.pages.dev/issue/1999
 ```
 
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
