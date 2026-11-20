@@ -1,10 +1,10 @@
 {
-  "last_scan": "2026-11-20T02:15:51.582689+00:00",
-  "events_fetched": 488,
-  "issues_tracked": 360,
+  "last_scan": "2026-11-20T04:13:13.601303+00:00",
+  "events_fetched": 474,
+  "issues_tracked": 361,
   "sources": {
     "news_rss": {
-      "last_fetch": "2026-11-20T02:12:50.338597+00:00",
+      "last_fetch": "2026-11-20T04:10:32.064698+00:00",
       "error_rate": 0.3333333333333333,
       "success_count": 10,
       "error_count": 5,
@@ -100,7 +100,7 @@
       ]
     },
     "reddit": {
-      "last_fetch": "2026-11-20T02:12:50.627177+00:00",
+      "last_fetch": "2026-11-20T04:10:32.645185+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
@@ -121,69 +121,72 @@
       ]
     },
     "gdelt": {
-      "last_fetch": "2026-11-20T02:15:33.276210+00:00",
-      "error_rate": 0.7272727272727273,
-      "success_count": 3,
-      "error_count": 8,
-      "status": "degraded",
-      "events_fetched": 17,
+      "last_fetch": "2026-11-20T04:12:55.593324+00:00",
+      "error_rate": 1.0,
+      "success_count": 0,
+      "error_count": 11,
+      "status": "failed",
+      "events_fetched": 0,
       "batches": {
         "attempted": 11,
-        "succeeded": 3,
-        "failed": 8,
-        "rate_limited": 6
+        "succeeded": 0,
+        "failed": 11,
+        "rate_limited": 9
       },
       "batch_results": [
         {
           "label": "domestic",
-          "status": "healthy",
-          "events_fetched": 6
+          "status": "failed",
+          "events_fetched": 0,
+          "reason": "invalid_articles_response"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
+        },
+        {
+          "label": "malaysia_interest",
+          "status": "rate_limited",
+          "events_fetched": 0,
+          "reason": "http_429"
         },
         {
           "label": "malaysia_interest",
           "status": "failed",
           "events_fetched": 0,
           "reason": "non_json_response"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "failed",
-          "events_fetched": 0,
-          "reason": "non_json_response"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "healthy",
-          "events_fetched": 1
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "healthy",
-          "events_fetched": 11
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
-        },
-        {
-          "label": "malaysia_interest",
-          "status": "rate_limited",
-          "events_fetched": 0,
-          "reason": "http_429"
         },
         {
           "label": "malaysia_interest",
@@ -200,12 +203,12 @@
       ]
     },
     "parliament": {
-      "last_fetch": "2026-11-20T02:15:44.146532+00:00",
+      "last_fetch": "2026-11-20T04:13:06.571919+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 15,
+      "events_fetched": 16,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -216,17 +219,17 @@
         {
           "label": "parliament",
           "status": "healthy",
-          "events_fetched": 15
+          "events_fetched": 16
         }
       ]
     },
     "court": {
-      "last_fetch": "2026-11-20T02:15:50.404853+00:00",
+      "last_fetch": "2026-11-20T04:13:12.725818+00:00",
       "error_rate": 0.0,
       "success_count": 1,
       "error_count": 0,
       "status": "healthy",
-      "events_fetched": 9,
+      "events_fetched": 11,
       "batches": {
         "attempted": 1,
         "succeeded": 1,
@@ -237,7 +240,7 @@
         {
           "label": "court",
           "status": "healthy",
-          "events_fetched": 9
+          "events_fetched": 11
         }
       ]
     },
