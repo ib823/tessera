@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-19T22:12:04.051Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-20T00:24:10.110Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -8,7 +8,7 @@ Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image an
 
 ### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
@@ -76,7 +76,7 @@ https://thefourthangle.pages.dev/issue/2018
 
 ### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2017-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2017`
@@ -110,7 +110,7 @@ https://thefourthangle.pages.dev/issue/2017
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -516,7 +516,7 @@ https://thefourthangle.pages.dev/issue/1999
 
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1998-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1998`
@@ -592,7 +592,7 @@ https://thefourthangle.pages.dev/issue/1997
 
 ### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
@@ -630,7 +630,7 @@ https://thefourthangle.pages.dev/issue/1996
 
 ### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1995-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1995`
@@ -740,7 +740,7 @@ https://thefourthangle.pages.dev/issue/1991
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -774,7 +774,7 @@ https://thefourthangle.pages.dev/issue/1990
 
 ### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
@@ -850,7 +850,7 @@ https://thefourthangle.pages.dev/issue/1988
 
 ### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1987-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1987`
@@ -922,7 +922,7 @@ https://thefourthangle.pages.dev/issue/1984
 
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (selangor govt tables rm3.3bil state budget for 2027. menteri besar amirudin shari says the). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1983-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1983`
@@ -960,44 +960,6 @@ Like paying 95% upfront for a fitting tailored to a suit not yet stitched, then 
 Norway acted within its rules. The real cost is 15 years of LCS spending: no delivered ships, one DNAA as the only criminal endpoint across four governments.
 
 https://thefourthangle.pages.dev/issue/1983
-```
-
-### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
-
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
-
-**1/7** _(hook — attach image, NO link)_ · 152 chars
-```
-Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
-```
-**2/7** _(fact)_ · 112 chars
-```
-WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
-```
-**3/7** _(fact)_ · 121 chars
-```
-Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
-```
-**4/7** _(fact)_ · 244 chars
-```
-Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
-```
-**5/7** _(reframe)_ · 175 chars
-```
-The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
-```
-**6/7** _(analogy)_ · 74 chars
-```
-Think of it like a landlord who decides which tenants' mail gets delivered
-```
-**7/7** _(view — ONLY post with the link)_ · 169 chars
-```
-PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
-
-https://thefourthangle.pages.dev/issue/1982
 ```
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
@@ -1116,7 +1078,7 @@ https://thefourthangle.pages.dev/issue/1978
 
 ### Issue 1977 — Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 
-> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (johor tables rm3.07b budget for 2027, forecasts rm2.33m surplus. iskandar puteri, nov 19 —). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1977-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1977`
@@ -1188,44 +1150,6 @@ Like issuing driving licences to millions before building guardrails, then count
 Three fixes close the gap: tiered deposit protection, capital requirements scaling with operator float, and mandatory literacy in subsidies.
 
 https://thefourthangle.pages.dev/issue/1975
-```
-
-### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
-
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
-
-**1/7** _(hook — attach image, NO link)_ · 137 chars
-```
-One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
-```
-**2/7** _(fact)_ · 125 chars
-```
-Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
-```
-**3/7** _(fact)_ · 234 chars
-```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
-```
-**4/7** _(fact)_ · 160 chars
-```
-Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
-```
-**5/7** _(reframe)_ · 90 chars
-```
-Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
-
-https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
@@ -1612,7 +1536,7 @@ https://thefourthangle.pages.dev/issue/1956
 
 ### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
@@ -1678,43 +1602,9 @@ A quota cut without published targeting methodology, a transitional package or a
 https://thefourthangle.pages.dev/issue/1952
 ```
 
-### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
-
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1951-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1951`
-
-**1/6** _(hook — attach image, NO link)_ · 117 chars
-```
-Iran approved all seven Malaysian-company vessels after PM Anwar called Iran's president. Transit happened in stages.
-```
-**2/6** _(fact)_ · 102 chars
-```
-Malaysia is a CMF member on paper, but no RMN naval escort was required or deployed for these vessels.
-```
-**3/6** _(fact)_ · 266 chars
-```
-MOF's fuel-subsidy estimate rose from up to RM4 billion a month on 26 March to about RM7 billion on 15 April. Brent touched $126 on 30 April. Higher crude can raise Petronas revenue and add to fuel subsidy outlay simultaneously, depending on hedging and assumptions.
-```
-**4/6** _(fact)_ · 227 chars
-```
-Putrajaya was reported to stop accepting port-of-call applications from US warships during the episode. About 20,000 seafarers were reported trapped in the Persian Gulf at one point. Industry reporting cited a 90% traffic drop.
-```
-**5/6** _(reframe)_ · 153 chars
-```
-The question is not whether the ships got through. It is whether a trade-dependent nation can keep relying on personal calls when the next strait closes.
-```
-**6/6** _(view — ONLY post with the link)_ · 196 chars
-```
-Diplomacy worked here. CMF membership without operational presence, plus reliance on a direct PM call, are the structural features the episode exposed.
-
-https://thefourthangle.pages.dev/issue/1951
-```
-
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (irb’s rm1.69b appeal in najib bankruptcy case set for feb 23; no appeal for nazifuddin. pu). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -1782,7 +1672,7 @@ https://thefourthangle.pages.dev/issue/1887
 
 ### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
 
-> ⚡ **Reactive: topic is live in the radar** (why the world’s most fearless investor wants to bet rm203 billion on malaysia. masayoshi s). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
@@ -2681,6 +2571,43 @@ Exemption is the cheapest political answer. Capacity-building is the expensive s
 https://thefourthangle.pages.dev/issue/1985
 ```
 
+### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1982-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1982`
+
+**1/7** _(hook — attach image, NO link)_ · 152 chars
+```
+Three different investigations point at three different things about Chinese-owned platforms; bundling them produces a story stronger than the evidence.
+```
+**2/7** _(fact)_ · 112 chars
+```
+WeChat surveils images and documents shared between non-China accounts to train its China-side censorship system
+```
+**3/7** _(fact)_ · 121 chars
+```
+Malaysia licensed WeChat and TikTok in Jan 2025, but the Online Safety Act 2025 excludes private messaging from its scope
+```
+**4/7** _(fact)_ · 244 chars
+```
+Chinese-Malaysian favourability of China rose from 41% to 67% between 2016 and 2022, a Merdeka Center/UM survey found RFA and Oriental Daily reported the joint survey. It measured favourable views of China, not belief in any specific narrative.
+```
+**5/7** _(reframe)_ · 175 chars
+```
+The question is not which Malaysian community believes Beijing. It is whether any user (Chinese, Malay, Tamil, English) sees how their platform decides what news reaches them.
+```
+**6/7** _(analogy)_ · 74 chars
+```
+Think of it like a landlord who decides which tenants' mail gets delivered
+```
+**7/7** _(view — ONLY post with the link)_ · 169 chars
+```
+PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
+
+https://thefourthangle.pages.dev/issue/1982
+```
+
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
 
 - **Status:** PENDING
@@ -2786,6 +2713,43 @@ Like learning the building inspector is accused of taking bribes to skip the fir
 The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
 
 https://thefourthangle.pages.dev/issue/1974
+```
+
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
+
+**1/7** _(hook — attach image, NO link)_ · 137 chars
+```
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
+```
+**2/7** _(fact)_ · 125 chars
+```
+Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
+```
+**3/7** _(fact)_ · 234 chars
+```
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
+```
+**4/7** _(fact)_ · 160 chars
+```
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
+```
+**5/7** _(reframe)_ · 90 chars
+```
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
+
+https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
@@ -2955,6 +2919,39 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
+```
+
+### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1951-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1951`
+
+**1/6** _(hook — attach image, NO link)_ · 117 chars
+```
+Iran approved all seven Malaysian-company vessels after PM Anwar called Iran's president. Transit happened in stages.
+```
+**2/6** _(fact)_ · 102 chars
+```
+Malaysia is a CMF member on paper, but no RMN naval escort was required or deployed for these vessels.
+```
+**3/6** _(fact)_ · 266 chars
+```
+MOF's fuel-subsidy estimate rose from up to RM4 billion a month on 26 March to about RM7 billion on 15 April. Brent touched $126 on 30 April. Higher crude can raise Petronas revenue and add to fuel subsidy outlay simultaneously, depending on hedging and assumptions.
+```
+**4/6** _(fact)_ · 227 chars
+```
+Putrajaya was reported to stop accepting port-of-call applications from US warships during the episode. About 20,000 seafarers were reported trapped in the Persian Gulf at one point. Industry reporting cited a 90% traffic drop.
+```
+**5/6** _(reframe)_ · 153 chars
+```
+The question is not whether the ships got through. It is whether a trade-dependent nation can keep relying on personal calls when the next strait closes.
+```
+**6/6** _(view — ONLY post with the link)_ · 196 chars
+```
+Diplomacy worked here. CMF membership without operational presence, plus reliance on a direct PM call, are the structural features the episode exposed.
+
+https://thefourthangle.pages.dev/issue/1951
 ```
 
 ### Issue 1871 — Lahad Datu at 13: no kidnappings since 2020, but ESSCOM's island base stalled at 41%
