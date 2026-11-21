@@ -1,10 +1,48 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-21T02:15:16.984Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-21T04:13:45.974Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
 ## ⏳ TO POST (91)
+
+### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
+
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2023-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2023`
+
+**1/7** _(hook — attach image, NO link)_ · 162 chars
+```
+Japan picked three projects in 2024 to store about 10 million tonnes of CO2 a year off Malaysia. The deal to ship it there was still being finalised in September.
+```
+**2/7** _(fact)_ · 161 chars
+```
+On 23 Oct 2026 Petronas, TotalEnergies and Mitsui signed a joint venture agreement for a CO2 storage hub off Peninsular Malaysia's east coast, up to 5 Mt a year.
+```
+**3/7** _(fact)_ · 146 chars
+```
+Federal rules hand a closed site's monitoring and repair to the Government at least 10 years after closure, once its CO2 is shown to be contained.
+```
+**4/7** _(fact)_ · 167 chars
+```
+Sarawak's 2022 rules set at least 20 years before handover, shorter only if containment is proven, and charge a contribution sized to cover the state's costs after it.
+```
+**5/7** _(reframe)_ · 153 chars
+```
+The asymmetry is built in. The capturing country reports the climate gain; after handover, the country that buries the CO2 inherits the duty to watch it.
+```
+**6/7** _(analogy)_ · 171 chars
+```
+Think of a landlord who takes back a sealed storeroom only after the tenant has kept it ten years, proved it tight and paid in. From then on, the upkeep is the landlord's.
+```
+**7/7** _(view — ONLY post with the link)_ · 209 chars
+```
+Malaysia has written who watches a closed reservoir, and when. Before the first import permit, publish the levy rate and the Japan terms so Malaysians see who pays.
+
+https://thefourthangle.pages.dev/issue/2023
+```
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
@@ -1122,6 +1160,44 @@ Three fixes close the gap: tiered deposit protection, capital requirements scali
 https://thefourthangle.pages.dev/issue/1975
 ```
 
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
+
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
+
+**1/7** _(hook — attach image, NO link)_ · 137 chars
+```
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
+```
+**2/7** _(fact)_ · 125 chars
+```
+Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
+```
+**3/7** _(fact)_ · 234 chars
+```
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
+```
+**4/7** _(fact)_ · 160 chars
+```
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
+```
+**5/7** _(reframe)_ · 90 chars
+```
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
+
+https://thefourthangle.pages.dev/issue/1973
+```
+
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
 
 > ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
@@ -1396,6 +1472,40 @@ Two prosecutions test two men. A suspected 26-firm cartel tests the procurement 
 The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
 
 https://thefourthangle.pages.dev/issue/1962
+```
+
+### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
+
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
+
+**1/6** _(hook — attach image, NO link)_ · 270 chars
+```
+Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
+```
+**2/6** _(fact)_ · 100 chars
+```
+The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
+```
+**3/6** _(fact)_ · 242 chars
+```
+A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
+```
+**4/6** _(fact)_ · 230 chars
+```
+MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
+```
+**5/6** _(reframe)_ · 159 chars
+```
+The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
+```
+**6/6** _(view — ONLY post with the link)_ · 187 chars
+```
+The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
+
+https://thefourthangle.pages.dev/issue/1961
 ```
 
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
@@ -2076,6 +2186,44 @@ A reform proposal: stand up an independent audit publishing per-cohort delivery 
 https://thefourthangle.pages.dev/issue/1102
 ```
 
+### Issue 1043 — When states override environmental law, the environment has no government
+
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
+
+**1/7** _(hook — attach image, NO link)_ · 151 chars
+```
+Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
+```
+**2/7** _(fact)_ · 113 chars
+```
+The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
+```
+**3/7** _(fact)_ · 269 chars
+```
+Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
+```
+**4/7** _(fact)_ · 145 chars
+```
+Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
+```
+**5/7** _(reframe)_ · 149 chars
+```
+This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
+```
+**6/7** _(analogy)_ · 223 chars
+```
+Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
+```
+**7/7** _(view — ONLY post with the link)_ · 183 chars
+```
+Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
+
+https://thefourthangle.pages.dev/issue/1043
+```
+
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
 
 > ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
@@ -2145,43 +2293,6 @@ MPOB both champions Malaysian palm oil and polices it. The law asks it to accoun
 Four weeks' quiet on a cross-border cargo can pass as routine. When the 'Malaysian' label carries the industry's imprimatur, a word on the file's status costs less than silence.
 
 https://thefourthangle.pages.dev/issue/2024
-```
-
-### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2023-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2023`
-
-**1/7** _(hook — attach image, NO link)_ · 162 chars
-```
-Japan picked three projects in 2024 to store about 10 million tonnes of CO2 a year off Malaysia. The deal to ship it there was still being finalised in September.
-```
-**2/7** _(fact)_ · 161 chars
-```
-On 23 Oct 2026 Petronas, TotalEnergies and Mitsui signed a joint venture agreement for a CO2 storage hub off Peninsular Malaysia's east coast, up to 5 Mt a year.
-```
-**3/7** _(fact)_ · 146 chars
-```
-Federal rules hand a closed site's monitoring and repair to the Government at least 10 years after closure, once its CO2 is shown to be contained.
-```
-**4/7** _(fact)_ · 167 chars
-```
-Sarawak's 2022 rules set at least 20 years before handover, shorter only if containment is proven, and charge a contribution sized to cover the state's costs after it.
-```
-**5/7** _(reframe)_ · 153 chars
-```
-The asymmetry is built in. The capturing country reports the climate gain; after handover, the country that buries the CO2 inherits the duty to watch it.
-```
-**6/7** _(analogy)_ · 171 chars
-```
-Think of a landlord who takes back a sealed storeroom only after the tenant has kept it ten years, proved it tight and paid in. From then on, the upkeep is the landlord's.
-```
-**7/7** _(view — ONLY post with the link)_ · 209 chars
-```
-Malaysia has written who watches a closed reservoir, and when. Before the first import permit, publish the levy rate and the Japan terms so Malaysians see who pays.
-
-https://thefourthangle.pages.dev/issue/2023
 ```
 
 ### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
@@ -2606,76 +2717,6 @@ Like learning the building inspector is accused of taking bribes to skip the fir
 The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
 
 https://thefourthangle.pages.dev/issue/1974
-```
-
-### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
-
-**1/7** _(hook — attach image, NO link)_ · 137 chars
-```
-One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
-```
-**2/7** _(fact)_ · 125 chars
-```
-Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
-```
-**3/7** _(fact)_ · 234 chars
-```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
-```
-**4/7** _(fact)_ · 160 chars
-```
-Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
-```
-**5/7** _(reframe)_ · 90 chars
-```
-Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
-
-https://thefourthangle.pages.dev/issue/1973
-```
-
-### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
-
-**1/6** _(hook — attach image, NO link)_ · 270 chars
-```
-Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
-```
-**2/6** _(fact)_ · 100 chars
-```
-The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
-```
-**3/6** _(fact)_ · 242 chars
-```
-A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
-```
-**4/6** _(fact)_ · 230 chars
-```
-MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
-```
-**5/6** _(reframe)_ · 159 chars
-```
-The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
-```
-**6/6** _(view — ONLY post with the link)_ · 187 chars
-```
-The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
-
-https://thefourthangle.pages.dev/issue/1961
 ```
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
@@ -3195,43 +3236,6 @@ Like a household that hit its annual savings target. The trend is right; the que
 PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
 
 https://thefourthangle.pages.dev/issue/1201
-```
-
-### Issue 1043 — When states override environmental law, the environment has no government
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
-
-**1/7** _(hook — attach image, NO link)_ · 151 chars
-```
-Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
-```
-**2/7** _(fact)_ · 113 chars
-```
-The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
-```
-**3/7** _(fact)_ · 269 chars
-```
-Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
-```
-**4/7** _(fact)_ · 145 chars
-```
-Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
-```
-**5/7** _(reframe)_ · 149 chars
-```
-This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
-```
-**6/7** _(analogy)_ · 223 chars
-```
-Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
-```
-**7/7** _(view — ONLY post with the link)_ · 183 chars
-```
-Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
-
-https://thefourthangle.pages.dev/issue/1043
 ```
 
 ### Issue 0146 — Gig Workers Act 2025: Mandatory SOCSO Registration; EPF Retirement Still Outside
