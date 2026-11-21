@@ -1,0 +1,50 @@
+IMPORTANT: Return ONLY valid JSON. No markdown code fences. No commentary before or after. Start with { and end with }.
+
+You are an independent fact checker. Verify each claim below against PRIMARY sources using web search. Do not rely on memory or training data. Primary means the ICJ's own documents (judgment, press release, verbatim record) or an official Malaysian government statement. A named news outlet counts only if it quotes such a document and you say which. If you cannot reach a primary source, mark the claim UNVERIFIED; do not guess.
+
+Watch for the four cardinal sins: OVERCLAIM (stronger than the source), UNDERCLAIM (softer than the source), MISLEADING FRAMING (true parts, false impression), UNVERIFIED DETAIL (a specific you cannot trace).
+
+=== CONTEXT ===
+
+A published Malaysian public-interest analysis (edition 1, 11 Nov 2026) said the International Court of Justice was "due to rule on 19 Nov" in The Gambia v. Myanmar. The Court delivered its judgment on the merits on 19 November 2026. Edition 2 changes only the three passages below. Everything else in the analysis is unchanged and already verified.
+
+Primary documents to check (the PDFs may need a browser):
+- ICJ press release No. 2026/30, 19 Nov 2026: https://www.icj-cij.org/sites/default/files/case-related/178/178-20261119-pre-01-00-en.pdf
+- ICJ Judgment of 19 Nov 2026: https://www.icj-cij.org/sites/default/files/case-related/178/178-20261119-jud-01-00-en.pdf
+- ICJ case 178 judgments page: https://www.icj-cij.org/case/178/judgments
+Secondary already consulted: Al Jazeera, 19 Nov 2026, https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide
+
+=== THE THREE CHANGED PASSAGES ===
+
+1. Summary under the headline:
+"On 19 Nov the World Court found that Myanmar committed genocide against the Rohingya, in The Gambia's case. Malaysia backs the case but did not intervene. UNHCR lists 129,400 Rohingya refugees and asylum-seekers in Malaysia."
+(Only the first sentence is new.)
+
+2. Opening card:
+"Malaysia backs The Gambia's genocide case, its foreign minister told an OIC meeting on 24 Sep. On 19 Nov the World Court found Myanmar 'has committed genocide'."
+(Only the second sentence is new.)
+
+3. Closing card:
+"The World Court found Myanmar committed genocide. Malaysia's Immigration Act still has no word for refugee. Malaysia chose a pass over a category in law."
+(Only the first sentence is new. "Still" asserts that the Immigration Act 1959/63 has no refugee category as of 19 Nov 2026.)
+
+=== WHAT TO CHECK ===
+
+a. The exact words of the operative clause on genocide in the judgment's dispositif, and the vote on that clause. Does "has committed genocide" appear verbatim? Is "against the Rohingya" accurate to the clause's scope (the clause may name a group and a place, e.g. northern Rakhine State)?
+b. Whether summarising the finding as "Myanmar committed genocide against the Rohingya" overclaims or underclaims the operative clause, given its exact scope and that the Court rules on state responsibility, not individual criminal guilt.
+c. Whether omitting the vote count (reported as 9-6) from all three passages creates a misleading impression.
+d. Whether Malaysia's Foreign Ministry or Prime Minister's Office has issued a statement on the judgment. If so, quote it verbatim with date and URL.
+e. Whether anything in the Immigration Act 1959/63 changed between 11 and 19 Nov 2026 (it should not have).
+
+=== OUTPUT FORMAT ===
+
+{
+  "factual_accuracy_score": 0-100,
+  "claims": [
+    {"passage": 1, "claim": "exact text checked", "status": "VERIFIED|UNVERIFIED|INCORRECT|MISLEADING", "m_true": 0.0, "m_false": 0.0, "m_unknown": 0.0, "source": "primary source with URL, page or paragraph", "correction": "suggested wording, or empty"}
+  ],
+  "operative_clause_verbatim": "the dispositif clause on genocide, quoted exactly, with its vote",
+  "malaysia_reaction": "verbatim statement with date and URL, or 'none found'",
+  "cardinal_sin_flags": [{"sin": "OVERCLAIM|UNDERCLAIM|MISLEADING_FRAMING|UNVERIFIED_DETAIL", "claim": "exact text", "why": "explanation", "primary_source": "..."}],
+  "overall_assessment": "two or three sentences"
+}
