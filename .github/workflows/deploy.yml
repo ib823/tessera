@@ -258,7 +258,17 @@ jobs:
             if [ "$actual" = "$expected" ]; then echo "Production serves this build (check $attempt)."; break; fi
             sleep 5
           done
-          node revamp/scripts/check-hosted.mjs https://thefourthangle.pages.dev
+          # The edge does not switch every route at the same moment as the home
+          # page: run 44318546210 (18 Nov 2026) saw the new home page, then the
+          # previous /corrections 3 s later; it matched the build a minute on.
+          # Retry the full check twice, 20 s apart. A route that still differs
+          # from this build after that fails the job as before.
+          for attempt in 1 2 3; do
+            if node revamp/scripts/check-hosted.mjs https://thefourthangle.pages.dev; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            echo "Hosted check failed on attempt $attempt; waiting 20 s for every route to serve this build."
+            sleep 20
+          done
           node revamp/scripts/check-first-load.mjs https://thefourthangle.pages.dev
 
       # ── Push-notification Worker (workers/notify/) ──
