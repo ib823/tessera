@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-22T10:10:42.386Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-22T12:15:13.040Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -152,7 +152,7 @@ https://thefourthangle.pages.dev/issue/2014
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -190,7 +190,7 @@ https://thefourthangle.pages.dev/issue/2013
 
 ### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
@@ -300,7 +300,7 @@ https://thefourthangle.pages.dev/issue/2010
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2008-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2008`
@@ -748,7 +748,7 @@ https://thefourthangle.pages.dev/issue/1991
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -1048,7 +1048,7 @@ https://thefourthangle.pages.dev/issue/1981
 
 ### Issue 1979 — 1MDB: RM31.3B Recovered, RM20.1B Left To Pay, RM6B Still In Arbitration
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1979-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1979`
@@ -1162,7 +1162,7 @@ https://thefourthangle.pages.dev/issue/1977
 
 ### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
@@ -1586,7 +1586,7 @@ https://thefourthangle.pages.dev/issue/1960
 
 ### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
@@ -1722,7 +1722,7 @@ https://thefourthangle.pages.dev/issue/1944
 
 ### Issue 1887 — 18.4 billion e-payments in 2025, yet 63% of non-urban Malaysians used cash daily in a 2021 survey
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1887-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1887`
@@ -1790,7 +1790,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
@@ -1824,7 +1824,7 @@ https://thefourthangle.pages.dev/issue/1805
 
 ### Issue 1751 — MRT3 Circle Line: Budget 2023 Targets ~RM45B Total, Down from RM68B in 2018
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1751-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1751`
@@ -1858,7 +1858,7 @@ https://thefourthangle.pages.dev/issue/1751
 
 ### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (rayer pertahan inisiatif loke, manfaat dinikmati rakyat tak kira kaum, agama. ahli parlime). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
@@ -2188,7 +2188,7 @@ https://thefourthangle.pages.dev/issue/1128
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
-> ⚡ **Reactive: topic is live in the radar** (kedah aims to cut operating deficit to 10.59pc with rm1.34b budget 2027, says mb. alor set). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1102-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1102`
