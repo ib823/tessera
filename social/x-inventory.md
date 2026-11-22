@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-22T08:13:45.136Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-22T10:10:42.386Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -110,6 +110,44 @@ The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretc
 Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.
 
 https://thefourthangle.pages.dev/issue/2017
+```
+
+### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
+
+> ⚡ **Reactive: topic is live in the radar** (cop31: membawa kepentingan rakyat ke meja rundingan iklim. penglibatan malaysia diharap me). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2014-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2014`
+
+**1/7** _(hook — attach image, NO link)_ · 174 chars
+```
+Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spies sit 'scattered' across Thailand. Anwar told Parliament in 2025 that Mossad targets Malaysia.
+```
+**2/7** _(fact)_ · 171 chars
+```
+Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
+```
+**3/7** _(fact)_ · 163 chars
+```
+Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
+```
+**4/7** _(fact)_ · 161 chars
+```
+Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
+```
+**5/7** _(reframe)_ · 147 chars
+```
+The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
+```
+**6/7** _(analogy)_ · 125 chars
+```
+Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
+```
+**7/7** _(view — ONLY post with the link)_ · 202 chars
+```
+Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
+
+https://thefourthangle.pages.dev/issue/2014
 ```
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
@@ -2359,43 +2397,6 @@ In the Peninsula, a data centre now has its own water-tariff category. It still 
 The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
 
 https://thefourthangle.pages.dev/issue/2016
-```
-
-### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2014-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2014`
-
-**1/7** _(hook — attach image, NO link)_ · 174 chars
-```
-Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spies sit 'scattered' across Thailand. Anwar told Parliament in 2025 that Mossad targets Malaysia.
-```
-**2/7** _(fact)_ · 171 chars
-```
-Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
-```
-**3/7** _(fact)_ · 163 chars
-```
-Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
-```
-**4/7** _(fact)_ · 161 chars
-```
-Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
-```
-**5/7** _(reframe)_ · 147 chars
-```
-The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
-```
-**6/7** _(analogy)_ · 125 chars
-```
-Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
-```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
-```
-Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
-
-https://thefourthangle.pages.dev/issue/2014
 ```
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
