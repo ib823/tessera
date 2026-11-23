@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T14:13:19.536Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T16:11:59.439Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1186,6 +1186,40 @@ The vulnerability is real but leverage is underestimated. Malaysia lacks not opt
 https://thefourthangle.pages.dev/issue/1965
 ```
 
+### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
+
+> ⚡ **Reactive: topic is live in the radar** (rm20.27bil in tax refunds paid out. this includes more than rm13 billion paid to companies). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
+
+**1/6** _(hook — attach image, NO link)_ · 152 chars
+```
+Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
+```
+**2/6** _(fact)_ · 248 chars
+```
+A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
+```
+**3/6** _(fact)_ · 263 chars
+```
+The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
+```
+**4/6** _(fact)_ · 232 chars
+```
+Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
+```
+**5/6** _(reframe)_ · 157 chars
+```
+Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
+```
+**6/6** _(view — ONLY post with the link)_ · 181 chars
+```
+The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
+
+https://thefourthangle.pages.dev/issue/1962
+```
+
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 > ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
@@ -1680,6 +1714,44 @@ Like a 28-day holding cell where one in four to five occupants is released with 
 Genuine SOSMA reform requires disaggregated public reporting on arrests, durations, charges and outcomes, not just renewal debates every five years.
 
 https://thefourthangle.pages.dev/issue/1241
+```
+
+### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
+
+> ⚡ **Reactive: topic is live in the radar** (rm20.27bil in tax refunds paid out. this includes more than rm13 billion paid to companies). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1201-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1201`
+
+**1/7** _(hook — attach image, NO link)_ · 135 chars
+```
+Malaysia narrowed its deficit to 4.1% in 2024 and 3.7% in 2025, beating the 3.8% projection. The PFFRA medium-term target is 3% of GDP.
+```
+**2/7** _(fact)_ · 221 chars
+```
+Every 1 percentage point of deficit adds tens of billions to annual borrowing. Long-term sustainability requires revenue mobilisation (broader SST, CGT) or sustained spending discipline. Both involve political trade-offs.
+```
+**3/7** _(fact)_ · 222 chars
+```
+Credit rating outlooks track consistent target performance. Downgrades are associated with higher yields and risk premia across the sovereign curve. Fitch affirmed Malaysia at BBB+ with a stable outlook on 9 December 2025.
+```
+**4/7** _(fact)_ · 266 chars
+```
+The Public Finance and Fiscal Responsibility Act 2023 (Act 850) provides statutory fiscal objectives and a 3-to-5-year MTFF. It sets a 3%-of-GDP medium-term deficit target and requires the Finance Minister to lay an annual fiscal-outlook statement before Parliament.
+```
+**5/7** _(reframe)_ · 133 chars
+```
+The 2025 target was met. The open question is whether the glide path holds to the 3% PFFRA target without revenue or spending action.
+```
+**6/7** _(analogy)_ · 222 chars
+```
+Like a household that hit its annual savings target. The trend is right; the question is whether next year stays on it. Hitting one target does not establish a glide path. Markets price the trajectory, not the single year.
+```
+**7/7** _(view — ONLY post with the link)_ · 183 chars
+```
+PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
+
+https://thefourthangle.pages.dev/issue/1201
 ```
 
 ### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
@@ -2534,39 +2606,6 @@ The ambition is not wrong. The filter is. Judge each centre by the water and pow
 https://thefourthangle.pages.dev/issue/1963
 ```
 
-### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
-
-**1/6** _(hook — attach image, NO link)_ · 152 chars
-```
-Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
-```
-**2/6** _(fact)_ · 248 chars
-```
-A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
-```
-**3/6** _(fact)_ · 263 chars
-```
-The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
-```
-**4/6** _(fact)_ · 232 chars
-```
-Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
-```
-**5/6** _(reframe)_ · 157 chars
-```
-Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
-```
-**6/6** _(view — ONLY post with the link)_ · 181 chars
-```
-The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
-
-https://thefourthangle.pages.dev/issue/1962
-```
-
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
 
 - **Status:** PENDING
@@ -3113,43 +3152,6 @@ Like a historic neighbourhood where the heirs and the city disagree on renovatio
 The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
 
 https://thefourthangle.pages.dev/issue/1229
-```
-
-### Issue 1201 — Malaysia's 2024 Deficit 4.1%, 2025 Came In at 3.7%; PFFRA Targets Frame the Glide Path
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1201-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1201`
-
-**1/7** _(hook — attach image, NO link)_ · 135 chars
-```
-Malaysia narrowed its deficit to 4.1% in 2024 and 3.7% in 2025, beating the 3.8% projection. The PFFRA medium-term target is 3% of GDP.
-```
-**2/7** _(fact)_ · 221 chars
-```
-Every 1 percentage point of deficit adds tens of billions to annual borrowing. Long-term sustainability requires revenue mobilisation (broader SST, CGT) or sustained spending discipline. Both involve political trade-offs.
-```
-**3/7** _(fact)_ · 222 chars
-```
-Credit rating outlooks track consistent target performance. Downgrades are associated with higher yields and risk premia across the sovereign curve. Fitch affirmed Malaysia at BBB+ with a stable outlook on 9 December 2025.
-```
-**4/7** _(fact)_ · 266 chars
-```
-The Public Finance and Fiscal Responsibility Act 2023 (Act 850) provides statutory fiscal objectives and a 3-to-5-year MTFF. It sets a 3%-of-GDP medium-term deficit target and requires the Finance Minister to lay an annual fiscal-outlook statement before Parliament.
-```
-**5/7** _(reframe)_ · 133 chars
-```
-The 2025 target was met. The open question is whether the glide path holds to the 3% PFFRA target without revenue or spending action.
-```
-**6/7** _(analogy)_ · 222 chars
-```
-Like a household that hit its annual savings target. The trend is right; the question is whether next year stays on it. Hitting one target does not establish a glide path. Markets price the trajectory, not the single year.
-```
-**7/7** _(view — ONLY post with the link)_ · 183 chars
-```
-PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
-
-https://thefourthangle.pages.dev/issue/1201
 ```
 
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
