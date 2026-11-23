@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T10:12:45.286Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T12:17:33.302Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -8,7 +8,7 @@ Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image an
 
 ### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
 
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2023-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2023`
@@ -674,44 +674,6 @@ Two Klang Valley seats may sit empty until the next general election because the
 https://thefourthangle.pages.dev/issue/1993
 ```
 
-### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
-
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
-
-**1/7** _(hook — attach image, NO link)_ · 265 chars
-```
-On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
-```
-**2/7** _(fact)_ · 266 chars
-```
-Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026. RM3.09 million in alleged gratification, tied to a Felda subsidiary's RM160 million purchase of the Merdeka Palace Hotel in Kuching.
-```
-**3/7** _(fact)_ · 155 chars
-```
-M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
-```
-**4/7** _(fact)_ · 114 chars
-```
-Rule 137 reviews of an apex ruling are rare: granted for quorum failure, bias, or integrity critically undermined.
-```
-**5/7** _(reframe)_ · 176 chars
-```
-When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
-```
-**6/7** _(analogy)_ · 233 chars
-```
-Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
-```
-**7/7** _(view — ONLY post with the link)_ · 222 chars
-```
-Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
-
-https://thefourthangle.pages.dev/issue/1992
-```
-
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
 > ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
@@ -782,44 +744,6 @@ The question is not whether Trump shook palm oil. It is whether new buyers like 
 The summit did not cause Malaysia's palm oil problem. Price did, in 2025, before Trump met Xi
 
 https://thefourthangle.pages.dev/issue/1989
-```
-
-### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
-
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
-
-**1/7** _(hook — attach image, NO link)_ · 246 chars
-```
-Court of Appeal: the Agong's emergency call, issue it or refuse it, is final. No court may ask why. The challenge was to a refusal (October 2020). The same architecture covers issuance, under which Parliament did not sit for seven months in 2021.
-```
-**2/7** _(fact)_ · 150 chars
-```
-Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'
-```
-**3/7** _(fact)_ · 147 chars
-```
-In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure, and ouster clauses cannot remove it (Indira Gandhi).
-```
-**4/7** _(fact)_ · 115 chars
-```
-Five federal emergencies since 1964 (1964, 1966, 1969, 1977, 2021). One documented refusal on record: October 2020.
-```
-**5/7** _(reframe)_ · 150 chars
-```
-Two checks survive in text: Parliament's Art. 150(3) annulment, and the Conference of Rulers. In 2021, Parliament did not sit while the emergency ran.
-```
-**6/7** _(analogy)_ · 235 chars
-```
-Like a referee whose call and non-call both stand, with no replay rule on either. The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.
-```
-**7/7** _(view — ONLY post with the link)_ · 211 chars
-```
-1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
-
-https://thefourthangle.pages.dev/issue/1988
 ```
 
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
@@ -900,44 +824,6 @@ Think of it like a landlord who decides which tenants' mail gets delivered
 PRC platforms carry a legal duty US and EU platforms do not. Malaysia regulates platform presence more than moderation logic
 
 https://thefourthangle.pages.dev/issue/1982
-```
-
-### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
-
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
-
-**1/7** _(hook — attach image, NO link)_ · 241 chars
-```
-Sabah just paused a federal rollout. Federal courts paused Sabah's 40% payout 5 weeks earlier. On 13 May Sabah deferred AKPS. On 6 April the Court of Appeal stayed payment on a 40% grant the High Court ruled had gone 48 years without review.
-```
-**2/7** _(fact)_ · 231 chars
-```
-On 6 April 2026 the Court of Appeal granted Putrajaya's stay on Sabah's 40% revenue payment pending appeal. AGC said the appeal contests the High Court's finding of breach by BOTH governments since 1974, not the 40% formula itself.
-```
-**3/7** _(fact)_ · 242 chars
-```
-On 13 May 2026 Sabah deferred AKPS, citing clashes between Act 860 and the Immigration Act 1959/63. CM Hajiji called Sabah's MA63 immigration autonomy 'non-negotiable' and flagged Section 6(3) as giving the state only indirect AKPS oversight.
-```
-**4/7** _(fact)_ · 141 chars
-```
-The 40% grant is a constitutional formula. Petronas's oil and gas payments to Sabah are not: they rest on the Petroleum Development Act 1974.
-```
-**5/7** _(fact)_ · 121 chars
-```
-Within 48 hours, Sabah's Law Society, immigration officers' union, and ex-CM Salleh Said Keruak backed the AKPS deferral.
-```
-**6/7** _(reframe)_ · 131 chars
-```
-The High Court found both governments in breach since 1974. Putrajaya pauses the remedy; Sabah pauses a new law before it operates.
-```
-**7/7** _(view — ONLY post with the link)_ · 179 chars
-```
-Two pauses, two clocks. Putrajaya extends a 48-year delay the court called unconstitutional. Sabah stops a new law before it operates.
-
-https://thefourthangle.pages.dev/issue/1981
 ```
 
 ### Issue 1979 — 1MDB: RM31.3B Recovered, RM20.1B Left To Pay, RM6B Still In Arbitration
@@ -1094,7 +980,7 @@ https://thefourthangle.pages.dev/issue/1974
 
 ### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
 
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
@@ -1268,7 +1154,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1302,7 +1188,7 @@ https://thefourthangle.pages.dev/issue/1965
 
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
@@ -1332,44 +1218,6 @@ The question is not whether Azam Baki is guilty. It is whether any institution c
 The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
 
 https://thefourthangle.pages.dev/issue/1961
-```
-
-### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
-
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
-
-**1/7** _(hook — attach image, NO link)_ · 168 chars
-```
-A foundation levelled what was left of a Hindu temple on its own land, under police supervision, CNA reported. The High Court later lifted a bar on its demolition work.
-```
-**2/7** _(fact)_ · 115 chars
-```
-Land title is enforceable, but demolishing a temple without court process is not the same as exercising that right.
-```
-**3/7** _(fact)_ · 110 chars
-```
-Selangor counted 688 unauthorised Hindu temples in April 2026: 433 on government land and 255 on private land.
-```
-**4/7** _(fact)_ · 139 chars
-```
-A group called Tanah Malaya crowdfunded the RM45,000 backhoe used on the temple and said it raised over RM131,000 in a month, CNA reported.
-```
-**5/7** _(reframe)_ · 140 chars
-```
-The question is not property versus religion. It is why every party in power since 1965 has chosen inaction, and who profits from the chaos.
-```
-**6/7** _(analogy)_ · 254 chars
-```
-Like a squatter settlement where every government promises land titles but nobody ever surveys the plots. The ambiguity serves someone. Unregistered places of worship exist in legal limbo because formalisation would force decisions no party wants to make
-```
-**7/7** _(view — ONLY post with the link)_ · 203 chars
-```
-Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
-
-https://thefourthangle.pages.dev/issue/1960
 ```
 
 ### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
@@ -1982,44 +1830,6 @@ A reform proposal: stand up an independent audit publishing per-cohort delivery 
 https://thefourthangle.pages.dev/issue/1102
 ```
 
-### Issue 1043 — When states override environmental law, the environment has no government
-
-> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
-
-**1/7** _(hook — attach image, NO link)_ · 151 chars
-```
-Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
-```
-**2/7** _(fact)_ · 113 chars
-```
-The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
-```
-**3/7** _(fact)_ · 269 chars
-```
-Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
-```
-**4/7** _(fact)_ · 145 chars
-```
-Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
-```
-**5/7** _(reframe)_ · 149 chars
-```
-This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
-```
-**6/7** _(analogy)_ · 223 chars
-```
-Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
-```
-**7/7** _(view — ONLY post with the link)_ · 183 chars
-```
-Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
-
-https://thefourthangle.pages.dev/issue/1043
-```
-
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
 
 > ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
@@ -2338,6 +2148,43 @@ The dollar is now software. Six licensed exchanges do not list it. US sanctions 
 https://thefourthangle.pages.dev/issue/1994
 ```
 
+### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
+
+**1/7** _(hook — attach image, NO link)_ · 265 chars
+```
+On 13 May, the apex court adjourned Isa Samad's review and ordered the courtroom audio released to both sides. The defence says the bench never invited it to submit before its 10 February verdict. The prosecution says it did on 5 February, and the defence declined.
+```
+**2/7** _(fact)_ · 266 chars
+```
+Three courts heard the same nine corruption charges and reached three different conclusions: convict 2021, acquit 2024, restore 2026. RM3.09 million in alleged gratification, tied to a Felda subsidiary's RM160 million purchase of the Merdeka Palace Hotel in Kuching.
+```
+**3/7** _(fact)_ · 155 chars
+```
+M Athimulan says he was never invited to submit before the verdict. DPP Afzainizam Abdul Aziz says the 5 February bench did invite, and Athimulan declined.
+```
+**4/7** _(fact)_ · 114 chars
+```
+Rule 137 reviews of an apex ruling are rare: granted for quorum failure, bias, or integrity critically undermined.
+```
+**5/7** _(reframe)_ · 176 chars
+```
+When two officers of the court contradict each other on what the apex court said, the question is not who is right. It is why courtroom audio is not part of the routine record.
+```
+**6/7** _(analogy)_ · 233 chars
+```
+Like a referee's match report contested by both teams, where the only neutral arbiter left is the video. The Federal Court has now ordered the audio of two earlier hearings released to both sides to test what the previous bench said.
+```
+**7/7** _(view — ONLY post with the link)_ · 222 chars
+```
+Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
+
+https://thefourthangle.pages.dev/issue/1992
+```
+
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
 
 - **Status:** PENDING
@@ -2369,6 +2216,43 @@ After four attempts in 14 years, the Harmony Bill is back in draft. The Sedition
 Singapore's Act issued no restraining order in its first 27 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
 
 https://thefourthangle.pages.dev/issue/1991
+```
+
+### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
+
+**1/7** _(hook — attach image, NO link)_ · 246 chars
+```
+Court of Appeal: the Agong's emergency call, issue it or refuse it, is final. No court may ask why. The challenge was to a refusal (October 2020). The same architecture covers issuance, under which Parliament did not sit for seven months in 2021.
+```
+**2/7** _(fact)_ · 150 chars
+```
+Article 150(8): the Agong's satisfaction 'shall be final and conclusive and shall not be challenged or called in question in any court on any ground.'
+```
+**3/7** _(fact)_ · 147 chars
+```
+In 2018 the Federal Court ruled judicial review is part of the Constitution's basic structure, and ouster clauses cannot remove it (Indira Gandhi).
+```
+**4/7** _(fact)_ · 115 chars
+```
+Five federal emergencies since 1964 (1964, 1966, 1969, 1977, 2021). One documented refusal on record: October 2020.
+```
+**5/7** _(reframe)_ · 150 chars
+```
+Two checks survive in text: Parliament's Art. 150(3) annulment, and the Conference of Rulers. In 2021, Parliament did not sit while the emergency ran.
+```
+**6/7** _(analogy)_ · 235 chars
+```
+Like a referee whose call and non-call both stand, with no replay rule on either. The Agong issued the 2021 emergency on Cabinet advice. He refused the 2020 request despite Cabinet advice. The 4 May ruling closes the courtroom on both.
+```
+**7/7** _(view — ONLY post with the link)_ · 211 chars
+```
+1979 Privy Council: reviewable. 1981 Parliament: ousted. 2018 Federal Court: ouster invalid. 2026 Court of Appeal: emergencies excluded. Only political checks remain.
+
+https://thefourthangle.pages.dev/issue/1988
 ```
 
 ### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
@@ -2472,6 +2356,43 @@ Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week
 E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
 
 https://thefourthangle.pages.dev/issue/1984
+```
+
+### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
+
+**1/7** _(hook — attach image, NO link)_ · 241 chars
+```
+Sabah just paused a federal rollout. Federal courts paused Sabah's 40% payout 5 weeks earlier. On 13 May Sabah deferred AKPS. On 6 April the Court of Appeal stayed payment on a 40% grant the High Court ruled had gone 48 years without review.
+```
+**2/7** _(fact)_ · 231 chars
+```
+On 6 April 2026 the Court of Appeal granted Putrajaya's stay on Sabah's 40% revenue payment pending appeal. AGC said the appeal contests the High Court's finding of breach by BOTH governments since 1974, not the 40% formula itself.
+```
+**3/7** _(fact)_ · 242 chars
+```
+On 13 May 2026 Sabah deferred AKPS, citing clashes between Act 860 and the Immigration Act 1959/63. CM Hajiji called Sabah's MA63 immigration autonomy 'non-negotiable' and flagged Section 6(3) as giving the state only indirect AKPS oversight.
+```
+**4/7** _(fact)_ · 141 chars
+```
+The 40% grant is a constitutional formula. Petronas's oil and gas payments to Sabah are not: they rest on the Petroleum Development Act 1974.
+```
+**5/7** _(fact)_ · 121 chars
+```
+Within 48 hours, Sabah's Law Society, immigration officers' union, and ex-CM Salleh Said Keruak backed the AKPS deferral.
+```
+**6/7** _(reframe)_ · 131 chars
+```
+The High Court found both governments in breach since 1974. Putrajaya pauses the remedy; Sabah pauses a new law before it operates.
+```
+**7/7** _(view — ONLY post with the link)_ · 179 chars
+```
+Two pauses, two clocks. Putrajaya extends a 48-year delay the court called unconstitutional. Sabah stops a new law before it operates.
+
+https://thefourthangle.pages.dev/issue/1981
 ```
 
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
@@ -2682,6 +2603,43 @@ Two prosecutions test two men. A suspected 26-firm cartel tests the procurement 
 The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
 
 https://thefourthangle.pages.dev/issue/1962
+```
+
+### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
+
+**1/7** _(hook — attach image, NO link)_ · 168 chars
+```
+A foundation levelled what was left of a Hindu temple on its own land, under police supervision, CNA reported. The High Court later lifted a bar on its demolition work.
+```
+**2/7** _(fact)_ · 115 chars
+```
+Land title is enforceable, but demolishing a temple without court process is not the same as exercising that right.
+```
+**3/7** _(fact)_ · 110 chars
+```
+Selangor counted 688 unauthorised Hindu temples in April 2026: 433 on government land and 255 on private land.
+```
+**4/7** _(fact)_ · 139 chars
+```
+A group called Tanah Malaya crowdfunded the RM45,000 backhoe used on the temple and said it raised over RM131,000 in a month, CNA reported.
+```
+**5/7** _(reframe)_ · 140 chars
+```
+The question is not property versus religion. It is why every party in power since 1965 has chosen inaction, and who profits from the chaos.
+```
+**6/7** _(analogy)_ · 254 chars
+```
+Like a squatter settlement where every government promises land titles but nobody ever surveys the plots. The ambiguity serves someone. Unregistered places of worship exist in legal limbo because formalisation would force decisions no party wants to make
+```
+**7/7** _(view — ONLY post with the link)_ · 203 chars
+```
+Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
+
+https://thefourthangle.pages.dev/issue/1960
 ```
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
@@ -3230,6 +3188,43 @@ Like adding seatbelts but skipping the crumple zone. The cheapest accident prote
 Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
 
 https://thefourthangle.pages.dev/issue/1128
+```
+
+### Issue 1043 — When states override environmental law, the environment has no government
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
+
+**1/7** _(hook — attach image, NO link)_ · 151 chars
+```
+Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
+```
+**2/7** _(fact)_ · 113 chars
+```
+The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
+```
+**3/7** _(fact)_ · 269 chars
+```
+Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
+```
+**4/7** _(fact)_ · 145 chars
+```
+Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
+```
+**5/7** _(reframe)_ · 149 chars
+```
+This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
+```
+**6/7** _(analogy)_ · 223 chars
+```
+Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
+```
+**7/7** _(view — ONLY post with the link)_ · 183 chars
+```
+Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
+
+https://thefourthangle.pages.dev/issue/1043
 ```
 
 ### Issue 0146 — Gig Workers Act 2025: Mandatory SOCSO Registration; EPF Retirement Still Outside

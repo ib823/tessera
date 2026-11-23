@@ -1,6 +1,6 @@
 # Radar — Silence Watch
 
-Scan: 2026-11-23 10:12 UTC. Queue size: 368. Accumulated picks: 25. Fresh picks: 15.
+Scan: 2026-11-23 12:17 UTC. Queue size: 372. Accumulated picks: 25. Fresh picks: 15.
 
 Structurally important events sitting in the radar queue with
 unexpectedly low coverage. Already-published topics and in-flight
@@ -31,7 +31,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.709 (silence=1.00 × importance=0.71, no age weighting)
 
-- **Age in queue:** 4.0 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.1 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -42,7 +42,7 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.661 (silence=0.99 × importance=0.67, no age weighting)
 
-- **Age in queue:** 4.3 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.4 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 9 news, 4 social — pattern: _below-expected coverage_
 
@@ -53,36 +53,47 @@ developed, and the develop list drifts into old news.
 
 - **Fresh score:** 0.649 (silence=0.98 × importance=0.67, no age weighting)
 
-- **Age in queue:** 6.3 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.4 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 45 news, 9 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### F4. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
+### F4. airasia third-quarter loss narrows, but cash dwindles and liabilities rise. revenue fell 8.4% to rm4.66 bil...
+
+- **Fresh score:** 0.611 (silence=0.99 × importance=0.61, no age weighting)
+
+- **Age in queue:** 0.1 days (source date: 2026-11-23, first seen: 2026-11-23)
+
+- **Coverage:** 8 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
+### F5. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
 
 - **Fresh score:** 0.603 (silence=0.98 × importance=0.61, no age weighting)
 
-- **Age in queue:** 5.3 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 5.4 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 20 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F5. johor on track to surpass rm3b in revenue for first time this year, says mb. iskandar puteri, nov 19 — joho...
+### F6. johor on track to surpass rm3b in revenue for first time this year, says mb. iskandar puteri, nov 19 — joho...
 
 - **Fresh score:** 0.599 (silence=0.97 × importance=0.61, no age weighting)
 
-- **Age in queue:** 4.3 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.4 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 31 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** political
 
 
-### F6. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
+### F7. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
 
 - **Fresh score:** 0.594 (silence=0.97 × importance=0.61, no age weighting)
 
@@ -93,7 +104,7 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** political
 
 
-### F7. kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berkata mesyuarat pert...
+### F8. kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berkata mesyuarat pert...
 
 - **Fresh score:** 0.562 (silence=1.00 × importance=0.56, no age weighting)
 
@@ -104,18 +115,18 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** ethnic, political
 
 
-### F8. mahkamah kekal penjara 30 tahun terhadap 2 lelaki disabit bunuh. l gopu dan v suresh juga akan dikenakan 12...
+### F9. mahkamah kekal penjara 30 tahun terhadap 2 lelaki disabit bunuh. l gopu dan v suresh juga akan dikenakan 12...
 
 - **Fresh score:** 0.562 (silence=1.00 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.2 days (source date: 2026-11-23, first seen: 2026-11-23)
+- **Age in queue:** 0.3 days (source date: 2026-11-23, first seen: 2026-11-23)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal, political
 
 
-### F9. malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation. kuala lumpur، n...
+### F10. malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation. kuala lumpur، n...
 
 - **Fresh score:** 0.550 (silence=0.97 × importance=0.56, no age weighting)
 
@@ -126,68 +137,57 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** ethnic, legal, political
 
 
-### F10. macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan claimed to possess in...
+### F11. malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called on the government...
+
+- **Fresh score:** 0.548 (silence=0.97 × importance=0.56, no age weighting)
+
+- **Age in queue:** 0.1 days (source date: 2026-11-23, first seen: 2026-11-23)
+
+- **Coverage:** 23 news, 3 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** economic, ethnic, political
+
+
+### F12. macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan claimed to possess in...
 
 - **Fresh score:** 0.535 (silence=0.95 × importance=0.56, no age weighting)
 
-- **Age in queue:** 4.9 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 5.0 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 43 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, ethnic, institutional, political
 
 
-### F11. court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds high court’s ruling ...
-
-- **Fresh score:** 0.532 (silence=0.92 × importance=0.58, no age weighting)
-
-- **Age in queue:** 6.9 days (source date: 2026-11-16, first seen: 2026-11-16)
-
-- **Coverage:** 59 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### F12. contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders klia associates ...
+### F13. contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders klia associates ...
 
 - **Fresh score:** 0.531 (silence=0.97 × importance=0.55, no age weighting)
 
-- **Age in queue:** 2.8 days (source date: 2026-11-20, first seen: 2026-11-20)
+- **Age in queue:** 2.9 days (source date: 2026-11-20, first seen: 2026-11-20)
 
 - **Coverage:** 18 news, 7 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, legal
 
 
-### F13. federal court upholds 30-year jail terms for duo in plantation murder. l gopu and v suresh will also receiv...
+### F14. federal court upholds 30-year jail terms for duo in plantation murder. l gopu and v suresh will also receiv...
 
 - **Fresh score:** 0.514 (silence=0.91 × importance=0.56, no age weighting)
 
-- **Age in queue:** 0.2 days (source date: 2026-11-23, first seen: 2026-11-23)
+- **Age in queue:** 0.3 days (source date: 2026-11-23, first seen: 2026-11-23)
 
 - **Coverage:** 72 news, 5 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** legal
 
 
-### F14. polis siasat dakwaan kegiatan jenayah terancang dari nigeria. dakwaan mengenai kumpulan itu menjadi perhati...
+### F15. polis siasat dakwaan kegiatan jenayah terancang dari nigeria. dakwaan mengenai kumpulan itu menjadi perhati...
 
 - **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
 
-- **Age in queue:** 6.3 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.4 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** ethnic, political
-
-
-### F15. selangor perlu siap siaga hadapi air pasang besar minggu depan. persiapan rapi di kawasan berisiko perlu di...
-
-- **Fresh score:** 0.513 (silence=1.00 × importance=0.52, no age weighting)
-
-- **Age in queue:** 3.4 days (source date: 2026-11-20, first seen: 2026-11-20)
-
-- **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
@@ -200,9 +200,9 @@ developed, and the develop list drifts into old news.
 
 ### S1. karim ibrahim tersinggir daripada olahraga malaysia. pindaan perlembagaan berkuatkuasa selepas diluluskan p...
 
-- **Rank score:** 0.805 (silence=1.00 × importance=0.71 × age_factor)
+- **Rank score:** 0.807 (silence=1.00 × importance=0.71 × age_factor)
 
-- **Age in queue:** 4.0 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.1 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 2 news, 1 social — pattern: _below-expected coverage_
 
@@ -211,9 +211,9 @@ developed, and the develop list drifts into old news.
 
 ### S2. malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov 17 &mdash; malays...
 
-- **Rank score:** 0.786 (silence=0.98 × importance=0.67 × age_factor)
+- **Rank score:** 0.788 (silence=0.98 × importance=0.67 × age_factor)
 
-- **Age in queue:** 6.3 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.4 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 45 news, 9 social — pattern: _below-expected coverage_
 
@@ -222,9 +222,9 @@ developed, and the develop list drifts into old news.
 
 ### S3. johor tables rm3.07b budget for 2027, forecasts rm2.33m surplus. iskandar puteri, nov 19 — the johor govern...
 
-- **Rank score:** 0.756 (silence=0.99 × importance=0.67 × age_factor)
+- **Rank score:** 0.758 (silence=0.99 × importance=0.67 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.4 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 9 news, 4 social — pattern: _below-expected coverage_
 
@@ -233,7 +233,7 @@ developed, and the develop list drifts into old news.
 
 ### S4. education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2027. kuala lumpur...
 
-- **Rank score:** 0.714 (silence=0.97 × importance=0.61 × age_factor)
+- **Rank score:** 0.715 (silence=0.97 × importance=0.61 × age_factor)
 
 - **Age in queue:** 6.1 days (source date: 2026-11-17, first seen: 2026-11-17)
 
@@ -244,9 +244,9 @@ developed, and the develop list drifts into old news.
 
 ### S5. guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five independent direct...
 
-- **Rank score:** 0.709 (silence=0.98 × importance=0.61 × age_factor)
+- **Rank score:** 0.711 (silence=0.98 × importance=0.61 × age_factor)
 
-- **Age in queue:** 5.3 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 5.4 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 20 news, 5 social — pattern: _below-expected coverage_
 
@@ -255,9 +255,9 @@ developed, and the develop list drifts into old news.
 
 ### S6. johor on track to surpass rm3b in revenue for first time this year, says mb. iskandar puteri, nov 19 — joho...
 
-- **Rank score:** 0.685 (silence=0.97 × importance=0.61 × age_factor)
+- **Rank score:** 0.687 (silence=0.97 × importance=0.61 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.4 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 31 news, 3 social — pattern: _below-expected coverage_
 
@@ -266,7 +266,7 @@ developed, and the develop list drifts into old news.
 
 ### S7. kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berkata mesyuarat pert...
 
-- **Rank score:** 0.661 (silence=1.00 × importance=0.56 × age_factor)
+- **Rank score:** 0.662 (silence=1.00 × importance=0.56 × age_factor)
 
 - **Age in queue:** 5.3 days (source date: 2026-11-18, first seen: 2026-11-18)
 
@@ -275,31 +275,20 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** ethnic, political
 
 
-### S8. court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds high court’s ruling ...
+### S8. rayer pertahan inisiatif loke, manfaat dinikmati rakyat tak kira kaum, agama. ahli parlimen jelutong turut ...
 
-- **Rank score:** 0.655 (silence=0.92 × importance=0.58 × age_factor)
+- **Rank score:** 0.627 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.9 days (source date: 2026-11-16, first seen: 2026-11-16)
-
-- **Coverage:** 59 news, 11 social — pattern: _below-expected coverage_
-
-- **Dimensions at risk:** legal, political
-
-
-### S9. rayer pertahan inisiatif loke, manfaat dinikmati rakyat tak kira kaum, agama. ahli parlimen jelutong turut ...
-
-- **Rank score:** 0.625 (silence=0.99 × importance=0.52 × age_factor)
-
-- **Age in queue:** 6.9 days (source date: 2026-11-16, first seen: 2026-11-16)
+- **Age in queue:** 7.0 days (source date: 2026-11-16, first seen: 2026-11-16)
 
 - **Coverage:** 5 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political, religious
 
 
-### S10. malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation. kuala lumpur، n...
+### S9. malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation. kuala lumpur، n...
 
-- **Rank score:** 0.624 (silence=0.97 × importance=0.56 × age_factor)
+- **Rank score:** 0.626 (silence=0.97 × importance=0.56 × age_factor)
 
 - **Age in queue:** 4.1 days (source date: 2026-11-19, first seen: 2026-11-19)
 
@@ -308,44 +297,55 @@ developed, and the develop list drifts into old news.
 - **Dimensions at risk:** ethnic, legal, political
 
 
-### S11. macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan claimed to possess in...
+### S10. macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan claimed to possess in...
 
-- **Rank score:** 0.622 (silence=0.95 × importance=0.56 × age_factor)
+- **Rank score:** 0.624 (silence=0.95 × importance=0.56 × age_factor)
 
-- **Age in queue:** 4.9 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 5.0 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 43 news, 3 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, ethnic, institutional, political
 
 
-### S12. polis siasat dakwaan kegiatan jenayah terancang dari nigeria. dakwaan mengenai kumpulan itu menjadi perhati...
+### S11. polis siasat dakwaan kegiatan jenayah terancang dari nigeria. dakwaan mengenai kumpulan itu menjadi perhati...
 
-- **Rank score:** 0.621 (silence=1.00 × importance=0.52 × age_factor)
+- **Rank score:** 0.623 (silence=1.00 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.3 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.4 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 1 news, 1 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** ethnic, political
 
 
-### S13. firm’s failure to honour contract blamed for ambulance procurement delay. health minister dzulkefly ahmad, ...
+### S12. firm’s failure to honour contract blamed for ambulance procurement delay. health minister dzulkefly ahmad, ...
 
-- **Rank score:** 0.613 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.614 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.9 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.0 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 2 news, 2 social — pattern: _below-expected coverage_
 
 - **Dimensions at risk:** economic, institutional, political
 
 
+### S13. airasia third-quarter loss narrows, but cash dwindles and liabilities rise. revenue fell 8.4% to rm4.66 bil...
+
+- **Rank score:** 0.612 (silence=0.99 × importance=0.61 × age_factor)
+
+- **Age in queue:** 0.1 days (source date: 2026-11-23, first seen: 2026-11-23)
+
+- **Coverage:** 8 news, 1 social — pattern: _below-expected coverage_
+
+- **Dimensions at risk:** political
+
+
 ### S14. mp moots using sin tax to fund public health promotion agency. pulai mp suhaizan kaiat cites the operations...
 
-- **Rank score:** 0.607 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.609 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.0 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.1 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 9 news, 3 social — pattern: _below-expected coverage_
 
@@ -354,9 +354,9 @@ developed, and the develop list drifts into old news.
 
 ### S15. peratusan pengundi bukan melayu tinggi bukan kelebihan buat ph. bekas ahli parlimen ong kian ming kata bers...
 
-- **Rank score:** 0.606 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.608 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.8 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 5.9 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 6 news, 3 social — pattern: _below-expected coverage_
 
@@ -365,9 +365,9 @@ developed, and the develop list drifts into old news.
 
 ### S16. bellingham’s underwear ad highlights football’s growing us appeal. the england and real madrid midfielder h...
 
-- **Rank score:** 0.606 (silence=0.97 × importance=0.52 × age_factor)
+- **Rank score:** 0.607 (silence=0.97 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.5 days (source date: 2026-11-16, first seen: 2026-11-16)
+- **Age in queue:** 6.6 days (source date: 2026-11-16, first seen: 2026-11-16)
 
 - **Coverage:** 18 news, 4 social — pattern: _below-expected coverage_
 
@@ -376,9 +376,9 @@ developed, and the develop list drifts into old news.
 
 ### S17. bekas exco dipecat tarik balik saman kerajaan n sembilan. peguam 10 adun bn dan pn itu maklum mahkamah ting...
 
-- **Rank score:** 0.599 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.600 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.3 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 5.4 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 4 news, 4 social — pattern: _below-expected coverage_
 
@@ -387,7 +387,7 @@ developed, and the develop list drifts into old news.
 
 ### S18. rukun negara terus diperkukuh sebagai landasan bina negara bangsa. usaha diperluas merentasi pelbagai lapis...
 
-- **Rank score:** 0.597 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.599 (silence=0.99 × importance=0.52 × age_factor)
 
 - **Age in queue:** 5.3 days (source date: 2026-11-18, first seen: 2026-11-18)
 
@@ -398,9 +398,9 @@ developed, and the develop list drifts into old news.
 
 ### S19. umno tuntut penjelasan status minit pengampunan najib. azalina othman said mahu pihak berkuasa menjelaskan ...
 
-- **Rank score:** 0.594 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.595 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 5.1 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 5.2 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -409,7 +409,7 @@ developed, and the develop list drifts into old news.
 
 ### S20. data centre boom powers malaysia’s q3 gdp to 5.5pc expansion, dosm says. putrajaya, nov 18 — malaysia’s mul...
 
-- **Rank score:** 0.585 (silence=0.97 × importance=0.52 × age_factor)
+- **Rank score:** 0.587 (silence=0.97 × importance=0.52 × age_factor)
 
 - **Age in queue:** 5.3 days (source date: 2026-11-18, first seen: 2026-11-18)
 
@@ -420,9 +420,9 @@ developed, and the develop list drifts into old news.
 
 ### S21. ‘grand theft auto vi’ launches worldwide to near-perfect reviews. analysts estimated the highly anticipated...
 
-- **Rank score:** 0.584 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.585 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.5 days (source date: 2026-11-18, first seen: 2026-11-18)
+- **Age in queue:** 4.6 days (source date: 2026-11-18, first seen: 2026-11-18)
 
 - **Coverage:** 8 news, 1 social — pattern: _below-expected coverage_
 
@@ -431,9 +431,9 @@ developed, and the develop list drifts into old news.
 
 ### S22. government cannot terminate pan borneo contracts at will, warns nanta. kuala lumpur, nov 17 &mdash;&nbsp;&n...
 
-- **Rank score:** 0.583 (silence=0.93 × importance=0.52 × age_factor)
+- **Rank score:** 0.584 (silence=0.93 × importance=0.52 × age_factor)
 
-- **Age in queue:** 6.4 days (source date: 2026-11-17, first seen: 2026-11-17)
+- **Age in queue:** 6.5 days (source date: 2026-11-17, first seen: 2026-11-17)
 
 - **Coverage:** 35 news, 9 social — pattern: _below-expected coverage_
 
@@ -442,9 +442,9 @@ developed, and the develop list drifts into old news.
 
 ### S23. sprm digesa dedah status siasatan scorpene susulan perjanjian baharu dengan perancis. sangeet kaur deo dari...
 
-- **Rank score:** 0.582 (silence=0.99 × importance=0.52 × age_factor)
+- **Rank score:** 0.583 (silence=0.99 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.3 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.4 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 4 news, 5 social — pattern: _below-expected coverage_
 
@@ -453,9 +453,9 @@ developed, and the develop list drifts into old news.
 
 ### S24. contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders klia associates ...
 
-- **Rank score:** 0.581 (silence=0.97 × importance=0.55 × age_factor)
+- **Rank score:** 0.582 (silence=0.97 × importance=0.55 × age_factor)
 
-- **Age in queue:** 2.8 days (source date: 2026-11-20, first seen: 2026-11-20)
+- **Age in queue:** 2.9 days (source date: 2026-11-20, first seen: 2026-11-20)
 
 - **Coverage:** 18 news, 7 social — pattern: _below-expected coverage_
 
@@ -464,9 +464,9 @@ developed, and the develop list drifts into old news.
 
 ### S25. tahanan rumah: minit mesyuarat dinyahklasifikasikan untuk afidavit agc, kata sumber. sumber berkata, kelulu...
 
-- **Rank score:** 0.575 (silence=0.98 × importance=0.52 × age_factor)
+- **Rank score:** 0.577 (silence=0.98 × importance=0.52 × age_factor)
 
-- **Age in queue:** 4.0 days (source date: 2026-11-19, first seen: 2026-11-19)
+- **Age in queue:** 4.1 days (source date: 2026-11-19, first seen: 2026-11-19)
 
 - **Coverage:** 5 news, 5 social — pattern: _below-expected coverage_
 
