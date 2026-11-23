@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T12:17:33.302Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T14:13:19.536Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1456,44 +1456,6 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
-```
-
-### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
-
-> ⚡ **Reactive: topic is live in the radar** (rayer pertahan inisiatif loke, manfaat dinikmati rakyat tak kira kaum, agama. ahli parlime). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
-```
-**2/7** _(fact)_ · 266 chars
-```
-The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
-```
-**3/7** _(fact)_ · 142 chars
-```
-The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
-```
-**4/7** _(fact)_ · 150 chars
-```
-Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
-```
-**5/7** _(reframe)_ · 132 chars
-```
-The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
-```
-**6/7** _(analogy)_ · 144 chars
-```
-Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
-```
-**7/7** _(view — ONLY post with the link)_ · 198 chars
-```
-The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
-
-https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
@@ -2978,6 +2940,43 @@ Like a discount run by a retailer instead of a government voucher: the same hous
 If the discount is a national priority, the fairer debate is whether to fund it from revenue. Industry-run cross-subsidies hide costs and complicate reform.
 
 https://thefourthangle.pages.dev/issue/1625
+```
+
+### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
+```
+**2/7** _(fact)_ · 266 chars
+```
+The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
+```
+**3/7** _(fact)_ · 142 chars
+```
+The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
+```
+**4/7** _(fact)_ · 150 chars
+```
+Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
+```
+**6/7** _(analogy)_ · 144 chars
+```
+Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
+```
+**7/7** _(view — ONLY post with the link)_ · 198 chars
+```
+The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
+
+https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
