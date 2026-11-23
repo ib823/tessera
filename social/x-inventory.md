@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T06:23:58.750Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T08:17:09.946Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -110,44 +110,6 @@ The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretc
 Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.
 
 https://thefourthangle.pages.dev/issue/2017
-```
-
-### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
-
-> ⚡ **Reactive: topic is live in the radar** (cop31: membawa kepentingan rakyat ke meja rundingan iklim. penglibatan malaysia diharap me). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2014-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2014`
-
-**1/7** _(hook — attach image, NO link)_ · 174 chars
-```
-Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spies sit 'scattered' across Thailand. Anwar told Parliament in 2025 that Mossad targets Malaysia.
-```
-**2/7** _(fact)_ · 171 chars
-```
-Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
-```
-**3/7** _(fact)_ · 163 chars
-```
-Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
-```
-**4/7** _(fact)_ · 161 chars
-```
-Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
-```
-**5/7** _(reframe)_ · 147 chars
-```
-The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
-```
-**6/7** _(analogy)_ · 125 chars
-```
-Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
-```
-**7/7** _(view — ONLY post with the link)_ · 202 chars
-```
-Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
-
-https://thefourthangle.pages.dev/issue/2014
 ```
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
@@ -1864,6 +1826,40 @@ Reducing the headline target does not eliminate cost-overrun risk. The test is w
 https://thefourthangle.pages.dev/issue/1751
 ```
 
+### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
+
+> ⚡ **Reactive: topic is live in the radar** (firm’s failure to honour contract blamed for ambulance procurement delay. health minister ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1626-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1626`
+
+**1/6** _(hook — attach image, NO link)_ · 260 chars
+```
+Major political actors invoke 'the social contract'. The phrase itself is not in the Federal Constitution, and its substance is contested. Different actors emphasise different constitutional provisions when discussing the concept, producing competing readings.
+```
+**2/6** _(fact)_ · 133 chars
+```
+The phrase 'social contract' does not appear in the Federal Constitution. It is invoked as a political idea, not a textual provision.
+```
+**3/6** _(fact)_ · 265 chars
+```
+UMNO framing centres on Article 153 (special position of Malays and Borneo natives) and the constitutional position of the Malay rulers. DAP statements emphasise Article 8 equality while also stating it upholds Article 153. The same text supports multiple readings.
+```
+**4/6** _(fact)_ · 163 chars
+```
+The Reid Commission's 1957 report records constitutional compromises and recommendations on citizenship, language, religion and the special position of the Malays.
+```
+**5/6** _(reframe)_ · 155 chars
+```
+A foundational concept that different parties read differently is not a fixed text. It is a constitutional narrative that each side reads against the text.
+```
+**6/6** _(view — ONLY post with the link)_ · 207 chars
+```
+Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
+
+https://thefourthangle.pages.dev/issue/1626
+```
+
 ### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
 
 > ⚡ **Reactive: topic is live in the radar** (rayer pertahan inisiatif loke, manfaat dinikmati rakyat tak kira kaum, agama. ahli parlime). Post now, don't wait for a slot.
@@ -2198,44 +2194,6 @@ Adoption is not protection. The infrastructure works. The guardrails on merchant
 https://thefourthangle.pages.dev/issue/1146
 ```
 
-### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
-
-> ⚡ **Reactive: topic is live in the radar** (cop31: membawa kepentingan rakyat ke meja rundingan iklim. penglibatan malaysia diharap me). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
-
-**1/7** _(hook — attach image, NO link)_ · 132 chars
-```
-Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
-```
-**2/7** _(fact)_ · 124 chars
-```
-Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
-```
-**3/7** _(fact)_ · 112 chars
-```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
-```
-**4/7** _(fact)_ · 148 chars
-```
-DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
-```
-**5/7** _(reframe)_ · 137 chars
-```
-The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
-```
-**6/7** _(analogy)_ · 269 chars
-```
-Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
-
-https://thefourthangle.pages.dev/issue/1128
-```
-
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
 > ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
@@ -2447,6 +2405,43 @@ In the Peninsula, a data centre now has its own water-tariff category. It still 
 The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
 
 https://thefourthangle.pages.dev/issue/2016
+```
+
+### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2014-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2014`
+
+**1/7** _(hook — attach image, NO link)_ · 174 chars
+```
+Sondhi Limthongkul's 10 September letter to Israel's ambassador says Mossad spies sit 'scattered' across Thailand. Anwar told Parliament in 2025 that Mossad targets Malaysia.
+```
+**2/7** _(fact)_ · 171 chars
+```
+Iranians jailed in Bangkok in 2013 over bombs police said targeted Israeli diplomats. Shalom Avitan jailed in KL in 2025 over six guns meant, he said, for a rival Israeli.
+```
+**3/7** _(fact)_ · 163 chars
+```
+Sihasak Phuangketkeow said on 27 July Bangkok would ask Malaysia to deny insurgents safe haven. Kelantan police, 2 August: no evidence suspects fled into Kelantan.
+```
+**4/7** _(fact)_ · 161 chars
+```
+Fourth Army chief Norathip Poinok called the 51 attacks of 22 August possible retaliation for his sweeps and an 18.7 million baht cash seizure, pending evidence.
+```
+**5/7** _(reframe)_ · 147 chars
+```
+The Deep South needs no imported villain. It has a 22-year fight over self-rule, 340 billion baht in Thai budgets, and nearly 6,000 certified dead.
+```
+**6/7** _(analogy)_ · 125 chars
+```
+Like blaming a stranger three streets away for the fire while the neighbour is at the door and the wiring report sits unread.
+```
+**7/7** _(view — ONLY post with the link)_ · 202 chars
+```
+Every case we checked puts Israel in Bangkok, Pattaya, Phuket or Kuala Lumpur. The foreign hand Bangkok named this year is an unproven sanctuary in Malaysia.
+
+https://thefourthangle.pages.dev/issue/2014
 ```
 
 ### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
@@ -2997,39 +2992,6 @@ ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 2
 https://thefourthangle.pages.dev/issue/1871
 ```
 
-### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1626-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1626`
-
-**1/6** _(hook — attach image, NO link)_ · 260 chars
-```
-Major political actors invoke 'the social contract'. The phrase itself is not in the Federal Constitution, and its substance is contested. Different actors emphasise different constitutional provisions when discussing the concept, producing competing readings.
-```
-**2/6** _(fact)_ · 133 chars
-```
-The phrase 'social contract' does not appear in the Federal Constitution. It is invoked as a political idea, not a textual provision.
-```
-**3/6** _(fact)_ · 265 chars
-```
-UMNO framing centres on Article 153 (special position of Malays and Borneo natives) and the constitutional position of the Malay rulers. DAP statements emphasise Article 8 equality while also stating it upholds Article 153. The same text supports multiple readings.
-```
-**4/6** _(fact)_ · 163 chars
-```
-The Reid Commission's 1957 report records constitutional compromises and recommendations on citizenship, language, religion and the special position of the Malays.
-```
-**5/6** _(reframe)_ · 155 chars
-```
-A foundational concept that different parties read differently is not a fixed text. It is a constitutional narrative that each side reads against the text.
-```
-**6/6** _(view — ONLY post with the link)_ · 207 chars
-```
-Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
-
-https://thefourthangle.pages.dev/issue/1626
-```
-
 ### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
 
 - **Status:** PENDING
@@ -3238,6 +3200,43 @@ Like a household that hit its annual savings target. The trend is right; the que
 PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
 
 https://thefourthangle.pages.dev/issue/1201
+```
+
+### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
+
+**1/7** _(hook — attach image, NO link)_ · 132 chars
+```
+Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
+```
+**2/7** _(fact)_ · 124 chars
+```
+Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
+```
+**3/7** _(fact)_ · 112 chars
+```
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
+```
+**4/7** _(fact)_ · 148 chars
+```
+DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
+```
+**5/7** _(reframe)_ · 137 chars
+```
+The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
+```
+**6/7** _(analogy)_ · 269 chars
+```
+Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
+
+https://thefourthangle.pages.dev/issue/1128
 ```
 
 ### Issue 0146 — Gig Workers Act 2025: Mandatory SOCSO Registration; EPF Retirement Still Outside
