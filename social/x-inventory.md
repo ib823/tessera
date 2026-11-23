@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T04:14:40.985Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T06:23:58.750Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -46,7 +46,7 @@ https://thefourthangle.pages.dev/issue/2023
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (johor on track to surpass rm3b in revenue for first time this year, says mb. iskandar pute). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
@@ -298,6 +298,44 @@ Tabung Haji says it now pays on audited accounts. The politician ban has yet to 
 https://thefourthangle.pages.dev/issue/2010
 ```
 
+### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
+
+> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2009-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2009`
+
+**1/7** _(hook — attach image, NO link)_ · 262 chars
+```
+Suspected Israeli operations in Malaysia share a signature: the operative enters on another country's passport. The 2018 assassins of a Palestinian lecturer used Serbian and Montenegrin papers; the 2024 gunman flew in French. Dubai's 2010 hit squad did the same.
+```
+**2/7** _(fact)_ · 99 chars
+```
+Gunmen fired 14 bullets at Fadi al-Batsh, a lecturer, as he walked to dawn prayers in Kuala Lumpur.
+```
+**3/7** _(fact)_ · 126 chars
+```
+In 2022, Malaysians abducted a Gaza programmer in Kuala Lumpur. Prosecutors say they wanted secrets on phone-hacking software.
+```
+**4/7** _(fact)_ · 63 chars
+```
+Every conviction so far is for guns or abduction, never spying.
+```
+**5/7** _(reframe)_ · 101 chars
+```
+The danger never lay in a hidden cell. It lies in a border for sale and locals hired at arm's length.
+```
+**6/7** _(analogy)_ · 205 chars
+```
+Think of a burglar who never picks a lock. He pays the doorman, hires local hands who never see his face, and leaves on a passport borrowed from a tourist. The police report says trespassing, not burglary.
+```
+**7/7** _(view — ONLY post with the link)_ · 210 chars
+```
+Ministers now name suspects in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
+
+https://thefourthangle.pages.dev/issue/2009
+```
+
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
 > ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
@@ -376,7 +414,7 @@ https://thefourthangle.pages.dev/issue/2007
 
 ### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
@@ -676,7 +714,7 @@ https://thefourthangle.pages.dev/issue/1993
 
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
@@ -710,40 +748,6 @@ Like a referee's match report contested by both teams, where the only neutral ar
 Three courts heard the same nine charges and reached three different conclusions. The fourth round is not about Isa's guilt. It is about whether the defence was given the floor.
 
 https://thefourthangle.pages.dev/issue/1992
-```
-
-### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
-
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1991-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1991`
-
-**1/6** _(hook — attach image, NO link)_ · 251 chars
-```
-On 7 April 2026, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill: 'mediation over punishment'. Three earlier NUCC bills drafted in 2014 were shelved by 2020. The named comparators have track records worth reading.
-```
-**2/6** _(fact)_ · 170 chars
-```
-Najib pledged in 2012 to repeal the Sedition Act. Anwar's coalition pledged repeal in 2018, narrowed it to 'draconian provisions' in 2022, then withdrew in November 2023.
-```
-**3/6** _(fact)_ · 125 chars
-```
-Singapore's Maintenance of Religious Harmony Act took effect in 1992. By 2019, no restraining order had been issued under it.
-```
-**4/6** _(fact)_ · 141 chars
-```
-Zimbabwe's National Peace and Reconciliation Commission closed in 2023 with no Gukurahundi outcome. Its enabling Act took five years to pass.
-```
-**5/6** _(reframe)_ · 99 chars
-```
-After four attempts in 14 years, the Harmony Bill is back in draft. The Sedition Act repeal is not.
-```
-**6/6** _(view — ONLY post with the link)_ · 224 chars
-```
-Singapore's Act issued no restraining order in its first 27 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
-
-https://thefourthangle.pages.dev/issue/1991
 ```
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
@@ -820,7 +824,7 @@ https://thefourthangle.pages.dev/issue/1989
 
 ### Issue 1988 — Court of Appeal: no court can review an emergency call, issuance or refusal
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1988-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1988`
@@ -1010,7 +1014,7 @@ https://thefourthangle.pages.dev/issue/1982
 
 ### Issue 1981 — Sabah paused a federal rollout. Federal courts paused Sabah's 40% payout.
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1981-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1981`
@@ -1198,6 +1202,44 @@ Three fixes close the gap: tiered deposit protection, capital requirements scali
 https://thefourthangle.pages.dev/issue/1975
 ```
 
+### Issue 1974 — DOE chief charged with taking RM100K over an EIA exemption, on a road that killed nine
+
+> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1974-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1974`
+
+**1/7** _(hook — attach image, NO link)_ · 115 chars
+```
+Malaysia's top two environmental regulators are charged. The DG allegedly took RM100,000 to consider an EIA bypass.
+```
+**2/7** _(fact)_ · 252 chars
+```
+The DG asked for 3,000 more pollution-control staff. Fourteen months later he allegedly took RM100,000 cash at his office. DOE runs 1,100 officers for 60,000 facilities, a 1:55 ratio. Until the ban, e-waste import exemptions sat at the DG's discretion.
+```
+**3/7** _(fact)_ · 244 chars
+```
+MACC says e-waste smuggling ran for about five years. Six days after the DG's arrest, Malaysia banned all e-waste imports. MACC froze RM10.2M in 16 accounts. Ban announced Feb 4, gazetted effective Apr 1. 800+ containers stranded at Port Klang.
+```
+**4/7** _(fact)_ · 213 chars
+```
+The DG faces up to 20 years under the MACC Act; the deputy, up to 2 years per count under the Penal Code. The alleged payments to the deputy ran over two years. MACC detained six e-waste company owners in January.
+```
+**5/7** _(reframe)_ · 127 chars
+```
+Bribery charges put two officials in the dock. The road's 2018 dead, most of them foreign workers, had no say in its approvals.
+```
+**6/7** _(analogy)_ · 245 chars
+```
+Like learning the building inspector is accused of taking bribes to skip the fire exits, after the building already burned down. The charges don't answer how many other approvals were compromised, or whether Sabah and Sarawak face the same risk.
+```
+**7/7** _(view — ONLY post with the link)_ · 176 chars
+```
+The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
+
+https://thefourthangle.pages.dev/issue/1974
+```
+
 ### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
 
 > ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
@@ -1268,40 +1310,6 @@ The question isn't whether to reduce dollar dependency. It's whether Malaysia is
 Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
 
 https://thefourthangle.pages.dev/issue/1972
-```
-
-### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
-
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
-
-**1/6** _(hook — attach image, NO link)_ · 218 chars
-```
-A gazette backdated 22 years bypassed Selangor's public inquiry law, NGOs say. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
-```
-**2/6** _(fact)_ · 117 chars
-```
-Selangor has required a public inquiry before forest excision since 2011. Bukit Cherakah's degazetting followed none.
-```
-**3/6** _(fact)_ · 189 chars
-```
-316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments A UNDP-funded survey found tapir, gibbon and leopard cat, all totally protected.
-```
-**4/6** _(fact)_ · 137 chars
-```
-In September 2021, after the KLNFR excision went through, Selangor halted development and pledged to regazette. The SACF excision stands.
-```
-**5/6** _(reframe)_ · 131 chars
-```
-This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
-```
-**6/6** _(view — ONLY post with the link)_ · 181 chars
-```
-Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
-
-https://thefourthangle.pages.dev/issue/1971
 ```
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
@@ -1408,7 +1416,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1548,7 +1556,7 @@ https://thefourthangle.pages.dev/issue/1961
 
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1960-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1960`
@@ -1688,7 +1696,7 @@ https://thefourthangle.pages.dev/issue/1952
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -1932,38 +1940,42 @@ Medical tourism is a legitimate export. The reform proposal: expand specialist s
 https://thefourthangle.pages.dev/issue/1445
 ```
 
-### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
+### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1298-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1298`
 
-**1/6** _(hook — attach image, NO link)_ · 248 chars
+**1/7** _(hook — attach image, NO link)_ · 122 chars
 ```
-Parliament passed the maternal-citizenship amendment in 2024. Pre-amendment children needed a separate Federal Court settlement to be covered. Suriani Kempe v Kerajaan Malaysia ran 2020 to 2025. The legislative fix arrived in October-December 2024.
+SOSMA Section 4(11) requires Parliament to extend or let lapse the 28-day pre-charge detention authority every five years.
 ```
-**2/6** _(fact)_ · 108 chars
+**2/7** _(fact)_ · 260 chars
 ```
-The Dewan Rakyat passed the Bill 206 to 1 on 17 October 2024; the Dewan Negara passed it on 3 December 2024.
+SOSMA Section 4(11) sets the five-year review trigger for the Section 4(5) Superintendent-or-above detention power. The 2022 renewal was a motion put to a vote. Separately, in December 2025, a parliamentary select committee urged a review of the 28-day period.
 ```
-**3/6** _(fact)_ · 133 chars
+**3/7** _(fact)_ · 260 chars
 ```
-On 10 March 2025, a Federal Court bench endorsed a consent order between Family Frontiers and the government for pre-amendment cases.
+The Home Minister counted 6,892 SOSMA detentions from 2012 to 2025. Suaram reports 20-28% of SOSMA detainees are released without charge. The count did not exist at the 2022 renewal vote: it came in a March 2026 written reply, which Suaram cited in April 2026.
 ```
-**4/6** _(fact)_ · 147 chars
+**4/7** _(fact)_ · 133 chars
 ```
-Residual gaps remain: non-retroactivity, pre-implementation births, adults over 18, and stateless local-born children outside the settlement class.
+Civil-society organisations (Bar Council, Suaram, Lawyers for Liberty) have publicly urged MPs to reject the renewal or repeal SOSMA.
 ```
-**5/6** _(reframe)_ · 160 chars
+**5/7** _(reframe)_ · 139 chars
 ```
-The story is no longer 'will the government recognise mothers'. It is which residual gaps remain after the legislative and judicial fixes settled the main case.
+The renewal mechanism extends an investigative-detention authority. It is not designed to revisit whether the authority should still exist.
 ```
-**6/6** _(view — ONLY post with the link)_ · 208 chars
+**6/7** _(analogy)_ · 172 chars
 ```
-Parliament voted to end the central injustice in 2024 and the 2025 settlement gave earlier children a route. At October 2026 the amendment still had no start date.
+Like renewing a licence with a tick-box form: the paperwork advances, the underlying decision is never re-examined. Renewal procedure is not the same as substantive review.
+```
+**7/7** _(view — ONLY post with the link)_ · 215 chars
+```
+A law permitting 28-day pre-charge detention warrants substantive review at every renewal, anchored on official detention counts and Suaram's release-without-charge data.
 
-https://thefourthangle.pages.dev/issue/1325
+https://thefourthangle.pages.dev/issue/1298
 ```
 
 ### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
@@ -1998,6 +2010,44 @@ Continued provisions alleged to conflict with Indira Gandhi are the constitution
 Amendment closed the gap in Pahang. The court route ended on standing, so the constitutional question stays undecided.
 
 https://thefourthangle.pages.dev/issue/1294
+```
+
+### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
+
+> ⚡ **Reactive: topic is live in the radar** (malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
+
+**1/7** _(hook — attach image, NO link)_ · 265 chars
+```
+POCA detention orders run 2 years and can be renewed without limit. The clause that shielded the Board from the courts has been void since April 2022. The Federal Court struck down section 15B and section 4, on police remand, for breaching the separation of powers.
+```
+**2/7** _(fact)_ · 249 chars
+```
+In April 2022 a five-member Federal Court bench chaired by the Chief Justice struck down POCA sections 4 and 15B. Section 7B: Board members are appointed by the Yang di-Pertuan Agong. The Act provides for Inquiry Officer reports and Board decisions.
+```
+**3/7** _(fact)_ · 170 chars
+```
+Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates such laws despite inconsistency with Articles 5, 9, 10 or 13.
+```
+**4/7** _(fact)_ · 173 chars
+```
+SUHAKAM and Suaram raised concern in January 2019 about children detained under POCA. The Act, as reprinted in 2018, sets no duty to report detention outcomes to Parliament.
+```
+**5/7** _(reframe)_ · 115 chars
+```
+POCA is not an Article 150 emergency ordinance. It is standing law, and since 2022 its Board answers to the courts.
+```
+**6/7** _(analogy)_ · 254 chars
+```
+Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
+```
+**7/7** _(view — ONLY post with the link)_ · 170 chars
+```
+Judges, not legislators, reopened POCA detention to court review. Two-year renewable detention without trial remains the law.
+
+https://thefourthangle.pages.dev/issue/1292
 ```
 
 ### Issue 1267 — Malaysia Hosts 2.13 Million Registered Migrant Workers, Three Years at Tier 2 on Trafficking
@@ -2150,7 +2200,7 @@ https://thefourthangle.pages.dev/issue/1146
 
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
 
-> ⚡ **Reactive: topic is live in the radar** (high court rejects mukhriz’s bid to challenge rm5mil tax bill. judge says the dispute shou). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (cop31: membawa kepentingan rakyat ke meja rundingan iklim. penglibatan malaysia diharap me). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
@@ -2399,43 +2449,6 @@ The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write
 https://thefourthangle.pages.dev/issue/2016
 ```
 
-### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2009-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2009`
-
-**1/7** _(hook — attach image, NO link)_ · 262 chars
-```
-Suspected Israeli operations in Malaysia share a signature: the operative enters on another country's passport. The 2018 assassins of a Palestinian lecturer used Serbian and Montenegrin papers; the 2024 gunman flew in French. Dubai's 2010 hit squad did the same.
-```
-**2/7** _(fact)_ · 99 chars
-```
-Gunmen fired 14 bullets at Fadi al-Batsh, a lecturer, as he walked to dawn prayers in Kuala Lumpur.
-```
-**3/7** _(fact)_ · 126 chars
-```
-In 2022, Malaysians abducted a Gaza programmer in Kuala Lumpur. Prosecutors say they wanted secrets on phone-hacking software.
-```
-**4/7** _(fact)_ · 63 chars
-```
-Every conviction so far is for guns or abduction, never spying.
-```
-**5/7** _(reframe)_ · 101 chars
-```
-The danger never lay in a hidden cell. It lies in a border for sale and locals hired at arm's length.
-```
-**6/7** _(analogy)_ · 205 chars
-```
-Think of a burglar who never picks a lock. He pays the doorman, hires local hands who never see his face, and leaves on a passport borrowed from a tourist. The police report says trespassing, not burglary.
-```
-**7/7** _(view — ONLY post with the link)_ · 210 chars
-```
-Ministers now name suspects in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
-
-https://thefourthangle.pages.dev/issue/2009
-```
-
 ### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
 
 - **Status:** PENDING
@@ -2580,6 +2593,39 @@ The dollar is now software. Six licensed exchanges do not list it. US sanctions 
 https://thefourthangle.pages.dev/issue/1994
 ```
 
+### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1991-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1991`
+
+**1/6** _(hook — attach image, NO link)_ · 251 chars
+```
+On 7 April 2026, Putrajaya picked Singapore, Australia and Zimbabwe as models for the new Harmony Bill: 'mediation over punishment'. Three earlier NUCC bills drafted in 2014 were shelved by 2020. The named comparators have track records worth reading.
+```
+**2/6** _(fact)_ · 170 chars
+```
+Najib pledged in 2012 to repeal the Sedition Act. Anwar's coalition pledged repeal in 2018, narrowed it to 'draconian provisions' in 2022, then withdrew in November 2023.
+```
+**3/6** _(fact)_ · 125 chars
+```
+Singapore's Maintenance of Religious Harmony Act took effect in 1992. By 2019, no restraining order had been issued under it.
+```
+**4/6** _(fact)_ · 141 chars
+```
+Zimbabwe's National Peace and Reconciliation Commission closed in 2023 with no Gukurahundi outcome. Its enabling Act took five years to pass.
+```
+**5/6** _(reframe)_ · 99 chars
+```
+After four attempts in 14 years, the Harmony Bill is back in draft. The Sedition Act repeal is not.
+```
+**6/6** _(view — ONLY post with the link)_ · 224 chars
+```
+Singapore's Act issued no restraining order in its first 27 years. Zimbabwe delivered no Gukurahundi outcome. The 2026 Malaysian announcement does not address Sedition Act repeal.
+
+https://thefourthangle.pages.dev/issue/1991
+```
+
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
 
 - **Status:** PENDING
@@ -2683,41 +2729,37 @@ The DKU and the AGC call the 19 April move invalid; its backers say it stands. N
 https://thefourthangle.pages.dev/issue/1976
 ```
 
-### Issue 1974 — DOE chief charged with taking RM100K over an EIA exemption, on a road that killed nine
+### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1974-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1974`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
 
-**1/7** _(hook — attach image, NO link)_ · 115 chars
+**1/6** _(hook — attach image, NO link)_ · 218 chars
 ```
-Malaysia's top two environmental regulators are charged. The DG allegedly took RM100,000 to consider an EIA bypass.
+A gazette backdated 22 years bypassed Selangor's public inquiry law, NGOs say. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
 ```
-**2/7** _(fact)_ · 252 chars
+**2/6** _(fact)_ · 117 chars
 ```
-The DG asked for 3,000 more pollution-control staff. Fourteen months later he allegedly took RM100,000 cash at his office. DOE runs 1,100 officers for 60,000 facilities, a 1:55 ratio. Until the ban, e-waste import exemptions sat at the DG's discretion.
+Selangor has required a public inquiry before forest excision since 2011. Bukit Cherakah's degazetting followed none.
 ```
-**3/7** _(fact)_ · 244 chars
+**3/6** _(fact)_ · 189 chars
 ```
-MACC says e-waste smuggling ran for about five years. Six days after the DG's arrest, Malaysia banned all e-waste imports. MACC froze RM10.2M in 16 accounts. Ban announced Feb 4, gazetted effective Apr 1. 800+ containers stranded at Port Klang.
+316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments A UNDP-funded survey found tapir, gibbon and leopard cat, all totally protected.
 ```
-**4/7** _(fact)_ · 213 chars
+**4/6** _(fact)_ · 137 chars
 ```
-The DG faces up to 20 years under the MACC Act; the deputy, up to 2 years per count under the Penal Code. The alleged payments to the deputy ran over two years. MACC detained six e-waste company owners in January.
+In September 2021, after the KLNFR excision went through, Selangor halted development and pledged to regazette. The SACF excision stands.
 ```
-**5/7** _(reframe)_ · 127 chars
+**5/6** _(reframe)_ · 131 chars
 ```
-Bribery charges put two officials in the dock. The road's 2018 dead, most of them foreign workers, had no say in its approvals.
+This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
 ```
-**6/7** _(analogy)_ · 245 chars
+**6/6** _(view — ONLY post with the link)_ · 181 chars
 ```
-Like learning the building inspector is accused of taking bribes to skip the fire exits, after the building already burned down. The charges don't answer how many other approvals were compromised, or whether Sabah and Sarawak face the same risk.
-```
-**7/7** _(view — ONLY post with the link)_ · 176 chars
-```
-The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
+Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
 
-https://thefourthangle.pages.dev/issue/1974
+https://thefourthangle.pages.dev/issue/1971
 ```
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
@@ -3025,78 +3067,37 @@ If the discount is a national priority, the fairer debate is whether to fund it 
 https://thefourthangle.pages.dev/issue/1625
 ```
 
-### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
+### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1298-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1298`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
 
-**1/7** _(hook — attach image, NO link)_ · 122 chars
+**1/6** _(hook — attach image, NO link)_ · 248 chars
 ```
-SOSMA Section 4(11) requires Parliament to extend or let lapse the 28-day pre-charge detention authority every five years.
+Parliament passed the maternal-citizenship amendment in 2024. Pre-amendment children needed a separate Federal Court settlement to be covered. Suriani Kempe v Kerajaan Malaysia ran 2020 to 2025. The legislative fix arrived in October-December 2024.
 ```
-**2/7** _(fact)_ · 260 chars
+**2/6** _(fact)_ · 108 chars
 ```
-SOSMA Section 4(11) sets the five-year review trigger for the Section 4(5) Superintendent-or-above detention power. The 2022 renewal was a motion put to a vote. Separately, in December 2025, a parliamentary select committee urged a review of the 28-day period.
+The Dewan Rakyat passed the Bill 206 to 1 on 17 October 2024; the Dewan Negara passed it on 3 December 2024.
 ```
-**3/7** _(fact)_ · 260 chars
+**3/6** _(fact)_ · 133 chars
 ```
-The Home Minister counted 6,892 SOSMA detentions from 2012 to 2025. Suaram reports 20-28% of SOSMA detainees are released without charge. The count did not exist at the 2022 renewal vote: it came in a March 2026 written reply, which Suaram cited in April 2026.
+On 10 March 2025, a Federal Court bench endorsed a consent order between Family Frontiers and the government for pre-amendment cases.
 ```
-**4/7** _(fact)_ · 133 chars
+**4/6** _(fact)_ · 147 chars
 ```
-Civil-society organisations (Bar Council, Suaram, Lawyers for Liberty) have publicly urged MPs to reject the renewal or repeal SOSMA.
+Residual gaps remain: non-retroactivity, pre-implementation births, adults over 18, and stateless local-born children outside the settlement class.
 ```
-**5/7** _(reframe)_ · 139 chars
+**5/6** _(reframe)_ · 160 chars
 ```
-The renewal mechanism extends an investigative-detention authority. It is not designed to revisit whether the authority should still exist.
+The story is no longer 'will the government recognise mothers'. It is which residual gaps remain after the legislative and judicial fixes settled the main case.
 ```
-**6/7** _(analogy)_ · 172 chars
+**6/6** _(view — ONLY post with the link)_ · 208 chars
 ```
-Like renewing a licence with a tick-box form: the paperwork advances, the underlying decision is never re-examined. Renewal procedure is not the same as substantive review.
-```
-**7/7** _(view — ONLY post with the link)_ · 215 chars
-```
-A law permitting 28-day pre-charge detention warrants substantive review at every renewal, anchored on official detention counts and Suaram's release-without-charge data.
+Parliament voted to end the central injustice in 2024 and the 2025 settlement gave earlier children a route. At October 2026 the amendment still had no start date.
 
-https://thefourthangle.pages.dev/issue/1298
-```
-
-### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
-
-**1/7** _(hook — attach image, NO link)_ · 265 chars
-```
-POCA detention orders run 2 years and can be renewed without limit. The clause that shielded the Board from the courts has been void since April 2022. The Federal Court struck down section 15B and section 4, on police remand, for breaching the separation of powers.
-```
-**2/7** _(fact)_ · 249 chars
-```
-In April 2022 a five-member Federal Court bench chaired by the Chief Justice struck down POCA sections 4 and 15B. Section 7B: Board members are appointed by the Yang di-Pertuan Agong. The Act provides for Inquiry Officer reports and Board decisions.
-```
-**3/7** _(fact)_ · 170 chars
-```
-Article 5 protects personal liberty. POCA operates as a special law under Article 149. Article 149 validates such laws despite inconsistency with Articles 5, 9, 10 or 13.
-```
-**4/7** _(fact)_ · 173 chars
-```
-SUHAKAM and Suaram raised concern in January 2019 about children detained under POCA. The Act, as reprinted in 2018, sets no duty to report detention outcomes to Parliament.
-```
-**5/7** _(reframe)_ · 115 chars
-```
-POCA is not an Article 150 emergency ordinance. It is standing law, and since 2022 its Board answers to the courts.
-```
-**6/7** _(analogy)_ · 254 chars
-```
-Like a registered-person watchlist decided by an appointed committee, with detention as the operating consequence. Preventive detention allows confinement without a criminal trial. Article 151 provides limited procedural safeguards via an advisory board.
-```
-**7/7** _(view — ONLY post with the link)_ · 170 chars
-```
-Judges, not legislators, reopened POCA detention to court review. Two-year renewable detention without trial remains the law.
-
-https://thefourthangle.pages.dev/issue/1292
+https://thefourthangle.pages.dev/issue/1325
 ```
 
 ### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
