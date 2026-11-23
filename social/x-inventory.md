@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T08:17:09.946Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-23T10:12:45.286Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -114,7 +114,7 @@ https://thefourthangle.pages.dev/issue/2017
 
 ### Issue 2013 — Umno is collecting Najib's RM50m fine into a party account. No law limits or names the donors.
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2013-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2013`
@@ -224,7 +224,7 @@ https://thefourthangle.pages.dev/issue/2011
 
 ### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2010-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2010`
@@ -300,7 +300,7 @@ https://thefourthangle.pages.dev/issue/2009
 
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2008-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2008`
@@ -448,7 +448,7 @@ https://thefourthangle.pages.dev/issue/2005
 
 ### Issue 2002 — Malaysia's Diabetes Rate Dipped in 2023; the Obesity Driving It Kept Climbing
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2002-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2002`
@@ -486,7 +486,7 @@ https://thefourthangle.pages.dev/issue/2002
 
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1998-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1998`
@@ -562,7 +562,7 @@ https://thefourthangle.pages.dev/issue/1997
 
 ### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1996-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1996`
@@ -714,7 +714,7 @@ https://thefourthangle.pages.dev/issue/1992
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -748,7 +748,7 @@ https://thefourthangle.pages.dev/issue/1990
 
 ### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
@@ -822,81 +822,9 @@ Like a referee whose call and non-call both stand, with no replay rule on either
 https://thefourthangle.pages.dev/issue/1988
 ```
 
-### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1987-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1987`
-
-**1/7** _(hook — attach image, NO link)_ · 139 chars
-```
-The median Malaysian MP is 52; Malaysia's median age, 31. Only 5% of MPs are 35 or younger, and the constitution does not stand in the way.
-```
-**2/7** _(fact)_ · 143 chars
-```
-Same cast since the 1970s. Lim Kit Siang won his first seat in 1969 and retired only in 2022. Anwar, who founded ABIM in 1971, became PM at 75.
-```
-**3/7** _(fact)_ · 146 chars
-```
-Ministers may qualify for gratuities reported up to RM2 million. Stacked pensions across MP, ADUN, and cabinet roles can exceed RM100,000 a month.
-```
-**4/7** _(fact)_ · 167 chars
-```
-France's 34-year-old PM in 2024 was replaced eight months later by Michel Barnier, 73. Anwar's Dec 2025 'reset' made the Speaker's son Youth and Sports Minister at 29.
-```
-**5/7** _(reframe)_ · 143 chars
-```
-The candidacy age was cut to 18 in 2019. In March 2026 a 10-year PM term limit fell two votes short. The machinery refuses to constrain itself.
-```
-**6/7** _(analogy)_ · 228 chars
-```
-Imagine a relay race that pays each runner more the longer they hold the baton, and the baton tends to pass to the runner's son. Up to RM2 million gratuity on leaving the cabinet. Stacked pensions that can top RM100,000 a month.
-```
-**7/7** _(view — ONLY post with the link)_ · 182 chars
-```
-The bottleneck is not age. It is the machinery that picks candidates, rewards long tenure and leaves just 11 of 222 MPs aged 35 or under.
-
-https://thefourthangle.pages.dev/issue/1987
-```
-
-### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
-
-**1/6** _(hook — attach image, NO link)_ · 265 chars
-```
-On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
-```
-**2/6** _(fact)_ · 267 chars
-```
-A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
-```
-**3/6** _(fact)_ · 134 chars
-```
-By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
-```
-**4/6** _(fact)_ · 155 chars
-```
-The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
-```
-**5/6** _(reframe)_ · 174 chars
-```
-Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
-```
-**6/6** _(view — ONLY post with the link)_ · 216 chars
-```
-E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
-
-https://thefourthangle.pages.dev/issue/1984
-```
-
 ### Issue 1983 — Norway scrapped Malaysia's missile deal. The RM6 billion LCS scandal it buries is bigger.
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1983-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1983`
@@ -1050,44 +978,6 @@ RM31.3B recovered is real. Reading 74.5% as a scandal nearly settled outruns wha
 https://thefourthangle.pages.dev/issue/1979
 ```
 
-### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
-
-**1/7** _(hook — attach image, NO link)_ · 135 chars
-```
-Criminal case filings across Malaysia's courts rose from 1.5 million in 2021 to 2.5 million by November 2025, a 63% jump in four years.
-```
-**2/7** _(fact)_ · 140 chars
-```
-Heidy Quah won her free-speech case in 2025. In February 2026 the Federal Court restored the law's words, but narrowed how they can be used.
-```
-**3/7** _(fact)_ · 135 chars
-```
-Federal Court April 2026: seven prisoners convicted as minors lost their bid to challenge indefinite detention. The youngest is now 27.
-```
-**4/7** _(fact)_ · 158 chars
-```
-The Chief Justice has named the crisis. He told judges to deliver judgments on time or take 'a dignified exit.' Through the June recess, registries stay open.
-```
-**5/7** _(reframe)_ · 97 chars
-```
-Justice delayed is justice denied. But delay is not random, and someone decides whose case waits.
-```
-**6/7** _(analogy)_ · 265 chars
-```
-Imagine a hospital that has nearly doubled its admissions but not its doctors. Some patients are seen quickly. Others wait through their illness. The ones seen first are not always the ones whose case is most urgent. Triage is itself a choice, and someone makes it.
-```
-**7/7** _(view — ONLY post with the link)_ · 205 chars
-```
-The Chief Justice has named the crisis and unveiled a 10-year reform plan. The harder test is whether the cases that get heard match the ones that most need to.
-
-https://thefourthangle.pages.dev/issue/1978
-```
-
 ### Issue 1977 — Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 
 > ⚡ **Reactive: topic is live in the radar** (johor tables rm3.07b budget for 2027, forecasts rm2.33m surplus. iskandar puteri, nov 19 —). Post now, don't wait for a slot.
@@ -1128,7 +1018,7 @@ https://thefourthangle.pages.dev/issue/1977
 
 ### Issue 1975 — E-money transactions hit 6.4 billion in 2025; PIDM does not directly insure the balances
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1975-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1975`
@@ -1276,7 +1166,7 @@ https://thefourthangle.pages.dev/issue/1972
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (kabinet lulus suruhanjaya pendidikan tinggi bersama malaysia-china. zambry abd kadir berka). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
@@ -1410,78 +1300,6 @@ The vulnerability is real but leverage is underestimated. Malaysia lacks not opt
 https://thefourthangle.pages.dev/issue/1965
 ```
 
-### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
-
-**1/7** _(hook — attach image, NO link)_ · 259 chars
-```
-Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
-```
-**2/7** _(fact)_ · 143 chars
-```
-AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
-```
-**3/7** _(fact)_ · 145 chars
-```
-The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
-```
-**4/7** _(fact)_ · 253 chars
-```
-Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
-```
-**5/7** _(reframe)_ · 84 chars
-```
-The federal line asks what a centre computes, not how much water and power it draws.
-```
-**6/7** _(analogy)_ · 81 chars
-```
-Like a water ration that checks what each house is for, not what its meter reads.
-```
-**7/7** _(view — ONLY post with the link)_ · 175 chars
-```
-The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
-
-https://thefourthangle.pages.dev/issue/1963
-```
-
-### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
-
-**1/6** _(hook — attach image, NO link)_ · 152 chars
-```
-Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
-```
-**2/6** _(fact)_ · 248 chars
-```
-A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
-```
-**3/6** _(fact)_ · 263 chars
-```
-The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
-```
-**4/6** _(fact)_ · 232 chars
-```
-Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
-```
-**5/6** _(reframe)_ · 157 chars
-```
-Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
-```
-**6/6** _(view — ONLY post with the link)_ · 181 chars
-```
-The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
-
-https://thefourthangle.pages.dev/issue/1962
-```
-
 ### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
 
 > ⚡ **Reactive: topic is live in the radar** (court dismisses contractor’s appeal over rm12.2mil perlis water project. bench upholds hig). Post now, don't wait for a slot.
@@ -1552,74 +1370,6 @@ Like a squatter settlement where every government promises land titles but nobod
 Malaysia needs statutory reform for unregistered worship sites, but must confront the class and ethnic power dynamics that make reform politically impossible.
 
 https://thefourthangle.pages.dev/issue/1960
-```
-
-### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
-
-**1/6** _(hook — attach image, NO link)_ · 268 chars
-```
-Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
-```
-**2/6** _(fact)_ · 252 chars
-```
-Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
-```
-**3/6** _(fact)_ · 247 chars
-```
-The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
-```
-**4/6** _(fact)_ · 149 chars
-```
-Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
-```
-**5/6** _(reframe)_ · 160 chars
-```
-The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
-```
-**6/6** _(view — ONLY post with the link)_ · 217 chars
-```
-Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
-
-https://thefourthangle.pages.dev/issue/1956
-```
-
-### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
-
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
-
-**1/6** _(hook — attach image, NO link)_ · 112 chars
-```
-Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
-```
-**2/6** _(fact)_ · 138 chars
-```
-Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
-```
-**3/6** _(fact)_ · 266 chars
-```
-Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
-```
-**4/6** _(fact)_ · 120 chars
-```
-Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
-```
-**5/6** _(reframe)_ · 171 chars
-```
-The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
-```
-**6/6** _(view — ONLY post with the link)_ · 203 chars
-```
-Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
-
-https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1952 — RON95 Quota Cut, April to August 2026: The 90% 'Unaffected' Figure Had No Published Basis
@@ -1726,7 +1476,7 @@ https://thefourthangle.pages.dev/issue/1887
 
 ### Issue 1867 — MACC: 1MDB Recovery Reaches RM31.3 Billion, 74.5% of RM42B Losses
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1867-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1867`
@@ -1760,7 +1510,7 @@ https://thefourthangle.pages.dev/issue/1867
 
 ### Issue 1805 — LCS Cost RM11.22 Billion; Maharaja Lela First Sea-Going Jan 2026, Programme Cut 6 to 5
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1805-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1805`
@@ -1794,7 +1544,7 @@ https://thefourthangle.pages.dev/issue/1805
 
 ### Issue 1751 — MRT3 Circle Line: Budget 2023 Targets ~RM45B Total, Down from RM68B in 2018
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1751-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1751`
@@ -1900,7 +1650,7 @@ https://thefourthangle.pages.dev/issue/1618
 
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (johor on track to surpass rm3b in revenue for first time this year, says mb. iskandar pute). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1445-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1445`
@@ -2048,7 +1798,7 @@ https://thefourthangle.pages.dev/issue/1292
 
 ### Issue 1267 — Malaysia Hosts 2.13 Million Registered Migrant Workers, Three Years at Tier 2 on Trafficking
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1267-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1267`
@@ -2196,7 +1946,7 @@ https://thefourthangle.pages.dev/issue/1146
 
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1102-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1102`
@@ -2272,7 +2022,7 @@ https://thefourthangle.pages.dev/issue/1043
 
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
 
-> ⚡ **Reactive: topic is live in the radar** (epf investment income up 30% to rm83.32bil in first 9 months of 2026. total investment inc). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysians lost rm6.95b to online scams since 2023, home ministry says. kuala lumpur, nov ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-0154-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 0154`
@@ -2621,6 +2371,43 @@ Singapore's Act issued no restraining order in its first 27 years. Zimbabwe deli
 https://thefourthangle.pages.dev/issue/1991
 ```
 
+### Issue 1987 — Median MP is 52; Malaysia's median age is 31. A PM term limit fell two votes short.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1987-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1987`
+
+**1/7** _(hook — attach image, NO link)_ · 139 chars
+```
+The median Malaysian MP is 52; Malaysia's median age, 31. Only 5% of MPs are 35 or younger, and the constitution does not stand in the way.
+```
+**2/7** _(fact)_ · 143 chars
+```
+Same cast since the 1970s. Lim Kit Siang won his first seat in 1969 and retired only in 2022. Anwar, who founded ABIM in 1971, became PM at 75.
+```
+**3/7** _(fact)_ · 146 chars
+```
+Ministers may qualify for gratuities reported up to RM2 million. Stacked pensions across MP, ADUN, and cabinet roles can exceed RM100,000 a month.
+```
+**4/7** _(fact)_ · 167 chars
+```
+France's 34-year-old PM in 2024 was replaced eight months later by Michel Barnier, 73. Anwar's Dec 2025 'reset' made the Speaker's son Youth and Sports Minister at 29.
+```
+**5/7** _(reframe)_ · 143 chars
+```
+The candidacy age was cut to 18 in 2019. In March 2026 a 10-year PM term limit fell two votes short. The machinery refuses to constrain itself.
+```
+**6/7** _(analogy)_ · 228 chars
+```
+Imagine a relay race that pays each runner more the longer they hold the baton, and the baton tends to pass to the runner's son. Up to RM2 million gratuity on leaving the cabinet. Stacked pensions that can top RM100,000 a month.
+```
+**7/7** _(view — ONLY post with the link)_ · 182 chars
+```
+The bottleneck is not age. It is the machinery that picks candidates, rewards long tenure and leaves just 11 of 222 MPs aged 35 or under.
+
+https://thefourthangle.pages.dev/issue/1987
+```
+
 ### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
 
 - **Status:** PENDING
@@ -2654,6 +2441,39 @@ Exemption is the cheapest political answer. Capacity-building is the expensive s
 https://thefourthangle.pages.dev/issue/1985
 ```
 
+### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1984-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1984`
+
+**1/6** _(hook — attach image, NO link)_ · 265 chars
+```
+On 6 December 2025, a week after Pakatan Harapan's Sabah election loss, PM Anwar raised the e-invoice exemption to RM1m turnover. SAMENTA welcomed the move as relief for about 200,000 SMEs. The announcement came at a Sabah-Madani engagement days after the election.
+```
+**2/6** _(fact)_ · 267 chars
+```
+A 2023 government estimate put Malaysia's shadow economy near 21% of GDP, around RM330 billion. Other estimates run from 4% to 24.5%. Khazanah Research Institute: informal sector 4.0-7.8% of GDP (2019). World Economics now shows 24.5%. Definitions and methods differ.
+```
+**3/6** _(fact)_ · 134 chars
+```
+By 22 December 2025 LHDN had logged 820.5 million e-invoices from 111,600 taxpayers: Phase 1-2 compliance over 90%, Phase 3 above 80%.
+```
+**4/6** _(fact)_ · 155 chars
+```
+The RM1m-5m transition was extended on 5 January 2026 (to end-2026) and 20 April (to end-2027). From 1 September 2026 the exemption threshold rose to RM3m.
+```
+**5/6** _(reframe)_ · 174 chars
+```
+Phase 1-2 compliance is over 90%. Four softenings in nine months, first one week after a state election. The system scales when enforced; the rule moves on a political clock.
+```
+**6/6** _(view — ONLY post with the link)_ · 216 chars
+```
+E-invoicing works where enforced: 820m invoices, over 90% Phase 1-2 compliance. Cost-relief has a stated rationale; four softenings in nine months set a different pattern.
+
+https://thefourthangle.pages.dev/issue/1984
+```
+
 ### Issue 1980 — Zahid wants firmer law on insults; sedition cases nearly doubled in 2025
 
 - **Status:** PENDING
@@ -2685,6 +2505,43 @@ Amnesty says PM Anwar pledged to abolish and reform laws like the Sedition Act. 
 Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the law in Feb 2026. The PM once pledged to abolish such laws. Zahid asks for more.
 
 https://thefourthangle.pages.dev/issue/1980
+```
+
+### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
+
+**1/7** _(hook — attach image, NO link)_ · 135 chars
+```
+Criminal case filings across Malaysia's courts rose from 1.5 million in 2021 to 2.5 million by November 2025, a 63% jump in four years.
+```
+**2/7** _(fact)_ · 140 chars
+```
+Heidy Quah won her free-speech case in 2025. In February 2026 the Federal Court restored the law's words, but narrowed how they can be used.
+```
+**3/7** _(fact)_ · 135 chars
+```
+Federal Court April 2026: seven prisoners convicted as minors lost their bid to challenge indefinite detention. The youngest is now 27.
+```
+**4/7** _(fact)_ · 158 chars
+```
+The Chief Justice has named the crisis. He told judges to deliver judgments on time or take 'a dignified exit.' Through the June recess, registries stay open.
+```
+**5/7** _(reframe)_ · 97 chars
+```
+Justice delayed is justice denied. But delay is not random, and someone decides whose case waits.
+```
+**6/7** _(analogy)_ · 265 chars
+```
+Imagine a hospital that has nearly doubled its admissions but not its doctors. Some patients are seen quickly. Others wait through their illness. The ones seen first are not always the ones whose case is most urgent. Triage is itself a choice, and someone makes it.
+```
+**7/7** _(view — ONLY post with the link)_ · 205 chars
+```
+The Chief Justice has named the crisis and unveiled a 10-year reform plan. The harder test is whether the cases that get heard match the ones that most need to.
+
+https://thefourthangle.pages.dev/issue/1978
 ```
 
 ### Issue 1976 — Negeri Sembilan Throne: Three of the Four Undang Titles Are Now Contested
@@ -2755,6 +2612,76 @@ This isn't one government's hypocrisy. It's a structural failure where states pr
 Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
 
 https://thefourthangle.pages.dev/issue/1971
+```
+
+### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1963-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1963`
+
+**1/7** _(hook — attach image, NO link)_ · 259 chars
+```
+Malaysia is betting its future on data centres. Johor residents are asking who'll be left with water. Gelang Patah residents protested a China-based site. Power applications from data centres passed 11,000MW by December 2024, about 40% of Peninsular capacity.
+```
+**2/7** _(fact)_ · 143 chars
+```
+AI applications are 'easily approved', the PM said. AMRO calls the AI boom a key driver of the build-out, and AI work highly compute-intensive.
+```
+**3/7** _(fact)_ · 145 chars
+```
+The PM cited water too. In June 2026 the energy and water minister gave national totals only: centres drew 28.68 million litres a day in January.
+```
+**4/7** _(fact)_ · 253 chars
+```
+Johor went from almost no data centre capacity in 2020 to about 80% of Malaysia's operating capacity in 2024, AMRO says. More than half its centres exceed 100MW, driven by demand from international operators that provide cloud and AI-intensive services.
+```
+**5/7** _(reframe)_ · 84 chars
+```
+The federal line asks what a centre computes, not how much water and power it draws.
+```
+**6/7** _(analogy)_ · 81 chars
+```
+Like a water ration that checks what each house is for, not what its meter reads.
+```
+**7/7** _(view — ONLY post with the link)_ · 175 chars
+```
+The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
+
+https://thefourthangle.pages.dev/issue/1963
+```
+
+### Issue 1962 — Generals charged at last; MACC's procurement probe spans 4,600-plus projects
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1962-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1962`
+
+**1/6** _(hook — attach image, NO link)_ · 152 chars
+```
+Two former military chiefs were charged with corruption in January 2026. Both pleaded not guilty. The bigger test is the procurement system around them.
+```
+**2/6** _(fact)_ · 248 chars
+```
+A suspected 26-firm cartel allegedly bribed senior officers for military contracts, GlobalPost reported in January 2026. MACC is examining 158 projects above RM500,000 and more than 4,500 smaller ones. By 30 January the probe had led to 23 arrests.
+```
+**3/6** _(fact)_ · 263 chars
+```
+The LCS warship scandal's CBT case against a former navy chief ended in a DNAA in March 2025. Ten months later, a suspected 26-firm cartel surfaced. A Kuala Lumpur Sessions Court found Ahmad Ramli Nor unfit for trial on three CBT counts involving RM21.08 million.
+```
+**4/6** _(fact)_ · 232 chars
+```
+Opening Parliament on 19 January 2026, the King warned of a wider hunt for the corrupt: 'I will continue to hunt you down.' The first general was charged three days later. Each charge remains an allegation until a court rules on it.
+```
+**5/6** _(reframe)_ · 157 chars
+```
+Two prosecutions test two men. A suspected 26-firm cartel tests the procurement system itself. The LCS case, ended by a DNAA, shows how such tests can stall.
+```
+**6/6** _(view — ONLY post with the link)_ · 181 chars
+```
+The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
+
+https://thefourthangle.pages.dev/issue/1962
 ```
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
@@ -2860,6 +2787,39 @@ Like building a wall around a garden. The wall keeps competitors out, but it als
 https://thefourthangle.pages.dev/issue/1957
 ```
 
+### Issue 1956 — Expat Salary Floor Doubles to RM20K from 1 June 2026; The Pipeline Question Remains
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1956-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1956`
+
+**1/6** _(hook — attach image, NO link)_ · 268 chars
+```
+Malaysia doubles the Category I Employment Pass minimum salary to RM20,000 from 1 June 2026. Official framing: focus expatriate hiring on high-impact expertise. Replacement plans (training, mentoring, documentation) now start 1 January 2027, after a May 2026 deferral.
+```
+**2/6** _(fact)_ · 252 chars
+```
+Semiconductor target: 60,000 highly skilled engineers by 2030, under the National Semiconductor Strategy. World Bank documents Malaysian brain drain, with Singapore as the main destination. The price-of-replacements lever is separate from the pipeline.
+```
+**3/6** _(fact)_ · 247 chars
+```
+The new floor scales differently across firm sizes. DOSM: MSMEs are 39.5% of GDP and 48.7% of employment in 2024. Category I foreign hires now face double the threshold. The official FAQ says monitoring will use documentation and periodic reports.
+```
+**4/6** _(fact)_ · 149 chars
+```
+Singapore's EP floor starts at SGD5,600 (about RM17,400) for most sectors and SGD6,200 (about RM19,300) in finance, for applicants aged 23 and under.
+```
+**5/6** _(reframe)_ · 160 chars
+```
+The salary floor adjusts the price of foreign replacement. The pipeline question (graduates, retention, brain-drain destinations) is a separate set of policies.
+```
+**6/6** _(view — ONLY post with the link)_ · 217 chars
+```
+Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
+
+https://thefourthangle.pages.dev/issue/1956
+```
+
 ### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
 
 - **Status:** PENDING
@@ -2924,6 +2884,39 @@ The question is no longer whether WFH was 'announced with no details'. It is whe
 Crisis-born reforms can stick if the rules outlast the crisis. The PSD circular is a real document; the test is whether departments measure output and publish results.
 
 https://thefourthangle.pages.dev/issue/1954
+```
+
+### Issue 1953 — April Vegetable Prices: Farmers Warn 30-50% Hikes as Fertiliser Costs Climb
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1953-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1953`
+
+**1/6** _(hook — attach image, NO link)_ · 112 chars
+```
+Vegetable farmers are warning of 30-50% price rises after Hari Raya. The Hormuz disruption is part of the story.
+```
+**2/6** _(fact)_ · 138 chars
+```
+Kpler observed 23 fertiliser-related vessels in the Gulf with Hormuz transit uncertain. World Bank flagged a sharp March 2026 price spike.
+```
+**3/6** _(fact)_ · 266 chars
+```
+Lower-income households are more exposed to food price rises. DOSM data show B40 households spend 71.6% on daily necessities, against 64% for T20. Distributional harm from food shocks can be obscured in aggregate CPI. Coping behaviour needs separate survey evidence.
+```
+**4/6** _(fact)_ · 120 chars
+```
+Indonesia stockpiles via Pupuk Indonesia; Vietnam's price law covers fertilisers; Thailand monitors fertiliser reserves.
+```
+**5/6** _(reframe)_ · 171 chars
+```
+The question is not whether external shocks are real. It is whether Malaysia has the stockpile, stabilisation framework, or farmgate-to-retail transparency to absorb them.
+```
+**6/6** _(view — ONLY post with the link)_ · 203 chars
+```
+Hormuz raised the cost of input dependency. NAFAS buffer stocks exist, but with about 61% of fertiliser imported, the next shock still reaches the wet market.
+
+https://thefourthangle.pages.dev/issue/1953
 ```
 
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
