@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-24T08:16:09.472Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-24T10:12:13.203Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -600,7 +600,7 @@ https://thefourthangle.pages.dev/issue/1993
 
 ### Issue 1990 — MACC recommended charges over the RM1.1B ARM chip deal. The deal continues.
 
-> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1990-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1990`
@@ -634,7 +634,7 @@ https://thefourthangle.pages.dev/issue/1990
 
 ### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
 
-> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
@@ -942,7 +942,7 @@ https://thefourthangle.pages.dev/issue/1973
 
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
 
-> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1972-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1972`
@@ -1006,40 +1006,6 @@ This isn't about Chinese tourists versus heritage. It's about who profits from g
 Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
 
 https://thefourthangle.pages.dev/issue/1970
-```
-
-### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
-
-> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
-
-**1/6** _(hook — attach image, NO link)_ · 134 chars
-```
-The vernacular school fight is stuck on unity vs culture. The courts settled the law, but the debate skips why parents choose schools.
-```
-**2/6** _(fact)_ · 113 chars
-```
-69% of middle-class Malay parents preferred SJKC for academic quality, a reputation ISEAS describes as perceived.
-```
-**3/6** _(fact)_ · 145 chars
-```
-135 of 528 Tamil schools are so short of pupils that they teach several grades in one class, the Education Ministry told Parliament in June 2026.
-```
-**4/6** _(fact)_ · 224 chars
-```
-Citizen enrolment in international schools rose 34% from 2019 to 2024. Class is reshaping school choice. International schools held 88,951 pupils on 31 May 2024; 67.1% were citizens, about 59,700 children, the ministry said.
-```
-**5/6** _(reframe)_ · 128 chars
-```
-The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
-```
-**6/6** _(view — ONLY post with the link)_ · 175 chars
-```
-Stop debating whether vernacular schools should exist. Start asking why more families now choose other schools over national ones.
-
-https://thefourthangle.pages.dev/issue/1967
 ```
 
 ### Issue 1966 — Refugee registration system launched but work permits remain unissued
@@ -1180,7 +1146,7 @@ https://thefourthangle.pages.dev/issue/1961
 
 ### Issue 1944 — RM2.27 Billion, 25 Charges, One Verdict, and the Reform Bill Still Unpassed
 
-> ⚡ **Reactive: topic is live in the radar** (education ministry allocates over rm13b to tackle dilapidated schools nationwide through 2). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (guan eng slams chow, zairil over rm210mil annual payment to perak. dap adviser says five i). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1944-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1944`
@@ -2345,6 +2311,39 @@ This isn't one government's hypocrisy. It's a structural failure where states pr
 Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
 
 https://thefourthangle.pages.dev/issue/1971
+```
+
+### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1967-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1967`
+
+**1/6** _(hook — attach image, NO link)_ · 134 chars
+```
+The vernacular school fight is stuck on unity vs culture. The courts settled the law, but the debate skips why parents choose schools.
+```
+**2/6** _(fact)_ · 113 chars
+```
+69% of middle-class Malay parents preferred SJKC for academic quality, a reputation ISEAS describes as perceived.
+```
+**3/6** _(fact)_ · 145 chars
+```
+135 of 528 Tamil schools are so short of pupils that they teach several grades in one class, the Education Ministry told Parliament in June 2026.
+```
+**4/6** _(fact)_ · 224 chars
+```
+Citizen enrolment in international schools rose 34% from 2019 to 2024. Class is reshaping school choice. International schools held 88,951 pupils on 31 May 2024; 67.1% were citizens, about 59,700 children, the ministry said.
+```
+**5/6** _(reframe)_ · 128 chars
+```
+The real question: what specifically is driving parents away, governance rigidity, curriculum imbalance, or discipline failures?
+```
+**6/6** _(view — ONLY post with the link)_ · 175 chars
+```
+Stop debating whether vernacular schools should exist. Start asking why more families now choose other schools over national ones.
+
+https://thefourthangle.pages.dev/issue/1967
 ```
 
 ### Issue 1963 — Data centres vs Johor's water: the curbs cite water, then spare AI centres
