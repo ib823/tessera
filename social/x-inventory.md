@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-24T10:12:13.203Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-24T12:17:02.188Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -1314,40 +1314,6 @@ Reducing the headline target does not eliminate cost-overrun risk. The test is w
 https://thefourthangle.pages.dev/issue/1751
 ```
 
-### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
-
-> ⚡ **Reactive: topic is live in the radar** (firm’s failure to honour contract blamed for ambulance procurement delay. health minister ). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1626-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1626`
-
-**1/6** _(hook — attach image, NO link)_ · 260 chars
-```
-Major political actors invoke 'the social contract'. The phrase itself is not in the Federal Constitution, and its substance is contested. Different actors emphasise different constitutional provisions when discussing the concept, producing competing readings.
-```
-**2/6** _(fact)_ · 133 chars
-```
-The phrase 'social contract' does not appear in the Federal Constitution. It is invoked as a political idea, not a textual provision.
-```
-**3/6** _(fact)_ · 265 chars
-```
-UMNO framing centres on Article 153 (special position of Malays and Borneo natives) and the constitutional position of the Malay rulers. DAP statements emphasise Article 8 equality while also stating it upholds Article 153. The same text supports multiple readings.
-```
-**4/6** _(fact)_ · 163 chars
-```
-The Reid Commission's 1957 report records constitutional compromises and recommendations on citizenship, language, religion and the special position of the Malays.
-```
-**5/6** _(reframe)_ · 155 chars
-```
-A foundational concept that different parties read differently is not a fixed text. It is a constitutional narrative that each side reads against the text.
-```
-**6/6** _(view — ONLY post with the link)_ · 207 chars
-```
-Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
-
-https://thefourthangle.pages.dev/issue/1626
-```
-
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
 > ⚡ **Reactive: topic is live in the radar** (johor on track to surpass rm3b in revenue for first time this year, says mb. iskandar pute). Post now, don't wait for a slot.
@@ -1498,6 +1464,44 @@ Like a household that hit its annual savings target. The trend is right; the que
 PFFRA provides the statutory frame. The test is enforcement: whether its fiscal-adjustment mechanism is triggered if the glide path slips.
 
 https://thefourthangle.pages.dev/issue/1201
+```
+
+### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
+
+> ⚡ **Reactive: topic is live in the radar** (macquarie-led group to buy axiata assets for us$1.2bil. the group will buy axiata's edotco). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
+
+**1/7** _(hook — attach image, NO link)_ · 234 chars
+```
+RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
+```
+**2/7** _(fact)_ · 269 chars
+```
+Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
+```
+**3/7** _(fact)_ · 225 chars
+```
+Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
+```
+**4/7** _(fact)_ · 154 chars
+```
+Around 36% of active formal EPF members met the RM240,000 basic-savings benchmark in 2024. The new RIA framework targets RM390,000 as the new basic floor.
+```
+**5/7** _(reframe)_ · 141 chars
+```
+Calling it 'flexible savings' does not change the math. Ringgit withdrawn today and not replenished compound into a larger gap at retirement.
+```
+**6/7** _(analogy)_ · 186 chars
+```
+Like eating your seed corn in a drought. It solves today's hunger but cuts into next year's harvest. Withdrawn ringgit, unless replenished, no longer earn EPF dividends until retirement.
+```
+**7/7** _(view — ONLY post with the link)_ · 218 chars
+```
+Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
+
+https://thefourthangle.pages.dev/issue/1190
 ```
 
 ### Issue 1146 — 18.4 billion e-payment transactions in 2025, but 48 e-money issuers face very different economics
@@ -2754,6 +2758,39 @@ ESSCOM is a genuine security success on fragile foundations. Renewing a curfew 2
 https://thefourthangle.pages.dev/issue/1871
 ```
 
+### Issue 1626 — The Phrase 'Social Contract' Is Not in the Federal Constitution; Parties Read It Differently
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1626-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1626`
+
+**1/6** _(hook — attach image, NO link)_ · 260 chars
+```
+Major political actors invoke 'the social contract'. The phrase itself is not in the Federal Constitution, and its substance is contested. Different actors emphasise different constitutional provisions when discussing the concept, producing competing readings.
+```
+**2/6** _(fact)_ · 133 chars
+```
+The phrase 'social contract' does not appear in the Federal Constitution. It is invoked as a political idea, not a textual provision.
+```
+**3/6** _(fact)_ · 265 chars
+```
+UMNO framing centres on Article 153 (special position of Malays and Borneo natives) and the constitutional position of the Malay rulers. DAP statements emphasise Article 8 equality while also stating it upholds Article 153. The same text supports multiple readings.
+```
+**4/6** _(fact)_ · 163 chars
+```
+The Reid Commission's 1957 report records constitutional compromises and recommendations on citizenship, language, religion and the special position of the Malays.
+```
+**5/6** _(reframe)_ · 155 chars
+```
+A foundational concept that different parties read differently is not a fixed text. It is a constitutional narrative that each side reads against the text.
+```
+**6/6** _(view — ONLY post with the link)_ · 207 chars
+```
+Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
+
+https://thefourthangle.pages.dev/issue/1626
+```
+
 ### Issue 1625 — Bumiputera Property Discount: A Cross-Subsidy Industry Calls Out, Not a Budget Line
 
 - **Status:** PENDING
@@ -3069,43 +3106,6 @@ Like a historic neighbourhood where the heirs and the city disagree on renovatio
 The path forward is not a bigger plan. It is structured smaller-block consolidation with heritage and Malay-ownership protections built into each phase.
 
 https://thefourthangle.pages.dev/issue/1229
-```
-
-### Issue 1190 — EPF Flexible Account Withdrawals Reach RM14.79B by 30 June 2025
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1190-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1190`
-
-**1/7** _(hook — attach image, NO link)_ · 234 chars
-```
-RM14.79 billion withdrawn from EPF Akaun Fleksibel by 30 June 2025. 4.63 million members had made at least one withdrawal. EPF later found most use was for essentials. MOF put total withdrawals at about RM19.87 billion by 31 May 2026.
-```
-**2/7** _(fact)_ · 269 chars
-```
-Post-pandemic EPF withdrawal facilities have reduced the compound growth base for millions of retirement accounts unless replenished. MOF put the i-Lestari, i-Sinar and i-Citra special withdrawals at RM101 billion. Akaun Fleksibel added RM14.79 billion by 30 June 2025.
-```
-**3/7** _(fact)_ · 225 chars
-```
-Akaun Fleksibel was framed as help for short-term needs, but its design allows withdrawal at any time, for any reason, with no eligibility test. Members earning below RM3,000 made up 51.1% of withdrawers, per EPF's own study.
-```
-**4/7** _(fact)_ · 154 chars
-```
-Around 36% of active formal EPF members met the RM240,000 basic-savings benchmark in 2024. The new RIA framework targets RM390,000 as the new basic floor.
-```
-**5/7** _(reframe)_ · 141 chars
-```
-Calling it 'flexible savings' does not change the math. Ringgit withdrawn today and not replenished compound into a larger gap at retirement.
-```
-**6/7** _(analogy)_ · 186 chars
-```
-Like eating your seed corn in a drought. It solves today's hunger but cuts into next year's harvest. Withdrawn ringgit, unless replenished, no longer earn EPF dividends until retirement.
-```
-**7/7** _(view — ONLY post with the link)_ · 218 chars
-```
-Akaun Fleksibel helps short-term liquidity; EPF data show most use was for essentials. Its scale also signals household-finance pressure that policy should address upstream.
-
-https://thefourthangle.pages.dev/issue/1190
 ```
 
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
