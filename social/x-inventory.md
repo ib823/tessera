@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-25T08:16:18.527Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-25T10:13:42.295Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -482,44 +482,6 @@ Think of a household whose repair bill drops because the dam meant to protect it
 The bill fell. The bill was ten times larger four years ago. The flood warning programme's first phase cost RM129 million, and Parliament's spending watchdog called it unjustified.
 
 https://thefourthangle.pages.dev/issue/1998
-```
-
-### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
-
-> ⚡ **Reactive: topic is live in the radar** (umno tuntut penjelasan status minit pengampunan najib. azalina othman said mahu pihak berk). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1997-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1997`
-
-**1/7** _(hook — attach image, NO link)_ · 250 chars
-```
-Malaysia will split the Attorney-General and Public Prosecutor for the first time since 1957. The 2018 manifesto promised it 'immediately'. Eight years and four AGs later, splitting the office is the easy part. Who confirms the new prosecutor is not.
-```
-**2/7** _(fact)_ · 151 chars
-```
-Article 145 has placed prosecution and the government's legal advice in one executive-appointed officer since 1957. The bill finally separates the two.
-```
-**3/7** _(fact)_ · 159 chars
-```
-Ten government MPs led by Rafizi Ramli demanded a Dewan Rakyat vote to confirm the new prosecutor. None were named to the committee that shaped the compromise.
-```
-**4/7** _(fact)_ · 173 chars
-```
-The new prosecutor would be recommended by the Judicial and Legal Service Commission, the body the Attorney-General sits on. As tabled, the bill added no parliamentary vote.
-```
-**5/7** _(reframe)_ · 168 chars
-```
-Separation is not independence. The office split has consensus; the vote to let Parliament confirm the prosecutor does not, and its backers were kept off the committee.
-```
-**6/7** _(analogy)_ · 263 chars
-```
-Picture giving the umpire his own office, then still choosing him through a panel the team captain sits on, with no open vote on the pick. The bill creates a standalone prosecutor. The commission that recommends the prosecutor still includes the Attorney-General.
-```
-**7/7** _(view — ONLY post with the link)_ · 193 chars
-```
-Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
-
-https://thefourthangle.pages.dev/issue/1997
 ```
 
 ### Issue 1996 — MATRADE briefed +9.3% trade and a 30.4% West Asia drop in one room. Press filed two stories.
@@ -2044,6 +2006,43 @@ Parliament repealed the ISA in 2012. The Akta would aim ISA-like detention witho
 The Sultan-in-Council route is constitutional. The Akta would borrow from a law Parliament repealed in 2012.
 
 https://thefourthangle.pages.dev/issue/1999
+```
+
+### Issue 1997 — The AG-prosecutor split returns after eight years. Who confirms the new prosecutor stays unsettled.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1997-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1997`
+
+**1/7** _(hook — attach image, NO link)_ · 250 chars
+```
+Malaysia will split the Attorney-General and Public Prosecutor for the first time since 1957. The 2018 manifesto promised it 'immediately'. Eight years and four AGs later, splitting the office is the easy part. Who confirms the new prosecutor is not.
+```
+**2/7** _(fact)_ · 151 chars
+```
+Article 145 has placed prosecution and the government's legal advice in one executive-appointed officer since 1957. The bill finally separates the two.
+```
+**3/7** _(fact)_ · 159 chars
+```
+Ten government MPs led by Rafizi Ramli demanded a Dewan Rakyat vote to confirm the new prosecutor. None were named to the committee that shaped the compromise.
+```
+**4/7** _(fact)_ · 173 chars
+```
+The new prosecutor would be recommended by the Judicial and Legal Service Commission, the body the Attorney-General sits on. As tabled, the bill added no parliamentary vote.
+```
+**5/7** _(reframe)_ · 168 chars
+```
+Separation is not independence. The office split has consensus; the vote to let Parliament confirm the prosecutor does not, and its backers were kept off the committee.
+```
+**6/7** _(analogy)_ · 263 chars
+```
+Picture giving the umpire his own office, then still choosing him through a panel the team captain sits on, with no open vote on the pick. The bill creates a standalone prosecutor. The commission that recommends the prosecutor still includes the Attorney-General.
+```
+**7/7** _(view — ONLY post with the link)_ · 193 chars
+```
+Eight years to agree on splitting the office. Deciding who confirms the new prosecutor fell to a committee that left out the MPs who demanded a say.
+
+https://thefourthangle.pages.dev/issue/1997
 ```
 
 ### Issue 1994 — Malaysia's six licensed exchanges list no dollar stablecoin. Malaysians hold them anyway.
