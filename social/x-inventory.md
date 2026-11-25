@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-25T12:15:58.224Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-25T14:13:05.507Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -8,7 +8,7 @@ Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image an
 
 ### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2023-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2023`
@@ -224,7 +224,7 @@ https://thefourthangle.pages.dev/issue/2010
 
 ### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2009-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2009`
@@ -300,7 +300,7 @@ https://thefourthangle.pages.dev/issue/2008
 
 ### Issue 2007 — High Court refused MACC's bid to freeze RM548m linked to Na'imah in Singapore
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (macquarie-led group to buy axiata assets for us$1.2bil. the group will buy axiata's edotco). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2007-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2007`
@@ -336,47 +336,9 @@ Asset recovery turns on proving provenance to the law's threshold, not the size 
 https://thefourthangle.pages.dev/issue/2007
 ```
 
-### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
-
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
-
-**1/7** _(hook — attach image, NO link)_ · 269 chars
-```
-A former senior political secretary to the Prime Minister faces five graft charges over alleged payments tied to Sabah mineral-licence approvals. He pleaded not guilty in December 2025. The law meant to overhaul that licensing passed in 1999, and was never switched on.
-```
-**2/7** _(fact)_ · 129 chars
-```
-Shamsul Iskandar pleaded not guilty in December 2025 to five counts under MACC Act section 17(a). The case has not gone to trial.
-```
-**3/7** _(fact)_ · 160 chars
-```
-Sabah still licenses mining under a 1960 ordinance. The Director grants prospecting licences with the Minister's approval; mining leases need the State Cabinet.
-```
-**4/7** _(fact)_ · 145 chars
-```
-The alleged giver, businessman Albert Tei, was charged in June 2025 in a separate RM350,000 mineral-licence case alongside two Sabah assemblymen.
-```
-**5/7** _(reframe)_ · 132 chars
-```
-A courtroom can weigh what a person did. It cannot enact the law Sabah wrote in 1999 to replace the framework these licences run on.
-```
-**6/7** _(analogy)_ · 235 chars
-```
-Sabah passed a new rulebook in 1999, then kept running the 1960 one because the new one's start date was never appointed. The replacement law exists on paper. Until a minister gazettes its commencement, the old ordinance still governs.
-```
-**7/7** _(view — ONLY post with the link)_ · 222 chars
-```
-The charges will be settled in court. The 1999 law that would overhaul Sabah's mineral licensing will not be, and until a minister gazettes it, the 1960 ordinance still governs.
-
-https://thefourthangle.pages.dev/issue/2006
-```
-
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -524,7 +486,7 @@ https://thefourthangle.pages.dev/issue/1996
 
 ### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1995-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1995`
@@ -562,7 +524,7 @@ https://thefourthangle.pages.dev/issue/1995
 
 ### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
@@ -672,7 +634,7 @@ https://thefourthangle.pages.dev/issue/1990
 
 ### Issue 1989 — Malaysian Palm Oil to China Dropped 39% Before Trump Met Xi
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (airasia third-quarter loss narrows, but cash dwindles and liabilities rise. revenue fell 8). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1989-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1989`
@@ -904,7 +866,7 @@ https://thefourthangle.pages.dev/issue/1975
 
 ### Issue 1974 — DOE chief charged with taking RM100K over an EIA exemption, on a road that killed nine
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1974-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1974`
@@ -942,7 +904,7 @@ https://thefourthangle.pages.dev/issue/1974
 
 ### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
@@ -980,7 +942,7 @@ https://thefourthangle.pages.dev/issue/1973
 
 ### Issue 1966 — Refugee registration system launched but work permits remain unissued
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
@@ -1014,7 +976,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1078,40 +1040,6 @@ Two prosecutions test two men. A suspected 26-firm cartel tests the procurement 
 The charges matter. But soldiers deserve more than the trial of two generals. They deserve a procurement system that cannot be captured.
 
 https://thefourthangle.pages.dev/issue/1962
-```
-
-### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
-
-> ⚡ **Reactive: topic is live in the radar** (macc denies agreeing to reward french-syrian businessman over 1mdb deal. bachar kiwan clai). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
-
-**1/6** _(hook — attach image, NO link)_ · 270 chars
-```
-Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
-```
-**2/6** _(fact)_ · 100 chars
-```
-The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
-```
-**3/6** _(fact)_ · 242 chars
-```
-A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
-```
-**4/6** _(fact)_ · 230 chars
-```
-MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
-```
-**5/6** _(reframe)_ · 159 chars
-```
-The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
-```
-**6/6** _(view — ONLY post with the link)_ · 187 chars
-```
-The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
-
-https://thefourthangle.pages.dev/issue/1961
 ```
 
 ### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
@@ -1901,6 +1829,43 @@ A haze law would not put out the fires; Putrajaya said so in 2023. Its point was
 https://thefourthangle.pages.dev/issue/2011
 ```
 
+### Issue 2006 — Graft charges over Sabah mining licences; the 1999 law to overhaul that system is still not in force
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2006-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2006`
+
+**1/7** _(hook — attach image, NO link)_ · 269 chars
+```
+A former senior political secretary to the Prime Minister faces five graft charges over alleged payments tied to Sabah mineral-licence approvals. He pleaded not guilty in December 2025. The law meant to overhaul that licensing passed in 1999, and was never switched on.
+```
+**2/7** _(fact)_ · 129 chars
+```
+Shamsul Iskandar pleaded not guilty in December 2025 to five counts under MACC Act section 17(a). The case has not gone to trial.
+```
+**3/7** _(fact)_ · 160 chars
+```
+Sabah still licenses mining under a 1960 ordinance. The Director grants prospecting licences with the Minister's approval; mining leases need the State Cabinet.
+```
+**4/7** _(fact)_ · 145 chars
+```
+The alleged giver, businessman Albert Tei, was charged in June 2025 in a separate RM350,000 mineral-licence case alongside two Sabah assemblymen.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+A courtroom can weigh what a person did. It cannot enact the law Sabah wrote in 1999 to replace the framework these licences run on.
+```
+**6/7** _(analogy)_ · 235 chars
+```
+Sabah passed a new rulebook in 1999, then kept running the 1960 one because the new one's start date was never appointed. The replacement law exists on paper. Until a minister gazettes its commencement, the old ordinance still governs.
+```
+**7/7** _(view — ONLY post with the link)_ · 222 chars
+```
+The charges will be settled in court. The 1999 law that would overhaul Sabah's mineral licensing will not be, and until a minister gazettes it, the 1960 ordinance still governs.
+
+https://thefourthangle.pages.dev/issue/2006
+```
+
 ### Issue 2003 — Malaysia Targets 80% Rice Self-Sufficiency by 2030; the Rate Fell to 53% in 2024
 
 - **Status:** PENDING
@@ -2566,6 +2531,39 @@ Like a water ration that checks what each house is for, not what its meter reads
 The ambition is not wrong. The filter is. Judge each centre by the water and power it draws, and publish the figures site by site.
 
 https://thefourthangle.pages.dev/issue/1963
+```
+
+### Issue 1961 — Ex-MACC Chief Probed by a System That Answers to Those Who Appointed Him
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1961-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1961`
+
+**1/6** _(hook — attach image, NO link)_ · 270 chars
+```
+Malaysia's anticorruption chief was investigated in office by a system that answers to those who appointed him Bloomberg alleged Azam Baki colluded with businessmen. He sued it for RM100M over a report on his shareholdings. Abdul Halim Aman succeeded him on 13 May 2026.
+```
+**2/6** _(fact)_ · 100 chars
+```
+The MACC Act sets up three oversight bodies. None of them can criminally investigate the MACC chief.
+```
+**3/6** _(fact)_ · 242 chars
+```
+A minister publicly called for an RCI on 24 February. Three days later, the PM put the decision off until the probe into Azam ends. Under the MACC Act 2009, the PM advises on who heads MACC. His Cabinet also decides whether an RCI goes ahead.
+```
+**4/6** _(fact)_ · 230 chars
+```
+MACC chief Azam Baki estimated in May 2024 that corruption cost Malaysia about RM277 billion over five years. CPI improved to 54th before the Bloomberg revelations. The RM100M suit signals investigating corruption carries a price.
+```
+**5/6** _(reframe)_ · 159 chars
+```
+The question is not whether Azam Baki is guilty. It is whether any institution can answer that independently when every government has chosen not to build one.
+```
+**6/6** _(view — ONLY post with the link)_ · 187 chars
+```
+The fix is a permanent independent oversight body for MACC. But that requires a government to surrender power over its own watchdog. None has.
+
+https://thefourthangle.pages.dev/issue/1961
 ```
 
 ### Issue 1960 — Temple Demolished on Private Land: Property Right or Religious Hate Crime?
