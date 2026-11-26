@@ -1,10 +1,44 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-26T08:15:20.685Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-26T10:13:34.176Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
 ## ⏳ TO POST (91)
+
+### Issue 2024 — Malaysia lets bulk palm oil blends out only on three conditions. A Port Klang complaint tests them
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2024-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2024`
+
+**1/6** _(hook — attach image, NO link)_ · 156 chars
+```
+Malaysian rules bar exporting a bulk palm oil blend unless the buyer asked for it in writing, the contract says so, and every shipping paper states the mix.
+```
+**2/6** _(fact)_ · 156 chars
+```
+The agent alleges Indonesian palm olein was mixed aboard the tanker MT Eunice at Port Klang on 30 Sep with about 5,000 tonnes of Malaysian crude palm olein.
+```
+**3/6** _(fact)_ · 148 chars
+```
+For an ordinary Malaysian certificate of origin, one of MITI's three tests is at least 25% local content by value, checked by an authorised chamber.
+```
+**4/6** _(fact)_ · 154 chars
+```
+MPOB must table a yearly activities report in Parliament, but no rule makes it announce single cases, and its Act limits disclosure to the Act's purposes.
+```
+**5/6** _(reframe)_ · 140 chars
+```
+MPOB both champions Malaysian palm oil and polices it. The law asks it to account to Parliament once a year, not to explain any single case.
+```
+**6/6** _(view — ONLY post with the link)_ · 222 chars
+```
+Four weeks' quiet on a cross-border cargo can pass as routine. When the 'Malaysian' label carries the industry's imprimatur, a word on the file's status costs less than silence.
+
+https://thefourthangle.pages.dev/issue/2024
+```
 
 ### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
 
@@ -76,6 +110,40 @@ Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya i
 Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
 
 https://thefourthangle.pages.dev/issue/2019
+```
+
+### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2017-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2017`
+
+**1/6** _(hook — attach image, NO link)_ · 140 chars
+```
+China's customs logged 64.7 million tonnes of crude 'from Malaysia' in 2025. Malaysia's own trade statistics logged 314,000 tonnes to China.
+```
+**2/6** _(fact)_ · 149 chars
+```
+US Treasury said in November 2025 that Iran's military oil seller, Sepehr Energy Jahan, labelled its oil 'as Malaysian heavy crude, a common tactic'.
+```
+**3/6** _(fact)_ · 226 chars
+```
+China's 2025 'Malaysian' crude works out to 1.30m barrels a day, more than 2.5 times all the crude and condensate Malaysia produced. At 7.33 barrels a tonne. DOSM's preliminary 2025 output: 183.6m barrels, about 503,000 a day.
+```
+**4/6** _(fact)_ · 269 chars
+```
+Traders told Reuters in November 2025 the label was moving to 'Indonesian', after bank scrutiny and Malaysia's July 2025 vow to detain ships. In 2025 China's customs logged 14.5m tonnes of crude 'from Indonesia'. Indonesia's own statistics logged 0.17m tonnes to China.
+```
+**5/6** _(reframe)_ · 131 chars
+```
+The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretched over more than 2.5 times Malaysia's own output.
+```
+**6/6** _(view — ONLY post with the link)_ · 202 chars
+```
+Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.
+
+https://thefourthangle.pages.dev/issue/2017
 ```
 
 ### Issue 2014 — Southern Thailand: Mossad was named in two capitals. No case we checked puts Israel there.
@@ -152,40 +220,6 @@ It is like a bank that promised a know-your-customer rule in 2015, studied it un
 The fine is raised in an account only party members may see, under a law that does not exist. Pakatan Harapan promised it in 2018; its government says 2027. One is a choice.
 
 https://thefourthangle.pages.dev/issue/2013
-```
-
-### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
-
-> ⚡ **Reactive: topic is live in the radar** (malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
-
-**1/6** _(hook — attach image, NO link)_ · 248 chars
-```
-Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
-```
-**2/6** _(fact)_ · 111 chars
-```
-Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
-```
-**3/6** _(fact)_ · 247 chars
-```
-Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
-```
-**4/6** _(fact)_ · 150 chars
-```
-MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
-```
-**6/6** _(view — ONLY post with the link)_ · 162 chars
-```
-Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
-
-https://thefourthangle.pages.dev/issue/2012
 ```
 
 ### Issue 2010 — Tabung Haji's RM3.4b profit in 2017 was a RM1.4b loss, a Royal Commission found
@@ -448,6 +482,44 @@ Judging the epidemic by one survey is like calling the tide from a single wave. 
 One better year in the diabetes data does not reverse a decade of getting heavier.
 
 https://thefourthangle.pages.dev/issue/2002
+```
+
+### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
+
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
+
+**1/7** _(hook — attach image, NO link)_ · 120 chars
+```
+A Labuan MP's appeal over the cessation of his Bersatu membership was dismissed at the Court of Appeal on 29 April 2026.
+```
+**2/7** _(fact)_ · 198 chars
+```
+Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022 (Act A1663), in force 5 October 2022. The text prevents a party from causing an MP's seat to be vacated merely by expelling that MP.
+```
+**3/7** _(fact)_ · 119 chars
+```
+Zuraida Kamaruddin's case (CoA, Dec 2024) turned on 'reasonable compensation' under the Contracts Act, not Article 49A.
+```
+**4/7** _(fact)_ · 106 chars
+```
+Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate Pandan and Setiawangsa before leaving PKR.
+```
+**5/7** _(reframe)_ · 153 chars
+```
+Article 49A(2)(c) names a constitutional protection. Section 18C of the Societies Act tells the courts not to reach it. Two laws, one shielded carve-out.
+```
+**6/7** _(analogy)_ · 200 chars
+```
+Like a constitutional door locked from the other side by a different law. Article 49A(2)(c) is the protection. Section 18C of the Societies Act 1966 keeps courts from disputes that could interpret it.
+```
+**7/7** _(view — ONLY post with the link)_ · 225 chars
+```
+Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
+
+https://thefourthangle.pages.dev/issue/2000
 ```
 
 ### Issue 1998 — Malaysia's flood bill fell 32% in 2025. The bill was 10 times larger four years ago.
@@ -748,6 +820,40 @@ Imagine a relay race that pays each runner more the longer they hold the baton, 
 The bottleneck is not age. It is the machinery that picks candidates, rewards long tenure and leaves just 11 of 222 MPs aged 35 or under.
 
 https://thefourthangle.pages.dev/issue/1987
+```
+
+### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1985-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1985`
+
+**1/6** _(hook — attach image, NO link)_ · 158 chars
+```
+Malaysia keeps small firms out of mandatory e-invoicing by exemption: under RM1m from January 2026, under RM3m since September. Three peers took other routes.
+```
+**2/6** _(fact)_ · 173 chars
+```
+India moved the other way: in August 2023 it cut its e-invoice threshold from INR 10 crore to INR 5 crore of turnover. Malaysia has raised its bar twice since December 2025.
+```
+**3/6** _(fact)_ · 248 chars
+```
+Singapore is phasing in GST InvoiceNow from November 2025 to April 2031, with a S$1,000 transition grant for SMEs and free solution packages until March 2031. Larger firms get S$5,000. Malaysia's MSME Digital Grant offers a 50% match up to RM5,000.
+```
+**4/6** _(fact)_ · 154 chars
+```
+Thailand lets firms with income up to THB 30m issue e-tax invoices as time-stamped PDFs by email. Any firm can use the XML route with a digital signature.
+```
+**5/6** _(reframe)_ · 101 chars
+```
+The choice was never just 'mandate or exempt.' Three peers built middle paths Malaysia did not adopt.
+```
+**6/6** _(view — ONLY post with the link)_ · 203 chars
+```
+Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
+
+https://thefourthangle.pages.dev/issue/1985
 ```
 
 ### Issue 1984 — E-invoice mandate softened four times in nine months after Sabah loss
@@ -1124,6 +1230,40 @@ The question isn't whether to reduce dollar dependency. It's whether Malaysia is
 Publish annual volumes by country, build the hedging infrastructure exporters need, and stop conflating transaction savings with structural independence
 
 https://thefourthangle.pages.dev/issue/1972
+```
+
+### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
+
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
+
+**1/6** _(hook — attach image, NO link)_ · 218 chars
+```
+A gazette backdated 22 years bypassed Selangor's public inquiry law, NGOs say. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
+```
+**2/6** _(fact)_ · 117 chars
+```
+Selangor has required a public inquiry before forest excision since 2011. Bukit Cherakah's degazetting followed none.
+```
+**3/6** _(fact)_ · 189 chars
+```
+316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments A UNDP-funded survey found tapir, gibbon and leopard cat, all totally protected.
+```
+**4/6** _(fact)_ · 137 chars
+```
+In September 2021, after the KLNFR excision went through, Selangor halted development and pledged to regazette. The SACF excision stands.
+```
+**5/6** _(reframe)_ · 131 chars
+```
+This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
+```
+**6/6** _(view — ONLY post with the link)_ · 181 chars
+```
+Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
+
+https://thefourthangle.pages.dev/issue/1971
 ```
 
 ### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
@@ -1652,9 +1792,43 @@ Medical tourism is a legitimate export. The reform proposal: expand specialist s
 https://thefourthangle.pages.dev/issue/1445
 ```
 
+### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
+
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
+
+**1/6** _(hook — attach image, NO link)_ · 248 chars
+```
+Parliament passed the maternal-citizenship amendment in 2024. Pre-amendment children needed a separate Federal Court settlement to be covered. Suriani Kempe v Kerajaan Malaysia ran 2020 to 2025. The legislative fix arrived in October-December 2024.
+```
+**2/6** _(fact)_ · 108 chars
+```
+The Dewan Rakyat passed the Bill 206 to 1 on 17 October 2024; the Dewan Negara passed it on 3 December 2024.
+```
+**3/6** _(fact)_ · 133 chars
+```
+On 10 March 2025, a Federal Court bench endorsed a consent order between Family Frontiers and the government for pre-amendment cases.
+```
+**4/6** _(fact)_ · 147 chars
+```
+Residual gaps remain: non-retroactivity, pre-implementation births, adults over 18, and stateless local-born children outside the settlement class.
+```
+**5/6** _(reframe)_ · 160 chars
+```
+The story is no longer 'will the government recognise mothers'. It is which residual gaps remain after the legislative and judicial fixes settled the main case.
+```
+**6/6** _(view — ONLY post with the link)_ · 208 chars
+```
+Parliament voted to end the central injustice in 2024 and the 2025 settlement gave earlier children a route. At October 2026 the amendment still had no start date.
+
+https://thefourthangle.pages.dev/issue/1325
+```
+
 ### Issue 1298 — SOSMA Renewal Cycles: Section 4(11) Requires 5-Year Parliamentary Review of Section 4(5) Detention
 
-> ⚡ **Reactive: topic is live in the radar** (malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1298-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1298`
@@ -1726,7 +1900,7 @@ https://thefourthangle.pages.dev/issue/1294
 
 ### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
 
-> ⚡ **Reactive: topic is live in the radar** (malaysian govt weighs changes to drug law to shift focus from punishment to rehabilitation). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
@@ -1798,6 +1972,40 @@ Like a factory that treats its workers' welfare as a compliance line item: essen
 Wider Employment Act coverage is necessary but not sufficient. The 2025 TIP asks Malaysia to identify victims in palm oil and gloves and to prosecute trafficking cases.
 
 https://thefourthangle.pages.dev/issue/1267
+```
+
+### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
+
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
+
+**1/6** _(hook — attach image, NO link)_ · 150 chars
+```
+Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
+```
+**2/6** _(fact)_ · 135 chars
+```
+Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
+```
+**3/6** _(fact)_ · 157 chars
+```
+The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
+```
+**4/6** _(fact)_ · 261 chars
+```
+SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
+```
+**5/6** _(reframe)_ · 158 chars
+```
+Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
+```
+**6/6** _(view — ONLY post with the link)_ · 220 chars
+```
+After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
+
+https://thefourthangle.pages.dev/issue/1265
 ```
 
 ### Issue 1241 — SOSMA: 6,892 Detained 2012–2025 by Official Count; Suaram Says 20–28% Freed Without Charge
@@ -1986,6 +2194,44 @@ Adoption is not protection. The infrastructure works. The guardrails on merchant
 https://thefourthangle.pages.dev/issue/1146
 ```
 
+### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
+
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
+
+**1/7** _(hook — attach image, NO link)_ · 132 chars
+```
+Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
+```
+**2/7** _(fact)_ · 124 chars
+```
+Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
+```
+**3/7** _(fact)_ · 112 chars
+```
+EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
+```
+**4/7** _(fact)_ · 148 chars
+```
+DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
+```
+**5/7** _(reframe)_ · 137 chars
+```
+The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
+```
+**6/7** _(analogy)_ · 269 chars
+```
+Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
+```
+**7/7** _(view — ONLY post with the link)_ · 217 chars
+```
+Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
+
+https://thefourthangle.pages.dev/issue/1128
+```
+
 ### Issue 1102 — Subsidy Rationalisation Savings Cited at ~RM15.5B by Budget 2026; Delivery Audit Still Limited
 
 > ⚡ **Reactive: topic is live in the radar** (macquarie-led group to buy axiata assets for us$1.2bil. the group will buy axiata's edotco). Post now, don't wait for a slot.
@@ -2024,37 +2270,42 @@ A reform proposal: stand up an independent audit publishing per-cohort delivery 
 https://thefourthangle.pages.dev/issue/1102
 ```
 
-### Issue 2024 — Malaysia lets bulk palm oil blends out only on three conditions. A Port Klang complaint tests them
+### Issue 1043 — When states override environmental law, the environment has no government
 
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2024-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2024`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
 
-**1/6** _(hook — attach image, NO link)_ · 156 chars
+**1/7** _(hook — attach image, NO link)_ · 151 chars
 ```
-Malaysian rules bar exporting a bulk palm oil blend unless the buyer asked for it in writing, the contract says so, and every shipping paper states the mix.
+Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
 ```
-**2/6** _(fact)_ · 156 chars
+**2/7** _(fact)_ · 113 chars
 ```
-The agent alleges Indonesian palm olein was mixed aboard the tanker MT Eunice at Port Klang on 30 Sep with about 5,000 tonnes of Malaysian crude palm olein.
+The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
 ```
-**3/6** _(fact)_ · 148 chars
+**3/7** _(fact)_ · 269 chars
 ```
-For an ordinary Malaysian certificate of origin, one of MITI's three tests is at least 25% local content by value, checked by an authorised chamber.
+Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
 ```
-**4/6** _(fact)_ · 154 chars
+**4/7** _(fact)_ · 145 chars
 ```
-MPOB must table a yearly activities report in Parliament, but no rule makes it announce single cases, and its Act limits disclosure to the Act's purposes.
+Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
 ```
-**5/6** _(reframe)_ · 140 chars
+**5/7** _(reframe)_ · 149 chars
 ```
-MPOB both champions Malaysian palm oil and polices it. The law asks it to account to Parliament once a year, not to explain any single case.
+This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
 ```
-**6/6** _(view — ONLY post with the link)_ · 222 chars
+**6/7** _(analogy)_ · 223 chars
 ```
-Four weeks' quiet on a cross-border cargo can pass as routine. When the 'Malaysian' label carries the industry's imprimatur, a word on the file's status costs less than silence.
+Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
+```
+**7/7** _(view — ONLY post with the link)_ · 183 chars
+```
+Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
 
-https://thefourthangle.pages.dev/issue/2024
+https://thefourthangle.pages.dev/issue/1043
 ```
 
 ### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
@@ -2090,39 +2341,6 @@ If compensation hinges on prosecutorial discretion, the Attorney General's Chamb
 https://thefourthangle.pages.dev/issue/2018
 ```
 
-### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2017-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2017`
-
-**1/6** _(hook — attach image, NO link)_ · 140 chars
-```
-China's customs logged 64.7 million tonnes of crude 'from Malaysia' in 2025. Malaysia's own trade statistics logged 314,000 tonnes to China.
-```
-**2/6** _(fact)_ · 149 chars
-```
-US Treasury said in November 2025 that Iran's military oil seller, Sepehr Energy Jahan, labelled its oil 'as Malaysian heavy crude, a common tactic'.
-```
-**3/6** _(fact)_ · 226 chars
-```
-China's 2025 'Malaysian' crude works out to 1.30m barrels a day, more than 2.5 times all the crude and condensate Malaysia produced. At 7.33 barrels a tonne. DOSM's preliminary 2025 output: 183.6m barrels, about 503,000 a day.
-```
-**4/6** _(fact)_ · 269 chars
-```
-Traders told Reuters in November 2025 the label was moving to 'Indonesian', after bank scrutiny and Malaysia's July 2025 vow to detain ships. In 2025 China's customs logged 14.5m tonnes of crude 'from Indonesia'. Indonesia's own statistics logged 0.17m tonnes to China.
-```
-**5/6** _(reframe)_ · 131 chars
-```
-The 'Malaysian' label on an oil cargo is a national asset. In 2025 it was stretched over more than 2.5 times Malaysia's own output.
-```
-**6/6** _(view — ONLY post with the link)_ · 202 chars
-```
-Malaysia can stay out of Washington's sanctions and still guard its own label. Provenance is no favour to Washington; honest 'Malaysian' cargoes trade on it.
-
-https://thefourthangle.pages.dev/issue/2017
-```
-
 ### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
 
 - **Status:** PENDING
@@ -2154,6 +2372,39 @@ In the Peninsula, a data centre now has its own water-tariff category. It still 
 The Data Centre Bill, scheduled for Cabinet in 2027, is where Malaysia can write who gets heard, not only who pays.
 
 https://thefourthangle.pages.dev/issue/2016
+```
+
+### Issue 2012 — Eight Felda deals were audited in 2019. In 2026 MACC has files open on seven of them.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2012-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2012`
+
+**1/6** _(hook — attach image, NO link)_ · 248 chars
+```
+Putrajaya is weighing whether to order a forensic audit of Felda. Ernst & Young finished one in 2019. Parliament has had the summary since. Its 26-page summary report on the eight deals was annexed to the FELDA White Paper, tabled on 10 April 2019.
+```
+**2/6** _(fact)_ · 111 chars
+```
+Mohd Isa Abdul Samad's conviction concerns a Kuching hotel purchase that is not one of the eight audited deals.
+```
+**3/6** _(fact)_ · 247 chars
+```
+Ernst & Young put the original value of the deals it could quantify at RM4.4 billion, and loss and impairment at about RM2.2 billion. It also found governance failure, approvals without due diligence, and elements of non-compliance and misconduct.
+```
+**4/6** _(fact)_ · 150 chars
+```
+MACC opened six new files on Felda deals on 2 September 2026. With one file open since 2017, seven of the eight audited deals are under investigation.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+After the audit the state funded Felda's recovery and sued over one of the eight deals. Criminal enforcement on the eight is still open seven years on.
+```
+**6/6** _(view — ONLY post with the link)_ · 162 chars
+```
+Felda has had a forensic audit, a recovery plan and a civil suit. Scrutiny was never what failed. Follow-through was.
+
+https://thefourthangle.pages.dev/issue/2012
 ```
 
 ### Issue 2011 — Sarawak haze hit API 475. The haze law Cabinet backed in 2020 was dropped in 2023.
@@ -2228,43 +2479,6 @@ Sabah passed a new rulebook in 1999, then kept running the 1960 one because the 
 The charges will be settled in court. The 1999 law that would overhaul Sabah's mineral licensing will not be, and until a minister gazettes it, the 1960 ordinance still governs.
 
 https://thefourthangle.pages.dev/issue/2006
-```
-
-### Issue 2000 — Article 49A's expulsion carve-out, blocked from court by the Societies Act
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2000-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2000`
-
-**1/7** _(hook — attach image, NO link)_ · 120 chars
-```
-A Labuan MP's appeal over the cessation of his Bersatu membership was dismissed at the Court of Appeal on 29 April 2026.
-```
-**2/7** _(fact)_ · 198 chars
-```
-Article 49A inserted by Constitution (Amendment) (No. 3) Act 2022 (Act A1663), in force 5 October 2022. The text prevents a party from causing an MP's seat to be vacated merely by expelling that MP.
-```
-**3/7** _(fact)_ · 119 chars
-```
-Zuraida Kamaruddin's case (CoA, Dec 2024) turned on 'reasonable compensation' under the Contracts Act, not Article 49A.
-```
-**4/7** _(fact)_ · 106 chars
-```
-Rafizi Ramli and Nik Nazmi (May 2026) used Article 51 to vacate Pandan and Setiawangsa before leaving PKR.
-```
-**5/7** _(reframe)_ · 153 chars
-```
-Article 49A(2)(c) names a constitutional protection. Section 18C of the Societies Act tells the courts not to reach it. Two laws, one shielded carve-out.
-```
-**6/7** _(analogy)_ · 200 chars
-```
-Like a constitutional door locked from the other side by a different law. Article 49A(2)(c) is the protection. Section 18C of the Societies Act 1966 keeps courts from disputes that could interpret it.
-```
-**7/7** _(view — ONLY post with the link)_ · 225 chars
-```
-Article 49A(2)(c) is a constitutional protection Section 18C makes unreachable. Until the two laws align or a case finds a procedural path, the carve-out's scope stays speculative.
-
-https://thefourthangle.pages.dev/issue/2000
 ```
 
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
@@ -2444,39 +2658,6 @@ Like a referee whose call and non-call both stand, with no replay rule on either
 https://thefourthangle.pages.dev/issue/1988
 ```
 
-### Issue 1985 — Malaysia chose exemption. Singapore subsidises. Thailand built an email lane.
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1985-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1985`
-
-**1/6** _(hook — attach image, NO link)_ · 158 chars
-```
-Malaysia keeps small firms out of mandatory e-invoicing by exemption: under RM1m from January 2026, under RM3m since September. Three peers took other routes.
-```
-**2/6** _(fact)_ · 173 chars
-```
-India moved the other way: in August 2023 it cut its e-invoice threshold from INR 10 crore to INR 5 crore of turnover. Malaysia has raised its bar twice since December 2025.
-```
-**3/6** _(fact)_ · 248 chars
-```
-Singapore is phasing in GST InvoiceNow from November 2025 to April 2031, with a S$1,000 transition grant for SMEs and free solution packages until March 2031. Larger firms get S$5,000. Malaysia's MSME Digital Grant offers a 50% match up to RM5,000.
-```
-**4/6** _(fact)_ · 154 chars
-```
-Thailand lets firms with income up to THB 30m issue e-tax invoices as time-stamped PDFs by email. Any firm can use the XML route with a digital signature.
-```
-**5/6** _(reframe)_ · 101 chars
-```
-The choice was never just 'mandate or exempt.' Three peers built middle paths Malaysia did not adopt.
-```
-**6/6** _(view — ONLY post with the link)_ · 203 chars
-```
-Exemption is the cheapest political answer. Capacity-building is the expensive structural one. The peer models cost more, and produce more lasting compliance.
-
-https://thefourthangle.pages.dev/issue/1985
-```
-
 ### Issue 1982 — Three Investigations on Chinese Platforms, and What They Don't Prove
 
 - **Status:** PENDING
@@ -2582,39 +2763,6 @@ Before anyone can say whether a Ruler was lawfully removed, someone must settle 
 The DKU and the AGC call the 19 April move invalid; its backers say it stands. No court has ruled on the merits, and in October the four dropped their own suit.
 
 https://thefourthangle.pages.dev/issue/1976
-```
-
-### Issue 1971 — Shah Alam's forest corridor fell to a backdated gazette; courts never asked if it was lawful
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1971-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1971`
-
-**1/6** _(hook — attach image, NO link)_ · 218 chars
-```
-A gazette backdated 22 years bypassed Selangor's public inquiry law, NGOs say. Three courts never ruled on whether it was lawful. Federal Court split 2-1. No public inquiry preceded the excision. The road is 70% built.
-```
-**2/6** _(fact)_ · 117 chars
-```
-Selangor has required a public inquiry before forest excision since 2011. Bukit Cherakah's degazetting followed none.
-```
-**3/6** _(fact)_ · 189 chars
-```
-316 species, 40 on IUCN Red List, and a road severing a critical corridor between two major forest fragments A UNDP-funded survey found tapir, gibbon and leopard cat, all totally protected.
-```
-**4/6** _(fact)_ · 137 chars
-```
-In September 2021, after the KLNFR excision went through, Selangor halted development and pledged to regazette. The SACF excision stands.
-```
-**5/6** _(reframe)_ · 131 chars
-```
-This isn't one government's hypocrisy. It's a structural failure where states profit from conversion and conservation pays nothing.
-```
-**6/6** _(view — ONLY post with the link)_ · 181 chars
-```
-Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
-
-https://thefourthangle.pages.dev/issue/1971
 ```
 
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
@@ -3021,72 +3169,6 @@ The constitution already accommodates Islamic law within limits. The real debate
 https://thefourthangle.pages.dev/issue/1618
 ```
 
-### Issue 1325 — Maternal Citizenship Amendment Passed 2024; March 2025 Court Settlement Covered Pre-Amendment Cases
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1325-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1325`
-
-**1/6** _(hook — attach image, NO link)_ · 248 chars
-```
-Parliament passed the maternal-citizenship amendment in 2024. Pre-amendment children needed a separate Federal Court settlement to be covered. Suriani Kempe v Kerajaan Malaysia ran 2020 to 2025. The legislative fix arrived in October-December 2024.
-```
-**2/6** _(fact)_ · 108 chars
-```
-The Dewan Rakyat passed the Bill 206 to 1 on 17 October 2024; the Dewan Negara passed it on 3 December 2024.
-```
-**3/6** _(fact)_ · 133 chars
-```
-On 10 March 2025, a Federal Court bench endorsed a consent order between Family Frontiers and the government for pre-amendment cases.
-```
-**4/6** _(fact)_ · 147 chars
-```
-Residual gaps remain: non-retroactivity, pre-implementation births, adults over 18, and stateless local-born children outside the settlement class.
-```
-**5/6** _(reframe)_ · 160 chars
-```
-The story is no longer 'will the government recognise mothers'. It is which residual gaps remain after the legislative and judicial fixes settled the main case.
-```
-**6/6** _(view — ONLY post with the link)_ · 208 chars
-```
-Parliament voted to end the central injustice in 2024 and the 2025 settlement gave earlier children a route. At October 2026 the amendment still had no start date.
-
-https://thefourthangle.pages.dev/issue/1325
-```
-
-### Issue 1265 — Article 15A Citizenship Applications: No Published Success Criteria, Documented Multi-Year Waits
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1265-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1265`
-
-**1/6** _(hook — attach image, NO link)_ · 150 chars
-```
-Article 15A is a discretionary citizenship route used by stateless children. JPN publishes application conditions but no substantive success criteria.
-```
-**2/6** _(fact)_ · 135 chars
-```
-Article 15A grants federal-government discretion to register minors as citizens. The transparency question is the substantive criteria.
-```
-**3/6** _(fact)_ · 157 chars
-```
-The 2024 Constitution (Amendment) Bill fixes the maternal-citizenship gap and lowers Article 15A's age limit from 21 to 18, but leaves the discretion intact.
-```
-**4/6** _(fact)_ · 261 chars
-```
-SUHAKAM reports that stateless children face lack of identity documents, school-admission delays or denial, and high medical costs or denial of care. Malay Mail reported in 2019 that one Article 15A applicant won citizenship after more than a decade of waiting.
-```
-**5/6** _(reframe)_ · 158 chars
-```
-Citizenship granted by undocumented substantive discretion is not citizenship. It is favour. The fix is publishing success criteria, not amending the article.
-```
-**6/6** _(view — ONLY post with the link)_ · 220 chars
-```
-After the 2024 maternal-citizenship amendment, transparency on Article 15A discretion remains the next reform: published criteria, statutory deadlines, disaggregated outcomes.
-
-https://thefourthangle.pages.dev/issue/1265
-```
-
 ### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
 
 - **Status:** PENDING
@@ -3118,80 +3200,6 @@ The missing number is the story: UNICEF found 18,781 'invisible' children, and a
 Statelessness in Sabah is structural exclusion. It needs citizenship-pathway legislation and the will to count the affected population honestly.
 
 https://thefourthangle.pages.dev/issue/1247
-```
-
-### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
-
-**1/7** _(hook — attach image, NO link)_ · 132 chars
-```
-Act 872 creates Malaysia's first dedicated gig-worker legal framework, extending SOCSO self-employment coverage to platform workers.
-```
-**2/7** _(fact)_ · 124 chars
-```
-Mandatory SOCSO accident and disability protection: platforms must register workers and remit contributions on their behalf.
-```
-**3/7** _(fact)_ · 112 chars
-```
-EPF retirement contributions are NOT included in this first phase. The long-tail income gap remains unaddressed.
-```
-**4/7** _(fact)_ · 148 chars
-```
-DOSM's 2025 survey counts 3.28 million people in informal employment, down from 3.45 million in 2023. Gig workers fall inside the informal universe.
-```
-**5/7** _(reframe)_ · 137 chars
-```
-The 'no social-security protection' framing is now narrower. The remaining gap is retirement adequacy, which platforms still do not fund.
-```
-**6/7** _(analogy)_ · 269 chars
-```
-Like adding seatbelts but skipping the crumple zone. The cheapest accident protection is in place; long-term retirement protection is not. Accident insurance is the easiest gig-economy reform. Retirement adequacy is the hardest, and the new framework does not touch it.
-```
-**7/7** _(view — ONLY post with the link)_ · 217 chars
-```
-Phase 1 made platforms collect SOCSO deductions. Budget 2027 answered retirement only with voluntary EPF matching for drivers; mandatory coverage remains the open question.
-
-https://thefourthangle.pages.dev/issue/1128
-```
-
-### Issue 1043 — When states override environmental law, the environment has no government
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1043-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1043`
-
-**1/7** _(hook — attach image, NO link)_ · 151 chars
-```
-Penang's city council approved a Tanjung Bungah tower the DOE had objected to. In October 2017, a landslide on the site killed 11 construction workers.
-```
-**2/7** _(fact)_ · 113 chars
-```
-The word 'environment' is absent from the Federal Constitution. DOE can object but states can proceed regardless.
-```
-**3/7** _(fact)_ · 269 chars
-```
-Satellite forest-loss estimates far exceed official figures, and Johor's largest excision was carried out secretly 15,011 ha excised in 2014; state forestry couldn't justify it to auditors. Kedah logs Ulu Muda despite the federal ban; it supplies 80% of Penang's water.
-```
-**4/7** _(fact)_ · 145 chars
-```
-Land-related revenue makes up 50% to 90% of state revenue, ISIS Malaysia found, and federal conservation transfers hardly match what forests earn
-```
-**5/7** _(reframe)_ · 149 chars
-```
-This isn't development versus environment. It's a system where states profit from conversion and the people who die are never the people who approve.
-```
-**6/7** _(analogy)_ · 223 chars
-```
-Like a building code that only applies in the lobby. Each floor sets its own rules, and nobody checks the wiring. Federal environmental standards without state enforcement create a protection gap where disasters concentrate
-```
-**7/7** _(view — ONLY post with the link)_ · 183 chars
-```
-Either amend the Constitution to give DOE enforcement power, or make conservation more profitable than conversion through fiscal transfers
-
-https://thefourthangle.pages.dev/issue/1043
 ```
 
 ### Issue 0154 — LCS Programme: RM8.3B Spent by Jan 2026, First Ship in Sea Trials, Schedule 7 Years Late
