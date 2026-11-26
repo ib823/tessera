@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-26T00:26:32.339Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-26T02:15:38.435Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -938,6 +938,40 @@ Like outsourcing passport control to a toll-booth operator who cut wait times, t
 The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
 
 https://thefourthangle.pages.dev/issue/1973
+```
+
+### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
+
+> ⚡ **Reactive: topic is live in the radar** (tourism malaysia, merchantrade introduce prepaid card ahead of visit malaysia campaign. th). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
+
+**1/6** _(hook — attach image, NO link)_ · 188 chars
+```
+520% more Chinese tourists landed in Penang, but the success story has a rent bill attached The 520% surge uses a low 2023 base of 26,056. George Town's historic core has long depopulated.
+```
+**2/6** _(fact)_ · 137 chars
+```
+Visitors from China spent RM20.87B in Malaysia in 2024, second only to Singapore. The 'low-value tourist' claim doesn't survive the data.
+```
+**3/6** _(fact)_ · 220 chars
+```
+A 2017 study dates George Town's gentrification to the 1997 end of rent control, and says the 2008 UNESCO listing sped it up. Its authors warn that gentrification can displace long-term residents and erode local culture.
+```
+**4/6** _(fact)_ · 225 chars
+```
+Penang is building for more arrivals: its airport expansion lifts capacity from 6.5 million to 12 million passengers a year by June 2028. Malaysia Airports' group managing director confirmed the June 2028 target in July 2025.
+```
+**5/6** _(reframe)_ · 104 chars
+```
+This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
+```
+**6/6** _(view — ONLY post with the link)_ · 142 chars
+```
+Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
+
+https://thefourthangle.pages.dev/issue/1970
 ```
 
 ### Issue 1966 — Refugee registration system launched but work permits remain unissued
@@ -2428,39 +2462,6 @@ This isn't one government's hypocrisy. It's a structural failure where states pr
 Tie standing rules to gazette publication date, require replacement forest land, and hold a public inquiry before any reserve is excised
 
 https://thefourthangle.pages.dev/issue/1971
-```
-
-### Issue 1970 — Penang's 520% tourism surge: who counts the arrivals and who pays the rent
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1970-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1970`
-
-**1/6** _(hook — attach image, NO link)_ · 188 chars
-```
-520% more Chinese tourists landed in Penang, but the success story has a rent bill attached The 520% surge uses a low 2023 base of 26,056. George Town's historic core has long depopulated.
-```
-**2/6** _(fact)_ · 137 chars
-```
-Visitors from China spent RM20.87B in Malaysia in 2024, second only to Singapore. The 'low-value tourist' claim doesn't survive the data.
-```
-**3/6** _(fact)_ · 220 chars
-```
-A 2017 study dates George Town's gentrification to the 1997 end of rent control, and says the 2008 UNESCO listing sped it up. Its authors warn that gentrification can displace long-term residents and erode local culture.
-```
-**4/6** _(fact)_ · 225 chars
-```
-Penang is building for more arrivals: its airport expansion lifts capacity from 6.5 million to 12 million passengers a year by June 2028. Malaysia Airports' group managing director confirmed the June 2028 target in July 2025.
-```
-**5/6** _(reframe)_ · 104 chars
-```
-This isn't about Chinese tourists versus heritage. It's about who profits from growth and who pays rent.
-```
-**6/6** _(view — ONLY post with the link)_ · 142 chars
-```
-Penang needs a public dashboard tracking residents, rents, and local retention, not just arrivals
-
-https://thefourthangle.pages.dev/issue/1970
 ```
 
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
