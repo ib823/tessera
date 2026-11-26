@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-26T10:13:34.176Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-26T12:15:41.345Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -2196,7 +2196,7 @@ https://thefourthangle.pages.dev/issue/1146
 
 ### Issue 1128 — Gig Workers Act 872: SOCSO Coverage Extended, EPF Retirement Still Missing
 
-> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (dewan rakyat lulus belanjawan 2027. rang undang-undang perbekalan itu diluluskan melalui u). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1128-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1128`
