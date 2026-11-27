@@ -1,6 +1,6 @@
 # X Posting Inventory (manual)
 
-_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-27T14:12:14.258Z._
+_Auto-maintained by `scripts/build-x-inventory.mjs` (radar scan + deploy). Last refresh: 2026-11-27T16:12:29.947Z._
 
 Post by hand from a clean T4A-only browser (VPN on). Post 1 carries the image and **no** link; the final post carries the **only** link. Best windows MYT: 07:00-10:00, 12:30-14:00, 20:30-22:30. Reactive items override the schedule.
 
@@ -42,7 +42,7 @@ https://thefourthangle.pages.dev/issue/2024
 
 ### Issue 2023 — Japan plans CO2 storage off Malaysia; 10 years or more after closure, the Government takes over
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2023-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2023`
@@ -78,38 +78,38 @@ Malaysia has written who watches a closed reservoir, and when. Before the first 
 https://thefourthangle.pages.dev/issue/2023
 ```
 
-### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
+### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (anwar says putrajaya cuts new borrowing to rm70b, but legacy debts linger. kuala terenggan). Post now, don't wait for a slot.
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
 
-**1/6** _(hook — attach image, NO link)_ · 152 chars
+**1/6** _(hook — attach image, NO link)_ · 157 chars
 ```
-Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
+Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
 ```
-**2/6** _(fact)_ · 171 chars
+**2/6** _(fact)_ · 156 chars
 ```
-The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
+Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
 ```
-**3/6** _(fact)_ · 169 chars
+**3/6** _(fact)_ · 149 chars
 ```
-Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
+The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
 ```
-**4/6** _(fact)_ · 167 chars
+**4/6** _(fact)_ · 131 chars
 ```
-A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
+Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
 ```
-**5/6** _(reframe)_ · 127 chars
+**5/6** _(reframe)_ · 76 chars
 ```
-Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
+The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
 ```
-**6/6** _(view — ONLY post with the link)_ · 197 chars
+**6/6** _(view — ONLY post with the link)_ · 222 chars
 ```
-Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
+If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
 
-https://thefourthangle.pages.dev/issue/2019
+https://thefourthangle.pages.dev/issue/2018
 ```
 
 ### Issue 2017 — 'Malaysian' crude: China logged 206 times what Malaysia recorded sending in 2025
@@ -260,44 +260,6 @@ Tabung Haji says it now pays on audited accounts. The politician ban has yet to 
 https://thefourthangle.pages.dev/issue/2010
 ```
 
-### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
-
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2009-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2009`
-
-**1/7** _(hook — attach image, NO link)_ · 262 chars
-```
-Suspected Israeli operations in Malaysia share a signature: the operative enters on another country's passport. The 2018 assassins of a Palestinian lecturer used Serbian and Montenegrin papers; the 2024 gunman flew in French. Dubai's 2010 hit squad did the same.
-```
-**2/7** _(fact)_ · 99 chars
-```
-Gunmen fired 14 bullets at Fadi al-Batsh, a lecturer, as he walked to dawn prayers in Kuala Lumpur.
-```
-**3/7** _(fact)_ · 126 chars
-```
-In 2022, Malaysians abducted a Gaza programmer in Kuala Lumpur. Prosecutors say they wanted secrets on phone-hacking software.
-```
-**4/7** _(fact)_ · 63 chars
-```
-Every conviction so far is for guns or abduction, never spying.
-```
-**5/7** _(reframe)_ · 101 chars
-```
-The danger never lay in a hidden cell. It lies in a border for sale and locals hired at arm's length.
-```
-**6/7** _(analogy)_ · 205 chars
-```
-Think of a burglar who never picks a lock. He pays the doorman, hires local hands who never see his face, and leaves on a passport borrowed from a tourist. The police report says trespassing, not burglary.
-```
-**7/7** _(view — ONLY post with the link)_ · 210 chars
-```
-Ministers now name suspects in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
-
-https://thefourthangle.pages.dev/issue/2009
-```
-
 ### Issue 2008 — Malaysia's new rules make firms vet their algorithms. The state's own are exempt.
 
 > ⚡ **Reactive: topic is live in the radar** (hrd corp approves rm2.1b for worker training from this year’s levy collection, says deputy). Post now, don't wait for a slot.
@@ -414,7 +376,7 @@ https://thefourthangle.pages.dev/issue/2006
 
 ### Issue 2005 — MACC says a CEO took bribes to release payment, not to win the contract
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (no rm1bil cut in education development allocation, says deputy minister. wong kah woh says). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2005-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 2005`
@@ -638,7 +600,7 @@ https://thefourthangle.pages.dev/issue/1996
 
 ### Issue 1995 — Singapore's chip case: four people and four firms charged. No Malaysian operator publicly charged.
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (one in four jobs, rm14.4b in value: sabah tourism’s economic clout on display. kota kinaba). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1995-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1995`
@@ -674,47 +636,9 @@ Singapore charged four people, then four companies. Malaysia wrote a permit. Twe
 https://thefourthangle.pages.dev/issue/1995
 ```
 
-### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
-
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
-
-**1/7** _(hook — attach image, NO link)_ · 139 chars
-```
-Two ex-ministers quit PKR and took over an existing party with no MPs. The buried line: their two seats can lawfully stay empty until GE16.
-```
-**2/7** _(fact)_ · 248 chars
-```
-Pandan and Setiawangsa are set to vacate on 18 May. Article 54(1) lets seats sit empty with fewer than two years left. GE15 was 19 November 2022. The 15th Parliament first sat 19 December 2022; the two-year carve-out window opened 19 December 2025.
-```
-**3/7** _(fact)_ · 125 chars
-```
-Resign the seat first, leave the party second. The MPs say the sequence avoids Article 49A and may sidestep PKR's RM10M bond.
-```
-**4/7** _(fact)_ · 139 chars
-```
-The carve-out used to be six months. A constitutional amendment expanded it to two years. Shad Saleem Faruqi called the change regrettable.
-```
-**5/7** _(reframe)_ · 148 chars
-```
-Anti-hopping was sold as protecting the voter's mandate. Resign the seat before the party, and the sequence circumvents the law without breaking it.
-```
-**6/7** _(analogy)_ · 158 chars
-```
-Like a residents' association chairman resigning 18 months before the AGM, with by-laws blocking any election before then. The chair, by default, stays empty.
-```
-**7/7** _(view — ONLY post with the link)_ · 221 chars
-```
-Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
-
-https://thefourthangle.pages.dev/issue/1993
-```
-
 ### Issue 1992 — Apex court releases courtroom audio after a dispute over what its bench said.
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1992-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1992`
@@ -1046,44 +970,6 @@ RM31.3B recovered is real. Reading 74.5% as a scandal nearly settled outruns wha
 https://thefourthangle.pages.dev/issue/1979
 ```
 
-### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
-
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
-
-**1/7** _(hook — attach image, NO link)_ · 135 chars
-```
-Criminal case filings across Malaysia's courts rose from 1.5 million in 2021 to 2.5 million by November 2025, a 63% jump in four years.
-```
-**2/7** _(fact)_ · 140 chars
-```
-Heidy Quah won her free-speech case in 2025. In February 2026 the Federal Court restored the law's words, but narrowed how they can be used.
-```
-**3/7** _(fact)_ · 135 chars
-```
-Federal Court April 2026: seven prisoners convicted as minors lost their bid to challenge indefinite detention. The youngest is now 27.
-```
-**4/7** _(fact)_ · 158 chars
-```
-The Chief Justice has named the crisis. He told judges to deliver judgments on time or take 'a dignified exit.' Through the June recess, registries stay open.
-```
-**5/7** _(reframe)_ · 97 chars
-```
-Justice delayed is justice denied. But delay is not random, and someone decides whose case waits.
-```
-**6/7** _(analogy)_ · 265 chars
-```
-Imagine a hospital that has nearly doubled its admissions but not its doctors. Some patients are seen quickly. Others wait through their illness. The ones seen first are not always the ones whose case is most urgent. Triage is itself a choice, and someone makes it.
-```
-**7/7** _(view — ONLY post with the link)_ · 205 chars
-```
-The Chief Justice has named the crisis and unveiled a 10-year reform plan. The harder test is whether the cases that get heard match the ones that most need to.
-
-https://thefourthangle.pages.dev/issue/1978
-```
-
 ### Issue 1977 — Johor Voted 40-16 to Add Five Appointed Assemblymen After Legal Adviser Said No
 
 > ⚡ **Reactive: topic is live in the radar** (johor targets rm5b in halal investments, 5,000 new companies by 2030, state assembly told.). Post now, don't wait for a slot.
@@ -1162,7 +1048,7 @@ https://thefourthangle.pages.dev/issue/1975
 
 ### Issue 1974 — DOE chief charged with taking RM100K over an EIA exemption, on a road that killed nine
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1974-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1974`
@@ -1196,44 +1082,6 @@ Like learning the building inspector is accused of taking bribes to skip the fir
 The fix is independent environmental courts and community standing to challenge approvals, not more staff for a captured regulator.
 
 https://thefourthangle.pages.dev/issue/1974
-```
-
-### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
-
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
-
-**1/7** _(hook — attach image, NO link)_ · 137 chars
-```
-One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
-```
-**2/7** _(fact)_ · 125 chars
-```
-Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
-```
-**3/7** _(fact)_ · 234 chars
-```
-Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
-```
-**4/7** _(fact)_ · 160 chars
-```
-Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
-```
-**5/7** _(reframe)_ · 90 chars
-```
-Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
-```
-**6/7** _(analogy)_ · 267 chars
-```
-Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
-```
-**7/7** _(view — ONLY post with the link)_ · 173 chars
-```
-The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
-
-https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1972 — RM82 billion in local currency trade sounds like de-dollarization; 76% of it is with one country
@@ -1340,7 +1188,7 @@ https://thefourthangle.pages.dev/issue/1970
 
 ### Issue 1966 — Refugee registration system launched but work permits remain unissued
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1966-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1966`
@@ -1374,7 +1222,7 @@ https://thefourthangle.pages.dev/issue/1966
 
 ### Issue 1965 — US tariff reset after Supreme Court ruling leaves Malaysia worse off
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1965-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1965`
@@ -1478,43 +1326,9 @@ The charges matter. But soldiers deserve more than the trial of two generals. Th
 https://thefourthangle.pages.dev/issue/1962
 ```
 
-### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
-
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
-
-**1/6** _(hook — attach image, NO link)_ · 122 chars
-```
-The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
-```
-**2/6** _(fact)_ · 125 chars
-```
-One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
-```
-**3/6** _(fact)_ · 264 chars
-```
-In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
-```
-**4/6** _(fact)_ · 131 chars
-```
-Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
-```
-**5/6** _(reframe)_ · 151 chars
-```
-The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
-```
-**6/6** _(view — ONLY post with the link)_ · 186 chars
-```
-Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
-
-https://thefourthangle.pages.dev/issue/1959
-```
-
 ### Issue 1957 — BYD Stalled, Proton Shielded, Affordable Local EVs Fenced Off: Who Wins?
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (malaysia’s palm oil industry says cpo tax-waiver window has passed. the sector has called ). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1957-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1957`
@@ -1548,6 +1362,40 @@ Like building a wall around a garden. The wall keeps competitors out, but it als
 700,000 jobs deserve an honest transition, not a price floor that cordons off the affordable segment.
 
 https://thefourthangle.pages.dev/issue/1957
+```
+
+### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
+
+> ⚡ **Reactive: topic is live in the radar** (anwar says putrajaya cuts new borrowing to rm70b, but legacy debts linger. kuala terenggan). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1955-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1955`
+
+**1/6** _(hook — attach image, NO link)_ · 256 chars
+```
+Government open houses are off this Raya. The savings sit beside a fuel-subsidy bill MOF put at about RM7 billion a month. The order covers government agencies, GLCs and GLICs, not all open houses in Malaysia. Private and household events are not in scope.
+```
+**2/6** _(fact)_ · 250 chars
+```
+A Dewan Rakyat reply said the 2013 PM and Cabinet open house at Seri Perdana drew over 80,000 guests. Official open houses are taxpayer-funded: that event's food and drink cost RM2.88M, about RM36 a guest. Scale and procurement vary by year and host.
+```
+**3/6** _(fact)_ · 238 chars
+```
+World Trade Centre Kuala Lumpur's group CEO told Bernama the cancellation 'does have an impact on industry players like us'. He gave no figure. He urged events firms to diversify beyond big seasonal events and 'be ready to pivot quickly'.
+```
+**4/6** _(fact)_ · 140 chars
+```
+Indonesia's president still held a palace open house for Eid al-Fitr 2026. Malaysia chose a full ban for the agencies, GLCs and GLICs named.
+```
+**5/6** _(reframe)_ · 157 chars
+```
+The question is not whether to host this year. It is whether procurement for official open houses is transparent enough to scale them without scrapping them.
+```
+**6/6** _(view — ONLY post with the link)_ · 221 chars
+```
+Symbolic austerity is real signalling, but small in fiscal terms. A durable answer is published procurement and audited costs for official festive events, not an on-off switch.
+
+https://thefourthangle.pages.dev/issue/1955
 ```
 
 ### Issue 1951 — Seven Ships, One Phone Call: Malaysia Off Iran's Safe List, Cleared by PM Direct Appeal
@@ -1792,6 +1640,44 @@ If the discount is a national priority, the fairer debate is whether to fund it 
 https://thefourthangle.pages.dev/issue/1625
 ```
 
+### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
+
+> ⚡ **Reactive: topic is live in the radar** (anwar says putrajaya cuts new borrowing to rm70b, but legacy debts linger. kuala terenggan). Post now, don't wait for a slot.
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
+
+**1/7** _(hook — attach image, NO link)_ · 123 chars
+```
+PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
+```
+**2/7** _(fact)_ · 266 chars
+```
+The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
+```
+**3/7** _(fact)_ · 142 chars
+```
+The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
+```
+**4/7** _(fact)_ · 150 chars
+```
+Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
+```
+**5/7** _(reframe)_ · 132 chars
+```
+The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
+```
+**6/7** _(analogy)_ · 144 chars
+```
+Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
+```
+**7/7** _(view — ONLY post with the link)_ · 198 chars
+```
+The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
+
+https://thefourthangle.pages.dev/issue/1618
+```
+
 ### Issue 1445 — Medical Tourism Hit RM2.72B in 2024; 2030 Target RM12B, Public Specialist Shortages Persist
 
 > ⚡ **Reactive: topic is live in the radar** (airasia third-quarter loss narrows, but cash dwindles and liabilities rise. revenue fell 8). Post now, don't wait for a slot.
@@ -1904,7 +1790,7 @@ https://thefourthangle.pages.dev/issue/1298
 
 ### Issue 1294 — Six States and Federal Territories Named in Legal Challenge Over Post-Indira Conversion Laws
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1294-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1294`
@@ -1938,7 +1824,7 @@ https://thefourthangle.pages.dev/issue/1294
 
 ### Issue 1292 — POCA Allows 2-Year Renewable Detention; Federal Court Voided Its Review Ban in 2022
 
-> ⚡ **Reactive: topic is live in the radar** (contractor wins rm1.93mil dispute over lembaga getah malaysia’s 2017 project. court orders). Post now, don't wait for a slot.
+> ⚡ **Reactive: topic is live in the radar** (ex-village head loses bid to cut 18-year jail term for fatal assault. federal court unanim). Post now, don't wait for a slot.
 - **Status:** PENDING
 - **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1292-bg.png
 - **Mark posted:** `node scripts/mark-x-posted.mjs 1292`
@@ -2346,37 +2232,37 @@ Either amend the Constitution to give DOE enforcement power, or make conservatio
 https://thefourthangle.pages.dev/issue/1043
 ```
 
-### Issue 2018 — Scam compensation: the law says courts 'shall' order it, if prosecutors ask
+### Issue 2019 — Malaysia backs the Rohingya genocide case. Its Immigration Act has no word for refugee.
 
 - **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2018-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 2018`
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2019-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2019`
 
-**1/6** _(hook — attach image, NO link)_ · 157 chars
+**1/6** _(hook — attach image, NO link)_ · 152 chars
 ```
-Since 2012, Malaysian courts must order convicts to compensate victims when prosecutors ask. We found no published count of how often they ask in scam cases.
+Malaysia backs The Gambia's genocide case against Myanmar, its foreign minister told an OIC meeting on 24 Sep. The World Court is due to rule on 19 Nov.
 ```
-**2/6** _(fact)_ · 156 chars
+**2/6** _(fact)_ · 171 chars
 ```
-Attorney General Dusuki Mokhtar ordered prosecutors to seek compensation orders for crime victims 'in the appropriate cases', FMT reported on 15 April 2026.
+The Immigration Act has no refugee category. Rohingya with UNHCR cards remain PATI, the official term for illegal immigrants, the National Security Council said on 10 Sep.
 ```
-**3/6** _(fact)_ · 149 chars
+**3/6** _(fact)_ · 169 chars
 ```
-The scam response centre returned RM6.65m to victims in 2025, the home minister said in March. Bank Negara put 2025's reported scam losses at RM2.8b.
+Malaysia's own refugee registration began on 1 Jan with 4,010 detainees in Peninsular depots. By June, 78 Rohingya had been approved as refugees, the Home Minister said.
 ```
-**4/6** _(fact)_ · 131 chars
+**4/6** _(fact)_ · 167 chars
 ```
-Bank Negara reported 969 convictions of mule account holders in 2025. We found no count of compensation orders against any of them.
+A return programme for 5,000 Myanmar nationals began on 29 Sep. Records traced so far show no Rohingya sent; their return was under discussion, the PM told Parliament.
 ```
-**5/6** _(reframe)_ · 76 chars
+**5/6** _(reframe)_ · 127 chars
 ```
-The 2012 law binds the judge once a prosecutor asks. It binds no one to ask.
+Abroad, Malaysia backs the genocide case for the Rohingya. At home, a Rohingya it recognises as a refugee holds a Special Pass.
 ```
-**6/6** _(view — ONLY post with the link)_ · 222 chars
+**6/6** _(view — ONLY post with the link)_ · 197 chars
 ```
-If compensation hinges on prosecutorial discretion, the Attorney General's Chambers should publish the ledger: requests made, orders granted, and what victims are actually paid.
+Whatever the World Court rules on 19 Nov, Malaysia's Immigration Act has no word for refugee. Malaysia chose a time-limited pass over a category in law.
 
-https://thefourthangle.pages.dev/issue/2018
+https://thefourthangle.pages.dev/issue/2019
 ```
 
 ### Issue 2016 — Peninsular data centres got their own water tariff in 2025. Still no EIA category
@@ -2480,6 +2366,43 @@ It is like a town that keeps drafting a fire code, files it away when the neighb
 A haze law would not put out the fires; Putrajaya said so in 2023. Its point was to tell Malaysian planters abroad the smoke follows them home. Two governments declined to say it.
 
 https://thefourthangle.pages.dev/issue/2011
+```
+
+### Issue 2009 — Malaysia names Mossad suspects, but no court has convicted one of spying
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-2009-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 2009`
+
+**1/7** _(hook — attach image, NO link)_ · 262 chars
+```
+Suspected Israeli operations in Malaysia share a signature: the operative enters on another country's passport. The 2018 assassins of a Palestinian lecturer used Serbian and Montenegrin papers; the 2024 gunman flew in French. Dubai's 2010 hit squad did the same.
+```
+**2/7** _(fact)_ · 99 chars
+```
+Gunmen fired 14 bullets at Fadi al-Batsh, a lecturer, as he walked to dawn prayers in Kuala Lumpur.
+```
+**3/7** _(fact)_ · 126 chars
+```
+In 2022, Malaysians abducted a Gaza programmer in Kuala Lumpur. Prosecutors say they wanted secrets on phone-hacking software.
+```
+**4/7** _(fact)_ · 63 chars
+```
+Every conviction so far is for guns or abduction, never spying.
+```
+**5/7** _(reframe)_ · 101 chars
+```
+The danger never lay in a hidden cell. It lies in a border for sale and locals hired at arm's length.
+```
+**6/7** _(analogy)_ · 205 chars
+```
+Think of a burglar who never picks a lock. He pays the doorman, hires local hands who never see his face, and leaves on a passport borrowed from a tourist. The police report says trespassing, not burglary.
+```
+**7/7** _(view — ONLY post with the link)_ · 210 chars
+```
+Ministers now name suspects in Parliament, yet the cheapest way in, a bought border and deniable hands, stays open. Suspicion is loud; proof, by design, stays quiet.
+
+https://thefourthangle.pages.dev/issue/2009
 ```
 
 ### Issue 1999 — The Sultan's pig-farming decree, and how it became Selangor state law
@@ -2587,6 +2510,43 @@ Like checking permits at the front door while every window is open. The permit l
 The dollar is now software. Six licensed exchanges do not list it. US sanctions can freeze it. Bank Negara has not published the count.
 
 https://thefourthangle.pages.dev/issue/1994
+```
+
+### Issue 1993 — Rafizi and Nik Nazmi resigned. The Constitution lets both seats stay empty.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1993-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1993`
+
+**1/7** _(hook — attach image, NO link)_ · 139 chars
+```
+Two ex-ministers quit PKR and took over an existing party with no MPs. The buried line: their two seats can lawfully stay empty until GE16.
+```
+**2/7** _(fact)_ · 248 chars
+```
+Pandan and Setiawangsa are set to vacate on 18 May. Article 54(1) lets seats sit empty with fewer than two years left. GE15 was 19 November 2022. The 15th Parliament first sat 19 December 2022; the two-year carve-out window opened 19 December 2025.
+```
+**3/7** _(fact)_ · 125 chars
+```
+Resign the seat first, leave the party second. The MPs say the sequence avoids Article 49A and may sidestep PKR's RM10M bond.
+```
+**4/7** _(fact)_ · 139 chars
+```
+The carve-out used to be six months. A constitutional amendment expanded it to two years. Shad Saleem Faruqi called the change regrettable.
+```
+**5/7** _(reframe)_ · 148 chars
+```
+Anti-hopping was sold as protecting the voter's mandate. Resign the seat before the party, and the sequence circumvents the law without breaking it.
+```
+**6/7** _(analogy)_ · 158 chars
+```
+Like a residents' association chairman resigning 18 months before the AGM, with by-laws blocking any election before then. The chair, by default, stays empty.
+```
+**7/7** _(view — ONLY post with the link)_ · 221 chars
+```
+Two Klang Valley seats may sit empty until the next general election because the Constitution permits it by default. Parliament wrote that rule; only Parliament can revisit it.
+
+https://thefourthangle.pages.dev/issue/1993
 ```
 
 ### Issue 1991 — Harmony Bill back to drafting after 14 years, cites Singapore, Australia, Zimbabwe.
@@ -2729,6 +2689,43 @@ Parliament raised CMA s.233 fines 10x in Feb 2025. The apex court tightened the 
 https://thefourthangle.pages.dev/issue/1980
 ```
 
+### Issue 1978 — Court Filings Rose 63% in Four Years. The Chief Justice Has Named the Crisis.
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1978-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1978`
+
+**1/7** _(hook — attach image, NO link)_ · 135 chars
+```
+Criminal case filings across Malaysia's courts rose from 1.5 million in 2021 to 2.5 million by November 2025, a 63% jump in four years.
+```
+**2/7** _(fact)_ · 140 chars
+```
+Heidy Quah won her free-speech case in 2025. In February 2026 the Federal Court restored the law's words, but narrowed how they can be used.
+```
+**3/7** _(fact)_ · 135 chars
+```
+Federal Court April 2026: seven prisoners convicted as minors lost their bid to challenge indefinite detention. The youngest is now 27.
+```
+**4/7** _(fact)_ · 158 chars
+```
+The Chief Justice has named the crisis. He told judges to deliver judgments on time or take 'a dignified exit.' Through the June recess, registries stay open.
+```
+**5/7** _(reframe)_ · 97 chars
+```
+Justice delayed is justice denied. But delay is not random, and someone decides whose case waits.
+```
+**6/7** _(analogy)_ · 265 chars
+```
+Imagine a hospital that has nearly doubled its admissions but not its doctors. Some patients are seen quickly. Others wait through their illness. The ones seen first are not always the ones whose case is most urgent. Triage is itself a choice, and someone makes it.
+```
+**7/7** _(view — ONLY post with the link)_ · 205 chars
+```
+The Chief Justice has named the crisis and unveiled a 10-year reform plan. The harder test is whether the cases that get heard match the ones that most need to.
+
+https://thefourthangle.pages.dev/issue/1978
+```
+
 ### Issue 1976 — Negeri Sembilan Throne: Three of the Four Undang Titles Are Now Contested
 
 - **Status:** PENDING
@@ -2764,6 +2761,43 @@ Before anyone can say whether a Ruler was lawfully removed, someone must settle 
 The DKU and the AGC call the 19 April move invalid; its backers say it stands. No court has ruled on the merits, and in October the four dropped their own suit.
 
 https://thefourthangle.pages.dev/issue/1976
+```
+
+### Issue 1973 — Bestinet ran Malaysia's visa system: RM400M to founder's firms, no contract, Interpol arrest request
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1973-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1973`
+
+**1/7** _(hook — attach image, NO link)_ · 137 chars
+```
+One firm runs Malaysia's migrant visa system. Its founder faced an Interpol arrest request. The government extended its contract to 2031.
+```
+**2/7** _(fact)_ · 125 chars
+```
+Six years with no signed contract. Then the per-worker fee was set at RM215, more than double the government's own RM86 rate.
+```
+**3/7** _(fact)_ · 234 chars
+```
+Bangladesh sought the founder's arrest via Interpol. Malaysia asked Bangladesh to drop its trafficking probes to protect its TIP ranking. A 2023 ILO survey found 29% of migrant domestic workers in Malaysia in forced-labour conditions.
+```
+**4/7** _(fact)_ · 160 chars
+```
+Zahid was Home Minister in 2015, when Bangladeshi recruitment was cut to 10 agencies. Six sources told Bloomberg he handled the politics. He denies involvement.
+```
+**5/7** _(reframe)_ · 90 chars
+```
+Why did Malaysia's migrant visa system run for nearly six years without a signed contract?
+```
+**6/7** _(analogy)_ · 267 chars
+```
+Like outsourcing passport control to a toll-booth operator who cut wait times, then learning it charges more than double the approved rate and ran six years without a contract. Speed built on worker debt bondage is not efficiency. It is exploitation with a dashboard.
+```
+**7/7** _(view — ONLY post with the link)_ · 173 chars
+```
+The fix exists: open tendering, employer-pays enforcement, cooperation with Bangladesh. No coalition will accept the disruption.
+
+https://thefourthangle.pages.dev/issue/1973
 ```
 
 ### Issue 1967 — Vernacular school choices: the quality crisis nobody wants to name
@@ -2869,6 +2903,39 @@ Malaysia needs statutory reform for unregistered worship sites, but must confron
 https://thefourthangle.pages.dev/issue/1960
 ```
 
+### Issue 1959 — The Sabah claim that won't die: what Malaysia won, and what no court has settled
+
+- **Status:** PENDING
+- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1959-bg.png
+- **Mark posted:** `node scripts/mark-x-posted.mjs 1959`
+
+**1/6** _(hook — attach image, NO link)_ · 122 chars
+```
+The Philippines still claims Sabah. Malaysia has won every court case. None has ruled on the core question: sale or lease?
+```
+**2/6** _(fact)_ · 125 chars
+```
+One word, 'ceded' or 'leased', in an 1878 document has generated 148 years of dispute. No court has been asked to rule on it.
+```
+**3/6** _(fact)_ · 264 chars
+```
+In 2013, armed followers of a Sulu claimant invaded eastern Sabah: 78 casualties, by Malaysia's count. The claim has produced armed incursion within living memory. Malaysia's official Sulu case portal says the attack prompted it to end the annual cession payments.
+```
+**4/6** _(fact)_ · 131 chars
+```
+Sabah's leaders across parties reject the claim. Early 2020 census figures counted 810,443 foreigners, 23.7% of the state's people.
+```
+**5/6** _(reframe)_ · 151 chars
+```
+The real question is not who owns Sabah. Self-determination and 63 years of statehood answer that. It is why two nations keep a 148-year dispute alive.
+```
+**6/6** _(view — ONLY post with the link)_ · 186 chars
+```
+Malaysia wins on law. The Philippines loses on law. The people who pay (stateless families, border communities) have no seat at either table.
+
+https://thefourthangle.pages.dev/issue/1959
+```
+
 ### Issue 1958 — One Death, Six Proposals, Thin Data: Malaysia's Drunk Driving Blind Spot
 
 - **Status:** PENDING
@@ -2933,39 +3000,6 @@ The salary floor adjusts the price of foreign replacement. The pipeline question
 Protecting Malaysian jobs is a legitimate aim. The risk is that protection without parallel pipeline investment becomes paper compliance rather than specialist development.
 
 https://thefourthangle.pages.dev/issue/1956
-```
-
-### Issue 1955 — Government Raya Open Houses Cancelled: Modest Savings, Real Trade-offs
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1955-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1955`
-
-**1/6** _(hook — attach image, NO link)_ · 256 chars
-```
-Government open houses are off this Raya. The savings sit beside a fuel-subsidy bill MOF put at about RM7 billion a month. The order covers government agencies, GLCs and GLICs, not all open houses in Malaysia. Private and household events are not in scope.
-```
-**2/6** _(fact)_ · 250 chars
-```
-A Dewan Rakyat reply said the 2013 PM and Cabinet open house at Seri Perdana drew over 80,000 guests. Official open houses are taxpayer-funded: that event's food and drink cost RM2.88M, about RM36 a guest. Scale and procurement vary by year and host.
-```
-**3/6** _(fact)_ · 238 chars
-```
-World Trade Centre Kuala Lumpur's group CEO told Bernama the cancellation 'does have an impact on industry players like us'. He gave no figure. He urged events firms to diversify beyond big seasonal events and 'be ready to pivot quickly'.
-```
-**4/6** _(fact)_ · 140 chars
-```
-Indonesia's president still held a palace open house for Eid al-Fitr 2026. Malaysia chose a full ban for the agencies, GLCs and GLICs named.
-```
-**5/6** _(reframe)_ · 157 chars
-```
-The question is not whether to host this year. It is whether procurement for official open houses is transparent enough to scale them without scrapping them.
-```
-**6/6** _(view — ONLY post with the link)_ · 221 chars
-```
-Symbolic austerity is real signalling, but small in fiscal terms. A durable answer is published procurement and audited costs for official festive events, not an on-off switch.
-
-https://thefourthangle.pages.dev/issue/1955
 ```
 
 ### Issue 1954 — Civil servant WFH: fuel saver, workplace reform, or both?
@@ -3131,43 +3165,6 @@ A foundational concept that different parties read differently is not a fixed te
 Malaysia has had this conversation in fragments. A more honest framing is which constitutional provisions are being read together, and which are being read apart.
 
 https://thefourthangle.pages.dev/issue/1626
-```
-
-### Issue 1618 — Islamic-State Debate Returns as PAS Anchors PN State Governments in Northern Malaysia
-
-- **Status:** PENDING
-- **Attach image:** https://thefourthangle.pages.dev/og/backgrounds/issue-1618-bg.png
-- **Mark posted:** `node scripts/mark-x-posted.mjs 1618`
-
-**1/7** _(hook — attach image, NO link)_ · 123 chars
-```
-PAS heads three northern state governments: Kelantan, Terengganu and Kedah. The Islamic-state debate is back on the agenda.
-```
-**2/7** _(fact)_ · 266 chars
-```
-The Federal Constitution limits Shariah courts to State List matters, including family law and offences against the precepts of Islam. Nik Elin (2024) voided Kelantan provisions touching federal criminal jurisdiction. The State List boundary is the controlling test.
-```
-**3/7** _(fact)_ · 142 chars
-```
-The Federal Court said Nik Elin had nothing to do with the position of Islam or the Shariah courts. It asked which legislature held the power.
-```
-**4/7** _(fact)_ · 150 chars
-```
-Polls on Islamic law in Malaysia turn on the question asked. Pew (2013) reported 86% of Malaysian Muslims it surveyed favoured sharia as official law.
-```
-**5/7** _(reframe)_ · 132 chars
-```
-The secular-versus-Islamic binary asks the wrong question. Polls that separate sharia in principle from hudud get different answers.
-```
-**6/7** _(analogy)_ · 144 chars
-```
-Like asking a country to choose between two rooms in a house that has 15. The binary framing erases the space where most positions actually sit.
-```
-**7/7** _(view — ONLY post with the link)_ · 198 chars
-```
-The constitution already accommodates Islamic law within limits. The real debate is the scope of dual jurisdiction, and who decides where the line falls.
-
-https://thefourthangle.pages.dev/issue/1618
 ```
 
 ### Issue 1247 — Sabah Statelessness: 500,000 to 1 Million People by a 2022 Estimate; No Official Count
